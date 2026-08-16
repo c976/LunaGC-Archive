@@ -15,10 +15,6 @@ public final class AreaPlayTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: ENDBNJAECJM
-   * </pre>
-   *
    * Protobuf enum {@code AreaPlayType}
    */
   public enum AreaPlayType

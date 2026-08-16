@@ -20,32 +20,32 @@ public final class DataResVersionOpTypeOuterClass {
   public enum DataResVersionOpType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>OP_TYPE_NONE = 0;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_NONE = 0;</code>
      */
-    OP_TYPE_NONE(0),
+    FOAAMDMNOHG_OP_TYPE_NONE(0),
     /**
-     * <code>OP_TYPE_RELOGIN = 1;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_RELOGIN = 1;</code>
      */
-    OP_TYPE_RELOGIN(1),
+    FOAAMDMNOHG_OP_TYPE_RELOGIN(1),
     /**
-     * <code>OP_TYPE_MP_RELOGIN = 2;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_MP_RELOGIN = 2;</code>
      */
-    OP_TYPE_MP_RELOGIN(2),
+    FOAAMDMNOHG_OP_TYPE_MP_RELOGIN(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>OP_TYPE_NONE = 0;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_NONE = 0;</code>
      */
-    public static final int OP_TYPE_NONE_VALUE = 0;
+    public static final int FOAAMDMNOHG_OP_TYPE_NONE_VALUE = 0;
     /**
-     * <code>OP_TYPE_RELOGIN = 1;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_RELOGIN = 1;</code>
      */
-    public static final int OP_TYPE_RELOGIN_VALUE = 1;
+    public static final int FOAAMDMNOHG_OP_TYPE_RELOGIN_VALUE = 1;
     /**
-     * <code>OP_TYPE_MP_RELOGIN = 2;</code>
+     * <code>FOAAMDMNOHG_OP_TYPE_MP_RELOGIN = 2;</code>
      */
-    public static final int OP_TYPE_MP_RELOGIN_VALUE = 2;
+    public static final int FOAAMDMNOHG_OP_TYPE_MP_RELOGIN_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class DataResVersionOpTypeOuterClass {
      */
     public static DataResVersionOpType forNumber(int value) {
       switch (value) {
-        case 0: return OP_TYPE_NONE;
-        case 1: return OP_TYPE_RELOGIN;
-        case 2: return OP_TYPE_MP_RELOGIN;
+        case 0: return FOAAMDMNOHG_OP_TYPE_NONE;
+        case 1: return FOAAMDMNOHG_OP_TYPE_RELOGIN;
+        case 2: return FOAAMDMNOHG_OP_TYPE_MP_RELOGIN;
         default: return null;
       }
     }
@@ -140,10 +140,11 @@ public final class DataResVersionOpTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032DataResVersionOpType.proto*U\n\024DataResV" +
-      "ersionOpType\022\020\n\014OP_TYPE_NONE\020\000\022\023\n\017OP_TYP" +
-      "E_RELOGIN\020\001\022\026\n\022OP_TYPE_MP_RELOGIN\020\002B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\032DataResVersionOpType.proto*y\n\024DataResV" +
+      "ersionOpType\022\034\n\030FOAAMDMNOHG_OP_TYPE_NONE" +
+      "\020\000\022\037\n\033FOAAMDMNOHG_OP_TYPE_RELOGIN\020\001\022\"\n\036F" +
+      "OAAMDMNOHG_OP_TYPE_MP_RELOGIN\020\002B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

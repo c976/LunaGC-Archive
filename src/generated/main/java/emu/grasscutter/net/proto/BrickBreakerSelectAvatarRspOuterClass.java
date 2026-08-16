@@ -19,33 +19,31 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @return A list containing the avatarId.
      */
     java.util.List<java.lang.Integer> getAvatarIdList();
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @return The count of avatarId.
      */
     int getAvatarIdCount();
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @param index The index of the element to return.
      * @return The avatarId at the given index.
      */
     int getAvatarId(int index);
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21969
-   * Version: 4.6.0
-   * Obfs: LCDPHKOCFMK
+   * CmdId: 29201
    * </pre>
    *
    * Protobuf type {@code BrickBreakerSelectAvatarRsp}
@@ -94,7 +92,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarId_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -102,7 +100,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
               avatarId_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -115,7 +113,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -155,10 +153,10 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
               emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp.class, emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 2;
+    public static final int AVATAR_ID_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList avatarId_;
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @return A list containing the avatarId.
      */
     @java.lang.Override
@@ -167,14 +165,14 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       return avatarId_;
     }
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @return The count of avatarId.
      */
     public int getAvatarIdCount() {
       return avatarId_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id = 2;</code>
+     * <code>repeated uint32 avatar_id = 12;</code>
      * @param index The index of the element to return.
      * @return The avatarId at the given index.
      */
@@ -183,10 +181,10 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     }
     private int avatarIdMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -210,14 +208,14 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAvatarIdList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(avatarIdMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarId_.size(); i++) {
         output.writeUInt32NoTag(avatarId_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -244,7 +242,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,9 +377,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21969
-     * Version: 4.6.0
-     * Obfs: LCDPHKOCFMK
+     * CmdId: 29201
      * </pre>
      *
      * Protobuf type {@code BrickBreakerSelectAvatarRsp}
@@ -557,7 +553,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @return A list containing the avatarId.
        */
       public java.util.List<java.lang.Integer>
@@ -566,14 +562,14 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
                  java.util.Collections.unmodifiableList(avatarId_) : avatarId_;
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @return The count of avatarId.
        */
       public int getAvatarIdCount() {
         return avatarId_.size();
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @param index The index of the element to return.
        * @return The avatarId at the given index.
        */
@@ -581,7 +577,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return avatarId_.getInt(index);
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @param index The index to set the value at.
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -594,7 +590,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @param value The avatarId to add.
        * @return This builder for chaining.
        */
@@ -605,7 +601,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @param values The avatarId to add.
        * @return This builder for chaining.
        */
@@ -618,7 +614,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id = 2;</code>
+       * <code>repeated uint32 avatar_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -630,7 +626,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -638,7 +634,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -649,7 +645,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -727,7 +723,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!BrickBreakerSelectAvatarRsp.proto\"A\n\033B" +
       "rickBreakerSelectAvatarRsp\022\021\n\tavatar_id\030" +
-      "\002 \003(\r\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutte" +
+      "\014 \003(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

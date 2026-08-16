@@ -19,28 +19,44 @@ public final class RechargeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string productId = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 6;</code>
      * @return The productId.
      */
     java.lang.String getProductId();
     /**
-     * <code>string productId = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 6;</code>
      * @return The bytes for productId.
      */
     com.google.protobuf.ByteString
         getProductIdBytes();
 
     /**
-     * <code>bool is_show_minors_hint = 13;</code>
-     * @return The isShowMinorsHint.
-     */
-    boolean getIsShowMinorsHint();
-
-    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_show_minors_hint = 13;</code>
+     * @return The isShowMinorsHint.
+     */
+    boolean getIsShowMinorsHint();
   }
   /**
    * <pre>
@@ -140,10 +156,14 @@ public final class RechargeRspOuterClass {
               emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp.class, emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp.Builder.class);
     }
 
-    public static final int PRODUCTID_FIELD_NUMBER = 6;
+    public static final int PRODUCT_ID_FIELD_NUMBER = 6;
     private volatile java.lang.Object productId_;
     /**
-     * <code>string productId = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 6;</code>
      * @return The productId.
      */
     @java.lang.Override
@@ -160,7 +180,11 @@ public final class RechargeRspOuterClass {
       }
     }
     /**
-     * <code>string productId = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 6;</code>
      * @return The bytes for productId.
      */
     @java.lang.Override
@@ -178,26 +202,34 @@ public final class RechargeRspOuterClass {
       }
     }
 
-    public static final int IS_SHOW_MINORS_HINT_FIELD_NUMBER = 13;
-    private boolean isShowMinorsHint_;
-    /**
-     * <code>bool is_show_minors_hint = 13;</code>
-     * @return The isShowMinorsHint.
-     */
-    @java.lang.Override
-    public boolean getIsShowMinorsHint() {
-      return isShowMinorsHint_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int IS_SHOW_MINORS_HINT_FIELD_NUMBER = 13;
+    private boolean isShowMinorsHint_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_show_minors_hint = 13;</code>
+     * @return The isShowMinorsHint.
+     */
+    @java.lang.Override
+    public boolean getIsShowMinorsHint() {
+      return isShowMinorsHint_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -260,10 +292,10 @@ public final class RechargeRspOuterClass {
 
       if (!getProductId()
           .equals(other.getProductId())) return false;
-      if (getIsShowMinorsHint()
-          != other.getIsShowMinorsHint()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getIsShowMinorsHint()
+          != other.getIsShowMinorsHint()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,13 +307,13 @@ public final class RechargeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PRODUCTID_FIELD_NUMBER;
+      hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProductId().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_SHOW_MINORS_HINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShowMinorsHint());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -421,9 +453,9 @@ public final class RechargeRspOuterClass {
         super.clear();
         productId_ = "";
 
-        isShowMinorsHint_ = false;
-
         retcode_ = 0;
+
+        isShowMinorsHint_ = false;
 
         return this;
       }
@@ -452,8 +484,8 @@ public final class RechargeRspOuterClass {
       public emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp buildPartial() {
         emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp result = new emu.grasscutter.net.proto.RechargeRspOuterClass.RechargeRsp(this);
         result.productId_ = productId_;
-        result.isShowMinorsHint_ = isShowMinorsHint_;
         result.retcode_ = retcode_;
+        result.isShowMinorsHint_ = isShowMinorsHint_;
         onBuilt();
         return result;
       }
@@ -506,11 +538,11 @@ public final class RechargeRspOuterClass {
           productId_ = other.productId_;
           onChanged();
         }
-        if (other.getIsShowMinorsHint() != false) {
-          setIsShowMinorsHint(other.getIsShowMinorsHint());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getIsShowMinorsHint() != false) {
+          setIsShowMinorsHint(other.getIsShowMinorsHint());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -543,7 +575,11 @@ public final class RechargeRspOuterClass {
 
       private java.lang.Object productId_ = "";
       /**
-       * <code>string productId = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 6;</code>
        * @return The productId.
        */
       public java.lang.String getProductId() {
@@ -559,7 +595,11 @@ public final class RechargeRspOuterClass {
         }
       }
       /**
-       * <code>string productId = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 6;</code>
        * @return The bytes for productId.
        */
       public com.google.protobuf.ByteString
@@ -576,7 +616,11 @@ public final class RechargeRspOuterClass {
         }
       }
       /**
-       * <code>string productId = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 6;</code>
        * @param value The productId to set.
        * @return This builder for chaining.
        */
@@ -591,7 +635,11 @@ public final class RechargeRspOuterClass {
         return this;
       }
       /**
-       * <code>string productId = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearProductId() {
@@ -601,7 +649,11 @@ public final class RechargeRspOuterClass {
         return this;
       }
       /**
-       * <code>string productId = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 6;</code>
        * @param value The bytes for productId to set.
        * @return This builder for chaining.
        */
@@ -617,39 +669,12 @@ public final class RechargeRspOuterClass {
         return this;
       }
 
-      private boolean isShowMinorsHint_ ;
-      /**
-       * <code>bool is_show_minors_hint = 13;</code>
-       * @return The isShowMinorsHint.
-       */
-      @java.lang.Override
-      public boolean getIsShowMinorsHint() {
-        return isShowMinorsHint_;
-      }
-      /**
-       * <code>bool is_show_minors_hint = 13;</code>
-       * @param value The isShowMinorsHint to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsShowMinorsHint(boolean value) {
-        
-        isShowMinorsHint_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_show_minors_hint = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsShowMinorsHint() {
-        
-        isShowMinorsHint_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
@@ -658,6 +683,10 @@ public final class RechargeRspOuterClass {
         return retcode_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -669,12 +698,59 @@ public final class RechargeRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isShowMinorsHint_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_show_minors_hint = 13;</code>
+       * @return The isShowMinorsHint.
+       */
+      @java.lang.Override
+      public boolean getIsShowMinorsHint() {
+        return isShowMinorsHint_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_show_minors_hint = 13;</code>
+       * @param value The isShowMinorsHint to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsShowMinorsHint(boolean value) {
+        
+        isShowMinorsHint_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_show_minors_hint = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsShowMinorsHint() {
+        
+        isShowMinorsHint_ = false;
         onChanged();
         return this;
       }
@@ -745,10 +821,10 @@ public final class RechargeRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021RechargeRsp.proto\"N\n\013RechargeRsp\022\021\n\tpr" +
-      "oductId\030\006 \001(\t\022\033\n\023is_show_minors_hint\030\r \001" +
-      "(\010\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\021RechargeRsp.proto\"O\n\013RechargeRsp\022\022\n\npr" +
+      "oduct_id\030\006 \001(\t\022\017\n\007retcode\030\017 \001(\005\022\033\n\023is_sh" +
+      "ow_minors_hint\030\r \001(\010B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -759,7 +835,7 @@ public final class RechargeRspOuterClass {
     internal_static_RechargeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RechargeRsp_descriptor,
-        new java.lang.String[] { "ProductId", "IsShowMinorsHint", "Retcode", });
+        new java.lang.String[] { "ProductId", "Retcode", "IsShowMinorsHint", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

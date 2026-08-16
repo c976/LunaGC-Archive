@@ -19,31 +19,51 @@ public final class PlayProductOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string productId = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 1;</code>
      * @return The productId.
      */
     java.lang.String getProductId();
     /**
-     * <code>string productId = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 1;</code>
      * @return The bytes for productId.
      */
     com.google.protobuf.ByteString
         getProductIdBytes();
 
     /**
-     * <code>string priceTier = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
      * @return The priceTier.
      */
     java.lang.String getPriceTier();
     /**
-     * <code>string priceTier = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
      * @return The bytes for priceTier.
      */
     com.google.protobuf.ByteString
         getPriceTierBytes();
 
     /**
-     * <code>uint32 scheduleId = 3;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 3;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
@@ -144,10 +164,14 @@ public final class PlayProductOuterClass {
               emu.grasscutter.net.proto.PlayProductOuterClass.PlayProduct.class, emu.grasscutter.net.proto.PlayProductOuterClass.PlayProduct.Builder.class);
     }
 
-    public static final int PRODUCTID_FIELD_NUMBER = 1;
+    public static final int PRODUCT_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object productId_;
     /**
-     * <code>string productId = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 1;</code>
      * @return The productId.
      */
     @java.lang.Override
@@ -164,7 +188,11 @@ public final class PlayProductOuterClass {
       }
     }
     /**
-     * <code>string productId = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string product_id = 1;</code>
      * @return The bytes for productId.
      */
     @java.lang.Override
@@ -182,10 +210,14 @@ public final class PlayProductOuterClass {
       }
     }
 
-    public static final int PRICETIER_FIELD_NUMBER = 2;
+    public static final int PRICE_TIER_FIELD_NUMBER = 2;
     private volatile java.lang.Object priceTier_;
     /**
-     * <code>string priceTier = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
      * @return The priceTier.
      */
     @java.lang.Override
@@ -202,7 +234,11 @@ public final class PlayProductOuterClass {
       }
     }
     /**
-     * <code>string priceTier = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
      * @return The bytes for priceTier.
      */
     @java.lang.Override
@@ -220,10 +256,14 @@ public final class PlayProductOuterClass {
       }
     }
 
-    public static final int SCHEDULEID_FIELD_NUMBER = 3;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 3;
     private int scheduleId_;
     /**
-     * <code>uint32 scheduleId = 3;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 3;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -305,11 +345,11 @@ public final class PlayProductOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PRODUCTID_FIELD_NUMBER;
+      hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProductId().hashCode();
-      hash = (37 * hash) + PRICETIER_FIELD_NUMBER;
+      hash = (37 * hash) + PRICE_TIER_FIELD_NUMBER;
       hash = (53 * hash) + getPriceTier().hashCode();
-      hash = (37 * hash) + SCHEDULEID_FIELD_NUMBER;
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -569,7 +609,11 @@ public final class PlayProductOuterClass {
 
       private java.lang.Object productId_ = "";
       /**
-       * <code>string productId = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 1;</code>
        * @return The productId.
        */
       public java.lang.String getProductId() {
@@ -585,7 +629,11 @@ public final class PlayProductOuterClass {
         }
       }
       /**
-       * <code>string productId = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 1;</code>
        * @return The bytes for productId.
        */
       public com.google.protobuf.ByteString
@@ -602,7 +650,11 @@ public final class PlayProductOuterClass {
         }
       }
       /**
-       * <code>string productId = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 1;</code>
        * @param value The productId to set.
        * @return This builder for chaining.
        */
@@ -617,7 +669,11 @@ public final class PlayProductOuterClass {
         return this;
       }
       /**
-       * <code>string productId = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearProductId() {
@@ -627,7 +683,11 @@ public final class PlayProductOuterClass {
         return this;
       }
       /**
-       * <code>string productId = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string product_id = 1;</code>
        * @param value The bytes for productId to set.
        * @return This builder for chaining.
        */
@@ -645,7 +705,11 @@ public final class PlayProductOuterClass {
 
       private java.lang.Object priceTier_ = "";
       /**
-       * <code>string priceTier = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @return The priceTier.
        */
       public java.lang.String getPriceTier() {
@@ -661,7 +725,11 @@ public final class PlayProductOuterClass {
         }
       }
       /**
-       * <code>string priceTier = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @return The bytes for priceTier.
        */
       public com.google.protobuf.ByteString
@@ -678,7 +746,11 @@ public final class PlayProductOuterClass {
         }
       }
       /**
-       * <code>string priceTier = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @param value The priceTier to set.
        * @return This builder for chaining.
        */
@@ -693,7 +765,11 @@ public final class PlayProductOuterClass {
         return this;
       }
       /**
-       * <code>string priceTier = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPriceTier() {
@@ -703,7 +779,11 @@ public final class PlayProductOuterClass {
         return this;
       }
       /**
-       * <code>string priceTier = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @param value The bytes for priceTier to set.
        * @return This builder for chaining.
        */
@@ -721,7 +801,11 @@ public final class PlayProductOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 scheduleId = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 3;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -729,7 +813,11 @@ public final class PlayProductOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 scheduleId = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 3;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -740,7 +828,11 @@ public final class PlayProductOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scheduleId = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -816,10 +908,10 @@ public final class PlayProductOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021PlayProduct.proto\"G\n\013PlayProduct\022\021\n\tpr" +
-      "oductId\030\001 \001(\t\022\021\n\tpriceTier\030\002 \001(\t\022\022\n\nsche" +
-      "duleId\030\003 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\021PlayProduct.proto\"J\n\013PlayProduct\022\022\n\npr" +
+      "oduct_id\030\001 \001(\t\022\022\n\nprice_tier\030\002 \001(\t\022\023\n\013sc" +
+      "hedule_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,16 +19,14 @@ public final class ExecuteGadgetLuaRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * 4.7.0
-   * CmdId: 2532 ?
-   * Obf: CBGAMDPCMAM
+   * CmdId: 27108
    * </pre>
    *
    * Protobuf type {@code ExecuteGadgetLuaRsp}
@@ -75,7 +73,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -112,10 +110,10 @@ public final class ExecuteGadgetLuaRspOuterClass {
               emu.grasscutter.net.proto.ExecuteGadgetLuaRspOuterClass.ExecuteGadgetLuaRsp.class, emu.grasscutter.net.proto.ExecuteGadgetLuaRspOuterClass.ExecuteGadgetLuaRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -138,7 +136,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +149,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +278,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
-     * CmdId: 2532 ?
-     * Obf: CBGAMDPCMAM
+     * CmdId: 27108
      * </pre>
      *
      * Protobuf type {@code ExecuteGadgetLuaRsp}
@@ -433,7 +429,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -441,7 +437,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -452,7 +448,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -529,7 +525,7 @@ public final class ExecuteGadgetLuaRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ExecuteGadgetLuaRsp.proto\"&\n\023ExecuteGa" +
-      "dgetLuaRsp\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grass" +
+      "dgetLuaRsp\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

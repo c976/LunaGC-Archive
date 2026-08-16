@@ -19,91 +19,143 @@ public final class BlessingRecvPicRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 pic_id = 15;</code>
-     * @return The picId.
-     */
-    int getPicId();
-
-    /**
-     * <code>uint32 uid = 7;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-    /**
-     * <code>string remark_name = 1;</code>
-     * @return The remarkName.
-     */
-    java.lang.String getRemarkName();
-    /**
-     * <code>string remark_name = 1;</code>
-     * @return The bytes for remarkName.
-     */
-    com.google.protobuf.ByteString
-        getRemarkNameBytes();
-
-    /**
-     * <code>uint32 avatar_id = 6;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
-
-    /**
-     * <code>bool is_recv = 10;</code>
-     * @return The isRecv.
-     */
-    boolean getIsRecv();
-
-    /**
-     * <code>string signature = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string signature = 5;</code>
      * @return The signature.
      */
     java.lang.String getSignature();
     /**
-     * <code>string signature = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string signature = 5;</code>
      * @return The bytes for signature.
      */
     com.google.protobuf.ByteString
         getSignatureBytes();
 
     /**
-     * <code>uint32 index = 13;</code>
-     * @return The index.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return Whether the profilePicture field is set.
      */
-    int getIndex();
+    boolean hasProfilePicture();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>string nickname = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 15;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <code>string nickname = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 15;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string remark_name = 4;</code>
+     * @return The remarkName.
+     */
+    java.lang.String getRemarkName();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string remark_name = 4;</code>
+     * @return The bytes for remarkName.
+     */
+    com.google.protobuf.ByteString
+        getRemarkNameBytes();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 uid = 10;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool is_recv = 8;</code>
+     * @return The isRecv.
+     */
+    boolean getIsRecv();
+
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 2;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 JCCKMMFPKID = 12;</code>
+     * @return The jCCKMMFPKID.
+     */
+    int getJCCKMMFPKID();
+
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 index = 13;</code>
+     * @return The index.
+     */
+    int getIndex();
   }
   /**
-   * <pre>
-   * Obf: FDIOPMKFCCB
-   * </pre>
-   *
    * Protobuf type {@code BlessingRecvPicRecord}
    */
   public static final class BlessingRecvPicRecord extends
@@ -116,9 +168,9 @@ public final class BlessingRecvPicRecordOuterClass {
       super(builder);
     }
     private BlessingRecvPicRecord() {
-      remarkName_ = "";
       signature_ = "";
       nickname_ = "";
+      remarkName_ = "";
     }
 
     @java.lang.Override
@@ -152,28 +204,6 @@ public final class BlessingRecvPicRecordOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              remarkName_ = s;
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              signature_ = s;
-              break;
-            }
-            case 48: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 74: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -186,9 +216,36 @@ public final class BlessingRecvPicRecordOuterClass {
 
               break;
             }
-            case 80: {
+            case 16: {
+
+              avatarId_ = input.readUInt32();
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              remarkName_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              signature_ = s;
+              break;
+            }
+            case 64: {
 
               isRecv_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              jCCKMMFPKID_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -196,15 +253,10 @@ public final class BlessingRecvPicRecordOuterClass {
               index_ = input.readUInt32();
               break;
             }
-            case 114: {
+            case 122: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
-              break;
-            }
-            case 120: {
-
-              picId_ = input.readUInt32();
               break;
             }
             default: {
@@ -239,118 +291,14 @@ public final class BlessingRecvPicRecordOuterClass {
               emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.class, emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.Builder.class);
     }
 
-    public static final int PIC_ID_FIELD_NUMBER = 15;
-    private int picId_;
-    /**
-     * <code>uint32 pic_id = 15;</code>
-     * @return The picId.
-     */
-    @java.lang.Override
-    public int getPicId() {
-      return picId_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 7;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 7;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
-    public static final int REMARK_NAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object remarkName_;
-    /**
-     * <code>string remark_name = 1;</code>
-     * @return The remarkName.
-     */
-    @java.lang.Override
-    public java.lang.String getRemarkName() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        remarkName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string remark_name = 1;</code>
-     * @return The bytes for remarkName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRemarkNameBytes() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        remarkName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 6;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int IS_RECV_FIELD_NUMBER = 10;
-    private boolean isRecv_;
-    /**
-     * <code>bool is_recv = 10;</code>
-     * @return The isRecv.
-     */
-    @java.lang.Override
-    public boolean getIsRecv() {
-      return isRecv_;
-    }
-
-    public static final int SIGNATURE_FIELD_NUMBER = 4;
+    public static final int SIGNATURE_FIELD_NUMBER = 5;
     private volatile java.lang.Object signature_;
     /**
-     * <code>string signature = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string signature = 5;</code>
      * @return The signature.
      */
     @java.lang.Override
@@ -367,7 +315,11 @@ public final class BlessingRecvPicRecordOuterClass {
       }
     }
     /**
-     * <code>string signature = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string signature = 5;</code>
      * @return The bytes for signature.
      */
     @java.lang.Override
@@ -385,21 +337,52 @@ public final class BlessingRecvPicRecordOuterClass {
       }
     }
 
-    public static final int INDEX_FIELD_NUMBER = 13;
-    private int index_;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <code>uint32 index = 13;</code>
-     * @return The index.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return Whether the profilePicture field is set.
      */
     @java.lang.Override
-    public int getIndex() {
-      return index_;
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 14;
+    public static final int NICKNAME_FIELD_NUMBER = 15;
     private volatile java.lang.Object nickname_;
     /**
-     * <code>string nickname = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 15;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -416,7 +399,11 @@ public final class BlessingRecvPicRecordOuterClass {
       }
     }
     /**
-     * <code>string nickname = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 15;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -434,6 +421,127 @@ public final class BlessingRecvPicRecordOuterClass {
       }
     }
 
+    public static final int REMARK_NAME_FIELD_NUMBER = 4;
+    private volatile java.lang.Object remarkName_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string remark_name = 4;</code>
+     * @return The remarkName.
+     */
+    @java.lang.Override
+    public java.lang.String getRemarkName() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        remarkName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string remark_name = 4;</code>
+     * @return The bytes for remarkName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getRemarkNameBytes() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        remarkName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int UID_FIELD_NUMBER = 10;
+    private int uid_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 uid = 10;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int IS_RECV_FIELD_NUMBER = 8;
+    private boolean isRecv_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool is_recv = 8;</code>
+     * @return The isRecv.
+     */
+    @java.lang.Override
+    public boolean getIsRecv() {
+      return isRecv_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 2;
+    private int avatarId_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 2;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
+    public static final int JCCKMMFPKID_FIELD_NUMBER = 12;
+    private int jCCKMMFPKID_;
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 JCCKMMFPKID = 12;</code>
+     * @return The jCCKMMFPKID.
+     */
+    @java.lang.Override
+    public int getJCCKMMFPKID() {
+      return jCCKMMFPKID_;
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 13;
+    private int index_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 index = 13;</code>
+     * @return The index.
+     */
+    @java.lang.Override
+    public int getIndex() {
+      return index_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -448,32 +556,32 @@ public final class BlessingRecvPicRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, remarkName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, signature_);
+      if (profilePicture_ != null) {
+        output.writeMessage(1, getProfilePicture());
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(6, avatarId_);
+        output.writeUInt32(2, avatarId_);
       }
-      if (uid_ != 0) {
-        output.writeUInt32(7, uid_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, remarkName_);
       }
-      if (profilePicture_ != null) {
-        output.writeMessage(9, getProfilePicture());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, signature_);
       }
       if (isRecv_ != false) {
-        output.writeBool(10, isRecv_);
+        output.writeBool(8, isRecv_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(10, uid_);
+      }
+      if (jCCKMMFPKID_ != 0) {
+        output.writeUInt32(12, jCCKMMFPKID_);
       }
       if (index_ != 0) {
         output.writeUInt32(13, index_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, nickname_);
-      }
-      if (picId_ != 0) {
-        output.writeUInt32(15, picId_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, nickname_);
       }
       unknownFields.writeTo(output);
     }
@@ -484,38 +592,38 @@ public final class BlessingRecvPicRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, remarkName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, signature_);
+      if (profilePicture_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getProfilePicture());
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, avatarId_);
+          .computeUInt32Size(2, avatarId_);
       }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, uid_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, remarkName_);
       }
-      if (profilePicture_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getProfilePicture());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, signature_);
       }
       if (isRecv_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isRecv_);
+          .computeBoolSize(8, isRecv_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, uid_);
+      }
+      if (jCCKMMFPKID_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, jCCKMMFPKID_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, index_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, nickname_);
-      }
-      if (picId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, picId_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, nickname_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -532,27 +640,27 @@ public final class BlessingRecvPicRecordOuterClass {
       }
       emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord other = (emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord) obj;
 
-      if (getPicId()
-          != other.getPicId()) return false;
-      if (getUid()
-          != other.getUid()) return false;
+      if (!getSignature()
+          .equals(other.getSignature())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (!getRemarkName()
-          .equals(other.getRemarkName())) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
-      if (getIsRecv()
-          != other.getIsRecv()) return false;
-      if (!getSignature()
-          .equals(other.getSignature())) return false;
-      if (getIndex()
-          != other.getIndex()) return false;
       if (!getNickname()
           .equals(other.getNickname())) return false;
+      if (!getRemarkName()
+          .equals(other.getRemarkName())) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getIsRecv()
+          != other.getIsRecv()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (getJCCKMMFPKID()
+          != other.getJCCKMMFPKID()) return false;
+      if (getIndex()
+          != other.getIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -564,27 +672,27 @@ public final class BlessingRecvPicRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PIC_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPicId();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
+      hash = (53 * hash) + getSignature().hashCode();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
       hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getRemarkName().hashCode();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (37 * hash) + IS_RECV_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRecv());
-      hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
-      hash = (53 * hash) + getSignature().hashCode();
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + JCCKMMFPKID_FIELD_NUMBER;
+      hash = (53 * hash) + getJCCKMMFPKID();
       hash = (37 * hash) + INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getIndex();
-      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickname().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -681,10 +789,6 @@ public final class BlessingRecvPicRecordOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FDIOPMKFCCB
-     * </pre>
-     *
      * Protobuf type {@code BlessingRecvPicRecord}
      */
     public static final class Builder extends
@@ -722,9 +826,7 @@ public final class BlessingRecvPicRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        picId_ = 0;
-
-        uid_ = 0;
+        signature_ = "";
 
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
@@ -732,17 +834,19 @@ public final class BlessingRecvPicRecordOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
+        nickname_ = "";
+
         remarkName_ = "";
 
-        avatarId_ = 0;
+        uid_ = 0;
 
         isRecv_ = false;
 
-        signature_ = "";
+        avatarId_ = 0;
+
+        jCCKMMFPKID_ = 0;
 
         index_ = 0;
-
-        nickname_ = "";
 
         return this;
       }
@@ -770,19 +874,19 @@ public final class BlessingRecvPicRecordOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord buildPartial() {
         emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord result = new emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord(this);
-        result.picId_ = picId_;
-        result.uid_ = uid_;
+        result.signature_ = signature_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.remarkName_ = remarkName_;
-        result.avatarId_ = avatarId_;
-        result.isRecv_ = isRecv_;
-        result.signature_ = signature_;
-        result.index_ = index_;
         result.nickname_ = nickname_;
+        result.remarkName_ = remarkName_;
+        result.uid_ = uid_;
+        result.isRecv_ = isRecv_;
+        result.avatarId_ = avatarId_;
+        result.jCCKMMFPKID_ = jCCKMMFPKID_;
+        result.index_ = index_;
         onBuilt();
         return result;
       }
@@ -831,35 +935,35 @@ public final class BlessingRecvPicRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord other) {
         if (other == emu.grasscutter.net.proto.BlessingRecvPicRecordOuterClass.BlessingRecvPicRecord.getDefaultInstance()) return this;
-        if (other.getPicId() != 0) {
-          setPicId(other.getPicId());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (!other.getSignature().isEmpty()) {
+          signature_ = other.signature_;
+          onChanged();
         }
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
+        }
+        if (!other.getNickname().isEmpty()) {
+          nickname_ = other.nickname_;
+          onChanged();
         }
         if (!other.getRemarkName().isEmpty()) {
           remarkName_ = other.remarkName_;
           onChanged();
         }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         if (other.getIsRecv() != false) {
           setIsRecv(other.getIsRecv());
         }
-        if (!other.getSignature().isEmpty()) {
-          signature_ = other.signature_;
-          onChanged();
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
+        }
+        if (other.getJCCKMMFPKID() != 0) {
+          setJCCKMMFPKID(other.getJCCKMMFPKID());
         }
         if (other.getIndex() != 0) {
           setIndex(other.getIndex());
-        }
-        if (!other.getNickname().isEmpty()) {
-          nickname_ = other.nickname_;
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -890,64 +994,98 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
 
-      private int picId_ ;
+      private java.lang.Object signature_ = "";
       /**
-       * <code>uint32 pic_id = 15;</code>
-       * @return The picId.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string signature = 5;</code>
+       * @return The signature.
        */
-      @java.lang.Override
-      public int getPicId() {
-        return picId_;
+      public java.lang.String getSignature() {
+        java.lang.Object ref = signature_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          signature_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 pic_id = 15;</code>
-       * @param value The picId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string signature = 5;</code>
+       * @return The bytes for signature.
+       */
+      public com.google.protobuf.ByteString
+          getSignatureBytes() {
+        java.lang.Object ref = signature_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          signature_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string signature = 5;</code>
+       * @param value The signature to set.
        * @return This builder for chaining.
        */
-      public Builder setPicId(int value) {
-        
-        picId_ = value;
+      public Builder setSignature(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        signature_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 pic_id = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string signature = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPicId() {
+      public Builder clearSignature() {
         
-        picId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 7;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 7;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
+        signature_ = getDefaultInstance().getSignature();
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 uid = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string signature = 5;</code>
+       * @param value The bytes for signature to set.
        * @return This builder for chaining.
        */
-      public Builder clearUid() {
+      public Builder setSignatureBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        uid_ = 0;
+        signature_ = value;
         onChanged();
         return this;
       }
@@ -956,14 +1094,22 @@ public final class BlessingRecvPicRecordOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -974,7 +1120,11 @@ public final class BlessingRecvPicRecordOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -990,7 +1140,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -1004,7 +1158,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -1022,7 +1180,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public Builder clearProfilePicture() {
         if (profilePictureBuilder_ == null) {
@@ -1036,7 +1198,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         
@@ -1044,7 +1210,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -1055,7 +1225,11 @@ public final class BlessingRecvPicRecordOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -1071,254 +1245,13 @@ public final class BlessingRecvPicRecordOuterClass {
         return profilePictureBuilder_;
       }
 
-      private java.lang.Object remarkName_ = "";
-      /**
-       * <code>string remark_name = 1;</code>
-       * @return The remarkName.
-       */
-      public java.lang.String getRemarkName() {
-        java.lang.Object ref = remarkName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          remarkName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string remark_name = 1;</code>
-       * @return The bytes for remarkName.
-       */
-      public com.google.protobuf.ByteString
-          getRemarkNameBytes() {
-        java.lang.Object ref = remarkName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          remarkName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string remark_name = 1;</code>
-       * @param value The remarkName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemarkName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        remarkName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string remark_name = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemarkName() {
-        
-        remarkName_ = getDefaultInstance().getRemarkName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string remark_name = 1;</code>
-       * @param value The bytes for remarkName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemarkNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        remarkName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 6;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 6;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isRecv_ ;
-      /**
-       * <code>bool is_recv = 10;</code>
-       * @return The isRecv.
-       */
-      @java.lang.Override
-      public boolean getIsRecv() {
-        return isRecv_;
-      }
-      /**
-       * <code>bool is_recv = 10;</code>
-       * @param value The isRecv to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsRecv(boolean value) {
-        
-        isRecv_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_recv = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsRecv() {
-        
-        isRecv_ = false;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object signature_ = "";
-      /**
-       * <code>string signature = 4;</code>
-       * @return The signature.
-       */
-      public java.lang.String getSignature() {
-        java.lang.Object ref = signature_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          signature_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string signature = 4;</code>
-       * @return The bytes for signature.
-       */
-      public com.google.protobuf.ByteString
-          getSignatureBytes() {
-        java.lang.Object ref = signature_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          signature_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string signature = 4;</code>
-       * @param value The signature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignature(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        signature_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string signature = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSignature() {
-        
-        signature_ = getDefaultInstance().getSignature();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string signature = 4;</code>
-       * @param value The bytes for signature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignatureBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        signature_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int index_ ;
-      /**
-       * <code>uint32 index = 13;</code>
-       * @return The index.
-       */
-      @java.lang.Override
-      public int getIndex() {
-        return index_;
-      }
-      /**
-       * <code>uint32 index = 13;</code>
-       * @param value The index to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIndex(int value) {
-        
-        index_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 index = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIndex() {
-        
-        index_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object nickname_ = "";
       /**
-       * <code>string nickname = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 15;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -1334,7 +1267,11 @@ public final class BlessingRecvPicRecordOuterClass {
         }
       }
       /**
-       * <code>string nickname = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 15;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -1351,7 +1288,11 @@ public final class BlessingRecvPicRecordOuterClass {
         }
       }
       /**
-       * <code>string nickname = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 15;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -1366,7 +1307,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -1376,7 +1321,11 @@ public final class BlessingRecvPicRecordOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 15;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -1388,6 +1337,317 @@ public final class BlessingRecvPicRecordOuterClass {
   checkByteStringIsUtf8(value);
         
         nickname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object remarkName_ = "";
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string remark_name = 4;</code>
+       * @return The remarkName.
+       */
+      public java.lang.String getRemarkName() {
+        java.lang.Object ref = remarkName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          remarkName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string remark_name = 4;</code>
+       * @return The bytes for remarkName.
+       */
+      public com.google.protobuf.ByteString
+          getRemarkNameBytes() {
+        java.lang.Object ref = remarkName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          remarkName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string remark_name = 4;</code>
+       * @param value The remarkName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemarkName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        remarkName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string remark_name = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemarkName() {
+        
+        remarkName_ = getDefaultInstance().getRemarkName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string remark_name = 4;</code>
+       * @param value The bytes for remarkName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemarkNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        remarkName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 uid = 10;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 uid = 10;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 uid = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isRecv_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool is_recv = 8;</code>
+       * @return The isRecv.
+       */
+      @java.lang.Override
+      public boolean getIsRecv() {
+        return isRecv_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool is_recv = 8;</code>
+       * @param value The isRecv to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsRecv(boolean value) {
+        
+        isRecv_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool is_recv = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsRecv() {
+        
+        isRecv_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 2;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 2;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jCCKMMFPKID_ ;
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 JCCKMMFPKID = 12;</code>
+       * @return The jCCKMMFPKID.
+       */
+      @java.lang.Override
+      public int getJCCKMMFPKID() {
+        return jCCKMMFPKID_;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 JCCKMMFPKID = 12;</code>
+       * @param value The jCCKMMFPKID to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJCCKMMFPKID(int value) {
+        
+        jCCKMMFPKID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 JCCKMMFPKID = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJCCKMMFPKID() {
+        
+        jCCKMMFPKID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int index_ ;
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 index = 13;</code>
+       * @return The index.
+       */
+      @java.lang.Override
+      public int getIndex() {
+        return index_;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 index = 13;</code>
+       * @param value The index to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIndex(int value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 index = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0;
         onChanged();
         return this;
       }
@@ -1459,13 +1719,13 @@ public final class BlessingRecvPicRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033BlessingRecvPicRecord.proto\032\024ProfilePi" +
-      "cture.proto\"\313\001\n\025BlessingRecvPicRecord\022\016\n" +
-      "\006pic_id\030\017 \001(\r\022\013\n\003uid\030\007 \001(\r\022(\n\017profile_pi" +
-      "cture\030\t \001(\0132\017.ProfilePicture\022\023\n\013remark_n" +
-      "ame\030\001 \001(\t\022\021\n\tavatar_id\030\006 \001(\r\022\017\n\007is_recv\030" +
-      "\n \001(\010\022\021\n\tsignature\030\004 \001(\t\022\r\n\005index\030\r \001(\r\022" +
-      "\020\n\010nickname\030\016 \001(\tB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "cture.proto\"\320\001\n\025BlessingRecvPicRecord\022\021\n" +
+      "\tsignature\030\005 \001(\t\022(\n\017profile_picture\030\001 \001(" +
+      "\0132\017.ProfilePicture\022\020\n\010nickname\030\017 \001(\t\022\023\n\013" +
+      "remark_name\030\004 \001(\t\022\013\n\003uid\030\n \001(\r\022\017\n\007is_rec" +
+      "v\030\010 \001(\010\022\021\n\tavatar_id\030\002 \001(\r\022\023\n\013JCCKMMFPKI" +
+      "D\030\014 \001(\r\022\r\n\005index\030\r \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1477,7 +1737,7 @@ public final class BlessingRecvPicRecordOuterClass {
     internal_static_BlessingRecvPicRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingRecvPicRecord_descriptor,
-        new java.lang.String[] { "PicId", "Uid", "ProfilePicture", "RemarkName", "AvatarId", "IsRecv", "Signature", "Index", "Nickname", });
+        new java.lang.String[] { "Signature", "ProfilePicture", "Nickname", "RemarkName", "Uid", "IsRecv", "AvatarId", "JCCKMMFPKID", "Index", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 

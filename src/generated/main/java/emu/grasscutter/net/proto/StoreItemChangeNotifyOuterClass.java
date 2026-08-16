@@ -19,54 +19,90 @@ public final class StoreItemChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemOuterClass.Item> 
         getItemListList();
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemOuterClass.Item getItemList(int index);
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemListOrBuilder(
         int index);
 
     /**
-     * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
      * @return The reason.
      */
-    emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason getReason();
+    emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP getReason();
 
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.StoreType store_type = 5;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     int getStoreTypeValue();
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.StoreType store_type = 5;</code>
      * @return The storeType.
      */
     emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType();
   }
   /**
    * <pre>
-   * CmdId: 3100
+   * CmdId: 22566
    * </pre>
    *
    * Protobuf type {@code StoreItemChangeNotify}
@@ -117,19 +153,19 @@ public final class StoreItemChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
               int rawValue = input.readEnum();
 
               storeType_ = rawValue;
               break;
             }
-            case 64: {
+            case 88: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 98: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemOuterClass.Item>();
                 mutable_bitField0_ |= 0x00000001;
@@ -174,29 +210,29 @@ public final class StoreItemChangeNotifyOuterClass {
     }
 
     /**
-     * Protobuf enum {@code StoreItemChangeNotify.ItemChangeReason}
+     * Protobuf enum {@code StoreItemChangeNotify.DGFFPOLCMCP}
      */
-    public enum ItemChangeReason
+    public enum DGFFPOLCMCP
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>ItemChangeReason_OTHERS = 0;</code>
+       * <code>HFCJEGCAEPF_OTHERS = 0;</code>
        */
-      ItemChangeReason_OTHERS(0),
+      HFCJEGCAEPF_OTHERS(0),
       /**
-       * <code>ItemChangeReason_LOCK_OR_STAR = 1;</code>
+       * <code>HFCJEGCAEPF_LOCK_OR_STAR = 1;</code>
        */
-      ItemChangeReason_LOCK_OR_STAR(1),
+      HFCJEGCAEPF_LOCK_OR_STAR(1),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>ItemChangeReason_OTHERS = 0;</code>
+       * <code>HFCJEGCAEPF_OTHERS = 0;</code>
        */
-      public static final int ItemChangeReason_OTHERS_VALUE = 0;
+      public static final int HFCJEGCAEPF_OTHERS_VALUE = 0;
       /**
-       * <code>ItemChangeReason_LOCK_OR_STAR = 1;</code>
+       * <code>HFCJEGCAEPF_LOCK_OR_STAR = 1;</code>
        */
-      public static final int ItemChangeReason_LOCK_OR_STAR_VALUE = 1;
+      public static final int HFCJEGCAEPF_LOCK_OR_STAR_VALUE = 1;
 
 
       public final int getNumber() {
@@ -213,7 +249,7 @@ public final class StoreItemChangeNotifyOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static ItemChangeReason valueOf(int value) {
+      public static DGFFPOLCMCP valueOf(int value) {
         return forNumber(value);
       }
 
@@ -221,23 +257,23 @@ public final class StoreItemChangeNotifyOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static ItemChangeReason forNumber(int value) {
+      public static DGFFPOLCMCP forNumber(int value) {
         switch (value) {
-          case 0: return ItemChangeReason_OTHERS;
-          case 1: return ItemChangeReason_LOCK_OR_STAR;
+          case 0: return HFCJEGCAEPF_OTHERS;
+          case 1: return HFCJEGCAEPF_LOCK_OR_STAR;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<ItemChangeReason>
+      public static com.google.protobuf.Internal.EnumLiteMap<DGFFPOLCMCP>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          ItemChangeReason> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<ItemChangeReason>() {
-              public ItemChangeReason findValueByNumber(int number) {
-                return ItemChangeReason.forNumber(number);
+          DGFFPOLCMCP> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DGFFPOLCMCP>() {
+              public DGFFPOLCMCP findValueByNumber(int number) {
+                return DGFFPOLCMCP.forNumber(number);
               }
             };
 
@@ -258,9 +294,9 @@ public final class StoreItemChangeNotifyOuterClass {
         return emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final ItemChangeReason[] VALUES = values();
+      private static final DGFFPOLCMCP[] VALUES = values();
 
-      public static ItemChangeReason valueOf(
+      public static DGFFPOLCMCP valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -274,24 +310,32 @@ public final class StoreItemChangeNotifyOuterClass {
 
       private final int value;
 
-      private ItemChangeReason(int value) {
+      private DGFFPOLCMCP(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:StoreItemChangeNotify.ItemChangeReason)
+      // @@protoc_insertion_point(enum_scope:StoreItemChangeNotify.DGFFPOLCMCP)
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 12;
+    public static final int ITEM_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ItemOuterClass.Item> itemList_;
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemOuterClass.Item> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder> 
@@ -299,21 +343,33 @@ public final class StoreItemChangeNotifyOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemOuterClass.Item getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .Item item_list = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemListOrBuilder(
@@ -321,36 +377,52 @@ public final class StoreItemChangeNotifyOuterClass {
       return itemList_.get(index);
     }
 
-    public static final int REASON_FIELD_NUMBER = 8;
+    public static final int REASON_FIELD_NUMBER = 11;
     private int reason_;
     /**
-     * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
      * @return The reason.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason getReason() {
+    @java.lang.Override public emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP getReason() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason result = emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP result = emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.UNRECOGNIZED : result;
     }
 
-    public static final int STORE_TYPE_FIELD_NUMBER = 3;
+    public static final int STORE_TYPE_FIELD_NUMBER = 5;
     private int storeType_;
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.StoreType store_type = 5;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     @java.lang.Override public int getStoreTypeValue() {
       return storeType_;
     }
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.StoreType store_type = 5;</code>
      * @return The storeType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType() {
@@ -374,13 +446,13 @@ public final class StoreItemChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, storeType_);
+        output.writeEnum(5, storeType_);
       }
-      if (reason_ != emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.ItemChangeReason_OTHERS.getNumber()) {
-        output.writeEnum(8, reason_);
+      if (reason_ != emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.HFCJEGCAEPF_OTHERS.getNumber()) {
+        output.writeEnum(11, reason_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(12, itemList_.get(i));
+        output.writeMessage(15, itemList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -393,15 +465,15 @@ public final class StoreItemChangeNotifyOuterClass {
       size = 0;
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, storeType_);
+          .computeEnumSize(5, storeType_);
       }
-      if (reason_ != emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.ItemChangeReason_OTHERS.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.HFCJEGCAEPF_OTHERS.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, reason_);
+          .computeEnumSize(11, reason_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, itemList_.get(i));
+          .computeMessageSize(15, itemList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -538,7 +610,7 @@ public final class StoreItemChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3100
+     * CmdId: 22566
      * </pre>
      *
      * Protobuf type {@code StoreItemChangeNotify}
@@ -750,7 +822,11 @@ public final class StoreItemChangeNotifyOuterClass {
           emu.grasscutter.net.proto.ItemOuterClass.Item, emu.grasscutter.net.proto.ItemOuterClass.Item.Builder, emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemOuterClass.Item> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -760,7 +836,11 @@ public final class StoreItemChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -770,7 +850,11 @@ public final class StoreItemChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.Item getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -780,7 +864,11 @@ public final class StoreItemChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemOuterClass.Item value) {
@@ -797,7 +885,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemOuterClass.Item.Builder builderForValue) {
@@ -811,7 +903,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemOuterClass.Item value) {
         if (itemListBuilder_ == null) {
@@ -827,7 +923,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemOuterClass.Item value) {
@@ -844,7 +944,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemOuterClass.Item.Builder builderForValue) {
@@ -858,7 +962,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemOuterClass.Item.Builder builderForValue) {
@@ -872,7 +980,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemOuterClass.Item> values) {
@@ -887,7 +999,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -900,7 +1016,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -913,14 +1033,22 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.Item.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemListOrBuilder(
           int index) {
@@ -930,7 +1058,11 @@ public final class StoreItemChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder> 
            getItemListOrBuilderList() {
@@ -941,14 +1073,22 @@ public final class StoreItemChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.Item.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemOuterClass.Item.getDefaultInstance());
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.Item.Builder addItemListBuilder(
           int index) {
@@ -956,7 +1096,11 @@ public final class StoreItemChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.ItemOuterClass.Item.getDefaultInstance());
       }
       /**
-       * <code>repeated .Item item_list = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .Item item_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemOuterClass.Item.Builder> 
            getItemListBuilderList() {
@@ -979,14 +1123,22 @@ public final class StoreItemChangeNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -997,21 +1149,29 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
        * @return The reason.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason getReason() {
+      public emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP getReason() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason result = emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP result = emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP.UNRECOGNIZED : result;
       }
       /**
-       * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder setReason(emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.ItemChangeReason value) {
+      public Builder setReason(emu.grasscutter.net.proto.StoreItemChangeNotifyOuterClass.StoreItemChangeNotify.DGFFPOLCMCP value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1021,7 +1181,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreItemChangeNotify.ItemChangeReason reason = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.StoreItemChangeNotify.DGFFPOLCMCP reason = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1033,14 +1197,22 @@ public final class StoreItemChangeNotifyOuterClass {
 
       private int storeType_ = 0;
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.StoreType store_type = 5;</code>
        * @return The enum numeric value on the wire for storeType.
        */
       @java.lang.Override public int getStoreTypeValue() {
         return storeType_;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.StoreType store_type = 5;</code>
        * @param value The enum numeric value on the wire for storeType to set.
        * @return This builder for chaining.
        */
@@ -1051,7 +1223,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.StoreType store_type = 5;</code>
        * @return The storeType.
        */
       @java.lang.Override
@@ -1061,7 +1237,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.StoreType store_type = 5;</code>
        * @param value The storeType to set.
        * @return This builder for chaining.
        */
@@ -1075,7 +1255,11 @@ public final class StoreItemChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.StoreType store_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreType() {
@@ -1151,18 +1335,19 @@ public final class StoreItemChangeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033StoreItemChangeNotify.proto\032\nItem.prot" +
-      "o\032\017StoreType.proto\"\336\001\n\025StoreItemChangeNo" +
-      "tify\022\030\n\titem_list\030\014 \003(\0132\005.Item\0227\n\006reason" +
-      "\030\010 \001(\0162\'.StoreItemChangeNotify.ItemChang" +
-      "eReason\022\036\n\nstore_type\030\003 \001(\0162\n.StoreType\"" +
-      "R\n\020ItemChangeReason\022\033\n\027ItemChangeReason_" +
-      "OTHERS\020\000\022!\n\035ItemChangeReason_LOCK_OR_STA" +
-      "R\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\033StoreItemChangeNotify.proto\032\021DGFFPOLCM" +
+      "CP.proto\032\nItem.proto\032\017StoreType.proto\"\312\001" +
+      "\n\025StoreItemChangeNotify\022\030\n\titem_list\030\017 \003" +
+      "(\0132\005.Item\0222\n\006reason\030\013 \001(\0162\".StoreItemCha" +
+      "ngeNotify.DGFFPOLCMCP\022\036\n\nstore_type\030\005 \001(" +
+      "\0162\n.StoreType\"C\n\013DGFFPOLCMCP\022\026\n\022HFCJEGCA" +
+      "EPF_OTHERS\020\000\022\034\n\030HFCJEGCAEPF_LOCK_OR_STAR" +
+      "\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.DGFFPOLCMCPOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ItemOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.StoreTypeOuterClass.getDescriptor(),
         });
@@ -1172,6 +1357,7 @@ public final class StoreItemChangeNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StoreItemChangeNotify_descriptor,
         new java.lang.String[] { "ItemList", "Reason", "StoreType", });
+    emu.grasscutter.net.proto.DGFFPOLCMCPOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemOuterClass.getDescriptor();
     emu.grasscutter.net.proto.StoreTypeOuterClass.getDescriptor();
   }

@@ -19,81 +19,80 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> 
-        getBKGNMCPHAOKList();
+        getDungeonAvatarInfoListList();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
-    emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getBKGNMCPHAOK(int index);
+    emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
-    int getBKGNMCPHAOKCount();
+    int getDungeonAvatarInfoListCount();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
-        getBKGNMCPHAOKOrBuilderList();
+        getDungeonAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
-    emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getBKGNMCPHAOKOrBuilder(
+    emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 difficulty_id = 6;</code>
-     * @return The difficultyId.
-     */
-    int getDifficultyId();
-
-    /**
-     * <code>uint32 init_gallery_progress = 7;</code>
-     * @return The initGalleryProgress.
-     */
-    int getInitGalleryProgress();
-
-    /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> 
         getBuffInfoListList();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     int getBuffInfoListCount();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
         getBuffInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_upper_part = 12;</code>
+     * <code>uint32 init_gallery_progress = 5;</code>
+     * @return The initGalleryProgress.
+     */
+    int getInitGalleryProgress();
+
+    /**
+     * <code>bool is_upper_part = 11;</code>
      * @return The isUpperPart.
      */
     boolean getIsUpperPart();
+
+    /**
+     * <code>uint32 difficulty_id = 13;</code>
+     * @return The difficultyId.
+     */
+    int getDifficultyId();
   }
   /**
    * <pre>
-   * 4.6.0
-   * CmdId: 3946
+   * CmdId: 5891
    * </pre>
    *
    * Protobuf type {@code CrystalLinkDungeonInfoNotify}
@@ -108,7 +107,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       super(builder);
     }
     private CrystalLinkDungeonInfoNotify() {
-      bKGNMCPHAOK_ = java.util.Collections.emptyList();
+      dungeonAvatarInfoList_ = java.util.Collections.emptyList();
       buffInfoList_ = java.util.Collections.emptyList();
     }
 
@@ -143,31 +142,21 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                bKGNMCPHAOK_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>();
+                dungeonAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              bKGNMCPHAOK_.add(
+              dungeonAvatarInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.parser(), extensionRegistry));
               break;
             }
-            case 48: {
-
-              difficultyId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              initGalleryProgress_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -176,9 +165,19 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 40: {
+
+              initGalleryProgress_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               isUpperPart_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -197,7 +196,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          bKGNMCPHAOK_ = java.util.Collections.unmodifiableList(bKGNMCPHAOK_);
+          dungeonAvatarInfoList_ = java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
@@ -219,10 +218,10 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify.class, emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -230,79 +229,57 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int BKGNMCPHAOK_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> bKGNMCPHAOK_;
+    public static final int DUNGEON_AVATAR_INFO_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> dungeonAvatarInfoList_;
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getBKGNMCPHAOKList() {
-      return bKGNMCPHAOK_;
+    public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getDungeonAvatarInfoListList() {
+      return dungeonAvatarInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
-        getBKGNMCPHAOKOrBuilderList() {
-      return bKGNMCPHAOK_;
+        getDungeonAvatarInfoListOrBuilderList() {
+      return dungeonAvatarInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     @java.lang.Override
-    public int getBKGNMCPHAOKCount() {
-      return bKGNMCPHAOK_.size();
+    public int getDungeonAvatarInfoListCount() {
+      return dungeonAvatarInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getBKGNMCPHAOK(int index) {
-      return bKGNMCPHAOK_.get(index);
+    public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index) {
+      return dungeonAvatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+     * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getBKGNMCPHAOKOrBuilder(
+    public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
         int index) {
-      return bKGNMCPHAOK_.get(index);
+      return dungeonAvatarInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 6;
-    private int difficultyId_;
-    /**
-     * <code>uint32 difficulty_id = 6;</code>
-     * @return The difficultyId.
-     */
-    @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
-    }
-
-    public static final int INIT_GALLERY_PROGRESS_FIELD_NUMBER = 7;
-    private int initGalleryProgress_;
-    /**
-     * <code>uint32 init_gallery_progress = 7;</code>
-     * @return The initGalleryProgress.
-     */
-    @java.lang.Override
-    public int getInitGalleryProgress() {
-      return initGalleryProgress_;
-    }
-
-    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 11;
+    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> buffInfoList_;
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> getBuffInfoListList() {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
@@ -310,21 +287,21 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     @java.lang.Override
     public int getBuffInfoListCount() {
       return buffInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index) {
       return buffInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+     * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
@@ -332,15 +309,37 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       return buffInfoList_.get(index);
     }
 
-    public static final int IS_UPPER_PART_FIELD_NUMBER = 12;
+    public static final int INIT_GALLERY_PROGRESS_FIELD_NUMBER = 5;
+    private int initGalleryProgress_;
+    /**
+     * <code>uint32 init_gallery_progress = 5;</code>
+     * @return The initGalleryProgress.
+     */
+    @java.lang.Override
+    public int getInitGalleryProgress() {
+      return initGalleryProgress_;
+    }
+
+    public static final int IS_UPPER_PART_FIELD_NUMBER = 11;
     private boolean isUpperPart_;
     /**
-     * <code>bool is_upper_part = 12;</code>
+     * <code>bool is_upper_part = 11;</code>
      * @return The isUpperPart.
      */
     @java.lang.Override
     public boolean getIsUpperPart() {
       return isUpperPart_;
+    }
+
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 13;
+    private int difficultyId_;
+    /**
+     * <code>uint32 difficulty_id = 13;</code>
+     * @return The difficultyId.
+     */
+    @java.lang.Override
+    public int getDifficultyId() {
+      return difficultyId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -358,22 +357,22 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+        output.writeUInt32(1, levelId_);
       }
-      for (int i = 0; i < bKGNMCPHAOK_.size(); i++) {
-        output.writeMessage(5, bKGNMCPHAOK_.get(i));
-      }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(6, difficultyId_);
-      }
-      if (initGalleryProgress_ != 0) {
-        output.writeUInt32(7, initGalleryProgress_);
+      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
+        output.writeMessage(2, dungeonAvatarInfoList_.get(i));
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
-        output.writeMessage(11, buffInfoList_.get(i));
+        output.writeMessage(3, buffInfoList_.get(i));
+      }
+      if (initGalleryProgress_ != 0) {
+        output.writeUInt32(5, initGalleryProgress_);
       }
       if (isUpperPart_ != false) {
-        output.writeBool(12, isUpperPart_);
+        output.writeBool(11, isUpperPart_);
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(13, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -386,27 +385,27 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
-      for (int i = 0; i < bKGNMCPHAOK_.size(); i++) {
+      for (int i = 0; i < dungeonAvatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, bKGNMCPHAOK_.get(i));
-      }
-      if (difficultyId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficultyId_);
-      }
-      if (initGalleryProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, initGalleryProgress_);
+          .computeMessageSize(2, dungeonAvatarInfoList_.get(i));
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, buffInfoList_.get(i));
+          .computeMessageSize(3, buffInfoList_.get(i));
+      }
+      if (initGalleryProgress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, initGalleryProgress_);
       }
       if (isUpperPart_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isUpperPart_);
+          .computeBoolSize(11, isUpperPart_);
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -425,16 +424,16 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (!getBKGNMCPHAOKList()
-          .equals(other.getBKGNMCPHAOKList())) return false;
-      if (getDifficultyId()
-          != other.getDifficultyId()) return false;
-      if (getInitGalleryProgress()
-          != other.getInitGalleryProgress()) return false;
+      if (!getDungeonAvatarInfoListList()
+          .equals(other.getDungeonAvatarInfoListList())) return false;
       if (!getBuffInfoListList()
           .equals(other.getBuffInfoListList())) return false;
+      if (getInitGalleryProgress()
+          != other.getInitGalleryProgress()) return false;
       if (getIsUpperPart()
           != other.getIsUpperPart()) return false;
+      if (getDifficultyId()
+          != other.getDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -448,21 +447,21 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      if (getBKGNMCPHAOKCount() > 0) {
-        hash = (37 * hash) + BKGNMCPHAOK_FIELD_NUMBER;
-        hash = (53 * hash) + getBKGNMCPHAOKList().hashCode();
+      if (getDungeonAvatarInfoListCount() > 0) {
+        hash = (37 * hash) + DUNGEON_AVATAR_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDungeonAvatarInfoListList().hashCode();
       }
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
-      hash = (37 * hash) + INIT_GALLERY_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getInitGalleryProgress();
       if (getBuffInfoListCount() > 0) {
         hash = (37 * hash) + BUFF_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuffInfoListList().hashCode();
       }
+      hash = (37 * hash) + INIT_GALLERY_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getInitGalleryProgress();
       hash = (37 * hash) + IS_UPPER_PART_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUpperPart());
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -560,8 +559,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.6.0
-     * CmdId: 3946
+     * CmdId: 5891
      * </pre>
      *
      * Protobuf type {@code CrystalLinkDungeonInfoNotify}
@@ -596,7 +594,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getBKGNMCPHAOKFieldBuilder();
+          getDungeonAvatarInfoListFieldBuilder();
           getBuffInfoListFieldBuilder();
         }
       }
@@ -605,23 +603,23 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         super.clear();
         levelId_ = 0;
 
-        if (bKGNMCPHAOKBuilder_ == null) {
-          bKGNMCPHAOK_ = java.util.Collections.emptyList();
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          dungeonAvatarInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          bKGNMCPHAOKBuilder_.clear();
+          dungeonAvatarInfoListBuilder_.clear();
         }
-        difficultyId_ = 0;
-
-        initGalleryProgress_ = 0;
-
         if (buffInfoListBuilder_ == null) {
           buffInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           buffInfoListBuilder_.clear();
         }
+        initGalleryProgress_ = 0;
+
         isUpperPart_ = false;
+
+        difficultyId_ = 0;
 
         return this;
       }
@@ -651,17 +649,15 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify result = new emu.grasscutter.net.proto.CrystalLinkDungeonInfoNotifyOuterClass.CrystalLinkDungeonInfoNotify(this);
         int from_bitField0_ = bitField0_;
         result.levelId_ = levelId_;
-        if (bKGNMCPHAOKBuilder_ == null) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            bKGNMCPHAOK_ = java.util.Collections.unmodifiableList(bKGNMCPHAOK_);
+            dungeonAvatarInfoList_ = java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.bKGNMCPHAOK_ = bKGNMCPHAOK_;
+          result.dungeonAvatarInfoList_ = dungeonAvatarInfoList_;
         } else {
-          result.bKGNMCPHAOK_ = bKGNMCPHAOKBuilder_.build();
+          result.dungeonAvatarInfoList_ = dungeonAvatarInfoListBuilder_.build();
         }
-        result.difficultyId_ = difficultyId_;
-        result.initGalleryProgress_ = initGalleryProgress_;
         if (buffInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
@@ -671,7 +667,9 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         } else {
           result.buffInfoList_ = buffInfoListBuilder_.build();
         }
+        result.initGalleryProgress_ = initGalleryProgress_;
         result.isUpperPart_ = isUpperPart_;
+        result.difficultyId_ = difficultyId_;
         onBuilt();
         return result;
       }
@@ -723,37 +721,31 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (bKGNMCPHAOKBuilder_ == null) {
-          if (!other.bKGNMCPHAOK_.isEmpty()) {
-            if (bKGNMCPHAOK_.isEmpty()) {
-              bKGNMCPHAOK_ = other.bKGNMCPHAOK_;
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          if (!other.dungeonAvatarInfoList_.isEmpty()) {
+            if (dungeonAvatarInfoList_.isEmpty()) {
+              dungeonAvatarInfoList_ = other.dungeonAvatarInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureBKGNMCPHAOKIsMutable();
-              bKGNMCPHAOK_.addAll(other.bKGNMCPHAOK_);
+              ensureDungeonAvatarInfoListIsMutable();
+              dungeonAvatarInfoList_.addAll(other.dungeonAvatarInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.bKGNMCPHAOK_.isEmpty()) {
-            if (bKGNMCPHAOKBuilder_.isEmpty()) {
-              bKGNMCPHAOKBuilder_.dispose();
-              bKGNMCPHAOKBuilder_ = null;
-              bKGNMCPHAOK_ = other.bKGNMCPHAOK_;
+          if (!other.dungeonAvatarInfoList_.isEmpty()) {
+            if (dungeonAvatarInfoListBuilder_.isEmpty()) {
+              dungeonAvatarInfoListBuilder_.dispose();
+              dungeonAvatarInfoListBuilder_ = null;
+              dungeonAvatarInfoList_ = other.dungeonAvatarInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              bKGNMCPHAOKBuilder_ = 
+              dungeonAvatarInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getBKGNMCPHAOKFieldBuilder() : null;
+                   getDungeonAvatarInfoListFieldBuilder() : null;
             } else {
-              bKGNMCPHAOKBuilder_.addAllMessages(other.bKGNMCPHAOK_);
+              dungeonAvatarInfoListBuilder_.addAllMessages(other.dungeonAvatarInfoList_);
             }
           }
-        }
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
-        }
-        if (other.getInitGalleryProgress() != 0) {
-          setInitGalleryProgress(other.getInitGalleryProgress());
         }
         if (buffInfoListBuilder_ == null) {
           if (!other.buffInfoList_.isEmpty()) {
@@ -781,8 +773,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             }
           }
         }
+        if (other.getInitGalleryProgress() != 0) {
+          setInitGalleryProgress(other.getInitGalleryProgress());
+        }
         if (other.getIsUpperPart() != false) {
           setIsUpperPart(other.getIsUpperPart());
+        }
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -816,7 +814,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -824,7 +822,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -835,7 +833,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -845,306 +843,244 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> bKGNMCPHAOK_ =
+      private java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> dungeonAvatarInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureBKGNMCPHAOKIsMutable() {
+      private void ensureDungeonAvatarInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          bKGNMCPHAOK_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>(bKGNMCPHAOK_);
+          dungeonAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo>(dungeonAvatarInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> bKGNMCPHAOKBuilder_;
+          emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> dungeonAvatarInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getBKGNMCPHAOKList() {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(bKGNMCPHAOK_);
+      public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> getDungeonAvatarInfoListList() {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
         } else {
-          return bKGNMCPHAOKBuilder_.getMessageList();
+          return dungeonAvatarInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public int getBKGNMCPHAOKCount() {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          return bKGNMCPHAOK_.size();
+      public int getDungeonAvatarInfoListCount() {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          return dungeonAvatarInfoList_.size();
         } else {
-          return bKGNMCPHAOKBuilder_.getCount();
+          return dungeonAvatarInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getBKGNMCPHAOK(int index) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          return bKGNMCPHAOK_.get(index);
+      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo getDungeonAvatarInfoList(int index) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          return dungeonAvatarInfoList_.get(index);
         } else {
-          return bKGNMCPHAOKBuilder_.getMessage(index);
+          return dungeonAvatarInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder setBKGNMCPHAOK(
+      public Builder setDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
-        if (bKGNMCPHAOKBuilder_ == null) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.set(index, value);
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.set(index, value);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.setMessage(index, value);
+          dungeonAvatarInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder setBKGNMCPHAOK(
+      public Builder setDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.set(index, builderForValue.build());
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.setMessage(index, builderForValue.build());
+          dungeonAvatarInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder addBKGNMCPHAOK(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
-        if (bKGNMCPHAOKBuilder_ == null) {
+      public Builder addDungeonAvatarInfoList(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.add(value);
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.add(value);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.addMessage(value);
+          dungeonAvatarInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder addBKGNMCPHAOK(
+      public Builder addDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo value) {
-        if (bKGNMCPHAOKBuilder_ == null) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.add(index, value);
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.add(index, value);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.addMessage(index, value);
+          dungeonAvatarInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder addBKGNMCPHAOK(
+      public Builder addDungeonAvatarInfoList(
           emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.add(builderForValue.build());
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.addMessage(builderForValue.build());
+          dungeonAvatarInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder addBKGNMCPHAOK(
+      public Builder addDungeonAvatarInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder builderForValue) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.add(index, builderForValue.build());
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.addMessage(index, builderForValue.build());
+          dungeonAvatarInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder addAllBKGNMCPHAOK(
+      public Builder addAllDungeonAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo> values) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          ensureBKGNMCPHAOKIsMutable();
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          ensureDungeonAvatarInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, bKGNMCPHAOK_);
+              values, dungeonAvatarInfoList_);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.addAllMessages(values);
+          dungeonAvatarInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder clearBKGNMCPHAOK() {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          bKGNMCPHAOK_ = java.util.Collections.emptyList();
+      public Builder clearDungeonAvatarInfoList() {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          dungeonAvatarInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.clear();
+          dungeonAvatarInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public Builder removeBKGNMCPHAOK(int index) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          ensureBKGNMCPHAOKIsMutable();
-          bKGNMCPHAOK_.remove(index);
+      public Builder removeDungeonAvatarInfoList(int index) {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          ensureDungeonAvatarInfoListIsMutable();
+          dungeonAvatarInfoList_.remove(index);
           onChanged();
         } else {
-          bKGNMCPHAOKBuilder_.remove(index);
+          dungeonAvatarInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder getBKGNMCPHAOKBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder getDungeonAvatarInfoListBuilder(
           int index) {
-        return getBKGNMCPHAOKFieldBuilder().getBuilder(index);
+        return getDungeonAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getBKGNMCPHAOKOrBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder getDungeonAvatarInfoListOrBuilder(
           int index) {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          return bKGNMCPHAOK_.get(index);  } else {
-          return bKGNMCPHAOKBuilder_.getMessageOrBuilder(index);
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          return dungeonAvatarInfoList_.get(index);  } else {
+          return dungeonAvatarInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
-           getBKGNMCPHAOKOrBuilderList() {
-        if (bKGNMCPHAOKBuilder_ != null) {
-          return bKGNMCPHAOKBuilder_.getMessageOrBuilderList();
+           getDungeonAvatarInfoListOrBuilderList() {
+        if (dungeonAvatarInfoListBuilder_ != null) {
+          return dungeonAvatarInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(bKGNMCPHAOK_);
+          return java.util.Collections.unmodifiableList(dungeonAvatarInfoList_);
         }
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addBKGNMCPHAOKBuilder() {
-        return getBKGNMCPHAOKFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addDungeonAvatarInfoListBuilder() {
+        return getDungeonAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addBKGNMCPHAOKBuilder(
+      public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder addDungeonAvatarInfoListBuilder(
           int index) {
-        return getBKGNMCPHAOKFieldBuilder().addBuilder(
+        return getDungeonAvatarInfoListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkDungeonAvatarInfo BKGNMCPHAOK = 5;</code>
+       * <code>repeated .CrystalLinkDungeonAvatarInfo dungeon_avatar_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder> 
-           getBKGNMCPHAOKBuilderList() {
-        return getBKGNMCPHAOKFieldBuilder().getBuilderList();
+           getDungeonAvatarInfoListBuilderList() {
+        return getDungeonAvatarInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder> 
-          getBKGNMCPHAOKFieldBuilder() {
-        if (bKGNMCPHAOKBuilder_ == null) {
-          bKGNMCPHAOKBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getDungeonAvatarInfoListFieldBuilder() {
+        if (dungeonAvatarInfoListBuilder_ == null) {
+          dungeonAvatarInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfoOrBuilder>(
-                  bKGNMCPHAOK_,
+                  dungeonAvatarInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          bKGNMCPHAOK_ = null;
+          dungeonAvatarInfoList_ = null;
         }
-        return bKGNMCPHAOKBuilder_;
-      }
-
-      private int difficultyId_ ;
-      /**
-       * <code>uint32 difficulty_id = 6;</code>
-       * @return The difficultyId.
-       */
-      @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
-      }
-      /**
-       * <code>uint32 difficulty_id = 6;</code>
-       * @param value The difficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyId(int value) {
-        
-        difficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyId() {
-        
-        difficultyId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int initGalleryProgress_ ;
-      /**
-       * <code>uint32 init_gallery_progress = 7;</code>
-       * @return The initGalleryProgress.
-       */
-      @java.lang.Override
-      public int getInitGalleryProgress() {
-        return initGalleryProgress_;
-      }
-      /**
-       * <code>uint32 init_gallery_progress = 7;</code>
-       * @param value The initGalleryProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInitGalleryProgress(int value) {
-        
-        initGalleryProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 init_gallery_progress = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInitGalleryProgress() {
-        
-        initGalleryProgress_ = 0;
-        onChanged();
-        return this;
+        return dungeonAvatarInfoListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> buffInfoList_ =
@@ -1160,7 +1096,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
           emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> buffInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> getBuffInfoListList() {
         if (buffInfoListBuilder_ == null) {
@@ -1170,7 +1106,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public int getBuffInfoListCount() {
         if (buffInfoListBuilder_ == null) {
@@ -1180,7 +1116,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo getBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
@@ -1190,7 +1126,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder setBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
@@ -1207,7 +1143,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder setBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -1221,7 +1157,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder addBuffInfoList(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
         if (buffInfoListBuilder_ == null) {
@@ -1237,7 +1173,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder addBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo value) {
@@ -1254,7 +1190,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder addBuffInfoList(
           emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -1268,7 +1204,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder addBuffInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder builderForValue) {
@@ -1282,7 +1218,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder addAllBuffInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo> values) {
@@ -1297,7 +1233,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder clearBuffInfoList() {
         if (buffInfoListBuilder_ == null) {
@@ -1310,7 +1246,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public Builder removeBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
@@ -1323,14 +1259,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder getBuffInfoListBuilder(
           int index) {
         return getBuffInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder getBuffInfoListOrBuilder(
           int index) {
@@ -1340,7 +1276,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfoOrBuilder> 
            getBuffInfoListOrBuilderList() {
@@ -1351,14 +1287,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder addBuffInfoListBuilder() {
         return getBuffInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder addBuffInfoListBuilder(
           int index) {
@@ -1366,7 +1302,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 11;</code>
+       * <code>repeated .CrystalLinkBuffInfo buff_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder> 
            getBuffInfoListBuilderList() {
@@ -1387,9 +1323,40 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return buffInfoListBuilder_;
       }
 
+      private int initGalleryProgress_ ;
+      /**
+       * <code>uint32 init_gallery_progress = 5;</code>
+       * @return The initGalleryProgress.
+       */
+      @java.lang.Override
+      public int getInitGalleryProgress() {
+        return initGalleryProgress_;
+      }
+      /**
+       * <code>uint32 init_gallery_progress = 5;</code>
+       * @param value The initGalleryProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setInitGalleryProgress(int value) {
+        
+        initGalleryProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 init_gallery_progress = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInitGalleryProgress() {
+        
+        initGalleryProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isUpperPart_ ;
       /**
-       * <code>bool is_upper_part = 12;</code>
+       * <code>bool is_upper_part = 11;</code>
        * @return The isUpperPart.
        */
       @java.lang.Override
@@ -1397,7 +1364,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return isUpperPart_;
       }
       /**
-       * <code>bool is_upper_part = 12;</code>
+       * <code>bool is_upper_part = 11;</code>
        * @param value The isUpperPart to set.
        * @return This builder for chaining.
        */
@@ -1408,12 +1375,43 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_upper_part = 12;</code>
+       * <code>bool is_upper_part = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUpperPart() {
         
         isUpperPart_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int difficultyId_ ;
+      /**
+       * <code>uint32 difficulty_id = 13;</code>
+       * @return The difficultyId.
+       */
+      @java.lang.Override
+      public int getDifficultyId() {
+        return difficultyId_;
+      }
+      /**
+       * <code>uint32 difficulty_id = 13;</code>
+       * @param value The difficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficultyId(int value) {
+        
+        difficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficultyId() {
+        
+        difficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -1486,14 +1484,14 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"CrystalLinkDungeonInfoNotify.proto\032\031Cr" +
       "ystalLinkBuffInfo.proto\032\"CrystalLinkDung" +
-      "eonAvatarInfo.proto\"\337\001\n\034CrystalLinkDunge" +
-      "onInfoNotify\022\020\n\010level_id\030\003 \001(\r\0222\n\013BKGNMC" +
-      "PHAOK\030\005 \003(\0132\035.CrystalLinkDungeonAvatarIn" +
-      "fo\022\025\n\rdifficulty_id\030\006 \001(\r\022\035\n\025init_galler" +
-      "y_progress\030\007 \001(\r\022,\n\016buff_info_list\030\013 \003(\013" +
-      "2\024.CrystalLinkBuffInfo\022\025\n\ris_upper_part\030" +
-      "\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "eonAvatarInfo.proto\"\354\001\n\034CrystalLinkDunge" +
+      "onInfoNotify\022\020\n\010level_id\030\001 \001(\r\022?\n\030dungeo" +
+      "n_avatar_info_list\030\002 \003(\0132\035.CrystalLinkDu" +
+      "ngeonAvatarInfo\022,\n\016buff_info_list\030\003 \003(\0132" +
+      "\024.CrystalLinkBuffInfo\022\035\n\025init_gallery_pr" +
+      "ogress\030\005 \001(\r\022\025\n\ris_upper_part\030\013 \001(\010\022\025\n\rd" +
+      "ifficulty_id\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1506,7 +1504,7 @@ public final class CrystalLinkDungeonInfoNotifyOuterClass {
     internal_static_CrystalLinkDungeonInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkDungeonInfoNotify_descriptor,
-        new java.lang.String[] { "LevelId", "BKGNMCPHAOK", "DifficultyId", "InitGalleryProgress", "BuffInfoList", "IsUpperPart", });
+        new java.lang.String[] { "LevelId", "DungeonAvatarInfoList", "BuffInfoList", "InitGalleryProgress", "IsUpperPart", "DifficultyId", });
     emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.getDescriptor();
   }

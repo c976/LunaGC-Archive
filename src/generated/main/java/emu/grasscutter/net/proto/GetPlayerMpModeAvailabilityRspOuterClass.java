@@ -19,37 +19,57 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
     int getParamList(int index);
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 CNMNCMGDNOA = 11;</code>
+     * @return The cNMNCMGDNOA.
+     */
+    int getCNMNCMGDNOA();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>int32 mp_ret = 8;</code>
-     * @return The mpRet.
-     */
-    int getMpRet();
   }
   /**
    * <pre>
-   * CmdId: 27530
+   * CmdId: 1263
    * </pre>
    *
    * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -98,7 +118,17 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 88: {
+
+              cNMNCMGDNOA_ = input.readInt32();
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +136,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               paramList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,16 +147,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
                 paramList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-
-              mpRet_ = input.readInt32();
               break;
             }
             default: {
@@ -164,10 +184,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.class, emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.Builder.class);
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 1;
+    public static final int PARAM_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -176,14 +200,22 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       return paramList_;
     }
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
       return paramList_.size();
     }
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 param_list = 13;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -192,26 +224,34 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int CNMNCMGDNOA_FIELD_NUMBER = 11;
+    private int cNMNCMGDNOA_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 CNMNCMGDNOA = 11;</code>
+     * @return The cNMNCMGDNOA.
+     */
+    @java.lang.Override
+    public int getCNMNCMGDNOA() {
+      return cNMNCMGDNOA_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int MP_RET_FIELD_NUMBER = 8;
-    private int mpRet_;
-    /**
-     * <code>int32 mp_ret = 8;</code>
-     * @return The mpRet.
-     */
-    @java.lang.Override
-    public int getMpRet() {
-      return mpRet_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,18 +269,18 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (cNMNCMGDNOA_ != 0) {
+        output.writeInt32(11, cNMNCMGDNOA_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
+      }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
         output.writeUInt32NoTag(paramList_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
-      if (mpRet_ != 0) {
-        output.writeInt32(8, mpRet_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,6 +291,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (cNMNCMGDNOA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, cNMNCMGDNOA_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < paramList_.size(); i++) {
@@ -264,14 +312,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         paramListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
-      if (mpRet_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, mpRet_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,10 +330,10 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
 
       if (!getParamListList()
           .equals(other.getParamListList())) return false;
+      if (getCNMNCMGDNOA()
+          != other.getCNMNCMGDNOA()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getMpRet()
-          != other.getMpRet()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -309,10 +349,10 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
+      hash = (37 * hash) + CNMNCMGDNOA_FIELD_NUMBER;
+      hash = (53 * hash) + getCNMNCMGDNOA();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + MP_RET_FIELD_NUMBER;
-      hash = (53 * hash) + getMpRet();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,7 +450,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27530
+     * CmdId: 1263
      * </pre>
      *
      * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -452,9 +492,9 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         super.clear();
         paramList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        retcode_ = 0;
+        cNMNCMGDNOA_ = 0;
 
-        mpRet_ = 0;
+        retcode_ = 0;
 
         return this;
       }
@@ -488,8 +528,8 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.paramList_ = paramList_;
+        result.cNMNCMGDNOA_ = cNMNCMGDNOA_;
         result.retcode_ = retcode_;
-        result.mpRet_ = mpRet_;
         onBuilt();
         return result;
       }
@@ -548,11 +588,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
           }
           onChanged();
         }
+        if (other.getCNMNCMGDNOA() != 0) {
+          setCNMNCMGDNOA(other.getCNMNCMGDNOA());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getMpRet() != 0) {
-          setMpRet(other.getMpRet());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -592,7 +632,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
@@ -601,14 +645,22 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
         return paramList_.size();
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -616,7 +668,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -629,7 +685,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -640,7 +700,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -653,7 +717,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 param_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
@@ -663,9 +731,56 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
 
+      private int cNMNCMGDNOA_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 CNMNCMGDNOA = 11;</code>
+       * @return The cNMNCMGDNOA.
+       */
+      @java.lang.Override
+      public int getCNMNCMGDNOA() {
+        return cNMNCMGDNOA_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 CNMNCMGDNOA = 11;</code>
+       * @param value The cNMNCMGDNOA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCNMNCMGDNOA(int value) {
+        
+        cNMNCMGDNOA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 CNMNCMGDNOA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCNMNCMGDNOA() {
+        
+        cNMNCMGDNOA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -673,7 +788,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -684,43 +803,16 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mpRet_ ;
-      /**
-       * <code>int32 mp_ret = 8;</code>
-       * @return The mpRet.
-       */
-      @java.lang.Override
-      public int getMpRet() {
-        return mpRet_;
-      }
-      /**
-       * <code>int32 mp_ret = 8;</code>
-       * @param value The mpRet to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpRet(int value) {
-        
-        mpRet_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 mp_ret = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpRet() {
-        
-        mpRet_ = 0;
         onChanged();
         return this;
       }
@@ -791,11 +883,11 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$GetPlayerMpModeAvailabilityRsp.proto\"U" +
+      "\n$GetPlayerMpModeAvailabilityRsp.proto\"Z" +
       "\n\036GetPlayerMpModeAvailabilityRsp\022\022\n\npara" +
-      "m_list\030\001 \003(\r\022\017\n\007retcode\030\004 \001(\005\022\016\n\006mp_ret\030" +
-      "\010 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "m_list\030\r \003(\r\022\023\n\013CNMNCMGDNOA\030\013 \001(\005\022\017\n\007ret" +
+      "code\030\014 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -806,7 +898,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     internal_static_GetPlayerMpModeAvailabilityRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerMpModeAvailabilityRsp_descriptor,
-        new java.lang.String[] { "ParamList", "Retcode", "MpRet", });
+        new java.lang.String[] { "ParamList", "CNMNCMGDNOA", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

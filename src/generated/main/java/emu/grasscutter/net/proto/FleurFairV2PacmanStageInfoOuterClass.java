@@ -19,16 +19,12 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool HJLJEJDPAJP = 11;</code>
-     * @return The hJLJEJDPAJP.
+     * <code>bool is_from_match = 11;</code>
+     * @return The isFromMatch.
      */
-    boolean getHJLJEJDPAJP();
+    boolean getIsFromMatch();
   }
   /**
-   * <pre>
-   * Obf: AKNPJDEPLJK
-   * </pre>
-   *
    * Protobuf type {@code FleurFairV2PacmanStageInfo}
    */
   public static final class FleurFairV2PacmanStageInfo extends
@@ -75,7 +71,7 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
               break;
             case 88: {
 
-              hJLJEJDPAJP_ = input.readBool();
+              isFromMatch_ = input.readBool();
               break;
             }
             default: {
@@ -110,15 +106,15 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo.class, emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo.Builder.class);
     }
 
-    public static final int HJLJEJDPAJP_FIELD_NUMBER = 11;
-    private boolean hJLJEJDPAJP_;
+    public static final int IS_FROM_MATCH_FIELD_NUMBER = 11;
+    private boolean isFromMatch_;
     /**
-     * <code>bool HJLJEJDPAJP = 11;</code>
-     * @return The hJLJEJDPAJP.
+     * <code>bool is_from_match = 11;</code>
+     * @return The isFromMatch.
      */
     @java.lang.Override
-    public boolean getHJLJEJDPAJP() {
-      return hJLJEJDPAJP_;
+    public boolean getIsFromMatch() {
+      return isFromMatch_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +131,8 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hJLJEJDPAJP_ != false) {
-        output.writeBool(11, hJLJEJDPAJP_);
+      if (isFromMatch_ != false) {
+        output.writeBool(11, isFromMatch_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +143,9 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hJLJEJDPAJP_ != false) {
+      if (isFromMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, hJLJEJDPAJP_);
+          .computeBoolSize(11, isFromMatch_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +162,8 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo other = (emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo) obj;
 
-      if (getHJLJEJDPAJP()
-          != other.getHJLJEJDPAJP()) return false;
+      if (getIsFromMatch()
+          != other.getIsFromMatch()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,9 +175,9 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HJLJEJDPAJP_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FROM_MATCH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHJLJEJDPAJP());
+          getIsFromMatch());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,10 +274,6 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AKNPJDEPLJK
-     * </pre>
-     *
      * Protobuf type {@code FleurFairV2PacmanStageInfo}
      */
     public static final class Builder extends
@@ -319,7 +311,7 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hJLJEJDPAJP_ = false;
+        isFromMatch_ = false;
 
         return this;
       }
@@ -347,7 +339,7 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo result = new emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo(this);
-        result.hJLJEJDPAJP_ = hJLJEJDPAJP_;
+        result.isFromMatch_ = isFromMatch_;
         onBuilt();
         return result;
       }
@@ -396,8 +388,8 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairV2PacmanStageInfoOuterClass.FleurFairV2PacmanStageInfo.getDefaultInstance()) return this;
-        if (other.getHJLJEJDPAJP() != false) {
-          setHJLJEJDPAJP(other.getHJLJEJDPAJP());
+        if (other.getIsFromMatch() != false) {
+          setIsFromMatch(other.getIsFromMatch());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -428,33 +420,33 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
         return this;
       }
 
-      private boolean hJLJEJDPAJP_ ;
+      private boolean isFromMatch_ ;
       /**
-       * <code>bool HJLJEJDPAJP = 11;</code>
-       * @return The hJLJEJDPAJP.
+       * <code>bool is_from_match = 11;</code>
+       * @return The isFromMatch.
        */
       @java.lang.Override
-      public boolean getHJLJEJDPAJP() {
-        return hJLJEJDPAJP_;
+      public boolean getIsFromMatch() {
+        return isFromMatch_;
       }
       /**
-       * <code>bool HJLJEJDPAJP = 11;</code>
-       * @param value The hJLJEJDPAJP to set.
+       * <code>bool is_from_match = 11;</code>
+       * @param value The isFromMatch to set.
        * @return This builder for chaining.
        */
-      public Builder setHJLJEJDPAJP(boolean value) {
+      public Builder setIsFromMatch(boolean value) {
         
-        hJLJEJDPAJP_ = value;
+        isFromMatch_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool HJLJEJDPAJP = 11;</code>
+       * <code>bool is_from_match = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHJLJEJDPAJP() {
+      public Builder clearIsFromMatch() {
         
-        hJLJEJDPAJP_ = false;
+        isFromMatch_ = false;
         onChanged();
         return this;
       }
@@ -525,10 +517,10 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n FleurFairV2PacmanStageInfo.proto\"1\n\032Fl" +
-      "eurFairV2PacmanStageInfo\022\023\n\013HJLJEJDPAJP\030" +
-      "\013 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n FleurFairV2PacmanStageInfo.proto\"3\n\032Fl" +
+      "eurFairV2PacmanStageInfo\022\025\n\ris_from_matc" +
+      "h\030\013 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -539,7 +531,7 @@ public final class FleurFairV2PacmanStageInfoOuterClass {
     internal_static_FleurFairV2PacmanStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairV2PacmanStageInfo_descriptor,
-        new java.lang.String[] { "HJLJEJDPAJP", });
+        new java.lang.String[] { "IsFromMatch", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

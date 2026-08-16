@@ -19,26 +19,26 @@ public final class ItemRenameAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatar_name = 5;</code>
      * @return The avatarName.
      */
     java.lang.String getAvatarName();
     /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatar_name = 5;</code>
      * @return The bytes for avatarName.
      */
     com.google.protobuf.ByteString
         getAvatarNameBytes();
 
     /**
-     * <code>uint32 rename_id = 12;</code>
+     * <code>uint32 rename_id = 14;</code>
      * @return The renameId.
      */
     int getRenameId();
   }
   /**
    * <pre>
-   * CmdId: 7359
+   * CmdId: 23042
    * </pre>
    *
    * Protobuf type {@code ItemRenameAvatarReq}
@@ -86,13 +86,13 @@ public final class ItemRenameAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
               avatarName_ = s;
               break;
             }
-            case 96: {
+            case 112: {
 
               renameId_ = input.readUInt32();
               break;
@@ -129,10 +129,10 @@ public final class ItemRenameAvatarReqOuterClass {
               emu.grasscutter.net.proto.ItemRenameAvatarReqOuterClass.ItemRenameAvatarReq.class, emu.grasscutter.net.proto.ItemRenameAvatarReqOuterClass.ItemRenameAvatarReq.Builder.class);
     }
 
-    public static final int AVATAR_NAME_FIELD_NUMBER = 8;
+    public static final int AVATAR_NAME_FIELD_NUMBER = 5;
     private volatile java.lang.Object avatarName_;
     /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatar_name = 5;</code>
      * @return The avatarName.
      */
     @java.lang.Override
@@ -149,7 +149,7 @@ public final class ItemRenameAvatarReqOuterClass {
       }
     }
     /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatar_name = 5;</code>
      * @return The bytes for avatarName.
      */
     @java.lang.Override
@@ -167,10 +167,10 @@ public final class ItemRenameAvatarReqOuterClass {
       }
     }
 
-    public static final int RENAME_ID_FIELD_NUMBER = 12;
+    public static final int RENAME_ID_FIELD_NUMBER = 14;
     private int renameId_;
     /**
-     * <code>uint32 rename_id = 12;</code>
+     * <code>uint32 rename_id = 14;</code>
      * @return The renameId.
      */
     @java.lang.Override
@@ -193,10 +193,10 @@ public final class ItemRenameAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, avatarName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, avatarName_);
       }
       if (renameId_ != 0) {
-        output.writeUInt32(12, renameId_);
+        output.writeUInt32(14, renameId_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,11 +208,11 @@ public final class ItemRenameAvatarReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, avatarName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, avatarName_);
       }
       if (renameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, renameId_);
+          .computeUInt32Size(14, renameId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,7 +345,7 @@ public final class ItemRenameAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7359
+     * CmdId: 23042
      * </pre>
      *
      * Protobuf type {@code ItemRenameAvatarReq}
@@ -503,7 +503,7 @@ public final class ItemRenameAvatarReqOuterClass {
 
       private java.lang.Object avatarName_ = "";
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatar_name = 5;</code>
        * @return The avatarName.
        */
       public java.lang.String getAvatarName() {
@@ -519,7 +519,7 @@ public final class ItemRenameAvatarReqOuterClass {
         }
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatar_name = 5;</code>
        * @return The bytes for avatarName.
        */
       public com.google.protobuf.ByteString
@@ -536,7 +536,7 @@ public final class ItemRenameAvatarReqOuterClass {
         }
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatar_name = 5;</code>
        * @param value The avatarName to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class ItemRenameAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatar_name = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarName() {
@@ -561,7 +561,7 @@ public final class ItemRenameAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatar_name = 5;</code>
        * @param value The bytes for avatarName to set.
        * @return This builder for chaining.
        */
@@ -579,7 +579,7 @@ public final class ItemRenameAvatarReqOuterClass {
 
       private int renameId_ ;
       /**
-       * <code>uint32 rename_id = 12;</code>
+       * <code>uint32 rename_id = 14;</code>
        * @return The renameId.
        */
       @java.lang.Override
@@ -587,7 +587,7 @@ public final class ItemRenameAvatarReqOuterClass {
         return renameId_;
       }
       /**
-       * <code>uint32 rename_id = 12;</code>
+       * <code>uint32 rename_id = 14;</code>
        * @param value The renameId to set.
        * @return This builder for chaining.
        */
@@ -598,7 +598,7 @@ public final class ItemRenameAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rename_id = 12;</code>
+       * <code>uint32 rename_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRenameId() {
@@ -675,8 +675,8 @@ public final class ItemRenameAvatarReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ItemRenameAvatarReq.proto\"=\n\023ItemRenam" +
-      "eAvatarReq\022\023\n\013avatar_name\030\010 \001(\t\022\021\n\trenam" +
-      "e_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "eAvatarReq\022\023\n\013avatar_name\030\005 \001(\t\022\021\n\trenam" +
+      "e_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

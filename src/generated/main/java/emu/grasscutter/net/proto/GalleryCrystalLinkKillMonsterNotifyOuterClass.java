@@ -19,7 +19,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
@@ -32,8 +32,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8962
-   * Obf: ACEOJCLEDFE
+   * CmdId: 1727
    * </pre>
    *
    * Protobuf type {@code GalleryCrystalLinkKillMonsterNotify}
@@ -80,7 +79,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               score_ = input.readUInt32();
               break;
@@ -122,10 +121,10 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryCrystalLinkKillMonsterNotifyOuterClass.GalleryCrystalLinkKillMonsterNotify.class, emu.grasscutter.net.proto.GalleryCrystalLinkKillMonsterNotifyOuterClass.GalleryCrystalLinkKillMonsterNotify.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 7;
+    public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <code>uint32 score = 7;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -159,7 +158,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(7, score_);
+        output.writeUInt32(5, score_);
       }
       if (galleryId_ != 0) {
         output.writeUInt32(15, galleryId_);
@@ -175,7 +174,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
+          .computeUInt32Size(5, score_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +311,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8962
-     * Obf: ACEOJCLEDFE
+     * CmdId: 1727
      * </pre>
      *
      * Protobuf type {@code GalleryCrystalLinkKillMonsterNotify}
@@ -470,7 +468,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -598,7 +596,7 @@ public final class GalleryCrystalLinkKillMonsterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)GalleryCrystalLinkKillMonsterNotify.pr" +
       "oto\"H\n#GalleryCrystalLinkKillMonsterNoti" +
-      "fy\022\r\n\005score\030\007 \001(\r\022\022\n\ngallery_id\030\017 \001(\rB\033\n" +
+      "fy\022\r\n\005score\030\005 \001(\r\022\022\n\ngallery_id\030\017 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

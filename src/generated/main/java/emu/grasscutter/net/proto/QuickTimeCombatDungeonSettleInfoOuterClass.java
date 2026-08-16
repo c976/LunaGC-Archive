@@ -19,28 +19,73 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_score = 4;</code>
-     * @return The totalScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @return A list containing the eKPAPILLJPL.
      */
-    int getTotalScore();
+    java.util.List<java.lang.Integer> getEKPAPILLJPLList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @return The count of eKPAPILLJPL.
+     */
+    int getEKPAPILLJPLCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @param index The index of the element to return.
+     * @return The eKPAPILLJPL at the given index.
+     */
+    int getEKPAPILLJPL(int index);
 
     /**
-     * <code>bool is_new_record = 6;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty = 1;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 5;</code>
+     * @return The dDELJGCCNIB.
      */
-    int getDifficulty();
+    int getDDELJGCCNIB();
   }
   /**
    * Protobuf type {@code QuickTimeCombatDungeonSettleInfo}
@@ -55,6 +100,7 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       super(builder);
     }
     private QuickTimeCombatDungeonSettleInfo() {
+      eKPAPILLJPL_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -77,6 +123,7 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -87,24 +134,45 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              totalScore_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 32: {
 
               stageId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              dDELJGCCNIB_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                eKPAPILLJPL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              eKPAPILLJPL_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                eKPAPILLJPL_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                eKPAPILLJPL_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -122,6 +190,9 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          eKPAPILLJPL_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -139,21 +210,69 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo.class, emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo.Builder.class);
     }
 
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 4;
-    private int totalScore_;
+    public static final int EKPAPILLJPL_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList eKPAPILLJPL_;
     /**
-     * <code>uint32 total_score = 4;</code>
-     * @return The totalScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @return A list containing the eKPAPILLJPL.
      */
     @java.lang.Override
-    public int getTotalScore() {
-      return totalScore_;
+    public java.util.List<java.lang.Integer>
+        getEKPAPILLJPLList() {
+      return eKPAPILLJPL_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @return The count of eKPAPILLJPL.
+     */
+    public int getEKPAPILLJPLCount() {
+      return eKPAPILLJPL_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+     * @param index The index of the element to return.
+     * @return The eKPAPILLJPL at the given index.
+     */
+    public int getEKPAPILLJPL(int index) {
+      return eKPAPILLJPL_.getInt(index);
+    }
+    private int eKPAPILLJPLMemoizedSerializedSize = -1;
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 1;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty = 1;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 6;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 6;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +280,14 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 11;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -172,15 +295,19 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       return stageId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 7;
-    private int difficulty_;
+    public static final int DDELJGCCNIB_FIELD_NUMBER = 5;
+    private int dDELJGCCNIB_;
     /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 5;</code>
+     * @return The dDELJGCCNIB.
      */
     @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
+    public int getDDELJGCCNIB() {
+      return dDELJGCCNIB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +324,25 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalScore_ != 0) {
-        output.writeUInt32(4, totalScore_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(6, isNewRecord_);
-      }
+      getSerializedSize();
       if (difficulty_ != 0) {
-        output.writeUInt32(7, difficulty_);
+        output.writeUInt32(1, difficulty_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(11, stageId_);
+        output.writeUInt32(4, stageId_);
+      }
+      if (dDELJGCCNIB_ != 0) {
+        output.writeUInt32(5, dDELJGCCNIB_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(12, isNewRecord_);
+      }
+      if (getEKPAPILLJPLList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(eKPAPILLJPLMemoizedSerializedSize);
+      }
+      for (int i = 0; i < eKPAPILLJPL_.size(); i++) {
+        output.writeUInt32NoTag(eKPAPILLJPL_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +353,35 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, totalScore_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isNewRecord_);
-      }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, difficulty_);
+          .computeUInt32Size(1, difficulty_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, stageId_);
+          .computeUInt32Size(4, stageId_);
+      }
+      if (dDELJGCCNIB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, dDELJGCCNIB_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isNewRecord_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < eKPAPILLJPL_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(eKPAPILLJPL_.getInt(i));
+        }
+        size += dataSize;
+        if (!getEKPAPILLJPLList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        eKPAPILLJPLMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +398,16 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo other = (emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo) obj;
 
-      if (getTotalScore()
-          != other.getTotalScore()) return false;
+      if (!getEKPAPILLJPLList()
+          .equals(other.getEKPAPILLJPLList())) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
+      if (getDDELJGCCNIB()
+          != other.getDDELJGCCNIB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +419,19 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalScore();
+      if (getEKPAPILLJPLCount() > 0) {
+        hash = (37 * hash) + EKPAPILLJPL_FIELD_NUMBER;
+        hash = (53 * hash) + getEKPAPILLJPLList().hashCode();
+      }
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + DDELJGCCNIB_FIELD_NUMBER;
+      hash = (53 * hash) + getDDELJGCCNIB();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +565,15 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        totalScore_ = 0;
+        eKPAPILLJPL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        difficulty_ = 0;
 
         isNewRecord_ = false;
 
         stageId_ = 0;
 
-        difficulty_ = 0;
+        dDELJGCCNIB_ = 0;
 
         return this;
       }
@@ -444,10 +601,16 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo result = new emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo(this);
-        result.totalScore_ = totalScore_;
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          eKPAPILLJPL_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.eKPAPILLJPL_ = eKPAPILLJPL_;
+        result.difficulty_ = difficulty_;
         result.isNewRecord_ = isNewRecord_;
         result.stageId_ = stageId_;
-        result.difficulty_ = difficulty_;
+        result.dDELJGCCNIB_ = dDELJGCCNIB_;
         onBuilt();
         return result;
       }
@@ -496,8 +659,18 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.QuickTimeCombatDungeonSettleInfoOuterClass.QuickTimeCombatDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getTotalScore() != 0) {
-          setTotalScore(other.getTotalScore());
+        if (!other.eKPAPILLJPL_.isEmpty()) {
+          if (eKPAPILLJPL_.isEmpty()) {
+            eKPAPILLJPL_ = other.eKPAPILLJPL_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureEKPAPILLJPLIsMutable();
+            eKPAPILLJPL_.addAll(other.eKPAPILLJPL_);
+          }
+          onChanged();
+        }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
@@ -505,8 +678,8 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (other.getDDELJGCCNIB() != 0) {
+          setDDELJGCCNIB(other.getDDELJGCCNIB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -536,41 +709,165 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
-      private int totalScore_ ;
-      /**
-       * <code>uint32 total_score = 4;</code>
-       * @return The totalScore.
-       */
-      @java.lang.Override
-      public int getTotalScore() {
-        return totalScore_;
+      private com.google.protobuf.Internal.IntList eKPAPILLJPL_ = emptyIntList();
+      private void ensureEKPAPILLJPLIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          eKPAPILLJPL_ = mutableCopy(eKPAPILLJPL_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 total_score = 4;</code>
-       * @param value The totalScore to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @return A list containing the eKPAPILLJPL.
+       */
+      public java.util.List<java.lang.Integer>
+          getEKPAPILLJPLList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(eKPAPILLJPL_) : eKPAPILLJPL_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @return The count of eKPAPILLJPL.
+       */
+      public int getEKPAPILLJPLCount() {
+        return eKPAPILLJPL_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @param index The index of the element to return.
+       * @return The eKPAPILLJPL at the given index.
+       */
+      public int getEKPAPILLJPL(int index) {
+        return eKPAPILLJPL_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The eKPAPILLJPL to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalScore(int value) {
-        
-        totalScore_ = value;
+      public Builder setEKPAPILLJPL(
+          int index, int value) {
+        ensureEKPAPILLJPLIsMutable();
+        eKPAPILLJPL_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_score = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @param value The eKPAPILLJPL to add.
        * @return This builder for chaining.
        */
-      public Builder clearTotalScore() {
+      public Builder addEKPAPILLJPL(int value) {
+        ensureEKPAPILLJPLIsMutable();
+        eKPAPILLJPL_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @param values The eKPAPILLJPL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllEKPAPILLJPL(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureEKPAPILLJPLIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, eKPAPILLJPL_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEKPAPILLJPL() {
+        eKPAPILLJPL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 1;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 1;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
         
-        totalScore_ = 0;
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -578,7 +875,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -589,7 +890,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -601,7 +906,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -609,7 +918,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -620,7 +933,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -630,33 +947,45 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int difficulty_ ;
+      private int dDELJGCCNIB_ ;
       /**
-       * <code>uint32 difficulty = 7;</code>
-       * @return The difficulty.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 5;</code>
+       * @return The dDELJGCCNIB.
        */
       @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
+      public int getDDELJGCCNIB() {
+        return dDELJGCCNIB_;
       }
       /**
-       * <code>uint32 difficulty = 7;</code>
-       * @param value The difficulty to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 5;</code>
+       * @param value The dDELJGCCNIB to set.
        * @return This builder for chaining.
        */
-      public Builder setDifficulty(int value) {
+      public Builder setDDELJGCCNIB(int value) {
         
-        difficulty_ = value;
+        dDELJGCCNIB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 difficulty = 7;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDifficulty() {
+      public Builder clearDDELJGCCNIB() {
         
-        difficulty_ = 0;
+        dDELJGCCNIB_ = 0;
         onChanged();
         return this;
       }
@@ -728,10 +1057,11 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&QuickTimeCombatDungeonSettleInfo.proto" +
-      "\"t\n QuickTimeCombatDungeonSettleInfo\022\023\n\013" +
-      "total_score\030\004 \001(\r\022\025\n\ris_new_record\030\006 \001(\010" +
-      "\022\020\n\010stage_id\030\013 \001(\r\022\022\n\ndifficulty\030\007 \001(\rB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\"\211\001\n QuickTimeCombatDungeonSettleInfo\022\023\n" +
+      "\013EKPAPILLJPL\030\016 \003(\r\022\022\n\ndifficulty\030\001 \001(\r\022\025" +
+      "\n\ris_new_record\030\014 \001(\010\022\020\n\010stage_id\030\004 \001(\r\022" +
+      "\023\n\013DDELJGCCNIB\030\005 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +1072,7 @@ public final class QuickTimeCombatDungeonSettleInfoOuterClass {
     internal_static_QuickTimeCombatDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuickTimeCombatDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "TotalScore", "IsNewRecord", "StageId", "Difficulty", });
+        new java.lang.String[] { "EKPAPILLJPL", "Difficulty", "IsNewRecord", "StageId", "DDELJGCCNIB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

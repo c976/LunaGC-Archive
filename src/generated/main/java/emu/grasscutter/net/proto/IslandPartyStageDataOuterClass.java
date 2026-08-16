@@ -19,19 +19,19 @@ public final class IslandPartyStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_score = 1;</code>
-     * @return The bestScore.
-     */
-    int getBestScore();
-
-    /**
-     * <code>uint32 stage_id = 8;</code>
+     * <code>uint32 stage_id = 5;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>uint32 best_score = 8;</code>
+     * @return The bestScore.
+     */
+    int getBestScore();
+
+    /**
+     * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
@@ -81,19 +81,19 @@ public final class IslandPartyStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
-              bestScore_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isOpen_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              stageId_ = input.readUInt32();
+              bestScore_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -128,21 +128,10 @@ public final class IslandPartyStageDataOuterClass {
               emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.class, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder.class);
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 1;
-    private int bestScore_;
-    /**
-     * <code>uint32 best_score = 1;</code>
-     * @return The bestScore.
-     */
-    @java.lang.Override
-    public int getBestScore() {
-      return bestScore_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 8;
+    public static final int STAGE_ID_FIELD_NUMBER = 5;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 8;</code>
+     * <code>uint32 stage_id = 5;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -150,10 +139,21 @@ public final class IslandPartyStageDataOuterClass {
       return stageId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    public static final int BEST_SCORE_FIELD_NUMBER = 8;
+    private int bestScore_;
+    /**
+     * <code>uint32 best_score = 8;</code>
+     * @return The bestScore.
+     */
+    @java.lang.Override
+    public int getBestScore() {
+      return bestScore_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class IslandPartyStageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (stageId_ != 0) {
+        output.writeUInt32(5, stageId_);
+      }
       if (bestScore_ != 0) {
-        output.writeUInt32(1, bestScore_);
+        output.writeUInt32(8, bestScore_);
       }
       if (isOpen_ != false) {
-        output.writeBool(6, isOpen_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(8, stageId_);
+        output.writeBool(9, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class IslandPartyStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, stageId_);
+      }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bestScore_);
+          .computeUInt32Size(8, bestScore_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isOpen_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, stageId_);
+          .computeBoolSize(9, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,10 +220,10 @@ public final class IslandPartyStageDataOuterClass {
       }
       emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData other = (emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData) obj;
 
-      if (getBestScore()
-          != other.getBestScore()) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (getBestScore()
+          != other.getBestScore()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -237,10 +237,10 @@ public final class IslandPartyStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBestScore();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getBestScore();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -377,9 +377,9 @@ public final class IslandPartyStageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bestScore_ = 0;
-
         stageId_ = 0;
+
+        bestScore_ = 0;
 
         isOpen_ = false;
 
@@ -409,8 +409,8 @@ public final class IslandPartyStageDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData buildPartial() {
         emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData result = new emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData(this);
-        result.bestScore_ = bestScore_;
         result.stageId_ = stageId_;
+        result.bestScore_ = bestScore_;
         result.isOpen_ = isOpen_;
         onBuilt();
         return result;
@@ -460,11 +460,11 @@ public final class IslandPartyStageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData other) {
         if (other == emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.getDefaultInstance()) return this;
-        if (other.getBestScore() != 0) {
-          setBestScore(other.getBestScore());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getBestScore() != 0) {
+          setBestScore(other.getBestScore());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -498,40 +498,9 @@ public final class IslandPartyStageDataOuterClass {
         return this;
       }
 
-      private int bestScore_ ;
-      /**
-       * <code>uint32 best_score = 1;</code>
-       * @return The bestScore.
-       */
-      @java.lang.Override
-      public int getBestScore() {
-        return bestScore_;
-      }
-      /**
-       * <code>uint32 best_score = 1;</code>
-       * @param value The bestScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBestScore(int value) {
-        
-        bestScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 best_score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBestScore() {
-        
-        bestScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -539,7 +508,7 @@ public final class IslandPartyStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -550,7 +519,7 @@ public final class IslandPartyStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -560,9 +529,40 @@ public final class IslandPartyStageDataOuterClass {
         return this;
       }
 
+      private int bestScore_ ;
+      /**
+       * <code>uint32 best_score = 8;</code>
+       * @return The bestScore.
+       */
+      @java.lang.Override
+      public int getBestScore() {
+        return bestScore_;
+      }
+      /**
+       * <code>uint32 best_score = 8;</code>
+       * @param value The bestScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBestScore(int value) {
+        
+        bestScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 best_score = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBestScore() {
+        
+        bestScore_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class IslandPartyStageDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class IslandPartyStageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -658,8 +658,8 @@ public final class IslandPartyStageDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032IslandPartyStageData.proto\"M\n\024IslandPa" +
-      "rtyStageData\022\022\n\nbest_score\030\001 \001(\r\022\020\n\010stag" +
-      "e_id\030\010 \001(\r\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu.grass" +
+      "rtyStageData\022\020\n\010stage_id\030\005 \001(\r\022\022\n\nbest_s" +
+      "core\030\010 \001(\r\022\017\n\007is_open\030\t \001(\010B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class IslandPartyStageDataOuterClass {
     internal_static_IslandPartyStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IslandPartyStageData_descriptor,
-        new java.lang.String[] { "BestScore", "StageId", "IsOpen", });
+        new java.lang.String[] { "StageId", "BestScore", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

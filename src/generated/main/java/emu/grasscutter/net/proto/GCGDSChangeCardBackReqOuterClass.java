@@ -19,23 +19,22 @@ public final class GCGDSChangeCardBackReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_back_id = 12;</code>
+     * <pre>
+     * CMD_ID = 9555
+     * </pre>
+     *
+     * <code>uint32 card_back_id = 3;</code>
      * @return The cardBackId.
      */
     int getCardBackId();
 
     /**
-     * <code>uint32 deck_id = 10;</code>
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
-   * <pre>
-   * CmdId: 22151
-   * Obf: AIAOMBLBNME
-   * </pre>
-   *
    * Protobuf type {@code GCGDSChangeCardBackReq}
    */
   public static final class GCGDSChangeCardBackReq extends
@@ -80,14 +79,14 @@ public final class GCGDSChangeCardBackReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              deckId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 24: {
 
               cardBackId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              deckId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGDSChangeCardBackReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCardBackReqOuterClass.GCGDSChangeCardBackReq.class, emu.grasscutter.net.proto.GCGDSChangeCardBackReqOuterClass.GCGDSChangeCardBackReq.Builder.class);
     }
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 12;
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 3;
     private int cardBackId_;
     /**
-     * <code>uint32 card_back_id = 12;</code>
+     * <pre>
+     * CMD_ID = 9555
+     * </pre>
+     *
+     * <code>uint32 card_back_id = 3;</code>
      * @return The cardBackId.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGDSChangeCardBackReqOuterClass {
       return cardBackId_;
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 10;
+    public static final int DECK_ID_FIELD_NUMBER = 13;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 10;</code>
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGDSChangeCardBackReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (deckId_ != 0) {
-        output.writeUInt32(10, deckId_);
-      }
       if (cardBackId_ != 0) {
-        output.writeUInt32(12, cardBackId_);
+        output.writeUInt32(3, cardBackId_);
+      }
+      if (deckId_ != 0) {
+        output.writeUInt32(13, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGDSChangeCardBackReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (deckId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, deckId_);
-      }
       if (cardBackId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cardBackId_);
+          .computeUInt32Size(3, cardBackId_);
+      }
+      if (deckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGDSChangeCardBackReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 22151
-     * Obf: AIAOMBLBNME
-     * </pre>
-     *
      * Protobuf type {@code GCGDSChangeCardBackReq}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGDSChangeCardBackReqOuterClass {
 
       private int cardBackId_ ;
       /**
-       * <code>uint32 card_back_id = 12;</code>
+       * <pre>
+       * CMD_ID = 9555
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 3;</code>
        * @return The cardBackId.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return cardBackId_;
       }
       /**
-       * <code>uint32 card_back_id = 12;</code>
+       * <pre>
+       * CMD_ID = 9555
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 3;</code>
        * @param value The cardBackId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_back_id = 12;</code>
+       * <pre>
+       * CMD_ID = 9555
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardBackId() {
@@ -501,7 +511,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -597,8 +607,8 @@ public final class GCGDSChangeCardBackReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSChangeCardBackReq.proto\"?\n\026GCGDSC" +
-      "hangeCardBackReq\022\024\n\014card_back_id\030\014 \001(\r\022\017" +
-      "\n\007deck_id\030\n \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "hangeCardBackReq\022\024\n\014card_back_id\030\003 \001(\r\022\017" +
+      "\n\007deck_id\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

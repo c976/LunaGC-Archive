@@ -19,23 +19,22 @@ public final class GCGTCInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 character_id = 11;</code>
+     * <pre>
+     * CMD_ID = 22926
+     * </pre>
+     *
+     * <code>uint32 character_id = 15;</code>
      * @return The characterId.
      */
     int getCharacterId();
 
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
-   * <pre>
-   * CmdId: 2997
-   * Obf: AIAMNGAIAGN
-   * </pre>
-   *
    * Protobuf type {@code GCGTCInviteReq}
    */
   public static final class GCGTCInviteReq extends
@@ -80,14 +79,14 @@ public final class GCGTCInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              characterId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 56: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              characterId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGTCInviteReqOuterClass {
               emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq.class, emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq.Builder.class);
     }
 
-    public static final int CHARACTER_ID_FIELD_NUMBER = 11;
+    public static final int CHARACTER_ID_FIELD_NUMBER = 15;
     private int characterId_;
     /**
-     * <code>uint32 character_id = 11;</code>
+     * <pre>
+     * CMD_ID = 22926
+     * </pre>
+     *
+     * <code>uint32 character_id = 15;</code>
      * @return The characterId.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGTCInviteReqOuterClass {
       return characterId_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGTCInviteReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (characterId_ != 0) {
-        output.writeUInt32(11, characterId_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(7, levelId_);
+      }
+      if (characterId_ != 0) {
+        output.writeUInt32(15, characterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGTCInviteReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (characterId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, characterId_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(7, levelId_);
+      }
+      if (characterId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, characterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGTCInviteReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 2997
-     * Obf: AIAMNGAIAGN
-     * </pre>
-     *
      * Protobuf type {@code GCGTCInviteReq}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGTCInviteReqOuterClass {
 
       private int characterId_ ;
       /**
-       * <code>uint32 character_id = 11;</code>
+       * <pre>
+       * CMD_ID = 22926
+       * </pre>
+       *
+       * <code>uint32 character_id = 15;</code>
        * @return The characterId.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGTCInviteReqOuterClass {
         return characterId_;
       }
       /**
-       * <code>uint32 character_id = 11;</code>
+       * <pre>
+       * CMD_ID = 22926
+       * </pre>
+       *
+       * <code>uint32 character_id = 15;</code>
        * @param value The characterId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGTCInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 character_id = 11;</code>
+       * <pre>
+       * CMD_ID = 22926
+       * </pre>
+       *
+       * <code>uint32 character_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCharacterId() {
@@ -501,7 +511,7 @@ public final class GCGTCInviteReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGTCInviteReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGTCInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -597,7 +607,7 @@ public final class GCGTCInviteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GCGTCInviteReq.proto\"8\n\016GCGTCInviteReq" +
-      "\022\024\n\014character_id\030\013 \001(\r\022\020\n\010level_id\030\016 \001(\r" +
+      "\022\024\n\014character_id\030\017 \001(\r\022\020\n\010level_id\030\007 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

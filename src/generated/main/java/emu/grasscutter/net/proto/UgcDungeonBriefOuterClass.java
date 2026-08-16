@@ -19,161 +19,176 @@ public final class UgcDungeonBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string creator_nickname = 12;</code>
-     * @return The creatorNickname.
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     * @return Whether the dungeonSetting field is set.
      */
-    java.lang.String getCreatorNickname();
+    boolean hasDungeonSetting();
     /**
-     * <code>string creator_nickname = 12;</code>
-     * @return The bytes for creatorNickname.
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     * @return The dungeonSetting.
      */
-    com.google.protobuf.ByteString
-        getCreatorNicknameBytes();
+    emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting getDungeonSetting();
+    /**
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder getDungeonSettingOrBuilder();
 
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @return A list containing the tagList.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+     * @return Whether the bMFGOIKDACE field is set.
      */
-    java.util.List<java.lang.Integer> getTagListList();
+    boolean hasBMFGOIKDACE();
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @return The count of tagList.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+     * @return The bMFGOIKDACE.
      */
-    int getTagListCount();
+    emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF getBMFGOIKDACE();
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The tagList at the given index.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
      */
-    int getTagList(int index);
+    emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder getBMFGOIKDACEOrBuilder();
 
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>uint32 first_publish_time = 3;</code>
+     * @return The firstPublishTime.
+     */
+    int getFirstPublishTime();
+
+    /**
+     * <code>uint32 JACKCPKFEPM = 4;</code>
+     * @return The jACKCPKFEPM.
+     */
+    int getJACKCPKFEPM();
+
+    /**
+     * <code>uint32 dungeon_id = 5;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 JPKPIEGEEKK = 6;</code>
+     * @return The jPKPIEGEEKK.
+     */
+    int getJPKPIEGEEKK();
+
+    /**
+     * <code>uint32 OOPJJHLFPBD = 7;</code>
+     * @return The oOPJJHLFPBD.
+     */
+    int getOOPJJHLFPBD();
+
+    /**
+     * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+     * @return The enum numeric value on the wire for editState.
+     */
+    int getEditStateValue();
+    /**
+     * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+     * @return The editState.
+     */
+    emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP getEditState();
+
+    /**
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> 
         getRoomBriefListList();
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief getRoomBriefList(int index);
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     int getRoomBriefListCount();
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
         getRoomBriefListOrBuilderList();
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder getRoomBriefListOrBuilder(
         int index);
 
     /**
-     * <code>string share_code = 11;</code>
+     * <code>string share_code = 10;</code>
      * @return The shareCode.
      */
     java.lang.String getShareCode();
     /**
-     * <code>string share_code = 11;</code>
+     * <code>string share_code = 10;</code>
      * @return The bytes for shareCode.
      */
     com.google.protobuf.ByteString
         getShareCodeBytes();
 
     /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     * @return Whether the dungeonSetting field is set.
+     * <code>bool DKNKINADCCC = 11;</code>
+     * @return The dKNKINADCCC.
      */
-    boolean hasDungeonSetting();
-    /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     * @return The dungeonSetting.
-     */
-    emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting getDungeonSetting();
-    /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder getDungeonSettingOrBuilder();
+    boolean getDKNKINADCCC();
 
     /**
-     * <code>uint32 PLDIDFNNDJB = 8;</code>
-     * @return The pLDIDFNNDJB.
-     */
-    int getPLDIDFNNDJB();
-
-    /**
-     * <code>bool AMIACAMPCNA = 14;</code>
-     * @return The aMIACAMPCNA.
-     */
-    boolean getAMIACAMPCNA();
-
-    /**
-     * <code>bool is_psn_platform = 100;</code>
-     * @return The isPsnPlatform.
-     */
-    boolean getIsPsnPlatform();
-
-    /**
-     * <code>bool HCBLBBMIMEN = 241;</code>
-     * @return The hCBLBBMIMEN.
-     */
-    boolean getHCBLBBMIMEN();
-
-    /**
-     * <code>bool is_allow_import = 15;</code>
+     * <code>bool is_allow_import = 12;</code>
      * @return The isAllowImport.
      */
     boolean getIsAllowImport();
 
     /**
-     * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-     * @return The enum numeric value on the wire for jHKBLLNMEDE.
-     */
-    int getJHKBLLNMEDEValue();
-    /**
-     * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-     * @return The jHKBLLNMEDE.
-     */
-    emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType getJHKBLLNMEDE();
-
-    /**
-     * <code>uint32 KAOKGJEFNAA = 9;</code>
-     * @return The kAOKGJEFNAA.
-     */
-    int getKAOKGJEFNAA();
-
-    /**
-     * <code>uint32 first_publish_time = 1;</code>
-     * @return The firstPublishTime.
-     */
-    int getFirstPublishTime();
-
-    /**
-     * <code>uint32 dungeon_id = 6;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint64 dungeon_guid = 3;</code>
+     * <code>uint64 dungeon_guid = 13;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
 
     /**
-     * <code>uint32 CDOHIBMGBKB = 1702;</code>
-     * @return The cDOHIBMGBKB.
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @return A list containing the tagList.
      */
-    int getCDOHIBMGBKB();
+    java.util.List<java.lang.Integer> getTagListList();
+    /**
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @return The count of tagList.
+     */
+    int getTagListCount();
+    /**
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The tagList at the given index.
+     */
+    int getTagList(int index);
 
     /**
-     * <code>uint32 NKDOMFCMLEH = 5;</code>
-     * @return The nKDOMFCMLEH.
+     * <code>string creator_nickname = 15;</code>
+     * @return The creatorNickname.
      */
-    int getNKDOMFCMLEH();
+    java.lang.String getCreatorNickname();
+    /**
+     * <code>string creator_nickname = 15;</code>
+     * @return The bytes for creatorNickname.
+     */
+    com.google.protobuf.ByteString
+        getCreatorNicknameBytes();
+
+    /**
+     * <code>uint32 OKGNCAILBNN = 708;</code>
+     * @return The oKGNCAILBNN.
+     */
+    int getOKGNCAILBNN();
+
+    /**
+     * <code>bool is_psn_platform = 1438;</code>
+     * @return The isPsnPlatform.
+     */
+    boolean getIsPsnPlatform();
+
+    /**
+     * <code>bool CKPIFGHKINE = 1925;</code>
+     * @return The cKPIFGHKINE.
+     */
+    boolean getCKPIFGHKINE();
   }
   /**
    * Protobuf type {@code UgcDungeonBrief}
@@ -188,11 +203,11 @@ public final class UgcDungeonBriefOuterClass {
       super(builder);
     }
     private UgcDungeonBrief() {
-      creatorNickname_ = "";
-      tagList_ = emptyIntList();
+      editState_ = 0;
       roomBriefList_ = java.util.Collections.emptyList();
       shareCode_ = "";
-      jHKBLLNMEDE_ = 0;
+      tagList_ = emptyIntList();
+      creatorNickname_ = "";
     }
 
     @java.lang.Override
@@ -226,85 +241,7 @@ public final class UgcDungeonBriefOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              firstPublishTime_ = input.readUInt32();
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                roomBriefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              roomBriefList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.parser(), extensionRegistry));
-              break;
-            }
-            case 24: {
-
-              dungeonGuid_ = input.readUInt64();
-              break;
-            }
-            case 40: {
-
-              nKDOMFCMLEH_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                tagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              tagList_.addInt(input.readUInt32());
-              break;
-            }
-            case 58: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                tagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                tagList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 64: {
-
-              pLDIDFNNDJB_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              kAOKGJEFNAA_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-              int rawValue = input.readEnum();
-
-              jHKBLLNMEDE_ = rawValue;
-              break;
-            }
-            case 90: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              shareCode_ = s;
-              break;
-            }
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              creatorNickname_ = s;
-              break;
-            }
-            case 106: {
+            case 10: {
               emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder subBuilder = null;
               if (dungeonSetting_ != null) {
                 subBuilder = dungeonSetting_.toBuilder();
@@ -317,29 +254,120 @@ public final class UgcDungeonBriefOuterClass {
 
               break;
             }
-            case 112: {
+            case 18: {
+              emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder subBuilder = null;
+              if (bMFGOIKDACE_ != null) {
+                subBuilder = bMFGOIKDACE_.toBuilder();
+              }
+              bMFGOIKDACE_ = input.readMessage(emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(bMFGOIKDACE_);
+                bMFGOIKDACE_ = subBuilder.buildPartial();
+              }
 
-              aMIACAMPCNA_ = input.readBool();
               break;
             }
-            case 120: {
+            case 24: {
+
+              firstPublishTime_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              jACKCPKFEPM_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              jPKPIEGEEKK_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              oOPJJHLFPBD_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              editState_ = rawValue;
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                roomBriefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              roomBriefList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.parser(), extensionRegistry));
+              break;
+            }
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              shareCode_ = s;
+              break;
+            }
+            case 88: {
+
+              dKNKINADCCC_ = input.readBool();
+              break;
+            }
+            case 96: {
 
               isAllowImport_ = input.readBool();
               break;
             }
-            case 800: {
+            case 104: {
+
+              dungeonGuid_ = input.readUInt64();
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                tagList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              tagList_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                tagList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                tagList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 122: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              creatorNickname_ = s;
+              break;
+            }
+            case 5664: {
+
+              oKGNCAILBNN_ = input.readUInt32();
+              break;
+            }
+            case 11504: {
 
               isPsnPlatform_ = input.readBool();
               break;
             }
-            case 1928: {
+            case 15400: {
 
-              hCBLBBMIMEN_ = input.readBool();
-              break;
-            }
-            case 13616: {
-
-              cDOHIBMGBKB_ = input.readUInt32();
+              cKPIFGHKINE_ = input.readBool();
               break;
             }
             default: {
@@ -357,10 +385,10 @@ public final class UgcDungeonBriefOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           roomBriefList_ = java.util.Collections.unmodifiableList(roomBriefList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           tagList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -380,83 +408,143 @@ public final class UgcDungeonBriefOuterClass {
               emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.class, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder.class);
     }
 
-    public static final int CREATOR_NICKNAME_FIELD_NUMBER = 12;
-    private volatile java.lang.Object creatorNickname_;
+    public static final int DUNGEON_SETTING_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting dungeonSetting_;
     /**
-     * <code>string creator_nickname = 12;</code>
-     * @return The creatorNickname.
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     * @return Whether the dungeonSetting field is set.
      */
     @java.lang.Override
-    public java.lang.String getCreatorNickname() {
-      java.lang.Object ref = creatorNickname_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        creatorNickname_ = s;
-        return s;
-      }
+    public boolean hasDungeonSetting() {
+      return dungeonSetting_ != null;
     }
     /**
-     * <code>string creator_nickname = 12;</code>
-     * @return The bytes for creatorNickname.
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     * @return The dungeonSetting.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getCreatorNicknameBytes() {
-      java.lang.Object ref = creatorNickname_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        creatorNickname_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting getDungeonSetting() {
+      return dungeonSetting_ == null ? emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.getDefaultInstance() : dungeonSetting_;
+    }
+    /**
+     * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder getDungeonSettingOrBuilder() {
+      return getDungeonSetting();
     }
 
-    public static final int TAG_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList tagList_;
+    public static final int BMFGOIKDACE_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF bMFGOIKDACE_;
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @return A list containing the tagList.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+     * @return Whether the bMFGOIKDACE field is set.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTagListList() {
-      return tagList_;
+    public boolean hasBMFGOIKDACE() {
+      return bMFGOIKDACE_ != null;
     }
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @return The count of tagList.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+     * @return The bMFGOIKDACE.
      */
-    public int getTagListCount() {
-      return tagList_.size();
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF getBMFGOIKDACE() {
+      return bMFGOIKDACE_ == null ? emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.getDefaultInstance() : bMFGOIKDACE_;
     }
     /**
-     * <code>repeated uint32 tag_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The tagList at the given index.
+     * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
      */
-    public int getTagList(int index) {
-      return tagList_.getInt(index);
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder getBMFGOIKDACEOrBuilder() {
+      return getBMFGOIKDACE();
     }
-    private int tagListMemoizedSerializedSize = -1;
 
-    public static final int ROOM_BRIEF_LIST_FIELD_NUMBER = 2;
+    public static final int FIRST_PUBLISH_TIME_FIELD_NUMBER = 3;
+    private int firstPublishTime_;
+    /**
+     * <code>uint32 first_publish_time = 3;</code>
+     * @return The firstPublishTime.
+     */
+    @java.lang.Override
+    public int getFirstPublishTime() {
+      return firstPublishTime_;
+    }
+
+    public static final int JACKCPKFEPM_FIELD_NUMBER = 4;
+    private int jACKCPKFEPM_;
+    /**
+     * <code>uint32 JACKCPKFEPM = 4;</code>
+     * @return The jACKCPKFEPM.
+     */
+    @java.lang.Override
+    public int getJACKCPKFEPM() {
+      return jACKCPKFEPM_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 5;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int JPKPIEGEEKK_FIELD_NUMBER = 6;
+    private int jPKPIEGEEKK_;
+    /**
+     * <code>uint32 JPKPIEGEEKK = 6;</code>
+     * @return The jPKPIEGEEKK.
+     */
+    @java.lang.Override
+    public int getJPKPIEGEEKK() {
+      return jPKPIEGEEKK_;
+    }
+
+    public static final int OOPJJHLFPBD_FIELD_NUMBER = 7;
+    private int oOPJJHLFPBD_;
+    /**
+     * <code>uint32 OOPJJHLFPBD = 7;</code>
+     * @return The oOPJJHLFPBD.
+     */
+    @java.lang.Override
+    public int getOOPJJHLFPBD() {
+      return oOPJJHLFPBD_;
+    }
+
+    public static final int EDIT_STATE_FIELD_NUMBER = 8;
+    private int editState_;
+    /**
+     * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+     * @return The enum numeric value on the wire for editState.
+     */
+    @java.lang.Override public int getEditStateValue() {
+      return editState_;
+    }
+    /**
+     * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+     * @return The editState.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP getEditState() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP result = emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.valueOf(editState_);
+      return result == null ? emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.UNRECOGNIZED : result;
+    }
+
+    public static final int ROOM_BRIEF_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> roomBriefList_;
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> getRoomBriefListList() {
       return roomBriefList_;
     }
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
@@ -464,21 +552,21 @@ public final class UgcDungeonBriefOuterClass {
       return roomBriefList_;
     }
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     @java.lang.Override
     public int getRoomBriefListCount() {
       return roomBriefList_.size();
     }
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief getRoomBriefList(int index) {
       return roomBriefList_.get(index);
     }
     /**
-     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
+     * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder getRoomBriefListOrBuilder(
@@ -486,10 +574,10 @@ public final class UgcDungeonBriefOuterClass {
       return roomBriefList_.get(index);
     }
 
-    public static final int SHARE_CODE_FIELD_NUMBER = 11;
+    public static final int SHARE_CODE_FIELD_NUMBER = 10;
     private volatile java.lang.Object shareCode_;
     /**
-     * <code>string share_code = 11;</code>
+     * <code>string share_code = 10;</code>
      * @return The shareCode.
      */
     @java.lang.Override
@@ -506,7 +594,7 @@ public final class UgcDungeonBriefOuterClass {
       }
     }
     /**
-     * <code>string share_code = 11;</code>
+     * <code>string share_code = 10;</code>
      * @return The bytes for shareCode.
      */
     @java.lang.Override
@@ -524,80 +612,21 @@ public final class UgcDungeonBriefOuterClass {
       }
     }
 
-    public static final int DUNGEON_SETTING_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting dungeonSetting_;
+    public static final int DKNKINADCCC_FIELD_NUMBER = 11;
+    private boolean dKNKINADCCC_;
     /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     * @return Whether the dungeonSetting field is set.
+     * <code>bool DKNKINADCCC = 11;</code>
+     * @return The dKNKINADCCC.
      */
     @java.lang.Override
-    public boolean hasDungeonSetting() {
-      return dungeonSetting_ != null;
-    }
-    /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     * @return The dungeonSetting.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting getDungeonSetting() {
-      return dungeonSetting_ == null ? emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.getDefaultInstance() : dungeonSetting_;
-    }
-    /**
-     * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder getDungeonSettingOrBuilder() {
-      return getDungeonSetting();
+    public boolean getDKNKINADCCC() {
+      return dKNKINADCCC_;
     }
 
-    public static final int PLDIDFNNDJB_FIELD_NUMBER = 8;
-    private int pLDIDFNNDJB_;
-    /**
-     * <code>uint32 PLDIDFNNDJB = 8;</code>
-     * @return The pLDIDFNNDJB.
-     */
-    @java.lang.Override
-    public int getPLDIDFNNDJB() {
-      return pLDIDFNNDJB_;
-    }
-
-    public static final int AMIACAMPCNA_FIELD_NUMBER = 14;
-    private boolean aMIACAMPCNA_;
-    /**
-     * <code>bool AMIACAMPCNA = 14;</code>
-     * @return The aMIACAMPCNA.
-     */
-    @java.lang.Override
-    public boolean getAMIACAMPCNA() {
-      return aMIACAMPCNA_;
-    }
-
-    public static final int IS_PSN_PLATFORM_FIELD_NUMBER = 100;
-    private boolean isPsnPlatform_;
-    /**
-     * <code>bool is_psn_platform = 100;</code>
-     * @return The isPsnPlatform.
-     */
-    @java.lang.Override
-    public boolean getIsPsnPlatform() {
-      return isPsnPlatform_;
-    }
-
-    public static final int HCBLBBMIMEN_FIELD_NUMBER = 241;
-    private boolean hCBLBBMIMEN_;
-    /**
-     * <code>bool HCBLBBMIMEN = 241;</code>
-     * @return The hCBLBBMIMEN.
-     */
-    @java.lang.Override
-    public boolean getHCBLBBMIMEN() {
-      return hCBLBBMIMEN_;
-    }
-
-    public static final int IS_ALLOW_IMPORT_FIELD_NUMBER = 15;
+    public static final int IS_ALLOW_IMPORT_FIELD_NUMBER = 12;
     private boolean isAllowImport_;
     /**
-     * <code>bool is_allow_import = 15;</code>
+     * <code>bool is_allow_import = 12;</code>
      * @return The isAllowImport.
      */
     @java.lang.Override
@@ -605,62 +634,10 @@ public final class UgcDungeonBriefOuterClass {
       return isAllowImport_;
     }
 
-    public static final int JHKBLLNMEDE_FIELD_NUMBER = 10;
-    private int jHKBLLNMEDE_;
-    /**
-     * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-     * @return The enum numeric value on the wire for jHKBLLNMEDE.
-     */
-    @java.lang.Override public int getJHKBLLNMEDEValue() {
-      return jHKBLLNMEDE_;
-    }
-    /**
-     * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-     * @return The jHKBLLNMEDE.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType getJHKBLLNMEDE() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType result = emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.valueOf(jHKBLLNMEDE_);
-      return result == null ? emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.UNRECOGNIZED : result;
-    }
-
-    public static final int KAOKGJEFNAA_FIELD_NUMBER = 9;
-    private int kAOKGJEFNAA_;
-    /**
-     * <code>uint32 KAOKGJEFNAA = 9;</code>
-     * @return The kAOKGJEFNAA.
-     */
-    @java.lang.Override
-    public int getKAOKGJEFNAA() {
-      return kAOKGJEFNAA_;
-    }
-
-    public static final int FIRST_PUBLISH_TIME_FIELD_NUMBER = 1;
-    private int firstPublishTime_;
-    /**
-     * <code>uint32 first_publish_time = 1;</code>
-     * @return The firstPublishTime.
-     */
-    @java.lang.Override
-    public int getFirstPublishTime() {
-      return firstPublishTime_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 6;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 3;
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 13;
     private long dungeonGuid_;
     /**
-     * <code>uint64 dungeon_guid = 3;</code>
+     * <code>uint64 dungeon_guid = 13;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
@@ -668,26 +645,103 @@ public final class UgcDungeonBriefOuterClass {
       return dungeonGuid_;
     }
 
-    public static final int CDOHIBMGBKB_FIELD_NUMBER = 1702;
-    private int cDOHIBMGBKB_;
+    public static final int TAG_LIST_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList tagList_;
     /**
-     * <code>uint32 CDOHIBMGBKB = 1702;</code>
-     * @return The cDOHIBMGBKB.
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @return A list containing the tagList.
      */
     @java.lang.Override
-    public int getCDOHIBMGBKB() {
-      return cDOHIBMGBKB_;
+    public java.util.List<java.lang.Integer>
+        getTagListList() {
+      return tagList_;
+    }
+    /**
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @return The count of tagList.
+     */
+    public int getTagListCount() {
+      return tagList_.size();
+    }
+    /**
+     * <code>repeated uint32 tag_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The tagList at the given index.
+     */
+    public int getTagList(int index) {
+      return tagList_.getInt(index);
+    }
+    private int tagListMemoizedSerializedSize = -1;
+
+    public static final int CREATOR_NICKNAME_FIELD_NUMBER = 15;
+    private volatile java.lang.Object creatorNickname_;
+    /**
+     * <code>string creator_nickname = 15;</code>
+     * @return The creatorNickname.
+     */
+    @java.lang.Override
+    public java.lang.String getCreatorNickname() {
+      java.lang.Object ref = creatorNickname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        creatorNickname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string creator_nickname = 15;</code>
+     * @return The bytes for creatorNickname.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getCreatorNicknameBytes() {
+      java.lang.Object ref = creatorNickname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        creatorNickname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int NKDOMFCMLEH_FIELD_NUMBER = 5;
-    private int nKDOMFCMLEH_;
+    public static final int OKGNCAILBNN_FIELD_NUMBER = 708;
+    private int oKGNCAILBNN_;
     /**
-     * <code>uint32 NKDOMFCMLEH = 5;</code>
-     * @return The nKDOMFCMLEH.
+     * <code>uint32 OKGNCAILBNN = 708;</code>
+     * @return The oKGNCAILBNN.
      */
     @java.lang.Override
-    public int getNKDOMFCMLEH() {
-      return nKDOMFCMLEH_;
+    public int getOKGNCAILBNN() {
+      return oKGNCAILBNN_;
+    }
+
+    public static final int IS_PSN_PLATFORM_FIELD_NUMBER = 1438;
+    private boolean isPsnPlatform_;
+    /**
+     * <code>bool is_psn_platform = 1438;</code>
+     * @return The isPsnPlatform.
+     */
+    @java.lang.Override
+    public boolean getIsPsnPlatform() {
+      return isPsnPlatform_;
+    }
+
+    public static final int CKPIFGHKINE_FIELD_NUMBER = 1925;
+    private boolean cKPIFGHKINE_;
+    /**
+     * <code>bool CKPIFGHKINE = 1925;</code>
+     * @return The cKPIFGHKINE.
+     */
+    @java.lang.Override
+    public boolean getCKPIFGHKINE() {
+      return cKPIFGHKINE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -705,60 +759,63 @@ public final class UgcDungeonBriefOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (dungeonSetting_ != null) {
+        output.writeMessage(1, getDungeonSetting());
+      }
+      if (bMFGOIKDACE_ != null) {
+        output.writeMessage(2, getBMFGOIKDACE());
+      }
       if (firstPublishTime_ != 0) {
-        output.writeUInt32(1, firstPublishTime_);
+        output.writeUInt32(3, firstPublishTime_);
       }
-      for (int i = 0; i < roomBriefList_.size(); i++) {
-        output.writeMessage(2, roomBriefList_.get(i));
-      }
-      if (dungeonGuid_ != 0L) {
-        output.writeUInt64(3, dungeonGuid_);
-      }
-      if (nKDOMFCMLEH_ != 0) {
-        output.writeUInt32(5, nKDOMFCMLEH_);
+      if (jACKCPKFEPM_ != 0) {
+        output.writeUInt32(4, jACKCPKFEPM_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
+        output.writeUInt32(5, dungeonId_);
+      }
+      if (jPKPIEGEEKK_ != 0) {
+        output.writeUInt32(6, jPKPIEGEEKK_);
+      }
+      if (oOPJJHLFPBD_ != 0) {
+        output.writeUInt32(7, oOPJJHLFPBD_);
+      }
+      if (editState_ != emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.OEFGIENKMLG_EDIT_UGC_DUNGEON_EDIT.getNumber()) {
+        output.writeEnum(8, editState_);
+      }
+      for (int i = 0; i < roomBriefList_.size(); i++) {
+        output.writeMessage(9, roomBriefList_.get(i));
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, shareCode_);
+      }
+      if (dKNKINADCCC_ != false) {
+        output.writeBool(11, dKNKINADCCC_);
+      }
+      if (isAllowImport_ != false) {
+        output.writeBool(12, isAllowImport_);
+      }
+      if (dungeonGuid_ != 0L) {
+        output.writeUInt64(13, dungeonGuid_);
       }
       if (getTagListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(tagListMemoizedSerializedSize);
       }
       for (int i = 0; i < tagList_.size(); i++) {
         output.writeUInt32NoTag(tagList_.getInt(i));
       }
-      if (pLDIDFNNDJB_ != 0) {
-        output.writeUInt32(8, pLDIDFNNDJB_);
-      }
-      if (kAOKGJEFNAA_ != 0) {
-        output.writeUInt32(9, kAOKGJEFNAA_);
-      }
-      if (jHKBLLNMEDE_ != emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.EDIT_UGC_DUNGEON_TYPE_EDIT.getNumber()) {
-        output.writeEnum(10, jHKBLLNMEDE_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, shareCode_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creatorNickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, creatorNickname_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, creatorNickname_);
       }
-      if (dungeonSetting_ != null) {
-        output.writeMessage(13, getDungeonSetting());
-      }
-      if (aMIACAMPCNA_ != false) {
-        output.writeBool(14, aMIACAMPCNA_);
-      }
-      if (isAllowImport_ != false) {
-        output.writeBool(15, isAllowImport_);
+      if (oKGNCAILBNN_ != 0) {
+        output.writeUInt32(708, oKGNCAILBNN_);
       }
       if (isPsnPlatform_ != false) {
-        output.writeBool(100, isPsnPlatform_);
+        output.writeBool(1438, isPsnPlatform_);
       }
-      if (hCBLBBMIMEN_ != false) {
-        output.writeBool(241, hCBLBBMIMEN_);
-      }
-      if (cDOHIBMGBKB_ != 0) {
-        output.writeUInt32(1702, cDOHIBMGBKB_);
+      if (cKPIFGHKINE_ != false) {
+        output.writeBool(1925, cKPIFGHKINE_);
       }
       unknownFields.writeTo(output);
     }
@@ -769,25 +826,56 @@ public final class UgcDungeonBriefOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (dungeonSetting_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getDungeonSetting());
+      }
+      if (bMFGOIKDACE_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBMFGOIKDACE());
+      }
       if (firstPublishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, firstPublishTime_);
+          .computeUInt32Size(3, firstPublishTime_);
       }
-      for (int i = 0; i < roomBriefList_.size(); i++) {
+      if (jACKCPKFEPM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, roomBriefList_.get(i));
-      }
-      if (dungeonGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, dungeonGuid_);
-      }
-      if (nKDOMFCMLEH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, nKDOMFCMLEH_);
+          .computeUInt32Size(4, jACKCPKFEPM_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
+          .computeUInt32Size(5, dungeonId_);
+      }
+      if (jPKPIEGEEKK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, jPKPIEGEEKK_);
+      }
+      if (oOPJJHLFPBD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, oOPJJHLFPBD_);
+      }
+      if (editState_ != emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.OEFGIENKMLG_EDIT_UGC_DUNGEON_EDIT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, editState_);
+      }
+      for (int i = 0; i < roomBriefList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, roomBriefList_.get(i));
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, shareCode_);
+      }
+      if (dKNKINADCCC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, dKNKINADCCC_);
+      }
+      if (isAllowImport_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isAllowImport_);
+      }
+      if (dungeonGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(13, dungeonGuid_);
       }
       {
         int dataSize = 0;
@@ -803,47 +891,20 @@ public final class UgcDungeonBriefOuterClass {
         }
         tagListMemoizedSerializedSize = dataSize;
       }
-      if (pLDIDFNNDJB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, pLDIDFNNDJB_);
-      }
-      if (kAOKGJEFNAA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, kAOKGJEFNAA_);
-      }
-      if (jHKBLLNMEDE_ != emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.EDIT_UGC_DUNGEON_TYPE_EDIT.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, jHKBLLNMEDE_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, shareCode_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creatorNickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, creatorNickname_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, creatorNickname_);
       }
-      if (dungeonSetting_ != null) {
+      if (oKGNCAILBNN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getDungeonSetting());
-      }
-      if (aMIACAMPCNA_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, aMIACAMPCNA_);
-      }
-      if (isAllowImport_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAllowImport_);
+          .computeUInt32Size(708, oKGNCAILBNN_);
       }
       if (isPsnPlatform_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(100, isPsnPlatform_);
+          .computeBoolSize(1438, isPsnPlatform_);
       }
-      if (hCBLBBMIMEN_ != false) {
+      if (cKPIFGHKINE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(241, hCBLBBMIMEN_);
-      }
-      if (cDOHIBMGBKB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1702, cDOHIBMGBKB_);
+          .computeBoolSize(1925, cKPIFGHKINE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -860,42 +921,47 @@ public final class UgcDungeonBriefOuterClass {
       }
       emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief other = (emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief) obj;
 
-      if (!getCreatorNickname()
-          .equals(other.getCreatorNickname())) return false;
-      if (!getTagListList()
-          .equals(other.getTagListList())) return false;
-      if (!getRoomBriefListList()
-          .equals(other.getRoomBriefListList())) return false;
-      if (!getShareCode()
-          .equals(other.getShareCode())) return false;
       if (hasDungeonSetting() != other.hasDungeonSetting()) return false;
       if (hasDungeonSetting()) {
         if (!getDungeonSetting()
             .equals(other.getDungeonSetting())) return false;
       }
-      if (getPLDIDFNNDJB()
-          != other.getPLDIDFNNDJB()) return false;
-      if (getAMIACAMPCNA()
-          != other.getAMIACAMPCNA()) return false;
-      if (getIsPsnPlatform()
-          != other.getIsPsnPlatform()) return false;
-      if (getHCBLBBMIMEN()
-          != other.getHCBLBBMIMEN()) return false;
-      if (getIsAllowImport()
-          != other.getIsAllowImport()) return false;
-      if (jHKBLLNMEDE_ != other.jHKBLLNMEDE_) return false;
-      if (getKAOKGJEFNAA()
-          != other.getKAOKGJEFNAA()) return false;
+      if (hasBMFGOIKDACE() != other.hasBMFGOIKDACE()) return false;
+      if (hasBMFGOIKDACE()) {
+        if (!getBMFGOIKDACE()
+            .equals(other.getBMFGOIKDACE())) return false;
+      }
       if (getFirstPublishTime()
           != other.getFirstPublishTime()) return false;
+      if (getJACKCPKFEPM()
+          != other.getJACKCPKFEPM()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getJPKPIEGEEKK()
+          != other.getJPKPIEGEEKK()) return false;
+      if (getOOPJJHLFPBD()
+          != other.getOOPJJHLFPBD()) return false;
+      if (editState_ != other.editState_) return false;
+      if (!getRoomBriefListList()
+          .equals(other.getRoomBriefListList())) return false;
+      if (!getShareCode()
+          .equals(other.getShareCode())) return false;
+      if (getDKNKINADCCC()
+          != other.getDKNKINADCCC()) return false;
+      if (getIsAllowImport()
+          != other.getIsAllowImport()) return false;
       if (getDungeonGuid()
           != other.getDungeonGuid()) return false;
-      if (getCDOHIBMGBKB()
-          != other.getCDOHIBMGBKB()) return false;
-      if (getNKDOMFCMLEH()
-          != other.getNKDOMFCMLEH()) return false;
+      if (!getTagListList()
+          .equals(other.getTagListList())) return false;
+      if (!getCreatorNickname()
+          .equals(other.getCreatorNickname())) return false;
+      if (getOKGNCAILBNN()
+          != other.getOKGNCAILBNN()) return false;
+      if (getIsPsnPlatform()
+          != other.getIsPsnPlatform()) return false;
+      if (getCKPIFGHKINE()
+          != other.getCKPIFGHKINE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -907,51 +973,55 @@ public final class UgcDungeonBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CREATOR_NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getCreatorNickname().hashCode();
-      if (getTagListCount() > 0) {
-        hash = (37 * hash) + TAG_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTagListList().hashCode();
+      if (hasDungeonSetting()) {
+        hash = (37 * hash) + DUNGEON_SETTING_FIELD_NUMBER;
+        hash = (53 * hash) + getDungeonSetting().hashCode();
       }
+      if (hasBMFGOIKDACE()) {
+        hash = (37 * hash) + BMFGOIKDACE_FIELD_NUMBER;
+        hash = (53 * hash) + getBMFGOIKDACE().hashCode();
+      }
+      hash = (37 * hash) + FIRST_PUBLISH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFirstPublishTime();
+      hash = (37 * hash) + JACKCPKFEPM_FIELD_NUMBER;
+      hash = (53 * hash) + getJACKCPKFEPM();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + JPKPIEGEEKK_FIELD_NUMBER;
+      hash = (53 * hash) + getJPKPIEGEEKK();
+      hash = (37 * hash) + OOPJJHLFPBD_FIELD_NUMBER;
+      hash = (53 * hash) + getOOPJJHLFPBD();
+      hash = (37 * hash) + EDIT_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + editState_;
       if (getRoomBriefListCount() > 0) {
         hash = (37 * hash) + ROOM_BRIEF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRoomBriefListList().hashCode();
       }
       hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getShareCode().hashCode();
-      if (hasDungeonSetting()) {
-        hash = (37 * hash) + DUNGEON_SETTING_FIELD_NUMBER;
-        hash = (53 * hash) + getDungeonSetting().hashCode();
-      }
-      hash = (37 * hash) + PLDIDFNNDJB_FIELD_NUMBER;
-      hash = (53 * hash) + getPLDIDFNNDJB();
-      hash = (37 * hash) + AMIACAMPCNA_FIELD_NUMBER;
+      hash = (37 * hash) + DKNKINADCCC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAMIACAMPCNA());
-      hash = (37 * hash) + IS_PSN_PLATFORM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPsnPlatform());
-      hash = (37 * hash) + HCBLBBMIMEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHCBLBBMIMEN());
+          getDKNKINADCCC());
       hash = (37 * hash) + IS_ALLOW_IMPORT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAllowImport());
-      hash = (37 * hash) + JHKBLLNMEDE_FIELD_NUMBER;
-      hash = (53 * hash) + jHKBLLNMEDE_;
-      hash = (37 * hash) + KAOKGJEFNAA_FIELD_NUMBER;
-      hash = (53 * hash) + getKAOKGJEFNAA();
-      hash = (37 * hash) + FIRST_PUBLISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFirstPublishTime();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getDungeonGuid());
-      hash = (37 * hash) + CDOHIBMGBKB_FIELD_NUMBER;
-      hash = (53 * hash) + getCDOHIBMGBKB();
-      hash = (37 * hash) + NKDOMFCMLEH_FIELD_NUMBER;
-      hash = (53 * hash) + getNKDOMFCMLEH();
+      if (getTagListCount() > 0) {
+        hash = (37 * hash) + TAG_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTagListList().hashCode();
+      }
+      hash = (37 * hash) + CREATOR_NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getCreatorNickname().hashCode();
+      hash = (37 * hash) + OKGNCAILBNN_FIELD_NUMBER;
+      hash = (53 * hash) + getOKGNCAILBNN();
+      hash = (37 * hash) + IS_PSN_PLATFORM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPsnPlatform());
+      hash = (37 * hash) + CKPIFGHKINE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCKPIFGHKINE());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1086,47 +1156,53 @@ public final class UgcDungeonBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        creatorNickname_ = "";
-
-        tagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        if (roomBriefListBuilder_ == null) {
-          roomBriefList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          roomBriefListBuilder_.clear();
-        }
-        shareCode_ = "";
-
         if (dungeonSettingBuilder_ == null) {
           dungeonSetting_ = null;
         } else {
           dungeonSetting_ = null;
           dungeonSettingBuilder_ = null;
         }
-        pLDIDFNNDJB_ = 0;
-
-        aMIACAMPCNA_ = false;
-
-        isPsnPlatform_ = false;
-
-        hCBLBBMIMEN_ = false;
-
-        isAllowImport_ = false;
-
-        jHKBLLNMEDE_ = 0;
-
-        kAOKGJEFNAA_ = 0;
-
+        if (bMFGOIKDACEBuilder_ == null) {
+          bMFGOIKDACE_ = null;
+        } else {
+          bMFGOIKDACE_ = null;
+          bMFGOIKDACEBuilder_ = null;
+        }
         firstPublishTime_ = 0;
+
+        jACKCPKFEPM_ = 0;
 
         dungeonId_ = 0;
 
+        jPKPIEGEEKK_ = 0;
+
+        oOPJJHLFPBD_ = 0;
+
+        editState_ = 0;
+
+        if (roomBriefListBuilder_ == null) {
+          roomBriefList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          roomBriefListBuilder_.clear();
+        }
+        shareCode_ = "";
+
+        dKNKINADCCC_ = false;
+
+        isAllowImport_ = false;
+
         dungeonGuid_ = 0L;
 
-        cDOHIBMGBKB_ = 0;
+        tagList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        creatorNickname_ = "";
 
-        nKDOMFCMLEH_ = 0;
+        oKGNCAILBNN_ = 0;
+
+        isPsnPlatform_ = false;
+
+        cKPIFGHKINE_ = false;
 
         return this;
       }
@@ -1155,39 +1231,44 @@ public final class UgcDungeonBriefOuterClass {
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief buildPartial() {
         emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief result = new emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief(this);
         int from_bitField0_ = bitField0_;
-        result.creatorNickname_ = creatorNickname_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          tagList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
+        if (dungeonSettingBuilder_ == null) {
+          result.dungeonSetting_ = dungeonSetting_;
+        } else {
+          result.dungeonSetting_ = dungeonSettingBuilder_.build();
         }
-        result.tagList_ = tagList_;
+        if (bMFGOIKDACEBuilder_ == null) {
+          result.bMFGOIKDACE_ = bMFGOIKDACE_;
+        } else {
+          result.bMFGOIKDACE_ = bMFGOIKDACEBuilder_.build();
+        }
+        result.firstPublishTime_ = firstPublishTime_;
+        result.jACKCPKFEPM_ = jACKCPKFEPM_;
+        result.dungeonId_ = dungeonId_;
+        result.jPKPIEGEEKK_ = jPKPIEGEEKK_;
+        result.oOPJJHLFPBD_ = oOPJJHLFPBD_;
+        result.editState_ = editState_;
         if (roomBriefListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             roomBriefList_ = java.util.Collections.unmodifiableList(roomBriefList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.roomBriefList_ = roomBriefList_;
         } else {
           result.roomBriefList_ = roomBriefListBuilder_.build();
         }
         result.shareCode_ = shareCode_;
-        if (dungeonSettingBuilder_ == null) {
-          result.dungeonSetting_ = dungeonSetting_;
-        } else {
-          result.dungeonSetting_ = dungeonSettingBuilder_.build();
-        }
-        result.pLDIDFNNDJB_ = pLDIDFNNDJB_;
-        result.aMIACAMPCNA_ = aMIACAMPCNA_;
-        result.isPsnPlatform_ = isPsnPlatform_;
-        result.hCBLBBMIMEN_ = hCBLBBMIMEN_;
+        result.dKNKINADCCC_ = dKNKINADCCC_;
         result.isAllowImport_ = isAllowImport_;
-        result.jHKBLLNMEDE_ = jHKBLLNMEDE_;
-        result.kAOKGJEFNAA_ = kAOKGJEFNAA_;
-        result.firstPublishTime_ = firstPublishTime_;
-        result.dungeonId_ = dungeonId_;
         result.dungeonGuid_ = dungeonGuid_;
-        result.cDOHIBMGBKB_ = cDOHIBMGBKB_;
-        result.nKDOMFCMLEH_ = nKDOMFCMLEH_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          tagList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.tagList_ = tagList_;
+        result.creatorNickname_ = creatorNickname_;
+        result.oKGNCAILBNN_ = oKGNCAILBNN_;
+        result.isPsnPlatform_ = isPsnPlatform_;
+        result.cKPIFGHKINE_ = cKPIFGHKINE_;
         onBuilt();
         return result;
       }
@@ -1236,25 +1317,35 @@ public final class UgcDungeonBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief other) {
         if (other == emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.getDefaultInstance()) return this;
-        if (!other.getCreatorNickname().isEmpty()) {
-          creatorNickname_ = other.creatorNickname_;
-          onChanged();
+        if (other.hasDungeonSetting()) {
+          mergeDungeonSetting(other.getDungeonSetting());
         }
-        if (!other.tagList_.isEmpty()) {
-          if (tagList_.isEmpty()) {
-            tagList_ = other.tagList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureTagListIsMutable();
-            tagList_.addAll(other.tagList_);
-          }
-          onChanged();
+        if (other.hasBMFGOIKDACE()) {
+          mergeBMFGOIKDACE(other.getBMFGOIKDACE());
+        }
+        if (other.getFirstPublishTime() != 0) {
+          setFirstPublishTime(other.getFirstPublishTime());
+        }
+        if (other.getJACKCPKFEPM() != 0) {
+          setJACKCPKFEPM(other.getJACKCPKFEPM());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
+        }
+        if (other.getJPKPIEGEEKK() != 0) {
+          setJPKPIEGEEKK(other.getJPKPIEGEEKK());
+        }
+        if (other.getOOPJJHLFPBD() != 0) {
+          setOOPJJHLFPBD(other.getOOPJJHLFPBD());
+        }
+        if (other.editState_ != 0) {
+          setEditStateValue(other.getEditStateValue());
         }
         if (roomBriefListBuilder_ == null) {
           if (!other.roomBriefList_.isEmpty()) {
             if (roomBriefList_.isEmpty()) {
               roomBriefList_ = other.roomBriefList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureRoomBriefListIsMutable();
               roomBriefList_.addAll(other.roomBriefList_);
@@ -1267,7 +1358,7 @@ public final class UgcDungeonBriefOuterClass {
               roomBriefListBuilder_.dispose();
               roomBriefListBuilder_ = null;
               roomBriefList_ = other.roomBriefList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               roomBriefListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getRoomBriefListFieldBuilder() : null;
@@ -1280,44 +1371,37 @@ public final class UgcDungeonBriefOuterClass {
           shareCode_ = other.shareCode_;
           onChanged();
         }
-        if (other.hasDungeonSetting()) {
-          mergeDungeonSetting(other.getDungeonSetting());
-        }
-        if (other.getPLDIDFNNDJB() != 0) {
-          setPLDIDFNNDJB(other.getPLDIDFNNDJB());
-        }
-        if (other.getAMIACAMPCNA() != false) {
-          setAMIACAMPCNA(other.getAMIACAMPCNA());
-        }
-        if (other.getIsPsnPlatform() != false) {
-          setIsPsnPlatform(other.getIsPsnPlatform());
-        }
-        if (other.getHCBLBBMIMEN() != false) {
-          setHCBLBBMIMEN(other.getHCBLBBMIMEN());
+        if (other.getDKNKINADCCC() != false) {
+          setDKNKINADCCC(other.getDKNKINADCCC());
         }
         if (other.getIsAllowImport() != false) {
           setIsAllowImport(other.getIsAllowImport());
         }
-        if (other.jHKBLLNMEDE_ != 0) {
-          setJHKBLLNMEDEValue(other.getJHKBLLNMEDEValue());
-        }
-        if (other.getKAOKGJEFNAA() != 0) {
-          setKAOKGJEFNAA(other.getKAOKGJEFNAA());
-        }
-        if (other.getFirstPublishTime() != 0) {
-          setFirstPublishTime(other.getFirstPublishTime());
-        }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
         if (other.getDungeonGuid() != 0L) {
           setDungeonGuid(other.getDungeonGuid());
         }
-        if (other.getCDOHIBMGBKB() != 0) {
-          setCDOHIBMGBKB(other.getCDOHIBMGBKB());
+        if (!other.tagList_.isEmpty()) {
+          if (tagList_.isEmpty()) {
+            tagList_ = other.tagList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureTagListIsMutable();
+            tagList_.addAll(other.tagList_);
+          }
+          onChanged();
         }
-        if (other.getNKDOMFCMLEH() != 0) {
-          setNKDOMFCMLEH(other.getNKDOMFCMLEH());
+        if (!other.getCreatorNickname().isEmpty()) {
+          creatorNickname_ = other.creatorNickname_;
+          onChanged();
+        }
+        if (other.getOKGNCAILBNN() != 0) {
+          setOKGNCAILBNN(other.getOKGNCAILBNN());
+        }
+        if (other.getIsPsnPlatform() != false) {
+          setIsPsnPlatform(other.getIsPsnPlatform());
+        }
+        if (other.getCKPIFGHKINE() != false) {
+          setCKPIFGHKINE(other.getCKPIFGHKINE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1349,489 +1433,18 @@ public final class UgcDungeonBriefOuterClass {
       }
       private int bitField0_;
 
-      private java.lang.Object creatorNickname_ = "";
-      /**
-       * <code>string creator_nickname = 12;</code>
-       * @return The creatorNickname.
-       */
-      public java.lang.String getCreatorNickname() {
-        java.lang.Object ref = creatorNickname_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          creatorNickname_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string creator_nickname = 12;</code>
-       * @return The bytes for creatorNickname.
-       */
-      public com.google.protobuf.ByteString
-          getCreatorNicknameBytes() {
-        java.lang.Object ref = creatorNickname_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          creatorNickname_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string creator_nickname = 12;</code>
-       * @param value The creatorNickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreatorNickname(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        creatorNickname_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string creator_nickname = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCreatorNickname() {
-        
-        creatorNickname_ = getDefaultInstance().getCreatorNickname();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string creator_nickname = 12;</code>
-       * @param value The bytes for creatorNickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreatorNicknameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        creatorNickname_ = value;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList tagList_ = emptyIntList();
-      private void ensureTagListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          tagList_ = mutableCopy(tagList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @return A list containing the tagList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTagListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(tagList_) : tagList_;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @return The count of tagList.
-       */
-      public int getTagListCount() {
-        return tagList_.size();
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The tagList at the given index.
-       */
-      public int getTagList(int index) {
-        return tagList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The tagList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTagList(
-          int index, int value) {
-        ensureTagListIsMutable();
-        tagList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @param value The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTagList(int value) {
-        ensureTagListIsMutable();
-        tagList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @param values The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTagList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTagListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, tagList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTagList() {
-        tagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> roomBriefList_ =
-        java.util.Collections.emptyList();
-      private void ensureRoomBriefListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          roomBriefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief>(roomBriefList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> roomBriefListBuilder_;
-
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> getRoomBriefListList() {
-        if (roomBriefListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(roomBriefList_);
-        } else {
-          return roomBriefListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public int getRoomBriefListCount() {
-        if (roomBriefListBuilder_ == null) {
-          return roomBriefList_.size();
-        } else {
-          return roomBriefListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief getRoomBriefList(int index) {
-        if (roomBriefListBuilder_ == null) {
-          return roomBriefList_.get(index);
-        } else {
-          return roomBriefListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder setRoomBriefList(
-          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
-        if (roomBriefListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.set(index, value);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder setRoomBriefList(
-          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
-        if (roomBriefListBuilder_ == null) {
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          roomBriefListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder addRoomBriefList(emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
-        if (roomBriefListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.add(value);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder addRoomBriefList(
-          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
-        if (roomBriefListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.add(index, value);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder addRoomBriefList(
-          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
-        if (roomBriefListBuilder_ == null) {
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          roomBriefListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder addRoomBriefList(
-          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
-        if (roomBriefListBuilder_ == null) {
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          roomBriefListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder addAllRoomBriefList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> values) {
-        if (roomBriefListBuilder_ == null) {
-          ensureRoomBriefListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, roomBriefList_);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder clearRoomBriefList() {
-        if (roomBriefListBuilder_ == null) {
-          roomBriefList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public Builder removeRoomBriefList(int index) {
-        if (roomBriefListBuilder_ == null) {
-          ensureRoomBriefListIsMutable();
-          roomBriefList_.remove(index);
-          onChanged();
-        } else {
-          roomBriefListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder getRoomBriefListBuilder(
-          int index) {
-        return getRoomBriefListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder getRoomBriefListOrBuilder(
-          int index) {
-        if (roomBriefListBuilder_ == null) {
-          return roomBriefList_.get(index);  } else {
-          return roomBriefListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
-           getRoomBriefListOrBuilderList() {
-        if (roomBriefListBuilder_ != null) {
-          return roomBriefListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(roomBriefList_);
-        }
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder addRoomBriefListBuilder() {
-        return getRoomBriefListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder addRoomBriefListBuilder(
-          int index) {
-        return getRoomBriefListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 2;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder> 
-           getRoomBriefListBuilderList() {
-        return getRoomBriefListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
-          getRoomBriefListFieldBuilder() {
-        if (roomBriefListBuilder_ == null) {
-          roomBriefListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder>(
-                  roomBriefList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          roomBriefList_ = null;
-        }
-        return roomBriefListBuilder_;
-      }
-
-      private java.lang.Object shareCode_ = "";
-      /**
-       * <code>string share_code = 11;</code>
-       * @return The shareCode.
-       */
-      public java.lang.String getShareCode() {
-        java.lang.Object ref = shareCode_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          shareCode_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string share_code = 11;</code>
-       * @return The bytes for shareCode.
-       */
-      public com.google.protobuf.ByteString
-          getShareCodeBytes() {
-        java.lang.Object ref = shareCode_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          shareCode_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string share_code = 11;</code>
-       * @param value The shareCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShareCode(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        shareCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string share_code = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShareCode() {
-        
-        shareCode_ = getDefaultInstance().getShareCode();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string share_code = 11;</code>
-       * @param value The bytes for shareCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShareCodeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        shareCode_ = value;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting dungeonSetting_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting, emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder, emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder> dungeonSettingBuilder_;
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        * @return Whether the dungeonSetting field is set.
        */
       public boolean hasDungeonSetting() {
         return dungeonSettingBuilder_ != null || dungeonSetting_ != null;
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        * @return The dungeonSetting.
        */
       public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting getDungeonSetting() {
@@ -1842,7 +1455,7 @@ public final class UgcDungeonBriefOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public Builder setDungeonSetting(emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting value) {
         if (dungeonSettingBuilder_ == null) {
@@ -1858,7 +1471,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public Builder setDungeonSetting(
           emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder builderForValue) {
@@ -1872,7 +1485,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public Builder mergeDungeonSetting(emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting value) {
         if (dungeonSettingBuilder_ == null) {
@@ -1890,7 +1503,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public Builder clearDungeonSetting() {
         if (dungeonSettingBuilder_ == null) {
@@ -1904,7 +1517,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder getDungeonSettingBuilder() {
         
@@ -1912,7 +1525,7 @@ public final class UgcDungeonBriefOuterClass {
         return getDungeonSettingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder getDungeonSettingOrBuilder() {
         if (dungeonSettingBuilder_ != null) {
@@ -1923,7 +1536,7 @@ public final class UgcDungeonBriefOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonSetting dungeon_setting = 13;</code>
+       * <code>.UgcDungeonSetting dungeon_setting = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting, emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder, emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSettingOrBuilder> 
@@ -1939,249 +1552,128 @@ public final class UgcDungeonBriefOuterClass {
         return dungeonSettingBuilder_;
       }
 
-      private int pLDIDFNNDJB_ ;
+      private emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF bMFGOIKDACE_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder> bMFGOIKDACEBuilder_;
       /**
-       * <code>uint32 PLDIDFNNDJB = 8;</code>
-       * @return The pLDIDFNNDJB.
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       * @return Whether the bMFGOIKDACE field is set.
        */
-      @java.lang.Override
-      public int getPLDIDFNNDJB() {
-        return pLDIDFNNDJB_;
+      public boolean hasBMFGOIKDACE() {
+        return bMFGOIKDACEBuilder_ != null || bMFGOIKDACE_ != null;
       }
       /**
-       * <code>uint32 PLDIDFNNDJB = 8;</code>
-       * @param value The pLDIDFNNDJB to set.
-       * @return This builder for chaining.
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       * @return The bMFGOIKDACE.
        */
-      public Builder setPLDIDFNNDJB(int value) {
-        
-        pLDIDFNNDJB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PLDIDFNNDJB = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPLDIDFNNDJB() {
-        
-        pLDIDFNNDJB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean aMIACAMPCNA_ ;
-      /**
-       * <code>bool AMIACAMPCNA = 14;</code>
-       * @return The aMIACAMPCNA.
-       */
-      @java.lang.Override
-      public boolean getAMIACAMPCNA() {
-        return aMIACAMPCNA_;
-      }
-      /**
-       * <code>bool AMIACAMPCNA = 14;</code>
-       * @param value The aMIACAMPCNA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAMIACAMPCNA(boolean value) {
-        
-        aMIACAMPCNA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool AMIACAMPCNA = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAMIACAMPCNA() {
-        
-        aMIACAMPCNA_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPsnPlatform_ ;
-      /**
-       * <code>bool is_psn_platform = 100;</code>
-       * @return The isPsnPlatform.
-       */
-      @java.lang.Override
-      public boolean getIsPsnPlatform() {
-        return isPsnPlatform_;
-      }
-      /**
-       * <code>bool is_psn_platform = 100;</code>
-       * @param value The isPsnPlatform to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPsnPlatform(boolean value) {
-        
-        isPsnPlatform_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_psn_platform = 100;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPsnPlatform() {
-        
-        isPsnPlatform_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean hCBLBBMIMEN_ ;
-      /**
-       * <code>bool HCBLBBMIMEN = 241;</code>
-       * @return The hCBLBBMIMEN.
-       */
-      @java.lang.Override
-      public boolean getHCBLBBMIMEN() {
-        return hCBLBBMIMEN_;
-      }
-      /**
-       * <code>bool HCBLBBMIMEN = 241;</code>
-       * @param value The hCBLBBMIMEN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHCBLBBMIMEN(boolean value) {
-        
-        hCBLBBMIMEN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool HCBLBBMIMEN = 241;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHCBLBBMIMEN() {
-        
-        hCBLBBMIMEN_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isAllowImport_ ;
-      /**
-       * <code>bool is_allow_import = 15;</code>
-       * @return The isAllowImport.
-       */
-      @java.lang.Override
-      public boolean getIsAllowImport() {
-        return isAllowImport_;
-      }
-      /**
-       * <code>bool is_allow_import = 15;</code>
-       * @param value The isAllowImport to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAllowImport(boolean value) {
-        
-        isAllowImport_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_allow_import = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAllowImport() {
-        
-        isAllowImport_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int jHKBLLNMEDE_ = 0;
-      /**
-       * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-       * @return The enum numeric value on the wire for jHKBLLNMEDE.
-       */
-      @java.lang.Override public int getJHKBLLNMEDEValue() {
-        return jHKBLLNMEDE_;
-      }
-      /**
-       * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-       * @param value The enum numeric value on the wire for jHKBLLNMEDE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJHKBLLNMEDEValue(int value) {
-        
-        jHKBLLNMEDE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-       * @return The jHKBLLNMEDE.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType getJHKBLLNMEDE() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType result = emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.valueOf(jHKBLLNMEDE_);
-        return result == null ? emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-       * @param value The jHKBLLNMEDE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJHKBLLNMEDE(emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.EditUgcDungeonType value) {
-        if (value == null) {
-          throw new NullPointerException();
+      public emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF getBMFGOIKDACE() {
+        if (bMFGOIKDACEBuilder_ == null) {
+          return bMFGOIKDACE_ == null ? emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.getDefaultInstance() : bMFGOIKDACE_;
+        } else {
+          return bMFGOIKDACEBuilder_.getMessage();
         }
-        
-        jHKBLLNMEDE_ = value.getNumber();
-        onChanged();
-        return this;
       }
       /**
-       * <code>.EditUgcDungeonType JHKBLLNMEDE = 10;</code>
-       * @return This builder for chaining.
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
        */
-      public Builder clearJHKBLLNMEDE() {
-        
-        jHKBLLNMEDE_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setBMFGOIKDACE(emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF value) {
+        if (bMFGOIKDACEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          bMFGOIKDACE_ = value;
+          onChanged();
+        } else {
+          bMFGOIKDACEBuilder_.setMessage(value);
+        }
 
-      private int kAOKGJEFNAA_ ;
-      /**
-       * <code>uint32 KAOKGJEFNAA = 9;</code>
-       * @return The kAOKGJEFNAA.
-       */
-      @java.lang.Override
-      public int getKAOKGJEFNAA() {
-        return kAOKGJEFNAA_;
-      }
-      /**
-       * <code>uint32 KAOKGJEFNAA = 9;</code>
-       * @param value The kAOKGJEFNAA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKAOKGJEFNAA(int value) {
-        
-        kAOKGJEFNAA_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>uint32 KAOKGJEFNAA = 9;</code>
-       * @return This builder for chaining.
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
        */
-      public Builder clearKAOKGJEFNAA() {
-        
-        kAOKGJEFNAA_ = 0;
-        onChanged();
+      public Builder setBMFGOIKDACE(
+          emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder builderForValue) {
+        if (bMFGOIKDACEBuilder_ == null) {
+          bMFGOIKDACE_ = builderForValue.build();
+          onChanged();
+        } else {
+          bMFGOIKDACEBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       */
+      public Builder mergeBMFGOIKDACE(emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF value) {
+        if (bMFGOIKDACEBuilder_ == null) {
+          if (bMFGOIKDACE_ != null) {
+            bMFGOIKDACE_ =
+              emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.newBuilder(bMFGOIKDACE_).mergeFrom(value).buildPartial();
+          } else {
+            bMFGOIKDACE_ = value;
+          }
+          onChanged();
+        } else {
+          bMFGOIKDACEBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       */
+      public Builder clearBMFGOIKDACE() {
+        if (bMFGOIKDACEBuilder_ == null) {
+          bMFGOIKDACE_ = null;
+          onChanged();
+        } else {
+          bMFGOIKDACE_ = null;
+          bMFGOIKDACEBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder getBMFGOIKDACEBuilder() {
+        
+        onChanged();
+        return getBMFGOIKDACEFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder getBMFGOIKDACEOrBuilder() {
+        if (bMFGOIKDACEBuilder_ != null) {
+          return bMFGOIKDACEBuilder_.getMessageOrBuilder();
+        } else {
+          return bMFGOIKDACE_ == null ?
+              emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.getDefaultInstance() : bMFGOIKDACE_;
+        }
+      }
+      /**
+       * <code>.GPBCGOELJOF BMFGOIKDACE = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder> 
+          getBMFGOIKDACEFieldBuilder() {
+        if (bMFGOIKDACEBuilder_ == null) {
+          bMFGOIKDACEBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOF.Builder, emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.GPBCGOELJOFOrBuilder>(
+                  getBMFGOIKDACE(),
+                  getParentForChildren(),
+                  isClean());
+          bMFGOIKDACE_ = null;
+        }
+        return bMFGOIKDACEBuilder_;
       }
 
       private int firstPublishTime_ ;
       /**
-       * <code>uint32 first_publish_time = 1;</code>
+       * <code>uint32 first_publish_time = 3;</code>
        * @return The firstPublishTime.
        */
       @java.lang.Override
@@ -2189,7 +1681,7 @@ public final class UgcDungeonBriefOuterClass {
         return firstPublishTime_;
       }
       /**
-       * <code>uint32 first_publish_time = 1;</code>
+       * <code>uint32 first_publish_time = 3;</code>
        * @param value The firstPublishTime to set.
        * @return This builder for chaining.
        */
@@ -2200,7 +1692,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 first_publish_time = 1;</code>
+       * <code>uint32 first_publish_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFirstPublishTime() {
@@ -2210,9 +1702,40 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
 
+      private int jACKCPKFEPM_ ;
+      /**
+       * <code>uint32 JACKCPKFEPM = 4;</code>
+       * @return The jACKCPKFEPM.
+       */
+      @java.lang.Override
+      public int getJACKCPKFEPM() {
+        return jACKCPKFEPM_;
+      }
+      /**
+       * <code>uint32 JACKCPKFEPM = 4;</code>
+       * @param value The jACKCPKFEPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJACKCPKFEPM(int value) {
+        
+        jACKCPKFEPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JACKCPKFEPM = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJACKCPKFEPM() {
+        
+        jACKCPKFEPM_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -2220,7 +1743,7 @@ public final class UgcDungeonBriefOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -2231,7 +1754,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -2241,9 +1764,503 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
 
+      private int jPKPIEGEEKK_ ;
+      /**
+       * <code>uint32 JPKPIEGEEKK = 6;</code>
+       * @return The jPKPIEGEEKK.
+       */
+      @java.lang.Override
+      public int getJPKPIEGEEKK() {
+        return jPKPIEGEEKK_;
+      }
+      /**
+       * <code>uint32 JPKPIEGEEKK = 6;</code>
+       * @param value The jPKPIEGEEKK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJPKPIEGEEKK(int value) {
+        
+        jPKPIEGEEKK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JPKPIEGEEKK = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJPKPIEGEEKK() {
+        
+        jPKPIEGEEKK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oOPJJHLFPBD_ ;
+      /**
+       * <code>uint32 OOPJJHLFPBD = 7;</code>
+       * @return The oOPJJHLFPBD.
+       */
+      @java.lang.Override
+      public int getOOPJJHLFPBD() {
+        return oOPJJHLFPBD_;
+      }
+      /**
+       * <code>uint32 OOPJJHLFPBD = 7;</code>
+       * @param value The oOPJJHLFPBD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOOPJJHLFPBD(int value) {
+        
+        oOPJJHLFPBD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OOPJJHLFPBD = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOOPJJHLFPBD() {
+        
+        oOPJJHLFPBD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int editState_ = 0;
+      /**
+       * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+       * @return The enum numeric value on the wire for editState.
+       */
+      @java.lang.Override public int getEditStateValue() {
+        return editState_;
+      }
+      /**
+       * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+       * @param value The enum numeric value on the wire for editState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEditStateValue(int value) {
+        
+        editState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+       * @return The editState.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP getEditState() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP result = emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.valueOf(editState_);
+        return result == null ? emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+       * @param value The editState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEditState(emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.Unk3700_GLNOHEBLMJP value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        editState_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Unk3700_GLNOHEBLMJP edit_state = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEditState() {
+        
+        editState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> roomBriefList_ =
+        java.util.Collections.emptyList();
+      private void ensureRoomBriefListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          roomBriefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief>(roomBriefList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> roomBriefListBuilder_;
+
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> getRoomBriefListList() {
+        if (roomBriefListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(roomBriefList_);
+        } else {
+          return roomBriefListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public int getRoomBriefListCount() {
+        if (roomBriefListBuilder_ == null) {
+          return roomBriefList_.size();
+        } else {
+          return roomBriefListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief getRoomBriefList(int index) {
+        if (roomBriefListBuilder_ == null) {
+          return roomBriefList_.get(index);
+        } else {
+          return roomBriefListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder setRoomBriefList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
+        if (roomBriefListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.set(index, value);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder setRoomBriefList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
+        if (roomBriefListBuilder_ == null) {
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          roomBriefListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder addRoomBriefList(emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
+        if (roomBriefListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.add(value);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder addRoomBriefList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief value) {
+        if (roomBriefListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.add(index, value);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder addRoomBriefList(
+          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
+        if (roomBriefListBuilder_ == null) {
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          roomBriefListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder addRoomBriefList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder builderForValue) {
+        if (roomBriefListBuilder_ == null) {
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          roomBriefListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder addAllRoomBriefList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief> values) {
+        if (roomBriefListBuilder_ == null) {
+          ensureRoomBriefListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, roomBriefList_);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder clearRoomBriefList() {
+        if (roomBriefListBuilder_ == null) {
+          roomBriefList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public Builder removeRoomBriefList(int index) {
+        if (roomBriefListBuilder_ == null) {
+          ensureRoomBriefListIsMutable();
+          roomBriefList_.remove(index);
+          onChanged();
+        } else {
+          roomBriefListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder getRoomBriefListBuilder(
+          int index) {
+        return getRoomBriefListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder getRoomBriefListOrBuilder(
+          int index) {
+        if (roomBriefListBuilder_ == null) {
+          return roomBriefList_.get(index);  } else {
+          return roomBriefListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
+           getRoomBriefListOrBuilderList() {
+        if (roomBriefListBuilder_ != null) {
+          return roomBriefListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(roomBriefList_);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder addRoomBriefListBuilder() {
+        return getRoomBriefListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder addRoomBriefListBuilder(
+          int index) {
+        return getRoomBriefListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomBrief room_brief_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder> 
+           getRoomBriefListBuilderList() {
+        return getRoomBriefListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder> 
+          getRoomBriefListFieldBuilder() {
+        if (roomBriefListBuilder_ == null) {
+          roomBriefListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBriefOrBuilder>(
+                  roomBriefList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          roomBriefList_ = null;
+        }
+        return roomBriefListBuilder_;
+      }
+
+      private java.lang.Object shareCode_ = "";
+      /**
+       * <code>string share_code = 10;</code>
+       * @return The shareCode.
+       */
+      public java.lang.String getShareCode() {
+        java.lang.Object ref = shareCode_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          shareCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string share_code = 10;</code>
+       * @return The bytes for shareCode.
+       */
+      public com.google.protobuf.ByteString
+          getShareCodeBytes() {
+        java.lang.Object ref = shareCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          shareCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string share_code = 10;</code>
+       * @param value The shareCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShareCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        shareCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string share_code = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearShareCode() {
+        
+        shareCode_ = getDefaultInstance().getShareCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string share_code = 10;</code>
+       * @param value The bytes for shareCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShareCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        shareCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean dKNKINADCCC_ ;
+      /**
+       * <code>bool DKNKINADCCC = 11;</code>
+       * @return The dKNKINADCCC.
+       */
+      @java.lang.Override
+      public boolean getDKNKINADCCC() {
+        return dKNKINADCCC_;
+      }
+      /**
+       * <code>bool DKNKINADCCC = 11;</code>
+       * @param value The dKNKINADCCC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDKNKINADCCC(boolean value) {
+        
+        dKNKINADCCC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool DKNKINADCCC = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDKNKINADCCC() {
+        
+        dKNKINADCCC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAllowImport_ ;
+      /**
+       * <code>bool is_allow_import = 12;</code>
+       * @return The isAllowImport.
+       */
+      @java.lang.Override
+      public boolean getIsAllowImport() {
+        return isAllowImport_;
+      }
+      /**
+       * <code>bool is_allow_import = 12;</code>
+       * @param value The isAllowImport to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAllowImport(boolean value) {
+        
+        isAllowImport_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_allow_import = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAllowImport() {
+        
+        isAllowImport_ = false;
+        onChanged();
+        return this;
+      }
+
       private long dungeonGuid_ ;
       /**
-       * <code>uint64 dungeon_guid = 3;</code>
+       * <code>uint64 dungeon_guid = 13;</code>
        * @return The dungeonGuid.
        */
       @java.lang.Override
@@ -2251,7 +2268,7 @@ public final class UgcDungeonBriefOuterClass {
         return dungeonGuid_;
       }
       /**
-       * <code>uint64 dungeon_guid = 3;</code>
+       * <code>uint64 dungeon_guid = 13;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
        */
@@ -2262,7 +2279,7 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint64 dungeon_guid = 3;</code>
+       * <code>uint64 dungeon_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
@@ -2272,64 +2289,250 @@ public final class UgcDungeonBriefOuterClass {
         return this;
       }
 
-      private int cDOHIBMGBKB_ ;
-      /**
-       * <code>uint32 CDOHIBMGBKB = 1702;</code>
-       * @return The cDOHIBMGBKB.
-       */
-      @java.lang.Override
-      public int getCDOHIBMGBKB() {
-        return cDOHIBMGBKB_;
+      private com.google.protobuf.Internal.IntList tagList_ = emptyIntList();
+      private void ensureTagListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          tagList_ = mutableCopy(tagList_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>uint32 CDOHIBMGBKB = 1702;</code>
-       * @param value The cDOHIBMGBKB to set.
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @return A list containing the tagList.
+       */
+      public java.util.List<java.lang.Integer>
+          getTagListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(tagList_) : tagList_;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @return The count of tagList.
+       */
+      public int getTagListCount() {
+        return tagList_.size();
+      }
+      /**
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @param index The index of the element to return.
+       * @return The tagList at the given index.
+       */
+      public int getTagList(int index) {
+        return tagList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The tagList to set.
        * @return This builder for chaining.
        */
-      public Builder setCDOHIBMGBKB(int value) {
-        
-        cDOHIBMGBKB_ = value;
+      public Builder setTagList(
+          int index, int value) {
+        ensureTagListIsMutable();
+        tagList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CDOHIBMGBKB = 1702;</code>
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @param value The tagList to add.
        * @return This builder for chaining.
        */
-      public Builder clearCDOHIBMGBKB() {
-        
-        cDOHIBMGBKB_ = 0;
+      public Builder addTagList(int value) {
+        ensureTagListIsMutable();
+        tagList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @param values The tagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllTagList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTagListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, tagList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTagList() {
+        tagList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int nKDOMFCMLEH_ ;
+      private java.lang.Object creatorNickname_ = "";
       /**
-       * <code>uint32 NKDOMFCMLEH = 5;</code>
-       * @return The nKDOMFCMLEH.
+       * <code>string creator_nickname = 15;</code>
+       * @return The creatorNickname.
        */
-      @java.lang.Override
-      public int getNKDOMFCMLEH() {
-        return nKDOMFCMLEH_;
+      public java.lang.String getCreatorNickname() {
+        java.lang.Object ref = creatorNickname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          creatorNickname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 NKDOMFCMLEH = 5;</code>
-       * @param value The nKDOMFCMLEH to set.
+       * <code>string creator_nickname = 15;</code>
+       * @return The bytes for creatorNickname.
+       */
+      public com.google.protobuf.ByteString
+          getCreatorNicknameBytes() {
+        java.lang.Object ref = creatorNickname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          creatorNickname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string creator_nickname = 15;</code>
+       * @param value The creatorNickname to set.
        * @return This builder for chaining.
        */
-      public Builder setNKDOMFCMLEH(int value) {
-        
-        nKDOMFCMLEH_ = value;
+      public Builder setCreatorNickname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        creatorNickname_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NKDOMFCMLEH = 5;</code>
+       * <code>string creator_nickname = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNKDOMFCMLEH() {
+      public Builder clearCreatorNickname() {
         
-        nKDOMFCMLEH_ = 0;
+        creatorNickname_ = getDefaultInstance().getCreatorNickname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string creator_nickname = 15;</code>
+       * @param value The bytes for creatorNickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCreatorNicknameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        creatorNickname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int oKGNCAILBNN_ ;
+      /**
+       * <code>uint32 OKGNCAILBNN = 708;</code>
+       * @return The oKGNCAILBNN.
+       */
+      @java.lang.Override
+      public int getOKGNCAILBNN() {
+        return oKGNCAILBNN_;
+      }
+      /**
+       * <code>uint32 OKGNCAILBNN = 708;</code>
+       * @param value The oKGNCAILBNN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOKGNCAILBNN(int value) {
+        
+        oKGNCAILBNN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OKGNCAILBNN = 708;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOKGNCAILBNN() {
+        
+        oKGNCAILBNN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPsnPlatform_ ;
+      /**
+       * <code>bool is_psn_platform = 1438;</code>
+       * @return The isPsnPlatform.
+       */
+      @java.lang.Override
+      public boolean getIsPsnPlatform() {
+        return isPsnPlatform_;
+      }
+      /**
+       * <code>bool is_psn_platform = 1438;</code>
+       * @param value The isPsnPlatform to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPsnPlatform(boolean value) {
+        
+        isPsnPlatform_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_psn_platform = 1438;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPsnPlatform() {
+        
+        isPsnPlatform_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cKPIFGHKINE_ ;
+      /**
+       * <code>bool CKPIFGHKINE = 1925;</code>
+       * @return The cKPIFGHKINE.
+       */
+      @java.lang.Override
+      public boolean getCKPIFGHKINE() {
+        return cKPIFGHKINE_;
+      }
+      /**
+       * <code>bool CKPIFGHKINE = 1925;</code>
+       * @param value The cKPIFGHKINE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCKPIFGHKINE(boolean value) {
+        
+        cKPIFGHKINE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool CKPIFGHKINE = 1925;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCKPIFGHKINE() {
+        
+        cKPIFGHKINE_ = false;
         onChanged();
         return this;
       }
@@ -2400,39 +2603,42 @@ public final class UgcDungeonBriefOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025UgcDungeonBrief.proto\032\031UgcDungeonRoomB" +
-      "rief.proto\032\027UgcDungeonSetting.proto\032\030Edi" +
-      "tUgcDungeonType.proto\"\317\003\n\017UgcDungeonBrie" +
-      "f\022\030\n\020creator_nickname\030\014 \001(\t\022\020\n\010tag_list\030" +
-      "\007 \003(\r\022-\n\017room_brief_list\030\002 \003(\0132\024.UgcDung" +
-      "eonRoomBrief\022\022\n\nshare_code\030\013 \001(\t\022+\n\017dung" +
-      "eon_setting\030\r \001(\0132\022.UgcDungeonSetting\022\023\n" +
-      "\013PLDIDFNNDJB\030\010 \001(\r\022\023\n\013AMIACAMPCNA\030\016 \001(\010\022" +
-      "\027\n\017is_psn_platform\030d \001(\010\022\024\n\013HCBLBBMIMEN\030" +
-      "\361\001 \001(\010\022\027\n\017is_allow_import\030\017 \001(\010\022(\n\013JHKBL" +
-      "LNMEDE\030\n \001(\0162\023.EditUgcDungeonType\022\023\n\013KAO" +
-      "KGJEFNAA\030\t \001(\r\022\032\n\022first_publish_time\030\001 \001" +
-      "(\r\022\022\n\ndungeon_id\030\006 \001(\r\022\024\n\014dungeon_guid\030\003" +
-      " \001(\004\022\024\n\013CDOHIBMGBKB\030\246\r \001(\r\022\023\n\013NKDOMFCMLE" +
-      "H\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\025UgcDungeonBrief.proto\032\021GPBCGOELJOF.pro" +
+      "to\032\031UgcDungeonRoomBrief.proto\032\027UgcDungeo" +
+      "nSetting.proto\032\031Unk3700_GLNOHEBLMJP.prot" +
+      "o\"\363\003\n\017UgcDungeonBrief\022+\n\017dungeon_setting" +
+      "\030\001 \001(\0132\022.UgcDungeonSetting\022!\n\013BMFGOIKDAC" +
+      "E\030\002 \001(\0132\014.GPBCGOELJOF\022\032\n\022first_publish_t" +
+      "ime\030\003 \001(\r\022\023\n\013JACKCPKFEPM\030\004 \001(\r\022\022\n\ndungeo" +
+      "n_id\030\005 \001(\r\022\023\n\013JPKPIEGEEKK\030\006 \001(\r\022\023\n\013OOPJJ" +
+      "HLFPBD\030\007 \001(\r\022(\n\nedit_state\030\010 \001(\0162\024.Unk37" +
+      "00_GLNOHEBLMJP\022-\n\017room_brief_list\030\t \003(\0132" +
+      "\024.UgcDungeonRoomBrief\022\022\n\nshare_code\030\n \001(" +
+      "\t\022\023\n\013DKNKINADCCC\030\013 \001(\010\022\027\n\017is_allow_impor" +
+      "t\030\014 \001(\010\022\024\n\014dungeon_guid\030\r \001(\004\022\020\n\010tag_lis" +
+      "t\030\016 \003(\r\022\030\n\020creator_nickname\030\017 \001(\t\022\024\n\013OKG" +
+      "NCAILBNN\030\304\005 \001(\r\022\030\n\017is_psn_platform\030\236\013 \001(" +
+      "\010\022\024\n\013CKPIFGHKINE\030\205\017 \001(\010B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.getDescriptor(),
         });
     internal_static_UgcDungeonBrief_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcDungeonBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcDungeonBrief_descriptor,
-        new java.lang.String[] { "CreatorNickname", "TagList", "RoomBriefList", "ShareCode", "DungeonSetting", "PLDIDFNNDJB", "AMIACAMPCNA", "IsPsnPlatform", "HCBLBBMIMEN", "IsAllowImport", "JHKBLLNMEDE", "KAOKGJEFNAA", "FirstPublishTime", "DungeonId", "DungeonGuid", "CDOHIBMGBKB", "NKDOMFCMLEH", });
+        new java.lang.String[] { "DungeonSetting", "BMFGOIKDACE", "FirstPublishTime", "JACKCPKFEPM", "DungeonId", "JPKPIEGEEKK", "OOPJJHLFPBD", "EditState", "RoomBriefList", "ShareCode", "DKNKINADCCC", "IsAllowImport", "DungeonGuid", "TagList", "CreatorNickname", "OKGNCAILBNN", "IsPsnPlatform", "CKPIFGHKINE", });
+    emu.grasscutter.net.proto.GPBCGOELJOFOuterClass.getDescriptor();
     emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.getDescriptor();
     emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.EditUgcDungeonTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.Unk3700GLNOHEBLMJP.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

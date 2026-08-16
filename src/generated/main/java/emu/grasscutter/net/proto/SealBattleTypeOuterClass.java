@@ -15,41 +15,37 @@ public final class SealBattleTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: EAMEAGLMOEM
-   * </pre>
-   *
    * Protobuf enum {@code SealBattleType}
    */
   public enum SealBattleType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SEAL_BATTLE_KEEP_ALIVE = 0;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE = 0;</code>
      */
-    SEAL_BATTLE_KEEP_ALIVE(0),
+    HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE(0),
     /**
-     * <code>SEAL_BATTLE_KILL_MONSTER = 1;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTER = 1;</code>
      */
-    SEAL_BATTLE_KILL_MONSTER(1),
+    HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTER(1),
     /**
-     * <code>SEAL_BATTLE_ENERGY_CHARGE = 2;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CHARGE = 2;</code>
      */
-    SEAL_BATTLE_ENERGY_CHARGE(2),
+    HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CHARGE(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SEAL_BATTLE_KEEP_ALIVE = 0;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE = 0;</code>
      */
-    public static final int SEAL_BATTLE_KEEP_ALIVE_VALUE = 0;
+    public static final int HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE_VALUE = 0;
     /**
-     * <code>SEAL_BATTLE_KILL_MONSTER = 1;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTER = 1;</code>
      */
-    public static final int SEAL_BATTLE_KILL_MONSTER_VALUE = 1;
+    public static final int HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTER_VALUE = 1;
     /**
-     * <code>SEAL_BATTLE_ENERGY_CHARGE = 2;</code>
+     * <code>HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CHARGE = 2;</code>
      */
-    public static final int SEAL_BATTLE_ENERGY_CHARGE_VALUE = 2;
+    public static final int HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CHARGE_VALUE = 2;
 
 
     public final int getNumber() {
@@ -76,9 +72,9 @@ public final class SealBattleTypeOuterClass {
      */
     public static SealBattleType forNumber(int value) {
       switch (value) {
-        case 0: return SEAL_BATTLE_KEEP_ALIVE;
-        case 1: return SEAL_BATTLE_KILL_MONSTER;
-        case 2: return SEAL_BATTLE_ENERGY_CHARGE;
+        case 0: return HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE;
+        case 1: return HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTER;
+        case 2: return HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CHARGE;
         default: return null;
       }
     }
@@ -144,11 +140,12 @@ public final class SealBattleTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024SealBattleType.proto*i\n\016SealBattleType" +
-      "\022\032\n\026SEAL_BATTLE_KEEP_ALIVE\020\000\022\034\n\030SEAL_BAT" +
-      "TLE_KILL_MONSTER\020\001\022\035\n\031SEAL_BATTLE_ENERGY" +
-      "_CHARGE\020\002B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\024SealBattleType.proto*\215\001\n\016SealBattleTyp" +
+      "e\022&\n\"HNBGHGFJHDP_SEAL_BATTLE_KEEP_ALIVE\020" +
+      "\000\022(\n$HNBGHGFJHDP_SEAL_BATTLE_KILL_MONSTE" +
+      "R\020\001\022)\n%HNBGHGFJHDP_SEAL_BATTLE_ENERGY_CH" +
+      "ARGE\020\002B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

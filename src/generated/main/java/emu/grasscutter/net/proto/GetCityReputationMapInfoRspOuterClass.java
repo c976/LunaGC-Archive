@@ -19,61 +19,56 @@ public final class GetCityReputationMapInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> 
+        getRewardInfoListList();
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA getRewardInfoList(int index);
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    int getRewardInfoListCount();
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder> 
+        getRewardInfoListOrBuilderList();
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder getRewardInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>bool BFPAKOLIKBE = 4;</code>
+     * @return The bFPAKOLIKBE.
+     */
+    boolean getBFPAKOLIKBE();
+
+    /**
+     * <code>bool MCAKMGEIGLL = 8;</code>
+     * @return The mCAKMGEIGLL.
+     */
+    boolean getMCAKMGEIGLL();
+
+    /**
+     * <code>bool EJAPDDLONDL = 12;</code>
+     * @return The eJAPDDLONDL.
+     */
+    boolean getEJAPDDLONDL();
+
+    /**
      * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>bool JJGPNHBKGHG = 9;</code>
-     * @return The jJGPNHBKGHG.
-     */
-    boolean getJJGPNHBKGHG();
-
-    /**
-     * <code>bool MOEFCHCBNGE = 8;</code>
-     * @return The mOEFCHCBNGE.
-     */
-    boolean getMOEFCHCBNGE();
-
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @return A list containing the bIDOKKBGJLG.
-     */
-    java.util.List<java.lang.Integer> getBIDOKKBGJLGList();
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @return The count of bIDOKKBGJLG.
-     */
-    int getBIDOKKBGJLGCount();
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @param index The index of the element to return.
-     * @return The bIDOKKBGJLG at the given index.
-     */
-    int getBIDOKKBGJLG(int index);
-
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @return A list containing the bOMGJJFKDOC.
-     */
-    java.util.List<java.lang.Integer> getBOMGJJFKDOCList();
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @return The count of bOMGJJFKDOC.
-     */
-    int getBOMGJJFKDOCCount();
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @param index The index of the element to return.
-     * @return The bOMGJJFKDOC at the given index.
-     */
-    int getBOMGJJFKDOC(int index);
   }
   /**
    * <pre>
-   * CmdId: 24830
-   * Obf: NFLPNFKGHED
+   * CmdId: 23812
    * </pre>
    *
    * Protobuf type {@code GetCityReputationMapInfoRsp}
@@ -88,8 +83,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
       super(builder);
     }
     private GetCityReputationMapInfoRsp() {
-      bIDOKKBGJLG_ = emptyIntList();
-      bOMGJJFKDOC_ = emptyIntList();
+      rewardInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -123,56 +117,28 @@ public final class GetCityReputationMapInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                bIDOKKBGJLG_ = newIntList();
+                rewardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              bIDOKKBGJLG_.addInt(input.readUInt32());
+              rewardInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.parser(), extensionRegistry));
               break;
             }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                bIDOKKBGJLG_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                bIDOKKBGJLG_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                bOMGJJFKDOC_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              bOMGJJFKDOC_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                bOMGJJFKDOC_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                bOMGJJFKDOC_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 32: {
+
+              bFPAKOLIKBE_ = input.readBool();
               break;
             }
             case 64: {
 
-              mOEFCHCBNGE_ = input.readBool();
+              mCAKMGEIGLL_ = input.readBool();
               break;
             }
-            case 72: {
+            case 96: {
 
-              jJGPNHBKGHG_ = input.readBool();
+              eJAPDDLONDL_ = input.readBool();
               break;
             }
             case 112: {
@@ -196,10 +162,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          bIDOKKBGJLG_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          bOMGJJFKDOC_.makeImmutable(); // C
+          rewardInfoList_ = java.util.Collections.unmodifiableList(rewardInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -218,6 +181,79 @@ public final class GetCityReputationMapInfoRspOuterClass {
               emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp.class, emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp.Builder.class);
     }
 
+    public static final int REWARD_INFO_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> rewardInfoList_;
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> getRewardInfoListList() {
+      return rewardInfoList_;
+    }
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder> 
+        getRewardInfoListOrBuilderList() {
+      return rewardInfoList_;
+    }
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public int getRewardInfoListCount() {
+      return rewardInfoList_.size();
+    }
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA getRewardInfoList(int index) {
+      return rewardInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder getRewardInfoListOrBuilder(
+        int index) {
+      return rewardInfoList_.get(index);
+    }
+
+    public static final int BFPAKOLIKBE_FIELD_NUMBER = 4;
+    private boolean bFPAKOLIKBE_;
+    /**
+     * <code>bool BFPAKOLIKBE = 4;</code>
+     * @return The bFPAKOLIKBE.
+     */
+    @java.lang.Override
+    public boolean getBFPAKOLIKBE() {
+      return bFPAKOLIKBE_;
+    }
+
+    public static final int MCAKMGEIGLL_FIELD_NUMBER = 8;
+    private boolean mCAKMGEIGLL_;
+    /**
+     * <code>bool MCAKMGEIGLL = 8;</code>
+     * @return The mCAKMGEIGLL.
+     */
+    @java.lang.Override
+    public boolean getMCAKMGEIGLL() {
+      return mCAKMGEIGLL_;
+    }
+
+    public static final int EJAPDDLONDL_FIELD_NUMBER = 12;
+    private boolean eJAPDDLONDL_;
+    /**
+     * <code>bool EJAPDDLONDL = 12;</code>
+     * @return The eJAPDDLONDL.
+     */
+    @java.lang.Override
+    public boolean getEJAPDDLONDL() {
+      return eJAPDDLONDL_;
+    }
+
     public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
@@ -228,84 +264,6 @@ public final class GetCityReputationMapInfoRspOuterClass {
     public int getRetcode() {
       return retcode_;
     }
-
-    public static final int JJGPNHBKGHG_FIELD_NUMBER = 9;
-    private boolean jJGPNHBKGHG_;
-    /**
-     * <code>bool JJGPNHBKGHG = 9;</code>
-     * @return The jJGPNHBKGHG.
-     */
-    @java.lang.Override
-    public boolean getJJGPNHBKGHG() {
-      return jJGPNHBKGHG_;
-    }
-
-    public static final int MOEFCHCBNGE_FIELD_NUMBER = 8;
-    private boolean mOEFCHCBNGE_;
-    /**
-     * <code>bool MOEFCHCBNGE = 8;</code>
-     * @return The mOEFCHCBNGE.
-     */
-    @java.lang.Override
-    public boolean getMOEFCHCBNGE() {
-      return mOEFCHCBNGE_;
-    }
-
-    public static final int BIDOKKBGJLG_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList bIDOKKBGJLG_;
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @return A list containing the bIDOKKBGJLG.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBIDOKKBGJLGList() {
-      return bIDOKKBGJLG_;
-    }
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @return The count of bIDOKKBGJLG.
-     */
-    public int getBIDOKKBGJLGCount() {
-      return bIDOKKBGJLG_.size();
-    }
-    /**
-     * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-     * @param index The index of the element to return.
-     * @return The bIDOKKBGJLG at the given index.
-     */
-    public int getBIDOKKBGJLG(int index) {
-      return bIDOKKBGJLG_.getInt(index);
-    }
-    private int bIDOKKBGJLGMemoizedSerializedSize = -1;
-
-    public static final int BOMGJJFKDOC_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.IntList bOMGJJFKDOC_;
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @return A list containing the bOMGJJFKDOC.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBOMGJJFKDOCList() {
-      return bOMGJJFKDOC_;
-    }
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @return The count of bOMGJJFKDOC.
-     */
-    public int getBOMGJJFKDOCCount() {
-      return bOMGJJFKDOC_.size();
-    }
-    /**
-     * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-     * @param index The index of the element to return.
-     * @return The bOMGJJFKDOC at the given index.
-     */
-    public int getBOMGJJFKDOC(int index) {
-      return bOMGJJFKDOC_.getInt(index);
-    }
-    private int bOMGJJFKDOCMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -321,26 +279,17 @@ public final class GetCityReputationMapInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      if (getBIDOKKBGJLGList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(bIDOKKBGJLGMemoizedSerializedSize);
+      for (int i = 0; i < rewardInfoList_.size(); i++) {
+        output.writeMessage(1, rewardInfoList_.get(i));
       }
-      for (int i = 0; i < bIDOKKBGJLG_.size(); i++) {
-        output.writeUInt32NoTag(bIDOKKBGJLG_.getInt(i));
+      if (bFPAKOLIKBE_ != false) {
+        output.writeBool(4, bFPAKOLIKBE_);
       }
-      if (getBOMGJJFKDOCList().size() > 0) {
-        output.writeUInt32NoTag(42);
-        output.writeUInt32NoTag(bOMGJJFKDOCMemoizedSerializedSize);
+      if (mCAKMGEIGLL_ != false) {
+        output.writeBool(8, mCAKMGEIGLL_);
       }
-      for (int i = 0; i < bOMGJJFKDOC_.size(); i++) {
-        output.writeUInt32NoTag(bOMGJJFKDOC_.getInt(i));
-      }
-      if (mOEFCHCBNGE_ != false) {
-        output.writeBool(8, mOEFCHCBNGE_);
-      }
-      if (jJGPNHBKGHG_ != false) {
-        output.writeBool(9, jJGPNHBKGHG_);
+      if (eJAPDDLONDL_ != false) {
+        output.writeBool(12, eJAPDDLONDL_);
       }
       if (retcode_ != 0) {
         output.writeInt32(14, retcode_);
@@ -354,41 +303,21 @@ public final class GetCityReputationMapInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < bIDOKKBGJLG_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bIDOKKBGJLG_.getInt(i));
-        }
-        size += dataSize;
-        if (!getBIDOKKBGJLGList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        bIDOKKBGJLGMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < bOMGJJFKDOC_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bOMGJJFKDOC_.getInt(i));
-        }
-        size += dataSize;
-        if (!getBOMGJJFKDOCList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        bOMGJJFKDOCMemoizedSerializedSize = dataSize;
-      }
-      if (mOEFCHCBNGE_ != false) {
+      for (int i = 0; i < rewardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, mOEFCHCBNGE_);
+          .computeMessageSize(1, rewardInfoList_.get(i));
       }
-      if (jJGPNHBKGHG_ != false) {
+      if (bFPAKOLIKBE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, jJGPNHBKGHG_);
+          .computeBoolSize(4, bFPAKOLIKBE_);
+      }
+      if (mCAKMGEIGLL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, mCAKMGEIGLL_);
+      }
+      if (eJAPDDLONDL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, eJAPDDLONDL_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -409,16 +338,16 @@ public final class GetCityReputationMapInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp other = (emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp) obj;
 
+      if (!getRewardInfoListList()
+          .equals(other.getRewardInfoListList())) return false;
+      if (getBFPAKOLIKBE()
+          != other.getBFPAKOLIKBE()) return false;
+      if (getMCAKMGEIGLL()
+          != other.getMCAKMGEIGLL()) return false;
+      if (getEJAPDDLONDL()
+          != other.getEJAPDDLONDL()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getJJGPNHBKGHG()
-          != other.getJJGPNHBKGHG()) return false;
-      if (getMOEFCHCBNGE()
-          != other.getMOEFCHCBNGE()) return false;
-      if (!getBIDOKKBGJLGList()
-          .equals(other.getBIDOKKBGJLGList())) return false;
-      if (!getBOMGJJFKDOCList()
-          .equals(other.getBOMGJJFKDOCList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -430,22 +359,21 @@ public final class GetCityReputationMapInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getRewardInfoListCount() > 0) {
+        hash = (37 * hash) + REWARD_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getRewardInfoListList().hashCode();
+      }
+      hash = (37 * hash) + BFPAKOLIKBE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getBFPAKOLIKBE());
+      hash = (37 * hash) + MCAKMGEIGLL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMCAKMGEIGLL());
+      hash = (37 * hash) + EJAPDDLONDL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEJAPDDLONDL());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + JJGPNHBKGHG_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJJGPNHBKGHG());
-      hash = (37 * hash) + MOEFCHCBNGE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMOEFCHCBNGE());
-      if (getBIDOKKBGJLGCount() > 0) {
-        hash = (37 * hash) + BIDOKKBGJLG_FIELD_NUMBER;
-        hash = (53 * hash) + getBIDOKKBGJLGList().hashCode();
-      }
-      if (getBOMGJJFKDOCCount() > 0) {
-        hash = (37 * hash) + BOMGJJFKDOC_FIELD_NUMBER;
-        hash = (53 * hash) + getBOMGJJFKDOCList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -543,8 +471,7 @@ public final class GetCityReputationMapInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24830
-     * Obf: NFLPNFKGHED
+     * CmdId: 23812
      * </pre>
      *
      * Protobuf type {@code GetCityReputationMapInfoRsp}
@@ -579,21 +506,26 @@ public final class GetCityReputationMapInfoRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getRewardInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (rewardInfoListBuilder_ == null) {
+          rewardInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          rewardInfoListBuilder_.clear();
+        }
+        bFPAKOLIKBE_ = false;
+
+        mCAKMGEIGLL_ = false;
+
+        eJAPDDLONDL_ = false;
+
         retcode_ = 0;
 
-        jJGPNHBKGHG_ = false;
-
-        mOEFCHCBNGE_ = false;
-
-        bIDOKKBGJLG_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        bOMGJJFKDOC_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -621,19 +553,19 @@ public final class GetCityReputationMapInfoRspOuterClass {
       public emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp result = new emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp(this);
         int from_bitField0_ = bitField0_;
+        if (rewardInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            rewardInfoList_ = java.util.Collections.unmodifiableList(rewardInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.rewardInfoList_ = rewardInfoList_;
+        } else {
+          result.rewardInfoList_ = rewardInfoListBuilder_.build();
+        }
+        result.bFPAKOLIKBE_ = bFPAKOLIKBE_;
+        result.mCAKMGEIGLL_ = mCAKMGEIGLL_;
+        result.eJAPDDLONDL_ = eJAPDDLONDL_;
         result.retcode_ = retcode_;
-        result.jJGPNHBKGHG_ = jJGPNHBKGHG_;
-        result.mOEFCHCBNGE_ = mOEFCHCBNGE_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          bIDOKKBGJLG_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.bIDOKKBGJLG_ = bIDOKKBGJLG_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          bOMGJJFKDOC_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.bOMGJJFKDOC_ = bOMGJJFKDOC_;
         onBuilt();
         return result;
       }
@@ -682,34 +614,43 @@ public final class GetCityReputationMapInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetCityReputationMapInfoRspOuterClass.GetCityReputationMapInfoRsp.getDefaultInstance()) return this;
+        if (rewardInfoListBuilder_ == null) {
+          if (!other.rewardInfoList_.isEmpty()) {
+            if (rewardInfoList_.isEmpty()) {
+              rewardInfoList_ = other.rewardInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureRewardInfoListIsMutable();
+              rewardInfoList_.addAll(other.rewardInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.rewardInfoList_.isEmpty()) {
+            if (rewardInfoListBuilder_.isEmpty()) {
+              rewardInfoListBuilder_.dispose();
+              rewardInfoListBuilder_ = null;
+              rewardInfoList_ = other.rewardInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              rewardInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getRewardInfoListFieldBuilder() : null;
+            } else {
+              rewardInfoListBuilder_.addAllMessages(other.rewardInfoList_);
+            }
+          }
+        }
+        if (other.getBFPAKOLIKBE() != false) {
+          setBFPAKOLIKBE(other.getBFPAKOLIKBE());
+        }
+        if (other.getMCAKMGEIGLL() != false) {
+          setMCAKMGEIGLL(other.getMCAKMGEIGLL());
+        }
+        if (other.getEJAPDDLONDL() != false) {
+          setEJAPDDLONDL(other.getEJAPDDLONDL());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getJJGPNHBKGHG() != false) {
-          setJJGPNHBKGHG(other.getJJGPNHBKGHG());
-        }
-        if (other.getMOEFCHCBNGE() != false) {
-          setMOEFCHCBNGE(other.getMOEFCHCBNGE());
-        }
-        if (!other.bIDOKKBGJLG_.isEmpty()) {
-          if (bIDOKKBGJLG_.isEmpty()) {
-            bIDOKKBGJLG_ = other.bIDOKKBGJLG_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureBIDOKKBGJLGIsMutable();
-            bIDOKKBGJLG_.addAll(other.bIDOKKBGJLG_);
-          }
-          onChanged();
-        }
-        if (!other.bOMGJJFKDOC_.isEmpty()) {
-          if (bOMGJJFKDOC_.isEmpty()) {
-            bOMGJJFKDOC_ = other.bOMGJJFKDOC_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureBOMGJJFKDOCIsMutable();
-            bOMGJJFKDOC_.addAll(other.bOMGJJFKDOC_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -741,6 +682,339 @@ public final class GetCityReputationMapInfoRspOuterClass {
       }
       private int bitField0_;
 
+      private java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> rewardInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureRewardInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          rewardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA>(rewardInfoList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder> rewardInfoListBuilder_;
+
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> getRewardInfoListList() {
+        if (rewardInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(rewardInfoList_);
+        } else {
+          return rewardInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public int getRewardInfoListCount() {
+        if (rewardInfoListBuilder_ == null) {
+          return rewardInfoList_.size();
+        } else {
+          return rewardInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA getRewardInfoList(int index) {
+        if (rewardInfoListBuilder_ == null) {
+          return rewardInfoList_.get(index);
+        } else {
+          return rewardInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder setRewardInfoList(
+          int index, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA value) {
+        if (rewardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.set(index, value);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder setRewardInfoList(
+          int index, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder builderForValue) {
+        if (rewardInfoListBuilder_ == null) {
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder addRewardInfoList(emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA value) {
+        if (rewardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.add(value);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder addRewardInfoList(
+          int index, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA value) {
+        if (rewardInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.add(index, value);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder addRewardInfoList(
+          emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder builderForValue) {
+        if (rewardInfoListBuilder_ == null) {
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder addRewardInfoList(
+          int index, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder builderForValue) {
+        if (rewardInfoListBuilder_ == null) {
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder addAllRewardInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA> values) {
+        if (rewardInfoListBuilder_ == null) {
+          ensureRewardInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, rewardInfoList_);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder clearRewardInfoList() {
+        if (rewardInfoListBuilder_ == null) {
+          rewardInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public Builder removeRewardInfoList(int index) {
+        if (rewardInfoListBuilder_ == null) {
+          ensureRewardInfoListIsMutable();
+          rewardInfoList_.remove(index);
+          onChanged();
+        } else {
+          rewardInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder getRewardInfoListBuilder(
+          int index) {
+        return getRewardInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder getRewardInfoListOrBuilder(
+          int index) {
+        if (rewardInfoListBuilder_ == null) {
+          return rewardInfoList_.get(index);  } else {
+          return rewardInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder> 
+           getRewardInfoListOrBuilderList() {
+        if (rewardInfoListBuilder_ != null) {
+          return rewardInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(rewardInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder addRewardInfoListBuilder() {
+        return getRewardInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder addRewardInfoListBuilder(
+          int index) {
+        return getRewardInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FBBLOICHLGA reward_info_list = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder> 
+           getRewardInfoListBuilderList() {
+        return getRewardInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder> 
+          getRewardInfoListFieldBuilder() {
+        if (rewardInfoListBuilder_ == null) {
+          rewardInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGA.Builder, emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.FBBLOICHLGAOrBuilder>(
+                  rewardInfoList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          rewardInfoList_ = null;
+        }
+        return rewardInfoListBuilder_;
+      }
+
+      private boolean bFPAKOLIKBE_ ;
+      /**
+       * <code>bool BFPAKOLIKBE = 4;</code>
+       * @return The bFPAKOLIKBE.
+       */
+      @java.lang.Override
+      public boolean getBFPAKOLIKBE() {
+        return bFPAKOLIKBE_;
+      }
+      /**
+       * <code>bool BFPAKOLIKBE = 4;</code>
+       * @param value The bFPAKOLIKBE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBFPAKOLIKBE(boolean value) {
+        
+        bFPAKOLIKBE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool BFPAKOLIKBE = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBFPAKOLIKBE() {
+        
+        bFPAKOLIKBE_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean mCAKMGEIGLL_ ;
+      /**
+       * <code>bool MCAKMGEIGLL = 8;</code>
+       * @return The mCAKMGEIGLL.
+       */
+      @java.lang.Override
+      public boolean getMCAKMGEIGLL() {
+        return mCAKMGEIGLL_;
+      }
+      /**
+       * <code>bool MCAKMGEIGLL = 8;</code>
+       * @param value The mCAKMGEIGLL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMCAKMGEIGLL(boolean value) {
+        
+        mCAKMGEIGLL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool MCAKMGEIGLL = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMCAKMGEIGLL() {
+        
+        mCAKMGEIGLL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean eJAPDDLONDL_ ;
+      /**
+       * <code>bool EJAPDDLONDL = 12;</code>
+       * @return The eJAPDDLONDL.
+       */
+      @java.lang.Override
+      public boolean getEJAPDDLONDL() {
+        return eJAPDDLONDL_;
+      }
+      /**
+       * <code>bool EJAPDDLONDL = 12;</code>
+       * @param value The eJAPDDLONDL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEJAPDDLONDL(boolean value) {
+        
+        eJAPDDLONDL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool EJAPDDLONDL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEJAPDDLONDL() {
+        
+        eJAPDDLONDL_ = false;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
        * <code>int32 retcode = 14;</code>
@@ -768,226 +1042,6 @@ public final class GetCityReputationMapInfoRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean jJGPNHBKGHG_ ;
-      /**
-       * <code>bool JJGPNHBKGHG = 9;</code>
-       * @return The jJGPNHBKGHG.
-       */
-      @java.lang.Override
-      public boolean getJJGPNHBKGHG() {
-        return jJGPNHBKGHG_;
-      }
-      /**
-       * <code>bool JJGPNHBKGHG = 9;</code>
-       * @param value The jJGPNHBKGHG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJJGPNHBKGHG(boolean value) {
-        
-        jJGPNHBKGHG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool JJGPNHBKGHG = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJJGPNHBKGHG() {
-        
-        jJGPNHBKGHG_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean mOEFCHCBNGE_ ;
-      /**
-       * <code>bool MOEFCHCBNGE = 8;</code>
-       * @return The mOEFCHCBNGE.
-       */
-      @java.lang.Override
-      public boolean getMOEFCHCBNGE() {
-        return mOEFCHCBNGE_;
-      }
-      /**
-       * <code>bool MOEFCHCBNGE = 8;</code>
-       * @param value The mOEFCHCBNGE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMOEFCHCBNGE(boolean value) {
-        
-        mOEFCHCBNGE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool MOEFCHCBNGE = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMOEFCHCBNGE() {
-        
-        mOEFCHCBNGE_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList bIDOKKBGJLG_ = emptyIntList();
-      private void ensureBIDOKKBGJLGIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          bIDOKKBGJLG_ = mutableCopy(bIDOKKBGJLG_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @return A list containing the bIDOKKBGJLG.
-       */
-      public java.util.List<java.lang.Integer>
-          getBIDOKKBGJLGList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(bIDOKKBGJLG_) : bIDOKKBGJLG_;
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @return The count of bIDOKKBGJLG.
-       */
-      public int getBIDOKKBGJLGCount() {
-        return bIDOKKBGJLG_.size();
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @param index The index of the element to return.
-       * @return The bIDOKKBGJLG at the given index.
-       */
-      public int getBIDOKKBGJLG(int index) {
-        return bIDOKKBGJLG_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The bIDOKKBGJLG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBIDOKKBGJLG(
-          int index, int value) {
-        ensureBIDOKKBGJLGIsMutable();
-        bIDOKKBGJLG_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @param value The bIDOKKBGJLG to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBIDOKKBGJLG(int value) {
-        ensureBIDOKKBGJLGIsMutable();
-        bIDOKKBGJLG_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @param values The bIDOKKBGJLG to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBIDOKKBGJLG(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBIDOKKBGJLGIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bIDOKKBGJLG_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BIDOKKBGJLG = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBIDOKKBGJLG() {
-        bIDOKKBGJLG_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList bOMGJJFKDOC_ = emptyIntList();
-      private void ensureBOMGJJFKDOCIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          bOMGJJFKDOC_ = mutableCopy(bOMGJJFKDOC_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @return A list containing the bOMGJJFKDOC.
-       */
-      public java.util.List<java.lang.Integer>
-          getBOMGJJFKDOCList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(bOMGJJFKDOC_) : bOMGJJFKDOC_;
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @return The count of bOMGJJFKDOC.
-       */
-      public int getBOMGJJFKDOCCount() {
-        return bOMGJJFKDOC_.size();
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @param index The index of the element to return.
-       * @return The bOMGJJFKDOC at the given index.
-       */
-      public int getBOMGJJFKDOC(int index) {
-        return bOMGJJFKDOC_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The bOMGJJFKDOC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBOMGJJFKDOC(
-          int index, int value) {
-        ensureBOMGJJFKDOCIsMutable();
-        bOMGJJFKDOC_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @param value The bOMGJJFKDOC to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBOMGJJFKDOC(int value) {
-        ensureBOMGJJFKDOCIsMutable();
-        bOMGJJFKDOC_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @param values The bOMGJJFKDOC to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBOMGJJFKDOC(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBOMGJJFKDOCIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bOMGJJFKDOC_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BOMGJJFKDOC = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBOMGJJFKDOC() {
-        bOMGJJFKDOC_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -1058,23 +1112,26 @@ public final class GetCityReputationMapInfoRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!GetCityReputationMapInfoRsp.proto\"\202\001\n\033" +
-      "GetCityReputationMapInfoRsp\022\017\n\007retcode\030\016" +
-      " \001(\005\022\023\n\013JJGPNHBKGHG\030\t \001(\010\022\023\n\013MOEFCHCBNGE" +
-      "\030\010 \001(\010\022\023\n\013BIDOKKBGJLG\030\003 \003(\r\022\023\n\013BOMGJJFKD" +
-      "OC\030\005 \003(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n!GetCityReputationMapInfoRsp.proto\032\021FBB" +
+      "LOICHLGA.proto\"\225\001\n\033GetCityReputationMapI" +
+      "nfoRsp\022&\n\020reward_info_list\030\001 \003(\0132\014.FBBLO" +
+      "ICHLGA\022\023\n\013BFPAKOLIKBE\030\004 \001(\010\022\023\n\013MCAKMGEIG" +
+      "LL\030\010 \001(\010\022\023\n\013EJAPDDLONDL\030\014 \001(\010\022\017\n\007retcode" +
+      "\030\016 \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.getDescriptor(),
         });
     internal_static_GetCityReputationMapInfoRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GetCityReputationMapInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetCityReputationMapInfoRsp_descriptor,
-        new java.lang.String[] { "Retcode", "JJGPNHBKGHG", "MOEFCHCBNGE", "BIDOKKBGJLG", "BOMGJJFKDOC", });
+        new java.lang.String[] { "RewardInfoList", "BFPAKOLIKBE", "MCAKMGEIGLL", "EJAPDDLONDL", "Retcode", });
+    emu.grasscutter.net.proto.FBBLOICHLGAOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

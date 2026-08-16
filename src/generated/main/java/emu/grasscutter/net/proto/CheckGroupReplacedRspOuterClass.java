@@ -19,32 +19,31 @@ public final class CheckGroupReplacedRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return A list containing the replacedGroupIdList.
      */
     java.util.List<java.lang.Integer> getReplacedGroupIdListList();
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return The count of replacedGroupIdList.
      */
     int getReplacedGroupIdListCount();
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The replacedGroupIdList at the given index.
      */
     int getReplacedGroupIdList(int index);
-
-    /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5854
-   * Obf: CNFADLCLOBL
+   * CmdId: 28296
    * </pre>
    *
    * Protobuf type {@code CheckGroupReplacedRsp}
@@ -93,12 +92,12 @@ public final class CheckGroupReplacedRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 replacedGroupIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +105,7 @@ public final class CheckGroupReplacedRspOuterClass {
               replacedGroupIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,10 +153,21 @@ public final class CheckGroupReplacedRspOuterClass {
               emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp.class, emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp.Builder.class);
     }
 
-    public static final int REPLACED_GROUP_ID_LIST_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int REPLACED_GROUP_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList replacedGroupIdList_;
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return A list containing the replacedGroupIdList.
      */
     @java.lang.Override
@@ -166,14 +176,14 @@ public final class CheckGroupReplacedRspOuterClass {
       return replacedGroupIdList_;
     }
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @return The count of replacedGroupIdList.
      */
     public int getReplacedGroupIdListCount() {
       return replacedGroupIdList_.size();
     }
     /**
-     * <code>repeated uint32 replaced_group_id_list = 13;</code>
+     * <code>repeated uint32 replaced_group_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The replacedGroupIdList at the given index.
      */
@@ -181,17 +191,6 @@ public final class CheckGroupReplacedRspOuterClass {
       return replacedGroupIdList_.getInt(index);
     }
     private int replacedGroupIdListMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 11;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -209,10 +208,10 @@ public final class CheckGroupReplacedRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (getReplacedGroupIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(replacedGroupIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < replacedGroupIdList_.size(); i++) {
@@ -229,7 +228,7 @@ public final class CheckGroupReplacedRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       {
         int dataSize = 0;
@@ -260,10 +259,10 @@ public final class CheckGroupReplacedRspOuterClass {
       }
       emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp other = (emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp) obj;
 
-      if (!getReplacedGroupIdListList()
-          .equals(other.getReplacedGroupIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getReplacedGroupIdListList()
+          .equals(other.getReplacedGroupIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +274,12 @@ public final class CheckGroupReplacedRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getReplacedGroupIdListCount() > 0) {
         hash = (37 * hash) + REPLACED_GROUP_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getReplacedGroupIdListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +377,7 @@ public final class CheckGroupReplacedRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5854
-     * Obf: CNFADLCLOBL
+     * CmdId: 28296
      * </pre>
      *
      * Protobuf type {@code CheckGroupReplacedRsp}
@@ -419,10 +417,10 @@ public final class CheckGroupReplacedRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        replacedGroupIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
+        replacedGroupIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -450,12 +448,12 @@ public final class CheckGroupReplacedRspOuterClass {
       public emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp buildPartial() {
         emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp result = new emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           replacedGroupIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.replacedGroupIdList_ = replacedGroupIdList_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -504,6 +502,9 @@ public final class CheckGroupReplacedRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp other) {
         if (other == emu.grasscutter.net.proto.CheckGroupReplacedRspOuterClass.CheckGroupReplacedRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (!other.replacedGroupIdList_.isEmpty()) {
           if (replacedGroupIdList_.isEmpty()) {
             replacedGroupIdList_ = other.replacedGroupIdList_;
@@ -513,9 +514,6 @@ public final class CheckGroupReplacedRspOuterClass {
             replacedGroupIdList_.addAll(other.replacedGroupIdList_);
           }
           onChanged();
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,6 +545,37 @@ public final class CheckGroupReplacedRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList replacedGroupIdList_ = emptyIntList();
       private void ensureReplacedGroupIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -555,7 +584,7 @@ public final class CheckGroupReplacedRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return A list containing the replacedGroupIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +593,14 @@ public final class CheckGroupReplacedRspOuterClass {
                  java.util.Collections.unmodifiableList(replacedGroupIdList_) : replacedGroupIdList_;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return The count of replacedGroupIdList.
        */
       public int getReplacedGroupIdListCount() {
         return replacedGroupIdList_.size();
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The replacedGroupIdList at the given index.
        */
@@ -579,7 +608,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return replacedGroupIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The replacedGroupIdList to set.
        * @return This builder for chaining.
@@ -592,7 +621,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param value The replacedGroupIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +632,7 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @param values The replacedGroupIdList to add.
        * @return This builder for chaining.
        */
@@ -616,43 +645,12 @@ public final class CheckGroupReplacedRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 replaced_group_id_list = 13;</code>
+       * <code>repeated uint32 replaced_group_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReplacedGroupIdList() {
         replacedGroupIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -724,8 +722,8 @@ public final class CheckGroupReplacedRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033CheckGroupReplacedRsp.proto\"H\n\025CheckGr" +
-      "oupReplacedRsp\022\036\n\026replaced_group_id_list" +
-      "\030\r \003(\r\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutt" +
+      "oupReplacedRsp\022\017\n\007retcode\030\010 \001(\005\022\036\n\026repla" +
+      "ced_group_id_list\030\n \003(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +735,7 @@ public final class CheckGroupReplacedRspOuterClass {
     internal_static_CheckGroupReplacedRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CheckGroupReplacedRsp_descriptor,
-        new java.lang.String[] { "ReplacedGroupIdList", "Retcode", });
+        new java.lang.String[] { "Retcode", "ReplacedGroupIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

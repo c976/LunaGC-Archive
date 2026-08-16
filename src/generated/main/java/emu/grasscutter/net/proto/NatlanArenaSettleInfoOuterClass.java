@@ -19,64 +19,64 @@ public final class NatlanArenaSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NLLOENAFJFG = 5;</code>
-     * @return The nLLOENAFJFG.
+     * <code>uint32 POEJCHFENFO = 2;</code>
+     * @return The pOEJCHFENFO.
      */
-    int getNLLOENAFJFG();
+    int getPOEJCHFENFO();
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 EFODFLLCJBD = 3;</code>
+     * @return The eFODFLLCJBD.
+     */
+    int getEFODFLLCJBD();
+
+    /**
+     * <code>bool OMOPCPDDNIP = 4;</code>
+     * @return The oMOPCPDDNIP.
+     */
+    boolean getOMOPCPDDNIP();
+
+    /**
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>bool DKKACJDMBIA = 14;</code>
-     * @return The dKKACJDMBIA.
-     */
-    boolean getDKKACJDMBIA();
-
-    /**
-     * <code>bool KFJLKIEGFBA = 15;</code>
-     * @return The kFJLKIEGFBA.
-     */
-    boolean getKFJLKIEGFBA();
-
-    /**
-     * <code>uint32 IBMLKKCFODE = 7;</code>
-     * @return The iBMLKKCFODE.
-     */
-    int getIBMLKKCFODE();
-
-    /**
-     * <code>uint32 difficulty = 12;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>uint32 BMOHBAAACFD = 9;</code>
-     * @return The bMOHBAAACFD.
-     */
-    int getBMOHBAAACFD();
-
-    /**
-     * <code>uint32 cost_time = 1;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>uint32 IOOCDEIKCBI = 10;</code>
-     * @return The iOOCDEIKCBI.
+     * <code>uint32 MKJCMBDPBAF = 8;</code>
+     * @return The mKJCMBDPBAF.
      */
-    int getIOOCDEIKCBI();
+    int getMKJCMBDPBAF();
+
+    /**
+     * <code>uint32 KIHIJFAGJFJ = 9;</code>
+     * @return The kIHIJFAGJFJ.
+     */
+    int getKIHIJFAGJFJ();
+
+    /**
+     * <code>uint32 difficulty = 10;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
+
+    /**
+     * <code>bool GEHAFGHMJBJ = 13;</code>
+     * @return The gEHAFGHMJBJ.
+     */
+    boolean getGEHAFGHMJBJ();
+
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code NatlanArenaSettleInfo}
@@ -123,54 +123,54 @@ public final class NatlanArenaSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              costTime_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
-              isNewRecord_ = input.readBool();
+              pOEJCHFENFO_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              eFODFLLCJBD_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              oMOPCPDDNIP_ = input.readBool();
               break;
             }
             case 40: {
 
-              nLLOENAFJFG_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 48: {
 
-              iBMLKKCFODE_ = input.readUInt32();
+              costTime_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              levelId_ = input.readUInt32();
+              mKJCMBDPBAF_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              bMOHBAAACFD_ = input.readUInt32();
+              kIHIJFAGJFJ_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              iOOCDEIKCBI_ = input.readUInt32();
+              difficulty_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
-              difficulty_ = input.readUInt32();
+              gEHAFGHMJBJ_ = input.readBool();
               break;
             }
             case 112: {
 
-              dKKACJDMBIA_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              kFJLKIEGFBA_ = input.readBool();
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -205,21 +205,43 @@ public final class NatlanArenaSettleInfoOuterClass {
               emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.class, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder.class);
     }
 
-    public static final int NLLOENAFJFG_FIELD_NUMBER = 5;
-    private int nLLOENAFJFG_;
+    public static final int POEJCHFENFO_FIELD_NUMBER = 2;
+    private int pOEJCHFENFO_;
     /**
-     * <code>uint32 NLLOENAFJFG = 5;</code>
-     * @return The nLLOENAFJFG.
+     * <code>uint32 POEJCHFENFO = 2;</code>
+     * @return The pOEJCHFENFO.
      */
     @java.lang.Override
-    public int getNLLOENAFJFG() {
-      return nLLOENAFJFG_;
+    public int getPOEJCHFENFO() {
+      return pOEJCHFENFO_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int EFODFLLCJBD_FIELD_NUMBER = 3;
+    private int eFODFLLCJBD_;
+    /**
+     * <code>uint32 EFODFLLCJBD = 3;</code>
+     * @return The eFODFLLCJBD.
+     */
+    @java.lang.Override
+    public int getEFODFLLCJBD() {
+      return eFODFLLCJBD_;
+    }
+
+    public static final int OMOPCPDDNIP_FIELD_NUMBER = 4;
+    private boolean oMOPCPDDNIP_;
+    /**
+     * <code>bool OMOPCPDDNIP = 4;</code>
+     * @return The oMOPCPDDNIP.
+     */
+    @java.lang.Override
+    public boolean getOMOPCPDDNIP() {
+      return oMOPCPDDNIP_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -227,76 +249,10 @@ public final class NatlanArenaSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int DKKACJDMBIA_FIELD_NUMBER = 14;
-    private boolean dKKACJDMBIA_;
-    /**
-     * <code>bool DKKACJDMBIA = 14;</code>
-     * @return The dKKACJDMBIA.
-     */
-    @java.lang.Override
-    public boolean getDKKACJDMBIA() {
-      return dKKACJDMBIA_;
-    }
-
-    public static final int KFJLKIEGFBA_FIELD_NUMBER = 15;
-    private boolean kFJLKIEGFBA_;
-    /**
-     * <code>bool KFJLKIEGFBA = 15;</code>
-     * @return The kFJLKIEGFBA.
-     */
-    @java.lang.Override
-    public boolean getKFJLKIEGFBA() {
-      return kFJLKIEGFBA_;
-    }
-
-    public static final int IBMLKKCFODE_FIELD_NUMBER = 7;
-    private int iBMLKKCFODE_;
-    /**
-     * <code>uint32 IBMLKKCFODE = 7;</code>
-     * @return The iBMLKKCFODE.
-     */
-    @java.lang.Override
-    public int getIBMLKKCFODE() {
-      return iBMLKKCFODE_;
-    }
-
-    public static final int DIFFICULTY_FIELD_NUMBER = 12;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 12;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int BMOHBAAACFD_FIELD_NUMBER = 9;
-    private int bMOHBAAACFD_;
-    /**
-     * <code>uint32 BMOHBAAACFD = 9;</code>
-     * @return The bMOHBAAACFD.
-     */
-    @java.lang.Override
-    public int getBMOHBAAACFD() {
-      return bMOHBAAACFD_;
-    }
-
-    public static final int COST_TIME_FIELD_NUMBER = 1;
+    public static final int COST_TIME_FIELD_NUMBER = 6;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 1;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -304,15 +260,59 @@ public final class NatlanArenaSettleInfoOuterClass {
       return costTime_;
     }
 
-    public static final int IOOCDEIKCBI_FIELD_NUMBER = 10;
-    private int iOOCDEIKCBI_;
+    public static final int MKJCMBDPBAF_FIELD_NUMBER = 8;
+    private int mKJCMBDPBAF_;
     /**
-     * <code>uint32 IOOCDEIKCBI = 10;</code>
-     * @return The iOOCDEIKCBI.
+     * <code>uint32 MKJCMBDPBAF = 8;</code>
+     * @return The mKJCMBDPBAF.
      */
     @java.lang.Override
-    public int getIOOCDEIKCBI() {
-      return iOOCDEIKCBI_;
+    public int getMKJCMBDPBAF() {
+      return mKJCMBDPBAF_;
+    }
+
+    public static final int KIHIJFAGJFJ_FIELD_NUMBER = 9;
+    private int kIHIJFAGJFJ_;
+    /**
+     * <code>uint32 KIHIJFAGJFJ = 9;</code>
+     * @return The kIHIJFAGJFJ.
+     */
+    @java.lang.Override
+    public int getKIHIJFAGJFJ() {
+      return kIHIJFAGJFJ_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 10;
+    private int difficulty_;
+    /**
+     * <code>uint32 difficulty = 10;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int GEHAFGHMJBJ_FIELD_NUMBER = 13;
+    private boolean gEHAFGHMJBJ_;
+    /**
+     * <code>bool GEHAFGHMJBJ = 13;</code>
+     * @return The gEHAFGHMJBJ.
+     */
+    @java.lang.Override
+    public boolean getGEHAFGHMJBJ() {
+      return gEHAFGHMJBJ_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -329,35 +329,35 @@ public final class NatlanArenaSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (costTime_ != 0) {
-        output.writeUInt32(1, costTime_);
+      if (pOEJCHFENFO_ != 0) {
+        output.writeUInt32(2, pOEJCHFENFO_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(2, isNewRecord_);
+      if (eFODFLLCJBD_ != 0) {
+        output.writeUInt32(3, eFODFLLCJBD_);
       }
-      if (nLLOENAFJFG_ != 0) {
-        output.writeUInt32(5, nLLOENAFJFG_);
-      }
-      if (iBMLKKCFODE_ != 0) {
-        output.writeUInt32(7, iBMLKKCFODE_);
+      if (oMOPCPDDNIP_ != false) {
+        output.writeBool(4, oMOPCPDDNIP_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(5, levelId_);
       }
-      if (bMOHBAAACFD_ != 0) {
-        output.writeUInt32(9, bMOHBAAACFD_);
+      if (costTime_ != 0) {
+        output.writeUInt32(6, costTime_);
       }
-      if (iOOCDEIKCBI_ != 0) {
-        output.writeUInt32(10, iOOCDEIKCBI_);
+      if (mKJCMBDPBAF_ != 0) {
+        output.writeUInt32(8, mKJCMBDPBAF_);
+      }
+      if (kIHIJFAGJFJ_ != 0) {
+        output.writeUInt32(9, kIHIJFAGJFJ_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(12, difficulty_);
+        output.writeUInt32(10, difficulty_);
       }
-      if (dKKACJDMBIA_ != false) {
-        output.writeBool(14, dKKACJDMBIA_);
+      if (gEHAFGHMJBJ_ != false) {
+        output.writeBool(13, gEHAFGHMJBJ_);
       }
-      if (kFJLKIEGFBA_ != false) {
-        output.writeBool(15, kFJLKIEGFBA_);
+      if (isNewRecord_ != false) {
+        output.writeBool(14, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -368,45 +368,45 @@ public final class NatlanArenaSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (costTime_ != 0) {
+      if (pOEJCHFENFO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, costTime_);
+          .computeUInt32Size(2, pOEJCHFENFO_);
       }
-      if (isNewRecord_ != false) {
+      if (eFODFLLCJBD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNewRecord_);
+          .computeUInt32Size(3, eFODFLLCJBD_);
       }
-      if (nLLOENAFJFG_ != 0) {
+      if (oMOPCPDDNIP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, nLLOENAFJFG_);
-      }
-      if (iBMLKKCFODE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iBMLKKCFODE_);
+          .computeBoolSize(4, oMOPCPDDNIP_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(5, levelId_);
       }
-      if (bMOHBAAACFD_ != 0) {
+      if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bMOHBAAACFD_);
+          .computeUInt32Size(6, costTime_);
       }
-      if (iOOCDEIKCBI_ != 0) {
+      if (mKJCMBDPBAF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, iOOCDEIKCBI_);
+          .computeUInt32Size(8, mKJCMBDPBAF_);
+      }
+      if (kIHIJFAGJFJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, kIHIJFAGJFJ_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, difficulty_);
+          .computeUInt32Size(10, difficulty_);
       }
-      if (dKKACJDMBIA_ != false) {
+      if (gEHAFGHMJBJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, dKKACJDMBIA_);
+          .computeBoolSize(13, gEHAFGHMJBJ_);
       }
-      if (kFJLKIEGFBA_ != false) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, kFJLKIEGFBA_);
+          .computeBoolSize(14, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,26 +423,26 @@ public final class NatlanArenaSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo other = (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) obj;
 
-      if (getNLLOENAFJFG()
-          != other.getNLLOENAFJFG()) return false;
+      if (getPOEJCHFENFO()
+          != other.getPOEJCHFENFO()) return false;
+      if (getEFODFLLCJBD()
+          != other.getEFODFLLCJBD()) return false;
+      if (getOMOPCPDDNIP()
+          != other.getOMOPCPDDNIP()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getDKKACJDMBIA()
-          != other.getDKKACJDMBIA()) return false;
-      if (getKFJLKIEGFBA()
-          != other.getKFJLKIEGFBA()) return false;
-      if (getIBMLKKCFODE()
-          != other.getIBMLKKCFODE()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
-      if (getBMOHBAAACFD()
-          != other.getBMOHBAAACFD()) return false;
       if (getCostTime()
           != other.getCostTime()) return false;
-      if (getIOOCDEIKCBI()
-          != other.getIOOCDEIKCBI()) return false;
+      if (getMKJCMBDPBAF()
+          != other.getMKJCMBDPBAF()) return false;
+      if (getKIHIJFAGJFJ()
+          != other.getKIHIJFAGJFJ()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
+      if (getGEHAFGHMJBJ()
+          != other.getGEHAFGHMJBJ()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -454,29 +454,29 @@ public final class NatlanArenaSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NLLOENAFJFG_FIELD_NUMBER;
-      hash = (53 * hash) + getNLLOENAFJFG();
+      hash = (37 * hash) + POEJCHFENFO_FIELD_NUMBER;
+      hash = (53 * hash) + getPOEJCHFENFO();
+      hash = (37 * hash) + EFODFLLCJBD_FIELD_NUMBER;
+      hash = (53 * hash) + getEFODFLLCJBD();
+      hash = (37 * hash) + OMOPCPDDNIP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOMOPCPDDNIP());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
+      hash = (37 * hash) + MKJCMBDPBAF_FIELD_NUMBER;
+      hash = (53 * hash) + getMKJCMBDPBAF();
+      hash = (37 * hash) + KIHIJFAGJFJ_FIELD_NUMBER;
+      hash = (53 * hash) + getKIHIJFAGJFJ();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + GEHAFGHMJBJ_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGEHAFGHMJBJ());
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DKKACJDMBIA_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDKKACJDMBIA());
-      hash = (37 * hash) + KFJLKIEGFBA_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKFJLKIEGFBA());
-      hash = (37 * hash) + IBMLKKCFODE_FIELD_NUMBER;
-      hash = (53 * hash) + getIBMLKKCFODE();
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + BMOHBAAACFD_FIELD_NUMBER;
-      hash = (53 * hash) + getBMOHBAAACFD();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + IOOCDEIKCBI_FIELD_NUMBER;
-      hash = (53 * hash) + getIOOCDEIKCBI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -610,25 +610,25 @@ public final class NatlanArenaSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nLLOENAFJFG_ = 0;
+        pOEJCHFENFO_ = 0;
+
+        eFODFLLCJBD_ = 0;
+
+        oMOPCPDDNIP_ = false;
 
         levelId_ = 0;
 
-        isNewRecord_ = false;
+        costTime_ = 0;
 
-        dKKACJDMBIA_ = false;
+        mKJCMBDPBAF_ = 0;
 
-        kFJLKIEGFBA_ = false;
-
-        iBMLKKCFODE_ = 0;
+        kIHIJFAGJFJ_ = 0;
 
         difficulty_ = 0;
 
-        bMOHBAAACFD_ = 0;
+        gEHAFGHMJBJ_ = false;
 
-        costTime_ = 0;
-
-        iOOCDEIKCBI_ = 0;
+        isNewRecord_ = false;
 
         return this;
       }
@@ -656,16 +656,16 @@ public final class NatlanArenaSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo buildPartial() {
         emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo result = new emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo(this);
-        result.nLLOENAFJFG_ = nLLOENAFJFG_;
+        result.pOEJCHFENFO_ = pOEJCHFENFO_;
+        result.eFODFLLCJBD_ = eFODFLLCJBD_;
+        result.oMOPCPDDNIP_ = oMOPCPDDNIP_;
         result.levelId_ = levelId_;
-        result.isNewRecord_ = isNewRecord_;
-        result.dKKACJDMBIA_ = dKKACJDMBIA_;
-        result.kFJLKIEGFBA_ = kFJLKIEGFBA_;
-        result.iBMLKKCFODE_ = iBMLKKCFODE_;
-        result.difficulty_ = difficulty_;
-        result.bMOHBAAACFD_ = bMOHBAAACFD_;
         result.costTime_ = costTime_;
-        result.iOOCDEIKCBI_ = iOOCDEIKCBI_;
+        result.mKJCMBDPBAF_ = mKJCMBDPBAF_;
+        result.kIHIJFAGJFJ_ = kIHIJFAGJFJ_;
+        result.difficulty_ = difficulty_;
+        result.gEHAFGHMJBJ_ = gEHAFGHMJBJ_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -714,35 +714,35 @@ public final class NatlanArenaSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo other) {
         if (other == emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance()) return this;
-        if (other.getNLLOENAFJFG() != 0) {
-          setNLLOENAFJFG(other.getNLLOENAFJFG());
+        if (other.getPOEJCHFENFO() != 0) {
+          setPOEJCHFENFO(other.getPOEJCHFENFO());
+        }
+        if (other.getEFODFLLCJBD() != 0) {
+          setEFODFLLCJBD(other.getEFODFLLCJBD());
+        }
+        if (other.getOMOPCPDDNIP() != false) {
+          setOMOPCPDDNIP(other.getOMOPCPDDNIP());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
-        if (other.getDKKACJDMBIA() != false) {
-          setDKKACJDMBIA(other.getDKKACJDMBIA());
+        if (other.getMKJCMBDPBAF() != 0) {
+          setMKJCMBDPBAF(other.getMKJCMBDPBAF());
         }
-        if (other.getKFJLKIEGFBA() != false) {
-          setKFJLKIEGFBA(other.getKFJLKIEGFBA());
-        }
-        if (other.getIBMLKKCFODE() != 0) {
-          setIBMLKKCFODE(other.getIBMLKKCFODE());
+        if (other.getKIHIJFAGJFJ() != 0) {
+          setKIHIJFAGJFJ(other.getKIHIJFAGJFJ());
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
-        if (other.getBMOHBAAACFD() != 0) {
-          setBMOHBAAACFD(other.getBMOHBAAACFD());
+        if (other.getGEHAFGHMJBJ() != false) {
+          setGEHAFGHMJBJ(other.getGEHAFGHMJBJ());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
-        if (other.getIOOCDEIKCBI() != 0) {
-          setIOOCDEIKCBI(other.getIOOCDEIKCBI());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -773,40 +773,102 @@ public final class NatlanArenaSettleInfoOuterClass {
         return this;
       }
 
-      private int nLLOENAFJFG_ ;
+      private int pOEJCHFENFO_ ;
       /**
-       * <code>uint32 NLLOENAFJFG = 5;</code>
-       * @return The nLLOENAFJFG.
+       * <code>uint32 POEJCHFENFO = 2;</code>
+       * @return The pOEJCHFENFO.
        */
       @java.lang.Override
-      public int getNLLOENAFJFG() {
-        return nLLOENAFJFG_;
+      public int getPOEJCHFENFO() {
+        return pOEJCHFENFO_;
       }
       /**
-       * <code>uint32 NLLOENAFJFG = 5;</code>
-       * @param value The nLLOENAFJFG to set.
+       * <code>uint32 POEJCHFENFO = 2;</code>
+       * @param value The pOEJCHFENFO to set.
        * @return This builder for chaining.
        */
-      public Builder setNLLOENAFJFG(int value) {
+      public Builder setPOEJCHFENFO(int value) {
         
-        nLLOENAFJFG_ = value;
+        pOEJCHFENFO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NLLOENAFJFG = 5;</code>
+       * <code>uint32 POEJCHFENFO = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNLLOENAFJFG() {
+      public Builder clearPOEJCHFENFO() {
         
-        nLLOENAFJFG_ = 0;
+        pOEJCHFENFO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eFODFLLCJBD_ ;
+      /**
+       * <code>uint32 EFODFLLCJBD = 3;</code>
+       * @return The eFODFLLCJBD.
+       */
+      @java.lang.Override
+      public int getEFODFLLCJBD() {
+        return eFODFLLCJBD_;
+      }
+      /**
+       * <code>uint32 EFODFLLCJBD = 3;</code>
+       * @param value The eFODFLLCJBD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEFODFLLCJBD(int value) {
+        
+        eFODFLLCJBD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 EFODFLLCJBD = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEFODFLLCJBD() {
+        
+        eFODFLLCJBD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean oMOPCPDDNIP_ ;
+      /**
+       * <code>bool OMOPCPDDNIP = 4;</code>
+       * @return The oMOPCPDDNIP.
+       */
+      @java.lang.Override
+      public boolean getOMOPCPDDNIP() {
+        return oMOPCPDDNIP_;
+      }
+      /**
+       * <code>bool OMOPCPDDNIP = 4;</code>
+       * @param value The oMOPCPDDNIP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOMOPCPDDNIP(boolean value) {
+        
+        oMOPCPDDNIP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool OMOPCPDDNIP = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOMOPCPDDNIP() {
+        
+        oMOPCPDDNIP_ = false;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -814,7 +876,7 @@ public final class NatlanArenaSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -825,7 +887,7 @@ public final class NatlanArenaSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -835,195 +897,9 @@ public final class NatlanArenaSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 2;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 2;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean dKKACJDMBIA_ ;
-      /**
-       * <code>bool DKKACJDMBIA = 14;</code>
-       * @return The dKKACJDMBIA.
-       */
-      @java.lang.Override
-      public boolean getDKKACJDMBIA() {
-        return dKKACJDMBIA_;
-      }
-      /**
-       * <code>bool DKKACJDMBIA = 14;</code>
-       * @param value The dKKACJDMBIA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDKKACJDMBIA(boolean value) {
-        
-        dKKACJDMBIA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool DKKACJDMBIA = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDKKACJDMBIA() {
-        
-        dKKACJDMBIA_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean kFJLKIEGFBA_ ;
-      /**
-       * <code>bool KFJLKIEGFBA = 15;</code>
-       * @return The kFJLKIEGFBA.
-       */
-      @java.lang.Override
-      public boolean getKFJLKIEGFBA() {
-        return kFJLKIEGFBA_;
-      }
-      /**
-       * <code>bool KFJLKIEGFBA = 15;</code>
-       * @param value The kFJLKIEGFBA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKFJLKIEGFBA(boolean value) {
-        
-        kFJLKIEGFBA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool KFJLKIEGFBA = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKFJLKIEGFBA() {
-        
-        kFJLKIEGFBA_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int iBMLKKCFODE_ ;
-      /**
-       * <code>uint32 IBMLKKCFODE = 7;</code>
-       * @return The iBMLKKCFODE.
-       */
-      @java.lang.Override
-      public int getIBMLKKCFODE() {
-        return iBMLKKCFODE_;
-      }
-      /**
-       * <code>uint32 IBMLKKCFODE = 7;</code>
-       * @param value The iBMLKKCFODE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIBMLKKCFODE(int value) {
-        
-        iBMLKKCFODE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IBMLKKCFODE = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIBMLKKCFODE() {
-        
-        iBMLKKCFODE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 12;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 12;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bMOHBAAACFD_ ;
-      /**
-       * <code>uint32 BMOHBAAACFD = 9;</code>
-       * @return The bMOHBAAACFD.
-       */
-      @java.lang.Override
-      public int getBMOHBAAACFD() {
-        return bMOHBAAACFD_;
-      }
-      /**
-       * <code>uint32 BMOHBAAACFD = 9;</code>
-       * @param value The bMOHBAAACFD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBMOHBAAACFD(int value) {
-        
-        bMOHBAAACFD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BMOHBAAACFD = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBMOHBAAACFD() {
-        
-        bMOHBAAACFD_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 1;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -1031,7 +907,7 @@ public final class NatlanArenaSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 1;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -1042,7 +918,7 @@ public final class NatlanArenaSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 1;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -1052,33 +928,157 @@ public final class NatlanArenaSettleInfoOuterClass {
         return this;
       }
 
-      private int iOOCDEIKCBI_ ;
+      private int mKJCMBDPBAF_ ;
       /**
-       * <code>uint32 IOOCDEIKCBI = 10;</code>
-       * @return The iOOCDEIKCBI.
+       * <code>uint32 MKJCMBDPBAF = 8;</code>
+       * @return The mKJCMBDPBAF.
        */
       @java.lang.Override
-      public int getIOOCDEIKCBI() {
-        return iOOCDEIKCBI_;
+      public int getMKJCMBDPBAF() {
+        return mKJCMBDPBAF_;
       }
       /**
-       * <code>uint32 IOOCDEIKCBI = 10;</code>
-       * @param value The iOOCDEIKCBI to set.
+       * <code>uint32 MKJCMBDPBAF = 8;</code>
+       * @param value The mKJCMBDPBAF to set.
        * @return This builder for chaining.
        */
-      public Builder setIOOCDEIKCBI(int value) {
+      public Builder setMKJCMBDPBAF(int value) {
         
-        iOOCDEIKCBI_ = value;
+        mKJCMBDPBAF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IOOCDEIKCBI = 10;</code>
+       * <code>uint32 MKJCMBDPBAF = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIOOCDEIKCBI() {
+      public Builder clearMKJCMBDPBAF() {
         
-        iOOCDEIKCBI_ = 0;
+        mKJCMBDPBAF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kIHIJFAGJFJ_ ;
+      /**
+       * <code>uint32 KIHIJFAGJFJ = 9;</code>
+       * @return The kIHIJFAGJFJ.
+       */
+      @java.lang.Override
+      public int getKIHIJFAGJFJ() {
+        return kIHIJFAGJFJ_;
+      }
+      /**
+       * <code>uint32 KIHIJFAGJFJ = 9;</code>
+       * @param value The kIHIJFAGJFJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKIHIJFAGJFJ(int value) {
+        
+        kIHIJFAGJFJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KIHIJFAGJFJ = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKIHIJFAGJFJ() {
+        
+        kIHIJFAGJFJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <code>uint32 difficulty = 10;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <code>uint32 difficulty = 10;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
+        
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean gEHAFGHMJBJ_ ;
+      /**
+       * <code>bool GEHAFGHMJBJ = 13;</code>
+       * @return The gEHAFGHMJBJ.
+       */
+      @java.lang.Override
+      public boolean getGEHAFGHMJBJ() {
+        return gEHAFGHMJBJ_;
+      }
+      /**
+       * <code>bool GEHAFGHMJBJ = 13;</code>
+       * @param value The gEHAFGHMJBJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGEHAFGHMJBJ(boolean value) {
+        
+        gEHAFGHMJBJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool GEHAFGHMJBJ = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGEHAFGHMJBJ() {
+        
+        gEHAFGHMJBJ_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -1150,12 +1150,12 @@ public final class NatlanArenaSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033NatlanArenaSettleInfo.proto\"\345\001\n\025Natlan" +
-      "ArenaSettleInfo\022\023\n\013NLLOENAFJFG\030\005 \001(\r\022\020\n\010" +
-      "level_id\030\010 \001(\r\022\025\n\ris_new_record\030\002 \001(\010\022\023\n" +
-      "\013DKKACJDMBIA\030\016 \001(\010\022\023\n\013KFJLKIEGFBA\030\017 \001(\010\022" +
-      "\023\n\013IBMLKKCFODE\030\007 \001(\r\022\022\n\ndifficulty\030\014 \001(\r" +
-      "\022\023\n\013BMOHBAAACFD\030\t \001(\r\022\021\n\tcost_time\030\001 \001(\r" +
-      "\022\023\n\013IOOCDEIKCBI\030\n \001(\rB\033\n\031emu.grasscutter" +
+      "ArenaSettleInfo\022\023\n\013POEJCHFENFO\030\002 \001(\r\022\023\n\013" +
+      "EFODFLLCJBD\030\003 \001(\r\022\023\n\013OMOPCPDDNIP\030\004 \001(\010\022\020" +
+      "\n\010level_id\030\005 \001(\r\022\021\n\tcost_time\030\006 \001(\r\022\023\n\013M" +
+      "KJCMBDPBAF\030\010 \001(\r\022\023\n\013KIHIJFAGJFJ\030\t \001(\r\022\022\n" +
+      "\ndifficulty\030\n \001(\r\022\023\n\013GEHAFGHMJBJ\030\r \001(\010\022\025" +
+      "\n\ris_new_record\030\016 \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1167,7 +1167,7 @@ public final class NatlanArenaSettleInfoOuterClass {
     internal_static_NatlanArenaSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NatlanArenaSettleInfo_descriptor,
-        new java.lang.String[] { "NLLOENAFJFG", "LevelId", "IsNewRecord", "DKKACJDMBIA", "KFJLKIEGFBA", "IBMLKKCFODE", "Difficulty", "BMOHBAAACFD", "CostTime", "IOOCDEIKCBI", });
+        new java.lang.String[] { "POEJCHFENFO", "EFODFLLCJBD", "OMOPCPDDNIP", "LevelId", "CostTime", "MKJCMBDPBAF", "KIHIJFAGJFJ", "Difficulty", "GEHAFGHMJBJ", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

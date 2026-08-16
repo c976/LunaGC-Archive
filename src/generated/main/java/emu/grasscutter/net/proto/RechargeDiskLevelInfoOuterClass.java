@@ -19,43 +19,43 @@ public final class RechargeDiskLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-     * @return Whether the aHNFCABADGH field is set.
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+     * @return Whether the jFBPOIDCPEK field is set.
      */
-    boolean hasAHNFCABADGH();
+    boolean hasJFBPOIDCPEK();
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-     * @return The aHNFCABADGH.
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+     * @return The jFBPOIDCPEK.
      */
-    emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG getAHNFCABADGH();
+    emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC getJFBPOIDCPEK();
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
      */
-    emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder getAHNFCABADGHOrBuilder();
+    emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder getJFBPOIDCPEKOrBuilder();
 
     /**
-     * <code>uint32 score = 11;</code>
+     * <code>uint32 level_id = 6;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 15;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
-
-    /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
   }
   /**
    * Protobuf type {@code RechargeDiskLevelInfo}
@@ -102,37 +102,37 @@ public final class RechargeDiskLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder subBuilder = null;
-              if (aHNFCABADGH_ != null) {
-                subBuilder = aHNFCABADGH_.toBuilder();
+            case 26: {
+              emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder subBuilder = null;
+              if (jFBPOIDCPEK_ != null) {
+                subBuilder = jFBPOIDCPEK_.toBuilder();
               }
-              aHNFCABADGH_ = input.readMessage(emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.parser(), extensionRegistry);
+              jFBPOIDCPEK_ = input.readMessage(emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(aHNFCABADGH_);
-                aHNFCABADGH_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(jFBPOIDCPEK_);
+                jFBPOIDCPEK_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 16: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              isOpen_ = input.readBool();
               break;
             }
             case 48: {
 
-              isFinish_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
               score_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              isFinish_ = input.readBool();
               break;
             }
             default: {
@@ -167,36 +167,47 @@ public final class RechargeDiskLevelInfoOuterClass {
               emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.class, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder.class);
     }
 
-    public static final int AHNFCABADGH_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG aHNFCABADGH_;
+    public static final int JFBPOIDCPEK_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC jFBPOIDCPEK_;
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-     * @return Whether the aHNFCABADGH field is set.
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+     * @return Whether the jFBPOIDCPEK field is set.
      */
     @java.lang.Override
-    public boolean hasAHNFCABADGH() {
-      return aHNFCABADGH_ != null;
+    public boolean hasJFBPOIDCPEK() {
+      return jFBPOIDCPEK_ != null;
     }
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-     * @return The aHNFCABADGH.
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+     * @return The jFBPOIDCPEK.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG getAHNFCABADGH() {
-      return aHNFCABADGH_ == null ? emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.getDefaultInstance() : aHNFCABADGH_;
+    public emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC getJFBPOIDCPEK() {
+      return jFBPOIDCPEK_ == null ? emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.getDefaultInstance() : jFBPOIDCPEK_;
     }
     /**
-     * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+     * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder getAHNFCABADGHOrBuilder() {
-      return getAHNFCABADGH();
+    public emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder getJFBPOIDCPEKOrBuilder() {
+      return getJFBPOIDCPEK();
     }
 
-    public static final int SCORE_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 6;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 6;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 12;
     private int score_;
     /**
-     * <code>uint32 score = 11;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -204,10 +215,10 @@ public final class RechargeDiskLevelInfoOuterClass {
       return score_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 4;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -215,26 +226,15 @@ public final class RechargeDiskLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 6;
+    public static final int IS_FINISH_FIELD_NUMBER = 15;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 15;</code>
      * @return The isFinish.
      */
     @java.lang.Override
     public boolean getIsFinish() {
       return isFinish_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,20 +251,20 @@ public final class RechargeDiskLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aHNFCABADGH_ != null) {
-        output.writeMessage(1, getAHNFCABADGH());
+      if (jFBPOIDCPEK_ != null) {
+        output.writeMessage(3, getJFBPOIDCPEK());
       }
       if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(4, isOpen_);
-      }
-      if (isFinish_ != false) {
-        output.writeBool(6, isFinish_);
+        output.writeUInt32(6, levelId_);
       }
       if (score_ != 0) {
-        output.writeUInt32(11, score_);
+        output.writeUInt32(12, score_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(14, isOpen_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(15, isFinish_);
       }
       unknownFields.writeTo(output);
     }
@@ -275,25 +275,25 @@ public final class RechargeDiskLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aHNFCABADGH_ != null) {
+      if (jFBPOIDCPEK_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getAHNFCABADGH());
+          .computeMessageSize(3, getJFBPOIDCPEK());
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isOpen_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinish_);
+          .computeUInt32Size(6, levelId_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, score_);
+          .computeUInt32Size(12, score_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isOpen_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isFinish_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,19 +310,19 @@ public final class RechargeDiskLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo other = (emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo) obj;
 
-      if (hasAHNFCABADGH() != other.hasAHNFCABADGH()) return false;
-      if (hasAHNFCABADGH()) {
-        if (!getAHNFCABADGH()
-            .equals(other.getAHNFCABADGH())) return false;
+      if (hasJFBPOIDCPEK() != other.hasJFBPOIDCPEK()) return false;
+      if (hasJFBPOIDCPEK()) {
+        if (!getJFBPOIDCPEK()
+            .equals(other.getJFBPOIDCPEK())) return false;
       }
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getScore()
           != other.getScore()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,10 +334,12 @@ public final class RechargeDiskLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasAHNFCABADGH()) {
-        hash = (37 * hash) + AHNFCABADGH_FIELD_NUMBER;
-        hash = (53 * hash) + getAHNFCABADGH().hashCode();
+      if (hasJFBPOIDCPEK()) {
+        hash = (37 * hash) + JFBPOIDCPEK_FIELD_NUMBER;
+        hash = (53 * hash) + getJFBPOIDCPEK().hashCode();
       }
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
@@ -346,8 +348,6 @@ public final class RechargeDiskLevelInfoOuterClass {
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -481,19 +481,19 @@ public final class RechargeDiskLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (aHNFCABADGHBuilder_ == null) {
-          aHNFCABADGH_ = null;
+        if (jFBPOIDCPEKBuilder_ == null) {
+          jFBPOIDCPEK_ = null;
         } else {
-          aHNFCABADGH_ = null;
-          aHNFCABADGHBuilder_ = null;
+          jFBPOIDCPEK_ = null;
+          jFBPOIDCPEKBuilder_ = null;
         }
+        levelId_ = 0;
+
         score_ = 0;
 
         isOpen_ = false;
 
         isFinish_ = false;
-
-        levelId_ = 0;
 
         return this;
       }
@@ -521,15 +521,15 @@ public final class RechargeDiskLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo buildPartial() {
         emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo result = new emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo(this);
-        if (aHNFCABADGHBuilder_ == null) {
-          result.aHNFCABADGH_ = aHNFCABADGH_;
+        if (jFBPOIDCPEKBuilder_ == null) {
+          result.jFBPOIDCPEK_ = jFBPOIDCPEK_;
         } else {
-          result.aHNFCABADGH_ = aHNFCABADGHBuilder_.build();
+          result.jFBPOIDCPEK_ = jFBPOIDCPEKBuilder_.build();
         }
+        result.levelId_ = levelId_;
         result.score_ = score_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
-        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -578,8 +578,11 @@ public final class RechargeDiskLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo other) {
         if (other == emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.getDefaultInstance()) return this;
-        if (other.hasAHNFCABADGH()) {
-          mergeAHNFCABADGH(other.getAHNFCABADGH());
+        if (other.hasJFBPOIDCPEK()) {
+          mergeJFBPOIDCPEK(other.getJFBPOIDCPEK());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
@@ -589,9 +592,6 @@ public final class RechargeDiskLevelInfoOuterClass {
         }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -622,128 +622,159 @@ public final class RechargeDiskLevelInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG aHNFCABADGH_;
+      private emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC jFBPOIDCPEK_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder> aHNFCABADGHBuilder_;
+          emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder> jFBPOIDCPEKBuilder_;
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-       * @return Whether the aHNFCABADGH field is set.
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+       * @return Whether the jFBPOIDCPEK field is set.
        */
-      public boolean hasAHNFCABADGH() {
-        return aHNFCABADGHBuilder_ != null || aHNFCABADGH_ != null;
+      public boolean hasJFBPOIDCPEK() {
+        return jFBPOIDCPEKBuilder_ != null || jFBPOIDCPEK_ != null;
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
-       * @return The aHNFCABADGH.
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
+       * @return The jFBPOIDCPEK.
        */
-      public emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG getAHNFCABADGH() {
-        if (aHNFCABADGHBuilder_ == null) {
-          return aHNFCABADGH_ == null ? emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.getDefaultInstance() : aHNFCABADGH_;
+      public emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC getJFBPOIDCPEK() {
+        if (jFBPOIDCPEKBuilder_ == null) {
+          return jFBPOIDCPEK_ == null ? emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.getDefaultInstance() : jFBPOIDCPEK_;
         } else {
-          return aHNFCABADGHBuilder_.getMessage();
+          return jFBPOIDCPEKBuilder_.getMessage();
         }
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public Builder setAHNFCABADGH(emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG value) {
-        if (aHNFCABADGHBuilder_ == null) {
+      public Builder setJFBPOIDCPEK(emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC value) {
+        if (jFBPOIDCPEKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          aHNFCABADGH_ = value;
+          jFBPOIDCPEK_ = value;
           onChanged();
         } else {
-          aHNFCABADGHBuilder_.setMessage(value);
+          jFBPOIDCPEKBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public Builder setAHNFCABADGH(
-          emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder builderForValue) {
-        if (aHNFCABADGHBuilder_ == null) {
-          aHNFCABADGH_ = builderForValue.build();
+      public Builder setJFBPOIDCPEK(
+          emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder builderForValue) {
+        if (jFBPOIDCPEKBuilder_ == null) {
+          jFBPOIDCPEK_ = builderForValue.build();
           onChanged();
         } else {
-          aHNFCABADGHBuilder_.setMessage(builderForValue.build());
+          jFBPOIDCPEKBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public Builder mergeAHNFCABADGH(emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG value) {
-        if (aHNFCABADGHBuilder_ == null) {
-          if (aHNFCABADGH_ != null) {
-            aHNFCABADGH_ =
-              emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.newBuilder(aHNFCABADGH_).mergeFrom(value).buildPartial();
+      public Builder mergeJFBPOIDCPEK(emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC value) {
+        if (jFBPOIDCPEKBuilder_ == null) {
+          if (jFBPOIDCPEK_ != null) {
+            jFBPOIDCPEK_ =
+              emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.newBuilder(jFBPOIDCPEK_).mergeFrom(value).buildPartial();
           } else {
-            aHNFCABADGH_ = value;
+            jFBPOIDCPEK_ = value;
           }
           onChanged();
         } else {
-          aHNFCABADGHBuilder_.mergeFrom(value);
+          jFBPOIDCPEKBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public Builder clearAHNFCABADGH() {
-        if (aHNFCABADGHBuilder_ == null) {
-          aHNFCABADGH_ = null;
+      public Builder clearJFBPOIDCPEK() {
+        if (jFBPOIDCPEKBuilder_ == null) {
+          jFBPOIDCPEK_ = null;
           onChanged();
         } else {
-          aHNFCABADGH_ = null;
-          aHNFCABADGHBuilder_ = null;
+          jFBPOIDCPEK_ = null;
+          jFBPOIDCPEKBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder getAHNFCABADGHBuilder() {
+      public emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder getJFBPOIDCPEKBuilder() {
         
         onChanged();
-        return getAHNFCABADGHFieldBuilder().getBuilder();
+        return getJFBPOIDCPEKFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
-      public emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder getAHNFCABADGHOrBuilder() {
-        if (aHNFCABADGHBuilder_ != null) {
-          return aHNFCABADGHBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder getJFBPOIDCPEKOrBuilder() {
+        if (jFBPOIDCPEKBuilder_ != null) {
+          return jFBPOIDCPEKBuilder_.getMessageOrBuilder();
         } else {
-          return aHNFCABADGH_ == null ?
-              emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.getDefaultInstance() : aHNFCABADGH_;
+          return jFBPOIDCPEK_ == null ?
+              emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.getDefaultInstance() : jFBPOIDCPEK_;
         }
       }
       /**
-       * <code>.HNICFEDPCIG AHNFCABADGH = 1;</code>
+       * <code>.GBHIMHHPDCC JFBPOIDCPEK = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder> 
-          getAHNFCABADGHFieldBuilder() {
-        if (aHNFCABADGHBuilder_ == null) {
-          aHNFCABADGHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIG.Builder, emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.HNICFEDPCIGOrBuilder>(
-                  getAHNFCABADGH(),
+          emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder> 
+          getJFBPOIDCPEKFieldBuilder() {
+        if (jFBPOIDCPEKBuilder_ == null) {
+          jFBPOIDCPEKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCC.Builder, emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.GBHIMHHPDCCOrBuilder>(
+                  getJFBPOIDCPEK(),
                   getParentForChildren(),
                   isClean());
-          aHNFCABADGH_ = null;
+          jFBPOIDCPEK_ = null;
         }
-        return aHNFCABADGHBuilder_;
+        return jFBPOIDCPEKBuilder_;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 6;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 6;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
       }
 
       private int score_ ;
       /**
-       * <code>uint32 score = 11;</code>
+       * <code>uint32 score = 12;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -751,7 +782,7 @@ public final class RechargeDiskLevelInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 11;</code>
+       * <code>uint32 score = 12;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -762,7 +793,7 @@ public final class RechargeDiskLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 11;</code>
+       * <code>uint32 score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -774,7 +805,7 @@ public final class RechargeDiskLevelInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -782,7 +813,7 @@ public final class RechargeDiskLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -793,7 +824,7 @@ public final class RechargeDiskLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -805,7 +836,7 @@ public final class RechargeDiskLevelInfoOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 15;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -813,7 +844,7 @@ public final class RechargeDiskLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 15;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -824,43 +855,12 @@ public final class RechargeDiskLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
         
         isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -931,25 +931,25 @@ public final class RechargeDiskLevelInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033RechargeDiskLevelInfo.proto\032\021HNICFEDPC" +
-      "IG.proto\"\177\n\025RechargeDiskLevelInfo\022!\n\013AHN" +
-      "FCABADGH\030\001 \001(\0132\014.HNICFEDPCIG\022\r\n\005score\030\013 " +
-      "\001(\r\022\017\n\007is_open\030\004 \001(\010\022\021\n\tis_finish\030\006 \001(\010\022" +
-      "\020\n\010level_id\030\002 \001(\rB\033\n\031emu.grasscutter.net" +
+      "\n\033RechargeDiskLevelInfo.proto\032\021GBHIMHHPD" +
+      "CC.proto\"\177\n\025RechargeDiskLevelInfo\022!\n\013JFB" +
+      "POIDCPEK\030\003 \001(\0132\014.GBHIMHHPDCC\022\020\n\010level_id" +
+      "\030\006 \001(\r\022\r\n\005score\030\014 \001(\r\022\017\n\007is_open\030\016 \001(\010\022\021" +
+      "\n\tis_finish\030\017 \001(\010B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.getDescriptor(),
         });
     internal_static_RechargeDiskLevelInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RechargeDiskLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RechargeDiskLevelInfo_descriptor,
-        new java.lang.String[] { "AHNFCABADGH", "Score", "IsOpen", "IsFinish", "LevelId", });
-    emu.grasscutter.net.proto.HNICFEDPCIGOuterClass.getDescriptor();
+        new java.lang.String[] { "JFBPOIDCPEK", "LevelId", "Score", "IsOpen", "IsFinish", });
+    emu.grasscutter.net.proto.GBHIMHHPDCCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

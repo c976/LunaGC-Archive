@@ -19,54 +19,104 @@ public final class ForceDragAvatarNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return Whether the motionInfo field is set.
+     * <code>bool JAGBKBMJEKP = 1;</code>
+     * @return The jAGBKBMJEKP.
      */
-    boolean hasMotionInfo();
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return The motionInfo.
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
+    boolean getJAGBKBMJEKP();
 
     /**
-     * <code>uint32 entity_id = 1;</code>
+     * <code>.Vector pos = 2;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 2;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>string transaction = 3;</code>
+     * @return The transaction.
+     */
+    java.lang.String getTransaction();
+    /**
+     * <code>string transaction = 3;</code>
+     * @return The bytes for transaction.
+     */
+    com.google.protobuf.ByteString
+        getTransactionBytes();
+
+    /**
+     * <code>float speed = 4;</code>
+     * @return The speed.
+     */
+    float getSpeed();
+
+    /**
+     * <code>bool PPEKPNLMANA = 5;</code>
+     * @return The pPEKPNLMANA.
+     */
+    boolean getPPEKPNLMANA();
+
+    /**
+     * <code>int32 scene_time_ms = 6;</code>
+     * @return The sceneTimeMs.
+     */
+    int getSceneTimeMs();
+
+    /**
+     * <code>uint64 IPOLBGOJJLB = 7;</code>
+     * @return The iPOLBGOJJLB.
+     */
+    long getIPOLBGOJJLB();
+
+    /**
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint64 BLNEOPIFBGK = 10;</code>
-     * @return The bLNEOPIFBGK.
+     * <code>.MotionInfo motion_info = 9;</code>
+     * @return Whether the motionInfo field is set.
      */
-    long getBLNEOPIFBGK();
+    boolean hasMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 9;</code>
+     * @return The motionInfo.
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 9;</code>
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
 
     /**
-     * <code>bool is_first_valid = 15;</code>
-     * @return The isFirstValid.
+     * <code>double velocity = 11;</code>
+     * @return The velocity.
      */
-    boolean getIsFirstValid();
+    double getVelocity();
 
     /**
-     * <code>uint64 CHFNMCLHBOI = 3;</code>
-     * @return The cHFNMCLHBOI.
+     * <code>uint64 FOJAFFAPNHE = 13;</code>
+     * @return The fOJAFFAPNHE.
      */
-    long getCHFNMCLHBOI();
+    long getFOJAFFAPNHE();
 
     /**
-     * <code>uint32 scene_time = 7;</code>
+     * <code>uint32 scene_time = 14;</code>
      * @return The sceneTime.
      */
     int getSceneTime();
   }
   /**
    * <pre>
-   * CmdId: 2141
-   * Obf: GFBHCMKNPCG
+   * CmdId: 2189
    * </pre>
    *
    * Protobuf type {@code ForceDragAvatarNotify}
@@ -81,6 +131,7 @@ public final class ForceDragAvatarNotifyOuterClass {
       super(builder);
     }
     private ForceDragAvatarNotify() {
+      transaction_ = "";
     }
 
     @java.lang.Override
@@ -115,15 +166,54 @@ public final class ForceDragAvatarNotifyOuterClass {
               break;
             case 8: {
 
+              jAGBKBMJEKP_ = input.readBool();
+              break;
+            }
+            case 18: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (pos_ != null) {
+                subBuilder = pos_.toBuilder();
+              }
+              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pos_);
+                pos_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              transaction_ = s;
+              break;
+            }
+            case 37: {
+
+              speed_ = input.readFloat();
+              break;
+            }
+            case 40: {
+
+              pPEKPNLMANA_ = input.readBool();
+              break;
+            }
+            case 48: {
+
+              sceneTimeMs_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
+              iPOLBGOJJLB_ = input.readUInt64();
+              break;
+            }
+            case 64: {
+
               entityId_ = input.readUInt32();
               break;
             }
-            case 24: {
-
-              cHFNMCLHBOI_ = input.readUInt64();
-              break;
-            }
-            case 34: {
+            case 74: {
               emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder subBuilder = null;
               if (motionInfo_ != null) {
                 subBuilder = motionInfo_.toBuilder();
@@ -136,19 +226,19 @@ public final class ForceDragAvatarNotifyOuterClass {
 
               break;
             }
-            case 56: {
+            case 89: {
+
+              velocity_ = input.readDouble();
+              break;
+            }
+            case 104: {
+
+              fOJAFFAPNHE_ = input.readUInt64();
+              break;
+            }
+            case 112: {
 
               sceneTime_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              bLNEOPIFBGK_ = input.readUInt64();
-              break;
-            }
-            case 120: {
-
-              isFirstValid_ = input.readBool();
               break;
             }
             default: {
@@ -183,36 +273,129 @@ public final class ForceDragAvatarNotifyOuterClass {
               emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.class, emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.Builder.class);
     }
 
-    public static final int MOTION_INFO_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
+    public static final int JAGBKBMJEKP_FIELD_NUMBER = 1;
+    private boolean jAGBKBMJEKP_;
     /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return Whether the motionInfo field is set.
+     * <code>bool JAGBKBMJEKP = 1;</code>
+     * @return The jAGBKBMJEKP.
      */
     @java.lang.Override
-    public boolean hasMotionInfo() {
-      return motionInfo_ != null;
-    }
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return The motionInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
-      return motionInfo_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
-    }
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
-      return getMotionInfo();
+    public boolean getJAGBKBMJEKP() {
+      return jAGBKBMJEKP_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int POS_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
+    }
+
+    public static final int TRANSACTION_FIELD_NUMBER = 3;
+    private volatile java.lang.Object transaction_;
+    /**
+     * <code>string transaction = 3;</code>
+     * @return The transaction.
+     */
+    @java.lang.Override
+    public java.lang.String getTransaction() {
+      java.lang.Object ref = transaction_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        transaction_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string transaction = 3;</code>
+     * @return The bytes for transaction.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTransactionBytes() {
+      java.lang.Object ref = transaction_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        transaction_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SPEED_FIELD_NUMBER = 4;
+    private float speed_;
+    /**
+     * <code>float speed = 4;</code>
+     * @return The speed.
+     */
+    @java.lang.Override
+    public float getSpeed() {
+      return speed_;
+    }
+
+    public static final int PPEKPNLMANA_FIELD_NUMBER = 5;
+    private boolean pPEKPNLMANA_;
+    /**
+     * <code>bool PPEKPNLMANA = 5;</code>
+     * @return The pPEKPNLMANA.
+     */
+    @java.lang.Override
+    public boolean getPPEKPNLMANA() {
+      return pPEKPNLMANA_;
+    }
+
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 6;
+    private int sceneTimeMs_;
+    /**
+     * <code>int32 scene_time_ms = 6;</code>
+     * @return The sceneTimeMs.
+     */
+    @java.lang.Override
+    public int getSceneTimeMs() {
+      return sceneTimeMs_;
+    }
+
+    public static final int IPOLBGOJJLB_FIELD_NUMBER = 7;
+    private long iPOLBGOJJLB_;
+    /**
+     * <code>uint64 IPOLBGOJJLB = 7;</code>
+     * @return The iPOLBGOJJLB.
+     */
+    @java.lang.Override
+    public long getIPOLBGOJJLB() {
+      return iPOLBGOJJLB_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 1;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -220,43 +403,58 @@ public final class ForceDragAvatarNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int BLNEOPIFBGK_FIELD_NUMBER = 10;
-    private long bLNEOPIFBGK_;
+    public static final int MOTION_INFO_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
     /**
-     * <code>uint64 BLNEOPIFBGK = 10;</code>
-     * @return The bLNEOPIFBGK.
+     * <code>.MotionInfo motion_info = 9;</code>
+     * @return Whether the motionInfo field is set.
      */
     @java.lang.Override
-    public long getBLNEOPIFBGK() {
-      return bLNEOPIFBGK_;
+    public boolean hasMotionInfo() {
+      return motionInfo_ != null;
     }
-
-    public static final int IS_FIRST_VALID_FIELD_NUMBER = 15;
-    private boolean isFirstValid_;
     /**
-     * <code>bool is_first_valid = 15;</code>
-     * @return The isFirstValid.
+     * <code>.MotionInfo motion_info = 9;</code>
+     * @return The motionInfo.
      */
     @java.lang.Override
-    public boolean getIsFirstValid() {
-      return isFirstValid_;
+    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
+      return motionInfo_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
     }
-
-    public static final int CHFNMCLHBOI_FIELD_NUMBER = 3;
-    private long cHFNMCLHBOI_;
     /**
-     * <code>uint64 CHFNMCLHBOI = 3;</code>
-     * @return The cHFNMCLHBOI.
+     * <code>.MotionInfo motion_info = 9;</code>
      */
     @java.lang.Override
-    public long getCHFNMCLHBOI() {
-      return cHFNMCLHBOI_;
+    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
+      return getMotionInfo();
     }
 
-    public static final int SCENE_TIME_FIELD_NUMBER = 7;
+    public static final int VELOCITY_FIELD_NUMBER = 11;
+    private double velocity_;
+    /**
+     * <code>double velocity = 11;</code>
+     * @return The velocity.
+     */
+    @java.lang.Override
+    public double getVelocity() {
+      return velocity_;
+    }
+
+    public static final int FOJAFFAPNHE_FIELD_NUMBER = 13;
+    private long fOJAFFAPNHE_;
+    /**
+     * <code>uint64 FOJAFFAPNHE = 13;</code>
+     * @return The fOJAFFAPNHE.
+     */
+    @java.lang.Override
+    public long getFOJAFFAPNHE() {
+      return fOJAFFAPNHE_;
+    }
+
+    public static final int SCENE_TIME_FIELD_NUMBER = 14;
     private int sceneTime_;
     /**
-     * <code>uint32 scene_time = 7;</code>
+     * <code>uint32 scene_time = 14;</code>
      * @return The sceneTime.
      */
     @java.lang.Override
@@ -278,23 +476,41 @@ public final class ForceDragAvatarNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(1, entityId_);
+      if (jAGBKBMJEKP_ != false) {
+        output.writeBool(1, jAGBKBMJEKP_);
       }
-      if (cHFNMCLHBOI_ != 0L) {
-        output.writeUInt64(3, cHFNMCLHBOI_);
+      if (pos_ != null) {
+        output.writeMessage(2, getPos());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, transaction_);
+      }
+      if (speed_ != 0F) {
+        output.writeFloat(4, speed_);
+      }
+      if (pPEKPNLMANA_ != false) {
+        output.writeBool(5, pPEKPNLMANA_);
+      }
+      if (sceneTimeMs_ != 0) {
+        output.writeInt32(6, sceneTimeMs_);
+      }
+      if (iPOLBGOJJLB_ != 0L) {
+        output.writeUInt64(7, iPOLBGOJJLB_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(8, entityId_);
       }
       if (motionInfo_ != null) {
-        output.writeMessage(4, getMotionInfo());
+        output.writeMessage(9, getMotionInfo());
+      }
+      if (velocity_ != 0D) {
+        output.writeDouble(11, velocity_);
+      }
+      if (fOJAFFAPNHE_ != 0L) {
+        output.writeUInt64(13, fOJAFFAPNHE_);
       }
       if (sceneTime_ != 0) {
-        output.writeUInt32(7, sceneTime_);
-      }
-      if (bLNEOPIFBGK_ != 0L) {
-        output.writeUInt64(10, bLNEOPIFBGK_);
-      }
-      if (isFirstValid_ != false) {
-        output.writeBool(15, isFirstValid_);
+        output.writeUInt32(14, sceneTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -305,29 +521,52 @@ public final class ForceDragAvatarNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (jAGBKBMJEKP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, jAGBKBMJEKP_);
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getPos());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, transaction_);
+      }
+      if (speed_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(4, speed_);
+      }
+      if (pPEKPNLMANA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, pPEKPNLMANA_);
+      }
+      if (sceneTimeMs_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, sceneTimeMs_);
+      }
+      if (iPOLBGOJJLB_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(7, iPOLBGOJJLB_);
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, entityId_);
-      }
-      if (cHFNMCLHBOI_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, cHFNMCLHBOI_);
+          .computeUInt32Size(8, entityId_);
       }
       if (motionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getMotionInfo());
+          .computeMessageSize(9, getMotionInfo());
+      }
+      if (velocity_ != 0D) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(11, velocity_);
+      }
+      if (fOJAFFAPNHE_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(13, fOJAFFAPNHE_);
       }
       if (sceneTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sceneTime_);
-      }
-      if (bLNEOPIFBGK_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, bLNEOPIFBGK_);
-      }
-      if (isFirstValid_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFirstValid_);
+          .computeUInt32Size(14, sceneTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,19 +583,36 @@ public final class ForceDragAvatarNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify other = (emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify) obj;
 
+      if (getJAGBKBMJEKP()
+          != other.getJAGBKBMJEKP()) return false;
+      if (hasPos() != other.hasPos()) return false;
+      if (hasPos()) {
+        if (!getPos()
+            .equals(other.getPos())) return false;
+      }
+      if (!getTransaction()
+          .equals(other.getTransaction())) return false;
+      if (java.lang.Float.floatToIntBits(getSpeed())
+          != java.lang.Float.floatToIntBits(
+              other.getSpeed())) return false;
+      if (getPPEKPNLMANA()
+          != other.getPPEKPNLMANA()) return false;
+      if (getSceneTimeMs()
+          != other.getSceneTimeMs()) return false;
+      if (getIPOLBGOJJLB()
+          != other.getIPOLBGOJJLB()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasMotionInfo() != other.hasMotionInfo()) return false;
       if (hasMotionInfo()) {
         if (!getMotionInfo()
             .equals(other.getMotionInfo())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getBLNEOPIFBGK()
-          != other.getBLNEOPIFBGK()) return false;
-      if (getIsFirstValid()
-          != other.getIsFirstValid()) return false;
-      if (getCHFNMCLHBOI()
-          != other.getCHFNMCLHBOI()) return false;
+      if (java.lang.Double.doubleToLongBits(getVelocity())
+          != java.lang.Double.doubleToLongBits(
+              other.getVelocity())) return false;
+      if (getFOJAFFAPNHE()
+          != other.getFOJAFFAPNHE()) return false;
       if (getSceneTime()
           != other.getSceneTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -370,21 +626,38 @@ public final class ForceDragAvatarNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + JAGBKBMJEKP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getJAGBKBMJEKP());
+      if (hasPos()) {
+        hash = (37 * hash) + POS_FIELD_NUMBER;
+        hash = (53 * hash) + getPos().hashCode();
+      }
+      hash = (37 * hash) + TRANSACTION_FIELD_NUMBER;
+      hash = (53 * hash) + getTransaction().hashCode();
+      hash = (37 * hash) + SPEED_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSpeed());
+      hash = (37 * hash) + PPEKPNLMANA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPPEKPNLMANA());
+      hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneTimeMs();
+      hash = (37 * hash) + IPOLBGOJJLB_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getIPOLBGOJJLB());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasMotionInfo()) {
         hash = (37 * hash) + MOTION_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMotionInfo().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + BLNEOPIFBGK_FIELD_NUMBER;
+      hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBLNEOPIFBGK());
-      hash = (37 * hash) + IS_FIRST_VALID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFirstValid());
-      hash = (37 * hash) + CHFNMCLHBOI_FIELD_NUMBER;
+          java.lang.Double.doubleToLongBits(getVelocity()));
+      hash = (37 * hash) + FOJAFFAPNHE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCHFNMCLHBOI());
+          getFOJAFFAPNHE());
       hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getSceneTime();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -484,8 +757,7 @@ public final class ForceDragAvatarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2141
-     * Obf: GFBHCMKNPCG
+     * CmdId: 2189
      * </pre>
      *
      * Protobuf type {@code ForceDragAvatarNotify}
@@ -525,19 +797,35 @@ public final class ForceDragAvatarNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        jAGBKBMJEKP_ = false;
+
+        if (posBuilder_ == null) {
+          pos_ = null;
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+        transaction_ = "";
+
+        speed_ = 0F;
+
+        pPEKPNLMANA_ = false;
+
+        sceneTimeMs_ = 0;
+
+        iPOLBGOJJLB_ = 0L;
+
+        entityId_ = 0;
+
         if (motionInfoBuilder_ == null) {
           motionInfo_ = null;
         } else {
           motionInfo_ = null;
           motionInfoBuilder_ = null;
         }
-        entityId_ = 0;
+        velocity_ = 0D;
 
-        bLNEOPIFBGK_ = 0L;
-
-        isFirstValid_ = false;
-
-        cHFNMCLHBOI_ = 0L;
+        fOJAFFAPNHE_ = 0L;
 
         sceneTime_ = 0;
 
@@ -567,15 +855,25 @@ public final class ForceDragAvatarNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify buildPartial() {
         emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify result = new emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify(this);
+        result.jAGBKBMJEKP_ = jAGBKBMJEKP_;
+        if (posBuilder_ == null) {
+          result.pos_ = pos_;
+        } else {
+          result.pos_ = posBuilder_.build();
+        }
+        result.transaction_ = transaction_;
+        result.speed_ = speed_;
+        result.pPEKPNLMANA_ = pPEKPNLMANA_;
+        result.sceneTimeMs_ = sceneTimeMs_;
+        result.iPOLBGOJJLB_ = iPOLBGOJJLB_;
+        result.entityId_ = entityId_;
         if (motionInfoBuilder_ == null) {
           result.motionInfo_ = motionInfo_;
         } else {
           result.motionInfo_ = motionInfoBuilder_.build();
         }
-        result.entityId_ = entityId_;
-        result.bLNEOPIFBGK_ = bLNEOPIFBGK_;
-        result.isFirstValid_ = isFirstValid_;
-        result.cHFNMCLHBOI_ = cHFNMCLHBOI_;
+        result.velocity_ = velocity_;
+        result.fOJAFFAPNHE_ = fOJAFFAPNHE_;
         result.sceneTime_ = sceneTime_;
         onBuilt();
         return result;
@@ -625,20 +923,39 @@ public final class ForceDragAvatarNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify other) {
         if (other == emu.grasscutter.net.proto.ForceDragAvatarNotifyOuterClass.ForceDragAvatarNotify.getDefaultInstance()) return this;
-        if (other.hasMotionInfo()) {
-          mergeMotionInfo(other.getMotionInfo());
+        if (other.getJAGBKBMJEKP() != false) {
+          setJAGBKBMJEKP(other.getJAGBKBMJEKP());
+        }
+        if (other.hasPos()) {
+          mergePos(other.getPos());
+        }
+        if (!other.getTransaction().isEmpty()) {
+          transaction_ = other.transaction_;
+          onChanged();
+        }
+        if (other.getSpeed() != 0F) {
+          setSpeed(other.getSpeed());
+        }
+        if (other.getPPEKPNLMANA() != false) {
+          setPPEKPNLMANA(other.getPPEKPNLMANA());
+        }
+        if (other.getSceneTimeMs() != 0) {
+          setSceneTimeMs(other.getSceneTimeMs());
+        }
+        if (other.getIPOLBGOJJLB() != 0L) {
+          setIPOLBGOJJLB(other.getIPOLBGOJJLB());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getBLNEOPIFBGK() != 0L) {
-          setBLNEOPIFBGK(other.getBLNEOPIFBGK());
+        if (other.hasMotionInfo()) {
+          mergeMotionInfo(other.getMotionInfo());
         }
-        if (other.getIsFirstValid() != false) {
-          setIsFirstValid(other.getIsFirstValid());
+        if (other.getVelocity() != 0D) {
+          setVelocity(other.getVelocity());
         }
-        if (other.getCHFNMCLHBOI() != 0L) {
-          setCHFNMCLHBOI(other.getCHFNMCLHBOI());
+        if (other.getFOJAFFAPNHE() != 0L) {
+          setFOJAFFAPNHE(other.getFOJAFFAPNHE());
         }
         if (other.getSceneTime() != 0) {
           setSceneTime(other.getSceneTime());
@@ -672,18 +989,399 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
 
+      private boolean jAGBKBMJEKP_ ;
+      /**
+       * <code>bool JAGBKBMJEKP = 1;</code>
+       * @return The jAGBKBMJEKP.
+       */
+      @java.lang.Override
+      public boolean getJAGBKBMJEKP() {
+        return jAGBKBMJEKP_;
+      }
+      /**
+       * <code>bool JAGBKBMJEKP = 1;</code>
+       * @param value The jAGBKBMJEKP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJAGBKBMJEKP(boolean value) {
+        
+        jAGBKBMJEKP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool JAGBKBMJEKP = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJAGBKBMJEKP() {
+        
+        jAGBKBMJEKP_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 2;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return posBuilder_ != null || pos_ != null;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+          onChanged();
+        } else {
+          posBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+          onChanged();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (pos_ != null) {
+            pos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          } else {
+            pos_ = value;
+          }
+          onChanged();
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder clearPos() {
+        if (posBuilder_ == null) {
+          pos_ = null;
+          onChanged();
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
+      private java.lang.Object transaction_ = "";
+      /**
+       * <code>string transaction = 3;</code>
+       * @return The transaction.
+       */
+      public java.lang.String getTransaction() {
+        java.lang.Object ref = transaction_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          transaction_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string transaction = 3;</code>
+       * @return The bytes for transaction.
+       */
+      public com.google.protobuf.ByteString
+          getTransactionBytes() {
+        java.lang.Object ref = transaction_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          transaction_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string transaction = 3;</code>
+       * @param value The transaction to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransaction(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        transaction_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string transaction = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTransaction() {
+        
+        transaction_ = getDefaultInstance().getTransaction();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string transaction = 3;</code>
+       * @param value The bytes for transaction to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransactionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        transaction_ = value;
+        onChanged();
+        return this;
+      }
+
+      private float speed_ ;
+      /**
+       * <code>float speed = 4;</code>
+       * @return The speed.
+       */
+      @java.lang.Override
+      public float getSpeed() {
+        return speed_;
+      }
+      /**
+       * <code>float speed = 4;</code>
+       * @param value The speed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSpeed(float value) {
+        
+        speed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float speed = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSpeed() {
+        
+        speed_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private boolean pPEKPNLMANA_ ;
+      /**
+       * <code>bool PPEKPNLMANA = 5;</code>
+       * @return The pPEKPNLMANA.
+       */
+      @java.lang.Override
+      public boolean getPPEKPNLMANA() {
+        return pPEKPNLMANA_;
+      }
+      /**
+       * <code>bool PPEKPNLMANA = 5;</code>
+       * @param value The pPEKPNLMANA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPPEKPNLMANA(boolean value) {
+        
+        pPEKPNLMANA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool PPEKPNLMANA = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPPEKPNLMANA() {
+        
+        pPEKPNLMANA_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int sceneTimeMs_ ;
+      /**
+       * <code>int32 scene_time_ms = 6;</code>
+       * @return The sceneTimeMs.
+       */
+      @java.lang.Override
+      public int getSceneTimeMs() {
+        return sceneTimeMs_;
+      }
+      /**
+       * <code>int32 scene_time_ms = 6;</code>
+       * @param value The sceneTimeMs to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneTimeMs(int value) {
+        
+        sceneTimeMs_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 scene_time_ms = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneTimeMs() {
+        
+        sceneTimeMs_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long iPOLBGOJJLB_ ;
+      /**
+       * <code>uint64 IPOLBGOJJLB = 7;</code>
+       * @return The iPOLBGOJJLB.
+       */
+      @java.lang.Override
+      public long getIPOLBGOJJLB() {
+        return iPOLBGOJJLB_;
+      }
+      /**
+       * <code>uint64 IPOLBGOJJLB = 7;</code>
+       * @param value The iPOLBGOJJLB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIPOLBGOJJLB(long value) {
+        
+        iPOLBGOJJLB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 IPOLBGOJJLB = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIPOLBGOJJLB() {
+        
+        iPOLBGOJJLB_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> motionInfoBuilder_;
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        * @return Whether the motionInfo field is set.
        */
       public boolean hasMotionInfo() {
         return motionInfoBuilder_ != null || motionInfo_ != null;
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        * @return The motionInfo.
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
@@ -694,7 +1392,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder setMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (motionInfoBuilder_ == null) {
@@ -710,7 +1408,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder setMotionInfo(
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder builderForValue) {
@@ -724,7 +1422,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder mergeMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (motionInfoBuilder_ == null) {
@@ -742,7 +1440,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public Builder clearMotionInfo() {
         if (motionInfoBuilder_ == null) {
@@ -756,7 +1454,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder getMotionInfoBuilder() {
         
@@ -764,7 +1462,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return getMotionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
         if (motionInfoBuilder_ != null) {
@@ -775,7 +1473,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo motion_info = 4;</code>
+       * <code>.MotionInfo motion_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> 
@@ -791,133 +1489,71 @@ public final class ForceDragAvatarNotifyOuterClass {
         return motionInfoBuilder_;
       }
 
-      private int entityId_ ;
+      private double velocity_ ;
       /**
-       * <code>uint32 entity_id = 1;</code>
-       * @return The entityId.
+       * <code>double velocity = 11;</code>
+       * @return The velocity.
        */
       @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      public double getVelocity() {
+        return velocity_;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
-       * @param value The entityId to set.
+       * <code>double velocity = 11;</code>
+       * @param value The velocity to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityId(int value) {
+      public Builder setVelocity(double value) {
         
-        entityId_ = value;
+        velocity_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <code>double velocity = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEntityId() {
+      public Builder clearVelocity() {
         
-        entityId_ = 0;
+        velocity_ = 0D;
         onChanged();
         return this;
       }
 
-      private long bLNEOPIFBGK_ ;
+      private long fOJAFFAPNHE_ ;
       /**
-       * <code>uint64 BLNEOPIFBGK = 10;</code>
-       * @return The bLNEOPIFBGK.
+       * <code>uint64 FOJAFFAPNHE = 13;</code>
+       * @return The fOJAFFAPNHE.
        */
       @java.lang.Override
-      public long getBLNEOPIFBGK() {
-        return bLNEOPIFBGK_;
+      public long getFOJAFFAPNHE() {
+        return fOJAFFAPNHE_;
       }
       /**
-       * <code>uint64 BLNEOPIFBGK = 10;</code>
-       * @param value The bLNEOPIFBGK to set.
+       * <code>uint64 FOJAFFAPNHE = 13;</code>
+       * @param value The fOJAFFAPNHE to set.
        * @return This builder for chaining.
        */
-      public Builder setBLNEOPIFBGK(long value) {
+      public Builder setFOJAFFAPNHE(long value) {
         
-        bLNEOPIFBGK_ = value;
+        fOJAFFAPNHE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 BLNEOPIFBGK = 10;</code>
+       * <code>uint64 FOJAFFAPNHE = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBLNEOPIFBGK() {
+      public Builder clearFOJAFFAPNHE() {
         
-        bLNEOPIFBGK_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFirstValid_ ;
-      /**
-       * <code>bool is_first_valid = 15;</code>
-       * @return The isFirstValid.
-       */
-      @java.lang.Override
-      public boolean getIsFirstValid() {
-        return isFirstValid_;
-      }
-      /**
-       * <code>bool is_first_valid = 15;</code>
-       * @param value The isFirstValid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFirstValid(boolean value) {
-        
-        isFirstValid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_first_valid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFirstValid() {
-        
-        isFirstValid_ = false;
-        onChanged();
-        return this;
-      }
-
-      private long cHFNMCLHBOI_ ;
-      /**
-       * <code>uint64 CHFNMCLHBOI = 3;</code>
-       * @return The cHFNMCLHBOI.
-       */
-      @java.lang.Override
-      public long getCHFNMCLHBOI() {
-        return cHFNMCLHBOI_;
-      }
-      /**
-       * <code>uint64 CHFNMCLHBOI = 3;</code>
-       * @param value The cHFNMCLHBOI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCHFNMCLHBOI(long value) {
-        
-        cHFNMCLHBOI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 CHFNMCLHBOI = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCHFNMCLHBOI() {
-        
-        cHFNMCLHBOI_ = 0L;
+        fOJAFFAPNHE_ = 0L;
         onChanged();
         return this;
       }
 
       private int sceneTime_ ;
       /**
-       * <code>uint32 scene_time = 7;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @return The sceneTime.
        */
       @java.lang.Override
@@ -925,7 +1561,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return sceneTime_;
       }
       /**
-       * <code>uint32 scene_time = 7;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @param value The sceneTime to set.
        * @return This builder for chaining.
        */
@@ -936,7 +1572,7 @@ public final class ForceDragAvatarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_time = 7;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTime() {
@@ -1013,25 +1649,30 @@ public final class ForceDragAvatarNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ForceDragAvatarNotify.proto\032\020MotionInf" +
-      "o.proto\"\242\001\n\025ForceDragAvatarNotify\022 \n\013mot" +
-      "ion_info\030\004 \001(\0132\013.MotionInfo\022\021\n\tentity_id" +
-      "\030\001 \001(\r\022\023\n\013BLNEOPIFBGK\030\n \001(\004\022\026\n\016is_first_" +
-      "valid\030\017 \001(\010\022\023\n\013CHFNMCLHBOI\030\003 \001(\004\022\022\n\nscen" +
-      "e_time\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "o.proto\032\014Vector.proto\"\227\002\n\025ForceDragAvata" +
+      "rNotify\022\023\n\013JAGBKBMJEKP\030\001 \001(\010\022\024\n\003pos\030\002 \001(" +
+      "\0132\007.Vector\022\023\n\013transaction\030\003 \001(\t\022\r\n\005speed" +
+      "\030\004 \001(\002\022\023\n\013PPEKPNLMANA\030\005 \001(\010\022\025\n\rscene_tim" +
+      "e_ms\030\006 \001(\005\022\023\n\013IPOLBGOJJLB\030\007 \001(\004\022\021\n\tentit" +
+      "y_id\030\010 \001(\r\022 \n\013motion_info\030\t \001(\0132\013.Motion" +
+      "Info\022\020\n\010velocity\030\013 \001(\001\022\023\n\013FOJAFFAPNHE\030\r " +
+      "\001(\004\022\022\n\nscene_time\030\016 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_ForceDragAvatarNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ForceDragAvatarNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForceDragAvatarNotify_descriptor,
-        new java.lang.String[] { "MotionInfo", "EntityId", "BLNEOPIFBGK", "IsFirstValid", "CHFNMCLHBOI", "SceneTime", });
+        new java.lang.String[] { "JAGBKBMJEKP", "Pos", "Transaction", "Speed", "PPEKPNLMANA", "SceneTimeMs", "IPOLBGOJJLB", "EntityId", "MotionInfo", "Velocity", "FOJAFFAPNHE", "SceneTime", });
     emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

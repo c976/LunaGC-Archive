@@ -19,64 +19,100 @@ public final class CoinCollectPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 choose_skill_no = 15;</code>
-     * @return The chooseSkillNo.
-     */
-    int getChooseSkillNo();
-
-    /**
-     * <code>string player_name = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string player_name = 12;</code>
      * @return The playerName.
      */
     java.lang.String getPlayerName();
     /**
-     * <code>string player_name = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string player_name = 12;</code>
      * @return The bytes for playerName.
      */
     com.google.protobuf.ByteString
         getPlayerNameBytes();
 
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> 
+    java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> 
         getAvatarInfoListList();
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
-    emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo getAvatarInfoList(int index);
+    emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF getAvatarInfoList(int index);
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     int getAvatarInfoListCount();
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder> 
         getAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
-    emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+    emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder getAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_prepare = 8;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 player_uid = 5;</code>
+     * @return The playerUid.
+     */
+    int getPlayerUid();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_prepare = 3;</code>
      * @return The isPrepare.
      */
     boolean getIsPrepare();
 
     /**
-     * <code>uint32 player_uid = 1;</code>
-     * @return The playerUid.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NKOCAKGEMNL = 15;</code>
+     * @return The nKOCAKGEMNL.
      */
-    int getPlayerUid();
+    int getNKOCAKGEMNL();
   }
   /**
-   * <pre>
-   * Obf: ALJNLEHDBFF
-   * </pre>
-   *
    * Protobuf type {@code CoinCollectPlayerInfo}
    */
   public static final class CoinCollectPlayerInfo extends
@@ -124,26 +160,26 @@ public final class CoinCollectPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              playerUid_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              avatarInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
+            case 24: {
 
               isPrepare_ = input.readBool();
               break;
             }
-            case 82: {
+            case 40: {
+
+              playerUid_ = input.readUInt32();
+              break;
+            }
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              avatarInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.parser(), extensionRegistry));
+              break;
+            }
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               playerName_ = s;
@@ -151,7 +187,7 @@ public final class CoinCollectPlayerInfoOuterClass {
             }
             case 120: {
 
-              chooseSkillNo_ = input.readUInt32();
+              nKOCAKGEMNL_ = input.readUInt32();
               break;
             }
             default: {
@@ -189,21 +225,14 @@ public final class CoinCollectPlayerInfoOuterClass {
               emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.class, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder.class);
     }
 
-    public static final int CHOOSE_SKILL_NO_FIELD_NUMBER = 15;
-    private int chooseSkillNo_;
-    /**
-     * <code>uint32 choose_skill_no = 15;</code>
-     * @return The chooseSkillNo.
-     */
-    @java.lang.Override
-    public int getChooseSkillNo() {
-      return chooseSkillNo_;
-    }
-
-    public static final int PLAYER_NAME_FIELD_NUMBER = 10;
+    public static final int PLAYER_NAME_FIELD_NUMBER = 12;
     private volatile java.lang.Object playerName_;
     /**
-     * <code>string player_name = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string player_name = 12;</code>
      * @return The playerName.
      */
     @java.lang.Override
@@ -220,7 +249,11 @@ public final class CoinCollectPlayerInfoOuterClass {
       }
     }
     /**
-     * <code>string player_name = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string player_name = 12;</code>
      * @return The bytes for playerName.
      */
     @java.lang.Override
@@ -238,50 +271,89 @@ public final class CoinCollectPlayerInfoOuterClass {
       }
     }
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> avatarInfoList_;
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> avatarInfoList_;
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> getAvatarInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> getAvatarInfoListList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder> 
         getAvatarInfoListOrBuilderList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     @java.lang.Override
     public int getAvatarInfoListCount() {
       return avatarInfoList_.size();
     }
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo getAvatarInfoList(int index) {
+    public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF getAvatarInfoList(int index) {
       return avatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+    public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder getAvatarInfoListOrBuilder(
         int index) {
       return avatarInfoList_.get(index);
     }
 
-    public static final int IS_PREPARE_FIELD_NUMBER = 8;
+    public static final int PLAYER_UID_FIELD_NUMBER = 5;
+    private int playerUid_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 player_uid = 5;</code>
+     * @return The playerUid.
+     */
+    @java.lang.Override
+    public int getPlayerUid() {
+      return playerUid_;
+    }
+
+    public static final int IS_PREPARE_FIELD_NUMBER = 3;
     private boolean isPrepare_;
     /**
-     * <code>bool is_prepare = 8;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_prepare = 3;</code>
      * @return The isPrepare.
      */
     @java.lang.Override
@@ -289,15 +361,19 @@ public final class CoinCollectPlayerInfoOuterClass {
       return isPrepare_;
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 1;
-    private int playerUid_;
+    public static final int NKOCAKGEMNL_FIELD_NUMBER = 15;
+    private int nKOCAKGEMNL_;
     /**
-     * <code>uint32 player_uid = 1;</code>
-     * @return The playerUid.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NKOCAKGEMNL = 15;</code>
+     * @return The nKOCAKGEMNL.
      */
     @java.lang.Override
-    public int getPlayerUid() {
-      return playerUid_;
+    public int getNKOCAKGEMNL() {
+      return nKOCAKGEMNL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -314,20 +390,20 @@ public final class CoinCollectPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isPrepare_ != false) {
+        output.writeBool(3, isPrepare_);
+      }
       if (playerUid_ != 0) {
-        output.writeUInt32(1, playerUid_);
+        output.writeUInt32(5, playerUid_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(7, avatarInfoList_.get(i));
-      }
-      if (isPrepare_ != false) {
-        output.writeBool(8, isPrepare_);
+        output.writeMessage(11, avatarInfoList_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, playerName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, playerName_);
       }
-      if (chooseSkillNo_ != 0) {
-        output.writeUInt32(15, chooseSkillNo_);
+      if (nKOCAKGEMNL_ != 0) {
+        output.writeUInt32(15, nKOCAKGEMNL_);
       }
       unknownFields.writeTo(output);
     }
@@ -338,24 +414,24 @@ public final class CoinCollectPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isPrepare_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isPrepare_);
+      }
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playerUid_);
+          .computeUInt32Size(5, playerUid_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, avatarInfoList_.get(i));
-      }
-      if (isPrepare_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isPrepare_);
+          .computeMessageSize(11, avatarInfoList_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, playerName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, playerName_);
       }
-      if (chooseSkillNo_ != 0) {
+      if (nKOCAKGEMNL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, chooseSkillNo_);
+          .computeUInt32Size(15, nKOCAKGEMNL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,16 +448,16 @@ public final class CoinCollectPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo other = (emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo) obj;
 
-      if (getChooseSkillNo()
-          != other.getChooseSkillNo()) return false;
       if (!getPlayerName()
           .equals(other.getPlayerName())) return false;
       if (!getAvatarInfoListList()
           .equals(other.getAvatarInfoListList())) return false;
-      if (getIsPrepare()
-          != other.getIsPrepare()) return false;
       if (getPlayerUid()
           != other.getPlayerUid()) return false;
+      if (getIsPrepare()
+          != other.getIsPrepare()) return false;
+      if (getNKOCAKGEMNL()
+          != other.getNKOCAKGEMNL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,19 +469,19 @@ public final class CoinCollectPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHOOSE_SKILL_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getChooseSkillNo();
       hash = (37 * hash) + PLAYER_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerName().hashCode();
       if (getAvatarInfoListCount() > 0) {
         hash = (37 * hash) + AVATAR_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarInfoListList().hashCode();
       }
+      hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerUid();
       hash = (37 * hash) + IS_PREPARE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPrepare());
-      hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerUid();
+      hash = (37 * hash) + NKOCAKGEMNL_FIELD_NUMBER;
+      hash = (53 * hash) + getNKOCAKGEMNL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -502,10 +578,6 @@ public final class CoinCollectPlayerInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: ALJNLEHDBFF
-     * </pre>
-     *
      * Protobuf type {@code CoinCollectPlayerInfo}
      */
     public static final class Builder extends
@@ -544,8 +616,6 @@ public final class CoinCollectPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        chooseSkillNo_ = 0;
-
         playerName_ = "";
 
         if (avatarInfoListBuilder_ == null) {
@@ -554,9 +624,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         } else {
           avatarInfoListBuilder_.clear();
         }
+        playerUid_ = 0;
+
         isPrepare_ = false;
 
-        playerUid_ = 0;
+        nKOCAKGEMNL_ = 0;
 
         return this;
       }
@@ -585,7 +657,6 @@ public final class CoinCollectPlayerInfoOuterClass {
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo result = new emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo(this);
         int from_bitField0_ = bitField0_;
-        result.chooseSkillNo_ = chooseSkillNo_;
         result.playerName_ = playerName_;
         if (avatarInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -596,8 +667,9 @@ public final class CoinCollectPlayerInfoOuterClass {
         } else {
           result.avatarInfoList_ = avatarInfoListBuilder_.build();
         }
-        result.isPrepare_ = isPrepare_;
         result.playerUid_ = playerUid_;
+        result.isPrepare_ = isPrepare_;
+        result.nKOCAKGEMNL_ = nKOCAKGEMNL_;
         onBuilt();
         return result;
       }
@@ -646,9 +718,6 @@ public final class CoinCollectPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.getDefaultInstance()) return this;
-        if (other.getChooseSkillNo() != 0) {
-          setChooseSkillNo(other.getChooseSkillNo());
-        }
         if (!other.getPlayerName().isEmpty()) {
           playerName_ = other.playerName_;
           onChanged();
@@ -679,11 +748,14 @@ public final class CoinCollectPlayerInfoOuterClass {
             }
           }
         }
+        if (other.getPlayerUid() != 0) {
+          setPlayerUid(other.getPlayerUid());
+        }
         if (other.getIsPrepare() != false) {
           setIsPrepare(other.getIsPrepare());
         }
-        if (other.getPlayerUid() != 0) {
-          setPlayerUid(other.getPlayerUid());
+        if (other.getNKOCAKGEMNL() != 0) {
+          setNKOCAKGEMNL(other.getNKOCAKGEMNL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -715,40 +787,13 @@ public final class CoinCollectPlayerInfoOuterClass {
       }
       private int bitField0_;
 
-      private int chooseSkillNo_ ;
-      /**
-       * <code>uint32 choose_skill_no = 15;</code>
-       * @return The chooseSkillNo.
-       */
-      @java.lang.Override
-      public int getChooseSkillNo() {
-        return chooseSkillNo_;
-      }
-      /**
-       * <code>uint32 choose_skill_no = 15;</code>
-       * @param value The chooseSkillNo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChooseSkillNo(int value) {
-        
-        chooseSkillNo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 choose_skill_no = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChooseSkillNo() {
-        
-        chooseSkillNo_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object playerName_ = "";
       /**
-       * <code>string player_name = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string player_name = 12;</code>
        * @return The playerName.
        */
       public java.lang.String getPlayerName() {
@@ -764,7 +809,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string player_name = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string player_name = 12;</code>
        * @return The bytes for playerName.
        */
       public com.google.protobuf.ByteString
@@ -781,7 +830,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string player_name = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string player_name = 12;</code>
        * @param value The playerName to set.
        * @return This builder for chaining.
        */
@@ -796,7 +849,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string player_name = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string player_name = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerName() {
@@ -806,7 +863,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string player_name = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string player_name = 12;</code>
        * @param value The bytes for playerName to set.
        * @return This builder for chaining.
        */
@@ -822,22 +883,26 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> avatarInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> avatarInfoList_ =
         java.util.Collections.emptyList();
       private void ensureAvatarInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo>(avatarInfoList_);
+          avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF>(avatarInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder> avatarInfoListBuilder_;
+          emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> getAvatarInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(avatarInfoList_);
         } else {
@@ -845,7 +910,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -855,9 +924,13 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo getAvatarInfoList(int index) {
+      public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
           return avatarInfoList_.get(index);
         } else {
@@ -865,10 +938,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder setAvatarInfoList(
-          int index, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo value) {
+          int index, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF value) {
         if (avatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -882,10 +959,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder setAvatarInfoList(
-          int index, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder builderForValue) {
         if (avatarInfoListBuilder_ == null) {
           ensureAvatarInfoListIsMutable();
           avatarInfoList_.set(index, builderForValue.build());
@@ -896,9 +977,13 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public Builder addAvatarInfoList(emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo value) {
+      public Builder addAvatarInfoList(emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF value) {
         if (avatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -912,10 +997,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder addAvatarInfoList(
-          int index, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo value) {
+          int index, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF value) {
         if (avatarInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -929,10 +1018,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder addAvatarInfoList(
-          emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder builderForValue) {
         if (avatarInfoListBuilder_ == null) {
           ensureAvatarInfoListIsMutable();
           avatarInfoList_.add(builderForValue.build());
@@ -943,10 +1036,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder addAvatarInfoList(
-          int index, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder builderForValue) {
         if (avatarInfoListBuilder_ == null) {
           ensureAvatarInfoListIsMutable();
           avatarInfoList_.add(index, builderForValue.build());
@@ -957,10 +1054,14 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder addAllAvatarInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF> values) {
         if (avatarInfoListBuilder_ == null) {
           ensureAvatarInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -972,7 +1073,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -985,7 +1090,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -998,16 +1107,24 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder getAvatarInfoListBuilder(
+      public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+      public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder getAvatarInfoListOrBuilder(
           int index) {
         if (avatarInfoListBuilder_ == null) {
           return avatarInfoList_.get(index);  } else {
@@ -1015,9 +1132,13 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder> 
            getAvatarInfoListOrBuilderList() {
         if (avatarInfoListBuilder_ != null) {
           return avatarInfoListBuilder_.getMessageOrBuilderList();
@@ -1026,33 +1147,45 @@ public final class CoinCollectPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder addAvatarInfoListBuilder() {
+      public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder addAvatarInfoListBuilder(
+      public emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder addAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoinCollectTeamAvatarInfo avatar_info_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NPKOCJHAENF avatar_info_list = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder> 
            getAvatarInfoListBuilderList() {
         return getAvatarInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder> 
+          emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder> 
           getAvatarInfoListFieldBuilder() {
         if (avatarInfoListBuilder_ == null) {
           avatarInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfo.Builder, emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.CoinCollectTeamAvatarInfoOrBuilder>(
+              emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENF.Builder, emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.NPKOCJHAENFOrBuilder>(
                   avatarInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1062,40 +1195,13 @@ public final class CoinCollectPlayerInfoOuterClass {
         return avatarInfoListBuilder_;
       }
 
-      private boolean isPrepare_ ;
-      /**
-       * <code>bool is_prepare = 8;</code>
-       * @return The isPrepare.
-       */
-      @java.lang.Override
-      public boolean getIsPrepare() {
-        return isPrepare_;
-      }
-      /**
-       * <code>bool is_prepare = 8;</code>
-       * @param value The isPrepare to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPrepare(boolean value) {
-        
-        isPrepare_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_prepare = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPrepare() {
-        
-        isPrepare_ = false;
-        onChanged();
-        return this;
-      }
-
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 1;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 player_uid = 5;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -1103,7 +1209,11 @@ public final class CoinCollectPlayerInfoOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 1;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 player_uid = 5;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -1114,12 +1224,102 @@ public final class CoinCollectPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 1;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 player_uid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
         
         playerUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPrepare_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_prepare = 3;</code>
+       * @return The isPrepare.
+       */
+      @java.lang.Override
+      public boolean getIsPrepare() {
+        return isPrepare_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_prepare = 3;</code>
+       * @param value The isPrepare to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPrepare(boolean value) {
+        
+        isPrepare_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_prepare = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPrepare() {
+        
+        isPrepare_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int nKOCAKGEMNL_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NKOCAKGEMNL = 15;</code>
+       * @return The nKOCAKGEMNL.
+       */
+      @java.lang.Override
+      public int getNKOCAKGEMNL() {
+        return nKOCAKGEMNL_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NKOCAKGEMNL = 15;</code>
+       * @param value The nKOCAKGEMNL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNKOCAKGEMNL(int value) {
+        
+        nKOCAKGEMNL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NKOCAKGEMNL = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNKOCAKGEMNL() {
+        
+        nKOCAKGEMNL_ = 0;
         onChanged();
         return this;
       }
@@ -1190,26 +1390,25 @@ public final class CoinCollectPlayerInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033CoinCollectPlayerInfo.proto\032\037CoinColle" +
-      "ctTeamAvatarInfo.proto\"\243\001\n\025CoinCollectPl" +
-      "ayerInfo\022\027\n\017choose_skill_no\030\017 \001(\r\022\023\n\013pla" +
-      "yer_name\030\n \001(\t\0224\n\020avatar_info_list\030\007 \003(\013" +
-      "2\032.CoinCollectTeamAvatarInfo\022\022\n\nis_prepa" +
-      "re\030\010 \001(\010\022\022\n\nplayer_uid\030\001 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\033CoinCollectPlayerInfo.proto\032\021NPKOCJHAE" +
+      "NF.proto\"\221\001\n\025CoinCollectPlayerInfo\022\023\n\013pl" +
+      "ayer_name\030\014 \001(\t\022&\n\020avatar_info_list\030\013 \003(" +
+      "\0132\014.NPKOCJHAENF\022\022\n\nplayer_uid\030\005 \001(\r\022\022\n\ni" +
+      "s_prepare\030\003 \001(\010\022\023\n\013NKOCAKGEMNL\030\017 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.getDescriptor(),
         });
     internal_static_CoinCollectPlayerInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CoinCollectPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoinCollectPlayerInfo_descriptor,
-        new java.lang.String[] { "ChooseSkillNo", "PlayerName", "AvatarInfoList", "IsPrepare", "PlayerUid", });
-    emu.grasscutter.net.proto.CoinCollectTeamAvatarInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "PlayerName", "AvatarInfoList", "PlayerUid", "IsPrepare", "NKOCAKGEMNL", });
+    emu.grasscutter.net.proto.NPKOCJHAENFOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

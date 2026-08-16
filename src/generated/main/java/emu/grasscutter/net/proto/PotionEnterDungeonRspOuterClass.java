@@ -26,8 +26,7 @@ public final class PotionEnterDungeonRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7418
-   * Obf: LMIJKOGIEEC
+   * CmdId: 26170
    * </pre>
    *
    * Protobuf type {@code PotionEnterDungeonRsp}
@@ -279,8 +278,7 @@ public final class PotionEnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7418
-     * Obf: LMIJKOGIEEC
+     * CmdId: 26170
      * </pre>
      *
      * Protobuf type {@code PotionEnterDungeonRsp}

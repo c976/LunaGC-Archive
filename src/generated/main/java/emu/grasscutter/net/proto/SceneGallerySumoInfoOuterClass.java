@@ -19,28 +19,36 @@ public final class SceneGallerySumoInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DEJJPIOCJDD = 2;</code>
-     * @return The dEJJPIOCJDD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 2;</code>
+     * @return The fMOCDOENEOL.
      */
-    int getDEJJPIOCJDD();
+    int getFMOCDOENEOL();
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 ENBKLKPPLHL = 6;</code>
-     * @return The eNBKLKPPLHL.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 6;</code>
+     * @return The oIGNGOLLEKO.
      */
-    int getENBKLKPPLHL();
+    int getOIGNGOLLEKO();
   }
   /**
-   * <pre>
-   * Obf: OKEPMGEBDNP
-   * </pre>
-   *
    * Protobuf type {@code SceneGallerySumoInfo}
    */
   public static final class SceneGallerySumoInfo extends
@@ -87,15 +95,15 @@ public final class SceneGallerySumoInfoOuterClass {
               break;
             case 16: {
 
-              dEJJPIOCJDD_ = input.readUInt32();
+              fMOCDOENEOL_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              eNBKLKPPLHL_ = input.readUInt32();
+              oIGNGOLLEKO_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
               score_ = input.readUInt32();
               break;
@@ -132,21 +140,29 @@ public final class SceneGallerySumoInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.class, emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.Builder.class);
     }
 
-    public static final int DEJJPIOCJDD_FIELD_NUMBER = 2;
-    private int dEJJPIOCJDD_;
+    public static final int FMOCDOENEOL_FIELD_NUMBER = 2;
+    private int fMOCDOENEOL_;
     /**
-     * <code>uint32 DEJJPIOCJDD = 2;</code>
-     * @return The dEJJPIOCJDD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 2;</code>
+     * @return The fMOCDOENEOL.
      */
     @java.lang.Override
-    public int getDEJJPIOCJDD() {
-      return dEJJPIOCJDD_;
+    public int getFMOCDOENEOL() {
+      return fMOCDOENEOL_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 9;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -154,15 +170,19 @@ public final class SceneGallerySumoInfoOuterClass {
       return score_;
     }
 
-    public static final int ENBKLKPPLHL_FIELD_NUMBER = 6;
-    private int eNBKLKPPLHL_;
+    public static final int OIGNGOLLEKO_FIELD_NUMBER = 6;
+    private int oIGNGOLLEKO_;
     /**
-     * <code>uint32 ENBKLKPPLHL = 6;</code>
-     * @return The eNBKLKPPLHL.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 6;</code>
+     * @return The oIGNGOLLEKO.
      */
     @java.lang.Override
-    public int getENBKLKPPLHL() {
-      return eNBKLKPPLHL_;
+    public int getOIGNGOLLEKO() {
+      return oIGNGOLLEKO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +199,14 @@ public final class SceneGallerySumoInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dEJJPIOCJDD_ != 0) {
-        output.writeUInt32(2, dEJJPIOCJDD_);
+      if (fMOCDOENEOL_ != 0) {
+        output.writeUInt32(2, fMOCDOENEOL_);
       }
-      if (eNBKLKPPLHL_ != 0) {
-        output.writeUInt32(6, eNBKLKPPLHL_);
+      if (oIGNGOLLEKO_ != 0) {
+        output.writeUInt32(6, oIGNGOLLEKO_);
       }
       if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(9, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +217,17 @@ public final class SceneGallerySumoInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dEJJPIOCJDD_ != 0) {
+      if (fMOCDOENEOL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dEJJPIOCJDD_);
+          .computeUInt32Size(2, fMOCDOENEOL_);
       }
-      if (eNBKLKPPLHL_ != 0) {
+      if (oIGNGOLLEKO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, eNBKLKPPLHL_);
+          .computeUInt32Size(6, oIGNGOLLEKO_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(9, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class SceneGallerySumoInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo other = (emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo) obj;
 
-      if (getDEJJPIOCJDD()
-          != other.getDEJJPIOCJDD()) return false;
+      if (getFMOCDOENEOL()
+          != other.getFMOCDOENEOL()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getENBKLKPPLHL()
-          != other.getENBKLKPPLHL()) return false;
+      if (getOIGNGOLLEKO()
+          != other.getOIGNGOLLEKO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +261,12 @@ public final class SceneGallerySumoInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DEJJPIOCJDD_FIELD_NUMBER;
-      hash = (53 * hash) + getDEJJPIOCJDD();
+      hash = (37 * hash) + FMOCDOENEOL_FIELD_NUMBER;
+      hash = (53 * hash) + getFMOCDOENEOL();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + ENBKLKPPLHL_FIELD_NUMBER;
-      hash = (53 * hash) + getENBKLKPPLHL();
+      hash = (37 * hash) + OIGNGOLLEKO_FIELD_NUMBER;
+      hash = (53 * hash) + getOIGNGOLLEKO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +363,6 @@ public final class SceneGallerySumoInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OKEPMGEBDNP
-     * </pre>
-     *
      * Protobuf type {@code SceneGallerySumoInfo}
      */
     public static final class Builder extends
@@ -384,11 +400,11 @@ public final class SceneGallerySumoInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dEJJPIOCJDD_ = 0;
+        fMOCDOENEOL_ = 0;
 
         score_ = 0;
 
-        eNBKLKPPLHL_ = 0;
+        oIGNGOLLEKO_ = 0;
 
         return this;
       }
@@ -416,9 +432,9 @@ public final class SceneGallerySumoInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo result = new emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo(this);
-        result.dEJJPIOCJDD_ = dEJJPIOCJDD_;
+        result.fMOCDOENEOL_ = fMOCDOENEOL_;
         result.score_ = score_;
-        result.eNBKLKPPLHL_ = eNBKLKPPLHL_;
+        result.oIGNGOLLEKO_ = oIGNGOLLEKO_;
         onBuilt();
         return result;
       }
@@ -467,14 +483,14 @@ public final class SceneGallerySumoInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySumoInfoOuterClass.SceneGallerySumoInfo.getDefaultInstance()) return this;
-        if (other.getDEJJPIOCJDD() != 0) {
-          setDEJJPIOCJDD(other.getDEJJPIOCJDD());
+        if (other.getFMOCDOENEOL() != 0) {
+          setFMOCDOENEOL(other.getFMOCDOENEOL());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getENBKLKPPLHL() != 0) {
-          setENBKLKPPLHL(other.getENBKLKPPLHL());
+        if (other.getOIGNGOLLEKO() != 0) {
+          setOIGNGOLLEKO(other.getOIGNGOLLEKO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,40 +521,56 @@ public final class SceneGallerySumoInfoOuterClass {
         return this;
       }
 
-      private int dEJJPIOCJDD_ ;
+      private int fMOCDOENEOL_ ;
       /**
-       * <code>uint32 DEJJPIOCJDD = 2;</code>
-       * @return The dEJJPIOCJDD.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 2;</code>
+       * @return The fMOCDOENEOL.
        */
       @java.lang.Override
-      public int getDEJJPIOCJDD() {
-        return dEJJPIOCJDD_;
+      public int getFMOCDOENEOL() {
+        return fMOCDOENEOL_;
       }
       /**
-       * <code>uint32 DEJJPIOCJDD = 2;</code>
-       * @param value The dEJJPIOCJDD to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 2;</code>
+       * @param value The fMOCDOENEOL to set.
        * @return This builder for chaining.
        */
-      public Builder setDEJJPIOCJDD(int value) {
+      public Builder setFMOCDOENEOL(int value) {
         
-        dEJJPIOCJDD_ = value;
+        fMOCDOENEOL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DEJJPIOCJDD = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDEJJPIOCJDD() {
+      public Builder clearFMOCDOENEOL() {
         
-        dEJJPIOCJDD_ = 0;
+        fMOCDOENEOL_ = 0;
         onChanged();
         return this;
       }
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -546,7 +578,11 @@ public final class SceneGallerySumoInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -557,7 +593,11 @@ public final class SceneGallerySumoInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -567,33 +607,45 @@ public final class SceneGallerySumoInfoOuterClass {
         return this;
       }
 
-      private int eNBKLKPPLHL_ ;
+      private int oIGNGOLLEKO_ ;
       /**
-       * <code>uint32 ENBKLKPPLHL = 6;</code>
-       * @return The eNBKLKPPLHL.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 6;</code>
+       * @return The oIGNGOLLEKO.
        */
       @java.lang.Override
-      public int getENBKLKPPLHL() {
-        return eNBKLKPPLHL_;
+      public int getOIGNGOLLEKO() {
+        return oIGNGOLLEKO_;
       }
       /**
-       * <code>uint32 ENBKLKPPLHL = 6;</code>
-       * @param value The eNBKLKPPLHL to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 6;</code>
+       * @param value The oIGNGOLLEKO to set.
        * @return This builder for chaining.
        */
-      public Builder setENBKLKPPLHL(int value) {
+      public Builder setOIGNGOLLEKO(int value) {
         
-        eNBKLKPPLHL_ = value;
+        oIGNGOLLEKO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ENBKLKPPLHL = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearENBKLKPPLHL() {
+      public Builder clearOIGNGOLLEKO() {
         
-        eNBKLKPPLHL_ = 0;
+        oIGNGOLLEKO_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +717,8 @@ public final class SceneGallerySumoInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032SceneGallerySumoInfo.proto\"O\n\024SceneGal" +
-      "lerySumoInfo\022\023\n\013DEJJPIOCJDD\030\002 \001(\r\022\r\n\005sco" +
-      "re\030\n \001(\r\022\023\n\013ENBKLKPPLHL\030\006 \001(\rB\033\n\031emu.gra" +
+      "lerySumoInfo\022\023\n\013FMOCDOENEOL\030\002 \001(\r\022\r\n\005sco" +
+      "re\030\t \001(\r\022\023\n\013OIGNGOLLEKO\030\006 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +730,7 @@ public final class SceneGallerySumoInfoOuterClass {
     internal_static_SceneGallerySumoInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySumoInfo_descriptor,
-        new java.lang.String[] { "DEJJPIOCJDD", "Score", "ENBKLKPPLHL", });
+        new java.lang.String[] { "FMOCDOENEOL", "Score", "OIGNGOLLEKO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

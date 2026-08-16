@@ -19,21 +19,21 @@ public final class WidgetClientDetectorInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-     * @return A list containing the mHMDOCDIELK.
+     * <code>repeated uint32 config_id_list = 1;</code>
+     * @return A list containing the configIdList.
      */
-    java.util.List<java.lang.Integer> getMHMDOCDIELKList();
+    java.util.List<java.lang.Integer> getConfigIdListList();
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-     * @return The count of mHMDOCDIELK.
+     * <code>repeated uint32 config_id_list = 1;</code>
+     * @return The count of configIdList.
      */
-    int getMHMDOCDIELKCount();
+    int getConfigIdListCount();
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
+     * <code>repeated uint32 config_id_list = 1;</code>
      * @param index The index of the element to return.
-     * @return The mHMDOCDIELK at the given index.
+     * @return The configIdList at the given index.
      */
-    int getMHMDOCDIELK(int index);
+    int getConfigIdList(int index);
   }
   /**
    * Protobuf type {@code WidgetClientDetectorInfo}
@@ -48,7 +48,7 @@ public final class WidgetClientDetectorInfoOuterClass {
       super(builder);
     }
     private WidgetClientDetectorInfo() {
-      mHMDOCDIELK_ = emptyIntList();
+      configIdList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -82,23 +82,23 @@ public final class WidgetClientDetectorInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mHMDOCDIELK_ = newIntList();
+                configIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              mHMDOCDIELK_.addInt(input.readUInt32());
+              configIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                mHMDOCDIELK_ = newIntList();
+                configIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                mHMDOCDIELK_.addInt(input.readUInt32());
+                configIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -119,7 +119,7 @@ public final class WidgetClientDetectorInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          mHMDOCDIELK_.makeImmutable(); // C
+          configIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -138,33 +138,33 @@ public final class WidgetClientDetectorInfoOuterClass {
               emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.class, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder.class);
     }
 
-    public static final int MHMDOCDIELK_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.IntList mHMDOCDIELK_;
+    public static final int CONFIG_ID_LIST_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList configIdList_;
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-     * @return A list containing the mHMDOCDIELK.
+     * <code>repeated uint32 config_id_list = 1;</code>
+     * @return A list containing the configIdList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getMHMDOCDIELKList() {
-      return mHMDOCDIELK_;
+        getConfigIdListList() {
+      return configIdList_;
     }
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-     * @return The count of mHMDOCDIELK.
+     * <code>repeated uint32 config_id_list = 1;</code>
+     * @return The count of configIdList.
      */
-    public int getMHMDOCDIELKCount() {
-      return mHMDOCDIELK_.size();
+    public int getConfigIdListCount() {
+      return configIdList_.size();
     }
     /**
-     * <code>repeated uint32 MHMDOCDIELK = 6;</code>
+     * <code>repeated uint32 config_id_list = 1;</code>
      * @param index The index of the element to return.
-     * @return The mHMDOCDIELK at the given index.
+     * @return The configIdList at the given index.
      */
-    public int getMHMDOCDIELK(int index) {
-      return mHMDOCDIELK_.getInt(index);
+    public int getConfigIdList(int index) {
+      return configIdList_.getInt(index);
     }
-    private int mHMDOCDIELKMemoizedSerializedSize = -1;
+    private int configIdListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -181,12 +181,12 @@ public final class WidgetClientDetectorInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getMHMDOCDIELKList().size() > 0) {
-        output.writeUInt32NoTag(50);
-        output.writeUInt32NoTag(mHMDOCDIELKMemoizedSerializedSize);
+      if (getConfigIdListList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(configIdListMemoizedSerializedSize);
       }
-      for (int i = 0; i < mHMDOCDIELK_.size(); i++) {
-        output.writeUInt32NoTag(mHMDOCDIELK_.getInt(i));
+      for (int i = 0; i < configIdList_.size(); i++) {
+        output.writeUInt32NoTag(configIdList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +199,17 @@ public final class WidgetClientDetectorInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < mHMDOCDIELK_.size(); i++) {
+        for (int i = 0; i < configIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(mHMDOCDIELK_.getInt(i));
+            .computeUInt32SizeNoTag(configIdList_.getInt(i));
         }
         size += dataSize;
-        if (!getMHMDOCDIELKList().isEmpty()) {
+        if (!getConfigIdListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        mHMDOCDIELKMemoizedSerializedSize = dataSize;
+        configIdListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,8 +226,8 @@ public final class WidgetClientDetectorInfoOuterClass {
       }
       emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo other = (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) obj;
 
-      if (!getMHMDOCDIELKList()
-          .equals(other.getMHMDOCDIELKList())) return false;
+      if (!getConfigIdListList()
+          .equals(other.getConfigIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,9 +239,9 @@ public final class WidgetClientDetectorInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getMHMDOCDIELKCount() > 0) {
-        hash = (37 * hash) + MHMDOCDIELK_FIELD_NUMBER;
-        hash = (53 * hash) + getMHMDOCDIELKList().hashCode();
+      if (getConfigIdListCount() > 0) {
+        hash = (37 * hash) + CONFIG_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getConfigIdListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,7 +376,7 @@ public final class WidgetClientDetectorInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mHMDOCDIELK_ = emptyIntList();
+        configIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -406,10 +406,10 @@ public final class WidgetClientDetectorInfoOuterClass {
         emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo result = new emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          mHMDOCDIELK_.makeImmutable();
+          configIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.mHMDOCDIELK_ = mHMDOCDIELK_;
+        result.configIdList_ = configIdList_;
         onBuilt();
         return result;
       }
@@ -458,13 +458,13 @@ public final class WidgetClientDetectorInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo other) {
         if (other == emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance()) return this;
-        if (!other.mHMDOCDIELK_.isEmpty()) {
-          if (mHMDOCDIELK_.isEmpty()) {
-            mHMDOCDIELK_ = other.mHMDOCDIELK_;
+        if (!other.configIdList_.isEmpty()) {
+          if (configIdList_.isEmpty()) {
+            configIdList_ = other.configIdList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureMHMDOCDIELKIsMutable();
-            mHMDOCDIELK_.addAll(other.mHMDOCDIELK_);
+            ensureConfigIdListIsMutable();
+            configIdList_.addAll(other.configIdList_);
           }
           onChanged();
         }
@@ -498,80 +498,80 @@ public final class WidgetClientDetectorInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList mHMDOCDIELK_ = emptyIntList();
-      private void ensureMHMDOCDIELKIsMutable() {
+      private com.google.protobuf.Internal.IntList configIdList_ = emptyIntList();
+      private void ensureConfigIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          mHMDOCDIELK_ = mutableCopy(mHMDOCDIELK_);
+          configIdList_ = mutableCopy(configIdList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-       * @return A list containing the mHMDOCDIELK.
+       * <code>repeated uint32 config_id_list = 1;</code>
+       * @return A list containing the configIdList.
        */
       public java.util.List<java.lang.Integer>
-          getMHMDOCDIELKList() {
+          getConfigIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(mHMDOCDIELK_) : mHMDOCDIELK_;
+                 java.util.Collections.unmodifiableList(configIdList_) : configIdList_;
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-       * @return The count of mHMDOCDIELK.
+       * <code>repeated uint32 config_id_list = 1;</code>
+       * @return The count of configIdList.
        */
-      public int getMHMDOCDIELKCount() {
-        return mHMDOCDIELK_.size();
+      public int getConfigIdListCount() {
+        return configIdList_.size();
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
+       * <code>repeated uint32 config_id_list = 1;</code>
        * @param index The index of the element to return.
-       * @return The mHMDOCDIELK at the given index.
+       * @return The configIdList at the given index.
        */
-      public int getMHMDOCDIELK(int index) {
-        return mHMDOCDIELK_.getInt(index);
+      public int getConfigIdList(int index) {
+        return configIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
+       * <code>repeated uint32 config_id_list = 1;</code>
        * @param index The index to set the value at.
-       * @param value The mHMDOCDIELK to set.
+       * @param value The configIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setMHMDOCDIELK(
+      public Builder setConfigIdList(
           int index, int value) {
-        ensureMHMDOCDIELKIsMutable();
-        mHMDOCDIELK_.setInt(index, value);
+        ensureConfigIdListIsMutable();
+        configIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-       * @param value The mHMDOCDIELK to add.
+       * <code>repeated uint32 config_id_list = 1;</code>
+       * @param value The configIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addMHMDOCDIELK(int value) {
-        ensureMHMDOCDIELKIsMutable();
-        mHMDOCDIELK_.addInt(value);
+      public Builder addConfigIdList(int value) {
+        ensureConfigIdListIsMutable();
+        configIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
-       * @param values The mHMDOCDIELK to add.
+       * <code>repeated uint32 config_id_list = 1;</code>
+       * @param values The configIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllMHMDOCDIELK(
+      public Builder addAllConfigIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureMHMDOCDIELKIsMutable();
+        ensureConfigIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, mHMDOCDIELK_);
+            values, configIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 MHMDOCDIELK = 6;</code>
+       * <code>repeated uint32 config_id_list = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMHMDOCDIELK() {
-        mHMDOCDIELK_ = emptyIntList();
+      public Builder clearConfigIdList() {
+        configIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -643,9 +643,10 @@ public final class WidgetClientDetectorInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036WidgetClientDetectorInfo.proto\"/\n\030Widg" +
-      "etClientDetectorInfo\022\023\n\013MHMDOCDIELK\030\006 \003(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\036WidgetClientDetectorInfo.proto\"2\n\030Widg" +
+      "etClientDetectorInfo\022\026\n\016config_id_list\030\001" +
+      " \003(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -656,7 +657,7 @@ public final class WidgetClientDetectorInfoOuterClass {
     internal_static_WidgetClientDetectorInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetClientDetectorInfo_descriptor,
-        new java.lang.String[] { "MHMDOCDIELK", });
+        new java.lang.String[] { "ConfigIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

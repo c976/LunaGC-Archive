@@ -15,73 +15,69 @@ public final class SalvageEscortStopReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: IEFIFHKIGNC
-   * </pre>
-   *
    * Protobuf enum {@code SalvageEscortStopReason}
    */
   public enum SalvageEscortStopReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SALVAGE_ESCORT_STOP_NONE = 0;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_NONE = 0;</code>
      */
-    SALVAGE_ESCORT_STOP_NONE(0),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_NONE(0),
     /**
-     * <code>SALVAGE_ESCORT_STOP_SUCCESS = 1;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_SUCCESS = 1;</code>
      */
-    SALVAGE_ESCORT_STOP_SUCCESS(1),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_SUCCESS(1),
     /**
-     * <code>SALVAGE_ESCORT_STOP_DUMP = 2;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_DUMP = 2;</code>
      */
-    SALVAGE_ESCORT_STOP_DUMP(2),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_DUMP(2),
     /**
-     * <code>SALVAGE_ESCORT_STOP_TIME = 3;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_TIME = 3;</code>
      */
-    SALVAGE_ESCORT_STOP_TIME(3),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_TIME(3),
     /**
-     * <code>SALVAGE_ESCORT_STOP_INTERRUPT = 4;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_INTERRUPT = 4;</code>
      */
-    SALVAGE_ESCORT_STOP_INTERRUPT(4),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_INTERRUPT(4),
     /**
-     * <code>SALVAGE_ESCORT_STOP_LEAVE = 5;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE = 5;</code>
      */
-    SALVAGE_ESCORT_STOP_LEAVE(5),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE(5),
     /**
-     * <code>SALVAGE_ESCORT_STOP_FULL = 6;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL = 6;</code>
      */
-    SALVAGE_ESCORT_STOP_FULL(6),
+    MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SALVAGE_ESCORT_STOP_NONE = 0;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_NONE = 0;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_NONE_VALUE = 0;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_NONE_VALUE = 0;
     /**
-     * <code>SALVAGE_ESCORT_STOP_SUCCESS = 1;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_SUCCESS = 1;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_SUCCESS_VALUE = 1;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_SUCCESS_VALUE = 1;
     /**
-     * <code>SALVAGE_ESCORT_STOP_DUMP = 2;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_DUMP = 2;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_DUMP_VALUE = 2;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_DUMP_VALUE = 2;
     /**
-     * <code>SALVAGE_ESCORT_STOP_TIME = 3;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_TIME = 3;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_TIME_VALUE = 3;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_TIME_VALUE = 3;
     /**
-     * <code>SALVAGE_ESCORT_STOP_INTERRUPT = 4;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_INTERRUPT = 4;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_INTERRUPT_VALUE = 4;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_INTERRUPT_VALUE = 4;
     /**
-     * <code>SALVAGE_ESCORT_STOP_LEAVE = 5;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE = 5;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_LEAVE_VALUE = 5;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE_VALUE = 5;
     /**
-     * <code>SALVAGE_ESCORT_STOP_FULL = 6;</code>
+     * <code>MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL = 6;</code>
      */
-    public static final int SALVAGE_ESCORT_STOP_FULL_VALUE = 6;
+    public static final int MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL_VALUE = 6;
 
 
     public final int getNumber() {
@@ -108,13 +104,13 @@ public final class SalvageEscortStopReasonOuterClass {
      */
     public static SalvageEscortStopReason forNumber(int value) {
       switch (value) {
-        case 0: return SALVAGE_ESCORT_STOP_NONE;
-        case 1: return SALVAGE_ESCORT_STOP_SUCCESS;
-        case 2: return SALVAGE_ESCORT_STOP_DUMP;
-        case 3: return SALVAGE_ESCORT_STOP_TIME;
-        case 4: return SALVAGE_ESCORT_STOP_INTERRUPT;
-        case 5: return SALVAGE_ESCORT_STOP_LEAVE;
-        case 6: return SALVAGE_ESCORT_STOP_FULL;
+        case 0: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_NONE;
+        case 1: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_SUCCESS;
+        case 2: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_DUMP;
+        case 3: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_TIME;
+        case 4: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_INTERRUPT;
+        case 5: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE;
+        case 6: return MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL;
         default: return null;
       }
     }
@@ -180,14 +176,16 @@ public final class SalvageEscortStopReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035SalvageEscortStopReason.proto*\364\001\n\027Salv" +
-      "ageEscortStopReason\022\034\n\030SALVAGE_ESCORT_ST" +
-      "OP_NONE\020\000\022\037\n\033SALVAGE_ESCORT_STOP_SUCCESS" +
-      "\020\001\022\034\n\030SALVAGE_ESCORT_STOP_DUMP\020\002\022\034\n\030SALV" +
-      "AGE_ESCORT_STOP_TIME\020\003\022!\n\035SALVAGE_ESCORT" +
-      "_STOP_INTERRUPT\020\004\022\035\n\031SALVAGE_ESCORT_STOP" +
-      "_LEAVE\020\005\022\034\n\030SALVAGE_ESCORT_STOP_FULL\020\006B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035SalvageEscortStopReason.proto*\310\002\n\027Salv" +
+      "ageEscortStopReason\022(\n$MMPIPGEEOHB_SALVA" +
+      "GE_ESCORT_STOP_NONE\020\000\022+\n\'MMPIPGEEOHB_SAL" +
+      "VAGE_ESCORT_STOP_SUCCESS\020\001\022(\n$MMPIPGEEOH" +
+      "B_SALVAGE_ESCORT_STOP_DUMP\020\002\022(\n$MMPIPGEE" +
+      "OHB_SALVAGE_ESCORT_STOP_TIME\020\003\022-\n)MMPIPG" +
+      "EEOHB_SALVAGE_ESCORT_STOP_INTERRUPT\020\004\022)\n" +
+      "%MMPIPGEEOHB_SALVAGE_ESCORT_STOP_LEAVE\020\005" +
+      "\022(\n$MMPIPGEEOHB_SALVAGE_ESCORT_STOP_FULL" +
+      "\020\006B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

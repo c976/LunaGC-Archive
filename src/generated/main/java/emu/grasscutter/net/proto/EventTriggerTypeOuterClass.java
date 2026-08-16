@@ -15,33 +15,29 @@ public final class EventTriggerTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: NCBNIKIODKP
-   * </pre>
-   *
    * Protobuf enum {@code EventTriggerType}
    */
   public enum EventTriggerType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>EVENT_TRIGGER_NONE = 0;</code>
+     * <code>NCINPNNCJMG_EVENT_TRIGGER_NONE = 0;</code>
      */
-    EVENT_TRIGGER_NONE(0),
+    NCINPNNCJMG_EVENT_TRIGGER_NONE(0),
     /**
-     * <code>EVENT_TRIGGER_ENTER_FORCE = 1;</code>
+     * <code>NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORCE = 1;</code>
      */
-    EVENT_TRIGGER_ENTER_FORCE(1),
+    NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORCE(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>EVENT_TRIGGER_NONE = 0;</code>
+     * <code>NCINPNNCJMG_EVENT_TRIGGER_NONE = 0;</code>
      */
-    public static final int EVENT_TRIGGER_NONE_VALUE = 0;
+    public static final int NCINPNNCJMG_EVENT_TRIGGER_NONE_VALUE = 0;
     /**
-     * <code>EVENT_TRIGGER_ENTER_FORCE = 1;</code>
+     * <code>NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORCE = 1;</code>
      */
-    public static final int EVENT_TRIGGER_ENTER_FORCE_VALUE = 1;
+    public static final int NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORCE_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +64,8 @@ public final class EventTriggerTypeOuterClass {
      */
     public static EventTriggerType forNumber(int value) {
       switch (value) {
-        case 0: return EVENT_TRIGGER_NONE;
-        case 1: return EVENT_TRIGGER_ENTER_FORCE;
+        case 0: return NCINPNNCJMG_EVENT_TRIGGER_NONE;
+        case 1: return NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORCE;
         default: return null;
       }
     }
@@ -135,10 +131,10 @@ public final class EventTriggerTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026EventTriggerType.proto*I\n\020EventTrigger" +
-      "Type\022\026\n\022EVENT_TRIGGER_NONE\020\000\022\035\n\031EVENT_TR" +
-      "IGGER_ENTER_FORCE\020\001B\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\026EventTriggerType.proto*a\n\020EventTrigger" +
+      "Type\022\"\n\036NCINPNNCJMG_EVENT_TRIGGER_NONE\020\000" +
+      "\022)\n%NCINPNNCJMG_EVENT_TRIGGER_ENTER_FORC" +
+      "E\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

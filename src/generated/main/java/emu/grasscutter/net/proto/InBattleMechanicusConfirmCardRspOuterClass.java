@@ -19,16 +19,16 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 13;</code>
-     * @return The cardId.
-     */
-    int getCardId();
-
-    /**
-     * <code>uint32 play_index = 7;</code>
+     * <code>uint32 play_index = 8;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
+
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
 
     /**
      * <code>uint32 group_id = 12;</code>
@@ -37,15 +37,14 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
     int getGroupId();
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
+     * <code>uint32 card_id = 13;</code>
+     * @return The cardId.
      */
-    int getRetcode();
+    int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 22810
-   * Obf: BOOPIJPDEML
+   * CmdId: 21468
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusConfirmCardRsp}
@@ -92,12 +91,12 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               playIndex_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -144,26 +143,26 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp.class, emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 13;
-    private int cardId_;
-    /**
-     * <code>uint32 card_id = 13;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int PLAY_INDEX_FIELD_NUMBER = 7;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 8;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 7;</code>
+     * <code>uint32 play_index = 8;</code>
      * @return The playIndex.
      */
     @java.lang.Override
     public int getPlayIndex() {
       return playIndex_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     public static final int GROUP_ID_FIELD_NUMBER = 12;
@@ -177,15 +176,15 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       return groupId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
+    public static final int CARD_ID_FIELD_NUMBER = 13;
+    private int cardId_;
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
+     * <code>uint32 card_id = 13;</code>
+     * @return The cardId.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getCardId() {
+      return cardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,10 +202,10 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playIndex_ != 0) {
-        output.writeUInt32(7, playIndex_);
+        output.writeUInt32(8, playIndex_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(9, retcode_);
       }
       if (groupId_ != 0) {
         output.writeUInt32(12, groupId_);
@@ -225,11 +224,11 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       size = 0;
       if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, playIndex_);
+          .computeUInt32Size(8, playIndex_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -254,14 +253,14 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp other = (emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp) obj;
 
-      if (getCardId()
-          != other.getCardId()) return false;
       if (getPlayIndex()
           != other.getPlayIndex()) return false;
-      if (getGroupId()
-          != other.getGroupId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +272,14 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
       hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getPlayIndex();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +377,7 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22810
-     * Obf: BOOPIJPDEML
+     * CmdId: 21468
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusConfirmCardRsp}
@@ -419,13 +417,13 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardId_ = 0;
-
         playIndex_ = 0;
+
+        retcode_ = 0;
 
         groupId_ = 0;
 
-        retcode_ = 0;
+        cardId_ = 0;
 
         return this;
       }
@@ -453,10 +451,10 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp result = new emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp(this);
-        result.cardId_ = cardId_;
         result.playIndex_ = playIndex_;
-        result.groupId_ = groupId_;
         result.retcode_ = retcode_;
+        result.groupId_ = groupId_;
+        result.cardId_ = cardId_;
         onBuilt();
         return result;
       }
@@ -505,17 +503,17 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusConfirmCardRspOuterClass.InBattleMechanicusConfirmCardRsp.getDefaultInstance()) return this;
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
         if (other.getPlayIndex() != 0) {
           setPlayIndex(other.getPlayIndex());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,40 +544,9 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
         return this;
       }
 
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 13;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 13;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 7;</code>
+       * <code>uint32 play_index = 8;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -587,7 +554,7 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 7;</code>
+       * <code>uint32 play_index = 8;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -598,12 +565,43 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 7;</code>
+       * <code>uint32 play_index = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
         
         playIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -639,33 +637,33 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private int cardId_ ;
       /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
+       * <code>uint32 card_id = 13;</code>
+       * @return The cardId.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getCardId() {
+        return cardId_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
+       * <code>uint32 card_id = 13;</code>
+       * @param value The cardId to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setCardId(int value) {
         
-        retcode_ = value;
+        cardId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>uint32 card_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearCardId() {
         
-        retcode_ = 0;
+        cardId_ = 0;
         onChanged();
         return this;
       }
@@ -737,9 +735,9 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&InBattleMechanicusConfirmCardRsp.proto" +
-      "\"j\n InBattleMechanicusConfirmCardRsp\022\017\n\007" +
-      "card_id\030\r \001(\r\022\022\n\nplay_index\030\007 \001(\r\022\020\n\010gro" +
-      "up_id\030\014 \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.gras" +
+      "\"j\n InBattleMechanicusConfirmCardRsp\022\022\n\n" +
+      "play_index\030\010 \001(\r\022\017\n\007retcode\030\t \001(\005\022\020\n\010gro" +
+      "up_id\030\014 \001(\r\022\017\n\007card_id\030\r \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +749,7 @@ public final class InBattleMechanicusConfirmCardRspOuterClass {
     internal_static_InBattleMechanicusConfirmCardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusConfirmCardRsp_descriptor,
-        new java.lang.String[] { "CardId", "PlayIndex", "GroupId", "Retcode", });
+        new java.lang.String[] { "PlayIndex", "Retcode", "GroupId", "CardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

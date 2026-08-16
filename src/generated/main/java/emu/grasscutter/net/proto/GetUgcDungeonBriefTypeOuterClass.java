@@ -20,72 +20,72 @@ public final class GetUgcDungeonBriefTypeOuterClass {
   public enum GetUgcDungeonBriefType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GetUgcDungeonBriefType_NONE = 0;</code>
+     * <code>JBAOBCFFFAN_NONE = 0;</code>
      */
-    GetUgcDungeonBriefType_NONE(0),
+    JBAOBCFFFAN_NONE(0),
     /**
-     * <code>GetUgcDungeonBriefType_STARRED_DUNGEON = 1;</code>
+     * <code>JBAOBCFFFAN_STARRED_DUNGEON = 1;</code>
      */
-    GetUgcDungeonBriefType_STARRED_DUNGEON(1),
+    JBAOBCFFFAN_STARRED_DUNGEON(1),
     /**
-     * <code>GetUgcDungeonBriefType_STARRED_ROOM = 2;</code>
+     * <code>JBAOBCFFFAN_STARRED_ROOM = 2;</code>
      */
-    GetUgcDungeonBriefType_STARRED_ROOM(2),
+    JBAOBCFFFAN_STARRED_ROOM(2),
     /**
-     * <code>GetUgcDungeonBriefType_OWNER = 3;</code>
+     * <code>JBAOBCFFFAN_OWNER = 3;</code>
      */
-    GetUgcDungeonBriefType_OWNER(3),
+    JBAOBCFFFAN_OWNER(3),
     /**
-     * <code>GetUgcDungeonBriefType_HISTORY = 4;</code>
+     * <code>JBAOBCFFFAN_HISTORY = 4;</code>
      */
-    GetUgcDungeonBriefType_HISTORY(4),
+    JBAOBCFFFAN_HISTORY(4),
     /**
-     * <code>GetUgcDungeonBriefType_SEARCH = 5;</code>
+     * <code>JBAOBCFFFAN_SEARCH = 5;</code>
      */
-    GetUgcDungeonBriefType_SEARCH(5),
+    JBAOBCFFFAN_SEARCH(5),
     /**
-     * <code>GetUgcDungeonBriefType_OFFICIAL = 6;</code>
+     * <code>JBAOBCFFFAN_OFFICIAL = 6;</code>
      */
-    GetUgcDungeonBriefType_OFFICIAL(6),
+    JBAOBCFFFAN_OFFICIAL(6),
     /**
-     * <code>GetUgcDungeonBriefType_TEMPLATE = 7;</code>
+     * <code>JBAOBCFFFAN_TEMPLATE = 7;</code>
      */
-    GetUgcDungeonBriefType_TEMPLATE(7),
+    JBAOBCFFFAN_TEMPLATE(7),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GetUgcDungeonBriefType_NONE = 0;</code>
+     * <code>JBAOBCFFFAN_NONE = 0;</code>
      */
-    public static final int GetUgcDungeonBriefType_NONE_VALUE = 0;
+    public static final int JBAOBCFFFAN_NONE_VALUE = 0;
     /**
-     * <code>GetUgcDungeonBriefType_STARRED_DUNGEON = 1;</code>
+     * <code>JBAOBCFFFAN_STARRED_DUNGEON = 1;</code>
      */
-    public static final int GetUgcDungeonBriefType_STARRED_DUNGEON_VALUE = 1;
+    public static final int JBAOBCFFFAN_STARRED_DUNGEON_VALUE = 1;
     /**
-     * <code>GetUgcDungeonBriefType_STARRED_ROOM = 2;</code>
+     * <code>JBAOBCFFFAN_STARRED_ROOM = 2;</code>
      */
-    public static final int GetUgcDungeonBriefType_STARRED_ROOM_VALUE = 2;
+    public static final int JBAOBCFFFAN_STARRED_ROOM_VALUE = 2;
     /**
-     * <code>GetUgcDungeonBriefType_OWNER = 3;</code>
+     * <code>JBAOBCFFFAN_OWNER = 3;</code>
      */
-    public static final int GetUgcDungeonBriefType_OWNER_VALUE = 3;
+    public static final int JBAOBCFFFAN_OWNER_VALUE = 3;
     /**
-     * <code>GetUgcDungeonBriefType_HISTORY = 4;</code>
+     * <code>JBAOBCFFFAN_HISTORY = 4;</code>
      */
-    public static final int GetUgcDungeonBriefType_HISTORY_VALUE = 4;
+    public static final int JBAOBCFFFAN_HISTORY_VALUE = 4;
     /**
-     * <code>GetUgcDungeonBriefType_SEARCH = 5;</code>
+     * <code>JBAOBCFFFAN_SEARCH = 5;</code>
      */
-    public static final int GetUgcDungeonBriefType_SEARCH_VALUE = 5;
+    public static final int JBAOBCFFFAN_SEARCH_VALUE = 5;
     /**
-     * <code>GetUgcDungeonBriefType_OFFICIAL = 6;</code>
+     * <code>JBAOBCFFFAN_OFFICIAL = 6;</code>
      */
-    public static final int GetUgcDungeonBriefType_OFFICIAL_VALUE = 6;
+    public static final int JBAOBCFFFAN_OFFICIAL_VALUE = 6;
     /**
-     * <code>GetUgcDungeonBriefType_TEMPLATE = 7;</code>
+     * <code>JBAOBCFFFAN_TEMPLATE = 7;</code>
      */
-    public static final int GetUgcDungeonBriefType_TEMPLATE_VALUE = 7;
+    public static final int JBAOBCFFFAN_TEMPLATE_VALUE = 7;
 
 
     public final int getNumber() {
@@ -112,14 +112,14 @@ public final class GetUgcDungeonBriefTypeOuterClass {
      */
     public static GetUgcDungeonBriefType forNumber(int value) {
       switch (value) {
-        case 0: return GetUgcDungeonBriefType_NONE;
-        case 1: return GetUgcDungeonBriefType_STARRED_DUNGEON;
-        case 2: return GetUgcDungeonBriefType_STARRED_ROOM;
-        case 3: return GetUgcDungeonBriefType_OWNER;
-        case 4: return GetUgcDungeonBriefType_HISTORY;
-        case 5: return GetUgcDungeonBriefType_SEARCH;
-        case 6: return GetUgcDungeonBriefType_OFFICIAL;
-        case 7: return GetUgcDungeonBriefType_TEMPLATE;
+        case 0: return JBAOBCFFFAN_NONE;
+        case 1: return JBAOBCFFFAN_STARRED_DUNGEON;
+        case 2: return JBAOBCFFFAN_STARRED_ROOM;
+        case 3: return JBAOBCFFFAN_OWNER;
+        case 4: return JBAOBCFFFAN_HISTORY;
+        case 5: return JBAOBCFFFAN_SEARCH;
+        case 6: return JBAOBCFFFAN_OFFICIAL;
+        case 7: return JBAOBCFFFAN_TEMPLATE;
         default: return null;
       }
     }
@@ -185,16 +185,14 @@ public final class GetUgcDungeonBriefTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GetUgcDungeonBriefType.proto*\301\002\n\026GetUg" +
-      "cDungeonBriefType\022\037\n\033GetUgcDungeonBriefT" +
-      "ype_NONE\020\000\022*\n&GetUgcDungeonBriefType_STA" +
-      "RRED_DUNGEON\020\001\022\'\n#GetUgcDungeonBriefType" +
-      "_STARRED_ROOM\020\002\022 \n\034GetUgcDungeonBriefTyp" +
-      "e_OWNER\020\003\022\"\n\036GetUgcDungeonBriefType_HIST" +
-      "ORY\020\004\022!\n\035GetUgcDungeonBriefType_SEARCH\020\005" +
-      "\022#\n\037GetUgcDungeonBriefType_OFFICIAL\020\006\022#\n" +
-      "\037GetUgcDungeonBriefType_TEMPLATE\020\007B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\034GetUgcDungeonBriefType.proto*\351\001\n\026GetUg" +
+      "cDungeonBriefType\022\024\n\020JBAOBCFFFAN_NONE\020\000\022" +
+      "\037\n\033JBAOBCFFFAN_STARRED_DUNGEON\020\001\022\034\n\030JBAO" +
+      "BCFFFAN_STARRED_ROOM\020\002\022\025\n\021JBAOBCFFFAN_OW" +
+      "NER\020\003\022\027\n\023JBAOBCFFFAN_HISTORY\020\004\022\026\n\022JBAOBC" +
+      "FFFAN_SEARCH\020\005\022\030\n\024JBAOBCFFFAN_OFFICIAL\020\006" +
+      "\022\030\n\024JBAOBCFFFAN_TEMPLATE\020\007B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

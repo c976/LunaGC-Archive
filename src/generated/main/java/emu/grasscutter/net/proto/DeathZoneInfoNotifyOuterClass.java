@@ -19,30 +19,34 @@ public final class DeathZoneInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo> 
         getDeathZoneInfoListList();
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo getDeathZoneInfoList(int index);
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     int getDeathZoneInfoListCount();
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder> 
         getDeathZoneInfoListOrBuilderList();
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder getDeathZoneInfoListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * CmdId: 6949
+   * </pre>
+   *
    * Protobuf type {@code DeathZoneInfoNotify}
    */
   public static final class DeathZoneInfoNotify extends
@@ -89,7 +93,7 @@ public final class DeathZoneInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 deathZoneInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +137,17 @@ public final class DeathZoneInfoNotifyOuterClass {
               emu.grasscutter.net.proto.DeathZoneInfoNotifyOuterClass.DeathZoneInfoNotify.class, emu.grasscutter.net.proto.DeathZoneInfoNotifyOuterClass.DeathZoneInfoNotify.Builder.class);
     }
 
-    public static final int DEATH_ZONE_INFO_LIST_FIELD_NUMBER = 12;
+    public static final int DEATH_ZONE_INFO_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo> deathZoneInfoList_;
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo> getDeathZoneInfoListList() {
       return deathZoneInfoList_;
     }
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder> 
@@ -151,21 +155,21 @@ public final class DeathZoneInfoNotifyOuterClass {
       return deathZoneInfoList_;
     }
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     @java.lang.Override
     public int getDeathZoneInfoListCount() {
       return deathZoneInfoList_.size();
     }
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo getDeathZoneInfoList(int index) {
       return deathZoneInfoList_.get(index);
     }
     /**
-     * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+     * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder getDeathZoneInfoListOrBuilder(
@@ -188,7 +192,7 @@ public final class DeathZoneInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < deathZoneInfoList_.size(); i++) {
-        output.writeMessage(12, deathZoneInfoList_.get(i));
+        output.writeMessage(6, deathZoneInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +205,7 @@ public final class DeathZoneInfoNotifyOuterClass {
       size = 0;
       for (int i = 0; i < deathZoneInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, deathZoneInfoList_.get(i));
+          .computeMessageSize(6, deathZoneInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -331,6 +335,10 @@ public final class DeathZoneInfoNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 6949
+     * </pre>
+     *
      * Protobuf type {@code DeathZoneInfoNotify}
      */
     public static final class Builder extends
@@ -528,7 +536,7 @@ public final class DeathZoneInfoNotifyOuterClass {
           emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder> deathZoneInfoListBuilder_;
 
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo> getDeathZoneInfoListList() {
         if (deathZoneInfoListBuilder_ == null) {
@@ -538,7 +546,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public int getDeathZoneInfoListCount() {
         if (deathZoneInfoListBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo getDeathZoneInfoList(int index) {
         if (deathZoneInfoListBuilder_ == null) {
@@ -558,7 +566,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder setDeathZoneInfoList(
           int index, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo value) {
@@ -575,7 +583,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder setDeathZoneInfoList(
           int index, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder builderForValue) {
@@ -589,7 +597,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder addDeathZoneInfoList(emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo value) {
         if (deathZoneInfoListBuilder_ == null) {
@@ -605,7 +613,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder addDeathZoneInfoList(
           int index, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo value) {
@@ -622,7 +630,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder addDeathZoneInfoList(
           emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder builderForValue) {
@@ -636,7 +644,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder addDeathZoneInfoList(
           int index, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder addAllDeathZoneInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo> values) {
@@ -665,7 +673,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder clearDeathZoneInfoList() {
         if (deathZoneInfoListBuilder_ == null) {
@@ -678,7 +686,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public Builder removeDeathZoneInfoList(int index) {
         if (deathZoneInfoListBuilder_ == null) {
@@ -691,14 +699,14 @@ public final class DeathZoneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder getDeathZoneInfoListBuilder(
           int index) {
         return getDeathZoneInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder getDeathZoneInfoListOrBuilder(
           int index) {
@@ -708,7 +716,7 @@ public final class DeathZoneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfoOrBuilder> 
            getDeathZoneInfoListOrBuilderList() {
@@ -719,14 +727,14 @@ public final class DeathZoneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder addDeathZoneInfoListBuilder() {
         return getDeathZoneInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder addDeathZoneInfoListBuilder(
           int index) {
@@ -734,7 +742,7 @@ public final class DeathZoneInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DeathZoneInfo death_zone_info_list = 12;</code>
+       * <code>repeated .DeathZoneInfo death_zone_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder> 
            getDeathZoneInfoListBuilderList() {
@@ -823,7 +831,7 @@ public final class DeathZoneInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DeathZoneInfoNotify.proto\032\023DeathZoneIn" +
       "fo.proto\"C\n\023DeathZoneInfoNotify\022,\n\024death" +
-      "_zone_info_list\030\014 \003(\0132\016.DeathZoneInfoB\033\n" +
+      "_zone_info_list\030\006 \003(\0132\016.DeathZoneInfoB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

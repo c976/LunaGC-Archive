@@ -19,27 +19,26 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>bool is_skip_match = 6;</code>
+     * <code>bool is_skip_match = 2;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
 
     /**
-     * <code>uint32 play_id = 5;</code>
+     * <code>uint32 play_id = 7;</code>
      * @return The playId.
      */
     int getPlayId();
+
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22034
-   * Obf: GHKNGANHLPA
+   * CmdId: 8751
    * </pre>
    *
    * Protobuf type {@code ScenePlayOwnerStartInviteRsp}
@@ -86,17 +85,17 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              playId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               isSkipMatch_ = input.readBool();
               break;
             }
-            case 64: {
+            case 56: {
+
+              playId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -133,21 +132,10 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
               emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp.class, emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 6;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 2;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 6;</code>
+     * <code>bool is_skip_match = 2;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
@@ -155,15 +143,26 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       return isSkipMatch_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 5;
+    public static final int PLAY_ID_FIELD_NUMBER = 7;
     private int playId_;
     /**
-     * <code>uint32 play_id = 5;</code>
+     * <code>uint32 play_id = 7;</code>
      * @return The playId.
      */
     @java.lang.Override
     public int getPlayId() {
       return playId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playId_ != 0) {
-        output.writeUInt32(5, playId_);
-      }
       if (isSkipMatch_ != false) {
-        output.writeBool(6, isSkipMatch_);
+        output.writeBool(2, isSkipMatch_);
+      }
+      if (playId_ != 0) {
+        output.writeUInt32(7, playId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, playId_);
-      }
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSkipMatch_);
+          .computeBoolSize(2, isSkipMatch_);
+      }
+      if (playId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, playId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp other = (emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsSkipMatch()
           != other.getIsSkipMatch()) return false;
       if (getPlayId()
           != other.getPlayId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +241,13 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_SKIP_MATCH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSkipMatch());
       hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +345,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22034
-     * Obf: GHKNGANHLPA
+     * CmdId: 8751
      * </pre>
      *
      * Protobuf type {@code ScenePlayOwnerStartInviteRsp}
@@ -387,11 +385,11 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         isSkipMatch_ = false;
 
         playId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -419,9 +417,9 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp buildPartial() {
         emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp result = new emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp(this);
-        result.retcode_ = retcode_;
         result.isSkipMatch_ = isSkipMatch_;
         result.playId_ = playId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -470,14 +468,14 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp other) {
         if (other == emu.grasscutter.net.proto.ScenePlayOwnerStartInviteRspOuterClass.ScenePlayOwnerStartInviteRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getIsSkipMatch() != false) {
           setIsSkipMatch(other.getIsSkipMatch());
         }
         if (other.getPlayId() != 0) {
           setPlayId(other.getPlayId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,40 +506,9 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSkipMatch_ ;
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 2;</code>
        * @return The isSkipMatch.
        */
       @java.lang.Override
@@ -549,7 +516,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
         return isSkipMatch_;
       }
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 2;</code>
        * @param value The isSkipMatch to set.
        * @return This builder for chaining.
        */
@@ -560,7 +527,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_skip_match = 6;</code>
+       * <code>bool is_skip_match = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSkipMatch() {
@@ -572,7 +539,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
 
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 5;</code>
+       * <code>uint32 play_id = 7;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -580,7 +547,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 5;</code>
+       * <code>uint32 play_id = 7;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -591,12 +558,43 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 5;</code>
+       * <code>uint32 play_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
         
         playId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -668,9 +666,9 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"ScenePlayOwnerStartInviteRsp.proto\"W\n\034" +
-      "ScenePlayOwnerStartInviteRsp\022\017\n\007retcode\030" +
-      "\010 \001(\005\022\025\n\ris_skip_match\030\006 \001(\010\022\017\n\007play_id\030" +
-      "\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "ScenePlayOwnerStartInviteRsp\022\025\n\ris_skip_" +
+      "match\030\002 \001(\010\022\017\n\007play_id\030\007 \001(\r\022\017\n\007retcode\030" +
+      "\t \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +680,7 @@ public final class ScenePlayOwnerStartInviteRspOuterClass {
     internal_static_ScenePlayOwnerStartInviteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayOwnerStartInviteRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsSkipMatch", "PlayId", });
+        new java.lang.String[] { "IsSkipMatch", "PlayId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

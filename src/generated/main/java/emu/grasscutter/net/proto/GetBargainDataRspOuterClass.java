@@ -19,36 +19,35 @@ public final class GetBargainDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     * @return Whether the snapshot field is set.
+     * <code>uint32 bargain_id = 6;</code>
+     * @return The bargainId.
      */
-    boolean hasSnapshot();
-    /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     * @return The snapshot.
-     */
-    emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot getSnapshot();
-    /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     */
-    emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder getSnapshotOrBuilder();
+    int getBargainId();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 bargain_id = 9;</code>
-     * @return The bargainId.
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     * @return Whether the snapshot field is set.
      */
-    int getBargainId();
+    boolean hasSnapshot();
+    /**
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     * @return The snapshot.
+     */
+    emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot getSnapshot();
+    /**
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     */
+    emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder getSnapshotOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 8330
-   * Obf: ALABLOCEOIH
+   * CmdId: 21230
    * </pre>
    *
    * Protobuf type {@code GetBargainDataRsp}
@@ -95,12 +94,17 @@ public final class GetBargainDataRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
+
+              bargainId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 42: {
+            case 82: {
               emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder subBuilder = null;
               if (snapshot_ != null) {
                 subBuilder = snapshot_.toBuilder();
@@ -111,11 +115,6 @@ public final class GetBargainDataRspOuterClass {
                 snapshot_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 72: {
-
-              bargainId_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,36 +149,21 @@ public final class GetBargainDataRspOuterClass {
               emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp.class, emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp.Builder.class);
     }
 
-    public static final int SNAPSHOT_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot snapshot_;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 6;
+    private int bargainId_;
     /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     * @return Whether the snapshot field is set.
+     * <code>uint32 bargain_id = 6;</code>
+     * @return The bargainId.
      */
     @java.lang.Override
-    public boolean hasSnapshot() {
-      return snapshot_ != null;
-    }
-    /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     * @return The snapshot.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot getSnapshot() {
-      return snapshot_ == null ? emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.getDefaultInstance() : snapshot_;
-    }
-    /**
-     * <code>.BargainSnapshot snapshot = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder getSnapshotOrBuilder() {
-      return getSnapshot();
+    public int getBargainId() {
+      return bargainId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -187,15 +171,30 @@ public final class GetBargainDataRspOuterClass {
       return retcode_;
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 9;
-    private int bargainId_;
+    public static final int SNAPSHOT_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot snapshot_;
     /**
-     * <code>uint32 bargain_id = 9;</code>
-     * @return The bargainId.
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     * @return Whether the snapshot field is set.
      */
     @java.lang.Override
-    public int getBargainId() {
-      return bargainId_;
+    public boolean hasSnapshot() {
+      return snapshot_ != null;
+    }
+    /**
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     * @return The snapshot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot getSnapshot() {
+      return snapshot_ == null ? emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.getDefaultInstance() : snapshot_;
+    }
+    /**
+     * <code>.BargainSnapshot snapshot = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder getSnapshotOrBuilder() {
+      return getSnapshot();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,14 +211,14 @@ public final class GetBargainDataRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (bargainId_ != 0) {
+        output.writeUInt32(6, bargainId_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (snapshot_ != null) {
-        output.writeMessage(5, getSnapshot());
-      }
-      if (bargainId_ != 0) {
-        output.writeUInt32(9, bargainId_);
+        output.writeMessage(10, getSnapshot());
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +229,17 @@ public final class GetBargainDataRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (bargainId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, bargainId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (snapshot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getSnapshot());
-      }
-      if (bargainId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bargainId_);
+          .computeMessageSize(10, getSnapshot());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -257,15 +256,15 @@ public final class GetBargainDataRspOuterClass {
       }
       emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp other = (emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp) obj;
 
+      if (getBargainId()
+          != other.getBargainId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasSnapshot() != other.hasSnapshot()) return false;
       if (hasSnapshot()) {
         if (!getSnapshot()
             .equals(other.getSnapshot())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getBargainId()
-          != other.getBargainId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -277,14 +276,14 @@ public final class GetBargainDataRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BARGAIN_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBargainId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasSnapshot()) {
         hash = (37 * hash) + SNAPSHOT_FIELD_NUMBER;
         hash = (53 * hash) + getSnapshot().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + BARGAIN_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBargainId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,8 +381,7 @@ public final class GetBargainDataRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8330
-     * Obf: ALABLOCEOIH
+     * CmdId: 21230
      * </pre>
      *
      * Protobuf type {@code GetBargainDataRsp}
@@ -423,16 +421,16 @@ public final class GetBargainDataRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bargainId_ = 0;
+
+        retcode_ = 0;
+
         if (snapshotBuilder_ == null) {
           snapshot_ = null;
         } else {
           snapshot_ = null;
           snapshotBuilder_ = null;
         }
-        retcode_ = 0;
-
-        bargainId_ = 0;
-
         return this;
       }
 
@@ -459,13 +457,13 @@ public final class GetBargainDataRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp buildPartial() {
         emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp result = new emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp(this);
+        result.bargainId_ = bargainId_;
+        result.retcode_ = retcode_;
         if (snapshotBuilder_ == null) {
           result.snapshot_ = snapshot_;
         } else {
           result.snapshot_ = snapshotBuilder_.build();
         }
-        result.retcode_ = retcode_;
-        result.bargainId_ = bargainId_;
         onBuilt();
         return result;
       }
@@ -514,14 +512,14 @@ public final class GetBargainDataRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp other) {
         if (other == emu.grasscutter.net.proto.GetBargainDataRspOuterClass.GetBargainDataRsp.getDefaultInstance()) return this;
-        if (other.hasSnapshot()) {
-          mergeSnapshot(other.getSnapshot());
+        if (other.getBargainId() != 0) {
+          setBargainId(other.getBargainId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getBargainId() != 0) {
-          setBargainId(other.getBargainId());
+        if (other.hasSnapshot()) {
+          mergeSnapshot(other.getSnapshot());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -552,18 +550,80 @@ public final class GetBargainDataRspOuterClass {
         return this;
       }
 
+      private int bargainId_ ;
+      /**
+       * <code>uint32 bargain_id = 6;</code>
+       * @return The bargainId.
+       */
+      @java.lang.Override
+      public int getBargainId() {
+        return bargainId_;
+      }
+      /**
+       * <code>uint32 bargain_id = 6;</code>
+       * @param value The bargainId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBargainId(int value) {
+        
+        bargainId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 bargain_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBargainId() {
+        
+        bargainId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot snapshot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder> snapshotBuilder_;
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        * @return Whether the snapshot field is set.
        */
       public boolean hasSnapshot() {
         return snapshotBuilder_ != null || snapshot_ != null;
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        * @return The snapshot.
        */
       public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot getSnapshot() {
@@ -574,7 +634,7 @@ public final class GetBargainDataRspOuterClass {
         }
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public Builder setSnapshot(emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot value) {
         if (snapshotBuilder_ == null) {
@@ -590,7 +650,7 @@ public final class GetBargainDataRspOuterClass {
         return this;
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public Builder setSnapshot(
           emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder builderForValue) {
@@ -604,7 +664,7 @@ public final class GetBargainDataRspOuterClass {
         return this;
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public Builder mergeSnapshot(emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot value) {
         if (snapshotBuilder_ == null) {
@@ -622,7 +682,7 @@ public final class GetBargainDataRspOuterClass {
         return this;
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public Builder clearSnapshot() {
         if (snapshotBuilder_ == null) {
@@ -636,7 +696,7 @@ public final class GetBargainDataRspOuterClass {
         return this;
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder getSnapshotBuilder() {
         
@@ -644,7 +704,7 @@ public final class GetBargainDataRspOuterClass {
         return getSnapshotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder getSnapshotOrBuilder() {
         if (snapshotBuilder_ != null) {
@@ -655,7 +715,7 @@ public final class GetBargainDataRspOuterClass {
         }
       }
       /**
-       * <code>.BargainSnapshot snapshot = 5;</code>
+       * <code>.BargainSnapshot snapshot = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshotOrBuilder> 
@@ -669,68 +729,6 @@ public final class GetBargainDataRspOuterClass {
           snapshot_ = null;
         }
         return snapshotBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bargainId_ ;
-      /**
-       * <code>uint32 bargain_id = 9;</code>
-       * @return The bargainId.
-       */
-      @java.lang.Override
-      public int getBargainId() {
-        return bargainId_;
-      }
-      /**
-       * <code>uint32 bargain_id = 9;</code>
-       * @param value The bargainId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBargainId(int value) {
-        
-        bargainId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 bargain_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBargainId() {
-        
-        bargainId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -800,9 +798,9 @@ public final class GetBargainDataRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetBargainDataRsp.proto\032\025BargainSnapsh" +
-      "ot.proto\"\\\n\021GetBargainDataRsp\022\"\n\010snapsho" +
-      "t\030\005 \001(\0132\020.BargainSnapshot\022\017\n\007retcode\030\001 \001" +
-      "(\005\022\022\n\nbargain_id\030\t \001(\rB\033\n\031emu.grasscutte" +
+      "ot.proto\"\\\n\021GetBargainDataRsp\022\022\n\nbargain" +
+      "_id\030\006 \001(\r\022\017\n\007retcode\030\007 \001(\005\022\"\n\010snapshot\030\n" +
+      " \001(\0132\020.BargainSnapshotB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -815,7 +813,7 @@ public final class GetBargainDataRspOuterClass {
     internal_static_GetBargainDataRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetBargainDataRsp_descriptor,
-        new java.lang.String[] { "Snapshot", "Retcode", "BargainId", });
+        new java.lang.String[] { "BargainId", "Retcode", "Snapshot", });
     emu.grasscutter.net.proto.BargainSnapshotOuterClass.getDescriptor();
   }
 

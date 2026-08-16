@@ -19,27 +19,47 @@ public final class StaminaFightDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> 
         getLevelInfoListList();
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ getLevelInfoList(int index);
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class StaminaFightDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class StaminaFightDetailInfoOuterClass {
               emu.grasscutter.net.proto.StaminaFightDetailInfoOuterClass.StaminaFightDetailInfo.class, emu.grasscutter.net.proto.StaminaFightDetailInfoOuterClass.StaminaFightDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> levelInfoList_;
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class StaminaFightDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(7, levelInfoList_.get(i));
+        output.writeMessage(6, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class StaminaFightDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, levelInfoList_.get(i));
+          .computeMessageSize(6, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class StaminaFightDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class StaminaFightDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class StaminaFightDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class StaminaFightDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo value) {
+          int index, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo value) {
+          int index, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class StaminaFightDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class StaminaFightDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class StaminaFightDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .StaminaFightLevelInfo level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LGMOIABMEHJ level_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJ.Builder, emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.LGMOIABMEHJOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class StaminaFightDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034StaminaFightDetailInfo.proto\032\033StaminaF" +
-      "ightLevelInfo.proto\"I\n\026StaminaFightDetai" +
-      "lInfo\022/\n\017level_info_list\030\007 \003(\0132\026.Stamina" +
-      "FightLevelInfoB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\034StaminaFightDetailInfo.proto\032\021LGMOIABM" +
+      "EHJ.proto\"?\n\026StaminaFightDetailInfo\022%\n\017l" +
+      "evel_info_list\030\006 \003(\0132\014.LGMOIABMEHJB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.getDescriptor(),
         });
     internal_static_StaminaFightDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class StaminaFightDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StaminaFightDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LGMOIABMEHJOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

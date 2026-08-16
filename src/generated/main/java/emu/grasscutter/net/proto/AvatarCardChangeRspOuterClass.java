@@ -19,15 +19,14 @@ public final class AvatarCardChangeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 3627
-   * Obf: JELOODBAPJB
+   * CmdId: 6089
    * </pre>
    *
    * Protobuf type {@code AvatarCardChangeRsp}
@@ -74,7 +73,7 @@ public final class AvatarCardChangeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class AvatarCardChangeRspOuterClass {
               emu.grasscutter.net.proto.AvatarCardChangeRspOuterClass.AvatarCardChangeRsp.class, emu.grasscutter.net.proto.AvatarCardChangeRspOuterClass.AvatarCardChangeRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class AvatarCardChangeRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(2, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class AvatarCardChangeRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class AvatarCardChangeRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3627
-     * Obf: JELOODBAPJB
+     * CmdId: 6089
      * </pre>
      *
      * Protobuf type {@code AvatarCardChangeRsp}
@@ -431,7 +429,7 @@ public final class AvatarCardChangeRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class AvatarCardChangeRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class AvatarCardChangeRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class AvatarCardChangeRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AvatarCardChangeRsp.proto\"&\n\023AvatarCar" +
-      "dChangeRsp\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grass" +
+      "dChangeRsp\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

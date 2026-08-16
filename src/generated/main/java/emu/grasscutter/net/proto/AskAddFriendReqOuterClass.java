@@ -19,12 +19,26 @@ public final class AskAddFriendReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 13;</code>
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>uint32 target_uid = 14;</code>
      * @return The targetUid.
      */
     int getTargetUid();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 22855
+   * </pre>
+   *
    * Protobuf type {@code AskAddFriendReq}
    */
   public static final class AskAddFriendReq extends
@@ -69,7 +83,12 @@ public final class AskAddFriendReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 56: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -106,15 +125,30 @@ public final class AskAddFriendReqOuterClass {
               emu.grasscutter.net.proto.AskAddFriendReqOuterClass.AskAddFriendReq.class, emu.grasscutter.net.proto.AskAddFriendReqOuterClass.AskAddFriendReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 13;
+    public static final int TARGET_UID_FIELD_NUMBER = 14;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 13;</code>
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>uint32 target_uid = 14;</code>
      * @return The targetUid.
      */
     @java.lang.Override
     public int getTargetUid() {
       return targetUid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +165,11 @@ public final class AskAddFriendReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
+      }
       if (targetUid_ != 0) {
-        output.writeUInt32(13, targetUid_);
+        output.writeUInt32(14, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +180,13 @@ public final class AskAddFriendReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, retcode_);
+      }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, targetUid_);
+          .computeUInt32Size(14, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -164,6 +205,8 @@ public final class AskAddFriendReqOuterClass {
 
       if (getTargetUid()
           != other.getTargetUid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -177,6 +220,8 @@ public final class AskAddFriendReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -273,6 +318,10 @@ public final class AskAddFriendReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 22855
+     * </pre>
+     *
      * Protobuf type {@code AskAddFriendReq}
      */
     public static final class Builder extends
@@ -312,6 +361,8 @@ public final class AskAddFriendReqOuterClass {
         super.clear();
         targetUid_ = 0;
 
+        retcode_ = 0;
+
         return this;
       }
 
@@ -339,6 +390,7 @@ public final class AskAddFriendReqOuterClass {
       public emu.grasscutter.net.proto.AskAddFriendReqOuterClass.AskAddFriendReq buildPartial() {
         emu.grasscutter.net.proto.AskAddFriendReqOuterClass.AskAddFriendReq result = new emu.grasscutter.net.proto.AskAddFriendReqOuterClass.AskAddFriendReq(this);
         result.targetUid_ = targetUid_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -390,6 +442,9 @@ public final class AskAddFriendReqOuterClass {
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -421,7 +476,11 @@ public final class AskAddFriendReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -429,7 +488,11 @@ public final class AskAddFriendReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -440,12 +503,47 @@ public final class AskAddFriendReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 13;</code>
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
         
         targetUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -516,9 +614,9 @@ public final class AskAddFriendReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025AskAddFriendReq.proto\"%\n\017AskAddFriendR" +
-      "eq\022\022\n\ntarget_uid\030\r \001(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\025AskAddFriendReq.proto\"6\n\017AskAddFriendR" +
+      "eq\022\022\n\ntarget_uid\030\016 \001(\r\022\017\n\007retcode\030\007 \001(\005B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -529,7 +627,7 @@ public final class AskAddFriendReqOuterClass {
     internal_static_AskAddFriendReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AskAddFriendReq_descriptor,
-        new java.lang.String[] { "TargetUid", });
+        new java.lang.String[] { "TargetUid", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

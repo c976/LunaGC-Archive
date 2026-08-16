@@ -19,24 +19,28 @@ public final class TakeFurnitureMakeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 make_id = 3;</code>
+     * <code>bool is_fast_finish = 14;</code>
+     * @return The isFastFinish.
+     */
+    boolean getIsFastFinish();
+
+    /**
+     * <code>uint32 make_id = 1;</code>
      * @return The makeId.
      */
     int getMakeId();
 
     /**
-     * <code>uint32 index = 15;</code>
+     * <code>uint32 index = 11;</code>
      * @return The index.
      */
     int getIndex();
-
-    /**
-     * <code>bool is_fast_finish = 9;</code>
-     * @return The isFastFinish.
-     */
-    boolean getIsFastFinish();
   }
   /**
+   * <pre>
+   * CmdId: 26847
+   * </pre>
+   *
    * Protobuf type {@code TakeFurnitureMakeReq}
    */
   public static final class TakeFurnitureMakeReq extends
@@ -81,19 +85,19 @@ public final class TakeFurnitureMakeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               makeId_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              isFastFinish_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 88: {
 
               index_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isFastFinish_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +132,21 @@ public final class TakeFurnitureMakeReqOuterClass {
               emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq.class, emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq.Builder.class);
     }
 
-    public static final int MAKE_ID_FIELD_NUMBER = 3;
+    public static final int IS_FAST_FINISH_FIELD_NUMBER = 14;
+    private boolean isFastFinish_;
+    /**
+     * <code>bool is_fast_finish = 14;</code>
+     * @return The isFastFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFastFinish() {
+      return isFastFinish_;
+    }
+
+    public static final int MAKE_ID_FIELD_NUMBER = 1;
     private int makeId_;
     /**
-     * <code>uint32 make_id = 3;</code>
+     * <code>uint32 make_id = 1;</code>
      * @return The makeId.
      */
     @java.lang.Override
@@ -139,26 +154,15 @@ public final class TakeFurnitureMakeReqOuterClass {
       return makeId_;
     }
 
-    public static final int INDEX_FIELD_NUMBER = 15;
+    public static final int INDEX_FIELD_NUMBER = 11;
     private int index_;
     /**
-     * <code>uint32 index = 15;</code>
+     * <code>uint32 index = 11;</code>
      * @return The index.
      */
     @java.lang.Override
     public int getIndex() {
       return index_;
-    }
-
-    public static final int IS_FAST_FINISH_FIELD_NUMBER = 9;
-    private boolean isFastFinish_;
-    /**
-     * <code>bool is_fast_finish = 9;</code>
-     * @return The isFastFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFastFinish() {
-      return isFastFinish_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -176,13 +180,13 @@ public final class TakeFurnitureMakeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (makeId_ != 0) {
-        output.writeUInt32(3, makeId_);
-      }
-      if (isFastFinish_ != false) {
-        output.writeBool(9, isFastFinish_);
+        output.writeUInt32(1, makeId_);
       }
       if (index_ != 0) {
-        output.writeUInt32(15, index_);
+        output.writeUInt32(11, index_);
+      }
+      if (isFastFinish_ != false) {
+        output.writeBool(14, isFastFinish_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class TakeFurnitureMakeReqOuterClass {
       size = 0;
       if (makeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, makeId_);
-      }
-      if (isFastFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFastFinish_);
+          .computeUInt32Size(1, makeId_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, index_);
+          .computeUInt32Size(11, index_);
+      }
+      if (isFastFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isFastFinish_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +224,12 @@ public final class TakeFurnitureMakeReqOuterClass {
       }
       emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq other = (emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq) obj;
 
+      if (getIsFastFinish()
+          != other.getIsFastFinish()) return false;
       if (getMakeId()
           != other.getMakeId()) return false;
       if (getIndex()
           != other.getIndex()) return false;
-      if (getIsFastFinish()
-          != other.getIsFastFinish()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +241,13 @@ public final class TakeFurnitureMakeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_FAST_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFastFinish());
       hash = (37 * hash) + MAKE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMakeId();
       hash = (37 * hash) + INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getIndex();
-      hash = (37 * hash) + IS_FAST_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFastFinish());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -340,6 +344,10 @@ public final class TakeFurnitureMakeReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 26847
+     * </pre>
+     *
      * Protobuf type {@code TakeFurnitureMakeReq}
      */
     public static final class Builder extends
@@ -377,11 +385,11 @@ public final class TakeFurnitureMakeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isFastFinish_ = false;
+
         makeId_ = 0;
 
         index_ = 0;
-
-        isFastFinish_ = false;
 
         return this;
       }
@@ -409,9 +417,9 @@ public final class TakeFurnitureMakeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq buildPartial() {
         emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq result = new emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq(this);
+        result.isFastFinish_ = isFastFinish_;
         result.makeId_ = makeId_;
         result.index_ = index_;
-        result.isFastFinish_ = isFastFinish_;
         onBuilt();
         return result;
       }
@@ -460,14 +468,14 @@ public final class TakeFurnitureMakeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq other) {
         if (other == emu.grasscutter.net.proto.TakeFurnitureMakeReqOuterClass.TakeFurnitureMakeReq.getDefaultInstance()) return this;
+        if (other.getIsFastFinish() != false) {
+          setIsFastFinish(other.getIsFastFinish());
+        }
         if (other.getMakeId() != 0) {
           setMakeId(other.getMakeId());
         }
         if (other.getIndex() != 0) {
           setIndex(other.getIndex());
-        }
-        if (other.getIsFastFinish() != false) {
-          setIsFastFinish(other.getIsFastFinish());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,9 +506,40 @@ public final class TakeFurnitureMakeReqOuterClass {
         return this;
       }
 
+      private boolean isFastFinish_ ;
+      /**
+       * <code>bool is_fast_finish = 14;</code>
+       * @return The isFastFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFastFinish() {
+        return isFastFinish_;
+      }
+      /**
+       * <code>bool is_fast_finish = 14;</code>
+       * @param value The isFastFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFastFinish(boolean value) {
+        
+        isFastFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_fast_finish = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFastFinish() {
+        
+        isFastFinish_ = false;
+        onChanged();
+        return this;
+      }
+
       private int makeId_ ;
       /**
-       * <code>uint32 make_id = 3;</code>
+       * <code>uint32 make_id = 1;</code>
        * @return The makeId.
        */
       @java.lang.Override
@@ -508,7 +547,7 @@ public final class TakeFurnitureMakeReqOuterClass {
         return makeId_;
       }
       /**
-       * <code>uint32 make_id = 3;</code>
+       * <code>uint32 make_id = 1;</code>
        * @param value The makeId to set.
        * @return This builder for chaining.
        */
@@ -519,7 +558,7 @@ public final class TakeFurnitureMakeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 make_id = 3;</code>
+       * <code>uint32 make_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMakeId() {
@@ -531,7 +570,7 @@ public final class TakeFurnitureMakeReqOuterClass {
 
       private int index_ ;
       /**
-       * <code>uint32 index = 15;</code>
+       * <code>uint32 index = 11;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -539,7 +578,7 @@ public final class TakeFurnitureMakeReqOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 15;</code>
+       * <code>uint32 index = 11;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -550,43 +589,12 @@ public final class TakeFurnitureMakeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 15;</code>
+       * <code>uint32 index = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
         
         index_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFastFinish_ ;
-      /**
-       * <code>bool is_fast_finish = 9;</code>
-       * @return The isFastFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFastFinish() {
-        return isFastFinish_;
-      }
-      /**
-       * <code>bool is_fast_finish = 9;</code>
-       * @param value The isFastFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFastFinish(boolean value) {
-        
-        isFastFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_fast_finish = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFastFinish() {
-        
-        isFastFinish_ = false;
         onChanged();
         return this;
       }
@@ -658,8 +666,8 @@ public final class TakeFurnitureMakeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032TakeFurnitureMakeReq.proto\"N\n\024TakeFurn" +
-      "itureMakeReq\022\017\n\007make_id\030\003 \001(\r\022\r\n\005index\030\017" +
-      " \001(\r\022\026\n\016is_fast_finish\030\t \001(\010B\033\n\031emu.gras" +
+      "itureMakeReq\022\026\n\016is_fast_finish\030\016 \001(\010\022\017\n\007" +
+      "make_id\030\001 \001(\r\022\r\n\005index\030\013 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +679,7 @@ public final class TakeFurnitureMakeReqOuterClass {
     internal_static_TakeFurnitureMakeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeFurnitureMakeReq_descriptor,
-        new java.lang.String[] { "MakeId", "Index", "IsFastFinish", });
+        new java.lang.String[] { "IsFastFinish", "MakeId", "Index", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

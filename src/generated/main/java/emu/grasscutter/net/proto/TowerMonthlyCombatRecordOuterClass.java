@@ -19,103 +19,183 @@ public final class TowerMonthlyCombatRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-     * @return Whether the iEGBEFPGBHF field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+     * @return Whether the oKBFPLBECGH field is set.
      */
-    boolean hasIEGBEFPGBHF();
+    boolean hasOKBFPLBECGH();
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-     * @return The iEGBEFPGBHF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+     * @return The oKBFPLBECGH.
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIEGBEFPGBHF();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getOKBFPLBECGH();
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIEGBEFPGBHFOrBuilder();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getOKBFPLBECGHOrBuilder();
 
     /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-     * @return Whether the bJFIMEGJHNK field is set.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+     * @return Whether the pMPJILIOJGO field is set.
      */
-    boolean hasBJFIMEGJHNK();
+    boolean hasPMPJILIOJGO();
     /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-     * @return The bJFIMEGJHNK.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+     * @return The pMPJILIOJGO.
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getBJFIMEGJHNK();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getPMPJILIOJGO();
     /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getBJFIMEGJHNKOrBuilder();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getPMPJILIOJGOOrBuilder();
 
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-     * @return Whether the kHGOLENGOPI field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+     * @return Whether the iFIKDFLCOJP field is set.
      */
-    boolean hasKHGOLENGOPI();
+    boolean hasIFIKDFLCOJP();
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-     * @return The kHGOLENGOPI.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+     * @return The iFIKDFLCOJP.
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getKHGOLENGOPI();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIFIKDFLCOJP();
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getKHGOLENGOPIOrBuilder();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIFIKDFLCOJPOrBuilder();
 
     /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-     * @return Whether the dOLMCJOBEMK field is set.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+     * @return Whether the mCPKFEMNDPB field is set.
      */
-    boolean hasDOLMCJOBEMK();
+    boolean hasMCPKFEMNDPB();
     /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-     * @return The dOLMCJOBEMK.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+     * @return The mCPKFEMNDPB.
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getDOLMCJOBEMK();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMCPKFEMNDPB();
     /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
      */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getDOLMCJOBEMKOrBuilder();
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMCPKFEMNDPBOrBuilder();
 
     /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-     * @return Whether the cMANJKNEHPA field is set.
-     */
-    boolean hasCMANJKNEHPA();
-    /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-     * @return The cMANJKNEHPA.
-     */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getCMANJKNEHPA();
-    /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-     */
-    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getCMANJKNEHPAOrBuilder();
-
-    /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> 
         getMostRevealAvatarListList();
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMostRevealAvatarList(int index);
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     int getMostRevealAvatarListCount();
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
         getMostRevealAvatarListOrBuilderList();
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMostRevealAvatarListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     * @return Whether the aNFNHCLMKHP field is set.
+     */
+    boolean hasANFNHCLMKHP();
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     * @return The aNFNHCLMKHP.
+     */
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getANFNHCLMKHP();
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     */
+    emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getANFNHCLMKHPOrBuilder();
   }
   /**
    * Protobuf type {@code TowerMonthlyCombatRecord}
@@ -166,18 +246,18 @@ public final class TowerMonthlyCombatRecordOuterClass {
               break;
             case 10: {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder subBuilder = null;
-              if (iEGBEFPGBHF_ != null) {
-                subBuilder = iEGBEFPGBHF_.toBuilder();
+              if (mCPKFEMNDPB_ != null) {
+                subBuilder = mCPKFEMNDPB_.toBuilder();
               }
-              iEGBEFPGBHF_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
+              mCPKFEMNDPB_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(iEGBEFPGBHF_);
-                iEGBEFPGBHF_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(mCPKFEMNDPB_);
+                mCPKFEMNDPB_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 26: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mostRevealAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair>();
                 mutable_bitField0_ |= 0x00000001;
@@ -186,54 +266,54 @@ public final class TowerMonthlyCombatRecordOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry));
               break;
             }
-            case 34: {
+            case 50: {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder subBuilder = null;
-              if (kHGOLENGOPI_ != null) {
-                subBuilder = kHGOLENGOPI_.toBuilder();
+              if (iFIKDFLCOJP_ != null) {
+                subBuilder = iFIKDFLCOJP_.toBuilder();
               }
-              kHGOLENGOPI_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
+              iFIKDFLCOJP_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(kHGOLENGOPI_);
-                kHGOLENGOPI_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(iFIKDFLCOJP_);
+                iFIKDFLCOJP_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 50: {
+            case 58: {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder subBuilder = null;
-              if (cMANJKNEHPA_ != null) {
-                subBuilder = cMANJKNEHPA_.toBuilder();
+              if (aNFNHCLMKHP_ != null) {
+                subBuilder = aNFNHCLMKHP_.toBuilder();
               }
-              cMANJKNEHPA_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
+              aNFNHCLMKHP_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(cMANJKNEHPA_);
-                cMANJKNEHPA_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(aNFNHCLMKHP_);
+                aNFNHCLMKHP_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 98: {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder subBuilder = null;
-              if (bJFIMEGJHNK_ != null) {
-                subBuilder = bJFIMEGJHNK_.toBuilder();
+              if (pMPJILIOJGO_ != null) {
+                subBuilder = pMPJILIOJGO_.toBuilder();
               }
-              bJFIMEGJHNK_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
+              pMPJILIOJGO_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(bJFIMEGJHNK_);
-                bJFIMEGJHNK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(pMPJILIOJGO_);
+                pMPJILIOJGO_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 114: {
+            case 106: {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder subBuilder = null;
-              if (dOLMCJOBEMK_ != null) {
-                subBuilder = dOLMCJOBEMK_.toBuilder();
+              if (oKBFPLBECGH_ != null) {
+                subBuilder = oKBFPLBECGH_.toBuilder();
               }
-              dOLMCJOBEMK_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
+              oKBFPLBECGH_ = input.readMessage(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(dOLMCJOBEMK_);
-                dOLMCJOBEMK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(oKBFPLBECGH_);
+                oKBFPLBECGH_ = subBuilder.buildPartial();
               }
 
               break;
@@ -273,147 +353,177 @@ public final class TowerMonthlyCombatRecordOuterClass {
               emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.class, emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder.class);
     }
 
-    public static final int IEGBEFPGBHF_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair iEGBEFPGBHF_;
+    public static final int OKBFPLBECGH_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair oKBFPLBECGH_;
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-     * @return Whether the iEGBEFPGBHF field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+     * @return Whether the oKBFPLBECGH field is set.
      */
     @java.lang.Override
-    public boolean hasIEGBEFPGBHF() {
-      return iEGBEFPGBHF_ != null;
+    public boolean hasOKBFPLBECGH() {
+      return oKBFPLBECGH_ != null;
     }
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-     * @return The iEGBEFPGBHF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+     * @return The oKBFPLBECGH.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIEGBEFPGBHF() {
-      return iEGBEFPGBHF_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iEGBEFPGBHF_;
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getOKBFPLBECGH() {
+      return oKBFPLBECGH_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : oKBFPLBECGH_;
     }
     /**
-     * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIEGBEFPGBHFOrBuilder() {
-      return getIEGBEFPGBHF();
-    }
-
-    public static final int BJFIMEGJHNK_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair bJFIMEGJHNK_;
-    /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-     * @return Whether the bJFIMEGJHNK field is set.
-     */
-    @java.lang.Override
-    public boolean hasBJFIMEGJHNK() {
-      return bJFIMEGJHNK_ != null;
-    }
-    /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-     * @return The bJFIMEGJHNK.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getBJFIMEGJHNK() {
-      return bJFIMEGJHNK_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : bJFIMEGJHNK_;
-    }
-    /**
-     * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getBJFIMEGJHNKOrBuilder() {
-      return getBJFIMEGJHNK();
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getOKBFPLBECGHOrBuilder() {
+      return getOKBFPLBECGH();
     }
 
-    public static final int KHGOLENGOPI_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair kHGOLENGOPI_;
+    public static final int PMPJILIOJGO_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair pMPJILIOJGO_;
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-     * @return Whether the kHGOLENGOPI field is set.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+     * @return Whether the pMPJILIOJGO field is set.
      */
     @java.lang.Override
-    public boolean hasKHGOLENGOPI() {
-      return kHGOLENGOPI_ != null;
+    public boolean hasPMPJILIOJGO() {
+      return pMPJILIOJGO_ != null;
     }
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-     * @return The kHGOLENGOPI.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+     * @return The pMPJILIOJGO.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getKHGOLENGOPI() {
-      return kHGOLENGOPI_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : kHGOLENGOPI_;
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getPMPJILIOJGO() {
+      return pMPJILIOJGO_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : pMPJILIOJGO_;
     }
     /**
-     * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getKHGOLENGOPIOrBuilder() {
-      return getKHGOLENGOPI();
-    }
-
-    public static final int DOLMCJOBEMK_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair dOLMCJOBEMK_;
-    /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-     * @return Whether the dOLMCJOBEMK field is set.
-     */
-    @java.lang.Override
-    public boolean hasDOLMCJOBEMK() {
-      return dOLMCJOBEMK_ != null;
-    }
-    /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-     * @return The dOLMCJOBEMK.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getDOLMCJOBEMK() {
-      return dOLMCJOBEMK_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : dOLMCJOBEMK_;
-    }
-    /**
-     * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getDOLMCJOBEMKOrBuilder() {
-      return getDOLMCJOBEMK();
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getPMPJILIOJGOOrBuilder() {
+      return getPMPJILIOJGO();
     }
 
-    public static final int CMANJKNEHPA_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair cMANJKNEHPA_;
+    public static final int IFIKDFLCOJP_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair iFIKDFLCOJP_;
     /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-     * @return Whether the cMANJKNEHPA field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+     * @return Whether the iFIKDFLCOJP field is set.
      */
     @java.lang.Override
-    public boolean hasCMANJKNEHPA() {
-      return cMANJKNEHPA_ != null;
+    public boolean hasIFIKDFLCOJP() {
+      return iFIKDFLCOJP_ != null;
     }
     /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-     * @return The cMANJKNEHPA.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+     * @return The iFIKDFLCOJP.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getCMANJKNEHPA() {
-      return cMANJKNEHPA_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : cMANJKNEHPA_;
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIFIKDFLCOJP() {
+      return iFIKDFLCOJP_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iFIKDFLCOJP_;
     }
     /**
-     * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getCMANJKNEHPAOrBuilder() {
-      return getCMANJKNEHPA();
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIFIKDFLCOJPOrBuilder() {
+      return getIFIKDFLCOJP();
     }
 
-    public static final int MOST_REVEAL_AVATAR_LIST_FIELD_NUMBER = 3;
+    public static final int MCPKFEMNDPB_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair mCPKFEMNDPB_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+     * @return Whether the mCPKFEMNDPB field is set.
+     */
+    @java.lang.Override
+    public boolean hasMCPKFEMNDPB() {
+      return mCPKFEMNDPB_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+     * @return The mCPKFEMNDPB.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMCPKFEMNDPB() {
+      return mCPKFEMNDPB_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : mCPKFEMNDPB_;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMCPKFEMNDPBOrBuilder() {
+      return getMCPKFEMNDPB();
+    }
+
+    public static final int MOST_REVEAL_AVATAR_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> mostRevealAvatarList_;
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> getMostRevealAvatarListList() {
       return mostRevealAvatarList_;
     }
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
@@ -421,26 +531,76 @@ public final class TowerMonthlyCombatRecordOuterClass {
       return mostRevealAvatarList_;
     }
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     @java.lang.Override
     public int getMostRevealAvatarListCount() {
       return mostRevealAvatarList_.size();
     }
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMostRevealAvatarList(int index) {
       return mostRevealAvatarList_.get(index);
     }
     /**
-     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMostRevealAvatarListOrBuilder(
         int index) {
       return mostRevealAvatarList_.get(index);
+    }
+
+    public static final int ANFNHCLMKHP_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair aNFNHCLMKHP_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     * @return Whether the aNFNHCLMKHP field is set.
+     */
+    @java.lang.Override
+    public boolean hasANFNHCLMKHP() {
+      return aNFNHCLMKHP_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     * @return The aNFNHCLMKHP.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getANFNHCLMKHP() {
+      return aNFNHCLMKHP_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : aNFNHCLMKHP_;
+    }
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getANFNHCLMKHPOrBuilder() {
+      return getANFNHCLMKHP();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -457,23 +617,23 @@ public final class TowerMonthlyCombatRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iEGBEFPGBHF_ != null) {
-        output.writeMessage(1, getIEGBEFPGBHF());
+      if (mCPKFEMNDPB_ != null) {
+        output.writeMessage(1, getMCPKFEMNDPB());
       }
       for (int i = 0; i < mostRevealAvatarList_.size(); i++) {
-        output.writeMessage(3, mostRevealAvatarList_.get(i));
+        output.writeMessage(2, mostRevealAvatarList_.get(i));
       }
-      if (kHGOLENGOPI_ != null) {
-        output.writeMessage(4, getKHGOLENGOPI());
+      if (iFIKDFLCOJP_ != null) {
+        output.writeMessage(6, getIFIKDFLCOJP());
       }
-      if (cMANJKNEHPA_ != null) {
-        output.writeMessage(6, getCMANJKNEHPA());
+      if (aNFNHCLMKHP_ != null) {
+        output.writeMessage(7, getANFNHCLMKHP());
       }
-      if (bJFIMEGJHNK_ != null) {
-        output.writeMessage(12, getBJFIMEGJHNK());
+      if (pMPJILIOJGO_ != null) {
+        output.writeMessage(12, getPMPJILIOJGO());
       }
-      if (dOLMCJOBEMK_ != null) {
-        output.writeMessage(14, getDOLMCJOBEMK());
+      if (oKBFPLBECGH_ != null) {
+        output.writeMessage(13, getOKBFPLBECGH());
       }
       unknownFields.writeTo(output);
     }
@@ -484,29 +644,29 @@ public final class TowerMonthlyCombatRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iEGBEFPGBHF_ != null) {
+      if (mCPKFEMNDPB_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getIEGBEFPGBHF());
+          .computeMessageSize(1, getMCPKFEMNDPB());
       }
       for (int i = 0; i < mostRevealAvatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, mostRevealAvatarList_.get(i));
+          .computeMessageSize(2, mostRevealAvatarList_.get(i));
       }
-      if (kHGOLENGOPI_ != null) {
+      if (iFIKDFLCOJP_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getKHGOLENGOPI());
+          .computeMessageSize(6, getIFIKDFLCOJP());
       }
-      if (cMANJKNEHPA_ != null) {
+      if (aNFNHCLMKHP_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getCMANJKNEHPA());
+          .computeMessageSize(7, getANFNHCLMKHP());
       }
-      if (bJFIMEGJHNK_ != null) {
+      if (pMPJILIOJGO_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getBJFIMEGJHNK());
+          .computeMessageSize(12, getPMPJILIOJGO());
       }
-      if (dOLMCJOBEMK_ != null) {
+      if (oKBFPLBECGH_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getDOLMCJOBEMK());
+          .computeMessageSize(13, getOKBFPLBECGH());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -523,33 +683,33 @@ public final class TowerMonthlyCombatRecordOuterClass {
       }
       emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord other = (emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord) obj;
 
-      if (hasIEGBEFPGBHF() != other.hasIEGBEFPGBHF()) return false;
-      if (hasIEGBEFPGBHF()) {
-        if (!getIEGBEFPGBHF()
-            .equals(other.getIEGBEFPGBHF())) return false;
+      if (hasOKBFPLBECGH() != other.hasOKBFPLBECGH()) return false;
+      if (hasOKBFPLBECGH()) {
+        if (!getOKBFPLBECGH()
+            .equals(other.getOKBFPLBECGH())) return false;
       }
-      if (hasBJFIMEGJHNK() != other.hasBJFIMEGJHNK()) return false;
-      if (hasBJFIMEGJHNK()) {
-        if (!getBJFIMEGJHNK()
-            .equals(other.getBJFIMEGJHNK())) return false;
+      if (hasPMPJILIOJGO() != other.hasPMPJILIOJGO()) return false;
+      if (hasPMPJILIOJGO()) {
+        if (!getPMPJILIOJGO()
+            .equals(other.getPMPJILIOJGO())) return false;
       }
-      if (hasKHGOLENGOPI() != other.hasKHGOLENGOPI()) return false;
-      if (hasKHGOLENGOPI()) {
-        if (!getKHGOLENGOPI()
-            .equals(other.getKHGOLENGOPI())) return false;
+      if (hasIFIKDFLCOJP() != other.hasIFIKDFLCOJP()) return false;
+      if (hasIFIKDFLCOJP()) {
+        if (!getIFIKDFLCOJP()
+            .equals(other.getIFIKDFLCOJP())) return false;
       }
-      if (hasDOLMCJOBEMK() != other.hasDOLMCJOBEMK()) return false;
-      if (hasDOLMCJOBEMK()) {
-        if (!getDOLMCJOBEMK()
-            .equals(other.getDOLMCJOBEMK())) return false;
-      }
-      if (hasCMANJKNEHPA() != other.hasCMANJKNEHPA()) return false;
-      if (hasCMANJKNEHPA()) {
-        if (!getCMANJKNEHPA()
-            .equals(other.getCMANJKNEHPA())) return false;
+      if (hasMCPKFEMNDPB() != other.hasMCPKFEMNDPB()) return false;
+      if (hasMCPKFEMNDPB()) {
+        if (!getMCPKFEMNDPB()
+            .equals(other.getMCPKFEMNDPB())) return false;
       }
       if (!getMostRevealAvatarListList()
           .equals(other.getMostRevealAvatarListList())) return false;
+      if (hasANFNHCLMKHP() != other.hasANFNHCLMKHP()) return false;
+      if (hasANFNHCLMKHP()) {
+        if (!getANFNHCLMKHP()
+            .equals(other.getANFNHCLMKHP())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -561,29 +721,29 @@ public final class TowerMonthlyCombatRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasIEGBEFPGBHF()) {
-        hash = (37 * hash) + IEGBEFPGBHF_FIELD_NUMBER;
-        hash = (53 * hash) + getIEGBEFPGBHF().hashCode();
+      if (hasOKBFPLBECGH()) {
+        hash = (37 * hash) + OKBFPLBECGH_FIELD_NUMBER;
+        hash = (53 * hash) + getOKBFPLBECGH().hashCode();
       }
-      if (hasBJFIMEGJHNK()) {
-        hash = (37 * hash) + BJFIMEGJHNK_FIELD_NUMBER;
-        hash = (53 * hash) + getBJFIMEGJHNK().hashCode();
+      if (hasPMPJILIOJGO()) {
+        hash = (37 * hash) + PMPJILIOJGO_FIELD_NUMBER;
+        hash = (53 * hash) + getPMPJILIOJGO().hashCode();
       }
-      if (hasKHGOLENGOPI()) {
-        hash = (37 * hash) + KHGOLENGOPI_FIELD_NUMBER;
-        hash = (53 * hash) + getKHGOLENGOPI().hashCode();
+      if (hasIFIKDFLCOJP()) {
+        hash = (37 * hash) + IFIKDFLCOJP_FIELD_NUMBER;
+        hash = (53 * hash) + getIFIKDFLCOJP().hashCode();
       }
-      if (hasDOLMCJOBEMK()) {
-        hash = (37 * hash) + DOLMCJOBEMK_FIELD_NUMBER;
-        hash = (53 * hash) + getDOLMCJOBEMK().hashCode();
-      }
-      if (hasCMANJKNEHPA()) {
-        hash = (37 * hash) + CMANJKNEHPA_FIELD_NUMBER;
-        hash = (53 * hash) + getCMANJKNEHPA().hashCode();
+      if (hasMCPKFEMNDPB()) {
+        hash = (37 * hash) + MCPKFEMNDPB_FIELD_NUMBER;
+        hash = (53 * hash) + getMCPKFEMNDPB().hashCode();
       }
       if (getMostRevealAvatarListCount() > 0) {
         hash = (37 * hash) + MOST_REVEAL_AVATAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMostRevealAvatarListList().hashCode();
+      }
+      if (hasANFNHCLMKHP()) {
+        hash = (37 * hash) + ANFNHCLMKHP_FIELD_NUMBER;
+        hash = (53 * hash) + getANFNHCLMKHP().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -719,41 +879,41 @@ public final class TowerMonthlyCombatRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (iEGBEFPGBHFBuilder_ == null) {
-          iEGBEFPGBHF_ = null;
+        if (oKBFPLBECGHBuilder_ == null) {
+          oKBFPLBECGH_ = null;
         } else {
-          iEGBEFPGBHF_ = null;
-          iEGBEFPGBHFBuilder_ = null;
+          oKBFPLBECGH_ = null;
+          oKBFPLBECGHBuilder_ = null;
         }
-        if (bJFIMEGJHNKBuilder_ == null) {
-          bJFIMEGJHNK_ = null;
+        if (pMPJILIOJGOBuilder_ == null) {
+          pMPJILIOJGO_ = null;
         } else {
-          bJFIMEGJHNK_ = null;
-          bJFIMEGJHNKBuilder_ = null;
+          pMPJILIOJGO_ = null;
+          pMPJILIOJGOBuilder_ = null;
         }
-        if (kHGOLENGOPIBuilder_ == null) {
-          kHGOLENGOPI_ = null;
+        if (iFIKDFLCOJPBuilder_ == null) {
+          iFIKDFLCOJP_ = null;
         } else {
-          kHGOLENGOPI_ = null;
-          kHGOLENGOPIBuilder_ = null;
+          iFIKDFLCOJP_ = null;
+          iFIKDFLCOJPBuilder_ = null;
         }
-        if (dOLMCJOBEMKBuilder_ == null) {
-          dOLMCJOBEMK_ = null;
+        if (mCPKFEMNDPBBuilder_ == null) {
+          mCPKFEMNDPB_ = null;
         } else {
-          dOLMCJOBEMK_ = null;
-          dOLMCJOBEMKBuilder_ = null;
-        }
-        if (cMANJKNEHPABuilder_ == null) {
-          cMANJKNEHPA_ = null;
-        } else {
-          cMANJKNEHPA_ = null;
-          cMANJKNEHPABuilder_ = null;
+          mCPKFEMNDPB_ = null;
+          mCPKFEMNDPBBuilder_ = null;
         }
         if (mostRevealAvatarListBuilder_ == null) {
           mostRevealAvatarList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           mostRevealAvatarListBuilder_.clear();
+        }
+        if (aNFNHCLMKHPBuilder_ == null) {
+          aNFNHCLMKHP_ = null;
+        } else {
+          aNFNHCLMKHP_ = null;
+          aNFNHCLMKHPBuilder_ = null;
         }
         return this;
       }
@@ -782,30 +942,25 @@ public final class TowerMonthlyCombatRecordOuterClass {
       public emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord buildPartial() {
         emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord result = new emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord(this);
         int from_bitField0_ = bitField0_;
-        if (iEGBEFPGBHFBuilder_ == null) {
-          result.iEGBEFPGBHF_ = iEGBEFPGBHF_;
+        if (oKBFPLBECGHBuilder_ == null) {
+          result.oKBFPLBECGH_ = oKBFPLBECGH_;
         } else {
-          result.iEGBEFPGBHF_ = iEGBEFPGBHFBuilder_.build();
+          result.oKBFPLBECGH_ = oKBFPLBECGHBuilder_.build();
         }
-        if (bJFIMEGJHNKBuilder_ == null) {
-          result.bJFIMEGJHNK_ = bJFIMEGJHNK_;
+        if (pMPJILIOJGOBuilder_ == null) {
+          result.pMPJILIOJGO_ = pMPJILIOJGO_;
         } else {
-          result.bJFIMEGJHNK_ = bJFIMEGJHNKBuilder_.build();
+          result.pMPJILIOJGO_ = pMPJILIOJGOBuilder_.build();
         }
-        if (kHGOLENGOPIBuilder_ == null) {
-          result.kHGOLENGOPI_ = kHGOLENGOPI_;
+        if (iFIKDFLCOJPBuilder_ == null) {
+          result.iFIKDFLCOJP_ = iFIKDFLCOJP_;
         } else {
-          result.kHGOLENGOPI_ = kHGOLENGOPIBuilder_.build();
+          result.iFIKDFLCOJP_ = iFIKDFLCOJPBuilder_.build();
         }
-        if (dOLMCJOBEMKBuilder_ == null) {
-          result.dOLMCJOBEMK_ = dOLMCJOBEMK_;
+        if (mCPKFEMNDPBBuilder_ == null) {
+          result.mCPKFEMNDPB_ = mCPKFEMNDPB_;
         } else {
-          result.dOLMCJOBEMK_ = dOLMCJOBEMKBuilder_.build();
-        }
-        if (cMANJKNEHPABuilder_ == null) {
-          result.cMANJKNEHPA_ = cMANJKNEHPA_;
-        } else {
-          result.cMANJKNEHPA_ = cMANJKNEHPABuilder_.build();
+          result.mCPKFEMNDPB_ = mCPKFEMNDPBBuilder_.build();
         }
         if (mostRevealAvatarListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -815,6 +970,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
           result.mostRevealAvatarList_ = mostRevealAvatarList_;
         } else {
           result.mostRevealAvatarList_ = mostRevealAvatarListBuilder_.build();
+        }
+        if (aNFNHCLMKHPBuilder_ == null) {
+          result.aNFNHCLMKHP_ = aNFNHCLMKHP_;
+        } else {
+          result.aNFNHCLMKHP_ = aNFNHCLMKHPBuilder_.build();
         }
         onBuilt();
         return result;
@@ -864,20 +1024,17 @@ public final class TowerMonthlyCombatRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord other) {
         if (other == emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.getDefaultInstance()) return this;
-        if (other.hasIEGBEFPGBHF()) {
-          mergeIEGBEFPGBHF(other.getIEGBEFPGBHF());
+        if (other.hasOKBFPLBECGH()) {
+          mergeOKBFPLBECGH(other.getOKBFPLBECGH());
         }
-        if (other.hasBJFIMEGJHNK()) {
-          mergeBJFIMEGJHNK(other.getBJFIMEGJHNK());
+        if (other.hasPMPJILIOJGO()) {
+          mergePMPJILIOJGO(other.getPMPJILIOJGO());
         }
-        if (other.hasKHGOLENGOPI()) {
-          mergeKHGOLENGOPI(other.getKHGOLENGOPI());
+        if (other.hasIFIKDFLCOJP()) {
+          mergeIFIKDFLCOJP(other.getIFIKDFLCOJP());
         }
-        if (other.hasDOLMCJOBEMK()) {
-          mergeDOLMCJOBEMK(other.getDOLMCJOBEMK());
-        }
-        if (other.hasCMANJKNEHPA()) {
-          mergeCMANJKNEHPA(other.getCMANJKNEHPA());
+        if (other.hasMCPKFEMNDPB()) {
+          mergeMCPKFEMNDPB(other.getMCPKFEMNDPB());
         }
         if (mostRevealAvatarListBuilder_ == null) {
           if (!other.mostRevealAvatarList_.isEmpty()) {
@@ -904,6 +1061,9 @@ public final class TowerMonthlyCombatRecordOuterClass {
               mostRevealAvatarListBuilder_.addAllMessages(other.mostRevealAvatarList_);
             }
           }
+        }
+        if (other.hasANFNHCLMKHP()) {
+          mergeANFNHCLMKHP(other.getANFNHCLMKHP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -935,599 +1095,624 @@ public final class TowerMonthlyCombatRecordOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair iEGBEFPGBHF_;
+      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair oKBFPLBECGH_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> iEGBEFPGBHFBuilder_;
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> oKBFPLBECGHBuilder_;
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-       * @return Whether the iEGBEFPGBHF field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+       * @return Whether the oKBFPLBECGH field is set.
        */
-      public boolean hasIEGBEFPGBHF() {
-        return iEGBEFPGBHFBuilder_ != null || iEGBEFPGBHF_ != null;
+      public boolean hasOKBFPLBECGH() {
+        return oKBFPLBECGHBuilder_ != null || oKBFPLBECGH_ != null;
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
-       * @return The iEGBEFPGBHF.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
+       * @return The oKBFPLBECGH.
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIEGBEFPGBHF() {
-        if (iEGBEFPGBHFBuilder_ == null) {
-          return iEGBEFPGBHF_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iEGBEFPGBHF_;
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getOKBFPLBECGH() {
+        if (oKBFPLBECGHBuilder_ == null) {
+          return oKBFPLBECGH_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : oKBFPLBECGH_;
         } else {
-          return iEGBEFPGBHFBuilder_.getMessage();
+          return oKBFPLBECGHBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public Builder setIEGBEFPGBHF(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (iEGBEFPGBHFBuilder_ == null) {
+      public Builder setOKBFPLBECGH(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (oKBFPLBECGHBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          iEGBEFPGBHF_ = value;
+          oKBFPLBECGH_ = value;
           onChanged();
         } else {
-          iEGBEFPGBHFBuilder_.setMessage(value);
+          oKBFPLBECGHBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public Builder setIEGBEFPGBHF(
+      public Builder setOKBFPLBECGH(
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
-        if (iEGBEFPGBHFBuilder_ == null) {
-          iEGBEFPGBHF_ = builderForValue.build();
+        if (oKBFPLBECGHBuilder_ == null) {
+          oKBFPLBECGH_ = builderForValue.build();
           onChanged();
         } else {
-          iEGBEFPGBHFBuilder_.setMessage(builderForValue.build());
+          oKBFPLBECGHBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public Builder mergeIEGBEFPGBHF(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (iEGBEFPGBHFBuilder_ == null) {
-          if (iEGBEFPGBHF_ != null) {
-            iEGBEFPGBHF_ =
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(iEGBEFPGBHF_).mergeFrom(value).buildPartial();
+      public Builder mergeOKBFPLBECGH(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (oKBFPLBECGHBuilder_ == null) {
+          if (oKBFPLBECGH_ != null) {
+            oKBFPLBECGH_ =
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(oKBFPLBECGH_).mergeFrom(value).buildPartial();
           } else {
-            iEGBEFPGBHF_ = value;
+            oKBFPLBECGH_ = value;
           }
           onChanged();
         } else {
-          iEGBEFPGBHFBuilder_.mergeFrom(value);
+          oKBFPLBECGHBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public Builder clearIEGBEFPGBHF() {
-        if (iEGBEFPGBHFBuilder_ == null) {
-          iEGBEFPGBHF_ = null;
+      public Builder clearOKBFPLBECGH() {
+        if (oKBFPLBECGHBuilder_ == null) {
+          oKBFPLBECGH_ = null;
           onChanged();
         } else {
-          iEGBEFPGBHF_ = null;
-          iEGBEFPGBHFBuilder_ = null;
+          oKBFPLBECGH_ = null;
+          oKBFPLBECGHBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getIEGBEFPGBHFBuilder() {
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getOKBFPLBECGHBuilder() {
         
         onChanged();
-        return getIEGBEFPGBHFFieldBuilder().getBuilder();
+        return getOKBFPLBECGHFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIEGBEFPGBHFOrBuilder() {
-        if (iEGBEFPGBHFBuilder_ != null) {
-          return iEGBEFPGBHFBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getOKBFPLBECGHOrBuilder() {
+        if (oKBFPLBECGHBuilder_ != null) {
+          return oKBFPLBECGHBuilder_.getMessageOrBuilder();
         } else {
-          return iEGBEFPGBHF_ == null ?
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iEGBEFPGBHF_;
+          return oKBFPLBECGH_ == null ?
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : oKBFPLBECGH_;
         }
       }
       /**
-       * <code>.TowerFightRecordPair IEGBEFPGBHF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair OKBFPLBECGH = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
-          getIEGBEFPGBHFFieldBuilder() {
-        if (iEGBEFPGBHFBuilder_ == null) {
-          iEGBEFPGBHFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getOKBFPLBECGHFieldBuilder() {
+        if (oKBFPLBECGHBuilder_ == null) {
+          oKBFPLBECGHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
-                  getIEGBEFPGBHF(),
+                  getOKBFPLBECGH(),
                   getParentForChildren(),
                   isClean());
-          iEGBEFPGBHF_ = null;
+          oKBFPLBECGH_ = null;
         }
-        return iEGBEFPGBHFBuilder_;
+        return oKBFPLBECGHBuilder_;
       }
 
-      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair bJFIMEGJHNK_;
+      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair pMPJILIOJGO_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> bJFIMEGJHNKBuilder_;
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> pMPJILIOJGOBuilder_;
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-       * @return Whether the bJFIMEGJHNK field is set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+       * @return Whether the pMPJILIOJGO field is set.
        */
-      public boolean hasBJFIMEGJHNK() {
-        return bJFIMEGJHNKBuilder_ != null || bJFIMEGJHNK_ != null;
+      public boolean hasPMPJILIOJGO() {
+        return pMPJILIOJGOBuilder_ != null || pMPJILIOJGO_ != null;
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
-       * @return The bJFIMEGJHNK.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
+       * @return The pMPJILIOJGO.
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getBJFIMEGJHNK() {
-        if (bJFIMEGJHNKBuilder_ == null) {
-          return bJFIMEGJHNK_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : bJFIMEGJHNK_;
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getPMPJILIOJGO() {
+        if (pMPJILIOJGOBuilder_ == null) {
+          return pMPJILIOJGO_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : pMPJILIOJGO_;
         } else {
-          return bJFIMEGJHNKBuilder_.getMessage();
+          return pMPJILIOJGOBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public Builder setBJFIMEGJHNK(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (bJFIMEGJHNKBuilder_ == null) {
+      public Builder setPMPJILIOJGO(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (pMPJILIOJGOBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          bJFIMEGJHNK_ = value;
+          pMPJILIOJGO_ = value;
           onChanged();
         } else {
-          bJFIMEGJHNKBuilder_.setMessage(value);
+          pMPJILIOJGOBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public Builder setBJFIMEGJHNK(
+      public Builder setPMPJILIOJGO(
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
-        if (bJFIMEGJHNKBuilder_ == null) {
-          bJFIMEGJHNK_ = builderForValue.build();
+        if (pMPJILIOJGOBuilder_ == null) {
+          pMPJILIOJGO_ = builderForValue.build();
           onChanged();
         } else {
-          bJFIMEGJHNKBuilder_.setMessage(builderForValue.build());
+          pMPJILIOJGOBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public Builder mergeBJFIMEGJHNK(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (bJFIMEGJHNKBuilder_ == null) {
-          if (bJFIMEGJHNK_ != null) {
-            bJFIMEGJHNK_ =
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(bJFIMEGJHNK_).mergeFrom(value).buildPartial();
+      public Builder mergePMPJILIOJGO(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (pMPJILIOJGOBuilder_ == null) {
+          if (pMPJILIOJGO_ != null) {
+            pMPJILIOJGO_ =
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(pMPJILIOJGO_).mergeFrom(value).buildPartial();
           } else {
-            bJFIMEGJHNK_ = value;
+            pMPJILIOJGO_ = value;
           }
           onChanged();
         } else {
-          bJFIMEGJHNKBuilder_.mergeFrom(value);
+          pMPJILIOJGOBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public Builder clearBJFIMEGJHNK() {
-        if (bJFIMEGJHNKBuilder_ == null) {
-          bJFIMEGJHNK_ = null;
+      public Builder clearPMPJILIOJGO() {
+        if (pMPJILIOJGOBuilder_ == null) {
+          pMPJILIOJGO_ = null;
           onChanged();
         } else {
-          bJFIMEGJHNK_ = null;
-          bJFIMEGJHNKBuilder_ = null;
+          pMPJILIOJGO_ = null;
+          pMPJILIOJGOBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getBJFIMEGJHNKBuilder() {
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getPMPJILIOJGOBuilder() {
         
         onChanged();
-        return getBJFIMEGJHNKFieldBuilder().getBuilder();
+        return getPMPJILIOJGOFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getBJFIMEGJHNKOrBuilder() {
-        if (bJFIMEGJHNKBuilder_ != null) {
-          return bJFIMEGJHNKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getPMPJILIOJGOOrBuilder() {
+        if (pMPJILIOJGOBuilder_ != null) {
+          return pMPJILIOJGOBuilder_.getMessageOrBuilder();
         } else {
-          return bJFIMEGJHNK_ == null ?
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : bJFIMEGJHNK_;
+          return pMPJILIOJGO_ == null ?
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : pMPJILIOJGO_;
         }
       }
       /**
-       * <code>.TowerFightRecordPair BJFIMEGJHNK = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair PMPJILIOJGO = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
-          getBJFIMEGJHNKFieldBuilder() {
-        if (bJFIMEGJHNKBuilder_ == null) {
-          bJFIMEGJHNKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getPMPJILIOJGOFieldBuilder() {
+        if (pMPJILIOJGOBuilder_ == null) {
+          pMPJILIOJGOBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
-                  getBJFIMEGJHNK(),
+                  getPMPJILIOJGO(),
                   getParentForChildren(),
                   isClean());
-          bJFIMEGJHNK_ = null;
+          pMPJILIOJGO_ = null;
         }
-        return bJFIMEGJHNKBuilder_;
+        return pMPJILIOJGOBuilder_;
       }
 
-      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair kHGOLENGOPI_;
+      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair iFIKDFLCOJP_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> kHGOLENGOPIBuilder_;
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> iFIKDFLCOJPBuilder_;
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-       * @return Whether the kHGOLENGOPI field is set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+       * @return Whether the iFIKDFLCOJP field is set.
        */
-      public boolean hasKHGOLENGOPI() {
-        return kHGOLENGOPIBuilder_ != null || kHGOLENGOPI_ != null;
+      public boolean hasIFIKDFLCOJP() {
+        return iFIKDFLCOJPBuilder_ != null || iFIKDFLCOJP_ != null;
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
-       * @return The kHGOLENGOPI.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
+       * @return The iFIKDFLCOJP.
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getKHGOLENGOPI() {
-        if (kHGOLENGOPIBuilder_ == null) {
-          return kHGOLENGOPI_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : kHGOLENGOPI_;
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getIFIKDFLCOJP() {
+        if (iFIKDFLCOJPBuilder_ == null) {
+          return iFIKDFLCOJP_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iFIKDFLCOJP_;
         } else {
-          return kHGOLENGOPIBuilder_.getMessage();
+          return iFIKDFLCOJPBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public Builder setKHGOLENGOPI(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (kHGOLENGOPIBuilder_ == null) {
+      public Builder setIFIKDFLCOJP(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (iFIKDFLCOJPBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          kHGOLENGOPI_ = value;
+          iFIKDFLCOJP_ = value;
           onChanged();
         } else {
-          kHGOLENGOPIBuilder_.setMessage(value);
+          iFIKDFLCOJPBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public Builder setKHGOLENGOPI(
+      public Builder setIFIKDFLCOJP(
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
-        if (kHGOLENGOPIBuilder_ == null) {
-          kHGOLENGOPI_ = builderForValue.build();
+        if (iFIKDFLCOJPBuilder_ == null) {
+          iFIKDFLCOJP_ = builderForValue.build();
           onChanged();
         } else {
-          kHGOLENGOPIBuilder_.setMessage(builderForValue.build());
+          iFIKDFLCOJPBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public Builder mergeKHGOLENGOPI(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (kHGOLENGOPIBuilder_ == null) {
-          if (kHGOLENGOPI_ != null) {
-            kHGOLENGOPI_ =
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(kHGOLENGOPI_).mergeFrom(value).buildPartial();
+      public Builder mergeIFIKDFLCOJP(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (iFIKDFLCOJPBuilder_ == null) {
+          if (iFIKDFLCOJP_ != null) {
+            iFIKDFLCOJP_ =
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(iFIKDFLCOJP_).mergeFrom(value).buildPartial();
           } else {
-            kHGOLENGOPI_ = value;
+            iFIKDFLCOJP_ = value;
           }
           onChanged();
         } else {
-          kHGOLENGOPIBuilder_.mergeFrom(value);
+          iFIKDFLCOJPBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public Builder clearKHGOLENGOPI() {
-        if (kHGOLENGOPIBuilder_ == null) {
-          kHGOLENGOPI_ = null;
+      public Builder clearIFIKDFLCOJP() {
+        if (iFIKDFLCOJPBuilder_ == null) {
+          iFIKDFLCOJP_ = null;
           onChanged();
         } else {
-          kHGOLENGOPI_ = null;
-          kHGOLENGOPIBuilder_ = null;
+          iFIKDFLCOJP_ = null;
+          iFIKDFLCOJPBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getKHGOLENGOPIBuilder() {
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getIFIKDFLCOJPBuilder() {
         
         onChanged();
-        return getKHGOLENGOPIFieldBuilder().getBuilder();
+        return getIFIKDFLCOJPFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getKHGOLENGOPIOrBuilder() {
-        if (kHGOLENGOPIBuilder_ != null) {
-          return kHGOLENGOPIBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getIFIKDFLCOJPOrBuilder() {
+        if (iFIKDFLCOJPBuilder_ != null) {
+          return iFIKDFLCOJPBuilder_.getMessageOrBuilder();
         } else {
-          return kHGOLENGOPI_ == null ?
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : kHGOLENGOPI_;
+          return iFIKDFLCOJP_ == null ?
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : iFIKDFLCOJP_;
         }
       }
       /**
-       * <code>.TowerFightRecordPair KHGOLENGOPI = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair IFIKDFLCOJP = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
-          getKHGOLENGOPIFieldBuilder() {
-        if (kHGOLENGOPIBuilder_ == null) {
-          kHGOLENGOPIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getIFIKDFLCOJPFieldBuilder() {
+        if (iFIKDFLCOJPBuilder_ == null) {
+          iFIKDFLCOJPBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
-                  getKHGOLENGOPI(),
+                  getIFIKDFLCOJP(),
                   getParentForChildren(),
                   isClean());
-          kHGOLENGOPI_ = null;
+          iFIKDFLCOJP_ = null;
         }
-        return kHGOLENGOPIBuilder_;
+        return iFIKDFLCOJPBuilder_;
       }
 
-      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair dOLMCJOBEMK_;
+      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair mCPKFEMNDPB_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> dOLMCJOBEMKBuilder_;
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> mCPKFEMNDPBBuilder_;
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-       * @return Whether the dOLMCJOBEMK field is set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+       * @return Whether the mCPKFEMNDPB field is set.
        */
-      public boolean hasDOLMCJOBEMK() {
-        return dOLMCJOBEMKBuilder_ != null || dOLMCJOBEMK_ != null;
+      public boolean hasMCPKFEMNDPB() {
+        return mCPKFEMNDPBBuilder_ != null || mCPKFEMNDPB_ != null;
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
-       * @return The dOLMCJOBEMK.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
+       * @return The mCPKFEMNDPB.
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getDOLMCJOBEMK() {
-        if (dOLMCJOBEMKBuilder_ == null) {
-          return dOLMCJOBEMK_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : dOLMCJOBEMK_;
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMCPKFEMNDPB() {
+        if (mCPKFEMNDPBBuilder_ == null) {
+          return mCPKFEMNDPB_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : mCPKFEMNDPB_;
         } else {
-          return dOLMCJOBEMKBuilder_.getMessage();
+          return mCPKFEMNDPBBuilder_.getMessage();
         }
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public Builder setDOLMCJOBEMK(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (dOLMCJOBEMKBuilder_ == null) {
+      public Builder setMCPKFEMNDPB(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (mCPKFEMNDPBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          dOLMCJOBEMK_ = value;
+          mCPKFEMNDPB_ = value;
           onChanged();
         } else {
-          dOLMCJOBEMKBuilder_.setMessage(value);
+          mCPKFEMNDPBBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public Builder setDOLMCJOBEMK(
+      public Builder setMCPKFEMNDPB(
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
-        if (dOLMCJOBEMKBuilder_ == null) {
-          dOLMCJOBEMK_ = builderForValue.build();
+        if (mCPKFEMNDPBBuilder_ == null) {
+          mCPKFEMNDPB_ = builderForValue.build();
           onChanged();
         } else {
-          dOLMCJOBEMKBuilder_.setMessage(builderForValue.build());
+          mCPKFEMNDPBBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public Builder mergeDOLMCJOBEMK(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (dOLMCJOBEMKBuilder_ == null) {
-          if (dOLMCJOBEMK_ != null) {
-            dOLMCJOBEMK_ =
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(dOLMCJOBEMK_).mergeFrom(value).buildPartial();
+      public Builder mergeMCPKFEMNDPB(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (mCPKFEMNDPBBuilder_ == null) {
+          if (mCPKFEMNDPB_ != null) {
+            mCPKFEMNDPB_ =
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(mCPKFEMNDPB_).mergeFrom(value).buildPartial();
           } else {
-            dOLMCJOBEMK_ = value;
+            mCPKFEMNDPB_ = value;
           }
           onChanged();
         } else {
-          dOLMCJOBEMKBuilder_.mergeFrom(value);
+          mCPKFEMNDPBBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public Builder clearDOLMCJOBEMK() {
-        if (dOLMCJOBEMKBuilder_ == null) {
-          dOLMCJOBEMK_ = null;
+      public Builder clearMCPKFEMNDPB() {
+        if (mCPKFEMNDPBBuilder_ == null) {
+          mCPKFEMNDPB_ = null;
           onChanged();
         } else {
-          dOLMCJOBEMK_ = null;
-          dOLMCJOBEMKBuilder_ = null;
+          mCPKFEMNDPB_ = null;
+          mCPKFEMNDPBBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getDOLMCJOBEMKBuilder() {
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getMCPKFEMNDPBBuilder() {
         
         onChanged();
-        return getDOLMCJOBEMKFieldBuilder().getBuilder();
+        return getMCPKFEMNDPBFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getDOLMCJOBEMKOrBuilder() {
-        if (dOLMCJOBEMKBuilder_ != null) {
-          return dOLMCJOBEMKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMCPKFEMNDPBOrBuilder() {
+        if (mCPKFEMNDPBBuilder_ != null) {
+          return mCPKFEMNDPBBuilder_.getMessageOrBuilder();
         } else {
-          return dOLMCJOBEMK_ == null ?
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : dOLMCJOBEMK_;
+          return mCPKFEMNDPB_ == null ?
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : mCPKFEMNDPB_;
         }
       }
       /**
-       * <code>.TowerFightRecordPair DOLMCJOBEMK = 14;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair MCPKFEMNDPB = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
-          getDOLMCJOBEMKFieldBuilder() {
-        if (dOLMCJOBEMKBuilder_ == null) {
-          dOLMCJOBEMKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getMCPKFEMNDPBFieldBuilder() {
+        if (mCPKFEMNDPBBuilder_ == null) {
+          mCPKFEMNDPBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
-                  getDOLMCJOBEMK(),
+                  getMCPKFEMNDPB(),
                   getParentForChildren(),
                   isClean());
-          dOLMCJOBEMK_ = null;
+          mCPKFEMNDPB_ = null;
         }
-        return dOLMCJOBEMKBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair cMANJKNEHPA_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> cMANJKNEHPABuilder_;
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       * @return Whether the cMANJKNEHPA field is set.
-       */
-      public boolean hasCMANJKNEHPA() {
-        return cMANJKNEHPABuilder_ != null || cMANJKNEHPA_ != null;
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       * @return The cMANJKNEHPA.
-       */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getCMANJKNEHPA() {
-        if (cMANJKNEHPABuilder_ == null) {
-          return cMANJKNEHPA_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : cMANJKNEHPA_;
-        } else {
-          return cMANJKNEHPABuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public Builder setCMANJKNEHPA(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (cMANJKNEHPABuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          cMANJKNEHPA_ = value;
-          onChanged();
-        } else {
-          cMANJKNEHPABuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public Builder setCMANJKNEHPA(
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
-        if (cMANJKNEHPABuilder_ == null) {
-          cMANJKNEHPA_ = builderForValue.build();
-          onChanged();
-        } else {
-          cMANJKNEHPABuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public Builder mergeCMANJKNEHPA(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
-        if (cMANJKNEHPABuilder_ == null) {
-          if (cMANJKNEHPA_ != null) {
-            cMANJKNEHPA_ =
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(cMANJKNEHPA_).mergeFrom(value).buildPartial();
-          } else {
-            cMANJKNEHPA_ = value;
-          }
-          onChanged();
-        } else {
-          cMANJKNEHPABuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public Builder clearCMANJKNEHPA() {
-        if (cMANJKNEHPABuilder_ == null) {
-          cMANJKNEHPA_ = null;
-          onChanged();
-        } else {
-          cMANJKNEHPA_ = null;
-          cMANJKNEHPABuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getCMANJKNEHPABuilder() {
-        
-        onChanged();
-        return getCMANJKNEHPAFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getCMANJKNEHPAOrBuilder() {
-        if (cMANJKNEHPABuilder_ != null) {
-          return cMANJKNEHPABuilder_.getMessageOrBuilder();
-        } else {
-          return cMANJKNEHPA_ == null ?
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : cMANJKNEHPA_;
-        }
-      }
-      /**
-       * <code>.TowerFightRecordPair CMANJKNEHPA = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
-          getCMANJKNEHPAFieldBuilder() {
-        if (cMANJKNEHPABuilder_ == null) {
-          cMANJKNEHPABuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
-                  getCMANJKNEHPA(),
-                  getParentForChildren(),
-                  isClean());
-          cMANJKNEHPA_ = null;
-        }
-        return cMANJKNEHPABuilder_;
+        return mCPKFEMNDPBBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> mostRevealAvatarList_ =
@@ -1543,7 +1728,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> mostRevealAvatarListBuilder_;
 
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> getMostRevealAvatarListList() {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1553,7 +1742,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public int getMostRevealAvatarListCount() {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1563,7 +1756,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getMostRevealAvatarList(int index) {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1573,7 +1770,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder setMostRevealAvatarList(
           int index, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
@@ -1590,7 +1791,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder setMostRevealAvatarList(
           int index, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
@@ -1604,7 +1809,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder addMostRevealAvatarList(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1620,7 +1829,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder addMostRevealAvatarList(
           int index, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
@@ -1637,7 +1850,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder addMostRevealAvatarList(
           emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
@@ -1651,7 +1868,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder addMostRevealAvatarList(
           int index, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
@@ -1665,7 +1886,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder addAllMostRevealAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair> values) {
@@ -1680,7 +1905,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder clearMostRevealAvatarList() {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1693,7 +1922,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public Builder removeMostRevealAvatarList(int index) {
         if (mostRevealAvatarListBuilder_ == null) {
@@ -1706,14 +1939,22 @@ public final class TowerMonthlyCombatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getMostRevealAvatarListBuilder(
           int index) {
         return getMostRevealAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getMostRevealAvatarListOrBuilder(
           int index) {
@@ -1723,7 +1964,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
            getMostRevealAvatarListOrBuilderList() {
@@ -1734,14 +1979,22 @@ public final class TowerMonthlyCombatRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder addMostRevealAvatarListBuilder() {
         return getMostRevealAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder addMostRevealAvatarListBuilder(
           int index) {
@@ -1749,7 +2002,11 @@ public final class TowerMonthlyCombatRecordOuterClass {
             index, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .TowerFightRecordPair most_reveal_avatar_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder> 
            getMostRevealAvatarListBuilderList() {
@@ -1768,6 +2025,161 @@ public final class TowerMonthlyCombatRecordOuterClass {
           mostRevealAvatarList_ = null;
         }
         return mostRevealAvatarListBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair aNFNHCLMKHP_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> aNFNHCLMKHPBuilder_;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       * @return Whether the aNFNHCLMKHP field is set.
+       */
+      public boolean hasANFNHCLMKHP() {
+        return aNFNHCLMKHPBuilder_ != null || aNFNHCLMKHP_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       * @return The aNFNHCLMKHP.
+       */
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair getANFNHCLMKHP() {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          return aNFNHCLMKHP_ == null ? emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : aNFNHCLMKHP_;
+        } else {
+          return aNFNHCLMKHPBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public Builder setANFNHCLMKHP(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          aNFNHCLMKHP_ = value;
+          onChanged();
+        } else {
+          aNFNHCLMKHPBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public Builder setANFNHCLMKHP(
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder builderForValue) {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          aNFNHCLMKHP_ = builderForValue.build();
+          onChanged();
+        } else {
+          aNFNHCLMKHPBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public Builder mergeANFNHCLMKHP(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair value) {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          if (aNFNHCLMKHP_ != null) {
+            aNFNHCLMKHP_ =
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.newBuilder(aNFNHCLMKHP_).mergeFrom(value).buildPartial();
+          } else {
+            aNFNHCLMKHP_ = value;
+          }
+          onChanged();
+        } else {
+          aNFNHCLMKHPBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public Builder clearANFNHCLMKHP() {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          aNFNHCLMKHP_ = null;
+          onChanged();
+        } else {
+          aNFNHCLMKHP_ = null;
+          aNFNHCLMKHPBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder getANFNHCLMKHPBuilder() {
+        
+        onChanged();
+        return getANFNHCLMKHPFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder getANFNHCLMKHPOrBuilder() {
+        if (aNFNHCLMKHPBuilder_ != null) {
+          return aNFNHCLMKHPBuilder_.getMessageOrBuilder();
+        } else {
+          return aNFNHCLMKHP_ == null ?
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance() : aNFNHCLMKHP_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>.TowerFightRecordPair ANFNHCLMKHP = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder> 
+          getANFNHCLMKHPFieldBuilder() {
+        if (aNFNHCLMKHPBuilder_ == null) {
+          aNFNHCLMKHPBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPairOrBuilder>(
+                  getANFNHCLMKHP(),
+                  getParentForChildren(),
+                  isClean());
+          aNFNHCLMKHP_ = null;
+        }
+        return aNFNHCLMKHPBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1838,13 +2250,13 @@ public final class TowerMonthlyCombatRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036TowerMonthlyCombatRecord.proto\032\032TowerF" +
       "ightRecordPair.proto\"\256\002\n\030TowerMonthlyCom" +
-      "batRecord\022*\n\013IEGBEFPGBHF\030\001 \001(\0132\025.TowerFi" +
-      "ghtRecordPair\022*\n\013BJFIMEGJHNK\030\014 \001(\0132\025.Tow" +
-      "erFightRecordPair\022*\n\013KHGOLENGOPI\030\004 \001(\0132\025" +
-      ".TowerFightRecordPair\022*\n\013DOLMCJOBEMK\030\016 \001" +
-      "(\0132\025.TowerFightRecordPair\022*\n\013CMANJKNEHPA" +
-      "\030\006 \001(\0132\025.TowerFightRecordPair\0226\n\027most_re" +
-      "veal_avatar_list\030\003 \003(\0132\025.TowerFightRecor" +
+      "batRecord\022*\n\013OKBFPLBECGH\030\r \001(\0132\025.TowerFi" +
+      "ghtRecordPair\022*\n\013PMPJILIOJGO\030\014 \001(\0132\025.Tow" +
+      "erFightRecordPair\022*\n\013IFIKDFLCOJP\030\006 \001(\0132\025" +
+      ".TowerFightRecordPair\022*\n\013MCPKFEMNDPB\030\001 \001" +
+      "(\0132\025.TowerFightRecordPair\0226\n\027most_reveal" +
+      "_avatar_list\030\002 \003(\0132\025.TowerFightRecordPai" +
+      "r\022*\n\013ANFNHCLMKHP\030\007 \001(\0132\025.TowerFightRecor" +
       "dPairB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
@@ -1858,7 +2270,7 @@ public final class TowerMonthlyCombatRecordOuterClass {
     internal_static_TowerMonthlyCombatRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerMonthlyCombatRecord_descriptor,
-        new java.lang.String[] { "IEGBEFPGBHF", "BJFIMEGJHNK", "KHGOLENGOPI", "DOLMCJOBEMK", "CMANJKNEHPA", "MostRevealAvatarList", });
+        new java.lang.String[] { "OKBFPLBECGH", "PMPJILIOJGO", "IFIKDFLCOJP", "MCPKFEMNDPB", "MostRevealAvatarList", "ANFNHCLMKHP", });
     emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.getDescriptor();
   }
 

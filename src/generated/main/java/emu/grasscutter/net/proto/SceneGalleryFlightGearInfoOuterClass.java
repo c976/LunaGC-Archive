@@ -19,22 +19,18 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_publish_time = 14;</code>
-     * @return The lastPublishTime.
+     * <code>uint32 DEEMOECKGAF = 10;</code>
+     * @return The dEEMOECKGAF.
      */
-    int getLastPublishTime();
+    int getDEEMOECKGAF();
 
     /**
-     * <code>uint32 CJFJAJHOMHB = 7;</code>
-     * @return The cJFJAJHOMHB.
+     * <code>uint32 DCMNPFKKOBM = 11;</code>
+     * @return The dCMNPFKKOBM.
      */
-    int getCJFJAJHOMHB();
+    int getDCMNPFKKOBM();
   }
   /**
-   * <pre>
-   * Obf: BMALNHIEMJN
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryFlightGearInfo}
    */
   public static final class SceneGalleryFlightGearInfo extends
@@ -79,14 +75,14 @@ public final class SceneGalleryFlightGearInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 80: {
 
-              cJFJAJHOMHB_ = input.readUInt32();
+              dEEMOECKGAF_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 88: {
 
-              lastPublishTime_ = input.readUInt32();
+              dCMNPFKKOBM_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class SceneGalleryFlightGearInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo.class, emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo.Builder.class);
     }
 
-    public static final int LAST_PUBLISH_TIME_FIELD_NUMBER = 14;
-    private int lastPublishTime_;
+    public static final int DEEMOECKGAF_FIELD_NUMBER = 10;
+    private int dEEMOECKGAF_;
     /**
-     * <code>uint32 last_publish_time = 14;</code>
-     * @return The lastPublishTime.
+     * <code>uint32 DEEMOECKGAF = 10;</code>
+     * @return The dEEMOECKGAF.
      */
     @java.lang.Override
-    public int getLastPublishTime() {
-      return lastPublishTime_;
+    public int getDEEMOECKGAF() {
+      return dEEMOECKGAF_;
     }
 
-    public static final int CJFJAJHOMHB_FIELD_NUMBER = 7;
-    private int cJFJAJHOMHB_;
+    public static final int DCMNPFKKOBM_FIELD_NUMBER = 11;
+    private int dCMNPFKKOBM_;
     /**
-     * <code>uint32 CJFJAJHOMHB = 7;</code>
-     * @return The cJFJAJHOMHB.
+     * <code>uint32 DCMNPFKKOBM = 11;</code>
+     * @return The dCMNPFKKOBM.
      */
     @java.lang.Override
-    public int getCJFJAJHOMHB() {
-      return cJFJAJHOMHB_;
+    public int getDCMNPFKKOBM() {
+      return dCMNPFKKOBM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class SceneGalleryFlightGearInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cJFJAJHOMHB_ != 0) {
-        output.writeUInt32(7, cJFJAJHOMHB_);
+      if (dEEMOECKGAF_ != 0) {
+        output.writeUInt32(10, dEEMOECKGAF_);
       }
-      if (lastPublishTime_ != 0) {
-        output.writeUInt32(14, lastPublishTime_);
+      if (dCMNPFKKOBM_ != 0) {
+        output.writeUInt32(11, dCMNPFKKOBM_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cJFJAJHOMHB_ != 0) {
+      if (dEEMOECKGAF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cJFJAJHOMHB_);
+          .computeUInt32Size(10, dEEMOECKGAF_);
       }
-      if (lastPublishTime_ != 0) {
+      if (dCMNPFKKOBM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, lastPublishTime_);
+          .computeUInt32Size(11, dCMNPFKKOBM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo other = (emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo) obj;
 
-      if (getLastPublishTime()
-          != other.getLastPublishTime()) return false;
-      if (getCJFJAJHOMHB()
-          != other.getCJFJAJHOMHB()) return false;
+      if (getDEEMOECKGAF()
+          != other.getDEEMOECKGAF()) return false;
+      if (getDCMNPFKKOBM()
+          != other.getDCMNPFKKOBM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LAST_PUBLISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastPublishTime();
-      hash = (37 * hash) + CJFJAJHOMHB_FIELD_NUMBER;
-      hash = (53 * hash) + getCJFJAJHOMHB();
+      hash = (37 * hash) + DEEMOECKGAF_FIELD_NUMBER;
+      hash = (53 * hash) + getDEEMOECKGAF();
+      hash = (37 * hash) + DCMNPFKKOBM_FIELD_NUMBER;
+      hash = (53 * hash) + getDCMNPFKKOBM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BMALNHIEMJN
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryFlightGearInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lastPublishTime_ = 0;
+        dEEMOECKGAF_ = 0;
 
-        cJFJAJHOMHB_ = 0;
+        dCMNPFKKOBM_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo result = new emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo(this);
-        result.lastPublishTime_ = lastPublishTime_;
-        result.cJFJAJHOMHB_ = cJFJAJHOMHB_;
+        result.dEEMOECKGAF_ = dEEMOECKGAF_;
+        result.dCMNPFKKOBM_ = dCMNPFKKOBM_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class SceneGalleryFlightGearInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryFlightGearInfoOuterClass.SceneGalleryFlightGearInfo.getDefaultInstance()) return this;
-        if (other.getLastPublishTime() != 0) {
-          setLastPublishTime(other.getLastPublishTime());
+        if (other.getDEEMOECKGAF() != 0) {
+          setDEEMOECKGAF(other.getDEEMOECKGAF());
         }
-        if (other.getCJFJAJHOMHB() != 0) {
-          setCJFJAJHOMHB(other.getCJFJAJHOMHB());
+        if (other.getDCMNPFKKOBM() != 0) {
+          setDCMNPFKKOBM(other.getDCMNPFKKOBM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +458,64 @@ public final class SceneGalleryFlightGearInfoOuterClass {
         return this;
       }
 
-      private int lastPublishTime_ ;
+      private int dEEMOECKGAF_ ;
       /**
-       * <code>uint32 last_publish_time = 14;</code>
-       * @return The lastPublishTime.
+       * <code>uint32 DEEMOECKGAF = 10;</code>
+       * @return The dEEMOECKGAF.
        */
       @java.lang.Override
-      public int getLastPublishTime() {
-        return lastPublishTime_;
+      public int getDEEMOECKGAF() {
+        return dEEMOECKGAF_;
       }
       /**
-       * <code>uint32 last_publish_time = 14;</code>
-       * @param value The lastPublishTime to set.
+       * <code>uint32 DEEMOECKGAF = 10;</code>
+       * @param value The dEEMOECKGAF to set.
        * @return This builder for chaining.
        */
-      public Builder setLastPublishTime(int value) {
+      public Builder setDEEMOECKGAF(int value) {
         
-        lastPublishTime_ = value;
+        dEEMOECKGAF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_publish_time = 14;</code>
+       * <code>uint32 DEEMOECKGAF = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastPublishTime() {
+      public Builder clearDEEMOECKGAF() {
         
-        lastPublishTime_ = 0;
+        dEEMOECKGAF_ = 0;
         onChanged();
         return this;
       }
 
-      private int cJFJAJHOMHB_ ;
+      private int dCMNPFKKOBM_ ;
       /**
-       * <code>uint32 CJFJAJHOMHB = 7;</code>
-       * @return The cJFJAJHOMHB.
+       * <code>uint32 DCMNPFKKOBM = 11;</code>
+       * @return The dCMNPFKKOBM.
        */
       @java.lang.Override
-      public int getCJFJAJHOMHB() {
-        return cJFJAJHOMHB_;
+      public int getDCMNPFKKOBM() {
+        return dCMNPFKKOBM_;
       }
       /**
-       * <code>uint32 CJFJAJHOMHB = 7;</code>
-       * @param value The cJFJAJHOMHB to set.
+       * <code>uint32 DCMNPFKKOBM = 11;</code>
+       * @param value The dCMNPFKKOBM to set.
        * @return This builder for chaining.
        */
-      public Builder setCJFJAJHOMHB(int value) {
+      public Builder setDCMNPFKKOBM(int value) {
         
-        cJFJAJHOMHB_ = value;
+        dCMNPFKKOBM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CJFJAJHOMHB = 7;</code>
+       * <code>uint32 DCMNPFKKOBM = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCJFJAJHOMHB() {
+      public Builder clearDCMNPFKKOBM() {
         
-        cJFJAJHOMHB_ = 0;
+        dCMNPFKKOBM_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +586,10 @@ public final class SceneGalleryFlightGearInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n SceneGalleryFlightGearInfo.proto\"L\n\032Sc" +
-      "eneGalleryFlightGearInfo\022\031\n\021last_publish" +
-      "_time\030\016 \001(\r\022\023\n\013CJFJAJHOMHB\030\007 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n SceneGalleryFlightGearInfo.proto\"F\n\032Sc" +
+      "eneGalleryFlightGearInfo\022\023\n\013DEEMOECKGAF\030" +
+      "\n \001(\r\022\023\n\013DCMNPFKKOBM\030\013 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +600,7 @@ public final class SceneGalleryFlightGearInfoOuterClass {
     internal_static_SceneGalleryFlightGearInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryFlightGearInfo_descriptor,
-        new java.lang.String[] { "LastPublishTime", "CJFJAJHOMHB", });
+        new java.lang.String[] { "DEEMOECKGAF", "DCMNPFKKOBM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

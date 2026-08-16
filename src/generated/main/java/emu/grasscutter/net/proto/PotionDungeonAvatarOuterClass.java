@@ -19,22 +19,18 @@ public final class PotionDungeonAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 15;</code>
+     * <code>uint64 avatar_guid = 3;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>bool is_trial = 8;</code>
+     * <code>bool is_trial = 13;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
   }
   /**
-   * <pre>
-   * Obf: NDLPLDGABEA
-   * </pre>
-   *
    * Protobuf type {@code PotionDungeonAvatar}
    */
   public static final class PotionDungeonAvatar extends
@@ -79,14 +75,14 @@ public final class PotionDungeonAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 24: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 104: {
+
+              isTrial_ = input.readBool();
               break;
             }
             default: {
@@ -121,10 +117,10 @@ public final class PotionDungeonAvatarOuterClass {
               emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.class, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 15;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 3;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 15;</code>
+     * <code>uint64 avatar_guid = 3;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class PotionDungeonAvatarOuterClass {
       return avatarGuid_;
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 8;
+    public static final int IS_TRIAL_FIELD_NUMBER = 13;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 8;</code>
+     * <code>bool is_trial = 13;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -157,11 +153,11 @@ public final class PotionDungeonAvatarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTrial_ != false) {
-        output.writeBool(8, isTrial_);
-      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(15, avatarGuid_);
+        output.writeUInt64(3, avatarGuid_);
+      }
+      if (isTrial_ != false) {
+        output.writeBool(13, isTrial_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class PotionDungeonAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTrial_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isTrial_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, avatarGuid_);
+          .computeUInt64Size(3, avatarGuid_);
+      }
+      if (isTrial_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isTrial_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,10 +308,6 @@ public final class PotionDungeonAvatarOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NDLPLDGABEA
-     * </pre>
-     *
      * Protobuf type {@code PotionDungeonAvatar}
      */
     public static final class Builder extends
@@ -470,7 +462,7 @@ public final class PotionDungeonAvatarOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 15;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -478,7 +470,7 @@ public final class PotionDungeonAvatarOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 15;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -489,7 +481,7 @@ public final class PotionDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 15;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -501,7 +493,7 @@ public final class PotionDungeonAvatarOuterClass {
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 8;</code>
+       * <code>bool is_trial = 13;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -509,7 +501,7 @@ public final class PotionDungeonAvatarOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 8;</code>
+       * <code>bool is_trial = 13;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -520,7 +512,7 @@ public final class PotionDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 8;</code>
+       * <code>bool is_trial = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
@@ -597,8 +589,8 @@ public final class PotionDungeonAvatarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031PotionDungeonAvatar.proto\"<\n\023PotionDun" +
-      "geonAvatar\022\023\n\013avatar_guid\030\017 \001(\004\022\020\n\010is_tr" +
-      "ial\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
+      "geonAvatar\022\023\n\013avatar_guid\030\003 \001(\004\022\020\n\010is_tr" +
+      "ial\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

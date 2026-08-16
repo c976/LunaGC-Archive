@@ -19,32 +19,31 @@ public final class GetPushTipsRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @return A list containing the pushTipsIdList.
      */
     java.util.List<java.lang.Integer> getPushTipsIdListList();
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @return The count of pushTipsIdList.
      */
     int getPushTipsIdListCount();
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The pushTipsIdList at the given index.
      */
     int getPushTipsIdList(int index);
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1440
-   * Obf: DLGDOBIGKJA
+   * CmdId: 4442
    * </pre>
    *
    * Protobuf type {@code GetPushTipsRewardRsp}
@@ -94,11 +93,6 @@ public final class GetPushTipsRewardRspOuterClass {
               done = true;
               break;
             case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 pushTipsIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +100,7 @@ public final class GetPushTipsRewardRspOuterClass {
               pushTipsIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,6 +111,11 @@ public final class GetPushTipsRewardRspOuterClass {
                 pushTipsIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 56: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -154,10 +153,10 @@ public final class GetPushTipsRewardRspOuterClass {
               emu.grasscutter.net.proto.GetPushTipsRewardRspOuterClass.GetPushTipsRewardRsp.class, emu.grasscutter.net.proto.GetPushTipsRewardRspOuterClass.GetPushTipsRewardRsp.Builder.class);
     }
 
-    public static final int PUSH_TIPS_ID_LIST_FIELD_NUMBER = 11;
+    public static final int PUSH_TIPS_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList pushTipsIdList_;
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @return A list containing the pushTipsIdList.
      */
     @java.lang.Override
@@ -166,14 +165,14 @@ public final class GetPushTipsRewardRspOuterClass {
       return pushTipsIdList_;
     }
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @return The count of pushTipsIdList.
      */
     public int getPushTipsIdListCount() {
       return pushTipsIdList_.size();
     }
     /**
-     * <code>repeated uint32 push_tips_id_list = 11;</code>
+     * <code>repeated uint32 push_tips_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The pushTipsIdList at the given index.
      */
@@ -182,10 +181,10 @@ public final class GetPushTipsRewardRspOuterClass {
     }
     private int pushTipsIdListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -208,15 +207,15 @@ public final class GetPushTipsRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (getPushTipsIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(pushTipsIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < pushTipsIdList_.size(); i++) {
         output.writeUInt32NoTag(pushTipsIdList_.getInt(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,10 +226,6 @@ public final class GetPushTipsRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < pushTipsIdList_.size(); i++) {
@@ -244,6 +239,10 @@ public final class GetPushTipsRewardRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         pushTipsIdListMemoizedSerializedSize = dataSize;
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +377,7 @@ public final class GetPushTipsRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1440
-     * Obf: DLGDOBIGKJA
+     * CmdId: 4442
      * </pre>
      *
      * Protobuf type {@code GetPushTipsRewardRsp}
@@ -555,7 +553,7 @@ public final class GetPushTipsRewardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @return A list containing the pushTipsIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +562,14 @@ public final class GetPushTipsRewardRspOuterClass {
                  java.util.Collections.unmodifiableList(pushTipsIdList_) : pushTipsIdList_;
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @return The count of pushTipsIdList.
        */
       public int getPushTipsIdListCount() {
         return pushTipsIdList_.size();
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The pushTipsIdList at the given index.
        */
@@ -579,7 +577,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return pushTipsIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The pushTipsIdList to set.
        * @return This builder for chaining.
@@ -592,7 +590,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @param value The pushTipsIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +601,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @param values The pushTipsIdList to add.
        * @return This builder for chaining.
        */
@@ -616,7 +614,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 push_tips_id_list = 11;</code>
+       * <code>repeated uint32 push_tips_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearPushTipsIdList() {
@@ -628,7 +626,7 @@ public final class GetPushTipsRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -636,7 +634,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -647,7 +645,7 @@ public final class GetPushTipsRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -724,8 +722,8 @@ public final class GetPushTipsRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GetPushTipsRewardRsp.proto\"B\n\024GetPushT" +
-      "ipsRewardRsp\022\031\n\021push_tips_id_list\030\013 \003(\r\022" +
-      "\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutter.net." +
+      "ipsRewardRsp\022\031\n\021push_tips_id_list\030\001 \003(\r\022" +
+      "\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

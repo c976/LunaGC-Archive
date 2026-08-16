@@ -19,16 +19,12 @@ public final class GCGMsgPassOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 controller_id = 14;</code>
+     * <code>uint32 controller_id = 1;</code>
      * @return The controllerId.
      */
     int getControllerId();
   }
   /**
-   * <pre>
-   * Obf: IAMEPPEDAJF
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgPass}
    */
   public static final class GCGMsgPass extends
@@ -73,7 +69,7 @@ public final class GCGMsgPassOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 8: {
 
               controllerId_ = input.readUInt32();
               break;
@@ -110,10 +106,10 @@ public final class GCGMsgPassOuterClass {
               emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.class, emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder.class);
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 14;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 1;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 14;</code>
+     * <code>uint32 controller_id = 1;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -136,7 +132,7 @@ public final class GCGMsgPassOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (controllerId_ != 0) {
-        output.writeUInt32(14, controllerId_);
+        output.writeUInt32(1, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +145,7 @@ public final class GCGMsgPassOuterClass {
       size = 0;
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, controllerId_);
+          .computeUInt32Size(1, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -277,10 +273,6 @@ public final class GCGMsgPassOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IAMEPPEDAJF
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgPass}
      */
     public static final class Builder extends
@@ -429,7 +421,7 @@ public final class GCGMsgPassOuterClass {
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 14;</code>
+       * <code>uint32 controller_id = 1;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -437,7 +429,7 @@ public final class GCGMsgPassOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 14;</code>
+       * <code>uint32 controller_id = 1;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -448,7 +440,7 @@ public final class GCGMsgPassOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 14;</code>
+       * <code>uint32 controller_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -525,7 +517,7 @@ public final class GCGMsgPassOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020GCGMsgPass.proto\"#\n\nGCGMsgPass\022\025\n\rcont" +
-      "roller_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "roller_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,36 +19,52 @@ public final class UgcTeamInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FDGOOBGNJMP enter_type = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     * @return Whether the unk37DHNMGNOLFKJ field is set.
+     */
+    boolean hasUnk37DHNMGNOLFKJ();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     * @return The unk37DHNMGNOLFKJ.
+     */
+    emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB getUnk37DHNMGNOLFKJ();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     */
+    emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder getUnk37DHNMGNOLFKJOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.EnterUgcDungeonType enter_type = 1;</code>
      * @return The enum numeric value on the wire for enterType.
      */
     int getEnterTypeValue();
     /**
-     * <code>.FDGOOBGNJMP enter_type = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.EnterUgcDungeonType enter_type = 1;</code>
      * @return The enterType.
      */
-    emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP getEnterType();
-
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     * @return Whether the fDMDGMLNDNB field is set.
-     */
-    boolean hasFDMDGMLNDNB();
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     * @return The fDMDGMLNDNB.
-     */
-    emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN getFDMDGMLNDNB();
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     */
-    emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder getFDMDGMLNDNBOrBuilder();
+    emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType();
   }
   /**
-   * <pre>
-   * Obf: EJFDNMJLLGC
-   * </pre>
-   *
    * Protobuf type {@code UgcTeamInfo}
    */
   public static final class UgcTeamInfo extends
@@ -94,23 +110,23 @@ public final class UgcTeamInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
-              emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder subBuilder = null;
-              if (fDMDGMLNDNB_ != null) {
-                subBuilder = fDMDGMLNDNB_.toBuilder();
-              }
-              fDMDGMLNDNB_ = input.readMessage(emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(fDMDGMLNDNB_);
-                fDMDGMLNDNB_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 56: {
+            case 8: {
               int rawValue = input.readEnum();
 
               enterType_ = rawValue;
+              break;
+            }
+            case 42: {
+              emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder subBuilder = null;
+              if (unk37DHNMGNOLFKJ_ != null) {
+                subBuilder = unk37DHNMGNOLFKJ_.toBuilder();
+              }
+              unk37DHNMGNOLFKJ_ = input.readMessage(emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unk37DHNMGNOLFKJ_);
+                unk37DHNMGNOLFKJ_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -145,49 +161,69 @@ public final class UgcTeamInfoOuterClass {
               emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo.class, emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo.Builder.class);
     }
 
-    public static final int ENTER_TYPE_FIELD_NUMBER = 7;
+    public static final int UNK_37_DHNMGNOLFKJ_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB unk37DHNMGNOLFKJ_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     * @return Whether the unk37DHNMGNOLFKJ field is set.
+     */
+    @java.lang.Override
+    public boolean hasUnk37DHNMGNOLFKJ() {
+      return unk37DHNMGNOLFKJ_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     * @return The unk37DHNMGNOLFKJ.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB getUnk37DHNMGNOLFKJ() {
+      return unk37DHNMGNOLFKJ_ == null ? emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.getDefaultInstance() : unk37DHNMGNOLFKJ_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder getUnk37DHNMGNOLFKJOrBuilder() {
+      return getUnk37DHNMGNOLFKJ();
+    }
+
+    public static final int ENTER_TYPE_FIELD_NUMBER = 1;
     private int enterType_;
     /**
-     * <code>.FDGOOBGNJMP enter_type = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.EnterUgcDungeonType enter_type = 1;</code>
      * @return The enum numeric value on the wire for enterType.
      */
     @java.lang.Override public int getEnterTypeValue() {
       return enterType_;
     }
     /**
-     * <code>.FDGOOBGNJMP enter_type = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.EnterUgcDungeonType enter_type = 1;</code>
      * @return The enterType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP getEnterType() {
+    @java.lang.Override public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP result = emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.valueOf(enterType_);
-      return result == null ? emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.UNRECOGNIZED : result;
-    }
-
-    public static final int FDMDGMLNDNB_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN fDMDGMLNDNB_;
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     * @return Whether the fDMDGMLNDNB field is set.
-     */
-    @java.lang.Override
-    public boolean hasFDMDGMLNDNB() {
-      return fDMDGMLNDNB_ != null;
-    }
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     * @return The fDMDGMLNDNB.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN getFDMDGMLNDNB() {
-      return fDMDGMLNDNB_ == null ? emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.getDefaultInstance() : fDMDGMLNDNB_;
-    }
-    /**
-     * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder getFDMDGMLNDNBOrBuilder() {
-      return getFDMDGMLNDNB();
+      emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -204,11 +240,11 @@ public final class UgcTeamInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fDMDGMLNDNB_ != null) {
-        output.writeMessage(5, getFDMDGMLNDNB());
+      if (enterType_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE.getNumber()) {
+        output.writeEnum(1, enterType_);
       }
-      if (enterType_ != emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.FDGOOBGNJMP_EnterUgcDungeonNone.getNumber()) {
-        output.writeEnum(7, enterType_);
+      if (unk37DHNMGNOLFKJ_ != null) {
+        output.writeMessage(5, getUnk37DHNMGNOLFKJ());
       }
       unknownFields.writeTo(output);
     }
@@ -219,13 +255,13 @@ public final class UgcTeamInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fDMDGMLNDNB_ != null) {
+      if (enterType_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getFDMDGMLNDNB());
+          .computeEnumSize(1, enterType_);
       }
-      if (enterType_ != emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.FDGOOBGNJMP_EnterUgcDungeonNone.getNumber()) {
+      if (unk37DHNMGNOLFKJ_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, enterType_);
+          .computeMessageSize(5, getUnk37DHNMGNOLFKJ());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -242,12 +278,12 @@ public final class UgcTeamInfoOuterClass {
       }
       emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo other = (emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo) obj;
 
-      if (enterType_ != other.enterType_) return false;
-      if (hasFDMDGMLNDNB() != other.hasFDMDGMLNDNB()) return false;
-      if (hasFDMDGMLNDNB()) {
-        if (!getFDMDGMLNDNB()
-            .equals(other.getFDMDGMLNDNB())) return false;
+      if (hasUnk37DHNMGNOLFKJ() != other.hasUnk37DHNMGNOLFKJ()) return false;
+      if (hasUnk37DHNMGNOLFKJ()) {
+        if (!getUnk37DHNMGNOLFKJ()
+            .equals(other.getUnk37DHNMGNOLFKJ())) return false;
       }
+      if (enterType_ != other.enterType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -259,12 +295,12 @@ public final class UgcTeamInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasUnk37DHNMGNOLFKJ()) {
+        hash = (37 * hash) + UNK_37_DHNMGNOLFKJ_FIELD_NUMBER;
+        hash = (53 * hash) + getUnk37DHNMGNOLFKJ().hashCode();
+      }
       hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + enterType_;
-      if (hasFDMDGMLNDNB()) {
-        hash = (37 * hash) + FDMDGMLNDNB_FIELD_NUMBER;
-        hash = (53 * hash) + getFDMDGMLNDNB().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -361,10 +397,6 @@ public final class UgcTeamInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EJFDNMJLLGC
-     * </pre>
-     *
      * Protobuf type {@code UgcTeamInfo}
      */
     public static final class Builder extends
@@ -402,14 +434,14 @@ public final class UgcTeamInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          unk37DHNMGNOLFKJ_ = null;
+        } else {
+          unk37DHNMGNOLFKJ_ = null;
+          unk37DHNMGNOLFKJBuilder_ = null;
+        }
         enterType_ = 0;
 
-        if (fDMDGMLNDNBBuilder_ == null) {
-          fDMDGMLNDNB_ = null;
-        } else {
-          fDMDGMLNDNB_ = null;
-          fDMDGMLNDNBBuilder_ = null;
-        }
         return this;
       }
 
@@ -436,12 +468,12 @@ public final class UgcTeamInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo buildPartial() {
         emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo result = new emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo(this);
-        result.enterType_ = enterType_;
-        if (fDMDGMLNDNBBuilder_ == null) {
-          result.fDMDGMLNDNB_ = fDMDGMLNDNB_;
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          result.unk37DHNMGNOLFKJ_ = unk37DHNMGNOLFKJ_;
         } else {
-          result.fDMDGMLNDNB_ = fDMDGMLNDNBBuilder_.build();
+          result.unk37DHNMGNOLFKJ_ = unk37DHNMGNOLFKJBuilder_.build();
         }
+        result.enterType_ = enterType_;
         onBuilt();
         return result;
       }
@@ -490,11 +522,11 @@ public final class UgcTeamInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo other) {
         if (other == emu.grasscutter.net.proto.UgcTeamInfoOuterClass.UgcTeamInfo.getDefaultInstance()) return this;
+        if (other.hasUnk37DHNMGNOLFKJ()) {
+          mergeUnk37DHNMGNOLFKJ(other.getUnk37DHNMGNOLFKJ());
+        }
         if (other.enterType_ != 0) {
           setEnterTypeValue(other.getEnterTypeValue());
-        }
-        if (other.hasFDMDGMLNDNB()) {
-          mergeFDMDGMLNDNB(other.getFDMDGMLNDNB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -525,16 +557,179 @@ public final class UgcTeamInfoOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB unk37DHNMGNOLFKJ_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder> unk37DHNMGNOLFKJBuilder_;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       * @return Whether the unk37DHNMGNOLFKJ field is set.
+       */
+      public boolean hasUnk37DHNMGNOLFKJ() {
+        return unk37DHNMGNOLFKJBuilder_ != null || unk37DHNMGNOLFKJ_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       * @return The unk37DHNMGNOLFKJ.
+       */
+      public emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB getUnk37DHNMGNOLFKJ() {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          return unk37DHNMGNOLFKJ_ == null ? emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.getDefaultInstance() : unk37DHNMGNOLFKJ_;
+        } else {
+          return unk37DHNMGNOLFKJBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public Builder setUnk37DHNMGNOLFKJ(emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB value) {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          unk37DHNMGNOLFKJ_ = value;
+          onChanged();
+        } else {
+          unk37DHNMGNOLFKJBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public Builder setUnk37DHNMGNOLFKJ(
+          emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder builderForValue) {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          unk37DHNMGNOLFKJ_ = builderForValue.build();
+          onChanged();
+        } else {
+          unk37DHNMGNOLFKJBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public Builder mergeUnk37DHNMGNOLFKJ(emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB value) {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          if (unk37DHNMGNOLFKJ_ != null) {
+            unk37DHNMGNOLFKJ_ =
+              emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.newBuilder(unk37DHNMGNOLFKJ_).mergeFrom(value).buildPartial();
+          } else {
+            unk37DHNMGNOLFKJ_ = value;
+          }
+          onChanged();
+        } else {
+          unk37DHNMGNOLFKJBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public Builder clearUnk37DHNMGNOLFKJ() {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          unk37DHNMGNOLFKJ_ = null;
+          onChanged();
+        } else {
+          unk37DHNMGNOLFKJ_ = null;
+          unk37DHNMGNOLFKJBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder getUnk37DHNMGNOLFKJBuilder() {
+        
+        onChanged();
+        return getUnk37DHNMGNOLFKJFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      public emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder getUnk37DHNMGNOLFKJOrBuilder() {
+        if (unk37DHNMGNOLFKJBuilder_ != null) {
+          return unk37DHNMGNOLFKJBuilder_.getMessageOrBuilder();
+        } else {
+          return unk37DHNMGNOLFKJ_ == null ?
+              emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.getDefaultInstance() : unk37DHNMGNOLFKJ_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Unk_37_EGEBOGIIBGB unk_37_DHNMGNOLFKJ = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder> 
+          getUnk37DHNMGNOLFKJFieldBuilder() {
+        if (unk37DHNMGNOLFKJBuilder_ == null) {
+          unk37DHNMGNOLFKJBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.Unk_37_EGEBOGIIBGBOrBuilder>(
+                  getUnk37DHNMGNOLFKJ(),
+                  getParentForChildren(),
+                  isClean());
+          unk37DHNMGNOLFKJ_ = null;
+        }
+        return unk37DHNMGNOLFKJBuilder_;
+      }
+
       private int enterType_ = 0;
       /**
-       * <code>.FDGOOBGNJMP enter_type = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.EnterUgcDungeonType enter_type = 1;</code>
        * @return The enum numeric value on the wire for enterType.
        */
       @java.lang.Override public int getEnterTypeValue() {
         return enterType_;
       }
       /**
-       * <code>.FDGOOBGNJMP enter_type = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.EnterUgcDungeonType enter_type = 1;</code>
        * @param value The enum numeric value on the wire for enterType to set.
        * @return This builder for chaining.
        */
@@ -545,21 +740,29 @@ public final class UgcTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FDGOOBGNJMP enter_type = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.EnterUgcDungeonType enter_type = 1;</code>
        * @return The enterType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP getEnterType() {
+      public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP result = emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.valueOf(enterType_);
-        return result == null ? emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(enterType_);
+        return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FDGOOBGNJMP enter_type = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.EnterUgcDungeonType enter_type = 1;</code>
        * @param value The enterType to set.
        * @return This builder for chaining.
        */
-      public Builder setEnterType(emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.FDGOOBGNJMP value) {
+      public Builder setEnterType(emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -569,7 +772,11 @@ public final class UgcTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FDGOOBGNJMP enter_type = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.EnterUgcDungeonType enter_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterType() {
@@ -577,125 +784,6 @@ public final class UgcTeamInfoOuterClass {
         enterType_ = 0;
         onChanged();
         return this;
-      }
-
-      private emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN fDMDGMLNDNB_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder> fDMDGMLNDNBBuilder_;
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       * @return Whether the fDMDGMLNDNB field is set.
-       */
-      public boolean hasFDMDGMLNDNB() {
-        return fDMDGMLNDNBBuilder_ != null || fDMDGMLNDNB_ != null;
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       * @return The fDMDGMLNDNB.
-       */
-      public emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN getFDMDGMLNDNB() {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          return fDMDGMLNDNB_ == null ? emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.getDefaultInstance() : fDMDGMLNDNB_;
-        } else {
-          return fDMDGMLNDNBBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public Builder setFDMDGMLNDNB(emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN value) {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          fDMDGMLNDNB_ = value;
-          onChanged();
-        } else {
-          fDMDGMLNDNBBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public Builder setFDMDGMLNDNB(
-          emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder builderForValue) {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          fDMDGMLNDNB_ = builderForValue.build();
-          onChanged();
-        } else {
-          fDMDGMLNDNBBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public Builder mergeFDMDGMLNDNB(emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN value) {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          if (fDMDGMLNDNB_ != null) {
-            fDMDGMLNDNB_ =
-              emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.newBuilder(fDMDGMLNDNB_).mergeFrom(value).buildPartial();
-          } else {
-            fDMDGMLNDNB_ = value;
-          }
-          onChanged();
-        } else {
-          fDMDGMLNDNBBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public Builder clearFDMDGMLNDNB() {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          fDMDGMLNDNB_ = null;
-          onChanged();
-        } else {
-          fDMDGMLNDNB_ = null;
-          fDMDGMLNDNBBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder getFDMDGMLNDNBBuilder() {
-        
-        onChanged();
-        return getFDMDGMLNDNBFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      public emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder getFDMDGMLNDNBOrBuilder() {
-        if (fDMDGMLNDNBBuilder_ != null) {
-          return fDMDGMLNDNBBuilder_.getMessageOrBuilder();
-        } else {
-          return fDMDGMLNDNB_ == null ?
-              emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.getDefaultInstance() : fDMDGMLNDNB_;
-        }
-      }
-      /**
-       * <code>.IEPHBPLIFIN FDMDGMLNDNB = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder> 
-          getFDMDGMLNDNBFieldBuilder() {
-        if (fDMDGMLNDNBBuilder_ == null) {
-          fDMDGMLNDNBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFIN.Builder, emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.IEPHBPLIFINOrBuilder>(
-                  getFDMDGMLNDNB(),
-                  getParentForChildren(),
-                  isClean());
-          fDMDGMLNDNB_ = null;
-        }
-        return fDMDGMLNDNBBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -764,26 +852,27 @@ public final class UgcTeamInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021UgcTeamInfo.proto\032\021FDGOOBGNJMP.proto\032\021" +
-      "IEPHBPLIFIN.proto\"R\n\013UgcTeamInfo\022 \n\nente" +
-      "r_type\030\007 \001(\0162\014.FDGOOBGNJMP\022!\n\013FDMDGMLNDN" +
-      "B\030\005 \001(\0132\014.IEPHBPLIFINB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\021UgcTeamInfo.proto\032\031EnterUgcDungeonType" +
+      ".proto\032\030Unk_37_EGEBOGIIBGB.proto\"h\n\013UgcT" +
+      "eamInfo\022/\n\022unk_37_DHNMGNOLFKJ\030\005 \001(\0132\023.Un" +
+      "k_37_EGEBOGIIBGB\022(\n\nenter_type\030\001 \001(\0162\024.E" +
+      "nterUgcDungeonTypeB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.getDescriptor(),
         });
     internal_static_UgcTeamInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcTeamInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcTeamInfo_descriptor,
-        new java.lang.String[] { "EnterType", "FDMDGMLNDNB", });
-    emu.grasscutter.net.proto.FDGOOBGNJMPOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.IEPHBPLIFINOuterClass.getDescriptor();
+        new java.lang.String[] { "Unk37DHNMGNOLFKJ", "EnterType", });
+    emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.Unk37EGEBOGIIBGB.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

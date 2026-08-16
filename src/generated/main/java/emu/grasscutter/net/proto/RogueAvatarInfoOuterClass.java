@@ -19,22 +19,34 @@ public final class RogueAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_onstage = 14;</code>
-     * @return The isOnstage.
-     */
-    boolean getIsOnstage();
-
-    /**
-     * <code>bool is_alive = 12;</code>
-     * @return The isAlive.
-     */
-    boolean getIsAlive();
-
-    /**
-     * <code>uint32 avatar_id = 7;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 9;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool BAIOCPOFAMN = 3;</code>
+     * @return The bAIOCPOFAMN.
+     */
+    boolean getBAIOCPOFAMN();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 37
+     * </pre>
+     *
+     * <code>bool is_alive = 13;</code>
+     * @return The isAlive.
+     */
+    boolean getIsAlive();
   }
   /**
    * Protobuf type {@code RogueAvatarInfo}
@@ -81,19 +93,19 @@ public final class RogueAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
+
+              bAIOCPOFAMN_ = input.readBool();
+              break;
+            }
+            case 72: {
 
               avatarId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               isAlive_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              isOnstage_ = input.readBool();
               break;
             }
             default: {
@@ -128,37 +140,49 @@ public final class RogueAvatarInfoOuterClass {
               emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.class, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder.class);
     }
 
-    public static final int IS_ONSTAGE_FIELD_NUMBER = 14;
-    private boolean isOnstage_;
-    /**
-     * <code>bool is_onstage = 14;</code>
-     * @return The isOnstage.
-     */
-    @java.lang.Override
-    public boolean getIsOnstage() {
-      return isOnstage_;
-    }
-
-    public static final int IS_ALIVE_FIELD_NUMBER = 12;
-    private boolean isAlive_;
-    /**
-     * <code>bool is_alive = 12;</code>
-     * @return The isAlive.
-     */
-    @java.lang.Override
-    public boolean getIsAlive() {
-      return isAlive_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 7;
+    public static final int AVATAR_ID_FIELD_NUMBER = 9;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 7;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 9;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int BAIOCPOFAMN_FIELD_NUMBER = 3;
+    private boolean bAIOCPOFAMN_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool BAIOCPOFAMN = 3;</code>
+     * @return The bAIOCPOFAMN.
+     */
+    @java.lang.Override
+    public boolean getBAIOCPOFAMN() {
+      return bAIOCPOFAMN_;
+    }
+
+    public static final int IS_ALIVE_FIELD_NUMBER = 13;
+    private boolean isAlive_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 37
+     * </pre>
+     *
+     * <code>bool is_alive = 13;</code>
+     * @return The isAlive.
+     */
+    @java.lang.Override
+    public boolean getIsAlive() {
+      return isAlive_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +199,14 @@ public final class RogueAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (bAIOCPOFAMN_ != false) {
+        output.writeBool(3, bAIOCPOFAMN_);
+      }
       if (avatarId_ != 0) {
-        output.writeUInt32(7, avatarId_);
+        output.writeUInt32(9, avatarId_);
       }
       if (isAlive_ != false) {
-        output.writeBool(12, isAlive_);
-      }
-      if (isOnstage_ != false) {
-        output.writeBool(14, isOnstage_);
+        output.writeBool(13, isAlive_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +217,17 @@ public final class RogueAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (bAIOCPOFAMN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, bAIOCPOFAMN_);
+      }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, avatarId_);
+          .computeUInt32Size(9, avatarId_);
       }
       if (isAlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isAlive_);
-      }
-      if (isOnstage_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOnstage_);
+          .computeBoolSize(13, isAlive_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +244,12 @@ public final class RogueAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo other = (emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo) obj;
 
-      if (getIsOnstage()
-          != other.getIsOnstage()) return false;
-      if (getIsAlive()
-          != other.getIsAlive()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getBAIOCPOFAMN()
+          != other.getBAIOCPOFAMN()) return false;
+      if (getIsAlive()
+          != other.getIsAlive()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,14 +261,14 @@ public final class RogueAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ONSTAGE_FIELD_NUMBER;
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + BAIOCPOFAMN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOnstage());
+          getBAIOCPOFAMN());
       hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAlive());
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,11 +402,11 @@ public final class RogueAvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOnstage_ = false;
+        avatarId_ = 0;
+
+        bAIOCPOFAMN_ = false;
 
         isAlive_ = false;
-
-        avatarId_ = 0;
 
         return this;
       }
@@ -410,9 +434,9 @@ public final class RogueAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo result = new emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo(this);
-        result.isOnstage_ = isOnstage_;
-        result.isAlive_ = isAlive_;
         result.avatarId_ = avatarId_;
+        result.bAIOCPOFAMN_ = bAIOCPOFAMN_;
+        result.isAlive_ = isAlive_;
         onBuilt();
         return result;
       }
@@ -461,14 +485,14 @@ public final class RogueAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.getDefaultInstance()) return this;
-        if (other.getIsOnstage() != false) {
-          setIsOnstage(other.getIsOnstage());
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
+        }
+        if (other.getBAIOCPOFAMN() != false) {
+          setBAIOCPOFAMN(other.getBAIOCPOFAMN());
         }
         if (other.getIsAlive() != false) {
           setIsAlive(other.getIsAlive());
-        }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -499,71 +523,13 @@ public final class RogueAvatarInfoOuterClass {
         return this;
       }
 
-      private boolean isOnstage_ ;
-      /**
-       * <code>bool is_onstage = 14;</code>
-       * @return The isOnstage.
-       */
-      @java.lang.Override
-      public boolean getIsOnstage() {
-        return isOnstage_;
-      }
-      /**
-       * <code>bool is_onstage = 14;</code>
-       * @param value The isOnstage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOnstage(boolean value) {
-        
-        isOnstage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_onstage = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOnstage() {
-        
-        isOnstage_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isAlive_ ;
-      /**
-       * <code>bool is_alive = 12;</code>
-       * @return The isAlive.
-       */
-      @java.lang.Override
-      public boolean getIsAlive() {
-        return isAlive_;
-      }
-      /**
-       * <code>bool is_alive = 12;</code>
-       * @param value The isAlive to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAlive(boolean value) {
-        
-        isAlive_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_alive = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAlive() {
-        
-        isAlive_ = false;
-        onChanged();
-        return this;
-      }
-
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 9;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -571,7 +537,11 @@ public final class RogueAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 9;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -582,12 +552,102 @@ public final class RogueAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
         
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean bAIOCPOFAMN_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool BAIOCPOFAMN = 3;</code>
+       * @return The bAIOCPOFAMN.
+       */
+      @java.lang.Override
+      public boolean getBAIOCPOFAMN() {
+        return bAIOCPOFAMN_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool BAIOCPOFAMN = 3;</code>
+       * @param value The bAIOCPOFAMN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBAIOCPOFAMN(boolean value) {
+        
+        bAIOCPOFAMN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool BAIOCPOFAMN = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBAIOCPOFAMN() {
+        
+        bAIOCPOFAMN_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAlive_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_alive = 13;</code>
+       * @return The isAlive.
+       */
+      @java.lang.Override
+      public boolean getIsAlive() {
+        return isAlive_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_alive = 13;</code>
+       * @param value The isAlive to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAlive(boolean value) {
+        
+        isAlive_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_alive = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAlive() {
+        
+        isAlive_ = false;
         onChanged();
         return this;
       }
@@ -658,10 +718,10 @@ public final class RogueAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025RogueAvatarInfo.proto\"J\n\017RogueAvatarIn" +
-      "fo\022\022\n\nis_onstage\030\016 \001(\010\022\020\n\010is_alive\030\014 \001(\010" +
-      "\022\021\n\tavatar_id\030\007 \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\025RogueAvatarInfo.proto\"K\n\017RogueAvatarIn" +
+      "fo\022\021\n\tavatar_id\030\t \001(\r\022\023\n\013BAIOCPOFAMN\030\003 \001" +
+      "(\010\022\020\n\010is_alive\030\r \001(\010B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +732,7 @@ public final class RogueAvatarInfoOuterClass {
     internal_static_RogueAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueAvatarInfo_descriptor,
-        new java.lang.String[] { "IsOnstage", "IsAlive", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "BAIOCPOFAMN", "IsAlive", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

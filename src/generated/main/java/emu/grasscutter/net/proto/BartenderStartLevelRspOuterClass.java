@@ -19,45 +19,67 @@ public final class BartenderStartLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 time = 1;</code>
-     * @return The time.
-     */
-    int getTime();
-
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @return A list containing the orderList.
      */
     java.util.List<java.lang.Integer> getOrderListList();
     /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @return The count of orderList.
      */
     int getOrderListCount();
     /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @param index The index of the element to return.
      * @return The orderList at the given index.
      */
     int getOrderList(int index);
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 time = 13;</code>
+     * @return The time.
+     */
+    int getTime();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 8981
-   * Version: 4.6.0
-   * Obfs: FFOAILEBFAD
+   * CmdId: 23577
    * </pre>
    *
    * Protobuf type {@code BartenderStartLevelRsp}
@@ -106,17 +128,22 @@ public final class BartenderStartLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
-              time_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 104: {
+
+              time_ = input.readUInt32();
+              break;
+            }
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 orderList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +151,7 @@ public final class BartenderStartLevelRspOuterClass {
               orderList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -135,11 +162,6 @@ public final class BartenderStartLevelRspOuterClass {
                 orderList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,32 +199,14 @@ public final class BartenderStartLevelRspOuterClass {
               emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp.class, emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp.Builder.class);
     }
 
-    public static final int TIME_FIELD_NUMBER = 1;
-    private int time_;
-    /**
-     * <code>uint32 time = 1;</code>
-     * @return The time.
-     */
-    @java.lang.Override
-    public int getTime() {
-      return time_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ORDER_LIST_FIELD_NUMBER = 7;
+    public static final int ORDER_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList orderList_;
     /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @return A list containing the orderList.
      */
     @java.lang.Override
@@ -211,14 +215,22 @@ public final class BartenderStartLevelRspOuterClass {
       return orderList_;
     }
     /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @return The count of orderList.
      */
     public int getOrderListCount() {
       return orderList_.size();
     }
     /**
-     * <code>repeated uint32 order_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 order_list = 15;</code>
      * @param index The index of the element to return.
      * @return The orderList at the given index.
      */
@@ -227,10 +239,44 @@ public final class BartenderStartLevelRspOuterClass {
     }
     private int orderListMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int TIME_FIELD_NUMBER = 13;
+    private int time_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 time = 13;</code>
+     * @return The time.
+     */
+    @java.lang.Override
+    public int getTime() {
+      return time_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -253,21 +299,21 @@ public final class BartenderStartLevelRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (time_ != 0) {
-        output.writeUInt32(1, time_);
+      if (levelId_ != 0) {
+        output.writeUInt32(5, levelId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(8, retcode_);
+      }
+      if (time_ != 0) {
+        output.writeUInt32(13, time_);
       }
       if (getOrderListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(orderListMemoizedSerializedSize);
       }
       for (int i = 0; i < orderList_.size(); i++) {
         output.writeUInt32NoTag(orderList_.getInt(i));
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -278,13 +324,17 @@ public final class BartenderStartLevelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (time_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, time_);
+          .computeUInt32Size(5, levelId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(8, retcode_);
+      }
+      if (time_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, time_);
       }
       {
         int dataSize = 0;
@@ -299,10 +349,6 @@ public final class BartenderStartLevelRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         orderListMemoizedSerializedSize = dataSize;
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -319,12 +365,12 @@ public final class BartenderStartLevelRspOuterClass {
       }
       emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp other = (emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp) obj;
 
+      if (!getOrderListList()
+          .equals(other.getOrderListList())) return false;
       if (getTime()
           != other.getTime()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getOrderListList()
-          .equals(other.getOrderListList())) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -338,14 +384,14 @@ public final class BartenderStartLevelRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTime();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getOrderListCount() > 0) {
         hash = (37 * hash) + ORDER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOrderListList().hashCode();
       }
+      hash = (37 * hash) + TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getTime();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -445,9 +491,7 @@ public final class BartenderStartLevelRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8981
-     * Version: 4.6.0
-     * Obfs: FFOAILEBFAD
+     * CmdId: 23577
      * </pre>
      *
      * Protobuf type {@code BartenderStartLevelRsp}
@@ -487,12 +531,12 @@ public final class BartenderStartLevelRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        orderList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         time_ = 0;
 
         retcode_ = 0;
 
-        orderList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         levelId_ = 0;
 
         return this;
@@ -522,13 +566,13 @@ public final class BartenderStartLevelRspOuterClass {
       public emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp buildPartial() {
         emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp result = new emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp(this);
         int from_bitField0_ = bitField0_;
-        result.time_ = time_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           orderList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.orderList_ = orderList_;
+        result.time_ = time_;
+        result.retcode_ = retcode_;
         result.levelId_ = levelId_;
         onBuilt();
         return result;
@@ -578,12 +622,6 @@ public final class BartenderStartLevelRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp other) {
         if (other == emu.grasscutter.net.proto.BartenderStartLevelRspOuterClass.BartenderStartLevelRsp.getDefaultInstance()) return this;
-        if (other.getTime() != 0) {
-          setTime(other.getTime());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.orderList_.isEmpty()) {
           if (orderList_.isEmpty()) {
             orderList_ = other.orderList_;
@@ -593,6 +631,12 @@ public final class BartenderStartLevelRspOuterClass {
             orderList_.addAll(other.orderList_);
           }
           onChanged();
+        }
+        if (other.getTime() != 0) {
+          setTime(other.getTime());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -627,68 +671,6 @@ public final class BartenderStartLevelRspOuterClass {
       }
       private int bitField0_;
 
-      private int time_ ;
-      /**
-       * <code>uint32 time = 1;</code>
-       * @return The time.
-       */
-      @java.lang.Override
-      public int getTime() {
-        return time_;
-      }
-      /**
-       * <code>uint32 time = 1;</code>
-       * @param value The time to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTime(int value) {
-        
-        time_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTime() {
-        
-        time_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList orderList_ = emptyIntList();
       private void ensureOrderListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -697,7 +679,11 @@ public final class BartenderStartLevelRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @return A list containing the orderList.
        */
       public java.util.List<java.lang.Integer>
@@ -706,14 +692,22 @@ public final class BartenderStartLevelRspOuterClass {
                  java.util.Collections.unmodifiableList(orderList_) : orderList_;
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @return The count of orderList.
        */
       public int getOrderListCount() {
         return orderList_.size();
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @param index The index of the element to return.
        * @return The orderList at the given index.
        */
@@ -721,7 +715,11 @@ public final class BartenderStartLevelRspOuterClass {
         return orderList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The orderList to set.
        * @return This builder for chaining.
@@ -734,7 +732,11 @@ public final class BartenderStartLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @param value The orderList to add.
        * @return This builder for chaining.
        */
@@ -745,7 +747,11 @@ public final class BartenderStartLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @param values The orderList to add.
        * @return This builder for chaining.
        */
@@ -758,7 +764,11 @@ public final class BartenderStartLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 order_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 order_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearOrderList() {
@@ -768,9 +778,99 @@ public final class BartenderStartLevelRspOuterClass {
         return this;
       }
 
+      private int time_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 time = 13;</code>
+       * @return The time.
+       */
+      @java.lang.Override
+      public int getTime() {
+        return time_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 time = 13;</code>
+       * @param value The time to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTime(int value) {
+        
+        time_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 time = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTime() {
+        
+        time_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -778,7 +878,11 @@ public final class BartenderStartLevelRspOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -789,7 +893,11 @@ public final class BartenderStartLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -866,9 +974,9 @@ public final class BartenderStartLevelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034BartenderStartLevelRsp.proto\"]\n\026Barten" +
-      "derStartLevelRsp\022\014\n\004time\030\001 \001(\r\022\017\n\007retcod" +
-      "e\030\004 \001(\005\022\022\n\norder_list\030\007 \003(\r\022\020\n\010level_id\030" +
-      "\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "derStartLevelRsp\022\022\n\norder_list\030\017 \003(\r\022\014\n\004" +
+      "time\030\r \001(\r\022\017\n\007retcode\030\010 \001(\005\022\020\n\010level_id\030" +
+      "\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -880,7 +988,7 @@ public final class BartenderStartLevelRspOuterClass {
     internal_static_BartenderStartLevelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderStartLevelRsp_descriptor,
-        new java.lang.String[] { "Time", "Retcode", "OrderList", "LevelId", });
+        new java.lang.String[] { "OrderList", "Time", "Retcode", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,40 +19,40 @@ public final class BulletHellSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 CONAEAOCCMM = 1;</code>
+     * @return The cONAEAOCCMM.
+     */
+    int getCONAEAOCCMM();
+
+    /**
+     * <code>uint32 PFGEDMIGCOJ = 6;</code>
+     * @return The pFGEDMIGCOJ.
+     */
+    int getPFGEDMIGCOJ();
+
+    /**
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 JBECFLCAEGA = 11;</code>
+     * @return The jBECFLCAEGA.
+     */
+    int getJBECFLCAEGA();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 JEDOMNOOCOJ = 6;</code>
-     * @return The jEDOMNOOCOJ.
-     */
-    int getJEDOMNOOCOJ();
-
-    /**
-     * <code>uint32 MCJLEKMCECM = 4;</code>
-     * @return The mCJLEKMCECM.
-     */
-    int getMCJLEKMCECM();
-
-    /**
-     * <code>uint32 ODPEHPDGHBN = 8;</code>
-     * @return The oDPEHPDGHBN.
-     */
-    int getODPEHPDGHBN();
   }
   /**
    * Protobuf type {@code BulletHellSettleInfo}
@@ -99,34 +99,34 @@ public final class BulletHellSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              mCJLEKMCECM_ = input.readUInt32();
+              cONAEAOCCMM_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              jEDOMNOOCOJ_ = input.readUInt32();
+              pFGEDMIGCOJ_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              jBECFLCAEGA_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              oDPEHPDGHBN_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 104: {
 
               isNewRecord_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,10 +161,32 @@ public final class BulletHellSettleInfoOuterClass {
               emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.class, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 14;
+    public static final int CONAEAOCCMM_FIELD_NUMBER = 1;
+    private int cONAEAOCCMM_;
+    /**
+     * <code>uint32 CONAEAOCCMM = 1;</code>
+     * @return The cONAEAOCCMM.
+     */
+    @java.lang.Override
+    public int getCONAEAOCCMM() {
+      return cONAEAOCCMM_;
+    }
+
+    public static final int PFGEDMIGCOJ_FIELD_NUMBER = 6;
+    private int pFGEDMIGCOJ_;
+    /**
+     * <code>uint32 PFGEDMIGCOJ = 6;</code>
+     * @return The pFGEDMIGCOJ.
+     */
+    @java.lang.Override
+    public int getPFGEDMIGCOJ() {
+      return pFGEDMIGCOJ_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 10;
     private int score_;
     /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -172,10 +194,21 @@ public final class BulletHellSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    public static final int JBECFLCAEGA_FIELD_NUMBER = 11;
+    private int jBECFLCAEGA_;
+    /**
+     * <code>uint32 JBECFLCAEGA = 11;</code>
+     * @return The jBECFLCAEGA.
+     */
+    @java.lang.Override
+    public int getJBECFLCAEGA() {
+      return jBECFLCAEGA_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -183,48 +216,15 @@ public final class BulletHellSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
-    }
-
-    public static final int JEDOMNOOCOJ_FIELD_NUMBER = 6;
-    private int jEDOMNOOCOJ_;
-    /**
-     * <code>uint32 JEDOMNOOCOJ = 6;</code>
-     * @return The jEDOMNOOCOJ.
-     */
-    @java.lang.Override
-    public int getJEDOMNOOCOJ() {
-      return jEDOMNOOCOJ_;
-    }
-
-    public static final int MCJLEKMCECM_FIELD_NUMBER = 4;
-    private int mCJLEKMCECM_;
-    /**
-     * <code>uint32 MCJLEKMCECM = 4;</code>
-     * @return The mCJLEKMCECM.
-     */
-    @java.lang.Override
-    public int getMCJLEKMCECM() {
-      return mCJLEKMCECM_;
-    }
-
-    public static final int ODPEHPDGHBN_FIELD_NUMBER = 8;
-    private int oDPEHPDGHBN_;
-    /**
-     * <code>uint32 ODPEHPDGHBN = 8;</code>
-     * @return The oDPEHPDGHBN.
-     */
-    @java.lang.Override
-    public int getODPEHPDGHBN() {
-      return oDPEHPDGHBN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class BulletHellSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mCJLEKMCECM_ != 0) {
-        output.writeUInt32(4, mCJLEKMCECM_);
+      if (cONAEAOCCMM_ != 0) {
+        output.writeUInt32(1, cONAEAOCCMM_);
       }
-      if (jEDOMNOOCOJ_ != 0) {
-        output.writeUInt32(6, jEDOMNOOCOJ_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(7, levelId_);
-      }
-      if (oDPEHPDGHBN_ != 0) {
-        output.writeUInt32(8, oDPEHPDGHBN_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+      if (pFGEDMIGCOJ_ != 0) {
+        output.writeUInt32(6, pFGEDMIGCOJ_);
       }
       if (score_ != 0) {
-        output.writeUInt32(14, score_);
+        output.writeUInt32(10, score_);
+      }
+      if (jBECFLCAEGA_ != 0) {
+        output.writeUInt32(11, jBECFLCAEGA_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(13, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class BulletHellSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mCJLEKMCECM_ != 0) {
+      if (cONAEAOCCMM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, mCJLEKMCECM_);
+          .computeUInt32Size(1, cONAEAOCCMM_);
       }
-      if (jEDOMNOOCOJ_ != 0) {
+      if (pFGEDMIGCOJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, jEDOMNOOCOJ_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, levelId_);
-      }
-      if (oDPEHPDGHBN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, oDPEHPDGHBN_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeUInt32Size(6, pFGEDMIGCOJ_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, score_);
+          .computeUInt32Size(10, score_);
+      }
+      if (jBECFLCAEGA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, jBECFLCAEGA_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, levelId_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +307,18 @@ public final class BulletHellSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo other = (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) obj;
 
+      if (getCONAEAOCCMM()
+          != other.getCONAEAOCCMM()) return false;
+      if (getPFGEDMIGCOJ()
+          != other.getPFGEDMIGCOJ()) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getJBECFLCAEGA()
+          != other.getJBECFLCAEGA()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getJEDOMNOOCOJ()
-          != other.getJEDOMNOOCOJ()) return false;
-      if (getMCJLEKMCECM()
-          != other.getMCJLEKMCECM()) return false;
-      if (getODPEHPDGHBN()
-          != other.getODPEHPDGHBN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,19 +330,19 @@ public final class BulletHellSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CONAEAOCCMM_FIELD_NUMBER;
+      hash = (53 * hash) + getCONAEAOCCMM();
+      hash = (37 * hash) + PFGEDMIGCOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getPFGEDMIGCOJ();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + JBECFLCAEGA_FIELD_NUMBER;
+      hash = (53 * hash) + getJBECFLCAEGA();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + JEDOMNOOCOJ_FIELD_NUMBER;
-      hash = (53 * hash) + getJEDOMNOOCOJ();
-      hash = (37 * hash) + MCJLEKMCECM_FIELD_NUMBER;
-      hash = (53 * hash) + getMCJLEKMCECM();
-      hash = (37 * hash) + ODPEHPDGHBN_FIELD_NUMBER;
-      hash = (53 * hash) + getODPEHPDGHBN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,17 +476,17 @@ public final class BulletHellSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        cONAEAOCCMM_ = 0;
+
+        pFGEDMIGCOJ_ = 0;
+
         score_ = 0;
+
+        jBECFLCAEGA_ = 0;
 
         levelId_ = 0;
 
         isNewRecord_ = false;
-
-        jEDOMNOOCOJ_ = 0;
-
-        mCJLEKMCECM_ = 0;
-
-        oDPEHPDGHBN_ = 0;
 
         return this;
       }
@@ -514,12 +514,12 @@ public final class BulletHellSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo buildPartial() {
         emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo result = new emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo(this);
+        result.cONAEAOCCMM_ = cONAEAOCCMM_;
+        result.pFGEDMIGCOJ_ = pFGEDMIGCOJ_;
         result.score_ = score_;
+        result.jBECFLCAEGA_ = jBECFLCAEGA_;
         result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
-        result.jEDOMNOOCOJ_ = jEDOMNOOCOJ_;
-        result.mCJLEKMCECM_ = mCJLEKMCECM_;
-        result.oDPEHPDGHBN_ = oDPEHPDGHBN_;
         onBuilt();
         return result;
       }
@@ -568,23 +568,23 @@ public final class BulletHellSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance()) return this;
+        if (other.getCONAEAOCCMM() != 0) {
+          setCONAEAOCCMM(other.getCONAEAOCCMM());
+        }
+        if (other.getPFGEDMIGCOJ() != 0) {
+          setPFGEDMIGCOJ(other.getPFGEDMIGCOJ());
+        }
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getJBECFLCAEGA() != 0) {
+          setJBECFLCAEGA(other.getJBECFLCAEGA());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getJEDOMNOOCOJ() != 0) {
-          setJEDOMNOOCOJ(other.getJEDOMNOOCOJ());
-        }
-        if (other.getMCJLEKMCECM() != 0) {
-          setMCJLEKMCECM(other.getMCJLEKMCECM());
-        }
-        if (other.getODPEHPDGHBN() != 0) {
-          setODPEHPDGHBN(other.getODPEHPDGHBN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,9 +615,71 @@ public final class BulletHellSettleInfoOuterClass {
         return this;
       }
 
+      private int cONAEAOCCMM_ ;
+      /**
+       * <code>uint32 CONAEAOCCMM = 1;</code>
+       * @return The cONAEAOCCMM.
+       */
+      @java.lang.Override
+      public int getCONAEAOCCMM() {
+        return cONAEAOCCMM_;
+      }
+      /**
+       * <code>uint32 CONAEAOCCMM = 1;</code>
+       * @param value The cONAEAOCCMM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCONAEAOCCMM(int value) {
+        
+        cONAEAOCCMM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CONAEAOCCMM = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCONAEAOCCMM() {
+        
+        cONAEAOCCMM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pFGEDMIGCOJ_ ;
+      /**
+       * <code>uint32 PFGEDMIGCOJ = 6;</code>
+       * @return The pFGEDMIGCOJ.
+       */
+      @java.lang.Override
+      public int getPFGEDMIGCOJ() {
+        return pFGEDMIGCOJ_;
+      }
+      /**
+       * <code>uint32 PFGEDMIGCOJ = 6;</code>
+       * @param value The pFGEDMIGCOJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPFGEDMIGCOJ(int value) {
+        
+        pFGEDMIGCOJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PFGEDMIGCOJ = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPFGEDMIGCOJ() {
+        
+        pFGEDMIGCOJ_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int score_ ;
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 10;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -625,7 +687,7 @@ public final class BulletHellSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 10;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -636,7 +698,7 @@ public final class BulletHellSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -646,9 +708,40 @@ public final class BulletHellSettleInfoOuterClass {
         return this;
       }
 
+      private int jBECFLCAEGA_ ;
+      /**
+       * <code>uint32 JBECFLCAEGA = 11;</code>
+       * @return The jBECFLCAEGA.
+       */
+      @java.lang.Override
+      public int getJBECFLCAEGA() {
+        return jBECFLCAEGA_;
+      }
+      /**
+       * <code>uint32 JBECFLCAEGA = 11;</code>
+       * @param value The jBECFLCAEGA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJBECFLCAEGA(int value) {
+        
+        jBECFLCAEGA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JBECFLCAEGA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJBECFLCAEGA() {
+        
+        jBECFLCAEGA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -656,7 +749,7 @@ public final class BulletHellSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -667,7 +760,7 @@ public final class BulletHellSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -679,7 +772,7 @@ public final class BulletHellSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -687,7 +780,7 @@ public final class BulletHellSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 13;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -698,105 +791,12 @@ public final class BulletHellSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int jEDOMNOOCOJ_ ;
-      /**
-       * <code>uint32 JEDOMNOOCOJ = 6;</code>
-       * @return The jEDOMNOOCOJ.
-       */
-      @java.lang.Override
-      public int getJEDOMNOOCOJ() {
-        return jEDOMNOOCOJ_;
-      }
-      /**
-       * <code>uint32 JEDOMNOOCOJ = 6;</code>
-       * @param value The jEDOMNOOCOJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJEDOMNOOCOJ(int value) {
-        
-        jEDOMNOOCOJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JEDOMNOOCOJ = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJEDOMNOOCOJ() {
-        
-        jEDOMNOOCOJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mCJLEKMCECM_ ;
-      /**
-       * <code>uint32 MCJLEKMCECM = 4;</code>
-       * @return The mCJLEKMCECM.
-       */
-      @java.lang.Override
-      public int getMCJLEKMCECM() {
-        return mCJLEKMCECM_;
-      }
-      /**
-       * <code>uint32 MCJLEKMCECM = 4;</code>
-       * @param value The mCJLEKMCECM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMCJLEKMCECM(int value) {
-        
-        mCJLEKMCECM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MCJLEKMCECM = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMCJLEKMCECM() {
-        
-        mCJLEKMCECM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oDPEHPDGHBN_ ;
-      /**
-       * <code>uint32 ODPEHPDGHBN = 8;</code>
-       * @return The oDPEHPDGHBN.
-       */
-      @java.lang.Override
-      public int getODPEHPDGHBN() {
-        return oDPEHPDGHBN_;
-      }
-      /**
-       * <code>uint32 ODPEHPDGHBN = 8;</code>
-       * @param value The oDPEHPDGHBN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setODPEHPDGHBN(int value) {
-        
-        oDPEHPDGHBN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ODPEHPDGHBN = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearODPEHPDGHBN() {
-        
-        oDPEHPDGHBN_ = 0;
         onChanged();
         return this;
       }
@@ -868,10 +868,10 @@ public final class BulletHellSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032BulletHellSettleInfo.proto\"\215\001\n\024BulletH" +
-      "ellSettleInfo\022\r\n\005score\030\016 \001(\r\022\020\n\010level_id" +
-      "\030\007 \001(\r\022\025\n\ris_new_record\030\t \001(\010\022\023\n\013JEDOMNO" +
-      "OCOJ\030\006 \001(\r\022\023\n\013MCJLEKMCECM\030\004 \001(\r\022\023\n\013ODPEH" +
-      "PDGHBN\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ellSettleInfo\022\023\n\013CONAEAOCCMM\030\001 \001(\r\022\023\n\013PF" +
+      "GEDMIGCOJ\030\006 \001(\r\022\r\n\005score\030\n \001(\r\022\023\n\013JBECFL" +
+      "CAEGA\030\013 \001(\r\022\020\n\010level_id\030\014 \001(\r\022\025\n\ris_new_" +
+      "record\030\r \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +883,7 @@ public final class BulletHellSettleInfoOuterClass {
     internal_static_BulletHellSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BulletHellSettleInfo_descriptor,
-        new java.lang.String[] { "Score", "LevelId", "IsNewRecord", "JEDOMNOOCOJ", "MCJLEKMCECM", "ODPEHPDGHBN", });
+        new java.lang.String[] { "CONAEAOCCMM", "PFGEDMIGCOJ", "Score", "JBECFLCAEGA", "LevelId", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

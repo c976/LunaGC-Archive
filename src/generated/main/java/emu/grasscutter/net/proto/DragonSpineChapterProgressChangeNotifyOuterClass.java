@@ -19,27 +19,26 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_progress = 11;</code>
-     * @return The curProgress.
-     */
-    int getCurProgress();
-
-    /**
-     * <code>uint32 chapter_id = 4;</code>
+     * <code>uint32 chapter_id = 1;</code>
      * @return The chapterId.
      */
     int getChapterId();
 
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 5;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
+
+    /**
+     * <code>uint32 cur_progress = 13;</code>
+     * @return The curProgress.
+     */
+    int getCurProgress();
   }
   /**
    * <pre>
-   * CmdId: 892
-   * Obf: HKPBLKONDCK
+   * CmdId: 6234
    * </pre>
    *
    * Protobuf type {@code DragonSpineChapterProgressChangeNotify}
@@ -86,17 +85,17 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               chapterId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 40: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
               curProgress_ = input.readUInt32();
               break;
@@ -133,21 +132,10 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
               emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify.class, emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify.Builder.class);
     }
 
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 11;
-    private int curProgress_;
-    /**
-     * <code>uint32 cur_progress = 11;</code>
-     * @return The curProgress.
-     */
-    @java.lang.Override
-    public int getCurProgress() {
-      return curProgress_;
-    }
-
-    public static final int CHAPTER_ID_FIELD_NUMBER = 4;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 1;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 4;</code>
+     * <code>uint32 chapter_id = 1;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -155,15 +143,26 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       return chapterId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 5;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 5;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
+    }
+
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 13;
+    private int curProgress_;
+    /**
+     * <code>uint32 cur_progress = 13;</code>
+     * @return The curProgress.
+     */
+    @java.lang.Override
+    public int getCurProgress() {
+      return curProgress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +180,13 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (chapterId_ != 0) {
-        output.writeUInt32(4, chapterId_);
+        output.writeUInt32(1, chapterId_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(7, scheduleId_);
+        output.writeUInt32(5, scheduleId_);
       }
       if (curProgress_ != 0) {
-        output.writeUInt32(11, curProgress_);
+        output.writeUInt32(13, curProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +199,15 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       size = 0;
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, chapterId_);
+          .computeUInt32Size(1, chapterId_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleId_);
+          .computeUInt32Size(5, scheduleId_);
       }
       if (curProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, curProgress_);
+          .computeUInt32Size(13, curProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify other = (emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify) obj;
 
-      if (getCurProgress()
-          != other.getCurProgress()) return false;
       if (getChapterId()
           != other.getChapterId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
+      if (getCurProgress()
+          != other.getCurProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +241,12 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getCurProgress();
       hash = (37 * hash) + CHAPTER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChapterId();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getCurProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 892
-     * Obf: HKPBLKONDCK
+     * CmdId: 6234
      * </pre>
      *
      * Protobuf type {@code DragonSpineChapterProgressChangeNotify}
@@ -386,11 +384,11 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curProgress_ = 0;
-
         chapterId_ = 0;
 
         scheduleId_ = 0;
+
+        curProgress_ = 0;
 
         return this;
       }
@@ -418,9 +416,9 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify buildPartial() {
         emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify result = new emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify(this);
-        result.curProgress_ = curProgress_;
         result.chapterId_ = chapterId_;
         result.scheduleId_ = scheduleId_;
+        result.curProgress_ = curProgress_;
         onBuilt();
         return result;
       }
@@ -469,14 +467,14 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify other) {
         if (other == emu.grasscutter.net.proto.DragonSpineChapterProgressChangeNotifyOuterClass.DragonSpineChapterProgressChangeNotify.getDefaultInstance()) return this;
-        if (other.getCurProgress() != 0) {
-          setCurProgress(other.getCurProgress());
-        }
         if (other.getChapterId() != 0) {
           setChapterId(other.getChapterId());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
+        }
+        if (other.getCurProgress() != 0) {
+          setCurProgress(other.getCurProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +505,9 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
         return this;
       }
 
-      private int curProgress_ ;
-      /**
-       * <code>uint32 cur_progress = 11;</code>
-       * @return The curProgress.
-       */
-      @java.lang.Override
-      public int getCurProgress() {
-        return curProgress_;
-      }
-      /**
-       * <code>uint32 cur_progress = 11;</code>
-       * @param value The curProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurProgress(int value) {
-        
-        curProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_progress = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurProgress() {
-        
-        curProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 4;</code>
+       * <code>uint32 chapter_id = 1;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -548,7 +515,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 4;</code>
+       * <code>uint32 chapter_id = 1;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +526,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 4;</code>
+       * <code>uint32 chapter_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -571,7 +538,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -579,7 +546,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +557,43 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
         
         scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curProgress_ ;
+      /**
+       * <code>uint32 cur_progress = 13;</code>
+       * @return The curProgress.
+       */
+      @java.lang.Override
+      public int getCurProgress() {
+        return curProgress_;
+      }
+      /**
+       * <code>uint32 cur_progress = 13;</code>
+       * @param value The curProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurProgress(int value) {
+        
+        curProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_progress = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurProgress() {
+        
+        curProgress_ = 0;
         onChanged();
         return this;
       }
@@ -668,8 +666,8 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n,DragonSpineChapterProgressChangeNotify" +
       ".proto\"g\n&DragonSpineChapterProgressChan" +
-      "geNotify\022\024\n\014cur_progress\030\013 \001(\r\022\022\n\nchapte" +
-      "r_id\030\004 \001(\r\022\023\n\013schedule_id\030\007 \001(\rB\033\n\031emu.g" +
+      "geNotify\022\022\n\nchapter_id\030\001 \001(\r\022\023\n\013schedule" +
+      "_id\030\005 \001(\r\022\024\n\014cur_progress\030\r \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +679,7 @@ public final class DragonSpineChapterProgressChangeNotifyOuterClass {
     internal_static_DragonSpineChapterProgressChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DragonSpineChapterProgressChangeNotify_descriptor,
-        new java.lang.String[] { "CurProgress", "ChapterId", "ScheduleId", });
+        new java.lang.String[] { "ChapterId", "ScheduleId", "CurProgress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,15 +19,14 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ghost_skill_id = 13;</code>
+     * <code>uint32 ghost_skill_id = 8;</code>
      * @return The ghostSkillId.
      */
     int getGhostSkillId();
   }
   /**
    * <pre>
-   * CmdId: 4718
-   * Obf: CDIBKABNMLB
+   * CmdId: 4967
    * </pre>
    *
    * Protobuf type {@code HideAndSeekPlayerCapturedNotify}
@@ -74,7 +73,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 64: {
 
               ghostSkillId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
               emu.grasscutter.net.proto.HideAndSeekPlayerCapturedNotifyOuterClass.HideAndSeekPlayerCapturedNotify.class, emu.grasscutter.net.proto.HideAndSeekPlayerCapturedNotifyOuterClass.HideAndSeekPlayerCapturedNotify.Builder.class);
     }
 
-    public static final int GHOST_SKILL_ID_FIELD_NUMBER = 13;
+    public static final int GHOST_SKILL_ID_FIELD_NUMBER = 8;
     private int ghostSkillId_;
     /**
-     * <code>uint32 ghost_skill_id = 13;</code>
+     * <code>uint32 ghost_skill_id = 8;</code>
      * @return The ghostSkillId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ghostSkillId_ != 0) {
-        output.writeUInt32(13, ghostSkillId_);
+        output.writeUInt32(8, ghostSkillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
       size = 0;
       if (ghostSkillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, ghostSkillId_);
+          .computeUInt32Size(8, ghostSkillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4718
-     * Obf: CDIBKABNMLB
+     * CmdId: 4967
      * </pre>
      *
      * Protobuf type {@code HideAndSeekPlayerCapturedNotify}
@@ -431,7 +429,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
 
       private int ghostSkillId_ ;
       /**
-       * <code>uint32 ghost_skill_id = 13;</code>
+       * <code>uint32 ghost_skill_id = 8;</code>
        * @return The ghostSkillId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
         return ghostSkillId_;
       }
       /**
-       * <code>uint32 ghost_skill_id = 13;</code>
+       * <code>uint32 ghost_skill_id = 8;</code>
        * @param value The ghostSkillId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ghost_skill_id = 13;</code>
+       * <code>uint32 ghost_skill_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGhostSkillId() {
@@ -528,7 +526,7 @@ public final class HideAndSeekPlayerCapturedNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%HideAndSeekPlayerCapturedNotify.proto\"" +
       "9\n\037HideAndSeekPlayerCapturedNotify\022\026\n\016gh" +
-      "ost_skill_id\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
+      "ost_skill_id\030\010 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

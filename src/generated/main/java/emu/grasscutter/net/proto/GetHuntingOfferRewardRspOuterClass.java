@@ -31,24 +31,23 @@ public final class GetHuntingOfferRewardRspOuterClass {
     int getCityId();
 
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      * @return Whether the huntingPair field is set.
      */
     boolean hasHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      * @return The huntingPair.
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 26705
-   * Obf: BGHOFJJBJJI
+   * CmdId: 23922
    * </pre>
    *
    * Protobuf type {@code GetHuntingOfferRewardRsp}
@@ -105,7 +104,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
               cityId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 90: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -172,10 +171,10 @@ public final class GetHuntingOfferRewardRspOuterClass {
       return cityId_;
     }
 
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 15;
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      * @return Whether the huntingPair field is set.
      */
     @java.lang.Override
@@ -183,7 +182,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
       return huntingPair_ != null;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      * @return The huntingPair.
      */
     @java.lang.Override
@@ -191,7 +190,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
       return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 15;</code>
+     * <code>.HuntingPair hunting_pair = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
@@ -219,7 +218,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         output.writeUInt32(9, cityId_);
       }
       if (huntingPair_ != null) {
-        output.writeMessage(15, getHuntingPair());
+        output.writeMessage(11, getHuntingPair());
       }
       unknownFields.writeTo(output);
     }
@@ -240,7 +239,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
       }
       if (huntingPair_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getHuntingPair());
+          .computeMessageSize(11, getHuntingPair());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,8 +381,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26705
-     * Obf: BGHOFJJBJJI
+     * CmdId: 23922
      * </pre>
      *
      * Protobuf type {@code GetHuntingOfferRewardRsp}
@@ -618,14 +616,14 @@ public final class GetHuntingOfferRewardRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -636,7 +634,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -652,7 +650,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -666,7 +664,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -684,7 +682,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -698,7 +696,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -706,7 +704,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -717,7 +715,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 15;</code>
+       * <code>.HuntingPair hunting_pair = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -802,7 +800,7 @@ public final class GetHuntingOfferRewardRspOuterClass {
       "\n\036GetHuntingOfferRewardRsp.proto\032\021Huntin" +
       "gPair.proto\"`\n\030GetHuntingOfferRewardRsp\022" +
       "\017\n\007retcode\030\002 \001(\005\022\017\n\007city_id\030\t \001(\r\022\"\n\014hun" +
-      "ting_pair\030\017 \001(\0132\014.HuntingPairB\033\n\031emu.gra" +
+      "ting_pair\030\013 \001(\0132\014.HuntingPairB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,28 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_type = 2;</code>
-     * @return The challengeType.
-     */
-    int getChallengeType();
-
-    /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 stage_id = 11;</code>
      * @return The stageId.
      */
     int getStageId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 challenge_type = 13;</code>
+     * @return The challengeType.
+     */
+    int getChallengeType();
   }
   /**
    * <pre>
-   * CmdId: 20695
-   * Obf: JCFJMOGFDFD
+   * CmdId: 3423
    * </pre>
    *
    * Protobuf type {@code UpdateSalvageBundleMarkReq}
@@ -80,12 +87,12 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 88: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 104: {
 
               challengeType_ = input.readUInt32();
               break;
@@ -122,26 +129,34 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
               emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq.class, emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq.Builder.class);
     }
 
-    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 2;
-    private int challengeType_;
-    /**
-     * <code>uint32 challenge_type = 2;</code>
-     * @return The challengeType.
-     */
-    @java.lang.Override
-    public int getChallengeType() {
-      return challengeType_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    public static final int STAGE_ID_FIELD_NUMBER = 11;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 stage_id = 11;</code>
      * @return The stageId.
      */
     @java.lang.Override
     public int getStageId() {
       return stageId_;
+    }
+
+    public static final int CHALLENGE_TYPE_FIELD_NUMBER = 13;
+    private int challengeType_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 challenge_type = 13;</code>
+     * @return The challengeType.
+     */
+    @java.lang.Override
+    public int getChallengeType() {
+      return challengeType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +174,10 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(1, stageId_);
+        output.writeUInt32(11, stageId_);
       }
       if (challengeType_ != 0) {
-        output.writeUInt32(2, challengeType_);
+        output.writeUInt32(13, challengeType_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, stageId_);
+          .computeUInt32Size(11, stageId_);
       }
       if (challengeType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, challengeType_);
+          .computeUInt32Size(13, challengeType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +211,10 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       }
       emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq other = (emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq) obj;
 
-      if (getChallengeType()
-          != other.getChallengeType()) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (getChallengeType()
+          != other.getChallengeType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +226,10 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeType();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + CHALLENGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +327,7 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20695
-     * Obf: JCFJMOGFDFD
+     * CmdId: 3423
      * </pre>
      *
      * Protobuf type {@code UpdateSalvageBundleMarkReq}
@@ -353,9 +367,9 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        challengeType_ = 0;
-
         stageId_ = 0;
+
+        challengeType_ = 0;
 
         return this;
       }
@@ -383,8 +397,8 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq buildPartial() {
         emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq result = new emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq(this);
-        result.challengeType_ = challengeType_;
         result.stageId_ = stageId_;
+        result.challengeType_ = challengeType_;
         onBuilt();
         return result;
       }
@@ -433,11 +447,11 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq other) {
         if (other == emu.grasscutter.net.proto.UpdateSalvageBundleMarkReqOuterClass.UpdateSalvageBundleMarkReq.getDefaultInstance()) return this;
-        if (other.getChallengeType() != 0) {
-          setChallengeType(other.getChallengeType());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getChallengeType() != 0) {
+          setChallengeType(other.getChallengeType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +482,13 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
         return this;
       }
 
-      private int challengeType_ ;
-      /**
-       * <code>uint32 challenge_type = 2;</code>
-       * @return The challengeType.
-       */
-      @java.lang.Override
-      public int getChallengeType() {
-        return challengeType_;
-      }
-      /**
-       * <code>uint32 challenge_type = 2;</code>
-       * @param value The challengeType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeType(int value) {
-        
-        challengeType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeType() {
-        
-        challengeType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage_id = 11;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -509,7 +496,11 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage_id = 11;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +511,59 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeType_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 challenge_type = 13;</code>
+       * @return The challengeType.
+       */
+      @java.lang.Override
+      public int getChallengeType() {
+        return challengeType_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 challenge_type = 13;</code>
+       * @param value The challengeType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeType(int value) {
+        
+        challengeType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 challenge_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeType() {
+        
+        challengeType_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +635,8 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n UpdateSalvageBundleMarkReq.proto\"F\n\032Up" +
-      "dateSalvageBundleMarkReq\022\026\n\016challenge_ty" +
-      "pe\030\002 \001(\r\022\020\n\010stage_id\030\001 \001(\rB\033\n\031emu.grassc" +
+      "dateSalvageBundleMarkReq\022\020\n\010stage_id\030\013 \001" +
+      "(\r\022\026\n\016challenge_type\030\r \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +648,7 @@ public final class UpdateSalvageBundleMarkReqOuterClass {
     internal_static_UpdateSalvageBundleMarkReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpdateSalvageBundleMarkReq_descriptor,
-        new java.lang.String[] { "ChallengeType", "StageId", });
+        new java.lang.String[] { "StageId", "ChallengeType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

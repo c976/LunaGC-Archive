@@ -17,8 +17,54 @@ public final class ChatChannelUpdateNotifyOuterClass {
   public interface ChatChannelUpdateNotifyOrBuilder extends
       // @@protoc_insertion_point(interface_extends:ChatChannelUpdateNotify)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>uint32 channel_id = 1;</code>
+     * @return The channelId.
+     */
+    int getChannelId();
+
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     * @return Whether the channelInfo field is set.
+     */
+    boolean hasChannelInfo();
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     * @return The channelInfo.
+     */
+    emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfo();
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     */
+    emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoOrBuilder();
+
+    /**
+     * <code>bool is_create = 8;</code>
+     * @return The isCreate.
+     */
+    boolean getIsCreate();
+
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     * @return Whether the gPHBGBIDJGP field is set.
+     */
+    boolean hasGPHBGBIDJGP();
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     * @return The gPHBGBIDJGP.
+     */
+    emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID getGPHBGBIDJGP();
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     */
+    emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder getGPHBGBIDJGPOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 3699
+   * </pre>
+   *
    * Protobuf type {@code ChatChannelUpdateNotify}
    */
   public static final class ChatChannelUpdateNotify extends
@@ -63,6 +109,42 @@ public final class ChatChannelUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              channelId_ = input.readUInt32();
+              break;
+            }
+            case 50: {
+              emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder subBuilder = null;
+              if (channelInfo_ != null) {
+                subBuilder = channelInfo_.toBuilder();
+              }
+              channelInfo_ = input.readMessage(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(channelInfo_);
+                channelInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 64: {
+
+              isCreate_ = input.readBool();
+              break;
+            }
+            case 114: {
+              emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder subBuilder = null;
+              if (gPHBGBIDJGP_ != null) {
+                subBuilder = gPHBGBIDJGP_.toBuilder();
+              }
+              gPHBGBIDJGP_ = input.readMessage(emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(gPHBGBIDJGP_);
+                gPHBGBIDJGP_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -95,6 +177,80 @@ public final class ChatChannelUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify.class, emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify.Builder.class);
     }
 
+    public static final int CHANNEL_ID_FIELD_NUMBER = 1;
+    private int channelId_;
+    /**
+     * <code>uint32 channel_id = 1;</code>
+     * @return The channelId.
+     */
+    @java.lang.Override
+    public int getChannelId() {
+      return channelId_;
+    }
+
+    public static final int CHANNEL_INFO_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo channelInfo_;
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     * @return Whether the channelInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasChannelInfo() {
+      return channelInfo_ != null;
+    }
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     * @return The channelInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfo() {
+      return channelInfo_ == null ? emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance() : channelInfo_;
+    }
+    /**
+     * <code>.ChatChannelInfo channel_info = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoOrBuilder() {
+      return getChannelInfo();
+    }
+
+    public static final int IS_CREATE_FIELD_NUMBER = 8;
+    private boolean isCreate_;
+    /**
+     * <code>bool is_create = 8;</code>
+     * @return The isCreate.
+     */
+    @java.lang.Override
+    public boolean getIsCreate() {
+      return isCreate_;
+    }
+
+    public static final int GPHBGBIDJGP_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID gPHBGBIDJGP_;
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     * @return Whether the gPHBGBIDJGP field is set.
+     */
+    @java.lang.Override
+    public boolean hasGPHBGBIDJGP() {
+      return gPHBGBIDJGP_ != null;
+    }
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     * @return The gPHBGBIDJGP.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID getGPHBGBIDJGP() {
+      return gPHBGBIDJGP_ == null ? emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.getDefaultInstance() : gPHBGBIDJGP_;
+    }
+    /**
+     * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder getGPHBGBIDJGPOrBuilder() {
+      return getGPHBGBIDJGP();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -109,6 +265,18 @@ public final class ChatChannelUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (channelId_ != 0) {
+        output.writeUInt32(1, channelId_);
+      }
+      if (channelInfo_ != null) {
+        output.writeMessage(6, getChannelInfo());
+      }
+      if (isCreate_ != false) {
+        output.writeBool(8, isCreate_);
+      }
+      if (gPHBGBIDJGP_ != null) {
+        output.writeMessage(14, getGPHBGBIDJGP());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -118,6 +286,22 @@ public final class ChatChannelUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (channelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, channelId_);
+      }
+      if (channelInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getChannelInfo());
+      }
+      if (isCreate_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isCreate_);
+      }
+      if (gPHBGBIDJGP_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getGPHBGBIDJGP());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -133,6 +317,20 @@ public final class ChatChannelUpdateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify other = (emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify) obj;
 
+      if (getChannelId()
+          != other.getChannelId()) return false;
+      if (hasChannelInfo() != other.hasChannelInfo()) return false;
+      if (hasChannelInfo()) {
+        if (!getChannelInfo()
+            .equals(other.getChannelInfo())) return false;
+      }
+      if (getIsCreate()
+          != other.getIsCreate()) return false;
+      if (hasGPHBGBIDJGP() != other.hasGPHBGBIDJGP()) return false;
+      if (hasGPHBGBIDJGP()) {
+        if (!getGPHBGBIDJGP()
+            .equals(other.getGPHBGBIDJGP())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -144,6 +342,19 @@ public final class ChatChannelUpdateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChannelId();
+      if (hasChannelInfo()) {
+        hash = (37 * hash) + CHANNEL_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getChannelInfo().hashCode();
+      }
+      hash = (37 * hash) + IS_CREATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCreate());
+      if (hasGPHBGBIDJGP()) {
+        hash = (37 * hash) + GPHBGBIDJGP_FIELD_NUMBER;
+        hash = (53 * hash) + getGPHBGBIDJGP().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -240,6 +451,10 @@ public final class ChatChannelUpdateNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3699
+     * </pre>
+     *
      * Protobuf type {@code ChatChannelUpdateNotify}
      */
     public static final class Builder extends
@@ -277,6 +492,22 @@ public final class ChatChannelUpdateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        channelId_ = 0;
+
+        if (channelInfoBuilder_ == null) {
+          channelInfo_ = null;
+        } else {
+          channelInfo_ = null;
+          channelInfoBuilder_ = null;
+        }
+        isCreate_ = false;
+
+        if (gPHBGBIDJGPBuilder_ == null) {
+          gPHBGBIDJGP_ = null;
+        } else {
+          gPHBGBIDJGP_ = null;
+          gPHBGBIDJGPBuilder_ = null;
+        }
         return this;
       }
 
@@ -303,6 +534,18 @@ public final class ChatChannelUpdateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify result = new emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify(this);
+        result.channelId_ = channelId_;
+        if (channelInfoBuilder_ == null) {
+          result.channelInfo_ = channelInfo_;
+        } else {
+          result.channelInfo_ = channelInfoBuilder_.build();
+        }
+        result.isCreate_ = isCreate_;
+        if (gPHBGBIDJGPBuilder_ == null) {
+          result.gPHBGBIDJGP_ = gPHBGBIDJGP_;
+        } else {
+          result.gPHBGBIDJGP_ = gPHBGBIDJGPBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -351,6 +594,18 @@ public final class ChatChannelUpdateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify other) {
         if (other == emu.grasscutter.net.proto.ChatChannelUpdateNotifyOuterClass.ChatChannelUpdateNotify.getDefaultInstance()) return this;
+        if (other.getChannelId() != 0) {
+          setChannelId(other.getChannelId());
+        }
+        if (other.hasChannelInfo()) {
+          mergeChannelInfo(other.getChannelInfo());
+        }
+        if (other.getIsCreate() != false) {
+          setIsCreate(other.getIsCreate());
+        }
+        if (other.hasGPHBGBIDJGP()) {
+          mergeGPHBGBIDJGP(other.getGPHBGBIDJGP());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -378,6 +633,306 @@ public final class ChatChannelUpdateNotifyOuterClass {
           }
         }
         return this;
+      }
+
+      private int channelId_ ;
+      /**
+       * <code>uint32 channel_id = 1;</code>
+       * @return The channelId.
+       */
+      @java.lang.Override
+      public int getChannelId() {
+        return channelId_;
+      }
+      /**
+       * <code>uint32 channel_id = 1;</code>
+       * @param value The channelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChannelId(int value) {
+        
+        channelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 channel_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChannelId() {
+        
+        channelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo channelInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> channelInfoBuilder_;
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       * @return Whether the channelInfo field is set.
+       */
+      public boolean hasChannelInfo() {
+        return channelInfoBuilder_ != null || channelInfo_ != null;
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       * @return The channelInfo.
+       */
+      public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfo() {
+        if (channelInfoBuilder_ == null) {
+          return channelInfo_ == null ? emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance() : channelInfo_;
+        } else {
+          return channelInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public Builder setChannelInfo(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo value) {
+        if (channelInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          channelInfo_ = value;
+          onChanged();
+        } else {
+          channelInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public Builder setChannelInfo(
+          emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder builderForValue) {
+        if (channelInfoBuilder_ == null) {
+          channelInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          channelInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public Builder mergeChannelInfo(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo value) {
+        if (channelInfoBuilder_ == null) {
+          if (channelInfo_ != null) {
+            channelInfo_ =
+              emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.newBuilder(channelInfo_).mergeFrom(value).buildPartial();
+          } else {
+            channelInfo_ = value;
+          }
+          onChanged();
+        } else {
+          channelInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public Builder clearChannelInfo() {
+        if (channelInfoBuilder_ == null) {
+          channelInfo_ = null;
+          onChanged();
+        } else {
+          channelInfo_ = null;
+          channelInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder getChannelInfoBuilder() {
+        
+        onChanged();
+        return getChannelInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoOrBuilder() {
+        if (channelInfoBuilder_ != null) {
+          return channelInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return channelInfo_ == null ?
+              emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance() : channelInfo_;
+        }
+      }
+      /**
+       * <code>.ChatChannelInfo channel_info = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> 
+          getChannelInfoFieldBuilder() {
+        if (channelInfoBuilder_ == null) {
+          channelInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder>(
+                  getChannelInfo(),
+                  getParentForChildren(),
+                  isClean());
+          channelInfo_ = null;
+        }
+        return channelInfoBuilder_;
+      }
+
+      private boolean isCreate_ ;
+      /**
+       * <code>bool is_create = 8;</code>
+       * @return The isCreate.
+       */
+      @java.lang.Override
+      public boolean getIsCreate() {
+        return isCreate_;
+      }
+      /**
+       * <code>bool is_create = 8;</code>
+       * @param value The isCreate to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCreate(boolean value) {
+        
+        isCreate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_create = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCreate() {
+        
+        isCreate_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID gPHBGBIDJGP_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder> gPHBGBIDJGPBuilder_;
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       * @return Whether the gPHBGBIDJGP field is set.
+       */
+      public boolean hasGPHBGBIDJGP() {
+        return gPHBGBIDJGPBuilder_ != null || gPHBGBIDJGP_ != null;
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       * @return The gPHBGBIDJGP.
+       */
+      public emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID getGPHBGBIDJGP() {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          return gPHBGBIDJGP_ == null ? emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.getDefaultInstance() : gPHBGBIDJGP_;
+        } else {
+          return gPHBGBIDJGPBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public Builder setGPHBGBIDJGP(emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID value) {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gPHBGBIDJGP_ = value;
+          onChanged();
+        } else {
+          gPHBGBIDJGPBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public Builder setGPHBGBIDJGP(
+          emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder builderForValue) {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          gPHBGBIDJGP_ = builderForValue.build();
+          onChanged();
+        } else {
+          gPHBGBIDJGPBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public Builder mergeGPHBGBIDJGP(emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID value) {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          if (gPHBGBIDJGP_ != null) {
+            gPHBGBIDJGP_ =
+              emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.newBuilder(gPHBGBIDJGP_).mergeFrom(value).buildPartial();
+          } else {
+            gPHBGBIDJGP_ = value;
+          }
+          onChanged();
+        } else {
+          gPHBGBIDJGPBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public Builder clearGPHBGBIDJGP() {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          gPHBGBIDJGP_ = null;
+          onChanged();
+        } else {
+          gPHBGBIDJGP_ = null;
+          gPHBGBIDJGPBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder getGPHBGBIDJGPBuilder() {
+        
+        onChanged();
+        return getGPHBGBIDJGPFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      public emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder getGPHBGBIDJGPOrBuilder() {
+        if (gPHBGBIDJGPBuilder_ != null) {
+          return gPHBGBIDJGPBuilder_.getMessageOrBuilder();
+        } else {
+          return gPHBGBIDJGP_ == null ?
+              emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.getDefaultInstance() : gPHBGBIDJGP_;
+        }
+      }
+      /**
+       * <code>.OLHOMANAHID GPHBGBIDJGP = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder> 
+          getGPHBGBIDJGPFieldBuilder() {
+        if (gPHBGBIDJGPBuilder_ == null) {
+          gPHBGBIDJGPBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHID.Builder, emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.OLHOMANAHIDOrBuilder>(
+                  getGPHBGBIDJGP(),
+                  getParentForChildren(),
+                  isClean());
+          gPHBGBIDJGP_ = null;
+        }
+        return gPHBGBIDJGPBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -446,20 +1001,28 @@ public final class ChatChannelUpdateNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ChatChannelUpdateNotify.proto\"\031\n\027ChatC" +
-      "hannelUpdateNotifyB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\035ChatChannelUpdateNotify.proto\032\025ChatCha" +
+      "nnelInfo.proto\032\021OLHOMANAHID.proto\"\213\001\n\027Ch" +
+      "atChannelUpdateNotify\022\022\n\nchannel_id\030\001 \001(" +
+      "\r\022&\n\014channel_info\030\006 \001(\0132\020.ChatChannelInf" +
+      "o\022\021\n\tis_create\030\010 \001(\010\022!\n\013GPHBGBIDJGP\030\016 \001(" +
+      "\0132\014.OLHOMANAHIDB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.ChatChannelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.getDescriptor(),
         });
     internal_static_ChatChannelUpdateNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ChatChannelUpdateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChatChannelUpdateNotify_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "ChannelId", "ChannelInfo", "IsCreate", "GPHBGBIDJGP", });
+    emu.grasscutter.net.proto.ChatChannelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.OLHOMANAHIDOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

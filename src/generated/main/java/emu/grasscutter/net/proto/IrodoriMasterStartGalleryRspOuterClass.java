@@ -19,15 +19,14 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 6623
-   * Obf: HIIHDIFBOFC
+   * CmdId: 6782
    * </pre>
    *
    * Protobuf type {@code IrodoriMasterStartGalleryRsp}
@@ -74,7 +73,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
               emu.grasscutter.net.proto.IrodoriMasterStartGalleryRspOuterClass.IrodoriMasterStartGalleryRsp.class, emu.grasscutter.net.proto.IrodoriMasterStartGalleryRspOuterClass.IrodoriMasterStartGalleryRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6623
-     * Obf: HIIHDIFBOFC
+     * CmdId: 6782
      * </pre>
      *
      * Protobuf type {@code IrodoriMasterStartGalleryRsp}
@@ -431,7 +429,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -528,7 +526,7 @@ public final class IrodoriMasterStartGalleryRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"IrodoriMasterStartGalleryRsp.proto\"/\n\034" +
       "IrodoriMasterStartGalleryRsp\022\017\n\007retcode\030" +
-      "\005 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\n \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

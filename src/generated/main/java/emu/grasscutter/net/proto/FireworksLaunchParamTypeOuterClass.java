@@ -15,65 +15,61 @@ public final class FireworksLaunchParamTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: EDNDPFHDNHB
-   * </pre>
-   *
    * Protobuf enum {@code FireworksLaunchParamType}
    */
   public enum FireworksLaunchParamType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_NONE = 0;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_NONE = 0;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_NONE(0),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_NONE(0),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_REPEAT = 1;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_REPEAT = 1;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_REPEAT(1),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_REPEAT(1),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_INTEVAL = 2;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL = 2;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_INTEVAL(2),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL(2),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_DELAY = 3;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_DELAY = 3;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_DELAY(3),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_DELAY(3),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL = 4;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL = 4;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL(4),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL(4),
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_MAX = 5;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_MAX = 5;</code>
      */
-    FIREWORKS_LAUNCH_PARAM_MAX(5),
+    HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_MAX(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_NONE = 0;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_NONE = 0;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_NONE_VALUE = 0;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_NONE_VALUE = 0;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_REPEAT = 1;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_REPEAT = 1;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_REPEAT_VALUE = 1;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_REPEAT_VALUE = 1;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_INTEVAL = 2;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL = 2;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_INTEVAL_VALUE = 2;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL_VALUE = 2;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_DELAY = 3;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_DELAY = 3;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_DELAY_VALUE = 3;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_DELAY_VALUE = 3;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL = 4;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL = 4;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL_VALUE = 4;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL_VALUE = 4;
     /**
-     * <code>FIREWORKS_LAUNCH_PARAM_MAX = 5;</code>
+     * <code>HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_MAX = 5;</code>
      */
-    public static final int FIREWORKS_LAUNCH_PARAM_MAX_VALUE = 5;
+    public static final int HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_MAX_VALUE = 5;
 
 
     public final int getNumber() {
@@ -100,12 +96,12 @@ public final class FireworksLaunchParamTypeOuterClass {
      */
     public static FireworksLaunchParamType forNumber(int value) {
       switch (value) {
-        case 0: return FIREWORKS_LAUNCH_PARAM_NONE;
-        case 1: return FIREWORKS_LAUNCH_PARAM_REPEAT;
-        case 2: return FIREWORKS_LAUNCH_PARAM_INTEVAL;
-        case 3: return FIREWORKS_LAUNCH_PARAM_DELAY;
-        case 4: return FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL;
-        case 5: return FIREWORKS_LAUNCH_PARAM_MAX;
+        case 0: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_NONE;
+        case 1: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_REPEAT;
+        case 2: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL;
+        case 3: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_DELAY;
+        case 4: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL;
+        case 5: return HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_MAX;
         default: return null;
       }
     }
@@ -171,14 +167,16 @@ public final class FireworksLaunchParamTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036FireworksLaunchParamType.proto*\356\001\n\030Fir" +
-      "eworksLaunchParamType\022\037\n\033FIREWORKS_LAUNC" +
-      "H_PARAM_NONE\020\000\022!\n\035FIREWORKS_LAUNCH_PARAM" +
-      "_REPEAT\020\001\022\"\n\036FIREWORKS_LAUNCH_PARAM_INTE" +
-      "VAL\020\002\022 \n\034FIREWORKS_LAUNCH_PARAM_DELAY\020\003\022" +
-      "(\n$FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL\020" +
-      "\004\022\036\n\032FIREWORKS_LAUNCH_PARAM_MAX\020\005B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\036FireworksLaunchParamType.proto*\266\002\n\030Fir" +
+      "eworksLaunchParamType\022+\n\'HFCLNOOKONO_FIR" +
+      "EWORKS_LAUNCH_PARAM_NONE\020\000\022-\n)HFCLNOOKON" +
+      "O_FIREWORKS_LAUNCH_PARAM_REPEAT\020\001\022.\n*HFC" +
+      "LNOOKONO_FIREWORKS_LAUNCH_PARAM_INTEVAL\020" +
+      "\002\022,\n(HFCLNOOKONO_FIREWORKS_LAUNCH_PARAM_" +
+      "DELAY\020\003\0224\n0HFCLNOOKONO_FIREWORKS_LAUNCH_" +
+      "PARAM_ROUND_INTEVAL\020\004\022*\n&HFCLNOOKONO_FIR" +
+      "EWORKS_LAUNCH_PARAM_MAX\020\005B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,27 +19,38 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 7;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
-     * <code>bool is_perfect = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_perfect = 5;</code>
      * @return The isPerfect.
      */
     boolean getIsPerfect();
 
     /**
-     * <code>uint32 add_score = 2;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 add_score = 15;</code>
      * @return The addScore.
      */
     int getAddScore();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 2;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 21707
-   * Obf: KMPMJDDEAPH
+   * CmdId: 6980
    * </pre>
    *
    * Protobuf type {@code GalleryBounceConjuringHitNotify}
@@ -88,17 +99,17 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
               break;
             case 16: {
 
-              addScore_ = input.readUInt32();
+              galleryId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 40: {
 
               isPerfect_ = input.readBool();
               break;
             }
-            case 56: {
+            case 120: {
 
-              galleryId_ = input.readUInt32();
+              addScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +144,14 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify.class, emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 7;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 7;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
-    public static final int IS_PERFECT_FIELD_NUMBER = 3;
+    public static final int IS_PERFECT_FIELD_NUMBER = 5;
     private boolean isPerfect_;
     /**
-     * <code>bool is_perfect = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_perfect = 5;</code>
      * @return The isPerfect.
      */
     @java.lang.Override
@@ -155,15 +159,34 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       return isPerfect_;
     }
 
-    public static final int ADD_SCORE_FIELD_NUMBER = 2;
+    public static final int ADD_SCORE_FIELD_NUMBER = 15;
     private int addScore_;
     /**
-     * <code>uint32 add_score = 2;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 add_score = 15;</code>
      * @return The addScore.
      */
     @java.lang.Override
     public int getAddScore() {
       return addScore_;
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 2;
+    private int galleryId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 2;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +203,14 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (addScore_ != 0) {
-        output.writeUInt32(2, addScore_);
+      if (galleryId_ != 0) {
+        output.writeUInt32(2, galleryId_);
       }
       if (isPerfect_ != false) {
-        output.writeBool(3, isPerfect_);
+        output.writeBool(5, isPerfect_);
       }
-      if (galleryId_ != 0) {
-        output.writeUInt32(7, galleryId_);
+      if (addScore_ != 0) {
+        output.writeUInt32(15, addScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +221,17 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (addScore_ != 0) {
+      if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, addScore_);
+          .computeUInt32Size(2, galleryId_);
       }
       if (isPerfect_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isPerfect_);
+          .computeBoolSize(5, isPerfect_);
       }
-      if (galleryId_ != 0) {
+      if (addScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, galleryId_);
+          .computeUInt32Size(15, addScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +248,12 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify other = (emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify) obj;
 
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (getIsPerfect()
           != other.getIsPerfect()) return false;
       if (getAddScore()
           != other.getAddScore()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +265,13 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + IS_PERFECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPerfect());
       hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getAddScore();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +369,7 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21707
-     * Obf: KMPMJDDEAPH
+     * CmdId: 6980
      * </pre>
      *
      * Protobuf type {@code GalleryBounceConjuringHitNotify}
@@ -387,11 +409,11 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        galleryId_ = 0;
-
         isPerfect_ = false;
 
         addScore_ = 0;
+
+        galleryId_ = 0;
 
         return this;
       }
@@ -419,9 +441,9 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify result = new emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify(this);
-        result.galleryId_ = galleryId_;
         result.isPerfect_ = isPerfect_;
         result.addScore_ = addScore_;
+        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -470,14 +492,14 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryBounceConjuringHitNotifyOuterClass.GalleryBounceConjuringHitNotify.getDefaultInstance()) return this;
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
-        }
         if (other.getIsPerfect() != false) {
           setIsPerfect(other.getIsPerfect());
         }
         if (other.getAddScore() != 0) {
           setAddScore(other.getAddScore());
+        }
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,40 +530,13 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 7;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 7;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isPerfect_ ;
       /**
-       * <code>bool is_perfect = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_perfect = 5;</code>
        * @return The isPerfect.
        */
       @java.lang.Override
@@ -549,7 +544,11 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
         return isPerfect_;
       }
       /**
-       * <code>bool is_perfect = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_perfect = 5;</code>
        * @param value The isPerfect to set.
        * @return This builder for chaining.
        */
@@ -560,7 +559,11 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_perfect = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_perfect = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPerfect() {
@@ -572,7 +575,11 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
 
       private int addScore_ ;
       /**
-       * <code>uint32 add_score = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 add_score = 15;</code>
        * @return The addScore.
        */
       @java.lang.Override
@@ -580,7 +587,11 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
         return addScore_;
       }
       /**
-       * <code>uint32 add_score = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 add_score = 15;</code>
        * @param value The addScore to set.
        * @return This builder for chaining.
        */
@@ -591,12 +602,59 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 add_score = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 add_score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAddScore() {
         
         addScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 2;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 2;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -668,9 +726,9 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%GalleryBounceConjuringHitNotify.proto\"" +
-      "\\\n\037GalleryBounceConjuringHitNotify\022\022\n\nga" +
-      "llery_id\030\007 \001(\r\022\022\n\nis_perfect\030\003 \001(\010\022\021\n\tad" +
-      "d_score\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\\\n\037GalleryBounceConjuringHitNotify\022\022\n\nis" +
+      "_perfect\030\005 \001(\010\022\021\n\tadd_score\030\017 \001(\r\022\022\n\ngal" +
+      "lery_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +740,7 @@ public final class GalleryBounceConjuringHitNotifyOuterClass {
     internal_static_GalleryBounceConjuringHitNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryBounceConjuringHitNotify_descriptor,
-        new java.lang.String[] { "GalleryId", "IsPerfect", "AddScore", });
+        new java.lang.String[] { "IsPerfect", "AddScore", "GalleryId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

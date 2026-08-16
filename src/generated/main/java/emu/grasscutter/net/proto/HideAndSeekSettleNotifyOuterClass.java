@@ -19,109 +19,108 @@ public final class HideAndSeekSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cost_time = 11;</code>
-     * @return The costTime.
-     */
-    int getCostTime();
-
-    /**
-     * <code>uint32 play_index = 1;</code>
-     * @return The playIndex.
-     */
-    int getPlayIndex();
-
-    /**
-     * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason();
-
-    /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @return A list containing the winnerList.
      */
     java.util.List<java.lang.Integer> getWinnerListList();
     /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @return The count of winnerList.
      */
     int getWinnerListCount();
     /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @param index The index of the element to return.
      * @return The winnerList at the given index.
      */
     int getWinnerList(int index);
 
     /**
-     * <code>uint32 stage_type = 4;</code>
-     * @return The stageType.
+     * <code>uint32 cost_time = 7;</code>
+     * @return The costTime.
      */
-    int getStageType();
+    int getCostTime();
 
     /**
-     * <code>bool is_record_score = 3;</code>
+     * <code>bool is_record_score = 8;</code>
      * @return The isRecordScore.
      */
     boolean getIsRecordScore();
 
     /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
+     * <code>uint32 stage_type = 11;</code>
+     * @return The stageType.
      */
-    java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> 
-        getSettleInfoListList();
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index);
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    int getSettleInfoListCount();
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
-        getSettleInfoListOrBuilderList();
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
-        int index);
+    int getStageType();
 
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>uint32 play_index = 12;</code>
+     * @return The playIndex.
+     */
+    int getPlayIndex();
+
+    /**
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
         getScoreListList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index);
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     int getScoreListCount();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
         getScoreListOrBuilderList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
+        int index);
+
+    /**
+     * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason();
+
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> 
+        getSettleInfoListList();
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index);
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    int getSettleInfoListCount();
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
+        getSettleInfoListOrBuilderList();
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 21206
-   * Obf: APEHHCPLOAB
+   * CmdId: 27034
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSettleNotify}
@@ -136,10 +135,10 @@ public final class HideAndSeekSettleNotifyOuterClass {
       super(builder);
     }
     private HideAndSeekSettleNotify() {
-      reason_ = 0;
       winnerList_ = emptyIntList();
-      settleInfoList_ = java.util.Collections.emptyList();
       scoreList_ = java.util.Collections.emptyList();
+      reason_ = 0;
+      settleInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -174,21 +173,6 @@ public final class HideAndSeekSettleNotifyOuterClass {
               done = true;
               break;
             case 8: {
-
-              playIndex_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              isRecordScore_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              stageType_ = input.readUInt32();
-              break;
-            }
-            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 winnerList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -196,7 +180,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
               winnerList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -209,33 +193,48 @@ public final class HideAndSeekSettleNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              settleInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 88: {
+            case 56: {
 
               costTime_ = input.readUInt32();
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+            case 64: {
+
+              isRecordScore_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              stageType_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              playIndex_ = input.readUInt32();
+              break;
+            }
+            case 106: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 scoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               scoreList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
               break;
             }
-            case 104: {
+            case 112: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              settleInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -257,10 +256,10 @@ public final class HideAndSeekSettleNotifyOuterClass {
           winnerList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
+          scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
+          settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -280,41 +279,37 @@ public final class HideAndSeekSettleNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * Obf: KHGDIAMGMCJ
-     * </pre>
-     *
      * Protobuf enum {@code HideAndSeekSettleNotify.SettleReason}
      */
     public enum SettleReason
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>SETTLE_REASON_TIME_OUT = 0;</code>
+       * <code>PBOOOBFBFMD_TIME_OUT = 0;</code>
        */
-      SETTLE_REASON_TIME_OUT(0),
+      PBOOOBFBFMD_TIME_OUT(0),
       /**
-       * <code>SETTLE_PLAY_END = 1;</code>
+       * <code>PBOOOBFBFMD_SETTLE_PLAY_END = 1;</code>
        */
-      SETTLE_PLAY_END(1),
+      PBOOOBFBFMD_SETTLE_PLAY_END(1),
       /**
-       * <code>SETTLE_PLAYER_QUIT = 2;</code>
+       * <code>PBOOOBFBFMD_SETTLE_PLAYER_QUIT = 2;</code>
        */
-      SETTLE_PLAYER_QUIT(2),
+      PBOOOBFBFMD_SETTLE_PLAYER_QUIT(2),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>SETTLE_REASON_TIME_OUT = 0;</code>
+       * <code>PBOOOBFBFMD_TIME_OUT = 0;</code>
        */
-      public static final int SETTLE_REASON_TIME_OUT_VALUE = 0;
+      public static final int PBOOOBFBFMD_TIME_OUT_VALUE = 0;
       /**
-       * <code>SETTLE_PLAY_END = 1;</code>
+       * <code>PBOOOBFBFMD_SETTLE_PLAY_END = 1;</code>
        */
-      public static final int SETTLE_PLAY_END_VALUE = 1;
+      public static final int PBOOOBFBFMD_SETTLE_PLAY_END_VALUE = 1;
       /**
-       * <code>SETTLE_PLAYER_QUIT = 2;</code>
+       * <code>PBOOOBFBFMD_SETTLE_PLAYER_QUIT = 2;</code>
        */
-      public static final int SETTLE_PLAYER_QUIT_VALUE = 2;
+      public static final int PBOOOBFBFMD_SETTLE_PLAYER_QUIT_VALUE = 2;
 
 
       public final int getNumber() {
@@ -341,9 +336,9 @@ public final class HideAndSeekSettleNotifyOuterClass {
        */
       public static SettleReason forNumber(int value) {
         switch (value) {
-          case 0: return SETTLE_REASON_TIME_OUT;
-          case 1: return SETTLE_PLAY_END;
-          case 2: return SETTLE_PLAYER_QUIT;
+          case 0: return PBOOOBFBFMD_TIME_OUT;
+          case 1: return PBOOOBFBFMD_SETTLE_PLAY_END;
+          case 2: return PBOOOBFBFMD_SETTLE_PLAYER_QUIT;
           default: return null;
         }
       }
@@ -400,51 +395,10 @@ public final class HideAndSeekSettleNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:HideAndSeekSettleNotify.SettleReason)
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 11;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 11;</code>
-     * @return The costTime.
-     */
-    @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
-    }
-
-    public static final int PLAY_INDEX_FIELD_NUMBER = 1;
-    private int playIndex_;
-    /**
-     * <code>uint32 play_index = 1;</code>
-     * @return The playIndex.
-     */
-    @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 13;
-    private int reason_;
-    /**
-     * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason result = emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.UNRECOGNIZED : result;
-    }
-
-    public static final int WINNER_LIST_FIELD_NUMBER = 7;
+    public static final int WINNER_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList winnerList_;
     /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @return A list containing the winnerList.
      */
     @java.lang.Override
@@ -453,14 +407,14 @@ public final class HideAndSeekSettleNotifyOuterClass {
       return winnerList_;
     }
     /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @return The count of winnerList.
      */
     public int getWinnerListCount() {
       return winnerList_.size();
     }
     /**
-     * <code>repeated uint32 winner_list = 7;</code>
+     * <code>repeated uint32 winner_list = 1;</code>
      * @param index The index of the element to return.
      * @return The winnerList at the given index.
      */
@@ -469,21 +423,21 @@ public final class HideAndSeekSettleNotifyOuterClass {
     }
     private int winnerListMemoizedSerializedSize = -1;
 
-    public static final int STAGE_TYPE_FIELD_NUMBER = 4;
-    private int stageType_;
+    public static final int COST_TIME_FIELD_NUMBER = 7;
+    private int costTime_;
     /**
-     * <code>uint32 stage_type = 4;</code>
-     * @return The stageType.
+     * <code>uint32 cost_time = 7;</code>
+     * @return The costTime.
      */
     @java.lang.Override
-    public int getStageType() {
-      return stageType_;
+    public int getCostTime() {
+      return costTime_;
     }
 
-    public static final int IS_RECORD_SCORE_FIELD_NUMBER = 3;
+    public static final int IS_RECORD_SCORE_FIELD_NUMBER = 8;
     private boolean isRecordScore_;
     /**
-     * <code>bool is_record_score = 3;</code>
+     * <code>bool is_record_score = 8;</code>
      * @return The isRecordScore.
      */
     @java.lang.Override
@@ -491,57 +445,39 @@ public final class HideAndSeekSettleNotifyOuterClass {
       return isRecordScore_;
     }
 
-    public static final int SETTLE_INFO_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> settleInfoList_;
+    public static final int STAGE_TYPE_FIELD_NUMBER = 11;
+    private int stageType_;
     /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
+     * <code>uint32 stage_type = 11;</code>
+     * @return The stageType.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> getSettleInfoListList() {
-      return settleInfoList_;
-    }
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
-        getSettleInfoListOrBuilderList() {
-      return settleInfoList_;
-    }
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getSettleInfoListCount() {
-      return settleInfoList_.size();
-    }
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index) {
-      return settleInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
-        int index) {
-      return settleInfoList_.get(index);
+    public int getStageType() {
+      return stageType_;
     }
 
-    public static final int SCORE_LIST_FIELD_NUMBER = 12;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 12;
+    private int playIndex_;
+    /**
+     * <code>uint32 play_index = 12;</code>
+     * @return The playIndex.
+     */
+    @java.lang.Override
+    public int getPlayIndex() {
+      return playIndex_;
+    }
+
+    public static final int SCORE_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> scoreList_;
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
@@ -549,26 +485,85 @@ public final class HideAndSeekSettleNotifyOuterClass {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     @java.lang.Override
     public int getScoreListCount() {
       return scoreList_.size();
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
       return scoreList_.get(index);
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
         int index) {
       return scoreList_.get(index);
+    }
+
+    public static final int REASON_FIELD_NUMBER = 14;
+    private int reason_;
+    /**
+     * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason result = emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.UNRECOGNIZED : result;
+    }
+
+    public static final int SETTLE_INFO_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> settleInfoList_;
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> getSettleInfoListList() {
+      return settleInfoList_;
+    }
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
+        getSettleInfoListOrBuilderList() {
+      return settleInfoList_;
+    }
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getSettleInfoListCount() {
+      return settleInfoList_.size();
+    }
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index) {
+      return settleInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
+        int index) {
+      return settleInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -586,33 +581,33 @@ public final class HideAndSeekSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (playIndex_ != 0) {
-        output.writeUInt32(1, playIndex_);
-      }
-      if (isRecordScore_ != false) {
-        output.writeBool(3, isRecordScore_);
-      }
-      if (stageType_ != 0) {
-        output.writeUInt32(4, stageType_);
-      }
       if (getWinnerListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(winnerListMemoizedSerializedSize);
       }
       for (int i = 0; i < winnerList_.size(); i++) {
         output.writeUInt32NoTag(winnerList_.getInt(i));
       }
-      for (int i = 0; i < settleInfoList_.size(); i++) {
-        output.writeMessage(9, settleInfoList_.get(i));
-      }
       if (costTime_ != 0) {
-        output.writeUInt32(11, costTime_);
+        output.writeUInt32(7, costTime_);
+      }
+      if (isRecordScore_ != false) {
+        output.writeBool(8, isRecordScore_);
+      }
+      if (stageType_ != 0) {
+        output.writeUInt32(11, stageType_);
+      }
+      if (playIndex_ != 0) {
+        output.writeUInt32(12, playIndex_);
       }
       for (int i = 0; i < scoreList_.size(); i++) {
-        output.writeMessage(12, scoreList_.get(i));
+        output.writeMessage(13, scoreList_.get(i));
       }
-      if (reason_ != emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.SETTLE_REASON_TIME_OUT.getNumber()) {
-        output.writeEnum(13, reason_);
+      if (reason_ != emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.PBOOOBFBFMD_TIME_OUT.getNumber()) {
+        output.writeEnum(14, reason_);
+      }
+      for (int i = 0; i < settleInfoList_.size(); i++) {
+        output.writeMessage(15, settleInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -623,18 +618,6 @@ public final class HideAndSeekSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playIndex_);
-      }
-      if (isRecordScore_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isRecordScore_);
-      }
-      if (stageType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, stageType_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < winnerList_.size(); i++) {
@@ -649,21 +632,33 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
         winnerListMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < settleInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, settleInfoList_.get(i));
-      }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, costTime_);
+          .computeUInt32Size(7, costTime_);
+      }
+      if (isRecordScore_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isRecordScore_);
+      }
+      if (stageType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, stageType_);
+      }
+      if (playIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, playIndex_);
       }
       for (int i = 0; i < scoreList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, scoreList_.get(i));
+          .computeMessageSize(13, scoreList_.get(i));
       }
-      if (reason_ != emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.SETTLE_REASON_TIME_OUT.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.PBOOOBFBFMD_TIME_OUT.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, reason_);
+          .computeEnumSize(14, reason_);
+      }
+      for (int i = 0; i < settleInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, settleInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -680,21 +675,21 @@ public final class HideAndSeekSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify other = (emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify) obj;
 
-      if (getCostTime()
-          != other.getCostTime()) return false;
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
-      if (reason_ != other.reason_) return false;
       if (!getWinnerListList()
           .equals(other.getWinnerListList())) return false;
-      if (getStageType()
-          != other.getStageType()) return false;
+      if (getCostTime()
+          != other.getCostTime()) return false;
       if (getIsRecordScore()
           != other.getIsRecordScore()) return false;
-      if (!getSettleInfoListList()
-          .equals(other.getSettleInfoListList())) return false;
+      if (getStageType()
+          != other.getStageType()) return false;
+      if (getPlayIndex()
+          != other.getPlayIndex()) return false;
       if (!getScoreListList()
           .equals(other.getScoreListList())) return false;
+      if (reason_ != other.reason_) return false;
+      if (!getSettleInfoListList()
+          .equals(other.getSettleInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -706,28 +701,28 @@ public final class HideAndSeekSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       if (getWinnerListCount() > 0) {
         hash = (37 * hash) + WINNER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWinnerListList().hashCode();
       }
-      hash = (37 * hash) + STAGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getStageType();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
       hash = (37 * hash) + IS_RECORD_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRecordScore());
-      if (getSettleInfoListCount() > 0) {
-        hash = (37 * hash) + SETTLE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSettleInfoListList().hashCode();
-      }
+      hash = (37 * hash) + STAGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getStageType();
+      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayIndex();
       if (getScoreListCount() > 0) {
         hash = (37 * hash) + SCORE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getScoreListList().hashCode();
+      }
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      if (getSettleInfoListCount() > 0) {
+        hash = (37 * hash) + SETTLE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSettleInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -826,8 +821,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21206
-     * Obf: APEHHCPLOAB
+     * CmdId: 27034
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSettleNotify}
@@ -862,36 +856,36 @@ public final class HideAndSeekSettleNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getSettleInfoListFieldBuilder();
           getScoreListFieldBuilder();
+          getSettleInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        costTime_ = 0;
-
-        playIndex_ = 0;
-
-        reason_ = 0;
-
         winnerList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        stageType_ = 0;
+        costTime_ = 0;
 
         isRecordScore_ = false;
 
-        if (settleInfoListBuilder_ == null) {
-          settleInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          settleInfoListBuilder_.clear();
-        }
+        stageType_ = 0;
+
+        playIndex_ = 0;
+
         if (scoreListBuilder_ == null) {
           scoreList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           scoreListBuilder_.clear();
+        }
+        reason_ = 0;
+
+        if (settleInfoListBuilder_ == null) {
+          settleInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          settleInfoListBuilder_.clear();
         }
         return this;
       }
@@ -920,33 +914,33 @@ public final class HideAndSeekSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify buildPartial() {
         emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify result = new emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify(this);
         int from_bitField0_ = bitField0_;
-        result.costTime_ = costTime_;
-        result.playIndex_ = playIndex_;
-        result.reason_ = reason_;
         if (((bitField0_ & 0x00000001) != 0)) {
           winnerList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.winnerList_ = winnerList_;
-        result.stageType_ = stageType_;
+        result.costTime_ = costTime_;
         result.isRecordScore_ = isRecordScore_;
-        if (settleInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.settleInfoList_ = settleInfoList_;
-        } else {
-          result.settleInfoList_ = settleInfoListBuilder_.build();
-        }
+        result.stageType_ = stageType_;
+        result.playIndex_ = playIndex_;
         if (scoreListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.scoreList_ = scoreList_;
         } else {
           result.scoreList_ = scoreListBuilder_.build();
+        }
+        result.reason_ = reason_;
+        if (settleInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.settleInfoList_ = settleInfoList_;
+        } else {
+          result.settleInfoList_ = settleInfoListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -996,15 +990,6 @@ public final class HideAndSeekSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify other) {
         if (other == emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.getDefaultInstance()) return this;
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
-        }
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
-        }
         if (!other.winnerList_.isEmpty()) {
           if (winnerList_.isEmpty()) {
             winnerList_ = other.winnerList_;
@@ -1015,43 +1000,23 @@ public final class HideAndSeekSettleNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getStageType() != 0) {
-          setStageType(other.getStageType());
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
         if (other.getIsRecordScore() != false) {
           setIsRecordScore(other.getIsRecordScore());
         }
-        if (settleInfoListBuilder_ == null) {
-          if (!other.settleInfoList_.isEmpty()) {
-            if (settleInfoList_.isEmpty()) {
-              settleInfoList_ = other.settleInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureSettleInfoListIsMutable();
-              settleInfoList_.addAll(other.settleInfoList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.settleInfoList_.isEmpty()) {
-            if (settleInfoListBuilder_.isEmpty()) {
-              settleInfoListBuilder_.dispose();
-              settleInfoListBuilder_ = null;
-              settleInfoList_ = other.settleInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              settleInfoListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getSettleInfoListFieldBuilder() : null;
-            } else {
-              settleInfoListBuilder_.addAllMessages(other.settleInfoList_);
-            }
-          }
+        if (other.getStageType() != 0) {
+          setStageType(other.getStageType());
+        }
+        if (other.getPlayIndex() != 0) {
+          setPlayIndex(other.getPlayIndex());
         }
         if (scoreListBuilder_ == null) {
           if (!other.scoreList_.isEmpty()) {
             if (scoreList_.isEmpty()) {
               scoreList_ = other.scoreList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureScoreListIsMutable();
               scoreList_.addAll(other.scoreList_);
@@ -1064,12 +1029,41 @@ public final class HideAndSeekSettleNotifyOuterClass {
               scoreListBuilder_.dispose();
               scoreListBuilder_ = null;
               scoreList_ = other.scoreList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               scoreListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getScoreListFieldBuilder() : null;
             } else {
               scoreListBuilder_.addAllMessages(other.scoreList_);
+            }
+          }
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
+        }
+        if (settleInfoListBuilder_ == null) {
+          if (!other.settleInfoList_.isEmpty()) {
+            if (settleInfoList_.isEmpty()) {
+              settleInfoList_ = other.settleInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureSettleInfoListIsMutable();
+              settleInfoList_.addAll(other.settleInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.settleInfoList_.isEmpty()) {
+            if (settleInfoListBuilder_.isEmpty()) {
+              settleInfoListBuilder_.dispose();
+              settleInfoListBuilder_ = null;
+              settleInfoList_ = other.settleInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              settleInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSettleInfoListFieldBuilder() : null;
+            } else {
+              settleInfoListBuilder_.addAllMessages(other.settleInfoList_);
             }
           }
         }
@@ -1103,122 +1097,6 @@ public final class HideAndSeekSettleNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 11;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 11;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playIndex_ ;
-      /**
-       * <code>uint32 play_index = 1;</code>
-       * @return The playIndex.
-       */
-      @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
-      }
-      /**
-       * <code>uint32 play_index = 1;</code>
-       * @param value The playIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayIndex(int value) {
-        
-        playIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_index = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayIndex() {
-        
-        playIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason result = emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.HideAndSeekSettleNotify.SettleReason reason = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList winnerList_ = emptyIntList();
       private void ensureWinnerListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -1227,7 +1105,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @return A list containing the winnerList.
        */
       public java.util.List<java.lang.Integer>
@@ -1236,14 +1114,14 @@ public final class HideAndSeekSettleNotifyOuterClass {
                  java.util.Collections.unmodifiableList(winnerList_) : winnerList_;
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @return The count of winnerList.
        */
       public int getWinnerListCount() {
         return winnerList_.size();
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @param index The index of the element to return.
        * @return The winnerList at the given index.
        */
@@ -1251,7 +1129,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return winnerList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The winnerList to set.
        * @return This builder for chaining.
@@ -1264,7 +1142,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @param value The winnerList to add.
        * @return This builder for chaining.
        */
@@ -1275,7 +1153,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @param values The winnerList to add.
        * @return This builder for chaining.
        */
@@ -1288,7 +1166,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 winner_list = 7;</code>
+       * <code>repeated uint32 winner_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearWinnerList() {
@@ -1298,40 +1176,40 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
 
-      private int stageType_ ;
+      private int costTime_ ;
       /**
-       * <code>uint32 stage_type = 4;</code>
-       * @return The stageType.
+       * <code>uint32 cost_time = 7;</code>
+       * @return The costTime.
        */
       @java.lang.Override
-      public int getStageType() {
-        return stageType_;
+      public int getCostTime() {
+        return costTime_;
       }
       /**
-       * <code>uint32 stage_type = 4;</code>
-       * @param value The stageType to set.
+       * <code>uint32 cost_time = 7;</code>
+       * @param value The costTime to set.
        * @return This builder for chaining.
        */
-      public Builder setStageType(int value) {
+      public Builder setCostTime(int value) {
         
-        stageType_ = value;
+        costTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 stage_type = 4;</code>
+       * <code>uint32 cost_time = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStageType() {
+      public Builder clearCostTime() {
         
-        stageType_ = 0;
+        costTime_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isRecordScore_ ;
       /**
-       * <code>bool is_record_score = 3;</code>
+       * <code>bool is_record_score = 8;</code>
        * @return The isRecordScore.
        */
       @java.lang.Override
@@ -1339,7 +1217,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return isRecordScore_;
       }
       /**
-       * <code>bool is_record_score = 3;</code>
+       * <code>bool is_record_score = 8;</code>
        * @param value The isRecordScore to set.
        * @return This builder for chaining.
        */
@@ -1350,7 +1228,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_record_score = 3;</code>
+       * <code>bool is_record_score = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsRecordScore() {
@@ -1360,252 +1238,74 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> settleInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureSettleInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo>(settleInfoList_);
-          bitField0_ |= 0x00000002;
-         }
+      private int stageType_ ;
+      /**
+       * <code>uint32 stage_type = 11;</code>
+       * @return The stageType.
+       */
+      @java.lang.Override
+      public int getStageType() {
+        return stageType_;
+      }
+      /**
+       * <code>uint32 stage_type = 11;</code>
+       * @param value The stageType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageType(int value) {
+        
+        stageType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_type = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageType() {
+        
+        stageType_ = 0;
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> settleInfoListBuilder_;
-
+      private int playIndex_ ;
       /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
+       * <code>uint32 play_index = 12;</code>
+       * @return The playIndex.
        */
-      public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> getSettleInfoListList() {
-        if (settleInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(settleInfoList_);
-        } else {
-          return settleInfoListBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getPlayIndex() {
+        return playIndex_;
       }
       /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
+       * <code>uint32 play_index = 12;</code>
+       * @param value The playIndex to set.
+       * @return This builder for chaining.
        */
-      public int getSettleInfoListCount() {
-        if (settleInfoListBuilder_ == null) {
-          return settleInfoList_.size();
-        } else {
-          return settleInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index) {
-        if (settleInfoListBuilder_ == null) {
-          return settleInfoList_.get(index);
-        } else {
-          return settleInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder setSettleInfoList(
-          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
-        if (settleInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.set(index, value);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.setMessage(index, value);
-        }
+      public Builder setPlayIndex(int value) {
+        
+        playIndex_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
+       * <code>uint32 play_index = 12;</code>
+       * @return This builder for chaining.
        */
-      public Builder setSettleInfoList(
-          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
-        if (settleInfoListBuilder_ == null) {
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          settleInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearPlayIndex() {
+        
+        playIndex_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder addSettleInfoList(emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
-        if (settleInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.add(value);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder addSettleInfoList(
-          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
-        if (settleInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.add(index, value);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder addSettleInfoList(
-          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
-        if (settleInfoListBuilder_ == null) {
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          settleInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder addSettleInfoList(
-          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
-        if (settleInfoListBuilder_ == null) {
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          settleInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder addAllSettleInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> values) {
-        if (settleInfoListBuilder_ == null) {
-          ensureSettleInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, settleInfoList_);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder clearSettleInfoList() {
-        if (settleInfoListBuilder_ == null) {
-          settleInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public Builder removeSettleInfoList(int index) {
-        if (settleInfoListBuilder_ == null) {
-          ensureSettleInfoListIsMutable();
-          settleInfoList_.remove(index);
-          onChanged();
-        } else {
-          settleInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder getSettleInfoListBuilder(
-          int index) {
-        return getSettleInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
-          int index) {
-        if (settleInfoListBuilder_ == null) {
-          return settleInfoList_.get(index);  } else {
-          return settleInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
-           getSettleInfoListOrBuilderList() {
-        if (settleInfoListBuilder_ != null) {
-          return settleInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(settleInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder addSettleInfoListBuilder() {
-        return getSettleInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder addSettleInfoListBuilder(
-          int index) {
-        return getSettleInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder> 
-           getSettleInfoListBuilderList() {
-        return getSettleInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
-          getSettleInfoListFieldBuilder() {
-        if (settleInfoListBuilder_ == null) {
-          settleInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder>(
-                  settleInfoList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          settleInfoList_ = null;
-        }
-        return settleInfoListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> scoreList_ =
         java.util.Collections.emptyList();
       private void ensureScoreListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           scoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>(scoreList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1613,7 +1313,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> scoreListBuilder_;
 
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
         if (scoreListBuilder_ == null) {
@@ -1623,7 +1323,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public int getScoreListCount() {
         if (scoreListBuilder_ == null) {
@@ -1633,7 +1333,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -1643,7 +1343,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1660,7 +1360,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1674,7 +1374,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder addScoreList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
         if (scoreListBuilder_ == null) {
@@ -1690,7 +1390,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1707,7 +1407,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder addScoreList(
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1721,7 +1421,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1735,7 +1435,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder addAllScoreList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -1750,12 +1450,12 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder clearScoreList() {
         if (scoreListBuilder_ == null) {
           scoreList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           scoreListBuilder_.clear();
@@ -1763,7 +1463,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public Builder removeScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -1776,14 +1476,14 @@ public final class HideAndSeekSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getScoreListBuilder(
           int index) {
         return getScoreListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
           int index) {
@@ -1793,7 +1493,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
            getScoreListOrBuilderList() {
@@ -1804,14 +1504,14 @@ public final class HideAndSeekSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder() {
         return getScoreListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder(
           int index) {
@@ -1819,7 +1519,7 @@ public final class HideAndSeekSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 12;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
            getScoreListBuilderList() {
@@ -1832,12 +1532,306 @@ public final class HideAndSeekSettleNotifyOuterClass {
           scoreListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder>(
                   scoreList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           scoreList_ = null;
         }
         return scoreListBuilder_;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason result = emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.HideAndSeekSettleNotifyOuterClass.HideAndSeekSettleNotify.SettleReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.HideAndSeekSettleNotify.SettleReason reason = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> settleInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureSettleInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo>(settleInfoList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> settleInfoListBuilder_;
+
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> getSettleInfoListList() {
+        if (settleInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(settleInfoList_);
+        } else {
+          return settleInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public int getSettleInfoListCount() {
+        if (settleInfoListBuilder_ == null) {
+          return settleInfoList_.size();
+        } else {
+          return settleInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo getSettleInfoList(int index) {
+        if (settleInfoListBuilder_ == null) {
+          return settleInfoList_.get(index);
+        } else {
+          return settleInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder setSettleInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
+        if (settleInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.set(index, value);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder setSettleInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
+        if (settleInfoListBuilder_ == null) {
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          settleInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder addSettleInfoList(emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
+        if (settleInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.add(value);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder addSettleInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo value) {
+        if (settleInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.add(index, value);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder addSettleInfoList(
+          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
+        if (settleInfoListBuilder_ == null) {
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          settleInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder addSettleInfoList(
+          int index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder builderForValue) {
+        if (settleInfoListBuilder_ == null) {
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          settleInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder addAllSettleInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo> values) {
+        if (settleInfoListBuilder_ == null) {
+          ensureSettleInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, settleInfoList_);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder clearSettleInfoList() {
+        if (settleInfoListBuilder_ == null) {
+          settleInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public Builder removeSettleInfoList(int index) {
+        if (settleInfoListBuilder_ == null) {
+          ensureSettleInfoListIsMutable();
+          settleInfoList_.remove(index);
+          onChanged();
+        } else {
+          settleInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder getSettleInfoListBuilder(
+          int index) {
+        return getSettleInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder getSettleInfoListOrBuilder(
+          int index) {
+        if (settleInfoListBuilder_ == null) {
+          return settleInfoList_.get(index);  } else {
+          return settleInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
+           getSettleInfoListOrBuilderList() {
+        if (settleInfoListBuilder_ != null) {
+          return settleInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(settleInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder addSettleInfoListBuilder() {
+        return getSettleInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder addSettleInfoListBuilder(
+          int index) {
+        return getSettleInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HideAndSeekSettleInfo settle_info_list = 15;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder> 
+           getSettleInfoListBuilderList() {
+        return getSettleInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder> 
+          getSettleInfoListFieldBuilder() {
+        if (settleInfoListBuilder_ == null) {
+          settleInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfo.Builder, emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.HideAndSeekSettleInfoOrBuilder>(
+                  settleInfoList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          settleInfoList_ = null;
+        }
+        return settleInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1906,34 +1900,37 @@ public final class HideAndSeekSettleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035HideAndSeekSettleNotify.proto\032\033HideAnd" +
-      "SeekSettleInfo.proto\032\033ExhibitionDisplayI" +
-      "nfo.proto\"\360\002\n\027HideAndSeekSettleNotify\022\021\n" +
-      "\tcost_time\030\013 \001(\r\022\022\n\nplay_index\030\001 \001(\r\0225\n\006" +
-      "reason\030\r \001(\0162%.HideAndSeekSettleNotify.S" +
-      "ettleReason\022\023\n\013winner_list\030\007 \003(\r\022\022\n\nstag" +
-      "e_type\030\004 \001(\r\022\027\n\017is_record_score\030\003 \001(\010\0220\n" +
-      "\020settle_info_list\030\t \003(\0132\026.HideAndSeekSet" +
-      "tleInfo\022*\n\nscore_list\030\014 \003(\0132\026.Exhibition" +
-      "DisplayInfo\"W\n\014SettleReason\022\032\n\026SETTLE_RE" +
-      "ASON_TIME_OUT\020\000\022\023\n\017SETTLE_PLAY_END\020\001\022\026\n\022" +
-      "SETTLE_PLAYER_QUIT\020\002B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\035HideAndSeekSettleNotify.proto\032\033Exhibit" +
+      "ionDisplayInfo.proto\032\033HideAndSeekSettleI" +
+      "nfo.proto\032\022SettleReason.proto\"\206\003\n\027HideAn" +
+      "dSeekSettleNotify\022\023\n\013winner_list\030\001 \003(\r\022\021" +
+      "\n\tcost_time\030\007 \001(\r\022\027\n\017is_record_score\030\010 \001" +
+      "(\010\022\022\n\nstage_type\030\013 \001(\r\022\022\n\nplay_index\030\014 \001" +
+      "(\r\022*\n\nscore_list\030\r \003(\0132\026.ExhibitionDispl" +
+      "ayInfo\0225\n\006reason\030\016 \001(\0162%.HideAndSeekSett" +
+      "leNotify.SettleReason\0220\n\020settle_info_lis" +
+      "t\030\017 \003(\0132\026.HideAndSeekSettleInfo\"m\n\014Settl" +
+      "eReason\022\030\n\024PBOOOBFBFMD_TIME_OUT\020\000\022\037\n\033PBO" +
+      "OOBFBFMD_SETTLE_PLAY_END\020\001\022\"\n\036PBOOOBFBFM" +
+      "D_SETTLE_PLAYER_QUIT\020\002B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SettleReasonOuterClass.getDescriptor(),
         });
     internal_static_HideAndSeekSettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HideAndSeekSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekSettleNotify_descriptor,
-        new java.lang.String[] { "CostTime", "PlayIndex", "Reason", "WinnerList", "StageType", "IsRecordScore", "SettleInfoList", "ScoreList", });
-    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "WinnerList", "CostTime", "IsRecordScore", "StageType", "PlayIndex", "ScoreList", "Reason", "SettleInfoList", });
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HideAndSeekSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SettleReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

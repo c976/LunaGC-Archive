@@ -19,16 +19,16 @@ public final class ElectroherculesStartParamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 difficulty = 14;</code>
      * @return The difficulty.
      */
     int getDifficulty();
   }
   /**
-   * <pre>
-   * Obf: MPJHOAPGLOO
-   * </pre>
-   *
    * Protobuf type {@code ElectroherculesStartParam}
    */
   public static final class ElectroherculesStartParam extends
@@ -73,7 +73,7 @@ public final class ElectroherculesStartParamOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 112: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -110,10 +110,14 @@ public final class ElectroherculesStartParamOuterClass {
               emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.class, emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder.class);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 10;
+    public static final int DIFFICULTY_FIELD_NUMBER = 14;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 difficulty = 14;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -136,7 +140,7 @@ public final class ElectroherculesStartParamOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (difficulty_ != 0) {
-        output.writeUInt32(10, difficulty_);
+        output.writeUInt32(14, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +153,7 @@ public final class ElectroherculesStartParamOuterClass {
       size = 0;
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, difficulty_);
+          .computeUInt32Size(14, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -277,10 +281,6 @@ public final class ElectroherculesStartParamOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MPJHOAPGLOO
-     * </pre>
-     *
      * Protobuf type {@code ElectroherculesStartParam}
      */
     public static final class Builder extends
@@ -429,7 +429,11 @@ public final class ElectroherculesStartParamOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 14;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -437,7 +441,11 @@ public final class ElectroherculesStartParamOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 14;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -448,7 +456,11 @@ public final class ElectroherculesStartParamOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -525,7 +537,7 @@ public final class ElectroherculesStartParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037ElectroherculesStartParam.proto\"/\n\031Ele" +
-      "ctroherculesStartParam\022\022\n\ndifficulty\030\n \001" +
+      "ctroherculesStartParam\022\022\n\ndifficulty\030\016 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

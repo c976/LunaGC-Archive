@@ -19,22 +19,18 @@ public final class ChessCardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 10;</code>
+     * <code>uint32 card_id = 2;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
-     * <code>uint32 effect_stack = 15;</code>
+     * <code>uint32 effect_stack = 12;</code>
      * @return The effectStack.
      */
     int getEffectStack();
   }
   /**
-   * <pre>
-   * Obf: JBJHKBMOKIL
-   * </pre>
-   *
    * Protobuf type {@code ChessCardInfo}
    */
   public static final class ChessCardInfo extends
@@ -79,12 +75,12 @@ public final class ChessCardInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 16: {
 
               cardId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
               effectStack_ = input.readUInt32();
               break;
@@ -121,10 +117,10 @@ public final class ChessCardInfoOuterClass {
               emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.class, emu.grasscutter.net.proto.ChessCardInfoOuterClass.ChessCardInfo.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 10;
+    public static final int CARD_ID_FIELD_NUMBER = 2;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 10;</code>
+     * <code>uint32 card_id = 2;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class ChessCardInfoOuterClass {
       return cardId_;
     }
 
-    public static final int EFFECT_STACK_FIELD_NUMBER = 15;
+    public static final int EFFECT_STACK_FIELD_NUMBER = 12;
     private int effectStack_;
     /**
-     * <code>uint32 effect_stack = 15;</code>
+     * <code>uint32 effect_stack = 12;</code>
      * @return The effectStack.
      */
     @java.lang.Override
@@ -158,10 +154,10 @@ public final class ChessCardInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardId_ != 0) {
-        output.writeUInt32(10, cardId_);
+        output.writeUInt32(2, cardId_);
       }
       if (effectStack_ != 0) {
-        output.writeUInt32(15, effectStack_);
+        output.writeUInt32(12, effectStack_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +170,11 @@ public final class ChessCardInfoOuterClass {
       size = 0;
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cardId_);
+          .computeUInt32Size(2, cardId_);
       }
       if (effectStack_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, effectStack_);
+          .computeUInt32Size(12, effectStack_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +306,6 @@ public final class ChessCardInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JBJHKBMOKIL
-     * </pre>
-     *
      * Protobuf type {@code ChessCardInfo}
      */
     public static final class Builder extends
@@ -468,7 +460,7 @@ public final class ChessCardInfoOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 2;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -476,7 +468,7 @@ public final class ChessCardInfoOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 2;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +479,7 @@ public final class ChessCardInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -499,7 +491,7 @@ public final class ChessCardInfoOuterClass {
 
       private int effectStack_ ;
       /**
-       * <code>uint32 effect_stack = 15;</code>
+       * <code>uint32 effect_stack = 12;</code>
        * @return The effectStack.
        */
       @java.lang.Override
@@ -507,7 +499,7 @@ public final class ChessCardInfoOuterClass {
         return effectStack_;
       }
       /**
-       * <code>uint32 effect_stack = 15;</code>
+       * <code>uint32 effect_stack = 12;</code>
        * @param value The effectStack to set.
        * @return This builder for chaining.
        */
@@ -518,7 +510,7 @@ public final class ChessCardInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 effect_stack = 15;</code>
+       * <code>uint32 effect_stack = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearEffectStack() {
@@ -595,7 +587,7 @@ public final class ChessCardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023ChessCardInfo.proto\"6\n\rChessCardInfo\022\017" +
-      "\n\007card_id\030\n \001(\r\022\024\n\014effect_stack\030\017 \001(\rB\033\n" +
+      "\n\007card_id\030\002 \001(\r\022\024\n\014effect_stack\030\014 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

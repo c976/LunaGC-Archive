@@ -19,33 +19,78 @@ public final class UgcNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool GKJAPKJDBPN = 8;</code>
-     * @return The gKJAPKJDBPN.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool COGAEBNBMKL = 1;</code>
+     * @return The cOGAEBNBMKL.
      */
-    boolean getGKJAPKJDBPN();
+    boolean getCOGAEBNBMKL();
 
     /**
-     * <code>bool POPHCJEGGJG = 3;</code>
-     * @return The pOPHCJEGGJG.
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool NGJJACLGDJM = 13;</code>
+     * @return The nGJJACLGDJM.
      */
-    boolean getPOPHCJEGGJG();
+    boolean getNGJJACLGDJM();
 
     /**
-     * <code>bool IOPFGIPIHAG = 2;</code>
-     * @return The iOPFGIPIHAG.
+     * <pre>
+     * offset: 34
+     * </pre>
+     *
+     * <code>bool MACHKGDPIJK = 14;</code>
+     * @return The mACHKGDPIJK.
      */
-    boolean getIOPFGIPIHAG();
+    boolean getMACHKGDPIJK();
 
     /**
-     * <code>bool KOJNKEAKAFK = 10;</code>
-     * @return The kOJNKEAKAFK.
+     * <pre>
+     * offset: 35
+     * </pre>
+     *
+     * <code>bool PONNMDEFNBF = 4;</code>
+     * @return The pONNMDEFNBF.
      */
-    boolean getKOJNKEAKAFK();
+    boolean getPONNMDEFNBF();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LOKKHOJPBNB = 5;</code>
+     * @return The lOKKHOJPBNB.
+     */
+    boolean getLOKKHOJPBNB();
+
+    /**
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool CMAAEAOBIJF = 10;</code>
+     * @return The cMAAEAOBIJF.
+     */
+    boolean getCMAAEAOBIJF();
+
+    /**
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool CBLLFBHGFFA = 11;</code>
+     * @return The cBLLFBHGFFA.
+     */
+    boolean getCBLLFBHGFFA();
   }
   /**
    * <pre>
-   * CmdId: 24435
-   * Obf: BNKNLILOIHN
+   * CmdId: 8353
    * </pre>
    *
    * Protobuf type {@code UgcNotify}
@@ -92,24 +137,39 @@ public final class UgcNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              iOPFGIPIHAG_ = input.readBool();
+              cOGAEBNBMKL_ = input.readBool();
               break;
             }
-            case 24: {
+            case 32: {
 
-              pOPHCJEGGJG_ = input.readBool();
+              pONNMDEFNBF_ = input.readBool();
               break;
             }
-            case 64: {
+            case 40: {
 
-              gKJAPKJDBPN_ = input.readBool();
+              lOKKHOJPBNB_ = input.readBool();
               break;
             }
             case 80: {
 
-              kOJNKEAKAFK_ = input.readBool();
+              cMAAEAOBIJF_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              cBLLFBHGFFA_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              nGJJACLGDJM_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              mACHKGDPIJK_ = input.readBool();
               break;
             }
             default: {
@@ -144,48 +204,109 @@ public final class UgcNotifyOuterClass {
               emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.class, emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.Builder.class);
     }
 
-    public static final int GKJAPKJDBPN_FIELD_NUMBER = 8;
-    private boolean gKJAPKJDBPN_;
+    public static final int COGAEBNBMKL_FIELD_NUMBER = 1;
+    private boolean cOGAEBNBMKL_;
     /**
-     * <code>bool GKJAPKJDBPN = 8;</code>
-     * @return The gKJAPKJDBPN.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool COGAEBNBMKL = 1;</code>
+     * @return The cOGAEBNBMKL.
      */
     @java.lang.Override
-    public boolean getGKJAPKJDBPN() {
-      return gKJAPKJDBPN_;
+    public boolean getCOGAEBNBMKL() {
+      return cOGAEBNBMKL_;
     }
 
-    public static final int POPHCJEGGJG_FIELD_NUMBER = 3;
-    private boolean pOPHCJEGGJG_;
+    public static final int NGJJACLGDJM_FIELD_NUMBER = 13;
+    private boolean nGJJACLGDJM_;
     /**
-     * <code>bool POPHCJEGGJG = 3;</code>
-     * @return The pOPHCJEGGJG.
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool NGJJACLGDJM = 13;</code>
+     * @return The nGJJACLGDJM.
      */
     @java.lang.Override
-    public boolean getPOPHCJEGGJG() {
-      return pOPHCJEGGJG_;
+    public boolean getNGJJACLGDJM() {
+      return nGJJACLGDJM_;
     }
 
-    public static final int IOPFGIPIHAG_FIELD_NUMBER = 2;
-    private boolean iOPFGIPIHAG_;
+    public static final int MACHKGDPIJK_FIELD_NUMBER = 14;
+    private boolean mACHKGDPIJK_;
     /**
-     * <code>bool IOPFGIPIHAG = 2;</code>
-     * @return The iOPFGIPIHAG.
+     * <pre>
+     * offset: 34
+     * </pre>
+     *
+     * <code>bool MACHKGDPIJK = 14;</code>
+     * @return The mACHKGDPIJK.
      */
     @java.lang.Override
-    public boolean getIOPFGIPIHAG() {
-      return iOPFGIPIHAG_;
+    public boolean getMACHKGDPIJK() {
+      return mACHKGDPIJK_;
     }
 
-    public static final int KOJNKEAKAFK_FIELD_NUMBER = 10;
-    private boolean kOJNKEAKAFK_;
+    public static final int PONNMDEFNBF_FIELD_NUMBER = 4;
+    private boolean pONNMDEFNBF_;
     /**
-     * <code>bool KOJNKEAKAFK = 10;</code>
-     * @return The kOJNKEAKAFK.
+     * <pre>
+     * offset: 35
+     * </pre>
+     *
+     * <code>bool PONNMDEFNBF = 4;</code>
+     * @return The pONNMDEFNBF.
      */
     @java.lang.Override
-    public boolean getKOJNKEAKAFK() {
-      return kOJNKEAKAFK_;
+    public boolean getPONNMDEFNBF() {
+      return pONNMDEFNBF_;
+    }
+
+    public static final int LOKKHOJPBNB_FIELD_NUMBER = 5;
+    private boolean lOKKHOJPBNB_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LOKKHOJPBNB = 5;</code>
+     * @return The lOKKHOJPBNB.
+     */
+    @java.lang.Override
+    public boolean getLOKKHOJPBNB() {
+      return lOKKHOJPBNB_;
+    }
+
+    public static final int CMAAEAOBIJF_FIELD_NUMBER = 10;
+    private boolean cMAAEAOBIJF_;
+    /**
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool CMAAEAOBIJF = 10;</code>
+     * @return The cMAAEAOBIJF.
+     */
+    @java.lang.Override
+    public boolean getCMAAEAOBIJF() {
+      return cMAAEAOBIJF_;
+    }
+
+    public static final int CBLLFBHGFFA_FIELD_NUMBER = 11;
+    private boolean cBLLFBHGFFA_;
+    /**
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool CBLLFBHGFFA = 11;</code>
+     * @return The cBLLFBHGFFA.
+     */
+    @java.lang.Override
+    public boolean getCBLLFBHGFFA() {
+      return cBLLFBHGFFA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +323,26 @@ public final class UgcNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iOPFGIPIHAG_ != false) {
-        output.writeBool(2, iOPFGIPIHAG_);
+      if (cOGAEBNBMKL_ != false) {
+        output.writeBool(1, cOGAEBNBMKL_);
       }
-      if (pOPHCJEGGJG_ != false) {
-        output.writeBool(3, pOPHCJEGGJG_);
+      if (pONNMDEFNBF_ != false) {
+        output.writeBool(4, pONNMDEFNBF_);
       }
-      if (gKJAPKJDBPN_ != false) {
-        output.writeBool(8, gKJAPKJDBPN_);
+      if (lOKKHOJPBNB_ != false) {
+        output.writeBool(5, lOKKHOJPBNB_);
       }
-      if (kOJNKEAKAFK_ != false) {
-        output.writeBool(10, kOJNKEAKAFK_);
+      if (cMAAEAOBIJF_ != false) {
+        output.writeBool(10, cMAAEAOBIJF_);
+      }
+      if (cBLLFBHGFFA_ != false) {
+        output.writeBool(11, cBLLFBHGFFA_);
+      }
+      if (nGJJACLGDJM_ != false) {
+        output.writeBool(13, nGJJACLGDJM_);
+      }
+      if (mACHKGDPIJK_ != false) {
+        output.writeBool(14, mACHKGDPIJK_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +353,33 @@ public final class UgcNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iOPFGIPIHAG_ != false) {
+      if (cOGAEBNBMKL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, iOPFGIPIHAG_);
+          .computeBoolSize(1, cOGAEBNBMKL_);
       }
-      if (pOPHCJEGGJG_ != false) {
+      if (pONNMDEFNBF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, pOPHCJEGGJG_);
+          .computeBoolSize(4, pONNMDEFNBF_);
       }
-      if (gKJAPKJDBPN_ != false) {
+      if (lOKKHOJPBNB_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, gKJAPKJDBPN_);
+          .computeBoolSize(5, lOKKHOJPBNB_);
       }
-      if (kOJNKEAKAFK_ != false) {
+      if (cMAAEAOBIJF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, kOJNKEAKAFK_);
+          .computeBoolSize(10, cMAAEAOBIJF_);
+      }
+      if (cBLLFBHGFFA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, cBLLFBHGFFA_);
+      }
+      if (nGJJACLGDJM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, nGJJACLGDJM_);
+      }
+      if (mACHKGDPIJK_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, mACHKGDPIJK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +396,20 @@ public final class UgcNotifyOuterClass {
       }
       emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify other = (emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify) obj;
 
-      if (getGKJAPKJDBPN()
-          != other.getGKJAPKJDBPN()) return false;
-      if (getPOPHCJEGGJG()
-          != other.getPOPHCJEGGJG()) return false;
-      if (getIOPFGIPIHAG()
-          != other.getIOPFGIPIHAG()) return false;
-      if (getKOJNKEAKAFK()
-          != other.getKOJNKEAKAFK()) return false;
+      if (getCOGAEBNBMKL()
+          != other.getCOGAEBNBMKL()) return false;
+      if (getNGJJACLGDJM()
+          != other.getNGJJACLGDJM()) return false;
+      if (getMACHKGDPIJK()
+          != other.getMACHKGDPIJK()) return false;
+      if (getPONNMDEFNBF()
+          != other.getPONNMDEFNBF()) return false;
+      if (getLOKKHOJPBNB()
+          != other.getLOKKHOJPBNB()) return false;
+      if (getCMAAEAOBIJF()
+          != other.getCMAAEAOBIJF()) return false;
+      if (getCBLLFBHGFFA()
+          != other.getCBLLFBHGFFA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,18 +421,27 @@ public final class UgcNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GKJAPKJDBPN_FIELD_NUMBER;
+      hash = (37 * hash) + COGAEBNBMKL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getGKJAPKJDBPN());
-      hash = (37 * hash) + POPHCJEGGJG_FIELD_NUMBER;
+          getCOGAEBNBMKL());
+      hash = (37 * hash) + NGJJACLGDJM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPOPHCJEGGJG());
-      hash = (37 * hash) + IOPFGIPIHAG_FIELD_NUMBER;
+          getNGJJACLGDJM());
+      hash = (37 * hash) + MACHKGDPIJK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIOPFGIPIHAG());
-      hash = (37 * hash) + KOJNKEAKAFK_FIELD_NUMBER;
+          getMACHKGDPIJK());
+      hash = (37 * hash) + PONNMDEFNBF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKOJNKEAKAFK());
+          getPONNMDEFNBF());
+      hash = (37 * hash) + LOKKHOJPBNB_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getLOKKHOJPBNB());
+      hash = (37 * hash) + CMAAEAOBIJF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCMAAEAOBIJF());
+      hash = (37 * hash) + CBLLFBHGFFA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCBLLFBHGFFA());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,8 +539,7 @@ public final class UgcNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24435
-     * Obf: BNKNLILOIHN
+     * CmdId: 8353
      * </pre>
      *
      * Protobuf type {@code UgcNotify}
@@ -423,13 +579,19 @@ public final class UgcNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gKJAPKJDBPN_ = false;
+        cOGAEBNBMKL_ = false;
 
-        pOPHCJEGGJG_ = false;
+        nGJJACLGDJM_ = false;
 
-        iOPFGIPIHAG_ = false;
+        mACHKGDPIJK_ = false;
 
-        kOJNKEAKAFK_ = false;
+        pONNMDEFNBF_ = false;
+
+        lOKKHOJPBNB_ = false;
+
+        cMAAEAOBIJF_ = false;
+
+        cBLLFBHGFFA_ = false;
 
         return this;
       }
@@ -457,10 +619,13 @@ public final class UgcNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify buildPartial() {
         emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify result = new emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify(this);
-        result.gKJAPKJDBPN_ = gKJAPKJDBPN_;
-        result.pOPHCJEGGJG_ = pOPHCJEGGJG_;
-        result.iOPFGIPIHAG_ = iOPFGIPIHAG_;
-        result.kOJNKEAKAFK_ = kOJNKEAKAFK_;
+        result.cOGAEBNBMKL_ = cOGAEBNBMKL_;
+        result.nGJJACLGDJM_ = nGJJACLGDJM_;
+        result.mACHKGDPIJK_ = mACHKGDPIJK_;
+        result.pONNMDEFNBF_ = pONNMDEFNBF_;
+        result.lOKKHOJPBNB_ = lOKKHOJPBNB_;
+        result.cMAAEAOBIJF_ = cMAAEAOBIJF_;
+        result.cBLLFBHGFFA_ = cBLLFBHGFFA_;
         onBuilt();
         return result;
       }
@@ -509,17 +674,26 @@ public final class UgcNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify other) {
         if (other == emu.grasscutter.net.proto.UgcNotifyOuterClass.UgcNotify.getDefaultInstance()) return this;
-        if (other.getGKJAPKJDBPN() != false) {
-          setGKJAPKJDBPN(other.getGKJAPKJDBPN());
+        if (other.getCOGAEBNBMKL() != false) {
+          setCOGAEBNBMKL(other.getCOGAEBNBMKL());
         }
-        if (other.getPOPHCJEGGJG() != false) {
-          setPOPHCJEGGJG(other.getPOPHCJEGGJG());
+        if (other.getNGJJACLGDJM() != false) {
+          setNGJJACLGDJM(other.getNGJJACLGDJM());
         }
-        if (other.getIOPFGIPIHAG() != false) {
-          setIOPFGIPIHAG(other.getIOPFGIPIHAG());
+        if (other.getMACHKGDPIJK() != false) {
+          setMACHKGDPIJK(other.getMACHKGDPIJK());
         }
-        if (other.getKOJNKEAKAFK() != false) {
-          setKOJNKEAKAFK(other.getKOJNKEAKAFK());
+        if (other.getPONNMDEFNBF() != false) {
+          setPONNMDEFNBF(other.getPONNMDEFNBF());
+        }
+        if (other.getLOKKHOJPBNB() != false) {
+          setLOKKHOJPBNB(other.getLOKKHOJPBNB());
+        }
+        if (other.getCMAAEAOBIJF() != false) {
+          setCMAAEAOBIJF(other.getCMAAEAOBIJF());
+        }
+        if (other.getCBLLFBHGFFA() != false) {
+          setCBLLFBHGFFA(other.getCBLLFBHGFFA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,126 +724,303 @@ public final class UgcNotifyOuterClass {
         return this;
       }
 
-      private boolean gKJAPKJDBPN_ ;
+      private boolean cOGAEBNBMKL_ ;
       /**
-       * <code>bool GKJAPKJDBPN = 8;</code>
-       * @return The gKJAPKJDBPN.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool COGAEBNBMKL = 1;</code>
+       * @return The cOGAEBNBMKL.
        */
       @java.lang.Override
-      public boolean getGKJAPKJDBPN() {
-        return gKJAPKJDBPN_;
+      public boolean getCOGAEBNBMKL() {
+        return cOGAEBNBMKL_;
       }
       /**
-       * <code>bool GKJAPKJDBPN = 8;</code>
-       * @param value The gKJAPKJDBPN to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool COGAEBNBMKL = 1;</code>
+       * @param value The cOGAEBNBMKL to set.
        * @return This builder for chaining.
        */
-      public Builder setGKJAPKJDBPN(boolean value) {
+      public Builder setCOGAEBNBMKL(boolean value) {
         
-        gKJAPKJDBPN_ = value;
+        cOGAEBNBMKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool GKJAPKJDBPN = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool COGAEBNBMKL = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGKJAPKJDBPN() {
+      public Builder clearCOGAEBNBMKL() {
         
-        gKJAPKJDBPN_ = false;
+        cOGAEBNBMKL_ = false;
         onChanged();
         return this;
       }
 
-      private boolean pOPHCJEGGJG_ ;
+      private boolean nGJJACLGDJM_ ;
       /**
-       * <code>bool POPHCJEGGJG = 3;</code>
-       * @return The pOPHCJEGGJG.
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool NGJJACLGDJM = 13;</code>
+       * @return The nGJJACLGDJM.
        */
       @java.lang.Override
-      public boolean getPOPHCJEGGJG() {
-        return pOPHCJEGGJG_;
+      public boolean getNGJJACLGDJM() {
+        return nGJJACLGDJM_;
       }
       /**
-       * <code>bool POPHCJEGGJG = 3;</code>
-       * @param value The pOPHCJEGGJG to set.
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool NGJJACLGDJM = 13;</code>
+       * @param value The nGJJACLGDJM to set.
        * @return This builder for chaining.
        */
-      public Builder setPOPHCJEGGJG(boolean value) {
+      public Builder setNGJJACLGDJM(boolean value) {
         
-        pOPHCJEGGJG_ = value;
+        nGJJACLGDJM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool POPHCJEGGJG = 3;</code>
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool NGJJACLGDJM = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPOPHCJEGGJG() {
+      public Builder clearNGJJACLGDJM() {
         
-        pOPHCJEGGJG_ = false;
+        nGJJACLGDJM_ = false;
         onChanged();
         return this;
       }
 
-      private boolean iOPFGIPIHAG_ ;
+      private boolean mACHKGDPIJK_ ;
       /**
-       * <code>bool IOPFGIPIHAG = 2;</code>
-       * @return The iOPFGIPIHAG.
+       * <pre>
+       * offset: 34
+       * </pre>
+       *
+       * <code>bool MACHKGDPIJK = 14;</code>
+       * @return The mACHKGDPIJK.
        */
       @java.lang.Override
-      public boolean getIOPFGIPIHAG() {
-        return iOPFGIPIHAG_;
+      public boolean getMACHKGDPIJK() {
+        return mACHKGDPIJK_;
       }
       /**
-       * <code>bool IOPFGIPIHAG = 2;</code>
-       * @param value The iOPFGIPIHAG to set.
+       * <pre>
+       * offset: 34
+       * </pre>
+       *
+       * <code>bool MACHKGDPIJK = 14;</code>
+       * @param value The mACHKGDPIJK to set.
        * @return This builder for chaining.
        */
-      public Builder setIOPFGIPIHAG(boolean value) {
+      public Builder setMACHKGDPIJK(boolean value) {
         
-        iOPFGIPIHAG_ = value;
+        mACHKGDPIJK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool IOPFGIPIHAG = 2;</code>
+       * <pre>
+       * offset: 34
+       * </pre>
+       *
+       * <code>bool MACHKGDPIJK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIOPFGIPIHAG() {
+      public Builder clearMACHKGDPIJK() {
         
-        iOPFGIPIHAG_ = false;
+        mACHKGDPIJK_ = false;
         onChanged();
         return this;
       }
 
-      private boolean kOJNKEAKAFK_ ;
+      private boolean pONNMDEFNBF_ ;
       /**
-       * <code>bool KOJNKEAKAFK = 10;</code>
-       * @return The kOJNKEAKAFK.
+       * <pre>
+       * offset: 35
+       * </pre>
+       *
+       * <code>bool PONNMDEFNBF = 4;</code>
+       * @return The pONNMDEFNBF.
        */
       @java.lang.Override
-      public boolean getKOJNKEAKAFK() {
-        return kOJNKEAKAFK_;
+      public boolean getPONNMDEFNBF() {
+        return pONNMDEFNBF_;
       }
       /**
-       * <code>bool KOJNKEAKAFK = 10;</code>
-       * @param value The kOJNKEAKAFK to set.
+       * <pre>
+       * offset: 35
+       * </pre>
+       *
+       * <code>bool PONNMDEFNBF = 4;</code>
+       * @param value The pONNMDEFNBF to set.
        * @return This builder for chaining.
        */
-      public Builder setKOJNKEAKAFK(boolean value) {
+      public Builder setPONNMDEFNBF(boolean value) {
         
-        kOJNKEAKAFK_ = value;
+        pONNMDEFNBF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool KOJNKEAKAFK = 10;</code>
+       * <pre>
+       * offset: 35
+       * </pre>
+       *
+       * <code>bool PONNMDEFNBF = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKOJNKEAKAFK() {
+      public Builder clearPONNMDEFNBF() {
         
-        kOJNKEAKAFK_ = false;
+        pONNMDEFNBF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean lOKKHOJPBNB_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LOKKHOJPBNB = 5;</code>
+       * @return The lOKKHOJPBNB.
+       */
+      @java.lang.Override
+      public boolean getLOKKHOJPBNB() {
+        return lOKKHOJPBNB_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LOKKHOJPBNB = 5;</code>
+       * @param value The lOKKHOJPBNB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOKKHOJPBNB(boolean value) {
+        
+        lOKKHOJPBNB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LOKKHOJPBNB = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOKKHOJPBNB() {
+        
+        lOKKHOJPBNB_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cMAAEAOBIJF_ ;
+      /**
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool CMAAEAOBIJF = 10;</code>
+       * @return The cMAAEAOBIJF.
+       */
+      @java.lang.Override
+      public boolean getCMAAEAOBIJF() {
+        return cMAAEAOBIJF_;
+      }
+      /**
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool CMAAEAOBIJF = 10;</code>
+       * @param value The cMAAEAOBIJF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCMAAEAOBIJF(boolean value) {
+        
+        cMAAEAOBIJF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool CMAAEAOBIJF = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCMAAEAOBIJF() {
+        
+        cMAAEAOBIJF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cBLLFBHGFFA_ ;
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool CBLLFBHGFFA = 11;</code>
+       * @return The cBLLFBHGFFA.
+       */
+      @java.lang.Override
+      public boolean getCBLLFBHGFFA() {
+        return cBLLFBHGFFA_;
+      }
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool CBLLFBHGFFA = 11;</code>
+       * @param value The cBLLFBHGFFA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCBLLFBHGFFA(boolean value) {
+        
+        cBLLFBHGFFA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool CBLLFBHGFFA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCBLLFBHGFFA() {
+        
+        cBLLFBHGFFA_ = false;
         onChanged();
         return this;
       }
@@ -740,10 +1091,12 @@ public final class UgcNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017UgcNotify.proto\"_\n\tUgcNotify\022\023\n\013GKJAPK" +
-      "JDBPN\030\010 \001(\010\022\023\n\013POPHCJEGGJG\030\003 \001(\010\022\023\n\013IOPF" +
-      "GIPIHAG\030\002 \001(\010\022\023\n\013KOJNKEAKAFK\030\n \001(\010B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\017UgcNotify.proto\"\236\001\n\tUgcNotify\022\023\n\013COGAE" +
+      "BNBMKL\030\001 \001(\010\022\023\n\013NGJJACLGDJM\030\r \001(\010\022\023\n\013MAC" +
+      "HKGDPIJK\030\016 \001(\010\022\023\n\013PONNMDEFNBF\030\004 \001(\010\022\023\n\013L" +
+      "OKKHOJPBNB\030\005 \001(\010\022\023\n\013CMAAEAOBIJF\030\n \001(\010\022\023\n" +
+      "\013CBLLFBHGFFA\030\013 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -754,7 +1107,7 @@ public final class UgcNotifyOuterClass {
     internal_static_UgcNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcNotify_descriptor,
-        new java.lang.String[] { "GKJAPKJDBPN", "POPHCJEGGJG", "IOPFGIPIHAG", "KOJNKEAKAFK", });
+        new java.lang.String[] { "COGAEBNBMKL", "NGJJACLGDJM", "MACHKGDPIJK", "PONNMDEFNBF", "LOKKHOJPBNB", "CMAAEAOBIJF", "CBLLFBHGFFA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

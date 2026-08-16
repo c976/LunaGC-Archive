@@ -19,22 +19,34 @@ public final class EvtSetAttackTargetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 attack_target_id = 7;</code>
-     * @return The attackTargetId.
-     */
-    int getAttackTargetId();
-
-    /**
-     * <code>uint32 NJLIDHHPJKA = 8;</code>
-     * @return The nJLIDHHPJKA.
-     */
-    int getNJLIDHHPJKA();
-
-    /**
-     * <code>uint32 entity_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 entity_id = 7;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 FCEIBPJNNDO = 4;</code>
+     * @return The fCEIBPJNNDO.
+     */
+    int getFCEIBPJNNDO();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 attack_target_id = 3;</code>
+     * @return The attackTargetId.
+     */
+    int getAttackTargetId();
   }
   /**
    * Protobuf type {@code EvtSetAttackTargetInfo}
@@ -81,17 +93,17 @@ public final class EvtSetAttackTargetInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
 
               attackTargetId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 32: {
 
-              nJLIDHHPJKA_ = input.readUInt32();
+              fCEIBPJNNDO_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 56: {
 
               entityId_ = input.readUInt32();
               break;
@@ -128,37 +140,49 @@ public final class EvtSetAttackTargetInfoOuterClass {
               emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.class, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder.class);
     }
 
-    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 7;
-    private int attackTargetId_;
-    /**
-     * <code>uint32 attack_target_id = 7;</code>
-     * @return The attackTargetId.
-     */
-    @java.lang.Override
-    public int getAttackTargetId() {
-      return attackTargetId_;
-    }
-
-    public static final int NJLIDHHPJKA_FIELD_NUMBER = 8;
-    private int nJLIDHHPJKA_;
-    /**
-     * <code>uint32 NJLIDHHPJKA = 8;</code>
-     * @return The nJLIDHHPJKA.
-     */
-    @java.lang.Override
-    public int getNJLIDHHPJKA() {
-      return nJLIDHHPJKA_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int ENTITY_ID_FIELD_NUMBER = 7;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 entity_id = 7;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int FCEIBPJNNDO_FIELD_NUMBER = 4;
+    private int fCEIBPJNNDO_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 FCEIBPJNNDO = 4;</code>
+     * @return The fCEIBPJNNDO.
+     */
+    @java.lang.Override
+    public int getFCEIBPJNNDO() {
+      return fCEIBPJNNDO_;
+    }
+
+    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 3;
+    private int attackTargetId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 attack_target_id = 3;</code>
+     * @return The attackTargetId.
+     */
+    @java.lang.Override
+    public int getAttackTargetId() {
+      return attackTargetId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -176,13 +200,13 @@ public final class EvtSetAttackTargetInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (attackTargetId_ != 0) {
-        output.writeUInt32(7, attackTargetId_);
+        output.writeUInt32(3, attackTargetId_);
       }
-      if (nJLIDHHPJKA_ != 0) {
-        output.writeUInt32(8, nJLIDHHPJKA_);
+      if (fCEIBPJNNDO_ != 0) {
+        output.writeUInt32(4, fCEIBPJNNDO_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(14, entityId_);
+        output.writeUInt32(7, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +219,15 @@ public final class EvtSetAttackTargetInfoOuterClass {
       size = 0;
       if (attackTargetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, attackTargetId_);
+          .computeUInt32Size(3, attackTargetId_);
       }
-      if (nJLIDHHPJKA_ != 0) {
+      if (fCEIBPJNNDO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, nJLIDHHPJKA_);
+          .computeUInt32Size(4, fCEIBPJNNDO_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, entityId_);
+          .computeUInt32Size(7, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +244,12 @@ public final class EvtSetAttackTargetInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo other = (emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo) obj;
 
-      if (getAttackTargetId()
-          != other.getAttackTargetId()) return false;
-      if (getNJLIDHHPJKA()
-          != other.getNJLIDHHPJKA()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getFCEIBPJNNDO()
+          != other.getFCEIBPJNNDO()) return false;
+      if (getAttackTargetId()
+          != other.getAttackTargetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +261,12 @@ public final class EvtSetAttackTargetInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAttackTargetId();
-      hash = (37 * hash) + NJLIDHHPJKA_FIELD_NUMBER;
-      hash = (53 * hash) + getNJLIDHHPJKA();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + FCEIBPJNNDO_FIELD_NUMBER;
+      hash = (53 * hash) + getFCEIBPJNNDO();
+      hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAttackTargetId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,11 +400,11 @@ public final class EvtSetAttackTargetInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        attackTargetId_ = 0;
-
-        nJLIDHHPJKA_ = 0;
-
         entityId_ = 0;
+
+        fCEIBPJNNDO_ = 0;
+
+        attackTargetId_ = 0;
 
         return this;
       }
@@ -408,9 +432,9 @@ public final class EvtSetAttackTargetInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo buildPartial() {
         emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo result = new emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo(this);
-        result.attackTargetId_ = attackTargetId_;
-        result.nJLIDHHPJKA_ = nJLIDHHPJKA_;
         result.entityId_ = entityId_;
+        result.fCEIBPJNNDO_ = fCEIBPJNNDO_;
+        result.attackTargetId_ = attackTargetId_;
         onBuilt();
         return result;
       }
@@ -459,14 +483,14 @@ public final class EvtSetAttackTargetInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo other) {
         if (other == emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.getDefaultInstance()) return this;
-        if (other.getAttackTargetId() != 0) {
-          setAttackTargetId(other.getAttackTargetId());
-        }
-        if (other.getNJLIDHHPJKA() != 0) {
-          setNJLIDHHPJKA(other.getNJLIDHHPJKA());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getFCEIBPJNNDO() != 0) {
+          setFCEIBPJNNDO(other.getFCEIBPJNNDO());
+        }
+        if (other.getAttackTargetId() != 0) {
+          setAttackTargetId(other.getAttackTargetId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,71 +521,13 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
 
-      private int attackTargetId_ ;
-      /**
-       * <code>uint32 attack_target_id = 7;</code>
-       * @return The attackTargetId.
-       */
-      @java.lang.Override
-      public int getAttackTargetId() {
-        return attackTargetId_;
-      }
-      /**
-       * <code>uint32 attack_target_id = 7;</code>
-       * @param value The attackTargetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAttackTargetId(int value) {
-        
-        attackTargetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 attack_target_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAttackTargetId() {
-        
-        attackTargetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nJLIDHHPJKA_ ;
-      /**
-       * <code>uint32 NJLIDHHPJKA = 8;</code>
-       * @return The nJLIDHHPJKA.
-       */
-      @java.lang.Override
-      public int getNJLIDHHPJKA() {
-        return nJLIDHHPJKA_;
-      }
-      /**
-       * <code>uint32 NJLIDHHPJKA = 8;</code>
-       * @param value The nJLIDHHPJKA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNJLIDHHPJKA(int value) {
-        
-        nJLIDHHPJKA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NJLIDHHPJKA = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNJLIDHHPJKA() {
-        
-        nJLIDHHPJKA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -569,7 +535,11 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -580,12 +550,102 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fCEIBPJNNDO_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FCEIBPJNNDO = 4;</code>
+       * @return The fCEIBPJNNDO.
+       */
+      @java.lang.Override
+      public int getFCEIBPJNNDO() {
+        return fCEIBPJNNDO_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FCEIBPJNNDO = 4;</code>
+       * @param value The fCEIBPJNNDO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFCEIBPJNNDO(int value) {
+        
+        fCEIBPJNNDO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FCEIBPJNNDO = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFCEIBPJNNDO() {
+        
+        fCEIBPJNNDO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int attackTargetId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 3;</code>
+       * @return The attackTargetId.
+       */
+      @java.lang.Override
+      public int getAttackTargetId() {
+        return attackTargetId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 3;</code>
+       * @param value The attackTargetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAttackTargetId(int value) {
+        
+        attackTargetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAttackTargetId() {
+        
+        attackTargetId_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +717,8 @@ public final class EvtSetAttackTargetInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EvtSetAttackTargetInfo.proto\"Z\n\026EvtSet" +
-      "AttackTargetInfo\022\030\n\020attack_target_id\030\007 \001" +
-      "(\r\022\023\n\013NJLIDHHPJKA\030\010 \001(\r\022\021\n\tentity_id\030\016 \001" +
+      "AttackTargetInfo\022\021\n\tentity_id\030\007 \001(\r\022\023\n\013F" +
+      "CEIBPJNNDO\030\004 \001(\r\022\030\n\020attack_target_id\030\003 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +730,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
     internal_static_EvtSetAttackTargetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtSetAttackTargetInfo_descriptor,
-        new java.lang.String[] { "AttackTargetId", "NJLIDHHPJKA", "EntityId", });
+        new java.lang.String[] { "EntityId", "FCEIBPJNNDO", "AttackTargetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

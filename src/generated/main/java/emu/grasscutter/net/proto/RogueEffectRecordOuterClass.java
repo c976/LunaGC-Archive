@@ -19,45 +19,65 @@ public final class RogueEffectRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new = 8;</code>
-     * @return The isNew.
-     */
-    boolean getIsNew();
-
-    /**
-     * <code>uint32 count = 13;</code>
-     * @return The count.
-     */
-    int getCount();
-
-    /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @return A list containing the extraParamList.
      */
     java.util.List<java.lang.Integer> getExtraParamListList();
     /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @return The count of extraParamList.
      */
     int getExtraParamListCount();
     /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @param index The index of the element to return.
      * @return The extraParamList at the given index.
      */
     int getExtraParamList(int index);
 
     /**
-     * <code>uint32 source_id = 10;</code>
-     * @return The sourceId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_new = 4;</code>
+     * @return The isNew.
      */
-    int getSourceId();
+    boolean getIsNew();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 count = 14;</code>
+     * @return The count.
+     */
+    int getCount();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EEHPGKAFLCE = 13;</code>
+     * @return The eEHPGKAFLCE.
+     */
+    int getEEHPGKAFLCE();
   }
   /**
-   * <pre>
-   * Obf: KPJPHHFNGPM
-   * </pre>
-   *
    * Protobuf type {@code RogueEffectRecord}
    */
   public static final class RogueEffectRecord extends
@@ -104,7 +124,12 @@ public final class RogueEffectRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
+
+              isNew_ = input.readBool();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 extraParamList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -112,7 +137,7 @@ public final class RogueEffectRecordOuterClass {
               extraParamList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -125,17 +150,12 @@ public final class RogueEffectRecordOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
-
-              isNew_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              sourceId_ = input.readUInt32();
-              break;
-            }
             case 104: {
+
+              eEHPGKAFLCE_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               count_ = input.readUInt32();
               break;
@@ -175,32 +195,14 @@ public final class RogueEffectRecordOuterClass {
               emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord.class, emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord.Builder.class);
     }
 
-    public static final int IS_NEW_FIELD_NUMBER = 8;
-    private boolean isNew_;
-    /**
-     * <code>bool is_new = 8;</code>
-     * @return The isNew.
-     */
-    @java.lang.Override
-    public boolean getIsNew() {
-      return isNew_;
-    }
-
-    public static final int COUNT_FIELD_NUMBER = 13;
-    private int count_;
-    /**
-     * <code>uint32 count = 13;</code>
-     * @return The count.
-     */
-    @java.lang.Override
-    public int getCount() {
-      return count_;
-    }
-
-    public static final int EXTRA_PARAM_LIST_FIELD_NUMBER = 2;
+    public static final int EXTRA_PARAM_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList extraParamList_;
     /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @return A list containing the extraParamList.
      */
     @java.lang.Override
@@ -209,14 +211,22 @@ public final class RogueEffectRecordOuterClass {
       return extraParamList_;
     }
     /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @return The count of extraParamList.
      */
     public int getExtraParamListCount() {
       return extraParamList_.size();
     }
     /**
-     * <code>repeated uint32 extra_param_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 extra_param_list = 12;</code>
      * @param index The index of the element to return.
      * @return The extraParamList at the given index.
      */
@@ -225,15 +235,49 @@ public final class RogueEffectRecordOuterClass {
     }
     private int extraParamListMemoizedSerializedSize = -1;
 
-    public static final int SOURCE_ID_FIELD_NUMBER = 10;
-    private int sourceId_;
+    public static final int IS_NEW_FIELD_NUMBER = 4;
+    private boolean isNew_;
     /**
-     * <code>uint32 source_id = 10;</code>
-     * @return The sourceId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_new = 4;</code>
+     * @return The isNew.
      */
     @java.lang.Override
-    public int getSourceId() {
-      return sourceId_;
+    public boolean getIsNew() {
+      return isNew_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 14;
+    private int count_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 count = 14;</code>
+     * @return The count.
+     */
+    @java.lang.Override
+    public int getCount() {
+      return count_;
+    }
+
+    public static final int EEHPGKAFLCE_FIELD_NUMBER = 13;
+    private int eEHPGKAFLCE_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EEHPGKAFLCE = 13;</code>
+     * @return The eEHPGKAFLCE.
+     */
+    @java.lang.Override
+    public int getEEHPGKAFLCE() {
+      return eEHPGKAFLCE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,21 +295,21 @@ public final class RogueEffectRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (isNew_ != false) {
+        output.writeBool(4, isNew_);
+      }
       if (getExtraParamListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(extraParamListMemoizedSerializedSize);
       }
       for (int i = 0; i < extraParamList_.size(); i++) {
         output.writeUInt32NoTag(extraParamList_.getInt(i));
       }
-      if (isNew_ != false) {
-        output.writeBool(8, isNew_);
-      }
-      if (sourceId_ != 0) {
-        output.writeUInt32(10, sourceId_);
+      if (eEHPGKAFLCE_ != 0) {
+        output.writeUInt32(13, eEHPGKAFLCE_);
       }
       if (count_ != 0) {
-        output.writeUInt32(13, count_);
+        output.writeUInt32(14, count_);
       }
       unknownFields.writeTo(output);
     }
@@ -276,6 +320,10 @@ public final class RogueEffectRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isNew_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isNew_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < extraParamList_.size(); i++) {
@@ -290,17 +338,13 @@ public final class RogueEffectRecordOuterClass {
         }
         extraParamListMemoizedSerializedSize = dataSize;
       }
-      if (isNew_ != false) {
+      if (eEHPGKAFLCE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNew_);
-      }
-      if (sourceId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sourceId_);
+          .computeUInt32Size(13, eEHPGKAFLCE_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, count_);
+          .computeUInt32Size(14, count_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,14 +361,14 @@ public final class RogueEffectRecordOuterClass {
       }
       emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord other = (emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord) obj;
 
+      if (!getExtraParamListList()
+          .equals(other.getExtraParamListList())) return false;
       if (getIsNew()
           != other.getIsNew()) return false;
       if (getCount()
           != other.getCount()) return false;
-      if (!getExtraParamListList()
-          .equals(other.getExtraParamListList())) return false;
-      if (getSourceId()
-          != other.getSourceId()) return false;
+      if (getEEHPGKAFLCE()
+          != other.getEEHPGKAFLCE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -336,17 +380,17 @@ public final class RogueEffectRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getExtraParamListCount() > 0) {
+        hash = (37 * hash) + EXTRA_PARAM_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getExtraParamListList().hashCode();
+      }
       hash = (37 * hash) + IS_NEW_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNew());
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
-      if (getExtraParamListCount() > 0) {
-        hash = (37 * hash) + EXTRA_PARAM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getExtraParamListList().hashCode();
-      }
-      hash = (37 * hash) + SOURCE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceId();
+      hash = (37 * hash) + EEHPGKAFLCE_FIELD_NUMBER;
+      hash = (53 * hash) + getEEHPGKAFLCE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,10 +487,6 @@ public final class RogueEffectRecordOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KPJPHHFNGPM
-     * </pre>
-     *
      * Protobuf type {@code RogueEffectRecord}
      */
     public static final class Builder extends
@@ -484,13 +524,13 @@ public final class RogueEffectRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        extraParamList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         isNew_ = false;
 
         count_ = 0;
 
-        extraParamList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        sourceId_ = 0;
+        eEHPGKAFLCE_ = 0;
 
         return this;
       }
@@ -519,14 +559,14 @@ public final class RogueEffectRecordOuterClass {
       public emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord buildPartial() {
         emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord result = new emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord(this);
         int from_bitField0_ = bitField0_;
-        result.isNew_ = isNew_;
-        result.count_ = count_;
         if (((bitField0_ & 0x00000001) != 0)) {
           extraParamList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.extraParamList_ = extraParamList_;
-        result.sourceId_ = sourceId_;
+        result.isNew_ = isNew_;
+        result.count_ = count_;
+        result.eEHPGKAFLCE_ = eEHPGKAFLCE_;
         onBuilt();
         return result;
       }
@@ -575,12 +615,6 @@ public final class RogueEffectRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord other) {
         if (other == emu.grasscutter.net.proto.RogueEffectRecordOuterClass.RogueEffectRecord.getDefaultInstance()) return this;
-        if (other.getIsNew() != false) {
-          setIsNew(other.getIsNew());
-        }
-        if (other.getCount() != 0) {
-          setCount(other.getCount());
-        }
         if (!other.extraParamList_.isEmpty()) {
           if (extraParamList_.isEmpty()) {
             extraParamList_ = other.extraParamList_;
@@ -591,8 +625,14 @@ public final class RogueEffectRecordOuterClass {
           }
           onChanged();
         }
-        if (other.getSourceId() != 0) {
-          setSourceId(other.getSourceId());
+        if (other.getIsNew() != false) {
+          setIsNew(other.getIsNew());
+        }
+        if (other.getCount() != 0) {
+          setCount(other.getCount());
+        }
+        if (other.getEEHPGKAFLCE() != 0) {
+          setEEHPGKAFLCE(other.getEEHPGKAFLCE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,68 +664,6 @@ public final class RogueEffectRecordOuterClass {
       }
       private int bitField0_;
 
-      private boolean isNew_ ;
-      /**
-       * <code>bool is_new = 8;</code>
-       * @return The isNew.
-       */
-      @java.lang.Override
-      public boolean getIsNew() {
-        return isNew_;
-      }
-      /**
-       * <code>bool is_new = 8;</code>
-       * @param value The isNew to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNew(boolean value) {
-        
-        isNew_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNew() {
-        
-        isNew_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int count_ ;
-      /**
-       * <code>uint32 count = 13;</code>
-       * @return The count.
-       */
-      @java.lang.Override
-      public int getCount() {
-        return count_;
-      }
-      /**
-       * <code>uint32 count = 13;</code>
-       * @param value The count to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCount(int value) {
-        
-        count_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 count = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCount() {
-        
-        count_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList extraParamList_ = emptyIntList();
       private void ensureExtraParamListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -694,7 +672,11 @@ public final class RogueEffectRecordOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @return A list containing the extraParamList.
        */
       public java.util.List<java.lang.Integer>
@@ -703,14 +685,22 @@ public final class RogueEffectRecordOuterClass {
                  java.util.Collections.unmodifiableList(extraParamList_) : extraParamList_;
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @return The count of extraParamList.
        */
       public int getExtraParamListCount() {
         return extraParamList_.size();
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @param index The index of the element to return.
        * @return The extraParamList at the given index.
        */
@@ -718,7 +708,11 @@ public final class RogueEffectRecordOuterClass {
         return extraParamList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The extraParamList to set.
        * @return This builder for chaining.
@@ -731,7 +725,11 @@ public final class RogueEffectRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @param value The extraParamList to add.
        * @return This builder for chaining.
        */
@@ -742,7 +740,11 @@ public final class RogueEffectRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @param values The extraParamList to add.
        * @return This builder for chaining.
        */
@@ -755,7 +757,11 @@ public final class RogueEffectRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 extra_param_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 extra_param_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraParamList() {
@@ -765,33 +771,131 @@ public final class RogueEffectRecordOuterClass {
         return this;
       }
 
-      private int sourceId_ ;
+      private boolean isNew_ ;
       /**
-       * <code>uint32 source_id = 10;</code>
-       * @return The sourceId.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new = 4;</code>
+       * @return The isNew.
        */
       @java.lang.Override
-      public int getSourceId() {
-        return sourceId_;
+      public boolean getIsNew() {
+        return isNew_;
       }
       /**
-       * <code>uint32 source_id = 10;</code>
-       * @param value The sourceId to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new = 4;</code>
+       * @param value The isNew to set.
        * @return This builder for chaining.
        */
-      public Builder setSourceId(int value) {
+      public Builder setIsNew(boolean value) {
         
-        sourceId_ = value;
+        isNew_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 source_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSourceId() {
+      public Builder clearIsNew() {
         
-        sourceId_ = 0;
+        isNew_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 count = 14;</code>
+       * @return The count.
+       */
+      @java.lang.Override
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 count = 14;</code>
+       * @param value The count to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCount(int value) {
+        
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 count = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCount() {
+        
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eEHPGKAFLCE_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EEHPGKAFLCE = 13;</code>
+       * @return The eEHPGKAFLCE.
+       */
+      @java.lang.Override
+      public int getEEHPGKAFLCE() {
+        return eEHPGKAFLCE_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EEHPGKAFLCE = 13;</code>
+       * @param value The eEHPGKAFLCE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEEHPGKAFLCE(int value) {
+        
+        eEHPGKAFLCE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EEHPGKAFLCE = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEEHPGKAFLCE() {
+        
+        eEHPGKAFLCE_ = 0;
         onChanged();
         return this;
       }
@@ -862,10 +966,11 @@ public final class RogueEffectRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027RogueEffectRecord.proto\"_\n\021RogueEffect" +
-      "Record\022\016\n\006is_new\030\010 \001(\010\022\r\n\005count\030\r \001(\r\022\030\n" +
-      "\020extra_param_list\030\002 \003(\r\022\021\n\tsource_id\030\n \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027RogueEffectRecord.proto\"a\n\021RogueEffect" +
+      "Record\022\030\n\020extra_param_list\030\014 \003(\r\022\016\n\006is_n" +
+      "ew\030\004 \001(\010\022\r\n\005count\030\016 \001(\r\022\023\n\013EEHPGKAFLCE\030\r" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -876,7 +981,7 @@ public final class RogueEffectRecordOuterClass {
     internal_static_RogueEffectRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueEffectRecord_descriptor,
-        new java.lang.String[] { "IsNew", "Count", "ExtraParamList", "SourceId", });
+        new java.lang.String[] { "ExtraParamList", "IsNew", "Count", "EEHPGKAFLCE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

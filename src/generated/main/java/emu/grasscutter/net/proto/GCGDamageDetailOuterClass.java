@@ -19,22 +19,18 @@ public final class GCGDamageDetailOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 14;</code>
+     * <code>uint32 skill_id = 5;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>uint32 card_guid = 12;</code>
+     * <code>uint32 card_guid = 13;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
   }
   /**
-   * <pre>
-   * Obf: NKOFHAJANJI
-   * </pre>
-   *
    * Protobuf type {@code GCGDamageDetail}
    */
   public static final class GCGDamageDetail extends
@@ -79,14 +75,14 @@ public final class GCGDamageDetailOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              cardGuid_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 40: {
 
               skillId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +117,10 @@ public final class GCGDamageDetailOuterClass {
               emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.class, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 14;
+    public static final int SKILL_ID_FIELD_NUMBER = 5;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 14;</code>
+     * <code>uint32 skill_id = 5;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class GCGDamageDetailOuterClass {
       return skillId_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 12;
+    public static final int CARD_GUID_FIELD_NUMBER = 13;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 12;</code>
+     * <code>uint32 card_guid = 13;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -157,11 +153,11 @@ public final class GCGDamageDetailOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardGuid_ != 0) {
-        output.writeUInt32(12, cardGuid_);
-      }
       if (skillId_ != 0) {
-        output.writeUInt32(14, skillId_);
+        output.writeUInt32(5, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        output.writeUInt32(13, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class GCGDamageDetailOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cardGuid_);
-      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, skillId_);
+          .computeUInt32Size(5, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +306,6 @@ public final class GCGDamageDetailOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NKOFHAJANJI
-     * </pre>
-     *
      * Protobuf type {@code GCGDamageDetail}
      */
     public static final class Builder extends
@@ -468,7 +460,7 @@ public final class GCGDamageDetailOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 14;</code>
+       * <code>uint32 skill_id = 5;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -476,7 +468,7 @@ public final class GCGDamageDetailOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 14;</code>
+       * <code>uint32 skill_id = 5;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +479,7 @@ public final class GCGDamageDetailOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 14;</code>
+       * <code>uint32 skill_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -499,7 +491,7 @@ public final class GCGDamageDetailOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 12;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -507,7 +499,7 @@ public final class GCGDamageDetailOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 12;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +510,7 @@ public final class GCGDamageDetailOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 12;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -595,7 +587,7 @@ public final class GCGDamageDetailOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GCGDamageDetail.proto\"6\n\017GCGDamageDeta" +
-      "il\022\020\n\010skill_id\030\016 \001(\r\022\021\n\tcard_guid\030\014 \001(\rB" +
+      "il\022\020\n\010skill_id\030\005 \001(\r\022\021\n\tcard_guid\030\r \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

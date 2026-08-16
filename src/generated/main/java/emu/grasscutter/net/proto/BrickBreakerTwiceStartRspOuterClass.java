@@ -19,15 +19,14 @@ public final class BrickBreakerTwiceStartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 25873
-   * Obf: LAEOMIMHKCI
+   * CmdId: 20909
    * </pre>
    *
    * Protobuf type {@code BrickBreakerTwiceStartRsp}
@@ -74,7 +73,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class BrickBreakerTwiceStartRspOuterClass {
               emu.grasscutter.net.proto.BrickBreakerTwiceStartRspOuterClass.BrickBreakerTwiceStartRsp.class, emu.grasscutter.net.proto.BrickBreakerTwiceStartRspOuterClass.BrickBreakerTwiceStartRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25873
-     * Obf: LAEOMIMHKCI
+     * CmdId: 20909
      * </pre>
      *
      * Protobuf type {@code BrickBreakerTwiceStartRsp}
@@ -431,7 +429,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class BrickBreakerTwiceStartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037BrickBreakerTwiceStartRsp.proto\",\n\031Bri" +
-      "ckBreakerTwiceStartRsp\022\017\n\007retcode\030\010 \001(\005B" +
+      "ckBreakerTwiceStartRsp\022\017\n\007retcode\030\006 \001(\005B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

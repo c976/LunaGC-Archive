@@ -19,24 +19,44 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo> 
         getLevelInfoListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo getLevelInfoList(int index);
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     int getLevelInfoListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfoOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfoOrBuilder getLevelInfoListOrBuilder(
@@ -136,6 +156,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
     public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo> levelInfoList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
@@ -143,6 +167,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
@@ -151,6 +179,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
@@ -158,6 +190,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
       return levelInfoList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
@@ -165,6 +201,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
       return levelInfoList_.get(index);
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
@@ -528,6 +568,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
           emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo, emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder, emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfoOrBuilder> levelInfoListBuilder_;
 
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo> getLevelInfoListList() {
@@ -538,6 +582,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public int getLevelInfoListCount() {
@@ -548,6 +596,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo getLevelInfoList(int index) {
@@ -558,6 +610,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
@@ -575,6 +631,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
@@ -589,6 +649,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo value) {
@@ -605,6 +669,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
@@ -622,6 +690,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
@@ -636,6 +708,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
@@ -650,6 +726,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder addAllLevelInfoList(
@@ -665,6 +745,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder clearLevelInfoList() {
@@ -678,6 +762,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public Builder removeLevelInfoList(int index) {
@@ -691,6 +779,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder getLevelInfoListBuilder(
@@ -698,6 +790,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfoOrBuilder getLevelInfoListOrBuilder(
@@ -708,6 +804,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfoOrBuilder> 
@@ -719,6 +819,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder addLevelInfoListBuilder() {
@@ -726,6 +830,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
             emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.getDefaultInstance());
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder addLevelInfoListBuilder(
@@ -734,6 +842,10 @@ public final class MonsterVsMonsterDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.getDefaultInstance());
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .MonsterVsMonsterLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder> 

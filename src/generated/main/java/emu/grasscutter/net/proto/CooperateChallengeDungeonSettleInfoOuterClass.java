@@ -19,69 +19,160 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> 
-        getPNBFGEGIGFLList();
+    java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> 
+        getAIJCBKAMJHNList();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
-    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getPNBFGEGIGFL(int index);
+    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getAIJCBKAMJHN(int index);
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
-    int getPNBFGEGIGFLCount();
+    int getAIJCBKAMJHNCount();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder> 
-        getPNBFGEGIGFLOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder> 
+        getAIJCBKAMJHNOrBuilderList();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
-    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder getPNBFGEGIGFLOrBuilder(
+    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder getAIJCBKAMJHNOrBuilder(
         int index);
 
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @return A list containing the oOJJIMODFOH.
      */
-    java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> 
-        getHMGFMIGMCIOList();
+    java.util.List<java.lang.Integer> getOOJJIMODFOHList();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @return The count of oOJJIMODFOH.
      */
-    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getHMGFMIGMCIO(int index);
+    int getOOJJIMODFOHCount();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @param index The index of the element to return.
+     * @return The oOJJIMODFOH at the given index.
      */
-    int getHMGFMIGMCIOCount();
+    int getOOJJIMODFOH(int index);
+
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder> 
-        getHMGFMIGMCIOOrBuilderList();
+    java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> 
+        getMKNAKDLAEKBList();
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
      */
-    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder getHMGFMIGMCIOOrBuilder(
+    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getMKNAKDLAEKB(int index);
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
+     */
+    int getMKNAKDLAEKBCount();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder> 
+        getMKNAKDLAEKBOrBuilderList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
+     */
+    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder getMKNAKDLAEKBOrBuilder(
         int index);
 
     /**
-     * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-     * @return The enum numeric value on the wire for jKMMIMCEFOM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+     * @return The enum numeric value on the wire for nJHKMLCHHKA.
      */
-    int getJKMMIMCEFOMValue();
+    int getNJHKMLCHHKAValue();
     /**
-     * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-     * @return The jKMMIMCEFOM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+     * @return The nJHKMLCHHKA.
      */
-    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason getJKMMIMCEFOM();
+    emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason getNJHKMLCHHKA();
 
     /**
-     * <code>uint32 difficulty_id = 10;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 23;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 HNDONKFNNED = 17;</code>
+     * @return The hNDONKFNNED.
+     */
+    int getHNDONKFNNED();
   }
   /**
    * Protobuf type {@code CooperateChallengeDungeonSettleInfo}
@@ -96,9 +187,10 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       super(builder);
     }
     private CooperateChallengeDungeonSettleInfo() {
-      pNBFGEGIGFL_ = java.util.Collections.emptyList();
-      hMGFMIGMCIO_ = java.util.Collections.emptyList();
-      jKMMIMCEFOM_ = 0;
+      aIJCBKAMJHN_ = java.util.Collections.emptyList();
+      oOJJIMODFOH_ = emptyIntList();
+      mKNAKDLAEKB_ = java.util.Collections.emptyList();
+      nJHKMLCHHKA_ = 0;
     }
 
     @java.lang.Override
@@ -132,33 +224,59 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                hMGFMIGMCIO_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD>();
+                oOJJIMODFOH_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              hMGFMIGMCIO_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.parser(), extensionRegistry));
+              oOJJIMODFOH_.addInt(input.readUInt32());
               break;
             }
-            case 80: {
+            case 34: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                oOJJIMODFOH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                oOJJIMODFOH_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 130: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                aIJCBKAMJHN_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              aIJCBKAMJHN_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.parser(), extensionRegistry));
+              break;
+            }
+            case 136: {
+
+              hNDONKFNNED_ = input.readUInt32();
+              break;
+            }
+            case 176: {
+              int rawValue = input.readEnum();
+
+              nJHKMLCHHKA_ = rawValue;
+              break;
+            }
+            case 184: {
 
               difficultyId_ = input.readUInt32();
               break;
             }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              jKMMIMCEFOM_ = rawValue;
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                pNBFGEGIGFL_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA>();
-                mutable_bitField0_ |= 0x00000001;
+            case 234: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                mKNAKDLAEKB_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL>();
+                mutable_bitField0_ |= 0x00000004;
               }
-              pNBFGEGIGFL_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.parser(), extensionRegistry));
+              mKNAKDLAEKB_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -177,10 +295,13 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          hMGFMIGMCIO_ = java.util.Collections.unmodifiableList(hMGFMIGMCIO_);
+          oOJJIMODFOH_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          pNBFGEGIGFL_ = java.util.Collections.unmodifiableList(pNBFGEGIGFL_);
+          aIJCBKAMJHN_ = java.util.Collections.unmodifiableList(aIJCBKAMJHN_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          mKNAKDLAEKB_ = java.util.Collections.unmodifiableList(mKNAKDLAEKB_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -200,37 +321,37 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
     }
 
     /**
-     * Protobuf enum {@code CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason}
+     * Protobuf enum {@code CooperateChallengeDungeonSettleInfo.SettleReason}
      */
-    public enum CooperateChallegeSettleReason
+    public enum SettleReason
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_NONE = 0;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_NONE = 0;</code>
        */
-      COOPERATE_CHALLENGE_SETTLE_REASON_NONE(0),
+      GACNGJICPHP_SETTLE_REASON_NONE(0),
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_SUCC = 1;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_SUCC = 1;</code>
        */
-      COOPERATE_CHALLENGE_SETTLE_REASON_SUCC(1),
+      GACNGJICPHP_SETTLE_REASON_SUCC(1),
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_PLAYER_NOT_ENOUGH = 2;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_PLAYER_NOT_ENOUGH = 2;</code>
        */
-      COOPERATE_CHALLENGE_SETTLE_REASON_PLAYER_NOT_ENOUGH(2),
+      GACNGJICPHP_SETTLE_REASON_PLAYER_NOT_ENOUGH(2),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_NONE = 0;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_NONE = 0;</code>
        */
-      public static final int COOPERATE_CHALLENGE_SETTLE_REASON_NONE_VALUE = 0;
+      public static final int GACNGJICPHP_SETTLE_REASON_NONE_VALUE = 0;
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_SUCC = 1;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_SUCC = 1;</code>
        */
-      public static final int COOPERATE_CHALLENGE_SETTLE_REASON_SUCC_VALUE = 1;
+      public static final int GACNGJICPHP_SETTLE_REASON_SUCC_VALUE = 1;
       /**
-       * <code>COOPERATE_CHALLENGE_SETTLE_REASON_PLAYER_NOT_ENOUGH = 2;</code>
+       * <code>GACNGJICPHP_SETTLE_REASON_PLAYER_NOT_ENOUGH = 2;</code>
        */
-      public static final int COOPERATE_CHALLENGE_SETTLE_REASON_PLAYER_NOT_ENOUGH_VALUE = 2;
+      public static final int GACNGJICPHP_SETTLE_REASON_PLAYER_NOT_ENOUGH_VALUE = 2;
 
 
       public final int getNumber() {
@@ -247,7 +368,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static CooperateChallegeSettleReason valueOf(int value) {
+      public static SettleReason valueOf(int value) {
         return forNumber(value);
       }
 
@@ -255,24 +376,24 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static CooperateChallegeSettleReason forNumber(int value) {
+      public static SettleReason forNumber(int value) {
         switch (value) {
-          case 0: return COOPERATE_CHALLENGE_SETTLE_REASON_NONE;
-          case 1: return COOPERATE_CHALLENGE_SETTLE_REASON_SUCC;
-          case 2: return COOPERATE_CHALLENGE_SETTLE_REASON_PLAYER_NOT_ENOUGH;
+          case 0: return GACNGJICPHP_SETTLE_REASON_NONE;
+          case 1: return GACNGJICPHP_SETTLE_REASON_SUCC;
+          case 2: return GACNGJICPHP_SETTLE_REASON_PLAYER_NOT_ENOUGH;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<CooperateChallegeSettleReason>
+      public static com.google.protobuf.Internal.EnumLiteMap<SettleReason>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          CooperateChallegeSettleReason> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<CooperateChallegeSettleReason>() {
-              public CooperateChallegeSettleReason findValueByNumber(int number) {
-                return CooperateChallegeSettleReason.forNumber(number);
+          SettleReason> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<SettleReason>() {
+              public SettleReason findValueByNumber(int number) {
+                return SettleReason.forNumber(number);
               }
             };
 
@@ -293,9 +414,9 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final CooperateChallegeSettleReason[] VALUES = values();
+      private static final SettleReason[] VALUES = values();
 
-      public static CooperateChallegeSettleReason valueOf(
+      public static SettleReason valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -309,59 +430,83 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
 
       private final int value;
 
-      private CooperateChallegeSettleReason(int value) {
+      private SettleReason(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason)
+      // @@protoc_insertion_point(enum_scope:CooperateChallengeDungeonSettleInfo.SettleReason)
     }
 
-    public interface EANBAAOLGCDOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)
+    public interface COKIDFAOOPLOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @return A list containing the uidList.
        */
       java.util.List<java.lang.Integer> getUidListList();
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @return The count of uidList.
        */
       int getUidListCount();
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @param index The index of the element to return.
        * @return The uidList at the given index.
        */
       int getUidList(int index);
 
       /**
-       * <code>uint32 HLAIPEJCAGB = 2;</code>
-       * @return The hLAIPEJCAGB.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 JFKBKBCIJDI = 18;</code>
+       * @return The jFKBKBCIJDI.
        */
-      int getHLAIPEJCAGB();
+      int getJFKBKBCIJDI();
 
       /**
-       * <code>int32 MDIDMJDBINN = 14;</code>
-       * @return The mDIDMJDBINN.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 LKEMFIDMNEE = 28;</code>
+       * @return The lKEMFIDMNEE.
        */
-      int getMDIDMJDBINN();
+      int getLKEMFIDMNEE();
     }
     /**
-     * Protobuf type {@code CooperateChallengeDungeonSettleInfo.EANBAAOLGCD}
+     * <pre>
+     * WriteTo: 0xAB5D430 | MergeFrom: 0xAB5D820
+     * </pre>
+     *
+     * Protobuf type {@code CooperateChallengeDungeonSettleInfo.COKIDFAOOPL}
      */
-    public static final class EANBAAOLGCD extends
+    public static final class COKIDFAOOPL extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)
-        EANBAAOLGCDOrBuilder {
+        // @@protoc_insertion_point(message_implements:CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)
+        COKIDFAOOPLOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use EANBAAOLGCD.newBuilder() to construct.
-      private EANBAAOLGCD(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use COKIDFAOOPL.newBuilder() to construct.
+      private COKIDFAOOPL(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private EANBAAOLGCD() {
+      private COKIDFAOOPL() {
         uidList_ = emptyIntList();
       }
 
@@ -369,7 +514,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       @SuppressWarnings({"unused"})
       protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
-        return new EANBAAOLGCD();
+        return new COKIDFAOOPL();
       }
 
       @java.lang.Override
@@ -377,7 +522,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private EANBAAOLGCD(
+      private COKIDFAOOPL(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -396,12 +541,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
-
-                hLAIPEJCAGB_ = input.readUInt32();
-                break;
-              }
-              case 56: {
+              case 80: {
                 if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                   uidList_ = newIntList();
                   mutable_bitField0_ |= 0x00000001;
@@ -409,7 +549,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
                 uidList_.addInt(input.readUInt32());
                 break;
               }
-              case 58: {
+              case 82: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -422,9 +562,14 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
                 input.popLimit(limit);
                 break;
               }
-              case 112: {
+              case 144: {
 
-                mDIDMJDBINN_ = input.readInt32();
+                jFKBKBCIJDI_ = input.readInt32();
+                break;
+              }
+              case 224: {
+
+                lKEMFIDMNEE_ = input.readUInt32();
                 break;
               }
               default: {
@@ -451,21 +596,25 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor;
+        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_fieldAccessorTable
+        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder.class);
+                emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder.class);
       }
 
-      public static final int UID_LIST_FIELD_NUMBER = 7;
+      public static final int UID_LIST_FIELD_NUMBER = 10;
       private com.google.protobuf.Internal.IntList uidList_;
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @return A list containing the uidList.
        */
       @java.lang.Override
@@ -474,14 +623,22 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return uidList_;
       }
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @return The count of uidList.
        */
       public int getUidListCount() {
         return uidList_.size();
       }
       /**
-       * <code>repeated uint32 uid_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 uid_list = 10;</code>
        * @param index The index of the element to return.
        * @return The uidList at the given index.
        */
@@ -490,26 +647,34 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       private int uidListMemoizedSerializedSize = -1;
 
-      public static final int HLAIPEJCAGB_FIELD_NUMBER = 2;
-      private int hLAIPEJCAGB_;
+      public static final int JFKBKBCIJDI_FIELD_NUMBER = 18;
+      private int jFKBKBCIJDI_;
       /**
-       * <code>uint32 HLAIPEJCAGB = 2;</code>
-       * @return The hLAIPEJCAGB.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 JFKBKBCIJDI = 18;</code>
+       * @return The jFKBKBCIJDI.
        */
       @java.lang.Override
-      public int getHLAIPEJCAGB() {
-        return hLAIPEJCAGB_;
+      public int getJFKBKBCIJDI() {
+        return jFKBKBCIJDI_;
       }
 
-      public static final int MDIDMJDBINN_FIELD_NUMBER = 14;
-      private int mDIDMJDBINN_;
+      public static final int LKEMFIDMNEE_FIELD_NUMBER = 28;
+      private int lKEMFIDMNEE_;
       /**
-       * <code>int32 MDIDMJDBINN = 14;</code>
-       * @return The mDIDMJDBINN.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 LKEMFIDMNEE = 28;</code>
+       * @return The lKEMFIDMNEE.
        */
       @java.lang.Override
-      public int getMDIDMJDBINN() {
-        return mDIDMJDBINN_;
+      public int getLKEMFIDMNEE() {
+        return lKEMFIDMNEE_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -527,18 +692,18 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         getSerializedSize();
-        if (hLAIPEJCAGB_ != 0) {
-          output.writeUInt32(2, hLAIPEJCAGB_);
-        }
         if (getUidListList().size() > 0) {
-          output.writeUInt32NoTag(58);
+          output.writeUInt32NoTag(82);
           output.writeUInt32NoTag(uidListMemoizedSerializedSize);
         }
         for (int i = 0; i < uidList_.size(); i++) {
           output.writeUInt32NoTag(uidList_.getInt(i));
         }
-        if (mDIDMJDBINN_ != 0) {
-          output.writeInt32(14, mDIDMJDBINN_);
+        if (jFKBKBCIJDI_ != 0) {
+          output.writeInt32(18, jFKBKBCIJDI_);
+        }
+        if (lKEMFIDMNEE_ != 0) {
+          output.writeUInt32(28, lKEMFIDMNEE_);
         }
         unknownFields.writeTo(output);
       }
@@ -549,10 +714,6 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         if (size != -1) return size;
 
         size = 0;
-        if (hLAIPEJCAGB_ != 0) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(2, hLAIPEJCAGB_);
-        }
         {
           int dataSize = 0;
           for (int i = 0; i < uidList_.size(); i++) {
@@ -567,9 +728,13 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
           uidListMemoizedSerializedSize = dataSize;
         }
-        if (mDIDMJDBINN_ != 0) {
+        if (jFKBKBCIJDI_ != 0) {
           size += com.google.protobuf.CodedOutputStream
-            .computeInt32Size(14, mDIDMJDBINN_);
+            .computeInt32Size(18, jFKBKBCIJDI_);
+        }
+        if (lKEMFIDMNEE_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(28, lKEMFIDMNEE_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -581,17 +746,17 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)) {
+        if (!(obj instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)) {
           return super.equals(obj);
         }
-        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD other = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD) obj;
+        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL other = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL) obj;
 
         if (!getUidListList()
             .equals(other.getUidListList())) return false;
-        if (getHLAIPEJCAGB()
-            != other.getHLAIPEJCAGB()) return false;
-        if (getMDIDMJDBINN()
-            != other.getMDIDMJDBINN()) return false;
+        if (getJFKBKBCIJDI()
+            != other.getJFKBKBCIJDI()) return false;
+        if (getLKEMFIDMNEE()
+            != other.getLKEMFIDMNEE()) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -607,78 +772,78 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           hash = (37 * hash) + UID_LIST_FIELD_NUMBER;
           hash = (53 * hash) + getUidListList().hashCode();
         }
-        hash = (37 * hash) + HLAIPEJCAGB_FIELD_NUMBER;
-        hash = (53 * hash) + getHLAIPEJCAGB();
-        hash = (37 * hash) + MDIDMJDBINN_FIELD_NUMBER;
-        hash = (53 * hash) + getMDIDMJDBINN();
+        hash = (37 * hash) + JFKBKBCIJDI_FIELD_NUMBER;
+        hash = (53 * hash) + getJFKBKBCIJDI();
+        hash = (37 * hash) + LKEMFIDMNEE_FIELD_NUMBER;
+        hash = (53 * hash) + getLKEMFIDMNEE();
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
       }
 
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(byte[] data)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseDelimitedFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseDelimitedFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -691,7 +856,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD prototype) {
+      public static Builder newBuilder(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -707,26 +872,30 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return builder;
       }
       /**
-       * Protobuf type {@code CooperateChallengeDungeonSettleInfo.EANBAAOLGCD}
+       * <pre>
+       * WriteTo: 0xAB5D430 | MergeFrom: 0xAB5D820
+       * </pre>
+       *
+       * Protobuf type {@code CooperateChallengeDungeonSettleInfo.COKIDFAOOPL}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder {
+          // @@protoc_insertion_point(builder_implements:CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor;
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_fieldAccessorTable
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder.class);
+                  emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder.class);
         }
 
-        // Construct using emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.newBuilder()
+        // Construct using emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -746,9 +915,9 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           super.clear();
           uidList_ = emptyIntList();
           bitField0_ = (bitField0_ & ~0x00000001);
-          hLAIPEJCAGB_ = 0;
+          jFKBKBCIJDI_ = 0;
 
-          mDIDMJDBINN_ = 0;
+          lKEMFIDMNEE_ = 0;
 
           return this;
         }
@@ -756,17 +925,17 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor;
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor;
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getDefaultInstanceForType() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.getDefaultInstance();
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getDefaultInstanceForType() {
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.getDefaultInstance();
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD build() {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD result = buildPartial();
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL build() {
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -774,16 +943,16 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD buildPartial() {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD result = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD(this);
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL buildPartial() {
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL result = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL(this);
           int from_bitField0_ = bitField0_;
           if (((bitField0_ & 0x00000001) != 0)) {
             uidList_.makeImmutable();
             bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.uidList_ = uidList_;
-          result.hLAIPEJCAGB_ = hLAIPEJCAGB_;
-          result.mDIDMJDBINN_ = mDIDMJDBINN_;
+          result.jFKBKBCIJDI_ = jFKBKBCIJDI_;
+          result.lKEMFIDMNEE_ = lKEMFIDMNEE_;
           onBuilt();
           return result;
         }
@@ -822,16 +991,16 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD) {
-            return mergeFrom((emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)other);
+          if (other instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL) {
+            return mergeFrom((emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD other) {
-          if (other == emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.getDefaultInstance()) return this;
+        public Builder mergeFrom(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL other) {
+          if (other == emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.getDefaultInstance()) return this;
           if (!other.uidList_.isEmpty()) {
             if (uidList_.isEmpty()) {
               uidList_ = other.uidList_;
@@ -842,11 +1011,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             }
             onChanged();
           }
-          if (other.getHLAIPEJCAGB() != 0) {
-            setHLAIPEJCAGB(other.getHLAIPEJCAGB());
+          if (other.getJFKBKBCIJDI() != 0) {
+            setJFKBKBCIJDI(other.getJFKBKBCIJDI());
           }
-          if (other.getMDIDMJDBINN() != 0) {
-            setMDIDMJDBINN(other.getMDIDMJDBINN());
+          if (other.getLKEMFIDMNEE() != 0) {
+            setLKEMFIDMNEE(other.getLKEMFIDMNEE());
           }
           this.mergeUnknownFields(other.unknownFields);
           onChanged();
@@ -863,11 +1032,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD parsedMessage = null;
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD) e.getUnfinishedMessage();
+            parsedMessage = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -886,7 +1055,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
            }
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @return A list containing the uidList.
          */
         public java.util.List<java.lang.Integer>
@@ -895,14 +1068,22 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
                    java.util.Collections.unmodifiableList(uidList_) : uidList_;
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @return The count of uidList.
          */
         public int getUidListCount() {
           return uidList_.size();
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @param index The index of the element to return.
          * @return The uidList at the given index.
          */
@@ -910,7 +1091,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return uidList_.getInt(index);
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @param index The index to set the value at.
          * @param value The uidList to set.
          * @return This builder for chaining.
@@ -923,7 +1108,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @param value The uidList to add.
          * @return This builder for chaining.
          */
@@ -934,7 +1123,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @param values The uidList to add.
          * @return This builder for chaining.
          */
@@ -947,7 +1140,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated uint32 uid_list = 7;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>repeated uint32 uid_list = 10;</code>
          * @return This builder for chaining.
          */
         public Builder clearUidList() {
@@ -957,64 +1154,88 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
 
-        private int hLAIPEJCAGB_ ;
+        private int jFKBKBCIJDI_ ;
         /**
-         * <code>uint32 HLAIPEJCAGB = 2;</code>
-         * @return The hLAIPEJCAGB.
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>int32 JFKBKBCIJDI = 18;</code>
+         * @return The jFKBKBCIJDI.
          */
         @java.lang.Override
-        public int getHLAIPEJCAGB() {
-          return hLAIPEJCAGB_;
+        public int getJFKBKBCIJDI() {
+          return jFKBKBCIJDI_;
         }
         /**
-         * <code>uint32 HLAIPEJCAGB = 2;</code>
-         * @param value The hLAIPEJCAGB to set.
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>int32 JFKBKBCIJDI = 18;</code>
+         * @param value The jFKBKBCIJDI to set.
          * @return This builder for chaining.
          */
-        public Builder setHLAIPEJCAGB(int value) {
+        public Builder setJFKBKBCIJDI(int value) {
           
-          hLAIPEJCAGB_ = value;
+          jFKBKBCIJDI_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>uint32 HLAIPEJCAGB = 2;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>int32 JFKBKBCIJDI = 18;</code>
          * @return This builder for chaining.
          */
-        public Builder clearHLAIPEJCAGB() {
+        public Builder clearJFKBKBCIJDI() {
           
-          hLAIPEJCAGB_ = 0;
+          jFKBKBCIJDI_ = 0;
           onChanged();
           return this;
         }
 
-        private int mDIDMJDBINN_ ;
+        private int lKEMFIDMNEE_ ;
         /**
-         * <code>int32 MDIDMJDBINN = 14;</code>
-         * @return The mDIDMJDBINN.
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 LKEMFIDMNEE = 28;</code>
+         * @return The lKEMFIDMNEE.
          */
         @java.lang.Override
-        public int getMDIDMJDBINN() {
-          return mDIDMJDBINN_;
+        public int getLKEMFIDMNEE() {
+          return lKEMFIDMNEE_;
         }
         /**
-         * <code>int32 MDIDMJDBINN = 14;</code>
-         * @param value The mDIDMJDBINN to set.
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 LKEMFIDMNEE = 28;</code>
+         * @param value The lKEMFIDMNEE to set.
          * @return This builder for chaining.
          */
-        public Builder setMDIDMJDBINN(int value) {
+        public Builder setLKEMFIDMNEE(int value) {
           
-          mDIDMJDBINN_ = value;
+          lKEMFIDMNEE_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>int32 MDIDMJDBINN = 14;</code>
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 LKEMFIDMNEE = 28;</code>
          * @return This builder for chaining.
          */
-        public Builder clearMDIDMJDBINN() {
+        public Builder clearLKEMFIDMNEE() {
           
-          mDIDMJDBINN_ = 0;
+          lKEMFIDMNEE_ = 0;
           onChanged();
           return this;
         }
@@ -1031,177 +1252,261 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)
+        // @@protoc_insertion_point(builder_scope:CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)
       }
 
-      // @@protoc_insertion_point(class_scope:CooperateChallengeDungeonSettleInfo.EANBAAOLGCD)
-      private static final emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:CooperateChallengeDungeonSettleInfo.COKIDFAOOPL)
+      private static final emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD();
+        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL();
       }
 
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getDefaultInstance() {
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      private static final com.google.protobuf.Parser<EANBAAOLGCD>
-          PARSER = new com.google.protobuf.AbstractParser<EANBAAOLGCD>() {
+      private static final com.google.protobuf.Parser<COKIDFAOOPL>
+          PARSER = new com.google.protobuf.AbstractParser<COKIDFAOOPL>() {
         @java.lang.Override
-        public EANBAAOLGCD parsePartialFrom(
+        public COKIDFAOOPL parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new EANBAAOLGCD(input, extensionRegistry);
+          return new COKIDFAOOPL(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<EANBAAOLGCD> parser() {
+      public static com.google.protobuf.Parser<COKIDFAOOPL> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<EANBAAOLGCD> getParserForType() {
+      public com.google.protobuf.Parser<COKIDFAOOPL> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getDefaultInstanceForType() {
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
-    public interface OGBOLECEGGAOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)
+    public interface OIFDPOMFGOCOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @return A list containing the eMAJLOGPGJP.
-       */
-      java.util.List<java.lang.Integer> getEMAJLOGPGJPList();
-      /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @return The count of eMAJLOGPGJP.
-       */
-      int getEMAJLOGPGJPCount();
-      /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @param index The index of the element to return.
-       * @return The eMAJLOGPGJP at the given index.
-       */
-      int getEMAJLOGPGJP(int index);
-
-      /**
-       * <code>string PAFEKEPGHAK = 2;</code>
-       * @return The pAFEKEPGHAK.
-       */
-      java.lang.String getPAFEKEPGHAK();
-      /**
-       * <code>string PAFEKEPGHAK = 2;</code>
-       * @return The bytes for pAFEKEPGHAK.
-       */
-      com.google.protobuf.ByteString
-          getPAFEKEPGHAKBytes();
-
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
-          getCardListList();
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      int getCardListCount();
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-          getCardListOrBuilderList();
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
-          int index);
-
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      boolean hasProfilePicture();
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       * @return The profilePicture.
-       */
-      emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       */
-      emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-      /**
-       * <code>string nickname = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 9;</code>
        * @return The nickname.
        */
       java.lang.String getNickname();
       /**
-       * <code>string nickname = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 9;</code>
        * @return The bytes for nickname.
        */
       com.google.protobuf.ByteString
           getNicknameBytes();
 
       /**
-       * <code>string online_id = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
+          getCardListList();
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      int getCardListCount();
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+          getCardListOrBuilderList();
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
+          int index);
+
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      boolean hasProfilePicture();
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       * @return The profilePicture.
+       */
+      emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       */
+      emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @return A list containing the dEDPLHELFGB.
+       */
+      java.util.List<java.lang.Integer> getDEDPLHELFGBList();
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @return The count of dEDPLHELFGB.
+       */
+      int getDEDPLHELFGBCount();
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @param index The index of the element to return.
+       * @return The dEDPLHELFGB at the given index.
+       */
+      int getDEDPLHELFGB(int index);
+
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string PJMKDOCDKLH = 28;</code>
+       * @return The pJMKDOCDKLH.
+       */
+      java.lang.String getPJMKDOCDKLH();
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string PJMKDOCDKLH = 28;</code>
+       * @return The bytes for pJMKDOCDKLH.
+       */
+      com.google.protobuf.ByteString
+          getPJMKDOCDKLHBytes();
+
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The onlineId.
        */
       java.lang.String getOnlineId();
       /**
-       * <code>string online_id = 14;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The bytes for onlineId.
        */
       com.google.protobuf.ByteString
           getOnlineIdBytes();
 
       /**
-       * <code>uint32 uid = 10;</code>
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
        * @return The uid.
        */
       int getUid();
 
       /**
-       * <code>uint32 add_score = 7;</code>
-       * @return The addScore.
-       */
-      int getAddScore();
-
-      /**
-       * <code>uint32 score = 4;</code>
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 score = 19;</code>
        * @return The score.
        */
       int getScore();
+
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 add_score = 29;</code>
+       * @return The addScore.
+       */
+      int getAddScore();
     }
     /**
-     * Protobuf type {@code CooperateChallengeDungeonSettleInfo.OGBOLECEGGA}
+     * <pre>
+     * WriteTo: 0xBFA6F50 | MergeFrom: 0xBFA7770
+     * </pre>
+     *
+     * Protobuf type {@code CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC}
      */
-    public static final class OGBOLECEGGA extends
+    public static final class OIFDPOMFGOC extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)
-        OGBOLECEGGAOrBuilder {
+        // @@protoc_insertion_point(message_implements:CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)
+        OIFDPOMFGOCOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use OGBOLECEGGA.newBuilder() to construct.
-      private OGBOLECEGGA(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use OIFDPOMFGOC.newBuilder() to construct.
+      private OIFDPOMFGOC(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private OGBOLECEGGA() {
-        eMAJLOGPGJP_ = emptyIntList();
-        pAFEKEPGHAK_ = "";
-        cardList_ = java.util.Collections.emptyList();
+      private OIFDPOMFGOC() {
         nickname_ = "";
+        cardList_ = java.util.Collections.emptyList();
+        dEDPLHELFGB_ = emptyIntList();
+        pJMKDOCDKLH_ = "";
         onlineId_ = "";
       }
 
@@ -1209,7 +1514,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       @SuppressWarnings({"unused"})
       protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
-        return new OGBOLECEGGA();
+        return new OIFDPOMFGOC();
       }
 
       @java.lang.Override
@@ -1217,7 +1522,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private OGBOLECEGGA(
+      private OIFDPOMFGOC(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1237,63 +1542,6 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
                 done = true;
                 break;
               case 18: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                pAFEKEPGHAK_ = s;
-                break;
-              }
-              case 26: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                nickname_ = s;
-                break;
-              }
-              case 32: {
-
-                score_ = input.readUInt32();
-                break;
-              }
-              case 42: {
-                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                  cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                  mutable_bitField0_ |= 0x00000002;
-                }
-                cardList_.add(
-                    input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
-                break;
-              }
-              case 48: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  eMAJLOGPGJP_ = newIntList();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                eMAJLOGPGJP_.addInt(input.readUInt32());
-                break;
-              }
-              case 50: {
-                int length = input.readRawVarint32();
-                int limit = input.pushLimit(length);
-                if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                  eMAJLOGPGJP_ = newIntList();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                while (input.getBytesUntilLimit() > 0) {
-                  eMAJLOGPGJP_.addInt(input.readUInt32());
-                }
-                input.popLimit(limit);
-                break;
-              }
-              case 56: {
-
-                addScore_ = input.readUInt32();
-                break;
-              }
-              case 80: {
-
-                uid_ = input.readUInt32();
-                break;
-              }
-              case 90: {
                 emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
                 if (profilePicture_ != null) {
                   subBuilder = profilePicture_.toBuilder();
@@ -1306,10 +1554,67 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
 
                 break;
               }
-              case 114: {
+              case 48: {
+                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                  dEDPLHELFGB_ = newIntList();
+                  mutable_bitField0_ |= 0x00000002;
+                }
+                dEDPLHELFGB_.addInt(input.readUInt32());
+                break;
+              }
+              case 50: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                  dEDPLHELFGB_ = newIntList();
+                  mutable_bitField0_ |= 0x00000002;
+                }
+                while (input.getBytesUntilLimit() > 0) {
+                  dEDPLHELFGB_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              }
+              case 74: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                nickname_ = s;
+                break;
+              }
+              case 90: {
+                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                  cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
+                  mutable_bitField0_ |= 0x00000001;
+                }
+                cardList_.add(
+                    input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
+                break;
+              }
+              case 98: {
                 java.lang.String s = input.readStringRequireUtf8();
 
                 onlineId_ = s;
+                break;
+              }
+              case 104: {
+
+                uid_ = input.readUInt32();
+                break;
+              }
+              case 152: {
+
+                score_ = input.readUInt32();
+                break;
+              }
+              case 226: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                pJMKDOCDKLH_ = s;
+                break;
+              }
+              case 232: {
+
+                addScore_ = input.readUInt32();
                 break;
               }
               default: {
@@ -1328,10 +1633,10 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
               e).setUnfinishedMessage(this);
         } finally {
           if (((mutable_bitField0_ & 0x00000002) != 0)) {
-            cardList_ = java.util.Collections.unmodifiableList(cardList_);
+            dEDPLHELFGB_.makeImmutable(); // C
           }
           if (((mutable_bitField0_ & 0x00000001) != 0)) {
-            eMAJLOGPGJP_.makeImmutable(); // C
+            cardList_ = java.util.Collections.unmodifiableList(cardList_);
           }
           this.unknownFields = unknownFields.build();
           makeExtensionsImmutable();
@@ -1339,153 +1644,25 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor;
+        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_fieldAccessorTable
+        return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder.class);
+                emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder.class);
       }
 
-      public static final int EMAJLOGPGJP_FIELD_NUMBER = 6;
-      private com.google.protobuf.Internal.IntList eMAJLOGPGJP_;
-      /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @return A list containing the eMAJLOGPGJP.
-       */
-      @java.lang.Override
-      public java.util.List<java.lang.Integer>
-          getEMAJLOGPGJPList() {
-        return eMAJLOGPGJP_;
-      }
-      /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @return The count of eMAJLOGPGJP.
-       */
-      public int getEMAJLOGPGJPCount() {
-        return eMAJLOGPGJP_.size();
-      }
-      /**
-       * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-       * @param index The index of the element to return.
-       * @return The eMAJLOGPGJP at the given index.
-       */
-      public int getEMAJLOGPGJP(int index) {
-        return eMAJLOGPGJP_.getInt(index);
-      }
-      private int eMAJLOGPGJPMemoizedSerializedSize = -1;
-
-      public static final int PAFEKEPGHAK_FIELD_NUMBER = 2;
-      private volatile java.lang.Object pAFEKEPGHAK_;
-      /**
-       * <code>string PAFEKEPGHAK = 2;</code>
-       * @return The pAFEKEPGHAK.
-       */
-      @java.lang.Override
-      public java.lang.String getPAFEKEPGHAK() {
-        java.lang.Object ref = pAFEKEPGHAK_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          pAFEKEPGHAK_ = s;
-          return s;
-        }
-      }
-      /**
-       * <code>string PAFEKEPGHAK = 2;</code>
-       * @return The bytes for pAFEKEPGHAK.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getPAFEKEPGHAKBytes() {
-        java.lang.Object ref = pAFEKEPGHAK_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          pAFEKEPGHAK_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-
-      public static final int CARD_LIST_FIELD_NUMBER = 5;
-      private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      @java.lang.Override
-      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
-        return cardList_;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      @java.lang.Override
-      public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-          getCardListOrBuilderList() {
-        return cardList_;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      @java.lang.Override
-      public int getCardListCount() {
-        return cardList_.size();
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
-        return cardList_.get(index);
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
-          int index) {
-        return cardList_.get(index);
-      }
-
-      public static final int PROFILE_PICTURE_FIELD_NUMBER = 11;
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      @java.lang.Override
-      public boolean hasProfilePicture() {
-        return profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       * @return The profilePicture.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 11;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        return getProfilePicture();
-      }
-
-      public static final int NICKNAME_FIELD_NUMBER = 3;
+      public static final int NICKNAME_FIELD_NUMBER = 9;
       private volatile java.lang.Object nickname_;
       /**
-       * <code>string nickname = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 9;</code>
        * @return The nickname.
        */
       @java.lang.Override
@@ -1502,7 +1679,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string nickname = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 9;</code>
        * @return The bytes for nickname.
        */
       @java.lang.Override
@@ -1520,10 +1701,198 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
       }
 
-      public static final int ONLINE_ID_FIELD_NUMBER = 14;
+      public static final int CARD_LIST_FIELD_NUMBER = 11;
+      private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      @java.lang.Override
+      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
+        return cardList_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      @java.lang.Override
+      public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+          getCardListOrBuilderList() {
+        return cardList_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      @java.lang.Override
+      public int getCardListCount() {
+        return cardList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
+        return cardList_.get(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
+          int index) {
+        return cardList_.get(index);
+      }
+
+      public static final int PROFILE_PICTURE_FIELD_NUMBER = 2;
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      @java.lang.Override
+      public boolean hasProfilePicture() {
+        return profilePicture_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       * @return The profilePicture.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 2;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        return getProfilePicture();
+      }
+
+      public static final int DEDPLHELFGB_FIELD_NUMBER = 6;
+      private com.google.protobuf.Internal.IntList dEDPLHELFGB_;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @return A list containing the dEDPLHELFGB.
+       */
+      @java.lang.Override
+      public java.util.List<java.lang.Integer>
+          getDEDPLHELFGBList() {
+        return dEDPLHELFGB_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @return The count of dEDPLHELFGB.
+       */
+      public int getDEDPLHELFGBCount() {
+        return dEDPLHELFGB_.size();
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+       * @param index The index of the element to return.
+       * @return The dEDPLHELFGB at the given index.
+       */
+      public int getDEDPLHELFGB(int index) {
+        return dEDPLHELFGB_.getInt(index);
+      }
+      private int dEDPLHELFGBMemoizedSerializedSize = -1;
+
+      public static final int PJMKDOCDKLH_FIELD_NUMBER = 28;
+      private volatile java.lang.Object pJMKDOCDKLH_;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string PJMKDOCDKLH = 28;</code>
+       * @return The pJMKDOCDKLH.
+       */
+      @java.lang.Override
+      public java.lang.String getPJMKDOCDKLH() {
+        java.lang.Object ref = pJMKDOCDKLH_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          pJMKDOCDKLH_ = s;
+          return s;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string PJMKDOCDKLH = 28;</code>
+       * @return The bytes for pJMKDOCDKLH.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getPJMKDOCDKLHBytes() {
+        java.lang.Object ref = pJMKDOCDKLH_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pJMKDOCDKLH_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int ONLINE_ID_FIELD_NUMBER = 12;
       private volatile java.lang.Object onlineId_;
       /**
-       * <code>string online_id = 14;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The onlineId.
        */
       @java.lang.Override
@@ -1540,7 +1909,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 14;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The bytes for onlineId.
        */
       @java.lang.Override
@@ -1558,10 +1931,14 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
       }
 
-      public static final int UID_FIELD_NUMBER = 10;
+      public static final int UID_FIELD_NUMBER = 13;
       private int uid_;
       /**
-       * <code>uint32 uid = 10;</code>
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -1569,26 +1946,34 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return uid_;
       }
 
-      public static final int ADD_SCORE_FIELD_NUMBER = 7;
-      private int addScore_;
-      /**
-       * <code>uint32 add_score = 7;</code>
-       * @return The addScore.
-       */
-      @java.lang.Override
-      public int getAddScore() {
-        return addScore_;
-      }
-
-      public static final int SCORE_FIELD_NUMBER = 4;
+      public static final int SCORE_FIELD_NUMBER = 19;
       private int score_;
       /**
-       * <code>uint32 score = 4;</code>
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 score = 19;</code>
        * @return The score.
        */
       @java.lang.Override
       public int getScore() {
         return score_;
+      }
+
+      public static final int ADD_SCORE_FIELD_NUMBER = 29;
+      private int addScore_;
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 add_score = 29;</code>
+       * @return The addScore.
+       */
+      @java.lang.Override
+      public int getAddScore() {
+        return addScore_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -1606,36 +1991,36 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         getSerializedSize();
-        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pAFEKEPGHAK_)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pAFEKEPGHAK_);
+        if (profilePicture_ != null) {
+          output.writeMessage(2, getProfilePicture());
+        }
+        if (getDEDPLHELFGBList().size() > 0) {
+          output.writeUInt32NoTag(50);
+          output.writeUInt32NoTag(dEDPLHELFGBMemoizedSerializedSize);
+        }
+        for (int i = 0; i < dEDPLHELFGB_.size(); i++) {
+          output.writeUInt32NoTag(dEDPLHELFGB_.getInt(i));
         }
         if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, nickname_);
-        }
-        if (score_ != 0) {
-          output.writeUInt32(4, score_);
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 9, nickname_);
         }
         for (int i = 0; i < cardList_.size(); i++) {
-          output.writeMessage(5, cardList_.get(i));
-        }
-        if (getEMAJLOGPGJPList().size() > 0) {
-          output.writeUInt32NoTag(50);
-          output.writeUInt32NoTag(eMAJLOGPGJPMemoizedSerializedSize);
-        }
-        for (int i = 0; i < eMAJLOGPGJP_.size(); i++) {
-          output.writeUInt32NoTag(eMAJLOGPGJP_.getInt(i));
-        }
-        if (addScore_ != 0) {
-          output.writeUInt32(7, addScore_);
-        }
-        if (uid_ != 0) {
-          output.writeUInt32(10, uid_);
-        }
-        if (profilePicture_ != null) {
-          output.writeMessage(11, getProfilePicture());
+          output.writeMessage(11, cardList_.get(i));
         }
         if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 14, onlineId_);
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 12, onlineId_);
+        }
+        if (uid_ != 0) {
+          output.writeUInt32(13, uid_);
+        }
+        if (score_ != 0) {
+          output.writeUInt32(19, score_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 28, pJMKDOCDKLH_);
+        }
+        if (addScore_ != 0) {
+          output.writeUInt32(29, addScore_);
         }
         unknownFields.writeTo(output);
       }
@@ -1646,48 +2031,48 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         if (size != -1) return size;
 
         size = 0;
-        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pAFEKEPGHAK_)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pAFEKEPGHAK_);
-        }
-        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, nickname_);
-        }
-        if (score_ != 0) {
+        if (profilePicture_ != null) {
           size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(4, score_);
-        }
-        for (int i = 0; i < cardList_.size(); i++) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(5, cardList_.get(i));
+            .computeMessageSize(2, getProfilePicture());
         }
         {
           int dataSize = 0;
-          for (int i = 0; i < eMAJLOGPGJP_.size(); i++) {
+          for (int i = 0; i < dEDPLHELFGB_.size(); i++) {
             dataSize += com.google.protobuf.CodedOutputStream
-              .computeUInt32SizeNoTag(eMAJLOGPGJP_.getInt(i));
+              .computeUInt32SizeNoTag(dEDPLHELFGB_.getInt(i));
           }
           size += dataSize;
-          if (!getEMAJLOGPGJPList().isEmpty()) {
+          if (!getDEDPLHELFGBList().isEmpty()) {
             size += 1;
             size += com.google.protobuf.CodedOutputStream
                 .computeInt32SizeNoTag(dataSize);
           }
-          eMAJLOGPGJPMemoizedSerializedSize = dataSize;
+          dEDPLHELFGBMemoizedSerializedSize = dataSize;
         }
-        if (addScore_ != 0) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, nickname_);
+        }
+        for (int i = 0; i < cardList_.size(); i++) {
           size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(7, addScore_);
+            .computeMessageSize(11, cardList_.get(i));
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, onlineId_);
         }
         if (uid_ != 0) {
           size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(10, uid_);
+            .computeUInt32Size(13, uid_);
         }
-        if (profilePicture_ != null) {
+        if (score_ != 0) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, getProfilePicture());
+            .computeUInt32Size(19, score_);
         }
-        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, onlineId_);
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(28, pJMKDOCDKLH_);
+        }
+        if (addScore_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(29, addScore_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -1699,15 +2084,13 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)) {
+        if (!(obj instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)) {
           return super.equals(obj);
         }
-        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA other = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA) obj;
+        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC other = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC) obj;
 
-        if (!getEMAJLOGPGJPList()
-            .equals(other.getEMAJLOGPGJPList())) return false;
-        if (!getPAFEKEPGHAK()
-            .equals(other.getPAFEKEPGHAK())) return false;
+        if (!getNickname()
+            .equals(other.getNickname())) return false;
         if (!getCardListList()
             .equals(other.getCardListList())) return false;
         if (hasProfilePicture() != other.hasProfilePicture()) return false;
@@ -1715,16 +2098,18 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           if (!getProfilePicture()
               .equals(other.getProfilePicture())) return false;
         }
-        if (!getNickname()
-            .equals(other.getNickname())) return false;
+        if (!getDEDPLHELFGBList()
+            .equals(other.getDEDPLHELFGBList())) return false;
+        if (!getPJMKDOCDKLH()
+            .equals(other.getPJMKDOCDKLH())) return false;
         if (!getOnlineId()
             .equals(other.getOnlineId())) return false;
         if (getUid()
             != other.getUid()) return false;
-        if (getAddScore()
-            != other.getAddScore()) return false;
         if (getScore()
             != other.getScore()) return false;
+        if (getAddScore()
+            != other.getAddScore()) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -1736,12 +2121,8 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        if (getEMAJLOGPGJPCount() > 0) {
-          hash = (37 * hash) + EMAJLOGPGJP_FIELD_NUMBER;
-          hash = (53 * hash) + getEMAJLOGPGJPList().hashCode();
-        }
-        hash = (37 * hash) + PAFEKEPGHAK_FIELD_NUMBER;
-        hash = (53 * hash) + getPAFEKEPGHAK().hashCode();
+        hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+        hash = (53 * hash) + getNickname().hashCode();
         if (getCardListCount() > 0) {
           hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
           hash = (53 * hash) + getCardListList().hashCode();
@@ -1750,84 +2131,88 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
           hash = (53 * hash) + getProfilePicture().hashCode();
         }
-        hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-        hash = (53 * hash) + getNickname().hashCode();
+        if (getDEDPLHELFGBCount() > 0) {
+          hash = (37 * hash) + DEDPLHELFGB_FIELD_NUMBER;
+          hash = (53 * hash) + getDEDPLHELFGBList().hashCode();
+        }
+        hash = (37 * hash) + PJMKDOCDKLH_FIELD_NUMBER;
+        hash = (53 * hash) + getPJMKDOCDKLH().hashCode();
         hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
         hash = (53 * hash) + getOnlineId().hashCode();
         hash = (37 * hash) + UID_FIELD_NUMBER;
         hash = (53 * hash) + getUid();
-        hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
-        hash = (53 * hash) + getAddScore();
         hash = (37 * hash) + SCORE_FIELD_NUMBER;
         hash = (53 * hash) + getScore();
+        hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
+        hash = (53 * hash) + getAddScore();
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
       }
 
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(byte[] data)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseDelimitedFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseDelimitedFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parseFrom(
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1840,7 +2225,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA prototype) {
+      public static Builder newBuilder(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -1856,26 +2241,30 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return builder;
       }
       /**
-       * Protobuf type {@code CooperateChallengeDungeonSettleInfo.OGBOLECEGGA}
+       * <pre>
+       * WriteTo: 0xBFA6F50 | MergeFrom: 0xBFA7770
+       * </pre>
+       *
+       * Protobuf type {@code CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder {
+          // @@protoc_insertion_point(builder_implements:CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor;
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_fieldAccessorTable
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder.class);
+                  emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.class, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder.class);
         }
 
-        // Construct using emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.newBuilder()
+        // Construct using emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -1894,13 +2283,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         @java.lang.Override
         public Builder clear() {
           super.clear();
-          eMAJLOGPGJP_ = emptyIntList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          pAFEKEPGHAK_ = "";
+          nickname_ = "";
 
           if (cardListBuilder_ == null) {
             cardList_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             cardListBuilder_.clear();
           }
@@ -1910,15 +2297,17 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             profilePicture_ = null;
             profilePictureBuilder_ = null;
           }
-          nickname_ = "";
+          dEDPLHELFGB_ = emptyIntList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          pJMKDOCDKLH_ = "";
 
           onlineId_ = "";
 
           uid_ = 0;
 
-          addScore_ = 0;
-
           score_ = 0;
+
+          addScore_ = 0;
 
           return this;
         }
@@ -1926,17 +2315,17 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor;
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor;
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getDefaultInstanceForType() {
-          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.getDefaultInstance();
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getDefaultInstanceForType() {
+          return emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.getDefaultInstance();
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA build() {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA result = buildPartial();
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC build() {
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -1944,19 +2333,14 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA buildPartial() {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA result = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA(this);
+        public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC buildPartial() {
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC result = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC(this);
           int from_bitField0_ = bitField0_;
-          if (((bitField0_ & 0x00000001) != 0)) {
-            eMAJLOGPGJP_.makeImmutable();
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.eMAJLOGPGJP_ = eMAJLOGPGJP_;
-          result.pAFEKEPGHAK_ = pAFEKEPGHAK_;
+          result.nickname_ = nickname_;
           if (cardListBuilder_ == null) {
-            if (((bitField0_ & 0x00000002) != 0)) {
+            if (((bitField0_ & 0x00000001) != 0)) {
               cardList_ = java.util.Collections.unmodifiableList(cardList_);
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             }
             result.cardList_ = cardList_;
           } else {
@@ -1967,11 +2351,16 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           } else {
             result.profilePicture_ = profilePictureBuilder_.build();
           }
-          result.nickname_ = nickname_;
+          if (((bitField0_ & 0x00000002) != 0)) {
+            dEDPLHELFGB_.makeImmutable();
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.dEDPLHELFGB_ = dEDPLHELFGB_;
+          result.pJMKDOCDKLH_ = pJMKDOCDKLH_;
           result.onlineId_ = onlineId_;
           result.uid_ = uid_;
-          result.addScore_ = addScore_;
           result.score_ = score_;
+          result.addScore_ = addScore_;
           onBuilt();
           return result;
         }
@@ -2010,35 +2399,25 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA) {
-            return mergeFrom((emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)other);
+          if (other instanceof emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC) {
+            return mergeFrom((emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA other) {
-          if (other == emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.getDefaultInstance()) return this;
-          if (!other.eMAJLOGPGJP_.isEmpty()) {
-            if (eMAJLOGPGJP_.isEmpty()) {
-              eMAJLOGPGJP_ = other.eMAJLOGPGJP_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureEMAJLOGPGJPIsMutable();
-              eMAJLOGPGJP_.addAll(other.eMAJLOGPGJP_);
-            }
-            onChanged();
-          }
-          if (!other.getPAFEKEPGHAK().isEmpty()) {
-            pAFEKEPGHAK_ = other.pAFEKEPGHAK_;
+        public Builder mergeFrom(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC other) {
+          if (other == emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.getDefaultInstance()) return this;
+          if (!other.getNickname().isEmpty()) {
+            nickname_ = other.nickname_;
             onChanged();
           }
           if (cardListBuilder_ == null) {
             if (!other.cardList_.isEmpty()) {
               if (cardList_.isEmpty()) {
                 cardList_ = other.cardList_;
-                bitField0_ = (bitField0_ & ~0x00000002);
+                bitField0_ = (bitField0_ & ~0x00000001);
               } else {
                 ensureCardListIsMutable();
                 cardList_.addAll(other.cardList_);
@@ -2051,7 +2430,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
                 cardListBuilder_.dispose();
                 cardListBuilder_ = null;
                 cardList_ = other.cardList_;
-                bitField0_ = (bitField0_ & ~0x00000002);
+                bitField0_ = (bitField0_ & ~0x00000001);
                 cardListBuilder_ = 
                   com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                      getCardListFieldBuilder() : null;
@@ -2063,8 +2442,18 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           if (other.hasProfilePicture()) {
             mergeProfilePicture(other.getProfilePicture());
           }
-          if (!other.getNickname().isEmpty()) {
-            nickname_ = other.nickname_;
+          if (!other.dEDPLHELFGB_.isEmpty()) {
+            if (dEDPLHELFGB_.isEmpty()) {
+              dEDPLHELFGB_ = other.dEDPLHELFGB_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureDEDPLHELFGBIsMutable();
+              dEDPLHELFGB_.addAll(other.dEDPLHELFGB_);
+            }
+            onChanged();
+          }
+          if (!other.getPJMKDOCDKLH().isEmpty()) {
+            pJMKDOCDKLH_ = other.pJMKDOCDKLH_;
             onChanged();
           }
           if (!other.getOnlineId().isEmpty()) {
@@ -2074,11 +2463,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           if (other.getUid() != 0) {
             setUid(other.getUid());
           }
-          if (other.getAddScore() != 0) {
-            setAddScore(other.getAddScore());
-          }
           if (other.getScore() != 0) {
             setScore(other.getScore());
+          }
+          if (other.getAddScore() != 0) {
+            setAddScore(other.getAddScore());
           }
           this.mergeUnknownFields(other.unknownFields);
           onChanged();
@@ -2095,11 +2484,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA parsedMessage = null;
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA) e.getUnfinishedMessage();
+            parsedMessage = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -2110,157 +2499,98 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
         private int bitField0_;
 
-        private com.google.protobuf.Internal.IntList eMAJLOGPGJP_ = emptyIntList();
-        private void ensureEMAJLOGPGJPIsMutable() {
-          if (!((bitField0_ & 0x00000001) != 0)) {
-            eMAJLOGPGJP_ = mutableCopy(eMAJLOGPGJP_);
-            bitField0_ |= 0x00000001;
-           }
-        }
+        private java.lang.Object nickname_ = "";
         /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @return A list containing the eMAJLOGPGJP.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>string nickname = 9;</code>
+         * @return The nickname.
          */
-        public java.util.List<java.lang.Integer>
-            getEMAJLOGPGJPList() {
-          return ((bitField0_ & 0x00000001) != 0) ?
-                   java.util.Collections.unmodifiableList(eMAJLOGPGJP_) : eMAJLOGPGJP_;
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @return The count of eMAJLOGPGJP.
-         */
-        public int getEMAJLOGPGJPCount() {
-          return eMAJLOGPGJP_.size();
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @param index The index of the element to return.
-         * @return The eMAJLOGPGJP at the given index.
-         */
-        public int getEMAJLOGPGJP(int index) {
-          return eMAJLOGPGJP_.getInt(index);
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @param index The index to set the value at.
-         * @param value The eMAJLOGPGJP to set.
-         * @return This builder for chaining.
-         */
-        public Builder setEMAJLOGPGJP(
-            int index, int value) {
-          ensureEMAJLOGPGJPIsMutable();
-          eMAJLOGPGJP_.setInt(index, value);
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @param value The eMAJLOGPGJP to add.
-         * @return This builder for chaining.
-         */
-        public Builder addEMAJLOGPGJP(int value) {
-          ensureEMAJLOGPGJPIsMutable();
-          eMAJLOGPGJP_.addInt(value);
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @param values The eMAJLOGPGJP to add.
-         * @return This builder for chaining.
-         */
-        public Builder addAllEMAJLOGPGJP(
-            java.lang.Iterable<? extends java.lang.Integer> values) {
-          ensureEMAJLOGPGJPIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, eMAJLOGPGJP_);
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>repeated uint32 EMAJLOGPGJP = 6;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearEMAJLOGPGJP() {
-          eMAJLOGPGJP_ = emptyIntList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-          return this;
-        }
-
-        private java.lang.Object pAFEKEPGHAK_ = "";
-        /**
-         * <code>string PAFEKEPGHAK = 2;</code>
-         * @return The pAFEKEPGHAK.
-         */
-        public java.lang.String getPAFEKEPGHAK() {
-          java.lang.Object ref = pAFEKEPGHAK_;
+        public java.lang.String getNickname() {
+          java.lang.Object ref = nickname_;
           if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
             java.lang.String s = bs.toStringUtf8();
-            pAFEKEPGHAK_ = s;
+            nickname_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>string PAFEKEPGHAK = 2;</code>
-         * @return The bytes for pAFEKEPGHAK.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>string nickname = 9;</code>
+         * @return The bytes for nickname.
          */
         public com.google.protobuf.ByteString
-            getPAFEKEPGHAKBytes() {
-          java.lang.Object ref = pAFEKEPGHAK_;
+            getNicknameBytes() {
+          java.lang.Object ref = nickname_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
-            pAFEKEPGHAK_ = b;
+            nickname_ = b;
             return b;
           } else {
             return (com.google.protobuf.ByteString) ref;
           }
         }
         /**
-         * <code>string PAFEKEPGHAK = 2;</code>
-         * @param value The pAFEKEPGHAK to set.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>string nickname = 9;</code>
+         * @param value The nickname to set.
          * @return This builder for chaining.
          */
-        public Builder setPAFEKEPGHAK(
+        public Builder setNickname(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
   
-          pAFEKEPGHAK_ = value;
+          nickname_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>string PAFEKEPGHAK = 2;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>string nickname = 9;</code>
          * @return This builder for chaining.
          */
-        public Builder clearPAFEKEPGHAK() {
+        public Builder clearNickname() {
           
-          pAFEKEPGHAK_ = getDefaultInstance().getPAFEKEPGHAK();
+          nickname_ = getDefaultInstance().getNickname();
           onChanged();
           return this;
         }
         /**
-         * <code>string PAFEKEPGHAK = 2;</code>
-         * @param value The bytes for pAFEKEPGHAK to set.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>string nickname = 9;</code>
+         * @param value The bytes for nickname to set.
          * @return This builder for chaining.
          */
-        public Builder setPAFEKEPGHAKBytes(
+        public Builder setNicknameBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
           
-          pAFEKEPGHAK_ = value;
+          nickname_ = value;
           onChanged();
           return this;
         }
@@ -2268,9 +2598,9 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_ =
           java.util.Collections.emptyList();
         private void ensureCardListIsMutable() {
-          if (!((bitField0_ & 0x00000002) != 0)) {
+          if (!((bitField0_ & 0x00000001) != 0)) {
             cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>(cardList_);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
            }
         }
 
@@ -2278,7 +2608,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> cardListBuilder_;
 
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
           if (cardListBuilder_ == null) {
@@ -2288,7 +2622,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public int getCardListCount() {
           if (cardListBuilder_ == null) {
@@ -2298,7 +2636,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
           if (cardListBuilder_ == null) {
@@ -2308,7 +2650,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder setCardList(
             int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -2325,7 +2671,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder setCardList(
             int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -2339,7 +2689,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder addCardList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
           if (cardListBuilder_ == null) {
@@ -2355,7 +2709,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder addCardList(
             int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -2372,7 +2730,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder addCardList(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -2386,7 +2748,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder addCardList(
             int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -2400,7 +2766,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder addAllCardList(
             java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -2415,12 +2785,16 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder clearCardList() {
           if (cardListBuilder_ == null) {
             cardList_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             onChanged();
           } else {
             cardListBuilder_.clear();
@@ -2428,7 +2802,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public Builder removeCardList(int index) {
           if (cardListBuilder_ == null) {
@@ -2441,14 +2819,22 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getCardListBuilder(
             int index) {
           return getCardListFieldBuilder().getBuilder(index);
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
             int index) {
@@ -2458,7 +2844,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
              getCardListOrBuilderList() {
@@ -2469,14 +2859,22 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder() {
           return getCardListFieldBuilder().addBuilder(
               emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder(
             int index) {
@@ -2484,7 +2882,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
               index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
         }
         /**
-         * <code>repeated .ExhibitionDisplayInfo card_list = 5;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>repeated .ExhibitionDisplayInfo card_list = 11;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
              getCardListBuilderList() {
@@ -2497,7 +2899,7 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
             cardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                 emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder>(
                     cardList_,
-                    ((bitField0_ & 0x00000002) != 0),
+                    ((bitField0_ & 0x00000001) != 0),
                     getParentForChildren(),
                     isClean());
             cardList_ = null;
@@ -2509,14 +2911,22 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         private com.google.protobuf.SingleFieldBuilderV3<
             emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          * @return Whether the profilePicture field is set.
          */
         public boolean hasProfilePicture() {
           return profilePictureBuilder_ != null || profilePicture_ != null;
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          * @return The profilePicture.
          */
         public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -2527,7 +2937,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
           if (profilePictureBuilder_ == null) {
@@ -2543,7 +2957,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public Builder setProfilePicture(
             emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -2557,7 +2975,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
           if (profilePictureBuilder_ == null) {
@@ -2575,7 +2997,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public Builder clearProfilePicture() {
           if (profilePictureBuilder_ == null) {
@@ -2589,7 +3015,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
           
@@ -2597,7 +3027,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return getProfilePictureFieldBuilder().getBuilder();
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
           if (profilePictureBuilder_ != null) {
@@ -2608,7 +3042,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>.ProfilePicture profile_picture = 11;</code>
+         * <pre>
+         * offset: 48
+         * </pre>
+         *
+         * <code>.ProfilePicture profile_picture = 2;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -2624,85 +3062,216 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return profilePictureBuilder_;
         }
 
-        private java.lang.Object nickname_ = "";
+        private com.google.protobuf.Internal.IntList dEDPLHELFGB_ = emptyIntList();
+        private void ensureDEDPLHELFGBIsMutable() {
+          if (!((bitField0_ & 0x00000002) != 0)) {
+            dEDPLHELFGB_ = mutableCopy(dEDPLHELFGB_);
+            bitField0_ |= 0x00000002;
+           }
+        }
         /**
-         * <code>string nickname = 3;</code>
-         * @return The nickname.
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @return A list containing the dEDPLHELFGB.
          */
-        public java.lang.String getNickname() {
-          java.lang.Object ref = nickname_;
+        public java.util.List<java.lang.Integer>
+            getDEDPLHELFGBList() {
+          return ((bitField0_ & 0x00000002) != 0) ?
+                   java.util.Collections.unmodifiableList(dEDPLHELFGB_) : dEDPLHELFGB_;
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @return The count of dEDPLHELFGB.
+         */
+        public int getDEDPLHELFGBCount() {
+          return dEDPLHELFGB_.size();
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @param index The index of the element to return.
+         * @return The dEDPLHELFGB at the given index.
+         */
+        public int getDEDPLHELFGB(int index) {
+          return dEDPLHELFGB_.getInt(index);
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @param index The index to set the value at.
+         * @param value The dEDPLHELFGB to set.
+         * @return This builder for chaining.
+         */
+        public Builder setDEDPLHELFGB(
+            int index, int value) {
+          ensureDEDPLHELFGBIsMutable();
+          dEDPLHELFGB_.setInt(index, value);
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @param value The dEDPLHELFGB to add.
+         * @return This builder for chaining.
+         */
+        public Builder addDEDPLHELFGB(int value) {
+          ensureDEDPLHELFGBIsMutable();
+          dEDPLHELFGB_.addInt(value);
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @param values The dEDPLHELFGB to add.
+         * @return This builder for chaining.
+         */
+        public Builder addAllDEDPLHELFGB(
+            java.lang.Iterable<? extends java.lang.Integer> values) {
+          ensureDEDPLHELFGBIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, dEDPLHELFGB_);
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * offset: 56
+         * </pre>
+         *
+         * <code>repeated uint32 DEDPLHELFGB = 6;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearDEDPLHELFGB() {
+          dEDPLHELFGB_ = emptyIntList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+          return this;
+        }
+
+        private java.lang.Object pJMKDOCDKLH_ = "";
+        /**
+         * <pre>
+         * offset: 64
+         * </pre>
+         *
+         * <code>string PJMKDOCDKLH = 28;</code>
+         * @return The pJMKDOCDKLH.
+         */
+        public java.lang.String getPJMKDOCDKLH() {
+          java.lang.Object ref = pJMKDOCDKLH_;
           if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
             java.lang.String s = bs.toStringUtf8();
-            nickname_ = s;
+            pJMKDOCDKLH_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>string nickname = 3;</code>
-         * @return The bytes for nickname.
+         * <pre>
+         * offset: 64
+         * </pre>
+         *
+         * <code>string PJMKDOCDKLH = 28;</code>
+         * @return The bytes for pJMKDOCDKLH.
          */
         public com.google.protobuf.ByteString
-            getNicknameBytes() {
-          java.lang.Object ref = nickname_;
+            getPJMKDOCDKLHBytes() {
+          java.lang.Object ref = pJMKDOCDKLH_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
-            nickname_ = b;
+            pJMKDOCDKLH_ = b;
             return b;
           } else {
             return (com.google.protobuf.ByteString) ref;
           }
         }
         /**
-         * <code>string nickname = 3;</code>
-         * @param value The nickname to set.
+         * <pre>
+         * offset: 64
+         * </pre>
+         *
+         * <code>string PJMKDOCDKLH = 28;</code>
+         * @param value The pJMKDOCDKLH to set.
          * @return This builder for chaining.
          */
-        public Builder setNickname(
+        public Builder setPJMKDOCDKLH(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
   
-          nickname_ = value;
+          pJMKDOCDKLH_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>string nickname = 3;</code>
+         * <pre>
+         * offset: 64
+         * </pre>
+         *
+         * <code>string PJMKDOCDKLH = 28;</code>
          * @return This builder for chaining.
          */
-        public Builder clearNickname() {
+        public Builder clearPJMKDOCDKLH() {
           
-          nickname_ = getDefaultInstance().getNickname();
+          pJMKDOCDKLH_ = getDefaultInstance().getPJMKDOCDKLH();
           onChanged();
           return this;
         }
         /**
-         * <code>string nickname = 3;</code>
-         * @param value The bytes for nickname to set.
+         * <pre>
+         * offset: 64
+         * </pre>
+         *
+         * <code>string PJMKDOCDKLH = 28;</code>
+         * @param value The bytes for pJMKDOCDKLH to set.
          * @return This builder for chaining.
          */
-        public Builder setNicknameBytes(
+        public Builder setPJMKDOCDKLHBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
           
-          nickname_ = value;
+          pJMKDOCDKLH_ = value;
           onChanged();
           return this;
         }
 
         private java.lang.Object onlineId_ = "";
         /**
-         * <code>string online_id = 14;</code>
+         * <pre>
+         * offset: 72
+         * </pre>
+         *
+         * <code>string online_id = 12;</code>
          * @return The onlineId.
          */
         public java.lang.String getOnlineId() {
@@ -2718,7 +3287,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>string online_id = 14;</code>
+         * <pre>
+         * offset: 72
+         * </pre>
+         *
+         * <code>string online_id = 12;</code>
          * @return The bytes for onlineId.
          */
         public com.google.protobuf.ByteString
@@ -2735,7 +3308,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           }
         }
         /**
-         * <code>string online_id = 14;</code>
+         * <pre>
+         * offset: 72
+         * </pre>
+         *
+         * <code>string online_id = 12;</code>
          * @param value The onlineId to set.
          * @return This builder for chaining.
          */
@@ -2750,7 +3327,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>string online_id = 14;</code>
+         * <pre>
+         * offset: 72
+         * </pre>
+         *
+         * <code>string online_id = 12;</code>
          * @return This builder for chaining.
          */
         public Builder clearOnlineId() {
@@ -2760,7 +3341,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>string online_id = 14;</code>
+         * <pre>
+         * offset: 72
+         * </pre>
+         *
+         * <code>string online_id = 12;</code>
          * @param value The bytes for onlineId to set.
          * @return This builder for chaining.
          */
@@ -2778,7 +3363,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
 
         private int uid_ ;
         /**
-         * <code>uint32 uid = 10;</code>
+         * <pre>
+         * offset: 80
+         * </pre>
+         *
+         * <code>uint32 uid = 13;</code>
          * @return The uid.
          */
         @java.lang.Override
@@ -2786,7 +3375,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return uid_;
         }
         /**
-         * <code>uint32 uid = 10;</code>
+         * <pre>
+         * offset: 80
+         * </pre>
+         *
+         * <code>uint32 uid = 13;</code>
          * @param value The uid to set.
          * @return This builder for chaining.
          */
@@ -2797,7 +3390,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>uint32 uid = 10;</code>
+         * <pre>
+         * offset: 80
+         * </pre>
+         *
+         * <code>uint32 uid = 13;</code>
          * @return This builder for chaining.
          */
         public Builder clearUid() {
@@ -2807,40 +3404,13 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
 
-        private int addScore_ ;
-        /**
-         * <code>uint32 add_score = 7;</code>
-         * @return The addScore.
-         */
-        @java.lang.Override
-        public int getAddScore() {
-          return addScore_;
-        }
-        /**
-         * <code>uint32 add_score = 7;</code>
-         * @param value The addScore to set.
-         * @return This builder for chaining.
-         */
-        public Builder setAddScore(int value) {
-          
-          addScore_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>uint32 add_score = 7;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearAddScore() {
-          
-          addScore_ = 0;
-          onChanged();
-          return this;
-        }
-
         private int score_ ;
         /**
-         * <code>uint32 score = 4;</code>
+         * <pre>
+         * offset: 84
+         * </pre>
+         *
+         * <code>uint32 score = 19;</code>
          * @return The score.
          */
         @java.lang.Override
@@ -2848,7 +3418,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return score_;
         }
         /**
-         * <code>uint32 score = 4;</code>
+         * <pre>
+         * offset: 84
+         * </pre>
+         *
+         * <code>uint32 score = 19;</code>
          * @param value The score to set.
          * @return This builder for chaining.
          */
@@ -2859,12 +3433,59 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
           return this;
         }
         /**
-         * <code>uint32 score = 4;</code>
+         * <pre>
+         * offset: 84
+         * </pre>
+         *
+         * <code>uint32 score = 19;</code>
          * @return This builder for chaining.
          */
         public Builder clearScore() {
           
           score_ = 0;
+          onChanged();
+          return this;
+        }
+
+        private int addScore_ ;
+        /**
+         * <pre>
+         * offset: 88
+         * </pre>
+         *
+         * <code>uint32 add_score = 29;</code>
+         * @return The addScore.
+         */
+        @java.lang.Override
+        public int getAddScore() {
+          return addScore_;
+        }
+        /**
+         * <pre>
+         * offset: 88
+         * </pre>
+         *
+         * <code>uint32 add_score = 29;</code>
+         * @param value The addScore to set.
+         * @return This builder for chaining.
+         */
+        public Builder setAddScore(int value) {
+          
+          addScore_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * offset: 88
+         * </pre>
+         *
+         * <code>uint32 add_score = 29;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearAddScore() {
+          
+          addScore_ = 0;
           onChanged();
           return this;
         }
@@ -2881,154 +3502,261 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)
+        // @@protoc_insertion_point(builder_scope:CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)
       }
 
-      // @@protoc_insertion_point(class_scope:CooperateChallengeDungeonSettleInfo.OGBOLECEGGA)
-      private static final emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC)
+      private static final emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA();
+        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC();
       }
 
-      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getDefaultInstance() {
+      public static emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      private static final com.google.protobuf.Parser<OGBOLECEGGA>
-          PARSER = new com.google.protobuf.AbstractParser<OGBOLECEGGA>() {
+      private static final com.google.protobuf.Parser<OIFDPOMFGOC>
+          PARSER = new com.google.protobuf.AbstractParser<OIFDPOMFGOC>() {
         @java.lang.Override
-        public OGBOLECEGGA parsePartialFrom(
+        public OIFDPOMFGOC parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new OGBOLECEGGA(input, extensionRegistry);
+          return new OIFDPOMFGOC(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<OGBOLECEGGA> parser() {
+      public static com.google.protobuf.Parser<OIFDPOMFGOC> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<OGBOLECEGGA> getParserForType() {
+      public com.google.protobuf.Parser<OIFDPOMFGOC> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getDefaultInstanceForType() {
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
-    public static final int PNBFGEGIGFL_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> pNBFGEGIGFL_;
+    public static final int AIJCBKAMJHN_FIELD_NUMBER = 16;
+    private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> aIJCBKAMJHN_;
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> getPNBFGEGIGFLList() {
-      return pNBFGEGIGFL_;
+    public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> getAIJCBKAMJHNList() {
+      return aIJCBKAMJHN_;
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder> 
-        getPNBFGEGIGFLOrBuilderList() {
-      return pNBFGEGIGFL_;
+    public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder> 
+        getAIJCBKAMJHNOrBuilderList() {
+      return aIJCBKAMJHN_;
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
     @java.lang.Override
-    public int getPNBFGEGIGFLCount() {
-      return pNBFGEGIGFL_.size();
+    public int getAIJCBKAMJHNCount() {
+      return aIJCBKAMJHN_.size();
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getPNBFGEGIGFL(int index) {
-      return pNBFGEGIGFL_.get(index);
+    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getAIJCBKAMJHN(int index) {
+      return aIJCBKAMJHN_.get(index);
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder getPNBFGEGIGFLOrBuilder(
+    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder getAIJCBKAMJHNOrBuilder(
         int index) {
-      return pNBFGEGIGFL_.get(index);
+      return aIJCBKAMJHN_.get(index);
     }
 
-    public static final int HMGFMIGMCIO_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> hMGFMIGMCIO_;
+    public static final int OOJJIMODFOH_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList oOJJIMODFOH_;
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @return A list containing the oOJJIMODFOH.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> getHMGFMIGMCIOList() {
-      return hMGFMIGMCIO_;
+    public java.util.List<java.lang.Integer>
+        getOOJJIMODFOHList() {
+      return oOJJIMODFOH_;
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @return The count of oOJJIMODFOH.
      */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder> 
-        getHMGFMIGMCIOOrBuilderList() {
-      return hMGFMIGMCIO_;
+    public int getOOJJIMODFOHCount() {
+      return oOJJIMODFOH_.size();
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+     * @param index The index of the element to return.
+     * @return The oOJJIMODFOH at the given index.
+     */
+    public int getOOJJIMODFOH(int index) {
+      return oOJJIMODFOH_.getInt(index);
+    }
+    private int oOJJIMODFOHMemoizedSerializedSize = -1;
+
+    public static final int MKNAKDLAEKB_FIELD_NUMBER = 29;
+    private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> mKNAKDLAEKB_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
      */
     @java.lang.Override
-    public int getHMGFMIGMCIOCount() {
-      return hMGFMIGMCIO_.size();
+    public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> getMKNAKDLAEKBList() {
+      return mKNAKDLAEKB_;
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getHMGFMIGMCIO(int index) {
-      return hMGFMIGMCIO_.get(index);
+    public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder> 
+        getMKNAKDLAEKBOrBuilderList() {
+      return mKNAKDLAEKB_;
     }
     /**
-     * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder getHMGFMIGMCIOOrBuilder(
+    public int getMKNAKDLAEKBCount() {
+      return mKNAKDLAEKB_.size();
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getMKNAKDLAEKB(int index) {
+      return mKNAKDLAEKB_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder getMKNAKDLAEKBOrBuilder(
         int index) {
-      return hMGFMIGMCIO_.get(index);
+      return mKNAKDLAEKB_.get(index);
     }
 
-    public static final int JKMMIMCEFOM_FIELD_NUMBER = 12;
-    private int jKMMIMCEFOM_;
+    public static final int NJHKMLCHHKA_FIELD_NUMBER = 22;
+    private int nJHKMLCHHKA_;
     /**
-     * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-     * @return The enum numeric value on the wire for jKMMIMCEFOM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+     * @return The enum numeric value on the wire for nJHKMLCHHKA.
      */
-    @java.lang.Override public int getJKMMIMCEFOMValue() {
-      return jKMMIMCEFOM_;
+    @java.lang.Override public int getNJHKMLCHHKAValue() {
+      return nJHKMLCHHKA_;
     }
     /**
-     * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-     * @return The jKMMIMCEFOM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+     * @return The nJHKMLCHHKA.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason getJKMMIMCEFOM() {
+    @java.lang.Override public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason getNJHKMLCHHKA() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason result = emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.valueOf(jKMMIMCEFOM_);
-      return result == null ? emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason result = emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.valueOf(nJHKMLCHHKA_);
+      return result == null ? emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.UNRECOGNIZED : result;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 10;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 23;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 10;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 23;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
     public int getDifficultyId() {
       return difficultyId_;
+    }
+
+    public static final int HNDONKFNNED_FIELD_NUMBER = 17;
+    private int hNDONKFNNED_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 HNDONKFNNED = 17;</code>
+     * @return The hNDONKFNNED.
+     */
+    @java.lang.Override
+    public int getHNDONKFNNED() {
+      return hNDONKFNNED_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3045,17 +3773,28 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < hMGFMIGMCIO_.size(); i++) {
-        output.writeMessage(5, hMGFMIGMCIO_.get(i));
+      getSerializedSize();
+      if (getOOJJIMODFOHList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(oOJJIMODFOHMemoizedSerializedSize);
+      }
+      for (int i = 0; i < oOJJIMODFOH_.size(); i++) {
+        output.writeUInt32NoTag(oOJJIMODFOH_.getInt(i));
+      }
+      for (int i = 0; i < aIJCBKAMJHN_.size(); i++) {
+        output.writeMessage(16, aIJCBKAMJHN_.get(i));
+      }
+      if (hNDONKFNNED_ != 0) {
+        output.writeUInt32(17, hNDONKFNNED_);
+      }
+      if (nJHKMLCHHKA_ != emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.GACNGJICPHP_SETTLE_REASON_NONE.getNumber()) {
+        output.writeEnum(22, nJHKMLCHHKA_);
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(10, difficultyId_);
+        output.writeUInt32(23, difficultyId_);
       }
-      if (jKMMIMCEFOM_ != emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.COOPERATE_CHALLENGE_SETTLE_REASON_NONE.getNumber()) {
-        output.writeEnum(12, jKMMIMCEFOM_);
-      }
-      for (int i = 0; i < pNBFGEGIGFL_.size(); i++) {
-        output.writeMessage(13, pNBFGEGIGFL_.get(i));
+      for (int i = 0; i < mKNAKDLAEKB_.size(); i++) {
+        output.writeMessage(29, mKNAKDLAEKB_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -3066,21 +3805,39 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < hMGFMIGMCIO_.size(); i++) {
+      {
+        int dataSize = 0;
+        for (int i = 0; i < oOJJIMODFOH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(oOJJIMODFOH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getOOJJIMODFOHList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        oOJJIMODFOHMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < aIJCBKAMJHN_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, hMGFMIGMCIO_.get(i));
+          .computeMessageSize(16, aIJCBKAMJHN_.get(i));
+      }
+      if (hNDONKFNNED_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(17, hNDONKFNNED_);
+      }
+      if (nJHKMLCHHKA_ != emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.GACNGJICPHP_SETTLE_REASON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(22, nJHKMLCHHKA_);
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, difficultyId_);
+          .computeUInt32Size(23, difficultyId_);
       }
-      if (jKMMIMCEFOM_ != emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.COOPERATE_CHALLENGE_SETTLE_REASON_NONE.getNumber()) {
+      for (int i = 0; i < mKNAKDLAEKB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, jKMMIMCEFOM_);
-      }
-      for (int i = 0; i < pNBFGEGIGFL_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, pNBFGEGIGFL_.get(i));
+          .computeMessageSize(29, mKNAKDLAEKB_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3097,13 +3854,17 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo other = (emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo) obj;
 
-      if (!getPNBFGEGIGFLList()
-          .equals(other.getPNBFGEGIGFLList())) return false;
-      if (!getHMGFMIGMCIOList()
-          .equals(other.getHMGFMIGMCIOList())) return false;
-      if (jKMMIMCEFOM_ != other.jKMMIMCEFOM_) return false;
+      if (!getAIJCBKAMJHNList()
+          .equals(other.getAIJCBKAMJHNList())) return false;
+      if (!getOOJJIMODFOHList()
+          .equals(other.getOOJJIMODFOHList())) return false;
+      if (!getMKNAKDLAEKBList()
+          .equals(other.getMKNAKDLAEKBList())) return false;
+      if (nJHKMLCHHKA_ != other.nJHKMLCHHKA_) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
+      if (getHNDONKFNNED()
+          != other.getHNDONKFNNED()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -3115,18 +3876,24 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPNBFGEGIGFLCount() > 0) {
-        hash = (37 * hash) + PNBFGEGIGFL_FIELD_NUMBER;
-        hash = (53 * hash) + getPNBFGEGIGFLList().hashCode();
+      if (getAIJCBKAMJHNCount() > 0) {
+        hash = (37 * hash) + AIJCBKAMJHN_FIELD_NUMBER;
+        hash = (53 * hash) + getAIJCBKAMJHNList().hashCode();
       }
-      if (getHMGFMIGMCIOCount() > 0) {
-        hash = (37 * hash) + HMGFMIGMCIO_FIELD_NUMBER;
-        hash = (53 * hash) + getHMGFMIGMCIOList().hashCode();
+      if (getOOJJIMODFOHCount() > 0) {
+        hash = (37 * hash) + OOJJIMODFOH_FIELD_NUMBER;
+        hash = (53 * hash) + getOOJJIMODFOHList().hashCode();
       }
-      hash = (37 * hash) + JKMMIMCEFOM_FIELD_NUMBER;
-      hash = (53 * hash) + jKMMIMCEFOM_;
+      if (getMKNAKDLAEKBCount() > 0) {
+        hash = (37 * hash) + MKNAKDLAEKB_FIELD_NUMBER;
+        hash = (53 * hash) + getMKNAKDLAEKBList().hashCode();
+      }
+      hash = (37 * hash) + NJHKMLCHHKA_FIELD_NUMBER;
+      hash = (53 * hash) + nJHKMLCHHKA_;
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + HNDONKFNNED_FIELD_NUMBER;
+      hash = (53 * hash) + getHNDONKFNNED();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3255,28 +4022,32 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getPNBFGEGIGFLFieldBuilder();
-          getHMGFMIGMCIOFieldBuilder();
+          getAIJCBKAMJHNFieldBuilder();
+          getMKNAKDLAEKBFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (pNBFGEGIGFLBuilder_ == null) {
-          pNBFGEGIGFL_ = java.util.Collections.emptyList();
+        if (aIJCBKAMJHNBuilder_ == null) {
+          aIJCBKAMJHN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          pNBFGEGIGFLBuilder_.clear();
+          aIJCBKAMJHNBuilder_.clear();
         }
-        if (hMGFMIGMCIOBuilder_ == null) {
-          hMGFMIGMCIO_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+        oOJJIMODFOH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (mKNAKDLAEKBBuilder_ == null) {
+          mKNAKDLAEKB_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          hMGFMIGMCIOBuilder_.clear();
+          mKNAKDLAEKBBuilder_.clear();
         }
-        jKMMIMCEFOM_ = 0;
+        nJHKMLCHHKA_ = 0;
 
         difficultyId_ = 0;
+
+        hNDONKFNNED_ = 0;
 
         return this;
       }
@@ -3305,26 +4076,32 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo result = new emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        if (pNBFGEGIGFLBuilder_ == null) {
+        if (aIJCBKAMJHNBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            pNBFGEGIGFL_ = java.util.Collections.unmodifiableList(pNBFGEGIGFL_);
+            aIJCBKAMJHN_ = java.util.Collections.unmodifiableList(aIJCBKAMJHN_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.pNBFGEGIGFL_ = pNBFGEGIGFL_;
+          result.aIJCBKAMJHN_ = aIJCBKAMJHN_;
         } else {
-          result.pNBFGEGIGFL_ = pNBFGEGIGFLBuilder_.build();
+          result.aIJCBKAMJHN_ = aIJCBKAMJHNBuilder_.build();
         }
-        if (hMGFMIGMCIOBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            hMGFMIGMCIO_ = java.util.Collections.unmodifiableList(hMGFMIGMCIO_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+        if (((bitField0_ & 0x00000002) != 0)) {
+          oOJJIMODFOH_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.oOJJIMODFOH_ = oOJJIMODFOH_;
+        if (mKNAKDLAEKBBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            mKNAKDLAEKB_ = java.util.Collections.unmodifiableList(mKNAKDLAEKB_);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.hMGFMIGMCIO_ = hMGFMIGMCIO_;
+          result.mKNAKDLAEKB_ = mKNAKDLAEKB_;
         } else {
-          result.hMGFMIGMCIO_ = hMGFMIGMCIOBuilder_.build();
+          result.mKNAKDLAEKB_ = mKNAKDLAEKBBuilder_.build();
         }
-        result.jKMMIMCEFOM_ = jKMMIMCEFOM_;
+        result.nJHKMLCHHKA_ = nJHKMLCHHKA_;
         result.difficultyId_ = difficultyId_;
+        result.hNDONKFNNED_ = hNDONKFNNED_;
         onBuilt();
         return result;
       }
@@ -3373,63 +4150,76 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.getDefaultInstance()) return this;
-        if (pNBFGEGIGFLBuilder_ == null) {
-          if (!other.pNBFGEGIGFL_.isEmpty()) {
-            if (pNBFGEGIGFL_.isEmpty()) {
-              pNBFGEGIGFL_ = other.pNBFGEGIGFL_;
+        if (aIJCBKAMJHNBuilder_ == null) {
+          if (!other.aIJCBKAMJHN_.isEmpty()) {
+            if (aIJCBKAMJHN_.isEmpty()) {
+              aIJCBKAMJHN_ = other.aIJCBKAMJHN_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensurePNBFGEGIGFLIsMutable();
-              pNBFGEGIGFL_.addAll(other.pNBFGEGIGFL_);
+              ensureAIJCBKAMJHNIsMutable();
+              aIJCBKAMJHN_.addAll(other.aIJCBKAMJHN_);
             }
             onChanged();
           }
         } else {
-          if (!other.pNBFGEGIGFL_.isEmpty()) {
-            if (pNBFGEGIGFLBuilder_.isEmpty()) {
-              pNBFGEGIGFLBuilder_.dispose();
-              pNBFGEGIGFLBuilder_ = null;
-              pNBFGEGIGFL_ = other.pNBFGEGIGFL_;
+          if (!other.aIJCBKAMJHN_.isEmpty()) {
+            if (aIJCBKAMJHNBuilder_.isEmpty()) {
+              aIJCBKAMJHNBuilder_.dispose();
+              aIJCBKAMJHNBuilder_ = null;
+              aIJCBKAMJHN_ = other.aIJCBKAMJHN_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              pNBFGEGIGFLBuilder_ = 
+              aIJCBKAMJHNBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPNBFGEGIGFLFieldBuilder() : null;
+                   getAIJCBKAMJHNFieldBuilder() : null;
             } else {
-              pNBFGEGIGFLBuilder_.addAllMessages(other.pNBFGEGIGFL_);
+              aIJCBKAMJHNBuilder_.addAllMessages(other.aIJCBKAMJHN_);
             }
           }
         }
-        if (hMGFMIGMCIOBuilder_ == null) {
-          if (!other.hMGFMIGMCIO_.isEmpty()) {
-            if (hMGFMIGMCIO_.isEmpty()) {
-              hMGFMIGMCIO_ = other.hMGFMIGMCIO_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+        if (!other.oOJJIMODFOH_.isEmpty()) {
+          if (oOJJIMODFOH_.isEmpty()) {
+            oOJJIMODFOH_ = other.oOJJIMODFOH_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureOOJJIMODFOHIsMutable();
+            oOJJIMODFOH_.addAll(other.oOJJIMODFOH_);
+          }
+          onChanged();
+        }
+        if (mKNAKDLAEKBBuilder_ == null) {
+          if (!other.mKNAKDLAEKB_.isEmpty()) {
+            if (mKNAKDLAEKB_.isEmpty()) {
+              mKNAKDLAEKB_ = other.mKNAKDLAEKB_;
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureHMGFMIGMCIOIsMutable();
-              hMGFMIGMCIO_.addAll(other.hMGFMIGMCIO_);
+              ensureMKNAKDLAEKBIsMutable();
+              mKNAKDLAEKB_.addAll(other.mKNAKDLAEKB_);
             }
             onChanged();
           }
         } else {
-          if (!other.hMGFMIGMCIO_.isEmpty()) {
-            if (hMGFMIGMCIOBuilder_.isEmpty()) {
-              hMGFMIGMCIOBuilder_.dispose();
-              hMGFMIGMCIOBuilder_ = null;
-              hMGFMIGMCIO_ = other.hMGFMIGMCIO_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              hMGFMIGMCIOBuilder_ = 
+          if (!other.mKNAKDLAEKB_.isEmpty()) {
+            if (mKNAKDLAEKBBuilder_.isEmpty()) {
+              mKNAKDLAEKBBuilder_.dispose();
+              mKNAKDLAEKBBuilder_ = null;
+              mKNAKDLAEKB_ = other.mKNAKDLAEKB_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              mKNAKDLAEKBBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getHMGFMIGMCIOFieldBuilder() : null;
+                   getMKNAKDLAEKBFieldBuilder() : null;
             } else {
-              hMGFMIGMCIOBuilder_.addAllMessages(other.hMGFMIGMCIO_);
+              mKNAKDLAEKBBuilder_.addAllMessages(other.mKNAKDLAEKB_);
             }
           }
         }
-        if (other.jKMMIMCEFOM_ != 0) {
-          setJKMMIMCEFOMValue(other.getJKMMIMCEFOMValue());
+        if (other.nJHKMLCHHKA_ != 0) {
+          setNJHKMLCHHKAValue(other.getNJHKMLCHHKAValue());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
+        }
+        if (other.getHNDONKFNNED() != 0) {
+          setHNDONKFNNED(other.getHNDONKFNNED());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3461,543 +4251,818 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> pNBFGEGIGFL_ =
+      private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> aIJCBKAMJHN_ =
         java.util.Collections.emptyList();
-      private void ensurePNBFGEGIGFLIsMutable() {
+      private void ensureAIJCBKAMJHNIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          pNBFGEGIGFL_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA>(pNBFGEGIGFL_);
+          aIJCBKAMJHN_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC>(aIJCBKAMJHN_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder> pNBFGEGIGFLBuilder_;
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder> aIJCBKAMJHNBuilder_;
 
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> getPNBFGEGIGFLList() {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(pNBFGEGIGFL_);
+      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> getAIJCBKAMJHNList() {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(aIJCBKAMJHN_);
         } else {
-          return pNBFGEGIGFLBuilder_.getMessageList();
+          return aIJCBKAMJHNBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public int getPNBFGEGIGFLCount() {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          return pNBFGEGIGFL_.size();
+      public int getAIJCBKAMJHNCount() {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          return aIJCBKAMJHN_.size();
         } else {
-          return pNBFGEGIGFLBuilder_.getCount();
+          return aIJCBKAMJHNBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA getPNBFGEGIGFL(int index) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          return pNBFGEGIGFL_.get(index);
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC getAIJCBKAMJHN(int index) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          return aIJCBKAMJHN_.get(index);
         } else {
-          return pNBFGEGIGFLBuilder_.getMessage(index);
+          return aIJCBKAMJHNBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder setPNBFGEGIGFL(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA value) {
-        if (pNBFGEGIGFLBuilder_ == null) {
+      public Builder setAIJCBKAMJHN(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC value) {
+        if (aIJCBKAMJHNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.set(index, value);
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.set(index, value);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.setMessage(index, value);
+          aIJCBKAMJHNBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder setPNBFGEGIGFL(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder builderForValue) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.set(index, builderForValue.build());
+      public Builder setAIJCBKAMJHN(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder builderForValue) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.set(index, builderForValue.build());
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.setMessage(index, builderForValue.build());
+          aIJCBKAMJHNBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder addPNBFGEGIGFL(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA value) {
-        if (pNBFGEGIGFLBuilder_ == null) {
+      public Builder addAIJCBKAMJHN(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC value) {
+        if (aIJCBKAMJHNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.add(value);
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.add(value);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.addMessage(value);
+          aIJCBKAMJHNBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder addPNBFGEGIGFL(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA value) {
-        if (pNBFGEGIGFLBuilder_ == null) {
+      public Builder addAIJCBKAMJHN(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC value) {
+        if (aIJCBKAMJHNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.add(index, value);
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.add(index, value);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.addMessage(index, value);
+          aIJCBKAMJHNBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder addPNBFGEGIGFL(
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder builderForValue) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.add(builderForValue.build());
+      public Builder addAIJCBKAMJHN(
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder builderForValue) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.add(builderForValue.build());
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.addMessage(builderForValue.build());
+          aIJCBKAMJHNBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder addPNBFGEGIGFL(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder builderForValue) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.add(index, builderForValue.build());
+      public Builder addAIJCBKAMJHN(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder builderForValue) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.add(index, builderForValue.build());
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.addMessage(index, builderForValue.build());
+          aIJCBKAMJHNBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder addAllPNBFGEGIGFL(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA> values) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          ensurePNBFGEGIGFLIsMutable();
+      public Builder addAllAIJCBKAMJHN(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC> values) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          ensureAIJCBKAMJHNIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, pNBFGEGIGFL_);
+              values, aIJCBKAMJHN_);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.addAllMessages(values);
+          aIJCBKAMJHNBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder clearPNBFGEGIGFL() {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          pNBFGEGIGFL_ = java.util.Collections.emptyList();
+      public Builder clearAIJCBKAMJHN() {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          aIJCBKAMJHN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.clear();
+          aIJCBKAMJHNBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public Builder removePNBFGEGIGFL(int index) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          ensurePNBFGEGIGFLIsMutable();
-          pNBFGEGIGFL_.remove(index);
+      public Builder removeAIJCBKAMJHN(int index) {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          ensureAIJCBKAMJHNIsMutable();
+          aIJCBKAMJHN_.remove(index);
           onChanged();
         } else {
-          pNBFGEGIGFLBuilder_.remove(index);
+          aIJCBKAMJHNBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder getPNBFGEGIGFLBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder getAIJCBKAMJHNBuilder(
           int index) {
-        return getPNBFGEGIGFLFieldBuilder().getBuilder(index);
+        return getAIJCBKAMJHNFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder getPNBFGEGIGFLOrBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder getAIJCBKAMJHNOrBuilder(
           int index) {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          return pNBFGEGIGFL_.get(index);  } else {
-          return pNBFGEGIGFLBuilder_.getMessageOrBuilder(index);
+        if (aIJCBKAMJHNBuilder_ == null) {
+          return aIJCBKAMJHN_.get(index);  } else {
+          return aIJCBKAMJHNBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder> 
-           getPNBFGEGIGFLOrBuilderList() {
-        if (pNBFGEGIGFLBuilder_ != null) {
-          return pNBFGEGIGFLBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder> 
+           getAIJCBKAMJHNOrBuilderList() {
+        if (aIJCBKAMJHNBuilder_ != null) {
+          return aIJCBKAMJHNBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(pNBFGEGIGFL_);
+          return java.util.Collections.unmodifiableList(aIJCBKAMJHN_);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder addPNBFGEGIGFLBuilder() {
-        return getPNBFGEGIGFLFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.getDefaultInstance());
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder addAIJCBKAMJHNBuilder() {
+        return getAIJCBKAMJHNFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.getDefaultInstance());
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder addPNBFGEGIGFLBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder addAIJCBKAMJHNBuilder(
           int index) {
-        return getPNBFGEGIGFLFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.getDefaultInstance());
+        return getAIJCBKAMJHNFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.getDefaultInstance());
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.OGBOLECEGGA PNBFGEGIGFL = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC AIJCBKAMJHN = 16;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder> 
-           getPNBFGEGIGFLBuilderList() {
-        return getPNBFGEGIGFLFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder> 
+           getAIJCBKAMJHNBuilderList() {
+        return getAIJCBKAMJHNFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder> 
-          getPNBFGEGIGFLFieldBuilder() {
-        if (pNBFGEGIGFLBuilder_ == null) {
-          pNBFGEGIGFLBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGA.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OGBOLECEGGAOrBuilder>(
-                  pNBFGEGIGFL_,
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder> 
+          getAIJCBKAMJHNFieldBuilder() {
+        if (aIJCBKAMJHNBuilder_ == null) {
+          aIJCBKAMJHNBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOC.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.OIFDPOMFGOCOrBuilder>(
+                  aIJCBKAMJHN_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          pNBFGEGIGFL_ = null;
+          aIJCBKAMJHN_ = null;
         }
-        return pNBFGEGIGFLBuilder_;
+        return aIJCBKAMJHNBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> hMGFMIGMCIO_ =
-        java.util.Collections.emptyList();
-      private void ensureHMGFMIGMCIOIsMutable() {
+      private com.google.protobuf.Internal.IntList oOJJIMODFOH_ = emptyIntList();
+      private void ensureOOJJIMODFOHIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          hMGFMIGMCIO_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD>(hMGFMIGMCIO_);
+          oOJJIMODFOH_ = mutableCopy(oOJJIMODFOH_);
           bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @return A list containing the oOJJIMODFOH.
+       */
+      public java.util.List<java.lang.Integer>
+          getOOJJIMODFOHList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(oOJJIMODFOH_) : oOJJIMODFOH_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @return The count of oOJJIMODFOH.
+       */
+      public int getOOJJIMODFOHCount() {
+        return oOJJIMODFOH_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @param index The index of the element to return.
+       * @return The oOJJIMODFOH at the given index.
+       */
+      public int getOOJJIMODFOH(int index) {
+        return oOJJIMODFOH_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @param index The index to set the value at.
+       * @param value The oOJJIMODFOH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOOJJIMODFOH(
+          int index, int value) {
+        ensureOOJJIMODFOHIsMutable();
+        oOJJIMODFOH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @param value The oOJJIMODFOH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addOOJJIMODFOH(int value) {
+        ensureOOJJIMODFOHIsMutable();
+        oOJJIMODFOH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @param values The oOJJIMODFOH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOOJJIMODFOH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureOOJJIMODFOHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, oOJJIMODFOH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 OOJJIMODFOH = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOOJJIMODFOH() {
+        oOJJIMODFOH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> mKNAKDLAEKB_ =
+        java.util.Collections.emptyList();
+      private void ensureMKNAKDLAEKBIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          mKNAKDLAEKB_ = new java.util.ArrayList<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL>(mKNAKDLAEKB_);
+          bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder> hMGFMIGMCIOBuilder_;
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder> mKNAKDLAEKBBuilder_;
 
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> getHMGFMIGMCIOList() {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(hMGFMIGMCIO_);
+      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> getMKNAKDLAEKBList() {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(mKNAKDLAEKB_);
         } else {
-          return hMGFMIGMCIOBuilder_.getMessageList();
+          return mKNAKDLAEKBBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public int getHMGFMIGMCIOCount() {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          return hMGFMIGMCIO_.size();
+      public int getMKNAKDLAEKBCount() {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          return mKNAKDLAEKB_.size();
         } else {
-          return hMGFMIGMCIOBuilder_.getCount();
+          return mKNAKDLAEKBBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD getHMGFMIGMCIO(int index) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          return hMGFMIGMCIO_.get(index);
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL getMKNAKDLAEKB(int index) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          return mKNAKDLAEKB_.get(index);
         } else {
-          return hMGFMIGMCIOBuilder_.getMessage(index);
+          return mKNAKDLAEKBBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder setHMGFMIGMCIO(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD value) {
-        if (hMGFMIGMCIOBuilder_ == null) {
+      public Builder setMKNAKDLAEKB(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL value) {
+        if (mKNAKDLAEKBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.set(index, value);
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.set(index, value);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.setMessage(index, value);
+          mKNAKDLAEKBBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder setHMGFMIGMCIO(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder builderForValue) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.set(index, builderForValue.build());
+      public Builder setMKNAKDLAEKB(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder builderForValue) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.set(index, builderForValue.build());
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.setMessage(index, builderForValue.build());
+          mKNAKDLAEKBBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder addHMGFMIGMCIO(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD value) {
-        if (hMGFMIGMCIOBuilder_ == null) {
+      public Builder addMKNAKDLAEKB(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL value) {
+        if (mKNAKDLAEKBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.add(value);
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.add(value);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.addMessage(value);
+          mKNAKDLAEKBBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder addHMGFMIGMCIO(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD value) {
-        if (hMGFMIGMCIOBuilder_ == null) {
+      public Builder addMKNAKDLAEKB(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL value) {
+        if (mKNAKDLAEKBBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.add(index, value);
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.add(index, value);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.addMessage(index, value);
+          mKNAKDLAEKBBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder addHMGFMIGMCIO(
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder builderForValue) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.add(builderForValue.build());
+      public Builder addMKNAKDLAEKB(
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder builderForValue) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.add(builderForValue.build());
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.addMessage(builderForValue.build());
+          mKNAKDLAEKBBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder addHMGFMIGMCIO(
-          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder builderForValue) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.add(index, builderForValue.build());
+      public Builder addMKNAKDLAEKB(
+          int index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder builderForValue) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.add(index, builderForValue.build());
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.addMessage(index, builderForValue.build());
+          mKNAKDLAEKBBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder addAllHMGFMIGMCIO(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD> values) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          ensureHMGFMIGMCIOIsMutable();
+      public Builder addAllMKNAKDLAEKB(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL> values) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          ensureMKNAKDLAEKBIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, hMGFMIGMCIO_);
+              values, mKNAKDLAEKB_);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.addAllMessages(values);
+          mKNAKDLAEKBBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder clearHMGFMIGMCIO() {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          hMGFMIGMCIO_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearMKNAKDLAEKB() {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          mKNAKDLAEKB_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.clear();
+          mKNAKDLAEKBBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public Builder removeHMGFMIGMCIO(int index) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          ensureHMGFMIGMCIOIsMutable();
-          hMGFMIGMCIO_.remove(index);
+      public Builder removeMKNAKDLAEKB(int index) {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          ensureMKNAKDLAEKBIsMutable();
+          mKNAKDLAEKB_.remove(index);
           onChanged();
         } else {
-          hMGFMIGMCIOBuilder_.remove(index);
+          mKNAKDLAEKBBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder getHMGFMIGMCIOBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder getMKNAKDLAEKBBuilder(
           int index) {
-        return getHMGFMIGMCIOFieldBuilder().getBuilder(index);
+        return getMKNAKDLAEKBFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder getHMGFMIGMCIOOrBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder getMKNAKDLAEKBOrBuilder(
           int index) {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          return hMGFMIGMCIO_.get(index);  } else {
-          return hMGFMIGMCIOBuilder_.getMessageOrBuilder(index);
+        if (mKNAKDLAEKBBuilder_ == null) {
+          return mKNAKDLAEKB_.get(index);  } else {
+          return mKNAKDLAEKBBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder> 
-           getHMGFMIGMCIOOrBuilderList() {
-        if (hMGFMIGMCIOBuilder_ != null) {
-          return hMGFMIGMCIOBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder> 
+           getMKNAKDLAEKBOrBuilderList() {
+        if (mKNAKDLAEKBBuilder_ != null) {
+          return mKNAKDLAEKBBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(hMGFMIGMCIO_);
+          return java.util.Collections.unmodifiableList(mKNAKDLAEKB_);
         }
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder addHMGFMIGMCIOBuilder() {
-        return getHMGFMIGMCIOFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.getDefaultInstance());
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder addMKNAKDLAEKBBuilder() {
+        return getMKNAKDLAEKBFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.getDefaultInstance());
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder addHMGFMIGMCIOBuilder(
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder addMKNAKDLAEKBBuilder(
           int index) {
-        return getHMGFMIGMCIOFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.getDefaultInstance());
+        return getMKNAKDLAEKBFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.getDefaultInstance());
       }
       /**
-       * <code>repeated .CooperateChallengeDungeonSettleInfo.EANBAAOLGCD HMGFMIGMCIO = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .CooperateChallengeDungeonSettleInfo.COKIDFAOOPL MKNAKDLAEKB = 29;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder> 
-           getHMGFMIGMCIOBuilderList() {
-        return getHMGFMIGMCIOFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder> 
+           getMKNAKDLAEKBBuilderList() {
+        return getMKNAKDLAEKBFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder> 
-          getHMGFMIGMCIOFieldBuilder() {
-        if (hMGFMIGMCIOBuilder_ == null) {
-          hMGFMIGMCIOBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCD.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.EANBAAOLGCDOrBuilder>(
-                  hMGFMIGMCIO_,
-                  ((bitField0_ & 0x00000002) != 0),
+          emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder> 
+          getMKNAKDLAEKBFieldBuilder() {
+        if (mKNAKDLAEKBBuilder_ == null) {
+          mKNAKDLAEKBBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPL.Builder, emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.COKIDFAOOPLOrBuilder>(
+                  mKNAKDLAEKB_,
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          hMGFMIGMCIO_ = null;
+          mKNAKDLAEKB_ = null;
         }
-        return hMGFMIGMCIOBuilder_;
+        return mKNAKDLAEKBBuilder_;
       }
 
-      private int jKMMIMCEFOM_ = 0;
+      private int nJHKMLCHHKA_ = 0;
       /**
-       * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-       * @return The enum numeric value on the wire for jKMMIMCEFOM.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+       * @return The enum numeric value on the wire for nJHKMLCHHKA.
        */
-      @java.lang.Override public int getJKMMIMCEFOMValue() {
-        return jKMMIMCEFOM_;
+      @java.lang.Override public int getNJHKMLCHHKAValue() {
+        return nJHKMLCHHKA_;
       }
       /**
-       * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-       * @param value The enum numeric value on the wire for jKMMIMCEFOM to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+       * @param value The enum numeric value on the wire for nJHKMLCHHKA to set.
        * @return This builder for chaining.
        */
-      public Builder setJKMMIMCEFOMValue(int value) {
+      public Builder setNJHKMLCHHKAValue(int value) {
         
-        jKMMIMCEFOM_ = value;
+        nJHKMLCHHKA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-       * @return The jKMMIMCEFOM.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+       * @return The nJHKMLCHHKA.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason getJKMMIMCEFOM() {
+      public emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason getNJHKMLCHHKA() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason result = emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.valueOf(jKMMIMCEFOM_);
-        return result == null ? emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason result = emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.valueOf(nJHKMLCHHKA_);
+        return result == null ? emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
-       * @param value The jKMMIMCEFOM to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
+       * @param value The nJHKMLCHHKA to set.
        * @return This builder for chaining.
        */
-      public Builder setJKMMIMCEFOM(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason value) {
+      public Builder setNJHKMLCHHKA(emu.grasscutter.net.proto.CooperateChallengeDungeonSettleInfoOuterClass.CooperateChallengeDungeonSettleInfo.SettleReason value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        jKMMIMCEFOM_ = value.getNumber();
+        nJHKMLCHHKA_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.CooperateChallengeDungeonSettleInfo.CooperateChallegeSettleReason JKMMIMCEFOM = 12;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.CooperateChallengeDungeonSettleInfo.SettleReason NJHKMLCHHKA = 22;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJKMMIMCEFOM() {
+      public Builder clearNJHKMLCHHKA() {
         
-        jKMMIMCEFOM_ = 0;
+        nJHKMLCHHKA_ = 0;
         onChanged();
         return this;
       }
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 10;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 23;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -4005,7 +5070,11 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 10;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 23;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -4016,12 +5085,59 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 10;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 23;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
         
         difficultyId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hNDONKFNNED_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 HNDONKFNNED = 17;</code>
+       * @return The hNDONKFNNED.
+       */
+      @java.lang.Override
+      public int getHNDONKFNNED() {
+        return hNDONKFNNED_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 HNDONKFNNED = 17;</code>
+       * @param value The hNDONKFNNED to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHNDONKFNNED(int value) {
+        
+        hNDONKFNNED_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 HNDONKFNNED = 17;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHNDONKFNNED() {
+        
+        hNDONKFNNED_ = 0;
         onChanged();
         return this;
       }
@@ -4084,15 +5200,15 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CooperateChallengeDungeonSettleInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor;
+    internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_fieldAccessorTable;
+      internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor;
+    internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_fieldAccessorTable;
+      internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -4103,55 +5219,62 @@ public final class CooperateChallengeDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)CooperateChallengeDungeonSettleInfo.pr" +
-      "oto\032\033ExhibitionDisplayInfo.proto\032\024Profil" +
-      "ePicture.proto\"\204\006\n#CooperateChallengeDun" +
-      "geonSettleInfo\022E\n\013PNBFGEGIGFL\030\r \003(\01320.Co" +
-      "operateChallengeDungeonSettleInfo.OGBOLE" +
-      "CEGGA\022E\n\013HMGFMIGMCIO\030\005 \003(\01320.CooperateCh" +
-      "allengeDungeonSettleInfo.EANBAAOLGCD\022W\n\013" +
-      "JKMMIMCEFOM\030\014 \001(\0162B.CooperateChallengeDu" +
-      "ngeonSettleInfo.CooperateChallegeSettleR" +
-      "eason\022\025\n\rdifficulty_id\030\n \001(\r\032I\n\013EANBAAOL" +
-      "GCD\022\020\n\010uid_list\030\007 \003(\r\022\023\n\013HLAIPEJCAGB\030\002 \001" +
-      "(\r\022\023\n\013MDIDMJDBINN\030\016 \001(\005\032\340\001\n\013OGBOLECEGGA\022" +
-      "\023\n\013EMAJLOGPGJP\030\006 \003(\r\022\023\n\013PAFEKEPGHAK\030\002 \001(" +
-      "\t\022)\n\tcard_list\030\005 \003(\0132\026.ExhibitionDisplay" +
-      "Info\022(\n\017profile_picture\030\013 \001(\0132\017.ProfileP" +
-      "icture\022\020\n\010nickname\030\003 \001(\t\022\021\n\tonline_id\030\016 " +
-      "\001(\t\022\013\n\003uid\030\n \001(\r\022\021\n\tadd_score\030\007 \001(\r\022\r\n\005s" +
-      "core\030\004 \001(\r\"\260\001\n\035CooperateChallegeSettleRe" +
-      "ason\022*\n&COOPERATE_CHALLENGE_SETTLE_REASO" +
-      "N_NONE\020\000\022*\n&COOPERATE_CHALLENGE_SETTLE_R" +
-      "EASON_SUCC\020\001\0227\n3COOPERATE_CHALLENGE_SETT" +
-      "LE_REASON_PLAYER_NOT_ENOUGH\020\002B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "oto\032\021COKIDFAOOPL.proto\032\033ExhibitionDispla" +
+      "yInfo.proto\032\021OIFDPOMFGOC.proto\032\024ProfileP" +
+      "icture.proto\032\022SettleReason.proto\"\364\005\n#Coo" +
+      "perateChallengeDungeonSettleInfo\022E\n\013AIJC" +
+      "BKAMJHN\030\020 \003(\01320.CooperateChallengeDungeo" +
+      "nSettleInfo.OIFDPOMFGOC\022\023\n\013OOJJIMODFOH\030\004" +
+      " \003(\r\022E\n\013MKNAKDLAEKB\030\035 \003(\01320.CooperateCha" +
+      "llengeDungeonSettleInfo.COKIDFAOOPL\022F\n\013N" +
+      "JHKMLCHHKA\030\026 \001(\01621.CooperateChallengeDun" +
+      "geonSettleInfo.SettleReason\022\025\n\rdifficult" +
+      "y_id\030\027 \001(\r\022\023\n\013HNDONKFNNED\030\021 \001(\r\032I\n\013COKID" +
+      "FAOOPL\022\020\n\010uid_list\030\n \003(\r\022\023\n\013JFKBKBCIJDI\030" +
+      "\022 \001(\005\022\023\n\013LKEMFIDMNEE\030\034 \001(\r\032\340\001\n\013OIFDPOMFG" +
+      "OC\022\020\n\010nickname\030\t \001(\t\022)\n\tcard_list\030\013 \003(\0132" +
+      "\026.ExhibitionDisplayInfo\022(\n\017profile_pictu" +
+      "re\030\002 \001(\0132\017.ProfilePicture\022\023\n\013DEDPLHELFGB" +
+      "\030\006 \003(\r\022\023\n\013PJMKDOCDKLH\030\034 \001(\t\022\021\n\tonline_id" +
+      "\030\014 \001(\t\022\013\n\003uid\030\r \001(\r\022\r\n\005score\030\023 \001(\r\022\021\n\tad" +
+      "d_score\030\035 \001(\r\"\207\001\n\014SettleReason\022\"\n\036GACNGJ" +
+      "ICPHP_SETTLE_REASON_NONE\020\000\022\"\n\036GACNGJICPH" +
+      "P_SETTLE_REASON_SUCC\020\001\022/\n+GACNGJICPHP_SE" +
+      "TTLE_REASON_PLAYER_NOT_ENOUGH\020\002B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.COKIDFAOOPLOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OIFDPOMFGOCOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SettleReasonOuterClass.getDescriptor(),
         });
     internal_static_CooperateChallengeDungeonSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CooperateChallengeDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CooperateChallengeDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "PNBFGEGIGFL", "HMGFMIGMCIO", "JKMMIMCEFOM", "DifficultyId", });
-    internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor =
+        new java.lang.String[] { "AIJCBKAMJHN", "OOJJIMODFOH", "MKNAKDLAEKB", "NJHKMLCHHKA", "DifficultyId", "HNDONKFNNED", });
+    internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor =
       internal_static_CooperateChallengeDungeonSettleInfo_descriptor.getNestedTypes().get(0);
-    internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_fieldAccessorTable = new
+    internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_CooperateChallengeDungeonSettleInfo_EANBAAOLGCD_descriptor,
-        new java.lang.String[] { "UidList", "HLAIPEJCAGB", "MDIDMJDBINN", });
-    internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor =
+        internal_static_CooperateChallengeDungeonSettleInfo_COKIDFAOOPL_descriptor,
+        new java.lang.String[] { "UidList", "JFKBKBCIJDI", "LKEMFIDMNEE", });
+    internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor =
       internal_static_CooperateChallengeDungeonSettleInfo_descriptor.getNestedTypes().get(1);
-    internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_fieldAccessorTable = new
+    internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_CooperateChallengeDungeonSettleInfo_OGBOLECEGGA_descriptor,
-        new java.lang.String[] { "EMAJLOGPGJP", "PAFEKEPGHAK", "CardList", "ProfilePicture", "Nickname", "OnlineId", "Uid", "AddScore", "Score", });
+        internal_static_CooperateChallengeDungeonSettleInfo_OIFDPOMFGOC_descriptor,
+        new java.lang.String[] { "Nickname", "CardList", "ProfilePicture", "DEDPLHELFGB", "PJMKDOCDKLH", "OnlineId", "Uid", "Score", "AddScore", });
+    emu.grasscutter.net.proto.COKIDFAOOPLOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.OIFDPOMFGOCOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SettleReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,27 +19,47 @@ public final class BomberDodocoDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> 
         getLevelInfoListList();
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
-    emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN getLevelInfoList(int index);
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
-    emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class BomberDodocoDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class BomberDodocoDetailInfoOuterClass {
               emu.grasscutter.net.proto.BomberDodocoDetailInfoOuterClass.BomberDodocoDetailInfo.class, emu.grasscutter.net.proto.BomberDodocoDetailInfoOuterClass.BomberDodocoDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 13;
+    private java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> levelInfoList_;
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class BomberDodocoDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(10, levelInfoList_.get(i));
+        output.writeMessage(13, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class BomberDodocoDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, levelInfoList_.get(i));
+          .computeMessageSize(13, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class BomberDodocoDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class BomberDodocoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class BomberDodocoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo value) {
+          int index, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo value) {
+          int index, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class BomberDodocoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class BomberDodocoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class BomberDodocoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.getDefaultInstance());
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.getDefaultInstance());
       }
       /**
-       * <code>repeated .BomberDodocoLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GOHKOKCLBFN level_info_list = 13;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfo.Builder, emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.BomberDodocoLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFN.Builder, emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.GOHKOKCLBFNOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class BomberDodocoDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034BomberDodocoDetailInfo.proto\032\033BomberDo" +
-      "docoLevelInfo.proto\"I\n\026BomberDodocoDetai" +
-      "lInfo\022/\n\017level_info_list\030\n \003(\0132\026.BomberD" +
-      "odocoLevelInfoB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\034BomberDodocoDetailInfo.proto\032\021GOHKOKCL" +
+      "BFN.proto\"?\n\026BomberDodocoDetailInfo\022%\n\017l" +
+      "evel_info_list\030\r \003(\0132\014.GOHKOKCLBFNB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.getDescriptor(),
         });
     internal_static_BomberDodocoDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class BomberDodocoDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BomberDodocoDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.BomberDodocoLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GOHKOKCLBFNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

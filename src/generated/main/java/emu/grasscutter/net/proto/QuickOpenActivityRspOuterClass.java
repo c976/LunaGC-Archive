@@ -19,21 +19,28 @@ public final class QuickOpenActivityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 activity_id = 3;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 7953
-   * Obf: MDBECONHBKJ
+   * CmdId: 26063
    * </pre>
    *
    * Protobuf type {@code QuickOpenActivityRsp}
@@ -80,12 +87,12 @@ public final class QuickOpenActivityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,10 +129,14 @@ public final class QuickOpenActivityRspOuterClass {
               emu.grasscutter.net.proto.QuickOpenActivityRspOuterClass.QuickOpenActivityRsp.class, emu.grasscutter.net.proto.QuickOpenActivityRspOuterClass.QuickOpenActivityRsp.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 8;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 3;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 activity_id = 3;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class QuickOpenActivityRspOuterClass {
       return activityId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +174,10 @@ public final class QuickOpenActivityRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(8, activityId_);
+        output.writeUInt32(3, activityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class QuickOpenActivityRspOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, activityId_);
+          .computeUInt32Size(3, activityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class QuickOpenActivityRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7953
-     * Obf: MDBECONHBKJ
+     * CmdId: 26063
      * </pre>
      *
      * Protobuf type {@code QuickOpenActivityRsp}
@@ -470,7 +484,11 @@ public final class QuickOpenActivityRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 activity_id = 3;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class QuickOpenActivityRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 activity_id = 3;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class QuickOpenActivityRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 activity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -501,7 +527,11 @@ public final class QuickOpenActivityRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class QuickOpenActivityRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class QuickOpenActivityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +635,8 @@ public final class QuickOpenActivityRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032QuickOpenActivityRsp.proto\"<\n\024QuickOpe" +
-      "nActivityRsp\022\023\n\013activity_id\030\010 \001(\r\022\017\n\007ret" +
-      "code\030\r \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "nActivityRsp\022\023\n\013activity_id\030\003 \001(\r\022\017\n\007ret" +
+      "code\030\n \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

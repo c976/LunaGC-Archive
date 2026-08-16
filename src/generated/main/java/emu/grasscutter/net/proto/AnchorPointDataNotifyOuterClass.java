@@ -19,39 +19,62 @@ public final class AnchorPointDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> 
-        getAnchorPointListList();
+        getMNBEFDJKOLIList();
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
-    emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getAnchorPointList(int index);
+    emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getMNBEFDJKOLI(int index);
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
-    int getAnchorPointListCount();
+    int getMNBEFDJKOLICount();
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> 
-        getAnchorPointListOrBuilderList();
+        getMNBEFDJKOLIOrBuilderList();
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
-    emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getAnchorPointListOrBuilder(
+    emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getMNBEFDJKOLIOrBuilder(
         int index);
 
     /**
-     * <code>uint32 next_usable_time = 7;</code>
-     * @return The nextUsableTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DGNJHPCHOHD = 13;</code>
+     * @return The dGNJHPCHOHD.
      */
-    int getNextUsableTime();
+    int getDGNJHPCHOHD();
   }
   /**
    * <pre>
-   * CmdId: 26766
-   * Obf: KLFMBAEBMGJ
+   * CmdId: 24912
    * </pre>
    *
    * Protobuf type {@code AnchorPointDataNotify}
@@ -66,7 +89,7 @@ public final class AnchorPointDataNotifyOuterClass {
       super(builder);
     }
     private AnchorPointDataNotify() {
-      anchorPointList_ = java.util.Collections.emptyList();
+      mNBEFDJKOLI_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -100,18 +123,18 @@ public final class AnchorPointDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                anchorPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              anchorPointList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.parser(), extensionRegistry));
+            case 104: {
+
+              dGNJHPCHOHD_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              nextUsableTime_ = input.readUInt32();
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                mNBEFDJKOLI_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              mNBEFDJKOLI_.add(
+                  input.readMessage(emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -130,7 +153,7 @@ public final class AnchorPointDataNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          anchorPointList_ = java.util.Collections.unmodifiableList(anchorPointList_);
+          mNBEFDJKOLI_ = java.util.Collections.unmodifiableList(mNBEFDJKOLI_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -149,55 +172,79 @@ public final class AnchorPointDataNotifyOuterClass {
               emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify.class, emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify.Builder.class);
     }
 
-    public static final int ANCHOR_POINT_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> anchorPointList_;
+    public static final int MNBEFDJKOLI_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> mNBEFDJKOLI_;
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> getAnchorPointListList() {
-      return anchorPointList_;
+    public java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> getMNBEFDJKOLIList() {
+      return mNBEFDJKOLI_;
     }
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> 
-        getAnchorPointListOrBuilderList() {
-      return anchorPointList_;
+        getMNBEFDJKOLIOrBuilderList() {
+      return mNBEFDJKOLI_;
     }
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     @java.lang.Override
-    public int getAnchorPointListCount() {
-      return anchorPointList_.size();
+    public int getMNBEFDJKOLICount() {
+      return mNBEFDJKOLI_.size();
     }
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getAnchorPointList(int index) {
-      return anchorPointList_.get(index);
+    public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getMNBEFDJKOLI(int index) {
+      return mNBEFDJKOLI_.get(index);
     }
     /**
-     * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getAnchorPointListOrBuilder(
+    public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getMNBEFDJKOLIOrBuilder(
         int index) {
-      return anchorPointList_.get(index);
+      return mNBEFDJKOLI_.get(index);
     }
 
-    public static final int NEXT_USABLE_TIME_FIELD_NUMBER = 7;
-    private int nextUsableTime_;
+    public static final int DGNJHPCHOHD_FIELD_NUMBER = 13;
+    private int dGNJHPCHOHD_;
     /**
-     * <code>uint32 next_usable_time = 7;</code>
-     * @return The nextUsableTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DGNJHPCHOHD = 13;</code>
+     * @return The dGNJHPCHOHD.
      */
     @java.lang.Override
-    public int getNextUsableTime() {
-      return nextUsableTime_;
+    public int getDGNJHPCHOHD() {
+      return dGNJHPCHOHD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -214,11 +261,11 @@ public final class AnchorPointDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < anchorPointList_.size(); i++) {
-        output.writeMessage(2, anchorPointList_.get(i));
+      if (dGNJHPCHOHD_ != 0) {
+        output.writeUInt32(13, dGNJHPCHOHD_);
       }
-      if (nextUsableTime_ != 0) {
-        output.writeUInt32(7, nextUsableTime_);
+      for (int i = 0; i < mNBEFDJKOLI_.size(); i++) {
+        output.writeMessage(15, mNBEFDJKOLI_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -229,13 +276,13 @@ public final class AnchorPointDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < anchorPointList_.size(); i++) {
+      if (dGNJHPCHOHD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, anchorPointList_.get(i));
+          .computeUInt32Size(13, dGNJHPCHOHD_);
       }
-      if (nextUsableTime_ != 0) {
+      for (int i = 0; i < mNBEFDJKOLI_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, nextUsableTime_);
+          .computeMessageSize(15, mNBEFDJKOLI_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,10 +299,10 @@ public final class AnchorPointDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify other = (emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify) obj;
 
-      if (!getAnchorPointListList()
-          .equals(other.getAnchorPointListList())) return false;
-      if (getNextUsableTime()
-          != other.getNextUsableTime()) return false;
+      if (!getMNBEFDJKOLIList()
+          .equals(other.getMNBEFDJKOLIList())) return false;
+      if (getDGNJHPCHOHD()
+          != other.getDGNJHPCHOHD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -267,12 +314,12 @@ public final class AnchorPointDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAnchorPointListCount() > 0) {
-        hash = (37 * hash) + ANCHOR_POINT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAnchorPointListList().hashCode();
+      if (getMNBEFDJKOLICount() > 0) {
+        hash = (37 * hash) + MNBEFDJKOLI_FIELD_NUMBER;
+        hash = (53 * hash) + getMNBEFDJKOLIList().hashCode();
       }
-      hash = (37 * hash) + NEXT_USABLE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextUsableTime();
+      hash = (37 * hash) + DGNJHPCHOHD_FIELD_NUMBER;
+      hash = (53 * hash) + getDGNJHPCHOHD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -370,8 +417,7 @@ public final class AnchorPointDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26766
-     * Obf: KLFMBAEBMGJ
+     * CmdId: 24912
      * </pre>
      *
      * Protobuf type {@code AnchorPointDataNotify}
@@ -406,19 +452,19 @@ public final class AnchorPointDataNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAnchorPointListFieldBuilder();
+          getMNBEFDJKOLIFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (anchorPointListBuilder_ == null) {
-          anchorPointList_ = java.util.Collections.emptyList();
+        if (mNBEFDJKOLIBuilder_ == null) {
+          mNBEFDJKOLI_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          anchorPointListBuilder_.clear();
+          mNBEFDJKOLIBuilder_.clear();
         }
-        nextUsableTime_ = 0;
+        dGNJHPCHOHD_ = 0;
 
         return this;
       }
@@ -447,16 +493,16 @@ public final class AnchorPointDataNotifyOuterClass {
       public emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify buildPartial() {
         emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify result = new emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify(this);
         int from_bitField0_ = bitField0_;
-        if (anchorPointListBuilder_ == null) {
+        if (mNBEFDJKOLIBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            anchorPointList_ = java.util.Collections.unmodifiableList(anchorPointList_);
+            mNBEFDJKOLI_ = java.util.Collections.unmodifiableList(mNBEFDJKOLI_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.anchorPointList_ = anchorPointList_;
+          result.mNBEFDJKOLI_ = mNBEFDJKOLI_;
         } else {
-          result.anchorPointList_ = anchorPointListBuilder_.build();
+          result.mNBEFDJKOLI_ = mNBEFDJKOLIBuilder_.build();
         }
-        result.nextUsableTime_ = nextUsableTime_;
+        result.dGNJHPCHOHD_ = dGNJHPCHOHD_;
         onBuilt();
         return result;
       }
@@ -505,34 +551,34 @@ public final class AnchorPointDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify other) {
         if (other == emu.grasscutter.net.proto.AnchorPointDataNotifyOuterClass.AnchorPointDataNotify.getDefaultInstance()) return this;
-        if (anchorPointListBuilder_ == null) {
-          if (!other.anchorPointList_.isEmpty()) {
-            if (anchorPointList_.isEmpty()) {
-              anchorPointList_ = other.anchorPointList_;
+        if (mNBEFDJKOLIBuilder_ == null) {
+          if (!other.mNBEFDJKOLI_.isEmpty()) {
+            if (mNBEFDJKOLI_.isEmpty()) {
+              mNBEFDJKOLI_ = other.mNBEFDJKOLI_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureAnchorPointListIsMutable();
-              anchorPointList_.addAll(other.anchorPointList_);
+              ensureMNBEFDJKOLIIsMutable();
+              mNBEFDJKOLI_.addAll(other.mNBEFDJKOLI_);
             }
             onChanged();
           }
         } else {
-          if (!other.anchorPointList_.isEmpty()) {
-            if (anchorPointListBuilder_.isEmpty()) {
-              anchorPointListBuilder_.dispose();
-              anchorPointListBuilder_ = null;
-              anchorPointList_ = other.anchorPointList_;
+          if (!other.mNBEFDJKOLI_.isEmpty()) {
+            if (mNBEFDJKOLIBuilder_.isEmpty()) {
+              mNBEFDJKOLIBuilder_.dispose();
+              mNBEFDJKOLIBuilder_ = null;
+              mNBEFDJKOLI_ = other.mNBEFDJKOLI_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              anchorPointListBuilder_ = 
+              mNBEFDJKOLIBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAnchorPointListFieldBuilder() : null;
+                   getMNBEFDJKOLIFieldBuilder() : null;
             } else {
-              anchorPointListBuilder_.addAllMessages(other.anchorPointList_);
+              mNBEFDJKOLIBuilder_.addAllMessages(other.mNBEFDJKOLI_);
             }
           }
         }
-        if (other.getNextUsableTime() != 0) {
-          setNextUsableTime(other.getNextUsableTime());
+        if (other.getDGNJHPCHOHD() != 0) {
+          setDGNJHPCHOHD(other.getDGNJHPCHOHD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,273 +610,357 @@ public final class AnchorPointDataNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> anchorPointList_ =
+      private java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> mNBEFDJKOLI_ =
         java.util.Collections.emptyList();
-      private void ensureAnchorPointListIsMutable() {
+      private void ensureMNBEFDJKOLIIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          anchorPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData>(anchorPointList_);
+          mNBEFDJKOLI_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData>(mNBEFDJKOLI_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> anchorPointListBuilder_;
+          emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> mNBEFDJKOLIBuilder_;
 
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> getAnchorPointListList() {
-        if (anchorPointListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(anchorPointList_);
+      public java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> getMNBEFDJKOLIList() {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(mNBEFDJKOLI_);
         } else {
-          return anchorPointListBuilder_.getMessageList();
+          return mNBEFDJKOLIBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public int getAnchorPointListCount() {
-        if (anchorPointListBuilder_ == null) {
-          return anchorPointList_.size();
+      public int getMNBEFDJKOLICount() {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          return mNBEFDJKOLI_.size();
         } else {
-          return anchorPointListBuilder_.getCount();
+          return mNBEFDJKOLIBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getAnchorPointList(int index) {
-        if (anchorPointListBuilder_ == null) {
-          return anchorPointList_.get(index);
+      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData getMNBEFDJKOLI(int index) {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          return mNBEFDJKOLI_.get(index);
         } else {
-          return anchorPointListBuilder_.getMessage(index);
+          return mNBEFDJKOLIBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder setAnchorPointList(
+      public Builder setMNBEFDJKOLI(
           int index, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData value) {
-        if (anchorPointListBuilder_ == null) {
+        if (mNBEFDJKOLIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.set(index, value);
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.set(index, value);
           onChanged();
         } else {
-          anchorPointListBuilder_.setMessage(index, value);
+          mNBEFDJKOLIBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder setAnchorPointList(
+      public Builder setMNBEFDJKOLI(
           int index, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder builderForValue) {
-        if (anchorPointListBuilder_ == null) {
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.set(index, builderForValue.build());
+        if (mNBEFDJKOLIBuilder_ == null) {
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.set(index, builderForValue.build());
           onChanged();
         } else {
-          anchorPointListBuilder_.setMessage(index, builderForValue.build());
+          mNBEFDJKOLIBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder addAnchorPointList(emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData value) {
-        if (anchorPointListBuilder_ == null) {
+      public Builder addMNBEFDJKOLI(emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData value) {
+        if (mNBEFDJKOLIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.add(value);
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.add(value);
           onChanged();
         } else {
-          anchorPointListBuilder_.addMessage(value);
+          mNBEFDJKOLIBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder addAnchorPointList(
+      public Builder addMNBEFDJKOLI(
           int index, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData value) {
-        if (anchorPointListBuilder_ == null) {
+        if (mNBEFDJKOLIBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.add(index, value);
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.add(index, value);
           onChanged();
         } else {
-          anchorPointListBuilder_.addMessage(index, value);
+          mNBEFDJKOLIBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder addAnchorPointList(
+      public Builder addMNBEFDJKOLI(
           emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder builderForValue) {
-        if (anchorPointListBuilder_ == null) {
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.add(builderForValue.build());
+        if (mNBEFDJKOLIBuilder_ == null) {
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.add(builderForValue.build());
           onChanged();
         } else {
-          anchorPointListBuilder_.addMessage(builderForValue.build());
+          mNBEFDJKOLIBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder addAnchorPointList(
+      public Builder addMNBEFDJKOLI(
           int index, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder builderForValue) {
-        if (anchorPointListBuilder_ == null) {
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.add(index, builderForValue.build());
+        if (mNBEFDJKOLIBuilder_ == null) {
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.add(index, builderForValue.build());
           onChanged();
         } else {
-          anchorPointListBuilder_.addMessage(index, builderForValue.build());
+          mNBEFDJKOLIBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder addAllAnchorPointList(
+      public Builder addAllMNBEFDJKOLI(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData> values) {
-        if (anchorPointListBuilder_ == null) {
-          ensureAnchorPointListIsMutable();
+        if (mNBEFDJKOLIBuilder_ == null) {
+          ensureMNBEFDJKOLIIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, anchorPointList_);
+              values, mNBEFDJKOLI_);
           onChanged();
         } else {
-          anchorPointListBuilder_.addAllMessages(values);
+          mNBEFDJKOLIBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder clearAnchorPointList() {
-        if (anchorPointListBuilder_ == null) {
-          anchorPointList_ = java.util.Collections.emptyList();
+      public Builder clearMNBEFDJKOLI() {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          mNBEFDJKOLI_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          anchorPointListBuilder_.clear();
+          mNBEFDJKOLIBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public Builder removeAnchorPointList(int index) {
-        if (anchorPointListBuilder_ == null) {
-          ensureAnchorPointListIsMutable();
-          anchorPointList_.remove(index);
+      public Builder removeMNBEFDJKOLI(int index) {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          ensureMNBEFDJKOLIIsMutable();
+          mNBEFDJKOLI_.remove(index);
           onChanged();
         } else {
-          anchorPointListBuilder_.remove(index);
+          mNBEFDJKOLIBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder getAnchorPointListBuilder(
+      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder getMNBEFDJKOLIBuilder(
           int index) {
-        return getAnchorPointListFieldBuilder().getBuilder(index);
+        return getMNBEFDJKOLIFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getAnchorPointListOrBuilder(
+      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder getMNBEFDJKOLIOrBuilder(
           int index) {
-        if (anchorPointListBuilder_ == null) {
-          return anchorPointList_.get(index);  } else {
-          return anchorPointListBuilder_.getMessageOrBuilder(index);
+        if (mNBEFDJKOLIBuilder_ == null) {
+          return mNBEFDJKOLI_.get(index);  } else {
+          return mNBEFDJKOLIBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> 
-           getAnchorPointListOrBuilderList() {
-        if (anchorPointListBuilder_ != null) {
-          return anchorPointListBuilder_.getMessageOrBuilderList();
+           getMNBEFDJKOLIOrBuilderList() {
+        if (mNBEFDJKOLIBuilder_ != null) {
+          return mNBEFDJKOLIBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(anchorPointList_);
+          return java.util.Collections.unmodifiableList(mNBEFDJKOLI_);
         }
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder addAnchorPointListBuilder() {
-        return getAnchorPointListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder addMNBEFDJKOLIBuilder() {
+        return getMNBEFDJKOLIFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
-      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder addAnchorPointListBuilder(
+      public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder addMNBEFDJKOLIBuilder(
           int index) {
-        return getAnchorPointListFieldBuilder().addBuilder(
+        return getMNBEFDJKOLIFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AnchorPointData anchor_point_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AnchorPointData MNBEFDJKOLI = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder> 
-           getAnchorPointListBuilderList() {
-        return getAnchorPointListFieldBuilder().getBuilderList();
+           getMNBEFDJKOLIBuilderList() {
+        return getMNBEFDJKOLIFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder> 
-          getAnchorPointListFieldBuilder() {
-        if (anchorPointListBuilder_ == null) {
-          anchorPointListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getMNBEFDJKOLIFieldBuilder() {
+        if (mNBEFDJKOLIBuilder_ == null) {
+          mNBEFDJKOLIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointDataOrBuilder>(
-                  anchorPointList_,
+                  mNBEFDJKOLI_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          anchorPointList_ = null;
+          mNBEFDJKOLI_ = null;
         }
-        return anchorPointListBuilder_;
+        return mNBEFDJKOLIBuilder_;
       }
 
-      private int nextUsableTime_ ;
+      private int dGNJHPCHOHD_ ;
       /**
-       * <code>uint32 next_usable_time = 7;</code>
-       * @return The nextUsableTime.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DGNJHPCHOHD = 13;</code>
+       * @return The dGNJHPCHOHD.
        */
       @java.lang.Override
-      public int getNextUsableTime() {
-        return nextUsableTime_;
+      public int getDGNJHPCHOHD() {
+        return dGNJHPCHOHD_;
       }
       /**
-       * <code>uint32 next_usable_time = 7;</code>
-       * @param value The nextUsableTime to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DGNJHPCHOHD = 13;</code>
+       * @param value The dGNJHPCHOHD to set.
        * @return This builder for chaining.
        */
-      public Builder setNextUsableTime(int value) {
+      public Builder setDGNJHPCHOHD(int value) {
         
-        nextUsableTime_ = value;
+        dGNJHPCHOHD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 next_usable_time = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DGNJHPCHOHD = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNextUsableTime() {
+      public Builder clearDGNJHPCHOHD() {
         
-        nextUsableTime_ = 0;
+        dGNJHPCHOHD_ = 0;
         onChanged();
         return this;
       }
@@ -902,10 +1032,10 @@ public final class AnchorPointDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033AnchorPointDataNotify.proto\032\025AnchorPoi" +
-      "ntData.proto\"^\n\025AnchorPointDataNotify\022+\n" +
-      "\021anchor_point_list\030\002 \003(\0132\020.AnchorPointDa" +
-      "ta\022\030\n\020next_usable_time\030\007 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "ntData.proto\"S\n\025AnchorPointDataNotify\022%\n" +
+      "\013MNBEFDJKOLI\030\017 \003(\0132\020.AnchorPointData\022\023\n\013" +
+      "DGNJHPCHOHD\030\r \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -917,7 +1047,7 @@ public final class AnchorPointDataNotifyOuterClass {
     internal_static_AnchorPointDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AnchorPointDataNotify_descriptor,
-        new java.lang.String[] { "AnchorPointList", "NextUsableTime", });
+        new java.lang.String[] { "MNBEFDJKOLI", "DGNJHPCHOHD", });
     emu.grasscutter.net.proto.AnchorPointDataOuterClass.getDescriptor();
   }
 

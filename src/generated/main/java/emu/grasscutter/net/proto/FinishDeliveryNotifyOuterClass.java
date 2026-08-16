@@ -19,27 +19,38 @@ public final class FinishDeliveryNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_index = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 day_index = 1;</code>
      * @return The dayIndex.
      */
     int getDayIndex();
 
     /**
-     * <code>uint32 finished_quest_index = 4;</code>
-     * @return The finishedQuestIndex.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 INGGCKKGKPN = 8;</code>
+     * @return The iNGGCKKGKPN.
      */
-    int getFinishedQuestIndex();
+    int getINGGCKKGKPN();
 
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 10;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 2454
-   * Obf: GMCNFEOGNOG
+   * CmdId: 24347
    * </pre>
    *
    * Protobuf type {@code FinishDeliveryNotify}
@@ -86,19 +97,19 @@ public final class FinishDeliveryNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              finishedQuestIndex_ = input.readUInt32();
+              dayIndex_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              scheduleId_ = input.readUInt32();
+              iNGGCKKGKPN_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 80: {
 
-              dayIndex_ = input.readUInt32();
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +144,14 @@ public final class FinishDeliveryNotifyOuterClass {
               emu.grasscutter.net.proto.FinishDeliveryNotifyOuterClass.FinishDeliveryNotify.class, emu.grasscutter.net.proto.FinishDeliveryNotifyOuterClass.FinishDeliveryNotify.Builder.class);
     }
 
-    public static final int DAY_INDEX_FIELD_NUMBER = 9;
+    public static final int DAY_INDEX_FIELD_NUMBER = 1;
     private int dayIndex_;
     /**
-     * <code>uint32 day_index = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 day_index = 1;</code>
      * @return The dayIndex.
      */
     @java.lang.Override
@@ -144,21 +159,29 @@ public final class FinishDeliveryNotifyOuterClass {
       return dayIndex_;
     }
 
-    public static final int FINISHED_QUEST_INDEX_FIELD_NUMBER = 4;
-    private int finishedQuestIndex_;
+    public static final int INGGCKKGKPN_FIELD_NUMBER = 8;
+    private int iNGGCKKGKPN_;
     /**
-     * <code>uint32 finished_quest_index = 4;</code>
-     * @return The finishedQuestIndex.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 INGGCKKGKPN = 8;</code>
+     * @return The iNGGCKKGKPN.
      */
     @java.lang.Override
-    public int getFinishedQuestIndex() {
-      return finishedQuestIndex_;
+    public int getINGGCKKGKPN() {
+      return iNGGCKKGKPN_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 10;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 10;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -180,14 +203,14 @@ public final class FinishDeliveryNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishedQuestIndex_ != 0) {
-        output.writeUInt32(4, finishedQuestIndex_);
+      if (dayIndex_ != 0) {
+        output.writeUInt32(1, dayIndex_);
+      }
+      if (iNGGCKKGKPN_ != 0) {
+        output.writeUInt32(8, iNGGCKKGKPN_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(8, scheduleId_);
-      }
-      if (dayIndex_ != 0) {
-        output.writeUInt32(9, dayIndex_);
+        output.writeUInt32(10, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +221,17 @@ public final class FinishDeliveryNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishedQuestIndex_ != 0) {
+      if (dayIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, finishedQuestIndex_);
+          .computeUInt32Size(1, dayIndex_);
+      }
+      if (iNGGCKKGKPN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, iNGGCKKGKPN_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, scheduleId_);
-      }
-      if (dayIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dayIndex_);
+          .computeUInt32Size(10, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,8 +250,8 @@ public final class FinishDeliveryNotifyOuterClass {
 
       if (getDayIndex()
           != other.getDayIndex()) return false;
-      if (getFinishedQuestIndex()
-          != other.getFinishedQuestIndex()) return false;
+      if (getINGGCKKGKPN()
+          != other.getINGGCKKGKPN()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -244,8 +267,8 @@ public final class FinishDeliveryNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getDayIndex();
-      hash = (37 * hash) + FINISHED_QUEST_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishedQuestIndex();
+      hash = (37 * hash) + INGGCKKGKPN_FIELD_NUMBER;
+      hash = (53 * hash) + getINGGCKKGKPN();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -345,8 +368,7 @@ public final class FinishDeliveryNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2454
-     * Obf: GMCNFEOGNOG
+     * CmdId: 24347
      * </pre>
      *
      * Protobuf type {@code FinishDeliveryNotify}
@@ -388,7 +410,7 @@ public final class FinishDeliveryNotifyOuterClass {
         super.clear();
         dayIndex_ = 0;
 
-        finishedQuestIndex_ = 0;
+        iNGGCKKGKPN_ = 0;
 
         scheduleId_ = 0;
 
@@ -419,7 +441,7 @@ public final class FinishDeliveryNotifyOuterClass {
       public emu.grasscutter.net.proto.FinishDeliveryNotifyOuterClass.FinishDeliveryNotify buildPartial() {
         emu.grasscutter.net.proto.FinishDeliveryNotifyOuterClass.FinishDeliveryNotify result = new emu.grasscutter.net.proto.FinishDeliveryNotifyOuterClass.FinishDeliveryNotify(this);
         result.dayIndex_ = dayIndex_;
-        result.finishedQuestIndex_ = finishedQuestIndex_;
+        result.iNGGCKKGKPN_ = iNGGCKKGKPN_;
         result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
@@ -472,8 +494,8 @@ public final class FinishDeliveryNotifyOuterClass {
         if (other.getDayIndex() != 0) {
           setDayIndex(other.getDayIndex());
         }
-        if (other.getFinishedQuestIndex() != 0) {
-          setFinishedQuestIndex(other.getFinishedQuestIndex());
+        if (other.getINGGCKKGKPN() != 0) {
+          setINGGCKKGKPN(other.getINGGCKKGKPN());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
@@ -509,7 +531,11 @@ public final class FinishDeliveryNotifyOuterClass {
 
       private int dayIndex_ ;
       /**
-       * <code>uint32 day_index = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 day_index = 1;</code>
        * @return The dayIndex.
        */
       @java.lang.Override
@@ -517,7 +543,11 @@ public final class FinishDeliveryNotifyOuterClass {
         return dayIndex_;
       }
       /**
-       * <code>uint32 day_index = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 day_index = 1;</code>
        * @param value The dayIndex to set.
        * @return This builder for chaining.
        */
@@ -528,7 +558,11 @@ public final class FinishDeliveryNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 day_index = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 day_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDayIndex() {
@@ -538,40 +572,56 @@ public final class FinishDeliveryNotifyOuterClass {
         return this;
       }
 
-      private int finishedQuestIndex_ ;
+      private int iNGGCKKGKPN_ ;
       /**
-       * <code>uint32 finished_quest_index = 4;</code>
-       * @return The finishedQuestIndex.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 INGGCKKGKPN = 8;</code>
+       * @return The iNGGCKKGKPN.
        */
       @java.lang.Override
-      public int getFinishedQuestIndex() {
-        return finishedQuestIndex_;
+      public int getINGGCKKGKPN() {
+        return iNGGCKKGKPN_;
       }
       /**
-       * <code>uint32 finished_quest_index = 4;</code>
-       * @param value The finishedQuestIndex to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 INGGCKKGKPN = 8;</code>
+       * @param value The iNGGCKKGKPN to set.
        * @return This builder for chaining.
        */
-      public Builder setFinishedQuestIndex(int value) {
+      public Builder setINGGCKKGKPN(int value) {
         
-        finishedQuestIndex_ = value;
+        iNGGCKKGKPN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 finished_quest_index = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 INGGCKKGKPN = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinishedQuestIndex() {
+      public Builder clearINGGCKKGKPN() {
         
-        finishedQuestIndex_ = 0;
+        iNGGCKKGKPN_ = 0;
         onChanged();
         return this;
       }
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 10;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -579,7 +629,11 @@ public final class FinishDeliveryNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 10;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +644,11 @@ public final class FinishDeliveryNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -666,10 +724,10 @@ public final class FinishDeliveryNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032FinishDeliveryNotify.proto\"\\\n\024FinishDe" +
-      "liveryNotify\022\021\n\tday_index\030\t \001(\r\022\034\n\024finis" +
-      "hed_quest_index\030\004 \001(\r\022\023\n\013schedule_id\030\010 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032FinishDeliveryNotify.proto\"S\n\024FinishDe" +
+      "liveryNotify\022\021\n\tday_index\030\001 \001(\r\022\023\n\013INGGC" +
+      "KKGKPN\030\010 \001(\r\022\023\n\013schedule_id\030\n \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +738,7 @@ public final class FinishDeliveryNotifyOuterClass {
     internal_static_FinishDeliveryNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FinishDeliveryNotify_descriptor,
-        new java.lang.String[] { "DayIndex", "FinishedQuestIndex", "ScheduleId", });
+        new java.lang.String[] { "DayIndex", "INGGCKKGKPN", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

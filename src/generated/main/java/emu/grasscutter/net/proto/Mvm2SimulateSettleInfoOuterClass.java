@@ -19,16 +19,16 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 progress = 2;</code>
-     * @return The progress.
-     */
-    int getProgress();
-
-    /**
      * <code>uint32 use_time = 4;</code>
      * @return The useTime.
      */
     int getUseTime();
+
+    /**
+     * <code>uint32 progress = 11;</code>
+     * @return The progress.
+     */
+    int getProgress();
   }
   /**
    * Protobuf type {@code Mvm2SimulateSettleInfo}
@@ -75,14 +75,14 @@ public final class Mvm2SimulateSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              progress_ = input.readUInt32();
-              break;
-            }
             case 32: {
 
               useTime_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              progress_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,17 +117,6 @@ public final class Mvm2SimulateSettleInfoOuterClass {
               emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.class, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder.class);
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 2;
-    private int progress_;
-    /**
-     * <code>uint32 progress = 2;</code>
-     * @return The progress.
-     */
-    @java.lang.Override
-    public int getProgress() {
-      return progress_;
-    }
-
     public static final int USE_TIME_FIELD_NUMBER = 4;
     private int useTime_;
     /**
@@ -137,6 +126,17 @@ public final class Mvm2SimulateSettleInfoOuterClass {
     @java.lang.Override
     public int getUseTime() {
       return useTime_;
+    }
+
+    public static final int PROGRESS_FIELD_NUMBER = 11;
+    private int progress_;
+    /**
+     * <code>uint32 progress = 11;</code>
+     * @return The progress.
+     */
+    @java.lang.Override
+    public int getProgress() {
+      return progress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class Mvm2SimulateSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (progress_ != 0) {
-        output.writeUInt32(2, progress_);
-      }
       if (useTime_ != 0) {
         output.writeUInt32(4, useTime_);
+      }
+      if (progress_ != 0) {
+        output.writeUInt32(11, progress_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (progress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, progress_);
-      }
       if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, useTime_);
+      }
+      if (progress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, progress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo other = (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) obj;
 
-      if (getProgress()
-          != other.getProgress()) return false;
       if (getUseTime()
           != other.getUseTime()) return false;
+      if (getProgress()
+          != other.getProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getProgress();
       hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getUseTime();
+      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        progress_ = 0;
-
         useTime_ = 0;
+
+        progress_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo buildPartial() {
         emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo result = new emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo(this);
-        result.progress_ = progress_;
         result.useTime_ = useTime_;
+        result.progress_ = progress_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class Mvm2SimulateSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo other) {
         if (other == emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance()) return this;
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
-        }
         if (other.getUseTime() != 0) {
           setUseTime(other.getUseTime());
+        }
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,37 +458,6 @@ public final class Mvm2SimulateSettleInfoOuterClass {
         return this;
       }
 
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 2;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 2;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 progress = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int useTime_ ;
       /**
        * <code>uint32 use_time = 4;</code>
@@ -516,6 +485,37 @@ public final class Mvm2SimulateSettleInfoOuterClass {
       public Builder clearUseTime() {
         
         useTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int progress_ ;
+      /**
+       * <code>uint32 progress = 11;</code>
+       * @return The progress.
+       */
+      @java.lang.Override
+      public int getProgress() {
+        return progress_;
+      }
+      /**
+       * <code>uint32 progress = 11;</code>
+       * @param value The progress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProgress(int value) {
+        
+        progress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 progress = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProgress() {
+        
+        progress_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class Mvm2SimulateSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034Mvm2SimulateSettleInfo.proto\"<\n\026Mvm2Si" +
-      "mulateSettleInfo\022\020\n\010progress\030\002 \001(\r\022\020\n\010us" +
-      "e_time\030\004 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "mulateSettleInfo\022\020\n\010use_time\030\004 \001(\r\022\020\n\010pr" +
+      "ogress\030\013 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class Mvm2SimulateSettleInfoOuterClass {
     internal_static_Mvm2SimulateSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Mvm2SimulateSettleInfo_descriptor,
-        new java.lang.String[] { "Progress", "UseTime", });
+        new java.lang.String[] { "UseTime", "Progress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

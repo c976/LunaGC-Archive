@@ -19,63 +19,87 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
+     * <code>bool FFAMOBKPANG = 1;</code>
+     * @return The fFAMOBKPANG.
      */
-    java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> 
-        getEndPosListList();
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getEndPosList(int index);
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    int getEndPosListCount();
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-        getEndPosListOrBuilderList();
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEndPosListOrBuilder(
-        int index);
+    boolean getFFAMOBKPANG();
 
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>bool APKBFKDLBOI = 4;</code>
+     * @return The aPKBFKDLBOI.
+     */
+    boolean getAPKBFKDLBOI();
+
+    /**
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @return A list containing the eliteMonsterIdList.
      */
     java.util.List<java.lang.Integer> getEliteMonsterIdListList();
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @return The count of eliteMonsterIdList.
      */
     int getEliteMonsterIdListCount();
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The eliteMonsterIdList at the given index.
      */
     int getEliteMonsterIdList(int index);
 
     /**
-     * <code>bool PDNBALDADFM = 15;</code>
-     * @return The pDNBALDADFM.
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
      */
-    boolean getPDNBALDADFM();
+    java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> 
+        getEntryInfoListList();
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData getEntryInfoList(int index);
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    int getEntryInfoListCount();
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder> 
+        getEntryInfoListOrBuilderList();
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder getEntryInfoListOrBuilder(
+        int index);
 
     /**
-     * <code>bool LMJKAMNBJCE = 4;</code>
-     * @return The lMJKAMNBJCE.
+     * <code>repeated .Vector end_pos_list = 14;</code>
      */
-    boolean getLMJKAMNBJCE();
+    java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> 
+        getEndPosListList();
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getEndPosList(int index);
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    int getEndPosListCount();
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+        getEndPosListOrBuilderList();
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEndPosListOrBuilder(
+        int index);
 
     /**
-     * <code>bool NBPHDHPIKOE = 7;</code>
-     * @return The nBPHDHPIKOE.
+     * <code>bool LDLGOKIHACP = 15;</code>
+     * @return The lDLGOKIHACP.
      */
-    boolean getNBPHDHPIKOE();
+    boolean getLDLGOKIHACP();
   }
   /**
    * Protobuf type {@code UgcDungeonRoomDisplayData}
@@ -90,8 +114,9 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       super(builder);
     }
     private UgcDungeonRoomDisplayData() {
-      endPosList_ = java.util.Collections.emptyList();
       eliteMonsterIdList_ = emptyIntList();
+      entryInfoList_ = java.util.Collections.emptyList();
+      endPosList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -125,30 +150,30 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              fFAMOBKPANG_ = input.readBool();
+              break;
+            }
             case 32: {
 
-              lMJKAMNBJCE_ = input.readBool();
+              aPKBFKDLBOI_ = input.readBool();
               break;
             }
-            case 56: {
-
-              nBPHDHPIKOE_ = input.readBool();
-              break;
-            }
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 64: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 eliteMonsterIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               eliteMonsterIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 eliteMonsterIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 eliteMonsterIdList_.addInt(input.readUInt32());
@@ -156,10 +181,19 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                entryInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              entryInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.parser(), extensionRegistry));
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 endPosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.VectorOuterClass.Vector>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000004;
               }
               endPosList_.add(
                   input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry));
@@ -167,7 +201,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
             }
             case 120: {
 
-              pDNBALDADFM_ = input.readBool();
+              lDLGOKIHACP_ = input.readBool();
               break;
             }
             default: {
@@ -185,10 +219,13 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           eliteMonsterIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          entryInfoList_ = java.util.Collections.unmodifiableList(entryInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           endPosList_ = java.util.Collections.unmodifiableList(endPosList_);
         }
         this.unknownFields = unknownFields.build();
@@ -208,50 +245,32 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
               emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.class, emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder.class);
     }
 
-    public static final int END_POS_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> endPosList_;
+    public static final int FFAMOBKPANG_FIELD_NUMBER = 1;
+    private boolean fFAMOBKPANG_;
     /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
+     * <code>bool FFAMOBKPANG = 1;</code>
+     * @return The fFAMOBKPANG.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> getEndPosListList() {
-      return endPosList_;
-    }
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-        getEndPosListOrBuilderList() {
-      return endPosList_;
-    }
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getEndPosListCount() {
-      return endPosList_.size();
-    }
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getEndPosList(int index) {
-      return endPosList_.get(index);
-    }
-    /**
-     * <code>repeated .Vector end_pos_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEndPosListOrBuilder(
-        int index) {
-      return endPosList_.get(index);
+    public boolean getFFAMOBKPANG() {
+      return fFAMOBKPANG_;
     }
 
-    public static final int ELITE_MONSTER_ID_LIST_FIELD_NUMBER = 9;
+    public static final int APKBFKDLBOI_FIELD_NUMBER = 4;
+    private boolean aPKBFKDLBOI_;
+    /**
+     * <code>bool APKBFKDLBOI = 4;</code>
+     * @return The aPKBFKDLBOI.
+     */
+    @java.lang.Override
+    public boolean getAPKBFKDLBOI() {
+      return aPKBFKDLBOI_;
+    }
+
+    public static final int ELITE_MONSTER_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList eliteMonsterIdList_;
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @return A list containing the eliteMonsterIdList.
      */
     @java.lang.Override
@@ -260,14 +279,14 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       return eliteMonsterIdList_;
     }
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @return The count of eliteMonsterIdList.
      */
     public int getEliteMonsterIdListCount() {
       return eliteMonsterIdList_.size();
     }
     /**
-     * <code>repeated uint32 elite_monster_id_list = 9;</code>
+     * <code>repeated uint32 elite_monster_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The eliteMonsterIdList at the given index.
      */
@@ -276,37 +295,95 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
     }
     private int eliteMonsterIdListMemoizedSerializedSize = -1;
 
-    public static final int PDNBALDADFM_FIELD_NUMBER = 15;
-    private boolean pDNBALDADFM_;
+    public static final int ENTRY_INFO_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> entryInfoList_;
     /**
-     * <code>bool PDNBALDADFM = 15;</code>
-     * @return The pDNBALDADFM.
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
      */
     @java.lang.Override
-    public boolean getPDNBALDADFM() {
-      return pDNBALDADFM_;
+    public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> getEntryInfoListList() {
+      return entryInfoList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder> 
+        getEntryInfoListOrBuilderList() {
+      return entryInfoList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public int getEntryInfoListCount() {
+      return entryInfoList_.size();
+    }
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData getEntryInfoList(int index) {
+      return entryInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder getEntryInfoListOrBuilder(
+        int index) {
+      return entryInfoList_.get(index);
     }
 
-    public static final int LMJKAMNBJCE_FIELD_NUMBER = 4;
-    private boolean lMJKAMNBJCE_;
+    public static final int END_POS_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> endPosList_;
     /**
-     * <code>bool LMJKAMNBJCE = 4;</code>
-     * @return The lMJKAMNBJCE.
+     * <code>repeated .Vector end_pos_list = 14;</code>
      */
     @java.lang.Override
-    public boolean getLMJKAMNBJCE() {
-      return lMJKAMNBJCE_;
+    public java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> getEndPosListList() {
+      return endPosList_;
+    }
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+        getEndPosListOrBuilderList() {
+      return endPosList_;
+    }
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    @java.lang.Override
+    public int getEndPosListCount() {
+      return endPosList_.size();
+    }
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getEndPosList(int index) {
+      return endPosList_.get(index);
+    }
+    /**
+     * <code>repeated .Vector end_pos_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEndPosListOrBuilder(
+        int index) {
+      return endPosList_.get(index);
     }
 
-    public static final int NBPHDHPIKOE_FIELD_NUMBER = 7;
-    private boolean nBPHDHPIKOE_;
+    public static final int LDLGOKIHACP_FIELD_NUMBER = 15;
+    private boolean lDLGOKIHACP_;
     /**
-     * <code>bool NBPHDHPIKOE = 7;</code>
-     * @return The nBPHDHPIKOE.
+     * <code>bool LDLGOKIHACP = 15;</code>
+     * @return The lDLGOKIHACP.
      */
     @java.lang.Override
-    public boolean getNBPHDHPIKOE() {
-      return nBPHDHPIKOE_;
+    public boolean getLDLGOKIHACP() {
+      return lDLGOKIHACP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,24 +401,27 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (lMJKAMNBJCE_ != false) {
-        output.writeBool(4, lMJKAMNBJCE_);
+      if (fFAMOBKPANG_ != false) {
+        output.writeBool(1, fFAMOBKPANG_);
       }
-      if (nBPHDHPIKOE_ != false) {
-        output.writeBool(7, nBPHDHPIKOE_);
+      if (aPKBFKDLBOI_ != false) {
+        output.writeBool(4, aPKBFKDLBOI_);
       }
       if (getEliteMonsterIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(eliteMonsterIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < eliteMonsterIdList_.size(); i++) {
         output.writeUInt32NoTag(eliteMonsterIdList_.getInt(i));
       }
-      for (int i = 0; i < endPosList_.size(); i++) {
-        output.writeMessage(12, endPosList_.get(i));
+      for (int i = 0; i < entryInfoList_.size(); i++) {
+        output.writeMessage(10, entryInfoList_.get(i));
       }
-      if (pDNBALDADFM_ != false) {
-        output.writeBool(15, pDNBALDADFM_);
+      for (int i = 0; i < endPosList_.size(); i++) {
+        output.writeMessage(14, endPosList_.get(i));
+      }
+      if (lDLGOKIHACP_ != false) {
+        output.writeBool(15, lDLGOKIHACP_);
       }
       unknownFields.writeTo(output);
     }
@@ -352,13 +432,13 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lMJKAMNBJCE_ != false) {
+      if (fFAMOBKPANG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, lMJKAMNBJCE_);
+          .computeBoolSize(1, fFAMOBKPANG_);
       }
-      if (nBPHDHPIKOE_ != false) {
+      if (aPKBFKDLBOI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, nBPHDHPIKOE_);
+          .computeBoolSize(4, aPKBFKDLBOI_);
       }
       {
         int dataSize = 0;
@@ -374,13 +454,17 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
         eliteMonsterIdListMemoizedSerializedSize = dataSize;
       }
+      for (int i = 0; i < entryInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, entryInfoList_.get(i));
+      }
       for (int i = 0; i < endPosList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, endPosList_.get(i));
+          .computeMessageSize(14, endPosList_.get(i));
       }
-      if (pDNBALDADFM_ != false) {
+      if (lDLGOKIHACP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, pDNBALDADFM_);
+          .computeBoolSize(15, lDLGOKIHACP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -397,16 +481,18 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       }
       emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData other = (emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData) obj;
 
-      if (!getEndPosListList()
-          .equals(other.getEndPosListList())) return false;
+      if (getFFAMOBKPANG()
+          != other.getFFAMOBKPANG()) return false;
+      if (getAPKBFKDLBOI()
+          != other.getAPKBFKDLBOI()) return false;
       if (!getEliteMonsterIdListList()
           .equals(other.getEliteMonsterIdListList())) return false;
-      if (getPDNBALDADFM()
-          != other.getPDNBALDADFM()) return false;
-      if (getLMJKAMNBJCE()
-          != other.getLMJKAMNBJCE()) return false;
-      if (getNBPHDHPIKOE()
-          != other.getNBPHDHPIKOE()) return false;
+      if (!getEntryInfoListList()
+          .equals(other.getEntryInfoListList())) return false;
+      if (!getEndPosListList()
+          .equals(other.getEndPosListList())) return false;
+      if (getLDLGOKIHACP()
+          != other.getLDLGOKIHACP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -418,23 +504,27 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getEndPosListCount() > 0) {
-        hash = (37 * hash) + END_POS_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEndPosListList().hashCode();
-      }
+      hash = (37 * hash) + FFAMOBKPANG_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFFAMOBKPANG());
+      hash = (37 * hash) + APKBFKDLBOI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getAPKBFKDLBOI());
       if (getEliteMonsterIdListCount() > 0) {
         hash = (37 * hash) + ELITE_MONSTER_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getEliteMonsterIdListList().hashCode();
       }
-      hash = (37 * hash) + PDNBALDADFM_FIELD_NUMBER;
+      if (getEntryInfoListCount() > 0) {
+        hash = (37 * hash) + ENTRY_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEntryInfoListList().hashCode();
+      }
+      if (getEndPosListCount() > 0) {
+        hash = (37 * hash) + END_POS_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEndPosListList().hashCode();
+      }
+      hash = (37 * hash) + LDLGOKIHACP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPDNBALDADFM());
-      hash = (37 * hash) + LMJKAMNBJCE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLMJKAMNBJCE());
-      hash = (37 * hash) + NBPHDHPIKOE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getNBPHDHPIKOE());
+          getLDLGOKIHACP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -563,25 +653,32 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getEntryInfoListFieldBuilder();
           getEndPosListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        fFAMOBKPANG_ = false;
+
+        aPKBFKDLBOI_ = false;
+
+        eliteMonsterIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (entryInfoListBuilder_ == null) {
+          entryInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          entryInfoListBuilder_.clear();
+        }
         if (endPosListBuilder_ == null) {
           endPosList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           endPosListBuilder_.clear();
         }
-        eliteMonsterIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        pDNBALDADFM_ = false;
-
-        lMJKAMNBJCE_ = false;
-
-        nBPHDHPIKOE_ = false;
+        lDLGOKIHACP_ = false;
 
         return this;
       }
@@ -610,23 +707,32 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData buildPartial() {
         emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData result = new emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData(this);
         int from_bitField0_ = bitField0_;
+        result.fFAMOBKPANG_ = fFAMOBKPANG_;
+        result.aPKBFKDLBOI_ = aPKBFKDLBOI_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          eliteMonsterIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.eliteMonsterIdList_ = eliteMonsterIdList_;
+        if (entryInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            entryInfoList_ = java.util.Collections.unmodifiableList(entryInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.entryInfoList_ = entryInfoList_;
+        } else {
+          result.entryInfoList_ = entryInfoListBuilder_.build();
+        }
         if (endPosListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             endPosList_ = java.util.Collections.unmodifiableList(endPosList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.endPosList_ = endPosList_;
         } else {
           result.endPosList_ = endPosListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          eliteMonsterIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.eliteMonsterIdList_ = eliteMonsterIdList_;
-        result.pDNBALDADFM_ = pDNBALDADFM_;
-        result.lMJKAMNBJCE_ = lMJKAMNBJCE_;
-        result.nBPHDHPIKOE_ = nBPHDHPIKOE_;
+        result.lDLGOKIHACP_ = lDLGOKIHACP_;
         onBuilt();
         return result;
       }
@@ -675,11 +781,53 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData other) {
         if (other == emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.getDefaultInstance()) return this;
+        if (other.getFFAMOBKPANG() != false) {
+          setFFAMOBKPANG(other.getFFAMOBKPANG());
+        }
+        if (other.getAPKBFKDLBOI() != false) {
+          setAPKBFKDLBOI(other.getAPKBFKDLBOI());
+        }
+        if (!other.eliteMonsterIdList_.isEmpty()) {
+          if (eliteMonsterIdList_.isEmpty()) {
+            eliteMonsterIdList_ = other.eliteMonsterIdList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureEliteMonsterIdListIsMutable();
+            eliteMonsterIdList_.addAll(other.eliteMonsterIdList_);
+          }
+          onChanged();
+        }
+        if (entryInfoListBuilder_ == null) {
+          if (!other.entryInfoList_.isEmpty()) {
+            if (entryInfoList_.isEmpty()) {
+              entryInfoList_ = other.entryInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureEntryInfoListIsMutable();
+              entryInfoList_.addAll(other.entryInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.entryInfoList_.isEmpty()) {
+            if (entryInfoListBuilder_.isEmpty()) {
+              entryInfoListBuilder_.dispose();
+              entryInfoListBuilder_ = null;
+              entryInfoList_ = other.entryInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              entryInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getEntryInfoListFieldBuilder() : null;
+            } else {
+              entryInfoListBuilder_.addAllMessages(other.entryInfoList_);
+            }
+          }
+        }
         if (endPosListBuilder_ == null) {
           if (!other.endPosList_.isEmpty()) {
             if (endPosList_.isEmpty()) {
               endPosList_ = other.endPosList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureEndPosListIsMutable();
               endPosList_.addAll(other.endPosList_);
@@ -692,7 +840,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
               endPosListBuilder_.dispose();
               endPosListBuilder_ = null;
               endPosList_ = other.endPosList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
               endPosListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getEndPosListFieldBuilder() : null;
@@ -701,24 +849,8 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
             }
           }
         }
-        if (!other.eliteMonsterIdList_.isEmpty()) {
-          if (eliteMonsterIdList_.isEmpty()) {
-            eliteMonsterIdList_ = other.eliteMonsterIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureEliteMonsterIdListIsMutable();
-            eliteMonsterIdList_.addAll(other.eliteMonsterIdList_);
-          }
-          onChanged();
-        }
-        if (other.getPDNBALDADFM() != false) {
-          setPDNBALDADFM(other.getPDNBALDADFM());
-        }
-        if (other.getLMJKAMNBJCE() != false) {
-          setLMJKAMNBJCE(other.getLMJKAMNBJCE());
-        }
-        if (other.getNBPHDHPIKOE() != false) {
-          setNBPHDHPIKOE(other.getNBPHDHPIKOE());
+        if (other.getLDLGOKIHACP() != false) {
+          setLDLGOKIHACP(other.getLDLGOKIHACP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -750,12 +882,393 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       }
       private int bitField0_;
 
+      private boolean fFAMOBKPANG_ ;
+      /**
+       * <code>bool FFAMOBKPANG = 1;</code>
+       * @return The fFAMOBKPANG.
+       */
+      @java.lang.Override
+      public boolean getFFAMOBKPANG() {
+        return fFAMOBKPANG_;
+      }
+      /**
+       * <code>bool FFAMOBKPANG = 1;</code>
+       * @param value The fFAMOBKPANG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFFAMOBKPANG(boolean value) {
+        
+        fFAMOBKPANG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool FFAMOBKPANG = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFFAMOBKPANG() {
+        
+        fFAMOBKPANG_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean aPKBFKDLBOI_ ;
+      /**
+       * <code>bool APKBFKDLBOI = 4;</code>
+       * @return The aPKBFKDLBOI.
+       */
+      @java.lang.Override
+      public boolean getAPKBFKDLBOI() {
+        return aPKBFKDLBOI_;
+      }
+      /**
+       * <code>bool APKBFKDLBOI = 4;</code>
+       * @param value The aPKBFKDLBOI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAPKBFKDLBOI(boolean value) {
+        
+        aPKBFKDLBOI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool APKBFKDLBOI = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAPKBFKDLBOI() {
+        
+        aPKBFKDLBOI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList eliteMonsterIdList_ = emptyIntList();
+      private void ensureEliteMonsterIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          eliteMonsterIdList_ = mutableCopy(eliteMonsterIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @return A list containing the eliteMonsterIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getEliteMonsterIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(eliteMonsterIdList_) : eliteMonsterIdList_;
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @return The count of eliteMonsterIdList.
+       */
+      public int getEliteMonsterIdListCount() {
+        return eliteMonsterIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @param index The index of the element to return.
+       * @return The eliteMonsterIdList at the given index.
+       */
+      public int getEliteMonsterIdList(int index) {
+        return eliteMonsterIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @param index The index to set the value at.
+       * @param value The eliteMonsterIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEliteMonsterIdList(
+          int index, int value) {
+        ensureEliteMonsterIdListIsMutable();
+        eliteMonsterIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @param value The eliteMonsterIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addEliteMonsterIdList(int value) {
+        ensureEliteMonsterIdListIsMutable();
+        eliteMonsterIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @param values The eliteMonsterIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllEliteMonsterIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureEliteMonsterIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, eliteMonsterIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 elite_monster_id_list = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEliteMonsterIdList() {
+        eliteMonsterIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> entryInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureEntryInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          entryInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData>(entryInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder> entryInfoListBuilder_;
+
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> getEntryInfoListList() {
+        if (entryInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(entryInfoList_);
+        } else {
+          return entryInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public int getEntryInfoListCount() {
+        if (entryInfoListBuilder_ == null) {
+          return entryInfoList_.size();
+        } else {
+          return entryInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData getEntryInfoList(int index) {
+        if (entryInfoListBuilder_ == null) {
+          return entryInfoList_.get(index);
+        } else {
+          return entryInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder setEntryInfoList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData value) {
+        if (entryInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.set(index, value);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder setEntryInfoList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder builderForValue) {
+        if (entryInfoListBuilder_ == null) {
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          entryInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder addEntryInfoList(emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData value) {
+        if (entryInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.add(value);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder addEntryInfoList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData value) {
+        if (entryInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.add(index, value);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder addEntryInfoList(
+          emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder builderForValue) {
+        if (entryInfoListBuilder_ == null) {
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          entryInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder addEntryInfoList(
+          int index, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder builderForValue) {
+        if (entryInfoListBuilder_ == null) {
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          entryInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder addAllEntryInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData> values) {
+        if (entryInfoListBuilder_ == null) {
+          ensureEntryInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, entryInfoList_);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder clearEntryInfoList() {
+        if (entryInfoListBuilder_ == null) {
+          entryInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public Builder removeEntryInfoList(int index) {
+        if (entryInfoListBuilder_ == null) {
+          ensureEntryInfoListIsMutable();
+          entryInfoList_.remove(index);
+          onChanged();
+        } else {
+          entryInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder getEntryInfoListBuilder(
+          int index) {
+        return getEntryInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder getEntryInfoListOrBuilder(
+          int index) {
+        if (entryInfoListBuilder_ == null) {
+          return entryInfoList_.get(index);  } else {
+          return entryInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder> 
+           getEntryInfoListOrBuilderList() {
+        if (entryInfoListBuilder_ != null) {
+          return entryInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(entryInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder addEntryInfoListBuilder() {
+        return getEntryInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder addEntryInfoListBuilder(
+          int index) {
+        return getEntryInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .UgcDungeonRoomEntryInfoData entry_info_list = 10;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder> 
+           getEntryInfoListBuilderList() {
+        return getEntryInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder> 
+          getEntryInfoListFieldBuilder() {
+        if (entryInfoListBuilder_ == null) {
+          entryInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoData.Builder, emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.UgcDungeonRoomEntryInfoDataOrBuilder>(
+                  entryInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          entryInfoList_ = null;
+        }
+        return entryInfoListBuilder_;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> endPosList_ =
         java.util.Collections.emptyList();
       private void ensureEndPosListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           endPosList_ = new java.util.ArrayList<emu.grasscutter.net.proto.VectorOuterClass.Vector>(endPosList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -763,7 +1276,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> endPosListBuilder_;
 
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> getEndPosListList() {
         if (endPosListBuilder_ == null) {
@@ -773,7 +1286,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public int getEndPosListCount() {
         if (endPosListBuilder_ == null) {
@@ -783,7 +1296,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getEndPosList(int index) {
         if (endPosListBuilder_ == null) {
@@ -793,7 +1306,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder setEndPosList(
           int index, emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -810,7 +1323,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder setEndPosList(
           int index, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -824,7 +1337,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder addEndPosList(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (endPosListBuilder_ == null) {
@@ -840,7 +1353,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder addEndPosList(
           int index, emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -857,7 +1370,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder addEndPosList(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -871,7 +1384,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder addEndPosList(
           int index, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -885,7 +1398,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder addAllEndPosList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.VectorOuterClass.Vector> values) {
@@ -900,12 +1413,12 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder clearEndPosList() {
         if (endPosListBuilder_ == null) {
           endPosList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           endPosListBuilder_.clear();
@@ -913,7 +1426,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public Builder removeEndPosList(int index) {
         if (endPosListBuilder_ == null) {
@@ -926,14 +1439,14 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getEndPosListBuilder(
           int index) {
         return getEndPosListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEndPosListOrBuilder(
           int index) {
@@ -943,7 +1456,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
            getEndPosListOrBuilderList() {
@@ -954,14 +1467,14 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         }
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder addEndPosListBuilder() {
         return getEndPosListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance());
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder addEndPosListBuilder(
           int index) {
@@ -969,7 +1482,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
             index, emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance());
       }
       /**
-       * <code>repeated .Vector end_pos_list = 12;</code>
+       * <code>repeated .Vector end_pos_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder> 
            getEndPosListBuilderList() {
@@ -982,7 +1495,7 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
           endPosListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
                   endPosList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           endPosList_ = null;
@@ -990,174 +1503,33 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
         return endPosListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList eliteMonsterIdList_ = emptyIntList();
-      private void ensureEliteMonsterIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          eliteMonsterIdList_ = mutableCopy(eliteMonsterIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private boolean lDLGOKIHACP_ ;
       /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @return A list containing the eliteMonsterIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getEliteMonsterIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(eliteMonsterIdList_) : eliteMonsterIdList_;
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @return The count of eliteMonsterIdList.
-       */
-      public int getEliteMonsterIdListCount() {
-        return eliteMonsterIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The eliteMonsterIdList at the given index.
-       */
-      public int getEliteMonsterIdList(int index) {
-        return eliteMonsterIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The eliteMonsterIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEliteMonsterIdList(
-          int index, int value) {
-        ensureEliteMonsterIdListIsMutable();
-        eliteMonsterIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @param value The eliteMonsterIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addEliteMonsterIdList(int value) {
-        ensureEliteMonsterIdListIsMutable();
-        eliteMonsterIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @param values The eliteMonsterIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllEliteMonsterIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEliteMonsterIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, eliteMonsterIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 elite_monster_id_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEliteMonsterIdList() {
-        eliteMonsterIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private boolean pDNBALDADFM_ ;
-      /**
-       * <code>bool PDNBALDADFM = 15;</code>
-       * @return The pDNBALDADFM.
+       * <code>bool LDLGOKIHACP = 15;</code>
+       * @return The lDLGOKIHACP.
        */
       @java.lang.Override
-      public boolean getPDNBALDADFM() {
-        return pDNBALDADFM_;
+      public boolean getLDLGOKIHACP() {
+        return lDLGOKIHACP_;
       }
       /**
-       * <code>bool PDNBALDADFM = 15;</code>
-       * @param value The pDNBALDADFM to set.
+       * <code>bool LDLGOKIHACP = 15;</code>
+       * @param value The lDLGOKIHACP to set.
        * @return This builder for chaining.
        */
-      public Builder setPDNBALDADFM(boolean value) {
+      public Builder setLDLGOKIHACP(boolean value) {
         
-        pDNBALDADFM_ = value;
+        lDLGOKIHACP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool PDNBALDADFM = 15;</code>
+       * <code>bool LDLGOKIHACP = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPDNBALDADFM() {
+      public Builder clearLDLGOKIHACP() {
         
-        pDNBALDADFM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean lMJKAMNBJCE_ ;
-      /**
-       * <code>bool LMJKAMNBJCE = 4;</code>
-       * @return The lMJKAMNBJCE.
-       */
-      @java.lang.Override
-      public boolean getLMJKAMNBJCE() {
-        return lMJKAMNBJCE_;
-      }
-      /**
-       * <code>bool LMJKAMNBJCE = 4;</code>
-       * @param value The lMJKAMNBJCE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLMJKAMNBJCE(boolean value) {
-        
-        lMJKAMNBJCE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool LMJKAMNBJCE = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLMJKAMNBJCE() {
-        
-        lMJKAMNBJCE_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean nBPHDHPIKOE_ ;
-      /**
-       * <code>bool NBPHDHPIKOE = 7;</code>
-       * @return The nBPHDHPIKOE.
-       */
-      @java.lang.Override
-      public boolean getNBPHDHPIKOE() {
-        return nBPHDHPIKOE_;
-      }
-      /**
-       * <code>bool NBPHDHPIKOE = 7;</code>
-       * @param value The nBPHDHPIKOE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNBPHDHPIKOE(boolean value) {
-        
-        nBPHDHPIKOE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool NBPHDHPIKOE = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNBPHDHPIKOE() {
-        
-        nBPHDHPIKOE_ = false;
+        lDLGOKIHACP_ = false;
         onChanged();
         return this;
       }
@@ -1228,16 +1600,20 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037UgcDungeonRoomDisplayData.proto\032\014Vecto" +
-      "r.proto\"\230\001\n\031UgcDungeonRoomDisplayData\022\035\n" +
-      "\014end_pos_list\030\014 \003(\0132\007.Vector\022\035\n\025elite_mo" +
-      "nster_id_list\030\t \003(\r\022\023\n\013PDNBALDADFM\030\017 \001(\010" +
-      "\022\023\n\013LMJKAMNBJCE\030\004 \001(\010\022\023\n\013NBPHDHPIKOE\030\007 \001" +
-      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\037UgcDungeonRoomDisplayData.proto\032!UgcDu" +
+      "ngeonRoomEntryInfoData.proto\032\014Vector.pro" +
+      "to\"\317\001\n\031UgcDungeonRoomDisplayData\022\023\n\013FFAM" +
+      "OBKPANG\030\001 \001(\010\022\023\n\013APKBFKDLBOI\030\004 \001(\010\022\035\n\025el" +
+      "ite_monster_id_list\030\010 \003(\r\0225\n\017entry_info_" +
+      "list\030\n \003(\0132\034.UgcDungeonRoomEntryInfoData" +
+      "\022\035\n\014end_pos_list\030\016 \003(\0132\007.Vector\022\023\n\013LDLGO" +
+      "KIHACP\030\017 \001(\010B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_UgcDungeonRoomDisplayData_descriptor =
@@ -1245,7 +1621,8 @@ public final class UgcDungeonRoomDisplayDataOuterClass {
     internal_static_UgcDungeonRoomDisplayData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcDungeonRoomDisplayData_descriptor,
-        new java.lang.String[] { "EndPosList", "EliteMonsterIdList", "PDNBALDADFM", "LMJKAMNBJCE", "NBPHDHPIKOE", });
+        new java.lang.String[] { "FFAMOBKPANG", "APKBFKDLBOI", "EliteMonsterIdList", "EntryInfoList", "EndPosList", "LDLGOKIHACP", });
+    emu.grasscutter.net.proto.UgcDungeonRoomEntryInfoDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

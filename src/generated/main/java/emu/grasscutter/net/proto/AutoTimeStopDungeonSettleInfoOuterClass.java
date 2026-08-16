@@ -19,28 +19,44 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 7;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 COKJGMKOMKD = 6;</code>
+     * @return The cOKJGMKOMKD.
      */
-    boolean getIsNewRecord();
+    int getCOKJGMKOMKD();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 score = 14;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 4;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
-    int getLevelId();
-
-    /**
-     * <code>uint32 HHEDALMDPOE = 8;</code>
-     * @return The hHEDALMDPOE.
-     */
-    int getHHEDALMDPOE();
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code AutoTimeStopDungeonSettleInfo}
@@ -87,19 +103,19 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 24: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 64: {
+            case 48: {
 
-              hHEDALMDPOE_ = input.readUInt32();
+              cOKJGMKOMKD_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -139,20 +155,43 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo.class, emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
-    private boolean isNewRecord_;
+    public static final int COKJGMKOMKD_FIELD_NUMBER = 6;
+    private int cOKJGMKOMKD_;
     /**
-     * <code>bool is_new_record = 7;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 COKJGMKOMKD = 6;</code>
+     * @return The cOKJGMKOMKD.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getCOKJGMKOMKD() {
+      return cOKJGMKOMKD_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     public static final int SCORE_FIELD_NUMBER = 14;
     private int score_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 score = 14;</code>
      * @return The score.
      */
@@ -161,26 +200,19 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
-    private int levelId_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    private boolean isNewRecord_;
     /**
-     * <code>uint32 level_id = 4;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int HHEDALMDPOE_FIELD_NUMBER = 8;
-    private int hHEDALMDPOE_;
-    /**
-     * <code>uint32 HHEDALMDPOE = 8;</code>
-     * @return The hHEDALMDPOE.
-     */
-    @java.lang.Override
-    public int getHHEDALMDPOE() {
-      return hHEDALMDPOE_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -198,13 +230,13 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
+        output.writeBool(3, isNewRecord_);
       }
-      if (hHEDALMDPOE_ != 0) {
-        output.writeUInt32(8, hHEDALMDPOE_);
+      if (cOKJGMKOMKD_ != 0) {
+        output.writeUInt32(6, cOKJGMKOMKD_);
       }
       if (score_ != 0) {
         output.writeUInt32(14, score_);
@@ -220,15 +252,15 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
+          .computeBoolSize(3, isNewRecord_);
       }
-      if (hHEDALMDPOE_ != 0) {
+      if (cOKJGMKOMKD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, hHEDALMDPOE_);
+          .computeUInt32Size(6, cOKJGMKOMKD_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,14 +281,14 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo other = (emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getScore()
-          != other.getScore()) return false;
+      if (getCOKJGMKOMKD()
+          != other.getCOKJGMKOMKD()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getHHEDALMDPOE()
-          != other.getHHEDALMDPOE()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +300,15 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COKJGMKOMKD_FIELD_NUMBER;
+      hash = (53 * hash) + getCOKJGMKOMKD();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + HHEDALMDPOE_FIELD_NUMBER;
-      hash = (53 * hash) + getHHEDALMDPOE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +442,13 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
-        score_ = 0;
+        cOKJGMKOMKD_ = 0;
 
         levelId_ = 0;
 
-        hHEDALMDPOE_ = 0;
+        score_ = 0;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -444,10 +476,10 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo result = new emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
-        result.score_ = score_;
+        result.cOKJGMKOMKD_ = cOKJGMKOMKD_;
         result.levelId_ = levelId_;
-        result.hHEDALMDPOE_ = hHEDALMDPOE_;
+        result.score_ = score_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -496,17 +528,17 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.AutoTimeStopDungeonSettleInfoOuterClass.AutoTimeStopDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getCOKJGMKOMKD() != 0) {
+          setCOKJGMKOMKD(other.getCOKJGMKOMKD());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getHHEDALMDPOE() != 0) {
-          setHHEDALMDPOE(other.getHHEDALMDPOE());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,39 +569,98 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
+      private int cOKJGMKOMKD_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
-       * @return The isNewRecord.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 COKJGMKOMKD = 6;</code>
+       * @return The cOKJGMKOMKD.
        */
       @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
+      public int getCOKJGMKOMKD() {
+        return cOKJGMKOMKD_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
-       * @param value The isNewRecord to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 COKJGMKOMKD = 6;</code>
+       * @param value The cOKJGMKOMKD to set.
        * @return This builder for chaining.
        */
-      public Builder setIsNewRecord(boolean value) {
+      public Builder setCOKJGMKOMKD(int value) {
         
-        isNewRecord_ = value;
+        cOKJGMKOMKD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 COKJGMKOMKD = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsNewRecord() {
+      public Builder clearCOKJGMKOMKD() {
         
-        isNewRecord_ = false;
+        cOKJGMKOMKD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 1;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 1;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
 
       private int score_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 score = 14;</code>
        * @return The score.
        */
@@ -578,6 +669,10 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
         return score_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 score = 14;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -589,6 +684,10 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 score = 14;</code>
        * @return This builder for chaining.
        */
@@ -599,64 +698,45 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
+      private boolean isNewRecord_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
-       * @return The levelId.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @return The isNewRecord.
        */
       @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
-       * @param value The levelId to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
-      public Builder setLevelId(int value) {
+      public Builder setIsNewRecord(boolean value) {
         
-        levelId_ = value;
+        isNewRecord_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevelId() {
+      public Builder clearIsNewRecord() {
         
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hHEDALMDPOE_ ;
-      /**
-       * <code>uint32 HHEDALMDPOE = 8;</code>
-       * @return The hHEDALMDPOE.
-       */
-      @java.lang.Override
-      public int getHHEDALMDPOE() {
-        return hHEDALMDPOE_;
-      }
-      /**
-       * <code>uint32 HHEDALMDPOE = 8;</code>
-       * @param value The hHEDALMDPOE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHHEDALMDPOE(int value) {
-        
-        hHEDALMDPOE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HHEDALMDPOE = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHHEDALMDPOE() {
-        
-        hHEDALMDPOE_ = 0;
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -728,9 +808,9 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#AutoTimeStopDungeonSettleInfo.proto\"l\n" +
-      "\035AutoTimeStopDungeonSettleInfo\022\025\n\ris_new" +
-      "_record\030\007 \001(\010\022\r\n\005score\030\016 \001(\r\022\020\n\010level_id" +
-      "\030\004 \001(\r\022\023\n\013HHEDALMDPOE\030\010 \001(\rB\033\n\031emu.grass" +
+      "\035AutoTimeStopDungeonSettleInfo\022\023\n\013COKJGM" +
+      "KOMKD\030\006 \001(\r\022\020\n\010level_id\030\001 \001(\r\022\r\n\005score\030\016" +
+      " \001(\r\022\025\n\ris_new_record\030\003 \001(\010B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +822,7 @@ public final class AutoTimeStopDungeonSettleInfoOuterClass {
     internal_static_AutoTimeStopDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AutoTimeStopDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "Score", "LevelId", "HHEDALMDPOE", });
+        new java.lang.String[] { "COKJGMKOMKD", "LevelId", "Score", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

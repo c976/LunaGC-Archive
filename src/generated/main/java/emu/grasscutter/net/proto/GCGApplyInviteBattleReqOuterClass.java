@@ -19,17 +19,16 @@ public final class GCGApplyInviteBattleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 9;</code>
+     * <pre>
+     * CMD_ID = 25398
+     * </pre>
+     *
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
   }
   /**
-   * <pre>
-   * CmdId: 871
-   * Obf: EJIKDIPBAPO
-   * </pre>
-   *
    * Protobuf type {@code GCGApplyInviteBattleReq}
    */
   public static final class GCGApplyInviteBattleReq extends
@@ -74,7 +73,7 @@ public final class GCGApplyInviteBattleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 8: {
 
               isAgree_ = input.readBool();
               break;
@@ -111,10 +110,14 @@ public final class GCGApplyInviteBattleReqOuterClass {
               emu.grasscutter.net.proto.GCGApplyInviteBattleReqOuterClass.GCGApplyInviteBattleReq.class, emu.grasscutter.net.proto.GCGApplyInviteBattleReqOuterClass.GCGApplyInviteBattleReq.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 9;
+    public static final int IS_AGREE_FIELD_NUMBER = 1;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 9;</code>
+     * <pre>
+     * CMD_ID = 25398
+     * </pre>
+     *
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGApplyInviteBattleReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAgree_ != false) {
-        output.writeBool(9, isAgree_);
+        output.writeBool(1, isAgree_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGApplyInviteBattleReqOuterClass {
       size = 0;
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isAgree_);
+          .computeBoolSize(1, isAgree_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,11 +282,6 @@ public final class GCGApplyInviteBattleReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 871
-     * Obf: EJIKDIPBAPO
-     * </pre>
-     *
      * Protobuf type {@code GCGApplyInviteBattleReq}
      */
     public static final class Builder extends
@@ -432,7 +430,11 @@ public final class GCGApplyInviteBattleReqOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 9;</code>
+       * <pre>
+       * CMD_ID = 25398
+       * </pre>
+       *
+       * <code>bool is_agree = 1;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -440,7 +442,11 @@ public final class GCGApplyInviteBattleReqOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 9;</code>
+       * <pre>
+       * CMD_ID = 25398
+       * </pre>
+       *
+       * <code>bool is_agree = 1;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -451,7 +457,11 @@ public final class GCGApplyInviteBattleReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 9;</code>
+       * <pre>
+       * CMD_ID = 25398
+       * </pre>
+       *
+       * <code>bool is_agree = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -528,7 +538,7 @@ public final class GCGApplyInviteBattleReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GCGApplyInviteBattleReq.proto\"+\n\027GCGAp" +
-      "plyInviteBattleReq\022\020\n\010is_agree\030\t \001(\010B\033\n\031" +
+      "plyInviteBattleReq\022\020\n\010is_agree\030\001 \001(\010B\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

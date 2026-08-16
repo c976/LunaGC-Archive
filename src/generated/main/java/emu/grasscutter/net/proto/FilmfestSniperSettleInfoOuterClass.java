@@ -19,19 +19,19 @@ public final class FilmfestSniperSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float EIFEJNBGCNJ = 6;</code>
-     * @return The eIFEJNBGCNJ.
+     * <code>float PDBNLLOCCEC = 4;</code>
+     * @return The pDBNLLOCCEC.
      */
-    float getEIFEJNBGCNJ();
+    float getPDBNLLOCCEC();
 
     /**
-     * <code>uint32 IPLNJDIILMJ = 15;</code>
-     * @return The iPLNJDIILMJ.
+     * <code>uint32 LBDJECHLNLE = 10;</code>
+     * @return The lBDJECHLNLE.
      */
-    int getIPLNJDIILMJ();
+    int getLBDJECHLNLE();
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -81,19 +81,19 @@ public final class FilmfestSniperSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 37: {
+
+              pDBNLLOCCEC_ = input.readFloat();
+              break;
+            }
+            case 80: {
+
+              lBDJECHLNLE_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               levelId_ = input.readUInt32();
-              break;
-            }
-            case 53: {
-
-              eIFEJNBGCNJ_ = input.readFloat();
-              break;
-            }
-            case 120: {
-
-              iPLNJDIILMJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,32 +128,32 @@ public final class FilmfestSniperSettleInfoOuterClass {
               emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.class, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder.class);
     }
 
-    public static final int EIFEJNBGCNJ_FIELD_NUMBER = 6;
-    private float eIFEJNBGCNJ_;
+    public static final int PDBNLLOCCEC_FIELD_NUMBER = 4;
+    private float pDBNLLOCCEC_;
     /**
-     * <code>float EIFEJNBGCNJ = 6;</code>
-     * @return The eIFEJNBGCNJ.
+     * <code>float PDBNLLOCCEC = 4;</code>
+     * @return The pDBNLLOCCEC.
      */
     @java.lang.Override
-    public float getEIFEJNBGCNJ() {
-      return eIFEJNBGCNJ_;
+    public float getPDBNLLOCCEC() {
+      return pDBNLLOCCEC_;
     }
 
-    public static final int IPLNJDIILMJ_FIELD_NUMBER = 15;
-    private int iPLNJDIILMJ_;
+    public static final int LBDJECHLNLE_FIELD_NUMBER = 10;
+    private int lBDJECHLNLE_;
     /**
-     * <code>uint32 IPLNJDIILMJ = 15;</code>
-     * @return The iPLNJDIILMJ.
+     * <code>uint32 LBDJECHLNLE = 10;</code>
+     * @return The lBDJECHLNLE.
      */
     @java.lang.Override
-    public int getIPLNJDIILMJ() {
-      return iPLNJDIILMJ_;
+    public int getLBDJECHLNLE() {
+      return lBDJECHLNLE_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class FilmfestSniperSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (pDBNLLOCCEC_ != 0F) {
+        output.writeFloat(4, pDBNLLOCCEC_);
+      }
+      if (lBDJECHLNLE_ != 0) {
+        output.writeUInt32(10, lBDJECHLNLE_);
+      }
       if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
-      if (eIFEJNBGCNJ_ != 0F) {
-        output.writeFloat(6, eIFEJNBGCNJ_);
-      }
-      if (iPLNJDIILMJ_ != 0) {
-        output.writeUInt32(15, iPLNJDIILMJ_);
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class FilmfestSniperSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (pDBNLLOCCEC_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(4, pDBNLLOCCEC_);
+      }
+      if (lBDJECHLNLE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, lBDJECHLNLE_);
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
-      if (eIFEJNBGCNJ_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, eIFEJNBGCNJ_);
-      }
-      if (iPLNJDIILMJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, iPLNJDIILMJ_);
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,11 +220,11 @@ public final class FilmfestSniperSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo other = (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) obj;
 
-      if (java.lang.Float.floatToIntBits(getEIFEJNBGCNJ())
+      if (java.lang.Float.floatToIntBits(getPDBNLLOCCEC())
           != java.lang.Float.floatToIntBits(
-              other.getEIFEJNBGCNJ())) return false;
-      if (getIPLNJDIILMJ()
-          != other.getIPLNJDIILMJ()) return false;
+              other.getPDBNLLOCCEC())) return false;
+      if (getLBDJECHLNLE()
+          != other.getLBDJECHLNLE()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -238,11 +238,11 @@ public final class FilmfestSniperSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EIFEJNBGCNJ_FIELD_NUMBER;
+      hash = (37 * hash) + PDBNLLOCCEC_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getEIFEJNBGCNJ());
-      hash = (37 * hash) + IPLNJDIILMJ_FIELD_NUMBER;
-      hash = (53 * hash) + getIPLNJDIILMJ();
+          getPDBNLLOCCEC());
+      hash = (37 * hash) + LBDJECHLNLE_FIELD_NUMBER;
+      hash = (53 * hash) + getLBDJECHLNLE();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -378,9 +378,9 @@ public final class FilmfestSniperSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eIFEJNBGCNJ_ = 0F;
+        pDBNLLOCCEC_ = 0F;
 
-        iPLNJDIILMJ_ = 0;
+        lBDJECHLNLE_ = 0;
 
         levelId_ = 0;
 
@@ -410,8 +410,8 @@ public final class FilmfestSniperSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo result = new emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo(this);
-        result.eIFEJNBGCNJ_ = eIFEJNBGCNJ_;
-        result.iPLNJDIILMJ_ = iPLNJDIILMJ_;
+        result.pDBNLLOCCEC_ = pDBNLLOCCEC_;
+        result.lBDJECHLNLE_ = lBDJECHLNLE_;
         result.levelId_ = levelId_;
         onBuilt();
         return result;
@@ -461,11 +461,11 @@ public final class FilmfestSniperSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance()) return this;
-        if (other.getEIFEJNBGCNJ() != 0F) {
-          setEIFEJNBGCNJ(other.getEIFEJNBGCNJ());
+        if (other.getPDBNLLOCCEC() != 0F) {
+          setPDBNLLOCCEC(other.getPDBNLLOCCEC());
         }
-        if (other.getIPLNJDIILMJ() != 0) {
-          setIPLNJDIILMJ(other.getIPLNJDIILMJ());
+        if (other.getLBDJECHLNLE() != 0) {
+          setLBDJECHLNLE(other.getLBDJECHLNLE());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -499,71 +499,71 @@ public final class FilmfestSniperSettleInfoOuterClass {
         return this;
       }
 
-      private float eIFEJNBGCNJ_ ;
+      private float pDBNLLOCCEC_ ;
       /**
-       * <code>float EIFEJNBGCNJ = 6;</code>
-       * @return The eIFEJNBGCNJ.
+       * <code>float PDBNLLOCCEC = 4;</code>
+       * @return The pDBNLLOCCEC.
        */
       @java.lang.Override
-      public float getEIFEJNBGCNJ() {
-        return eIFEJNBGCNJ_;
+      public float getPDBNLLOCCEC() {
+        return pDBNLLOCCEC_;
       }
       /**
-       * <code>float EIFEJNBGCNJ = 6;</code>
-       * @param value The eIFEJNBGCNJ to set.
+       * <code>float PDBNLLOCCEC = 4;</code>
+       * @param value The pDBNLLOCCEC to set.
        * @return This builder for chaining.
        */
-      public Builder setEIFEJNBGCNJ(float value) {
+      public Builder setPDBNLLOCCEC(float value) {
         
-        eIFEJNBGCNJ_ = value;
+        pDBNLLOCCEC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float EIFEJNBGCNJ = 6;</code>
+       * <code>float PDBNLLOCCEC = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEIFEJNBGCNJ() {
+      public Builder clearPDBNLLOCCEC() {
         
-        eIFEJNBGCNJ_ = 0F;
+        pDBNLLOCCEC_ = 0F;
         onChanged();
         return this;
       }
 
-      private int iPLNJDIILMJ_ ;
+      private int lBDJECHLNLE_ ;
       /**
-       * <code>uint32 IPLNJDIILMJ = 15;</code>
-       * @return The iPLNJDIILMJ.
+       * <code>uint32 LBDJECHLNLE = 10;</code>
+       * @return The lBDJECHLNLE.
        */
       @java.lang.Override
-      public int getIPLNJDIILMJ() {
-        return iPLNJDIILMJ_;
+      public int getLBDJECHLNLE() {
+        return lBDJECHLNLE_;
       }
       /**
-       * <code>uint32 IPLNJDIILMJ = 15;</code>
-       * @param value The iPLNJDIILMJ to set.
+       * <code>uint32 LBDJECHLNLE = 10;</code>
+       * @param value The lBDJECHLNLE to set.
        * @return This builder for chaining.
        */
-      public Builder setIPLNJDIILMJ(int value) {
+      public Builder setLBDJECHLNLE(int value) {
         
-        iPLNJDIILMJ_ = value;
+        lBDJECHLNLE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IPLNJDIILMJ = 15;</code>
+       * <code>uint32 LBDJECHLNLE = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIPLNJDIILMJ() {
+      public Builder clearLBDJECHLNLE() {
         
-        iPLNJDIILMJ_ = 0;
+        lBDJECHLNLE_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class FilmfestSniperSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class FilmfestSniperSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -659,8 +659,8 @@ public final class FilmfestSniperSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036FilmfestSniperSettleInfo.proto\"V\n\030Film" +
-      "festSniperSettleInfo\022\023\n\013EIFEJNBGCNJ\030\006 \001(" +
-      "\002\022\023\n\013IPLNJDIILMJ\030\017 \001(\r\022\020\n\010level_id\030\001 \001(\r" +
+      "festSniperSettleInfo\022\023\n\013PDBNLLOCCEC\030\004 \001(" +
+      "\002\022\023\n\013LBDJECHLNLE\030\n \001(\r\022\020\n\010level_id\030\016 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -672,7 +672,7 @@ public final class FilmfestSniperSettleInfoOuterClass {
     internal_static_FilmfestSniperSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FilmfestSniperSettleInfo_descriptor,
-        new java.lang.String[] { "EIFEJNBGCNJ", "IPLNJDIILMJ", "LevelId", });
+        new java.lang.String[] { "PDBNLLOCCEC", "LBDJECHLNLE", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

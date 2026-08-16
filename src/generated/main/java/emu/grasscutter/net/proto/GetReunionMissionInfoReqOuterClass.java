@@ -19,15 +19,18 @@ public final class GetReunionMissionInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mission_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 mission_id = 5;</code>
      * @return The missionId.
      */
     int getMissionId();
   }
   /**
    * <pre>
-   * CmdId: 27824
-   * Obf: IHHNMIHLAMJ
+   * CmdId: 22334
    * </pre>
    *
    * Protobuf type {@code GetReunionMissionInfoReq}
@@ -74,7 +77,7 @@ public final class GetReunionMissionInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               missionId_ = input.readUInt32();
               break;
@@ -111,10 +114,14 @@ public final class GetReunionMissionInfoReqOuterClass {
               emu.grasscutter.net.proto.GetReunionMissionInfoReqOuterClass.GetReunionMissionInfoReq.class, emu.grasscutter.net.proto.GetReunionMissionInfoReqOuterClass.GetReunionMissionInfoReq.Builder.class);
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 7;
+    public static final int MISSION_ID_FIELD_NUMBER = 5;
     private int missionId_;
     /**
-     * <code>uint32 mission_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 mission_id = 5;</code>
      * @return The missionId.
      */
     @java.lang.Override
@@ -137,7 +144,7 @@ public final class GetReunionMissionInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (missionId_ != 0) {
-        output.writeUInt32(7, missionId_);
+        output.writeUInt32(5, missionId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +157,7 @@ public final class GetReunionMissionInfoReqOuterClass {
       size = 0;
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, missionId_);
+          .computeUInt32Size(5, missionId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +286,7 @@ public final class GetReunionMissionInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27824
-     * Obf: IHHNMIHLAMJ
+     * CmdId: 22334
      * </pre>
      *
      * Protobuf type {@code GetReunionMissionInfoReq}
@@ -431,7 +437,11 @@ public final class GetReunionMissionInfoReqOuterClass {
 
       private int missionId_ ;
       /**
-       * <code>uint32 mission_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 5;</code>
        * @return The missionId.
        */
       @java.lang.Override
@@ -439,7 +449,11 @@ public final class GetReunionMissionInfoReqOuterClass {
         return missionId_;
       }
       /**
-       * <code>uint32 mission_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 5;</code>
        * @param value The missionId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +464,11 @@ public final class GetReunionMissionInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mission_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionId() {
@@ -527,7 +545,7 @@ public final class GetReunionMissionInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GetReunionMissionInfoReq.proto\".\n\030GetR" +
-      "eunionMissionInfoReq\022\022\n\nmission_id\030\007 \001(\r" +
+      "eunionMissionInfoReq\022\022\n\nmission_id\030\005 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

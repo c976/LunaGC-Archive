@@ -19,27 +19,47 @@ public final class QuickTimeCombatDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> 
+    java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> 
         getStageInfoListList();
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo getStageInfoList(int index);
+    emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA getStageInfoList(int index);
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     int getStageInfoListCount();
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder> 
         getStageInfoListOrBuilderList();
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder getStageInfoListOrBuilder(
+    emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder getStageInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class QuickTimeCombatDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo>();
+                stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA>();
                 mutable_bitField0_ |= 0x00000001;
               }
               stageInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class QuickTimeCombatDetailInfoOuterClass {
               emu.grasscutter.net.proto.QuickTimeCombatDetailInfoOuterClass.QuickTimeCombatDetailInfo.class, emu.grasscutter.net.proto.QuickTimeCombatDetailInfoOuterClass.QuickTimeCombatDetailInfo.Builder.class);
     }
 
-    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> stageInfoList_;
+    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> stageInfoList_;
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> getStageInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> getStageInfoListList() {
       return stageInfoList_;
     }
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder> 
         getStageInfoListOrBuilderList() {
       return stageInfoList_;
     }
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     @java.lang.Override
     public int getStageInfoListCount() {
       return stageInfoList_.size();
     }
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo getStageInfoList(int index) {
+    public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA getStageInfoList(int index) {
       return stageInfoList_.get(index);
     }
     /**
-     * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder getStageInfoListOrBuilder(
+    public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder getStageInfoListOrBuilder(
         int index) {
       return stageInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class QuickTimeCombatDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < stageInfoList_.size(); i++) {
-        output.writeMessage(2, stageInfoList_.get(i));
+        output.writeMessage(6, stageInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class QuickTimeCombatDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < stageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, stageInfoList_.get(i));
+          .computeMessageSize(6, stageInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class QuickTimeCombatDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> stageInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> stageInfoList_ =
         java.util.Collections.emptyList();
       private void ensureStageInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo>(stageInfoList_);
+          stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA>(stageInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder> stageInfoListBuilder_;
+          emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder> stageInfoListBuilder_;
 
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> getStageInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> getStageInfoListList() {
         if (stageInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(stageInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public int getStageInfoListCount() {
         if (stageInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo getStageInfoList(int index) {
+      public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA getStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
           return stageInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder setStageInfoList(
-          int index, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo value) {
+          int index, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA value) {
         if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder setStageInfoList(
-          int index, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder builderForValue) {
         if (stageInfoListBuilder_ == null) {
           ensureStageInfoListIsMutable();
           stageInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public Builder addStageInfoList(emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo value) {
+      public Builder addStageInfoList(emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA value) {
         if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder addStageInfoList(
-          int index, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo value) {
+          int index, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA value) {
         if (stageInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder addStageInfoList(
-          emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder builderForValue) {
         if (stageInfoListBuilder_ == null) {
           ensureStageInfoListIsMutable();
           stageInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder addStageInfoList(
-          int index, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder builderForValue) {
         if (stageInfoListBuilder_ == null) {
           ensureStageInfoListIsMutable();
           stageInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder addAllStageInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA> values) {
         if (stageInfoListBuilder_ == null) {
           ensureStageInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder clearStageInfoList() {
         if (stageInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
       public Builder removeStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder getStageInfoListBuilder(
+      public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder getStageInfoListBuilder(
           int index) {
         return getStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder getStageInfoListOrBuilder(
+      public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder getStageInfoListOrBuilder(
           int index) {
         if (stageInfoListBuilder_ == null) {
           return stageInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder> 
            getStageInfoListOrBuilderList() {
         if (stageInfoListBuilder_ != null) {
           return stageInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class QuickTimeCombatDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder addStageInfoListBuilder() {
+      public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder addStageInfoListBuilder() {
         return getStageInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.getDefaultInstance());
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder addStageInfoListBuilder(
+      public emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder addStageInfoListBuilder(
           int index) {
         return getStageInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.getDefaultInstance());
       }
       /**
-       * <code>repeated .QuickTimeCombatStageInfo stage_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JBPGODIHLIA stage_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder> 
            getStageInfoListBuilderList() {
         return getStageInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder> 
+          emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder> 
           getStageInfoListFieldBuilder() {
         if (stageInfoListBuilder_ == null) {
           stageInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.QuickTimeCombatStageInfoOrBuilder>(
+              emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIA.Builder, emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.JBPGODIHLIAOrBuilder>(
                   stageInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class QuickTimeCombatDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037QuickTimeCombatDetailInfo.proto\032\036Quick" +
-      "TimeCombatStageInfo.proto\"O\n\031QuickTimeCo" +
-      "mbatDetailInfo\0222\n\017stage_info_list\030\002 \003(\0132" +
-      "\031.QuickTimeCombatStageInfoB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\037QuickTimeCombatDetailInfo.proto\032\021JBPGO" +
+      "DIHLIA.proto\"B\n\031QuickTimeCombatDetailInf" +
+      "o\022%\n\017stage_info_list\030\006 \003(\0132\014.JBPGODIHLIA" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.getDescriptor(),
         });
     internal_static_QuickTimeCombatDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class QuickTimeCombatDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuickTimeCombatDetailInfo_descriptor,
         new java.lang.String[] { "StageInfoList", });
-    emu.grasscutter.net.proto.QuickTimeCombatStageInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.JBPGODIHLIAOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

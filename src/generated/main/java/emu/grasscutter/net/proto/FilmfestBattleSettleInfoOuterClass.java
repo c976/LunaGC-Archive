@@ -19,40 +19,40 @@ public final class FilmfestBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 difficulty = 7;</code>
+     * <code>uint32 BAJGMCFPAPJ = 9;</code>
+     * @return The bAJGMCFPAPJ.
+     */
+    int getBAJGMCFPAPJ();
+
+    /**
+     * <code>uint32 difficulty = 11;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>uint32 MPODLAADOPH = 10;</code>
-     * @return The mPODLAADOPH.
-     */
-    int getMPODLAADOPH();
-
-    /**
-     * <code>bool is_new_record = 11;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 LCPANPNLKGI = 6;</code>
-     * @return The lCPANPNLKGI.
-     */
-    int getLCPANPNLKGI();
-
-    /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 BLIAHNFCNJG = 13;</code>
+     * @return The bLIAHNFCNJG.
+     */
+    int getBLIAHNFCNJG();
+
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code FilmfestBattleSettleInfo}
@@ -99,32 +99,32 @@ public final class FilmfestBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 56: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 72: {
 
-              levelId_ = input.readUInt32();
+              bAJGMCFPAPJ_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              lCPANPNLKGI_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 88: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
-              mPODLAADOPH_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
+
+              bLIAHNFCNJG_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               isNewRecord_ = input.readBool();
               break;
@@ -161,10 +161,10 @@ public final class FilmfestBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.class, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 3;
+    public static final int SCORE_FIELD_NUMBER = 7;
     private int score_;
     /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -172,10 +172,21 @@ public final class FilmfestBattleSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 7;
+    public static final int BAJGMCFPAPJ_FIELD_NUMBER = 9;
+    private int bAJGMCFPAPJ_;
+    /**
+     * <code>uint32 BAJGMCFPAPJ = 9;</code>
+     * @return The bAJGMCFPAPJ.
+     */
+    @java.lang.Override
+    public int getBAJGMCFPAPJ() {
+      return bAJGMCFPAPJ_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 11;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 7;</code>
+     * <code>uint32 difficulty = 11;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -183,48 +194,37 @@ public final class FilmfestBattleSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int MPODLAADOPH_FIELD_NUMBER = 10;
-    private int mPODLAADOPH_;
-    /**
-     * <code>uint32 MPODLAADOPH = 10;</code>
-     * @return The mPODLAADOPH.
-     */
-    @java.lang.Override
-    public int getMPODLAADOPH() {
-      return mPODLAADOPH_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 11;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int LCPANPNLKGI_FIELD_NUMBER = 6;
-    private int lCPANPNLKGI_;
-    /**
-     * <code>uint32 LCPANPNLKGI = 6;</code>
-     * @return The lCPANPNLKGI.
-     */
-    @java.lang.Override
-    public int getLCPANPNLKGI() {
-      return lCPANPNLKGI_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int BLIAHNFCNJG_FIELD_NUMBER = 13;
+    private int bLIAHNFCNJG_;
+    /**
+     * <code>uint32 BLIAHNFCNJG = 13;</code>
+     * @return The bLIAHNFCNJG.
+     */
+    @java.lang.Override
+    public int getBLIAHNFCNJG() {
+      return bLIAHNFCNJG_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -242,22 +242,22 @@ public final class FilmfestBattleSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(3, score_);
+        output.writeUInt32(7, score_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
-      }
-      if (lCPANPNLKGI_ != 0) {
-        output.writeUInt32(6, lCPANPNLKGI_);
+      if (bAJGMCFPAPJ_ != 0) {
+        output.writeUInt32(9, bAJGMCFPAPJ_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(7, difficulty_);
+        output.writeUInt32(11, difficulty_);
       }
-      if (mPODLAADOPH_ != 0) {
-        output.writeUInt32(10, mPODLAADOPH_);
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
+      }
+      if (bLIAHNFCNJG_ != 0) {
+        output.writeUInt32(13, bLIAHNFCNJG_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(11, isNewRecord_);
+        output.writeBool(14, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -270,27 +270,27 @@ public final class FilmfestBattleSettleInfoOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, score_);
+          .computeUInt32Size(7, score_);
       }
-      if (levelId_ != 0) {
+      if (bAJGMCFPAPJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
-      }
-      if (lCPANPNLKGI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lCPANPNLKGI_);
+          .computeUInt32Size(9, bAJGMCFPAPJ_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, difficulty_);
+          .computeUInt32Size(11, difficulty_);
       }
-      if (mPODLAADOPH_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mPODLAADOPH_);
+          .computeUInt32Size(12, levelId_);
+      }
+      if (bLIAHNFCNJG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, bLIAHNFCNJG_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isNewRecord_);
+          .computeBoolSize(14, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -309,16 +309,16 @@ public final class FilmfestBattleSettleInfoOuterClass {
 
       if (getScore()
           != other.getScore()) return false;
+      if (getBAJGMCFPAPJ()
+          != other.getBAJGMCFPAPJ()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
-      if (getMPODLAADOPH()
-          != other.getMPODLAADOPH()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getLCPANPNLKGI()
-          != other.getLCPANPNLKGI()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getBLIAHNFCNJG()
+          != other.getBLIAHNFCNJG()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,17 +332,17 @@ public final class FilmfestBattleSettleInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + BAJGMCFPAPJ_FIELD_NUMBER;
+      hash = (53 * hash) + getBAJGMCFPAPJ();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + MPODLAADOPH_FIELD_NUMBER;
-      hash = (53 * hash) + getMPODLAADOPH();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + BLIAHNFCNJG_FIELD_NUMBER;
+      hash = (53 * hash) + getBLIAHNFCNJG();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + LCPANPNLKGI_FIELD_NUMBER;
-      hash = (53 * hash) + getLCPANPNLKGI();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -478,15 +478,15 @@ public final class FilmfestBattleSettleInfoOuterClass {
         super.clear();
         score_ = 0;
 
+        bAJGMCFPAPJ_ = 0;
+
         difficulty_ = 0;
 
-        mPODLAADOPH_ = 0;
+        levelId_ = 0;
+
+        bLIAHNFCNJG_ = 0;
 
         isNewRecord_ = false;
-
-        lCPANPNLKGI_ = 0;
-
-        levelId_ = 0;
 
         return this;
       }
@@ -515,11 +515,11 @@ public final class FilmfestBattleSettleInfoOuterClass {
       public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo result = new emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo(this);
         result.score_ = score_;
+        result.bAJGMCFPAPJ_ = bAJGMCFPAPJ_;
         result.difficulty_ = difficulty_;
-        result.mPODLAADOPH_ = mPODLAADOPH_;
-        result.isNewRecord_ = isNewRecord_;
-        result.lCPANPNLKGI_ = lCPANPNLKGI_;
         result.levelId_ = levelId_;
+        result.bLIAHNFCNJG_ = bLIAHNFCNJG_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -571,20 +571,20 @@ public final class FilmfestBattleSettleInfoOuterClass {
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
+        if (other.getBAJGMCFPAPJ() != 0) {
+          setBAJGMCFPAPJ(other.getBAJGMCFPAPJ());
+        }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
-        if (other.getMPODLAADOPH() != 0) {
-          setMPODLAADOPH(other.getMPODLAADOPH());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getBLIAHNFCNJG() != 0) {
+          setBLIAHNFCNJG(other.getBLIAHNFCNJG());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getLCPANPNLKGI() != 0) {
-          setLCPANPNLKGI(other.getLCPANPNLKGI());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -617,7 +617,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 7;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -625,7 +625,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 7;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -636,7 +636,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -646,9 +646,40 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return this;
       }
 
+      private int bAJGMCFPAPJ_ ;
+      /**
+       * <code>uint32 BAJGMCFPAPJ = 9;</code>
+       * @return The bAJGMCFPAPJ.
+       */
+      @java.lang.Override
+      public int getBAJGMCFPAPJ() {
+        return bAJGMCFPAPJ_;
+      }
+      /**
+       * <code>uint32 BAJGMCFPAPJ = 9;</code>
+       * @param value The bAJGMCFPAPJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBAJGMCFPAPJ(int value) {
+        
+        bAJGMCFPAPJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BAJGMCFPAPJ = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBAJGMCFPAPJ() {
+        
+        bAJGMCFPAPJ_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 7;</code>
+       * <code>uint32 difficulty = 11;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -656,7 +687,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 7;</code>
+       * <code>uint32 difficulty = 11;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -667,7 +698,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 7;</code>
+       * <code>uint32 difficulty = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -677,102 +708,9 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return this;
       }
 
-      private int mPODLAADOPH_ ;
-      /**
-       * <code>uint32 MPODLAADOPH = 10;</code>
-       * @return The mPODLAADOPH.
-       */
-      @java.lang.Override
-      public int getMPODLAADOPH() {
-        return mPODLAADOPH_;
-      }
-      /**
-       * <code>uint32 MPODLAADOPH = 10;</code>
-       * @param value The mPODLAADOPH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMPODLAADOPH(int value) {
-        
-        mPODLAADOPH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MPODLAADOPH = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMPODLAADOPH() {
-        
-        mPODLAADOPH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 11;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 11;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int lCPANPNLKGI_ ;
-      /**
-       * <code>uint32 LCPANPNLKGI = 6;</code>
-       * @return The lCPANPNLKGI.
-       */
-      @java.lang.Override
-      public int getLCPANPNLKGI() {
-        return lCPANPNLKGI_;
-      }
-      /**
-       * <code>uint32 LCPANPNLKGI = 6;</code>
-       * @param value The lCPANPNLKGI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLCPANPNLKGI(int value) {
-        
-        lCPANPNLKGI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LCPANPNLKGI = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLCPANPNLKGI() {
-        
-        lCPANPNLKGI_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -780,7 +718,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -791,12 +729,74 @@ public final class FilmfestBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bLIAHNFCNJG_ ;
+      /**
+       * <code>uint32 BLIAHNFCNJG = 13;</code>
+       * @return The bLIAHNFCNJG.
+       */
+      @java.lang.Override
+      public int getBLIAHNFCNJG() {
+        return bLIAHNFCNJG_;
+      }
+      /**
+       * <code>uint32 BLIAHNFCNJG = 13;</code>
+       * @param value The bLIAHNFCNJG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBLIAHNFCNJG(int value) {
+        
+        bLIAHNFCNJG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BLIAHNFCNJG = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBLIAHNFCNJG() {
+        
+        bLIAHNFCNJG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -868,10 +868,10 @@ public final class FilmfestBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036FilmfestBattleSettleInfo.proto\"\220\001\n\030Fil" +
-      "mfestBattleSettleInfo\022\r\n\005score\030\003 \001(\r\022\022\n\n" +
-      "difficulty\030\007 \001(\r\022\023\n\013MPODLAADOPH\030\n \001(\r\022\025\n" +
-      "\ris_new_record\030\013 \001(\010\022\023\n\013LCPANPNLKGI\030\006 \001(" +
-      "\r\022\020\n\010level_id\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
+      "mfestBattleSettleInfo\022\r\n\005score\030\007 \001(\r\022\023\n\013" +
+      "BAJGMCFPAPJ\030\t \001(\r\022\022\n\ndifficulty\030\013 \001(\r\022\020\n" +
+      "\010level_id\030\014 \001(\r\022\023\n\013BLIAHNFCNJG\030\r \001(\r\022\025\n\r" +
+      "is_new_record\030\016 \001(\010B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +883,7 @@ public final class FilmfestBattleSettleInfoOuterClass {
     internal_static_FilmfestBattleSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FilmfestBattleSettleInfo_descriptor,
-        new java.lang.String[] { "Score", "Difficulty", "MPODLAADOPH", "IsNewRecord", "LCPANPNLKGI", "LevelId", });
+        new java.lang.String[] { "Score", "BAJGMCFPAPJ", "Difficulty", "LevelId", "BLIAHNFCNJG", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

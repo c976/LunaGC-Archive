@@ -19,105 +19,173 @@ public final class ReunionMissionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finished = 7;</code>
-     * @return The isFinished.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
      */
-    boolean getIsFinished();
+    java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> 
+        getIPAAFNCEOHNList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+     */
+    emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getIPAAFNCEOHN(int index);
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+     */
+    int getIPAAFNCEOHNCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
+        getIPAAFNCEOHNOrBuilderList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+     */
+    emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getIPAAFNCEOHNOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 mission_id = 15;</code>
-     * @return The missionId.
-     */
-    int getMissionId();
-
-    /**
-     * <code>bool is_taken_reward = 8;</code>
-     * @return The isTakenReward.
-     */
-    boolean getIsTakenReward();
-
-    /**
-     * <code>uint32 next_refresh_time = 4;</code>
-     * @return The nextRefreshTime.
-     */
-    int getNextRefreshTime();
-
-    /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> 
         getWatcherListList();
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getWatcherList(int index);
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     int getWatcherListCount();
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
         getWatcherListOrBuilderList();
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherListOrBuilder(
         int index);
 
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @return A list containing the isTakenRewardList.
      */
     java.util.List<java.lang.Boolean> getIsTakenRewardListList();
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @return The count of isTakenRewardList.
      */
     int getIsTakenRewardListCount();
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @param index The index of the element to return.
      * @return The isTakenRewardList at the given index.
      */
     boolean getIsTakenRewardList(int index);
 
     /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_taken_reward = 7;</code>
+     * @return The isTakenReward.
      */
-    java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> 
-        getCurDayWatcherListList();
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getCurDayWatcherList(int index);
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    int getCurDayWatcherListCount();
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
-        getCurDayWatcherListOrBuilderList();
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getCurDayWatcherListOrBuilder(
-        int index);
+    boolean getIsTakenReward();
 
     /**
-     * <code>uint32 cur_score = 12;</code>
-     * @return The curScore.
+     * <pre>
+     * offset: 57
+     * </pre>
+     *
+     * <code>bool is_finished = 1;</code>
+     * @return The isFinished.
      */
-    int getCurScore();
+    boolean getIsFinished();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 2;</code>
+     * @return The jDHJCMECLOI.
+     */
+    int getJDHJCMECLOI();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
+     */
+    int getNextRefreshTime();
+
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 mission_id = 11;</code>
+     * @return The missionId.
+     */
+    int getMissionId();
   }
   /**
-   * <pre>
-   * Obf: NOGCOGMPAGJ
-   * </pre>
-   *
    * Protobuf type {@code ReunionMissionInfo}
    */
   public static final class ReunionMissionInfo extends
@@ -130,9 +198,9 @@ public final class ReunionMissionInfoOuterClass {
       super(builder);
     }
     private ReunionMissionInfo() {
+      iPAAFNCEOHN_ = java.util.Collections.emptyList();
       watcherList_ = java.util.Collections.emptyList();
       isTakenRewardList_ = emptyBooleanList();
-      curDayWatcherList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -166,34 +234,30 @@ public final class ReunionMissionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                curDayWatcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              curDayWatcherList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 32: {
+            case 8: {
 
-              nextRefreshTime_ = input.readUInt32();
+              isFinished_ = input.readBool();
               break;
             }
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 16: {
+
+              jDHJCMECLOI_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 isTakenRewardList_ = newBooleanList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000004;
               }
               isTakenRewardList_.addBoolean(input.readBool());
               break;
             }
-            case 50: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
                 isTakenRewardList_ = newBooleanList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
                 isTakenRewardList_.addBoolean(input.readBool());
@@ -201,33 +265,37 @@ public final class ReunionMissionInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 56: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              isTakenReward_ = input.readBool();
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               watcherList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 56: {
 
-              curScore_ = input.readUInt32();
+              isTakenReward_ = input.readBool();
               break;
             }
-            case 120: {
+            case 80: {
+
+              nextRefreshTime_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               missionId_ = input.readUInt32();
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                iPAAFNCEOHN_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              iPAAFNCEOHN_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -246,13 +314,13 @@ public final class ReunionMissionInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          curDayWatcherList_ = java.util.Collections.unmodifiableList(curDayWatcherList_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           isTakenRewardList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           watcherList_ = java.util.Collections.unmodifiableList(watcherList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          iPAAFNCEOHN_ = java.util.Collections.unmodifiableList(iPAAFNCEOHN_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -271,61 +339,85 @@ public final class ReunionMissionInfoOuterClass {
               emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo.class, emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo.Builder.class);
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 7;
-    private boolean isFinished_;
+    public static final int IPAAFNCEOHN_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> iPAAFNCEOHN_;
     /**
-     * <code>bool is_finished = 7;</code>
-     * @return The isFinished.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
      */
     @java.lang.Override
-    public boolean getIsFinished() {
-      return isFinished_;
+    public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getIPAAFNCEOHNList() {
+      return iPAAFNCEOHN_;
     }
-
-    public static final int MISSION_ID_FIELD_NUMBER = 15;
-    private int missionId_;
     /**
-     * <code>uint32 mission_id = 15;</code>
-     * @return The missionId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
      */
     @java.lang.Override
-    public int getMissionId() {
-      return missionId_;
+    public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
+        getIPAAFNCEOHNOrBuilderList() {
+      return iPAAFNCEOHN_;
     }
-
-    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 8;
-    private boolean isTakenReward_;
     /**
-     * <code>bool is_taken_reward = 8;</code>
-     * @return The isTakenReward.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
      */
     @java.lang.Override
-    public boolean getIsTakenReward() {
-      return isTakenReward_;
+    public int getIPAAFNCEOHNCount() {
+      return iPAAFNCEOHN_.size();
     }
-
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 4;
-    private int nextRefreshTime_;
     /**
-     * <code>uint32 next_refresh_time = 4;</code>
-     * @return The nextRefreshTime.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
      */
     @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
+    public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getIPAAFNCEOHN(int index) {
+      return iPAAFNCEOHN_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getIPAAFNCEOHNOrBuilder(
+        int index) {
+      return iPAAFNCEOHN_.get(index);
     }
 
-    public static final int WATCHER_LIST_FIELD_NUMBER = 10;
+    public static final int WATCHER_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> watcherList_;
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getWatcherListList() {
       return watcherList_;
     }
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
@@ -333,21 +425,33 @@ public final class ReunionMissionInfoOuterClass {
       return watcherList_;
     }
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     @java.lang.Override
     public int getWatcherListCount() {
       return watcherList_.size();
     }
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getWatcherList(int index) {
       return watcherList_.get(index);
     }
     /**
-     * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherListOrBuilder(
@@ -355,10 +459,14 @@ public final class ReunionMissionInfoOuterClass {
       return watcherList_.get(index);
     }
 
-    public static final int IS_TAKEN_REWARD_LIST_FIELD_NUMBER = 6;
+    public static final int IS_TAKEN_REWARD_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.BooleanList isTakenRewardList_;
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @return A list containing the isTakenRewardList.
      */
     @java.lang.Override
@@ -367,14 +475,22 @@ public final class ReunionMissionInfoOuterClass {
       return isTakenRewardList_;
     }
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @return The count of isTakenRewardList.
      */
     public int getIsTakenRewardListCount() {
       return isTakenRewardList_.size();
     }
     /**
-     * <code>repeated bool is_taken_reward_list = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated bool is_taken_reward_list = 3;</code>
      * @param index The index of the element to return.
      * @return The isTakenRewardList at the given index.
      */
@@ -383,55 +499,79 @@ public final class ReunionMissionInfoOuterClass {
     }
     private int isTakenRewardListMemoizedSerializedSize = -1;
 
-    public static final int CUR_DAY_WATCHER_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> curDayWatcherList_;
+    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 7;
+    private boolean isTakenReward_;
     /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_taken_reward = 7;</code>
+     * @return The isTakenReward.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getCurDayWatcherListList() {
-      return curDayWatcherList_;
-    }
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
-        getCurDayWatcherListOrBuilderList() {
-      return curDayWatcherList_;
-    }
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    @java.lang.Override
-    public int getCurDayWatcherListCount() {
-      return curDayWatcherList_.size();
-    }
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getCurDayWatcherList(int index) {
-      return curDayWatcherList_.get(index);
-    }
-    /**
-     * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getCurDayWatcherListOrBuilder(
-        int index) {
-      return curDayWatcherList_.get(index);
+    public boolean getIsTakenReward() {
+      return isTakenReward_;
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 12;
-    private int curScore_;
+    public static final int IS_FINISHED_FIELD_NUMBER = 1;
+    private boolean isFinished_;
     /**
-     * <code>uint32 cur_score = 12;</code>
-     * @return The curScore.
+     * <pre>
+     * offset: 57
+     * </pre>
+     *
+     * <code>bool is_finished = 1;</code>
+     * @return The isFinished.
      */
     @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
+    public boolean getIsFinished() {
+      return isFinished_;
+    }
+
+    public static final int JDHJCMECLOI_FIELD_NUMBER = 2;
+    private int jDHJCMECLOI_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 2;</code>
+     * @return The jDHJCMECLOI.
+     */
+    @java.lang.Override
+    public int getJDHJCMECLOI() {
+      return jDHJCMECLOI_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 10;
+    private int nextRefreshTime_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
+
+    public static final int MISSION_ID_FIELD_NUMBER = 11;
+    private int missionId_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 mission_id = 11;</code>
+     * @return The missionId.
+     */
+    @java.lang.Override
+    public int getMissionId() {
+      return missionId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -449,33 +589,33 @@ public final class ReunionMissionInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < curDayWatcherList_.size(); i++) {
-        output.writeMessage(1, curDayWatcherList_.get(i));
+      if (isFinished_ != false) {
+        output.writeBool(1, isFinished_);
       }
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(4, nextRefreshTime_);
+      if (jDHJCMECLOI_ != 0) {
+        output.writeUInt32(2, jDHJCMECLOI_);
       }
       if (getIsTakenRewardListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(isTakenRewardListMemoizedSerializedSize);
       }
       for (int i = 0; i < isTakenRewardList_.size(); i++) {
         output.writeBoolNoTag(isTakenRewardList_.getBoolean(i));
       }
-      if (isFinished_ != false) {
-        output.writeBool(7, isFinished_);
+      for (int i = 0; i < watcherList_.size(); i++) {
+        output.writeMessage(6, watcherList_.get(i));
       }
       if (isTakenReward_ != false) {
-        output.writeBool(8, isTakenReward_);
+        output.writeBool(7, isTakenReward_);
       }
-      for (int i = 0; i < watcherList_.size(); i++) {
-        output.writeMessage(10, watcherList_.get(i));
-      }
-      if (curScore_ != 0) {
-        output.writeUInt32(12, curScore_);
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(10, nextRefreshTime_);
       }
       if (missionId_ != 0) {
-        output.writeUInt32(15, missionId_);
+        output.writeUInt32(11, missionId_);
+      }
+      for (int i = 0; i < iPAAFNCEOHN_.size(); i++) {
+        output.writeMessage(14, iPAAFNCEOHN_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -486,13 +626,13 @@ public final class ReunionMissionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < curDayWatcherList_.size(); i++) {
+      if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, curDayWatcherList_.get(i));
+          .computeBoolSize(1, isFinished_);
       }
-      if (nextRefreshTime_ != 0) {
+      if (jDHJCMECLOI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, nextRefreshTime_);
+          .computeUInt32Size(2, jDHJCMECLOI_);
       }
       {
         int dataSize = 0;
@@ -505,25 +645,25 @@ public final class ReunionMissionInfoOuterClass {
         }
         isTakenRewardListMemoizedSerializedSize = dataSize;
       }
-      if (isFinished_ != false) {
+      for (int i = 0; i < watcherList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFinished_);
+          .computeMessageSize(6, watcherList_.get(i));
       }
       if (isTakenReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isTakenReward_);
+          .computeBoolSize(7, isTakenReward_);
       }
-      for (int i = 0; i < watcherList_.size(); i++) {
+      if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, watcherList_.get(i));
-      }
-      if (curScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, curScore_);
+          .computeUInt32Size(10, nextRefreshTime_);
       }
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, missionId_);
+          .computeUInt32Size(11, missionId_);
+      }
+      for (int i = 0; i < iPAAFNCEOHN_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, iPAAFNCEOHN_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,22 +680,22 @@ public final class ReunionMissionInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo other = (emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo) obj;
 
-      if (getIsFinished()
-          != other.getIsFinished()) return false;
-      if (getMissionId()
-          != other.getMissionId()) return false;
-      if (getIsTakenReward()
-          != other.getIsTakenReward()) return false;
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
+      if (!getIPAAFNCEOHNList()
+          .equals(other.getIPAAFNCEOHNList())) return false;
       if (!getWatcherListList()
           .equals(other.getWatcherListList())) return false;
       if (!getIsTakenRewardListList()
           .equals(other.getIsTakenRewardListList())) return false;
-      if (!getCurDayWatcherListList()
-          .equals(other.getCurDayWatcherListList())) return false;
-      if (getCurScore()
-          != other.getCurScore()) return false;
+      if (getIsTakenReward()
+          != other.getIsTakenReward()) return false;
+      if (getIsFinished()
+          != other.getIsFinished()) return false;
+      if (getJDHJCMECLOI()
+          != other.getJDHJCMECLOI()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
+      if (getMissionId()
+          != other.getMissionId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -567,16 +707,10 @@ public final class ReunionMissionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinished());
-      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMissionId();
-      hash = (37 * hash) + IS_TAKEN_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTakenReward());
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
+      if (getIPAAFNCEOHNCount() > 0) {
+        hash = (37 * hash) + IPAAFNCEOHN_FIELD_NUMBER;
+        hash = (53 * hash) + getIPAAFNCEOHNList().hashCode();
+      }
       if (getWatcherListCount() > 0) {
         hash = (37 * hash) + WATCHER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherListList().hashCode();
@@ -585,12 +719,18 @@ public final class ReunionMissionInfoOuterClass {
         hash = (37 * hash) + IS_TAKEN_REWARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getIsTakenRewardListList().hashCode();
       }
-      if (getCurDayWatcherListCount() > 0) {
-        hash = (37 * hash) + CUR_DAY_WATCHER_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCurDayWatcherListList().hashCode();
-      }
-      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScore();
+      hash = (37 * hash) + IS_TAKEN_REWARD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTakenReward());
+      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinished());
+      hash = (37 * hash) + JDHJCMECLOI_FIELD_NUMBER;
+      hash = (53 * hash) + getJDHJCMECLOI();
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMissionId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -687,10 +827,6 @@ public final class ReunionMissionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NOGCOGMPAGJ
-     * </pre>
-     *
      * Protobuf type {@code ReunionMissionInfo}
      */
     public static final class Builder extends
@@ -723,36 +859,36 @@ public final class ReunionMissionInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getIPAAFNCEOHNFieldBuilder();
           getWatcherListFieldBuilder();
-          getCurDayWatcherListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFinished_ = false;
-
-        missionId_ = 0;
-
-        isTakenReward_ = false;
-
-        nextRefreshTime_ = 0;
-
+        if (iPAAFNCEOHNBuilder_ == null) {
+          iPAAFNCEOHN_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          iPAAFNCEOHNBuilder_.clear();
+        }
         if (watcherListBuilder_ == null) {
           watcherList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           watcherListBuilder_.clear();
         }
         isTakenRewardList_ = emptyBooleanList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (curDayWatcherListBuilder_ == null) {
-          curDayWatcherList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          curDayWatcherListBuilder_.clear();
-        }
-        curScore_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isTakenReward_ = false;
+
+        isFinished_ = false;
+
+        jDHJCMECLOI_ = 0;
+
+        nextRefreshTime_ = 0;
+
+        missionId_ = 0;
 
         return this;
       }
@@ -781,34 +917,34 @@ public final class ReunionMissionInfoOuterClass {
       public emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo result = new emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isFinished_ = isFinished_;
-        result.missionId_ = missionId_;
-        result.isTakenReward_ = isTakenReward_;
-        result.nextRefreshTime_ = nextRefreshTime_;
-        if (watcherListBuilder_ == null) {
+        if (iPAAFNCEOHNBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            watcherList_ = java.util.Collections.unmodifiableList(watcherList_);
+            iPAAFNCEOHN_ = java.util.Collections.unmodifiableList(iPAAFNCEOHN_);
             bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.iPAAFNCEOHN_ = iPAAFNCEOHN_;
+        } else {
+          result.iPAAFNCEOHN_ = iPAAFNCEOHNBuilder_.build();
+        }
+        if (watcherListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            watcherList_ = java.util.Collections.unmodifiableList(watcherList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.watcherList_ = watcherList_;
         } else {
           result.watcherList_ = watcherListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           isTakenRewardList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.isTakenRewardList_ = isTakenRewardList_;
-        if (curDayWatcherListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            curDayWatcherList_ = java.util.Collections.unmodifiableList(curDayWatcherList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.curDayWatcherList_ = curDayWatcherList_;
-        } else {
-          result.curDayWatcherList_ = curDayWatcherListBuilder_.build();
-        }
-        result.curScore_ = curScore_;
+        result.isTakenReward_ = isTakenReward_;
+        result.isFinished_ = isFinished_;
+        result.jDHJCMECLOI_ = jDHJCMECLOI_;
+        result.nextRefreshTime_ = nextRefreshTime_;
+        result.missionId_ = missionId_;
         onBuilt();
         return result;
       }
@@ -857,23 +993,37 @@ public final class ReunionMissionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionMissionInfoOuterClass.ReunionMissionInfo.getDefaultInstance()) return this;
-        if (other.getIsFinished() != false) {
-          setIsFinished(other.getIsFinished());
-        }
-        if (other.getMissionId() != 0) {
-          setMissionId(other.getMissionId());
-        }
-        if (other.getIsTakenReward() != false) {
-          setIsTakenReward(other.getIsTakenReward());
-        }
-        if (other.getNextRefreshTime() != 0) {
-          setNextRefreshTime(other.getNextRefreshTime());
+        if (iPAAFNCEOHNBuilder_ == null) {
+          if (!other.iPAAFNCEOHN_.isEmpty()) {
+            if (iPAAFNCEOHN_.isEmpty()) {
+              iPAAFNCEOHN_ = other.iPAAFNCEOHN_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureIPAAFNCEOHNIsMutable();
+              iPAAFNCEOHN_.addAll(other.iPAAFNCEOHN_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.iPAAFNCEOHN_.isEmpty()) {
+            if (iPAAFNCEOHNBuilder_.isEmpty()) {
+              iPAAFNCEOHNBuilder_.dispose();
+              iPAAFNCEOHNBuilder_ = null;
+              iPAAFNCEOHN_ = other.iPAAFNCEOHN_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              iPAAFNCEOHNBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getIPAAFNCEOHNFieldBuilder() : null;
+            } else {
+              iPAAFNCEOHNBuilder_.addAllMessages(other.iPAAFNCEOHN_);
+            }
+          }
         }
         if (watcherListBuilder_ == null) {
           if (!other.watcherList_.isEmpty()) {
             if (watcherList_.isEmpty()) {
               watcherList_ = other.watcherList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureWatcherListIsMutable();
               watcherList_.addAll(other.watcherList_);
@@ -886,7 +1036,7 @@ public final class ReunionMissionInfoOuterClass {
               watcherListBuilder_.dispose();
               watcherListBuilder_ = null;
               watcherList_ = other.watcherList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               watcherListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getWatcherListFieldBuilder() : null;
@@ -898,41 +1048,27 @@ public final class ReunionMissionInfoOuterClass {
         if (!other.isTakenRewardList_.isEmpty()) {
           if (isTakenRewardList_.isEmpty()) {
             isTakenRewardList_ = other.isTakenRewardList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureIsTakenRewardListIsMutable();
             isTakenRewardList_.addAll(other.isTakenRewardList_);
           }
           onChanged();
         }
-        if (curDayWatcherListBuilder_ == null) {
-          if (!other.curDayWatcherList_.isEmpty()) {
-            if (curDayWatcherList_.isEmpty()) {
-              curDayWatcherList_ = other.curDayWatcherList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureCurDayWatcherListIsMutable();
-              curDayWatcherList_.addAll(other.curDayWatcherList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.curDayWatcherList_.isEmpty()) {
-            if (curDayWatcherListBuilder_.isEmpty()) {
-              curDayWatcherListBuilder_.dispose();
-              curDayWatcherListBuilder_ = null;
-              curDayWatcherList_ = other.curDayWatcherList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              curDayWatcherListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCurDayWatcherListFieldBuilder() : null;
-            } else {
-              curDayWatcherListBuilder_.addAllMessages(other.curDayWatcherList_);
-            }
-          }
+        if (other.getIsTakenReward() != false) {
+          setIsTakenReward(other.getIsTakenReward());
         }
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
+        if (other.getIsFinished() != false) {
+          setIsFinished(other.getIsFinished());
+        }
+        if (other.getJDHJCMECLOI() != 0) {
+          setJDHJCMECLOI(other.getJDHJCMECLOI());
+        }
+        if (other.getNextRefreshTime() != 0) {
+          setNextRefreshTime(other.getNextRefreshTime());
+        }
+        if (other.getMissionId() != 0) {
+          setMissionId(other.getMissionId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -964,136 +1100,324 @@ public final class ReunionMissionInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean isFinished_ ;
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @return The isFinished.
-       */
-      @java.lang.Override
-      public boolean getIsFinished() {
-        return isFinished_;
-      }
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @param value The isFinished to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinished(boolean value) {
-        
-        isFinished_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinished() {
-        
-        isFinished_ = false;
-        onChanged();
-        return this;
+      private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> iPAAFNCEOHN_ =
+        java.util.Collections.emptyList();
+      private void ensureIPAAFNCEOHNIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          iPAAFNCEOHN_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>(iPAAFNCEOHN_);
+          bitField0_ |= 0x00000001;
+         }
       }
 
-      private int missionId_ ;
-      /**
-       * <code>uint32 mission_id = 15;</code>
-       * @return The missionId.
-       */
-      @java.lang.Override
-      public int getMissionId() {
-        return missionId_;
-      }
-      /**
-       * <code>uint32 mission_id = 15;</code>
-       * @param value The missionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionId(int value) {
-        
-        missionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mission_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionId() {
-        
-        missionId_ = 0;
-        onChanged();
-        return this;
-      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> iPAAFNCEOHNBuilder_;
 
-      private boolean isTakenReward_ ;
       /**
-       * <code>bool is_taken_reward = 8;</code>
-       * @return The isTakenReward.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
        */
-      @java.lang.Override
-      public boolean getIsTakenReward() {
-        return isTakenReward_;
+      public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getIPAAFNCEOHNList() {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(iPAAFNCEOHN_);
+        } else {
+          return iPAAFNCEOHNBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>bool is_taken_reward = 8;</code>
-       * @param value The isTakenReward to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
        */
-      public Builder setIsTakenReward(boolean value) {
-        
-        isTakenReward_ = value;
-        onChanged();
+      public int getIPAAFNCEOHNCount() {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          return iPAAFNCEOHN_.size();
+        } else {
+          return iPAAFNCEOHNBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getIPAAFNCEOHN(int index) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          return iPAAFNCEOHN_.get(index);
+        } else {
+          return iPAAFNCEOHNBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder setIPAAFNCEOHN(
+          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.set(index, value);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>bool is_taken_reward = 8;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
        */
-      public Builder clearIsTakenReward() {
-        
-        isTakenReward_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 4;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 4;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
+      public Builder setIPAAFNCEOHN(
+          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
        */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
+      public Builder addIPAAFNCEOHN(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.add(value);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.addMessage(value);
+        }
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder addIPAAFNCEOHN(
+          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.add(index, value);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder addIPAAFNCEOHN(
+          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.add(builderForValue.build());
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder addIPAAFNCEOHN(
+          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder addAllIPAAFNCEOHN(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> values) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          ensureIPAAFNCEOHNIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, iPAAFNCEOHN_);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder clearIPAAFNCEOHN() {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          iPAAFNCEOHN_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public Builder removeIPAAFNCEOHN(int index) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          ensureIPAAFNCEOHNIsMutable();
+          iPAAFNCEOHN_.remove(index);
+          onChanged();
+        } else {
+          iPAAFNCEOHNBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder getIPAAFNCEOHNBuilder(
+          int index) {
+        return getIPAAFNCEOHNFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getIPAAFNCEOHNOrBuilder(
+          int index) {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          return iPAAFNCEOHN_.get(index);  } else {
+          return iPAAFNCEOHNBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
+           getIPAAFNCEOHNOrBuilderList() {
+        if (iPAAFNCEOHNBuilder_ != null) {
+          return iPAAFNCEOHNBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(iPAAFNCEOHN_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addIPAAFNCEOHNBuilder() {
+        return getIPAAFNCEOHNFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addIPAAFNCEOHNBuilder(
+          int index) {
+        return getIPAAFNCEOHNFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo IPAAFNCEOHN = 14;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder> 
+           getIPAAFNCEOHNBuilderList() {
+        return getIPAAFNCEOHNFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
+          getIPAAFNCEOHNFieldBuilder() {
+        if (iPAAFNCEOHNBuilder_ == null) {
+          iPAAFNCEOHNBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder>(
+                  iPAAFNCEOHN_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          iPAAFNCEOHN_ = null;
+        }
+        return iPAAFNCEOHNBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> watcherList_ =
         java.util.Collections.emptyList();
       private void ensureWatcherListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>(watcherList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1101,7 +1425,11 @@ public final class ReunionMissionInfoOuterClass {
           emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> watcherListBuilder_;
 
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getWatcherListList() {
         if (watcherListBuilder_ == null) {
@@ -1111,7 +1439,11 @@ public final class ReunionMissionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public int getWatcherListCount() {
         if (watcherListBuilder_ == null) {
@@ -1121,7 +1453,11 @@ public final class ReunionMissionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getWatcherList(int index) {
         if (watcherListBuilder_ == null) {
@@ -1131,7 +1467,11 @@ public final class ReunionMissionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder setWatcherList(
           int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
@@ -1148,7 +1488,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder setWatcherList(
           int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
@@ -1162,7 +1506,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder addWatcherList(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
         if (watcherListBuilder_ == null) {
@@ -1178,7 +1526,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder addWatcherList(
           int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
@@ -1195,7 +1547,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder addWatcherList(
           emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
@@ -1209,7 +1565,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder addWatcherList(
           int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
@@ -1223,7 +1583,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder addAllWatcherList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> values) {
@@ -1238,12 +1602,16 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder clearWatcherList() {
         if (watcherListBuilder_ == null) {
           watcherList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           watcherListBuilder_.clear();
@@ -1251,7 +1619,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public Builder removeWatcherList(int index) {
         if (watcherListBuilder_ == null) {
@@ -1264,14 +1636,22 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder getWatcherListBuilder(
           int index) {
         return getWatcherListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getWatcherListOrBuilder(
           int index) {
@@ -1281,7 +1661,11 @@ public final class ReunionMissionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
            getWatcherListOrBuilderList() {
@@ -1292,14 +1676,22 @@ public final class ReunionMissionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addWatcherListBuilder() {
         return getWatcherListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addWatcherListBuilder(
           int index) {
@@ -1307,7 +1699,11 @@ public final class ReunionMissionInfoOuterClass {
             index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ReunionWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .ReunionWatcherInfo watcher_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder> 
            getWatcherListBuilderList() {
@@ -1320,7 +1716,7 @@ public final class ReunionMissionInfoOuterClass {
           watcherListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder>(
                   watcherList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           watcherList_ = null;
@@ -1330,29 +1726,41 @@ public final class ReunionMissionInfoOuterClass {
 
       private com.google.protobuf.Internal.BooleanList isTakenRewardList_ = emptyBooleanList();
       private void ensureIsTakenRewardListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           isTakenRewardList_ = mutableCopy(isTakenRewardList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @return A list containing the isTakenRewardList.
        */
       public java.util.List<java.lang.Boolean>
           getIsTakenRewardListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000004) != 0) ?
                  java.util.Collections.unmodifiableList(isTakenRewardList_) : isTakenRewardList_;
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @return The count of isTakenRewardList.
        */
       public int getIsTakenRewardListCount() {
         return isTakenRewardList_.size();
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @param index The index of the element to return.
        * @return The isTakenRewardList at the given index.
        */
@@ -1360,7 +1768,11 @@ public final class ReunionMissionInfoOuterClass {
         return isTakenRewardList_.getBoolean(index);
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The isTakenRewardList to set.
        * @return This builder for chaining.
@@ -1373,7 +1785,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @param value The isTakenRewardList to add.
        * @return This builder for chaining.
        */
@@ -1384,7 +1800,11 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @param values The isTakenRewardList to add.
        * @return This builder for chaining.
        */
@@ -1397,283 +1817,231 @@ public final class ReunionMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated bool is_taken_reward_list = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated bool is_taken_reward_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenRewardList() {
         isTakenRewardList_ = emptyBooleanList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> curDayWatcherList_ =
-        java.util.Collections.emptyList();
-      private void ensureCurDayWatcherListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          curDayWatcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo>(curDayWatcherList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> curDayWatcherListBuilder_;
-
+      private boolean isTakenReward_ ;
       /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> getCurDayWatcherListList() {
-        if (curDayWatcherListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(curDayWatcherList_);
-        } else {
-          return curDayWatcherListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public int getCurDayWatcherListCount() {
-        if (curDayWatcherListBuilder_ == null) {
-          return curDayWatcherList_.size();
-        } else {
-          return curDayWatcherListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo getCurDayWatcherList(int index) {
-        if (curDayWatcherListBuilder_ == null) {
-          return curDayWatcherList_.get(index);
-        } else {
-          return curDayWatcherListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder setCurDayWatcherList(
-          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
-        if (curDayWatcherListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.set(index, value);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder setCurDayWatcherList(
-          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
-        if (curDayWatcherListBuilder_ == null) {
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder addCurDayWatcherList(emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
-        if (curDayWatcherListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.add(value);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder addCurDayWatcherList(
-          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo value) {
-        if (curDayWatcherListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.add(index, value);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder addCurDayWatcherList(
-          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
-        if (curDayWatcherListBuilder_ == null) {
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder addCurDayWatcherList(
-          int index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder builderForValue) {
-        if (curDayWatcherListBuilder_ == null) {
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder addAllCurDayWatcherList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo> values) {
-        if (curDayWatcherListBuilder_ == null) {
-          ensureCurDayWatcherListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, curDayWatcherList_);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder clearCurDayWatcherList() {
-        if (curDayWatcherListBuilder_ == null) {
-          curDayWatcherList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public Builder removeCurDayWatcherList(int index) {
-        if (curDayWatcherListBuilder_ == null) {
-          ensureCurDayWatcherListIsMutable();
-          curDayWatcherList_.remove(index);
-          onChanged();
-        } else {
-          curDayWatcherListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder getCurDayWatcherListBuilder(
-          int index) {
-        return getCurDayWatcherListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder getCurDayWatcherListOrBuilder(
-          int index) {
-        if (curDayWatcherListBuilder_ == null) {
-          return curDayWatcherList_.get(index);  } else {
-          return curDayWatcherListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
-           getCurDayWatcherListOrBuilderList() {
-        if (curDayWatcherListBuilder_ != null) {
-          return curDayWatcherListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(curDayWatcherList_);
-        }
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addCurDayWatcherListBuilder() {
-        return getCurDayWatcherListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder addCurDayWatcherListBuilder(
-          int index) {
-        return getCurDayWatcherListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ReunionWatcherInfo cur_day_watcher_list = 1;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder> 
-           getCurDayWatcherListBuilderList() {
-        return getCurDayWatcherListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder> 
-          getCurDayWatcherListFieldBuilder() {
-        if (curDayWatcherListBuilder_ == null) {
-          curDayWatcherListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfo.Builder, emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.ReunionWatcherInfoOrBuilder>(
-                  curDayWatcherList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          curDayWatcherList_ = null;
-        }
-        return curDayWatcherListBuilder_;
-      }
-
-      private int curScore_ ;
-      /**
-       * <code>uint32 cur_score = 12;</code>
-       * @return The curScore.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_taken_reward = 7;</code>
+       * @return The isTakenReward.
        */
       @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
+      public boolean getIsTakenReward() {
+        return isTakenReward_;
       }
       /**
-       * <code>uint32 cur_score = 12;</code>
-       * @param value The curScore to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_taken_reward = 7;</code>
+       * @param value The isTakenReward to set.
        * @return This builder for chaining.
        */
-      public Builder setCurScore(int value) {
+      public Builder setIsTakenReward(boolean value) {
         
-        curScore_ = value;
+        isTakenReward_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_score = 12;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_taken_reward = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurScore() {
+      public Builder clearIsTakenReward() {
         
-        curScore_ = 0;
+        isTakenReward_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinished_ ;
+      /**
+       * <pre>
+       * offset: 57
+       * </pre>
+       *
+       * <code>bool is_finished = 1;</code>
+       * @return The isFinished.
+       */
+      @java.lang.Override
+      public boolean getIsFinished() {
+        return isFinished_;
+      }
+      /**
+       * <pre>
+       * offset: 57
+       * </pre>
+       *
+       * <code>bool is_finished = 1;</code>
+       * @param value The isFinished to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinished(boolean value) {
+        
+        isFinished_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 57
+       * </pre>
+       *
+       * <code>bool is_finished = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinished() {
+        
+        isFinished_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int jDHJCMECLOI_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 2;</code>
+       * @return The jDHJCMECLOI.
+       */
+      @java.lang.Override
+      public int getJDHJCMECLOI() {
+        return jDHJCMECLOI_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 2;</code>
+       * @param value The jDHJCMECLOI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJDHJCMECLOI(int value) {
+        
+        jDHJCMECLOI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJDHJCMECLOI() {
+        
+        jDHJCMECLOI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int missionId_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 mission_id = 11;</code>
+       * @return The missionId.
+       */
+      @java.lang.Override
+      public int getMissionId() {
+        return missionId_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 mission_id = 11;</code>
+       * @param value The missionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionId(int value) {
+        
+        missionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 mission_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionId() {
+        
+        missionId_ = 0;
         onChanged();
         return this;
       }
@@ -1745,14 +2113,14 @@ public final class ReunionMissionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ReunionMissionInfo.proto\032\030ReunionWatch" +
-      "erInfo.proto\"\200\002\n\022ReunionMissionInfo\022\023\n\013i" +
-      "s_finished\030\007 \001(\010\022\022\n\nmission_id\030\017 \001(\r\022\027\n\017" +
-      "is_taken_reward\030\010 \001(\010\022\031\n\021next_refresh_ti" +
-      "me\030\004 \001(\r\022)\n\014watcher_list\030\n \003(\0132\023.Reunion" +
-      "WatcherInfo\022\034\n\024is_taken_reward_list\030\006 \003(" +
-      "\010\0221\n\024cur_day_watcher_list\030\001 \003(\0132\023.Reunio" +
-      "nWatcherInfo\022\021\n\tcur_score\030\014 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "erInfo.proto\"\371\001\n\022ReunionMissionInfo\022(\n\013I" +
+      "PAAFNCEOHN\030\016 \003(\0132\023.ReunionWatcherInfo\022)\n" +
+      "\014watcher_list\030\006 \003(\0132\023.ReunionWatcherInfo" +
+      "\022\034\n\024is_taken_reward_list\030\003 \003(\010\022\027\n\017is_tak" +
+      "en_reward\030\007 \001(\010\022\023\n\013is_finished\030\001 \001(\010\022\023\n\013" +
+      "JDHJCMECLOI\030\002 \001(\r\022\031\n\021next_refresh_time\030\n" +
+      " \001(\r\022\022\n\nmission_id\030\013 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1764,7 +2132,7 @@ public final class ReunionMissionInfoOuterClass {
     internal_static_ReunionMissionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionMissionInfo_descriptor,
-        new java.lang.String[] { "IsFinished", "MissionId", "IsTakenReward", "NextRefreshTime", "WatcherList", "IsTakenRewardList", "CurDayWatcherList", "CurScore", });
+        new java.lang.String[] { "IPAAFNCEOHN", "WatcherList", "IsTakenRewardList", "IsTakenReward", "IsFinished", "JDHJCMECLOI", "NextRefreshTime", "MissionId", });
     emu.grasscutter.net.proto.ReunionWatcherInfoOuterClass.getDescriptor();
   }
 

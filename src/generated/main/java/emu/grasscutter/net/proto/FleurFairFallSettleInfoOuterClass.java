@@ -19,31 +19,43 @@ public final class FleurFairFallSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo getSettleInfo();
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      */
     emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>bool is_new_record = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
   }
   /**
-   * <pre>
-   * Obf: LJDBBLNHOIG
-   * </pre>
-   *
    * Protobuf type {@code FleurFairFallSettleInfo}
    */
   public static final class FleurFairFallSettleInfo extends
@@ -88,7 +100,12 @@ public final class FleurFairFallSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 72: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -99,11 +116,6 @@ public final class FleurFairFallSettleInfoOuterClass {
                 settleInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 40: {
-
-              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -138,10 +150,14 @@ public final class FleurFairFallSettleInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo.class, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo.Builder.class);
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 4;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo settleInfo_;
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -149,7 +165,11 @@ public final class FleurFairFallSettleInfoOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -157,17 +177,25 @@ public final class FleurFairFallSettleInfoOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.FallSettleInfo settle_info = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.FallSettleInfo settle_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -189,11 +217,11 @@ public final class FleurFairFallSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (settleInfo_ != null) {
-        output.writeMessage(4, getSettleInfo());
-      }
       if (isNewRecord_ != false) {
-        output.writeBool(5, isNewRecord_);
+        output.writeBool(9, isNewRecord_);
+      }
+      if (settleInfo_ != null) {
+        output.writeMessage(15, getSettleInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -204,13 +232,13 @@ public final class FleurFairFallSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (settleInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getSettleInfo());
-      }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isNewRecord_);
+          .computeBoolSize(9, isNewRecord_);
+      }
+      if (settleInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getSettleInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,10 +376,6 @@ public final class FleurFairFallSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LJDBBLNHOIG
-     * </pre>
-     *
      * Protobuf type {@code FleurFairFallSettleInfo}
      */
     public static final class Builder extends
@@ -516,14 +540,22 @@ public final class FleurFairFallSettleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo, emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder, emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo getSettleInfo() {
@@ -534,7 +566,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -550,7 +586,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder builderForValue) {
@@ -564,7 +604,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -582,7 +626,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -596,7 +644,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder getSettleInfoBuilder() {
         
@@ -604,7 +656,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       public emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -615,7 +671,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.FallSettleInfo settle_info = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.FallSettleInfo settle_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo, emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder, emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfoOrBuilder> 
@@ -633,7 +693,11 @@ public final class FleurFairFallSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new_record = 9;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -641,7 +705,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new_record = 9;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -652,7 +720,11 @@ public final class FleurFairFallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_new_record = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -730,8 +802,8 @@ public final class FleurFairFallSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035FleurFairFallSettleInfo.proto\032\024FallSet" +
       "tleInfo.proto\"V\n\027FleurFairFallSettleInfo" +
-      "\022$\n\013settle_info\030\004 \001(\0132\017.FallSettleInfo\022\025" +
-      "\n\ris_new_record\030\005 \001(\010B\033\n\031emu.grasscutter" +
+      "\022$\n\013settle_info\030\017 \001(\0132\017.FallSettleInfo\022\025" +
+      "\n\ris_new_record\030\t \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

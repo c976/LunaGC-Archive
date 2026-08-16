@@ -19,34 +19,48 @@ public final class HideAndSeekStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 map_id = 3;</code>
-     * @return The mapId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @return A list containing the hiderUidList.
      */
-    int getMapId();
+    java.util.List<java.lang.Integer> getHiderUidListList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @return The count of hiderUidList.
+     */
+    int getHiderUidListCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The hiderUidList at the given index.
+     */
+    int getHiderUidList(int index);
 
     /**
-     * <code>uint32 hunter_uid = 4;</code>
-     * @return The hunterUid.
-     */
-    int getHunterUid();
-
-    /**
-     * <code>.HideAndSeekStageType stage_type = 9;</code>
-     * @return The enum numeric value on the wire for stageType.
-     */
-    int getStageTypeValue();
-    /**
-     * <code>.HideAndSeekStageType stage_type = 9;</code>
-     * @return The stageType.
-     */
-    emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType();
-
-    /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
     int getBattleInfoMapCount();
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
     boolean containsBattleInfoMap(
         int key);
@@ -54,55 +68,89 @@ public final class HideAndSeekStageInfoOuterClass {
      * Use {@link #getBattleInfoMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
     getBattleInfoMap();
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
     getBattleInfoMapMap();
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
 
-    emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrDefault(
+    emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo defaultValue);
+        emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP defaultValue);
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
 
-    emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrThrow(
+    emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrThrow(
         int key);
 
     /**
-     * <code>bool is_record_score = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KHLGPKIAFAE = 5;</code>
+     * @return The kHLGPKIAFAE.
+     */
+    int getKHLGPKIAFAE();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_record_score = 3;</code>
      * @return The isRecordScore.
      */
     boolean getIsRecordScore();
 
     /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @return A list containing the hiderUidList.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ALPIHGCCEGK = 8;</code>
+     * @return The aLPIHGCCEGK.
      */
-    java.util.List<java.lang.Integer> getHiderUidListList();
+    int getALPIHGCCEGK();
+
     /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @return The count of hiderUidList.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>.HideAndSeekStageType stage_type = 1;</code>
+     * @return The enum numeric value on the wire for stageType.
      */
-    int getHiderUidListCount();
+    int getStageTypeValue();
     /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The hiderUidList at the given index.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>.HideAndSeekStageType stage_type = 1;</code>
+     * @return The stageType.
      */
-    int getHiderUidList(int index);
+    emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType();
   }
   /**
-   * <pre>
-   * Obf: AABBILIFMCJ
-   * </pre>
-   *
    * Protobuf type {@code HideAndSeekStageInfo}
    */
   public static final class HideAndSeekStageInfo extends
@@ -115,8 +163,8 @@ public final class HideAndSeekStageInfoOuterClass {
       super(builder);
     }
     private HideAndSeekStageInfo() {
-      stageType_ = 0;
       hiderUidList_ = emptyIntList();
+      stageType_ = 0;
     }
 
     @java.lang.Override
@@ -150,30 +198,41 @@ public final class HideAndSeekStageInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+              int rawValue = input.readEnum();
+
+              stageType_ = rawValue;
+              break;
+            }
             case 24: {
 
-              mapId_ = input.readUInt32();
+              isRecordScore_ = input.readBool();
               break;
             }
-            case 32: {
+            case 40: {
 
-              hunterUid_ = input.readUInt32();
+              kHLGPKIAFAE_ = input.readUInt32();
               break;
             }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 64: {
+
+              aLPIHGCCEGK_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hiderUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               hiderUidList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 hiderUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 hiderUidList_.addInt(input.readUInt32());
@@ -181,28 +240,17 @@ public final class HideAndSeekStageInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 battleInfoMap_ = com.google.protobuf.MapField.newMapField(
                     BattleInfoMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
               battleInfoMap__ = input.readMessage(
                   BattleInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               battleInfoMap_.getMutableMap().put(
                   battleInfoMap__.getKey(), battleInfoMap__.getValue());
-              break;
-            }
-            case 72: {
-              int rawValue = input.readEnum();
-
-              stageType_ = rawValue;
-              break;
-            }
-            case 104: {
-
-              isRecordScore_ = input.readBool();
               break;
             }
             default: {
@@ -220,7 +268,7 @@ public final class HideAndSeekStageInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           hiderUidList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -237,7 +285,7 @@ public final class HideAndSeekStageInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 11:
           return internalGetBattleInfoMap();
         default:
           throw new RuntimeException(
@@ -252,62 +300,61 @@ public final class HideAndSeekStageInfoOuterClass {
               emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo.class, emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo.Builder.class);
     }
 
-    public static final int MAP_ID_FIELD_NUMBER = 3;
-    private int mapId_;
+    public static final int HIDER_UID_LIST_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList hiderUidList_;
     /**
-     * <code>uint32 map_id = 3;</code>
-     * @return The mapId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @return A list containing the hiderUidList.
      */
     @java.lang.Override
-    public int getMapId() {
-      return mapId_;
-    }
-
-    public static final int HUNTER_UID_FIELD_NUMBER = 4;
-    private int hunterUid_;
-    /**
-     * <code>uint32 hunter_uid = 4;</code>
-     * @return The hunterUid.
-     */
-    @java.lang.Override
-    public int getHunterUid() {
-      return hunterUid_;
-    }
-
-    public static final int STAGE_TYPE_FIELD_NUMBER = 9;
-    private int stageType_;
-    /**
-     * <code>.HideAndSeekStageType stage_type = 9;</code>
-     * @return The enum numeric value on the wire for stageType.
-     */
-    @java.lang.Override public int getStageTypeValue() {
-      return stageType_;
+    public java.util.List<java.lang.Integer>
+        getHiderUidListList() {
+      return hiderUidList_;
     }
     /**
-     * <code>.HideAndSeekStageType stage_type = 9;</code>
-     * @return The stageType.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @return The count of hiderUidList.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType result = emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.valueOf(stageType_);
-      return result == null ? emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.UNRECOGNIZED : result;
+    public int getHiderUidListCount() {
+      return hiderUidList_.size();
     }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 hider_uid_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The hiderUidList at the given index.
+     */
+    public int getHiderUidList(int index) {
+      return hiderUidList_.getInt(index);
+    }
+    private int hiderUidListMemoizedSerializedSize = -1;
 
-    public static final int BATTLE_INFO_MAP_FIELD_NUMBER = 8;
+    public static final int BATTLE_INFO_MAP_FIELD_NUMBER = 11;
     private static final class BattleInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> defaultEntry =
+          java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>newDefaultInstance(
+              .<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>newDefaultInstance(
                   emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.internal_static_HideAndSeekStageInfo_BattleInfoMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo.getDefaultInstance());
+                  emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> battleInfoMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+        java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> battleInfoMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
     internalGetBattleInfoMap() {
       if (battleInfoMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -320,7 +367,11 @@ public final class HideAndSeekStageInfoOuterClass {
       return internalGetBattleInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
 
     @java.lang.Override
@@ -334,39 +385,51 @@ public final class HideAndSeekStageInfoOuterClass {
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> getBattleInfoMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> getBattleInfoMap() {
       return getBattleInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> getBattleInfoMapMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> getBattleInfoMapMap() {
       return internalGetBattleInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrDefault(
+    public emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo defaultValue) {
+        emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP defaultValue) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> map =
           internalGetBattleInfoMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrThrow(
+    public emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> map =
           internalGetBattleInfoMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -374,10 +437,29 @@ public final class HideAndSeekStageInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int IS_RECORD_SCORE_FIELD_NUMBER = 13;
+    public static final int KHLGPKIAFAE_FIELD_NUMBER = 5;
+    private int kHLGPKIAFAE_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KHLGPKIAFAE = 5;</code>
+     * @return The kHLGPKIAFAE.
+     */
+    @java.lang.Override
+    public int getKHLGPKIAFAE() {
+      return kHLGPKIAFAE_;
+    }
+
+    public static final int IS_RECORD_SCORE_FIELD_NUMBER = 3;
     private boolean isRecordScore_;
     /**
-     * <code>bool is_record_score = 13;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_record_score = 3;</code>
      * @return The isRecordScore.
      */
     @java.lang.Override
@@ -385,33 +467,47 @@ public final class HideAndSeekStageInfoOuterClass {
       return isRecordScore_;
     }
 
-    public static final int HIDER_UID_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList hiderUidList_;
+    public static final int ALPIHGCCEGK_FIELD_NUMBER = 8;
+    private int aLPIHGCCEGK_;
     /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @return A list containing the hiderUidList.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ALPIHGCCEGK = 8;</code>
+     * @return The aLPIHGCCEGK.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getHiderUidListList() {
-      return hiderUidList_;
+    public int getALPIHGCCEGK() {
+      return aLPIHGCCEGK_;
+    }
+
+    public static final int STAGE_TYPE_FIELD_NUMBER = 1;
+    private int stageType_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>.HideAndSeekStageType stage_type = 1;</code>
+     * @return The enum numeric value on the wire for stageType.
+     */
+    @java.lang.Override public int getStageTypeValue() {
+      return stageType_;
     }
     /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @return The count of hiderUidList.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>.HideAndSeekStageType stage_type = 1;</code>
+     * @return The stageType.
      */
-    public int getHiderUidListCount() {
-      return hiderUidList_.size();
+    @java.lang.Override public emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType result = emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.valueOf(stageType_);
+      return result == null ? emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.UNRECOGNIZED : result;
     }
-    /**
-     * <code>repeated uint32 hider_uid_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The hiderUidList at the given index.
-     */
-    public int getHiderUidList(int index) {
-      return hiderUidList_.getInt(index);
-    }
-    private int hiderUidListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -428,14 +524,20 @@ public final class HideAndSeekStageInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mapId_ != 0) {
-        output.writeUInt32(3, mapId_);
+      if (stageType_ != emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE.getNumber()) {
+        output.writeEnum(1, stageType_);
       }
-      if (hunterUid_ != 0) {
-        output.writeUInt32(4, hunterUid_);
+      if (isRecordScore_ != false) {
+        output.writeBool(3, isRecordScore_);
+      }
+      if (kHLGPKIAFAE_ != 0) {
+        output.writeUInt32(5, kHLGPKIAFAE_);
+      }
+      if (aLPIHGCCEGK_ != 0) {
+        output.writeUInt32(8, aLPIHGCCEGK_);
       }
       if (getHiderUidListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(hiderUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < hiderUidList_.size(); i++) {
@@ -446,13 +548,7 @@ public final class HideAndSeekStageInfoOuterClass {
           output,
           internalGetBattleInfoMap(),
           BattleInfoMapDefaultEntryHolder.defaultEntry,
-          8);
-      if (stageType_ != emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.HIDE_AND_SEEK_STAGE_PREPARE.getNumber()) {
-        output.writeEnum(9, stageType_);
-      }
-      if (isRecordScore_ != false) {
-        output.writeBool(13, isRecordScore_);
-      }
+          11);
       unknownFields.writeTo(output);
     }
 
@@ -462,13 +558,21 @@ public final class HideAndSeekStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mapId_ != 0) {
+      if (stageType_ != emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mapId_);
+          .computeEnumSize(1, stageType_);
       }
-      if (hunterUid_ != 0) {
+      if (isRecordScore_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, hunterUid_);
+          .computeBoolSize(3, isRecordScore_);
+      }
+      if (kHLGPKIAFAE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, kHLGPKIAFAE_);
+      }
+      if (aLPIHGCCEGK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, aLPIHGCCEGK_);
       }
       {
         int dataSize = 0;
@@ -484,23 +588,15 @@ public final class HideAndSeekStageInfoOuterClass {
         }
         hiderUidListMemoizedSerializedSize = dataSize;
       }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> entry
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> entry
            : internalGetBattleInfoMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
         battleInfoMap__ = BattleInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, battleInfoMap__);
-      }
-      if (stageType_ != emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.HIDE_AND_SEEK_STAGE_PREPARE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, stageType_);
-      }
-      if (isRecordScore_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isRecordScore_);
+            .computeMessageSize(11, battleInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -517,17 +613,17 @@ public final class HideAndSeekStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo other = (emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo) obj;
 
-      if (getMapId()
-          != other.getMapId()) return false;
-      if (getHunterUid()
-          != other.getHunterUid()) return false;
-      if (stageType_ != other.stageType_) return false;
-      if (!internalGetBattleInfoMap().equals(
-          other.internalGetBattleInfoMap())) return false;
-      if (getIsRecordScore()
-          != other.getIsRecordScore()) return false;
       if (!getHiderUidListList()
           .equals(other.getHiderUidListList())) return false;
+      if (!internalGetBattleInfoMap().equals(
+          other.internalGetBattleInfoMap())) return false;
+      if (getKHLGPKIAFAE()
+          != other.getKHLGPKIAFAE()) return false;
+      if (getIsRecordScore()
+          != other.getIsRecordScore()) return false;
+      if (getALPIHGCCEGK()
+          != other.getALPIHGCCEGK()) return false;
+      if (stageType_ != other.stageType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -539,23 +635,23 @@ public final class HideAndSeekStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMapId();
-      hash = (37 * hash) + HUNTER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getHunterUid();
-      hash = (37 * hash) + STAGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + stageType_;
-      if (!internalGetBattleInfoMap().getMap().isEmpty()) {
-        hash = (37 * hash) + BATTLE_INFO_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetBattleInfoMap().hashCode();
-      }
-      hash = (37 * hash) + IS_RECORD_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsRecordScore());
       if (getHiderUidListCount() > 0) {
         hash = (37 * hash) + HIDER_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHiderUidListList().hashCode();
       }
+      if (!internalGetBattleInfoMap().getMap().isEmpty()) {
+        hash = (37 * hash) + BATTLE_INFO_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetBattleInfoMap().hashCode();
+      }
+      hash = (37 * hash) + KHLGPKIAFAE_FIELD_NUMBER;
+      hash = (53 * hash) + getKHLGPKIAFAE();
+      hash = (37 * hash) + IS_RECORD_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsRecordScore());
+      hash = (37 * hash) + ALPIHGCCEGK_FIELD_NUMBER;
+      hash = (53 * hash) + getALPIHGCCEGK();
+      hash = (37 * hash) + STAGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + stageType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -652,10 +748,6 @@ public final class HideAndSeekStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AABBILIFMCJ
-     * </pre>
-     *
      * Protobuf type {@code HideAndSeekStageInfo}
      */
     public static final class Builder extends
@@ -671,7 +763,7 @@ public final class HideAndSeekStageInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 11:
             return internalGetBattleInfoMap();
           default:
             throw new RuntimeException(
@@ -682,7 +774,7 @@ public final class HideAndSeekStageInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 11:
             return internalGetMutableBattleInfoMap();
           default:
             throw new RuntimeException(
@@ -715,17 +807,17 @@ public final class HideAndSeekStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mapId_ = 0;
+        hiderUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        internalGetMutableBattleInfoMap().clear();
+        kHLGPKIAFAE_ = 0;
 
-        hunterUid_ = 0;
+        isRecordScore_ = false;
+
+        aLPIHGCCEGK_ = 0;
 
         stageType_ = 0;
 
-        internalGetMutableBattleInfoMap().clear();
-        isRecordScore_ = false;
-
-        hiderUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -753,17 +845,17 @@ public final class HideAndSeekStageInfoOuterClass {
       public emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo buildPartial() {
         emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo result = new emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo(this);
         int from_bitField0_ = bitField0_;
-        result.mapId_ = mapId_;
-        result.hunterUid_ = hunterUid_;
-        result.stageType_ = stageType_;
-        result.battleInfoMap_ = internalGetBattleInfoMap();
-        result.battleInfoMap_.makeImmutable();
-        result.isRecordScore_ = isRecordScore_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           hiderUidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.hiderUidList_ = hiderUidList_;
+        result.battleInfoMap_ = internalGetBattleInfoMap();
+        result.battleInfoMap_.makeImmutable();
+        result.kHLGPKIAFAE_ = kHLGPKIAFAE_;
+        result.isRecordScore_ = isRecordScore_;
+        result.aLPIHGCCEGK_ = aLPIHGCCEGK_;
+        result.stageType_ = stageType_;
         onBuilt();
         return result;
       }
@@ -812,29 +904,29 @@ public final class HideAndSeekStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo other) {
         if (other == emu.grasscutter.net.proto.HideAndSeekStageInfoOuterClass.HideAndSeekStageInfo.getDefaultInstance()) return this;
-        if (other.getMapId() != 0) {
-          setMapId(other.getMapId());
-        }
-        if (other.getHunterUid() != 0) {
-          setHunterUid(other.getHunterUid());
-        }
-        if (other.stageType_ != 0) {
-          setStageTypeValue(other.getStageTypeValue());
-        }
-        internalGetMutableBattleInfoMap().mergeFrom(
-            other.internalGetBattleInfoMap());
-        if (other.getIsRecordScore() != false) {
-          setIsRecordScore(other.getIsRecordScore());
-        }
         if (!other.hiderUidList_.isEmpty()) {
           if (hiderUidList_.isEmpty()) {
             hiderUidList_ = other.hiderUidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureHiderUidListIsMutable();
             hiderUidList_.addAll(other.hiderUidList_);
           }
           onChanged();
+        }
+        internalGetMutableBattleInfoMap().mergeFrom(
+            other.internalGetBattleInfoMap());
+        if (other.getKHLGPKIAFAE() != 0) {
+          setKHLGPKIAFAE(other.getKHLGPKIAFAE());
+        }
+        if (other.getIsRecordScore() != false) {
+          setIsRecordScore(other.getIsRecordScore());
+        }
+        if (other.getALPIHGCCEGK() != 0) {
+          setALPIHGCCEGK(other.getALPIHGCCEGK());
+        }
+        if (other.stageType_ != 0) {
+          setStageTypeValue(other.getStageTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -866,125 +958,116 @@ public final class HideAndSeekStageInfoOuterClass {
       }
       private int bitField0_;
 
-      private int mapId_ ;
-      /**
-       * <code>uint32 map_id = 3;</code>
-       * @return The mapId.
-       */
-      @java.lang.Override
-      public int getMapId() {
-        return mapId_;
+      private com.google.protobuf.Internal.IntList hiderUidList_ = emptyIntList();
+      private void ensureHiderUidListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          hiderUidList_ = mutableCopy(hiderUidList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 map_id = 3;</code>
-       * @param value The mapId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @return A list containing the hiderUidList.
+       */
+      public java.util.List<java.lang.Integer>
+          getHiderUidListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(hiderUidList_) : hiderUidList_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @return The count of hiderUidList.
+       */
+      public int getHiderUidListCount() {
+        return hiderUidList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @param index The index of the element to return.
+       * @return The hiderUidList at the given index.
+       */
+      public int getHiderUidList(int index) {
+        return hiderUidList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The hiderUidList to set.
        * @return This builder for chaining.
        */
-      public Builder setMapId(int value) {
-        
-        mapId_ = value;
+      public Builder setHiderUidList(
+          int index, int value) {
+        ensureHiderUidListIsMutable();
+        hiderUidList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 map_id = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @param value The hiderUidList to add.
        * @return This builder for chaining.
        */
-      public Builder clearMapId() {
-        
-        mapId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hunterUid_ ;
-      /**
-       * <code>uint32 hunter_uid = 4;</code>
-       * @return The hunterUid.
-       */
-      @java.lang.Override
-      public int getHunterUid() {
-        return hunterUid_;
-      }
-      /**
-       * <code>uint32 hunter_uid = 4;</code>
-       * @param value The hunterUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHunterUid(int value) {
-        
-        hunterUid_ = value;
+      public Builder addHiderUidList(int value) {
+        ensureHiderUidListIsMutable();
+        hiderUidList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 hunter_uid = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
+       * @param values The hiderUidList to add.
        * @return This builder for chaining.
        */
-      public Builder clearHunterUid() {
-        
-        hunterUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageType_ = 0;
-      /**
-       * <code>.HideAndSeekStageType stage_type = 9;</code>
-       * @return The enum numeric value on the wire for stageType.
-       */
-      @java.lang.Override public int getStageTypeValue() {
-        return stageType_;
-      }
-      /**
-       * <code>.HideAndSeekStageType stage_type = 9;</code>
-       * @param value The enum numeric value on the wire for stageType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageTypeValue(int value) {
-        
-        stageType_ = value;
+      public Builder addAllHiderUidList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureHiderUidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, hiderUidList_);
         onChanged();
         return this;
       }
       /**
-       * <code>.HideAndSeekStageType stage_type = 9;</code>
-       * @return The stageType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType result = emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.valueOf(stageType_);
-        return result == null ? emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.HideAndSeekStageType stage_type = 9;</code>
-       * @param value The stageType to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 hider_uid_list = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder setStageType(emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        stageType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.HideAndSeekStageType stage_type = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageType() {
-        
-        stageType_ = 0;
+      public Builder clearHiderUidList() {
+        hiderUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> battleInfoMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+          java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> battleInfoMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
       internalGetBattleInfoMap() {
         if (battleInfoMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -992,7 +1075,7 @@ public final class HideAndSeekStageInfoOuterClass {
         }
         return battleInfoMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
       internalGetMutableBattleInfoMap() {
         onChanged();;
         if (battleInfoMap_ == null) {
@@ -1009,7 +1092,11 @@ public final class HideAndSeekStageInfoOuterClass {
         return internalGetBattleInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
 
       @java.lang.Override
@@ -1023,39 +1110,51 @@ public final class HideAndSeekStageInfoOuterClass {
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> getBattleInfoMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> getBattleInfoMap() {
         return getBattleInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> getBattleInfoMapMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> getBattleInfoMapMap() {
         return internalGetBattleInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrDefault(
+      public emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrDefault(
           int key,
-          emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo defaultValue) {
+          emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP defaultValue) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> map =
             internalGetBattleInfoMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo getBattleInfoMapOrThrow(
+      public emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP getBattleInfoMapOrThrow(
           int key) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> map =
             internalGetBattleInfoMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
@@ -1069,7 +1168,11 @@ public final class HideAndSeekStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
 
       public Builder removeBattleInfoMap(
@@ -1083,16 +1186,20 @@ public final class HideAndSeekStageInfoOuterClass {
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo>
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP>
       getMutableBattleInfoMap() {
         return internalGetMutableBattleInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
       public Builder putBattleInfoMap(
           int key,
-          emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo value) {
+          emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableBattleInfoMap().getMutableMap()
@@ -1100,19 +1207,70 @@ public final class HideAndSeekStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .HideAndSeekPlayerBattleInfo&gt; battle_info_map = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .AGGDMOCBEMP&gt; battle_info_map = 11;</code>
        */
 
       public Builder putAllBattleInfoMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.HideAndSeekPlayerBattleInfo> values) {
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.AGGDMOCBEMP> values) {
         internalGetMutableBattleInfoMap().getMutableMap()
             .putAll(values);
         return this;
       }
 
+      private int kHLGPKIAFAE_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 5;</code>
+       * @return The kHLGPKIAFAE.
+       */
+      @java.lang.Override
+      public int getKHLGPKIAFAE() {
+        return kHLGPKIAFAE_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 5;</code>
+       * @param value The kHLGPKIAFAE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKHLGPKIAFAE(int value) {
+        
+        kHLGPKIAFAE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKHLGPKIAFAE() {
+        
+        kHLGPKIAFAE_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isRecordScore_ ;
       /**
-       * <code>bool is_record_score = 13;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_record_score = 3;</code>
        * @return The isRecordScore.
        */
       @java.lang.Override
@@ -1120,7 +1278,11 @@ public final class HideAndSeekStageInfoOuterClass {
         return isRecordScore_;
       }
       /**
-       * <code>bool is_record_score = 13;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_record_score = 3;</code>
        * @param value The isRecordScore to set.
        * @return This builder for chaining.
        */
@@ -1131,7 +1293,11 @@ public final class HideAndSeekStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_record_score = 13;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_record_score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsRecordScore() {
@@ -1141,81 +1307,119 @@ public final class HideAndSeekStageInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList hiderUidList_ = emptyIntList();
-      private void ensureHiderUidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          hiderUidList_ = mutableCopy(hiderUidList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private int aLPIHGCCEGK_ ;
       /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @return A list containing the hiderUidList.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ALPIHGCCEGK = 8;</code>
+       * @return The aLPIHGCCEGK.
        */
-      public java.util.List<java.lang.Integer>
-          getHiderUidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(hiderUidList_) : hiderUidList_;
+      @java.lang.Override
+      public int getALPIHGCCEGK() {
+        return aLPIHGCCEGK_;
       }
       /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @return The count of hiderUidList.
-       */
-      public int getHiderUidListCount() {
-        return hiderUidList_.size();
-      }
-      /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The hiderUidList at the given index.
-       */
-      public int getHiderUidList(int index) {
-        return hiderUidList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The hiderUidList to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ALPIHGCCEGK = 8;</code>
+       * @param value The aLPIHGCCEGK to set.
        * @return This builder for chaining.
        */
-      public Builder setHiderUidList(
-          int index, int value) {
-        ensureHiderUidListIsMutable();
-        hiderUidList_.setInt(index, value);
+      public Builder setALPIHGCCEGK(int value) {
+        
+        aLPIHGCCEGK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @param value The hiderUidList to add.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ALPIHGCCEGK = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder addHiderUidList(int value) {
-        ensureHiderUidListIsMutable();
-        hiderUidList_.addInt(value);
+      public Builder clearALPIHGCCEGK() {
+        
+        aLPIHGCCEGK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageType_ = 0;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>.HideAndSeekStageType stage_type = 1;</code>
+       * @return The enum numeric value on the wire for stageType.
+       */
+      @java.lang.Override public int getStageTypeValue() {
+        return stageType_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>.HideAndSeekStageType stage_type = 1;</code>
+       * @param value The enum numeric value on the wire for stageType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageTypeValue(int value) {
+        
+        stageType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
-       * @param values The hiderUidList to add.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>.HideAndSeekStageType stage_type = 1;</code>
+       * @return The stageType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType getStageType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType result = emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.valueOf(stageType_);
+        return result == null ? emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>.HideAndSeekStageType stage_type = 1;</code>
+       * @param value The stageType to set.
        * @return This builder for chaining.
        */
-      public Builder addAllHiderUidList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureHiderUidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, hiderUidList_);
+      public Builder setStageType(emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.HideAndSeekStageType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        stageType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 hider_uid_list = 7;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>.HideAndSeekStageType stage_type = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHiderUidList() {
-        hiderUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearStageType() {
+        
+        stageType_ = 0;
         onChanged();
         return this;
       }
@@ -1291,38 +1495,38 @@ public final class HideAndSeekStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032HideAndSeekStageInfo.proto\032\032HideAndSee" +
-      "kStageType.proto\032!HideAndSeekPlayerBattl" +
-      "eInfo.proto\"\255\002\n\024HideAndSeekStageInfo\022\016\n\006" +
-      "map_id\030\003 \001(\r\022\022\n\nhunter_uid\030\004 \001(\r\022)\n\nstag" +
-      "e_type\030\t \001(\0162\025.HideAndSeekStageType\022A\n\017b" +
-      "attle_info_map\030\010 \003(\0132(.HideAndSeekStageI" +
-      "nfo.BattleInfoMapEntry\022\027\n\017is_record_scor" +
-      "e\030\r \001(\010\022\026\n\016hider_uid_list\030\007 \003(\r\032R\n\022Battl" +
-      "eInfoMapEntry\022\013\n\003key\030\001 \001(\r\022+\n\005value\030\002 \001(" +
-      "\0132\034.HideAndSeekPlayerBattleInfo:\0028\001B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\032HideAndSeekStageInfo.proto\032\021AGGDMOCBEM" +
+      "P.proto\032\032HideAndSeekStageType.proto\"\243\002\n\024" +
+      "HideAndSeekStageInfo\022\026\n\016hider_uid_list\030\n" +
+      " \003(\r\022A\n\017battle_info_map\030\013 \003(\0132(.HideAndS" +
+      "eekStageInfo.BattleInfoMapEntry\022\023\n\013KHLGP" +
+      "KIAFAE\030\005 \001(\r\022\027\n\017is_record_score\030\003 \001(\010\022\023\n" +
+      "\013ALPIHGCCEGK\030\010 \001(\r\022)\n\nstage_type\030\001 \001(\0162\025" +
+      ".HideAndSeekStageType\032B\n\022BattleInfoMapEn" +
+      "try\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.AGGDMO" +
+      "CBEMP:\0028\001B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.getDescriptor(),
         });
     internal_static_HideAndSeekStageInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HideAndSeekStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekStageInfo_descriptor,
-        new java.lang.String[] { "MapId", "HunterUid", "StageType", "BattleInfoMap", "IsRecordScore", "HiderUidList", });
+        new java.lang.String[] { "HiderUidList", "BattleInfoMap", "KHLGPKIAFAE", "IsRecordScore", "ALPIHGCCEGK", "StageType", });
     internal_static_HideAndSeekStageInfo_BattleInfoMapEntry_descriptor =
       internal_static_HideAndSeekStageInfo_descriptor.getNestedTypes().get(0);
     internal_static_HideAndSeekStageInfo_BattleInfoMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HideAndSeekStageInfo_BattleInfoMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    emu.grasscutter.net.proto.AGGDMOCBEMPOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HideAndSeekStageTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.HideAndSeekPlayerBattleInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

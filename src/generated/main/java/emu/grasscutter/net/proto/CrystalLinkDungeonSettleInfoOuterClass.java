@@ -19,46 +19,74 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 kill_normal_monster_num = 6;</code>
-     * @return The killNormalMonsterNum.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 7;</code>
+     * @return The oIGNGOLLEKO.
      */
-    int getKillNormalMonsterNum();
+    int getOIGNGOLLEKO();
 
     /**
-     * <code>uint32 kill_elite_monster_num = 8;</code>
-     * @return The killEliteMonsterNum.
-     */
-    int getKillEliteMonsterNum();
-
-    /**
-     * <code>bool JOACACPFMLB = 7;</code>
-     * @return The jOACACPFMLB.
-     */
-    boolean getJOACACPFMLB();
-
-    /**
-     * <code>bool is_new_record = 1;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 8;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>uint32 final_score = 3;</code>
-     * @return The finalScore.
-     */
-    int getFinalScore();
-
-    /**
-     * <code>uint32 level_id = 13;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 1;</code>
+     * @return The kEABNKEIJAD.
+     */
+    int getKEABNKEIJAD();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool POMOBAHIENG = 11;</code>
+     * @return The pOMOBAHIENG.
+     */
+    boolean getPOMOBAHIENG();
+
+    /**
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 13;</code>
+     * @return The fMOCDOENEOL.
+     */
+    int getFMOCDOENEOL();
   }
   /**
    * Protobuf type {@code CrystalLinkDungeonSettleInfo}
@@ -107,37 +135,37 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
               break;
             case 8: {
 
-              isNewRecord_ = input.readBool();
+              kEABNKEIJAD_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 32: {
 
-              finalScore_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              killNormalMonsterNum_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              jOACACPFMLB_ = input.readBool();
+              oIGNGOLLEKO_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              killEliteMonsterNum_ = input.readUInt32();
+              difficultyId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              pOMOBAHIENG_ = input.readBool();
               break;
             }
             case 96: {
 
-              difficultyId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 104: {
 
-              levelId_ = input.readUInt32();
+              fMOCDOENEOL_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,54 +200,29 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.class, emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder.class);
     }
 
-    public static final int KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER = 6;
-    private int killNormalMonsterNum_;
+    public static final int OIGNGOLLEKO_FIELD_NUMBER = 7;
+    private int oIGNGOLLEKO_;
     /**
-     * <code>uint32 kill_normal_monster_num = 6;</code>
-     * @return The killNormalMonsterNum.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 7;</code>
+     * @return The oIGNGOLLEKO.
      */
     @java.lang.Override
-    public int getKillNormalMonsterNum() {
-      return killNormalMonsterNum_;
+    public int getOIGNGOLLEKO() {
+      return oIGNGOLLEKO_;
     }
 
-    public static final int KILL_ELITE_MONSTER_NUM_FIELD_NUMBER = 8;
-    private int killEliteMonsterNum_;
-    /**
-     * <code>uint32 kill_elite_monster_num = 8;</code>
-     * @return The killEliteMonsterNum.
-     */
-    @java.lang.Override
-    public int getKillEliteMonsterNum() {
-      return killEliteMonsterNum_;
-    }
-
-    public static final int JOACACPFMLB_FIELD_NUMBER = 7;
-    private boolean jOACACPFMLB_;
-    /**
-     * <code>bool JOACACPFMLB = 7;</code>
-     * @return The jOACACPFMLB.
-     */
-    @java.lang.Override
-    public boolean getJOACACPFMLB() {
-      return jOACACPFMLB_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 1;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 12;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 8;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 8;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -227,26 +230,79 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       return difficultyId_;
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 3;
-    private int finalScore_;
-    /**
-     * <code>uint32 final_score = 3;</code>
-     * @return The finalScore.
-     */
-    @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int KEABNKEIJAD_FIELD_NUMBER = 1;
+    private int kEABNKEIJAD_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 1;</code>
+     * @return The kEABNKEIJAD.
+     */
+    @java.lang.Override
+    public int getKEABNKEIJAD() {
+      return kEABNKEIJAD_;
+    }
+
+    public static final int POMOBAHIENG_FIELD_NUMBER = 11;
+    private boolean pOMOBAHIENG_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool POMOBAHIENG = 11;</code>
+     * @return The pOMOBAHIENG.
+     */
+    @java.lang.Override
+    public boolean getPOMOBAHIENG() {
+      return pOMOBAHIENG_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int FMOCDOENEOL_FIELD_NUMBER = 13;
+    private int fMOCDOENEOL_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 13;</code>
+     * @return The fMOCDOENEOL.
+     */
+    @java.lang.Override
+    public int getFMOCDOENEOL() {
+      return fMOCDOENEOL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -263,26 +319,26 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(1, isNewRecord_);
-      }
-      if (finalScore_ != 0) {
-        output.writeUInt32(3, finalScore_);
-      }
-      if (killNormalMonsterNum_ != 0) {
-        output.writeUInt32(6, killNormalMonsterNum_);
-      }
-      if (jOACACPFMLB_ != false) {
-        output.writeBool(7, jOACACPFMLB_);
-      }
-      if (killEliteMonsterNum_ != 0) {
-        output.writeUInt32(8, killEliteMonsterNum_);
-      }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(12, difficultyId_);
+      if (kEABNKEIJAD_ != 0) {
+        output.writeUInt32(1, kEABNKEIJAD_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(4, levelId_);
+      }
+      if (oIGNGOLLEKO_ != 0) {
+        output.writeUInt32(7, oIGNGOLLEKO_);
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(8, difficultyId_);
+      }
+      if (pOMOBAHIENG_ != false) {
+        output.writeBool(11, pOMOBAHIENG_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(12, isNewRecord_);
+      }
+      if (fMOCDOENEOL_ != 0) {
+        output.writeUInt32(13, fMOCDOENEOL_);
       }
       unknownFields.writeTo(output);
     }
@@ -293,33 +349,33 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
+      if (kEABNKEIJAD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isNewRecord_);
-      }
-      if (finalScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, finalScore_);
-      }
-      if (killNormalMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, killNormalMonsterNum_);
-      }
-      if (jOACACPFMLB_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, jOACACPFMLB_);
-      }
-      if (killEliteMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, killEliteMonsterNum_);
-      }
-      if (difficultyId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, difficultyId_);
+          .computeUInt32Size(1, kEABNKEIJAD_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(4, levelId_);
+      }
+      if (oIGNGOLLEKO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, oIGNGOLLEKO_);
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, difficultyId_);
+      }
+      if (pOMOBAHIENG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, pOMOBAHIENG_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isNewRecord_);
+      }
+      if (fMOCDOENEOL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, fMOCDOENEOL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -336,20 +392,20 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo other = (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) obj;
 
-      if (getKillNormalMonsterNum()
-          != other.getKillNormalMonsterNum()) return false;
-      if (getKillEliteMonsterNum()
-          != other.getKillEliteMonsterNum()) return false;
-      if (getJOACACPFMLB()
-          != other.getJOACACPFMLB()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
+      if (getOIGNGOLLEKO()
+          != other.getOIGNGOLLEKO()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getKEABNKEIJAD()
+          != other.getKEABNKEIJAD()) return false;
+      if (getPOMOBAHIENG()
+          != other.getPOMOBAHIENG()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getFMOCDOENEOL()
+          != other.getFMOCDOENEOL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -361,22 +417,22 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KILL_NORMAL_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillNormalMonsterNum();
-      hash = (37 * hash) + KILL_ELITE_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillEliteMonsterNum();
-      hash = (37 * hash) + JOACACPFMLB_FIELD_NUMBER;
+      hash = (37 * hash) + OIGNGOLLEKO_FIELD_NUMBER;
+      hash = (53 * hash) + getOIGNGOLLEKO();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + KEABNKEIJAD_FIELD_NUMBER;
+      hash = (53 * hash) + getKEABNKEIJAD();
+      hash = (37 * hash) + POMOBAHIENG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJOACACPFMLB());
+          getPOMOBAHIENG());
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + FMOCDOENEOL_FIELD_NUMBER;
+      hash = (53 * hash) + getFMOCDOENEOL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,19 +566,19 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        killNormalMonsterNum_ = 0;
-
-        killEliteMonsterNum_ = 0;
-
-        jOACACPFMLB_ = false;
-
-        isNewRecord_ = false;
+        oIGNGOLLEKO_ = 0;
 
         difficultyId_ = 0;
 
-        finalScore_ = 0;
-
         levelId_ = 0;
+
+        kEABNKEIJAD_ = 0;
+
+        pOMOBAHIENG_ = false;
+
+        isNewRecord_ = false;
+
+        fMOCDOENEOL_ = 0;
 
         return this;
       }
@@ -550,13 +606,13 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo result = new emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo(this);
-        result.killNormalMonsterNum_ = killNormalMonsterNum_;
-        result.killEliteMonsterNum_ = killEliteMonsterNum_;
-        result.jOACACPFMLB_ = jOACACPFMLB_;
-        result.isNewRecord_ = isNewRecord_;
+        result.oIGNGOLLEKO_ = oIGNGOLLEKO_;
         result.difficultyId_ = difficultyId_;
-        result.finalScore_ = finalScore_;
         result.levelId_ = levelId_;
+        result.kEABNKEIJAD_ = kEABNKEIJAD_;
+        result.pOMOBAHIENG_ = pOMOBAHIENG_;
+        result.isNewRecord_ = isNewRecord_;
+        result.fMOCDOENEOL_ = fMOCDOENEOL_;
         onBuilt();
         return result;
       }
@@ -605,26 +661,26 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getKillNormalMonsterNum() != 0) {
-          setKillNormalMonsterNum(other.getKillNormalMonsterNum());
-        }
-        if (other.getKillEliteMonsterNum() != 0) {
-          setKillEliteMonsterNum(other.getKillEliteMonsterNum());
-        }
-        if (other.getJOACACPFMLB() != false) {
-          setJOACACPFMLB(other.getJOACACPFMLB());
-        }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getOIGNGOLLEKO() != 0) {
+          setOIGNGOLLEKO(other.getOIGNGOLLEKO());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
         }
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getKEABNKEIJAD() != 0) {
+          setKEABNKEIJAD(other.getKEABNKEIJAD());
+        }
+        if (other.getPOMOBAHIENG() != false) {
+          setPOMOBAHIENG(other.getPOMOBAHIENG());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getFMOCDOENEOL() != 0) {
+          setFMOCDOENEOL(other.getFMOCDOENEOL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,133 +711,56 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int killNormalMonsterNum_ ;
+      private int oIGNGOLLEKO_ ;
       /**
-       * <code>uint32 kill_normal_monster_num = 6;</code>
-       * @return The killNormalMonsterNum.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 7;</code>
+       * @return The oIGNGOLLEKO.
        */
       @java.lang.Override
-      public int getKillNormalMonsterNum() {
-        return killNormalMonsterNum_;
+      public int getOIGNGOLLEKO() {
+        return oIGNGOLLEKO_;
       }
       /**
-       * <code>uint32 kill_normal_monster_num = 6;</code>
-       * @param value The killNormalMonsterNum to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 7;</code>
+       * @param value The oIGNGOLLEKO to set.
        * @return This builder for chaining.
        */
-      public Builder setKillNormalMonsterNum(int value) {
+      public Builder setOIGNGOLLEKO(int value) {
         
-        killNormalMonsterNum_ = value;
+        oIGNGOLLEKO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 kill_normal_monster_num = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKillNormalMonsterNum() {
+      public Builder clearOIGNGOLLEKO() {
         
-        killNormalMonsterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int killEliteMonsterNum_ ;
-      /**
-       * <code>uint32 kill_elite_monster_num = 8;</code>
-       * @return The killEliteMonsterNum.
-       */
-      @java.lang.Override
-      public int getKillEliteMonsterNum() {
-        return killEliteMonsterNum_;
-      }
-      /**
-       * <code>uint32 kill_elite_monster_num = 8;</code>
-       * @param value The killEliteMonsterNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKillEliteMonsterNum(int value) {
-        
-        killEliteMonsterNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kill_elite_monster_num = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKillEliteMonsterNum() {
-        
-        killEliteMonsterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean jOACACPFMLB_ ;
-      /**
-       * <code>bool JOACACPFMLB = 7;</code>
-       * @return The jOACACPFMLB.
-       */
-      @java.lang.Override
-      public boolean getJOACACPFMLB() {
-        return jOACACPFMLB_;
-      }
-      /**
-       * <code>bool JOACACPFMLB = 7;</code>
-       * @param value The jOACACPFMLB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJOACACPFMLB(boolean value) {
-        
-        jOACACPFMLB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool JOACACPFMLB = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJOACACPFMLB() {
-        
-        jOACACPFMLB_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
+        oIGNGOLLEKO_ = 0;
         onChanged();
         return this;
       }
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 8;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -789,7 +768,11 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 8;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -800,7 +783,11 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -810,40 +797,13 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int finalScore_ ;
-      /**
-       * <code>uint32 final_score = 3;</code>
-       * @return The finalScore.
-       */
-      @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
-      }
-      /**
-       * <code>uint32 final_score = 3;</code>
-       * @param value The finalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinalScore(int value) {
-        
-        finalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 final_score = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinalScore() {
-        
-        finalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -851,7 +811,11 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -862,12 +826,188 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kEABNKEIJAD_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
+       * @return The kEABNKEIJAD.
+       */
+      @java.lang.Override
+      public int getKEABNKEIJAD() {
+        return kEABNKEIJAD_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
+       * @param value The kEABNKEIJAD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEABNKEIJAD(int value) {
+        
+        kEABNKEIJAD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKEABNKEIJAD() {
+        
+        kEABNKEIJAD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean pOMOBAHIENG_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool POMOBAHIENG = 11;</code>
+       * @return The pOMOBAHIENG.
+       */
+      @java.lang.Override
+      public boolean getPOMOBAHIENG() {
+        return pOMOBAHIENG_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool POMOBAHIENG = 11;</code>
+       * @param value The pOMOBAHIENG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPOMOBAHIENG(boolean value) {
+        
+        pOMOBAHIENG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool POMOBAHIENG = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPOMOBAHIENG() {
+        
+        pOMOBAHIENG_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int fMOCDOENEOL_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 13;</code>
+       * @return The fMOCDOENEOL.
+       */
+      @java.lang.Override
+      public int getFMOCDOENEOL() {
+        return fMOCDOENEOL_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 13;</code>
+       * @param value The fMOCDOENEOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFMOCDOENEOL(int value) {
+        
+        fMOCDOENEOL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFMOCDOENEOL() {
+        
+        fMOCDOENEOL_ = 0;
         onChanged();
         return this;
       }
@@ -938,13 +1078,13 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"CrystalLinkDungeonSettleInfo.proto\"\311\001\n" +
-      "\034CrystalLinkDungeonSettleInfo\022\037\n\027kill_no" +
-      "rmal_monster_num\030\006 \001(\r\022\036\n\026kill_elite_mon" +
-      "ster_num\030\010 \001(\r\022\023\n\013JOACACPFMLB\030\007 \001(\010\022\025\n\ri" +
-      "s_new_record\030\001 \001(\010\022\025\n\rdifficulty_id\030\014 \001(" +
-      "\r\022\023\n\013final_score\030\003 \001(\r\022\020\n\010level_id\030\r \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\"CrystalLinkDungeonSettleInfo.proto\"\262\001\n" +
+      "\034CrystalLinkDungeonSettleInfo\022\023\n\013OIGNGOL" +
+      "LEKO\030\007 \001(\r\022\025\n\rdifficulty_id\030\010 \001(\r\022\020\n\010lev" +
+      "el_id\030\004 \001(\r\022\023\n\013KEABNKEIJAD\030\001 \001(\r\022\023\n\013POMO" +
+      "BAHIENG\030\013 \001(\010\022\025\n\ris_new_record\030\014 \001(\010\022\023\n\013" +
+      "FMOCDOENEOL\030\r \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -955,7 +1095,7 @@ public final class CrystalLinkDungeonSettleInfoOuterClass {
     internal_static_CrystalLinkDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "KillNormalMonsterNum", "KillEliteMonsterNum", "JOACACPFMLB", "IsNewRecord", "DifficultyId", "FinalScore", "LevelId", });
+        new java.lang.String[] { "OIGNGOLLEKO", "DifficultyId", "LevelId", "KEABNKEIJAD", "POMOBAHIENG", "IsNewRecord", "FMOCDOENEOL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

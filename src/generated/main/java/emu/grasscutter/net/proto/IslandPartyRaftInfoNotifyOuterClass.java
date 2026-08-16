@@ -19,33 +19,32 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IKOIIPFMHEM = 7;</code>
-     * @return The iKOIIPFMHEM.
+     * <code>uint32 OINHNDDIGCO = 2;</code>
+     * @return The oINHNDDIGCO.
      */
-    int getIKOIIPFMHEM();
+    int getOINHNDDIGCO();
 
     /**
-     * <code>uint32 coin = 6;</code>
+     * <code>uint32 point_id = 8;</code>
+     * @return The pointId.
+     */
+    int getPointId();
+
+    /**
+     * <code>uint32 coin = 12;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>uint32 OKHOJEDMEOE = 1;</code>
-     * @return The oKHOJEDMEOE.
+     * <code>uint32 GBMHKNKNHHF = 13;</code>
+     * @return The gBMHKNKNHHF.
      */
-    int getOKHOJEDMEOE();
-
-    /**
-     * <code>uint32 point_id = 12;</code>
-     * @return The pointId.
-     */
-    int getPointId();
+    int getGBMHKNKNHHF();
   }
   /**
    * <pre>
-   * CmdId: 5989
-   * Obf: FPAABFMHMGB
+   * CmdId: 100
    * </pre>
    *
    * Protobuf type {@code IslandPartyRaftInfoNotify}
@@ -92,24 +91,24 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              oKHOJEDMEOE_ = input.readUInt32();
+              oINHNDDIGCO_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 64: {
 
-              coin_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              iKOIIPFMHEM_ = input.readUInt32();
+              pointId_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              pointId_ = input.readUInt32();
+              coin_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              gBMHKNKNHHF_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,21 +143,32 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
               emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.class, emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.Builder.class);
     }
 
-    public static final int IKOIIPFMHEM_FIELD_NUMBER = 7;
-    private int iKOIIPFMHEM_;
+    public static final int OINHNDDIGCO_FIELD_NUMBER = 2;
+    private int oINHNDDIGCO_;
     /**
-     * <code>uint32 IKOIIPFMHEM = 7;</code>
-     * @return The iKOIIPFMHEM.
+     * <code>uint32 OINHNDDIGCO = 2;</code>
+     * @return The oINHNDDIGCO.
      */
     @java.lang.Override
-    public int getIKOIIPFMHEM() {
-      return iKOIIPFMHEM_;
+    public int getOINHNDDIGCO() {
+      return oINHNDDIGCO_;
     }
 
-    public static final int COIN_FIELD_NUMBER = 6;
+    public static final int POINT_ID_FIELD_NUMBER = 8;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 8;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
+    }
+
+    public static final int COIN_FIELD_NUMBER = 12;
     private int coin_;
     /**
-     * <code>uint32 coin = 6;</code>
+     * <code>uint32 coin = 12;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -166,26 +176,15 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       return coin_;
     }
 
-    public static final int OKHOJEDMEOE_FIELD_NUMBER = 1;
-    private int oKHOJEDMEOE_;
+    public static final int GBMHKNKNHHF_FIELD_NUMBER = 13;
+    private int gBMHKNKNHHF_;
     /**
-     * <code>uint32 OKHOJEDMEOE = 1;</code>
-     * @return The oKHOJEDMEOE.
+     * <code>uint32 GBMHKNKNHHF = 13;</code>
+     * @return The gBMHKNKNHHF.
      */
     @java.lang.Override
-    public int getOKHOJEDMEOE() {
-      return oKHOJEDMEOE_;
-    }
-
-    public static final int POINT_ID_FIELD_NUMBER = 12;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 12;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
+    public int getGBMHKNKNHHF() {
+      return gBMHKNKNHHF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +201,17 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oKHOJEDMEOE_ != 0) {
-        output.writeUInt32(1, oKHOJEDMEOE_);
-      }
-      if (coin_ != 0) {
-        output.writeUInt32(6, coin_);
-      }
-      if (iKOIIPFMHEM_ != 0) {
-        output.writeUInt32(7, iKOIIPFMHEM_);
+      if (oINHNDDIGCO_ != 0) {
+        output.writeUInt32(2, oINHNDDIGCO_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(12, pointId_);
+        output.writeUInt32(8, pointId_);
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(12, coin_);
+      }
+      if (gBMHKNKNHHF_ != 0) {
+        output.writeUInt32(13, gBMHKNKNHHF_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +222,21 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oKHOJEDMEOE_ != 0) {
+      if (oINHNDDIGCO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, oKHOJEDMEOE_);
-      }
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, coin_);
-      }
-      if (iKOIIPFMHEM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iKOIIPFMHEM_);
+          .computeUInt32Size(2, oINHNDDIGCO_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointId_);
+          .computeUInt32Size(8, pointId_);
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, coin_);
+      }
+      if (gBMHKNKNHHF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gBMHKNKNHHF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +253,14 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify other = (emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify) obj;
 
-      if (getIKOIIPFMHEM()
-          != other.getIKOIIPFMHEM()) return false;
-      if (getCoin()
-          != other.getCoin()) return false;
-      if (getOKHOJEDMEOE()
-          != other.getOKHOJEDMEOE()) return false;
+      if (getOINHNDDIGCO()
+          != other.getOINHNDDIGCO()) return false;
       if (getPointId()
           != other.getPointId()) return false;
+      if (getCoin()
+          != other.getCoin()) return false;
+      if (getGBMHKNKNHHF()
+          != other.getGBMHKNKNHHF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +272,14 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IKOIIPFMHEM_FIELD_NUMBER;
-      hash = (53 * hash) + getIKOIIPFMHEM();
-      hash = (37 * hash) + COIN_FIELD_NUMBER;
-      hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + OKHOJEDMEOE_FIELD_NUMBER;
-      hash = (53 * hash) + getOKHOJEDMEOE();
+      hash = (37 * hash) + OINHNDDIGCO_FIELD_NUMBER;
+      hash = (53 * hash) + getOINHNDDIGCO();
       hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPointId();
+      hash = (37 * hash) + COIN_FIELD_NUMBER;
+      hash = (53 * hash) + getCoin();
+      hash = (37 * hash) + GBMHKNKNHHF_FIELD_NUMBER;
+      hash = (53 * hash) + getGBMHKNKNHHF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +377,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5989
-     * Obf: FPAABFMHMGB
+     * CmdId: 100
      * </pre>
      *
      * Protobuf type {@code IslandPartyRaftInfoNotify}
@@ -419,13 +417,13 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iKOIIPFMHEM_ = 0;
+        oINHNDDIGCO_ = 0;
+
+        pointId_ = 0;
 
         coin_ = 0;
 
-        oKHOJEDMEOE_ = 0;
-
-        pointId_ = 0;
+        gBMHKNKNHHF_ = 0;
 
         return this;
       }
@@ -453,10 +451,10 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify buildPartial() {
         emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify result = new emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify(this);
-        result.iKOIIPFMHEM_ = iKOIIPFMHEM_;
-        result.coin_ = coin_;
-        result.oKHOJEDMEOE_ = oKHOJEDMEOE_;
+        result.oINHNDDIGCO_ = oINHNDDIGCO_;
         result.pointId_ = pointId_;
+        result.coin_ = coin_;
+        result.gBMHKNKNHHF_ = gBMHKNKNHHF_;
         onBuilt();
         return result;
       }
@@ -505,17 +503,17 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify other) {
         if (other == emu.grasscutter.net.proto.IslandPartyRaftInfoNotifyOuterClass.IslandPartyRaftInfoNotify.getDefaultInstance()) return this;
-        if (other.getIKOIIPFMHEM() != 0) {
-          setIKOIIPFMHEM(other.getIKOIIPFMHEM());
+        if (other.getOINHNDDIGCO() != 0) {
+          setOINHNDDIGCO(other.getOINHNDDIGCO());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
-        if (other.getOKHOJEDMEOE() != 0) {
-          setOKHOJEDMEOE(other.getOKHOJEDMEOE());
-        }
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
+        if (other.getGBMHKNKNHHF() != 0) {
+          setGBMHKNKNHHF(other.getGBMHKNKNHHF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,102 +544,40 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return this;
       }
 
-      private int iKOIIPFMHEM_ ;
+      private int oINHNDDIGCO_ ;
       /**
-       * <code>uint32 IKOIIPFMHEM = 7;</code>
-       * @return The iKOIIPFMHEM.
+       * <code>uint32 OINHNDDIGCO = 2;</code>
+       * @return The oINHNDDIGCO.
        */
       @java.lang.Override
-      public int getIKOIIPFMHEM() {
-        return iKOIIPFMHEM_;
+      public int getOINHNDDIGCO() {
+        return oINHNDDIGCO_;
       }
       /**
-       * <code>uint32 IKOIIPFMHEM = 7;</code>
-       * @param value The iKOIIPFMHEM to set.
+       * <code>uint32 OINHNDDIGCO = 2;</code>
+       * @param value The oINHNDDIGCO to set.
        * @return This builder for chaining.
        */
-      public Builder setIKOIIPFMHEM(int value) {
+      public Builder setOINHNDDIGCO(int value) {
         
-        iKOIIPFMHEM_ = value;
+        oINHNDDIGCO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IKOIIPFMHEM = 7;</code>
+       * <code>uint32 OINHNDDIGCO = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIKOIIPFMHEM() {
+      public Builder clearOINHNDDIGCO() {
         
-        iKOIIPFMHEM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int coin_ ;
-      /**
-       * <code>uint32 coin = 6;</code>
-       * @return The coin.
-       */
-      @java.lang.Override
-      public int getCoin() {
-        return coin_;
-      }
-      /**
-       * <code>uint32 coin = 6;</code>
-       * @param value The coin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoin(int value) {
-        
-        coin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoin() {
-        
-        coin_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oKHOJEDMEOE_ ;
-      /**
-       * <code>uint32 OKHOJEDMEOE = 1;</code>
-       * @return The oKHOJEDMEOE.
-       */
-      @java.lang.Override
-      public int getOKHOJEDMEOE() {
-        return oKHOJEDMEOE_;
-      }
-      /**
-       * <code>uint32 OKHOJEDMEOE = 1;</code>
-       * @param value The oKHOJEDMEOE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOKHOJEDMEOE(int value) {
-        
-        oKHOJEDMEOE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OKHOJEDMEOE = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOKHOJEDMEOE() {
-        
-        oKHOJEDMEOE_ = 0;
+        oINHNDDIGCO_ = 0;
         onChanged();
         return this;
       }
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -649,7 +585,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -660,12 +596,74 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
         
         pointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int coin_ ;
+      /**
+       * <code>uint32 coin = 12;</code>
+       * @return The coin.
+       */
+      @java.lang.Override
+      public int getCoin() {
+        return coin_;
+      }
+      /**
+       * <code>uint32 coin = 12;</code>
+       * @param value The coin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoin(int value) {
+        
+        coin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoin() {
+        
+        coin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gBMHKNKNHHF_ ;
+      /**
+       * <code>uint32 GBMHKNKNHHF = 13;</code>
+       * @return The gBMHKNKNHHF.
+       */
+      @java.lang.Override
+      public int getGBMHKNKNHHF() {
+        return gBMHKNKNHHF_;
+      }
+      /**
+       * <code>uint32 GBMHKNKNHHF = 13;</code>
+       * @param value The gBMHKNKNHHF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGBMHKNKNHHF(int value) {
+        
+        gBMHKNKNHHF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GBMHKNKNHHF = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGBMHKNKNHHF() {
+        
+        gBMHKNKNHHF_ = 0;
         onChanged();
         return this;
       }
@@ -737,9 +735,9 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037IslandPartyRaftInfoNotify.proto\"e\n\031Isl" +
-      "andPartyRaftInfoNotify\022\023\n\013IKOIIPFMHEM\030\007 " +
-      "\001(\r\022\014\n\004coin\030\006 \001(\r\022\023\n\013OKHOJEDMEOE\030\001 \001(\r\022\020" +
-      "\n\010point_id\030\014 \001(\rB\033\n\031emu.grasscutter.net." +
+      "andPartyRaftInfoNotify\022\023\n\013OINHNDDIGCO\030\002 " +
+      "\001(\r\022\020\n\010point_id\030\010 \001(\r\022\014\n\004coin\030\014 \001(\r\022\023\n\013G" +
+      "BMHKNKNHHF\030\r \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +749,7 @@ public final class IslandPartyRaftInfoNotifyOuterClass {
     internal_static_IslandPartyRaftInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IslandPartyRaftInfoNotify_descriptor,
-        new java.lang.String[] { "IKOIIPFMHEM", "Coin", "OKHOJEDMEOE", "PointId", });
+        new java.lang.String[] { "OINHNDDIGCO", "PointId", "Coin", "GBMHKNKNHHF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

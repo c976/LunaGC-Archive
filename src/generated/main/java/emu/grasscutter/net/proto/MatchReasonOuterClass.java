@@ -15,10 +15,6 @@ public final class MatchReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LKAMMLNBBDM
-   * </pre>
-   *
    * Protobuf enum {@code MatchReason}
    */
   public enum MatchReason

@@ -19,76 +19,83 @@ public final class GCGLevelChallengeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+     * @return A list containing the unlockWorldChallengeList.
+     */
+    java.util.List<java.lang.Integer> getUnlockWorldChallengeListList();
+    /**
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+     * @return The count of unlockWorldChallengeList.
+     */
+    int getUnlockWorldChallengeListCount();
+    /**
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+     * @param index The index of the element to return.
+     * @return The unlockWorldChallengeList at the given index.
+     */
+    int getUnlockWorldChallengeList(int index);
+
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> 
         getUnlockBossChallengeListList();
     /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
      */
     emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getUnlockBossChallengeList(int index);
     /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
      */
     int getUnlockBossChallengeListCount();
     /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> 
         getUnlockBossChallengeListOrBuilderList();
     /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
      */
     emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getUnlockBossChallengeListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
+     * <code>repeated .GCGLevelData level_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> 
         getLevelListList();
     /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
+     * <code>repeated .GCGLevelData level_list = 4;</code>
      */
     emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData getLevelList(int index);
     /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
+     * <code>repeated .GCGLevelData level_list = 4;</code>
      */
     int getLevelListCount();
     /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
+     * <code>repeated .GCGLevelData level_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder> 
         getLevelListOrBuilderList();
     /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
+     * <code>repeated .GCGLevelData level_list = 4;</code>
      */
     emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder getLevelListOrBuilder(
         int index);
-
-    /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-     * @return A list containing the unlockWorldChallengeList.
-     */
-    java.util.List<java.lang.Integer> getUnlockWorldChallengeListList();
-    /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-     * @return The count of unlockWorldChallengeList.
-     */
-    int getUnlockWorldChallengeListCount();
-    /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-     * @param index The index of the element to return.
-     * @return The unlockWorldChallengeList at the given index.
-     */
-    int getUnlockWorldChallengeList(int index);
   }
   /**
-   * <pre>
-   * CmdId: 24795
-   * Obf: AAKBABHMEIC
-   * </pre>
-   *
    * Protobuf type {@code GCGLevelChallengeNotify}
    */
   public static final class GCGLevelChallengeNotify extends
@@ -101,9 +108,9 @@ public final class GCGLevelChallengeNotifyOuterClass {
       super(builder);
     }
     private GCGLevelChallengeNotify() {
+      unlockWorldChallengeList_ = emptyIntList();
       unlockBossChallengeList_ = java.util.Collections.emptyList();
       levelList_ = java.util.Collections.emptyList();
-      unlockWorldChallengeList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -137,43 +144,43 @@ public final class GCGLevelChallengeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unlockWorldChallengeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              unlockWorldChallengeList_.addInt(input.readUInt32());
-              break;
-            }
-            case 82: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                unlockWorldChallengeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                unlockWorldChallengeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 98: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData>();
+                unlockBossChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData>();
                 mutable_bitField0_ |= 0x00000002;
+              }
+              unlockBossChallengeList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.parser(), extensionRegistry));
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData>();
+                mutable_bitField0_ |= 0x00000004;
               }
               levelList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.parser(), extensionRegistry));
               break;
             }
-            case 122: {
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unlockBossChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData>();
+                unlockWorldChallengeList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unlockBossChallengeList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.parser(), extensionRegistry));
+              unlockWorldChallengeList_.addInt(input.readUInt32());
+              break;
+            }
+            case 90: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                unlockWorldChallengeList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unlockWorldChallengeList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -191,14 +198,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unlockWorldChallengeList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          unlockBossChallengeList_ = java.util.Collections.unmodifiableList(unlockBossChallengeList_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           levelList_ = java.util.Collections.unmodifiableList(levelList_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unlockBossChallengeList_ = java.util.Collections.unmodifiableList(unlockBossChallengeList_);
+          unlockWorldChallengeList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -217,90 +224,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
               emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify.class, emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify.Builder.class);
     }
 
-    public static final int UNLOCK_BOSS_CHALLENGE_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> unlockBossChallengeList_;
-    /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> getUnlockBossChallengeListList() {
-      return unlockBossChallengeList_;
-    }
-    /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> 
-        getUnlockBossChallengeListOrBuilderList() {
-      return unlockBossChallengeList_;
-    }
-    /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getUnlockBossChallengeListCount() {
-      return unlockBossChallengeList_.size();
-    }
-    /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getUnlockBossChallengeList(int index) {
-      return unlockBossChallengeList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getUnlockBossChallengeListOrBuilder(
-        int index) {
-      return unlockBossChallengeList_.get(index);
-    }
-
-    public static final int LEVEL_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> levelList_;
-    /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> getLevelListList() {
-      return levelList_;
-    }
-    /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder> 
-        getLevelListOrBuilderList() {
-      return levelList_;
-    }
-    /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getLevelListCount() {
-      return levelList_.size();
-    }
-    /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData getLevelList(int index) {
-      return levelList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGLevelData level_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder getLevelListOrBuilder(
-        int index) {
-      return levelList_.get(index);
-    }
-
-    public static final int UNLOCK_WORLD_CHALLENGE_LIST_FIELD_NUMBER = 10;
+    public static final int UNLOCK_WORLD_CHALLENGE_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList unlockWorldChallengeList_;
     /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
      * @return A list containing the unlockWorldChallengeList.
      */
     @java.lang.Override
@@ -309,14 +240,22 @@ public final class GCGLevelChallengeNotifyOuterClass {
       return unlockWorldChallengeList_;
     }
     /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
      * @return The count of unlockWorldChallengeList.
      */
     public int getUnlockWorldChallengeListCount() {
       return unlockWorldChallengeList_.size();
     }
     /**
-     * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
+     * <pre>
+     * CMD_ID = 847
+     * </pre>
+     *
+     * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
      * @param index The index of the element to return.
      * @return The unlockWorldChallengeList at the given index.
      */
@@ -324,6 +263,86 @@ public final class GCGLevelChallengeNotifyOuterClass {
       return unlockWorldChallengeList_.getInt(index);
     }
     private int unlockWorldChallengeListMemoizedSerializedSize = -1;
+
+    public static final int UNLOCK_BOSS_CHALLENGE_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> unlockBossChallengeList_;
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> getUnlockBossChallengeListList() {
+      return unlockBossChallengeList_;
+    }
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> 
+        getUnlockBossChallengeListOrBuilderList() {
+      return unlockBossChallengeList_;
+    }
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
+     */
+    @java.lang.Override
+    public int getUnlockBossChallengeListCount() {
+      return unlockBossChallengeList_.size();
+    }
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getUnlockBossChallengeList(int index) {
+      return unlockBossChallengeList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getUnlockBossChallengeListOrBuilder(
+        int index) {
+      return unlockBossChallengeList_.get(index);
+    }
+
+    public static final int LEVEL_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> levelList_;
+    /**
+     * <code>repeated .GCGLevelData level_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> getLevelListList() {
+      return levelList_;
+    }
+    /**
+     * <code>repeated .GCGLevelData level_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder> 
+        getLevelListOrBuilderList() {
+      return levelList_;
+    }
+    /**
+     * <code>repeated .GCGLevelData level_list = 4;</code>
+     */
+    @java.lang.Override
+    public int getLevelListCount() {
+      return levelList_.size();
+    }
+    /**
+     * <code>repeated .GCGLevelData level_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData getLevelList(int index) {
+      return levelList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGLevelData level_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder getLevelListOrBuilder(
+        int index) {
+      return levelList_.get(index);
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -340,18 +359,18 @@ public final class GCGLevelChallengeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      for (int i = 0; i < unlockBossChallengeList_.size(); i++) {
+        output.writeMessage(2, unlockBossChallengeList_.get(i));
+      }
+      for (int i = 0; i < levelList_.size(); i++) {
+        output.writeMessage(4, levelList_.get(i));
+      }
       if (getUnlockWorldChallengeListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(unlockWorldChallengeListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockWorldChallengeList_.size(); i++) {
         output.writeUInt32NoTag(unlockWorldChallengeList_.getInt(i));
-      }
-      for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(12, levelList_.get(i));
-      }
-      for (int i = 0; i < unlockBossChallengeList_.size(); i++) {
-        output.writeMessage(15, unlockBossChallengeList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -362,6 +381,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < unlockBossChallengeList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, unlockBossChallengeList_.get(i));
+      }
+      for (int i = 0; i < levelList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, levelList_.get(i));
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < unlockWorldChallengeList_.size(); i++) {
@@ -375,14 +402,6 @@ public final class GCGLevelChallengeNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         unlockWorldChallengeListMemoizedSerializedSize = dataSize;
-      }
-      for (int i = 0; i < levelList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, levelList_.get(i));
-      }
-      for (int i = 0; i < unlockBossChallengeList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, unlockBossChallengeList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -399,12 +418,12 @@ public final class GCGLevelChallengeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify other = (emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify) obj;
 
+      if (!getUnlockWorldChallengeListList()
+          .equals(other.getUnlockWorldChallengeListList())) return false;
       if (!getUnlockBossChallengeListList()
           .equals(other.getUnlockBossChallengeListList())) return false;
       if (!getLevelListList()
           .equals(other.getLevelListList())) return false;
-      if (!getUnlockWorldChallengeListList()
-          .equals(other.getUnlockWorldChallengeListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -416,6 +435,10 @@ public final class GCGLevelChallengeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getUnlockWorldChallengeListCount() > 0) {
+        hash = (37 * hash) + UNLOCK_WORLD_CHALLENGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getUnlockWorldChallengeListList().hashCode();
+      }
       if (getUnlockBossChallengeListCount() > 0) {
         hash = (37 * hash) + UNLOCK_BOSS_CHALLENGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUnlockBossChallengeListList().hashCode();
@@ -423,10 +446,6 @@ public final class GCGLevelChallengeNotifyOuterClass {
       if (getLevelListCount() > 0) {
         hash = (37 * hash) + LEVEL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelListList().hashCode();
-      }
-      if (getUnlockWorldChallengeListCount() > 0) {
-        hash = (37 * hash) + UNLOCK_WORLD_CHALLENGE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUnlockWorldChallengeListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -524,11 +543,6 @@ public final class GCGLevelChallengeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 24795
-     * Obf: AAKBABHMEIC
-     * </pre>
-     *
      * Protobuf type {@code GCGLevelChallengeNotify}
      */
     public static final class Builder extends
@@ -568,20 +582,20 @@ public final class GCGLevelChallengeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        unlockWorldChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (unlockBossChallengeListBuilder_ == null) {
           unlockBossChallengeList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           unlockBossChallengeListBuilder_.clear();
         }
         if (levelListBuilder_ == null) {
           levelList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           levelListBuilder_.clear();
         }
-        unlockWorldChallengeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -609,29 +623,29 @@ public final class GCGLevelChallengeNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify buildPartial() {
         emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify result = new emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          unlockWorldChallengeList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.unlockWorldChallengeList_ = unlockWorldChallengeList_;
         if (unlockBossChallengeListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             unlockBossChallengeList_ = java.util.Collections.unmodifiableList(unlockBossChallengeList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.unlockBossChallengeList_ = unlockBossChallengeList_;
         } else {
           result.unlockBossChallengeList_ = unlockBossChallengeListBuilder_.build();
         }
         if (levelListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             levelList_ = java.util.Collections.unmodifiableList(levelList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.levelList_ = levelList_;
         } else {
           result.levelList_ = levelListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          unlockWorldChallengeList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.unlockWorldChallengeList_ = unlockWorldChallengeList_;
         onBuilt();
         return result;
       }
@@ -680,11 +694,21 @@ public final class GCGLevelChallengeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify other) {
         if (other == emu.grasscutter.net.proto.GCGLevelChallengeNotifyOuterClass.GCGLevelChallengeNotify.getDefaultInstance()) return this;
+        if (!other.unlockWorldChallengeList_.isEmpty()) {
+          if (unlockWorldChallengeList_.isEmpty()) {
+            unlockWorldChallengeList_ = other.unlockWorldChallengeList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureUnlockWorldChallengeListIsMutable();
+            unlockWorldChallengeList_.addAll(other.unlockWorldChallengeList_);
+          }
+          onChanged();
+        }
         if (unlockBossChallengeListBuilder_ == null) {
           if (!other.unlockBossChallengeList_.isEmpty()) {
             if (unlockBossChallengeList_.isEmpty()) {
               unlockBossChallengeList_ = other.unlockBossChallengeList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureUnlockBossChallengeListIsMutable();
               unlockBossChallengeList_.addAll(other.unlockBossChallengeList_);
@@ -697,7 +721,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
               unlockBossChallengeListBuilder_.dispose();
               unlockBossChallengeListBuilder_ = null;
               unlockBossChallengeList_ = other.unlockBossChallengeList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               unlockBossChallengeListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getUnlockBossChallengeListFieldBuilder() : null;
@@ -710,7 +734,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
           if (!other.levelList_.isEmpty()) {
             if (levelList_.isEmpty()) {
               levelList_ = other.levelList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureLevelListIsMutable();
               levelList_.addAll(other.levelList_);
@@ -723,7 +747,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
               levelListBuilder_.dispose();
               levelListBuilder_ = null;
               levelList_ = other.levelList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
               levelListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLevelListFieldBuilder() : null;
@@ -731,16 +755,6 @@ public final class GCGLevelChallengeNotifyOuterClass {
               levelListBuilder_.addAllMessages(other.levelList_);
             }
           }
-        }
-        if (!other.unlockWorldChallengeList_.isEmpty()) {
-          if (unlockWorldChallengeList_.isEmpty()) {
-            unlockWorldChallengeList_ = other.unlockWorldChallengeList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureUnlockWorldChallengeListIsMutable();
-            unlockWorldChallengeList_.addAll(other.unlockWorldChallengeList_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -772,12 +786,119 @@ public final class GCGLevelChallengeNotifyOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList unlockWorldChallengeList_ = emptyIntList();
+      private void ensureUnlockWorldChallengeListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          unlockWorldChallengeList_ = mutableCopy(unlockWorldChallengeList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @return A list containing the unlockWorldChallengeList.
+       */
+      public java.util.List<java.lang.Integer>
+          getUnlockWorldChallengeListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(unlockWorldChallengeList_) : unlockWorldChallengeList_;
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @return The count of unlockWorldChallengeList.
+       */
+      public int getUnlockWorldChallengeListCount() {
+        return unlockWorldChallengeList_.size();
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @param index The index of the element to return.
+       * @return The unlockWorldChallengeList at the given index.
+       */
+      public int getUnlockWorldChallengeList(int index) {
+        return unlockWorldChallengeList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @param index The index to set the value at.
+       * @param value The unlockWorldChallengeList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnlockWorldChallengeList(
+          int index, int value) {
+        ensureUnlockWorldChallengeListIsMutable();
+        unlockWorldChallengeList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @param value The unlockWorldChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addUnlockWorldChallengeList(int value) {
+        ensureUnlockWorldChallengeListIsMutable();
+        unlockWorldChallengeList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @param values The unlockWorldChallengeList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllUnlockWorldChallengeList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUnlockWorldChallengeListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, unlockWorldChallengeList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * CMD_ID = 847
+       * </pre>
+       *
+       * <code>repeated uint32 unlock_world_challenge_list = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnlockWorldChallengeList() {
+        unlockWorldChallengeList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> unlockBossChallengeList_ =
         java.util.Collections.emptyList();
       private void ensureUnlockBossChallengeListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           unlockBossChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData>(unlockBossChallengeList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -785,7 +906,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
           emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> unlockBossChallengeListBuilder_;
 
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> getUnlockBossChallengeListList() {
         if (unlockBossChallengeListBuilder_ == null) {
@@ -795,7 +916,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public int getUnlockBossChallengeListCount() {
         if (unlockBossChallengeListBuilder_ == null) {
@@ -805,7 +926,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData getUnlockBossChallengeList(int index) {
         if (unlockBossChallengeListBuilder_ == null) {
@@ -815,7 +936,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder setUnlockBossChallengeList(
           int index, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData value) {
@@ -832,7 +953,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder setUnlockBossChallengeList(
           int index, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder builderForValue) {
@@ -846,7 +967,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder addUnlockBossChallengeList(emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData value) {
         if (unlockBossChallengeListBuilder_ == null) {
@@ -862,7 +983,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder addUnlockBossChallengeList(
           int index, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData value) {
@@ -879,7 +1000,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder addUnlockBossChallengeList(
           emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder builderForValue) {
@@ -893,7 +1014,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder addUnlockBossChallengeList(
           int index, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder builderForValue) {
@@ -907,7 +1028,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder addAllUnlockBossChallengeList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData> values) {
@@ -922,12 +1043,12 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder clearUnlockBossChallengeList() {
         if (unlockBossChallengeListBuilder_ == null) {
           unlockBossChallengeList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           unlockBossChallengeListBuilder_.clear();
@@ -935,7 +1056,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public Builder removeUnlockBossChallengeList(int index) {
         if (unlockBossChallengeListBuilder_ == null) {
@@ -948,14 +1069,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder getUnlockBossChallengeListBuilder(
           int index) {
         return getUnlockBossChallengeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder getUnlockBossChallengeListOrBuilder(
           int index) {
@@ -965,7 +1086,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder> 
            getUnlockBossChallengeListOrBuilderList() {
@@ -976,14 +1097,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder addUnlockBossChallengeListBuilder() {
         return getUnlockBossChallengeListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder addUnlockBossChallengeListBuilder(
           int index) {
@@ -991,7 +1112,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
             index, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 15;</code>
+       * <code>repeated .GCGBossChallengeData unlock_boss_challenge_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder> 
            getUnlockBossChallengeListBuilderList() {
@@ -1004,7 +1125,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
           unlockBossChallengeListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeData.Builder, emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.GCGBossChallengeDataOrBuilder>(
                   unlockBossChallengeList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           unlockBossChallengeList_ = null;
@@ -1015,9 +1136,9 @@ public final class GCGLevelChallengeNotifyOuterClass {
       private java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> levelList_ =
         java.util.Collections.emptyList();
       private void ensureLevelListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData>(levelList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -1025,7 +1146,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
           emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder> levelListBuilder_;
 
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> getLevelListList() {
         if (levelListBuilder_ == null) {
@@ -1035,7 +1156,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public int getLevelListCount() {
         if (levelListBuilder_ == null) {
@@ -1045,7 +1166,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData getLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -1055,7 +1176,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData value) {
@@ -1072,7 +1193,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder builderForValue) {
@@ -1086,7 +1207,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder addLevelList(emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData value) {
         if (levelListBuilder_ == null) {
@@ -1102,7 +1223,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData value) {
@@ -1119,7 +1240,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder addLevelList(
           emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder builderForValue) {
@@ -1133,7 +1254,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder builderForValue) {
@@ -1147,7 +1268,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder addAllLevelList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData> values) {
@@ -1162,12 +1283,12 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder clearLevelList() {
         if (levelListBuilder_ == null) {
           levelList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           levelListBuilder_.clear();
@@ -1175,7 +1296,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public Builder removeLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -1188,14 +1309,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder getLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder getLevelListOrBuilder(
           int index) {
@@ -1205,7 +1326,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder> 
            getLevelListOrBuilderList() {
@@ -1216,14 +1337,14 @@ public final class GCGLevelChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder addLevelListBuilder() {
         return getLevelListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder addLevelListBuilder(
           int index) {
@@ -1231,7 +1352,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
             index, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGLevelData level_list = 12;</code>
+       * <code>repeated .GCGLevelData level_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder> 
            getLevelListBuilderList() {
@@ -1244,91 +1365,12 @@ public final class GCGLevelChallengeNotifyOuterClass {
           levelListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelData.Builder, emu.grasscutter.net.proto.GCGLevelDataOuterClass.GCGLevelDataOrBuilder>(
                   levelList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           levelList_ = null;
         }
         return levelListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList unlockWorldChallengeList_ = emptyIntList();
-      private void ensureUnlockWorldChallengeListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          unlockWorldChallengeList_ = mutableCopy(unlockWorldChallengeList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @return A list containing the unlockWorldChallengeList.
-       */
-      public java.util.List<java.lang.Integer>
-          getUnlockWorldChallengeListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(unlockWorldChallengeList_) : unlockWorldChallengeList_;
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @return The count of unlockWorldChallengeList.
-       */
-      public int getUnlockWorldChallengeListCount() {
-        return unlockWorldChallengeList_.size();
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @param index The index of the element to return.
-       * @return The unlockWorldChallengeList at the given index.
-       */
-      public int getUnlockWorldChallengeList(int index) {
-        return unlockWorldChallengeList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The unlockWorldChallengeList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnlockWorldChallengeList(
-          int index, int value) {
-        ensureUnlockWorldChallengeListIsMutable();
-        unlockWorldChallengeList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @param value The unlockWorldChallengeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addUnlockWorldChallengeList(int value) {
-        ensureUnlockWorldChallengeListIsMutable();
-        unlockWorldChallengeList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @param values The unlockWorldChallengeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllUnlockWorldChallengeList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnlockWorldChallengeListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unlockWorldChallengeList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 unlock_world_challenge_list = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnlockWorldChallengeList() {
-        unlockWorldChallengeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1399,10 +1441,10 @@ public final class GCGLevelChallengeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GCGLevelChallengeNotify.proto\032\032GCGBoss" +
       "ChallengeData.proto\032\022GCGLevelData.proto\"" +
-      "\234\001\n\027GCGLevelChallengeNotify\0229\n\032unlock_bo" +
-      "ss_challenge_list\030\017 \003(\0132\025.GCGBossChallen" +
-      "geData\022!\n\nlevel_list\030\014 \003(\0132\r.GCGLevelDat" +
-      "a\022#\n\033unlock_world_challenge_list\030\n \003(\rB\033" +
+      "\234\001\n\027GCGLevelChallengeNotify\022#\n\033unlock_wo" +
+      "rld_challenge_list\030\013 \003(\r\0229\n\032unlock_boss_" +
+      "challenge_list\030\002 \003(\0132\025.GCGBossChallengeD" +
+      "ata\022!\n\nlevel_list\030\004 \003(\0132\r.GCGLevelDataB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1416,7 +1458,7 @@ public final class GCGLevelChallengeNotifyOuterClass {
     internal_static_GCGLevelChallengeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGLevelChallengeNotify_descriptor,
-        new java.lang.String[] { "UnlockBossChallengeList", "LevelList", "UnlockWorldChallengeList", });
+        new java.lang.String[] { "UnlockWorldChallengeList", "UnlockBossChallengeList", "LevelList", });
     emu.grasscutter.net.proto.GCGBossChallengeDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGLevelDataOuterClass.getDescriptor();
   }

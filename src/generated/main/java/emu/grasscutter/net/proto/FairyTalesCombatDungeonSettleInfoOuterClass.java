@@ -19,28 +19,71 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 8;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     * @return Whether the cEODJGNICOL field is set.
      */
-    boolean getIsNewRecord();
+    boolean hasCEODJGNICOL();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     * @return The cEODJGNICOL.
+     */
+    emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK getCEODJGNICOL();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     */
+    emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder getCEODJGNICOLOrBuilder();
 
     /**
-     * <code>uint32 total_score = 1;</code>
-     * @return The totalScore.
-     */
-    int getTotalScore();
-
-    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 13;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 4;</code>
      * @return The difficulty.
      */
     int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 13;</code>
+     * @return The dDELJGCCNIB.
+     */
+    int getDDELJGCCNIB();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code FairyTalesCombatDungeonSettleInfo}
@@ -87,14 +130,9 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              totalScore_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              isNewRecord_ = input.readBool();
+              difficulty_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -102,9 +140,27 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
+            case 90: {
+              emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder subBuilder = null;
+              if (cEODJGNICOL_ != null) {
+                subBuilder = cEODJGNICOL_.toBuilder();
+              }
+              cEODJGNICOL_ = input.readMessage(emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(cEODJGNICOL_);
+                cEODJGNICOL_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             case 104: {
 
-              difficulty_ = input.readUInt32();
+              dDELJGCCNIB_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -139,31 +195,51 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo.class, emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
-    private boolean isNewRecord_;
+    public static final int CEODJGNICOL_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK cEODJGNICOL_;
     /**
-     * <code>bool is_new_record = 8;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     * @return Whether the cEODJGNICOL field is set.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public boolean hasCEODJGNICOL() {
+      return cEODJGNICOL_ != null;
     }
-
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 1;
-    private int totalScore_;
     /**
-     * <code>uint32 total_score = 1;</code>
-     * @return The totalScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     * @return The cEODJGNICOL.
      */
     @java.lang.Override
-    public int getTotalScore() {
-      return totalScore_;
+    public emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK getCEODJGNICOL() {
+      return cEODJGNICOL_ == null ? emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.getDefaultInstance() : cEODJGNICOL_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder getCEODJGNICOLOrBuilder() {
+      return getCEODJGNICOL();
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
@@ -172,15 +248,49 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 13;
+    public static final int DIFFICULTY_FIELD_NUMBER = 4;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 13;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 4;</code>
      * @return The difficulty.
      */
     @java.lang.Override
     public int getDifficulty() {
       return difficulty_;
+    }
+
+    public static final int DDELJGCCNIB_FIELD_NUMBER = 13;
+    private int dDELJGCCNIB_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 13;</code>
+     * @return The dDELJGCCNIB.
+     */
+    @java.lang.Override
+    public int getDDELJGCCNIB() {
+      return dDELJGCCNIB_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +307,20 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalScore_ != 0) {
-        output.writeUInt32(1, totalScore_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(8, isNewRecord_);
+      if (difficulty_ != 0) {
+        output.writeUInt32(4, difficulty_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(9, levelId_);
       }
-      if (difficulty_ != 0) {
-        output.writeUInt32(13, difficulty_);
+      if (cEODJGNICOL_ != null) {
+        output.writeMessage(11, getCEODJGNICOL());
+      }
+      if (dDELJGCCNIB_ != 0) {
+        output.writeUInt32(13, dDELJGCCNIB_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(14, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +331,25 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalScore_ != 0) {
+      if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, totalScore_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNewRecord_);
+          .computeUInt32Size(4, difficulty_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, levelId_);
       }
-      if (difficulty_ != 0) {
+      if (cEODJGNICOL_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, difficulty_);
+          .computeMessageSize(11, getCEODJGNICOL());
+      }
+      if (dDELJGCCNIB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, dDELJGCCNIB_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +366,19 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo other = (emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getTotalScore()
-          != other.getTotalScore()) return false;
+      if (hasCEODJGNICOL() != other.hasCEODJGNICOL()) return false;
+      if (hasCEODJGNICOL()) {
+        if (!getCEODJGNICOL()
+            .equals(other.getCEODJGNICOL())) return false;
+      }
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getDDELJGCCNIB()
+          != other.getDDELJGCCNIB()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +390,19 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalScore();
+      if (hasCEODJGNICOL()) {
+        hash = (37 * hash) + CEODJGNICOL_FIELD_NUMBER;
+        hash = (53 * hash) + getCEODJGNICOL().hashCode();
+      }
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + DDELJGCCNIB_FIELD_NUMBER;
+      hash = (53 * hash) + getDDELJGCCNIB();
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +536,19 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
-
-        totalScore_ = 0;
-
+        if (cEODJGNICOLBuilder_ == null) {
+          cEODJGNICOL_ = null;
+        } else {
+          cEODJGNICOL_ = null;
+          cEODJGNICOLBuilder_ = null;
+        }
         levelId_ = 0;
 
         difficulty_ = 0;
+
+        dDELJGCCNIB_ = 0;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -444,10 +576,15 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo result = new emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
-        result.totalScore_ = totalScore_;
+        if (cEODJGNICOLBuilder_ == null) {
+          result.cEODJGNICOL_ = cEODJGNICOL_;
+        } else {
+          result.cEODJGNICOL_ = cEODJGNICOLBuilder_.build();
+        }
         result.levelId_ = levelId_;
         result.difficulty_ = difficulty_;
+        result.dDELJGCCNIB_ = dDELJGCCNIB_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -496,17 +633,20 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FairyTalesCombatDungeonSettleInfoOuterClass.FairyTalesCombatDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getTotalScore() != 0) {
-          setTotalScore(other.getTotalScore());
+        if (other.hasCEODJGNICOL()) {
+          mergeCEODJGNICOL(other.getCEODJGNICOL());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
+        }
+        if (other.getDDELJGCCNIB() != 0) {
+          setDDELJGCCNIB(other.getDDELJGCCNIB());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,70 +677,167 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
+      private emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK cEODJGNICOL_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder> cEODJGNICOLBuilder_;
       /**
-       * <code>bool is_new_record = 8;</code>
-       * @return The isNewRecord.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       * @return Whether the cEODJGNICOL field is set.
        */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
+      public boolean hasCEODJGNICOL() {
+        return cEODJGNICOLBuilder_ != null || cEODJGNICOL_ != null;
       }
       /**
-       * <code>bool is_new_record = 8;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       * @return The cEODJGNICOL.
        */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
+      public emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK getCEODJGNICOL() {
+        if (cEODJGNICOLBuilder_ == null) {
+          return cEODJGNICOL_ == null ? emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.getDefaultInstance() : cEODJGNICOL_;
+        } else {
+          return cEODJGNICOLBuilder_.getMessage();
+        }
       }
       /**
-       * <code>bool is_new_record = 8;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
        */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
+      public Builder setCEODJGNICOL(emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK value) {
+        if (cEODJGNICOLBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          cEODJGNICOL_ = value;
+          onChanged();
+        } else {
+          cEODJGNICOLBuilder_.setMessage(value);
+        }
 
-      private int totalScore_ ;
-      /**
-       * <code>uint32 total_score = 1;</code>
-       * @return The totalScore.
-       */
-      @java.lang.Override
-      public int getTotalScore() {
-        return totalScore_;
-      }
-      /**
-       * <code>uint32 total_score = 1;</code>
-       * @param value The totalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalScore(int value) {
-        
-        totalScore_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_score = 1;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
        */
-      public Builder clearTotalScore() {
-        
-        totalScore_ = 0;
-        onChanged();
+      public Builder setCEODJGNICOL(
+          emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder builderForValue) {
+        if (cEODJGNICOLBuilder_ == null) {
+          cEODJGNICOL_ = builderForValue.build();
+          onChanged();
+        } else {
+          cEODJGNICOLBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       */
+      public Builder mergeCEODJGNICOL(emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK value) {
+        if (cEODJGNICOLBuilder_ == null) {
+          if (cEODJGNICOL_ != null) {
+            cEODJGNICOL_ =
+              emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.newBuilder(cEODJGNICOL_).mergeFrom(value).buildPartial();
+          } else {
+            cEODJGNICOL_ = value;
+          }
+          onChanged();
+        } else {
+          cEODJGNICOLBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       */
+      public Builder clearCEODJGNICOL() {
+        if (cEODJGNICOLBuilder_ == null) {
+          cEODJGNICOL_ = null;
+          onChanged();
+        } else {
+          cEODJGNICOL_ = null;
+          cEODJGNICOLBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       */
+      public emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder getCEODJGNICOLBuilder() {
+        
+        onChanged();
+        return getCEODJGNICOLFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       */
+      public emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder getCEODJGNICOLOrBuilder() {
+        if (cEODJGNICOLBuilder_ != null) {
+          return cEODJGNICOLBuilder_.getMessageOrBuilder();
+        } else {
+          return cEODJGNICOL_ == null ?
+              emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.getDefaultInstance() : cEODJGNICOL_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.GHKGHKKMDKK CEODJGNICOL = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder> 
+          getCEODJGNICOLFieldBuilder() {
+        if (cEODJGNICOLBuilder_ == null) {
+          cEODJGNICOLBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKK.Builder, emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.GHKGHKKMDKKOrBuilder>(
+                  getCEODJGNICOL(),
+                  getParentForChildren(),
+                  isClean());
+          cEODJGNICOL_ = null;
+        }
+        return cEODJGNICOLBuilder_;
       }
 
       private int levelId_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
@@ -609,6 +846,10 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -620,6 +861,10 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
@@ -632,7 +877,11 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 4;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -640,7 +889,11 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 4;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -651,12 +904,102 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dDELJGCCNIB_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 13;</code>
+       * @return The dDELJGCCNIB.
+       */
+      @java.lang.Override
+      public int getDDELJGCCNIB() {
+        return dDELJGCCNIB_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 13;</code>
+       * @param value The dDELJGCCNIB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDDELJGCCNIB(int value) {
+        
+        dDELJGCCNIB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDDELJGCCNIB() {
+        
+        dDELJGCCNIB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 14;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 14;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -728,21 +1071,25 @@ public final class FairyTalesCombatDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'FairyTalesCombatDungeonSettleInfo.prot" +
-      "o\"u\n!FairyTalesCombatDungeonSettleInfo\022\025" +
-      "\n\ris_new_record\030\010 \001(\010\022\023\n\013total_score\030\001 \001" +
-      "(\r\022\020\n\010level_id\030\t \001(\r\022\022\n\ndifficulty\030\r \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\032\021GHKGHKKMDKK.proto\"\230\001\n!FairyTalesComba" +
+      "tDungeonSettleInfo\022!\n\013CEODJGNICOL\030\013 \001(\0132" +
+      "\014.GHKGHKKMDKK\022\020\n\010level_id\030\t \001(\r\022\022\n\ndiffi" +
+      "culty\030\004 \001(\r\022\023\n\013DDELJGCCNIB\030\r \001(\r\022\025\n\ris_n" +
+      "ew_record\030\016 \001(\010B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.getDescriptor(),
         });
     internal_static_FairyTalesCombatDungeonSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FairyTalesCombatDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FairyTalesCombatDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "TotalScore", "LevelId", "Difficulty", });
+        new java.lang.String[] { "CEODJGNICOL", "LevelId", "Difficulty", "DDELJGCCNIB", "IsNewRecord", });
+    emu.grasscutter.net.proto.GHKGHKKMDKKOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

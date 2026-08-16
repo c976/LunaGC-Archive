@@ -19,44 +19,64 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-     * @return A list containing the kGHDINNKLAP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+     * @return A list containing the kLHJNLBAAOO.
      */
-    java.util.List<java.lang.Integer> getKGHDINNKLAPList();
+    java.util.List<java.lang.Integer> getKLHJNLBAAOOList();
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-     * @return The count of kGHDINNKLAP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+     * @return The count of kLHJNLBAAOO.
      */
-    int getKGHDINNKLAPCount();
+    int getKLHJNLBAAOOCount();
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
      * @param index The index of the element to return.
-     * @return The kGHDINNKLAP at the given index.
+     * @return The kLHJNLBAAOO at the given index.
      */
-    int getKGHDINNKLAP(int index);
+    int getKLHJNLBAAOO(int index);
 
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-     * @return A list containing the oFDHDDONDFD.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+     * @return A list containing the eMEBEFLHMEG.
      */
-    java.util.List<java.lang.Integer> getOFDHDDONDFDList();
+    java.util.List<java.lang.Integer> getEMEBEFLHMEGList();
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-     * @return The count of oFDHDDONDFD.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+     * @return The count of eMEBEFLHMEG.
      */
-    int getOFDHDDONDFDCount();
+    int getEMEBEFLHMEGCount();
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
      * @param index The index of the element to return.
-     * @return The oFDHDDONDFD at the given index.
+     * @return The eMEBEFLHMEG at the given index.
      */
-    int getOFDHDDONDFD(int index);
+    int getEMEBEFLHMEG(int index);
   }
   /**
-   * <pre>
-   * Obf: OEDMELCNNFK
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryHideAndSeekInfo}
    */
   public static final class SceneGalleryHideAndSeekInfo extends
@@ -69,8 +89,8 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       super(builder);
     }
     private SceneGalleryHideAndSeekInfo() {
-      kGHDINNKLAP_ = emptyIntList();
-      oFDHDDONDFD_ = emptyIntList();
+      kLHJNLBAAOO_ = emptyIntList();
+      eMEBEFLHMEG_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -104,44 +124,44 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                oFDHDDONDFD_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 8: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                kLHJNLBAAOO_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              oFDHDDONDFD_.addInt(input.readUInt32());
+              kLHJNLBAAOO_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                oFDHDDONDFD_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                kLHJNLBAAOO_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oFDHDDONDFD_.addInt(input.readUInt32());
+                kLHJNLBAAOO_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                kGHDINNKLAP_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 32: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                eMEBEFLHMEG_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              kGHDINNKLAP_.addInt(input.readUInt32());
+              eMEBEFLHMEG_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                kGHDINNKLAP_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                eMEBEFLHMEG_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                kGHDINNKLAP_.addInt(input.readUInt32());
+                eMEBEFLHMEG_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -161,11 +181,11 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          oFDHDDONDFD_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          kGHDINNKLAP_.makeImmutable(); // C
+          kLHJNLBAAOO_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          eMEBEFLHMEG_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -184,61 +204,85 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.class, emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.Builder.class);
     }
 
-    public static final int KGHDINNKLAP_FIELD_NUMBER = 12;
-    private com.google.protobuf.Internal.IntList kGHDINNKLAP_;
+    public static final int KLHJNLBAAOO_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList kLHJNLBAAOO_;
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-     * @return A list containing the kGHDINNKLAP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+     * @return A list containing the kLHJNLBAAOO.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getKGHDINNKLAPList() {
-      return kGHDINNKLAP_;
+        getKLHJNLBAAOOList() {
+      return kLHJNLBAAOO_;
     }
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-     * @return The count of kGHDINNKLAP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+     * @return The count of kLHJNLBAAOO.
      */
-    public int getKGHDINNKLAPCount() {
-      return kGHDINNKLAP_.size();
+    public int getKLHJNLBAAOOCount() {
+      return kLHJNLBAAOO_.size();
     }
     /**
-     * <code>repeated uint32 KGHDINNKLAP = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
      * @param index The index of the element to return.
-     * @return The kGHDINNKLAP at the given index.
+     * @return The kLHJNLBAAOO at the given index.
      */
-    public int getKGHDINNKLAP(int index) {
-      return kGHDINNKLAP_.getInt(index);
+    public int getKLHJNLBAAOO(int index) {
+      return kLHJNLBAAOO_.getInt(index);
     }
-    private int kGHDINNKLAPMemoizedSerializedSize = -1;
+    private int kLHJNLBAAOOMemoizedSerializedSize = -1;
 
-    public static final int OFDHDDONDFD_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList oFDHDDONDFD_;
+    public static final int EMEBEFLHMEG_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList eMEBEFLHMEG_;
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-     * @return A list containing the oFDHDDONDFD.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+     * @return A list containing the eMEBEFLHMEG.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOFDHDDONDFDList() {
-      return oFDHDDONDFD_;
+        getEMEBEFLHMEGList() {
+      return eMEBEFLHMEG_;
     }
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-     * @return The count of oFDHDDONDFD.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+     * @return The count of eMEBEFLHMEG.
      */
-    public int getOFDHDDONDFDCount() {
-      return oFDHDDONDFD_.size();
+    public int getEMEBEFLHMEGCount() {
+      return eMEBEFLHMEG_.size();
     }
     /**
-     * <code>repeated uint32 OFDHDDONDFD = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
      * @param index The index of the element to return.
-     * @return The oFDHDDONDFD at the given index.
+     * @return The eMEBEFLHMEG at the given index.
      */
-    public int getOFDHDDONDFD(int index) {
-      return oFDHDDONDFD_.getInt(index);
+    public int getEMEBEFLHMEG(int index) {
+      return eMEBEFLHMEG_.getInt(index);
     }
-    private int oFDHDDONDFDMemoizedSerializedSize = -1;
+    private int eMEBEFLHMEGMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -255,19 +299,19 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getOFDHDDONDFDList().size() > 0) {
-        output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(oFDHDDONDFDMemoizedSerializedSize);
+      if (getKLHJNLBAAOOList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(kLHJNLBAAOOMemoizedSerializedSize);
       }
-      for (int i = 0; i < oFDHDDONDFD_.size(); i++) {
-        output.writeUInt32NoTag(oFDHDDONDFD_.getInt(i));
+      for (int i = 0; i < kLHJNLBAAOO_.size(); i++) {
+        output.writeUInt32NoTag(kLHJNLBAAOO_.getInt(i));
       }
-      if (getKGHDINNKLAPList().size() > 0) {
-        output.writeUInt32NoTag(98);
-        output.writeUInt32NoTag(kGHDINNKLAPMemoizedSerializedSize);
+      if (getEMEBEFLHMEGList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(eMEBEFLHMEGMemoizedSerializedSize);
       }
-      for (int i = 0; i < kGHDINNKLAP_.size(); i++) {
-        output.writeUInt32NoTag(kGHDINNKLAP_.getInt(i));
+      for (int i = 0; i < eMEBEFLHMEG_.size(); i++) {
+        output.writeUInt32NoTag(eMEBEFLHMEG_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -280,31 +324,31 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < oFDHDDONDFD_.size(); i++) {
+        for (int i = 0; i < kLHJNLBAAOO_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oFDHDDONDFD_.getInt(i));
+            .computeUInt32SizeNoTag(kLHJNLBAAOO_.getInt(i));
         }
         size += dataSize;
-        if (!getOFDHDDONDFDList().isEmpty()) {
+        if (!getKLHJNLBAAOOList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oFDHDDONDFDMemoizedSerializedSize = dataSize;
+        kLHJNLBAAOOMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < kGHDINNKLAP_.size(); i++) {
+        for (int i = 0; i < eMEBEFLHMEG_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(kGHDINNKLAP_.getInt(i));
+            .computeUInt32SizeNoTag(eMEBEFLHMEG_.getInt(i));
         }
         size += dataSize;
-        if (!getKGHDINNKLAPList().isEmpty()) {
+        if (!getEMEBEFLHMEGList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        kGHDINNKLAPMemoizedSerializedSize = dataSize;
+        eMEBEFLHMEGMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -321,10 +365,10 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo other = (emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo) obj;
 
-      if (!getKGHDINNKLAPList()
-          .equals(other.getKGHDINNKLAPList())) return false;
-      if (!getOFDHDDONDFDList()
-          .equals(other.getOFDHDDONDFDList())) return false;
+      if (!getKLHJNLBAAOOList()
+          .equals(other.getKLHJNLBAAOOList())) return false;
+      if (!getEMEBEFLHMEGList()
+          .equals(other.getEMEBEFLHMEGList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -336,13 +380,13 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getKGHDINNKLAPCount() > 0) {
-        hash = (37 * hash) + KGHDINNKLAP_FIELD_NUMBER;
-        hash = (53 * hash) + getKGHDINNKLAPList().hashCode();
+      if (getKLHJNLBAAOOCount() > 0) {
+        hash = (37 * hash) + KLHJNLBAAOO_FIELD_NUMBER;
+        hash = (53 * hash) + getKLHJNLBAAOOList().hashCode();
       }
-      if (getOFDHDDONDFDCount() > 0) {
-        hash = (37 * hash) + OFDHDDONDFD_FIELD_NUMBER;
-        hash = (53 * hash) + getOFDHDDONDFDList().hashCode();
+      if (getEMEBEFLHMEGCount() > 0) {
+        hash = (37 * hash) + EMEBEFLHMEG_FIELD_NUMBER;
+        hash = (53 * hash) + getEMEBEFLHMEGList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -440,10 +484,6 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OEDMELCNNFK
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryHideAndSeekInfo}
      */
     public static final class Builder extends
@@ -481,9 +521,9 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kGHDINNKLAP_ = emptyIntList();
+        kLHJNLBAAOO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        oFDHDDONDFD_ = emptyIntList();
+        eMEBEFLHMEG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -513,15 +553,15 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
         emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo result = new emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          kGHDINNKLAP_.makeImmutable();
+          kLHJNLBAAOO_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.kGHDINNKLAP_ = kGHDINNKLAP_;
+        result.kLHJNLBAAOO_ = kLHJNLBAAOO_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          oFDHDDONDFD_.makeImmutable();
+          eMEBEFLHMEG_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.oFDHDDONDFD_ = oFDHDDONDFD_;
+        result.eMEBEFLHMEG_ = eMEBEFLHMEG_;
         onBuilt();
         return result;
       }
@@ -570,23 +610,23 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.getDefaultInstance()) return this;
-        if (!other.kGHDINNKLAP_.isEmpty()) {
-          if (kGHDINNKLAP_.isEmpty()) {
-            kGHDINNKLAP_ = other.kGHDINNKLAP_;
+        if (!other.kLHJNLBAAOO_.isEmpty()) {
+          if (kLHJNLBAAOO_.isEmpty()) {
+            kLHJNLBAAOO_ = other.kLHJNLBAAOO_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureKGHDINNKLAPIsMutable();
-            kGHDINNKLAP_.addAll(other.kGHDINNKLAP_);
+            ensureKLHJNLBAAOOIsMutable();
+            kLHJNLBAAOO_.addAll(other.kLHJNLBAAOO_);
           }
           onChanged();
         }
-        if (!other.oFDHDDONDFD_.isEmpty()) {
-          if (oFDHDDONDFD_.isEmpty()) {
-            oFDHDDONDFD_ = other.oFDHDDONDFD_;
+        if (!other.eMEBEFLHMEG_.isEmpty()) {
+          if (eMEBEFLHMEG_.isEmpty()) {
+            eMEBEFLHMEG_ = other.eMEBEFLHMEG_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureOFDHDDONDFDIsMutable();
-            oFDHDDONDFD_.addAll(other.oFDHDDONDFD_);
+            ensureEMEBEFLHMEGIsMutable();
+            eMEBEFLHMEG_.addAll(other.eMEBEFLHMEG_);
           }
           onChanged();
         }
@@ -620,159 +660,215 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList kGHDINNKLAP_ = emptyIntList();
-      private void ensureKGHDINNKLAPIsMutable() {
+      private com.google.protobuf.Internal.IntList kLHJNLBAAOO_ = emptyIntList();
+      private void ensureKLHJNLBAAOOIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          kGHDINNKLAP_ = mutableCopy(kGHDINNKLAP_);
+          kLHJNLBAAOO_ = mutableCopy(kLHJNLBAAOO_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-       * @return A list containing the kGHDINNKLAP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+       * @return A list containing the kLHJNLBAAOO.
        */
       public java.util.List<java.lang.Integer>
-          getKGHDINNKLAPList() {
+          getKLHJNLBAAOOList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(kGHDINNKLAP_) : kGHDINNKLAP_;
+                 java.util.Collections.unmodifiableList(kLHJNLBAAOO_) : kLHJNLBAAOO_;
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-       * @return The count of kGHDINNKLAP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+       * @return The count of kLHJNLBAAOO.
        */
-      public int getKGHDINNKLAPCount() {
-        return kGHDINNKLAP_.size();
+      public int getKLHJNLBAAOOCount() {
+        return kLHJNLBAAOO_.size();
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
        * @param index The index of the element to return.
-       * @return The kGHDINNKLAP at the given index.
+       * @return The kLHJNLBAAOO at the given index.
        */
-      public int getKGHDINNKLAP(int index) {
-        return kGHDINNKLAP_.getInt(index);
+      public int getKLHJNLBAAOO(int index) {
+        return kLHJNLBAAOO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
        * @param index The index to set the value at.
-       * @param value The kGHDINNKLAP to set.
+       * @param value The kLHJNLBAAOO to set.
        * @return This builder for chaining.
        */
-      public Builder setKGHDINNKLAP(
+      public Builder setKLHJNLBAAOO(
           int index, int value) {
-        ensureKGHDINNKLAPIsMutable();
-        kGHDINNKLAP_.setInt(index, value);
+        ensureKLHJNLBAAOOIsMutable();
+        kLHJNLBAAOO_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-       * @param value The kGHDINNKLAP to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+       * @param value The kLHJNLBAAOO to add.
        * @return This builder for chaining.
        */
-      public Builder addKGHDINNKLAP(int value) {
-        ensureKGHDINNKLAPIsMutable();
-        kGHDINNKLAP_.addInt(value);
+      public Builder addKLHJNLBAAOO(int value) {
+        ensureKLHJNLBAAOOIsMutable();
+        kLHJNLBAAOO_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
-       * @param values The kGHDINNKLAP to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
+       * @param values The kLHJNLBAAOO to add.
        * @return This builder for chaining.
        */
-      public Builder addAllKGHDINNKLAP(
+      public Builder addAllKLHJNLBAAOO(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureKGHDINNKLAPIsMutable();
+        ensureKLHJNLBAAOOIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, kGHDINNKLAP_);
+            values, kLHJNLBAAOO_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KGHDINNKLAP = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 KLHJNLBAAOO = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKGHDINNKLAP() {
-        kGHDINNKLAP_ = emptyIntList();
+      public Builder clearKLHJNLBAAOO() {
+        kLHJNLBAAOO_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList oFDHDDONDFD_ = emptyIntList();
-      private void ensureOFDHDDONDFDIsMutable() {
+      private com.google.protobuf.Internal.IntList eMEBEFLHMEG_ = emptyIntList();
+      private void ensureEMEBEFLHMEGIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          oFDHDDONDFD_ = mutableCopy(oFDHDDONDFD_);
+          eMEBEFLHMEG_ = mutableCopy(eMEBEFLHMEG_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-       * @return A list containing the oFDHDDONDFD.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+       * @return A list containing the eMEBEFLHMEG.
        */
       public java.util.List<java.lang.Integer>
-          getOFDHDDONDFDList() {
+          getEMEBEFLHMEGList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(oFDHDDONDFD_) : oFDHDDONDFD_;
+                 java.util.Collections.unmodifiableList(eMEBEFLHMEG_) : eMEBEFLHMEG_;
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-       * @return The count of oFDHDDONDFD.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+       * @return The count of eMEBEFLHMEG.
        */
-      public int getOFDHDDONDFDCount() {
-        return oFDHDDONDFD_.size();
+      public int getEMEBEFLHMEGCount() {
+        return eMEBEFLHMEG_.size();
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
        * @param index The index of the element to return.
-       * @return The oFDHDDONDFD at the given index.
+       * @return The eMEBEFLHMEG at the given index.
        */
-      public int getOFDHDDONDFD(int index) {
-        return oFDHDDONDFD_.getInt(index);
+      public int getEMEBEFLHMEG(int index) {
+        return eMEBEFLHMEG_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
        * @param index The index to set the value at.
-       * @param value The oFDHDDONDFD to set.
+       * @param value The eMEBEFLHMEG to set.
        * @return This builder for chaining.
        */
-      public Builder setOFDHDDONDFD(
+      public Builder setEMEBEFLHMEG(
           int index, int value) {
-        ensureOFDHDDONDFDIsMutable();
-        oFDHDDONDFD_.setInt(index, value);
+        ensureEMEBEFLHMEGIsMutable();
+        eMEBEFLHMEG_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-       * @param value The oFDHDDONDFD to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+       * @param value The eMEBEFLHMEG to add.
        * @return This builder for chaining.
        */
-      public Builder addOFDHDDONDFD(int value) {
-        ensureOFDHDDONDFDIsMutable();
-        oFDHDDONDFD_.addInt(value);
+      public Builder addEMEBEFLHMEG(int value) {
+        ensureEMEBEFLHMEGIsMutable();
+        eMEBEFLHMEG_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
-       * @param values The oFDHDDONDFD to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
+       * @param values The eMEBEFLHMEG to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOFDHDDONDFD(
+      public Builder addAllEMEBEFLHMEG(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOFDHDDONDFDIsMutable();
+        ensureEMEBEFLHMEGIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oFDHDDONDFD_);
+            values, eMEBEFLHMEG_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFDHDDONDFD = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 EMEBEFLHMEG = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOFDHDDONDFD() {
-        oFDHDDONDFD_ = emptyIntList();
+      public Builder clearEMEBEFLHMEG() {
+        eMEBEFLHMEG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -845,8 +941,8 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SceneGalleryHideAndSeekInfo.proto\"G\n\033S" +
-      "ceneGalleryHideAndSeekInfo\022\023\n\013KGHDINNKLA" +
-      "P\030\014 \003(\r\022\023\n\013OFDHDDONDFD\030\t \003(\rB\033\n\031emu.gras" +
+      "ceneGalleryHideAndSeekInfo\022\023\n\013KLHJNLBAAO" +
+      "O\030\001 \003(\r\022\023\n\013EMEBEFLHMEG\030\004 \003(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -858,7 +954,7 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
     internal_static_SceneGalleryHideAndSeekInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryHideAndSeekInfo_descriptor,
-        new java.lang.String[] { "KGHDINNKLAP", "OFDHDDONDFD", });
+        new java.lang.String[] { "KLHJNLBAAOO", "EMEBEFLHMEG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

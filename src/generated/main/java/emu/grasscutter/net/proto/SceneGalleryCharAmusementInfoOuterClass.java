@@ -19,40 +19,56 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_score = 9;</code>
-     * @return The curScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 8;</code>
+     * @return The jDHJCMECLOI.
      */
-    int getCurScore();
+    int getJDHJCMECLOI();
 
     /**
-     * <code>bool is_finish = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool IKOAJHMCBNA = 7;</code>
+     * @return The iKOAJHMCBNA.
+     */
+    boolean getIKOAJHMCBNA();
+
+    /**
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>bool is_last_level = 6;</code>
-     * @return The isLastLevel.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 5;</code>
+     * @return The dPPGDBBLCCM.
      */
-    boolean getIsLastLevel();
-
-    /**
-     * <code>uint32 max_score = 8;</code>
-     * @return The maxScore.
-     */
-    int getMaxScore();
-
-    /**
-     * <code>bool is_success = 3;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
+    int getDPPGDBBLCCM();
   }
   /**
-   * <pre>
-   * Obf: BJBICIGABJK
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryCharAmusementInfo}
    */
   public static final class SceneGalleryCharAmusementInfo extends
@@ -97,27 +113,27 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 48: {
+            case 40: {
 
-              isLastLevel_ = input.readBool();
+              dPPGDBBLCCM_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              iKOAJHMCBNA_ = input.readBool();
               break;
             }
             case 64: {
 
-              maxScore_ = input.readUInt32();
+              jDHJCMECLOI_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              curScore_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 96: {
 
               isFinish_ = input.readBool();
               break;
@@ -154,21 +170,59 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.class, emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.Builder.class);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 9;
-    private int curScore_;
+    public static final int JDHJCMECLOI_FIELD_NUMBER = 8;
+    private int jDHJCMECLOI_;
     /**
-     * <code>uint32 cur_score = 9;</code>
-     * @return The curScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 8;</code>
+     * @return The jDHJCMECLOI.
      */
     @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
+    public int getJDHJCMECLOI() {
+      return jDHJCMECLOI_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 15;
+    public static final int IKOAJHMCBNA_FIELD_NUMBER = 7;
+    private boolean iKOAJHMCBNA_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool IKOAJHMCBNA = 7;</code>
+     * @return The iKOAJHMCBNA.
+     */
+    @java.lang.Override
+    public boolean getIKOAJHMCBNA() {
+      return iKOAJHMCBNA_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 4;
+    private boolean isSuccess_;
+    /**
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool is_success = 4;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int IS_FINISH_FIELD_NUMBER = 12;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 15;</code>
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -176,37 +230,19 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int IS_LAST_LEVEL_FIELD_NUMBER = 6;
-    private boolean isLastLevel_;
+    public static final int DPPGDBBLCCM_FIELD_NUMBER = 5;
+    private int dPPGDBBLCCM_;
     /**
-     * <code>bool is_last_level = 6;</code>
-     * @return The isLastLevel.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 5;</code>
+     * @return The dPPGDBBLCCM.
      */
     @java.lang.Override
-    public boolean getIsLastLevel() {
-      return isLastLevel_;
-    }
-
-    public static final int MAX_SCORE_FIELD_NUMBER = 8;
-    private int maxScore_;
-    /**
-     * <code>uint32 max_score = 8;</code>
-     * @return The maxScore.
-     */
-    @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 3;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public int getDPPGDBBLCCM() {
+      return dPPGDBBLCCM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,19 +260,19 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSuccess_ != false) {
-        output.writeBool(3, isSuccess_);
+        output.writeBool(4, isSuccess_);
       }
-      if (isLastLevel_ != false) {
-        output.writeBool(6, isLastLevel_);
+      if (dPPGDBBLCCM_ != 0) {
+        output.writeUInt32(5, dPPGDBBLCCM_);
       }
-      if (maxScore_ != 0) {
-        output.writeUInt32(8, maxScore_);
+      if (iKOAJHMCBNA_ != false) {
+        output.writeBool(7, iKOAJHMCBNA_);
       }
-      if (curScore_ != 0) {
-        output.writeUInt32(9, curScore_);
+      if (jDHJCMECLOI_ != 0) {
+        output.writeUInt32(8, jDHJCMECLOI_);
       }
       if (isFinish_ != false) {
-        output.writeBool(15, isFinish_);
+        output.writeBool(12, isFinish_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,23 +285,23 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       size = 0;
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSuccess_);
+          .computeBoolSize(4, isSuccess_);
       }
-      if (isLastLevel_ != false) {
+      if (dPPGDBBLCCM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isLastLevel_);
+          .computeUInt32Size(5, dPPGDBBLCCM_);
       }
-      if (maxScore_ != 0) {
+      if (iKOAJHMCBNA_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, maxScore_);
+          .computeBoolSize(7, iKOAJHMCBNA_);
       }
-      if (curScore_ != 0) {
+      if (jDHJCMECLOI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, curScore_);
+          .computeUInt32Size(8, jDHJCMECLOI_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinish_);
+          .computeBoolSize(12, isFinish_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,16 +318,16 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo other = (emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo) obj;
 
-      if (getCurScore()
-          != other.getCurScore()) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
-      if (getIsLastLevel()
-          != other.getIsLastLevel()) return false;
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
+      if (getJDHJCMECLOI()
+          != other.getJDHJCMECLOI()) return false;
+      if (getIKOAJHMCBNA()
+          != other.getIKOAJHMCBNA()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
+      if (getDPPGDBBLCCM()
+          != other.getDPPGDBBLCCM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,19 +339,19 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScore();
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (37 * hash) + JDHJCMECLOI_FIELD_NUMBER;
+      hash = (53 * hash) + getJDHJCMECLOI();
+      hash = (37 * hash) + IKOAJHMCBNA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
-      hash = (37 * hash) + IS_LAST_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsLastLevel());
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
+          getIKOAJHMCBNA());
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
+      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinish());
+      hash = (37 * hash) + DPPGDBBLCCM_FIELD_NUMBER;
+      hash = (53 * hash) + getDPPGDBBLCCM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,10 +448,6 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BJBICIGABJK
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryCharAmusementInfo}
      */
     public static final class Builder extends
@@ -453,15 +485,15 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curScore_ = 0;
+        jDHJCMECLOI_ = 0;
+
+        iKOAJHMCBNA_ = false;
+
+        isSuccess_ = false;
 
         isFinish_ = false;
 
-        isLastLevel_ = false;
-
-        maxScore_ = 0;
-
-        isSuccess_ = false;
+        dPPGDBBLCCM_ = 0;
 
         return this;
       }
@@ -489,11 +521,11 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo result = new emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo(this);
-        result.curScore_ = curScore_;
-        result.isFinish_ = isFinish_;
-        result.isLastLevel_ = isLastLevel_;
-        result.maxScore_ = maxScore_;
+        result.jDHJCMECLOI_ = jDHJCMECLOI_;
+        result.iKOAJHMCBNA_ = iKOAJHMCBNA_;
         result.isSuccess_ = isSuccess_;
+        result.isFinish_ = isFinish_;
+        result.dPPGDBBLCCM_ = dPPGDBBLCCM_;
         onBuilt();
         return result;
       }
@@ -542,20 +574,20 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryCharAmusementInfoOuterClass.SceneGalleryCharAmusementInfo.getDefaultInstance()) return this;
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
+        if (other.getJDHJCMECLOI() != 0) {
+          setJDHJCMECLOI(other.getJDHJCMECLOI());
+        }
+        if (other.getIKOAJHMCBNA() != false) {
+          setIKOAJHMCBNA(other.getIKOAJHMCBNA());
+        }
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
-        if (other.getIsLastLevel() != false) {
-          setIsLastLevel(other.getIsLastLevel());
-        }
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
-        }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
+        if (other.getDPPGDBBLCCM() != 0) {
+          setDPPGDBBLCCM(other.getDPPGDBBLCCM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,133 +618,99 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
         return this;
       }
 
-      private int curScore_ ;
+      private int jDHJCMECLOI_ ;
       /**
-       * <code>uint32 cur_score = 9;</code>
-       * @return The curScore.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
+       * @return The jDHJCMECLOI.
        */
       @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
+      public int getJDHJCMECLOI() {
+        return jDHJCMECLOI_;
       }
       /**
-       * <code>uint32 cur_score = 9;</code>
-       * @param value The curScore to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
+       * @param value The jDHJCMECLOI to set.
        * @return This builder for chaining.
        */
-      public Builder setCurScore(int value) {
+      public Builder setJDHJCMECLOI(int value) {
         
-        curScore_ = value;
+        jDHJCMECLOI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_score = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurScore() {
+      public Builder clearJDHJCMECLOI() {
         
-        curScore_ = 0;
+        jDHJCMECLOI_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isFinish_ ;
+      private boolean iKOAJHMCBNA_ ;
       /**
-       * <code>bool is_finish = 15;</code>
-       * @return The isFinish.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool IKOAJHMCBNA = 7;</code>
+       * @return The iKOAJHMCBNA.
        */
       @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
+      public boolean getIKOAJHMCBNA() {
+        return iKOAJHMCBNA_;
       }
       /**
-       * <code>bool is_finish = 15;</code>
-       * @param value The isFinish to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool IKOAJHMCBNA = 7;</code>
+       * @param value The iKOAJHMCBNA to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFinish(boolean value) {
+      public Builder setIKOAJHMCBNA(boolean value) {
         
-        isFinish_ = value;
+        iKOAJHMCBNA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_finish = 15;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool IKOAJHMCBNA = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFinish() {
+      public Builder clearIKOAJHMCBNA() {
         
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isLastLevel_ ;
-      /**
-       * <code>bool is_last_level = 6;</code>
-       * @return The isLastLevel.
-       */
-      @java.lang.Override
-      public boolean getIsLastLevel() {
-        return isLastLevel_;
-      }
-      /**
-       * <code>bool is_last_level = 6;</code>
-       * @param value The isLastLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsLastLevel(boolean value) {
-        
-        isLastLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_last_level = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsLastLevel() {
-        
-        isLastLevel_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int maxScore_ ;
-      /**
-       * <code>uint32 max_score = 8;</code>
-       * @return The maxScore.
-       */
-      @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
-      }
-      /**
-       * <code>uint32 max_score = 8;</code>
-       * @param value The maxScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxScore(int value) {
-        
-        maxScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_score = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxScore() {
-        
-        maxScore_ = 0;
+        iKOAJHMCBNA_ = false;
         onChanged();
         return this;
       }
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 3;</code>
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool is_success = 4;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -720,7 +718,11 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool is_success = 4;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -731,12 +733,102 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool is_success = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
         
         isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinish_ ;
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool is_finish = 12;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool is_finish = 12;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+        
+        isFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool is_finish = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        
+        isFinish_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int dPPGDBBLCCM_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 5;</code>
+       * @return The dPPGDBBLCCM.
+       */
+      @java.lang.Override
+      public int getDPPGDBBLCCM() {
+        return dPPGDBBLCCM_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 5;</code>
+       * @param value The dPPGDBBLCCM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPPGDBBLCCM(int value) {
+        
+        dPPGDBBLCCM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPPGDBBLCCM() {
+        
+        dPPGDBBLCCM_ = 0;
         onChanged();
         return this;
       }
@@ -807,12 +899,12 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#SceneGalleryCharAmusementInfo.proto\"\203\001" +
-      "\n\035SceneGalleryCharAmusementInfo\022\021\n\tcur_s" +
-      "core\030\t \001(\r\022\021\n\tis_finish\030\017 \001(\010\022\025\n\ris_last" +
-      "_level\030\006 \001(\010\022\021\n\tmax_score\030\010 \001(\r\022\022\n\nis_su" +
-      "ccess\030\003 \001(\010B\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n#SceneGalleryCharAmusementInfo.proto\"\205\001" +
+      "\n\035SceneGalleryCharAmusementInfo\022\023\n\013JDHJC" +
+      "MECLOI\030\010 \001(\r\022\023\n\013IKOAJHMCBNA\030\007 \001(\010\022\022\n\nis_" +
+      "success\030\004 \001(\010\022\021\n\tis_finish\030\014 \001(\010\022\023\n\013DPPG" +
+      "DBBLCCM\030\005 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -823,7 +915,7 @@ public final class SceneGalleryCharAmusementInfoOuterClass {
     internal_static_SceneGalleryCharAmusementInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryCharAmusementInfo_descriptor,
-        new java.lang.String[] { "CurScore", "IsFinish", "IsLastLevel", "MaxScore", "IsSuccess", });
+        new java.lang.String[] { "JDHJCMECLOI", "IKOAJHMCBNA", "IsSuccess", "IsFinish", "DPPGDBBLCCM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

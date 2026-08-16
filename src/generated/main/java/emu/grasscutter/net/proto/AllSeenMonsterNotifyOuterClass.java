@@ -37,8 +37,7 @@ public final class AllSeenMonsterNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7030
-   * Obf: FIMINAEMFFJ
+   * CmdId: 3529
    * </pre>
    *
    * Protobuf type {@code AllSeenMonsterNotify}
@@ -345,8 +344,7 @@ public final class AllSeenMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7030
-     * Obf: FIMINAEMFFJ
+     * CmdId: 3529
      * </pre>
      *
      * Protobuf type {@code AllSeenMonsterNotify}

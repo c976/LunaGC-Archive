@@ -20,8 +20,7 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5694
-   * Obf: BEBMKKFHAGB
+   * CmdId: 8309
    * </pre>
    *
    * Protobuf type {@code FleurFairFinishGalleryStageNotify}
@@ -246,8 +245,7 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5694
-     * Obf: BEBMKKFHAGB
+     * CmdId: 8309
      * </pre>
      *
      * Protobuf type {@code FleurFairFinishGalleryStageNotify}

@@ -19,34 +19,46 @@ public final class CustomDungeonSocialOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DKDJDMMPICM = 13;</code>
-     * @return The dKDJDMMPICM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 NDOANLFCNPB = 11;</code>
+     * @return The nDOANLFCNPB.
      */
-    int getDKDJDMMPICM();
+    int getNDOANLFCNPB();
 
     /**
-     * <code>uint32 OPCLKCLOEJG = 4;</code>
-     * @return The oPCLKCLOEJG.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ECNNDMAMNKB = 13;</code>
+     * @return The eCNNDMAMNKB.
      */
-    int getOPCLKCLOEJG();
+    int getECNNDMAMNKB();
 
     /**
-     * <code>uint32 AGFMPAJMBMF = 2;</code>
-     * @return The aGFMPAJMBMF.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FGDDCAECJHC = 12;</code>
+     * @return The fGDDCAECJHC.
      */
-    int getAGFMPAJMBMF();
+    int getFGDDCAECJHC();
 
     /**
-     * <code>uint32 GLBMLFCKMHP = 7;</code>
-     * @return The gLBMLFCKMHP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 APHGICPFGJL = 15;</code>
+     * @return The aPHGICPFGJL.
      */
-    int getGLBMLFCKMHP();
+    int getAPHGICPFGJL();
   }
   /**
-   * <pre>
-   * Obf: DDALIIIJCDF
-   * </pre>
-   *
    * Protobuf type {@code CustomDungeonSocial}
    */
   public static final class CustomDungeonSocial extends
@@ -91,24 +103,24 @@ public final class CustomDungeonSocialOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 88: {
 
-              aGFMPAJMBMF_ = input.readUInt32();
+              nDOANLFCNPB_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 96: {
 
-              oPCLKCLOEJG_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              gLBMLFCKMHP_ = input.readUInt32();
+              fGDDCAECJHC_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              dKDJDMMPICM_ = input.readUInt32();
+              eCNNDMAMNKB_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              aPHGICPFGJL_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,48 +155,64 @@ public final class CustomDungeonSocialOuterClass {
               emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial.class, emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial.Builder.class);
     }
 
-    public static final int DKDJDMMPICM_FIELD_NUMBER = 13;
-    private int dKDJDMMPICM_;
+    public static final int NDOANLFCNPB_FIELD_NUMBER = 11;
+    private int nDOANLFCNPB_;
     /**
-     * <code>uint32 DKDJDMMPICM = 13;</code>
-     * @return The dKDJDMMPICM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 NDOANLFCNPB = 11;</code>
+     * @return The nDOANLFCNPB.
      */
     @java.lang.Override
-    public int getDKDJDMMPICM() {
-      return dKDJDMMPICM_;
+    public int getNDOANLFCNPB() {
+      return nDOANLFCNPB_;
     }
 
-    public static final int OPCLKCLOEJG_FIELD_NUMBER = 4;
-    private int oPCLKCLOEJG_;
+    public static final int ECNNDMAMNKB_FIELD_NUMBER = 13;
+    private int eCNNDMAMNKB_;
     /**
-     * <code>uint32 OPCLKCLOEJG = 4;</code>
-     * @return The oPCLKCLOEJG.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ECNNDMAMNKB = 13;</code>
+     * @return The eCNNDMAMNKB.
      */
     @java.lang.Override
-    public int getOPCLKCLOEJG() {
-      return oPCLKCLOEJG_;
+    public int getECNNDMAMNKB() {
+      return eCNNDMAMNKB_;
     }
 
-    public static final int AGFMPAJMBMF_FIELD_NUMBER = 2;
-    private int aGFMPAJMBMF_;
+    public static final int FGDDCAECJHC_FIELD_NUMBER = 12;
+    private int fGDDCAECJHC_;
     /**
-     * <code>uint32 AGFMPAJMBMF = 2;</code>
-     * @return The aGFMPAJMBMF.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FGDDCAECJHC = 12;</code>
+     * @return The fGDDCAECJHC.
      */
     @java.lang.Override
-    public int getAGFMPAJMBMF() {
-      return aGFMPAJMBMF_;
+    public int getFGDDCAECJHC() {
+      return fGDDCAECJHC_;
     }
 
-    public static final int GLBMLFCKMHP_FIELD_NUMBER = 7;
-    private int gLBMLFCKMHP_;
+    public static final int APHGICPFGJL_FIELD_NUMBER = 15;
+    private int aPHGICPFGJL_;
     /**
-     * <code>uint32 GLBMLFCKMHP = 7;</code>
-     * @return The gLBMLFCKMHP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 APHGICPFGJL = 15;</code>
+     * @return The aPHGICPFGJL.
      */
     @java.lang.Override
-    public int getGLBMLFCKMHP() {
-      return gLBMLFCKMHP_;
+    public int getAPHGICPFGJL() {
+      return aPHGICPFGJL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class CustomDungeonSocialOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aGFMPAJMBMF_ != 0) {
-        output.writeUInt32(2, aGFMPAJMBMF_);
+      if (nDOANLFCNPB_ != 0) {
+        output.writeUInt32(11, nDOANLFCNPB_);
       }
-      if (oPCLKCLOEJG_ != 0) {
-        output.writeUInt32(4, oPCLKCLOEJG_);
+      if (fGDDCAECJHC_ != 0) {
+        output.writeUInt32(12, fGDDCAECJHC_);
       }
-      if (gLBMLFCKMHP_ != 0) {
-        output.writeUInt32(7, gLBMLFCKMHP_);
+      if (eCNNDMAMNKB_ != 0) {
+        output.writeUInt32(13, eCNNDMAMNKB_);
       }
-      if (dKDJDMMPICM_ != 0) {
-        output.writeUInt32(13, dKDJDMMPICM_);
+      if (aPHGICPFGJL_ != 0) {
+        output.writeUInt32(15, aPHGICPFGJL_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class CustomDungeonSocialOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aGFMPAJMBMF_ != 0) {
+      if (nDOANLFCNPB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, aGFMPAJMBMF_);
+          .computeUInt32Size(11, nDOANLFCNPB_);
       }
-      if (oPCLKCLOEJG_ != 0) {
+      if (fGDDCAECJHC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oPCLKCLOEJG_);
+          .computeUInt32Size(12, fGDDCAECJHC_);
       }
-      if (gLBMLFCKMHP_ != 0) {
+      if (eCNNDMAMNKB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gLBMLFCKMHP_);
+          .computeUInt32Size(13, eCNNDMAMNKB_);
       }
-      if (dKDJDMMPICM_ != 0) {
+      if (aPHGICPFGJL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dKDJDMMPICM_);
+          .computeUInt32Size(15, aPHGICPFGJL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +281,14 @@ public final class CustomDungeonSocialOuterClass {
       }
       emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial other = (emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial) obj;
 
-      if (getDKDJDMMPICM()
-          != other.getDKDJDMMPICM()) return false;
-      if (getOPCLKCLOEJG()
-          != other.getOPCLKCLOEJG()) return false;
-      if (getAGFMPAJMBMF()
-          != other.getAGFMPAJMBMF()) return false;
-      if (getGLBMLFCKMHP()
-          != other.getGLBMLFCKMHP()) return false;
+      if (getNDOANLFCNPB()
+          != other.getNDOANLFCNPB()) return false;
+      if (getECNNDMAMNKB()
+          != other.getECNNDMAMNKB()) return false;
+      if (getFGDDCAECJHC()
+          != other.getFGDDCAECJHC()) return false;
+      if (getAPHGICPFGJL()
+          != other.getAPHGICPFGJL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +300,14 @@ public final class CustomDungeonSocialOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DKDJDMMPICM_FIELD_NUMBER;
-      hash = (53 * hash) + getDKDJDMMPICM();
-      hash = (37 * hash) + OPCLKCLOEJG_FIELD_NUMBER;
-      hash = (53 * hash) + getOPCLKCLOEJG();
-      hash = (37 * hash) + AGFMPAJMBMF_FIELD_NUMBER;
-      hash = (53 * hash) + getAGFMPAJMBMF();
-      hash = (37 * hash) + GLBMLFCKMHP_FIELD_NUMBER;
-      hash = (53 * hash) + getGLBMLFCKMHP();
+      hash = (37 * hash) + NDOANLFCNPB_FIELD_NUMBER;
+      hash = (53 * hash) + getNDOANLFCNPB();
+      hash = (37 * hash) + ECNNDMAMNKB_FIELD_NUMBER;
+      hash = (53 * hash) + getECNNDMAMNKB();
+      hash = (37 * hash) + FGDDCAECJHC_FIELD_NUMBER;
+      hash = (53 * hash) + getFGDDCAECJHC();
+      hash = (37 * hash) + APHGICPFGJL_FIELD_NUMBER;
+      hash = (53 * hash) + getAPHGICPFGJL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +404,6 @@ public final class CustomDungeonSocialOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DDALIIIJCDF
-     * </pre>
-     *
      * Protobuf type {@code CustomDungeonSocial}
      */
     public static final class Builder extends
@@ -417,13 +441,13 @@ public final class CustomDungeonSocialOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dKDJDMMPICM_ = 0;
+        nDOANLFCNPB_ = 0;
 
-        oPCLKCLOEJG_ = 0;
+        eCNNDMAMNKB_ = 0;
 
-        aGFMPAJMBMF_ = 0;
+        fGDDCAECJHC_ = 0;
 
-        gLBMLFCKMHP_ = 0;
+        aPHGICPFGJL_ = 0;
 
         return this;
       }
@@ -451,10 +475,10 @@ public final class CustomDungeonSocialOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial buildPartial() {
         emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial result = new emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial(this);
-        result.dKDJDMMPICM_ = dKDJDMMPICM_;
-        result.oPCLKCLOEJG_ = oPCLKCLOEJG_;
-        result.aGFMPAJMBMF_ = aGFMPAJMBMF_;
-        result.gLBMLFCKMHP_ = gLBMLFCKMHP_;
+        result.nDOANLFCNPB_ = nDOANLFCNPB_;
+        result.eCNNDMAMNKB_ = eCNNDMAMNKB_;
+        result.fGDDCAECJHC_ = fGDDCAECJHC_;
+        result.aPHGICPFGJL_ = aPHGICPFGJL_;
         onBuilt();
         return result;
       }
@@ -503,17 +527,17 @@ public final class CustomDungeonSocialOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial other) {
         if (other == emu.grasscutter.net.proto.CustomDungeonSocialOuterClass.CustomDungeonSocial.getDefaultInstance()) return this;
-        if (other.getDKDJDMMPICM() != 0) {
-          setDKDJDMMPICM(other.getDKDJDMMPICM());
+        if (other.getNDOANLFCNPB() != 0) {
+          setNDOANLFCNPB(other.getNDOANLFCNPB());
         }
-        if (other.getOPCLKCLOEJG() != 0) {
-          setOPCLKCLOEJG(other.getOPCLKCLOEJG());
+        if (other.getECNNDMAMNKB() != 0) {
+          setECNNDMAMNKB(other.getECNNDMAMNKB());
         }
-        if (other.getAGFMPAJMBMF() != 0) {
-          setAGFMPAJMBMF(other.getAGFMPAJMBMF());
+        if (other.getFGDDCAECJHC() != 0) {
+          setFGDDCAECJHC(other.getFGDDCAECJHC());
         }
-        if (other.getGLBMLFCKMHP() != 0) {
-          setGLBMLFCKMHP(other.getGLBMLFCKMHP());
+        if (other.getAPHGICPFGJL() != 0) {
+          setAPHGICPFGJL(other.getAPHGICPFGJL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,126 +568,174 @@ public final class CustomDungeonSocialOuterClass {
         return this;
       }
 
-      private int dKDJDMMPICM_ ;
+      private int nDOANLFCNPB_ ;
       /**
-       * <code>uint32 DKDJDMMPICM = 13;</code>
-       * @return The dKDJDMMPICM.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NDOANLFCNPB = 11;</code>
+       * @return The nDOANLFCNPB.
        */
       @java.lang.Override
-      public int getDKDJDMMPICM() {
-        return dKDJDMMPICM_;
+      public int getNDOANLFCNPB() {
+        return nDOANLFCNPB_;
       }
       /**
-       * <code>uint32 DKDJDMMPICM = 13;</code>
-       * @param value The dKDJDMMPICM to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NDOANLFCNPB = 11;</code>
+       * @param value The nDOANLFCNPB to set.
        * @return This builder for chaining.
        */
-      public Builder setDKDJDMMPICM(int value) {
+      public Builder setNDOANLFCNPB(int value) {
         
-        dKDJDMMPICM_ = value;
+        nDOANLFCNPB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DKDJDMMPICM = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NDOANLFCNPB = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDKDJDMMPICM() {
+      public Builder clearNDOANLFCNPB() {
         
-        dKDJDMMPICM_ = 0;
+        nDOANLFCNPB_ = 0;
         onChanged();
         return this;
       }
 
-      private int oPCLKCLOEJG_ ;
+      private int eCNNDMAMNKB_ ;
       /**
-       * <code>uint32 OPCLKCLOEJG = 4;</code>
-       * @return The oPCLKCLOEJG.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ECNNDMAMNKB = 13;</code>
+       * @return The eCNNDMAMNKB.
        */
       @java.lang.Override
-      public int getOPCLKCLOEJG() {
-        return oPCLKCLOEJG_;
+      public int getECNNDMAMNKB() {
+        return eCNNDMAMNKB_;
       }
       /**
-       * <code>uint32 OPCLKCLOEJG = 4;</code>
-       * @param value The oPCLKCLOEJG to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ECNNDMAMNKB = 13;</code>
+       * @param value The eCNNDMAMNKB to set.
        * @return This builder for chaining.
        */
-      public Builder setOPCLKCLOEJG(int value) {
+      public Builder setECNNDMAMNKB(int value) {
         
-        oPCLKCLOEJG_ = value;
+        eCNNDMAMNKB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OPCLKCLOEJG = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ECNNDMAMNKB = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOPCLKCLOEJG() {
+      public Builder clearECNNDMAMNKB() {
         
-        oPCLKCLOEJG_ = 0;
+        eCNNDMAMNKB_ = 0;
         onChanged();
         return this;
       }
 
-      private int aGFMPAJMBMF_ ;
+      private int fGDDCAECJHC_ ;
       /**
-       * <code>uint32 AGFMPAJMBMF = 2;</code>
-       * @return The aGFMPAJMBMF.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FGDDCAECJHC = 12;</code>
+       * @return The fGDDCAECJHC.
        */
       @java.lang.Override
-      public int getAGFMPAJMBMF() {
-        return aGFMPAJMBMF_;
+      public int getFGDDCAECJHC() {
+        return fGDDCAECJHC_;
       }
       /**
-       * <code>uint32 AGFMPAJMBMF = 2;</code>
-       * @param value The aGFMPAJMBMF to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FGDDCAECJHC = 12;</code>
+       * @param value The fGDDCAECJHC to set.
        * @return This builder for chaining.
        */
-      public Builder setAGFMPAJMBMF(int value) {
+      public Builder setFGDDCAECJHC(int value) {
         
-        aGFMPAJMBMF_ = value;
+        fGDDCAECJHC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AGFMPAJMBMF = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FGDDCAECJHC = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAGFMPAJMBMF() {
+      public Builder clearFGDDCAECJHC() {
         
-        aGFMPAJMBMF_ = 0;
+        fGDDCAECJHC_ = 0;
         onChanged();
         return this;
       }
 
-      private int gLBMLFCKMHP_ ;
+      private int aPHGICPFGJL_ ;
       /**
-       * <code>uint32 GLBMLFCKMHP = 7;</code>
-       * @return The gLBMLFCKMHP.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 APHGICPFGJL = 15;</code>
+       * @return The aPHGICPFGJL.
        */
       @java.lang.Override
-      public int getGLBMLFCKMHP() {
-        return gLBMLFCKMHP_;
+      public int getAPHGICPFGJL() {
+        return aPHGICPFGJL_;
       }
       /**
-       * <code>uint32 GLBMLFCKMHP = 7;</code>
-       * @param value The gLBMLFCKMHP to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 APHGICPFGJL = 15;</code>
+       * @param value The aPHGICPFGJL to set.
        * @return This builder for chaining.
        */
-      public Builder setGLBMLFCKMHP(int value) {
+      public Builder setAPHGICPFGJL(int value) {
         
-        gLBMLFCKMHP_ = value;
+        aPHGICPFGJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GLBMLFCKMHP = 7;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 APHGICPFGJL = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGLBMLFCKMHP() {
+      public Builder clearAPHGICPFGJL() {
         
-        gLBMLFCKMHP_ = 0;
+        aPHGICPFGJL_ = 0;
         onChanged();
         return this;
       }
@@ -735,9 +807,9 @@ public final class CustomDungeonSocialOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CustomDungeonSocial.proto\"i\n\023CustomDun" +
-      "geonSocial\022\023\n\013DKDJDMMPICM\030\r \001(\r\022\023\n\013OPCLK" +
-      "CLOEJG\030\004 \001(\r\022\023\n\013AGFMPAJMBMF\030\002 \001(\r\022\023\n\013GLB" +
-      "MLFCKMHP\030\007 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "geonSocial\022\023\n\013NDOANLFCNPB\030\013 \001(\r\022\023\n\013ECNND" +
+      "MAMNKB\030\r \001(\r\022\023\n\013FGDDCAECJHC\030\014 \001(\r\022\023\n\013APH" +
+      "GICPFGJL\030\017 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -749,7 +821,7 @@ public final class CustomDungeonSocialOuterClass {
     internal_static_CustomDungeonSocial_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonSocial_descriptor,
-        new java.lang.String[] { "DKDJDMMPICM", "OPCLKCLOEJG", "AGFMPAJMBMF", "GLBMLFCKMHP", });
+        new java.lang.String[] { "NDOANLFCNPB", "ECNNDMAMNKB", "FGDDCAECJHC", "APHGICPFGJL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

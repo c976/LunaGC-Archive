@@ -19,52 +19,76 @@ public final class ExpeditionAssistInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string online_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string online_id = 12;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string online_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string online_id = 12;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>string target_nick_name = 6;</code>
-     * @return The targetNickName.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string KGKNJMLPPEP = 8;</code>
+     * @return The kGKNJMLPPEP.
      */
-    java.lang.String getTargetNickName();
+    java.lang.String getKGKNJMLPPEP();
     /**
-     * <code>string target_nick_name = 6;</code>
-     * @return The bytes for targetNickName.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string KGKNJMLPPEP = 8;</code>
+     * @return The bytes for kGKNJMLPPEP.
      */
     com.google.protobuf.ByteString
-        getTargetNickNameBytes();
+        getKGKNJMLPPEPBytes();
 
     /**
-     * <code>uint32 assist_time = 11;</code>
-     * @return The assistTime.
-     */
-    int getAssistTime();
-
-    /**
-     * <code>uint32 costume_id = 14;</code>
-     * @return The costumeId.
-     */
-    int getCostumeId();
-
-    /**
-     * <code>uint32 avatar_id = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DMHKGFCMKNL = 4;</code>
+     * @return The dMHKGFCMKNL.
+     */
+    int getDMHKGFCMKNL();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 costume_id = 5;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
   }
   /**
-   * <pre>
-   * Obf: OKEBILMJFPG
-   * </pre>
-   *
    * Protobuf type {@code ExpeditionAssistInfo}
    */
   public static final class ExpeditionAssistInfo extends
@@ -78,7 +102,7 @@ public final class ExpeditionAssistInfoOuterClass {
     }
     private ExpeditionAssistInfo() {
       onlineId_ = "";
-      targetNickName_ = "";
+      kGKNJMLPPEP_ = "";
     }
 
     @java.lang.Override
@@ -111,31 +135,31 @@ public final class ExpeditionAssistInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 32: {
 
-              targetNickName_ = s;
+              dMHKGFCMKNL_ = input.readUInt32();
               break;
             }
-            case 58: {
+            case 40: {
+
+              costumeId_ = input.readUInt32();
+              break;
+            }
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              kGKNJMLPPEP_ = s;
+              break;
+            }
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               onlineId_ = s;
               break;
             }
-            case 88: {
-
-              assistTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 120: {
 
               avatarId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              costumeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -170,10 +194,14 @@ public final class ExpeditionAssistInfoOuterClass {
               emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo.class, emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo.Builder.class);
     }
 
-    public static final int ONLINE_ID_FIELD_NUMBER = 7;
+    public static final int ONLINE_ID_FIELD_NUMBER = 12;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string online_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string online_id = 12;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -190,7 +218,11 @@ public final class ExpeditionAssistInfoOuterClass {
       }
     }
     /**
-     * <code>string online_id = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string online_id = 12;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -208,75 +240,95 @@ public final class ExpeditionAssistInfoOuterClass {
       }
     }
 
-    public static final int TARGET_NICK_NAME_FIELD_NUMBER = 6;
-    private volatile java.lang.Object targetNickName_;
+    public static final int KGKNJMLPPEP_FIELD_NUMBER = 8;
+    private volatile java.lang.Object kGKNJMLPPEP_;
     /**
-     * <code>string target_nick_name = 6;</code>
-     * @return The targetNickName.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string KGKNJMLPPEP = 8;</code>
+     * @return The kGKNJMLPPEP.
      */
     @java.lang.Override
-    public java.lang.String getTargetNickName() {
-      java.lang.Object ref = targetNickName_;
+    public java.lang.String getKGKNJMLPPEP() {
+      java.lang.Object ref = kGKNJMLPPEP_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        targetNickName_ = s;
+        kGKNJMLPPEP_ = s;
         return s;
       }
     }
     /**
-     * <code>string target_nick_name = 6;</code>
-     * @return The bytes for targetNickName.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string KGKNJMLPPEP = 8;</code>
+     * @return The bytes for kGKNJMLPPEP.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getTargetNickNameBytes() {
-      java.lang.Object ref = targetNickName_;
+        getKGKNJMLPPEPBytes() {
+      java.lang.Object ref = kGKNJMLPPEP_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        targetNickName_ = b;
+        kGKNJMLPPEP_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int ASSIST_TIME_FIELD_NUMBER = 11;
-    private int assistTime_;
-    /**
-     * <code>uint32 assist_time = 11;</code>
-     * @return The assistTime.
-     */
-    @java.lang.Override
-    public int getAssistTime() {
-      return assistTime_;
-    }
-
-    public static final int COSTUME_ID_FIELD_NUMBER = 14;
-    private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 14;</code>
-     * @return The costumeId.
-     */
-    @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 13;
+    public static final int AVATAR_ID_FIELD_NUMBER = 15;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int DMHKGFCMKNL_FIELD_NUMBER = 4;
+    private int dMHKGFCMKNL_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DMHKGFCMKNL = 4;</code>
+     * @return The dMHKGFCMKNL.
+     */
+    @java.lang.Override
+    public int getDMHKGFCMKNL() {
+      return dMHKGFCMKNL_;
+    }
+
+    public static final int COSTUME_ID_FIELD_NUMBER = 5;
+    private int costumeId_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 costume_id = 5;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -293,20 +345,20 @@ public final class ExpeditionAssistInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, targetNickName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, onlineId_);
-      }
-      if (assistTime_ != 0) {
-        output.writeUInt32(11, assistTime_);
-      }
-      if (avatarId_ != 0) {
-        output.writeUInt32(13, avatarId_);
+      if (dMHKGFCMKNL_ != 0) {
+        output.writeUInt32(4, dMHKGFCMKNL_);
       }
       if (costumeId_ != 0) {
-        output.writeUInt32(14, costumeId_);
+        output.writeUInt32(5, costumeId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kGKNJMLPPEP_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, kGKNJMLPPEP_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, onlineId_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(15, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -317,23 +369,23 @@ public final class ExpeditionAssistInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, targetNickName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, onlineId_);
-      }
-      if (assistTime_ != 0) {
+      if (dMHKGFCMKNL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, assistTime_);
-      }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, avatarId_);
+          .computeUInt32Size(4, dMHKGFCMKNL_);
       }
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, costumeId_);
+          .computeUInt32Size(5, costumeId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kGKNJMLPPEP_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, kGKNJMLPPEP_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, onlineId_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,14 +404,14 @@ public final class ExpeditionAssistInfoOuterClass {
 
       if (!getOnlineId()
           .equals(other.getOnlineId())) return false;
-      if (!getTargetNickName()
-          .equals(other.getTargetNickName())) return false;
-      if (getAssistTime()
-          != other.getAssistTime()) return false;
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
+      if (!getKGKNJMLPPEP()
+          .equals(other.getKGKNJMLPPEP())) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getDMHKGFCMKNL()
+          != other.getDMHKGFCMKNL()) return false;
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -373,14 +425,14 @@ public final class ExpeditionAssistInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOnlineId().hashCode();
-      hash = (37 * hash) + TARGET_NICK_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetNickName().hashCode();
-      hash = (37 * hash) + ASSIST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getAssistTime();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + KGKNJMLPPEP_FIELD_NUMBER;
+      hash = (53 * hash) + getKGKNJMLPPEP().hashCode();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + DMHKGFCMKNL_FIELD_NUMBER;
+      hash = (53 * hash) + getDMHKGFCMKNL();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -477,10 +529,6 @@ public final class ExpeditionAssistInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OKEBILMJFPG
-     * </pre>
-     *
      * Protobuf type {@code ExpeditionAssistInfo}
      */
     public static final class Builder extends
@@ -520,13 +568,13 @@ public final class ExpeditionAssistInfoOuterClass {
         super.clear();
         onlineId_ = "";
 
-        targetNickName_ = "";
-
-        assistTime_ = 0;
-
-        costumeId_ = 0;
+        kGKNJMLPPEP_ = "";
 
         avatarId_ = 0;
+
+        dMHKGFCMKNL_ = 0;
+
+        costumeId_ = 0;
 
         return this;
       }
@@ -555,10 +603,10 @@ public final class ExpeditionAssistInfoOuterClass {
       public emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo buildPartial() {
         emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo result = new emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo(this);
         result.onlineId_ = onlineId_;
-        result.targetNickName_ = targetNickName_;
-        result.assistTime_ = assistTime_;
-        result.costumeId_ = costumeId_;
+        result.kGKNJMLPPEP_ = kGKNJMLPPEP_;
         result.avatarId_ = avatarId_;
+        result.dMHKGFCMKNL_ = dMHKGFCMKNL_;
+        result.costumeId_ = costumeId_;
         onBuilt();
         return result;
       }
@@ -611,18 +659,18 @@ public final class ExpeditionAssistInfoOuterClass {
           onlineId_ = other.onlineId_;
           onChanged();
         }
-        if (!other.getTargetNickName().isEmpty()) {
-          targetNickName_ = other.targetNickName_;
+        if (!other.getKGKNJMLPPEP().isEmpty()) {
+          kGKNJMLPPEP_ = other.kGKNJMLPPEP_;
           onChanged();
-        }
-        if (other.getAssistTime() != 0) {
-          setAssistTime(other.getAssistTime());
-        }
-        if (other.getCostumeId() != 0) {
-          setCostumeId(other.getCostumeId());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getDMHKGFCMKNL() != 0) {
+          setDMHKGFCMKNL(other.getDMHKGFCMKNL());
+        }
+        if (other.getCostumeId() != 0) {
+          setCostumeId(other.getCostumeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,7 +703,11 @@ public final class ExpeditionAssistInfoOuterClass {
 
       private java.lang.Object onlineId_ = "";
       /**
-       * <code>string online_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -671,7 +723,11 @@ public final class ExpeditionAssistInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -688,7 +744,11 @@ public final class ExpeditionAssistInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -703,7 +763,11 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -713,7 +777,11 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string online_id = 12;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -729,147 +797,109 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object targetNickName_ = "";
+      private java.lang.Object kGKNJMLPPEP_ = "";
       /**
-       * <code>string target_nick_name = 6;</code>
-       * @return The targetNickName.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string KGKNJMLPPEP = 8;</code>
+       * @return The kGKNJMLPPEP.
        */
-      public java.lang.String getTargetNickName() {
-        java.lang.Object ref = targetNickName_;
+      public java.lang.String getKGKNJMLPPEP() {
+        java.lang.Object ref = kGKNJMLPPEP_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          targetNickName_ = s;
+          kGKNJMLPPEP_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string target_nick_name = 6;</code>
-       * @return The bytes for targetNickName.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string KGKNJMLPPEP = 8;</code>
+       * @return The bytes for kGKNJMLPPEP.
        */
       public com.google.protobuf.ByteString
-          getTargetNickNameBytes() {
-        java.lang.Object ref = targetNickName_;
+          getKGKNJMLPPEPBytes() {
+        java.lang.Object ref = kGKNJMLPPEP_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          targetNickName_ = b;
+          kGKNJMLPPEP_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string target_nick_name = 6;</code>
-       * @param value The targetNickName to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string KGKNJMLPPEP = 8;</code>
+       * @param value The kGKNJMLPPEP to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetNickName(
+      public Builder setKGKNJMLPPEP(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        targetNickName_ = value;
+        kGKNJMLPPEP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string target_nick_name = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string KGKNJMLPPEP = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetNickName() {
+      public Builder clearKGKNJMLPPEP() {
         
-        targetNickName_ = getDefaultInstance().getTargetNickName();
+        kGKNJMLPPEP_ = getDefaultInstance().getKGKNJMLPPEP();
         onChanged();
         return this;
       }
       /**
-       * <code>string target_nick_name = 6;</code>
-       * @param value The bytes for targetNickName to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string KGKNJMLPPEP = 8;</code>
+       * @param value The bytes for kGKNJMLPPEP to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetNickNameBytes(
+      public Builder setKGKNJMLPPEPBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        targetNickName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int assistTime_ ;
-      /**
-       * <code>uint32 assist_time = 11;</code>
-       * @return The assistTime.
-       */
-      @java.lang.Override
-      public int getAssistTime() {
-        return assistTime_;
-      }
-      /**
-       * <code>uint32 assist_time = 11;</code>
-       * @param value The assistTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAssistTime(int value) {
-        
-        assistTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 assist_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAssistTime() {
-        
-        assistTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 14;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
-      }
-      /**
-       * <code>uint32 costume_id = 14;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostumeId(int value) {
-        
-        costumeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 costume_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostumeId() {
-        
-        costumeId_ = 0;
+        kGKNJMLPPEP_ = value;
         onChanged();
         return this;
       }
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -877,7 +907,11 @@ public final class ExpeditionAssistInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -888,12 +922,102 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
         
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dMHKGFCMKNL_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DMHKGFCMKNL = 4;</code>
+       * @return The dMHKGFCMKNL.
+       */
+      @java.lang.Override
+      public int getDMHKGFCMKNL() {
+        return dMHKGFCMKNL_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DMHKGFCMKNL = 4;</code>
+       * @param value The dMHKGFCMKNL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDMHKGFCMKNL(int value) {
+        
+        dMHKGFCMKNL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DMHKGFCMKNL = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDMHKGFCMKNL() {
+        
+        dMHKGFCMKNL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 costume_id = 5;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 costume_id = 5;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 costume_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
         onChanged();
         return this;
       }
@@ -964,11 +1088,11 @@ public final class ExpeditionAssistInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032ExpeditionAssistInfo.proto\"\177\n\024Expediti" +
-      "onAssistInfo\022\021\n\tonline_id\030\007 \001(\t\022\030\n\020targe" +
-      "t_nick_name\030\006 \001(\t\022\023\n\013assist_time\030\013 \001(\r\022\022" +
-      "\n\ncostume_id\030\016 \001(\r\022\021\n\tavatar_id\030\r \001(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\032ExpeditionAssistInfo.proto\"z\n\024Expediti" +
+      "onAssistInfo\022\021\n\tonline_id\030\014 \001(\t\022\023\n\013KGKNJ" +
+      "MLPPEP\030\010 \001(\t\022\021\n\tavatar_id\030\017 \001(\r\022\023\n\013DMHKG" +
+      "FCMKNL\030\004 \001(\r\022\022\n\ncostume_id\030\005 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -979,7 +1103,7 @@ public final class ExpeditionAssistInfoOuterClass {
     internal_static_ExpeditionAssistInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionAssistInfo_descriptor,
-        new java.lang.String[] { "OnlineId", "TargetNickName", "AssistTime", "CostumeId", "AvatarId", });
+        new java.lang.String[] { "OnlineId", "KGKNJMLPPEP", "AvatarId", "DMHKGFCMKNL", "CostumeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

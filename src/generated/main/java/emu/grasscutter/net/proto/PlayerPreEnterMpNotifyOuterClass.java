@@ -19,37 +19,57 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string nickname = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <code>string nickname = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State getState();
 
     /**
-     * <code>uint32 uid = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * CmdId: 4499
+   * CmdId: 5248
    * </pre>
    *
    * Protobuf type {@code PlayerPreEnterMpNotify}
@@ -98,7 +118,7 @@ public final class PlayerPreEnterMpNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
@@ -110,7 +130,7 @@ public final class PlayerPreEnterMpNotifyOuterClass {
               state_ = rawValue;
               break;
             }
-            case 96: {
+            case 88: {
 
               uid_ = input.readUInt32();
               break;
@@ -153,32 +173,32 @@ public final class PlayerPreEnterMpNotifyOuterClass {
     public enum State
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>INVALID = 0;</code>
+       * <code>EHAHBOONBNP_INVALID = 0;</code>
        */
-      INVALID(0),
+      EHAHBOONBNP_INVALID(0),
       /**
-       * <code>START = 1;</code>
+       * <code>EHAHBOONBNP_START = 1;</code>
        */
-      START(1),
+      EHAHBOONBNP_START(1),
       /**
-       * <code>TIMEOUT = 2;</code>
+       * <code>EHAHBOONBNP_TIMEOUT = 2;</code>
        */
-      TIMEOUT(2),
+      EHAHBOONBNP_TIMEOUT(2),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>INVALID = 0;</code>
+       * <code>EHAHBOONBNP_INVALID = 0;</code>
        */
-      public static final int INVALID_VALUE = 0;
+      public static final int EHAHBOONBNP_INVALID_VALUE = 0;
       /**
-       * <code>START = 1;</code>
+       * <code>EHAHBOONBNP_START = 1;</code>
        */
-      public static final int START_VALUE = 1;
+      public static final int EHAHBOONBNP_START_VALUE = 1;
       /**
-       * <code>TIMEOUT = 2;</code>
+       * <code>EHAHBOONBNP_TIMEOUT = 2;</code>
        */
-      public static final int TIMEOUT_VALUE = 2;
+      public static final int EHAHBOONBNP_TIMEOUT_VALUE = 2;
 
 
       public final int getNumber() {
@@ -205,9 +225,9 @@ public final class PlayerPreEnterMpNotifyOuterClass {
        */
       public static State forNumber(int value) {
         switch (value) {
-          case 0: return INVALID;
-          case 1: return START;
-          case 2: return TIMEOUT;
+          case 0: return EHAHBOONBNP_INVALID;
+          case 1: return EHAHBOONBNP_START;
+          case 2: return EHAHBOONBNP_TIMEOUT;
           default: return null;
         }
       }
@@ -264,10 +284,14 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:PlayerPreEnterMpNotify.State)
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 5;
+    public static final int NICKNAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object nickname_;
     /**
-     * <code>string nickname = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -284,7 +308,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       }
     }
     /**
-     * <code>string nickname = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -305,6 +333,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
     public static final int STATE_FIELD_NUMBER = 7;
     private int state_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
      * @return The enum numeric value on the wire for state.
      */
@@ -312,6 +344,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       return state_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
      * @return The state.
      */
@@ -321,10 +357,14 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.UNRECOGNIZED : result;
     }
 
-    public static final int UID_FIELD_NUMBER = 12;
+    public static final int UID_FIELD_NUMBER = 11;
     private int uid_;
     /**
-     * <code>uint32 uid = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -347,13 +387,13 @@ public final class PlayerPreEnterMpNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, nickname_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
-      if (state_ != emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.INVALID.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.EHAHBOONBNP_INVALID.getNumber()) {
         output.writeEnum(7, state_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(12, uid_);
+        output.writeUInt32(11, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -365,15 +405,15 @@ public final class PlayerPreEnterMpNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, nickname_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
-      if (state_ != emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.INVALID.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.EHAHBOONBNP_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, state_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, uid_);
+          .computeUInt32Size(11, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -509,7 +549,7 @@ public final class PlayerPreEnterMpNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4499
+     * CmdId: 5248
      * </pre>
      *
      * Protobuf type {@code PlayerPreEnterMpNotify}
@@ -673,7 +713,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
 
       private java.lang.Object nickname_ = "";
       /**
-       * <code>string nickname = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -689,7 +733,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         }
       }
       /**
-       * <code>string nickname = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -706,7 +754,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         }
       }
       /**
-       * <code>string nickname = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -721,7 +773,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -731,7 +787,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -749,6 +809,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
 
       private int state_ = 0;
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
        * @return The enum numeric value on the wire for state.
        */
@@ -756,6 +820,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return state_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
@@ -767,6 +835,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
        * @return The state.
        */
@@ -777,6 +849,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerPreEnterMpNotifyOuterClass.PlayerPreEnterMpNotify.State.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
        * @param value The state to set.
        * @return This builder for chaining.
@@ -791,6 +867,10 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>.PlayerPreEnterMpNotify.State state = 7;</code>
        * @return This builder for chaining.
        */
@@ -803,7 +883,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 11;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -811,7 +895,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 11;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -822,7 +910,11 @@ public final class PlayerPreEnterMpNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -898,16 +990,18 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034PlayerPreEnterMpNotify.proto\"\223\001\n\026Playe" +
-      "rPreEnterMpNotify\022\020\n\010nickname\030\005 \001(\t\022,\n\005s" +
-      "tate\030\007 \001(\0162\035.PlayerPreEnterMpNotify.Stat" +
-      "e\022\013\n\003uid\030\014 \001(\r\",\n\005State\022\013\n\007INVALID\020\000\022\t\n\005" +
-      "START\020\001\022\013\n\007TIMEOUT\020\002B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\034PlayerPreEnterMpNotify.proto\032\013State.pr" +
+      "oto\"\267\001\n\026PlayerPreEnterMpNotify\022\020\n\010nickna" +
+      "me\030\002 \001(\t\022,\n\005state\030\007 \001(\0162\035.PlayerPreEnter" +
+      "MpNotify.State\022\013\n\003uid\030\013 \001(\r\"P\n\005State\022\027\n\023" +
+      "EHAHBOONBNP_INVALID\020\000\022\025\n\021EHAHBOONBNP_STA" +
+      "RT\020\001\022\027\n\023EHAHBOONBNP_TIMEOUT\020\002B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.StateOuterClass.getDescriptor(),
         });
     internal_static_PlayerPreEnterMpNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -915,6 +1009,7 @@ public final class PlayerPreEnterMpNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerPreEnterMpNotify_descriptor,
         new java.lang.String[] { "Nickname", "State", "Uid", });
+    emu.grasscutter.net.proto.StateOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

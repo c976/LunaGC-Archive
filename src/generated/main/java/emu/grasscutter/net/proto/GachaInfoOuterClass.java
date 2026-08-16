@@ -19,289 +19,445 @@ public final class GachaInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-     * @return A list containing the displayChronicle5ItemList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string KFMACJANNLI = 16;</code>
+     * @return The kFMACJANNLI.
      */
-    java.util.List<java.lang.Integer> getDisplayChronicle5ItemListList();
+    java.lang.String getKFMACJANNLI();
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-     * @return The count of displayChronicle5ItemList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string KFMACJANNLI = 16;</code>
+     * @return The bytes for kFMACJANNLI.
      */
-    int getDisplayChronicle5ItemListCount();
+    com.google.protobuf.ByteString
+        getKFMACJANNLIBytes();
+
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string CPDGOGIKHCB = 2;</code>
+     * @return The cPDGOGIKHCB.
+     */
+    java.lang.String getCPDGOGIKHCB();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string CPDGOGIKHCB = 2;</code>
+     * @return The bytes for cPDGOGIKHCB.
+     */
+    com.google.protobuf.ByteString
+        getCPDGOGIKHCBBytes();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+     * @return A list containing the cFFEKOOMKKJ.
+     */
+    java.util.List<java.lang.Integer> getCFFEKOOMKKJList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+     * @return The count of cFFEKOOMKKJ.
+     */
+    int getCFFEKOOMKKJCount();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
      * @param index The index of the element to return.
-     * @return The displayChronicle5ItemList at the given index.
+     * @return The cFFEKOOMKKJ at the given index.
      */
-    int getDisplayChronicle5ItemList(int index);
+    int getCFFEKOOMKKJ(int index);
 
     /**
-     * <code>string title_textmap = 659;</code>
-     * @return The titleTextmap.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string KMFPKMFADJL = 1168;</code>
+     * @return The kMFPKMFADJL.
      */
-    java.lang.String getTitleTextmap();
+    java.lang.String getKMFPKMFADJL();
     /**
-     * <code>string title_textmap = 659;</code>
-     * @return The bytes for titleTextmap.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string KMFPKMFADJL = 1168;</code>
+     * @return The bytes for kMFPKMFADJL.
      */
     com.google.protobuf.ByteString
-        getTitleTextmapBytes();
+        getKMFPKMFADJLBytes();
 
     /**
-     * <code>string gacha_prob_url = 11;</code>
-     * @return The gachaProbUrl.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>string GDBNKBHKMLE = 840;</code>
+     * @return The gDBNKBHKMLE.
      */
-    java.lang.String getGachaProbUrl();
+    java.lang.String getGDBNKBHKMLE();
     /**
-     * <code>string gacha_prob_url = 11;</code>
-     * @return The bytes for gachaProbUrl.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>string GDBNKBHKMLE = 840;</code>
+     * @return The bytes for gDBNKBHKMLE.
      */
     com.google.protobuf.ByteString
-        getGachaProbUrlBytes();
+        getGDBNKBHKMLEBytes();
 
     /**
-     * <code>string gacha_record_url_oversea = 1219;</code>
-     * @return The gachaRecordUrlOversea.
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @return A list containing the mBHBHFFGJFL.
      */
-    java.lang.String getGachaRecordUrlOversea();
+    java.util.List<java.lang.Integer> getMBHBHFFGJFLList();
     /**
-     * <code>string gacha_record_url_oversea = 1219;</code>
-     * @return The bytes for gachaRecordUrlOversea.
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @return The count of mBHBHFFGJFL.
+     */
+    int getMBHBHFFGJFLCount();
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @param index The index of the element to return.
+     * @return The mBHBHFFGJFL at the given index.
+     */
+    int getMBHBHFFGJFL(int index);
+
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>string DOPBHCCIHKL = 6;</code>
+     * @return The dOPBHCCIHKL.
+     */
+    java.lang.String getDOPBHCCIHKL();
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>string DOPBHCCIHKL = 6;</code>
+     * @return The bytes for dOPBHCCIHKL.
      */
     com.google.protobuf.ByteString
-        getGachaRecordUrlOverseaBytes();
+        getDOPBHCCIHKLBytes();
 
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>string IDNLGKMFPHC = 7;</code>
+     * @return The iDNLGKMFPHC.
+     */
+    java.lang.String getIDNLGKMFPHC();
+    /**
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>string IDNLGKMFPHC = 7;</code>
+     * @return The bytes for iDNLGKMFPHC.
+     */
+    com.google.protobuf.ByteString
+        getIDNLGKMFPHCBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> 
         getGachaUpInfoListList();
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo getGachaUpInfoList(int index);
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     int getGachaUpInfoListCount();
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder> 
         getGachaUpInfoListOrBuilderList();
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder getGachaUpInfoListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
-     * @return A list containing the displayUp4ItemList.
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+     * @return A list containing the aHPDADMGCCE.
      */
-    java.util.List<java.lang.Integer> getDisplayUp4ItemListList();
+    java.util.List<java.lang.Integer> getAHPDADMGCCEList();
     /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
-     * @return The count of displayUp4ItemList.
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+     * @return The count of aHPDADMGCCE.
      */
-    int getDisplayUp4ItemListCount();
+    int getAHPDADMGCCECount();
     /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
      * @param index The index of the element to return.
-     * @return The displayUp4ItemList at the given index.
+     * @return The aHPDADMGCCE at the given index.
      */
-    int getDisplayUp4ItemList(int index);
-
-    /**
-     * <code>string gacha_record_url = 1411;</code>
-     * @return The gachaRecordUrl.
-     */
-    java.lang.String getGachaRecordUrl();
-    /**
-     * <code>string gacha_record_url = 1411;</code>
-     * @return The bytes for gachaRecordUrl.
-     */
-    com.google.protobuf.ByteString
-        getGachaRecordUrlBytes();
-
-    /**
-     * <code>string gacha_prob_url_oversea = 13;</code>
-     * @return The gachaProbUrlOversea.
-     */
-    java.lang.String getGachaProbUrlOversea();
-    /**
-     * <code>string gacha_prob_url_oversea = 13;</code>
-     * @return The bytes for gachaProbUrlOversea.
-     */
-    com.google.protobuf.ByteString
-        getGachaProbUrlOverseaBytes();
-
-    /**
-     * <code>string gacha_prefab_path = 1;</code>
-     * @return The gachaPrefabPath.
-     */
-    java.lang.String getGachaPrefabPath();
-    /**
-     * <code>string gacha_prefab_path = 1;</code>
-     * @return The bytes for gachaPrefabPath.
-     */
-    com.google.protobuf.ByteString
-        getGachaPrefabPathBytes();
-
-    /**
-     * <code>string gacha_preview_prefab_path = 8;</code>
-     * @return The gachaPreviewPrefabPath.
-     */
-    java.lang.String getGachaPreviewPrefabPath();
-    /**
-     * <code>string gacha_preview_prefab_path = 8;</code>
-     * @return The bytes for gachaPreviewPrefabPath.
-     */
-    com.google.protobuf.ByteString
-        getGachaPreviewPrefabPathBytes();
-
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @return A list containing the displayUp5ItemList.
-     */
-    java.util.List<java.lang.Integer> getDisplayUp5ItemListList();
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @return The count of displayUp5ItemList.
-     */
-    int getDisplayUp5ItemListCount();
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @param index The index of the element to return.
-     * @return The displayUp5ItemList at the given index.
-     */
-    int getDisplayUp5ItemList(int index);
-
-    /**
-     * <code>uint32 ten_cost_item_id = 6;</code>
-     * @return The tenCostItemId.
-     */
-    int getTenCostItemId();
-
-    /**
-     * <code>uint32 ten_cost_item_num = 3;</code>
-     * @return The tenCostItemNum.
-     */
-    int getTenCostItemNum();
+    int getAHPDADMGCCE(int index);
 
     /**
      * <pre>
-     * fake
+     * offset: 112
      * </pre>
      *
-     * <code>uint32 wish_progress = 532;</code>
-     * @return The wishProgress.
+     * <code>string DGCNBNILFCP = 1340;</code>
+     * @return The dGCNBNILFCP.
      */
-    int getWishProgress();
+    java.lang.String getDGCNBNILFCP();
+    /**
+     * <pre>
+     * offset: 112
+     * </pre>
+     *
+     * <code>string DGCNBNILFCP = 1340;</code>
+     * @return The bytes for dGCNBNILFCP.
+     */
+    com.google.protobuf.ByteString
+        getDGCNBNILFCPBytes();
 
     /**
-     * <code>uint32 begin_time = 2;</code>
+     * <pre>
+     * offset: 120
+     * </pre>
+     *
+     * <code>uint32 PEAKCBGCNMG = 444;</code>
+     * @return The pEAKCBGCNMG.
+     */
+    int getPEAKCBGCNMG();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 124
+     * </pre>
+     *
+     * <code>uint32 end_time = 4;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
+
+    /**
+     * <pre>
+     * offset: 128
+     * </pre>
+     *
+     * <code>uint32 IBPEFBFLJMI = 3;</code>
+     * @return The iBPEFBFLJMI.
+     */
+    int getIBPEFBFLJMI();
+
+    /**
+     * <pre>
+     * offset: 132
+     * </pre>
+     *
+     * <code>uint32 CACMILABBBL = 12;</code>
+     * @return The cACMILABBBL.
+     */
+    int getCACMILABBBL();
+
+    /**
+     * <pre>
+     * offset: 136
+     * </pre>
+     *
+     * <code>bool EJBFPCFHHAK = 172;</code>
+     * @return The eJBFPCFHHAK.
+     */
+    boolean getEJBFPCFHHAK();
+
+    /**
+     * <pre>
+     * offset: 137
+     * </pre>
+     *
+     * <code>bool CLBHMIAPKGC = 1254;</code>
+     * @return The cLBHMIAPKGC.
+     */
+    boolean getCLBHMIAPKGC();
+
+    /**
+     * <pre>
+     * offset: 140
+     * </pre>
+     *
+     * <code>uint32 FAANLAPHJHA = 507;</code>
+     * @return The fAANLAPHJHA.
+     */
+    int getFAANLAPHJHA();
+
+    /**
+     * <pre>
+     * offset: 144
+     * </pre>
+     *
+     * <code>uint32 MDNBAOODMAH = 5;</code>
+     * @return The mDNBAOODMAH.
+     */
+    int getMDNBAOODMAH();
+
+    /**
+     * <pre>
+     * offset: 148
+     * </pre>
+     *
+     * <code>uint32 LOFBAGJAIFP = 14;</code>
+     * @return The lOFBAGJAIFP.
+     */
+    int getLOFBAGJAIFP();
+
+    /**
+     * <pre>
+     * offset: 152
+     * </pre>
+     *
+     * <code>uint32 CLGLLLGLLLK = 15;</code>
+     * @return The cLGLLLGLLLK.
+     */
+    int getCLGLLLGLLLK();
+
+    /**
+     * <pre>
+     * offset: 156
+     * </pre>
+     *
+     * <code>uint32 HHLDMLKDFHN = 10;</code>
+     * @return The hHLDMLKDFHN.
+     */
+    int getHHLDMLKDFHN();
+
+    /**
+     * <pre>
+     * offset: 160
+     * </pre>
+     *
+     * <code>uint32 APMDACPHCGN = 9;</code>
+     * @return The aPMDACPHCGN.
+     */
+    int getAPMDACPHCGN();
+
+    /**
+     * <pre>
+     * offset: 164
+     * </pre>
+     *
+     * <code>uint32 AOFPCFABBFC = 623;</code>
+     * @return The aOFPCFABBFC.
+     */
+    int getAOFPCFABBFC();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 168
+     * </pre>
+     *
+     * <code>uint32 begin_time = 11;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 gacha_type = 12;</code>
-     * @return The gachaType.
-     */
-    int getGachaType();
-
-    /**
-     * <code>uint32 left_gacha_times = 5;</code>
-     * @return The leftGachaTimes.
-     */
-    int getLeftGachaTimes();
-
-    /**
      * <pre>
-     * fake
+     *6.3.0 // offset: 172
      * </pre>
      *
-     * <code>uint32 wish_max_progress = 1232;</code>
-     * @return The wishMaxProgress.
-     */
-    int getWishMaxProgress();
-
-    /**
-     * <pre>
-     * fake
-     * </pre>
-     *
-     * <code>uint32 cur_schedule_daily_gacha_times = 306;</code>
-     * @return The curScheduleDailyGachaTimes.
-     */
-    int getCurScheduleDailyGachaTimes();
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool is_new_wish = 418;</code>
-     * @return The isNewWish.
-     */
-    boolean getIsNewWish();
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool new_bool = 1665;</code>
-     * @return The newBool.
-     */
-    boolean getNewBool();
-
-    /**
-     * <code>uint32 gacha_times_limit = 7;</code>
-     * @return The gachaTimesLimit.
-     */
-    int getGachaTimesLimit();
-
-    /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 schedule_id = 8;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 cost_item_id = 15;</code>
-     * @return The costItemId.
+     * <pre>
+     * offset: 176
+     * </pre>
+     *
+     * <code>uint32 FLBPHECFNIP = 32;</code>
+     * @return The fLBPHECFNIP.
      */
-    int getCostItemId();
-
-    /**
-     * <code>uint32 cost_item_num = 9;</code>
-     * @return The costItemNum.
-     */
-    int getCostItemNum();
-
-    /**
-     * <code>uint32 gacha_sort_id = 4;</code>
-     * @return The gachaSortId.
-     */
-    int getGachaSortId();
+    int getFLBPHECFNIP();
 
     /**
      * <pre>
-     * fake
+     * offset: 180
      * </pre>
      *
-     * <code>uint32 wish_item_id = 43;</code>
-     * @return The wishItemId.
+     * <code>uint32 BLIIBKGABJC = 17;</code>
+     * @return The bLIIBKGABJC.
      */
-    int getWishItemId();
-
-    /**
-     * <code>uint32 end_time = 10;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
+    int getBLIIBKGABJC();
   }
   /**
    * Protobuf type {@code GachaInfo}
@@ -316,17 +472,17 @@ public final class GachaInfoOuterClass {
       super(builder);
     }
     private GachaInfo() {
-      displayChronicle5ItemList_ = emptyIntList();
-      titleTextmap_ = "";
-      gachaProbUrl_ = "";
-      gachaRecordUrlOversea_ = "";
+      kFMACJANNLI_ = "";
+      cPDGOGIKHCB_ = "";
+      cFFEKOOMKKJ_ = emptyIntList();
+      kMFPKMFADJL_ = "";
+      gDBNKBHKMLE_ = "";
+      mBHBHFFGJFL_ = emptyIntList();
+      dOPBHCCIHKL_ = "";
+      iDNLGKMFPHC_ = "";
       gachaUpInfoList_ = java.util.Collections.emptyList();
-      displayUp4ItemList_ = emptyIntList();
-      gachaRecordUrl_ = "";
-      gachaProbUrlOversea_ = "";
-      gachaPrefabPath_ = "";
-      gachaPreviewPrefabPath_ = "";
-      displayUp5ItemList_ = emptyIntList();
+      aHPDADMGCCE_ = emptyIntList();
+      dGCNBNILFCP_ = "";
     }
 
     @java.lang.Override
@@ -360,203 +516,203 @@ public final class GachaInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              gachaPrefabPath_ = s;
-              break;
-            }
-            case 16: {
-
-              beginTime_ = input.readUInt32();
+              cPDGOGIKHCB_ = s;
               break;
             }
             case 24: {
 
-              tenCostItemNum_ = input.readUInt32();
+              iBPEFBFLJMI_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              gachaSortId_ = input.readUInt32();
+              endTime_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              leftGachaTimes_ = input.readUInt32();
+              mDNBAOODMAH_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              tenCostItemId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              gachaTimesLimit_ = input.readUInt32();
-              break;
-            }
-            case 66: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              gachaPreviewPrefabPath_ = s;
+              dOPBHCCIHKL_ = s;
               break;
             }
-            case 72: {
-
-              costItemNum_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              gachaProbUrl_ = s;
+              iDNLGKMFPHC_ = s;
               break;
             }
-            case 96: {
-
-              gachaType_ = input.readUInt32();
-              break;
-            }
-            case 106: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              gachaProbUrlOversea_ = s;
-              break;
-            }
-            case 112: {
+            case 64: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
+            case 72: {
+
+              aPMDACPHCGN_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              hHLDMLKDFHN_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              beginTime_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cACMILABBBL_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              lOFBAGJAIFP_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              costItemId_ = input.readUInt32();
+              cLGLLLGLLLK_ = input.readUInt32();
               break;
             }
-            case 344: {
+            case 130: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              wishItemId_ = input.readUInt32();
+              kFMACJANNLI_ = s;
               break;
             }
-            case 2448: {
+            case 136: {
 
-              curScheduleDailyGachaTimes_ = input.readUInt32();
+              bLIIBKGABJC_ = input.readUInt32();
               break;
             }
-            case 3344: {
+            case 256: {
 
-              isNewWish_ = input.readBool();
+              fLBPHECFNIP_ = input.readUInt32();
               break;
             }
-            case 3456: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                displayChronicle5ItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              displayChronicle5ItemList_.addInt(input.readUInt32());
-              break;
-            }
-            case 3458: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                displayChronicle5ItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                displayChronicle5ItemList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 4256: {
+            case 1376: {
 
-              wishProgress_ = input.readUInt32();
+              eJBFPCFHHAK_ = input.readBool();
               break;
             }
-            case 5000: {
+            case 3552: {
+
+              pEAKCBGCNMG_ = input.readUInt32();
+              break;
+            }
+            case 4056: {
+
+              fAANLAPHJHA_ = input.readUInt32();
+              break;
+            }
+            case 4968: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                displayUp5ItemList_ = newIntList();
+                aHPDADMGCCE_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
-              displayUp5ItemList_.addInt(input.readUInt32());
+              aHPDADMGCCE_.addInt(input.readUInt32());
               break;
             }
-            case 5002: {
+            case 4970: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                displayUp5ItemList_ = newIntList();
+                aHPDADMGCCE_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
               while (input.getBytesUntilLimit() > 0) {
-                displayUp5ItemList_.addInt(input.readUInt32());
+                aHPDADMGCCE_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 5274: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 4984: {
 
-              titleTextmap_ = s;
+              aOFPCFABBFC_ = input.readUInt32();
               break;
             }
-            case 7522: {
+            case 6722: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              gDBNKBHKMLE_ = s;
+              break;
+            }
+            case 9346: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              kMFPKMFADJL_ = s;
+              break;
+            }
+            case 9960: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                gachaUpInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo>();
+                mBHBHFFGJFL_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
+              }
+              mBHBHFFGJFL_.addInt(input.readUInt32());
+              break;
+            }
+            case 9962: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                mBHBHFFGJFL_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                mBHBHFFGJFL_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 10032: {
+
+              cLBHMIAPKGC_ = input.readBool();
+              break;
+            }
+            case 10722: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              dGCNBNILFCP_ = s;
+              break;
+            }
+            case 11704: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cFFEKOOMKKJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              cFFEKOOMKKJ_.addInt(input.readUInt32());
+              break;
+            }
+            case 11706: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                cFFEKOOMKKJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                cFFEKOOMKKJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 14034: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                gachaUpInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo>();
+                mutable_bitField0_ |= 0x00000004;
               }
               gachaUpInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 8088: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                displayUp4ItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              displayUp4ItemList_.addInt(input.readUInt32());
-              break;
-            }
-            case 8090: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                displayUp4ItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                displayUp4ItemList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 9754: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              gachaRecordUrlOversea_ = s;
-              break;
-            }
-            case 9856: {
-
-              wishMaxProgress_ = input.readUInt32();
-              break;
-            }
-            case 11290: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              gachaRecordUrl_ = s;
-              break;
-            }
-            case 13320: {
-
-              newBool_ = input.readBool();
               break;
             }
             default: {
@@ -574,17 +730,17 @@ public final class GachaInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          displayChronicle5ItemList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          displayUp5ItemList_.makeImmutable(); // C
+          aHPDADMGCCE_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          gachaUpInfoList_ = java.util.Collections.unmodifiableList(gachaUpInfoList_);
+          mBHBHFFGJFL_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          cFFEKOOMKKJ_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          displayUp4ItemList_.makeImmutable(); // C
+          gachaUpInfoList_ = java.util.Collections.unmodifiableList(gachaUpInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -603,159 +759,381 @@ public final class GachaInfoOuterClass {
               emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.class, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder.class);
     }
 
-    public static final int DISPLAY_CHRONICLE_5_ITEM_LIST_FIELD_NUMBER = 432;
-    private com.google.protobuf.Internal.IntList displayChronicle5ItemList_;
+    public static final int KFMACJANNLI_FIELD_NUMBER = 16;
+    private volatile java.lang.Object kFMACJANNLI_;
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-     * @return A list containing the displayChronicle5ItemList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string KFMACJANNLI = 16;</code>
+     * @return The kFMACJANNLI.
+     */
+    @java.lang.Override
+    public java.lang.String getKFMACJANNLI() {
+      java.lang.Object ref = kFMACJANNLI_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        kFMACJANNLI_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string KFMACJANNLI = 16;</code>
+     * @return The bytes for kFMACJANNLI.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getKFMACJANNLIBytes() {
+      java.lang.Object ref = kFMACJANNLI_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        kFMACJANNLI_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CPDGOGIKHCB_FIELD_NUMBER = 2;
+    private volatile java.lang.Object cPDGOGIKHCB_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string CPDGOGIKHCB = 2;</code>
+     * @return The cPDGOGIKHCB.
+     */
+    @java.lang.Override
+    public java.lang.String getCPDGOGIKHCB() {
+      java.lang.Object ref = cPDGOGIKHCB_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        cPDGOGIKHCB_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string CPDGOGIKHCB = 2;</code>
+     * @return The bytes for cPDGOGIKHCB.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getCPDGOGIKHCBBytes() {
+      java.lang.Object ref = cPDGOGIKHCB_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        cPDGOGIKHCB_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CFFEKOOMKKJ_FIELD_NUMBER = 1463;
+    private com.google.protobuf.Internal.IntList cFFEKOOMKKJ_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+     * @return A list containing the cFFEKOOMKKJ.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getDisplayChronicle5ItemListList() {
-      return displayChronicle5ItemList_;
+        getCFFEKOOMKKJList() {
+      return cFFEKOOMKKJ_;
     }
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-     * @return The count of displayChronicle5ItemList.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+     * @return The count of cFFEKOOMKKJ.
      */
-    public int getDisplayChronicle5ItemListCount() {
-      return displayChronicle5ItemList_.size();
+    public int getCFFEKOOMKKJCount() {
+      return cFFEKOOMKKJ_.size();
     }
     /**
-     * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
      * @param index The index of the element to return.
-     * @return The displayChronicle5ItemList at the given index.
+     * @return The cFFEKOOMKKJ at the given index.
      */
-    public int getDisplayChronicle5ItemList(int index) {
-      return displayChronicle5ItemList_.getInt(index);
+    public int getCFFEKOOMKKJ(int index) {
+      return cFFEKOOMKKJ_.getInt(index);
     }
-    private int displayChronicle5ItemListMemoizedSerializedSize = -1;
+    private int cFFEKOOMKKJMemoizedSerializedSize = -1;
 
-    public static final int TITLE_TEXTMAP_FIELD_NUMBER = 659;
-    private volatile java.lang.Object titleTextmap_;
+    public static final int KMFPKMFADJL_FIELD_NUMBER = 1168;
+    private volatile java.lang.Object kMFPKMFADJL_;
     /**
-     * <code>string title_textmap = 659;</code>
-     * @return The titleTextmap.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string KMFPKMFADJL = 1168;</code>
+     * @return The kMFPKMFADJL.
      */
     @java.lang.Override
-    public java.lang.String getTitleTextmap() {
-      java.lang.Object ref = titleTextmap_;
+    public java.lang.String getKMFPKMFADJL() {
+      java.lang.Object ref = kMFPKMFADJL_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        titleTextmap_ = s;
+        kMFPKMFADJL_ = s;
         return s;
       }
     }
     /**
-     * <code>string title_textmap = 659;</code>
-     * @return The bytes for titleTextmap.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>string KMFPKMFADJL = 1168;</code>
+     * @return The bytes for kMFPKMFADJL.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getTitleTextmapBytes() {
-      java.lang.Object ref = titleTextmap_;
+        getKMFPKMFADJLBytes() {
+      java.lang.Object ref = kMFPKMFADJL_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        titleTextmap_ = b;
+        kMFPKMFADJL_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int GACHA_PROB_URL_FIELD_NUMBER = 11;
-    private volatile java.lang.Object gachaProbUrl_;
+    public static final int GDBNKBHKMLE_FIELD_NUMBER = 840;
+    private volatile java.lang.Object gDBNKBHKMLE_;
     /**
-     * <code>string gacha_prob_url = 11;</code>
-     * @return The gachaProbUrl.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>string GDBNKBHKMLE = 840;</code>
+     * @return The gDBNKBHKMLE.
      */
     @java.lang.Override
-    public java.lang.String getGachaProbUrl() {
-      java.lang.Object ref = gachaProbUrl_;
+    public java.lang.String getGDBNKBHKMLE() {
+      java.lang.Object ref = gDBNKBHKMLE_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        gachaProbUrl_ = s;
+        gDBNKBHKMLE_ = s;
         return s;
       }
     }
     /**
-     * <code>string gacha_prob_url = 11;</code>
-     * @return The bytes for gachaProbUrl.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>string GDBNKBHKMLE = 840;</code>
+     * @return The bytes for gDBNKBHKMLE.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getGachaProbUrlBytes() {
-      java.lang.Object ref = gachaProbUrl_;
+        getGDBNKBHKMLEBytes() {
+      java.lang.Object ref = gDBNKBHKMLE_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        gachaProbUrl_ = b;
+        gDBNKBHKMLE_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int GACHA_RECORD_URL_OVERSEA_FIELD_NUMBER = 1219;
-    private volatile java.lang.Object gachaRecordUrlOversea_;
+    public static final int MBHBHFFGJFL_FIELD_NUMBER = 1245;
+    private com.google.protobuf.Internal.IntList mBHBHFFGJFL_;
     /**
-     * <code>string gacha_record_url_oversea = 1219;</code>
-     * @return The gachaRecordUrlOversea.
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @return A list containing the mBHBHFFGJFL.
      */
     @java.lang.Override
-    public java.lang.String getGachaRecordUrlOversea() {
-      java.lang.Object ref = gachaRecordUrlOversea_;
+    public java.util.List<java.lang.Integer>
+        getMBHBHFFGJFLList() {
+      return mBHBHFFGJFL_;
+    }
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @return The count of mBHBHFFGJFL.
+     */
+    public int getMBHBHFFGJFLCount() {
+      return mBHBHFFGJFL_.size();
+    }
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+     * @param index The index of the element to return.
+     * @return The mBHBHFFGJFL at the given index.
+     */
+    public int getMBHBHFFGJFL(int index) {
+      return mBHBHFFGJFL_.getInt(index);
+    }
+    private int mBHBHFFGJFLMemoizedSerializedSize = -1;
+
+    public static final int DOPBHCCIHKL_FIELD_NUMBER = 6;
+    private volatile java.lang.Object dOPBHCCIHKL_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>string DOPBHCCIHKL = 6;</code>
+     * @return The dOPBHCCIHKL.
+     */
+    @java.lang.Override
+    public java.lang.String getDOPBHCCIHKL() {
+      java.lang.Object ref = dOPBHCCIHKL_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        gachaRecordUrlOversea_ = s;
+        dOPBHCCIHKL_ = s;
         return s;
       }
     }
     /**
-     * <code>string gacha_record_url_oversea = 1219;</code>
-     * @return The bytes for gachaRecordUrlOversea.
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>string DOPBHCCIHKL = 6;</code>
+     * @return The bytes for dOPBHCCIHKL.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getGachaRecordUrlOverseaBytes() {
-      java.lang.Object ref = gachaRecordUrlOversea_;
+        getDOPBHCCIHKLBytes() {
+      java.lang.Object ref = dOPBHCCIHKL_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        gachaRecordUrlOversea_ = b;
+        dOPBHCCIHKL_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int GACHA_UP_INFO_LIST_FIELD_NUMBER = 940;
+    public static final int IDNLGKMFPHC_FIELD_NUMBER = 7;
+    private volatile java.lang.Object iDNLGKMFPHC_;
+    /**
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>string IDNLGKMFPHC = 7;</code>
+     * @return The iDNLGKMFPHC.
+     */
+    @java.lang.Override
+    public java.lang.String getIDNLGKMFPHC() {
+      java.lang.Object ref = iDNLGKMFPHC_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        iDNLGKMFPHC_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>string IDNLGKMFPHC = 7;</code>
+     * @return The bytes for iDNLGKMFPHC.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getIDNLGKMFPHCBytes() {
+      java.lang.Object ref = iDNLGKMFPHC_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        iDNLGKMFPHC_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int GACHA_UP_INFO_LIST_FIELD_NUMBER = 1754;
     private java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> gachaUpInfoList_;
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> getGachaUpInfoListList() {
       return gachaUpInfoList_;
     }
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder> 
@@ -763,21 +1141,33 @@ public final class GachaInfoOuterClass {
       return gachaUpInfoList_;
     }
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     @java.lang.Override
     public int getGachaUpInfoListCount() {
       return gachaUpInfoList_.size();
     }
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo getGachaUpInfoList(int index) {
       return gachaUpInfoList_.get(index);
     }
     /**
-     * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder getGachaUpInfoListOrBuilder(
@@ -785,255 +1175,295 @@ public final class GachaInfoOuterClass {
       return gachaUpInfoList_.get(index);
     }
 
-    public static final int DISPLAY_UP4_ITEM_LIST_FIELD_NUMBER = 1011;
-    private com.google.protobuf.Internal.IntList displayUp4ItemList_;
-    /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
-     * @return A list containing the displayUp4ItemList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getDisplayUp4ItemListList() {
-      return displayUp4ItemList_;
-    }
-    /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
-     * @return The count of displayUp4ItemList.
-     */
-    public int getDisplayUp4ItemListCount() {
-      return displayUp4ItemList_.size();
-    }
-    /**
-     * <code>repeated uint32 display_up4_item_list = 1011;</code>
-     * @param index The index of the element to return.
-     * @return The displayUp4ItemList at the given index.
-     */
-    public int getDisplayUp4ItemList(int index) {
-      return displayUp4ItemList_.getInt(index);
-    }
-    private int displayUp4ItemListMemoizedSerializedSize = -1;
-
-    public static final int GACHA_RECORD_URL_FIELD_NUMBER = 1411;
-    private volatile java.lang.Object gachaRecordUrl_;
-    /**
-     * <code>string gacha_record_url = 1411;</code>
-     * @return The gachaRecordUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getGachaRecordUrl() {
-      java.lang.Object ref = gachaRecordUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gachaRecordUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gacha_record_url = 1411;</code>
-     * @return The bytes for gachaRecordUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGachaRecordUrlBytes() {
-      java.lang.Object ref = gachaRecordUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gachaRecordUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int GACHA_PROB_URL_OVERSEA_FIELD_NUMBER = 13;
-    private volatile java.lang.Object gachaProbUrlOversea_;
-    /**
-     * <code>string gacha_prob_url_oversea = 13;</code>
-     * @return The gachaProbUrlOversea.
-     */
-    @java.lang.Override
-    public java.lang.String getGachaProbUrlOversea() {
-      java.lang.Object ref = gachaProbUrlOversea_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gachaProbUrlOversea_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gacha_prob_url_oversea = 13;</code>
-     * @return The bytes for gachaProbUrlOversea.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGachaProbUrlOverseaBytes() {
-      java.lang.Object ref = gachaProbUrlOversea_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gachaProbUrlOversea_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int GACHA_PREFAB_PATH_FIELD_NUMBER = 1;
-    private volatile java.lang.Object gachaPrefabPath_;
-    /**
-     * <code>string gacha_prefab_path = 1;</code>
-     * @return The gachaPrefabPath.
-     */
-    @java.lang.Override
-    public java.lang.String getGachaPrefabPath() {
-      java.lang.Object ref = gachaPrefabPath_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gachaPrefabPath_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gacha_prefab_path = 1;</code>
-     * @return The bytes for gachaPrefabPath.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGachaPrefabPathBytes() {
-      java.lang.Object ref = gachaPrefabPath_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gachaPrefabPath_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int GACHA_PREVIEW_PREFAB_PATH_FIELD_NUMBER = 8;
-    private volatile java.lang.Object gachaPreviewPrefabPath_;
-    /**
-     * <code>string gacha_preview_prefab_path = 8;</code>
-     * @return The gachaPreviewPrefabPath.
-     */
-    @java.lang.Override
-    public java.lang.String getGachaPreviewPrefabPath() {
-      java.lang.Object ref = gachaPreviewPrefabPath_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gachaPreviewPrefabPath_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gacha_preview_prefab_path = 8;</code>
-     * @return The bytes for gachaPreviewPrefabPath.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGachaPreviewPrefabPathBytes() {
-      java.lang.Object ref = gachaPreviewPrefabPath_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gachaPreviewPrefabPath_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DISPLAY_UP5_ITEM_LIST_FIELD_NUMBER = 625;
-    private com.google.protobuf.Internal.IntList displayUp5ItemList_;
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @return A list containing the displayUp5ItemList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getDisplayUp5ItemListList() {
-      return displayUp5ItemList_;
-    }
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @return The count of displayUp5ItemList.
-     */
-    public int getDisplayUp5ItemListCount() {
-      return displayUp5ItemList_.size();
-    }
-    /**
-     * <code>repeated uint32 display_up5_item_list = 625;</code>
-     * @param index The index of the element to return.
-     * @return The displayUp5ItemList at the given index.
-     */
-    public int getDisplayUp5ItemList(int index) {
-      return displayUp5ItemList_.getInt(index);
-    }
-    private int displayUp5ItemListMemoizedSerializedSize = -1;
-
-    public static final int TEN_COST_ITEM_ID_FIELD_NUMBER = 6;
-    private int tenCostItemId_;
-    /**
-     * <code>uint32 ten_cost_item_id = 6;</code>
-     * @return The tenCostItemId.
-     */
-    @java.lang.Override
-    public int getTenCostItemId() {
-      return tenCostItemId_;
-    }
-
-    public static final int TEN_COST_ITEM_NUM_FIELD_NUMBER = 3;
-    private int tenCostItemNum_;
-    /**
-     * <code>uint32 ten_cost_item_num = 3;</code>
-     * @return The tenCostItemNum.
-     */
-    @java.lang.Override
-    public int getTenCostItemNum() {
-      return tenCostItemNum_;
-    }
-
-    public static final int WISH_PROGRESS_FIELD_NUMBER = 532;
-    private int wishProgress_;
+    public static final int AHPDADMGCCE_FIELD_NUMBER = 621;
+    private com.google.protobuf.Internal.IntList aHPDADMGCCE_;
     /**
      * <pre>
-     * fake
+     * offset: 104
      * </pre>
      *
-     * <code>uint32 wish_progress = 532;</code>
-     * @return The wishProgress.
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+     * @return A list containing the aHPDADMGCCE.
      */
     @java.lang.Override
-    public int getWishProgress() {
-      return wishProgress_;
+    public java.util.List<java.lang.Integer>
+        getAHPDADMGCCEList() {
+      return aHPDADMGCCE_;
+    }
+    /**
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+     * @return The count of aHPDADMGCCE.
+     */
+    public int getAHPDADMGCCECount() {
+      return aHPDADMGCCE_.size();
+    }
+    /**
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+     * @param index The index of the element to return.
+     * @return The aHPDADMGCCE at the given index.
+     */
+    public int getAHPDADMGCCE(int index) {
+      return aHPDADMGCCE_.getInt(index);
+    }
+    private int aHPDADMGCCEMemoizedSerializedSize = -1;
+
+    public static final int DGCNBNILFCP_FIELD_NUMBER = 1340;
+    private volatile java.lang.Object dGCNBNILFCP_;
+    /**
+     * <pre>
+     * offset: 112
+     * </pre>
+     *
+     * <code>string DGCNBNILFCP = 1340;</code>
+     * @return The dGCNBNILFCP.
+     */
+    @java.lang.Override
+    public java.lang.String getDGCNBNILFCP() {
+      java.lang.Object ref = dGCNBNILFCP_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        dGCNBNILFCP_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 112
+     * </pre>
+     *
+     * <code>string DGCNBNILFCP = 1340;</code>
+     * @return The bytes for dGCNBNILFCP.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDGCNBNILFCPBytes() {
+      java.lang.Object ref = dGCNBNILFCP_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        dGCNBNILFCP_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 2;
+    public static final int PEAKCBGCNMG_FIELD_NUMBER = 444;
+    private int pEAKCBGCNMG_;
+    /**
+     * <pre>
+     * offset: 120
+     * </pre>
+     *
+     * <code>uint32 PEAKCBGCNMG = 444;</code>
+     * @return The pEAKCBGCNMG.
+     */
+    @java.lang.Override
+    public int getPEAKCBGCNMG() {
+      return pEAKCBGCNMG_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 4;
+    private int endTime_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 124
+     * </pre>
+     *
+     * <code>uint32 end_time = 4;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int IBPEFBFLJMI_FIELD_NUMBER = 3;
+    private int iBPEFBFLJMI_;
+    /**
+     * <pre>
+     * offset: 128
+     * </pre>
+     *
+     * <code>uint32 IBPEFBFLJMI = 3;</code>
+     * @return The iBPEFBFLJMI.
+     */
+    @java.lang.Override
+    public int getIBPEFBFLJMI() {
+      return iBPEFBFLJMI_;
+    }
+
+    public static final int CACMILABBBL_FIELD_NUMBER = 12;
+    private int cACMILABBBL_;
+    /**
+     * <pre>
+     * offset: 132
+     * </pre>
+     *
+     * <code>uint32 CACMILABBBL = 12;</code>
+     * @return The cACMILABBBL.
+     */
+    @java.lang.Override
+    public int getCACMILABBBL() {
+      return cACMILABBBL_;
+    }
+
+    public static final int EJBFPCFHHAK_FIELD_NUMBER = 172;
+    private boolean eJBFPCFHHAK_;
+    /**
+     * <pre>
+     * offset: 136
+     * </pre>
+     *
+     * <code>bool EJBFPCFHHAK = 172;</code>
+     * @return The eJBFPCFHHAK.
+     */
+    @java.lang.Override
+    public boolean getEJBFPCFHHAK() {
+      return eJBFPCFHHAK_;
+    }
+
+    public static final int CLBHMIAPKGC_FIELD_NUMBER = 1254;
+    private boolean cLBHMIAPKGC_;
+    /**
+     * <pre>
+     * offset: 137
+     * </pre>
+     *
+     * <code>bool CLBHMIAPKGC = 1254;</code>
+     * @return The cLBHMIAPKGC.
+     */
+    @java.lang.Override
+    public boolean getCLBHMIAPKGC() {
+      return cLBHMIAPKGC_;
+    }
+
+    public static final int FAANLAPHJHA_FIELD_NUMBER = 507;
+    private int fAANLAPHJHA_;
+    /**
+     * <pre>
+     * offset: 140
+     * </pre>
+     *
+     * <code>uint32 FAANLAPHJHA = 507;</code>
+     * @return The fAANLAPHJHA.
+     */
+    @java.lang.Override
+    public int getFAANLAPHJHA() {
+      return fAANLAPHJHA_;
+    }
+
+    public static final int MDNBAOODMAH_FIELD_NUMBER = 5;
+    private int mDNBAOODMAH_;
+    /**
+     * <pre>
+     * offset: 144
+     * </pre>
+     *
+     * <code>uint32 MDNBAOODMAH = 5;</code>
+     * @return The mDNBAOODMAH.
+     */
+    @java.lang.Override
+    public int getMDNBAOODMAH() {
+      return mDNBAOODMAH_;
+    }
+
+    public static final int LOFBAGJAIFP_FIELD_NUMBER = 14;
+    private int lOFBAGJAIFP_;
+    /**
+     * <pre>
+     * offset: 148
+     * </pre>
+     *
+     * <code>uint32 LOFBAGJAIFP = 14;</code>
+     * @return The lOFBAGJAIFP.
+     */
+    @java.lang.Override
+    public int getLOFBAGJAIFP() {
+      return lOFBAGJAIFP_;
+    }
+
+    public static final int CLGLLLGLLLK_FIELD_NUMBER = 15;
+    private int cLGLLLGLLLK_;
+    /**
+     * <pre>
+     * offset: 152
+     * </pre>
+     *
+     * <code>uint32 CLGLLLGLLLK = 15;</code>
+     * @return The cLGLLLGLLLK.
+     */
+    @java.lang.Override
+    public int getCLGLLLGLLLK() {
+      return cLGLLLGLLLK_;
+    }
+
+    public static final int HHLDMLKDFHN_FIELD_NUMBER = 10;
+    private int hHLDMLKDFHN_;
+    /**
+     * <pre>
+     * offset: 156
+     * </pre>
+     *
+     * <code>uint32 HHLDMLKDFHN = 10;</code>
+     * @return The hHLDMLKDFHN.
+     */
+    @java.lang.Override
+    public int getHHLDMLKDFHN() {
+      return hHLDMLKDFHN_;
+    }
+
+    public static final int APMDACPHCGN_FIELD_NUMBER = 9;
+    private int aPMDACPHCGN_;
+    /**
+     * <pre>
+     * offset: 160
+     * </pre>
+     *
+     * <code>uint32 APMDACPHCGN = 9;</code>
+     * @return The aPMDACPHCGN.
+     */
+    @java.lang.Override
+    public int getAPMDACPHCGN() {
+      return aPMDACPHCGN_;
+    }
+
+    public static final int AOFPCFABBFC_FIELD_NUMBER = 623;
+    private int aOFPCFABBFC_;
+    /**
+     * <pre>
+     * offset: 164
+     * </pre>
+     *
+     * <code>uint32 AOFPCFABBFC = 623;</code>
+     * @return The aOFPCFABBFC.
+     */
+    @java.lang.Override
+    public int getAOFPCFABBFC() {
+      return aOFPCFABBFC_;
+    }
+
+    public static final int BEGIN_TIME_FIELD_NUMBER = 11;
     private int beginTime_;
     /**
-     * <code>uint32 begin_time = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 168
+     * </pre>
+     *
+     * <code>uint32 begin_time = 11;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -1041,103 +1471,14 @@ public final class GachaInfoOuterClass {
       return beginTime_;
     }
 
-    public static final int GACHA_TYPE_FIELD_NUMBER = 12;
-    private int gachaType_;
-    /**
-     * <code>uint32 gacha_type = 12;</code>
-     * @return The gachaType.
-     */
-    @java.lang.Override
-    public int getGachaType() {
-      return gachaType_;
-    }
-
-    public static final int LEFT_GACHA_TIMES_FIELD_NUMBER = 5;
-    private int leftGachaTimes_;
-    /**
-     * <code>uint32 left_gacha_times = 5;</code>
-     * @return The leftGachaTimes.
-     */
-    @java.lang.Override
-    public int getLeftGachaTimes() {
-      return leftGachaTimes_;
-    }
-
-    public static final int WISH_MAX_PROGRESS_FIELD_NUMBER = 1232;
-    private int wishMaxProgress_;
-    /**
-     * <pre>
-     * fake
-     * </pre>
-     *
-     * <code>uint32 wish_max_progress = 1232;</code>
-     * @return The wishMaxProgress.
-     */
-    @java.lang.Override
-    public int getWishMaxProgress() {
-      return wishMaxProgress_;
-    }
-
-    public static final int CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER = 306;
-    private int curScheduleDailyGachaTimes_;
-    /**
-     * <pre>
-     * fake
-     * </pre>
-     *
-     * <code>uint32 cur_schedule_daily_gacha_times = 306;</code>
-     * @return The curScheduleDailyGachaTimes.
-     */
-    @java.lang.Override
-    public int getCurScheduleDailyGachaTimes() {
-      return curScheduleDailyGachaTimes_;
-    }
-
-    public static final int IS_NEW_WISH_FIELD_NUMBER = 418;
-    private boolean isNewWish_;
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool is_new_wish = 418;</code>
-     * @return The isNewWish.
-     */
-    @java.lang.Override
-    public boolean getIsNewWish() {
-      return isNewWish_;
-    }
-
-    public static final int NEW_BOOL_FIELD_NUMBER = 1665;
-    private boolean newBool_;
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool new_bool = 1665;</code>
-     * @return The newBool.
-     */
-    @java.lang.Override
-    public boolean getNewBool() {
-      return newBool_;
-    }
-
-    public static final int GACHA_TIMES_LIMIT_FIELD_NUMBER = 7;
-    private int gachaTimesLimit_;
-    /**
-     * <code>uint32 gacha_times_limit = 7;</code>
-     * @return The gachaTimesLimit.
-     */
-    @java.lang.Override
-    public int getGachaTimesLimit() {
-      return gachaTimesLimit_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <pre>
+     *6.3.0 // offset: 172
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 8;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -1145,63 +1486,34 @@ public final class GachaInfoOuterClass {
       return scheduleId_;
     }
 
-    public static final int COST_ITEM_ID_FIELD_NUMBER = 15;
-    private int costItemId_;
-    /**
-     * <code>uint32 cost_item_id = 15;</code>
-     * @return The costItemId.
-     */
-    @java.lang.Override
-    public int getCostItemId() {
-      return costItemId_;
-    }
-
-    public static final int COST_ITEM_NUM_FIELD_NUMBER = 9;
-    private int costItemNum_;
-    /**
-     * <code>uint32 cost_item_num = 9;</code>
-     * @return The costItemNum.
-     */
-    @java.lang.Override
-    public int getCostItemNum() {
-      return costItemNum_;
-    }
-
-    public static final int GACHA_SORT_ID_FIELD_NUMBER = 4;
-    private int gachaSortId_;
-    /**
-     * <code>uint32 gacha_sort_id = 4;</code>
-     * @return The gachaSortId.
-     */
-    @java.lang.Override
-    public int getGachaSortId() {
-      return gachaSortId_;
-    }
-
-    public static final int WISH_ITEM_ID_FIELD_NUMBER = 43;
-    private int wishItemId_;
+    public static final int FLBPHECFNIP_FIELD_NUMBER = 32;
+    private int fLBPHECFNIP_;
     /**
      * <pre>
-     * fake
+     * offset: 176
      * </pre>
      *
-     * <code>uint32 wish_item_id = 43;</code>
-     * @return The wishItemId.
+     * <code>uint32 FLBPHECFNIP = 32;</code>
+     * @return The fLBPHECFNIP.
      */
     @java.lang.Override
-    public int getWishItemId() {
-      return wishItemId_;
+    public int getFLBPHECFNIP() {
+      return fLBPHECFNIP_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 10;
-    private int endTime_;
+    public static final int BLIIBKGABJC_FIELD_NUMBER = 17;
+    private int bLIIBKGABJC_;
     /**
-     * <code>uint32 end_time = 10;</code>
-     * @return The endTime.
+     * <pre>
+     * offset: 180
+     * </pre>
+     *
+     * <code>uint32 BLIIBKGABJC = 17;</code>
+     * @return The bLIIBKGABJC.
      */
     @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
+    public int getBLIIBKGABJC() {
+      return bLIIBKGABJC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1219,101 +1531,101 @@ public final class GachaInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPrefabPath_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, gachaPrefabPath_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cPDGOGIKHCB_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, cPDGOGIKHCB_);
       }
-      if (beginTime_ != 0) {
-        output.writeUInt32(2, beginTime_);
-      }
-      if (tenCostItemNum_ != 0) {
-        output.writeUInt32(3, tenCostItemNum_);
-      }
-      if (gachaSortId_ != 0) {
-        output.writeUInt32(4, gachaSortId_);
-      }
-      if (leftGachaTimes_ != 0) {
-        output.writeUInt32(5, leftGachaTimes_);
-      }
-      if (tenCostItemId_ != 0) {
-        output.writeUInt32(6, tenCostItemId_);
-      }
-      if (gachaTimesLimit_ != 0) {
-        output.writeUInt32(7, gachaTimesLimit_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPreviewPrefabPath_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, gachaPreviewPrefabPath_);
-      }
-      if (costItemNum_ != 0) {
-        output.writeUInt32(9, costItemNum_);
+      if (iBPEFBFLJMI_ != 0) {
+        output.writeUInt32(3, iBPEFBFLJMI_);
       }
       if (endTime_ != 0) {
-        output.writeUInt32(10, endTime_);
+        output.writeUInt32(4, endTime_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaProbUrl_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, gachaProbUrl_);
+      if (mDNBAOODMAH_ != 0) {
+        output.writeUInt32(5, mDNBAOODMAH_);
       }
-      if (gachaType_ != 0) {
-        output.writeUInt32(12, gachaType_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dOPBHCCIHKL_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, dOPBHCCIHKL_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaProbUrlOversea_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, gachaProbUrlOversea_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(iDNLGKMFPHC_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, iDNLGKMFPHC_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(14, scheduleId_);
+        output.writeUInt32(8, scheduleId_);
       }
-      if (costItemId_ != 0) {
-        output.writeUInt32(15, costItemId_);
+      if (aPMDACPHCGN_ != 0) {
+        output.writeUInt32(9, aPMDACPHCGN_);
       }
-      if (wishItemId_ != 0) {
-        output.writeUInt32(43, wishItemId_);
+      if (hHLDMLKDFHN_ != 0) {
+        output.writeUInt32(10, hHLDMLKDFHN_);
       }
-      if (curScheduleDailyGachaTimes_ != 0) {
-        output.writeUInt32(306, curScheduleDailyGachaTimes_);
+      if (beginTime_ != 0) {
+        output.writeUInt32(11, beginTime_);
       }
-      if (isNewWish_ != false) {
-        output.writeBool(418, isNewWish_);
+      if (cACMILABBBL_ != 0) {
+        output.writeUInt32(12, cACMILABBBL_);
       }
-      if (getDisplayChronicle5ItemListList().size() > 0) {
-        output.writeUInt32NoTag(3458);
-        output.writeUInt32NoTag(displayChronicle5ItemListMemoizedSerializedSize);
+      if (lOFBAGJAIFP_ != 0) {
+        output.writeUInt32(14, lOFBAGJAIFP_);
       }
-      for (int i = 0; i < displayChronicle5ItemList_.size(); i++) {
-        output.writeUInt32NoTag(displayChronicle5ItemList_.getInt(i));
+      if (cLGLLLGLLLK_ != 0) {
+        output.writeUInt32(15, cLGLLLGLLLK_);
       }
-      if (wishProgress_ != 0) {
-        output.writeUInt32(532, wishProgress_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kFMACJANNLI_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 16, kFMACJANNLI_);
       }
-      if (getDisplayUp5ItemListList().size() > 0) {
-        output.writeUInt32NoTag(5002);
-        output.writeUInt32NoTag(displayUp5ItemListMemoizedSerializedSize);
+      if (bLIIBKGABJC_ != 0) {
+        output.writeUInt32(17, bLIIBKGABJC_);
       }
-      for (int i = 0; i < displayUp5ItemList_.size(); i++) {
-        output.writeUInt32NoTag(displayUp5ItemList_.getInt(i));
+      if (fLBPHECFNIP_ != 0) {
+        output.writeUInt32(32, fLBPHECFNIP_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(titleTextmap_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 659, titleTextmap_);
+      if (eJBFPCFHHAK_ != false) {
+        output.writeBool(172, eJBFPCFHHAK_);
+      }
+      if (pEAKCBGCNMG_ != 0) {
+        output.writeUInt32(444, pEAKCBGCNMG_);
+      }
+      if (fAANLAPHJHA_ != 0) {
+        output.writeUInt32(507, fAANLAPHJHA_);
+      }
+      if (getAHPDADMGCCEList().size() > 0) {
+        output.writeUInt32NoTag(4970);
+        output.writeUInt32NoTag(aHPDADMGCCEMemoizedSerializedSize);
+      }
+      for (int i = 0; i < aHPDADMGCCE_.size(); i++) {
+        output.writeUInt32NoTag(aHPDADMGCCE_.getInt(i));
+      }
+      if (aOFPCFABBFC_ != 0) {
+        output.writeUInt32(623, aOFPCFABBFC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gDBNKBHKMLE_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 840, gDBNKBHKMLE_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kMFPKMFADJL_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1168, kMFPKMFADJL_);
+      }
+      if (getMBHBHFFGJFLList().size() > 0) {
+        output.writeUInt32NoTag(9962);
+        output.writeUInt32NoTag(mBHBHFFGJFLMemoizedSerializedSize);
+      }
+      for (int i = 0; i < mBHBHFFGJFL_.size(); i++) {
+        output.writeUInt32NoTag(mBHBHFFGJFL_.getInt(i));
+      }
+      if (cLBHMIAPKGC_ != false) {
+        output.writeBool(1254, cLBHMIAPKGC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dGCNBNILFCP_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1340, dGCNBNILFCP_);
+      }
+      if (getCFFEKOOMKKJList().size() > 0) {
+        output.writeUInt32NoTag(11706);
+        output.writeUInt32NoTag(cFFEKOOMKKJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < cFFEKOOMKKJ_.size(); i++) {
+        output.writeUInt32NoTag(cFFEKOOMKKJ_.getInt(i));
       }
       for (int i = 0; i < gachaUpInfoList_.size(); i++) {
-        output.writeMessage(940, gachaUpInfoList_.get(i));
-      }
-      if (getDisplayUp4ItemListList().size() > 0) {
-        output.writeUInt32NoTag(8090);
-        output.writeUInt32NoTag(displayUp4ItemListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < displayUp4ItemList_.size(); i++) {
-        output.writeUInt32NoTag(displayUp4ItemList_.getInt(i));
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaRecordUrlOversea_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1219, gachaRecordUrlOversea_);
-      }
-      if (wishMaxProgress_ != 0) {
-        output.writeUInt32(1232, wishMaxProgress_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaRecordUrl_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1411, gachaRecordUrl_);
-      }
-      if (newBool_ != false) {
-        output.writeBool(1665, newBool_);
+        output.writeMessage(1754, gachaUpInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1324,140 +1636,140 @@ public final class GachaInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPrefabPath_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, gachaPrefabPath_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cPDGOGIKHCB_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, cPDGOGIKHCB_);
       }
-      if (beginTime_ != 0) {
+      if (iBPEFBFLJMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, beginTime_);
-      }
-      if (tenCostItemNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, tenCostItemNum_);
-      }
-      if (gachaSortId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, gachaSortId_);
-      }
-      if (leftGachaTimes_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, leftGachaTimes_);
-      }
-      if (tenCostItemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, tenCostItemId_);
-      }
-      if (gachaTimesLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gachaTimesLimit_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaPreviewPrefabPath_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, gachaPreviewPrefabPath_);
-      }
-      if (costItemNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, costItemNum_);
+          .computeUInt32Size(3, iBPEFBFLJMI_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, endTime_);
+          .computeUInt32Size(4, endTime_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaProbUrl_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, gachaProbUrl_);
-      }
-      if (gachaType_ != 0) {
+      if (mDNBAOODMAH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gachaType_);
+          .computeUInt32Size(5, mDNBAOODMAH_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaProbUrlOversea_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, gachaProbUrlOversea_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dOPBHCCIHKL_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, dOPBHCCIHKL_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(iDNLGKMFPHC_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, iDNLGKMFPHC_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, scheduleId_);
+          .computeUInt32Size(8, scheduleId_);
       }
-      if (costItemId_ != 0) {
+      if (aPMDACPHCGN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, costItemId_);
+          .computeUInt32Size(9, aPMDACPHCGN_);
       }
-      if (wishItemId_ != 0) {
+      if (hHLDMLKDFHN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(43, wishItemId_);
+          .computeUInt32Size(10, hHLDMLKDFHN_);
       }
-      if (curScheduleDailyGachaTimes_ != 0) {
+      if (beginTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(306, curScheduleDailyGachaTimes_);
+          .computeUInt32Size(11, beginTime_);
       }
-      if (isNewWish_ != false) {
+      if (cACMILABBBL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(418, isNewWish_);
+          .computeUInt32Size(12, cACMILABBBL_);
+      }
+      if (lOFBAGJAIFP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, lOFBAGJAIFP_);
+      }
+      if (cLGLLLGLLLK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cLGLLLGLLLK_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kFMACJANNLI_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, kFMACJANNLI_);
+      }
+      if (bLIIBKGABJC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(17, bLIIBKGABJC_);
+      }
+      if (fLBPHECFNIP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(32, fLBPHECFNIP_);
+      }
+      if (eJBFPCFHHAK_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(172, eJBFPCFHHAK_);
+      }
+      if (pEAKCBGCNMG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(444, pEAKCBGCNMG_);
+      }
+      if (fAANLAPHJHA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(507, fAANLAPHJHA_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < displayChronicle5ItemList_.size(); i++) {
+        for (int i = 0; i < aHPDADMGCCE_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(displayChronicle5ItemList_.getInt(i));
+            .computeUInt32SizeNoTag(aHPDADMGCCE_.getInt(i));
         }
         size += dataSize;
-        if (!getDisplayChronicle5ItemListList().isEmpty()) {
+        if (!getAHPDADMGCCEList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        displayChronicle5ItemListMemoizedSerializedSize = dataSize;
+        aHPDADMGCCEMemoizedSerializedSize = dataSize;
       }
-      if (wishProgress_ != 0) {
+      if (aOFPCFABBFC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(532, wishProgress_);
+          .computeUInt32Size(623, aOFPCFABBFC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gDBNKBHKMLE_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(840, gDBNKBHKMLE_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kMFPKMFADJL_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1168, kMFPKMFADJL_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < displayUp5ItemList_.size(); i++) {
+        for (int i = 0; i < mBHBHFFGJFL_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(displayUp5ItemList_.getInt(i));
+            .computeUInt32SizeNoTag(mBHBHFFGJFL_.getInt(i));
         }
         size += dataSize;
-        if (!getDisplayUp5ItemListList().isEmpty()) {
+        if (!getMBHBHFFGJFLList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        displayUp5ItemListMemoizedSerializedSize = dataSize;
+        mBHBHFFGJFLMemoizedSerializedSize = dataSize;
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(titleTextmap_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(659, titleTextmap_);
+      if (cLBHMIAPKGC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1254, cLBHMIAPKGC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dGCNBNILFCP_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1340, dGCNBNILFCP_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < cFFEKOOMKKJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(cFFEKOOMKKJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getCFFEKOOMKKJList().isEmpty()) {
+          size += 2;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        cFFEKOOMKKJMemoizedSerializedSize = dataSize;
       }
       for (int i = 0; i < gachaUpInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(940, gachaUpInfoList_.get(i));
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < displayUp4ItemList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(displayUp4ItemList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getDisplayUp4ItemListList().isEmpty()) {
-          size += 2;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        displayUp4ItemListMemoizedSerializedSize = dataSize;
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaRecordUrlOversea_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1219, gachaRecordUrlOversea_);
-      }
-      if (wishMaxProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1232, wishMaxProgress_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaRecordUrl_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1411, gachaRecordUrl_);
-      }
-      if (newBool_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1665, newBool_);
+          .computeMessageSize(1754, gachaUpInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1474,62 +1786,62 @@ public final class GachaInfoOuterClass {
       }
       emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo other = (emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo) obj;
 
-      if (!getDisplayChronicle5ItemListList()
-          .equals(other.getDisplayChronicle5ItemListList())) return false;
-      if (!getTitleTextmap()
-          .equals(other.getTitleTextmap())) return false;
-      if (!getGachaProbUrl()
-          .equals(other.getGachaProbUrl())) return false;
-      if (!getGachaRecordUrlOversea()
-          .equals(other.getGachaRecordUrlOversea())) return false;
+      if (!getKFMACJANNLI()
+          .equals(other.getKFMACJANNLI())) return false;
+      if (!getCPDGOGIKHCB()
+          .equals(other.getCPDGOGIKHCB())) return false;
+      if (!getCFFEKOOMKKJList()
+          .equals(other.getCFFEKOOMKKJList())) return false;
+      if (!getKMFPKMFADJL()
+          .equals(other.getKMFPKMFADJL())) return false;
+      if (!getGDBNKBHKMLE()
+          .equals(other.getGDBNKBHKMLE())) return false;
+      if (!getMBHBHFFGJFLList()
+          .equals(other.getMBHBHFFGJFLList())) return false;
+      if (!getDOPBHCCIHKL()
+          .equals(other.getDOPBHCCIHKL())) return false;
+      if (!getIDNLGKMFPHC()
+          .equals(other.getIDNLGKMFPHC())) return false;
       if (!getGachaUpInfoListList()
           .equals(other.getGachaUpInfoListList())) return false;
-      if (!getDisplayUp4ItemListList()
-          .equals(other.getDisplayUp4ItemListList())) return false;
-      if (!getGachaRecordUrl()
-          .equals(other.getGachaRecordUrl())) return false;
-      if (!getGachaProbUrlOversea()
-          .equals(other.getGachaProbUrlOversea())) return false;
-      if (!getGachaPrefabPath()
-          .equals(other.getGachaPrefabPath())) return false;
-      if (!getGachaPreviewPrefabPath()
-          .equals(other.getGachaPreviewPrefabPath())) return false;
-      if (!getDisplayUp5ItemListList()
-          .equals(other.getDisplayUp5ItemListList())) return false;
-      if (getTenCostItemId()
-          != other.getTenCostItemId()) return false;
-      if (getTenCostItemNum()
-          != other.getTenCostItemNum()) return false;
-      if (getWishProgress()
-          != other.getWishProgress()) return false;
-      if (getBeginTime()
-          != other.getBeginTime()) return false;
-      if (getGachaType()
-          != other.getGachaType()) return false;
-      if (getLeftGachaTimes()
-          != other.getLeftGachaTimes()) return false;
-      if (getWishMaxProgress()
-          != other.getWishMaxProgress()) return false;
-      if (getCurScheduleDailyGachaTimes()
-          != other.getCurScheduleDailyGachaTimes()) return false;
-      if (getIsNewWish()
-          != other.getIsNewWish()) return false;
-      if (getNewBool()
-          != other.getNewBool()) return false;
-      if (getGachaTimesLimit()
-          != other.getGachaTimesLimit()) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
-      if (getCostItemId()
-          != other.getCostItemId()) return false;
-      if (getCostItemNum()
-          != other.getCostItemNum()) return false;
-      if (getGachaSortId()
-          != other.getGachaSortId()) return false;
-      if (getWishItemId()
-          != other.getWishItemId()) return false;
+      if (!getAHPDADMGCCEList()
+          .equals(other.getAHPDADMGCCEList())) return false;
+      if (!getDGCNBNILFCP()
+          .equals(other.getDGCNBNILFCP())) return false;
+      if (getPEAKCBGCNMG()
+          != other.getPEAKCBGCNMG()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getIBPEFBFLJMI()
+          != other.getIBPEFBFLJMI()) return false;
+      if (getCACMILABBBL()
+          != other.getCACMILABBBL()) return false;
+      if (getEJBFPCFHHAK()
+          != other.getEJBFPCFHHAK()) return false;
+      if (getCLBHMIAPKGC()
+          != other.getCLBHMIAPKGC()) return false;
+      if (getFAANLAPHJHA()
+          != other.getFAANLAPHJHA()) return false;
+      if (getMDNBAOODMAH()
+          != other.getMDNBAOODMAH()) return false;
+      if (getLOFBAGJAIFP()
+          != other.getLOFBAGJAIFP()) return false;
+      if (getCLGLLLGLLLK()
+          != other.getCLGLLLGLLLK()) return false;
+      if (getHHLDMLKDFHN()
+          != other.getHHLDMLKDFHN()) return false;
+      if (getAPMDACPHCGN()
+          != other.getAPMDACPHCGN()) return false;
+      if (getAOFPCFABBFC()
+          != other.getAOFPCFABBFC()) return false;
+      if (getBeginTime()
+          != other.getBeginTime()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
+      if (getFLBPHECFNIP()
+          != other.getFLBPHECFNIP()) return false;
+      if (getBLIIBKGABJC()
+          != other.getBLIIBKGABJC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1541,72 +1853,72 @@ public final class GachaInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getDisplayChronicle5ItemListCount() > 0) {
-        hash = (37 * hash) + DISPLAY_CHRONICLE_5_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDisplayChronicle5ItemListList().hashCode();
+      hash = (37 * hash) + KFMACJANNLI_FIELD_NUMBER;
+      hash = (53 * hash) + getKFMACJANNLI().hashCode();
+      hash = (37 * hash) + CPDGOGIKHCB_FIELD_NUMBER;
+      hash = (53 * hash) + getCPDGOGIKHCB().hashCode();
+      if (getCFFEKOOMKKJCount() > 0) {
+        hash = (37 * hash) + CFFEKOOMKKJ_FIELD_NUMBER;
+        hash = (53 * hash) + getCFFEKOOMKKJList().hashCode();
       }
-      hash = (37 * hash) + TITLE_TEXTMAP_FIELD_NUMBER;
-      hash = (53 * hash) + getTitleTextmap().hashCode();
-      hash = (37 * hash) + GACHA_PROB_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaProbUrl().hashCode();
-      hash = (37 * hash) + GACHA_RECORD_URL_OVERSEA_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaRecordUrlOversea().hashCode();
+      hash = (37 * hash) + KMFPKMFADJL_FIELD_NUMBER;
+      hash = (53 * hash) + getKMFPKMFADJL().hashCode();
+      hash = (37 * hash) + GDBNKBHKMLE_FIELD_NUMBER;
+      hash = (53 * hash) + getGDBNKBHKMLE().hashCode();
+      if (getMBHBHFFGJFLCount() > 0) {
+        hash = (37 * hash) + MBHBHFFGJFL_FIELD_NUMBER;
+        hash = (53 * hash) + getMBHBHFFGJFLList().hashCode();
+      }
+      hash = (37 * hash) + DOPBHCCIHKL_FIELD_NUMBER;
+      hash = (53 * hash) + getDOPBHCCIHKL().hashCode();
+      hash = (37 * hash) + IDNLGKMFPHC_FIELD_NUMBER;
+      hash = (53 * hash) + getIDNLGKMFPHC().hashCode();
       if (getGachaUpInfoListCount() > 0) {
         hash = (37 * hash) + GACHA_UP_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGachaUpInfoListList().hashCode();
       }
-      if (getDisplayUp4ItemListCount() > 0) {
-        hash = (37 * hash) + DISPLAY_UP4_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDisplayUp4ItemListList().hashCode();
+      if (getAHPDADMGCCECount() > 0) {
+        hash = (37 * hash) + AHPDADMGCCE_FIELD_NUMBER;
+        hash = (53 * hash) + getAHPDADMGCCEList().hashCode();
       }
-      hash = (37 * hash) + GACHA_RECORD_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaRecordUrl().hashCode();
-      hash = (37 * hash) + GACHA_PROB_URL_OVERSEA_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaProbUrlOversea().hashCode();
-      hash = (37 * hash) + GACHA_PREFAB_PATH_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaPrefabPath().hashCode();
-      hash = (37 * hash) + GACHA_PREVIEW_PREFAB_PATH_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaPreviewPrefabPath().hashCode();
-      if (getDisplayUp5ItemListCount() > 0) {
-        hash = (37 * hash) + DISPLAY_UP5_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDisplayUp5ItemListList().hashCode();
-      }
-      hash = (37 * hash) + TEN_COST_ITEM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTenCostItemId();
-      hash = (37 * hash) + TEN_COST_ITEM_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getTenCostItemNum();
-      hash = (37 * hash) + WISH_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getWishProgress();
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + GACHA_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaType();
-      hash = (37 * hash) + LEFT_GACHA_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftGachaTimes();
-      hash = (37 * hash) + WISH_MAX_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getWishMaxProgress();
-      hash = (37 * hash) + CUR_SCHEDULE_DAILY_GACHA_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScheduleDailyGachaTimes();
-      hash = (37 * hash) + IS_NEW_WISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewWish());
-      hash = (37 * hash) + NEW_BOOL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getNewBool());
-      hash = (37 * hash) + GACHA_TIMES_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaTimesLimit();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + COST_ITEM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostItemId();
-      hash = (37 * hash) + COST_ITEM_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getCostItemNum();
-      hash = (37 * hash) + GACHA_SORT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaSortId();
-      hash = (37 * hash) + WISH_ITEM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWishItemId();
+      hash = (37 * hash) + DGCNBNILFCP_FIELD_NUMBER;
+      hash = (53 * hash) + getDGCNBNILFCP().hashCode();
+      hash = (37 * hash) + PEAKCBGCNMG_FIELD_NUMBER;
+      hash = (53 * hash) + getPEAKCBGCNMG();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + IBPEFBFLJMI_FIELD_NUMBER;
+      hash = (53 * hash) + getIBPEFBFLJMI();
+      hash = (37 * hash) + CACMILABBBL_FIELD_NUMBER;
+      hash = (53 * hash) + getCACMILABBBL();
+      hash = (37 * hash) + EJBFPCFHHAK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEJBFPCFHHAK());
+      hash = (37 * hash) + CLBHMIAPKGC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCLBHMIAPKGC());
+      hash = (37 * hash) + FAANLAPHJHA_FIELD_NUMBER;
+      hash = (53 * hash) + getFAANLAPHJHA();
+      hash = (37 * hash) + MDNBAOODMAH_FIELD_NUMBER;
+      hash = (53 * hash) + getMDNBAOODMAH();
+      hash = (37 * hash) + LOFBAGJAIFP_FIELD_NUMBER;
+      hash = (53 * hash) + getLOFBAGJAIFP();
+      hash = (37 * hash) + CLGLLLGLLLK_FIELD_NUMBER;
+      hash = (53 * hash) + getCLGLLLGLLLK();
+      hash = (37 * hash) + HHLDMLKDFHN_FIELD_NUMBER;
+      hash = (53 * hash) + getHHLDMLKDFHN();
+      hash = (37 * hash) + APMDACPHCGN_FIELD_NUMBER;
+      hash = (53 * hash) + getAPMDACPHCGN();
+      hash = (37 * hash) + AOFPCFABBFC_FIELD_NUMBER;
+      hash = (53 * hash) + getAOFPCFABBFC();
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBeginTime();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + FLBPHECFNIP_FIELD_NUMBER;
+      hash = (53 * hash) + getFLBPHECFNIP();
+      hash = (37 * hash) + BLIIBKGABJC_FIELD_NUMBER;
+      hash = (53 * hash) + getBLIIBKGABJC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1741,65 +2053,65 @@ public final class GachaInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        displayChronicle5ItemList_ = emptyIntList();
+        kFMACJANNLI_ = "";
+
+        cPDGOGIKHCB_ = "";
+
+        cFFEKOOMKKJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        titleTextmap_ = "";
+        kMFPKMFADJL_ = "";
 
-        gachaProbUrl_ = "";
+        gDBNKBHKMLE_ = "";
 
-        gachaRecordUrlOversea_ = "";
+        mBHBHFFGJFL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        dOPBHCCIHKL_ = "";
+
+        iDNLGKMFPHC_ = "";
 
         if (gachaUpInfoListBuilder_ == null) {
           gachaUpInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           gachaUpInfoListBuilder_.clear();
         }
-        displayUp4ItemList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        gachaRecordUrl_ = "";
-
-        gachaProbUrlOversea_ = "";
-
-        gachaPrefabPath_ = "";
-
-        gachaPreviewPrefabPath_ = "";
-
-        displayUp5ItemList_ = emptyIntList();
+        aHPDADMGCCE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
-        tenCostItemId_ = 0;
+        dGCNBNILFCP_ = "";
 
-        tenCostItemNum_ = 0;
+        pEAKCBGCNMG_ = 0;
 
-        wishProgress_ = 0;
+        endTime_ = 0;
+
+        iBPEFBFLJMI_ = 0;
+
+        cACMILABBBL_ = 0;
+
+        eJBFPCFHHAK_ = false;
+
+        cLBHMIAPKGC_ = false;
+
+        fAANLAPHJHA_ = 0;
+
+        mDNBAOODMAH_ = 0;
+
+        lOFBAGJAIFP_ = 0;
+
+        cLGLLLGLLLK_ = 0;
+
+        hHLDMLKDFHN_ = 0;
+
+        aPMDACPHCGN_ = 0;
+
+        aOFPCFABBFC_ = 0;
 
         beginTime_ = 0;
 
-        gachaType_ = 0;
-
-        leftGachaTimes_ = 0;
-
-        wishMaxProgress_ = 0;
-
-        curScheduleDailyGachaTimes_ = 0;
-
-        isNewWish_ = false;
-
-        newBool_ = false;
-
-        gachaTimesLimit_ = 0;
-
         scheduleId_ = 0;
 
-        costItemId_ = 0;
+        fLBPHECFNIP_ = 0;
 
-        costItemNum_ = 0;
-
-        gachaSortId_ = 0;
-
-        wishItemId_ = 0;
-
-        endTime_ = 0;
+        bLIIBKGABJC_ = 0;
 
         return this;
       }
@@ -1828,54 +2140,54 @@ public final class GachaInfoOuterClass {
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo buildPartial() {
         emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo result = new emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo(this);
         int from_bitField0_ = bitField0_;
+        result.kFMACJANNLI_ = kFMACJANNLI_;
+        result.cPDGOGIKHCB_ = cPDGOGIKHCB_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          displayChronicle5ItemList_.makeImmutable();
+          cFFEKOOMKKJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.displayChronicle5ItemList_ = displayChronicle5ItemList_;
-        result.titleTextmap_ = titleTextmap_;
-        result.gachaProbUrl_ = gachaProbUrl_;
-        result.gachaRecordUrlOversea_ = gachaRecordUrlOversea_;
+        result.cFFEKOOMKKJ_ = cFFEKOOMKKJ_;
+        result.kMFPKMFADJL_ = kMFPKMFADJL_;
+        result.gDBNKBHKMLE_ = gDBNKBHKMLE_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          mBHBHFFGJFL_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.mBHBHFFGJFL_ = mBHBHFFGJFL_;
+        result.dOPBHCCIHKL_ = dOPBHCCIHKL_;
+        result.iDNLGKMFPHC_ = iDNLGKMFPHC_;
         if (gachaUpInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             gachaUpInfoList_ = java.util.Collections.unmodifiableList(gachaUpInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.gachaUpInfoList_ = gachaUpInfoList_;
         } else {
           result.gachaUpInfoList_ = gachaUpInfoListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          displayUp4ItemList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.displayUp4ItemList_ = displayUp4ItemList_;
-        result.gachaRecordUrl_ = gachaRecordUrl_;
-        result.gachaProbUrlOversea_ = gachaProbUrlOversea_;
-        result.gachaPrefabPath_ = gachaPrefabPath_;
-        result.gachaPreviewPrefabPath_ = gachaPreviewPrefabPath_;
         if (((bitField0_ & 0x00000008) != 0)) {
-          displayUp5ItemList_.makeImmutable();
+          aHPDADMGCCE_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
         }
-        result.displayUp5ItemList_ = displayUp5ItemList_;
-        result.tenCostItemId_ = tenCostItemId_;
-        result.tenCostItemNum_ = tenCostItemNum_;
-        result.wishProgress_ = wishProgress_;
-        result.beginTime_ = beginTime_;
-        result.gachaType_ = gachaType_;
-        result.leftGachaTimes_ = leftGachaTimes_;
-        result.wishMaxProgress_ = wishMaxProgress_;
-        result.curScheduleDailyGachaTimes_ = curScheduleDailyGachaTimes_;
-        result.isNewWish_ = isNewWish_;
-        result.newBool_ = newBool_;
-        result.gachaTimesLimit_ = gachaTimesLimit_;
-        result.scheduleId_ = scheduleId_;
-        result.costItemId_ = costItemId_;
-        result.costItemNum_ = costItemNum_;
-        result.gachaSortId_ = gachaSortId_;
-        result.wishItemId_ = wishItemId_;
+        result.aHPDADMGCCE_ = aHPDADMGCCE_;
+        result.dGCNBNILFCP_ = dGCNBNILFCP_;
+        result.pEAKCBGCNMG_ = pEAKCBGCNMG_;
         result.endTime_ = endTime_;
+        result.iBPEFBFLJMI_ = iBPEFBFLJMI_;
+        result.cACMILABBBL_ = cACMILABBBL_;
+        result.eJBFPCFHHAK_ = eJBFPCFHHAK_;
+        result.cLBHMIAPKGC_ = cLBHMIAPKGC_;
+        result.fAANLAPHJHA_ = fAANLAPHJHA_;
+        result.mDNBAOODMAH_ = mDNBAOODMAH_;
+        result.lOFBAGJAIFP_ = lOFBAGJAIFP_;
+        result.cLGLLLGLLLK_ = cLGLLLGLLLK_;
+        result.hHLDMLKDFHN_ = hHLDMLKDFHN_;
+        result.aPMDACPHCGN_ = aPMDACPHCGN_;
+        result.aOFPCFABBFC_ = aOFPCFABBFC_;
+        result.beginTime_ = beginTime_;
+        result.scheduleId_ = scheduleId_;
+        result.fLBPHECFNIP_ = fLBPHECFNIP_;
+        result.bLIIBKGABJC_ = bLIIBKGABJC_;
         onBuilt();
         return result;
       }
@@ -1924,33 +2236,55 @@ public final class GachaInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo other) {
         if (other == emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.getDefaultInstance()) return this;
-        if (!other.displayChronicle5ItemList_.isEmpty()) {
-          if (displayChronicle5ItemList_.isEmpty()) {
-            displayChronicle5ItemList_ = other.displayChronicle5ItemList_;
+        if (!other.getKFMACJANNLI().isEmpty()) {
+          kFMACJANNLI_ = other.kFMACJANNLI_;
+          onChanged();
+        }
+        if (!other.getCPDGOGIKHCB().isEmpty()) {
+          cPDGOGIKHCB_ = other.cPDGOGIKHCB_;
+          onChanged();
+        }
+        if (!other.cFFEKOOMKKJ_.isEmpty()) {
+          if (cFFEKOOMKKJ_.isEmpty()) {
+            cFFEKOOMKKJ_ = other.cFFEKOOMKKJ_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureDisplayChronicle5ItemListIsMutable();
-            displayChronicle5ItemList_.addAll(other.displayChronicle5ItemList_);
+            ensureCFFEKOOMKKJIsMutable();
+            cFFEKOOMKKJ_.addAll(other.cFFEKOOMKKJ_);
           }
           onChanged();
         }
-        if (!other.getTitleTextmap().isEmpty()) {
-          titleTextmap_ = other.titleTextmap_;
+        if (!other.getKMFPKMFADJL().isEmpty()) {
+          kMFPKMFADJL_ = other.kMFPKMFADJL_;
           onChanged();
         }
-        if (!other.getGachaProbUrl().isEmpty()) {
-          gachaProbUrl_ = other.gachaProbUrl_;
+        if (!other.getGDBNKBHKMLE().isEmpty()) {
+          gDBNKBHKMLE_ = other.gDBNKBHKMLE_;
           onChanged();
         }
-        if (!other.getGachaRecordUrlOversea().isEmpty()) {
-          gachaRecordUrlOversea_ = other.gachaRecordUrlOversea_;
+        if (!other.mBHBHFFGJFL_.isEmpty()) {
+          if (mBHBHFFGJFL_.isEmpty()) {
+            mBHBHFFGJFL_ = other.mBHBHFFGJFL_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureMBHBHFFGJFLIsMutable();
+            mBHBHFFGJFL_.addAll(other.mBHBHFFGJFL_);
+          }
+          onChanged();
+        }
+        if (!other.getDOPBHCCIHKL().isEmpty()) {
+          dOPBHCCIHKL_ = other.dOPBHCCIHKL_;
+          onChanged();
+        }
+        if (!other.getIDNLGKMFPHC().isEmpty()) {
+          iDNLGKMFPHC_ = other.iDNLGKMFPHC_;
           onChanged();
         }
         if (gachaUpInfoListBuilder_ == null) {
           if (!other.gachaUpInfoList_.isEmpty()) {
             if (gachaUpInfoList_.isEmpty()) {
               gachaUpInfoList_ = other.gachaUpInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureGachaUpInfoListIsMutable();
               gachaUpInfoList_.addAll(other.gachaUpInfoList_);
@@ -1963,7 +2297,7 @@ public final class GachaInfoOuterClass {
               gachaUpInfoListBuilder_.dispose();
               gachaUpInfoListBuilder_ = null;
               gachaUpInfoList_ = other.gachaUpInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
               gachaUpInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getGachaUpInfoListFieldBuilder() : null;
@@ -1972,92 +2306,70 @@ public final class GachaInfoOuterClass {
             }
           }
         }
-        if (!other.displayUp4ItemList_.isEmpty()) {
-          if (displayUp4ItemList_.isEmpty()) {
-            displayUp4ItemList_ = other.displayUp4ItemList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureDisplayUp4ItemListIsMutable();
-            displayUp4ItemList_.addAll(other.displayUp4ItemList_);
-          }
-          onChanged();
-        }
-        if (!other.getGachaRecordUrl().isEmpty()) {
-          gachaRecordUrl_ = other.gachaRecordUrl_;
-          onChanged();
-        }
-        if (!other.getGachaProbUrlOversea().isEmpty()) {
-          gachaProbUrlOversea_ = other.gachaProbUrlOversea_;
-          onChanged();
-        }
-        if (!other.getGachaPrefabPath().isEmpty()) {
-          gachaPrefabPath_ = other.gachaPrefabPath_;
-          onChanged();
-        }
-        if (!other.getGachaPreviewPrefabPath().isEmpty()) {
-          gachaPreviewPrefabPath_ = other.gachaPreviewPrefabPath_;
-          onChanged();
-        }
-        if (!other.displayUp5ItemList_.isEmpty()) {
-          if (displayUp5ItemList_.isEmpty()) {
-            displayUp5ItemList_ = other.displayUp5ItemList_;
+        if (!other.aHPDADMGCCE_.isEmpty()) {
+          if (aHPDADMGCCE_.isEmpty()) {
+            aHPDADMGCCE_ = other.aHPDADMGCCE_;
             bitField0_ = (bitField0_ & ~0x00000008);
           } else {
-            ensureDisplayUp5ItemListIsMutable();
-            displayUp5ItemList_.addAll(other.displayUp5ItemList_);
+            ensureAHPDADMGCCEIsMutable();
+            aHPDADMGCCE_.addAll(other.aHPDADMGCCE_);
           }
           onChanged();
         }
-        if (other.getTenCostItemId() != 0) {
-          setTenCostItemId(other.getTenCostItemId());
+        if (!other.getDGCNBNILFCP().isEmpty()) {
+          dGCNBNILFCP_ = other.dGCNBNILFCP_;
+          onChanged();
         }
-        if (other.getTenCostItemNum() != 0) {
-          setTenCostItemNum(other.getTenCostItemNum());
+        if (other.getPEAKCBGCNMG() != 0) {
+          setPEAKCBGCNMG(other.getPEAKCBGCNMG());
         }
-        if (other.getWishProgress() != 0) {
-          setWishProgress(other.getWishProgress());
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
+        }
+        if (other.getIBPEFBFLJMI() != 0) {
+          setIBPEFBFLJMI(other.getIBPEFBFLJMI());
+        }
+        if (other.getCACMILABBBL() != 0) {
+          setCACMILABBBL(other.getCACMILABBBL());
+        }
+        if (other.getEJBFPCFHHAK() != false) {
+          setEJBFPCFHHAK(other.getEJBFPCFHHAK());
+        }
+        if (other.getCLBHMIAPKGC() != false) {
+          setCLBHMIAPKGC(other.getCLBHMIAPKGC());
+        }
+        if (other.getFAANLAPHJHA() != 0) {
+          setFAANLAPHJHA(other.getFAANLAPHJHA());
+        }
+        if (other.getMDNBAOODMAH() != 0) {
+          setMDNBAOODMAH(other.getMDNBAOODMAH());
+        }
+        if (other.getLOFBAGJAIFP() != 0) {
+          setLOFBAGJAIFP(other.getLOFBAGJAIFP());
+        }
+        if (other.getCLGLLLGLLLK() != 0) {
+          setCLGLLLGLLLK(other.getCLGLLLGLLLK());
+        }
+        if (other.getHHLDMLKDFHN() != 0) {
+          setHHLDMLKDFHN(other.getHHLDMLKDFHN());
+        }
+        if (other.getAPMDACPHCGN() != 0) {
+          setAPMDACPHCGN(other.getAPMDACPHCGN());
+        }
+        if (other.getAOFPCFABBFC() != 0) {
+          setAOFPCFABBFC(other.getAOFPCFABBFC());
         }
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
         }
-        if (other.getGachaType() != 0) {
-          setGachaType(other.getGachaType());
-        }
-        if (other.getLeftGachaTimes() != 0) {
-          setLeftGachaTimes(other.getLeftGachaTimes());
-        }
-        if (other.getWishMaxProgress() != 0) {
-          setWishMaxProgress(other.getWishMaxProgress());
-        }
-        if (other.getCurScheduleDailyGachaTimes() != 0) {
-          setCurScheduleDailyGachaTimes(other.getCurScheduleDailyGachaTimes());
-        }
-        if (other.getIsNewWish() != false) {
-          setIsNewWish(other.getIsNewWish());
-        }
-        if (other.getNewBool() != false) {
-          setNewBool(other.getNewBool());
-        }
-        if (other.getGachaTimesLimit() != 0) {
-          setGachaTimesLimit(other.getGachaTimesLimit());
-        }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
-        if (other.getCostItemId() != 0) {
-          setCostItemId(other.getCostItemId());
+        if (other.getFLBPHECFNIP() != 0) {
+          setFLBPHECFNIP(other.getFLBPHECFNIP());
         }
-        if (other.getCostItemNum() != 0) {
-          setCostItemNum(other.getCostItemNum());
-        }
-        if (other.getGachaSortId() != 0) {
-          setGachaSortId(other.getGachaSortId());
-        }
-        if (other.getWishItemId() != 0) {
-          setWishItemId(other.getWishItemId());
-        }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
+        if (other.getBLIIBKGABJC() != 0) {
+          setBLIIBKGABJC(other.getBLIIBKGABJC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2089,309 +2401,792 @@ public final class GachaInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList displayChronicle5ItemList_ = emptyIntList();
-      private void ensureDisplayChronicle5ItemListIsMutable() {
+      private java.lang.Object kFMACJANNLI_ = "";
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string KFMACJANNLI = 16;</code>
+       * @return The kFMACJANNLI.
+       */
+      public java.lang.String getKFMACJANNLI() {
+        java.lang.Object ref = kFMACJANNLI_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          kFMACJANNLI_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string KFMACJANNLI = 16;</code>
+       * @return The bytes for kFMACJANNLI.
+       */
+      public com.google.protobuf.ByteString
+          getKFMACJANNLIBytes() {
+        java.lang.Object ref = kFMACJANNLI_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          kFMACJANNLI_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string KFMACJANNLI = 16;</code>
+       * @param value The kFMACJANNLI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKFMACJANNLI(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        kFMACJANNLI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string KFMACJANNLI = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKFMACJANNLI() {
+        
+        kFMACJANNLI_ = getDefaultInstance().getKFMACJANNLI();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string KFMACJANNLI = 16;</code>
+       * @param value The bytes for kFMACJANNLI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKFMACJANNLIBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        kFMACJANNLI_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object cPDGOGIKHCB_ = "";
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string CPDGOGIKHCB = 2;</code>
+       * @return The cPDGOGIKHCB.
+       */
+      public java.lang.String getCPDGOGIKHCB() {
+        java.lang.Object ref = cPDGOGIKHCB_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          cPDGOGIKHCB_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string CPDGOGIKHCB = 2;</code>
+       * @return The bytes for cPDGOGIKHCB.
+       */
+      public com.google.protobuf.ByteString
+          getCPDGOGIKHCBBytes() {
+        java.lang.Object ref = cPDGOGIKHCB_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          cPDGOGIKHCB_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string CPDGOGIKHCB = 2;</code>
+       * @param value The cPDGOGIKHCB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCPDGOGIKHCB(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        cPDGOGIKHCB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string CPDGOGIKHCB = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCPDGOGIKHCB() {
+        
+        cPDGOGIKHCB_ = getDefaultInstance().getCPDGOGIKHCB();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string CPDGOGIKHCB = 2;</code>
+       * @param value The bytes for cPDGOGIKHCB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCPDGOGIKHCBBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        cPDGOGIKHCB_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList cFFEKOOMKKJ_ = emptyIntList();
+      private void ensureCFFEKOOMKKJIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          displayChronicle5ItemList_ = mutableCopy(displayChronicle5ItemList_);
+          cFFEKOOMKKJ_ = mutableCopy(cFFEKOOMKKJ_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-       * @return A list containing the displayChronicle5ItemList.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+       * @return A list containing the cFFEKOOMKKJ.
        */
       public java.util.List<java.lang.Integer>
-          getDisplayChronicle5ItemListList() {
+          getCFFEKOOMKKJList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(displayChronicle5ItemList_) : displayChronicle5ItemList_;
+                 java.util.Collections.unmodifiableList(cFFEKOOMKKJ_) : cFFEKOOMKKJ_;
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-       * @return The count of displayChronicle5ItemList.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+       * @return The count of cFFEKOOMKKJ.
        */
-      public int getDisplayChronicle5ItemListCount() {
-        return displayChronicle5ItemList_.size();
+      public int getCFFEKOOMKKJCount() {
+        return cFFEKOOMKKJ_.size();
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
        * @param index The index of the element to return.
-       * @return The displayChronicle5ItemList at the given index.
+       * @return The cFFEKOOMKKJ at the given index.
        */
-      public int getDisplayChronicle5ItemList(int index) {
-        return displayChronicle5ItemList_.getInt(index);
+      public int getCFFEKOOMKKJ(int index) {
+        return cFFEKOOMKKJ_.getInt(index);
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
        * @param index The index to set the value at.
-       * @param value The displayChronicle5ItemList to set.
+       * @param value The cFFEKOOMKKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setDisplayChronicle5ItemList(
+      public Builder setCFFEKOOMKKJ(
           int index, int value) {
-        ensureDisplayChronicle5ItemListIsMutable();
-        displayChronicle5ItemList_.setInt(index, value);
+        ensureCFFEKOOMKKJIsMutable();
+        cFFEKOOMKKJ_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-       * @param value The displayChronicle5ItemList to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+       * @param value The cFFEKOOMKKJ to add.
        * @return This builder for chaining.
        */
-      public Builder addDisplayChronicle5ItemList(int value) {
-        ensureDisplayChronicle5ItemListIsMutable();
-        displayChronicle5ItemList_.addInt(value);
+      public Builder addCFFEKOOMKKJ(int value) {
+        ensureCFFEKOOMKKJIsMutable();
+        cFFEKOOMKKJ_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
-       * @param values The displayChronicle5ItemList to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
+       * @param values The cFFEKOOMKKJ to add.
        * @return This builder for chaining.
        */
-      public Builder addAllDisplayChronicle5ItemList(
+      public Builder addAllCFFEKOOMKKJ(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDisplayChronicle5ItemListIsMutable();
+        ensureCFFEKOOMKKJIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, displayChronicle5ItemList_);
+            values, cFFEKOOMKKJ_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_chronicle_5_item_list = 432;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 CFFEKOOMKKJ = 1463;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDisplayChronicle5ItemList() {
-        displayChronicle5ItemList_ = emptyIntList();
+      public Builder clearCFFEKOOMKKJ() {
+        cFFEKOOMKKJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private java.lang.Object titleTextmap_ = "";
+      private java.lang.Object kMFPKMFADJL_ = "";
       /**
-       * <code>string title_textmap = 659;</code>
-       * @return The titleTextmap.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string KMFPKMFADJL = 1168;</code>
+       * @return The kMFPKMFADJL.
        */
-      public java.lang.String getTitleTextmap() {
-        java.lang.Object ref = titleTextmap_;
+      public java.lang.String getKMFPKMFADJL() {
+        java.lang.Object ref = kMFPKMFADJL_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          titleTextmap_ = s;
+          kMFPKMFADJL_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string title_textmap = 659;</code>
-       * @return The bytes for titleTextmap.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string KMFPKMFADJL = 1168;</code>
+       * @return The bytes for kMFPKMFADJL.
        */
       public com.google.protobuf.ByteString
-          getTitleTextmapBytes() {
-        java.lang.Object ref = titleTextmap_;
+          getKMFPKMFADJLBytes() {
+        java.lang.Object ref = kMFPKMFADJL_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          titleTextmap_ = b;
+          kMFPKMFADJL_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string title_textmap = 659;</code>
-       * @param value The titleTextmap to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string KMFPKMFADJL = 1168;</code>
+       * @param value The kMFPKMFADJL to set.
        * @return This builder for chaining.
        */
-      public Builder setTitleTextmap(
+      public Builder setKMFPKMFADJL(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        titleTextmap_ = value;
+        kMFPKMFADJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string title_textmap = 659;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string KMFPKMFADJL = 1168;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTitleTextmap() {
+      public Builder clearKMFPKMFADJL() {
         
-        titleTextmap_ = getDefaultInstance().getTitleTextmap();
+        kMFPKMFADJL_ = getDefaultInstance().getKMFPKMFADJL();
         onChanged();
         return this;
       }
       /**
-       * <code>string title_textmap = 659;</code>
-       * @param value The bytes for titleTextmap to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>string KMFPKMFADJL = 1168;</code>
+       * @param value The bytes for kMFPKMFADJL to set.
        * @return This builder for chaining.
        */
-      public Builder setTitleTextmapBytes(
+      public Builder setKMFPKMFADJLBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        titleTextmap_ = value;
+        kMFPKMFADJL_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object gachaProbUrl_ = "";
+      private java.lang.Object gDBNKBHKMLE_ = "";
       /**
-       * <code>string gacha_prob_url = 11;</code>
-       * @return The gachaProbUrl.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string GDBNKBHKMLE = 840;</code>
+       * @return The gDBNKBHKMLE.
        */
-      public java.lang.String getGachaProbUrl() {
-        java.lang.Object ref = gachaProbUrl_;
+      public java.lang.String getGDBNKBHKMLE() {
+        java.lang.Object ref = gDBNKBHKMLE_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          gachaProbUrl_ = s;
+          gDBNKBHKMLE_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string gacha_prob_url = 11;</code>
-       * @return The bytes for gachaProbUrl.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string GDBNKBHKMLE = 840;</code>
+       * @return The bytes for gDBNKBHKMLE.
        */
       public com.google.protobuf.ByteString
-          getGachaProbUrlBytes() {
-        java.lang.Object ref = gachaProbUrl_;
+          getGDBNKBHKMLEBytes() {
+        java.lang.Object ref = gDBNKBHKMLE_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          gachaProbUrl_ = b;
+          gDBNKBHKMLE_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string gacha_prob_url = 11;</code>
-       * @param value The gachaProbUrl to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string GDBNKBHKMLE = 840;</code>
+       * @param value The gDBNKBHKMLE to set.
        * @return This builder for chaining.
        */
-      public Builder setGachaProbUrl(
+      public Builder setGDBNKBHKMLE(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        gachaProbUrl_ = value;
+        gDBNKBHKMLE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string gacha_prob_url = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string GDBNKBHKMLE = 840;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGachaProbUrl() {
+      public Builder clearGDBNKBHKMLE() {
         
-        gachaProbUrl_ = getDefaultInstance().getGachaProbUrl();
+        gDBNKBHKMLE_ = getDefaultInstance().getGDBNKBHKMLE();
         onChanged();
         return this;
       }
       /**
-       * <code>string gacha_prob_url = 11;</code>
-       * @param value The bytes for gachaProbUrl to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>string GDBNKBHKMLE = 840;</code>
+       * @param value The bytes for gDBNKBHKMLE to set.
        * @return This builder for chaining.
        */
-      public Builder setGachaProbUrlBytes(
+      public Builder setGDBNKBHKMLEBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        gachaProbUrl_ = value;
+        gDBNKBHKMLE_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object gachaRecordUrlOversea_ = "";
+      private com.google.protobuf.Internal.IntList mBHBHFFGJFL_ = emptyIntList();
+      private void ensureMBHBHFFGJFLIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          mBHBHFFGJFL_ = mutableCopy(mBHBHFFGJFL_);
+          bitField0_ |= 0x00000002;
+         }
+      }
       /**
-       * <code>string gacha_record_url_oversea = 1219;</code>
-       * @return The gachaRecordUrlOversea.
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @return A list containing the mBHBHFFGJFL.
        */
-      public java.lang.String getGachaRecordUrlOversea() {
-        java.lang.Object ref = gachaRecordUrlOversea_;
+      public java.util.List<java.lang.Integer>
+          getMBHBHFFGJFLList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(mBHBHFFGJFL_) : mBHBHFFGJFL_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @return The count of mBHBHFFGJFL.
+       */
+      public int getMBHBHFFGJFLCount() {
+        return mBHBHFFGJFL_.size();
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @param index The index of the element to return.
+       * @return The mBHBHFFGJFL at the given index.
+       */
+      public int getMBHBHFFGJFL(int index) {
+        return mBHBHFFGJFL_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @param index The index to set the value at.
+       * @param value The mBHBHFFGJFL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMBHBHFFGJFL(
+          int index, int value) {
+        ensureMBHBHFFGJFLIsMutable();
+        mBHBHFFGJFL_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @param value The mBHBHFFGJFL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addMBHBHFFGJFL(int value) {
+        ensureMBHBHFFGJFLIsMutable();
+        mBHBHFFGJFL_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @param values The mBHBHFFGJFL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMBHBHFFGJFL(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMBHBHFFGJFLIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, mBHBHFFGJFL_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>repeated uint32 MBHBHFFGJFL = 1245;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMBHBHFFGJFL() {
+        mBHBHFFGJFL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object dOPBHCCIHKL_ = "";
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>string DOPBHCCIHKL = 6;</code>
+       * @return The dOPBHCCIHKL.
+       */
+      public java.lang.String getDOPBHCCIHKL() {
+        java.lang.Object ref = dOPBHCCIHKL_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          gachaRecordUrlOversea_ = s;
+          dOPBHCCIHKL_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string gacha_record_url_oversea = 1219;</code>
-       * @return The bytes for gachaRecordUrlOversea.
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>string DOPBHCCIHKL = 6;</code>
+       * @return The bytes for dOPBHCCIHKL.
        */
       public com.google.protobuf.ByteString
-          getGachaRecordUrlOverseaBytes() {
-        java.lang.Object ref = gachaRecordUrlOversea_;
+          getDOPBHCCIHKLBytes() {
+        java.lang.Object ref = dOPBHCCIHKL_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          gachaRecordUrlOversea_ = b;
+          dOPBHCCIHKL_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string gacha_record_url_oversea = 1219;</code>
-       * @param value The gachaRecordUrlOversea to set.
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>string DOPBHCCIHKL = 6;</code>
+       * @param value The dOPBHCCIHKL to set.
        * @return This builder for chaining.
        */
-      public Builder setGachaRecordUrlOversea(
+      public Builder setDOPBHCCIHKL(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        gachaRecordUrlOversea_ = value;
+        dOPBHCCIHKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string gacha_record_url_oversea = 1219;</code>
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>string DOPBHCCIHKL = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGachaRecordUrlOversea() {
+      public Builder clearDOPBHCCIHKL() {
         
-        gachaRecordUrlOversea_ = getDefaultInstance().getGachaRecordUrlOversea();
+        dOPBHCCIHKL_ = getDefaultInstance().getDOPBHCCIHKL();
         onChanged();
         return this;
       }
       /**
-       * <code>string gacha_record_url_oversea = 1219;</code>
-       * @param value The bytes for gachaRecordUrlOversea to set.
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>string DOPBHCCIHKL = 6;</code>
+       * @param value The bytes for dOPBHCCIHKL to set.
        * @return This builder for chaining.
        */
-      public Builder setGachaRecordUrlOverseaBytes(
+      public Builder setDOPBHCCIHKLBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        gachaRecordUrlOversea_ = value;
+        dOPBHCCIHKL_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object iDNLGKMFPHC_ = "";
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>string IDNLGKMFPHC = 7;</code>
+       * @return The iDNLGKMFPHC.
+       */
+      public java.lang.String getIDNLGKMFPHC() {
+        java.lang.Object ref = iDNLGKMFPHC_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          iDNLGKMFPHC_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>string IDNLGKMFPHC = 7;</code>
+       * @return The bytes for iDNLGKMFPHC.
+       */
+      public com.google.protobuf.ByteString
+          getIDNLGKMFPHCBytes() {
+        java.lang.Object ref = iDNLGKMFPHC_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          iDNLGKMFPHC_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>string IDNLGKMFPHC = 7;</code>
+       * @param value The iDNLGKMFPHC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIDNLGKMFPHC(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        iDNLGKMFPHC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>string IDNLGKMFPHC = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIDNLGKMFPHC() {
+        
+        iDNLGKMFPHC_ = getDefaultInstance().getIDNLGKMFPHC();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>string IDNLGKMFPHC = 7;</code>
+       * @param value The bytes for iDNLGKMFPHC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIDNLGKMFPHCBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        iDNLGKMFPHC_ = value;
         onChanged();
         return this;
       }
@@ -2399,9 +3194,9 @@ public final class GachaInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> gachaUpInfoList_ =
         java.util.Collections.emptyList();
       private void ensureGachaUpInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           gachaUpInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo>(gachaUpInfoList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -2409,7 +3204,11 @@ public final class GachaInfoOuterClass {
           emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder> gachaUpInfoListBuilder_;
 
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> getGachaUpInfoListList() {
         if (gachaUpInfoListBuilder_ == null) {
@@ -2419,7 +3218,11 @@ public final class GachaInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public int getGachaUpInfoListCount() {
         if (gachaUpInfoListBuilder_ == null) {
@@ -2429,7 +3232,11 @@ public final class GachaInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo getGachaUpInfoList(int index) {
         if (gachaUpInfoListBuilder_ == null) {
@@ -2439,7 +3246,11 @@ public final class GachaInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder setGachaUpInfoList(
           int index, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo value) {
@@ -2456,7 +3267,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder setGachaUpInfoList(
           int index, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder builderForValue) {
@@ -2470,7 +3285,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder addGachaUpInfoList(emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo value) {
         if (gachaUpInfoListBuilder_ == null) {
@@ -2486,7 +3305,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder addGachaUpInfoList(
           int index, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo value) {
@@ -2503,7 +3326,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder addGachaUpInfoList(
           emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder builderForValue) {
@@ -2517,7 +3344,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder addGachaUpInfoList(
           int index, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder builderForValue) {
@@ -2531,7 +3362,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder addAllGachaUpInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo> values) {
@@ -2546,12 +3381,16 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder clearGachaUpInfoList() {
         if (gachaUpInfoListBuilder_ == null) {
           gachaUpInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           gachaUpInfoListBuilder_.clear();
@@ -2559,7 +3398,11 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public Builder removeGachaUpInfoList(int index) {
         if (gachaUpInfoListBuilder_ == null) {
@@ -2572,14 +3415,22 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder getGachaUpInfoListBuilder(
           int index) {
         return getGachaUpInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder getGachaUpInfoListOrBuilder(
           int index) {
@@ -2589,7 +3440,11 @@ public final class GachaInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder> 
            getGachaUpInfoListOrBuilderList() {
@@ -2600,14 +3455,22 @@ public final class GachaInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder addGachaUpInfoListBuilder() {
         return getGachaUpInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder addGachaUpInfoListBuilder(
           int index) {
@@ -2615,7 +3478,11 @@ public final class GachaInfoOuterClass {
             index, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaUpInfo gacha_up_info_list = 940;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>repeated .GachaUpInfo gacha_up_info_list = 1754;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder> 
            getGachaUpInfoListBuilderList() {
@@ -2628,7 +3495,7 @@ public final class GachaInfoOuterClass {
           gachaUpInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfoOrBuilder>(
                   gachaUpInfoList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           gachaUpInfoList_ = null;
@@ -2636,1039 +3503,259 @@ public final class GachaInfoOuterClass {
         return gachaUpInfoListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList displayUp4ItemList_ = emptyIntList();
-      private void ensureDisplayUp4ItemListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          displayUp4ItemList_ = mutableCopy(displayUp4ItemList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @return A list containing the displayUp4ItemList.
-       */
-      public java.util.List<java.lang.Integer>
-          getDisplayUp4ItemListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(displayUp4ItemList_) : displayUp4ItemList_;
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @return The count of displayUp4ItemList.
-       */
-      public int getDisplayUp4ItemListCount() {
-        return displayUp4ItemList_.size();
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @param index The index of the element to return.
-       * @return The displayUp4ItemList at the given index.
-       */
-      public int getDisplayUp4ItemList(int index) {
-        return displayUp4ItemList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @param index The index to set the value at.
-       * @param value The displayUp4ItemList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDisplayUp4ItemList(
-          int index, int value) {
-        ensureDisplayUp4ItemListIsMutable();
-        displayUp4ItemList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @param value The displayUp4ItemList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDisplayUp4ItemList(int value) {
-        ensureDisplayUp4ItemListIsMutable();
-        displayUp4ItemList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @param values The displayUp4ItemList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDisplayUp4ItemList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDisplayUp4ItemListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, displayUp4ItemList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 display_up4_item_list = 1011;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDisplayUp4ItemList() {
-        displayUp4ItemList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object gachaRecordUrl_ = "";
-      /**
-       * <code>string gacha_record_url = 1411;</code>
-       * @return The gachaRecordUrl.
-       */
-      public java.lang.String getGachaRecordUrl() {
-        java.lang.Object ref = gachaRecordUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gachaRecordUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string gacha_record_url = 1411;</code>
-       * @return The bytes for gachaRecordUrl.
-       */
-      public com.google.protobuf.ByteString
-          getGachaRecordUrlBytes() {
-        java.lang.Object ref = gachaRecordUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gachaRecordUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gacha_record_url = 1411;</code>
-       * @param value The gachaRecordUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaRecordUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gachaRecordUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_record_url = 1411;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaRecordUrl() {
-        
-        gachaRecordUrl_ = getDefaultInstance().getGachaRecordUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_record_url = 1411;</code>
-       * @param value The bytes for gachaRecordUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaRecordUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        gachaRecordUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object gachaProbUrlOversea_ = "";
-      /**
-       * <code>string gacha_prob_url_oversea = 13;</code>
-       * @return The gachaProbUrlOversea.
-       */
-      public java.lang.String getGachaProbUrlOversea() {
-        java.lang.Object ref = gachaProbUrlOversea_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gachaProbUrlOversea_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string gacha_prob_url_oversea = 13;</code>
-       * @return The bytes for gachaProbUrlOversea.
-       */
-      public com.google.protobuf.ByteString
-          getGachaProbUrlOverseaBytes() {
-        java.lang.Object ref = gachaProbUrlOversea_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gachaProbUrlOversea_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gacha_prob_url_oversea = 13;</code>
-       * @param value The gachaProbUrlOversea to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaProbUrlOversea(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gachaProbUrlOversea_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_prob_url_oversea = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaProbUrlOversea() {
-        
-        gachaProbUrlOversea_ = getDefaultInstance().getGachaProbUrlOversea();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_prob_url_oversea = 13;</code>
-       * @param value The bytes for gachaProbUrlOversea to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaProbUrlOverseaBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        gachaProbUrlOversea_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object gachaPrefabPath_ = "";
-      /**
-       * <code>string gacha_prefab_path = 1;</code>
-       * @return The gachaPrefabPath.
-       */
-      public java.lang.String getGachaPrefabPath() {
-        java.lang.Object ref = gachaPrefabPath_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gachaPrefabPath_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string gacha_prefab_path = 1;</code>
-       * @return The bytes for gachaPrefabPath.
-       */
-      public com.google.protobuf.ByteString
-          getGachaPrefabPathBytes() {
-        java.lang.Object ref = gachaPrefabPath_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gachaPrefabPath_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gacha_prefab_path = 1;</code>
-       * @param value The gachaPrefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaPrefabPath(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gachaPrefabPath_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_prefab_path = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaPrefabPath() {
-        
-        gachaPrefabPath_ = getDefaultInstance().getGachaPrefabPath();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_prefab_path = 1;</code>
-       * @param value The bytes for gachaPrefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaPrefabPathBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        gachaPrefabPath_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object gachaPreviewPrefabPath_ = "";
-      /**
-       * <code>string gacha_preview_prefab_path = 8;</code>
-       * @return The gachaPreviewPrefabPath.
-       */
-      public java.lang.String getGachaPreviewPrefabPath() {
-        java.lang.Object ref = gachaPreviewPrefabPath_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gachaPreviewPrefabPath_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string gacha_preview_prefab_path = 8;</code>
-       * @return The bytes for gachaPreviewPrefabPath.
-       */
-      public com.google.protobuf.ByteString
-          getGachaPreviewPrefabPathBytes() {
-        java.lang.Object ref = gachaPreviewPrefabPath_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gachaPreviewPrefabPath_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gacha_preview_prefab_path = 8;</code>
-       * @param value The gachaPreviewPrefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaPreviewPrefabPath(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gachaPreviewPrefabPath_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_preview_prefab_path = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaPreviewPrefabPath() {
-        
-        gachaPreviewPrefabPath_ = getDefaultInstance().getGachaPreviewPrefabPath();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gacha_preview_prefab_path = 8;</code>
-       * @param value The bytes for gachaPreviewPrefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaPreviewPrefabPathBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        gachaPreviewPrefabPath_ = value;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList displayUp5ItemList_ = emptyIntList();
-      private void ensureDisplayUp5ItemListIsMutable() {
+      private com.google.protobuf.Internal.IntList aHPDADMGCCE_ = emptyIntList();
+      private void ensureAHPDADMGCCEIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          displayUp5ItemList_ = mutableCopy(displayUp5ItemList_);
+          aHPDADMGCCE_ = mutableCopy(aHPDADMGCCE_);
           bitField0_ |= 0x00000008;
          }
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
-       * @return A list containing the displayUp5ItemList.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+       * @return A list containing the aHPDADMGCCE.
        */
       public java.util.List<java.lang.Integer>
-          getDisplayUp5ItemListList() {
+          getAHPDADMGCCEList() {
         return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(displayUp5ItemList_) : displayUp5ItemList_;
+                 java.util.Collections.unmodifiableList(aHPDADMGCCE_) : aHPDADMGCCE_;
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
-       * @return The count of displayUp5ItemList.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+       * @return The count of aHPDADMGCCE.
        */
-      public int getDisplayUp5ItemListCount() {
-        return displayUp5ItemList_.size();
+      public int getAHPDADMGCCECount() {
+        return aHPDADMGCCE_.size();
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
        * @param index The index of the element to return.
-       * @return The displayUp5ItemList at the given index.
+       * @return The aHPDADMGCCE at the given index.
        */
-      public int getDisplayUp5ItemList(int index) {
-        return displayUp5ItemList_.getInt(index);
+      public int getAHPDADMGCCE(int index) {
+        return aHPDADMGCCE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
        * @param index The index to set the value at.
-       * @param value The displayUp5ItemList to set.
+       * @param value The aHPDADMGCCE to set.
        * @return This builder for chaining.
        */
-      public Builder setDisplayUp5ItemList(
+      public Builder setAHPDADMGCCE(
           int index, int value) {
-        ensureDisplayUp5ItemListIsMutable();
-        displayUp5ItemList_.setInt(index, value);
+        ensureAHPDADMGCCEIsMutable();
+        aHPDADMGCCE_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
-       * @param value The displayUp5ItemList to add.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+       * @param value The aHPDADMGCCE to add.
        * @return This builder for chaining.
        */
-      public Builder addDisplayUp5ItemList(int value) {
-        ensureDisplayUp5ItemListIsMutable();
-        displayUp5ItemList_.addInt(value);
+      public Builder addAHPDADMGCCE(int value) {
+        ensureAHPDADMGCCEIsMutable();
+        aHPDADMGCCE_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
-       * @param values The displayUp5ItemList to add.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
+       * @param values The aHPDADMGCCE to add.
        * @return This builder for chaining.
        */
-      public Builder addAllDisplayUp5ItemList(
+      public Builder addAllAHPDADMGCCE(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDisplayUp5ItemListIsMutable();
+        ensureAHPDADMGCCEIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, displayUp5ItemList_);
+            values, aHPDADMGCCE_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 display_up5_item_list = 625;</code>
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>repeated uint32 AHPDADMGCCE = 621;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDisplayUp5ItemList() {
-        displayUp5ItemList_ = emptyIntList();
+      public Builder clearAHPDADMGCCE() {
+        aHPDADMGCCE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
 
-      private int tenCostItemId_ ;
+      private java.lang.Object dGCNBNILFCP_ = "";
       /**
-       * <code>uint32 ten_cost_item_id = 6;</code>
-       * @return The tenCostItemId.
+       * <pre>
+       * offset: 112
+       * </pre>
+       *
+       * <code>string DGCNBNILFCP = 1340;</code>
+       * @return The dGCNBNILFCP.
        */
-      @java.lang.Override
-      public int getTenCostItemId() {
-        return tenCostItemId_;
+      public java.lang.String getDGCNBNILFCP() {
+        java.lang.Object ref = dGCNBNILFCP_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          dGCNBNILFCP_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 ten_cost_item_id = 6;</code>
-       * @param value The tenCostItemId to set.
+       * <pre>
+       * offset: 112
+       * </pre>
+       *
+       * <code>string DGCNBNILFCP = 1340;</code>
+       * @return The bytes for dGCNBNILFCP.
+       */
+      public com.google.protobuf.ByteString
+          getDGCNBNILFCPBytes() {
+        java.lang.Object ref = dGCNBNILFCP_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dGCNBNILFCP_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 112
+       * </pre>
+       *
+       * <code>string DGCNBNILFCP = 1340;</code>
+       * @param value The dGCNBNILFCP to set.
        * @return This builder for chaining.
        */
-      public Builder setTenCostItemId(int value) {
-        
-        tenCostItemId_ = value;
+      public Builder setDGCNBNILFCP(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        dGCNBNILFCP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ten_cost_item_id = 6;</code>
+       * <pre>
+       * offset: 112
+       * </pre>
+       *
+       * <code>string DGCNBNILFCP = 1340;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTenCostItemId() {
+      public Builder clearDGCNBNILFCP() {
         
-        tenCostItemId_ = 0;
+        dGCNBNILFCP_ = getDefaultInstance().getDGCNBNILFCP();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 112
+       * </pre>
+       *
+       * <code>string DGCNBNILFCP = 1340;</code>
+       * @param value The bytes for dGCNBNILFCP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDGCNBNILFCPBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        dGCNBNILFCP_ = value;
         onChanged();
         return this;
       }
 
-      private int tenCostItemNum_ ;
+      private int pEAKCBGCNMG_ ;
       /**
-       * <code>uint32 ten_cost_item_num = 3;</code>
-       * @return The tenCostItemNum.
+       * <pre>
+       * offset: 120
+       * </pre>
+       *
+       * <code>uint32 PEAKCBGCNMG = 444;</code>
+       * @return The pEAKCBGCNMG.
        */
       @java.lang.Override
-      public int getTenCostItemNum() {
-        return tenCostItemNum_;
-      }
-      /**
-       * <code>uint32 ten_cost_item_num = 3;</code>
-       * @param value The tenCostItemNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTenCostItemNum(int value) {
-        
-        tenCostItemNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ten_cost_item_num = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTenCostItemNum() {
-        
-        tenCostItemNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int wishProgress_ ;
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_progress = 532;</code>
-       * @return The wishProgress.
-       */
-      @java.lang.Override
-      public int getWishProgress() {
-        return wishProgress_;
+      public int getPEAKCBGCNMG() {
+        return pEAKCBGCNMG_;
       }
       /**
        * <pre>
-       * fake
+       * offset: 120
        * </pre>
        *
-       * <code>uint32 wish_progress = 532;</code>
-       * @param value The wishProgress to set.
+       * <code>uint32 PEAKCBGCNMG = 444;</code>
+       * @param value The pEAKCBGCNMG to set.
        * @return This builder for chaining.
        */
-      public Builder setWishProgress(int value) {
+      public Builder setPEAKCBGCNMG(int value) {
         
-        wishProgress_ = value;
+        pEAKCBGCNMG_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * fake
+       * offset: 120
        * </pre>
        *
-       * <code>uint32 wish_progress = 532;</code>
+       * <code>uint32 PEAKCBGCNMG = 444;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWishProgress() {
+      public Builder clearPEAKCBGCNMG() {
         
-        wishProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int beginTime_ ;
-      /**
-       * <code>uint32 begin_time = 2;</code>
-       * @return The beginTime.
-       */
-      @java.lang.Override
-      public int getBeginTime() {
-        return beginTime_;
-      }
-      /**
-       * <code>uint32 begin_time = 2;</code>
-       * @param value The beginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeginTime(int value) {
-        
-        beginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 begin_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBeginTime() {
-        
-        beginTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gachaType_ ;
-      /**
-       * <code>uint32 gacha_type = 12;</code>
-       * @return The gachaType.
-       */
-      @java.lang.Override
-      public int getGachaType() {
-        return gachaType_;
-      }
-      /**
-       * <code>uint32 gacha_type = 12;</code>
-       * @param value The gachaType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaType(int value) {
-        
-        gachaType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gacha_type = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaType() {
-        
-        gachaType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int leftGachaTimes_ ;
-      /**
-       * <code>uint32 left_gacha_times = 5;</code>
-       * @return The leftGachaTimes.
-       */
-      @java.lang.Override
-      public int getLeftGachaTimes() {
-        return leftGachaTimes_;
-      }
-      /**
-       * <code>uint32 left_gacha_times = 5;</code>
-       * @param value The leftGachaTimes to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLeftGachaTimes(int value) {
-        
-        leftGachaTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 left_gacha_times = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLeftGachaTimes() {
-        
-        leftGachaTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int wishMaxProgress_ ;
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_max_progress = 1232;</code>
-       * @return The wishMaxProgress.
-       */
-      @java.lang.Override
-      public int getWishMaxProgress() {
-        return wishMaxProgress_;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_max_progress = 1232;</code>
-       * @param value The wishMaxProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWishMaxProgress(int value) {
-        
-        wishMaxProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_max_progress = 1232;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWishMaxProgress() {
-        
-        wishMaxProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int curScheduleDailyGachaTimes_ ;
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 cur_schedule_daily_gacha_times = 306;</code>
-       * @return The curScheduleDailyGachaTimes.
-       */
-      @java.lang.Override
-      public int getCurScheduleDailyGachaTimes() {
-        return curScheduleDailyGachaTimes_;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 cur_schedule_daily_gacha_times = 306;</code>
-       * @param value The curScheduleDailyGachaTimes to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurScheduleDailyGachaTimes(int value) {
-        
-        curScheduleDailyGachaTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 cur_schedule_daily_gacha_times = 306;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurScheduleDailyGachaTimes() {
-        
-        curScheduleDailyGachaTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewWish_ ;
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_new_wish = 418;</code>
-       * @return The isNewWish.
-       */
-      @java.lang.Override
-      public boolean getIsNewWish() {
-        return isNewWish_;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_new_wish = 418;</code>
-       * @param value The isNewWish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewWish(boolean value) {
-        
-        isNewWish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_new_wish = 418;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewWish() {
-        
-        isNewWish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean newBool_ ;
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool new_bool = 1665;</code>
-       * @return The newBool.
-       */
-      @java.lang.Override
-      public boolean getNewBool() {
-        return newBool_;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool new_bool = 1665;</code>
-       * @param value The newBool to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNewBool(boolean value) {
-        
-        newBool_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool new_bool = 1665;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNewBool() {
-        
-        newBool_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int gachaTimesLimit_ ;
-      /**
-       * <code>uint32 gacha_times_limit = 7;</code>
-       * @return The gachaTimesLimit.
-       */
-      @java.lang.Override
-      public int getGachaTimesLimit() {
-        return gachaTimesLimit_;
-      }
-      /**
-       * <code>uint32 gacha_times_limit = 7;</code>
-       * @param value The gachaTimesLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaTimesLimit(int value) {
-        
-        gachaTimesLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gacha_times_limit = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaTimesLimit() {
-        
-        gachaTimesLimit_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 14;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 14;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costItemId_ ;
-      /**
-       * <code>uint32 cost_item_id = 15;</code>
-       * @return The costItemId.
-       */
-      @java.lang.Override
-      public int getCostItemId() {
-        return costItemId_;
-      }
-      /**
-       * <code>uint32 cost_item_id = 15;</code>
-       * @param value The costItemId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostItemId(int value) {
-        
-        costItemId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_item_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostItemId() {
-        
-        costItemId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costItemNum_ ;
-      /**
-       * <code>uint32 cost_item_num = 9;</code>
-       * @return The costItemNum.
-       */
-      @java.lang.Override
-      public int getCostItemNum() {
-        return costItemNum_;
-      }
-      /**
-       * <code>uint32 cost_item_num = 9;</code>
-       * @param value The costItemNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostItemNum(int value) {
-        
-        costItemNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_item_num = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostItemNum() {
-        
-        costItemNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gachaSortId_ ;
-      /**
-       * <code>uint32 gacha_sort_id = 4;</code>
-       * @return The gachaSortId.
-       */
-      @java.lang.Override
-      public int getGachaSortId() {
-        return gachaSortId_;
-      }
-      /**
-       * <code>uint32 gacha_sort_id = 4;</code>
-       * @param value The gachaSortId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaSortId(int value) {
-        
-        gachaSortId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gacha_sort_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaSortId() {
-        
-        gachaSortId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int wishItemId_ ;
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_item_id = 43;</code>
-       * @return The wishItemId.
-       */
-      @java.lang.Override
-      public int getWishItemId() {
-        return wishItemId_;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_item_id = 43;</code>
-       * @param value The wishItemId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWishItemId(int value) {
-        
-        wishItemId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * fake
-       * </pre>
-       *
-       * <code>uint32 wish_item_id = 43;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWishItemId() {
-        
-        wishItemId_ = 0;
+        pEAKCBGCNMG_ = 0;
         onChanged();
         return this;
       }
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 124
+       * </pre>
+       *
+       * <code>uint32 end_time = 4;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -3676,7 +3763,11 @@ public final class GachaInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 124
+       * </pre>
+       *
+       * <code>uint32 end_time = 4;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -3687,12 +3778,661 @@ public final class GachaInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 124
+       * </pre>
+       *
+       * <code>uint32 end_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
         
         endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iBPEFBFLJMI_ ;
+      /**
+       * <pre>
+       * offset: 128
+       * </pre>
+       *
+       * <code>uint32 IBPEFBFLJMI = 3;</code>
+       * @return The iBPEFBFLJMI.
+       */
+      @java.lang.Override
+      public int getIBPEFBFLJMI() {
+        return iBPEFBFLJMI_;
+      }
+      /**
+       * <pre>
+       * offset: 128
+       * </pre>
+       *
+       * <code>uint32 IBPEFBFLJMI = 3;</code>
+       * @param value The iBPEFBFLJMI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIBPEFBFLJMI(int value) {
+        
+        iBPEFBFLJMI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 128
+       * </pre>
+       *
+       * <code>uint32 IBPEFBFLJMI = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIBPEFBFLJMI() {
+        
+        iBPEFBFLJMI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cACMILABBBL_ ;
+      /**
+       * <pre>
+       * offset: 132
+       * </pre>
+       *
+       * <code>uint32 CACMILABBBL = 12;</code>
+       * @return The cACMILABBBL.
+       */
+      @java.lang.Override
+      public int getCACMILABBBL() {
+        return cACMILABBBL_;
+      }
+      /**
+       * <pre>
+       * offset: 132
+       * </pre>
+       *
+       * <code>uint32 CACMILABBBL = 12;</code>
+       * @param value The cACMILABBBL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCACMILABBBL(int value) {
+        
+        cACMILABBBL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 132
+       * </pre>
+       *
+       * <code>uint32 CACMILABBBL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCACMILABBBL() {
+        
+        cACMILABBBL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean eJBFPCFHHAK_ ;
+      /**
+       * <pre>
+       * offset: 136
+       * </pre>
+       *
+       * <code>bool EJBFPCFHHAK = 172;</code>
+       * @return The eJBFPCFHHAK.
+       */
+      @java.lang.Override
+      public boolean getEJBFPCFHHAK() {
+        return eJBFPCFHHAK_;
+      }
+      /**
+       * <pre>
+       * offset: 136
+       * </pre>
+       *
+       * <code>bool EJBFPCFHHAK = 172;</code>
+       * @param value The eJBFPCFHHAK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEJBFPCFHHAK(boolean value) {
+        
+        eJBFPCFHHAK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 136
+       * </pre>
+       *
+       * <code>bool EJBFPCFHHAK = 172;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEJBFPCFHHAK() {
+        
+        eJBFPCFHHAK_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cLBHMIAPKGC_ ;
+      /**
+       * <pre>
+       * offset: 137
+       * </pre>
+       *
+       * <code>bool CLBHMIAPKGC = 1254;</code>
+       * @return The cLBHMIAPKGC.
+       */
+      @java.lang.Override
+      public boolean getCLBHMIAPKGC() {
+        return cLBHMIAPKGC_;
+      }
+      /**
+       * <pre>
+       * offset: 137
+       * </pre>
+       *
+       * <code>bool CLBHMIAPKGC = 1254;</code>
+       * @param value The cLBHMIAPKGC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCLBHMIAPKGC(boolean value) {
+        
+        cLBHMIAPKGC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 137
+       * </pre>
+       *
+       * <code>bool CLBHMIAPKGC = 1254;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCLBHMIAPKGC() {
+        
+        cLBHMIAPKGC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int fAANLAPHJHA_ ;
+      /**
+       * <pre>
+       * offset: 140
+       * </pre>
+       *
+       * <code>uint32 FAANLAPHJHA = 507;</code>
+       * @return The fAANLAPHJHA.
+       */
+      @java.lang.Override
+      public int getFAANLAPHJHA() {
+        return fAANLAPHJHA_;
+      }
+      /**
+       * <pre>
+       * offset: 140
+       * </pre>
+       *
+       * <code>uint32 FAANLAPHJHA = 507;</code>
+       * @param value The fAANLAPHJHA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFAANLAPHJHA(int value) {
+        
+        fAANLAPHJHA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 140
+       * </pre>
+       *
+       * <code>uint32 FAANLAPHJHA = 507;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFAANLAPHJHA() {
+        
+        fAANLAPHJHA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mDNBAOODMAH_ ;
+      /**
+       * <pre>
+       * offset: 144
+       * </pre>
+       *
+       * <code>uint32 MDNBAOODMAH = 5;</code>
+       * @return The mDNBAOODMAH.
+       */
+      @java.lang.Override
+      public int getMDNBAOODMAH() {
+        return mDNBAOODMAH_;
+      }
+      /**
+       * <pre>
+       * offset: 144
+       * </pre>
+       *
+       * <code>uint32 MDNBAOODMAH = 5;</code>
+       * @param value The mDNBAOODMAH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMDNBAOODMAH(int value) {
+        
+        mDNBAOODMAH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 144
+       * </pre>
+       *
+       * <code>uint32 MDNBAOODMAH = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMDNBAOODMAH() {
+        
+        mDNBAOODMAH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lOFBAGJAIFP_ ;
+      /**
+       * <pre>
+       * offset: 148
+       * </pre>
+       *
+       * <code>uint32 LOFBAGJAIFP = 14;</code>
+       * @return The lOFBAGJAIFP.
+       */
+      @java.lang.Override
+      public int getLOFBAGJAIFP() {
+        return lOFBAGJAIFP_;
+      }
+      /**
+       * <pre>
+       * offset: 148
+       * </pre>
+       *
+       * <code>uint32 LOFBAGJAIFP = 14;</code>
+       * @param value The lOFBAGJAIFP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOFBAGJAIFP(int value) {
+        
+        lOFBAGJAIFP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 148
+       * </pre>
+       *
+       * <code>uint32 LOFBAGJAIFP = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOFBAGJAIFP() {
+        
+        lOFBAGJAIFP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cLGLLLGLLLK_ ;
+      /**
+       * <pre>
+       * offset: 152
+       * </pre>
+       *
+       * <code>uint32 CLGLLLGLLLK = 15;</code>
+       * @return The cLGLLLGLLLK.
+       */
+      @java.lang.Override
+      public int getCLGLLLGLLLK() {
+        return cLGLLLGLLLK_;
+      }
+      /**
+       * <pre>
+       * offset: 152
+       * </pre>
+       *
+       * <code>uint32 CLGLLLGLLLK = 15;</code>
+       * @param value The cLGLLLGLLLK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCLGLLLGLLLK(int value) {
+        
+        cLGLLLGLLLK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 152
+       * </pre>
+       *
+       * <code>uint32 CLGLLLGLLLK = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCLGLLLGLLLK() {
+        
+        cLGLLLGLLLK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hHLDMLKDFHN_ ;
+      /**
+       * <pre>
+       * offset: 156
+       * </pre>
+       *
+       * <code>uint32 HHLDMLKDFHN = 10;</code>
+       * @return The hHLDMLKDFHN.
+       */
+      @java.lang.Override
+      public int getHHLDMLKDFHN() {
+        return hHLDMLKDFHN_;
+      }
+      /**
+       * <pre>
+       * offset: 156
+       * </pre>
+       *
+       * <code>uint32 HHLDMLKDFHN = 10;</code>
+       * @param value The hHLDMLKDFHN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHHLDMLKDFHN(int value) {
+        
+        hHLDMLKDFHN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 156
+       * </pre>
+       *
+       * <code>uint32 HHLDMLKDFHN = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHHLDMLKDFHN() {
+        
+        hHLDMLKDFHN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aPMDACPHCGN_ ;
+      /**
+       * <pre>
+       * offset: 160
+       * </pre>
+       *
+       * <code>uint32 APMDACPHCGN = 9;</code>
+       * @return The aPMDACPHCGN.
+       */
+      @java.lang.Override
+      public int getAPMDACPHCGN() {
+        return aPMDACPHCGN_;
+      }
+      /**
+       * <pre>
+       * offset: 160
+       * </pre>
+       *
+       * <code>uint32 APMDACPHCGN = 9;</code>
+       * @param value The aPMDACPHCGN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAPMDACPHCGN(int value) {
+        
+        aPMDACPHCGN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 160
+       * </pre>
+       *
+       * <code>uint32 APMDACPHCGN = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAPMDACPHCGN() {
+        
+        aPMDACPHCGN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aOFPCFABBFC_ ;
+      /**
+       * <pre>
+       * offset: 164
+       * </pre>
+       *
+       * <code>uint32 AOFPCFABBFC = 623;</code>
+       * @return The aOFPCFABBFC.
+       */
+      @java.lang.Override
+      public int getAOFPCFABBFC() {
+        return aOFPCFABBFC_;
+      }
+      /**
+       * <pre>
+       * offset: 164
+       * </pre>
+       *
+       * <code>uint32 AOFPCFABBFC = 623;</code>
+       * @param value The aOFPCFABBFC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAOFPCFABBFC(int value) {
+        
+        aOFPCFABBFC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 164
+       * </pre>
+       *
+       * <code>uint32 AOFPCFABBFC = 623;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAOFPCFABBFC() {
+        
+        aOFPCFABBFC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int beginTime_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 168
+       * </pre>
+       *
+       * <code>uint32 begin_time = 11;</code>
+       * @return The beginTime.
+       */
+      @java.lang.Override
+      public int getBeginTime() {
+        return beginTime_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 168
+       * </pre>
+       *
+       * <code>uint32 begin_time = 11;</code>
+       * @param value The beginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeginTime(int value) {
+        
+        beginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 168
+       * </pre>
+       *
+       * <code>uint32 begin_time = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeginTime() {
+        
+        beginTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 172
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 172
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 172
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fLBPHECFNIP_ ;
+      /**
+       * <pre>
+       * offset: 176
+       * </pre>
+       *
+       * <code>uint32 FLBPHECFNIP = 32;</code>
+       * @return The fLBPHECFNIP.
+       */
+      @java.lang.Override
+      public int getFLBPHECFNIP() {
+        return fLBPHECFNIP_;
+      }
+      /**
+       * <pre>
+       * offset: 176
+       * </pre>
+       *
+       * <code>uint32 FLBPHECFNIP = 32;</code>
+       * @param value The fLBPHECFNIP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLBPHECFNIP(int value) {
+        
+        fLBPHECFNIP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 176
+       * </pre>
+       *
+       * <code>uint32 FLBPHECFNIP = 32;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFLBPHECFNIP() {
+        
+        fLBPHECFNIP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bLIIBKGABJC_ ;
+      /**
+       * <pre>
+       * offset: 180
+       * </pre>
+       *
+       * <code>uint32 BLIIBKGABJC = 17;</code>
+       * @return The bLIIBKGABJC.
+       */
+      @java.lang.Override
+      public int getBLIIBKGABJC() {
+        return bLIIBKGABJC_;
+      }
+      /**
+       * <pre>
+       * offset: 180
+       * </pre>
+       *
+       * <code>uint32 BLIIBKGABJC = 17;</code>
+       * @param value The bLIIBKGABJC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBLIIBKGABJC(int value) {
+        
+        bLIIBKGABJC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 180
+       * </pre>
+       *
+       * <code>uint32 BLIIBKGABJC = 17;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBLIIBKGABJC() {
+        
+        bLIIBKGABJC_ = 0;
         onChanged();
         return this;
       }
@@ -3763,28 +4503,24 @@ public final class GachaInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\203\006\n" +
-      "\tGachaInfo\022&\n\035display_chronicle_5_item_l" +
-      "ist\030\260\003 \003(\r\022\026\n\rtitle_textmap\030\223\005 \001(\t\022\026\n\016ga" +
-      "cha_prob_url\030\013 \001(\t\022!\n\030gacha_record_url_o" +
-      "versea\030\303\t \001(\t\022)\n\022gacha_up_info_list\030\254\007 \003" +
-      "(\0132\014.GachaUpInfo\022\036\n\025display_up4_item_lis" +
-      "t\030\363\007 \003(\r\022\031\n\020gacha_record_url\030\203\013 \001(\t\022\036\n\026g" +
-      "acha_prob_url_oversea\030\r \001(\t\022\031\n\021gacha_pre" +
-      "fab_path\030\001 \001(\t\022!\n\031gacha_preview_prefab_p" +
-      "ath\030\010 \001(\t\022\036\n\025display_up5_item_list\030\361\004 \003(" +
-      "\r\022\030\n\020ten_cost_item_id\030\006 \001(\r\022\031\n\021ten_cost_" +
-      "item_num\030\003 \001(\r\022\026\n\rwish_progress\030\224\004 \001(\r\022\022" +
-      "\n\nbegin_time\030\002 \001(\r\022\022\n\ngacha_type\030\014 \001(\r\022\030" +
-      "\n\020left_gacha_times\030\005 \001(\r\022\032\n\021wish_max_pro" +
-      "gress\030\320\t \001(\r\022\'\n\036cur_schedule_daily_gacha" +
-      "_times\030\262\002 \001(\r\022\024\n\013is_new_wish\030\242\003 \001(\010\022\021\n\010n" +
-      "ew_bool\030\201\r \001(\010\022\031\n\021gacha_times_limit\030\007 \001(" +
-      "\r\022\023\n\013schedule_id\030\016 \001(\r\022\024\n\014cost_item_id\030\017" +
-      " \001(\r\022\025\n\rcost_item_num\030\t \001(\r\022\025\n\rgacha_sor" +
-      "t_id\030\004 \001(\r\022\024\n\014wish_item_id\030+ \001(\r\022\020\n\010end_" +
-      "time\030\n \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\364\004\n" +
+      "\tGachaInfo\022\023\n\013KFMACJANNLI\030\020 \001(\t\022\023\n\013CPDGO" +
+      "GIKHCB\030\002 \001(\t\022\024\n\013CFFEKOOMKKJ\030\267\013 \003(\r\022\024\n\013KM" +
+      "FPKMFADJL\030\220\t \001(\t\022\024\n\013GDBNKBHKMLE\030\310\006 \001(\t\022\024" +
+      "\n\013MBHBHFFGJFL\030\335\t \003(\r\022\023\n\013DOPBHCCIHKL\030\006 \001(" +
+      "\t\022\023\n\013IDNLGKMFPHC\030\007 \001(\t\022)\n\022gacha_up_info_" +
+      "list\030\332\r \003(\0132\014.GachaUpInfo\022\024\n\013AHPDADMGCCE" +
+      "\030\355\004 \003(\r\022\024\n\013DGCNBNILFCP\030\274\n \001(\t\022\024\n\013PEAKCBG" +
+      "CNMG\030\274\003 \001(\r\022\020\n\010end_time\030\004 \001(\r\022\023\n\013IBPEFBF" +
+      "LJMI\030\003 \001(\r\022\023\n\013CACMILABBBL\030\014 \001(\r\022\024\n\013EJBFP" +
+      "CFHHAK\030\254\001 \001(\010\022\024\n\013CLBHMIAPKGC\030\346\t \001(\010\022\024\n\013F" +
+      "AANLAPHJHA\030\373\003 \001(\r\022\023\n\013MDNBAOODMAH\030\005 \001(\r\022\023" +
+      "\n\013LOFBAGJAIFP\030\016 \001(\r\022\023\n\013CLGLLLGLLLK\030\017 \001(\r" +
+      "\022\023\n\013HHLDMLKDFHN\030\n \001(\r\022\023\n\013APMDACPHCGN\030\t \001" +
+      "(\r\022\024\n\013AOFPCFABBFC\030\357\004 \001(\r\022\022\n\nbegin_time\030\013" +
+      " \001(\r\022\023\n\013schedule_id\030\010 \001(\r\022\023\n\013FLBPHECFNIP" +
+      "\030  \001(\r\022\023\n\013BLIIBKGABJC\030\021 \001(\rB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3796,7 +4532,7 @@ public final class GachaInfoOuterClass {
     internal_static_GachaInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaInfo_descriptor,
-        new java.lang.String[] { "DisplayChronicle5ItemList", "TitleTextmap", "GachaProbUrl", "GachaRecordUrlOversea", "GachaUpInfoList", "DisplayUp4ItemList", "GachaRecordUrl", "GachaProbUrlOversea", "GachaPrefabPath", "GachaPreviewPrefabPath", "DisplayUp5ItemList", "TenCostItemId", "TenCostItemNum", "WishProgress", "BeginTime", "GachaType", "LeftGachaTimes", "WishMaxProgress", "CurScheduleDailyGachaTimes", "IsNewWish", "NewBool", "GachaTimesLimit", "ScheduleId", "CostItemId", "CostItemNum", "GachaSortId", "WishItemId", "EndTime", });
+        new java.lang.String[] { "KFMACJANNLI", "CPDGOGIKHCB", "CFFEKOOMKKJ", "KMFPKMFADJL", "GDBNKBHKMLE", "MBHBHFFGJFL", "DOPBHCCIHKL", "IDNLGKMFPHC", "GachaUpInfoList", "AHPDADMGCCE", "DGCNBNILFCP", "PEAKCBGCNMG", "EndTime", "IBPEFBFLJMI", "CACMILABBBL", "EJBFPCFHHAK", "CLBHMIAPKGC", "FAANLAPHJHA", "MDNBAOODMAH", "LOFBAGJAIFP", "CLGLLLGLLLK", "HHLDMLKDFHN", "APMDACPHCGN", "AOFPCFABBFC", "BeginTime", "ScheduleId", "FLBPHECFNIP", "BLIIBKGABJC", });
     emu.grasscutter.net.proto.GachaUpInfoOuterClass.getDescriptor();
   }
 

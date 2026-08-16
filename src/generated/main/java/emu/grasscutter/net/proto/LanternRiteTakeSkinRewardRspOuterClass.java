@@ -19,15 +19,14 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 23147
-   * Obf: BCHEOHLDCHK
+   * CmdId: 24772
    * </pre>
    *
    * Protobuf type {@code LanternRiteTakeSkinRewardRsp}
@@ -74,7 +73,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
               emu.grasscutter.net.proto.LanternRiteTakeSkinRewardRspOuterClass.LanternRiteTakeSkinRewardRsp.class, emu.grasscutter.net.proto.LanternRiteTakeSkinRewardRspOuterClass.LanternRiteTakeSkinRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(4, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23147
-     * Obf: BCHEOHLDCHK
+     * CmdId: 24772
      * </pre>
      *
      * Protobuf type {@code LanternRiteTakeSkinRewardRsp}
@@ -431,7 +429,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -528,7 +526,7 @@ public final class LanternRiteTakeSkinRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"LanternRiteTakeSkinRewardRsp.proto\"/\n\034" +
       "LanternRiteTakeSkinRewardRsp\022\017\n\007retcode\030" +
-      "\016 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\004 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

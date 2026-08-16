@@ -44,8 +44,7 @@ public final class PushTipsChangeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 29035
-   * Obf: AHBDGMIPIMF
+   * CmdId: 28629
    * </pre>
    *
    * Protobuf type {@code PushTipsChangeNotify}
@@ -337,8 +336,7 @@ public final class PushTipsChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29035
-     * Obf: AHBDGMIPIMF
+     * CmdId: 28629
      * </pre>
      *
      * Protobuf type {@code PushTipsChangeNotify}

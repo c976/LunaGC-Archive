@@ -20,72 +20,72 @@ public final class EnterUgcDungeonTypeOuterClass {
   public enum EnterUgcDungeonType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_NONE = 0;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE = 0;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_NONE(0),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE(0),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_EDIT_DUNGEON = 1;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_EDIT_DUNGEON = 1;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_EDIT_DUNGEON(1),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_EDIT_DUNGEON(1),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_WORLD = 2;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD = 2;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_WORLD(2),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD(2),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_PLAY = 3;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY = 3;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_PLAY(3),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY(3),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_OFFICIAL = 4;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL = 4;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_OFFICIAL(4),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL(4),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_BY_GM = 5;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_GM = 5;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_BY_GM(5),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_GM(5),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_BY_EDIT = 6;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_EDIT = 6;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_BY_EDIT(6),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_EDIT(6),
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM = 7;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_ONE_ROOM = 7;</code>
      */
-    ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM(7),
+    CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_ONE_ROOM(7),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_NONE = 0;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE = 0;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_NONE_VALUE = 0;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE_VALUE = 0;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_EDIT_DUNGEON = 1;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_EDIT_DUNGEON = 1;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_EDIT_DUNGEON_VALUE = 1;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_EDIT_DUNGEON_VALUE = 1;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_WORLD = 2;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD = 2;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_WORLD_VALUE = 2;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD_VALUE = 2;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_PLAY = 3;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY = 3;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_PLAY_VALUE = 3;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY_VALUE = 3;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_OFFICIAL = 4;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL = 4;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_OFFICIAL_VALUE = 4;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL_VALUE = 4;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_BY_GM = 5;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_GM = 5;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_BY_GM_VALUE = 5;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_GM_VALUE = 5;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_BY_EDIT = 6;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_EDIT = 6;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_BY_EDIT_VALUE = 6;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_EDIT_VALUE = 6;
     /**
-     * <code>ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM = 7;</code>
+     * <code>CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_ONE_ROOM = 7;</code>
      */
-    public static final int ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM_VALUE = 7;
+    public static final int CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_ONE_ROOM_VALUE = 7;
 
 
     public final int getNumber() {
@@ -112,14 +112,14 @@ public final class EnterUgcDungeonTypeOuterClass {
      */
     public static EnterUgcDungeonType forNumber(int value) {
       switch (value) {
-        case 0: return ENTER_UGC_DUNGEON_TYPE_NONE;
-        case 1: return ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_EDIT_DUNGEON;
-        case 2: return ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_WORLD;
-        case 3: return ENTER_UGC_DUNGEON_TYPE_PLAY;
-        case 4: return ENTER_UGC_DUNGEON_TYPE_OFFICIAL;
-        case 5: return ENTER_UGC_DUNGEON_TYPE_BY_GM;
-        case 6: return ENTER_UGC_DUNGEON_TYPE_BY_EDIT;
-        case 7: return ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM;
+        case 0: return CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE;
+        case 1: return CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_EDIT_DUNGEON;
+        case 2: return CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD;
+        case 3: return CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY;
+        case 4: return CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL;
+        case 5: return CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_GM;
+        case 6: return CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_EDIT;
+        case 7: return CNNECCLOKJO_ENTER_UGC_DUNGEON_TRIAL_ONE_ROOM;
         default: return null;
       }
     }
@@ -185,16 +185,18 @@ public final class EnterUgcDungeonTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031EnterUgcDungeonType.proto*\312\002\n\023EnterUgc" +
-      "DungeonType\022\037\n\033ENTER_UGC_DUNGEON_TYPE_NO" +
-      "NE\020\000\0220\n,ENTER_UGC_DUNGEON_TYPE_TRIAL_IN_" +
-      "EDIT_DUNGEON\020\001\022)\n%ENTER_UGC_DUNGEON_TYPE" +
-      "_TRIAL_IN_WORLD\020\002\022\037\n\033ENTER_UGC_DUNGEON_T" +
-      "YPE_PLAY\020\003\022#\n\037ENTER_UGC_DUNGEON_TYPE_OFF" +
-      "ICIAL\020\004\022 \n\034ENTER_UGC_DUNGEON_TYPE_BY_GM\020" +
-      "\005\022\"\n\036ENTER_UGC_DUNGEON_TYPE_BY_EDIT\020\006\022)\n" +
-      "%ENTER_UGC_DUNGEON_TYPE_TRIAL_ONE_ROOM\020\007" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\031EnterUgcDungeonType.proto*\202\003\n\023EnterUgc" +
+      "DungeonType\022&\n\"CNNECCLOKJO_ENTER_UGC_DUN" +
+      "GEON_NONE\020\000\0227\n3CNNECCLOKJO_ENTER_UGC_DUN" +
+      "GEON_TRIAL_IN_EDIT_DUNGEON\020\001\0220\n,CNNECCLO" +
+      "KJO_ENTER_UGC_DUNGEON_TRIAL_IN_WORLD\020\002\022&" +
+      "\n\"CNNECCLOKJO_ENTER_UGC_DUNGEON_PLAY\020\003\022*" +
+      "\n&CNNECCLOKJO_ENTER_UGC_DUNGEON_OFFICIAL" +
+      "\020\004\022\'\n#CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_G" +
+      "M\020\005\022)\n%CNNECCLOKJO_ENTER_UGC_DUNGEON_BY_" +
+      "EDIT\020\006\0220\n,CNNECCLOKJO_ENTER_UGC_DUNGEON_" +
+      "TRIAL_ONE_ROOM\020\007B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

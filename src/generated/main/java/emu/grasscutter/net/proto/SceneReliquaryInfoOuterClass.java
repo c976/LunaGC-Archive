@@ -19,28 +19,44 @@ public final class SceneReliquaryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 promote_level = 4;</code>
      * @return The promoteLevel.
      */
     int getPromoteLevel();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>uint64 guid = 2;</code>
+     * @return The guid.
+     */
+    long getGuid();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint32 item_id = 1;</code>
      * @return The itemId.
      */
     int getItemId();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
      * <code>uint32 level = 3;</code>
      * @return The level.
      */
     int getLevel();
-
-    /**
-     * <code>uint64 guid = 2;</code>
-     * @return The guid.
-     */
-    long getGuid();
   }
   /**
    * Protobuf type {@code SceneReliquaryInfo}
@@ -142,6 +158,10 @@ public final class SceneReliquaryInfoOuterClass {
     public static final int PROMOTE_LEVEL_FIELD_NUMBER = 4;
     private int promoteLevel_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 promote_level = 4;</code>
      * @return The promoteLevel.
      */
@@ -150,9 +170,28 @@ public final class SceneReliquaryInfoOuterClass {
       return promoteLevel_;
     }
 
+    public static final int GUID_FIELD_NUMBER = 2;
+    private long guid_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>uint64 guid = 2;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public long getGuid() {
+      return guid_;
+    }
+
     public static final int ITEM_ID_FIELD_NUMBER = 1;
     private int itemId_;
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint32 item_id = 1;</code>
      * @return The itemId.
      */
@@ -164,23 +203,16 @@ public final class SceneReliquaryInfoOuterClass {
     public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
      * <code>uint32 level = 3;</code>
      * @return The level.
      */
     @java.lang.Override
     public int getLevel() {
       return level_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 2;
-    private long guid_;
-    /**
-     * <code>uint64 guid = 2;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public long getGuid() {
-      return guid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,12 +283,12 @@ public final class SceneReliquaryInfoOuterClass {
 
       if (getPromoteLevel()
           != other.getPromoteLevel()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
       if (getItemId()
           != other.getItemId()) return false;
       if (getLevel()
           != other.getLevel()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -270,13 +302,13 @@ public final class SceneReliquaryInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getPromoteLevel();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getGuid());
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,11 +444,11 @@ public final class SceneReliquaryInfoOuterClass {
         super.clear();
         promoteLevel_ = 0;
 
+        guid_ = 0L;
+
         itemId_ = 0;
 
         level_ = 0;
-
-        guid_ = 0L;
 
         return this;
       }
@@ -445,9 +477,9 @@ public final class SceneReliquaryInfoOuterClass {
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo buildPartial() {
         emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo result = new emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo(this);
         result.promoteLevel_ = promoteLevel_;
+        result.guid_ = guid_;
         result.itemId_ = itemId_;
         result.level_ = level_;
-        result.guid_ = guid_;
         onBuilt();
         return result;
       }
@@ -499,14 +531,14 @@ public final class SceneReliquaryInfoOuterClass {
         if (other.getPromoteLevel() != 0) {
           setPromoteLevel(other.getPromoteLevel());
         }
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
+        }
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
         }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
-        }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -539,6 +571,10 @@ public final class SceneReliquaryInfoOuterClass {
 
       private int promoteLevel_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 promote_level = 4;</code>
        * @return The promoteLevel.
        */
@@ -547,6 +583,10 @@ public final class SceneReliquaryInfoOuterClass {
         return promoteLevel_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 promote_level = 4;</code>
        * @param value The promoteLevel to set.
        * @return This builder for chaining.
@@ -558,6 +598,10 @@ public final class SceneReliquaryInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 promote_level = 4;</code>
        * @return This builder for chaining.
        */
@@ -568,8 +612,55 @@ public final class SceneReliquaryInfoOuterClass {
         return this;
       }
 
+      private long guid_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>uint64 guid = 2;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public long getGuid() {
+        return guid_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>uint64 guid = 2;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(long value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>uint64 guid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int itemId_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @return The itemId.
        */
@@ -578,6 +669,10 @@ public final class SceneReliquaryInfoOuterClass {
         return itemId_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
@@ -589,6 +684,10 @@ public final class SceneReliquaryInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -601,6 +700,10 @@ public final class SceneReliquaryInfoOuterClass {
 
       private int level_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 level = 3;</code>
        * @return The level.
        */
@@ -609,6 +712,10 @@ public final class SceneReliquaryInfoOuterClass {
         return level_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 level = 3;</code>
        * @param value The level to set.
        * @return This builder for chaining.
@@ -620,43 +727,16 @@ public final class SceneReliquaryInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
         
         level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long guid_ ;
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public long getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(long value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0L;
         onChanged();
         return this;
       }
@@ -728,8 +808,8 @@ public final class SceneReliquaryInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030SceneReliquaryInfo.proto\"Y\n\022SceneReliq" +
-      "uaryInfo\022\025\n\rpromote_level\030\004 \001(\r\022\017\n\007item_" +
-      "id\030\001 \001(\r\022\r\n\005level\030\003 \001(\r\022\014\n\004guid\030\002 \001(\004B\033\n" +
+      "uaryInfo\022\025\n\rpromote_level\030\004 \001(\r\022\014\n\004guid\030" +
+      "\002 \001(\004\022\017\n\007item_id\030\001 \001(\r\022\r\n\005level\030\003 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -741,7 +821,7 @@ public final class SceneReliquaryInfoOuterClass {
     internal_static_SceneReliquaryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneReliquaryInfo_descriptor,
-        new java.lang.String[] { "PromoteLevel", "ItemId", "Level", "Guid", });
+        new java.lang.String[] { "PromoteLevel", "Guid", "ItemId", "Level", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

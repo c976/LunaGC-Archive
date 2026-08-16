@@ -19,16 +19,16 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_count = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 monster_count = 9;</code>
      * @return The monsterCount.
      */
     int getMonsterCount();
   }
   /**
-   * <pre>
-   * Obf: DOKLAFAKDHP
-   * </pre>
-   *
    * Protobuf type {@code SceneGallerySalvagePreventInfo}
    */
   public static final class SceneGallerySalvagePreventInfo extends
@@ -73,7 +73,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 72: {
 
               monsterCount_ = input.readUInt32();
               break;
@@ -110,10 +110,14 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo.class, emu.grasscutter.net.proto.SceneGallerySalvagePreventInfoOuterClass.SceneGallerySalvagePreventInfo.Builder.class);
     }
 
-    public static final int MONSTER_COUNT_FIELD_NUMBER = 6;
+    public static final int MONSTER_COUNT_FIELD_NUMBER = 9;
     private int monsterCount_;
     /**
-     * <code>uint32 monster_count = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 monster_count = 9;</code>
      * @return The monsterCount.
      */
     @java.lang.Override
@@ -136,7 +140,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monsterCount_ != 0) {
-        output.writeUInt32(6, monsterCount_);
+        output.writeUInt32(9, monsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +153,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       size = 0;
       if (monsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, monsterCount_);
+          .computeUInt32Size(9, monsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -277,10 +281,6 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DOKLAFAKDHP
-     * </pre>
-     *
      * Protobuf type {@code SceneGallerySalvagePreventInfo}
      */
     public static final class Builder extends
@@ -429,7 +429,11 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
 
       private int monsterCount_ ;
       /**
-       * <code>uint32 monster_count = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 monster_count = 9;</code>
        * @return The monsterCount.
        */
       @java.lang.Override
@@ -437,7 +441,11 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
         return monsterCount_;
       }
       /**
-       * <code>uint32 monster_count = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 monster_count = 9;</code>
        * @param value The monsterCount to set.
        * @return This builder for chaining.
        */
@@ -448,7 +456,11 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 monster_count = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 monster_count = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterCount() {
@@ -526,7 +538,7 @@ public final class SceneGallerySalvagePreventInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$SceneGallerySalvagePreventInfo.proto\"7" +
       "\n\036SceneGallerySalvagePreventInfo\022\025\n\rmons" +
-      "ter_count\030\006 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "ter_count\030\t \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

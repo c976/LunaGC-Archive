@@ -19,33 +19,52 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> 
-        getOneoffGatherPointDetectorDataListList();
+        getDLGGJECPKJNList();
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
-    emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getOneoffGatherPointDetectorDataList(int index);
+    emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDLGGJECPKJN(int index);
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
-    int getOneoffGatherPointDetectorDataListCount();
+    int getDLGGJECPKJNCount();
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> 
-        getOneoffGatherPointDetectorDataListOrBuilderList();
+        getDLGGJECPKJNOrBuilderList();
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
-    emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getOneoffGatherPointDetectorDataListOrBuilder(
+    emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDLGGJECPKJNOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2925
-   * Obf: LBDCKAKMLOP
+   * CmdId: 4202
    * </pre>
    *
    * Protobuf type {@code OneoffGatherPointDetectorDataNotify}
@@ -60,7 +79,7 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       super(builder);
     }
     private OneoffGatherPointDetectorDataNotify() {
-      oneoffGatherPointDetectorDataList_ = java.util.Collections.emptyList();
+      dLGGJECPKJN_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -94,12 +113,12 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oneoffGatherPointDetectorDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData>();
+                dLGGJECPKJN_ = new java.util.ArrayList<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              oneoffGatherPointDetectorDataList_.add(
+              dLGGJECPKJN_.add(
                   input.readMessage(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.parser(), extensionRegistry));
               break;
             }
@@ -119,7 +138,7 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          oneoffGatherPointDetectorDataList_ = java.util.Collections.unmodifiableList(oneoffGatherPointDetectorDataList_);
+          dLGGJECPKJN_ = java.util.Collections.unmodifiableList(dLGGJECPKJN_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -138,44 +157,64 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
               emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify.class, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify.Builder.class);
     }
 
-    public static final int ONEOFF_GATHER_POINT_DETECTOR_DATA_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> oneoffGatherPointDetectorDataList_;
+    public static final int DLGGJECPKJN_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> dLGGJECPKJN_;
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> getOneoffGatherPointDetectorDataListList() {
-      return oneoffGatherPointDetectorDataList_;
+    public java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> getDLGGJECPKJNList() {
+      return dLGGJECPKJN_;
     }
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> 
-        getOneoffGatherPointDetectorDataListOrBuilderList() {
-      return oneoffGatherPointDetectorDataList_;
+        getDLGGJECPKJNOrBuilderList() {
+      return dLGGJECPKJN_;
     }
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     @java.lang.Override
-    public int getOneoffGatherPointDetectorDataListCount() {
-      return oneoffGatherPointDetectorDataList_.size();
+    public int getDLGGJECPKJNCount() {
+      return dLGGJECPKJN_.size();
     }
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getOneoffGatherPointDetectorDataList(int index) {
-      return oneoffGatherPointDetectorDataList_.get(index);
+    public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDLGGJECPKJN(int index) {
+      return dLGGJECPKJN_.get(index);
     }
     /**
-     * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getOneoffGatherPointDetectorDataListOrBuilder(
+    public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDLGGJECPKJNOrBuilder(
         int index) {
-      return oneoffGatherPointDetectorDataList_.get(index);
+      return dLGGJECPKJN_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -192,8 +231,8 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < oneoffGatherPointDetectorDataList_.size(); i++) {
-        output.writeMessage(10, oneoffGatherPointDetectorDataList_.get(i));
+      for (int i = 0; i < dLGGJECPKJN_.size(); i++) {
+        output.writeMessage(15, dLGGJECPKJN_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -204,9 +243,9 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < oneoffGatherPointDetectorDataList_.size(); i++) {
+      for (int i = 0; i < dLGGJECPKJN_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, oneoffGatherPointDetectorDataList_.get(i));
+          .computeMessageSize(15, dLGGJECPKJN_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,8 +262,8 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify other = (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify) obj;
 
-      if (!getOneoffGatherPointDetectorDataListList()
-          .equals(other.getOneoffGatherPointDetectorDataListList())) return false;
+      if (!getDLGGJECPKJNList()
+          .equals(other.getDLGGJECPKJNList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -236,9 +275,9 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOneoffGatherPointDetectorDataListCount() > 0) {
-        hash = (37 * hash) + ONEOFF_GATHER_POINT_DETECTOR_DATA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getOneoffGatherPointDetectorDataListList().hashCode();
+      if (getDLGGJECPKJNCount() > 0) {
+        hash = (37 * hash) + DLGGJECPKJN_FIELD_NUMBER;
+        hash = (53 * hash) + getDLGGJECPKJNList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -337,8 +376,7 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2925
-     * Obf: LBDCKAKMLOP
+     * CmdId: 4202
      * </pre>
      *
      * Protobuf type {@code OneoffGatherPointDetectorDataNotify}
@@ -373,17 +411,17 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getOneoffGatherPointDetectorDataListFieldBuilder();
+          getDLGGJECPKJNFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          oneoffGatherPointDetectorDataList_ = java.util.Collections.emptyList();
+        if (dLGGJECPKJNBuilder_ == null) {
+          dLGGJECPKJN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.clear();
+          dLGGJECPKJNBuilder_.clear();
         }
         return this;
       }
@@ -412,14 +450,14 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify buildPartial() {
         emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify result = new emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify(this);
         int from_bitField0_ = bitField0_;
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
+        if (dLGGJECPKJNBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            oneoffGatherPointDetectorDataList_ = java.util.Collections.unmodifiableList(oneoffGatherPointDetectorDataList_);
+            dLGGJECPKJN_ = java.util.Collections.unmodifiableList(dLGGJECPKJN_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.oneoffGatherPointDetectorDataList_ = oneoffGatherPointDetectorDataList_;
+          result.dLGGJECPKJN_ = dLGGJECPKJN_;
         } else {
-          result.oneoffGatherPointDetectorDataList_ = oneoffGatherPointDetectorDataListBuilder_.build();
+          result.dLGGJECPKJN_ = dLGGJECPKJNBuilder_.build();
         }
         onBuilt();
         return result;
@@ -469,29 +507,29 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify other) {
         if (other == emu.grasscutter.net.proto.OneoffGatherPointDetectorDataNotifyOuterClass.OneoffGatherPointDetectorDataNotify.getDefaultInstance()) return this;
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          if (!other.oneoffGatherPointDetectorDataList_.isEmpty()) {
-            if (oneoffGatherPointDetectorDataList_.isEmpty()) {
-              oneoffGatherPointDetectorDataList_ = other.oneoffGatherPointDetectorDataList_;
+        if (dLGGJECPKJNBuilder_ == null) {
+          if (!other.dLGGJECPKJN_.isEmpty()) {
+            if (dLGGJECPKJN_.isEmpty()) {
+              dLGGJECPKJN_ = other.dLGGJECPKJN_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureOneoffGatherPointDetectorDataListIsMutable();
-              oneoffGatherPointDetectorDataList_.addAll(other.oneoffGatherPointDetectorDataList_);
+              ensureDLGGJECPKJNIsMutable();
+              dLGGJECPKJN_.addAll(other.dLGGJECPKJN_);
             }
             onChanged();
           }
         } else {
-          if (!other.oneoffGatherPointDetectorDataList_.isEmpty()) {
-            if (oneoffGatherPointDetectorDataListBuilder_.isEmpty()) {
-              oneoffGatherPointDetectorDataListBuilder_.dispose();
-              oneoffGatherPointDetectorDataListBuilder_ = null;
-              oneoffGatherPointDetectorDataList_ = other.oneoffGatherPointDetectorDataList_;
+          if (!other.dLGGJECPKJN_.isEmpty()) {
+            if (dLGGJECPKJNBuilder_.isEmpty()) {
+              dLGGJECPKJNBuilder_.dispose();
+              dLGGJECPKJNBuilder_ = null;
+              dLGGJECPKJN_ = other.dLGGJECPKJN_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              oneoffGatherPointDetectorDataListBuilder_ = 
+              dLGGJECPKJNBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getOneoffGatherPointDetectorDataListFieldBuilder() : null;
+                   getDLGGJECPKJNFieldBuilder() : null;
             } else {
-              oneoffGatherPointDetectorDataListBuilder_.addAllMessages(other.oneoffGatherPointDetectorDataList_);
+              dLGGJECPKJNBuilder_.addAllMessages(other.dLGGJECPKJN_);
             }
           }
         }
@@ -525,244 +563,316 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> oneoffGatherPointDetectorDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> dLGGJECPKJN_ =
         java.util.Collections.emptyList();
-      private void ensureOneoffGatherPointDetectorDataListIsMutable() {
+      private void ensureDLGGJECPKJNIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          oneoffGatherPointDetectorDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData>(oneoffGatherPointDetectorDataList_);
+          dLGGJECPKJN_ = new java.util.ArrayList<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData>(dLGGJECPKJN_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> oneoffGatherPointDetectorDataListBuilder_;
+          emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> dLGGJECPKJNBuilder_;
 
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> getOneoffGatherPointDetectorDataListList() {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(oneoffGatherPointDetectorDataList_);
+      public java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> getDLGGJECPKJNList() {
+        if (dLGGJECPKJNBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dLGGJECPKJN_);
         } else {
-          return oneoffGatherPointDetectorDataListBuilder_.getMessageList();
+          return dLGGJECPKJNBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public int getOneoffGatherPointDetectorDataListCount() {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          return oneoffGatherPointDetectorDataList_.size();
+      public int getDLGGJECPKJNCount() {
+        if (dLGGJECPKJNBuilder_ == null) {
+          return dLGGJECPKJN_.size();
         } else {
-          return oneoffGatherPointDetectorDataListBuilder_.getCount();
+          return dLGGJECPKJNBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getOneoffGatherPointDetectorDataList(int index) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          return oneoffGatherPointDetectorDataList_.get(index);
+      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDLGGJECPKJN(int index) {
+        if (dLGGJECPKJNBuilder_ == null) {
+          return dLGGJECPKJN_.get(index);
         } else {
-          return oneoffGatherPointDetectorDataListBuilder_.getMessage(index);
+          return dLGGJECPKJNBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder setOneoffGatherPointDetectorDataList(
+      public Builder setDLGGJECPKJN(
           int index, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
+        if (dLGGJECPKJNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.set(index, value);
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.set(index, value);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.setMessage(index, value);
+          dLGGJECPKJNBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder setOneoffGatherPointDetectorDataList(
+      public Builder setDLGGJECPKJN(
           int index, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder builderForValue) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.set(index, builderForValue.build());
+        if (dLGGJECPKJNBuilder_ == null) {
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.set(index, builderForValue.build());
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.setMessage(index, builderForValue.build());
+          dLGGJECPKJNBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder addOneoffGatherPointDetectorDataList(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
+      public Builder addDLGGJECPKJN(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
+        if (dLGGJECPKJNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.add(value);
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.add(value);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.addMessage(value);
+          dLGGJECPKJNBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder addOneoffGatherPointDetectorDataList(
+      public Builder addDLGGJECPKJN(
           int index, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
+        if (dLGGJECPKJNBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.add(index, value);
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.add(index, value);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.addMessage(index, value);
+          dLGGJECPKJNBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder addOneoffGatherPointDetectorDataList(
+      public Builder addDLGGJECPKJN(
           emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder builderForValue) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.add(builderForValue.build());
+        if (dLGGJECPKJNBuilder_ == null) {
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.add(builderForValue.build());
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.addMessage(builderForValue.build());
+          dLGGJECPKJNBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder addOneoffGatherPointDetectorDataList(
+      public Builder addDLGGJECPKJN(
           int index, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder builderForValue) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.add(index, builderForValue.build());
+        if (dLGGJECPKJNBuilder_ == null) {
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.add(index, builderForValue.build());
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.addMessage(index, builderForValue.build());
+          dLGGJECPKJNBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder addAllOneoffGatherPointDetectorDataList(
+      public Builder addAllDLGGJECPKJN(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData> values) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          ensureOneoffGatherPointDetectorDataListIsMutable();
+        if (dLGGJECPKJNBuilder_ == null) {
+          ensureDLGGJECPKJNIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, oneoffGatherPointDetectorDataList_);
+              values, dLGGJECPKJN_);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.addAllMessages(values);
+          dLGGJECPKJNBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder clearOneoffGatherPointDetectorDataList() {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          oneoffGatherPointDetectorDataList_ = java.util.Collections.emptyList();
+      public Builder clearDLGGJECPKJN() {
+        if (dLGGJECPKJNBuilder_ == null) {
+          dLGGJECPKJN_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.clear();
+          dLGGJECPKJNBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public Builder removeOneoffGatherPointDetectorDataList(int index) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          ensureOneoffGatherPointDetectorDataListIsMutable();
-          oneoffGatherPointDetectorDataList_.remove(index);
+      public Builder removeDLGGJECPKJN(int index) {
+        if (dLGGJECPKJNBuilder_ == null) {
+          ensureDLGGJECPKJNIsMutable();
+          dLGGJECPKJN_.remove(index);
           onChanged();
         } else {
-          oneoffGatherPointDetectorDataListBuilder_.remove(index);
+          dLGGJECPKJNBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder getOneoffGatherPointDetectorDataListBuilder(
+      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder getDLGGJECPKJNBuilder(
           int index) {
-        return getOneoffGatherPointDetectorDataListFieldBuilder().getBuilder(index);
+        return getDLGGJECPKJNFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getOneoffGatherPointDetectorDataListOrBuilder(
+      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDLGGJECPKJNOrBuilder(
           int index) {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          return oneoffGatherPointDetectorDataList_.get(index);  } else {
-          return oneoffGatherPointDetectorDataListBuilder_.getMessageOrBuilder(index);
+        if (dLGGJECPKJNBuilder_ == null) {
+          return dLGGJECPKJN_.get(index);  } else {
+          return dLGGJECPKJNBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> 
-           getOneoffGatherPointDetectorDataListOrBuilderList() {
-        if (oneoffGatherPointDetectorDataListBuilder_ != null) {
-          return oneoffGatherPointDetectorDataListBuilder_.getMessageOrBuilderList();
+           getDLGGJECPKJNOrBuilderList() {
+        if (dLGGJECPKJNBuilder_ != null) {
+          return dLGGJECPKJNBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(oneoffGatherPointDetectorDataList_);
+          return java.util.Collections.unmodifiableList(dLGGJECPKJN_);
         }
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder addOneoffGatherPointDetectorDataListBuilder() {
-        return getOneoffGatherPointDetectorDataListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder addDLGGJECPKJNBuilder() {
+        return getDLGGJECPKJNFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance());
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
-      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder addOneoffGatherPointDetectorDataListBuilder(
+      public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder addDLGGJECPKJNBuilder(
           int index) {
-        return getOneoffGatherPointDetectorDataListFieldBuilder().addBuilder(
+        return getDLGGJECPKJNFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance());
       }
       /**
-       * <code>repeated .OneoffGatherPointDetectorData oneoff_gather_point_detector_data_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OneoffGatherPointDetectorData DLGGJECPKJN = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder> 
-           getOneoffGatherPointDetectorDataListBuilderList() {
-        return getOneoffGatherPointDetectorDataListFieldBuilder().getBuilderList();
+           getDLGGJECPKJNBuilderList() {
+        return getDLGGJECPKJNFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> 
-          getOneoffGatherPointDetectorDataListFieldBuilder() {
-        if (oneoffGatherPointDetectorDataListBuilder_ == null) {
-          oneoffGatherPointDetectorDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getDLGGJECPKJNFieldBuilder() {
+        if (dLGGJECPKJNBuilder_ == null) {
+          dLGGJECPKJNBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder>(
-                  oneoffGatherPointDetectorDataList_,
+                  dLGGJECPKJN_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          oneoffGatherPointDetectorDataList_ = null;
+          dLGGJECPKJN_ = null;
         }
-        return oneoffGatherPointDetectorDataListBuilder_;
+        return dLGGJECPKJNBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -833,10 +943,10 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)OneoffGatherPointDetectorDataNotify.pr" +
       "oto\032#OneoffGatherPointDetectorData.proto" +
-      "\"u\n#OneoffGatherPointDetectorDataNotify\022" +
-      "N\n&oneoff_gather_point_detector_data_lis" +
-      "t\030\n \003(\0132\036.OneoffGatherPointDetectorDataB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\"Z\n#OneoffGatherPointDetectorDataNotify\022" +
+      "3\n\013DLGGJECPKJN\030\017 \003(\0132\036.OneoffGatherPoint" +
+      "DetectorDataB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -848,7 +958,7 @@ public final class OneoffGatherPointDetectorDataNotifyOuterClass {
     internal_static_OneoffGatherPointDetectorDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OneoffGatherPointDetectorDataNotify_descriptor,
-        new java.lang.String[] { "OneoffGatherPointDetectorDataList", });
+        new java.lang.String[] { "DLGGJECPKJN", });
     emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.getDescriptor();
   }
 

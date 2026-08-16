@@ -19,27 +19,43 @@ public final class CoopPointOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 9;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 self_confidence = 11;</code>
-     * @return The selfConfidence.
-     */
-    int getSelfConfidence();
-
-    /**
-     * <code>.CoopPoint.State state = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint.State state = 9;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <code>.CoopPoint.State state = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint.State state = 9;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State getState();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 GGHCIJNKBDB = 5;</code>
+     * @return The gGHCIJNKBDB.
+     */
+    int getGGHCIJNKBDB();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 id = 2;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * Protobuf type {@code CoopPoint}
@@ -87,17 +103,17 @@ public final class CoopPointOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 40: {
 
-              selfConfidence_ = input.readUInt32();
+              gGHCIJNKBDB_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
@@ -141,32 +157,32 @@ public final class CoopPointOuterClass {
     public enum State
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>STATE_UNSTARTED = 0;</code>
+       * <code>BHFEJICPOAL_UNSTARTED = 0;</code>
        */
-      STATE_UNSTARTED(0),
+      BHFEJICPOAL_UNSTARTED(0),
       /**
-       * <code>STATE_STARTED = 1;</code>
+       * <code>BHFEJICPOAL_STARTED = 1;</code>
        */
-      STATE_STARTED(1),
+      BHFEJICPOAL_STARTED(1),
       /**
-       * <code>STATE_FINISHED = 2;</code>
+       * <code>BHFEJICPOAL_FINISHED = 2;</code>
        */
-      STATE_FINISHED(2),
+      BHFEJICPOAL_FINISHED(2),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>STATE_UNSTARTED = 0;</code>
+       * <code>BHFEJICPOAL_UNSTARTED = 0;</code>
        */
-      public static final int STATE_UNSTARTED_VALUE = 0;
+      public static final int BHFEJICPOAL_UNSTARTED_VALUE = 0;
       /**
-       * <code>STATE_STARTED = 1;</code>
+       * <code>BHFEJICPOAL_STARTED = 1;</code>
        */
-      public static final int STATE_STARTED_VALUE = 1;
+      public static final int BHFEJICPOAL_STARTED_VALUE = 1;
       /**
-       * <code>STATE_FINISHED = 2;</code>
+       * <code>BHFEJICPOAL_FINISHED = 2;</code>
        */
-      public static final int STATE_FINISHED_VALUE = 2;
+      public static final int BHFEJICPOAL_FINISHED_VALUE = 2;
 
 
       public final int getNumber() {
@@ -193,9 +209,9 @@ public final class CoopPointOuterClass {
        */
       public static State forNumber(int value) {
         switch (value) {
-          case 0: return STATE_UNSTARTED;
-          case 1: return STATE_STARTED;
-          case 2: return STATE_FINISHED;
+          case 0: return BHFEJICPOAL_UNSTARTED;
+          case 1: return BHFEJICPOAL_STARTED;
+          case 2: return BHFEJICPOAL_FINISHED;
           default: return null;
         }
       }
@@ -252,45 +268,61 @@ public final class CoopPointOuterClass {
       // @@protoc_insertion_point(enum_scope:CoopPoint.State)
     }
 
-    public static final int ID_FIELD_NUMBER = 9;
-    private int id_;
-    /**
-     * <code>uint32 id = 9;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int SELF_CONFIDENCE_FIELD_NUMBER = 11;
-    private int selfConfidence_;
-    /**
-     * <code>uint32 self_confidence = 11;</code>
-     * @return The selfConfidence.
-     */
-    @java.lang.Override
-    public int getSelfConfidence() {
-      return selfConfidence_;
-    }
-
-    public static final int STATE_FIELD_NUMBER = 14;
+    public static final int STATE_FIELD_NUMBER = 9;
     private int state_;
     /**
-     * <code>.CoopPoint.State state = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint.State state = 9;</code>
      * @return The enum numeric value on the wire for state.
      */
     @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
-     * <code>.CoopPoint.State state = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint.State state = 9;</code>
      * @return The state.
      */
     @java.lang.Override public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State getState() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State result = emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.valueOf(state_);
       return result == null ? emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.UNRECOGNIZED : result;
+    }
+
+    public static final int GGHCIJNKBDB_FIELD_NUMBER = 5;
+    private int gGHCIJNKBDB_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 GGHCIJNKBDB = 5;</code>
+     * @return The gGHCIJNKBDB.
+     */
+    @java.lang.Override
+    public int getGGHCIJNKBDB() {
+      return gGHCIJNKBDB_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 2;
+    private int id_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 id = 2;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -308,13 +340,13 @@ public final class CoopPointOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(9, id_);
+        output.writeUInt32(2, id_);
       }
-      if (selfConfidence_ != 0) {
-        output.writeUInt32(11, selfConfidence_);
+      if (gGHCIJNKBDB_ != 0) {
+        output.writeUInt32(5, gGHCIJNKBDB_);
       }
-      if (state_ != emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.STATE_UNSTARTED.getNumber()) {
-        output.writeEnum(14, state_);
+      if (state_ != emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.BHFEJICPOAL_UNSTARTED.getNumber()) {
+        output.writeEnum(9, state_);
       }
       unknownFields.writeTo(output);
     }
@@ -327,15 +359,15 @@ public final class CoopPointOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, id_);
+          .computeUInt32Size(2, id_);
       }
-      if (selfConfidence_ != 0) {
+      if (gGHCIJNKBDB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, selfConfidence_);
+          .computeUInt32Size(5, gGHCIJNKBDB_);
       }
-      if (state_ != emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.STATE_UNSTARTED.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.BHFEJICPOAL_UNSTARTED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, state_);
+          .computeEnumSize(9, state_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,11 +384,11 @@ public final class CoopPointOuterClass {
       }
       emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint other = (emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint) obj;
 
+      if (state_ != other.state_) return false;
+      if (getGGHCIJNKBDB()
+          != other.getGGHCIJNKBDB()) return false;
       if (getId()
           != other.getId()) return false;
-      if (getSelfConfidence()
-          != other.getSelfConfidence()) return false;
-      if (state_ != other.state_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -368,12 +400,12 @@ public final class CoopPointOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (37 * hash) + SELF_CONFIDENCE_FIELD_NUMBER;
-      hash = (53 * hash) + getSelfConfidence();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + state_;
+      hash = (37 * hash) + GGHCIJNKBDB_FIELD_NUMBER;
+      hash = (53 * hash) + getGGHCIJNKBDB();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -507,11 +539,11 @@ public final class CoopPointOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
-        selfConfidence_ = 0;
-
         state_ = 0;
+
+        gGHCIJNKBDB_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -539,9 +571,9 @@ public final class CoopPointOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint buildPartial() {
         emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint result = new emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint(this);
-        result.id_ = id_;
-        result.selfConfidence_ = selfConfidence_;
         result.state_ = state_;
+        result.gGHCIJNKBDB_ = gGHCIJNKBDB_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -590,14 +622,14 @@ public final class CoopPointOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint other) {
         if (other == emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.getSelfConfidence() != 0) {
-          setSelfConfidence(other.getSelfConfidence());
-        }
         if (other.state_ != 0) {
           setStateValue(other.getStateValue());
+        }
+        if (other.getGGHCIJNKBDB() != 0) {
+          setGGHCIJNKBDB(other.getGGHCIJNKBDB());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -628,78 +660,24 @@ public final class CoopPointOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 9;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 9;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int selfConfidence_ ;
-      /**
-       * <code>uint32 self_confidence = 11;</code>
-       * @return The selfConfidence.
-       */
-      @java.lang.Override
-      public int getSelfConfidence() {
-        return selfConfidence_;
-      }
-      /**
-       * <code>uint32 self_confidence = 11;</code>
-       * @param value The selfConfidence to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSelfConfidence(int value) {
-        
-        selfConfidence_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 self_confidence = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSelfConfidence() {
-        
-        selfConfidence_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int state_ = 0;
       /**
-       * <code>.CoopPoint.State state = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint.State state = 9;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>.CoopPoint.State state = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint.State state = 9;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -710,7 +688,11 @@ public final class CoopPointOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint.State state = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint.State state = 9;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -720,7 +702,11 @@ public final class CoopPointOuterClass {
         return result == null ? emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.State.UNRECOGNIZED : result;
       }
       /**
-       * <code>.CoopPoint.State state = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint.State state = 9;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -734,12 +720,102 @@ public final class CoopPointOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint.State state = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint.State state = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
         
         state_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gGHCIJNKBDB_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 GGHCIJNKBDB = 5;</code>
+       * @return The gGHCIJNKBDB.
+       */
+      @java.lang.Override
+      public int getGGHCIJNKBDB() {
+        return gGHCIJNKBDB_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 GGHCIJNKBDB = 5;</code>
+       * @param value The gGHCIJNKBDB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGGHCIJNKBDB(int value) {
+        
+        gGHCIJNKBDB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 GGHCIJNKBDB = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGGHCIJNKBDB() {
+        
+        gGHCIJNKBDB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 2;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 2;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -810,23 +886,25 @@ public final class CoopPointOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017CoopPoint.proto\"\226\001\n\tCoopPoint\022\n\n\002id\030\t " +
-      "\001(\r\022\027\n\017self_confidence\030\013 \001(\r\022\037\n\005state\030\016 " +
-      "\001(\0162\020.CoopPoint.State\"C\n\005State\022\023\n\017STATE_" +
-      "UNSTARTED\020\000\022\021\n\rSTATE_STARTED\020\001\022\022\n\016STATE_" +
-      "FINISHED\020\002B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\017CoopPoint.proto\032\013State.proto\"\244\001\n\tCoopP" +
+      "oint\022\037\n\005state\030\t \001(\0162\020.CoopPoint.State\022\023\n" +
+      "\013GGHCIJNKBDB\030\005 \001(\r\022\n\n\002id\030\002 \001(\r\"U\n\005State\022" +
+      "\031\n\025BHFEJICPOAL_UNSTARTED\020\000\022\027\n\023BHFEJICPOA" +
+      "L_STARTED\020\001\022\030\n\024BHFEJICPOAL_FINISHED\020\002B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.StateOuterClass.getDescriptor(),
         });
     internal_static_CoopPoint_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CoopPoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoopPoint_descriptor,
-        new java.lang.String[] { "Id", "SelfConfidence", "State", });
+        new java.lang.String[] { "State", "GGHCIJNKBDB", "Id", });
+    emu.grasscutter.net.proto.StateOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

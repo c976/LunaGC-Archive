@@ -19,21 +19,28 @@ public final class EchoShellTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_id = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22695
-   * Obf: HGDBPCPCCKF
+   * CmdId: 26368
    * </pre>
    *
    * Protobuf type {@code EchoShellTakeRewardRsp}
@@ -82,12 +89,12 @@ public final class EchoShellTakeRewardRspOuterClass {
               break;
             case 24: {
 
-              rewardId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
-              retcode_ = input.readInt32();
+              rewardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +129,14 @@ public final class EchoShellTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp.class, emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 3;
+    public static final int REWARD_ID_FIELD_NUMBER = 12;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class EchoShellTakeRewardRspOuterClass {
       return rewardId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +173,11 @@ public final class EchoShellTakeRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rewardId_ != 0) {
-        output.writeUInt32(3, rewardId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(3, retcode_);
+      }
+      if (rewardId_ != 0) {
+        output.writeUInt32(12, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class EchoShellTakeRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, rewardId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(3, retcode_);
+      }
+      if (rewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class EchoShellTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22695
-     * Obf: HGDBPCPCCKF
+     * CmdId: 26368
      * </pre>
      *
      * Protobuf type {@code EchoShellTakeRewardRsp}
@@ -470,7 +484,11 @@ public final class EchoShellTakeRewardRspOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 12;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class EchoShellTakeRewardRspOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 12;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class EchoShellTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -501,7 +527,11 @@ public final class EchoShellTakeRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class EchoShellTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class EchoShellTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +635,8 @@ public final class EchoShellTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EchoShellTakeRewardRsp.proto\"<\n\026EchoSh" +
-      "ellTakeRewardRsp\022\021\n\treward_id\030\003 \001(\r\022\017\n\007r" +
-      "etcode\030\010 \001(\005B\033\n\031emu.grasscutter.net.prot" +
+      "ellTakeRewardRsp\022\021\n\treward_id\030\014 \001(\r\022\017\n\007r" +
+      "etcode\030\003 \001(\005B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

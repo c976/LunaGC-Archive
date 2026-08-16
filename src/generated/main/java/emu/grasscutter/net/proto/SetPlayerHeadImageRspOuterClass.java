@@ -19,22 +19,38 @@ public final class SetPlayerHeadImageRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -88,7 +104,7 @@ public final class SetPlayerHeadImageRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
@@ -141,6 +157,10 @@ public final class SetPlayerHeadImageRspOuterClass {
     public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      * @return Whether the profilePicture field is set.
      */
@@ -149,6 +169,10 @@ public final class SetPlayerHeadImageRspOuterClass {
       return profilePicture_ != null;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      * @return The profilePicture.
      */
@@ -157,6 +181,10 @@ public final class SetPlayerHeadImageRspOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.ProfilePicture profile_picture = 12;</code>
      */
     @java.lang.Override
@@ -164,10 +192,14 @@ public final class SetPlayerHeadImageRspOuterClass {
       return getProfilePicture();
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -190,7 +222,7 @@ public final class SetPlayerHeadImageRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (profilePicture_ != null) {
         output.writeMessage(12, getProfilePicture());
@@ -206,7 +238,7 @@ public final class SetPlayerHeadImageRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -515,6 +547,10 @@ public final class SetPlayerHeadImageRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        * @return Whether the profilePicture field is set.
        */
@@ -522,6 +558,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        * @return The profilePicture.
        */
@@ -533,6 +573,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
@@ -549,6 +593,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public Builder setProfilePicture(
@@ -563,6 +611,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
@@ -581,6 +633,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public Builder clearProfilePicture() {
@@ -595,6 +651,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
@@ -603,6 +663,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
@@ -614,6 +678,10 @@ public final class SetPlayerHeadImageRspOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.ProfilePicture profile_picture = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -632,7 +700,11 @@ public final class SetPlayerHeadImageRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -640,7 +712,11 @@ public final class SetPlayerHeadImageRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -651,7 +727,11 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -730,7 +810,7 @@ public final class SetPlayerHeadImageRspOuterClass {
       "\n\033SetPlayerHeadImageRsp.proto\032\024ProfilePi" +
       "cture.proto\"R\n\025SetPlayerHeadImageRsp\022(\n\017" +
       "profile_picture\030\014 \001(\0132\017.ProfilePicture\022\017" +
-      "\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,34 @@ public final class GrandFestivalMusicGameRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_unlock = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_unlock = 14;</code>
      * @return The isUnlock.
      */
     boolean getIsUnlock();
 
     /**
-     * <code>uint32 music_basic_id = 6;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 music_basic_id = 4;</code>
      * @return The musicBasicId.
      */
     int getMusicBasicId();
 
     /**
-     * <code>uint32 max_score = 5;</code>
-     * @return The maxScore.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 3;</code>
+     * @return The dPPGDBBLCCM.
      */
-    int getMaxScore();
+    int getDPPGDBBLCCM();
   }
   /**
    * Protobuf type {@code GrandFestivalMusicGameRecord}
@@ -81,17 +93,17 @@ public final class GrandFestivalMusicGameRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
 
-              maxScore_ = input.readUInt32();
+              dPPGDBBLCCM_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 32: {
 
               musicBasicId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
               isUnlock_ = input.readBool();
               break;
@@ -128,10 +140,14 @@ public final class GrandFestivalMusicGameRecordOuterClass {
               emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.class, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder.class);
     }
 
-    public static final int IS_UNLOCK_FIELD_NUMBER = 13;
+    public static final int IS_UNLOCK_FIELD_NUMBER = 14;
     private boolean isUnlock_;
     /**
-     * <code>bool is_unlock = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_unlock = 14;</code>
      * @return The isUnlock.
      */
     @java.lang.Override
@@ -139,10 +155,14 @@ public final class GrandFestivalMusicGameRecordOuterClass {
       return isUnlock_;
     }
 
-    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 6;
+    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 4;
     private int musicBasicId_;
     /**
-     * <code>uint32 music_basic_id = 6;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 music_basic_id = 4;</code>
      * @return The musicBasicId.
      */
     @java.lang.Override
@@ -150,15 +170,19 @@ public final class GrandFestivalMusicGameRecordOuterClass {
       return musicBasicId_;
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 5;
-    private int maxScore_;
+    public static final int DPPGDBBLCCM_FIELD_NUMBER = 3;
+    private int dPPGDBBLCCM_;
     /**
-     * <code>uint32 max_score = 5;</code>
-     * @return The maxScore.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 3;</code>
+     * @return The dPPGDBBLCCM.
      */
     @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
+    public int getDPPGDBBLCCM() {
+      return dPPGDBBLCCM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +199,14 @@ public final class GrandFestivalMusicGameRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (maxScore_ != 0) {
-        output.writeUInt32(5, maxScore_);
+      if (dPPGDBBLCCM_ != 0) {
+        output.writeUInt32(3, dPPGDBBLCCM_);
       }
       if (musicBasicId_ != 0) {
-        output.writeUInt32(6, musicBasicId_);
+        output.writeUInt32(4, musicBasicId_);
       }
       if (isUnlock_ != false) {
-        output.writeBool(13, isUnlock_);
+        output.writeBool(14, isUnlock_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +217,17 @@ public final class GrandFestivalMusicGameRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (maxScore_ != 0) {
+      if (dPPGDBBLCCM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, maxScore_);
+          .computeUInt32Size(3, dPPGDBBLCCM_);
       }
       if (musicBasicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, musicBasicId_);
+          .computeUInt32Size(4, musicBasicId_);
       }
       if (isUnlock_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isUnlock_);
+          .computeBoolSize(14, isUnlock_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,8 +248,8 @@ public final class GrandFestivalMusicGameRecordOuterClass {
           != other.getIsUnlock()) return false;
       if (getMusicBasicId()
           != other.getMusicBasicId()) return false;
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
+      if (getDPPGDBBLCCM()
+          != other.getDPPGDBBLCCM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,8 +266,8 @@ public final class GrandFestivalMusicGameRecordOuterClass {
           getIsUnlock());
       hash = (37 * hash) + MUSIC_BASIC_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMusicBasicId();
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + DPPGDBBLCCM_FIELD_NUMBER;
+      hash = (53 * hash) + getDPPGDBBLCCM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -381,7 +405,7 @@ public final class GrandFestivalMusicGameRecordOuterClass {
 
         musicBasicId_ = 0;
 
-        maxScore_ = 0;
+        dPPGDBBLCCM_ = 0;
 
         return this;
       }
@@ -411,7 +435,7 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord result = new emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord(this);
         result.isUnlock_ = isUnlock_;
         result.musicBasicId_ = musicBasicId_;
-        result.maxScore_ = maxScore_;
+        result.dPPGDBBLCCM_ = dPPGDBBLCCM_;
         onBuilt();
         return result;
       }
@@ -466,8 +490,8 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         if (other.getMusicBasicId() != 0) {
           setMusicBasicId(other.getMusicBasicId());
         }
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
+        if (other.getDPPGDBBLCCM() != 0) {
+          setDPPGDBBLCCM(other.getDPPGDBBLCCM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -500,7 +524,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
 
       private boolean isUnlock_ ;
       /**
-       * <code>bool is_unlock = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_unlock = 14;</code>
        * @return The isUnlock.
        */
       @java.lang.Override
@@ -508,7 +536,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         return isUnlock_;
       }
       /**
-       * <code>bool is_unlock = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_unlock = 14;</code>
        * @param value The isUnlock to set.
        * @return This builder for chaining.
        */
@@ -519,7 +551,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         return this;
       }
       /**
-       * <code>bool is_unlock = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_unlock = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUnlock() {
@@ -531,7 +567,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
 
       private int musicBasicId_ ;
       /**
-       * <code>uint32 music_basic_id = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 music_basic_id = 4;</code>
        * @return The musicBasicId.
        */
       @java.lang.Override
@@ -539,7 +579,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         return musicBasicId_;
       }
       /**
-       * <code>uint32 music_basic_id = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 music_basic_id = 4;</code>
        * @param value The musicBasicId to set.
        * @return This builder for chaining.
        */
@@ -550,7 +594,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 music_basic_id = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 music_basic_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMusicBasicId() {
@@ -560,33 +608,45 @@ public final class GrandFestivalMusicGameRecordOuterClass {
         return this;
       }
 
-      private int maxScore_ ;
+      private int dPPGDBBLCCM_ ;
       /**
-       * <code>uint32 max_score = 5;</code>
-       * @return The maxScore.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 3;</code>
+       * @return The dPPGDBBLCCM.
        */
       @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
+      public int getDPPGDBBLCCM() {
+        return dPPGDBBLCCM_;
       }
       /**
-       * <code>uint32 max_score = 5;</code>
-       * @param value The maxScore to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 3;</code>
+       * @param value The dPPGDBBLCCM to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxScore(int value) {
+      public Builder setDPPGDBBLCCM(int value) {
         
-        maxScore_ = value;
+        dPPGDBBLCCM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_score = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxScore() {
+      public Builder clearDPPGDBBLCCM() {
         
-        maxScore_ = 0;
+        dPPGDBBLCCM_ = 0;
         onChanged();
         return this;
       }
@@ -657,11 +717,11 @@ public final class GrandFestivalMusicGameRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"GrandFestivalMusicGameRecord.proto\"\\\n\034" +
+      "\n\"GrandFestivalMusicGameRecord.proto\"^\n\034" +
       "GrandFestivalMusicGameRecord\022\021\n\tis_unloc" +
-      "k\030\r \001(\010\022\026\n\016music_basic_id\030\006 \001(\r\022\021\n\tmax_s" +
-      "core\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "k\030\016 \001(\010\022\026\n\016music_basic_id\030\004 \001(\r\022\023\n\013DPPGD" +
+      "BBLCCM\030\003 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +732,7 @@ public final class GrandFestivalMusicGameRecordOuterClass {
     internal_static_GrandFestivalMusicGameRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GrandFestivalMusicGameRecord_descriptor,
-        new java.lang.String[] { "IsUnlock", "MusicBasicId", "MaxScore", });
+        new java.lang.String[] { "IsUnlock", "MusicBasicId", "DPPGDBBLCCM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

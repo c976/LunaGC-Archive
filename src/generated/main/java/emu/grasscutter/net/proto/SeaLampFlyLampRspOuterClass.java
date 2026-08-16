@@ -19,27 +19,38 @@ public final class SeaLampFlyLampRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 item_num = 2;</code>
+     * @return The itemNum.
+     */
+    int getItemNum();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 item_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 item_id = 10;</code>
      * @return The itemId.
      */
     int getItemId();
-
-    /**
-     * <code>uint32 item_num = 7;</code>
-     * @return The itemNum.
-     */
-    int getItemNum();
   }
   /**
    * <pre>
-   * CmdId: 1255
-   * Obf: IPBBLEEEPNI
+   * CmdId: 4446
    * </pre>
    *
    * Protobuf type {@code SeaLampFlyLampRsp}
@@ -86,17 +97,17 @@ public final class SeaLampFlyLampRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              itemId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               itemNum_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
+
+              itemId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -133,10 +144,29 @@ public final class SeaLampFlyLampRspOuterClass {
               emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.class, emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int ITEM_NUM_FIELD_NUMBER = 2;
+    private int itemNum_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 item_num = 2;</code>
+     * @return The itemNum.
+     */
+    @java.lang.Override
+    public int getItemNum() {
+      return itemNum_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,26 +174,19 @@ public final class SeaLampFlyLampRspOuterClass {
       return retcode_;
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 3;
+    public static final int ITEM_ID_FIELD_NUMBER = 10;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 item_id = 10;</code>
      * @return The itemId.
      */
     @java.lang.Override
     public int getItemId() {
       return itemId_;
-    }
-
-    public static final int ITEM_NUM_FIELD_NUMBER = 7;
-    private int itemNum_;
-    /**
-     * <code>uint32 item_num = 7;</code>
-     * @return The itemNum.
-     */
-    @java.lang.Override
-    public int getItemNum() {
-      return itemNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +203,14 @@ public final class SeaLampFlyLampRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (itemId_ != 0) {
-        output.writeUInt32(3, itemId_);
-      }
       if (itemNum_ != 0) {
-        output.writeUInt32(7, itemNum_);
+        output.writeUInt32(2, itemNum_);
+      }
+      if (itemId_ != 0) {
+        output.writeUInt32(10, itemId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +221,17 @@ public final class SeaLampFlyLampRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (itemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, itemId_);
-      }
       if (itemNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, itemNum_);
+          .computeUInt32Size(2, itemNum_);
+      }
+      if (itemId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, itemId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +248,12 @@ public final class SeaLampFlyLampRspOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp other = (emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp) obj;
 
+      if (getItemNum()
+          != other.getItemNum()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getItemId()
           != other.getItemId()) return false;
-      if (getItemNum()
-          != other.getItemNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +265,12 @@ public final class SeaLampFlyLampRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ITEM_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getItemNum();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + ITEM_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getItemNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +368,7 @@ public final class SeaLampFlyLampRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1255
-     * Obf: IPBBLEEEPNI
+     * CmdId: 4446
      * </pre>
      *
      * Protobuf type {@code SeaLampFlyLampRsp}
@@ -386,11 +408,11 @@ public final class SeaLampFlyLampRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        itemNum_ = 0;
+
         retcode_ = 0;
 
         itemId_ = 0;
-
-        itemNum_ = 0;
 
         return this;
       }
@@ -418,9 +440,9 @@ public final class SeaLampFlyLampRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp buildPartial() {
         emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp result = new emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp(this);
+        result.itemNum_ = itemNum_;
         result.retcode_ = retcode_;
         result.itemId_ = itemId_;
-        result.itemNum_ = itemNum_;
         onBuilt();
         return result;
       }
@@ -469,14 +491,14 @@ public final class SeaLampFlyLampRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp other) {
         if (other == emu.grasscutter.net.proto.SeaLampFlyLampRspOuterClass.SeaLampFlyLampRsp.getDefaultInstance()) return this;
+        if (other.getItemNum() != 0) {
+          setItemNum(other.getItemNum());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
-        }
-        if (other.getItemNum() != 0) {
-          setItemNum(other.getItemNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +529,56 @@ public final class SeaLampFlyLampRspOuterClass {
         return this;
       }
 
+      private int itemNum_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 item_num = 2;</code>
+       * @return The itemNum.
+       */
+      @java.lang.Override
+      public int getItemNum() {
+        return itemNum_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 item_num = 2;</code>
+       * @param value The itemNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setItemNum(int value) {
+        
+        itemNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 item_num = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearItemNum() {
+        
+        itemNum_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -517,7 +586,11 @@ public final class SeaLampFlyLampRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -528,7 +601,11 @@ public final class SeaLampFlyLampRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -540,7 +617,11 @@ public final class SeaLampFlyLampRspOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 item_id = 10;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -548,7 +629,11 @@ public final class SeaLampFlyLampRspOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 item_id = 10;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -559,43 +644,16 @@ public final class SeaLampFlyLampRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 item_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
         
         itemId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int itemNum_ ;
-      /**
-       * <code>uint32 item_num = 7;</code>
-       * @return The itemNum.
-       */
-      @java.lang.Override
-      public int getItemNum() {
-        return itemNum_;
-      }
-      /**
-       * <code>uint32 item_num = 7;</code>
-       * @param value The itemNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemNum(int value) {
-        
-        itemNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 item_num = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemNum() {
-        
-        itemNum_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +725,8 @@ public final class SeaLampFlyLampRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SeaLampFlyLampRsp.proto\"G\n\021SeaLampFlyL" +
-      "ampRsp\022\017\n\007retcode\030\r \001(\005\022\017\n\007item_id\030\003 \001(\r" +
-      "\022\020\n\010item_num\030\007 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "ampRsp\022\020\n\010item_num\030\002 \001(\r\022\017\n\007retcode\030\013 \001(" +
+      "\005\022\017\n\007item_id\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +738,7 @@ public final class SeaLampFlyLampRspOuterClass {
     internal_static_SeaLampFlyLampRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampFlyLampRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ItemId", "ItemNum", });
+        new java.lang.String[] { "ItemNum", "Retcode", "ItemId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

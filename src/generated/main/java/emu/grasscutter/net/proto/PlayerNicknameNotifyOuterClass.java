@@ -32,8 +32,7 @@ public final class PlayerNicknameNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25316
-   * Obf: KDCHOGMENPG
+   * CmdId: 29859
    * </pre>
    *
    * Protobuf type {@code PlayerNicknameNotify}
@@ -313,8 +312,7 @@ public final class PlayerNicknameNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25316
-     * Obf: KDCHOGMENPG
+     * CmdId: 29859
      * </pre>
      *
      * Protobuf type {@code PlayerNicknameNotify}

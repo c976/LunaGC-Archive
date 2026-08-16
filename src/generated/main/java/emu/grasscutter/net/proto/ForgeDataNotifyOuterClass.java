@@ -19,11 +19,48 @@ public final class ForgeDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @return A list containing the forgeIdList.
+     */
+    java.util.List<java.lang.Integer> getForgeIdListList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @return The count of forgeIdList.
+     */
+    int getForgeIdListCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The forgeIdList at the given index.
+     */
+    int getForgeIdList(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     int getForgeQueueMapCount();
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     boolean containsForgeQueueMap(
         int key);
@@ -34,50 +71,49 @@ public final class ForgeDataNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
     getForgeQueueMap();
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
     getForgeQueueMapMap();
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
 
     emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData getForgeQueueMapOrDefault(
         int key,
         emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData defaultValue);
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
 
     emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData getForgeQueueMapOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @return A list containing the forgeIdList.
-     */
-    java.util.List<java.lang.Integer> getForgeIdListList();
-    /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @return The count of forgeIdList.
-     */
-    int getForgeIdListCount();
-    /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The forgeIdList at the given index.
-     */
-    int getForgeIdList(int index);
-
-    /**
-     * <code>uint32 max_queue_num = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 max_queue_num = 4;</code>
      * @return The maxQueueNum.
      */
     int getMaxQueueNum();
   }
   /**
    * <pre>
-   * CmdId: 28001
+   * CmdId: 5008
    * </pre>
    *
    * Protobuf type {@code ForgeDataNotify}
@@ -126,33 +162,20 @@ public final class ForgeDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                forgeQueueMap_ = com.google.protobuf.MapField.newMapField(
-                    ForgeQueueMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
-              forgeQueueMap__ = input.readMessage(
-                  ForgeQueueMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              forgeQueueMap_.getMutableMap().put(
-                  forgeQueueMap__.getKey(), forgeQueueMap__.getValue());
-              break;
-            }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 forgeIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               forgeIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 forgeIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 forgeIdList_.addInt(input.readUInt32());
@@ -160,9 +183,22 @@ public final class ForgeDataNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 32: {
 
               maxQueueNum_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                forgeQueueMap_ = com.google.protobuf.MapField.newMapField(
+                    ForgeQueueMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
+              forgeQueueMap__ = input.readMessage(
+                  ForgeQueueMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              forgeQueueMap_.getMutableMap().put(
+                  forgeQueueMap__.getKey(), forgeQueueMap__.getValue());
               break;
             }
             default: {
@@ -180,7 +216,7 @@ public final class ForgeDataNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           forgeIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -197,7 +233,7 @@ public final class ForgeDataNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
+        case 15:
           return internalGetForgeQueueMap();
         default:
           throw new RuntimeException(
@@ -212,7 +248,47 @@ public final class ForgeDataNotifyOuterClass {
               emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify.class, emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify.Builder.class);
     }
 
-    public static final int FORGE_QUEUE_MAP_FIELD_NUMBER = 4;
+    public static final int FORGE_ID_LIST_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList forgeIdList_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @return A list containing the forgeIdList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getForgeIdListList() {
+      return forgeIdList_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @return The count of forgeIdList.
+     */
+    public int getForgeIdListCount() {
+      return forgeIdList_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 forge_id_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The forgeIdList at the given index.
+     */
+    public int getForgeIdList(int index) {
+      return forgeIdList_.getInt(index);
+    }
+    private int forgeIdListMemoizedSerializedSize = -1;
+
+    public static final int FORGE_QUEUE_MAP_FIELD_NUMBER = 15;
     private static final class ForgeQueueMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData> defaultEntry =
@@ -239,7 +315,11 @@ public final class ForgeDataNotifyOuterClass {
       return internalGetForgeQueueMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
 
     @java.lang.Override
@@ -257,7 +337,11 @@ public final class ForgeDataNotifyOuterClass {
       return getForgeQueueMapMap();
     }
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     @java.lang.Override
 
@@ -265,7 +349,11 @@ public final class ForgeDataNotifyOuterClass {
       return internalGetForgeQueueMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     @java.lang.Override
 
@@ -278,7 +366,11 @@ public final class ForgeDataNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
      */
     @java.lang.Override
 
@@ -293,38 +385,14 @@ public final class ForgeDataNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int FORGE_ID_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList forgeIdList_;
-    /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @return A list containing the forgeIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getForgeIdListList() {
-      return forgeIdList_;
-    }
-    /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @return The count of forgeIdList.
-     */
-    public int getForgeIdListCount() {
-      return forgeIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 forge_id_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The forgeIdList at the given index.
-     */
-    public int getForgeIdList(int index) {
-      return forgeIdList_.getInt(index);
-    }
-    private int forgeIdListMemoizedSerializedSize = -1;
-
-    public static final int MAX_QUEUE_NUM_FIELD_NUMBER = 12;
+    public static final int MAX_QUEUE_NUM_FIELD_NUMBER = 4;
     private int maxQueueNum_;
     /**
-     * <code>uint32 max_queue_num = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 max_queue_num = 4;</code>
      * @return The maxQueueNum.
      */
     @java.lang.Override
@@ -347,22 +415,22 @@ public final class ForgeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetForgeQueueMap(),
-          ForgeQueueMapDefaultEntryHolder.defaultEntry,
-          4);
       if (getForgeIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(forgeIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < forgeIdList_.size(); i++) {
         output.writeUInt32NoTag(forgeIdList_.getInt(i));
       }
       if (maxQueueNum_ != 0) {
-        output.writeUInt32(12, maxQueueNum_);
+        output.writeUInt32(4, maxQueueNum_);
       }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetForgeQueueMap(),
+          ForgeQueueMapDefaultEntryHolder.defaultEntry,
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -372,16 +440,6 @@ public final class ForgeDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData> entry
-           : internalGetForgeQueueMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
-        forgeQueueMap__ = ForgeQueueMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, forgeQueueMap__);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < forgeIdList_.size(); i++) {
@@ -398,7 +456,17 @@ public final class ForgeDataNotifyOuterClass {
       }
       if (maxQueueNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, maxQueueNum_);
+          .computeUInt32Size(4, maxQueueNum_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData> entry
+           : internalGetForgeQueueMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
+        forgeQueueMap__ = ForgeQueueMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(15, forgeQueueMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -415,10 +483,10 @@ public final class ForgeDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify other = (emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify) obj;
 
-      if (!internalGetForgeQueueMap().equals(
-          other.internalGetForgeQueueMap())) return false;
       if (!getForgeIdListList()
           .equals(other.getForgeIdListList())) return false;
+      if (!internalGetForgeQueueMap().equals(
+          other.internalGetForgeQueueMap())) return false;
       if (getMaxQueueNum()
           != other.getMaxQueueNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -432,13 +500,13 @@ public final class ForgeDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetForgeQueueMap().getMap().isEmpty()) {
-        hash = (37 * hash) + FORGE_QUEUE_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetForgeQueueMap().hashCode();
-      }
       if (getForgeIdListCount() > 0) {
         hash = (37 * hash) + FORGE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getForgeIdListList().hashCode();
+      }
+      if (!internalGetForgeQueueMap().getMap().isEmpty()) {
+        hash = (37 * hash) + FORGE_QUEUE_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetForgeQueueMap().hashCode();
       }
       hash = (37 * hash) + MAX_QUEUE_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getMaxQueueNum();
@@ -539,7 +607,7 @@ public final class ForgeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28001
+     * CmdId: 5008
      * </pre>
      *
      * Protobuf type {@code ForgeDataNotify}
@@ -557,7 +625,7 @@ public final class ForgeDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 15:
             return internalGetForgeQueueMap();
           default:
             throw new RuntimeException(
@@ -568,7 +636,7 @@ public final class ForgeDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 15:
             return internalGetMutableForgeQueueMap();
           default:
             throw new RuntimeException(
@@ -601,9 +669,9 @@ public final class ForgeDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableForgeQueueMap().clear();
         forgeIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
+        internalGetMutableForgeQueueMap().clear();
         maxQueueNum_ = 0;
 
         return this;
@@ -633,13 +701,13 @@ public final class ForgeDataNotifyOuterClass {
       public emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify buildPartial() {
         emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify result = new emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify(this);
         int from_bitField0_ = bitField0_;
-        result.forgeQueueMap_ = internalGetForgeQueueMap();
-        result.forgeQueueMap_.makeImmutable();
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           forgeIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.forgeIdList_ = forgeIdList_;
+        result.forgeQueueMap_ = internalGetForgeQueueMap();
+        result.forgeQueueMap_.makeImmutable();
         result.maxQueueNum_ = maxQueueNum_;
         onBuilt();
         return result;
@@ -689,18 +757,18 @@ public final class ForgeDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify other) {
         if (other == emu.grasscutter.net.proto.ForgeDataNotifyOuterClass.ForgeDataNotify.getDefaultInstance()) return this;
-        internalGetMutableForgeQueueMap().mergeFrom(
-            other.internalGetForgeQueueMap());
         if (!other.forgeIdList_.isEmpty()) {
           if (forgeIdList_.isEmpty()) {
             forgeIdList_ = other.forgeIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureForgeIdListIsMutable();
             forgeIdList_.addAll(other.forgeIdList_);
           }
           onChanged();
         }
+        internalGetMutableForgeQueueMap().mergeFrom(
+            other.internalGetForgeQueueMap());
         if (other.getMaxQueueNum() != 0) {
           setMaxQueueNum(other.getMaxQueueNum());
         }
@@ -734,6 +802,113 @@ public final class ForgeDataNotifyOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList forgeIdList_ = emptyIntList();
+      private void ensureForgeIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          forgeIdList_ = mutableCopy(forgeIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @return A list containing the forgeIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getForgeIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(forgeIdList_) : forgeIdList_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @return The count of forgeIdList.
+       */
+      public int getForgeIdListCount() {
+        return forgeIdList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The forgeIdList at the given index.
+       */
+      public int getForgeIdList(int index) {
+        return forgeIdList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The forgeIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForgeIdList(
+          int index, int value) {
+        ensureForgeIdListIsMutable();
+        forgeIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @param value The forgeIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addForgeIdList(int value) {
+        ensureForgeIdListIsMutable();
+        forgeIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @param values The forgeIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllForgeIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureForgeIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, forgeIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 forge_id_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForgeIdList() {
+        forgeIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.MapField<
           java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData> forgeQueueMap_;
       private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData>
@@ -761,7 +936,11 @@ public final class ForgeDataNotifyOuterClass {
         return internalGetForgeQueueMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
 
       @java.lang.Override
@@ -779,7 +958,11 @@ public final class ForgeDataNotifyOuterClass {
         return getForgeQueueMapMap();
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
       @java.lang.Override
 
@@ -787,7 +970,11 @@ public final class ForgeDataNotifyOuterClass {
         return internalGetForgeQueueMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
       @java.lang.Override
 
@@ -800,7 +987,11 @@ public final class ForgeDataNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
       @java.lang.Override
 
@@ -821,7 +1012,11 @@ public final class ForgeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
 
       public Builder removeForgeQueueMap(
@@ -840,7 +1035,11 @@ public final class ForgeDataNotifyOuterClass {
         return internalGetMutableForgeQueueMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
       public Builder putForgeQueueMap(
           int key,
@@ -852,7 +1051,11 @@ public final class ForgeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .ForgeQueueData&gt; forge_queue_map = 15;</code>
        */
 
       public Builder putAllForgeQueueMap(
@@ -862,88 +1065,13 @@ public final class ForgeDataNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList forgeIdList_ = emptyIntList();
-      private void ensureForgeIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          forgeIdList_ = mutableCopy(forgeIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @return A list containing the forgeIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getForgeIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(forgeIdList_) : forgeIdList_;
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @return The count of forgeIdList.
-       */
-      public int getForgeIdListCount() {
-        return forgeIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The forgeIdList at the given index.
-       */
-      public int getForgeIdList(int index) {
-        return forgeIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The forgeIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForgeIdList(
-          int index, int value) {
-        ensureForgeIdListIsMutable();
-        forgeIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @param value The forgeIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addForgeIdList(int value) {
-        ensureForgeIdListIsMutable();
-        forgeIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @param values The forgeIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllForgeIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureForgeIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, forgeIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 forge_id_list = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearForgeIdList() {
-        forgeIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private int maxQueueNum_ ;
       /**
-       * <code>uint32 max_queue_num = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 max_queue_num = 4;</code>
        * @return The maxQueueNum.
        */
       @java.lang.Override
@@ -951,7 +1079,11 @@ public final class ForgeDataNotifyOuterClass {
         return maxQueueNum_;
       }
       /**
-       * <code>uint32 max_queue_num = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 max_queue_num = 4;</code>
        * @param value The maxQueueNum to set.
        * @return This builder for chaining.
        */
@@ -962,7 +1094,11 @@ public final class ForgeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_queue_num = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 max_queue_num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxQueueNum() {
@@ -1044,10 +1180,10 @@ public final class ForgeDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ForgeDataNotify.proto\032\024ForgeQueueData." +
-      "proto\"\304\001\n\017ForgeDataNotify\022<\n\017forge_queue" +
-      "_map\030\004 \003(\0132#.ForgeDataNotify.ForgeQueueM" +
-      "apEntry\022\025\n\rforge_id_list\030\007 \003(\r\022\025\n\rmax_qu" +
-      "eue_num\030\014 \001(\r\032E\n\022ForgeQueueMapEntry\022\013\n\003k" +
+      "proto\"\304\001\n\017ForgeDataNotify\022\025\n\rforge_id_li" +
+      "st\030\002 \003(\r\022<\n\017forge_queue_map\030\017 \003(\0132#.Forg" +
+      "eDataNotify.ForgeQueueMapEntry\022\025\n\rmax_qu" +
+      "eue_num\030\004 \001(\r\032E\n\022ForgeQueueMapEntry\022\013\n\003k" +
       "ey\030\001 \001(\r\022\036\n\005value\030\002 \001(\0132\017.ForgeQueueData" +
       ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
@@ -1062,7 +1198,7 @@ public final class ForgeDataNotifyOuterClass {
     internal_static_ForgeDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForgeDataNotify_descriptor,
-        new java.lang.String[] { "ForgeQueueMap", "ForgeIdList", "MaxQueueNum", });
+        new java.lang.String[] { "ForgeIdList", "ForgeQueueMap", "MaxQueueNum", });
     internal_static_ForgeDataNotify_ForgeQueueMapEntry_descriptor =
       internal_static_ForgeDataNotify_descriptor.getNestedTypes().get(0);
     internal_static_ForgeDataNotify_ForgeQueueMapEntry_fieldAccessorTable = new

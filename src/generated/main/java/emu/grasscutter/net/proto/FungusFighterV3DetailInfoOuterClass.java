@@ -19,27 +19,47 @@ public final class FungusFighterV3DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> 
+    java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> 
         getLevelInfoListList();
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
-    emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH getLevelInfoList(int index);
+    emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN getLevelInfoList(int index);
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
-    emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class FungusFighterV3DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class FungusFighterV3DetailInfoOuterClass {
               emu.grasscutter.net.proto.FungusFighterV3DetailInfoOuterClass.FungusFighterV3DetailInfo.class, emu.grasscutter.net.proto.FungusFighterV3DetailInfoOuterClass.FungusFighterV3DetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> levelInfoList_;
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class FungusFighterV3DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(1, levelInfoList_.get(i));
+        output.writeMessage(14, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class FungusFighterV3DetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, levelInfoList_.get(i));
+          .computeMessageSize(14, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class FungusFighterV3DetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class FungusFighterV3DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class FungusFighterV3DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH value) {
+          int index, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH value) {
+          int index, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder builderForValue) {
+          emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class FungusFighterV3DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class FungusFighterV3DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class FungusFighterV3DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.getDefaultInstance());
+            emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.getDefaultInstance());
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.getDefaultInstance());
+            index, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.getDefaultInstance());
       }
       /**
-       * <code>repeated .KNCNBDHGCCH level_info_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FFPOPBLBPJN level_info_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder> 
+          emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCH.Builder, emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.KNCNBDHGCCHOrBuilder>(
+              emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJN.Builder, emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.FFPOPBLBPJNOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,15 +933,15 @@ public final class FungusFighterV3DetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037FungusFighterV3DetailInfo.proto\032\021KNCNB" +
-      "DHGCCH.proto\"B\n\031FungusFighterV3DetailInf" +
-      "o\022%\n\017level_info_list\030\001 \003(\0132\014.KNCNBDHGCCH" +
+      "\n\037FungusFighterV3DetailInfo.proto\032\021FFPOP" +
+      "BLBPJN.proto\"B\n\031FungusFighterV3DetailInf" +
+      "o\022%\n\017level_info_list\030\016 \003(\0132\014.FFPOPBLBPJN" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.getDescriptor(),
         });
     internal_static_FungusFighterV3DetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -837,7 +949,7 @@ public final class FungusFighterV3DetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterV3DetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.KNCNBDHGCCHOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FFPOPBLBPJNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

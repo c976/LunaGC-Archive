@@ -19,52 +19,76 @@ public final class AbilityMixinGlobalShieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float FIEFKGHCBBO = 9;</code>
-     * @return The fIEFKGHCBBO.
-     */
-    float getFIEFKGHCBBO();
-
-    /**
-     * <code>string shield_effect_name = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string shield_effect_name = 14;</code>
      * @return The shieldEffectName.
      */
     java.lang.String getShieldEffectName();
     /**
-     * <code>string shield_effect_name = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string shield_effect_name = 14;</code>
      * @return The bytes for shieldEffectName.
      */
     com.google.protobuf.ByteString
         getShieldEffectNameBytes();
 
     /**
-     * <code>float APBPKKMCPIA = 7;</code>
-     * @return The aPBPKKMCPIA.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 12;</code>
+     * @return The bBCMJOGEOPC.
      */
-    float getAPBPKKMCPIA();
+    float getBBCMJOGEOPC();
 
     /**
-     * <code>bool is_create_effect = 6;</code>
-     * @return The isCreateEffect.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float EHHBKFFIHBO = 1;</code>
+     * @return The eHHBKFFIHBO.
      */
-    boolean getIsCreateEffect();
+    float getEHHBKFFIHBO();
 
     /**
-     * <code>float AFHOPKKJCJF = 14;</code>
-     * @return The aFHOPKKJCJF.
-     */
-    float getAFHOPKKJCJF();
-
-    /**
-     * <code>uint32 avatar_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 6;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float BMJAKOOADEK = 9;</code>
+     * @return The bMJAKOOADEK.
+     */
+    float getBMJAKOOADEK();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_create_effect = 2;</code>
+     * @return The isCreateEffect.
+     */
+    boolean getIsCreateEffect();
   }
   /**
-   * <pre>
-   * Obf: NMBEIFBPELC
-   * </pre>
-   *
    * Protobuf type {@code AbilityMixinGlobalShield}
    */
   public static final class AbilityMixinGlobalShield extends
@@ -110,35 +134,35 @@ public final class AbilityMixinGlobalShieldOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 13: {
+
+              eHHBKFFIHBO_ = input.readFloat();
+              break;
+            }
+            case 16: {
 
               isCreateEffect_ = input.readBool();
               break;
             }
-            case 61: {
-
-              aPBPKKMCPIA_ = input.readFloat();
-              break;
-            }
-            case 66: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              shieldEffectName_ = s;
-              break;
-            }
-            case 77: {
-
-              fIEFKGHCBBO_ = input.readFloat();
-              break;
-            }
-            case 88: {
+            case 48: {
 
               avatarId_ = input.readUInt32();
               break;
             }
-            case 117: {
+            case 77: {
 
-              aFHOPKKJCJF_ = input.readFloat();
+              bMJAKOOADEK_ = input.readFloat();
+              break;
+            }
+            case 101: {
+
+              bBCMJOGEOPC_ = input.readFloat();
+              break;
+            }
+            case 114: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              shieldEffectName_ = s;
               break;
             }
             default: {
@@ -173,21 +197,14 @@ public final class AbilityMixinGlobalShieldOuterClass {
               emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.class, emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.Builder.class);
     }
 
-    public static final int FIEFKGHCBBO_FIELD_NUMBER = 9;
-    private float fIEFKGHCBBO_;
-    /**
-     * <code>float FIEFKGHCBBO = 9;</code>
-     * @return The fIEFKGHCBBO.
-     */
-    @java.lang.Override
-    public float getFIEFKGHCBBO() {
-      return fIEFKGHCBBO_;
-    }
-
-    public static final int SHIELD_EFFECT_NAME_FIELD_NUMBER = 8;
+    public static final int SHIELD_EFFECT_NAME_FIELD_NUMBER = 14;
     private volatile java.lang.Object shieldEffectName_;
     /**
-     * <code>string shield_effect_name = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string shield_effect_name = 14;</code>
      * @return The shieldEffectName.
      */
     @java.lang.Override
@@ -204,7 +221,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
     }
     /**
-     * <code>string shield_effect_name = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string shield_effect_name = 14;</code>
      * @return The bytes for shieldEffectName.
      */
     @java.lang.Override
@@ -222,48 +243,79 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
     }
 
-    public static final int APBPKKMCPIA_FIELD_NUMBER = 7;
-    private float aPBPKKMCPIA_;
+    public static final int BBCMJOGEOPC_FIELD_NUMBER = 12;
+    private float bBCMJOGEOPC_;
     /**
-     * <code>float APBPKKMCPIA = 7;</code>
-     * @return The aPBPKKMCPIA.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 12;</code>
+     * @return The bBCMJOGEOPC.
      */
     @java.lang.Override
-    public float getAPBPKKMCPIA() {
-      return aPBPKKMCPIA_;
+    public float getBBCMJOGEOPC() {
+      return bBCMJOGEOPC_;
     }
 
-    public static final int IS_CREATE_EFFECT_FIELD_NUMBER = 6;
-    private boolean isCreateEffect_;
+    public static final int EHHBKFFIHBO_FIELD_NUMBER = 1;
+    private float eHHBKFFIHBO_;
     /**
-     * <code>bool is_create_effect = 6;</code>
-     * @return The isCreateEffect.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float EHHBKFFIHBO = 1;</code>
+     * @return The eHHBKFFIHBO.
      */
     @java.lang.Override
-    public boolean getIsCreateEffect() {
-      return isCreateEffect_;
+    public float getEHHBKFFIHBO() {
+      return eHHBKFFIHBO_;
     }
 
-    public static final int AFHOPKKJCJF_FIELD_NUMBER = 14;
-    private float aFHOPKKJCJF_;
-    /**
-     * <code>float AFHOPKKJCJF = 14;</code>
-     * @return The aFHOPKKJCJF.
-     */
-    @java.lang.Override
-    public float getAFHOPKKJCJF() {
-      return aFHOPKKJCJF_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 11;
+    public static final int AVATAR_ID_FIELD_NUMBER = 6;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 6;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int BMJAKOOADEK_FIELD_NUMBER = 9;
+    private float bMJAKOOADEK_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float BMJAKOOADEK = 9;</code>
+     * @return The bMJAKOOADEK.
+     */
+    @java.lang.Override
+    public float getBMJAKOOADEK() {
+      return bMJAKOOADEK_;
+    }
+
+    public static final int IS_CREATE_EFFECT_FIELD_NUMBER = 2;
+    private boolean isCreateEffect_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_create_effect = 2;</code>
+     * @return The isCreateEffect.
+     */
+    @java.lang.Override
+    public boolean getIsCreateEffect() {
+      return isCreateEffect_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -280,23 +332,23 @@ public final class AbilityMixinGlobalShieldOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (eHHBKFFIHBO_ != 0F) {
+        output.writeFloat(1, eHHBKFFIHBO_);
+      }
       if (isCreateEffect_ != false) {
-        output.writeBool(6, isCreateEffect_);
-      }
-      if (aPBPKKMCPIA_ != 0F) {
-        output.writeFloat(7, aPBPKKMCPIA_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, shieldEffectName_);
-      }
-      if (fIEFKGHCBBO_ != 0F) {
-        output.writeFloat(9, fIEFKGHCBBO_);
+        output.writeBool(2, isCreateEffect_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(11, avatarId_);
+        output.writeUInt32(6, avatarId_);
       }
-      if (aFHOPKKJCJF_ != 0F) {
-        output.writeFloat(14, aFHOPKKJCJF_);
+      if (bMJAKOOADEK_ != 0F) {
+        output.writeFloat(9, bMJAKOOADEK_);
+      }
+      if (bBCMJOGEOPC_ != 0F) {
+        output.writeFloat(12, bBCMJOGEOPC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, shieldEffectName_);
       }
       unknownFields.writeTo(output);
     }
@@ -307,28 +359,28 @@ public final class AbilityMixinGlobalShieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eHHBKFFIHBO_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(1, eHHBKFFIHBO_);
+      }
       if (isCreateEffect_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isCreateEffect_);
-      }
-      if (aPBPKKMCPIA_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(7, aPBPKKMCPIA_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, shieldEffectName_);
-      }
-      if (fIEFKGHCBBO_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(9, fIEFKGHCBBO_);
+          .computeBoolSize(2, isCreateEffect_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, avatarId_);
+          .computeUInt32Size(6, avatarId_);
       }
-      if (aFHOPKKJCJF_ != 0F) {
+      if (bMJAKOOADEK_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, aFHOPKKJCJF_);
+          .computeFloatSize(9, bMJAKOOADEK_);
+      }
+      if (bBCMJOGEOPC_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(12, bBCMJOGEOPC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shieldEffectName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, shieldEffectName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,21 +397,21 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield other = (emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield) obj;
 
-      if (java.lang.Float.floatToIntBits(getFIEFKGHCBBO())
-          != java.lang.Float.floatToIntBits(
-              other.getFIEFKGHCBBO())) return false;
       if (!getShieldEffectName()
           .equals(other.getShieldEffectName())) return false;
-      if (java.lang.Float.floatToIntBits(getAPBPKKMCPIA())
+      if (java.lang.Float.floatToIntBits(getBBCMJOGEOPC())
           != java.lang.Float.floatToIntBits(
-              other.getAPBPKKMCPIA())) return false;
-      if (getIsCreateEffect()
-          != other.getIsCreateEffect()) return false;
-      if (java.lang.Float.floatToIntBits(getAFHOPKKJCJF())
+              other.getBBCMJOGEOPC())) return false;
+      if (java.lang.Float.floatToIntBits(getEHHBKFFIHBO())
           != java.lang.Float.floatToIntBits(
-              other.getAFHOPKKJCJF())) return false;
+              other.getEHHBKFFIHBO())) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (java.lang.Float.floatToIntBits(getBMJAKOOADEK())
+          != java.lang.Float.floatToIntBits(
+              other.getBMJAKOOADEK())) return false;
+      if (getIsCreateEffect()
+          != other.getIsCreateEffect()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -371,22 +423,22 @@ public final class AbilityMixinGlobalShieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FIEFKGHCBBO_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFIEFKGHCBBO());
       hash = (37 * hash) + SHIELD_EFFECT_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getShieldEffectName().hashCode();
-      hash = (37 * hash) + APBPKKMCPIA_FIELD_NUMBER;
+      hash = (37 * hash) + BBCMJOGEOPC_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAPBPKKMCPIA());
+          getBBCMJOGEOPC());
+      hash = (37 * hash) + EHHBKFFIHBO_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getEHHBKFFIHBO());
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + BMJAKOOADEK_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getBMJAKOOADEK());
       hash = (37 * hash) + IS_CREATE_EFFECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCreateEffect());
-      hash = (37 * hash) + AFHOPKKJCJF_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAFHOPKKJCJF());
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -483,10 +535,6 @@ public final class AbilityMixinGlobalShieldOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NMBEIFBPELC
-     * </pre>
-     *
      * Protobuf type {@code AbilityMixinGlobalShield}
      */
     public static final class Builder extends
@@ -524,17 +572,17 @@ public final class AbilityMixinGlobalShieldOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fIEFKGHCBBO_ = 0F;
-
         shieldEffectName_ = "";
 
-        aPBPKKMCPIA_ = 0F;
+        bBCMJOGEOPC_ = 0F;
 
-        isCreateEffect_ = false;
-
-        aFHOPKKJCJF_ = 0F;
+        eHHBKFFIHBO_ = 0F;
 
         avatarId_ = 0;
+
+        bMJAKOOADEK_ = 0F;
+
+        isCreateEffect_ = false;
 
         return this;
       }
@@ -562,12 +610,12 @@ public final class AbilityMixinGlobalShieldOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield result = new emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield(this);
-        result.fIEFKGHCBBO_ = fIEFKGHCBBO_;
         result.shieldEffectName_ = shieldEffectName_;
-        result.aPBPKKMCPIA_ = aPBPKKMCPIA_;
-        result.isCreateEffect_ = isCreateEffect_;
-        result.aFHOPKKJCJF_ = aFHOPKKJCJF_;
+        result.bBCMJOGEOPC_ = bBCMJOGEOPC_;
+        result.eHHBKFFIHBO_ = eHHBKFFIHBO_;
         result.avatarId_ = avatarId_;
+        result.bMJAKOOADEK_ = bMJAKOOADEK_;
+        result.isCreateEffect_ = isCreateEffect_;
         onBuilt();
         return result;
       }
@@ -616,24 +664,24 @@ public final class AbilityMixinGlobalShieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinGlobalShieldOuterClass.AbilityMixinGlobalShield.getDefaultInstance()) return this;
-        if (other.getFIEFKGHCBBO() != 0F) {
-          setFIEFKGHCBBO(other.getFIEFKGHCBBO());
-        }
         if (!other.getShieldEffectName().isEmpty()) {
           shieldEffectName_ = other.shieldEffectName_;
           onChanged();
         }
-        if (other.getAPBPKKMCPIA() != 0F) {
-          setAPBPKKMCPIA(other.getAPBPKKMCPIA());
+        if (other.getBBCMJOGEOPC() != 0F) {
+          setBBCMJOGEOPC(other.getBBCMJOGEOPC());
         }
-        if (other.getIsCreateEffect() != false) {
-          setIsCreateEffect(other.getIsCreateEffect());
-        }
-        if (other.getAFHOPKKJCJF() != 0F) {
-          setAFHOPKKJCJF(other.getAFHOPKKJCJF());
+        if (other.getEHHBKFFIHBO() != 0F) {
+          setEHHBKFFIHBO(other.getEHHBKFFIHBO());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getBMJAKOOADEK() != 0F) {
+          setBMJAKOOADEK(other.getBMJAKOOADEK());
+        }
+        if (other.getIsCreateEffect() != false) {
+          setIsCreateEffect(other.getIsCreateEffect());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -664,40 +712,13 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
 
-      private float fIEFKGHCBBO_ ;
-      /**
-       * <code>float FIEFKGHCBBO = 9;</code>
-       * @return The fIEFKGHCBBO.
-       */
-      @java.lang.Override
-      public float getFIEFKGHCBBO() {
-        return fIEFKGHCBBO_;
-      }
-      /**
-       * <code>float FIEFKGHCBBO = 9;</code>
-       * @param value The fIEFKGHCBBO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFIEFKGHCBBO(float value) {
-        
-        fIEFKGHCBBO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float FIEFKGHCBBO = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFIEFKGHCBBO() {
-        
-        fIEFKGHCBBO_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object shieldEffectName_ = "";
       /**
-       * <code>string shield_effect_name = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string shield_effect_name = 14;</code>
        * @return The shieldEffectName.
        */
       public java.lang.String getShieldEffectName() {
@@ -713,7 +734,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
         }
       }
       /**
-       * <code>string shield_effect_name = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string shield_effect_name = 14;</code>
        * @return The bytes for shieldEffectName.
        */
       public com.google.protobuf.ByteString
@@ -730,7 +755,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
         }
       }
       /**
-       * <code>string shield_effect_name = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string shield_effect_name = 14;</code>
        * @param value The shieldEffectName to set.
        * @return This builder for chaining.
        */
@@ -745,7 +774,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
       /**
-       * <code>string shield_effect_name = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string shield_effect_name = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearShieldEffectName() {
@@ -755,7 +788,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
       /**
-       * <code>string shield_effect_name = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string shield_effect_name = 14;</code>
        * @param value The bytes for shieldEffectName to set.
        * @return This builder for chaining.
        */
@@ -771,102 +808,99 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
 
-      private float aPBPKKMCPIA_ ;
+      private float bBCMJOGEOPC_ ;
       /**
-       * <code>float APBPKKMCPIA = 7;</code>
-       * @return The aPBPKKMCPIA.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
+       * @return The bBCMJOGEOPC.
        */
       @java.lang.Override
-      public float getAPBPKKMCPIA() {
-        return aPBPKKMCPIA_;
+      public float getBBCMJOGEOPC() {
+        return bBCMJOGEOPC_;
       }
       /**
-       * <code>float APBPKKMCPIA = 7;</code>
-       * @param value The aPBPKKMCPIA to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
+       * @param value The bBCMJOGEOPC to set.
        * @return This builder for chaining.
        */
-      public Builder setAPBPKKMCPIA(float value) {
+      public Builder setBBCMJOGEOPC(float value) {
         
-        aPBPKKMCPIA_ = value;
+        bBCMJOGEOPC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float APBPKKMCPIA = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAPBPKKMCPIA() {
+      public Builder clearBBCMJOGEOPC() {
         
-        aPBPKKMCPIA_ = 0F;
+        bBCMJOGEOPC_ = 0F;
         onChanged();
         return this;
       }
 
-      private boolean isCreateEffect_ ;
+      private float eHHBKFFIHBO_ ;
       /**
-       * <code>bool is_create_effect = 6;</code>
-       * @return The isCreateEffect.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EHHBKFFIHBO = 1;</code>
+       * @return The eHHBKFFIHBO.
        */
       @java.lang.Override
-      public boolean getIsCreateEffect() {
-        return isCreateEffect_;
+      public float getEHHBKFFIHBO() {
+        return eHHBKFFIHBO_;
       }
       /**
-       * <code>bool is_create_effect = 6;</code>
-       * @param value The isCreateEffect to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EHHBKFFIHBO = 1;</code>
+       * @param value The eHHBKFFIHBO to set.
        * @return This builder for chaining.
        */
-      public Builder setIsCreateEffect(boolean value) {
+      public Builder setEHHBKFFIHBO(float value) {
         
-        isCreateEffect_ = value;
+        eHHBKFFIHBO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_create_effect = 6;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EHHBKFFIHBO = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsCreateEffect() {
+      public Builder clearEHHBKFFIHBO() {
         
-        isCreateEffect_ = false;
-        onChanged();
-        return this;
-      }
-
-      private float aFHOPKKJCJF_ ;
-      /**
-       * <code>float AFHOPKKJCJF = 14;</code>
-       * @return The aFHOPKKJCJF.
-       */
-      @java.lang.Override
-      public float getAFHOPKKJCJF() {
-        return aFHOPKKJCJF_;
-      }
-      /**
-       * <code>float AFHOPKKJCJF = 14;</code>
-       * @param value The aFHOPKKJCJF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAFHOPKKJCJF(float value) {
-        
-        aFHOPKKJCJF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float AFHOPKKJCJF = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAFHOPKKJCJF() {
-        
-        aFHOPKKJCJF_ = 0F;
+        eHHBKFFIHBO_ = 0F;
         onChanged();
         return this;
       }
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 6;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -874,7 +908,11 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 6;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -885,12 +923,102 @@ public final class AbilityMixinGlobalShieldOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
         
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float bMJAKOOADEK_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 9;</code>
+       * @return The bMJAKOOADEK.
+       */
+      @java.lang.Override
+      public float getBMJAKOOADEK() {
+        return bMJAKOOADEK_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 9;</code>
+       * @param value The bMJAKOOADEK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBMJAKOOADEK(float value) {
+        
+        bMJAKOOADEK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBMJAKOOADEK() {
+        
+        bMJAKOOADEK_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCreateEffect_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_create_effect = 2;</code>
+       * @return The isCreateEffect.
+       */
+      @java.lang.Override
+      public boolean getIsCreateEffect() {
+        return isCreateEffect_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_create_effect = 2;</code>
+       * @param value The isCreateEffect to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCreateEffect(boolean value) {
+        
+        isCreateEffect_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_create_effect = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCreateEffect() {
+        
+        isCreateEffect_ = false;
         onChanged();
         return this;
       }
@@ -962,10 +1090,10 @@ public final class AbilityMixinGlobalShieldOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036AbilityMixinGlobalShield.proto\"\242\001\n\030Abi" +
-      "lityMixinGlobalShield\022\023\n\013FIEFKGHCBBO\030\t \001" +
-      "(\002\022\032\n\022shield_effect_name\030\010 \001(\t\022\023\n\013APBPKK" +
-      "MCPIA\030\007 \001(\002\022\030\n\020is_create_effect\030\006 \001(\010\022\023\n" +
-      "\013AFHOPKKJCJF\030\016 \001(\002\022\021\n\tavatar_id\030\013 \001(\rB\033\n" +
+      "lityMixinGlobalShield\022\032\n\022shield_effect_n" +
+      "ame\030\016 \001(\t\022\023\n\013BBCMJOGEOPC\030\014 \001(\002\022\023\n\013EHHBKF" +
+      "FIHBO\030\001 \001(\002\022\021\n\tavatar_id\030\006 \001(\r\022\023\n\013BMJAKO" +
+      "OADEK\030\t \001(\002\022\030\n\020is_create_effect\030\002 \001(\010B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -977,7 +1105,7 @@ public final class AbilityMixinGlobalShieldOuterClass {
     internal_static_AbilityMixinGlobalShield_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinGlobalShield_descriptor,
-        new java.lang.String[] { "FIEFKGHCBBO", "ShieldEffectName", "APBPKKMCPIA", "IsCreateEffect", "AFHOPKKJCJF", "AvatarId", });
+        new java.lang.String[] { "ShieldEffectName", "BBCMJOGEOPC", "EHHBKFFIHBO", "AvatarId", "BMJAKOOADEK", "IsCreateEffect", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

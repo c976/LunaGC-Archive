@@ -19,18 +19,22 @@ public final class SceneEntityDrownRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 25119
+   * </pre>
+   *
    * Protobuf type {@code SceneEntityDrownRsp}
    */
   public static final class SceneEntityDrownRsp extends
@@ -75,12 +79,12 @@ public final class SceneEntityDrownRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 40: {
 
               entityId_ = input.readUInt32();
               break;
@@ -117,26 +121,26 @@ public final class SceneEntityDrownRspOuterClass {
               emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp.class, emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,10 +158,10 @@ public final class SceneEntityDrownRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(5, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +174,11 @@ public final class SceneEntityDrownRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(5, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +195,10 @@ public final class SceneEntityDrownRspOuterClass {
       }
       emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp other = (emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +210,10 @@ public final class SceneEntityDrownRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -306,6 +310,10 @@ public final class SceneEntityDrownRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 25119
+     * </pre>
+     *
      * Protobuf type {@code SceneEntityDrownRsp}
      */
     public static final class Builder extends
@@ -343,9 +351,9 @@ public final class SceneEntityDrownRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         entityId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -373,8 +381,8 @@ public final class SceneEntityDrownRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp buildPartial() {
         emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp result = new emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp(this);
-        result.retcode_ = retcode_;
         result.entityId_ = entityId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -423,11 +431,11 @@ public final class SceneEntityDrownRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp other) {
         if (other == emu.grasscutter.net.proto.SceneEntityDrownRspOuterClass.SceneEntityDrownRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +466,9 @@ public final class SceneEntityDrownRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -499,7 +476,7 @@ public final class SceneEntityDrownRspOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -510,12 +487,43 @@ public final class SceneEntityDrownRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +595,8 @@ public final class SceneEntityDrownRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031SceneEntityDrownRsp.proto\"9\n\023SceneEnti" +
-      "tyDrownRsp\022\017\n\007retcode\030\007 \001(\005\022\021\n\tentity_id" +
-      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "tyDrownRsp\022\021\n\tentity_id\030\005 \001(\r\022\017\n\007retcode" +
+      "\030\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +608,7 @@ public final class SceneEntityDrownRspOuterClass {
     internal_static_SceneEntityDrownRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityDrownRsp_descriptor,
-        new java.lang.String[] { "Retcode", "EntityId", });
+        new java.lang.String[] { "EntityId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

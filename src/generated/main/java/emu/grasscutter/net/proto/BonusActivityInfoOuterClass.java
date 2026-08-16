@@ -19,22 +19,18 @@ public final class BonusActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bonus_activity_id = 7;</code>
-     * @return The bonusActivityId.
-     */
-    int getBonusActivityId();
-
-    /**
-     * <code>uint32 state = 14;</code>
+     * <code>uint32 state = 4;</code>
      * @return The state.
      */
     int getState();
+
+    /**
+     * <code>uint32 bonus_activity_id = 12;</code>
+     * @return The bonusActivityId.
+     */
+    int getBonusActivityId();
   }
   /**
-   * <pre>
-   * Obf: BLGBDLDEJCD
-   * </pre>
-   *
    * Protobuf type {@code BonusActivityInfo}
    */
   public static final class BonusActivityInfo extends
@@ -79,14 +75,14 @@ public final class BonusActivityInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              bonusActivityId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 32: {
 
               state_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              bonusActivityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class BonusActivityInfoOuterClass {
               emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.class, emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.Builder.class);
     }
 
-    public static final int BONUS_ACTIVITY_ID_FIELD_NUMBER = 7;
-    private int bonusActivityId_;
-    /**
-     * <code>uint32 bonus_activity_id = 7;</code>
-     * @return The bonusActivityId.
-     */
-    @java.lang.Override
-    public int getBonusActivityId() {
-      return bonusActivityId_;
-    }
-
-    public static final int STATE_FIELD_NUMBER = 14;
+    public static final int STATE_FIELD_NUMBER = 4;
     private int state_;
     /**
-     * <code>uint32 state = 14;</code>
+     * <code>uint32 state = 4;</code>
      * @return The state.
      */
     @java.lang.Override
     public int getState() {
       return state_;
+    }
+
+    public static final int BONUS_ACTIVITY_ID_FIELD_NUMBER = 12;
+    private int bonusActivityId_;
+    /**
+     * <code>uint32 bonus_activity_id = 12;</code>
+     * @return The bonusActivityId.
+     */
+    @java.lang.Override
+    public int getBonusActivityId() {
+      return bonusActivityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class BonusActivityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bonusActivityId_ != 0) {
-        output.writeUInt32(7, bonusActivityId_);
-      }
       if (state_ != 0) {
-        output.writeUInt32(14, state_);
+        output.writeUInt32(4, state_);
+      }
+      if (bonusActivityId_ != 0) {
+        output.writeUInt32(12, bonusActivityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class BonusActivityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bonusActivityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, bonusActivityId_);
-      }
       if (state_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, state_);
+          .computeUInt32Size(4, state_);
+      }
+      if (bonusActivityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, bonusActivityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class BonusActivityInfoOuterClass {
       }
       emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo other = (emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo) obj;
 
-      if (getBonusActivityId()
-          != other.getBonusActivityId()) return false;
       if (getState()
           != other.getState()) return false;
+      if (getBonusActivityId()
+          != other.getBonusActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class BonusActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BONUS_ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBonusActivityId();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + getState();
+      hash = (37 * hash) + BONUS_ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBonusActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class BonusActivityInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BLGBDLDEJCD
-     * </pre>
-     *
      * Protobuf type {@code BonusActivityInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class BonusActivityInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bonusActivityId_ = 0;
-
         state_ = 0;
+
+        bonusActivityId_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class BonusActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo buildPartial() {
         emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo result = new emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo(this);
-        result.bonusActivityId_ = bonusActivityId_;
         result.state_ = state_;
+        result.bonusActivityId_ = bonusActivityId_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class BonusActivityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo other) {
         if (other == emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.getDefaultInstance()) return this;
-        if (other.getBonusActivityId() != 0) {
-          setBonusActivityId(other.getBonusActivityId());
-        }
         if (other.getState() != 0) {
           setState(other.getState());
+        }
+        if (other.getBonusActivityId() != 0) {
+          setBonusActivityId(other.getBonusActivityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +458,9 @@ public final class BonusActivityInfoOuterClass {
         return this;
       }
 
-      private int bonusActivityId_ ;
-      /**
-       * <code>uint32 bonus_activity_id = 7;</code>
-       * @return The bonusActivityId.
-       */
-      @java.lang.Override
-      public int getBonusActivityId() {
-        return bonusActivityId_;
-      }
-      /**
-       * <code>uint32 bonus_activity_id = 7;</code>
-       * @param value The bonusActivityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBonusActivityId(int value) {
-        
-        bonusActivityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 bonus_activity_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBonusActivityId() {
-        
-        bonusActivityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int state_ ;
       /**
-       * <code>uint32 state = 14;</code>
+       * <code>uint32 state = 4;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -507,7 +468,7 @@ public final class BonusActivityInfoOuterClass {
         return state_;
       }
       /**
-       * <code>uint32 state = 14;</code>
+       * <code>uint32 state = 4;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -518,12 +479,43 @@ public final class BonusActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 state = 14;</code>
+       * <code>uint32 state = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
         
         state_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bonusActivityId_ ;
+      /**
+       * <code>uint32 bonus_activity_id = 12;</code>
+       * @return The bonusActivityId.
+       */
+      @java.lang.Override
+      public int getBonusActivityId() {
+        return bonusActivityId_;
+      }
+      /**
+       * <code>uint32 bonus_activity_id = 12;</code>
+       * @param value The bonusActivityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBonusActivityId(int value) {
+        
+        bonusActivityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 bonus_activity_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBonusActivityId() {
+        
+        bonusActivityId_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +587,8 @@ public final class BonusActivityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BonusActivityInfo.proto\"=\n\021BonusActivi" +
-      "tyInfo\022\031\n\021bonus_activity_id\030\007 \001(\r\022\r\n\005sta" +
-      "te\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "tyInfo\022\r\n\005state\030\004 \001(\r\022\031\n\021bonus_activity_" +
+      "id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +600,7 @@ public final class BonusActivityInfoOuterClass {
     internal_static_BonusActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BonusActivityInfo_descriptor,
-        new java.lang.String[] { "BonusActivityId", "State", });
+        new java.lang.String[] { "State", "BonusActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

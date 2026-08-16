@@ -19,33 +19,32 @@ public final class HomePlantInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData> 
         getFieldListList();
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData getFieldList(int index);
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     int getFieldListCount();
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> 
         getFieldListOrBuilderList();
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 27599
-   * Obf: MNCJNMKHBED
+   * CmdId: 21654
    * </pre>
    *
    * Protobuf type {@code HomePlantInfoNotify}
@@ -94,7 +93,7 @@ public final class HomePlantInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fieldList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class HomePlantInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomePlantInfoNotifyOuterClass.HomePlantInfoNotify.class, emu.grasscutter.net.proto.HomePlantInfoNotifyOuterClass.HomePlantInfoNotify.Builder.class);
     }
 
-    public static final int FIELD_LIST_FIELD_NUMBER = 2;
+    public static final int FIELD_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData> fieldList_;
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData> getFieldListList() {
       return fieldList_;
     }
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> 
@@ -156,21 +155,21 @@ public final class HomePlantInfoNotifyOuterClass {
       return fieldList_;
     }
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     @java.lang.Override
     public int getFieldListCount() {
       return fieldList_.size();
     }
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData getFieldList(int index) {
       return fieldList_.get(index);
     }
     /**
-     * <code>repeated .HomePlantFieldData field_list = 2;</code>
+     * <code>repeated .HomePlantFieldData field_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldListOrBuilder(
@@ -193,7 +192,7 @@ public final class HomePlantInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < fieldList_.size(); i++) {
-        output.writeMessage(2, fieldList_.get(i));
+        output.writeMessage(7, fieldList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class HomePlantInfoNotifyOuterClass {
       size = 0;
       for (int i = 0; i < fieldList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, fieldList_.get(i));
+          .computeMessageSize(7, fieldList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class HomePlantInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27599
-     * Obf: MNCJNMKHBED
+     * CmdId: 21654
      * </pre>
      *
      * Protobuf type {@code HomePlantInfoNotify}
@@ -538,7 +536,7 @@ public final class HomePlantInfoNotifyOuterClass {
           emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> fieldListBuilder_;
 
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData> getFieldListList() {
         if (fieldListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class HomePlantInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public int getFieldListCount() {
         if (fieldListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class HomePlantInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData getFieldList(int index) {
         if (fieldListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class HomePlantInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder setFieldList(
           int index, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData value) {
@@ -585,7 +583,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder setFieldList(
           int index, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder addFieldList(emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData value) {
         if (fieldListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder addFieldList(
           int index, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData value) {
@@ -632,7 +630,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder addFieldList(
           emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder addFieldList(
           int index, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder addAllFieldList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData> values) {
@@ -675,7 +673,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder clearFieldList() {
         if (fieldListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public Builder removeFieldList(int index) {
         if (fieldListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class HomePlantInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder getFieldListBuilder(
           int index) {
         return getFieldListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class HomePlantInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> 
            getFieldListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class HomePlantInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder addFieldListBuilder() {
         return getFieldListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder addFieldListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class HomePlantInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomePlantFieldData field_list = 2;</code>
+       * <code>repeated .HomePlantFieldData field_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder> 
            getFieldListBuilderList() {
@@ -833,7 +831,7 @@ public final class HomePlantInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031HomePlantInfoNotify.proto\032\030HomePlantFi" +
       "eldData.proto\">\n\023HomePlantInfoNotify\022\'\n\n" +
-      "field_list\030\002 \003(\0132\023.HomePlantFieldDataB\033\n" +
+      "field_list\030\007 \003(\0132\023.HomePlantFieldDataB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

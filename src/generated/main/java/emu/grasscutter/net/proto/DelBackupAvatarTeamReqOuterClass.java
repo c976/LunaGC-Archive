@@ -19,12 +19,16 @@ public final class DelBackupAvatarTeamReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 backup_avatar_team_id = 12;</code>
+     * <code>uint32 backup_avatar_team_id = 13;</code>
      * @return The backupAvatarTeamId.
      */
     int getBackupAvatarTeamId();
   }
   /**
+   * <pre>
+   * CmdId: 2165
+   * </pre>
+   *
    * Protobuf type {@code DelBackupAvatarTeamReq}
    */
   public static final class DelBackupAvatarTeamReq extends
@@ -69,7 +73,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 104: {
 
               backupAvatarTeamId_ = input.readUInt32();
               break;
@@ -106,10 +110,10 @@ public final class DelBackupAvatarTeamReqOuterClass {
               emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.class, emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.Builder.class);
     }
 
-    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 12;
+    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 13;
     private int backupAvatarTeamId_;
     /**
-     * <code>uint32 backup_avatar_team_id = 12;</code>
+     * <code>uint32 backup_avatar_team_id = 13;</code>
      * @return The backupAvatarTeamId.
      */
     @java.lang.Override
@@ -132,7 +136,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (backupAvatarTeamId_ != 0) {
-        output.writeUInt32(12, backupAvatarTeamId_);
+        output.writeUInt32(13, backupAvatarTeamId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +149,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
       size = 0;
       if (backupAvatarTeamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, backupAvatarTeamId_);
+          .computeUInt32Size(13, backupAvatarTeamId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -273,6 +277,10 @@ public final class DelBackupAvatarTeamReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2165
+     * </pre>
+     *
      * Protobuf type {@code DelBackupAvatarTeamReq}
      */
     public static final class Builder extends
@@ -421,7 +429,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
 
       private int backupAvatarTeamId_ ;
       /**
-       * <code>uint32 backup_avatar_team_id = 12;</code>
+       * <code>uint32 backup_avatar_team_id = 13;</code>
        * @return The backupAvatarTeamId.
        */
       @java.lang.Override
@@ -429,7 +437,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return backupAvatarTeamId_;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 12;</code>
+       * <code>uint32 backup_avatar_team_id = 13;</code>
        * @param value The backupAvatarTeamId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +448,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 12;</code>
+       * <code>uint32 backup_avatar_team_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupAvatarTeamId() {
@@ -518,7 +526,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034DelBackupAvatarTeamReq.proto\"7\n\026DelBac" +
       "kupAvatarTeamReq\022\035\n\025backup_avatar_team_i" +
-      "d\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,38 +19,45 @@ public final class GCGOperationReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 PBGAPCDFIMA = 10;</code>
-     * @return The pBGAPCDFIMA.
-     */
-    int getPBGAPCDFIMA();
-
-    /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      * @return Whether the op field is set.
      */
     boolean hasOp();
     /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      * @return The op.
      */
     emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation getOp();
     /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      */
     emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperationOrBuilder getOpOrBuilder();
 
     /**
-     * <code>uint32 op_seq = 1;</code>
+     * <code>uint32 redirect_uid = 6;</code>
+     * @return The redirectUid.
+     */
+    int getRedirectUid();
+
+    /**
+     * <code>uint32 op_seq = 15;</code>
      * @return The opSeq.
      */
     int getOpSeq();
   }
   /**
-   * <pre>
-   * CmdId: 7248
-   * Obf: NNJMIPJOLBE
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationReq}
    */
   public static final class GCGOperationReq extends
@@ -95,12 +102,12 @@ public final class GCGOperationReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
 
-              opSeq_ = input.readUInt32();
+              redirectUid_ = input.readUInt32();
               break;
             }
-            case 34: {
+            case 106: {
               emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.Builder subBuilder = null;
               if (op_ != null) {
                 subBuilder = op_.toBuilder();
@@ -113,9 +120,9 @@ public final class GCGOperationReqOuterClass {
 
               break;
             }
-            case 80: {
+            case 120: {
 
-              pBGAPCDFIMA_ = input.readUInt32();
+              opSeq_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,21 +157,14 @@ public final class GCGOperationReqOuterClass {
               emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq.class, emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq.Builder.class);
     }
 
-    public static final int PBGAPCDFIMA_FIELD_NUMBER = 10;
-    private int pBGAPCDFIMA_;
-    /**
-     * <code>uint32 PBGAPCDFIMA = 10;</code>
-     * @return The pBGAPCDFIMA.
-     */
-    @java.lang.Override
-    public int getPBGAPCDFIMA() {
-      return pBGAPCDFIMA_;
-    }
-
-    public static final int OP_FIELD_NUMBER = 4;
+    public static final int OP_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation op_;
     /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      * @return Whether the op field is set.
      */
     @java.lang.Override
@@ -172,7 +172,11 @@ public final class GCGOperationReqOuterClass {
       return op_ != null;
     }
     /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      * @return The op.
      */
     @java.lang.Override
@@ -180,17 +184,32 @@ public final class GCGOperationReqOuterClass {
       return op_ == null ? emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.getDefaultInstance() : op_;
     }
     /**
-     * <code>.GCGOperation op = 4;</code>
+     * <pre>
+     * CMD_ID = 25775
+     * </pre>
+     *
+     * <code>.GCGOperation op = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperationOrBuilder getOpOrBuilder() {
       return getOp();
     }
 
-    public static final int OP_SEQ_FIELD_NUMBER = 1;
+    public static final int REDIRECT_UID_FIELD_NUMBER = 6;
+    private int redirectUid_;
+    /**
+     * <code>uint32 redirect_uid = 6;</code>
+     * @return The redirectUid.
+     */
+    @java.lang.Override
+    public int getRedirectUid() {
+      return redirectUid_;
+    }
+
+    public static final int OP_SEQ_FIELD_NUMBER = 15;
     private int opSeq_;
     /**
-     * <code>uint32 op_seq = 1;</code>
+     * <code>uint32 op_seq = 15;</code>
      * @return The opSeq.
      */
     @java.lang.Override
@@ -212,14 +231,14 @@ public final class GCGOperationReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (opSeq_ != 0) {
-        output.writeUInt32(1, opSeq_);
+      if (redirectUid_ != 0) {
+        output.writeUInt32(6, redirectUid_);
       }
       if (op_ != null) {
-        output.writeMessage(4, getOp());
+        output.writeMessage(13, getOp());
       }
-      if (pBGAPCDFIMA_ != 0) {
-        output.writeUInt32(10, pBGAPCDFIMA_);
+      if (opSeq_ != 0) {
+        output.writeUInt32(15, opSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +249,17 @@ public final class GCGOperationReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (opSeq_ != 0) {
+      if (redirectUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, opSeq_);
+          .computeUInt32Size(6, redirectUid_);
       }
       if (op_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getOp());
+          .computeMessageSize(13, getOp());
       }
-      if (pBGAPCDFIMA_ != 0) {
+      if (opSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, pBGAPCDFIMA_);
+          .computeUInt32Size(15, opSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -257,13 +276,13 @@ public final class GCGOperationReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq other = (emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq) obj;
 
-      if (getPBGAPCDFIMA()
-          != other.getPBGAPCDFIMA()) return false;
       if (hasOp() != other.hasOp()) return false;
       if (hasOp()) {
         if (!getOp()
             .equals(other.getOp())) return false;
       }
+      if (getRedirectUid()
+          != other.getRedirectUid()) return false;
       if (getOpSeq()
           != other.getOpSeq()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -277,12 +296,12 @@ public final class GCGOperationReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PBGAPCDFIMA_FIELD_NUMBER;
-      hash = (53 * hash) + getPBGAPCDFIMA();
       if (hasOp()) {
         hash = (37 * hash) + OP_FIELD_NUMBER;
         hash = (53 * hash) + getOp().hashCode();
       }
+      hash = (37 * hash) + REDIRECT_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getRedirectUid();
       hash = (37 * hash) + OP_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getOpSeq();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -381,11 +400,6 @@ public final class GCGOperationReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7248
-     * Obf: NNJMIPJOLBE
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationReq}
      */
     public static final class Builder extends
@@ -423,14 +437,14 @@ public final class GCGOperationReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pBGAPCDFIMA_ = 0;
-
         if (opBuilder_ == null) {
           op_ = null;
         } else {
           op_ = null;
           opBuilder_ = null;
         }
+        redirectUid_ = 0;
+
         opSeq_ = 0;
 
         return this;
@@ -459,12 +473,12 @@ public final class GCGOperationReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq buildPartial() {
         emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq result = new emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq(this);
-        result.pBGAPCDFIMA_ = pBGAPCDFIMA_;
         if (opBuilder_ == null) {
           result.op_ = op_;
         } else {
           result.op_ = opBuilder_.build();
         }
+        result.redirectUid_ = redirectUid_;
         result.opSeq_ = opSeq_;
         onBuilt();
         return result;
@@ -514,11 +528,11 @@ public final class GCGOperationReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq other) {
         if (other == emu.grasscutter.net.proto.GCGOperationReqOuterClass.GCGOperationReq.getDefaultInstance()) return this;
-        if (other.getPBGAPCDFIMA() != 0) {
-          setPBGAPCDFIMA(other.getPBGAPCDFIMA());
-        }
         if (other.hasOp()) {
           mergeOp(other.getOp());
+        }
+        if (other.getRedirectUid() != 0) {
+          setRedirectUid(other.getRedirectUid());
         }
         if (other.getOpSeq() != 0) {
           setOpSeq(other.getOpSeq());
@@ -552,49 +566,26 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
 
-      private int pBGAPCDFIMA_ ;
-      /**
-       * <code>uint32 PBGAPCDFIMA = 10;</code>
-       * @return The pBGAPCDFIMA.
-       */
-      @java.lang.Override
-      public int getPBGAPCDFIMA() {
-        return pBGAPCDFIMA_;
-      }
-      /**
-       * <code>uint32 PBGAPCDFIMA = 10;</code>
-       * @param value The pBGAPCDFIMA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPBGAPCDFIMA(int value) {
-        
-        pBGAPCDFIMA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PBGAPCDFIMA = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPBGAPCDFIMA() {
-        
-        pBGAPCDFIMA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation op_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation, emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.Builder, emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperationOrBuilder> opBuilder_;
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        * @return Whether the op field is set.
        */
       public boolean hasOp() {
         return opBuilder_ != null || op_ != null;
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        * @return The op.
        */
       public emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation getOp() {
@@ -605,7 +596,11 @@ public final class GCGOperationReqOuterClass {
         }
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public Builder setOp(emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation value) {
         if (opBuilder_ == null) {
@@ -621,7 +616,11 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public Builder setOp(
           emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.Builder builderForValue) {
@@ -635,7 +634,11 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public Builder mergeOp(emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation value) {
         if (opBuilder_ == null) {
@@ -653,7 +656,11 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public Builder clearOp() {
         if (opBuilder_ == null) {
@@ -667,7 +674,11 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.Builder getOpBuilder() {
         
@@ -675,7 +686,11 @@ public final class GCGOperationReqOuterClass {
         return getOpFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperationOrBuilder getOpOrBuilder() {
         if (opBuilder_ != null) {
@@ -686,7 +701,11 @@ public final class GCGOperationReqOuterClass {
         }
       }
       /**
-       * <code>.GCGOperation op = 4;</code>
+       * <pre>
+       * CMD_ID = 25775
+       * </pre>
+       *
+       * <code>.GCGOperation op = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation, emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation.Builder, emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperationOrBuilder> 
@@ -702,9 +721,40 @@ public final class GCGOperationReqOuterClass {
         return opBuilder_;
       }
 
+      private int redirectUid_ ;
+      /**
+       * <code>uint32 redirect_uid = 6;</code>
+       * @return The redirectUid.
+       */
+      @java.lang.Override
+      public int getRedirectUid() {
+        return redirectUid_;
+      }
+      /**
+       * <code>uint32 redirect_uid = 6;</code>
+       * @param value The redirectUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRedirectUid(int value) {
+        
+        redirectUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 redirect_uid = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRedirectUid() {
+        
+        redirectUid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int opSeq_ ;
       /**
-       * <code>uint32 op_seq = 1;</code>
+       * <code>uint32 op_seq = 15;</code>
        * @return The opSeq.
        */
       @java.lang.Override
@@ -712,7 +762,7 @@ public final class GCGOperationReqOuterClass {
         return opSeq_;
       }
       /**
-       * <code>uint32 op_seq = 1;</code>
+       * <code>uint32 op_seq = 15;</code>
        * @param value The opSeq to set.
        * @return This builder for chaining.
        */
@@ -723,7 +773,7 @@ public final class GCGOperationReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_seq = 1;</code>
+       * <code>uint32 op_seq = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpSeq() {
@@ -800,10 +850,10 @@ public final class GCGOperationReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GCGOperationReq.proto\032\022GCGOperation.pr" +
-      "oto\"Q\n\017GCGOperationReq\022\023\n\013PBGAPCDFIMA\030\n " +
-      "\001(\r\022\031\n\002op\030\004 \001(\0132\r.GCGOperation\022\016\n\006op_seq" +
-      "\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "oto\"R\n\017GCGOperationReq\022\031\n\002op\030\r \001(\0132\r.GCG" +
+      "Operation\022\024\n\014redirect_uid\030\006 \001(\r\022\016\n\006op_se" +
+      "q\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -815,7 +865,7 @@ public final class GCGOperationReqOuterClass {
     internal_static_GCGOperationReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationReq_descriptor,
-        new java.lang.String[] { "PBGAPCDFIMA", "Op", "OpSeq", });
+        new java.lang.String[] { "Op", "RedirectUid", "OpSeq", });
     emu.grasscutter.net.proto.GCGOperationOuterClass.getDescriptor();
   }
 

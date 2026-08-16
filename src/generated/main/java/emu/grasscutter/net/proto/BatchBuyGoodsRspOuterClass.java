@@ -19,68 +19,68 @@ public final class BatchBuyGoodsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>uint32 shop_type = 1;</code>
+     * @return The shopType.
+     */
+    int getShopType();
+
+    /**
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> 
         getGoodsListList();
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods getGoodsList(int index);
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     int getGoodsListCount();
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> 
         getGoodsListOrBuilderList();
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> 
-        getBuyGoodsListList();
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index);
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    int getBuyGoodsListCount();
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-        getBuyGoodsListOrBuilderList();
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
-        int index);
-
-    /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 shop_type = 3;</code>
-     * @return The shopType.
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
      */
-    int getShopType();
+    java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> 
+        getBuyGoodsListList();
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index);
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    int getBuyGoodsListCount();
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
+        getBuyGoodsListOrBuilderList();
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 3488
+   * CmdId: 20612
    * </pre>
    *
    * Protobuf type {@code BatchBuyGoodsRsp}
@@ -130,21 +130,12 @@ public final class BatchBuyGoodsRspOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                buyGoodsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              buyGoodsList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.parser(), extensionRegistry));
-              break;
-            }
-            case 24: {
+            case 8: {
 
               shopType_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 goodsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods>();
                 mutable_bitField0_ |= 0x00000001;
@@ -153,9 +144,18 @@ public final class BatchBuyGoodsRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 56: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                buyGoodsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              buyGoodsList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -173,11 +173,11 @@ public final class BatchBuyGoodsRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           goodsList_ = java.util.Collections.unmodifiableList(goodsList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -196,17 +196,28 @@ public final class BatchBuyGoodsRspOuterClass {
               emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp.class, emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp.Builder.class);
     }
 
-    public static final int GOODS_LIST_FIELD_NUMBER = 6;
+    public static final int SHOP_TYPE_FIELD_NUMBER = 1;
+    private int shopType_;
+    /**
+     * <code>uint32 shop_type = 1;</code>
+     * @return The shopType.
+     */
+    @java.lang.Override
+    public int getShopType() {
+      return shopType_;
+    }
+
+    public static final int GOODS_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> goodsList_;
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> getGoodsListList() {
       return goodsList_;
     }
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> 
@@ -214,21 +225,21 @@ public final class BatchBuyGoodsRspOuterClass {
       return goodsList_;
     }
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     @java.lang.Override
     public int getGoodsListCount() {
       return goodsList_.size();
     }
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods getGoodsList(int index) {
       return goodsList_.get(index);
     }
     /**
-     * <code>repeated .ShopGoods goods_list = 6;</code>
+     * <code>repeated .ShopGoods goods_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsListOrBuilder(
@@ -236,50 +247,10 @@ public final class BatchBuyGoodsRspOuterClass {
       return goodsList_.get(index);
     }
 
-    public static final int BUY_GOODS_LIST_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_;
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getBuyGoodsListList() {
-      return buyGoodsList_;
-    }
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-        getBuyGoodsListOrBuilderList() {
-      return buyGoodsList_;
-    }
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    @java.lang.Override
-    public int getBuyGoodsListCount() {
-      return buyGoodsList_.size();
-    }
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index) {
-      return buyGoodsList_.get(index);
-    }
-    /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
-        int index) {
-      return buyGoodsList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -287,15 +258,44 @@ public final class BatchBuyGoodsRspOuterClass {
       return retcode_;
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 3;
-    private int shopType_;
+    public static final int BUY_GOODS_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_;
     /**
-     * <code>uint32 shop_type = 3;</code>
-     * @return The shopType.
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
      */
     @java.lang.Override
-    public int getShopType() {
-      return shopType_;
+    public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getBuyGoodsListList() {
+      return buyGoodsList_;
+    }
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
+        getBuyGoodsListOrBuilderList() {
+      return buyGoodsList_;
+    }
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getBuyGoodsListCount() {
+      return buyGoodsList_.size();
+    }
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index) {
+      return buyGoodsList_.get(index);
+    }
+    /**
+     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
+        int index) {
+      return buyGoodsList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -312,17 +312,17 @@ public final class BatchBuyGoodsRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < buyGoodsList_.size(); i++) {
-        output.writeMessage(1, buyGoodsList_.get(i));
-      }
       if (shopType_ != 0) {
-        output.writeUInt32(3, shopType_);
+        output.writeUInt32(1, shopType_);
       }
       for (int i = 0; i < goodsList_.size(); i++) {
-        output.writeMessage(6, goodsList_.get(i));
+        output.writeMessage(4, goodsList_.get(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(7, retcode_);
+      }
+      for (int i = 0; i < buyGoodsList_.size(); i++) {
+        output.writeMessage(15, buyGoodsList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -333,21 +333,21 @@ public final class BatchBuyGoodsRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < buyGoodsList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, buyGoodsList_.get(i));
-      }
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, shopType_);
+          .computeUInt32Size(1, shopType_);
       }
       for (int i = 0; i < goodsList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, goodsList_.get(i));
+          .computeMessageSize(4, goodsList_.get(i));
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(7, retcode_);
+      }
+      for (int i = 0; i < buyGoodsList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, buyGoodsList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -364,14 +364,14 @@ public final class BatchBuyGoodsRspOuterClass {
       }
       emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp other = (emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp) obj;
 
-      if (!getGoodsListList()
-          .equals(other.getGoodsListList())) return false;
-      if (!getBuyGoodsListList()
-          .equals(other.getBuyGoodsListList())) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getShopType()
           != other.getShopType()) return false;
+      if (!getGoodsListList()
+          .equals(other.getGoodsListList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (!getBuyGoodsListList()
+          .equals(other.getBuyGoodsListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -383,18 +383,18 @@ public final class BatchBuyGoodsRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getShopType();
       if (getGoodsListCount() > 0) {
         hash = (37 * hash) + GOODS_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGoodsListList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getBuyGoodsListCount() > 0) {
         hash = (37 * hash) + BUY_GOODS_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuyGoodsListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getShopType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -492,7 +492,7 @@ public final class BatchBuyGoodsRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3488
+     * CmdId: 20612
      * </pre>
      *
      * Protobuf type {@code BatchBuyGoodsRsp}
@@ -534,22 +534,22 @@ public final class BatchBuyGoodsRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        shopType_ = 0;
+
         if (goodsListBuilder_ == null) {
           goodsList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           goodsListBuilder_.clear();
         }
+        retcode_ = 0;
+
         if (buyGoodsListBuilder_ == null) {
           buyGoodsList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           buyGoodsListBuilder_.clear();
         }
-        retcode_ = 0;
-
-        shopType_ = 0;
-
         return this;
       }
 
@@ -577,6 +577,7 @@ public final class BatchBuyGoodsRspOuterClass {
       public emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp buildPartial() {
         emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp result = new emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp(this);
         int from_bitField0_ = bitField0_;
+        result.shopType_ = shopType_;
         if (goodsListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             goodsList_ = java.util.Collections.unmodifiableList(goodsList_);
@@ -586,6 +587,7 @@ public final class BatchBuyGoodsRspOuterClass {
         } else {
           result.goodsList_ = goodsListBuilder_.build();
         }
+        result.retcode_ = retcode_;
         if (buyGoodsListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
@@ -595,8 +597,6 @@ public final class BatchBuyGoodsRspOuterClass {
         } else {
           result.buyGoodsList_ = buyGoodsListBuilder_.build();
         }
-        result.retcode_ = retcode_;
-        result.shopType_ = shopType_;
         onBuilt();
         return result;
       }
@@ -645,6 +645,9 @@ public final class BatchBuyGoodsRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp other) {
         if (other == emu.grasscutter.net.proto.BatchBuyGoodsRspOuterClass.BatchBuyGoodsRsp.getDefaultInstance()) return this;
+        if (other.getShopType() != 0) {
+          setShopType(other.getShopType());
+        }
         if (goodsListBuilder_ == null) {
           if (!other.goodsList_.isEmpty()) {
             if (goodsList_.isEmpty()) {
@@ -671,6 +674,9 @@ public final class BatchBuyGoodsRspOuterClass {
             }
           }
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (buyGoodsListBuilder_ == null) {
           if (!other.buyGoodsList_.isEmpty()) {
             if (buyGoodsList_.isEmpty()) {
@@ -696,12 +702,6 @@ public final class BatchBuyGoodsRspOuterClass {
               buyGoodsListBuilder_.addAllMessages(other.buyGoodsList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getShopType() != 0) {
-          setShopType(other.getShopType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -733,6 +733,37 @@ public final class BatchBuyGoodsRspOuterClass {
       }
       private int bitField0_;
 
+      private int shopType_ ;
+      /**
+       * <code>uint32 shop_type = 1;</code>
+       * @return The shopType.
+       */
+      @java.lang.Override
+      public int getShopType() {
+        return shopType_;
+      }
+      /**
+       * <code>uint32 shop_type = 1;</code>
+       * @param value The shopType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShopType(int value) {
+        
+        shopType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 shop_type = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearShopType() {
+        
+        shopType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> goodsList_ =
         java.util.Collections.emptyList();
       private void ensureGoodsListIsMutable() {
@@ -746,7 +777,7 @@ public final class BatchBuyGoodsRspOuterClass {
           emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> goodsListBuilder_;
 
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> getGoodsListList() {
         if (goodsListBuilder_ == null) {
@@ -756,7 +787,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public int getGoodsListCount() {
         if (goodsListBuilder_ == null) {
@@ -766,7 +797,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods getGoodsList(int index) {
         if (goodsListBuilder_ == null) {
@@ -776,7 +807,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder setGoodsList(
           int index, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods value) {
@@ -793,7 +824,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder setGoodsList(
           int index, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder builderForValue) {
@@ -807,7 +838,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder addGoodsList(emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods value) {
         if (goodsListBuilder_ == null) {
@@ -823,7 +854,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder addGoodsList(
           int index, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods value) {
@@ -840,7 +871,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder addGoodsList(
           emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder builderForValue) {
@@ -854,7 +885,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder addGoodsList(
           int index, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder builderForValue) {
@@ -868,7 +899,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder addAllGoodsList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods> values) {
@@ -883,7 +914,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder clearGoodsList() {
         if (goodsListBuilder_ == null) {
@@ -896,7 +927,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public Builder removeGoodsList(int index) {
         if (goodsListBuilder_ == null) {
@@ -909,14 +940,14 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder getGoodsListBuilder(
           int index) {
         return getGoodsListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsListOrBuilder(
           int index) {
@@ -926,7 +957,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> 
            getGoodsListOrBuilderList() {
@@ -937,14 +968,14 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder addGoodsListBuilder() {
         return getGoodsListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder addGoodsListBuilder(
           int index) {
@@ -952,7 +983,7 @@ public final class BatchBuyGoodsRspOuterClass {
             index, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShopGoods goods_list = 6;</code>
+       * <code>repeated .ShopGoods goods_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder> 
            getGoodsListBuilderList() {
@@ -973,6 +1004,37 @@ public final class BatchBuyGoodsRspOuterClass {
         return goodsListBuilder_;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_ =
         java.util.Collections.emptyList();
       private void ensureBuyGoodsListIsMutable() {
@@ -986,7 +1048,7 @@ public final class BatchBuyGoodsRspOuterClass {
           emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> buyGoodsListBuilder_;
 
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getBuyGoodsListList() {
         if (buyGoodsListBuilder_ == null) {
@@ -996,7 +1058,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public int getBuyGoodsListCount() {
         if (buyGoodsListBuilder_ == null) {
@@ -1006,7 +1068,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index) {
         if (buyGoodsListBuilder_ == null) {
@@ -1016,7 +1078,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder setBuyGoodsList(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
@@ -1033,7 +1095,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder setBuyGoodsList(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
@@ -1047,7 +1109,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder addBuyGoodsList(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
         if (buyGoodsListBuilder_ == null) {
@@ -1063,7 +1125,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder addBuyGoodsList(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
@@ -1080,7 +1142,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder addBuyGoodsList(
           emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
@@ -1094,7 +1156,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder addBuyGoodsList(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
@@ -1108,7 +1170,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder addAllBuyGoodsList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> values) {
@@ -1123,7 +1185,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder clearBuyGoodsList() {
         if (buyGoodsListBuilder_ == null) {
@@ -1136,7 +1198,7 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public Builder removeBuyGoodsList(int index) {
         if (buyGoodsListBuilder_ == null) {
@@ -1149,14 +1211,14 @@ public final class BatchBuyGoodsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder getBuyGoodsListBuilder(
           int index) {
         return getBuyGoodsListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
           int index) {
@@ -1166,7 +1228,7 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
            getBuyGoodsListOrBuilderList() {
@@ -1177,14 +1239,14 @@ public final class BatchBuyGoodsRspOuterClass {
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addBuyGoodsListBuilder() {
         return getBuyGoodsListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addBuyGoodsListBuilder(
           int index) {
@@ -1192,7 +1254,7 @@ public final class BatchBuyGoodsRspOuterClass {
             index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 1;</code>
+       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder> 
            getBuyGoodsListBuilderList() {
@@ -1211,68 +1273,6 @@ public final class BatchBuyGoodsRspOuterClass {
           buyGoodsList_ = null;
         }
         return buyGoodsListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int shopType_ ;
-      /**
-       * <code>uint32 shop_type = 3;</code>
-       * @return The shopType.
-       */
-      @java.lang.Override
-      public int getShopType() {
-        return shopType_;
-      }
-      /**
-       * <code>uint32 shop_type = 3;</code>
-       * @param value The shopType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShopType(int value) {
-        
-        shopType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 shop_type = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShopType() {
-        
-        shopType_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1341,27 +1341,27 @@ public final class BatchBuyGoodsRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026BatchBuyGoodsRsp.proto\032\017ShopGoods.prot" +
-      "o\032\023BuyGoodsParam.proto\"~\n\020BatchBuyGoodsR" +
-      "sp\022\036\n\ngoods_list\030\006 \003(\0132\n.ShopGoods\022&\n\016bu" +
-      "y_goods_list\030\001 \003(\0132\016.BuyGoodsParam\022\017\n\007re" +
-      "tcode\030\014 \001(\005\022\021\n\tshop_type\030\003 \001(\rB\033\n\031emu.gr" +
+      "\n\026BatchBuyGoodsRsp.proto\032\023BuyGoodsParam." +
+      "proto\032\017ShopGoods.proto\"~\n\020BatchBuyGoodsR" +
+      "sp\022\021\n\tshop_type\030\001 \001(\r\022\036\n\ngoods_list\030\004 \003(" +
+      "\0132\n.ShopGoods\022\017\n\007retcode\030\007 \001(\005\022&\n\016buy_go" +
+      "ods_list\030\017 \003(\0132\016.BuyGoodsParamB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ShopGoodsOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BuyGoodsParamOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ShopGoodsOuterClass.getDescriptor(),
         });
     internal_static_BatchBuyGoodsRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_BatchBuyGoodsRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BatchBuyGoodsRsp_descriptor,
-        new java.lang.String[] { "GoodsList", "BuyGoodsList", "Retcode", "ShopType", });
-    emu.grasscutter.net.proto.ShopGoodsOuterClass.getDescriptor();
+        new java.lang.String[] { "ShopType", "GoodsList", "Retcode", "BuyGoodsList", });
     emu.grasscutter.net.proto.BuyGoodsParamOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ShopGoodsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,25 +19,45 @@ public final class TreasureHuntV4DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo> 
         getLevelInfoListList();
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo getLevelInfoList(int index);
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index);
@@ -89,7 +109,7 @@ public final class TreasureHuntV4DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +153,25 @@ public final class TreasureHuntV4DetailInfoOuterClass {
               emu.grasscutter.net.proto.TreasureHuntV4DetailInfoOuterClass.TreasureHuntV4DetailInfo.class, emu.grasscutter.net.proto.TreasureHuntV4DetailInfoOuterClass.TreasureHuntV4DetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 5;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo> levelInfoList_;
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder> 
@@ -151,21 +179,33 @@ public final class TreasureHuntV4DetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder getLevelInfoListOrBuilder(
@@ -188,7 +228,7 @@ public final class TreasureHuntV4DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(5, levelInfoList_.get(i));
+        output.writeMessage(4, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class TreasureHuntV4DetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, levelInfoList_.get(i));
+          .computeMessageSize(4, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +568,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
           emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -538,7 +582,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,7 +596,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -558,7 +610,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo value) {
@@ -575,7 +631,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder builderForValue) {
@@ -589,7 +649,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo value) {
         if (levelInfoListBuilder_ == null) {
@@ -605,7 +669,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo value) {
@@ -622,7 +690,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder builderForValue) {
@@ -636,7 +708,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder builderForValue) {
@@ -650,7 +726,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo> values) {
@@ -665,7 +745,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,14 +779,22 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -708,7 +804,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfoOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -719,14 +819,22 @@ public final class TreasureHuntV4DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder addLevelInfoListBuilder(
           int index) {
@@ -734,7 +842,11 @@ public final class TreasureHuntV4DetailInfoOuterClass {
             index, emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureHuntV4LevelInfo level_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureHuntV4LevelInfoOuterClass.TreasureHuntV4LevelInfo.Builder> 
            getLevelInfoListBuilderList() {
@@ -823,7 +935,7 @@ public final class TreasureHuntV4DetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036TreasureHuntV4DetailInfo.proto\032\035Treasu" +
       "reHuntV4LevelInfo.proto\"M\n\030TreasureHuntV" +
-      "4DetailInfo\0221\n\017level_info_list\030\005 \003(\0132\030.T" +
+      "4DetailInfo\0221\n\017level_info_list\030\004 \003(\0132\030.T" +
       "reasureHuntV4LevelInfoB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };

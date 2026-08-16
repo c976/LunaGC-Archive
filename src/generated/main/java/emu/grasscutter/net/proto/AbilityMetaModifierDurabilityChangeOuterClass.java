@@ -19,22 +19,36 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float FOLHDMMHCIG = 6;</code>
-     * @return The fOLHDMMHCIG.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float CNPEJCMKPGD = 15;</code>
+     * @return The cNPEJCMKPGD.
      */
-    float getFOLHDMMHCIG();
+    float getCNPEJCMKPGD();
 
     /**
-     * <code>float FHDBNIPEBBO = 9;</code>
-     * @return The fHDBNIPEBBO.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool DFPKCAOALDF = 11;</code>
+     * @return The dFPKCAOALDF.
      */
-    float getFHDBNIPEBBO();
+    boolean getDFPKCAOALDF();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PONCGLFMLLN = 5;</code>
+     * @return The pONCGLFMLLN.
+     */
+    float getPONCGLFMLLN();
   }
   /**
-   * <pre>
-   * Obf: AKLNDGMDIHP
-   * </pre>
-   *
    * Protobuf type {@code AbilityMetaModifierDurabilityChange}
    */
   public static final class AbilityMetaModifierDurabilityChange extends
@@ -79,14 +93,19 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 53: {
+            case 45: {
 
-              fOLHDMMHCIG_ = input.readFloat();
+              pONCGLFMLLN_ = input.readFloat();
               break;
             }
-            case 77: {
+            case 88: {
 
-              fHDBNIPEBBO_ = input.readFloat();
+              dFPKCAOALDF_ = input.readBool();
+              break;
+            }
+            case 125: {
+
+              cNPEJCMKPGD_ = input.readFloat();
               break;
             }
             default: {
@@ -121,26 +140,49 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
               emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.class, emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.Builder.class);
     }
 
-    public static final int FOLHDMMHCIG_FIELD_NUMBER = 6;
-    private float fOLHDMMHCIG_;
+    public static final int CNPEJCMKPGD_FIELD_NUMBER = 15;
+    private float cNPEJCMKPGD_;
     /**
-     * <code>float FOLHDMMHCIG = 6;</code>
-     * @return The fOLHDMMHCIG.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float CNPEJCMKPGD = 15;</code>
+     * @return The cNPEJCMKPGD.
      */
     @java.lang.Override
-    public float getFOLHDMMHCIG() {
-      return fOLHDMMHCIG_;
+    public float getCNPEJCMKPGD() {
+      return cNPEJCMKPGD_;
     }
 
-    public static final int FHDBNIPEBBO_FIELD_NUMBER = 9;
-    private float fHDBNIPEBBO_;
+    public static final int DFPKCAOALDF_FIELD_NUMBER = 11;
+    private boolean dFPKCAOALDF_;
     /**
-     * <code>float FHDBNIPEBBO = 9;</code>
-     * @return The fHDBNIPEBBO.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool DFPKCAOALDF = 11;</code>
+     * @return The dFPKCAOALDF.
      */
     @java.lang.Override
-    public float getFHDBNIPEBBO() {
-      return fHDBNIPEBBO_;
+    public boolean getDFPKCAOALDF() {
+      return dFPKCAOALDF_;
+    }
+
+    public static final int PONCGLFMLLN_FIELD_NUMBER = 5;
+    private float pONCGLFMLLN_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PONCGLFMLLN = 5;</code>
+     * @return The pONCGLFMLLN.
+     */
+    @java.lang.Override
+    public float getPONCGLFMLLN() {
+      return pONCGLFMLLN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +199,14 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fOLHDMMHCIG_ != 0F) {
-        output.writeFloat(6, fOLHDMMHCIG_);
+      if (pONCGLFMLLN_ != 0F) {
+        output.writeFloat(5, pONCGLFMLLN_);
       }
-      if (fHDBNIPEBBO_ != 0F) {
-        output.writeFloat(9, fHDBNIPEBBO_);
+      if (dFPKCAOALDF_ != false) {
+        output.writeBool(11, dFPKCAOALDF_);
+      }
+      if (cNPEJCMKPGD_ != 0F) {
+        output.writeFloat(15, cNPEJCMKPGD_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +217,17 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fOLHDMMHCIG_ != 0F) {
+      if (pONCGLFMLLN_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, fOLHDMMHCIG_);
+          .computeFloatSize(5, pONCGLFMLLN_);
       }
-      if (fHDBNIPEBBO_ != 0F) {
+      if (dFPKCAOALDF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(9, fHDBNIPEBBO_);
+          .computeBoolSize(11, dFPKCAOALDF_);
+      }
+      if (cNPEJCMKPGD_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(15, cNPEJCMKPGD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,12 +244,14 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other = (emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange) obj;
 
-      if (java.lang.Float.floatToIntBits(getFOLHDMMHCIG())
+      if (java.lang.Float.floatToIntBits(getCNPEJCMKPGD())
           != java.lang.Float.floatToIntBits(
-              other.getFOLHDMMHCIG())) return false;
-      if (java.lang.Float.floatToIntBits(getFHDBNIPEBBO())
+              other.getCNPEJCMKPGD())) return false;
+      if (getDFPKCAOALDF()
+          != other.getDFPKCAOALDF()) return false;
+      if (java.lang.Float.floatToIntBits(getPONCGLFMLLN())
           != java.lang.Float.floatToIntBits(
-              other.getFHDBNIPEBBO())) return false;
+              other.getPONCGLFMLLN())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,12 +263,15 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FOLHDMMHCIG_FIELD_NUMBER;
+      hash = (37 * hash) + CNPEJCMKPGD_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFOLHDMMHCIG());
-      hash = (37 * hash) + FHDBNIPEBBO_FIELD_NUMBER;
+          getCNPEJCMKPGD());
+      hash = (37 * hash) + DFPKCAOALDF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getDFPKCAOALDF());
+      hash = (37 * hash) + PONCGLFMLLN_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFHDBNIPEBBO());
+          getPONCGLFMLLN());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +368,6 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AKLNDGMDIHP
-     * </pre>
-     *
      * Protobuf type {@code AbilityMetaModifierDurabilityChange}
      */
     public static final class Builder extends
@@ -355,9 +405,11 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fOLHDMMHCIG_ = 0F;
+        cNPEJCMKPGD_ = 0F;
 
-        fHDBNIPEBBO_ = 0F;
+        dFPKCAOALDF_ = false;
+
+        pONCGLFMLLN_ = 0F;
 
         return this;
       }
@@ -385,8 +437,9 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange result = new emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange(this);
-        result.fOLHDMMHCIG_ = fOLHDMMHCIG_;
-        result.fHDBNIPEBBO_ = fHDBNIPEBBO_;
+        result.cNPEJCMKPGD_ = cNPEJCMKPGD_;
+        result.dFPKCAOALDF_ = dFPKCAOALDF_;
+        result.pONCGLFMLLN_ = pONCGLFMLLN_;
         onBuilt();
         return result;
       }
@@ -435,11 +488,14 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.getDefaultInstance()) return this;
-        if (other.getFOLHDMMHCIG() != 0F) {
-          setFOLHDMMHCIG(other.getFOLHDMMHCIG());
+        if (other.getCNPEJCMKPGD() != 0F) {
+          setCNPEJCMKPGD(other.getCNPEJCMKPGD());
         }
-        if (other.getFHDBNIPEBBO() != 0F) {
-          setFHDBNIPEBBO(other.getFHDBNIPEBBO());
+        if (other.getDFPKCAOALDF() != false) {
+          setDFPKCAOALDF(other.getDFPKCAOALDF());
+        }
+        if (other.getPONCGLFMLLN() != 0F) {
+          setPONCGLFMLLN(other.getPONCGLFMLLN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,64 +526,131 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
         return this;
       }
 
-      private float fOLHDMMHCIG_ ;
+      private float cNPEJCMKPGD_ ;
       /**
-       * <code>float FOLHDMMHCIG = 6;</code>
-       * @return The fOLHDMMHCIG.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float CNPEJCMKPGD = 15;</code>
+       * @return The cNPEJCMKPGD.
        */
       @java.lang.Override
-      public float getFOLHDMMHCIG() {
-        return fOLHDMMHCIG_;
+      public float getCNPEJCMKPGD() {
+        return cNPEJCMKPGD_;
       }
       /**
-       * <code>float FOLHDMMHCIG = 6;</code>
-       * @param value The fOLHDMMHCIG to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float CNPEJCMKPGD = 15;</code>
+       * @param value The cNPEJCMKPGD to set.
        * @return This builder for chaining.
        */
-      public Builder setFOLHDMMHCIG(float value) {
+      public Builder setCNPEJCMKPGD(float value) {
         
-        fOLHDMMHCIG_ = value;
+        cNPEJCMKPGD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FOLHDMMHCIG = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float CNPEJCMKPGD = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFOLHDMMHCIG() {
+      public Builder clearCNPEJCMKPGD() {
         
-        fOLHDMMHCIG_ = 0F;
+        cNPEJCMKPGD_ = 0F;
         onChanged();
         return this;
       }
 
-      private float fHDBNIPEBBO_ ;
+      private boolean dFPKCAOALDF_ ;
       /**
-       * <code>float FHDBNIPEBBO = 9;</code>
-       * @return The fHDBNIPEBBO.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool DFPKCAOALDF = 11;</code>
+       * @return The dFPKCAOALDF.
        */
       @java.lang.Override
-      public float getFHDBNIPEBBO() {
-        return fHDBNIPEBBO_;
+      public boolean getDFPKCAOALDF() {
+        return dFPKCAOALDF_;
       }
       /**
-       * <code>float FHDBNIPEBBO = 9;</code>
-       * @param value The fHDBNIPEBBO to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool DFPKCAOALDF = 11;</code>
+       * @param value The dFPKCAOALDF to set.
        * @return This builder for chaining.
        */
-      public Builder setFHDBNIPEBBO(float value) {
+      public Builder setDFPKCAOALDF(boolean value) {
         
-        fHDBNIPEBBO_ = value;
+        dFPKCAOALDF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FHDBNIPEBBO = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool DFPKCAOALDF = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFHDBNIPEBBO() {
+      public Builder clearDFPKCAOALDF() {
         
-        fHDBNIPEBBO_ = 0F;
+        dFPKCAOALDF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private float pONCGLFMLLN_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PONCGLFMLLN = 5;</code>
+       * @return The pONCGLFMLLN.
+       */
+      @java.lang.Override
+      public float getPONCGLFMLLN() {
+        return pONCGLFMLLN_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PONCGLFMLLN = 5;</code>
+       * @param value The pONCGLFMLLN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPONCGLFMLLN(float value) {
+        
+        pONCGLFMLLN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PONCGLFMLLN = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPONCGLFMLLN() {
+        
+        pONCGLFMLLN_ = 0F;
         onChanged();
         return this;
       }
@@ -599,10 +722,10 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)AbilityMetaModifierDurabilityChange.pr" +
-      "oto\"O\n#AbilityMetaModifierDurabilityChan" +
-      "ge\022\023\n\013FOLHDMMHCIG\030\006 \001(\002\022\023\n\013FHDBNIPEBBO\030\t" +
-      " \001(\002B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "oto\"d\n#AbilityMetaModifierDurabilityChan" +
+      "ge\022\023\n\013CNPEJCMKPGD\030\017 \001(\002\022\023\n\013DFPKCAOALDF\030\013" +
+      " \001(\010\022\023\n\013PONCGLFMLLN\030\005 \001(\002B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -613,7 +736,7 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     internal_static_AbilityMetaModifierDurabilityChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaModifierDurabilityChange_descriptor,
-        new java.lang.String[] { "FOLHDMMHCIG", "FHDBNIPEBBO", });
+        new java.lang.String[] { "CNPEJCMKPGD", "DFPKCAOALDF", "PONCGLFMLLN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

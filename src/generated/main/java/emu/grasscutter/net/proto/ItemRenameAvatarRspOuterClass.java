@@ -25,20 +25,35 @@ public final class ItemRenameAvatarRspOuterClass {
     int getRenameId();
 
     /**
-     * <code>uint32 cd_time = 12;</code>
+     * <code>uint32 cd_time = 7;</code>
      * @return The cdTime.
      */
     int getCdTime();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     * @return Whether the aLKDNAHLECM field is set.
+     */
+    boolean hasALKDNAHLECM();
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     * @return The aLKDNAHLECM.
+     */
+    emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC getALKDNAHLECM();
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     */
+    emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder getALKDNAHLECMOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 29921
+   * CmdId: 180
    * </pre>
    *
    * Protobuf type {@code ItemRenameAvatarRsp}
@@ -90,14 +105,27 @@ public final class ItemRenameAvatarRspOuterClass {
               renameId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 56: {
 
               cdTime_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 122: {
+              emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder subBuilder = null;
+              if (aLKDNAHLECM_ != null) {
+                subBuilder = aLKDNAHLECM_.toBuilder();
+              }
+              aLKDNAHLECM_ = input.readMessage(emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(aLKDNAHLECM_);
+                aLKDNAHLECM_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -143,10 +171,10 @@ public final class ItemRenameAvatarRspOuterClass {
       return renameId_;
     }
 
-    public static final int CD_TIME_FIELD_NUMBER = 12;
+    public static final int CD_TIME_FIELD_NUMBER = 7;
     private int cdTime_;
     /**
-     * <code>uint32 cd_time = 12;</code>
+     * <code>uint32 cd_time = 7;</code>
      * @return The cdTime.
      */
     @java.lang.Override
@@ -154,15 +182,41 @@ public final class ItemRenameAvatarRspOuterClass {
       return cdTime_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int ALKDNAHLECM_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC aLKDNAHLECM_;
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     * @return Whether the aLKDNAHLECM field is set.
+     */
+    @java.lang.Override
+    public boolean hasALKDNAHLECM() {
+      return aLKDNAHLECM_ != null;
+    }
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     * @return The aLKDNAHLECM.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC getALKDNAHLECM() {
+      return aLKDNAHLECM_ == null ? emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.getDefaultInstance() : aLKDNAHLECM_;
+    }
+    /**
+     * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder getALKDNAHLECMOrBuilder() {
+      return getALKDNAHLECM();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -183,10 +237,13 @@ public final class ItemRenameAvatarRspOuterClass {
         output.writeUInt32(3, renameId_);
       }
       if (cdTime_ != 0) {
-        output.writeUInt32(12, cdTime_);
+        output.writeUInt32(7, cdTime_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(13, retcode_);
+      }
+      if (aLKDNAHLECM_ != null) {
+        output.writeMessage(15, getALKDNAHLECM());
       }
       unknownFields.writeTo(output);
     }
@@ -203,11 +260,15 @@ public final class ItemRenameAvatarRspOuterClass {
       }
       if (cdTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cdTime_);
+          .computeUInt32Size(7, cdTime_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(13, retcode_);
+      }
+      if (aLKDNAHLECM_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getALKDNAHLECM());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -230,6 +291,11 @@ public final class ItemRenameAvatarRspOuterClass {
           != other.getCdTime()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (hasALKDNAHLECM() != other.hasALKDNAHLECM()) return false;
+      if (hasALKDNAHLECM()) {
+        if (!getALKDNAHLECM()
+            .equals(other.getALKDNAHLECM())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,6 +313,10 @@ public final class ItemRenameAvatarRspOuterClass {
       hash = (53 * hash) + getCdTime();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      if (hasALKDNAHLECM()) {
+        hash = (37 * hash) + ALKDNAHLECM_FIELD_NUMBER;
+        hash = (53 * hash) + getALKDNAHLECM().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,7 +414,7 @@ public final class ItemRenameAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29921
+     * CmdId: 180
      * </pre>
      *
      * Protobuf type {@code ItemRenameAvatarRsp}
@@ -390,6 +460,12 @@ public final class ItemRenameAvatarRspOuterClass {
 
         retcode_ = 0;
 
+        if (aLKDNAHLECMBuilder_ == null) {
+          aLKDNAHLECM_ = null;
+        } else {
+          aLKDNAHLECM_ = null;
+          aLKDNAHLECMBuilder_ = null;
+        }
         return this;
       }
 
@@ -419,6 +495,11 @@ public final class ItemRenameAvatarRspOuterClass {
         result.renameId_ = renameId_;
         result.cdTime_ = cdTime_;
         result.retcode_ = retcode_;
+        if (aLKDNAHLECMBuilder_ == null) {
+          result.aLKDNAHLECM_ = aLKDNAHLECM_;
+        } else {
+          result.aLKDNAHLECM_ = aLKDNAHLECMBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -475,6 +556,9 @@ public final class ItemRenameAvatarRspOuterClass {
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.hasALKDNAHLECM()) {
+          mergeALKDNAHLECM(other.getALKDNAHLECM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,7 +622,7 @@ public final class ItemRenameAvatarRspOuterClass {
 
       private int cdTime_ ;
       /**
-       * <code>uint32 cd_time = 12;</code>
+       * <code>uint32 cd_time = 7;</code>
        * @return The cdTime.
        */
       @java.lang.Override
@@ -546,7 +630,7 @@ public final class ItemRenameAvatarRspOuterClass {
         return cdTime_;
       }
       /**
-       * <code>uint32 cd_time = 12;</code>
+       * <code>uint32 cd_time = 7;</code>
        * @param value The cdTime to set.
        * @return This builder for chaining.
        */
@@ -557,7 +641,7 @@ public final class ItemRenameAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd_time = 12;</code>
+       * <code>uint32 cd_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCdTime() {
@@ -569,7 +653,7 @@ public final class ItemRenameAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -577,7 +661,7 @@ public final class ItemRenameAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -588,7 +672,7 @@ public final class ItemRenameAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -596,6 +680,125 @@ public final class ItemRenameAvatarRspOuterClass {
         retcode_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC aLKDNAHLECM_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder> aLKDNAHLECMBuilder_;
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       * @return Whether the aLKDNAHLECM field is set.
+       */
+      public boolean hasALKDNAHLECM() {
+        return aLKDNAHLECMBuilder_ != null || aLKDNAHLECM_ != null;
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       * @return The aLKDNAHLECM.
+       */
+      public emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC getALKDNAHLECM() {
+        if (aLKDNAHLECMBuilder_ == null) {
+          return aLKDNAHLECM_ == null ? emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.getDefaultInstance() : aLKDNAHLECM_;
+        } else {
+          return aLKDNAHLECMBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public Builder setALKDNAHLECM(emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC value) {
+        if (aLKDNAHLECMBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          aLKDNAHLECM_ = value;
+          onChanged();
+        } else {
+          aLKDNAHLECMBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public Builder setALKDNAHLECM(
+          emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder builderForValue) {
+        if (aLKDNAHLECMBuilder_ == null) {
+          aLKDNAHLECM_ = builderForValue.build();
+          onChanged();
+        } else {
+          aLKDNAHLECMBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public Builder mergeALKDNAHLECM(emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC value) {
+        if (aLKDNAHLECMBuilder_ == null) {
+          if (aLKDNAHLECM_ != null) {
+            aLKDNAHLECM_ =
+              emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.newBuilder(aLKDNAHLECM_).mergeFrom(value).buildPartial();
+          } else {
+            aLKDNAHLECM_ = value;
+          }
+          onChanged();
+        } else {
+          aLKDNAHLECMBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public Builder clearALKDNAHLECM() {
+        if (aLKDNAHLECMBuilder_ == null) {
+          aLKDNAHLECM_ = null;
+          onChanged();
+        } else {
+          aLKDNAHLECM_ = null;
+          aLKDNAHLECMBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder getALKDNAHLECMBuilder() {
+        
+        onChanged();
+        return getALKDNAHLECMFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      public emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder getALKDNAHLECMOrBuilder() {
+        if (aLKDNAHLECMBuilder_ != null) {
+          return aLKDNAHLECMBuilder_.getMessageOrBuilder();
+        } else {
+          return aLKDNAHLECM_ == null ?
+              emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.getDefaultInstance() : aLKDNAHLECM_;
+        }
+      }
+      /**
+       * <code>.FJNMEACDNNC ALKDNAHLECM = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder> 
+          getALKDNAHLECMFieldBuilder() {
+        if (aLKDNAHLECMBuilder_ == null) {
+          aLKDNAHLECMBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNC.Builder, emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.FJNMEACDNNCOrBuilder>(
+                  getALKDNAHLECM(),
+                  getParentForChildren(),
+                  isClean());
+          aLKDNAHLECM_ = null;
+        }
+        return aLKDNAHLECMBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -664,21 +867,24 @@ public final class ItemRenameAvatarRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ItemRenameAvatarRsp.proto\"J\n\023ItemRenam" +
-      "eAvatarRsp\022\021\n\trename_id\030\003 \001(\r\022\017\n\007cd_time" +
-      "\030\014 \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\031ItemRenameAvatarRsp.proto\032\021FJNMEACDNNC" +
+      ".proto\"m\n\023ItemRenameAvatarRsp\022\021\n\trename_" +
+      "id\030\003 \001(\r\022\017\n\007cd_time\030\007 \001(\r\022\017\n\007retcode\030\r \001" +
+      "(\005\022!\n\013ALKDNAHLECM\030\017 \001(\0132\014.FJNMEACDNNCB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.getDescriptor(),
         });
     internal_static_ItemRenameAvatarRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ItemRenameAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ItemRenameAvatarRsp_descriptor,
-        new java.lang.String[] { "RenameId", "CdTime", "Retcode", });
+        new java.lang.String[] { "RenameId", "CdTime", "Retcode", "ALKDNAHLECM", });
+    emu.grasscutter.net.proto.FJNMEACDNNCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

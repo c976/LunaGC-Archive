@@ -19,24 +19,35 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      * @return The info.
      */
     emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo getInfo();
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      */
     emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 23317
-   * Obf: JLLLKAKIGKC
+   * CmdId: 5489
    * </pre>
    *
    * Protobuf type {@code TreasureMapBonusChallengeNotify}
@@ -83,7 +94,7 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 18: {
               emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
@@ -128,10 +139,14 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapBonusChallengeNotifyOuterClass.TreasureMapBonusChallengeNotify.class, emu.grasscutter.net.proto.TreasureMapBonusChallengeNotifyOuterClass.TreasureMapBonusChallengeNotify.Builder.class);
     }
 
-    public static final int INFO_FIELD_NUMBER = 11;
+    public static final int INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo info_;
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -139,7 +154,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       return info_ != null;
     }
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      * @return The info.
      */
     @java.lang.Override
@@ -147,7 +166,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       return info_ == null ? emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getInfoOrBuilder() {
@@ -169,7 +192,7 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (info_ != null) {
-        output.writeMessage(11, getInfo());
+        output.writeMessage(2, getInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +205,7 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       size = 0;
       if (info_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getInfo());
+          .computeMessageSize(2, getInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +339,7 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23317
-     * Obf: JLLLKAKIGKC
+     * CmdId: 5489
      * </pre>
      *
      * Protobuf type {@code TreasureMapBonusChallengeNotify}
@@ -478,14 +500,22 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        * @return The info.
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo getInfo() {
@@ -496,7 +526,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public Builder setInfo(emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo value) {
         if (infoBuilder_ == null) {
@@ -512,7 +546,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public Builder setInfo(
           emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder builderForValue) {
@@ -526,7 +564,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public Builder mergeInfo(emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo value) {
         if (infoBuilder_ == null) {
@@ -544,7 +586,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -558,7 +604,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder getInfoBuilder() {
         
@@ -566,7 +616,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
@@ -577,7 +631,11 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapBonusChallengeInfo info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.TreasureMapBonusChallengeInfo info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> 
@@ -662,7 +720,7 @@ public final class TreasureMapBonusChallengeNotifyOuterClass {
       "\n%TreasureMapBonusChallengeNotify.proto\032" +
       "#TreasureMapBonusChallengeInfo.proto\"O\n\037" +
       "TreasureMapBonusChallengeNotify\022,\n\004info\030" +
-      "\013 \001(\0132\036.TreasureMapBonusChallengeInfoB\033\n" +
+      "\002 \001(\0132\036.TreasureMapBonusChallengeInfoB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

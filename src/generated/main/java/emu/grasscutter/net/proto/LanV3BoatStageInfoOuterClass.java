@@ -19,45 +19,65 @@ public final class LanV3BoatStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 match_id = 15;</code>
-     * @return The matchId.
-     */
-    int getMatchId();
-
-    /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @return A list containing the playerUidList.
      */
     java.util.List<java.lang.Integer> getPlayerUidListList();
     /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @return The count of playerUidList.
      */
     int getPlayerUidListCount();
     /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The playerUidList at the given index.
      */
     int getPlayerUidList(int index);
 
     /**
-     * <code>uint32 map_id = 4;</code>
-     * @return The mapId.
-     */
-    int getMapId();
-
-    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>bool is_single = 9;</code>
      * @return The isSingle.
      */
     boolean getIsSingle();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 EOAGNHFNOPK = 6;</code>
+     * @return The eOAGNHFNOPK.
+     */
+    int getEOAGNHFNOPK();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KHLGPKIAFAE = 15;</code>
+     * @return The kHLGPKIAFAE.
+     */
+    int getKHLGPKIAFAE();
   }
   /**
-   * <pre>
-   * Obf: OAMHCEMBNAA
-   * </pre>
-   *
    * Protobuf type {@code LanV3BoatStageInfo}
    */
   public static final class LanV3BoatStageInfo extends
@@ -104,17 +124,7 @@ public final class LanV3BoatStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              mapId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              isSingle_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerUidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -122,7 +132,7 @@ public final class LanV3BoatStageInfoOuterClass {
               playerUidList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -135,9 +145,19 @@ public final class LanV3BoatStageInfoOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 48: {
+
+              eOAGNHFNOPK_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isSingle_ = input.readBool();
+              break;
+            }
             case 120: {
 
-              matchId_ = input.readUInt32();
+              kHLGPKIAFAE_ = input.readUInt32();
               break;
             }
             default: {
@@ -175,21 +195,14 @@ public final class LanV3BoatStageInfoOuterClass {
               emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo.class, emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo.Builder.class);
     }
 
-    public static final int MATCH_ID_FIELD_NUMBER = 15;
-    private int matchId_;
-    /**
-     * <code>uint32 match_id = 15;</code>
-     * @return The matchId.
-     */
-    @java.lang.Override
-    public int getMatchId() {
-      return matchId_;
-    }
-
-    public static final int PLAYER_UID_LIST_FIELD_NUMBER = 11;
+    public static final int PLAYER_UID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList playerUidList_;
     /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @return A list containing the playerUidList.
      */
     @java.lang.Override
@@ -198,14 +211,22 @@ public final class LanV3BoatStageInfoOuterClass {
       return playerUidList_;
     }
     /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @return The count of playerUidList.
      */
     public int getPlayerUidListCount() {
       return playerUidList_.size();
     }
     /**
-     * <code>repeated uint32 player_uid_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The playerUidList at the given index.
      */
@@ -214,26 +235,49 @@ public final class LanV3BoatStageInfoOuterClass {
     }
     private int playerUidListMemoizedSerializedSize = -1;
 
-    public static final int MAP_ID_FIELD_NUMBER = 4;
-    private int mapId_;
-    /**
-     * <code>uint32 map_id = 4;</code>
-     * @return The mapId.
-     */
-    @java.lang.Override
-    public int getMapId() {
-      return mapId_;
-    }
-
     public static final int IS_SINGLE_FIELD_NUMBER = 9;
     private boolean isSingle_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>bool is_single = 9;</code>
      * @return The isSingle.
      */
     @java.lang.Override
     public boolean getIsSingle() {
       return isSingle_;
+    }
+
+    public static final int EOAGNHFNOPK_FIELD_NUMBER = 6;
+    private int eOAGNHFNOPK_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 EOAGNHFNOPK = 6;</code>
+     * @return The eOAGNHFNOPK.
+     */
+    @java.lang.Override
+    public int getEOAGNHFNOPK() {
+      return eOAGNHFNOPK_;
+    }
+
+    public static final int KHLGPKIAFAE_FIELD_NUMBER = 15;
+    private int kHLGPKIAFAE_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KHLGPKIAFAE = 15;</code>
+     * @return The kHLGPKIAFAE.
+     */
+    @java.lang.Override
+    public int getKHLGPKIAFAE() {
+      return kHLGPKIAFAE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,21 +295,21 @@ public final class LanV3BoatStageInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mapId_ != 0) {
-        output.writeUInt32(4, mapId_);
-      }
-      if (isSingle_ != false) {
-        output.writeBool(9, isSingle_);
-      }
       if (getPlayerUidListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(playerUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < playerUidList_.size(); i++) {
         output.writeUInt32NoTag(playerUidList_.getInt(i));
       }
-      if (matchId_ != 0) {
-        output.writeUInt32(15, matchId_);
+      if (eOAGNHFNOPK_ != 0) {
+        output.writeUInt32(6, eOAGNHFNOPK_);
+      }
+      if (isSingle_ != false) {
+        output.writeBool(9, isSingle_);
+      }
+      if (kHLGPKIAFAE_ != 0) {
+        output.writeUInt32(15, kHLGPKIAFAE_);
       }
       unknownFields.writeTo(output);
     }
@@ -276,14 +320,6 @@ public final class LanV3BoatStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mapId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, mapId_);
-      }
-      if (isSingle_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isSingle_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < playerUidList_.size(); i++) {
@@ -298,9 +334,17 @@ public final class LanV3BoatStageInfoOuterClass {
         }
         playerUidListMemoizedSerializedSize = dataSize;
       }
-      if (matchId_ != 0) {
+      if (eOAGNHFNOPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, matchId_);
+          .computeUInt32Size(6, eOAGNHFNOPK_);
+      }
+      if (isSingle_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isSingle_);
+      }
+      if (kHLGPKIAFAE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, kHLGPKIAFAE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,14 +361,14 @@ public final class LanV3BoatStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo other = (emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo) obj;
 
-      if (getMatchId()
-          != other.getMatchId()) return false;
       if (!getPlayerUidListList()
           .equals(other.getPlayerUidListList())) return false;
-      if (getMapId()
-          != other.getMapId()) return false;
       if (getIsSingle()
           != other.getIsSingle()) return false;
+      if (getEOAGNHFNOPK()
+          != other.getEOAGNHFNOPK()) return false;
+      if (getKHLGPKIAFAE()
+          != other.getKHLGPKIAFAE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -336,17 +380,17 @@ public final class LanV3BoatStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchId();
       if (getPlayerUidListCount() > 0) {
         hash = (37 * hash) + PLAYER_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerUidListList().hashCode();
       }
-      hash = (37 * hash) + MAP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMapId();
       hash = (37 * hash) + IS_SINGLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSingle());
+      hash = (37 * hash) + EOAGNHFNOPK_FIELD_NUMBER;
+      hash = (53 * hash) + getEOAGNHFNOPK();
+      hash = (37 * hash) + KHLGPKIAFAE_FIELD_NUMBER;
+      hash = (53 * hash) + getKHLGPKIAFAE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,10 +487,6 @@ public final class LanV3BoatStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OAMHCEMBNAA
-     * </pre>
-     *
      * Protobuf type {@code LanV3BoatStageInfo}
      */
     public static final class Builder extends
@@ -484,13 +524,13 @@ public final class LanV3BoatStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        matchId_ = 0;
-
         playerUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        mapId_ = 0;
-
         isSingle_ = false;
+
+        eOAGNHFNOPK_ = 0;
+
+        kHLGPKIAFAE_ = 0;
 
         return this;
       }
@@ -519,14 +559,14 @@ public final class LanV3BoatStageInfoOuterClass {
       public emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo buildPartial() {
         emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo result = new emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo(this);
         int from_bitField0_ = bitField0_;
-        result.matchId_ = matchId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           playerUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.playerUidList_ = playerUidList_;
-        result.mapId_ = mapId_;
         result.isSingle_ = isSingle_;
+        result.eOAGNHFNOPK_ = eOAGNHFNOPK_;
+        result.kHLGPKIAFAE_ = kHLGPKIAFAE_;
         onBuilt();
         return result;
       }
@@ -575,9 +615,6 @@ public final class LanV3BoatStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo other) {
         if (other == emu.grasscutter.net.proto.LanV3BoatStageInfoOuterClass.LanV3BoatStageInfo.getDefaultInstance()) return this;
-        if (other.getMatchId() != 0) {
-          setMatchId(other.getMatchId());
-        }
         if (!other.playerUidList_.isEmpty()) {
           if (playerUidList_.isEmpty()) {
             playerUidList_ = other.playerUidList_;
@@ -588,11 +625,14 @@ public final class LanV3BoatStageInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getMapId() != 0) {
-          setMapId(other.getMapId());
-        }
         if (other.getIsSingle() != false) {
           setIsSingle(other.getIsSingle());
+        }
+        if (other.getEOAGNHFNOPK() != 0) {
+          setEOAGNHFNOPK(other.getEOAGNHFNOPK());
+        }
+        if (other.getKHLGPKIAFAE() != 0) {
+          setKHLGPKIAFAE(other.getKHLGPKIAFAE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,37 +664,6 @@ public final class LanV3BoatStageInfoOuterClass {
       }
       private int bitField0_;
 
-      private int matchId_ ;
-      /**
-       * <code>uint32 match_id = 15;</code>
-       * @return The matchId.
-       */
-      @java.lang.Override
-      public int getMatchId() {
-        return matchId_;
-      }
-      /**
-       * <code>uint32 match_id = 15;</code>
-       * @param value The matchId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchId(int value) {
-        
-        matchId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 match_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchId() {
-        
-        matchId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList playerUidList_ = emptyIntList();
       private void ensurePlayerUidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -663,7 +672,11 @@ public final class LanV3BoatStageInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @return A list containing the playerUidList.
        */
       public java.util.List<java.lang.Integer>
@@ -672,14 +685,22 @@ public final class LanV3BoatStageInfoOuterClass {
                  java.util.Collections.unmodifiableList(playerUidList_) : playerUidList_;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @return The count of playerUidList.
        */
       public int getPlayerUidListCount() {
         return playerUidList_.size();
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The playerUidList at the given index.
        */
@@ -687,7 +708,11 @@ public final class LanV3BoatStageInfoOuterClass {
         return playerUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The playerUidList to set.
        * @return This builder for chaining.
@@ -700,7 +725,11 @@ public final class LanV3BoatStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @param value The playerUidList to add.
        * @return This builder for chaining.
        */
@@ -711,7 +740,11 @@ public final class LanV3BoatStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @param values The playerUidList to add.
        * @return This builder for chaining.
        */
@@ -724,7 +757,11 @@ public final class LanV3BoatStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUidList() {
@@ -734,39 +771,12 @@ public final class LanV3BoatStageInfoOuterClass {
         return this;
       }
 
-      private int mapId_ ;
-      /**
-       * <code>uint32 map_id = 4;</code>
-       * @return The mapId.
-       */
-      @java.lang.Override
-      public int getMapId() {
-        return mapId_;
-      }
-      /**
-       * <code>uint32 map_id = 4;</code>
-       * @param value The mapId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMapId(int value) {
-        
-        mapId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 map_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMapId() {
-        
-        mapId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSingle_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>bool is_single = 9;</code>
        * @return The isSingle.
        */
@@ -775,6 +785,10 @@ public final class LanV3BoatStageInfoOuterClass {
         return isSingle_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>bool is_single = 9;</code>
        * @param value The isSingle to set.
        * @return This builder for chaining.
@@ -786,12 +800,102 @@ public final class LanV3BoatStageInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>bool is_single = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSingle() {
         
         isSingle_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int eOAGNHFNOPK_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 6;</code>
+       * @return The eOAGNHFNOPK.
+       */
+      @java.lang.Override
+      public int getEOAGNHFNOPK() {
+        return eOAGNHFNOPK_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 6;</code>
+       * @param value The eOAGNHFNOPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEOAGNHFNOPK(int value) {
+        
+        eOAGNHFNOPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEOAGNHFNOPK() {
+        
+        eOAGNHFNOPK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kHLGPKIAFAE_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 15;</code>
+       * @return The kHLGPKIAFAE.
+       */
+      @java.lang.Override
+      public int getKHLGPKIAFAE() {
+        return kHLGPKIAFAE_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 15;</code>
+       * @param value The kHLGPKIAFAE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKHLGPKIAFAE(int value) {
+        
+        kHLGPKIAFAE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KHLGPKIAFAE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKHLGPKIAFAE() {
+        
+        kHLGPKIAFAE_ = 0;
         onChanged();
         return this;
       }
@@ -862,11 +966,11 @@ public final class LanV3BoatStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030LanV3BoatStageInfo.proto\"b\n\022LanV3BoatS" +
-      "tageInfo\022\020\n\010match_id\030\017 \001(\r\022\027\n\017player_uid" +
-      "_list\030\013 \003(\r\022\016\n\006map_id\030\004 \001(\r\022\021\n\tis_single" +
-      "\030\t \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\030LanV3BoatStageInfo.proto\"j\n\022LanV3BoatS" +
+      "tageInfo\022\027\n\017player_uid_list\030\002 \003(\r\022\021\n\tis_" +
+      "single\030\t \001(\010\022\023\n\013EOAGNHFNOPK\030\006 \001(\r\022\023\n\013KHL" +
+      "GPKIAFAE\030\017 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -877,7 +981,7 @@ public final class LanV3BoatStageInfoOuterClass {
     internal_static_LanV3BoatStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanV3BoatStageInfo_descriptor,
-        new java.lang.String[] { "MatchId", "PlayerUidList", "MapId", "IsSingle", });
+        new java.lang.String[] { "PlayerUidList", "IsSingle", "EOAGNHFNOPK", "KHLGPKIAFAE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

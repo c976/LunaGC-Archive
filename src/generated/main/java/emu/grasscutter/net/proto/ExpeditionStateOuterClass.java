@@ -20,48 +20,48 @@ public final class ExpeditionStateOuterClass {
   public enum ExpeditionState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>EXPEDITION_STATE_NONE = 0;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_NONE = 0;</code>
      */
-    EXPEDITION_STATE_NONE(0),
+    MBCAMFBKAKO_EXPEDITION_NONE(0),
     /**
-     * <code>EXPEDITION_STATE_STARTED = 1;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_STARTED = 1;</code>
      */
-    EXPEDITION_STATE_STARTED(1),
+    MBCAMFBKAKO_EXPEDITION_STARTED(1),
     /**
-     * <code>EXPEDITION_STATE_FINISHED = 2;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_FINISHED = 2;</code>
      */
-    EXPEDITION_STATE_FINISHED(2),
+    MBCAMFBKAKO_EXPEDITION_FINISHED(2),
     /**
-     * <code>EXPEDITION_STATE_REWARDED = 3;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_REWARDED = 3;</code>
      */
-    EXPEDITION_STATE_REWARDED(3),
+    MBCAMFBKAKO_EXPEDITION_REWARDED(3),
     /**
-     * <code>EXPEDITION_STATE_LOCKED = 4;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_LOCKED = 4;</code>
      */
-    EXPEDITION_STATE_LOCKED(4),
+    MBCAMFBKAKO_EXPEDITION_LOCKED(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>EXPEDITION_STATE_NONE = 0;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_NONE = 0;</code>
      */
-    public static final int EXPEDITION_STATE_NONE_VALUE = 0;
+    public static final int MBCAMFBKAKO_EXPEDITION_NONE_VALUE = 0;
     /**
-     * <code>EXPEDITION_STATE_STARTED = 1;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_STARTED = 1;</code>
      */
-    public static final int EXPEDITION_STATE_STARTED_VALUE = 1;
+    public static final int MBCAMFBKAKO_EXPEDITION_STARTED_VALUE = 1;
     /**
-     * <code>EXPEDITION_STATE_FINISHED = 2;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_FINISHED = 2;</code>
      */
-    public static final int EXPEDITION_STATE_FINISHED_VALUE = 2;
+    public static final int MBCAMFBKAKO_EXPEDITION_FINISHED_VALUE = 2;
     /**
-     * <code>EXPEDITION_STATE_REWARDED = 3;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_REWARDED = 3;</code>
      */
-    public static final int EXPEDITION_STATE_REWARDED_VALUE = 3;
+    public static final int MBCAMFBKAKO_EXPEDITION_REWARDED_VALUE = 3;
     /**
-     * <code>EXPEDITION_STATE_LOCKED = 4;</code>
+     * <code>MBCAMFBKAKO_EXPEDITION_LOCKED = 4;</code>
      */
-    public static final int EXPEDITION_STATE_LOCKED_VALUE = 4;
+    public static final int MBCAMFBKAKO_EXPEDITION_LOCKED_VALUE = 4;
 
 
     public final int getNumber() {
@@ -88,11 +88,11 @@ public final class ExpeditionStateOuterClass {
      */
     public static ExpeditionState forNumber(int value) {
       switch (value) {
-        case 0: return EXPEDITION_STATE_NONE;
-        case 1: return EXPEDITION_STATE_STARTED;
-        case 2: return EXPEDITION_STATE_FINISHED;
-        case 3: return EXPEDITION_STATE_REWARDED;
-        case 4: return EXPEDITION_STATE_LOCKED;
+        case 0: return MBCAMFBKAKO_EXPEDITION_NONE;
+        case 1: return MBCAMFBKAKO_EXPEDITION_STARTED;
+        case 2: return MBCAMFBKAKO_EXPEDITION_FINISHED;
+        case 3: return MBCAMFBKAKO_EXPEDITION_REWARDED;
+        case 4: return MBCAMFBKAKO_EXPEDITION_LOCKED;
         default: return null;
       }
     }
@@ -158,12 +158,13 @@ public final class ExpeditionStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025ExpeditionState.proto*\245\001\n\017ExpeditionSt" +
-      "ate\022\031\n\025EXPEDITION_STATE_NONE\020\000\022\034\n\030EXPEDI" +
-      "TION_STATE_STARTED\020\001\022\035\n\031EXPEDITION_STATE" +
-      "_FINISHED\020\002\022\035\n\031EXPEDITION_STATE_REWARDED" +
-      "\020\003\022\033\n\027EXPEDITION_STATE_LOCKED\020\004B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\025ExpeditionState.proto*\303\001\n\017ExpeditionSt" +
+      "ate\022\037\n\033MBCAMFBKAKO_EXPEDITION_NONE\020\000\022\"\n\036" +
+      "MBCAMFBKAKO_EXPEDITION_STARTED\020\001\022#\n\037MBCA" +
+      "MFBKAKO_EXPEDITION_FINISHED\020\002\022#\n\037MBCAMFB" +
+      "KAKO_EXPEDITION_REWARDED\020\003\022!\n\035MBCAMFBKAK" +
+      "O_EXPEDITION_LOCKED\020\004B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

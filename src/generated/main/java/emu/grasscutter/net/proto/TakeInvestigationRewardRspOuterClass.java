@@ -19,7 +19,7 @@ public final class TakeInvestigationRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -32,9 +32,7 @@ public final class TakeInvestigationRewardRspOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
-   * CmdId: 4841
-   * Obf: NIJGKFDJBIL ?
+   * CmdId: 9951
    * </pre>
    *
    * Protobuf type {@code TakeInvestigationRewardRsp}
@@ -81,7 +79,7 @@ public final class TakeInvestigationRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
@@ -123,10 +121,10 @@ public final class TakeInvestigationRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeInvestigationRewardRspOuterClass.TakeInvestigationRewardRsp.class, emu.grasscutter.net.proto.TakeInvestigationRewardRspOuterClass.TakeInvestigationRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,7 +158,7 @@ public final class TakeInvestigationRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (id_ != 0) {
         output.writeUInt32(8, id_);
@@ -176,7 +174,7 @@ public final class TakeInvestigationRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -313,9 +311,7 @@ public final class TakeInvestigationRewardRspOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
-     * CmdId: 4841
-     * Obf: NIJGKFDJBIL ?
+     * CmdId: 9951
      * </pre>
      *
      * Protobuf type {@code TakeInvestigationRewardRsp}
@@ -472,7 +468,7 @@ public final class TakeInvestigationRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,7 +476,7 @@ public final class TakeInvestigationRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -491,7 +487,7 @@ public final class TakeInvestigationRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,7 +595,7 @@ public final class TakeInvestigationRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TakeInvestigationRewardRsp.proto\"9\n\032Ta" +
-      "keInvestigationRewardRsp\022\017\n\007retcode\030\004 \001(" +
+      "keInvestigationRewardRsp\022\017\n\007retcode\030\002 \001(" +
       "\005\022\n\n\002id\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };

@@ -19,36 +19,35 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      * @return Whether the dynamicNodes field is set.
      */
     boolean hasDynamicNodes();
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      * @return The dynamicNodes.
      */
     emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes getDynamicNodes();
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      */
     emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodesOrBuilder getDynamicNodesOrBuilder();
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>int32 query_id = 5;</code>
+     * <code>int32 query_id = 15;</code>
      * @return The queryId.
      */
     int getQueryId();
   }
   /**
    * <pre>
-   * CmdId: 6115
-   * Obf: DGECIBJKEPH
+   * CmdId: 6107
    * </pre>
    *
    * Protobuf type {@code ToTheMoonRemoveObstacleRsp}
@@ -95,12 +94,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 34: {
+            case 74: {
               emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.Builder subBuilder = null;
               if (dynamicNodes_ != null) {
                 subBuilder = dynamicNodes_.toBuilder();
@@ -113,7 +107,12 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
 
               break;
             }
-            case 40: {
+            case 80: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
 
               queryId_ = input.readInt32();
               break;
@@ -150,10 +149,10 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
               emu.grasscutter.net.proto.ToTheMoonRemoveObstacleRspOuterClass.ToTheMoonRemoveObstacleRsp.class, emu.grasscutter.net.proto.ToTheMoonRemoveObstacleRspOuterClass.ToTheMoonRemoveObstacleRsp.Builder.class);
     }
 
-    public static final int DYNAMIC_NODES_FIELD_NUMBER = 4;
+    public static final int DYNAMIC_NODES_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes dynamicNodes_;
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      * @return Whether the dynamicNodes field is set.
      */
     @java.lang.Override
@@ -161,7 +160,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       return dynamicNodes_ != null;
     }
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      * @return The dynamicNodes.
      */
     @java.lang.Override
@@ -169,17 +168,17 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       return dynamicNodes_ == null ? emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.getDefaultInstance() : dynamicNodes_;
     }
     /**
-     * <code>.DynamicNodes dynamic_nodes = 4;</code>
+     * <code>.DynamicNodes dynamic_nodes = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodesOrBuilder getDynamicNodesOrBuilder() {
       return getDynamicNodes();
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -187,10 +186,10 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       return retcode_;
     }
 
-    public static final int QUERY_ID_FIELD_NUMBER = 5;
+    public static final int QUERY_ID_FIELD_NUMBER = 15;
     private int queryId_;
     /**
-     * <code>int32 query_id = 5;</code>
+     * <code>int32 query_id = 15;</code>
      * @return The queryId.
      */
     @java.lang.Override
@@ -212,14 +211,14 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (dynamicNodes_ != null) {
-        output.writeMessage(4, getDynamicNodes());
+        output.writeMessage(9, getDynamicNodes());
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
       }
       if (queryId_ != 0) {
-        output.writeInt32(5, queryId_);
+        output.writeInt32(15, queryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +229,17 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (dynamicNodes_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getDynamicNodes());
+          .computeMessageSize(9, getDynamicNodes());
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, retcode_);
       }
       if (queryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, queryId_);
+          .computeInt32Size(15, queryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,8 +381,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6115
-     * Obf: DGECIBJKEPH
+     * CmdId: 6107
      * </pre>
      *
      * Protobuf type {@code ToTheMoonRemoveObstacleRsp}
@@ -556,14 +554,14 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes, emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.Builder, emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodesOrBuilder> dynamicNodesBuilder_;
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        * @return Whether the dynamicNodes field is set.
        */
       public boolean hasDynamicNodes() {
         return dynamicNodesBuilder_ != null || dynamicNodes_ != null;
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        * @return The dynamicNodes.
        */
       public emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes getDynamicNodes() {
@@ -574,7 +572,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         }
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public Builder setDynamicNodes(emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes value) {
         if (dynamicNodesBuilder_ == null) {
@@ -590,7 +588,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public Builder setDynamicNodes(
           emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.Builder builderForValue) {
@@ -604,7 +602,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public Builder mergeDynamicNodes(emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes value) {
         if (dynamicNodesBuilder_ == null) {
@@ -622,7 +620,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public Builder clearDynamicNodes() {
         if (dynamicNodesBuilder_ == null) {
@@ -636,7 +634,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.Builder getDynamicNodesBuilder() {
         
@@ -644,7 +642,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return getDynamicNodesFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       public emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodesOrBuilder getDynamicNodesOrBuilder() {
         if (dynamicNodesBuilder_ != null) {
@@ -655,7 +653,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         }
       }
       /**
-       * <code>.DynamicNodes dynamic_nodes = 4;</code>
+       * <code>.DynamicNodes dynamic_nodes = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes, emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodes.Builder, emu.grasscutter.net.proto.DynamicNodesOuterClass.DynamicNodesOrBuilder> 
@@ -673,7 +671,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -681,7 +679,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -692,7 +690,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -704,7 +702,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
 
       private int queryId_ ;
       /**
-       * <code>int32 query_id = 5;</code>
+       * <code>int32 query_id = 15;</code>
        * @return The queryId.
        */
       @java.lang.Override
@@ -712,7 +710,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return queryId_;
       }
       /**
-       * <code>int32 query_id = 5;</code>
+       * <code>int32 query_id = 15;</code>
        * @param value The queryId to set.
        * @return This builder for chaining.
        */
@@ -723,7 +721,7 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 query_id = 5;</code>
+       * <code>int32 query_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearQueryId() {
@@ -801,8 +799,8 @@ public final class ToTheMoonRemoveObstacleRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n ToTheMoonRemoveObstacleRsp.proto\032\022Dyna" +
       "micNodes.proto\"e\n\032ToTheMoonRemoveObstacl" +
-      "eRsp\022$\n\rdynamic_nodes\030\004 \001(\0132\r.DynamicNod" +
-      "es\022\017\n\007retcode\030\002 \001(\005\022\020\n\010query_id\030\005 \001(\005B\033\n" +
+      "eRsp\022$\n\rdynamic_nodes\030\t \001(\0132\r.DynamicNod" +
+      "es\022\017\n\007retcode\030\n \001(\005\022\020\n\010query_id\030\017 \001(\005B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

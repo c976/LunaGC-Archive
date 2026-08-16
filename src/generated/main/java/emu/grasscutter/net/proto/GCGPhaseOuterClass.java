@@ -19,11 +19,11 @@ public final class GCGPhaseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     int getAllowControllerMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     boolean containsAllowControllerMap(
         int key);
@@ -34,40 +34,36 @@ public final class GCGPhaseOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAllowControllerMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAllowControllerMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
 
     int getAllowControllerMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
 
     int getAllowControllerMapOrThrow(
         int key);
 
     /**
-     * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-     * @return The enum numeric value on the wire for lCCELAGJMCM.
+     * <code>.GCGPhaseType phase_type = 10;</code>
+     * @return The enum numeric value on the wire for phaseType.
      */
-    int getLCCELAGJMCMValue();
+    int getPhaseTypeValue();
     /**
-     * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-     * @return The lCCELAGJMCM.
+     * <code>.GCGPhaseType phase_type = 10;</code>
+     * @return The phaseType.
      */
-    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getLCCELAGJMCM();
+    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhaseType();
   }
   /**
-   * <pre>
-   * Obf: KLNNAIBLJHK
-   * </pre>
-   *
    * Protobuf type {@code GCGPhase}
    */
   public static final class GCGPhase extends
@@ -80,7 +76,7 @@ public final class GCGPhaseOuterClass {
       super(builder);
     }
     private GCGPhase() {
-      lCCELAGJMCM_ = 0;
+      phaseType_ = 0;
     }
 
     @java.lang.Override
@@ -114,13 +110,13 @@ public final class GCGPhaseOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
               int rawValue = input.readEnum();
 
-              lCCELAGJMCM_ = rawValue;
+              phaseType_ = rawValue;
               break;
             }
-            case 82: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 allowControllerMap_ = com.google.protobuf.MapField.newMapField(
                     AllowControllerMapDefaultEntryHolder.defaultEntry);
@@ -162,7 +158,7 @@ public final class GCGPhaseOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 10:
+        case 15:
           return internalGetAllowControllerMap();
         default:
           throw new RuntimeException(
@@ -177,7 +173,7 @@ public final class GCGPhaseOuterClass {
               emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.class, emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.Builder.class);
     }
 
-    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 10;
+    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 15;
     private static final class AllowControllerMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -204,7 +200,7 @@ public final class GCGPhaseOuterClass {
       return internalGetAllowControllerMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
 
     @java.lang.Override
@@ -222,7 +218,7 @@ public final class GCGPhaseOuterClass {
       return getAllowControllerMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     @java.lang.Override
 
@@ -230,7 +226,7 @@ public final class GCGPhaseOuterClass {
       return internalGetAllowControllerMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     @java.lang.Override
 
@@ -243,7 +239,7 @@ public final class GCGPhaseOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
      */
     @java.lang.Override
 
@@ -258,22 +254,22 @@ public final class GCGPhaseOuterClass {
       return map.get(key);
     }
 
-    public static final int LCCELAGJMCM_FIELD_NUMBER = 2;
-    private int lCCELAGJMCM_;
+    public static final int PHASE_TYPE_FIELD_NUMBER = 10;
+    private int phaseType_;
     /**
-     * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-     * @return The enum numeric value on the wire for lCCELAGJMCM.
+     * <code>.GCGPhaseType phase_type = 10;</code>
+     * @return The enum numeric value on the wire for phaseType.
      */
-    @java.lang.Override public int getLCCELAGJMCMValue() {
-      return lCCELAGJMCM_;
+    @java.lang.Override public int getPhaseTypeValue() {
+      return phaseType_;
     }
     /**
-     * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-     * @return The lCCELAGJMCM.
+     * <code>.GCGPhaseType phase_type = 10;</code>
+     * @return The phaseType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getLCCELAGJMCM() {
+    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhaseType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(lCCELAGJMCM_);
+      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(phaseType_);
       return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
     }
 
@@ -291,15 +287,15 @@ public final class GCGPhaseOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lCCELAGJMCM_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.OFOHJIEDJKD_GcgPhaseInvalid.getNumber()) {
-        output.writeEnum(2, lCCELAGJMCM_);
+      if (phaseType_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
+        output.writeEnum(10, phaseType_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetAllowControllerMap(),
           AllowControllerMapDefaultEntryHolder.defaultEntry,
-          10);
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -309,9 +305,9 @@ public final class GCGPhaseOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lCCELAGJMCM_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.OFOHJIEDJKD_GcgPhaseInvalid.getNumber()) {
+      if (phaseType_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, lCCELAGJMCM_);
+          .computeEnumSize(10, phaseType_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetAllowControllerMap().getMap().entrySet()) {
@@ -321,7 +317,7 @@ public final class GCGPhaseOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, allowControllerMap__);
+            .computeMessageSize(15, allowControllerMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -340,7 +336,7 @@ public final class GCGPhaseOuterClass {
 
       if (!internalGetAllowControllerMap().equals(
           other.internalGetAllowControllerMap())) return false;
-      if (lCCELAGJMCM_ != other.lCCELAGJMCM_) return false;
+      if (phaseType_ != other.phaseType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -356,8 +352,8 @@ public final class GCGPhaseOuterClass {
         hash = (37 * hash) + ALLOW_CONTROLLER_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAllowControllerMap().hashCode();
       }
-      hash = (37 * hash) + LCCELAGJMCM_FIELD_NUMBER;
-      hash = (53 * hash) + lCCELAGJMCM_;
+      hash = (37 * hash) + PHASE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + phaseType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -454,10 +450,6 @@ public final class GCGPhaseOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KLNNAIBLJHK
-     * </pre>
-     *
      * Protobuf type {@code GCGPhase}
      */
     public static final class Builder extends
@@ -473,7 +465,7 @@ public final class GCGPhaseOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 15:
             return internalGetAllowControllerMap();
           default:
             throw new RuntimeException(
@@ -484,7 +476,7 @@ public final class GCGPhaseOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 15:
             return internalGetMutableAllowControllerMap();
           default:
             throw new RuntimeException(
@@ -518,7 +510,7 @@ public final class GCGPhaseOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableAllowControllerMap().clear();
-        lCCELAGJMCM_ = 0;
+        phaseType_ = 0;
 
         return this;
       }
@@ -549,7 +541,7 @@ public final class GCGPhaseOuterClass {
         int from_bitField0_ = bitField0_;
         result.allowControllerMap_ = internalGetAllowControllerMap();
         result.allowControllerMap_.makeImmutable();
-        result.lCCELAGJMCM_ = lCCELAGJMCM_;
+        result.phaseType_ = phaseType_;
         onBuilt();
         return result;
       }
@@ -600,8 +592,8 @@ public final class GCGPhaseOuterClass {
         if (other == emu.grasscutter.net.proto.GCGPhaseOuterClass.GCGPhase.getDefaultInstance()) return this;
         internalGetMutableAllowControllerMap().mergeFrom(
             other.internalGetAllowControllerMap());
-        if (other.lCCELAGJMCM_ != 0) {
-          setLCCELAGJMCMValue(other.getLCCELAGJMCMValue());
+        if (other.phaseType_ != 0) {
+          setPhaseTypeValue(other.getPhaseTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -660,7 +652,7 @@ public final class GCGPhaseOuterClass {
         return internalGetAllowControllerMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
 
       @java.lang.Override
@@ -678,7 +670,7 @@ public final class GCGPhaseOuterClass {
         return getAllowControllerMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
       @java.lang.Override
 
@@ -686,7 +678,7 @@ public final class GCGPhaseOuterClass {
         return internalGetAllowControllerMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
       @java.lang.Override
 
@@ -699,7 +691,7 @@ public final class GCGPhaseOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
       @java.lang.Override
 
@@ -720,7 +712,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
 
       public Builder removeAllowControllerMap(
@@ -739,7 +731,7 @@ public final class GCGPhaseOuterClass {
         return internalGetMutableAllowControllerMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
       public Builder putAllowControllerMap(
           int key,
@@ -751,7 +743,7 @@ public final class GCGPhaseOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; allow_controller_map = 15;</code>
        */
 
       public Builder putAllAllowControllerMap(
@@ -761,56 +753,56 @@ public final class GCGPhaseOuterClass {
         return this;
       }
 
-      private int lCCELAGJMCM_ = 0;
+      private int phaseType_ = 0;
       /**
-       * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-       * @return The enum numeric value on the wire for lCCELAGJMCM.
+       * <code>.GCGPhaseType phase_type = 10;</code>
+       * @return The enum numeric value on the wire for phaseType.
        */
-      @java.lang.Override public int getLCCELAGJMCMValue() {
-        return lCCELAGJMCM_;
+      @java.lang.Override public int getPhaseTypeValue() {
+        return phaseType_;
       }
       /**
-       * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-       * @param value The enum numeric value on the wire for lCCELAGJMCM to set.
+       * <code>.GCGPhaseType phase_type = 10;</code>
+       * @param value The enum numeric value on the wire for phaseType to set.
        * @return This builder for chaining.
        */
-      public Builder setLCCELAGJMCMValue(int value) {
+      public Builder setPhaseTypeValue(int value) {
         
-        lCCELAGJMCM_ = value;
+        phaseType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-       * @return The lCCELAGJMCM.
+       * <code>.GCGPhaseType phase_type = 10;</code>
+       * @return The phaseType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getLCCELAGJMCM() {
+      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhaseType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(lCCELAGJMCM_);
+        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(phaseType_);
         return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
-       * @param value The lCCELAGJMCM to set.
+       * <code>.GCGPhaseType phase_type = 10;</code>
+       * @param value The phaseType to set.
        * @return This builder for chaining.
        */
-      public Builder setLCCELAGJMCM(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
+      public Builder setPhaseType(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        lCCELAGJMCM_ = value.getNumber();
+        phaseType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.GCGPhaseType LCCELAGJMCM = 2;</code>
+       * <code>.GCGPhaseType phase_type = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLCCELAGJMCM() {
+      public Builder clearPhaseType() {
         
-        lCCELAGJMCM_ = 0;
+        phaseType_ = 0;
         onChanged();
         return this;
       }
@@ -886,13 +878,13 @@ public final class GCGPhaseOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016GCGPhase.proto\032\022GCGPhaseType.proto\"\252\001\n" +
-      "\010GCGPhase\022?\n\024allow_controller_map\030\n \003(\0132" +
-      "!.GCGPhase.AllowControllerMapEntry\022\"\n\013LC" +
-      "CELAGJMCM\030\002 \001(\0162\r.GCGPhaseType\0329\n\027AllowC" +
-      "ontrollerMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
-      "\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\016GCGPhase.proto\032\022GCGPhaseType.proto\"\251\001\n" +
+      "\010GCGPhase\022?\n\024allow_controller_map\030\017 \003(\0132" +
+      "!.GCGPhase.AllowControllerMapEntry\022!\n\nph" +
+      "ase_type\030\n \001(\0162\r.GCGPhaseType\0329\n\027AllowCo" +
+      "ntrollerMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002" +
+      " \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -904,7 +896,7 @@ public final class GCGPhaseOuterClass {
     internal_static_GCGPhase_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGPhase_descriptor,
-        new java.lang.String[] { "AllowControllerMap", "LCCELAGJMCM", });
+        new java.lang.String[] { "AllowControllerMap", "PhaseType", });
     internal_static_GCGPhase_AllowControllerMapEntry_descriptor =
       internal_static_GCGPhase_descriptor.getNestedTypes().get(0);
     internal_static_GCGPhase_AllowControllerMapEntry_fieldAccessorTable = new

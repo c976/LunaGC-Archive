@@ -20,64 +20,64 @@ public final class PacmanDungeonStopReasonOuterClass {
   public enum PacmanDungeonStopReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_NONE = 0;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_NONE = 0;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_NONE(0),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_NONE(0),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_SUCCESS = 1;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_SUCCESS = 1;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_SUCCESS(1),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_SUCCESS(1),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_TIMEUP = 2;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_TIMEUP = 2;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_TIMEUP(2),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_TIMEUP(2),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_CLIENT_INTERRUPT = 3;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRUPT = 3;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_CLIENT_INTERRUPT(3),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRUPT(3),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_CANCEL = 4;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_CANCEL = 4;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_CANCEL(4),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_CANCEL(4),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_ACTIVITY_CLOSED = 5;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED = 5;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_ACTIVITY_CLOSED(5),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED(5),
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_FAIL = 6;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_FAIL = 6;</code>
      */
-    PACMAN_DUNGEON_STOP_REASON_FAIL(6),
+    DNKELPCCHFM_PACMAN_DUNGEON_STOP_FAIL(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_NONE = 0;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_NONE = 0;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_NONE_VALUE = 0;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_NONE_VALUE = 0;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_SUCCESS = 1;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_SUCCESS = 1;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_SUCCESS_VALUE = 1;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_SUCCESS_VALUE = 1;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_TIMEUP = 2;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_TIMEUP = 2;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_TIMEUP_VALUE = 2;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_TIMEUP_VALUE = 2;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_CLIENT_INTERRUPT = 3;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRUPT = 3;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_CLIENT_INTERRUPT_VALUE = 3;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRUPT_VALUE = 3;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_CANCEL = 4;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_CANCEL = 4;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_CANCEL_VALUE = 4;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_CANCEL_VALUE = 4;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_ACTIVITY_CLOSED = 5;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED = 5;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_ACTIVITY_CLOSED_VALUE = 5;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED_VALUE = 5;
     /**
-     * <code>PACMAN_DUNGEON_STOP_REASON_FAIL = 6;</code>
+     * <code>DNKELPCCHFM_PACMAN_DUNGEON_STOP_FAIL = 6;</code>
      */
-    public static final int PACMAN_DUNGEON_STOP_REASON_FAIL_VALUE = 6;
+    public static final int DNKELPCCHFM_PACMAN_DUNGEON_STOP_FAIL_VALUE = 6;
 
 
     public final int getNumber() {
@@ -104,13 +104,13 @@ public final class PacmanDungeonStopReasonOuterClass {
      */
     public static PacmanDungeonStopReason forNumber(int value) {
       switch (value) {
-        case 0: return PACMAN_DUNGEON_STOP_REASON_NONE;
-        case 1: return PACMAN_DUNGEON_STOP_REASON_SUCCESS;
-        case 2: return PACMAN_DUNGEON_STOP_REASON_TIMEUP;
-        case 3: return PACMAN_DUNGEON_STOP_REASON_CLIENT_INTERRUPT;
-        case 4: return PACMAN_DUNGEON_STOP_REASON_CANCEL;
-        case 5: return PACMAN_DUNGEON_STOP_REASON_ACTIVITY_CLOSED;
-        case 6: return PACMAN_DUNGEON_STOP_REASON_FAIL;
+        case 0: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_NONE;
+        case 1: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_SUCCESS;
+        case 2: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_TIMEUP;
+        case 3: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRUPT;
+        case 4: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_CANCEL;
+        case 5: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED;
+        case 6: return DNKELPCCHFM_PACMAN_DUNGEON_STOP_FAIL;
         default: return null;
       }
     }
@@ -176,16 +176,17 @@ public final class PacmanDungeonStopReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035PacmanDungeonStopReason.proto*\272\002\n\027Pacm" +
-      "anDungeonStopReason\022#\n\037PACMAN_DUNGEON_ST" +
-      "OP_REASON_NONE\020\000\022&\n\"PACMAN_DUNGEON_STOP_" +
-      "REASON_SUCCESS\020\001\022%\n!PACMAN_DUNGEON_STOP_" +
-      "REASON_TIMEUP\020\002\022/\n+PACMAN_DUNGEON_STOP_R" +
-      "EASON_CLIENT_INTERRUPT\020\003\022%\n!PACMAN_DUNGE" +
-      "ON_STOP_REASON_CANCEL\020\004\022.\n*PACMAN_DUNGEO" +
-      "N_STOP_REASON_ACTIVITY_CLOSED\020\005\022#\n\037PACMA" +
-      "N_DUNGEON_STOP_REASON_FAIL\020\006B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\035PacmanDungeonStopReason.proto*\335\002\n\027Pacm" +
+      "anDungeonStopReason\022(\n$DNKELPCCHFM_PACMA" +
+      "N_DUNGEON_STOP_NONE\020\000\022+\n\'DNKELPCCHFM_PAC" +
+      "MAN_DUNGEON_STOP_SUCCESS\020\001\022*\n&DNKELPCCHF" +
+      "M_PACMAN_DUNGEON_STOP_TIMEUP\020\002\0224\n0DNKELP" +
+      "CCHFM_PACMAN_DUNGEON_STOP_CLIENT_INTERRU" +
+      "PT\020\003\022*\n&DNKELPCCHFM_PACMAN_DUNGEON_STOP_" +
+      "CANCEL\020\004\0223\n/DNKELPCCHFM_PACMAN_DUNGEON_S" +
+      "TOP_ACTIVITY_CLOSED\020\005\022(\n$DNKELPCCHFM_PAC" +
+      "MAN_DUNGEON_STOP_FAIL\020\006B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

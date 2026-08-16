@@ -44,8 +44,7 @@ public final class PSNFriendListNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25239
-   * Obf: AEJPFHJJMJD
+   * CmdId: 22981
    * </pre>
    *
    * Protobuf type {@code PSNFriendListNotify}
@@ -337,8 +336,7 @@ public final class PSNFriendListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25239
-     * Obf: AEJPFHJJMJD
+     * CmdId: 22981
      * </pre>
      *
      * Protobuf type {@code PSNFriendListNotify}

@@ -19,6 +19,51 @@ public final class ActivityRecvGiftDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    boolean hasProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+    /**
+     * <code>string remark_name = 3;</code>
+     * @return The remarkName.
+     */
+    java.lang.String getRemarkName();
+    /**
+     * <code>string remark_name = 3;</code>
+     * @return The bytes for remarkName.
+     */
+    com.google.protobuf.ByteString
+        getRemarkNameBytes();
+
+    /**
+     * <code>uint32 uid = 4;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>fixed64 AJALGAKDIJP = 7;</code>
+     * @return The aJALGAKDIJP.
+     */
+    long getAJALGAKDIJP();
+
+    /**
+     * <code>fixed64 accept_time = 10;</code>
+     * @return The acceptTime.
+     */
+    long getAcceptTime();
+
+    /**
      * <code>map&lt;uint32, uint32&gt; gift_num_map = 11;</code>
      */
     int getGiftNumMapCount();
@@ -53,39 +98,6 @@ public final class ActivityRecvGiftDataOuterClass {
         int key);
 
     /**
-     * <code>uint32 uid = 14;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-    /**
-     * <code>string remark_name = 12;</code>
-     * @return The remarkName.
-     */
-    java.lang.String getRemarkName();
-    /**
-     * <code>string remark_name = 12;</code>
-     * @return The bytes for remarkName.
-     */
-    com.google.protobuf.ByteString
-        getRemarkNameBytes();
-
-    /**
      * <code>string nickname = 13;</code>
      * @return The nickname.
      */
@@ -96,12 +108,14 @@ public final class ActivityRecvGiftDataOuterClass {
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
+
+    /**
+     * <code>bool NKDPFBJFFMA = 14;</code>
+     * @return The nKDPFBJFFMA.
+     */
+    boolean getNKDPFBJFFMA();
   }
   /**
-   * <pre>
-   * Obf: HNOIMLAIGBN
-   * </pre>
-   *
    * Protobuf type {@code ActivityRecvGiftData}
    */
   public static final class ActivityRecvGiftData extends
@@ -149,7 +163,7 @@ public final class ActivityRecvGiftDataOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 10: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -160,6 +174,27 @@ public final class ActivityRecvGiftDataOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              remarkName_ = s;
+              break;
+            }
+            case 32: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 57: {
+
+              aJALGAKDIJP_ = input.readFixed64();
+              break;
+            }
+            case 81: {
+
+              acceptTime_ = input.readFixed64();
               break;
             }
             case 90: {
@@ -175,12 +210,6 @@ public final class ActivityRecvGiftDataOuterClass {
                   giftNumMap__.getKey(), giftNumMap__.getValue());
               break;
             }
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              remarkName_ = s;
-              break;
-            }
             case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
@@ -189,7 +218,7 @@ public final class ActivityRecvGiftDataOuterClass {
             }
             case 112: {
 
-              uid_ = input.readUInt32();
+              nKDPFBJFFMA_ = input.readBool();
               break;
             }
             default: {
@@ -234,6 +263,103 @@ public final class ActivityRecvGiftDataOuterClass {
       return emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.internal_static_ActivityRecvGiftData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.class, emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.Builder.class);
+    }
+
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
+    }
+
+    public static final int REMARK_NAME_FIELD_NUMBER = 3;
+    private volatile java.lang.Object remarkName_;
+    /**
+     * <code>string remark_name = 3;</code>
+     * @return The remarkName.
+     */
+    @java.lang.Override
+    public java.lang.String getRemarkName() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        remarkName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string remark_name = 3;</code>
+     * @return The bytes for remarkName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getRemarkNameBytes() {
+      java.lang.Object ref = remarkName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        remarkName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int UID_FIELD_NUMBER = 4;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 4;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int AJALGAKDIJP_FIELD_NUMBER = 7;
+    private long aJALGAKDIJP_;
+    /**
+     * <code>fixed64 AJALGAKDIJP = 7;</code>
+     * @return The aJALGAKDIJP.
+     */
+    @java.lang.Override
+    public long getAJALGAKDIJP() {
+      return aJALGAKDIJP_;
+    }
+
+    public static final int ACCEPT_TIME_FIELD_NUMBER = 10;
+    private long acceptTime_;
+    /**
+     * <code>fixed64 accept_time = 10;</code>
+     * @return The acceptTime.
+     */
+    @java.lang.Override
+    public long getAcceptTime() {
+      return acceptTime_;
     }
 
     public static final int GIFT_NUM_MAP_FIELD_NUMBER = 11;
@@ -317,81 +443,6 @@ public final class ActivityRecvGiftDataOuterClass {
       return map.get(key);
     }
 
-    public static final int UID_FIELD_NUMBER = 14;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 14;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
-    public static final int REMARK_NAME_FIELD_NUMBER = 12;
-    private volatile java.lang.Object remarkName_;
-    /**
-     * <code>string remark_name = 12;</code>
-     * @return The remarkName.
-     */
-    @java.lang.Override
-    public java.lang.String getRemarkName() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        remarkName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string remark_name = 12;</code>
-     * @return The bytes for remarkName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRemarkNameBytes() {
-      java.lang.Object ref = remarkName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        remarkName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int NICKNAME_FIELD_NUMBER = 13;
     private volatile java.lang.Object nickname_;
     /**
@@ -430,6 +481,17 @@ public final class ActivityRecvGiftDataOuterClass {
       }
     }
 
+    public static final int NKDPFBJFFMA_FIELD_NUMBER = 14;
+    private boolean nKDPFBJFFMA_;
+    /**
+     * <code>bool NKDPFBJFFMA = 14;</code>
+     * @return The nKDPFBJFFMA.
+     */
+    @java.lang.Override
+    public boolean getNKDPFBJFFMA() {
+      return nKDPFBJFFMA_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -445,7 +507,19 @@ public final class ActivityRecvGiftDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (profilePicture_ != null) {
-        output.writeMessage(9, getProfilePicture());
+        output.writeMessage(1, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, remarkName_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(4, uid_);
+      }
+      if (aJALGAKDIJP_ != 0L) {
+        output.writeFixed64(7, aJALGAKDIJP_);
+      }
+      if (acceptTime_ != 0L) {
+        output.writeFixed64(10, acceptTime_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
@@ -453,14 +527,11 @@ public final class ActivityRecvGiftDataOuterClass {
           internalGetGiftNumMap(),
           GiftNumMapDefaultEntryHolder.defaultEntry,
           11);
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, remarkName_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 13, nickname_);
       }
-      if (uid_ != 0) {
-        output.writeUInt32(14, uid_);
+      if (nKDPFBJFFMA_ != false) {
+        output.writeBool(14, nKDPFBJFFMA_);
       }
       unknownFields.writeTo(output);
     }
@@ -473,7 +544,22 @@ public final class ActivityRecvGiftDataOuterClass {
       size = 0;
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getProfilePicture());
+          .computeMessageSize(1, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, remarkName_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, uid_);
+      }
+      if (aJALGAKDIJP_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(7, aJALGAKDIJP_);
+      }
+      if (acceptTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(10, acceptTime_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetGiftNumMap().getMap().entrySet()) {
@@ -485,15 +571,12 @@ public final class ActivityRecvGiftDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(11, giftNumMap__);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, remarkName_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, nickname_);
       }
-      if (uid_ != 0) {
+      if (nKDPFBJFFMA_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, uid_);
+          .computeBoolSize(14, nKDPFBJFFMA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -510,10 +593,6 @@ public final class ActivityRecvGiftDataOuterClass {
       }
       emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData other = (emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData) obj;
 
-      if (!internalGetGiftNumMap().equals(
-          other.internalGetGiftNumMap())) return false;
-      if (getUid()
-          != other.getUid()) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
@@ -521,8 +600,18 @@ public final class ActivityRecvGiftDataOuterClass {
       }
       if (!getRemarkName()
           .equals(other.getRemarkName())) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getAJALGAKDIJP()
+          != other.getAJALGAKDIJP()) return false;
+      if (getAcceptTime()
+          != other.getAcceptTime()) return false;
+      if (!internalGetGiftNumMap().equals(
+          other.internalGetGiftNumMap())) return false;
       if (!getNickname()
           .equals(other.getNickname())) return false;
+      if (getNKDPFBJFFMA()
+          != other.getNKDPFBJFFMA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -534,20 +623,29 @@ public final class ActivityRecvGiftDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetGiftNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + GIFT_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetGiftNumMap().hashCode();
-      }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
       hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getRemarkName().hashCode();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + AJALGAKDIJP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAJALGAKDIJP());
+      hash = (37 * hash) + ACCEPT_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAcceptTime());
+      if (!internalGetGiftNumMap().getMap().isEmpty()) {
+        hash = (37 * hash) + GIFT_NUM_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetGiftNumMap().hashCode();
+      }
       hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
       hash = (53 * hash) + getNickname().hashCode();
+      hash = (37 * hash) + NKDPFBJFFMA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getNKDPFBJFFMA());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -644,10 +742,6 @@ public final class ActivityRecvGiftDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HNOIMLAIGBN
-     * </pre>
-     *
      * Protobuf type {@code ActivityRecvGiftData}
      */
     public static final class Builder extends
@@ -707,9 +801,6 @@ public final class ActivityRecvGiftDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableGiftNumMap().clear();
-        uid_ = 0;
-
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
         } else {
@@ -718,7 +809,16 @@ public final class ActivityRecvGiftDataOuterClass {
         }
         remarkName_ = "";
 
+        uid_ = 0;
+
+        aJALGAKDIJP_ = 0L;
+
+        acceptTime_ = 0L;
+
+        internalGetMutableGiftNumMap().clear();
         nickname_ = "";
+
+        nKDPFBJFFMA_ = false;
 
         return this;
       }
@@ -747,16 +847,19 @@ public final class ActivityRecvGiftDataOuterClass {
       public emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData buildPartial() {
         emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData result = new emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData(this);
         int from_bitField0_ = bitField0_;
-        result.giftNumMap_ = internalGetGiftNumMap();
-        result.giftNumMap_.makeImmutable();
-        result.uid_ = uid_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
         result.remarkName_ = remarkName_;
+        result.uid_ = uid_;
+        result.aJALGAKDIJP_ = aJALGAKDIJP_;
+        result.acceptTime_ = acceptTime_;
+        result.giftNumMap_ = internalGetGiftNumMap();
+        result.giftNumMap_.makeImmutable();
         result.nickname_ = nickname_;
+        result.nKDPFBJFFMA_ = nKDPFBJFFMA_;
         onBuilt();
         return result;
       }
@@ -805,11 +908,6 @@ public final class ActivityRecvGiftDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData other) {
         if (other == emu.grasscutter.net.proto.ActivityRecvGiftDataOuterClass.ActivityRecvGiftData.getDefaultInstance()) return this;
-        internalGetMutableGiftNumMap().mergeFrom(
-            other.internalGetGiftNumMap());
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
         }
@@ -817,9 +915,23 @@ public final class ActivityRecvGiftDataOuterClass {
           remarkName_ = other.remarkName_;
           onChanged();
         }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getAJALGAKDIJP() != 0L) {
+          setAJALGAKDIJP(other.getAJALGAKDIJP());
+        }
+        if (other.getAcceptTime() != 0L) {
+          setAcceptTime(other.getAcceptTime());
+        }
+        internalGetMutableGiftNumMap().mergeFrom(
+            other.internalGetGiftNumMap());
         if (!other.getNickname().isEmpty()) {
           nickname_ = other.nickname_;
           onChanged();
+        }
+        if (other.getNKDPFBJFFMA() != false) {
+          setNKDPFBJFFMA(other.getNKDPFBJFFMA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -850,6 +962,294 @@ public final class ActivityRecvGiftDataOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      public boolean hasProfilePicture() {
+        return profilePictureBuilder_ != null || profilePicture_ != null;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       * @return The profilePicture.
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        } else {
+          return profilePictureBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          profilePicture_ = value;
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public Builder setProfilePicture(
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = builderForValue.build();
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (profilePicture_ != null) {
+            profilePicture_ =
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
+          } else {
+            profilePicture_ = value;
+          }
+          onChanged();
+        } else {
+          profilePictureBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public Builder clearProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+          onChanged();
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
+        
+        onChanged();
+        return getProfilePictureFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        if (profilePictureBuilder_ != null) {
+          return profilePictureBuilder_.getMessageOrBuilder();
+        } else {
+          return profilePicture_ == null ?
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
+          getProfilePictureFieldBuilder() {
+        if (profilePictureBuilder_ == null) {
+          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
+                  getProfilePicture(),
+                  getParentForChildren(),
+                  isClean());
+          profilePicture_ = null;
+        }
+        return profilePictureBuilder_;
+      }
+
+      private java.lang.Object remarkName_ = "";
+      /**
+       * <code>string remark_name = 3;</code>
+       * @return The remarkName.
+       */
+      public java.lang.String getRemarkName() {
+        java.lang.Object ref = remarkName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          remarkName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string remark_name = 3;</code>
+       * @return The bytes for remarkName.
+       */
+      public com.google.protobuf.ByteString
+          getRemarkNameBytes() {
+        java.lang.Object ref = remarkName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          remarkName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string remark_name = 3;</code>
+       * @param value The remarkName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemarkName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        remarkName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string remark_name = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemarkName() {
+        
+        remarkName_ = getDefaultInstance().getRemarkName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string remark_name = 3;</code>
+       * @param value The bytes for remarkName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemarkNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        remarkName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 4;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 4;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long aJALGAKDIJP_ ;
+      /**
+       * <code>fixed64 AJALGAKDIJP = 7;</code>
+       * @return The aJALGAKDIJP.
+       */
+      @java.lang.Override
+      public long getAJALGAKDIJP() {
+        return aJALGAKDIJP_;
+      }
+      /**
+       * <code>fixed64 AJALGAKDIJP = 7;</code>
+       * @param value The aJALGAKDIJP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAJALGAKDIJP(long value) {
+        
+        aJALGAKDIJP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed64 AJALGAKDIJP = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAJALGAKDIJP() {
+        
+        aJALGAKDIJP_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long acceptTime_ ;
+      /**
+       * <code>fixed64 accept_time = 10;</code>
+       * @return The acceptTime.
+       */
+      @java.lang.Override
+      public long getAcceptTime() {
+        return acceptTime_;
+      }
+      /**
+       * <code>fixed64 accept_time = 10;</code>
+       * @param value The acceptTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAcceptTime(long value) {
+        
+        acceptTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed64 accept_time = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAcceptTime() {
+        
+        acceptTime_ = 0L;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> giftNumMap_;
@@ -979,232 +1379,6 @@ public final class ActivityRecvGiftDataOuterClass {
         return this;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      public boolean hasProfilePicture() {
-        return profilePictureBuilder_ != null || profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       * @return The profilePicture.
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        } else {
-          return profilePictureBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          profilePicture_ = value;
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public Builder setProfilePicture(
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = builderForValue.build();
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (profilePicture_ != null) {
-            profilePicture_ =
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
-          } else {
-            profilePicture_ = value;
-          }
-          onChanged();
-        } else {
-          profilePictureBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public Builder clearProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-          onChanged();
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
-        
-        onChanged();
-        return getProfilePictureFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        if (profilePictureBuilder_ != null) {
-          return profilePictureBuilder_.getMessageOrBuilder();
-        } else {
-          return profilePicture_ == null ?
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
-          getProfilePictureFieldBuilder() {
-        if (profilePictureBuilder_ == null) {
-          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
-                  getProfilePicture(),
-                  getParentForChildren(),
-                  isClean());
-          profilePicture_ = null;
-        }
-        return profilePictureBuilder_;
-      }
-
-      private java.lang.Object remarkName_ = "";
-      /**
-       * <code>string remark_name = 12;</code>
-       * @return The remarkName.
-       */
-      public java.lang.String getRemarkName() {
-        java.lang.Object ref = remarkName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          remarkName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string remark_name = 12;</code>
-       * @return The bytes for remarkName.
-       */
-      public com.google.protobuf.ByteString
-          getRemarkNameBytes() {
-        java.lang.Object ref = remarkName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          remarkName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string remark_name = 12;</code>
-       * @param value The remarkName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemarkName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        remarkName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string remark_name = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemarkName() {
-        
-        remarkName_ = getDefaultInstance().getRemarkName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string remark_name = 12;</code>
-       * @param value The bytes for remarkName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemarkNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        remarkName_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object nickname_ = "";
       /**
        * <code>string nickname = 13;</code>
@@ -1277,6 +1451,37 @@ public final class ActivityRecvGiftDataOuterClass {
   checkByteStringIsUtf8(value);
         
         nickname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean nKDPFBJFFMA_ ;
+      /**
+       * <code>bool NKDPFBJFFMA = 14;</code>
+       * @return The nKDPFBJFFMA.
+       */
+      @java.lang.Override
+      public boolean getNKDPFBJFFMA() {
+        return nKDPFBJFFMA_;
+      }
+      /**
+       * <code>bool NKDPFBJFFMA = 14;</code>
+       * @param value The nKDPFBJFFMA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNKDPFBJFFMA(boolean value) {
+        
+        nKDPFBJFFMA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool NKDPFBJFFMA = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNKDPFBJFFMA() {
+        
+        nKDPFBJFFMA_ = false;
         onChanged();
         return this;
       }
@@ -1353,13 +1558,15 @@ public final class ActivityRecvGiftDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ActivityRecvGiftData.proto\032\024ProfilePic" +
-      "ture.proto\"\344\001\n\024ActivityRecvGiftData\022;\n\014g" +
-      "ift_num_map\030\013 \003(\0132%.ActivityRecvGiftData" +
-      ".GiftNumMapEntry\022\013\n\003uid\030\016 \001(\r\022(\n\017profile" +
-      "_picture\030\t \001(\0132\017.ProfilePicture\022\023\n\013remar" +
-      "k_name\030\014 \001(\t\022\020\n\010nickname\030\r \001(\t\0321\n\017GiftNu" +
-      "mMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028" +
-      "\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ture.proto\"\243\002\n\024ActivityRecvGiftData\022(\n\017p" +
+      "rofile_picture\030\001 \001(\0132\017.ProfilePicture\022\023\n" +
+      "\013remark_name\030\003 \001(\t\022\013\n\003uid\030\004 \001(\r\022\023\n\013AJALG" +
+      "AKDIJP\030\007 \001(\006\022\023\n\013accept_time\030\n \001(\006\022;\n\014gif" +
+      "t_num_map\030\013 \003(\0132%.ActivityRecvGiftData.G" +
+      "iftNumMapEntry\022\020\n\010nickname\030\r \001(\t\022\023\n\013NKDP" +
+      "FBJFFMA\030\016 \001(\010\0321\n\017GiftNumMapEntry\022\013\n\003key\030" +
+      "\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1371,7 +1578,7 @@ public final class ActivityRecvGiftDataOuterClass {
     internal_static_ActivityRecvGiftData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityRecvGiftData_descriptor,
-        new java.lang.String[] { "GiftNumMap", "Uid", "ProfilePicture", "RemarkName", "Nickname", });
+        new java.lang.String[] { "ProfilePicture", "RemarkName", "Uid", "AJALGAKDIJP", "AcceptTime", "GiftNumMap", "Nickname", "NKDPFBJFFMA", });
     internal_static_ActivityRecvGiftData_GiftNumMapEntry_descriptor =
       internal_static_ActivityRecvGiftData_descriptor.getNestedTypes().get(0);
     internal_static_ActivityRecvGiftData_GiftNumMapEntry_fieldAccessorTable = new

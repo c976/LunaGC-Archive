@@ -19,34 +19,46 @@ public final class AbilityMixinShieldBarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 element_type = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HNKBJDACIGL = 13;</code>
+     * @return The hNKBJDACIGL.
+     */
+    int getHNKBJDACIGL();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 element_type = 8;</code>
      * @return The elementType.
      */
     int getElementType();
 
     /**
-     * <code>float FFMBPIKIJAP = 5;</code>
-     * @return The fFMBPIKIJAP.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PJBEOHCDLNJ = 14;</code>
+     * @return The pJBEOHCDLNJ.
      */
-    float getFFMBPIKIJAP();
+    float getPJBEOHCDLNJ();
 
     /**
-     * <code>float FIEFKGHCBBO = 8;</code>
-     * @return The fIEFKGHCBBO.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 12;</code>
+     * @return The bBCMJOGEOPC.
      */
-    float getFIEFKGHCBBO();
-
-    /**
-     * <code>uint32 player_num = 1;</code>
-     * @return The playerNum.
-     */
-    int getPlayerNum();
+    float getBBCMJOGEOPC();
   }
   /**
-   * <pre>
-   * Obf: FIIOICNBIAJ
-   * </pre>
-   *
    * Protobuf type {@code AbilityMixinShieldBar}
    */
   public static final class AbilityMixinShieldBar extends
@@ -91,24 +103,24 @@ public final class AbilityMixinShieldBarOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              playerNum_ = input.readUInt32();
-              break;
-            }
-            case 45: {
-
-              fFMBPIKIJAP_ = input.readFloat();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               elementType_ = input.readUInt32();
               break;
             }
-            case 69: {
+            case 101: {
 
-              fIEFKGHCBBO_ = input.readFloat();
+              bBCMJOGEOPC_ = input.readFloat();
+              break;
+            }
+            case 104: {
+
+              hNKBJDACIGL_ = input.readUInt32();
+              break;
+            }
+            case 117: {
+
+              pJBEOHCDLNJ_ = input.readFloat();
               break;
             }
             default: {
@@ -143,10 +155,29 @@ public final class AbilityMixinShieldBarOuterClass {
               emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.class, emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.Builder.class);
     }
 
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 7;
+    public static final int HNKBJDACIGL_FIELD_NUMBER = 13;
+    private int hNKBJDACIGL_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HNKBJDACIGL = 13;</code>
+     * @return The hNKBJDACIGL.
+     */
+    @java.lang.Override
+    public int getHNKBJDACIGL() {
+      return hNKBJDACIGL_;
+    }
+
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 8;
     private int elementType_;
     /**
-     * <code>uint32 element_type = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 element_type = 8;</code>
      * @return The elementType.
      */
     @java.lang.Override
@@ -154,37 +185,34 @@ public final class AbilityMixinShieldBarOuterClass {
       return elementType_;
     }
 
-    public static final int FFMBPIKIJAP_FIELD_NUMBER = 5;
-    private float fFMBPIKIJAP_;
+    public static final int PJBEOHCDLNJ_FIELD_NUMBER = 14;
+    private float pJBEOHCDLNJ_;
     /**
-     * <code>float FFMBPIKIJAP = 5;</code>
-     * @return The fFMBPIKIJAP.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PJBEOHCDLNJ = 14;</code>
+     * @return The pJBEOHCDLNJ.
      */
     @java.lang.Override
-    public float getFFMBPIKIJAP() {
-      return fFMBPIKIJAP_;
+    public float getPJBEOHCDLNJ() {
+      return pJBEOHCDLNJ_;
     }
 
-    public static final int FIEFKGHCBBO_FIELD_NUMBER = 8;
-    private float fIEFKGHCBBO_;
+    public static final int BBCMJOGEOPC_FIELD_NUMBER = 12;
+    private float bBCMJOGEOPC_;
     /**
-     * <code>float FIEFKGHCBBO = 8;</code>
-     * @return The fIEFKGHCBBO.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 12;</code>
+     * @return The bBCMJOGEOPC.
      */
     @java.lang.Override
-    public float getFIEFKGHCBBO() {
-      return fIEFKGHCBBO_;
-    }
-
-    public static final int PLAYER_NUM_FIELD_NUMBER = 1;
-    private int playerNum_;
-    /**
-     * <code>uint32 player_num = 1;</code>
-     * @return The playerNum.
-     */
-    @java.lang.Override
-    public int getPlayerNum() {
-      return playerNum_;
+    public float getBBCMJOGEOPC() {
+      return bBCMJOGEOPC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class AbilityMixinShieldBarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerNum_ != 0) {
-        output.writeUInt32(1, playerNum_);
-      }
-      if (fFMBPIKIJAP_ != 0F) {
-        output.writeFloat(5, fFMBPIKIJAP_);
-      }
       if (elementType_ != 0) {
-        output.writeUInt32(7, elementType_);
+        output.writeUInt32(8, elementType_);
       }
-      if (fIEFKGHCBBO_ != 0F) {
-        output.writeFloat(8, fIEFKGHCBBO_);
+      if (bBCMJOGEOPC_ != 0F) {
+        output.writeFloat(12, bBCMJOGEOPC_);
+      }
+      if (hNKBJDACIGL_ != 0) {
+        output.writeUInt32(13, hNKBJDACIGL_);
+      }
+      if (pJBEOHCDLNJ_ != 0F) {
+        output.writeFloat(14, pJBEOHCDLNJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class AbilityMixinShieldBarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playerNum_);
-      }
-      if (fFMBPIKIJAP_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, fFMBPIKIJAP_);
-      }
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, elementType_);
+          .computeUInt32Size(8, elementType_);
       }
-      if (fIEFKGHCBBO_ != 0F) {
+      if (bBCMJOGEOPC_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(8, fIEFKGHCBBO_);
+          .computeFloatSize(12, bBCMJOGEOPC_);
+      }
+      if (hNKBJDACIGL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, hNKBJDACIGL_);
+      }
+      if (pJBEOHCDLNJ_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(14, pJBEOHCDLNJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,16 +281,16 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other = (emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar) obj;
 
+      if (getHNKBJDACIGL()
+          != other.getHNKBJDACIGL()) return false;
       if (getElementType()
           != other.getElementType()) return false;
-      if (java.lang.Float.floatToIntBits(getFFMBPIKIJAP())
+      if (java.lang.Float.floatToIntBits(getPJBEOHCDLNJ())
           != java.lang.Float.floatToIntBits(
-              other.getFFMBPIKIJAP())) return false;
-      if (java.lang.Float.floatToIntBits(getFIEFKGHCBBO())
+              other.getPJBEOHCDLNJ())) return false;
+      if (java.lang.Float.floatToIntBits(getBBCMJOGEOPC())
           != java.lang.Float.floatToIntBits(
-              other.getFIEFKGHCBBO())) return false;
-      if (getPlayerNum()
-          != other.getPlayerNum()) return false;
+              other.getBBCMJOGEOPC())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,16 +302,16 @@ public final class AbilityMixinShieldBarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HNKBJDACIGL_FIELD_NUMBER;
+      hash = (53 * hash) + getHNKBJDACIGL();
       hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getElementType();
-      hash = (37 * hash) + FFMBPIKIJAP_FIELD_NUMBER;
+      hash = (37 * hash) + PJBEOHCDLNJ_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFFMBPIKIJAP());
-      hash = (37 * hash) + FIEFKGHCBBO_FIELD_NUMBER;
+          getPJBEOHCDLNJ());
+      hash = (37 * hash) + BBCMJOGEOPC_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFIEFKGHCBBO());
-      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerNum();
+          getBBCMJOGEOPC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,10 +408,6 @@ public final class AbilityMixinShieldBarOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FIIOICNBIAJ
-     * </pre>
-     *
      * Protobuf type {@code AbilityMixinShieldBar}
      */
     public static final class Builder extends
@@ -421,13 +445,13 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        hNKBJDACIGL_ = 0;
+
         elementType_ = 0;
 
-        fFMBPIKIJAP_ = 0F;
+        pJBEOHCDLNJ_ = 0F;
 
-        fIEFKGHCBBO_ = 0F;
-
-        playerNum_ = 0;
+        bBCMJOGEOPC_ = 0F;
 
         return this;
       }
@@ -455,10 +479,10 @@ public final class AbilityMixinShieldBarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar result = new emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar(this);
+        result.hNKBJDACIGL_ = hNKBJDACIGL_;
         result.elementType_ = elementType_;
-        result.fFMBPIKIJAP_ = fFMBPIKIJAP_;
-        result.fIEFKGHCBBO_ = fIEFKGHCBBO_;
-        result.playerNum_ = playerNum_;
+        result.pJBEOHCDLNJ_ = pJBEOHCDLNJ_;
+        result.bBCMJOGEOPC_ = bBCMJOGEOPC_;
         onBuilt();
         return result;
       }
@@ -507,17 +531,17 @@ public final class AbilityMixinShieldBarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinShieldBarOuterClass.AbilityMixinShieldBar.getDefaultInstance()) return this;
+        if (other.getHNKBJDACIGL() != 0) {
+          setHNKBJDACIGL(other.getHNKBJDACIGL());
+        }
         if (other.getElementType() != 0) {
           setElementType(other.getElementType());
         }
-        if (other.getFFMBPIKIJAP() != 0F) {
-          setFFMBPIKIJAP(other.getFFMBPIKIJAP());
+        if (other.getPJBEOHCDLNJ() != 0F) {
+          setPJBEOHCDLNJ(other.getPJBEOHCDLNJ());
         }
-        if (other.getFIEFKGHCBBO() != 0F) {
-          setFIEFKGHCBBO(other.getFIEFKGHCBBO());
-        }
-        if (other.getPlayerNum() != 0) {
-          setPlayerNum(other.getPlayerNum());
+        if (other.getBBCMJOGEOPC() != 0F) {
+          setBBCMJOGEOPC(other.getBBCMJOGEOPC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,9 +572,56 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
 
+      private int hNKBJDACIGL_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 13;</code>
+       * @return The hNKBJDACIGL.
+       */
+      @java.lang.Override
+      public int getHNKBJDACIGL() {
+        return hNKBJDACIGL_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 13;</code>
+       * @param value The hNKBJDACIGL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHNKBJDACIGL(int value) {
+        
+        hNKBJDACIGL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHNKBJDACIGL() {
+        
+        hNKBJDACIGL_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int elementType_ ;
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 element_type = 8;</code>
        * @return The elementType.
        */
       @java.lang.Override
@@ -558,7 +629,11 @@ public final class AbilityMixinShieldBarOuterClass {
         return elementType_;
       }
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 element_type = 8;</code>
        * @param value The elementType to set.
        * @return This builder for chaining.
        */
@@ -569,7 +644,11 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 element_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
@@ -579,95 +658,88 @@ public final class AbilityMixinShieldBarOuterClass {
         return this;
       }
 
-      private float fFMBPIKIJAP_ ;
+      private float pJBEOHCDLNJ_ ;
       /**
-       * <code>float FFMBPIKIJAP = 5;</code>
-       * @return The fFMBPIKIJAP.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 14;</code>
+       * @return The pJBEOHCDLNJ.
        */
       @java.lang.Override
-      public float getFFMBPIKIJAP() {
-        return fFMBPIKIJAP_;
+      public float getPJBEOHCDLNJ() {
+        return pJBEOHCDLNJ_;
       }
       /**
-       * <code>float FFMBPIKIJAP = 5;</code>
-       * @param value The fFMBPIKIJAP to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 14;</code>
+       * @param value The pJBEOHCDLNJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFFMBPIKIJAP(float value) {
+      public Builder setPJBEOHCDLNJ(float value) {
         
-        fFMBPIKIJAP_ = value;
+        pJBEOHCDLNJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FFMBPIKIJAP = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFFMBPIKIJAP() {
+      public Builder clearPJBEOHCDLNJ() {
         
-        fFMBPIKIJAP_ = 0F;
+        pJBEOHCDLNJ_ = 0F;
         onChanged();
         return this;
       }
 
-      private float fIEFKGHCBBO_ ;
+      private float bBCMJOGEOPC_ ;
       /**
-       * <code>float FIEFKGHCBBO = 8;</code>
-       * @return The fIEFKGHCBBO.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
+       * @return The bBCMJOGEOPC.
        */
       @java.lang.Override
-      public float getFIEFKGHCBBO() {
-        return fIEFKGHCBBO_;
+      public float getBBCMJOGEOPC() {
+        return bBCMJOGEOPC_;
       }
       /**
-       * <code>float FIEFKGHCBBO = 8;</code>
-       * @param value The fIEFKGHCBBO to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
+       * @param value The bBCMJOGEOPC to set.
        * @return This builder for chaining.
        */
-      public Builder setFIEFKGHCBBO(float value) {
+      public Builder setBBCMJOGEOPC(float value) {
         
-        fIEFKGHCBBO_ = value;
+        bBCMJOGEOPC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FIEFKGHCBBO = 8;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFIEFKGHCBBO() {
+      public Builder clearBBCMJOGEOPC() {
         
-        fIEFKGHCBBO_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int playerNum_ ;
-      /**
-       * <code>uint32 player_num = 1;</code>
-       * @return The playerNum.
-       */
-      @java.lang.Override
-      public int getPlayerNum() {
-        return playerNum_;
-      }
-      /**
-       * <code>uint32 player_num = 1;</code>
-       * @param value The playerNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerNum(int value) {
-        
-        playerNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_num = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerNum() {
-        
-        playerNum_ = 0;
+        bBCMJOGEOPC_ = 0F;
         onChanged();
         return this;
       }
@@ -738,11 +810,11 @@ public final class AbilityMixinShieldBarOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AbilityMixinShieldBar.proto\"k\n\025Ability" +
-      "MixinShieldBar\022\024\n\014element_type\030\007 \001(\r\022\023\n\013" +
-      "FFMBPIKIJAP\030\005 \001(\002\022\023\n\013FIEFKGHCBBO\030\010 \001(\002\022\022" +
-      "\n\nplayer_num\030\001 \001(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\033AbilityMixinShieldBar.proto\"l\n\025Ability" +
+      "MixinShieldBar\022\023\n\013HNKBJDACIGL\030\r \001(\r\022\024\n\014e" +
+      "lement_type\030\010 \001(\r\022\023\n\013PJBEOHCDLNJ\030\016 \001(\002\022\023" +
+      "\n\013BBCMJOGEOPC\030\014 \001(\002B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -753,7 +825,7 @@ public final class AbilityMixinShieldBarOuterClass {
     internal_static_AbilityMixinShieldBar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinShieldBar_descriptor,
-        new java.lang.String[] { "ElementType", "FFMBPIKIJAP", "FIEFKGHCBBO", "PlayerNum", });
+        new java.lang.String[] { "HNKBJDACIGL", "ElementType", "PJBEOHCDLNJ", "BBCMJOGEOPC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

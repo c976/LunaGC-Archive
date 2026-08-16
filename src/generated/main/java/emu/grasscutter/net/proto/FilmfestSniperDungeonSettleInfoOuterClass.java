@@ -19,10 +19,34 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 EPFGCMLJCKI = 8;</code>
+     * @return The ePFGCMLJCKI.
+     */
+    int getEPFGCMLJCKI();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PDBNLLOCCEC = 15;</code>
+     * @return The pDBNLLOCCEC.
+     */
+    float getPDBNLLOCCEC();
   }
   /**
    * Protobuf type {@code FilmfestSniperDungeonSettleInfo}
@@ -71,7 +95,17 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
               break;
             case 64: {
 
+              ePFGCMLJCKI_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 125: {
+
+              pDBNLLOCCEC_ = input.readFloat();
               break;
             }
             default: {
@@ -106,15 +140,49 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo.class, emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int EPFGCMLJCKI_FIELD_NUMBER = 8;
+    private int ePFGCMLJCKI_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 EPFGCMLJCKI = 8;</code>
+     * @return The ePFGCMLJCKI.
+     */
+    @java.lang.Override
+    public int getEPFGCMLJCKI() {
+      return ePFGCMLJCKI_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int PDBNLLOCCEC_FIELD_NUMBER = 15;
+    private float pDBNLLOCCEC_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PDBNLLOCCEC = 15;</code>
+     * @return The pDBNLLOCCEC.
+     */
+    @java.lang.Override
+    public float getPDBNLLOCCEC() {
+      return pDBNLLOCCEC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +199,14 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (ePFGCMLJCKI_ != 0) {
+        output.writeUInt32(8, ePFGCMLJCKI_);
+      }
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(11, levelId_);
+      }
+      if (pDBNLLOCCEC_ != 0F) {
+        output.writeFloat(15, pDBNLLOCCEC_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +217,17 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (ePFGCMLJCKI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, ePFGCMLJCKI_);
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(11, levelId_);
+      }
+      if (pDBNLLOCCEC_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(15, pDBNLLOCCEC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +244,13 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo other = (emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo) obj;
 
+      if (getEPFGCMLJCKI()
+          != other.getEPFGCMLJCKI()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (java.lang.Float.floatToIntBits(getPDBNLLOCCEC())
+          != java.lang.Float.floatToIntBits(
+              other.getPDBNLLOCCEC())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +262,13 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + EPFGCMLJCKI_FIELD_NUMBER;
+      hash = (53 * hash) + getEPFGCMLJCKI();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + PDBNLLOCCEC_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getPDBNLLOCCEC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,7 +402,11 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        ePFGCMLJCKI_ = 0;
+
         levelId_ = 0;
+
+        pDBNLLOCCEC_ = 0F;
 
         return this;
       }
@@ -338,7 +434,9 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo result = new emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo(this);
+        result.ePFGCMLJCKI_ = ePFGCMLJCKI_;
         result.levelId_ = levelId_;
+        result.pDBNLLOCCEC_ = pDBNLLOCCEC_;
         onBuilt();
         return result;
       }
@@ -387,8 +485,14 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FilmfestSniperDungeonSettleInfoOuterClass.FilmfestSniperDungeonSettleInfo.getDefaultInstance()) return this;
+        if (other.getEPFGCMLJCKI() != 0) {
+          setEPFGCMLJCKI(other.getEPFGCMLJCKI());
+        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getPDBNLLOCCEC() != 0F) {
+          setPDBNLLOCCEC(other.getPDBNLLOCCEC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,9 +523,56 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
         return this;
       }
 
+      private int ePFGCMLJCKI_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EPFGCMLJCKI = 8;</code>
+       * @return The ePFGCMLJCKI.
+       */
+      @java.lang.Override
+      public int getEPFGCMLJCKI() {
+        return ePFGCMLJCKI_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EPFGCMLJCKI = 8;</code>
+       * @param value The ePFGCMLJCKI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEPFGCMLJCKI(int value) {
+        
+        ePFGCMLJCKI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EPFGCMLJCKI = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEPFGCMLJCKI() {
+        
+        ePFGCMLJCKI_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -429,7 +580,11 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -440,12 +595,59 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float pDBNLLOCCEC_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PDBNLLOCCEC = 15;</code>
+       * @return The pDBNLLOCCEC.
+       */
+      @java.lang.Override
+      public float getPDBNLLOCCEC() {
+        return pDBNLLOCCEC_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PDBNLLOCCEC = 15;</code>
+       * @param value The pDBNLLOCCEC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPDBNLLOCCEC(float value) {
+        
+        pDBNLLOCCEC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PDBNLLOCCEC = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPDBNLLOCCEC() {
+        
+        pDBNLLOCCEC_ = 0F;
         onChanged();
         return this;
       }
@@ -517,9 +719,10 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%FilmfestSniperDungeonSettleInfo.proto\"" +
-      "3\n\037FilmfestSniperDungeonSettleInfo\022\020\n\010le" +
-      "vel_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "]\n\037FilmfestSniperDungeonSettleInfo\022\023\n\013EP" +
+      "FGCMLJCKI\030\010 \001(\r\022\020\n\010level_id\030\013 \001(\r\022\023\n\013PDB" +
+      "NLLOCCEC\030\017 \001(\002B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -530,7 +733,7 @@ public final class FilmfestSniperDungeonSettleInfoOuterClass {
     internal_static_FilmfestSniperDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FilmfestSniperDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "LevelId", });
+        new java.lang.String[] { "EPFGCMLJCKI", "LevelId", "PDBNLLOCCEC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

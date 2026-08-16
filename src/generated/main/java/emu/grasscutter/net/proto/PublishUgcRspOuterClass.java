@@ -19,32 +19,48 @@ public final class PublishUgcRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.UgcType ugc_type = 4;</code>
+     * @return The enum numeric value on the wire for ugcType.
+     */
+    int getUgcTypeValue();
+    /**
+     * <code>.UgcType ugc_type = 4;</code>
+     * @return The ugcType.
+     */
+    emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
+
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
      * <code>uint64 ugc_guid = 10;</code>
      * @return The ugcGuid.
      */
     long getUgcGuid();
 
     /**
-     * <code>.UgcType ugc_type = 5;</code>
-     * @return The enum numeric value on the wire for ugcType.
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     * @return Whether the lanV5CardBriefInfo field is set.
      */
-    int getUgcTypeValue();
+    boolean hasLanV5CardBriefInfo();
     /**
-     * <code>.UgcType ugc_type = 5;</code>
-     * @return The ugcType.
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     * @return The lanV5CardBriefInfo.
      */
-    emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
+    emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo getLanV5CardBriefInfo();
+    /**
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     */
+    emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder getLanV5CardBriefInfoOrBuilder();
 
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
+    public emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp.BriefCase getBriefCase();
   }
   /**
    * <pre>
-   * CmdId: 27453
-   * Obf: BKGJEEODFOJ
+   * CmdId: 20684
    * </pre>
    *
    * Protobuf type {@code PublishUgcRsp}
@@ -92,10 +108,15 @@ public final class PublishUgcRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
               int rawValue = input.readEnum();
 
               ugcType_ = rawValue;
+              break;
+            }
+            case 64: {
+
+              retcode_ = input.readInt32();
               break;
             }
             case 80: {
@@ -103,9 +124,18 @@ public final class PublishUgcRspOuterClass {
               ugcGuid_ = input.readUInt64();
               break;
             }
-            case 112: {
-
-              retcode_ = input.readInt32();
+            case 14106: {
+              emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder subBuilder = null;
+              if (briefCase_ == 1763) {
+                subBuilder = ((emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_).toBuilder();
+              }
+              brief_ =
+                  input.readMessage(emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_);
+                brief_ = subBuilder.buildPartial();
+              }
+              briefCase_ = 1763;
               break;
             }
             default: {
@@ -140,6 +170,75 @@ public final class PublishUgcRspOuterClass {
               emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp.class, emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp.Builder.class);
     }
 
+    private int briefCase_ = 0;
+    private java.lang.Object brief_;
+    public enum BriefCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      LAN_V5_CARD_BRIEF_INFO(1763),
+      BRIEF_NOT_SET(0);
+      private final int value;
+      private BriefCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BriefCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BriefCase forNumber(int value) {
+        switch (value) {
+          case 1763: return LAN_V5_CARD_BRIEF_INFO;
+          case 0: return BRIEF_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public BriefCase
+    getBriefCase() {
+      return BriefCase.forNumber(
+          briefCase_);
+    }
+
+    public static final int UGC_TYPE_FIELD_NUMBER = 4;
+    private int ugcType_;
+    /**
+     * <code>.UgcType ugc_type = 4;</code>
+     * @return The enum numeric value on the wire for ugcType.
+     */
+    @java.lang.Override public int getUgcTypeValue() {
+      return ugcType_;
+    }
+    /**
+     * <code>.UgcType ugc_type = 4;</code>
+     * @return The ugcType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+      return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     public static final int UGC_GUID_FIELD_NUMBER = 10;
     private long ugcGuid_;
     /**
@@ -151,34 +250,35 @@ public final class PublishUgcRspOuterClass {
       return ugcGuid_;
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 5;
-    private int ugcType_;
+    public static final int LAN_V5_CARD_BRIEF_INFO_FIELD_NUMBER = 1763;
     /**
-     * <code>.UgcType ugc_type = 5;</code>
-     * @return The enum numeric value on the wire for ugcType.
-     */
-    @java.lang.Override public int getUgcTypeValue() {
-      return ugcType_;
-    }
-    /**
-     * <code>.UgcType ugc_type = 5;</code>
-     * @return The ugcType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
-      return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     * @return Whether the lanV5CardBriefInfo field is set.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public boolean hasLanV5CardBriefInfo() {
+      return briefCase_ == 1763;
+    }
+    /**
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     * @return The lanV5CardBriefInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo getLanV5CardBriefInfo() {
+      if (briefCase_ == 1763) {
+         return (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_;
+      }
+      return emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder getLanV5CardBriefInfoOrBuilder() {
+      if (briefCase_ == 1763) {
+         return (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_;
+      }
+      return emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -196,13 +296,16 @@ public final class PublishUgcRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(5, ugcType_);
+        output.writeEnum(4, ugcType_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(8, retcode_);
       }
       if (ugcGuid_ != 0L) {
         output.writeUInt64(10, ugcGuid_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+      if (briefCase_ == 1763) {
+        output.writeMessage(1763, (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_);
       }
       unknownFields.writeTo(output);
     }
@@ -215,15 +318,19 @@ public final class PublishUgcRspOuterClass {
       size = 0;
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, ugcType_);
+          .computeEnumSize(4, ugcType_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, retcode_);
       }
       if (ugcGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(10, ugcGuid_);
       }
-      if (retcode_ != 0) {
+      if (briefCase_ == 1763) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeMessageSize(1763, (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,11 +347,20 @@ public final class PublishUgcRspOuterClass {
       }
       emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp other = (emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp) obj;
 
-      if (getUgcGuid()
-          != other.getUgcGuid()) return false;
       if (ugcType_ != other.ugcType_) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
+      if (!getBriefCase().equals(other.getBriefCase())) return false;
+      switch (briefCase_) {
+        case 1763:
+          if (!getLanV5CardBriefInfo()
+              .equals(other.getLanV5CardBriefInfo())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -256,13 +372,21 @@ public final class PublishUgcRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUgcGuid());
       hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + ugcType_;
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getUgcGuid());
+      switch (briefCase_) {
+        case 1763:
+          hash = (37 * hash) + LAN_V5_CARD_BRIEF_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getLanV5CardBriefInfo().hashCode();
+          break;
+        case 0:
+        default:
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -360,8 +484,7 @@ public final class PublishUgcRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27453
-     * Obf: BKGJEEODFOJ
+     * CmdId: 20684
      * </pre>
      *
      * Protobuf type {@code PublishUgcRsp}
@@ -401,12 +524,14 @@ public final class PublishUgcRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        ugcGuid_ = 0L;
-
         ugcType_ = 0;
 
         retcode_ = 0;
 
+        ugcGuid_ = 0L;
+
+        briefCase_ = 0;
+        brief_ = null;
         return this;
       }
 
@@ -433,9 +558,17 @@ public final class PublishUgcRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp buildPartial() {
         emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp result = new emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp(this);
-        result.ugcGuid_ = ugcGuid_;
         result.ugcType_ = ugcType_;
         result.retcode_ = retcode_;
+        result.ugcGuid_ = ugcGuid_;
+        if (briefCase_ == 1763) {
+          if (lanV5CardBriefInfoBuilder_ == null) {
+            result.brief_ = brief_;
+          } else {
+            result.brief_ = lanV5CardBriefInfoBuilder_.build();
+          }
+        }
+        result.briefCase_ = briefCase_;
         onBuilt();
         return result;
       }
@@ -484,14 +617,23 @@ public final class PublishUgcRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp other) {
         if (other == emu.grasscutter.net.proto.PublishUgcRspOuterClass.PublishUgcRsp.getDefaultInstance()) return this;
-        if (other.getUgcGuid() != 0L) {
-          setUgcGuid(other.getUgcGuid());
-        }
         if (other.ugcType_ != 0) {
           setUgcTypeValue(other.getUgcTypeValue());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUgcGuid() != 0L) {
+          setUgcGuid(other.getUgcGuid());
+        }
+        switch (other.getBriefCase()) {
+          case LAN_V5_CARD_BRIEF_INFO: {
+            mergeLanV5CardBriefInfo(other.getLanV5CardBriefInfo());
+            break;
+          }
+          case BRIEF_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -519,6 +661,106 @@ public final class PublishUgcRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+      private int briefCase_ = 0;
+      private java.lang.Object brief_;
+      public BriefCase
+          getBriefCase() {
+        return BriefCase.forNumber(
+            briefCase_);
+      }
+
+      public Builder clearBrief() {
+        briefCase_ = 0;
+        brief_ = null;
+        onChanged();
+        return this;
+      }
+
+
+      private int ugcType_ = 0;
+      /**
+       * <code>.UgcType ugc_type = 4;</code>
+       * @return The enum numeric value on the wire for ugcType.
+       */
+      @java.lang.Override public int getUgcTypeValue() {
+        return ugcType_;
+      }
+      /**
+       * <code>.UgcType ugc_type = 4;</code>
+       * @param value The enum numeric value on the wire for ugcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUgcTypeValue(int value) {
+        
+        ugcType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.UgcType ugc_type = 4;</code>
+       * @return The ugcType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+        return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.UgcType ugc_type = 4;</code>
+       * @param value The ugcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUgcType(emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        ugcType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.UgcType ugc_type = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUgcType() {
+        
+        ugcType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
         return this;
       }
 
@@ -553,89 +795,145 @@ public final class PublishUgcRspOuterClass {
         return this;
       }
 
-      private int ugcType_ = 0;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder> lanV5CardBriefInfoBuilder_;
       /**
-       * <code>.UgcType ugc_type = 5;</code>
-       * @return The enum numeric value on the wire for ugcType.
-       */
-      @java.lang.Override public int getUgcTypeValue() {
-        return ugcType_;
-      }
-      /**
-       * <code>.UgcType ugc_type = 5;</code>
-       * @param value The enum numeric value on the wire for ugcType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUgcTypeValue(int value) {
-        
-        ugcType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.UgcType ugc_type = 5;</code>
-       * @return The ugcType.
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       * @return Whether the lanV5CardBriefInfo field is set.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
-        return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
+      public boolean hasLanV5CardBriefInfo() {
+        return briefCase_ == 1763;
       }
       /**
-       * <code>.UgcType ugc_type = 5;</code>
-       * @param value The ugcType to set.
-       * @return This builder for chaining.
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       * @return The lanV5CardBriefInfo.
        */
-      public Builder setUgcType(emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType value) {
-        if (value == null) {
-          throw new NullPointerException();
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo getLanV5CardBriefInfo() {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          if (briefCase_ == 1763) {
+            return (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_;
+          }
+          return emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
+        } else {
+          if (briefCase_ == 1763) {
+            return lanV5CardBriefInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
         }
-        
-        ugcType_ = value.getNumber();
-        onChanged();
-        return this;
       }
       /**
-       * <code>.UgcType ugc_type = 5;</code>
-       * @return This builder for chaining.
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
        */
-      public Builder clearUgcType() {
-        
-        ugcType_ = 0;
-        onChanged();
+      public Builder setLanV5CardBriefInfo(emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo value) {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          brief_ = value;
+          onChanged();
+        } else {
+          lanV5CardBriefInfoBuilder_.setMessage(value);
+        }
+        briefCase_ = 1763;
         return this;
       }
-
-      private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       */
+      public Builder setLanV5CardBriefInfo(
+          emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder builderForValue) {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          brief_ = builderForValue.build();
+          onChanged();
+        } else {
+          lanV5CardBriefInfoBuilder_.setMessage(builderForValue.build());
+        }
+        briefCase_ = 1763;
+        return this;
+      }
+      /**
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       */
+      public Builder mergeLanV5CardBriefInfo(emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo value) {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          if (briefCase_ == 1763 &&
+              brief_ != emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance()) {
+            brief_ = emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.newBuilder((emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            brief_ = value;
+          }
+          onChanged();
+        } else {
+          if (briefCase_ == 1763) {
+            lanV5CardBriefInfoBuilder_.mergeFrom(value);
+          }
+          lanV5CardBriefInfoBuilder_.setMessage(value);
+        }
+        briefCase_ = 1763;
+        return this;
+      }
+      /**
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       */
+      public Builder clearLanV5CardBriefInfo() {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          if (briefCase_ == 1763) {
+            briefCase_ = 0;
+            brief_ = null;
+            onChanged();
+          }
+        } else {
+          if (briefCase_ == 1763) {
+            briefCase_ = 0;
+            brief_ = null;
+          }
+          lanV5CardBriefInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
+       */
+      public emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder getLanV5CardBriefInfoBuilder() {
+        return getLanV5CardBriefInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder getLanV5CardBriefInfoOrBuilder() {
+        if ((briefCase_ == 1763) && (lanV5CardBriefInfoBuilder_ != null)) {
+          return lanV5CardBriefInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (briefCase_ == 1763) {
+            return (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_;
+          }
+          return emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
+        }
       }
       /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
+       * <code>.UgcLanV5CardBriefInfo lan_v5_card_brief_info = 1763;</code>
        */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder> 
+          getLanV5CardBriefInfoFieldBuilder() {
+        if (lanV5CardBriefInfoBuilder_ == null) {
+          if (!(briefCase_ == 1763)) {
+            brief_ = emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.getDefaultInstance();
+          }
+          lanV5CardBriefInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo.Builder, emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.UgcLanV5CardBriefInfo) brief_,
+                  getParentForChildren(),
+                  isClean());
+          brief_ = null;
+        }
+        briefCase_ = 1763;
+        onChanged();;
+        return lanV5CardBriefInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -704,14 +1002,18 @@ public final class PublishUgcRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023PublishUgcRsp.proto\032\rUgcType.proto\"N\n\r" +
-      "PublishUgcRsp\022\020\n\010ugc_guid\030\n \001(\004\022\032\n\010ugc_t" +
-      "ype\030\005 \001(\0162\010.UgcType\022\017\n\007retcode\030\016 \001(\005B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\023PublishUgcRsp.proto\032\033UgcLanV5CardBrief" +
+      "Info.proto\032\rUgcType.proto\"\222\001\n\rPublishUgc" +
+      "Rsp\022\032\n\010ugc_type\030\004 \001(\0162\010.UgcType\022\017\n\007retco" +
+      "de\030\010 \001(\005\022\020\n\010ugc_guid\030\n \001(\004\0229\n\026lan_v5_car" +
+      "d_brief_info\030\343\r \001(\0132\026.UgcLanV5CardBriefI" +
+      "nfoH\000B\007\n\005briefB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor(),
         });
     internal_static_PublishUgcRsp_descriptor =
@@ -719,7 +1021,8 @@ public final class PublishUgcRspOuterClass {
     internal_static_PublishUgcRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PublishUgcRsp_descriptor,
-        new java.lang.String[] { "UgcGuid", "UgcType", "Retcode", });
+        new java.lang.String[] { "UgcType", "Retcode", "UgcGuid", "LanV5CardBriefInfo", "Brief", });
+    emu.grasscutter.net.proto.UgcLanV5CardBriefInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor();
   }
 

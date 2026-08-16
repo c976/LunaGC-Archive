@@ -19,7 +19,7 @@ public final class AvatarPromoteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -31,6 +31,10 @@ public final class AvatarPromoteRspOuterClass {
     long getGuid();
   }
   /**
+   * <pre>
+   * CmdId: 28249
+   * </pre>
+   *
    * Protobuf type {@code AvatarPromoteRsp}
    */
   public static final class AvatarPromoteRsp extends
@@ -75,14 +79,14 @@ public final class AvatarPromoteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 24: {
 
               guid_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class AvatarPromoteRspOuterClass {
               emu.grasscutter.net.proto.AvatarPromoteRspOuterClass.AvatarPromoteRsp.class, emu.grasscutter.net.proto.AvatarPromoteRspOuterClass.AvatarPromoteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class AvatarPromoteRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (guid_ != 0L) {
         output.writeUInt64(3, guid_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class AvatarPromoteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(3, guid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,6 +311,10 @@ public final class AvatarPromoteRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 28249
+     * </pre>
+     *
      * Protobuf type {@code AvatarPromoteRsp}
      */
     public static final class Builder extends
@@ -461,7 +469,7 @@ public final class AvatarPromoteRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -469,7 +477,7 @@ public final class AvatarPromoteRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -480,7 +488,7 @@ public final class AvatarPromoteRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,7 +596,7 @@ public final class AvatarPromoteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AvatarPromoteRsp.proto\"1\n\020AvatarPromot" +
-      "eRsp\022\017\n\007retcode\030\001 \001(\005\022\014\n\004guid\030\003 \001(\004B\033\n\031e" +
+      "eRsp\022\017\n\007retcode\030\017 \001(\005\022\014\n\004guid\030\003 \001(\004B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

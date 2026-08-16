@@ -25,10 +25,10 @@ public final class ThemeParkParkourSettleInfoOuterClass {
     int getLevelId();
 
     /**
-     * <code>bool HJOMILMLFNM = 13;</code>
-     * @return The hJOMILMLFNM.
+     * <code>bool JHOALDDPFNP = 9;</code>
+     * @return The jHOALDDPFNP.
      */
-    boolean getHJOMILMLFNM();
+    boolean getJHOALDDPFNP();
   }
   /**
    * Protobuf type {@code ThemeParkParkourSettleInfo}
@@ -80,9 +80,9 @@ public final class ThemeParkParkourSettleInfoOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 72: {
 
-              hJOMILMLFNM_ = input.readBool();
+              jHOALDDPFNP_ = input.readBool();
               break;
             }
             default: {
@@ -128,15 +128,15 @@ public final class ThemeParkParkourSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int HJOMILMLFNM_FIELD_NUMBER = 13;
-    private boolean hJOMILMLFNM_;
+    public static final int JHOALDDPFNP_FIELD_NUMBER = 9;
+    private boolean jHOALDDPFNP_;
     /**
-     * <code>bool HJOMILMLFNM = 13;</code>
-     * @return The hJOMILMLFNM.
+     * <code>bool JHOALDDPFNP = 9;</code>
+     * @return The jHOALDDPFNP.
      */
     @java.lang.Override
-    public boolean getHJOMILMLFNM() {
-      return hJOMILMLFNM_;
+    public boolean getJHOALDDPFNP() {
+      return jHOALDDPFNP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -156,8 +156,8 @@ public final class ThemeParkParkourSettleInfoOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(3, levelId_);
       }
-      if (hJOMILMLFNM_ != false) {
-        output.writeBool(13, hJOMILMLFNM_);
+      if (jHOALDDPFNP_ != false) {
+        output.writeBool(9, jHOALDDPFNP_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,9 +172,9 @@ public final class ThemeParkParkourSettleInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, levelId_);
       }
-      if (hJOMILMLFNM_ != false) {
+      if (jHOALDDPFNP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, hJOMILMLFNM_);
+          .computeBoolSize(9, jHOALDDPFNP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,8 +193,8 @@ public final class ThemeParkParkourSettleInfoOuterClass {
 
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getHJOMILMLFNM()
-          != other.getHJOMILMLFNM()) return false;
+      if (getJHOALDDPFNP()
+          != other.getJHOALDDPFNP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,9 +208,9 @@ public final class ThemeParkParkourSettleInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + HJOMILMLFNM_FIELD_NUMBER;
+      hash = (37 * hash) + JHOALDDPFNP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHJOMILMLFNM());
+          getJHOALDDPFNP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,7 +346,7 @@ public final class ThemeParkParkourSettleInfoOuterClass {
         super.clear();
         levelId_ = 0;
 
-        hJOMILMLFNM_ = false;
+        jHOALDDPFNP_ = false;
 
         return this;
       }
@@ -375,7 +375,7 @@ public final class ThemeParkParkourSettleInfoOuterClass {
       public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo buildPartial() {
         emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo result = new emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo(this);
         result.levelId_ = levelId_;
-        result.hJOMILMLFNM_ = hJOMILMLFNM_;
+        result.jHOALDDPFNP_ = jHOALDDPFNP_;
         onBuilt();
         return result;
       }
@@ -427,8 +427,8 @@ public final class ThemeParkParkourSettleInfoOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getHJOMILMLFNM() != false) {
-          setHJOMILMLFNM(other.getHJOMILMLFNM());
+        if (other.getJHOALDDPFNP() != false) {
+          setJHOALDDPFNP(other.getJHOALDDPFNP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -490,33 +490,33 @@ public final class ThemeParkParkourSettleInfoOuterClass {
         return this;
       }
 
-      private boolean hJOMILMLFNM_ ;
+      private boolean jHOALDDPFNP_ ;
       /**
-       * <code>bool HJOMILMLFNM = 13;</code>
-       * @return The hJOMILMLFNM.
+       * <code>bool JHOALDDPFNP = 9;</code>
+       * @return The jHOALDDPFNP.
        */
       @java.lang.Override
-      public boolean getHJOMILMLFNM() {
-        return hJOMILMLFNM_;
+      public boolean getJHOALDDPFNP() {
+        return jHOALDDPFNP_;
       }
       /**
-       * <code>bool HJOMILMLFNM = 13;</code>
-       * @param value The hJOMILMLFNM to set.
+       * <code>bool JHOALDDPFNP = 9;</code>
+       * @param value The jHOALDDPFNP to set.
        * @return This builder for chaining.
        */
-      public Builder setHJOMILMLFNM(boolean value) {
+      public Builder setJHOALDDPFNP(boolean value) {
         
-        hJOMILMLFNM_ = value;
+        jHOALDDPFNP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool HJOMILMLFNM = 13;</code>
+       * <code>bool JHOALDDPFNP = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHJOMILMLFNM() {
+      public Builder clearJHOALDDPFNP() {
         
-        hJOMILMLFNM_ = false;
+        jHOALDDPFNP_ = false;
         onChanged();
         return this;
       }
@@ -589,7 +589,7 @@ public final class ThemeParkParkourSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n ThemeParkParkourSettleInfo.proto\"C\n\032Th" +
       "emeParkParkourSettleInfo\022\020\n\010level_id\030\003 \001" +
-      "(\r\022\023\n\013HJOMILMLFNM\030\r \001(\010B\033\n\031emu.grasscutt" +
+      "(\r\022\023\n\013JHOALDDPFNP\030\t \001(\010B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -601,7 +601,7 @@ public final class ThemeParkParkourSettleInfoOuterClass {
     internal_static_ThemeParkParkourSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ThemeParkParkourSettleInfo_descriptor,
-        new java.lang.String[] { "LevelId", "HJOMILMLFNM", });
+        new java.lang.String[] { "LevelId", "JHOALDDPFNP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

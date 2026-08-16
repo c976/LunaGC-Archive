@@ -19,20 +19,28 @@ public final class EnterWorldAreaReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 6;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 area_id = 9;</code>
      * @return The areaId.
      */
     int getAreaId();
 
     /**
-     * <code>uint32 area_type = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 area_type = 15;</code>
      * @return The areaType.
      */
     int getAreaType();
   }
   /**
    * <pre>
-   * CmdId: 7786
+   * CmdId: 9492
    * </pre>
    *
    * Protobuf type {@code EnterWorldAreaReq}
@@ -79,12 +87,12 @@ public final class EnterWorldAreaReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 72: {
 
               areaId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
               areaType_ = input.readUInt32();
               break;
@@ -121,10 +129,14 @@ public final class EnterWorldAreaReqOuterClass {
               emu.grasscutter.net.proto.EnterWorldAreaReqOuterClass.EnterWorldAreaReq.class, emu.grasscutter.net.proto.EnterWorldAreaReqOuterClass.EnterWorldAreaReq.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 6;
+    public static final int AREA_ID_FIELD_NUMBER = 9;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 6;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 area_id = 9;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -132,10 +144,14 @@ public final class EnterWorldAreaReqOuterClass {
       return areaId_;
     }
 
-    public static final int AREA_TYPE_FIELD_NUMBER = 8;
+    public static final int AREA_TYPE_FIELD_NUMBER = 15;
     private int areaType_;
     /**
-     * <code>uint32 area_type = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 area_type = 15;</code>
      * @return The areaType.
      */
     @java.lang.Override
@@ -158,10 +174,10 @@ public final class EnterWorldAreaReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (areaId_ != 0) {
-        output.writeUInt32(6, areaId_);
+        output.writeUInt32(9, areaId_);
       }
       if (areaType_ != 0) {
-        output.writeUInt32(8, areaType_);
+        output.writeUInt32(15, areaType_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +190,11 @@ public final class EnterWorldAreaReqOuterClass {
       size = 0;
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, areaId_);
+          .computeUInt32Size(9, areaId_);
       }
       if (areaType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, areaType_);
+          .computeUInt32Size(15, areaType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +327,7 @@ public final class EnterWorldAreaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7786
+     * CmdId: 9492
      * </pre>
      *
      * Protobuf type {@code EnterWorldAreaReq}
@@ -468,7 +484,11 @@ public final class EnterWorldAreaReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 6;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 area_id = 9;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -476,7 +496,11 @@ public final class EnterWorldAreaReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 6;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 area_id = 9;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +511,11 @@ public final class EnterWorldAreaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 6;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 area_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -499,7 +527,11 @@ public final class EnterWorldAreaReqOuterClass {
 
       private int areaType_ ;
       /**
-       * <code>uint32 area_type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 area_type = 15;</code>
        * @return The areaType.
        */
       @java.lang.Override
@@ -507,7 +539,11 @@ public final class EnterWorldAreaReqOuterClass {
         return areaType_;
       }
       /**
-       * <code>uint32 area_type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 area_type = 15;</code>
        * @param value The areaType to set.
        * @return This builder for chaining.
        */
@@ -518,7 +554,11 @@ public final class EnterWorldAreaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 area_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaType() {
@@ -595,7 +635,7 @@ public final class EnterWorldAreaReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027EnterWorldAreaReq.proto\"7\n\021EnterWorldA" +
-      "reaReq\022\017\n\007area_id\030\006 \001(\r\022\021\n\tarea_type\030\010 \001" +
+      "reaReq\022\017\n\007area_id\030\t \001(\r\022\021\n\tarea_type\030\017 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

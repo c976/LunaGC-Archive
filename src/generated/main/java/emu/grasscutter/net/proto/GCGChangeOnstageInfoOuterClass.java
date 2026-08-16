@@ -19,37 +19,33 @@ public final class GCGChangeOnstageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      * @return Whether the changeOnstagePreviewInfo field is set.
      */
     boolean hasChangeOnstagePreviewInfo();
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      * @return The changeOnstagePreviewInfo.
      */
     emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo getChangeOnstagePreviewInfo();
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      */
     emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfoOrBuilder getChangeOnstagePreviewInfoOrBuilder();
 
     /**
-     * <code>bool is_quick = 4;</code>
+     * <code>bool is_quick = 3;</code>
      * @return The isQuick.
      */
     boolean getIsQuick();
 
     /**
-     * <code>uint32 card_guid = 5;</code>
+     * <code>uint32 card_guid = 12;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
   }
   /**
-   * <pre>
-   * Obf: IKANKDKBMOE
-   * </pre>
-   *
    * Protobuf type {@code GCGChangeOnstageInfo}
    */
   public static final class GCGChangeOnstageInfo extends
@@ -94,7 +90,17 @@ public final class GCGChangeOnstageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 24: {
+
+              isQuick_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              cardGuid_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder subBuilder = null;
               if (changeOnstagePreviewInfo_ != null) {
                 subBuilder = changeOnstagePreviewInfo_.toBuilder();
@@ -105,16 +111,6 @@ public final class GCGChangeOnstageInfoOuterClass {
                 changeOnstagePreviewInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 32: {
-
-              isQuick_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -149,10 +145,10 @@ public final class GCGChangeOnstageInfoOuterClass {
               emu.grasscutter.net.proto.GCGChangeOnstageInfoOuterClass.GCGChangeOnstageInfo.class, emu.grasscutter.net.proto.GCGChangeOnstageInfoOuterClass.GCGChangeOnstageInfo.Builder.class);
     }
 
-    public static final int CHANGE_ONSTAGE_PREVIEW_INFO_FIELD_NUMBER = 2;
+    public static final int CHANGE_ONSTAGE_PREVIEW_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo changeOnstagePreviewInfo_;
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      * @return Whether the changeOnstagePreviewInfo field is set.
      */
     @java.lang.Override
@@ -160,7 +156,7 @@ public final class GCGChangeOnstageInfoOuterClass {
       return changeOnstagePreviewInfo_ != null;
     }
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      * @return The changeOnstagePreviewInfo.
      */
     @java.lang.Override
@@ -168,17 +164,17 @@ public final class GCGChangeOnstageInfoOuterClass {
       return changeOnstagePreviewInfo_ == null ? emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.getDefaultInstance() : changeOnstagePreviewInfo_;
     }
     /**
-     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+     * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfoOrBuilder getChangeOnstagePreviewInfoOrBuilder() {
       return getChangeOnstagePreviewInfo();
     }
 
-    public static final int IS_QUICK_FIELD_NUMBER = 4;
+    public static final int IS_QUICK_FIELD_NUMBER = 3;
     private boolean isQuick_;
     /**
-     * <code>bool is_quick = 4;</code>
+     * <code>bool is_quick = 3;</code>
      * @return The isQuick.
      */
     @java.lang.Override
@@ -186,10 +182,10 @@ public final class GCGChangeOnstageInfoOuterClass {
       return isQuick_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 5;
+    public static final int CARD_GUID_FIELD_NUMBER = 12;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 5;</code>
+     * <code>uint32 card_guid = 12;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -211,14 +207,14 @@ public final class GCGChangeOnstageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (changeOnstagePreviewInfo_ != null) {
-        output.writeMessage(2, getChangeOnstagePreviewInfo());
-      }
       if (isQuick_ != false) {
-        output.writeBool(4, isQuick_);
+        output.writeBool(3, isQuick_);
       }
       if (cardGuid_ != 0) {
-        output.writeUInt32(5, cardGuid_);
+        output.writeUInt32(12, cardGuid_);
+      }
+      if (changeOnstagePreviewInfo_ != null) {
+        output.writeMessage(14, getChangeOnstagePreviewInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -229,17 +225,17 @@ public final class GCGChangeOnstageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (changeOnstagePreviewInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getChangeOnstagePreviewInfo());
-      }
       if (isQuick_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isQuick_);
+          .computeBoolSize(3, isQuick_);
       }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cardGuid_);
+          .computeUInt32Size(12, cardGuid_);
+      }
+      if (changeOnstagePreviewInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getChangeOnstagePreviewInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -381,10 +377,6 @@ public final class GCGChangeOnstageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IKANKDKBMOE
-     * </pre>
-     *
      * Protobuf type {@code GCGChangeOnstageInfo}
      */
     public static final class Builder extends
@@ -555,14 +547,14 @@ public final class GCGChangeOnstageInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo, emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfoOrBuilder> changeOnstagePreviewInfoBuilder_;
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        * @return Whether the changeOnstagePreviewInfo field is set.
        */
       public boolean hasChangeOnstagePreviewInfo() {
         return changeOnstagePreviewInfoBuilder_ != null || changeOnstagePreviewInfo_ != null;
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        * @return The changeOnstagePreviewInfo.
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo getChangeOnstagePreviewInfo() {
@@ -573,7 +565,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         }
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public Builder setChangeOnstagePreviewInfo(emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo value) {
         if (changeOnstagePreviewInfoBuilder_ == null) {
@@ -589,7 +581,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public Builder setChangeOnstagePreviewInfo(
           emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder builderForValue) {
@@ -603,7 +595,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public Builder mergeChangeOnstagePreviewInfo(emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo value) {
         if (changeOnstagePreviewInfoBuilder_ == null) {
@@ -621,7 +613,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public Builder clearChangeOnstagePreviewInfo() {
         if (changeOnstagePreviewInfoBuilder_ == null) {
@@ -635,7 +627,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder getChangeOnstagePreviewInfoBuilder() {
         
@@ -643,7 +635,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return getChangeOnstagePreviewInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfoOrBuilder getChangeOnstagePreviewInfoOrBuilder() {
         if (changeOnstagePreviewInfoBuilder_ != null) {
@@ -654,7 +646,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         }
       }
       /**
-       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 2;</code>
+       * <code>.GCGSkillPreviewInfo change_onstage_preview_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo, emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfoOrBuilder> 
@@ -672,7 +664,7 @@ public final class GCGChangeOnstageInfoOuterClass {
 
       private boolean isQuick_ ;
       /**
-       * <code>bool is_quick = 4;</code>
+       * <code>bool is_quick = 3;</code>
        * @return The isQuick.
        */
       @java.lang.Override
@@ -680,7 +672,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return isQuick_;
       }
       /**
-       * <code>bool is_quick = 4;</code>
+       * <code>bool is_quick = 3;</code>
        * @param value The isQuick to set.
        * @return This builder for chaining.
        */
@@ -691,7 +683,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_quick = 4;</code>
+       * <code>bool is_quick = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsQuick() {
@@ -703,7 +695,7 @@ public final class GCGChangeOnstageInfoOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 5;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -711,7 +703,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 5;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -722,7 +714,7 @@ public final class GCGChangeOnstageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 5;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -800,9 +792,9 @@ public final class GCGChangeOnstageInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032GCGChangeOnstageInfo.proto\032\031GCGSkillPr" +
       "eviewInfo.proto\"v\n\024GCGChangeOnstageInfo\022" +
-      "9\n\033change_onstage_preview_info\030\002 \001(\0132\024.G" +
-      "CGSkillPreviewInfo\022\020\n\010is_quick\030\004 \001(\010\022\021\n\t" +
-      "card_guid\030\005 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "9\n\033change_onstage_preview_info\030\016 \001(\0132\024.G" +
+      "CGSkillPreviewInfo\022\020\n\010is_quick\030\003 \001(\010\022\021\n\t" +
+      "card_guid\030\014 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

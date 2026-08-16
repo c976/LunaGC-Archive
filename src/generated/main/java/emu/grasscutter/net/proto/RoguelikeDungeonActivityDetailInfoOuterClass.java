@@ -19,98 +19,170 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @return A list containing the runeList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
-    java.util.List<java.lang.Integer> getRuneListList();
+    java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> 
+        getJLLPNEGOEGBList();
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @return The count of runeList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
-    int getRuneListCount();
+    emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL getJLLPNEGOEGB(int index);
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The runeList at the given index.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
-    int getRuneList(int index);
+    int getJLLPNEGOEGBCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder> 
+        getJLLPNEGOEGBOrBuilderList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+     */
+    emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder getJLLPNEGOEGBOrBuilder(
+        int index);
 
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> 
         getStageListList();
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo getStageList(int index);
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     int getStageListCount();
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder> 
         getStageListOrBuilderList();
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder getStageListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+     * @return A list containing the eJCKLPEKPGD.
      */
-    java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> 
-        getShikigamiListList();
+    java.util.List<java.lang.Integer> getEJCKLPEKPGDList();
     /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+     * @return The count of eJCKLPEKPGD.
      */
-    emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord getShikigamiList(int index);
+    int getEJCKLPEKPGDCount();
     /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    int getShikigamiListCount();
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder> 
-        getShikigamiListOrBuilderList();
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder getShikigamiListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
-     * @return A list containing the equippedRuneList.
-     */
-    java.util.List<java.lang.Integer> getEquippedRuneListList();
-    /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
-     * @return The count of equippedRuneList.
-     */
-    int getEquippedRuneListCount();
-    /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
      * @param index The index of the element to return.
-     * @return The equippedRuneList at the given index.
+     * @return The eJCKLPEKPGD at the given index.
      */
-    int getEquippedRuneList(int index);
+    int getEJCKLPEKPGD(int index);
 
     /**
-     * <code>uint32 content_close_time = 14;</code>
-     * @return The contentCloseTime.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @return A list containing the oOLGIEKCPKI.
      */
-    int getContentCloseTime();
+    java.util.List<java.lang.Integer> getOOLGIEKCPKIList();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @return The count of oOLGIEKCPKI.
+     */
+    int getOOLGIEKCPKICount();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @param index The index of the element to return.
+     * @return The oOLGIEKCPKI at the given index.
+     */
+    int getOOLGIEKCPKI(int index);
 
     /**
-     * <code>bool is_content_closed = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>bool is_content_closed = 15;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 content_close_time = 2;</code>
+     * @return The contentCloseTime.
+     */
+    int getContentCloseTime();
   }
   /**
    * Protobuf type {@code RoguelikeDungeonActivityDetailInfo}
@@ -125,10 +197,10 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       super(builder);
     }
     private RoguelikeDungeonActivityDetailInfo() {
-      runeList_ = emptyIntList();
+      jLLPNEGOEGB_ = java.util.Collections.emptyList();
       stageList_ = java.util.Collections.emptyList();
-      shikigamiList_ = java.util.Collections.emptyList();
-      equippedRuneList_ = emptyIntList();
+      eJCKLPEKPGD_ = emptyIntList();
+      oOLGIEKCPKI_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -162,16 +234,54 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                shikigamiList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              shikigamiList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.parser(), extensionRegistry));
+            case 16: {
+
+              contentCloseTime_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                eJCKLPEKPGD_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              eJCKLPEKPGD_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                eJCKLPEKPGD_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                eJCKLPEKPGD_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                oOLGIEKCPKI_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              oOLGIEKCPKI_.addInt(input.readUInt32());
+              break;
+            }
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                oOLGIEKCPKI_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                oOLGIEKCPKI_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -180,56 +290,18 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.parser(), extensionRegistry));
               break;
             }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                equippedRuneList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              equippedRuneList_.addInt(input.readUInt32());
-              break;
-            }
-            case 58: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                equippedRuneList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                equippedRuneList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 64: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                runeList_ = newIntList();
+                jLLPNEGOEGB_ = new java.util.ArrayList<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              runeList_.addInt(input.readUInt32());
+              jLLPNEGOEGB_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.parser(), extensionRegistry));
               break;
             }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                runeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                runeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 96: {
+            case 120: {
 
               isContentClosed_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              contentCloseTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -248,16 +320,16 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          shikigamiList_ = java.util.Collections.unmodifiableList(shikigamiList_);
+          eJCKLPEKPGD_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          oOLGIEKCPKI_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           stageList_ = java.util.Collections.unmodifiableList(stageList_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          equippedRuneList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          runeList_.makeImmutable(); // C
+          jLLPNEGOEGB_ = java.util.Collections.unmodifiableList(jLLPNEGOEGB_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -276,45 +348,85 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo.class, emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo.Builder.class);
     }
 
-    public static final int RUNE_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList runeList_;
+    public static final int JLLPNEGOEGB_FIELD_NUMBER = 13;
+    private java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> jLLPNEGOEGB_;
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @return A list containing the runeList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getRuneListList() {
-      return runeList_;
+    public java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> getJLLPNEGOEGBList() {
+      return jLLPNEGOEGB_;
     }
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @return The count of runeList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
-    public int getRuneListCount() {
-      return runeList_.size();
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder> 
+        getJLLPNEGOEGBOrBuilderList() {
+      return jLLPNEGOEGB_;
     }
     /**
-     * <code>repeated uint32 rune_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The runeList at the given index.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
      */
-    public int getRuneList(int index) {
-      return runeList_.getInt(index);
+    @java.lang.Override
+    public int getJLLPNEGOEGBCount() {
+      return jLLPNEGOEGB_.size();
     }
-    private int runeListMemoizedSerializedSize = -1;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL getJLLPNEGOEGB(int index) {
+      return jLLPNEGOEGB_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder getJLLPNEGOEGBOrBuilder(
+        int index) {
+      return jLLPNEGOEGB_.get(index);
+    }
 
-    public static final int STAGE_LIST_FIELD_NUMBER = 5;
+    public static final int STAGE_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> stageList_;
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> getStageListList() {
       return stageList_;
     }
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder> 
@@ -322,21 +434,33 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       return stageList_;
     }
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     @java.lang.Override
     public int getStageListCount() {
       return stageList_.size();
     }
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo getStageList(int index) {
       return stageList_.get(index);
     }
     /**
-     * <code>repeated .RogueStageInfo stage_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated .RogueStageInfo stage_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder getStageListOrBuilder(
@@ -344,94 +468,114 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       return stageList_.get(index);
     }
 
-    public static final int SHIKIGAMI_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> shikigamiList_;
+    public static final int EJCKLPEKPGD_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList eJCKLPEKPGD_;
     /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> getShikigamiListList() {
-      return shikigamiList_;
-    }
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder> 
-        getShikigamiListOrBuilderList() {
-      return shikigamiList_;
-    }
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    @java.lang.Override
-    public int getShikigamiListCount() {
-      return shikigamiList_.size();
-    }
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord getShikigamiList(int index) {
-      return shikigamiList_.get(index);
-    }
-    /**
-     * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder getShikigamiListOrBuilder(
-        int index) {
-      return shikigamiList_.get(index);
-    }
-
-    public static final int EQUIPPED_RUNE_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList equippedRuneList_;
-    /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
-     * @return A list containing the equippedRuneList.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+     * @return A list containing the eJCKLPEKPGD.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getEquippedRuneListList() {
-      return equippedRuneList_;
+        getEJCKLPEKPGDList() {
+      return eJCKLPEKPGD_;
     }
     /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
-     * @return The count of equippedRuneList.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+     * @return The count of eJCKLPEKPGD.
      */
-    public int getEquippedRuneListCount() {
-      return equippedRuneList_.size();
+    public int getEJCKLPEKPGDCount() {
+      return eJCKLPEKPGD_.size();
     }
     /**
-     * <code>repeated uint32 equipped_rune_list = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
      * @param index The index of the element to return.
-     * @return The equippedRuneList at the given index.
+     * @return The eJCKLPEKPGD at the given index.
      */
-    public int getEquippedRuneList(int index) {
-      return equippedRuneList_.getInt(index);
+    public int getEJCKLPEKPGD(int index) {
+      return eJCKLPEKPGD_.getInt(index);
     }
-    private int equippedRuneListMemoizedSerializedSize = -1;
+    private int eJCKLPEKPGDMemoizedSerializedSize = -1;
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 14;
-    private int contentCloseTime_;
+    public static final int OOLGIEKCPKI_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList oOLGIEKCPKI_;
     /**
-     * <code>uint32 content_close_time = 14;</code>
-     * @return The contentCloseTime.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @return A list containing the oOLGIEKCPKI.
      */
     @java.lang.Override
-    public int getContentCloseTime() {
-      return contentCloseTime_;
+    public java.util.List<java.lang.Integer>
+        getOOLGIEKCPKIList() {
+      return oOLGIEKCPKI_;
     }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @return The count of oOLGIEKCPKI.
+     */
+    public int getOOLGIEKCPKICount() {
+      return oOLGIEKCPKI_.size();
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+     * @param index The index of the element to return.
+     * @return The oOLGIEKCPKI at the given index.
+     */
+    public int getOOLGIEKCPKI(int index) {
+      return oOLGIEKCPKI_.getInt(index);
+    }
+    private int oOLGIEKCPKIMemoizedSerializedSize = -1;
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 12;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 15;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>bool is_content_closed = 15;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
     public boolean getIsContentClosed() {
       return isContentClosed_;
+    }
+
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 2;
+    private int contentCloseTime_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 content_close_time = 2;</code>
+     * @return The contentCloseTime.
+     */
+    @java.lang.Override
+    public int getContentCloseTime() {
+      return contentCloseTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -449,31 +593,31 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < shikigamiList_.size(); i++) {
-        output.writeMessage(2, shikigamiList_.get(i));
+      if (contentCloseTime_ != 0) {
+        output.writeUInt32(2, contentCloseTime_);
+      }
+      if (getEJCKLPEKPGDList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(eJCKLPEKPGDMemoizedSerializedSize);
+      }
+      for (int i = 0; i < eJCKLPEKPGD_.size(); i++) {
+        output.writeUInt32NoTag(eJCKLPEKPGD_.getInt(i));
+      }
+      if (getOOLGIEKCPKIList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(oOLGIEKCPKIMemoizedSerializedSize);
+      }
+      for (int i = 0; i < oOLGIEKCPKI_.size(); i++) {
+        output.writeUInt32NoTag(oOLGIEKCPKI_.getInt(i));
       }
       for (int i = 0; i < stageList_.size(); i++) {
-        output.writeMessage(5, stageList_.get(i));
+        output.writeMessage(12, stageList_.get(i));
       }
-      if (getEquippedRuneListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(equippedRuneListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < equippedRuneList_.size(); i++) {
-        output.writeUInt32NoTag(equippedRuneList_.getInt(i));
-      }
-      if (getRuneListList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(runeListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < runeList_.size(); i++) {
-        output.writeUInt32NoTag(runeList_.getInt(i));
+      for (int i = 0; i < jLLPNEGOEGB_.size(); i++) {
+        output.writeMessage(13, jLLPNEGOEGB_.get(i));
       }
       if (isContentClosed_ != false) {
-        output.writeBool(12, isContentClosed_);
-      }
-      if (contentCloseTime_ != 0) {
-        output.writeUInt32(14, contentCloseTime_);
+        output.writeBool(15, isContentClosed_);
       }
       unknownFields.writeTo(output);
     }
@@ -484,49 +628,49 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < shikigamiList_.size(); i++) {
+      if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, shikigamiList_.get(i));
+          .computeUInt32Size(2, contentCloseTime_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < eJCKLPEKPGD_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(eJCKLPEKPGD_.getInt(i));
+        }
+        size += dataSize;
+        if (!getEJCKLPEKPGDList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        eJCKLPEKPGDMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < oOLGIEKCPKI_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(oOLGIEKCPKI_.getInt(i));
+        }
+        size += dataSize;
+        if (!getOOLGIEKCPKIList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        oOLGIEKCPKIMemoizedSerializedSize = dataSize;
       }
       for (int i = 0; i < stageList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, stageList_.get(i));
+          .computeMessageSize(12, stageList_.get(i));
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < equippedRuneList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(equippedRuneList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getEquippedRuneListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        equippedRuneListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < runeList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(runeList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getRuneListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        runeListMemoizedSerializedSize = dataSize;
+      for (int i = 0; i < jLLPNEGOEGB_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, jLLPNEGOEGB_.get(i));
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isContentClosed_);
-      }
-      if (contentCloseTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, contentCloseTime_);
+          .computeBoolSize(15, isContentClosed_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -543,18 +687,18 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo other = (emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo) obj;
 
-      if (!getRuneListList()
-          .equals(other.getRuneListList())) return false;
+      if (!getJLLPNEGOEGBList()
+          .equals(other.getJLLPNEGOEGBList())) return false;
       if (!getStageListList()
           .equals(other.getStageListList())) return false;
-      if (!getShikigamiListList()
-          .equals(other.getShikigamiListList())) return false;
-      if (!getEquippedRuneListList()
-          .equals(other.getEquippedRuneListList())) return false;
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
+      if (!getEJCKLPEKPGDList()
+          .equals(other.getEJCKLPEKPGDList())) return false;
+      if (!getOOLGIEKCPKIList()
+          .equals(other.getOOLGIEKCPKIList())) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -566,27 +710,27 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getRuneListCount() > 0) {
-        hash = (37 * hash) + RUNE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getRuneListList().hashCode();
+      if (getJLLPNEGOEGBCount() > 0) {
+        hash = (37 * hash) + JLLPNEGOEGB_FIELD_NUMBER;
+        hash = (53 * hash) + getJLLPNEGOEGBList().hashCode();
       }
       if (getStageListCount() > 0) {
         hash = (37 * hash) + STAGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStageListList().hashCode();
       }
-      if (getShikigamiListCount() > 0) {
-        hash = (37 * hash) + SHIKIGAMI_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getShikigamiListList().hashCode();
+      if (getEJCKLPEKPGDCount() > 0) {
+        hash = (37 * hash) + EJCKLPEKPGD_FIELD_NUMBER;
+        hash = (53 * hash) + getEJCKLPEKPGDList().hashCode();
       }
-      if (getEquippedRuneListCount() > 0) {
-        hash = (37 * hash) + EQUIPPED_RUNE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEquippedRuneListList().hashCode();
+      if (getOOLGIEKCPKICount() > 0) {
+        hash = (37 * hash) + OOLGIEKCPKI_FIELD_NUMBER;
+        hash = (53 * hash) + getOOLGIEKCPKIList().hashCode();
       }
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -715,32 +859,32 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getJLLPNEGOEGBFieldBuilder();
           getStageListFieldBuilder();
-          getShikigamiListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        runeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        if (jLLPNEGOEGBBuilder_ == null) {
+          jLLPNEGOEGB_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          jLLPNEGOEGBBuilder_.clear();
+        }
         if (stageListBuilder_ == null) {
           stageList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           stageListBuilder_.clear();
         }
-        if (shikigamiListBuilder_ == null) {
-          shikigamiList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          shikigamiListBuilder_.clear();
-        }
-        equippedRuneList_ = emptyIntList();
+        eJCKLPEKPGD_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        oOLGIEKCPKI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
-        contentCloseTime_ = 0;
-
         isContentClosed_ = false;
+
+        contentCloseTime_ = 0;
 
         return this;
       }
@@ -769,11 +913,15 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo result = new emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          runeList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
+        if (jLLPNEGOEGBBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            jLLPNEGOEGB_ = java.util.Collections.unmodifiableList(jLLPNEGOEGB_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.jLLPNEGOEGB_ = jLLPNEGOEGB_;
+        } else {
+          result.jLLPNEGOEGB_ = jLLPNEGOEGBBuilder_.build();
         }
-        result.runeList_ = runeList_;
         if (stageListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             stageList_ = java.util.Collections.unmodifiableList(stageList_);
@@ -783,22 +931,18 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         } else {
           result.stageList_ = stageListBuilder_.build();
         }
-        if (shikigamiListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            shikigamiList_ = java.util.Collections.unmodifiableList(shikigamiList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.shikigamiList_ = shikigamiList_;
-        } else {
-          result.shikigamiList_ = shikigamiListBuilder_.build();
+        if (((bitField0_ & 0x00000004) != 0)) {
+          eJCKLPEKPGD_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
+        result.eJCKLPEKPGD_ = eJCKLPEKPGD_;
         if (((bitField0_ & 0x00000008) != 0)) {
-          equippedRuneList_.makeImmutable();
+          oOLGIEKCPKI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
         }
-        result.equippedRuneList_ = equippedRuneList_;
-        result.contentCloseTime_ = contentCloseTime_;
+        result.oOLGIEKCPKI_ = oOLGIEKCPKI_;
         result.isContentClosed_ = isContentClosed_;
+        result.contentCloseTime_ = contentCloseTime_;
         onBuilt();
         return result;
       }
@@ -847,15 +991,31 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.RoguelikeDungeonActivityDetailInfoOuterClass.RoguelikeDungeonActivityDetailInfo.getDefaultInstance()) return this;
-        if (!other.runeList_.isEmpty()) {
-          if (runeList_.isEmpty()) {
-            runeList_ = other.runeList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureRuneListIsMutable();
-            runeList_.addAll(other.runeList_);
+        if (jLLPNEGOEGBBuilder_ == null) {
+          if (!other.jLLPNEGOEGB_.isEmpty()) {
+            if (jLLPNEGOEGB_.isEmpty()) {
+              jLLPNEGOEGB_ = other.jLLPNEGOEGB_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureJLLPNEGOEGBIsMutable();
+              jLLPNEGOEGB_.addAll(other.jLLPNEGOEGB_);
+            }
+            onChanged();
           }
-          onChanged();
+        } else {
+          if (!other.jLLPNEGOEGB_.isEmpty()) {
+            if (jLLPNEGOEGBBuilder_.isEmpty()) {
+              jLLPNEGOEGBBuilder_.dispose();
+              jLLPNEGOEGBBuilder_ = null;
+              jLLPNEGOEGB_ = other.jLLPNEGOEGB_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              jLLPNEGOEGBBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getJLLPNEGOEGBFieldBuilder() : null;
+            } else {
+              jLLPNEGOEGBBuilder_.addAllMessages(other.jLLPNEGOEGB_);
+            }
+          }
         }
         if (stageListBuilder_ == null) {
           if (!other.stageList_.isEmpty()) {
@@ -883,47 +1043,31 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
             }
           }
         }
-        if (shikigamiListBuilder_ == null) {
-          if (!other.shikigamiList_.isEmpty()) {
-            if (shikigamiList_.isEmpty()) {
-              shikigamiList_ = other.shikigamiList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureShikigamiListIsMutable();
-              shikigamiList_.addAll(other.shikigamiList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.shikigamiList_.isEmpty()) {
-            if (shikigamiListBuilder_.isEmpty()) {
-              shikigamiListBuilder_.dispose();
-              shikigamiListBuilder_ = null;
-              shikigamiList_ = other.shikigamiList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              shikigamiListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getShikigamiListFieldBuilder() : null;
-            } else {
-              shikigamiListBuilder_.addAllMessages(other.shikigamiList_);
-            }
-          }
-        }
-        if (!other.equippedRuneList_.isEmpty()) {
-          if (equippedRuneList_.isEmpty()) {
-            equippedRuneList_ = other.equippedRuneList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+        if (!other.eJCKLPEKPGD_.isEmpty()) {
+          if (eJCKLPEKPGD_.isEmpty()) {
+            eJCKLPEKPGD_ = other.eJCKLPEKPGD_;
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureEquippedRuneListIsMutable();
-            equippedRuneList_.addAll(other.equippedRuneList_);
+            ensureEJCKLPEKPGDIsMutable();
+            eJCKLPEKPGD_.addAll(other.eJCKLPEKPGD_);
           }
           onChanged();
         }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
+        if (!other.oOLGIEKCPKI_.isEmpty()) {
+          if (oOLGIEKCPKI_.isEmpty()) {
+            oOLGIEKCPKI_ = other.oOLGIEKCPKI_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureOOLGIEKCPKIIsMutable();
+            oOLGIEKCPKI_.addAll(other.oOLGIEKCPKI_);
+          }
+          onChanged();
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
+        }
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -955,83 +1099,316 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList runeList_ = emptyIntList();
-      private void ensureRuneListIsMutable() {
+      private java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> jLLPNEGOEGB_ =
+        java.util.Collections.emptyList();
+      private void ensureJLLPNEGOEGBIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          runeList_ = mutableCopy(runeList_);
+          jLLPNEGOEGB_ = new java.util.ArrayList<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL>(jLLPNEGOEGB_);
           bitField0_ |= 0x00000001;
          }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder> jLLPNEGOEGBBuilder_;
+
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @return A list containing the runeList.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public java.util.List<java.lang.Integer>
-          getRuneListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(runeList_) : runeList_;
+      public java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> getJLLPNEGOEGBList() {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(jLLPNEGOEGB_);
+        } else {
+          return jLLPNEGOEGBBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @return The count of runeList.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public int getRuneListCount() {
-        return runeList_.size();
+      public int getJLLPNEGOEGBCount() {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          return jLLPNEGOEGB_.size();
+        } else {
+          return jLLPNEGOEGBBuilder_.getCount();
+        }
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The runeList at the given index.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public int getRuneList(int index) {
-        return runeList_.getInt(index);
+      public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL getJLLPNEGOEGB(int index) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          return jLLPNEGOEGB_.get(index);
+        } else {
+          return jLLPNEGOEGBBuilder_.getMessage(index);
+        }
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The runeList to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public Builder setRuneList(
-          int index, int value) {
-        ensureRuneListIsMutable();
-        runeList_.setInt(index, value);
-        onChanged();
+      public Builder setJLLPNEGOEGB(
+          int index, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL value) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.set(index, value);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @param value The runeList to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public Builder addRuneList(int value) {
-        ensureRuneListIsMutable();
-        runeList_.addInt(value);
-        onChanged();
+      public Builder setJLLPNEGOEGB(
+          int index, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder builderForValue) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @param values The runeList to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public Builder addAllRuneList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRuneListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, runeList_);
-        onChanged();
+      public Builder addJLLPNEGOEGB(emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL value) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.add(value);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.addMessage(value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 8;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
        */
-      public Builder clearRuneList() {
-        runeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
+      public Builder addJLLPNEGOEGB(
+          int index, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL value) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.add(index, value);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.addMessage(index, value);
+        }
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public Builder addJLLPNEGOEGB(
+          emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder builderForValue) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.add(builderForValue.build());
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public Builder addJLLPNEGOEGB(
+          int index, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder builderForValue) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public Builder addAllJLLPNEGOEGB(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL> values) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          ensureJLLPNEGOEGBIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, jLLPNEGOEGB_);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public Builder clearJLLPNEGOEGB() {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          jLLPNEGOEGB_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public Builder removeJLLPNEGOEGB(int index) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          ensureJLLPNEGOEGBIsMutable();
+          jLLPNEGOEGB_.remove(index);
+          onChanged();
+        } else {
+          jLLPNEGOEGBBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder getJLLPNEGOEGBBuilder(
+          int index) {
+        return getJLLPNEGOEGBFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder getJLLPNEGOEGBOrBuilder(
+          int index) {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          return jLLPNEGOEGB_.get(index);  } else {
+          return jLLPNEGOEGBBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder> 
+           getJLLPNEGOEGBOrBuilderList() {
+        if (jLLPNEGOEGBBuilder_ != null) {
+          return jLLPNEGOEGBBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(jLLPNEGOEGB_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder addJLLPNEGOEGBBuilder() {
+        return getJLLPNEGOEGBFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder addJLLPNEGOEGBBuilder(
+          int index) {
+        return getJLLPNEGOEGBFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CPJAAMOJMAL JLLPNEGOEGB = 13;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder> 
+           getJLLPNEGOEGBBuilderList() {
+        return getJLLPNEGOEGBFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder> 
+          getJLLPNEGOEGBFieldBuilder() {
+        if (jLLPNEGOEGBBuilder_ == null) {
+          jLLPNEGOEGBBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMAL.Builder, emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.CPJAAMOJMALOrBuilder>(
+                  jLLPNEGOEGB_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          jLLPNEGOEGB_ = null;
+        }
+        return jLLPNEGOEGBBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> stageList_ =
@@ -1047,7 +1424,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder> stageListBuilder_;
 
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> getStageListList() {
         if (stageListBuilder_ == null) {
@@ -1057,7 +1438,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public int getStageListCount() {
         if (stageListBuilder_ == null) {
@@ -1067,7 +1452,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo getStageList(int index) {
         if (stageListBuilder_ == null) {
@@ -1077,7 +1466,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder setStageList(
           int index, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo value) {
@@ -1094,7 +1487,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder setStageList(
           int index, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder builderForValue) {
@@ -1108,7 +1505,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder addStageList(emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo value) {
         if (stageListBuilder_ == null) {
@@ -1124,7 +1525,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder addStageList(
           int index, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo value) {
@@ -1141,7 +1546,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder addStageList(
           emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder builderForValue) {
@@ -1155,7 +1564,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder addStageList(
           int index, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder builderForValue) {
@@ -1169,7 +1582,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder addAllStageList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo> values) {
@@ -1184,7 +1601,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder clearStageList() {
         if (stageListBuilder_ == null) {
@@ -1197,7 +1618,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public Builder removeStageList(int index) {
         if (stageListBuilder_ == null) {
@@ -1210,14 +1635,22 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder getStageListBuilder(
           int index) {
         return getStageListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder getStageListOrBuilder(
           int index) {
@@ -1227,7 +1660,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfoOrBuilder> 
            getStageListOrBuilderList() {
@@ -1238,14 +1675,22 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder addStageListBuilder() {
         return getStageListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder addStageListBuilder(
           int index) {
@@ -1253,7 +1698,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueStageInfo stage_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated .RogueStageInfo stage_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueStageInfoOuterClass.RogueStageInfo.Builder> 
            getStageListBuilderList() {
@@ -1274,359 +1723,227 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return stageListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> shikigamiList_ =
-        java.util.Collections.emptyList();
-      private void ensureShikigamiListIsMutable() {
+      private com.google.protobuf.Internal.IntList eJCKLPEKPGD_ = emptyIntList();
+      private void ensureEJCKLPEKPGDIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          shikigamiList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord>(shikigamiList_);
+          eJCKLPEKPGD_ = mutableCopy(eJCKLPEKPGD_);
           bitField0_ |= 0x00000004;
          }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder> shikigamiListBuilder_;
-
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @return A list containing the eJCKLPEKPGD.
        */
-      public java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> getShikigamiListList() {
-        if (shikigamiListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(shikigamiList_);
-        } else {
-          return shikigamiListBuilder_.getMessageList();
-        }
+      public java.util.List<java.lang.Integer>
+          getEJCKLPEKPGDList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(eJCKLPEKPGD_) : eJCKLPEKPGD_;
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @return The count of eJCKLPEKPGD.
        */
-      public int getShikigamiListCount() {
-        if (shikigamiListBuilder_ == null) {
-          return shikigamiList_.size();
-        } else {
-          return shikigamiListBuilder_.getCount();
-        }
+      public int getEJCKLPEKPGDCount() {
+        return eJCKLPEKPGD_.size();
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @param index The index of the element to return.
+       * @return The eJCKLPEKPGD at the given index.
        */
-      public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord getShikigamiList(int index) {
-        if (shikigamiListBuilder_ == null) {
-          return shikigamiList_.get(index);
-        } else {
-          return shikigamiListBuilder_.getMessage(index);
-        }
+      public int getEJCKLPEKPGD(int index) {
+        return eJCKLPEKPGD_.getInt(index);
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The eJCKLPEKPGD to set.
+       * @return This builder for chaining.
        */
-      public Builder setShikigamiList(
-          int index, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord value) {
-        if (shikigamiListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShikigamiListIsMutable();
-          shikigamiList_.set(index, value);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.setMessage(index, value);
-        }
+      public Builder setEJCKLPEKPGD(
+          int index, int value) {
+        ensureEJCKLPEKPGDIsMutable();
+        eJCKLPEKPGD_.setInt(index, value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @param value The eJCKLPEKPGD to add.
+       * @return This builder for chaining.
        */
-      public Builder setShikigamiList(
-          int index, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder builderForValue) {
-        if (shikigamiListBuilder_ == null) {
-          ensureShikigamiListIsMutable();
-          shikigamiList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          shikigamiListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder addEJCKLPEKPGD(int value) {
+        ensureEJCKLPEKPGDIsMutable();
+        eJCKLPEKPGD_.addInt(value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @param values The eJCKLPEKPGD to add.
+       * @return This builder for chaining.
        */
-      public Builder addShikigamiList(emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord value) {
-        if (shikigamiListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShikigamiListIsMutable();
-          shikigamiList_.add(value);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.addMessage(value);
-        }
+      public Builder addAllEJCKLPEKPGD(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureEJCKLPEKPGDIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, eJCKLPEKPGD_);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 EJCKLPEKPGD = 3;</code>
+       * @return This builder for chaining.
        */
-      public Builder addShikigamiList(
-          int index, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord value) {
-        if (shikigamiListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureShikigamiListIsMutable();
-          shikigamiList_.add(index, value);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.addMessage(index, value);
-        }
+      public Builder clearEJCKLPEKPGD() {
+        eJCKLPEKPGD_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public Builder addShikigamiList(
-          emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder builderForValue) {
-        if (shikigamiListBuilder_ == null) {
-          ensureShikigamiListIsMutable();
-          shikigamiList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          shikigamiListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public Builder addShikigamiList(
-          int index, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder builderForValue) {
-        if (shikigamiListBuilder_ == null) {
-          ensureShikigamiListIsMutable();
-          shikigamiList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          shikigamiListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public Builder addAllShikigamiList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord> values) {
-        if (shikigamiListBuilder_ == null) {
-          ensureShikigamiListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, shikigamiList_);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public Builder clearShikigamiList() {
-        if (shikigamiListBuilder_ == null) {
-          shikigamiList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public Builder removeShikigamiList(int index) {
-        if (shikigamiListBuilder_ == null) {
-          ensureShikigamiListIsMutable();
-          shikigamiList_.remove(index);
-          onChanged();
-        } else {
-          shikigamiListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder getShikigamiListBuilder(
-          int index) {
-        return getShikigamiListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder getShikigamiListOrBuilder(
-          int index) {
-        if (shikigamiListBuilder_ == null) {
-          return shikigamiList_.get(index);  } else {
-          return shikigamiListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder> 
-           getShikigamiListOrBuilderList() {
-        if (shikigamiListBuilder_ != null) {
-          return shikigamiListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(shikigamiList_);
-        }
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder addShikigamiListBuilder() {
-        return getShikigamiListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder addShikigamiListBuilder(
-          int index) {
-        return getShikigamiListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .RoguelikeShikigamiRecord shikigami_list = 2;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder> 
-           getShikigamiListBuilderList() {
-        return getShikigamiListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder> 
-          getShikigamiListFieldBuilder() {
-        if (shikigamiListBuilder_ == null) {
-          shikigamiListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecord.Builder, emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.RoguelikeShikigamiRecordOrBuilder>(
-                  shikigamiList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          shikigamiList_ = null;
-        }
-        return shikigamiListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList equippedRuneList_ = emptyIntList();
-      private void ensureEquippedRuneListIsMutable() {
+      private com.google.protobuf.Internal.IntList oOLGIEKCPKI_ = emptyIntList();
+      private void ensureOOLGIEKCPKIIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          equippedRuneList_ = mutableCopy(equippedRuneList_);
+          oOLGIEKCPKI_ = mutableCopy(oOLGIEKCPKI_);
           bitField0_ |= 0x00000008;
          }
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
-       * @return A list containing the equippedRuneList.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+       * @return A list containing the oOLGIEKCPKI.
        */
       public java.util.List<java.lang.Integer>
-          getEquippedRuneListList() {
+          getOOLGIEKCPKIList() {
         return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(equippedRuneList_) : equippedRuneList_;
+                 java.util.Collections.unmodifiableList(oOLGIEKCPKI_) : oOLGIEKCPKI_;
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
-       * @return The count of equippedRuneList.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+       * @return The count of oOLGIEKCPKI.
        */
-      public int getEquippedRuneListCount() {
-        return equippedRuneList_.size();
+      public int getOOLGIEKCPKICount() {
+        return oOLGIEKCPKI_.size();
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
        * @param index The index of the element to return.
-       * @return The equippedRuneList at the given index.
+       * @return The oOLGIEKCPKI at the given index.
        */
-      public int getEquippedRuneList(int index) {
-        return equippedRuneList_.getInt(index);
+      public int getOOLGIEKCPKI(int index) {
+        return oOLGIEKCPKI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
        * @param index The index to set the value at.
-       * @param value The equippedRuneList to set.
+       * @param value The oOLGIEKCPKI to set.
        * @return This builder for chaining.
        */
-      public Builder setEquippedRuneList(
+      public Builder setOOLGIEKCPKI(
           int index, int value) {
-        ensureEquippedRuneListIsMutable();
-        equippedRuneList_.setInt(index, value);
+        ensureOOLGIEKCPKIIsMutable();
+        oOLGIEKCPKI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
-       * @param value The equippedRuneList to add.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+       * @param value The oOLGIEKCPKI to add.
        * @return This builder for chaining.
        */
-      public Builder addEquippedRuneList(int value) {
-        ensureEquippedRuneListIsMutable();
-        equippedRuneList_.addInt(value);
+      public Builder addOOLGIEKCPKI(int value) {
+        ensureOOLGIEKCPKIIsMutable();
+        oOLGIEKCPKI_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
-       * @param values The equippedRuneList to add.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
+       * @param values The oOLGIEKCPKI to add.
        * @return This builder for chaining.
        */
-      public Builder addAllEquippedRuneList(
+      public Builder addAllOOLGIEKCPKI(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEquippedRuneListIsMutable();
+        ensureOOLGIEKCPKIIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, equippedRuneList_);
+            values, oOLGIEKCPKI_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 equipped_rune_list = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 OOLGIEKCPKI = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEquippedRuneList() {
-        equippedRuneList_ = emptyIntList();
+      public Builder clearOOLGIEKCPKI() {
+        oOLGIEKCPKI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-
-      private int contentCloseTime_ ;
-      /**
-       * <code>uint32 content_close_time = 14;</code>
-       * @return The contentCloseTime.
-       */
-      @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
-      }
-      /**
-       * <code>uint32 content_close_time = 14;</code>
-       * @param value The contentCloseTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentCloseTime(int value) {
-        
-        contentCloseTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 content_close_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_content_closed = 15;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -1634,7 +1951,11 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_content_closed = 15;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -1645,12 +1966,59 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_content_closed = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
         
         isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int contentCloseTime_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 2;</code>
+       * @return The contentCloseTime.
+       */
+      @java.lang.Override
+      public int getContentCloseTime() {
+        return contentCloseTime_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 2;</code>
+       * @param value The contentCloseTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentCloseTime(int value) {
+        
+        contentCloseTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContentCloseTime() {
+        
+        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
@@ -1722,30 +2090,29 @@ public final class RoguelikeDungeonActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(RoguelikeDungeonActivityDetailInfo.pro" +
-      "to\032\024RogueStageInfo.proto\032\036RoguelikeShiki" +
-      "gamiRecord.proto\"\342\001\n\"RoguelikeDungeonAct" +
-      "ivityDetailInfo\022\021\n\trune_list\030\010 \003(\r\022#\n\nst" +
-      "age_list\030\005 \003(\0132\017.RogueStageInfo\0221\n\016shiki" +
-      "gami_list\030\002 \003(\0132\031.RoguelikeShikigamiReco" +
-      "rd\022\032\n\022equipped_rune_list\030\007 \003(\r\022\032\n\022conten" +
-      "t_close_time\030\016 \001(\r\022\031\n\021is_content_closed\030" +
-      "\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "to\032\021CPJAAMOJMAL.proto\032\024RogueStageInfo.pr" +
+      "oto\"\315\001\n\"RoguelikeDungeonActivityDetailIn" +
+      "fo\022!\n\013JLLPNEGOEGB\030\r \003(\0132\014.CPJAAMOJMAL\022#\n" +
+      "\nstage_list\030\014 \003(\0132\017.RogueStageInfo\022\023\n\013EJ" +
+      "CKLPEKPGD\030\003 \003(\r\022\023\n\013OOLGIEKCPKI\030\006 \003(\r\022\031\n\021" +
+      "is_content_closed\030\017 \001(\010\022\032\n\022content_close" +
+      "_time\030\002 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.getDescriptor(),
         });
     internal_static_RoguelikeDungeonActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RoguelikeDungeonActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeDungeonActivityDetailInfo_descriptor,
-        new java.lang.String[] { "RuneList", "StageList", "ShikigamiList", "EquippedRuneList", "ContentCloseTime", "IsContentClosed", });
+        new java.lang.String[] { "JLLPNEGOEGB", "StageList", "EJCKLPEKPGD", "OOLGIEKCPKI", "IsContentClosed", "ContentCloseTime", });
+    emu.grasscutter.net.proto.CPJAAMOJMALOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RogueStageInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RoguelikeShikigamiRecordOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

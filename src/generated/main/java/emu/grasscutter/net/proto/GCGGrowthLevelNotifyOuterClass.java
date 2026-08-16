@@ -19,7 +19,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 exp = 4;</code>
+     * <pre>
+     * CMD_ID = 7186
+     * </pre>
+     *
+     * <code>uint32 exp = 9;</code>
      * @return The exp.
      */
     int getExp();
@@ -31,11 +35,6 @@ public final class GCGGrowthLevelNotifyOuterClass {
     int getLevel();
   }
   /**
-   * <pre>
-   * CmdId: 26194
-   * Obf: LNLJCNHOFGD
-   * </pre>
-   *
    * Protobuf type {@code GCGGrowthLevelNotify}
    */
   public static final class GCGGrowthLevelNotify extends
@@ -85,7 +84,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
               level_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 72: {
 
               exp_ = input.readUInt32();
               break;
@@ -122,10 +121,14 @@ public final class GCGGrowthLevelNotifyOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.class, emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.Builder.class);
     }
 
-    public static final int EXP_FIELD_NUMBER = 4;
+    public static final int EXP_FIELD_NUMBER = 9;
     private int exp_;
     /**
-     * <code>uint32 exp = 4;</code>
+     * <pre>
+     * CMD_ID = 7186
+     * </pre>
+     *
+     * <code>uint32 exp = 9;</code>
      * @return The exp.
      */
     @java.lang.Override
@@ -162,7 +165,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         output.writeUInt32(2, level_);
       }
       if (exp_ != 0) {
-        output.writeUInt32(4, exp_);
+        output.writeUInt32(9, exp_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +182,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
       }
       if (exp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, exp_);
+          .computeUInt32Size(9, exp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGGrowthLevelNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26194
-     * Obf: LNLJCNHOFGD
-     * </pre>
-     *
      * Protobuf type {@code GCGGrowthLevelNotify}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
 
       private int exp_ ;
       /**
-       * <code>uint32 exp = 4;</code>
+       * <pre>
+       * CMD_ID = 7186
+       * </pre>
+       *
+       * <code>uint32 exp = 9;</code>
        * @return The exp.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return exp_;
       }
       /**
-       * <code>uint32 exp = 4;</code>
+       * <pre>
+       * CMD_ID = 7186
+       * </pre>
+       *
+       * <code>uint32 exp = 9;</code>
        * @param value The exp to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 exp = 4;</code>
+       * <pre>
+       * CMD_ID = 7186
+       * </pre>
+       *
+       * <code>uint32 exp = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearExp() {
@@ -597,7 +607,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGGrowthLevelNotify.proto\"2\n\024GCGGrowt" +
-      "hLevelNotify\022\013\n\003exp\030\004 \001(\r\022\r\n\005level\030\002 \001(\r" +
+      "hLevelNotify\022\013\n\003exp\030\t \001(\r\022\r\n\005level\030\002 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

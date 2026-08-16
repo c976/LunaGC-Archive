@@ -19,21 +19,37 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      * @return Whether the shopInfo field is set.
      */
     boolean hasShopInfo();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      * @return The shopInfo.
      */
     emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo getShopInfo();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      */
     emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder();
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
@@ -141,6 +157,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
     public static final int SHOP_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo shopInfo_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      * @return Whether the shopInfo field is set.
      */
@@ -149,6 +169,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       return shopInfo_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      * @return The shopInfo.
      */
@@ -157,6 +181,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       return shopInfo_ == null ? emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.getDefaultInstance() : shopInfo_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.HomeLimitedShopInfo shop_info = 3;</code>
      */
     @java.lang.Override
@@ -167,6 +195,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
@@ -515,6 +547,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder> shopInfoBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        * @return Whether the shopInfo field is set.
        */
@@ -522,6 +558,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return shopInfoBuilder_ != null || shopInfo_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        * @return The shopInfo.
        */
@@ -533,6 +573,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public Builder setShopInfo(emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo value) {
@@ -549,6 +593,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public Builder setShopInfo(
@@ -563,6 +611,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public Builder mergeShopInfo(emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo value) {
@@ -581,6 +633,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public Builder clearShopInfo() {
@@ -595,6 +651,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder getShopInfoBuilder() {
@@ -603,6 +663,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return getShopInfoFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder() {
@@ -614,6 +678,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.HomeLimitedShopInfo shop_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -632,6 +700,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
 
       private int retcode_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
@@ -640,6 +712,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return retcode_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -651,6 +727,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */

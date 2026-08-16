@@ -19,28 +19,24 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JODHGJNHBDI = 13;</code>
-     * @return The jODHGJNHBDI.
+     * <code>uint32 KFNLEIBLKJK = 3;</code>
+     * @return The kFNLEIBLKJK.
      */
-    int getJODHGJNHBDI();
-
-    /**
-     * <code>uint32 GHJANEPNHCM = 6;</code>
-     * @return The gHJANEPNHCM.
-     */
-    int getGHJANEPNHCM();
+    int getKFNLEIBLKJK();
 
     /**
      * <code>uint32 entity_id = 7;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>uint32 FCJBKAMOBGE = 14;</code>
+     * @return The fCJBKAMOBGE.
+     */
+    int getFCJBKAMOBGE();
   }
   /**
-   * <pre>
-   * Obf: JHJEHIOGJDM
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryAnimalViewInfo}
    */
   public static final class SceneGalleryAnimalViewInfo extends
@@ -85,9 +81,9 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
-              gHJANEPNHCM_ = input.readUInt32();
+              kFNLEIBLKJK_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -95,9 +91,9 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
               entityId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
-              jODHGJNHBDI_ = input.readUInt32();
+              fCJBKAMOBGE_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,26 +128,15 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo.class, emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo.Builder.class);
     }
 
-    public static final int JODHGJNHBDI_FIELD_NUMBER = 13;
-    private int jODHGJNHBDI_;
+    public static final int KFNLEIBLKJK_FIELD_NUMBER = 3;
+    private int kFNLEIBLKJK_;
     /**
-     * <code>uint32 JODHGJNHBDI = 13;</code>
-     * @return The jODHGJNHBDI.
+     * <code>uint32 KFNLEIBLKJK = 3;</code>
+     * @return The kFNLEIBLKJK.
      */
     @java.lang.Override
-    public int getJODHGJNHBDI() {
-      return jODHGJNHBDI_;
-    }
-
-    public static final int GHJANEPNHCM_FIELD_NUMBER = 6;
-    private int gHJANEPNHCM_;
-    /**
-     * <code>uint32 GHJANEPNHCM = 6;</code>
-     * @return The gHJANEPNHCM.
-     */
-    @java.lang.Override
-    public int getGHJANEPNHCM() {
-      return gHJANEPNHCM_;
+    public int getKFNLEIBLKJK() {
+      return kFNLEIBLKJK_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 7;
@@ -163,6 +148,17 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int FCJBKAMOBGE_FIELD_NUMBER = 14;
+    private int fCJBKAMOBGE_;
+    /**
+     * <code>uint32 FCJBKAMOBGE = 14;</code>
+     * @return The fCJBKAMOBGE.
+     */
+    @java.lang.Override
+    public int getFCJBKAMOBGE() {
+      return fCJBKAMOBGE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gHJANEPNHCM_ != 0) {
-        output.writeUInt32(6, gHJANEPNHCM_);
+      if (kFNLEIBLKJK_ != 0) {
+        output.writeUInt32(3, kFNLEIBLKJK_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(7, entityId_);
       }
-      if (jODHGJNHBDI_ != 0) {
-        output.writeUInt32(13, jODHGJNHBDI_);
+      if (fCJBKAMOBGE_ != 0) {
+        output.writeUInt32(14, fCJBKAMOBGE_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gHJANEPNHCM_ != 0) {
+      if (kFNLEIBLKJK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, gHJANEPNHCM_);
+          .computeUInt32Size(3, kFNLEIBLKJK_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, entityId_);
       }
-      if (jODHGJNHBDI_ != 0) {
+      if (fCJBKAMOBGE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, jODHGJNHBDI_);
+          .computeUInt32Size(14, fCJBKAMOBGE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo other = (emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo) obj;
 
-      if (getJODHGJNHBDI()
-          != other.getJODHGJNHBDI()) return false;
-      if (getGHJANEPNHCM()
-          != other.getGHJANEPNHCM()) return false;
+      if (getKFNLEIBLKJK()
+          != other.getKFNLEIBLKJK()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getFCJBKAMOBGE()
+          != other.getFCJBKAMOBGE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +237,12 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JODHGJNHBDI_FIELD_NUMBER;
-      hash = (53 * hash) + getJODHGJNHBDI();
-      hash = (37 * hash) + GHJANEPNHCM_FIELD_NUMBER;
-      hash = (53 * hash) + getGHJANEPNHCM();
+      hash = (37 * hash) + KFNLEIBLKJK_FIELD_NUMBER;
+      hash = (53 * hash) + getKFNLEIBLKJK();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + FCJBKAMOBGE_FIELD_NUMBER;
+      hash = (53 * hash) + getFCJBKAMOBGE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +339,6 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JHJEHIOGJDM
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryAnimalViewInfo}
      */
     public static final class Builder extends
@@ -384,11 +376,11 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jODHGJNHBDI_ = 0;
-
-        gHJANEPNHCM_ = 0;
+        kFNLEIBLKJK_ = 0;
 
         entityId_ = 0;
+
+        fCJBKAMOBGE_ = 0;
 
         return this;
       }
@@ -416,9 +408,9 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo result = new emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo(this);
-        result.jODHGJNHBDI_ = jODHGJNHBDI_;
-        result.gHJANEPNHCM_ = gHJANEPNHCM_;
+        result.kFNLEIBLKJK_ = kFNLEIBLKJK_;
         result.entityId_ = entityId_;
+        result.fCJBKAMOBGE_ = fCJBKAMOBGE_;
         onBuilt();
         return result;
       }
@@ -467,14 +459,14 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryAnimalViewInfoOuterClass.SceneGalleryAnimalViewInfo.getDefaultInstance()) return this;
-        if (other.getJODHGJNHBDI() != 0) {
-          setJODHGJNHBDI(other.getJODHGJNHBDI());
-        }
-        if (other.getGHJANEPNHCM() != 0) {
-          setGHJANEPNHCM(other.getGHJANEPNHCM());
+        if (other.getKFNLEIBLKJK() != 0) {
+          setKFNLEIBLKJK(other.getKFNLEIBLKJK());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getFCJBKAMOBGE() != 0) {
+          setFCJBKAMOBGE(other.getFCJBKAMOBGE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,64 +497,33 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
         return this;
       }
 
-      private int jODHGJNHBDI_ ;
+      private int kFNLEIBLKJK_ ;
       /**
-       * <code>uint32 JODHGJNHBDI = 13;</code>
-       * @return The jODHGJNHBDI.
+       * <code>uint32 KFNLEIBLKJK = 3;</code>
+       * @return The kFNLEIBLKJK.
        */
       @java.lang.Override
-      public int getJODHGJNHBDI() {
-        return jODHGJNHBDI_;
+      public int getKFNLEIBLKJK() {
+        return kFNLEIBLKJK_;
       }
       /**
-       * <code>uint32 JODHGJNHBDI = 13;</code>
-       * @param value The jODHGJNHBDI to set.
+       * <code>uint32 KFNLEIBLKJK = 3;</code>
+       * @param value The kFNLEIBLKJK to set.
        * @return This builder for chaining.
        */
-      public Builder setJODHGJNHBDI(int value) {
+      public Builder setKFNLEIBLKJK(int value) {
         
-        jODHGJNHBDI_ = value;
+        kFNLEIBLKJK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JODHGJNHBDI = 13;</code>
+       * <code>uint32 KFNLEIBLKJK = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJODHGJNHBDI() {
+      public Builder clearKFNLEIBLKJK() {
         
-        jODHGJNHBDI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gHJANEPNHCM_ ;
-      /**
-       * <code>uint32 GHJANEPNHCM = 6;</code>
-       * @return The gHJANEPNHCM.
-       */
-      @java.lang.Override
-      public int getGHJANEPNHCM() {
-        return gHJANEPNHCM_;
-      }
-      /**
-       * <code>uint32 GHJANEPNHCM = 6;</code>
-       * @param value The gHJANEPNHCM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGHJANEPNHCM(int value) {
-        
-        gHJANEPNHCM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GHJANEPNHCM = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGHJANEPNHCM() {
-        
-        gHJANEPNHCM_ = 0;
+        kFNLEIBLKJK_ = 0;
         onChanged();
         return this;
       }
@@ -594,6 +555,37 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fCJBKAMOBGE_ ;
+      /**
+       * <code>uint32 FCJBKAMOBGE = 14;</code>
+       * @return The fCJBKAMOBGE.
+       */
+      @java.lang.Override
+      public int getFCJBKAMOBGE() {
+        return fCJBKAMOBGE_;
+      }
+      /**
+       * <code>uint32 FCJBKAMOBGE = 14;</code>
+       * @param value The fCJBKAMOBGE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFCJBKAMOBGE(int value) {
+        
+        fCJBKAMOBGE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FCJBKAMOBGE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFCJBKAMOBGE() {
+        
+        fCJBKAMOBGE_ = 0;
         onChanged();
         return this;
       }
@@ -665,9 +657,9 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SceneGalleryAnimalViewInfo.proto\"Y\n\032Sc" +
-      "eneGalleryAnimalViewInfo\022\023\n\013JODHGJNHBDI\030" +
-      "\r \001(\r\022\023\n\013GHJANEPNHCM\030\006 \001(\r\022\021\n\tentity_id\030" +
-      "\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "eneGalleryAnimalViewInfo\022\023\n\013KFNLEIBLKJK\030" +
+      "\003 \001(\r\022\021\n\tentity_id\030\007 \001(\r\022\023\n\013FCJBKAMOBGE\030" +
+      "\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +671,7 @@ public final class SceneGalleryAnimalViewInfoOuterClass {
     internal_static_SceneGalleryAnimalViewInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryAnimalViewInfo_descriptor,
-        new java.lang.String[] { "JODHGJNHBDI", "GHJANEPNHCM", "EntityId", });
+        new java.lang.String[] { "KFNLEIBLKJK", "EntityId", "FCJBKAMOBGE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,15 +19,14 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 active_region_index = 11;</code>
+     * <code>uint32 active_region_index = 7;</code>
      * @return The activeRegionIndex.
      */
     int getActiveRegionIndex();
   }
   /**
    * <pre>
-   * CmdId: 20683
-   * Obf: CFEOAHDEJFD
+   * CmdId: 26183
    * </pre>
    *
    * Protobuf type {@code TreasureMapRegionActiveNotify}
@@ -74,7 +73,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
               activeRegionIndex_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapRegionActiveNotifyOuterClass.TreasureMapRegionActiveNotify.class, emu.grasscutter.net.proto.TreasureMapRegionActiveNotifyOuterClass.TreasureMapRegionActiveNotify.Builder.class);
     }
 
-    public static final int ACTIVE_REGION_INDEX_FIELD_NUMBER = 11;
+    public static final int ACTIVE_REGION_INDEX_FIELD_NUMBER = 7;
     private int activeRegionIndex_;
     /**
-     * <code>uint32 active_region_index = 11;</code>
+     * <code>uint32 active_region_index = 7;</code>
      * @return The activeRegionIndex.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activeRegionIndex_ != 0) {
-        output.writeUInt32(11, activeRegionIndex_);
+        output.writeUInt32(7, activeRegionIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
       size = 0;
       if (activeRegionIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, activeRegionIndex_);
+          .computeUInt32Size(7, activeRegionIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20683
-     * Obf: CFEOAHDEJFD
+     * CmdId: 26183
      * </pre>
      *
      * Protobuf type {@code TreasureMapRegionActiveNotify}
@@ -431,7 +429,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
 
       private int activeRegionIndex_ ;
       /**
-       * <code>uint32 active_region_index = 11;</code>
+       * <code>uint32 active_region_index = 7;</code>
        * @return The activeRegionIndex.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
         return activeRegionIndex_;
       }
       /**
-       * <code>uint32 active_region_index = 11;</code>
+       * <code>uint32 active_region_index = 7;</code>
        * @param value The activeRegionIndex to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 active_region_index = 11;</code>
+       * <code>uint32 active_region_index = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearActiveRegionIndex() {
@@ -528,7 +526,7 @@ public final class TreasureMapRegionActiveNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#TreasureMapRegionActiveNotify.proto\"<\n" +
       "\035TreasureMapRegionActiveNotify\022\033\n\023active" +
-      "_region_index\030\013 \001(\rB\033\n\031emu.grasscutter.n" +
+      "_region_index\030\007 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

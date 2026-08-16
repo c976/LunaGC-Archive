@@ -19,34 +19,46 @@ public final class BalloonPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 combo = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 combo = 3;</code>
      * @return The combo.
      */
     int getCombo();
 
     /**
-     * <code>uint32 cur_score = 1;</code>
-     * @return The curScore.
-     */
-    int getCurScore();
-
-    /**
-     * <code>uint32 uid = 2;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 combo_disable_time = 9;</code>
      * @return The comboDisableTime.
      */
     int getComboDisableTime();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 8;</code>
+     * @return The jDHJCMECLOI.
+     */
+    int getJDHJCMECLOI();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 uid = 13;</code>
+     * @return The uid.
+     */
+    int getUid();
   }
   /**
-   * <pre>
-   * Obf: OMONEEAGDLE
-   * </pre>
-   *
    * Protobuf type {@code BalloonPlayerInfo}
    */
   public static final class BalloonPlayerInfo extends
@@ -91,14 +103,14 @@ public final class BalloonPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              curScore_ = input.readUInt32();
+              combo_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 64: {
 
-              uid_ = input.readUInt32();
+              jDHJCMECLOI_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -106,9 +118,9 @@ public final class BalloonPlayerInfoOuterClass {
               comboDisableTime_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
-              combo_ = input.readUInt32();
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,10 +155,14 @@ public final class BalloonPlayerInfoOuterClass {
               emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo.class, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo.Builder.class);
     }
 
-    public static final int COMBO_FIELD_NUMBER = 14;
+    public static final int COMBO_FIELD_NUMBER = 3;
     private int combo_;
     /**
-     * <code>uint32 combo = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 combo = 3;</code>
      * @return The combo.
      */
     @java.lang.Override
@@ -154,37 +170,49 @@ public final class BalloonPlayerInfoOuterClass {
       return combo_;
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 1;
-    private int curScore_;
-    /**
-     * <code>uint32 cur_score = 1;</code>
-     * @return The curScore.
-     */
-    @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 2;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 2;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
     public static final int COMBO_DISABLE_TIME_FIELD_NUMBER = 9;
     private int comboDisableTime_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 combo_disable_time = 9;</code>
      * @return The comboDisableTime.
      */
     @java.lang.Override
     public int getComboDisableTime() {
       return comboDisableTime_;
+    }
+
+    public static final int JDHJCMECLOI_FIELD_NUMBER = 8;
+    private int jDHJCMECLOI_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 JDHJCMECLOI = 8;</code>
+     * @return The jDHJCMECLOI.
+     */
+    @java.lang.Override
+    public int getJDHJCMECLOI() {
+      return jDHJCMECLOI_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 13;
+    private int uid_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 uid = 13;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class BalloonPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curScore_ != 0) {
-        output.writeUInt32(1, curScore_);
+      if (combo_ != 0) {
+        output.writeUInt32(3, combo_);
       }
-      if (uid_ != 0) {
-        output.writeUInt32(2, uid_);
+      if (jDHJCMECLOI_ != 0) {
+        output.writeUInt32(8, jDHJCMECLOI_);
       }
       if (comboDisableTime_ != 0) {
         output.writeUInt32(9, comboDisableTime_);
       }
-      if (combo_ != 0) {
-        output.writeUInt32(14, combo_);
+      if (uid_ != 0) {
+        output.writeUInt32(13, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class BalloonPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curScore_ != 0) {
+      if (combo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, curScore_);
+          .computeUInt32Size(3, combo_);
       }
-      if (uid_ != 0) {
+      if (jDHJCMECLOI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, uid_);
+          .computeUInt32Size(8, jDHJCMECLOI_);
       }
       if (comboDisableTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, comboDisableTime_);
       }
-      if (combo_ != 0) {
+      if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, combo_);
+          .computeUInt32Size(13, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,12 +283,12 @@ public final class BalloonPlayerInfoOuterClass {
 
       if (getCombo()
           != other.getCombo()) return false;
-      if (getCurScore()
-          != other.getCurScore()) return false;
-      if (getUid()
-          != other.getUid()) return false;
       if (getComboDisableTime()
           != other.getComboDisableTime()) return false;
+      if (getJDHJCMECLOI()
+          != other.getJDHJCMECLOI()) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,12 +302,12 @@ public final class BalloonPlayerInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COMBO_FIELD_NUMBER;
       hash = (53 * hash) + getCombo();
-      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScore();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + COMBO_DISABLE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getComboDisableTime();
+      hash = (37 * hash) + JDHJCMECLOI_FIELD_NUMBER;
+      hash = (53 * hash) + getJDHJCMECLOI();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +404,6 @@ public final class BalloonPlayerInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OMONEEAGDLE
-     * </pre>
-     *
      * Protobuf type {@code BalloonPlayerInfo}
      */
     public static final class Builder extends
@@ -419,11 +443,11 @@ public final class BalloonPlayerInfoOuterClass {
         super.clear();
         combo_ = 0;
 
-        curScore_ = 0;
+        comboDisableTime_ = 0;
+
+        jDHJCMECLOI_ = 0;
 
         uid_ = 0;
-
-        comboDisableTime_ = 0;
 
         return this;
       }
@@ -452,9 +476,9 @@ public final class BalloonPlayerInfoOuterClass {
       public emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo result = new emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo(this);
         result.combo_ = combo_;
-        result.curScore_ = curScore_;
-        result.uid_ = uid_;
         result.comboDisableTime_ = comboDisableTime_;
+        result.jDHJCMECLOI_ = jDHJCMECLOI_;
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -506,14 +530,14 @@ public final class BalloonPlayerInfoOuterClass {
         if (other.getCombo() != 0) {
           setCombo(other.getCombo());
         }
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
+        if (other.getComboDisableTime() != 0) {
+          setComboDisableTime(other.getComboDisableTime());
+        }
+        if (other.getJDHJCMECLOI() != 0) {
+          setJDHJCMECLOI(other.getJDHJCMECLOI());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
-        }
-        if (other.getComboDisableTime() != 0) {
-          setComboDisableTime(other.getComboDisableTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,7 +570,11 @@ public final class BalloonPlayerInfoOuterClass {
 
       private int combo_ ;
       /**
-       * <code>uint32 combo = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 combo = 3;</code>
        * @return The combo.
        */
       @java.lang.Override
@@ -554,7 +582,11 @@ public final class BalloonPlayerInfoOuterClass {
         return combo_;
       }
       /**
-       * <code>uint32 combo = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 combo = 3;</code>
        * @param value The combo to set.
        * @return This builder for chaining.
        */
@@ -565,7 +597,11 @@ public final class BalloonPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 combo = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 combo = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombo() {
@@ -575,70 +611,12 @@ public final class BalloonPlayerInfoOuterClass {
         return this;
       }
 
-      private int curScore_ ;
-      /**
-       * <code>uint32 cur_score = 1;</code>
-       * @return The curScore.
-       */
-      @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
-      }
-      /**
-       * <code>uint32 cur_score = 1;</code>
-       * @param value The curScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurScore(int value) {
-        
-        curScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurScore() {
-        
-        curScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 2;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 2;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int comboDisableTime_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 combo_disable_time = 9;</code>
        * @return The comboDisableTime.
        */
@@ -647,6 +625,10 @@ public final class BalloonPlayerInfoOuterClass {
         return comboDisableTime_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 combo_disable_time = 9;</code>
        * @param value The comboDisableTime to set.
        * @return This builder for chaining.
@@ -658,12 +640,102 @@ public final class BalloonPlayerInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 combo_disable_time = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearComboDisableTime() {
         
         comboDisableTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jDHJCMECLOI_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
+       * @return The jDHJCMECLOI.
+       */
+      @java.lang.Override
+      public int getJDHJCMECLOI() {
+        return jDHJCMECLOI_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
+       * @param value The jDHJCMECLOI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJDHJCMECLOI(int value) {
+        
+        jDHJCMECLOI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JDHJCMECLOI = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJDHJCMECLOI() {
+        
+        jDHJCMECLOI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
         onChanged();
         return this;
       }
@@ -734,10 +806,10 @@ public final class BalloonPlayerInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027BalloonPlayerInfo.proto\"^\n\021BalloonPlay" +
-      "erInfo\022\r\n\005combo\030\016 \001(\r\022\021\n\tcur_score\030\001 \001(\r" +
-      "\022\013\n\003uid\030\002 \001(\r\022\032\n\022combo_disable_time\030\t \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027BalloonPlayerInfo.proto\"`\n\021BalloonPlay" +
+      "erInfo\022\r\n\005combo\030\003 \001(\r\022\032\n\022combo_disable_t" +
+      "ime\030\t \001(\r\022\023\n\013JDHJCMECLOI\030\010 \001(\r\022\013\n\003uid\030\r " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -748,7 +820,7 @@ public final class BalloonPlayerInfoOuterClass {
     internal_static_BalloonPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BalloonPlayerInfo_descriptor,
-        new java.lang.String[] { "Combo", "CurScore", "Uid", "ComboDisableTime", });
+        new java.lang.String[] { "Combo", "ComboDisableTime", "JDHJCMECLOI", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

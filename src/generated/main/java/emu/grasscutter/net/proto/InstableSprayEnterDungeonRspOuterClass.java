@@ -19,21 +19,20 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 level_id = 2;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 25853
-   * Obf: OEEEODBDFPA
+   * CmdId: 24525
    * </pre>
    *
    * Protobuf type {@code InstableSprayEnterDungeonRsp}
@@ -80,14 +79,14 @@ public final class InstableSprayEnterDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 8: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class InstableSprayEnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp.class, emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 2;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class InstableSprayEnterDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(1, retcode_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(2, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp other = (emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class InstableSprayEnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25853
-     * Obf: OEEEODBDFPA
+     * CmdId: 24525
      * </pre>
      *
      * Protobuf type {@code InstableSprayEnterDungeonRsp}
@@ -353,9 +351,9 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         retcode_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class InstableSprayEnterDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp result = new emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp(this);
-        result.levelId_ = levelId_;
         result.retcode_ = retcode_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class InstableSprayEnterDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.InstableSprayEnterDungeonRspOuterClass.InstableSprayEnterDungeonRsp.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,9 @@ public final class InstableSprayEnterDungeonRspOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +476,7 @@ public final class InstableSprayEnterDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,12 +487,43 @@ public final class InstableSprayEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 2;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 2;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class InstableSprayEnterDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"InstableSprayEnterDungeonRsp.proto\"A\n\034" +
-      "InstableSprayEnterDungeonRsp\022\020\n\010level_id" +
-      "\030\r \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutt" +
+      "InstableSprayEnterDungeonRsp\022\017\n\007retcode\030" +
+      "\001 \001(\005\022\020\n\010level_id\030\002 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +608,7 @@ public final class InstableSprayEnterDungeonRspOuterClass {
     internal_static_InstableSprayEnterDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InstableSprayEnterDungeonRsp_descriptor,
-        new java.lang.String[] { "LevelId", "Retcode", });
+        new java.lang.String[] { "Retcode", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

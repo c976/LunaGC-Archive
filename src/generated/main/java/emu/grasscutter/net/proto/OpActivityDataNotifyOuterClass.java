@@ -19,33 +19,32 @@ public final class OpActivityDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo> 
         getOpActivityInfoListList();
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo getOpActivityInfoList(int index);
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     int getOpActivityInfoListCount();
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> 
         getOpActivityInfoListOrBuilderList();
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 7676
-   * Obf: DIKBKGBJGLE
+   * CmdId: 26820
    * </pre>
    *
    * Protobuf type {@code OpActivityDataNotify}
@@ -94,7 +93,7 @@ public final class OpActivityDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 opActivityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class OpActivityDataNotifyOuterClass {
               emu.grasscutter.net.proto.OpActivityDataNotifyOuterClass.OpActivityDataNotify.class, emu.grasscutter.net.proto.OpActivityDataNotifyOuterClass.OpActivityDataNotify.Builder.class);
     }
 
-    public static final int OP_ACTIVITY_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int OP_ACTIVITY_INFO_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo> opActivityInfoList_;
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo> getOpActivityInfoListList() {
       return opActivityInfoList_;
     }
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> 
@@ -156,21 +155,21 @@ public final class OpActivityDataNotifyOuterClass {
       return opActivityInfoList_;
     }
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     @java.lang.Override
     public int getOpActivityInfoListCount() {
       return opActivityInfoList_.size();
     }
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo getOpActivityInfoList(int index) {
       return opActivityInfoList_.get(index);
     }
     /**
-     * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+     * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoListOrBuilder(
@@ -193,7 +192,7 @@ public final class OpActivityDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < opActivityInfoList_.size(); i++) {
-        output.writeMessage(3, opActivityInfoList_.get(i));
+        output.writeMessage(15, opActivityInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class OpActivityDataNotifyOuterClass {
       size = 0;
       for (int i = 0; i < opActivityInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, opActivityInfoList_.get(i));
+          .computeMessageSize(15, opActivityInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class OpActivityDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7676
-     * Obf: DIKBKGBJGLE
+     * CmdId: 26820
      * </pre>
      *
      * Protobuf type {@code OpActivityDataNotify}
@@ -538,7 +536,7 @@ public final class OpActivityDataNotifyOuterClass {
           emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> opActivityInfoListBuilder_;
 
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo> getOpActivityInfoListList() {
         if (opActivityInfoListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class OpActivityDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public int getOpActivityInfoListCount() {
         if (opActivityInfoListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class OpActivityDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo getOpActivityInfoList(int index) {
         if (opActivityInfoListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class OpActivityDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder setOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo value) {
@@ -585,7 +583,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder setOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder addOpActivityInfoList(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo value) {
         if (opActivityInfoListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder addOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo value) {
@@ -632,7 +630,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder addOpActivityInfoList(
           emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder addOpActivityInfoList(
           int index, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder addAllOpActivityInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo> values) {
@@ -675,7 +673,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder clearOpActivityInfoList() {
         if (opActivityInfoListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public Builder removeOpActivityInfoList(int index) {
         if (opActivityInfoListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class OpActivityDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder getOpActivityInfoListBuilder(
           int index) {
         return getOpActivityInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder getOpActivityInfoListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class OpActivityDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfoOrBuilder> 
            getOpActivityInfoListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class OpActivityDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder addOpActivityInfoListBuilder() {
         return getOpActivityInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder addOpActivityInfoListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class OpActivityDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .OpActivityInfo op_activity_info_list = 3;</code>
+       * <code>repeated .OpActivityInfo op_activity_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.Builder> 
            getOpActivityInfoListBuilderList() {
@@ -833,7 +831,7 @@ public final class OpActivityDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032OpActivityDataNotify.proto\032\024OpActivity" +
       "Info.proto\"F\n\024OpActivityDataNotify\022.\n\025op" +
-      "_activity_info_list\030\003 \003(\0132\017.OpActivityIn" +
+      "_activity_info_list\030\017 \003(\0132\017.OpActivityIn" +
       "foB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

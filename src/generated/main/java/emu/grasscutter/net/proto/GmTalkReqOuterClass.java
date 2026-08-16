@@ -32,8 +32,7 @@ public final class GmTalkReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25907
-   * Obf: FEKNHGPBNMM
+   * CmdId: 21562
    * </pre>
    *
    * Protobuf type {@code GmTalkReq}
@@ -313,8 +312,7 @@ public final class GmTalkReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25907
-     * Obf: FEKNHGPBNMM
+     * CmdId: 21562
      * </pre>
      *
      * Protobuf type {@code GmTalkReq}

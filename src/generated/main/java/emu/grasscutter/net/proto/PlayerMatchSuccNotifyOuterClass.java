@@ -19,80 +19,121 @@ public final class PlayerMatchSuccNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
-     * @return Whether the generalMatchInfo field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+     * @return Whether the mDJFAKJGMEL field is set.
      */
-    boolean hasGeneralMatchInfo();
+    boolean hasMDJFAKJGMEL();
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
-     * @return The generalMatchInfo.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+     * @return The mDJFAKJGMEL.
      */
-    emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo getGeneralMatchInfo();
+    emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA getMDJFAKJGMEL();
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
      */
-    emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder getGeneralMatchInfoOrBuilder();
+    emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder getMDJFAKJGMELOrBuilder();
 
     /**
-     * <code>uint32 mp_play_id = 2;</code>
-     * @return The mpPlayId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+     * @return Whether the lPGKNHMNDEA field is set.
      */
-    int getMpPlayId();
+    boolean hasLPGKNHMNDEA();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+     * @return The lPGKNHMNDEA.
+     */
+    emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG getLPGKNHMNDEA();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+     */
+    emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder getLPGKNHMNDEAOrBuilder();
 
     /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     * @return Whether the gcgMatchInfo field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NGPLKAADCEI = 8;</code>
+     * @return The nGPLKAADCEI.
      */
-    boolean hasGcgMatchInfo();
-    /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     * @return The gcgMatchInfo.
-     */
-    emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo getGcgMatchInfo();
-    /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     */
-    emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder getGcgMatchInfoOrBuilder();
+    int getNGPLKAADCEI();
 
     /**
-     * <code>uint32 mechanicus_difficult_level = 6;</code>
-     * @return The mechanicusDifficultLevel.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.MatchType match_type = 9;</code>
+     * @return The enum numeric value on the wire for matchType.
      */
-    int getMechanicusDifficultLevel();
+    int getMatchTypeValue();
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.MatchType match_type = 9;</code>
+     * @return The matchType.
+     */
+    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
 
     /**
-     * <code>uint32 confirm_end_time = 14;</code>
-     * @return The confirmEndTime.
-     */
-    int getConfirmEndTime();
-
-    /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 host_uid = 13;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 host_uid = 6;</code>
      * @return The hostUid.
      */
     int getHostUid();
 
     /**
-     * <code>.MatchType match_type = 5;</code>
-     * @return The enum numeric value on the wire for matchType.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 ANKKNPJPPKI = 5;</code>
+     * @return The aNKKNPJPPKI.
      */
-    int getMatchTypeValue();
+    int getANKKNPJPPKI();
+
     /**
-     * <code>.MatchType match_type = 5;</code>
-     * @return The matchType.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
      */
-    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
+    int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 29434
-   * Obf: JLBLCFHLPLB
+   * CmdId: 22974
    * </pre>
    *
    * Protobuf type {@code PlayerMatchSuccNotify}
@@ -140,61 +181,56 @@ public final class PlayerMatchSuccNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder subBuilder = null;
-              if (generalMatchInfo_ != null) {
-                subBuilder = generalMatchInfo_.toBuilder();
+            case 18: {
+              emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder subBuilder = null;
+              if (lPGKNHMNDEA_ != null) {
+                subBuilder = lPGKNHMNDEA_.toBuilder();
               }
-              generalMatchInfo_ = input.readMessage(emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.parser(), extensionRegistry);
+              lPGKNHMNDEA_ = input.readMessage(emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(generalMatchInfo_);
-                generalMatchInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(lPGKNHMNDEA_);
+                lPGKNHMNDEA_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 32: {
-
-              dungeonId_ = input.readUInt32();
               break;
             }
             case 40: {
+
+              aNKKNPJPPKI_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              hostUid_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              nGPLKAADCEI_ = input.readUInt32();
+              break;
+            }
+            case 72: {
               int rawValue = input.readEnum();
 
               matchType_ = rawValue;
               break;
             }
-            case 48: {
+            case 96: {
 
-              mechanicusDifficultLevel_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
-            case 90: {
-              emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder subBuilder = null;
-              if (gcgMatchInfo_ != null) {
-                subBuilder = gcgMatchInfo_.toBuilder();
+            case 114: {
+              emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder subBuilder = null;
+              if (mDJFAKJGMEL_ != null) {
+                subBuilder = mDJFAKJGMEL_.toBuilder();
               }
-              gcgMatchInfo_ = input.readMessage(emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.parser(), extensionRegistry);
+              mDJFAKJGMEL_ = input.readMessage(emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(gcgMatchInfo_);
-                gcgMatchInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(mDJFAKJGMEL_);
+                mDJFAKJGMEL_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 104: {
-
-              hostUid_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              confirmEndTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -229,106 +265,132 @@ public final class PlayerMatchSuccNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify.class, emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify.Builder.class);
     }
 
-    public static final int GENERAL_MATCH_INFO_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo generalMatchInfo_;
+    public static final int MDJFAKJGMEL_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA mDJFAKJGMEL_;
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
-     * @return Whether the generalMatchInfo field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+     * @return Whether the mDJFAKJGMEL field is set.
      */
     @java.lang.Override
-    public boolean hasGeneralMatchInfo() {
-      return generalMatchInfo_ != null;
+    public boolean hasMDJFAKJGMEL() {
+      return mDJFAKJGMEL_ != null;
     }
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
-     * @return The generalMatchInfo.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+     * @return The mDJFAKJGMEL.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo getGeneralMatchInfo() {
-      return generalMatchInfo_ == null ? emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.getDefaultInstance() : generalMatchInfo_;
+    public emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA getMDJFAKJGMEL() {
+      return mDJFAKJGMEL_ == null ? emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.getDefaultInstance() : mDJFAKJGMEL_;
     }
     /**
-     * <code>.GeneralMatchInfo general_match_info = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder getGeneralMatchInfoOrBuilder() {
-      return getGeneralMatchInfo();
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 2;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 2;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
-    }
-
-    public static final int GCG_MATCH_INFO_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo gcgMatchInfo_;
-    /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     * @return Whether the gcgMatchInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasGcgMatchInfo() {
-      return gcgMatchInfo_ != null;
-    }
-    /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     * @return The gcgMatchInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo getGcgMatchInfo() {
-      return gcgMatchInfo_ == null ? emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.getDefaultInstance() : gcgMatchInfo_;
-    }
-    /**
-     * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder getGcgMatchInfoOrBuilder() {
-      return getGcgMatchInfo();
+    public emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder getMDJFAKJGMELOrBuilder() {
+      return getMDJFAKJGMEL();
     }
 
-    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 6;
-    private int mechanicusDifficultLevel_;
+    public static final int LPGKNHMNDEA_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG lPGKNHMNDEA_;
     /**
-     * <code>uint32 mechanicus_difficult_level = 6;</code>
-     * @return The mechanicusDifficultLevel.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+     * @return Whether the lPGKNHMNDEA field is set.
      */
     @java.lang.Override
-    public int getMechanicusDifficultLevel() {
-      return mechanicusDifficultLevel_;
+    public boolean hasLPGKNHMNDEA() {
+      return lPGKNHMNDEA_ != null;
     }
-
-    public static final int CONFIRM_END_TIME_FIELD_NUMBER = 14;
-    private int confirmEndTime_;
     /**
-     * <code>uint32 confirm_end_time = 14;</code>
-     * @return The confirmEndTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+     * @return The lPGKNHMNDEA.
      */
     @java.lang.Override
-    public int getConfirmEndTime() {
-      return confirmEndTime_;
+    public emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG getLPGKNHMNDEA() {
+      return lPGKNHMNDEA_ == null ? emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.getDefaultInstance() : lPGKNHMNDEA_;
     }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
-    private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
      */
     @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
+    public emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder getLPGKNHMNDEAOrBuilder() {
+      return getLPGKNHMNDEA();
     }
 
-    public static final int HOST_UID_FIELD_NUMBER = 13;
+    public static final int NGPLKAADCEI_FIELD_NUMBER = 8;
+    private int nGPLKAADCEI_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NGPLKAADCEI = 8;</code>
+     * @return The nGPLKAADCEI.
+     */
+    @java.lang.Override
+    public int getNGPLKAADCEI() {
+      return nGPLKAADCEI_;
+    }
+
+    public static final int MATCH_TYPE_FIELD_NUMBER = 9;
+    private int matchType_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.MatchType match_type = 9;</code>
+     * @return The enum numeric value on the wire for matchType.
+     */
+    @java.lang.Override public int getMatchTypeValue() {
+      return matchType_;
+    }
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.MatchType match_type = 9;</code>
+     * @return The matchType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
+      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
+    }
+
+    public static final int HOST_UID_FIELD_NUMBER = 6;
     private int hostUid_;
     /**
-     * <code>uint32 host_uid = 13;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 host_uid = 6;</code>
      * @return The hostUid.
      */
     @java.lang.Override
@@ -336,23 +398,34 @@ public final class PlayerMatchSuccNotifyOuterClass {
       return hostUid_;
     }
 
-    public static final int MATCH_TYPE_FIELD_NUMBER = 5;
-    private int matchType_;
+    public static final int ANKKNPJPPKI_FIELD_NUMBER = 5;
+    private int aNKKNPJPPKI_;
     /**
-     * <code>.MatchType match_type = 5;</code>
-     * @return The enum numeric value on the wire for matchType.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 ANKKNPJPPKI = 5;</code>
+     * @return The aNKKNPJPPKI.
      */
-    @java.lang.Override public int getMatchTypeValue() {
-      return matchType_;
+    @java.lang.Override
+    public int getANKKNPJPPKI() {
+      return aNKKNPJPPKI_;
     }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
+    private int dungeonId_;
     /**
-     * <code>.MatchType match_type = 5;</code>
-     * @return The matchType.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
-      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -369,29 +442,26 @@ public final class PlayerMatchSuccNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(2, mpPlayId_);
+      if (lPGKNHMNDEA_ != null) {
+        output.writeMessage(2, getLPGKNHMNDEA());
       }
-      if (generalMatchInfo_ != null) {
-        output.writeMessage(3, getGeneralMatchInfo());
-      }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
-      }
-      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(5, matchType_);
-      }
-      if (mechanicusDifficultLevel_ != 0) {
-        output.writeUInt32(6, mechanicusDifficultLevel_);
-      }
-      if (gcgMatchInfo_ != null) {
-        output.writeMessage(11, getGcgMatchInfo());
+      if (aNKKNPJPPKI_ != 0) {
+        output.writeUInt32(5, aNKKNPJPPKI_);
       }
       if (hostUid_ != 0) {
-        output.writeUInt32(13, hostUid_);
+        output.writeUInt32(6, hostUid_);
       }
-      if (confirmEndTime_ != 0) {
-        output.writeUInt32(14, confirmEndTime_);
+      if (nGPLKAADCEI_ != 0) {
+        output.writeUInt32(8, nGPLKAADCEI_);
+      }
+      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
+        output.writeEnum(9, matchType_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(12, dungeonId_);
+      }
+      if (mDJFAKJGMEL_ != null) {
+        output.writeMessage(14, getMDJFAKJGMEL());
       }
       unknownFields.writeTo(output);
     }
@@ -402,37 +472,33 @@ public final class PlayerMatchSuccNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mpPlayId_ != 0) {
+      if (lPGKNHMNDEA_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, mpPlayId_);
+          .computeMessageSize(2, getLPGKNHMNDEA());
       }
-      if (generalMatchInfo_ != null) {
+      if (aNKKNPJPPKI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getGeneralMatchInfo());
-      }
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
-      }
-      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, matchType_);
-      }
-      if (mechanicusDifficultLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, mechanicusDifficultLevel_);
-      }
-      if (gcgMatchInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getGcgMatchInfo());
+          .computeUInt32Size(5, aNKKNPJPPKI_);
       }
       if (hostUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hostUid_);
+          .computeUInt32Size(6, hostUid_);
       }
-      if (confirmEndTime_ != 0) {
+      if (nGPLKAADCEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, confirmEndTime_);
+          .computeUInt32Size(8, nGPLKAADCEI_);
+      }
+      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(9, matchType_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, dungeonId_);
+      }
+      if (mDJFAKJGMEL_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getMDJFAKJGMEL());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -449,27 +515,25 @@ public final class PlayerMatchSuccNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify other = (emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify) obj;
 
-      if (hasGeneralMatchInfo() != other.hasGeneralMatchInfo()) return false;
-      if (hasGeneralMatchInfo()) {
-        if (!getGeneralMatchInfo()
-            .equals(other.getGeneralMatchInfo())) return false;
+      if (hasMDJFAKJGMEL() != other.hasMDJFAKJGMEL()) return false;
+      if (hasMDJFAKJGMEL()) {
+        if (!getMDJFAKJGMEL()
+            .equals(other.getMDJFAKJGMEL())) return false;
       }
-      if (getMpPlayId()
-          != other.getMpPlayId()) return false;
-      if (hasGcgMatchInfo() != other.hasGcgMatchInfo()) return false;
-      if (hasGcgMatchInfo()) {
-        if (!getGcgMatchInfo()
-            .equals(other.getGcgMatchInfo())) return false;
+      if (hasLPGKNHMNDEA() != other.hasLPGKNHMNDEA()) return false;
+      if (hasLPGKNHMNDEA()) {
+        if (!getLPGKNHMNDEA()
+            .equals(other.getLPGKNHMNDEA())) return false;
       }
-      if (getMechanicusDifficultLevel()
-          != other.getMechanicusDifficultLevel()) return false;
-      if (getConfirmEndTime()
-          != other.getConfirmEndTime()) return false;
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
+      if (getNGPLKAADCEI()
+          != other.getNGPLKAADCEI()) return false;
+      if (matchType_ != other.matchType_) return false;
       if (getHostUid()
           != other.getHostUid()) return false;
-      if (matchType_ != other.matchType_) return false;
+      if (getANKKNPJPPKI()
+          != other.getANKKNPJPPKI()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -481,26 +545,24 @@ public final class PlayerMatchSuccNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasGeneralMatchInfo()) {
-        hash = (37 * hash) + GENERAL_MATCH_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getGeneralMatchInfo().hashCode();
+      if (hasMDJFAKJGMEL()) {
+        hash = (37 * hash) + MDJFAKJGMEL_FIELD_NUMBER;
+        hash = (53 * hash) + getMDJFAKJGMEL().hashCode();
       }
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
-      if (hasGcgMatchInfo()) {
-        hash = (37 * hash) + GCG_MATCH_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getGcgMatchInfo().hashCode();
+      if (hasLPGKNHMNDEA()) {
+        hash = (37 * hash) + LPGKNHMNDEA_FIELD_NUMBER;
+        hash = (53 * hash) + getLPGKNHMNDEA().hashCode();
       }
-      hash = (37 * hash) + MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusDifficultLevel();
-      hash = (37 * hash) + CONFIRM_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getConfirmEndTime();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + HOST_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getHostUid();
+      hash = (37 * hash) + NGPLKAADCEI_FIELD_NUMBER;
+      hash = (53 * hash) + getNGPLKAADCEI();
       hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + HOST_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getHostUid();
+      hash = (37 * hash) + ANKKNPJPPKI_FIELD_NUMBER;
+      hash = (53 * hash) + getANKKNPJPPKI();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -598,8 +660,7 @@ public final class PlayerMatchSuccNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29434
-     * Obf: JLBLCFHLPLB
+     * CmdId: 22974
      * </pre>
      *
      * Protobuf type {@code PlayerMatchSuccNotify}
@@ -639,29 +700,27 @@ public final class PlayerMatchSuccNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (generalMatchInfoBuilder_ == null) {
-          generalMatchInfo_ = null;
+        if (mDJFAKJGMELBuilder_ == null) {
+          mDJFAKJGMEL_ = null;
         } else {
-          generalMatchInfo_ = null;
-          generalMatchInfoBuilder_ = null;
+          mDJFAKJGMEL_ = null;
+          mDJFAKJGMELBuilder_ = null;
         }
-        mpPlayId_ = 0;
-
-        if (gcgMatchInfoBuilder_ == null) {
-          gcgMatchInfo_ = null;
+        if (lPGKNHMNDEABuilder_ == null) {
+          lPGKNHMNDEA_ = null;
         } else {
-          gcgMatchInfo_ = null;
-          gcgMatchInfoBuilder_ = null;
+          lPGKNHMNDEA_ = null;
+          lPGKNHMNDEABuilder_ = null;
         }
-        mechanicusDifficultLevel_ = 0;
+        nGPLKAADCEI_ = 0;
 
-        confirmEndTime_ = 0;
-
-        dungeonId_ = 0;
+        matchType_ = 0;
 
         hostUid_ = 0;
 
-        matchType_ = 0;
+        aNKKNPJPPKI_ = 0;
+
+        dungeonId_ = 0;
 
         return this;
       }
@@ -689,22 +748,21 @@ public final class PlayerMatchSuccNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify result = new emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify(this);
-        if (generalMatchInfoBuilder_ == null) {
-          result.generalMatchInfo_ = generalMatchInfo_;
+        if (mDJFAKJGMELBuilder_ == null) {
+          result.mDJFAKJGMEL_ = mDJFAKJGMEL_;
         } else {
-          result.generalMatchInfo_ = generalMatchInfoBuilder_.build();
+          result.mDJFAKJGMEL_ = mDJFAKJGMELBuilder_.build();
         }
-        result.mpPlayId_ = mpPlayId_;
-        if (gcgMatchInfoBuilder_ == null) {
-          result.gcgMatchInfo_ = gcgMatchInfo_;
+        if (lPGKNHMNDEABuilder_ == null) {
+          result.lPGKNHMNDEA_ = lPGKNHMNDEA_;
         } else {
-          result.gcgMatchInfo_ = gcgMatchInfoBuilder_.build();
+          result.lPGKNHMNDEA_ = lPGKNHMNDEABuilder_.build();
         }
-        result.mechanicusDifficultLevel_ = mechanicusDifficultLevel_;
-        result.confirmEndTime_ = confirmEndTime_;
-        result.dungeonId_ = dungeonId_;
-        result.hostUid_ = hostUid_;
+        result.nGPLKAADCEI_ = nGPLKAADCEI_;
         result.matchType_ = matchType_;
+        result.hostUid_ = hostUid_;
+        result.aNKKNPJPPKI_ = aNKKNPJPPKI_;
+        result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
       }
@@ -753,29 +811,26 @@ public final class PlayerMatchSuccNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerMatchSuccNotifyOuterClass.PlayerMatchSuccNotify.getDefaultInstance()) return this;
-        if (other.hasGeneralMatchInfo()) {
-          mergeGeneralMatchInfo(other.getGeneralMatchInfo());
+        if (other.hasMDJFAKJGMEL()) {
+          mergeMDJFAKJGMEL(other.getMDJFAKJGMEL());
         }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
+        if (other.hasLPGKNHMNDEA()) {
+          mergeLPGKNHMNDEA(other.getLPGKNHMNDEA());
         }
-        if (other.hasGcgMatchInfo()) {
-          mergeGcgMatchInfo(other.getGcgMatchInfo());
+        if (other.getNGPLKAADCEI() != 0) {
+          setNGPLKAADCEI(other.getNGPLKAADCEI());
         }
-        if (other.getMechanicusDifficultLevel() != 0) {
-          setMechanicusDifficultLevel(other.getMechanicusDifficultLevel());
-        }
-        if (other.getConfirmEndTime() != 0) {
-          setConfirmEndTime(other.getConfirmEndTime());
-        }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
+        if (other.matchType_ != 0) {
+          setMatchTypeValue(other.getMatchTypeValue());
         }
         if (other.getHostUid() != 0) {
           setHostUid(other.getHostUid());
         }
-        if (other.matchType_ != 0) {
-          setMatchTypeValue(other.getMatchTypeValue());
+        if (other.getANKKNPJPPKI() != 0) {
+          setANKKNPJPPKI(other.getANKKNPJPPKI());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -806,409 +861,377 @@ public final class PlayerMatchSuccNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo generalMatchInfo_;
+      private emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA mDJFAKJGMEL_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder> generalMatchInfoBuilder_;
+          emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder> mDJFAKJGMELBuilder_;
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
-       * @return Whether the generalMatchInfo field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+       * @return Whether the mDJFAKJGMEL field is set.
        */
-      public boolean hasGeneralMatchInfo() {
-        return generalMatchInfoBuilder_ != null || generalMatchInfo_ != null;
+      public boolean hasMDJFAKJGMEL() {
+        return mDJFAKJGMELBuilder_ != null || mDJFAKJGMEL_ != null;
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
-       * @return The generalMatchInfo.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
+       * @return The mDJFAKJGMEL.
        */
-      public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo getGeneralMatchInfo() {
-        if (generalMatchInfoBuilder_ == null) {
-          return generalMatchInfo_ == null ? emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.getDefaultInstance() : generalMatchInfo_;
+      public emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA getMDJFAKJGMEL() {
+        if (mDJFAKJGMELBuilder_ == null) {
+          return mDJFAKJGMEL_ == null ? emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.getDefaultInstance() : mDJFAKJGMEL_;
         } else {
-          return generalMatchInfoBuilder_.getMessage();
+          return mDJFAKJGMELBuilder_.getMessage();
         }
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public Builder setGeneralMatchInfo(emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo value) {
-        if (generalMatchInfoBuilder_ == null) {
+      public Builder setMDJFAKJGMEL(emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA value) {
+        if (mDJFAKJGMELBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          generalMatchInfo_ = value;
+          mDJFAKJGMEL_ = value;
           onChanged();
         } else {
-          generalMatchInfoBuilder_.setMessage(value);
+          mDJFAKJGMELBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public Builder setGeneralMatchInfo(
-          emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder builderForValue) {
-        if (generalMatchInfoBuilder_ == null) {
-          generalMatchInfo_ = builderForValue.build();
+      public Builder setMDJFAKJGMEL(
+          emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder builderForValue) {
+        if (mDJFAKJGMELBuilder_ == null) {
+          mDJFAKJGMEL_ = builderForValue.build();
           onChanged();
         } else {
-          generalMatchInfoBuilder_.setMessage(builderForValue.build());
+          mDJFAKJGMELBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public Builder mergeGeneralMatchInfo(emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo value) {
-        if (generalMatchInfoBuilder_ == null) {
-          if (generalMatchInfo_ != null) {
-            generalMatchInfo_ =
-              emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.newBuilder(generalMatchInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeMDJFAKJGMEL(emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA value) {
+        if (mDJFAKJGMELBuilder_ == null) {
+          if (mDJFAKJGMEL_ != null) {
+            mDJFAKJGMEL_ =
+              emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.newBuilder(mDJFAKJGMEL_).mergeFrom(value).buildPartial();
           } else {
-            generalMatchInfo_ = value;
+            mDJFAKJGMEL_ = value;
           }
           onChanged();
         } else {
-          generalMatchInfoBuilder_.mergeFrom(value);
+          mDJFAKJGMELBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public Builder clearGeneralMatchInfo() {
-        if (generalMatchInfoBuilder_ == null) {
-          generalMatchInfo_ = null;
+      public Builder clearMDJFAKJGMEL() {
+        if (mDJFAKJGMELBuilder_ == null) {
+          mDJFAKJGMEL_ = null;
           onChanged();
         } else {
-          generalMatchInfo_ = null;
-          generalMatchInfoBuilder_ = null;
+          mDJFAKJGMEL_ = null;
+          mDJFAKJGMELBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder getGeneralMatchInfoBuilder() {
+      public emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder getMDJFAKJGMELBuilder() {
         
         onChanged();
-        return getGeneralMatchInfoFieldBuilder().getBuilder();
+        return getMDJFAKJGMELFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
-      public emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder getGeneralMatchInfoOrBuilder() {
-        if (generalMatchInfoBuilder_ != null) {
-          return generalMatchInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder getMDJFAKJGMELOrBuilder() {
+        if (mDJFAKJGMELBuilder_ != null) {
+          return mDJFAKJGMELBuilder_.getMessageOrBuilder();
         } else {
-          return generalMatchInfo_ == null ?
-              emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.getDefaultInstance() : generalMatchInfo_;
+          return mDJFAKJGMEL_ == null ?
+              emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.getDefaultInstance() : mDJFAKJGMEL_;
         }
       }
       /**
-       * <code>.GeneralMatchInfo general_match_info = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.HDDDKBJAAIA MDJFAKJGMEL = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder> 
-          getGeneralMatchInfoFieldBuilder() {
-        if (generalMatchInfoBuilder_ == null) {
-          generalMatchInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfo.Builder, emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.GeneralMatchInfoOrBuilder>(
-                  getGeneralMatchInfo(),
+          emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder> 
+          getMDJFAKJGMELFieldBuilder() {
+        if (mDJFAKJGMELBuilder_ == null) {
+          mDJFAKJGMELBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIA.Builder, emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.HDDDKBJAAIAOrBuilder>(
+                  getMDJFAKJGMEL(),
                   getParentForChildren(),
                   isClean());
-          generalMatchInfo_ = null;
+          mDJFAKJGMEL_ = null;
         }
-        return generalMatchInfoBuilder_;
+        return mDJFAKJGMELBuilder_;
       }
 
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo gcgMatchInfo_;
+      private emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG lPGKNHMNDEA_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder> gcgMatchInfoBuilder_;
+          emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder> lPGKNHMNDEABuilder_;
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-       * @return Whether the gcgMatchInfo field is set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+       * @return Whether the lPGKNHMNDEA field is set.
        */
-      public boolean hasGcgMatchInfo() {
-        return gcgMatchInfoBuilder_ != null || gcgMatchInfo_ != null;
+      public boolean hasLPGKNHMNDEA() {
+        return lPGKNHMNDEABuilder_ != null || lPGKNHMNDEA_ != null;
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
-       * @return The gcgMatchInfo.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
+       * @return The lPGKNHMNDEA.
        */
-      public emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo getGcgMatchInfo() {
-        if (gcgMatchInfoBuilder_ == null) {
-          return gcgMatchInfo_ == null ? emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.getDefaultInstance() : gcgMatchInfo_;
+      public emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG getLPGKNHMNDEA() {
+        if (lPGKNHMNDEABuilder_ == null) {
+          return lPGKNHMNDEA_ == null ? emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.getDefaultInstance() : lPGKNHMNDEA_;
         } else {
-          return gcgMatchInfoBuilder_.getMessage();
+          return lPGKNHMNDEABuilder_.getMessage();
         }
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public Builder setGcgMatchInfo(emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo value) {
-        if (gcgMatchInfoBuilder_ == null) {
+      public Builder setLPGKNHMNDEA(emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG value) {
+        if (lPGKNHMNDEABuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          gcgMatchInfo_ = value;
+          lPGKNHMNDEA_ = value;
           onChanged();
         } else {
-          gcgMatchInfoBuilder_.setMessage(value);
+          lPGKNHMNDEABuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public Builder setGcgMatchInfo(
-          emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder builderForValue) {
-        if (gcgMatchInfoBuilder_ == null) {
-          gcgMatchInfo_ = builderForValue.build();
+      public Builder setLPGKNHMNDEA(
+          emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder builderForValue) {
+        if (lPGKNHMNDEABuilder_ == null) {
+          lPGKNHMNDEA_ = builderForValue.build();
           onChanged();
         } else {
-          gcgMatchInfoBuilder_.setMessage(builderForValue.build());
+          lPGKNHMNDEABuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public Builder mergeGcgMatchInfo(emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo value) {
-        if (gcgMatchInfoBuilder_ == null) {
-          if (gcgMatchInfo_ != null) {
-            gcgMatchInfo_ =
-              emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.newBuilder(gcgMatchInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeLPGKNHMNDEA(emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG value) {
+        if (lPGKNHMNDEABuilder_ == null) {
+          if (lPGKNHMNDEA_ != null) {
+            lPGKNHMNDEA_ =
+              emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.newBuilder(lPGKNHMNDEA_).mergeFrom(value).buildPartial();
           } else {
-            gcgMatchInfo_ = value;
+            lPGKNHMNDEA_ = value;
           }
           onChanged();
         } else {
-          gcgMatchInfoBuilder_.mergeFrom(value);
+          lPGKNHMNDEABuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public Builder clearGcgMatchInfo() {
-        if (gcgMatchInfoBuilder_ == null) {
-          gcgMatchInfo_ = null;
+      public Builder clearLPGKNHMNDEA() {
+        if (lPGKNHMNDEABuilder_ == null) {
+          lPGKNHMNDEA_ = null;
           onChanged();
         } else {
-          gcgMatchInfo_ = null;
-          gcgMatchInfoBuilder_ = null;
+          lPGKNHMNDEA_ = null;
+          lPGKNHMNDEABuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder getGcgMatchInfoBuilder() {
+      public emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder getLPGKNHMNDEABuilder() {
         
         onChanged();
-        return getGcgMatchInfoFieldBuilder().getBuilder();
+        return getLPGKNHMNDEAFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
-      public emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder getGcgMatchInfoOrBuilder() {
-        if (gcgMatchInfoBuilder_ != null) {
-          return gcgMatchInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder getLPGKNHMNDEAOrBuilder() {
+        if (lPGKNHMNDEABuilder_ != null) {
+          return lPGKNHMNDEABuilder_.getMessageOrBuilder();
         } else {
-          return gcgMatchInfo_ == null ?
-              emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.getDefaultInstance() : gcgMatchInfo_;
+          return lPGKNHMNDEA_ == null ?
+              emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.getDefaultInstance() : lPGKNHMNDEA_;
         }
       }
       /**
-       * <code>.GCGMatchInfo gcg_match_info = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.DDCHNCGADPG LPGKNHMNDEA = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder> 
-          getGcgMatchInfoFieldBuilder() {
-        if (gcgMatchInfoBuilder_ == null) {
-          gcgMatchInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfo.Builder, emu.grasscutter.net.proto.GCGMatchInfoOuterClass.GCGMatchInfoOrBuilder>(
-                  getGcgMatchInfo(),
+          emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder> 
+          getLPGKNHMNDEAFieldBuilder() {
+        if (lPGKNHMNDEABuilder_ == null) {
+          lPGKNHMNDEABuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPG.Builder, emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.DDCHNCGADPGOrBuilder>(
+                  getLPGKNHMNDEA(),
                   getParentForChildren(),
                   isClean());
-          gcgMatchInfo_ = null;
+          lPGKNHMNDEA_ = null;
         }
-        return gcgMatchInfoBuilder_;
+        return lPGKNHMNDEABuilder_;
       }
 
-      private int mechanicusDifficultLevel_ ;
+      private int nGPLKAADCEI_ ;
       /**
-       * <code>uint32 mechanicus_difficult_level = 6;</code>
-       * @return The mechanicusDifficultLevel.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 8;</code>
+       * @return The nGPLKAADCEI.
        */
       @java.lang.Override
-      public int getMechanicusDifficultLevel() {
-        return mechanicusDifficultLevel_;
+      public int getNGPLKAADCEI() {
+        return nGPLKAADCEI_;
       }
       /**
-       * <code>uint32 mechanicus_difficult_level = 6;</code>
-       * @param value The mechanicusDifficultLevel to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 8;</code>
+       * @param value The nGPLKAADCEI to set.
        * @return This builder for chaining.
        */
-      public Builder setMechanicusDifficultLevel(int value) {
+      public Builder setNGPLKAADCEI(int value) {
         
-        mechanicusDifficultLevel_ = value;
+        nGPLKAADCEI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mechanicus_difficult_level = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMechanicusDifficultLevel() {
+      public Builder clearNGPLKAADCEI() {
         
-        mechanicusDifficultLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int confirmEndTime_ ;
-      /**
-       * <code>uint32 confirm_end_time = 14;</code>
-       * @return The confirmEndTime.
-       */
-      @java.lang.Override
-      public int getConfirmEndTime() {
-        return confirmEndTime_;
-      }
-      /**
-       * <code>uint32 confirm_end_time = 14;</code>
-       * @param value The confirmEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfirmEndTime(int value) {
-        
-        confirmEndTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 confirm_end_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfirmEndTime() {
-        
-        confirmEndTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hostUid_ ;
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @return The hostUid.
-       */
-      @java.lang.Override
-      public int getHostUid() {
-        return hostUid_;
-      }
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @param value The hostUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostUid(int value) {
-        
-        hostUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHostUid() {
-        
-        hostUid_ = 0;
+        nGPLKAADCEI_ = 0;
         onChanged();
         return this;
       }
 
       private int matchType_ = 0;
       /**
-       * <code>.MatchType match_type = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.MatchType match_type = 9;</code>
        * @return The enum numeric value on the wire for matchType.
        */
       @java.lang.Override public int getMatchTypeValue() {
         return matchType_;
       }
       /**
-       * <code>.MatchType match_type = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.MatchType match_type = 9;</code>
        * @param value The enum numeric value on the wire for matchType to set.
        * @return This builder for chaining.
        */
@@ -1219,7 +1242,11 @@ public final class PlayerMatchSuccNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.MatchType match_type = 9;</code>
        * @return The matchType.
        */
       @java.lang.Override
@@ -1229,7 +1256,11 @@ public final class PlayerMatchSuccNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchType match_type = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.MatchType match_type = 9;</code>
        * @param value The matchType to set.
        * @return This builder for chaining.
        */
@@ -1243,12 +1274,145 @@ public final class PlayerMatchSuccNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.MatchType match_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchType() {
         
         matchType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hostUid_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 host_uid = 6;</code>
+       * @return The hostUid.
+       */
+      @java.lang.Override
+      public int getHostUid() {
+        return hostUid_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 host_uid = 6;</code>
+       * @param value The hostUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostUid(int value) {
+        
+        hostUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 host_uid = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHostUid() {
+        
+        hostUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aNKKNPJPPKI_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 ANKKNPJPPKI = 5;</code>
+       * @return The aNKKNPJPPKI.
+       */
+      @java.lang.Override
+      public int getANKKNPJPPKI() {
+        return aNKKNPJPPKI_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 ANKKNPJPPKI = 5;</code>
+       * @param value The aNKKNPJPPKI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setANKKNPJPPKI(int value) {
+        
+        aNKKNPJPPKI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 ANKKNPJPPKI = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearANKKNPJPPKI() {
+        
+        aNKKNPJPPKI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 12;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -1319,22 +1483,21 @@ public final class PlayerMatchSuccNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033PlayerMatchSuccNotify.proto\032\026GeneralMa" +
-      "tchInfo.proto\032\022GCGMatchInfo.proto\032\017Match" +
-      "Type.proto\"\205\002\n\025PlayerMatchSuccNotify\022-\n\022" +
-      "general_match_info\030\003 \001(\0132\021.GeneralMatchI" +
-      "nfo\022\022\n\nmp_play_id\030\002 \001(\r\022%\n\016gcg_match_inf" +
-      "o\030\013 \001(\0132\r.GCGMatchInfo\022\"\n\032mechanicus_dif" +
-      "ficult_level\030\006 \001(\r\022\030\n\020confirm_end_time\030\016" +
-      " \001(\r\022\022\n\ndungeon_id\030\004 \001(\r\022\020\n\010host_uid\030\r \001" +
-      "(\r\022\036\n\nmatch_type\030\005 \001(\0162\n.MatchTypeB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\033PlayerMatchSuccNotify.proto\032\021DDCHNCGAD" +
+      "PG.proto\032\021HDDDKBJAAIA.proto\032\017MatchType.p" +
+      "roto\"\315\001\n\025PlayerMatchSuccNotify\022!\n\013MDJFAK" +
+      "JGMEL\030\016 \001(\0132\014.HDDDKBJAAIA\022!\n\013LPGKNHMNDEA" +
+      "\030\002 \001(\0132\014.DDCHNCGADPG\022\023\n\013NGPLKAADCEI\030\010 \001(" +
+      "\r\022\036\n\nmatch_type\030\t \001(\0162\n.MatchType\022\020\n\010hos" +
+      "t_uid\030\006 \001(\r\022\023\n\013ANKKNPJPPKI\030\005 \001(\r\022\022\n\ndung" +
+      "eon_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMatchInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor(),
         });
     internal_static_PlayerMatchSuccNotify_descriptor =
@@ -1342,9 +1505,9 @@ public final class PlayerMatchSuccNotifyOuterClass {
     internal_static_PlayerMatchSuccNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMatchSuccNotify_descriptor,
-        new java.lang.String[] { "GeneralMatchInfo", "MpPlayId", "GcgMatchInfo", "MechanicusDifficultLevel", "ConfirmEndTime", "DungeonId", "HostUid", "MatchType", });
-    emu.grasscutter.net.proto.GeneralMatchInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMatchInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "MDJFAKJGMEL", "LPGKNHMNDEA", "NGPLKAADCEI", "MatchType", "HostUid", "ANKKNPJPPKI", "DungeonId", });
+    emu.grasscutter.net.proto.DDCHNCGADPGOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HDDDKBJAAIAOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
   }
 

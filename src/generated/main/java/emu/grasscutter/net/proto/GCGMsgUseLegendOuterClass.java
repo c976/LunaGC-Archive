@@ -19,28 +19,36 @@ public final class GCGMsgUseLegendOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 controller_id = 13;</code>
+     * @return The controllerId.
+     */
+    int getControllerId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool unk_38_40_FILKLCKODNB = 1;</code>
+     * @return The unk3840FILKLCKODNB.
+     */
+    boolean getUnk3840FILKLCKODNB();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 card_guid = 11;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
-
-    /**
-     * <code>bool FILKLCKODNB = 14;</code>
-     * @return The fILKLCKODNB.
-     */
-    boolean getFILKLCKODNB();
-
-    /**
-     * <code>uint32 controller_id = 12;</code>
-     * @return The controllerId.
-     */
-    int getControllerId();
   }
   /**
-   * <pre>
-   * Obf: CNABKONBCHD
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgUseLegend}
    */
   public static final class GCGMsgUseLegend extends
@@ -85,19 +93,19 @@ public final class GCGMsgUseLegendOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              unk3840FILKLCKODNB_ = input.readBool();
+              break;
+            }
             case 88: {
 
               cardGuid_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               controllerId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              fILKLCKODNB_ = input.readBool();
               break;
             }
             default: {
@@ -132,37 +140,49 @@ public final class GCGMsgUseLegendOuterClass {
               emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend.class, emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend.Builder.class);
     }
 
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
+    private int controllerId_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 controller_id = 13;</code>
+     * @return The controllerId.
+     */
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
+    }
+
+    public static final int UNK_38_40_FILKLCKODNB_FIELD_NUMBER = 1;
+    private boolean unk3840FILKLCKODNB_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool unk_38_40_FILKLCKODNB = 1;</code>
+     * @return The unk3840FILKLCKODNB.
+     */
+    @java.lang.Override
+    public boolean getUnk3840FILKLCKODNB() {
+      return unk3840FILKLCKODNB_;
+    }
+
     public static final int CARD_GUID_FIELD_NUMBER = 11;
     private int cardGuid_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 card_guid = 11;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
     public int getCardGuid() {
       return cardGuid_;
-    }
-
-    public static final int FILKLCKODNB_FIELD_NUMBER = 14;
-    private boolean fILKLCKODNB_;
-    /**
-     * <code>bool FILKLCKODNB = 14;</code>
-     * @return The fILKLCKODNB.
-     */
-    @java.lang.Override
-    public boolean getFILKLCKODNB() {
-      return fILKLCKODNB_;
-    }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 12;
-    private int controllerId_;
-    /**
-     * <code>uint32 controller_id = 12;</code>
-     * @return The controllerId.
-     */
-    @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +199,14 @@ public final class GCGMsgUseLegendOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3840FILKLCKODNB_ != false) {
+        output.writeBool(1, unk3840FILKLCKODNB_);
+      }
       if (cardGuid_ != 0) {
         output.writeUInt32(11, cardGuid_);
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(12, controllerId_);
-      }
-      if (fILKLCKODNB_ != false) {
-        output.writeBool(14, fILKLCKODNB_);
+        output.writeUInt32(13, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +217,17 @@ public final class GCGMsgUseLegendOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3840FILKLCKODNB_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, unk3840FILKLCKODNB_);
+      }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, cardGuid_);
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, controllerId_);
-      }
-      if (fILKLCKODNB_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, fILKLCKODNB_);
+          .computeUInt32Size(13, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class GCGMsgUseLegendOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend other = (emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend) obj;
 
-      if (getCardGuid()
-          != other.getCardGuid()) return false;
-      if (getFILKLCKODNB()
-          != other.getFILKLCKODNB()) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
+      if (getUnk3840FILKLCKODNB()
+          != other.getUnk3840FILKLCKODNB()) return false;
+      if (getCardGuid()
+          != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +261,13 @@ public final class GCGMsgUseLegendOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardGuid();
-      hash = (37 * hash) + FILKLCKODNB_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFILKLCKODNB());
       hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + UNK_38_40_FILKLCKODNB_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUnk3840FILKLCKODNB());
+      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +364,6 @@ public final class GCGMsgUseLegendOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CNABKONBCHD
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgUseLegend}
      */
     public static final class Builder extends
@@ -385,11 +401,11 @@ public final class GCGMsgUseLegendOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardGuid_ = 0;
-
-        fILKLCKODNB_ = false;
-
         controllerId_ = 0;
+
+        unk3840FILKLCKODNB_ = false;
+
+        cardGuid_ = 0;
 
         return this;
       }
@@ -417,9 +433,9 @@ public final class GCGMsgUseLegendOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend buildPartial() {
         emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend result = new emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend(this);
-        result.cardGuid_ = cardGuid_;
-        result.fILKLCKODNB_ = fILKLCKODNB_;
         result.controllerId_ = controllerId_;
+        result.unk3840FILKLCKODNB_ = unk3840FILKLCKODNB_;
+        result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
       }
@@ -468,14 +484,14 @@ public final class GCGMsgUseLegendOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend other) {
         if (other == emu.grasscutter.net.proto.GCGMsgUseLegendOuterClass.GCGMsgUseLegend.getDefaultInstance()) return this;
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
-        }
-        if (other.getFILKLCKODNB() != false) {
-          setFILKLCKODNB(other.getFILKLCKODNB());
-        }
         if (other.getControllerId() != 0) {
           setControllerId(other.getControllerId());
+        }
+        if (other.getUnk3840FILKLCKODNB() != false) {
+          setUnk3840FILKLCKODNB(other.getUnk3840FILKLCKODNB());
+        }
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,8 +522,98 @@ public final class GCGMsgUseLegendOuterClass {
         return this;
       }
 
+      private int controllerId_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 13;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 13;</code>
+       * @param value The controllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setControllerId(int value) {
+        
+        controllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearControllerId() {
+        
+        controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3840FILKLCKODNB_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool unk_38_40_FILKLCKODNB = 1;</code>
+       * @return The unk3840FILKLCKODNB.
+       */
+      @java.lang.Override
+      public boolean getUnk3840FILKLCKODNB() {
+        return unk3840FILKLCKODNB_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool unk_38_40_FILKLCKODNB = 1;</code>
+       * @param value The unk3840FILKLCKODNB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3840FILKLCKODNB(boolean value) {
+        
+        unk3840FILKLCKODNB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool unk_38_40_FILKLCKODNB = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3840FILKLCKODNB() {
+        
+        unk3840FILKLCKODNB_ = false;
+        onChanged();
+        return this;
+      }
+
       private int cardGuid_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 card_guid = 11;</code>
        * @return The cardGuid.
        */
@@ -516,6 +622,10 @@ public final class GCGMsgUseLegendOuterClass {
         return cardGuid_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 card_guid = 11;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
@@ -527,74 +637,16 @@ public final class GCGMsgUseLegendOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 card_guid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
         
         cardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean fILKLCKODNB_ ;
-      /**
-       * <code>bool FILKLCKODNB = 14;</code>
-       * @return The fILKLCKODNB.
-       */
-      @java.lang.Override
-      public boolean getFILKLCKODNB() {
-        return fILKLCKODNB_;
-      }
-      /**
-       * <code>bool FILKLCKODNB = 14;</code>
-       * @param value The fILKLCKODNB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFILKLCKODNB(boolean value) {
-        
-        fILKLCKODNB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool FILKLCKODNB = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFILKLCKODNB() {
-        
-        fILKLCKODNB_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 12;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 12;</code>
-       * @param value The controllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setControllerId(int value) {
-        
-        controllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 controller_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearControllerId() {
-        
-        controllerId_ = 0;
         onChanged();
         return this;
       }
@@ -665,10 +717,10 @@ public final class GCGMsgUseLegendOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GCGMsgUseLegend.proto\"P\n\017GCGMsgUseLege" +
-      "nd\022\021\n\tcard_guid\030\013 \001(\r\022\023\n\013FILKLCKODNB\030\016 \001" +
-      "(\010\022\025\n\rcontroller_id\030\014 \001(\rB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\025GCGMsgUseLegend.proto\"Z\n\017GCGMsgUseLege" +
+      "nd\022\025\n\rcontroller_id\030\r \001(\r\022\035\n\025unk_38_40_F" +
+      "ILKLCKODNB\030\001 \001(\010\022\021\n\tcard_guid\030\013 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -679,7 +731,7 @@ public final class GCGMsgUseLegendOuterClass {
     internal_static_GCGMsgUseLegend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgUseLegend_descriptor,
-        new java.lang.String[] { "CardGuid", "FILKLCKODNB", "ControllerId", });
+        new java.lang.String[] { "ControllerId", "Unk3840FILKLCKODNB", "CardGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

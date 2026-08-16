@@ -19,24 +19,28 @@ public final class WorldChestOpenNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 config_id = 5;</code>
+     * <code>uint32 config_id = 3;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
+   * <pre>
+   * CmdId: 863
+   * </pre>
+   *
    * Protobuf type {@code WorldChestOpenNotify}
    */
   public static final class WorldChestOpenNotify extends
@@ -81,17 +85,17 @@ public final class WorldChestOpenNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 24: {
 
               configId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
 
               groupId_ = input.readUInt32();
               break;
@@ -128,10 +132,10 @@ public final class WorldChestOpenNotifyOuterClass {
               emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.class, emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class WorldChestOpenNotifyOuterClass {
       return sceneId_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 5;
+    public static final int CONFIG_ID_FIELD_NUMBER = 3;
     private int configId_;
     /**
-     * <code>uint32 config_id = 5;</code>
+     * <code>uint32 config_id = 3;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class WorldChestOpenNotifyOuterClass {
       return configId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 14;
+    public static final int GROUP_ID_FIELD_NUMBER = 15;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -175,14 +179,14 @@ public final class WorldChestOpenNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
-      }
       if (configId_ != 0) {
-        output.writeUInt32(5, configId_);
+        output.writeUInt32(3, configId_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(9, sceneId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
+        output.writeUInt32(15, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class WorldChestOpenNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, configId_);
+          .computeUInt32Size(3, configId_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, sceneId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
+          .computeUInt32Size(15, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,6 +343,10 @@ public final class WorldChestOpenNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 863
+     * </pre>
+     *
      * Protobuf type {@code WorldChestOpenNotify}
      */
     public static final class Builder extends
@@ -499,7 +507,7 @@ public final class WorldChestOpenNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -507,7 +515,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -530,7 +538,7 @@ public final class WorldChestOpenNotifyOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 5;</code>
+       * <code>uint32 config_id = 3;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -538,7 +546,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 5;</code>
+       * <code>uint32 config_id = 3;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +557,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 5;</code>
+       * <code>uint32 config_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -561,7 +569,7 @@ public final class WorldChestOpenNotifyOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -569,7 +577,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 15;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -580,7 +588,7 @@ public final class WorldChestOpenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -657,8 +665,8 @@ public final class WorldChestOpenNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032WorldChestOpenNotify.proto\"M\n\024WorldChe" +
-      "stOpenNotify\022\020\n\010scene_id\030\001 \001(\r\022\021\n\tconfig" +
-      "_id\030\005 \001(\r\022\020\n\010group_id\030\016 \001(\rB\033\n\031emu.grass" +
+      "stOpenNotify\022\020\n\010scene_id\030\t \001(\r\022\021\n\tconfig" +
+      "_id\030\003 \001(\r\022\020\n\010group_id\030\017 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

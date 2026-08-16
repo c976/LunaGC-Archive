@@ -19,33 +19,32 @@ public final class ExclusiveRuleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo> 
         getRuleInfoListList();
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo getRuleInfoList(int index);
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     int getRuleInfoListCount();
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder> 
         getRuleInfoListOrBuilderList();
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder getRuleInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 1418
-   * Obf: ENPIKKCLNIB
+   * CmdId: 9652
    * </pre>
    *
    * Protobuf type {@code ExclusiveRuleNotify}
@@ -94,7 +93,7 @@ public final class ExclusiveRuleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 ruleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class ExclusiveRuleNotifyOuterClass {
               emu.grasscutter.net.proto.ExclusiveRuleNotifyOuterClass.ExclusiveRuleNotify.class, emu.grasscutter.net.proto.ExclusiveRuleNotifyOuterClass.ExclusiveRuleNotify.Builder.class);
     }
 
-    public static final int RULE_INFO_LIST_FIELD_NUMBER = 1;
+    public static final int RULE_INFO_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo> ruleInfoList_;
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo> getRuleInfoListList() {
       return ruleInfoList_;
     }
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder> 
@@ -156,21 +155,21 @@ public final class ExclusiveRuleNotifyOuterClass {
       return ruleInfoList_;
     }
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     @java.lang.Override
     public int getRuleInfoListCount() {
       return ruleInfoList_.size();
     }
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo getRuleInfoList(int index) {
       return ruleInfoList_.get(index);
     }
     /**
-     * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+     * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder getRuleInfoListOrBuilder(
@@ -193,7 +192,7 @@ public final class ExclusiveRuleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < ruleInfoList_.size(); i++) {
-        output.writeMessage(1, ruleInfoList_.get(i));
+        output.writeMessage(11, ruleInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class ExclusiveRuleNotifyOuterClass {
       size = 0;
       for (int i = 0; i < ruleInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, ruleInfoList_.get(i));
+          .computeMessageSize(11, ruleInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class ExclusiveRuleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1418
-     * Obf: ENPIKKCLNIB
+     * CmdId: 9652
      * </pre>
      *
      * Protobuf type {@code ExclusiveRuleNotify}
@@ -538,7 +536,7 @@ public final class ExclusiveRuleNotifyOuterClass {
           emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder> ruleInfoListBuilder_;
 
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo> getRuleInfoListList() {
         if (ruleInfoListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public int getRuleInfoListCount() {
         if (ruleInfoListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo getRuleInfoList(int index) {
         if (ruleInfoListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder setRuleInfoList(
           int index, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo value) {
@@ -585,7 +583,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder setRuleInfoList(
           int index, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder addRuleInfoList(emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo value) {
         if (ruleInfoListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder addRuleInfoList(
           int index, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo value) {
@@ -632,7 +630,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder addRuleInfoList(
           emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder addRuleInfoList(
           int index, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder addAllRuleInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo> values) {
@@ -675,7 +673,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder clearRuleInfoList() {
         if (ruleInfoListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public Builder removeRuleInfoList(int index) {
         if (ruleInfoListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class ExclusiveRuleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder getRuleInfoListBuilder(
           int index) {
         return getRuleInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder getRuleInfoListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class ExclusiveRuleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfoOrBuilder> 
            getRuleInfoListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class ExclusiveRuleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder addRuleInfoListBuilder() {
         return getRuleInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder addRuleInfoListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class ExclusiveRuleNotifyOuterClass {
             index, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExclusiveRuleInfo rule_info_list = 1;</code>
+       * <code>repeated .ExclusiveRuleInfo rule_info_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder> 
            getRuleInfoListBuilderList() {
@@ -833,7 +831,7 @@ public final class ExclusiveRuleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031ExclusiveRuleNotify.proto\032\027ExclusiveRu" +
       "leInfo.proto\"A\n\023ExclusiveRuleNotify\022*\n\016r" +
-      "ule_info_list\030\001 \003(\0132\022.ExclusiveRuleInfoB" +
+      "ule_info_list\030\013 \003(\0132\022.ExclusiveRuleInfoB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

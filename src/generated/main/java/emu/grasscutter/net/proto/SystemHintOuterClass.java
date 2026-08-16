@@ -19,7 +19,11 @@ public final class SystemHintOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 type = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 type = 7;</code>
      * @return The type.
      */
     int getType();
@@ -69,7 +73,7 @@ public final class SystemHintOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 56: {
 
               type_ = input.readUInt32();
               break;
@@ -106,10 +110,14 @@ public final class SystemHintOuterClass {
               emu.grasscutter.net.proto.SystemHintOuterClass.SystemHint.class, emu.grasscutter.net.proto.SystemHintOuterClass.SystemHint.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 8;
+    public static final int TYPE_FIELD_NUMBER = 7;
     private int type_;
     /**
-     * <code>uint32 type = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>uint32 type = 7;</code>
      * @return The type.
      */
     @java.lang.Override
@@ -132,7 +140,7 @@ public final class SystemHintOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (type_ != 0) {
-        output.writeUInt32(8, type_);
+        output.writeUInt32(7, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +153,7 @@ public final class SystemHintOuterClass {
       size = 0;
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, type_);
+          .computeUInt32Size(7, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +429,11 @@ public final class SystemHintOuterClass {
 
       private int type_ ;
       /**
-       * <code>uint32 type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 type = 7;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -429,7 +441,11 @@ public final class SystemHintOuterClass {
         return type_;
       }
       /**
-       * <code>uint32 type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 type = 7;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -440,7 +456,11 @@ public final class SystemHintOuterClass {
         return this;
       }
       /**
-       * <code>uint32 type = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>uint32 type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -517,7 +537,7 @@ public final class SystemHintOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020SystemHint.proto\"\032\n\nSystemHint\022\014\n\004type" +
-      "\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

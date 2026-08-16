@@ -19,24 +19,35 @@ public final class CoopPointUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      * @return Whether the coopPoint field is set.
      */
     boolean hasCoopPoint();
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      * @return The coopPoint.
      */
     emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint getCoopPoint();
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      */
     emu.grasscutter.net.proto.CoopPointOuterClass.CoopPointOrBuilder getCoopPointOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 7401
-   * Obf: DELDCGOMOEG
+   * CmdId: 28386
    * </pre>
    *
    * Protobuf type {@code CoopPointUpdateNotify}
@@ -83,7 +94,7 @@ public final class CoopPointUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 82: {
               emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.Builder subBuilder = null;
               if (coopPoint_ != null) {
                 subBuilder = coopPoint_.toBuilder();
@@ -128,10 +139,14 @@ public final class CoopPointUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.CoopPointUpdateNotifyOuterClass.CoopPointUpdateNotify.class, emu.grasscutter.net.proto.CoopPointUpdateNotifyOuterClass.CoopPointUpdateNotify.Builder.class);
     }
 
-    public static final int COOP_POINT_FIELD_NUMBER = 6;
+    public static final int COOP_POINT_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint coopPoint_;
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      * @return Whether the coopPoint field is set.
      */
     @java.lang.Override
@@ -139,7 +154,11 @@ public final class CoopPointUpdateNotifyOuterClass {
       return coopPoint_ != null;
     }
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      * @return The coopPoint.
      */
     @java.lang.Override
@@ -147,7 +166,11 @@ public final class CoopPointUpdateNotifyOuterClass {
       return coopPoint_ == null ? emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.getDefaultInstance() : coopPoint_;
     }
     /**
-     * <code>.CoopPoint coop_point = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CoopPoint coop_point = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPointOrBuilder getCoopPointOrBuilder() {
@@ -169,7 +192,7 @@ public final class CoopPointUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (coopPoint_ != null) {
-        output.writeMessage(6, getCoopPoint());
+        output.writeMessage(10, getCoopPoint());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +205,7 @@ public final class CoopPointUpdateNotifyOuterClass {
       size = 0;
       if (coopPoint_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getCoopPoint());
+          .computeMessageSize(10, getCoopPoint());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +339,7 @@ public final class CoopPointUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7401
-     * Obf: DELDCGOMOEG
+     * CmdId: 28386
      * </pre>
      *
      * Protobuf type {@code CoopPointUpdateNotify}
@@ -478,14 +500,22 @@ public final class CoopPointUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint, emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.Builder, emu.grasscutter.net.proto.CoopPointOuterClass.CoopPointOrBuilder> coopPointBuilder_;
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        * @return Whether the coopPoint field is set.
        */
       public boolean hasCoopPoint() {
         return coopPointBuilder_ != null || coopPoint_ != null;
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        * @return The coopPoint.
        */
       public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint getCoopPoint() {
@@ -496,7 +526,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public Builder setCoopPoint(emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint value) {
         if (coopPointBuilder_ == null) {
@@ -512,7 +546,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public Builder setCoopPoint(
           emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.Builder builderForValue) {
@@ -526,7 +564,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public Builder mergeCoopPoint(emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint value) {
         if (coopPointBuilder_ == null) {
@@ -544,7 +586,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public Builder clearCoopPoint() {
         if (coopPointBuilder_ == null) {
@@ -558,7 +604,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.Builder getCoopPointBuilder() {
         
@@ -566,7 +616,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         return getCoopPointFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       public emu.grasscutter.net.proto.CoopPointOuterClass.CoopPointOrBuilder getCoopPointOrBuilder() {
         if (coopPointBuilder_ != null) {
@@ -577,7 +631,11 @@ public final class CoopPointUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.CoopPoint coop_point = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CoopPoint coop_point = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint, emu.grasscutter.net.proto.CoopPointOuterClass.CoopPoint.Builder, emu.grasscutter.net.proto.CoopPointOuterClass.CoopPointOrBuilder> 
@@ -661,7 +719,7 @@ public final class CoopPointUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033CoopPointUpdateNotify.proto\032\017CoopPoint" +
       ".proto\"7\n\025CoopPointUpdateNotify\022\036\n\ncoop_" +
-      "point\030\006 \001(\0132\n.CoopPointB\033\n\031emu.grasscutt" +
+      "point\030\n \001(\0132\n.CoopPointB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

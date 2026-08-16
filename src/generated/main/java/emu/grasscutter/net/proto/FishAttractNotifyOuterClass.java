@@ -19,46 +19,74 @@ public final class FishAttractNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @return A list containing the fishIdList.
      */
     java.util.List<java.lang.Integer> getFishIdListList();
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @return The count of fishIdList.
      */
     int getFishIdListCount();
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
     int getFishIdList(int index);
 
     /**
-     * <code>uint32 uid = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * CmdId: 28341
+   * CmdId: 2568
    * </pre>
    *
    * Protobuf type {@code FishAttractNotify}
@@ -108,6 +136,11 @@ public final class FishAttractNotifyOuterClass {
               done = true;
               break;
             case 8: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fishIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -115,7 +148,7 @@ public final class FishAttractNotifyOuterClass {
               fishIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,7 +161,7 @@ public final class FishAttractNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 18: {
+            case 58: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -139,11 +172,6 @@ public final class FishAttractNotifyOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 48: {
-
-              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -181,10 +209,14 @@ public final class FishAttractNotifyOuterClass {
               emu.grasscutter.net.proto.FishAttractNotifyOuterClass.FishAttractNotify.class, emu.grasscutter.net.proto.FishAttractNotifyOuterClass.FishAttractNotify.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 2;
+    public static final int POS_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -192,7 +224,11 @@ public final class FishAttractNotifyOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -200,17 +236,25 @@ public final class FishAttractNotifyOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int FISH_ID_LIST_FIELD_NUMBER = 1;
+    public static final int FISH_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList fishIdList_;
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @return A list containing the fishIdList.
      */
     @java.lang.Override
@@ -219,14 +263,22 @@ public final class FishAttractNotifyOuterClass {
       return fishIdList_;
     }
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @return The count of fishIdList.
      */
     public int getFishIdListCount() {
       return fishIdList_.size();
     }
     /**
-     * <code>repeated uint32 fish_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 fish_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
@@ -235,10 +287,14 @@ public final class FishAttractNotifyOuterClass {
     }
     private int fishIdListMemoizedSerializedSize = -1;
 
-    public static final int UID_FIELD_NUMBER = 6;
+    public static final int UID_FIELD_NUMBER = 1;
     private int uid_;
     /**
-     * <code>uint32 uid = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -261,18 +317,18 @@ public final class FishAttractNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (uid_ != 0) {
+        output.writeUInt32(1, uid_);
+      }
       if (getFishIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(fishIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < fishIdList_.size(); i++) {
         output.writeUInt32NoTag(fishIdList_.getInt(i));
       }
       if (pos_ != null) {
-        output.writeMessage(2, getPos());
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(6, uid_);
+        output.writeMessage(7, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -283,6 +339,10 @@ public final class FishAttractNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, uid_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < fishIdList_.size(); i++) {
@@ -299,11 +359,7 @@ public final class FishAttractNotifyOuterClass {
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getPos());
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, uid_);
+          .computeMessageSize(7, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -447,7 +503,7 @@ public final class FishAttractNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28341
+     * CmdId: 2568
      * </pre>
      *
      * Protobuf type {@code FishAttractNotify}
@@ -633,14 +689,22 @@ public final class FishAttractNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -651,7 +715,11 @@ public final class FishAttractNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -667,7 +735,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -681,7 +753,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -699,7 +775,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -713,7 +793,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -721,7 +805,11 @@ public final class FishAttractNotifyOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -732,7 +820,11 @@ public final class FishAttractNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -756,7 +848,11 @@ public final class FishAttractNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @return A list containing the fishIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -765,14 +861,22 @@ public final class FishAttractNotifyOuterClass {
                  java.util.Collections.unmodifiableList(fishIdList_) : fishIdList_;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @return The count of fishIdList.
        */
       public int getFishIdListCount() {
         return fishIdList_.size();
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The fishIdList at the given index.
        */
@@ -780,7 +884,11 @@ public final class FishAttractNotifyOuterClass {
         return fishIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The fishIdList to set.
        * @return This builder for chaining.
@@ -793,7 +901,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @param value The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -804,7 +916,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @param values The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -817,7 +933,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 fish_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishIdList() {
@@ -829,7 +949,11 @@ public final class FishAttractNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 1;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -837,7 +961,11 @@ public final class FishAttractNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 1;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -848,7 +976,11 @@ public final class FishAttractNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -925,8 +1057,8 @@ public final class FishAttractNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FishAttractNotify.proto\032\014Vector.proto\"" +
-      "L\n\021FishAttractNotify\022\024\n\003pos\030\002 \001(\0132\007.Vect" +
-      "or\022\024\n\014fish_id_list\030\001 \003(\r\022\013\n\003uid\030\006 \001(\rB\033\n" +
+      "L\n\021FishAttractNotify\022\024\n\003pos\030\007 \001(\0132\007.Vect" +
+      "or\022\024\n\014fish_id_list\030\005 \003(\r\022\013\n\003uid\030\001 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

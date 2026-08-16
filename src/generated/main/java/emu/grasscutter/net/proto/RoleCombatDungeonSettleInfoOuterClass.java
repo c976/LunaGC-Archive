@@ -19,91 +19,241 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @return A list containing the mAEIPCNGEMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+     * @return Whether the cFABJKLBHLD field is set.
      */
-    java.util.List<java.lang.Long> getMAEIPCNGEMPList();
+    boolean hasCFABJKLBHLD();
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @return The count of mAEIPCNGEMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+     * @return The cFABJKLBHLD.
      */
-    int getMAEIPCNGEMPCount();
+    emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC getCFABJKLBHLD();
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @param index The index of the element to return.
-     * @return The mAEIPCNGEMP at the given index.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
      */
-    long getMAEIPCNGEMP(int index);
+    emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder getCFABJKLBHLDOrBuilder();
 
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
     long getAvatarGuidList(int index);
 
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-     * @return A list containing the eBPMPJGECHK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+     * @return A list containing the fGDGEBBIMMP.
      */
-    java.util.List<java.lang.Integer> getEBPMPJGECHKList();
+    java.util.List<java.lang.Long> getFGDGEBBIMMPList();
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-     * @return The count of eBPMPJGECHK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+     * @return The count of fGDGEBBIMMP.
      */
-    int getEBPMPJGECHKCount();
+    int getFGDGEBBIMMPCount();
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
      * @param index The index of the element to return.
-     * @return The eBPMPJGECHK at the given index.
+     * @return The fGDGEBBIMMP at the given index.
      */
-    int getEBPMPJGECHK(int index);
+    long getFGDGEBBIMMP(int index);
 
     /**
-     * <code>uint32 use_time = 14;</code>
-     * @return The useTime.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
+     * @return A list containing the iANKHEGINAH.
      */
-    int getUseTime();
+    java.util.List<java.lang.Integer> getIANKHEGINAHList();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
+     * @return The count of iANKHEGINAH.
+     */
+    int getIANKHEGINAHCount();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
+     * @param index The index of the element to return.
+     * @return The iANKHEGINAH at the given index.
+     */
+    int getIANKHEGINAH(int index);
 
     /**
-     * <code>uint32 HMJFGHGIPHH = 7;</code>
-     * @return The hMJFGHGIPHH.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
      */
-    int getHMJFGHGIPHH();
+    java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> 
+        getACKGGNJNDEHList();
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK getACKGGNJNDEH(int index);
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    int getACKGGNJNDEHCount();
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder> 
+        getACKGGNJNDEHOrBuilderList();
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder getACKGGNJNDEHOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>bool IPLADCLOPNP = 12;</code>
+     * @return The iPLADCLOPNP.
+     */
+    boolean getIPLADCLOPNP();
+
+    /**
+     * <pre>
+     * offset: 73
+     * </pre>
+     *
+     * <code>bool BLEGLHINAIC = 5;</code>
+     * @return The bLEGLHINAIC.
+     */
+    boolean getBLEGLHINAIC();
+
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 GMNGPCMGKPD = 15;</code>
+     * @return The gMNGPCMGKPD.
+     */
+    int getGMNGPCMGKPD();
+
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 OEEGEAOOKNF = 11;</code>
+     * @return The oEEGEAOOKNF.
+     */
+    int getOEEGEAOOKNF();
+
+    /**
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 2;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>uint32 LNOJFHLAJAE = 1;</code>
-     * @return The lNOJFHLAJAE.
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>uint32 use_time = 9;</code>
+     * @return The useTime.
      */
-    int getLNOJFHLAJAE();
+    int getUseTime();
 
     /**
-     * <code>bool HJJCGGHNLHF = 11;</code>
-     * @return The hJJCGGHNLHF.
+     * <pre>
+     * offset: 92
+     * </pre>
+     *
+     * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+     * @return The enum numeric value on the wire for kEHFEPDKBCH.
      */
-    boolean getHJJCGGHNLHF();
-
+    int getKEHFEPDKBCHValue();
     /**
-     * <code>bool EGNCHPPOAJH = 9;</code>
-     * @return The eGNCHPPOAJH.
+     * <pre>
+     * offset: 92
+     * </pre>
+     *
+     * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+     * @return The kEHFEPDKBCH.
      */
-    boolean getEGNCHPPOAJH();
+    emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ getKEHFEPDKBCH();
   }
   /**
    * Protobuf type {@code RoleCombatDungeonSettleInfo}
@@ -118,9 +268,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       super(builder);
     }
     private RoleCombatDungeonSettleInfo() {
-      mAEIPCNGEMP_ = emptyLongList();
       avatarGuidList_ = emptyLongList();
-      eBPMPJGECHK_ = emptyIntList();
+      fGDGEBBIMMP_ = emptyLongList();
+      iANKHEGINAH_ = emptyIntList();
+      aCKGGNJNDEH_ = java.util.Collections.emptyList();
+      kEHFEPDKBCH_ = 0;
     }
 
     @java.lang.Override
@@ -155,45 +307,45 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
               done = true;
               break;
             case 8: {
-
-              lNOJFHLAJAE_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                eBPMPJGECHK_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fGDGEBBIMMP_ = newLongList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              eBPMPJGECHK_.addInt(input.readUInt32());
+              fGDGEBBIMMP_.addLong(input.readUInt64());
               break;
             }
-            case 26: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                eBPMPJGECHK_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                fGDGEBBIMMP_ = newLongList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                eBPMPJGECHK_.addInt(input.readUInt32());
+                fGDGEBBIMMP_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
               break;
             }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 16: {
+
+              difficultyId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               avatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 42: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 avatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 avatarGuidList_.addLong(input.readUInt64());
@@ -201,50 +353,78 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 56: {
+            case 40: {
 
-              hMJFGHGIPHH_ = input.readUInt32();
+              bLEGLHINAIC_ = input.readBool();
               break;
             }
-            case 72: {
-
-              eGNCHPPOAJH_ = input.readBool();
-              break;
-            }
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mAEIPCNGEMP_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                iANKHEGINAH_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
-              mAEIPCNGEMP_.addLong(input.readUInt64());
+              iANKHEGINAH_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                mAEIPCNGEMP_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                iANKHEGINAH_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                mAEIPCNGEMP_.addLong(input.readUInt64());
+                iANKHEGINAH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
+            case 58: {
+              emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder subBuilder = null;
+              if (cFABJKLBHLD_ != null) {
+                subBuilder = cFABJKLBHLD_.toBuilder();
+              }
+              cFABJKLBHLD_ = input.readMessage(emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(cFABJKLBHLD_);
+                cFABJKLBHLD_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                aCKGGNJNDEH_ = new java.util.ArrayList<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              aCKGGNJNDEH_.add(
+                  input.readMessage(emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.parser(), extensionRegistry));
+              break;
+            }
+            case 72: {
+
+              useTime_ = input.readUInt32();
+              break;
+            }
             case 88: {
 
-              hJJCGGHNLHF_ = input.readBool();
+              oEEGEAOOKNF_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              difficultyId_ = input.readUInt32();
+              iPLADCLOPNP_ = input.readBool();
               break;
             }
-            case 112: {
+            case 104: {
+              int rawValue = input.readEnum();
 
-              useTime_ = input.readUInt32();
+              kEHFEPDKBCH_ = rawValue;
+              break;
+            }
+            case 120: {
+
+              gMNGPCMGKPD_ = input.readUInt32();
               break;
             }
             default: {
@@ -262,14 +442,17 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          eBPMPJGECHK_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          avatarGuidList_.makeImmutable(); // C
+          fGDGEBBIMMP_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          mAEIPCNGEMP_.makeImmutable(); // C
+          avatarGuidList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          iANKHEGINAH_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          aCKGGNJNDEH_ = java.util.Collections.unmodifiableList(aCKGGNJNDEH_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -288,38 +471,52 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo.class, emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo.Builder.class);
     }
 
-    public static final int MAEIPCNGEMP_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.LongList mAEIPCNGEMP_;
+    public static final int CFABJKLBHLD_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC cFABJKLBHLD_;
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @return A list containing the mAEIPCNGEMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+     * @return Whether the cFABJKLBHLD field is set.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Long>
-        getMAEIPCNGEMPList() {
-      return mAEIPCNGEMP_;
+    public boolean hasCFABJKLBHLD() {
+      return cFABJKLBHLD_ != null;
     }
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @return The count of mAEIPCNGEMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+     * @return The cFABJKLBHLD.
      */
-    public int getMAEIPCNGEMPCount() {
-      return mAEIPCNGEMP_.size();
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC getCFABJKLBHLD() {
+      return cFABJKLBHLD_ == null ? emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.getDefaultInstance() : cFABJKLBHLD_;
     }
     /**
-     * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-     * @param index The index of the element to return.
-     * @return The mAEIPCNGEMP at the given index.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
      */
-    public long getMAEIPCNGEMP(int index) {
-      return mAEIPCNGEMP_.getLong(index);
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder getCFABJKLBHLDOrBuilder() {
+      return getCFABJKLBHLD();
     }
-    private int mAEIPCNGEMPMemoizedSerializedSize = -1;
 
-    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 5;
+    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @return A list containing the avatarGuidList.
      */
     @java.lang.Override
@@ -328,14 +525,22 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @return The count of avatarGuidList.
      */
     public int getAvatarGuidListCount() {
       return avatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint64 avatar_guid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -344,60 +549,214 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
     }
     private int avatarGuidListMemoizedSerializedSize = -1;
 
-    public static final int EBPMPJGECHK_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList eBPMPJGECHK_;
+    public static final int FGDGEBBIMMP_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.LongList fGDGEBBIMMP_;
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-     * @return A list containing the eBPMPJGECHK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+     * @return A list containing the fGDGEBBIMMP.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Long>
+        getFGDGEBBIMMPList() {
+      return fGDGEBBIMMP_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+     * @return The count of fGDGEBBIMMP.
+     */
+    public int getFGDGEBBIMMPCount() {
+      return fGDGEBBIMMP_.size();
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+     * @param index The index of the element to return.
+     * @return The fGDGEBBIMMP at the given index.
+     */
+    public long getFGDGEBBIMMP(int index) {
+      return fGDGEBBIMMP_.getLong(index);
+    }
+    private int fGDGEBBIMMPMemoizedSerializedSize = -1;
+
+    public static final int IANKHEGINAH_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList iANKHEGINAH_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
+     * @return A list containing the iANKHEGINAH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getEBPMPJGECHKList() {
-      return eBPMPJGECHK_;
+        getIANKHEGINAHList() {
+      return iANKHEGINAH_;
     }
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-     * @return The count of eBPMPJGECHK.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
+     * @return The count of iANKHEGINAH.
      */
-    public int getEBPMPJGECHKCount() {
-      return eBPMPJGECHK_.size();
+    public int getIANKHEGINAHCount() {
+      return iANKHEGINAH_.size();
     }
     /**
-     * <code>repeated uint32 EBPMPJGECHK = 3;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 IANKHEGINAH = 6;</code>
      * @param index The index of the element to return.
-     * @return The eBPMPJGECHK at the given index.
+     * @return The iANKHEGINAH at the given index.
      */
-    public int getEBPMPJGECHK(int index) {
-      return eBPMPJGECHK_.getInt(index);
+    public int getIANKHEGINAH(int index) {
+      return iANKHEGINAH_.getInt(index);
     }
-    private int eBPMPJGECHKMemoizedSerializedSize = -1;
+    private int iANKHEGINAHMemoizedSerializedSize = -1;
 
-    public static final int USE_TIME_FIELD_NUMBER = 14;
-    private int useTime_;
+    public static final int ACKGGNJNDEH_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> aCKGGNJNDEH_;
     /**
-     * <code>uint32 use_time = 14;</code>
-     * @return The useTime.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
      */
     @java.lang.Override
-    public int getUseTime() {
-      return useTime_;
+    public java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> getACKGGNJNDEHList() {
+      return aCKGGNJNDEH_;
     }
-
-    public static final int HMJFGHGIPHH_FIELD_NUMBER = 7;
-    private int hMJFGHGIPHH_;
     /**
-     * <code>uint32 HMJFGHGIPHH = 7;</code>
-     * @return The hMJFGHGIPHH.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
      */
     @java.lang.Override
-    public int getHMJFGHGIPHH() {
-      return hMJFGHGIPHH_;
+    public java.util.List<? extends emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder> 
+        getACKGGNJNDEHOrBuilderList() {
+      return aCKGGNJNDEH_;
+    }
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    @java.lang.Override
+    public int getACKGGNJNDEHCount() {
+      return aCKGGNJNDEH_.size();
+    }
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK getACKGGNJNDEH(int index) {
+      return aCKGGNJNDEH_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder getACKGGNJNDEHOrBuilder(
+        int index) {
+      return aCKGGNJNDEH_.get(index);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 12;
+    public static final int IPLADCLOPNP_FIELD_NUMBER = 12;
+    private boolean iPLADCLOPNP_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>bool IPLADCLOPNP = 12;</code>
+     * @return The iPLADCLOPNP.
+     */
+    @java.lang.Override
+    public boolean getIPLADCLOPNP() {
+      return iPLADCLOPNP_;
+    }
+
+    public static final int BLEGLHINAIC_FIELD_NUMBER = 5;
+    private boolean bLEGLHINAIC_;
+    /**
+     * <pre>
+     * offset: 73
+     * </pre>
+     *
+     * <code>bool BLEGLHINAIC = 5;</code>
+     * @return The bLEGLHINAIC.
+     */
+    @java.lang.Override
+    public boolean getBLEGLHINAIC() {
+      return bLEGLHINAIC_;
+    }
+
+    public static final int GMNGPCMGKPD_FIELD_NUMBER = 15;
+    private int gMNGPCMGKPD_;
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 GMNGPCMGKPD = 15;</code>
+     * @return The gMNGPCMGKPD.
+     */
+    @java.lang.Override
+    public int getGMNGPCMGKPD() {
+      return gMNGPCMGKPD_;
+    }
+
+    public static final int OEEGEAOOKNF_FIELD_NUMBER = 11;
+    private int oEEGEAOOKNF_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 OEEGEAOOKNF = 11;</code>
+     * @return The oEEGEAOOKNF.
+     */
+    @java.lang.Override
+    public int getOEEGEAOOKNF() {
+      return oEEGEAOOKNF_;
+    }
+
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 2;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 2;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -405,37 +764,46 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       return difficultyId_;
     }
 
-    public static final int LNOJFHLAJAE_FIELD_NUMBER = 1;
-    private int lNOJFHLAJAE_;
+    public static final int USE_TIME_FIELD_NUMBER = 9;
+    private int useTime_;
     /**
-     * <code>uint32 LNOJFHLAJAE = 1;</code>
-     * @return The lNOJFHLAJAE.
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>uint32 use_time = 9;</code>
+     * @return The useTime.
      */
     @java.lang.Override
-    public int getLNOJFHLAJAE() {
-      return lNOJFHLAJAE_;
+    public int getUseTime() {
+      return useTime_;
     }
 
-    public static final int HJJCGGHNLHF_FIELD_NUMBER = 11;
-    private boolean hJJCGGHNLHF_;
+    public static final int KEHFEPDKBCH_FIELD_NUMBER = 13;
+    private int kEHFEPDKBCH_;
     /**
-     * <code>bool HJJCGGHNLHF = 11;</code>
-     * @return The hJJCGGHNLHF.
+     * <pre>
+     * offset: 92
+     * </pre>
+     *
+     * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+     * @return The enum numeric value on the wire for kEHFEPDKBCH.
      */
-    @java.lang.Override
-    public boolean getHJJCGGHNLHF() {
-      return hJJCGGHNLHF_;
+    @java.lang.Override public int getKEHFEPDKBCHValue() {
+      return kEHFEPDKBCH_;
     }
-
-    public static final int EGNCHPPOAJH_FIELD_NUMBER = 9;
-    private boolean eGNCHPPOAJH_;
     /**
-     * <code>bool EGNCHPPOAJH = 9;</code>
-     * @return The eGNCHPPOAJH.
+     * <pre>
+     * offset: 92
+     * </pre>
+     *
+     * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+     * @return The kEHFEPDKBCH.
      */
-    @java.lang.Override
-    public boolean getEGNCHPPOAJH() {
-      return eGNCHPPOAJH_;
+    @java.lang.Override public emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ getKEHFEPDKBCH() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ result = emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.valueOf(kEHFEPDKBCH_);
+      return result == null ? emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -453,44 +821,53 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (lNOJFHLAJAE_ != 0) {
-        output.writeUInt32(1, lNOJFHLAJAE_);
+      if (getFGDGEBBIMMPList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(fGDGEBBIMMPMemoizedSerializedSize);
       }
-      if (getEBPMPJGECHKList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(eBPMPJGECHKMemoizedSerializedSize);
+      for (int i = 0; i < fGDGEBBIMMP_.size(); i++) {
+        output.writeUInt64NoTag(fGDGEBBIMMP_.getLong(i));
       }
-      for (int i = 0; i < eBPMPJGECHK_.size(); i++) {
-        output.writeUInt32NoTag(eBPMPJGECHK_.getInt(i));
+      if (difficultyId_ != 0) {
+        output.writeUInt32(2, difficultyId_);
       }
       if (getAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(avatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(avatarGuidList_.getLong(i));
       }
-      if (hMJFGHGIPHH_ != 0) {
-        output.writeUInt32(7, hMJFGHGIPHH_);
+      if (bLEGLHINAIC_ != false) {
+        output.writeBool(5, bLEGLHINAIC_);
       }
-      if (eGNCHPPOAJH_ != false) {
-        output.writeBool(9, eGNCHPPOAJH_);
+      if (getIANKHEGINAHList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(iANKHEGINAHMemoizedSerializedSize);
       }
-      if (getMAEIPCNGEMPList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(mAEIPCNGEMPMemoizedSerializedSize);
+      for (int i = 0; i < iANKHEGINAH_.size(); i++) {
+        output.writeUInt32NoTag(iANKHEGINAH_.getInt(i));
       }
-      for (int i = 0; i < mAEIPCNGEMP_.size(); i++) {
-        output.writeUInt64NoTag(mAEIPCNGEMP_.getLong(i));
+      if (cFABJKLBHLD_ != null) {
+        output.writeMessage(7, getCFABJKLBHLD());
       }
-      if (hJJCGGHNLHF_ != false) {
-        output.writeBool(11, hJJCGGHNLHF_);
-      }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(12, difficultyId_);
+      for (int i = 0; i < aCKGGNJNDEH_.size(); i++) {
+        output.writeMessage(8, aCKGGNJNDEH_.get(i));
       }
       if (useTime_ != 0) {
-        output.writeUInt32(14, useTime_);
+        output.writeUInt32(9, useTime_);
+      }
+      if (oEEGEAOOKNF_ != 0) {
+        output.writeUInt32(11, oEEGEAOOKNF_);
+      }
+      if (iPLADCLOPNP_ != false) {
+        output.writeBool(12, iPLADCLOPNP_);
+      }
+      if (kEHFEPDKBCH_ != emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.EEFILODCHLB_NONE.getNumber()) {
+        output.writeEnum(13, kEHFEPDKBCH_);
+      }
+      if (gMNGPCMGKPD_ != 0) {
+        output.writeUInt32(15, gMNGPCMGKPD_);
       }
       unknownFields.writeTo(output);
     }
@@ -501,23 +878,23 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lNOJFHLAJAE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, lNOJFHLAJAE_);
-      }
       {
         int dataSize = 0;
-        for (int i = 0; i < eBPMPJGECHK_.size(); i++) {
+        for (int i = 0; i < fGDGEBBIMMP_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(eBPMPJGECHK_.getInt(i));
+            .computeUInt64SizeNoTag(fGDGEBBIMMP_.getLong(i));
         }
         size += dataSize;
-        if (!getEBPMPJGECHKList().isEmpty()) {
+        if (!getFGDGEBBIMMPList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        eBPMPJGECHKMemoizedSerializedSize = dataSize;
+        fGDGEBBIMMPMemoizedSerializedSize = dataSize;
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, difficultyId_);
       }
       {
         int dataSize = 0;
@@ -533,39 +910,51 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         }
         avatarGuidListMemoizedSerializedSize = dataSize;
       }
-      if (hMJFGHGIPHH_ != 0) {
+      if (bLEGLHINAIC_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, hMJFGHGIPHH_);
-      }
-      if (eGNCHPPOAJH_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, eGNCHPPOAJH_);
+          .computeBoolSize(5, bLEGLHINAIC_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < mAEIPCNGEMP_.size(); i++) {
+        for (int i = 0; i < iANKHEGINAH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt64SizeNoTag(mAEIPCNGEMP_.getLong(i));
+            .computeUInt32SizeNoTag(iANKHEGINAH_.getInt(i));
         }
         size += dataSize;
-        if (!getMAEIPCNGEMPList().isEmpty()) {
+        if (!getIANKHEGINAHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        mAEIPCNGEMPMemoizedSerializedSize = dataSize;
+        iANKHEGINAHMemoizedSerializedSize = dataSize;
       }
-      if (hJJCGGHNLHF_ != false) {
+      if (cFABJKLBHLD_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, hJJCGGHNLHF_);
+          .computeMessageSize(7, getCFABJKLBHLD());
       }
-      if (difficultyId_ != 0) {
+      for (int i = 0; i < aCKGGNJNDEH_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, difficultyId_);
+          .computeMessageSize(8, aCKGGNJNDEH_.get(i));
       }
       if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, useTime_);
+          .computeUInt32Size(9, useTime_);
+      }
+      if (oEEGEAOOKNF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, oEEGEAOOKNF_);
+      }
+      if (iPLADCLOPNP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, iPLADCLOPNP_);
+      }
+      if (kEHFEPDKBCH_ != emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.EEFILODCHLB_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, kEHFEPDKBCH_);
+      }
+      if (gMNGPCMGKPD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, gMNGPCMGKPD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -582,24 +971,32 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo other = (emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo) obj;
 
-      if (!getMAEIPCNGEMPList()
-          .equals(other.getMAEIPCNGEMPList())) return false;
+      if (hasCFABJKLBHLD() != other.hasCFABJKLBHLD()) return false;
+      if (hasCFABJKLBHLD()) {
+        if (!getCFABJKLBHLD()
+            .equals(other.getCFABJKLBHLD())) return false;
+      }
       if (!getAvatarGuidListList()
           .equals(other.getAvatarGuidListList())) return false;
-      if (!getEBPMPJGECHKList()
-          .equals(other.getEBPMPJGECHKList())) return false;
-      if (getUseTime()
-          != other.getUseTime()) return false;
-      if (getHMJFGHGIPHH()
-          != other.getHMJFGHGIPHH()) return false;
+      if (!getFGDGEBBIMMPList()
+          .equals(other.getFGDGEBBIMMPList())) return false;
+      if (!getIANKHEGINAHList()
+          .equals(other.getIANKHEGINAHList())) return false;
+      if (!getACKGGNJNDEHList()
+          .equals(other.getACKGGNJNDEHList())) return false;
+      if (getIPLADCLOPNP()
+          != other.getIPLADCLOPNP()) return false;
+      if (getBLEGLHINAIC()
+          != other.getBLEGLHINAIC()) return false;
+      if (getGMNGPCMGKPD()
+          != other.getGMNGPCMGKPD()) return false;
+      if (getOEEGEAOOKNF()
+          != other.getOEEGEAOOKNF()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
-      if (getLNOJFHLAJAE()
-          != other.getLNOJFHLAJAE()) return false;
-      if (getHJJCGGHNLHF()
-          != other.getHJJCGGHNLHF()) return false;
-      if (getEGNCHPPOAJH()
-          != other.getEGNCHPPOAJH()) return false;
+      if (getUseTime()
+          != other.getUseTime()) return false;
+      if (kEHFEPDKBCH_ != other.kEHFEPDKBCH_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -611,32 +1008,42 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getMAEIPCNGEMPCount() > 0) {
-        hash = (37 * hash) + MAEIPCNGEMP_FIELD_NUMBER;
-        hash = (53 * hash) + getMAEIPCNGEMPList().hashCode();
+      if (hasCFABJKLBHLD()) {
+        hash = (37 * hash) + CFABJKLBHLD_FIELD_NUMBER;
+        hash = (53 * hash) + getCFABJKLBHLD().hashCode();
       }
       if (getAvatarGuidListCount() > 0) {
         hash = (37 * hash) + AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarGuidListList().hashCode();
       }
-      if (getEBPMPJGECHKCount() > 0) {
-        hash = (37 * hash) + EBPMPJGECHK_FIELD_NUMBER;
-        hash = (53 * hash) + getEBPMPJGECHKList().hashCode();
+      if (getFGDGEBBIMMPCount() > 0) {
+        hash = (37 * hash) + FGDGEBBIMMP_FIELD_NUMBER;
+        hash = (53 * hash) + getFGDGEBBIMMPList().hashCode();
       }
-      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getUseTime();
-      hash = (37 * hash) + HMJFGHGIPHH_FIELD_NUMBER;
-      hash = (53 * hash) + getHMJFGHGIPHH();
+      if (getIANKHEGINAHCount() > 0) {
+        hash = (37 * hash) + IANKHEGINAH_FIELD_NUMBER;
+        hash = (53 * hash) + getIANKHEGINAHList().hashCode();
+      }
+      if (getACKGGNJNDEHCount() > 0) {
+        hash = (37 * hash) + ACKGGNJNDEH_FIELD_NUMBER;
+        hash = (53 * hash) + getACKGGNJNDEHList().hashCode();
+      }
+      hash = (37 * hash) + IPLADCLOPNP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIPLADCLOPNP());
+      hash = (37 * hash) + BLEGLHINAIC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getBLEGLHINAIC());
+      hash = (37 * hash) + GMNGPCMGKPD_FIELD_NUMBER;
+      hash = (53 * hash) + getGMNGPCMGKPD();
+      hash = (37 * hash) + OEEGEAOOKNF_FIELD_NUMBER;
+      hash = (53 * hash) + getOEEGEAOOKNF();
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
-      hash = (37 * hash) + LNOJFHLAJAE_FIELD_NUMBER;
-      hash = (53 * hash) + getLNOJFHLAJAE();
-      hash = (37 * hash) + HJJCGGHNLHF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHJJCGGHNLHF());
-      hash = (37 * hash) + EGNCHPPOAJH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getEGNCHPPOAJH());
+      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getUseTime();
+      hash = (37 * hash) + KEHFEPDKBCH_FIELD_NUMBER;
+      hash = (53 * hash) + kEHFEPDKBCH_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -765,28 +1172,43 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getACKGGNJNDEHFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mAEIPCNGEMP_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        if (cFABJKLBHLDBuilder_ == null) {
+          cFABJKLBHLD_ = null;
+        } else {
+          cFABJKLBHLD_ = null;
+          cFABJKLBHLDBuilder_ = null;
+        }
         avatarGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        fGDGEBBIMMP_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        eBPMPJGECHK_ = emptyIntList();
+        iANKHEGINAH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        useTime_ = 0;
+        if (aCKGGNJNDEHBuilder_ == null) {
+          aCKGGNJNDEH_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          aCKGGNJNDEHBuilder_.clear();
+        }
+        iPLADCLOPNP_ = false;
 
-        hMJFGHGIPHH_ = 0;
+        bLEGLHINAIC_ = false;
+
+        gMNGPCMGKPD_ = 0;
+
+        oEEGEAOOKNF_ = 0;
 
         difficultyId_ = 0;
 
-        lNOJFHLAJAE_ = 0;
+        useTime_ = 0;
 
-        hJJCGGHNLHF_ = false;
-
-        eGNCHPPOAJH_ = false;
+        kEHFEPDKBCH_ = 0;
 
         return this;
       }
@@ -815,27 +1237,42 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       public emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo result = new emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
+        if (cFABJKLBHLDBuilder_ == null) {
+          result.cFABJKLBHLD_ = cFABJKLBHLD_;
+        } else {
+          result.cFABJKLBHLD_ = cFABJKLBHLDBuilder_.build();
+        }
         if (((bitField0_ & 0x00000001) != 0)) {
-          mAEIPCNGEMP_.makeImmutable();
+          avatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.mAEIPCNGEMP_ = mAEIPCNGEMP_;
+        result.avatarGuidList_ = avatarGuidList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          avatarGuidList_.makeImmutable();
+          fGDGEBBIMMP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.avatarGuidList_ = avatarGuidList_;
+        result.fGDGEBBIMMP_ = fGDGEBBIMMP_;
         if (((bitField0_ & 0x00000004) != 0)) {
-          eBPMPJGECHK_.makeImmutable();
+          iANKHEGINAH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.eBPMPJGECHK_ = eBPMPJGECHK_;
-        result.useTime_ = useTime_;
-        result.hMJFGHGIPHH_ = hMJFGHGIPHH_;
+        result.iANKHEGINAH_ = iANKHEGINAH_;
+        if (aCKGGNJNDEHBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            aCKGGNJNDEH_ = java.util.Collections.unmodifiableList(aCKGGNJNDEH_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.aCKGGNJNDEH_ = aCKGGNJNDEH_;
+        } else {
+          result.aCKGGNJNDEH_ = aCKGGNJNDEHBuilder_.build();
+        }
+        result.iPLADCLOPNP_ = iPLADCLOPNP_;
+        result.bLEGLHINAIC_ = bLEGLHINAIC_;
+        result.gMNGPCMGKPD_ = gMNGPCMGKPD_;
+        result.oEEGEAOOKNF_ = oEEGEAOOKNF_;
         result.difficultyId_ = difficultyId_;
-        result.lNOJFHLAJAE_ = lNOJFHLAJAE_;
-        result.hJJCGGHNLHF_ = hJJCGGHNLHF_;
-        result.eGNCHPPOAJH_ = eGNCHPPOAJH_;
+        result.useTime_ = useTime_;
+        result.kEHFEPDKBCH_ = kEHFEPDKBCH_;
         onBuilt();
         return result;
       }
@@ -884,53 +1321,85 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.RoleCombatDungeonSettleInfoOuterClass.RoleCombatDungeonSettleInfo.getDefaultInstance()) return this;
-        if (!other.mAEIPCNGEMP_.isEmpty()) {
-          if (mAEIPCNGEMP_.isEmpty()) {
-            mAEIPCNGEMP_ = other.mAEIPCNGEMP_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureMAEIPCNGEMPIsMutable();
-            mAEIPCNGEMP_.addAll(other.mAEIPCNGEMP_);
-          }
-          onChanged();
+        if (other.hasCFABJKLBHLD()) {
+          mergeCFABJKLBHLD(other.getCFABJKLBHLD());
         }
         if (!other.avatarGuidList_.isEmpty()) {
           if (avatarGuidList_.isEmpty()) {
             avatarGuidList_ = other.avatarGuidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureAvatarGuidListIsMutable();
             avatarGuidList_.addAll(other.avatarGuidList_);
           }
           onChanged();
         }
-        if (!other.eBPMPJGECHK_.isEmpty()) {
-          if (eBPMPJGECHK_.isEmpty()) {
-            eBPMPJGECHK_ = other.eBPMPJGECHK_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+        if (!other.fGDGEBBIMMP_.isEmpty()) {
+          if (fGDGEBBIMMP_.isEmpty()) {
+            fGDGEBBIMMP_ = other.fGDGEBBIMMP_;
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureEBPMPJGECHKIsMutable();
-            eBPMPJGECHK_.addAll(other.eBPMPJGECHK_);
+            ensureFGDGEBBIMMPIsMutable();
+            fGDGEBBIMMP_.addAll(other.fGDGEBBIMMP_);
           }
           onChanged();
         }
-        if (other.getUseTime() != 0) {
-          setUseTime(other.getUseTime());
+        if (!other.iANKHEGINAH_.isEmpty()) {
+          if (iANKHEGINAH_.isEmpty()) {
+            iANKHEGINAH_ = other.iANKHEGINAH_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureIANKHEGINAHIsMutable();
+            iANKHEGINAH_.addAll(other.iANKHEGINAH_);
+          }
+          onChanged();
         }
-        if (other.getHMJFGHGIPHH() != 0) {
-          setHMJFGHGIPHH(other.getHMJFGHGIPHH());
+        if (aCKGGNJNDEHBuilder_ == null) {
+          if (!other.aCKGGNJNDEH_.isEmpty()) {
+            if (aCKGGNJNDEH_.isEmpty()) {
+              aCKGGNJNDEH_ = other.aCKGGNJNDEH_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureACKGGNJNDEHIsMutable();
+              aCKGGNJNDEH_.addAll(other.aCKGGNJNDEH_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.aCKGGNJNDEH_.isEmpty()) {
+            if (aCKGGNJNDEHBuilder_.isEmpty()) {
+              aCKGGNJNDEHBuilder_.dispose();
+              aCKGGNJNDEHBuilder_ = null;
+              aCKGGNJNDEH_ = other.aCKGGNJNDEH_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              aCKGGNJNDEHBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getACKGGNJNDEHFieldBuilder() : null;
+            } else {
+              aCKGGNJNDEHBuilder_.addAllMessages(other.aCKGGNJNDEH_);
+            }
+          }
+        }
+        if (other.getIPLADCLOPNP() != false) {
+          setIPLADCLOPNP(other.getIPLADCLOPNP());
+        }
+        if (other.getBLEGLHINAIC() != false) {
+          setBLEGLHINAIC(other.getBLEGLHINAIC());
+        }
+        if (other.getGMNGPCMGKPD() != 0) {
+          setGMNGPCMGKPD(other.getGMNGPCMGKPD());
+        }
+        if (other.getOEEGEAOOKNF() != 0) {
+          setOEEGEAOOKNF(other.getOEEGEAOOKNF());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
         }
-        if (other.getLNOJFHLAJAE() != 0) {
-          setLNOJFHLAJAE(other.getLNOJFHLAJAE());
+        if (other.getUseTime() != 0) {
+          setUseTime(other.getUseTime());
         }
-        if (other.getHJJCGGHNLHF() != false) {
-          setHJJCGGHNLHF(other.getHJJCGGHNLHF());
-        }
-        if (other.getEGNCHPPOAJH() != false) {
-          setEGNCHPPOAJH(other.getEGNCHPPOAJH());
+        if (other.kEHFEPDKBCH_ != 0) {
+          setKEHFEPDKBCHValue(other.getKEHFEPDKBCHValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -962,110 +1431,198 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.LongList mAEIPCNGEMP_ = emptyLongList();
-      private void ensureMAEIPCNGEMPIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          mAEIPCNGEMP_ = mutableCopy(mAEIPCNGEMP_);
-          bitField0_ |= 0x00000001;
-         }
+      private emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC cFABJKLBHLD_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder> cFABJKLBHLDBuilder_;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+       * @return Whether the cFABJKLBHLD field is set.
+       */
+      public boolean hasCFABJKLBHLD() {
+        return cFABJKLBHLDBuilder_ != null || cFABJKLBHLD_ != null;
       }
       /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @return A list containing the mAEIPCNGEMP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+       * @return The cFABJKLBHLD.
        */
-      public java.util.List<java.lang.Long>
-          getMAEIPCNGEMPList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(mAEIPCNGEMP_) : mAEIPCNGEMP_;
+      public emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC getCFABJKLBHLD() {
+        if (cFABJKLBHLDBuilder_ == null) {
+          return cFABJKLBHLD_ == null ? emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.getDefaultInstance() : cFABJKLBHLD_;
+        } else {
+          return cFABJKLBHLDBuilder_.getMessage();
+        }
       }
       /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @return The count of mAEIPCNGEMP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
        */
-      public int getMAEIPCNGEMPCount() {
-        return mAEIPCNGEMP_.size();
-      }
-      /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @param index The index of the element to return.
-       * @return The mAEIPCNGEMP at the given index.
-       */
-      public long getMAEIPCNGEMP(int index) {
-        return mAEIPCNGEMP_.getLong(index);
-      }
-      /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The mAEIPCNGEMP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMAEIPCNGEMP(
-          int index, long value) {
-        ensureMAEIPCNGEMPIsMutable();
-        mAEIPCNGEMP_.setLong(index, value);
-        onChanged();
+      public Builder setCFABJKLBHLD(emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC value) {
+        if (cFABJKLBHLDBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          cFABJKLBHLD_ = value;
+          onChanged();
+        } else {
+          cFABJKLBHLDBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @param value The mAEIPCNGEMP to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
        */
-      public Builder addMAEIPCNGEMP(long value) {
-        ensureMAEIPCNGEMPIsMutable();
-        mAEIPCNGEMP_.addLong(value);
-        onChanged();
+      public Builder setCFABJKLBHLD(
+          emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder builderForValue) {
+        if (cFABJKLBHLDBuilder_ == null) {
+          cFABJKLBHLD_ = builderForValue.build();
+          onChanged();
+        } else {
+          cFABJKLBHLDBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
       }
       /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @param values The mAEIPCNGEMP to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
        */
-      public Builder addAllMAEIPCNGEMP(
-          java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureMAEIPCNGEMPIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, mAEIPCNGEMP_);
-        onChanged();
+      public Builder mergeCFABJKLBHLD(emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC value) {
+        if (cFABJKLBHLDBuilder_ == null) {
+          if (cFABJKLBHLD_ != null) {
+            cFABJKLBHLD_ =
+              emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.newBuilder(cFABJKLBHLD_).mergeFrom(value).buildPartial();
+          } else {
+            cFABJKLBHLD_ = value;
+          }
+          onChanged();
+        } else {
+          cFABJKLBHLDBuilder_.mergeFrom(value);
+        }
+
         return this;
       }
       /**
-       * <code>repeated uint64 MAEIPCNGEMP = 10;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
        */
-      public Builder clearMAEIPCNGEMP() {
-        mAEIPCNGEMP_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
+      public Builder clearCFABJKLBHLD() {
+        if (cFABJKLBHLDBuilder_ == null) {
+          cFABJKLBHLD_ = null;
+          onChanged();
+        } else {
+          cFABJKLBHLD_ = null;
+          cFABJKLBHLDBuilder_ = null;
+        }
+
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+       */
+      public emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder getCFABJKLBHLDBuilder() {
+        
+        onChanged();
+        return getCFABJKLBHLDFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+       */
+      public emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder getCFABJKLBHLDOrBuilder() {
+        if (cFABJKLBHLDBuilder_ != null) {
+          return cFABJKLBHLDBuilder_.getMessageOrBuilder();
+        } else {
+          return cFABJKLBHLD_ == null ?
+              emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.getDefaultInstance() : cFABJKLBHLD_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PKNHLIMKAHC CFABJKLBHLD = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder> 
+          getCFABJKLBHLDFieldBuilder() {
+        if (cFABJKLBHLDBuilder_ == null) {
+          cFABJKLBHLDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHC.Builder, emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.PKNHLIMKAHCOrBuilder>(
+                  getCFABJKLBHLD(),
+                  getParentForChildren(),
+                  isClean());
+          cFABJKLBHLD_ = null;
+        }
+        return cFABJKLBHLDBuilder_;
       }
 
       private com.google.protobuf.Internal.LongList avatarGuidList_ = emptyLongList();
       private void ensureAvatarGuidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           avatarGuidList_ = mutableCopy(avatarGuidList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @return A list containing the avatarGuidList.
        */
       public java.util.List<java.lang.Long>
           getAvatarGuidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @return The count of avatarGuidList.
        */
       public int getAvatarGuidListCount() {
         return avatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
        */
@@ -1073,7 +1630,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
        * @return This builder for chaining.
@@ -1086,7 +1647,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -1097,7 +1662,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -1110,160 +1679,725 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint64 avatar_guid_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuidList() {
         avatarGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList fGDGEBBIMMP_ = emptyLongList();
+      private void ensureFGDGEBBIMMPIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          fGDGEBBIMMP_ = mutableCopy(fGDGEBBIMMP_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @return A list containing the fGDGEBBIMMP.
+       */
+      public java.util.List<java.lang.Long>
+          getFGDGEBBIMMPList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(fGDGEBBIMMP_) : fGDGEBBIMMP_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @return The count of fGDGEBBIMMP.
+       */
+      public int getFGDGEBBIMMPCount() {
+        return fGDGEBBIMMP_.size();
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @param index The index of the element to return.
+       * @return The fGDGEBBIMMP at the given index.
+       */
+      public long getFGDGEBBIMMP(int index) {
+        return fGDGEBBIMMP_.getLong(index);
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @param index The index to set the value at.
+       * @param value The fGDGEBBIMMP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFGDGEBBIMMP(
+          int index, long value) {
+        ensureFGDGEBBIMMPIsMutable();
+        fGDGEBBIMMP_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @param value The fGDGEBBIMMP to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFGDGEBBIMMP(long value) {
+        ensureFGDGEBBIMMPIsMutable();
+        fGDGEBBIMMP_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @param values The fGDGEBBIMMP to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFGDGEBBIMMP(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureFGDGEBBIMMPIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, fGDGEBBIMMP_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint64 FGDGEBBIMMP = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFGDGEBBIMMP() {
+        fGDGEBBIMMP_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList eBPMPJGECHK_ = emptyIntList();
-      private void ensureEBPMPJGECHKIsMutable() {
+      private com.google.protobuf.Internal.IntList iANKHEGINAH_ = emptyIntList();
+      private void ensureIANKHEGINAHIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          eBPMPJGECHK_ = mutableCopy(eBPMPJGECHK_);
+          iANKHEGINAH_ = mutableCopy(iANKHEGINAH_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-       * @return A list containing the eBPMPJGECHK.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
+       * @return A list containing the iANKHEGINAH.
        */
       public java.util.List<java.lang.Integer>
-          getEBPMPJGECHKList() {
+          getIANKHEGINAHList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(eBPMPJGECHK_) : eBPMPJGECHK_;
+                 java.util.Collections.unmodifiableList(iANKHEGINAH_) : iANKHEGINAH_;
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-       * @return The count of eBPMPJGECHK.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
+       * @return The count of iANKHEGINAH.
        */
-      public int getEBPMPJGECHKCount() {
-        return eBPMPJGECHK_.size();
+      public int getIANKHEGINAHCount() {
+        return iANKHEGINAH_.size();
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
        * @param index The index of the element to return.
-       * @return The eBPMPJGECHK at the given index.
+       * @return The iANKHEGINAH at the given index.
        */
-      public int getEBPMPJGECHK(int index) {
-        return eBPMPJGECHK_.getInt(index);
+      public int getIANKHEGINAH(int index) {
+        return iANKHEGINAH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
        * @param index The index to set the value at.
-       * @param value The eBPMPJGECHK to set.
+       * @param value The iANKHEGINAH to set.
        * @return This builder for chaining.
        */
-      public Builder setEBPMPJGECHK(
+      public Builder setIANKHEGINAH(
           int index, int value) {
-        ensureEBPMPJGECHKIsMutable();
-        eBPMPJGECHK_.setInt(index, value);
+        ensureIANKHEGINAHIsMutable();
+        iANKHEGINAH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-       * @param value The eBPMPJGECHK to add.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
+       * @param value The iANKHEGINAH to add.
        * @return This builder for chaining.
        */
-      public Builder addEBPMPJGECHK(int value) {
-        ensureEBPMPJGECHKIsMutable();
-        eBPMPJGECHK_.addInt(value);
+      public Builder addIANKHEGINAH(int value) {
+        ensureIANKHEGINAHIsMutable();
+        iANKHEGINAH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
-       * @param values The eBPMPJGECHK to add.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
+       * @param values The iANKHEGINAH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllEBPMPJGECHK(
+      public Builder addAllIANKHEGINAH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEBPMPJGECHKIsMutable();
+        ensureIANKHEGINAHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, eBPMPJGECHK_);
+            values, iANKHEGINAH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 EBPMPJGECHK = 3;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 IANKHEGINAH = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEBPMPJGECHK() {
-        eBPMPJGECHK_ = emptyIntList();
+      public Builder clearIANKHEGINAH() {
+        iANKHEGINAH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
-      private int useTime_ ;
+      private java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> aCKGGNJNDEH_ =
+        java.util.Collections.emptyList();
+      private void ensureACKGGNJNDEHIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          aCKGGNJNDEH_ = new java.util.ArrayList<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK>(aCKGGNJNDEH_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder> aCKGGNJNDEHBuilder_;
+
       /**
-       * <code>uint32 use_time = 14;</code>
-       * @return The useTime.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
        */
-      @java.lang.Override
-      public int getUseTime() {
-        return useTime_;
+      public java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> getACKGGNJNDEHList() {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(aCKGGNJNDEH_);
+        } else {
+          return aCKGGNJNDEHBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>uint32 use_time = 14;</code>
-       * @param value The useTime to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public int getACKGGNJNDEHCount() {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          return aCKGGNJNDEH_.size();
+        } else {
+          return aCKGGNJNDEHBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK getACKGGNJNDEH(int index) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          return aCKGGNJNDEH_.get(index);
+        } else {
+          return aCKGGNJNDEHBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder setACKGGNJNDEH(
+          int index, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK value) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.set(index, value);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder setACKGGNJNDEH(
+          int index, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder builderForValue) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder addACKGGNJNDEH(emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK value) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.add(value);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder addACKGGNJNDEH(
+          int index, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK value) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.add(index, value);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder addACKGGNJNDEH(
+          emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder builderForValue) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.add(builderForValue.build());
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder addACKGGNJNDEH(
+          int index, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder builderForValue) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder addAllACKGGNJNDEH(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK> values) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          ensureACKGGNJNDEHIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, aCKGGNJNDEH_);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder clearACKGGNJNDEH() {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          aCKGGNJNDEH_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public Builder removeACKGGNJNDEH(int index) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          ensureACKGGNJNDEHIsMutable();
+          aCKGGNJNDEH_.remove(index);
+          onChanged();
+        } else {
+          aCKGGNJNDEHBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder getACKGGNJNDEHBuilder(
+          int index) {
+        return getACKGGNJNDEHFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder getACKGGNJNDEHOrBuilder(
+          int index) {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          return aCKGGNJNDEH_.get(index);  } else {
+          return aCKGGNJNDEHBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder> 
+           getACKGGNJNDEHOrBuilderList() {
+        if (aCKGGNJNDEHBuilder_ != null) {
+          return aCKGGNJNDEHBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(aCKGGNJNDEH_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder addACKGGNJNDEHBuilder() {
+        return getACKGGNJNDEHFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder addACKGGNJNDEHBuilder(
+          int index) {
+        return getACKGGNJNDEHFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated .DJHJPDPOOFK ACKGGNJNDEH = 8;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder> 
+           getACKGGNJNDEHBuilderList() {
+        return getACKGGNJNDEHFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder> 
+          getACKGGNJNDEHFieldBuilder() {
+        if (aCKGGNJNDEHBuilder_ == null) {
+          aCKGGNJNDEHBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFK.Builder, emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.DJHJPDPOOFKOrBuilder>(
+                  aCKGGNJNDEH_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          aCKGGNJNDEH_ = null;
+        }
+        return aCKGGNJNDEHBuilder_;
+      }
+
+      private boolean iPLADCLOPNP_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>bool IPLADCLOPNP = 12;</code>
+       * @return The iPLADCLOPNP.
+       */
+      @java.lang.Override
+      public boolean getIPLADCLOPNP() {
+        return iPLADCLOPNP_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>bool IPLADCLOPNP = 12;</code>
+       * @param value The iPLADCLOPNP to set.
        * @return This builder for chaining.
        */
-      public Builder setUseTime(int value) {
+      public Builder setIPLADCLOPNP(boolean value) {
         
-        useTime_ = value;
+        iPLADCLOPNP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 use_time = 14;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>bool IPLADCLOPNP = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUseTime() {
+      public Builder clearIPLADCLOPNP() {
         
-        useTime_ = 0;
+        iPLADCLOPNP_ = false;
         onChanged();
         return this;
       }
 
-      private int hMJFGHGIPHH_ ;
+      private boolean bLEGLHINAIC_ ;
       /**
-       * <code>uint32 HMJFGHGIPHH = 7;</code>
-       * @return The hMJFGHGIPHH.
+       * <pre>
+       * offset: 73
+       * </pre>
+       *
+       * <code>bool BLEGLHINAIC = 5;</code>
+       * @return The bLEGLHINAIC.
        */
       @java.lang.Override
-      public int getHMJFGHGIPHH() {
-        return hMJFGHGIPHH_;
+      public boolean getBLEGLHINAIC() {
+        return bLEGLHINAIC_;
       }
       /**
-       * <code>uint32 HMJFGHGIPHH = 7;</code>
-       * @param value The hMJFGHGIPHH to set.
+       * <pre>
+       * offset: 73
+       * </pre>
+       *
+       * <code>bool BLEGLHINAIC = 5;</code>
+       * @param value The bLEGLHINAIC to set.
        * @return This builder for chaining.
        */
-      public Builder setHMJFGHGIPHH(int value) {
+      public Builder setBLEGLHINAIC(boolean value) {
         
-        hMJFGHGIPHH_ = value;
+        bLEGLHINAIC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HMJFGHGIPHH = 7;</code>
+       * <pre>
+       * offset: 73
+       * </pre>
+       *
+       * <code>bool BLEGLHINAIC = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHMJFGHGIPHH() {
+      public Builder clearBLEGLHINAIC() {
         
-        hMJFGHGIPHH_ = 0;
+        bLEGLHINAIC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int gMNGPCMGKPD_ ;
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 15;</code>
+       * @return The gMNGPCMGKPD.
+       */
+      @java.lang.Override
+      public int getGMNGPCMGKPD() {
+        return gMNGPCMGKPD_;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 15;</code>
+       * @param value The gMNGPCMGKPD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGMNGPCMGKPD(int value) {
+        
+        gMNGPCMGKPD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGMNGPCMGKPD() {
+        
+        gMNGPCMGKPD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oEEGEAOOKNF_ ;
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 OEEGEAOOKNF = 11;</code>
+       * @return The oEEGEAOOKNF.
+       */
+      @java.lang.Override
+      public int getOEEGEAOOKNF() {
+        return oEEGEAOOKNF_;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 OEEGEAOOKNF = 11;</code>
+       * @param value The oEEGEAOOKNF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOEEGEAOOKNF(int value) {
+        
+        oEEGEAOOKNF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 OEEGEAOOKNF = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOEEGEAOOKNF() {
+        
+        oEEGEAOOKNF_ = 0;
         onChanged();
         return this;
       }
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 2;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -1271,7 +2405,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 2;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -1282,7 +2420,11 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -1292,95 +2434,119 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int lNOJFHLAJAE_ ;
+      private int useTime_ ;
       /**
-       * <code>uint32 LNOJFHLAJAE = 1;</code>
-       * @return The lNOJFHLAJAE.
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 use_time = 9;</code>
+       * @return The useTime.
        */
       @java.lang.Override
-      public int getLNOJFHLAJAE() {
-        return lNOJFHLAJAE_;
+      public int getUseTime() {
+        return useTime_;
       }
       /**
-       * <code>uint32 LNOJFHLAJAE = 1;</code>
-       * @param value The lNOJFHLAJAE to set.
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 use_time = 9;</code>
+       * @param value The useTime to set.
        * @return This builder for chaining.
        */
-      public Builder setLNOJFHLAJAE(int value) {
+      public Builder setUseTime(int value) {
         
-        lNOJFHLAJAE_ = value;
+        useTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LNOJFHLAJAE = 1;</code>
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 use_time = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLNOJFHLAJAE() {
+      public Builder clearUseTime() {
         
-        lNOJFHLAJAE_ = 0;
+        useTime_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean hJJCGGHNLHF_ ;
+      private int kEHFEPDKBCH_ = 0;
       /**
-       * <code>bool HJJCGGHNLHF = 11;</code>
-       * @return The hJJCGGHNLHF.
+       * <pre>
+       * offset: 92
+       * </pre>
+       *
+       * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+       * @return The enum numeric value on the wire for kEHFEPDKBCH.
+       */
+      @java.lang.Override public int getKEHFEPDKBCHValue() {
+        return kEHFEPDKBCH_;
+      }
+      /**
+       * <pre>
+       * offset: 92
+       * </pre>
+       *
+       * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+       * @param value The enum numeric value on the wire for kEHFEPDKBCH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEHFEPDKBCHValue(int value) {
+        
+        kEHFEPDKBCH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 92
+       * </pre>
+       *
+       * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+       * @return The kEHFEPDKBCH.
        */
       @java.lang.Override
-      public boolean getHJJCGGHNLHF() {
-        return hJJCGGHNLHF_;
+      public emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ getKEHFEPDKBCH() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ result = emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.valueOf(kEHFEPDKBCH_);
+        return result == null ? emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ.UNRECOGNIZED : result;
       }
       /**
-       * <code>bool HJJCGGHNLHF = 11;</code>
-       * @param value The hJJCGGHNLHF to set.
+       * <pre>
+       * offset: 92
+       * </pre>
+       *
+       * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
+       * @param value The kEHFEPDKBCH to set.
        * @return This builder for chaining.
        */
-      public Builder setHJJCGGHNLHF(boolean value) {
+      public Builder setKEHFEPDKBCH(emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.BKGEJCGIBCJ value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        hJJCGGHNLHF_ = value;
+        kEHFEPDKBCH_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>bool HJJCGGHNLHF = 11;</code>
+       * <pre>
+       * offset: 92
+       * </pre>
+       *
+       * <code>.BKGEJCGIBCJ KEHFEPDKBCH = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHJJCGGHNLHF() {
+      public Builder clearKEHFEPDKBCH() {
         
-        hJJCGGHNLHF_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean eGNCHPPOAJH_ ;
-      /**
-       * <code>bool EGNCHPPOAJH = 9;</code>
-       * @return The eGNCHPPOAJH.
-       */
-      @java.lang.Override
-      public boolean getEGNCHPPOAJH() {
-        return eGNCHPPOAJH_;
-      }
-      /**
-       * <code>bool EGNCHPPOAJH = 9;</code>
-       * @param value The eGNCHPPOAJH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEGNCHPPOAJH(boolean value) {
-        
-        eGNCHPPOAJH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool EGNCHPPOAJH = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEGNCHPPOAJH() {
-        
-        eGNCHPPOAJH_ = false;
+        kEHFEPDKBCH_ = 0;
         onChanged();
         return this;
       }
@@ -1451,25 +2617,35 @@ public final class RoleCombatDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!RoleCombatDungeonSettleInfo.proto\"\336\001\n\033" +
-      "RoleCombatDungeonSettleInfo\022\023\n\013MAEIPCNGE" +
-      "MP\030\n \003(\004\022\030\n\020avatar_guid_list\030\005 \003(\004\022\023\n\013EB" +
-      "PMPJGECHK\030\003 \003(\r\022\020\n\010use_time\030\016 \001(\r\022\023\n\013HMJ" +
-      "FGHGIPHH\030\007 \001(\r\022\025\n\rdifficulty_id\030\014 \001(\r\022\023\n" +
-      "\013LNOJFHLAJAE\030\001 \001(\r\022\023\n\013HJJCGGHNLHF\030\013 \001(\010\022" +
-      "\023\n\013EGNCHPPOAJH\030\t \001(\010B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n!RoleCombatDungeonSettleInfo.proto\032\021BKG" +
+      "EJCGIBCJ.proto\032\021DJHJPDPOOFK.proto\032\021PKNHL" +
+      "IMKAHC.proto\"\307\002\n\033RoleCombatDungeonSettle" +
+      "Info\022!\n\013CFABJKLBHLD\030\007 \001(\0132\014.PKNHLIMKAHC\022" +
+      "\030\n\020avatar_guid_list\030\004 \003(\004\022\023\n\013FGDGEBBIMMP" +
+      "\030\001 \003(\004\022\023\n\013IANKHEGINAH\030\006 \003(\r\022!\n\013ACKGGNJND" +
+      "EH\030\010 \003(\0132\014.DJHJPDPOOFK\022\023\n\013IPLADCLOPNP\030\014 " +
+      "\001(\010\022\023\n\013BLEGLHINAIC\030\005 \001(\010\022\023\n\013GMNGPCMGKPD\030" +
+      "\017 \001(\r\022\023\n\013OEEGEAOOKNF\030\013 \001(\r\022\025\n\rdifficulty" +
+      "_id\030\002 \001(\r\022\020\n\010use_time\030\t \001(\r\022!\n\013KEHFEPDKB" +
+      "CH\030\r \001(\0162\014.BKGEJCGIBCJB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.getDescriptor(),
         });
     internal_static_RoleCombatDungeonSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RoleCombatDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoleCombatDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "MAEIPCNGEMP", "AvatarGuidList", "EBPMPJGECHK", "UseTime", "HMJFGHGIPHH", "DifficultyId", "LNOJFHLAJAE", "HJJCGGHNLHF", "EGNCHPPOAJH", });
+        new java.lang.String[] { "CFABJKLBHLD", "AvatarGuidList", "FGDGEBBIMMP", "IANKHEGINAH", "ACKGGNJNDEH", "IPLADCLOPNP", "BLEGLHINAIC", "GMNGPCMGKPD", "OEEGEAOOKNF", "DifficultyId", "UseTime", "KEHFEPDKBCH", });
+    emu.grasscutter.net.proto.BKGEJCGIBCJOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.DJHJPDPOOFKOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PKNHLIMKAHCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

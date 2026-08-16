@@ -19,12 +19,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 character_id = 8;</code>
-     * @return The characterId.
-     */
-    int getCharacterId();
-
-    /**
      * <code>repeated uint32 unlock_level_id_list = 11;</code>
      * @return A list containing the unlockLevelIdList.
      */
@@ -40,12 +34,14 @@ public final class GCGTCTavernChallengeDataOuterClass {
      * @return The unlockLevelIdList at the given index.
      */
     int getUnlockLevelIdList(int index);
+
+    /**
+     * <code>uint32 character_id = 2;</code>
+     * @return The characterId.
+     */
+    int getCharacterId();
   }
   /**
-   * <pre>
-   * Obf: AFKIPMINMAC
-   * </pre>
-   *
    * Protobuf type {@code GCGTCTavernChallengeData}
    */
   public static final class GCGTCTavernChallengeData extends
@@ -92,7 +88,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 16: {
 
               characterId_ = input.readUInt32();
               break;
@@ -153,17 +149,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
               emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.class, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder.class);
     }
 
-    public static final int CHARACTER_ID_FIELD_NUMBER = 8;
-    private int characterId_;
-    /**
-     * <code>uint32 character_id = 8;</code>
-     * @return The characterId.
-     */
-    @java.lang.Override
-    public int getCharacterId() {
-      return characterId_;
-    }
-
     public static final int UNLOCK_LEVEL_ID_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList unlockLevelIdList_;
     /**
@@ -192,6 +177,17 @@ public final class GCGTCTavernChallengeDataOuterClass {
     }
     private int unlockLevelIdListMemoizedSerializedSize = -1;
 
+    public static final int CHARACTER_ID_FIELD_NUMBER = 2;
+    private int characterId_;
+    /**
+     * <code>uint32 character_id = 2;</code>
+     * @return The characterId.
+     */
+    @java.lang.Override
+    public int getCharacterId() {
+      return characterId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -208,7 +204,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (characterId_ != 0) {
-        output.writeUInt32(8, characterId_);
+        output.writeUInt32(2, characterId_);
       }
       if (getUnlockLevelIdListList().size() > 0) {
         output.writeUInt32NoTag(90);
@@ -228,7 +224,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
       size = 0;
       if (characterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, characterId_);
+          .computeUInt32Size(2, characterId_);
       }
       {
         int dataSize = 0;
@@ -259,10 +255,10 @@ public final class GCGTCTavernChallengeDataOuterClass {
       }
       emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData other = (emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData) obj;
 
-      if (getCharacterId()
-          != other.getCharacterId()) return false;
       if (!getUnlockLevelIdListList()
           .equals(other.getUnlockLevelIdListList())) return false;
+      if (getCharacterId()
+          != other.getCharacterId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,12 +270,12 @@ public final class GCGTCTavernChallengeDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHARACTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCharacterId();
       if (getUnlockLevelIdListCount() > 0) {
         hash = (37 * hash) + UNLOCK_LEVEL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUnlockLevelIdListList().hashCode();
       }
+      hash = (37 * hash) + CHARACTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCharacterId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +372,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AFKIPMINMAC
-     * </pre>
-     *
      * Protobuf type {@code GCGTCTavernChallengeData}
      */
     public static final class Builder extends
@@ -417,10 +409,10 @@ public final class GCGTCTavernChallengeDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        characterId_ = 0;
-
         unlockLevelIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        characterId_ = 0;
+
         return this;
       }
 
@@ -448,12 +440,12 @@ public final class GCGTCTavernChallengeDataOuterClass {
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData buildPartial() {
         emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData result = new emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData(this);
         int from_bitField0_ = bitField0_;
-        result.characterId_ = characterId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           unlockLevelIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.unlockLevelIdList_ = unlockLevelIdList_;
+        result.characterId_ = characterId_;
         onBuilt();
         return result;
       }
@@ -502,9 +494,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData other) {
         if (other == emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.getDefaultInstance()) return this;
-        if (other.getCharacterId() != 0) {
-          setCharacterId(other.getCharacterId());
-        }
         if (!other.unlockLevelIdList_.isEmpty()) {
           if (unlockLevelIdList_.isEmpty()) {
             unlockLevelIdList_ = other.unlockLevelIdList_;
@@ -514,6 +503,9 @@ public final class GCGTCTavernChallengeDataOuterClass {
             unlockLevelIdList_.addAll(other.unlockLevelIdList_);
           }
           onChanged();
+        }
+        if (other.getCharacterId() != 0) {
+          setCharacterId(other.getCharacterId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,37 +536,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int characterId_ ;
-      /**
-       * <code>uint32 character_id = 8;</code>
-       * @return The characterId.
-       */
-      @java.lang.Override
-      public int getCharacterId() {
-        return characterId_;
-      }
-      /**
-       * <code>uint32 character_id = 8;</code>
-       * @param value The characterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCharacterId(int value) {
-        
-        characterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 character_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCharacterId() {
-        
-        characterId_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList unlockLevelIdList_ = emptyIntList();
       private void ensureUnlockLevelIdListIsMutable() {
@@ -654,6 +615,37 @@ public final class GCGTCTavernChallengeDataOuterClass {
         onChanged();
         return this;
       }
+
+      private int characterId_ ;
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @return The characterId.
+       */
+      @java.lang.Override
+      public int getCharacterId() {
+        return characterId_;
+      }
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @param value The characterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCharacterId(int value) {
+        
+        characterId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCharacterId() {
+        
+        characterId_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -722,8 +714,8 @@ public final class GCGTCTavernChallengeDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGTCTavernChallengeData.proto\"N\n\030GCGT" +
-      "CTavernChallengeData\022\024\n\014character_id\030\010 \001" +
-      "(\r\022\034\n\024unlock_level_id_list\030\013 \003(\rB\033\n\031emu." +
+      "CTavernChallengeData\022\034\n\024unlock_level_id_" +
+      "list\030\013 \003(\r\022\024\n\014character_id\030\002 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -735,7 +727,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
     internal_static_GCGTCTavernChallengeData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGTCTavernChallengeData_descriptor,
-        new java.lang.String[] { "CharacterId", "UnlockLevelIdList", });
+        new java.lang.String[] { "UnlockLevelIdList", "CharacterId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

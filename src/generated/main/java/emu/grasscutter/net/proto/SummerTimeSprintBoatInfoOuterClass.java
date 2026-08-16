@@ -19,27 +19,47 @@ public final class SummerTimeSprintBoatInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> 
+    java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> 
         getRecordListList();
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
-    emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord getRecordList(int index);
+    emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG getRecordList(int index);
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     int getRecordListCount();
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder> 
         getRecordListOrBuilderList();
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
-    emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder getRecordListOrBuilder(
+    emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder getRecordListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class SummerTimeSprintBoatInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord>();
+                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG>();
                 mutable_bitField0_ |= 0x00000001;
               }
               recordList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class SummerTimeSprintBoatInfoOuterClass {
               emu.grasscutter.net.proto.SummerTimeSprintBoatInfoOuterClass.SummerTimeSprintBoatInfo.class, emu.grasscutter.net.proto.SummerTimeSprintBoatInfoOuterClass.SummerTimeSprintBoatInfo.Builder.class);
     }
 
-    public static final int RECORD_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> recordList_;
+    public static final int RECORD_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> recordList_;
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> getRecordListList() {
+    public java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> getRecordListList() {
       return recordList_;
     }
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder> 
         getRecordListOrBuilderList() {
       return recordList_;
     }
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     @java.lang.Override
     public int getRecordListCount() {
       return recordList_.size();
     }
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord getRecordList(int index) {
+    public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG getRecordList(int index) {
       return recordList_.get(index);
     }
     /**
-     * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .PIGMGHINFAG record_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder getRecordListOrBuilder(
+    public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder getRecordListOrBuilder(
         int index) {
       return recordList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class SummerTimeSprintBoatInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < recordList_.size(); i++) {
-        output.writeMessage(9, recordList_.get(i));
+        output.writeMessage(5, recordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class SummerTimeSprintBoatInfoOuterClass {
       size = 0;
       for (int i = 0; i < recordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, recordList_.get(i));
+          .computeMessageSize(5, recordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class SummerTimeSprintBoatInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> recordList_ =
+      private java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> recordList_ =
         java.util.Collections.emptyList();
       private void ensureRecordListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord>(recordList_);
+          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG>(recordList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder> recordListBuilder_;
+          emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder> recordListBuilder_;
 
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> getRecordListList() {
+      public java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> getRecordListList() {
         if (recordListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(recordList_);
         } else {
@@ -538,7 +582,11 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public int getRecordListCount() {
         if (recordListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord getRecordList(int index) {
+      public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG getRecordList(int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord value) {
+          int index, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public Builder addRecordList(emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord value) {
+      public Builder addRecordList(emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord value) {
+          int index, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder addRecordList(
-          emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder builderForValue) {
+          emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder addAllRecordList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG> values) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder clearRecordList() {
         if (recordListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
       public Builder removeRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder getRecordListBuilder(
+      public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder getRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder getRecordListOrBuilder(
+      public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder getRecordListOrBuilder(
           int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder> 
            getRecordListOrBuilderList() {
         if (recordListBuilder_ != null) {
           return recordListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class SummerTimeSprintBoatInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder addRecordListBuilder() {
+      public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder addRecordListBuilder() {
         return getRecordListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.getDefaultInstance());
+            emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.getDefaultInstance());
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder addRecordListBuilder(
+      public emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder addRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.getDefaultInstance());
+            index, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.getDefaultInstance());
       }
       /**
-       * <code>repeated .SummerTimeSprintBoatRecord record_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .PIGMGHINFAG record_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder> 
            getRecordListBuilderList() {
         return getRecordListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder> 
+          emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder> 
           getRecordListFieldBuilder() {
         if (recordListBuilder_ == null) {
           recordListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecordOrBuilder>(
+              emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAG.Builder, emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.PIGMGHINFAGOrBuilder>(
                   recordList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class SummerTimeSprintBoatInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SummerTimeSprintBoatInfo.proto\032 Summer" +
-      "TimeSprintBoatRecord.proto\"L\n\030SummerTime" +
-      "SprintBoatInfo\0220\n\013record_list\030\t \003(\0132\033.Su" +
-      "mmerTimeSprintBoatRecordB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\036SummerTimeSprintBoatInfo.proto\032\021PIGMGH" +
+      "INFAG.proto\"=\n\030SummerTimeSprintBoatInfo\022" +
+      "!\n\013record_list\030\005 \003(\0132\014.PIGMGHINFAGB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.getDescriptor(),
         });
     internal_static_SummerTimeSprintBoatInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class SummerTimeSprintBoatInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeSprintBoatInfo_descriptor,
         new java.lang.String[] { "RecordList", });
-    emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PIGMGHINFAGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,15 +19,14 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 2;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 7995
-   * Obf: EAKOKKOMIAJ
+   * CmdId: 7085
    * </pre>
    *
    * Protobuf type {@code PlantFlowerHaveRecvFlowerNotify}
@@ -74,7 +73,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 96: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
               emu.grasscutter.net.proto.PlantFlowerHaveRecvFlowerNotifyOuterClass.PlantFlowerHaveRecvFlowerNotify.class, emu.grasscutter.net.proto.PlantFlowerHaveRecvFlowerNotifyOuterClass.PlantFlowerHaveRecvFlowerNotify.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 2;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 2;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(2, scheduleId_);
+        output.writeUInt32(12, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, scheduleId_);
+          .computeUInt32Size(12, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7995
-     * Obf: EAKOKKOMIAJ
+     * CmdId: 7085
      * </pre>
      *
      * Protobuf type {@code PlantFlowerHaveRecvFlowerNotify}
@@ -431,7 +429,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 2;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 2;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 2;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -528,7 +526,7 @@ public final class PlantFlowerHaveRecvFlowerNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%PlantFlowerHaveRecvFlowerNotify.proto\"" +
       "6\n\037PlantFlowerHaveRecvFlowerNotify\022\023\n\013sc" +
-      "hedule_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "hedule_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

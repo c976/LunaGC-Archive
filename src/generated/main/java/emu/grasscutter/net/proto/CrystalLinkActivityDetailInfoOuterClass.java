@@ -19,31 +19,55 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> 
         getLevelInfoListList();
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN getLevelInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder getLevelInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 15;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
@@ -95,16 +119,16 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 120: {
 
               difficultyId_ = input.readUInt32();
               break;
@@ -144,50 +168,74 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo.class, emu.grasscutter.net.proto.CrystalLinkActivityDetailInfoOuterClass.CrystalLinkActivityDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> levelInfoList_;
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 15;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 15;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -210,10 +258,10 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(8, levelInfoList_.get(i));
+        output.writeMessage(12, levelInfoList_.get(i));
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(11, difficultyId_);
+        output.writeUInt32(15, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,11 +274,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, levelInfoList_.get(i));
+          .computeMessageSize(12, levelInfoList_.get(i));
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficultyId_);
+          .computeUInt32Size(15, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -554,22 +602,26 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -577,7 +629,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -587,9 +643,13 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -597,10 +657,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+          int index, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -614,10 +678,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -628,9 +696,13 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -644,10 +716,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo value) {
+          int index, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -661,10 +737,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -675,10 +755,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -689,10 +773,14 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -704,7 +792,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -717,7 +809,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -730,16 +826,24 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -747,9 +851,13 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -758,33 +866,45 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AOAKFMCNMHN level_info_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.Builder, emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHN.Builder, emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.AOAKFMCNMHNOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -796,7 +916,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 15;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -804,7 +928,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 15;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -815,7 +943,11 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -891,17 +1023,16 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#CrystalLinkActivityDetailInfo.proto\032\032C" +
-      "rystalLinkLevelInfo.proto\"f\n\035CrystalLink" +
-      "ActivityDetailInfo\022.\n\017level_info_list\030\010 " +
-      "\003(\0132\025.CrystalLinkLevelInfo\022\025\n\rdifficulty" +
-      "_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n#CrystalLinkActivityDetailInfo.proto\032\021A" +
+      "OAKFMCNMHN.proto\"]\n\035CrystalLinkActivityD" +
+      "etailInfo\022%\n\017level_info_list\030\014 \003(\0132\014.AOA" +
+      "KFMCNMHN\022\025\n\rdifficulty_id\030\017 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.getDescriptor(),
         });
     internal_static_CrystalLinkActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -909,7 +1040,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkActivityDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", "DifficultyId", });
-    emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AOAKFMCNMHNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,57 +19,56 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 KJCLNIGPNDF = 3;</code>
-     * @return The kJCLNIGPNDF.
+     * <code>uint32 BJGIIIGLFEK = 1;</code>
+     * @return The bJGIIIGLFEK.
      */
-    int getKJCLNIGPNDF();
+    int getBJGIIIGLFEK();
 
     /**
-     * <code>uint32 OKJOJDABKGC = 15;</code>
-     * @return The oKJOJDABKGC.
+     * <code>uint32 ENIGEOBHHEP = 3;</code>
+     * @return The eNIGEOBHHEP.
      */
-    int getOKJOJDABKGC();
+    int getENIGEOBHHEP();
 
     /**
-     * <code>uint32 DPOBEKFGJOP = 6;</code>
-     * @return The dPOBEKFGJOP.
+     * <code>uint32 coin_num = 7;</code>
+     * @return The coinNum.
      */
-    int getDPOBEKFGJOP();
+    int getCoinNum();
 
     /**
-     * <code>uint32 NHFGIBDCPGC = 13;</code>
-     * @return The nHFGIBDCPGC.
+     * <code>uint32 GAHGDBJJIEB = 8;</code>
+     * @return The gAHGDBJJIEB.
      */
-    int getNHFGIBDCPGC();
+    int getGAHGDBJJIEB();
 
     /**
-     * <code>uint32 GIMCFEIADKI = 9;</code>
-     * @return The gIMCFEIADKI.
+     * <code>uint32 CKBNJPECIPG = 9;</code>
+     * @return The cKBNJPECIPG.
      */
-    int getGIMCFEIADKI();
+    int getCKBNJPECIPG();
 
     /**
-     * <code>uint32 GCMNEADPFBH = 2;</code>
-     * @return The gCMNEADPFBH.
+     * <code>uint32 killed_monster_num = 12;</code>
+     * @return The killedMonsterNum.
      */
-    int getGCMNEADPFBH();
+    int getKilledMonsterNum();
 
     /**
-     * <code>uint32 GPPOHEOBDGJ = 5;</code>
-     * @return The gPPOHEOBDGJ.
+     * <code>uint32 AKEACLCDIPO = 14;</code>
+     * @return The aKEACLCDIPO.
      */
-    int getGPPOHEOBDGJ();
+    int getAKEACLCDIPO();
 
     /**
-     * <code>uint32 EHLLLIJFOJG = 12;</code>
-     * @return The eHLLLIJFOJG.
+     * <code>uint32 NIBMGMPEDLK = 15;</code>
+     * @return The nIBMGMPEDLK.
      */
-    int getEHLLLIJFOJG();
+    int getNIBMGMPEDLK();
   }
   /**
    * <pre>
-   * CmdId: 4173
-   * Obf: ABKDMDEBLNB
+   * CmdId: 24030
    * </pre>
    *
    * Protobuf type {@code WindFieldGalleryInfoNotify}
@@ -116,44 +115,44 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              gCMNEADPFBH_ = input.readUInt32();
+              bJGIIIGLFEK_ = input.readUInt32();
               break;
             }
             case 24: {
 
-              kJCLNIGPNDF_ = input.readUInt32();
+              eNIGEOBHHEP_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 56: {
 
-              gPPOHEOBDGJ_ = input.readUInt32();
+              coinNum_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 64: {
 
-              dPOBEKFGJOP_ = input.readUInt32();
+              gAHGDBJJIEB_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              gIMCFEIADKI_ = input.readUInt32();
+              cKBNJPECIPG_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              eHLLLIJFOJG_ = input.readUInt32();
+              killedMonsterNum_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
-              nHFGIBDCPGC_ = input.readUInt32();
+              aKEACLCDIPO_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              oKJOJDABKGC_ = input.readUInt32();
+              nIBMGMPEDLK_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,92 +187,92 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
               emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.class, emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.Builder.class);
     }
 
-    public static final int KJCLNIGPNDF_FIELD_NUMBER = 3;
-    private int kJCLNIGPNDF_;
+    public static final int BJGIIIGLFEK_FIELD_NUMBER = 1;
+    private int bJGIIIGLFEK_;
     /**
-     * <code>uint32 KJCLNIGPNDF = 3;</code>
-     * @return The kJCLNIGPNDF.
+     * <code>uint32 BJGIIIGLFEK = 1;</code>
+     * @return The bJGIIIGLFEK.
      */
     @java.lang.Override
-    public int getKJCLNIGPNDF() {
-      return kJCLNIGPNDF_;
+    public int getBJGIIIGLFEK() {
+      return bJGIIIGLFEK_;
     }
 
-    public static final int OKJOJDABKGC_FIELD_NUMBER = 15;
-    private int oKJOJDABKGC_;
+    public static final int ENIGEOBHHEP_FIELD_NUMBER = 3;
+    private int eNIGEOBHHEP_;
     /**
-     * <code>uint32 OKJOJDABKGC = 15;</code>
-     * @return The oKJOJDABKGC.
+     * <code>uint32 ENIGEOBHHEP = 3;</code>
+     * @return The eNIGEOBHHEP.
      */
     @java.lang.Override
-    public int getOKJOJDABKGC() {
-      return oKJOJDABKGC_;
+    public int getENIGEOBHHEP() {
+      return eNIGEOBHHEP_;
     }
 
-    public static final int DPOBEKFGJOP_FIELD_NUMBER = 6;
-    private int dPOBEKFGJOP_;
+    public static final int COIN_NUM_FIELD_NUMBER = 7;
+    private int coinNum_;
     /**
-     * <code>uint32 DPOBEKFGJOP = 6;</code>
-     * @return The dPOBEKFGJOP.
+     * <code>uint32 coin_num = 7;</code>
+     * @return The coinNum.
      */
     @java.lang.Override
-    public int getDPOBEKFGJOP() {
-      return dPOBEKFGJOP_;
+    public int getCoinNum() {
+      return coinNum_;
     }
 
-    public static final int NHFGIBDCPGC_FIELD_NUMBER = 13;
-    private int nHFGIBDCPGC_;
+    public static final int GAHGDBJJIEB_FIELD_NUMBER = 8;
+    private int gAHGDBJJIEB_;
     /**
-     * <code>uint32 NHFGIBDCPGC = 13;</code>
-     * @return The nHFGIBDCPGC.
+     * <code>uint32 GAHGDBJJIEB = 8;</code>
+     * @return The gAHGDBJJIEB.
      */
     @java.lang.Override
-    public int getNHFGIBDCPGC() {
-      return nHFGIBDCPGC_;
+    public int getGAHGDBJJIEB() {
+      return gAHGDBJJIEB_;
     }
 
-    public static final int GIMCFEIADKI_FIELD_NUMBER = 9;
-    private int gIMCFEIADKI_;
+    public static final int CKBNJPECIPG_FIELD_NUMBER = 9;
+    private int cKBNJPECIPG_;
     /**
-     * <code>uint32 GIMCFEIADKI = 9;</code>
-     * @return The gIMCFEIADKI.
+     * <code>uint32 CKBNJPECIPG = 9;</code>
+     * @return The cKBNJPECIPG.
      */
     @java.lang.Override
-    public int getGIMCFEIADKI() {
-      return gIMCFEIADKI_;
+    public int getCKBNJPECIPG() {
+      return cKBNJPECIPG_;
     }
 
-    public static final int GCMNEADPFBH_FIELD_NUMBER = 2;
-    private int gCMNEADPFBH_;
+    public static final int KILLED_MONSTER_NUM_FIELD_NUMBER = 12;
+    private int killedMonsterNum_;
     /**
-     * <code>uint32 GCMNEADPFBH = 2;</code>
-     * @return The gCMNEADPFBH.
+     * <code>uint32 killed_monster_num = 12;</code>
+     * @return The killedMonsterNum.
      */
     @java.lang.Override
-    public int getGCMNEADPFBH() {
-      return gCMNEADPFBH_;
+    public int getKilledMonsterNum() {
+      return killedMonsterNum_;
     }
 
-    public static final int GPPOHEOBDGJ_FIELD_NUMBER = 5;
-    private int gPPOHEOBDGJ_;
+    public static final int AKEACLCDIPO_FIELD_NUMBER = 14;
+    private int aKEACLCDIPO_;
     /**
-     * <code>uint32 GPPOHEOBDGJ = 5;</code>
-     * @return The gPPOHEOBDGJ.
+     * <code>uint32 AKEACLCDIPO = 14;</code>
+     * @return The aKEACLCDIPO.
      */
     @java.lang.Override
-    public int getGPPOHEOBDGJ() {
-      return gPPOHEOBDGJ_;
+    public int getAKEACLCDIPO() {
+      return aKEACLCDIPO_;
     }
 
-    public static final int EHLLLIJFOJG_FIELD_NUMBER = 12;
-    private int eHLLLIJFOJG_;
+    public static final int NIBMGMPEDLK_FIELD_NUMBER = 15;
+    private int nIBMGMPEDLK_;
     /**
-     * <code>uint32 EHLLLIJFOJG = 12;</code>
-     * @return The eHLLLIJFOJG.
+     * <code>uint32 NIBMGMPEDLK = 15;</code>
+     * @return The nIBMGMPEDLK.
      */
     @java.lang.Override
-    public int getEHLLLIJFOJG() {
-      return eHLLLIJFOJG_;
+    public int getNIBMGMPEDLK() {
+      return nIBMGMPEDLK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,29 +289,29 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gCMNEADPFBH_ != 0) {
-        output.writeUInt32(2, gCMNEADPFBH_);
+      if (bJGIIIGLFEK_ != 0) {
+        output.writeUInt32(1, bJGIIIGLFEK_);
       }
-      if (kJCLNIGPNDF_ != 0) {
-        output.writeUInt32(3, kJCLNIGPNDF_);
+      if (eNIGEOBHHEP_ != 0) {
+        output.writeUInt32(3, eNIGEOBHHEP_);
       }
-      if (gPPOHEOBDGJ_ != 0) {
-        output.writeUInt32(5, gPPOHEOBDGJ_);
+      if (coinNum_ != 0) {
+        output.writeUInt32(7, coinNum_);
       }
-      if (dPOBEKFGJOP_ != 0) {
-        output.writeUInt32(6, dPOBEKFGJOP_);
+      if (gAHGDBJJIEB_ != 0) {
+        output.writeUInt32(8, gAHGDBJJIEB_);
       }
-      if (gIMCFEIADKI_ != 0) {
-        output.writeUInt32(9, gIMCFEIADKI_);
+      if (cKBNJPECIPG_ != 0) {
+        output.writeUInt32(9, cKBNJPECIPG_);
       }
-      if (eHLLLIJFOJG_ != 0) {
-        output.writeUInt32(12, eHLLLIJFOJG_);
+      if (killedMonsterNum_ != 0) {
+        output.writeUInt32(12, killedMonsterNum_);
       }
-      if (nHFGIBDCPGC_ != 0) {
-        output.writeUInt32(13, nHFGIBDCPGC_);
+      if (aKEACLCDIPO_ != 0) {
+        output.writeUInt32(14, aKEACLCDIPO_);
       }
-      if (oKJOJDABKGC_ != 0) {
-        output.writeUInt32(15, oKJOJDABKGC_);
+      if (nIBMGMPEDLK_ != 0) {
+        output.writeUInt32(15, nIBMGMPEDLK_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,37 +322,37 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gCMNEADPFBH_ != 0) {
+      if (bJGIIIGLFEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gCMNEADPFBH_);
+          .computeUInt32Size(1, bJGIIIGLFEK_);
       }
-      if (kJCLNIGPNDF_ != 0) {
+      if (eNIGEOBHHEP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, kJCLNIGPNDF_);
+          .computeUInt32Size(3, eNIGEOBHHEP_);
       }
-      if (gPPOHEOBDGJ_ != 0) {
+      if (coinNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gPPOHEOBDGJ_);
+          .computeUInt32Size(7, coinNum_);
       }
-      if (dPOBEKFGJOP_ != 0) {
+      if (gAHGDBJJIEB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dPOBEKFGJOP_);
+          .computeUInt32Size(8, gAHGDBJJIEB_);
       }
-      if (gIMCFEIADKI_ != 0) {
+      if (cKBNJPECIPG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gIMCFEIADKI_);
+          .computeUInt32Size(9, cKBNJPECIPG_);
       }
-      if (eHLLLIJFOJG_ != 0) {
+      if (killedMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eHLLLIJFOJG_);
+          .computeUInt32Size(12, killedMonsterNum_);
       }
-      if (nHFGIBDCPGC_ != 0) {
+      if (aKEACLCDIPO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, nHFGIBDCPGC_);
+          .computeUInt32Size(14, aKEACLCDIPO_);
       }
-      if (oKJOJDABKGC_ != 0) {
+      if (nIBMGMPEDLK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, oKJOJDABKGC_);
+          .computeUInt32Size(15, nIBMGMPEDLK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,22 +369,22 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify other = (emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify) obj;
 
-      if (getKJCLNIGPNDF()
-          != other.getKJCLNIGPNDF()) return false;
-      if (getOKJOJDABKGC()
-          != other.getOKJOJDABKGC()) return false;
-      if (getDPOBEKFGJOP()
-          != other.getDPOBEKFGJOP()) return false;
-      if (getNHFGIBDCPGC()
-          != other.getNHFGIBDCPGC()) return false;
-      if (getGIMCFEIADKI()
-          != other.getGIMCFEIADKI()) return false;
-      if (getGCMNEADPFBH()
-          != other.getGCMNEADPFBH()) return false;
-      if (getGPPOHEOBDGJ()
-          != other.getGPPOHEOBDGJ()) return false;
-      if (getEHLLLIJFOJG()
-          != other.getEHLLLIJFOJG()) return false;
+      if (getBJGIIIGLFEK()
+          != other.getBJGIIIGLFEK()) return false;
+      if (getENIGEOBHHEP()
+          != other.getENIGEOBHHEP()) return false;
+      if (getCoinNum()
+          != other.getCoinNum()) return false;
+      if (getGAHGDBJJIEB()
+          != other.getGAHGDBJJIEB()) return false;
+      if (getCKBNJPECIPG()
+          != other.getCKBNJPECIPG()) return false;
+      if (getKilledMonsterNum()
+          != other.getKilledMonsterNum()) return false;
+      if (getAKEACLCDIPO()
+          != other.getAKEACLCDIPO()) return false;
+      if (getNIBMGMPEDLK()
+          != other.getNIBMGMPEDLK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -397,22 +396,22 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KJCLNIGPNDF_FIELD_NUMBER;
-      hash = (53 * hash) + getKJCLNIGPNDF();
-      hash = (37 * hash) + OKJOJDABKGC_FIELD_NUMBER;
-      hash = (53 * hash) + getOKJOJDABKGC();
-      hash = (37 * hash) + DPOBEKFGJOP_FIELD_NUMBER;
-      hash = (53 * hash) + getDPOBEKFGJOP();
-      hash = (37 * hash) + NHFGIBDCPGC_FIELD_NUMBER;
-      hash = (53 * hash) + getNHFGIBDCPGC();
-      hash = (37 * hash) + GIMCFEIADKI_FIELD_NUMBER;
-      hash = (53 * hash) + getGIMCFEIADKI();
-      hash = (37 * hash) + GCMNEADPFBH_FIELD_NUMBER;
-      hash = (53 * hash) + getGCMNEADPFBH();
-      hash = (37 * hash) + GPPOHEOBDGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGPPOHEOBDGJ();
-      hash = (37 * hash) + EHLLLIJFOJG_FIELD_NUMBER;
-      hash = (53 * hash) + getEHLLLIJFOJG();
+      hash = (37 * hash) + BJGIIIGLFEK_FIELD_NUMBER;
+      hash = (53 * hash) + getBJGIIIGLFEK();
+      hash = (37 * hash) + ENIGEOBHHEP_FIELD_NUMBER;
+      hash = (53 * hash) + getENIGEOBHHEP();
+      hash = (37 * hash) + COIN_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinNum();
+      hash = (37 * hash) + GAHGDBJJIEB_FIELD_NUMBER;
+      hash = (53 * hash) + getGAHGDBJJIEB();
+      hash = (37 * hash) + CKBNJPECIPG_FIELD_NUMBER;
+      hash = (53 * hash) + getCKBNJPECIPG();
+      hash = (37 * hash) + KILLED_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKilledMonsterNum();
+      hash = (37 * hash) + AKEACLCDIPO_FIELD_NUMBER;
+      hash = (53 * hash) + getAKEACLCDIPO();
+      hash = (37 * hash) + NIBMGMPEDLK_FIELD_NUMBER;
+      hash = (53 * hash) + getNIBMGMPEDLK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,8 +509,7 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4173
-     * Obf: ABKDMDEBLNB
+     * CmdId: 24030
      * </pre>
      *
      * Protobuf type {@code WindFieldGalleryInfoNotify}
@@ -551,21 +549,21 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kJCLNIGPNDF_ = 0;
+        bJGIIIGLFEK_ = 0;
 
-        oKJOJDABKGC_ = 0;
+        eNIGEOBHHEP_ = 0;
 
-        dPOBEKFGJOP_ = 0;
+        coinNum_ = 0;
 
-        nHFGIBDCPGC_ = 0;
+        gAHGDBJJIEB_ = 0;
 
-        gIMCFEIADKI_ = 0;
+        cKBNJPECIPG_ = 0;
 
-        gCMNEADPFBH_ = 0;
+        killedMonsterNum_ = 0;
 
-        gPPOHEOBDGJ_ = 0;
+        aKEACLCDIPO_ = 0;
 
-        eHLLLIJFOJG_ = 0;
+        nIBMGMPEDLK_ = 0;
 
         return this;
       }
@@ -593,14 +591,14 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify buildPartial() {
         emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify result = new emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify(this);
-        result.kJCLNIGPNDF_ = kJCLNIGPNDF_;
-        result.oKJOJDABKGC_ = oKJOJDABKGC_;
-        result.dPOBEKFGJOP_ = dPOBEKFGJOP_;
-        result.nHFGIBDCPGC_ = nHFGIBDCPGC_;
-        result.gIMCFEIADKI_ = gIMCFEIADKI_;
-        result.gCMNEADPFBH_ = gCMNEADPFBH_;
-        result.gPPOHEOBDGJ_ = gPPOHEOBDGJ_;
-        result.eHLLLIJFOJG_ = eHLLLIJFOJG_;
+        result.bJGIIIGLFEK_ = bJGIIIGLFEK_;
+        result.eNIGEOBHHEP_ = eNIGEOBHHEP_;
+        result.coinNum_ = coinNum_;
+        result.gAHGDBJJIEB_ = gAHGDBJJIEB_;
+        result.cKBNJPECIPG_ = cKBNJPECIPG_;
+        result.killedMonsterNum_ = killedMonsterNum_;
+        result.aKEACLCDIPO_ = aKEACLCDIPO_;
+        result.nIBMGMPEDLK_ = nIBMGMPEDLK_;
         onBuilt();
         return result;
       }
@@ -649,29 +647,29 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify other) {
         if (other == emu.grasscutter.net.proto.WindFieldGalleryInfoNotifyOuterClass.WindFieldGalleryInfoNotify.getDefaultInstance()) return this;
-        if (other.getKJCLNIGPNDF() != 0) {
-          setKJCLNIGPNDF(other.getKJCLNIGPNDF());
+        if (other.getBJGIIIGLFEK() != 0) {
+          setBJGIIIGLFEK(other.getBJGIIIGLFEK());
         }
-        if (other.getOKJOJDABKGC() != 0) {
-          setOKJOJDABKGC(other.getOKJOJDABKGC());
+        if (other.getENIGEOBHHEP() != 0) {
+          setENIGEOBHHEP(other.getENIGEOBHHEP());
         }
-        if (other.getDPOBEKFGJOP() != 0) {
-          setDPOBEKFGJOP(other.getDPOBEKFGJOP());
+        if (other.getCoinNum() != 0) {
+          setCoinNum(other.getCoinNum());
         }
-        if (other.getNHFGIBDCPGC() != 0) {
-          setNHFGIBDCPGC(other.getNHFGIBDCPGC());
+        if (other.getGAHGDBJJIEB() != 0) {
+          setGAHGDBJJIEB(other.getGAHGDBJJIEB());
         }
-        if (other.getGIMCFEIADKI() != 0) {
-          setGIMCFEIADKI(other.getGIMCFEIADKI());
+        if (other.getCKBNJPECIPG() != 0) {
+          setCKBNJPECIPG(other.getCKBNJPECIPG());
         }
-        if (other.getGCMNEADPFBH() != 0) {
-          setGCMNEADPFBH(other.getGCMNEADPFBH());
+        if (other.getKilledMonsterNum() != 0) {
+          setKilledMonsterNum(other.getKilledMonsterNum());
         }
-        if (other.getGPPOHEOBDGJ() != 0) {
-          setGPPOHEOBDGJ(other.getGPPOHEOBDGJ());
+        if (other.getAKEACLCDIPO() != 0) {
+          setAKEACLCDIPO(other.getAKEACLCDIPO());
         }
-        if (other.getEHLLLIJFOJG() != 0) {
-          setEHLLLIJFOJG(other.getEHLLLIJFOJG());
+        if (other.getNIBMGMPEDLK() != 0) {
+          setNIBMGMPEDLK(other.getNIBMGMPEDLK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -702,250 +700,250 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
         return this;
       }
 
-      private int kJCLNIGPNDF_ ;
+      private int bJGIIIGLFEK_ ;
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
-       * @return The kJCLNIGPNDF.
+       * <code>uint32 BJGIIIGLFEK = 1;</code>
+       * @return The bJGIIIGLFEK.
        */
       @java.lang.Override
-      public int getKJCLNIGPNDF() {
-        return kJCLNIGPNDF_;
+      public int getBJGIIIGLFEK() {
+        return bJGIIIGLFEK_;
       }
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
-       * @param value The kJCLNIGPNDF to set.
+       * <code>uint32 BJGIIIGLFEK = 1;</code>
+       * @param value The bJGIIIGLFEK to set.
        * @return This builder for chaining.
        */
-      public Builder setKJCLNIGPNDF(int value) {
+      public Builder setBJGIIIGLFEK(int value) {
         
-        kJCLNIGPNDF_ = value;
+        bJGIIIGLFEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
+       * <code>uint32 BJGIIIGLFEK = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKJCLNIGPNDF() {
+      public Builder clearBJGIIIGLFEK() {
         
-        kJCLNIGPNDF_ = 0;
+        bJGIIIGLFEK_ = 0;
         onChanged();
         return this;
       }
 
-      private int oKJOJDABKGC_ ;
+      private int eNIGEOBHHEP_ ;
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
-       * @return The oKJOJDABKGC.
+       * <code>uint32 ENIGEOBHHEP = 3;</code>
+       * @return The eNIGEOBHHEP.
        */
       @java.lang.Override
-      public int getOKJOJDABKGC() {
-        return oKJOJDABKGC_;
+      public int getENIGEOBHHEP() {
+        return eNIGEOBHHEP_;
       }
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
-       * @param value The oKJOJDABKGC to set.
+       * <code>uint32 ENIGEOBHHEP = 3;</code>
+       * @param value The eNIGEOBHHEP to set.
        * @return This builder for chaining.
        */
-      public Builder setOKJOJDABKGC(int value) {
+      public Builder setENIGEOBHHEP(int value) {
         
-        oKJOJDABKGC_ = value;
+        eNIGEOBHHEP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
+       * <code>uint32 ENIGEOBHHEP = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKJOJDABKGC() {
+      public Builder clearENIGEOBHHEP() {
         
-        oKJOJDABKGC_ = 0;
+        eNIGEOBHHEP_ = 0;
         onChanged();
         return this;
       }
 
-      private int dPOBEKFGJOP_ ;
+      private int coinNum_ ;
       /**
-       * <code>uint32 DPOBEKFGJOP = 6;</code>
-       * @return The dPOBEKFGJOP.
+       * <code>uint32 coin_num = 7;</code>
+       * @return The coinNum.
        */
       @java.lang.Override
-      public int getDPOBEKFGJOP() {
-        return dPOBEKFGJOP_;
+      public int getCoinNum() {
+        return coinNum_;
       }
       /**
-       * <code>uint32 DPOBEKFGJOP = 6;</code>
-       * @param value The dPOBEKFGJOP to set.
+       * <code>uint32 coin_num = 7;</code>
+       * @param value The coinNum to set.
        * @return This builder for chaining.
        */
-      public Builder setDPOBEKFGJOP(int value) {
+      public Builder setCoinNum(int value) {
         
-        dPOBEKFGJOP_ = value;
+        coinNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DPOBEKFGJOP = 6;</code>
+       * <code>uint32 coin_num = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDPOBEKFGJOP() {
+      public Builder clearCoinNum() {
         
-        dPOBEKFGJOP_ = 0;
+        coinNum_ = 0;
         onChanged();
         return this;
       }
 
-      private int nHFGIBDCPGC_ ;
+      private int gAHGDBJJIEB_ ;
       /**
-       * <code>uint32 NHFGIBDCPGC = 13;</code>
-       * @return The nHFGIBDCPGC.
+       * <code>uint32 GAHGDBJJIEB = 8;</code>
+       * @return The gAHGDBJJIEB.
        */
       @java.lang.Override
-      public int getNHFGIBDCPGC() {
-        return nHFGIBDCPGC_;
+      public int getGAHGDBJJIEB() {
+        return gAHGDBJJIEB_;
       }
       /**
-       * <code>uint32 NHFGIBDCPGC = 13;</code>
-       * @param value The nHFGIBDCPGC to set.
+       * <code>uint32 GAHGDBJJIEB = 8;</code>
+       * @param value The gAHGDBJJIEB to set.
        * @return This builder for chaining.
        */
-      public Builder setNHFGIBDCPGC(int value) {
+      public Builder setGAHGDBJJIEB(int value) {
         
-        nHFGIBDCPGC_ = value;
+        gAHGDBJJIEB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NHFGIBDCPGC = 13;</code>
+       * <code>uint32 GAHGDBJJIEB = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNHFGIBDCPGC() {
+      public Builder clearGAHGDBJJIEB() {
         
-        nHFGIBDCPGC_ = 0;
+        gAHGDBJJIEB_ = 0;
         onChanged();
         return this;
       }
 
-      private int gIMCFEIADKI_ ;
+      private int cKBNJPECIPG_ ;
       /**
-       * <code>uint32 GIMCFEIADKI = 9;</code>
-       * @return The gIMCFEIADKI.
+       * <code>uint32 CKBNJPECIPG = 9;</code>
+       * @return The cKBNJPECIPG.
        */
       @java.lang.Override
-      public int getGIMCFEIADKI() {
-        return gIMCFEIADKI_;
+      public int getCKBNJPECIPG() {
+        return cKBNJPECIPG_;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 9;</code>
-       * @param value The gIMCFEIADKI to set.
+       * <code>uint32 CKBNJPECIPG = 9;</code>
+       * @param value The cKBNJPECIPG to set.
        * @return This builder for chaining.
        */
-      public Builder setGIMCFEIADKI(int value) {
+      public Builder setCKBNJPECIPG(int value) {
         
-        gIMCFEIADKI_ = value;
+        cKBNJPECIPG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 9;</code>
+       * <code>uint32 CKBNJPECIPG = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGIMCFEIADKI() {
+      public Builder clearCKBNJPECIPG() {
         
-        gIMCFEIADKI_ = 0;
+        cKBNJPECIPG_ = 0;
         onChanged();
         return this;
       }
 
-      private int gCMNEADPFBH_ ;
+      private int killedMonsterNum_ ;
       /**
-       * <code>uint32 GCMNEADPFBH = 2;</code>
-       * @return The gCMNEADPFBH.
+       * <code>uint32 killed_monster_num = 12;</code>
+       * @return The killedMonsterNum.
        */
       @java.lang.Override
-      public int getGCMNEADPFBH() {
-        return gCMNEADPFBH_;
+      public int getKilledMonsterNum() {
+        return killedMonsterNum_;
       }
       /**
-       * <code>uint32 GCMNEADPFBH = 2;</code>
-       * @param value The gCMNEADPFBH to set.
+       * <code>uint32 killed_monster_num = 12;</code>
+       * @param value The killedMonsterNum to set.
        * @return This builder for chaining.
        */
-      public Builder setGCMNEADPFBH(int value) {
+      public Builder setKilledMonsterNum(int value) {
         
-        gCMNEADPFBH_ = value;
+        killedMonsterNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCMNEADPFBH = 2;</code>
+       * <code>uint32 killed_monster_num = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCMNEADPFBH() {
+      public Builder clearKilledMonsterNum() {
         
-        gCMNEADPFBH_ = 0;
+        killedMonsterNum_ = 0;
         onChanged();
         return this;
       }
 
-      private int gPPOHEOBDGJ_ ;
+      private int aKEACLCDIPO_ ;
       /**
-       * <code>uint32 GPPOHEOBDGJ = 5;</code>
-       * @return The gPPOHEOBDGJ.
+       * <code>uint32 AKEACLCDIPO = 14;</code>
+       * @return The aKEACLCDIPO.
        */
       @java.lang.Override
-      public int getGPPOHEOBDGJ() {
-        return gPPOHEOBDGJ_;
+      public int getAKEACLCDIPO() {
+        return aKEACLCDIPO_;
       }
       /**
-       * <code>uint32 GPPOHEOBDGJ = 5;</code>
-       * @param value The gPPOHEOBDGJ to set.
+       * <code>uint32 AKEACLCDIPO = 14;</code>
+       * @param value The aKEACLCDIPO to set.
        * @return This builder for chaining.
        */
-      public Builder setGPPOHEOBDGJ(int value) {
+      public Builder setAKEACLCDIPO(int value) {
         
-        gPPOHEOBDGJ_ = value;
+        aKEACLCDIPO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GPPOHEOBDGJ = 5;</code>
+       * <code>uint32 AKEACLCDIPO = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGPPOHEOBDGJ() {
+      public Builder clearAKEACLCDIPO() {
         
-        gPPOHEOBDGJ_ = 0;
+        aKEACLCDIPO_ = 0;
         onChanged();
         return this;
       }
 
-      private int eHLLLIJFOJG_ ;
+      private int nIBMGMPEDLK_ ;
       /**
-       * <code>uint32 EHLLLIJFOJG = 12;</code>
-       * @return The eHLLLIJFOJG.
+       * <code>uint32 NIBMGMPEDLK = 15;</code>
+       * @return The nIBMGMPEDLK.
        */
       @java.lang.Override
-      public int getEHLLLIJFOJG() {
-        return eHLLLIJFOJG_;
+      public int getNIBMGMPEDLK() {
+        return nIBMGMPEDLK_;
       }
       /**
-       * <code>uint32 EHLLLIJFOJG = 12;</code>
-       * @param value The eHLLLIJFOJG to set.
+       * <code>uint32 NIBMGMPEDLK = 15;</code>
+       * @param value The nIBMGMPEDLK to set.
        * @return This builder for chaining.
        */
-      public Builder setEHLLLIJFOJG(int value) {
+      public Builder setNIBMGMPEDLK(int value) {
         
-        eHLLLIJFOJG_ = value;
+        nIBMGMPEDLK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EHLLLIJFOJG = 12;</code>
+       * <code>uint32 NIBMGMPEDLK = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEHLLLIJFOJG() {
+      public Builder clearNIBMGMPEDLK() {
         
-        eHLLLIJFOJG_ = 0;
+        nIBMGMPEDLK_ = 0;
         onChanged();
         return this;
       }
@@ -1016,13 +1014,13 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n WindFieldGalleryInfoNotify.proto\"\304\001\n\032W" +
-      "indFieldGalleryInfoNotify\022\023\n\013KJCLNIGPNDF" +
-      "\030\003 \001(\r\022\023\n\013OKJOJDABKGC\030\017 \001(\r\022\023\n\013DPOBEKFGJ" +
-      "OP\030\006 \001(\r\022\023\n\013NHFGIBDCPGC\030\r \001(\r\022\023\n\013GIMCFEI" +
-      "ADKI\030\t \001(\r\022\023\n\013GCMNEADPFBH\030\002 \001(\r\022\023\n\013GPPOH" +
-      "EOBDGJ\030\005 \001(\r\022\023\n\013EHLLLIJFOJG\030\014 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n WindFieldGalleryInfoNotify.proto\"\310\001\n\032W" +
+      "indFieldGalleryInfoNotify\022\023\n\013BJGIIIGLFEK" +
+      "\030\001 \001(\r\022\023\n\013ENIGEOBHHEP\030\003 \001(\r\022\020\n\010coin_num\030" +
+      "\007 \001(\r\022\023\n\013GAHGDBJJIEB\030\010 \001(\r\022\023\n\013CKBNJPECIP" +
+      "G\030\t \001(\r\022\032\n\022killed_monster_num\030\014 \001(\r\022\023\n\013A" +
+      "KEACLCDIPO\030\016 \001(\r\022\023\n\013NIBMGMPEDLK\030\017 \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1033,7 +1031,7 @@ public final class WindFieldGalleryInfoNotifyOuterClass {
     internal_static_WindFieldGalleryInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WindFieldGalleryInfoNotify_descriptor,
-        new java.lang.String[] { "KJCLNIGPNDF", "OKJOJDABKGC", "DPOBEKFGJOP", "NHFGIBDCPGC", "GIMCFEIADKI", "GCMNEADPFBH", "GPPOHEOBDGJ", "EHLLLIJFOJG", });
+        new java.lang.String[] { "BJGIIIGLFEK", "ENIGEOBHHEP", "CoinNum", "GAHGDBJJIEB", "CKBNJPECIPG", "KilledMonsterNum", "AKEACLCDIPO", "NIBMGMPEDLK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

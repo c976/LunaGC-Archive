@@ -19,23 +19,22 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 10;</code>
+     * <pre>
+     * CMD_ID = 23056
+     * </pre>
+     *
+     * <code>uint32 level = 12;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 20350
-   * Obf: PBDBDIHNCJP
-   * </pre>
-   *
    * Protobuf type {@code GCGGrowthLevelTakeRewardRsp}
    */
   public static final class GCGGrowthLevelTakeRewardRsp extends
@@ -80,12 +79,12 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
               level_ = input.readUInt32();
               break;
@@ -122,10 +121,14 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp.class, emu.grasscutter.net.proto.GCGGrowthLevelTakeRewardRspOuterClass.GCGGrowthLevelTakeRewardRsp.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 10;
+    public static final int LEVEL_FIELD_NUMBER = 12;
     private int level_;
     /**
-     * <code>uint32 level = 10;</code>
+     * <pre>
+     * CMD_ID = 23056
+     * </pre>
+     *
+     * <code>uint32 level = 12;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       return level_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +162,10 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (level_ != 0) {
-        output.writeUInt32(10, level_);
+        output.writeUInt32(12, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +178,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, level_);
+          .computeUInt32Size(12, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 20350
-     * Obf: PBDBDIHNCJP
-     * </pre>
-     *
      * Protobuf type {@code GCGGrowthLevelTakeRewardRsp}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 10;</code>
+       * <pre>
+       * CMD_ID = 23056
+       * </pre>
+       *
+       * <code>uint32 level = 12;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 10;</code>
+       * <pre>
+       * CMD_ID = 23056
+       * </pre>
+       *
+       * <code>uint32 level = 12;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 10;</code>
+       * <pre>
+       * CMD_ID = 23056
+       * </pre>
+       *
+       * <code>uint32 level = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -501,7 +511,7 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +607,8 @@ public final class GCGGrowthLevelTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GCGGrowthLevelTakeRewardRsp.proto\"=\n\033G" +
-      "CGGrowthLevelTakeRewardRsp\022\r\n\005level\030\n \001(" +
-      "\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grasscutter.ne" +
+      "CGGrowthLevelTakeRewardRsp\022\r\n\005level\030\014 \001(" +
+      "\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

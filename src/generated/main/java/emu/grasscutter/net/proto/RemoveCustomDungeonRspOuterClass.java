@@ -19,21 +19,28 @@ public final class RemoveCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 dungeon_guid = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint64 dungeon_guid = 15;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 28228
-   * Obf: IKNDOJKMIHF
+   * CmdId: 4841
    * </pre>
    *
    * Protobuf type {@code RemoveCustomDungeonRsp}
@@ -82,12 +89,12 @@ public final class RemoveCustomDungeonRspOuterClass {
               break;
             case 72: {
 
-              dungeonGuid_ = input.readUInt64();
+              retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
-              retcode_ = input.readInt32();
+              dungeonGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -122,10 +129,14 @@ public final class RemoveCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.RemoveCustomDungeonRspOuterClass.RemoveCustomDungeonRsp.class, emu.grasscutter.net.proto.RemoveCustomDungeonRspOuterClass.RemoveCustomDungeonRsp.Builder.class);
     }
 
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 9;
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 15;
     private long dungeonGuid_;
     /**
-     * <code>uint64 dungeon_guid = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint64 dungeon_guid = 15;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class RemoveCustomDungeonRspOuterClass {
       return dungeonGuid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +173,11 @@ public final class RemoveCustomDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonGuid_ != 0L) {
-        output.writeUInt64(9, dungeonGuid_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(9, retcode_);
+      }
+      if (dungeonGuid_ != 0L) {
+        output.writeUInt64(15, dungeonGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class RemoveCustomDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, dungeonGuid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(9, retcode_);
+      }
+      if (dungeonGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(15, dungeonGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +328,7 @@ public final class RemoveCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28228
-     * Obf: IKNDOJKMIHF
+     * CmdId: 4841
      * </pre>
      *
      * Protobuf type {@code RemoveCustomDungeonRsp}
@@ -471,7 +485,11 @@ public final class RemoveCustomDungeonRspOuterClass {
 
       private long dungeonGuid_ ;
       /**
-       * <code>uint64 dungeon_guid = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 15;</code>
        * @return The dungeonGuid.
        */
       @java.lang.Override
@@ -479,7 +497,11 @@ public final class RemoveCustomDungeonRspOuterClass {
         return dungeonGuid_;
       }
       /**
-       * <code>uint64 dungeon_guid = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 15;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
        */
@@ -490,7 +512,11 @@ public final class RemoveCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 dungeon_guid = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
@@ -502,7 +528,11 @@ public final class RemoveCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -510,7 +540,11 @@ public final class RemoveCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -521,7 +555,11 @@ public final class RemoveCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,8 +636,8 @@ public final class RemoveCustomDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034RemoveCustomDungeonRsp.proto\"?\n\026Remove" +
-      "CustomDungeonRsp\022\024\n\014dungeon_guid\030\t \001(\004\022\017" +
-      "\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "CustomDungeonRsp\022\024\n\014dungeon_guid\030\017 \001(\004\022\017" +
+      "\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

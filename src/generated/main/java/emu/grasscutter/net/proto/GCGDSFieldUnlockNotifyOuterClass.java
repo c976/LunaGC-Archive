@@ -19,17 +19,16 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * CMD_ID = 21080
+     * </pre>
+     *
      * <code>uint32 field_id = 7;</code>
      * @return The fieldId.
      */
     int getFieldId();
   }
   /**
-   * <pre>
-   * CmdId: 3674
-   * Obf: HIGKKKJFAFM
-   * </pre>
-   *
    * Protobuf type {@code GCGDSFieldUnlockNotify}
    */
   public static final class GCGDSFieldUnlockNotify extends
@@ -114,6 +113,10 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
     public static final int FIELD_ID_FIELD_NUMBER = 7;
     private int fieldId_;
     /**
+     * <pre>
+     * CMD_ID = 21080
+     * </pre>
+     *
      * <code>uint32 field_id = 7;</code>
      * @return The fieldId.
      */
@@ -278,11 +281,6 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 3674
-     * Obf: HIGKKKJFAFM
-     * </pre>
-     *
      * Protobuf type {@code GCGDSFieldUnlockNotify}
      */
     public static final class Builder extends
@@ -431,6 +429,10 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
 
       private int fieldId_ ;
       /**
+       * <pre>
+       * CMD_ID = 21080
+       * </pre>
+       *
        * <code>uint32 field_id = 7;</code>
        * @return The fieldId.
        */
@@ -439,6 +441,10 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
         return fieldId_;
       }
       /**
+       * <pre>
+       * CMD_ID = 21080
+       * </pre>
+       *
        * <code>uint32 field_id = 7;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
@@ -450,6 +456,10 @@ public final class GCGDSFieldUnlockNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * CMD_ID = 21080
+       * </pre>
+       *
        * <code>uint32 field_id = 7;</code>
        * @return This builder for chaining.
        */

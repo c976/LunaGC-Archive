@@ -19,70 +19,110 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 ODDEHJAABFE = 12;</code>
-     * @return The oDDEHJAABFE.
-     */
-    long getODDEHJAABFE();
-
-    /**
-     * <code>string transaction = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 14;</code>
      * @return The transaction.
      */
     java.lang.String getTransaction();
     /**
-     * <code>string transaction = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 14;</code>
      * @return The bytes for transaction.
      */
     com.google.protobuf.ByteString
         getTransactionBytes();
 
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> 
-        getAEJLKLALBCEList();
+    java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> 
+        getFALJIMCLKHEList();
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
-    emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getAEJLKLALBCE(int index);
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getFALJIMCLKHE(int index);
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
-    int getAEJLKLALBCECount();
+    int getFALJIMCLKHECount();
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder> 
-        getAEJLKLALBCEOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder> 
+        getFALJIMCLKHEOrBuilderList();
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
-    emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder getAEJLKLALBCEOrBuilder(
+    emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder getFALJIMCLKHEOrBuilder(
         int index);
 
     /**
-     * <code>float PDFMDAEIJNK = 10;</code>
-     * @return The pDFMDAEIJNK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NEIKDECCDMP = 3;</code>
+     * @return The nEIKDECCDMP.
      */
-    float getPDFMDAEIJNK();
+    int getNEIKDECCDMP();
 
     /**
-     * <code>uint32 OGOLIHBAJDL = 4;</code>
-     * @return The oGOLIHBAJDL.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float BHALKCAJINA = 15;</code>
+     * @return The bHALKCAJINA.
      */
-    int getOGOLIHBAJDL();
+    float getBHALKCAJINA();
 
     /**
-     * <code>uint32 IBJOJJBHKCF = 13;</code>
-     * @return The iBJOJJBHKCF.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 DPOKADLOEKM = 9;</code>
+     * @return The dPOKADLOEKM.
      */
-    int getIBJOJJBHKCF();
+    int getDPOKADLOEKM();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint64 BJNCNGCLJJN = 10;</code>
+     * @return The bJNCNGCLJJN.
+     */
+    long getBJNCNGCLJJN();
   }
   /**
-   * <pre>
-   * Obf: FGLANFANLNG
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryFungusFighterV2Info}
    */
   public static final class SceneGalleryFungusFighterV2Info extends
@@ -96,7 +136,7 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
     }
     private SceneGalleryFungusFighterV2Info() {
       transaction_ = "";
-      aEJLKLALBCE_ = java.util.Collections.emptyList();
+      fALJIMCLKHE_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -130,39 +170,39 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 24: {
+
+              nEIKDECCDMP_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              dPOKADLOEKM_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              bJNCNGCLJJN_ = input.readUInt64();
+              break;
+            }
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                fALJIMCLKHE_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              fALJIMCLKHE_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.parser(), extensionRegistry));
+              break;
+            }
+            case 114: {
               java.lang.String s = input.readStringRequireUtf8();
 
               transaction_ = s;
               break;
             }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aEJLKLALBCE_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              aEJLKLALBCE_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.parser(), extensionRegistry));
-              break;
-            }
-            case 32: {
+            case 125: {
 
-              oGOLIHBAJDL_ = input.readUInt32();
-              break;
-            }
-            case 85: {
-
-              pDFMDAEIJNK_ = input.readFloat();
-              break;
-            }
-            case 96: {
-
-              oDDEHJAABFE_ = input.readUInt64();
-              break;
-            }
-            case 104: {
-
-              iBJOJJBHKCF_ = input.readUInt32();
+              bHALKCAJINA_ = input.readFloat();
               break;
             }
             default: {
@@ -181,7 +221,7 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          aEJLKLALBCE_ = java.util.Collections.unmodifiableList(aEJLKLALBCE_);
+          fALJIMCLKHE_ = java.util.Collections.unmodifiableList(fALJIMCLKHE_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -200,48 +240,64 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.Builder.class);
     }
 
-    public interface FCIGPKIBPNNOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)
+    public interface IKFBPINOOLEOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:SceneGalleryFungusFighterV2Info.IKFBPINOOLE)
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>uint64 HAPBKADOKLK = 8;</code>
-       * @return The hAPBKADOKLK.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint64 CEJKPBNCIGJ = 6;</code>
+       * @return The cEJKPBNCIGJ.
        */
-      long getHAPBKADOKLK();
+      long getCEJKPBNCIGJ();
 
       /**
-       * <code>uint32 fungus_id = 1;</code>
-       * @return The fungusId.
-       */
-      int getFungusId();
-
-      /**
-       * <code>bool is_alive = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_alive = 13;</code>
        * @return The isAlive.
        */
       boolean getIsAlive();
+
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 fungus_id = 4;</code>
+       * @return The fungusId.
+       */
+      int getFungusId();
     }
     /**
-     * Protobuf type {@code SceneGalleryFungusFighterV2Info.FCIGPKIBPNN}
+     * <pre>
+     * WriteTo: 0xBF151B0 | MergeFrom: 0xBF154D0
+     * </pre>
+     *
+     * Protobuf type {@code SceneGalleryFungusFighterV2Info.IKFBPINOOLE}
      */
-    public static final class FCIGPKIBPNN extends
+    public static final class IKFBPINOOLE extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)
-        FCIGPKIBPNNOrBuilder {
+        // @@protoc_insertion_point(message_implements:SceneGalleryFungusFighterV2Info.IKFBPINOOLE)
+        IKFBPINOOLEOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use FCIGPKIBPNN.newBuilder() to construct.
-      private FCIGPKIBPNN(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use IKFBPINOOLE.newBuilder() to construct.
+      private IKFBPINOOLE(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private FCIGPKIBPNN() {
+      private IKFBPINOOLE() {
       }
 
       @java.lang.Override
       @SuppressWarnings({"unused"})
       protected java.lang.Object newInstance(
           UnusedPrivateParameter unused) {
-        return new FCIGPKIBPNN();
+        return new IKFBPINOOLE();
       }
 
       @java.lang.Override
@@ -249,7 +305,7 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private FCIGPKIBPNN(
+      private IKFBPINOOLE(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -267,19 +323,19 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
+              case 32: {
 
                 fungusId_ = input.readUInt32();
                 break;
               }
-              case 56: {
+              case 48: {
 
-                isAlive_ = input.readBool();
+                cEJKPBNCIGJ_ = input.readUInt64();
                 break;
               }
-              case 64: {
+              case 104: {
 
-                hAPBKADOKLK_ = input.readUInt64();
+                isAlive_ = input.readBool();
                 break;
               }
               default: {
@@ -303,48 +359,60 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor;
+        return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_fieldAccessorTable
+        return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder.class);
+                emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder.class);
       }
 
-      public static final int HAPBKADOKLK_FIELD_NUMBER = 8;
-      private long hAPBKADOKLK_;
+      public static final int CEJKPBNCIGJ_FIELD_NUMBER = 6;
+      private long cEJKPBNCIGJ_;
       /**
-       * <code>uint64 HAPBKADOKLK = 8;</code>
-       * @return The hAPBKADOKLK.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint64 CEJKPBNCIGJ = 6;</code>
+       * @return The cEJKPBNCIGJ.
        */
       @java.lang.Override
-      public long getHAPBKADOKLK() {
-        return hAPBKADOKLK_;
+      public long getCEJKPBNCIGJ() {
+        return cEJKPBNCIGJ_;
       }
 
-      public static final int FUNGUS_ID_FIELD_NUMBER = 1;
-      private int fungusId_;
-      /**
-       * <code>uint32 fungus_id = 1;</code>
-       * @return The fungusId.
-       */
-      @java.lang.Override
-      public int getFungusId() {
-        return fungusId_;
-      }
-
-      public static final int IS_ALIVE_FIELD_NUMBER = 7;
+      public static final int IS_ALIVE_FIELD_NUMBER = 13;
       private boolean isAlive_;
       /**
-       * <code>bool is_alive = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_alive = 13;</code>
        * @return The isAlive.
        */
       @java.lang.Override
       public boolean getIsAlive() {
         return isAlive_;
+      }
+
+      public static final int FUNGUS_ID_FIELD_NUMBER = 4;
+      private int fungusId_;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 fungus_id = 4;</code>
+       * @return The fungusId.
+       */
+      @java.lang.Override
+      public int getFungusId() {
+        return fungusId_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -362,13 +430,13 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (fungusId_ != 0) {
-          output.writeUInt32(1, fungusId_);
+          output.writeUInt32(4, fungusId_);
+        }
+        if (cEJKPBNCIGJ_ != 0L) {
+          output.writeUInt64(6, cEJKPBNCIGJ_);
         }
         if (isAlive_ != false) {
-          output.writeBool(7, isAlive_);
-        }
-        if (hAPBKADOKLK_ != 0L) {
-          output.writeUInt64(8, hAPBKADOKLK_);
+          output.writeBool(13, isAlive_);
         }
         unknownFields.writeTo(output);
       }
@@ -381,15 +449,15 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         size = 0;
         if (fungusId_ != 0) {
           size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(1, fungusId_);
+            .computeUInt32Size(4, fungusId_);
+        }
+        if (cEJKPBNCIGJ_ != 0L) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt64Size(6, cEJKPBNCIGJ_);
         }
         if (isAlive_ != false) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(7, isAlive_);
-        }
-        if (hAPBKADOKLK_ != 0L) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt64Size(8, hAPBKADOKLK_);
+            .computeBoolSize(13, isAlive_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -401,17 +469,17 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)) {
+        if (!(obj instanceof emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE)) {
           return super.equals(obj);
         }
-        emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN other = (emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN) obj;
+        emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE other = (emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE) obj;
 
-        if (getHAPBKADOKLK()
-            != other.getHAPBKADOKLK()) return false;
-        if (getFungusId()
-            != other.getFungusId()) return false;
+        if (getCEJKPBNCIGJ()
+            != other.getCEJKPBNCIGJ()) return false;
         if (getIsAlive()
             != other.getIsAlive()) return false;
+        if (getFungusId()
+            != other.getFungusId()) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -423,82 +491,82 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + HAPBKADOKLK_FIELD_NUMBER;
+        hash = (37 * hash) + CEJKPBNCIGJ_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getHAPBKADOKLK());
-        hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
-        hash = (53 * hash) + getFungusId();
+            getCEJKPBNCIGJ());
         hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
             getIsAlive());
+        hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getFungusId();
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
       }
 
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(byte[] data)
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseDelimitedFrom(java.io.InputStream input)
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseDelimitedFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parseFrom(
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -511,7 +579,7 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN prototype) {
+      public static Builder newBuilder(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -527,26 +595,30 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         return builder;
       }
       /**
-       * Protobuf type {@code SceneGalleryFungusFighterV2Info.FCIGPKIBPNN}
+       * <pre>
+       * WriteTo: 0xBF151B0 | MergeFrom: 0xBF154D0
+       * </pre>
+       *
+       * Protobuf type {@code SceneGalleryFungusFighterV2Info.IKFBPINOOLE}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder {
+          // @@protoc_insertion_point(builder_implements:SceneGalleryFungusFighterV2Info.IKFBPINOOLE)
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor;
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_fieldAccessorTable
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder.class);
+                  emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder.class);
         }
 
-        // Construct using emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.newBuilder()
+        // Construct using emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -564,11 +636,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         @java.lang.Override
         public Builder clear() {
           super.clear();
-          hAPBKADOKLK_ = 0L;
-
-          fungusId_ = 0;
+          cEJKPBNCIGJ_ = 0L;
 
           isAlive_ = false;
+
+          fungusId_ = 0;
 
           return this;
         }
@@ -576,17 +648,17 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor;
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor;
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getDefaultInstanceForType() {
-          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.getDefaultInstance();
+        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getDefaultInstanceForType() {
+          return emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.getDefaultInstance();
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN build() {
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN result = buildPartial();
+        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE build() {
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -594,11 +666,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
 
         @java.lang.Override
-        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN buildPartial() {
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN result = new emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN(this);
-          result.hAPBKADOKLK_ = hAPBKADOKLK_;
-          result.fungusId_ = fungusId_;
+        public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE buildPartial() {
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE result = new emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE(this);
+          result.cEJKPBNCIGJ_ = cEJKPBNCIGJ_;
           result.isAlive_ = isAlive_;
+          result.fungusId_ = fungusId_;
           onBuilt();
           return result;
         }
@@ -637,24 +709,24 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN) {
-            return mergeFrom((emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)other);
+          if (other instanceof emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE) {
+            return mergeFrom((emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN other) {
-          if (other == emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.getDefaultInstance()) return this;
-          if (other.getHAPBKADOKLK() != 0L) {
-            setHAPBKADOKLK(other.getHAPBKADOKLK());
-          }
-          if (other.getFungusId() != 0) {
-            setFungusId(other.getFungusId());
+        public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE other) {
+          if (other == emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.getDefaultInstance()) return this;
+          if (other.getCEJKPBNCIGJ() != 0L) {
+            setCEJKPBNCIGJ(other.getCEJKPBNCIGJ());
           }
           if (other.getIsAlive() != false) {
             setIsAlive(other.getIsAlive());
+          }
+          if (other.getFungusId() != 0) {
+            setFungusId(other.getFungusId());
           }
           this.mergeUnknownFields(other.unknownFields);
           onChanged();
@@ -671,11 +743,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN parsedMessage = null;
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN) e.getUnfinishedMessage();
+            parsedMessage = (emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -685,71 +757,56 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
           return this;
         }
 
-        private long hAPBKADOKLK_ ;
+        private long cEJKPBNCIGJ_ ;
         /**
-         * <code>uint64 HAPBKADOKLK = 8;</code>
-         * @return The hAPBKADOKLK.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>uint64 CEJKPBNCIGJ = 6;</code>
+         * @return The cEJKPBNCIGJ.
          */
         @java.lang.Override
-        public long getHAPBKADOKLK() {
-          return hAPBKADOKLK_;
+        public long getCEJKPBNCIGJ() {
+          return cEJKPBNCIGJ_;
         }
         /**
-         * <code>uint64 HAPBKADOKLK = 8;</code>
-         * @param value The hAPBKADOKLK to set.
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>uint64 CEJKPBNCIGJ = 6;</code>
+         * @param value The cEJKPBNCIGJ to set.
          * @return This builder for chaining.
          */
-        public Builder setHAPBKADOKLK(long value) {
+        public Builder setCEJKPBNCIGJ(long value) {
           
-          hAPBKADOKLK_ = value;
+          cEJKPBNCIGJ_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>uint64 HAPBKADOKLK = 8;</code>
+         * <pre>
+         * offset: 32
+         * </pre>
+         *
+         * <code>uint64 CEJKPBNCIGJ = 6;</code>
          * @return This builder for chaining.
          */
-        public Builder clearHAPBKADOKLK() {
+        public Builder clearCEJKPBNCIGJ() {
           
-          hAPBKADOKLK_ = 0L;
-          onChanged();
-          return this;
-        }
-
-        private int fungusId_ ;
-        /**
-         * <code>uint32 fungus_id = 1;</code>
-         * @return The fungusId.
-         */
-        @java.lang.Override
-        public int getFungusId() {
-          return fungusId_;
-        }
-        /**
-         * <code>uint32 fungus_id = 1;</code>
-         * @param value The fungusId to set.
-         * @return This builder for chaining.
-         */
-        public Builder setFungusId(int value) {
-          
-          fungusId_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>uint32 fungus_id = 1;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearFungusId() {
-          
-          fungusId_ = 0;
+          cEJKPBNCIGJ_ = 0L;
           onChanged();
           return this;
         }
 
         private boolean isAlive_ ;
         /**
-         * <code>bool is_alive = 7;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>bool is_alive = 13;</code>
          * @return The isAlive.
          */
         @java.lang.Override
@@ -757,7 +814,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
           return isAlive_;
         }
         /**
-         * <code>bool is_alive = 7;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>bool is_alive = 13;</code>
          * @param value The isAlive to set.
          * @return This builder for chaining.
          */
@@ -768,12 +829,59 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
           return this;
         }
         /**
-         * <code>bool is_alive = 7;</code>
+         * <pre>
+         * offset: 40
+         * </pre>
+         *
+         * <code>bool is_alive = 13;</code>
          * @return This builder for chaining.
          */
         public Builder clearIsAlive() {
           
           isAlive_ = false;
+          onChanged();
+          return this;
+        }
+
+        private int fungusId_ ;
+        /**
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 fungus_id = 4;</code>
+         * @return The fungusId.
+         */
+        @java.lang.Override
+        public int getFungusId() {
+          return fungusId_;
+        }
+        /**
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 fungus_id = 4;</code>
+         * @param value The fungusId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setFungusId(int value) {
+          
+          fungusId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * offset: 44
+         * </pre>
+         *
+         * <code>uint32 fungus_id = 4;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearFungusId() {
+          
+          fungusId_ = 0;
           onChanged();
           return this;
         }
@@ -790,61 +898,54 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)
+        // @@protoc_insertion_point(builder_scope:SceneGalleryFungusFighterV2Info.IKFBPINOOLE)
       }
 
-      // @@protoc_insertion_point(class_scope:SceneGalleryFungusFighterV2Info.FCIGPKIBPNN)
-      private static final emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:SceneGalleryFungusFighterV2Info.IKFBPINOOLE)
+      private static final emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN();
+        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE();
       }
 
-      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getDefaultInstance() {
+      public static emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      private static final com.google.protobuf.Parser<FCIGPKIBPNN>
-          PARSER = new com.google.protobuf.AbstractParser<FCIGPKIBPNN>() {
+      private static final com.google.protobuf.Parser<IKFBPINOOLE>
+          PARSER = new com.google.protobuf.AbstractParser<IKFBPINOOLE>() {
         @java.lang.Override
-        public FCIGPKIBPNN parsePartialFrom(
+        public IKFBPINOOLE parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new FCIGPKIBPNN(input, extensionRegistry);
+          return new IKFBPINOOLE(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<FCIGPKIBPNN> parser() {
+      public static com.google.protobuf.Parser<IKFBPINOOLE> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<FCIGPKIBPNN> getParserForType() {
+      public com.google.protobuf.Parser<IKFBPINOOLE> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getDefaultInstanceForType() {
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
-    public static final int ODDEHJAABFE_FIELD_NUMBER = 12;
-    private long oDDEHJAABFE_;
-    /**
-     * <code>uint64 ODDEHJAABFE = 12;</code>
-     * @return The oDDEHJAABFE.
-     */
-    @java.lang.Override
-    public long getODDEHJAABFE() {
-      return oDDEHJAABFE_;
-    }
-
-    public static final int TRANSACTION_FIELD_NUMBER = 1;
+    public static final int TRANSACTION_FIELD_NUMBER = 14;
     private volatile java.lang.Object transaction_;
     /**
-     * <code>string transaction = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 14;</code>
      * @return The transaction.
      */
     @java.lang.Override
@@ -861,7 +962,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
     }
     /**
-     * <code>string transaction = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 14;</code>
      * @return The bytes for transaction.
      */
     @java.lang.Override
@@ -879,77 +984,124 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
     }
 
-    public static final int AEJLKLALBCE_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> aEJLKLALBCE_;
+    public static final int FALJIMCLKHE_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> fALJIMCLKHE_;
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> getAEJLKLALBCEList() {
-      return aEJLKLALBCE_;
+    public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> getFALJIMCLKHEList() {
+      return fALJIMCLKHE_;
     }
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder> 
-        getAEJLKLALBCEOrBuilderList() {
-      return aEJLKLALBCE_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder> 
+        getFALJIMCLKHEOrBuilderList() {
+      return fALJIMCLKHE_;
     }
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
     @java.lang.Override
-    public int getAEJLKLALBCECount() {
-      return aEJLKLALBCE_.size();
+    public int getFALJIMCLKHECount() {
+      return fALJIMCLKHE_.size();
     }
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getAEJLKLALBCE(int index) {
-      return aEJLKLALBCE_.get(index);
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getFALJIMCLKHE(int index) {
+      return fALJIMCLKHE_.get(index);
     }
     /**
-     * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder getAEJLKLALBCEOrBuilder(
+    public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder getFALJIMCLKHEOrBuilder(
         int index) {
-      return aEJLKLALBCE_.get(index);
+      return fALJIMCLKHE_.get(index);
     }
 
-    public static final int PDFMDAEIJNK_FIELD_NUMBER = 10;
-    private float pDFMDAEIJNK_;
+    public static final int NEIKDECCDMP_FIELD_NUMBER = 3;
+    private int nEIKDECCDMP_;
     /**
-     * <code>float PDFMDAEIJNK = 10;</code>
-     * @return The pDFMDAEIJNK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NEIKDECCDMP = 3;</code>
+     * @return The nEIKDECCDMP.
      */
     @java.lang.Override
-    public float getPDFMDAEIJNK() {
-      return pDFMDAEIJNK_;
+    public int getNEIKDECCDMP() {
+      return nEIKDECCDMP_;
     }
 
-    public static final int OGOLIHBAJDL_FIELD_NUMBER = 4;
-    private int oGOLIHBAJDL_;
+    public static final int BHALKCAJINA_FIELD_NUMBER = 15;
+    private float bHALKCAJINA_;
     /**
-     * <code>uint32 OGOLIHBAJDL = 4;</code>
-     * @return The oGOLIHBAJDL.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float BHALKCAJINA = 15;</code>
+     * @return The bHALKCAJINA.
      */
     @java.lang.Override
-    public int getOGOLIHBAJDL() {
-      return oGOLIHBAJDL_;
+    public float getBHALKCAJINA() {
+      return bHALKCAJINA_;
     }
 
-    public static final int IBJOJJBHKCF_FIELD_NUMBER = 13;
-    private int iBJOJJBHKCF_;
+    public static final int DPOKADLOEKM_FIELD_NUMBER = 9;
+    private int dPOKADLOEKM_;
     /**
-     * <code>uint32 IBJOJJBHKCF = 13;</code>
-     * @return The iBJOJJBHKCF.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 DPOKADLOEKM = 9;</code>
+     * @return The dPOKADLOEKM.
      */
     @java.lang.Override
-    public int getIBJOJJBHKCF() {
-      return iBJOJJBHKCF_;
+    public int getDPOKADLOEKM() {
+      return dPOKADLOEKM_;
+    }
+
+    public static final int BJNCNGCLJJN_FIELD_NUMBER = 10;
+    private long bJNCNGCLJJN_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint64 BJNCNGCLJJN = 10;</code>
+     * @return The bJNCNGCLJJN.
+     */
+    @java.lang.Override
+    public long getBJNCNGCLJJN() {
+      return bJNCNGCLJJN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -966,23 +1118,23 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (nEIKDECCDMP_ != 0) {
+        output.writeUInt32(3, nEIKDECCDMP_);
+      }
+      if (dPOKADLOEKM_ != 0) {
+        output.writeUInt32(9, dPOKADLOEKM_);
+      }
+      if (bJNCNGCLJJN_ != 0L) {
+        output.writeUInt64(10, bJNCNGCLJJN_);
+      }
+      for (int i = 0; i < fALJIMCLKHE_.size(); i++) {
+        output.writeMessage(11, fALJIMCLKHE_.get(i));
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transaction_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, transaction_);
       }
-      for (int i = 0; i < aEJLKLALBCE_.size(); i++) {
-        output.writeMessage(2, aEJLKLALBCE_.get(i));
-      }
-      if (oGOLIHBAJDL_ != 0) {
-        output.writeUInt32(4, oGOLIHBAJDL_);
-      }
-      if (pDFMDAEIJNK_ != 0F) {
-        output.writeFloat(10, pDFMDAEIJNK_);
-      }
-      if (oDDEHJAABFE_ != 0L) {
-        output.writeUInt64(12, oDDEHJAABFE_);
-      }
-      if (iBJOJJBHKCF_ != 0) {
-        output.writeUInt32(13, iBJOJJBHKCF_);
+      if (bHALKCAJINA_ != 0F) {
+        output.writeFloat(15, bHALKCAJINA_);
       }
       unknownFields.writeTo(output);
     }
@@ -993,28 +1145,28 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (nEIKDECCDMP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, nEIKDECCDMP_);
+      }
+      if (dPOKADLOEKM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, dPOKADLOEKM_);
+      }
+      if (bJNCNGCLJJN_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(10, bJNCNGCLJJN_);
+      }
+      for (int i = 0; i < fALJIMCLKHE_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, fALJIMCLKHE_.get(i));
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transaction_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, transaction_);
       }
-      for (int i = 0; i < aEJLKLALBCE_.size(); i++) {
+      if (bHALKCAJINA_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, aEJLKLALBCE_.get(i));
-      }
-      if (oGOLIHBAJDL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oGOLIHBAJDL_);
-      }
-      if (pDFMDAEIJNK_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, pDFMDAEIJNK_);
-      }
-      if (oDDEHJAABFE_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, oDDEHJAABFE_);
-      }
-      if (iBJOJJBHKCF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, iBJOJJBHKCF_);
+          .computeFloatSize(15, bHALKCAJINA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1031,19 +1183,19 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info other = (emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info) obj;
 
-      if (getODDEHJAABFE()
-          != other.getODDEHJAABFE()) return false;
       if (!getTransaction()
           .equals(other.getTransaction())) return false;
-      if (!getAEJLKLALBCEList()
-          .equals(other.getAEJLKLALBCEList())) return false;
-      if (java.lang.Float.floatToIntBits(getPDFMDAEIJNK())
+      if (!getFALJIMCLKHEList()
+          .equals(other.getFALJIMCLKHEList())) return false;
+      if (getNEIKDECCDMP()
+          != other.getNEIKDECCDMP()) return false;
+      if (java.lang.Float.floatToIntBits(getBHALKCAJINA())
           != java.lang.Float.floatToIntBits(
-              other.getPDFMDAEIJNK())) return false;
-      if (getOGOLIHBAJDL()
-          != other.getOGOLIHBAJDL()) return false;
-      if (getIBJOJJBHKCF()
-          != other.getIBJOJJBHKCF()) return false;
+              other.getBHALKCAJINA())) return false;
+      if (getDPOKADLOEKM()
+          != other.getDPOKADLOEKM()) return false;
+      if (getBJNCNGCLJJN()
+          != other.getBJNCNGCLJJN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1055,22 +1207,22 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ODDEHJAABFE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getODDEHJAABFE());
       hash = (37 * hash) + TRANSACTION_FIELD_NUMBER;
       hash = (53 * hash) + getTransaction().hashCode();
-      if (getAEJLKLALBCECount() > 0) {
-        hash = (37 * hash) + AEJLKLALBCE_FIELD_NUMBER;
-        hash = (53 * hash) + getAEJLKLALBCEList().hashCode();
+      if (getFALJIMCLKHECount() > 0) {
+        hash = (37 * hash) + FALJIMCLKHE_FIELD_NUMBER;
+        hash = (53 * hash) + getFALJIMCLKHEList().hashCode();
       }
-      hash = (37 * hash) + PDFMDAEIJNK_FIELD_NUMBER;
+      hash = (37 * hash) + NEIKDECCDMP_FIELD_NUMBER;
+      hash = (53 * hash) + getNEIKDECCDMP();
+      hash = (37 * hash) + BHALKCAJINA_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getPDFMDAEIJNK());
-      hash = (37 * hash) + OGOLIHBAJDL_FIELD_NUMBER;
-      hash = (53 * hash) + getOGOLIHBAJDL();
-      hash = (37 * hash) + IBJOJJBHKCF_FIELD_NUMBER;
-      hash = (53 * hash) + getIBJOJJBHKCF();
+          getBHALKCAJINA());
+      hash = (37 * hash) + DPOKADLOEKM_FIELD_NUMBER;
+      hash = (53 * hash) + getDPOKADLOEKM();
+      hash = (37 * hash) + BJNCNGCLJJN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getBJNCNGCLJJN());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1167,10 +1319,6 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FGLANFANLNG
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryFungusFighterV2Info}
      */
     public static final class Builder extends
@@ -1203,27 +1351,27 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAEJLKLALBCEFieldBuilder();
+          getFALJIMCLKHEFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oDDEHJAABFE_ = 0L;
-
         transaction_ = "";
 
-        if (aEJLKLALBCEBuilder_ == null) {
-          aEJLKLALBCE_ = java.util.Collections.emptyList();
+        if (fALJIMCLKHEBuilder_ == null) {
+          fALJIMCLKHE_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          aEJLKLALBCEBuilder_.clear();
+          fALJIMCLKHEBuilder_.clear();
         }
-        pDFMDAEIJNK_ = 0F;
+        nEIKDECCDMP_ = 0;
 
-        oGOLIHBAJDL_ = 0;
+        bHALKCAJINA_ = 0F;
 
-        iBJOJJBHKCF_ = 0;
+        dPOKADLOEKM_ = 0;
+
+        bJNCNGCLJJN_ = 0L;
 
         return this;
       }
@@ -1252,20 +1400,20 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info result = new emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info(this);
         int from_bitField0_ = bitField0_;
-        result.oDDEHJAABFE_ = oDDEHJAABFE_;
         result.transaction_ = transaction_;
-        if (aEJLKLALBCEBuilder_ == null) {
+        if (fALJIMCLKHEBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            aEJLKLALBCE_ = java.util.Collections.unmodifiableList(aEJLKLALBCE_);
+            fALJIMCLKHE_ = java.util.Collections.unmodifiableList(fALJIMCLKHE_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.aEJLKLALBCE_ = aEJLKLALBCE_;
+          result.fALJIMCLKHE_ = fALJIMCLKHE_;
         } else {
-          result.aEJLKLALBCE_ = aEJLKLALBCEBuilder_.build();
+          result.fALJIMCLKHE_ = fALJIMCLKHEBuilder_.build();
         }
-        result.pDFMDAEIJNK_ = pDFMDAEIJNK_;
-        result.oGOLIHBAJDL_ = oGOLIHBAJDL_;
-        result.iBJOJJBHKCF_ = iBJOJJBHKCF_;
+        result.nEIKDECCDMP_ = nEIKDECCDMP_;
+        result.bHALKCAJINA_ = bHALKCAJINA_;
+        result.dPOKADLOEKM_ = dPOKADLOEKM_;
+        result.bJNCNGCLJJN_ = bJNCNGCLJJN_;
         onBuilt();
         return result;
       }
@@ -1314,47 +1462,47 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.getDefaultInstance()) return this;
-        if (other.getODDEHJAABFE() != 0L) {
-          setODDEHJAABFE(other.getODDEHJAABFE());
-        }
         if (!other.getTransaction().isEmpty()) {
           transaction_ = other.transaction_;
           onChanged();
         }
-        if (aEJLKLALBCEBuilder_ == null) {
-          if (!other.aEJLKLALBCE_.isEmpty()) {
-            if (aEJLKLALBCE_.isEmpty()) {
-              aEJLKLALBCE_ = other.aEJLKLALBCE_;
+        if (fALJIMCLKHEBuilder_ == null) {
+          if (!other.fALJIMCLKHE_.isEmpty()) {
+            if (fALJIMCLKHE_.isEmpty()) {
+              fALJIMCLKHE_ = other.fALJIMCLKHE_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureAEJLKLALBCEIsMutable();
-              aEJLKLALBCE_.addAll(other.aEJLKLALBCE_);
+              ensureFALJIMCLKHEIsMutable();
+              fALJIMCLKHE_.addAll(other.fALJIMCLKHE_);
             }
             onChanged();
           }
         } else {
-          if (!other.aEJLKLALBCE_.isEmpty()) {
-            if (aEJLKLALBCEBuilder_.isEmpty()) {
-              aEJLKLALBCEBuilder_.dispose();
-              aEJLKLALBCEBuilder_ = null;
-              aEJLKLALBCE_ = other.aEJLKLALBCE_;
+          if (!other.fALJIMCLKHE_.isEmpty()) {
+            if (fALJIMCLKHEBuilder_.isEmpty()) {
+              fALJIMCLKHEBuilder_.dispose();
+              fALJIMCLKHEBuilder_ = null;
+              fALJIMCLKHE_ = other.fALJIMCLKHE_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              aEJLKLALBCEBuilder_ = 
+              fALJIMCLKHEBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAEJLKLALBCEFieldBuilder() : null;
+                   getFALJIMCLKHEFieldBuilder() : null;
             } else {
-              aEJLKLALBCEBuilder_.addAllMessages(other.aEJLKLALBCE_);
+              fALJIMCLKHEBuilder_.addAllMessages(other.fALJIMCLKHE_);
             }
           }
         }
-        if (other.getPDFMDAEIJNK() != 0F) {
-          setPDFMDAEIJNK(other.getPDFMDAEIJNK());
+        if (other.getNEIKDECCDMP() != 0) {
+          setNEIKDECCDMP(other.getNEIKDECCDMP());
         }
-        if (other.getOGOLIHBAJDL() != 0) {
-          setOGOLIHBAJDL(other.getOGOLIHBAJDL());
+        if (other.getBHALKCAJINA() != 0F) {
+          setBHALKCAJINA(other.getBHALKCAJINA());
         }
-        if (other.getIBJOJJBHKCF() != 0) {
-          setIBJOJJBHKCF(other.getIBJOJJBHKCF());
+        if (other.getDPOKADLOEKM() != 0) {
+          setDPOKADLOEKM(other.getDPOKADLOEKM());
+        }
+        if (other.getBJNCNGCLJJN() != 0L) {
+          setBJNCNGCLJJN(other.getBJNCNGCLJJN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1386,40 +1534,13 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       }
       private int bitField0_;
 
-      private long oDDEHJAABFE_ ;
-      /**
-       * <code>uint64 ODDEHJAABFE = 12;</code>
-       * @return The oDDEHJAABFE.
-       */
-      @java.lang.Override
-      public long getODDEHJAABFE() {
-        return oDDEHJAABFE_;
-      }
-      /**
-       * <code>uint64 ODDEHJAABFE = 12;</code>
-       * @param value The oDDEHJAABFE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setODDEHJAABFE(long value) {
-        
-        oDDEHJAABFE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 ODDEHJAABFE = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearODDEHJAABFE() {
-        
-        oDDEHJAABFE_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object transaction_ = "";
       /**
-       * <code>string transaction = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 14;</code>
        * @return The transaction.
        */
       public java.lang.String getTransaction() {
@@ -1435,7 +1556,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 14;</code>
        * @return The bytes for transaction.
        */
       public com.google.protobuf.ByteString
@@ -1452,7 +1577,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 14;</code>
        * @param value The transaction to set.
        * @return This builder for chaining.
        */
@@ -1467,7 +1596,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTransaction() {
@@ -1477,7 +1610,11 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 14;</code>
        * @param value The bytes for transaction to set.
        * @return This builder for chaining.
        */
@@ -1493,335 +1630,486 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> aEJLKLALBCE_ =
+      private java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> fALJIMCLKHE_ =
         java.util.Collections.emptyList();
-      private void ensureAEJLKLALBCEIsMutable() {
+      private void ensureFALJIMCLKHEIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          aEJLKLALBCE_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN>(aEJLKLALBCE_);
+          fALJIMCLKHE_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE>(fALJIMCLKHE_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder> aEJLKLALBCEBuilder_;
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder> fALJIMCLKHEBuilder_;
 
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> getAEJLKLALBCEList() {
-        if (aEJLKLALBCEBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(aEJLKLALBCE_);
+      public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> getFALJIMCLKHEList() {
+        if (fALJIMCLKHEBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(fALJIMCLKHE_);
         } else {
-          return aEJLKLALBCEBuilder_.getMessageList();
+          return fALJIMCLKHEBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public int getAEJLKLALBCECount() {
-        if (aEJLKLALBCEBuilder_ == null) {
-          return aEJLKLALBCE_.size();
+      public int getFALJIMCLKHECount() {
+        if (fALJIMCLKHEBuilder_ == null) {
+          return fALJIMCLKHE_.size();
         } else {
-          return aEJLKLALBCEBuilder_.getCount();
+          return fALJIMCLKHEBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN getAEJLKLALBCE(int index) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          return aEJLKLALBCE_.get(index);
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE getFALJIMCLKHE(int index) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          return fALJIMCLKHE_.get(index);
         } else {
-          return aEJLKLALBCEBuilder_.getMessage(index);
+          return fALJIMCLKHEBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder setAEJLKLALBCE(
-          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN value) {
-        if (aEJLKLALBCEBuilder_ == null) {
+      public Builder setFALJIMCLKHE(
+          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE value) {
+        if (fALJIMCLKHEBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.set(index, value);
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.set(index, value);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.setMessage(index, value);
+          fALJIMCLKHEBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder setAEJLKLALBCE(
-          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder builderForValue) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.set(index, builderForValue.build());
+      public Builder setFALJIMCLKHE(
+          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder builderForValue) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.set(index, builderForValue.build());
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.setMessage(index, builderForValue.build());
+          fALJIMCLKHEBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder addAEJLKLALBCE(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN value) {
-        if (aEJLKLALBCEBuilder_ == null) {
+      public Builder addFALJIMCLKHE(emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE value) {
+        if (fALJIMCLKHEBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.add(value);
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.add(value);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.addMessage(value);
+          fALJIMCLKHEBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder addAEJLKLALBCE(
-          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN value) {
-        if (aEJLKLALBCEBuilder_ == null) {
+      public Builder addFALJIMCLKHE(
+          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE value) {
+        if (fALJIMCLKHEBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.add(index, value);
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.add(index, value);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.addMessage(index, value);
+          fALJIMCLKHEBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder addAEJLKLALBCE(
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder builderForValue) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.add(builderForValue.build());
+      public Builder addFALJIMCLKHE(
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder builderForValue) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.add(builderForValue.build());
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.addMessage(builderForValue.build());
+          fALJIMCLKHEBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder addAEJLKLALBCE(
-          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder builderForValue) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.add(index, builderForValue.build());
+      public Builder addFALJIMCLKHE(
+          int index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder builderForValue) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.add(index, builderForValue.build());
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.addMessage(index, builderForValue.build());
+          fALJIMCLKHEBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder addAllAEJLKLALBCE(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN> values) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          ensureAEJLKLALBCEIsMutable();
+      public Builder addAllFALJIMCLKHE(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE> values) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          ensureFALJIMCLKHEIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, aEJLKLALBCE_);
+              values, fALJIMCLKHE_);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.addAllMessages(values);
+          fALJIMCLKHEBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder clearAEJLKLALBCE() {
-        if (aEJLKLALBCEBuilder_ == null) {
-          aEJLKLALBCE_ = java.util.Collections.emptyList();
+      public Builder clearFALJIMCLKHE() {
+        if (fALJIMCLKHEBuilder_ == null) {
+          fALJIMCLKHE_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.clear();
+          fALJIMCLKHEBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public Builder removeAEJLKLALBCE(int index) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          ensureAEJLKLALBCEIsMutable();
-          aEJLKLALBCE_.remove(index);
+      public Builder removeFALJIMCLKHE(int index) {
+        if (fALJIMCLKHEBuilder_ == null) {
+          ensureFALJIMCLKHEIsMutable();
+          fALJIMCLKHE_.remove(index);
           onChanged();
         } else {
-          aEJLKLALBCEBuilder_.remove(index);
+          fALJIMCLKHEBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder getAEJLKLALBCEBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder getFALJIMCLKHEBuilder(
           int index) {
-        return getAEJLKLALBCEFieldBuilder().getBuilder(index);
+        return getFALJIMCLKHEFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder getAEJLKLALBCEOrBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder getFALJIMCLKHEOrBuilder(
           int index) {
-        if (aEJLKLALBCEBuilder_ == null) {
-          return aEJLKLALBCE_.get(index);  } else {
-          return aEJLKLALBCEBuilder_.getMessageOrBuilder(index);
+        if (fALJIMCLKHEBuilder_ == null) {
+          return fALJIMCLKHE_.get(index);  } else {
+          return fALJIMCLKHEBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder> 
-           getAEJLKLALBCEOrBuilderList() {
-        if (aEJLKLALBCEBuilder_ != null) {
-          return aEJLKLALBCEBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder> 
+           getFALJIMCLKHEOrBuilderList() {
+        if (fALJIMCLKHEBuilder_ != null) {
+          return fALJIMCLKHEBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(aEJLKLALBCE_);
+          return java.util.Collections.unmodifiableList(fALJIMCLKHE_);
         }
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder addAEJLKLALBCEBuilder() {
-        return getAEJLKLALBCEFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.getDefaultInstance());
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder addFALJIMCLKHEBuilder() {
+        return getFALJIMCLKHEFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder addAEJLKLALBCEBuilder(
+      public emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder addFALJIMCLKHEBuilder(
           int index) {
-        return getAEJLKLALBCEFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.getDefaultInstance());
+        return getFALJIMCLKHEFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneGalleryFungusFighterV2Info.FCIGPKIBPNN AEJLKLALBCE = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .SceneGalleryFungusFighterV2Info.IKFBPINOOLE FALJIMCLKHE = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder> 
-           getAEJLKLALBCEBuilderList() {
-        return getAEJLKLALBCEFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder> 
+           getFALJIMCLKHEBuilderList() {
+        return getFALJIMCLKHEFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder> 
-          getAEJLKLALBCEFieldBuilder() {
-        if (aEJLKLALBCEBuilder_ == null) {
-          aEJLKLALBCEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNN.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.FCIGPKIBPNNOrBuilder>(
-                  aEJLKLALBCE_,
+          emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder> 
+          getFALJIMCLKHEFieldBuilder() {
+        if (fALJIMCLKHEBuilder_ == null) {
+          fALJIMCLKHEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLE.Builder, emu.grasscutter.net.proto.SceneGalleryFungusFighterV2InfoOuterClass.SceneGalleryFungusFighterV2Info.IKFBPINOOLEOrBuilder>(
+                  fALJIMCLKHE_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          aEJLKLALBCE_ = null;
+          fALJIMCLKHE_ = null;
         }
-        return aEJLKLALBCEBuilder_;
+        return fALJIMCLKHEBuilder_;
       }
 
-      private float pDFMDAEIJNK_ ;
+      private int nEIKDECCDMP_ ;
       /**
-       * <code>float PDFMDAEIJNK = 10;</code>
-       * @return The pDFMDAEIJNK.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NEIKDECCDMP = 3;</code>
+       * @return The nEIKDECCDMP.
        */
       @java.lang.Override
-      public float getPDFMDAEIJNK() {
-        return pDFMDAEIJNK_;
+      public int getNEIKDECCDMP() {
+        return nEIKDECCDMP_;
       }
       /**
-       * <code>float PDFMDAEIJNK = 10;</code>
-       * @param value The pDFMDAEIJNK to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NEIKDECCDMP = 3;</code>
+       * @param value The nEIKDECCDMP to set.
        * @return This builder for chaining.
        */
-      public Builder setPDFMDAEIJNK(float value) {
+      public Builder setNEIKDECCDMP(int value) {
         
-        pDFMDAEIJNK_ = value;
+        nEIKDECCDMP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float PDFMDAEIJNK = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NEIKDECCDMP = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPDFMDAEIJNK() {
+      public Builder clearNEIKDECCDMP() {
         
-        pDFMDAEIJNK_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int oGOLIHBAJDL_ ;
-      /**
-       * <code>uint32 OGOLIHBAJDL = 4;</code>
-       * @return The oGOLIHBAJDL.
-       */
-      @java.lang.Override
-      public int getOGOLIHBAJDL() {
-        return oGOLIHBAJDL_;
-      }
-      /**
-       * <code>uint32 OGOLIHBAJDL = 4;</code>
-       * @param value The oGOLIHBAJDL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOGOLIHBAJDL(int value) {
-        
-        oGOLIHBAJDL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OGOLIHBAJDL = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOGOLIHBAJDL() {
-        
-        oGOLIHBAJDL_ = 0;
+        nEIKDECCDMP_ = 0;
         onChanged();
         return this;
       }
 
-      private int iBJOJJBHKCF_ ;
+      private float bHALKCAJINA_ ;
       /**
-       * <code>uint32 IBJOJJBHKCF = 13;</code>
-       * @return The iBJOJJBHKCF.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BHALKCAJINA = 15;</code>
+       * @return The bHALKCAJINA.
        */
       @java.lang.Override
-      public int getIBJOJJBHKCF() {
-        return iBJOJJBHKCF_;
+      public float getBHALKCAJINA() {
+        return bHALKCAJINA_;
       }
       /**
-       * <code>uint32 IBJOJJBHKCF = 13;</code>
-       * @param value The iBJOJJBHKCF to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BHALKCAJINA = 15;</code>
+       * @param value The bHALKCAJINA to set.
        * @return This builder for chaining.
        */
-      public Builder setIBJOJJBHKCF(int value) {
+      public Builder setBHALKCAJINA(float value) {
         
-        iBJOJJBHKCF_ = value;
+        bHALKCAJINA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IBJOJJBHKCF = 13;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float BHALKCAJINA = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIBJOJJBHKCF() {
+      public Builder clearBHALKCAJINA() {
         
-        iBJOJJBHKCF_ = 0;
+        bHALKCAJINA_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int dPOKADLOEKM_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 DPOKADLOEKM = 9;</code>
+       * @return The dPOKADLOEKM.
+       */
+      @java.lang.Override
+      public int getDPOKADLOEKM() {
+        return dPOKADLOEKM_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 DPOKADLOEKM = 9;</code>
+       * @param value The dPOKADLOEKM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPOKADLOEKM(int value) {
+        
+        dPOKADLOEKM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 DPOKADLOEKM = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPOKADLOEKM() {
+        
+        dPOKADLOEKM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long bJNCNGCLJJN_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint64 BJNCNGCLJJN = 10;</code>
+       * @return The bJNCNGCLJJN.
+       */
+      @java.lang.Override
+      public long getBJNCNGCLJJN() {
+        return bJNCNGCLJJN_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint64 BJNCNGCLJJN = 10;</code>
+       * @param value The bJNCNGCLJJN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBJNCNGCLJJN(long value) {
+        
+        bJNCNGCLJJN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint64 BJNCNGCLJJN = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBJNCNGCLJJN() {
+        
+        bJNCNGCLJJN_ = 0L;
         onChanged();
         return this;
       }
@@ -1884,10 +2172,10 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SceneGalleryFungusFighterV2Info_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor;
+    internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_fieldAccessorTable;
+      internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1897,32 +2185,35 @@ public final class SceneGalleryFungusFighterV2InfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n%SceneGalleryFungusFighterV2Info.proto\"" +
-      "\226\002\n\037SceneGalleryFungusFighterV2Info\022\023\n\013O" +
-      "DDEHJAABFE\030\014 \001(\004\022\023\n\013transaction\030\001 \001(\t\022A\n" +
-      "\013AEJLKLALBCE\030\002 \003(\0132,.SceneGalleryFungusF" +
-      "ighterV2Info.FCIGPKIBPNN\022\023\n\013PDFMDAEIJNK\030" +
-      "\n \001(\002\022\023\n\013OGOLIHBAJDL\030\004 \001(\r\022\023\n\013IBJOJJBHKC" +
-      "F\030\r \001(\r\032G\n\013FCIGPKIBPNN\022\023\n\013HAPBKADOKLK\030\010 " +
-      "\001(\004\022\021\n\tfungus_id\030\001 \001(\r\022\020\n\010is_alive\030\007 \001(\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n%SceneGalleryFungusFighterV2Info.proto\032" +
+      "\021IKFBPINOOLE.proto\"\226\002\n\037SceneGalleryFungu" +
+      "sFighterV2Info\022\023\n\013transaction\030\016 \001(\t\022A\n\013F" +
+      "ALJIMCLKHE\030\013 \003(\0132,.SceneGalleryFungusFig" +
+      "hterV2Info.IKFBPINOOLE\022\023\n\013NEIKDECCDMP\030\003 " +
+      "\001(\r\022\023\n\013BHALKCAJINA\030\017 \001(\002\022\023\n\013DPOKADLOEKM\030" +
+      "\t \001(\r\022\023\n\013BJNCNGCLJJN\030\n \001(\004\032G\n\013IKFBPINOOL" +
+      "E\022\023\n\013CEJKPBNCIGJ\030\006 \001(\004\022\020\n\010is_alive\030\r \001(\010" +
+      "\022\021\n\tfungus_id\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.IKFBPINOOLEOuterClass.getDescriptor(),
         });
     internal_static_SceneGalleryFungusFighterV2Info_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneGalleryFungusFighterV2Info_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryFungusFighterV2Info_descriptor,
-        new java.lang.String[] { "ODDEHJAABFE", "Transaction", "AEJLKLALBCE", "PDFMDAEIJNK", "OGOLIHBAJDL", "IBJOJJBHKCF", });
-    internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor =
+        new java.lang.String[] { "Transaction", "FALJIMCLKHE", "NEIKDECCDMP", "BHALKCAJINA", "DPOKADLOEKM", "BJNCNGCLJJN", });
+    internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor =
       internal_static_SceneGalleryFungusFighterV2Info_descriptor.getNestedTypes().get(0);
-    internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_fieldAccessorTable = new
+    internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_SceneGalleryFungusFighterV2Info_FCIGPKIBPNN_descriptor,
-        new java.lang.String[] { "HAPBKADOKLK", "FungusId", "IsAlive", });
+        internal_static_SceneGalleryFungusFighterV2Info_IKFBPINOOLE_descriptor,
+        new java.lang.String[] { "CEJKPBNCIGJ", "IsAlive", "FungusId", });
+    emu.grasscutter.net.proto.IKFBPINOOLEOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

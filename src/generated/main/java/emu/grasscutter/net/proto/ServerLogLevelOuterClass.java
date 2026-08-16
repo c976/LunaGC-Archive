@@ -15,10 +15,6 @@ public final class ServerLogLevelOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf enum {@code ServerLogLevel}
    */
   public enum ServerLogLevel
@@ -43,6 +39,10 @@ public final class ServerLogLevelOuterClass {
      * <code>LOG_LEVEL_ERROR = 4;</code>
      */
     LOG_LEVEL_ERROR(4),
+    /**
+     * <code>LOG_LEVEL_RED_ALERT_SILENT = 5;</code>
+     */
+    LOG_LEVEL_RED_ALERT_SILENT(5),
     UNRECOGNIZED(-1),
     ;
 
@@ -66,6 +66,10 @@ public final class ServerLogLevelOuterClass {
      * <code>LOG_LEVEL_ERROR = 4;</code>
      */
     public static final int LOG_LEVEL_ERROR_VALUE = 4;
+    /**
+     * <code>LOG_LEVEL_RED_ALERT_SILENT = 5;</code>
+     */
+    public static final int LOG_LEVEL_RED_ALERT_SILENT_VALUE = 5;
 
 
     public final int getNumber() {
@@ -97,6 +101,7 @@ public final class ServerLogLevelOuterClass {
         case 2: return LOG_LEVEL_INFO;
         case 3: return LOG_LEVEL_WARNING;
         case 4: return LOG_LEVEL_ERROR;
+        case 5: return LOG_LEVEL_RED_ALERT_SILENT;
         default: return null;
       }
     }
@@ -162,11 +167,12 @@ public final class ServerLogLevelOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ServerLogLevel.proto*y\n\016ServerLogLevel" +
-      "\022\022\n\016LOG_LEVEL_NONE\020\000\022\023\n\017LOG_LEVEL_DEBUG\020" +
-      "\001\022\022\n\016LOG_LEVEL_INFO\020\002\022\025\n\021LOG_LEVEL_WARNI" +
-      "NG\020\003\022\023\n\017LOG_LEVEL_ERROR\020\004B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\024ServerLogLevel.proto*\231\001\n\016ServerLogLeve" +
+      "l\022\022\n\016LOG_LEVEL_NONE\020\000\022\023\n\017LOG_LEVEL_DEBUG" +
+      "\020\001\022\022\n\016LOG_LEVEL_INFO\020\002\022\025\n\021LOG_LEVEL_WARN" +
+      "ING\020\003\022\023\n\017LOG_LEVEL_ERROR\020\004\022\036\n\032LOG_LEVEL_" +
+      "RED_ALERT_SILENT\020\005B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

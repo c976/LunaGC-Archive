@@ -19,17 +19,19 @@ public final class ContentAuditInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 1;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string content = 2;</code>
      * @return The content.
      */
     java.lang.String getContent();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string content = 2;</code>
      * @return The bytes for content.
      */
@@ -37,33 +39,55 @@ public final class ContentAuditInfoOuterClass {
         getContentBytes();
 
     /**
-     * <code>uint32 submit_count = 3;</code>
-     * @return The submitCount.
-     */
-    int getSubmitCount();
-
-    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.AuditState audit_state = 4;</code>
      * @return The enum numeric value on the wire for auditState.
      */
     int getAuditStateValue();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.AuditState audit_state = 4;</code>
      * @return The auditState.
      */
     emu.grasscutter.net.proto.AuditStateOuterClass.AuditState getAuditState();
 
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_open = 1;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 submit_limit = 5;</code>
      * @return The submitLimit.
      */
     int getSubmitLimit();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 submit_count = 3;</code>
+     * @return The submitCount.
+     */
+    int getSubmitCount();
   }
   /**
-   * <pre>
-   * Obf: MOIJAPOKNPK
-   * </pre>
-   *
    * Protobuf type {@code ContentAuditInfo}
    */
   public static final class ContentAuditInfo extends
@@ -169,20 +193,13 @@ public final class ContentAuditInfoOuterClass {
               emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.class, emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 1;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 1;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
-    }
-
     public static final int CONTENT_FIELD_NUMBER = 2;
     private volatile java.lang.Object content_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string content = 2;</code>
      * @return The content.
      */
@@ -200,6 +217,10 @@ public final class ContentAuditInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string content = 2;</code>
      * @return The bytes for content.
      */
@@ -218,20 +239,13 @@ public final class ContentAuditInfoOuterClass {
       }
     }
 
-    public static final int SUBMIT_COUNT_FIELD_NUMBER = 3;
-    private int submitCount_;
-    /**
-     * <code>uint32 submit_count = 3;</code>
-     * @return The submitCount.
-     */
-    @java.lang.Override
-    public int getSubmitCount() {
-      return submitCount_;
-    }
-
     public static final int AUDIT_STATE_FIELD_NUMBER = 4;
     private int auditState_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.AuditState audit_state = 4;</code>
      * @return The enum numeric value on the wire for auditState.
      */
@@ -239,6 +253,10 @@ public final class ContentAuditInfoOuterClass {
       return auditState_;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.AuditState audit_state = 4;</code>
      * @return The auditState.
      */
@@ -248,15 +266,49 @@ public final class ContentAuditInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.AuditStateOuterClass.AuditState.UNRECOGNIZED : result;
     }
 
+    public static final int IS_OPEN_FIELD_NUMBER = 1;
+    private boolean isOpen_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_open = 1;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
     public static final int SUBMIT_LIMIT_FIELD_NUMBER = 5;
     private int submitLimit_;
     /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 submit_limit = 5;</code>
      * @return The submitLimit.
      */
     @java.lang.Override
     public int getSubmitLimit() {
       return submitLimit_;
+    }
+
+    public static final int SUBMIT_COUNT_FIELD_NUMBER = 3;
+    private int submitCount_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 submit_count = 3;</code>
+     * @return The submitCount.
+     */
+    @java.lang.Override
+    public int getSubmitCount() {
+      return submitCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -331,15 +383,15 @@ public final class ContentAuditInfoOuterClass {
       }
       emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo other = (emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo) obj;
 
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (!getContent()
           .equals(other.getContent())) return false;
-      if (getSubmitCount()
-          != other.getSubmitCount()) return false;
       if (auditState_ != other.auditState_) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (getSubmitLimit()
           != other.getSubmitLimit()) return false;
+      if (getSubmitCount()
+          != other.getSubmitCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -351,17 +403,17 @@ public final class ContentAuditInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
+      hash = (53 * hash) + getContent().hashCode();
+      hash = (37 * hash) + AUDIT_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + auditState_;
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
-      hash = (53 * hash) + getContent().hashCode();
-      hash = (37 * hash) + SUBMIT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getSubmitCount();
-      hash = (37 * hash) + AUDIT_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + auditState_;
       hash = (37 * hash) + SUBMIT_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + getSubmitLimit();
+      hash = (37 * hash) + SUBMIT_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getSubmitCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -458,10 +510,6 @@ public final class ContentAuditInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MOIJAPOKNPK
-     * </pre>
-     *
      * Protobuf type {@code ContentAuditInfo}
      */
     public static final class Builder extends
@@ -499,15 +547,15 @@ public final class ContentAuditInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
         content_ = "";
-
-        submitCount_ = 0;
 
         auditState_ = 0;
 
+        isOpen_ = false;
+
         submitLimit_ = 0;
+
+        submitCount_ = 0;
 
         return this;
       }
@@ -535,11 +583,11 @@ public final class ContentAuditInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo buildPartial() {
         emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo result = new emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo(this);
-        result.isOpen_ = isOpen_;
         result.content_ = content_;
-        result.submitCount_ = submitCount_;
         result.auditState_ = auditState_;
+        result.isOpen_ = isOpen_;
         result.submitLimit_ = submitLimit_;
+        result.submitCount_ = submitCount_;
         onBuilt();
         return result;
       }
@@ -588,21 +636,21 @@ public final class ContentAuditInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo other) {
         if (other == emu.grasscutter.net.proto.ContentAuditInfoOuterClass.ContentAuditInfo.getDefaultInstance()) return this;
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
         if (!other.getContent().isEmpty()) {
           content_ = other.content_;
           onChanged();
         }
-        if (other.getSubmitCount() != 0) {
-          setSubmitCount(other.getSubmitCount());
-        }
         if (other.auditState_ != 0) {
           setAuditStateValue(other.getAuditStateValue());
         }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
         if (other.getSubmitLimit() != 0) {
           setSubmitLimit(other.getSubmitLimit());
+        }
+        if (other.getSubmitCount() != 0) {
+          setSubmitCount(other.getSubmitCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -633,39 +681,12 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
 
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 1;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 1;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object content_ = "";
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string content = 2;</code>
        * @return The content.
        */
@@ -682,6 +703,10 @@ public final class ContentAuditInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string content = 2;</code>
        * @return The bytes for content.
        */
@@ -699,6 +724,10 @@ public final class ContentAuditInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string content = 2;</code>
        * @param value The content to set.
        * @return This builder for chaining.
@@ -714,6 +743,10 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string content = 2;</code>
        * @return This builder for chaining.
        */
@@ -724,6 +757,10 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string content = 2;</code>
        * @param value The bytes for content to set.
        * @return This builder for chaining.
@@ -740,39 +777,12 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
 
-      private int submitCount_ ;
-      /**
-       * <code>uint32 submit_count = 3;</code>
-       * @return The submitCount.
-       */
-      @java.lang.Override
-      public int getSubmitCount() {
-        return submitCount_;
-      }
-      /**
-       * <code>uint32 submit_count = 3;</code>
-       * @param value The submitCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubmitCount(int value) {
-        
-        submitCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 submit_count = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubmitCount() {
-        
-        submitCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int auditState_ = 0;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.AuditState audit_state = 4;</code>
        * @return The enum numeric value on the wire for auditState.
        */
@@ -780,6 +790,10 @@ public final class ContentAuditInfoOuterClass {
         return auditState_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.AuditState audit_state = 4;</code>
        * @param value The enum numeric value on the wire for auditState to set.
        * @return This builder for chaining.
@@ -791,6 +805,10 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.AuditState audit_state = 4;</code>
        * @return The auditState.
        */
@@ -801,6 +819,10 @@ public final class ContentAuditInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.AuditStateOuterClass.AuditState.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.AuditState audit_state = 4;</code>
        * @param value The auditState to set.
        * @return This builder for chaining.
@@ -815,6 +837,10 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.AuditState audit_state = 4;</code>
        * @return This builder for chaining.
        */
@@ -825,8 +851,55 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
 
+      private boolean isOpen_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 1;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 1;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
       private int submitLimit_ ;
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 submit_limit = 5;</code>
        * @return The submitLimit.
        */
@@ -835,6 +908,10 @@ public final class ContentAuditInfoOuterClass {
         return submitLimit_;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 submit_limit = 5;</code>
        * @param value The submitLimit to set.
        * @return This builder for chaining.
@@ -846,12 +923,59 @@ public final class ContentAuditInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 submit_limit = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSubmitLimit() {
         
         submitLimit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int submitCount_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 submit_count = 3;</code>
+       * @return The submitCount.
+       */
+      @java.lang.Override
+      public int getSubmitCount() {
+        return submitCount_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 submit_count = 3;</code>
+       * @param value The submitCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubmitCount(int value) {
+        
+        submitCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 submit_count = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSubmitCount() {
+        
+        submitCount_ = 0;
         onChanged();
         return this;
       }
@@ -923,10 +1047,10 @@ public final class ContentAuditInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ContentAuditInfo.proto\032\020AuditState.pro" +
-      "to\"\202\001\n\020ContentAuditInfo\022\017\n\007is_open\030\001 \001(\010" +
-      "\022\017\n\007content\030\002 \001(\t\022\024\n\014submit_count\030\003 \001(\r\022" +
-      " \n\013audit_state\030\004 \001(\0162\013.AuditState\022\024\n\014sub" +
-      "mit_limit\030\005 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "to\"\202\001\n\020ContentAuditInfo\022\017\n\007content\030\002 \001(\t" +
+      "\022 \n\013audit_state\030\004 \001(\0162\013.AuditState\022\017\n\007is" +
+      "_open\030\001 \001(\010\022\024\n\014submit_limit\030\005 \001(\r\022\024\n\014sub" +
+      "mit_count\030\003 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -939,7 +1063,7 @@ public final class ContentAuditInfoOuterClass {
     internal_static_ContentAuditInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ContentAuditInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "Content", "SubmitCount", "AuditState", "SubmitLimit", });
+        new java.lang.String[] { "Content", "AuditState", "IsOpen", "SubmitLimit", "SubmitCount", });
     emu.grasscutter.net.proto.AuditStateOuterClass.getDescriptor();
   }
 

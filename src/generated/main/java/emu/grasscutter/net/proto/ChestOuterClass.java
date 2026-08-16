@@ -19,16 +19,24 @@ public final class ChestOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 chest_drop_id = 1;</code>
-     * @return The chestDropId.
-     */
-    int getChestDropId();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_show_cutscene = 2;</code>
      * @return The isShowCutscene.
      */
     boolean getIsShowCutscene();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 chest_drop_id = 1;</code>
+     * @return The chestDropId.
+     */
+    int getChestDropId();
   }
   /**
    * Protobuf type {@code Chest}
@@ -117,26 +125,34 @@ public final class ChestOuterClass {
               emu.grasscutter.net.proto.ChestOuterClass.Chest.class, emu.grasscutter.net.proto.ChestOuterClass.Chest.Builder.class);
     }
 
-    public static final int CHEST_DROP_ID_FIELD_NUMBER = 1;
-    private int chestDropId_;
-    /**
-     * <code>uint32 chest_drop_id = 1;</code>
-     * @return The chestDropId.
-     */
-    @java.lang.Override
-    public int getChestDropId() {
-      return chestDropId_;
-    }
-
     public static final int IS_SHOW_CUTSCENE_FIELD_NUMBER = 2;
     private boolean isShowCutscene_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_show_cutscene = 2;</code>
      * @return The isShowCutscene.
      */
     @java.lang.Override
     public boolean getIsShowCutscene() {
       return isShowCutscene_;
+    }
+
+    public static final int CHEST_DROP_ID_FIELD_NUMBER = 1;
+    private int chestDropId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 chest_drop_id = 1;</code>
+     * @return The chestDropId.
+     */
+    @java.lang.Override
+    public int getChestDropId() {
+      return chestDropId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +207,10 @@ public final class ChestOuterClass {
       }
       emu.grasscutter.net.proto.ChestOuterClass.Chest other = (emu.grasscutter.net.proto.ChestOuterClass.Chest) obj;
 
-      if (getChestDropId()
-          != other.getChestDropId()) return false;
       if (getIsShowCutscene()
           != other.getIsShowCutscene()) return false;
+      if (getChestDropId()
+          != other.getChestDropId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +222,11 @@ public final class ChestOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHEST_DROP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChestDropId();
       hash = (37 * hash) + IS_SHOW_CUTSCENE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShowCutscene());
+      hash = (37 * hash) + CHEST_DROP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChestDropId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +360,9 @@ public final class ChestOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        chestDropId_ = 0;
-
         isShowCutscene_ = false;
+
+        chestDropId_ = 0;
 
         return this;
       }
@@ -374,8 +390,8 @@ public final class ChestOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChestOuterClass.Chest buildPartial() {
         emu.grasscutter.net.proto.ChestOuterClass.Chest result = new emu.grasscutter.net.proto.ChestOuterClass.Chest(this);
-        result.chestDropId_ = chestDropId_;
         result.isShowCutscene_ = isShowCutscene_;
+        result.chestDropId_ = chestDropId_;
         onBuilt();
         return result;
       }
@@ -424,11 +440,11 @@ public final class ChestOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChestOuterClass.Chest other) {
         if (other == emu.grasscutter.net.proto.ChestOuterClass.Chest.getDefaultInstance()) return this;
-        if (other.getChestDropId() != 0) {
-          setChestDropId(other.getChestDropId());
-        }
         if (other.getIsShowCutscene() != false) {
           setIsShowCutscene(other.getIsShowCutscene());
+        }
+        if (other.getChestDropId() != 0) {
+          setChestDropId(other.getChestDropId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,39 +475,12 @@ public final class ChestOuterClass {
         return this;
       }
 
-      private int chestDropId_ ;
-      /**
-       * <code>uint32 chest_drop_id = 1;</code>
-       * @return The chestDropId.
-       */
-      @java.lang.Override
-      public int getChestDropId() {
-        return chestDropId_;
-      }
-      /**
-       * <code>uint32 chest_drop_id = 1;</code>
-       * @param value The chestDropId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChestDropId(int value) {
-        
-        chestDropId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 chest_drop_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChestDropId() {
-        
-        chestDropId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isShowCutscene_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show_cutscene = 2;</code>
        * @return The isShowCutscene.
        */
@@ -500,6 +489,10 @@ public final class ChestOuterClass {
         return isShowCutscene_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show_cutscene = 2;</code>
        * @param value The isShowCutscene to set.
        * @return This builder for chaining.
@@ -511,12 +504,59 @@ public final class ChestOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show_cutscene = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShowCutscene() {
         
         isShowCutscene_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int chestDropId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 chest_drop_id = 1;</code>
+       * @return The chestDropId.
+       */
+      @java.lang.Override
+      public int getChestDropId() {
+        return chestDropId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 chest_drop_id = 1;</code>
+       * @param value The chestDropId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChestDropId(int value) {
+        
+        chestDropId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 chest_drop_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChestDropId() {
+        
+        chestDropId_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +627,8 @@ public final class ChestOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013Chest.proto\"8\n\005Chest\022\025\n\rchest_drop_id\030" +
-      "\001 \001(\r\022\030\n\020is_show_cutscene\030\002 \001(\010B\033\n\031emu.g" +
+      "\n\013Chest.proto\"8\n\005Chest\022\030\n\020is_show_cutsce" +
+      "ne\030\002 \001(\010\022\025\n\rchest_drop_id\030\001 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +640,7 @@ public final class ChestOuterClass {
     internal_static_Chest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Chest_descriptor,
-        new java.lang.String[] { "ChestDropId", "IsShowCutscene", });
+        new java.lang.String[] { "IsShowCutscene", "ChestDropId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

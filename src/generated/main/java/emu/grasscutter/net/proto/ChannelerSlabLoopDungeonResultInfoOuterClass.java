@@ -19,40 +19,36 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_max_score = 1;</code>
-     * @return The challengeMaxScore.
+     * <code>bool is_in_time_limit = 2;</code>
+     * @return The isInTimeLimit.
      */
-    int getChallengeMaxScore();
+    boolean getIsInTimeLimit();
 
     /**
-     * <code>uint32 dungeon_index = 2;</code>
+     * <code>uint32 dungeon_index = 3;</code>
      * @return The dungeonIndex.
      */
     int getDungeonIndex();
 
     /**
-     * <code>bool is_success = 3;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_max_score = 5;</code>
+     * @return The challengeMaxScore.
      */
-    boolean getIsSuccess();
+    int getChallengeMaxScore();
 
     /**
-     * <code>uint32 challenge_score = 6;</code>
+     * <code>uint32 challenge_score = 7;</code>
      * @return The challengeScore.
      */
     int getChallengeScore();
 
     /**
-     * <code>bool is_in_time_limit = 13;</code>
-     * @return The isInTimeLimit.
+     * <code>bool is_success = 11;</code>
+     * @return The isSuccess.
      */
-    boolean getIsInTimeLimit();
+    boolean getIsSuccess();
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf type {@code ChannelerSlabLoopDungeonResultInfo}
    */
   public static final class ChannelerSlabLoopDungeonResultInfo extends
@@ -97,29 +93,29 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              challengeMaxScore_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
-              dungeonIndex_ = input.readUInt32();
+              isInTimeLimit_ = input.readBool();
               break;
             }
             case 24: {
 
-              isSuccess_ = input.readBool();
+              dungeonIndex_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 40: {
+
+              challengeMaxScore_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               challengeScore_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 88: {
 
-              isInTimeLimit_ = input.readBool();
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -154,21 +150,21 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.class, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder.class);
     }
 
-    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 1;
-    private int challengeMaxScore_;
+    public static final int IS_IN_TIME_LIMIT_FIELD_NUMBER = 2;
+    private boolean isInTimeLimit_;
     /**
-     * <code>uint32 challenge_max_score = 1;</code>
-     * @return The challengeMaxScore.
+     * <code>bool is_in_time_limit = 2;</code>
+     * @return The isInTimeLimit.
      */
     @java.lang.Override
-    public int getChallengeMaxScore() {
-      return challengeMaxScore_;
+    public boolean getIsInTimeLimit() {
+      return isInTimeLimit_;
     }
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 2;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 3;
     private int dungeonIndex_;
     /**
-     * <code>uint32 dungeon_index = 2;</code>
+     * <code>uint32 dungeon_index = 3;</code>
      * @return The dungeonIndex.
      */
     @java.lang.Override
@@ -176,21 +172,21 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       return dungeonIndex_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
-    private boolean isSuccess_;
+    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 5;
+    private int challengeMaxScore_;
     /**
-     * <code>bool is_success = 3;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_max_score = 5;</code>
+     * @return The challengeMaxScore.
      */
     @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public int getChallengeMaxScore() {
+      return challengeMaxScore_;
     }
 
-    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 6;
+    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 7;
     private int challengeScore_;
     /**
-     * <code>uint32 challenge_score = 6;</code>
+     * <code>uint32 challenge_score = 7;</code>
      * @return The challengeScore.
      */
     @java.lang.Override
@@ -198,15 +194,15 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       return challengeScore_;
     }
 
-    public static final int IS_IN_TIME_LIMIT_FIELD_NUMBER = 13;
-    private boolean isInTimeLimit_;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 11;
+    private boolean isSuccess_;
     /**
-     * <code>bool is_in_time_limit = 13;</code>
-     * @return The isInTimeLimit.
+     * <code>bool is_success = 11;</code>
+     * @return The isSuccess.
      */
     @java.lang.Override
-    public boolean getIsInTimeLimit() {
-      return isInTimeLimit_;
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,20 +219,20 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeMaxScore_ != 0) {
-        output.writeUInt32(1, challengeMaxScore_);
+      if (isInTimeLimit_ != false) {
+        output.writeBool(2, isInTimeLimit_);
       }
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(2, dungeonIndex_);
+        output.writeUInt32(3, dungeonIndex_);
       }
-      if (isSuccess_ != false) {
-        output.writeBool(3, isSuccess_);
+      if (challengeMaxScore_ != 0) {
+        output.writeUInt32(5, challengeMaxScore_);
       }
       if (challengeScore_ != 0) {
-        output.writeUInt32(6, challengeScore_);
+        output.writeUInt32(7, challengeScore_);
       }
-      if (isInTimeLimit_ != false) {
-        output.writeBool(13, isInTimeLimit_);
+      if (isSuccess_ != false) {
+        output.writeBool(11, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,25 +243,25 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeMaxScore_ != 0) {
+      if (isInTimeLimit_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeMaxScore_);
+          .computeBoolSize(2, isInTimeLimit_);
       }
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dungeonIndex_);
+          .computeUInt32Size(3, dungeonIndex_);
       }
-      if (isSuccess_ != false) {
+      if (challengeMaxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSuccess_);
+          .computeUInt32Size(5, challengeMaxScore_);
       }
       if (challengeScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, challengeScore_);
+          .computeUInt32Size(7, challengeScore_);
       }
-      if (isInTimeLimit_ != false) {
+      if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isInTimeLimit_);
+          .computeBoolSize(11, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,16 +278,16 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo other = (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) obj;
 
-      if (getChallengeMaxScore()
-          != other.getChallengeMaxScore()) return false;
-      if (getDungeonIndex()
-          != other.getDungeonIndex()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getChallengeScore()
-          != other.getChallengeScore()) return false;
       if (getIsInTimeLimit()
           != other.getIsInTimeLimit()) return false;
+      if (getDungeonIndex()
+          != other.getDungeonIndex()) return false;
+      if (getChallengeMaxScore()
+          != other.getChallengeMaxScore()) return false;
+      if (getChallengeScore()
+          != other.getChallengeScore()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,18 +299,18 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeMaxScore();
-      hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonIndex();
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
-      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeScore();
       hash = (37 * hash) + IS_IN_TIME_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsInTimeLimit());
+      hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonIndex();
+      hash = (37 * hash) + CHALLENGE_MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeMaxScore();
+      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeScore();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,10 +407,6 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 4.6.0
-     * </pre>
-     *
      * Protobuf type {@code ChannelerSlabLoopDungeonResultInfo}
      */
     public static final class Builder extends
@@ -452,15 +444,15 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        challengeMaxScore_ = 0;
+        isInTimeLimit_ = false;
 
         dungeonIndex_ = 0;
 
-        isSuccess_ = false;
+        challengeMaxScore_ = 0;
 
         challengeScore_ = 0;
 
-        isInTimeLimit_ = false;
+        isSuccess_ = false;
 
         return this;
       }
@@ -488,11 +480,11 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo result = new emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo(this);
-        result.challengeMaxScore_ = challengeMaxScore_;
-        result.dungeonIndex_ = dungeonIndex_;
-        result.isSuccess_ = isSuccess_;
-        result.challengeScore_ = challengeScore_;
         result.isInTimeLimit_ = isInTimeLimit_;
+        result.dungeonIndex_ = dungeonIndex_;
+        result.challengeMaxScore_ = challengeMaxScore_;
+        result.challengeScore_ = challengeScore_;
+        result.isSuccess_ = isSuccess_;
         onBuilt();
         return result;
       }
@@ -541,20 +533,20 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance()) return this;
-        if (other.getChallengeMaxScore() != 0) {
-          setChallengeMaxScore(other.getChallengeMaxScore());
+        if (other.getIsInTimeLimit() != false) {
+          setIsInTimeLimit(other.getIsInTimeLimit());
         }
         if (other.getDungeonIndex() != 0) {
           setDungeonIndex(other.getDungeonIndex());
         }
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
+        if (other.getChallengeMaxScore() != 0) {
+          setChallengeMaxScore(other.getChallengeMaxScore());
         }
         if (other.getChallengeScore() != 0) {
           setChallengeScore(other.getChallengeScore());
         }
-        if (other.getIsInTimeLimit() != false) {
-          setIsInTimeLimit(other.getIsInTimeLimit());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -585,133 +577,9 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
         return this;
       }
 
-      private int challengeMaxScore_ ;
-      /**
-       * <code>uint32 challenge_max_score = 1;</code>
-       * @return The challengeMaxScore.
-       */
-      @java.lang.Override
-      public int getChallengeMaxScore() {
-        return challengeMaxScore_;
-      }
-      /**
-       * <code>uint32 challenge_max_score = 1;</code>
-       * @param value The challengeMaxScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeMaxScore(int value) {
-        
-        challengeMaxScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_max_score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeMaxScore() {
-        
-        challengeMaxScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonIndex_ ;
-      /**
-       * <code>uint32 dungeon_index = 2;</code>
-       * @return The dungeonIndex.
-       */
-      @java.lang.Override
-      public int getDungeonIndex() {
-        return dungeonIndex_;
-      }
-      /**
-       * <code>uint32 dungeon_index = 2;</code>
-       * @param value The dungeonIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonIndex(int value) {
-        
-        dungeonIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_index = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonIndex() {
-        
-        dungeonIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 3;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 3;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int challengeScore_ ;
-      /**
-       * <code>uint32 challenge_score = 6;</code>
-       * @return The challengeScore.
-       */
-      @java.lang.Override
-      public int getChallengeScore() {
-        return challengeScore_;
-      }
-      /**
-       * <code>uint32 challenge_score = 6;</code>
-       * @param value The challengeScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeScore(int value) {
-        
-        challengeScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_score = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeScore() {
-        
-        challengeScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isInTimeLimit_ ;
       /**
-       * <code>bool is_in_time_limit = 13;</code>
+       * <code>bool is_in_time_limit = 2;</code>
        * @return The isInTimeLimit.
        */
       @java.lang.Override
@@ -719,7 +587,7 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
         return isInTimeLimit_;
       }
       /**
-       * <code>bool is_in_time_limit = 13;</code>
+       * <code>bool is_in_time_limit = 2;</code>
        * @param value The isInTimeLimit to set.
        * @return This builder for chaining.
        */
@@ -730,12 +598,136 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_in_time_limit = 13;</code>
+       * <code>bool is_in_time_limit = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsInTimeLimit() {
         
         isInTimeLimit_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonIndex_ ;
+      /**
+       * <code>uint32 dungeon_index = 3;</code>
+       * @return The dungeonIndex.
+       */
+      @java.lang.Override
+      public int getDungeonIndex() {
+        return dungeonIndex_;
+      }
+      /**
+       * <code>uint32 dungeon_index = 3;</code>
+       * @param value The dungeonIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonIndex(int value) {
+        
+        dungeonIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_index = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonIndex() {
+        
+        dungeonIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeMaxScore_ ;
+      /**
+       * <code>uint32 challenge_max_score = 5;</code>
+       * @return The challengeMaxScore.
+       */
+      @java.lang.Override
+      public int getChallengeMaxScore() {
+        return challengeMaxScore_;
+      }
+      /**
+       * <code>uint32 challenge_max_score = 5;</code>
+       * @param value The challengeMaxScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeMaxScore(int value) {
+        
+        challengeMaxScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_max_score = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeMaxScore() {
+        
+        challengeMaxScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeScore_ ;
+      /**
+       * <code>uint32 challenge_score = 7;</code>
+       * @return The challengeScore.
+       */
+      @java.lang.Override
+      public int getChallengeScore() {
+        return challengeScore_;
+      }
+      /**
+       * <code>uint32 challenge_score = 7;</code>
+       * @param value The challengeScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeScore(int value) {
+        
+        challengeScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeScore() {
+        
+        challengeScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 11;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 11;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
         onChanged();
         return this;
       }
@@ -808,9 +800,9 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(ChannelerSlabLoopDungeonResultInfo.pro" +
       "to\"\237\001\n\"ChannelerSlabLoopDungeonResultInf" +
-      "o\022\033\n\023challenge_max_score\030\001 \001(\r\022\025\n\rdungeo" +
-      "n_index\030\002 \001(\r\022\022\n\nis_success\030\003 \001(\010\022\027\n\017cha" +
-      "llenge_score\030\006 \001(\r\022\030\n\020is_in_time_limit\030\r" +
+      "o\022\030\n\020is_in_time_limit\030\002 \001(\010\022\025\n\rdungeon_i" +
+      "ndex\030\003 \001(\r\022\033\n\023challenge_max_score\030\005 \001(\r\022" +
+      "\027\n\017challenge_score\030\007 \001(\r\022\022\n\nis_success\030\013" +
       " \001(\010B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -823,7 +815,7 @@ public final class ChannelerSlabLoopDungeonResultInfoOuterClass {
     internal_static_ChannelerSlabLoopDungeonResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabLoopDungeonResultInfo_descriptor,
-        new java.lang.String[] { "ChallengeMaxScore", "DungeonIndex", "IsSuccess", "ChallengeScore", "IsInTimeLimit", });
+        new java.lang.String[] { "IsInTimeLimit", "DungeonIndex", "ChallengeMaxScore", "ChallengeScore", "IsSuccess", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

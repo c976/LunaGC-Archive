@@ -19,11 +19,19 @@ public final class VintageCampChallengeStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
     int getCampLevelMapCount();
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
     boolean containsCampLevelMap(
         int key);
@@ -31,56 +39,88 @@ public final class VintageCampChallengeStageDataOuterClass {
      * Use {@link #getCampLevelMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
     getCampLevelMap();
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
     getCampLevelMapMap();
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
 
-    emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrDefault(
+    emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData defaultValue);
+        emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB defaultValue);
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
 
-    emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrThrow(
+    emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 stage_id = 5;</code>
-     * @return The stageId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 BNHECMDOFCO = 11;</code>
+     * @return The bNHECMDOFCO.
      */
-    int getStageId();
+    int getBNHECMDOFCO();
 
     /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>bool is_open = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 max_finished_level = 6;</code>
-     * @return The maxFinishedLevel.
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool is_finish = 13;</code>
+     * @return The isFinish.
      */
-    int getMaxFinishedLevel();
+    boolean getIsFinish();
 
     /**
-     * <code>uint32 open_time = 1;</code>
-     * @return The openTime.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EHMJNOFEJFE = 14;</code>
+     * @return The eHMJNOFEJFE.
      */
-    int getOpenTime();
+    int getEHMJNOFEJFE();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * Protobuf type {@code VintageCampChallengeStageData}
@@ -128,42 +168,42 @@ public final class VintageCampChallengeStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
             case 24: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              maxFinishedLevel_ = input.readUInt32();
-              break;
-            }
-            case 80: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 122: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 campLevelMap_ = com.google.protobuf.MapField.newMapField(
                     CampLevelMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
               campLevelMap__ = input.readMessage(
                   CampLevelMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               campLevelMap_.getMutableMap().put(
                   campLevelMap__.getKey(), campLevelMap__.getValue());
+              break;
+            }
+            case 88: {
+
+              bNHECMDOFCO_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              stageId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              eHMJNOFEJFE_ = input.readUInt32();
               break;
             }
             default: {
@@ -195,7 +235,7 @@ public final class VintageCampChallengeStageDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 15:
+        case 5:
           return internalGetCampLevelMap();
         default:
           throw new RuntimeException(
@@ -210,21 +250,21 @@ public final class VintageCampChallengeStageDataOuterClass {
               emu.grasscutter.net.proto.VintageCampChallengeStageDataOuterClass.VintageCampChallengeStageData.class, emu.grasscutter.net.proto.VintageCampChallengeStageDataOuterClass.VintageCampChallengeStageData.Builder.class);
     }
 
-    public static final int CAMP_LEVEL_MAP_FIELD_NUMBER = 15;
+    public static final int CAMP_LEVEL_MAP_FIELD_NUMBER = 5;
     private static final class CampLevelMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> defaultEntry =
+          java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>newDefaultInstance(
+              .<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>newDefaultInstance(
                   emu.grasscutter.net.proto.VintageCampChallengeStageDataOuterClass.internal_static_VintageCampChallengeStageData_CampLevelMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData.getDefaultInstance());
+                  emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> campLevelMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+        java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> campLevelMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
     internalGetCampLevelMap() {
       if (campLevelMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -237,7 +277,11 @@ public final class VintageCampChallengeStageDataOuterClass {
       return internalGetCampLevelMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
 
     @java.lang.Override
@@ -251,39 +295,51 @@ public final class VintageCampChallengeStageDataOuterClass {
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> getCampLevelMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> getCampLevelMap() {
       return getCampLevelMapMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> getCampLevelMapMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> getCampLevelMapMap() {
       return internalGetCampLevelMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrDefault(
+    public emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData defaultValue) {
+        emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB defaultValue) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> map =
           internalGetCampLevelMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrThrow(
+    public emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> map =
           internalGetCampLevelMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -291,32 +347,29 @@ public final class VintageCampChallengeStageDataOuterClass {
       return map.get(key);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 5;
-    private int stageId_;
+    public static final int BNHECMDOFCO_FIELD_NUMBER = 11;
+    private int bNHECMDOFCO_;
     /**
-     * <code>uint32 stage_id = 5;</code>
-     * @return The stageId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 BNHECMDOFCO = 11;</code>
+     * @return The bNHECMDOFCO.
      */
     @java.lang.Override
-    public int getStageId() {
-      return stageId_;
+    public int getBNHECMDOFCO() {
+      return bNHECMDOFCO_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 3;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -324,26 +377,49 @@ public final class VintageCampChallengeStageDataOuterClass {
       return isOpen_;
     }
 
-    public static final int MAX_FINISHED_LEVEL_FIELD_NUMBER = 6;
-    private int maxFinishedLevel_;
+    public static final int IS_FINISH_FIELD_NUMBER = 13;
+    private boolean isFinish_;
     /**
-     * <code>uint32 max_finished_level = 6;</code>
-     * @return The maxFinishedLevel.
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool is_finish = 13;</code>
+     * @return The isFinish.
      */
     @java.lang.Override
-    public int getMaxFinishedLevel() {
-      return maxFinishedLevel_;
+    public boolean getIsFinish() {
+      return isFinish_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 1;
-    private int openTime_;
+    public static final int EHMJNOFEJFE_FIELD_NUMBER = 14;
+    private int eHMJNOFEJFE_;
     /**
-     * <code>uint32 open_time = 1;</code>
-     * @return The openTime.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EHMJNOFEJFE = 14;</code>
+     * @return The eHMJNOFEJFE.
      */
     @java.lang.Override
-    public int getOpenTime() {
-      return openTime_;
+    public int getEHMJNOFEJFE() {
+      return eHMJNOFEJFE_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    private int stageId_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -360,27 +436,27 @@ public final class VintageCampChallengeStageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (openTime_ != 0) {
-        output.writeUInt32(1, openTime_);
-      }
-      if (isFinish_ != false) {
-        output.writeBool(3, isFinish_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(5, stageId_);
-      }
-      if (maxFinishedLevel_ != 0) {
-        output.writeUInt32(6, maxFinishedLevel_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(10, isOpen_);
+        output.writeBool(3, isOpen_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetCampLevelMap(),
           CampLevelMapDefaultEntryHolder.defaultEntry,
-          15);
+          5);
+      if (bNHECMDOFCO_ != 0) {
+        output.writeUInt32(11, bNHECMDOFCO_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(13, isFinish_);
+      }
+      if (eHMJNOFEJFE_ != 0) {
+        output.writeUInt32(14, eHMJNOFEJFE_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -390,35 +466,35 @@ public final class VintageCampChallengeStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, openTime_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinish_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, stageId_);
-      }
-      if (maxFinishedLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, maxFinishedLevel_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isOpen_);
+          .computeBoolSize(3, isOpen_);
       }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> entry
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> entry
            : internalGetCampLevelMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
         campLevelMap__ = CampLevelMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, campLevelMap__);
+            .computeMessageSize(5, campLevelMap__);
+      }
+      if (bNHECMDOFCO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, bNHECMDOFCO_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, stageId_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isFinish_);
+      }
+      if (eHMJNOFEJFE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, eHMJNOFEJFE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -437,16 +513,16 @@ public final class VintageCampChallengeStageDataOuterClass {
 
       if (!internalGetCampLevelMap().equals(
           other.internalGetCampLevelMap())) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
+      if (getBNHECMDOFCO()
+          != other.getBNHECMDOFCO()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getMaxFinishedLevel()
-          != other.getMaxFinishedLevel()) return false;
-      if (getOpenTime()
-          != other.getOpenTime()) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
+      if (getEHMJNOFEJFE()
+          != other.getEHMJNOFEJFE()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -462,18 +538,18 @@ public final class VintageCampChallengeStageDataOuterClass {
         hash = (37 * hash) + CAMP_LEVEL_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetCampLevelMap().hashCode();
       }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
+      hash = (37 * hash) + BNHECMDOFCO_FIELD_NUMBER;
+      hash = (53 * hash) + getBNHECMDOFCO();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + MAX_FINISHED_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxFinishedLevel();
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenTime();
+      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinish());
+      hash = (37 * hash) + EHMJNOFEJFE_FIELD_NUMBER;
+      hash = (53 * hash) + getEHMJNOFEJFE();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -585,7 +661,7 @@ public final class VintageCampChallengeStageDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 5:
             return internalGetCampLevelMap();
           default:
             throw new RuntimeException(
@@ -596,7 +672,7 @@ public final class VintageCampChallengeStageDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 5:
             return internalGetMutableCampLevelMap();
           default:
             throw new RuntimeException(
@@ -630,15 +706,15 @@ public final class VintageCampChallengeStageDataOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableCampLevelMap().clear();
-        stageId_ = 0;
-
-        isFinish_ = false;
+        bNHECMDOFCO_ = 0;
 
         isOpen_ = false;
 
-        maxFinishedLevel_ = 0;
+        isFinish_ = false;
 
-        openTime_ = 0;
+        eHMJNOFEJFE_ = 0;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -669,11 +745,11 @@ public final class VintageCampChallengeStageDataOuterClass {
         int from_bitField0_ = bitField0_;
         result.campLevelMap_ = internalGetCampLevelMap();
         result.campLevelMap_.makeImmutable();
-        result.stageId_ = stageId_;
-        result.isFinish_ = isFinish_;
+        result.bNHECMDOFCO_ = bNHECMDOFCO_;
         result.isOpen_ = isOpen_;
-        result.maxFinishedLevel_ = maxFinishedLevel_;
-        result.openTime_ = openTime_;
+        result.isFinish_ = isFinish_;
+        result.eHMJNOFEJFE_ = eHMJNOFEJFE_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -724,20 +800,20 @@ public final class VintageCampChallengeStageDataOuterClass {
         if (other == emu.grasscutter.net.proto.VintageCampChallengeStageDataOuterClass.VintageCampChallengeStageData.getDefaultInstance()) return this;
         internalGetMutableCampLevelMap().mergeFrom(
             other.internalGetCampLevelMap());
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
+        if (other.getBNHECMDOFCO() != 0) {
+          setBNHECMDOFCO(other.getBNHECMDOFCO());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getMaxFinishedLevel() != 0) {
-          setMaxFinishedLevel(other.getMaxFinishedLevel());
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
         }
-        if (other.getOpenTime() != 0) {
-          setOpenTime(other.getOpenTime());
+        if (other.getEHMJNOFEJFE() != 0) {
+          setEHMJNOFEJFE(other.getEHMJNOFEJFE());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -770,8 +846,8 @@ public final class VintageCampChallengeStageDataOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> campLevelMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+          java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> campLevelMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
       internalGetCampLevelMap() {
         if (campLevelMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -779,7 +855,7 @@ public final class VintageCampChallengeStageDataOuterClass {
         }
         return campLevelMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
       internalGetMutableCampLevelMap() {
         onChanged();;
         if (campLevelMap_ == null) {
@@ -796,7 +872,11 @@ public final class VintageCampChallengeStageDataOuterClass {
         return internalGetCampLevelMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
 
       @java.lang.Override
@@ -810,39 +890,51 @@ public final class VintageCampChallengeStageDataOuterClass {
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> getCampLevelMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> getCampLevelMap() {
         return getCampLevelMapMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> getCampLevelMapMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> getCampLevelMapMap() {
         return internalGetCampLevelMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrDefault(
+      public emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrDefault(
           int key,
-          emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData defaultValue) {
+          emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB defaultValue) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> map =
             internalGetCampLevelMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData getCampLevelMapOrThrow(
+      public emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB getCampLevelMapOrThrow(
           int key) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> map =
             internalGetCampLevelMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
@@ -856,7 +948,11 @@ public final class VintageCampChallengeStageDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
 
       public Builder removeCampLevelMap(
@@ -870,16 +966,20 @@ public final class VintageCampChallengeStageDataOuterClass {
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData>
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB>
       getMutableCampLevelMap() {
         return internalGetMutableCampLevelMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
       public Builder putCampLevelMap(
           int key,
-          emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData value) {
+          emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableCampLevelMap().getMutableMap()
@@ -887,81 +987,70 @@ public final class VintageCampChallengeStageDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageCampChallengeLevelData&gt; camp_level_map = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .BNJJJKGAEPB&gt; camp_level_map = 5;</code>
        */
 
       public Builder putAllCampLevelMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.VintageCampChallengeLevelData> values) {
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.BNJJJKGAEPB> values) {
         internalGetMutableCampLevelMap().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private int stageId_ ;
+      private int bNHECMDOFCO_ ;
       /**
-       * <code>uint32 stage_id = 5;</code>
-       * @return The stageId.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 BNHECMDOFCO = 11;</code>
+       * @return The bNHECMDOFCO.
        */
       @java.lang.Override
-      public int getStageId() {
-        return stageId_;
+      public int getBNHECMDOFCO() {
+        return bNHECMDOFCO_;
       }
       /**
-       * <code>uint32 stage_id = 5;</code>
-       * @param value The stageId to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 BNHECMDOFCO = 11;</code>
+       * @param value The bNHECMDOFCO to set.
        * @return This builder for chaining.
        */
-      public Builder setStageId(int value) {
+      public Builder setBNHECMDOFCO(int value) {
         
-        stageId_ = value;
+        bNHECMDOFCO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 stage_id = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 BNHECMDOFCO = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStageId() {
+      public Builder clearBNHECMDOFCO() {
         
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
+        bNHECMDOFCO_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -969,7 +1058,11 @@ public final class VintageCampChallengeStageDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -980,7 +1073,11 @@ public final class VintageCampChallengeStageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -990,64 +1087,131 @@ public final class VintageCampChallengeStageDataOuterClass {
         return this;
       }
 
-      private int maxFinishedLevel_ ;
+      private boolean isFinish_ ;
       /**
-       * <code>uint32 max_finished_level = 6;</code>
-       * @return The maxFinishedLevel.
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool is_finish = 13;</code>
+       * @return The isFinish.
        */
       @java.lang.Override
-      public int getMaxFinishedLevel() {
-        return maxFinishedLevel_;
+      public boolean getIsFinish() {
+        return isFinish_;
       }
       /**
-       * <code>uint32 max_finished_level = 6;</code>
-       * @param value The maxFinishedLevel to set.
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool is_finish = 13;</code>
+       * @param value The isFinish to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxFinishedLevel(int value) {
+      public Builder setIsFinish(boolean value) {
         
-        maxFinishedLevel_ = value;
+        isFinish_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_finished_level = 6;</code>
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool is_finish = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxFinishedLevel() {
+      public Builder clearIsFinish() {
         
-        maxFinishedLevel_ = 0;
+        isFinish_ = false;
         onChanged();
         return this;
       }
 
-      private int openTime_ ;
+      private int eHMJNOFEJFE_ ;
       /**
-       * <code>uint32 open_time = 1;</code>
-       * @return The openTime.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EHMJNOFEJFE = 14;</code>
+       * @return The eHMJNOFEJFE.
        */
       @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
+      public int getEHMJNOFEJFE() {
+        return eHMJNOFEJFE_;
       }
       /**
-       * <code>uint32 open_time = 1;</code>
-       * @param value The openTime to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EHMJNOFEJFE = 14;</code>
+       * @param value The eHMJNOFEJFE to set.
        * @return This builder for chaining.
        */
-      public Builder setOpenTime(int value) {
+      public Builder setEHMJNOFEJFE(int value) {
         
-        openTime_ = value;
+        eHMJNOFEJFE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 open_time = 1;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EHMJNOFEJFE = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOpenTime() {
+      public Builder clearEHMJNOFEJFE() {
         
-        openTime_ = 0;
+        eHMJNOFEJFE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 stage_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1123,36 +1287,35 @@ public final class VintageCampChallengeStageDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#VintageCampChallengeStageData.proto\032#V" +
-      "intageCampChallengeLevelData.proto\"\243\002\n\035V" +
-      "intageCampChallengeStageData\022H\n\016camp_lev" +
-      "el_map\030\017 \003(\01320.VintageCampChallengeStage" +
-      "Data.CampLevelMapEntry\022\020\n\010stage_id\030\005 \001(\r" +
-      "\022\021\n\tis_finish\030\003 \001(\010\022\017\n\007is_open\030\n \001(\010\022\032\n\022" +
-      "max_finished_level\030\006 \001(\r\022\021\n\topen_time\030\001 " +
-      "\001(\r\032S\n\021CampLevelMapEntry\022\013\n\003key\030\001 \001(\r\022-\n" +
-      "\005value\030\002 \001(\0132\036.VintageCampChallengeLevel" +
-      "Data:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n#VintageCampChallengeStageData.proto\032\021B" +
+      "NJJJKGAEPB.proto\"\214\002\n\035VintageCampChalleng" +
+      "eStageData\022H\n\016camp_level_map\030\005 \003(\01320.Vin" +
+      "tageCampChallengeStageData.CampLevelMapE" +
+      "ntry\022\023\n\013BNHECMDOFCO\030\013 \001(\r\022\017\n\007is_open\030\003 \001" +
+      "(\010\022\021\n\tis_finish\030\r \001(\010\022\023\n\013EHMJNOFEJFE\030\016 \001" +
+      "(\r\022\020\n\010stage_id\030\014 \001(\r\032A\n\021CampLevelMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.BNJJJKGA" +
+      "EPB:\0028\001B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.getDescriptor(),
         });
     internal_static_VintageCampChallengeStageData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_VintageCampChallengeStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageCampChallengeStageData_descriptor,
-        new java.lang.String[] { "CampLevelMap", "StageId", "IsFinish", "IsOpen", "MaxFinishedLevel", "OpenTime", });
+        new java.lang.String[] { "CampLevelMap", "BNHECMDOFCO", "IsOpen", "IsFinish", "EHMJNOFEJFE", "StageId", });
     internal_static_VintageCampChallengeStageData_CampLevelMapEntry_descriptor =
       internal_static_VintageCampChallengeStageData_descriptor.getNestedTypes().get(0);
     internal_static_VintageCampChallengeStageData_CampLevelMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageCampChallengeStageData_CampLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.VintageCampChallengeLevelDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BNJJJKGAEPBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

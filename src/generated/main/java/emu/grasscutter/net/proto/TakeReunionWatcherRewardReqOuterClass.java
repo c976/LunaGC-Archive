@@ -19,21 +19,28 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mission_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 mission_id = 8;</code>
      * @return The missionId.
      */
     int getMissionId();
 
     /**
-     * <code>uint32 watcher_id = 3;</code>
-     * @return The watcherId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ABNONCLJBAC = 11;</code>
+     * @return The aBNONCLJBAC.
      */
-    int getWatcherId();
+    int getABNONCLJBAC();
   }
   /**
    * <pre>
-   * CmdId: 27039
-   * Obf: ECEADCOJINO
+   * CmdId: 523
    * </pre>
    *
    * Protobuf type {@code TakeReunionWatcherRewardReq}
@@ -80,14 +87,14 @@ public final class TakeReunionWatcherRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              watcherId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 64: {
 
               missionId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              aBNONCLJBAC_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +129,14 @@ public final class TakeReunionWatcherRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeReunionWatcherRewardReqOuterClass.TakeReunionWatcherRewardReq.class, emu.grasscutter.net.proto.TakeReunionWatcherRewardReqOuterClass.TakeReunionWatcherRewardReq.Builder.class);
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 14;
+    public static final int MISSION_ID_FIELD_NUMBER = 8;
     private int missionId_;
     /**
-     * <code>uint32 mission_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 mission_id = 8;</code>
      * @return The missionId.
      */
     @java.lang.Override
@@ -133,15 +144,19 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       return missionId_;
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 3;
-    private int watcherId_;
+    public static final int ABNONCLJBAC_FIELD_NUMBER = 11;
+    private int aBNONCLJBAC_;
     /**
-     * <code>uint32 watcher_id = 3;</code>
-     * @return The watcherId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ABNONCLJBAC = 11;</code>
+     * @return The aBNONCLJBAC.
      */
     @java.lang.Override
-    public int getWatcherId() {
-      return watcherId_;
+    public int getABNONCLJBAC() {
+      return aBNONCLJBAC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +173,11 @@ public final class TakeReunionWatcherRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (watcherId_ != 0) {
-        output.writeUInt32(3, watcherId_);
-      }
       if (missionId_ != 0) {
-        output.writeUInt32(14, missionId_);
+        output.writeUInt32(8, missionId_);
+      }
+      if (aBNONCLJBAC_ != 0) {
+        output.writeUInt32(11, aBNONCLJBAC_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (watcherId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, watcherId_);
-      }
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, missionId_);
+          .computeUInt32Size(8, missionId_);
+      }
+      if (aBNONCLJBAC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, aBNONCLJBAC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,8 +213,8 @@ public final class TakeReunionWatcherRewardReqOuterClass {
 
       if (getMissionId()
           != other.getMissionId()) return false;
-      if (getWatcherId()
-          != other.getWatcherId()) return false;
+      if (getABNONCLJBAC()
+          != other.getABNONCLJBAC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,8 +228,8 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMissionId();
-      hash = (37 * hash) + WATCHER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWatcherId();
+      hash = (37 * hash) + ABNONCLJBAC_FIELD_NUMBER;
+      hash = (53 * hash) + getABNONCLJBAC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +327,7 @@ public final class TakeReunionWatcherRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27039
-     * Obf: ECEADCOJINO
+     * CmdId: 523
      * </pre>
      *
      * Protobuf type {@code TakeReunionWatcherRewardReq}
@@ -355,7 +369,7 @@ public final class TakeReunionWatcherRewardReqOuterClass {
         super.clear();
         missionId_ = 0;
 
-        watcherId_ = 0;
+        aBNONCLJBAC_ = 0;
 
         return this;
       }
@@ -384,7 +398,7 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       public emu.grasscutter.net.proto.TakeReunionWatcherRewardReqOuterClass.TakeReunionWatcherRewardReq buildPartial() {
         emu.grasscutter.net.proto.TakeReunionWatcherRewardReqOuterClass.TakeReunionWatcherRewardReq result = new emu.grasscutter.net.proto.TakeReunionWatcherRewardReqOuterClass.TakeReunionWatcherRewardReq(this);
         result.missionId_ = missionId_;
-        result.watcherId_ = watcherId_;
+        result.aBNONCLJBAC_ = aBNONCLJBAC_;
         onBuilt();
         return result;
       }
@@ -436,8 +450,8 @@ public final class TakeReunionWatcherRewardReqOuterClass {
         if (other.getMissionId() != 0) {
           setMissionId(other.getMissionId());
         }
-        if (other.getWatcherId() != 0) {
-          setWatcherId(other.getWatcherId());
+        if (other.getABNONCLJBAC() != 0) {
+          setABNONCLJBAC(other.getABNONCLJBAC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,7 +484,11 @@ public final class TakeReunionWatcherRewardReqOuterClass {
 
       private int missionId_ ;
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 8;</code>
        * @return The missionId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class TakeReunionWatcherRewardReqOuterClass {
         return missionId_;
       }
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 8;</code>
        * @param value The missionId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class TakeReunionWatcherRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mission_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 mission_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionId() {
@@ -499,33 +525,45 @@ public final class TakeReunionWatcherRewardReqOuterClass {
         return this;
       }
 
-      private int watcherId_ ;
+      private int aBNONCLJBAC_ ;
       /**
-       * <code>uint32 watcher_id = 3;</code>
-       * @return The watcherId.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
+       * @return The aBNONCLJBAC.
        */
       @java.lang.Override
-      public int getWatcherId() {
-        return watcherId_;
+      public int getABNONCLJBAC() {
+        return aBNONCLJBAC_;
       }
       /**
-       * <code>uint32 watcher_id = 3;</code>
-       * @param value The watcherId to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
+       * @param value The aBNONCLJBAC to set.
        * @return This builder for chaining.
        */
-      public Builder setWatcherId(int value) {
+      public Builder setABNONCLJBAC(int value) {
         
-        watcherId_ = value;
+        aBNONCLJBAC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 watcher_id = 3;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWatcherId() {
+      public Builder clearABNONCLJBAC() {
         
-        watcherId_ = 0;
+        aBNONCLJBAC_ = 0;
         onChanged();
         return this;
       }
@@ -596,10 +634,10 @@ public final class TakeReunionWatcherRewardReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!TakeReunionWatcherRewardReq.proto\"E\n\033T" +
+      "\n!TakeReunionWatcherRewardReq.proto\"F\n\033T" +
       "akeReunionWatcherRewardReq\022\022\n\nmission_id" +
-      "\030\016 \001(\r\022\022\n\nwatcher_id\030\003 \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\030\010 \001(\r\022\023\n\013ABNONCLJBAC\030\013 \001(\rB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +648,7 @@ public final class TakeReunionWatcherRewardReqOuterClass {
     internal_static_TakeReunionWatcherRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeReunionWatcherRewardReq_descriptor,
-        new java.lang.String[] { "MissionId", "WatcherId", });
+        new java.lang.String[] { "MissionId", "ABNONCLJBAC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

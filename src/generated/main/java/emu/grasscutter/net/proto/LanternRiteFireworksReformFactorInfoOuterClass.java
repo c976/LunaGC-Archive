@@ -19,22 +19,18 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 factor_value = 3;</code>
-     * @return The factorValue.
+     * <code>uint32 LDCLNMFFCKJ = 9;</code>
+     * @return The lDCLNMFFCKJ.
      */
-    int getFactorValue();
+    int getLDCLNMFFCKJ();
 
     /**
-     * <code>uint32 factor_id = 4;</code>
-     * @return The factorId.
+     * <code>uint32 KMJPPJGDBFJ = 14;</code>
+     * @return The kMJPPJGDBFJ.
      */
-    int getFactorId();
+    int getKMJPPJGDBFJ();
   }
   /**
-   * <pre>
-   * Obf: HKOILFOAMGM
-   * </pre>
-   *
    * Protobuf type {@code LanternRiteFireworksReformFactorInfo}
    */
   public static final class LanternRiteFireworksReformFactorInfo extends
@@ -79,14 +75,14 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 72: {
 
-              factorValue_ = input.readUInt32();
+              lDCLNMFFCKJ_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 112: {
 
-              factorId_ = input.readUInt32();
+              kMJPPJGDBFJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo.class, emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo.Builder.class);
     }
 
-    public static final int FACTOR_VALUE_FIELD_NUMBER = 3;
-    private int factorValue_;
+    public static final int LDCLNMFFCKJ_FIELD_NUMBER = 9;
+    private int lDCLNMFFCKJ_;
     /**
-     * <code>uint32 factor_value = 3;</code>
-     * @return The factorValue.
+     * <code>uint32 LDCLNMFFCKJ = 9;</code>
+     * @return The lDCLNMFFCKJ.
      */
     @java.lang.Override
-    public int getFactorValue() {
-      return factorValue_;
+    public int getLDCLNMFFCKJ() {
+      return lDCLNMFFCKJ_;
     }
 
-    public static final int FACTOR_ID_FIELD_NUMBER = 4;
-    private int factorId_;
+    public static final int KMJPPJGDBFJ_FIELD_NUMBER = 14;
+    private int kMJPPJGDBFJ_;
     /**
-     * <code>uint32 factor_id = 4;</code>
-     * @return The factorId.
+     * <code>uint32 KMJPPJGDBFJ = 14;</code>
+     * @return The kMJPPJGDBFJ.
      */
     @java.lang.Override
-    public int getFactorId() {
-      return factorId_;
+    public int getKMJPPJGDBFJ() {
+      return kMJPPJGDBFJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (factorValue_ != 0) {
-        output.writeUInt32(3, factorValue_);
+      if (lDCLNMFFCKJ_ != 0) {
+        output.writeUInt32(9, lDCLNMFFCKJ_);
       }
-      if (factorId_ != 0) {
-        output.writeUInt32(4, factorId_);
+      if (kMJPPJGDBFJ_ != 0) {
+        output.writeUInt32(14, kMJPPJGDBFJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (factorValue_ != 0) {
+      if (lDCLNMFFCKJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, factorValue_);
+          .computeUInt32Size(9, lDCLNMFFCKJ_);
       }
-      if (factorId_ != 0) {
+      if (kMJPPJGDBFJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, factorId_);
+          .computeUInt32Size(14, kMJPPJGDBFJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo other = (emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo) obj;
 
-      if (getFactorValue()
-          != other.getFactorValue()) return false;
-      if (getFactorId()
-          != other.getFactorId()) return false;
+      if (getLDCLNMFFCKJ()
+          != other.getLDCLNMFFCKJ()) return false;
+      if (getKMJPPJGDBFJ()
+          != other.getKMJPPJGDBFJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FACTOR_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getFactorValue();
-      hash = (37 * hash) + FACTOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFactorId();
+      hash = (37 * hash) + LDCLNMFFCKJ_FIELD_NUMBER;
+      hash = (53 * hash) + getLDCLNMFFCKJ();
+      hash = (37 * hash) + KMJPPJGDBFJ_FIELD_NUMBER;
+      hash = (53 * hash) + getKMJPPJGDBFJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HKOILFOAMGM
-     * </pre>
-     *
      * Protobuf type {@code LanternRiteFireworksReformFactorInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        factorValue_ = 0;
+        lDCLNMFFCKJ_ = 0;
 
-        factorId_ = 0;
+        kMJPPJGDBFJ_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo buildPartial() {
         emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo result = new emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo(this);
-        result.factorValue_ = factorValue_;
-        result.factorId_ = factorId_;
+        result.lDCLNMFFCKJ_ = lDCLNMFFCKJ_;
+        result.kMJPPJGDBFJ_ = kMJPPJGDBFJ_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteFireworksReformFactorInfoOuterClass.LanternRiteFireworksReformFactorInfo.getDefaultInstance()) return this;
-        if (other.getFactorValue() != 0) {
-          setFactorValue(other.getFactorValue());
+        if (other.getLDCLNMFFCKJ() != 0) {
+          setLDCLNMFFCKJ(other.getLDCLNMFFCKJ());
         }
-        if (other.getFactorId() != 0) {
-          setFactorId(other.getFactorId());
+        if (other.getKMJPPJGDBFJ() != 0) {
+          setKMJPPJGDBFJ(other.getKMJPPJGDBFJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +458,64 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
         return this;
       }
 
-      private int factorValue_ ;
+      private int lDCLNMFFCKJ_ ;
       /**
-       * <code>uint32 factor_value = 3;</code>
-       * @return The factorValue.
+       * <code>uint32 LDCLNMFFCKJ = 9;</code>
+       * @return The lDCLNMFFCKJ.
        */
       @java.lang.Override
-      public int getFactorValue() {
-        return factorValue_;
+      public int getLDCLNMFFCKJ() {
+        return lDCLNMFFCKJ_;
       }
       /**
-       * <code>uint32 factor_value = 3;</code>
-       * @param value The factorValue to set.
+       * <code>uint32 LDCLNMFFCKJ = 9;</code>
+       * @param value The lDCLNMFFCKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFactorValue(int value) {
+      public Builder setLDCLNMFFCKJ(int value) {
         
-        factorValue_ = value;
+        lDCLNMFFCKJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 factor_value = 3;</code>
+       * <code>uint32 LDCLNMFFCKJ = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFactorValue() {
+      public Builder clearLDCLNMFFCKJ() {
         
-        factorValue_ = 0;
+        lDCLNMFFCKJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int factorId_ ;
+      private int kMJPPJGDBFJ_ ;
       /**
-       * <code>uint32 factor_id = 4;</code>
-       * @return The factorId.
+       * <code>uint32 KMJPPJGDBFJ = 14;</code>
+       * @return The kMJPPJGDBFJ.
        */
       @java.lang.Override
-      public int getFactorId() {
-        return factorId_;
+      public int getKMJPPJGDBFJ() {
+        return kMJPPJGDBFJ_;
       }
       /**
-       * <code>uint32 factor_id = 4;</code>
-       * @param value The factorId to set.
+       * <code>uint32 KMJPPJGDBFJ = 14;</code>
+       * @param value The kMJPPJGDBFJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFactorId(int value) {
+      public Builder setKMJPPJGDBFJ(int value) {
         
-        factorId_ = value;
+        kMJPPJGDBFJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 factor_id = 4;</code>
+       * <code>uint32 KMJPPJGDBFJ = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFactorId() {
+      public Builder clearKMJPPJGDBFJ() {
         
-        factorId_ = 0;
+        kMJPPJGDBFJ_ = 0;
         onChanged();
         return this;
       }
@@ -595,10 +587,10 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n*LanternRiteFireworksReformFactorInfo.p" +
-      "roto\"O\n$LanternRiteFireworksReformFactor" +
-      "Info\022\024\n\014factor_value\030\003 \001(\r\022\021\n\tfactor_id\030" +
-      "\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "roto\"P\n$LanternRiteFireworksReformFactor" +
+      "Info\022\023\n\013LDCLNMFFCKJ\030\t \001(\r\022\023\n\013KMJPPJGDBFJ" +
+      "\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -609,7 +601,7 @@ public final class LanternRiteFireworksReformFactorInfoOuterClass {
     internal_static_LanternRiteFireworksReformFactorInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteFireworksReformFactorInfo_descriptor,
-        new java.lang.String[] { "FactorValue", "FactorId", });
+        new java.lang.String[] { "LDCLNMFFCKJ", "KMJPPJGDBFJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,26 +19,38 @@ public final class WatcherEventStageNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 watcher_id = 10;</code>
-     * @return The watcherId.
-     */
-    int getWatcherId();
-
-    /**
-     * <code>uint32 stage = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 stage = 5;</code>
      * @return The stage.
      */
     int getStage();
 
     /**
-     * <code>uint32 add_progress = 15;</code>
-     * @return The addProgress.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ABNONCLJBAC = 11;</code>
+     * @return The aBNONCLJBAC.
      */
-    int getAddProgress();
+    int getABNONCLJBAC();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 CFFMEHBDMNL = 12;</code>
+     * @return The cFFMEHBDMNL.
+     */
+    int getCFFMEHBDMNL();
   }
   /**
    * <pre>
-   * CmdId: 22871
+   * CmdId: 1094
    * </pre>
    *
    * Protobuf type {@code WatcherEventStageNotify}
@@ -85,19 +97,19 @@ public final class WatcherEventStageNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              watcherId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 40: {
 
               stage_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              addProgress_ = input.readUInt32();
+              aBNONCLJBAC_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cFFMEHBDMNL_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +144,14 @@ public final class WatcherEventStageNotifyOuterClass {
               emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify.class, emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify.Builder.class);
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 10;
-    private int watcherId_;
-    /**
-     * <code>uint32 watcher_id = 10;</code>
-     * @return The watcherId.
-     */
-    @java.lang.Override
-    public int getWatcherId() {
-      return watcherId_;
-    }
-
-    public static final int STAGE_FIELD_NUMBER = 13;
+    public static final int STAGE_FIELD_NUMBER = 5;
     private int stage_;
     /**
-     * <code>uint32 stage = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 stage = 5;</code>
      * @return The stage.
      */
     @java.lang.Override
@@ -154,15 +159,34 @@ public final class WatcherEventStageNotifyOuterClass {
       return stage_;
     }
 
-    public static final int ADD_PROGRESS_FIELD_NUMBER = 15;
-    private int addProgress_;
+    public static final int ABNONCLJBAC_FIELD_NUMBER = 11;
+    private int aBNONCLJBAC_;
     /**
-     * <code>uint32 add_progress = 15;</code>
-     * @return The addProgress.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ABNONCLJBAC = 11;</code>
+     * @return The aBNONCLJBAC.
      */
     @java.lang.Override
-    public int getAddProgress() {
-      return addProgress_;
+    public int getABNONCLJBAC() {
+      return aBNONCLJBAC_;
+    }
+
+    public static final int CFFMEHBDMNL_FIELD_NUMBER = 12;
+    private int cFFMEHBDMNL_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 CFFMEHBDMNL = 12;</code>
+     * @return The cFFMEHBDMNL.
+     */
+    @java.lang.Override
+    public int getCFFMEHBDMNL() {
+      return cFFMEHBDMNL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +203,14 @@ public final class WatcherEventStageNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (watcherId_ != 0) {
-        output.writeUInt32(10, watcherId_);
-      }
       if (stage_ != 0) {
-        output.writeUInt32(13, stage_);
+        output.writeUInt32(5, stage_);
       }
-      if (addProgress_ != 0) {
-        output.writeUInt32(15, addProgress_);
+      if (aBNONCLJBAC_ != 0) {
+        output.writeUInt32(11, aBNONCLJBAC_);
+      }
+      if (cFFMEHBDMNL_ != 0) {
+        output.writeUInt32(12, cFFMEHBDMNL_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +221,17 @@ public final class WatcherEventStageNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (watcherId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, watcherId_);
-      }
       if (stage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stage_);
+          .computeUInt32Size(5, stage_);
       }
-      if (addProgress_ != 0) {
+      if (aBNONCLJBAC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, addProgress_);
+          .computeUInt32Size(11, aBNONCLJBAC_);
+      }
+      if (cFFMEHBDMNL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, cFFMEHBDMNL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +248,12 @@ public final class WatcherEventStageNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify other = (emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify) obj;
 
-      if (getWatcherId()
-          != other.getWatcherId()) return false;
       if (getStage()
           != other.getStage()) return false;
-      if (getAddProgress()
-          != other.getAddProgress()) return false;
+      if (getABNONCLJBAC()
+          != other.getABNONCLJBAC()) return false;
+      if (getCFFMEHBDMNL()
+          != other.getCFFMEHBDMNL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +265,12 @@ public final class WatcherEventStageNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + WATCHER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWatcherId();
       hash = (37 * hash) + STAGE_FIELD_NUMBER;
       hash = (53 * hash) + getStage();
-      hash = (37 * hash) + ADD_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddProgress();
+      hash = (37 * hash) + ABNONCLJBAC_FIELD_NUMBER;
+      hash = (53 * hash) + getABNONCLJBAC();
+      hash = (37 * hash) + CFFMEHBDMNL_FIELD_NUMBER;
+      hash = (53 * hash) + getCFFMEHBDMNL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,7 +368,7 @@ public final class WatcherEventStageNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22871
+     * CmdId: 1094
      * </pre>
      *
      * Protobuf type {@code WatcherEventStageNotify}
@@ -384,11 +408,11 @@ public final class WatcherEventStageNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        watcherId_ = 0;
-
         stage_ = 0;
 
-        addProgress_ = 0;
+        aBNONCLJBAC_ = 0;
+
+        cFFMEHBDMNL_ = 0;
 
         return this;
       }
@@ -416,9 +440,9 @@ public final class WatcherEventStageNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify buildPartial() {
         emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify result = new emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify(this);
-        result.watcherId_ = watcherId_;
         result.stage_ = stage_;
-        result.addProgress_ = addProgress_;
+        result.aBNONCLJBAC_ = aBNONCLJBAC_;
+        result.cFFMEHBDMNL_ = cFFMEHBDMNL_;
         onBuilt();
         return result;
       }
@@ -467,14 +491,14 @@ public final class WatcherEventStageNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify other) {
         if (other == emu.grasscutter.net.proto.WatcherEventStageNotifyOuterClass.WatcherEventStageNotify.getDefaultInstance()) return this;
-        if (other.getWatcherId() != 0) {
-          setWatcherId(other.getWatcherId());
-        }
         if (other.getStage() != 0) {
           setStage(other.getStage());
         }
-        if (other.getAddProgress() != 0) {
-          setAddProgress(other.getAddProgress());
+        if (other.getABNONCLJBAC() != 0) {
+          setABNONCLJBAC(other.getABNONCLJBAC());
+        }
+        if (other.getCFFMEHBDMNL() != 0) {
+          setCFFMEHBDMNL(other.getCFFMEHBDMNL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,40 +529,13 @@ public final class WatcherEventStageNotifyOuterClass {
         return this;
       }
 
-      private int watcherId_ ;
-      /**
-       * <code>uint32 watcher_id = 10;</code>
-       * @return The watcherId.
-       */
-      @java.lang.Override
-      public int getWatcherId() {
-        return watcherId_;
-      }
-      /**
-       * <code>uint32 watcher_id = 10;</code>
-       * @param value The watcherId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWatcherId(int value) {
-        
-        watcherId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 watcher_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWatcherId() {
-        
-        watcherId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int stage_ ;
       /**
-       * <code>uint32 stage = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage = 5;</code>
        * @return The stage.
        */
       @java.lang.Override
@@ -546,7 +543,11 @@ public final class WatcherEventStageNotifyOuterClass {
         return stage_;
       }
       /**
-       * <code>uint32 stage = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage = 5;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
@@ -557,7 +558,11 @@ public final class WatcherEventStageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 stage = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -567,33 +572,88 @@ public final class WatcherEventStageNotifyOuterClass {
         return this;
       }
 
-      private int addProgress_ ;
+      private int aBNONCLJBAC_ ;
       /**
-       * <code>uint32 add_progress = 15;</code>
-       * @return The addProgress.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
+       * @return The aBNONCLJBAC.
        */
       @java.lang.Override
-      public int getAddProgress() {
-        return addProgress_;
+      public int getABNONCLJBAC() {
+        return aBNONCLJBAC_;
       }
       /**
-       * <code>uint32 add_progress = 15;</code>
-       * @param value The addProgress to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
+       * @param value The aBNONCLJBAC to set.
        * @return This builder for chaining.
        */
-      public Builder setAddProgress(int value) {
+      public Builder setABNONCLJBAC(int value) {
         
-        addProgress_ = value;
+        aBNONCLJBAC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 add_progress = 15;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ABNONCLJBAC = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAddProgress() {
+      public Builder clearABNONCLJBAC() {
         
-        addProgress_ = 0;
+        aBNONCLJBAC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cFFMEHBDMNL_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 CFFMEHBDMNL = 12;</code>
+       * @return The cFFMEHBDMNL.
+       */
+      @java.lang.Override
+      public int getCFFMEHBDMNL() {
+        return cFFMEHBDMNL_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 CFFMEHBDMNL = 12;</code>
+       * @param value The cFFMEHBDMNL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCFFMEHBDMNL(int value) {
+        
+        cFFMEHBDMNL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 CFFMEHBDMNL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCFFMEHBDMNL() {
+        
+        cFFMEHBDMNL_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +725,8 @@ public final class WatcherEventStageNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035WatcherEventStageNotify.proto\"R\n\027Watch" +
-      "erEventStageNotify\022\022\n\nwatcher_id\030\n \001(\r\022\r" +
-      "\n\005stage\030\r \001(\r\022\024\n\014add_progress\030\017 \001(\rB\033\n\031e" +
+      "erEventStageNotify\022\r\n\005stage\030\005 \001(\r\022\023\n\013ABN" +
+      "ONCLJBAC\030\013 \001(\r\022\023\n\013CFFMEHBDMNL\030\014 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +738,7 @@ public final class WatcherEventStageNotifyOuterClass {
     internal_static_WatcherEventStageNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WatcherEventStageNotify_descriptor,
-        new java.lang.String[] { "WatcherId", "Stage", "AddProgress", });
+        new java.lang.String[] { "Stage", "ABNONCLJBAC", "CFFMEHBDMNL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

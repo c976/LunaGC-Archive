@@ -19,57 +19,97 @@ public final class GetUgcReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcType ugc_type = 3;</code>
-     * @return The enum numeric value on the wire for ugcType.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 8;</code>
+     * @return The scheduleId.
      */
-    int getUgcTypeValue();
-    /**
-     * <code>.UgcType ugc_type = 3;</code>
-     * @return The ugcType.
-     */
-    emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
+    int getScheduleId();
 
     /**
-     * <code>bool is_require_brief = 4;</code>
-     * @return The isRequireBrief.
-     */
-    boolean getIsRequireBrief();
-
-    /**
-     * <code>.GetUgcType get_ugc_type = 6;</code>
-     * @return The enum numeric value on the wire for getUgcType.
-     */
-    int getGetUgcTypeValue();
-    /**
-     * <code>.GetUgcType get_ugc_type = 6;</code>
-     * @return The getUgcType.
-     */
-    emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType();
-
-    /**
-     * <code>.RecordUsage ugc_record_usage = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RecordUsage ugc_record_usage = 3;</code>
      * @return The enum numeric value on the wire for ugcRecordUsage.
      */
     int getUgcRecordUsageValue();
     /**
-     * <code>.RecordUsage ugc_record_usage = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RecordUsage ugc_record_usage = 3;</code>
      * @return The ugcRecordUsage.
      */
     emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage getUgcRecordUsage();
 
     /**
-     * <code>uint64 ugc_guid = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 ugc_guid = 9;</code>
      * @return The ugcGuid.
      */
     long getUgcGuid();
 
     /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_require_brief = 6;</code>
+     * @return The isRequireBrief.
      */
-    int getScheduleId();
+    boolean getIsRequireBrief();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.GetUgcType get_ugc_type = 14;</code>
+     * @return The enum numeric value on the wire for getUgcType.
+     */
+    int getGetUgcTypeValue();
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.GetUgcType get_ugc_type = 14;</code>
+     * @return The getUgcType.
+     */
+    emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.UgcType ugc_type = 11;</code>
+     * @return The enum numeric value on the wire for ugcType.
+     */
+    int getUgcTypeValue();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.UgcType ugc_type = 11;</code>
+     * @return The ugcType.
+     */
+    emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
   }
   /**
+   * <pre>
+   * CmdId: 27748
+   * </pre>
+   *
    * Protobuf type {@code GetUgcReq}
    */
   public static final class GetUgcReq extends
@@ -82,9 +122,9 @@ public final class GetUgcReqOuterClass {
       super(builder);
     }
     private GetUgcReq() {
-      ugcType_ = 0;
-      getUgcType_ = 0;
       ugcRecordUsage_ = 0;
+      getUgcType_ = 0;
+      ugcType_ = 0;
     }
 
     @java.lang.Override
@@ -120,34 +160,34 @@ public final class GetUgcReqOuterClass {
             case 24: {
               int rawValue = input.readEnum();
 
-              ugcType_ = rawValue;
+              ugcRecordUsage_ = rawValue;
               break;
             }
-            case 32: {
+            case 48: {
 
               isRequireBrief_ = input.readBool();
               break;
             }
-            case 48: {
-              int rawValue = input.readEnum();
+            case 64: {
 
-              getUgcType_ = rawValue;
+              scheduleId_ = input.readUInt32();
               break;
             }
-            case 56: {
-              int rawValue = input.readEnum();
-
-              ugcRecordUsage_ = rawValue;
-              break;
-            }
-            case 80: {
+            case 72: {
 
               ugcGuid_ = input.readUInt64();
               break;
             }
-            case 120: {
+            case 88: {
+              int rawValue = input.readEnum();
 
-              scheduleId_ = input.readUInt32();
+              ugcType_ = rawValue;
+              break;
+            }
+            case 112: {
+              int rawValue = input.readEnum();
+
+              getUgcType_ = rawValue;
               break;
             }
             default: {
@@ -182,66 +222,40 @@ public final class GetUgcReqOuterClass {
               emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq.class, emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq.Builder.class);
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 3;
-    private int ugcType_;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
+    private int scheduleId_;
     /**
-     * <code>.UgcType ugc_type = 3;</code>
-     * @return The enum numeric value on the wire for ugcType.
-     */
-    @java.lang.Override public int getUgcTypeValue() {
-      return ugcType_;
-    }
-    /**
-     * <code>.UgcType ugc_type = 3;</code>
-     * @return The ugcType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
-      return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
-    }
-
-    public static final int IS_REQUIRE_BRIEF_FIELD_NUMBER = 4;
-    private boolean isRequireBrief_;
-    /**
-     * <code>bool is_require_brief = 4;</code>
-     * @return The isRequireBrief.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 schedule_id = 8;</code>
+     * @return The scheduleId.
      */
     @java.lang.Override
-    public boolean getIsRequireBrief() {
-      return isRequireBrief_;
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
-    public static final int GET_UGC_TYPE_FIELD_NUMBER = 6;
-    private int getUgcType_;
-    /**
-     * <code>.GetUgcType get_ugc_type = 6;</code>
-     * @return The enum numeric value on the wire for getUgcType.
-     */
-    @java.lang.Override public int getGetUgcTypeValue() {
-      return getUgcType_;
-    }
-    /**
-     * <code>.GetUgcType get_ugc_type = 6;</code>
-     * @return The getUgcType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType result = emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.valueOf(getUgcType_);
-      return result == null ? emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.UNRECOGNIZED : result;
-    }
-
-    public static final int UGC_RECORD_USAGE_FIELD_NUMBER = 7;
+    public static final int UGC_RECORD_USAGE_FIELD_NUMBER = 3;
     private int ugcRecordUsage_;
     /**
-     * <code>.RecordUsage ugc_record_usage = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RecordUsage ugc_record_usage = 3;</code>
      * @return The enum numeric value on the wire for ugcRecordUsage.
      */
     @java.lang.Override public int getUgcRecordUsageValue() {
       return ugcRecordUsage_;
     }
     /**
-     * <code>.RecordUsage ugc_record_usage = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RecordUsage ugc_record_usage = 3;</code>
      * @return The ugcRecordUsage.
      */
     @java.lang.Override public emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage getUgcRecordUsage() {
@@ -250,10 +264,14 @@ public final class GetUgcReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UNRECOGNIZED : result;
     }
 
-    public static final int UGC_GUID_FIELD_NUMBER = 10;
+    public static final int UGC_GUID_FIELD_NUMBER = 9;
     private long ugcGuid_;
     /**
-     * <code>uint64 ugc_guid = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 ugc_guid = 9;</code>
      * @return The ugcGuid.
      */
     @java.lang.Override
@@ -261,15 +279,73 @@ public final class GetUgcReqOuterClass {
       return ugcGuid_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
-    private int scheduleId_;
+    public static final int IS_REQUIRE_BRIEF_FIELD_NUMBER = 6;
+    private boolean isRequireBrief_;
     /**
-     * <code>uint32 schedule_id = 15;</code>
-     * @return The scheduleId.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_require_brief = 6;</code>
+     * @return The isRequireBrief.
      */
     @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
+    public boolean getIsRequireBrief() {
+      return isRequireBrief_;
+    }
+
+    public static final int GET_UGC_TYPE_FIELD_NUMBER = 14;
+    private int getUgcType_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.GetUgcType get_ugc_type = 14;</code>
+     * @return The enum numeric value on the wire for getUgcType.
+     */
+    @java.lang.Override public int getGetUgcTypeValue() {
+      return getUgcType_;
+    }
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.GetUgcType get_ugc_type = 14;</code>
+     * @return The getUgcType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType result = emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.valueOf(getUgcType_);
+      return result == null ? emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.UNRECOGNIZED : result;
+    }
+
+    public static final int UGC_TYPE_FIELD_NUMBER = 11;
+    private int ugcType_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.UgcType ugc_type = 11;</code>
+     * @return The enum numeric value on the wire for ugcType.
+     */
+    @java.lang.Override public int getUgcTypeValue() {
+      return ugcType_;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.UgcType ugc_type = 11;</code>
+     * @return The ugcType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+      return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -286,23 +362,23 @@ public final class GetUgcReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, ugcType_);
+      if (ugcRecordUsage_ != emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UGC_RECORD_USAGE_NONE.getNumber()) {
+        output.writeEnum(3, ugcRecordUsage_);
       }
       if (isRequireBrief_ != false) {
-        output.writeBool(4, isRequireBrief_);
-      }
-      if (getUgcType_ != emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.GET_UGC_NONE.getNumber()) {
-        output.writeEnum(6, getUgcType_);
-      }
-      if (ugcRecordUsage_ != emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UGC_RECORD_USAGE_NONE.getNumber()) {
-        output.writeEnum(7, ugcRecordUsage_);
-      }
-      if (ugcGuid_ != 0L) {
-        output.writeUInt64(10, ugcGuid_);
+        output.writeBool(6, isRequireBrief_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(15, scheduleId_);
+        output.writeUInt32(8, scheduleId_);
+      }
+      if (ugcGuid_ != 0L) {
+        output.writeUInt64(9, ugcGuid_);
+      }
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
+        output.writeEnum(11, ugcType_);
+      }
+      if (getUgcType_ != emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.GET_UGC_TYPE_NONE.getNumber()) {
+        output.writeEnum(14, getUgcType_);
       }
       unknownFields.writeTo(output);
     }
@@ -313,29 +389,29 @@ public final class GetUgcReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
+      if (ugcRecordUsage_ != emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UGC_RECORD_USAGE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, ugcType_);
+          .computeEnumSize(3, ugcRecordUsage_);
       }
       if (isRequireBrief_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isRequireBrief_);
-      }
-      if (getUgcType_ != emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.GET_UGC_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, getUgcType_);
-      }
-      if (ugcRecordUsage_ != emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UGC_RECORD_USAGE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, ugcRecordUsage_);
-      }
-      if (ugcGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, ugcGuid_);
+          .computeBoolSize(6, isRequireBrief_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, scheduleId_);
+          .computeUInt32Size(8, scheduleId_);
+      }
+      if (ugcGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, ugcGuid_);
+      }
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(11, ugcType_);
+      }
+      if (getUgcType_ != emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.GET_UGC_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(14, getUgcType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,15 +428,15 @@ public final class GetUgcReqOuterClass {
       }
       emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq other = (emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq) obj;
 
-      if (ugcType_ != other.ugcType_) return false;
-      if (getIsRequireBrief()
-          != other.getIsRequireBrief()) return false;
-      if (getUgcType_ != other.getUgcType_) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (ugcRecordUsage_ != other.ugcRecordUsage_) return false;
       if (getUgcGuid()
           != other.getUgcGuid()) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
+      if (getIsRequireBrief()
+          != other.getIsRequireBrief()) return false;
+      if (getUgcType_ != other.getUgcType_) return false;
+      if (ugcType_ != other.ugcType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -372,20 +448,20 @@ public final class GetUgcReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + ugcType_;
-      hash = (37 * hash) + IS_REQUIRE_BRIEF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsRequireBrief());
-      hash = (37 * hash) + GET_UGC_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getUgcType_;
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + UGC_RECORD_USAGE_FIELD_NUMBER;
       hash = (53 * hash) + ugcRecordUsage_;
       hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getUgcGuid());
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + IS_REQUIRE_BRIEF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsRequireBrief());
+      hash = (37 * hash) + GET_UGC_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcType_;
+      hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + ugcType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -482,6 +558,10 @@ public final class GetUgcReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27748
+     * </pre>
+     *
      * Protobuf type {@code GetUgcReq}
      */
     public static final class Builder extends
@@ -519,17 +599,17 @@ public final class GetUgcReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        ugcType_ = 0;
-
-        isRequireBrief_ = false;
-
-        getUgcType_ = 0;
+        scheduleId_ = 0;
 
         ugcRecordUsage_ = 0;
 
         ugcGuid_ = 0L;
 
-        scheduleId_ = 0;
+        isRequireBrief_ = false;
+
+        getUgcType_ = 0;
+
+        ugcType_ = 0;
 
         return this;
       }
@@ -557,12 +637,12 @@ public final class GetUgcReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq buildPartial() {
         emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq result = new emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq(this);
-        result.ugcType_ = ugcType_;
-        result.isRequireBrief_ = isRequireBrief_;
-        result.getUgcType_ = getUgcType_;
+        result.scheduleId_ = scheduleId_;
         result.ugcRecordUsage_ = ugcRecordUsage_;
         result.ugcGuid_ = ugcGuid_;
-        result.scheduleId_ = scheduleId_;
+        result.isRequireBrief_ = isRequireBrief_;
+        result.getUgcType_ = getUgcType_;
+        result.ugcType_ = ugcType_;
         onBuilt();
         return result;
       }
@@ -611,14 +691,8 @@ public final class GetUgcReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq other) {
         if (other == emu.grasscutter.net.proto.GetUgcReqOuterClass.GetUgcReq.getDefaultInstance()) return this;
-        if (other.ugcType_ != 0) {
-          setUgcTypeValue(other.getUgcTypeValue());
-        }
-        if (other.getIsRequireBrief() != false) {
-          setIsRequireBrief(other.getIsRequireBrief());
-        }
-        if (other.getUgcType_ != 0) {
-          setGetUgcTypeValue(other.getGetUgcTypeValue());
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
         }
         if (other.ugcRecordUsage_ != 0) {
           setUgcRecordUsageValue(other.getUgcRecordUsageValue());
@@ -626,8 +700,14 @@ public final class GetUgcReqOuterClass {
         if (other.getUgcGuid() != 0L) {
           setUgcGuid(other.getUgcGuid());
         }
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
+        if (other.getIsRequireBrief() != false) {
+          setIsRequireBrief(other.getIsRequireBrief());
+        }
+        if (other.getUgcType_ != 0) {
+          setGetUgcTypeValue(other.getGetUgcTypeValue());
+        }
+        if (other.ugcType_ != 0) {
+          setUgcTypeValue(other.getUgcTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -658,155 +738,67 @@ public final class GetUgcReqOuterClass {
         return this;
       }
 
-      private int ugcType_ = 0;
+      private int scheduleId_ ;
       /**
-       * <code>.UgcType ugc_type = 3;</code>
-       * @return The enum numeric value on the wire for ugcType.
-       */
-      @java.lang.Override public int getUgcTypeValue() {
-        return ugcType_;
-      }
-      /**
-       * <code>.UgcType ugc_type = 3;</code>
-       * @param value The enum numeric value on the wire for ugcType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUgcTypeValue(int value) {
-        
-        ugcType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.UgcType ugc_type = 3;</code>
-       * @return The ugcType.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
+       * @return The scheduleId.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
-        return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
+      public int getScheduleId() {
+        return scheduleId_;
       }
       /**
-       * <code>.UgcType ugc_type = 3;</code>
-       * @param value The ugcType to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
+       * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
-      public Builder setUgcType(emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setScheduleId(int value) {
         
-        ugcType_ = value.getNumber();
+        scheduleId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 schedule_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUgcType() {
+      public Builder clearScheduleId() {
         
-        ugcType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isRequireBrief_ ;
-      /**
-       * <code>bool is_require_brief = 4;</code>
-       * @return The isRequireBrief.
-       */
-      @java.lang.Override
-      public boolean getIsRequireBrief() {
-        return isRequireBrief_;
-      }
-      /**
-       * <code>bool is_require_brief = 4;</code>
-       * @param value The isRequireBrief to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsRequireBrief(boolean value) {
-        
-        isRequireBrief_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_require_brief = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsRequireBrief() {
-        
-        isRequireBrief_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int getUgcType_ = 0;
-      /**
-       * <code>.GetUgcType get_ugc_type = 6;</code>
-       * @return The enum numeric value on the wire for getUgcType.
-       */
-      @java.lang.Override public int getGetUgcTypeValue() {
-        return getUgcType_;
-      }
-      /**
-       * <code>.GetUgcType get_ugc_type = 6;</code>
-       * @param value The enum numeric value on the wire for getUgcType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGetUgcTypeValue(int value) {
-        
-        getUgcType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GetUgcType get_ugc_type = 6;</code>
-       * @return The getUgcType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType result = emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.valueOf(getUgcType_);
-        return result == null ? emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GetUgcType get_ugc_type = 6;</code>
-       * @param value The getUgcType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGetUgcType(emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        getUgcType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GetUgcType get_ugc_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGetUgcType() {
-        
-        getUgcType_ = 0;
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
 
       private int ugcRecordUsage_ = 0;
       /**
-       * <code>.RecordUsage ugc_record_usage = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RecordUsage ugc_record_usage = 3;</code>
        * @return The enum numeric value on the wire for ugcRecordUsage.
        */
       @java.lang.Override public int getUgcRecordUsageValue() {
         return ugcRecordUsage_;
       }
       /**
-       * <code>.RecordUsage ugc_record_usage = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RecordUsage ugc_record_usage = 3;</code>
        * @param value The enum numeric value on the wire for ugcRecordUsage to set.
        * @return This builder for chaining.
        */
@@ -817,7 +809,11 @@ public final class GetUgcReqOuterClass {
         return this;
       }
       /**
-       * <code>.RecordUsage ugc_record_usage = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RecordUsage ugc_record_usage = 3;</code>
        * @return The ugcRecordUsage.
        */
       @java.lang.Override
@@ -827,7 +823,11 @@ public final class GetUgcReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.RecordUsageOuterClass.RecordUsage.UNRECOGNIZED : result;
       }
       /**
-       * <code>.RecordUsage ugc_record_usage = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RecordUsage ugc_record_usage = 3;</code>
        * @param value The ugcRecordUsage to set.
        * @return This builder for chaining.
        */
@@ -841,7 +841,11 @@ public final class GetUgcReqOuterClass {
         return this;
       }
       /**
-       * <code>.RecordUsage ugc_record_usage = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RecordUsage ugc_record_usage = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcRecordUsage() {
@@ -853,7 +857,11 @@ public final class GetUgcReqOuterClass {
 
       private long ugcGuid_ ;
       /**
-       * <code>uint64 ugc_guid = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 ugc_guid = 9;</code>
        * @return The ugcGuid.
        */
       @java.lang.Override
@@ -861,7 +869,11 @@ public final class GetUgcReqOuterClass {
         return ugcGuid_;
       }
       /**
-       * <code>uint64 ugc_guid = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 ugc_guid = 9;</code>
        * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
@@ -872,7 +884,11 @@ public final class GetUgcReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 ugc_guid = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 ugc_guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcGuid() {
@@ -882,33 +898,193 @@ public final class GetUgcReqOuterClass {
         return this;
       }
 
-      private int scheduleId_ ;
+      private boolean isRequireBrief_ ;
       /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @return The scheduleId.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_require_brief = 6;</code>
+       * @return The isRequireBrief.
        */
       @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
+      public boolean getIsRequireBrief() {
+        return isRequireBrief_;
       }
       /**
-       * <code>uint32 schedule_id = 15;</code>
-       * @param value The scheduleId to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_require_brief = 6;</code>
+       * @param value The isRequireBrief to set.
        * @return This builder for chaining.
        */
-      public Builder setScheduleId(int value) {
+      public Builder setIsRequireBrief(boolean value) {
         
-        scheduleId_ = value;
+        isRequireBrief_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 15;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_require_brief = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScheduleId() {
+      public Builder clearIsRequireBrief() {
         
-        scheduleId_ = 0;
+        isRequireBrief_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int getUgcType_ = 0;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.GetUgcType get_ugc_type = 14;</code>
+       * @return The enum numeric value on the wire for getUgcType.
+       */
+      @java.lang.Override public int getGetUgcTypeValue() {
+        return getUgcType_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.GetUgcType get_ugc_type = 14;</code>
+       * @param value The enum numeric value on the wire for getUgcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGetUgcTypeValue(int value) {
+        
+        getUgcType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.GetUgcType get_ugc_type = 14;</code>
+       * @return The getUgcType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType getGetUgcType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType result = emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.valueOf(getUgcType_);
+        return result == null ? emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.GetUgcType get_ugc_type = 14;</code>
+       * @param value The getUgcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGetUgcType(emu.grasscutter.net.proto.GetUgcTypeOuterClass.GetUgcType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        getUgcType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.GetUgcType get_ugc_type = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGetUgcType() {
+        
+        getUgcType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ugcType_ = 0;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.UgcType ugc_type = 11;</code>
+       * @return The enum numeric value on the wire for ugcType.
+       */
+      @java.lang.Override public int getUgcTypeValue() {
+        return ugcType_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.UgcType ugc_type = 11;</code>
+       * @param value The enum numeric value on the wire for ugcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUgcTypeValue(int value) {
+        
+        ugcType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.UgcType ugc_type = 11;</code>
+       * @return The ugcType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+        return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.UgcType ugc_type = 11;</code>
+       * @param value The ugcType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUgcType(emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        ugcType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.UgcType ugc_type = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUgcType() {
+        
+        ugcType_ = 0;
         onChanged();
         return this;
       }
@@ -979,31 +1155,31 @@ public final class GetUgcReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GetUgcReq.proto\032\rUgcType.proto\032\021Record" +
-      "Usage.proto\032\020GetUgcType.proto\"\263\001\n\tGetUgc" +
-      "Req\022\032\n\010ugc_type\030\003 \001(\0162\010.UgcType\022\030\n\020is_re" +
-      "quire_brief\030\004 \001(\010\022!\n\014get_ugc_type\030\006 \001(\0162" +
-      "\013.GetUgcType\022&\n\020ugc_record_usage\030\007 \001(\0162\014" +
-      ".RecordUsage\022\020\n\010ugc_guid\030\n \001(\004\022\023\n\013schedu" +
-      "le_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "\n\017GetUgcReq.proto\032\020GetUgcType.proto\032\021Rec" +
+      "ordUsage.proto\032\rUgcType.proto\"\263\001\n\tGetUgc" +
+      "Req\022\023\n\013schedule_id\030\010 \001(\r\022&\n\020ugc_record_u" +
+      "sage\030\003 \001(\0162\014.RecordUsage\022\020\n\010ugc_guid\030\t \001" +
+      "(\004\022\030\n\020is_require_brief\030\006 \001(\010\022!\n\014get_ugc_" +
+      "type\030\016 \001(\0162\013.GetUgcType\022\032\n\010ugc_type\030\013 \001(" +
+      "\0162\010.UgcTypeB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RecordUsageOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GetUgcTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.RecordUsageOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor(),
         });
     internal_static_GetUgcReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GetUgcReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetUgcReq_descriptor,
-        new java.lang.String[] { "UgcType", "IsRequireBrief", "GetUgcType", "UgcRecordUsage", "UgcGuid", "ScheduleId", });
-    emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RecordUsageOuterClass.getDescriptor();
+        new java.lang.String[] { "ScheduleId", "UgcRecordUsage", "UgcGuid", "IsRequireBrief", "GetUgcType", "UgcType", });
     emu.grasscutter.net.proto.GetUgcTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.RecordUsageOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

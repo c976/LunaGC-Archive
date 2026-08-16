@@ -20,40 +20,40 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
   public enum DungeonCandidateTeamPlayerLeaveReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL = 0;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_NORMAL = 0;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL(0),
+    FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_NORMAL(0),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE = 1;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_DIE = 1;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE(1),
+    FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_DIE(1),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK = 2;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_BE_KICK = 2;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK(2),
+    FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_BE_KICK(2),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT = 3;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_DISCONNECT = 3;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT(3),
+    FNDNNHKGDBI_DUNGEON_CANDIDATE_DISCONNECT(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL = 0;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_NORMAL = 0;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL_VALUE = 0;
+    public static final int FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_NORMAL_VALUE = 0;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE = 1;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_DIE = 1;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE_VALUE = 1;
+    public static final int FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_DIE_VALUE = 1;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK = 2;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_BE_KICK = 2;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK_VALUE = 2;
+    public static final int FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_BE_KICK_VALUE = 2;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT = 3;</code>
+     * <code>FNDNNHKGDBI_DUNGEON_CANDIDATE_DISCONNECT = 3;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT_VALUE = 3;
+    public static final int FNDNNHKGDBI_DUNGEON_CANDIDATE_DISCONNECT_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
      */
     public static DungeonCandidateTeamPlayerLeaveReason forNumber(int value) {
       switch (value) {
-        case 0: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_NORMAL;
-        case 1: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_DIE;
-        case 2: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_BE_KICK;
-        case 3: return DUNGEON_CANDIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNECT;
+        case 0: return FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_NORMAL;
+        case 1: return FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_DIE;
+        case 2: return FNDNNHKGDBI_DUNGEON_CANDIDATE_TPLR_BE_KICK;
+        case 3: return FNDNNHKGDBI_DUNGEON_CANDIDATE_DISCONNECT;
         default: return null;
       }
     }
@@ -150,15 +150,13 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+DungeonCandidateTeamPlayerLeaveReason." +
-      "proto*\224\002\n%DungeonCandidateTeamPlayerLeav" +
-      "eReason\022:\n6DUNGEON_CANDIDATE_TEAM_PLAYER" +
-      "_LEAVE_REASON_TPLR_NORMAL\020\000\0227\n3DUNGEON_C" +
-      "ANDIDATE_TEAM_PLAYER_LEAVE_REASON_TPLR_D" +
-      "IE\020\001\022;\n7DUNGEON_CANDIDATE_TEAM_PLAYER_LE" +
-      "AVE_REASON_TPLR_BE_KICK\020\002\0229\n5DUNGEON_CAN" +
-      "DIDATE_TEAM_PLAYER_LEAVE_REASON_DISCONNE" +
-      "CT\020\003B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "proto*\340\001\n%DungeonCandidateTeamPlayerLeav" +
+      "eReason\022-\n)FNDNNHKGDBI_DUNGEON_CANDIDATE" +
+      "_TPLR_NORMAL\020\000\022*\n&FNDNNHKGDBI_DUNGEON_CA" +
+      "NDIDATE_TPLR_DIE\020\001\022.\n*FNDNNHKGDBI_DUNGEO" +
+      "N_CANDIDATE_TPLR_BE_KICK\020\002\022,\n(FNDNNHKGDB" +
+      "I_DUNGEON_CANDIDATE_DISCONNECT\020\003B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

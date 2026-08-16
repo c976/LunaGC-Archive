@@ -19,10 +19,24 @@ public final class MirrorAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 copy_from_avatar_type = 1;</code>
      * @return The copyFromAvatarType.
      */
     int getCopyFromAvatarType();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 LOEKHPIAPPL = 2;</code>
+     * @return The lOEKHPIAPPL.
+     */
+    long getLOEKHPIAPPL();
   }
   /**
    * Protobuf type {@code MirrorAvatarInfo}
@@ -74,6 +88,11 @@ public final class MirrorAvatarInfoOuterClass {
               copyFromAvatarType_ = input.readUInt32();
               break;
             }
+            case 16: {
+
+              lOEKHPIAPPL_ = input.readUInt64();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -109,12 +128,31 @@ public final class MirrorAvatarInfoOuterClass {
     public static final int COPY_FROM_AVATAR_TYPE_FIELD_NUMBER = 1;
     private int copyFromAvatarType_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 copy_from_avatar_type = 1;</code>
      * @return The copyFromAvatarType.
      */
     @java.lang.Override
     public int getCopyFromAvatarType() {
       return copyFromAvatarType_;
+    }
+
+    public static final int LOEKHPIAPPL_FIELD_NUMBER = 2;
+    private long lOEKHPIAPPL_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 LOEKHPIAPPL = 2;</code>
+     * @return The lOEKHPIAPPL.
+     */
+    @java.lang.Override
+    public long getLOEKHPIAPPL() {
+      return lOEKHPIAPPL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -134,6 +172,9 @@ public final class MirrorAvatarInfoOuterClass {
       if (copyFromAvatarType_ != 0) {
         output.writeUInt32(1, copyFromAvatarType_);
       }
+      if (lOEKHPIAPPL_ != 0L) {
+        output.writeUInt64(2, lOEKHPIAPPL_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -146,6 +187,10 @@ public final class MirrorAvatarInfoOuterClass {
       if (copyFromAvatarType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, copyFromAvatarType_);
+      }
+      if (lOEKHPIAPPL_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(2, lOEKHPIAPPL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -164,6 +209,8 @@ public final class MirrorAvatarInfoOuterClass {
 
       if (getCopyFromAvatarType()
           != other.getCopyFromAvatarType()) return false;
+      if (getLOEKHPIAPPL()
+          != other.getLOEKHPIAPPL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -177,6 +224,9 @@ public final class MirrorAvatarInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COPY_FROM_AVATAR_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getCopyFromAvatarType();
+      hash = (37 * hash) + LOEKHPIAPPL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getLOEKHPIAPPL());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,6 +362,8 @@ public final class MirrorAvatarInfoOuterClass {
         super.clear();
         copyFromAvatarType_ = 0;
 
+        lOEKHPIAPPL_ = 0L;
+
         return this;
       }
 
@@ -339,6 +391,7 @@ public final class MirrorAvatarInfoOuterClass {
       public emu.grasscutter.net.proto.MirrorAvatarInfoOuterClass.MirrorAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.MirrorAvatarInfoOuterClass.MirrorAvatarInfo result = new emu.grasscutter.net.proto.MirrorAvatarInfoOuterClass.MirrorAvatarInfo(this);
         result.copyFromAvatarType_ = copyFromAvatarType_;
+        result.lOEKHPIAPPL_ = lOEKHPIAPPL_;
         onBuilt();
         return result;
       }
@@ -390,6 +443,9 @@ public final class MirrorAvatarInfoOuterClass {
         if (other.getCopyFromAvatarType() != 0) {
           setCopyFromAvatarType(other.getCopyFromAvatarType());
         }
+        if (other.getLOEKHPIAPPL() != 0L) {
+          setLOEKHPIAPPL(other.getLOEKHPIAPPL());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -421,6 +477,10 @@ public final class MirrorAvatarInfoOuterClass {
 
       private int copyFromAvatarType_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 copy_from_avatar_type = 1;</code>
        * @return The copyFromAvatarType.
        */
@@ -429,6 +489,10 @@ public final class MirrorAvatarInfoOuterClass {
         return copyFromAvatarType_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 copy_from_avatar_type = 1;</code>
        * @param value The copyFromAvatarType to set.
        * @return This builder for chaining.
@@ -440,12 +504,59 @@ public final class MirrorAvatarInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 copy_from_avatar_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCopyFromAvatarType() {
         
         copyFromAvatarType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long lOEKHPIAPPL_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 LOEKHPIAPPL = 2;</code>
+       * @return The lOEKHPIAPPL.
+       */
+      @java.lang.Override
+      public long getLOEKHPIAPPL() {
+        return lOEKHPIAPPL_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 LOEKHPIAPPL = 2;</code>
+       * @param value The lOEKHPIAPPL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOEKHPIAPPL(long value) {
+        
+        lOEKHPIAPPL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 LOEKHPIAPPL = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOEKHPIAPPL() {
+        
+        lOEKHPIAPPL_ = 0L;
         onChanged();
         return this;
       }
@@ -516,9 +627,10 @@ public final class MirrorAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026MirrorAvatarInfo.proto\"1\n\020MirrorAvatar" +
-      "Info\022\035\n\025copy_from_avatar_type\030\001 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\026MirrorAvatarInfo.proto\"F\n\020MirrorAvatar" +
+      "Info\022\035\n\025copy_from_avatar_type\030\001 \001(\r\022\023\n\013L" +
+      "OEKHPIAPPL\030\002 \001(\004B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -529,7 +641,7 @@ public final class MirrorAvatarInfoOuterClass {
     internal_static_MirrorAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MirrorAvatarInfo_descriptor,
-        new java.lang.String[] { "CopyFromAvatarType", });
+        new java.lang.String[] { "CopyFromAvatarType", "LOEKHPIAPPL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,22 +19,26 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 goal = 7;</code>
-     * @return The goal.
-     */
-    int getGoal();
-
-    /**
-     * <code>uint32 progress = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 progress = 14;</code>
      * @return The progress.
      */
     int getProgress();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ADEOIPNJFAK = 2;</code>
+     * @return The aDEOIPNJFAK.
+     */
+    int getADEOIPNJFAK();
   }
   /**
-   * <pre>
-   * Obf: HHAFHACABKN
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryTreasureSeelieInfo}
    */
   public static final class SceneGalleryTreasureSeelieInfo extends
@@ -79,12 +83,12 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
-              goal_ = input.readUInt32();
+              aDEOIPNJFAK_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 112: {
 
               progress_ = input.readUInt32();
               break;
@@ -121,26 +125,34 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.class, emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.Builder.class);
     }
 
-    public static final int GOAL_FIELD_NUMBER = 7;
-    private int goal_;
-    /**
-     * <code>uint32 goal = 7;</code>
-     * @return The goal.
-     */
-    @java.lang.Override
-    public int getGoal() {
-      return goal_;
-    }
-
-    public static final int PROGRESS_FIELD_NUMBER = 9;
+    public static final int PROGRESS_FIELD_NUMBER = 14;
     private int progress_;
     /**
-     * <code>uint32 progress = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 progress = 14;</code>
      * @return The progress.
      */
     @java.lang.Override
     public int getProgress() {
       return progress_;
+    }
+
+    public static final int ADEOIPNJFAK_FIELD_NUMBER = 2;
+    private int aDEOIPNJFAK_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 ADEOIPNJFAK = 2;</code>
+     * @return The aDEOIPNJFAK.
+     */
+    @java.lang.Override
+    public int getADEOIPNJFAK() {
+      return aDEOIPNJFAK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +169,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (goal_ != 0) {
-        output.writeUInt32(7, goal_);
+      if (aDEOIPNJFAK_ != 0) {
+        output.writeUInt32(2, aDEOIPNJFAK_);
       }
       if (progress_ != 0) {
-        output.writeUInt32(9, progress_);
+        output.writeUInt32(14, progress_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +184,13 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (goal_ != 0) {
+      if (aDEOIPNJFAK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, goal_);
+          .computeUInt32Size(2, aDEOIPNJFAK_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, progress_);
+          .computeUInt32Size(14, progress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +207,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo other = (emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo) obj;
 
-      if (getGoal()
-          != other.getGoal()) return false;
       if (getProgress()
           != other.getProgress()) return false;
+      if (getADEOIPNJFAK()
+          != other.getADEOIPNJFAK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +222,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GOAL_FIELD_NUMBER;
-      hash = (53 * hash) + getGoal();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + ADEOIPNJFAK_FIELD_NUMBER;
+      hash = (53 * hash) + getADEOIPNJFAK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +322,6 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HHAFHACABKN
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryTreasureSeelieInfo}
      */
     public static final class Builder extends
@@ -351,9 +359,9 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        goal_ = 0;
-
         progress_ = 0;
+
+        aDEOIPNJFAK_ = 0;
 
         return this;
       }
@@ -381,8 +389,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo result = new emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo(this);
-        result.goal_ = goal_;
         result.progress_ = progress_;
+        result.aDEOIPNJFAK_ = aDEOIPNJFAK_;
         onBuilt();
         return result;
       }
@@ -431,11 +439,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.getDefaultInstance()) return this;
-        if (other.getGoal() != 0) {
-          setGoal(other.getGoal());
-        }
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
+        }
+        if (other.getADEOIPNJFAK() != 0) {
+          setADEOIPNJFAK(other.getADEOIPNJFAK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +474,13 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
 
-      private int goal_ ;
-      /**
-       * <code>uint32 goal = 7;</code>
-       * @return The goal.
-       */
-      @java.lang.Override
-      public int getGoal() {
-        return goal_;
-      }
-      /**
-       * <code>uint32 goal = 7;</code>
-       * @param value The goal to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGoal(int value) {
-        
-        goal_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 goal = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGoal() {
-        
-        goal_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int progress_ ;
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 14;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -507,7 +488,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 14;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -518,12 +503,59 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
         
         progress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aDEOIPNJFAK_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ADEOIPNJFAK = 2;</code>
+       * @return The aDEOIPNJFAK.
+       */
+      @java.lang.Override
+      public int getADEOIPNJFAK() {
+        return aDEOIPNJFAK_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ADEOIPNJFAK = 2;</code>
+       * @param value The aDEOIPNJFAK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setADEOIPNJFAK(int value) {
+        
+        aDEOIPNJFAK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 ADEOIPNJFAK = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearADEOIPNJFAK() {
+        
+        aDEOIPNJFAK_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +626,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$SceneGalleryTreasureSeelieInfo.proto\"@" +
-      "\n\036SceneGalleryTreasureSeelieInfo\022\014\n\004goal" +
-      "\030\007 \001(\r\022\020\n\010progress\030\t \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n$SceneGalleryTreasureSeelieInfo.proto\"G" +
+      "\n\036SceneGalleryTreasureSeelieInfo\022\020\n\010prog" +
+      "ress\030\016 \001(\r\022\023\n\013ADEOIPNJFAK\030\002 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +640,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     internal_static_SceneGalleryTreasureSeelieInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryTreasureSeelieInfo_descriptor,
-        new java.lang.String[] { "Goal", "Progress", });
+        new java.lang.String[] { "Progress", "ADEOIPNJFAK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

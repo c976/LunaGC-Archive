@@ -19,34 +19,46 @@ public final class ScenePlayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 play_id = 1;</code>
-     * @return The playId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 CMKGMEHCNAI = 9;</code>
+     * @return The cMKGMEHCNAI.
      */
-    int getPlayId();
+    int getCMKGMEHCNAI();
 
     /**
-     * <code>uint32 play_type = 3;</code>
-     * @return The playType.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 EPKPFBPBEDC = 4;</code>
+     * @return The ePKPFBPBEDC.
      */
-    int getPlayType();
+    int getEPKPFBPBEDC();
 
     /**
-     * <code>uint32 entry_id = 14;</code>
-     * @return The entryId.
-     */
-    int getEntryId();
-
-    /**
-     * <code>bool is_open = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 play_type = 14;</code>
+     * @return The playType.
+     */
+    int getPlayType();
   }
   /**
-   * <pre>
-   * Obf: MGHLAJDMHHO
-   * </pre>
-   *
    * Protobuf type {@code ScenePlayInfo}
    */
   public static final class ScenePlayInfo extends
@@ -91,24 +103,24 @@ public final class ScenePlayInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              playId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              playType_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 16: {
 
               isOpen_ = input.readBool();
               break;
             }
+            case 32: {
+
+              ePKPFBPBEDC_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              cMKGMEHCNAI_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              entryId_ = input.readUInt32();
+              playType_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,48 +155,64 @@ public final class ScenePlayInfoOuterClass {
               emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.class, emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.Builder.class);
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 1;
-    private int playId_;
+    public static final int CMKGMEHCNAI_FIELD_NUMBER = 9;
+    private int cMKGMEHCNAI_;
     /**
-     * <code>uint32 play_id = 1;</code>
-     * @return The playId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 CMKGMEHCNAI = 9;</code>
+     * @return The cMKGMEHCNAI.
      */
     @java.lang.Override
-    public int getPlayId() {
-      return playId_;
+    public int getCMKGMEHCNAI() {
+      return cMKGMEHCNAI_;
     }
 
-    public static final int PLAY_TYPE_FIELD_NUMBER = 3;
-    private int playType_;
+    public static final int EPKPFBPBEDC_FIELD_NUMBER = 4;
+    private int ePKPFBPBEDC_;
     /**
-     * <code>uint32 play_type = 3;</code>
-     * @return The playType.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 EPKPFBPBEDC = 4;</code>
+     * @return The ePKPFBPBEDC.
      */
     @java.lang.Override
-    public int getPlayType() {
-      return playType_;
+    public int getEPKPFBPBEDC() {
+      return ePKPFBPBEDC_;
     }
 
-    public static final int ENTRY_ID_FIELD_NUMBER = 14;
-    private int entryId_;
-    /**
-     * <code>uint32 entry_id = 14;</code>
-     * @return The entryId.
-     */
-    @java.lang.Override
-    public int getEntryId() {
-      return entryId_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 5;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int PLAY_TYPE_FIELD_NUMBER = 14;
+    private int playType_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 play_type = 14;</code>
+     * @return The playType.
+     */
+    @java.lang.Override
+    public int getPlayType() {
+      return playType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class ScenePlayInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playId_ != 0) {
-        output.writeUInt32(1, playId_);
+      if (isOpen_ != false) {
+        output.writeBool(2, isOpen_);
+      }
+      if (ePKPFBPBEDC_ != 0) {
+        output.writeUInt32(4, ePKPFBPBEDC_);
+      }
+      if (cMKGMEHCNAI_ != 0) {
+        output.writeUInt32(9, cMKGMEHCNAI_);
       }
       if (playType_ != 0) {
-        output.writeUInt32(3, playType_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(5, isOpen_);
-      }
-      if (entryId_ != 0) {
-        output.writeUInt32(14, entryId_);
+        output.writeUInt32(14, playType_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class ScenePlayInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playId_ != 0) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playId_);
+          .computeBoolSize(2, isOpen_);
+      }
+      if (ePKPFBPBEDC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, ePKPFBPBEDC_);
+      }
+      if (cMKGMEHCNAI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, cMKGMEHCNAI_);
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playType_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOpen_);
-      }
-      if (entryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, entryId_);
+          .computeUInt32Size(14, playType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +281,14 @@ public final class ScenePlayInfoOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo other = (emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo) obj;
 
-      if (getPlayId()
-          != other.getPlayId()) return false;
-      if (getPlayType()
-          != other.getPlayType()) return false;
-      if (getEntryId()
-          != other.getEntryId()) return false;
+      if (getCMKGMEHCNAI()
+          != other.getCMKGMEHCNAI()) return false;
+      if (getEPKPFBPBEDC()
+          != other.getEPKPFBPBEDC()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getPlayType()
+          != other.getPlayType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,15 +300,15 @@ public final class ScenePlayInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayId();
-      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayType();
-      hash = (37 * hash) + ENTRY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntryId();
+      hash = (37 * hash) + CMKGMEHCNAI_FIELD_NUMBER;
+      hash = (53 * hash) + getCMKGMEHCNAI();
+      hash = (37 * hash) + EPKPFBPBEDC_FIELD_NUMBER;
+      hash = (53 * hash) + getEPKPFBPBEDC();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,10 +405,6 @@ public final class ScenePlayInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MGHLAJDMHHO
-     * </pre>
-     *
      * Protobuf type {@code ScenePlayInfo}
      */
     public static final class Builder extends
@@ -418,13 +442,13 @@ public final class ScenePlayInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playId_ = 0;
+        cMKGMEHCNAI_ = 0;
 
-        playType_ = 0;
-
-        entryId_ = 0;
+        ePKPFBPBEDC_ = 0;
 
         isOpen_ = false;
+
+        playType_ = 0;
 
         return this;
       }
@@ -452,10 +476,10 @@ public final class ScenePlayInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo buildPartial() {
         emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo result = new emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo(this);
-        result.playId_ = playId_;
-        result.playType_ = playType_;
-        result.entryId_ = entryId_;
+        result.cMKGMEHCNAI_ = cMKGMEHCNAI_;
+        result.ePKPFBPBEDC_ = ePKPFBPBEDC_;
         result.isOpen_ = isOpen_;
+        result.playType_ = playType_;
         onBuilt();
         return result;
       }
@@ -504,17 +528,17 @@ public final class ScenePlayInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo other) {
         if (other == emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.getDefaultInstance()) return this;
-        if (other.getPlayId() != 0) {
-          setPlayId(other.getPlayId());
+        if (other.getCMKGMEHCNAI() != 0) {
+          setCMKGMEHCNAI(other.getCMKGMEHCNAI());
         }
-        if (other.getPlayType() != 0) {
-          setPlayType(other.getPlayType());
-        }
-        if (other.getEntryId() != 0) {
-          setEntryId(other.getEntryId());
+        if (other.getEPKPFBPBEDC() != 0) {
+          setEPKPFBPBEDC(other.getEPKPFBPBEDC());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getPlayType() != 0) {
+          setPlayType(other.getPlayType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,102 +569,99 @@ public final class ScenePlayInfoOuterClass {
         return this;
       }
 
-      private int playId_ ;
+      private int cMKGMEHCNAI_ ;
       /**
-       * <code>uint32 play_id = 1;</code>
-       * @return The playId.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CMKGMEHCNAI = 9;</code>
+       * @return The cMKGMEHCNAI.
        */
       @java.lang.Override
-      public int getPlayId() {
-        return playId_;
+      public int getCMKGMEHCNAI() {
+        return cMKGMEHCNAI_;
       }
       /**
-       * <code>uint32 play_id = 1;</code>
-       * @param value The playId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CMKGMEHCNAI = 9;</code>
+       * @param value The cMKGMEHCNAI to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayId(int value) {
+      public Builder setCMKGMEHCNAI(int value) {
         
-        playId_ = value;
+        cMKGMEHCNAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CMKGMEHCNAI = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlayId() {
+      public Builder clearCMKGMEHCNAI() {
         
-        playId_ = 0;
+        cMKGMEHCNAI_ = 0;
         onChanged();
         return this;
       }
 
-      private int playType_ ;
+      private int ePKPFBPBEDC_ ;
       /**
-       * <code>uint32 play_type = 3;</code>
-       * @return The playType.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 EPKPFBPBEDC = 4;</code>
+       * @return The ePKPFBPBEDC.
        */
       @java.lang.Override
-      public int getPlayType() {
-        return playType_;
+      public int getEPKPFBPBEDC() {
+        return ePKPFBPBEDC_;
       }
       /**
-       * <code>uint32 play_type = 3;</code>
-       * @param value The playType to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 EPKPFBPBEDC = 4;</code>
+       * @param value The ePKPFBPBEDC to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayType(int value) {
+      public Builder setEPKPFBPBEDC(int value) {
         
-        playType_ = value;
+        ePKPFBPBEDC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_type = 3;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 EPKPFBPBEDC = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlayType() {
+      public Builder clearEPKPFBPBEDC() {
         
-        playType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entryId_ ;
-      /**
-       * <code>uint32 entry_id = 14;</code>
-       * @return The entryId.
-       */
-      @java.lang.Override
-      public int getEntryId() {
-        return entryId_;
-      }
-      /**
-       * <code>uint32 entry_id = 14;</code>
-       * @param value The entryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntryId(int value) {
-        
-        entryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entry_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntryId() {
-        
-        entryId_ = 0;
+        ePKPFBPBEDC_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -648,7 +669,11 @@ public final class ScenePlayInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -659,12 +684,59 @@ public final class ScenePlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int playType_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 play_type = 14;</code>
+       * @return The playType.
+       */
+      @java.lang.Override
+      public int getPlayType() {
+        return playType_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 play_type = 14;</code>
+       * @param value The playType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayType(int value) {
+        
+        playType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 play_type = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayType() {
+        
+        playType_ = 0;
         onChanged();
         return this;
       }
@@ -735,10 +807,10 @@ public final class ScenePlayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ScenePlayInfo.proto\"V\n\rScenePlayInfo\022\017" +
-      "\n\007play_id\030\001 \001(\r\022\021\n\tplay_type\030\003 \001(\r\022\020\n\010en" +
-      "try_id\030\016 \001(\r\022\017\n\007is_open\030\005 \001(\010B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\023ScenePlayInfo.proto\"]\n\rScenePlayInfo\022\023" +
+      "\n\013CMKGMEHCNAI\030\t \001(\r\022\023\n\013EPKPFBPBEDC\030\004 \001(\r" +
+      "\022\017\n\007is_open\030\002 \001(\010\022\021\n\tplay_type\030\016 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -749,7 +821,7 @@ public final class ScenePlayInfoOuterClass {
     internal_static_ScenePlayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayInfo_descriptor,
-        new java.lang.String[] { "PlayId", "PlayType", "EntryId", "IsOpen", });
+        new java.lang.String[] { "CMKGMEHCNAI", "EPKPFBPBEDC", "IsOpen", "PlayType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

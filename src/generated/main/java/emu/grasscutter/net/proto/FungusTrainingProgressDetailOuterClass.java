@@ -19,104 +19,180 @@ public final class FungusTrainingProgressDetailOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> 
-        getMonsterPoolPreviewListList();
+    java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> 
+        getPOCALFGPJHKList();
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
-    emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail getMonsterPoolPreviewList(int index);
+    emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD getPOCALFGPJHK(int index);
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
-    int getMonsterPoolPreviewListCount();
+    int getPOCALFGPJHKCount();
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder> 
-        getMonsterPoolPreviewListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder> 
+        getPOCALFGPJHKOrBuilderList();
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
-    emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder getMonsterPoolPreviewListOrBuilder(
+    emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder getPOCALFGPJHKOrBuilder(
         int index);
 
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @return A list containing the lNBEFFIKDFA.
+     */
+    java.util.List<java.lang.Integer> getLNBEFFIKDFAList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @return The count of lNBEFFIKDFA.
+     */
+    int getLNBEFFIKDFACount();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @param index The index of the element to return.
+     * @return The lNBEFFIKDFA at the given index.
+     */
+    int getLNBEFFIKDFA(int index);
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @return A list containing the hICHGMNIJPJ.
+     */
+    java.util.List<java.lang.Integer> getHICHGMNIJPJList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @return The count of hICHGMNIJPJ.
+     */
+    int getHICHGMNIJPJCount();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @param index The index of the element to return.
+     * @return The hICHGMNIJPJ at the given index.
+     */
+    int getHICHGMNIJPJ(int index);
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> 
-        getMonsterDetailListList();
+        getMGOMAAHELGEList();
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
-    emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMonsterDetailList(int index);
+    emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMGOMAAHELGE(int index);
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
-    int getMonsterDetailListCount();
+    int getMGOMAAHELGECount();
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
-        getMonsterDetailListOrBuilderList();
+        getMGOMAAHELGEOrBuilderList();
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
-    emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMonsterDetailListOrBuilder(
+    emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMGOMAAHELGEOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @return A list containing the cDFFDNANJDA.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 NMCDLGCBGKJ = 11;</code>
+     * @return The nMCDLGCBGKJ.
      */
-    java.util.List<java.lang.Integer> getCDFFDNANJDAList();
-    /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @return The count of cDFFDNANJDA.
-     */
-    int getCDFFDNANJDACount();
-    /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @param index The index of the element to return.
-     * @return The cDFFDNANJDA at the given index.
-     */
-    int getCDFFDNANJDA(int index);
+    int getNMCDLGCBGKJ();
 
     /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @return A list containing the bNFFMBHMDHL.
-     */
-    java.util.List<java.lang.Integer> getBNFFMBHMDHLList();
-    /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @return The count of bNFFMBHMDHL.
-     */
-    int getBNFFMBHMDHLCount();
-    /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @param index The index of the element to return.
-     * @return The bNFFMBHMDHL at the given index.
-     */
-    int getBNFFMBHMDHL(int index);
-
-    /**
-     * <code>uint32 total_used_time = 7;</code>
-     * @return The totalUsedTime.
-     */
-    int getTotalUsedTime();
-
-    /**
-     * <code>uint32 cur_round = 13;</code>
-     * @return The curRound.
-     */
-    int getCurRound();
-
-    /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 13;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
+
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 OCHFKGHDDNG = 14;</code>
+     * @return The oCHFKGHDDNG.
+     */
+    int getOCHFKGHDDNG();
   }
   /**
    * Protobuf type {@code FungusTrainingProgressDetail}
@@ -131,10 +207,10 @@ public final class FungusTrainingProgressDetailOuterClass {
       super(builder);
     }
     private FungusTrainingProgressDetail() {
-      monsterPoolPreviewList_ = java.util.Collections.emptyList();
-      monsterDetailList_ = java.util.Collections.emptyList();
-      cDFFDNANJDA_ = emptyIntList();
-      bNFFMBHMDHL_ = emptyIntList();
+      pOCALFGPJHK_ = java.util.Collections.emptyList();
+      lNBEFFIKDFA_ = emptyIntList();
+      hICHGMNIJPJ_ = emptyIntList();
+      mGOMAAHELGE_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -168,79 +244,79 @@ public final class FungusTrainingProgressDetailOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                bNFFMBHMDHL_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                pOCALFGPJHK_ = new java.util.ArrayList<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              bNFFMBHMDHL_.addInt(input.readUInt32());
+              pOCALFGPJHK_.add(
+                  input.readMessage(emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.parser(), extensionRegistry));
               break;
             }
-            case 34: {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                lNBEFFIKDFA_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              lNBEFFIKDFA_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                bNFFMBHMDHL_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                lNBEFFIKDFA_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                bNFFMBHMDHL_.addInt(input.readUInt32());
+                lNBEFFIKDFA_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 56: {
-
-              totalUsedTime_ = input.readUInt32();
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                mGOMAAHELGE_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              mGOMAAHELGE_.add(
+                  input.readMessage(emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.parser(), extensionRegistry));
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                monsterPoolPreviewList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail>();
-                mutable_bitField0_ |= 0x00000001;
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                hICHGMNIJPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
-              monsterPoolPreviewList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.parser(), extensionRegistry));
+              hICHGMNIJPJ_.addInt(input.readUInt32());
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                monsterDetailList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail>();
-                mutable_bitField0_ |= 0x00000002;
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                hICHGMNIJPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
               }
-              monsterDetailList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.parser(), extensionRegistry));
+              while (input.getBytesUntilLimit() > 0) {
+                hICHGMNIJPJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 88: {
+
+              nMCDLGCBGKJ_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              curRound_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             case 112: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                cDFFDNANJDA_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              cDFFDNANJDA_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                cDFFDNANJDA_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                cDFFDNANJDA_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+
+              oCHFKGHDDNG_ = input.readUInt32();
               break;
             }
             default: {
@@ -258,17 +334,17 @@ public final class FungusTrainingProgressDetailOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          bNFFMBHMDHL_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          monsterPoolPreviewList_ = java.util.Collections.unmodifiableList(monsterPoolPreviewList_);
+          pOCALFGPJHK_ = java.util.Collections.unmodifiableList(pOCALFGPJHK_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          monsterDetailList_ = java.util.Collections.unmodifiableList(monsterDetailList_);
+          lNBEFFIKDFA_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          mGOMAAHELGE_ = java.util.Collections.unmodifiableList(mGOMAAHELGE_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          cDFFDNANJDA_.makeImmutable(); // C
+          hICHGMNIJPJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -287,173 +363,249 @@ public final class FungusTrainingProgressDetailOuterClass {
               emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.class, emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder.class);
     }
 
-    public static final int MONSTER_POOL_PREVIEW_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> monsterPoolPreviewList_;
+    public static final int POCALFGPJHK_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> pOCALFGPJHK_;
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> getMonsterPoolPreviewListList() {
-      return monsterPoolPreviewList_;
+    public java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> getPOCALFGPJHKList() {
+      return pOCALFGPJHK_;
     }
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder> 
-        getMonsterPoolPreviewListOrBuilderList() {
-      return monsterPoolPreviewList_;
+    public java.util.List<? extends emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder> 
+        getPOCALFGPJHKOrBuilderList() {
+      return pOCALFGPJHK_;
     }
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
     @java.lang.Override
-    public int getMonsterPoolPreviewListCount() {
-      return monsterPoolPreviewList_.size();
+    public int getPOCALFGPJHKCount() {
+      return pOCALFGPJHK_.size();
     }
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail getMonsterPoolPreviewList(int index) {
-      return monsterPoolPreviewList_.get(index);
+    public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD getPOCALFGPJHK(int index) {
+      return pOCALFGPJHK_.get(index);
     }
     /**
-     * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder getMonsterPoolPreviewListOrBuilder(
+    public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder getPOCALFGPJHKOrBuilder(
         int index) {
-      return monsterPoolPreviewList_.get(index);
+      return pOCALFGPJHK_.get(index);
     }
 
-    public static final int MONSTER_DETAIL_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> monsterDetailList_;
+    public static final int LNBEFFIKDFA_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList lNBEFFIKDFA_;
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @return A list containing the lNBEFFIKDFA.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> getMonsterDetailListList() {
-      return monsterDetailList_;
+    public java.util.List<java.lang.Integer>
+        getLNBEFFIKDFAList() {
+      return lNBEFFIKDFA_;
     }
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @return The count of lNBEFFIKDFA.
+     */
+    public int getLNBEFFIKDFACount() {
+      return lNBEFFIKDFA_.size();
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+     * @param index The index of the element to return.
+     * @return The lNBEFFIKDFA at the given index.
+     */
+    public int getLNBEFFIKDFA(int index) {
+      return lNBEFFIKDFA_.getInt(index);
+    }
+    private int lNBEFFIKDFAMemoizedSerializedSize = -1;
+
+    public static final int HICHGMNIJPJ_FIELD_NUMBER = 10;
+    private com.google.protobuf.Internal.IntList hICHGMNIJPJ_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @return A list containing the hICHGMNIJPJ.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getHICHGMNIJPJList() {
+      return hICHGMNIJPJ_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @return The count of hICHGMNIJPJ.
+     */
+    public int getHICHGMNIJPJCount() {
+      return hICHGMNIJPJ_.size();
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+     * @param index The index of the element to return.
+     * @return The hICHGMNIJPJ at the given index.
+     */
+    public int getHICHGMNIJPJ(int index) {
+      return hICHGMNIJPJ_.getInt(index);
+    }
+    private int hICHGMNIJPJMemoizedSerializedSize = -1;
+
+    public static final int MGOMAAHELGE_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> mGOMAAHELGE_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> getMGOMAAHELGEList() {
+      return mGOMAAHELGE_;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
-        getMonsterDetailListOrBuilderList() {
-      return monsterDetailList_;
+        getMGOMAAHELGEOrBuilderList() {
+      return mGOMAAHELGE_;
     }
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     @java.lang.Override
-    public int getMonsterDetailListCount() {
-      return monsterDetailList_.size();
+    public int getMGOMAAHELGECount() {
+      return mGOMAAHELGE_.size();
     }
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMonsterDetailList(int index) {
-      return monsterDetailList_.get(index);
+    public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMGOMAAHELGE(int index) {
+      return mGOMAAHELGE_.get(index);
     }
     /**
-     * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMonsterDetailListOrBuilder(
+    public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMGOMAAHELGEOrBuilder(
         int index) {
-      return monsterDetailList_.get(index);
+      return mGOMAAHELGE_.get(index);
     }
 
-    public static final int CDFFDNANJDA_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.IntList cDFFDNANJDA_;
+    public static final int NMCDLGCBGKJ_FIELD_NUMBER = 11;
+    private int nMCDLGCBGKJ_;
     /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @return A list containing the cDFFDNANJDA.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 NMCDLGCBGKJ = 11;</code>
+     * @return The nMCDLGCBGKJ.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getCDFFDNANJDAList() {
-      return cDFFDNANJDA_;
-    }
-    /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @return The count of cDFFDNANJDA.
-     */
-    public int getCDFFDNANJDACount() {
-      return cDFFDNANJDA_.size();
-    }
-    /**
-     * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-     * @param index The index of the element to return.
-     * @return The cDFFDNANJDA at the given index.
-     */
-    public int getCDFFDNANJDA(int index) {
-      return cDFFDNANJDA_.getInt(index);
-    }
-    private int cDFFDNANJDAMemoizedSerializedSize = -1;
-
-    public static final int BNFFMBHMDHL_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList bNFFMBHMDHL_;
-    /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @return A list containing the bNFFMBHMDHL.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBNFFMBHMDHLList() {
-      return bNFFMBHMDHL_;
-    }
-    /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @return The count of bNFFMBHMDHL.
-     */
-    public int getBNFFMBHMDHLCount() {
-      return bNFFMBHMDHL_.size();
-    }
-    /**
-     * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-     * @param index The index of the element to return.
-     * @return The bNFFMBHMDHL at the given index.
-     */
-    public int getBNFFMBHMDHL(int index) {
-      return bNFFMBHMDHL_.getInt(index);
-    }
-    private int bNFFMBHMDHLMemoizedSerializedSize = -1;
-
-    public static final int TOTAL_USED_TIME_FIELD_NUMBER = 7;
-    private int totalUsedTime_;
-    /**
-     * <code>uint32 total_used_time = 7;</code>
-     * @return The totalUsedTime.
-     */
-    @java.lang.Override
-    public int getTotalUsedTime() {
-      return totalUsedTime_;
+    public int getNMCDLGCBGKJ() {
+      return nMCDLGCBGKJ_;
     }
 
-    public static final int CUR_ROUND_FIELD_NUMBER = 13;
-    private int curRound_;
-    /**
-     * <code>uint32 cur_round = 13;</code>
-     * @return The curRound.
-     */
-    @java.lang.Override
-    public int getCurRound() {
-      return curRound_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 2;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 13;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 13;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
     public int getDungeonId() {
       return dungeonId_;
+    }
+
+    public static final int OCHFKGHDDNG_FIELD_NUMBER = 14;
+    private int oCHFKGHDDNG_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 OCHFKGHDDNG = 14;</code>
+     * @return The oCHFKGHDDNG.
+     */
+    @java.lang.Override
+    public int getOCHFKGHDDNG() {
+      return oCHFKGHDDNG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -471,34 +623,34 @@ public final class FungusTrainingProgressDetailOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      for (int i = 0; i < pOCALFGPJHK_.size(); i++) {
+        output.writeMessage(2, pOCALFGPJHK_.get(i));
+      }
+      if (getLNBEFFIKDFAList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(lNBEFFIKDFAMemoizedSerializedSize);
+      }
+      for (int i = 0; i < lNBEFFIKDFA_.size(); i++) {
+        output.writeUInt32NoTag(lNBEFFIKDFA_.getInt(i));
+      }
+      for (int i = 0; i < mGOMAAHELGE_.size(); i++) {
+        output.writeMessage(6, mGOMAAHELGE_.get(i));
+      }
+      if (getHICHGMNIJPJList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(hICHGMNIJPJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < hICHGMNIJPJ_.size(); i++) {
+        output.writeUInt32NoTag(hICHGMNIJPJ_.getInt(i));
+      }
+      if (nMCDLGCBGKJ_ != 0) {
+        output.writeUInt32(11, nMCDLGCBGKJ_);
+      }
       if (dungeonId_ != 0) {
-        output.writeUInt32(2, dungeonId_);
+        output.writeUInt32(13, dungeonId_);
       }
-      if (getBNFFMBHMDHLList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(bNFFMBHMDHLMemoizedSerializedSize);
-      }
-      for (int i = 0; i < bNFFMBHMDHL_.size(); i++) {
-        output.writeUInt32NoTag(bNFFMBHMDHL_.getInt(i));
-      }
-      if (totalUsedTime_ != 0) {
-        output.writeUInt32(7, totalUsedTime_);
-      }
-      for (int i = 0; i < monsterPoolPreviewList_.size(); i++) {
-        output.writeMessage(8, monsterPoolPreviewList_.get(i));
-      }
-      for (int i = 0; i < monsterDetailList_.size(); i++) {
-        output.writeMessage(10, monsterDetailList_.get(i));
-      }
-      if (curRound_ != 0) {
-        output.writeUInt32(13, curRound_);
-      }
-      if (getCDFFDNANJDAList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(cDFFDNANJDAMemoizedSerializedSize);
-      }
-      for (int i = 0; i < cDFFDNANJDA_.size(); i++) {
-        output.writeUInt32NoTag(cDFFDNANJDA_.getInt(i));
+      if (oCHFKGHDDNG_ != 0) {
+        output.writeUInt32(14, oCHFKGHDDNG_);
       }
       unknownFields.writeTo(output);
     }
@@ -509,53 +661,53 @@ public final class FungusTrainingProgressDetailOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < pOCALFGPJHK_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, pOCALFGPJHK_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < lNBEFFIKDFA_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(lNBEFFIKDFA_.getInt(i));
+        }
+        size += dataSize;
+        if (!getLNBEFFIKDFAList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        lNBEFFIKDFAMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < mGOMAAHELGE_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, mGOMAAHELGE_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < hICHGMNIJPJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(hICHGMNIJPJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getHICHGMNIJPJList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        hICHGMNIJPJMemoizedSerializedSize = dataSize;
+      }
+      if (nMCDLGCBGKJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, nMCDLGCBGKJ_);
+      }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dungeonId_);
+          .computeUInt32Size(13, dungeonId_);
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < bNFFMBHMDHL_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bNFFMBHMDHL_.getInt(i));
-        }
-        size += dataSize;
-        if (!getBNFFMBHMDHLList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        bNFFMBHMDHLMemoizedSerializedSize = dataSize;
-      }
-      if (totalUsedTime_ != 0) {
+      if (oCHFKGHDDNG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, totalUsedTime_);
-      }
-      for (int i = 0; i < monsterPoolPreviewList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, monsterPoolPreviewList_.get(i));
-      }
-      for (int i = 0; i < monsterDetailList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, monsterDetailList_.get(i));
-      }
-      if (curRound_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, curRound_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < cDFFDNANJDA_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(cDFFDNANJDA_.getInt(i));
-        }
-        size += dataSize;
-        if (!getCDFFDNANJDAList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        cDFFDNANJDAMemoizedSerializedSize = dataSize;
+          .computeUInt32Size(14, oCHFKGHDDNG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -572,20 +724,20 @@ public final class FungusTrainingProgressDetailOuterClass {
       }
       emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail other = (emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail) obj;
 
-      if (!getMonsterPoolPreviewListList()
-          .equals(other.getMonsterPoolPreviewListList())) return false;
-      if (!getMonsterDetailListList()
-          .equals(other.getMonsterDetailListList())) return false;
-      if (!getCDFFDNANJDAList()
-          .equals(other.getCDFFDNANJDAList())) return false;
-      if (!getBNFFMBHMDHLList()
-          .equals(other.getBNFFMBHMDHLList())) return false;
-      if (getTotalUsedTime()
-          != other.getTotalUsedTime()) return false;
-      if (getCurRound()
-          != other.getCurRound()) return false;
+      if (!getPOCALFGPJHKList()
+          .equals(other.getPOCALFGPJHKList())) return false;
+      if (!getLNBEFFIKDFAList()
+          .equals(other.getLNBEFFIKDFAList())) return false;
+      if (!getHICHGMNIJPJList()
+          .equals(other.getHICHGMNIJPJList())) return false;
+      if (!getMGOMAAHELGEList()
+          .equals(other.getMGOMAAHELGEList())) return false;
+      if (getNMCDLGCBGKJ()
+          != other.getNMCDLGCBGKJ()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getOCHFKGHDDNG()
+          != other.getOCHFKGHDDNG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -597,28 +749,28 @@ public final class FungusTrainingProgressDetailOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getMonsterPoolPreviewListCount() > 0) {
-        hash = (37 * hash) + MONSTER_POOL_PREVIEW_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getMonsterPoolPreviewListList().hashCode();
+      if (getPOCALFGPJHKCount() > 0) {
+        hash = (37 * hash) + POCALFGPJHK_FIELD_NUMBER;
+        hash = (53 * hash) + getPOCALFGPJHKList().hashCode();
       }
-      if (getMonsterDetailListCount() > 0) {
-        hash = (37 * hash) + MONSTER_DETAIL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getMonsterDetailListList().hashCode();
+      if (getLNBEFFIKDFACount() > 0) {
+        hash = (37 * hash) + LNBEFFIKDFA_FIELD_NUMBER;
+        hash = (53 * hash) + getLNBEFFIKDFAList().hashCode();
       }
-      if (getCDFFDNANJDACount() > 0) {
-        hash = (37 * hash) + CDFFDNANJDA_FIELD_NUMBER;
-        hash = (53 * hash) + getCDFFDNANJDAList().hashCode();
+      if (getHICHGMNIJPJCount() > 0) {
+        hash = (37 * hash) + HICHGMNIJPJ_FIELD_NUMBER;
+        hash = (53 * hash) + getHICHGMNIJPJList().hashCode();
       }
-      if (getBNFFMBHMDHLCount() > 0) {
-        hash = (37 * hash) + BNFFMBHMDHL_FIELD_NUMBER;
-        hash = (53 * hash) + getBNFFMBHMDHLList().hashCode();
+      if (getMGOMAAHELGECount() > 0) {
+        hash = (37 * hash) + MGOMAAHELGE_FIELD_NUMBER;
+        hash = (53 * hash) + getMGOMAAHELGEList().hashCode();
       }
-      hash = (37 * hash) + TOTAL_USED_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalUsedTime();
-      hash = (37 * hash) + CUR_ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getCurRound();
+      hash = (37 * hash) + NMCDLGCBGKJ_FIELD_NUMBER;
+      hash = (53 * hash) + getNMCDLGCBGKJ();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + OCHFKGHDDNG_FIELD_NUMBER;
+      hash = (53 * hash) + getOCHFKGHDDNG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -747,34 +899,34 @@ public final class FungusTrainingProgressDetailOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getMonsterPoolPreviewListFieldBuilder();
-          getMonsterDetailListFieldBuilder();
+          getPOCALFGPJHKFieldBuilder();
+          getMGOMAAHELGEFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (monsterPoolPreviewListBuilder_ == null) {
-          monsterPoolPreviewList_ = java.util.Collections.emptyList();
+        if (pOCALFGPJHKBuilder_ == null) {
+          pOCALFGPJHK_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          monsterPoolPreviewListBuilder_.clear();
+          pOCALFGPJHKBuilder_.clear();
         }
-        if (monsterDetailListBuilder_ == null) {
-          monsterDetailList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          monsterDetailListBuilder_.clear();
-        }
-        cDFFDNANJDA_ = emptyIntList();
+        lNBEFFIKDFA_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        hICHGMNIJPJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        bNFFMBHMDHL_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        totalUsedTime_ = 0;
-
-        curRound_ = 0;
+        if (mGOMAAHELGEBuilder_ == null) {
+          mGOMAAHELGE_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          mGOMAAHELGEBuilder_.clear();
+        }
+        nMCDLGCBGKJ_ = 0;
 
         dungeonId_ = 0;
+
+        oCHFKGHDDNG_ = 0;
 
         return this;
       }
@@ -803,37 +955,37 @@ public final class FungusTrainingProgressDetailOuterClass {
       public emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail buildPartial() {
         emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail result = new emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail(this);
         int from_bitField0_ = bitField0_;
-        if (monsterPoolPreviewListBuilder_ == null) {
+        if (pOCALFGPJHKBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            monsterPoolPreviewList_ = java.util.Collections.unmodifiableList(monsterPoolPreviewList_);
+            pOCALFGPJHK_ = java.util.Collections.unmodifiableList(pOCALFGPJHK_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.monsterPoolPreviewList_ = monsterPoolPreviewList_;
+          result.pOCALFGPJHK_ = pOCALFGPJHK_;
         } else {
-          result.monsterPoolPreviewList_ = monsterPoolPreviewListBuilder_.build();
+          result.pOCALFGPJHK_ = pOCALFGPJHKBuilder_.build();
         }
-        if (monsterDetailListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            monsterDetailList_ = java.util.Collections.unmodifiableList(monsterDetailList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.monsterDetailList_ = monsterDetailList_;
-        } else {
-          result.monsterDetailList_ = monsterDetailListBuilder_.build();
+        if (((bitField0_ & 0x00000002) != 0)) {
+          lNBEFFIKDFA_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
+        result.lNBEFFIKDFA_ = lNBEFFIKDFA_;
         if (((bitField0_ & 0x00000004) != 0)) {
-          cDFFDNANJDA_.makeImmutable();
+          hICHGMNIJPJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.cDFFDNANJDA_ = cDFFDNANJDA_;
-        if (((bitField0_ & 0x00000008) != 0)) {
-          bNFFMBHMDHL_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
+        result.hICHGMNIJPJ_ = hICHGMNIJPJ_;
+        if (mGOMAAHELGEBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            mGOMAAHELGE_ = java.util.Collections.unmodifiableList(mGOMAAHELGE_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.mGOMAAHELGE_ = mGOMAAHELGE_;
+        } else {
+          result.mGOMAAHELGE_ = mGOMAAHELGEBuilder_.build();
         }
-        result.bNFFMBHMDHL_ = bNFFMBHMDHL_;
-        result.totalUsedTime_ = totalUsedTime_;
-        result.curRound_ = curRound_;
+        result.nMCDLGCBGKJ_ = nMCDLGCBGKJ_;
         result.dungeonId_ = dungeonId_;
+        result.oCHFKGHDDNG_ = oCHFKGHDDNG_;
         onBuilt();
         return result;
       }
@@ -882,86 +1034,86 @@ public final class FungusTrainingProgressDetailOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail other) {
         if (other == emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.getDefaultInstance()) return this;
-        if (monsterPoolPreviewListBuilder_ == null) {
-          if (!other.monsterPoolPreviewList_.isEmpty()) {
-            if (monsterPoolPreviewList_.isEmpty()) {
-              monsterPoolPreviewList_ = other.monsterPoolPreviewList_;
+        if (pOCALFGPJHKBuilder_ == null) {
+          if (!other.pOCALFGPJHK_.isEmpty()) {
+            if (pOCALFGPJHK_.isEmpty()) {
+              pOCALFGPJHK_ = other.pOCALFGPJHK_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureMonsterPoolPreviewListIsMutable();
-              monsterPoolPreviewList_.addAll(other.monsterPoolPreviewList_);
+              ensurePOCALFGPJHKIsMutable();
+              pOCALFGPJHK_.addAll(other.pOCALFGPJHK_);
             }
             onChanged();
           }
         } else {
-          if (!other.monsterPoolPreviewList_.isEmpty()) {
-            if (monsterPoolPreviewListBuilder_.isEmpty()) {
-              monsterPoolPreviewListBuilder_.dispose();
-              monsterPoolPreviewListBuilder_ = null;
-              monsterPoolPreviewList_ = other.monsterPoolPreviewList_;
+          if (!other.pOCALFGPJHK_.isEmpty()) {
+            if (pOCALFGPJHKBuilder_.isEmpty()) {
+              pOCALFGPJHKBuilder_.dispose();
+              pOCALFGPJHKBuilder_ = null;
+              pOCALFGPJHK_ = other.pOCALFGPJHK_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              monsterPoolPreviewListBuilder_ = 
+              pOCALFGPJHKBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMonsterPoolPreviewListFieldBuilder() : null;
+                   getPOCALFGPJHKFieldBuilder() : null;
             } else {
-              monsterPoolPreviewListBuilder_.addAllMessages(other.monsterPoolPreviewList_);
+              pOCALFGPJHKBuilder_.addAllMessages(other.pOCALFGPJHK_);
             }
           }
         }
-        if (monsterDetailListBuilder_ == null) {
-          if (!other.monsterDetailList_.isEmpty()) {
-            if (monsterDetailList_.isEmpty()) {
-              monsterDetailList_ = other.monsterDetailList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureMonsterDetailListIsMutable();
-              monsterDetailList_.addAll(other.monsterDetailList_);
-            }
-            onChanged();
+        if (!other.lNBEFFIKDFA_.isEmpty()) {
+          if (lNBEFFIKDFA_.isEmpty()) {
+            lNBEFFIKDFA_ = other.lNBEFFIKDFA_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureLNBEFFIKDFAIsMutable();
+            lNBEFFIKDFA_.addAll(other.lNBEFFIKDFA_);
           }
-        } else {
-          if (!other.monsterDetailList_.isEmpty()) {
-            if (monsterDetailListBuilder_.isEmpty()) {
-              monsterDetailListBuilder_.dispose();
-              monsterDetailListBuilder_ = null;
-              monsterDetailList_ = other.monsterDetailList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              monsterDetailListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMonsterDetailListFieldBuilder() : null;
-            } else {
-              monsterDetailListBuilder_.addAllMessages(other.monsterDetailList_);
-            }
-          }
+          onChanged();
         }
-        if (!other.cDFFDNANJDA_.isEmpty()) {
-          if (cDFFDNANJDA_.isEmpty()) {
-            cDFFDNANJDA_ = other.cDFFDNANJDA_;
+        if (!other.hICHGMNIJPJ_.isEmpty()) {
+          if (hICHGMNIJPJ_.isEmpty()) {
+            hICHGMNIJPJ_ = other.hICHGMNIJPJ_;
             bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureCDFFDNANJDAIsMutable();
-            cDFFDNANJDA_.addAll(other.cDFFDNANJDA_);
+            ensureHICHGMNIJPJIsMutable();
+            hICHGMNIJPJ_.addAll(other.hICHGMNIJPJ_);
           }
           onChanged();
         }
-        if (!other.bNFFMBHMDHL_.isEmpty()) {
-          if (bNFFMBHMDHL_.isEmpty()) {
-            bNFFMBHMDHL_ = other.bNFFMBHMDHL_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureBNFFMBHMDHLIsMutable();
-            bNFFMBHMDHL_.addAll(other.bNFFMBHMDHL_);
+        if (mGOMAAHELGEBuilder_ == null) {
+          if (!other.mGOMAAHELGE_.isEmpty()) {
+            if (mGOMAAHELGE_.isEmpty()) {
+              mGOMAAHELGE_ = other.mGOMAAHELGE_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureMGOMAAHELGEIsMutable();
+              mGOMAAHELGE_.addAll(other.mGOMAAHELGE_);
+            }
+            onChanged();
           }
-          onChanged();
+        } else {
+          if (!other.mGOMAAHELGE_.isEmpty()) {
+            if (mGOMAAHELGEBuilder_.isEmpty()) {
+              mGOMAAHELGEBuilder_.dispose();
+              mGOMAAHELGEBuilder_ = null;
+              mGOMAAHELGE_ = other.mGOMAAHELGE_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              mGOMAAHELGEBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMGOMAAHELGEFieldBuilder() : null;
+            } else {
+              mGOMAAHELGEBuilder_.addAllMessages(other.mGOMAAHELGE_);
+            }
+          }
         }
-        if (other.getTotalUsedTime() != 0) {
-          setTotalUsedTime(other.getTotalUsedTime());
-        }
-        if (other.getCurRound() != 0) {
-          setCurRound(other.getCurRound());
+        if (other.getNMCDLGCBGKJ() != 0) {
+          setNMCDLGCBGKJ(other.getNMCDLGCBGKJ());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
+        }
+        if (other.getOCHFKGHDDNG() != 0) {
+          setOCHFKGHDDNG(other.getOCHFKGHDDNG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -993,709 +1145,894 @@ public final class FungusTrainingProgressDetailOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> monsterPoolPreviewList_ =
+      private java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> pOCALFGPJHK_ =
         java.util.Collections.emptyList();
-      private void ensureMonsterPoolPreviewListIsMutable() {
+      private void ensurePOCALFGPJHKIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          monsterPoolPreviewList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail>(monsterPoolPreviewList_);
+          pOCALFGPJHK_ = new java.util.ArrayList<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD>(pOCALFGPJHK_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder> monsterPoolPreviewListBuilder_;
+          emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder> pOCALFGPJHKBuilder_;
 
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> getMonsterPoolPreviewListList() {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(monsterPoolPreviewList_);
+      public java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> getPOCALFGPJHKList() {
+        if (pOCALFGPJHKBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(pOCALFGPJHK_);
         } else {
-          return monsterPoolPreviewListBuilder_.getMessageList();
+          return pOCALFGPJHKBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public int getMonsterPoolPreviewListCount() {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          return monsterPoolPreviewList_.size();
+      public int getPOCALFGPJHKCount() {
+        if (pOCALFGPJHKBuilder_ == null) {
+          return pOCALFGPJHK_.size();
         } else {
-          return monsterPoolPreviewListBuilder_.getCount();
+          return pOCALFGPJHKBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail getMonsterPoolPreviewList(int index) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          return monsterPoolPreviewList_.get(index);
+      public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD getPOCALFGPJHK(int index) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          return pOCALFGPJHK_.get(index);
         } else {
-          return monsterPoolPreviewListBuilder_.getMessage(index);
+          return pOCALFGPJHKBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder setMonsterPoolPreviewList(
-          int index, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail value) {
-        if (monsterPoolPreviewListBuilder_ == null) {
+      public Builder setPOCALFGPJHK(
+          int index, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD value) {
+        if (pOCALFGPJHKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.set(index, value);
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.set(index, value);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.setMessage(index, value);
+          pOCALFGPJHKBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder setMonsterPoolPreviewList(
-          int index, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder builderForValue) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.set(index, builderForValue.build());
+      public Builder setPOCALFGPJHK(
+          int index, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder builderForValue) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.set(index, builderForValue.build());
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.setMessage(index, builderForValue.build());
+          pOCALFGPJHKBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder addMonsterPoolPreviewList(emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail value) {
-        if (monsterPoolPreviewListBuilder_ == null) {
+      public Builder addPOCALFGPJHK(emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD value) {
+        if (pOCALFGPJHKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.add(value);
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.add(value);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.addMessage(value);
+          pOCALFGPJHKBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder addMonsterPoolPreviewList(
-          int index, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail value) {
-        if (monsterPoolPreviewListBuilder_ == null) {
+      public Builder addPOCALFGPJHK(
+          int index, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD value) {
+        if (pOCALFGPJHKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.add(index, value);
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.add(index, value);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.addMessage(index, value);
+          pOCALFGPJHKBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder addMonsterPoolPreviewList(
-          emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder builderForValue) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.add(builderForValue.build());
+      public Builder addPOCALFGPJHK(
+          emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder builderForValue) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.add(builderForValue.build());
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.addMessage(builderForValue.build());
+          pOCALFGPJHKBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder addMonsterPoolPreviewList(
-          int index, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder builderForValue) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.add(index, builderForValue.build());
+      public Builder addPOCALFGPJHK(
+          int index, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder builderForValue) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.add(index, builderForValue.build());
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.addMessage(index, builderForValue.build());
+          pOCALFGPJHKBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder addAllMonsterPoolPreviewList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail> values) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          ensureMonsterPoolPreviewListIsMutable();
+      public Builder addAllPOCALFGPJHK(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD> values) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          ensurePOCALFGPJHKIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, monsterPoolPreviewList_);
+              values, pOCALFGPJHK_);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.addAllMessages(values);
+          pOCALFGPJHKBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder clearMonsterPoolPreviewList() {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          monsterPoolPreviewList_ = java.util.Collections.emptyList();
+      public Builder clearPOCALFGPJHK() {
+        if (pOCALFGPJHKBuilder_ == null) {
+          pOCALFGPJHK_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.clear();
+          pOCALFGPJHKBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public Builder removeMonsterPoolPreviewList(int index) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          ensureMonsterPoolPreviewListIsMutable();
-          monsterPoolPreviewList_.remove(index);
+      public Builder removePOCALFGPJHK(int index) {
+        if (pOCALFGPJHKBuilder_ == null) {
+          ensurePOCALFGPJHKIsMutable();
+          pOCALFGPJHK_.remove(index);
           onChanged();
         } else {
-          monsterPoolPreviewListBuilder_.remove(index);
+          pOCALFGPJHKBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder getMonsterPoolPreviewListBuilder(
+      public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder getPOCALFGPJHKBuilder(
           int index) {
-        return getMonsterPoolPreviewListFieldBuilder().getBuilder(index);
+        return getPOCALFGPJHKFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder getMonsterPoolPreviewListOrBuilder(
+      public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder getPOCALFGPJHKOrBuilder(
           int index) {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          return monsterPoolPreviewList_.get(index);  } else {
-          return monsterPoolPreviewListBuilder_.getMessageOrBuilder(index);
+        if (pOCALFGPJHKBuilder_ == null) {
+          return pOCALFGPJHK_.get(index);  } else {
+          return pOCALFGPJHKBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder> 
-           getMonsterPoolPreviewListOrBuilderList() {
-        if (monsterPoolPreviewListBuilder_ != null) {
-          return monsterPoolPreviewListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder> 
+           getPOCALFGPJHKOrBuilderList() {
+        if (pOCALFGPJHKBuilder_ != null) {
+          return pOCALFGPJHKBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(monsterPoolPreviewList_);
+          return java.util.Collections.unmodifiableList(pOCALFGPJHK_);
         }
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder addMonsterPoolPreviewListBuilder() {
-        return getMonsterPoolPreviewListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.getDefaultInstance());
+      public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder addPOCALFGPJHKBuilder() {
+        return getPOCALFGPJHKFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.getDefaultInstance());
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder addMonsterPoolPreviewListBuilder(
+      public emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder addPOCALFGPJHKBuilder(
           int index) {
-        return getMonsterPoolPreviewListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.getDefaultInstance());
+        return getPOCALFGPJHKFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.getDefaultInstance());
       }
       /**
-       * <code>repeated .FungusTrainingPoolPreviewDetail monster_pool_preview_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LCBOIAIPKDD POCALFGPJHK = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder> 
-           getMonsterPoolPreviewListBuilderList() {
-        return getMonsterPoolPreviewListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder> 
+           getPOCALFGPJHKBuilderList() {
+        return getPOCALFGPJHKFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder> 
-          getMonsterPoolPreviewListFieldBuilder() {
-        if (monsterPoolPreviewListBuilder_ == null) {
-          monsterPoolPreviewListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetail.Builder, emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.FungusTrainingPoolPreviewDetailOrBuilder>(
-                  monsterPoolPreviewList_,
+          emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder> 
+          getPOCALFGPJHKFieldBuilder() {
+        if (pOCALFGPJHKBuilder_ == null) {
+          pOCALFGPJHKBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDD.Builder, emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.LCBOIAIPKDDOrBuilder>(
+                  pOCALFGPJHK_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          monsterPoolPreviewList_ = null;
+          pOCALFGPJHK_ = null;
         }
-        return monsterPoolPreviewListBuilder_;
+        return pOCALFGPJHKBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> monsterDetailList_ =
-        java.util.Collections.emptyList();
-      private void ensureMonsterDetailListIsMutable() {
+      private com.google.protobuf.Internal.IntList lNBEFFIKDFA_ = emptyIntList();
+      private void ensureLNBEFFIKDFAIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          monsterDetailList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail>(monsterDetailList_);
+          lNBEFFIKDFA_ = mutableCopy(lNBEFFIKDFA_);
           bitField0_ |= 0x00000002;
          }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> monsterDetailListBuilder_;
-
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @return A list containing the lNBEFFIKDFA.
        */
-      public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> getMonsterDetailListList() {
-        if (monsterDetailListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(monsterDetailList_);
-        } else {
-          return monsterDetailListBuilder_.getMessageList();
-        }
+      public java.util.List<java.lang.Integer>
+          getLNBEFFIKDFAList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(lNBEFFIKDFA_) : lNBEFFIKDFA_;
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @return The count of lNBEFFIKDFA.
        */
-      public int getMonsterDetailListCount() {
-        if (monsterDetailListBuilder_ == null) {
-          return monsterDetailList_.size();
-        } else {
-          return monsterDetailListBuilder_.getCount();
-        }
+      public int getLNBEFFIKDFACount() {
+        return lNBEFFIKDFA_.size();
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @param index The index of the element to return.
+       * @return The lNBEFFIKDFA at the given index.
        */
-      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMonsterDetailList(int index) {
-        if (monsterDetailListBuilder_ == null) {
-          return monsterDetailList_.get(index);
-        } else {
-          return monsterDetailListBuilder_.getMessage(index);
-        }
+      public int getLNBEFFIKDFA(int index) {
+        return lNBEFFIKDFA_.getInt(index);
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The lNBEFFIKDFA to set.
+       * @return This builder for chaining.
        */
-      public Builder setMonsterDetailList(
-          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
-        if (monsterDetailListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.set(index, value);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.setMessage(index, value);
-        }
+      public Builder setLNBEFFIKDFA(
+          int index, int value) {
+        ensureLNBEFFIKDFAIsMutable();
+        lNBEFFIKDFA_.setInt(index, value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @param value The lNBEFFIKDFA to add.
+       * @return This builder for chaining.
        */
-      public Builder setMonsterDetailList(
-          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
-        if (monsterDetailListBuilder_ == null) {
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder addLNBEFFIKDFA(int value) {
+        ensureLNBEFFIKDFAIsMutable();
+        lNBEFFIKDFA_.addInt(value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @param values The lNBEFFIKDFA to add.
+       * @return This builder for chaining.
        */
-      public Builder addMonsterDetailList(emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
-        if (monsterDetailListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.add(value);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.addMessage(value);
-        }
+      public Builder addAllLNBEFFIKDFA(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureLNBEFFIKDFAIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, lNBEFFIKDFA_);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 LNBEFFIKDFA = 3;</code>
+       * @return This builder for chaining.
        */
-      public Builder addMonsterDetailList(
-          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
-        if (monsterDetailListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.add(index, value);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.addMessage(index, value);
-        }
+      public Builder clearLNBEFFIKDFA() {
+        lNBEFFIKDFA_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public Builder addMonsterDetailList(
-          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
-        if (monsterDetailListBuilder_ == null) {
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public Builder addMonsterDetailList(
-          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
-        if (monsterDetailListBuilder_ == null) {
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public Builder addAllMonsterDetailList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> values) {
-        if (monsterDetailListBuilder_ == null) {
-          ensureMonsterDetailListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, monsterDetailList_);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public Builder clearMonsterDetailList() {
-        if (monsterDetailListBuilder_ == null) {
-          monsterDetailList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public Builder removeMonsterDetailList(int index) {
-        if (monsterDetailListBuilder_ == null) {
-          ensureMonsterDetailListIsMutable();
-          monsterDetailList_.remove(index);
-          onChanged();
-        } else {
-          monsterDetailListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder getMonsterDetailListBuilder(
-          int index) {
-        return getMonsterDetailListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMonsterDetailListOrBuilder(
-          int index) {
-        if (monsterDetailListBuilder_ == null) {
-          return monsterDetailList_.get(index);  } else {
-          return monsterDetailListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
-           getMonsterDetailListOrBuilderList() {
-        if (monsterDetailListBuilder_ != null) {
-          return monsterDetailListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(monsterDetailList_);
-        }
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder addMonsterDetailListBuilder() {
-        return getMonsterDetailListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder addMonsterDetailListBuilder(
-          int index) {
-        return getMonsterDetailListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FungusFighterMonsterDetail monster_detail_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder> 
-           getMonsterDetailListBuilderList() {
-        return getMonsterDetailListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
-          getMonsterDetailListFieldBuilder() {
-        if (monsterDetailListBuilder_ == null) {
-          monsterDetailListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder>(
-                  monsterDetailList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          monsterDetailList_ = null;
-        }
-        return monsterDetailListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList cDFFDNANJDA_ = emptyIntList();
-      private void ensureCDFFDNANJDAIsMutable() {
+      private com.google.protobuf.Internal.IntList hICHGMNIJPJ_ = emptyIntList();
+      private void ensureHICHGMNIJPJIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          cDFFDNANJDA_ = mutableCopy(cDFFDNANJDA_);
+          hICHGMNIJPJ_ = mutableCopy(hICHGMNIJPJ_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-       * @return A list containing the cDFFDNANJDA.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+       * @return A list containing the hICHGMNIJPJ.
        */
       public java.util.List<java.lang.Integer>
-          getCDFFDNANJDAList() {
+          getHICHGMNIJPJList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(cDFFDNANJDA_) : cDFFDNANJDA_;
+                 java.util.Collections.unmodifiableList(hICHGMNIJPJ_) : hICHGMNIJPJ_;
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-       * @return The count of cDFFDNANJDA.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+       * @return The count of hICHGMNIJPJ.
        */
-      public int getCDFFDNANJDACount() {
-        return cDFFDNANJDA_.size();
+      public int getHICHGMNIJPJCount() {
+        return hICHGMNIJPJ_.size();
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
        * @param index The index of the element to return.
-       * @return The cDFFDNANJDA at the given index.
+       * @return The hICHGMNIJPJ at the given index.
        */
-      public int getCDFFDNANJDA(int index) {
-        return cDFFDNANJDA_.getInt(index);
+      public int getHICHGMNIJPJ(int index) {
+        return hICHGMNIJPJ_.getInt(index);
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
        * @param index The index to set the value at.
-       * @param value The cDFFDNANJDA to set.
+       * @param value The hICHGMNIJPJ to set.
        * @return This builder for chaining.
        */
-      public Builder setCDFFDNANJDA(
+      public Builder setHICHGMNIJPJ(
           int index, int value) {
-        ensureCDFFDNANJDAIsMutable();
-        cDFFDNANJDA_.setInt(index, value);
+        ensureHICHGMNIJPJIsMutable();
+        hICHGMNIJPJ_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-       * @param value The cDFFDNANJDA to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+       * @param value The hICHGMNIJPJ to add.
        * @return This builder for chaining.
        */
-      public Builder addCDFFDNANJDA(int value) {
-        ensureCDFFDNANJDAIsMutable();
-        cDFFDNANJDA_.addInt(value);
+      public Builder addHICHGMNIJPJ(int value) {
+        ensureHICHGMNIJPJIsMutable();
+        hICHGMNIJPJ_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
-       * @param values The cDFFDNANJDA to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
+       * @param values The hICHGMNIJPJ to add.
        * @return This builder for chaining.
        */
-      public Builder addAllCDFFDNANJDA(
+      public Builder addAllHICHGMNIJPJ(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCDFFDNANJDAIsMutable();
+        ensureHICHGMNIJPJIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, cDFFDNANJDA_);
+            values, hICHGMNIJPJ_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 CDFFDNANJDA = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HICHGMNIJPJ = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCDFFDNANJDA() {
-        cDFFDNANJDA_ = emptyIntList();
+      public Builder clearHICHGMNIJPJ() {
+        hICHGMNIJPJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList bNFFMBHMDHL_ = emptyIntList();
-      private void ensureBNFFMBHMDHLIsMutable() {
+      private java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> mGOMAAHELGE_ =
+        java.util.Collections.emptyList();
+      private void ensureMGOMAAHELGEIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          bNFFMBHMDHL_ = mutableCopy(bNFFMBHMDHL_);
+          mGOMAAHELGE_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail>(mGOMAAHELGE_);
           bitField0_ |= 0x00000008;
          }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> mGOMAAHELGEBuilder_;
+
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @return A list containing the bNFFMBHMDHL.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public java.util.List<java.lang.Integer>
-          getBNFFMBHMDHLList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(bNFFMBHMDHL_) : bNFFMBHMDHL_;
+      public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> getMGOMAAHELGEList() {
+        if (mGOMAAHELGEBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(mGOMAAHELGE_);
+        } else {
+          return mGOMAAHELGEBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @return The count of bNFFMBHMDHL.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public int getBNFFMBHMDHLCount() {
-        return bNFFMBHMDHL_.size();
+      public int getMGOMAAHELGECount() {
+        if (mGOMAAHELGEBuilder_ == null) {
+          return mGOMAAHELGE_.size();
+        } else {
+          return mGOMAAHELGEBuilder_.getCount();
+        }
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @param index The index of the element to return.
-       * @return The bNFFMBHMDHL at the given index.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public int getBNFFMBHMDHL(int index) {
-        return bNFFMBHMDHL_.getInt(index);
+      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail getMGOMAAHELGE(int index) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          return mGOMAAHELGE_.get(index);
+        } else {
+          return mGOMAAHELGEBuilder_.getMessage(index);
+        }
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The bNFFMBHMDHL to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public Builder setBNFFMBHMDHL(
-          int index, int value) {
-        ensureBNFFMBHMDHLIsMutable();
-        bNFFMBHMDHL_.setInt(index, value);
-        onChanged();
+      public Builder setMGOMAAHELGE(
+          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.set(index, value);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @param value The bNFFMBHMDHL to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public Builder addBNFFMBHMDHL(int value) {
-        ensureBNFFMBHMDHLIsMutable();
-        bNFFMBHMDHL_.addInt(value);
-        onChanged();
+      public Builder setMGOMAAHELGE(
+          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @param values The bNFFMBHMDHL to add.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public Builder addAllBNFFMBHMDHL(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBNFFMBHMDHLIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bNFFMBHMDHL_);
-        onChanged();
+      public Builder addMGOMAAHELGE(emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.add(value);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.addMessage(value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 BNFFMBHMDHL = 4;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
        */
-      public Builder clearBNFFMBHMDHL() {
-        bNFFMBHMDHL_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
+      public Builder addMGOMAAHELGE(
+          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail value) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.add(index, value);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.addMessage(index, value);
+        }
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public Builder addMGOMAAHELGE(
+          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.add(builderForValue.build());
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public Builder addMGOMAAHELGE(
+          int index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder builderForValue) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public Builder addAllMGOMAAHELGE(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail> values) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          ensureMGOMAAHELGEIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, mGOMAAHELGE_);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public Builder clearMGOMAAHELGE() {
+        if (mGOMAAHELGEBuilder_ == null) {
+          mGOMAAHELGE_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public Builder removeMGOMAAHELGE(int index) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          ensureMGOMAAHELGEIsMutable();
+          mGOMAAHELGE_.remove(index);
+          onChanged();
+        } else {
+          mGOMAAHELGEBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder getMGOMAAHELGEBuilder(
+          int index) {
+        return getMGOMAAHELGEFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder getMGOMAAHELGEOrBuilder(
+          int index) {
+        if (mGOMAAHELGEBuilder_ == null) {
+          return mGOMAAHELGE_.get(index);  } else {
+          return mGOMAAHELGEBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
+           getMGOMAAHELGEOrBuilderList() {
+        if (mGOMAAHELGEBuilder_ != null) {
+          return mGOMAAHELGEBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(mGOMAAHELGE_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder addMGOMAAHELGEBuilder() {
+        return getMGOMAAHELGEFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder addMGOMAAHELGEBuilder(
+          int index) {
+        return getMGOMAAHELGEFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>repeated .FungusFighterMonsterDetail MGOMAAHELGE = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder> 
+           getMGOMAAHELGEBuilderList() {
+        return getMGOMAAHELGEFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder> 
+          getMGOMAAHELGEFieldBuilder() {
+        if (mGOMAAHELGEBuilder_ == null) {
+          mGOMAAHELGEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetailOrBuilder>(
+                  mGOMAAHELGE_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          mGOMAAHELGE_ = null;
+        }
+        return mGOMAAHELGEBuilder_;
       }
 
-      private int totalUsedTime_ ;
+      private int nMCDLGCBGKJ_ ;
       /**
-       * <code>uint32 total_used_time = 7;</code>
-       * @return The totalUsedTime.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 NMCDLGCBGKJ = 11;</code>
+       * @return The nMCDLGCBGKJ.
        */
       @java.lang.Override
-      public int getTotalUsedTime() {
-        return totalUsedTime_;
+      public int getNMCDLGCBGKJ() {
+        return nMCDLGCBGKJ_;
       }
       /**
-       * <code>uint32 total_used_time = 7;</code>
-       * @param value The totalUsedTime to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 NMCDLGCBGKJ = 11;</code>
+       * @param value The nMCDLGCBGKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalUsedTime(int value) {
+      public Builder setNMCDLGCBGKJ(int value) {
         
-        totalUsedTime_ = value;
+        nMCDLGCBGKJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_used_time = 7;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 NMCDLGCBGKJ = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalUsedTime() {
+      public Builder clearNMCDLGCBGKJ() {
         
-        totalUsedTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int curRound_ ;
-      /**
-       * <code>uint32 cur_round = 13;</code>
-       * @return The curRound.
-       */
-      @java.lang.Override
-      public int getCurRound() {
-        return curRound_;
-      }
-      /**
-       * <code>uint32 cur_round = 13;</code>
-       * @param value The curRound to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurRound(int value) {
-        
-        curRound_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_round = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurRound() {
-        
-        curRound_ = 0;
+        nMCDLGCBGKJ_ = 0;
         onChanged();
         return this;
       }
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 13;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -1703,7 +2040,11 @@ public final class FungusTrainingProgressDetailOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 13;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -1714,12 +2055,59 @@ public final class FungusTrainingProgressDetailOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oCHFKGHDDNG_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 OCHFKGHDDNG = 14;</code>
+       * @return The oCHFKGHDDNG.
+       */
+      @java.lang.Override
+      public int getOCHFKGHDDNG() {
+        return oCHFKGHDDNG_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 OCHFKGHDDNG = 14;</code>
+       * @param value The oCHFKGHDDNG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOCHFKGHDDNG(int value) {
+        
+        oCHFKGHDDNG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 OCHFKGHDDNG = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOCHFKGHDDNG() {
+        
+        oCHFKGHDDNG_ = 0;
         onChanged();
         return this;
       }
@@ -1790,32 +2178,30 @@ public final class FungusTrainingProgressDetailOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"FungusTrainingProgressDetail.proto\032%Fu" +
-      "ngusTrainingPoolPreviewDetail.proto\032 Fun" +
-      "gusFighterMonsterDetail.proto\"\207\002\n\034Fungus" +
-      "TrainingProgressDetail\022C\n\031monster_pool_p" +
-      "review_list\030\010 \003(\0132 .FungusTrainingPoolPr" +
-      "eviewDetail\0228\n\023monster_detail_list\030\n \003(\013" +
-      "2\033.FungusFighterMonsterDetail\022\023\n\013CDFFDNA" +
-      "NJDA\030\016 \003(\r\022\023\n\013BNFFMBHMDHL\030\004 \003(\r\022\027\n\017total" +
-      "_used_time\030\007 \001(\r\022\021\n\tcur_round\030\r \001(\r\022\022\n\nd" +
-      "ungeon_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\"FungusTrainingProgressDetail.proto\032 Fu" +
+      "ngusFighterMonsterDetail.proto\032\021LCBOIAIP" +
+      "KDD.proto\"\333\001\n\034FungusTrainingProgressDeta" +
+      "il\022!\n\013POCALFGPJHK\030\002 \003(\0132\014.LCBOIAIPKDD\022\023\n" +
+      "\013LNBEFFIKDFA\030\003 \003(\r\022\023\n\013HICHGMNIJPJ\030\n \003(\r\022" +
+      "0\n\013MGOMAAHELGE\030\006 \003(\0132\033.FungusFighterMons" +
+      "terDetail\022\023\n\013NMCDLGCBGKJ\030\013 \001(\r\022\022\n\ndungeo" +
+      "n_id\030\r \001(\r\022\023\n\013OCHFKGHDDNG\030\016 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.getDescriptor(),
         });
     internal_static_FungusTrainingProgressDetail_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FungusTrainingProgressDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusTrainingProgressDetail_descriptor,
-        new java.lang.String[] { "MonsterPoolPreviewList", "MonsterDetailList", "CDFFDNANJDA", "BNFFMBHMDHL", "TotalUsedTime", "CurRound", "DungeonId", });
-    emu.grasscutter.net.proto.FungusTrainingPoolPreviewDetailOuterClass.getDescriptor();
+        new java.lang.String[] { "POCALFGPJHK", "LNBEFFIKDFA", "HICHGMNIJPJ", "MGOMAAHELGE", "NMCDLGCBGKJ", "DungeonId", "OCHFKGHDDNG", });
     emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LCBOIAIPKDDOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

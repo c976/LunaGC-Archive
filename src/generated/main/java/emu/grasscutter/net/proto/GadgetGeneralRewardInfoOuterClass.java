@@ -19,31 +19,28 @@ public final class GadgetGeneralRewardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return Whether the itemParam field is set.
-     */
-    boolean hasItemParam();
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return The itemParam.
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam();
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder();
-
-    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return A list containing the remainUidList.
      */
     java.util.List<java.lang.Integer> getRemainUidListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return The count of remainUidList.
      */
     int getRemainUidListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
@@ -51,16 +48,28 @@ public final class GadgetGeneralRewardInfoOuterClass {
     int getRemainUidList(int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @return A list containing the qualifyUidList.
      */
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @return The count of qualifyUidList.
      */
     int getQualifyUidListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
@@ -68,16 +77,51 @@ public final class GadgetGeneralRewardInfoOuterClass {
     int getQualifyUidList(int index);
 
     /**
-     * <code>uint32 dead_time = 2;</code>
-     * @return The deadTime.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     * @return Whether the itemParam field is set.
      */
-    int getDeadTime();
+    boolean hasItemParam();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     * @return The itemParam.
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>uint32 resin = 1;</code>
      * @return The resin.
      */
     int getResin();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 dead_time = 2;</code>
+     * @return The deadTime.
+     */
+    int getDeadTime();
   }
   /**
    * Protobuf type {@code GadgetGeneralRewardInfo}
@@ -230,35 +274,13 @@ public final class GadgetGeneralRewardInfoOuterClass {
               emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.class, emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.Builder.class);
     }
 
-    public static final int ITEM_PARAM_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return Whether the itemParam field is set.
-     */
-    @java.lang.Override
-    public boolean hasItemParam() {
-      return itemParam_ != null;
-    }
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return The itemParam.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
-      return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-    }
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
-      return getItemParam();
-    }
-
     public static final int REMAIN_UID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList remainUidList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return A list containing the remainUidList.
      */
@@ -268,6 +290,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
       return remainUidList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return The count of remainUidList.
      */
@@ -275,6 +301,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
       return remainUidList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
@@ -287,6 +317,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
     public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @return A list containing the qualifyUidList.
      */
@@ -296,6 +330,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
       return qualifyUidList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @return The count of qualifyUidList.
      */
@@ -303,6 +341,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
       return qualifyUidList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
@@ -312,26 +354,72 @@ public final class GadgetGeneralRewardInfoOuterClass {
     }
     private int qualifyUidListMemoizedSerializedSize = -1;
 
-    public static final int DEAD_TIME_FIELD_NUMBER = 2;
-    private int deadTime_;
+    public static final int ITEM_PARAM_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
     /**
-     * <code>uint32 dead_time = 2;</code>
-     * @return The deadTime.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     * @return Whether the itemParam field is set.
      */
     @java.lang.Override
-    public int getDeadTime() {
-      return deadTime_;
+    public boolean hasItemParam() {
+      return itemParam_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     * @return The itemParam.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
+      return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.ItemParam item_param = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
+      return getItemParam();
     }
 
     public static final int RESIN_FIELD_NUMBER = 1;
     private int resin_;
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>uint32 resin = 1;</code>
      * @return The resin.
      */
     @java.lang.Override
     public int getResin() {
       return resin_;
+    }
+
+    public static final int DEAD_TIME_FIELD_NUMBER = 2;
+    private int deadTime_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 dead_time = 2;</code>
+     * @return The deadTime.
+     */
+    @java.lang.Override
+    public int getDeadTime() {
+      return deadTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -436,19 +524,19 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo other = (emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo) obj;
 
+      if (!getRemainUidListList()
+          .equals(other.getRemainUidListList())) return false;
+      if (!getQualifyUidListList()
+          .equals(other.getQualifyUidListList())) return false;
       if (hasItemParam() != other.hasItemParam()) return false;
       if (hasItemParam()) {
         if (!getItemParam()
             .equals(other.getItemParam())) return false;
       }
-      if (!getRemainUidListList()
-          .equals(other.getRemainUidListList())) return false;
-      if (!getQualifyUidListList()
-          .equals(other.getQualifyUidListList())) return false;
-      if (getDeadTime()
-          != other.getDeadTime()) return false;
       if (getResin()
           != other.getResin()) return false;
+      if (getDeadTime()
+          != other.getDeadTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,10 +548,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasItemParam()) {
-        hash = (37 * hash) + ITEM_PARAM_FIELD_NUMBER;
-        hash = (53 * hash) + getItemParam().hashCode();
-      }
       if (getRemainUidListCount() > 0) {
         hash = (37 * hash) + REMAIN_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRemainUidListList().hashCode();
@@ -472,10 +556,14 @@ public final class GadgetGeneralRewardInfoOuterClass {
         hash = (37 * hash) + QUALIFY_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getQualifyUidListList().hashCode();
       }
-      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getDeadTime();
+      if (hasItemParam()) {
+        hash = (37 * hash) + ITEM_PARAM_FIELD_NUMBER;
+        hash = (53 * hash) + getItemParam().hashCode();
+      }
       hash = (37 * hash) + RESIN_FIELD_NUMBER;
       hash = (53 * hash) + getResin();
+      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getDeadTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -609,19 +697,19 @@ public final class GadgetGeneralRewardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        remainUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        qualifyUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         if (itemParamBuilder_ == null) {
           itemParam_ = null;
         } else {
           itemParam_ = null;
           itemParamBuilder_ = null;
         }
-        remainUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        qualifyUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        deadTime_ = 0;
-
         resin_ = 0;
+
+        deadTime_ = 0;
 
         return this;
       }
@@ -650,11 +738,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
       public emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo buildPartial() {
         emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo result = new emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo(this);
         int from_bitField0_ = bitField0_;
-        if (itemParamBuilder_ == null) {
-          result.itemParam_ = itemParam_;
-        } else {
-          result.itemParam_ = itemParamBuilder_.build();
-        }
         if (((bitField0_ & 0x00000001) != 0)) {
           remainUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -665,8 +748,13 @@ public final class GadgetGeneralRewardInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.qualifyUidList_ = qualifyUidList_;
-        result.deadTime_ = deadTime_;
+        if (itemParamBuilder_ == null) {
+          result.itemParam_ = itemParam_;
+        } else {
+          result.itemParam_ = itemParamBuilder_.build();
+        }
         result.resin_ = resin_;
+        result.deadTime_ = deadTime_;
         onBuilt();
         return result;
       }
@@ -715,9 +803,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo other) {
         if (other == emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.getDefaultInstance()) return this;
-        if (other.hasItemParam()) {
-          mergeItemParam(other.getItemParam());
-        }
         if (!other.remainUidList_.isEmpty()) {
           if (remainUidList_.isEmpty()) {
             remainUidList_ = other.remainUidList_;
@@ -738,11 +823,14 @@ public final class GadgetGeneralRewardInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getDeadTime() != 0) {
-          setDeadTime(other.getDeadTime());
+        if (other.hasItemParam()) {
+          mergeItemParam(other.getItemParam());
         }
         if (other.getResin() != 0) {
           setResin(other.getResin());
+        }
+        if (other.getDeadTime() != 0) {
+          setDeadTime(other.getDeadTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -774,125 +862,6 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamBuilder_;
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       * @return Whether the itemParam field is set.
-       */
-      public boolean hasItemParam() {
-        return itemParamBuilder_ != null || itemParam_ != null;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       * @return The itemParam.
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
-        if (itemParamBuilder_ == null) {
-          return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-        } else {
-          return itemParamBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder setItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemParamBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          itemParam_ = value;
-          onChanged();
-        } else {
-          itemParamBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder setItemParam(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (itemParamBuilder_ == null) {
-          itemParam_ = builderForValue.build();
-          onChanged();
-        } else {
-          itemParamBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder mergeItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemParamBuilder_ == null) {
-          if (itemParam_ != null) {
-            itemParam_ =
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.newBuilder(itemParam_).mergeFrom(value).buildPartial();
-          } else {
-            itemParam_ = value;
-          }
-          onChanged();
-        } else {
-          itemParamBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder clearItemParam() {
-        if (itemParamBuilder_ == null) {
-          itemParam_ = null;
-          onChanged();
-        } else {
-          itemParam_ = null;
-          itemParamBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamBuilder() {
-        
-        onChanged();
-        return getItemParamFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
-        if (itemParamBuilder_ != null) {
-          return itemParamBuilder_.getMessageOrBuilder();
-        } else {
-          return itemParam_ == null ?
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-        }
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getItemParamFieldBuilder() {
-        if (itemParamBuilder_ == null) {
-          itemParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  getItemParam(),
-                  getParentForChildren(),
-                  isClean());
-          itemParam_ = null;
-        }
-        return itemParamBuilder_;
-      }
-
       private com.google.protobuf.Internal.IntList remainUidList_ = emptyIntList();
       private void ensureRemainUidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -901,6 +870,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return A list containing the remainUidList.
        */
@@ -910,6 +883,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
                  java.util.Collections.unmodifiableList(remainUidList_) : remainUidList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return The count of remainUidList.
        */
@@ -917,6 +894,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return remainUidList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param index The index of the element to return.
        * @return The remainUidList at the given index.
@@ -925,6 +906,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return remainUidList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The remainUidList to set.
@@ -938,6 +923,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param value The remainUidList to add.
        * @return This builder for chaining.
@@ -949,6 +938,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param values The remainUidList to add.
        * @return This builder for chaining.
@@ -962,6 +955,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return This builder for chaining.
        */
@@ -980,6 +977,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @return A list containing the qualifyUidList.
        */
@@ -989,6 +990,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
                  java.util.Collections.unmodifiableList(qualifyUidList_) : qualifyUidList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @return The count of qualifyUidList.
        */
@@ -996,6 +1001,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return qualifyUidList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @param index The index of the element to return.
        * @return The qualifyUidList at the given index.
@@ -1004,6 +1013,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return qualifyUidList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The qualifyUidList to set.
@@ -1017,6 +1030,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @param value The qualifyUidList to add.
        * @return This builder for chaining.
@@ -1028,6 +1045,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @param values The qualifyUidList to add.
        * @return This builder for chaining.
@@ -1041,6 +1062,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
        * @return This builder for chaining.
        */
@@ -1051,39 +1076,167 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
 
-      private int deadTime_ ;
+      private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamBuilder_;
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @return The deadTime.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       * @return Whether the itemParam field is set.
        */
-      @java.lang.Override
-      public int getDeadTime() {
-        return deadTime_;
+      public boolean hasItemParam() {
+        return itemParamBuilder_ != null || itemParam_ != null;
       }
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @param value The deadTime to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       * @return The itemParam.
        */
-      public Builder setDeadTime(int value) {
-        
-        deadTime_ = value;
-        onChanged();
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
+        if (itemParamBuilder_ == null) {
+          return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+        } else {
+          return itemParamBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public Builder setItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemParamBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          itemParam_ = value;
+          onChanged();
+        } else {
+          itemParamBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
        */
-      public Builder clearDeadTime() {
-        
-        deadTime_ = 0;
-        onChanged();
+      public Builder setItemParam(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (itemParamBuilder_ == null) {
+          itemParam_ = builderForValue.build();
+          onChanged();
+        } else {
+          itemParamBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public Builder mergeItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemParamBuilder_ == null) {
+          if (itemParam_ != null) {
+            itemParam_ =
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.newBuilder(itemParam_).mergeFrom(value).buildPartial();
+          } else {
+            itemParam_ = value;
+          }
+          onChanged();
+        } else {
+          itemParamBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public Builder clearItemParam() {
+        if (itemParamBuilder_ == null) {
+          itemParam_ = null;
+          onChanged();
+        } else {
+          itemParam_ = null;
+          itemParamBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamBuilder() {
+        
+        onChanged();
+        return getItemParamFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
+        if (itemParamBuilder_ != null) {
+          return itemParamBuilder_.getMessageOrBuilder();
+        } else {
+          return itemParam_ == null ?
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getItemParamFieldBuilder() {
+        if (itemParamBuilder_ == null) {
+          itemParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  getItemParam(),
+                  getParentForChildren(),
+                  isClean());
+          itemParam_ = null;
+        }
+        return itemParamBuilder_;
       }
 
       private int resin_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @return The resin.
        */
@@ -1092,6 +1245,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return resin_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @param value The resin to set.
        * @return This builder for chaining.
@@ -1103,12 +1260,59 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearResin() {
         
         resin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int deadTime_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 2;</code>
+       * @return The deadTime.
+       */
+      @java.lang.Override
+      public int getDeadTime() {
+        return deadTime_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 2;</code>
+       * @param value The deadTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeadTime(int value) {
+        
+        deadTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeadTime() {
+        
+        deadTime_ = 0;
         onChanged();
         return this;
       }
@@ -1180,10 +1384,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GadgetGeneralRewardInfo.proto\032\017ItemPar" +
-      "am.proto\"\216\001\n\027GadgetGeneralRewardInfo\022\036\n\n" +
-      "item_param\030\005 \001(\0132\n.ItemParam\022\027\n\017remain_u" +
-      "id_list\030\003 \003(\r\022\030\n\020qualify_uid_list\030\004 \003(\r\022" +
-      "\021\n\tdead_time\030\002 \001(\r\022\r\n\005resin\030\001 \001(\rB\033\n\031emu" +
+      "am.proto\"\216\001\n\027GadgetGeneralRewardInfo\022\027\n\017" +
+      "remain_uid_list\030\003 \003(\r\022\030\n\020qualify_uid_lis" +
+      "t\030\004 \003(\r\022\036\n\nitem_param\030\005 \001(\0132\n.ItemParam\022" +
+      "\r\n\005resin\030\001 \001(\r\022\021\n\tdead_time\030\002 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1196,7 +1400,7 @@ public final class GadgetGeneralRewardInfoOuterClass {
     internal_static_GadgetGeneralRewardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetGeneralRewardInfo_descriptor,
-        new java.lang.String[] { "ItemParam", "RemainUidList", "QualifyUidList", "DeadTime", "Resin", });
+        new java.lang.String[] { "RemainUidList", "QualifyUidList", "ItemParam", "Resin", "DeadTime", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

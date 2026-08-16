@@ -19,33 +19,32 @@ public final class PushTipsAllDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData> 
         getPushTipsListList();
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData getPushTipsList(int index);
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     int getPushTipsListCount();
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder> 
         getPushTipsListOrBuilderList();
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder getPushTipsListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 28129
-   * Obf: CCALHGOIIHE
+   * CmdId: 8526
    * </pre>
    *
    * Protobuf type {@code PushTipsAllDataNotify}
@@ -94,7 +93,7 @@ public final class PushTipsAllDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 pushTipsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class PushTipsAllDataNotifyOuterClass {
               emu.grasscutter.net.proto.PushTipsAllDataNotifyOuterClass.PushTipsAllDataNotify.class, emu.grasscutter.net.proto.PushTipsAllDataNotifyOuterClass.PushTipsAllDataNotify.Builder.class);
     }
 
-    public static final int PUSH_TIPS_LIST_FIELD_NUMBER = 1;
+    public static final int PUSH_TIPS_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData> pushTipsList_;
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData> getPushTipsListList() {
       return pushTipsList_;
     }
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder> 
@@ -156,21 +155,21 @@ public final class PushTipsAllDataNotifyOuterClass {
       return pushTipsList_;
     }
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     @java.lang.Override
     public int getPushTipsListCount() {
       return pushTipsList_.size();
     }
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData getPushTipsList(int index) {
       return pushTipsList_.get(index);
     }
     /**
-     * <code>repeated .PushTipsData push_tips_list = 1;</code>
+     * <code>repeated .PushTipsData push_tips_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder getPushTipsListOrBuilder(
@@ -193,7 +192,7 @@ public final class PushTipsAllDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < pushTipsList_.size(); i++) {
-        output.writeMessage(1, pushTipsList_.get(i));
+        output.writeMessage(7, pushTipsList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class PushTipsAllDataNotifyOuterClass {
       size = 0;
       for (int i = 0; i < pushTipsList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, pushTipsList_.get(i));
+          .computeMessageSize(7, pushTipsList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class PushTipsAllDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28129
-     * Obf: CCALHGOIIHE
+     * CmdId: 8526
      * </pre>
      *
      * Protobuf type {@code PushTipsAllDataNotify}
@@ -538,7 +536,7 @@ public final class PushTipsAllDataNotifyOuterClass {
           emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder> pushTipsListBuilder_;
 
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData> getPushTipsListList() {
         if (pushTipsListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public int getPushTipsListCount() {
         if (pushTipsListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData getPushTipsList(int index) {
         if (pushTipsListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder setPushTipsList(
           int index, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData value) {
@@ -585,7 +583,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder setPushTipsList(
           int index, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder addPushTipsList(emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData value) {
         if (pushTipsListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder addPushTipsList(
           int index, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData value) {
@@ -632,7 +630,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder addPushTipsList(
           emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder addPushTipsList(
           int index, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder addAllPushTipsList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData> values) {
@@ -675,7 +673,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder clearPushTipsList() {
         if (pushTipsListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public Builder removePushTipsList(int index) {
         if (pushTipsListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class PushTipsAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder getPushTipsListBuilder(
           int index) {
         return getPushTipsListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder getPushTipsListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class PushTipsAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsDataOrBuilder> 
            getPushTipsListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class PushTipsAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder addPushTipsListBuilder() {
         return getPushTipsListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder addPushTipsListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class PushTipsAllDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PushTipsData push_tips_list = 1;</code>
+       * <code>repeated .PushTipsData push_tips_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder> 
            getPushTipsListBuilderList() {
@@ -833,7 +831,7 @@ public final class PushTipsAllDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PushTipsAllDataNotify.proto\032\022PushTipsD" +
       "ata.proto\">\n\025PushTipsAllDataNotify\022%\n\016pu" +
-      "sh_tips_list\030\001 \003(\0132\r.PushTipsDataB\033\n\031emu" +
+      "sh_tips_list\030\007 \003(\0132\r.PushTipsDataB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,33 +19,29 @@ public final class ExclusiveRuleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 rule_type = 9;</code>
+     * <code>uint32 rule_type = 5;</code>
      * @return The ruleType.
      */
     int getRuleType();
 
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @return A list containing the objectIdList.
      */
     java.util.List<java.lang.Integer> getObjectIdListList();
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @return The count of objectIdList.
      */
     int getObjectIdListCount();
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The objectIdList at the given index.
      */
     int getObjectIdList(int index);
   }
   /**
-   * <pre>
-   * Obf: JLBKHIBLNFI
-   * </pre>
-   *
    * Protobuf type {@code ExclusiveRuleInfo}
    */
   public static final class ExclusiveRuleInfo extends
@@ -92,7 +88,12 @@ public final class ExclusiveRuleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
+
+              ruleType_ = input.readUInt32();
+              break;
+            }
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 objectIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -100,7 +101,7 @@ public final class ExclusiveRuleInfoOuterClass {
               objectIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -111,11 +112,6 @@ public final class ExclusiveRuleInfoOuterClass {
                 objectIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 72: {
-
-              ruleType_ = input.readUInt32();
               break;
             }
             default: {
@@ -153,10 +149,10 @@ public final class ExclusiveRuleInfoOuterClass {
               emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.class, emu.grasscutter.net.proto.ExclusiveRuleInfoOuterClass.ExclusiveRuleInfo.Builder.class);
     }
 
-    public static final int RULE_TYPE_FIELD_NUMBER = 9;
+    public static final int RULE_TYPE_FIELD_NUMBER = 5;
     private int ruleType_;
     /**
-     * <code>uint32 rule_type = 9;</code>
+     * <code>uint32 rule_type = 5;</code>
      * @return The ruleType.
      */
     @java.lang.Override
@@ -164,10 +160,10 @@ public final class ExclusiveRuleInfoOuterClass {
       return ruleType_;
     }
 
-    public static final int OBJECT_ID_LIST_FIELD_NUMBER = 4;
+    public static final int OBJECT_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList objectIdList_;
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @return A list containing the objectIdList.
      */
     @java.lang.Override
@@ -176,14 +172,14 @@ public final class ExclusiveRuleInfoOuterClass {
       return objectIdList_;
     }
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @return The count of objectIdList.
      */
     public int getObjectIdListCount() {
       return objectIdList_.size();
     }
     /**
-     * <code>repeated uint32 object_id_list = 4;</code>
+     * <code>repeated uint32 object_id_list = 8;</code>
      * @param index The index of the element to return.
      * @return The objectIdList at the given index.
      */
@@ -207,15 +203,15 @@ public final class ExclusiveRuleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (ruleType_ != 0) {
+        output.writeUInt32(5, ruleType_);
+      }
       if (getObjectIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(objectIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < objectIdList_.size(); i++) {
         output.writeUInt32NoTag(objectIdList_.getInt(i));
-      }
-      if (ruleType_ != 0) {
-        output.writeUInt32(9, ruleType_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,6 +222,10 @@ public final class ExclusiveRuleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (ruleType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, ruleType_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < objectIdList_.size(); i++) {
@@ -239,10 +239,6 @@ public final class ExclusiveRuleInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         objectIdListMemoizedSerializedSize = dataSize;
-      }
-      if (ruleType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, ruleType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,10 +372,6 @@ public final class ExclusiveRuleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JLBKHIBLNFI
-     * </pre>
-     *
      * Protobuf type {@code ExclusiveRuleInfo}
      */
     public static final class Builder extends
@@ -547,7 +539,7 @@ public final class ExclusiveRuleInfoOuterClass {
 
       private int ruleType_ ;
       /**
-       * <code>uint32 rule_type = 9;</code>
+       * <code>uint32 rule_type = 5;</code>
        * @return The ruleType.
        */
       @java.lang.Override
@@ -555,7 +547,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return ruleType_;
       }
       /**
-       * <code>uint32 rule_type = 9;</code>
+       * <code>uint32 rule_type = 5;</code>
        * @param value The ruleType to set.
        * @return This builder for chaining.
        */
@@ -566,7 +558,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rule_type = 9;</code>
+       * <code>uint32 rule_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRuleType() {
@@ -584,7 +576,7 @@ public final class ExclusiveRuleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @return A list containing the objectIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +585,14 @@ public final class ExclusiveRuleInfoOuterClass {
                  java.util.Collections.unmodifiableList(objectIdList_) : objectIdList_;
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @return The count of objectIdList.
        */
       public int getObjectIdListCount() {
         return objectIdList_.size();
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @param index The index of the element to return.
        * @return The objectIdList at the given index.
        */
@@ -608,7 +600,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return objectIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The objectIdList to set.
        * @return This builder for chaining.
@@ -621,7 +613,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @param value The objectIdList to add.
        * @return This builder for chaining.
        */
@@ -632,7 +624,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @param values The objectIdList to add.
        * @return This builder for chaining.
        */
@@ -645,7 +637,7 @@ public final class ExclusiveRuleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 object_id_list = 4;</code>
+       * <code>repeated uint32 object_id_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearObjectIdList() {
@@ -722,8 +714,8 @@ public final class ExclusiveRuleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ExclusiveRuleInfo.proto\">\n\021ExclusiveRu" +
-      "leInfo\022\021\n\trule_type\030\t \001(\r\022\026\n\016object_id_l" +
-      "ist\030\004 \003(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "leInfo\022\021\n\trule_type\030\005 \001(\r\022\026\n\016object_id_l" +
+      "ist\030\010 \003(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

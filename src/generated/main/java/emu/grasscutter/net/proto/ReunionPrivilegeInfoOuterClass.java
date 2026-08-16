@@ -19,28 +19,48 @@ public final class ReunionPrivilegeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 privilege_id = 8;</code>
+     * <code>uint32 cur_day_count = 1;</code>
+     * @return The curDayCount.
+     */
+    int getCurDayCount();
+
+    /**
+     * <code>uint32 privilege_id = 2;</code>
      * @return The privilegeId.
      */
     int getPrivilegeId();
 
     /**
-     * <code>uint32 GONKOHLOLGM = 9;</code>
-     * @return The gONKOHLOLGM.
+     * <code>uint32 total_count = 5;</code>
+     * @return The totalCount.
      */
-    int getGONKOHLOLGM();
+    int getTotalCount();
 
     /**
-     * <code>uint32 DPFKGAJIFGG = 1;</code>
-     * @return The dPFKGAJIFGG.
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
      */
-    int getDPFKGAJIFGG();
+    java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> 
+        getHDCKOCKAKNPList();
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG getHDCKOCKAKNP(int index);
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    int getHDCKOCKAKNPCount();
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder> 
+        getHDCKOCKAKNPOrBuilderList();
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder getHDCKOCKAKNPOrBuilder(
+        int index);
   }
   /**
-   * <pre>
-   * Obf: JICCKJLPGHF
-   * </pre>
-   *
    * Protobuf type {@code ReunionPrivilegeInfo}
    */
   public static final class ReunionPrivilegeInfo extends
@@ -53,6 +73,7 @@ public final class ReunionPrivilegeInfoOuterClass {
       super(builder);
     }
     private ReunionPrivilegeInfo() {
+      hDCKOCKAKNP_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -75,6 +96,7 @@ public final class ReunionPrivilegeInfoOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -87,17 +109,26 @@ public final class ReunionPrivilegeInfoOuterClass {
               break;
             case 8: {
 
-              dPFKGAJIFGG_ = input.readUInt32();
+              curDayCount_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 16: {
 
               privilegeId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
 
-              gONKOHLOLGM_ = input.readUInt32();
+              totalCount_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                hDCKOCKAKNP_ = new java.util.ArrayList<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              hDCKOCKAKNP_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -115,6 +146,9 @@ public final class ReunionPrivilegeInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          hDCKOCKAKNP_ = java.util.Collections.unmodifiableList(hDCKOCKAKNP_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -132,10 +166,21 @@ public final class ReunionPrivilegeInfoOuterClass {
               emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.class, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder.class);
     }
 
-    public static final int PRIVILEGE_ID_FIELD_NUMBER = 8;
+    public static final int CUR_DAY_COUNT_FIELD_NUMBER = 1;
+    private int curDayCount_;
+    /**
+     * <code>uint32 cur_day_count = 1;</code>
+     * @return The curDayCount.
+     */
+    @java.lang.Override
+    public int getCurDayCount() {
+      return curDayCount_;
+    }
+
+    public static final int PRIVILEGE_ID_FIELD_NUMBER = 2;
     private int privilegeId_;
     /**
-     * <code>uint32 privilege_id = 8;</code>
+     * <code>uint32 privilege_id = 2;</code>
      * @return The privilegeId.
      */
     @java.lang.Override
@@ -143,26 +188,55 @@ public final class ReunionPrivilegeInfoOuterClass {
       return privilegeId_;
     }
 
-    public static final int GONKOHLOLGM_FIELD_NUMBER = 9;
-    private int gONKOHLOLGM_;
+    public static final int TOTAL_COUNT_FIELD_NUMBER = 5;
+    private int totalCount_;
     /**
-     * <code>uint32 GONKOHLOLGM = 9;</code>
-     * @return The gONKOHLOLGM.
+     * <code>uint32 total_count = 5;</code>
+     * @return The totalCount.
      */
     @java.lang.Override
-    public int getGONKOHLOLGM() {
-      return gONKOHLOLGM_;
+    public int getTotalCount() {
+      return totalCount_;
     }
 
-    public static final int DPFKGAJIFGG_FIELD_NUMBER = 1;
-    private int dPFKGAJIFGG_;
+    public static final int HDCKOCKAKNP_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> hDCKOCKAKNP_;
     /**
-     * <code>uint32 DPFKGAJIFGG = 1;</code>
-     * @return The dPFKGAJIFGG.
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
      */
     @java.lang.Override
-    public int getDPFKGAJIFGG() {
-      return dPFKGAJIFGG_;
+    public java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> getHDCKOCKAKNPList() {
+      return hDCKOCKAKNP_;
+    }
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder> 
+        getHDCKOCKAKNPOrBuilderList() {
+      return hDCKOCKAKNP_;
+    }
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    @java.lang.Override
+    public int getHDCKOCKAKNPCount() {
+      return hDCKOCKAKNP_.size();
+    }
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG getHDCKOCKAKNP(int index) {
+      return hDCKOCKAKNP_.get(index);
+    }
+    /**
+     * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder getHDCKOCKAKNPOrBuilder(
+        int index) {
+      return hDCKOCKAKNP_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +253,17 @@ public final class ReunionPrivilegeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dPFKGAJIFGG_ != 0) {
-        output.writeUInt32(1, dPFKGAJIFGG_);
+      if (curDayCount_ != 0) {
+        output.writeUInt32(1, curDayCount_);
       }
       if (privilegeId_ != 0) {
-        output.writeUInt32(8, privilegeId_);
+        output.writeUInt32(2, privilegeId_);
       }
-      if (gONKOHLOLGM_ != 0) {
-        output.writeUInt32(9, gONKOHLOLGM_);
+      if (totalCount_ != 0) {
+        output.writeUInt32(5, totalCount_);
+      }
+      for (int i = 0; i < hDCKOCKAKNP_.size(); i++) {
+        output.writeMessage(12, hDCKOCKAKNP_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +274,21 @@ public final class ReunionPrivilegeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dPFKGAJIFGG_ != 0) {
+      if (curDayCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dPFKGAJIFGG_);
+          .computeUInt32Size(1, curDayCount_);
       }
       if (privilegeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, privilegeId_);
+          .computeUInt32Size(2, privilegeId_);
       }
-      if (gONKOHLOLGM_ != 0) {
+      if (totalCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gONKOHLOLGM_);
+          .computeUInt32Size(5, totalCount_);
+      }
+      for (int i = 0; i < hDCKOCKAKNP_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, hDCKOCKAKNP_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +305,14 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other = (emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo) obj;
 
+      if (getCurDayCount()
+          != other.getCurDayCount()) return false;
       if (getPrivilegeId()
           != other.getPrivilegeId()) return false;
-      if (getGONKOHLOLGM()
-          != other.getGONKOHLOLGM()) return false;
-      if (getDPFKGAJIFGG()
-          != other.getDPFKGAJIFGG()) return false;
+      if (getTotalCount()
+          != other.getTotalCount()) return false;
+      if (!getHDCKOCKAKNPList()
+          .equals(other.getHDCKOCKAKNPList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +324,16 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CUR_DAY_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCurDayCount();
       hash = (37 * hash) + PRIVILEGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPrivilegeId();
-      hash = (37 * hash) + GONKOHLOLGM_FIELD_NUMBER;
-      hash = (53 * hash) + getGONKOHLOLGM();
-      hash = (37 * hash) + DPFKGAJIFGG_FIELD_NUMBER;
-      hash = (53 * hash) + getDPFKGAJIFGG();
+      hash = (37 * hash) + TOTAL_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalCount();
+      if (getHDCKOCKAKNPCount() > 0) {
+        hash = (37 * hash) + HDCKOCKAKNP_FIELD_NUMBER;
+        hash = (53 * hash) + getHDCKOCKAKNPList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +430,6 @@ public final class ReunionPrivilegeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JICCKJLPGHF
-     * </pre>
-     *
      * Protobuf type {@code ReunionPrivilegeInfo}
      */
     public static final class Builder extends
@@ -379,17 +462,24 @@ public final class ReunionPrivilegeInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getHDCKOCKAKNPFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        curDayCount_ = 0;
+
         privilegeId_ = 0;
 
-        gONKOHLOLGM_ = 0;
+        totalCount_ = 0;
 
-        dPFKGAJIFGG_ = 0;
-
+        if (hDCKOCKAKNPBuilder_ == null) {
+          hDCKOCKAKNP_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          hDCKOCKAKNPBuilder_.clear();
+        }
         return this;
       }
 
@@ -416,9 +506,19 @@ public final class ReunionPrivilegeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo result = new emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo(this);
+        int from_bitField0_ = bitField0_;
+        result.curDayCount_ = curDayCount_;
         result.privilegeId_ = privilegeId_;
-        result.gONKOHLOLGM_ = gONKOHLOLGM_;
-        result.dPFKGAJIFGG_ = dPFKGAJIFGG_;
+        result.totalCount_ = totalCount_;
+        if (hDCKOCKAKNPBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            hDCKOCKAKNP_ = java.util.Collections.unmodifiableList(hDCKOCKAKNP_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.hDCKOCKAKNP_ = hDCKOCKAKNP_;
+        } else {
+          result.hDCKOCKAKNP_ = hDCKOCKAKNPBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -467,14 +567,40 @@ public final class ReunionPrivilegeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance()) return this;
+        if (other.getCurDayCount() != 0) {
+          setCurDayCount(other.getCurDayCount());
+        }
         if (other.getPrivilegeId() != 0) {
           setPrivilegeId(other.getPrivilegeId());
         }
-        if (other.getGONKOHLOLGM() != 0) {
-          setGONKOHLOLGM(other.getGONKOHLOLGM());
+        if (other.getTotalCount() != 0) {
+          setTotalCount(other.getTotalCount());
         }
-        if (other.getDPFKGAJIFGG() != 0) {
-          setDPFKGAJIFGG(other.getDPFKGAJIFGG());
+        if (hDCKOCKAKNPBuilder_ == null) {
+          if (!other.hDCKOCKAKNP_.isEmpty()) {
+            if (hDCKOCKAKNP_.isEmpty()) {
+              hDCKOCKAKNP_ = other.hDCKOCKAKNP_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureHDCKOCKAKNPIsMutable();
+              hDCKOCKAKNP_.addAll(other.hDCKOCKAKNP_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.hDCKOCKAKNP_.isEmpty()) {
+            if (hDCKOCKAKNPBuilder_.isEmpty()) {
+              hDCKOCKAKNPBuilder_.dispose();
+              hDCKOCKAKNPBuilder_ = null;
+              hDCKOCKAKNP_ = other.hDCKOCKAKNP_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              hDCKOCKAKNPBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHDCKOCKAKNPFieldBuilder() : null;
+            } else {
+              hDCKOCKAKNPBuilder_.addAllMessages(other.hDCKOCKAKNP_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,10 +630,42 @@ public final class ReunionPrivilegeInfoOuterClass {
         }
         return this;
       }
+      private int bitField0_;
+
+      private int curDayCount_ ;
+      /**
+       * <code>uint32 cur_day_count = 1;</code>
+       * @return The curDayCount.
+       */
+      @java.lang.Override
+      public int getCurDayCount() {
+        return curDayCount_;
+      }
+      /**
+       * <code>uint32 cur_day_count = 1;</code>
+       * @param value The curDayCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurDayCount(int value) {
+        
+        curDayCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_day_count = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurDayCount() {
+        
+        curDayCount_ = 0;
+        onChanged();
+        return this;
+      }
 
       private int privilegeId_ ;
       /**
-       * <code>uint32 privilege_id = 8;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @return The privilegeId.
        */
       @java.lang.Override
@@ -515,7 +673,7 @@ public final class ReunionPrivilegeInfoOuterClass {
         return privilegeId_;
       }
       /**
-       * <code>uint32 privilege_id = 8;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @param value The privilegeId to set.
        * @return This builder for chaining.
        */
@@ -526,7 +684,7 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 privilege_id = 8;</code>
+       * <code>uint32 privilege_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrivilegeId() {
@@ -536,66 +694,275 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
 
-      private int gONKOHLOLGM_ ;
+      private int totalCount_ ;
       /**
-       * <code>uint32 GONKOHLOLGM = 9;</code>
-       * @return The gONKOHLOLGM.
+       * <code>uint32 total_count = 5;</code>
+       * @return The totalCount.
        */
       @java.lang.Override
-      public int getGONKOHLOLGM() {
-        return gONKOHLOLGM_;
+      public int getTotalCount() {
+        return totalCount_;
       }
       /**
-       * <code>uint32 GONKOHLOLGM = 9;</code>
-       * @param value The gONKOHLOLGM to set.
+       * <code>uint32 total_count = 5;</code>
+       * @param value The totalCount to set.
        * @return This builder for chaining.
        */
-      public Builder setGONKOHLOLGM(int value) {
+      public Builder setTotalCount(int value) {
         
-        gONKOHLOLGM_ = value;
+        totalCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GONKOHLOLGM = 9;</code>
+       * <code>uint32 total_count = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGONKOHLOLGM() {
+      public Builder clearTotalCount() {
         
-        gONKOHLOLGM_ = 0;
+        totalCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int dPFKGAJIFGG_ ;
+      private java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> hDCKOCKAKNP_ =
+        java.util.Collections.emptyList();
+      private void ensureHDCKOCKAKNPIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          hDCKOCKAKNP_ = new java.util.ArrayList<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG>(hDCKOCKAKNP_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder> hDCKOCKAKNPBuilder_;
+
       /**
-       * <code>uint32 DPFKGAJIFGG = 1;</code>
-       * @return The dPFKGAJIFGG.
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
        */
-      @java.lang.Override
-      public int getDPFKGAJIFGG() {
-        return dPFKGAJIFGG_;
+      public java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> getHDCKOCKAKNPList() {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(hDCKOCKAKNP_);
+        } else {
+          return hDCKOCKAKNPBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>uint32 DPFKGAJIFGG = 1;</code>
-       * @param value The dPFKGAJIFGG to set.
-       * @return This builder for chaining.
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
        */
-      public Builder setDPFKGAJIFGG(int value) {
-        
-        dPFKGAJIFGG_ = value;
-        onChanged();
+      public int getHDCKOCKAKNPCount() {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          return hDCKOCKAKNP_.size();
+        } else {
+          return hDCKOCKAKNPBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG getHDCKOCKAKNP(int index) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          return hDCKOCKAKNP_.get(index);
+        } else {
+          return hDCKOCKAKNPBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder setHDCKOCKAKNP(
+          int index, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG value) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.set(index, value);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>uint32 DPFKGAJIFGG = 1;</code>
-       * @return This builder for chaining.
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
        */
-      public Builder clearDPFKGAJIFGG() {
-        
-        dPFKGAJIFGG_ = 0;
-        onChanged();
+      public Builder setHDCKOCKAKNP(
+          int index, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder builderForValue) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder addHDCKOCKAKNP(emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG value) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.add(value);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder addHDCKOCKAKNP(
+          int index, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG value) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.add(index, value);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder addHDCKOCKAKNP(
+          emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder builderForValue) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.add(builderForValue.build());
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder addHDCKOCKAKNP(
+          int index, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder builderForValue) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder addAllHDCKOCKAKNP(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG> values) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          ensureHDCKOCKAKNPIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, hDCKOCKAKNP_);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder clearHDCKOCKAKNP() {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          hDCKOCKAKNP_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public Builder removeHDCKOCKAKNP(int index) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          ensureHDCKOCKAKNPIsMutable();
+          hDCKOCKAKNP_.remove(index);
+          onChanged();
+        } else {
+          hDCKOCKAKNPBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder getHDCKOCKAKNPBuilder(
+          int index) {
+        return getHDCKOCKAKNPFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder getHDCKOCKAKNPOrBuilder(
+          int index) {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          return hDCKOCKAKNP_.get(index);  } else {
+          return hDCKOCKAKNPBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder> 
+           getHDCKOCKAKNPOrBuilderList() {
+        if (hDCKOCKAKNPBuilder_ != null) {
+          return hDCKOCKAKNPBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(hDCKOCKAKNP_);
+        }
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder addHDCKOCKAKNPBuilder() {
+        return getHDCKOCKAKNPFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder addHDCKOCKAKNPBuilder(
+          int index) {
+        return getHDCKOCKAKNPFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GLBNDJMOPDG HDCKOCKAKNP = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder> 
+           getHDCKOCKAKNPBuilderList() {
+        return getHDCKOCKAKNPFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder> 
+          getHDCKOCKAKNPFieldBuilder() {
+        if (hDCKOCKAKNPBuilder_ == null) {
+          hDCKOCKAKNPBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDG.Builder, emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.GLBNDJMOPDGOrBuilder>(
+                  hDCKOCKAKNP_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          hDCKOCKAKNP_ = null;
+        }
+        return hDCKOCKAKNPBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -664,21 +1031,25 @@ public final class ReunionPrivilegeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032ReunionPrivilegeInfo.proto\"V\n\024ReunionP" +
-      "rivilegeInfo\022\024\n\014privilege_id\030\010 \001(\r\022\023\n\013GO" +
-      "NKOHLOLGM\030\t \001(\r\022\023\n\013DPFKGAJIFGG\030\001 \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\032ReunionPrivilegeInfo.proto\032\021GLBNDJMOPD" +
+      "G.proto\"{\n\024ReunionPrivilegeInfo\022\025\n\rcur_d" +
+      "ay_count\030\001 \001(\r\022\024\n\014privilege_id\030\002 \001(\r\022\023\n\013" +
+      "total_count\030\005 \001(\r\022!\n\013HDCKOCKAKNP\030\014 \003(\0132\014" +
+      ".GLBNDJMOPDGB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.getDescriptor(),
         });
     internal_static_ReunionPrivilegeInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ReunionPrivilegeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionPrivilegeInfo_descriptor,
-        new java.lang.String[] { "PrivilegeId", "GONKOHLOLGM", "DPFKGAJIFGG", });
+        new java.lang.String[] { "CurDayCount", "PrivilegeId", "TotalCount", "HDCKOCKAKNP", });
+    emu.grasscutter.net.proto.GLBNDJMOPDGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

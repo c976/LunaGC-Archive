@@ -44,8 +44,7 @@ public final class UpdateRedPointNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21359
-   * Obf: KKKFCINHKNO
+   * CmdId: 24280
    * </pre>
    *
    * Protobuf type {@code UpdateRedPointNotify}
@@ -337,8 +336,7 @@ public final class UpdateRedPointNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21359
-     * Obf: KKKFCINHKNO
+     * CmdId: 24280
      * </pre>
      *
      * Protobuf type {@code UpdateRedPointNotify}

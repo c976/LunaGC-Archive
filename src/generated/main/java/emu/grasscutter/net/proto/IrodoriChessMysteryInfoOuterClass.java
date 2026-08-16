@@ -19,59 +19,91 @@ public final class IrodoriChessMysteryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @return A list containing the cNJBAONMDIE.
+     */
+    java.util.List<java.lang.Integer> getCNJBAONMDIEList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @return The count of cNJBAONMDIE.
+     */
+    int getCNJBAONMDIECount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @param index The index of the element to return.
+     * @return The cNJBAONMDIE at the given index.
+     */
+    int getCNJBAONMDIE(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @return A list containing the exitPointIdList.
      */
     java.util.List<java.lang.Integer> getExitPointIdListList();
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @return The count of exitPointIdList.
      */
     int getExitPointIdListCount();
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The exitPointIdList at the given index.
      */
     int getExitPointIdList(int index);
 
     /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @return A list containing the entrancePointIdList.
-     */
-    java.util.List<java.lang.Integer> getEntrancePointIdListList();
-    /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @return The count of entrancePointIdList.
-     */
-    int getEntrancePointIdListCount();
-    /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The entrancePointIdList at the given index.
-     */
-    int getEntrancePointIdList(int index);
-
-    /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      * @return Whether the entranceDetailInfo field is set.
      */
     boolean hasEntranceDetailInfo();
     /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      * @return The entranceDetailInfo.
      */
     emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo getEntranceDetailInfo();
     /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      */
     emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfoOrBuilder getEntranceDetailInfoOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: NHCKIFIGBNE
-   * </pre>
-   *
    * Protobuf type {@code IrodoriChessMysteryInfo}
    */
   public static final class IrodoriChessMysteryInfo extends
@@ -84,8 +116,8 @@ public final class IrodoriChessMysteryInfoOuterClass {
       super(builder);
     }
     private IrodoriChessMysteryInfo() {
+      cNJBAONMDIE_ = emptyIntList();
       exitPointIdList_ = emptyIntList();
-      entrancePointIdList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -119,20 +151,20 @@ public final class IrodoriChessMysteryInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 exitPointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               exitPointIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 exitPointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 exitPointIdList_.addInt(input.readUInt32());
@@ -140,28 +172,28 @@ public final class IrodoriChessMysteryInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                entrancePointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 40: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cNJBAONMDIE_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              entrancePointIdList_.addInt(input.readUInt32());
+              cNJBAONMDIE_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                entrancePointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                cNJBAONMDIE_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                entrancePointIdList_.addInt(input.readUInt32());
+                cNJBAONMDIE_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 98: {
+            case 82: {
               emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.Builder subBuilder = null;
               if (entranceDetailInfo_ != null) {
                 subBuilder = entranceDetailInfo_.toBuilder();
@@ -189,11 +221,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           exitPointIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          entrancePointIdList_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          cNJBAONMDIE_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -212,10 +244,54 @@ public final class IrodoriChessMysteryInfoOuterClass {
               emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.class, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder.class);
     }
 
-    public static final int EXIT_POINT_ID_LIST_FIELD_NUMBER = 1;
+    public static final int CNJBAONMDIE_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.IntList cNJBAONMDIE_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @return A list containing the cNJBAONMDIE.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getCNJBAONMDIEList() {
+      return cNJBAONMDIE_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @return The count of cNJBAONMDIE.
+     */
+    public int getCNJBAONMDIECount() {
+      return cNJBAONMDIE_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+     * @param index The index of the element to return.
+     * @return The cNJBAONMDIE at the given index.
+     */
+    public int getCNJBAONMDIE(int index) {
+      return cNJBAONMDIE_.getInt(index);
+    }
+    private int cNJBAONMDIEMemoizedSerializedSize = -1;
+
+    public static final int EXIT_POINT_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList exitPointIdList_;
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @return A list containing the exitPointIdList.
      */
     @java.lang.Override
@@ -224,14 +300,22 @@ public final class IrodoriChessMysteryInfoOuterClass {
       return exitPointIdList_;
     }
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @return The count of exitPointIdList.
      */
     public int getExitPointIdListCount() {
       return exitPointIdList_.size();
     }
     /**
-     * <code>repeated uint32 exit_point_id_list = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 exit_point_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The exitPointIdList at the given index.
      */
@@ -240,38 +324,14 @@ public final class IrodoriChessMysteryInfoOuterClass {
     }
     private int exitPointIdListMemoizedSerializedSize = -1;
 
-    public static final int ENTRANCE_POINT_ID_LIST_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList entrancePointIdList_;
-    /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @return A list containing the entrancePointIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getEntrancePointIdListList() {
-      return entrancePointIdList_;
-    }
-    /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @return The count of entrancePointIdList.
-     */
-    public int getEntrancePointIdListCount() {
-      return entrancePointIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 entrance_point_id_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The entrancePointIdList at the given index.
-     */
-    public int getEntrancePointIdList(int index) {
-      return entrancePointIdList_.getInt(index);
-    }
-    private int entrancePointIdListMemoizedSerializedSize = -1;
-
-    public static final int ENTRANCE_DETAIL_INFO_FIELD_NUMBER = 12;
+    public static final int ENTRANCE_DETAIL_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo entranceDetailInfo_;
     /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      * @return Whether the entranceDetailInfo field is set.
      */
     @java.lang.Override
@@ -279,7 +339,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
       return entranceDetailInfo_ != null;
     }
     /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      * @return The entranceDetailInfo.
      */
     @java.lang.Override
@@ -287,7 +351,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
       return entranceDetailInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.getDefaultInstance() : entranceDetailInfo_;
     }
     /**
-     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfoOrBuilder getEntranceDetailInfoOrBuilder() {
@@ -310,21 +378,21 @@ public final class IrodoriChessMysteryInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getExitPointIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(exitPointIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < exitPointIdList_.size(); i++) {
         output.writeUInt32NoTag(exitPointIdList_.getInt(i));
       }
-      if (getEntrancePointIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(entrancePointIdListMemoizedSerializedSize);
+      if (getCNJBAONMDIEList().size() > 0) {
+        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(cNJBAONMDIEMemoizedSerializedSize);
       }
-      for (int i = 0; i < entrancePointIdList_.size(); i++) {
-        output.writeUInt32NoTag(entrancePointIdList_.getInt(i));
+      for (int i = 0; i < cNJBAONMDIE_.size(); i++) {
+        output.writeUInt32NoTag(cNJBAONMDIE_.getInt(i));
       }
       if (entranceDetailInfo_ != null) {
-        output.writeMessage(12, getEntranceDetailInfo());
+        output.writeMessage(10, getEntranceDetailInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -351,21 +419,21 @@ public final class IrodoriChessMysteryInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < entrancePointIdList_.size(); i++) {
+        for (int i = 0; i < cNJBAONMDIE_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(entrancePointIdList_.getInt(i));
+            .computeUInt32SizeNoTag(cNJBAONMDIE_.getInt(i));
         }
         size += dataSize;
-        if (!getEntrancePointIdListList().isEmpty()) {
+        if (!getCNJBAONMDIEList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        entrancePointIdListMemoizedSerializedSize = dataSize;
+        cNJBAONMDIEMemoizedSerializedSize = dataSize;
       }
       if (entranceDetailInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getEntranceDetailInfo());
+          .computeMessageSize(10, getEntranceDetailInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,10 +450,10 @@ public final class IrodoriChessMysteryInfoOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo other = (emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo) obj;
 
+      if (!getCNJBAONMDIEList()
+          .equals(other.getCNJBAONMDIEList())) return false;
       if (!getExitPointIdListList()
           .equals(other.getExitPointIdListList())) return false;
-      if (!getEntrancePointIdListList()
-          .equals(other.getEntrancePointIdListList())) return false;
       if (hasEntranceDetailInfo() != other.hasEntranceDetailInfo()) return false;
       if (hasEntranceDetailInfo()) {
         if (!getEntranceDetailInfo()
@@ -402,13 +470,13 @@ public final class IrodoriChessMysteryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getCNJBAONMDIECount() > 0) {
+        hash = (37 * hash) + CNJBAONMDIE_FIELD_NUMBER;
+        hash = (53 * hash) + getCNJBAONMDIEList().hashCode();
+      }
       if (getExitPointIdListCount() > 0) {
         hash = (37 * hash) + EXIT_POINT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getExitPointIdListList().hashCode();
-      }
-      if (getEntrancePointIdListCount() > 0) {
-        hash = (37 * hash) + ENTRANCE_POINT_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEntrancePointIdListList().hashCode();
       }
       if (hasEntranceDetailInfo()) {
         hash = (37 * hash) + ENTRANCE_DETAIL_INFO_FIELD_NUMBER;
@@ -510,10 +578,6 @@ public final class IrodoriChessMysteryInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NHCKIFIGBNE
-     * </pre>
-     *
      * Protobuf type {@code IrodoriChessMysteryInfo}
      */
     public static final class Builder extends
@@ -551,9 +615,9 @@ public final class IrodoriChessMysteryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        exitPointIdList_ = emptyIntList();
+        cNJBAONMDIE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        entrancePointIdList_ = emptyIntList();
+        exitPointIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         if (entranceDetailInfoBuilder_ == null) {
           entranceDetailInfo_ = null;
@@ -589,15 +653,15 @@ public final class IrodoriChessMysteryInfoOuterClass {
         emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo result = new emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          exitPointIdList_.makeImmutable();
+          cNJBAONMDIE_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.exitPointIdList_ = exitPointIdList_;
+        result.cNJBAONMDIE_ = cNJBAONMDIE_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          entrancePointIdList_.makeImmutable();
+          exitPointIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.entrancePointIdList_ = entrancePointIdList_;
+        result.exitPointIdList_ = exitPointIdList_;
         if (entranceDetailInfoBuilder_ == null) {
           result.entranceDetailInfo_ = entranceDetailInfo_;
         } else {
@@ -651,23 +715,23 @@ public final class IrodoriChessMysteryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo other) {
         if (other == emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance()) return this;
-        if (!other.exitPointIdList_.isEmpty()) {
-          if (exitPointIdList_.isEmpty()) {
-            exitPointIdList_ = other.exitPointIdList_;
+        if (!other.cNJBAONMDIE_.isEmpty()) {
+          if (cNJBAONMDIE_.isEmpty()) {
+            cNJBAONMDIE_ = other.cNJBAONMDIE_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureExitPointIdListIsMutable();
-            exitPointIdList_.addAll(other.exitPointIdList_);
+            ensureCNJBAONMDIEIsMutable();
+            cNJBAONMDIE_.addAll(other.cNJBAONMDIE_);
           }
           onChanged();
         }
-        if (!other.entrancePointIdList_.isEmpty()) {
-          if (entrancePointIdList_.isEmpty()) {
-            entrancePointIdList_ = other.entrancePointIdList_;
+        if (!other.exitPointIdList_.isEmpty()) {
+          if (exitPointIdList_.isEmpty()) {
+            exitPointIdList_ = other.exitPointIdList_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureEntrancePointIdListIsMutable();
-            entrancePointIdList_.addAll(other.entrancePointIdList_);
+            ensureExitPointIdListIsMutable();
+            exitPointIdList_.addAll(other.exitPointIdList_);
           }
           onChanged();
         }
@@ -704,31 +768,150 @@ public final class IrodoriChessMysteryInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList exitPointIdList_ = emptyIntList();
-      private void ensureExitPointIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList cNJBAONMDIE_ = emptyIntList();
+      private void ensureCNJBAONMDIEIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          exitPointIdList_ = mutableCopy(exitPointIdList_);
+          cNJBAONMDIE_ = mutableCopy(cNJBAONMDIE_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @return A list containing the cNJBAONMDIE.
+       */
+      public java.util.List<java.lang.Integer>
+          getCNJBAONMDIEList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(cNJBAONMDIE_) : cNJBAONMDIE_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @return The count of cNJBAONMDIE.
+       */
+      public int getCNJBAONMDIECount() {
+        return cNJBAONMDIE_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @param index The index of the element to return.
+       * @return The cNJBAONMDIE at the given index.
+       */
+      public int getCNJBAONMDIE(int index) {
+        return cNJBAONMDIE_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The cNJBAONMDIE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCNJBAONMDIE(
+          int index, int value) {
+        ensureCNJBAONMDIEIsMutable();
+        cNJBAONMDIE_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @param value The cNJBAONMDIE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addCNJBAONMDIE(int value) {
+        ensureCNJBAONMDIEIsMutable();
+        cNJBAONMDIE_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @param values The cNJBAONMDIE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllCNJBAONMDIE(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureCNJBAONMDIEIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, cNJBAONMDIE_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 CNJBAONMDIE = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCNJBAONMDIE() {
+        cNJBAONMDIE_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList exitPointIdList_ = emptyIntList();
+      private void ensureExitPointIdListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          exitPointIdList_ = mutableCopy(exitPointIdList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @return A list containing the exitPointIdList.
        */
       public java.util.List<java.lang.Integer>
           getExitPointIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(exitPointIdList_) : exitPointIdList_;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @return The count of exitPointIdList.
        */
       public int getExitPointIdListCount() {
         return exitPointIdList_.size();
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @param index The index of the element to return.
        * @return The exitPointIdList at the given index.
        */
@@ -736,7 +919,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return exitPointIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The exitPointIdList to set.
        * @return This builder for chaining.
@@ -749,7 +936,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @param value The exitPointIdList to add.
        * @return This builder for chaining.
        */
@@ -760,7 +951,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @param values The exitPointIdList to add.
        * @return This builder for chaining.
        */
@@ -773,90 +968,15 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 exit_point_id_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearExitPointIdList() {
         exitPointIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList entrancePointIdList_ = emptyIntList();
-      private void ensureEntrancePointIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          entrancePointIdList_ = mutableCopy(entrancePointIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @return A list containing the entrancePointIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getEntrancePointIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(entrancePointIdList_) : entrancePointIdList_;
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @return The count of entrancePointIdList.
-       */
-      public int getEntrancePointIdListCount() {
-        return entrancePointIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @param index The index of the element to return.
-       * @return The entrancePointIdList at the given index.
-       */
-      public int getEntrancePointIdList(int index) {
-        return entrancePointIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The entrancePointIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntrancePointIdList(
-          int index, int value) {
-        ensureEntrancePointIdListIsMutable();
-        entrancePointIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @param value The entrancePointIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addEntrancePointIdList(int value) {
-        ensureEntrancePointIdListIsMutable();
-        entrancePointIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @param values The entrancePointIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllEntrancePointIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEntrancePointIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, entrancePointIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 entrance_point_id_list = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntrancePointIdList() {
-        entrancePointIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -866,14 +986,22 @@ public final class IrodoriChessMysteryInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo, emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.Builder, emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfoOrBuilder> entranceDetailInfoBuilder_;
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        * @return Whether the entranceDetailInfo field is set.
        */
       public boolean hasEntranceDetailInfo() {
         return entranceDetailInfoBuilder_ != null || entranceDetailInfo_ != null;
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        * @return The entranceDetailInfo.
        */
       public emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo getEntranceDetailInfo() {
@@ -884,7 +1012,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public Builder setEntranceDetailInfo(emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo value) {
         if (entranceDetailInfoBuilder_ == null) {
@@ -900,7 +1032,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public Builder setEntranceDetailInfo(
           emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.Builder builderForValue) {
@@ -914,7 +1050,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public Builder mergeEntranceDetailInfo(emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo value) {
         if (entranceDetailInfoBuilder_ == null) {
@@ -932,7 +1072,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public Builder clearEntranceDetailInfo() {
         if (entranceDetailInfoBuilder_ == null) {
@@ -946,7 +1090,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.Builder getEntranceDetailInfoBuilder() {
         
@@ -954,7 +1102,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         return getEntranceDetailInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfoOrBuilder getEntranceDetailInfoOrBuilder() {
         if (entranceDetailInfoBuilder_ != null) {
@@ -965,7 +1117,11 @@ public final class IrodoriChessMysteryInfoOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.IrodoriChessEntranceDetailInfo entrance_detail_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo, emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfo.Builder, emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.IrodoriChessEntranceDetailInfoOrBuilder> 
@@ -1048,12 +1204,12 @@ public final class IrodoriChessMysteryInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035IrodoriChessMysteryInfo.proto\032$Irodori" +
-      "ChessEntranceDetailInfo.proto\"\224\001\n\027Irodor" +
-      "iChessMysteryInfo\022\032\n\022exit_point_id_list\030" +
-      "\001 \003(\r\022\036\n\026entrance_point_id_list\030\013 \003(\r\022=\n" +
-      "\024entrance_detail_info\030\014 \001(\0132\037.IrodoriChe" +
-      "ssEntranceDetailInfoB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "ChessEntranceDetailInfo.proto\"\211\001\n\027Irodor" +
+      "iChessMysteryInfo\022\023\n\013CNJBAONMDIE\030\005 \003(\r\022\032" +
+      "\n\022exit_point_id_list\030\003 \003(\r\022=\n\024entrance_d" +
+      "etail_info\030\n \001(\0132\037.IrodoriChessEntranceD" +
+      "etailInfoB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1065,7 +1221,7 @@ public final class IrodoriChessMysteryInfoOuterClass {
     internal_static_IrodoriChessMysteryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriChessMysteryInfo_descriptor,
-        new java.lang.String[] { "ExitPointIdList", "EntrancePointIdList", "EntranceDetailInfo", });
+        new java.lang.String[] { "CNJBAONMDIE", "ExitPointIdList", "EntranceDetailInfo", });
     emu.grasscutter.net.proto.IrodoriChessEntranceDetailInfoOuterClass.getDescriptor();
   }
 

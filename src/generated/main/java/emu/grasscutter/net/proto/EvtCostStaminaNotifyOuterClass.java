@@ -19,20 +19,28 @@ public final class EvtCostStaminaNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 skill_id = 3;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>float cost_stamina = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>float cost_stamina = 2;</code>
      * @return The costStamina.
      */
     float getCostStamina();
   }
   /**
    * <pre>
-   * CmdId: 5727
+   * CmdId: 1915
    * </pre>
    *
    * Protobuf type {@code EvtCostStaminaNotify}
@@ -79,12 +87,12 @@ public final class EvtCostStaminaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
+            case 21: {
 
               costStamina_ = input.readFloat();
               break;
             }
-            case 40: {
+            case 24: {
 
               skillId_ = input.readUInt32();
               break;
@@ -121,10 +129,14 @@ public final class EvtCostStaminaNotifyOuterClass {
               emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify.class, emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 5;
+    public static final int SKILL_ID_FIELD_NUMBER = 3;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 skill_id = 3;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -132,10 +144,14 @@ public final class EvtCostStaminaNotifyOuterClass {
       return skillId_;
     }
 
-    public static final int COST_STAMINA_FIELD_NUMBER = 4;
+    public static final int COST_STAMINA_FIELD_NUMBER = 2;
     private float costStamina_;
     /**
-     * <code>float cost_stamina = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>float cost_stamina = 2;</code>
      * @return The costStamina.
      */
     @java.lang.Override
@@ -158,10 +174,10 @@ public final class EvtCostStaminaNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (costStamina_ != 0F) {
-        output.writeFloat(4, costStamina_);
+        output.writeFloat(2, costStamina_);
       }
       if (skillId_ != 0) {
-        output.writeUInt32(5, skillId_);
+        output.writeUInt32(3, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +190,11 @@ public final class EvtCostStaminaNotifyOuterClass {
       size = 0;
       if (costStamina_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, costStamina_);
+          .computeFloatSize(2, costStamina_);
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, skillId_);
+          .computeUInt32Size(3, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,7 +329,7 @@ public final class EvtCostStaminaNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5727
+     * CmdId: 1915
      * </pre>
      *
      * Protobuf type {@code EvtCostStaminaNotify}
@@ -470,7 +486,11 @@ public final class EvtCostStaminaNotifyOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 3;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -478,7 +498,11 @@ public final class EvtCostStaminaNotifyOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 3;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +513,11 @@ public final class EvtCostStaminaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -501,7 +529,11 @@ public final class EvtCostStaminaNotifyOuterClass {
 
       private float costStamina_ ;
       /**
-       * <code>float cost_stamina = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float cost_stamina = 2;</code>
        * @return The costStamina.
        */
       @java.lang.Override
@@ -509,7 +541,11 @@ public final class EvtCostStaminaNotifyOuterClass {
         return costStamina_;
       }
       /**
-       * <code>float cost_stamina = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float cost_stamina = 2;</code>
        * @param value The costStamina to set.
        * @return This builder for chaining.
        */
@@ -520,7 +556,11 @@ public final class EvtCostStaminaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>float cost_stamina = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float cost_stamina = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostStamina() {
@@ -597,8 +637,8 @@ public final class EvtCostStaminaNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032EvtCostStaminaNotify.proto\">\n\024EvtCostS" +
-      "taminaNotify\022\020\n\010skill_id\030\005 \001(\r\022\024\n\014cost_s" +
-      "tamina\030\004 \001(\002B\033\n\031emu.grasscutter.net.prot" +
+      "taminaNotify\022\020\n\010skill_id\030\003 \001(\r\022\024\n\014cost_s" +
+      "tamina\030\002 \001(\002B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

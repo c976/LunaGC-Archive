@@ -19,16 +19,16 @@ public final class DeactiveGadgetOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ABGKFCBNDIE = 3;</code>
-     * @return The aBGKFCBNDIE.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_OJMDKDFBOAM = 8;</code>
+     * @return The unk37OJMDKDFBOAM.
      */
-    int getABGKFCBNDIE();
+    int getUnk37OJMDKDFBOAM();
   }
   /**
-   * <pre>
-   * Obf: GCEHGMNJNOG
-   * </pre>
-   *
    * Protobuf type {@code DeactiveGadget}
    */
   public static final class DeactiveGadget extends
@@ -73,9 +73,9 @@ public final class DeactiveGadgetOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 64: {
 
-              aBGKFCBNDIE_ = input.readUInt32();
+              unk37OJMDKDFBOAM_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +110,19 @@ public final class DeactiveGadgetOuterClass {
               emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget.class, emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget.Builder.class);
     }
 
-    public static final int ABGKFCBNDIE_FIELD_NUMBER = 3;
-    private int aBGKFCBNDIE_;
+    public static final int UNK_37_OJMDKDFBOAM_FIELD_NUMBER = 8;
+    private int unk37OJMDKDFBOAM_;
     /**
-     * <code>uint32 ABGKFCBNDIE = 3;</code>
-     * @return The aBGKFCBNDIE.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_OJMDKDFBOAM = 8;</code>
+     * @return The unk37OJMDKDFBOAM.
      */
     @java.lang.Override
-    public int getABGKFCBNDIE() {
-      return aBGKFCBNDIE_;
+    public int getUnk37OJMDKDFBOAM() {
+      return unk37OJMDKDFBOAM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +139,8 @@ public final class DeactiveGadgetOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aBGKFCBNDIE_ != 0) {
-        output.writeUInt32(3, aBGKFCBNDIE_);
+      if (unk37OJMDKDFBOAM_ != 0) {
+        output.writeUInt32(8, unk37OJMDKDFBOAM_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +151,9 @@ public final class DeactiveGadgetOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aBGKFCBNDIE_ != 0) {
+      if (unk37OJMDKDFBOAM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, aBGKFCBNDIE_);
+          .computeUInt32Size(8, unk37OJMDKDFBOAM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +170,8 @@ public final class DeactiveGadgetOuterClass {
       }
       emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget other = (emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget) obj;
 
-      if (getABGKFCBNDIE()
-          != other.getABGKFCBNDIE()) return false;
+      if (getUnk37OJMDKDFBOAM()
+          != other.getUnk37OJMDKDFBOAM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +183,8 @@ public final class DeactiveGadgetOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ABGKFCBNDIE_FIELD_NUMBER;
-      hash = (53 * hash) + getABGKFCBNDIE();
+      hash = (37 * hash) + UNK_37_OJMDKDFBOAM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk37OJMDKDFBOAM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -277,10 +281,6 @@ public final class DeactiveGadgetOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GCEHGMNJNOG
-     * </pre>
-     *
      * Protobuf type {@code DeactiveGadget}
      */
     public static final class Builder extends
@@ -318,7 +318,7 @@ public final class DeactiveGadgetOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aBGKFCBNDIE_ = 0;
+        unk37OJMDKDFBOAM_ = 0;
 
         return this;
       }
@@ -346,7 +346,7 @@ public final class DeactiveGadgetOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget buildPartial() {
         emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget result = new emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget(this);
-        result.aBGKFCBNDIE_ = aBGKFCBNDIE_;
+        result.unk37OJMDKDFBOAM_ = unk37OJMDKDFBOAM_;
         onBuilt();
         return result;
       }
@@ -395,8 +395,8 @@ public final class DeactiveGadgetOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget other) {
         if (other == emu.grasscutter.net.proto.DeactiveGadgetOuterClass.DeactiveGadget.getDefaultInstance()) return this;
-        if (other.getABGKFCBNDIE() != 0) {
-          setABGKFCBNDIE(other.getABGKFCBNDIE());
+        if (other.getUnk37OJMDKDFBOAM() != 0) {
+          setUnk37OJMDKDFBOAM(other.getUnk37OJMDKDFBOAM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +427,45 @@ public final class DeactiveGadgetOuterClass {
         return this;
       }
 
-      private int aBGKFCBNDIE_ ;
+      private int unk37OJMDKDFBOAM_ ;
       /**
-       * <code>uint32 ABGKFCBNDIE = 3;</code>
-       * @return The aBGKFCBNDIE.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 8;</code>
+       * @return The unk37OJMDKDFBOAM.
        */
       @java.lang.Override
-      public int getABGKFCBNDIE() {
-        return aBGKFCBNDIE_;
+      public int getUnk37OJMDKDFBOAM() {
+        return unk37OJMDKDFBOAM_;
       }
       /**
-       * <code>uint32 ABGKFCBNDIE = 3;</code>
-       * @param value The aBGKFCBNDIE to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 8;</code>
+       * @param value The unk37OJMDKDFBOAM to set.
        * @return This builder for chaining.
        */
-      public Builder setABGKFCBNDIE(int value) {
+      public Builder setUnk37OJMDKDFBOAM(int value) {
         
-        aBGKFCBNDIE_ = value;
+        unk37OJMDKDFBOAM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ABGKFCBNDIE = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearABGKFCBNDIE() {
+      public Builder clearUnk37OJMDKDFBOAM() {
         
-        aBGKFCBNDIE_ = 0;
+        unk37OJMDKDFBOAM_ = 0;
         onChanged();
         return this;
       }
@@ -524,9 +536,9 @@ public final class DeactiveGadgetOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024DeactiveGadget.proto\"%\n\016DeactiveGadget" +
-      "\022\023\n\013ABGKFCBNDIE\030\003 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\024DeactiveGadget.proto\",\n\016DeactiveGadget" +
+      "\022\032\n\022unk_37_OJMDKDFBOAM\030\010 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -537,7 +549,7 @@ public final class DeactiveGadgetOuterClass {
     internal_static_DeactiveGadget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeactiveGadget_descriptor,
-        new java.lang.String[] { "ABGKFCBNDIE", });
+        new java.lang.String[] { "Unk37OJMDKDFBOAM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,7 +19,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 play_index = 14;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
@@ -32,8 +32,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3019
-   * Obf: FONHNGCLNGB
+   * CmdId: 20899
    * </pre>
    *
    * Protobuf type {@code MultistagePlayStageEndNotify}
@@ -80,14 +79,14 @@ public final class MultistagePlayStageEndNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              playIndex_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               groupId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              playIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,10 @@ public final class MultistagePlayStageEndNotifyOuterClass {
               emu.grasscutter.net.proto.MultistagePlayStageEndNotifyOuterClass.MultistagePlayStageEndNotify.class, emu.grasscutter.net.proto.MultistagePlayStageEndNotifyOuterClass.MultistagePlayStageEndNotify.Builder.class);
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 14;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 4;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 14;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class MultistagePlayStageEndNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (playIndex_ != 0) {
+        output.writeUInt32(4, playIndex_);
+      }
       if (groupId_ != 0) {
         output.writeUInt32(6, groupId_);
-      }
-      if (playIndex_ != 0) {
-        output.writeUInt32(14, playIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class MultistagePlayStageEndNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (playIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, playIndex_);
+      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, groupId_);
-      }
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, playIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3019
-     * Obf: FONHNGCLNGB
+     * CmdId: 20899
      * </pre>
      *
      * Protobuf type {@code MultistagePlayStageEndNotify}
@@ -470,7 +468,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
 
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 14;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 14;</code>
+       * <code>uint32 play_index = 4;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 14;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
@@ -598,7 +596,7 @@ public final class MultistagePlayStageEndNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"MultistagePlayStageEndNotify.proto\"D\n\034" +
       "MultistagePlayStageEndNotify\022\022\n\nplay_ind" +
-      "ex\030\016 \001(\r\022\020\n\010group_id\030\006 \001(\rB\033\n\031emu.grassc" +
+      "ex\030\004 \001(\r\022\020\n\010group_id\030\006 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

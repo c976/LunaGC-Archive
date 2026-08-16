@@ -19,22 +19,18 @@ public final class TeamChainChooseAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 2;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>bool is_trial_avatar = 5;</code>
+     * <code>bool is_trial_avatar = 11;</code>
      * @return The isTrialAvatar.
      */
     boolean getIsTrialAvatar();
   }
   /**
-   * <pre>
-   * Obf: PILDGBGEJLC
-   * </pre>
-   *
    * Protobuf type {@code TeamChainChooseAvatarInfo}
    */
   public static final class TeamChainChooseAvatarInfo extends
@@ -79,14 +75,14 @@ public final class TeamChainChooseAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              isTrialAvatar_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 16: {
 
               avatarId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              isTrialAvatar_ = input.readBool();
               break;
             }
             default: {
@@ -121,10 +117,10 @@ public final class TeamChainChooseAvatarInfoOuterClass {
               emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.class, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 12;
+    public static final int AVATAR_ID_FIELD_NUMBER = 2;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 2;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class TeamChainChooseAvatarInfoOuterClass {
       return avatarId_;
     }
 
-    public static final int IS_TRIAL_AVATAR_FIELD_NUMBER = 5;
+    public static final int IS_TRIAL_AVATAR_FIELD_NUMBER = 11;
     private boolean isTrialAvatar_;
     /**
-     * <code>bool is_trial_avatar = 5;</code>
+     * <code>bool is_trial_avatar = 11;</code>
      * @return The isTrialAvatar.
      */
     @java.lang.Override
@@ -157,11 +153,11 @@ public final class TeamChainChooseAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTrialAvatar_ != false) {
-        output.writeBool(5, isTrialAvatar_);
-      }
       if (avatarId_ != 0) {
-        output.writeUInt32(12, avatarId_);
+        output.writeUInt32(2, avatarId_);
+      }
+      if (isTrialAvatar_ != false) {
+        output.writeBool(11, isTrialAvatar_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class TeamChainChooseAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTrialAvatar_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isTrialAvatar_);
-      }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, avatarId_);
+          .computeUInt32Size(2, avatarId_);
+      }
+      if (isTrialAvatar_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isTrialAvatar_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,10 +307,6 @@ public final class TeamChainChooseAvatarInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PILDGBGEJLC
-     * </pre>
-     *
      * Protobuf type {@code TeamChainChooseAvatarInfo}
      */
     public static final class Builder extends
@@ -469,7 +461,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 2;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -477,7 +469,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 2;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -488,7 +480,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -500,7 +492,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
 
       private boolean isTrialAvatar_ ;
       /**
-       * <code>bool is_trial_avatar = 5;</code>
+       * <code>bool is_trial_avatar = 11;</code>
        * @return The isTrialAvatar.
        */
       @java.lang.Override
@@ -508,7 +500,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
         return isTrialAvatar_;
       }
       /**
-       * <code>bool is_trial_avatar = 5;</code>
+       * <code>bool is_trial_avatar = 11;</code>
        * @param value The isTrialAvatar to set.
        * @return This builder for chaining.
        */
@@ -519,7 +511,7 @@ public final class TeamChainChooseAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial_avatar = 5;</code>
+       * <code>bool is_trial_avatar = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrialAvatar() {
@@ -596,8 +588,8 @@ public final class TeamChainChooseAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TeamChainChooseAvatarInfo.proto\"G\n\031Tea" +
-      "mChainChooseAvatarInfo\022\021\n\tavatar_id\030\014 \001(" +
-      "\r\022\027\n\017is_trial_avatar\030\005 \001(\010B\033\n\031emu.grassc" +
+      "mChainChooseAvatarInfo\022\021\n\tavatar_id\030\002 \001(" +
+      "\r\022\027\n\017is_trial_avatar\030\013 \001(\010B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

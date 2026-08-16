@@ -19,45 +19,44 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+     * <code>uint32 schedule_id = 4;</code>
+     * @return The scheduleId.
      */
-    java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> 
-        getAcceptGiftResultInfoListList();
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo getAcceptGiftResultInfoList(int index);
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    int getAcceptGiftResultInfoListCount();
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> 
-        getAcceptGiftResultInfoListOrBuilderList();
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder getAcceptGiftResultInfoListOrBuilder(
-        int index);
+    int getScheduleId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 schedule_id = 1;</code>
-     * @return The scheduleId.
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
      */
-    int getScheduleId();
+    java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> 
+        getAcceptGiftResultInfoListList();
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo getAcceptGiftResultInfoList(int index);
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    int getAcceptGiftResultInfoListCount();
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> 
+        getAcceptGiftResultInfoListOrBuilderList();
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder getAcceptGiftResultInfoListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 26260
-   * Obf: PDAIDPJNHEE
+   * CmdId: 9668
    * </pre>
    *
    * Protobuf type {@code ActivityAcceptAllGiveGiftRsp}
@@ -106,23 +105,23 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 18: {
+            case 72: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 acceptGiftResultInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               acceptGiftResultInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -160,50 +159,21 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
               emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp.class, emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp.Builder.class);
     }
 
-    public static final int ACCEPT_GIFT_RESULT_INFO_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> acceptGiftResultInfoList_;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 4;
+    private int scheduleId_;
     /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+     * <code>uint32 schedule_id = 4;</code>
+     * @return The scheduleId.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> getAcceptGiftResultInfoListList() {
-      return acceptGiftResultInfoList_;
-    }
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> 
-        getAcceptGiftResultInfoListOrBuilderList() {
-      return acceptGiftResultInfoList_;
-    }
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    @java.lang.Override
-    public int getAcceptGiftResultInfoListCount() {
-      return acceptGiftResultInfoList_.size();
-    }
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo getAcceptGiftResultInfoList(int index) {
-      return acceptGiftResultInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder getAcceptGiftResultInfoListOrBuilder(
-        int index) {
-      return acceptGiftResultInfoList_.get(index);
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -211,15 +181,44 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 1;
-    private int scheduleId_;
+    public static final int ACCEPT_GIFT_RESULT_INFO_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> acceptGiftResultInfoList_;
     /**
-     * <code>uint32 schedule_id = 1;</code>
-     * @return The scheduleId.
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
      */
     @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
+    public java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> getAcceptGiftResultInfoListList() {
+      return acceptGiftResultInfoList_;
+    }
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> 
+        getAcceptGiftResultInfoListOrBuilderList() {
+      return acceptGiftResultInfoList_;
+    }
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public int getAcceptGiftResultInfoListCount() {
+      return acceptGiftResultInfoList_.size();
+    }
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo getAcceptGiftResultInfoList(int index) {
+      return acceptGiftResultInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder getAcceptGiftResultInfoListOrBuilder(
+        int index) {
+      return acceptGiftResultInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -237,13 +236,13 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(1, scheduleId_);
-      }
-      for (int i = 0; i < acceptGiftResultInfoList_.size(); i++) {
-        output.writeMessage(2, acceptGiftResultInfoList_.get(i));
+        output.writeUInt32(4, scheduleId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(9, retcode_);
+      }
+      for (int i = 0; i < acceptGiftResultInfoList_.size(); i++) {
+        output.writeMessage(14, acceptGiftResultInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -256,15 +255,15 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, scheduleId_);
-      }
-      for (int i = 0; i < acceptGiftResultInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, acceptGiftResultInfoList_.get(i));
+          .computeUInt32Size(4, scheduleId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(9, retcode_);
+      }
+      for (int i = 0; i < acceptGiftResultInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, acceptGiftResultInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,12 +280,12 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp other = (emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp) obj;
 
-      if (!getAcceptGiftResultInfoListList()
-          .equals(other.getAcceptGiftResultInfoListList())) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (!getAcceptGiftResultInfoListList()
+          .equals(other.getAcceptGiftResultInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -298,14 +297,14 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getAcceptGiftResultInfoListCount() > 0) {
         hash = (37 * hash) + ACCEPT_GIFT_RESULT_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAcceptGiftResultInfoListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -403,8 +402,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26260
-     * Obf: PDAIDPJNHEE
+     * CmdId: 9668
      * </pre>
      *
      * Protobuf type {@code ActivityAcceptAllGiveGiftRsp}
@@ -445,16 +443,16 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        scheduleId_ = 0;
+
+        retcode_ = 0;
+
         if (acceptGiftResultInfoListBuilder_ == null) {
           acceptGiftResultInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           acceptGiftResultInfoListBuilder_.clear();
         }
-        retcode_ = 0;
-
-        scheduleId_ = 0;
-
         return this;
       }
 
@@ -482,6 +480,8 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       public emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp result = new emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp(this);
         int from_bitField0_ = bitField0_;
+        result.scheduleId_ = scheduleId_;
+        result.retcode_ = retcode_;
         if (acceptGiftResultInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             acceptGiftResultInfoList_ = java.util.Collections.unmodifiableList(acceptGiftResultInfoList_);
@@ -491,8 +491,6 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         } else {
           result.acceptGiftResultInfoList_ = acceptGiftResultInfoListBuilder_.build();
         }
-        result.retcode_ = retcode_;
-        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -541,6 +539,12 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityAcceptAllGiveGiftRspOuterClass.ActivityAcceptAllGiveGiftRsp.getDefaultInstance()) return this;
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (acceptGiftResultInfoListBuilder_ == null) {
           if (!other.acceptGiftResultInfoList_.isEmpty()) {
             if (acceptGiftResultInfoList_.isEmpty()) {
@@ -566,12 +570,6 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
               acceptGiftResultInfoListBuilder_.addAllMessages(other.acceptGiftResultInfoList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,6 +601,68 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
       }
       private int bitField0_;
 
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 4;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 4;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> acceptGiftResultInfoList_ =
         java.util.Collections.emptyList();
       private void ensureAcceptGiftResultInfoListIsMutable() {
@@ -616,7 +676,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
           emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> acceptGiftResultInfoListBuilder_;
 
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> getAcceptGiftResultInfoListList() {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -626,7 +686,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public int getAcceptGiftResultInfoListCount() {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -636,7 +696,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo getAcceptGiftResultInfoList(int index) {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -646,7 +706,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder setAcceptGiftResultInfoList(
           int index, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo value) {
@@ -663,7 +723,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder setAcceptGiftResultInfoList(
           int index, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder builderForValue) {
@@ -677,7 +737,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder addAcceptGiftResultInfoList(emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo value) {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -693,7 +753,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder addAcceptGiftResultInfoList(
           int index, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo value) {
@@ -710,7 +770,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder addAcceptGiftResultInfoList(
           emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder builderForValue) {
@@ -724,7 +784,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder addAcceptGiftResultInfoList(
           int index, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder builderForValue) {
@@ -738,7 +798,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder addAllAcceptGiftResultInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo> values) {
@@ -753,7 +813,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder clearAcceptGiftResultInfoList() {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -766,7 +826,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public Builder removeAcceptGiftResultInfoList(int index) {
         if (acceptGiftResultInfoListBuilder_ == null) {
@@ -779,14 +839,14 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder getAcceptGiftResultInfoListBuilder(
           int index) {
         return getAcceptGiftResultInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder getAcceptGiftResultInfoListOrBuilder(
           int index) {
@@ -796,7 +856,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfoOrBuilder> 
            getAcceptGiftResultInfoListOrBuilderList() {
@@ -807,14 +867,14 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder addAcceptGiftResultInfoListBuilder() {
         return getAcceptGiftResultInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder addAcceptGiftResultInfoListBuilder(
           int index) {
@@ -822,7 +882,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
             index, emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 2;</code>
+       * <code>repeated .ActivityAcceptGiftResultInfo accept_gift_result_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.ActivityAcceptGiftResultInfo.Builder> 
            getAcceptGiftResultInfoListBuilderList() {
@@ -841,68 +901,6 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
           acceptGiftResultInfoList_ = null;
         }
         return acceptGiftResultInfoListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -973,10 +971,10 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ActivityAcceptAllGiveGiftRsp.proto\032\"Ac" +
       "tivityAcceptGiftResultInfo.proto\"\211\001\n\034Act" +
-      "ivityAcceptAllGiveGiftRsp\022C\n\034accept_gift" +
-      "_result_info_list\030\002 \003(\0132\035.ActivityAccept" +
-      "GiftResultInfo\022\017\n\007retcode\030\010 \001(\005\022\023\n\013sched" +
-      "ule_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ivityAcceptAllGiveGiftRsp\022\023\n\013schedule_id" +
+      "\030\004 \001(\r\022\017\n\007retcode\030\t \001(\005\022C\n\034accept_gift_r" +
+      "esult_info_list\030\016 \003(\0132\035.ActivityAcceptGi" +
+      "ftResultInfoB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -989,7 +987,7 @@ public final class ActivityAcceptAllGiveGiftRspOuterClass {
     internal_static_ActivityAcceptAllGiveGiftRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityAcceptAllGiveGiftRsp_descriptor,
-        new java.lang.String[] { "AcceptGiftResultInfoList", "Retcode", "ScheduleId", });
+        new java.lang.String[] { "ScheduleId", "Retcode", "AcceptGiftResultInfoList", });
     emu.grasscutter.net.proto.ActivityAcceptGiftResultInfoOuterClass.getDescriptor();
   }
 

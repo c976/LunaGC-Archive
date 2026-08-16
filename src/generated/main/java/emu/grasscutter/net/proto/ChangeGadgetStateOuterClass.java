@@ -19,22 +19,26 @@ public final class ChangeGadgetStateOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_state = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_OJMDKDFBOAM = 2;</code>
+     * @return The unk37OJMDKDFBOAM.
+     */
+    int getUnk37OJMDKDFBOAM();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 gadget_state = 8;</code>
      * @return The gadgetState.
      */
     int getGadgetState();
-
-    /**
-     * <code>uint32 ABGKFCBNDIE = 10;</code>
-     * @return The aBGKFCBNDIE.
-     */
-    int getABGKFCBNDIE();
   }
   /**
-   * <pre>
-   * Obf: CJHNGBMFMFH
-   * </pre>
-   *
    * Protobuf type {@code ChangeGadgetState}
    */
   public static final class ChangeGadgetState extends
@@ -79,14 +83,14 @@ public final class ChangeGadgetStateOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              gadgetState_ = input.readUInt32();
+              unk37OJMDKDFBOAM_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 64: {
 
-              aBGKFCBNDIE_ = input.readUInt32();
+              gadgetState_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +125,34 @@ public final class ChangeGadgetStateOuterClass {
               emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState.class, emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState.Builder.class);
     }
 
-    public static final int GADGET_STATE_FIELD_NUMBER = 1;
+    public static final int UNK_37_OJMDKDFBOAM_FIELD_NUMBER = 2;
+    private int unk37OJMDKDFBOAM_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_OJMDKDFBOAM = 2;</code>
+     * @return The unk37OJMDKDFBOAM.
+     */
+    @java.lang.Override
+    public int getUnk37OJMDKDFBOAM() {
+      return unk37OJMDKDFBOAM_;
+    }
+
+    public static final int GADGET_STATE_FIELD_NUMBER = 8;
     private int gadgetState_;
     /**
-     * <code>uint32 gadget_state = 1;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 gadget_state = 8;</code>
      * @return The gadgetState.
      */
     @java.lang.Override
     public int getGadgetState() {
       return gadgetState_;
-    }
-
-    public static final int ABGKFCBNDIE_FIELD_NUMBER = 10;
-    private int aBGKFCBNDIE_;
-    /**
-     * <code>uint32 ABGKFCBNDIE = 10;</code>
-     * @return The aBGKFCBNDIE.
-     */
-    @java.lang.Override
-    public int getABGKFCBNDIE() {
-      return aBGKFCBNDIE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +169,11 @@ public final class ChangeGadgetStateOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetState_ != 0) {
-        output.writeUInt32(1, gadgetState_);
+      if (unk37OJMDKDFBOAM_ != 0) {
+        output.writeUInt32(2, unk37OJMDKDFBOAM_);
       }
-      if (aBGKFCBNDIE_ != 0) {
-        output.writeUInt32(10, aBGKFCBNDIE_);
+      if (gadgetState_ != 0) {
+        output.writeUInt32(8, gadgetState_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +184,13 @@ public final class ChangeGadgetStateOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk37OJMDKDFBOAM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, unk37OJMDKDFBOAM_);
+      }
       if (gadgetState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, gadgetState_);
-      }
-      if (aBGKFCBNDIE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, aBGKFCBNDIE_);
+          .computeUInt32Size(8, gadgetState_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +207,10 @@ public final class ChangeGadgetStateOuterClass {
       }
       emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState other = (emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState) obj;
 
+      if (getUnk37OJMDKDFBOAM()
+          != other.getUnk37OJMDKDFBOAM()) return false;
       if (getGadgetState()
           != other.getGadgetState()) return false;
-      if (getABGKFCBNDIE()
-          != other.getABGKFCBNDIE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +222,10 @@ public final class ChangeGadgetStateOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK_37_OJMDKDFBOAM_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk37OJMDKDFBOAM();
       hash = (37 * hash) + GADGET_STATE_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetState();
-      hash = (37 * hash) + ABGKFCBNDIE_FIELD_NUMBER;
-      hash = (53 * hash) + getABGKFCBNDIE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +322,6 @@ public final class ChangeGadgetStateOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CJHNGBMFMFH
-     * </pre>
-     *
      * Protobuf type {@code ChangeGadgetState}
      */
     public static final class Builder extends
@@ -351,9 +359,9 @@ public final class ChangeGadgetStateOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetState_ = 0;
+        unk37OJMDKDFBOAM_ = 0;
 
-        aBGKFCBNDIE_ = 0;
+        gadgetState_ = 0;
 
         return this;
       }
@@ -381,8 +389,8 @@ public final class ChangeGadgetStateOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState buildPartial() {
         emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState result = new emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState(this);
+        result.unk37OJMDKDFBOAM_ = unk37OJMDKDFBOAM_;
         result.gadgetState_ = gadgetState_;
-        result.aBGKFCBNDIE_ = aBGKFCBNDIE_;
         onBuilt();
         return result;
       }
@@ -431,11 +439,11 @@ public final class ChangeGadgetStateOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState other) {
         if (other == emu.grasscutter.net.proto.ChangeGadgetStateOuterClass.ChangeGadgetState.getDefaultInstance()) return this;
+        if (other.getUnk37OJMDKDFBOAM() != 0) {
+          setUnk37OJMDKDFBOAM(other.getUnk37OJMDKDFBOAM());
+        }
         if (other.getGadgetState() != 0) {
           setGadgetState(other.getGadgetState());
-        }
-        if (other.getABGKFCBNDIE() != 0) {
-          setABGKFCBNDIE(other.getABGKFCBNDIE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,9 +474,56 @@ public final class ChangeGadgetStateOuterClass {
         return this;
       }
 
+      private int unk37OJMDKDFBOAM_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 2;</code>
+       * @return The unk37OJMDKDFBOAM.
+       */
+      @java.lang.Override
+      public int getUnk37OJMDKDFBOAM() {
+        return unk37OJMDKDFBOAM_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 2;</code>
+       * @param value The unk37OJMDKDFBOAM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk37OJMDKDFBOAM(int value) {
+        
+        unk37OJMDKDFBOAM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_OJMDKDFBOAM = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk37OJMDKDFBOAM() {
+        
+        unk37OJMDKDFBOAM_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int gadgetState_ ;
       /**
-       * <code>uint32 gadget_state = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 gadget_state = 8;</code>
        * @return The gadgetState.
        */
       @java.lang.Override
@@ -476,7 +531,11 @@ public final class ChangeGadgetStateOuterClass {
         return gadgetState_;
       }
       /**
-       * <code>uint32 gadget_state = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 gadget_state = 8;</code>
        * @param value The gadgetState to set.
        * @return This builder for chaining.
        */
@@ -487,43 +546,16 @@ public final class ChangeGadgetStateOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_state = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 gadget_state = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetState() {
         
         gadgetState_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aBGKFCBNDIE_ ;
-      /**
-       * <code>uint32 ABGKFCBNDIE = 10;</code>
-       * @return The aBGKFCBNDIE.
-       */
-      @java.lang.Override
-      public int getABGKFCBNDIE() {
-        return aBGKFCBNDIE_;
-      }
-      /**
-       * <code>uint32 ABGKFCBNDIE = 10;</code>
-       * @param value The aBGKFCBNDIE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setABGKFCBNDIE(int value) {
-        
-        aBGKFCBNDIE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ABGKFCBNDIE = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearABGKFCBNDIE() {
-        
-        aBGKFCBNDIE_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +626,10 @@ public final class ChangeGadgetStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027ChangeGadgetState.proto\">\n\021ChangeGadge" +
-      "tState\022\024\n\014gadget_state\030\001 \001(\r\022\023\n\013ABGKFCBN" +
-      "DIE\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\027ChangeGadgetState.proto\"E\n\021ChangeGadge" +
+      "tState\022\032\n\022unk_37_OJMDKDFBOAM\030\002 \001(\r\022\024\n\014ga" +
+      "dget_state\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +640,7 @@ public final class ChangeGadgetStateOuterClass {
     internal_static_ChangeGadgetState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeGadgetState_descriptor,
-        new java.lang.String[] { "GadgetState", "ABGKFCBNDIE", });
+        new java.lang.String[] { "Unk37OJMDKDFBOAM", "GadgetState", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

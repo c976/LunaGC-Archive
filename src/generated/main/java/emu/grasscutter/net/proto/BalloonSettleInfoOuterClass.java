@@ -19,49 +19,73 @@ public final class BalloonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shoot_count = 1;</code>
-     * @return The shootCount.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
+     * @return Whether the playerInfo field is set.
      */
-    int getShootCount();
+    boolean hasPlayerInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
+     * @return The playerInfo.
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>uint32 max_combo = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 1;</code>
+     * @return The kEABNKEIJAD.
+     */
+    int getKEABNKEIJAD();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 max_combo = 8;</code>
      * @return The maxCombo.
      */
     int getMaxCombo();
 
     /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
-     * @return Whether the playerInfo field is set.
-     */
-    boolean hasPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
-     * @return The playerInfo.
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
-
-    /**
-     * <code>uint32 final_score = 8;</code>
-     * @return The finalScore.
-     */
-    int getFinalScore();
-
-    /**
-     * <code>uint32 uid = 3;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     int getUid();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 OCJALGJEHIF = 2;</code>
+     * @return The oCJALGJEHIF.
+     */
+    int getOCJALGJEHIF();
   }
   /**
-   * <pre>
-   * Obf: OOIBDPPMDNJ
-   * </pre>
-   *
    * Protobuf type {@code BalloonSettleInfo}
    */
   public static final class BalloonSettleInfo extends
@@ -108,15 +132,25 @@ public final class BalloonSettleInfoOuterClass {
               break;
             case 8: {
 
-              shootCount_ = input.readUInt32();
+              kEABNKEIJAD_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 16: {
+
+              oCJALGJEHIF_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 64: {
+
+              maxCombo_ = input.readUInt32();
+              break;
+            }
+            case 82: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -127,16 +161,6 @@ public final class BalloonSettleInfoOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 56: {
-
-              maxCombo_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              finalScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,32 +195,14 @@ public final class BalloonSettleInfoOuterClass {
               emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.class, emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.Builder.class);
     }
 
-    public static final int SHOOT_COUNT_FIELD_NUMBER = 1;
-    private int shootCount_;
-    /**
-     * <code>uint32 shoot_count = 1;</code>
-     * @return The shootCount.
-     */
-    @java.lang.Override
-    public int getShootCount() {
-      return shootCount_;
-    }
-
-    public static final int MAX_COMBO_FIELD_NUMBER = 7;
-    private int maxCombo_;
-    /**
-     * <code>uint32 max_combo = 7;</code>
-     * @return The maxCombo.
-     */
-    @java.lang.Override
-    public int getMaxCombo() {
-      return maxCombo_;
-    }
-
-    public static final int PLAYER_INFO_FIELD_NUMBER = 5;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -204,7 +210,11 @@ public final class BalloonSettleInfoOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -212,33 +222,75 @@ public final class BalloonSettleInfoOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
       return getPlayerInfo();
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 8;
-    private int finalScore_;
+    public static final int KEABNKEIJAD_FIELD_NUMBER = 1;
+    private int kEABNKEIJAD_;
     /**
-     * <code>uint32 final_score = 8;</code>
-     * @return The finalScore.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 1;</code>
+     * @return The kEABNKEIJAD.
      */
     @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
+    public int getKEABNKEIJAD() {
+      return kEABNKEIJAD_;
     }
 
-    public static final int UID_FIELD_NUMBER = 3;
+    public static final int MAX_COMBO_FIELD_NUMBER = 8;
+    private int maxCombo_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 max_combo = 8;</code>
+     * @return The maxCombo.
+     */
+    @java.lang.Override
+    public int getMaxCombo() {
+      return maxCombo_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 7;
     private int uid_;
     /**
-     * <code>uint32 uid = 3;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     @java.lang.Override
     public int getUid() {
       return uid_;
+    }
+
+    public static final int OCJALGJEHIF_FIELD_NUMBER = 2;
+    private int oCJALGJEHIF_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 OCJALGJEHIF = 2;</code>
+     * @return The oCJALGJEHIF.
+     */
+    @java.lang.Override
+    public int getOCJALGJEHIF() {
+      return oCJALGJEHIF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -255,20 +307,20 @@ public final class BalloonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shootCount_ != 0) {
-        output.writeUInt32(1, shootCount_);
+      if (kEABNKEIJAD_ != 0) {
+        output.writeUInt32(1, kEABNKEIJAD_);
+      }
+      if (oCJALGJEHIF_ != 0) {
+        output.writeUInt32(2, oCJALGJEHIF_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(3, uid_);
-      }
-      if (playerInfo_ != null) {
-        output.writeMessage(5, getPlayerInfo());
+        output.writeUInt32(7, uid_);
       }
       if (maxCombo_ != 0) {
-        output.writeUInt32(7, maxCombo_);
+        output.writeUInt32(8, maxCombo_);
       }
-      if (finalScore_ != 0) {
-        output.writeUInt32(8, finalScore_);
+      if (playerInfo_ != null) {
+        output.writeMessage(10, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -279,25 +331,25 @@ public final class BalloonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shootCount_ != 0) {
+      if (kEABNKEIJAD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, shootCount_);
+          .computeUInt32Size(1, kEABNKEIJAD_);
+      }
+      if (oCJALGJEHIF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, oCJALGJEHIF_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, uid_);
-      }
-      if (playerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPlayerInfo());
+          .computeUInt32Size(7, uid_);
       }
       if (maxCombo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxCombo_);
+          .computeUInt32Size(8, maxCombo_);
       }
-      if (finalScore_ != 0) {
+      if (playerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, finalScore_);
+          .computeMessageSize(10, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,19 +366,19 @@ public final class BalloonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo other = (emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo) obj;
 
-      if (getShootCount()
-          != other.getShootCount()) return false;
-      if (getMaxCombo()
-          != other.getMaxCombo()) return false;
       if (hasPlayerInfo() != other.hasPlayerInfo()) return false;
       if (hasPlayerInfo()) {
         if (!getPlayerInfo()
             .equals(other.getPlayerInfo())) return false;
       }
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
+      if (getKEABNKEIJAD()
+          != other.getKEABNKEIJAD()) return false;
+      if (getMaxCombo()
+          != other.getMaxCombo()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getOCJALGJEHIF()
+          != other.getOCJALGJEHIF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,18 +390,18 @@ public final class BalloonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SHOOT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getShootCount();
-      hash = (37 * hash) + MAX_COMBO_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxCombo();
       if (hasPlayerInfo()) {
         hash = (37 * hash) + PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfo().hashCode();
       }
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
+      hash = (37 * hash) + KEABNKEIJAD_FIELD_NUMBER;
+      hash = (53 * hash) + getKEABNKEIJAD();
+      hash = (37 * hash) + MAX_COMBO_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxCombo();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + OCJALGJEHIF_FIELD_NUMBER;
+      hash = (53 * hash) + getOCJALGJEHIF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,10 +498,6 @@ public final class BalloonSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OOIBDPPMDNJ
-     * </pre>
-     *
      * Protobuf type {@code BalloonSettleInfo}
      */
     public static final class Builder extends
@@ -487,19 +535,19 @@ public final class BalloonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        shootCount_ = 0;
-
-        maxCombo_ = 0;
-
         if (playerInfoBuilder_ == null) {
           playerInfo_ = null;
         } else {
           playerInfo_ = null;
           playerInfoBuilder_ = null;
         }
-        finalScore_ = 0;
+        kEABNKEIJAD_ = 0;
+
+        maxCombo_ = 0;
 
         uid_ = 0;
+
+        oCJALGJEHIF_ = 0;
 
         return this;
       }
@@ -527,15 +575,15 @@ public final class BalloonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo result = new emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo(this);
-        result.shootCount_ = shootCount_;
-        result.maxCombo_ = maxCombo_;
         if (playerInfoBuilder_ == null) {
           result.playerInfo_ = playerInfo_;
         } else {
           result.playerInfo_ = playerInfoBuilder_.build();
         }
-        result.finalScore_ = finalScore_;
+        result.kEABNKEIJAD_ = kEABNKEIJAD_;
+        result.maxCombo_ = maxCombo_;
         result.uid_ = uid_;
+        result.oCJALGJEHIF_ = oCJALGJEHIF_;
         onBuilt();
         return result;
       }
@@ -584,20 +632,20 @@ public final class BalloonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BalloonSettleInfoOuterClass.BalloonSettleInfo.getDefaultInstance()) return this;
-        if (other.getShootCount() != 0) {
-          setShootCount(other.getShootCount());
+        if (other.hasPlayerInfo()) {
+          mergePlayerInfo(other.getPlayerInfo());
+        }
+        if (other.getKEABNKEIJAD() != 0) {
+          setKEABNKEIJAD(other.getKEABNKEIJAD());
         }
         if (other.getMaxCombo() != 0) {
           setMaxCombo(other.getMaxCombo());
         }
-        if (other.hasPlayerInfo()) {
-          mergePlayerInfo(other.getPlayerInfo());
-        }
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
+        }
+        if (other.getOCJALGJEHIF() != 0) {
+          setOCJALGJEHIF(other.getOCJALGJEHIF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -628,80 +676,26 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
 
-      private int shootCount_ ;
-      /**
-       * <code>uint32 shoot_count = 1;</code>
-       * @return The shootCount.
-       */
-      @java.lang.Override
-      public int getShootCount() {
-        return shootCount_;
-      }
-      /**
-       * <code>uint32 shoot_count = 1;</code>
-       * @param value The shootCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShootCount(int value) {
-        
-        shootCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 shoot_count = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShootCount() {
-        
-        shootCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int maxCombo_ ;
-      /**
-       * <code>uint32 max_combo = 7;</code>
-       * @return The maxCombo.
-       */
-      @java.lang.Override
-      public int getMaxCombo() {
-        return maxCombo_;
-      }
-      /**
-       * <code>uint32 max_combo = 7;</code>
-       * @param value The maxCombo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxCombo(int value) {
-        
-        maxCombo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_combo = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxCombo() {
-        
-        maxCombo_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
@@ -712,7 +706,11 @@ public final class BalloonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -728,7 +726,11 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -742,7 +744,11 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -760,7 +766,11 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -774,7 +784,11 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -782,7 +796,11 @@ public final class BalloonSettleInfoOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -793,7 +811,11 @@ public final class BalloonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -809,40 +831,99 @@ public final class BalloonSettleInfoOuterClass {
         return playerInfoBuilder_;
       }
 
-      private int finalScore_ ;
+      private int kEABNKEIJAD_ ;
       /**
-       * <code>uint32 final_score = 8;</code>
-       * @return The finalScore.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
+       * @return The kEABNKEIJAD.
        */
       @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
+      public int getKEABNKEIJAD() {
+        return kEABNKEIJAD_;
       }
       /**
-       * <code>uint32 final_score = 8;</code>
-       * @param value The finalScore to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
+       * @param value The kEABNKEIJAD to set.
        * @return This builder for chaining.
        */
-      public Builder setFinalScore(int value) {
+      public Builder setKEABNKEIJAD(int value) {
         
-        finalScore_ = value;
+        kEABNKEIJAD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 final_score = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinalScore() {
+      public Builder clearKEABNKEIJAD() {
         
-        finalScore_ = 0;
+        kEABNKEIJAD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int maxCombo_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 max_combo = 8;</code>
+       * @return The maxCombo.
+       */
+      @java.lang.Override
+      public int getMaxCombo() {
+        return maxCombo_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 max_combo = 8;</code>
+       * @param value The maxCombo to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxCombo(int value) {
+        
+        maxCombo_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 max_combo = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxCombo() {
+        
+        maxCombo_ = 0;
         onChanged();
         return this;
       }
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -850,7 +931,11 @@ public final class BalloonSettleInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -861,12 +946,59 @@ public final class BalloonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oCJALGJEHIF_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 OCJALGJEHIF = 2;</code>
+       * @return The oCJALGJEHIF.
+       */
+      @java.lang.Override
+      public int getOCJALGJEHIF() {
+        return oCJALGJEHIF_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 OCJALGJEHIF = 2;</code>
+       * @param value The oCJALGJEHIF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOCJALGJEHIF(int value) {
+        
+        oCJALGJEHIF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 OCJALGJEHIF = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOCJALGJEHIF() {
+        
+        oCJALGJEHIF_ = 0;
         onChanged();
         return this;
       }
@@ -938,10 +1070,10 @@ public final class BalloonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BalloonSettleInfo.proto\032\026OnlinePlayerI" +
-      "nfo.proto\"\205\001\n\021BalloonSettleInfo\022\023\n\013shoot" +
-      "_count\030\001 \001(\r\022\021\n\tmax_combo\030\007 \001(\r\022&\n\013playe" +
-      "r_info\030\005 \001(\0132\021.OnlinePlayerInfo\022\023\n\013final" +
-      "_score\030\010 \001(\r\022\013\n\003uid\030\003 \001(\rB\033\n\031emu.grasscu" +
+      "nfo.proto\"\205\001\n\021BalloonSettleInfo\022&\n\013playe" +
+      "r_info\030\n \001(\0132\021.OnlinePlayerInfo\022\023\n\013KEABN" +
+      "KEIJAD\030\001 \001(\r\022\021\n\tmax_combo\030\010 \001(\r\022\013\n\003uid\030\007" +
+      " \001(\r\022\023\n\013OCJALGJEHIF\030\002 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -954,7 +1086,7 @@ public final class BalloonSettleInfoOuterClass {
     internal_static_BalloonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BalloonSettleInfo_descriptor,
-        new java.lang.String[] { "ShootCount", "MaxCombo", "PlayerInfo", "FinalScore", "Uid", });
+        new java.lang.String[] { "PlayerInfo", "KEABNKEIJAD", "MaxCombo", "Uid", "OCJALGJEHIF", });
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.getDescriptor();
   }
 

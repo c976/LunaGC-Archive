@@ -19,27 +19,26 @@ public final class CancelCityReputationRequestRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 request_id = 7;</code>
-     * @return The requestId.
-     */
-    int getRequestId();
-
-    /**
      * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     int getCityId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 request_id = 15;</code>
+     * @return The requestId.
+     */
+    int getRequestId();
   }
   /**
    * <pre>
-   * CmdId: 20165
-   * Obf: MPONNLFBBMO
+   * CmdId: 4680
    * </pre>
    *
    * Protobuf type {@code CancelCityReputationRequestRsp}
@@ -91,14 +90,14 @@ public final class CancelCityReputationRequestRspOuterClass {
               cityId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              requestId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 88: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              requestId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,17 +132,6 @@ public final class CancelCityReputationRequestRspOuterClass {
               emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp.class, emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp.Builder.class);
     }
 
-    public static final int REQUEST_ID_FIELD_NUMBER = 7;
-    private int requestId_;
-    /**
-     * <code>uint32 request_id = 7;</code>
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public int getRequestId() {
-      return requestId_;
-    }
-
     public static final int CITY_ID_FIELD_NUMBER = 1;
     private int cityId_;
     /**
@@ -155,15 +143,26 @@ public final class CancelCityReputationRequestRspOuterClass {
       return cityId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int REQUEST_ID_FIELD_NUMBER = 15;
+    private int requestId_;
+    /**
+     * <code>uint32 request_id = 15;</code>
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public int getRequestId() {
+      return requestId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -183,11 +182,11 @@ public final class CancelCityReputationRequestRspOuterClass {
       if (cityId_ != 0) {
         output.writeUInt32(1, cityId_);
       }
-      if (requestId_ != 0) {
-        output.writeUInt32(7, requestId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(11, retcode_);
+      }
+      if (requestId_ != 0) {
+        output.writeUInt32(15, requestId_);
       }
       unknownFields.writeTo(output);
     }
@@ -202,13 +201,13 @@ public final class CancelCityReputationRequestRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, cityId_);
       }
-      if (requestId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, requestId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(11, retcode_);
+      }
+      if (requestId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, requestId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class CancelCityReputationRequestRspOuterClass {
       }
       emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp other = (emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp) obj;
 
-      if (getRequestId()
-          != other.getRequestId()) return false;
       if (getCityId()
           != other.getCityId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRequestId()
+          != other.getRequestId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +241,12 @@ public final class CancelCityReputationRequestRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId();
       hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCityId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class CancelCityReputationRequestRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20165
-     * Obf: MPONNLFBBMO
+     * CmdId: 4680
      * </pre>
      *
      * Protobuf type {@code CancelCityReputationRequestRsp}
@@ -386,11 +384,11 @@ public final class CancelCityReputationRequestRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        requestId_ = 0;
-
         cityId_ = 0;
 
         retcode_ = 0;
+
+        requestId_ = 0;
 
         return this;
       }
@@ -418,9 +416,9 @@ public final class CancelCityReputationRequestRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp buildPartial() {
         emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp result = new emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp(this);
-        result.requestId_ = requestId_;
         result.cityId_ = cityId_;
         result.retcode_ = retcode_;
+        result.requestId_ = requestId_;
         onBuilt();
         return result;
       }
@@ -469,14 +467,14 @@ public final class CancelCityReputationRequestRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp other) {
         if (other == emu.grasscutter.net.proto.CancelCityReputationRequestRspOuterClass.CancelCityReputationRequestRsp.getDefaultInstance()) return this;
-        if (other.getRequestId() != 0) {
-          setRequestId(other.getRequestId());
-        }
         if (other.getCityId() != 0) {
           setCityId(other.getCityId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getRequestId() != 0) {
+          setRequestId(other.getRequestId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,37 +502,6 @@ public final class CancelCityReputationRequestRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int requestId_ ;
-      /**
-       * <code>uint32 request_id = 7;</code>
-       * @return The requestId.
-       */
-      @java.lang.Override
-      public int getRequestId() {
-        return requestId_;
-      }
-      /**
-       * <code>uint32 request_id = 7;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(int value) {
-        
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 request_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-        
-        requestId_ = 0;
-        onChanged();
         return this;
       }
 
@@ -571,7 +538,7 @@ public final class CancelCityReputationRequestRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -579,7 +546,7 @@ public final class CancelCityReputationRequestRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -590,12 +557,43 @@ public final class CancelCityReputationRequestRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int requestId_ ;
+      /**
+       * <code>uint32 request_id = 15;</code>
+       * @return The requestId.
+       */
+      @java.lang.Override
+      public int getRequestId() {
+        return requestId_;
+      }
+      /**
+       * <code>uint32 request_id = 15;</code>
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(int value) {
+        
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 request_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+        
+        requestId_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +665,9 @@ public final class CancelCityReputationRequestRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$CancelCityReputationRequestRsp.proto\"V" +
-      "\n\036CancelCityReputationRequestRsp\022\022\n\nrequ" +
-      "est_id\030\007 \001(\r\022\017\n\007city_id\030\001 \001(\r\022\017\n\007retcode" +
-      "\030\010 \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\n\036CancelCityReputationRequestRsp\022\017\n\007city" +
+      "_id\030\001 \001(\r\022\017\n\007retcode\030\013 \001(\005\022\022\n\nrequest_id" +
+      "\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +679,7 @@ public final class CancelCityReputationRequestRspOuterClass {
     internal_static_CancelCityReputationRequestRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CancelCityReputationRequestRsp_descriptor,
-        new java.lang.String[] { "RequestId", "CityId", "Retcode", });
+        new java.lang.String[] { "CityId", "Retcode", "RequestId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,35 +19,19 @@ public final class FleurFairGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MLBGMECACGJ = 8;</code>
-     * @return The mLBGMECACGJ.
-     */
-    int getMLBGMECACGJ();
-
-    /**
-     * <code>uint32 JJGNMPAAGEM = 3;</code>
-     * @return The jJGNMPAAGEM.
-     */
-    int getJJGNMPAAGEM();
-
-    /**
-     * <code>bool is_success = 13;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 energy = 6;</code>
-     * @return The energy.
-     */
-    int getEnergy();
-
-    /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     int getEnergyStatMapCount();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     boolean containsEnergyStatMap(
         int key);
@@ -58,29 +42,77 @@ public final class FleurFairGallerySettleInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getEnergyStatMap();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getEnergyStatMapMap();
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
 
     int getEnergyStatMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
 
     int getEnergyStatMapOrThrow(
         int key);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MCBIBNHHAEJ = 3;</code>
+     * @return The mCBIBNHHAEJ.
+     */
+    int getMCBIBNHHAEJ();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NMHLBMCJDCG = 7;</code>
+     * @return The nMHLBMCJDCG.
+     */
+    int getNMHLBMCJDCG();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EOFMKMACBBK = 12;</code>
+     * @return The eOFMKMACBBK.
+     */
+    int getEOFMKMACBBK();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_success = 15;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
   }
   /**
-   * <pre>
-   * Obf: GKJMHDPMKHB
-   * </pre>
-   *
    * Protobuf type {@code FleurFairGallerySettleInfo}
    */
   public static final class FleurFairGallerySettleInfo extends
@@ -128,20 +160,20 @@ public final class FleurFairGallerySettleInfoOuterClass {
               break;
             case 24: {
 
-              jJGNMPAAGEM_ = input.readUInt32();
+              mCBIBNHHAEJ_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 56: {
 
-              energy_ = input.readUInt32();
+              nMHLBMCJDCG_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
-              mLBGMECACGJ_ = input.readUInt32();
+              eOFMKMACBBK_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 energyStatMap_ = com.google.protobuf.MapField.newMapField(
                     EnergyStatMapDefaultEntryHolder.defaultEntry);
@@ -154,7 +186,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
                   energyStatMap__.getKey(), energyStatMap__.getValue());
               break;
             }
-            case 104: {
+            case 120: {
 
               isSuccess_ = input.readBool();
               break;
@@ -188,7 +220,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 10:
+        case 13:
           return internalGetEnergyStatMap();
         default:
           throw new RuntimeException(
@@ -203,51 +235,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.class, emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.Builder.class);
     }
 
-    public static final int MLBGMECACGJ_FIELD_NUMBER = 8;
-    private int mLBGMECACGJ_;
-    /**
-     * <code>uint32 MLBGMECACGJ = 8;</code>
-     * @return The mLBGMECACGJ.
-     */
-    @java.lang.Override
-    public int getMLBGMECACGJ() {
-      return mLBGMECACGJ_;
-    }
-
-    public static final int JJGNMPAAGEM_FIELD_NUMBER = 3;
-    private int jJGNMPAAGEM_;
-    /**
-     * <code>uint32 JJGNMPAAGEM = 3;</code>
-     * @return The jJGNMPAAGEM.
-     */
-    @java.lang.Override
-    public int getJJGNMPAAGEM() {
-      return jJGNMPAAGEM_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 13;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 13;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int ENERGY_FIELD_NUMBER = 6;
-    private int energy_;
-    /**
-     * <code>uint32 energy = 6;</code>
-     * @return The energy.
-     */
-    @java.lang.Override
-    public int getEnergy() {
-      return energy_;
-    }
-
-    public static final int ENERGY_STAT_MAP_FIELD_NUMBER = 10;
+    public static final int ENERGY_STAT_MAP_FIELD_NUMBER = 13;
     private static final class EnergyStatMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -274,7 +262,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return internalGetEnergyStatMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
 
     @java.lang.Override
@@ -292,7 +284,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return getEnergyStatMapMap();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     @java.lang.Override
 
@@ -300,7 +296,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return internalGetEnergyStatMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     @java.lang.Override
 
@@ -313,7 +313,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
      */
     @java.lang.Override
 
@@ -326,6 +330,66 @@ public final class FleurFairGallerySettleInfoOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int MCBIBNHHAEJ_FIELD_NUMBER = 3;
+    private int mCBIBNHHAEJ_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MCBIBNHHAEJ = 3;</code>
+     * @return The mCBIBNHHAEJ.
+     */
+    @java.lang.Override
+    public int getMCBIBNHHAEJ() {
+      return mCBIBNHHAEJ_;
+    }
+
+    public static final int NMHLBMCJDCG_FIELD_NUMBER = 7;
+    private int nMHLBMCJDCG_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NMHLBMCJDCG = 7;</code>
+     * @return The nMHLBMCJDCG.
+     */
+    @java.lang.Override
+    public int getNMHLBMCJDCG() {
+      return nMHLBMCJDCG_;
+    }
+
+    public static final int EOFMKMACBBK_FIELD_NUMBER = 12;
+    private int eOFMKMACBBK_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EOFMKMACBBK = 12;</code>
+     * @return The eOFMKMACBBK.
+     */
+    @java.lang.Override
+    public int getEOFMKMACBBK() {
+      return eOFMKMACBBK_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 15;
+    private boolean isSuccess_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_success = 15;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -342,23 +406,23 @@ public final class FleurFairGallerySettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (jJGNMPAAGEM_ != 0) {
-        output.writeUInt32(3, jJGNMPAAGEM_);
+      if (mCBIBNHHAEJ_ != 0) {
+        output.writeUInt32(3, mCBIBNHHAEJ_);
       }
-      if (energy_ != 0) {
-        output.writeUInt32(6, energy_);
+      if (nMHLBMCJDCG_ != 0) {
+        output.writeUInt32(7, nMHLBMCJDCG_);
       }
-      if (mLBGMECACGJ_ != 0) {
-        output.writeUInt32(8, mLBGMECACGJ_);
+      if (eOFMKMACBBK_ != 0) {
+        output.writeUInt32(12, eOFMKMACBBK_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetEnergyStatMap(),
           EnergyStatMapDefaultEntryHolder.defaultEntry,
-          10);
+          13);
       if (isSuccess_ != false) {
-        output.writeBool(13, isSuccess_);
+        output.writeBool(15, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -369,17 +433,17 @@ public final class FleurFairGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (jJGNMPAAGEM_ != 0) {
+      if (mCBIBNHHAEJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, jJGNMPAAGEM_);
+          .computeUInt32Size(3, mCBIBNHHAEJ_);
       }
-      if (energy_ != 0) {
+      if (nMHLBMCJDCG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, energy_);
+          .computeUInt32Size(7, nMHLBMCJDCG_);
       }
-      if (mLBGMECACGJ_ != 0) {
+      if (eOFMKMACBBK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, mLBGMECACGJ_);
+          .computeUInt32Size(12, eOFMKMACBBK_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetEnergyStatMap().getMap().entrySet()) {
@@ -389,11 +453,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, energyStatMap__);
+            .computeMessageSize(13, energyStatMap__);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isSuccess_);
+          .computeBoolSize(15, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -410,16 +474,16 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo other = (emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo) obj;
 
-      if (getMLBGMECACGJ()
-          != other.getMLBGMECACGJ()) return false;
-      if (getJJGNMPAAGEM()
-          != other.getJJGNMPAAGEM()) return false;
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getEnergy()
-          != other.getEnergy()) return false;
       if (!internalGetEnergyStatMap().equals(
           other.internalGetEnergyStatMap())) return false;
+      if (getMCBIBNHHAEJ()
+          != other.getMCBIBNHHAEJ()) return false;
+      if (getNMHLBMCJDCG()
+          != other.getNMHLBMCJDCG()) return false;
+      if (getEOFMKMACBBK()
+          != other.getEOFMKMACBBK()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -431,19 +495,19 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MLBGMECACGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getMLBGMECACGJ();
-      hash = (37 * hash) + JJGNMPAAGEM_FIELD_NUMBER;
-      hash = (53 * hash) + getJJGNMPAAGEM();
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
-      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
-      hash = (53 * hash) + getEnergy();
       if (!internalGetEnergyStatMap().getMap().isEmpty()) {
         hash = (37 * hash) + ENERGY_STAT_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetEnergyStatMap().hashCode();
       }
+      hash = (37 * hash) + MCBIBNHHAEJ_FIELD_NUMBER;
+      hash = (53 * hash) + getMCBIBNHHAEJ();
+      hash = (37 * hash) + NMHLBMCJDCG_FIELD_NUMBER;
+      hash = (53 * hash) + getNMHLBMCJDCG();
+      hash = (37 * hash) + EOFMKMACBBK_FIELD_NUMBER;
+      hash = (53 * hash) + getEOFMKMACBBK();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -540,10 +604,6 @@ public final class FleurFairGallerySettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GKJMHDPMKHB
-     * </pre>
-     *
      * Protobuf type {@code FleurFairGallerySettleInfo}
      */
     public static final class Builder extends
@@ -559,7 +619,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 13:
             return internalGetEnergyStatMap();
           default:
             throw new RuntimeException(
@@ -570,7 +630,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 13:
             return internalGetMutableEnergyStatMap();
           default:
             throw new RuntimeException(
@@ -603,15 +663,15 @@ public final class FleurFairGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mLBGMECACGJ_ = 0;
+        internalGetMutableEnergyStatMap().clear();
+        mCBIBNHHAEJ_ = 0;
 
-        jJGNMPAAGEM_ = 0;
+        nMHLBMCJDCG_ = 0;
+
+        eOFMKMACBBK_ = 0;
 
         isSuccess_ = false;
 
-        energy_ = 0;
-
-        internalGetMutableEnergyStatMap().clear();
         return this;
       }
 
@@ -639,12 +699,12 @@ public final class FleurFairGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo result = new emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.mLBGMECACGJ_ = mLBGMECACGJ_;
-        result.jJGNMPAAGEM_ = jJGNMPAAGEM_;
-        result.isSuccess_ = isSuccess_;
-        result.energy_ = energy_;
         result.energyStatMap_ = internalGetEnergyStatMap();
         result.energyStatMap_.makeImmutable();
+        result.mCBIBNHHAEJ_ = mCBIBNHHAEJ_;
+        result.nMHLBMCJDCG_ = nMHLBMCJDCG_;
+        result.eOFMKMACBBK_ = eOFMKMACBBK_;
+        result.isSuccess_ = isSuccess_;
         onBuilt();
         return result;
       }
@@ -693,20 +753,20 @@ public final class FleurFairGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairGallerySettleInfoOuterClass.FleurFairGallerySettleInfo.getDefaultInstance()) return this;
-        if (other.getMLBGMECACGJ() != 0) {
-          setMLBGMECACGJ(other.getMLBGMECACGJ());
+        internalGetMutableEnergyStatMap().mergeFrom(
+            other.internalGetEnergyStatMap());
+        if (other.getMCBIBNHHAEJ() != 0) {
+          setMCBIBNHHAEJ(other.getMCBIBNHHAEJ());
         }
-        if (other.getJJGNMPAAGEM() != 0) {
-          setJJGNMPAAGEM(other.getJJGNMPAAGEM());
+        if (other.getNMHLBMCJDCG() != 0) {
+          setNMHLBMCJDCG(other.getNMHLBMCJDCG());
+        }
+        if (other.getEOFMKMACBBK() != 0) {
+          setEOFMKMACBBK(other.getEOFMKMACBBK());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        if (other.getEnergy() != 0) {
-          setEnergy(other.getEnergy());
-        }
-        internalGetMutableEnergyStatMap().mergeFrom(
-            other.internalGetEnergyStatMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -737,130 +797,6 @@ public final class FleurFairGallerySettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int mLBGMECACGJ_ ;
-      /**
-       * <code>uint32 MLBGMECACGJ = 8;</code>
-       * @return The mLBGMECACGJ.
-       */
-      @java.lang.Override
-      public int getMLBGMECACGJ() {
-        return mLBGMECACGJ_;
-      }
-      /**
-       * <code>uint32 MLBGMECACGJ = 8;</code>
-       * @param value The mLBGMECACGJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMLBGMECACGJ(int value) {
-        
-        mLBGMECACGJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MLBGMECACGJ = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMLBGMECACGJ() {
-        
-        mLBGMECACGJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jJGNMPAAGEM_ ;
-      /**
-       * <code>uint32 JJGNMPAAGEM = 3;</code>
-       * @return The jJGNMPAAGEM.
-       */
-      @java.lang.Override
-      public int getJJGNMPAAGEM() {
-        return jJGNMPAAGEM_;
-      }
-      /**
-       * <code>uint32 JJGNMPAAGEM = 3;</code>
-       * @param value The jJGNMPAAGEM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJJGNMPAAGEM(int value) {
-        
-        jJGNMPAAGEM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JJGNMPAAGEM = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJJGNMPAAGEM() {
-        
-        jJGNMPAAGEM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 13;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 13;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int energy_ ;
-      /**
-       * <code>uint32 energy = 6;</code>
-       * @return The energy.
-       */
-      @java.lang.Override
-      public int getEnergy() {
-        return energy_;
-      }
-      /**
-       * <code>uint32 energy = 6;</code>
-       * @param value The energy to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnergy(int value) {
-        
-        energy_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 energy = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEnergy() {
-        
-        energy_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> energyStatMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -888,7 +824,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetEnergyStatMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
 
       @java.lang.Override
@@ -906,7 +846,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return getEnergyStatMapMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
       @java.lang.Override
 
@@ -914,7 +858,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetEnergyStatMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
       @java.lang.Override
 
@@ -927,7 +875,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
       @java.lang.Override
 
@@ -948,7 +900,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
 
       public Builder removeEnergyStatMap(
@@ -967,7 +923,11 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return internalGetMutableEnergyStatMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
       public Builder putEnergyStatMap(
           int key,
@@ -979,13 +939,189 @@ public final class FleurFairGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, int32&gt; energy_stat_map = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, int32&gt; energy_stat_map = 13;</code>
        */
 
       public Builder putAllEnergyStatMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableEnergyStatMap().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int mCBIBNHHAEJ_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MCBIBNHHAEJ = 3;</code>
+       * @return The mCBIBNHHAEJ.
+       */
+      @java.lang.Override
+      public int getMCBIBNHHAEJ() {
+        return mCBIBNHHAEJ_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MCBIBNHHAEJ = 3;</code>
+       * @param value The mCBIBNHHAEJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMCBIBNHHAEJ(int value) {
+        
+        mCBIBNHHAEJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MCBIBNHHAEJ = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMCBIBNHHAEJ() {
+        
+        mCBIBNHHAEJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMHLBMCJDCG_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMHLBMCJDCG = 7;</code>
+       * @return The nMHLBMCJDCG.
+       */
+      @java.lang.Override
+      public int getNMHLBMCJDCG() {
+        return nMHLBMCJDCG_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMHLBMCJDCG = 7;</code>
+       * @param value The nMHLBMCJDCG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMHLBMCJDCG(int value) {
+        
+        nMHLBMCJDCG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMHLBMCJDCG = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMHLBMCJDCG() {
+        
+        nMHLBMCJDCG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eOFMKMACBBK_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EOFMKMACBBK = 12;</code>
+       * @return The eOFMKMACBBK.
+       */
+      @java.lang.Override
+      public int getEOFMKMACBBK() {
+        return eOFMKMACBBK_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EOFMKMACBBK = 12;</code>
+       * @param value The eOFMKMACBBK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEOFMKMACBBK(int value) {
+        
+        eOFMKMACBBK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EOFMKMACBBK = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEOFMKMACBBK() {
+        
+        eOFMKMACBBK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_success = 15;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_success = 15;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_success = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -1060,14 +1196,14 @@ public final class FleurFairGallerySettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n FleurFairGallerySettleInfo.proto\"\351\001\n\032F" +
-      "leurFairGallerySettleInfo\022\023\n\013MLBGMECACGJ" +
-      "\030\010 \001(\r\022\023\n\013JJGNMPAAGEM\030\003 \001(\r\022\022\n\nis_succes" +
-      "s\030\r \001(\010\022\016\n\006energy\030\006 \001(\r\022G\n\017energy_stat_m" +
-      "ap\030\n \003(\0132..FleurFairGallerySettleInfo.En" +
-      "ergyStatMapEntry\0324\n\022EnergyStatMapEntry\022\013" +
-      "\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\005:\0028\001B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n FleurFairGallerySettleInfo.proto\"\356\001\n\032F" +
+      "leurFairGallerySettleInfo\022G\n\017energy_stat" +
+      "_map\030\r \003(\0132..FleurFairGallerySettleInfo." +
+      "EnergyStatMapEntry\022\023\n\013MCBIBNHHAEJ\030\003 \001(\r\022" +
+      "\023\n\013NMHLBMCJDCG\030\007 \001(\r\022\023\n\013EOFMKMACBBK\030\014 \001(" +
+      "\r\022\022\n\nis_success\030\017 \001(\010\0324\n\022EnergyStatMapEn" +
+      "try\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\005:\0028\001B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1078,7 +1214,7 @@ public final class FleurFairGallerySettleInfoOuterClass {
     internal_static_FleurFairGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairGallerySettleInfo_descriptor,
-        new java.lang.String[] { "MLBGMECACGJ", "JJGNMPAAGEM", "IsSuccess", "Energy", "EnergyStatMap", });
+        new java.lang.String[] { "EnergyStatMap", "MCBIBNHHAEJ", "NMHLBMCJDCG", "EOFMKMACBBK", "IsSuccess", });
     internal_static_FleurFairGallerySettleInfo_EnergyStatMapEntry_descriptor =
       internal_static_FleurFairGallerySettleInfo_descriptor.getNestedTypes().get(0);
     internal_static_FleurFairGallerySettleInfo_EnergyStatMapEntry_fieldAccessorTable = new

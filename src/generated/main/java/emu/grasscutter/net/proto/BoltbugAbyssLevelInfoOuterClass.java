@@ -19,22 +19,22 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 min_finish_time = 5;</code>
-     * @return The minFinishTime.
-     */
-    int getMinFinishTime();
-
-    /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 min_finish_time = 13;</code>
+     * @return The minFinishTime.
+     */
+    int getMinFinishTime();
   }
   /**
    * Protobuf type {@code BoltbugAbyssLevelInfo}
@@ -81,19 +81,19 @@ public final class BoltbugAbyssLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              minFinishTime_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 48: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 88: {
+            case 64: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              minFinishTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,21 +128,10 @@ public final class BoltbugAbyssLevelInfoOuterClass {
               emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo.class, emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo.Builder.class);
     }
 
-    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 5;
-    private int minFinishTime_;
-    /**
-     * <code>uint32 min_finish_time = 5;</code>
-     * @return The minFinishTime.
-     */
-    @java.lang.Override
-    public int getMinFinishTime() {
-      return minFinishTime_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -150,15 +139,26 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 13;
+    private int minFinishTime_;
+    /**
+     * <code>uint32 min_finish_time = 13;</code>
+     * @return The minFinishTime.
+     */
+    @java.lang.Override
+    public int getMinFinishTime() {
+      return minFinishTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class BoltbugAbyssLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (minFinishTime_ != 0) {
-        output.writeUInt32(5, minFinishTime_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(6, isOpen_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(8, levelId_);
+      }
+      if (minFinishTime_ != 0) {
+        output.writeUInt32(13, minFinishTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (minFinishTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, minFinishTime_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(6, isOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(8, levelId_);
+      }
+      if (minFinishTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, minFinishTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo other = (emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo) obj;
 
-      if (getMinFinishTime()
-          != other.getMinFinishTime()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getMinFinishTime()
+          != other.getMinFinishTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +237,13 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getMinFinishTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getMinFinishTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,11 +377,11 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        minFinishTime_ = 0;
-
         isOpen_ = false;
 
         levelId_ = 0;
+
+        minFinishTime_ = 0;
 
         return this;
       }
@@ -409,9 +409,9 @@ public final class BoltbugAbyssLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo buildPartial() {
         emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo result = new emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo(this);
-        result.minFinishTime_ = minFinishTime_;
         result.isOpen_ = isOpen_;
         result.levelId_ = levelId_;
+        result.minFinishTime_ = minFinishTime_;
         onBuilt();
         return result;
       }
@@ -460,14 +460,14 @@ public final class BoltbugAbyssLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo other) {
         if (other == emu.grasscutter.net.proto.BoltbugAbyssLevelInfoOuterClass.BoltbugAbyssLevelInfo.getDefaultInstance()) return this;
-        if (other.getMinFinishTime() != 0) {
-          setMinFinishTime(other.getMinFinishTime());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getMinFinishTime() != 0) {
+          setMinFinishTime(other.getMinFinishTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,40 +498,9 @@ public final class BoltbugAbyssLevelInfoOuterClass {
         return this;
       }
 
-      private int minFinishTime_ ;
-      /**
-       * <code>uint32 min_finish_time = 5;</code>
-       * @return The minFinishTime.
-       */
-      @java.lang.Override
-      public int getMinFinishTime() {
-        return minFinishTime_;
-      }
-      /**
-       * <code>uint32 min_finish_time = 5;</code>
-       * @param value The minFinishTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMinFinishTime(int value) {
-        
-        minFinishTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 min_finish_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMinFinishTime() {
-        
-        minFinishTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -539,7 +508,7 @@ public final class BoltbugAbyssLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -550,7 +519,7 @@ public final class BoltbugAbyssLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -562,7 +531,7 @@ public final class BoltbugAbyssLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -570,7 +539,7 @@ public final class BoltbugAbyssLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -581,12 +550,43 @@ public final class BoltbugAbyssLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int minFinishTime_ ;
+      /**
+       * <code>uint32 min_finish_time = 13;</code>
+       * @return The minFinishTime.
+       */
+      @java.lang.Override
+      public int getMinFinishTime() {
+        return minFinishTime_;
+      }
+      /**
+       * <code>uint32 min_finish_time = 13;</code>
+       * @param value The minFinishTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMinFinishTime(int value) {
+        
+        minFinishTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 min_finish_time = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMinFinishTime() {
+        
+        minFinishTime_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +658,8 @@ public final class BoltbugAbyssLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033BoltbugAbyssLevelInfo.proto\"S\n\025Boltbug" +
-      "AbyssLevelInfo\022\027\n\017min_finish_time\030\005 \001(\r\022" +
-      "\017\n\007is_open\030\t \001(\010\022\020\n\010level_id\030\013 \001(\rB\033\n\031em" +
+      "AbyssLevelInfo\022\017\n\007is_open\030\006 \001(\010\022\020\n\010level" +
+      "_id\030\010 \001(\r\022\027\n\017min_finish_time\030\r \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class BoltbugAbyssLevelInfoOuterClass {
     internal_static_BoltbugAbyssLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BoltbugAbyssLevelInfo_descriptor,
-        new java.lang.String[] { "MinFinishTime", "IsOpen", "LevelId", });
+        new java.lang.String[] { "IsOpen", "LevelId", "MinFinishTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

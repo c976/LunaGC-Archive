@@ -19,27 +19,26 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>bool is_allow_copy = 13;</code>
+     * <code>bool is_allow_copy = 1;</code>
      * @return The isAllowCopy.
      */
     boolean getIsAllowCopy();
 
     /**
-     * <code>uint32 slot_id = 9;</code>
+     * <code>uint32 slot_id = 5;</code>
      * @return The slotId.
      */
     int getSlotId();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 26409
-   * Obf: KKBNLPKCAOD
+   * CmdId: 9681
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintSlotOptionRsp}
@@ -86,19 +85,19 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
 
-              retcode_ = input.readInt32();
+              isAllowCopy_ = input.readBool();
               break;
             }
-            case 72: {
+            case 40: {
 
               slotId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 56: {
 
-              isAllowCopy_ = input.readBool();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -133,21 +132,10 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp.class, emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int IS_ALLOW_COPY_FIELD_NUMBER = 13;
+    public static final int IS_ALLOW_COPY_FIELD_NUMBER = 1;
     private boolean isAllowCopy_;
     /**
-     * <code>bool is_allow_copy = 13;</code>
+     * <code>bool is_allow_copy = 1;</code>
      * @return The isAllowCopy.
      */
     @java.lang.Override
@@ -155,15 +143,26 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       return isAllowCopy_;
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 9;
+    public static final int SLOT_ID_FIELD_NUMBER = 5;
     private int slotId_;
     /**
-     * <code>uint32 slot_id = 9;</code>
+     * <code>uint32 slot_id = 5;</code>
      * @return The slotId.
      */
     @java.lang.Override
     public int getSlotId() {
       return slotId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+      if (isAllowCopy_ != false) {
+        output.writeBool(1, isAllowCopy_);
       }
       if (slotId_ != 0) {
-        output.writeUInt32(9, slotId_);
+        output.writeUInt32(5, slotId_);
       }
-      if (isAllowCopy_ != false) {
-        output.writeBool(13, isAllowCopy_);
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (isAllowCopy_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeBoolSize(1, isAllowCopy_);
       }
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, slotId_);
+          .computeUInt32Size(5, slotId_);
       }
-      if (isAllowCopy_ != false) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isAllowCopy_);
+          .computeInt32Size(7, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp other = (emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsAllowCopy()
           != other.getIsAllowCopy()) return false;
       if (getSlotId()
           != other.getSlotId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +241,13 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_ALLOW_COPY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAllowCopy());
       hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSlotId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +345,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26409
-     * Obf: KKBNLPKCAOD
+     * CmdId: 9681
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintSlotOptionRsp}
@@ -387,11 +385,11 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         isAllowCopy_ = false;
 
         slotId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -419,9 +417,9 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp buildPartial() {
         emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp result = new emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp(this);
-        result.retcode_ = retcode_;
         result.isAllowCopy_ = isAllowCopy_;
         result.slotId_ = slotId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -470,14 +468,14 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp other) {
         if (other == emu.grasscutter.net.proto.HomeSetBlueprintSlotOptionRspOuterClass.HomeSetBlueprintSlotOptionRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getIsAllowCopy() != false) {
           setIsAllowCopy(other.getIsAllowCopy());
         }
         if (other.getSlotId() != 0) {
           setSlotId(other.getSlotId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,40 +506,9 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isAllowCopy_ ;
       /**
-       * <code>bool is_allow_copy = 13;</code>
+       * <code>bool is_allow_copy = 1;</code>
        * @return The isAllowCopy.
        */
       @java.lang.Override
@@ -549,7 +516,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
         return isAllowCopy_;
       }
       /**
-       * <code>bool is_allow_copy = 13;</code>
+       * <code>bool is_allow_copy = 1;</code>
        * @param value The isAllowCopy to set.
        * @return This builder for chaining.
        */
@@ -560,7 +527,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_allow_copy = 13;</code>
+       * <code>bool is_allow_copy = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllowCopy() {
@@ -572,7 +539,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
 
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 9;</code>
+       * <code>uint32 slot_id = 5;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -580,7 +547,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 9;</code>
+       * <code>uint32 slot_id = 5;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -591,12 +558,43 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 9;</code>
+       * <code>uint32 slot_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
         
         slotId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -668,9 +666,9 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#HomeSetBlueprintSlotOptionRsp.proto\"X\n" +
-      "\035HomeSetBlueprintSlotOptionRsp\022\017\n\007retcod" +
-      "e\030\010 \001(\005\022\025\n\ris_allow_copy\030\r \001(\010\022\017\n\007slot_i" +
-      "d\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "\035HomeSetBlueprintSlotOptionRsp\022\025\n\ris_all" +
+      "ow_copy\030\001 \001(\010\022\017\n\007slot_id\030\005 \001(\r\022\017\n\007retcod" +
+      "e\030\007 \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +680,7 @@ public final class HomeSetBlueprintSlotOptionRspOuterClass {
     internal_static_HomeSetBlueprintSlotOptionRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSetBlueprintSlotOptionRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsAllowCopy", "SlotId", });
+        new java.lang.String[] { "IsAllowCopy", "SlotId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -26,8 +26,7 @@ public final class EffigyChallengeV2RestartDungeonRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 22580
-   * Obf: NJNAINNGJAN
+   * CmdId: 27046
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2RestartDungeonRsp}
@@ -279,8 +278,7 @@ public final class EffigyChallengeV2RestartDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22580
-     * Obf: NJNAINNGJAN
+     * CmdId: 27046
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2RestartDungeonRsp}

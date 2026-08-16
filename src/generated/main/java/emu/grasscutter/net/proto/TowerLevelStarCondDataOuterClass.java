@@ -19,28 +19,28 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 star_cond_index = 7;</code>
-     * @return The starCondIndex.
+     * <code>uint32 MHHCJLCNCFK = 1;</code>
+     * @return The mHHCJLCNCFK.
      */
-    int getStarCondIndex();
+    int getMHHCJLCNCFK();
 
     /**
-     * <code>uint32 cond_value = 4;</code>
-     * @return The condValue.
+     * <code>bool JDLLBMBEPOG = 10;</code>
+     * @return The jDLLBMBEPOG.
      */
-    int getCondValue();
+    boolean getJDLLBMBEPOG();
 
     /**
-     * <code>bool is_fail = 9;</code>
-     * @return The isFail.
+     * <code>uint32 ABODIHDGNPD = 11;</code>
+     * @return The aBODIHDGNPD.
      */
-    boolean getIsFail();
+    int getABODIHDGNPD();
 
     /**
-     * <code>bool is_pause = 3;</code>
-     * @return The isPause.
+     * <code>bool KMNJLELABKJ = 13;</code>
+     * @return The kMNJLELABKJ.
      */
-    boolean getIsPause();
+    boolean getKMNJLELABKJ();
   }
   /**
    * Protobuf type {@code TowerLevelStarCondData}
@@ -87,24 +87,24 @@ public final class TowerLevelStarCondDataOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              isPause_ = input.readBool();
+              mHHCJLCNCFK_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 80: {
 
-              condValue_ = input.readUInt32();
+              jDLLBMBEPOG_ = input.readBool();
               break;
             }
-            case 56: {
+            case 88: {
 
-              starCondIndex_ = input.readUInt32();
+              aBODIHDGNPD_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
-              isFail_ = input.readBool();
+              kMNJLELABKJ_ = input.readBool();
               break;
             }
             default: {
@@ -139,48 +139,48 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int STAR_COND_INDEX_FIELD_NUMBER = 7;
-    private int starCondIndex_;
+    public static final int MHHCJLCNCFK_FIELD_NUMBER = 1;
+    private int mHHCJLCNCFK_;
     /**
-     * <code>uint32 star_cond_index = 7;</code>
-     * @return The starCondIndex.
+     * <code>uint32 MHHCJLCNCFK = 1;</code>
+     * @return The mHHCJLCNCFK.
      */
     @java.lang.Override
-    public int getStarCondIndex() {
-      return starCondIndex_;
+    public int getMHHCJLCNCFK() {
+      return mHHCJLCNCFK_;
     }
 
-    public static final int COND_VALUE_FIELD_NUMBER = 4;
-    private int condValue_;
+    public static final int JDLLBMBEPOG_FIELD_NUMBER = 10;
+    private boolean jDLLBMBEPOG_;
     /**
-     * <code>uint32 cond_value = 4;</code>
-     * @return The condValue.
+     * <code>bool JDLLBMBEPOG = 10;</code>
+     * @return The jDLLBMBEPOG.
      */
     @java.lang.Override
-    public int getCondValue() {
-      return condValue_;
+    public boolean getJDLLBMBEPOG() {
+      return jDLLBMBEPOG_;
     }
 
-    public static final int IS_FAIL_FIELD_NUMBER = 9;
-    private boolean isFail_;
+    public static final int ABODIHDGNPD_FIELD_NUMBER = 11;
+    private int aBODIHDGNPD_;
     /**
-     * <code>bool is_fail = 9;</code>
-     * @return The isFail.
+     * <code>uint32 ABODIHDGNPD = 11;</code>
+     * @return The aBODIHDGNPD.
      */
     @java.lang.Override
-    public boolean getIsFail() {
-      return isFail_;
+    public int getABODIHDGNPD() {
+      return aBODIHDGNPD_;
     }
 
-    public static final int IS_PAUSE_FIELD_NUMBER = 3;
-    private boolean isPause_;
+    public static final int KMNJLELABKJ_FIELD_NUMBER = 13;
+    private boolean kMNJLELABKJ_;
     /**
-     * <code>bool is_pause = 3;</code>
-     * @return The isPause.
+     * <code>bool KMNJLELABKJ = 13;</code>
+     * @return The kMNJLELABKJ.
      */
     @java.lang.Override
-    public boolean getIsPause() {
-      return isPause_;
+    public boolean getKMNJLELABKJ() {
+      return kMNJLELABKJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isPause_ != false) {
-        output.writeBool(3, isPause_);
+      if (mHHCJLCNCFK_ != 0) {
+        output.writeUInt32(1, mHHCJLCNCFK_);
       }
-      if (condValue_ != 0) {
-        output.writeUInt32(4, condValue_);
+      if (jDLLBMBEPOG_ != false) {
+        output.writeBool(10, jDLLBMBEPOG_);
       }
-      if (starCondIndex_ != 0) {
-        output.writeUInt32(7, starCondIndex_);
+      if (aBODIHDGNPD_ != 0) {
+        output.writeUInt32(11, aBODIHDGNPD_);
       }
-      if (isFail_ != false) {
-        output.writeBool(9, isFail_);
+      if (kMNJLELABKJ_ != false) {
+        output.writeBool(13, kMNJLELABKJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isPause_ != false) {
+      if (mHHCJLCNCFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isPause_);
+          .computeUInt32Size(1, mHHCJLCNCFK_);
       }
-      if (condValue_ != 0) {
+      if (jDLLBMBEPOG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, condValue_);
+          .computeBoolSize(10, jDLLBMBEPOG_);
       }
-      if (starCondIndex_ != 0) {
+      if (aBODIHDGNPD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, starCondIndex_);
+          .computeUInt32Size(11, aBODIHDGNPD_);
       }
-      if (isFail_ != false) {
+      if (kMNJLELABKJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFail_);
+          .computeBoolSize(13, kMNJLELABKJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
-      if (getStarCondIndex()
-          != other.getStarCondIndex()) return false;
-      if (getCondValue()
-          != other.getCondValue()) return false;
-      if (getIsFail()
-          != other.getIsFail()) return false;
-      if (getIsPause()
-          != other.getIsPause()) return false;
+      if (getMHHCJLCNCFK()
+          != other.getMHHCJLCNCFK()) return false;
+      if (getJDLLBMBEPOG()
+          != other.getJDLLBMBEPOG()) return false;
+      if (getABODIHDGNPD()
+          != other.getABODIHDGNPD()) return false;
+      if (getKMNJLELABKJ()
+          != other.getKMNJLELABKJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +268,16 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAR_COND_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getStarCondIndex();
-      hash = (37 * hash) + COND_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getCondValue();
-      hash = (37 * hash) + IS_FAIL_FIELD_NUMBER;
+      hash = (37 * hash) + MHHCJLCNCFK_FIELD_NUMBER;
+      hash = (53 * hash) + getMHHCJLCNCFK();
+      hash = (37 * hash) + JDLLBMBEPOG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFail());
-      hash = (37 * hash) + IS_PAUSE_FIELD_NUMBER;
+          getJDLLBMBEPOG());
+      hash = (37 * hash) + ABODIHDGNPD_FIELD_NUMBER;
+      hash = (53 * hash) + getABODIHDGNPD();
+      hash = (37 * hash) + KMNJLELABKJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPause());
+          getKMNJLELABKJ());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,13 +411,13 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        starCondIndex_ = 0;
+        mHHCJLCNCFK_ = 0;
 
-        condValue_ = 0;
+        jDLLBMBEPOG_ = false;
 
-        isFail_ = false;
+        aBODIHDGNPD_ = 0;
 
-        isPause_ = false;
+        kMNJLELABKJ_ = false;
 
         return this;
       }
@@ -445,10 +445,10 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData buildPartial() {
         emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result = new emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData(this);
-        result.starCondIndex_ = starCondIndex_;
-        result.condValue_ = condValue_;
-        result.isFail_ = isFail_;
-        result.isPause_ = isPause_;
+        result.mHHCJLCNCFK_ = mHHCJLCNCFK_;
+        result.jDLLBMBEPOG_ = jDLLBMBEPOG_;
+        result.aBODIHDGNPD_ = aBODIHDGNPD_;
+        result.kMNJLELABKJ_ = kMNJLELABKJ_;
         onBuilt();
         return result;
       }
@@ -497,17 +497,17 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
-        if (other.getStarCondIndex() != 0) {
-          setStarCondIndex(other.getStarCondIndex());
+        if (other.getMHHCJLCNCFK() != 0) {
+          setMHHCJLCNCFK(other.getMHHCJLCNCFK());
         }
-        if (other.getCondValue() != 0) {
-          setCondValue(other.getCondValue());
+        if (other.getJDLLBMBEPOG() != false) {
+          setJDLLBMBEPOG(other.getJDLLBMBEPOG());
         }
-        if (other.getIsFail() != false) {
-          setIsFail(other.getIsFail());
+        if (other.getABODIHDGNPD() != 0) {
+          setABODIHDGNPD(other.getABODIHDGNPD());
         }
-        if (other.getIsPause() != false) {
-          setIsPause(other.getIsPause());
+        if (other.getKMNJLELABKJ() != false) {
+          setKMNJLELABKJ(other.getKMNJLELABKJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,126 +538,126 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
 
-      private int starCondIndex_ ;
+      private int mHHCJLCNCFK_ ;
       /**
-       * <code>uint32 star_cond_index = 7;</code>
-       * @return The starCondIndex.
+       * <code>uint32 MHHCJLCNCFK = 1;</code>
+       * @return The mHHCJLCNCFK.
        */
       @java.lang.Override
-      public int getStarCondIndex() {
-        return starCondIndex_;
+      public int getMHHCJLCNCFK() {
+        return mHHCJLCNCFK_;
       }
       /**
-       * <code>uint32 star_cond_index = 7;</code>
-       * @param value The starCondIndex to set.
+       * <code>uint32 MHHCJLCNCFK = 1;</code>
+       * @param value The mHHCJLCNCFK to set.
        * @return This builder for chaining.
        */
-      public Builder setStarCondIndex(int value) {
+      public Builder setMHHCJLCNCFK(int value) {
         
-        starCondIndex_ = value;
+        mHHCJLCNCFK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 star_cond_index = 7;</code>
+       * <code>uint32 MHHCJLCNCFK = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStarCondIndex() {
+      public Builder clearMHHCJLCNCFK() {
         
-        starCondIndex_ = 0;
+        mHHCJLCNCFK_ = 0;
         onChanged();
         return this;
       }
 
-      private int condValue_ ;
+      private boolean jDLLBMBEPOG_ ;
       /**
-       * <code>uint32 cond_value = 4;</code>
-       * @return The condValue.
+       * <code>bool JDLLBMBEPOG = 10;</code>
+       * @return The jDLLBMBEPOG.
        */
       @java.lang.Override
-      public int getCondValue() {
-        return condValue_;
+      public boolean getJDLLBMBEPOG() {
+        return jDLLBMBEPOG_;
       }
       /**
-       * <code>uint32 cond_value = 4;</code>
-       * @param value The condValue to set.
+       * <code>bool JDLLBMBEPOG = 10;</code>
+       * @param value The jDLLBMBEPOG to set.
        * @return This builder for chaining.
        */
-      public Builder setCondValue(int value) {
+      public Builder setJDLLBMBEPOG(boolean value) {
         
-        condValue_ = value;
+        jDLLBMBEPOG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cond_value = 4;</code>
+       * <code>bool JDLLBMBEPOG = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCondValue() {
+      public Builder clearJDLLBMBEPOG() {
         
-        condValue_ = 0;
+        jDLLBMBEPOG_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isFail_ ;
+      private int aBODIHDGNPD_ ;
       /**
-       * <code>bool is_fail = 9;</code>
-       * @return The isFail.
+       * <code>uint32 ABODIHDGNPD = 11;</code>
+       * @return The aBODIHDGNPD.
        */
       @java.lang.Override
-      public boolean getIsFail() {
-        return isFail_;
+      public int getABODIHDGNPD() {
+        return aBODIHDGNPD_;
       }
       /**
-       * <code>bool is_fail = 9;</code>
-       * @param value The isFail to set.
+       * <code>uint32 ABODIHDGNPD = 11;</code>
+       * @param value The aBODIHDGNPD to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFail(boolean value) {
+      public Builder setABODIHDGNPD(int value) {
         
-        isFail_ = value;
+        aBODIHDGNPD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_fail = 9;</code>
+       * <code>uint32 ABODIHDGNPD = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFail() {
+      public Builder clearABODIHDGNPD() {
         
-        isFail_ = false;
+        aBODIHDGNPD_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isPause_ ;
+      private boolean kMNJLELABKJ_ ;
       /**
-       * <code>bool is_pause = 3;</code>
-       * @return The isPause.
+       * <code>bool KMNJLELABKJ = 13;</code>
+       * @return The kMNJLELABKJ.
        */
       @java.lang.Override
-      public boolean getIsPause() {
-        return isPause_;
+      public boolean getKMNJLELABKJ() {
+        return kMNJLELABKJ_;
       }
       /**
-       * <code>bool is_pause = 3;</code>
-       * @param value The isPause to set.
+       * <code>bool KMNJLELABKJ = 13;</code>
+       * @param value The kMNJLELABKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setIsPause(boolean value) {
+      public Builder setKMNJLELABKJ(boolean value) {
         
-        isPause_ = value;
+        kMNJLELABKJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_pause = 3;</code>
+       * <code>bool KMNJLELABKJ = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsPause() {
+      public Builder clearKMNJLELABKJ() {
         
-        isPause_ = false;
+        kMNJLELABKJ_ = false;
         onChanged();
         return this;
       }
@@ -728,11 +728,11 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"h\n\026TowerL" +
-      "evelStarCondData\022\027\n\017star_cond_index\030\007 \001(" +
-      "\r\022\022\n\ncond_value\030\004 \001(\r\022\017\n\007is_fail\030\t \001(\010\022\020" +
-      "\n\010is_pause\030\003 \001(\010B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"l\n\026TowerL" +
+      "evelStarCondData\022\023\n\013MHHCJLCNCFK\030\001 \001(\r\022\023\n" +
+      "\013JDLLBMBEPOG\030\n \001(\010\022\023\n\013ABODIHDGNPD\030\013 \001(\r\022" +
+      "\023\n\013KMNJLELABKJ\030\r \001(\010B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +743,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "StarCondIndex", "CondValue", "IsFail", "IsPause", });
+        new java.lang.String[] { "MHHCJLCNCFK", "JDLLBMBEPOG", "ABODIHDGNPD", "KMNJLELABKJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

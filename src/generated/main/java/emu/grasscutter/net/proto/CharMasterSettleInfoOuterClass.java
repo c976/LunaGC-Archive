@@ -19,7 +19,7 @@ public final class CharMasterSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_id = 15;</code>
+     * <code>uint32 reward_id = 10;</code>
      * @return The rewardId.
      */
     int getRewardId();
@@ -69,7 +69,7 @@ public final class CharMasterSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 80: {
 
               rewardId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class CharMasterSettleInfoOuterClass {
               emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.class, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 15;
+    public static final int REWARD_ID_FIELD_NUMBER = 10;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 15;</code>
+     * <code>uint32 reward_id = 10;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class CharMasterSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardId_ != 0) {
-        output.writeUInt32(15, rewardId_);
+        output.writeUInt32(10, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class CharMasterSettleInfoOuterClass {
       size = 0;
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, rewardId_);
+          .computeUInt32Size(10, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class CharMasterSettleInfoOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 15;</code>
+       * <code>uint32 reward_id = 10;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class CharMasterSettleInfoOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 15;</code>
+       * <code>uint32 reward_id = 10;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class CharMasterSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 15;</code>
+       * <code>uint32 reward_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -517,7 +517,7 @@ public final class CharMasterSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032CharMasterSettleInfo.proto\")\n\024CharMast" +
-      "erSettleInfo\022\021\n\treward_id\030\017 \001(\rB\033\n\031emu.g" +
+      "erSettleInfo\022\021\n\treward_id\030\n \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

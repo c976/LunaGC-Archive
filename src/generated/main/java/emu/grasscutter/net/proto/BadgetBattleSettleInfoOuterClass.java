@@ -19,45 +19,45 @@ public final class BadgetBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-     * @return A list containing the bJEFBNBFGKK.
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+     * @return A list containing the iKPFNDLMPIJ.
      */
-    java.util.List<java.lang.Integer> getBJEFBNBFGKKList();
+    java.util.List<java.lang.Integer> getIKPFNDLMPIJList();
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-     * @return The count of bJEFBNBFGKK.
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+     * @return The count of iKPFNDLMPIJ.
      */
-    int getBJEFBNBFGKKCount();
+    int getIKPFNDLMPIJCount();
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
      * @param index The index of the element to return.
-     * @return The bJEFBNBFGKK at the given index.
+     * @return The iKPFNDLMPIJ at the given index.
      */
-    int getBJEFBNBFGKK(int index);
+    int getIKPFNDLMPIJ(int index);
 
     /**
-     * <code>bool is_new_record = 12;</code>
-     * @return The isNewRecord.
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
      */
-    boolean getIsNewRecord();
+    int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 13;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
+     * <code>uint32 difficulty = 14;</code>
+     * @return The difficulty.
      */
-    int getLevelId();
+    int getDifficulty();
+
+    /**
+     * <code>bool is_new_record = 15;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code BadgetBattleSettleInfo}
@@ -72,7 +72,7 @@ public final class BadgetBattleSettleInfoOuterClass {
       super(builder);
     }
     private BadgetBattleSettleInfo() {
-      bJEFBNBFGKK_ = emptyIntList();
+      iKPFNDLMPIJ_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -106,45 +106,45 @@ public final class BadgetBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                bJEFBNBFGKK_ = newIntList();
+                iKPFNDLMPIJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              bJEFBNBFGKK_.addInt(input.readUInt32());
+              iKPFNDLMPIJ_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                bJEFBNBFGKK_ = newIntList();
+                iKPFNDLMPIJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                bJEFBNBFGKK_.addInt(input.readUInt32());
+                iKPFNDLMPIJ_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 24: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
             case 96: {
 
-              isNewRecord_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              levelId_ = input.readUInt32();
+              score_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              difficulty_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -163,7 +163,7 @@ public final class BadgetBattleSettleInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          bJEFBNBFGKK_.makeImmutable(); // C
+          iKPFNDLMPIJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -182,60 +182,49 @@ public final class BadgetBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.class, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder.class);
     }
 
-    public static final int BJEFBNBFGKK_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList bJEFBNBFGKK_;
+    public static final int IKPFNDLMPIJ_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList iKPFNDLMPIJ_;
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-     * @return A list containing the bJEFBNBFGKK.
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+     * @return A list containing the iKPFNDLMPIJ.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getBJEFBNBFGKKList() {
-      return bJEFBNBFGKK_;
+        getIKPFNDLMPIJList() {
+      return iKPFNDLMPIJ_;
     }
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-     * @return The count of bJEFBNBFGKK.
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+     * @return The count of iKPFNDLMPIJ.
      */
-    public int getBJEFBNBFGKKCount() {
-      return bJEFBNBFGKK_.size();
+    public int getIKPFNDLMPIJCount() {
+      return iKPFNDLMPIJ_.size();
     }
     /**
-     * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
+     * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
      * @param index The index of the element to return.
-     * @return The bJEFBNBFGKK at the given index.
+     * @return The iKPFNDLMPIJ at the given index.
      */
-    public int getBJEFBNBFGKK(int index) {
-      return bJEFBNBFGKK_.getInt(index);
+    public int getIKPFNDLMPIJ(int index) {
+      return iKPFNDLMPIJ_.getInt(index);
     }
-    private int bJEFBNBFGKKMemoizedSerializedSize = -1;
+    private int iKPFNDLMPIJMemoizedSerializedSize = -1;
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
-    private boolean isNewRecord_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    private int levelId_;
     /**
-     * <code>bool is_new_record = 12;</code>
-     * @return The isNewRecord.
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getLevelId() {
+      return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 7;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 3;
+    public static final int SCORE_FIELD_NUMBER = 13;
     private int score_;
     /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 13;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -243,15 +232,26 @@ public final class BadgetBattleSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
+    public static final int DIFFICULTY_FIELD_NUMBER = 14;
+    private int difficulty_;
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
+     * <code>uint32 difficulty = 14;</code>
+     * @return The difficulty.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 15;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,24 +269,24 @@ public final class BadgetBattleSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getBJEFBNBFGKKList().size() > 0) {
-        output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(bJEFBNBFGKKMemoizedSerializedSize);
+      if (getIKPFNDLMPIJList().size() > 0) {
+        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(iKPFNDLMPIJMemoizedSerializedSize);
       }
-      for (int i = 0; i < bJEFBNBFGKK_.size(); i++) {
-        output.writeUInt32NoTag(bJEFBNBFGKK_.getInt(i));
-      }
-      if (score_ != 0) {
-        output.writeUInt32(3, score_);
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(7, difficulty_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
+      for (int i = 0; i < iKPFNDLMPIJ_.size(); i++) {
+        output.writeUInt32NoTag(iKPFNDLMPIJ_.getInt(i));
       }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(12, levelId_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(13, score_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(14, difficulty_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(15, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,33 +299,33 @@ public final class BadgetBattleSettleInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < bJEFBNBFGKK_.size(); i++) {
+        for (int i = 0; i < iKPFNDLMPIJ_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bJEFBNBFGKK_.getInt(i));
+            .computeUInt32SizeNoTag(iKPFNDLMPIJ_.getInt(i));
         }
         size += dataSize;
-        if (!getBJEFBNBFGKKList().isEmpty()) {
+        if (!getIKPFNDLMPIJList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        bJEFBNBFGKKMemoizedSerializedSize = dataSize;
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, score_);
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, difficulty_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
+        iKPFNDLMPIJMemoizedSerializedSize = dataSize;
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(12, levelId_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, score_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, difficulty_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,16 +342,16 @@ public final class BadgetBattleSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo other = (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) obj;
 
-      if (!getBJEFBNBFGKKList()
-          .equals(other.getBJEFBNBFGKKList())) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
-      if (getScore()
-          != other.getScore()) return false;
+      if (!getIKPFNDLMPIJList()
+          .equals(other.getIKPFNDLMPIJList())) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,19 +363,19 @@ public final class BadgetBattleSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getBJEFBNBFGKKCount() > 0) {
-        hash = (37 * hash) + BJEFBNBFGKK_FIELD_NUMBER;
-        hash = (53 * hash) + getBJEFBNBFGKKList().hashCode();
+      if (getIKPFNDLMPIJCount() > 0) {
+        hash = (37 * hash) + IKPFNDLMPIJ_FIELD_NUMBER;
+        hash = (53 * hash) + getIKPFNDLMPIJList().hashCode();
       }
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,15 +509,15 @@ public final class BadgetBattleSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bJEFBNBFGKK_ = emptyIntList();
+        iKPFNDLMPIJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isNewRecord_ = false;
-
-        difficulty_ = 0;
+        levelId_ = 0;
 
         score_ = 0;
 
-        levelId_ = 0;
+        difficulty_ = 0;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -547,14 +547,14 @@ public final class BadgetBattleSettleInfoOuterClass {
         emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo result = new emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          bJEFBNBFGKK_.makeImmutable();
+          iKPFNDLMPIJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.bJEFBNBFGKK_ = bJEFBNBFGKK_;
-        result.isNewRecord_ = isNewRecord_;
-        result.difficulty_ = difficulty_;
-        result.score_ = score_;
+        result.iKPFNDLMPIJ_ = iKPFNDLMPIJ_;
         result.levelId_ = levelId_;
+        result.score_ = score_;
+        result.difficulty_ = difficulty_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -603,27 +603,27 @@ public final class BadgetBattleSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance()) return this;
-        if (!other.bJEFBNBFGKK_.isEmpty()) {
-          if (bJEFBNBFGKK_.isEmpty()) {
-            bJEFBNBFGKK_ = other.bJEFBNBFGKK_;
+        if (!other.iKPFNDLMPIJ_.isEmpty()) {
+          if (iKPFNDLMPIJ_.isEmpty()) {
+            iKPFNDLMPIJ_ = other.iKPFNDLMPIJ_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureBJEFBNBFGKKIsMutable();
-            bJEFBNBFGKK_.addAll(other.bJEFBNBFGKK_);
+            ensureIKPFNDLMPIJIsMutable();
+            iKPFNDLMPIJ_.addAll(other.iKPFNDLMPIJ_);
           }
           onChanged();
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,181 +655,88 @@ public final class BadgetBattleSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList bJEFBNBFGKK_ = emptyIntList();
-      private void ensureBJEFBNBFGKKIsMutable() {
+      private com.google.protobuf.Internal.IntList iKPFNDLMPIJ_ = emptyIntList();
+      private void ensureIKPFNDLMPIJIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          bJEFBNBFGKK_ = mutableCopy(bJEFBNBFGKK_);
+          iKPFNDLMPIJ_ = mutableCopy(iKPFNDLMPIJ_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-       * @return A list containing the bJEFBNBFGKK.
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+       * @return A list containing the iKPFNDLMPIJ.
        */
       public java.util.List<java.lang.Integer>
-          getBJEFBNBFGKKList() {
+          getIKPFNDLMPIJList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(bJEFBNBFGKK_) : bJEFBNBFGKK_;
+                 java.util.Collections.unmodifiableList(iKPFNDLMPIJ_) : iKPFNDLMPIJ_;
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-       * @return The count of bJEFBNBFGKK.
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+       * @return The count of iKPFNDLMPIJ.
        */
-      public int getBJEFBNBFGKKCount() {
-        return bJEFBNBFGKK_.size();
+      public int getIKPFNDLMPIJCount() {
+        return iKPFNDLMPIJ_.size();
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
        * @param index The index of the element to return.
-       * @return The bJEFBNBFGKK at the given index.
+       * @return The iKPFNDLMPIJ at the given index.
        */
-      public int getBJEFBNBFGKK(int index) {
-        return bJEFBNBFGKK_.getInt(index);
+      public int getIKPFNDLMPIJ(int index) {
+        return iKPFNDLMPIJ_.getInt(index);
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
        * @param index The index to set the value at.
-       * @param value The bJEFBNBFGKK to set.
+       * @param value The iKPFNDLMPIJ to set.
        * @return This builder for chaining.
        */
-      public Builder setBJEFBNBFGKK(
+      public Builder setIKPFNDLMPIJ(
           int index, int value) {
-        ensureBJEFBNBFGKKIsMutable();
-        bJEFBNBFGKK_.setInt(index, value);
+        ensureIKPFNDLMPIJIsMutable();
+        iKPFNDLMPIJ_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-       * @param value The bJEFBNBFGKK to add.
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+       * @param value The iKPFNDLMPIJ to add.
        * @return This builder for chaining.
        */
-      public Builder addBJEFBNBFGKK(int value) {
-        ensureBJEFBNBFGKKIsMutable();
-        bJEFBNBFGKK_.addInt(value);
+      public Builder addIKPFNDLMPIJ(int value) {
+        ensureIKPFNDLMPIJIsMutable();
+        iKPFNDLMPIJ_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
-       * @param values The bJEFBNBFGKK to add.
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
+       * @param values The iKPFNDLMPIJ to add.
        * @return This builder for chaining.
        */
-      public Builder addAllBJEFBNBFGKK(
+      public Builder addAllIKPFNDLMPIJ(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBJEFBNBFGKKIsMutable();
+        ensureIKPFNDLMPIJIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bJEFBNBFGKK_);
+            values, iKPFNDLMPIJ_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BJEFBNBFGKK = 2;</code>
+       * <code>repeated uint32 IKPFNDLMPIJ = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBJEFBNBFGKK() {
-        bJEFBNBFGKK_ = emptyIntList();
+      public Builder clearIKPFNDLMPIJ() {
+        iKPFNDLMPIJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 12;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 12;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 7;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 7;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 3;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 3;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -837,7 +744,7 @@ public final class BadgetBattleSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -848,12 +755,105 @@ public final class BadgetBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 13;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 13;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <code>uint32 difficulty = 14;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <code>uint32 difficulty = 14;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
+        
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 15;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 15;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -925,9 +925,9 @@ public final class BadgetBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034BadgetBattleSettleInfo.proto\"y\n\026Badget" +
-      "BattleSettleInfo\022\023\n\013BJEFBNBFGKK\030\002 \003(\r\022\025\n" +
-      "\ris_new_record\030\014 \001(\010\022\022\n\ndifficulty\030\007 \001(\r" +
-      "\022\r\n\005score\030\003 \001(\r\022\020\n\010level_id\030\r \001(\rB\033\n\031emu" +
+      "BattleSettleInfo\022\023\n\013IKPFNDLMPIJ\030\010 \003(\r\022\020\n" +
+      "\010level_id\030\014 \001(\r\022\r\n\005score\030\r \001(\r\022\022\n\ndiffic" +
+      "ulty\030\016 \001(\r\022\025\n\ris_new_record\030\017 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -939,7 +939,7 @@ public final class BadgetBattleSettleInfoOuterClass {
     internal_static_BadgetBattleSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BadgetBattleSettleInfo_descriptor,
-        new java.lang.String[] { "BJEFBNBFGKK", "IsNewRecord", "Difficulty", "Score", "LevelId", });
+        new java.lang.String[] { "IKPFNDLMPIJ", "LevelId", "Score", "Difficulty", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

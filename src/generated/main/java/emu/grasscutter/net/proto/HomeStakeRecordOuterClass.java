@@ -19,34 +19,50 @@ public final class HomeStakeRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> 
+    java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> 
         getRecordListList();
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
-    emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord getRecordList(int index);
+    emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD getRecordList(int index);
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     int getRecordListCount();
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder> 
         getRecordListOrBuilderList();
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
-    emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder getRecordListOrBuilder(
+    emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder getRecordListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: PADAGHHACBC
-   * </pre>
-   *
    * Protobuf type {@code HomeStakeRecord}
    */
   public static final class HomeStakeRecord extends
@@ -93,13 +109,13 @@ public final class HomeStakeRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord>();
+                recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD>();
                 mutable_bitField0_ |= 0x00000001;
               }
               recordList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -137,42 +153,62 @@ public final class HomeStakeRecordOuterClass {
               emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.class, emu.grasscutter.net.proto.HomeStakeRecordOuterClass.HomeStakeRecord.Builder.class);
     }
 
-    public static final int RECORD_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> recordList_;
+    public static final int RECORD_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> recordList_;
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> getRecordListList() {
+    public java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> getRecordListList() {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder> 
         getRecordListOrBuilderList() {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     @java.lang.Override
     public int getRecordListCount() {
       return recordList_.size();
     }
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord getRecordList(int index) {
+    public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD getRecordList(int index) {
       return recordList_.get(index);
     }
     /**
-     * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LFADFKADNOD record_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder getRecordListOrBuilder(
+    public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder getRecordListOrBuilder(
         int index) {
       return recordList_.get(index);
     }
@@ -192,7 +228,7 @@ public final class HomeStakeRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < recordList_.size(); i++) {
-        output.writeMessage(6, recordList_.get(i));
+        output.writeMessage(1, recordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -205,7 +241,7 @@ public final class HomeStakeRecordOuterClass {
       size = 0;
       for (int i = 0; i < recordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, recordList_.get(i));
+          .computeMessageSize(1, recordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -335,10 +371,6 @@ public final class HomeStakeRecordOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PADAGHHACBC
-     * </pre>
-     *
      * Protobuf type {@code HomeStakeRecord}
      */
     public static final class Builder extends
@@ -523,22 +555,26 @@ public final class HomeStakeRecordOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> recordList_ =
+      private java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> recordList_ =
         java.util.Collections.emptyList();
       private void ensureRecordListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord>(recordList_);
+          recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD>(recordList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder> recordListBuilder_;
+          emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder> recordListBuilder_;
 
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> getRecordListList() {
+      public java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> getRecordListList() {
         if (recordListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(recordList_);
         } else {
@@ -546,7 +582,11 @@ public final class HomeStakeRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public int getRecordListCount() {
         if (recordListBuilder_ == null) {
@@ -556,9 +596,13 @@ public final class HomeStakeRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord getRecordList(int index) {
+      public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD getRecordList(int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);
         } else {
@@ -566,10 +610,14 @@ public final class HomeStakeRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord value) {
+          int index, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -583,10 +631,14 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder setRecordList(
-          int index, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.set(index, builderForValue.build());
@@ -597,9 +649,13 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public Builder addRecordList(emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord value) {
+      public Builder addRecordList(emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -613,10 +669,14 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord value) {
+          int index, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD value) {
         if (recordListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -630,10 +690,14 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder addRecordList(
-          emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder builderForValue) {
+          emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(builderForValue.build());
@@ -644,10 +708,14 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder addRecordList(
-          int index, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder builderForValue) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           recordList_.add(index, builderForValue.build());
@@ -658,10 +726,14 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder addAllRecordList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD> values) {
         if (recordListBuilder_ == null) {
           ensureRecordListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -673,7 +745,11 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder clearRecordList() {
         if (recordListBuilder_ == null) {
@@ -686,7 +762,11 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
       public Builder removeRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -699,16 +779,24 @@ public final class HomeStakeRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder getRecordListBuilder(
+      public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder getRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder getRecordListOrBuilder(
+      public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder getRecordListOrBuilder(
           int index) {
         if (recordListBuilder_ == null) {
           return recordList_.get(index);  } else {
@@ -716,9 +804,13 @@ public final class HomeStakeRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder> 
            getRecordListOrBuilderList() {
         if (recordListBuilder_ != null) {
           return recordListBuilder_.getMessageOrBuilderList();
@@ -727,33 +819,45 @@ public final class HomeStakeRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder addRecordListBuilder() {
+      public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder addRecordListBuilder() {
         return getRecordListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.getDefaultInstance());
+            emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder addRecordListBuilder(
+      public emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder addRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.getDefaultInstance());
+            index, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeStakePlayRecord record_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LFADFKADNOD record_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder> 
            getRecordListBuilderList() {
         return getRecordListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder> 
+          emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder> 
           getRecordListFieldBuilder() {
         if (recordListBuilder_ == null) {
           recordListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecord.Builder, emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.HomeStakePlayRecordOrBuilder>(
+              emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNOD.Builder, emu.grasscutter.net.proto.LFADFKADNODOuterClass.LFADFKADNODOrBuilder>(
                   recordList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -829,15 +933,15 @@ public final class HomeStakeRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025HomeStakeRecord.proto\032\031HomeStakePlayRe" +
-      "cord.proto\"<\n\017HomeStakeRecord\022)\n\013record_" +
-      "list\030\006 \003(\0132\024.HomeStakePlayRecordB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\025HomeStakeRecord.proto\032\021LFADFKADNOD.pro" +
+      "to\"4\n\017HomeStakeRecord\022!\n\013record_list\030\001 \003" +
+      "(\0132\014.LFADFKADNODB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LFADFKADNODOuterClass.getDescriptor(),
         });
     internal_static_HomeStakeRecord_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -845,7 +949,7 @@ public final class HomeStakeRecordOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeStakeRecord_descriptor,
         new java.lang.String[] { "RecordList", });
-    emu.grasscutter.net.proto.HomeStakePlayRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LFADFKADNODOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

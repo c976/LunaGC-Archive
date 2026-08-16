@@ -19,62 +19,61 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ABILOHCLAHL = 13;</code>
-     * @return The aBILOHCLAHL.
+     * <code>uint32 IDMCKCAPONB = 1;</code>
+     * @return The iDMCKCAPONB.
      */
-    int getABILOHCLAHL();
+    int getIDMCKCAPONB();
 
     /**
-     * <code>uint32 total_used_time = 1;</code>
-     * @return The totalUsedTime.
+     * <code>uint32 FBINFJGJGID = 2;</code>
+     * @return The fBINFJGJGID.
      */
-    int getTotalUsedTime();
+    int getFBINFJGJGID();
 
     /**
-     * <code>.KDHIAEFLGFM reason = 4;</code>
-     * @return The enum numeric value on the wire for reason.
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
-    int getReasonValue();
-    /**
-     * <code>.KDHIAEFLGFM reason = 4;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason();
+    boolean getIsNewRecord();
 
     /**
-     * <code>bool is_final_settle = 5;</code>
-     * @return The isFinalSettle.
+     * <code>uint32 OONOAKBCILJ = 7;</code>
+     * @return The oONOAKBCILJ.
      */
-    boolean getIsFinalSettle();
+    int getOONOAKBCILJ();
 
     /**
-     * <code>uint32 FDFLGEDCHBF = 9;</code>
-     * @return The fDFLGEDCHBF.
+     * <code>uint32 ABNGMCPFOKH = 10;</code>
+     * @return The aBNGMCPFOKH.
      */
-    int getFDFLGEDCHBF();
+    int getABNGMCPFOKH();
 
     /**
-     * <code>uint32 NGNIJKMMOPP = 14;</code>
-     * @return The nGNIJKMMOPP.
-     */
-    int getNGNIJKMMOPP();
-
-    /**
-     * <code>uint32 final_score = 8;</code>
+     * <code>uint32 final_score = 11;</code>
      * @return The finalScore.
      */
     int getFinalScore();
 
     /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
+     * <code>bool LGOANMAHKLL = 12;</code>
+     * @return The lGOANMAHKLL.
      */
-    boolean getIsNewRecord();
+    boolean getLGOANMAHKLL();
+
+    /**
+     * <code>.GalleryStopReason reason = 13;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.GalleryStopReason reason = 13;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
   }
   /**
    * <pre>
-   * CmdId: 9469
-   * Obf: HDPOABIMFDJ
+   * CmdId: 666
    * </pre>
    *
    * Protobuf type {@code FungusFighterTrainingGallerySettleNotify}
@@ -124,43 +123,43 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
               break;
             case 8: {
 
-              totalUsedTime_ = input.readUInt32();
+              iDMCKCAPONB_ = input.readUInt32();
               break;
             }
             case 16: {
 
+              fBINFJGJGID_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
               isNewRecord_ = input.readBool();
               break;
             }
-            case 32: {
-              int rawValue = input.readEnum();
+            case 56: {
 
-              reason_ = rawValue;
+              oONOAKBCILJ_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 80: {
 
-              isFinalSettle_ = input.readBool();
+              aBNGMCPFOKH_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 88: {
 
               finalScore_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
-              fDFLGEDCHBF_ = input.readUInt32();
+              lGOANMAHKLL_ = input.readBool();
               break;
             }
             case 104: {
+              int rawValue = input.readEnum();
 
-              aBILOHCLAHL_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              nGNIJKMMOPP_ = input.readUInt32();
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -195,84 +194,65 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.class, emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.Builder.class);
     }
 
-    public static final int ABILOHCLAHL_FIELD_NUMBER = 13;
-    private int aBILOHCLAHL_;
+    public static final int IDMCKCAPONB_FIELD_NUMBER = 1;
+    private int iDMCKCAPONB_;
     /**
-     * <code>uint32 ABILOHCLAHL = 13;</code>
-     * @return The aBILOHCLAHL.
+     * <code>uint32 IDMCKCAPONB = 1;</code>
+     * @return The iDMCKCAPONB.
      */
     @java.lang.Override
-    public int getABILOHCLAHL() {
-      return aBILOHCLAHL_;
+    public int getIDMCKCAPONB() {
+      return iDMCKCAPONB_;
     }
 
-    public static final int TOTAL_USED_TIME_FIELD_NUMBER = 1;
-    private int totalUsedTime_;
+    public static final int FBINFJGJGID_FIELD_NUMBER = 2;
+    private int fBINFJGJGID_;
     /**
-     * <code>uint32 total_used_time = 1;</code>
-     * @return The totalUsedTime.
+     * <code>uint32 FBINFJGJGID = 2;</code>
+     * @return The fBINFJGJGID.
      */
     @java.lang.Override
-    public int getTotalUsedTime() {
-      return totalUsedTime_;
+    public int getFBINFJGJGID() {
+      return fBINFJGJGID_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 4;
-    private int reason_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    private boolean isNewRecord_;
     /**
-     * <code>.KDHIAEFLGFM reason = 4;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.KDHIAEFLGFM reason = 4;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
-    }
-
-    public static final int IS_FINAL_SETTLE_FIELD_NUMBER = 5;
-    private boolean isFinalSettle_;
-    /**
-     * <code>bool is_final_settle = 5;</code>
-     * @return The isFinalSettle.
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public boolean getIsFinalSettle() {
-      return isFinalSettle_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
-    public static final int FDFLGEDCHBF_FIELD_NUMBER = 9;
-    private int fDFLGEDCHBF_;
+    public static final int OONOAKBCILJ_FIELD_NUMBER = 7;
+    private int oONOAKBCILJ_;
     /**
-     * <code>uint32 FDFLGEDCHBF = 9;</code>
-     * @return The fDFLGEDCHBF.
+     * <code>uint32 OONOAKBCILJ = 7;</code>
+     * @return The oONOAKBCILJ.
      */
     @java.lang.Override
-    public int getFDFLGEDCHBF() {
-      return fDFLGEDCHBF_;
+    public int getOONOAKBCILJ() {
+      return oONOAKBCILJ_;
     }
 
-    public static final int NGNIJKMMOPP_FIELD_NUMBER = 14;
-    private int nGNIJKMMOPP_;
+    public static final int ABNGMCPFOKH_FIELD_NUMBER = 10;
+    private int aBNGMCPFOKH_;
     /**
-     * <code>uint32 NGNIJKMMOPP = 14;</code>
-     * @return The nGNIJKMMOPP.
+     * <code>uint32 ABNGMCPFOKH = 10;</code>
+     * @return The aBNGMCPFOKH.
      */
     @java.lang.Override
-    public int getNGNIJKMMOPP() {
-      return nGNIJKMMOPP_;
+    public int getABNGMCPFOKH() {
+      return aBNGMCPFOKH_;
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 8;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 11;
     private int finalScore_;
     /**
-     * <code>uint32 final_score = 8;</code>
+     * <code>uint32 final_score = 11;</code>
      * @return The finalScore.
      */
     @java.lang.Override
@@ -280,15 +260,34 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       return finalScore_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
-    private boolean isNewRecord_;
+    public static final int LGOANMAHKLL_FIELD_NUMBER = 12;
+    private boolean lGOANMAHKLL_;
     /**
-     * <code>bool is_new_record = 2;</code>
-     * @return The isNewRecord.
+     * <code>bool LGOANMAHKLL = 12;</code>
+     * @return The lGOANMAHKLL.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public boolean getLGOANMAHKLL() {
+      return lGOANMAHKLL_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 13;
+    private int reason_;
+    /**
+     * <code>.GalleryStopReason reason = 13;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.GalleryStopReason reason = 13;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -305,29 +304,29 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalUsedTime_ != 0) {
-        output.writeUInt32(1, totalUsedTime_);
+      if (iDMCKCAPONB_ != 0) {
+        output.writeUInt32(1, iDMCKCAPONB_);
+      }
+      if (fBINFJGJGID_ != 0) {
+        output.writeUInt32(2, fBINFJGJGID_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(2, isNewRecord_);
+        output.writeBool(3, isNewRecord_);
       }
-      if (reason_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
-        output.writeEnum(4, reason_);
+      if (oONOAKBCILJ_ != 0) {
+        output.writeUInt32(7, oONOAKBCILJ_);
       }
-      if (isFinalSettle_ != false) {
-        output.writeBool(5, isFinalSettle_);
+      if (aBNGMCPFOKH_ != 0) {
+        output.writeUInt32(10, aBNGMCPFOKH_);
       }
       if (finalScore_ != 0) {
-        output.writeUInt32(8, finalScore_);
+        output.writeUInt32(11, finalScore_);
       }
-      if (fDFLGEDCHBF_ != 0) {
-        output.writeUInt32(9, fDFLGEDCHBF_);
+      if (lGOANMAHKLL_ != false) {
+        output.writeBool(12, lGOANMAHKLL_);
       }
-      if (aBILOHCLAHL_ != 0) {
-        output.writeUInt32(13, aBILOHCLAHL_);
-      }
-      if (nGNIJKMMOPP_ != 0) {
-        output.writeUInt32(14, nGNIJKMMOPP_);
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        output.writeEnum(13, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -338,37 +337,37 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalUsedTime_ != 0) {
+      if (iDMCKCAPONB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, totalUsedTime_);
+          .computeUInt32Size(1, iDMCKCAPONB_);
+      }
+      if (fBINFJGJGID_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, fBINFJGJGID_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNewRecord_);
+          .computeBoolSize(3, isNewRecord_);
       }
-      if (reason_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
+      if (oONOAKBCILJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, reason_);
+          .computeUInt32Size(7, oONOAKBCILJ_);
       }
-      if (isFinalSettle_ != false) {
+      if (aBNGMCPFOKH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isFinalSettle_);
+          .computeUInt32Size(10, aBNGMCPFOKH_);
       }
       if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, finalScore_);
+          .computeUInt32Size(11, finalScore_);
       }
-      if (fDFLGEDCHBF_ != 0) {
+      if (lGOANMAHKLL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, fDFLGEDCHBF_);
+          .computeBoolSize(12, lGOANMAHKLL_);
       }
-      if (aBILOHCLAHL_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, aBILOHCLAHL_);
-      }
-      if (nGNIJKMMOPP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, nGNIJKMMOPP_);
+          .computeEnumSize(13, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -385,21 +384,21 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify other = (emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify) obj;
 
-      if (getABILOHCLAHL()
-          != other.getABILOHCLAHL()) return false;
-      if (getTotalUsedTime()
-          != other.getTotalUsedTime()) return false;
-      if (reason_ != other.reason_) return false;
-      if (getIsFinalSettle()
-          != other.getIsFinalSettle()) return false;
-      if (getFDFLGEDCHBF()
-          != other.getFDFLGEDCHBF()) return false;
-      if (getNGNIJKMMOPP()
-          != other.getNGNIJKMMOPP()) return false;
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
+      if (getIDMCKCAPONB()
+          != other.getIDMCKCAPONB()) return false;
+      if (getFBINFJGJGID()
+          != other.getFBINFJGJGID()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getOONOAKBCILJ()
+          != other.getOONOAKBCILJ()) return false;
+      if (getABNGMCPFOKH()
+          != other.getABNGMCPFOKH()) return false;
+      if (getFinalScore()
+          != other.getFinalScore()) return false;
+      if (getLGOANMAHKLL()
+          != other.getLGOANMAHKLL()) return false;
+      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -411,24 +410,24 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ABILOHCLAHL_FIELD_NUMBER;
-      hash = (53 * hash) + getABILOHCLAHL();
-      hash = (37 * hash) + TOTAL_USED_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalUsedTime();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + IS_FINAL_SETTLE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinalSettle());
-      hash = (37 * hash) + FDFLGEDCHBF_FIELD_NUMBER;
-      hash = (53 * hash) + getFDFLGEDCHBF();
-      hash = (37 * hash) + NGNIJKMMOPP_FIELD_NUMBER;
-      hash = (53 * hash) + getNGNIJKMMOPP();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
+      hash = (37 * hash) + IDMCKCAPONB_FIELD_NUMBER;
+      hash = (53 * hash) + getIDMCKCAPONB();
+      hash = (37 * hash) + FBINFJGJGID_FIELD_NUMBER;
+      hash = (53 * hash) + getFBINFJGJGID();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + OONOAKBCILJ_FIELD_NUMBER;
+      hash = (53 * hash) + getOONOAKBCILJ();
+      hash = (37 * hash) + ABNGMCPFOKH_FIELD_NUMBER;
+      hash = (53 * hash) + getABNGMCPFOKH();
+      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getFinalScore();
+      hash = (37 * hash) + LGOANMAHKLL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getLGOANMAHKLL());
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -526,8 +525,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9469
-     * Obf: HDPOABIMFDJ
+     * CmdId: 666
      * </pre>
      *
      * Protobuf type {@code FungusFighterTrainingGallerySettleNotify}
@@ -567,21 +565,21 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aBILOHCLAHL_ = 0;
+        iDMCKCAPONB_ = 0;
 
-        totalUsedTime_ = 0;
+        fBINFJGJGID_ = 0;
 
-        reason_ = 0;
+        isNewRecord_ = false;
 
-        isFinalSettle_ = false;
+        oONOAKBCILJ_ = 0;
 
-        fDFLGEDCHBF_ = 0;
-
-        nGNIJKMMOPP_ = 0;
+        aBNGMCPFOKH_ = 0;
 
         finalScore_ = 0;
 
-        isNewRecord_ = false;
+        lGOANMAHKLL_ = false;
+
+        reason_ = 0;
 
         return this;
       }
@@ -609,14 +607,14 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify buildPartial() {
         emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify result = new emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify(this);
-        result.aBILOHCLAHL_ = aBILOHCLAHL_;
-        result.totalUsedTime_ = totalUsedTime_;
-        result.reason_ = reason_;
-        result.isFinalSettle_ = isFinalSettle_;
-        result.fDFLGEDCHBF_ = fDFLGEDCHBF_;
-        result.nGNIJKMMOPP_ = nGNIJKMMOPP_;
-        result.finalScore_ = finalScore_;
+        result.iDMCKCAPONB_ = iDMCKCAPONB_;
+        result.fBINFJGJGID_ = fBINFJGJGID_;
         result.isNewRecord_ = isNewRecord_;
+        result.oONOAKBCILJ_ = oONOAKBCILJ_;
+        result.aBNGMCPFOKH_ = aBNGMCPFOKH_;
+        result.finalScore_ = finalScore_;
+        result.lGOANMAHKLL_ = lGOANMAHKLL_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -665,29 +663,29 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify other) {
         if (other == emu.grasscutter.net.proto.FungusFighterTrainingGallerySettleNotifyOuterClass.FungusFighterTrainingGallerySettleNotify.getDefaultInstance()) return this;
-        if (other.getABILOHCLAHL() != 0) {
-          setABILOHCLAHL(other.getABILOHCLAHL());
+        if (other.getIDMCKCAPONB() != 0) {
+          setIDMCKCAPONB(other.getIDMCKCAPONB());
         }
-        if (other.getTotalUsedTime() != 0) {
-          setTotalUsedTime(other.getTotalUsedTime());
+        if (other.getFBINFJGJGID() != 0) {
+          setFBINFJGJGID(other.getFBINFJGJGID());
         }
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getIsFinalSettle() != false) {
-          setIsFinalSettle(other.getIsFinalSettle());
+        if (other.getOONOAKBCILJ() != 0) {
+          setOONOAKBCILJ(other.getOONOAKBCILJ());
         }
-        if (other.getFDFLGEDCHBF() != 0) {
-          setFDFLGEDCHBF(other.getFDFLGEDCHBF());
-        }
-        if (other.getNGNIJKMMOPP() != 0) {
-          setNGNIJKMMOPP(other.getNGNIJKMMOPP());
+        if (other.getABNGMCPFOKH() != 0) {
+          setABNGMCPFOKH(other.getABNGMCPFOKH());
         }
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getLGOANMAHKLL() != false) {
+          setLGOANMAHKLL(other.getLGOANMAHKLL());
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -718,249 +716,71 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private int aBILOHCLAHL_ ;
+      private int iDMCKCAPONB_ ;
       /**
-       * <code>uint32 ABILOHCLAHL = 13;</code>
-       * @return The aBILOHCLAHL.
+       * <code>uint32 IDMCKCAPONB = 1;</code>
+       * @return The iDMCKCAPONB.
        */
       @java.lang.Override
-      public int getABILOHCLAHL() {
-        return aBILOHCLAHL_;
+      public int getIDMCKCAPONB() {
+        return iDMCKCAPONB_;
       }
       /**
-       * <code>uint32 ABILOHCLAHL = 13;</code>
-       * @param value The aBILOHCLAHL to set.
+       * <code>uint32 IDMCKCAPONB = 1;</code>
+       * @param value The iDMCKCAPONB to set.
        * @return This builder for chaining.
        */
-      public Builder setABILOHCLAHL(int value) {
+      public Builder setIDMCKCAPONB(int value) {
         
-        aBILOHCLAHL_ = value;
+        iDMCKCAPONB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ABILOHCLAHL = 13;</code>
+       * <code>uint32 IDMCKCAPONB = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearABILOHCLAHL() {
+      public Builder clearIDMCKCAPONB() {
         
-        aBILOHCLAHL_ = 0;
+        iDMCKCAPONB_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalUsedTime_ ;
+      private int fBINFJGJGID_ ;
       /**
-       * <code>uint32 total_used_time = 1;</code>
-       * @return The totalUsedTime.
+       * <code>uint32 FBINFJGJGID = 2;</code>
+       * @return The fBINFJGJGID.
        */
       @java.lang.Override
-      public int getTotalUsedTime() {
-        return totalUsedTime_;
+      public int getFBINFJGJGID() {
+        return fBINFJGJGID_;
       }
       /**
-       * <code>uint32 total_used_time = 1;</code>
-       * @param value The totalUsedTime to set.
+       * <code>uint32 FBINFJGJGID = 2;</code>
+       * @param value The fBINFJGJGID to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalUsedTime(int value) {
+      public Builder setFBINFJGJGID(int value) {
         
-        totalUsedTime_ = value;
+        fBINFJGJGID_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_used_time = 1;</code>
+       * <code>uint32 FBINFJGJGID = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalUsedTime() {
+      public Builder clearFBINFJGJGID() {
         
-        totalUsedTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.KDHIAEFLGFM reason = 4;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 4;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 4;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 4;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinalSettle_ ;
-      /**
-       * <code>bool is_final_settle = 5;</code>
-       * @return The isFinalSettle.
-       */
-      @java.lang.Override
-      public boolean getIsFinalSettle() {
-        return isFinalSettle_;
-      }
-      /**
-       * <code>bool is_final_settle = 5;</code>
-       * @param value The isFinalSettle to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinalSettle(boolean value) {
-        
-        isFinalSettle_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_final_settle = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinalSettle() {
-        
-        isFinalSettle_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int fDFLGEDCHBF_ ;
-      /**
-       * <code>uint32 FDFLGEDCHBF = 9;</code>
-       * @return The fDFLGEDCHBF.
-       */
-      @java.lang.Override
-      public int getFDFLGEDCHBF() {
-        return fDFLGEDCHBF_;
-      }
-      /**
-       * <code>uint32 FDFLGEDCHBF = 9;</code>
-       * @param value The fDFLGEDCHBF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFDFLGEDCHBF(int value) {
-        
-        fDFLGEDCHBF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FDFLGEDCHBF = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFDFLGEDCHBF() {
-        
-        fDFLGEDCHBF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nGNIJKMMOPP_ ;
-      /**
-       * <code>uint32 NGNIJKMMOPP = 14;</code>
-       * @return The nGNIJKMMOPP.
-       */
-      @java.lang.Override
-      public int getNGNIJKMMOPP() {
-        return nGNIJKMMOPP_;
-      }
-      /**
-       * <code>uint32 NGNIJKMMOPP = 14;</code>
-       * @param value The nGNIJKMMOPP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNGNIJKMMOPP(int value) {
-        
-        nGNIJKMMOPP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NGNIJKMMOPP = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNGNIJKMMOPP() {
-        
-        nGNIJKMMOPP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int finalScore_ ;
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @return The finalScore.
-       */
-      @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
-      }
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @param value The finalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinalScore(int value) {
-        
-        finalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinalScore() {
-        
-        finalScore_ = 0;
+        fBINFJGJGID_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -968,7 +788,7 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -979,12 +799,190 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int oONOAKBCILJ_ ;
+      /**
+       * <code>uint32 OONOAKBCILJ = 7;</code>
+       * @return The oONOAKBCILJ.
+       */
+      @java.lang.Override
+      public int getOONOAKBCILJ() {
+        return oONOAKBCILJ_;
+      }
+      /**
+       * <code>uint32 OONOAKBCILJ = 7;</code>
+       * @param value The oONOAKBCILJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOONOAKBCILJ(int value) {
+        
+        oONOAKBCILJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OONOAKBCILJ = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOONOAKBCILJ() {
+        
+        oONOAKBCILJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aBNGMCPFOKH_ ;
+      /**
+       * <code>uint32 ABNGMCPFOKH = 10;</code>
+       * @return The aBNGMCPFOKH.
+       */
+      @java.lang.Override
+      public int getABNGMCPFOKH() {
+        return aBNGMCPFOKH_;
+      }
+      /**
+       * <code>uint32 ABNGMCPFOKH = 10;</code>
+       * @param value The aBNGMCPFOKH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setABNGMCPFOKH(int value) {
+        
+        aBNGMCPFOKH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 ABNGMCPFOKH = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearABNGMCPFOKH() {
+        
+        aBNGMCPFOKH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int finalScore_ ;
+      /**
+       * <code>uint32 final_score = 11;</code>
+       * @return The finalScore.
+       */
+      @java.lang.Override
+      public int getFinalScore() {
+        return finalScore_;
+      }
+      /**
+       * <code>uint32 final_score = 11;</code>
+       * @param value The finalScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinalScore(int value) {
+        
+        finalScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 final_score = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinalScore() {
+        
+        finalScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean lGOANMAHKLL_ ;
+      /**
+       * <code>bool LGOANMAHKLL = 12;</code>
+       * @return The lGOANMAHKLL.
+       */
+      @java.lang.Override
+      public boolean getLGOANMAHKLL() {
+        return lGOANMAHKLL_;
+      }
+      /**
+       * <code>bool LGOANMAHKLL = 12;</code>
+       * @param value The lGOANMAHKLL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLGOANMAHKLL(boolean value) {
+        
+        lGOANMAHKLL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool LGOANMAHKLL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLGOANMAHKLL() {
+        
+        lGOANMAHKLL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <code>.GalleryStopReason reason = 13;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 13;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 13;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 13;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GalleryStopReason reason = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
         onChanged();
         return this;
       }
@@ -1056,27 +1054,27 @@ public final class FungusFighterTrainingGallerySettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n.FungusFighterTrainingGallerySettleNoti" +
-      "fy.proto\032\021KDHIAEFLGFM.proto\"\345\001\n(FungusFi" +
-      "ghterTrainingGallerySettleNotify\022\023\n\013ABIL" +
-      "OHCLAHL\030\r \001(\r\022\027\n\017total_used_time\030\001 \001(\r\022\034" +
-      "\n\006reason\030\004 \001(\0162\014.KDHIAEFLGFM\022\027\n\017is_final" +
-      "_settle\030\005 \001(\010\022\023\n\013FDFLGEDCHBF\030\t \001(\r\022\023\n\013NG" +
-      "NIJKMMOPP\030\016 \001(\r\022\023\n\013final_score\030\010 \001(\r\022\025\n\r" +
-      "is_new_record\030\002 \001(\010B\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "fy.proto\032\027GalleryStopReason.proto\"\343\001\n(Fu" +
+      "ngusFighterTrainingGallerySettleNotify\022\023" +
+      "\n\013IDMCKCAPONB\030\001 \001(\r\022\023\n\013FBINFJGJGID\030\002 \001(\r" +
+      "\022\025\n\ris_new_record\030\003 \001(\010\022\023\n\013OONOAKBCILJ\030\007" +
+      " \001(\r\022\023\n\013ABNGMCPFOKH\030\n \001(\r\022\023\n\013final_score" +
+      "\030\013 \001(\r\022\023\n\013LGOANMAHKLL\030\014 \001(\010\022\"\n\006reason\030\r " +
+      "\001(\0162\022.GalleryStopReasonB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor(),
         });
     internal_static_FungusFighterTrainingGallerySettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FungusFighterTrainingGallerySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterTrainingGallerySettleNotify_descriptor,
-        new java.lang.String[] { "ABILOHCLAHL", "TotalUsedTime", "Reason", "IsFinalSettle", "FDFLGEDCHBF", "NGNIJKMMOPP", "FinalScore", "IsNewRecord", });
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor();
+        new java.lang.String[] { "IDMCKCAPONB", "FBINFJGJGID", "IsNewRecord", "OONOAKBCILJ", "ABNGMCPFOKH", "FinalScore", "LGOANMAHKLL", "Reason", });
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

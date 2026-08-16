@@ -20,7 +20,8 @@ public final class ExitFishingReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25388
+   * CmdId: 5737
+   * Obf: MAMNOGOKBCH
    * </pre>
    *
    * Protobuf type {@code ExitFishingReq}
@@ -245,7 +246,8 @@ public final class ExitFishingReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25388
+     * CmdId: 5737
+     * Obf: MAMNOGOKBCH
      * </pre>
      *
      * Protobuf type {@code ExitFishingReq}

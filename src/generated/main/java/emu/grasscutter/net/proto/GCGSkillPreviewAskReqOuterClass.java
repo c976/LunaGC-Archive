@@ -20,8 +20,7 @@ public final class GCGSkillPreviewAskReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3512
-   * Obf: JBJPOFPGMJB
+   * CMD_ID = 1594
    * </pre>
    *
    * Protobuf type {@code GCGSkillPreviewAskReq}
@@ -246,8 +245,7 @@ public final class GCGSkillPreviewAskReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3512
-     * Obf: JBJPOFPGMJB
+     * CMD_ID = 1594
      * </pre>
      *
      * Protobuf type {@code GCGSkillPreviewAskReq}

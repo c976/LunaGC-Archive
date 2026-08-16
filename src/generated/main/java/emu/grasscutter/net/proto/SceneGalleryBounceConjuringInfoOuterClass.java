@@ -19,22 +19,26 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_destroyed_machine_count = 15;</code>
-     * @return The totalDestroyedMachineCount.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 15;</code>
+     * @return The dDELJGCCNIB.
      */
-    int getTotalDestroyedMachineCount();
+    int getDDELJGCCNIB();
 
     /**
-     * <code>uint32 total_score = 10;</code>
-     * @return The totalScore.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 DBBPNGGHLLJ = 1;</code>
+     * @return The dBBPNGGHLLJ.
      */
-    int getTotalScore();
+    int getDBBPNGGHLLJ();
   }
   /**
-   * <pre>
-   * Obf: PMKBECOBEAJ
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryBounceConjuringInfo}
    */
   public static final class SceneGalleryBounceConjuringInfo extends
@@ -79,14 +83,14 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
-              totalScore_ = input.readUInt32();
+              dBBPNGGHLLJ_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              totalDestroyedMachineCount_ = input.readUInt32();
+              dDELJGCCNIB_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +125,34 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo.class, emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo.Builder.class);
     }
 
-    public static final int TOTAL_DESTROYED_MACHINE_COUNT_FIELD_NUMBER = 15;
-    private int totalDestroyedMachineCount_;
+    public static final int DDELJGCCNIB_FIELD_NUMBER = 15;
+    private int dDELJGCCNIB_;
     /**
-     * <code>uint32 total_destroyed_machine_count = 15;</code>
-     * @return The totalDestroyedMachineCount.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 DDELJGCCNIB = 15;</code>
+     * @return The dDELJGCCNIB.
      */
     @java.lang.Override
-    public int getTotalDestroyedMachineCount() {
-      return totalDestroyedMachineCount_;
+    public int getDDELJGCCNIB() {
+      return dDELJGCCNIB_;
     }
 
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 10;
-    private int totalScore_;
+    public static final int DBBPNGGHLLJ_FIELD_NUMBER = 1;
+    private int dBBPNGGHLLJ_;
     /**
-     * <code>uint32 total_score = 10;</code>
-     * @return The totalScore.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 DBBPNGGHLLJ = 1;</code>
+     * @return The dBBPNGGHLLJ.
      */
     @java.lang.Override
-    public int getTotalScore() {
-      return totalScore_;
+    public int getDBBPNGGHLLJ() {
+      return dBBPNGGHLLJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +169,11 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalScore_ != 0) {
-        output.writeUInt32(10, totalScore_);
+      if (dBBPNGGHLLJ_ != 0) {
+        output.writeUInt32(1, dBBPNGGHLLJ_);
       }
-      if (totalDestroyedMachineCount_ != 0) {
-        output.writeUInt32(15, totalDestroyedMachineCount_);
+      if (dDELJGCCNIB_ != 0) {
+        output.writeUInt32(15, dDELJGCCNIB_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +184,13 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalScore_ != 0) {
+      if (dBBPNGGHLLJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, totalScore_);
+          .computeUInt32Size(1, dBBPNGGHLLJ_);
       }
-      if (totalDestroyedMachineCount_ != 0) {
+      if (dDELJGCCNIB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, totalDestroyedMachineCount_);
+          .computeUInt32Size(15, dDELJGCCNIB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +207,10 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo other = (emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo) obj;
 
-      if (getTotalDestroyedMachineCount()
-          != other.getTotalDestroyedMachineCount()) return false;
-      if (getTotalScore()
-          != other.getTotalScore()) return false;
+      if (getDDELJGCCNIB()
+          != other.getDDELJGCCNIB()) return false;
+      if (getDBBPNGGHLLJ()
+          != other.getDBBPNGGHLLJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +222,10 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOTAL_DESTROYED_MACHINE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalDestroyedMachineCount();
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalScore();
+      hash = (37 * hash) + DDELJGCCNIB_FIELD_NUMBER;
+      hash = (53 * hash) + getDDELJGCCNIB();
+      hash = (37 * hash) + DBBPNGGHLLJ_FIELD_NUMBER;
+      hash = (53 * hash) + getDBBPNGGHLLJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +322,6 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PMKBECOBEAJ
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryBounceConjuringInfo}
      */
     public static final class Builder extends
@@ -351,9 +359,9 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        totalDestroyedMachineCount_ = 0;
+        dDELJGCCNIB_ = 0;
 
-        totalScore_ = 0;
+        dBBPNGGHLLJ_ = 0;
 
         return this;
       }
@@ -381,8 +389,8 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo result = new emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo(this);
-        result.totalDestroyedMachineCount_ = totalDestroyedMachineCount_;
-        result.totalScore_ = totalScore_;
+        result.dDELJGCCNIB_ = dDELJGCCNIB_;
+        result.dBBPNGGHLLJ_ = dBBPNGGHLLJ_;
         onBuilt();
         return result;
       }
@@ -431,11 +439,11 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryBounceConjuringInfoOuterClass.SceneGalleryBounceConjuringInfo.getDefaultInstance()) return this;
-        if (other.getTotalDestroyedMachineCount() != 0) {
-          setTotalDestroyedMachineCount(other.getTotalDestroyedMachineCount());
+        if (other.getDDELJGCCNIB() != 0) {
+          setDDELJGCCNIB(other.getDDELJGCCNIB());
         }
-        if (other.getTotalScore() != 0) {
-          setTotalScore(other.getTotalScore());
+        if (other.getDBBPNGGHLLJ() != 0) {
+          setDBBPNGGHLLJ(other.getDBBPNGGHLLJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +474,88 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
         return this;
       }
 
-      private int totalDestroyedMachineCount_ ;
+      private int dDELJGCCNIB_ ;
       /**
-       * <code>uint32 total_destroyed_machine_count = 15;</code>
-       * @return The totalDestroyedMachineCount.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 15;</code>
+       * @return The dDELJGCCNIB.
        */
       @java.lang.Override
-      public int getTotalDestroyedMachineCount() {
-        return totalDestroyedMachineCount_;
+      public int getDDELJGCCNIB() {
+        return dDELJGCCNIB_;
       }
       /**
-       * <code>uint32 total_destroyed_machine_count = 15;</code>
-       * @param value The totalDestroyedMachineCount to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 15;</code>
+       * @param value The dDELJGCCNIB to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalDestroyedMachineCount(int value) {
+      public Builder setDDELJGCCNIB(int value) {
         
-        totalDestroyedMachineCount_ = value;
+        dDELJGCCNIB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_destroyed_machine_count = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DDELJGCCNIB = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalDestroyedMachineCount() {
+      public Builder clearDDELJGCCNIB() {
         
-        totalDestroyedMachineCount_ = 0;
+        dDELJGCCNIB_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalScore_ ;
+      private int dBBPNGGHLLJ_ ;
       /**
-       * <code>uint32 total_score = 10;</code>
-       * @return The totalScore.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DBBPNGGHLLJ = 1;</code>
+       * @return The dBBPNGGHLLJ.
        */
       @java.lang.Override
-      public int getTotalScore() {
-        return totalScore_;
+      public int getDBBPNGGHLLJ() {
+        return dBBPNGGHLLJ_;
       }
       /**
-       * <code>uint32 total_score = 10;</code>
-       * @param value The totalScore to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DBBPNGGHLLJ = 1;</code>
+       * @param value The dBBPNGGHLLJ to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalScore(int value) {
+      public Builder setDBBPNGGHLLJ(int value) {
         
-        totalScore_ = value;
+        dBBPNGGHLLJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_score = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DBBPNGGHLLJ = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalScore() {
+      public Builder clearDBBPNGGHLLJ() {
         
-        totalScore_ = 0;
+        dBBPNGGHLLJ_ = 0;
         onChanged();
         return this;
       }
@@ -595,10 +627,9 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryBounceConjuringInfo.proto\"" +
-      "]\n\037SceneGalleryBounceConjuringInfo\022%\n\035to" +
-      "tal_destroyed_machine_count\030\017 \001(\r\022\023\n\013tot" +
-      "al_score\030\n \001(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "K\n\037SceneGalleryBounceConjuringInfo\022\023\n\013DD" +
+      "ELJGCCNIB\030\017 \001(\r\022\023\n\013DBBPNGGHLLJ\030\001 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -609,7 +640,7 @@ public final class SceneGalleryBounceConjuringInfoOuterClass {
     internal_static_SceneGalleryBounceConjuringInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryBounceConjuringInfo_descriptor,
-        new java.lang.String[] { "TotalDestroyedMachineCount", "TotalScore", });
+        new java.lang.String[] { "DDELJGCCNIB", "DBBPNGGHLLJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

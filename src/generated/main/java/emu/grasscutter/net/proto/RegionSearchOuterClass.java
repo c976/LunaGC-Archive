@@ -19,33 +19,53 @@ public final class RegionSearchOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 region_search_id = 6;</code>
-     * @return The regionSearchId.
-     */
-    int getRegionSearchId();
-
-    /**
-     * <code>bool is_entered = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_entered = 1;</code>
      * @return The isEntered.
      */
     boolean getIsEntered();
 
     /**
-     * <code>.RegionSearchState state = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 JLJHNFKANGK = 5;</code>
+     * @return The jLJHNFKANGK.
+     */
+    int getJLJHNFKANGK();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 progress = 7;</code>
+     * @return The progress.
+     */
+    int getProgress();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.RegionSearchState state = 6;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <code>.RegionSearchState state = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.RegionSearchState state = 6;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState getState();
-
-    /**
-     * <code>uint32 progress = 14;</code>
-     * @return The progress.
-     */
-    int getProgress();
   }
   /**
    * Protobuf type {@code RegionSearch}
@@ -93,23 +113,23 @@ public final class RegionSearchOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              regionSearchId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 8: {
 
               isEntered_ = input.readBool();
               break;
             }
-            case 80: {
+            case 40: {
+
+              jLJHNFKANGK_ = input.readUInt32();
+              break;
+            }
+            case 48: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
               break;
             }
-            case 112: {
+            case 56: {
 
               progress_ = input.readUInt32();
               break;
@@ -146,21 +166,14 @@ public final class RegionSearchOuterClass {
               emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch.class, emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch.Builder.class);
     }
 
-    public static final int REGION_SEARCH_ID_FIELD_NUMBER = 6;
-    private int regionSearchId_;
-    /**
-     * <code>uint32 region_search_id = 6;</code>
-     * @return The regionSearchId.
-     */
-    @java.lang.Override
-    public int getRegionSearchId() {
-      return regionSearchId_;
-    }
-
-    public static final int IS_ENTERED_FIELD_NUMBER = 8;
+    public static final int IS_ENTERED_FIELD_NUMBER = 1;
     private boolean isEntered_;
     /**
-     * <code>bool is_entered = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_entered = 1;</code>
      * @return The isEntered.
      */
     @java.lang.Override
@@ -168,34 +181,61 @@ public final class RegionSearchOuterClass {
       return isEntered_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 10;
+    public static final int JLJHNFKANGK_FIELD_NUMBER = 5;
+    private int jLJHNFKANGK_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 JLJHNFKANGK = 5;</code>
+     * @return The jLJHNFKANGK.
+     */
+    @java.lang.Override
+    public int getJLJHNFKANGK() {
+      return jLJHNFKANGK_;
+    }
+
+    public static final int PROGRESS_FIELD_NUMBER = 7;
+    private int progress_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 progress = 7;</code>
+     * @return The progress.
+     */
+    @java.lang.Override
+    public int getProgress() {
+      return progress_;
+    }
+
+    public static final int STATE_FIELD_NUMBER = 6;
     private int state_;
     /**
-     * <code>.RegionSearchState state = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.RegionSearchState state = 6;</code>
      * @return The enum numeric value on the wire for state.
      */
     @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
-     * <code>.RegionSearchState state = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.RegionSearchState state = 6;</code>
      * @return The state.
      */
     @java.lang.Override public emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState getState() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState result = emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.valueOf(state_);
       return result == null ? emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.UNRECOGNIZED : result;
-    }
-
-    public static final int PROGRESS_FIELD_NUMBER = 14;
-    private int progress_;
-    /**
-     * <code>uint32 progress = 14;</code>
-     * @return The progress.
-     */
-    @java.lang.Override
-    public int getProgress() {
-      return progress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,17 +252,17 @@ public final class RegionSearchOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (regionSearchId_ != 0) {
-        output.writeUInt32(6, regionSearchId_);
-      }
       if (isEntered_ != false) {
-        output.writeBool(8, isEntered_);
+        output.writeBool(1, isEntered_);
       }
-      if (state_ != emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.REGION_SEARCH_NONE.getNumber()) {
-        output.writeEnum(10, state_);
+      if (jLJHNFKANGK_ != 0) {
+        output.writeUInt32(5, jLJHNFKANGK_);
+      }
+      if (state_ != emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.CCNGPDLFGFE_REGION_SEARCH_NONE.getNumber()) {
+        output.writeEnum(6, state_);
       }
       if (progress_ != 0) {
-        output.writeUInt32(14, progress_);
+        output.writeUInt32(7, progress_);
       }
       unknownFields.writeTo(output);
     }
@@ -233,21 +273,21 @@ public final class RegionSearchOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (regionSearchId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, regionSearchId_);
-      }
       if (isEntered_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isEntered_);
+          .computeBoolSize(1, isEntered_);
       }
-      if (state_ != emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.REGION_SEARCH_NONE.getNumber()) {
+      if (jLJHNFKANGK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, state_);
+          .computeUInt32Size(5, jLJHNFKANGK_);
+      }
+      if (state_ != emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.CCNGPDLFGFE_REGION_SEARCH_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(6, state_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, progress_);
+          .computeUInt32Size(7, progress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -264,13 +304,13 @@ public final class RegionSearchOuterClass {
       }
       emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch other = (emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch) obj;
 
-      if (getRegionSearchId()
-          != other.getRegionSearchId()) return false;
       if (getIsEntered()
           != other.getIsEntered()) return false;
-      if (state_ != other.state_) return false;
+      if (getJLJHNFKANGK()
+          != other.getJLJHNFKANGK()) return false;
       if (getProgress()
           != other.getProgress()) return false;
+      if (state_ != other.state_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -282,15 +322,15 @@ public final class RegionSearchOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REGION_SEARCH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRegionSearchId();
       hash = (37 * hash) + IS_ENTERED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEntered());
-      hash = (37 * hash) + STATE_FIELD_NUMBER;
-      hash = (53 * hash) + state_;
+      hash = (37 * hash) + JLJHNFKANGK_FIELD_NUMBER;
+      hash = (53 * hash) + getJLJHNFKANGK();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + state_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -424,13 +464,13 @@ public final class RegionSearchOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        regionSearchId_ = 0;
-
         isEntered_ = false;
 
-        state_ = 0;
+        jLJHNFKANGK_ = 0;
 
         progress_ = 0;
+
+        state_ = 0;
 
         return this;
       }
@@ -458,10 +498,10 @@ public final class RegionSearchOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch buildPartial() {
         emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch result = new emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch(this);
-        result.regionSearchId_ = regionSearchId_;
         result.isEntered_ = isEntered_;
-        result.state_ = state_;
+        result.jLJHNFKANGK_ = jLJHNFKANGK_;
         result.progress_ = progress_;
+        result.state_ = state_;
         onBuilt();
         return result;
       }
@@ -510,17 +550,17 @@ public final class RegionSearchOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch other) {
         if (other == emu.grasscutter.net.proto.RegionSearchOuterClass.RegionSearch.getDefaultInstance()) return this;
-        if (other.getRegionSearchId() != 0) {
-          setRegionSearchId(other.getRegionSearchId());
-        }
         if (other.getIsEntered() != false) {
           setIsEntered(other.getIsEntered());
         }
-        if (other.state_ != 0) {
-          setStateValue(other.getStateValue());
+        if (other.getJLJHNFKANGK() != 0) {
+          setJLJHNFKANGK(other.getJLJHNFKANGK());
         }
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
+        }
+        if (other.state_ != 0) {
+          setStateValue(other.getStateValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -551,40 +591,13 @@ public final class RegionSearchOuterClass {
         return this;
       }
 
-      private int regionSearchId_ ;
-      /**
-       * <code>uint32 region_search_id = 6;</code>
-       * @return The regionSearchId.
-       */
-      @java.lang.Override
-      public int getRegionSearchId() {
-        return regionSearchId_;
-      }
-      /**
-       * <code>uint32 region_search_id = 6;</code>
-       * @param value The regionSearchId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRegionSearchId(int value) {
-        
-        regionSearchId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 region_search_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRegionSearchId() {
-        
-        regionSearchId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isEntered_ ;
       /**
-       * <code>bool is_entered = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_entered = 1;</code>
        * @return The isEntered.
        */
       @java.lang.Override
@@ -592,7 +605,11 @@ public final class RegionSearchOuterClass {
         return isEntered_;
       }
       /**
-       * <code>bool is_entered = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_entered = 1;</code>
        * @param value The isEntered to set.
        * @return This builder for chaining.
        */
@@ -603,7 +620,11 @@ public final class RegionSearchOuterClass {
         return this;
       }
       /**
-       * <code>bool is_entered = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_entered = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEntered() {
@@ -613,16 +634,110 @@ public final class RegionSearchOuterClass {
         return this;
       }
 
+      private int jLJHNFKANGK_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JLJHNFKANGK = 5;</code>
+       * @return The jLJHNFKANGK.
+       */
+      @java.lang.Override
+      public int getJLJHNFKANGK() {
+        return jLJHNFKANGK_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JLJHNFKANGK = 5;</code>
+       * @param value The jLJHNFKANGK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJLJHNFKANGK(int value) {
+        
+        jLJHNFKANGK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JLJHNFKANGK = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJLJHNFKANGK() {
+        
+        jLJHNFKANGK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int progress_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 progress = 7;</code>
+       * @return The progress.
+       */
+      @java.lang.Override
+      public int getProgress() {
+        return progress_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 progress = 7;</code>
+       * @param value The progress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProgress(int value) {
+        
+        progress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 progress = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProgress() {
+        
+        progress_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int state_ = 0;
       /**
-       * <code>.RegionSearchState state = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.RegionSearchState state = 6;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>.RegionSearchState state = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.RegionSearchState state = 6;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -633,7 +748,11 @@ public final class RegionSearchOuterClass {
         return this;
       }
       /**
-       * <code>.RegionSearchState state = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.RegionSearchState state = 6;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -643,7 +762,11 @@ public final class RegionSearchOuterClass {
         return result == null ? emu.grasscutter.net.proto.RegionSearchStateOuterClass.RegionSearchState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.RegionSearchState state = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.RegionSearchState state = 6;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -657,43 +780,16 @@ public final class RegionSearchOuterClass {
         return this;
       }
       /**
-       * <code>.RegionSearchState state = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.RegionSearchState state = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
         
         state_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
         onChanged();
         return this;
       }
@@ -765,10 +861,10 @@ public final class RegionSearchOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022RegionSearch.proto\032\027RegionSearchState." +
-      "proto\"q\n\014RegionSearch\022\030\n\020region_search_i" +
-      "d\030\006 \001(\r\022\022\n\nis_entered\030\010 \001(\010\022!\n\005state\030\n \001" +
-      "(\0162\022.RegionSearchState\022\020\n\010progress\030\016 \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "proto\"l\n\014RegionSearch\022\022\n\nis_entered\030\001 \001(" +
+      "\010\022\023\n\013JLJHNFKANGK\030\005 \001(\r\022\020\n\010progress\030\007 \001(\r" +
+      "\022!\n\005state\030\006 \001(\0162\022.RegionSearchStateB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -780,7 +876,7 @@ public final class RegionSearchOuterClass {
     internal_static_RegionSearch_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionSearch_descriptor,
-        new java.lang.String[] { "RegionSearchId", "IsEntered", "State", "Progress", });
+        new java.lang.String[] { "IsEntered", "JLJHNFKANGK", "Progress", "State", });
     emu.grasscutter.net.proto.RegionSearchStateOuterClass.getDescriptor();
   }
 

@@ -19,23 +19,22 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 face_type = 15;</code>
-     * @return The faceType.
-     */
-    int getFaceType();
-
-    /**
-     * <code>uint32 card_id = 5;</code>
+     * <pre>
+     * CMD_ID = 26046
+     * </pre>
+     *
+     * <code>uint32 card_id = 14;</code>
      * @return The cardId.
      */
     int getCardId();
+
+    /**
+     * <code>uint32 face_type = 13;</code>
+     * @return The faceType.
+     */
+    int getFaceType();
   }
   /**
-   * <pre>
-   * CmdId: 270
-   * Obf: ACEEALMICHB
-   * </pre>
-   *
    * Protobuf type {@code GCGDSCardFaceUnlockNotify}
    */
   public static final class GCGDSCardFaceUnlockNotify extends
@@ -80,14 +79,14 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 104: {
 
               faceType_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +121,30 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify.class, emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify.Builder.class);
     }
 
-    public static final int FACE_TYPE_FIELD_NUMBER = 15;
-    private int faceType_;
-    /**
-     * <code>uint32 face_type = 15;</code>
-     * @return The faceType.
-     */
-    @java.lang.Override
-    public int getFaceType() {
-      return faceType_;
-    }
-
-    public static final int CARD_ID_FIELD_NUMBER = 5;
+    public static final int CARD_ID_FIELD_NUMBER = 14;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 5;</code>
+     * <pre>
+     * CMD_ID = 26046
+     * </pre>
+     *
+     * <code>uint32 card_id = 14;</code>
      * @return The cardId.
      */
     @java.lang.Override
     public int getCardId() {
       return cardId_;
+    }
+
+    public static final int FACE_TYPE_FIELD_NUMBER = 13;
+    private int faceType_;
+    /**
+     * <code>uint32 face_type = 13;</code>
+     * @return The faceType.
+     */
+    @java.lang.Override
+    public int getFaceType() {
+      return faceType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +161,11 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(5, cardId_);
-      }
       if (faceType_ != 0) {
-        output.writeUInt32(15, faceType_);
+        output.writeUInt32(13, faceType_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(14, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cardId_);
-      }
       if (faceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, faceType_);
+          .computeUInt32Size(13, faceType_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +199,10 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify other = (emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify) obj;
 
-      if (getFaceType()
-          != other.getFaceType()) return false;
       if (getCardId()
           != other.getCardId()) return false;
+      if (getFaceType()
+          != other.getFaceType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +214,10 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getFaceType();
       hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCardId();
+      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,11 +314,6 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 270
-     * Obf: ACEEALMICHB
-     * </pre>
-     *
      * Protobuf type {@code GCGDSCardFaceUnlockNotify}
      */
     public static final class Builder extends
@@ -353,9 +351,9 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        faceType_ = 0;
-
         cardId_ = 0;
+
+        faceType_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify buildPartial() {
         emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify result = new emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify(this);
-        result.faceType_ = faceType_;
         result.cardId_ = cardId_;
+        result.faceType_ = faceType_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify other) {
         if (other == emu.grasscutter.net.proto.GCGDSCardFaceUnlockNotifyOuterClass.GCGDSCardFaceUnlockNotify.getDefaultInstance()) return this;
-        if (other.getFaceType() != 0) {
-          setFaceType(other.getFaceType());
-        }
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
+        }
+        if (other.getFaceType() != 0) {
+          setFaceType(other.getFaceType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,13 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
         return this;
       }
 
-      private int faceType_ ;
-      /**
-       * <code>uint32 face_type = 15;</code>
-       * @return The faceType.
-       */
-      @java.lang.Override
-      public int getFaceType() {
-        return faceType_;
-      }
-      /**
-       * <code>uint32 face_type = 15;</code>
-       * @param value The faceType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFaceType(int value) {
-        
-        faceType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 face_type = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFaceType() {
-        
-        faceType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 5;</code>
+       * <pre>
+       * CMD_ID = 26046
+       * </pre>
+       *
+       * <code>uint32 card_id = 14;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -509,7 +480,11 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 5;</code>
+       * <pre>
+       * CMD_ID = 26046
+       * </pre>
+       *
+       * <code>uint32 card_id = 14;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +495,47 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 5;</code>
+       * <pre>
+       * CMD_ID = 26046
+       * </pre>
+       *
+       * <code>uint32 card_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
         
         cardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int faceType_ ;
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @return The faceType.
+       */
+      @java.lang.Override
+      public int getFaceType() {
+        return faceType_;
+      }
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @param value The faceType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceType(int value) {
+        
+        faceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceType() {
+        
+        faceType_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +607,8 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GCGDSCardFaceUnlockNotify.proto\"?\n\031GCG" +
-      "DSCardFaceUnlockNotify\022\021\n\tface_type\030\017 \001(" +
-      "\r\022\017\n\007card_id\030\005 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "DSCardFaceUnlockNotify\022\017\n\007card_id\030\016 \001(\r\022" +
+      "\021\n\tface_type\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +620,7 @@ public final class GCGDSCardFaceUnlockNotifyOuterClass {
     internal_static_GCGDSCardFaceUnlockNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSCardFaceUnlockNotify_descriptor,
-        new java.lang.String[] { "FaceType", "CardId", });
+        new java.lang.String[] { "CardId", "FaceType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

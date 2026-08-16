@@ -19,28 +19,28 @@ public final class FeverBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty = 2;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 score = 9;</code>
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     int getScore();
+
+    /**
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>uint32 difficulty = 13;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
   }
   /**
    * Protobuf type {@code FeverBattleSettleInfo}
@@ -87,24 +87,24 @@ public final class FeverBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
             case 64: {
 
-              levelId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
-            case 72: {
+            case 80: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 88: {
 
-              isNewRecord_ = input.readBool();
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              difficulty_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,32 +139,10 @@ public final class FeverBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.class, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder.class);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 2;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 2;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -172,15 +150,37 @@ public final class FeverBattleSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 9;
+    public static final int SCORE_FIELD_NUMBER = 10;
     private int score_;
     /**
-     * <code>uint32 score = 9;</code>
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     @java.lang.Override
     public int getScore() {
       return score_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 13;
+    private int difficulty_;
+    /**
+     * <code>uint32 difficulty = 13;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class FeverBattleSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (difficulty_ != 0) {
-        output.writeUInt32(2, difficulty_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+      if (isNewRecord_ != false) {
+        output.writeBool(8, isNewRecord_);
       }
       if (score_ != 0) {
-        output.writeUInt32(9, score_);
+        output.writeUInt32(10, score_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
+      if (levelId_ != 0) {
+        output.writeUInt32(11, levelId_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(13, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class FeverBattleSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (difficulty_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, difficulty_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeBoolSize(8, isNewRecord_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, score_);
+          .computeUInt32Size(10, score_);
       }
-      if (isNewRecord_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
+          .computeUInt32Size(11, levelId_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class FeverBattleSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo other = (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) obj;
 
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class FeverBattleSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class FeverBattleSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        difficulty_ = 0;
-
-        levelId_ = 0;
-
         isNewRecord_ = false;
 
         score_ = 0;
+
+        levelId_ = 0;
+
+        difficulty_ = 0;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class FeverBattleSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo result = new emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo(this);
-        result.difficulty_ = difficulty_;
-        result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
         result.score_ = score_;
+        result.levelId_ = levelId_;
+        result.difficulty_ = difficulty_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class FeverBattleSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance()) return this;
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,71 +537,9 @@ public final class FeverBattleSettleInfoOuterClass {
         return this;
       }
 
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 2;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 2;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -609,7 +547,7 @@ public final class FeverBattleSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 8;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -620,7 +558,7 @@ public final class FeverBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -632,7 +570,7 @@ public final class FeverBattleSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 9;</code>
+       * <code>uint32 score = 10;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -640,7 +578,7 @@ public final class FeverBattleSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 9;</code>
+       * <code>uint32 score = 10;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -651,12 +589,74 @@ public final class FeverBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 9;</code>
+       * <code>uint32 score = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
         
         score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 11;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 11;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <code>uint32 difficulty = 13;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <code>uint32 difficulty = 13;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
+        
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
         onChanged();
         return this;
       }
@@ -728,9 +728,9 @@ public final class FeverBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033FeverBattleSettleInfo.proto\"c\n\025FeverBa" +
-      "ttleSettleInfo\022\022\n\ndifficulty\030\002 \001(\r\022\020\n\010le" +
-      "vel_id\030\010 \001(\r\022\025\n\ris_new_record\030\014 \001(\010\022\r\n\005s" +
-      "core\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "ttleSettleInfo\022\025\n\ris_new_record\030\010 \001(\010\022\r\n" +
+      "\005score\030\n \001(\r\022\020\n\010level_id\030\013 \001(\r\022\022\n\ndiffic" +
+      "ulty\030\r \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +742,7 @@ public final class FeverBattleSettleInfoOuterClass {
     internal_static_FeverBattleSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FeverBattleSettleInfo_descriptor,
-        new java.lang.String[] { "Difficulty", "LevelId", "IsNewRecord", "Score", });
+        new java.lang.String[] { "IsNewRecord", "Score", "LevelId", "Difficulty", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

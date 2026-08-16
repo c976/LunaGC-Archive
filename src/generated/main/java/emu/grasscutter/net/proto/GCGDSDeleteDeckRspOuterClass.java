@@ -19,23 +19,22 @@ public final class GCGDSDeleteDeckRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <pre>
+     * CMD_ID = 20540
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <code>uint32 deck_id = 10;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
-   * <pre>
-   * CmdId: 20788
-   * Obf: CDIOFPDAHDN
-   * </pre>
-   *
    * Protobuf type {@code GCGDSDeleteDeckRsp}
    */
   public static final class GCGDSDeleteDeckRsp extends
@@ -80,14 +79,14 @@ public final class GCGDSDeleteDeckRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
+            case 80: {
 
               deckId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGDSDeleteDeckRspOuterClass {
               emu.grasscutter.net.proto.GCGDSDeleteDeckRspOuterClass.GCGDSDeleteDeckRsp.class, emu.grasscutter.net.proto.GCGDSDeleteDeckRspOuterClass.GCGDSDeleteDeckRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <pre>
+     * CMD_ID = 20540
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGDSDeleteDeckRspOuterClass {
       return retcode_;
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 15;
+    public static final int DECK_ID_FIELD_NUMBER = 10;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <code>uint32 deck_id = 10;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGDSDeleteDeckRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
       if (deckId_ != 0) {
-        output.writeUInt32(15, deckId_);
+        output.writeUInt32(10, deckId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGDSDeleteDeckRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, deckId_);
+          .computeUInt32Size(10, deckId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGDSDeleteDeckRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 20788
-     * Obf: CDIOFPDAHDN
-     * </pre>
-     *
      * Protobuf type {@code GCGDSDeleteDeckRsp}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGDSDeleteDeckRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <pre>
+       * CMD_ID = 20540
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGDSDeleteDeckRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <pre>
+       * CMD_ID = 20540
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGDSDeleteDeckRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <pre>
+       * CMD_ID = 20540
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +511,7 @@ public final class GCGDSDeleteDeckRspOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 10;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGDSDeleteDeckRspOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 10;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGDSDeleteDeckRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <code>uint32 deck_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -597,7 +607,7 @@ public final class GCGDSDeleteDeckRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGDSDeleteDeckRsp.proto\"6\n\022GCGDSDelet" +
-      "eDeckRsp\022\017\n\007retcode\030\003 \001(\005\022\017\n\007deck_id\030\017 \001" +
+      "eDeckRsp\022\017\n\007retcode\030\013 \001(\005\022\017\n\007deck_id\030\n \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

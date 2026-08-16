@@ -19,52 +19,48 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 final_score = 8;</code>
-     * @return The finalScore.
-     */
-    int getFinalScore();
-
-    /**
-     * <code>uint32 gallery_id = 3;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
-
-    /**
      * <code>uint32 kill_special_monster_count = 2;</code>
      * @return The killSpecialMonsterCount.
      */
     int getKillSpecialMonsterCount();
 
     /**
-     * <code>uint32 OPPGMOFJEHC = 11;</code>
-     * @return The oPPGMOFJEHC.
+     * <code>uint32 gallery_id = 4;</code>
+     * @return The galleryId.
      */
-    int getOPPGMOFJEHC();
+    int getGalleryId();
 
     /**
-     * <code>uint32 kill_monster_count = 13;</code>
+     * <code>uint32 kill_monster_count = 5;</code>
      * @return The killMonsterCount.
      */
     int getKillMonsterCount();
 
     /**
-     * <code>uint32 gallery_level = 6;</code>
-     * @return The galleryLevel.
+     * <code>uint32 CPJGACFGMAE = 6;</code>
+     * @return The cPJGACFGMAE.
      */
-    int getGalleryLevel();
+    int getCPJGACFGMAE();
 
     /**
-     * <code>uint32 CLEDIIHBJMP = 7;</code>
-     * @return The cLEDIIHBJMP.
+     * <code>uint32 HPJFKENKDIH = 8;</code>
+     * @return The hPJFKENKDIH.
      */
-    int getCLEDIIHBJMP();
+    int getHPJFKENKDIH();
+
+    /**
+     * <code>uint32 HPOFDLGDELH = 9;</code>
+     * @return The hPOFDLGDELH.
+     */
+    int getHPOFDLGDELH();
+
+    /**
+     * <code>uint32 final_score = 15;</code>
+     * @return The finalScore.
+     */
+    int getFinalScore();
   }
   /**
-   * <pre>
-   * Obf: LAHAGBOHHDK
-   * </pre>
-   *
    * Protobuf type {@code BuoyantCombatGallerySettleInfo}
    */
   public static final class BuoyantCombatGallerySettleInfo extends
@@ -114,34 +110,34 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
               killSpecialMonsterCount_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 32: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 40: {
 
-              galleryLevel_ = input.readUInt32();
+              killMonsterCount_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 48: {
 
-              cLEDIIHBJMP_ = input.readUInt32();
+              cPJGACFGMAE_ = input.readUInt32();
               break;
             }
             case 64: {
 
+              hPJFKENKDIH_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              hPOFDLGDELH_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
               finalScore_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              oPPGMOFJEHC_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              killMonsterCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,28 +172,6 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.class, emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.Builder.class);
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 8;
-    private int finalScore_;
-    /**
-     * <code>uint32 final_score = 8;</code>
-     * @return The finalScore.
-     */
-    @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 3;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 3;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
-    }
-
     public static final int KILL_SPECIAL_MONSTER_COUNT_FIELD_NUMBER = 2;
     private int killSpecialMonsterCount_;
     /**
@@ -209,21 +183,21 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       return killSpecialMonsterCount_;
     }
 
-    public static final int OPPGMOFJEHC_FIELD_NUMBER = 11;
-    private int oPPGMOFJEHC_;
+    public static final int GALLERY_ID_FIELD_NUMBER = 4;
+    private int galleryId_;
     /**
-     * <code>uint32 OPPGMOFJEHC = 11;</code>
-     * @return The oPPGMOFJEHC.
+     * <code>uint32 gallery_id = 4;</code>
+     * @return The galleryId.
      */
     @java.lang.Override
-    public int getOPPGMOFJEHC() {
-      return oPPGMOFJEHC_;
+    public int getGalleryId() {
+      return galleryId_;
     }
 
-    public static final int KILL_MONSTER_COUNT_FIELD_NUMBER = 13;
+    public static final int KILL_MONSTER_COUNT_FIELD_NUMBER = 5;
     private int killMonsterCount_;
     /**
-     * <code>uint32 kill_monster_count = 13;</code>
+     * <code>uint32 kill_monster_count = 5;</code>
      * @return The killMonsterCount.
      */
     @java.lang.Override
@@ -231,26 +205,48 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       return killMonsterCount_;
     }
 
-    public static final int GALLERY_LEVEL_FIELD_NUMBER = 6;
-    private int galleryLevel_;
+    public static final int CPJGACFGMAE_FIELD_NUMBER = 6;
+    private int cPJGACFGMAE_;
     /**
-     * <code>uint32 gallery_level = 6;</code>
-     * @return The galleryLevel.
+     * <code>uint32 CPJGACFGMAE = 6;</code>
+     * @return The cPJGACFGMAE.
      */
     @java.lang.Override
-    public int getGalleryLevel() {
-      return galleryLevel_;
+    public int getCPJGACFGMAE() {
+      return cPJGACFGMAE_;
     }
 
-    public static final int CLEDIIHBJMP_FIELD_NUMBER = 7;
-    private int cLEDIIHBJMP_;
+    public static final int HPJFKENKDIH_FIELD_NUMBER = 8;
+    private int hPJFKENKDIH_;
     /**
-     * <code>uint32 CLEDIIHBJMP = 7;</code>
-     * @return The cLEDIIHBJMP.
+     * <code>uint32 HPJFKENKDIH = 8;</code>
+     * @return The hPJFKENKDIH.
      */
     @java.lang.Override
-    public int getCLEDIIHBJMP() {
-      return cLEDIIHBJMP_;
+    public int getHPJFKENKDIH() {
+      return hPJFKENKDIH_;
+    }
+
+    public static final int HPOFDLGDELH_FIELD_NUMBER = 9;
+    private int hPOFDLGDELH_;
+    /**
+     * <code>uint32 HPOFDLGDELH = 9;</code>
+     * @return The hPOFDLGDELH.
+     */
+    @java.lang.Override
+    public int getHPOFDLGDELH() {
+      return hPOFDLGDELH_;
+    }
+
+    public static final int FINAL_SCORE_FIELD_NUMBER = 15;
+    private int finalScore_;
+    /**
+     * <code>uint32 final_score = 15;</code>
+     * @return The finalScore.
+     */
+    @java.lang.Override
+    public int getFinalScore() {
+      return finalScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -271,22 +267,22 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
         output.writeUInt32(2, killSpecialMonsterCount_);
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(3, galleryId_);
-      }
-      if (galleryLevel_ != 0) {
-        output.writeUInt32(6, galleryLevel_);
-      }
-      if (cLEDIIHBJMP_ != 0) {
-        output.writeUInt32(7, cLEDIIHBJMP_);
-      }
-      if (finalScore_ != 0) {
-        output.writeUInt32(8, finalScore_);
-      }
-      if (oPPGMOFJEHC_ != 0) {
-        output.writeUInt32(11, oPPGMOFJEHC_);
+        output.writeUInt32(4, galleryId_);
       }
       if (killMonsterCount_ != 0) {
-        output.writeUInt32(13, killMonsterCount_);
+        output.writeUInt32(5, killMonsterCount_);
+      }
+      if (cPJGACFGMAE_ != 0) {
+        output.writeUInt32(6, cPJGACFGMAE_);
+      }
+      if (hPJFKENKDIH_ != 0) {
+        output.writeUInt32(8, hPJFKENKDIH_);
+      }
+      if (hPOFDLGDELH_ != 0) {
+        output.writeUInt32(9, hPOFDLGDELH_);
+      }
+      if (finalScore_ != 0) {
+        output.writeUInt32(15, finalScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,27 +299,27 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, galleryId_);
-      }
-      if (galleryLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryLevel_);
-      }
-      if (cLEDIIHBJMP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cLEDIIHBJMP_);
-      }
-      if (finalScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, finalScore_);
-      }
-      if (oPPGMOFJEHC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, oPPGMOFJEHC_);
+          .computeUInt32Size(4, galleryId_);
       }
       if (killMonsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, killMonsterCount_);
+          .computeUInt32Size(5, killMonsterCount_);
+      }
+      if (cPJGACFGMAE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, cPJGACFGMAE_);
+      }
+      if (hPJFKENKDIH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, hPJFKENKDIH_);
+      }
+      if (hPOFDLGDELH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, hPOFDLGDELH_);
+      }
+      if (finalScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, finalScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -340,20 +336,20 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo other = (emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo) obj;
 
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (getKillSpecialMonsterCount()
           != other.getKillSpecialMonsterCount()) return false;
-      if (getOPPGMOFJEHC()
-          != other.getOPPGMOFJEHC()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (getKillMonsterCount()
           != other.getKillMonsterCount()) return false;
-      if (getGalleryLevel()
-          != other.getGalleryLevel()) return false;
-      if (getCLEDIIHBJMP()
-          != other.getCLEDIIHBJMP()) return false;
+      if (getCPJGACFGMAE()
+          != other.getCPJGACFGMAE()) return false;
+      if (getHPJFKENKDIH()
+          != other.getHPJFKENKDIH()) return false;
+      if (getHPOFDLGDELH()
+          != other.getHPOFDLGDELH()) return false;
+      if (getFinalScore()
+          != other.getFinalScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -365,20 +361,20 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + KILL_SPECIAL_MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getKillSpecialMonsterCount();
-      hash = (37 * hash) + OPPGMOFJEHC_FIELD_NUMBER;
-      hash = (53 * hash) + getOPPGMOFJEHC();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + KILL_MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getKillMonsterCount();
-      hash = (37 * hash) + GALLERY_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryLevel();
-      hash = (37 * hash) + CLEDIIHBJMP_FIELD_NUMBER;
-      hash = (53 * hash) + getCLEDIIHBJMP();
+      hash = (37 * hash) + CPJGACFGMAE_FIELD_NUMBER;
+      hash = (53 * hash) + getCPJGACFGMAE();
+      hash = (37 * hash) + HPJFKENKDIH_FIELD_NUMBER;
+      hash = (53 * hash) + getHPJFKENKDIH();
+      hash = (37 * hash) + HPOFDLGDELH_FIELD_NUMBER;
+      hash = (53 * hash) + getHPOFDLGDELH();
+      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getFinalScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,10 +471,6 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LAHAGBOHHDK
-     * </pre>
-     *
      * Protobuf type {@code BuoyantCombatGallerySettleInfo}
      */
     public static final class Builder extends
@@ -516,19 +508,19 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finalScore_ = 0;
+        killSpecialMonsterCount_ = 0;
 
         galleryId_ = 0;
 
-        killSpecialMonsterCount_ = 0;
-
-        oPPGMOFJEHC_ = 0;
-
         killMonsterCount_ = 0;
 
-        galleryLevel_ = 0;
+        cPJGACFGMAE_ = 0;
 
-        cLEDIIHBJMP_ = 0;
+        hPJFKENKDIH_ = 0;
+
+        hPOFDLGDELH_ = 0;
+
+        finalScore_ = 0;
 
         return this;
       }
@@ -556,13 +548,13 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo result = new emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo(this);
-        result.finalScore_ = finalScore_;
-        result.galleryId_ = galleryId_;
         result.killSpecialMonsterCount_ = killSpecialMonsterCount_;
-        result.oPPGMOFJEHC_ = oPPGMOFJEHC_;
+        result.galleryId_ = galleryId_;
         result.killMonsterCount_ = killMonsterCount_;
-        result.galleryLevel_ = galleryLevel_;
-        result.cLEDIIHBJMP_ = cLEDIIHBJMP_;
+        result.cPJGACFGMAE_ = cPJGACFGMAE_;
+        result.hPJFKENKDIH_ = hPJFKENKDIH_;
+        result.hPOFDLGDELH_ = hPOFDLGDELH_;
+        result.finalScore_ = finalScore_;
         onBuilt();
         return result;
       }
@@ -611,26 +603,26 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.BuoyantCombatGallerySettleInfoOuterClass.BuoyantCombatGallerySettleInfo.getDefaultInstance()) return this;
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
+        if (other.getKillSpecialMonsterCount() != 0) {
+          setKillSpecialMonsterCount(other.getKillSpecialMonsterCount());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
         }
-        if (other.getKillSpecialMonsterCount() != 0) {
-          setKillSpecialMonsterCount(other.getKillSpecialMonsterCount());
-        }
-        if (other.getOPPGMOFJEHC() != 0) {
-          setOPPGMOFJEHC(other.getOPPGMOFJEHC());
-        }
         if (other.getKillMonsterCount() != 0) {
           setKillMonsterCount(other.getKillMonsterCount());
         }
-        if (other.getGalleryLevel() != 0) {
-          setGalleryLevel(other.getGalleryLevel());
+        if (other.getCPJGACFGMAE() != 0) {
+          setCPJGACFGMAE(other.getCPJGACFGMAE());
         }
-        if (other.getCLEDIIHBJMP() != 0) {
-          setCLEDIIHBJMP(other.getCLEDIIHBJMP());
+        if (other.getHPJFKENKDIH() != 0) {
+          setHPJFKENKDIH(other.getHPJFKENKDIH());
+        }
+        if (other.getHPOFDLGDELH() != 0) {
+          setHPOFDLGDELH(other.getHPOFDLGDELH());
+        }
+        if (other.getFinalScore() != 0) {
+          setFinalScore(other.getFinalScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -658,68 +650,6 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int finalScore_ ;
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @return The finalScore.
-       */
-      @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
-      }
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @param value The finalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinalScore(int value) {
-        
-        finalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 final_score = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinalScore() {
-        
-        finalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 3;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 3;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
-        onChanged();
         return this;
       }
 
@@ -754,40 +684,40 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
         return this;
       }
 
-      private int oPPGMOFJEHC_ ;
+      private int galleryId_ ;
       /**
-       * <code>uint32 OPPGMOFJEHC = 11;</code>
-       * @return The oPPGMOFJEHC.
+       * <code>uint32 gallery_id = 4;</code>
+       * @return The galleryId.
        */
       @java.lang.Override
-      public int getOPPGMOFJEHC() {
-        return oPPGMOFJEHC_;
+      public int getGalleryId() {
+        return galleryId_;
       }
       /**
-       * <code>uint32 OPPGMOFJEHC = 11;</code>
-       * @param value The oPPGMOFJEHC to set.
+       * <code>uint32 gallery_id = 4;</code>
+       * @param value The galleryId to set.
        * @return This builder for chaining.
        */
-      public Builder setOPPGMOFJEHC(int value) {
+      public Builder setGalleryId(int value) {
         
-        oPPGMOFJEHC_ = value;
+        galleryId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OPPGMOFJEHC = 11;</code>
+       * <code>uint32 gallery_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOPPGMOFJEHC() {
+      public Builder clearGalleryId() {
         
-        oPPGMOFJEHC_ = 0;
+        galleryId_ = 0;
         onChanged();
         return this;
       }
 
       private int killMonsterCount_ ;
       /**
-       * <code>uint32 kill_monster_count = 13;</code>
+       * <code>uint32 kill_monster_count = 5;</code>
        * @return The killMonsterCount.
        */
       @java.lang.Override
@@ -795,7 +725,7 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
         return killMonsterCount_;
       }
       /**
-       * <code>uint32 kill_monster_count = 13;</code>
+       * <code>uint32 kill_monster_count = 5;</code>
        * @param value The killMonsterCount to set.
        * @return This builder for chaining.
        */
@@ -806,7 +736,7 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_monster_count = 13;</code>
+       * <code>uint32 kill_monster_count = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillMonsterCount() {
@@ -816,64 +746,126 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
         return this;
       }
 
-      private int galleryLevel_ ;
+      private int cPJGACFGMAE_ ;
       /**
-       * <code>uint32 gallery_level = 6;</code>
-       * @return The galleryLevel.
+       * <code>uint32 CPJGACFGMAE = 6;</code>
+       * @return The cPJGACFGMAE.
        */
       @java.lang.Override
-      public int getGalleryLevel() {
-        return galleryLevel_;
+      public int getCPJGACFGMAE() {
+        return cPJGACFGMAE_;
       }
       /**
-       * <code>uint32 gallery_level = 6;</code>
-       * @param value The galleryLevel to set.
+       * <code>uint32 CPJGACFGMAE = 6;</code>
+       * @param value The cPJGACFGMAE to set.
        * @return This builder for chaining.
        */
-      public Builder setGalleryLevel(int value) {
+      public Builder setCPJGACFGMAE(int value) {
         
-        galleryLevel_ = value;
+        cPJGACFGMAE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gallery_level = 6;</code>
+       * <code>uint32 CPJGACFGMAE = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGalleryLevel() {
+      public Builder clearCPJGACFGMAE() {
         
-        galleryLevel_ = 0;
+        cPJGACFGMAE_ = 0;
         onChanged();
         return this;
       }
 
-      private int cLEDIIHBJMP_ ;
+      private int hPJFKENKDIH_ ;
       /**
-       * <code>uint32 CLEDIIHBJMP = 7;</code>
-       * @return The cLEDIIHBJMP.
+       * <code>uint32 HPJFKENKDIH = 8;</code>
+       * @return The hPJFKENKDIH.
        */
       @java.lang.Override
-      public int getCLEDIIHBJMP() {
-        return cLEDIIHBJMP_;
+      public int getHPJFKENKDIH() {
+        return hPJFKENKDIH_;
       }
       /**
-       * <code>uint32 CLEDIIHBJMP = 7;</code>
-       * @param value The cLEDIIHBJMP to set.
+       * <code>uint32 HPJFKENKDIH = 8;</code>
+       * @param value The hPJFKENKDIH to set.
        * @return This builder for chaining.
        */
-      public Builder setCLEDIIHBJMP(int value) {
+      public Builder setHPJFKENKDIH(int value) {
         
-        cLEDIIHBJMP_ = value;
+        hPJFKENKDIH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CLEDIIHBJMP = 7;</code>
+       * <code>uint32 HPJFKENKDIH = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCLEDIIHBJMP() {
+      public Builder clearHPJFKENKDIH() {
         
-        cLEDIIHBJMP_ = 0;
+        hPJFKENKDIH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hPOFDLGDELH_ ;
+      /**
+       * <code>uint32 HPOFDLGDELH = 9;</code>
+       * @return The hPOFDLGDELH.
+       */
+      @java.lang.Override
+      public int getHPOFDLGDELH() {
+        return hPOFDLGDELH_;
+      }
+      /**
+       * <code>uint32 HPOFDLGDELH = 9;</code>
+       * @param value The hPOFDLGDELH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHPOFDLGDELH(int value) {
+        
+        hPOFDLGDELH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HPOFDLGDELH = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHPOFDLGDELH() {
+        
+        hPOFDLGDELH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int finalScore_ ;
+      /**
+       * <code>uint32 final_score = 15;</code>
+       * @return The finalScore.
+       */
+      @java.lang.Override
+      public int getFinalScore() {
+        return finalScore_;
+      }
+      /**
+       * <code>uint32 final_score = 15;</code>
+       * @param value The finalScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinalScore(int value) {
+        
+        finalScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 final_score = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinalScore() {
+        
+        finalScore_ = 0;
         onChanged();
         return this;
       }
@@ -944,13 +936,13 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$BuoyantCombatGallerySettleInfo.proto\"\312" +
-      "\001\n\036BuoyantCombatGallerySettleInfo\022\023\n\013fin" +
-      "al_score\030\010 \001(\r\022\022\n\ngallery_id\030\003 \001(\r\022\"\n\032ki" +
-      "ll_special_monster_count\030\002 \001(\r\022\023\n\013OPPGMO" +
-      "FJEHC\030\013 \001(\r\022\032\n\022kill_monster_count\030\r \001(\r\022" +
-      "\025\n\rgallery_level\030\006 \001(\r\022\023\n\013CLEDIIHBJMP\030\007 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n$BuoyantCombatGallerySettleInfo.proto\"\310" +
+      "\001\n\036BuoyantCombatGallerySettleInfo\022\"\n\032kil" +
+      "l_special_monster_count\030\002 \001(\r\022\022\n\ngallery" +
+      "_id\030\004 \001(\r\022\032\n\022kill_monster_count\030\005 \001(\r\022\023\n" +
+      "\013CPJGACFGMAE\030\006 \001(\r\022\023\n\013HPJFKENKDIH\030\010 \001(\r\022" +
+      "\023\n\013HPOFDLGDELH\030\t \001(\r\022\023\n\013final_score\030\017 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -961,7 +953,7 @@ public final class BuoyantCombatGallerySettleInfoOuterClass {
     internal_static_BuoyantCombatGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BuoyantCombatGallerySettleInfo_descriptor,
-        new java.lang.String[] { "FinalScore", "GalleryId", "KillSpecialMonsterCount", "OPPGMOFJEHC", "KillMonsterCount", "GalleryLevel", "CLEDIIHBJMP", });
+        new java.lang.String[] { "KillSpecialMonsterCount", "GalleryId", "KillMonsterCount", "CPJGACFGMAE", "HPJFKENKDIH", "HPOFDLGDELH", "FinalScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

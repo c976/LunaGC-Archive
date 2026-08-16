@@ -19,21 +19,28 @@ public final class HomeDeleteBlueprintRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slot_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 slot_id = 9;</code>
      * @return The slotId.
      */
     int getSlotId();
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2973
-   * Obf: OHOGBCMKNKA
+   * CmdId: 27227
    * </pre>
    *
    * Protobuf type {@code HomeDeleteBlueprintRsp}
@@ -80,12 +87,12 @@ public final class HomeDeleteBlueprintRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
 
               slotId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,10 +129,14 @@ public final class HomeDeleteBlueprintRspOuterClass {
               emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp.class, emu.grasscutter.net.proto.HomeDeleteBlueprintRspOuterClass.HomeDeleteBlueprintRsp.Builder.class);
     }
 
-    public static final int SLOT_ID_FIELD_NUMBER = 8;
+    public static final int SLOT_ID_FIELD_NUMBER = 9;
     private int slotId_;
     /**
-     * <code>uint32 slot_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 slot_id = 9;</code>
      * @return The slotId.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class HomeDeleteBlueprintRspOuterClass {
       return slotId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +174,10 @@ public final class HomeDeleteBlueprintRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (slotId_ != 0) {
-        output.writeUInt32(8, slotId_);
+        output.writeUInt32(9, slotId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
       size = 0;
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, slotId_);
+          .computeUInt32Size(9, slotId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class HomeDeleteBlueprintRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2973
-     * Obf: OHOGBCMKNKA
+     * CmdId: 27227
      * </pre>
      *
      * Protobuf type {@code HomeDeleteBlueprintRsp}
@@ -470,7 +484,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
 
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 slot_id = 9;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 slot_id = 9;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 slot_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
@@ -501,7 +527,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class HomeDeleteBlueprintRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +635,8 @@ public final class HomeDeleteBlueprintRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034HomeDeleteBlueprintRsp.proto\":\n\026HomeDe" +
-      "leteBlueprintRsp\022\017\n\007slot_id\030\010 \001(\r\022\017\n\007ret" +
-      "code\030\014 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "leteBlueprintRsp\022\017\n\007slot_id\030\t \001(\r\022\017\n\007ret" +
+      "code\030\n \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

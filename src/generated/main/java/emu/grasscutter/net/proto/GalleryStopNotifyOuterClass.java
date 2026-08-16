@@ -19,26 +19,25 @@ public final class GalleryStopNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-     * @return The enum numeric value on the wire for gKKMABPCMBH.
+     * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+     * @return The enum numeric value on the wire for fPDDLHHPPGG.
      */
-    int getGKKMABPCMBHValue();
+    int getFPDDLHHPPGGValue();
     /**
-     * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-     * @return The gKKMABPCMBH.
+     * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+     * @return The fPDDLHHPPGG.
      */
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getGKKMABPCMBH();
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getFPDDLHHPPGG();
 
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 4;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * CmdId: 20569
-   * Obf: DOHEBPBCJDH
+   * CmdId: 115
    * </pre>
    *
    * Protobuf type {@code GalleryStopNotify}
@@ -53,7 +52,7 @@ public final class GalleryStopNotifyOuterClass {
       super(builder);
     }
     private GalleryStopNotify() {
-      gKKMABPCMBH_ = 0;
+      fPDDLHHPPGG_ = 0;
     }
 
     @java.lang.Override
@@ -86,13 +85,13 @@ public final class GalleryStopNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 16: {
               int rawValue = input.readEnum();
 
-              gKKMABPCMBH_ = rawValue;
+              fPDDLHHPPGG_ = rawValue;
               break;
             }
-            case 104: {
+            case 32: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -129,29 +128,29 @@ public final class GalleryStopNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify.class, emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify.Builder.class);
     }
 
-    public static final int GKKMABPCMBH_FIELD_NUMBER = 10;
-    private int gKKMABPCMBH_;
+    public static final int FPDDLHHPPGG_FIELD_NUMBER = 2;
+    private int fPDDLHHPPGG_;
     /**
-     * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-     * @return The enum numeric value on the wire for gKKMABPCMBH.
+     * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+     * @return The enum numeric value on the wire for fPDDLHHPPGG.
      */
-    @java.lang.Override public int getGKKMABPCMBHValue() {
-      return gKKMABPCMBH_;
+    @java.lang.Override public int getFPDDLHHPPGGValue() {
+      return fPDDLHHPPGG_;
     }
     /**
-     * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-     * @return The gKKMABPCMBH.
+     * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+     * @return The fPDDLHHPPGG.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getGKKMABPCMBH() {
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getFPDDLHHPPGG() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(gKKMABPCMBH_);
-      return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(fPDDLHHPPGG_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    public static final int GALLERY_ID_FIELD_NUMBER = 4;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 4;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -173,11 +172,11 @@ public final class GalleryStopNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gKKMABPCMBH_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
-        output.writeEnum(10, gKKMABPCMBH_);
+      if (fPDDLHHPPGG_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        output.writeEnum(2, fPDDLHHPPGG_);
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(13, galleryId_);
+        output.writeUInt32(4, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +187,13 @@ public final class GalleryStopNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gKKMABPCMBH_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
+      if (fPDDLHHPPGG_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, gKKMABPCMBH_);
+          .computeEnumSize(2, fPDDLHHPPGG_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, galleryId_);
+          .computeUInt32Size(4, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -211,7 +210,7 @@ public final class GalleryStopNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify other = (emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify) obj;
 
-      if (gKKMABPCMBH_ != other.gKKMABPCMBH_) return false;
+      if (fPDDLHHPPGG_ != other.fPDDLHHPPGG_) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -225,8 +224,8 @@ public final class GalleryStopNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GKKMABPCMBH_FIELD_NUMBER;
-      hash = (53 * hash) + gKKMABPCMBH_;
+      hash = (37 * hash) + FPDDLHHPPGG_FIELD_NUMBER;
+      hash = (53 * hash) + fPDDLHHPPGG_;
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -326,8 +325,7 @@ public final class GalleryStopNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20569
-     * Obf: DOHEBPBCJDH
+     * CmdId: 115
      * </pre>
      *
      * Protobuf type {@code GalleryStopNotify}
@@ -367,7 +365,7 @@ public final class GalleryStopNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gKKMABPCMBH_ = 0;
+        fPDDLHHPPGG_ = 0;
 
         galleryId_ = 0;
 
@@ -397,7 +395,7 @@ public final class GalleryStopNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify result = new emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify(this);
-        result.gKKMABPCMBH_ = gKKMABPCMBH_;
+        result.fPDDLHHPPGG_ = fPDDLHHPPGG_;
         result.galleryId_ = galleryId_;
         onBuilt();
         return result;
@@ -447,8 +445,8 @@ public final class GalleryStopNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify.getDefaultInstance()) return this;
-        if (other.gKKMABPCMBH_ != 0) {
-          setGKKMABPCMBHValue(other.getGKKMABPCMBHValue());
+        if (other.fPDDLHHPPGG_ != 0) {
+          setFPDDLHHPPGGValue(other.getFPDDLHHPPGGValue());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
@@ -482,63 +480,63 @@ public final class GalleryStopNotifyOuterClass {
         return this;
       }
 
-      private int gKKMABPCMBH_ = 0;
+      private int fPDDLHHPPGG_ = 0;
       /**
-       * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-       * @return The enum numeric value on the wire for gKKMABPCMBH.
+       * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+       * @return The enum numeric value on the wire for fPDDLHHPPGG.
        */
-      @java.lang.Override public int getGKKMABPCMBHValue() {
-        return gKKMABPCMBH_;
+      @java.lang.Override public int getFPDDLHHPPGGValue() {
+        return fPDDLHHPPGG_;
       }
       /**
-       * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-       * @param value The enum numeric value on the wire for gKKMABPCMBH to set.
+       * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+       * @param value The enum numeric value on the wire for fPDDLHHPPGG to set.
        * @return This builder for chaining.
        */
-      public Builder setGKKMABPCMBHValue(int value) {
+      public Builder setFPDDLHHPPGGValue(int value) {
         
-        gKKMABPCMBH_ = value;
+        fPDDLHHPPGG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-       * @return The gKKMABPCMBH.
+       * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+       * @return The fPDDLHHPPGG.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getGKKMABPCMBH() {
+      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getFPDDLHHPPGG() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(gKKMABPCMBH_);
-        return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(fPDDLHHPPGG_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
-       * @param value The gKKMABPCMBH to set.
+       * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
+       * @param value The fPDDLHHPPGG to set.
        * @return This builder for chaining.
        */
-      public Builder setGKKMABPCMBH(emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM value) {
+      public Builder setFPDDLHHPPGG(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        gKKMABPCMBH_ = value.getNumber();
+        fPDDLHHPPGG_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.KDHIAEFLGFM GKKMABPCMBH = 10;</code>
+       * <code>.GalleryStopReason FPDDLHHPPGG = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGKKMABPCMBH() {
+      public Builder clearFPDDLHHPPGG() {
         
-        gKKMABPCMBH_ = 0;
+        fPDDLHHPPGG_ = 0;
         onChanged();
         return this;
       }
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 4;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -546,7 +544,7 @@ public final class GalleryStopNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 4;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -557,7 +555,7 @@ public final class GalleryStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -633,23 +631,24 @@ public final class GalleryStopNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GalleryStopNotify.proto\032\021KDHIAEFLGFM.p" +
-      "roto\"J\n\021GalleryStopNotify\022!\n\013GKKMABPCMBH" +
-      "\030\n \001(\0162\014.KDHIAEFLGFM\022\022\n\ngallery_id\030\r \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027GalleryStopNotify.proto\032\027GalleryStopRe" +
+      "ason.proto\"P\n\021GalleryStopNotify\022\'\n\013FPDDL" +
+      "HHPPGG\030\002 \001(\0162\022.GalleryStopReason\022\022\n\ngall" +
+      "ery_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor(),
         });
     internal_static_GalleryStopNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GalleryStopNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryStopNotify_descriptor,
-        new java.lang.String[] { "GKKMABPCMBH", "GalleryId", });
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor();
+        new java.lang.String[] { "FPDDLHHPPGG", "GalleryId", });
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

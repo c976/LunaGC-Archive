@@ -19,74 +19,126 @@ public final class PotionStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @return A list containing the mMNAKDKJEPB.
      */
-    java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> 
+    java.util.List<java.lang.Integer> getMMNAKDKJEPBList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @return The count of mMNAKDKJEPB.
+     */
+    int getMMNAKDKJEPBCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @param index The index of the element to return.
+     * @return The mMNAKDKJEPB at the given index.
+     */
+    int getMMNAKDKJEPB(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> 
         getLevelListList();
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
-    emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index);
+    emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP getLevelList(int index);
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
     int getLevelListCount();
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder> 
         getLevelListOrBuilderList();
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
-    emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
+    emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder getLevelListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-     * @return A list containing the jJIDAFBLAEJ.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+     * @return A list containing the jPMIAIIKILP.
      */
-    java.util.List<java.lang.Integer> getJJIDAFBLAEJList();
+    java.util.List<java.lang.Integer> getJPMIAIIKILPList();
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-     * @return The count of jJIDAFBLAEJ.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+     * @return The count of jPMIAIIKILP.
      */
-    int getJJIDAFBLAEJCount();
+    int getJPMIAIIKILPCount();
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
      * @param index The index of the element to return.
-     * @return The jJIDAFBLAEJ at the given index.
+     * @return The jPMIAIIKILP at the given index.
      */
-    int getJJIDAFBLAEJ(int index);
+    int getJPMIAIIKILP(int index);
 
     /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @return A list containing the bOAEGFPJDDO.
-     */
-    java.util.List<java.lang.Integer> getBOAEGFPJDDOList();
-    /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @return The count of bOAEGFPJDDO.
-     */
-    int getBOAEGFPJDDOCount();
-    /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @param index The index of the element to return.
-     * @return The bOAEGFPJDDO at the given index.
-     */
-    int getBOAEGFPJDDO(int index);
-
-    /**
-     * <code>uint32 stage_id = 14;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>bool is_open = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * Protobuf type {@code PotionStageData}
@@ -101,9 +153,9 @@ public final class PotionStageDataOuterClass {
       super(builder);
     }
     private PotionStageData() {
+      mMNAKDKJEPB_ = emptyIntList();
       levelList_ = java.util.Collections.emptyList();
-      jJIDAFBLAEJ_ = emptyIntList();
-      bOAEGFPJDDO_ = emptyIntList();
+      jPMIAIIKILP_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -137,65 +189,65 @@ public final class PotionStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                jJIDAFBLAEJ_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              jJIDAFBLAEJ_.addInt(input.readUInt32());
+            case 8: {
+
+              stageId_ = input.readUInt32();
               break;
             }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                jJIDAFBLAEJ_ = newIntList();
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP>();
                 mutable_bitField0_ |= 0x00000002;
               }
+              levelList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.parser(), extensionRegistry));
+              break;
+            }
+            case 56: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                jPMIAIIKILP_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              jPMIAIIKILP_.addInt(input.readUInt32());
+              break;
+            }
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                jPMIAIIKILP_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
               while (input.getBytesUntilLimit() > 0) {
-                jJIDAFBLAEJ_.addInt(input.readUInt32());
+                jPMIAIIKILP_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 80: {
+            case 64: {
 
               isOpen_ = input.readBool();
               break;
             }
             case 96: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                bOAEGFPJDDO_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                mMNAKDKJEPB_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              bOAEGFPJDDO_.addInt(input.readUInt32());
+              mMNAKDKJEPB_.addInt(input.readUInt32());
               break;
             }
             case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                bOAEGFPJDDO_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                bOAEGFPJDDO_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 112: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData>();
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                mMNAKDKJEPB_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              levelList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.parser(), extensionRegistry));
+              while (input.getBytesUntilLimit() > 0) {
+                mMNAKDKJEPB_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -214,13 +266,13 @@ public final class PotionStageDataOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          jJIDAFBLAEJ_.makeImmutable(); // C
+          levelList_ = java.util.Collections.unmodifiableList(levelList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          bOAEGFPJDDO_.makeImmutable(); // C
+          jPMIAIIKILP_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          levelList_ = java.util.Collections.unmodifiableList(levelList_);
+          mMNAKDKJEPB_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -239,122 +291,174 @@ public final class PotionStageDataOuterClass {
               emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.class, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder.class);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> levelList_;
+    public static final int MMNAKDKJEPB_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList mMNAKDKJEPB_;
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @return A list containing the mMNAKDKJEPB.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> getLevelListList() {
+    public java.util.List<java.lang.Integer>
+        getMMNAKDKJEPBList() {
+      return mMNAKDKJEPB_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @return The count of mMNAKDKJEPB.
+     */
+    public int getMMNAKDKJEPBCount() {
+      return mMNAKDKJEPB_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+     * @param index The index of the element to return.
+     * @return The mMNAKDKJEPB at the given index.
+     */
+    public int getMMNAKDKJEPB(int index) {
+      return mMNAKDKJEPB_.getInt(index);
+    }
+    private int mMNAKDKJEPBMemoizedSerializedSize = -1;
+
+    public static final int LEVEL_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> levelList_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> getLevelListList() {
       return levelList_;
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder> 
         getLevelListOrBuilderList() {
       return levelList_;
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
     @java.lang.Override
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index) {
+    public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP getLevelList(int index) {
       return levelList_.get(index);
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
+    public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder getLevelListOrBuilder(
         int index) {
       return levelList_.get(index);
     }
 
-    public static final int JJIDAFBLAEJ_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList jJIDAFBLAEJ_;
+    public static final int JPMIAIIKILP_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList jPMIAIIKILP_;
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-     * @return A list containing the jJIDAFBLAEJ.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+     * @return A list containing the jPMIAIIKILP.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getJJIDAFBLAEJList() {
-      return jJIDAFBLAEJ_;
+        getJPMIAIIKILPList() {
+      return jPMIAIIKILP_;
     }
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-     * @return The count of jJIDAFBLAEJ.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+     * @return The count of jPMIAIIKILP.
      */
-    public int getJJIDAFBLAEJCount() {
-      return jJIDAFBLAEJ_.size();
+    public int getJPMIAIIKILPCount() {
+      return jPMIAIIKILP_.size();
     }
     /**
-     * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 JPMIAIIKILP = 7;</code>
      * @param index The index of the element to return.
-     * @return The jJIDAFBLAEJ at the given index.
+     * @return The jPMIAIIKILP at the given index.
      */
-    public int getJJIDAFBLAEJ(int index) {
-      return jJIDAFBLAEJ_.getInt(index);
+    public int getJPMIAIIKILP(int index) {
+      return jPMIAIIKILP_.getInt(index);
     }
-    private int jJIDAFBLAEJMemoizedSerializedSize = -1;
+    private int jPMIAIIKILPMemoizedSerializedSize = -1;
 
-    public static final int BOAEGFPJDDO_FIELD_NUMBER = 12;
-    private com.google.protobuf.Internal.IntList bOAEGFPJDDO_;
-    /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @return A list containing the bOAEGFPJDDO.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBOAEGFPJDDOList() {
-      return bOAEGFPJDDO_;
-    }
-    /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @return The count of bOAEGFPJDDO.
-     */
-    public int getBOAEGFPJDDOCount() {
-      return bOAEGFPJDDO_.size();
-    }
-    /**
-     * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-     * @param index The index of the element to return.
-     * @return The bOAEGFPJDDO at the given index.
-     */
-    public int getBOAEGFPJDDO(int index) {
-      return bOAEGFPJDDO_.getInt(index);
-    }
-    private int bOAEGFPJDDOMemoizedSerializedSize = -1;
-
-    public static final int STAGE_ID_FIELD_NUMBER = 14;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 14;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 10;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -372,28 +476,28 @@ public final class PotionStageDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getJJIDAFBLAEJList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(jJIDAFBLAEJMemoizedSerializedSize);
-      }
-      for (int i = 0; i < jJIDAFBLAEJ_.size(); i++) {
-        output.writeUInt32NoTag(jJIDAFBLAEJ_.getInt(i));
-      }
-      if (isOpen_ != false) {
-        output.writeBool(10, isOpen_);
-      }
-      if (getBOAEGFPJDDOList().size() > 0) {
-        output.writeUInt32NoTag(98);
-        output.writeUInt32NoTag(bOAEGFPJDDOMemoizedSerializedSize);
-      }
-      for (int i = 0; i < bOAEGFPJDDO_.size(); i++) {
-        output.writeUInt32NoTag(bOAEGFPJDDO_.getInt(i));
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(14, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(15, levelList_.get(i));
+        output.writeMessage(5, levelList_.get(i));
+      }
+      if (getJPMIAIIKILPList().size() > 0) {
+        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(jPMIAIIKILPMemoizedSerializedSize);
+      }
+      for (int i = 0; i < jPMIAIIKILP_.size(); i++) {
+        output.writeUInt32NoTag(jPMIAIIKILP_.getInt(i));
+      }
+      if (isOpen_ != false) {
+        output.writeBool(8, isOpen_);
+      }
+      if (getMMNAKDKJEPBList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(mMNAKDKJEPBMemoizedSerializedSize);
+      }
+      for (int i = 0; i < mMNAKDKJEPB_.size(); i++) {
+        output.writeUInt32NoTag(mMNAKDKJEPB_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -404,45 +508,45 @@ public final class PotionStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < jJIDAFBLAEJ_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(jJIDAFBLAEJ_.getInt(i));
-        }
-        size += dataSize;
-        if (!getJJIDAFBLAEJList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        jJIDAFBLAEJMemoizedSerializedSize = dataSize;
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isOpen_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < bOAEGFPJDDO_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bOAEGFPJDDO_.getInt(i));
-        }
-        size += dataSize;
-        if (!getBOAEGFPJDDOList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        bOAEGFPJDDOMemoizedSerializedSize = dataSize;
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, levelList_.get(i));
+          .computeMessageSize(5, levelList_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < jPMIAIIKILP_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(jPMIAIIKILP_.getInt(i));
+        }
+        size += dataSize;
+        if (!getJPMIAIIKILPList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        jPMIAIIKILPMemoizedSerializedSize = dataSize;
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isOpen_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < mMNAKDKJEPB_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(mMNAKDKJEPB_.getInt(i));
+        }
+        size += dataSize;
+        if (!getMMNAKDKJEPBList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        mMNAKDKJEPBMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -459,16 +563,16 @@ public final class PotionStageDataOuterClass {
       }
       emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData other = (emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData) obj;
 
+      if (!getMMNAKDKJEPBList()
+          .equals(other.getMMNAKDKJEPBList())) return false;
       if (!getLevelListList()
           .equals(other.getLevelListList())) return false;
-      if (!getJJIDAFBLAEJList()
-          .equals(other.getJJIDAFBLAEJList())) return false;
-      if (!getBOAEGFPJDDOList()
-          .equals(other.getBOAEGFPJDDOList())) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
+      if (!getJPMIAIIKILPList()
+          .equals(other.getJPMIAIIKILPList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -480,23 +584,23 @@ public final class PotionStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getMMNAKDKJEPBCount() > 0) {
+        hash = (37 * hash) + MMNAKDKJEPB_FIELD_NUMBER;
+        hash = (53 * hash) + getMMNAKDKJEPBList().hashCode();
+      }
       if (getLevelListCount() > 0) {
         hash = (37 * hash) + LEVEL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelListList().hashCode();
       }
-      if (getJJIDAFBLAEJCount() > 0) {
-        hash = (37 * hash) + JJIDAFBLAEJ_FIELD_NUMBER;
-        hash = (53 * hash) + getJJIDAFBLAEJList().hashCode();
+      if (getJPMIAIIKILPCount() > 0) {
+        hash = (37 * hash) + JPMIAIIKILP_FIELD_NUMBER;
+        hash = (53 * hash) + getJPMIAIIKILPList().hashCode();
       }
-      if (getBOAEGFPJDDOCount() > 0) {
-        hash = (37 * hash) + BOAEGFPJDDO_FIELD_NUMBER;
-        hash = (53 * hash) + getBOAEGFPJDDOList().hashCode();
-      }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -631,19 +735,19 @@ public final class PotionStageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        mMNAKDKJEPB_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (levelListBuilder_ == null) {
           levelList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           levelListBuilder_.clear();
         }
-        jJIDAFBLAEJ_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        bOAEGFPJDDO_ = emptyIntList();
+        jPMIAIIKILP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        stageId_ = 0;
-
         isOpen_ = false;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -672,27 +776,27 @@ public final class PotionStageDataOuterClass {
       public emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData buildPartial() {
         emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData result = new emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          mMNAKDKJEPB_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.mMNAKDKJEPB_ = mMNAKDKJEPB_;
         if (levelListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             levelList_ = java.util.Collections.unmodifiableList(levelList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.levelList_ = levelList_;
         } else {
           result.levelList_ = levelListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          jJIDAFBLAEJ_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.jJIDAFBLAEJ_ = jJIDAFBLAEJ_;
         if (((bitField0_ & 0x00000004) != 0)) {
-          bOAEGFPJDDO_.makeImmutable();
+          jPMIAIIKILP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.bOAEGFPJDDO_ = bOAEGFPJDDO_;
-        result.stageId_ = stageId_;
+        result.jPMIAIIKILP_ = jPMIAIIKILP_;
         result.isOpen_ = isOpen_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -741,11 +845,21 @@ public final class PotionStageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData other) {
         if (other == emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.getDefaultInstance()) return this;
+        if (!other.mMNAKDKJEPB_.isEmpty()) {
+          if (mMNAKDKJEPB_.isEmpty()) {
+            mMNAKDKJEPB_ = other.mMNAKDKJEPB_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureMMNAKDKJEPBIsMutable();
+            mMNAKDKJEPB_.addAll(other.mMNAKDKJEPB_);
+          }
+          onChanged();
+        }
         if (levelListBuilder_ == null) {
           if (!other.levelList_.isEmpty()) {
             if (levelList_.isEmpty()) {
               levelList_ = other.levelList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureLevelListIsMutable();
               levelList_.addAll(other.levelList_);
@@ -758,7 +872,7 @@ public final class PotionStageDataOuterClass {
               levelListBuilder_.dispose();
               levelListBuilder_ = null;
               levelList_ = other.levelList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               levelListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLevelListFieldBuilder() : null;
@@ -767,31 +881,21 @@ public final class PotionStageDataOuterClass {
             }
           }
         }
-        if (!other.jJIDAFBLAEJ_.isEmpty()) {
-          if (jJIDAFBLAEJ_.isEmpty()) {
-            jJIDAFBLAEJ_ = other.jJIDAFBLAEJ_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureJJIDAFBLAEJIsMutable();
-            jJIDAFBLAEJ_.addAll(other.jJIDAFBLAEJ_);
-          }
-          onChanged();
-        }
-        if (!other.bOAEGFPJDDO_.isEmpty()) {
-          if (bOAEGFPJDDO_.isEmpty()) {
-            bOAEGFPJDDO_ = other.bOAEGFPJDDO_;
+        if (!other.jPMIAIIKILP_.isEmpty()) {
+          if (jPMIAIIKILP_.isEmpty()) {
+            jPMIAIIKILP_ = other.jPMIAIIKILP_;
             bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureBOAEGFPJDDOIsMutable();
-            bOAEGFPJDDO_.addAll(other.bOAEGFPJDDO_);
+            ensureJPMIAIIKILPIsMutable();
+            jPMIAIIKILP_.addAll(other.jPMIAIIKILP_);
           }
           onChanged();
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -823,22 +927,133 @@ public final class PotionStageDataOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> levelList_ =
+      private com.google.protobuf.Internal.IntList mMNAKDKJEPB_ = emptyIntList();
+      private void ensureMMNAKDKJEPBIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          mMNAKDKJEPB_ = mutableCopy(mMNAKDKJEPB_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @return A list containing the mMNAKDKJEPB.
+       */
+      public java.util.List<java.lang.Integer>
+          getMMNAKDKJEPBList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(mMNAKDKJEPB_) : mMNAKDKJEPB_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @return The count of mMNAKDKJEPB.
+       */
+      public int getMMNAKDKJEPBCount() {
+        return mMNAKDKJEPB_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @param index The index of the element to return.
+       * @return The mMNAKDKJEPB at the given index.
+       */
+      public int getMMNAKDKJEPB(int index) {
+        return mMNAKDKJEPB_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The mMNAKDKJEPB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMMNAKDKJEPB(
+          int index, int value) {
+        ensureMMNAKDKJEPBIsMutable();
+        mMNAKDKJEPB_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @param value The mMNAKDKJEPB to add.
+       * @return This builder for chaining.
+       */
+      public Builder addMMNAKDKJEPB(int value) {
+        ensureMMNAKDKJEPBIsMutable();
+        mMNAKDKJEPB_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @param values The mMNAKDKJEPB to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMMNAKDKJEPB(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMMNAKDKJEPBIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, mMNAKDKJEPB_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 MMNAKDKJEPB = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMMNAKDKJEPB() {
+        mMNAKDKJEPB_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> levelList_ =
         java.util.Collections.emptyList();
       private void ensureLevelListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData>(levelList_);
-          bitField0_ |= 0x00000001;
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP>(levelList_);
+          bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> levelListBuilder_;
+          emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder> levelListBuilder_;
 
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> getLevelListList() {
+      public java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> getLevelListList() {
         if (levelListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelList_);
         } else {
@@ -846,7 +1061,11 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public int getLevelListCount() {
         if (levelListBuilder_ == null) {
@@ -856,9 +1075,13 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index) {
+      public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP getLevelList(int index) {
         if (levelListBuilder_ == null) {
           return levelList_.get(index);
         } else {
@@ -866,10 +1089,14 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
+          int index, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -883,10 +1110,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.set(index, builderForValue.build());
@@ -897,9 +1128,13 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public Builder addLevelList(emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
+      public Builder addLevelList(emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -913,10 +1148,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
+          int index, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -930,10 +1169,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder addLevelList(
-          emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
+          emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.add(builderForValue.build());
@@ -944,10 +1187,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.add(index, builderForValue.build());
@@ -958,10 +1205,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder addAllLevelList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP> values) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -973,12 +1224,16 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder clearLevelList() {
         if (levelListBuilder_ == null) {
           levelList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           levelListBuilder_.clear();
@@ -986,7 +1241,11 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
       public Builder removeLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -999,16 +1258,24 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder getLevelListBuilder(
+      public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder getLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
+      public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder getLevelListOrBuilder(
           int index) {
         if (levelListBuilder_ == null) {
           return levelList_.get(index);  } else {
@@ -1016,9 +1283,13 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder> 
            getLevelListOrBuilderList() {
         if (levelListBuilder_ != null) {
           return levelListBuilder_.getMessageOrBuilderList();
@@ -1027,35 +1298,47 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder addLevelListBuilder() {
+      public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder addLevelListBuilder() {
         return getLevelListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.getDefaultInstance());
+            emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder addLevelListBuilder(
+      public emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder addLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.getDefaultInstance());
+            index, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .PEGEKOHIMIP level_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder> 
            getLevelListBuilderList() {
         return getLevelListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
+          emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder> 
           getLevelListFieldBuilder() {
         if (levelListBuilder_ == null) {
           levelListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder>(
+              emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIP.Builder, emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.PEGEKOHIMIPOrBuilder>(
                   levelList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           levelList_ = null;
@@ -1063,198 +1346,120 @@ public final class PotionStageDataOuterClass {
         return levelListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList jJIDAFBLAEJ_ = emptyIntList();
-      private void ensureJJIDAFBLAEJIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          jJIDAFBLAEJ_ = mutableCopy(jJIDAFBLAEJ_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @return A list containing the jJIDAFBLAEJ.
-       */
-      public java.util.List<java.lang.Integer>
-          getJJIDAFBLAEJList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(jJIDAFBLAEJ_) : jJIDAFBLAEJ_;
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @return The count of jJIDAFBLAEJ.
-       */
-      public int getJJIDAFBLAEJCount() {
-        return jJIDAFBLAEJ_.size();
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @param index The index of the element to return.
-       * @return The jJIDAFBLAEJ at the given index.
-       */
-      public int getJJIDAFBLAEJ(int index) {
-        return jJIDAFBLAEJ_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The jJIDAFBLAEJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJJIDAFBLAEJ(
-          int index, int value) {
-        ensureJJIDAFBLAEJIsMutable();
-        jJIDAFBLAEJ_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @param value The jJIDAFBLAEJ to add.
-       * @return This builder for chaining.
-       */
-      public Builder addJJIDAFBLAEJ(int value) {
-        ensureJJIDAFBLAEJIsMutable();
-        jJIDAFBLAEJ_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @param values The jJIDAFBLAEJ to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllJJIDAFBLAEJ(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureJJIDAFBLAEJIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, jJIDAFBLAEJ_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 JJIDAFBLAEJ = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJJIDAFBLAEJ() {
-        jJIDAFBLAEJ_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList bOAEGFPJDDO_ = emptyIntList();
-      private void ensureBOAEGFPJDDOIsMutable() {
+      private com.google.protobuf.Internal.IntList jPMIAIIKILP_ = emptyIntList();
+      private void ensureJPMIAIIKILPIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          bOAEGFPJDDO_ = mutableCopy(bOAEGFPJDDO_);
+          jPMIAIIKILP_ = mutableCopy(jPMIAIIKILP_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-       * @return A list containing the bOAEGFPJDDO.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+       * @return A list containing the jPMIAIIKILP.
        */
       public java.util.List<java.lang.Integer>
-          getBOAEGFPJDDOList() {
+          getJPMIAIIKILPList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(bOAEGFPJDDO_) : bOAEGFPJDDO_;
+                 java.util.Collections.unmodifiableList(jPMIAIIKILP_) : jPMIAIIKILP_;
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-       * @return The count of bOAEGFPJDDO.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+       * @return The count of jPMIAIIKILP.
        */
-      public int getBOAEGFPJDDOCount() {
-        return bOAEGFPJDDO_.size();
+      public int getJPMIAIIKILPCount() {
+        return jPMIAIIKILP_.size();
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
        * @param index The index of the element to return.
-       * @return The bOAEGFPJDDO at the given index.
+       * @return The jPMIAIIKILP at the given index.
        */
-      public int getBOAEGFPJDDO(int index) {
-        return bOAEGFPJDDO_.getInt(index);
+      public int getJPMIAIIKILP(int index) {
+        return jPMIAIIKILP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
        * @param index The index to set the value at.
-       * @param value The bOAEGFPJDDO to set.
+       * @param value The jPMIAIIKILP to set.
        * @return This builder for chaining.
        */
-      public Builder setBOAEGFPJDDO(
+      public Builder setJPMIAIIKILP(
           int index, int value) {
-        ensureBOAEGFPJDDOIsMutable();
-        bOAEGFPJDDO_.setInt(index, value);
+        ensureJPMIAIIKILPIsMutable();
+        jPMIAIIKILP_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-       * @param value The bOAEGFPJDDO to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+       * @param value The jPMIAIIKILP to add.
        * @return This builder for chaining.
        */
-      public Builder addBOAEGFPJDDO(int value) {
-        ensureBOAEGFPJDDOIsMutable();
-        bOAEGFPJDDO_.addInt(value);
+      public Builder addJPMIAIIKILP(int value) {
+        ensureJPMIAIIKILPIsMutable();
+        jPMIAIIKILP_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
-       * @param values The bOAEGFPJDDO to add.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
+       * @param values The jPMIAIIKILP to add.
        * @return This builder for chaining.
        */
-      public Builder addAllBOAEGFPJDDO(
+      public Builder addAllJPMIAIIKILP(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBOAEGFPJDDOIsMutable();
+        ensureJPMIAIIKILPIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bOAEGFPJDDO_);
+            values, jPMIAIIKILP_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 BOAEGFPJDDO = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 JPMIAIIKILP = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBOAEGFPJDDO() {
-        bOAEGFPJDDO_ = emptyIntList();
+      public Builder clearJPMIAIIKILP() {
+        jPMIAIIKILP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -1262,7 +1467,11 @@ public final class PotionStageDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -1273,12 +1482,59 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 stage_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1349,25 +1605,25 @@ public final class PotionStageDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025PotionStageData.proto\032\025PotionLevelData" +
-      ".proto\"\204\001\n\017PotionStageData\022$\n\nlevel_list" +
-      "\030\017 \003(\0132\020.PotionLevelData\022\023\n\013JJIDAFBLAEJ\030" +
-      "\004 \003(\r\022\023\n\013BOAEGFPJDDO\030\014 \003(\r\022\020\n\010stage_id\030\016" +
-      " \001(\r\022\017\n\007is_open\030\n \001(\010B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\025PotionStageData.proto\032\021PEGEKOHIMIP.pro" +
+      "to\"\200\001\n\017PotionStageData\022\023\n\013MMNAKDKJEPB\030\014 " +
+      "\003(\r\022 \n\nlevel_list\030\005 \003(\0132\014.PEGEKOHIMIP\022\023\n" +
+      "\013JPMIAIIKILP\030\007 \003(\r\022\017\n\007is_open\030\010 \001(\010\022\020\n\010s" +
+      "tage_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PotionLevelDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.getDescriptor(),
         });
     internal_static_PotionStageData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PotionStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionStageData_descriptor,
-        new java.lang.String[] { "LevelList", "JJIDAFBLAEJ", "BOAEGFPJDDO", "StageId", "IsOpen", });
-    emu.grasscutter.net.proto.PotionLevelDataOuterClass.getDescriptor();
+        new java.lang.String[] { "MMNAKDKJEPB", "LevelList", "JPMIAIIKILP", "IsOpen", "StageId", });
+    emu.grasscutter.net.proto.PEGEKOHIMIPOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

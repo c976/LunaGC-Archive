@@ -19,24 +19,35 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      * @return Whether the battleInfo field is set.
      */
     boolean hasBattleInfo();
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      * @return The battleInfo.
      */
     emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo getBattleInfo();
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 1543
-   * Obf: PHJNPOAHJEM
+   * CmdId: 9411
    * </pre>
    *
    * Protobuf type {@code ScenePlayBattleInfoNotify}
@@ -83,7 +94,7 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 34: {
               emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder subBuilder = null;
               if (battleInfo_ != null) {
                 subBuilder = battleInfo_.toBuilder();
@@ -128,10 +139,14 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
               emu.grasscutter.net.proto.ScenePlayBattleInfoNotifyOuterClass.ScenePlayBattleInfoNotify.class, emu.grasscutter.net.proto.ScenePlayBattleInfoNotifyOuterClass.ScenePlayBattleInfoNotify.Builder.class);
     }
 
-    public static final int BATTLE_INFO_FIELD_NUMBER = 11;
+    public static final int BATTLE_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo battleInfo_;
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      * @return Whether the battleInfo field is set.
      */
     @java.lang.Override
@@ -139,7 +154,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
       return battleInfo_ != null;
     }
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      * @return The battleInfo.
      */
     @java.lang.Override
@@ -147,7 +166,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
       return battleInfo_ == null ? emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.getDefaultInstance() : battleInfo_;
     }
     /**
-     * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ScenePlayBattleInfo battle_info = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoOrBuilder() {
@@ -169,7 +192,7 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (battleInfo_ != null) {
-        output.writeMessage(11, getBattleInfo());
+        output.writeMessage(4, getBattleInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +205,7 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
       size = 0;
       if (battleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getBattleInfo());
+          .computeMessageSize(4, getBattleInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +339,7 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1543
-     * Obf: PHJNPOAHJEM
+     * CmdId: 9411
      * </pre>
      *
      * Protobuf type {@code ScenePlayBattleInfoNotify}
@@ -478,14 +500,22 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> battleInfoBuilder_;
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        * @return Whether the battleInfo field is set.
        */
       public boolean hasBattleInfo() {
         return battleInfoBuilder_ != null || battleInfo_ != null;
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        * @return The battleInfo.
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo getBattleInfo() {
@@ -496,7 +526,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public Builder setBattleInfo(emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo value) {
         if (battleInfoBuilder_ == null) {
@@ -512,7 +546,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public Builder setBattleInfo(
           emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder builderForValue) {
@@ -526,7 +564,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public Builder mergeBattleInfo(emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo value) {
         if (battleInfoBuilder_ == null) {
@@ -544,7 +586,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public Builder clearBattleInfo() {
         if (battleInfoBuilder_ == null) {
@@ -558,7 +604,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder getBattleInfoBuilder() {
         
@@ -566,7 +616,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         return getBattleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder getBattleInfoOrBuilder() {
         if (battleInfoBuilder_ != null) {
@@ -577,7 +631,11 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.ScenePlayBattleInfo battle_info = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ScenePlayBattleInfo battle_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleInfoOuterClass.ScenePlayBattleInfoOrBuilder> 
@@ -661,7 +719,7 @@ public final class ScenePlayBattleInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037ScenePlayBattleInfoNotify.proto\032\031Scene" +
       "PlayBattleInfo.proto\"F\n\031ScenePlayBattleI" +
-      "nfoNotify\022)\n\013battle_info\030\013 \001(\0132\024.ScenePl" +
+      "nfoNotify\022)\n\013battle_info\030\004 \001(\0132\024.ScenePl" +
       "ayBattleInfoB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };

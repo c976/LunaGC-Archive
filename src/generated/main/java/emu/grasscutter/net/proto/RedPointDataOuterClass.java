@@ -19,28 +19,36 @@ public final class RedPointDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 red_point_type = 1;</code>
-     * @return The redPointType.
-     */
-    int getRedPointType();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_show = 2;</code>
      * @return The isShow.
      */
     boolean getIsShow();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 content_id = 3;</code>
      * @return The contentId.
      */
     int getContentId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 red_point_type = 1;</code>
+     * @return The redPointType.
+     */
+    int getRedPointType();
   }
   /**
-   * <pre>
-   * Obf: LLNDNAFDJAL
-   * </pre>
-   *
    * Protobuf type {@code RedPointData}
    */
   public static final class RedPointData extends
@@ -132,20 +140,13 @@ public final class RedPointDataOuterClass {
               emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.class, emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.Builder.class);
     }
 
-    public static final int RED_POINT_TYPE_FIELD_NUMBER = 1;
-    private int redPointType_;
-    /**
-     * <code>uint32 red_point_type = 1;</code>
-     * @return The redPointType.
-     */
-    @java.lang.Override
-    public int getRedPointType() {
-      return redPointType_;
-    }
-
     public static final int IS_SHOW_FIELD_NUMBER = 2;
     private boolean isShow_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_show = 2;</code>
      * @return The isShow.
      */
@@ -157,12 +158,31 @@ public final class RedPointDataOuterClass {
     public static final int CONTENT_ID_FIELD_NUMBER = 3;
     private int contentId_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 content_id = 3;</code>
      * @return The contentId.
      */
     @java.lang.Override
     public int getContentId() {
       return contentId_;
+    }
+
+    public static final int RED_POINT_TYPE_FIELD_NUMBER = 1;
+    private int redPointType_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 red_point_type = 1;</code>
+     * @return The redPointType.
+     */
+    @java.lang.Override
+    public int getRedPointType() {
+      return redPointType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,12 +244,12 @@ public final class RedPointDataOuterClass {
       }
       emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData other = (emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData) obj;
 
-      if (getRedPointType()
-          != other.getRedPointType()) return false;
       if (getIsShow()
           != other.getIsShow()) return false;
       if (getContentId()
           != other.getContentId()) return false;
+      if (getRedPointType()
+          != other.getRedPointType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +261,13 @@ public final class RedPointDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RED_POINT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getRedPointType();
       hash = (37 * hash) + IS_SHOW_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShow());
       hash = (37 * hash) + CONTENT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getContentId();
+      hash = (37 * hash) + RED_POINT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRedPointType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +364,6 @@ public final class RedPointDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LLNDNAFDJAL
-     * </pre>
-     *
      * Protobuf type {@code RedPointData}
      */
     public static final class Builder extends
@@ -385,11 +401,11 @@ public final class RedPointDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        redPointType_ = 0;
-
         isShow_ = false;
 
         contentId_ = 0;
+
+        redPointType_ = 0;
 
         return this;
       }
@@ -417,9 +433,9 @@ public final class RedPointDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData buildPartial() {
         emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData result = new emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData(this);
-        result.redPointType_ = redPointType_;
         result.isShow_ = isShow_;
         result.contentId_ = contentId_;
+        result.redPointType_ = redPointType_;
         onBuilt();
         return result;
       }
@@ -468,14 +484,14 @@ public final class RedPointDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData other) {
         if (other == emu.grasscutter.net.proto.RedPointDataOuterClass.RedPointData.getDefaultInstance()) return this;
-        if (other.getRedPointType() != 0) {
-          setRedPointType(other.getRedPointType());
-        }
         if (other.getIsShow() != false) {
           setIsShow(other.getIsShow());
         }
         if (other.getContentId() != 0) {
           setContentId(other.getContentId());
+        }
+        if (other.getRedPointType() != 0) {
+          setRedPointType(other.getRedPointType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,39 +522,12 @@ public final class RedPointDataOuterClass {
         return this;
       }
 
-      private int redPointType_ ;
-      /**
-       * <code>uint32 red_point_type = 1;</code>
-       * @return The redPointType.
-       */
-      @java.lang.Override
-      public int getRedPointType() {
-        return redPointType_;
-      }
-      /**
-       * <code>uint32 red_point_type = 1;</code>
-       * @param value The redPointType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRedPointType(int value) {
-        
-        redPointType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 red_point_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRedPointType() {
-        
-        redPointType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isShow_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show = 2;</code>
        * @return The isShow.
        */
@@ -547,6 +536,10 @@ public final class RedPointDataOuterClass {
         return isShow_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show = 2;</code>
        * @param value The isShow to set.
        * @return This builder for chaining.
@@ -558,6 +551,10 @@ public final class RedPointDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_show = 2;</code>
        * @return This builder for chaining.
        */
@@ -570,6 +567,10 @@ public final class RedPointDataOuterClass {
 
       private int contentId_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 content_id = 3;</code>
        * @return The contentId.
        */
@@ -578,6 +579,10 @@ public final class RedPointDataOuterClass {
         return contentId_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 content_id = 3;</code>
        * @param value The contentId to set.
        * @return This builder for chaining.
@@ -589,12 +594,59 @@ public final class RedPointDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 content_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentId() {
         
         contentId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int redPointType_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 red_point_type = 1;</code>
+       * @return The redPointType.
+       */
+      @java.lang.Override
+      public int getRedPointType() {
+        return redPointType_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 red_point_type = 1;</code>
+       * @param value The redPointType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRedPointType(int value) {
+        
+        redPointType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 red_point_type = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRedPointType() {
+        
+        redPointType_ = 0;
         onChanged();
         return this;
       }
@@ -665,9 +717,9 @@ public final class RedPointDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022RedPointData.proto\"K\n\014RedPointData\022\026\n\016" +
-      "red_point_type\030\001 \001(\r\022\017\n\007is_show\030\002 \001(\010\022\022\n" +
-      "\ncontent_id\030\003 \001(\rB\033\n\031emu.grasscutter.net" +
+      "\n\022RedPointData.proto\"K\n\014RedPointData\022\017\n\007" +
+      "is_show\030\002 \001(\010\022\022\n\ncontent_id\030\003 \001(\r\022\026\n\016red" +
+      "_point_type\030\001 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +731,7 @@ public final class RedPointDataOuterClass {
     internal_static_RedPointData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RedPointData_descriptor,
-        new java.lang.String[] { "RedPointType", "IsShow", "ContentId", });
+        new java.lang.String[] { "IsShow", "ContentId", "RedPointType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

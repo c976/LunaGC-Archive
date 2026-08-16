@@ -19,38 +19,57 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_can_refresh = 9;</code>
-     * @return The isCanRefresh.
-     */
-    boolean getIsCanRefresh();
-
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @return A list containing the cardList.
      */
     java.util.List<java.lang.Integer> getCardListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @return The count of cardList.
      */
     int getCardListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
     int getCardList(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_can_refresh = 9;</code>
+     * @return The isCanRefresh.
+     */
+    boolean getIsCanRefresh();
   }
   /**
    * <pre>
-   * CmdId: 3293
-   * Obf: DAPHODPAJPK
+   * CmdId: 20497
    * </pre>
    *
    * Protobuf type {@code DoRoguelikeDungeonCardGachaRsp}
@@ -120,14 +139,14 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 72: {
 
               isCanRefresh_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -165,31 +184,13 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
               emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp.class, emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp.Builder.class);
     }
 
-    public static final int IS_CAN_REFRESH_FIELD_NUMBER = 9;
-    private boolean isCanRefresh_;
-    /**
-     * <code>bool is_can_refresh = 9;</code>
-     * @return The isCanRefresh.
-     */
-    @java.lang.Override
-    public boolean getIsCanRefresh() {
-      return isCanRefresh_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int CARD_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList cardList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @return A list containing the cardList.
      */
@@ -199,6 +200,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       return cardList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @return The count of cardList.
      */
@@ -206,6 +211,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       return cardList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 card_list = 1;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
@@ -214,6 +223,36 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       return cardList_.getInt(index);
     }
     private int cardListMemoizedSerializedSize = -1;
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int IS_CAN_REFRESH_FIELD_NUMBER = 9;
+    private boolean isCanRefresh_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_can_refresh = 9;</code>
+     * @return The isCanRefresh.
+     */
+    @java.lang.Override
+    public boolean getIsCanRefresh() {
+      return isCanRefresh_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -237,11 +276,11 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       for (int i = 0; i < cardList_.size(); i++) {
         output.writeUInt32NoTag(cardList_.getInt(i));
       }
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (isCanRefresh_ != false) {
         output.writeBool(9, isCanRefresh_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -266,13 +305,13 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         }
         cardListMemoizedSerializedSize = dataSize;
       }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       if (isCanRefresh_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, isCanRefresh_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,12 +328,12 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       }
       emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp other = (emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp) obj;
 
-      if (getIsCanRefresh()
-          != other.getIsCanRefresh()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getCardListList()
           .equals(other.getCardListList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getIsCanRefresh()
+          != other.getIsCanRefresh()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,15 +345,15 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_CAN_REFRESH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsCanRefresh());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getCardListCount() > 0) {
         hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCardListList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + IS_CAN_REFRESH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCanRefresh());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,8 +451,7 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3293
-     * Obf: DAPHODPAJPK
+     * CmdId: 20497
      * </pre>
      *
      * Protobuf type {@code DoRoguelikeDungeonCardGachaRsp}
@@ -453,12 +491,12 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isCanRefresh_ = false;
-
-        retcode_ = 0;
-
         cardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
+        isCanRefresh_ = false;
+
         return this;
       }
 
@@ -486,13 +524,13 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       public emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp buildPartial() {
         emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp result = new emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp(this);
         int from_bitField0_ = bitField0_;
-        result.isCanRefresh_ = isCanRefresh_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           cardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.cardList_ = cardList_;
+        result.retcode_ = retcode_;
+        result.isCanRefresh_ = isCanRefresh_;
         onBuilt();
         return result;
       }
@@ -541,12 +579,6 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp other) {
         if (other == emu.grasscutter.net.proto.DoRoguelikeDungeonCardGachaRspOuterClass.DoRoguelikeDungeonCardGachaRsp.getDefaultInstance()) return this;
-        if (other.getIsCanRefresh() != false) {
-          setIsCanRefresh(other.getIsCanRefresh());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.cardList_.isEmpty()) {
           if (cardList_.isEmpty()) {
             cardList_ = other.cardList_;
@@ -556,6 +588,12 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
             cardList_.addAll(other.cardList_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getIsCanRefresh() != false) {
+          setIsCanRefresh(other.getIsCanRefresh());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,68 +625,6 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
       }
       private int bitField0_;
 
-      private boolean isCanRefresh_ ;
-      /**
-       * <code>bool is_can_refresh = 9;</code>
-       * @return The isCanRefresh.
-       */
-      @java.lang.Override
-      public boolean getIsCanRefresh() {
-        return isCanRefresh_;
-      }
-      /**
-       * <code>bool is_can_refresh = 9;</code>
-       * @param value The isCanRefresh to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsCanRefresh(boolean value) {
-        
-        isCanRefresh_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_can_refresh = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsCanRefresh() {
-        
-        isCanRefresh_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList cardList_ = emptyIntList();
       private void ensureCardListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -657,6 +633,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
          }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @return A list containing the cardList.
        */
@@ -666,6 +646,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
                  java.util.Collections.unmodifiableList(cardList_) : cardList_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @return The count of cardList.
        */
@@ -673,6 +657,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         return cardList_.size();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @param index The index of the element to return.
        * @return The cardList at the given index.
@@ -681,6 +669,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         return cardList_.getInt(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The cardList to set.
@@ -694,6 +686,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @param value The cardList to add.
        * @return This builder for chaining.
@@ -705,6 +701,10 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @param values The cardList to add.
        * @return This builder for chaining.
@@ -718,12 +718,102 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 card_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardList() {
         cardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCanRefresh_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_can_refresh = 9;</code>
+       * @return The isCanRefresh.
+       */
+      @java.lang.Override
+      public boolean getIsCanRefresh() {
+        return isCanRefresh_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_can_refresh = 9;</code>
+       * @param value The isCanRefresh to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCanRefresh(boolean value) {
+        
+        isCanRefresh_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_can_refresh = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCanRefresh() {
+        
+        isCanRefresh_ = false;
         onChanged();
         return this;
       }
@@ -795,9 +885,9 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$DoRoguelikeDungeonCardGachaRsp.proto\"\\" +
-      "\n\036DoRoguelikeDungeonCardGachaRsp\022\026\n\016is_c" +
-      "an_refresh\030\t \001(\010\022\017\n\007retcode\030\005 \001(\005\022\021\n\tcar" +
-      "d_list\030\001 \003(\rB\033\n\031emu.grasscutter.net.prot" +
+      "\n\036DoRoguelikeDungeonCardGachaRsp\022\021\n\tcard" +
+      "_list\030\001 \003(\r\022\017\n\007retcode\030\r \001(\005\022\026\n\016is_can_r" +
+      "efresh\030\t \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -809,7 +899,7 @@ public final class DoRoguelikeDungeonCardGachaRspOuterClass {
     internal_static_DoRoguelikeDungeonCardGachaRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DoRoguelikeDungeonCardGachaRsp_descriptor,
-        new java.lang.String[] { "IsCanRefresh", "Retcode", "CardList", });
+        new java.lang.String[] { "CardList", "Retcode", "IsCanRefresh", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

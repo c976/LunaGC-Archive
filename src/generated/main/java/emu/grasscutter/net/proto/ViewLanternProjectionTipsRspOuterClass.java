@@ -19,15 +19,14 @@ public final class ViewLanternProjectionTipsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22183
-   * Obf: AGFCKCAGECB
+   * CmdId: 1537
    * </pre>
    *
    * Protobuf type {@code ViewLanternProjectionTipsRsp}
@@ -74,7 +73,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class ViewLanternProjectionTipsRspOuterClass {
               emu.grasscutter.net.proto.ViewLanternProjectionTipsRspOuterClass.ViewLanternProjectionTipsRsp.class, emu.grasscutter.net.proto.ViewLanternProjectionTipsRspOuterClass.ViewLanternProjectionTipsRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22183
-     * Obf: AGFCKCAGECB
+     * CmdId: 1537
      * </pre>
      *
      * Protobuf type {@code ViewLanternProjectionTipsRsp}
@@ -431,7 +429,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -528,7 +526,7 @@ public final class ViewLanternProjectionTipsRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ViewLanternProjectionTipsRsp.proto\"/\n\034" +
       "ViewLanternProjectionTipsRsp\022\017\n\007retcode\030" +
-      "\010 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\013 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,16 +19,34 @@ public final class BreakoutBrickInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 element_type = 2;</code>
      * @return The elementType.
      */
     int getElementType();
 
     /**
-     * <code>uint32 DFJPDKGOMKL = 1;</code>
-     * @return The dFJPDKGOMKL.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 FDLAJALKACC = 3;</code>
+     * @return The fDLAJALKACC.
      */
-    int getDFJPDKGOMKL();
+    int getFDLAJALKACC();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DKOECNILDFN = 1;</code>
+     * @return The dKOECNILDFN.
+     */
+    int getDKOECNILDFN();
   }
   /**
    * Protobuf type {@code BreakoutBrickInfo}
@@ -77,12 +95,17 @@ public final class BreakoutBrickInfoOuterClass {
               break;
             case 8: {
 
-              dFJPDKGOMKL_ = input.readUInt32();
+              dKOECNILDFN_ = input.readUInt32();
               break;
             }
             case 16: {
 
               elementType_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              fDLAJALKACC_ = input.readUInt32();
               break;
             }
             default: {
@@ -120,6 +143,10 @@ public final class BreakoutBrickInfoOuterClass {
     public static final int ELEMENT_TYPE_FIELD_NUMBER = 2;
     private int elementType_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 element_type = 2;</code>
      * @return The elementType.
      */
@@ -128,15 +155,34 @@ public final class BreakoutBrickInfoOuterClass {
       return elementType_;
     }
 
-    public static final int DFJPDKGOMKL_FIELD_NUMBER = 1;
-    private int dFJPDKGOMKL_;
+    public static final int FDLAJALKACC_FIELD_NUMBER = 3;
+    private int fDLAJALKACC_;
     /**
-     * <code>uint32 DFJPDKGOMKL = 1;</code>
-     * @return The dFJPDKGOMKL.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 FDLAJALKACC = 3;</code>
+     * @return The fDLAJALKACC.
      */
     @java.lang.Override
-    public int getDFJPDKGOMKL() {
-      return dFJPDKGOMKL_;
+    public int getFDLAJALKACC() {
+      return fDLAJALKACC_;
+    }
+
+    public static final int DKOECNILDFN_FIELD_NUMBER = 1;
+    private int dKOECNILDFN_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 DKOECNILDFN = 1;</code>
+     * @return The dKOECNILDFN.
+     */
+    @java.lang.Override
+    public int getDKOECNILDFN() {
+      return dKOECNILDFN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +199,14 @@ public final class BreakoutBrickInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dFJPDKGOMKL_ != 0) {
-        output.writeUInt32(1, dFJPDKGOMKL_);
+      if (dKOECNILDFN_ != 0) {
+        output.writeUInt32(1, dKOECNILDFN_);
       }
       if (elementType_ != 0) {
         output.writeUInt32(2, elementType_);
+      }
+      if (fDLAJALKACC_ != 0) {
+        output.writeUInt32(3, fDLAJALKACC_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +217,17 @@ public final class BreakoutBrickInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dFJPDKGOMKL_ != 0) {
+      if (dKOECNILDFN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dFJPDKGOMKL_);
+          .computeUInt32Size(1, dKOECNILDFN_);
       }
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, elementType_);
+      }
+      if (fDLAJALKACC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, fDLAJALKACC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,8 +246,10 @@ public final class BreakoutBrickInfoOuterClass {
 
       if (getElementType()
           != other.getElementType()) return false;
-      if (getDFJPDKGOMKL()
-          != other.getDFJPDKGOMKL()) return false;
+      if (getFDLAJALKACC()
+          != other.getFDLAJALKACC()) return false;
+      if (getDKOECNILDFN()
+          != other.getDKOECNILDFN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,8 +263,10 @@ public final class BreakoutBrickInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getElementType();
-      hash = (37 * hash) + DFJPDKGOMKL_FIELD_NUMBER;
-      hash = (53 * hash) + getDFJPDKGOMKL();
+      hash = (37 * hash) + FDLAJALKACC_FIELD_NUMBER;
+      hash = (53 * hash) + getFDLAJALKACC();
+      hash = (37 * hash) + DKOECNILDFN_FIELD_NUMBER;
+      hash = (53 * hash) + getDKOECNILDFN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +402,9 @@ public final class BreakoutBrickInfoOuterClass {
         super.clear();
         elementType_ = 0;
 
-        dFJPDKGOMKL_ = 0;
+        fDLAJALKACC_ = 0;
+
+        dKOECNILDFN_ = 0;
 
         return this;
       }
@@ -374,7 +433,8 @@ public final class BreakoutBrickInfoOuterClass {
       public emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo buildPartial() {
         emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo result = new emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo(this);
         result.elementType_ = elementType_;
-        result.dFJPDKGOMKL_ = dFJPDKGOMKL_;
+        result.fDLAJALKACC_ = fDLAJALKACC_;
+        result.dKOECNILDFN_ = dKOECNILDFN_;
         onBuilt();
         return result;
       }
@@ -426,8 +486,11 @@ public final class BreakoutBrickInfoOuterClass {
         if (other.getElementType() != 0) {
           setElementType(other.getElementType());
         }
-        if (other.getDFJPDKGOMKL() != 0) {
-          setDFJPDKGOMKL(other.getDFJPDKGOMKL());
+        if (other.getFDLAJALKACC() != 0) {
+          setFDLAJALKACC(other.getFDLAJALKACC());
+        }
+        if (other.getDKOECNILDFN() != 0) {
+          setDKOECNILDFN(other.getDKOECNILDFN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,6 +523,10 @@ public final class BreakoutBrickInfoOuterClass {
 
       private int elementType_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 element_type = 2;</code>
        * @return The elementType.
        */
@@ -468,6 +535,10 @@ public final class BreakoutBrickInfoOuterClass {
         return elementType_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 element_type = 2;</code>
        * @param value The elementType to set.
        * @return This builder for chaining.
@@ -479,6 +550,10 @@ public final class BreakoutBrickInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 element_type = 2;</code>
        * @return This builder for chaining.
        */
@@ -489,33 +564,88 @@ public final class BreakoutBrickInfoOuterClass {
         return this;
       }
 
-      private int dFJPDKGOMKL_ ;
+      private int fDLAJALKACC_ ;
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
-       * @return The dFJPDKGOMKL.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FDLAJALKACC = 3;</code>
+       * @return The fDLAJALKACC.
        */
       @java.lang.Override
-      public int getDFJPDKGOMKL() {
-        return dFJPDKGOMKL_;
+      public int getFDLAJALKACC() {
+        return fDLAJALKACC_;
       }
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
-       * @param value The dFJPDKGOMKL to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FDLAJALKACC = 3;</code>
+       * @param value The fDLAJALKACC to set.
        * @return This builder for chaining.
        */
-      public Builder setDFJPDKGOMKL(int value) {
+      public Builder setFDLAJALKACC(int value) {
         
-        dFJPDKGOMKL_ = value;
+        fDLAJALKACC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 FDLAJALKACC = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDFJPDKGOMKL() {
+      public Builder clearFDLAJALKACC() {
         
-        dFJPDKGOMKL_ = 0;
+        fDLAJALKACC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dKOECNILDFN_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DKOECNILDFN = 1;</code>
+       * @return The dKOECNILDFN.
+       */
+      @java.lang.Override
+      public int getDKOECNILDFN() {
+        return dKOECNILDFN_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DKOECNILDFN = 1;</code>
+       * @param value The dKOECNILDFN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDKOECNILDFN(int value) {
+        
+        dKOECNILDFN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 DKOECNILDFN = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDKOECNILDFN() {
+        
+        dKOECNILDFN_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +716,10 @@ public final class BreakoutBrickInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027BreakoutBrickInfo.proto\">\n\021BreakoutBri" +
-      "ckInfo\022\024\n\014element_type\030\002 \001(\r\022\023\n\013DFJPDKGO" +
-      "MKL\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\027BreakoutBrickInfo.proto\"S\n\021BreakoutBri" +
+      "ckInfo\022\024\n\014element_type\030\002 \001(\r\022\023\n\013FDLAJALK" +
+      "ACC\030\003 \001(\r\022\023\n\013DKOECNILDFN\030\001 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +730,7 @@ public final class BreakoutBrickInfoOuterClass {
     internal_static_BreakoutBrickInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutBrickInfo_descriptor,
-        new java.lang.String[] { "ElementType", "DFJPDKGOMKL", });
+        new java.lang.String[] { "ElementType", "FDLAJALKACC", "DKOECNILDFN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

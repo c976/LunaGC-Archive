@@ -19,27 +19,26 @@ public final class BlessingScanRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EAAMLKFJMKK = 12;</code>
-     * @return The eAAMLKFJMKK.
-     */
-    int getEAAMLKFJMKK();
-
-    /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 CLCIHLHKGLO = 4;</code>
-     * @return The cLCIHLHKGLO.
+     * <code>uint32 MHGHPFECMGD = 11;</code>
+     * @return The mHGHPFECMGD.
      */
-    int getCLCIHLHKGLO();
+    int getMHGHPFECMGD();
+
+    /**
+     * <code>uint32 cur_day_scan_num = 15;</code>
+     * @return The curDayScanNum.
+     */
+    int getCurDayScanNum();
   }
   /**
    * <pre>
-   * CmdId: 23837
-   * Obf: LONBPIOEFCO
+   * CmdId: 20825
    * </pre>
    *
    * Protobuf type {@code BlessingScanRsp}
@@ -86,19 +85,19 @@ public final class BlessingScanRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 88: {
 
-              cLCIHLHKGLO_ = input.readUInt32();
+              mHGHPFECMGD_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 120: {
 
-              eAAMLKFJMKK_ = input.readUInt32();
+              curDayScanNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +132,10 @@ public final class BlessingScanRspOuterClass {
               emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.class, emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.Builder.class);
     }
 
-    public static final int EAAMLKFJMKK_FIELD_NUMBER = 12;
-    private int eAAMLKFJMKK_;
-    /**
-     * <code>uint32 EAAMLKFJMKK = 12;</code>
-     * @return The eAAMLKFJMKK.
-     */
-    @java.lang.Override
-    public int getEAAMLKFJMKK() {
-      return eAAMLKFJMKK_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +143,26 @@ public final class BlessingScanRspOuterClass {
       return retcode_;
     }
 
-    public static final int CLCIHLHKGLO_FIELD_NUMBER = 4;
-    private int cLCIHLHKGLO_;
+    public static final int MHGHPFECMGD_FIELD_NUMBER = 11;
+    private int mHGHPFECMGD_;
     /**
-     * <code>uint32 CLCIHLHKGLO = 4;</code>
-     * @return The cLCIHLHKGLO.
+     * <code>uint32 MHGHPFECMGD = 11;</code>
+     * @return The mHGHPFECMGD.
      */
     @java.lang.Override
-    public int getCLCIHLHKGLO() {
-      return cLCIHLHKGLO_;
+    public int getMHGHPFECMGD() {
+      return mHGHPFECMGD_;
+    }
+
+    public static final int CUR_DAY_SCAN_NUM_FIELD_NUMBER = 15;
+    private int curDayScanNum_;
+    /**
+     * <code>uint32 cur_day_scan_num = 15;</code>
+     * @return The curDayScanNum.
+     */
+    @java.lang.Override
+    public int getCurDayScanNum() {
+      return curDayScanNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +180,13 @@ public final class BlessingScanRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(1, retcode_);
       }
-      if (cLCIHLHKGLO_ != 0) {
-        output.writeUInt32(4, cLCIHLHKGLO_);
+      if (mHGHPFECMGD_ != 0) {
+        output.writeUInt32(11, mHGHPFECMGD_);
       }
-      if (eAAMLKFJMKK_ != 0) {
-        output.writeUInt32(12, eAAMLKFJMKK_);
+      if (curDayScanNum_ != 0) {
+        output.writeUInt32(15, curDayScanNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +199,15 @@ public final class BlessingScanRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(1, retcode_);
       }
-      if (cLCIHLHKGLO_ != 0) {
+      if (mHGHPFECMGD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cLCIHLHKGLO_);
+          .computeUInt32Size(11, mHGHPFECMGD_);
       }
-      if (eAAMLKFJMKK_ != 0) {
+      if (curDayScanNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eAAMLKFJMKK_);
+          .computeUInt32Size(15, curDayScanNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class BlessingScanRspOuterClass {
       }
       emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp other = (emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp) obj;
 
-      if (getEAAMLKFJMKK()
-          != other.getEAAMLKFJMKK()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getCLCIHLHKGLO()
-          != other.getCLCIHLHKGLO()) return false;
+      if (getMHGHPFECMGD()
+          != other.getMHGHPFECMGD()) return false;
+      if (getCurDayScanNum()
+          != other.getCurDayScanNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +241,12 @@ public final class BlessingScanRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EAAMLKFJMKK_FIELD_NUMBER;
-      hash = (53 * hash) + getEAAMLKFJMKK();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CLCIHLHKGLO_FIELD_NUMBER;
-      hash = (53 * hash) + getCLCIHLHKGLO();
+      hash = (37 * hash) + MHGHPFECMGD_FIELD_NUMBER;
+      hash = (53 * hash) + getMHGHPFECMGD();
+      hash = (37 * hash) + CUR_DAY_SCAN_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getCurDayScanNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class BlessingScanRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23837
-     * Obf: LONBPIOEFCO
+     * CmdId: 20825
      * </pre>
      *
      * Protobuf type {@code BlessingScanRsp}
@@ -386,11 +384,11 @@ public final class BlessingScanRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eAAMLKFJMKK_ = 0;
-
         retcode_ = 0;
 
-        cLCIHLHKGLO_ = 0;
+        mHGHPFECMGD_ = 0;
+
+        curDayScanNum_ = 0;
 
         return this;
       }
@@ -418,9 +416,9 @@ public final class BlessingScanRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp buildPartial() {
         emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp result = new emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp(this);
-        result.eAAMLKFJMKK_ = eAAMLKFJMKK_;
         result.retcode_ = retcode_;
-        result.cLCIHLHKGLO_ = cLCIHLHKGLO_;
+        result.mHGHPFECMGD_ = mHGHPFECMGD_;
+        result.curDayScanNum_ = curDayScanNum_;
         onBuilt();
         return result;
       }
@@ -469,14 +467,14 @@ public final class BlessingScanRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp other) {
         if (other == emu.grasscutter.net.proto.BlessingScanRspOuterClass.BlessingScanRsp.getDefaultInstance()) return this;
-        if (other.getEAAMLKFJMKK() != 0) {
-          setEAAMLKFJMKK(other.getEAAMLKFJMKK());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getCLCIHLHKGLO() != 0) {
-          setCLCIHLHKGLO(other.getCLCIHLHKGLO());
+        if (other.getMHGHPFECMGD() != 0) {
+          setMHGHPFECMGD(other.getMHGHPFECMGD());
+        }
+        if (other.getCurDayScanNum() != 0) {
+          setCurDayScanNum(other.getCurDayScanNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +505,9 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
 
-      private int eAAMLKFJMKK_ ;
-      /**
-       * <code>uint32 EAAMLKFJMKK = 12;</code>
-       * @return The eAAMLKFJMKK.
-       */
-      @java.lang.Override
-      public int getEAAMLKFJMKK() {
-        return eAAMLKFJMKK_;
-      }
-      /**
-       * <code>uint32 EAAMLKFJMKK = 12;</code>
-       * @param value The eAAMLKFJMKK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEAAMLKFJMKK(int value) {
-        
-        eAAMLKFJMKK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EAAMLKFJMKK = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEAAMLKFJMKK() {
-        
-        eAAMLKFJMKK_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +515,7 @@ public final class BlessingScanRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,7 +526,7 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -569,33 +536,64 @@ public final class BlessingScanRspOuterClass {
         return this;
       }
 
-      private int cLCIHLHKGLO_ ;
+      private int mHGHPFECMGD_ ;
       /**
-       * <code>uint32 CLCIHLHKGLO = 4;</code>
-       * @return The cLCIHLHKGLO.
+       * <code>uint32 MHGHPFECMGD = 11;</code>
+       * @return The mHGHPFECMGD.
        */
       @java.lang.Override
-      public int getCLCIHLHKGLO() {
-        return cLCIHLHKGLO_;
+      public int getMHGHPFECMGD() {
+        return mHGHPFECMGD_;
       }
       /**
-       * <code>uint32 CLCIHLHKGLO = 4;</code>
-       * @param value The cLCIHLHKGLO to set.
+       * <code>uint32 MHGHPFECMGD = 11;</code>
+       * @param value The mHGHPFECMGD to set.
        * @return This builder for chaining.
        */
-      public Builder setCLCIHLHKGLO(int value) {
+      public Builder setMHGHPFECMGD(int value) {
         
-        cLCIHLHKGLO_ = value;
+        mHGHPFECMGD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CLCIHLHKGLO = 4;</code>
+       * <code>uint32 MHGHPFECMGD = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCLCIHLHKGLO() {
+      public Builder clearMHGHPFECMGD() {
         
-        cLCIHLHKGLO_ = 0;
+        mHGHPFECMGD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curDayScanNum_ ;
+      /**
+       * <code>uint32 cur_day_scan_num = 15;</code>
+       * @return The curDayScanNum.
+       */
+      @java.lang.Override
+      public int getCurDayScanNum() {
+        return curDayScanNum_;
+      }
+      /**
+       * <code>uint32 cur_day_scan_num = 15;</code>
+       * @param value The curDayScanNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurDayScanNum(int value) {
+        
+        curDayScanNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_day_scan_num = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurDayScanNum() {
+        
+        curDayScanNum_ = 0;
         onChanged();
         return this;
       }
@@ -666,10 +664,10 @@ public final class BlessingScanRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025BlessingScanRsp.proto\"L\n\017BlessingScanR" +
-      "sp\022\023\n\013EAAMLKFJMKK\030\014 \001(\r\022\017\n\007retcode\030\003 \001(\005" +
-      "\022\023\n\013CLCIHLHKGLO\030\004 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\025BlessingScanRsp.proto\"Q\n\017BlessingScanR" +
+      "sp\022\017\n\007retcode\030\001 \001(\005\022\023\n\013MHGHPFECMGD\030\013 \001(\r" +
+      "\022\030\n\020cur_day_scan_num\030\017 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +678,7 @@ public final class BlessingScanRspOuterClass {
     internal_static_BlessingScanRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingScanRsp_descriptor,
-        new java.lang.String[] { "EAAMLKFJMKK", "Retcode", "CLCIHLHKGLO", });
+        new java.lang.String[] { "Retcode", "MHGHPFECMGD", "CurDayScanNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

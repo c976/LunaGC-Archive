@@ -19,33 +19,32 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord> 
         getRuneRecordListList();
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord getRuneRecordList(int index);
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     int getRuneRecordListCount();
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder> 
         getRuneRecordListOrBuilderList();
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder getRuneRecordListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 1760
-   * Obf: IPHIBIMNNHJ
+   * CmdId: 22452
    * </pre>
    *
    * Protobuf type {@code RoguelikeRuneRecordUpdateNotify}
@@ -94,7 +93,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 runeRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.RoguelikeRuneRecordUpdateNotifyOuterClass.RoguelikeRuneRecordUpdateNotify.class, emu.grasscutter.net.proto.RoguelikeRuneRecordUpdateNotifyOuterClass.RoguelikeRuneRecordUpdateNotify.Builder.class);
     }
 
-    public static final int RUNE_RECORD_LIST_FIELD_NUMBER = 11;
+    public static final int RUNE_RECORD_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord> runeRecordList_;
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord> getRuneRecordListList() {
       return runeRecordList_;
     }
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder> 
@@ -156,21 +155,21 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
       return runeRecordList_;
     }
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     @java.lang.Override
     public int getRuneRecordListCount() {
       return runeRecordList_.size();
     }
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord getRuneRecordList(int index) {
       return runeRecordList_.get(index);
     }
     /**
-     * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+     * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder getRuneRecordListOrBuilder(
@@ -193,7 +192,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < runeRecordList_.size(); i++) {
-        output.writeMessage(11, runeRecordList_.get(i));
+        output.writeMessage(12, runeRecordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
       size = 0;
       for (int i = 0; i < runeRecordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, runeRecordList_.get(i));
+          .computeMessageSize(12, runeRecordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1760
-     * Obf: IPHIBIMNNHJ
+     * CmdId: 22452
      * </pre>
      *
      * Protobuf type {@code RoguelikeRuneRecordUpdateNotify}
@@ -538,7 +536,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
           emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder> runeRecordListBuilder_;
 
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord> getRuneRecordListList() {
         if (runeRecordListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public int getRuneRecordListCount() {
         if (runeRecordListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord getRuneRecordList(int index) {
         if (runeRecordListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder setRuneRecordList(
           int index, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord value) {
@@ -585,7 +583,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder setRuneRecordList(
           int index, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder addRuneRecordList(emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord value) {
         if (runeRecordListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder addRuneRecordList(
           int index, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord value) {
@@ -632,7 +630,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder addRuneRecordList(
           emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder addRuneRecordList(
           int index, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder addAllRuneRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord> values) {
@@ -675,7 +673,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder clearRuneRecordList() {
         if (runeRecordListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public Builder removeRuneRecordList(int index) {
         if (runeRecordListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder getRuneRecordListBuilder(
           int index) {
         return getRuneRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder getRuneRecordListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecordOrBuilder> 
            getRuneRecordListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder addRuneRecordListBuilder() {
         return getRuneRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder addRuneRecordListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
             index, emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .RoguelikeRuneRecord rune_record_list = 11;</code>
+       * <code>repeated .RoguelikeRuneRecord rune_record_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RoguelikeRuneRecordOuterClass.RoguelikeRuneRecord.Builder> 
            getRuneRecordListBuilderList() {
@@ -834,7 +832,7 @@ public final class RoguelikeRuneRecordUpdateNotifyOuterClass {
       "\n%RoguelikeRuneRecordUpdateNotify.proto\032" +
       "\031RoguelikeRuneRecord.proto\"Q\n\037RoguelikeR" +
       "uneRecordUpdateNotify\022.\n\020rune_record_lis" +
-      "t\030\013 \003(\0132\024.RoguelikeRuneRecordB\033\n\031emu.gra" +
+      "t\030\014 \003(\0132\024.RoguelikeRuneRecordB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

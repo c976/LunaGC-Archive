@@ -19,37 +19,56 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 12;</code>
-     * @return The targetUid.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MatchType match_type = 8;</code>
+     * @return The enum numeric value on the wire for matchType.
      */
-    int getTargetUid();
+    int getMatchTypeValue();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MatchType match_type = 8;</code>
+     * @return The matchType.
+     */
+    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
 
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason();
 
     /**
-     * <code>.MatchType match_type = 2;</code>
-     * @return The enum numeric value on the wire for matchType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 target_uid = 14;</code>
+     * @return The targetUid.
      */
-    int getMatchTypeValue();
-    /**
-     * <code>.MatchType match_type = 2;</code>
-     * @return The matchType.
-     */
-    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
+    int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 29150
-   * Obf: FCOMIHCCKGM
+   * CmdId: 28194
    * </pre>
    *
    * Protobuf type {@code PlayerMatchAgreedResultNotify}
@@ -64,8 +83,8 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       super(builder);
     }
     private PlayerMatchAgreedResultNotify() {
-      reason_ = 0;
       matchType_ = 0;
+      reason_ = 0;
     }
 
     @java.lang.Override
@@ -98,19 +117,19 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-              int rawValue = input.readEnum();
-
-              matchType_ = rawValue;
-              break;
-            }
-            case 32: {
+            case 56: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 96: {
+            case 64: {
+              int rawValue = input.readEnum();
+
+              matchType_ = rawValue;
+              break;
+            }
+            case 112: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -148,57 +167,53 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     * Obf: NILJADMMOMK
-     * </pre>
-     *
      * Protobuf enum {@code PlayerMatchAgreedResultNotify.Reason}
      */
     public enum Reason
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>SUCC = 0;</code>
+       * <code>MPDECIPPHJG_SUCC = 0;</code>
        */
-      SUCC(0),
+      MPDECIPPHJG_SUCC(0),
       /**
-       * <code>TARGET_SCENE_CANNOT_ENTER = 1;</code>
+       * <code>MPDECIPPHJG_TARGET_SCENE_CANNOT_ENTER = 1;</code>
        */
-      TARGET_SCENE_CANNOT_ENTER(1),
+      MPDECIPPHJG_TARGET_SCENE_CANNOT_ENTER(1),
       /**
-       * <code>SELF_MP_UNAVAILABLE = 2;</code>
+       * <code>MPDECIPPHJG_SELF_MP_UNAVAILABLE = 2;</code>
        */
-      SELF_MP_UNAVAILABLE(2),
+      MPDECIPPHJG_SELF_MP_UNAVAILABLE(2),
       /**
-       * <code>OTHER_DATA_VERSION_NOT_LATEST = 3;</code>
+       * <code>MPDECIPPHJG_OTHER_DATA_VERSION_NOT_LATEST = 3;</code>
        */
-      OTHER_DATA_VERSION_NOT_LATEST(3),
+      MPDECIPPHJG_OTHER_DATA_VERSION_NOT_LATEST(3),
       /**
-       * <code>DATA_VERSION_NOT_LATEST = 4;</code>
+       * <code>MPDECIPPHJG_DATA_VERSION_NOT_LATEST = 4;</code>
        */
-      DATA_VERSION_NOT_LATEST(4),
+      MPDECIPPHJG_DATA_VERSION_NOT_LATEST(4),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>SUCC = 0;</code>
+       * <code>MPDECIPPHJG_SUCC = 0;</code>
        */
-      public static final int SUCC_VALUE = 0;
+      public static final int MPDECIPPHJG_SUCC_VALUE = 0;
       /**
-       * <code>TARGET_SCENE_CANNOT_ENTER = 1;</code>
+       * <code>MPDECIPPHJG_TARGET_SCENE_CANNOT_ENTER = 1;</code>
        */
-      public static final int TARGET_SCENE_CANNOT_ENTER_VALUE = 1;
+      public static final int MPDECIPPHJG_TARGET_SCENE_CANNOT_ENTER_VALUE = 1;
       /**
-       * <code>SELF_MP_UNAVAILABLE = 2;</code>
+       * <code>MPDECIPPHJG_SELF_MP_UNAVAILABLE = 2;</code>
        */
-      public static final int SELF_MP_UNAVAILABLE_VALUE = 2;
+      public static final int MPDECIPPHJG_SELF_MP_UNAVAILABLE_VALUE = 2;
       /**
-       * <code>OTHER_DATA_VERSION_NOT_LATEST = 3;</code>
+       * <code>MPDECIPPHJG_OTHER_DATA_VERSION_NOT_LATEST = 3;</code>
        */
-      public static final int OTHER_DATA_VERSION_NOT_LATEST_VALUE = 3;
+      public static final int MPDECIPPHJG_OTHER_DATA_VERSION_NOT_LATEST_VALUE = 3;
       /**
-       * <code>DATA_VERSION_NOT_LATEST = 4;</code>
+       * <code>MPDECIPPHJG_DATA_VERSION_NOT_LATEST = 4;</code>
        */
-      public static final int DATA_VERSION_NOT_LATEST_VALUE = 4;
+      public static final int MPDECIPPHJG_DATA_VERSION_NOT_LATEST_VALUE = 4;
 
 
       public final int getNumber() {
@@ -225,11 +240,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
        */
       public static Reason forNumber(int value) {
         switch (value) {
-          case 0: return SUCC;
-          case 1: return TARGET_SCENE_CANNOT_ENTER;
-          case 2: return SELF_MP_UNAVAILABLE;
-          case 3: return OTHER_DATA_VERSION_NOT_LATEST;
-          case 4: return DATA_VERSION_NOT_LATEST;
+          case 0: return MPDECIPPHJG_SUCC;
+          case 1: return MPDECIPPHJG_TARGET_SCENE_CANNOT_ENTER;
+          case 2: return MPDECIPPHJG_SELF_MP_UNAVAILABLE;
+          case 3: return MPDECIPPHJG_OTHER_DATA_VERSION_NOT_LATEST;
+          case 4: return MPDECIPPHJG_DATA_VERSION_NOT_LATEST;
           default: return null;
         }
       }
@@ -286,28 +301,52 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:PlayerMatchAgreedResultNotify.Reason)
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 12;
-    private int targetUid_;
+    public static final int MATCH_TYPE_FIELD_NUMBER = 8;
+    private int matchType_;
     /**
-     * <code>uint32 target_uid = 12;</code>
-     * @return The targetUid.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MatchType match_type = 8;</code>
+     * @return The enum numeric value on the wire for matchType.
      */
-    @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
+    @java.lang.Override public int getMatchTypeValue() {
+      return matchType_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MatchType match_type = 8;</code>
+     * @return The matchType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
+      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
     }
 
-    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_FIELD_NUMBER = 7;
     private int reason_;
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason() {
@@ -316,23 +355,19 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.UNRECOGNIZED : result;
     }
 
-    public static final int MATCH_TYPE_FIELD_NUMBER = 2;
-    private int matchType_;
+    public static final int TARGET_UID_FIELD_NUMBER = 14;
+    private int targetUid_;
     /**
-     * <code>.MatchType match_type = 2;</code>
-     * @return The enum numeric value on the wire for matchType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 target_uid = 14;</code>
+     * @return The targetUid.
      */
-    @java.lang.Override public int getMatchTypeValue() {
-      return matchType_;
-    }
-    /**
-     * <code>.MatchType match_type = 2;</code>
-     * @return The matchType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
-      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getTargetUid() {
+      return targetUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -349,14 +384,14 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(2, matchType_);
+      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.MPDECIPPHJG_SUCC.getNumber()) {
+        output.writeEnum(7, reason_);
       }
-      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
-        output.writeEnum(4, reason_);
+      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
+        output.writeEnum(8, matchType_);
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(12, targetUid_);
+        output.writeUInt32(14, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -367,17 +402,17 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.MPDECIPPHJG_SUCC.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(7, reason_);
+      }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, matchType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, reason_);
+          .computeEnumSize(8, matchType_);
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, targetUid_);
+          .computeUInt32Size(14, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -394,10 +429,10 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify other = (emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify) obj;
 
+      if (matchType_ != other.matchType_) return false;
+      if (reason_ != other.reason_) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (reason_ != other.reason_) return false;
-      if (matchType_ != other.matchType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -409,12 +444,12 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,8 +547,7 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29150
-     * Obf: FCOMIHCCKGM
+     * CmdId: 28194
      * </pre>
      *
      * Protobuf type {@code PlayerMatchAgreedResultNotify}
@@ -553,11 +587,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
+        matchType_ = 0;
 
         reason_ = 0;
 
-        matchType_ = 0;
+        targetUid_ = 0;
 
         return this;
       }
@@ -585,9 +619,9 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify result = new emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify(this);
-        result.targetUid_ = targetUid_;
-        result.reason_ = reason_;
         result.matchType_ = matchType_;
+        result.reason_ = reason_;
+        result.targetUid_ = targetUid_;
         onBuilt();
         return result;
       }
@@ -636,14 +670,14 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
+        if (other.matchType_ != 0) {
+          setMatchTypeValue(other.getMatchTypeValue());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.matchType_ != 0) {
-          setMatchTypeValue(other.getMatchTypeValue());
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -674,101 +708,24 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason result = emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int matchType_ = 0;
       /**
-       * <code>.MatchType match_type = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MatchType match_type = 8;</code>
        * @return The enum numeric value on the wire for matchType.
        */
       @java.lang.Override public int getMatchTypeValue() {
         return matchType_;
       }
       /**
-       * <code>.MatchType match_type = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MatchType match_type = 8;</code>
        * @param value The enum numeric value on the wire for matchType to set.
        * @return This builder for chaining.
        */
@@ -779,7 +736,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MatchType match_type = 8;</code>
        * @return The matchType.
        */
       @java.lang.Override
@@ -789,7 +750,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchType match_type = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MatchType match_type = 8;</code>
        * @param value The matchType to set.
        * @return This builder for chaining.
        */
@@ -803,12 +768,133 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MatchType match_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchType() {
         
         matchType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason result = emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+        
+        targetUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 target_uid = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetUid() {
+        
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -880,28 +966,32 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#PlayerMatchAgreedResultNotify.proto\032\017M" +
-      "atchType.proto\"\227\002\n\035PlayerMatchAgreedResu" +
-      "ltNotify\022\022\n\ntarget_uid\030\014 \001(\r\0225\n\006reason\030\004" +
-      " \001(\0162%.PlayerMatchAgreedResultNotify.Rea" +
-      "son\022\036\n\nmatch_type\030\002 \001(\0162\n.MatchType\"\212\001\n\006" +
-      "Reason\022\010\n\004SUCC\020\000\022\035\n\031TARGET_SCENE_CANNOT_" +
-      "ENTER\020\001\022\027\n\023SELF_MP_UNAVAILABLE\020\002\022!\n\035OTHE" +
-      "R_DATA_VERSION_NOT_LATEST\020\003\022\033\n\027DATA_VERS" +
-      "ION_NOT_LATEST\020\004B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "atchType.proto\032\014Reason.proto\"\323\002\n\035PlayerM" +
+      "atchAgreedResultNotify\022\036\n\nmatch_type\030\010 \001" +
+      "(\0162\n.MatchType\0225\n\006reason\030\007 \001(\0162%.PlayerM" +
+      "atchAgreedResultNotify.Reason\022\022\n\ntarget_" +
+      "uid\030\016 \001(\r\"\306\001\n\006Reason\022\024\n\020MPDECIPPHJG_SUCC" +
+      "\020\000\022)\n%MPDECIPPHJG_TARGET_SCENE_CANNOT_EN" +
+      "TER\020\001\022#\n\037MPDECIPPHJG_SELF_MP_UNAVAILABLE" +
+      "\020\002\022-\n)MPDECIPPHJG_OTHER_DATA_VERSION_NOT" +
+      "_LATEST\020\003\022\'\n#MPDECIPPHJG_DATA_VERSION_NO" +
+      "T_LATEST\020\004B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor(),
         });
     internal_static_PlayerMatchAgreedResultNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerMatchAgreedResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMatchAgreedResultNotify_descriptor,
-        new java.lang.String[] { "TargetUid", "Reason", "MatchType", });
+        new java.lang.String[] { "MatchType", "Reason", "TargetUid", });
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

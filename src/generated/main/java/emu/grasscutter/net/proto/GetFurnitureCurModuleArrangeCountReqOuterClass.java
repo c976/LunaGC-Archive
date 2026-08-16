@@ -19,6 +19,10 @@ public final class GetFurnitureCurModuleArrangeCountReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 20972
+   * </pre>
+   *
    * Protobuf type {@code GetFurnitureCurModuleArrangeCountReq}
    */
   public static final class GetFurnitureCurModuleArrangeCountReq extends
@@ -240,6 +244,10 @@ public final class GetFurnitureCurModuleArrangeCountReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20972
+     * </pre>
+     *
      * Protobuf type {@code GetFurnitureCurModuleArrangeCountReq}
      */
     public static final class Builder extends

@@ -19,69 +19,117 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @return A list containing the kEIPFLNICIB.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
-    java.util.List<java.lang.Integer> getKEIPFLNICIBList();
-    /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @return The count of kEIPFLNICIB.
-     */
-    int getKEIPFLNICIBCount();
-    /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @param index The index of the element to return.
-     * @return The kEIPFLNICIB at the given index.
-     */
-    int getKEIPFLNICIB(int index);
-
-    /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> 
+    java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> 
         getTeamInfoListList();
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD getTeamInfoList(int index);
+    emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG getTeamInfoList(int index);
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     int getTeamInfoListCount();
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder> 
         getTeamInfoListOrBuilderList();
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder getTeamInfoListOrBuilder(
+    emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder getTeamInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @return A list containing the jIEFNIOIEPJ.
      */
-    int getDifficulty();
+    java.util.List<java.lang.Integer> getJIEFNIOIEPJList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @return The count of jIEFNIOIEPJ.
+     */
+    int getJIEFNIOIEPJCount();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @param index The index of the element to return.
+     * @return The jIEFNIOIEPJ at the given index.
+     */
+    int getJIEFNIOIEPJ(int index);
 
     /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 5;</code>
+     * @return The stageId.
      */
-    int getLevelId();
+    int getStageId();
 
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 stage_id = 10;</code>
-     * @return The stageId.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
-    int getStageId();
+    int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty = 7;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
   }
   /**
    * Protobuf type {@code MultiCharacterDungeonSettleInfo}
@@ -96,8 +144,8 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       super(builder);
     }
     private MultiCharacterDungeonSettleInfo() {
-      kEIPFLNICIB_ = emptyIntList();
       teamInfoList_ = java.util.Collections.emptyList();
+      jIEFNIOIEPJ_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -131,14 +179,44 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              teamInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.parser(), extensionRegistry));
+              break;
+            }
             case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                jIEFNIOIEPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              jIEFNIOIEPJ_.addInt(input.readUInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                jIEFNIOIEPJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                jIEFNIOIEPJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 32: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 40: {
 
-              isNewRecord_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -146,39 +224,9 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
               difficulty_ = input.readUInt32();
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              teamInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                kEIPFLNICIB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              kEIPFLNICIB_.addInt(input.readUInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                kEIPFLNICIB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                kEIPFLNICIB_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 80: {
+            case 96: {
 
-              stageId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -196,11 +244,11 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           teamInfoList_ = java.util.Collections.unmodifiableList(teamInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          kEIPFLNICIB_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          jIEFNIOIEPJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -219,100 +267,129 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.class, emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder.class);
     }
 
-    public static final int KEIPFLNICIB_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList kEIPFLNICIB_;
+    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> teamInfoList_;
     /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @return A list containing the kEIPFLNICIB.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getKEIPFLNICIBList() {
-      return kEIPFLNICIB_;
-    }
-    /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @return The count of kEIPFLNICIB.
-     */
-    public int getKEIPFLNICIBCount() {
-      return kEIPFLNICIB_.size();
-    }
-    /**
-     * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-     * @param index The index of the element to return.
-     * @return The kEIPFLNICIB at the given index.
-     */
-    public int getKEIPFLNICIB(int index) {
-      return kEIPFLNICIB_.getInt(index);
-    }
-    private int kEIPFLNICIBMemoizedSerializedSize = -1;
-
-    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> teamInfoList_;
-    /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> getTeamInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> getTeamInfoListList() {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder> 
         getTeamInfoListOrBuilderList() {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     @java.lang.Override
     public int getTeamInfoListCount() {
       return teamInfoList_.size();
     }
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD getTeamInfoList(int index) {
+    public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG getTeamInfoList(int index) {
       return teamInfoList_.get(index);
     }
     /**
-     * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder getTeamInfoListOrBuilder(
+    public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder getTeamInfoListOrBuilder(
         int index) {
       return teamInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 7;
-    private int difficulty_;
+    public static final int JIEFNIOIEPJ_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList jIEFNIOIEPJ_;
     /**
-     * <code>uint32 difficulty = 7;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @return A list containing the jIEFNIOIEPJ.
      */
     @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
+    public java.util.List<java.lang.Integer>
+        getJIEFNIOIEPJList() {
+      return jIEFNIOIEPJ_;
     }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
-    private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @return The count of jIEFNIOIEPJ.
+     */
+    public int getJIEFNIOIEPJCount() {
+      return jIEFNIOIEPJ_.size();
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+     * @param index The index of the element to return.
+     * @return The jIEFNIOIEPJ at the given index.
+     */
+    public int getJIEFNIOIEPJ(int index) {
+      return jIEFNIOIEPJ_.getInt(index);
+    }
+    private int jIEFNIOIEPJMemoizedSerializedSize = -1;
+
+    public static final int STAGE_ID_FIELD_NUMBER = 5;
+    private int stageId_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 5;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getStageId() {
+      return stageId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -320,15 +397,34 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 10;
-    private int stageId_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    private int levelId_;
     /**
-     * <code>uint32 stage_id = 10;</code>
-     * @return The stageId.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getStageId() {
-      return stageId_;
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 7;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty = 7;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -346,27 +442,27 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+      for (int i = 0; i < teamInfoList_.size(); i++) {
+        output.writeMessage(1, teamInfoList_.get(i));
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
+      if (getJIEFNIOIEPJList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(jIEFNIOIEPJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < jIEFNIOIEPJ_.size(); i++) {
+        output.writeUInt32NoTag(jIEFNIOIEPJ_.getInt(i));
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(4, levelId_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(5, stageId_);
       }
       if (difficulty_ != 0) {
         output.writeUInt32(7, difficulty_);
       }
-      for (int i = 0; i < teamInfoList_.size(); i++) {
-        output.writeMessage(8, teamInfoList_.get(i));
-      }
-      if (getKEIPFLNICIBList().size() > 0) {
-        output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(kEIPFLNICIBMemoizedSerializedSize);
-      }
-      for (int i = 0; i < kEIPFLNICIB_.size(); i++) {
-        output.writeUInt32NoTag(kEIPFLNICIB_.getInt(i));
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(10, stageId_);
+      if (isNewRecord_ != false) {
+        output.writeBool(12, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -377,39 +473,39 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < teamInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, teamInfoList_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < jIEFNIOIEPJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(jIEFNIOIEPJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getJIEFNIOIEPJList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        jIEFNIOIEPJMemoizedSerializedSize = dataSize;
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(4, levelId_);
       }
-      if (isNewRecord_ != false) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
+          .computeUInt32Size(5, stageId_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, difficulty_);
       }
-      for (int i = 0; i < teamInfoList_.size(); i++) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, teamInfoList_.get(i));
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < kEIPFLNICIB_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(kEIPFLNICIB_.getInt(i));
-        }
-        size += dataSize;
-        if (!getKEIPFLNICIBList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        kEIPFLNICIBMemoizedSerializedSize = dataSize;
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, stageId_);
+          .computeBoolSize(12, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -426,18 +522,18 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo other = (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) obj;
 
-      if (!getKEIPFLNICIBList()
-          .equals(other.getKEIPFLNICIBList())) return false;
       if (!getTeamInfoListList()
           .equals(other.getTeamInfoListList())) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
+      if (!getJIEFNIOIEPJList()
+          .equals(other.getJIEFNIOIEPJList())) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -449,23 +545,23 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getKEIPFLNICIBCount() > 0) {
-        hash = (37 * hash) + KEIPFLNICIB_FIELD_NUMBER;
-        hash = (53 * hash) + getKEIPFLNICIBList().hashCode();
-      }
       if (getTeamInfoListCount() > 0) {
         hash = (37 * hash) + TEAM_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTeamInfoListList().hashCode();
       }
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      if (getJIEFNIOIEPJCount() > 0) {
+        hash = (37 * hash) + JIEFNIOIEPJ_FIELD_NUMBER;
+        hash = (53 * hash) + getJIEFNIOIEPJList().hashCode();
+      }
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -600,21 +696,21 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kEIPFLNICIB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (teamInfoListBuilder_ == null) {
           teamInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           teamInfoListBuilder_.clear();
         }
-        difficulty_ = 0;
-
-        levelId_ = 0;
+        jIEFNIOIEPJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stageId_ = 0;
 
         isNewRecord_ = false;
 
-        stageId_ = 0;
+        levelId_ = 0;
+
+        difficulty_ = 0;
 
         return this;
       }
@@ -643,24 +739,24 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo result = new emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          kEIPFLNICIB_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.kEIPFLNICIB_ = kEIPFLNICIB_;
         if (teamInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             teamInfoList_ = java.util.Collections.unmodifiableList(teamInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.teamInfoList_ = teamInfoList_;
         } else {
           result.teamInfoList_ = teamInfoListBuilder_.build();
         }
-        result.difficulty_ = difficulty_;
-        result.levelId_ = levelId_;
-        result.isNewRecord_ = isNewRecord_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          jIEFNIOIEPJ_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.jIEFNIOIEPJ_ = jIEFNIOIEPJ_;
         result.stageId_ = stageId_;
+        result.isNewRecord_ = isNewRecord_;
+        result.levelId_ = levelId_;
+        result.difficulty_ = difficulty_;
         onBuilt();
         return result;
       }
@@ -709,21 +805,11 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance()) return this;
-        if (!other.kEIPFLNICIB_.isEmpty()) {
-          if (kEIPFLNICIB_.isEmpty()) {
-            kEIPFLNICIB_ = other.kEIPFLNICIB_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureKEIPFLNICIBIsMutable();
-            kEIPFLNICIB_.addAll(other.kEIPFLNICIB_);
-          }
-          onChanged();
-        }
         if (teamInfoListBuilder_ == null) {
           if (!other.teamInfoList_.isEmpty()) {
             if (teamInfoList_.isEmpty()) {
               teamInfoList_ = other.teamInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureTeamInfoListIsMutable();
               teamInfoList_.addAll(other.teamInfoList_);
@@ -736,7 +822,7 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
               teamInfoListBuilder_.dispose();
               teamInfoListBuilder_ = null;
               teamInfoList_ = other.teamInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               teamInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getTeamInfoListFieldBuilder() : null;
@@ -745,17 +831,27 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
             }
           }
         }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (!other.jIEFNIOIEPJ_.isEmpty()) {
+          if (jIEFNIOIEPJ_.isEmpty()) {
+            jIEFNIOIEPJ_ = other.jIEFNIOIEPJ_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureJIEFNIOIEPJIsMutable();
+            jIEFNIOIEPJ_.addAll(other.jIEFNIOIEPJ_);
+          }
+          onChanged();
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -787,101 +883,26 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList kEIPFLNICIB_ = emptyIntList();
-      private void ensureKEIPFLNICIBIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          kEIPFLNICIB_ = mutableCopy(kEIPFLNICIB_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @return A list containing the kEIPFLNICIB.
-       */
-      public java.util.List<java.lang.Integer>
-          getKEIPFLNICIBList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(kEIPFLNICIB_) : kEIPFLNICIB_;
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @return The count of kEIPFLNICIB.
-       */
-      public int getKEIPFLNICIBCount() {
-        return kEIPFLNICIB_.size();
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @param index The index of the element to return.
-       * @return The kEIPFLNICIB at the given index.
-       */
-      public int getKEIPFLNICIB(int index) {
-        return kEIPFLNICIB_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The kEIPFLNICIB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKEIPFLNICIB(
-          int index, int value) {
-        ensureKEIPFLNICIBIsMutable();
-        kEIPFLNICIB_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @param value The kEIPFLNICIB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addKEIPFLNICIB(int value) {
-        ensureKEIPFLNICIBIsMutable();
-        kEIPFLNICIB_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @param values The kEIPFLNICIB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllKEIPFLNICIB(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureKEIPFLNICIBIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, kEIPFLNICIB_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 KEIPFLNICIB = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKEIPFLNICIB() {
-        kEIPFLNICIB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> teamInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> teamInfoList_ =
         java.util.Collections.emptyList();
       private void ensureTeamInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD>(teamInfoList_);
-          bitField0_ |= 0x00000002;
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG>(teamInfoList_);
+          bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder> teamInfoListBuilder_;
+          emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder> teamInfoListBuilder_;
 
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> getTeamInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> getTeamInfoListList() {
         if (teamInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(teamInfoList_);
         } else {
@@ -889,7 +910,11 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public int getTeamInfoListCount() {
         if (teamInfoListBuilder_ == null) {
@@ -899,9 +924,13 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD getTeamInfoList(int index) {
+      public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG getTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
           return teamInfoList_.get(index);
         } else {
@@ -909,10 +938,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder setTeamInfoList(
-          int index, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD value) {
+          int index, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG value) {
         if (teamInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -926,10 +959,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder setTeamInfoList(
-          int index, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder builderForValue) {
         if (teamInfoListBuilder_ == null) {
           ensureTeamInfoListIsMutable();
           teamInfoList_.set(index, builderForValue.build());
@@ -940,9 +977,13 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public Builder addTeamInfoList(emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD value) {
+      public Builder addTeamInfoList(emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG value) {
         if (teamInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -956,10 +997,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder addTeamInfoList(
-          int index, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD value) {
+          int index, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG value) {
         if (teamInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -973,10 +1018,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder addTeamInfoList(
-          emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder builderForValue) {
+          emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder builderForValue) {
         if (teamInfoListBuilder_ == null) {
           ensureTeamInfoListIsMutable();
           teamInfoList_.add(builderForValue.build());
@@ -987,10 +1036,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder addTeamInfoList(
-          int index, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder builderForValue) {
         if (teamInfoListBuilder_ == null) {
           ensureTeamInfoListIsMutable();
           teamInfoList_.add(index, builderForValue.build());
@@ -1001,10 +1054,14 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder addAllTeamInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG> values) {
         if (teamInfoListBuilder_ == null) {
           ensureTeamInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1016,12 +1073,16 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder clearTeamInfoList() {
         if (teamInfoListBuilder_ == null) {
           teamInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           teamInfoListBuilder_.clear();
@@ -1029,7 +1090,11 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
       public Builder removeTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
@@ -1042,16 +1107,24 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder getTeamInfoListBuilder(
+      public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder getTeamInfoListBuilder(
           int index) {
         return getTeamInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder getTeamInfoListOrBuilder(
+      public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder getTeamInfoListOrBuilder(
           int index) {
         if (teamInfoListBuilder_ == null) {
           return teamInfoList_.get(index);  } else {
@@ -1059,9 +1132,13 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder> 
            getTeamInfoListOrBuilderList() {
         if (teamInfoListBuilder_ != null) {
           return teamInfoListBuilder_.getMessageOrBuilderList();
@@ -1070,35 +1147,47 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder addTeamInfoListBuilder() {
+      public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder addTeamInfoListBuilder() {
         return getTeamInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.getDefaultInstance());
+            emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.getDefaultInstance());
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder addTeamInfoListBuilder(
+      public emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder addTeamInfoListBuilder(
           int index) {
         return getTeamInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.getDefaultInstance());
+            index, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.getDefaultInstance());
       }
       /**
-       * <code>repeated .KAMFKKLECKD team_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CLGOCHHDEIG team_info_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder> 
            getTeamInfoListBuilderList() {
         return getTeamInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder> 
+          emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder> 
           getTeamInfoListFieldBuilder() {
         if (teamInfoListBuilder_ == null) {
           teamInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKD.Builder, emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.KAMFKKLECKDOrBuilder>(
+              emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIG.Builder, emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.CLGOCHHDEIGOrBuilder>(
                   teamInfoList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           teamInfoList_ = null;
@@ -1106,8 +1195,248 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return teamInfoListBuilder_;
       }
 
+      private com.google.protobuf.Internal.IntList jIEFNIOIEPJ_ = emptyIntList();
+      private void ensureJIEFNIOIEPJIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          jIEFNIOIEPJ_ = mutableCopy(jIEFNIOIEPJ_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @return A list containing the jIEFNIOIEPJ.
+       */
+      public java.util.List<java.lang.Integer>
+          getJIEFNIOIEPJList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(jIEFNIOIEPJ_) : jIEFNIOIEPJ_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @return The count of jIEFNIOIEPJ.
+       */
+      public int getJIEFNIOIEPJCount() {
+        return jIEFNIOIEPJ_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @param index The index of the element to return.
+       * @return The jIEFNIOIEPJ at the given index.
+       */
+      public int getJIEFNIOIEPJ(int index) {
+        return jIEFNIOIEPJ_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The jIEFNIOIEPJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJIEFNIOIEPJ(
+          int index, int value) {
+        ensureJIEFNIOIEPJIsMutable();
+        jIEFNIOIEPJ_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @param value The jIEFNIOIEPJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addJIEFNIOIEPJ(int value) {
+        ensureJIEFNIOIEPJIsMutable();
+        jIEFNIOIEPJ_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @param values The jIEFNIOIEPJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllJIEFNIOIEPJ(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureJIEFNIOIEPJIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, jIEFNIOIEPJ_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 JIEFNIOIEPJ = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJIEFNIOIEPJ() {
+        jIEFNIOIEPJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 5;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 5;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int difficulty_ ;
       /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
        * <code>uint32 difficulty = 7;</code>
        * @return The difficulty.
        */
@@ -1116,6 +1445,10 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
        * <code>uint32 difficulty = 7;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
@@ -1127,105 +1460,16 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
        * <code>uint32 difficulty = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 10;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 10;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1297,25 +1541,25 @@ public final class MultiCharacterDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%MultiCharacterDungeonSettleInfo.proto\032" +
-      "\021KAMFKKLECKD.proto\"\253\001\n\037MultiCharacterDun" +
-      "geonSettleInfo\022\023\n\013KEIPFLNICIB\030\t \003(\r\022$\n\016t" +
-      "eam_info_list\030\010 \003(\0132\014.KAMFKKLECKD\022\022\n\ndif" +
-      "ficulty\030\007 \001(\r\022\020\n\010level_id\030\002 \001(\r\022\025\n\ris_ne" +
-      "w_record\030\003 \001(\010\022\020\n\010stage_id\030\n \001(\rB\033\n\031emu." +
+      "\021CLGOCHHDEIG.proto\"\253\001\n\037MultiCharacterDun" +
+      "geonSettleInfo\022$\n\016team_info_list\030\001 \003(\0132\014" +
+      ".CLGOCHHDEIG\022\023\n\013JIEFNIOIEPJ\030\002 \003(\r\022\020\n\010sta" +
+      "ge_id\030\005 \001(\r\022\025\n\ris_new_record\030\014 \001(\010\022\020\n\010le" +
+      "vel_id\030\004 \001(\r\022\022\n\ndifficulty\030\007 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.getDescriptor(),
         });
     internal_static_MultiCharacterDungeonSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_MultiCharacterDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MultiCharacterDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "KEIPFLNICIB", "TeamInfoList", "Difficulty", "LevelId", "IsNewRecord", "StageId", });
-    emu.grasscutter.net.proto.KAMFKKLECKDOuterClass.getDescriptor();
+        new java.lang.String[] { "TeamInfoList", "JIEFNIOIEPJ", "StageId", "IsNewRecord", "LevelId", "Difficulty", });
+    emu.grasscutter.net.proto.CLGOCHHDEIGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

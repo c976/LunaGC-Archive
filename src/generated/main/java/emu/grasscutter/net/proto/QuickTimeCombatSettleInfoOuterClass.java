@@ -19,45 +19,45 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-     * @return A list containing the oKKMCNFKOOP.
+     * <code>bool is_new_record = 2;</code>
+     * @return The isNewRecord.
      */
-    java.util.List<java.lang.Integer> getOKKMCNFKOOPList();
+    boolean getIsNewRecord();
+
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-     * @return The count of oKKMCNFKOOP.
+     * <code>uint32 total_score = 3;</code>
+     * @return The totalScore.
      */
-    int getOKKMCNFKOOPCount();
+    int getTotalScore();
+
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+     * @return A list containing the nNHIJGGGIKN.
+     */
+    java.util.List<java.lang.Integer> getNNHIJGGGIKNList();
+    /**
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+     * @return The count of nNHIJGGGIKN.
+     */
+    int getNNHIJGGGIKNCount();
+    /**
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
      * @param index The index of the element to return.
-     * @return The oKKMCNFKOOP at the given index.
+     * @return The nNHIJGGGIKN at the given index.
      */
-    int getOKKMCNFKOOP(int index);
+    int getNNHIJGGGIKN(int index);
 
     /**
      * <code>uint32 difficulty = 15;</code>
      * @return The difficulty.
      */
     int getDifficulty();
-
-    /**
-     * <code>uint32 stage_id = 4;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 total_score = 1;</code>
-     * @return The totalScore.
-     */
-    int getTotalScore();
-
-    /**
-     * <code>bool is_new_record = 13;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code QuickTimeCombatSettleInfo}
@@ -72,7 +72,7 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       super(builder);
     }
     private QuickTimeCombatSettleInfo() {
-      oKKMCNFKOOP_ = emptyIntList();
+      nNHIJGGGIKN_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -106,40 +106,40 @@ public final class QuickTimeCombatSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 24: {
 
               totalScore_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 48: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oKKMCNFKOOP_ = newIntList();
+                nNHIJGGGIKN_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              oKKMCNFKOOP_.addInt(input.readUInt32());
+              nNHIJGGGIKN_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                oKKMCNFKOOP_ = newIntList();
+                nNHIJGGGIKN_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oKKMCNFKOOP_.addInt(input.readUInt32());
+                nNHIJGGGIKN_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 104: {
-
-              isNewRecord_ = input.readBool();
               break;
             }
             case 120: {
@@ -163,7 +163,7 @@ public final class QuickTimeCombatSettleInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          oKKMCNFKOOP_.makeImmutable(); // C
+          nNHIJGGGIKN_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -182,33 +182,66 @@ public final class QuickTimeCombatSettleInfoOuterClass {
               emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.class, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder.class);
     }
 
-    public static final int OKKMCNFKOOP_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList oKKMCNFKOOP_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
+    private boolean isNewRecord_;
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-     * @return A list containing the oKKMCNFKOOP.
+     * <code>bool is_new_record = 2;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int TOTAL_SCORE_FIELD_NUMBER = 3;
+    private int totalScore_;
+    /**
+     * <code>uint32 total_score = 3;</code>
+     * @return The totalScore.
+     */
+    @java.lang.Override
+    public int getTotalScore() {
+      return totalScore_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 6;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int NNHIJGGGIKN_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList nNHIJGGGIKN_;
+    /**
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+     * @return A list containing the nNHIJGGGIKN.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOKKMCNFKOOPList() {
-      return oKKMCNFKOOP_;
+        getNNHIJGGGIKNList() {
+      return nNHIJGGGIKN_;
     }
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-     * @return The count of oKKMCNFKOOP.
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+     * @return The count of nNHIJGGGIKN.
      */
-    public int getOKKMCNFKOOPCount() {
-      return oKKMCNFKOOP_.size();
+    public int getNNHIJGGGIKNCount() {
+      return nNHIJGGGIKN_.size();
     }
     /**
-     * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
+     * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
      * @param index The index of the element to return.
-     * @return The oKKMCNFKOOP at the given index.
+     * @return The nNHIJGGGIKN at the given index.
      */
-    public int getOKKMCNFKOOP(int index) {
-      return oKKMCNFKOOP_.getInt(index);
+    public int getNNHIJGGGIKN(int index) {
+      return nNHIJGGGIKN_.getInt(index);
     }
-    private int oKKMCNFKOOPMemoizedSerializedSize = -1;
+    private int nNHIJGGGIKNMemoizedSerializedSize = -1;
 
     public static final int DIFFICULTY_FIELD_NUMBER = 15;
     private int difficulty_;
@@ -219,39 +252,6 @@ public final class QuickTimeCombatSettleInfoOuterClass {
     @java.lang.Override
     public int getDifficulty() {
       return difficulty_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 4;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 4;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 1;
-    private int totalScore_;
-    /**
-     * <code>uint32 total_score = 1;</code>
-     * @return The totalScore.
-     */
-    @java.lang.Override
-    public int getTotalScore() {
-      return totalScore_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 13;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,21 +269,21 @@ public final class QuickTimeCombatSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (isNewRecord_ != false) {
+        output.writeBool(2, isNewRecord_);
+      }
       if (totalScore_ != 0) {
-        output.writeUInt32(1, totalScore_);
+        output.writeUInt32(3, totalScore_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(4, stageId_);
+        output.writeUInt32(6, stageId_);
       }
-      if (getOKKMCNFKOOPList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(oKKMCNFKOOPMemoizedSerializedSize);
+      if (getNNHIJGGGIKNList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(nNHIJGGGIKNMemoizedSerializedSize);
       }
-      for (int i = 0; i < oKKMCNFKOOP_.size(); i++) {
-        output.writeUInt32NoTag(oKKMCNFKOOP_.getInt(i));
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(13, isNewRecord_);
+      for (int i = 0; i < nNHIJGGGIKN_.size(); i++) {
+        output.writeUInt32NoTag(nNHIJGGGIKN_.getInt(i));
       }
       if (difficulty_ != 0) {
         output.writeUInt32(15, difficulty_);
@@ -297,31 +297,31 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isNewRecord_);
+      }
       if (totalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, totalScore_);
+          .computeUInt32Size(3, totalScore_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, stageId_);
+          .computeUInt32Size(6, stageId_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < oKKMCNFKOOP_.size(); i++) {
+        for (int i = 0; i < nNHIJGGGIKN_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oKKMCNFKOOP_.getInt(i));
+            .computeUInt32SizeNoTag(nNHIJGGGIKN_.getInt(i));
         }
         size += dataSize;
-        if (!getOKKMCNFKOOPList().isEmpty()) {
+        if (!getNNHIJGGGIKNList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oKKMCNFKOOPMemoizedSerializedSize = dataSize;
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isNewRecord_);
+        nNHIJGGGIKNMemoizedSerializedSize = dataSize;
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -342,16 +342,16 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo other = (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) obj;
 
-      if (!getOKKMCNFKOOPList()
-          .equals(other.getOKKMCNFKOOPList())) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getTotalScore()
-          != other.getTotalScore()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getTotalScore()
+          != other.getTotalScore()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (!getNNHIJGGGIKNList()
+          .equals(other.getNNHIJGGGIKNList())) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,19 +363,19 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOKKMCNFKOOPCount() > 0) {
-        hash = (37 * hash) + OKKMCNFKOOP_FIELD_NUMBER;
-        hash = (53 * hash) + getOKKMCNFKOOPList().hashCode();
-      }
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalScore();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalScore();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      if (getNNHIJGGGIKNCount() > 0) {
+        hash = (37 * hash) + NNHIJGGGIKN_FIELD_NUMBER;
+        hash = (53 * hash) + getNNHIJGGGIKNList().hashCode();
+      }
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,15 +509,15 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oKKMCNFKOOP_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        difficulty_ = 0;
-
-        stageId_ = 0;
+        isNewRecord_ = false;
 
         totalScore_ = 0;
 
-        isNewRecord_ = false;
+        stageId_ = 0;
+
+        nNHIJGGGIKN_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        difficulty_ = 0;
 
         return this;
       }
@@ -546,15 +546,15 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo buildPartial() {
         emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo result = new emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo(this);
         int from_bitField0_ = bitField0_;
+        result.isNewRecord_ = isNewRecord_;
+        result.totalScore_ = totalScore_;
+        result.stageId_ = stageId_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          oKKMCNFKOOP_.makeImmutable();
+          nNHIJGGGIKN_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.oKKMCNFKOOP_ = oKKMCNFKOOP_;
+        result.nNHIJGGGIKN_ = nNHIJGGGIKN_;
         result.difficulty_ = difficulty_;
-        result.stageId_ = stageId_;
-        result.totalScore_ = totalScore_;
-        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -603,27 +603,27 @@ public final class QuickTimeCombatSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo other) {
         if (other == emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance()) return this;
-        if (!other.oKKMCNFKOOP_.isEmpty()) {
-          if (oKKMCNFKOOP_.isEmpty()) {
-            oKKMCNFKOOP_ = other.oKKMCNFKOOP_;
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getTotalScore() != 0) {
+          setTotalScore(other.getTotalScore());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
+        if (!other.nNHIJGGGIKN_.isEmpty()) {
+          if (nNHIJGGGIKN_.isEmpty()) {
+            nNHIJGGGIKN_ = other.nNHIJGGGIKN_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureOKKMCNFKOOPIsMutable();
-            oKKMCNFKOOP_.addAll(other.oKKMCNFKOOP_);
+            ensureNNHIJGGGIKNIsMutable();
+            nNHIJGGGIKN_.addAll(other.nNHIJGGGIKN_);
           }
           onChanged();
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        if (other.getTotalScore() != 0) {
-          setTotalScore(other.getTotalScore());
-        }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,80 +655,173 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList oKKMCNFKOOP_ = emptyIntList();
-      private void ensureOKKMCNFKOOPIsMutable() {
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int totalScore_ ;
+      /**
+       * <code>uint32 total_score = 3;</code>
+       * @return The totalScore.
+       */
+      @java.lang.Override
+      public int getTotalScore() {
+        return totalScore_;
+      }
+      /**
+       * <code>uint32 total_score = 3;</code>
+       * @param value The totalScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotalScore(int value) {
+        
+        totalScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 total_score = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotalScore() {
+        
+        totalScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 6;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 6;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList nNHIJGGGIKN_ = emptyIntList();
+      private void ensureNNHIJGGGIKNIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          oKKMCNFKOOP_ = mutableCopy(oKKMCNFKOOP_);
+          nNHIJGGGIKN_ = mutableCopy(nNHIJGGGIKN_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-       * @return A list containing the oKKMCNFKOOP.
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+       * @return A list containing the nNHIJGGGIKN.
        */
       public java.util.List<java.lang.Integer>
-          getOKKMCNFKOOPList() {
+          getNNHIJGGGIKNList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(oKKMCNFKOOP_) : oKKMCNFKOOP_;
+                 java.util.Collections.unmodifiableList(nNHIJGGGIKN_) : nNHIJGGGIKN_;
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-       * @return The count of oKKMCNFKOOP.
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+       * @return The count of nNHIJGGGIKN.
        */
-      public int getOKKMCNFKOOPCount() {
-        return oKKMCNFKOOP_.size();
+      public int getNNHIJGGGIKNCount() {
+        return nNHIJGGGIKN_.size();
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
        * @param index The index of the element to return.
-       * @return The oKKMCNFKOOP at the given index.
+       * @return The nNHIJGGGIKN at the given index.
        */
-      public int getOKKMCNFKOOP(int index) {
-        return oKKMCNFKOOP_.getInt(index);
+      public int getNNHIJGGGIKN(int index) {
+        return nNHIJGGGIKN_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
        * @param index The index to set the value at.
-       * @param value The oKKMCNFKOOP to set.
+       * @param value The nNHIJGGGIKN to set.
        * @return This builder for chaining.
        */
-      public Builder setOKKMCNFKOOP(
+      public Builder setNNHIJGGGIKN(
           int index, int value) {
-        ensureOKKMCNFKOOPIsMutable();
-        oKKMCNFKOOP_.setInt(index, value);
+        ensureNNHIJGGGIKNIsMutable();
+        nNHIJGGGIKN_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-       * @param value The oKKMCNFKOOP to add.
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+       * @param value The nNHIJGGGIKN to add.
        * @return This builder for chaining.
        */
-      public Builder addOKKMCNFKOOP(int value) {
-        ensureOKKMCNFKOOPIsMutable();
-        oKKMCNFKOOP_.addInt(value);
+      public Builder addNNHIJGGGIKN(int value) {
+        ensureNNHIJGGGIKNIsMutable();
+        nNHIJGGGIKN_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
-       * @param values The oKKMCNFKOOP to add.
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
+       * @param values The nNHIJGGGIKN to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOKKMCNFKOOP(
+      public Builder addAllNNHIJGGGIKN(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOKKMCNFKOOPIsMutable();
+        ensureNNHIJGGGIKNIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oKKMCNFKOOP_);
+            values, nNHIJGGGIKN_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKKMCNFKOOP = 10;</code>
+       * <code>repeated uint32 NNHIJGGGIKN = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKKMCNFKOOP() {
-        oKKMCNFKOOP_ = emptyIntList();
+      public Builder clearNNHIJGGGIKN() {
+        nNHIJGGGIKN_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -761,99 +854,6 @@ public final class QuickTimeCombatSettleInfoOuterClass {
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalScore_ ;
-      /**
-       * <code>uint32 total_score = 1;</code>
-       * @return The totalScore.
-       */
-      @java.lang.Override
-      public int getTotalScore() {
-        return totalScore_;
-      }
-      /**
-       * <code>uint32 total_score = 1;</code>
-       * @param value The totalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalScore(int value) {
-        
-        totalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalScore() {
-        
-        totalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 13;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 13;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -925,10 +925,10 @@ public final class QuickTimeCombatSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037QuickTimeCombatSettleInfo.proto\"\202\001\n\031Qu" +
-      "ickTimeCombatSettleInfo\022\023\n\013OKKMCNFKOOP\030\n" +
-      " \003(\r\022\022\n\ndifficulty\030\017 \001(\r\022\020\n\010stage_id\030\004 \001" +
-      "(\r\022\023\n\013total_score\030\001 \001(\r\022\025\n\ris_new_record" +
-      "\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "ickTimeCombatSettleInfo\022\025\n\ris_new_record" +
+      "\030\002 \001(\010\022\023\n\013total_score\030\003 \001(\r\022\020\n\010stage_id\030" +
+      "\006 \001(\r\022\023\n\013NNHIJGGGIKN\030\t \003(\r\022\022\n\ndifficulty" +
+      "\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -940,7 +940,7 @@ public final class QuickTimeCombatSettleInfoOuterClass {
     internal_static_QuickTimeCombatSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuickTimeCombatSettleInfo_descriptor,
-        new java.lang.String[] { "OKKMCNFKOOP", "Difficulty", "StageId", "TotalScore", "IsNewRecord", });
+        new java.lang.String[] { "IsNewRecord", "TotalScore", "StageId", "NNHIJGGGIKN", "Difficulty", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,28 +19,35 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @return A list containing the levelIdList.
      */
     java.util.List<java.lang.Integer> getLevelIdListList();
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @return The count of levelIdList.
      */
     int getLevelIdListCount();
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The levelIdList at the given index.
      */
     int getLevelIdList(int index);
   }
   /**
-   * <pre>
-   * CmdId: 8459
-   * Obf: GIPIDCAKMDB
-   * </pre>
-   *
    * Protobuf type {@code GCGLevelChallengeDeleteNotify}
    */
   public static final class GCGLevelChallengeDeleteNotify extends
@@ -87,7 +94,7 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +102,7 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
               levelIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +150,14 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
               emu.grasscutter.net.proto.GCGLevelChallengeDeleteNotifyOuterClass.GCGLevelChallengeDeleteNotify.class, emu.grasscutter.net.proto.GCGLevelChallengeDeleteNotifyOuterClass.GCGLevelChallengeDeleteNotify.Builder.class);
     }
 
-    public static final int LEVEL_ID_LIST_FIELD_NUMBER = 7;
+    public static final int LEVEL_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList levelIdList_;
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @return A list containing the levelIdList.
      */
     @java.lang.Override
@@ -155,14 +166,22 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
       return levelIdList_;
     }
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @return The count of levelIdList.
      */
     public int getLevelIdListCount() {
       return levelIdList_.size();
     }
     /**
-     * <code>repeated uint32 level_id_list = 7;</code>
+     * <pre>
+     * CMD_ID = 1191
+     * </pre>
+     *
+     * <code>repeated uint32 level_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The levelIdList at the given index.
      */
@@ -187,7 +206,7 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getLevelIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(levelIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelIdList_.size(); i++) {
@@ -344,11 +363,6 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8459
-     * Obf: GIPIDCAKMDB
-     * </pre>
-     *
      * Protobuf type {@code GCGLevelChallengeDeleteNotify}
      */
     public static final class Builder extends
@@ -516,7 +530,11 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @return A list containing the levelIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +543,22 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelIdList_) : levelIdList_;
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @return The count of levelIdList.
        */
       public int getLevelIdListCount() {
         return levelIdList_.size();
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The levelIdList at the given index.
        */
@@ -540,7 +566,11 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
         return levelIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The levelIdList to set.
        * @return This builder for chaining.
@@ -553,7 +583,11 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @param value The levelIdList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +598,11 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @param values The levelIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +615,11 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_id_list = 7;</code>
+       * <pre>
+       * CMD_ID = 1191
+       * </pre>
+       *
+       * <code>repeated uint32 level_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelIdList() {
@@ -655,7 +697,7 @@ public final class GCGLevelChallengeDeleteNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GCGLevelChallengeDeleteNotify.proto\"6\n" +
       "\035GCGLevelChallengeDeleteNotify\022\025\n\rlevel_" +
-      "id_list\030\007 \003(\rB\033\n\031emu.grasscutter.net.pro" +
+      "id_list\030\t \003(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

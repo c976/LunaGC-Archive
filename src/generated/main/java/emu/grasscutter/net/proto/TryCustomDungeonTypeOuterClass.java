@@ -15,49 +15,45 @@ public final class TryCustomDungeonTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LJENCJEGDKA
-   * </pre>
-   *
    * Protobuf enum {@code TryCustomDungeonType}
    */
   public enum TryCustomDungeonType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TRY_CUSTOM_DUNGEON_NONE = 0;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE = 0;</code>
      */
-    TRY_CUSTOM_DUNGEON_NONE(0),
+    JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE(0),
     /**
-     * <code>TRY_CUSTOM_DUNGEON_ROOM = 1;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_ROOM = 1;</code>
      */
-    TRY_CUSTOM_DUNGEON_ROOM(1),
+    JILLIMBELOD_TRY_CUSTOM_DUNGEON_ROOM(1),
     /**
-     * <code>TRY_CUSTOM_DUNGEON_ALL = 2;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_ALL = 2;</code>
      */
-    TRY_CUSTOM_DUNGEON_ALL(2),
+    JILLIMBELOD_TRY_CUSTOM_DUNGEON_ALL(2),
     /**
-     * <code>TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY = 3;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY = 3;</code>
      */
-    TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY(3),
+    JILLIMBELOD_TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TRY_CUSTOM_DUNGEON_NONE = 0;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE = 0;</code>
      */
-    public static final int TRY_CUSTOM_DUNGEON_NONE_VALUE = 0;
+    public static final int JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE_VALUE = 0;
     /**
-     * <code>TRY_CUSTOM_DUNGEON_ROOM = 1;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_ROOM = 1;</code>
      */
-    public static final int TRY_CUSTOM_DUNGEON_ROOM_VALUE = 1;
+    public static final int JILLIMBELOD_TRY_CUSTOM_DUNGEON_ROOM_VALUE = 1;
     /**
-     * <code>TRY_CUSTOM_DUNGEON_ALL = 2;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_ALL = 2;</code>
      */
-    public static final int TRY_CUSTOM_DUNGEON_ALL_VALUE = 2;
+    public static final int JILLIMBELOD_TRY_CUSTOM_DUNGEON_ALL_VALUE = 2;
     /**
-     * <code>TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY = 3;</code>
+     * <code>JILLIMBELOD_TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY = 3;</code>
      */
-    public static final int TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY_VALUE = 3;
+    public static final int JILLIMBELOD_TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class TryCustomDungeonTypeOuterClass {
      */
     public static TryCustomDungeonType forNumber(int value) {
       switch (value) {
-        case 0: return TRY_CUSTOM_DUNGEON_NONE;
-        case 1: return TRY_CUSTOM_DUNGEON_ROOM;
-        case 2: return TRY_CUSTOM_DUNGEON_ALL;
-        case 3: return TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY;
+        case 0: return JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE;
+        case 1: return JILLIMBELOD_TRY_CUSTOM_DUNGEON_ROOM;
+        case 2: return JILLIMBELOD_TRY_CUSTOM_DUNGEON_ALL;
+        case 3: return JILLIMBELOD_TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY;
         default: return null;
       }
     }
@@ -153,12 +149,13 @@ public final class TryCustomDungeonTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032TryCustomDungeonType.proto*\222\001\n\024TryCust" +
-      "omDungeonType\022\033\n\027TRY_CUSTOM_DUNGEON_NONE" +
-      "\020\000\022\033\n\027TRY_CUSTOM_DUNGEON_ROOM\020\001\022\032\n\026TRY_C" +
-      "USTOM_DUNGEON_ALL\020\002\022$\n TRY_CUSTOM_DUNGEO" +
-      "N_OFFICIAL_PLAY\020\003B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\032TryCustomDungeonType.proto*\302\001\n\024TryCust" +
+      "omDungeonType\022\'\n#JILLIMBELOD_TRY_CUSTOM_" +
+      "DUNGEON_NONE\020\000\022\'\n#JILLIMBELOD_TRY_CUSTOM" +
+      "_DUNGEON_ROOM\020\001\022&\n\"JILLIMBELOD_TRY_CUSTO" +
+      "M_DUNGEON_ALL\020\002\0220\n,JILLIMBELOD_TRY_CUSTO" +
+      "M_DUNGEON_OFFICIAL_PLAY\020\003B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

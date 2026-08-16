@@ -19,7 +19,11 @@ public final class AbilityMetaSetKilledStateOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool killed = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool killed = 3;</code>
      * @return The killed.
      */
     boolean getKilled();
@@ -69,7 +73,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
 
               killed_ = input.readBool();
               break;
@@ -106,10 +110,14 @@ public final class AbilityMetaSetKilledStateOuterClass {
               emu.grasscutter.net.proto.AbilityMetaSetKilledStateOuterClass.AbilityMetaSetKilledState.class, emu.grasscutter.net.proto.AbilityMetaSetKilledStateOuterClass.AbilityMetaSetKilledState.Builder.class);
     }
 
-    public static final int KILLED_FIELD_NUMBER = 5;
+    public static final int KILLED_FIELD_NUMBER = 3;
     private boolean killed_;
     /**
-     * <code>bool killed = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool killed = 3;</code>
      * @return The killed.
      */
     @java.lang.Override
@@ -132,7 +140,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (killed_ != false) {
-        output.writeBool(5, killed_);
+        output.writeBool(3, killed_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +153,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
       size = 0;
       if (killed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, killed_);
+          .computeBoolSize(3, killed_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -422,7 +430,11 @@ public final class AbilityMetaSetKilledStateOuterClass {
 
       private boolean killed_ ;
       /**
-       * <code>bool killed = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool killed = 3;</code>
        * @return The killed.
        */
       @java.lang.Override
@@ -430,7 +442,11 @@ public final class AbilityMetaSetKilledStateOuterClass {
         return killed_;
       }
       /**
-       * <code>bool killed = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool killed = 3;</code>
        * @param value The killed to set.
        * @return This builder for chaining.
        */
@@ -441,7 +457,11 @@ public final class AbilityMetaSetKilledStateOuterClass {
         return this;
       }
       /**
-       * <code>bool killed = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool killed = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearKilled() {
@@ -518,7 +538,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037AbilityMetaSetKilledState.proto\"+\n\031Abi" +
-      "lityMetaSetKilledState\022\016\n\006killed\030\005 \001(\010B\033" +
+      "lityMetaSetKilledState\022\016\n\006killed\030\003 \001(\010B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

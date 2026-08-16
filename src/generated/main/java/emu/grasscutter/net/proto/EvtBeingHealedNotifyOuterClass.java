@@ -19,11 +19,19 @@ public final class EvtBeingHealedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string heal_tag = 8;</code>
      * @return The healTag.
      */
     java.lang.String getHealTag();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string heal_tag = 8;</code>
      * @return The bytes for healTag.
      */
@@ -31,38 +39,58 @@ public final class EvtBeingHealedNotifyOuterClass {
         getHealTagBytes();
 
     /**
-     * <code>float CBFIOMEEJFI = 4;</code>
-     * @return The cBFIOMEEJFI.
-     */
-    float getCBFIOMEEJFI();
-
-    /**
-     * <code>uint32 source_id = 6;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 source_id = 15;</code>
      * @return The sourceId.
      */
     int getSourceId();
 
     /**
-     * <code>bool IEJGGDJGGNP = 7;</code>
-     * @return The iEJGGDJGGNP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_mute = 12;</code>
+     * @return The isMute.
      */
-    boolean getIEJGGDJGGNP();
+    boolean getIsMute();
 
     /**
-     * <code>float EPJKAMBJMAP = 13;</code>
-     * @return The ePJKAMBJMAP.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>float heal_amount = 3;</code>
+     * @return The healAmount.
      */
-    float getEPJKAMBJMAP();
+    float getHealAmount();
 
     /**
-     * <code>uint32 target_id = 9;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float real_heal_amount = 7;</code>
+     * @return The realHealAmount.
+     */
+    float getRealHealAmount();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 target_id = 4;</code>
      * @return The targetId.
      */
     int getTargetId();
   }
   /**
    * <pre>
-   * CmdId: 21052
+   * CmdId: 4825
    * </pre>
    *
    * Protobuf type {@code EvtBeingHealedNotify}
@@ -110,19 +138,19 @@ public final class EvtBeingHealedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
+            case 29: {
 
-              cBFIOMEEJFI_ = input.readFloat();
+              healAmount_ = input.readFloat();
               break;
             }
-            case 48: {
+            case 32: {
 
-              sourceId_ = input.readUInt32();
+              targetId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 61: {
 
-              iEJGGDJGGNP_ = input.readBool();
+              realHealAmount_ = input.readFloat();
               break;
             }
             case 66: {
@@ -131,14 +159,14 @@ public final class EvtBeingHealedNotifyOuterClass {
               healTag_ = s;
               break;
             }
-            case 72: {
+            case 96: {
 
-              targetId_ = input.readUInt32();
+              isMute_ = input.readBool();
               break;
             }
-            case 109: {
+            case 120: {
 
-              ePJKAMBJMAP_ = input.readFloat();
+              sourceId_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,6 +204,10 @@ public final class EvtBeingHealedNotifyOuterClass {
     public static final int HEAL_TAG_FIELD_NUMBER = 8;
     private volatile java.lang.Object healTag_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string heal_tag = 8;</code>
      * @return The healTag.
      */
@@ -193,6 +225,10 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string heal_tag = 8;</code>
      * @return The bytes for healTag.
      */
@@ -211,21 +247,14 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
     }
 
-    public static final int CBFIOMEEJFI_FIELD_NUMBER = 4;
-    private float cBFIOMEEJFI_;
-    /**
-     * <code>float CBFIOMEEJFI = 4;</code>
-     * @return The cBFIOMEEJFI.
-     */
-    @java.lang.Override
-    public float getCBFIOMEEJFI() {
-      return cBFIOMEEJFI_;
-    }
-
-    public static final int SOURCE_ID_FIELD_NUMBER = 6;
+    public static final int SOURCE_ID_FIELD_NUMBER = 15;
     private int sourceId_;
     /**
-     * <code>uint32 source_id = 6;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 source_id = 15;</code>
      * @return The sourceId.
      */
     @java.lang.Override
@@ -233,32 +262,59 @@ public final class EvtBeingHealedNotifyOuterClass {
       return sourceId_;
     }
 
-    public static final int IEJGGDJGGNP_FIELD_NUMBER = 7;
-    private boolean iEJGGDJGGNP_;
+    public static final int IS_MUTE_FIELD_NUMBER = 12;
+    private boolean isMute_;
     /**
-     * <code>bool IEJGGDJGGNP = 7;</code>
-     * @return The iEJGGDJGGNP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_mute = 12;</code>
+     * @return The isMute.
      */
     @java.lang.Override
-    public boolean getIEJGGDJGGNP() {
-      return iEJGGDJGGNP_;
+    public boolean getIsMute() {
+      return isMute_;
     }
 
-    public static final int EPJKAMBJMAP_FIELD_NUMBER = 13;
-    private float ePJKAMBJMAP_;
+    public static final int HEAL_AMOUNT_FIELD_NUMBER = 3;
+    private float healAmount_;
     /**
-     * <code>float EPJKAMBJMAP = 13;</code>
-     * @return The ePJKAMBJMAP.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>float heal_amount = 3;</code>
+     * @return The healAmount.
      */
     @java.lang.Override
-    public float getEPJKAMBJMAP() {
-      return ePJKAMBJMAP_;
+    public float getHealAmount() {
+      return healAmount_;
     }
 
-    public static final int TARGET_ID_FIELD_NUMBER = 9;
+    public static final int REAL_HEAL_AMOUNT_FIELD_NUMBER = 7;
+    private float realHealAmount_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float real_heal_amount = 7;</code>
+     * @return The realHealAmount.
+     */
+    @java.lang.Override
+    public float getRealHealAmount() {
+      return realHealAmount_;
+    }
+
+    public static final int TARGET_ID_FIELD_NUMBER = 4;
     private int targetId_;
     /**
-     * <code>uint32 target_id = 9;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 target_id = 4;</code>
      * @return The targetId.
      */
     @java.lang.Override
@@ -280,23 +336,23 @@ public final class EvtBeingHealedNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cBFIOMEEJFI_ != 0F) {
-        output.writeFloat(4, cBFIOMEEJFI_);
+      if (healAmount_ != 0F) {
+        output.writeFloat(3, healAmount_);
       }
-      if (sourceId_ != 0) {
-        output.writeUInt32(6, sourceId_);
+      if (targetId_ != 0) {
+        output.writeUInt32(4, targetId_);
       }
-      if (iEJGGDJGGNP_ != false) {
-        output.writeBool(7, iEJGGDJGGNP_);
+      if (realHealAmount_ != 0F) {
+        output.writeFloat(7, realHealAmount_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(healTag_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, healTag_);
       }
-      if (targetId_ != 0) {
-        output.writeUInt32(9, targetId_);
+      if (isMute_ != false) {
+        output.writeBool(12, isMute_);
       }
-      if (ePJKAMBJMAP_ != 0F) {
-        output.writeFloat(13, ePJKAMBJMAP_);
+      if (sourceId_ != 0) {
+        output.writeUInt32(15, sourceId_);
       }
       unknownFields.writeTo(output);
     }
@@ -307,28 +363,28 @@ public final class EvtBeingHealedNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cBFIOMEEJFI_ != 0F) {
+      if (healAmount_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, cBFIOMEEJFI_);
+          .computeFloatSize(3, healAmount_);
       }
-      if (sourceId_ != 0) {
+      if (targetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, sourceId_);
+          .computeUInt32Size(4, targetId_);
       }
-      if (iEJGGDJGGNP_ != false) {
+      if (realHealAmount_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, iEJGGDJGGNP_);
+          .computeFloatSize(7, realHealAmount_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(healTag_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, healTag_);
       }
-      if (targetId_ != 0) {
+      if (isMute_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, targetId_);
+          .computeBoolSize(12, isMute_);
       }
-      if (ePJKAMBJMAP_ != 0F) {
+      if (sourceId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, ePJKAMBJMAP_);
+          .computeUInt32Size(15, sourceId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,16 +403,16 @@ public final class EvtBeingHealedNotifyOuterClass {
 
       if (!getHealTag()
           .equals(other.getHealTag())) return false;
-      if (java.lang.Float.floatToIntBits(getCBFIOMEEJFI())
-          != java.lang.Float.floatToIntBits(
-              other.getCBFIOMEEJFI())) return false;
       if (getSourceId()
           != other.getSourceId()) return false;
-      if (getIEJGGDJGGNP()
-          != other.getIEJGGDJGGNP()) return false;
-      if (java.lang.Float.floatToIntBits(getEPJKAMBJMAP())
+      if (getIsMute()
+          != other.getIsMute()) return false;
+      if (java.lang.Float.floatToIntBits(getHealAmount())
           != java.lang.Float.floatToIntBits(
-              other.getEPJKAMBJMAP())) return false;
+              other.getHealAmount())) return false;
+      if (java.lang.Float.floatToIntBits(getRealHealAmount())
+          != java.lang.Float.floatToIntBits(
+              other.getRealHealAmount())) return false;
       if (getTargetId()
           != other.getTargetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -372,17 +428,17 @@ public final class EvtBeingHealedNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + HEAL_TAG_FIELD_NUMBER;
       hash = (53 * hash) + getHealTag().hashCode();
-      hash = (37 * hash) + CBFIOMEEJFI_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCBFIOMEEJFI());
       hash = (37 * hash) + SOURCE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSourceId();
-      hash = (37 * hash) + IEJGGDJGGNP_FIELD_NUMBER;
+      hash = (37 * hash) + IS_MUTE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIEJGGDJGGNP());
-      hash = (37 * hash) + EPJKAMBJMAP_FIELD_NUMBER;
+          getIsMute());
+      hash = (37 * hash) + HEAL_AMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getEPJKAMBJMAP());
+          getHealAmount());
+      hash = (37 * hash) + REAL_HEAL_AMOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getRealHealAmount());
       hash = (37 * hash) + TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -482,7 +538,7 @@ public final class EvtBeingHealedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21052
+     * CmdId: 4825
      * </pre>
      *
      * Protobuf type {@code EvtBeingHealedNotify}
@@ -524,13 +580,13 @@ public final class EvtBeingHealedNotifyOuterClass {
         super.clear();
         healTag_ = "";
 
-        cBFIOMEEJFI_ = 0F;
-
         sourceId_ = 0;
 
-        iEJGGDJGGNP_ = false;
+        isMute_ = false;
 
-        ePJKAMBJMAP_ = 0F;
+        healAmount_ = 0F;
+
+        realHealAmount_ = 0F;
 
         targetId_ = 0;
 
@@ -561,10 +617,10 @@ public final class EvtBeingHealedNotifyOuterClass {
       public emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify buildPartial() {
         emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify result = new emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify(this);
         result.healTag_ = healTag_;
-        result.cBFIOMEEJFI_ = cBFIOMEEJFI_;
         result.sourceId_ = sourceId_;
-        result.iEJGGDJGGNP_ = iEJGGDJGGNP_;
-        result.ePJKAMBJMAP_ = ePJKAMBJMAP_;
+        result.isMute_ = isMute_;
+        result.healAmount_ = healAmount_;
+        result.realHealAmount_ = realHealAmount_;
         result.targetId_ = targetId_;
         onBuilt();
         return result;
@@ -618,17 +674,17 @@ public final class EvtBeingHealedNotifyOuterClass {
           healTag_ = other.healTag_;
           onChanged();
         }
-        if (other.getCBFIOMEEJFI() != 0F) {
-          setCBFIOMEEJFI(other.getCBFIOMEEJFI());
-        }
         if (other.getSourceId() != 0) {
           setSourceId(other.getSourceId());
         }
-        if (other.getIEJGGDJGGNP() != false) {
-          setIEJGGDJGGNP(other.getIEJGGDJGGNP());
+        if (other.getIsMute() != false) {
+          setIsMute(other.getIsMute());
         }
-        if (other.getEPJKAMBJMAP() != 0F) {
-          setEPJKAMBJMAP(other.getEPJKAMBJMAP());
+        if (other.getHealAmount() != 0F) {
+          setHealAmount(other.getHealAmount());
+        }
+        if (other.getRealHealAmount() != 0F) {
+          setRealHealAmount(other.getRealHealAmount());
         }
         if (other.getTargetId() != 0) {
           setTargetId(other.getTargetId());
@@ -664,6 +720,10 @@ public final class EvtBeingHealedNotifyOuterClass {
 
       private java.lang.Object healTag_ = "";
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string heal_tag = 8;</code>
        * @return The healTag.
        */
@@ -680,6 +740,10 @@ public final class EvtBeingHealedNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string heal_tag = 8;</code>
        * @return The bytes for healTag.
        */
@@ -697,6 +761,10 @@ public final class EvtBeingHealedNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string heal_tag = 8;</code>
        * @param value The healTag to set.
        * @return This builder for chaining.
@@ -712,6 +780,10 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string heal_tag = 8;</code>
        * @return This builder for chaining.
        */
@@ -722,6 +794,10 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string heal_tag = 8;</code>
        * @param value The bytes for healTag to set.
        * @return This builder for chaining.
@@ -738,40 +814,13 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
 
-      private float cBFIOMEEJFI_ ;
-      /**
-       * <code>float CBFIOMEEJFI = 4;</code>
-       * @return The cBFIOMEEJFI.
-       */
-      @java.lang.Override
-      public float getCBFIOMEEJFI() {
-        return cBFIOMEEJFI_;
-      }
-      /**
-       * <code>float CBFIOMEEJFI = 4;</code>
-       * @param value The cBFIOMEEJFI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCBFIOMEEJFI(float value) {
-        
-        cBFIOMEEJFI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float CBFIOMEEJFI = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCBFIOMEEJFI() {
-        
-        cBFIOMEEJFI_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private int sourceId_ ;
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 source_id = 15;</code>
        * @return The sourceId.
        */
       @java.lang.Override
@@ -779,7 +828,11 @@ public final class EvtBeingHealedNotifyOuterClass {
         return sourceId_;
       }
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 source_id = 15;</code>
        * @param value The sourceId to set.
        * @return This builder for chaining.
        */
@@ -790,7 +843,11 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 source_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceId() {
@@ -800,71 +857,142 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
 
-      private boolean iEJGGDJGGNP_ ;
+      private boolean isMute_ ;
       /**
-       * <code>bool IEJGGDJGGNP = 7;</code>
-       * @return The iEJGGDJGGNP.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_mute = 12;</code>
+       * @return The isMute.
        */
       @java.lang.Override
-      public boolean getIEJGGDJGGNP() {
-        return iEJGGDJGGNP_;
+      public boolean getIsMute() {
+        return isMute_;
       }
       /**
-       * <code>bool IEJGGDJGGNP = 7;</code>
-       * @param value The iEJGGDJGGNP to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_mute = 12;</code>
+       * @param value The isMute to set.
        * @return This builder for chaining.
        */
-      public Builder setIEJGGDJGGNP(boolean value) {
+      public Builder setIsMute(boolean value) {
         
-        iEJGGDJGGNP_ = value;
+        isMute_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool IEJGGDJGGNP = 7;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_mute = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIEJGGDJGGNP() {
+      public Builder clearIsMute() {
         
-        iEJGGDJGGNP_ = false;
+        isMute_ = false;
         onChanged();
         return this;
       }
 
-      private float ePJKAMBJMAP_ ;
+      private float healAmount_ ;
       /**
-       * <code>float EPJKAMBJMAP = 13;</code>
-       * @return The ePJKAMBJMAP.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>float heal_amount = 3;</code>
+       * @return The healAmount.
        */
       @java.lang.Override
-      public float getEPJKAMBJMAP() {
-        return ePJKAMBJMAP_;
+      public float getHealAmount() {
+        return healAmount_;
       }
       /**
-       * <code>float EPJKAMBJMAP = 13;</code>
-       * @param value The ePJKAMBJMAP to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>float heal_amount = 3;</code>
+       * @param value The healAmount to set.
        * @return This builder for chaining.
        */
-      public Builder setEPJKAMBJMAP(float value) {
+      public Builder setHealAmount(float value) {
         
-        ePJKAMBJMAP_ = value;
+        healAmount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float EPJKAMBJMAP = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>float heal_amount = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEPJKAMBJMAP() {
+      public Builder clearHealAmount() {
         
-        ePJKAMBJMAP_ = 0F;
+        healAmount_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float realHealAmount_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float real_heal_amount = 7;</code>
+       * @return The realHealAmount.
+       */
+      @java.lang.Override
+      public float getRealHealAmount() {
+        return realHealAmount_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float real_heal_amount = 7;</code>
+       * @param value The realHealAmount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRealHealAmount(float value) {
+        
+        realHealAmount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float real_heal_amount = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRealHealAmount() {
+        
+        realHealAmount_ = 0F;
         onChanged();
         return this;
       }
 
       private int targetId_ ;
       /**
-       * <code>uint32 target_id = 9;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 target_id = 4;</code>
        * @return The targetId.
        */
       @java.lang.Override
@@ -872,7 +1000,11 @@ public final class EvtBeingHealedNotifyOuterClass {
         return targetId_;
       }
       /**
-       * <code>uint32 target_id = 9;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 target_id = 4;</code>
        * @param value The targetId to set.
        * @return This builder for chaining.
        */
@@ -883,7 +1015,11 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_id = 9;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 target_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetId() {
@@ -959,12 +1095,12 @@ public final class EvtBeingHealedNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032EvtBeingHealedNotify.proto\"\215\001\n\024EvtBein" +
-      "gHealedNotify\022\020\n\010heal_tag\030\010 \001(\t\022\023\n\013CBFIO" +
-      "MEEJFI\030\004 \001(\002\022\021\n\tsource_id\030\006 \001(\r\022\023\n\013IEJGG" +
-      "DJGGNP\030\007 \001(\010\022\023\n\013EPJKAMBJMAP\030\r \001(\002\022\021\n\ttar" +
-      "get_id\030\t \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\032EvtBeingHealedNotify.proto\"\216\001\n\024EvtBein" +
+      "gHealedNotify\022\020\n\010heal_tag\030\010 \001(\t\022\021\n\tsourc" +
+      "e_id\030\017 \001(\r\022\017\n\007is_mute\030\014 \001(\010\022\023\n\013heal_amou" +
+      "nt\030\003 \001(\002\022\030\n\020real_heal_amount\030\007 \001(\002\022\021\n\tta" +
+      "rget_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -975,7 +1111,7 @@ public final class EvtBeingHealedNotifyOuterClass {
     internal_static_EvtBeingHealedNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtBeingHealedNotify_descriptor,
-        new java.lang.String[] { "HealTag", "CBFIOMEEJFI", "SourceId", "IEJGGDJGGNP", "EPJKAMBJMAP", "TargetId", });
+        new java.lang.String[] { "HealTag", "SourceId", "IsMute", "HealAmount", "RealHealAmount", "TargetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

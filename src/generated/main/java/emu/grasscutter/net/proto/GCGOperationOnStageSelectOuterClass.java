@@ -19,33 +19,29 @@ public final class GCGOperationOnStageSelectOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_guid = 14;</code>
-     * @return The cardGuid.
-     */
-    int getCardGuid();
-
-    /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return A list containing the costDiceIndexList.
      */
     java.util.List<java.lang.Integer> getCostDiceIndexListList();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return The count of costDiceIndexList.
      */
     int getCostDiceIndexListCount();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
     int getCostDiceIndexList(int index);
+
+    /**
+     * <code>uint32 card_guid = 13;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
   }
   /**
-   * <pre>
-   * Obf: MCGDIGGLBJM
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationOnStageSelect}
    */
   public static final class GCGOperationOnStageSelect extends
@@ -92,7 +88,7 @@ public final class GCGOperationOnStageSelectOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 costDiceIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -100,7 +96,7 @@ public final class GCGOperationOnStageSelectOuterClass {
               costDiceIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -113,7 +109,7 @@ public final class GCGOperationOnStageSelectOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 104: {
 
               cardGuid_ = input.readUInt32();
               break;
@@ -153,21 +149,10 @@ public final class GCGOperationOnStageSelectOuterClass {
               emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.class, emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder.class);
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 14;
-    private int cardGuid_;
-    /**
-     * <code>uint32 card_guid = 14;</code>
-     * @return The cardGuid.
-     */
-    @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
-    }
-
-    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 13;
+    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList costDiceIndexList_;
     /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return A list containing the costDiceIndexList.
      */
     @java.lang.Override
@@ -176,14 +161,14 @@ public final class GCGOperationOnStageSelectOuterClass {
       return costDiceIndexList_;
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return The count of costDiceIndexList.
      */
     public int getCostDiceIndexListCount() {
       return costDiceIndexList_.size();
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 13;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
@@ -191,6 +176,17 @@ public final class GCGOperationOnStageSelectOuterClass {
       return costDiceIndexList_.getInt(index);
     }
     private int costDiceIndexListMemoizedSerializedSize = -1;
+
+    public static final int CARD_GUID_FIELD_NUMBER = 13;
+    private int cardGuid_;
+    /**
+     * <code>uint32 card_guid = 13;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -208,14 +204,14 @@ public final class GCGOperationOnStageSelectOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCostDiceIndexListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(costDiceIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < costDiceIndexList_.size(); i++) {
         output.writeUInt32NoTag(costDiceIndexList_.getInt(i));
       }
       if (cardGuid_ != 0) {
-        output.writeUInt32(14, cardGuid_);
+        output.writeUInt32(13, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -242,7 +238,7 @@ public final class GCGOperationOnStageSelectOuterClass {
       }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cardGuid_);
+          .computeUInt32Size(13, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -259,10 +255,10 @@ public final class GCGOperationOnStageSelectOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect other = (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) obj;
 
-      if (getCardGuid()
-          != other.getCardGuid()) return false;
       if (!getCostDiceIndexListList()
           .equals(other.getCostDiceIndexListList())) return false;
+      if (getCardGuid()
+          != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,12 +270,12 @@ public final class GCGOperationOnStageSelectOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardGuid();
       if (getCostDiceIndexListCount() > 0) {
         hash = (37 * hash) + COST_DICE_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCostDiceIndexListList().hashCode();
       }
+      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +372,6 @@ public final class GCGOperationOnStageSelectOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MCGDIGGLBJM
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationOnStageSelect}
      */
     public static final class Builder extends
@@ -417,10 +409,10 @@ public final class GCGOperationOnStageSelectOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardGuid_ = 0;
-
         costDiceIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        cardGuid_ = 0;
+
         return this;
       }
 
@@ -448,12 +440,12 @@ public final class GCGOperationOnStageSelectOuterClass {
       public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect buildPartial() {
         emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect result = new emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect(this);
         int from_bitField0_ = bitField0_;
-        result.cardGuid_ = cardGuid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           costDiceIndexList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.costDiceIndexList_ = costDiceIndexList_;
+        result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
       }
@@ -502,9 +494,6 @@ public final class GCGOperationOnStageSelectOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect other) {
         if (other == emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance()) return this;
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
-        }
         if (!other.costDiceIndexList_.isEmpty()) {
           if (costDiceIndexList_.isEmpty()) {
             costDiceIndexList_ = other.costDiceIndexList_;
@@ -514,6 +503,9 @@ public final class GCGOperationOnStageSelectOuterClass {
             costDiceIndexList_.addAll(other.costDiceIndexList_);
           }
           onChanged();
+        }
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,37 +537,6 @@ public final class GCGOperationOnStageSelectOuterClass {
       }
       private int bitField0_;
 
-      private int cardGuid_ ;
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @return The cardGuid.
-       */
-      @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
-      }
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @param value The cardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardGuid(int value) {
-        
-        cardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardGuid() {
-        
-        cardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList costDiceIndexList_ = emptyIntList();
       private void ensureCostDiceIndexListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -584,7 +545,7 @@ public final class GCGOperationOnStageSelectOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return A list containing the costDiceIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +554,14 @@ public final class GCGOperationOnStageSelectOuterClass {
                  java.util.Collections.unmodifiableList(costDiceIndexList_) : costDiceIndexList_;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return The count of costDiceIndexList.
        */
       public int getCostDiceIndexListCount() {
         return costDiceIndexList_.size();
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param index The index of the element to return.
        * @return The costDiceIndexList at the given index.
        */
@@ -608,7 +569,7 @@ public final class GCGOperationOnStageSelectOuterClass {
         return costDiceIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The costDiceIndexList to set.
        * @return This builder for chaining.
@@ -621,7 +582,7 @@ public final class GCGOperationOnStageSelectOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param value The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -632,7 +593,7 @@ public final class GCGOperationOnStageSelectOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param values The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -645,12 +606,43 @@ public final class GCGOperationOnStageSelectOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 13;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostDiceIndexList() {
         costDiceIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int cardGuid_ ;
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_guid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -722,8 +714,8 @@ public final class GCGOperationOnStageSelectOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GCGOperationOnStageSelect.proto\"L\n\031GCG" +
-      "OperationOnStageSelect\022\021\n\tcard_guid\030\016 \001(" +
-      "\r\022\034\n\024cost_dice_index_list\030\r \003(\rB\033\n\031emu.g" +
+      "OperationOnStageSelect\022\034\n\024cost_dice_inde" +
+      "x_list\030\n \003(\r\022\021\n\tcard_guid\030\r \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -735,7 +727,7 @@ public final class GCGOperationOnStageSelectOuterClass {
     internal_static_GCGOperationOnStageSelect_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationOnStageSelect_descriptor,
-        new java.lang.String[] { "CardGuid", "CostDiceIndexList", });
+        new java.lang.String[] { "CostDiceIndexList", "CardGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,25 +19,21 @@ public final class GCGMsgNewCardOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      * @return Whether the card field is set.
      */
     boolean hasCard();
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      * @return The card.
      */
     emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCard();
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      */
     emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: OHBFEIDOLHJ
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgNewCard}
    */
   public static final class GCGMsgNewCard extends
@@ -82,7 +78,7 @@ public final class GCGMsgNewCardOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 18: {
               emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder subBuilder = null;
               if (card_ != null) {
                 subBuilder = card_.toBuilder();
@@ -127,10 +123,10 @@ public final class GCGMsgNewCardOuterClass {
               emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.class, emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder.class);
     }
 
-    public static final int CARD_FIELD_NUMBER = 7;
+    public static final int CARD_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard card_;
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      * @return Whether the card field is set.
      */
     @java.lang.Override
@@ -138,7 +134,7 @@ public final class GCGMsgNewCardOuterClass {
       return card_ != null;
     }
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      * @return The card.
      */
     @java.lang.Override
@@ -146,7 +142,7 @@ public final class GCGMsgNewCardOuterClass {
       return card_ == null ? emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance() : card_;
     }
     /**
-     * <code>.GCGCard card = 7;</code>
+     * <code>.GCGCard card = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardOrBuilder() {
@@ -168,7 +164,7 @@ public final class GCGMsgNewCardOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (card_ != null) {
-        output.writeMessage(7, getCard());
+        output.writeMessage(2, getCard());
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +177,7 @@ public final class GCGMsgNewCardOuterClass {
       size = 0;
       if (card_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getCard());
+          .computeMessageSize(2, getCard());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +310,6 @@ public final class GCGMsgNewCardOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OHBFEIDOLHJ
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgNewCard}
      */
     public static final class Builder extends
@@ -476,14 +468,14 @@ public final class GCGMsgNewCardOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> cardBuilder_;
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        * @return Whether the card field is set.
        */
       public boolean hasCard() {
         return cardBuilder_ != null || card_ != null;
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        * @return The card.
        */
       public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard getCard() {
@@ -494,7 +486,7 @@ public final class GCGMsgNewCardOuterClass {
         }
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public Builder setCard(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
         if (cardBuilder_ == null) {
@@ -510,7 +502,7 @@ public final class GCGMsgNewCardOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public Builder setCard(
           emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder builderForValue) {
@@ -524,7 +516,7 @@ public final class GCGMsgNewCardOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public Builder mergeCard(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard value) {
         if (cardBuilder_ == null) {
@@ -542,7 +534,7 @@ public final class GCGMsgNewCardOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public Builder clearCard() {
         if (cardBuilder_ == null) {
@@ -556,7 +548,7 @@ public final class GCGMsgNewCardOuterClass {
         return this;
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder getCardBuilder() {
         
@@ -564,7 +556,7 @@ public final class GCGMsgNewCardOuterClass {
         return getCardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder getCardOrBuilder() {
         if (cardBuilder_ != null) {
@@ -575,7 +567,7 @@ public final class GCGMsgNewCardOuterClass {
         }
       }
       /**
-       * <code>.GCGCard card = 7;</code>
+       * <code>.GCGCard card = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCardOrBuilder> 
@@ -658,7 +650,7 @@ public final class GCGMsgNewCardOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GCGMsgNewCard.proto\032\rGCGCard.proto\"\'\n\r" +
-      "GCGMsgNewCard\022\026\n\004card\030\007 \001(\0132\010.GCGCardB\033\n" +
+      "GCGMsgNewCard\022\026\n\004card\030\002 \001(\0132\010.GCGCardB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

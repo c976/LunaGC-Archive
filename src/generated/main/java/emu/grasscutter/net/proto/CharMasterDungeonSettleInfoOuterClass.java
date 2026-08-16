@@ -19,6 +19,10 @@ public final class CharMasterDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 reward_id = 6;</code>
      * @return The rewardId.
      */
@@ -109,6 +113,10 @@ public final class CharMasterDungeonSettleInfoOuterClass {
     public static final int REWARD_ID_FIELD_NUMBER = 6;
     private int rewardId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 reward_id = 6;</code>
      * @return The rewardId.
      */
@@ -421,6 +429,10 @@ public final class CharMasterDungeonSettleInfoOuterClass {
 
       private int rewardId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 reward_id = 6;</code>
        * @return The rewardId.
        */
@@ -429,6 +441,10 @@ public final class CharMasterDungeonSettleInfoOuterClass {
         return rewardId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 reward_id = 6;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
@@ -440,6 +456,10 @@ public final class CharMasterDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 reward_id = 6;</code>
        * @return This builder for chaining.
        */

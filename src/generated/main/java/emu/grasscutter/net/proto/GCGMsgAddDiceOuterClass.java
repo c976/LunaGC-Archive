@@ -19,145 +19,141 @@ public final class GCGMsgAddDiceOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 change_count = 6;</code>
-     * @return The changeCount.
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
      */
-    int getChangeCount();
+    int getUnk3850BBDHKLLMPKDCount();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    boolean containsUnk3850BBDHKLLMPKD(
+        int key);
+    /**
+     * Use {@link #getUnk3850BBDHKLLMPKDMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850BBDHKLLMPKD();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850BBDHKLLMPKDMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrThrow(
+        int key);
+    /**
+     * Use {@link #getUnk3850BBDHKLLMPKDValueMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850BBDHKLLMPKDValue();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850BBDHKLLMPKDValueMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+
+    int getUnk3850BBDHKLLMPKDValueOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+
+    int getUnk3850BBDHKLLMPKDValueOrThrow(
+        int key);
 
     /**
-     * <code>.GCGReason reason = 5;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    int getUnk3850CIBMHALCAIDCount();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    boolean containsUnk3850CIBMHALCAID(
+        int key);
+    /**
+     * Use {@link #getUnk3850CIBMHALCAIDMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850CIBMHALCAID();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850CIBMHALCAIDMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrThrow(
+        int key);
+    /**
+     * Use {@link #getUnk3850CIBMHALCAIDValueMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850CIBMHALCAIDValue();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850CIBMHALCAIDValueMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+
+    int getUnk3850CIBMHALCAIDValueOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+
+    int getUnk3850CIBMHALCAIDValueOrThrow(
+        int key);
+
+    /**
+     * <code>uint32 controller_id = 13;</code>
+     * @return The controllerId.
+     */
+    int getControllerId();
+
+    /**
+     * <code>.GCGReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGReason reason = 5;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason();
 
     /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
+     * <code>int32 change_count = 10;</code>
+     * @return The changeCount.
      */
-    int getACBEOEAMOEFCount();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    boolean containsACBEOEAMOEF(
-        int key);
-    /**
-     * Use {@link #getACBEOEAMOEFMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getACBEOEAMOEF();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getACBEOEAMOEFMap();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrThrow(
-        int key);
-    /**
-     * Use {@link #getACBEOEAMOEFValueMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getACBEOEAMOEFValue();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getACBEOEAMOEFValueMap();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-
-    int getACBEOEAMOEFValueOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-
-    int getACBEOEAMOEFValueOrThrow(
-        int key);
-
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    int getHLOGPOGEMKECount();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    boolean containsHLOGPOGEMKE(
-        int key);
-    /**
-     * Use {@link #getHLOGPOGEMKEMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getHLOGPOGEMKE();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getHLOGPOGEMKEMap();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrThrow(
-        int key);
-    /**
-     * Use {@link #getHLOGPOGEMKEValueMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getHLOGPOGEMKEValue();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getHLOGPOGEMKEValueMap();
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-
-    int getHLOGPOGEMKEValueOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-
-    int getHLOGPOGEMKEValueOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 controller_id = 7;</code>
-     * @return The controllerId.
-     */
-    int getControllerId();
+    int getChangeCount();
   }
   /**
-   * <pre>
-   * Obf: DIHCMOBJACH
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgAddDice}
    */
   public static final class GCGMsgAddDice extends
@@ -204,46 +200,46 @@ public final class GCGMsgAddDiceOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aCBEOEAMOEF_ = com.google.protobuf.MapField.newMapField(
-                    ACBEOEAMOEFDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              aCBEOEAMOEF__ = input.readMessage(
-                  ACBEOEAMOEFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              aCBEOEAMOEF_.getMutableMap().put(
-                  aCBEOEAMOEF__.getKey(), aCBEOEAMOEF__.getValue());
-              break;
-            }
-            case 40: {
+            case 24: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 48: {
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unk3850CIBMHALCAID_ = com.google.protobuf.MapField.newMapField(
+                    Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              unk3850CIBMHALCAID__ = input.readMessage(
+                  Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3850CIBMHALCAID_.getMutableMap().put(
+                  unk3850CIBMHALCAID__.getKey(), unk3850CIBMHALCAID__.getValue());
+              break;
+            }
+            case 80: {
 
               changeCount_ = input.readInt32();
               break;
             }
-            case 56: {
-
-              controllerId_ = input.readUInt32();
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                hLOGPOGEMKE_ = com.google.protobuf.MapField.newMapField(
-                    HLOGPOGEMKEDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unk3850BBDHKLLMPKD_ = com.google.protobuf.MapField.newMapField(
+                    Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              hLOGPOGEMKE__ = input.readMessage(
-                  HLOGPOGEMKEDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              hLOGPOGEMKE_.getMutableMap().put(
-                  hLOGPOGEMKE__.getKey(), hLOGPOGEMKE__.getValue());
+              unk3850BBDHKLLMPKD__ = input.readMessage(
+                  Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              unk3850BBDHKLLMPKD_.getMutableMap().put(
+                  unk3850BBDHKLLMPKD__.getKey(), unk3850BBDHKLLMPKD__.getValue());
+              break;
+            }
+            case 104: {
+
+              controllerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -275,10 +271,10 @@ public final class GCGMsgAddDiceOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
-          return internalGetACBEOEAMOEF();
-        case 10:
-          return internalGetHLOGPOGEMKE();
+        case 11:
+          return internalGetUnk3850BBDHKLLMPKD();
+        case 4:
+          return internalGetUnk3850CIBMHALCAID();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -292,28 +288,316 @@ public final class GCGMsgAddDiceOuterClass {
               emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.class, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder.class);
     }
 
-    public static final int CHANGE_COUNT_FIELD_NUMBER = 6;
-    private int changeCount_;
-    /**
-     * <code>int32 change_count = 6;</code>
-     * @return The changeCount.
-     */
-    @java.lang.Override
-    public int getChangeCount() {
-      return changeCount_;
+    public static final int UNK3850_BBDHKLLMPKD_FIELD_NUMBER = 11;
+    private static final class Unk3850BBDHKLLMPKDDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.ENUM,
+                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_TYPE_INVALID.getNumber());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> unk3850BBDHKLLMPKD_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetUnk3850BBDHKLLMPKD() {
+      if (unk3850BBDHKLLMPKD_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry);
+      }
+      return unk3850BBDHKLLMPKD_;
+    }
+    private static final
+    com.google.protobuf.Internal.MapAdapter.Converter<
+        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> unk3850BBDHKLLMPKDValueConverter =
+            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
+    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    internalGetAdaptedUnk3850BBDHKLLMPKDMap(
+        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
+      return new com.google.protobuf.Internal.MapAdapter<
+          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
+              map, unk3850BBDHKLLMPKDValueConverter);
     }
 
-    public static final int REASON_FIELD_NUMBER = 5;
+    public int getUnk3850BBDHKLLMPKDCount() {
+      return internalGetUnk3850BBDHKLLMPKD().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsUnk3850BBDHKLLMPKD(
+        int key) {
+      
+      return internalGetUnk3850BBDHKLLMPKD().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getUnk3850BBDHKLLMPKDMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850BBDHKLLMPKD() {
+      return getUnk3850BBDHKLLMPKDMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850BBDHKLLMPKDMap() {
+      return internalGetAdaptedUnk3850BBDHKLLMPKDMap(
+          internalGetUnk3850BBDHKLLMPKD().getMap());}
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850BBDHKLLMPKD().getMap();
+      return map.containsKey(key)
+             ? unk3850BBDHKLLMPKDValueConverter.doForward(map.get(key))
+             : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850BBDHKLLMPKD().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return unk3850BBDHKLLMPKDValueConverter.doForward(map.get(key));
+    }
+    /**
+     * Use {@link #getUnk3850BBDHKLLMPKDValueMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850BBDHKLLMPKDValue() {
+      return getUnk3850BBDHKLLMPKDValueMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850BBDHKLLMPKDValueMap() {
+      return internalGetUnk3850BBDHKLLMPKD().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3850BBDHKLLMPKDValueOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850BBDHKLLMPKD().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3850BBDHKLLMPKDValueOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850BBDHKLLMPKD().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int UNK3850_CIBMHALCAID_FIELD_NUMBER = 4;
+    private static final class Unk3850CIBMHALCAIDDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.ENUM,
+                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_TYPE_INVALID.getNumber());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> unk3850CIBMHALCAID_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetUnk3850CIBMHALCAID() {
+      if (unk3850CIBMHALCAID_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry);
+      }
+      return unk3850CIBMHALCAID_;
+    }
+    private static final
+    com.google.protobuf.Internal.MapAdapter.Converter<
+        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> unk3850CIBMHALCAIDValueConverter =
+            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
+    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    internalGetAdaptedUnk3850CIBMHALCAIDMap(
+        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
+      return new com.google.protobuf.Internal.MapAdapter<
+          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
+              map, unk3850CIBMHALCAIDValueConverter);
+    }
+
+    public int getUnk3850CIBMHALCAIDCount() {
+      return internalGetUnk3850CIBMHALCAID().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsUnk3850CIBMHALCAID(
+        int key) {
+      
+      return internalGetUnk3850CIBMHALCAID().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getUnk3850CIBMHALCAIDMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850CIBMHALCAID() {
+      return getUnk3850CIBMHALCAIDMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getUnk3850CIBMHALCAIDMap() {
+      return internalGetAdaptedUnk3850CIBMHALCAIDMap(
+          internalGetUnk3850CIBMHALCAID().getMap());}
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850CIBMHALCAID().getMap();
+      return map.containsKey(key)
+             ? unk3850CIBMHALCAIDValueConverter.doForward(map.get(key))
+             : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850CIBMHALCAID().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return unk3850CIBMHALCAIDValueConverter.doForward(map.get(key));
+    }
+    /**
+     * Use {@link #getUnk3850CIBMHALCAIDValueMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850CIBMHALCAIDValue() {
+      return getUnk3850CIBMHALCAIDValueMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getUnk3850CIBMHALCAIDValueMap() {
+      return internalGetUnk3850CIBMHALCAID().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3850CIBMHALCAIDValueOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850CIBMHALCAID().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+     */
+    @java.lang.Override
+
+    public int getUnk3850CIBMHALCAIDValueOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetUnk3850CIBMHALCAID().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
+    private int controllerId_;
+    /**
+     * <code>uint32 controller_id = 13;</code>
+     * @return The controllerId.
+     */
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 3;
     private int reason_;
     /**
-     * <code>.GCGReason reason = 5;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGReason reason = 5;</code>
+     * <code>.GCGReason reason = 3;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
@@ -322,303 +606,15 @@ public final class GCGMsgAddDiceOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
     }
 
-    public static final int ACBEOEAMOEF_FIELD_NUMBER = 3;
-    private static final class ACBEOEAMOEFDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.ENUM,
-                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_INVALID.getNumber());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> aCBEOEAMOEF_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetACBEOEAMOEF() {
-      if (aCBEOEAMOEF_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            ACBEOEAMOEFDefaultEntryHolder.defaultEntry);
-      }
-      return aCBEOEAMOEF_;
-    }
-    private static final
-    com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> aCBEOEAMOEFValueConverter =
-            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
-    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    internalGetAdaptedACBEOEAMOEFMap(
-        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
-      return new com.google.protobuf.Internal.MapAdapter<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
-              map, aCBEOEAMOEFValueConverter);
-    }
-
-    public int getACBEOEAMOEFCount() {
-      return internalGetACBEOEAMOEF().getMap().size();
-    }
+    public static final int CHANGE_COUNT_FIELD_NUMBER = 10;
+    private int changeCount_;
     /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsACBEOEAMOEF(
-        int key) {
-      
-      return internalGetACBEOEAMOEF().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getACBEOEAMOEFMap()} instead.
+     * <code>int32 change_count = 10;</code>
+     * @return The changeCount.
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getACBEOEAMOEF() {
-      return getACBEOEAMOEFMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getACBEOEAMOEFMap() {
-      return internalGetAdaptedACBEOEAMOEFMap(
-          internalGetACBEOEAMOEF().getMap());}
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetACBEOEAMOEF().getMap();
-      return map.containsKey(key)
-             ? aCBEOEAMOEFValueConverter.doForward(map.get(key))
-             : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetACBEOEAMOEF().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return aCBEOEAMOEFValueConverter.doForward(map.get(key));
-    }
-    /**
-     * Use {@link #getACBEOEAMOEFValueMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getACBEOEAMOEFValue() {
-      return getACBEOEAMOEFValueMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getACBEOEAMOEFValueMap() {
-      return internalGetACBEOEAMOEF().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public int getACBEOEAMOEFValueOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetACBEOEAMOEF().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-     */
-    @java.lang.Override
-
-    public int getACBEOEAMOEFValueOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetACBEOEAMOEF().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int HLOGPOGEMKE_FIELD_NUMBER = 10;
-    private static final class HLOGPOGEMKEDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.ENUM,
-                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_INVALID.getNumber());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> hLOGPOGEMKE_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetHLOGPOGEMKE() {
-      if (hLOGPOGEMKE_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            HLOGPOGEMKEDefaultEntryHolder.defaultEntry);
-      }
-      return hLOGPOGEMKE_;
-    }
-    private static final
-    com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> hLOGPOGEMKEValueConverter =
-            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
-    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    internalGetAdaptedHLOGPOGEMKEMap(
-        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
-      return new com.google.protobuf.Internal.MapAdapter<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
-              map, hLOGPOGEMKEValueConverter);
-    }
-
-    public int getHLOGPOGEMKECount() {
-      return internalGetHLOGPOGEMKE().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsHLOGPOGEMKE(
-        int key) {
-      
-      return internalGetHLOGPOGEMKE().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getHLOGPOGEMKEMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getHLOGPOGEMKE() {
-      return getHLOGPOGEMKEMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getHLOGPOGEMKEMap() {
-      return internalGetAdaptedHLOGPOGEMKEMap(
-          internalGetHLOGPOGEMKE().getMap());}
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetHLOGPOGEMKE().getMap();
-      return map.containsKey(key)
-             ? hLOGPOGEMKEValueConverter.doForward(map.get(key))
-             : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetHLOGPOGEMKE().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return hLOGPOGEMKEValueConverter.doForward(map.get(key));
-    }
-    /**
-     * Use {@link #getHLOGPOGEMKEValueMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getHLOGPOGEMKEValue() {
-      return getHLOGPOGEMKEValueMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getHLOGPOGEMKEValueMap() {
-      return internalGetHLOGPOGEMKE().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public int getHLOGPOGEMKEValueOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetHLOGPOGEMKE().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-     */
-    @java.lang.Override
-
-    public int getHLOGPOGEMKEValueOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetHLOGPOGEMKE().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 7;
-    private int controllerId_;
-    /**
-     * <code>uint32 controller_id = 7;</code>
-     * @return The controllerId.
-     */
-    @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
+    public int getChangeCount() {
+      return changeCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -635,27 +631,27 @@ public final class GCGMsgAddDiceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(3, reason_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetACBEOEAMOEF(),
-          ACBEOEAMOEFDefaultEntryHolder.defaultEntry,
-          3);
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.MNDCMMKBIBP_Default.getNumber()) {
-        output.writeEnum(5, reason_);
-      }
+          internalGetUnk3850CIBMHALCAID(),
+          Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry,
+          4);
       if (changeCount_ != 0) {
-        output.writeInt32(6, changeCount_);
-      }
-      if (controllerId_ != 0) {
-        output.writeUInt32(7, controllerId_);
+        output.writeInt32(10, changeCount_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetHLOGPOGEMKE(),
-          HLOGPOGEMKEDefaultEntryHolder.defaultEntry,
-          10);
+          internalGetUnk3850BBDHKLLMPKD(),
+          Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry,
+          11);
+      if (controllerId_ != 0) {
+        output.writeUInt32(13, controllerId_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -665,37 +661,37 @@ public final class GCGMsgAddDiceOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, reason_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetACBEOEAMOEF().getMap().entrySet()) {
+           : internalGetUnk3850CIBMHALCAID().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        aCBEOEAMOEF__ = ACBEOEAMOEFDefaultEntryHolder.defaultEntry.newBuilderForType()
+        unk3850CIBMHALCAID__ = Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, aCBEOEAMOEF__);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.MNDCMMKBIBP_Default.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, reason_);
+            .computeMessageSize(4, unk3850CIBMHALCAID__);
       }
       if (changeCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, changeCount_);
-      }
-      if (controllerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, controllerId_);
+          .computeInt32Size(10, changeCount_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetHLOGPOGEMKE().getMap().entrySet()) {
+           : internalGetUnk3850BBDHKLLMPKD().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        hLOGPOGEMKE__ = HLOGPOGEMKEDefaultEntryHolder.defaultEntry.newBuilderForType()
+        unk3850BBDHKLLMPKD__ = Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, hLOGPOGEMKE__);
+            .computeMessageSize(11, unk3850BBDHKLLMPKD__);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -712,15 +708,15 @@ public final class GCGMsgAddDiceOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice other = (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) obj;
 
-      if (getChangeCount()
-          != other.getChangeCount()) return false;
-      if (reason_ != other.reason_) return false;
-      if (!internalGetACBEOEAMOEF().equals(
-          other.internalGetACBEOEAMOEF())) return false;
-      if (!internalGetHLOGPOGEMKE().equals(
-          other.internalGetHLOGPOGEMKE())) return false;
+      if (!internalGetUnk3850BBDHKLLMPKD().equals(
+          other.internalGetUnk3850BBDHKLLMPKD())) return false;
+      if (!internalGetUnk3850CIBMHALCAID().equals(
+          other.internalGetUnk3850CIBMHALCAID())) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
+      if (reason_ != other.reason_) return false;
+      if (getChangeCount()
+          != other.getChangeCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -732,20 +728,20 @@ public final class GCGMsgAddDiceOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHANGE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getChangeCount();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      if (!internalGetACBEOEAMOEF().getMap().isEmpty()) {
-        hash = (37 * hash) + ACBEOEAMOEF_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetACBEOEAMOEF().hashCode();
+      if (!internalGetUnk3850BBDHKLLMPKD().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3850_BBDHKLLMPKD_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3850BBDHKLLMPKD().hashCode();
       }
-      if (!internalGetHLOGPOGEMKE().getMap().isEmpty()) {
-        hash = (37 * hash) + HLOGPOGEMKE_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetHLOGPOGEMKE().hashCode();
+      if (!internalGetUnk3850CIBMHALCAID().getMap().isEmpty()) {
+        hash = (37 * hash) + UNK3850_CIBMHALCAID_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetUnk3850CIBMHALCAID().hashCode();
       }
       hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + CHANGE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getChangeCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -842,10 +838,6 @@ public final class GCGMsgAddDiceOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DIHCMOBJACH
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgAddDice}
      */
     public static final class Builder extends
@@ -861,10 +853,10 @@ public final class GCGMsgAddDiceOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
-            return internalGetACBEOEAMOEF();
-          case 10:
-            return internalGetHLOGPOGEMKE();
+          case 11:
+            return internalGetUnk3850BBDHKLLMPKD();
+          case 4:
+            return internalGetUnk3850CIBMHALCAID();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -874,10 +866,10 @@ public final class GCGMsgAddDiceOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
-            return internalGetMutableACBEOEAMOEF();
-          case 10:
-            return internalGetMutableHLOGPOGEMKE();
+          case 11:
+            return internalGetMutableUnk3850BBDHKLLMPKD();
+          case 4:
+            return internalGetMutableUnk3850CIBMHALCAID();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -909,13 +901,13 @@ public final class GCGMsgAddDiceOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        changeCount_ = 0;
+        internalGetMutableUnk3850BBDHKLLMPKD().clear();
+        internalGetMutableUnk3850CIBMHALCAID().clear();
+        controllerId_ = 0;
 
         reason_ = 0;
 
-        internalGetMutableACBEOEAMOEF().clear();
-        internalGetMutableHLOGPOGEMKE().clear();
-        controllerId_ = 0;
+        changeCount_ = 0;
 
         return this;
       }
@@ -944,13 +936,13 @@ public final class GCGMsgAddDiceOuterClass {
       public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice buildPartial() {
         emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice result = new emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice(this);
         int from_bitField0_ = bitField0_;
-        result.changeCount_ = changeCount_;
-        result.reason_ = reason_;
-        result.aCBEOEAMOEF_ = internalGetACBEOEAMOEF();
-        result.aCBEOEAMOEF_.makeImmutable();
-        result.hLOGPOGEMKE_ = internalGetHLOGPOGEMKE();
-        result.hLOGPOGEMKE_.makeImmutable();
+        result.unk3850BBDHKLLMPKD_ = internalGetUnk3850BBDHKLLMPKD();
+        result.unk3850BBDHKLLMPKD_.makeImmutable();
+        result.unk3850CIBMHALCAID_ = internalGetUnk3850CIBMHALCAID();
+        result.unk3850CIBMHALCAID_.makeImmutable();
         result.controllerId_ = controllerId_;
+        result.reason_ = reason_;
+        result.changeCount_ = changeCount_;
         onBuilt();
         return result;
       }
@@ -999,18 +991,18 @@ public final class GCGMsgAddDiceOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice other) {
         if (other == emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance()) return this;
-        if (other.getChangeCount() != 0) {
-          setChangeCount(other.getChangeCount());
+        internalGetMutableUnk3850BBDHKLLMPKD().mergeFrom(
+            other.internalGetUnk3850BBDHKLLMPKD());
+        internalGetMutableUnk3850CIBMHALCAID().mergeFrom(
+            other.internalGetUnk3850CIBMHALCAID());
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        internalGetMutableACBEOEAMOEF().mergeFrom(
-            other.internalGetACBEOEAMOEF());
-        internalGetMutableHLOGPOGEMKE().mergeFrom(
-            other.internalGetHLOGPOGEMKE());
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
+        if (other.getChangeCount() != 0) {
+          setChangeCount(other.getChangeCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1042,47 +1034,461 @@ public final class GCGMsgAddDiceOuterClass {
       }
       private int bitField0_;
 
-      private int changeCount_ ;
-      /**
-       * <code>int32 change_count = 6;</code>
-       * @return The changeCount.
-       */
-      @java.lang.Override
-      public int getChangeCount() {
-        return changeCount_;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> unk3850BBDHKLLMPKD_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetUnk3850BBDHKLLMPKD() {
+        if (unk3850BBDHKLLMPKD_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry);
+        }
+        return unk3850BBDHKLLMPKD_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableUnk3850BBDHKLLMPKD() {
+        onChanged();;
+        if (unk3850BBDHKLLMPKD_ == null) {
+          unk3850BBDHKLLMPKD_ = com.google.protobuf.MapField.newMapField(
+              Unk3850BBDHKLLMPKDDefaultEntryHolder.defaultEntry);
+        }
+        if (!unk3850BBDHKLLMPKD_.isMutable()) {
+          unk3850BBDHKLLMPKD_ = unk3850BBDHKLLMPKD_.copy();
+        }
+        return unk3850BBDHKLLMPKD_;
+      }
+
+      public int getUnk3850BBDHKLLMPKDCount() {
+        return internalGetUnk3850BBDHKLLMPKD().getMap().size();
       }
       /**
-       * <code>int32 change_count = 6;</code>
-       * @param value The changeCount to set.
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsUnk3850BBDHKLLMPKD(
+          int key) {
+        
+        return internalGetUnk3850BBDHKLLMPKD().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getUnk3850BBDHKLLMPKDMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getUnk3850BBDHKLLMPKD() {
+        return getUnk3850BBDHKLLMPKDMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getUnk3850BBDHKLLMPKDMap() {
+        return internalGetAdaptedUnk3850BBDHKLLMPKDMap(
+            internalGetUnk3850BBDHKLLMPKD().getMap());}
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrDefault(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850BBDHKLLMPKD().getMap();
+        return map.containsKey(key)
+               ? unk3850BBDHKLLMPKDValueConverter.doForward(map.get(key))
+               : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850BBDHKLLMPKDOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850BBDHKLLMPKD().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return unk3850BBDHKLLMPKDValueConverter.doForward(map.get(key));
+      }
+      /**
+       * Use {@link #getUnk3850BBDHKLLMPKDValueMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getUnk3850BBDHKLLMPKDValue() {
+        return getUnk3850BBDHKLLMPKDValueMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getUnk3850BBDHKLLMPKDValueMap() {
+        return internalGetUnk3850BBDHKLLMPKD().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3850BBDHKLLMPKDValueOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850BBDHKLLMPKD().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3850BBDHKLLMPKDValueOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850BBDHKLLMPKD().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearUnk3850BBDHKLLMPKD() {
+        internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+
+      public Builder removeUnk3850BBDHKLLMPKD(
+          int key) {
+        
+        internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getMutableUnk3850BBDHKLLMPKD() {
+        return internalGetAdaptedUnk3850BBDHKLLMPKDMap(
+             internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap());
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      public Builder putUnk3850BBDHKLLMPKD(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap()
+            .put(key, unk3850BBDHKLLMPKDValueConverter.doBackward(value));
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      public Builder putAllUnk3850BBDHKLLMPKD(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
+        internalGetAdaptedUnk3850BBDHKLLMPKDMap(
+            internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap())
+                .putAll(values);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableUnk3850BBDHKLLMPKDValue() {
+        return internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      public Builder putUnk3850BBDHKLLMPKDValue(
+          int key,
+          int value) {
+        
+        internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_BBDHKLLMPKD = 11;</code>
+       */
+      public Builder putAllUnk3850BBDHKLLMPKDValue(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableUnk3850BBDHKLLMPKD().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> unk3850CIBMHALCAID_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetUnk3850CIBMHALCAID() {
+        if (unk3850CIBMHALCAID_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry);
+        }
+        return unk3850CIBMHALCAID_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableUnk3850CIBMHALCAID() {
+        onChanged();;
+        if (unk3850CIBMHALCAID_ == null) {
+          unk3850CIBMHALCAID_ = com.google.protobuf.MapField.newMapField(
+              Unk3850CIBMHALCAIDDefaultEntryHolder.defaultEntry);
+        }
+        if (!unk3850CIBMHALCAID_.isMutable()) {
+          unk3850CIBMHALCAID_ = unk3850CIBMHALCAID_.copy();
+        }
+        return unk3850CIBMHALCAID_;
+      }
+
+      public int getUnk3850CIBMHALCAIDCount() {
+        return internalGetUnk3850CIBMHALCAID().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsUnk3850CIBMHALCAID(
+          int key) {
+        
+        return internalGetUnk3850CIBMHALCAID().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getUnk3850CIBMHALCAIDMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getUnk3850CIBMHALCAID() {
+        return getUnk3850CIBMHALCAIDMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getUnk3850CIBMHALCAIDMap() {
+        return internalGetAdaptedUnk3850CIBMHALCAIDMap(
+            internalGetUnk3850CIBMHALCAID().getMap());}
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrDefault(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850CIBMHALCAID().getMap();
+        return map.containsKey(key)
+               ? unk3850CIBMHALCAIDValueConverter.doForward(map.get(key))
+               : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getUnk3850CIBMHALCAIDOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850CIBMHALCAID().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return unk3850CIBMHALCAIDValueConverter.doForward(map.get(key));
+      }
+      /**
+       * Use {@link #getUnk3850CIBMHALCAIDValueMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getUnk3850CIBMHALCAIDValue() {
+        return getUnk3850CIBMHALCAIDValueMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getUnk3850CIBMHALCAIDValueMap() {
+        return internalGetUnk3850CIBMHALCAID().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3850CIBMHALCAIDValueOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850CIBMHALCAID().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      @java.lang.Override
+
+      public int getUnk3850CIBMHALCAIDValueOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetUnk3850CIBMHALCAID().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearUnk3850CIBMHALCAID() {
+        internalGetMutableUnk3850CIBMHALCAID().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+
+      public Builder removeUnk3850CIBMHALCAID(
+          int key) {
+        
+        internalGetMutableUnk3850CIBMHALCAID().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getMutableUnk3850CIBMHALCAID() {
+        return internalGetAdaptedUnk3850CIBMHALCAIDMap(
+             internalGetMutableUnk3850CIBMHALCAID().getMutableMap());
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      public Builder putUnk3850CIBMHALCAID(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableUnk3850CIBMHALCAID().getMutableMap()
+            .put(key, unk3850CIBMHALCAIDValueConverter.doBackward(value));
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      public Builder putAllUnk3850CIBMHALCAID(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
+        internalGetAdaptedUnk3850CIBMHALCAIDMap(
+            internalGetMutableUnk3850CIBMHALCAID().getMutableMap())
+                .putAll(values);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableUnk3850CIBMHALCAIDValue() {
+        return internalGetMutableUnk3850CIBMHALCAID().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      public Builder putUnk3850CIBMHALCAIDValue(
+          int key,
+          int value) {
+        
+        internalGetMutableUnk3850CIBMHALCAID().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; Unk3850_CIBMHALCAID = 4;</code>
+       */
+      public Builder putAllUnk3850CIBMHALCAIDValue(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableUnk3850CIBMHALCAID().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private int controllerId_ ;
+      /**
+       * <code>uint32 controller_id = 13;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <code>uint32 controller_id = 13;</code>
+       * @param value The controllerId to set.
        * @return This builder for chaining.
        */
-      public Builder setChangeCount(int value) {
+      public Builder setControllerId(int value) {
         
-        changeCount_ = value;
+        controllerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 change_count = 6;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChangeCount() {
+      public Builder clearControllerId() {
         
-        changeCount_ = 0;
+        controllerId_ = 0;
         onChanged();
         return this;
       }
 
       private int reason_ = 0;
       /**
-       * <code>.GCGReason reason = 5;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGReason reason = 5;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -1093,7 +1499,7 @@ public final class GCGMsgAddDiceOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 5;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -1103,7 +1509,7 @@ public final class GCGMsgAddDiceOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGReason reason = 5;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -1117,7 +1523,7 @@ public final class GCGMsgAddDiceOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 5;</code>
+       * <code>.GCGReason reason = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1127,447 +1533,33 @@ public final class GCGMsgAddDiceOuterClass {
         return this;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> aCBEOEAMOEF_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetACBEOEAMOEF() {
-        if (aCBEOEAMOEF_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              ACBEOEAMOEFDefaultEntryHolder.defaultEntry);
-        }
-        return aCBEOEAMOEF_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableACBEOEAMOEF() {
-        onChanged();;
-        if (aCBEOEAMOEF_ == null) {
-          aCBEOEAMOEF_ = com.google.protobuf.MapField.newMapField(
-              ACBEOEAMOEFDefaultEntryHolder.defaultEntry);
-        }
-        if (!aCBEOEAMOEF_.isMutable()) {
-          aCBEOEAMOEF_ = aCBEOEAMOEF_.copy();
-        }
-        return aCBEOEAMOEF_;
-      }
-
-      public int getACBEOEAMOEFCount() {
-        return internalGetACBEOEAMOEF().getMap().size();
-      }
+      private int changeCount_ ;
       /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsACBEOEAMOEF(
-          int key) {
-        
-        return internalGetACBEOEAMOEF().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getACBEOEAMOEFMap()} instead.
+       * <code>int32 change_count = 10;</code>
+       * @return The changeCount.
        */
       @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getACBEOEAMOEF() {
-        return getACBEOEAMOEFMap();
+      public int getChangeCount() {
+        return changeCount_;
       }
       /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getACBEOEAMOEFMap() {
-        return internalGetAdaptedACBEOEAMOEFMap(
-            internalGetACBEOEAMOEF().getMap());}
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrDefault(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetACBEOEAMOEF().getMap();
-        return map.containsKey(key)
-               ? aCBEOEAMOEFValueConverter.doForward(map.get(key))
-               : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getACBEOEAMOEFOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetACBEOEAMOEF().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return aCBEOEAMOEFValueConverter.doForward(map.get(key));
-      }
-      /**
-       * Use {@link #getACBEOEAMOEFValueMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getACBEOEAMOEFValue() {
-        return getACBEOEAMOEFValueMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getACBEOEAMOEFValueMap() {
-        return internalGetACBEOEAMOEF().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public int getACBEOEAMOEFValueOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetACBEOEAMOEF().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      @java.lang.Override
-
-      public int getACBEOEAMOEFValueOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetACBEOEAMOEF().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearACBEOEAMOEF() {
-        internalGetMutableACBEOEAMOEF().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-
-      public Builder removeACBEOEAMOEF(
-          int key) {
-        
-        internalGetMutableACBEOEAMOEF().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getMutableACBEOEAMOEF() {
-        return internalGetAdaptedACBEOEAMOEFMap(
-             internalGetMutableACBEOEAMOEF().getMutableMap());
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      public Builder putACBEOEAMOEF(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableACBEOEAMOEF().getMutableMap()
-            .put(key, aCBEOEAMOEFValueConverter.doBackward(value));
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      public Builder putAllACBEOEAMOEF(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
-        internalGetAdaptedACBEOEAMOEFMap(
-            internalGetMutableACBEOEAMOEF().getMutableMap())
-                .putAll(values);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableACBEOEAMOEFValue() {
-        return internalGetMutableACBEOEAMOEF().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      public Builder putACBEOEAMOEFValue(
-          int key,
-          int value) {
-        
-        internalGetMutableACBEOEAMOEF().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; ACBEOEAMOEF = 3;</code>
-       */
-      public Builder putAllACBEOEAMOEFValue(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableACBEOEAMOEF().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> hLOGPOGEMKE_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetHLOGPOGEMKE() {
-        if (hLOGPOGEMKE_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              HLOGPOGEMKEDefaultEntryHolder.defaultEntry);
-        }
-        return hLOGPOGEMKE_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableHLOGPOGEMKE() {
-        onChanged();;
-        if (hLOGPOGEMKE_ == null) {
-          hLOGPOGEMKE_ = com.google.protobuf.MapField.newMapField(
-              HLOGPOGEMKEDefaultEntryHolder.defaultEntry);
-        }
-        if (!hLOGPOGEMKE_.isMutable()) {
-          hLOGPOGEMKE_ = hLOGPOGEMKE_.copy();
-        }
-        return hLOGPOGEMKE_;
-      }
-
-      public int getHLOGPOGEMKECount() {
-        return internalGetHLOGPOGEMKE().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsHLOGPOGEMKE(
-          int key) {
-        
-        return internalGetHLOGPOGEMKE().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getHLOGPOGEMKEMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getHLOGPOGEMKE() {
-        return getHLOGPOGEMKEMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getHLOGPOGEMKEMap() {
-        return internalGetAdaptedHLOGPOGEMKEMap(
-            internalGetHLOGPOGEMKE().getMap());}
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrDefault(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetHLOGPOGEMKE().getMap();
-        return map.containsKey(key)
-               ? hLOGPOGEMKEValueConverter.doForward(map.get(key))
-               : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getHLOGPOGEMKEOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetHLOGPOGEMKE().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return hLOGPOGEMKEValueConverter.doForward(map.get(key));
-      }
-      /**
-       * Use {@link #getHLOGPOGEMKEValueMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getHLOGPOGEMKEValue() {
-        return getHLOGPOGEMKEValueMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getHLOGPOGEMKEValueMap() {
-        return internalGetHLOGPOGEMKE().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public int getHLOGPOGEMKEValueOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetHLOGPOGEMKE().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      @java.lang.Override
-
-      public int getHLOGPOGEMKEValueOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetHLOGPOGEMKE().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearHLOGPOGEMKE() {
-        internalGetMutableHLOGPOGEMKE().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-
-      public Builder removeHLOGPOGEMKE(
-          int key) {
-        
-        internalGetMutableHLOGPOGEMKE().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getMutableHLOGPOGEMKE() {
-        return internalGetAdaptedHLOGPOGEMKEMap(
-             internalGetMutableHLOGPOGEMKE().getMutableMap());
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      public Builder putHLOGPOGEMKE(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableHLOGPOGEMKE().getMutableMap()
-            .put(key, hLOGPOGEMKEValueConverter.doBackward(value));
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      public Builder putAllHLOGPOGEMKE(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
-        internalGetAdaptedHLOGPOGEMKEMap(
-            internalGetMutableHLOGPOGEMKE().getMutableMap())
-                .putAll(values);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableHLOGPOGEMKEValue() {
-        return internalGetMutableHLOGPOGEMKE().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      public Builder putHLOGPOGEMKEValue(
-          int key,
-          int value) {
-        
-        internalGetMutableHLOGPOGEMKE().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; HLOGPOGEMKE = 10;</code>
-       */
-      public Builder putAllHLOGPOGEMKEValue(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableHLOGPOGEMKE().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 7;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 7;</code>
-       * @param value The controllerId to set.
+       * <code>int32 change_count = 10;</code>
+       * @param value The changeCount to set.
        * @return This builder for chaining.
        */
-      public Builder setControllerId(int value) {
+      public Builder setChangeCount(int value) {
         
-        controllerId_ = value;
+        changeCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 controller_id = 7;</code>
+       * <code>int32 change_count = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearControllerId() {
+      public Builder clearChangeCount() {
         
-        controllerId_ = 0;
+        changeCount_ = 0;
         onChanged();
         return this;
       }
@@ -1630,15 +1622,15 @@ public final class GCGMsgAddDiceOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GCGMsgAddDice_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_descriptor;
+    internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_fieldAccessorTable;
+      internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_descriptor;
+    internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_fieldAccessorTable;
+      internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1648,44 +1640,46 @@ public final class GCGMsgAddDiceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGMsgAddDice.proto\032\017GCGReason.proto\032\025" +
-      "GCGDiceSideType.proto\"\320\002\n\rGCGMsgAddDice\022" +
-      "\024\n\014change_count\030\006 \001(\005\022\032\n\006reason\030\005 \001(\0162\n." +
-      "GCGReason\0224\n\013ACBEOEAMOEF\030\003 \003(\0132\037.GCGMsgA" +
-      "ddDice.ACBEOEAMOEFEntry\0224\n\013HLOGPOGEMKE\030\n" +
-      " \003(\0132\037.GCGMsgAddDice.HLOGPOGEMKEEntry\022\025\n" +
-      "\rcontroller_id\030\007 \001(\r\032D\n\020ACBEOEAMOEFEntry" +
-      "\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSi" +
-      "deType:\0028\001\032D\n\020HLOGPOGEMKEEntry\022\013\n\003key\030\001 " +
-      "\001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSideType:\0028\001" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\023GCGMsgAddDice.proto\032\025GCGDiceSideType.p" +
+      "roto\032\017GCGReason.proto\"\374\002\n\rGCGMsgAddDice\022" +
+      "C\n\023Unk3850_BBDHKLLMPKD\030\013 \003(\0132&.GCGMsgAdd" +
+      "Dice.Unk3850BBDHKLLMPKDEntry\022C\n\023Unk3850_" +
+      "CIBMHALCAID\030\004 \003(\0132&.GCGMsgAddDice.Unk385" +
+      "0CIBMHALCAIDEntry\022\025\n\rcontroller_id\030\r \001(\r" +
+      "\022\032\n\006reason\030\003 \001(\0162\n.GCGReason\022\024\n\014change_c" +
+      "ount\030\n \001(\005\032K\n\027Unk3850BBDHKLLMPKDEntry\022\013\n" +
+      "\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSideT" +
+      "ype:\0028\001\032K\n\027Unk3850CIBMHALCAIDEntry\022\013\n\003ke" +
+      "y\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSideType" +
+      ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgAddDice_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgAddDice_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgAddDice_descriptor,
-        new java.lang.String[] { "ChangeCount", "Reason", "ACBEOEAMOEF", "HLOGPOGEMKE", "ControllerId", });
-    internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_descriptor =
+        new java.lang.String[] { "Unk3850BBDHKLLMPKD", "Unk3850CIBMHALCAID", "ControllerId", "Reason", "ChangeCount", });
+    internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_descriptor =
       internal_static_GCGMsgAddDice_descriptor.getNestedTypes().get(0);
-    internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_fieldAccessorTable = new
+    internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgAddDice_ACBEOEAMOEFEntry_descriptor,
+        internal_static_GCGMsgAddDice_Unk3850BBDHKLLMPKDEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_descriptor =
+    internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_descriptor =
       internal_static_GCGMsgAddDice_descriptor.getNestedTypes().get(1);
-    internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_fieldAccessorTable = new
+    internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgAddDice_HLOGPOGEMKEEntry_descriptor,
+        internal_static_GCGMsgAddDice_Unk3850CIBMHALCAIDEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

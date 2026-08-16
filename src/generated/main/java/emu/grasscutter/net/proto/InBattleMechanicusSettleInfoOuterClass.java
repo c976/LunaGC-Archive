@@ -19,76 +19,120 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OPBCDCIEDHF = 2;</code>
-     * @return The oPBCDCIEDHF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
-    int getOPBCDCIEDHF();
-
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> 
+    java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> 
         getWatcherListList();
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
-    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index);
+    emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB getWatcherList(int index);
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     int getWatcherListCount();
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder> 
         getWatcherListOrBuilderList();
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
-    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
+    emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder getWatcherListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 play_index = 6;</code>
-     * @return The playIndex.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 BPKPCDLCKBG = 3;</code>
+     * @return The bPKPCDLCKBG.
      */
-    int getPlayIndex();
+    int getBPKPCDLCKBG();
 
     /**
-     * <code>uint32 MOPJLMJENOM = 5;</code>
-     * @return The mOPJLMJENOM.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 ICENFPCNOBH = 4;</code>
+     * @return The iCENFPCNOBH.
      */
-    int getMOPJLMJENOM();
+    int getICENFPCNOBH();
 
     /**
-     * <code>uint64 scene_time_ms = 13;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 FGMALCOMBAI = 8;</code>
+     * @return The fGMALCOMBAI.
+     */
+    int getFGMALCOMBAI();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 6;</code>
      * @return The sceneTimeMs.
      */
     long getSceneTimeMs();
 
     /**
-     * <code>bool is_success = 7;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>bool is_success = 9;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 MEKFBBKKKGP = 15;</code>
-     * @return The mEKFBBKKKGP.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 NIIEFNIEECK = 5;</code>
+     * @return The nIIEFNIEECK.
      */
-    int getMEKFBBKKKGP();
+    int getNIIEFNIEECK();
   }
   /**
-   * <pre>
-   * Obf: JHMFLFANOLC
-   * </pre>
-   *
    * Protobuf type {@code InBattleMechanicusSettleInfo}
    */
   public static final class InBattleMechanicusSettleInfo extends
@@ -135,48 +179,48 @@ public final class InBattleMechanicusSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              oPBCDCIEDHF_ = input.readUInt32();
+              bPKPCDLCKBG_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              iCENFPCNOBH_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              mOPJLMJENOM_ = input.readUInt32();
+              nIIEFNIEECK_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              playIndex_ = input.readUInt32();
+              sceneTimeMs_ = input.readUInt64();
               break;
             }
-            case 56: {
+            case 64: {
+
+              fGMALCOMBAI_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              watcherList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
+            case 88: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 104: {
-
-              sceneTimeMs_ = input.readUInt64();
-              break;
-            }
-            case 120: {
-
-              mEKFBBKKKGP_ = input.readUInt32();
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              watcherList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -214,61 +258,74 @@ public final class InBattleMechanicusSettleInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo.class, emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo.Builder.class);
     }
 
-    public static final int OPBCDCIEDHF_FIELD_NUMBER = 2;
-    private int oPBCDCIEDHF_;
+    public static final int WATCHER_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> watcherList_;
     /**
-     * <code>uint32 OPBCDCIEDHF = 2;</code>
-     * @return The oPBCDCIEDHF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     @java.lang.Override
-    public int getOPBCDCIEDHF() {
-      return oPBCDCIEDHF_;
-    }
-
-    public static final int WATCHER_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> watcherList_;
-    /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> getWatcherListList() {
+    public java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> getWatcherListList() {
       return watcherList_;
     }
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder> 
         getWatcherListOrBuilderList() {
       return watcherList_;
     }
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     @java.lang.Override
     public int getWatcherListCount() {
       return watcherList_.size();
     }
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index) {
+    public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB getWatcherList(int index) {
       return watcherList_.get(index);
     }
     /**
-     * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
+    public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder getWatcherListOrBuilder(
         int index) {
       return watcherList_.get(index);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 12;
+    public static final int GROUP_ID_FIELD_NUMBER = 11;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -276,32 +333,59 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return groupId_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 6;
-    private int playIndex_;
+    public static final int BPKPCDLCKBG_FIELD_NUMBER = 3;
+    private int bPKPCDLCKBG_;
     /**
-     * <code>uint32 play_index = 6;</code>
-     * @return The playIndex.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 BPKPCDLCKBG = 3;</code>
+     * @return The bPKPCDLCKBG.
      */
     @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
+    public int getBPKPCDLCKBG() {
+      return bPKPCDLCKBG_;
     }
 
-    public static final int MOPJLMJENOM_FIELD_NUMBER = 5;
-    private int mOPJLMJENOM_;
+    public static final int ICENFPCNOBH_FIELD_NUMBER = 4;
+    private int iCENFPCNOBH_;
     /**
-     * <code>uint32 MOPJLMJENOM = 5;</code>
-     * @return The mOPJLMJENOM.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 ICENFPCNOBH = 4;</code>
+     * @return The iCENFPCNOBH.
      */
     @java.lang.Override
-    public int getMOPJLMJENOM() {
-      return mOPJLMJENOM_;
+    public int getICENFPCNOBH() {
+      return iCENFPCNOBH_;
     }
 
-    public static final int SCENE_TIME_MS_FIELD_NUMBER = 13;
+    public static final int FGMALCOMBAI_FIELD_NUMBER = 8;
+    private int fGMALCOMBAI_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 FGMALCOMBAI = 8;</code>
+     * @return The fGMALCOMBAI.
+     */
+    @java.lang.Override
+    public int getFGMALCOMBAI() {
+      return fGMALCOMBAI_;
+    }
+
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 6;
     private long sceneTimeMs_;
     /**
-     * <code>uint64 scene_time_ms = 13;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 6;</code>
      * @return The sceneTimeMs.
      */
     @java.lang.Override
@@ -309,10 +393,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return sceneTimeMs_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 7;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 9;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 7;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>bool is_success = 9;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -320,15 +408,19 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return isSuccess_;
     }
 
-    public static final int MEKFBBKKKGP_FIELD_NUMBER = 15;
-    private int mEKFBBKKKGP_;
+    public static final int NIIEFNIEECK_FIELD_NUMBER = 5;
+    private int nIIEFNIEECK_;
     /**
-     * <code>uint32 MEKFBBKKKGP = 15;</code>
-     * @return The mEKFBBKKKGP.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 NIIEFNIEECK = 5;</code>
+     * @return The nIIEFNIEECK.
      */
     @java.lang.Override
-    public int getMEKFBBKKKGP() {
-      return mEKFBBKKKGP_;
+    public int getNIIEFNIEECK() {
+      return nIIEFNIEECK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -345,29 +437,29 @@ public final class InBattleMechanicusSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oPBCDCIEDHF_ != 0) {
-        output.writeUInt32(2, oPBCDCIEDHF_);
+      if (bPKPCDLCKBG_ != 0) {
+        output.writeUInt32(3, bPKPCDLCKBG_);
       }
-      if (mOPJLMJENOM_ != 0) {
-        output.writeUInt32(5, mOPJLMJENOM_);
+      if (iCENFPCNOBH_ != 0) {
+        output.writeUInt32(4, iCENFPCNOBH_);
       }
-      if (playIndex_ != 0) {
-        output.writeUInt32(6, playIndex_);
-      }
-      if (isSuccess_ != false) {
-        output.writeBool(7, isSuccess_);
-      }
-      for (int i = 0; i < watcherList_.size(); i++) {
-        output.writeMessage(10, watcherList_.get(i));
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(12, groupId_);
+      if (nIIEFNIEECK_ != 0) {
+        output.writeUInt32(5, nIIEFNIEECK_);
       }
       if (sceneTimeMs_ != 0L) {
-        output.writeUInt64(13, sceneTimeMs_);
+        output.writeUInt64(6, sceneTimeMs_);
       }
-      if (mEKFBBKKKGP_ != 0) {
-        output.writeUInt32(15, mEKFBBKKKGP_);
+      if (fGMALCOMBAI_ != 0) {
+        output.writeUInt32(8, fGMALCOMBAI_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(9, isSuccess_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(11, groupId_);
+      }
+      for (int i = 0; i < watcherList_.size(); i++) {
+        output.writeMessage(14, watcherList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -378,37 +470,37 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oPBCDCIEDHF_ != 0) {
+      if (bPKPCDLCKBG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, oPBCDCIEDHF_);
+          .computeUInt32Size(3, bPKPCDLCKBG_);
       }
-      if (mOPJLMJENOM_ != 0) {
+      if (iCENFPCNOBH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, mOPJLMJENOM_);
+          .computeUInt32Size(4, iCENFPCNOBH_);
       }
-      if (playIndex_ != 0) {
+      if (nIIEFNIEECK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playIndex_);
-      }
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSuccess_);
-      }
-      for (int i = 0; i < watcherList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, watcherList_.get(i));
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, groupId_);
+          .computeUInt32Size(5, nIIEFNIEECK_);
       }
       if (sceneTimeMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, sceneTimeMs_);
+          .computeUInt64Size(6, sceneTimeMs_);
       }
-      if (mEKFBBKKKGP_ != 0) {
+      if (fGMALCOMBAI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, mEKFBBKKKGP_);
+          .computeUInt32Size(8, fGMALCOMBAI_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, isSuccess_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, groupId_);
+      }
+      for (int i = 0; i < watcherList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, watcherList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -425,22 +517,22 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo other = (emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo) obj;
 
-      if (getOPBCDCIEDHF()
-          != other.getOPBCDCIEDHF()) return false;
       if (!getWatcherListList()
           .equals(other.getWatcherListList())) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
-      if (getMOPJLMJENOM()
-          != other.getMOPJLMJENOM()) return false;
+      if (getBPKPCDLCKBG()
+          != other.getBPKPCDLCKBG()) return false;
+      if (getICENFPCNOBH()
+          != other.getICENFPCNOBH()) return false;
+      if (getFGMALCOMBAI()
+          != other.getFGMALCOMBAI()) return false;
       if (getSceneTimeMs()
           != other.getSceneTimeMs()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (getMEKFBBKKKGP()
-          != other.getMEKFBBKKKGP()) return false;
+      if (getNIIEFNIEECK()
+          != other.getNIIEFNIEECK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -452,26 +544,26 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPBCDCIEDHF_FIELD_NUMBER;
-      hash = (53 * hash) + getOPBCDCIEDHF();
       if (getWatcherListCount() > 0) {
         hash = (37 * hash) + WATCHER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherListList().hashCode();
       }
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
-      hash = (37 * hash) + MOPJLMJENOM_FIELD_NUMBER;
-      hash = (53 * hash) + getMOPJLMJENOM();
+      hash = (37 * hash) + BPKPCDLCKBG_FIELD_NUMBER;
+      hash = (53 * hash) + getBPKPCDLCKBG();
+      hash = (37 * hash) + ICENFPCNOBH_FIELD_NUMBER;
+      hash = (53 * hash) + getICENFPCNOBH();
+      hash = (37 * hash) + FGMALCOMBAI_FIELD_NUMBER;
+      hash = (53 * hash) + getFGMALCOMBAI();
       hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getSceneTimeMs());
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + MEKFBBKKKGP_FIELD_NUMBER;
-      hash = (53 * hash) + getMEKFBBKKKGP();
+      hash = (37 * hash) + NIIEFNIEECK_FIELD_NUMBER;
+      hash = (53 * hash) + getNIIEFNIEECK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -568,10 +660,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JHMFLFANOLC
-     * </pre>
-     *
      * Protobuf type {@code InBattleMechanicusSettleInfo}
      */
     public static final class Builder extends
@@ -610,8 +698,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oPBCDCIEDHF_ = 0;
-
         if (watcherListBuilder_ == null) {
           watcherList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -620,15 +706,17 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
         groupId_ = 0;
 
-        playIndex_ = 0;
+        bPKPCDLCKBG_ = 0;
 
-        mOPJLMJENOM_ = 0;
+        iCENFPCNOBH_ = 0;
+
+        fGMALCOMBAI_ = 0;
 
         sceneTimeMs_ = 0L;
 
         isSuccess_ = false;
 
-        mEKFBBKKKGP_ = 0;
+        nIIEFNIEECK_ = 0;
 
         return this;
       }
@@ -657,7 +745,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo result = new emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.oPBCDCIEDHF_ = oPBCDCIEDHF_;
         if (watcherListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             watcherList_ = java.util.Collections.unmodifiableList(watcherList_);
@@ -668,11 +755,12 @@ public final class InBattleMechanicusSettleInfoOuterClass {
           result.watcherList_ = watcherListBuilder_.build();
         }
         result.groupId_ = groupId_;
-        result.playIndex_ = playIndex_;
-        result.mOPJLMJENOM_ = mOPJLMJENOM_;
+        result.bPKPCDLCKBG_ = bPKPCDLCKBG_;
+        result.iCENFPCNOBH_ = iCENFPCNOBH_;
+        result.fGMALCOMBAI_ = fGMALCOMBAI_;
         result.sceneTimeMs_ = sceneTimeMs_;
         result.isSuccess_ = isSuccess_;
-        result.mEKFBBKKKGP_ = mEKFBBKKKGP_;
+        result.nIIEFNIEECK_ = nIIEFNIEECK_;
         onBuilt();
         return result;
       }
@@ -721,9 +809,6 @@ public final class InBattleMechanicusSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusSettleInfoOuterClass.InBattleMechanicusSettleInfo.getDefaultInstance()) return this;
-        if (other.getOPBCDCIEDHF() != 0) {
-          setOPBCDCIEDHF(other.getOPBCDCIEDHF());
-        }
         if (watcherListBuilder_ == null) {
           if (!other.watcherList_.isEmpty()) {
             if (watcherList_.isEmpty()) {
@@ -753,11 +838,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
+        if (other.getBPKPCDLCKBG() != 0) {
+          setBPKPCDLCKBG(other.getBPKPCDLCKBG());
         }
-        if (other.getMOPJLMJENOM() != 0) {
-          setMOPJLMJENOM(other.getMOPJLMJENOM());
+        if (other.getICENFPCNOBH() != 0) {
+          setICENFPCNOBH(other.getICENFPCNOBH());
+        }
+        if (other.getFGMALCOMBAI() != 0) {
+          setFGMALCOMBAI(other.getFGMALCOMBAI());
         }
         if (other.getSceneTimeMs() != 0L) {
           setSceneTimeMs(other.getSceneTimeMs());
@@ -765,8 +853,8 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        if (other.getMEKFBBKKKGP() != 0) {
-          setMEKFBBKKKGP(other.getMEKFBBKKKGP());
+        if (other.getNIIEFNIEECK() != 0) {
+          setNIIEFNIEECK(other.getNIIEFNIEECK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -798,53 +886,26 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int oPBCDCIEDHF_ ;
-      /**
-       * <code>uint32 OPBCDCIEDHF = 2;</code>
-       * @return The oPBCDCIEDHF.
-       */
-      @java.lang.Override
-      public int getOPBCDCIEDHF() {
-        return oPBCDCIEDHF_;
-      }
-      /**
-       * <code>uint32 OPBCDCIEDHF = 2;</code>
-       * @param value The oPBCDCIEDHF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOPBCDCIEDHF(int value) {
-        
-        oPBCDCIEDHF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OPBCDCIEDHF = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOPBCDCIEDHF() {
-        
-        oPBCDCIEDHF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> watcherList_ =
+      private java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> watcherList_ =
         java.util.Collections.emptyList();
       private void ensureWatcherListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo>(watcherList_);
+          watcherList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB>(watcherList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> watcherListBuilder_;
+          emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder> watcherListBuilder_;
 
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> getWatcherListList() {
+      public java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> getWatcherListList() {
         if (watcherListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(watcherList_);
         } else {
@@ -852,7 +913,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public int getWatcherListCount() {
         if (watcherListBuilder_ == null) {
@@ -862,9 +927,13 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo getWatcherList(int index) {
+      public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB getWatcherList(int index) {
         if (watcherListBuilder_ == null) {
           return watcherList_.get(index);
         } else {
@@ -872,10 +941,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder setWatcherList(
-          int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
+          int index, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB value) {
         if (watcherListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -889,10 +962,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder setWatcherList(
-          int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder builderForValue) {
         if (watcherListBuilder_ == null) {
           ensureWatcherListIsMutable();
           watcherList_.set(index, builderForValue.build());
@@ -903,9 +980,13 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public Builder addWatcherList(emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
+      public Builder addWatcherList(emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB value) {
         if (watcherListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -919,10 +1000,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder addWatcherList(
-          int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo value) {
+          int index, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB value) {
         if (watcherListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -936,10 +1021,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder addWatcherList(
-          emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder builderForValue) {
         if (watcherListBuilder_ == null) {
           ensureWatcherListIsMutable();
           watcherList_.add(builderForValue.build());
@@ -950,10 +1039,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder addWatcherList(
-          int index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder builderForValue) {
         if (watcherListBuilder_ == null) {
           ensureWatcherListIsMutable();
           watcherList_.add(index, builderForValue.build());
@@ -964,10 +1057,14 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder addAllWatcherList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB> values) {
         if (watcherListBuilder_ == null) {
           ensureWatcherListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -979,7 +1076,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder clearWatcherList() {
         if (watcherListBuilder_ == null) {
@@ -992,7 +1093,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
       public Builder removeWatcherList(int index) {
         if (watcherListBuilder_ == null) {
@@ -1005,16 +1110,24 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder getWatcherListBuilder(
+      public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder getWatcherListBuilder(
           int index) {
         return getWatcherListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder getWatcherListOrBuilder(
+      public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder getWatcherListOrBuilder(
           int index) {
         if (watcherListBuilder_ == null) {
           return watcherList_.get(index);  } else {
@@ -1022,9 +1135,13 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder> 
            getWatcherListOrBuilderList() {
         if (watcherListBuilder_ != null) {
           return watcherListBuilder_.getMessageOrBuilderList();
@@ -1033,33 +1150,45 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder addWatcherListBuilder() {
+      public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder addWatcherListBuilder() {
         return getWatcherListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.getDefaultInstance());
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder addWatcherListBuilder(
+      public emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder addWatcherListBuilder(
           int index) {
         return getWatcherListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.getDefaultInstance());
       }
       /**
-       * <code>repeated .MultistageSettleWatcherInfo watcher_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NFDAPHPOJHB watcher_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder> 
            getWatcherListBuilderList() {
         return getWatcherListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder> 
+          emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder> 
           getWatcherListFieldBuilder() {
         if (watcherListBuilder_ == null) {
           watcherListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfo.Builder, emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.MultistageSettleWatcherInfoOrBuilder>(
+              emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHB.Builder, emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.NFDAPHPOJHBOrBuilder>(
                   watcherList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1071,7 +1200,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 group_id = 11;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -1079,7 +1212,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 group_id = 11;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -1090,7 +1227,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 group_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -1100,71 +1241,142 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
 
-      private int playIndex_ ;
+      private int bPKPCDLCKBG_ ;
       /**
-       * <code>uint32 play_index = 6;</code>
-       * @return The playIndex.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 BPKPCDLCKBG = 3;</code>
+       * @return The bPKPCDLCKBG.
        */
       @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
+      public int getBPKPCDLCKBG() {
+        return bPKPCDLCKBG_;
       }
       /**
-       * <code>uint32 play_index = 6;</code>
-       * @param value The playIndex to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 BPKPCDLCKBG = 3;</code>
+       * @param value The bPKPCDLCKBG to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayIndex(int value) {
+      public Builder setBPKPCDLCKBG(int value) {
         
-        playIndex_ = value;
+        bPKPCDLCKBG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 play_index = 6;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 BPKPCDLCKBG = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPlayIndex() {
+      public Builder clearBPKPCDLCKBG() {
         
-        playIndex_ = 0;
+        bPKPCDLCKBG_ = 0;
         onChanged();
         return this;
       }
 
-      private int mOPJLMJENOM_ ;
+      private int iCENFPCNOBH_ ;
       /**
-       * <code>uint32 MOPJLMJENOM = 5;</code>
-       * @return The mOPJLMJENOM.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 ICENFPCNOBH = 4;</code>
+       * @return The iCENFPCNOBH.
        */
       @java.lang.Override
-      public int getMOPJLMJENOM() {
-        return mOPJLMJENOM_;
+      public int getICENFPCNOBH() {
+        return iCENFPCNOBH_;
       }
       /**
-       * <code>uint32 MOPJLMJENOM = 5;</code>
-       * @param value The mOPJLMJENOM to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 ICENFPCNOBH = 4;</code>
+       * @param value The iCENFPCNOBH to set.
        * @return This builder for chaining.
        */
-      public Builder setMOPJLMJENOM(int value) {
+      public Builder setICENFPCNOBH(int value) {
         
-        mOPJLMJENOM_ = value;
+        iCENFPCNOBH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MOPJLMJENOM = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 ICENFPCNOBH = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMOPJLMJENOM() {
+      public Builder clearICENFPCNOBH() {
         
-        mOPJLMJENOM_ = 0;
+        iCENFPCNOBH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fGMALCOMBAI_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FGMALCOMBAI = 8;</code>
+       * @return The fGMALCOMBAI.
+       */
+      @java.lang.Override
+      public int getFGMALCOMBAI() {
+        return fGMALCOMBAI_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FGMALCOMBAI = 8;</code>
+       * @param value The fGMALCOMBAI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFGMALCOMBAI(int value) {
+        
+        fGMALCOMBAI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 FGMALCOMBAI = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFGMALCOMBAI() {
+        
+        fGMALCOMBAI_ = 0;
         onChanged();
         return this;
       }
 
       private long sceneTimeMs_ ;
       /**
-       * <code>uint64 scene_time_ms = 13;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 6;</code>
        * @return The sceneTimeMs.
        */
       @java.lang.Override
@@ -1172,7 +1384,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return sceneTimeMs_;
       }
       /**
-       * <code>uint64 scene_time_ms = 13;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 6;</code>
        * @param value The sceneTimeMs to set.
        * @return This builder for chaining.
        */
@@ -1183,7 +1399,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 scene_time_ms = 13;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTimeMs() {
@@ -1195,7 +1415,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 7;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 9;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -1203,7 +1427,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 7;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 9;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -1214,7 +1442,11 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 7;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -1224,33 +1456,45 @@ public final class InBattleMechanicusSettleInfoOuterClass {
         return this;
       }
 
-      private int mEKFBBKKKGP_ ;
+      private int nIIEFNIEECK_ ;
       /**
-       * <code>uint32 MEKFBBKKKGP = 15;</code>
-       * @return The mEKFBBKKKGP.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 5;</code>
+       * @return The nIIEFNIEECK.
        */
       @java.lang.Override
-      public int getMEKFBBKKKGP() {
-        return mEKFBBKKKGP_;
+      public int getNIIEFNIEECK() {
+        return nIIEFNIEECK_;
       }
       /**
-       * <code>uint32 MEKFBBKKKGP = 15;</code>
-       * @param value The mEKFBBKKKGP to set.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 5;</code>
+       * @param value The nIIEFNIEECK to set.
        * @return This builder for chaining.
        */
-      public Builder setMEKFBBKKKGP(int value) {
+      public Builder setNIIEFNIEECK(int value) {
         
-        mEKFBBKKKGP_ = value;
+        nIIEFNIEECK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MEKFBBKKKGP = 15;</code>
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMEKFBBKKKGP() {
+      public Builder clearNIIEFNIEECK() {
         
-        mEKFBBKKKGP_ = 0;
+        nIIEFNIEECK_ = 0;
         onChanged();
         return this;
       }
@@ -1321,28 +1565,27 @@ public final class InBattleMechanicusSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"InBattleMechanicusSettleInfo.proto\032!Mu" +
-      "ltistageSettleWatcherInfo.proto\"\342\001\n\034InBa" +
-      "ttleMechanicusSettleInfo\022\023\n\013OPBCDCIEDHF\030" +
-      "\002 \001(\r\0222\n\014watcher_list\030\n \003(\0132\034.Multistage" +
-      "SettleWatcherInfo\022\020\n\010group_id\030\014 \001(\r\022\022\n\np" +
-      "lay_index\030\006 \001(\r\022\023\n\013MOPJLMJENOM\030\005 \001(\r\022\025\n\r" +
-      "scene_time_ms\030\r \001(\004\022\022\n\nis_success\030\007 \001(\010\022" +
-      "\023\n\013MEKFBBKKKGP\030\017 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\"InBattleMechanicusSettleInfo.proto\032\021NF" +
+      "DAPHPOJHB.proto\"\323\001\n\034InBattleMechanicusSe" +
+      "ttleInfo\022\"\n\014watcher_list\030\016 \003(\0132\014.NFDAPHP" +
+      "OJHB\022\020\n\010group_id\030\013 \001(\r\022\023\n\013BPKPCDLCKBG\030\003 " +
+      "\001(\r\022\023\n\013ICENFPCNOBH\030\004 \001(\r\022\023\n\013FGMALCOMBAI\030" +
+      "\010 \001(\r\022\025\n\rscene_time_ms\030\006 \001(\004\022\022\n\nis_succe" +
+      "ss\030\t \001(\010\022\023\n\013NIIEFNIEECK\030\005 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.getDescriptor(),
         });
     internal_static_InBattleMechanicusSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_InBattleMechanicusSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusSettleInfo_descriptor,
-        new java.lang.String[] { "OPBCDCIEDHF", "WatcherList", "GroupId", "PlayIndex", "MOPJLMJENOM", "SceneTimeMs", "IsSuccess", "MEKFBBKKKGP", });
-    emu.grasscutter.net.proto.MultistageSettleWatcherInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "WatcherList", "GroupId", "BPKPCDLCKBG", "ICENFPCNOBH", "FGMALCOMBAI", "SceneTimeMs", "IsSuccess", "NIIEFNIEECK", });
+    emu.grasscutter.net.proto.NFDAPHPOJHBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

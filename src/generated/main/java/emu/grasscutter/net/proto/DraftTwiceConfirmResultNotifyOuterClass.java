@@ -19,21 +19,20 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 draft_id = 11;</code>
+     * <code>bool is_all_agree = 3;</code>
+     * @return The isAllAgree.
+     */
+    boolean getIsAllAgree();
+
+    /**
+     * <code>uint32 draft_id = 5;</code>
      * @return The draftId.
      */
     int getDraftId();
-
-    /**
-     * <code>bool is_all_argee = 3;</code>
-     * @return The isAllArgee.
-     */
-    boolean getIsAllArgee();
   }
   /**
    * <pre>
-   * CmdId: 24753
-   * Obf: NLNCHHAMKLJ
+   * CmdId: 5125
    * </pre>
    *
    * Protobuf type {@code DraftTwiceConfirmResultNotify}
@@ -82,10 +81,10 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
               break;
             case 24: {
 
-              isAllArgee_ = input.readBool();
+              isAllAgree_ = input.readBool();
               break;
             }
-            case 88: {
+            case 40: {
 
               draftId_ = input.readUInt32();
               break;
@@ -122,26 +121,26 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
               emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify.class, emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify.Builder.class);
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 11;
+    public static final int IS_ALL_AGREE_FIELD_NUMBER = 3;
+    private boolean isAllAgree_;
+    /**
+     * <code>bool is_all_agree = 3;</code>
+     * @return The isAllAgree.
+     */
+    @java.lang.Override
+    public boolean getIsAllAgree() {
+      return isAllAgree_;
+    }
+
+    public static final int DRAFT_ID_FIELD_NUMBER = 5;
     private int draftId_;
     /**
-     * <code>uint32 draft_id = 11;</code>
+     * <code>uint32 draft_id = 5;</code>
      * @return The draftId.
      */
     @java.lang.Override
     public int getDraftId() {
       return draftId_;
-    }
-
-    public static final int IS_ALL_ARGEE_FIELD_NUMBER = 3;
-    private boolean isAllArgee_;
-    /**
-     * <code>bool is_all_argee = 3;</code>
-     * @return The isAllArgee.
-     */
-    @java.lang.Override
-    public boolean getIsAllArgee() {
-      return isAllArgee_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAllArgee_ != false) {
-        output.writeBool(3, isAllArgee_);
+      if (isAllAgree_ != false) {
+        output.writeBool(3, isAllAgree_);
       }
       if (draftId_ != 0) {
-        output.writeUInt32(11, draftId_);
+        output.writeUInt32(5, draftId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAllArgee_ != false) {
+      if (isAllAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isAllArgee_);
+          .computeBoolSize(3, isAllAgree_);
       }
       if (draftId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, draftId_);
+          .computeUInt32Size(5, draftId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify other = (emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify) obj;
 
+      if (getIsAllAgree()
+          != other.getIsAllAgree()) return false;
       if (getDraftId()
           != other.getDraftId()) return false;
-      if (getIsAllArgee()
-          != other.getIsAllArgee()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +210,11 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_ALL_AGREE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAllAgree());
       hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDraftId();
-      hash = (37 * hash) + IS_ALL_ARGEE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAllArgee());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +312,7 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24753
-     * Obf: NLNCHHAMKLJ
+     * CmdId: 5125
      * </pre>
      *
      * Protobuf type {@code DraftTwiceConfirmResultNotify}
@@ -354,9 +352,9 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        draftId_ = 0;
+        isAllAgree_ = false;
 
-        isAllArgee_ = false;
+        draftId_ = 0;
 
         return this;
       }
@@ -384,8 +382,8 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify buildPartial() {
         emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify result = new emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify(this);
+        result.isAllAgree_ = isAllAgree_;
         result.draftId_ = draftId_;
-        result.isAllArgee_ = isAllArgee_;
         onBuilt();
         return result;
       }
@@ -434,11 +432,11 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify other) {
         if (other == emu.grasscutter.net.proto.DraftTwiceConfirmResultNotifyOuterClass.DraftTwiceConfirmResultNotify.getDefaultInstance()) return this;
+        if (other.getIsAllAgree() != false) {
+          setIsAllAgree(other.getIsAllAgree());
+        }
         if (other.getDraftId() != 0) {
           setDraftId(other.getDraftId());
-        }
-        if (other.getIsAllArgee() != false) {
-          setIsAllArgee(other.getIsAllArgee());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,9 +467,40 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
         return this;
       }
 
+      private boolean isAllAgree_ ;
+      /**
+       * <code>bool is_all_agree = 3;</code>
+       * @return The isAllAgree.
+       */
+      @java.lang.Override
+      public boolean getIsAllAgree() {
+        return isAllAgree_;
+      }
+      /**
+       * <code>bool is_all_agree = 3;</code>
+       * @param value The isAllAgree to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAllAgree(boolean value) {
+        
+        isAllAgree_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_all_agree = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAllAgree() {
+        
+        isAllAgree_ = false;
+        onChanged();
+        return this;
+      }
+
       private int draftId_ ;
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 5;</code>
        * @return The draftId.
        */
       @java.lang.Override
@@ -479,7 +508,7 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
         return draftId_;
       }
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 5;</code>
        * @param value The draftId to set.
        * @return This builder for chaining.
        */
@@ -490,43 +519,12 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDraftId() {
         
         draftId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isAllArgee_ ;
-      /**
-       * <code>bool is_all_argee = 3;</code>
-       * @return The isAllArgee.
-       */
-      @java.lang.Override
-      public boolean getIsAllArgee() {
-        return isAllArgee_;
-      }
-      /**
-       * <code>bool is_all_argee = 3;</code>
-       * @param value The isAllArgee to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAllArgee(boolean value) {
-        
-        isAllArgee_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_all_argee = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAllArgee() {
-        
-        isAllArgee_ = false;
         onChanged();
         return this;
       }
@@ -598,8 +596,8 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#DraftTwiceConfirmResultNotify.proto\"G\n" +
-      "\035DraftTwiceConfirmResultNotify\022\020\n\010draft_" +
-      "id\030\013 \001(\r\022\024\n\014is_all_argee\030\003 \001(\010B\033\n\031emu.gr" +
+      "\035DraftTwiceConfirmResultNotify\022\024\n\014is_all" +
+      "_agree\030\003 \001(\010\022\020\n\010draft_id\030\005 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +609,7 @@ public final class DraftTwiceConfirmResultNotifyOuterClass {
     internal_static_DraftTwiceConfirmResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DraftTwiceConfirmResultNotify_descriptor,
-        new java.lang.String[] { "DraftId", "IsAllArgee", });
+        new java.lang.String[] { "IsAllAgree", "DraftId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

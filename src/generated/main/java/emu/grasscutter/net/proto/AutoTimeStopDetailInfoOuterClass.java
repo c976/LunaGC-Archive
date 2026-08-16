@@ -19,27 +19,47 @@ public final class AutoTimeStopDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> 
         getLevelInfoListList();
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
-    emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND getLevelInfoList(int index);
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
-    emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class AutoTimeStopDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class AutoTimeStopDetailInfoOuterClass {
               emu.grasscutter.net.proto.AutoTimeStopDetailInfoOuterClass.AutoTimeStopDetailInfo.class, emu.grasscutter.net.proto.AutoTimeStopDetailInfoOuterClass.AutoTimeStopDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> levelInfoList_;
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class AutoTimeStopDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(12, levelInfoList_.get(i));
+        output.writeMessage(10, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class AutoTimeStopDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, levelInfoList_.get(i));
+          .computeMessageSize(10, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class AutoTimeStopDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class AutoTimeStopDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class AutoTimeStopDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo value) {
+          int index, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo value) {
+          int index, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class AutoTimeStopDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class AutoTimeStopDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class AutoTimeStopDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.getDefaultInstance());
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.getDefaultInstance());
       }
       /**
-       * <code>repeated .AutoTimeStopLevelInfo level_info_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .OIJJHJMMOND level_info_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.AutoTimeStopLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMOND.Builder, emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.OIJJHJMMONDOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class AutoTimeStopDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034AutoTimeStopDetailInfo.proto\032\033AutoTime" +
-      "StopLevelInfo.proto\"I\n\026AutoTimeStopDetai" +
-      "lInfo\022/\n\017level_info_list\030\014 \003(\0132\026.AutoTim" +
-      "eStopLevelInfoB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\034AutoTimeStopDetailInfo.proto\032\021OIJJHJMM" +
+      "OND.proto\"?\n\026AutoTimeStopDetailInfo\022%\n\017l" +
+      "evel_info_list\030\n \003(\0132\014.OIJJHJMMONDB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.getDescriptor(),
         });
     internal_static_AutoTimeStopDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class AutoTimeStopDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AutoTimeStopDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.AutoTimeStopLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.OIJJHJMMONDOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

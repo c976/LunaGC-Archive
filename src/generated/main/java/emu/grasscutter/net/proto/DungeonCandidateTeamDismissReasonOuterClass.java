@@ -20,32 +20,32 @@ public final class DungeonCandidateTeamDismissReasonOuterClass {
   public enum DungeonCandidateTeamDismissReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL = 0;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NORMAL = 0;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL(0),
+    IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NORMAL(0),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE = 1;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DIE = 1;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE(1),
+    IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DIE(1),
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT = 2;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DISCONNECT = 2;</code>
      */
-    DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT(2),
+    IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DISCONNECT(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL = 0;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NORMAL = 0;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL_VALUE = 0;
+    public static final int IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NORMAL_VALUE = 0;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE = 1;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DIE = 1;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE_VALUE = 1;
+    public static final int IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DIE_VALUE = 1;
     /**
-     * <code>DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT = 2;</code>
+     * <code>IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DISCONNECT = 2;</code>
      */
-    public static final int DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT_VALUE = 2;
+    public static final int IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DISCONNECT_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class DungeonCandidateTeamDismissReasonOuterClass {
      */
     public static DungeonCandidateTeamDismissReason forNumber(int value) {
       switch (value) {
-        case 0: return DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL;
-        case 1: return DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE;
-        case 2: return DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT;
+        case 0: return IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NORMAL;
+        case 1: return IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DIE;
+        case 2: return IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_DISCONNECT;
         default: return null;
       }
     }
@@ -141,13 +141,12 @@ public final class DungeonCandidateTeamDismissReasonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'DungeonCandidateTeamDismissReason.prot" +
-      "o*\311\001\n!DungeonCandidateTeamDismissReason\022" +
-      "5\n1DUNGEON_CANDIDATE_TEAM_DISMISS_REASON" +
-      "_TPDR_NORMAL\020\000\0222\n.DUNGEON_CANDIDATE_TEAM" +
-      "_DISMISS_REASON_TPDR_DIE\020\001\0229\n5DUNGEON_CA" +
-      "NDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONN" +
-      "ECT\020\002B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "o*\261\001\n!DungeonCandidateTeamDismissReason\022" +
+      "-\n)IJANHJNMJCC_DUNGEON_CANDIDATE_TPDR_NO" +
+      "RMAL\020\000\022*\n&IJANHJNMJCC_DUNGEON_CANDIDATE_" +
+      "TPDR_DIE\020\001\0221\n-IJANHJNMJCC_DUNGEON_CANDID" +
+      "ATE_TPDR_DISCONNECT\020\002B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

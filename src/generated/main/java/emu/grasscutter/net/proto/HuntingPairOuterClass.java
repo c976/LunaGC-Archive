@@ -19,16 +19,24 @@ public final class HuntingPairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_config_id = 1;</code>
-     * @return The monsterConfigId.
-     */
-    int getMonsterConfigId();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 refresh_id = 6;</code>
      * @return The refreshId.
      */
     int getRefreshId();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 monster_config_id = 8;</code>
+     * @return The monsterConfigId.
+     */
+    int getMonsterConfigId();
   }
   /**
    * Protobuf type {@code HuntingPair}
@@ -75,14 +83,14 @@ public final class HuntingPairOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              monsterConfigId_ = input.readUInt32();
-              break;
-            }
             case 48: {
 
               refreshId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              monsterConfigId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +125,34 @@ public final class HuntingPairOuterClass {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.class, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder.class);
     }
 
-    public static final int MONSTER_CONFIG_ID_FIELD_NUMBER = 1;
-    private int monsterConfigId_;
-    /**
-     * <code>uint32 monster_config_id = 1;</code>
-     * @return The monsterConfigId.
-     */
-    @java.lang.Override
-    public int getMonsterConfigId() {
-      return monsterConfigId_;
-    }
-
     public static final int REFRESH_ID_FIELD_NUMBER = 6;
     private int refreshId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 refresh_id = 6;</code>
      * @return The refreshId.
      */
     @java.lang.Override
     public int getRefreshId() {
       return refreshId_;
+    }
+
+    public static final int MONSTER_CONFIG_ID_FIELD_NUMBER = 8;
+    private int monsterConfigId_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 monster_config_id = 8;</code>
+     * @return The monsterConfigId.
+     */
+    @java.lang.Override
+    public int getMonsterConfigId() {
+      return monsterConfigId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +169,11 @@ public final class HuntingPairOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (monsterConfigId_ != 0) {
-        output.writeUInt32(1, monsterConfigId_);
-      }
       if (refreshId_ != 0) {
         output.writeUInt32(6, refreshId_);
+      }
+      if (monsterConfigId_ != 0) {
+        output.writeUInt32(8, monsterConfigId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +184,13 @@ public final class HuntingPairOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (monsterConfigId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, monsterConfigId_);
-      }
       if (refreshId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, refreshId_);
+      }
+      if (monsterConfigId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, monsterConfigId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +207,10 @@ public final class HuntingPairOuterClass {
       }
       emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair other = (emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair) obj;
 
-      if (getMonsterConfigId()
-          != other.getMonsterConfigId()) return false;
       if (getRefreshId()
           != other.getRefreshId()) return false;
+      if (getMonsterConfigId()
+          != other.getMonsterConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +222,10 @@ public final class HuntingPairOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MONSTER_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterConfigId();
       hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRefreshId();
+      hash = (37 * hash) + MONSTER_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +359,9 @@ public final class HuntingPairOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        monsterConfigId_ = 0;
-
         refreshId_ = 0;
+
+        monsterConfigId_ = 0;
 
         return this;
       }
@@ -373,8 +389,8 @@ public final class HuntingPairOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair buildPartial() {
         emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair result = new emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair(this);
-        result.monsterConfigId_ = monsterConfigId_;
         result.refreshId_ = refreshId_;
+        result.monsterConfigId_ = monsterConfigId_;
         onBuilt();
         return result;
       }
@@ -423,11 +439,11 @@ public final class HuntingPairOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair other) {
         if (other == emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance()) return this;
-        if (other.getMonsterConfigId() != 0) {
-          setMonsterConfigId(other.getMonsterConfigId());
-        }
         if (other.getRefreshId() != 0) {
           setRefreshId(other.getRefreshId());
+        }
+        if (other.getMonsterConfigId() != 0) {
+          setMonsterConfigId(other.getMonsterConfigId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,39 +474,12 @@ public final class HuntingPairOuterClass {
         return this;
       }
 
-      private int monsterConfigId_ ;
-      /**
-       * <code>uint32 monster_config_id = 1;</code>
-       * @return The monsterConfigId.
-       */
-      @java.lang.Override
-      public int getMonsterConfigId() {
-        return monsterConfigId_;
-      }
-      /**
-       * <code>uint32 monster_config_id = 1;</code>
-       * @param value The monsterConfigId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMonsterConfigId(int value) {
-        
-        monsterConfigId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 monster_config_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMonsterConfigId() {
-        
-        monsterConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int refreshId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refresh_id = 6;</code>
        * @return The refreshId.
        */
@@ -499,6 +488,10 @@ public final class HuntingPairOuterClass {
         return refreshId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refresh_id = 6;</code>
        * @param value The refreshId to set.
        * @return This builder for chaining.
@@ -510,12 +503,59 @@ public final class HuntingPairOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refresh_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRefreshId() {
         
         refreshId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int monsterConfigId_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 monster_config_id = 8;</code>
+       * @return The monsterConfigId.
+       */
+      @java.lang.Override
+      public int getMonsterConfigId() {
+        return monsterConfigId_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 monster_config_id = 8;</code>
+       * @param value The monsterConfigId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMonsterConfigId(int value) {
+        
+        monsterConfigId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 monster_config_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMonsterConfigId() {
+        
+        monsterConfigId_ = 0;
         onChanged();
         return this;
       }
@@ -586,8 +626,8 @@ public final class HuntingPairOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021HuntingPair.proto\"<\n\013HuntingPair\022\031\n\021mo" +
-      "nster_config_id\030\001 \001(\r\022\022\n\nrefresh_id\030\006 \001(" +
+      "\n\021HuntingPair.proto\"<\n\013HuntingPair\022\022\n\nre" +
+      "fresh_id\030\006 \001(\r\022\031\n\021monster_config_id\030\010 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -599,7 +639,7 @@ public final class HuntingPairOuterClass {
     internal_static_HuntingPair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HuntingPair_descriptor,
-        new java.lang.String[] { "MonsterConfigId", "RefreshId", });
+        new java.lang.String[] { "RefreshId", "MonsterConfigId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

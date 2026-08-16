@@ -19,25 +19,41 @@ public final class TrifleGadgetOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      * @return Whether the item field is set.
      */
     boolean hasItem();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      * @return The item.
      */
     emu.grasscutter.net.proto.ItemOuterClass.Item getItem();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      */
     emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemOrBuilder();
 
     /**
-     * <code>uint32 KKJOOJCJPKM = 2;</code>
-     * @return The kKJOOJCJPKM.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 unk_38_40_GAHBDCCFPGJ = 2;</code>
+     * @return The unk3840GAHBDCCFPGJ.
      */
-    int getKKJOOJCJPKM();
+    int getUnk3840GAHBDCCFPGJ();
   }
   /**
    * Protobuf type {@code TrifleGadget}
@@ -99,7 +115,7 @@ public final class TrifleGadgetOuterClass {
             }
             case 16: {
 
-              kKJOOJCJPKM_ = input.readUInt32();
+              unk3840GAHBDCCFPGJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -137,6 +153,10 @@ public final class TrifleGadgetOuterClass {
     public static final int ITEM_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.ItemOuterClass.Item item_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      * @return Whether the item field is set.
      */
@@ -145,6 +165,10 @@ public final class TrifleGadgetOuterClass {
       return item_ != null;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      * @return The item.
      */
@@ -153,6 +177,10 @@ public final class TrifleGadgetOuterClass {
       return item_ == null ? emu.grasscutter.net.proto.ItemOuterClass.Item.getDefaultInstance() : item_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>.Item item = 1;</code>
      */
     @java.lang.Override
@@ -160,15 +188,19 @@ public final class TrifleGadgetOuterClass {
       return getItem();
     }
 
-    public static final int KKJOOJCJPKM_FIELD_NUMBER = 2;
-    private int kKJOOJCJPKM_;
+    public static final int UNK_38_40_GAHBDCCFPGJ_FIELD_NUMBER = 2;
+    private int unk3840GAHBDCCFPGJ_;
     /**
-     * <code>uint32 KKJOOJCJPKM = 2;</code>
-     * @return The kKJOOJCJPKM.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 unk_38_40_GAHBDCCFPGJ = 2;</code>
+     * @return The unk3840GAHBDCCFPGJ.
      */
     @java.lang.Override
-    public int getKKJOOJCJPKM() {
-      return kKJOOJCJPKM_;
+    public int getUnk3840GAHBDCCFPGJ() {
+      return unk3840GAHBDCCFPGJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -188,8 +220,8 @@ public final class TrifleGadgetOuterClass {
       if (item_ != null) {
         output.writeMessage(1, getItem());
       }
-      if (kKJOOJCJPKM_ != 0) {
-        output.writeUInt32(2, kKJOOJCJPKM_);
+      if (unk3840GAHBDCCFPGJ_ != 0) {
+        output.writeUInt32(2, unk3840GAHBDCCFPGJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -204,9 +236,9 @@ public final class TrifleGadgetOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getItem());
       }
-      if (kKJOOJCJPKM_ != 0) {
+      if (unk3840GAHBDCCFPGJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, kKJOOJCJPKM_);
+          .computeUInt32Size(2, unk3840GAHBDCCFPGJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,8 +260,8 @@ public final class TrifleGadgetOuterClass {
         if (!getItem()
             .equals(other.getItem())) return false;
       }
-      if (getKKJOOJCJPKM()
-          != other.getKKJOOJCJPKM()) return false;
+      if (getUnk3840GAHBDCCFPGJ()
+          != other.getUnk3840GAHBDCCFPGJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -245,8 +277,8 @@ public final class TrifleGadgetOuterClass {
         hash = (37 * hash) + ITEM_FIELD_NUMBER;
         hash = (53 * hash) + getItem().hashCode();
       }
-      hash = (37 * hash) + KKJOOJCJPKM_FIELD_NUMBER;
-      hash = (53 * hash) + getKKJOOJCJPKM();
+      hash = (37 * hash) + UNK_38_40_GAHBDCCFPGJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3840GAHBDCCFPGJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -386,7 +418,7 @@ public final class TrifleGadgetOuterClass {
           item_ = null;
           itemBuilder_ = null;
         }
-        kKJOOJCJPKM_ = 0;
+        unk3840GAHBDCCFPGJ_ = 0;
 
         return this;
       }
@@ -419,7 +451,7 @@ public final class TrifleGadgetOuterClass {
         } else {
           result.item_ = itemBuilder_.build();
         }
-        result.kKJOOJCJPKM_ = kKJOOJCJPKM_;
+        result.unk3840GAHBDCCFPGJ_ = unk3840GAHBDCCFPGJ_;
         onBuilt();
         return result;
       }
@@ -471,8 +503,8 @@ public final class TrifleGadgetOuterClass {
         if (other.hasItem()) {
           mergeItem(other.getItem());
         }
-        if (other.getKKJOOJCJPKM() != 0) {
-          setKKJOOJCJPKM(other.getKKJOOJCJPKM());
+        if (other.getUnk3840GAHBDCCFPGJ() != 0) {
+          setUnk3840GAHBDCCFPGJ(other.getUnk3840GAHBDCCFPGJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,6 +539,10 @@ public final class TrifleGadgetOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ItemOuterClass.Item, emu.grasscutter.net.proto.ItemOuterClass.Item.Builder, emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder> itemBuilder_;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        * @return Whether the item field is set.
        */
@@ -514,6 +550,10 @@ public final class TrifleGadgetOuterClass {
         return itemBuilder_ != null || item_ != null;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        * @return The item.
        */
@@ -525,6 +565,10 @@ public final class TrifleGadgetOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public Builder setItem(emu.grasscutter.net.proto.ItemOuterClass.Item value) {
@@ -541,6 +585,10 @@ public final class TrifleGadgetOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public Builder setItem(
@@ -555,6 +603,10 @@ public final class TrifleGadgetOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public Builder mergeItem(emu.grasscutter.net.proto.ItemOuterClass.Item value) {
@@ -573,6 +625,10 @@ public final class TrifleGadgetOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public Builder clearItem() {
@@ -587,6 +643,10 @@ public final class TrifleGadgetOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.Item.Builder getItemBuilder() {
@@ -595,6 +655,10 @@ public final class TrifleGadgetOuterClass {
         return getItemFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemOrBuilder() {
@@ -606,6 +670,10 @@ public final class TrifleGadgetOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>.Item item = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -622,33 +690,45 @@ public final class TrifleGadgetOuterClass {
         return itemBuilder_;
       }
 
-      private int kKJOOJCJPKM_ ;
+      private int unk3840GAHBDCCFPGJ_ ;
       /**
-       * <code>uint32 KKJOOJCJPKM = 2;</code>
-       * @return The kKJOOJCJPKM.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 unk_38_40_GAHBDCCFPGJ = 2;</code>
+       * @return The unk3840GAHBDCCFPGJ.
        */
       @java.lang.Override
-      public int getKKJOOJCJPKM() {
-        return kKJOOJCJPKM_;
+      public int getUnk3840GAHBDCCFPGJ() {
+        return unk3840GAHBDCCFPGJ_;
       }
       /**
-       * <code>uint32 KKJOOJCJPKM = 2;</code>
-       * @param value The kKJOOJCJPKM to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 unk_38_40_GAHBDCCFPGJ = 2;</code>
+       * @param value The unk3840GAHBDCCFPGJ to set.
        * @return This builder for chaining.
        */
-      public Builder setKKJOOJCJPKM(int value) {
+      public Builder setUnk3840GAHBDCCFPGJ(int value) {
         
-        kKJOOJCJPKM_ = value;
+        unk3840GAHBDCCFPGJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KKJOOJCJPKM = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 unk_38_40_GAHBDCCFPGJ = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKKJOOJCJPKM() {
+      public Builder clearUnk3840GAHBDCCFPGJ() {
         
-        kKJOOJCJPKM_ = 0;
+        unk3840GAHBDCCFPGJ_ = 0;
         onChanged();
         return this;
       }
@@ -719,10 +799,10 @@ public final class TrifleGadgetOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022TrifleGadget.proto\032\nItem.proto\"8\n\014Trif" +
-      "leGadget\022\023\n\004item\030\001 \001(\0132\005.Item\022\023\n\013KKJOOJC" +
-      "JPKM\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\022TrifleGadget.proto\032\nItem.proto\"B\n\014Trif" +
+      "leGadget\022\023\n\004item\030\001 \001(\0132\005.Item\022\035\n\025unk_38_" +
+      "40_GAHBDCCFPGJ\030\002 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -734,7 +814,7 @@ public final class TrifleGadgetOuterClass {
     internal_static_TrifleGadget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TrifleGadget_descriptor,
-        new java.lang.String[] { "Item", "KKJOOJCJPKM", });
+        new java.lang.String[] { "Item", "Unk3840GAHBDCCFPGJ", });
     emu.grasscutter.net.proto.ItemOuterClass.getDescriptor();
   }
 

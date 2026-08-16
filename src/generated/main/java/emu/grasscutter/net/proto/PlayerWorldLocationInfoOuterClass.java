@@ -19,21 +19,37 @@ public final class PlayerWorldLocationInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      * @return Whether the playerLoc field is set.
      */
     boolean hasPlayerLoc();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      * @return The playerLoc.
      */
     emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo getPlayerLoc();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      */
     emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfoOrBuilder getPlayerLocOrBuilder();
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 scene_id = 15;</code>
      * @return The sceneId.
      */
@@ -137,6 +153,10 @@ public final class PlayerWorldLocationInfoOuterClass {
     public static final int PLAYER_LOC_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo playerLoc_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      * @return Whether the playerLoc field is set.
      */
@@ -145,6 +165,10 @@ public final class PlayerWorldLocationInfoOuterClass {
       return playerLoc_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      * @return The playerLoc.
      */
@@ -153,6 +177,10 @@ public final class PlayerWorldLocationInfoOuterClass {
       return playerLoc_ == null ? emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo.getDefaultInstance() : playerLoc_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.PlayerLocationInfo player_loc = 12;</code>
      */
     @java.lang.Override
@@ -163,6 +191,10 @@ public final class PlayerWorldLocationInfoOuterClass {
     public static final int SCENE_ID_FIELD_NUMBER = 15;
     private int sceneId_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 scene_id = 15;</code>
      * @return The sceneId.
      */
@@ -507,6 +539,10 @@ public final class PlayerWorldLocationInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo, emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo.Builder, emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfoOrBuilder> playerLocBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        * @return Whether the playerLoc field is set.
        */
@@ -514,6 +550,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return playerLocBuilder_ != null || playerLoc_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        * @return The playerLoc.
        */
@@ -525,6 +565,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public Builder setPlayerLoc(emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo value) {
@@ -541,6 +585,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public Builder setPlayerLoc(
@@ -555,6 +603,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public Builder mergePlayerLoc(emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo value) {
@@ -573,6 +625,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public Builder clearPlayerLoc() {
@@ -587,6 +643,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo.Builder getPlayerLocBuilder() {
@@ -595,6 +655,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return getPlayerLocFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       public emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfoOrBuilder getPlayerLocOrBuilder() {
@@ -606,6 +670,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.PlayerLocationInfo player_loc = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -624,6 +692,10 @@ public final class PlayerWorldLocationInfoOuterClass {
 
       private int sceneId_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 scene_id = 15;</code>
        * @return The sceneId.
        */
@@ -632,6 +704,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return sceneId_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 scene_id = 15;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
@@ -643,6 +719,10 @@ public final class PlayerWorldLocationInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 scene_id = 15;</code>
        * @return This builder for chaining.
        */

@@ -19,90 +19,152 @@ public final class EvtGrapplingHookMoveOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string override_collider = 4;</code>
-     * @return The overrideCollider.
-     */
-    java.lang.String getOverrideCollider();
-    /**
-     * <code>string override_collider = 4;</code>
-     * @return The bytes for overrideCollider.
-     */
-    com.google.protobuf.ByteString
-        getOverrideColliderBytes();
-
-    /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
      * @return A list containing the animatorStateIdList.
      */
     java.util.List<java.lang.Integer> getAnimatorStateIdListList();
     /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
      * @return The count of animatorStateIdList.
      */
     int getAnimatorStateIdListCount();
     /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The animatorStateIdList at the given index.
      */
     int getAnimatorStateIdList(int index);
 
     /**
-     * <code>float speed = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string override_collider = 2;</code>
+     * @return The overrideCollider.
+     */
+    java.lang.String getOverrideCollider();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string override_collider = 2;</code>
+     * @return The bytes for overrideCollider.
+     */
+    com.google.protobuf.ByteString
+        getOverrideColliderBytes();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
+     * @return Whether the targetPos field is set.
+     */
+    boolean hasTargetPos();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
+     * @return The targetPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>float speed = 7;</code>
      * @return The speed.
      */
     float getSpeed();
 
     /**
-     * <code>float CHLPMJKKOHB = 3;</code>
-     * @return The cHLPMJKKOHB.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool KIOAMEOMGCO = 9;</code>
+     * @return The kIOAMEOMGCO.
      */
-    float getCHLPMJKKOHB();
+    boolean getKIOAMEOMGCO();
 
     /**
-     * <code>.Vector target_pos = 10;</code>
-     * @return Whether the targetPos field is set.
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
+     * <code>bool GIAHKHBPGIA = 8;</code>
+     * @return The gIAHKHBPGIA.
      */
-    boolean hasTargetPos();
-    /**
-     * <code>.Vector target_pos = 10;</code>
-     * @return The targetPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
-    /**
-     * <code>.Vector target_pos = 10;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
+    boolean getGIAHKHBPGIA();
 
     /**
-     * <code>float OJNIOEOFFOI = 15;</code>
-     * @return The oJNIOEOFFOI.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>float KLODIABFCBE = 6;</code>
+     * @return The kLODIABFCBE.
      */
-    float getOJNIOEOFFOI();
+    float getKLODIABFCBE();
 
     /**
-     * <code>bool CEIIFCMKJJC = 7;</code>
-     * @return The cEIIFCMKJJC.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>float NDCDPNEODMD = 10;</code>
+     * @return The nDCDPNEODMD.
      */
-    boolean getCEIIFCMKJJC();
+    float getNDCDPNEODMD();
 
     /**
-     * <code>bool IFFPKMEPDMA = 12;</code>
-     * @return The iFFPKMEPDMA.
-     */
-    boolean getIFFPKMEPDMA();
-
-    /**
-     * <code>uint32 entity_id = 1;</code>
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>int32 param_index = 4;</code>
+     * @return The paramIndex.
+     */
+    int getParamIndex();
   }
   /**
-   * <pre>
-   * Obf: KOEBOEKINMF
-   * </pre>
-   *
    * Protobuf type {@code EvtGrapplingHookMove}
    */
   public static final class EvtGrapplingHookMove extends
@@ -115,8 +177,8 @@ public final class EvtGrapplingHookMoveOuterClass {
       super(builder);
     }
     private EvtGrapplingHookMove() {
-      overrideCollider_ = "";
       animatorStateIdList_ = emptyIntList();
+      overrideCollider_ = "";
     }
 
     @java.lang.Override
@@ -150,49 +212,18 @@ public final class EvtGrapplingHookMoveOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 29: {
-
-              cHLPMJKKOHB_ = input.readFloat();
-              break;
-            }
-            case 34: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
               overrideCollider_ = s;
               break;
             }
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                animatorStateIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              animatorStateIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 50: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                animatorStateIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                animatorStateIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 56: {
+            case 32: {
 
-              cEIIFCMKJJC_ = input.readBool();
+              paramIndex_ = input.readInt32();
               break;
             }
-            case 82: {
+            case 42: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (targetPos_ != null) {
                 subBuilder = targetPos_.toBuilder();
@@ -205,19 +236,55 @@ public final class EvtGrapplingHookMoveOuterClass {
 
               break;
             }
-            case 96: {
+            case 53: {
 
-              iFFPKMEPDMA_ = input.readBool();
+              kLODIABFCBE_ = input.readFloat();
               break;
             }
-            case 117: {
+            case 61: {
 
               speed_ = input.readFloat();
               break;
             }
-            case 125: {
+            case 64: {
 
-              oJNIOEOFFOI_ = input.readFloat();
+              gIAHKHBPGIA_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              kIOAMEOMGCO_ = input.readBool();
+              break;
+            }
+            case 85: {
+
+              nDCDPNEODMD_ = input.readFloat();
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                animatorStateIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              animatorStateIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                animatorStateIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                animatorStateIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 112: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -255,10 +322,54 @@ public final class EvtGrapplingHookMoveOuterClass {
               emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove.class, emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove.Builder.class);
     }
 
-    public static final int OVERRIDE_COLLIDER_FIELD_NUMBER = 4;
+    public static final int ANIMATOR_STATE_ID_LIST_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList animatorStateIdList_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
+     * @return A list containing the animatorStateIdList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getAnimatorStateIdListList() {
+      return animatorStateIdList_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
+     * @return The count of animatorStateIdList.
+     */
+    public int getAnimatorStateIdListCount() {
+      return animatorStateIdList_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 animator_state_id_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The animatorStateIdList at the given index.
+     */
+    public int getAnimatorStateIdList(int index) {
+      return animatorStateIdList_.getInt(index);
+    }
+    private int animatorStateIdListMemoizedSerializedSize = -1;
+
+    public static final int OVERRIDE_COLLIDER_FIELD_NUMBER = 2;
     private volatile java.lang.Object overrideCollider_;
     /**
-     * <code>string override_collider = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string override_collider = 2;</code>
      * @return The overrideCollider.
      */
     @java.lang.Override
@@ -275,7 +386,11 @@ public final class EvtGrapplingHookMoveOuterClass {
       }
     }
     /**
-     * <code>string override_collider = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string override_collider = 2;</code>
      * @return The bytes for overrideCollider.
      */
     @java.lang.Override
@@ -293,60 +408,14 @@ public final class EvtGrapplingHookMoveOuterClass {
       }
     }
 
-    public static final int ANIMATOR_STATE_ID_LIST_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.IntList animatorStateIdList_;
-    /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
-     * @return A list containing the animatorStateIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getAnimatorStateIdListList() {
-      return animatorStateIdList_;
-    }
-    /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
-     * @return The count of animatorStateIdList.
-     */
-    public int getAnimatorStateIdListCount() {
-      return animatorStateIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 animator_state_id_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The animatorStateIdList at the given index.
-     */
-    public int getAnimatorStateIdList(int index) {
-      return animatorStateIdList_.getInt(index);
-    }
-    private int animatorStateIdListMemoizedSerializedSize = -1;
-
-    public static final int SPEED_FIELD_NUMBER = 14;
-    private float speed_;
-    /**
-     * <code>float speed = 14;</code>
-     * @return The speed.
-     */
-    @java.lang.Override
-    public float getSpeed() {
-      return speed_;
-    }
-
-    public static final int CHLPMJKKOHB_FIELD_NUMBER = 3;
-    private float cHLPMJKKOHB_;
-    /**
-     * <code>float CHLPMJKKOHB = 3;</code>
-     * @return The cHLPMJKKOHB.
-     */
-    @java.lang.Override
-    public float getCHLPMJKKOHB() {
-      return cHLPMJKKOHB_;
-    }
-
-    public static final int TARGET_POS_FIELD_NUMBER = 10;
+    public static final int TARGET_POS_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
     /**
-     * <code>.Vector target_pos = 10;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
      * @return Whether the targetPos field is set.
      */
     @java.lang.Override
@@ -354,7 +423,11 @@ public final class EvtGrapplingHookMoveOuterClass {
       return targetPos_ != null;
     }
     /**
-     * <code>.Vector target_pos = 10;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
      * @return The targetPos.
      */
     @java.lang.Override
@@ -362,55 +435,120 @@ public final class EvtGrapplingHookMoveOuterClass {
       return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
     }
     /**
-     * <code>.Vector target_pos = 10;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector target_pos = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
       return getTargetPos();
     }
 
-    public static final int OJNIOEOFFOI_FIELD_NUMBER = 15;
-    private float oJNIOEOFFOI_;
+    public static final int SPEED_FIELD_NUMBER = 7;
+    private float speed_;
     /**
-     * <code>float OJNIOEOFFOI = 15;</code>
-     * @return The oJNIOEOFFOI.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>float speed = 7;</code>
+     * @return The speed.
      */
     @java.lang.Override
-    public float getOJNIOEOFFOI() {
-      return oJNIOEOFFOI_;
+    public float getSpeed() {
+      return speed_;
     }
 
-    public static final int CEIIFCMKJJC_FIELD_NUMBER = 7;
-    private boolean cEIIFCMKJJC_;
+    public static final int KIOAMEOMGCO_FIELD_NUMBER = 9;
+    private boolean kIOAMEOMGCO_;
     /**
-     * <code>bool CEIIFCMKJJC = 7;</code>
-     * @return The cEIIFCMKJJC.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool KIOAMEOMGCO = 9;</code>
+     * @return The kIOAMEOMGCO.
      */
     @java.lang.Override
-    public boolean getCEIIFCMKJJC() {
-      return cEIIFCMKJJC_;
+    public boolean getKIOAMEOMGCO() {
+      return kIOAMEOMGCO_;
     }
 
-    public static final int IFFPKMEPDMA_FIELD_NUMBER = 12;
-    private boolean iFFPKMEPDMA_;
+    public static final int GIAHKHBPGIA_FIELD_NUMBER = 8;
+    private boolean gIAHKHBPGIA_;
     /**
-     * <code>bool IFFPKMEPDMA = 12;</code>
-     * @return The iFFPKMEPDMA.
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
+     * <code>bool GIAHKHBPGIA = 8;</code>
+     * @return The gIAHKHBPGIA.
      */
     @java.lang.Override
-    public boolean getIFFPKMEPDMA() {
-      return iFFPKMEPDMA_;
+    public boolean getGIAHKHBPGIA() {
+      return gIAHKHBPGIA_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int KLODIABFCBE_FIELD_NUMBER = 6;
+    private float kLODIABFCBE_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>float KLODIABFCBE = 6;</code>
+     * @return The kLODIABFCBE.
+     */
+    @java.lang.Override
+    public float getKLODIABFCBE() {
+      return kLODIABFCBE_;
+    }
+
+    public static final int NDCDPNEODMD_FIELD_NUMBER = 10;
+    private float nDCDPNEODMD_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>float NDCDPNEODMD = 10;</code>
+     * @return The nDCDPNEODMD.
+     */
+    @java.lang.Override
+    public float getNDCDPNEODMD() {
+      return nDCDPNEODMD_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 14;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 1;</code>
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int PARAM_INDEX_FIELD_NUMBER = 4;
+    private int paramIndex_;
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>int32 param_index = 4;</code>
+     * @return The paramIndex.
+     */
+    @java.lang.Override
+    public int getParamIndex() {
+      return paramIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -428,36 +566,39 @@ public final class EvtGrapplingHookMoveOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (entityId_ != 0) {
-        output.writeUInt32(1, entityId_);
-      }
-      if (cHLPMJKKOHB_ != 0F) {
-        output.writeFloat(3, cHLPMJKKOHB_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(overrideCollider_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, overrideCollider_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, overrideCollider_);
+      }
+      if (paramIndex_ != 0) {
+        output.writeInt32(4, paramIndex_);
+      }
+      if (targetPos_ != null) {
+        output.writeMessage(5, getTargetPos());
+      }
+      if (kLODIABFCBE_ != 0F) {
+        output.writeFloat(6, kLODIABFCBE_);
+      }
+      if (speed_ != 0F) {
+        output.writeFloat(7, speed_);
+      }
+      if (gIAHKHBPGIA_ != false) {
+        output.writeBool(8, gIAHKHBPGIA_);
+      }
+      if (kIOAMEOMGCO_ != false) {
+        output.writeBool(9, kIOAMEOMGCO_);
+      }
+      if (nDCDPNEODMD_ != 0F) {
+        output.writeFloat(10, nDCDPNEODMD_);
       }
       if (getAnimatorStateIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(animatorStateIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < animatorStateIdList_.size(); i++) {
         output.writeUInt32NoTag(animatorStateIdList_.getInt(i));
       }
-      if (cEIIFCMKJJC_ != false) {
-        output.writeBool(7, cEIIFCMKJJC_);
-      }
-      if (targetPos_ != null) {
-        output.writeMessage(10, getTargetPos());
-      }
-      if (iFFPKMEPDMA_ != false) {
-        output.writeBool(12, iFFPKMEPDMA_);
-      }
-      if (speed_ != 0F) {
-        output.writeFloat(14, speed_);
-      }
-      if (oJNIOEOFFOI_ != 0F) {
-        output.writeFloat(15, oJNIOEOFFOI_);
+      if (entityId_ != 0) {
+        output.writeUInt32(14, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -468,16 +609,36 @@ public final class EvtGrapplingHookMoveOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, entityId_);
-      }
-      if (cHLPMJKKOHB_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, cHLPMJKKOHB_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(overrideCollider_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, overrideCollider_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, overrideCollider_);
+      }
+      if (paramIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, paramIndex_);
+      }
+      if (targetPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, getTargetPos());
+      }
+      if (kLODIABFCBE_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(6, kLODIABFCBE_);
+      }
+      if (speed_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(7, speed_);
+      }
+      if (gIAHKHBPGIA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, gIAHKHBPGIA_);
+      }
+      if (kIOAMEOMGCO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, kIOAMEOMGCO_);
+      }
+      if (nDCDPNEODMD_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(10, nDCDPNEODMD_);
       }
       {
         int dataSize = 0;
@@ -493,25 +654,9 @@ public final class EvtGrapplingHookMoveOuterClass {
         }
         animatorStateIdListMemoizedSerializedSize = dataSize;
       }
-      if (cEIIFCMKJJC_ != false) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, cEIIFCMKJJC_);
-      }
-      if (targetPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getTargetPos());
-      }
-      if (iFFPKMEPDMA_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, iFFPKMEPDMA_);
-      }
-      if (speed_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, speed_);
-      }
-      if (oJNIOEOFFOI_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(15, oJNIOEOFFOI_);
+          .computeUInt32Size(14, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,30 +673,32 @@ public final class EvtGrapplingHookMoveOuterClass {
       }
       emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove other = (emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove) obj;
 
-      if (!getOverrideCollider()
-          .equals(other.getOverrideCollider())) return false;
       if (!getAnimatorStateIdListList()
           .equals(other.getAnimatorStateIdListList())) return false;
-      if (java.lang.Float.floatToIntBits(getSpeed())
-          != java.lang.Float.floatToIntBits(
-              other.getSpeed())) return false;
-      if (java.lang.Float.floatToIntBits(getCHLPMJKKOHB())
-          != java.lang.Float.floatToIntBits(
-              other.getCHLPMJKKOHB())) return false;
+      if (!getOverrideCollider()
+          .equals(other.getOverrideCollider())) return false;
       if (hasTargetPos() != other.hasTargetPos()) return false;
       if (hasTargetPos()) {
         if (!getTargetPos()
             .equals(other.getTargetPos())) return false;
       }
-      if (java.lang.Float.floatToIntBits(getOJNIOEOFFOI())
+      if (java.lang.Float.floatToIntBits(getSpeed())
           != java.lang.Float.floatToIntBits(
-              other.getOJNIOEOFFOI())) return false;
-      if (getCEIIFCMKJJC()
-          != other.getCEIIFCMKJJC()) return false;
-      if (getIFFPKMEPDMA()
-          != other.getIFFPKMEPDMA()) return false;
+              other.getSpeed())) return false;
+      if (getKIOAMEOMGCO()
+          != other.getKIOAMEOMGCO()) return false;
+      if (getGIAHKHBPGIA()
+          != other.getGIAHKHBPGIA()) return false;
+      if (java.lang.Float.floatToIntBits(getKLODIABFCBE())
+          != java.lang.Float.floatToIntBits(
+              other.getKLODIABFCBE())) return false;
+      if (java.lang.Float.floatToIntBits(getNDCDPNEODMD())
+          != java.lang.Float.floatToIntBits(
+              other.getNDCDPNEODMD())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getParamIndex()
+          != other.getParamIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -563,33 +710,35 @@ public final class EvtGrapplingHookMoveOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OVERRIDE_COLLIDER_FIELD_NUMBER;
-      hash = (53 * hash) + getOverrideCollider().hashCode();
       if (getAnimatorStateIdListCount() > 0) {
         hash = (37 * hash) + ANIMATOR_STATE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAnimatorStateIdListList().hashCode();
       }
-      hash = (37 * hash) + SPEED_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getSpeed());
-      hash = (37 * hash) + CHLPMJKKOHB_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCHLPMJKKOHB());
+      hash = (37 * hash) + OVERRIDE_COLLIDER_FIELD_NUMBER;
+      hash = (53 * hash) + getOverrideCollider().hashCode();
       if (hasTargetPos()) {
         hash = (37 * hash) + TARGET_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPos().hashCode();
       }
-      hash = (37 * hash) + OJNIOEOFFOI_FIELD_NUMBER;
+      hash = (37 * hash) + SPEED_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getOJNIOEOFFOI());
-      hash = (37 * hash) + CEIIFCMKJJC_FIELD_NUMBER;
+          getSpeed());
+      hash = (37 * hash) + KIOAMEOMGCO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getCEIIFCMKJJC());
-      hash = (37 * hash) + IFFPKMEPDMA_FIELD_NUMBER;
+          getKIOAMEOMGCO());
+      hash = (37 * hash) + GIAHKHBPGIA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIFFPKMEPDMA());
+          getGIAHKHBPGIA());
+      hash = (37 * hash) + KLODIABFCBE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getKLODIABFCBE());
+      hash = (37 * hash) + NDCDPNEODMD_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getNDCDPNEODMD());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + PARAM_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getParamIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -686,10 +835,6 @@ public final class EvtGrapplingHookMoveOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KOEBOEKINMF
-     * </pre>
-     *
      * Protobuf type {@code EvtGrapplingHookMove}
      */
     public static final class Builder extends
@@ -727,13 +872,9 @@ public final class EvtGrapplingHookMoveOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        overrideCollider_ = "";
-
         animatorStateIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        speed_ = 0F;
-
-        cHLPMJKKOHB_ = 0F;
+        overrideCollider_ = "";
 
         if (targetPosBuilder_ == null) {
           targetPos_ = null;
@@ -741,13 +882,19 @@ public final class EvtGrapplingHookMoveOuterClass {
           targetPos_ = null;
           targetPosBuilder_ = null;
         }
-        oJNIOEOFFOI_ = 0F;
+        speed_ = 0F;
 
-        cEIIFCMKJJC_ = false;
+        kIOAMEOMGCO_ = false;
 
-        iFFPKMEPDMA_ = false;
+        gIAHKHBPGIA_ = false;
+
+        kLODIABFCBE_ = 0F;
+
+        nDCDPNEODMD_ = 0F;
 
         entityId_ = 0;
+
+        paramIndex_ = 0;
 
         return this;
       }
@@ -776,23 +923,24 @@ public final class EvtGrapplingHookMoveOuterClass {
       public emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove buildPartial() {
         emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove result = new emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove(this);
         int from_bitField0_ = bitField0_;
-        result.overrideCollider_ = overrideCollider_;
         if (((bitField0_ & 0x00000001) != 0)) {
           animatorStateIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.animatorStateIdList_ = animatorStateIdList_;
-        result.speed_ = speed_;
-        result.cHLPMJKKOHB_ = cHLPMJKKOHB_;
+        result.overrideCollider_ = overrideCollider_;
         if (targetPosBuilder_ == null) {
           result.targetPos_ = targetPos_;
         } else {
           result.targetPos_ = targetPosBuilder_.build();
         }
-        result.oJNIOEOFFOI_ = oJNIOEOFFOI_;
-        result.cEIIFCMKJJC_ = cEIIFCMKJJC_;
-        result.iFFPKMEPDMA_ = iFFPKMEPDMA_;
+        result.speed_ = speed_;
+        result.kIOAMEOMGCO_ = kIOAMEOMGCO_;
+        result.gIAHKHBPGIA_ = gIAHKHBPGIA_;
+        result.kLODIABFCBE_ = kLODIABFCBE_;
+        result.nDCDPNEODMD_ = nDCDPNEODMD_;
         result.entityId_ = entityId_;
+        result.paramIndex_ = paramIndex_;
         onBuilt();
         return result;
       }
@@ -841,10 +989,6 @@ public final class EvtGrapplingHookMoveOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove other) {
         if (other == emu.grasscutter.net.proto.EvtGrapplingHookMoveOuterClass.EvtGrapplingHookMove.getDefaultInstance()) return this;
-        if (!other.getOverrideCollider().isEmpty()) {
-          overrideCollider_ = other.overrideCollider_;
-          onChanged();
-        }
         if (!other.animatorStateIdList_.isEmpty()) {
           if (animatorStateIdList_.isEmpty()) {
             animatorStateIdList_ = other.animatorStateIdList_;
@@ -855,26 +999,33 @@ public final class EvtGrapplingHookMoveOuterClass {
           }
           onChanged();
         }
-        if (other.getSpeed() != 0F) {
-          setSpeed(other.getSpeed());
-        }
-        if (other.getCHLPMJKKOHB() != 0F) {
-          setCHLPMJKKOHB(other.getCHLPMJKKOHB());
+        if (!other.getOverrideCollider().isEmpty()) {
+          overrideCollider_ = other.overrideCollider_;
+          onChanged();
         }
         if (other.hasTargetPos()) {
           mergeTargetPos(other.getTargetPos());
         }
-        if (other.getOJNIOEOFFOI() != 0F) {
-          setOJNIOEOFFOI(other.getOJNIOEOFFOI());
+        if (other.getSpeed() != 0F) {
+          setSpeed(other.getSpeed());
         }
-        if (other.getCEIIFCMKJJC() != false) {
-          setCEIIFCMKJJC(other.getCEIIFCMKJJC());
+        if (other.getKIOAMEOMGCO() != false) {
+          setKIOAMEOMGCO(other.getKIOAMEOMGCO());
         }
-        if (other.getIFFPKMEPDMA() != false) {
-          setIFFPKMEPDMA(other.getIFFPKMEPDMA());
+        if (other.getGIAHKHBPGIA() != false) {
+          setGIAHKHBPGIA(other.getGIAHKHBPGIA());
+        }
+        if (other.getKLODIABFCBE() != 0F) {
+          setKLODIABFCBE(other.getKLODIABFCBE());
+        }
+        if (other.getNDCDPNEODMD() != 0F) {
+          setNDCDPNEODMD(other.getNDCDPNEODMD());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getParamIndex() != 0) {
+          setParamIndex(other.getParamIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -906,9 +1057,120 @@ public final class EvtGrapplingHookMoveOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList animatorStateIdList_ = emptyIntList();
+      private void ensureAnimatorStateIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          animatorStateIdList_ = mutableCopy(animatorStateIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @return A list containing the animatorStateIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getAnimatorStateIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(animatorStateIdList_) : animatorStateIdList_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @return The count of animatorStateIdList.
+       */
+      public int getAnimatorStateIdListCount() {
+        return animatorStateIdList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @param index The index of the element to return.
+       * @return The animatorStateIdList at the given index.
+       */
+      public int getAnimatorStateIdList(int index) {
+        return animatorStateIdList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The animatorStateIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnimatorStateIdList(
+          int index, int value) {
+        ensureAnimatorStateIdListIsMutable();
+        animatorStateIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @param value The animatorStateIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAnimatorStateIdList(int value) {
+        ensureAnimatorStateIdListIsMutable();
+        animatorStateIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @param values The animatorStateIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllAnimatorStateIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureAnimatorStateIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, animatorStateIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 animator_state_id_list = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAnimatorStateIdList() {
+        animatorStateIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object overrideCollider_ = "";
       /**
-       * <code>string override_collider = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string override_collider = 2;</code>
        * @return The overrideCollider.
        */
       public java.lang.String getOverrideCollider() {
@@ -924,7 +1186,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         }
       }
       /**
-       * <code>string override_collider = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string override_collider = 2;</code>
        * @return The bytes for overrideCollider.
        */
       public com.google.protobuf.ByteString
@@ -941,7 +1207,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         }
       }
       /**
-       * <code>string override_collider = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string override_collider = 2;</code>
        * @param value The overrideCollider to set.
        * @return This builder for chaining.
        */
@@ -956,7 +1226,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>string override_collider = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string override_collider = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOverrideCollider() {
@@ -966,7 +1240,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>string override_collider = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string override_collider = 2;</code>
        * @param value The bytes for overrideCollider to set.
        * @return This builder for chaining.
        */
@@ -982,159 +1260,26 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList animatorStateIdList_ = emptyIntList();
-      private void ensureAnimatorStateIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          animatorStateIdList_ = mutableCopy(animatorStateIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @return A list containing the animatorStateIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getAnimatorStateIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(animatorStateIdList_) : animatorStateIdList_;
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @return The count of animatorStateIdList.
-       */
-      public int getAnimatorStateIdListCount() {
-        return animatorStateIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @param index The index of the element to return.
-       * @return The animatorStateIdList at the given index.
-       */
-      public int getAnimatorStateIdList(int index) {
-        return animatorStateIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @param index The index to set the value at.
-       * @param value The animatorStateIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAnimatorStateIdList(
-          int index, int value) {
-        ensureAnimatorStateIdListIsMutable();
-        animatorStateIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @param value The animatorStateIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAnimatorStateIdList(int value) {
-        ensureAnimatorStateIdListIsMutable();
-        animatorStateIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @param values The animatorStateIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllAnimatorStateIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureAnimatorStateIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, animatorStateIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 animator_state_id_list = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAnimatorStateIdList() {
-        animatorStateIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private float speed_ ;
-      /**
-       * <code>float speed = 14;</code>
-       * @return The speed.
-       */
-      @java.lang.Override
-      public float getSpeed() {
-        return speed_;
-      }
-      /**
-       * <code>float speed = 14;</code>
-       * @param value The speed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSpeed(float value) {
-        
-        speed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float speed = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSpeed() {
-        
-        speed_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float cHLPMJKKOHB_ ;
-      /**
-       * <code>float CHLPMJKKOHB = 3;</code>
-       * @return The cHLPMJKKOHB.
-       */
-      @java.lang.Override
-      public float getCHLPMJKKOHB() {
-        return cHLPMJKKOHB_;
-      }
-      /**
-       * <code>float CHLPMJKKOHB = 3;</code>
-       * @param value The cHLPMJKKOHB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCHLPMJKKOHB(float value) {
-        
-        cHLPMJKKOHB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float CHLPMJKKOHB = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCHLPMJKKOHB() {
-        
-        cHLPMJKKOHB_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> targetPosBuilder_;
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        * @return Whether the targetPos field is set.
        */
       public boolean hasTargetPos() {
         return targetPosBuilder_ != null || targetPos_ != null;
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        * @return The targetPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
@@ -1145,7 +1290,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public Builder setTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -1161,7 +1310,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public Builder setTargetPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1175,7 +1328,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public Builder mergeTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -1193,7 +1350,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public Builder clearTargetPos() {
         if (targetPosBuilder_ == null) {
@@ -1207,7 +1368,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTargetPosBuilder() {
         
@@ -1215,7 +1380,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return getTargetPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
         if (targetPosBuilder_ != null) {
@@ -1226,7 +1395,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 10;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector target_pos = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1242,102 +1415,228 @@ public final class EvtGrapplingHookMoveOuterClass {
         return targetPosBuilder_;
       }
 
-      private float oJNIOEOFFOI_ ;
+      private float speed_ ;
       /**
-       * <code>float OJNIOEOFFOI = 15;</code>
-       * @return The oJNIOEOFFOI.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>float speed = 7;</code>
+       * @return The speed.
        */
       @java.lang.Override
-      public float getOJNIOEOFFOI() {
-        return oJNIOEOFFOI_;
+      public float getSpeed() {
+        return speed_;
       }
       /**
-       * <code>float OJNIOEOFFOI = 15;</code>
-       * @param value The oJNIOEOFFOI to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>float speed = 7;</code>
+       * @param value The speed to set.
        * @return This builder for chaining.
        */
-      public Builder setOJNIOEOFFOI(float value) {
+      public Builder setSpeed(float value) {
         
-        oJNIOEOFFOI_ = value;
+        speed_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float OJNIOEOFFOI = 15;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>float speed = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOJNIOEOFFOI() {
+      public Builder clearSpeed() {
         
-        oJNIOEOFFOI_ = 0F;
+        speed_ = 0F;
         onChanged();
         return this;
       }
 
-      private boolean cEIIFCMKJJC_ ;
+      private boolean kIOAMEOMGCO_ ;
       /**
-       * <code>bool CEIIFCMKJJC = 7;</code>
-       * @return The cEIIFCMKJJC.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool KIOAMEOMGCO = 9;</code>
+       * @return The kIOAMEOMGCO.
        */
       @java.lang.Override
-      public boolean getCEIIFCMKJJC() {
-        return cEIIFCMKJJC_;
+      public boolean getKIOAMEOMGCO() {
+        return kIOAMEOMGCO_;
       }
       /**
-       * <code>bool CEIIFCMKJJC = 7;</code>
-       * @param value The cEIIFCMKJJC to set.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool KIOAMEOMGCO = 9;</code>
+       * @param value The kIOAMEOMGCO to set.
        * @return This builder for chaining.
        */
-      public Builder setCEIIFCMKJJC(boolean value) {
+      public Builder setKIOAMEOMGCO(boolean value) {
         
-        cEIIFCMKJJC_ = value;
+        kIOAMEOMGCO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool CEIIFCMKJJC = 7;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool KIOAMEOMGCO = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCEIIFCMKJJC() {
+      public Builder clearKIOAMEOMGCO() {
         
-        cEIIFCMKJJC_ = false;
+        kIOAMEOMGCO_ = false;
         onChanged();
         return this;
       }
 
-      private boolean iFFPKMEPDMA_ ;
+      private boolean gIAHKHBPGIA_ ;
       /**
-       * <code>bool IFFPKMEPDMA = 12;</code>
-       * @return The iFFPKMEPDMA.
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool GIAHKHBPGIA = 8;</code>
+       * @return The gIAHKHBPGIA.
        */
       @java.lang.Override
-      public boolean getIFFPKMEPDMA() {
-        return iFFPKMEPDMA_;
+      public boolean getGIAHKHBPGIA() {
+        return gIAHKHBPGIA_;
       }
       /**
-       * <code>bool IFFPKMEPDMA = 12;</code>
-       * @param value The iFFPKMEPDMA to set.
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool GIAHKHBPGIA = 8;</code>
+       * @param value The gIAHKHBPGIA to set.
        * @return This builder for chaining.
        */
-      public Builder setIFFPKMEPDMA(boolean value) {
+      public Builder setGIAHKHBPGIA(boolean value) {
         
-        iFFPKMEPDMA_ = value;
+        gIAHKHBPGIA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool IFFPKMEPDMA = 12;</code>
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool GIAHKHBPGIA = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFFPKMEPDMA() {
+      public Builder clearGIAHKHBPGIA() {
         
-        iFFPKMEPDMA_ = false;
+        gIAHKHBPGIA_ = false;
+        onChanged();
+        return this;
+      }
+
+      private float kLODIABFCBE_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float KLODIABFCBE = 6;</code>
+       * @return The kLODIABFCBE.
+       */
+      @java.lang.Override
+      public float getKLODIABFCBE() {
+        return kLODIABFCBE_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float KLODIABFCBE = 6;</code>
+       * @param value The kLODIABFCBE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKLODIABFCBE(float value) {
+        
+        kLODIABFCBE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float KLODIABFCBE = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKLODIABFCBE() {
+        
+        kLODIABFCBE_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float nDCDPNEODMD_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float NDCDPNEODMD = 10;</code>
+       * @return The nDCDPNEODMD.
+       */
+      @java.lang.Override
+      public float getNDCDPNEODMD() {
+        return nDCDPNEODMD_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float NDCDPNEODMD = 10;</code>
+       * @param value The nDCDPNEODMD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNDCDPNEODMD(float value) {
+        
+        nDCDPNEODMD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float NDCDPNEODMD = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNDCDPNEODMD() {
+        
+        nDCDPNEODMD_ = 0F;
         onChanged();
         return this;
       }
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 entity_id = 14;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1345,7 +1644,11 @@ public final class EvtGrapplingHookMoveOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 entity_id = 14;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1356,12 +1659,59 @@ public final class EvtGrapplingHookMoveOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 entity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int paramIndex_ ;
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>int32 param_index = 4;</code>
+       * @return The paramIndex.
+       */
+      @java.lang.Override
+      public int getParamIndex() {
+        return paramIndex_;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>int32 param_index = 4;</code>
+       * @param value The paramIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamIndex(int value) {
+        
+        paramIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>int32 param_index = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamIndex() {
+        
+        paramIndex_ = 0;
         onChanged();
         return this;
       }
@@ -1433,13 +1783,14 @@ public final class EvtGrapplingHookMoveOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032EvtGrapplingHookMove.proto\032\014Vector.pro" +
-      "to\"\344\001\n\024EvtGrapplingHookMove\022\031\n\021override_" +
-      "collider\030\004 \001(\t\022\036\n\026animator_state_id_list" +
-      "\030\006 \003(\r\022\r\n\005speed\030\016 \001(\002\022\023\n\013CHLPMJKKOHB\030\003 \001" +
-      "(\002\022\033\n\ntarget_pos\030\n \001(\0132\007.Vector\022\023\n\013OJNIO" +
-      "EOFFOI\030\017 \001(\002\022\023\n\013CEIIFCMKJJC\030\007 \001(\010\022\023\n\013IFF" +
-      "PKMEPDMA\030\014 \001(\010\022\021\n\tentity_id\030\001 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "to\"\371\001\n\024EvtGrapplingHookMove\022\036\n\026animator_" +
+      "state_id_list\030\014 \003(\r\022\031\n\021override_collider" +
+      "\030\002 \001(\t\022\033\n\ntarget_pos\030\005 \001(\0132\007.Vector\022\r\n\005s" +
+      "peed\030\007 \001(\002\022\023\n\013KIOAMEOMGCO\030\t \001(\010\022\023\n\013GIAHK" +
+      "HBPGIA\030\010 \001(\010\022\023\n\013KLODIABFCBE\030\006 \001(\002\022\023\n\013NDC" +
+      "DPNEODMD\030\n \001(\002\022\021\n\tentity_id\030\016 \001(\r\022\023\n\013par" +
+      "am_index\030\004 \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1451,7 +1802,7 @@ public final class EvtGrapplingHookMoveOuterClass {
     internal_static_EvtGrapplingHookMove_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtGrapplingHookMove_descriptor,
-        new java.lang.String[] { "OverrideCollider", "AnimatorStateIdList", "Speed", "CHLPMJKKOHB", "TargetPos", "OJNIOEOFFOI", "CEIIFCMKJJC", "IFFPKMEPDMA", "EntityId", });
+        new java.lang.String[] { "AnimatorStateIdList", "OverrideCollider", "TargetPos", "Speed", "KIOAMEOMGCO", "GIAHKHBPGIA", "KLODIABFCBE", "NDCDPNEODMD", "EntityId", "ParamIndex", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

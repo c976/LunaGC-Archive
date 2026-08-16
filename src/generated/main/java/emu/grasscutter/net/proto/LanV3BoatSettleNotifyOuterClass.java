@@ -19,110 +19,109 @@ public final class LanV3BoatSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 play_index = 8;</code>
-     * @return The playIndex.
-     */
-    int getPlayIndex();
-
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> 
-        getSettleInfoListList();
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo getSettleInfoList(int index);
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    int getSettleInfoListCount();
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> 
-        getSettleInfoListOrBuilderList();
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder getSettleInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>bool is_single = 1;</code>
-     * @return The isSingle.
-     */
-    boolean getIsSingle();
-
-    /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @return A list containing the winnerUidList.
      */
     java.util.List<java.lang.Integer> getWinnerUidListList();
     /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @return The count of winnerUidList.
      */
     int getWinnerUidListCount();
     /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The winnerUidList at the given index.
      */
     int getWinnerUidList(int index);
 
     /**
-     * <code>uint32 begin_time = 6;</code>
-     * @return The beginTime.
+     * <code>bool is_single = 3;</code>
+     * @return The isSingle.
      */
-    int getBeginTime();
+    boolean getIsSingle();
 
     /**
-     * <code>uint32 stage_type = 13;</code>
+     * <code>uint32 stage_type = 4;</code>
      * @return The stageType.
      */
     int getStageType();
 
     /**
-     * <code>uint32 duration = 2;</code>
+     * <code>uint32 play_index = 6;</code>
+     * @return The playIndex.
+     */
+    int getPlayIndex();
+
+    /**
+     * <code>bool is_gallery_succ = 8;</code>
+     * @return The isGallerySucc.
+     */
+    boolean getIsGallerySucc();
+
+    /**
+     * <code>uint32 begin_time = 9;</code>
+     * @return The beginTime.
+     */
+    int getBeginTime();
+
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> 
+        getSettleInfoListList();
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo getSettleInfoList(int index);
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    int getSettleInfoListCount();
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> 
+        getSettleInfoListOrBuilderList();
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder getSettleInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 duration = 13;</code>
      * @return The duration.
      */
     int getDuration();
 
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
         getScoreListList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index);
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     int getScoreListCount();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
         getScoreListOrBuilderList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
         int index);
-
-    /**
-     * <code>bool IPELDMIMABF = 14;</code>
-     * @return The iPELDMIMABF.
-     */
-    boolean getIPELDMIMABF();
   }
   /**
    * <pre>
-   * CmdId: 27166
-   * Obf: HMONBEDKAPN
+   * CmdId: 21740
    * </pre>
    *
    * Protobuf type {@code LanV3BoatSettleNotify}
@@ -137,8 +136,8 @@ public final class LanV3BoatSettleNotifyOuterClass {
       super(builder);
     }
     private LanV3BoatSettleNotify() {
-      settleInfoList_ = java.util.Collections.emptyList();
       winnerUidList_ = emptyIntList();
+      settleInfoList_ = java.util.Collections.emptyList();
       scoreList_ = java.util.Collections.emptyList();
     }
 
@@ -173,44 +172,20 @@ public final class LanV3BoatSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isSingle_ = input.readBool();
-              break;
-            }
             case 16: {
-
-              duration_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                scoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              scoreList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 winnerUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               winnerUidList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 winnerUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 winnerUidList_.addInt(input.readUInt32());
@@ -218,15 +193,35 @@ public final class LanV3BoatSettleNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 24: {
+
+              isSingle_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              stageType_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               playIndex_ = input.readUInt32();
               break;
             }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 64: {
+
+              isGallerySucc_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              beginTime_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               settleInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.parser(), extensionRegistry));
@@ -234,12 +229,16 @@ public final class LanV3BoatSettleNotifyOuterClass {
             }
             case 104: {
 
-              stageType_ = input.readUInt32();
+              duration_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              iPELDMIMABF_ = input.readBool();
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                scoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              scoreList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -257,14 +256,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           winnerUidList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -283,72 +282,10 @@ public final class LanV3BoatSettleNotifyOuterClass {
               emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify.class, emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify.Builder.class);
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 8;
-    private int playIndex_;
-    /**
-     * <code>uint32 play_index = 8;</code>
-     * @return The playIndex.
-     */
-    @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
-    }
-
-    public static final int SETTLE_INFO_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> settleInfoList_;
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> getSettleInfoListList() {
-      return settleInfoList_;
-    }
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> 
-        getSettleInfoListOrBuilderList() {
-      return settleInfoList_;
-    }
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getSettleInfoListCount() {
-      return settleInfoList_.size();
-    }
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo getSettleInfoList(int index) {
-      return settleInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder getSettleInfoListOrBuilder(
-        int index) {
-      return settleInfoList_.get(index);
-    }
-
-    public static final int IS_SINGLE_FIELD_NUMBER = 1;
-    private boolean isSingle_;
-    /**
-     * <code>bool is_single = 1;</code>
-     * @return The isSingle.
-     */
-    @java.lang.Override
-    public boolean getIsSingle() {
-      return isSingle_;
-    }
-
-    public static final int WINNER_UID_LIST_FIELD_NUMBER = 7;
+    public static final int WINNER_UID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList winnerUidList_;
     /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @return A list containing the winnerUidList.
      */
     @java.lang.Override
@@ -357,14 +294,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
       return winnerUidList_;
     }
     /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @return The count of winnerUidList.
      */
     public int getWinnerUidListCount() {
       return winnerUidList_.size();
     }
     /**
-     * <code>repeated uint32 winner_uid_list = 7;</code>
+     * <code>repeated uint32 winner_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The winnerUidList at the given index.
      */
@@ -373,21 +310,21 @@ public final class LanV3BoatSettleNotifyOuterClass {
     }
     private int winnerUidListMemoizedSerializedSize = -1;
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 6;
-    private int beginTime_;
+    public static final int IS_SINGLE_FIELD_NUMBER = 3;
+    private boolean isSingle_;
     /**
-     * <code>uint32 begin_time = 6;</code>
-     * @return The beginTime.
+     * <code>bool is_single = 3;</code>
+     * @return The isSingle.
      */
     @java.lang.Override
-    public int getBeginTime() {
-      return beginTime_;
+    public boolean getIsSingle() {
+      return isSingle_;
     }
 
-    public static final int STAGE_TYPE_FIELD_NUMBER = 13;
+    public static final int STAGE_TYPE_FIELD_NUMBER = 4;
     private int stageType_;
     /**
-     * <code>uint32 stage_type = 13;</code>
+     * <code>uint32 stage_type = 4;</code>
      * @return The stageType.
      */
     @java.lang.Override
@@ -395,10 +332,83 @@ public final class LanV3BoatSettleNotifyOuterClass {
       return stageType_;
     }
 
-    public static final int DURATION_FIELD_NUMBER = 2;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 6;
+    private int playIndex_;
+    /**
+     * <code>uint32 play_index = 6;</code>
+     * @return The playIndex.
+     */
+    @java.lang.Override
+    public int getPlayIndex() {
+      return playIndex_;
+    }
+
+    public static final int IS_GALLERY_SUCC_FIELD_NUMBER = 8;
+    private boolean isGallerySucc_;
+    /**
+     * <code>bool is_gallery_succ = 8;</code>
+     * @return The isGallerySucc.
+     */
+    @java.lang.Override
+    public boolean getIsGallerySucc() {
+      return isGallerySucc_;
+    }
+
+    public static final int BEGIN_TIME_FIELD_NUMBER = 9;
+    private int beginTime_;
+    /**
+     * <code>uint32 begin_time = 9;</code>
+     * @return The beginTime.
+     */
+    @java.lang.Override
+    public int getBeginTime() {
+      return beginTime_;
+    }
+
+    public static final int SETTLE_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> settleInfoList_;
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> getSettleInfoListList() {
+      return settleInfoList_;
+    }
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> 
+        getSettleInfoListOrBuilderList() {
+      return settleInfoList_;
+    }
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public int getSettleInfoListCount() {
+      return settleInfoList_.size();
+    }
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo getSettleInfoList(int index) {
+      return settleInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder getSettleInfoListOrBuilder(
+        int index) {
+      return settleInfoList_.get(index);
+    }
+
+    public static final int DURATION_FIELD_NUMBER = 13;
     private int duration_;
     /**
-     * <code>uint32 duration = 2;</code>
+     * <code>uint32 duration = 13;</code>
      * @return The duration.
      */
     @java.lang.Override
@@ -406,17 +416,17 @@ public final class LanV3BoatSettleNotifyOuterClass {
       return duration_;
     }
 
-    public static final int SCORE_LIST_FIELD_NUMBER = 3;
+    public static final int SCORE_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> scoreList_;
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
@@ -424,37 +434,26 @@ public final class LanV3BoatSettleNotifyOuterClass {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     @java.lang.Override
     public int getScoreListCount() {
       return scoreList_.size();
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
       return scoreList_.get(index);
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
         int index) {
       return scoreList_.get(index);
-    }
-
-    public static final int IPELDMIMABF_FIELD_NUMBER = 14;
-    private boolean iPELDMIMABF_;
-    /**
-     * <code>bool IPELDMIMABF = 14;</code>
-     * @return The iPELDMIMABF.
-     */
-    @java.lang.Override
-    public boolean getIPELDMIMABF() {
-      return iPELDMIMABF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -472,36 +471,36 @@ public final class LanV3BoatSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isSingle_ != false) {
-        output.writeBool(1, isSingle_);
-      }
-      if (duration_ != 0) {
-        output.writeUInt32(2, duration_);
-      }
-      for (int i = 0; i < scoreList_.size(); i++) {
-        output.writeMessage(3, scoreList_.get(i));
-      }
-      if (beginTime_ != 0) {
-        output.writeUInt32(6, beginTime_);
-      }
       if (getWinnerUidListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(winnerUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < winnerUidList_.size(); i++) {
         output.writeUInt32NoTag(winnerUidList_.getInt(i));
       }
-      if (playIndex_ != 0) {
-        output.writeUInt32(8, playIndex_);
-      }
-      for (int i = 0; i < settleInfoList_.size(); i++) {
-        output.writeMessage(10, settleInfoList_.get(i));
+      if (isSingle_ != false) {
+        output.writeBool(3, isSingle_);
       }
       if (stageType_ != 0) {
-        output.writeUInt32(13, stageType_);
+        output.writeUInt32(4, stageType_);
       }
-      if (iPELDMIMABF_ != false) {
-        output.writeBool(14, iPELDMIMABF_);
+      if (playIndex_ != 0) {
+        output.writeUInt32(6, playIndex_);
+      }
+      if (isGallerySucc_ != false) {
+        output.writeBool(8, isGallerySucc_);
+      }
+      if (beginTime_ != 0) {
+        output.writeUInt32(9, beginTime_);
+      }
+      for (int i = 0; i < settleInfoList_.size(); i++) {
+        output.writeMessage(12, settleInfoList_.get(i));
+      }
+      if (duration_ != 0) {
+        output.writeUInt32(13, duration_);
+      }
+      for (int i = 0; i < scoreList_.size(); i++) {
+        output.writeMessage(14, scoreList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -512,22 +511,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSingle_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isSingle_);
-      }
-      if (duration_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, duration_);
-      }
-      for (int i = 0; i < scoreList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, scoreList_.get(i));
-      }
-      if (beginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, beginTime_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < winnerUidList_.size(); i++) {
@@ -542,21 +525,37 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
         winnerUidListMemoizedSerializedSize = dataSize;
       }
-      if (playIndex_ != 0) {
+      if (isSingle_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playIndex_);
-      }
-      for (int i = 0; i < settleInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, settleInfoList_.get(i));
+          .computeBoolSize(3, isSingle_);
       }
       if (stageType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageType_);
+          .computeUInt32Size(4, stageType_);
       }
-      if (iPELDMIMABF_ != false) {
+      if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, iPELDMIMABF_);
+          .computeUInt32Size(6, playIndex_);
+      }
+      if (isGallerySucc_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isGallerySucc_);
+      }
+      if (beginTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, beginTime_);
+      }
+      for (int i = 0; i < settleInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, settleInfoList_.get(i));
+      }
+      if (duration_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, duration_);
+      }
+      for (int i = 0; i < scoreList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, scoreList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -573,24 +572,24 @@ public final class LanV3BoatSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify other = (emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify) obj;
 
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
-      if (!getSettleInfoListList()
-          .equals(other.getSettleInfoListList())) return false;
-      if (getIsSingle()
-          != other.getIsSingle()) return false;
       if (!getWinnerUidListList()
           .equals(other.getWinnerUidListList())) return false;
-      if (getBeginTime()
-          != other.getBeginTime()) return false;
+      if (getIsSingle()
+          != other.getIsSingle()) return false;
       if (getStageType()
           != other.getStageType()) return false;
+      if (getPlayIndex()
+          != other.getPlayIndex()) return false;
+      if (getIsGallerySucc()
+          != other.getIsGallerySucc()) return false;
+      if (getBeginTime()
+          != other.getBeginTime()) return false;
+      if (!getSettleInfoListList()
+          .equals(other.getSettleInfoListList())) return false;
       if (getDuration()
           != other.getDuration()) return false;
       if (!getScoreListList()
           .equals(other.getScoreListList())) return false;
-      if (getIPELDMIMABF()
-          != other.getIPELDMIMABF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -602,32 +601,32 @@ public final class LanV3BoatSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
-      if (getSettleInfoListCount() > 0) {
-        hash = (37 * hash) + SETTLE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSettleInfoListList().hashCode();
-      }
-      hash = (37 * hash) + IS_SINGLE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSingle());
       if (getWinnerUidListCount() > 0) {
         hash = (37 * hash) + WINNER_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWinnerUidListList().hashCode();
       }
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBeginTime();
+      hash = (37 * hash) + IS_SINGLE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSingle());
       hash = (37 * hash) + STAGE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getStageType();
+      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayIndex();
+      hash = (37 * hash) + IS_GALLERY_SUCC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsGallerySucc());
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBeginTime();
+      if (getSettleInfoListCount() > 0) {
+        hash = (37 * hash) + SETTLE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSettleInfoListList().hashCode();
+      }
       hash = (37 * hash) + DURATION_FIELD_NUMBER;
       hash = (53 * hash) + getDuration();
       if (getScoreListCount() > 0) {
         hash = (37 * hash) + SCORE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getScoreListList().hashCode();
       }
-      hash = (37 * hash) + IPELDMIMABF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIPELDMIMABF());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -725,8 +724,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27166
-     * Obf: HMONBEDKAPN
+     * CmdId: 21740
      * </pre>
      *
      * Protobuf type {@code LanV3BoatSettleNotify}
@@ -768,22 +766,24 @@ public final class LanV3BoatSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playIndex_ = 0;
-
-        if (settleInfoListBuilder_ == null) {
-          settleInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          settleInfoListBuilder_.clear();
-        }
-        isSingle_ = false;
-
         winnerUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        beginTime_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isSingle_ = false;
 
         stageType_ = 0;
 
+        playIndex_ = 0;
+
+        isGallerySucc_ = false;
+
+        beginTime_ = 0;
+
+        if (settleInfoListBuilder_ == null) {
+          settleInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          settleInfoListBuilder_.clear();
+        }
         duration_ = 0;
 
         if (scoreListBuilder_ == null) {
@@ -792,8 +792,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
         } else {
           scoreListBuilder_.clear();
         }
-        iPELDMIMABF_ = false;
-
         return this;
       }
 
@@ -821,24 +819,25 @@ public final class LanV3BoatSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify buildPartial() {
         emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify result = new emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          winnerUidList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.winnerUidList_ = winnerUidList_;
+        result.isSingle_ = isSingle_;
+        result.stageType_ = stageType_;
         result.playIndex_ = playIndex_;
+        result.isGallerySucc_ = isGallerySucc_;
+        result.beginTime_ = beginTime_;
         if (settleInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             settleInfoList_ = java.util.Collections.unmodifiableList(settleInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.settleInfoList_ = settleInfoList_;
         } else {
           result.settleInfoList_ = settleInfoListBuilder_.build();
         }
-        result.isSingle_ = isSingle_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          winnerUidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.winnerUidList_ = winnerUidList_;
-        result.beginTime_ = beginTime_;
-        result.stageType_ = stageType_;
         result.duration_ = duration_;
         if (scoreListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
@@ -849,7 +848,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
         } else {
           result.scoreList_ = scoreListBuilder_.build();
         }
-        result.iPELDMIMABF_ = iPELDMIMABF_;
         onBuilt();
         return result;
       }
@@ -898,14 +896,36 @@ public final class LanV3BoatSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify other) {
         if (other == emu.grasscutter.net.proto.LanV3BoatSettleNotifyOuterClass.LanV3BoatSettleNotify.getDefaultInstance()) return this;
+        if (!other.winnerUidList_.isEmpty()) {
+          if (winnerUidList_.isEmpty()) {
+            winnerUidList_ = other.winnerUidList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureWinnerUidListIsMutable();
+            winnerUidList_.addAll(other.winnerUidList_);
+          }
+          onChanged();
+        }
+        if (other.getIsSingle() != false) {
+          setIsSingle(other.getIsSingle());
+        }
+        if (other.getStageType() != 0) {
+          setStageType(other.getStageType());
+        }
         if (other.getPlayIndex() != 0) {
           setPlayIndex(other.getPlayIndex());
+        }
+        if (other.getIsGallerySucc() != false) {
+          setIsGallerySucc(other.getIsGallerySucc());
+        }
+        if (other.getBeginTime() != 0) {
+          setBeginTime(other.getBeginTime());
         }
         if (settleInfoListBuilder_ == null) {
           if (!other.settleInfoList_.isEmpty()) {
             if (settleInfoList_.isEmpty()) {
               settleInfoList_ = other.settleInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureSettleInfoListIsMutable();
               settleInfoList_.addAll(other.settleInfoList_);
@@ -918,7 +938,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
               settleInfoListBuilder_.dispose();
               settleInfoListBuilder_ = null;
               settleInfoList_ = other.settleInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               settleInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSettleInfoListFieldBuilder() : null;
@@ -926,25 +946,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
               settleInfoListBuilder_.addAllMessages(other.settleInfoList_);
             }
           }
-        }
-        if (other.getIsSingle() != false) {
-          setIsSingle(other.getIsSingle());
-        }
-        if (!other.winnerUidList_.isEmpty()) {
-          if (winnerUidList_.isEmpty()) {
-            winnerUidList_ = other.winnerUidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureWinnerUidListIsMutable();
-            winnerUidList_.addAll(other.winnerUidList_);
-          }
-          onChanged();
-        }
-        if (other.getBeginTime() != 0) {
-          setBeginTime(other.getBeginTime());
-        }
-        if (other.getStageType() != 0) {
-          setStageType(other.getStageType());
         }
         if (other.getDuration() != 0) {
           setDuration(other.getDuration());
@@ -974,9 +975,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
               scoreListBuilder_.addAllMessages(other.scoreList_);
             }
           }
-        }
-        if (other.getIPELDMIMABF() != false) {
-          setIPELDMIMABF(other.getIPELDMIMABF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1008,9 +1006,150 @@ public final class LanV3BoatSettleNotifyOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList winnerUidList_ = emptyIntList();
+      private void ensureWinnerUidListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          winnerUidList_ = mutableCopy(winnerUidList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @return A list containing the winnerUidList.
+       */
+      public java.util.List<java.lang.Integer>
+          getWinnerUidListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(winnerUidList_) : winnerUidList_;
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @return The count of winnerUidList.
+       */
+      public int getWinnerUidListCount() {
+        return winnerUidList_.size();
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The winnerUidList at the given index.
+       */
+      public int getWinnerUidList(int index) {
+        return winnerUidList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The winnerUidList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWinnerUidList(
+          int index, int value) {
+        ensureWinnerUidListIsMutable();
+        winnerUidList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @param value The winnerUidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addWinnerUidList(int value) {
+        ensureWinnerUidListIsMutable();
+        winnerUidList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @param values The winnerUidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllWinnerUidList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureWinnerUidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, winnerUidList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 winner_uid_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWinnerUidList() {
+        winnerUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private boolean isSingle_ ;
+      /**
+       * <code>bool is_single = 3;</code>
+       * @return The isSingle.
+       */
+      @java.lang.Override
+      public boolean getIsSingle() {
+        return isSingle_;
+      }
+      /**
+       * <code>bool is_single = 3;</code>
+       * @param value The isSingle to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSingle(boolean value) {
+        
+        isSingle_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_single = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSingle() {
+        
+        isSingle_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageType_ ;
+      /**
+       * <code>uint32 stage_type = 4;</code>
+       * @return The stageType.
+       */
+      @java.lang.Override
+      public int getStageType() {
+        return stageType_;
+      }
+      /**
+       * <code>uint32 stage_type = 4;</code>
+       * @param value The stageType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageType(int value) {
+        
+        stageType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_type = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageType() {
+        
+        stageType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 6;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -1018,7 +1157,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 6;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -1029,7 +1168,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 8;</code>
+       * <code>uint32 play_index = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
@@ -1039,12 +1178,74 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
 
+      private boolean isGallerySucc_ ;
+      /**
+       * <code>bool is_gallery_succ = 8;</code>
+       * @return The isGallerySucc.
+       */
+      @java.lang.Override
+      public boolean getIsGallerySucc() {
+        return isGallerySucc_;
+      }
+      /**
+       * <code>bool is_gallery_succ = 8;</code>
+       * @param value The isGallerySucc to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsGallerySucc(boolean value) {
+        
+        isGallerySucc_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_gallery_succ = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsGallerySucc() {
+        
+        isGallerySucc_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int beginTime_ ;
+      /**
+       * <code>uint32 begin_time = 9;</code>
+       * @return The beginTime.
+       */
+      @java.lang.Override
+      public int getBeginTime() {
+        return beginTime_;
+      }
+      /**
+       * <code>uint32 begin_time = 9;</code>
+       * @param value The beginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeginTime(int value) {
+        
+        beginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 begin_time = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeginTime() {
+        
+        beginTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> settleInfoList_ =
         java.util.Collections.emptyList();
       private void ensureSettleInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           settleInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo>(settleInfoList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1052,7 +1253,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
           emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> settleInfoListBuilder_;
 
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> getSettleInfoListList() {
         if (settleInfoListBuilder_ == null) {
@@ -1062,7 +1263,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public int getSettleInfoListCount() {
         if (settleInfoListBuilder_ == null) {
@@ -1072,7 +1273,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo getSettleInfoList(int index) {
         if (settleInfoListBuilder_ == null) {
@@ -1082,7 +1283,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder setSettleInfoList(
           int index, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo value) {
@@ -1099,7 +1300,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder setSettleInfoList(
           int index, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder builderForValue) {
@@ -1113,7 +1314,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder addSettleInfoList(emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo value) {
         if (settleInfoListBuilder_ == null) {
@@ -1129,7 +1330,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder addSettleInfoList(
           int index, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo value) {
@@ -1146,7 +1347,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder addSettleInfoList(
           emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder builderForValue) {
@@ -1160,7 +1361,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder addSettleInfoList(
           int index, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder builderForValue) {
@@ -1174,7 +1375,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder addAllSettleInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo> values) {
@@ -1189,12 +1390,12 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder clearSettleInfoList() {
         if (settleInfoListBuilder_ == null) {
           settleInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           settleInfoListBuilder_.clear();
@@ -1202,7 +1403,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public Builder removeSettleInfoList(int index) {
         if (settleInfoListBuilder_ == null) {
@@ -1215,14 +1416,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder getSettleInfoListBuilder(
           int index) {
         return getSettleInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder getSettleInfoListOrBuilder(
           int index) {
@@ -1232,7 +1433,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder> 
            getSettleInfoListOrBuilderList() {
@@ -1243,14 +1444,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder addSettleInfoListBuilder() {
         return getSettleInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder addSettleInfoListBuilder(
           int index) {
@@ -1258,7 +1459,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 10;</code>
+       * <code>repeated .LanV3BoatSettleInfo settle_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder> 
            getSettleInfoListBuilderList() {
@@ -1271,7 +1472,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
           settleInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfoOrBuilder>(
                   settleInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           settleInfoList_ = null;
@@ -1279,181 +1480,9 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return settleInfoListBuilder_;
       }
 
-      private boolean isSingle_ ;
-      /**
-       * <code>bool is_single = 1;</code>
-       * @return The isSingle.
-       */
-      @java.lang.Override
-      public boolean getIsSingle() {
-        return isSingle_;
-      }
-      /**
-       * <code>bool is_single = 1;</code>
-       * @param value The isSingle to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSingle(boolean value) {
-        
-        isSingle_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_single = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSingle() {
-        
-        isSingle_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList winnerUidList_ = emptyIntList();
-      private void ensureWinnerUidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          winnerUidList_ = mutableCopy(winnerUidList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @return A list containing the winnerUidList.
-       */
-      public java.util.List<java.lang.Integer>
-          getWinnerUidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(winnerUidList_) : winnerUidList_;
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @return The count of winnerUidList.
-       */
-      public int getWinnerUidListCount() {
-        return winnerUidList_.size();
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The winnerUidList at the given index.
-       */
-      public int getWinnerUidList(int index) {
-        return winnerUidList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The winnerUidList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWinnerUidList(
-          int index, int value) {
-        ensureWinnerUidListIsMutable();
-        winnerUidList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @param value The winnerUidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addWinnerUidList(int value) {
-        ensureWinnerUidListIsMutable();
-        winnerUidList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @param values The winnerUidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllWinnerUidList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureWinnerUidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, winnerUidList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 winner_uid_list = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWinnerUidList() {
-        winnerUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int beginTime_ ;
-      /**
-       * <code>uint32 begin_time = 6;</code>
-       * @return The beginTime.
-       */
-      @java.lang.Override
-      public int getBeginTime() {
-        return beginTime_;
-      }
-      /**
-       * <code>uint32 begin_time = 6;</code>
-       * @param value The beginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeginTime(int value) {
-        
-        beginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 begin_time = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBeginTime() {
-        
-        beginTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageType_ ;
-      /**
-       * <code>uint32 stage_type = 13;</code>
-       * @return The stageType.
-       */
-      @java.lang.Override
-      public int getStageType() {
-        return stageType_;
-      }
-      /**
-       * <code>uint32 stage_type = 13;</code>
-       * @param value The stageType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageType(int value) {
-        
-        stageType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_type = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageType() {
-        
-        stageType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int duration_ ;
       /**
-       * <code>uint32 duration = 2;</code>
+       * <code>uint32 duration = 13;</code>
        * @return The duration.
        */
       @java.lang.Override
@@ -1461,7 +1490,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return duration_;
       }
       /**
-       * <code>uint32 duration = 2;</code>
+       * <code>uint32 duration = 13;</code>
        * @param value The duration to set.
        * @return This builder for chaining.
        */
@@ -1472,7 +1501,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 duration = 2;</code>
+       * <code>uint32 duration = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDuration() {
@@ -1495,7 +1524,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> scoreListBuilder_;
 
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
         if (scoreListBuilder_ == null) {
@@ -1505,7 +1534,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public int getScoreListCount() {
         if (scoreListBuilder_ == null) {
@@ -1515,7 +1544,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -1525,7 +1554,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1542,7 +1571,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1556,7 +1585,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder addScoreList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
         if (scoreListBuilder_ == null) {
@@ -1572,7 +1601,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1589,7 +1618,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder addScoreList(
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1603,7 +1632,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1617,7 +1646,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder addAllScoreList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -1632,7 +1661,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder clearScoreList() {
         if (scoreListBuilder_ == null) {
@@ -1645,7 +1674,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public Builder removeScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -1658,14 +1687,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getScoreListBuilder(
           int index) {
         return getScoreListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
           int index) {
@@ -1675,7 +1704,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
            getScoreListOrBuilderList() {
@@ -1686,14 +1715,14 @@ public final class LanV3BoatSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder() {
         return getScoreListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder(
           int index) {
@@ -1701,7 +1730,7 @@ public final class LanV3BoatSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 3;</code>
+       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
            getScoreListBuilderList() {
@@ -1720,37 +1749,6 @@ public final class LanV3BoatSettleNotifyOuterClass {
           scoreList_ = null;
         }
         return scoreListBuilder_;
-      }
-
-      private boolean iPELDMIMABF_ ;
-      /**
-       * <code>bool IPELDMIMABF = 14;</code>
-       * @return The iPELDMIMABF.
-       */
-      @java.lang.Override
-      public boolean getIPELDMIMABF() {
-        return iPELDMIMABF_;
-      }
-      /**
-       * <code>bool IPELDMIMABF = 14;</code>
-       * @param value The iPELDMIMABF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIPELDMIMABF(boolean value) {
-        
-        iPELDMIMABF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool IPELDMIMABF = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIPELDMIMABF() {
-        
-        iPELDMIMABF_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1819,31 +1817,31 @@ public final class LanV3BoatSettleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033LanV3BoatSettleNotify.proto\032\031LanV3Boat" +
-      "SettleInfo.proto\032\033ExhibitionDisplayInfo." +
-      "proto\"\202\002\n\025LanV3BoatSettleNotify\022\022\n\nplay_" +
-      "index\030\010 \001(\r\022.\n\020settle_info_list\030\n \003(\0132\024." +
-      "LanV3BoatSettleInfo\022\021\n\tis_single\030\001 \001(\010\022\027" +
-      "\n\017winner_uid_list\030\007 \003(\r\022\022\n\nbegin_time\030\006 " +
-      "\001(\r\022\022\n\nstage_type\030\r \001(\r\022\020\n\010duration\030\002 \001(" +
-      "\r\022*\n\nscore_list\030\003 \003(\0132\026.ExhibitionDispla" +
-      "yInfo\022\023\n\013IPELDMIMABF\030\016 \001(\010B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\033LanV3BoatSettleNotify.proto\032\033Exhibitio" +
+      "nDisplayInfo.proto\032\031LanV3BoatSettleInfo." +
+      "proto\"\206\002\n\025LanV3BoatSettleNotify\022\027\n\017winne" +
+      "r_uid_list\030\002 \003(\r\022\021\n\tis_single\030\003 \001(\010\022\022\n\ns" +
+      "tage_type\030\004 \001(\r\022\022\n\nplay_index\030\006 \001(\r\022\027\n\017i" +
+      "s_gallery_succ\030\010 \001(\010\022\022\n\nbegin_time\030\t \001(\r" +
+      "\022.\n\020settle_info_list\030\014 \003(\0132\024.LanV3BoatSe" +
+      "ttleInfo\022\020\n\010duration\030\r \001(\r\022*\n\nscore_list" +
+      "\030\016 \003(\0132\026.ExhibitionDisplayInfoB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.getDescriptor(),
         });
     internal_static_LanV3BoatSettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_LanV3BoatSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanV3BoatSettleNotify_descriptor,
-        new java.lang.String[] { "PlayIndex", "SettleInfoList", "IsSingle", "WinnerUidList", "BeginTime", "StageType", "Duration", "ScoreList", "IPELDMIMABF", });
-    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "WinnerUidList", "IsSingle", "StageType", "PlayIndex", "IsGallerySucc", "BeginTime", "SettleInfoList", "Duration", "ScoreList", });
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

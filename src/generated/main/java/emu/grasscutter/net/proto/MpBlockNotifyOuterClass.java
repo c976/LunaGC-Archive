@@ -19,15 +19,20 @@ public final class MpBlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 end_time = 1;</code>
+     * <code>bool OKKLBIPJLBM = 7;</code>
+     * @return The oKKLBIPJLBM.
+     */
+    boolean getOKKLBIPJLBM();
+
+    /**
+     * <code>uint32 end_time = 10;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
    * <pre>
-   * CmdId: 27749
-   * Obf: AEBMFPKLIHH
+   * CmdId: 9944
    * </pre>
    *
    * Protobuf type {@code MpBlockNotify}
@@ -74,7 +79,12 @@ public final class MpBlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
+
+              oKKLBIPJLBM_ = input.readBool();
+              break;
+            }
+            case 80: {
 
               endTime_ = input.readUInt32();
               break;
@@ -111,10 +121,21 @@ public final class MpBlockNotifyOuterClass {
               emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify.class, emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify.Builder.class);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 1;
+    public static final int OKKLBIPJLBM_FIELD_NUMBER = 7;
+    private boolean oKKLBIPJLBM_;
+    /**
+     * <code>bool OKKLBIPJLBM = 7;</code>
+     * @return The oKKLBIPJLBM.
+     */
+    @java.lang.Override
+    public boolean getOKKLBIPJLBM() {
+      return oKKLBIPJLBM_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 10;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 1;</code>
+     * <code>uint32 end_time = 10;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -136,8 +157,11 @@ public final class MpBlockNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (oKKLBIPJLBM_ != false) {
+        output.writeBool(7, oKKLBIPJLBM_);
+      }
       if (endTime_ != 0) {
-        output.writeUInt32(1, endTime_);
+        output.writeUInt32(10, endTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +172,13 @@ public final class MpBlockNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (oKKLBIPJLBM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, oKKLBIPJLBM_);
+      }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, endTime_);
+          .computeUInt32Size(10, endTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,6 +195,8 @@ public final class MpBlockNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify other = (emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify) obj;
 
+      if (getOKKLBIPJLBM()
+          != other.getOKKLBIPJLBM()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -180,6 +210,9 @@ public final class MpBlockNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + OKKLBIPJLBM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOKKLBIPJLBM());
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -279,8 +312,7 @@ public final class MpBlockNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27749
-     * Obf: AEBMFPKLIHH
+     * CmdId: 9944
      * </pre>
      *
      * Protobuf type {@code MpBlockNotify}
@@ -320,6 +352,8 @@ public final class MpBlockNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        oKKLBIPJLBM_ = false;
+
         endTime_ = 0;
 
         return this;
@@ -348,6 +382,7 @@ public final class MpBlockNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify buildPartial() {
         emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify result = new emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify(this);
+        result.oKKLBIPJLBM_ = oKKLBIPJLBM_;
         result.endTime_ = endTime_;
         onBuilt();
         return result;
@@ -397,6 +432,9 @@ public final class MpBlockNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify other) {
         if (other == emu.grasscutter.net.proto.MpBlockNotifyOuterClass.MpBlockNotify.getDefaultInstance()) return this;
+        if (other.getOKKLBIPJLBM() != false) {
+          setOKKLBIPJLBM(other.getOKKLBIPJLBM());
+        }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
         }
@@ -429,9 +467,40 @@ public final class MpBlockNotifyOuterClass {
         return this;
       }
 
+      private boolean oKKLBIPJLBM_ ;
+      /**
+       * <code>bool OKKLBIPJLBM = 7;</code>
+       * @return The oKKLBIPJLBM.
+       */
+      @java.lang.Override
+      public boolean getOKKLBIPJLBM() {
+        return oKKLBIPJLBM_;
+      }
+      /**
+       * <code>bool OKKLBIPJLBM = 7;</code>
+       * @param value The oKKLBIPJLBM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOKKLBIPJLBM(boolean value) {
+        
+        oKKLBIPJLBM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool OKKLBIPJLBM = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOKKLBIPJLBM() {
+        
+        oKKLBIPJLBM_ = false;
+        onChanged();
+        return this;
+      }
+
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 1;</code>
+       * <code>uint32 end_time = 10;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -439,7 +508,7 @@ public final class MpBlockNotifyOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 1;</code>
+       * <code>uint32 end_time = 10;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -450,7 +519,7 @@ public final class MpBlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 1;</code>
+       * <code>uint32 end_time = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -526,9 +595,9 @@ public final class MpBlockNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023MpBlockNotify.proto\"!\n\rMpBlockNotify\022\020" +
-      "\n\010end_time\030\001 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\023MpBlockNotify.proto\"6\n\rMpBlockNotify\022\023" +
+      "\n\013OKKLBIPJLBM\030\007 \001(\010\022\020\n\010end_time\030\n \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -539,7 +608,7 @@ public final class MpBlockNotifyOuterClass {
     internal_static_MpBlockNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpBlockNotify_descriptor,
-        new java.lang.String[] { "EndTime", });
+        new java.lang.String[] { "OKKLBIPJLBM", "EndTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

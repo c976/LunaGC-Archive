@@ -19,34 +19,54 @@ public final class FungusDetailOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_cultivate = 6;</code>
-     * @return The isCultivate.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JENCAPLENNN = 7;</code>
+     * @return The jENCAPLENNN.
      */
-    boolean getIsCultivate();
+    int getJENCAPLENNN();
 
     /**
-     * <code>uint32 name_id = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 fungus_id = 12;</code>
+     * @return The fungusId.
+     */
+    int getFungusId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 name_id = 5;</code>
      * @return The nameId.
      */
     int getNameId();
 
     /**
-     * <code>uint32 JPNHNCAOKOI = 4;</code>
-     * @return The jPNHNCAOKOI.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 IHCFMAGNELH = 1;</code>
+     * @return The iHCFMAGNELH.
      */
-    int getJPNHNCAOKOI();
+    int getIHCFMAGNELH();
 
     /**
-     * <code>uint32 EFCIFOOIPNG = 8;</code>
-     * @return The eFCIFOOIPNG.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_cultivate = 15;</code>
+     * @return The isCultivate.
      */
-    int getEFCIFOOIPNG();
-
-    /**
-     * <code>uint32 fungus_id = 2;</code>
-     * @return The fungusId.
-     */
-    int getFungusId();
+    boolean getIsCultivate();
   }
   /**
    * Protobuf type {@code FungusDetail}
@@ -93,29 +113,29 @@ public final class FungusDetailOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
+
+              iHCFMAGNELH_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              nameId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              jENCAPLENNN_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               fungusId_ = input.readUInt32();
               break;
             }
-            case 32: {
-
-              jPNHNCAOKOI_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isCultivate_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              eFCIFOOIPNG_ = input.readUInt32();
-              break;
-            }
             case 120: {
 
-              nameId_ = input.readUInt32();
+              isCultivate_ = input.readBool();
               break;
             }
             default: {
@@ -150,21 +170,44 @@ public final class FungusDetailOuterClass {
               emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail.class, emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail.Builder.class);
     }
 
-    public static final int IS_CULTIVATE_FIELD_NUMBER = 6;
-    private boolean isCultivate_;
+    public static final int JENCAPLENNN_FIELD_NUMBER = 7;
+    private int jENCAPLENNN_;
     /**
-     * <code>bool is_cultivate = 6;</code>
-     * @return The isCultivate.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JENCAPLENNN = 7;</code>
+     * @return The jENCAPLENNN.
      */
     @java.lang.Override
-    public boolean getIsCultivate() {
-      return isCultivate_;
+    public int getJENCAPLENNN() {
+      return jENCAPLENNN_;
     }
 
-    public static final int NAME_ID_FIELD_NUMBER = 15;
+    public static final int FUNGUS_ID_FIELD_NUMBER = 12;
+    private int fungusId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 fungus_id = 12;</code>
+     * @return The fungusId.
+     */
+    @java.lang.Override
+    public int getFungusId() {
+      return fungusId_;
+    }
+
+    public static final int NAME_ID_FIELD_NUMBER = 5;
     private int nameId_;
     /**
-     * <code>uint32 name_id = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 name_id = 5;</code>
      * @return The nameId.
      */
     @java.lang.Override
@@ -172,37 +215,34 @@ public final class FungusDetailOuterClass {
       return nameId_;
     }
 
-    public static final int JPNHNCAOKOI_FIELD_NUMBER = 4;
-    private int jPNHNCAOKOI_;
+    public static final int IHCFMAGNELH_FIELD_NUMBER = 1;
+    private int iHCFMAGNELH_;
     /**
-     * <code>uint32 JPNHNCAOKOI = 4;</code>
-     * @return The jPNHNCAOKOI.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 IHCFMAGNELH = 1;</code>
+     * @return The iHCFMAGNELH.
      */
     @java.lang.Override
-    public int getJPNHNCAOKOI() {
-      return jPNHNCAOKOI_;
+    public int getIHCFMAGNELH() {
+      return iHCFMAGNELH_;
     }
 
-    public static final int EFCIFOOIPNG_FIELD_NUMBER = 8;
-    private int eFCIFOOIPNG_;
+    public static final int IS_CULTIVATE_FIELD_NUMBER = 15;
+    private boolean isCultivate_;
     /**
-     * <code>uint32 EFCIFOOIPNG = 8;</code>
-     * @return The eFCIFOOIPNG.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_cultivate = 15;</code>
+     * @return The isCultivate.
      */
     @java.lang.Override
-    public int getEFCIFOOIPNG() {
-      return eFCIFOOIPNG_;
-    }
-
-    public static final int FUNGUS_ID_FIELD_NUMBER = 2;
-    private int fungusId_;
-    /**
-     * <code>uint32 fungus_id = 2;</code>
-     * @return The fungusId.
-     */
-    @java.lang.Override
-    public int getFungusId() {
-      return fungusId_;
+    public boolean getIsCultivate() {
+      return isCultivate_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +259,20 @@ public final class FungusDetailOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fungusId_ != 0) {
-        output.writeUInt32(2, fungusId_);
-      }
-      if (jPNHNCAOKOI_ != 0) {
-        output.writeUInt32(4, jPNHNCAOKOI_);
-      }
-      if (isCultivate_ != false) {
-        output.writeBool(6, isCultivate_);
-      }
-      if (eFCIFOOIPNG_ != 0) {
-        output.writeUInt32(8, eFCIFOOIPNG_);
+      if (iHCFMAGNELH_ != 0) {
+        output.writeUInt32(1, iHCFMAGNELH_);
       }
       if (nameId_ != 0) {
-        output.writeUInt32(15, nameId_);
+        output.writeUInt32(5, nameId_);
+      }
+      if (jENCAPLENNN_ != 0) {
+        output.writeUInt32(7, jENCAPLENNN_);
+      }
+      if (fungusId_ != 0) {
+        output.writeUInt32(12, fungusId_);
+      }
+      if (isCultivate_ != false) {
+        output.writeBool(15, isCultivate_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +283,25 @@ public final class FungusDetailOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fungusId_ != 0) {
+      if (iHCFMAGNELH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, fungusId_);
-      }
-      if (jPNHNCAOKOI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, jPNHNCAOKOI_);
-      }
-      if (isCultivate_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isCultivate_);
-      }
-      if (eFCIFOOIPNG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, eFCIFOOIPNG_);
+          .computeUInt32Size(1, iHCFMAGNELH_);
       }
       if (nameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, nameId_);
+          .computeUInt32Size(5, nameId_);
+      }
+      if (jENCAPLENNN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, jENCAPLENNN_);
+      }
+      if (fungusId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, fungusId_);
+      }
+      if (isCultivate_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isCultivate_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +318,16 @@ public final class FungusDetailOuterClass {
       }
       emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail other = (emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail) obj;
 
-      if (getIsCultivate()
-          != other.getIsCultivate()) return false;
-      if (getNameId()
-          != other.getNameId()) return false;
-      if (getJPNHNCAOKOI()
-          != other.getJPNHNCAOKOI()) return false;
-      if (getEFCIFOOIPNG()
-          != other.getEFCIFOOIPNG()) return false;
+      if (getJENCAPLENNN()
+          != other.getJENCAPLENNN()) return false;
       if (getFungusId()
           != other.getFungusId()) return false;
+      if (getNameId()
+          != other.getNameId()) return false;
+      if (getIHCFMAGNELH()
+          != other.getIHCFMAGNELH()) return false;
+      if (getIsCultivate()
+          != other.getIsCultivate()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,17 +339,17 @@ public final class FungusDetailOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + JENCAPLENNN_FIELD_NUMBER;
+      hash = (53 * hash) + getJENCAPLENNN();
+      hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFungusId();
+      hash = (37 * hash) + NAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getNameId();
+      hash = (37 * hash) + IHCFMAGNELH_FIELD_NUMBER;
+      hash = (53 * hash) + getIHCFMAGNELH();
       hash = (37 * hash) + IS_CULTIVATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCultivate());
-      hash = (37 * hash) + NAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getNameId();
-      hash = (37 * hash) + JPNHNCAOKOI_FIELD_NUMBER;
-      hash = (53 * hash) + getJPNHNCAOKOI();
-      hash = (37 * hash) + EFCIFOOIPNG_FIELD_NUMBER;
-      hash = (53 * hash) + getEFCIFOOIPNG();
-      hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFungusId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,15 +483,15 @@ public final class FungusDetailOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isCultivate_ = false;
+        jENCAPLENNN_ = 0;
+
+        fungusId_ = 0;
 
         nameId_ = 0;
 
-        jPNHNCAOKOI_ = 0;
+        iHCFMAGNELH_ = 0;
 
-        eFCIFOOIPNG_ = 0;
-
-        fungusId_ = 0;
+        isCultivate_ = false;
 
         return this;
       }
@@ -479,11 +519,11 @@ public final class FungusDetailOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail buildPartial() {
         emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail result = new emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail(this);
-        result.isCultivate_ = isCultivate_;
-        result.nameId_ = nameId_;
-        result.jPNHNCAOKOI_ = jPNHNCAOKOI_;
-        result.eFCIFOOIPNG_ = eFCIFOOIPNG_;
+        result.jENCAPLENNN_ = jENCAPLENNN_;
         result.fungusId_ = fungusId_;
+        result.nameId_ = nameId_;
+        result.iHCFMAGNELH_ = iHCFMAGNELH_;
+        result.isCultivate_ = isCultivate_;
         onBuilt();
         return result;
       }
@@ -532,20 +572,20 @@ public final class FungusDetailOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail other) {
         if (other == emu.grasscutter.net.proto.FungusDetailOuterClass.FungusDetail.getDefaultInstance()) return this;
-        if (other.getIsCultivate() != false) {
-          setIsCultivate(other.getIsCultivate());
+        if (other.getJENCAPLENNN() != 0) {
+          setJENCAPLENNN(other.getJENCAPLENNN());
+        }
+        if (other.getFungusId() != 0) {
+          setFungusId(other.getFungusId());
         }
         if (other.getNameId() != 0) {
           setNameId(other.getNameId());
         }
-        if (other.getJPNHNCAOKOI() != 0) {
-          setJPNHNCAOKOI(other.getJPNHNCAOKOI());
+        if (other.getIHCFMAGNELH() != 0) {
+          setIHCFMAGNELH(other.getIHCFMAGNELH());
         }
-        if (other.getEFCIFOOIPNG() != 0) {
-          setEFCIFOOIPNG(other.getEFCIFOOIPNG());
-        }
-        if (other.getFungusId() != 0) {
-          setFungusId(other.getFungusId());
+        if (other.getIsCultivate() != false) {
+          setIsCultivate(other.getIsCultivate());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -576,133 +616,56 @@ public final class FungusDetailOuterClass {
         return this;
       }
 
-      private boolean isCultivate_ ;
+      private int jENCAPLENNN_ ;
       /**
-       * <code>bool is_cultivate = 6;</code>
-       * @return The isCultivate.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JENCAPLENNN = 7;</code>
+       * @return The jENCAPLENNN.
        */
       @java.lang.Override
-      public boolean getIsCultivate() {
-        return isCultivate_;
+      public int getJENCAPLENNN() {
+        return jENCAPLENNN_;
       }
       /**
-       * <code>bool is_cultivate = 6;</code>
-       * @param value The isCultivate to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JENCAPLENNN = 7;</code>
+       * @param value The jENCAPLENNN to set.
        * @return This builder for chaining.
        */
-      public Builder setIsCultivate(boolean value) {
+      public Builder setJENCAPLENNN(int value) {
         
-        isCultivate_ = value;
+        jENCAPLENNN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_cultivate = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JENCAPLENNN = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsCultivate() {
+      public Builder clearJENCAPLENNN() {
         
-        isCultivate_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int nameId_ ;
-      /**
-       * <code>uint32 name_id = 15;</code>
-       * @return The nameId.
-       */
-      @java.lang.Override
-      public int getNameId() {
-        return nameId_;
-      }
-      /**
-       * <code>uint32 name_id = 15;</code>
-       * @param value The nameId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNameId(int value) {
-        
-        nameId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 name_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNameId() {
-        
-        nameId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jPNHNCAOKOI_ ;
-      /**
-       * <code>uint32 JPNHNCAOKOI = 4;</code>
-       * @return The jPNHNCAOKOI.
-       */
-      @java.lang.Override
-      public int getJPNHNCAOKOI() {
-        return jPNHNCAOKOI_;
-      }
-      /**
-       * <code>uint32 JPNHNCAOKOI = 4;</code>
-       * @param value The jPNHNCAOKOI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJPNHNCAOKOI(int value) {
-        
-        jPNHNCAOKOI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JPNHNCAOKOI = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJPNHNCAOKOI() {
-        
-        jPNHNCAOKOI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eFCIFOOIPNG_ ;
-      /**
-       * <code>uint32 EFCIFOOIPNG = 8;</code>
-       * @return The eFCIFOOIPNG.
-       */
-      @java.lang.Override
-      public int getEFCIFOOIPNG() {
-        return eFCIFOOIPNG_;
-      }
-      /**
-       * <code>uint32 EFCIFOOIPNG = 8;</code>
-       * @param value The eFCIFOOIPNG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEFCIFOOIPNG(int value) {
-        
-        eFCIFOOIPNG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EFCIFOOIPNG = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEFCIFOOIPNG() {
-        
-        eFCIFOOIPNG_ = 0;
+        jENCAPLENNN_ = 0;
         onChanged();
         return this;
       }
 
       private int fungusId_ ;
       /**
-       * <code>uint32 fungus_id = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 fungus_id = 12;</code>
        * @return The fungusId.
        */
       @java.lang.Override
@@ -710,7 +673,11 @@ public final class FungusDetailOuterClass {
         return fungusId_;
       }
       /**
-       * <code>uint32 fungus_id = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 fungus_id = 12;</code>
        * @param value The fungusId to set.
        * @return This builder for chaining.
        */
@@ -721,12 +688,145 @@ public final class FungusDetailOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fungus_id = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 fungus_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFungusId() {
         
         fungusId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nameId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 name_id = 5;</code>
+       * @return The nameId.
+       */
+      @java.lang.Override
+      public int getNameId() {
+        return nameId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 name_id = 5;</code>
+       * @param value The nameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNameId(int value) {
+        
+        nameId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 name_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNameId() {
+        
+        nameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iHCFMAGNELH_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 IHCFMAGNELH = 1;</code>
+       * @return The iHCFMAGNELH.
+       */
+      @java.lang.Override
+      public int getIHCFMAGNELH() {
+        return iHCFMAGNELH_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 IHCFMAGNELH = 1;</code>
+       * @param value The iHCFMAGNELH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIHCFMAGNELH(int value) {
+        
+        iHCFMAGNELH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 IHCFMAGNELH = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIHCFMAGNELH() {
+        
+        iHCFMAGNELH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCultivate_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_cultivate = 15;</code>
+       * @return The isCultivate.
+       */
+      @java.lang.Override
+      public boolean getIsCultivate() {
+        return isCultivate_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_cultivate = 15;</code>
+       * @param value The isCultivate to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCultivate(boolean value) {
+        
+        isCultivate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_cultivate = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCultivate() {
+        
+        isCultivate_ = false;
         onChanged();
         return this;
       }
@@ -797,10 +897,10 @@ public final class FungusDetailOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022FungusDetail.proto\"r\n\014FungusDetail\022\024\n\014" +
-      "is_cultivate\030\006 \001(\010\022\017\n\007name_id\030\017 \001(\r\022\023\n\013J" +
-      "PNHNCAOKOI\030\004 \001(\r\022\023\n\013EFCIFOOIPNG\030\010 \001(\r\022\021\n" +
-      "\tfungus_id\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\022FungusDetail.proto\"r\n\014FungusDetail\022\023\n\013" +
+      "JENCAPLENNN\030\007 \001(\r\022\021\n\tfungus_id\030\014 \001(\r\022\017\n\007" +
+      "name_id\030\005 \001(\r\022\023\n\013IHCFMAGNELH\030\001 \001(\r\022\024\n\014is" +
+      "_cultivate\030\017 \001(\010B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -812,7 +912,7 @@ public final class FungusDetailOuterClass {
     internal_static_FungusDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusDetail_descriptor,
-        new java.lang.String[] { "IsCultivate", "NameId", "JPNHNCAOKOI", "EFCIFOOIPNG", "FungusId", });
+        new java.lang.String[] { "JENCAPLENNN", "FungusId", "NameId", "IHCFMAGNELH", "IsCultivate", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

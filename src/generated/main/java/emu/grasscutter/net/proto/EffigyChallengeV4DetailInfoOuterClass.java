@@ -17,12 +17,52 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
   public interface EffigyChallengeV4DetailInfoOrBuilder extends
       // @@protoc_insertion_point(interface_extends:EffigyChallengeV4DetailInfo)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> 
+        getKINFMIFCHIAList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD getKINFMIFCHIA(int index);
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    int getKINFMIFCHIACount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder> 
+        getKINFMIFCHIAOrBuilderList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder getKINFMIFCHIAOrBuilder(
+        int index);
   }
   /**
-   * <pre>
-   *	repeated MAPGDCANHFD PAPKIKPGDFE = 8;
-   * </pre>
-   *
    * Protobuf type {@code EffigyChallengeV4DetailInfo}
    */
   public static final class EffigyChallengeV4DetailInfo extends
@@ -35,6 +75,7 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       super(builder);
     }
     private EffigyChallengeV4DetailInfo() {
+      kINFMIFCHIA_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -57,6 +98,7 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -67,6 +109,15 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                kINFMIFCHIA_ = new java.util.ArrayList<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              kINFMIFCHIA_.add(
+                  input.readMessage(emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.parser(), extensionRegistry));
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -82,6 +133,9 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          kINFMIFCHIA_ = java.util.Collections.unmodifiableList(kINFMIFCHIA_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -99,6 +153,66 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo.class, emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo.Builder.class);
     }
 
+    public static final int KINFMIFCHIA_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> kINFMIFCHIA_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> getKINFMIFCHIAList() {
+      return kINFMIFCHIA_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder> 
+        getKINFMIFCHIAOrBuilderList() {
+      return kINFMIFCHIA_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    @java.lang.Override
+    public int getKINFMIFCHIACount() {
+      return kINFMIFCHIA_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD getKINFMIFCHIA(int index) {
+      return kINFMIFCHIA_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder getKINFMIFCHIAOrBuilder(
+        int index) {
+      return kINFMIFCHIA_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -113,6 +227,9 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < kINFMIFCHIA_.size(); i++) {
+        output.writeMessage(6, kINFMIFCHIA_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -122,6 +239,10 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < kINFMIFCHIA_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, kINFMIFCHIA_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -137,6 +258,8 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo other = (emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo) obj;
 
+      if (!getKINFMIFCHIAList()
+          .equals(other.getKINFMIFCHIAList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -148,6 +271,10 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getKINFMIFCHIACount() > 0) {
+        hash = (37 * hash) + KINFMIFCHIA_FIELD_NUMBER;
+        hash = (53 * hash) + getKINFMIFCHIAList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -244,10 +371,6 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     *	repeated MAPGDCANHFD PAPKIKPGDFE = 8;
-     * </pre>
-     *
      * Protobuf type {@code EffigyChallengeV4DetailInfo}
      */
     public static final class Builder extends
@@ -280,11 +403,18 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getKINFMIFCHIAFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (kINFMIFCHIABuilder_ == null) {
+          kINFMIFCHIA_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          kINFMIFCHIABuilder_.clear();
+        }
         return this;
       }
 
@@ -311,6 +441,16 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo result = new emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo(this);
+        int from_bitField0_ = bitField0_;
+        if (kINFMIFCHIABuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            kINFMIFCHIA_ = java.util.Collections.unmodifiableList(kINFMIFCHIA_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.kINFMIFCHIA_ = kINFMIFCHIA_;
+        } else {
+          result.kINFMIFCHIA_ = kINFMIFCHIABuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -359,6 +499,32 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV4DetailInfoOuterClass.EffigyChallengeV4DetailInfo.getDefaultInstance()) return this;
+        if (kINFMIFCHIABuilder_ == null) {
+          if (!other.kINFMIFCHIA_.isEmpty()) {
+            if (kINFMIFCHIA_.isEmpty()) {
+              kINFMIFCHIA_ = other.kINFMIFCHIA_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureKINFMIFCHIAIsMutable();
+              kINFMIFCHIA_.addAll(other.kINFMIFCHIA_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.kINFMIFCHIA_.isEmpty()) {
+            if (kINFMIFCHIABuilder_.isEmpty()) {
+              kINFMIFCHIABuilder_.dispose();
+              kINFMIFCHIABuilder_ = null;
+              kINFMIFCHIA_ = other.kINFMIFCHIA_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              kINFMIFCHIABuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getKINFMIFCHIAFieldBuilder() : null;
+            } else {
+              kINFMIFCHIABuilder_.addAllMessages(other.kINFMIFCHIA_);
+            }
+          }
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -386,6 +552,319 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
           }
         }
         return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> kINFMIFCHIA_ =
+        java.util.Collections.emptyList();
+      private void ensureKINFMIFCHIAIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          kINFMIFCHIA_ = new java.util.ArrayList<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD>(kINFMIFCHIA_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder> kINFMIFCHIABuilder_;
+
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> getKINFMIFCHIAList() {
+        if (kINFMIFCHIABuilder_ == null) {
+          return java.util.Collections.unmodifiableList(kINFMIFCHIA_);
+        } else {
+          return kINFMIFCHIABuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public int getKINFMIFCHIACount() {
+        if (kINFMIFCHIABuilder_ == null) {
+          return kINFMIFCHIA_.size();
+        } else {
+          return kINFMIFCHIABuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD getKINFMIFCHIA(int index) {
+        if (kINFMIFCHIABuilder_ == null) {
+          return kINFMIFCHIA_.get(index);
+        } else {
+          return kINFMIFCHIABuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder setKINFMIFCHIA(
+          int index, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD value) {
+        if (kINFMIFCHIABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.set(index, value);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder setKINFMIFCHIA(
+          int index, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder builderForValue) {
+        if (kINFMIFCHIABuilder_ == null) {
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder addKINFMIFCHIA(emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD value) {
+        if (kINFMIFCHIABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.add(value);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder addKINFMIFCHIA(
+          int index, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD value) {
+        if (kINFMIFCHIABuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.add(index, value);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder addKINFMIFCHIA(
+          emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder builderForValue) {
+        if (kINFMIFCHIABuilder_ == null) {
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.add(builderForValue.build());
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder addKINFMIFCHIA(
+          int index, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder builderForValue) {
+        if (kINFMIFCHIABuilder_ == null) {
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder addAllKINFMIFCHIA(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD> values) {
+        if (kINFMIFCHIABuilder_ == null) {
+          ensureKINFMIFCHIAIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, kINFMIFCHIA_);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder clearKINFMIFCHIA() {
+        if (kINFMIFCHIABuilder_ == null) {
+          kINFMIFCHIA_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public Builder removeKINFMIFCHIA(int index) {
+        if (kINFMIFCHIABuilder_ == null) {
+          ensureKINFMIFCHIAIsMutable();
+          kINFMIFCHIA_.remove(index);
+          onChanged();
+        } else {
+          kINFMIFCHIABuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder getKINFMIFCHIABuilder(
+          int index) {
+        return getKINFMIFCHIAFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder getKINFMIFCHIAOrBuilder(
+          int index) {
+        if (kINFMIFCHIABuilder_ == null) {
+          return kINFMIFCHIA_.get(index);  } else {
+          return kINFMIFCHIABuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder> 
+           getKINFMIFCHIAOrBuilderList() {
+        if (kINFMIFCHIABuilder_ != null) {
+          return kINFMIFCHIABuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(kINFMIFCHIA_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder addKINFMIFCHIABuilder() {
+        return getKINFMIFCHIAFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder addKINFMIFCHIABuilder(
+          int index) {
+        return getKINFMIFCHIAFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .FGKAJNAAMPD KINFMIFCHIA = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder> 
+           getKINFMIFCHIABuilderList() {
+        return getKINFMIFCHIAFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder> 
+          getKINFMIFCHIAFieldBuilder() {
+        if (kINFMIFCHIABuilder_ == null) {
+          kINFMIFCHIABuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPD.Builder, emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.FGKAJNAAMPDOrBuilder>(
+                  kINFMIFCHIA_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          kINFMIFCHIA_ = null;
+        }
+        return kINFMIFCHIABuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -454,20 +933,23 @@ public final class EffigyChallengeV4DetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!EffigyChallengeV4DetailInfo.proto\"\035\n\033E" +
-      "ffigyChallengeV4DetailInfoB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n!EffigyChallengeV4DetailInfo.proto\032\021FGK" +
+      "AJNAAMPD.proto\"@\n\033EffigyChallengeV4Detai" +
+      "lInfo\022!\n\013KINFMIFCHIA\030\006 \003(\0132\014.FGKAJNAAMPD" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.getDescriptor(),
         });
     internal_static_EffigyChallengeV4DetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EffigyChallengeV4DetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV4DetailInfo_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "KINFMIFCHIA", });
+    emu.grasscutter.net.proto.FGKAJNAAMPDOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

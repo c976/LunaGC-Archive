@@ -19,10 +19,6 @@ public final class GCGMsgPhaseContinueOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * Obf: LINAABJFDJL
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgPhaseContinue}
    */
   public static final class GCGMsgPhaseContinue extends
@@ -244,10 +240,6 @@ public final class GCGMsgPhaseContinueOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LINAABJFDJL
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgPhaseContinue}
      */
     public static final class Builder extends

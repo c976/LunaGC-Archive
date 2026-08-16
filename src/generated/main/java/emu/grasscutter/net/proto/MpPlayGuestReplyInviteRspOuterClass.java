@@ -19,20 +19,20 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mp_play_id = 12;</code>
+     * <code>uint32 mp_play_id = 1;</code>
      * @return The mpPlayId.
      */
     int getMpPlayId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21549
+   * CmdId: 7642
    * </pre>
    *
    * Protobuf type {@code MpPlayGuestReplyInviteRsp}
@@ -79,14 +79,14 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
+            case 8: {
 
               mpPlayId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -121,10 +121,10 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
               emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp.class, emu.grasscutter.net.proto.MpPlayGuestReplyInviteRspOuterClass.MpPlayGuestReplyInviteRsp.Builder.class);
     }
 
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 12;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 1;
     private int mpPlayId_;
     /**
-     * <code>uint32 mp_play_id = 12;</code>
+     * <code>uint32 mp_play_id = 1;</code>
      * @return The mpPlayId.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       return mpPlayId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (mpPlayId_ != 0) {
-        output.writeUInt32(12, mpPlayId_);
+        output.writeUInt32(1, mpPlayId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(4, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (mpPlayId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mpPlayId_);
+          .computeUInt32Size(1, mpPlayId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21549
+     * CmdId: 7642
      * </pre>
      *
      * Protobuf type {@code MpPlayGuestReplyInviteRsp}
@@ -468,7 +468,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
 
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 1;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -476,7 +476,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 1;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
@@ -499,7 +499,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -595,8 +595,8 @@ public final class MpPlayGuestReplyInviteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037MpPlayGuestReplyInviteRsp.proto\"@\n\031MpP" +
-      "layGuestReplyInviteRsp\022\022\n\nmp_play_id\030\014 \001" +
-      "(\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscutter.n" +
+      "layGuestReplyInviteRsp\022\022\n\nmp_play_id\030\001 \001" +
+      "(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

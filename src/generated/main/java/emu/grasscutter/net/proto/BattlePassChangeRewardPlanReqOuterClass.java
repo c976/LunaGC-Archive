@@ -19,18 +19,30 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_all_future_bp = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_all_future_bp = 11;</code>
      * @return The isAllFutureBp.
      */
     boolean getIsAllFutureBp();
 
     /**
-     * <code>uint32 default_reward_type = 1;</code>
-     * @return The defaultRewardType.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 reward_type = 8;</code>
+     * @return The rewardType.
      */
-    int getDefaultRewardType();
+    int getRewardType();
   }
   /**
+   * <pre>
+   * CmdId: 3269
+   * </pre>
+   *
    * Protobuf type {@code BattlePassChangeRewardPlanReq}
    */
   public static final class BattlePassChangeRewardPlanReq extends
@@ -75,12 +87,12 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
-              defaultRewardType_ = input.readUInt32();
+              rewardType_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 88: {
 
               isAllFutureBp_ = input.readBool();
               break;
@@ -117,10 +129,14 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
               emu.grasscutter.net.proto.BattlePassChangeRewardPlanReqOuterClass.BattlePassChangeRewardPlanReq.class, emu.grasscutter.net.proto.BattlePassChangeRewardPlanReqOuterClass.BattlePassChangeRewardPlanReq.Builder.class);
     }
 
-    public static final int IS_ALL_FUTURE_BP_FIELD_NUMBER = 4;
+    public static final int IS_ALL_FUTURE_BP_FIELD_NUMBER = 11;
     private boolean isAllFutureBp_;
     /**
-     * <code>bool is_all_future_bp = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_all_future_bp = 11;</code>
      * @return The isAllFutureBp.
      */
     @java.lang.Override
@@ -128,15 +144,19 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       return isAllFutureBp_;
     }
 
-    public static final int DEFAULT_REWARD_TYPE_FIELD_NUMBER = 1;
-    private int defaultRewardType_;
+    public static final int REWARD_TYPE_FIELD_NUMBER = 8;
+    private int rewardType_;
     /**
-     * <code>uint32 default_reward_type = 1;</code>
-     * @return The defaultRewardType.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 reward_type = 8;</code>
+     * @return The rewardType.
      */
     @java.lang.Override
-    public int getDefaultRewardType() {
-      return defaultRewardType_;
+    public int getRewardType() {
+      return rewardType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +173,11 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (defaultRewardType_ != 0) {
-        output.writeUInt32(1, defaultRewardType_);
+      if (rewardType_ != 0) {
+        output.writeUInt32(8, rewardType_);
       }
       if (isAllFutureBp_ != false) {
-        output.writeBool(4, isAllFutureBp_);
+        output.writeBool(11, isAllFutureBp_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +188,13 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (defaultRewardType_ != 0) {
+      if (rewardType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, defaultRewardType_);
+          .computeUInt32Size(8, rewardType_);
       }
       if (isAllFutureBp_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isAllFutureBp_);
+          .computeBoolSize(11, isAllFutureBp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,8 +213,8 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
 
       if (getIsAllFutureBp()
           != other.getIsAllFutureBp()) return false;
-      if (getDefaultRewardType()
-          != other.getDefaultRewardType()) return false;
+      if (getRewardType()
+          != other.getRewardType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -209,8 +229,8 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       hash = (37 * hash) + IS_ALL_FUTURE_BP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAllFutureBp());
-      hash = (37 * hash) + DEFAULT_REWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getDefaultRewardType();
+      hash = (37 * hash) + REWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -307,6 +327,10 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3269
+     * </pre>
+     *
      * Protobuf type {@code BattlePassChangeRewardPlanReq}
      */
     public static final class Builder extends
@@ -346,7 +370,7 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
         super.clear();
         isAllFutureBp_ = false;
 
-        defaultRewardType_ = 0;
+        rewardType_ = 0;
 
         return this;
       }
@@ -375,7 +399,7 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       public emu.grasscutter.net.proto.BattlePassChangeRewardPlanReqOuterClass.BattlePassChangeRewardPlanReq buildPartial() {
         emu.grasscutter.net.proto.BattlePassChangeRewardPlanReqOuterClass.BattlePassChangeRewardPlanReq result = new emu.grasscutter.net.proto.BattlePassChangeRewardPlanReqOuterClass.BattlePassChangeRewardPlanReq(this);
         result.isAllFutureBp_ = isAllFutureBp_;
-        result.defaultRewardType_ = defaultRewardType_;
+        result.rewardType_ = rewardType_;
         onBuilt();
         return result;
       }
@@ -427,8 +451,8 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
         if (other.getIsAllFutureBp() != false) {
           setIsAllFutureBp(other.getIsAllFutureBp());
         }
-        if (other.getDefaultRewardType() != 0) {
-          setDefaultRewardType(other.getDefaultRewardType());
+        if (other.getRewardType() != 0) {
+          setRewardType(other.getRewardType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -461,7 +485,11 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
 
       private boolean isAllFutureBp_ ;
       /**
-       * <code>bool is_all_future_bp = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_all_future_bp = 11;</code>
        * @return The isAllFutureBp.
        */
       @java.lang.Override
@@ -469,7 +497,11 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
         return isAllFutureBp_;
       }
       /**
-       * <code>bool is_all_future_bp = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_all_future_bp = 11;</code>
        * @param value The isAllFutureBp to set.
        * @return This builder for chaining.
        */
@@ -480,7 +512,11 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_all_future_bp = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_all_future_bp = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllFutureBp() {
@@ -490,33 +526,45 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
         return this;
       }
 
-      private int defaultRewardType_ ;
+      private int rewardType_ ;
       /**
-       * <code>uint32 default_reward_type = 1;</code>
-       * @return The defaultRewardType.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 reward_type = 8;</code>
+       * @return The rewardType.
        */
       @java.lang.Override
-      public int getDefaultRewardType() {
-        return defaultRewardType_;
+      public int getRewardType() {
+        return rewardType_;
       }
       /**
-       * <code>uint32 default_reward_type = 1;</code>
-       * @param value The defaultRewardType to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 reward_type = 8;</code>
+       * @param value The rewardType to set.
        * @return This builder for chaining.
        */
-      public Builder setDefaultRewardType(int value) {
+      public Builder setRewardType(int value) {
         
-        defaultRewardType_ = value;
+        rewardType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 default_reward_type = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 reward_type = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDefaultRewardType() {
+      public Builder clearRewardType() {
         
-        defaultRewardType_ = 0;
+        rewardType_ = 0;
         onChanged();
         return this;
       }
@@ -587,11 +635,10 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#BattlePassChangeRewardPlanReq.proto\"V\n" +
+      "\n#BattlePassChangeRewardPlanReq.proto\"N\n" +
       "\035BattlePassChangeRewardPlanReq\022\030\n\020is_all" +
-      "_future_bp\030\004 \001(\010\022\033\n\023default_reward_type\030" +
-      "\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "_future_bp\030\013 \001(\010\022\023\n\013reward_type\030\010 \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -602,7 +649,7 @@ public final class BattlePassChangeRewardPlanReqOuterClass {
     internal_static_BattlePassChangeRewardPlanReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassChangeRewardPlanReq_descriptor,
-        new java.lang.String[] { "IsAllFutureBp", "DefaultRewardType", });
+        new java.lang.String[] { "IsAllFutureBp", "RewardType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

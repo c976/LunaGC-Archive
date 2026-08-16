@@ -19,15 +19,14 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 left_monster = 3;</code>
-     * @return The leftMonster.
+     * <code>uint32 left_monster_num = 1;</code>
+     * @return The leftMonsterNum.
      */
-    int getLeftMonster();
+    int getLeftMonsterNum();
   }
   /**
    * <pre>
-   * CmdId: 9107
-   * Obf: EPHLIIMGJPA
+   * CmdId: 25552
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusLeftMonsterNotify}
@@ -74,9 +73,9 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              leftMonster_ = input.readUInt32();
+              leftMonsterNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -111,15 +110,15 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify.class, emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify.Builder.class);
     }
 
-    public static final int LEFT_MONSTER_FIELD_NUMBER = 3;
-    private int leftMonster_;
+    public static final int LEFT_MONSTER_NUM_FIELD_NUMBER = 1;
+    private int leftMonsterNum_;
     /**
-     * <code>uint32 left_monster = 3;</code>
-     * @return The leftMonster.
+     * <code>uint32 left_monster_num = 1;</code>
+     * @return The leftMonsterNum.
      */
     @java.lang.Override
-    public int getLeftMonster() {
-      return leftMonster_;
+    public int getLeftMonsterNum() {
+      return leftMonsterNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +135,8 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (leftMonster_ != 0) {
-        output.writeUInt32(3, leftMonster_);
+      if (leftMonsterNum_ != 0) {
+        output.writeUInt32(1, leftMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +147,9 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (leftMonster_ != 0) {
+      if (leftMonsterNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, leftMonster_);
+          .computeUInt32Size(1, leftMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +166,8 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify other = (emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify) obj;
 
-      if (getLeftMonster()
-          != other.getLeftMonster()) return false;
+      if (getLeftMonsterNum()
+          != other.getLeftMonsterNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,8 +179,8 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEFT_MONSTER_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftMonster();
+      hash = (37 * hash) + LEFT_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftMonsterNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -279,8 +278,7 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9107
-     * Obf: EPHLIIMGJPA
+     * CmdId: 25552
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusLeftMonsterNotify}
@@ -320,7 +318,7 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        leftMonster_ = 0;
+        leftMonsterNum_ = 0;
 
         return this;
       }
@@ -348,7 +346,7 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify result = new emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify(this);
-        result.leftMonster_ = leftMonster_;
+        result.leftMonsterNum_ = leftMonsterNum_;
         onBuilt();
         return result;
       }
@@ -397,8 +395,8 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusLeftMonsterNotifyOuterClass.InBattleMechanicusLeftMonsterNotify.getDefaultInstance()) return this;
-        if (other.getLeftMonster() != 0) {
-          setLeftMonster(other.getLeftMonster());
+        if (other.getLeftMonsterNum() != 0) {
+          setLeftMonsterNum(other.getLeftMonsterNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -429,33 +427,33 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
         return this;
       }
 
-      private int leftMonster_ ;
+      private int leftMonsterNum_ ;
       /**
-       * <code>uint32 left_monster = 3;</code>
-       * @return The leftMonster.
+       * <code>uint32 left_monster_num = 1;</code>
+       * @return The leftMonsterNum.
        */
       @java.lang.Override
-      public int getLeftMonster() {
-        return leftMonster_;
+      public int getLeftMonsterNum() {
+        return leftMonsterNum_;
       }
       /**
-       * <code>uint32 left_monster = 3;</code>
-       * @param value The leftMonster to set.
+       * <code>uint32 left_monster_num = 1;</code>
+       * @param value The leftMonsterNum to set.
        * @return This builder for chaining.
        */
-      public Builder setLeftMonster(int value) {
+      public Builder setLeftMonsterNum(int value) {
         
-        leftMonster_ = value;
+        leftMonsterNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 left_monster = 3;</code>
+       * <code>uint32 left_monster_num = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLeftMonster() {
+      public Builder clearLeftMonsterNum() {
         
-        leftMonster_ = 0;
+        leftMonsterNum_ = 0;
         onChanged();
         return this;
       }
@@ -527,9 +525,9 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)InBattleMechanicusLeftMonsterNotify.pr" +
-      "oto\";\n#InBattleMechanicusLeftMonsterNoti" +
-      "fy\022\024\n\014left_monster\030\003 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "oto\"?\n#InBattleMechanicusLeftMonsterNoti" +
+      "fy\022\030\n\020left_monster_num\030\001 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -540,7 +538,7 @@ public final class InBattleMechanicusLeftMonsterNotifyOuterClass {
     internal_static_InBattleMechanicusLeftMonsterNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusLeftMonsterNotify_descriptor,
-        new java.lang.String[] { "LeftMonster", });
+        new java.lang.String[] { "LeftMonsterNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

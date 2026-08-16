@@ -19,21 +19,38 @@ public final class ChatEmojiCollectionDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
-     * @return A list containing the emojiIdList.
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+     * @return A list containing the jAIKOLIDHIF.
      */
-    java.util.List<java.lang.Integer> getEmojiIdListList();
+    java.util.List<java.lang.Integer> getJAIKOLIDHIFList();
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
-     * @return The count of emojiIdList.
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+     * @return The count of jAIKOLIDHIF.
      */
-    int getEmojiIdListCount();
+    int getJAIKOLIDHIFCount();
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
      * @param index The index of the element to return.
-     * @return The emojiIdList at the given index.
+     * @return The jAIKOLIDHIF at the given index.
      */
-    int getEmojiIdList(int index);
+    int getJAIKOLIDHIF(int index);
+
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @return A list containing the nDEJKELLKPL.
+     */
+    java.util.List<java.lang.Integer> getNDEJKELLKPLList();
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @return The count of nDEJKELLKPL.
+     */
+    int getNDEJKELLKPLCount();
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @param index The index of the element to return.
+     * @return The nDEJKELLKPL at the given index.
+     */
+    int getNDEJKELLKPL(int index);
   }
   /**
    * Protobuf type {@code ChatEmojiCollectionData}
@@ -48,7 +65,8 @@ public final class ChatEmojiCollectionDataOuterClass {
       super(builder);
     }
     private ChatEmojiCollectionData() {
-      emojiIdList_ = emptyIntList();
+      jAIKOLIDHIF_ = emptyIntList();
+      nDEJKELLKPL_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -84,21 +102,42 @@ public final class ChatEmojiCollectionDataOuterClass {
               break;
             case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                emojiIdList_ = newIntList();
+                jAIKOLIDHIF_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              emojiIdList_.addInt(input.readUInt32());
+              jAIKOLIDHIF_.addInt(input.readUInt32());
               break;
             }
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                emojiIdList_ = newIntList();
+                jAIKOLIDHIF_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                emojiIdList_.addInt(input.readUInt32());
+                jAIKOLIDHIF_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                nDEJKELLKPL_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              nDEJKELLKPL_.addInt(input.readUInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                nDEJKELLKPL_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                nDEJKELLKPL_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -119,7 +158,10 @@ public final class ChatEmojiCollectionDataOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          emojiIdList_.makeImmutable(); // C
+          jAIKOLIDHIF_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          nDEJKELLKPL_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -138,33 +180,61 @@ public final class ChatEmojiCollectionDataOuterClass {
               emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.class, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder.class);
     }
 
-    public static final int EMOJI_ID_LIST_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList emojiIdList_;
+    public static final int JAIKOLIDHIF_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList jAIKOLIDHIF_;
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
-     * @return A list containing the emojiIdList.
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+     * @return A list containing the jAIKOLIDHIF.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getEmojiIdListList() {
-      return emojiIdList_;
+        getJAIKOLIDHIFList() {
+      return jAIKOLIDHIF_;
     }
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
-     * @return The count of emojiIdList.
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+     * @return The count of jAIKOLIDHIF.
      */
-    public int getEmojiIdListCount() {
-      return emojiIdList_.size();
+    public int getJAIKOLIDHIFCount() {
+      return jAIKOLIDHIF_.size();
     }
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
      * @param index The index of the element to return.
-     * @return The emojiIdList at the given index.
+     * @return The jAIKOLIDHIF at the given index.
      */
-    public int getEmojiIdList(int index) {
-      return emojiIdList_.getInt(index);
+    public int getJAIKOLIDHIF(int index) {
+      return jAIKOLIDHIF_.getInt(index);
     }
-    private int emojiIdListMemoizedSerializedSize = -1;
+    private int jAIKOLIDHIFMemoizedSerializedSize = -1;
+
+    public static final int NDEJKELLKPL_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList nDEJKELLKPL_;
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @return A list containing the nDEJKELLKPL.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getNDEJKELLKPLList() {
+      return nDEJKELLKPL_;
+    }
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @return The count of nDEJKELLKPL.
+     */
+    public int getNDEJKELLKPLCount() {
+      return nDEJKELLKPL_.size();
+    }
+    /**
+     * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+     * @param index The index of the element to return.
+     * @return The nDEJKELLKPL at the given index.
+     */
+    public int getNDEJKELLKPL(int index) {
+      return nDEJKELLKPL_.getInt(index);
+    }
+    private int nDEJKELLKPLMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -181,12 +251,19 @@ public final class ChatEmojiCollectionDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getEmojiIdListList().size() > 0) {
+      if (getJAIKOLIDHIFList().size() > 0) {
         output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(emojiIdListMemoizedSerializedSize);
+        output.writeUInt32NoTag(jAIKOLIDHIFMemoizedSerializedSize);
       }
-      for (int i = 0; i < emojiIdList_.size(); i++) {
-        output.writeUInt32NoTag(emojiIdList_.getInt(i));
+      for (int i = 0; i < jAIKOLIDHIF_.size(); i++) {
+        output.writeUInt32NoTag(jAIKOLIDHIF_.getInt(i));
+      }
+      if (getNDEJKELLKPLList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(nDEJKELLKPLMemoizedSerializedSize);
+      }
+      for (int i = 0; i < nDEJKELLKPL_.size(); i++) {
+        output.writeUInt32NoTag(nDEJKELLKPL_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +276,31 @@ public final class ChatEmojiCollectionDataOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < emojiIdList_.size(); i++) {
+        for (int i = 0; i < jAIKOLIDHIF_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(emojiIdList_.getInt(i));
+            .computeUInt32SizeNoTag(jAIKOLIDHIF_.getInt(i));
         }
         size += dataSize;
-        if (!getEmojiIdListList().isEmpty()) {
+        if (!getJAIKOLIDHIFList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        emojiIdListMemoizedSerializedSize = dataSize;
+        jAIKOLIDHIFMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < nDEJKELLKPL_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(nDEJKELLKPL_.getInt(i));
+        }
+        size += dataSize;
+        if (!getNDEJKELLKPLList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        nDEJKELLKPLMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,8 +317,10 @@ public final class ChatEmojiCollectionDataOuterClass {
       }
       emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData other = (emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData) obj;
 
-      if (!getEmojiIdListList()
-          .equals(other.getEmojiIdListList())) return false;
+      if (!getJAIKOLIDHIFList()
+          .equals(other.getJAIKOLIDHIFList())) return false;
+      if (!getNDEJKELLKPLList()
+          .equals(other.getNDEJKELLKPLList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,9 +332,13 @@ public final class ChatEmojiCollectionDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getEmojiIdListCount() > 0) {
-        hash = (37 * hash) + EMOJI_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEmojiIdListList().hashCode();
+      if (getJAIKOLIDHIFCount() > 0) {
+        hash = (37 * hash) + JAIKOLIDHIF_FIELD_NUMBER;
+        hash = (53 * hash) + getJAIKOLIDHIFList().hashCode();
+      }
+      if (getNDEJKELLKPLCount() > 0) {
+        hash = (37 * hash) + NDEJKELLKPL_FIELD_NUMBER;
+        hash = (53 * hash) + getNDEJKELLKPLList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,8 +473,10 @@ public final class ChatEmojiCollectionDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        emojiIdList_ = emptyIntList();
+        jAIKOLIDHIF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        nDEJKELLKPL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -406,10 +505,15 @@ public final class ChatEmojiCollectionDataOuterClass {
         emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData result = new emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          emojiIdList_.makeImmutable();
+          jAIKOLIDHIF_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.emojiIdList_ = emojiIdList_;
+        result.jAIKOLIDHIF_ = jAIKOLIDHIF_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          nDEJKELLKPL_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.nDEJKELLKPL_ = nDEJKELLKPL_;
         onBuilt();
         return result;
       }
@@ -458,13 +562,23 @@ public final class ChatEmojiCollectionDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData other) {
         if (other == emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.getDefaultInstance()) return this;
-        if (!other.emojiIdList_.isEmpty()) {
-          if (emojiIdList_.isEmpty()) {
-            emojiIdList_ = other.emojiIdList_;
+        if (!other.jAIKOLIDHIF_.isEmpty()) {
+          if (jAIKOLIDHIF_.isEmpty()) {
+            jAIKOLIDHIF_ = other.jAIKOLIDHIF_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureEmojiIdListIsMutable();
-            emojiIdList_.addAll(other.emojiIdList_);
+            ensureJAIKOLIDHIFIsMutable();
+            jAIKOLIDHIF_.addAll(other.jAIKOLIDHIF_);
+          }
+          onChanged();
+        }
+        if (!other.nDEJKELLKPL_.isEmpty()) {
+          if (nDEJKELLKPL_.isEmpty()) {
+            nDEJKELLKPL_ = other.nDEJKELLKPL_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureNDEJKELLKPLIsMutable();
+            nDEJKELLKPL_.addAll(other.nDEJKELLKPL_);
           }
           onChanged();
         }
@@ -498,81 +612,160 @@ public final class ChatEmojiCollectionDataOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList emojiIdList_ = emptyIntList();
-      private void ensureEmojiIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList jAIKOLIDHIF_ = emptyIntList();
+      private void ensureJAIKOLIDHIFIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          emojiIdList_ = mutableCopy(emojiIdList_);
+          jAIKOLIDHIF_ = mutableCopy(jAIKOLIDHIF_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
-       * @return A list containing the emojiIdList.
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+       * @return A list containing the jAIKOLIDHIF.
        */
       public java.util.List<java.lang.Integer>
-          getEmojiIdListList() {
+          getJAIKOLIDHIFList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(emojiIdList_) : emojiIdList_;
+                 java.util.Collections.unmodifiableList(jAIKOLIDHIF_) : jAIKOLIDHIF_;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
-       * @return The count of emojiIdList.
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+       * @return The count of jAIKOLIDHIF.
        */
-      public int getEmojiIdListCount() {
-        return emojiIdList_.size();
+      public int getJAIKOLIDHIFCount() {
+        return jAIKOLIDHIF_.size();
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
        * @param index The index of the element to return.
-       * @return The emojiIdList at the given index.
+       * @return The jAIKOLIDHIF at the given index.
        */
-      public int getEmojiIdList(int index) {
-        return emojiIdList_.getInt(index);
+      public int getJAIKOLIDHIF(int index) {
+        return jAIKOLIDHIF_.getInt(index);
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
        * @param index The index to set the value at.
-       * @param value The emojiIdList to set.
+       * @param value The jAIKOLIDHIF to set.
        * @return This builder for chaining.
        */
-      public Builder setEmojiIdList(
+      public Builder setJAIKOLIDHIF(
           int index, int value) {
-        ensureEmojiIdListIsMutable();
-        emojiIdList_.setInt(index, value);
+        ensureJAIKOLIDHIFIsMutable();
+        jAIKOLIDHIF_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
-       * @param value The emojiIdList to add.
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+       * @param value The jAIKOLIDHIF to add.
        * @return This builder for chaining.
        */
-      public Builder addEmojiIdList(int value) {
-        ensureEmojiIdListIsMutable();
-        emojiIdList_.addInt(value);
+      public Builder addJAIKOLIDHIF(int value) {
+        ensureJAIKOLIDHIFIsMutable();
+        jAIKOLIDHIF_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
-       * @param values The emojiIdList to add.
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
+       * @param values The jAIKOLIDHIF to add.
        * @return This builder for chaining.
        */
-      public Builder addAllEmojiIdList(
+      public Builder addAllJAIKOLIDHIF(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEmojiIdListIsMutable();
+        ensureJAIKOLIDHIFIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, emojiIdList_);
+            values, jAIKOLIDHIF_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 JAIKOLIDHIF = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEmojiIdList() {
-        emojiIdList_ = emptyIntList();
+      public Builder clearJAIKOLIDHIF() {
+        jAIKOLIDHIF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList nDEJKELLKPL_ = emptyIntList();
+      private void ensureNDEJKELLKPLIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          nDEJKELLKPL_ = mutableCopy(nDEJKELLKPL_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @return A list containing the nDEJKELLKPL.
+       */
+      public java.util.List<java.lang.Integer>
+          getNDEJKELLKPLList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(nDEJKELLKPL_) : nDEJKELLKPL_;
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @return The count of nDEJKELLKPL.
+       */
+      public int getNDEJKELLKPLCount() {
+        return nDEJKELLKPL_.size();
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @param index The index of the element to return.
+       * @return The nDEJKELLKPL at the given index.
+       */
+      public int getNDEJKELLKPL(int index) {
+        return nDEJKELLKPL_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The nDEJKELLKPL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNDEJKELLKPL(
+          int index, int value) {
+        ensureNDEJKELLKPLIsMutable();
+        nDEJKELLKPL_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @param value The nDEJKELLKPL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addNDEJKELLKPL(int value) {
+        ensureNDEJKELLKPLIsMutable();
+        nDEJKELLKPL_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @param values The nDEJKELLKPL to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllNDEJKELLKPL(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureNDEJKELLKPLIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, nDEJKELLKPL_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NDEJKELLKPL = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNDEJKELLKPL() {
+        nDEJKELLKPL_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -643,9 +836,10 @@ public final class ChatEmojiCollectionDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ChatEmojiCollectionData.proto\"0\n\027ChatE" +
-      "mojiCollectionData\022\025\n\remoji_id_list\030\001 \003(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035ChatEmojiCollectionData.proto\"C\n\027ChatE" +
+      "mojiCollectionData\022\023\n\013JAIKOLIDHIF\030\001 \003(\r\022" +
+      "\023\n\013NDEJKELLKPL\030\002 \003(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -656,7 +850,7 @@ public final class ChatEmojiCollectionDataOuterClass {
     internal_static_ChatEmojiCollectionData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChatEmojiCollectionData_descriptor,
-        new java.lang.String[] { "EmojiIdList", });
+        new java.lang.String[] { "JAIKOLIDHIF", "NDEJKELLKPL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

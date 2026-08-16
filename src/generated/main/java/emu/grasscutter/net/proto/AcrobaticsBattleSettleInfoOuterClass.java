@@ -19,28 +19,28 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool KAGEDGDLJGB = 1;</code>
-     * @return The kAGEDGDLJGB.
-     */
-    boolean getKAGEDGDLJGB();
-
-    /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 cost_time = 5;</code>
+     * @return The costTime.
+     */
+    int getCostTime();
+
+    /**
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>uint32 cost_time = 7;</code>
-     * @return The costTime.
+     * <code>bool NODLOAJLLEN = 12;</code>
+     * @return The nODLOAJLLEN.
      */
-    int getCostTime();
+    boolean getNODLOAJLLEN();
   }
   /**
    * Protobuf type {@code AcrobaticsBattleSettleInfo}
@@ -87,24 +87,24 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              kAGEDGDLJGB_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 40: {
 
               costTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
-              stageId_ = input.readUInt32();
+              difficulty_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              nODLOAJLLEN_ = input.readBool();
               break;
             }
             default: {
@@ -139,21 +139,10 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.class, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder.class);
     }
 
-    public static final int KAGEDGDLJGB_FIELD_NUMBER = 1;
-    private boolean kAGEDGDLJGB_;
-    /**
-     * <code>bool KAGEDGDLJGB = 1;</code>
-     * @return The kAGEDGDLJGB.
-     */
-    @java.lang.Override
-    public boolean getKAGEDGDLJGB() {
-      return kAGEDGDLJGB_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 3;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -161,10 +150,21 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       return stageId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 6;
+    public static final int COST_TIME_FIELD_NUMBER = 5;
+    private int costTime_;
+    /**
+     * <code>uint32 cost_time = 5;</code>
+     * @return The costTime.
+     */
+    @java.lang.Override
+    public int getCostTime() {
+      return costTime_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 8;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -172,15 +172,15 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 7;
-    private int costTime_;
+    public static final int NODLOAJLLEN_FIELD_NUMBER = 12;
+    private boolean nODLOAJLLEN_;
     /**
-     * <code>uint32 cost_time = 7;</code>
-     * @return The costTime.
+     * <code>bool NODLOAJLLEN = 12;</code>
+     * @return The nODLOAJLLEN.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public boolean getNODLOAJLLEN() {
+      return nODLOAJLLEN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kAGEDGDLJGB_ != false) {
-        output.writeBool(1, kAGEDGDLJGB_);
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(6, difficulty_);
+      if (stageId_ != 0) {
+        output.writeUInt32(3, stageId_);
       }
       if (costTime_ != 0) {
-        output.writeUInt32(7, costTime_);
+        output.writeUInt32(5, costTime_);
       }
-      if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
+      if (difficulty_ != 0) {
+        output.writeUInt32(8, difficulty_);
+      }
+      if (nODLOAJLLEN_ != false) {
+        output.writeBool(12, nODLOAJLLEN_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kAGEDGDLJGB_ != false) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, kAGEDGDLJGB_);
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficulty_);
+          .computeUInt32Size(3, stageId_);
       }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, costTime_);
+          .computeUInt32Size(5, costTime_);
       }
-      if (stageId_ != 0) {
+      if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
+          .computeUInt32Size(8, difficulty_);
+      }
+      if (nODLOAJLLEN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, nODLOAJLLEN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo other = (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) obj;
 
-      if (getKAGEDGDLJGB()
-          != other.getKAGEDGDLJGB()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
       if (getCostTime()
           != other.getCostTime()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
+      if (getNODLOAJLLEN()
+          != other.getNODLOAJLLEN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KAGEDGDLJGB_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKAGEDGDLJGB());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCostTime();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + NODLOAJLLEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getNODLOAJLLEN());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kAGEDGDLJGB_ = false;
-
         stageId_ = 0;
+
+        costTime_ = 0;
 
         difficulty_ = 0;
 
-        costTime_ = 0;
+        nODLOAJLLEN_ = false;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo buildPartial() {
         emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo result = new emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo(this);
-        result.kAGEDGDLJGB_ = kAGEDGDLJGB_;
         result.stageId_ = stageId_;
-        result.difficulty_ = difficulty_;
         result.costTime_ = costTime_;
+        result.difficulty_ = difficulty_;
+        result.nODLOAJLLEN_ = nODLOAJLLEN_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo other) {
         if (other == emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance()) return this;
-        if (other.getKAGEDGDLJGB() != false) {
-          setKAGEDGDLJGB(other.getKAGEDGDLJGB());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getNODLOAJLLEN() != false) {
+          setNODLOAJLLEN(other.getNODLOAJLLEN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,40 +537,9 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
 
-      private boolean kAGEDGDLJGB_ ;
-      /**
-       * <code>bool KAGEDGDLJGB = 1;</code>
-       * @return The kAGEDGDLJGB.
-       */
-      @java.lang.Override
-      public boolean getKAGEDGDLJGB() {
-        return kAGEDGDLJGB_;
-      }
-      /**
-       * <code>bool KAGEDGDLJGB = 1;</code>
-       * @param value The kAGEDGDLJGB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKAGEDGDLJGB(boolean value) {
-        
-        kAGEDGDLJGB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool KAGEDGDLJGB = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKAGEDGDLJGB() {
-        
-        kAGEDGDLJGB_ = false;
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -578,7 +547,7 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +558,7 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -599,40 +568,9 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
 
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 6;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 6;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 7;</code>
+       * <code>uint32 cost_time = 5;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -640,7 +578,7 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 7;</code>
+       * <code>uint32 cost_time = 5;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -651,12 +589,74 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 7;</code>
+       * <code>uint32 cost_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
         
         costTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <code>uint32 difficulty = 8;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <code>uint32 difficulty = 8;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
+        
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean nODLOAJLLEN_ ;
+      /**
+       * <code>bool NODLOAJLLEN = 12;</code>
+       * @return The nODLOAJLLEN.
+       */
+      @java.lang.Override
+      public boolean getNODLOAJLLEN() {
+        return nODLOAJLLEN_;
+      }
+      /**
+       * <code>bool NODLOAJLLEN = 12;</code>
+       * @param value The nODLOAJLLEN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNODLOAJLLEN(boolean value) {
+        
+        nODLOAJLLEN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool NODLOAJLLEN = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNODLOAJLLEN() {
+        
+        nODLOAJLLEN_ = false;
         onChanged();
         return this;
       }
@@ -728,9 +728,9 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AcrobaticsBattleSettleInfo.proto\"j\n\032Ac" +
-      "robaticsBattleSettleInfo\022\023\n\013KAGEDGDLJGB\030" +
-      "\001 \001(\010\022\020\n\010stage_id\030\r \001(\r\022\022\n\ndifficulty\030\006 " +
-      "\001(\r\022\021\n\tcost_time\030\007 \001(\rB\033\n\031emu.grasscutte" +
+      "robaticsBattleSettleInfo\022\020\n\010stage_id\030\003 \001" +
+      "(\r\022\021\n\tcost_time\030\005 \001(\r\022\022\n\ndifficulty\030\010 \001(" +
+      "\r\022\023\n\013NODLOAJLLEN\030\014 \001(\010B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +742,7 @@ public final class AcrobaticsBattleSettleInfoOuterClass {
     internal_static_AcrobaticsBattleSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AcrobaticsBattleSettleInfo_descriptor,
-        new java.lang.String[] { "KAGEDGDLJGB", "StageId", "Difficulty", "CostTime", });
+        new java.lang.String[] { "StageId", "CostTime", "Difficulty", "NODLOAJLLEN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

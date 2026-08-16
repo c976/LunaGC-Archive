@@ -19,21 +19,20 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool HMIHEBDACID = 11;</code>
-     * @return The hMIHEBDACID.
+     * <code>bool OKOGFEEBGOK = 4;</code>
+     * @return The oKOGFEEBGOK.
      */
-    boolean getHMIHEBDACID();
+    boolean getOKOGFEEBGOK();
 
     /**
-     * <code>bool BNAIJODKBJL = 5;</code>
-     * @return The bNAIJODKBJL.
+     * <code>bool EFPAMDNFJCO = 5;</code>
+     * @return The eFPAMDNFJCO.
      */
-    boolean getBNAIJODKBJL();
+    boolean getEFPAMDNFJCO();
   }
   /**
    * <pre>
-   * CmdId: 20806
-   * Obf: NPNCHIEMCOA
+   * CmdId: 25788
    * </pre>
    *
    * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -80,14 +79,14 @@ public final class HomeBlueprintInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
-              bNAIJODKBJL_ = input.readBool();
+              oKOGFEEBGOK_ = input.readBool();
               break;
             }
-            case 88: {
+            case 40: {
 
-              hMIHEBDACID_ = input.readBool();
+              eFPAMDNFJCO_ = input.readBool();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class HomeBlueprintInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.class, emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.Builder.class);
     }
 
-    public static final int HMIHEBDACID_FIELD_NUMBER = 11;
-    private boolean hMIHEBDACID_;
+    public static final int OKOGFEEBGOK_FIELD_NUMBER = 4;
+    private boolean oKOGFEEBGOK_;
     /**
-     * <code>bool HMIHEBDACID = 11;</code>
-     * @return The hMIHEBDACID.
+     * <code>bool OKOGFEEBGOK = 4;</code>
+     * @return The oKOGFEEBGOK.
      */
     @java.lang.Override
-    public boolean getHMIHEBDACID() {
-      return hMIHEBDACID_;
+    public boolean getOKOGFEEBGOK() {
+      return oKOGFEEBGOK_;
     }
 
-    public static final int BNAIJODKBJL_FIELD_NUMBER = 5;
-    private boolean bNAIJODKBJL_;
+    public static final int EFPAMDNFJCO_FIELD_NUMBER = 5;
+    private boolean eFPAMDNFJCO_;
     /**
-     * <code>bool BNAIJODKBJL = 5;</code>
-     * @return The bNAIJODKBJL.
+     * <code>bool EFPAMDNFJCO = 5;</code>
+     * @return The eFPAMDNFJCO.
      */
     @java.lang.Override
-    public boolean getBNAIJODKBJL() {
-      return bNAIJODKBJL_;
+    public boolean getEFPAMDNFJCO() {
+      return eFPAMDNFJCO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bNAIJODKBJL_ != false) {
-        output.writeBool(5, bNAIJODKBJL_);
+      if (oKOGFEEBGOK_ != false) {
+        output.writeBool(4, oKOGFEEBGOK_);
       }
-      if (hMIHEBDACID_ != false) {
-        output.writeBool(11, hMIHEBDACID_);
+      if (eFPAMDNFJCO_ != false) {
+        output.writeBool(5, eFPAMDNFJCO_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bNAIJODKBJL_ != false) {
+      if (oKOGFEEBGOK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, bNAIJODKBJL_);
+          .computeBoolSize(4, oKOGFEEBGOK_);
       }
-      if (hMIHEBDACID_ != false) {
+      if (eFPAMDNFJCO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, hMIHEBDACID_);
+          .computeBoolSize(5, eFPAMDNFJCO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify other = (emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify) obj;
 
-      if (getHMIHEBDACID()
-          != other.getHMIHEBDACID()) return false;
-      if (getBNAIJODKBJL()
-          != other.getBNAIJODKBJL()) return false;
+      if (getOKOGFEEBGOK()
+          != other.getOKOGFEEBGOK()) return false;
+      if (getEFPAMDNFJCO()
+          != other.getEFPAMDNFJCO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,12 +210,12 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HMIHEBDACID_FIELD_NUMBER;
+      hash = (37 * hash) + OKOGFEEBGOK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHMIHEBDACID());
-      hash = (37 * hash) + BNAIJODKBJL_FIELD_NUMBER;
+          getOKOGFEEBGOK());
+      hash = (37 * hash) + EFPAMDNFJCO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBNAIJODKBJL());
+          getEFPAMDNFJCO());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,8 +313,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20806
-     * Obf: NPNCHIEMCOA
+     * CmdId: 25788
      * </pre>
      *
      * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -355,9 +353,9 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hMIHEBDACID_ = false;
+        oKOGFEEBGOK_ = false;
 
-        bNAIJODKBJL_ = false;
+        eFPAMDNFJCO_ = false;
 
         return this;
       }
@@ -385,8 +383,8 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify buildPartial() {
         emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify result = new emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify(this);
-        result.hMIHEBDACID_ = hMIHEBDACID_;
-        result.bNAIJODKBJL_ = bNAIJODKBJL_;
+        result.oKOGFEEBGOK_ = oKOGFEEBGOK_;
+        result.eFPAMDNFJCO_ = eFPAMDNFJCO_;
         onBuilt();
         return result;
       }
@@ -435,11 +433,11 @@ public final class HomeBlueprintInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify other) {
         if (other == emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.getDefaultInstance()) return this;
-        if (other.getHMIHEBDACID() != false) {
-          setHMIHEBDACID(other.getHMIHEBDACID());
+        if (other.getOKOGFEEBGOK() != false) {
+          setOKOGFEEBGOK(other.getOKOGFEEBGOK());
         }
-        if (other.getBNAIJODKBJL() != false) {
-          setBNAIJODKBJL(other.getBNAIJODKBJL());
+        if (other.getEFPAMDNFJCO() != false) {
+          setEFPAMDNFJCO(other.getEFPAMDNFJCO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,64 +468,64 @@ public final class HomeBlueprintInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean hMIHEBDACID_ ;
+      private boolean oKOGFEEBGOK_ ;
       /**
-       * <code>bool HMIHEBDACID = 11;</code>
-       * @return The hMIHEBDACID.
+       * <code>bool OKOGFEEBGOK = 4;</code>
+       * @return The oKOGFEEBGOK.
        */
       @java.lang.Override
-      public boolean getHMIHEBDACID() {
-        return hMIHEBDACID_;
+      public boolean getOKOGFEEBGOK() {
+        return oKOGFEEBGOK_;
       }
       /**
-       * <code>bool HMIHEBDACID = 11;</code>
-       * @param value The hMIHEBDACID to set.
+       * <code>bool OKOGFEEBGOK = 4;</code>
+       * @param value The oKOGFEEBGOK to set.
        * @return This builder for chaining.
        */
-      public Builder setHMIHEBDACID(boolean value) {
+      public Builder setOKOGFEEBGOK(boolean value) {
         
-        hMIHEBDACID_ = value;
+        oKOGFEEBGOK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool HMIHEBDACID = 11;</code>
+       * <code>bool OKOGFEEBGOK = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHMIHEBDACID() {
+      public Builder clearOKOGFEEBGOK() {
         
-        hMIHEBDACID_ = false;
+        oKOGFEEBGOK_ = false;
         onChanged();
         return this;
       }
 
-      private boolean bNAIJODKBJL_ ;
+      private boolean eFPAMDNFJCO_ ;
       /**
-       * <code>bool BNAIJODKBJL = 5;</code>
-       * @return The bNAIJODKBJL.
+       * <code>bool EFPAMDNFJCO = 5;</code>
+       * @return The eFPAMDNFJCO.
        */
       @java.lang.Override
-      public boolean getBNAIJODKBJL() {
-        return bNAIJODKBJL_;
+      public boolean getEFPAMDNFJCO() {
+        return eFPAMDNFJCO_;
       }
       /**
-       * <code>bool BNAIJODKBJL = 5;</code>
-       * @param value The bNAIJODKBJL to set.
+       * <code>bool EFPAMDNFJCO = 5;</code>
+       * @param value The eFPAMDNFJCO to set.
        * @return This builder for chaining.
        */
-      public Builder setBNAIJODKBJL(boolean value) {
+      public Builder setEFPAMDNFJCO(boolean value) {
         
-        bNAIJODKBJL_ = value;
+        eFPAMDNFJCO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool BNAIJODKBJL = 5;</code>
+       * <code>bool EFPAMDNFJCO = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBNAIJODKBJL() {
+      public Builder clearEFPAMDNFJCO() {
         
-        bNAIJODKBJL_ = false;
+        eFPAMDNFJCO_ = false;
         onChanged();
         return this;
       }
@@ -599,8 +597,8 @@ public final class HomeBlueprintInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035HomeBlueprintInfoNotify.proto\"C\n\027HomeB" +
-      "lueprintInfoNotify\022\023\n\013HMIHEBDACID\030\013 \001(\010\022" +
-      "\023\n\013BNAIJODKBJL\030\005 \001(\010B\033\n\031emu.grasscutter." +
+      "lueprintInfoNotify\022\023\n\013OKOGFEEBGOK\030\004 \001(\010\022" +
+      "\023\n\013EFPAMDNFJCO\030\005 \001(\010B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -612,7 +610,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     internal_static_HomeBlueprintInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlueprintInfoNotify_descriptor,
-        new java.lang.String[] { "HMIHEBDACID", "BNAIJODKBJL", });
+        new java.lang.String[] { "OKOGFEEBGOK", "EFPAMDNFJCO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

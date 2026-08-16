@@ -19,24 +19,23 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo getPlayerInfo();
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      */
     emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfoOrBuilder getPlayerInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 21679
-   * Obf: NAJDJPEICOL
+   * CmdId: 25078
    * </pre>
    *
    * Protobuf type {@code IrodoriChessPlayerInfoNotify}
@@ -83,7 +82,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 34: {
               emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -128,10 +127,10 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
               emu.grasscutter.net.proto.IrodoriChessPlayerInfoNotifyOuterClass.IrodoriChessPlayerInfoNotify.class, emu.grasscutter.net.proto.IrodoriChessPlayerInfoNotifyOuterClass.IrodoriChessPlayerInfoNotify.Builder.class);
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 7;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo playerInfo_;
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -139,7 +138,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -147,7 +146,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+     * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
@@ -169,7 +168,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerInfo_ != null) {
-        output.writeMessage(7, getPlayerInfo());
+        output.writeMessage(4, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +181,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
       size = 0;
       if (playerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPlayerInfo());
+          .computeMessageSize(4, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +315,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21679
-     * Obf: NAJDJPEICOL
+     * CmdId: 25078
      * </pre>
      *
      * Protobuf type {@code IrodoriChessPlayerInfoNotify}
@@ -478,14 +476,14 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo, emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder, emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo getPlayerInfo() {
@@ -496,7 +494,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -512,7 +510,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder builderForValue) {
@@ -526,7 +524,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -544,7 +542,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -566,7 +564,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -577,7 +575,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessPlayerInfo player_info = 7;</code>
+       * <code>.IrodoriChessPlayerInfo player_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo, emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfo.Builder, emu.grasscutter.net.proto.IrodoriChessPlayerInfoOuterClass.IrodoriChessPlayerInfoOrBuilder> 
@@ -661,7 +659,7 @@ public final class IrodoriChessPlayerInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"IrodoriChessPlayerInfoNotify.proto\032\034Ir" +
       "odoriChessPlayerInfo.proto\"L\n\034IrodoriChe" +
-      "ssPlayerInfoNotify\022,\n\013player_info\030\007 \001(\0132" +
+      "ssPlayerInfoNotify\022,\n\013player_info\030\004 \001(\0132" +
       "\027.IrodoriChessPlayerInfoB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };

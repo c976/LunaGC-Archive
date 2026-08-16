@@ -19,27 +19,26 @@ public final class InterpretInferenceWordRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 word_id = 1;</code>
-     * @return The wordId.
+     * <code>uint32 page_id = 2;</code>
+     * @return The pageId.
      */
-    int getWordId();
+    int getPageId();
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 page_id = 6;</code>
-     * @return The pageId.
+     * <code>uint32 word_id = 14;</code>
+     * @return The wordId.
      */
-    int getPageId();
+    int getWordId();
   }
   /**
    * <pre>
-   * CmdId: 6937
-   * Obf: LKHOMEMLBDJ
+   * CmdId: 26154
    * </pre>
    *
    * Protobuf type {@code InterpretInferenceWordRsp}
@@ -86,19 +85,19 @@ public final class InterpretInferenceWordRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              wordId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               pageId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              wordId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +132,21 @@ public final class InterpretInferenceWordRspOuterClass {
               emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp.class, emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp.Builder.class);
     }
 
-    public static final int WORD_ID_FIELD_NUMBER = 1;
-    private int wordId_;
+    public static final int PAGE_ID_FIELD_NUMBER = 2;
+    private int pageId_;
     /**
-     * <code>uint32 word_id = 1;</code>
-     * @return The wordId.
+     * <code>uint32 page_id = 2;</code>
+     * @return The pageId.
      */
     @java.lang.Override
-    public int getWordId() {
-      return wordId_;
+    public int getPageId() {
+      return pageId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +154,15 @@ public final class InterpretInferenceWordRspOuterClass {
       return retcode_;
     }
 
-    public static final int PAGE_ID_FIELD_NUMBER = 6;
-    private int pageId_;
+    public static final int WORD_ID_FIELD_NUMBER = 14;
+    private int wordId_;
     /**
-     * <code>uint32 page_id = 6;</code>
-     * @return The pageId.
+     * <code>uint32 word_id = 14;</code>
+     * @return The wordId.
      */
     @java.lang.Override
-    public int getPageId() {
-      return pageId_;
+    public int getWordId() {
+      return wordId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class InterpretInferenceWordRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (wordId_ != 0) {
-        output.writeUInt32(1, wordId_);
-      }
       if (pageId_ != 0) {
-        output.writeUInt32(6, pageId_);
+        output.writeUInt32(2, pageId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (wordId_ != 0) {
+        output.writeUInt32(14, wordId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class InterpretInferenceWordRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (wordId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, wordId_);
-      }
       if (pageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, pageId_);
+          .computeUInt32Size(2, pageId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (wordId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, wordId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class InterpretInferenceWordRspOuterClass {
       }
       emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp other = (emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp) obj;
 
-      if (getWordId()
-          != other.getWordId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getPageId()
           != other.getPageId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getWordId()
+          != other.getWordId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +241,12 @@ public final class InterpretInferenceWordRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + WORD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWordId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + PAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPageId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + WORD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWordId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class InterpretInferenceWordRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6937
-     * Obf: LKHOMEMLBDJ
+     * CmdId: 26154
      * </pre>
      *
      * Protobuf type {@code InterpretInferenceWordRsp}
@@ -386,11 +384,11 @@ public final class InterpretInferenceWordRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        wordId_ = 0;
+        pageId_ = 0;
 
         retcode_ = 0;
 
-        pageId_ = 0;
+        wordId_ = 0;
 
         return this;
       }
@@ -418,9 +416,9 @@ public final class InterpretInferenceWordRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp buildPartial() {
         emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp result = new emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp(this);
-        result.wordId_ = wordId_;
-        result.retcode_ = retcode_;
         result.pageId_ = pageId_;
+        result.retcode_ = retcode_;
+        result.wordId_ = wordId_;
         onBuilt();
         return result;
       }
@@ -469,14 +467,14 @@ public final class InterpretInferenceWordRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp other) {
         if (other == emu.grasscutter.net.proto.InterpretInferenceWordRspOuterClass.InterpretInferenceWordRsp.getDefaultInstance()) return this;
-        if (other.getWordId() != 0) {
-          setWordId(other.getWordId());
+        if (other.getPageId() != 0) {
+          setPageId(other.getPageId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getPageId() != 0) {
-          setPageId(other.getPageId());
+        if (other.getWordId() != 0) {
+          setWordId(other.getWordId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,71 +505,9 @@ public final class InterpretInferenceWordRspOuterClass {
         return this;
       }
 
-      private int wordId_ ;
-      /**
-       * <code>uint32 word_id = 1;</code>
-       * @return The wordId.
-       */
-      @java.lang.Override
-      public int getWordId() {
-        return wordId_;
-      }
-      /**
-       * <code>uint32 word_id = 1;</code>
-       * @param value The wordId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWordId(int value) {
-        
-        wordId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 word_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWordId() {
-        
-        wordId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int pageId_ ;
       /**
-       * <code>uint32 page_id = 6;</code>
+       * <code>uint32 page_id = 2;</code>
        * @return The pageId.
        */
       @java.lang.Override
@@ -579,7 +515,7 @@ public final class InterpretInferenceWordRspOuterClass {
         return pageId_;
       }
       /**
-       * <code>uint32 page_id = 6;</code>
+       * <code>uint32 page_id = 2;</code>
        * @param value The pageId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +526,74 @@ public final class InterpretInferenceWordRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 page_id = 6;</code>
+       * <code>uint32 page_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPageId() {
         
         pageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int wordId_ ;
+      /**
+       * <code>uint32 word_id = 14;</code>
+       * @return The wordId.
+       */
+      @java.lang.Override
+      public int getWordId() {
+        return wordId_;
+      }
+      /**
+       * <code>uint32 word_id = 14;</code>
+       * @param value The wordId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWordId(int value) {
+        
+        wordId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 word_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWordId() {
+        
+        wordId_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +665,8 @@ public final class InterpretInferenceWordRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037InterpretInferenceWordRsp.proto\"N\n\031Int" +
-      "erpretInferenceWordRsp\022\017\n\007word_id\030\001 \001(\r\022" +
-      "\017\n\007retcode\030\n \001(\005\022\017\n\007page_id\030\006 \001(\rB\033\n\031emu" +
+      "erpretInferenceWordRsp\022\017\n\007page_id\030\002 \001(\r\022" +
+      "\017\n\007retcode\030\014 \001(\005\022\017\n\007word_id\030\016 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +678,7 @@ public final class InterpretInferenceWordRspOuterClass {
     internal_static_InterpretInferenceWordRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InterpretInferenceWordRsp_descriptor,
-        new java.lang.String[] { "WordId", "Retcode", "PageId", });
+        new java.lang.String[] { "PageId", "Retcode", "WordId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

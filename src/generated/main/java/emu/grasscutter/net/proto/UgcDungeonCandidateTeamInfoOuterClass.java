@@ -19,30 +19,30 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.EnterUgcDungeonType enter_type = 2;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    int getEnterTypeValue();
+    /**
+     * <code>.EnterUgcDungeonType enter_type = 2;</code>
+     * @return The enterType.
+     */
+    emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType();
+
+    /**
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      * @return Whether the ugcBriefData field is set.
      */
     boolean hasUgcBriefData();
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      * @return The ugcBriefData.
      */
     emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getUgcBriefData();
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      */
     emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getUgcBriefDataOrBuilder();
-
-    /**
-     * <code>.EnterUgcDungeonType total_score = 4;</code>
-     * @return The enum numeric value on the wire for totalScore.
-     */
-    int getTotalScoreValue();
-    /**
-     * <code>.EnterUgcDungeonType total_score = 4;</code>
-     * @return The totalScore.
-     */
-    emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getTotalScore();
   }
   /**
    * Protobuf type {@code UgcDungeonCandidateTeamInfo}
@@ -57,7 +57,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       super(builder);
     }
     private UgcDungeonCandidateTeamInfo() {
-      totalScore_ = 0;
+      enterType_ = 0;
     }
 
     @java.lang.Override
@@ -90,13 +90,13 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
               int rawValue = input.readEnum();
 
-              totalScore_ = rawValue;
+              enterType_ = rawValue;
               break;
             }
-            case 82: {
+            case 58: {
               emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder subBuilder = null;
               if (ugcBriefData_ != null) {
                 subBuilder = ugcBriefData_.toBuilder();
@@ -141,10 +141,29 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
               emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo.class, emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo.Builder.class);
     }
 
-    public static final int UGC_BRIEF_DATA_FIELD_NUMBER = 10;
+    public static final int ENTER_TYPE_FIELD_NUMBER = 2;
+    private int enterType_;
+    /**
+     * <code>.EnterUgcDungeonType enter_type = 2;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    @java.lang.Override public int getEnterTypeValue() {
+      return enterType_;
+    }
+    /**
+     * <code>.EnterUgcDungeonType enter_type = 2;</code>
+     * @return The enterType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
+    }
+
+    public static final int UGC_BRIEF_DATA_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief ugcBriefData_;
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      * @return Whether the ugcBriefData field is set.
      */
     @java.lang.Override
@@ -152,7 +171,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       return ugcBriefData_ != null;
     }
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      * @return The ugcBriefData.
      */
     @java.lang.Override
@@ -160,30 +179,11 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       return ugcBriefData_ == null ? emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.getDefaultInstance() : ugcBriefData_;
     }
     /**
-     * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+     * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getUgcBriefDataOrBuilder() {
       return getUgcBriefData();
-    }
-
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 4;
-    private int totalScore_;
-    /**
-     * <code>.EnterUgcDungeonType total_score = 4;</code>
-     * @return The enum numeric value on the wire for totalScore.
-     */
-    @java.lang.Override public int getTotalScoreValue() {
-      return totalScore_;
-    }
-    /**
-     * <code>.EnterUgcDungeonType total_score = 4;</code>
-     * @return The totalScore.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getTotalScore() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(totalScore_);
-      return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -200,11 +200,11 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalScore_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.ENTER_UGC_DUNGEON_TYPE_NONE.getNumber()) {
-        output.writeEnum(4, totalScore_);
+      if (enterType_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE.getNumber()) {
+        output.writeEnum(2, enterType_);
       }
       if (ugcBriefData_ != null) {
-        output.writeMessage(10, getUgcBriefData());
+        output.writeMessage(7, getUgcBriefData());
       }
       unknownFields.writeTo(output);
     }
@@ -215,13 +215,13 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalScore_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.ENTER_UGC_DUNGEON_TYPE_NONE.getNumber()) {
+      if (enterType_ != emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.CNNECCLOKJO_ENTER_UGC_DUNGEON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, totalScore_);
+          .computeEnumSize(2, enterType_);
       }
       if (ugcBriefData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getUgcBriefData());
+          .computeMessageSize(7, getUgcBriefData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -238,12 +238,12 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       }
       emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo other = (emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo) obj;
 
+      if (enterType_ != other.enterType_) return false;
       if (hasUgcBriefData() != other.hasUgcBriefData()) return false;
       if (hasUgcBriefData()) {
         if (!getUgcBriefData()
             .equals(other.getUgcBriefData())) return false;
       }
-      if (totalScore_ != other.totalScore_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -255,12 +255,12 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + enterType_;
       if (hasUgcBriefData()) {
         hash = (37 * hash) + UGC_BRIEF_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getUgcBriefData().hashCode();
       }
-      hash = (37 * hash) + TOTAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + totalScore_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -394,14 +394,14 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        enterType_ = 0;
+
         if (ugcBriefDataBuilder_ == null) {
           ugcBriefData_ = null;
         } else {
           ugcBriefData_ = null;
           ugcBriefDataBuilder_ = null;
         }
-        totalScore_ = 0;
-
         return this;
       }
 
@@ -428,12 +428,12 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo buildPartial() {
         emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo result = new emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo(this);
+        result.enterType_ = enterType_;
         if (ugcBriefDataBuilder_ == null) {
           result.ugcBriefData_ = ugcBriefData_;
         } else {
           result.ugcBriefData_ = ugcBriefDataBuilder_.build();
         }
-        result.totalScore_ = totalScore_;
         onBuilt();
         return result;
       }
@@ -482,11 +482,11 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo other) {
         if (other == emu.grasscutter.net.proto.UgcDungeonCandidateTeamInfoOuterClass.UgcDungeonCandidateTeamInfo.getDefaultInstance()) return this;
+        if (other.enterType_ != 0) {
+          setEnterTypeValue(other.getEnterTypeValue());
+        }
         if (other.hasUgcBriefData()) {
           mergeUgcBriefData(other.getUgcBriefData());
-        }
-        if (other.totalScore_ != 0) {
-          setTotalScoreValue(other.getTotalScoreValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -517,18 +517,72 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return this;
       }
 
+      private int enterType_ = 0;
+      /**
+       * <code>.EnterUgcDungeonType enter_type = 2;</code>
+       * @return The enum numeric value on the wire for enterType.
+       */
+      @java.lang.Override public int getEnterTypeValue() {
+        return enterType_;
+      }
+      /**
+       * <code>.EnterUgcDungeonType enter_type = 2;</code>
+       * @param value The enum numeric value on the wire for enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterTypeValue(int value) {
+        
+        enterType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.EnterUgcDungeonType enter_type = 2;</code>
+       * @return The enterType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getEnterType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(enterType_);
+        return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.EnterUgcDungeonType enter_type = 2;</code>
+       * @param value The enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterType(emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        enterType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.EnterUgcDungeonType enter_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterType() {
+        
+        enterType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief ugcBriefData_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> ugcBriefDataBuilder_;
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        * @return Whether the ugcBriefData field is set.
        */
       public boolean hasUgcBriefData() {
         return ugcBriefDataBuilder_ != null || ugcBriefData_ != null;
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        * @return The ugcBriefData.
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getUgcBriefData() {
@@ -539,7 +593,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public Builder setUgcBriefData(emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief value) {
         if (ugcBriefDataBuilder_ == null) {
@@ -555,7 +609,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public Builder setUgcBriefData(
           emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder builderForValue) {
@@ -569,7 +623,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public Builder mergeUgcBriefData(emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief value) {
         if (ugcBriefDataBuilder_ == null) {
@@ -587,7 +641,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public Builder clearUgcBriefData() {
         if (ugcBriefDataBuilder_ == null) {
@@ -601,7 +655,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder getUgcBriefDataBuilder() {
         
@@ -609,7 +663,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         return getUgcBriefDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getUgcBriefDataOrBuilder() {
         if (ugcBriefDataBuilder_ != null) {
@@ -620,7 +674,7 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonBrief ugc_brief_data = 10;</code>
+       * <code>.UgcDungeonBrief ugc_brief_data = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
@@ -634,60 +688,6 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
           ugcBriefData_ = null;
         }
         return ugcBriefDataBuilder_;
-      }
-
-      private int totalScore_ = 0;
-      /**
-       * <code>.EnterUgcDungeonType total_score = 4;</code>
-       * @return The enum numeric value on the wire for totalScore.
-       */
-      @java.lang.Override public int getTotalScoreValue() {
-        return totalScore_;
-      }
-      /**
-       * <code>.EnterUgcDungeonType total_score = 4;</code>
-       * @param value The enum numeric value on the wire for totalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalScoreValue(int value) {
-        
-        totalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EnterUgcDungeonType total_score = 4;</code>
-       * @return The totalScore.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType getTotalScore() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType result = emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.valueOf(totalScore_);
-        return result == null ? emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.EnterUgcDungeonType total_score = 4;</code>
-       * @param value The totalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalScore(emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.EnterUgcDungeonType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        totalScore_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EnterUgcDungeonType total_score = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalScore() {
-        
-        totalScore_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -756,27 +756,27 @@ public final class UgcDungeonCandidateTeamInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!UgcDungeonCandidateTeamInfo.proto\032\025Ugc" +
-      "DungeonBrief.proto\032\031EnterUgcDungeonType." +
-      "proto\"r\n\033UgcDungeonCandidateTeamInfo\022(\n\016" +
-      "ugc_brief_data\030\n \001(\0132\020.UgcDungeonBrief\022)" +
-      "\n\013total_score\030\004 \001(\0162\024.EnterUgcDungeonTyp" +
-      "eB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n!UgcDungeonCandidateTeamInfo.proto\032\031Ent" +
+      "erUgcDungeonType.proto\032\025UgcDungeonBrief." +
+      "proto\"q\n\033UgcDungeonCandidateTeamInfo\022(\n\n" +
+      "enter_type\030\002 \001(\0162\024.EnterUgcDungeonType\022(" +
+      "\n\016ugc_brief_data\030\007 \001(\0132\020.UgcDungeonBrief" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor(),
         });
     internal_static_UgcDungeonCandidateTeamInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcDungeonCandidateTeamInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcDungeonCandidateTeamInfo_descriptor,
-        new java.lang.String[] { "UgcBriefData", "TotalScore", });
-    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor();
+        new java.lang.String[] { "EnterType", "UgcBriefData", });
     emu.grasscutter.net.proto.EnterUgcDungeonTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

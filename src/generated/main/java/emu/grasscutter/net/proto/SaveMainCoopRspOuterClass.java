@@ -19,38 +19,57 @@ public final class SaveMainCoopRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
+     * @return A list containing the savePointIdList.
+     */
+    java.util.List<java.lang.Integer> getSavePointIdListList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
+     * @return The count of savePointIdList.
+     */
+    int getSavePointIdListCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
+     * @param index The index of the element to return.
+     * @return The savePointIdList at the given index.
+     */
+    int getSavePointIdList(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 id = 9;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     int getId();
-
-    /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
-     * @return A list containing the savePointIdList.
-     */
-    java.util.List<java.lang.Integer> getSavePointIdListList();
-    /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
-     * @return The count of savePointIdList.
-     */
-    int getSavePointIdListCount();
-    /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The savePointIdList at the given index.
-     */
-    int getSavePointIdList(int index);
   }
   /**
    * <pre>
-   * CmdId: 27766
-   * Obf: BHPGBGECOMC
+   * CmdId: 29477
    * </pre>
    *
    * Protobuf type {@code SaveMainCoopRsp}
@@ -99,7 +118,12 @@ public final class SaveMainCoopRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
+
+              id_ = input.readUInt32();
+              break;
+            }
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 savePointIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +131,7 @@ public final class SaveMainCoopRspOuterClass {
               savePointIdList_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -120,14 +144,9 @@ public final class SaveMainCoopRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 88: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 72: {
-
-              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,32 +184,14 @@ public final class SaveMainCoopRspOuterClass {
               emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp.class, emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 9;
-    private int id_;
-    /**
-     * <code>uint32 id = 9;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int SAVE_POINT_ID_LIST_FIELD_NUMBER = 3;
+    public static final int SAVE_POINT_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList savePointIdList_;
     /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
      * @return A list containing the savePointIdList.
      */
     @java.lang.Override
@@ -199,14 +200,22 @@ public final class SaveMainCoopRspOuterClass {
       return savePointIdList_;
     }
     /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
      * @return The count of savePointIdList.
      */
     public int getSavePointIdListCount() {
       return savePointIdList_.size();
     }
     /**
-     * <code>repeated uint32 save_point_id_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 save_point_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The savePointIdList at the given index.
      */
@@ -214,6 +223,36 @@ public final class SaveMainCoopRspOuterClass {
       return savePointIdList_.getInt(index);
     }
     private int savePointIdListMemoizedSerializedSize = -1;
+
+    public static final int RETCODE_FIELD_NUMBER = 11;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 4;
+    private int id_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 id = 4;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -230,18 +269,18 @@ public final class SaveMainCoopRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (id_ != 0) {
+        output.writeUInt32(4, id_);
+      }
       if (getSavePointIdListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(savePointIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < savePointIdList_.size(); i++) {
         output.writeUInt32NoTag(savePointIdList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
-      if (id_ != 0) {
-        output.writeUInt32(9, id_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -252,6 +291,10 @@ public final class SaveMainCoopRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, id_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < savePointIdList_.size(); i++) {
@@ -268,11 +311,7 @@ public final class SaveMainCoopRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, id_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,12 +328,12 @@ public final class SaveMainCoopRspOuterClass {
       }
       emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp other = (emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp) obj;
 
+      if (!getSavePointIdListList()
+          .equals(other.getSavePointIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getId()
           != other.getId()) return false;
-      if (!getSavePointIdListList()
-          .equals(other.getSavePointIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,14 +345,14 @@ public final class SaveMainCoopRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       if (getSavePointIdListCount() > 0) {
         hash = (37 * hash) + SAVE_POINT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSavePointIdListList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +450,7 @@ public final class SaveMainCoopRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27766
-     * Obf: BHPGBGECOMC
+     * CmdId: 29477
      * </pre>
      *
      * Protobuf type {@code SaveMainCoopRsp}
@@ -452,12 +490,12 @@ public final class SaveMainCoopRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        savePointIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
         id_ = 0;
 
-        savePointIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -485,13 +523,13 @@ public final class SaveMainCoopRspOuterClass {
       public emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp buildPartial() {
         emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp result = new emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
-        result.id_ = id_;
         if (((bitField0_ & 0x00000001) != 0)) {
           savePointIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.savePointIdList_ = savePointIdList_;
+        result.retcode_ = retcode_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -540,12 +578,6 @@ public final class SaveMainCoopRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp other) {
         if (other == emu.grasscutter.net.proto.SaveMainCoopRspOuterClass.SaveMainCoopRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (!other.savePointIdList_.isEmpty()) {
           if (savePointIdList_.isEmpty()) {
             savePointIdList_ = other.savePointIdList_;
@@ -555,6 +587,12 @@ public final class SaveMainCoopRspOuterClass {
             savePointIdList_.addAll(other.savePointIdList_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,68 +624,6 @@ public final class SaveMainCoopRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 9;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 9;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList savePointIdList_ = emptyIntList();
       private void ensureSavePointIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -656,7 +632,11 @@ public final class SaveMainCoopRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @return A list containing the savePointIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -665,14 +645,22 @@ public final class SaveMainCoopRspOuterClass {
                  java.util.Collections.unmodifiableList(savePointIdList_) : savePointIdList_;
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @return The count of savePointIdList.
        */
       public int getSavePointIdListCount() {
         return savePointIdList_.size();
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The savePointIdList at the given index.
        */
@@ -680,7 +668,11 @@ public final class SaveMainCoopRspOuterClass {
         return savePointIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The savePointIdList to set.
        * @return This builder for chaining.
@@ -693,7 +685,11 @@ public final class SaveMainCoopRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @param value The savePointIdList to add.
        * @return This builder for chaining.
        */
@@ -704,7 +700,11 @@ public final class SaveMainCoopRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @param values The savePointIdList to add.
        * @return This builder for chaining.
        */
@@ -717,12 +717,102 @@ public final class SaveMainCoopRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 save_point_id_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 save_point_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSavePointIdList() {
         savePointIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 id = 4;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 id = 4;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -794,8 +884,8 @@ public final class SaveMainCoopRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025SaveMainCoopRsp.proto\"J\n\017SaveMainCoopR" +
-      "sp\022\017\n\007retcode\030\010 \001(\005\022\n\n\002id\030\t \001(\r\022\032\n\022save_" +
-      "point_id_list\030\003 \003(\rB\033\n\031emu.grasscutter.n" +
+      "sp\022\032\n\022save_point_id_list\030\t \003(\r\022\017\n\007retcod" +
+      "e\030\013 \001(\005\022\n\n\002id\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -807,7 +897,7 @@ public final class SaveMainCoopRspOuterClass {
     internal_static_SaveMainCoopRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveMainCoopRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Id", "SavePointIdList", });
+        new java.lang.String[] { "SavePointIdList", "Retcode", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

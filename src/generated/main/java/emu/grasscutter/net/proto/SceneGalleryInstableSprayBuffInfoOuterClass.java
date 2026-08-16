@@ -19,28 +19,24 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buff_id = 2;</code>
+     * <code>uint64 buff_max_time = 4;</code>
+     * @return The buffMaxTime.
+     */
+    long getBuffMaxTime();
+
+    /**
+     * <code>uint64 buff_end_time = 9;</code>
+     * @return The buffEndTime.
+     */
+    long getBuffEndTime();
+
+    /**
+     * <code>uint32 buff_id = 11;</code>
      * @return The buffId.
      */
     int getBuffId();
-
-    /**
-     * <code>uint64 PMDBPOPIDNL = 13;</code>
-     * @return The pMDBPOPIDNL.
-     */
-    long getPMDBPOPIDNL();
-
-    /**
-     * <code>uint64 PCGMEOMDLJC = 8;</code>
-     * @return The pCGMEOMDLJC.
-     */
-    long getPCGMEOMDLJC();
   }
   /**
-   * <pre>
-   * Obf: JAHEIIELIAN
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
    */
   public static final class SceneGalleryInstableSprayBuffInfo extends
@@ -85,19 +81,19 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
+
+              buffMaxTime_ = input.readUInt64();
+              break;
+            }
+            case 72: {
+
+              buffEndTime_ = input.readUInt64();
+              break;
+            }
+            case 88: {
 
               buffId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              pCGMEOMDLJC_ = input.readUInt64();
-              break;
-            }
-            case 104: {
-
-              pMDBPOPIDNL_ = input.readUInt64();
               break;
             }
             default: {
@@ -132,37 +128,37 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.class, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder.class);
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 2;
+    public static final int BUFF_MAX_TIME_FIELD_NUMBER = 4;
+    private long buffMaxTime_;
+    /**
+     * <code>uint64 buff_max_time = 4;</code>
+     * @return The buffMaxTime.
+     */
+    @java.lang.Override
+    public long getBuffMaxTime() {
+      return buffMaxTime_;
+    }
+
+    public static final int BUFF_END_TIME_FIELD_NUMBER = 9;
+    private long buffEndTime_;
+    /**
+     * <code>uint64 buff_end_time = 9;</code>
+     * @return The buffEndTime.
+     */
+    @java.lang.Override
+    public long getBuffEndTime() {
+      return buffEndTime_;
+    }
+
+    public static final int BUFF_ID_FIELD_NUMBER = 11;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 2;</code>
+     * <code>uint32 buff_id = 11;</code>
      * @return The buffId.
      */
     @java.lang.Override
     public int getBuffId() {
       return buffId_;
-    }
-
-    public static final int PMDBPOPIDNL_FIELD_NUMBER = 13;
-    private long pMDBPOPIDNL_;
-    /**
-     * <code>uint64 PMDBPOPIDNL = 13;</code>
-     * @return The pMDBPOPIDNL.
-     */
-    @java.lang.Override
-    public long getPMDBPOPIDNL() {
-      return pMDBPOPIDNL_;
-    }
-
-    public static final int PCGMEOMDLJC_FIELD_NUMBER = 8;
-    private long pCGMEOMDLJC_;
-    /**
-     * <code>uint64 PCGMEOMDLJC = 8;</code>
-     * @return The pCGMEOMDLJC.
-     */
-    @java.lang.Override
-    public long getPCGMEOMDLJC() {
-      return pCGMEOMDLJC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (buffMaxTime_ != 0L) {
+        output.writeUInt64(4, buffMaxTime_);
+      }
+      if (buffEndTime_ != 0L) {
+        output.writeUInt64(9, buffEndTime_);
+      }
       if (buffId_ != 0) {
-        output.writeUInt32(2, buffId_);
-      }
-      if (pCGMEOMDLJC_ != 0L) {
-        output.writeUInt64(8, pCGMEOMDLJC_);
-      }
-      if (pMDBPOPIDNL_ != 0L) {
-        output.writeUInt64(13, pMDBPOPIDNL_);
+        output.writeUInt32(11, buffId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (buffMaxTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(4, buffMaxTime_);
+      }
+      if (buffEndTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, buffEndTime_);
+      }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, buffId_);
-      }
-      if (pCGMEOMDLJC_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, pCGMEOMDLJC_);
-      }
-      if (pMDBPOPIDNL_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, pMDBPOPIDNL_);
+          .computeUInt32Size(11, buffId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other = (emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo) obj;
 
+      if (getBuffMaxTime()
+          != other.getBuffMaxTime()) return false;
+      if (getBuffEndTime()
+          != other.getBuffEndTime()) return false;
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getPMDBPOPIDNL()
-          != other.getPMDBPOPIDNL()) return false;
-      if (getPCGMEOMDLJC()
-          != other.getPCGMEOMDLJC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,14 +237,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BUFF_MAX_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getBuffMaxTime());
+      hash = (37 * hash) + BUFF_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getBuffEndTime());
       hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + PMDBPOPIDNL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPMDBPOPIDNL());
-      hash = (37 * hash) + PCGMEOMDLJC_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPCGMEOMDLJC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,10 +341,6 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JAHEIIELIAN
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
      */
     public static final class Builder extends
@@ -386,11 +378,11 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        buffMaxTime_ = 0L;
+
+        buffEndTime_ = 0L;
+
         buffId_ = 0;
-
-        pMDBPOPIDNL_ = 0L;
-
-        pCGMEOMDLJC_ = 0L;
 
         return this;
       }
@@ -418,9 +410,9 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo result = new emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo(this);
+        result.buffMaxTime_ = buffMaxTime_;
+        result.buffEndTime_ = buffEndTime_;
         result.buffId_ = buffId_;
-        result.pMDBPOPIDNL_ = pMDBPOPIDNL_;
-        result.pCGMEOMDLJC_ = pCGMEOMDLJC_;
         onBuilt();
         return result;
       }
@@ -469,14 +461,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance()) return this;
+        if (other.getBuffMaxTime() != 0L) {
+          setBuffMaxTime(other.getBuffMaxTime());
+        }
+        if (other.getBuffEndTime() != 0L) {
+          setBuffEndTime(other.getBuffEndTime());
+        }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
-        }
-        if (other.getPMDBPOPIDNL() != 0L) {
-          setPMDBPOPIDNL(other.getPMDBPOPIDNL());
-        }
-        if (other.getPCGMEOMDLJC() != 0L) {
-          setPCGMEOMDLJC(other.getPCGMEOMDLJC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +499,71 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
 
+      private long buffMaxTime_ ;
+      /**
+       * <code>uint64 buff_max_time = 4;</code>
+       * @return The buffMaxTime.
+       */
+      @java.lang.Override
+      public long getBuffMaxTime() {
+        return buffMaxTime_;
+      }
+      /**
+       * <code>uint64 buff_max_time = 4;</code>
+       * @param value The buffMaxTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuffMaxTime(long value) {
+        
+        buffMaxTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 buff_max_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuffMaxTime() {
+        
+        buffMaxTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long buffEndTime_ ;
+      /**
+       * <code>uint64 buff_end_time = 9;</code>
+       * @return The buffEndTime.
+       */
+      @java.lang.Override
+      public long getBuffEndTime() {
+        return buffEndTime_;
+      }
+      /**
+       * <code>uint64 buff_end_time = 9;</code>
+       * @param value The buffEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuffEndTime(long value) {
+        
+        buffEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 buff_end_time = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuffEndTime() {
+        
+        buffEndTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int buffId_ ;
       /**
-       * <code>uint32 buff_id = 2;</code>
+       * <code>uint32 buff_id = 11;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -517,7 +571,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buff_id = 2;</code>
+       * <code>uint32 buff_id = 11;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -528,74 +582,12 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buff_id = 2;</code>
+       * <code>uint32 buff_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
         
         buffId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long pMDBPOPIDNL_ ;
-      /**
-       * <code>uint64 PMDBPOPIDNL = 13;</code>
-       * @return The pMDBPOPIDNL.
-       */
-      @java.lang.Override
-      public long getPMDBPOPIDNL() {
-        return pMDBPOPIDNL_;
-      }
-      /**
-       * <code>uint64 PMDBPOPIDNL = 13;</code>
-       * @param value The pMDBPOPIDNL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPMDBPOPIDNL(long value) {
-        
-        pMDBPOPIDNL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 PMDBPOPIDNL = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPMDBPOPIDNL() {
-        
-        pMDBPOPIDNL_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long pCGMEOMDLJC_ ;
-      /**
-       * <code>uint64 PCGMEOMDLJC = 8;</code>
-       * @return The pCGMEOMDLJC.
-       */
-      @java.lang.Override
-      public long getPCGMEOMDLJC() {
-        return pCGMEOMDLJC_;
-      }
-      /**
-       * <code>uint64 PCGMEOMDLJC = 8;</code>
-       * @param value The pCGMEOMDLJC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPCGMEOMDLJC(long value) {
-        
-        pCGMEOMDLJC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 PCGMEOMDLJC = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPCGMEOMDLJC() {
-        
-        pCGMEOMDLJC_ = 0L;
         onChanged();
         return this;
       }
@@ -667,10 +659,10 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryInstableSprayBuffInfo.prot" +
-      "o\"^\n!SceneGalleryInstableSprayBuffInfo\022\017" +
-      "\n\007buff_id\030\002 \001(\r\022\023\n\013PMDBPOPIDNL\030\r \001(\004\022\023\n\013" +
-      "PCGMEOMDLJC\030\010 \001(\004B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "o\"b\n!SceneGalleryInstableSprayBuffInfo\022\025" +
+      "\n\rbuff_max_time\030\004 \001(\004\022\025\n\rbuff_end_time\030\t" +
+      " \001(\004\022\017\n\007buff_id\030\013 \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -681,7 +673,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     internal_static_SceneGalleryInstableSprayBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstableSprayBuffInfo_descriptor,
-        new java.lang.String[] { "BuffId", "PMDBPOPIDNL", "PCGMEOMDLJC", });
+        new java.lang.String[] { "BuffMaxTime", "BuffEndTime", "BuffId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

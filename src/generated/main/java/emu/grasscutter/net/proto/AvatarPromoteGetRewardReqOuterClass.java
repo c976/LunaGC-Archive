@@ -19,21 +19,28 @@ public final class AvatarPromoteGetRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 promote_level = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 promote_level = 9;</code>
      * @return The promoteLevel.
      */
     int getPromoteLevel();
 
     /**
-     * <code>uint64 avatar_guid = 13;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
    * <pre>
-   * 4.6.0
-   * CmdId: 287
+   * CmdId: 9106
    * </pre>
    *
    * Protobuf type {@code AvatarPromoteGetRewardReq}
@@ -80,12 +87,12 @@ public final class AvatarPromoteGetRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 72: {
 
               promoteLevel_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
               avatarGuid_ = input.readUInt64();
               break;
@@ -122,10 +129,14 @@ public final class AvatarPromoteGetRewardReqOuterClass {
               emu.grasscutter.net.proto.AvatarPromoteGetRewardReqOuterClass.AvatarPromoteGetRewardReq.class, emu.grasscutter.net.proto.AvatarPromoteGetRewardReqOuterClass.AvatarPromoteGetRewardReq.Builder.class);
     }
 
-    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 4;
+    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 9;
     private int promoteLevel_;
     /**
-     * <code>uint32 promote_level = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 promote_level = 9;</code>
      * @return The promoteLevel.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class AvatarPromoteGetRewardReqOuterClass {
       return promoteLevel_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 13;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 13;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -159,10 +174,10 @@ public final class AvatarPromoteGetRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (promoteLevel_ != 0) {
-        output.writeUInt32(4, promoteLevel_);
+        output.writeUInt32(9, promoteLevel_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(13, avatarGuid_);
+        output.writeUInt64(12, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
       size = 0;
       if (promoteLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, promoteLevel_);
+          .computeUInt32Size(9, promoteLevel_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, avatarGuid_);
+          .computeUInt64Size(12, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +328,7 @@ public final class AvatarPromoteGetRewardReqOuterClass {
     }
     /**
      * <pre>
-     * 4.6.0
-     * CmdId: 287
+     * CmdId: 9106
      * </pre>
      *
      * Protobuf type {@code AvatarPromoteGetRewardReq}
@@ -471,7 +485,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
 
       private int promoteLevel_ ;
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 promote_level = 9;</code>
        * @return The promoteLevel.
        */
       @java.lang.Override
@@ -479,7 +497,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
         return promoteLevel_;
       }
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 promote_level = 9;</code>
        * @param value The promoteLevel to set.
        * @return This builder for chaining.
        */
@@ -490,7 +512,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 promote_level = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPromoteLevel() {
@@ -502,7 +528,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 12;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -510,7 +540,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 12;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -521,7 +555,11 @@ public final class AvatarPromoteGetRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -599,7 +637,7 @@ public final class AvatarPromoteGetRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037AvatarPromoteGetRewardReq.proto\"G\n\031Ava" +
       "tarPromoteGetRewardReq\022\025\n\rpromote_level\030" +
-      "\004 \001(\r\022\023\n\013avatar_guid\030\r \001(\004B\033\n\031emu.grassc" +
+      "\t \001(\r\022\023\n\013avatar_guid\030\014 \001(\004B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

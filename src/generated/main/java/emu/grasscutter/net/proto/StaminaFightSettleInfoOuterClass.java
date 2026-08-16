@@ -19,28 +19,28 @@ public final class StaminaFightSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 1;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 cost_time = 4;</code>
+     * <code>uint32 cost_time = 2;</code>
      * @return The costTime.
      */
     int getCostTime();
+
+    /**
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
 
     /**
      * <code>uint32 difficulty = 6;</code>
      * @return The difficulty.
      */
     int getDifficulty();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * Protobuf type {@code StaminaFightSettleInfo}
@@ -87,14 +87,14 @@ public final class StaminaFightSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 16: {
 
               costTime_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             case 48: {
@@ -102,9 +102,9 @@ public final class StaminaFightSettleInfoOuterClass {
               difficulty_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
-              isNewRecord_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,37 +139,26 @@ public final class StaminaFightSettleInfoOuterClass {
               emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.class, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 1;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 9;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int COST_TIME_FIELD_NUMBER = 4;
+    public static final int COST_TIME_FIELD_NUMBER = 2;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 4;</code>
+     * <code>uint32 cost_time = 2;</code>
      * @return The costTime.
      */
     @java.lang.Override
     public int getCostTime() {
       return costTime_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     public static final int DIFFICULTY_FIELD_NUMBER = 6;
@@ -181,6 +170,17 @@ public final class StaminaFightSettleInfoOuterClass {
     @java.lang.Override
     public int getDifficulty() {
       return difficulty_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class StaminaFightSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
       if (costTime_ != 0) {
-        output.writeUInt32(4, costTime_);
+        output.writeUInt32(2, costTime_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(3, isNewRecord_);
       }
       if (difficulty_ != 0) {
         output.writeUInt32(6, difficulty_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class StaminaFightSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, costTime_);
+          .computeUInt32Size(2, costTime_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isNewRecord_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, difficulty_);
       }
-      if (isNewRecord_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeUInt32Size(12, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class StaminaFightSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo other = (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (getCostTime()
           != other.getCostTime()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class StaminaFightSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class StaminaFightSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
+        costTime_ = 0;
 
         isNewRecord_ = false;
 
-        costTime_ = 0;
-
         difficulty_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class StaminaFightSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo buildPartial() {
         emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo result = new emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo(this);
-        result.levelId_ = levelId_;
-        result.isNewRecord_ = isNewRecord_;
         result.costTime_ = costTime_;
+        result.isNewRecord_ = isNewRecord_;
         result.difficulty_ = difficulty_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class StaminaFightSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo other) {
         if (other == emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,71 +537,9 @@ public final class StaminaFightSettleInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 4;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -609,7 +547,7 @@ public final class StaminaFightSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 4;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -620,12 +558,43 @@ public final class StaminaFightSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 4;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
         
         costTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 3;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 3;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -657,6 +626,37 @@ public final class StaminaFightSettleInfoOuterClass {
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -728,9 +728,9 @@ public final class StaminaFightSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034StaminaFightSettleInfo.proto\"h\n\026Stamin" +
-      "aFightSettleInfo\022\020\n\010level_id\030\001 \001(\r\022\025\n\ris" +
-      "_new_record\030\t \001(\010\022\021\n\tcost_time\030\004 \001(\r\022\022\n\n" +
-      "difficulty\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
+      "aFightSettleInfo\022\021\n\tcost_time\030\002 \001(\r\022\025\n\ri" +
+      "s_new_record\030\003 \001(\010\022\022\n\ndifficulty\030\006 \001(\r\022\020" +
+      "\n\010level_id\030\014 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +742,7 @@ public final class StaminaFightSettleInfoOuterClass {
     internal_static_StaminaFightSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StaminaFightSettleInfo_descriptor,
-        new java.lang.String[] { "LevelId", "IsNewRecord", "CostTime", "Difficulty", });
+        new java.lang.String[] { "CostTime", "IsNewRecord", "Difficulty", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

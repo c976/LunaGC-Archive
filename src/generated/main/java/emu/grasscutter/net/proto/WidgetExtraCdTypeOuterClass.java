@@ -15,33 +15,29 @@ public final class WidgetExtraCdTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: FHGCBFMFGMA
-   * </pre>
-   *
    * Protobuf enum {@code WidgetExtraCdType}
    */
   public enum WidgetExtraCdType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>WIDGET_EXTRA_CD_TYPE_NONE = 0;</code>
+     * <code>ELALPFLEDHK_NONE = 0;</code>
      */
-    WIDGET_EXTRA_CD_TYPE_NONE(0),
+    ELALPFLEDHK_NONE(0),
     /**
-     * <code>WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED = 1;</code>
+     * <code>ELALPFLEDHK_E_SKILL_SHARED = 1;</code>
      */
-    WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED(1),
+    ELALPFLEDHK_E_SKILL_SHARED(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>WIDGET_EXTRA_CD_TYPE_NONE = 0;</code>
+     * <code>ELALPFLEDHK_NONE = 0;</code>
      */
-    public static final int WIDGET_EXTRA_CD_TYPE_NONE_VALUE = 0;
+    public static final int ELALPFLEDHK_NONE_VALUE = 0;
     /**
-     * <code>WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED = 1;</code>
+     * <code>ELALPFLEDHK_E_SKILL_SHARED = 1;</code>
      */
-    public static final int WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED_VALUE = 1;
+    public static final int ELALPFLEDHK_E_SKILL_SHARED_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +64,8 @@ public final class WidgetExtraCdTypeOuterClass {
      */
     public static WidgetExtraCdType forNumber(int value) {
       switch (value) {
-        case 0: return WIDGET_EXTRA_CD_TYPE_NONE;
-        case 1: return WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED;
+        case 0: return ELALPFLEDHK_NONE;
+        case 1: return ELALPFLEDHK_E_SKILL_SHARED;
         default: return null;
       }
     }
@@ -135,10 +131,10 @@ public final class WidgetExtraCdTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027WidgetExtraCdType.proto*[\n\021WidgetExtra" +
-      "CdType\022\035\n\031WIDGET_EXTRA_CD_TYPE_NONE\020\000\022\'\n" +
-      "#WIDGET_EXTRA_CD_TYPE_E_SKILL_SHARED\020\001B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027WidgetExtraCdType.proto*I\n\021WidgetExtra" +
+      "CdType\022\024\n\020ELALPFLEDHK_NONE\020\000\022\036\n\032ELALPFLE" +
+      "DHK_E_SKILL_SHARED\020\001B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,21 +19,28 @@ public final class TakeBackGivingItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 giving_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 giving_id = 12;</code>
      * @return The givingId.
      */
     int getGivingId();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 20307
-   * Obf: MCKLDOKBMBC
+   * CmdId: 22538
    * </pre>
    *
    * Protobuf type {@code TakeBackGivingItemRsp}
@@ -80,12 +87,12 @@ public final class TakeBackGivingItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
               givingId_ = input.readUInt32();
               break;
@@ -122,10 +129,14 @@ public final class TakeBackGivingItemRspOuterClass {
               emu.grasscutter.net.proto.TakeBackGivingItemRspOuterClass.TakeBackGivingItemRsp.class, emu.grasscutter.net.proto.TakeBackGivingItemRspOuterClass.TakeBackGivingItemRsp.Builder.class);
     }
 
-    public static final int GIVING_ID_FIELD_NUMBER = 14;
+    public static final int GIVING_ID_FIELD_NUMBER = 12;
     private int givingId_;
     /**
-     * <code>uint32 giving_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 giving_id = 12;</code>
      * @return The givingId.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class TakeBackGivingItemRspOuterClass {
       return givingId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +174,10 @@ public final class TakeBackGivingItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (givingId_ != 0) {
-        output.writeUInt32(14, givingId_);
+        output.writeUInt32(12, givingId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class TakeBackGivingItemRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (givingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, givingId_);
+          .computeUInt32Size(12, givingId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class TakeBackGivingItemRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20307
-     * Obf: MCKLDOKBMBC
+     * CmdId: 22538
      * </pre>
      *
      * Protobuf type {@code TakeBackGivingItemRsp}
@@ -470,7 +484,11 @@ public final class TakeBackGivingItemRspOuterClass {
 
       private int givingId_ ;
       /**
-       * <code>uint32 giving_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 12;</code>
        * @return The givingId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class TakeBackGivingItemRspOuterClass {
         return givingId_;
       }
       /**
-       * <code>uint32 giving_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 12;</code>
        * @param value The givingId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class TakeBackGivingItemRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 giving_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGivingId() {
@@ -501,7 +527,11 @@ public final class TakeBackGivingItemRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class TakeBackGivingItemRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class TakeBackGivingItemRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +635,8 @@ public final class TakeBackGivingItemRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033TakeBackGivingItemRsp.proto\";\n\025TakeBac" +
-      "kGivingItemRsp\022\021\n\tgiving_id\030\016 \001(\r\022\017\n\007ret" +
-      "code\030\t \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "kGivingItemRsp\022\021\n\tgiving_id\030\014 \001(\r\022\017\n\007ret" +
+      "code\030\005 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,20 +19,28 @@ public final class SetEquipLockStateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_locked = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_locked = 2;</code>
      * @return The isLocked.
      */
     boolean getIsLocked();
 
     /**
-     * <code>uint64 target_equip_guid = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 target_equip_guid = 9;</code>
      * @return The targetEquipGuid.
      */
     long getTargetEquipGuid();
   }
   /**
    * <pre>
-   * CmdId: 3763
+   * CmdId: 22037
    * </pre>
    *
    * Protobuf type {@code SetEquipLockStateReq}
@@ -79,14 +87,14 @@ public final class SetEquipLockStateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              targetEquipGuid_ = input.readUInt64();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               isLocked_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              targetEquipGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -121,10 +129,14 @@ public final class SetEquipLockStateReqOuterClass {
               emu.grasscutter.net.proto.SetEquipLockStateReqOuterClass.SetEquipLockStateReq.class, emu.grasscutter.net.proto.SetEquipLockStateReqOuterClass.SetEquipLockStateReq.Builder.class);
     }
 
-    public static final int IS_LOCKED_FIELD_NUMBER = 14;
+    public static final int IS_LOCKED_FIELD_NUMBER = 2;
     private boolean isLocked_;
     /**
-     * <code>bool is_locked = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_locked = 2;</code>
      * @return The isLocked.
      */
     @java.lang.Override
@@ -132,10 +144,14 @@ public final class SetEquipLockStateReqOuterClass {
       return isLocked_;
     }
 
-    public static final int TARGET_EQUIP_GUID_FIELD_NUMBER = 3;
+    public static final int TARGET_EQUIP_GUID_FIELD_NUMBER = 9;
     private long targetEquipGuid_;
     /**
-     * <code>uint64 target_equip_guid = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 target_equip_guid = 9;</code>
      * @return The targetEquipGuid.
      */
     @java.lang.Override
@@ -157,11 +173,11 @@ public final class SetEquipLockStateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetEquipGuid_ != 0L) {
-        output.writeUInt64(3, targetEquipGuid_);
-      }
       if (isLocked_ != false) {
-        output.writeBool(14, isLocked_);
+        output.writeBool(2, isLocked_);
+      }
+      if (targetEquipGuid_ != 0L) {
+        output.writeUInt64(9, targetEquipGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +188,13 @@ public final class SetEquipLockStateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetEquipGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, targetEquipGuid_);
-      }
       if (isLocked_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isLocked_);
+          .computeBoolSize(2, isLocked_);
+      }
+      if (targetEquipGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, targetEquipGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,7 +329,7 @@ public final class SetEquipLockStateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3763
+     * CmdId: 22037
      * </pre>
      *
      * Protobuf type {@code SetEquipLockStateReq}
@@ -470,7 +486,11 @@ public final class SetEquipLockStateReqOuterClass {
 
       private boolean isLocked_ ;
       /**
-       * <code>bool is_locked = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_locked = 2;</code>
        * @return The isLocked.
        */
       @java.lang.Override
@@ -478,7 +498,11 @@ public final class SetEquipLockStateReqOuterClass {
         return isLocked_;
       }
       /**
-       * <code>bool is_locked = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_locked = 2;</code>
        * @param value The isLocked to set.
        * @return This builder for chaining.
        */
@@ -489,7 +513,11 @@ public final class SetEquipLockStateReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_locked = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_locked = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLocked() {
@@ -501,7 +529,11 @@ public final class SetEquipLockStateReqOuterClass {
 
       private long targetEquipGuid_ ;
       /**
-       * <code>uint64 target_equip_guid = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 target_equip_guid = 9;</code>
        * @return The targetEquipGuid.
        */
       @java.lang.Override
@@ -509,7 +541,11 @@ public final class SetEquipLockStateReqOuterClass {
         return targetEquipGuid_;
       }
       /**
-       * <code>uint64 target_equip_guid = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 target_equip_guid = 9;</code>
        * @param value The targetEquipGuid to set.
        * @return This builder for chaining.
        */
@@ -520,7 +556,11 @@ public final class SetEquipLockStateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 target_equip_guid = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 target_equip_guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetEquipGuid() {
@@ -597,8 +637,8 @@ public final class SetEquipLockStateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032SetEquipLockStateReq.proto\"D\n\024SetEquip" +
-      "LockStateReq\022\021\n\tis_locked\030\016 \001(\010\022\031\n\021targe" +
-      "t_equip_guid\030\003 \001(\004B\033\n\031emu.grasscutter.ne" +
+      "LockStateReq\022\021\n\tis_locked\030\002 \001(\010\022\031\n\021targe" +
+      "t_equip_guid\030\t \001(\004B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

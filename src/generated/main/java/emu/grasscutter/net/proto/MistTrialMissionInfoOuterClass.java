@@ -19,22 +19,18 @@ public final class MistTrialMissionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 param = 8;</code>
+     * <code>uint32 GLMGHOKBFPN = 7;</code>
+     * @return The gLMGHOKBFPN.
+     */
+    int getGLMGHOKBFPN();
+
+    /**
+     * <code>uint32 param = 10;</code>
      * @return The param.
      */
     int getParam();
-
-    /**
-     * <code>uint32 watcher_list_id = 11;</code>
-     * @return The watcherListId.
-     */
-    int getWatcherListId();
   }
   /**
-   * <pre>
-   * Obf: BINDGAFFBEN
-   * </pre>
-   *
    * Protobuf type {@code MistTrialMissionInfo}
    */
   public static final class MistTrialMissionInfo extends
@@ -79,14 +75,14 @@ public final class MistTrialMissionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 56: {
 
-              param_ = input.readUInt32();
+              gLMGHOKBFPN_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
-              watcherListId_ = input.readUInt32();
+              param_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class MistTrialMissionInfoOuterClass {
               emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo.class, emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo.Builder.class);
     }
 
-    public static final int PARAM_FIELD_NUMBER = 8;
+    public static final int GLMGHOKBFPN_FIELD_NUMBER = 7;
+    private int gLMGHOKBFPN_;
+    /**
+     * <code>uint32 GLMGHOKBFPN = 7;</code>
+     * @return The gLMGHOKBFPN.
+     */
+    @java.lang.Override
+    public int getGLMGHOKBFPN() {
+      return gLMGHOKBFPN_;
+    }
+
+    public static final int PARAM_FIELD_NUMBER = 10;
     private int param_;
     /**
-     * <code>uint32 param = 8;</code>
+     * <code>uint32 param = 10;</code>
      * @return The param.
      */
     @java.lang.Override
     public int getParam() {
       return param_;
-    }
-
-    public static final int WATCHER_LIST_ID_FIELD_NUMBER = 11;
-    private int watcherListId_;
-    /**
-     * <code>uint32 watcher_list_id = 11;</code>
-     * @return The watcherListId.
-     */
-    @java.lang.Override
-    public int getWatcherListId() {
-      return watcherListId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class MistTrialMissionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (param_ != 0) {
-        output.writeUInt32(8, param_);
+      if (gLMGHOKBFPN_ != 0) {
+        output.writeUInt32(7, gLMGHOKBFPN_);
       }
-      if (watcherListId_ != 0) {
-        output.writeUInt32(11, watcherListId_);
+      if (param_ != 0) {
+        output.writeUInt32(10, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class MistTrialMissionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gLMGHOKBFPN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, gLMGHOKBFPN_);
+      }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, param_);
-      }
-      if (watcherListId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, watcherListId_);
+          .computeUInt32Size(10, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class MistTrialMissionInfoOuterClass {
       }
       emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo other = (emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo) obj;
 
+      if (getGLMGHOKBFPN()
+          != other.getGLMGHOKBFPN()) return false;
       if (getParam()
           != other.getParam()) return false;
-      if (getWatcherListId()
-          != other.getWatcherListId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class MistTrialMissionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GLMGHOKBFPN_FIELD_NUMBER;
+      hash = (53 * hash) + getGLMGHOKBFPN();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
-      hash = (37 * hash) + WATCHER_LIST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWatcherListId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class MistTrialMissionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BINDGAFFBEN
-     * </pre>
-     *
      * Protobuf type {@code MistTrialMissionInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class MistTrialMissionInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        param_ = 0;
+        gLMGHOKBFPN_ = 0;
 
-        watcherListId_ = 0;
+        param_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class MistTrialMissionInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo buildPartial() {
         emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo result = new emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo(this);
+        result.gLMGHOKBFPN_ = gLMGHOKBFPN_;
         result.param_ = param_;
-        result.watcherListId_ = watcherListId_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class MistTrialMissionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo other) {
         if (other == emu.grasscutter.net.proto.MistTrialMissionInfoOuterClass.MistTrialMissionInfo.getDefaultInstance()) return this;
+        if (other.getGLMGHOKBFPN() != 0) {
+          setGLMGHOKBFPN(other.getGLMGHOKBFPN());
+        }
         if (other.getParam() != 0) {
           setParam(other.getParam());
-        }
-        if (other.getWatcherListId() != 0) {
-          setWatcherListId(other.getWatcherListId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,9 +458,40 @@ public final class MistTrialMissionInfoOuterClass {
         return this;
       }
 
+      private int gLMGHOKBFPN_ ;
+      /**
+       * <code>uint32 GLMGHOKBFPN = 7;</code>
+       * @return The gLMGHOKBFPN.
+       */
+      @java.lang.Override
+      public int getGLMGHOKBFPN() {
+        return gLMGHOKBFPN_;
+      }
+      /**
+       * <code>uint32 GLMGHOKBFPN = 7;</code>
+       * @param value The gLMGHOKBFPN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGLMGHOKBFPN(int value) {
+        
+        gLMGHOKBFPN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GLMGHOKBFPN = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGLMGHOKBFPN() {
+        
+        gLMGHOKBFPN_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int param_ ;
       /**
-       * <code>uint32 param = 8;</code>
+       * <code>uint32 param = 10;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -476,7 +499,7 @@ public final class MistTrialMissionInfoOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 8;</code>
+       * <code>uint32 param = 10;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -487,43 +510,12 @@ public final class MistTrialMissionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 8;</code>
+       * <code>uint32 param = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
         
         param_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int watcherListId_ ;
-      /**
-       * <code>uint32 watcher_list_id = 11;</code>
-       * @return The watcherListId.
-       */
-      @java.lang.Override
-      public int getWatcherListId() {
-        return watcherListId_;
-      }
-      /**
-       * <code>uint32 watcher_list_id = 11;</code>
-       * @param value The watcherListId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWatcherListId(int value) {
-        
-        watcherListId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 watcher_list_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWatcherListId() {
-        
-        watcherListId_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +586,10 @@ public final class MistTrialMissionInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032MistTrialMissionInfo.proto\">\n\024MistTria" +
-      "lMissionInfo\022\r\n\005param\030\010 \001(\r\022\027\n\017watcher_l" +
-      "ist_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\032MistTrialMissionInfo.proto\":\n\024MistTria" +
+      "lMissionInfo\022\023\n\013GLMGHOKBFPN\030\007 \001(\r\022\r\n\005par" +
+      "am\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +600,7 @@ public final class MistTrialMissionInfoOuterClass {
     internal_static_MistTrialMissionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialMissionInfo_descriptor,
-        new java.lang.String[] { "Param", "WatcherListId", });
+        new java.lang.String[] { "GLMGHOKBFPN", "Param", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

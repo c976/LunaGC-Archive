@@ -19,16 +19,28 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
@@ -36,16 +48,28 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     int getSkillIdList(int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @return A list containing the skillLevelList.
      */
     java.util.List<java.lang.Integer> getSkillLevelListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @return The count of skillLevelList.
      */
     int getSkillLevelListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @param index The index of the element to return.
      * @return The skillLevelList at the given index.
@@ -53,6 +77,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     int getSkillLevelList(int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
@@ -194,6 +222,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     public static final int SKILL_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @return A list containing the skillIdList.
      */
@@ -203,6 +235,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return skillIdList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @return The count of skillIdList.
      */
@@ -210,6 +246,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return skillIdList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
@@ -222,6 +262,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     public static final int SKILL_LEVEL_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList skillLevelList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @return A list containing the skillLevelList.
      */
@@ -231,6 +275,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return skillLevelList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @return The count of skillLevelList.
      */
@@ -238,6 +286,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return skillLevelList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 skill_level_list = 3;</code>
      * @param index The index of the element to return.
      * @return The skillLevelList at the given index.
@@ -250,6 +302,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     public static final int UID_FIELD_NUMBER = 1;
     private int uid_;
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
@@ -659,6 +715,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @return A list containing the skillIdList.
        */
@@ -668,6 +728,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @return The count of skillIdList.
        */
@@ -675,6 +739,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return skillIdList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
@@ -683,6 +751,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
@@ -696,6 +768,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
@@ -707,6 +783,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
@@ -720,6 +800,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 skill_id_list = 2;</code>
        * @return This builder for chaining.
        */
@@ -738,6 +822,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @return A list containing the skillLevelList.
        */
@@ -747,6 +835,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
                  java.util.Collections.unmodifiableList(skillLevelList_) : skillLevelList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @return The count of skillLevelList.
        */
@@ -754,6 +846,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return skillLevelList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @param index The index of the element to return.
        * @return The skillLevelList at the given index.
@@ -762,6 +858,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return skillLevelList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The skillLevelList to set.
@@ -775,6 +875,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @param value The skillLevelList to add.
        * @return This builder for chaining.
@@ -786,6 +890,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @param values The skillLevelList to add.
        * @return This builder for chaining.
@@ -799,6 +907,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 skill_level_list = 3;</code>
        * @return This builder for chaining.
        */
@@ -811,6 +923,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
 
       private int uid_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 uid = 1;</code>
        * @return The uid.
        */
@@ -819,6 +935,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return uid_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 uid = 1;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
@@ -830,6 +950,10 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint32 uid = 1;</code>
        * @return This builder for chaining.
        */

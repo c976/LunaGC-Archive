@@ -19,28 +19,44 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 difficulty = 13;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>uint32 level_id = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 cost_time = 9;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 difficulty = 7;</code>
+     * @return The difficulty.
      */
-    int getCostTime();
+    int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 2;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    int getNMGJKKDMGPK();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 5;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code StaminaFightDungeonSettleInfo}
@@ -87,24 +103,24 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
-              costTime_ = input.readUInt32();
+              nMGJKKDMGPK_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 24: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 104: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               isNewRecord_ = input.readBool();
+              break;
+            }
+            case 56: {
+
+              difficulty_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,32 +155,14 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo.class, emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int DIFFICULTY_FIELD_NUMBER = 13;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 13;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,15 +170,49 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 9;
-    private int costTime_;
+    public static final int DIFFICULTY_FIELD_NUMBER = 7;
+    private int difficulty_;
     /**
-     * <code>uint32 cost_time = 9;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 difficulty = 7;</code>
+     * @return The difficulty.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 2;
+    private int nMGJKKDMGPK_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 2;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    @java.lang.Override
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 5;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +229,17 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (costTime_ != 0) {
-        output.writeUInt32(9, costTime_);
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(2, nMGJKKDMGPK_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(10, levelId_);
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(13, difficulty_);
+        output.writeUInt32(3, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(15, isNewRecord_);
+        output.writeBool(5, isNewRecord_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(7, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +250,21 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (costTime_ != 0) {
+      if (nMGJKKDMGPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, costTime_);
+          .computeUInt32Size(2, nMGJKKDMGPK_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelId_);
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, difficulty_);
+          .computeUInt32Size(3, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isNewRecord_);
+          .computeBoolSize(5, isNewRecord_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +281,14 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo other = (emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +300,15 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +442,13 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
+        levelId_ = 0;
 
         difficulty_ = 0;
 
-        levelId_ = 0;
+        nMGJKKDMGPK_ = 0;
 
-        costTime_ = 0;
+        isNewRecord_ = false;
 
         return this;
       }
@@ -444,10 +476,10 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo result = new emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
-        result.difficulty_ = difficulty_;
         result.levelId_ = levelId_;
-        result.costTime_ = costTime_;
+        result.difficulty_ = difficulty_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -496,17 +528,17 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.StaminaFightDungeonSettleInfoOuterClass.StaminaFightDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,71 +569,13 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 13;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 13;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -609,7 +583,11 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -620,7 +598,11 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -630,33 +612,131 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int costTime_ ;
+      private int difficulty_ ;
       /**
-       * <code>uint32 cost_time = 9;</code>
-       * @return The costTime.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty = 7;</code>
+       * @return The difficulty.
        */
       @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
+      public int getDifficulty() {
+        return difficulty_;
       }
       /**
-       * <code>uint32 cost_time = 9;</code>
-       * @param value The costTime to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty = 7;</code>
+       * @param value The difficulty to set.
        * @return This builder for chaining.
        */
-      public Builder setCostTime(int value) {
+      public Builder setDifficulty(int value) {
         
-        costTime_ = value;
+        difficulty_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cost_time = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 difficulty = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCostTime() {
+      public Builder clearDifficulty() {
         
-        costTime_ = 0;
+        difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
+        
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 5;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 5;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -727,11 +807,11 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#StaminaFightDungeonSettleInfo.proto\"o\n" +
-      "\035StaminaFightDungeonSettleInfo\022\025\n\ris_new" +
-      "_record\030\017 \001(\010\022\022\n\ndifficulty\030\r \001(\r\022\020\n\010lev" +
-      "el_id\030\n \001(\r\022\021\n\tcost_time\030\t \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n#StaminaFightDungeonSettleInfo.proto\"q\n" +
+      "\035StaminaFightDungeonSettleInfo\022\020\n\010level_" +
+      "id\030\003 \001(\r\022\022\n\ndifficulty\030\007 \001(\r\022\023\n\013NMGJKKDM" +
+      "GPK\030\002 \001(\r\022\025\n\ris_new_record\030\005 \001(\010B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +822,7 @@ public final class StaminaFightDungeonSettleInfoOuterClass {
     internal_static_StaminaFightDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StaminaFightDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "Difficulty", "LevelId", "CostTime", });
+        new java.lang.String[] { "LevelId", "Difficulty", "NMGJKKDMGPK", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

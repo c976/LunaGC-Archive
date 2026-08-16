@@ -19,23 +19,19 @@ public final class ShopMcoinProductOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string price_tier = 2;</code>
-     * @return The priceTier.
-     */
-    java.lang.String getPriceTier();
-    /**
-     * <code>string price_tier = 2;</code>
-     * @return The bytes for priceTier.
-     */
-    com.google.protobuf.ByteString
-        getPriceTierBytes();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string product_id = 1;</code>
      * @return The productId.
      */
     java.lang.String getProductId();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string product_id = 1;</code>
      * @return The bytes for productId.
      */
@@ -43,34 +39,74 @@ public final class ShopMcoinProductOuterClass {
         getProductIdBytes();
 
     /**
-     * <code>uint32 mcoin_non_first = 4;</code>
-     * @return The mcoinNonFirst.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
+     * @return The priceTier.
      */
-    int getMcoinNonFirst();
+    java.lang.String getPriceTier();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
+     * @return The bytes for priceTier.
+     */
+    com.google.protobuf.ByteString
+        getPriceTierBytes();
 
     /**
-     * <code>bool is_audit = 7;</code>
-     * @return The isAudit.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 mcoin_first = 5;</code>
+     * @return The mcoinFirst.
      */
-    boolean getIsAudit();
+    int getMcoinFirst();
 
     /**
-     * <code>uint32 bought_num = 6;</code>
-     * @return The boughtNum.
-     */
-    int getBoughtNum();
-
-    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>uint32 mcoin_base = 3;</code>
      * @return The mcoinBase.
      */
     int getMcoinBase();
 
     /**
-     * <code>uint32 mcoin_first = 5;</code>
-     * @return The mcoinFirst.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_audit = 7;</code>
+     * @return The isAudit.
      */
-    int getMcoinFirst();
+    boolean getIsAudit();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 60
+     * </pre>
+     *
+     * <code>uint32 bought_num = 6;</code>
+     * @return The boughtNum.
+     */
+    int getBoughtNum();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 mcoin_non_first = 4;</code>
+     * @return The mcoinNonFirst.
+     */
+    int getMcoinNonFirst();
   }
   /**
    * Protobuf type {@code ShopMcoinProduct}
@@ -85,8 +121,8 @@ public final class ShopMcoinProductOuterClass {
       super(builder);
     }
     private ShopMcoinProduct() {
-      priceTier_ = "";
       productId_ = "";
+      priceTier_ = "";
     }
 
     @java.lang.Override
@@ -188,47 +224,13 @@ public final class ShopMcoinProductOuterClass {
               emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.class, emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder.class);
     }
 
-    public static final int PRICE_TIER_FIELD_NUMBER = 2;
-    private volatile java.lang.Object priceTier_;
-    /**
-     * <code>string price_tier = 2;</code>
-     * @return The priceTier.
-     */
-    @java.lang.Override
-    public java.lang.String getPriceTier() {
-      java.lang.Object ref = priceTier_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        priceTier_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string price_tier = 2;</code>
-     * @return The bytes for priceTier.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPriceTierBytes() {
-      java.lang.Object ref = priceTier_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        priceTier_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int PRODUCT_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object productId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string product_id = 1;</code>
      * @return The productId.
      */
@@ -246,6 +248,10 @@ public final class ShopMcoinProductOuterClass {
       }
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string product_id = 1;</code>
      * @return The bytes for productId.
      */
@@ -264,20 +270,89 @@ public final class ShopMcoinProductOuterClass {
       }
     }
 
-    public static final int MCOIN_NON_FIRST_FIELD_NUMBER = 4;
-    private int mcoinNonFirst_;
+    public static final int PRICE_TIER_FIELD_NUMBER = 2;
+    private volatile java.lang.Object priceTier_;
     /**
-     * <code>uint32 mcoin_non_first = 4;</code>
-     * @return The mcoinNonFirst.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
+     * @return The priceTier.
      */
     @java.lang.Override
-    public int getMcoinNonFirst() {
-      return mcoinNonFirst_;
+    public java.lang.String getPriceTier() {
+      java.lang.Object ref = priceTier_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        priceTier_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string price_tier = 2;</code>
+     * @return The bytes for priceTier.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPriceTierBytes() {
+      java.lang.Object ref = priceTier_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        priceTier_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MCOIN_FIRST_FIELD_NUMBER = 5;
+    private int mcoinFirst_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 mcoin_first = 5;</code>
+     * @return The mcoinFirst.
+     */
+    @java.lang.Override
+    public int getMcoinFirst() {
+      return mcoinFirst_;
+    }
+
+    public static final int MCOIN_BASE_FIELD_NUMBER = 3;
+    private int mcoinBase_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 mcoin_base = 3;</code>
+     * @return The mcoinBase.
+     */
+    @java.lang.Override
+    public int getMcoinBase() {
+      return mcoinBase_;
     }
 
     public static final int IS_AUDIT_FIELD_NUMBER = 7;
     private boolean isAudit_;
     /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
      * <code>bool is_audit = 7;</code>
      * @return The isAudit.
      */
@@ -289,6 +364,10 @@ public final class ShopMcoinProductOuterClass {
     public static final int BOUGHT_NUM_FIELD_NUMBER = 6;
     private int boughtNum_;
     /**
+     * <pre>
+     *6.3.0 // offset: 60
+     * </pre>
+     *
      * <code>uint32 bought_num = 6;</code>
      * @return The boughtNum.
      */
@@ -297,26 +376,19 @@ public final class ShopMcoinProductOuterClass {
       return boughtNum_;
     }
 
-    public static final int MCOIN_BASE_FIELD_NUMBER = 3;
-    private int mcoinBase_;
+    public static final int MCOIN_NON_FIRST_FIELD_NUMBER = 4;
+    private int mcoinNonFirst_;
     /**
-     * <code>uint32 mcoin_base = 3;</code>
-     * @return The mcoinBase.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 mcoin_non_first = 4;</code>
+     * @return The mcoinNonFirst.
      */
     @java.lang.Override
-    public int getMcoinBase() {
-      return mcoinBase_;
-    }
-
-    public static final int MCOIN_FIRST_FIELD_NUMBER = 5;
-    private int mcoinFirst_;
-    /**
-     * <code>uint32 mcoin_first = 5;</code>
-     * @return The mcoinFirst.
-     */
-    @java.lang.Override
-    public int getMcoinFirst() {
-      return mcoinFirst_;
+    public int getMcoinNonFirst() {
+      return mcoinNonFirst_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -404,20 +476,20 @@ public final class ShopMcoinProductOuterClass {
       }
       emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct other = (emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct) obj;
 
-      if (!getPriceTier()
-          .equals(other.getPriceTier())) return false;
       if (!getProductId()
           .equals(other.getProductId())) return false;
-      if (getMcoinNonFirst()
-          != other.getMcoinNonFirst()) return false;
+      if (!getPriceTier()
+          .equals(other.getPriceTier())) return false;
+      if (getMcoinFirst()
+          != other.getMcoinFirst()) return false;
+      if (getMcoinBase()
+          != other.getMcoinBase()) return false;
       if (getIsAudit()
           != other.getIsAudit()) return false;
       if (getBoughtNum()
           != other.getBoughtNum()) return false;
-      if (getMcoinBase()
-          != other.getMcoinBase()) return false;
-      if (getMcoinFirst()
-          != other.getMcoinFirst()) return false;
+      if (getMcoinNonFirst()
+          != other.getMcoinNonFirst()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -429,21 +501,21 @@ public final class ShopMcoinProductOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PRICE_TIER_FIELD_NUMBER;
-      hash = (53 * hash) + getPriceTier().hashCode();
       hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProductId().hashCode();
-      hash = (37 * hash) + MCOIN_NON_FIRST_FIELD_NUMBER;
-      hash = (53 * hash) + getMcoinNonFirst();
+      hash = (37 * hash) + PRICE_TIER_FIELD_NUMBER;
+      hash = (53 * hash) + getPriceTier().hashCode();
+      hash = (37 * hash) + MCOIN_FIRST_FIELD_NUMBER;
+      hash = (53 * hash) + getMcoinFirst();
+      hash = (37 * hash) + MCOIN_BASE_FIELD_NUMBER;
+      hash = (53 * hash) + getMcoinBase();
       hash = (37 * hash) + IS_AUDIT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAudit());
       hash = (37 * hash) + BOUGHT_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getBoughtNum();
-      hash = (37 * hash) + MCOIN_BASE_FIELD_NUMBER;
-      hash = (53 * hash) + getMcoinBase();
-      hash = (37 * hash) + MCOIN_FIRST_FIELD_NUMBER;
-      hash = (53 * hash) + getMcoinFirst();
+      hash = (37 * hash) + MCOIN_NON_FIRST_FIELD_NUMBER;
+      hash = (53 * hash) + getMcoinNonFirst();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -577,19 +649,19 @@ public final class ShopMcoinProductOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        priceTier_ = "";
-
         productId_ = "";
 
-        mcoinNonFirst_ = 0;
+        priceTier_ = "";
+
+        mcoinFirst_ = 0;
+
+        mcoinBase_ = 0;
 
         isAudit_ = false;
 
         boughtNum_ = 0;
 
-        mcoinBase_ = 0;
-
-        mcoinFirst_ = 0;
+        mcoinNonFirst_ = 0;
 
         return this;
       }
@@ -617,13 +689,13 @@ public final class ShopMcoinProductOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct buildPartial() {
         emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct result = new emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct(this);
-        result.priceTier_ = priceTier_;
         result.productId_ = productId_;
-        result.mcoinNonFirst_ = mcoinNonFirst_;
+        result.priceTier_ = priceTier_;
+        result.mcoinFirst_ = mcoinFirst_;
+        result.mcoinBase_ = mcoinBase_;
         result.isAudit_ = isAudit_;
         result.boughtNum_ = boughtNum_;
-        result.mcoinBase_ = mcoinBase_;
-        result.mcoinFirst_ = mcoinFirst_;
+        result.mcoinNonFirst_ = mcoinNonFirst_;
         onBuilt();
         return result;
       }
@@ -672,16 +744,19 @@ public final class ShopMcoinProductOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct other) {
         if (other == emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.getDefaultInstance()) return this;
-        if (!other.getPriceTier().isEmpty()) {
-          priceTier_ = other.priceTier_;
-          onChanged();
-        }
         if (!other.getProductId().isEmpty()) {
           productId_ = other.productId_;
           onChanged();
         }
-        if (other.getMcoinNonFirst() != 0) {
-          setMcoinNonFirst(other.getMcoinNonFirst());
+        if (!other.getPriceTier().isEmpty()) {
+          priceTier_ = other.priceTier_;
+          onChanged();
+        }
+        if (other.getMcoinFirst() != 0) {
+          setMcoinFirst(other.getMcoinFirst());
+        }
+        if (other.getMcoinBase() != 0) {
+          setMcoinBase(other.getMcoinBase());
         }
         if (other.getIsAudit() != false) {
           setIsAudit(other.getIsAudit());
@@ -689,11 +764,8 @@ public final class ShopMcoinProductOuterClass {
         if (other.getBoughtNum() != 0) {
           setBoughtNum(other.getBoughtNum());
         }
-        if (other.getMcoinBase() != 0) {
-          setMcoinBase(other.getMcoinBase());
-        }
-        if (other.getMcoinFirst() != 0) {
-          setMcoinFirst(other.getMcoinFirst());
+        if (other.getMcoinNonFirst() != 0) {
+          setMcoinNonFirst(other.getMcoinNonFirst());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -724,84 +796,12 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
 
-      private java.lang.Object priceTier_ = "";
-      /**
-       * <code>string price_tier = 2;</code>
-       * @return The priceTier.
-       */
-      public java.lang.String getPriceTier() {
-        java.lang.Object ref = priceTier_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          priceTier_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string price_tier = 2;</code>
-       * @return The bytes for priceTier.
-       */
-      public com.google.protobuf.ByteString
-          getPriceTierBytes() {
-        java.lang.Object ref = priceTier_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          priceTier_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string price_tier = 2;</code>
-       * @param value The priceTier to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPriceTier(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        priceTier_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string price_tier = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPriceTier() {
-        
-        priceTier_ = getDefaultInstance().getPriceTier();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string price_tier = 2;</code>
-       * @param value The bytes for priceTier to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPriceTierBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        priceTier_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object productId_ = "";
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string product_id = 1;</code>
        * @return The productId.
        */
@@ -818,6 +818,10 @@ public final class ShopMcoinProductOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string product_id = 1;</code>
        * @return The bytes for productId.
        */
@@ -835,6 +839,10 @@ public final class ShopMcoinProductOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string product_id = 1;</code>
        * @param value The productId to set.
        * @return This builder for chaining.
@@ -850,6 +858,10 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string product_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -860,6 +872,10 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string product_id = 1;</code>
        * @param value The bytes for productId to set.
        * @return This builder for chaining.
@@ -876,39 +892,194 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
 
-      private int mcoinNonFirst_ ;
+      private java.lang.Object priceTier_ = "";
       /**
-       * <code>uint32 mcoin_non_first = 4;</code>
-       * @return The mcoinNonFirst.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
+       * @return The priceTier.
        */
-      @java.lang.Override
-      public int getMcoinNonFirst() {
-        return mcoinNonFirst_;
+      public java.lang.String getPriceTier() {
+        java.lang.Object ref = priceTier_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          priceTier_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 mcoin_non_first = 4;</code>
-       * @param value The mcoinNonFirst to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
+       * @return The bytes for priceTier.
+       */
+      public com.google.protobuf.ByteString
+          getPriceTierBytes() {
+        java.lang.Object ref = priceTier_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          priceTier_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
+       * @param value The priceTier to set.
        * @return This builder for chaining.
        */
-      public Builder setMcoinNonFirst(int value) {
-        
-        mcoinNonFirst_ = value;
+      public Builder setPriceTier(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        priceTier_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mcoin_non_first = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMcoinNonFirst() {
+      public Builder clearPriceTier() {
         
-        mcoinNonFirst_ = 0;
+        priceTier_ = getDefaultInstance().getPriceTier();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string price_tier = 2;</code>
+       * @param value The bytes for priceTier to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPriceTierBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        priceTier_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int mcoinFirst_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 mcoin_first = 5;</code>
+       * @return The mcoinFirst.
+       */
+      @java.lang.Override
+      public int getMcoinFirst() {
+        return mcoinFirst_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 mcoin_first = 5;</code>
+       * @param value The mcoinFirst to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMcoinFirst(int value) {
+        
+        mcoinFirst_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 mcoin_first = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMcoinFirst() {
+        
+        mcoinFirst_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mcoinBase_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 mcoin_base = 3;</code>
+       * @return The mcoinBase.
+       */
+      @java.lang.Override
+      public int getMcoinBase() {
+        return mcoinBase_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 mcoin_base = 3;</code>
+       * @param value The mcoinBase to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMcoinBase(int value) {
+        
+        mcoinBase_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 mcoin_base = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMcoinBase() {
+        
+        mcoinBase_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isAudit_ ;
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>bool is_audit = 7;</code>
        * @return The isAudit.
        */
@@ -917,6 +1088,10 @@ public final class ShopMcoinProductOuterClass {
         return isAudit_;
       }
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>bool is_audit = 7;</code>
        * @param value The isAudit to set.
        * @return This builder for chaining.
@@ -928,6 +1103,10 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>bool is_audit = 7;</code>
        * @return This builder for chaining.
        */
@@ -940,6 +1119,10 @@ public final class ShopMcoinProductOuterClass {
 
       private int boughtNum_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
        * <code>uint32 bought_num = 6;</code>
        * @return The boughtNum.
        */
@@ -948,6 +1131,10 @@ public final class ShopMcoinProductOuterClass {
         return boughtNum_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
        * <code>uint32 bought_num = 6;</code>
        * @param value The boughtNum to set.
        * @return This builder for chaining.
@@ -959,6 +1146,10 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
        * <code>uint32 bought_num = 6;</code>
        * @return This builder for chaining.
        */
@@ -969,64 +1160,45 @@ public final class ShopMcoinProductOuterClass {
         return this;
       }
 
-      private int mcoinBase_ ;
+      private int mcoinNonFirst_ ;
       /**
-       * <code>uint32 mcoin_base = 3;</code>
-       * @return The mcoinBase.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 mcoin_non_first = 4;</code>
+       * @return The mcoinNonFirst.
        */
       @java.lang.Override
-      public int getMcoinBase() {
-        return mcoinBase_;
+      public int getMcoinNonFirst() {
+        return mcoinNonFirst_;
       }
       /**
-       * <code>uint32 mcoin_base = 3;</code>
-       * @param value The mcoinBase to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 mcoin_non_first = 4;</code>
+       * @param value The mcoinNonFirst to set.
        * @return This builder for chaining.
        */
-      public Builder setMcoinBase(int value) {
+      public Builder setMcoinNonFirst(int value) {
         
-        mcoinBase_ = value;
+        mcoinNonFirst_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mcoin_base = 3;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 mcoin_non_first = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMcoinBase() {
+      public Builder clearMcoinNonFirst() {
         
-        mcoinBase_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mcoinFirst_ ;
-      /**
-       * <code>uint32 mcoin_first = 5;</code>
-       * @return The mcoinFirst.
-       */
-      @java.lang.Override
-      public int getMcoinFirst() {
-        return mcoinFirst_;
-      }
-      /**
-       * <code>uint32 mcoin_first = 5;</code>
-       * @param value The mcoinFirst to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMcoinFirst(int value) {
-        
-        mcoinFirst_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mcoin_first = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMcoinFirst() {
-        
-        mcoinFirst_ = 0;
+        mcoinNonFirst_ = 0;
         onChanged();
         return this;
       }
@@ -1098,10 +1270,10 @@ public final class ShopMcoinProductOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ShopMcoinProduct.proto\"\242\001\n\020ShopMcoinPr" +
-      "oduct\022\022\n\nprice_tier\030\002 \001(\t\022\022\n\nproduct_id\030" +
-      "\001 \001(\t\022\027\n\017mcoin_non_first\030\004 \001(\r\022\020\n\010is_aud" +
-      "it\030\007 \001(\010\022\022\n\nbought_num\030\006 \001(\r\022\022\n\nmcoin_ba" +
-      "se\030\003 \001(\r\022\023\n\013mcoin_first\030\005 \001(\rB\033\n\031emu.gra" +
+      "oduct\022\022\n\nproduct_id\030\001 \001(\t\022\022\n\nprice_tier\030" +
+      "\002 \001(\t\022\023\n\013mcoin_first\030\005 \001(\r\022\022\n\nmcoin_base" +
+      "\030\003 \001(\r\022\020\n\010is_audit\030\007 \001(\010\022\022\n\nbought_num\030\006" +
+      " \001(\r\022\027\n\017mcoin_non_first\030\004 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1113,7 +1285,7 @@ public final class ShopMcoinProductOuterClass {
     internal_static_ShopMcoinProduct_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShopMcoinProduct_descriptor,
-        new java.lang.String[] { "PriceTier", "ProductId", "McoinNonFirst", "IsAudit", "BoughtNum", "McoinBase", "McoinFirst", });
+        new java.lang.String[] { "ProductId", "PriceTier", "McoinFirst", "McoinBase", "IsAudit", "BoughtNum", "McoinNonFirst", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

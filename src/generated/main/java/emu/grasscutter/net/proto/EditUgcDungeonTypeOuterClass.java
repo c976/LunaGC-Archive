@@ -20,32 +20,32 @@ public final class EditUgcDungeonTypeOuterClass {
   public enum EditUgcDungeonType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_EDIT = 0;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_EDIT = 0;</code>
      */
-    EDIT_UGC_DUNGEON_TYPE_EDIT(0),
+    IEJMJDPEBKD_EDIT_UGC_DUNGEON_EDIT(0),
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_AUDIT = 1;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_AUDIT = 1;</code>
      */
-    EDIT_UGC_DUNGEON_TYPE_AUDIT(1),
+    IEJMJDPEBKD_EDIT_UGC_DUNGEON_AUDIT(1),
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_PUBLISHED = 2;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_PUBLISHED = 2;</code>
      */
-    EDIT_UGC_DUNGEON_TYPE_PUBLISHED(2),
+    IEJMJDPEBKD_EDIT_UGC_DUNGEON_PUBLISHED(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_EDIT = 0;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_EDIT = 0;</code>
      */
-    public static final int EDIT_UGC_DUNGEON_TYPE_EDIT_VALUE = 0;
+    public static final int IEJMJDPEBKD_EDIT_UGC_DUNGEON_EDIT_VALUE = 0;
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_AUDIT = 1;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_AUDIT = 1;</code>
      */
-    public static final int EDIT_UGC_DUNGEON_TYPE_AUDIT_VALUE = 1;
+    public static final int IEJMJDPEBKD_EDIT_UGC_DUNGEON_AUDIT_VALUE = 1;
     /**
-     * <code>EDIT_UGC_DUNGEON_TYPE_PUBLISHED = 2;</code>
+     * <code>IEJMJDPEBKD_EDIT_UGC_DUNGEON_PUBLISHED = 2;</code>
      */
-    public static final int EDIT_UGC_DUNGEON_TYPE_PUBLISHED_VALUE = 2;
+    public static final int IEJMJDPEBKD_EDIT_UGC_DUNGEON_PUBLISHED_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class EditUgcDungeonTypeOuterClass {
      */
     public static EditUgcDungeonType forNumber(int value) {
       switch (value) {
-        case 0: return EDIT_UGC_DUNGEON_TYPE_EDIT;
-        case 1: return EDIT_UGC_DUNGEON_TYPE_AUDIT;
-        case 2: return EDIT_UGC_DUNGEON_TYPE_PUBLISHED;
+        case 0: return IEJMJDPEBKD_EDIT_UGC_DUNGEON_EDIT;
+        case 1: return IEJMJDPEBKD_EDIT_UGC_DUNGEON_AUDIT;
+        case 2: return IEJMJDPEBKD_EDIT_UGC_DUNGEON_PUBLISHED;
         default: return null;
       }
     }
@@ -140,11 +140,12 @@ public final class EditUgcDungeonTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030EditUgcDungeonType.proto*z\n\022EditUgcDun" +
-      "geonType\022\036\n\032EDIT_UGC_DUNGEON_TYPE_EDIT\020\000" +
-      "\022\037\n\033EDIT_UGC_DUNGEON_TYPE_AUDIT\020\001\022#\n\037EDI" +
-      "T_UGC_DUNGEON_TYPE_PUBLISHED\020\002B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\030EditUgcDungeonType.proto*\217\001\n\022EditUgcDu" +
+      "ngeonType\022%\n!IEJMJDPEBKD_EDIT_UGC_DUNGEO" +
+      "N_EDIT\020\000\022&\n\"IEJMJDPEBKD_EDIT_UGC_DUNGEON" +
+      "_AUDIT\020\001\022*\n&IEJMJDPEBKD_EDIT_UGC_DUNGEON" +
+      "_PUBLISHED\020\002B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

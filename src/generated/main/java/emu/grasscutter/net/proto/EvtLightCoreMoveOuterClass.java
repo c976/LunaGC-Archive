@@ -19,49 +19,73 @@ public final class EvtLightCoreMoveOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float speed = 6;</code>
-     * @return The speed.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     * @return Whether the targetPos field is set.
      */
-    float getSpeed();
+    boolean hasTargetPos();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     * @return The targetPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
 
     /**
-     * <code>float CFHOLDHHKDG = 2;</code>
-     * @return The cFHOLDHHKDG.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float CKBIIAABJBM = 10;</code>
+     * @return The cKBIIAABJBM.
      */
-    float getCFHOLDHHKDG();
+    float getCKBIIAABJBM();
 
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float EFIGKFNJHDO = 9;</code>
+     * @return The eFIGKFNJHDO.
+     */
+    float getEFIGKFNJHDO();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 entity_id = 7;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>.Vector target_pos = 1;</code>
-     * @return Whether the targetPos field is set.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float speed = 5;</code>
+     * @return The speed.
      */
-    boolean hasTargetPos();
-    /**
-     * <code>.Vector target_pos = 1;</code>
-     * @return The targetPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
-    /**
-     * <code>.Vector target_pos = 1;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
-
-    /**
-     * <code>float IANDFNHEJNH = 12;</code>
-     * @return The iANDFNHEJNH.
-     */
-    float getIANDFNHEJNH();
+    float getSpeed();
   }
   /**
-   * <pre>
-   * Obf: FPDBCDBPIHI
-   * </pre>
-   *
    * Protobuf type {@code EvtLightCoreMove}
    */
   public static final class EvtLightCoreMove extends
@@ -106,7 +130,27 @@ public final class EvtLightCoreMoveOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 45: {
+
+              speed_ = input.readFloat();
+              break;
+            }
+            case 56: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 77: {
+
+              eFIGKFNJHDO_ = input.readFloat();
+              break;
+            }
+            case 85: {
+
+              cKBIIAABJBM_ = input.readFloat();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (targetPos_ != null) {
                 subBuilder = targetPos_.toBuilder();
@@ -117,26 +161,6 @@ public final class EvtLightCoreMoveOuterClass {
                 targetPos_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 21: {
-
-              cFHOLDHHKDG_ = input.readFloat();
-              break;
-            }
-            case 53: {
-
-              speed_ = input.readFloat();
-              break;
-            }
-            case 56: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 101: {
-
-              iANDFNHEJNH_ = input.readFloat();
               break;
             }
             default: {
@@ -171,31 +195,81 @@ public final class EvtLightCoreMoveOuterClass {
               emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.class, emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.Builder.class);
     }
 
-    public static final int SPEED_FIELD_NUMBER = 6;
-    private float speed_;
+    public static final int TARGET_POS_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
     /**
-     * <code>float speed = 6;</code>
-     * @return The speed.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     * @return Whether the targetPos field is set.
      */
     @java.lang.Override
-    public float getSpeed() {
-      return speed_;
+    public boolean hasTargetPos() {
+      return targetPos_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     * @return The targetPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
+      return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
+      return getTargetPos();
     }
 
-    public static final int CFHOLDHHKDG_FIELD_NUMBER = 2;
-    private float cFHOLDHHKDG_;
+    public static final int CKBIIAABJBM_FIELD_NUMBER = 10;
+    private float cKBIIAABJBM_;
     /**
-     * <code>float CFHOLDHHKDG = 2;</code>
-     * @return The cFHOLDHHKDG.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float CKBIIAABJBM = 10;</code>
+     * @return The cKBIIAABJBM.
      */
     @java.lang.Override
-    public float getCFHOLDHHKDG() {
-      return cFHOLDHHKDG_;
+    public float getCKBIIAABJBM() {
+      return cKBIIAABJBM_;
+    }
+
+    public static final int EFIGKFNJHDO_FIELD_NUMBER = 9;
+    private float eFIGKFNJHDO_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float EFIGKFNJHDO = 9;</code>
+     * @return The eFIGKFNJHDO.
+     */
+    @java.lang.Override
+    public float getEFIGKFNJHDO() {
+      return eFIGKFNJHDO_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 7;
     private int entityId_;
     /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 entity_id = 7;</code>
      * @return The entityId.
      */
@@ -204,41 +278,19 @@ public final class EvtLightCoreMoveOuterClass {
       return entityId_;
     }
 
-    public static final int TARGET_POS_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
+    public static final int SPEED_FIELD_NUMBER = 5;
+    private float speed_;
     /**
-     * <code>.Vector target_pos = 1;</code>
-     * @return Whether the targetPos field is set.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float speed = 5;</code>
+     * @return The speed.
      */
     @java.lang.Override
-    public boolean hasTargetPos() {
-      return targetPos_ != null;
-    }
-    /**
-     * <code>.Vector target_pos = 1;</code>
-     * @return The targetPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
-      return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
-    }
-    /**
-     * <code>.Vector target_pos = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
-      return getTargetPos();
-    }
-
-    public static final int IANDFNHEJNH_FIELD_NUMBER = 12;
-    private float iANDFNHEJNH_;
-    /**
-     * <code>float IANDFNHEJNH = 12;</code>
-     * @return The iANDFNHEJNH.
-     */
-    @java.lang.Override
-    public float getIANDFNHEJNH() {
-      return iANDFNHEJNH_;
+    public float getSpeed() {
+      return speed_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -255,20 +307,20 @@ public final class EvtLightCoreMoveOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetPos_ != null) {
-        output.writeMessage(1, getTargetPos());
-      }
-      if (cFHOLDHHKDG_ != 0F) {
-        output.writeFloat(2, cFHOLDHHKDG_);
-      }
       if (speed_ != 0F) {
-        output.writeFloat(6, speed_);
+        output.writeFloat(5, speed_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(7, entityId_);
       }
-      if (iANDFNHEJNH_ != 0F) {
-        output.writeFloat(12, iANDFNHEJNH_);
+      if (eFIGKFNJHDO_ != 0F) {
+        output.writeFloat(9, eFIGKFNJHDO_);
+      }
+      if (cKBIIAABJBM_ != 0F) {
+        output.writeFloat(10, cKBIIAABJBM_);
+      }
+      if (targetPos_ != null) {
+        output.writeMessage(12, getTargetPos());
       }
       unknownFields.writeTo(output);
     }
@@ -279,25 +331,25 @@ public final class EvtLightCoreMoveOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getTargetPos());
-      }
-      if (cFHOLDHHKDG_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, cFHOLDHHKDG_);
-      }
       if (speed_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, speed_);
+          .computeFloatSize(5, speed_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, entityId_);
       }
-      if (iANDFNHEJNH_ != 0F) {
+      if (eFIGKFNJHDO_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(12, iANDFNHEJNH_);
+          .computeFloatSize(9, eFIGKFNJHDO_);
+      }
+      if (cKBIIAABJBM_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(10, cKBIIAABJBM_);
+      }
+      if (targetPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getTargetPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,22 +366,22 @@ public final class EvtLightCoreMoveOuterClass {
       }
       emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove other = (emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove) obj;
 
-      if (java.lang.Float.floatToIntBits(getSpeed())
-          != java.lang.Float.floatToIntBits(
-              other.getSpeed())) return false;
-      if (java.lang.Float.floatToIntBits(getCFHOLDHHKDG())
-          != java.lang.Float.floatToIntBits(
-              other.getCFHOLDHHKDG())) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (hasTargetPos() != other.hasTargetPos()) return false;
       if (hasTargetPos()) {
         if (!getTargetPos()
             .equals(other.getTargetPos())) return false;
       }
-      if (java.lang.Float.floatToIntBits(getIANDFNHEJNH())
+      if (java.lang.Float.floatToIntBits(getCKBIIAABJBM())
           != java.lang.Float.floatToIntBits(
-              other.getIANDFNHEJNH())) return false;
+              other.getCKBIIAABJBM())) return false;
+      if (java.lang.Float.floatToIntBits(getEFIGKFNJHDO())
+          != java.lang.Float.floatToIntBits(
+              other.getEFIGKFNJHDO())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (java.lang.Float.floatToIntBits(getSpeed())
+          != java.lang.Float.floatToIntBits(
+              other.getSpeed())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -341,21 +393,21 @@ public final class EvtLightCoreMoveOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SPEED_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getSpeed());
-      hash = (37 * hash) + CFHOLDHHKDG_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCFHOLDHHKDG());
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       if (hasTargetPos()) {
         hash = (37 * hash) + TARGET_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPos().hashCode();
       }
-      hash = (37 * hash) + IANDFNHEJNH_FIELD_NUMBER;
+      hash = (37 * hash) + CKBIIAABJBM_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getIANDFNHEJNH());
+          getCKBIIAABJBM());
+      hash = (37 * hash) + EFIGKFNJHDO_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getEFIGKFNJHDO());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + SPEED_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSpeed());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -452,10 +504,6 @@ public final class EvtLightCoreMoveOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FPDBCDBPIHI
-     * </pre>
-     *
      * Protobuf type {@code EvtLightCoreMove}
      */
     public static final class Builder extends
@@ -493,19 +541,19 @@ public final class EvtLightCoreMoveOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        speed_ = 0F;
-
-        cFHOLDHHKDG_ = 0F;
-
-        entityId_ = 0;
-
         if (targetPosBuilder_ == null) {
           targetPos_ = null;
         } else {
           targetPos_ = null;
           targetPosBuilder_ = null;
         }
-        iANDFNHEJNH_ = 0F;
+        cKBIIAABJBM_ = 0F;
+
+        eFIGKFNJHDO_ = 0F;
+
+        entityId_ = 0;
+
+        speed_ = 0F;
 
         return this;
       }
@@ -533,15 +581,15 @@ public final class EvtLightCoreMoveOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove buildPartial() {
         emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove result = new emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove(this);
-        result.speed_ = speed_;
-        result.cFHOLDHHKDG_ = cFHOLDHHKDG_;
-        result.entityId_ = entityId_;
         if (targetPosBuilder_ == null) {
           result.targetPos_ = targetPos_;
         } else {
           result.targetPos_ = targetPosBuilder_.build();
         }
-        result.iANDFNHEJNH_ = iANDFNHEJNH_;
+        result.cKBIIAABJBM_ = cKBIIAABJBM_;
+        result.eFIGKFNJHDO_ = eFIGKFNJHDO_;
+        result.entityId_ = entityId_;
+        result.speed_ = speed_;
         onBuilt();
         return result;
       }
@@ -590,20 +638,20 @@ public final class EvtLightCoreMoveOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove other) {
         if (other == emu.grasscutter.net.proto.EvtLightCoreMoveOuterClass.EvtLightCoreMove.getDefaultInstance()) return this;
-        if (other.getSpeed() != 0F) {
-          setSpeed(other.getSpeed());
+        if (other.hasTargetPos()) {
+          mergeTargetPos(other.getTargetPos());
         }
-        if (other.getCFHOLDHHKDG() != 0F) {
-          setCFHOLDHHKDG(other.getCFHOLDHHKDG());
+        if (other.getCKBIIAABJBM() != 0F) {
+          setCKBIIAABJBM(other.getCKBIIAABJBM());
+        }
+        if (other.getEFIGKFNJHDO() != 0F) {
+          setEFIGKFNJHDO(other.getEFIGKFNJHDO());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.hasTargetPos()) {
-          mergeTargetPos(other.getTargetPos());
-        }
-        if (other.getIANDFNHEJNH() != 0F) {
-          setIANDFNHEJNH(other.getIANDFNHEJNH());
+        if (other.getSpeed() != 0F) {
+          setSpeed(other.getSpeed());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -634,111 +682,26 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
 
-      private float speed_ ;
-      /**
-       * <code>float speed = 6;</code>
-       * @return The speed.
-       */
-      @java.lang.Override
-      public float getSpeed() {
-        return speed_;
-      }
-      /**
-       * <code>float speed = 6;</code>
-       * @param value The speed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSpeed(float value) {
-        
-        speed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float speed = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSpeed() {
-        
-        speed_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float cFHOLDHHKDG_ ;
-      /**
-       * <code>float CFHOLDHHKDG = 2;</code>
-       * @return The cFHOLDHHKDG.
-       */
-      @java.lang.Override
-      public float getCFHOLDHHKDG() {
-        return cFHOLDHHKDG_;
-      }
-      /**
-       * <code>float CFHOLDHHKDG = 2;</code>
-       * @param value The cFHOLDHHKDG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCFHOLDHHKDG(float value) {
-        
-        cFHOLDHHKDG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float CFHOLDHHKDG = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCFHOLDHHKDG() {
-        
-        cFHOLDHHKDG_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 7;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 7;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> targetPosBuilder_;
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        * @return Whether the targetPos field is set.
        */
       public boolean hasTargetPos() {
         return targetPosBuilder_ != null || targetPos_ != null;
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        * @return The targetPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
@@ -749,7 +712,11 @@ public final class EvtLightCoreMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public Builder setTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -765,7 +732,11 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public Builder setTargetPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -779,7 +750,11 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public Builder mergeTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -797,7 +772,11 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public Builder clearTargetPos() {
         if (targetPosBuilder_ == null) {
@@ -811,7 +790,11 @@ public final class EvtLightCoreMoveOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTargetPosBuilder() {
         
@@ -819,7 +802,11 @@ public final class EvtLightCoreMoveOuterClass {
         return getTargetPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
         if (targetPosBuilder_ != null) {
@@ -830,7 +817,11 @@ public final class EvtLightCoreMoveOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -846,33 +837,174 @@ public final class EvtLightCoreMoveOuterClass {
         return targetPosBuilder_;
       }
 
-      private float iANDFNHEJNH_ ;
+      private float cKBIIAABJBM_ ;
       /**
-       * <code>float IANDFNHEJNH = 12;</code>
-       * @return The iANDFNHEJNH.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float CKBIIAABJBM = 10;</code>
+       * @return The cKBIIAABJBM.
        */
       @java.lang.Override
-      public float getIANDFNHEJNH() {
-        return iANDFNHEJNH_;
+      public float getCKBIIAABJBM() {
+        return cKBIIAABJBM_;
       }
       /**
-       * <code>float IANDFNHEJNH = 12;</code>
-       * @param value The iANDFNHEJNH to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float CKBIIAABJBM = 10;</code>
+       * @param value The cKBIIAABJBM to set.
        * @return This builder for chaining.
        */
-      public Builder setIANDFNHEJNH(float value) {
+      public Builder setCKBIIAABJBM(float value) {
         
-        iANDFNHEJNH_ = value;
+        cKBIIAABJBM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float IANDFNHEJNH = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float CKBIIAABJBM = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIANDFNHEJNH() {
+      public Builder clearCKBIIAABJBM() {
         
-        iANDFNHEJNH_ = 0F;
+        cKBIIAABJBM_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float eFIGKFNJHDO_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EFIGKFNJHDO = 9;</code>
+       * @return The eFIGKFNJHDO.
+       */
+      @java.lang.Override
+      public float getEFIGKFNJHDO() {
+        return eFIGKFNJHDO_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EFIGKFNJHDO = 9;</code>
+       * @param value The eFIGKFNJHDO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEFIGKFNJHDO(float value) {
+        
+        eFIGKFNJHDO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float EFIGKFNJHDO = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEFIGKFNJHDO() {
+        
+        eFIGKFNJHDO_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 entity_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float speed_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float speed = 5;</code>
+       * @return The speed.
+       */
+      @java.lang.Override
+      public float getSpeed() {
+        return speed_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float speed = 5;</code>
+       * @param value The speed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSpeed(float value) {
+        
+        speed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float speed = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSpeed() {
+        
+        speed_ = 0F;
         onChanged();
         return this;
       }
@@ -944,9 +1076,9 @@ public final class EvtLightCoreMoveOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026EvtLightCoreMove.proto\032\014Vector.proto\"{" +
-      "\n\020EvtLightCoreMove\022\r\n\005speed\030\006 \001(\002\022\023\n\013CFH" +
-      "OLDHHKDG\030\002 \001(\002\022\021\n\tentity_id\030\007 \001(\r\022\033\n\ntar" +
-      "get_pos\030\001 \001(\0132\007.Vector\022\023\n\013IANDFNHEJNH\030\014 " +
+      "\n\020EvtLightCoreMove\022\033\n\ntarget_pos\030\014 \001(\0132\007" +
+      ".Vector\022\023\n\013CKBIIAABJBM\030\n \001(\002\022\023\n\013EFIGKFNJ" +
+      "HDO\030\t \001(\002\022\021\n\tentity_id\030\007 \001(\r\022\r\n\005speed\030\005 " +
       "\001(\002B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -959,7 +1091,7 @@ public final class EvtLightCoreMoveOuterClass {
     internal_static_EvtLightCoreMove_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtLightCoreMove_descriptor,
-        new java.lang.String[] { "Speed", "CFHOLDHHKDG", "EntityId", "TargetPos", "IANDFNHEJNH", });
+        new java.lang.String[] { "TargetPos", "CKBIIAABJBM", "EFIGKFNJHDO", "EntityId", "Speed", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

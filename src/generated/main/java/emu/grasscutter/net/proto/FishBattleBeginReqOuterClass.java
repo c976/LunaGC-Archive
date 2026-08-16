@@ -20,7 +20,8 @@ public final class FishBattleBeginReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6190
+   * CmdId: 23596
+   * Obf: GNDDFDMHMHN
    * </pre>
    *
    * Protobuf type {@code FishBattleBeginReq}
@@ -245,7 +246,8 @@ public final class FishBattleBeginReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6190
+     * CmdId: 23596
+     * Obf: GNDDFDMHMHN
      * </pre>
      *
      * Protobuf type {@code FishBattleBeginReq}

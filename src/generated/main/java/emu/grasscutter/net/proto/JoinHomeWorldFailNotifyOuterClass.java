@@ -19,21 +19,20 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
      * <code>uint32 target_uid = 11;</code>
      * @return The targetUid.
      */
     int getTargetUid();
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2403
-   * Obf: GBHNANPJGMC
+   * CmdId: 28838
    * </pre>
    *
    * Protobuf type {@code JoinHomeWorldFailNotify}
@@ -85,7 +84,7 @@ public final class JoinHomeWorldFailNotifyOuterClass {
               targetUid_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,17 +121,6 @@ public final class JoinHomeWorldFailNotifyOuterClass {
               emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify.class, emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int TARGET_UID_FIELD_NUMBER = 11;
     private int targetUid_;
     /**
@@ -142,6 +130,17 @@ public final class JoinHomeWorldFailNotifyOuterClass {
     @java.lang.Override
     public int getTargetUid() {
       return targetUid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -162,7 +161,7 @@ public final class JoinHomeWorldFailNotifyOuterClass {
         output.writeUInt32(11, targetUid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +178,7 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       }
       emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify other = (emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class JoinHomeWorldFailNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2403
-     * Obf: GBHNANPJGMC
+     * CmdId: 28838
      * </pre>
      *
      * Protobuf type {@code JoinHomeWorldFailNotify}
@@ -353,9 +351,9 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         targetUid_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify buildPartial() {
         emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify result = new emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify(this);
-        result.retcode_ = retcode_;
         result.targetUid_ = targetUid_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class JoinHomeWorldFailNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify other) {
         if (other == emu.grasscutter.net.proto.JoinHomeWorldFailNotifyOuterClass.JoinHomeWorldFailNotify.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,37 +466,6 @@ public final class JoinHomeWorldFailNotifyOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int targetUid_ ;
       /**
        * <code>uint32 target_uid = 11;</code>
@@ -526,6 +493,37 @@ public final class JoinHomeWorldFailNotifyOuterClass {
       public Builder clearTargetUid() {
         
         targetUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class JoinHomeWorldFailNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035JoinHomeWorldFailNotify.proto\">\n\027JoinH" +
-      "omeWorldFailNotify\022\017\n\007retcode\030\016 \001(\005\022\022\n\nt" +
-      "arget_uid\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "omeWorldFailNotify\022\022\n\ntarget_uid\030\013 \001(\r\022\017" +
+      "\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +608,7 @@ public final class JoinHomeWorldFailNotifyOuterClass {
     internal_static_JoinHomeWorldFailNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JoinHomeWorldFailNotify_descriptor,
-        new java.lang.String[] { "Retcode", "TargetUid", });
+        new java.lang.String[] { "TargetUid", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

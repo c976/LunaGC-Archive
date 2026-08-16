@@ -19,22 +19,18 @@ public final class OfferingPariDetailDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GEDMGFJIPAH = 14;</code>
-     * @return The gEDMGFJIPAH.
+     * <code>uint32 Unk3700_JDCCOJLEIBP = 2;</code>
+     * @return The unk3700JDCCOJLEIBP.
      */
-    int getGEDMGFJIPAH();
+    int getUnk3700JDCCOJLEIBP();
 
     /**
-     * <code>bool BLMBNCGDAOI = 15;</code>
-     * @return The bLMBNCGDAOI.
+     * <code>bool is_taken_finish_reward = 6;</code>
+     * @return The isTakenFinishReward.
      */
-    boolean getBLMBNCGDAOI();
+    boolean getIsTakenFinishReward();
   }
   /**
-   * <pre>
-   * Obf: KMNOJIOKFHB
-   * </pre>
-   *
    * Protobuf type {@code OfferingPariDetailData}
    */
   public static final class OfferingPariDetailData extends
@@ -79,14 +75,14 @@ public final class OfferingPariDetailDataOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 16: {
 
-              gEDMGFJIPAH_ = input.readUInt32();
+              unk3700JDCCOJLEIBP_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 48: {
 
-              bLMBNCGDAOI_ = input.readBool();
+              isTakenFinishReward_ = input.readBool();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class OfferingPariDetailDataOuterClass {
               emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData.class, emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData.Builder.class);
     }
 
-    public static final int GEDMGFJIPAH_FIELD_NUMBER = 14;
-    private int gEDMGFJIPAH_;
+    public static final int UNK3700_JDCCOJLEIBP_FIELD_NUMBER = 2;
+    private int unk3700JDCCOJLEIBP_;
     /**
-     * <code>uint32 GEDMGFJIPAH = 14;</code>
-     * @return The gEDMGFJIPAH.
+     * <code>uint32 Unk3700_JDCCOJLEIBP = 2;</code>
+     * @return The unk3700JDCCOJLEIBP.
      */
     @java.lang.Override
-    public int getGEDMGFJIPAH() {
-      return gEDMGFJIPAH_;
+    public int getUnk3700JDCCOJLEIBP() {
+      return unk3700JDCCOJLEIBP_;
     }
 
-    public static final int BLMBNCGDAOI_FIELD_NUMBER = 15;
-    private boolean bLMBNCGDAOI_;
+    public static final int IS_TAKEN_FINISH_REWARD_FIELD_NUMBER = 6;
+    private boolean isTakenFinishReward_;
     /**
-     * <code>bool BLMBNCGDAOI = 15;</code>
-     * @return The bLMBNCGDAOI.
+     * <code>bool is_taken_finish_reward = 6;</code>
+     * @return The isTakenFinishReward.
      */
     @java.lang.Override
-    public boolean getBLMBNCGDAOI() {
-      return bLMBNCGDAOI_;
+    public boolean getIsTakenFinishReward() {
+      return isTakenFinishReward_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class OfferingPariDetailDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gEDMGFJIPAH_ != 0) {
-        output.writeUInt32(14, gEDMGFJIPAH_);
+      if (unk3700JDCCOJLEIBP_ != 0) {
+        output.writeUInt32(2, unk3700JDCCOJLEIBP_);
       }
-      if (bLMBNCGDAOI_ != false) {
-        output.writeBool(15, bLMBNCGDAOI_);
+      if (isTakenFinishReward_ != false) {
+        output.writeBool(6, isTakenFinishReward_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class OfferingPariDetailDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gEDMGFJIPAH_ != 0) {
+      if (unk3700JDCCOJLEIBP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gEDMGFJIPAH_);
+          .computeUInt32Size(2, unk3700JDCCOJLEIBP_);
       }
-      if (bLMBNCGDAOI_ != false) {
+      if (isTakenFinishReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, bLMBNCGDAOI_);
+          .computeBoolSize(6, isTakenFinishReward_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class OfferingPariDetailDataOuterClass {
       }
       emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData other = (emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData) obj;
 
-      if (getGEDMGFJIPAH()
-          != other.getGEDMGFJIPAH()) return false;
-      if (getBLMBNCGDAOI()
-          != other.getBLMBNCGDAOI()) return false;
+      if (getUnk3700JDCCOJLEIBP()
+          != other.getUnk3700JDCCOJLEIBP()) return false;
+      if (getIsTakenFinishReward()
+          != other.getIsTakenFinishReward()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,11 +206,11 @@ public final class OfferingPariDetailDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GEDMGFJIPAH_FIELD_NUMBER;
-      hash = (53 * hash) + getGEDMGFJIPAH();
-      hash = (37 * hash) + BLMBNCGDAOI_FIELD_NUMBER;
+      hash = (37 * hash) + UNK3700_JDCCOJLEIBP_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3700JDCCOJLEIBP();
+      hash = (37 * hash) + IS_TAKEN_FINISH_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBLMBNCGDAOI());
+          getIsTakenFinishReward());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,10 +307,6 @@ public final class OfferingPariDetailDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KMNOJIOKFHB
-     * </pre>
-     *
      * Protobuf type {@code OfferingPariDetailData}
      */
     public static final class Builder extends
@@ -352,9 +344,9 @@ public final class OfferingPariDetailDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gEDMGFJIPAH_ = 0;
+        unk3700JDCCOJLEIBP_ = 0;
 
-        bLMBNCGDAOI_ = false;
+        isTakenFinishReward_ = false;
 
         return this;
       }
@@ -382,8 +374,8 @@ public final class OfferingPariDetailDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData buildPartial() {
         emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData result = new emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData(this);
-        result.gEDMGFJIPAH_ = gEDMGFJIPAH_;
-        result.bLMBNCGDAOI_ = bLMBNCGDAOI_;
+        result.unk3700JDCCOJLEIBP_ = unk3700JDCCOJLEIBP_;
+        result.isTakenFinishReward_ = isTakenFinishReward_;
         onBuilt();
         return result;
       }
@@ -432,11 +424,11 @@ public final class OfferingPariDetailDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData other) {
         if (other == emu.grasscutter.net.proto.OfferingPariDetailDataOuterClass.OfferingPariDetailData.getDefaultInstance()) return this;
-        if (other.getGEDMGFJIPAH() != 0) {
-          setGEDMGFJIPAH(other.getGEDMGFJIPAH());
+        if (other.getUnk3700JDCCOJLEIBP() != 0) {
+          setUnk3700JDCCOJLEIBP(other.getUnk3700JDCCOJLEIBP());
         }
-        if (other.getBLMBNCGDAOI() != false) {
-          setBLMBNCGDAOI(other.getBLMBNCGDAOI());
+        if (other.getIsTakenFinishReward() != false) {
+          setIsTakenFinishReward(other.getIsTakenFinishReward());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -467,64 +459,64 @@ public final class OfferingPariDetailDataOuterClass {
         return this;
       }
 
-      private int gEDMGFJIPAH_ ;
+      private int unk3700JDCCOJLEIBP_ ;
       /**
-       * <code>uint32 GEDMGFJIPAH = 14;</code>
-       * @return The gEDMGFJIPAH.
+       * <code>uint32 Unk3700_JDCCOJLEIBP = 2;</code>
+       * @return The unk3700JDCCOJLEIBP.
        */
       @java.lang.Override
-      public int getGEDMGFJIPAH() {
-        return gEDMGFJIPAH_;
+      public int getUnk3700JDCCOJLEIBP() {
+        return unk3700JDCCOJLEIBP_;
       }
       /**
-       * <code>uint32 GEDMGFJIPAH = 14;</code>
-       * @param value The gEDMGFJIPAH to set.
+       * <code>uint32 Unk3700_JDCCOJLEIBP = 2;</code>
+       * @param value The unk3700JDCCOJLEIBP to set.
        * @return This builder for chaining.
        */
-      public Builder setGEDMGFJIPAH(int value) {
+      public Builder setUnk3700JDCCOJLEIBP(int value) {
         
-        gEDMGFJIPAH_ = value;
+        unk3700JDCCOJLEIBP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GEDMGFJIPAH = 14;</code>
+       * <code>uint32 Unk3700_JDCCOJLEIBP = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGEDMGFJIPAH() {
+      public Builder clearUnk3700JDCCOJLEIBP() {
         
-        gEDMGFJIPAH_ = 0;
+        unk3700JDCCOJLEIBP_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean bLMBNCGDAOI_ ;
+      private boolean isTakenFinishReward_ ;
       /**
-       * <code>bool BLMBNCGDAOI = 15;</code>
-       * @return The bLMBNCGDAOI.
+       * <code>bool is_taken_finish_reward = 6;</code>
+       * @return The isTakenFinishReward.
        */
       @java.lang.Override
-      public boolean getBLMBNCGDAOI() {
-        return bLMBNCGDAOI_;
+      public boolean getIsTakenFinishReward() {
+        return isTakenFinishReward_;
       }
       /**
-       * <code>bool BLMBNCGDAOI = 15;</code>
-       * @param value The bLMBNCGDAOI to set.
+       * <code>bool is_taken_finish_reward = 6;</code>
+       * @param value The isTakenFinishReward to set.
        * @return This builder for chaining.
        */
-      public Builder setBLMBNCGDAOI(boolean value) {
+      public Builder setIsTakenFinishReward(boolean value) {
         
-        bLMBNCGDAOI_ = value;
+        isTakenFinishReward_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool BLMBNCGDAOI = 15;</code>
+       * <code>bool is_taken_finish_reward = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBLMBNCGDAOI() {
+      public Builder clearIsTakenFinishReward() {
         
-        bLMBNCGDAOI_ = false;
+        isTakenFinishReward_ = false;
         onChanged();
         return this;
       }
@@ -595,10 +587,10 @@ public final class OfferingPariDetailDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034OfferingPariDetailData.proto\"B\n\026Offeri" +
-      "ngPariDetailData\022\023\n\013GEDMGFJIPAH\030\016 \001(\r\022\023\n" +
-      "\013BLMBNCGDAOI\030\017 \001(\010B\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\034OfferingPariDetailData.proto\"U\n\026Offeri" +
+      "ngPariDetailData\022\033\n\023Unk3700_JDCCOJLEIBP\030" +
+      "\002 \001(\r\022\036\n\026is_taken_finish_reward\030\006 \001(\010B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -609,7 +601,7 @@ public final class OfferingPariDetailDataOuterClass {
     internal_static_OfferingPariDetailData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OfferingPariDetailData_descriptor,
-        new java.lang.String[] { "GEDMGFJIPAH", "BLMBNCGDAOI", });
+        new java.lang.String[] { "Unk3700JDCCOJLEIBP", "IsTakenFinishReward", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

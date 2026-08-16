@@ -19,23 +19,22 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 num = 5;</code>
+     * <pre>
+     * CMD_ID = 4268
+     * </pre>
+     *
+     * <code>uint32 num = 6;</code>
      * @return The num.
      */
     int getNum();
 
     /**
-     * <code>uint32 card_id = 9;</code>
+     * <code>uint32 card_id = 3;</code>
      * @return The cardId.
      */
     int getCardId();
   }
   /**
-   * <pre>
-   * CmdId: 8761
-   * Obf: BCIGKHPFMLI
-   * </pre>
-   *
    * Protobuf type {@code GCGDSCardNumChangeNotify}
    */
   public static final class GCGDSCardNumChangeNotify extends
@@ -80,14 +79,14 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              num_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 24: {
 
               cardId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              num_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify.class, emu.grasscutter.net.proto.GCGDSCardNumChangeNotifyOuterClass.GCGDSCardNumChangeNotify.Builder.class);
     }
 
-    public static final int NUM_FIELD_NUMBER = 5;
+    public static final int NUM_FIELD_NUMBER = 6;
     private int num_;
     /**
-     * <code>uint32 num = 5;</code>
+     * <pre>
+     * CMD_ID = 4268
+     * </pre>
+     *
+     * <code>uint32 num = 6;</code>
      * @return The num.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       return num_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 9;
+    public static final int CARD_ID_FIELD_NUMBER = 3;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 9;</code>
+     * <code>uint32 card_id = 3;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (num_ != 0) {
-        output.writeUInt32(5, num_);
-      }
       if (cardId_ != 0) {
-        output.writeUInt32(9, cardId_);
+        output.writeUInt32(3, cardId_);
+      }
+      if (num_ != 0) {
+        output.writeUInt32(6, num_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (num_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, num_);
-      }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cardId_);
+          .computeUInt32Size(3, cardId_);
+      }
+      if (num_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, num_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8761
-     * Obf: BCIGKHPFMLI
-     * </pre>
-     *
      * Protobuf type {@code GCGDSCardNumChangeNotify}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
 
       private int num_ ;
       /**
-       * <code>uint32 num = 5;</code>
+       * <pre>
+       * CMD_ID = 4268
+       * </pre>
+       *
+       * <code>uint32 num = 6;</code>
        * @return The num.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return num_;
       }
       /**
-       * <code>uint32 num = 5;</code>
+       * <pre>
+       * CMD_ID = 4268
+       * </pre>
+       *
+       * <code>uint32 num = 6;</code>
        * @param value The num to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 num = 5;</code>
+       * <pre>
+       * CMD_ID = 4268
+       * </pre>
+       *
+       * <code>uint32 num = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearNum() {
@@ -501,7 +511,7 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 9;</code>
+       * <code>uint32 card_id = 3;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 9;</code>
+       * <code>uint32 card_id = 3;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 9;</code>
+       * <code>uint32 card_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -597,8 +607,8 @@ public final class GCGDSCardNumChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGDSCardNumChangeNotify.proto\"8\n\030GCGD" +
-      "SCardNumChangeNotify\022\013\n\003num\030\005 \001(\r\022\017\n\007car" +
-      "d_id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "SCardNumChangeNotify\022\013\n\003num\030\006 \001(\r\022\017\n\007car" +
+      "d_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

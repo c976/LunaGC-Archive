@@ -19,17 +19,29 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.FriendEnterHomeOption option = 13;</code>
      * @return The enum numeric value on the wire for option.
      */
     int getOptionValue();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.FriendEnterHomeOption option = 13;</code>
      * @return The option.
      */
     emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption getOption();
   }
   /**
+   * <pre>
+   * CmdId: 26248
+   * </pre>
+   *
    * Protobuf type {@code SetFriendEnterHomeOptionReq}
    */
   public static final class SetFriendEnterHomeOptionReq extends
@@ -116,6 +128,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
     public static final int OPTION_FIELD_NUMBER = 13;
     private int option_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.FriendEnterHomeOption option = 13;</code>
      * @return The enum numeric value on the wire for option.
      */
@@ -123,6 +139,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
       return option_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.FriendEnterHomeOption option = 13;</code>
      * @return The option.
      */
@@ -287,6 +307,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 26248
+     * </pre>
+     *
      * Protobuf type {@code SetFriendEnterHomeOptionReq}
      */
     public static final class Builder extends
@@ -435,6 +459,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
 
       private int option_ = 0;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.FriendEnterHomeOption option = 13;</code>
        * @return The enum numeric value on the wire for option.
        */
@@ -442,6 +470,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
         return option_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.FriendEnterHomeOption option = 13;</code>
        * @param value The enum numeric value on the wire for option to set.
        * @return This builder for chaining.
@@ -453,6 +485,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.FriendEnterHomeOption option = 13;</code>
        * @return The option.
        */
@@ -463,6 +499,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.FriendEnterHomeOption.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.FriendEnterHomeOption option = 13;</code>
        * @param value The option to set.
        * @return This builder for chaining.
@@ -477,6 +517,10 @@ public final class SetFriendEnterHomeOptionReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.FriendEnterHomeOption option = 13;</code>
        * @return This builder for chaining.
        */

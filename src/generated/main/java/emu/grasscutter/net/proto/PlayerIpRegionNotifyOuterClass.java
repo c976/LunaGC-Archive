@@ -19,12 +19,12 @@ public final class PlayerIpRegionNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string ip_code = 9;</code>
+     * <code>string ip_code = 10;</code>
      * @return The ipCode.
      */
     java.lang.String getIpCode();
     /**
-     * <code>string ip_code = 9;</code>
+     * <code>string ip_code = 10;</code>
      * @return The bytes for ipCode.
      */
     com.google.protobuf.ByteString
@@ -32,8 +32,7 @@ public final class PlayerIpRegionNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1074
-   * Obf: JLLGODJMAAG
+   * CmdId: 3999
    * </pre>
    *
    * Protobuf type {@code PlayerIpRegionNotify}
@@ -81,7 +80,7 @@ public final class PlayerIpRegionNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 82: {
               java.lang.String s = input.readStringRequireUtf8();
 
               ipCode_ = s;
@@ -119,10 +118,10 @@ public final class PlayerIpRegionNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerIpRegionNotifyOuterClass.PlayerIpRegionNotify.class, emu.grasscutter.net.proto.PlayerIpRegionNotifyOuterClass.PlayerIpRegionNotify.Builder.class);
     }
 
-    public static final int IP_CODE_FIELD_NUMBER = 9;
+    public static final int IP_CODE_FIELD_NUMBER = 10;
     private volatile java.lang.Object ipCode_;
     /**
-     * <code>string ip_code = 9;</code>
+     * <code>string ip_code = 10;</code>
      * @return The ipCode.
      */
     @java.lang.Override
@@ -139,7 +138,7 @@ public final class PlayerIpRegionNotifyOuterClass {
       }
     }
     /**
-     * <code>string ip_code = 9;</code>
+     * <code>string ip_code = 10;</code>
      * @return The bytes for ipCode.
      */
     @java.lang.Override
@@ -172,7 +171,7 @@ public final class PlayerIpRegionNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(ipCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, ipCode_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, ipCode_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,7 +183,7 @@ public final class PlayerIpRegionNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(ipCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, ipCode_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, ipCode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +312,7 @@ public final class PlayerIpRegionNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1074
-     * Obf: JLLGODJMAAG
+     * CmdId: 3999
      * </pre>
      *
      * Protobuf type {@code PlayerIpRegionNotify}
@@ -466,7 +464,7 @@ public final class PlayerIpRegionNotifyOuterClass {
 
       private java.lang.Object ipCode_ = "";
       /**
-       * <code>string ip_code = 9;</code>
+       * <code>string ip_code = 10;</code>
        * @return The ipCode.
        */
       public java.lang.String getIpCode() {
@@ -482,7 +480,7 @@ public final class PlayerIpRegionNotifyOuterClass {
         }
       }
       /**
-       * <code>string ip_code = 9;</code>
+       * <code>string ip_code = 10;</code>
        * @return The bytes for ipCode.
        */
       public com.google.protobuf.ByteString
@@ -499,7 +497,7 @@ public final class PlayerIpRegionNotifyOuterClass {
         }
       }
       /**
-       * <code>string ip_code = 9;</code>
+       * <code>string ip_code = 10;</code>
        * @param value The ipCode to set.
        * @return This builder for chaining.
        */
@@ -514,7 +512,7 @@ public final class PlayerIpRegionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string ip_code = 9;</code>
+       * <code>string ip_code = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIpCode() {
@@ -524,7 +522,7 @@ public final class PlayerIpRegionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string ip_code = 9;</code>
+       * <code>string ip_code = 10;</code>
        * @param value The bytes for ipCode to set.
        * @return This builder for chaining.
        */
@@ -607,7 +605,7 @@ public final class PlayerIpRegionNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerIpRegionNotify.proto\"\'\n\024PlayerIp" +
-      "RegionNotify\022\017\n\007ip_code\030\t \001(\tB\033\n\031emu.gra" +
+      "RegionNotify\022\017\n\007ip_code\030\n \001(\tB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,141 +19,237 @@ public final class InvestigationMonsterOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      * @return Whether the weeklyBossResinDiscountInfo field is set.
      */
     boolean hasWeeklyBossResinDiscountInfo();
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      * @return The weeklyBossResinDiscountInfo.
      */
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo();
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      */
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder();
 
     /**
-     * <code>uint32 max_boss_chest_num = 1;</code>
-     * @return The maxBossChestNum.
-     */
-    int getMaxBossChestNum();
-
-    /**
-     * <code>uint32 refresh_interval = 9;</code>
-     * @return The refreshInterval.
-     */
-    int getRefreshInterval();
-
-    /**
-     * <code>uint32 level = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>uint32 level = 13;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 city_id = 14;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DNHPPDBBNGK = 9;</code>
+     * @return The dNHPPDBBNGK.
+     */
+    int getDNHPPDBBNGK();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     int getCityId();
 
     /**
-     * <code>uint32 group_id = 1737;</code>
-     * @return The groupId.
-     */
-    int getGroupId();
-
-    /**
-     * <code>uint32 boss_chest_num = 6;</code>
-     * @return The bossChestNum.
-     */
-    int getBossChestNum();
-
-    /**
-     * <code>uint32 map_layer_id = 1711;</code>
-     * @return The mapLayerId.
-     */
-    int getMapLayerId();
-
-    /**
-     * <code>uint32 monster_id = 1968;</code>
-     * @return The monsterId.
-     */
-    int getMonsterId();
-
-    /**
-     * <code>uint32 scene_id = 12;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>uint32 resin = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 60
+     * </pre>
+     *
+     * <code>uint32 resin = 12;</code>
      * @return The resin.
      */
     int getResin();
 
     /**
-     * <code>uint32 next_boss_chest_refresh_time = 5;</code>
-     * @return The nextBossChestRefreshTime.
-     */
-    int getNextBossChestRefreshTime();
-
-    /**
-     * <code>.InvestigationMonster.LockState lock_state = 8;</code>
-     * @return The enum numeric value on the wire for lockState.
-     */
-    int getLockStateValue();
-    /**
-     * <code>.InvestigationMonster.LockState lock_state = 8;</code>
-     * @return The lockState.
-     */
-    emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState getLockState();
-
-    /**
-     * <code>bool MLBGHENCMGB = 4;</code>
-     * @return The mLBGHENCMGB.
-     */
-    boolean getMLBGHENCMGB();
-
-    /**
-     * <code>bool FLPIGDLICBM = 559;</code>
-     * @return The fLPIGDLICBM.
-     */
-    boolean getFLPIGDLICBM();
-
-    /**
-     * <code>bool is_alive = 7;</code>
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>bool is_alive = 2;</code>
      * @return The isAlive.
      */
     boolean getIsAlive();
 
     /**
-     * <code>uint32 id = 13;</code>
+     * <pre>
+     * offset: 65
+     * </pre>
+     *
+     * <code>bool CCELICDLPPO = 16;</code>
+     * @return The cCELICDLPPO.
+     */
+    boolean getCCELICDLPPO();
+
+    /**
+     * <pre>
+     * offset: 66
+     * </pre>
+     *
+     * <code>bool FBPKDKLKPPA = 1732;</code>
+     * @return The fBPKDKLKPPA.
+     */
+    boolean getFBPKDKLKPPA();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 scene_id = 5;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>uint32 group_id = 2041;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 76
+     * </pre>
+     *
+     * <code>uint32 id = 6;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>uint32 next_refresh_time = 11;</code>
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 refresh_interval = 15;</code>
+     * @return The refreshInterval.
+     */
+    int getRefreshInterval();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 84
+     * </pre>
+     *
+     * <code>uint32 monster_id = 852;</code>
+     * @return The monsterId.
+     */
+    int getMonsterId();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 10;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 92
+     * </pre>
+     *
+     * <code>.InvestigationMonster.LockState lock_state = 4;</code>
+     * @return The enum numeric value on the wire for lockState.
+     */
+    int getLockStateValue();
+    /**
+     * <pre>
+     *6.3.0 // offset: 92
+     * </pre>
+     *
+     * <code>.InvestigationMonster.LockState lock_state = 4;</code>
+     * @return The lockState.
+     */
+    emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState getLockState();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>uint32 map_layer_id = 425;</code>
+     * @return The mapLayerId.
+     */
+    int getMapLayerId();
+
+    /**
+     * <pre>
+     * offset: 100
+     * </pre>
+     *
+     * <code>uint32 LLFDCJGENJA = 14;</code>
+     * @return The lLFDCJGENJA.
+     */
+    int getLLFDCJGENJA();
+
+    /**
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>uint32 max_boss_chest_num = 17;</code>
+     * @return The maxBossChestNum.
+     */
+    int getMaxBossChestNum();
   }
   /**
    * Protobuf type {@code InvestigationMonster}
@@ -203,10 +299,31 @@ public final class InvestigationMonsterOuterClass {
               break;
             case 8: {
 
-              maxBossChestNum_ = input.readUInt32();
+              cityId_ = input.readUInt32();
               break;
             }
-            case 18: {
+            case 16: {
+
+              isAlive_ = input.readBool();
+              break;
+            }
+            case 32: {
+              int rawValue = input.readEnum();
+
+              lockState_ = rawValue;
+              break;
+            }
+            case 40: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              id_ = input.readUInt32();
+              break;
+            }
+            case 58: {
               emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder subBuilder = null;
               if (weeklyBossResinDiscountInfo_ != null) {
                 subBuilder = weeklyBossResinDiscountInfo_.toBuilder();
@@ -219,7 +336,7 @@ public final class InvestigationMonsterOuterClass {
 
               break;
             }
-            case 26: {
+            case 66: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -232,85 +349,64 @@ public final class InvestigationMonsterOuterClass {
 
               break;
             }
-            case 32: {
-
-              mLBGHENCMGB_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              nextBossChestRefreshTime_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              bossChestNum_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isAlive_ = input.readBool();
-              break;
-            }
-            case 64: {
-              int rawValue = input.readEnum();
-
-              lockState_ = rawValue;
-              break;
-            }
             case 72: {
 
-              refreshInterval_ = input.readUInt32();
+              dNHPPDBBNGK_ = input.readUInt32();
               break;
             }
             case 80: {
-
-              resin_ = input.readUInt32();
-              break;
-            }
-            case 88: {
 
               nextRefreshTime_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              sceneId_ = input.readUInt32();
+              resin_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              id_ = input.readUInt32();
+              level_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              cityId_ = input.readUInt32();
+              lLFDCJGENJA_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              level_ = input.readUInt32();
+              refreshInterval_ = input.readUInt32();
               break;
             }
-            case 4472: {
+            case 128: {
 
-              fLPIGDLICBM_ = input.readBool();
+              cCELICDLPPO_ = input.readBool();
               break;
             }
-            case 13688: {
+            case 136: {
+
+              maxBossChestNum_ = input.readUInt32();
+              break;
+            }
+            case 3400: {
 
               mapLayerId_ = input.readUInt32();
               break;
             }
-            case 13896: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 15744: {
+            case 6816: {
 
               monsterId_ = input.readUInt32();
+              break;
+            }
+            case 13856: {
+
+              fBPKDKLKPPA_ = input.readBool();
+              break;
+            }
+            case 16328: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -351,24 +447,24 @@ public final class InvestigationMonsterOuterClass {
     public enum LockState
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>LOCK_STATE_NONE = 0;</code>
+       * <code>EFHCCIKOJLJ_LOCK_NONE = 0;</code>
        */
-      LOCK_STATE_NONE(0),
+      EFHCCIKOJLJ_LOCK_NONE(0),
       /**
-       * <code>LOCK_STATE_QUEST = 1;</code>
+       * <code>EFHCCIKOJLJ_LOCK_QUEST = 1;</code>
        */
-      LOCK_STATE_QUEST(1),
+      EFHCCIKOJLJ_LOCK_QUEST(1),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>LOCK_STATE_NONE = 0;</code>
+       * <code>EFHCCIKOJLJ_LOCK_NONE = 0;</code>
        */
-      public static final int LOCK_STATE_NONE_VALUE = 0;
+      public static final int EFHCCIKOJLJ_LOCK_NONE_VALUE = 0;
       /**
-       * <code>LOCK_STATE_QUEST = 1;</code>
+       * <code>EFHCCIKOJLJ_LOCK_QUEST = 1;</code>
        */
-      public static final int LOCK_STATE_QUEST_VALUE = 1;
+      public static final int EFHCCIKOJLJ_LOCK_QUEST_VALUE = 1;
 
 
       public final int getNumber() {
@@ -395,8 +491,8 @@ public final class InvestigationMonsterOuterClass {
        */
       public static LockState forNumber(int value) {
         switch (value) {
-          case 0: return LOCK_STATE_NONE;
-          case 1: return LOCK_STATE_QUEST;
+          case 0: return EFHCCIKOJLJ_LOCK_NONE;
+          case 1: return EFHCCIKOJLJ_LOCK_QUEST;
           default: return null;
         }
       }
@@ -453,10 +549,14 @@ public final class InvestigationMonsterOuterClass {
       // @@protoc_insertion_point(enum_scope:InvestigationMonster.LockState)
     }
 
-    public static final int POS_FIELD_NUMBER = 3;
+    public static final int POS_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -464,7 +564,11 @@ public final class InvestigationMonsterOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -472,17 +576,25 @@ public final class InvestigationMonsterOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 3;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.Vector pos = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER = 2;
+    public static final int WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo_;
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      * @return Whether the weeklyBossResinDiscountInfo field is set.
      */
     @java.lang.Override
@@ -490,7 +602,11 @@ public final class InvestigationMonsterOuterClass {
       return weeklyBossResinDiscountInfo_ != null;
     }
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      * @return The weeklyBossResinDiscountInfo.
      */
     @java.lang.Override
@@ -498,39 +614,25 @@ public final class InvestigationMonsterOuterClass {
       return weeklyBossResinDiscountInfo_ == null ? emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
     }
     /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
       return getWeeklyBossResinDiscountInfo();
     }
 
-    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 1;
-    private int maxBossChestNum_;
-    /**
-     * <code>uint32 max_boss_chest_num = 1;</code>
-     * @return The maxBossChestNum.
-     */
-    @java.lang.Override
-    public int getMaxBossChestNum() {
-      return maxBossChestNum_;
-    }
-
-    public static final int REFRESH_INTERVAL_FIELD_NUMBER = 9;
-    private int refreshInterval_;
-    /**
-     * <code>uint32 refresh_interval = 9;</code>
-     * @return The refreshInterval.
-     */
-    @java.lang.Override
-    public int getRefreshInterval() {
-      return refreshInterval_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 15;
+    public static final int LEVEL_FIELD_NUMBER = 13;
     private int level_;
     /**
-     * <code>uint32 level = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>uint32 level = 13;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -538,10 +640,29 @@ public final class InvestigationMonsterOuterClass {
       return level_;
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 14;
+    public static final int DNHPPDBBNGK_FIELD_NUMBER = 9;
+    private int dNHPPDBBNGK_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DNHPPDBBNGK = 9;</code>
+     * @return The dNHPPDBBNGK.
+     */
+    @java.lang.Override
+    public int getDNHPPDBBNGK() {
+      return dNHPPDBBNGK_;
+    }
+
+    public static final int CITY_ID_FIELD_NUMBER = 1;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 14;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -549,65 +670,14 @@ public final class InvestigationMonsterOuterClass {
       return cityId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 1737;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 1737;</code>
-     * @return The groupId.
-     */
-    @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
-    }
-
-    public static final int BOSS_CHEST_NUM_FIELD_NUMBER = 6;
-    private int bossChestNum_;
-    /**
-     * <code>uint32 boss_chest_num = 6;</code>
-     * @return The bossChestNum.
-     */
-    @java.lang.Override
-    public int getBossChestNum() {
-      return bossChestNum_;
-    }
-
-    public static final int MAP_LAYER_ID_FIELD_NUMBER = 1711;
-    private int mapLayerId_;
-    /**
-     * <code>uint32 map_layer_id = 1711;</code>
-     * @return The mapLayerId.
-     */
-    @java.lang.Override
-    public int getMapLayerId() {
-      return mapLayerId_;
-    }
-
-    public static final int MONSTER_ID_FIELD_NUMBER = 1968;
-    private int monsterId_;
-    /**
-     * <code>uint32 monster_id = 1968;</code>
-     * @return The monsterId.
-     */
-    @java.lang.Override
-    public int getMonsterId() {
-      return monsterId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 12;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 12;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int RESIN_FIELD_NUMBER = 10;
+    public static final int RESIN_FIELD_NUMBER = 12;
     private int resin_;
     /**
-     * <code>uint32 resin = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 60
+     * </pre>
+     *
+     * <code>uint32 resin = 12;</code>
      * @return The resin.
      */
     @java.lang.Override
@@ -615,28 +685,160 @@ public final class InvestigationMonsterOuterClass {
       return resin_;
     }
 
-    public static final int NEXT_BOSS_CHEST_REFRESH_TIME_FIELD_NUMBER = 5;
-    private int nextBossChestRefreshTime_;
+    public static final int IS_ALIVE_FIELD_NUMBER = 2;
+    private boolean isAlive_;
     /**
-     * <code>uint32 next_boss_chest_refresh_time = 5;</code>
-     * @return The nextBossChestRefreshTime.
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>bool is_alive = 2;</code>
+     * @return The isAlive.
      */
     @java.lang.Override
-    public int getNextBossChestRefreshTime() {
-      return nextBossChestRefreshTime_;
+    public boolean getIsAlive() {
+      return isAlive_;
     }
 
-    public static final int LOCK_STATE_FIELD_NUMBER = 8;
+    public static final int CCELICDLPPO_FIELD_NUMBER = 16;
+    private boolean cCELICDLPPO_;
+    /**
+     * <pre>
+     * offset: 65
+     * </pre>
+     *
+     * <code>bool CCELICDLPPO = 16;</code>
+     * @return The cCELICDLPPO.
+     */
+    @java.lang.Override
+    public boolean getCCELICDLPPO() {
+      return cCELICDLPPO_;
+    }
+
+    public static final int FBPKDKLKPPA_FIELD_NUMBER = 1732;
+    private boolean fBPKDKLKPPA_;
+    /**
+     * <pre>
+     * offset: 66
+     * </pre>
+     *
+     * <code>bool FBPKDKLKPPA = 1732;</code>
+     * @return The fBPKDKLKPPA.
+     */
+    @java.lang.Override
+    public boolean getFBPKDKLKPPA() {
+      return fBPKDKLKPPA_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 5;
+    private int sceneId_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 68
+     * </pre>
+     *
+     * <code>uint32 scene_id = 5;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 2041;
+    private int groupId_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>uint32 group_id = 2041;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 6;
+    private int id_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 76
+     * </pre>
+     *
+     * <code>uint32 id = 6;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
+
+    public static final int REFRESH_INTERVAL_FIELD_NUMBER = 15;
+    private int refreshInterval_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 refresh_interval = 15;</code>
+     * @return The refreshInterval.
+     */
+    @java.lang.Override
+    public int getRefreshInterval() {
+      return refreshInterval_;
+    }
+
+    public static final int MONSTER_ID_FIELD_NUMBER = 852;
+    private int monsterId_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 84
+     * </pre>
+     *
+     * <code>uint32 monster_id = 852;</code>
+     * @return The monsterId.
+     */
+    @java.lang.Override
+    public int getMonsterId() {
+      return monsterId_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 10;
+    private int nextRefreshTime_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
+
+    public static final int LOCK_STATE_FIELD_NUMBER = 4;
     private int lockState_;
     /**
-     * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 92
+     * </pre>
+     *
+     * <code>.InvestigationMonster.LockState lock_state = 4;</code>
      * @return The enum numeric value on the wire for lockState.
      */
     @java.lang.Override public int getLockStateValue() {
       return lockState_;
     }
     /**
-     * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+     * <pre>
+     *6.3.0 // offset: 92
+     * </pre>
+     *
+     * <code>.InvestigationMonster.LockState lock_state = 4;</code>
      * @return The lockState.
      */
     @java.lang.Override public emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState getLockState() {
@@ -645,59 +847,49 @@ public final class InvestigationMonsterOuterClass {
       return result == null ? emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.UNRECOGNIZED : result;
     }
 
-    public static final int MLBGHENCMGB_FIELD_NUMBER = 4;
-    private boolean mLBGHENCMGB_;
+    public static final int MAP_LAYER_ID_FIELD_NUMBER = 425;
+    private int mapLayerId_;
     /**
-     * <code>bool MLBGHENCMGB = 4;</code>
-     * @return The mLBGHENCMGB.
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>uint32 map_layer_id = 425;</code>
+     * @return The mapLayerId.
      */
     @java.lang.Override
-    public boolean getMLBGHENCMGB() {
-      return mLBGHENCMGB_;
+    public int getMapLayerId() {
+      return mapLayerId_;
     }
 
-    public static final int FLPIGDLICBM_FIELD_NUMBER = 559;
-    private boolean fLPIGDLICBM_;
+    public static final int LLFDCJGENJA_FIELD_NUMBER = 14;
+    private int lLFDCJGENJA_;
     /**
-     * <code>bool FLPIGDLICBM = 559;</code>
-     * @return The fLPIGDLICBM.
+     * <pre>
+     * offset: 100
+     * </pre>
+     *
+     * <code>uint32 LLFDCJGENJA = 14;</code>
+     * @return The lLFDCJGENJA.
      */
     @java.lang.Override
-    public boolean getFLPIGDLICBM() {
-      return fLPIGDLICBM_;
+    public int getLLFDCJGENJA() {
+      return lLFDCJGENJA_;
     }
 
-    public static final int IS_ALIVE_FIELD_NUMBER = 7;
-    private boolean isAlive_;
+    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 17;
+    private int maxBossChestNum_;
     /**
-     * <code>bool is_alive = 7;</code>
-     * @return The isAlive.
+     * <pre>
+     * offset: 104
+     * </pre>
+     *
+     * <code>uint32 max_boss_chest_num = 17;</code>
+     * @return The maxBossChestNum.
      */
     @java.lang.Override
-    public boolean getIsAlive() {
-      return isAlive_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 13;
-    private int id_;
-    /**
-     * <code>uint32 id = 13;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 11;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 11;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
+    public int getMaxBossChestNum() {
+      return maxBossChestNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -714,62 +906,62 @@ public final class InvestigationMonsterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (maxBossChestNum_ != 0) {
-        output.writeUInt32(1, maxBossChestNum_);
-      }
-      if (weeklyBossResinDiscountInfo_ != null) {
-        output.writeMessage(2, getWeeklyBossResinDiscountInfo());
-      }
-      if (pos_ != null) {
-        output.writeMessage(3, getPos());
-      }
-      if (mLBGHENCMGB_ != false) {
-        output.writeBool(4, mLBGHENCMGB_);
-      }
-      if (nextBossChestRefreshTime_ != 0) {
-        output.writeUInt32(5, nextBossChestRefreshTime_);
-      }
-      if (bossChestNum_ != 0) {
-        output.writeUInt32(6, bossChestNum_);
+      if (cityId_ != 0) {
+        output.writeUInt32(1, cityId_);
       }
       if (isAlive_ != false) {
-        output.writeBool(7, isAlive_);
+        output.writeBool(2, isAlive_);
       }
-      if (lockState_ != emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.LOCK_STATE_NONE.getNumber()) {
-        output.writeEnum(8, lockState_);
-      }
-      if (refreshInterval_ != 0) {
-        output.writeUInt32(9, refreshInterval_);
-      }
-      if (resin_ != 0) {
-        output.writeUInt32(10, resin_);
-      }
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(11, nextRefreshTime_);
+      if (lockState_ != emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.EFHCCIKOJLJ_LOCK_NONE.getNumber()) {
+        output.writeEnum(4, lockState_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(12, sceneId_);
+        output.writeUInt32(5, sceneId_);
       }
       if (id_ != 0) {
-        output.writeUInt32(13, id_);
+        output.writeUInt32(6, id_);
       }
-      if (cityId_ != 0) {
-        output.writeUInt32(14, cityId_);
+      if (weeklyBossResinDiscountInfo_ != null) {
+        output.writeMessage(7, getWeeklyBossResinDiscountInfo());
+      }
+      if (pos_ != null) {
+        output.writeMessage(8, getPos());
+      }
+      if (dNHPPDBBNGK_ != 0) {
+        output.writeUInt32(9, dNHPPDBBNGK_);
+      }
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(10, nextRefreshTime_);
+      }
+      if (resin_ != 0) {
+        output.writeUInt32(12, resin_);
       }
       if (level_ != 0) {
-        output.writeUInt32(15, level_);
+        output.writeUInt32(13, level_);
       }
-      if (fLPIGDLICBM_ != false) {
-        output.writeBool(559, fLPIGDLICBM_);
+      if (lLFDCJGENJA_ != 0) {
+        output.writeUInt32(14, lLFDCJGENJA_);
+      }
+      if (refreshInterval_ != 0) {
+        output.writeUInt32(15, refreshInterval_);
+      }
+      if (cCELICDLPPO_ != false) {
+        output.writeBool(16, cCELICDLPPO_);
+      }
+      if (maxBossChestNum_ != 0) {
+        output.writeUInt32(17, maxBossChestNum_);
       }
       if (mapLayerId_ != 0) {
-        output.writeUInt32(1711, mapLayerId_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(1737, groupId_);
+        output.writeUInt32(425, mapLayerId_);
       }
       if (monsterId_ != 0) {
-        output.writeUInt32(1968, monsterId_);
+        output.writeUInt32(852, monsterId_);
+      }
+      if (fBPKDKLKPPA_ != false) {
+        output.writeBool(1732, fBPKDKLKPPA_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(2041, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -780,81 +972,81 @@ public final class InvestigationMonsterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (maxBossChestNum_ != 0) {
+      if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, maxBossChestNum_);
-      }
-      if (weeklyBossResinDiscountInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getWeeklyBossResinDiscountInfo());
-      }
-      if (pos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getPos());
-      }
-      if (mLBGHENCMGB_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, mLBGHENCMGB_);
-      }
-      if (nextBossChestRefreshTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, nextBossChestRefreshTime_);
-      }
-      if (bossChestNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, bossChestNum_);
+          .computeUInt32Size(1, cityId_);
       }
       if (isAlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isAlive_);
+          .computeBoolSize(2, isAlive_);
       }
-      if (lockState_ != emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.LOCK_STATE_NONE.getNumber()) {
+      if (lockState_ != emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.EFHCCIKOJLJ_LOCK_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, lockState_);
-      }
-      if (refreshInterval_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, refreshInterval_);
-      }
-      if (resin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, resin_);
-      }
-      if (nextRefreshTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, nextRefreshTime_);
+          .computeEnumSize(4, lockState_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, sceneId_);
+          .computeUInt32Size(5, sceneId_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, id_);
+          .computeUInt32Size(6, id_);
       }
-      if (cityId_ != 0) {
+      if (weeklyBossResinDiscountInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cityId_);
+          .computeMessageSize(7, getWeeklyBossResinDiscountInfo());
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getPos());
+      }
+      if (dNHPPDBBNGK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, dNHPPDBBNGK_);
+      }
+      if (nextRefreshTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, nextRefreshTime_);
+      }
+      if (resin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, resin_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, level_);
+          .computeUInt32Size(13, level_);
       }
-      if (fLPIGDLICBM_ != false) {
+      if (lLFDCJGENJA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(559, fLPIGDLICBM_);
+          .computeUInt32Size(14, lLFDCJGENJA_);
+      }
+      if (refreshInterval_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, refreshInterval_);
+      }
+      if (cCELICDLPPO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(16, cCELICDLPPO_);
+      }
+      if (maxBossChestNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(17, maxBossChestNum_);
       }
       if (mapLayerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1711, mapLayerId_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1737, groupId_);
+          .computeUInt32Size(425, mapLayerId_);
       }
       if (monsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1968, monsterId_);
+          .computeUInt32Size(852, monsterId_);
+      }
+      if (fBPKDKLKPPA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1732, fBPKDKLKPPA_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2041, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -881,39 +1073,39 @@ public final class InvestigationMonsterOuterClass {
         if (!getWeeklyBossResinDiscountInfo()
             .equals(other.getWeeklyBossResinDiscountInfo())) return false;
       }
-      if (getMaxBossChestNum()
-          != other.getMaxBossChestNum()) return false;
-      if (getRefreshInterval()
-          != other.getRefreshInterval()) return false;
       if (getLevel()
           != other.getLevel()) return false;
+      if (getDNHPPDBBNGK()
+          != other.getDNHPPDBBNGK()) return false;
       if (getCityId()
           != other.getCityId()) return false;
-      if (getGroupId()
-          != other.getGroupId()) return false;
-      if (getBossChestNum()
-          != other.getBossChestNum()) return false;
-      if (getMapLayerId()
-          != other.getMapLayerId()) return false;
-      if (getMonsterId()
-          != other.getMonsterId()) return false;
-      if (getSceneId()
-          != other.getSceneId()) return false;
       if (getResin()
           != other.getResin()) return false;
-      if (getNextBossChestRefreshTime()
-          != other.getNextBossChestRefreshTime()) return false;
-      if (lockState_ != other.lockState_) return false;
-      if (getMLBGHENCMGB()
-          != other.getMLBGHENCMGB()) return false;
-      if (getFLPIGDLICBM()
-          != other.getFLPIGDLICBM()) return false;
       if (getIsAlive()
           != other.getIsAlive()) return false;
+      if (getCCELICDLPPO()
+          != other.getCCELICDLPPO()) return false;
+      if (getFBPKDKLKPPA()
+          != other.getFBPKDKLKPPA()) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
       if (getId()
           != other.getId()) return false;
+      if (getRefreshInterval()
+          != other.getRefreshInterval()) return false;
+      if (getMonsterId()
+          != other.getMonsterId()) return false;
       if (getNextRefreshTime()
           != other.getNextRefreshTime()) return false;
+      if (lockState_ != other.lockState_) return false;
+      if (getMapLayerId()
+          != other.getMapLayerId()) return false;
+      if (getLLFDCJGENJA()
+          != other.getLLFDCJGENJA()) return false;
+      if (getMaxBossChestNum()
+          != other.getMaxBossChestNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -933,43 +1125,43 @@ public final class InvestigationMonsterOuterClass {
         hash = (37 * hash) + WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getWeeklyBossResinDiscountInfo().hashCode();
       }
-      hash = (37 * hash) + MAX_BOSS_CHEST_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxBossChestNum();
-      hash = (37 * hash) + REFRESH_INTERVAL_FIELD_NUMBER;
-      hash = (53 * hash) + getRefreshInterval();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + DNHPPDBBNGK_FIELD_NUMBER;
+      hash = (53 * hash) + getDNHPPDBBNGK();
       hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCityId();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + BOSS_CHEST_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getBossChestNum();
-      hash = (37 * hash) + MAP_LAYER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMapLayerId();
-      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterId();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + RESIN_FIELD_NUMBER;
       hash = (53 * hash) + getResin();
-      hash = (37 * hash) + NEXT_BOSS_CHEST_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextBossChestRefreshTime();
-      hash = (37 * hash) + LOCK_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + lockState_;
-      hash = (37 * hash) + MLBGHENCMGB_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMLBGHENCMGB());
-      hash = (37 * hash) + FLPIGDLICBM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFLPIGDLICBM());
       hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAlive());
+      hash = (37 * hash) + CCELICDLPPO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCCELICDLPPO());
+      hash = (37 * hash) + FBPKDKLKPPA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFBPKDKLKPPA());
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
+      hash = (37 * hash) + REFRESH_INTERVAL_FIELD_NUMBER;
+      hash = (53 * hash) + getRefreshInterval();
+      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterId();
       hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + LOCK_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + lockState_;
+      hash = (37 * hash) + MAP_LAYER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMapLayerId();
+      hash = (37 * hash) + LLFDCJGENJA_FIELD_NUMBER;
+      hash = (53 * hash) + getLLFDCJGENJA();
+      hash = (37 * hash) + MAX_BOSS_CHEST_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxBossChestNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1115,39 +1307,39 @@ public final class InvestigationMonsterOuterClass {
           weeklyBossResinDiscountInfo_ = null;
           weeklyBossResinDiscountInfoBuilder_ = null;
         }
-        maxBossChestNum_ = 0;
-
-        refreshInterval_ = 0;
-
         level_ = 0;
+
+        dNHPPDBBNGK_ = 0;
 
         cityId_ = 0;
 
-        groupId_ = 0;
-
-        bossChestNum_ = 0;
-
-        mapLayerId_ = 0;
-
-        monsterId_ = 0;
-
-        sceneId_ = 0;
-
         resin_ = 0;
-
-        nextBossChestRefreshTime_ = 0;
-
-        lockState_ = 0;
-
-        mLBGHENCMGB_ = false;
-
-        fLPIGDLICBM_ = false;
 
         isAlive_ = false;
 
+        cCELICDLPPO_ = false;
+
+        fBPKDKLKPPA_ = false;
+
+        sceneId_ = 0;
+
+        groupId_ = 0;
+
         id_ = 0;
 
+        refreshInterval_ = 0;
+
+        monsterId_ = 0;
+
         nextRefreshTime_ = 0;
+
+        lockState_ = 0;
+
+        mapLayerId_ = 0;
+
+        lLFDCJGENJA_ = 0;
+
+        maxBossChestNum_ = 0;
 
         return this;
       }
@@ -1185,23 +1377,23 @@ public final class InvestigationMonsterOuterClass {
         } else {
           result.weeklyBossResinDiscountInfo_ = weeklyBossResinDiscountInfoBuilder_.build();
         }
-        result.maxBossChestNum_ = maxBossChestNum_;
-        result.refreshInterval_ = refreshInterval_;
         result.level_ = level_;
+        result.dNHPPDBBNGK_ = dNHPPDBBNGK_;
         result.cityId_ = cityId_;
-        result.groupId_ = groupId_;
-        result.bossChestNum_ = bossChestNum_;
-        result.mapLayerId_ = mapLayerId_;
-        result.monsterId_ = monsterId_;
-        result.sceneId_ = sceneId_;
         result.resin_ = resin_;
-        result.nextBossChestRefreshTime_ = nextBossChestRefreshTime_;
-        result.lockState_ = lockState_;
-        result.mLBGHENCMGB_ = mLBGHENCMGB_;
-        result.fLPIGDLICBM_ = fLPIGDLICBM_;
         result.isAlive_ = isAlive_;
+        result.cCELICDLPPO_ = cCELICDLPPO_;
+        result.fBPKDKLKPPA_ = fBPKDKLKPPA_;
+        result.sceneId_ = sceneId_;
+        result.groupId_ = groupId_;
         result.id_ = id_;
+        result.refreshInterval_ = refreshInterval_;
+        result.monsterId_ = monsterId_;
         result.nextRefreshTime_ = nextRefreshTime_;
+        result.lockState_ = lockState_;
+        result.mapLayerId_ = mapLayerId_;
+        result.lLFDCJGENJA_ = lLFDCJGENJA_;
+        result.maxBossChestNum_ = maxBossChestNum_;
         onBuilt();
         return result;
       }
@@ -1256,56 +1448,56 @@ public final class InvestigationMonsterOuterClass {
         if (other.hasWeeklyBossResinDiscountInfo()) {
           mergeWeeklyBossResinDiscountInfo(other.getWeeklyBossResinDiscountInfo());
         }
-        if (other.getMaxBossChestNum() != 0) {
-          setMaxBossChestNum(other.getMaxBossChestNum());
-        }
-        if (other.getRefreshInterval() != 0) {
-          setRefreshInterval(other.getRefreshInterval());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
+        }
+        if (other.getDNHPPDBBNGK() != 0) {
+          setDNHPPDBBNGK(other.getDNHPPDBBNGK());
         }
         if (other.getCityId() != 0) {
           setCityId(other.getCityId());
         }
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
-        }
-        if (other.getBossChestNum() != 0) {
-          setBossChestNum(other.getBossChestNum());
-        }
-        if (other.getMapLayerId() != 0) {
-          setMapLayerId(other.getMapLayerId());
-        }
-        if (other.getMonsterId() != 0) {
-          setMonsterId(other.getMonsterId());
-        }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
         if (other.getResin() != 0) {
           setResin(other.getResin());
-        }
-        if (other.getNextBossChestRefreshTime() != 0) {
-          setNextBossChestRefreshTime(other.getNextBossChestRefreshTime());
-        }
-        if (other.lockState_ != 0) {
-          setLockStateValue(other.getLockStateValue());
-        }
-        if (other.getMLBGHENCMGB() != false) {
-          setMLBGHENCMGB(other.getMLBGHENCMGB());
-        }
-        if (other.getFLPIGDLICBM() != false) {
-          setFLPIGDLICBM(other.getFLPIGDLICBM());
         }
         if (other.getIsAlive() != false) {
           setIsAlive(other.getIsAlive());
         }
+        if (other.getCCELICDLPPO() != false) {
+          setCCELICDLPPO(other.getCCELICDLPPO());
+        }
+        if (other.getFBPKDKLKPPA() != false) {
+          setFBPKDKLKPPA(other.getFBPKDKLKPPA());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
+        }
         if (other.getId() != 0) {
           setId(other.getId());
         }
+        if (other.getRefreshInterval() != 0) {
+          setRefreshInterval(other.getRefreshInterval());
+        }
+        if (other.getMonsterId() != 0) {
+          setMonsterId(other.getMonsterId());
+        }
         if (other.getNextRefreshTime() != 0) {
           setNextRefreshTime(other.getNextRefreshTime());
+        }
+        if (other.lockState_ != 0) {
+          setLockStateValue(other.getLockStateValue());
+        }
+        if (other.getMapLayerId() != 0) {
+          setMapLayerId(other.getMapLayerId());
+        }
+        if (other.getLLFDCJGENJA() != 0) {
+          setLLFDCJGENJA(other.getLLFDCJGENJA());
+        }
+        if (other.getMaxBossChestNum() != 0) {
+          setMaxBossChestNum(other.getMaxBossChestNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1340,14 +1532,22 @@ public final class InvestigationMonsterOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -1358,7 +1558,11 @@ public final class InvestigationMonsterOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1374,7 +1578,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1388,7 +1596,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1406,7 +1618,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -1420,7 +1636,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -1428,7 +1648,11 @@ public final class InvestigationMonsterOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -1439,7 +1663,11 @@ public final class InvestigationMonsterOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.Vector pos = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1459,14 +1687,22 @@ public final class InvestigationMonsterOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> weeklyBossResinDiscountInfoBuilder_;
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        * @return Whether the weeklyBossResinDiscountInfo field is set.
        */
       public boolean hasWeeklyBossResinDiscountInfo() {
         return weeklyBossResinDiscountInfoBuilder_ != null || weeklyBossResinDiscountInfo_ != null;
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        * @return The weeklyBossResinDiscountInfo.
        */
       public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo() {
@@ -1477,7 +1713,11 @@ public final class InvestigationMonsterOuterClass {
         }
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public Builder setWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
@@ -1493,7 +1733,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public Builder setWeeklyBossResinDiscountInfo(
           emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder builderForValue) {
@@ -1507,7 +1751,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public Builder mergeWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
@@ -1525,7 +1773,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public Builder clearWeeklyBossResinDiscountInfo() {
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
@@ -1539,7 +1791,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder getWeeklyBossResinDiscountInfoBuilder() {
         
@@ -1547,7 +1803,11 @@ public final class InvestigationMonsterOuterClass {
         return getWeeklyBossResinDiscountInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
         if (weeklyBossResinDiscountInfoBuilder_ != null) {
@@ -1558,7 +1818,11 @@ public final class InvestigationMonsterOuterClass {
         }
       }
       /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 2;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> 
@@ -1574,71 +1838,13 @@ public final class InvestigationMonsterOuterClass {
         return weeklyBossResinDiscountInfoBuilder_;
       }
 
-      private int maxBossChestNum_ ;
-      /**
-       * <code>uint32 max_boss_chest_num = 1;</code>
-       * @return The maxBossChestNum.
-       */
-      @java.lang.Override
-      public int getMaxBossChestNum() {
-        return maxBossChestNum_;
-      }
-      /**
-       * <code>uint32 max_boss_chest_num = 1;</code>
-       * @param value The maxBossChestNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxBossChestNum(int value) {
-        
-        maxBossChestNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_boss_chest_num = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxBossChestNum() {
-        
-        maxBossChestNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int refreshInterval_ ;
-      /**
-       * <code>uint32 refresh_interval = 9;</code>
-       * @return The refreshInterval.
-       */
-      @java.lang.Override
-      public int getRefreshInterval() {
-        return refreshInterval_;
-      }
-      /**
-       * <code>uint32 refresh_interval = 9;</code>
-       * @param value The refreshInterval to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRefreshInterval(int value) {
-        
-        refreshInterval_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 refresh_interval = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRefreshInterval() {
-        
-        refreshInterval_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
-       * <code>uint32 level = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>uint32 level = 13;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -1646,7 +1852,11 @@ public final class InvestigationMonsterOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>uint32 level = 13;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -1657,7 +1867,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>uint32 level = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -1667,9 +1881,56 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
 
+      private int dNHPPDBBNGK_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DNHPPDBBNGK = 9;</code>
+       * @return The dNHPPDBBNGK.
+       */
+      @java.lang.Override
+      public int getDNHPPDBBNGK() {
+        return dNHPPDBBNGK_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DNHPPDBBNGK = 9;</code>
+       * @param value The dNHPPDBBNGK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDNHPPDBBNGK(int value) {
+        
+        dNHPPDBBNGK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DNHPPDBBNGK = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDNHPPDBBNGK() {
+        
+        dNHPPDBBNGK_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>uint32 city_id = 1;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -1677,7 +1938,11 @@ public final class InvestigationMonsterOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>uint32 city_id = 1;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -1688,7 +1953,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 14;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>uint32 city_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -1698,164 +1967,13 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
 
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 1737;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 1737;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 1737;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bossChestNum_ ;
-      /**
-       * <code>uint32 boss_chest_num = 6;</code>
-       * @return The bossChestNum.
-       */
-      @java.lang.Override
-      public int getBossChestNum() {
-        return bossChestNum_;
-      }
-      /**
-       * <code>uint32 boss_chest_num = 6;</code>
-       * @param value The bossChestNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBossChestNum(int value) {
-        
-        bossChestNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 boss_chest_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBossChestNum() {
-        
-        bossChestNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mapLayerId_ ;
-      /**
-       * <code>uint32 map_layer_id = 1711;</code>
-       * @return The mapLayerId.
-       */
-      @java.lang.Override
-      public int getMapLayerId() {
-        return mapLayerId_;
-      }
-      /**
-       * <code>uint32 map_layer_id = 1711;</code>
-       * @param value The mapLayerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMapLayerId(int value) {
-        
-        mapLayerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 map_layer_id = 1711;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMapLayerId() {
-        
-        mapLayerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int monsterId_ ;
-      /**
-       * <code>uint32 monster_id = 1968;</code>
-       * @return The monsterId.
-       */
-      @java.lang.Override
-      public int getMonsterId() {
-        return monsterId_;
-      }
-      /**
-       * <code>uint32 monster_id = 1968;</code>
-       * @param value The monsterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMonsterId(int value) {
-        
-        monsterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 monster_id = 1968;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMonsterId() {
-        
-        monsterId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 12;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 12;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int resin_ ;
       /**
-       * <code>uint32 resin = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
+       * <code>uint32 resin = 12;</code>
        * @return The resin.
        */
       @java.lang.Override
@@ -1863,7 +1981,11 @@ public final class InvestigationMonsterOuterClass {
         return resin_;
       }
       /**
-       * <code>uint32 resin = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
+       * <code>uint32 resin = 12;</code>
        * @param value The resin to set.
        * @return This builder for chaining.
        */
@@ -1874,7 +1996,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>uint32 resin = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 60
+       * </pre>
+       *
+       * <code>uint32 resin = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearResin() {
@@ -1884,47 +2010,411 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
 
-      private int nextBossChestRefreshTime_ ;
+      private boolean isAlive_ ;
       /**
-       * <code>uint32 next_boss_chest_refresh_time = 5;</code>
-       * @return The nextBossChestRefreshTime.
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_alive = 2;</code>
+       * @return The isAlive.
        */
       @java.lang.Override
-      public int getNextBossChestRefreshTime() {
-        return nextBossChestRefreshTime_;
+      public boolean getIsAlive() {
+        return isAlive_;
       }
       /**
-       * <code>uint32 next_boss_chest_refresh_time = 5;</code>
-       * @param value The nextBossChestRefreshTime to set.
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_alive = 2;</code>
+       * @param value The isAlive to set.
        * @return This builder for chaining.
        */
-      public Builder setNextBossChestRefreshTime(int value) {
+      public Builder setIsAlive(boolean value) {
         
-        nextBossChestRefreshTime_ = value;
+        isAlive_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 next_boss_chest_refresh_time = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>bool is_alive = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNextBossChestRefreshTime() {
+      public Builder clearIsAlive() {
         
-        nextBossChestRefreshTime_ = 0;
+        isAlive_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cCELICDLPPO_ ;
+      /**
+       * <pre>
+       * offset: 65
+       * </pre>
+       *
+       * <code>bool CCELICDLPPO = 16;</code>
+       * @return The cCELICDLPPO.
+       */
+      @java.lang.Override
+      public boolean getCCELICDLPPO() {
+        return cCELICDLPPO_;
+      }
+      /**
+       * <pre>
+       * offset: 65
+       * </pre>
+       *
+       * <code>bool CCELICDLPPO = 16;</code>
+       * @param value The cCELICDLPPO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCCELICDLPPO(boolean value) {
+        
+        cCELICDLPPO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 65
+       * </pre>
+       *
+       * <code>bool CCELICDLPPO = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCCELICDLPPO() {
+        
+        cCELICDLPPO_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean fBPKDKLKPPA_ ;
+      /**
+       * <pre>
+       * offset: 66
+       * </pre>
+       *
+       * <code>bool FBPKDKLKPPA = 1732;</code>
+       * @return The fBPKDKLKPPA.
+       */
+      @java.lang.Override
+      public boolean getFBPKDKLKPPA() {
+        return fBPKDKLKPPA_;
+      }
+      /**
+       * <pre>
+       * offset: 66
+       * </pre>
+       *
+       * <code>bool FBPKDKLKPPA = 1732;</code>
+       * @param value The fBPKDKLKPPA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFBPKDKLKPPA(boolean value) {
+        
+        fBPKDKLKPPA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 66
+       * </pre>
+       *
+       * <code>bool FBPKDKLKPPA = 1732;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFBPKDKLKPPA() {
+        
+        fBPKDKLKPPA_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 scene_id = 5;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 scene_id = 5;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 68
+       * </pre>
+       *
+       * <code>uint32 scene_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int groupId_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>uint32 group_id = 2041;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>uint32 group_id = 2041;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>uint32 group_id = 2041;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 76
+       * </pre>
+       *
+       * <code>uint32 id = 6;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 76
+       * </pre>
+       *
+       * <code>uint32 id = 6;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 76
+       * </pre>
+       *
+       * <code>uint32 id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int refreshInterval_ ;
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 refresh_interval = 15;</code>
+       * @return The refreshInterval.
+       */
+      @java.lang.Override
+      public int getRefreshInterval() {
+        return refreshInterval_;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 refresh_interval = 15;</code>
+       * @param value The refreshInterval to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRefreshInterval(int value) {
+        
+        refreshInterval_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 refresh_interval = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRefreshInterval() {
+        
+        refreshInterval_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int monsterId_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 84
+       * </pre>
+       *
+       * <code>uint32 monster_id = 852;</code>
+       * @return The monsterId.
+       */
+      @java.lang.Override
+      public int getMonsterId() {
+        return monsterId_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 84
+       * </pre>
+       *
+       * <code>uint32 monster_id = 852;</code>
+       * @param value The monsterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMonsterId(int value) {
+        
+        monsterId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 84
+       * </pre>
+       *
+       * <code>uint32 monster_id = 852;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMonsterId() {
+        
+        monsterId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
         onChanged();
         return this;
       }
 
       private int lockState_ = 0;
       /**
-       * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 92
+       * </pre>
+       *
+       * <code>.InvestigationMonster.LockState lock_state = 4;</code>
        * @return The enum numeric value on the wire for lockState.
        */
       @java.lang.Override public int getLockStateValue() {
         return lockState_;
       }
       /**
-       * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 92
+       * </pre>
+       *
+       * <code>.InvestigationMonster.LockState lock_state = 4;</code>
        * @param value The enum numeric value on the wire for lockState to set.
        * @return This builder for chaining.
        */
@@ -1935,7 +2425,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 92
+       * </pre>
+       *
+       * <code>.InvestigationMonster.LockState lock_state = 4;</code>
        * @return The lockState.
        */
       @java.lang.Override
@@ -1945,7 +2439,11 @@ public final class InvestigationMonsterOuterClass {
         return result == null ? emu.grasscutter.net.proto.InvestigationMonsterOuterClass.InvestigationMonster.LockState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 92
+       * </pre>
+       *
+       * <code>.InvestigationMonster.LockState lock_state = 4;</code>
        * @param value The lockState to set.
        * @return This builder for chaining.
        */
@@ -1959,7 +2457,11 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
       /**
-       * <code>.InvestigationMonster.LockState lock_state = 8;</code>
+       * <pre>
+       *6.3.0 // offset: 92
+       * </pre>
+       *
+       * <code>.InvestigationMonster.LockState lock_state = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearLockState() {
@@ -1969,157 +2471,131 @@ public final class InvestigationMonsterOuterClass {
         return this;
       }
 
-      private boolean mLBGHENCMGB_ ;
+      private int mapLayerId_ ;
       /**
-       * <code>bool MLBGHENCMGB = 4;</code>
-       * @return The mLBGHENCMGB.
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 425;</code>
+       * @return The mapLayerId.
        */
       @java.lang.Override
-      public boolean getMLBGHENCMGB() {
-        return mLBGHENCMGB_;
+      public int getMapLayerId() {
+        return mapLayerId_;
       }
       /**
-       * <code>bool MLBGHENCMGB = 4;</code>
-       * @param value The mLBGHENCMGB to set.
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 425;</code>
+       * @param value The mapLayerId to set.
        * @return This builder for chaining.
        */
-      public Builder setMLBGHENCMGB(boolean value) {
+      public Builder setMapLayerId(int value) {
         
-        mLBGHENCMGB_ = value;
+        mapLayerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool MLBGHENCMGB = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 425;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMLBGHENCMGB() {
+      public Builder clearMapLayerId() {
         
-        mLBGHENCMGB_ = false;
+        mapLayerId_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean fLPIGDLICBM_ ;
+      private int lLFDCJGENJA_ ;
       /**
-       * <code>bool FLPIGDLICBM = 559;</code>
-       * @return The fLPIGDLICBM.
+       * <pre>
+       * offset: 100
+       * </pre>
+       *
+       * <code>uint32 LLFDCJGENJA = 14;</code>
+       * @return The lLFDCJGENJA.
        */
       @java.lang.Override
-      public boolean getFLPIGDLICBM() {
-        return fLPIGDLICBM_;
+      public int getLLFDCJGENJA() {
+        return lLFDCJGENJA_;
       }
       /**
-       * <code>bool FLPIGDLICBM = 559;</code>
-       * @param value The fLPIGDLICBM to set.
+       * <pre>
+       * offset: 100
+       * </pre>
+       *
+       * <code>uint32 LLFDCJGENJA = 14;</code>
+       * @param value The lLFDCJGENJA to set.
        * @return This builder for chaining.
        */
-      public Builder setFLPIGDLICBM(boolean value) {
+      public Builder setLLFDCJGENJA(int value) {
         
-        fLPIGDLICBM_ = value;
+        lLFDCJGENJA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool FLPIGDLICBM = 559;</code>
+       * <pre>
+       * offset: 100
+       * </pre>
+       *
+       * <code>uint32 LLFDCJGENJA = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFLPIGDLICBM() {
+      public Builder clearLLFDCJGENJA() {
         
-        fLPIGDLICBM_ = false;
+        lLFDCJGENJA_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isAlive_ ;
+      private int maxBossChestNum_ ;
       /**
-       * <code>bool is_alive = 7;</code>
-       * @return The isAlive.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>uint32 max_boss_chest_num = 17;</code>
+       * @return The maxBossChestNum.
        */
       @java.lang.Override
-      public boolean getIsAlive() {
-        return isAlive_;
+      public int getMaxBossChestNum() {
+        return maxBossChestNum_;
       }
       /**
-       * <code>bool is_alive = 7;</code>
-       * @param value The isAlive to set.
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>uint32 max_boss_chest_num = 17;</code>
+       * @param value The maxBossChestNum to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAlive(boolean value) {
+      public Builder setMaxBossChestNum(int value) {
         
-        isAlive_ = value;
+        maxBossChestNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_alive = 7;</code>
+       * <pre>
+       * offset: 104
+       * </pre>
+       *
+       * <code>uint32 max_boss_chest_num = 17;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAlive() {
+      public Builder clearMaxBossChestNum() {
         
-        isAlive_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 13;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 13;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
+        maxBossChestNum_ = 0;
         onChanged();
         return this;
       }
@@ -2190,28 +2666,29 @@ public final class InvestigationMonsterOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032InvestigationMonster.proto\032\014Vector.pro" +
-      "to\032!WeeklyBossResinDiscountInfo.proto\"\270\004" +
-      "\n\024InvestigationMonster\022\024\n\003pos\030\003 \001(\0132\007.Ve" +
-      "ctor\022E\n\037weekly_boss_resin_discount_info\030" +
-      "\002 \001(\0132\034.WeeklyBossResinDiscountInfo\022\032\n\022m" +
-      "ax_boss_chest_num\030\001 \001(\r\022\030\n\020refresh_inter" +
-      "val\030\t \001(\r\022\r\n\005level\030\017 \001(\r\022\017\n\007city_id\030\016 \001(" +
-      "\r\022\021\n\010group_id\030\311\r \001(\r\022\026\n\016boss_chest_num\030\006" +
-      " \001(\r\022\025\n\014map_layer_id\030\257\r \001(\r\022\023\n\nmonster_i" +
-      "d\030\260\017 \001(\r\022\020\n\010scene_id\030\014 \001(\r\022\r\n\005resin\030\n \001(" +
-      "\r\022$\n\034next_boss_chest_refresh_time\030\005 \001(\r\022" +
-      "3\n\nlock_state\030\010 \001(\0162\037.InvestigationMonst" +
-      "er.LockState\022\023\n\013MLBGHENCMGB\030\004 \001(\010\022\024\n\013FLP" +
-      "IGDLICBM\030\257\004 \001(\010\022\020\n\010is_alive\030\007 \001(\010\022\n\n\002id\030" +
-      "\r \001(\r\022\031\n\021next_refresh_time\030\013 \001(\r\"6\n\tLock" +
-      "State\022\023\n\017LOCK_STATE_NONE\020\000\022\024\n\020LOCK_STATE" +
-      "_QUEST\020\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\032InvestigationMonster.proto\032\017LockState." +
+      "proto\032\014Vector.proto\032!WeeklyBossResinDisc" +
+      "ountInfo.proto\"\260\004\n\024InvestigationMonster\022" +
+      "\024\n\003pos\030\010 \001(\0132\007.Vector\022E\n\037weekly_boss_res" +
+      "in_discount_info\030\007 \001(\0132\034.WeeklyBossResin" +
+      "DiscountInfo\022\r\n\005level\030\r \001(\r\022\023\n\013DNHPPDBBN" +
+      "GK\030\t \001(\r\022\017\n\007city_id\030\001 \001(\r\022\r\n\005resin\030\014 \001(\r" +
+      "\022\020\n\010is_alive\030\002 \001(\010\022\023\n\013CCELICDLPPO\030\020 \001(\010\022" +
+      "\024\n\013FBPKDKLKPPA\030\304\r \001(\010\022\020\n\010scene_id\030\005 \001(\r\022" +
+      "\021\n\010group_id\030\371\017 \001(\r\022\n\n\002id\030\006 \001(\r\022\030\n\020refres" +
+      "h_interval\030\017 \001(\r\022\023\n\nmonster_id\030\324\006 \001(\r\022\031\n" +
+      "\021next_refresh_time\030\n \001(\r\0223\n\nlock_state\030\004" +
+      " \001(\0162\037.InvestigationMonster.LockState\022\025\n" +
+      "\014map_layer_id\030\251\003 \001(\r\022\023\n\013LLFDCJGENJA\030\016 \001(" +
+      "\r\022\032\n\022max_boss_chest_num\030\021 \001(\r\"B\n\tLockSta" +
+      "te\022\031\n\025EFHCCIKOJLJ_LOCK_NONE\020\000\022\032\n\026EFHCCIK" +
+      "OJLJ_LOCK_QUEST\020\001B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor(),
         });
@@ -2220,7 +2697,8 @@ public final class InvestigationMonsterOuterClass {
     internal_static_InvestigationMonster_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InvestigationMonster_descriptor,
-        new java.lang.String[] { "Pos", "WeeklyBossResinDiscountInfo", "MaxBossChestNum", "RefreshInterval", "Level", "CityId", "GroupId", "BossChestNum", "MapLayerId", "MonsterId", "SceneId", "Resin", "NextBossChestRefreshTime", "LockState", "MLBGHENCMGB", "FLPIGDLICBM", "IsAlive", "Id", "NextRefreshTime", });
+        new java.lang.String[] { "Pos", "WeeklyBossResinDiscountInfo", "Level", "DNHPPDBBNGK", "CityId", "Resin", "IsAlive", "CCELICDLPPO", "FBPKDKLKPPA", "SceneId", "GroupId", "Id", "RefreshInterval", "MonsterId", "NextRefreshTime", "LockState", "MapLayerId", "LLFDCJGENJA", "MaxBossChestNum", });
+    emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor();
   }

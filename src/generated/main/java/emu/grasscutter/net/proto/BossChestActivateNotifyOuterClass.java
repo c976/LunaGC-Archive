@@ -19,31 +19,47 @@ public final class BossChestActivateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return A list containing the qualifyUidList.
      */
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return The count of qualifyUidList.
      */
     int getQualifyUidListCount();
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
     int getQualifyUidList(int index);
 
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 1249
+   * CmdId: 3663
    * </pre>
    *
    * Protobuf type {@code BossChestActivateNotify}
@@ -92,7 +108,7 @@ public final class BossChestActivateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 qualifyUidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -100,7 +116,7 @@ public final class BossChestActivateNotifyOuterClass {
               qualifyUidList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -113,7 +129,7 @@ public final class BossChestActivateNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 96: {
 
               entityId_ = input.readUInt32();
               break;
@@ -153,10 +169,14 @@ public final class BossChestActivateNotifyOuterClass {
               emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify.class, emu.grasscutter.net.proto.BossChestActivateNotifyOuterClass.BossChestActivateNotify.Builder.class);
     }
 
-    public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 8;
+    public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return A list containing the qualifyUidList.
      */
     @java.lang.Override
@@ -165,14 +185,22 @@ public final class BossChestActivateNotifyOuterClass {
       return qualifyUidList_;
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @return The count of qualifyUidList.
      */
     public int getQualifyUidListCount() {
       return qualifyUidList_.size();
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 qualify_uid_list = 7;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
@@ -181,10 +209,14 @@ public final class BossChestActivateNotifyOuterClass {
     }
     private int qualifyUidListMemoizedSerializedSize = -1;
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 9;
+    public static final int ENTITY_ID_FIELD_NUMBER = 12;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -208,14 +240,14 @@ public final class BossChestActivateNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getQualifyUidListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(qualifyUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < qualifyUidList_.size(); i++) {
         output.writeUInt32NoTag(qualifyUidList_.getInt(i));
       }
       if (entityId_ != 0) {
-        output.writeUInt32(9, entityId_);
+        output.writeUInt32(12, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -242,7 +274,7 @@ public final class BossChestActivateNotifyOuterClass {
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, entityId_);
+          .computeUInt32Size(12, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -377,7 +409,7 @@ public final class BossChestActivateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1249
+     * CmdId: 3663
      * </pre>
      *
      * Protobuf type {@code BossChestActivateNotify}
@@ -553,7 +585,11 @@ public final class BossChestActivateNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return A list containing the qualifyUidList.
        */
       public java.util.List<java.lang.Integer>
@@ -562,14 +598,22 @@ public final class BossChestActivateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(qualifyUidList_) : qualifyUidList_;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return The count of qualifyUidList.
        */
       public int getQualifyUidListCount() {
         return qualifyUidList_.size();
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param index The index of the element to return.
        * @return The qualifyUidList at the given index.
        */
@@ -577,7 +621,11 @@ public final class BossChestActivateNotifyOuterClass {
         return qualifyUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The qualifyUidList to set.
        * @return This builder for chaining.
@@ -590,7 +638,11 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param value The qualifyUidList to add.
        * @return This builder for chaining.
        */
@@ -601,7 +653,11 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @param values The qualifyUidList to add.
        * @return This builder for chaining.
        */
@@ -614,7 +670,11 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 qualify_uid_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearQualifyUidList() {
@@ -626,7 +686,11 @@ public final class BossChestActivateNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 12;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -634,7 +698,11 @@ public final class BossChestActivateNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 12;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -645,7 +713,11 @@ public final class BossChestActivateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -722,8 +794,8 @@ public final class BossChestActivateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035BossChestActivateNotify.proto\"F\n\027BossC" +
-      "hestActivateNotify\022\030\n\020qualify_uid_list\030\010" +
-      " \003(\r\022\021\n\tentity_id\030\t \001(\rB\033\n\031emu.grasscutt" +
+      "hestActivateNotify\022\030\n\020qualify_uid_list\030\007" +
+      " \003(\r\022\021\n\tentity_id\030\014 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

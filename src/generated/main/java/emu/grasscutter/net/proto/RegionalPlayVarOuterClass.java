@@ -19,34 +19,46 @@ public final class RegionalPlayVarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float CDLIONNFPIF = 14;</code>
-     * @return The cDLIONNFPIF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float HCKBOIFHIKA = 13;</code>
+     * @return The hCKBOIFHIKA.
      */
-    float getCDLIONNFPIF();
+    float getHCKBOIFHIKA();
 
     /**
-     * <code>uint32 type = 5;</code>
-     * @return The type.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>float KDNODJJPJNC = 15;</code>
+     * @return The kDNODJJPJNC.
      */
-    int getType();
+    float getKDNODJJPJNC();
 
     /**
-     * <code>float LPCPLLLHLIO = 11;</code>
-     * @return The lPCPLLLHLIO.
-     */
-    float getLPCPLLLHLIO();
-
-    /**
-     * <code>float value = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float value = 6;</code>
      * @return The value.
      */
     float getValue();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 type = 3;</code>
+     * @return The type.
+     */
+    int getType();
   }
   /**
-   * <pre>
-   * Obf: INFLJKJBHAN
-   * </pre>
-   *
    * Protobuf type {@code RegionalPlayVar}
    */
   public static final class RegionalPlayVar extends
@@ -91,24 +103,24 @@ public final class RegionalPlayVarOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
-
-              value_ = input.readFloat();
-              break;
-            }
-            case 40: {
+            case 24: {
 
               type_ = input.readUInt32();
               break;
             }
-            case 93: {
+            case 53: {
 
-              lPCPLLLHLIO_ = input.readFloat();
+              value_ = input.readFloat();
               break;
             }
-            case 117: {
+            case 109: {
 
-              cDLIONNFPIF_ = input.readFloat();
+              hCKBOIFHIKA_ = input.readFloat();
+              break;
+            }
+            case 125: {
+
+              kDNODJJPJNC_ = input.readFloat();
               break;
             }
             default: {
@@ -143,48 +155,64 @@ public final class RegionalPlayVarOuterClass {
               emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.class, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder.class);
     }
 
-    public static final int CDLIONNFPIF_FIELD_NUMBER = 14;
-    private float cDLIONNFPIF_;
+    public static final int HCKBOIFHIKA_FIELD_NUMBER = 13;
+    private float hCKBOIFHIKA_;
     /**
-     * <code>float CDLIONNFPIF = 14;</code>
-     * @return The cDLIONNFPIF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float HCKBOIFHIKA = 13;</code>
+     * @return The hCKBOIFHIKA.
      */
     @java.lang.Override
-    public float getCDLIONNFPIF() {
-      return cDLIONNFPIF_;
+    public float getHCKBOIFHIKA() {
+      return hCKBOIFHIKA_;
     }
 
-    public static final int TYPE_FIELD_NUMBER = 5;
-    private int type_;
+    public static final int KDNODJJPJNC_FIELD_NUMBER = 15;
+    private float kDNODJJPJNC_;
     /**
-     * <code>uint32 type = 5;</code>
-     * @return The type.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>float KDNODJJPJNC = 15;</code>
+     * @return The kDNODJJPJNC.
      */
     @java.lang.Override
-    public int getType() {
-      return type_;
+    public float getKDNODJJPJNC() {
+      return kDNODJJPJNC_;
     }
 
-    public static final int LPCPLLLHLIO_FIELD_NUMBER = 11;
-    private float lPCPLLLHLIO_;
-    /**
-     * <code>float LPCPLLLHLIO = 11;</code>
-     * @return The lPCPLLLHLIO.
-     */
-    @java.lang.Override
-    public float getLPCPLLLHLIO() {
-      return lPCPLLLHLIO_;
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 4;
+    public static final int VALUE_FIELD_NUMBER = 6;
     private float value_;
     /**
-     * <code>float value = 4;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float value = 6;</code>
      * @return The value.
      */
     @java.lang.Override
     public float getValue() {
       return value_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 3;
+    private int type_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 type = 3;</code>
+     * @return The type.
+     */
+    @java.lang.Override
+    public int getType() {
+      return type_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class RegionalPlayVarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (value_ != 0F) {
-        output.writeFloat(4, value_);
-      }
       if (type_ != 0) {
-        output.writeUInt32(5, type_);
+        output.writeUInt32(3, type_);
       }
-      if (lPCPLLLHLIO_ != 0F) {
-        output.writeFloat(11, lPCPLLLHLIO_);
+      if (value_ != 0F) {
+        output.writeFloat(6, value_);
       }
-      if (cDLIONNFPIF_ != 0F) {
-        output.writeFloat(14, cDLIONNFPIF_);
+      if (hCKBOIFHIKA_ != 0F) {
+        output.writeFloat(13, hCKBOIFHIKA_);
+      }
+      if (kDNODJJPJNC_ != 0F) {
+        output.writeFloat(15, kDNODJJPJNC_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class RegionalPlayVarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (value_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, value_);
-      }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, type_);
+          .computeUInt32Size(3, type_);
       }
-      if (lPCPLLLHLIO_ != 0F) {
+      if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, lPCPLLLHLIO_);
+          .computeFloatSize(6, value_);
       }
-      if (cDLIONNFPIF_ != 0F) {
+      if (hCKBOIFHIKA_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, cDLIONNFPIF_);
+          .computeFloatSize(13, hCKBOIFHIKA_);
+      }
+      if (kDNODJJPJNC_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(15, kDNODJJPJNC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,17 +281,17 @@ public final class RegionalPlayVarOuterClass {
       }
       emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar other = (emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar) obj;
 
-      if (java.lang.Float.floatToIntBits(getCDLIONNFPIF())
+      if (java.lang.Float.floatToIntBits(getHCKBOIFHIKA())
           != java.lang.Float.floatToIntBits(
-              other.getCDLIONNFPIF())) return false;
-      if (getType()
-          != other.getType()) return false;
-      if (java.lang.Float.floatToIntBits(getLPCPLLLHLIO())
+              other.getHCKBOIFHIKA())) return false;
+      if (java.lang.Float.floatToIntBits(getKDNODJJPJNC())
           != java.lang.Float.floatToIntBits(
-              other.getLPCPLLLHLIO())) return false;
+              other.getKDNODJJPJNC())) return false;
       if (java.lang.Float.floatToIntBits(getValue())
           != java.lang.Float.floatToIntBits(
               other.getValue())) return false;
+      if (getType()
+          != other.getType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,17 +303,17 @@ public final class RegionalPlayVarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CDLIONNFPIF_FIELD_NUMBER;
+      hash = (37 * hash) + HCKBOIFHIKA_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCDLIONNFPIF());
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType();
-      hash = (37 * hash) + LPCPLLLHLIO_FIELD_NUMBER;
+          getHCKBOIFHIKA());
+      hash = (37 * hash) + KDNODJJPJNC_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getLPCPLLLHLIO());
+          getKDNODJJPJNC());
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getValue());
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,10 +410,6 @@ public final class RegionalPlayVarOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: INFLJKJBHAN
-     * </pre>
-     *
      * Protobuf type {@code RegionalPlayVar}
      */
     public static final class Builder extends
@@ -423,13 +447,13 @@ public final class RegionalPlayVarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cDLIONNFPIF_ = 0F;
+        hCKBOIFHIKA_ = 0F;
 
-        type_ = 0;
-
-        lPCPLLLHLIO_ = 0F;
+        kDNODJJPJNC_ = 0F;
 
         value_ = 0F;
+
+        type_ = 0;
 
         return this;
       }
@@ -457,10 +481,10 @@ public final class RegionalPlayVarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar buildPartial() {
         emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar result = new emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar(this);
-        result.cDLIONNFPIF_ = cDLIONNFPIF_;
-        result.type_ = type_;
-        result.lPCPLLLHLIO_ = lPCPLLLHLIO_;
+        result.hCKBOIFHIKA_ = hCKBOIFHIKA_;
+        result.kDNODJJPJNC_ = kDNODJJPJNC_;
         result.value_ = value_;
+        result.type_ = type_;
         onBuilt();
         return result;
       }
@@ -509,17 +533,17 @@ public final class RegionalPlayVarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar other) {
         if (other == emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.getDefaultInstance()) return this;
-        if (other.getCDLIONNFPIF() != 0F) {
-          setCDLIONNFPIF(other.getCDLIONNFPIF());
+        if (other.getHCKBOIFHIKA() != 0F) {
+          setHCKBOIFHIKA(other.getHCKBOIFHIKA());
         }
-        if (other.getType() != 0) {
-          setType(other.getType());
-        }
-        if (other.getLPCPLLLHLIO() != 0F) {
-          setLPCPLLLHLIO(other.getLPCPLLLHLIO());
+        if (other.getKDNODJJPJNC() != 0F) {
+          setKDNODJJPJNC(other.getKDNODJJPJNC());
         }
         if (other.getValue() != 0F) {
           setValue(other.getValue());
+        }
+        if (other.getType() != 0) {
+          setType(other.getType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,102 +574,99 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
 
-      private float cDLIONNFPIF_ ;
+      private float hCKBOIFHIKA_ ;
       /**
-       * <code>float CDLIONNFPIF = 14;</code>
-       * @return The cDLIONNFPIF.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float HCKBOIFHIKA = 13;</code>
+       * @return The hCKBOIFHIKA.
        */
       @java.lang.Override
-      public float getCDLIONNFPIF() {
-        return cDLIONNFPIF_;
+      public float getHCKBOIFHIKA() {
+        return hCKBOIFHIKA_;
       }
       /**
-       * <code>float CDLIONNFPIF = 14;</code>
-       * @param value The cDLIONNFPIF to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float HCKBOIFHIKA = 13;</code>
+       * @param value The hCKBOIFHIKA to set.
        * @return This builder for chaining.
        */
-      public Builder setCDLIONNFPIF(float value) {
+      public Builder setHCKBOIFHIKA(float value) {
         
-        cDLIONNFPIF_ = value;
+        hCKBOIFHIKA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float CDLIONNFPIF = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float HCKBOIFHIKA = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCDLIONNFPIF() {
+      public Builder clearHCKBOIFHIKA() {
         
-        cDLIONNFPIF_ = 0F;
+        hCKBOIFHIKA_ = 0F;
         onChanged();
         return this;
       }
 
-      private int type_ ;
+      private float kDNODJJPJNC_ ;
       /**
-       * <code>uint32 type = 5;</code>
-       * @return The type.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float KDNODJJPJNC = 15;</code>
+       * @return The kDNODJJPJNC.
        */
       @java.lang.Override
-      public int getType() {
-        return type_;
+      public float getKDNODJJPJNC() {
+        return kDNODJJPJNC_;
       }
       /**
-       * <code>uint32 type = 5;</code>
-       * @param value The type to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float KDNODJJPJNC = 15;</code>
+       * @param value The kDNODJJPJNC to set.
        * @return This builder for chaining.
        */
-      public Builder setType(int value) {
+      public Builder setKDNODJJPJNC(float value) {
         
-        type_ = value;
+        kDNODJJPJNC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 type = 5;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>float KDNODJJPJNC = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearType() {
+      public Builder clearKDNODJJPJNC() {
         
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float lPCPLLLHLIO_ ;
-      /**
-       * <code>float LPCPLLLHLIO = 11;</code>
-       * @return The lPCPLLLHLIO.
-       */
-      @java.lang.Override
-      public float getLPCPLLLHLIO() {
-        return lPCPLLLHLIO_;
-      }
-      /**
-       * <code>float LPCPLLLHLIO = 11;</code>
-       * @param value The lPCPLLLHLIO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLPCPLLLHLIO(float value) {
-        
-        lPCPLLLHLIO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float LPCPLLLHLIO = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLPCPLLLHLIO() {
-        
-        lPCPLLLHLIO_ = 0F;
+        kDNODJJPJNC_ = 0F;
         onChanged();
         return this;
       }
 
       private float value_ ;
       /**
-       * <code>float value = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float value = 6;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -653,7 +674,11 @@ public final class RegionalPlayVarOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float value = 6;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -664,12 +689,59 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
       /**
-       * <code>float value = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float value = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
         
         value_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int type_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 type = 3;</code>
+       * @return The type.
+       */
+      @java.lang.Override
+      public int getType() {
+        return type_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 type = 3;</code>
+       * @param value The type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setType(int value) {
+        
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 type = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearType() {
+        
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -741,8 +813,8 @@ public final class RegionalPlayVarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025RegionalPlayVar.proto\"X\n\017RegionalPlayV" +
-      "ar\022\023\n\013CDLIONNFPIF\030\016 \001(\002\022\014\n\004type\030\005 \001(\r\022\023\n" +
-      "\013LPCPLLLHLIO\030\013 \001(\002\022\r\n\005value\030\004 \001(\002B\033\n\031emu" +
+      "ar\022\023\n\013HCKBOIFHIKA\030\r \001(\002\022\023\n\013KDNODJJPJNC\030\017" +
+      " \001(\002\022\r\n\005value\030\006 \001(\002\022\014\n\004type\030\003 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -754,7 +826,7 @@ public final class RegionalPlayVarOuterClass {
     internal_static_RegionalPlayVar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionalPlayVar_descriptor,
-        new java.lang.String[] { "CDLIONNFPIF", "Type", "LPCPLLLHLIO", "Value", });
+        new java.lang.String[] { "HCKBOIFHIKA", "KDNODJJPJNC", "Value", "Type", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

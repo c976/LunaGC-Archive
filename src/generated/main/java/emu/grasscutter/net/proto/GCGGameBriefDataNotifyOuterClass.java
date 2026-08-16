@@ -19,32 +19,39 @@ public final class GCGGameBriefDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_game = 11;</code>
-     * @return The isNewGame.
-     */
-    boolean getIsNewGame();
-
-    /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      * @return Whether the gcgBriefData field is set.
      */
     boolean hasGcgBriefData();
     /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      * @return The gcgBriefData.
      */
     emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData getGcgBriefData();
     /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      */
     emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefDataOrBuilder getGcgBriefDataOrBuilder();
+
+    /**
+     * <code>bool is_new_game = 5;</code>
+     * @return The isNewGame.
+     */
+    boolean getIsNewGame();
   }
   /**
-   * <pre>
-   * CmdId: 7256
-   * Obf: LIAFFLMEDKE
-   * </pre>
-   *
    * Protobuf type {@code GCGGameBriefDataNotify}
    */
   public static final class GCGGameBriefDataNotify extends
@@ -89,7 +96,12 @@ public final class GCGGameBriefDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 40: {
+
+              isNewGame_ = input.readBool();
+              break;
+            }
+            case 50: {
               emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder subBuilder = null;
               if (gcgBriefData_ != null) {
                 subBuilder = gcgBriefData_.toBuilder();
@@ -100,11 +112,6 @@ public final class GCGGameBriefDataNotifyOuterClass {
                 gcgBriefData_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 88: {
-
-              isNewGame_ = input.readBool();
               break;
             }
             default: {
@@ -139,21 +146,14 @@ public final class GCGGameBriefDataNotifyOuterClass {
               emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify.class, emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify.Builder.class);
     }
 
-    public static final int IS_NEW_GAME_FIELD_NUMBER = 11;
-    private boolean isNewGame_;
-    /**
-     * <code>bool is_new_game = 11;</code>
-     * @return The isNewGame.
-     */
-    @java.lang.Override
-    public boolean getIsNewGame() {
-      return isNewGame_;
-    }
-
-    public static final int GCG_BRIEF_DATA_FIELD_NUMBER = 3;
+    public static final int GCG_BRIEF_DATA_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData gcgBriefData_;
     /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      * @return Whether the gcgBriefData field is set.
      */
     @java.lang.Override
@@ -161,7 +161,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
       return gcgBriefData_ != null;
     }
     /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      * @return The gcgBriefData.
      */
     @java.lang.Override
@@ -169,11 +173,26 @@ public final class GCGGameBriefDataNotifyOuterClass {
       return gcgBriefData_ == null ? emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.getDefaultInstance() : gcgBriefData_;
     }
     /**
-     * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+     * <pre>
+     * CMD_ID = 1995
+     * </pre>
+     *
+     * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefDataOrBuilder getGcgBriefDataOrBuilder() {
       return getGcgBriefData();
+    }
+
+    public static final int IS_NEW_GAME_FIELD_NUMBER = 5;
+    private boolean isNewGame_;
+    /**
+     * <code>bool is_new_game = 5;</code>
+     * @return The isNewGame.
+     */
+    @java.lang.Override
+    public boolean getIsNewGame() {
+      return isNewGame_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,11 +209,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gcgBriefData_ != null) {
-        output.writeMessage(3, getGcgBriefData());
-      }
       if (isNewGame_ != false) {
-        output.writeBool(11, isNewGame_);
+        output.writeBool(5, isNewGame_);
+      }
+      if (gcgBriefData_ != null) {
+        output.writeMessage(6, getGcgBriefData());
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +224,13 @@ public final class GCGGameBriefDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gcgBriefData_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getGcgBriefData());
-      }
       if (isNewGame_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isNewGame_);
+          .computeBoolSize(5, isNewGame_);
+      }
+      if (gcgBriefData_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getGcgBriefData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +247,13 @@ public final class GCGGameBriefDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify other = (emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify) obj;
 
-      if (getIsNewGame()
-          != other.getIsNewGame()) return false;
       if (hasGcgBriefData() != other.hasGcgBriefData()) return false;
       if (hasGcgBriefData()) {
         if (!getGcgBriefData()
             .equals(other.getGcgBriefData())) return false;
       }
+      if (getIsNewGame()
+          != other.getIsNewGame()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,13 +265,13 @@ public final class GCGGameBriefDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_GAME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewGame());
       if (hasGcgBriefData()) {
         hash = (37 * hash) + GCG_BRIEF_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getGcgBriefData().hashCode();
       }
+      hash = (37 * hash) + IS_NEW_GAME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewGame());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,11 +368,6 @@ public final class GCGGameBriefDataNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7256
-     * Obf: LIAFFLMEDKE
-     * </pre>
-     *
      * Protobuf type {@code GCGGameBriefDataNotify}
      */
     public static final class Builder extends
@@ -391,14 +405,14 @@ public final class GCGGameBriefDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewGame_ = false;
-
         if (gcgBriefDataBuilder_ == null) {
           gcgBriefData_ = null;
         } else {
           gcgBriefData_ = null;
           gcgBriefDataBuilder_ = null;
         }
+        isNewGame_ = false;
+
         return this;
       }
 
@@ -425,12 +439,12 @@ public final class GCGGameBriefDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify buildPartial() {
         emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify result = new emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify(this);
-        result.isNewGame_ = isNewGame_;
         if (gcgBriefDataBuilder_ == null) {
           result.gcgBriefData_ = gcgBriefData_;
         } else {
           result.gcgBriefData_ = gcgBriefDataBuilder_.build();
         }
+        result.isNewGame_ = isNewGame_;
         onBuilt();
         return result;
       }
@@ -479,11 +493,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify other) {
         if (other == emu.grasscutter.net.proto.GCGGameBriefDataNotifyOuterClass.GCGGameBriefDataNotify.getDefaultInstance()) return this;
-        if (other.getIsNewGame() != false) {
-          setIsNewGame(other.getIsNewGame());
-        }
         if (other.hasGcgBriefData()) {
           mergeGcgBriefData(other.getGcgBriefData());
+        }
+        if (other.getIsNewGame() != false) {
+          setIsNewGame(other.getIsNewGame());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -514,49 +528,26 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return this;
       }
 
-      private boolean isNewGame_ ;
-      /**
-       * <code>bool is_new_game = 11;</code>
-       * @return The isNewGame.
-       */
-      @java.lang.Override
-      public boolean getIsNewGame() {
-        return isNewGame_;
-      }
-      /**
-       * <code>bool is_new_game = 11;</code>
-       * @param value The isNewGame to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewGame(boolean value) {
-        
-        isNewGame_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_game = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewGame() {
-        
-        isNewGame_ = false;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData gcgBriefData_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData, emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder, emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefDataOrBuilder> gcgBriefDataBuilder_;
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        * @return Whether the gcgBriefData field is set.
        */
       public boolean hasGcgBriefData() {
         return gcgBriefDataBuilder_ != null || gcgBriefData_ != null;
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        * @return The gcgBriefData.
        */
       public emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData getGcgBriefData() {
@@ -567,7 +558,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public Builder setGcgBriefData(emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData value) {
         if (gcgBriefDataBuilder_ == null) {
@@ -583,7 +578,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public Builder setGcgBriefData(
           emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder builderForValue) {
@@ -597,7 +596,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public Builder mergeGcgBriefData(emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData value) {
         if (gcgBriefDataBuilder_ == null) {
@@ -615,7 +618,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public Builder clearGcgBriefData() {
         if (gcgBriefDataBuilder_ == null) {
@@ -629,7 +636,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder getGcgBriefDataBuilder() {
         
@@ -637,7 +648,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         return getGcgBriefDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       public emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefDataOrBuilder getGcgBriefDataOrBuilder() {
         if (gcgBriefDataBuilder_ != null) {
@@ -648,7 +663,11 @@ public final class GCGGameBriefDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.GCGGameBriefData gcg_brief_data = 3;</code>
+       * <pre>
+       * CMD_ID = 1995
+       * </pre>
+       *
+       * <code>.GCGGameBriefData gcg_brief_data = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData, emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder, emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefDataOrBuilder> 
@@ -662,6 +681,37 @@ public final class GCGGameBriefDataNotifyOuterClass {
           gcgBriefData_ = null;
         }
         return gcgBriefDataBuilder_;
+      }
+
+      private boolean isNewGame_ ;
+      /**
+       * <code>bool is_new_game = 5;</code>
+       * @return The isNewGame.
+       */
+      @java.lang.Override
+      public boolean getIsNewGame() {
+        return isNewGame_;
+      }
+      /**
+       * <code>bool is_new_game = 5;</code>
+       * @param value The isNewGame to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewGame(boolean value) {
+        
+        isNewGame_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_game = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewGame() {
+        
+        isNewGame_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -732,8 +782,8 @@ public final class GCGGameBriefDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GCGGameBriefDataNotify.proto\032\026GCGGameB" +
       "riefData.proto\"X\n\026GCGGameBriefDataNotify" +
-      "\022\023\n\013is_new_game\030\013 \001(\010\022)\n\016gcg_brief_data\030" +
-      "\003 \001(\0132\021.GCGGameBriefDataB\033\n\031emu.grasscut" +
+      "\022)\n\016gcg_brief_data\030\006 \001(\0132\021.GCGGameBriefD" +
+      "ata\022\023\n\013is_new_game\030\005 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -746,7 +796,7 @@ public final class GCGGameBriefDataNotifyOuterClass {
     internal_static_GCGGameBriefDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGGameBriefDataNotify_descriptor,
-        new java.lang.String[] { "IsNewGame", "GcgBriefData", });
+        new java.lang.String[] { "GcgBriefData", "IsNewGame", });
     emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.getDescriptor();
   }
 

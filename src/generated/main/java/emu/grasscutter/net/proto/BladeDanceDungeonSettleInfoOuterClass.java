@@ -19,28 +19,44 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cost_time = 4;</code>
-     * @return The costTime.
-     */
-    int getCostTime();
-
-    /**
-     * <code>bool is_new_record = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 kill_monster_num = 8;</code>
-     * @return The killMonsterNum.
-     */
-    int getKillMonsterNum();
-
-    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 2;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    int getNMGJKKDMGPK();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 LGNBKDKKPLP = 14;</code>
+     * @return The lGNBKDKKPLP.
+     */
+    int getLGNBKDKKPLP();
   }
   /**
    * Protobuf type {@code BladeDanceDungeonSettleInfo}
@@ -87,24 +103,24 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              costTime_ = input.readUInt32();
+              nMGJKKDMGPK_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 24: {
 
               isNewRecord_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              killMonsterNum_ = input.readUInt32();
               break;
             }
             case 96: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              lGNBKDKKPLP_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,21 +155,14 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo.class, emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo.Builder.class);
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 4;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 4;</code>
-     * @return The costTime.
-     */
-    @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 6;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,26 +170,49 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 8;
-    private int killMonsterNum_;
-    /**
-     * <code>uint32 kill_monster_num = 8;</code>
-     * @return The killMonsterNum.
-     */
-    @java.lang.Override
-    public int getKillMonsterNum() {
-      return killMonsterNum_;
-    }
-
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 2;
+    private int nMGJKKDMGPK_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 2;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    @java.lang.Override
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
+    }
+
+    public static final int LGNBKDKKPLP_FIELD_NUMBER = 14;
+    private int lGNBKDKKPLP_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 LGNBKDKKPLP = 14;</code>
+     * @return The lGNBKDKKPLP.
+     */
+    @java.lang.Override
+    public int getLGNBKDKKPLP() {
+      return lGNBKDKKPLP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +229,17 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (costTime_ != 0) {
-        output.writeUInt32(4, costTime_);
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(2, nMGJKKDMGPK_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(6, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        output.writeUInt32(8, killMonsterNum_);
+        output.writeBool(3, isNewRecord_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(12, levelId_);
+      }
+      if (lGNBKDKKPLP_ != 0) {
+        output.writeUInt32(14, lGNBKDKKPLP_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +250,21 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (costTime_ != 0) {
+      if (nMGJKKDMGPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, costTime_);
+          .computeUInt32Size(2, nMGJKKDMGPK_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, killMonsterNum_);
+          .computeBoolSize(3, isNewRecord_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, levelId_);
+      }
+      if (lGNBKDKKPLP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, lGNBKDKKPLP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +281,14 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo other = (emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo) obj;
 
-      if (getCostTime()
-          != other.getCostTime()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getKillMonsterNum()
-          != other.getKillMonsterNum()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
+      if (getLGNBKDKKPLP()
+          != other.getLGNBKDKKPLP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +300,15 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + KILL_MONSTER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getKillMonsterNum();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
+      hash = (37 * hash) + LGNBKDKKPLP_FIELD_NUMBER;
+      hash = (53 * hash) + getLGNBKDKKPLP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +442,13 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        costTime_ = 0;
-
         isNewRecord_ = false;
 
-        killMonsterNum_ = 0;
-
         levelId_ = 0;
+
+        nMGJKKDMGPK_ = 0;
+
+        lGNBKDKKPLP_ = 0;
 
         return this;
       }
@@ -444,10 +476,10 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo result = new emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo(this);
-        result.costTime_ = costTime_;
         result.isNewRecord_ = isNewRecord_;
-        result.killMonsterNum_ = killMonsterNum_;
         result.levelId_ = levelId_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
+        result.lGNBKDKKPLP_ = lGNBKDKKPLP_;
         onBuilt();
         return result;
       }
@@ -496,17 +528,17 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BladeDanceDungeonSettleInfoOuterClass.BladeDanceDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getKillMonsterNum() != 0) {
-          setKillMonsterNum(other.getKillMonsterNum());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
+        }
+        if (other.getLGNBKDKKPLP() != 0) {
+          setLGNBKDKKPLP(other.getLGNBKDKKPLP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,40 +569,13 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 4;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 4;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -578,7 +583,11 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -589,7 +598,11 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -599,39 +612,12 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int killMonsterNum_ ;
-      /**
-       * <code>uint32 kill_monster_num = 8;</code>
-       * @return The killMonsterNum.
-       */
-      @java.lang.Override
-      public int getKillMonsterNum() {
-        return killMonsterNum_;
-      }
-      /**
-       * <code>uint32 kill_monster_num = 8;</code>
-       * @param value The killMonsterNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKillMonsterNum(int value) {
-        
-        killMonsterNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kill_monster_num = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKillMonsterNum() {
-        
-        killMonsterNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -640,6 +626,10 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -651,12 +641,102 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
+        
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lGNBKDKKPLP_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 14;</code>
+       * @return The lGNBKDKKPLP.
+       */
+      @java.lang.Override
+      public int getLGNBKDKKPLP() {
+        return lGNBKDKKPLP_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 14;</code>
+       * @param value The lGNBKDKKPLP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLGNBKDKKPLP(int value) {
+        
+        lGNBKDKKPLP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLGNBKDKKPLP() {
+        
+        lGNBKDKKPLP_ = 0;
         onChanged();
         return this;
       }
@@ -727,11 +807,11 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!BladeDanceDungeonSettleInfo.proto\"s\n\033B" +
-      "ladeDanceDungeonSettleInfo\022\021\n\tcost_time\030" +
-      "\004 \001(\r\022\025\n\ris_new_record\030\006 \001(\010\022\030\n\020kill_mon" +
-      "ster_num\030\010 \001(\r\022\020\n\010level_id\030\014 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n!BladeDanceDungeonSettleInfo.proto\"p\n\033B" +
+      "ladeDanceDungeonSettleInfo\022\025\n\ris_new_rec" +
+      "ord\030\003 \001(\010\022\020\n\010level_id\030\014 \001(\r\022\023\n\013NMGJKKDMG" +
+      "PK\030\002 \001(\r\022\023\n\013LGNBKDKKPLP\030\016 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +822,7 @@ public final class BladeDanceDungeonSettleInfoOuterClass {
     internal_static_BladeDanceDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BladeDanceDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "CostTime", "IsNewRecord", "KillMonsterNum", "LevelId", });
+        new java.lang.String[] { "IsNewRecord", "LevelId", "NMGJKKDMGPK", "LGNBKDKKPLP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

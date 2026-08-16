@@ -19,39 +19,55 @@ public final class BalloonGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 hit_count = 10;</code>
-     * @return The hitCount.
-     */
-    int getHitCount();
-
-    /**
-     * <code>.KDHIAEFLGFM reason = 12;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.KDHIAEFLGFM reason = 12;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 score = 6;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 owner_uid = 14;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GLLNKDNDHCI = 1;</code>
+     * @return The gLLNKDNDHCI.
+     */
+    int getGLLNKDNDHCI();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 owner_uid = 9;</code>
      * @return The ownerUid.
      */
     int getOwnerUid();
   }
   /**
-   * <pre>
-   * Obf: NODDJLNJHAK
-   * </pre>
-   *
    * Protobuf type {@code BalloonGallerySettleInfo}
    */
   public static final class BalloonGallerySettleInfo extends
@@ -97,25 +113,25 @@ public final class BalloonGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              gLLNKDNDHCI_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
-              hitCount_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
+              ownerUid_ = input.readUInt32();
               break;
             }
             case 112: {
+              int rawValue = input.readEnum();
 
-              ownerUid_ = input.readUInt32();
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -150,39 +166,13 @@ public final class BalloonGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.class, emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.Builder.class);
     }
 
-    public static final int HIT_COUNT_FIELD_NUMBER = 10;
-    private int hitCount_;
-    /**
-     * <code>uint32 hit_count = 10;</code>
-     * @return The hitCount.
-     */
-    @java.lang.Override
-    public int getHitCount() {
-      return hitCount_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 12;
-    private int reason_;
-    /**
-     * <code>.KDHIAEFLGFM reason = 12;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.KDHIAEFLGFM reason = 12;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
-    }
-
     public static final int SCORE_FIELD_NUMBER = 6;
     private int score_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 score = 6;</code>
      * @return The score.
      */
@@ -191,10 +181,56 @@ public final class BalloonGallerySettleInfoOuterClass {
       return score_;
     }
 
-    public static final int OWNER_UID_FIELD_NUMBER = 14;
+    public static final int REASON_FIELD_NUMBER = 14;
+    private int reason_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+    }
+
+    public static final int GLLNKDNDHCI_FIELD_NUMBER = 1;
+    private int gLLNKDNDHCI_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GLLNKDNDHCI = 1;</code>
+     * @return The gLLNKDNDHCI.
+     */
+    @java.lang.Override
+    public int getGLLNKDNDHCI() {
+      return gLLNKDNDHCI_;
+    }
+
+    public static final int OWNER_UID_FIELD_NUMBER = 9;
     private int ownerUid_;
     /**
-     * <code>uint32 owner_uid = 14;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 owner_uid = 9;</code>
      * @return The ownerUid.
      */
     @java.lang.Override
@@ -216,17 +252,17 @@ public final class BalloonGallerySettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (gLLNKDNDHCI_ != 0) {
+        output.writeUInt32(1, gLLNKDNDHCI_);
+      }
       if (score_ != 0) {
         output.writeUInt32(6, score_);
       }
-      if (hitCount_ != 0) {
-        output.writeUInt32(10, hitCount_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
-        output.writeEnum(12, reason_);
-      }
       if (ownerUid_ != 0) {
-        output.writeUInt32(14, ownerUid_);
+        output.writeUInt32(9, ownerUid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        output.writeEnum(14, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -237,21 +273,21 @@ public final class BalloonGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gLLNKDNDHCI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, gLLNKDNDHCI_);
+      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, score_);
       }
-      if (hitCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, hitCount_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.KDHIAEFLGFM_GalleryStopNone.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, reason_);
-      }
       if (ownerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, ownerUid_);
+          .computeUInt32Size(9, ownerUid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(14, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -268,11 +304,11 @@ public final class BalloonGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo other = (emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo) obj;
 
-      if (getHitCount()
-          != other.getHitCount()) return false;
-      if (reason_ != other.reason_) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (reason_ != other.reason_) return false;
+      if (getGLLNKDNDHCI()
+          != other.getGLLNKDNDHCI()) return false;
       if (getOwnerUid()
           != other.getOwnerUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -286,12 +322,12 @@ public final class BalloonGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getHitCount();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + GLLNKDNDHCI_FIELD_NUMBER;
+      hash = (53 * hash) + getGLLNKDNDHCI();
       hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getOwnerUid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -390,10 +426,6 @@ public final class BalloonGallerySettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NODDJLNJHAK
-     * </pre>
-     *
      * Protobuf type {@code BalloonGallerySettleInfo}
      */
     public static final class Builder extends
@@ -431,11 +463,11 @@ public final class BalloonGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hitCount_ = 0;
+        score_ = 0;
 
         reason_ = 0;
 
-        score_ = 0;
+        gLLNKDNDHCI_ = 0;
 
         ownerUid_ = 0;
 
@@ -465,9 +497,9 @@ public final class BalloonGallerySettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo result = new emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo(this);
-        result.hitCount_ = hitCount_;
-        result.reason_ = reason_;
         result.score_ = score_;
+        result.reason_ = reason_;
+        result.gLLNKDNDHCI_ = gLLNKDNDHCI_;
         result.ownerUid_ = ownerUid_;
         onBuilt();
         return result;
@@ -517,14 +549,14 @@ public final class BalloonGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.BalloonGallerySettleInfoOuterClass.BalloonGallerySettleInfo.getDefaultInstance()) return this;
-        if (other.getHitCount() != 0) {
-          setHitCount(other.getHitCount());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getGLLNKDNDHCI() != 0) {
+          setGLLNKDNDHCI(other.getGLLNKDNDHCI());
         }
         if (other.getOwnerUid() != 0) {
           setOwnerUid(other.getOwnerUid());
@@ -558,93 +590,12 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
 
-      private int hitCount_ ;
-      /**
-       * <code>uint32 hit_count = 10;</code>
-       * @return The hitCount.
-       */
-      @java.lang.Override
-      public int getHitCount() {
-        return hitCount_;
-      }
-      /**
-       * <code>uint32 hit_count = 10;</code>
-       * @param value The hitCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHitCount(int value) {
-        
-        hitCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 hit_count = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHitCount() {
-        
-        hitCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.KDHIAEFLGFM reason = 12;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 12;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 12;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM result = emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 12;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.KDHIAEFLGFM value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.KDHIAEFLGFM reason = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int score_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 score = 6;</code>
        * @return The score.
        */
@@ -653,6 +604,10 @@ public final class BalloonGallerySettleInfoOuterClass {
         return score_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 score = 6;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -664,6 +619,10 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 score = 6;</code>
        * @return This builder for chaining.
        */
@@ -674,9 +633,130 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int reason_ = 0;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gLLNKDNDHCI_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GLLNKDNDHCI = 1;</code>
+       * @return The gLLNKDNDHCI.
+       */
+      @java.lang.Override
+      public int getGLLNKDNDHCI() {
+        return gLLNKDNDHCI_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GLLNKDNDHCI = 1;</code>
+       * @param value The gLLNKDNDHCI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGLLNKDNDHCI(int value) {
+        
+        gLLNKDNDHCI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GLLNKDNDHCI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGLLNKDNDHCI() {
+        
+        gLLNKDNDHCI_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int ownerUid_ ;
       /**
-       * <code>uint32 owner_uid = 14;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 9;</code>
        * @return The ownerUid.
        */
       @java.lang.Override
@@ -684,7 +764,11 @@ public final class BalloonGallerySettleInfoOuterClass {
         return ownerUid_;
       }
       /**
-       * <code>uint32 owner_uid = 14;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 9;</code>
        * @param value The ownerUid to set.
        * @return This builder for chaining.
        */
@@ -695,7 +779,11 @@ public final class BalloonGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 owner_uid = 14;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearOwnerUid() {
@@ -771,24 +859,25 @@ public final class BalloonGallerySettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036BalloonGallerySettleInfo.proto\032\021KDHIAE" +
-      "FLGFM.proto\"m\n\030BalloonGallerySettleInfo\022" +
-      "\021\n\thit_count\030\n \001(\r\022\034\n\006reason\030\014 \001(\0162\014.KDH" +
-      "IAEFLGFM\022\r\n\005score\030\006 \001(\r\022\021\n\towner_uid\030\016 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\036BalloonGallerySettleInfo.proto\032\027Galler" +
+      "yStopReason.proto\"u\n\030BalloonGallerySettl" +
+      "eInfo\022\r\n\005score\030\006 \001(\r\022\"\n\006reason\030\016 \001(\0162\022.G" +
+      "alleryStopReason\022\023\n\013GLLNKDNDHCI\030\001 \001(\r\022\021\n" +
+      "\towner_uid\030\t \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor(),
         });
     internal_static_BalloonGallerySettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_BalloonGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BalloonGallerySettleInfo_descriptor,
-        new java.lang.String[] { "HitCount", "Reason", "Score", "OwnerUid", });
-    emu.grasscutter.net.proto.KDHIAEFLGFMOuterClass.getDescriptor();
+        new java.lang.String[] { "Score", "Reason", "GLLNKDNDHCI", "OwnerUid", });
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

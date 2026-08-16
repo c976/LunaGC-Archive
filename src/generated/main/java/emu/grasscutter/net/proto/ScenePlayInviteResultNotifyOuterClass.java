@@ -19,21 +19,20 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_all_argee = 10;</code>
-     * @return The isAllArgee.
+     * <code>bool is_all_agree = 4;</code>
+     * @return The isAllAgree.
      */
-    boolean getIsAllArgee();
+    boolean getIsAllAgree();
 
     /**
-     * <code>uint32 play_id = 13;</code>
+     * <code>uint32 play_id = 6;</code>
      * @return The playId.
      */
     int getPlayId();
   }
   /**
    * <pre>
-   * CmdId: 9329
-   * Obf: IAKNONNKIPO
+   * CmdId: 25039
    * </pre>
    *
    * Protobuf type {@code ScenePlayInviteResultNotify}
@@ -80,12 +79,12 @@ public final class ScenePlayInviteResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 32: {
 
-              isAllArgee_ = input.readBool();
+              isAllAgree_ = input.readBool();
               break;
             }
-            case 104: {
+            case 48: {
 
               playId_ = input.readUInt32();
               break;
@@ -122,21 +121,21 @@ public final class ScenePlayInviteResultNotifyOuterClass {
               emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify.class, emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify.Builder.class);
     }
 
-    public static final int IS_ALL_ARGEE_FIELD_NUMBER = 10;
-    private boolean isAllArgee_;
+    public static final int IS_ALL_AGREE_FIELD_NUMBER = 4;
+    private boolean isAllAgree_;
     /**
-     * <code>bool is_all_argee = 10;</code>
-     * @return The isAllArgee.
+     * <code>bool is_all_agree = 4;</code>
+     * @return The isAllAgree.
      */
     @java.lang.Override
-    public boolean getIsAllArgee() {
-      return isAllArgee_;
+    public boolean getIsAllAgree() {
+      return isAllAgree_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 13;
+    public static final int PLAY_ID_FIELD_NUMBER = 6;
     private int playId_;
     /**
-     * <code>uint32 play_id = 13;</code>
+     * <code>uint32 play_id = 6;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class ScenePlayInviteResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAllArgee_ != false) {
-        output.writeBool(10, isAllArgee_);
+      if (isAllAgree_ != false) {
+        output.writeBool(4, isAllAgree_);
       }
       if (playId_ != 0) {
-        output.writeUInt32(13, playId_);
+        output.writeUInt32(6, playId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAllArgee_ != false) {
+      if (isAllAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isAllArgee_);
+          .computeBoolSize(4, isAllAgree_);
       }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, playId_);
+          .computeUInt32Size(6, playId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,8 +195,8 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify other = (emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify) obj;
 
-      if (getIsAllArgee()
-          != other.getIsAllArgee()) return false;
+      if (getIsAllAgree()
+          != other.getIsAllAgree()) return false;
       if (getPlayId()
           != other.getPlayId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -211,9 +210,9 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ALL_ARGEE_FIELD_NUMBER;
+      hash = (37 * hash) + IS_ALL_AGREE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAllArgee());
+          getIsAllAgree());
       hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -313,8 +312,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9329
-     * Obf: IAKNONNKIPO
+     * CmdId: 25039
      * </pre>
      *
      * Protobuf type {@code ScenePlayInviteResultNotify}
@@ -354,7 +352,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAllArgee_ = false;
+        isAllAgree_ = false;
 
         playId_ = 0;
 
@@ -384,7 +382,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify buildPartial() {
         emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify result = new emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify(this);
-        result.isAllArgee_ = isAllArgee_;
+        result.isAllAgree_ = isAllAgree_;
         result.playId_ = playId_;
         onBuilt();
         return result;
@@ -434,8 +432,8 @@ public final class ScenePlayInviteResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify other) {
         if (other == emu.grasscutter.net.proto.ScenePlayInviteResultNotifyOuterClass.ScenePlayInviteResultNotify.getDefaultInstance()) return this;
-        if (other.getIsAllArgee() != false) {
-          setIsAllArgee(other.getIsAllArgee());
+        if (other.getIsAllAgree() != false) {
+          setIsAllAgree(other.getIsAllAgree());
         }
         if (other.getPlayId() != 0) {
           setPlayId(other.getPlayId());
@@ -469,40 +467,40 @@ public final class ScenePlayInviteResultNotifyOuterClass {
         return this;
       }
 
-      private boolean isAllArgee_ ;
+      private boolean isAllAgree_ ;
       /**
-       * <code>bool is_all_argee = 10;</code>
-       * @return The isAllArgee.
+       * <code>bool is_all_agree = 4;</code>
+       * @return The isAllAgree.
        */
       @java.lang.Override
-      public boolean getIsAllArgee() {
-        return isAllArgee_;
+      public boolean getIsAllAgree() {
+        return isAllAgree_;
       }
       /**
-       * <code>bool is_all_argee = 10;</code>
-       * @param value The isAllArgee to set.
+       * <code>bool is_all_agree = 4;</code>
+       * @param value The isAllAgree to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAllArgee(boolean value) {
+      public Builder setIsAllAgree(boolean value) {
         
-        isAllArgee_ = value;
+        isAllAgree_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_all_argee = 10;</code>
+       * <code>bool is_all_agree = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAllArgee() {
+      public Builder clearIsAllAgree() {
         
-        isAllArgee_ = false;
+        isAllAgree_ = false;
         onChanged();
         return this;
       }
 
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 6;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -510,7 +508,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 6;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -521,7 +519,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 13;</code>
+       * <code>uint32 play_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
@@ -598,8 +596,8 @@ public final class ScenePlayInviteResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!ScenePlayInviteResultNotify.proto\"D\n\033S" +
-      "cenePlayInviteResultNotify\022\024\n\014is_all_arg" +
-      "ee\030\n \001(\010\022\017\n\007play_id\030\r \001(\rB\033\n\031emu.grasscu" +
+      "cenePlayInviteResultNotify\022\024\n\014is_all_agr" +
+      "ee\030\004 \001(\010\022\017\n\007play_id\030\006 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +609,7 @@ public final class ScenePlayInviteResultNotifyOuterClass {
     internal_static_ScenePlayInviteResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayInviteResultNotify_descriptor,
-        new java.lang.String[] { "IsAllArgee", "PlayId", });
+        new java.lang.String[] { "IsAllAgree", "PlayId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

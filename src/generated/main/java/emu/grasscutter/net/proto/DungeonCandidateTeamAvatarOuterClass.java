@@ -19,25 +19,42 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      * @return Whether the avatarInfo field is set.
      */
     boolean hasAvatarInfo();
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      * @return The avatarInfo.
      */
     emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo getAvatarInfo();
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      */
     emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder();
 
     /**
-     * <code>uint32 player_uid = 4;</code>
+     * <code>uint32 player_uid = 13;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
+
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     * @return Whether the ugcAvatarInfo field is set.
+     */
+    boolean hasUgcAvatarInfo();
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     * @return The ugcAvatarInfo.
+     */
+    emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo getUgcAvatarInfo();
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder getUgcAvatarInfoOrBuilder();
+
+    public emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.DetailCase getDetailCase();
   }
   /**
    * Protobuf type {@code DungeonCandidateTeamAvatar}
@@ -84,12 +101,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              playerUid_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 50: {
               emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder subBuilder = null;
               if (avatarInfo_ != null) {
                 subBuilder = avatarInfo_.toBuilder();
@@ -100,6 +112,25 @@ public final class DungeonCandidateTeamAvatarOuterClass {
                 avatarInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 104: {
+
+              playerUid_ = input.readUInt32();
+              break;
+            }
+            case 9362: {
+              emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder subBuilder = null;
+              if (detailCase_ == 1170) {
+                subBuilder = ((emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 1170;
               break;
             }
             default: {
@@ -134,10 +165,49 @@ public final class DungeonCandidateTeamAvatarOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.class, emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.Builder.class);
     }
 
-    public static final int AVATAR_INFO_FIELD_NUMBER = 14;
+    private int detailCase_ = 0;
+    private java.lang.Object detail_;
+    public enum DetailCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      UGC_AVATAR_INFO(1170),
+      DETAIL_NOT_SET(0);
+      private final int value;
+      private DetailCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DetailCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static DetailCase forNumber(int value) {
+        switch (value) {
+          case 1170: return UGC_AVATAR_INFO;
+          case 0: return DETAIL_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public DetailCase
+    getDetailCase() {
+      return DetailCase.forNumber(
+          detailCase_);
+    }
+
+    public static final int AVATAR_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo avatarInfo_;
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      * @return Whether the avatarInfo field is set.
      */
     @java.lang.Override
@@ -145,7 +215,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       return avatarInfo_ != null;
     }
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      * @return The avatarInfo.
      */
     @java.lang.Override
@@ -153,22 +223,53 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       return avatarInfo_ == null ? emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.getDefaultInstance() : avatarInfo_;
     }
     /**
-     * <code>.AvatarInfo avatar_info = 14;</code>
+     * <code>.AvatarInfo avatar_info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder() {
       return getAvatarInfo();
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 4;
+    public static final int PLAYER_UID_FIELD_NUMBER = 13;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 4;</code>
+     * <code>uint32 player_uid = 13;</code>
      * @return The playerUid.
      */
     @java.lang.Override
     public int getPlayerUid() {
       return playerUid_;
+    }
+
+    public static final int UGC_AVATAR_INFO_FIELD_NUMBER = 1170;
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     * @return Whether the ugcAvatarInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasUgcAvatarInfo() {
+      return detailCase_ == 1170;
+    }
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     * @return The ugcAvatarInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo getUgcAvatarInfo() {
+      if (detailCase_ == 1170) {
+         return (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder getUgcAvatarInfoOrBuilder() {
+      if (detailCase_ == 1170) {
+         return (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_;
+      }
+      return emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -185,11 +286,14 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerUid_ != 0) {
-        output.writeUInt32(4, playerUid_);
-      }
       if (avatarInfo_ != null) {
-        output.writeMessage(14, getAvatarInfo());
+        output.writeMessage(6, getAvatarInfo());
+      }
+      if (playerUid_ != 0) {
+        output.writeUInt32(13, playerUid_);
+      }
+      if (detailCase_ == 1170) {
+        output.writeMessage(1170, (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +304,17 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, playerUid_);
-      }
       if (avatarInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getAvatarInfo());
+          .computeMessageSize(6, getAvatarInfo());
+      }
+      if (playerUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, playerUid_);
+      }
+      if (detailCase_ == 1170) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1170, (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -230,6 +338,15 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       if (getPlayerUid()
           != other.getPlayerUid()) return false;
+      if (!getDetailCase().equals(other.getDetailCase())) return false;
+      switch (detailCase_) {
+        case 1170:
+          if (!getUgcAvatarInfo()
+              .equals(other.getUgcAvatarInfo())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -247,6 +364,14 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerUid();
+      switch (detailCase_) {
+        case 1170:
+          hash = (37 * hash) + UGC_AVATAR_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getUgcAvatarInfo().hashCode();
+          break;
+        case 0:
+        default:
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -388,6 +513,8 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         }
         playerUid_ = 0;
 
+        detailCase_ = 0;
+        detail_ = null;
         return this;
       }
 
@@ -420,6 +547,14 @@ public final class DungeonCandidateTeamAvatarOuterClass {
           result.avatarInfo_ = avatarInfoBuilder_.build();
         }
         result.playerUid_ = playerUid_;
+        if (detailCase_ == 1170) {
+          if (ugcAvatarInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = ugcAvatarInfoBuilder_.build();
+          }
+        }
+        result.detailCase_ = detailCase_;
         onBuilt();
         return result;
       }
@@ -474,6 +609,15 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         if (other.getPlayerUid() != 0) {
           setPlayerUid(other.getPlayerUid());
         }
+        switch (other.getDetailCase()) {
+          case UGC_AVATAR_INFO: {
+            mergeUgcAvatarInfo(other.getUgcAvatarInfo());
+            break;
+          }
+          case DETAIL_NOT_SET: {
+            break;
+          }
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -502,19 +646,34 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         }
         return this;
       }
+      private int detailCase_ = 0;
+      private java.lang.Object detail_;
+      public DetailCase
+          getDetailCase() {
+        return DetailCase.forNumber(
+            detailCase_);
+      }
+
+      public Builder clearDetail() {
+        detailCase_ = 0;
+        detail_ = null;
+        onChanged();
+        return this;
+      }
+
 
       private emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo avatarInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder> avatarInfoBuilder_;
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        * @return Whether the avatarInfo field is set.
        */
       public boolean hasAvatarInfo() {
         return avatarInfoBuilder_ != null || avatarInfo_ != null;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        * @return The avatarInfo.
        */
       public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo getAvatarInfo() {
@@ -525,7 +684,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         }
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public Builder setAvatarInfo(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo value) {
         if (avatarInfoBuilder_ == null) {
@@ -541,7 +700,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public Builder setAvatarInfo(
           emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder builderForValue) {
@@ -555,7 +714,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public Builder mergeAvatarInfo(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo value) {
         if (avatarInfoBuilder_ == null) {
@@ -573,7 +732,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public Builder clearAvatarInfo() {
         if (avatarInfoBuilder_ == null) {
@@ -587,7 +746,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder getAvatarInfoBuilder() {
         
@@ -595,7 +754,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return getAvatarInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder() {
         if (avatarInfoBuilder_ != null) {
@@ -606,7 +765,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         }
       }
       /**
-       * <code>.AvatarInfo avatar_info = 14;</code>
+       * <code>.AvatarInfo avatar_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder> 
@@ -624,7 +783,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 4;</code>
+       * <code>uint32 player_uid = 13;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -632,7 +791,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 4;</code>
+       * <code>uint32 player_uid = 13;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -643,7 +802,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 4;</code>
+       * <code>uint32 player_uid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -651,6 +810,147 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         playerUid_ = 0;
         onChanged();
         return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder> ugcAvatarInfoBuilder_;
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       * @return Whether the ugcAvatarInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasUgcAvatarInfo() {
+        return detailCase_ == 1170;
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       * @return The ugcAvatarInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo getUgcAvatarInfo() {
+        if (ugcAvatarInfoBuilder_ == null) {
+          if (detailCase_ == 1170) {
+            return (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
+        } else {
+          if (detailCase_ == 1170) {
+            return ugcAvatarInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      public Builder setUgcAvatarInfo(emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo value) {
+        if (ugcAvatarInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          ugcAvatarInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1170;
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      public Builder setUgcAvatarInfo(
+          emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder builderForValue) {
+        if (ugcAvatarInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          ugcAvatarInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 1170;
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      public Builder mergeUgcAvatarInfo(emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo value) {
+        if (ugcAvatarInfoBuilder_ == null) {
+          if (detailCase_ == 1170 &&
+              detail_ != emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.newBuilder((emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 1170) {
+            ugcAvatarInfoBuilder_.mergeFrom(value);
+          }
+          ugcAvatarInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 1170;
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      public Builder clearUgcAvatarInfo() {
+        if (ugcAvatarInfoBuilder_ == null) {
+          if (detailCase_ == 1170) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 1170) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          ugcAvatarInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder getUgcAvatarInfoBuilder() {
+        return getUgcAvatarInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder getUgcAvatarInfoOrBuilder() {
+        if ((detailCase_ == 1170) && (ugcAvatarInfoBuilder_ != null)) {
+          return ugcAvatarInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 1170) {
+            return (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_;
+          }
+          return emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.UgcDungeonCandidateTeamAvatarInfo ugc_avatar_info = 1170;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder> 
+          getUgcAvatarInfoFieldBuilder() {
+        if (ugcAvatarInfoBuilder_ == null) {
+          if (!(detailCase_ == 1170)) {
+            detail_ = emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.getDefaultInstance();
+          }
+          ugcAvatarInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo.Builder, emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.UgcDungeonCandidateTeamAvatarInfo) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 1170;
+        onChanged();;
+        return ugcAvatarInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -720,23 +1020,28 @@ public final class DungeonCandidateTeamAvatarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DungeonCandidateTeamAvatar.proto\032\020Avat" +
-      "arInfo.proto\"R\n\032DungeonCandidateTeamAvat" +
-      "ar\022 \n\013avatar_info\030\016 \001(\0132\013.AvatarInfo\022\022\n\n" +
-      "player_uid\030\004 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "arInfo.proto\032\'UgcDungeonCandidateTeamAva" +
+      "tarInfo.proto\"\234\001\n\032DungeonCandidateTeamAv" +
+      "atar\022 \n\013avatar_info\030\006 \001(\0132\013.AvatarInfo\022\022" +
+      "\n\nplayer_uid\030\r \001(\r\022>\n\017ugc_avatar_info\030\222\t" +
+      " \001(\0132\".UgcDungeonCandidateTeamAvatarInfo" +
+      "H\000B\010\n\006detailB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AvatarInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.getDescriptor(),
         });
     internal_static_DungeonCandidateTeamAvatar_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_DungeonCandidateTeamAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamAvatar_descriptor,
-        new java.lang.String[] { "AvatarInfo", "PlayerUid", });
+        new java.lang.String[] { "AvatarInfo", "PlayerUid", "UgcAvatarInfo", "Detail", });
     emu.grasscutter.net.proto.AvatarInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcDungeonCandidateTeamAvatarInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

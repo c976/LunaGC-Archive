@@ -19,28 +19,19 @@ public final class CustomCommonNodeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @return A list containing the paramList.
-     */
-    java.util.List<java.lang.Integer> getParamListList();
-    /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @return The count of paramList.
-     */
-    int getParamListCount();
-    /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The paramList at the given index.
-     */
-    int getParamList(int index);
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string slot_identifier = 3;</code>
      * @return The slotIdentifier.
      */
     java.lang.String getSlotIdentifier();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string slot_identifier = 3;</code>
      * @return The bytes for slotIdentifier.
      */
@@ -48,12 +39,49 @@ public final class CustomCommonNodeInfoOuterClass {
         getSlotIdentifierBytes();
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @return A list containing the paramList.
+     */
+    java.util.List<java.lang.Integer> getParamListList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @return The count of paramList.
+     */
+    int getParamListCount();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @param index The index of the element to return.
+     * @return The paramList at the given index.
+     */
+    int getParamList(int index);
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 config_id = 2;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>int32 parent_index = 1;</code>
      * @return The parentIndex.
      */
@@ -72,8 +100,8 @@ public final class CustomCommonNodeInfoOuterClass {
       super(builder);
     }
     private CustomCommonNodeInfo() {
-      paramList_ = emptyIntList();
       slotIdentifier_ = "";
+      paramList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -179,37 +207,13 @@ public final class CustomCommonNodeInfoOuterClass {
               emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.class, emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder.class);
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList paramList_;
-    /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @return A list containing the paramList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getParamListList() {
-      return paramList_;
-    }
-    /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @return The count of paramList.
-     */
-    public int getParamListCount() {
-      return paramList_.size();
-    }
-    /**
-     * <code>repeated int32 param_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The paramList at the given index.
-     */
-    public int getParamList(int index) {
-      return paramList_.getInt(index);
-    }
-    private int paramListMemoizedSerializedSize = -1;
-
     public static final int SLOT_IDENTIFIER_FIELD_NUMBER = 3;
     private volatile java.lang.Object slotIdentifier_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string slot_identifier = 3;</code>
      * @return The slotIdentifier.
      */
@@ -227,6 +231,10 @@ public final class CustomCommonNodeInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string slot_identifier = 3;</code>
      * @return The bytes for slotIdentifier.
      */
@@ -245,9 +253,53 @@ public final class CustomCommonNodeInfoOuterClass {
       }
     }
 
+    public static final int PARAM_LIST_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList paramList_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @return A list containing the paramList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getParamListList() {
+      return paramList_;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @return The count of paramList.
+     */
+    public int getParamListCount() {
+      return paramList_.size();
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated int32 param_list = 4;</code>
+     * @param index The index of the element to return.
+     * @return The paramList at the given index.
+     */
+    public int getParamList(int index) {
+      return paramList_.getInt(index);
+    }
+    private int paramListMemoizedSerializedSize = -1;
+
     public static final int CONFIG_ID_FIELD_NUMBER = 2;
     private int configId_;
     /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 config_id = 2;</code>
      * @return The configId.
      */
@@ -259,6 +311,10 @@ public final class CustomCommonNodeInfoOuterClass {
     public static final int PARENT_INDEX_FIELD_NUMBER = 1;
     private int parentIndex_;
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>int32 parent_index = 1;</code>
      * @return The parentIndex.
      */
@@ -347,10 +403,10 @@ public final class CustomCommonNodeInfoOuterClass {
       }
       emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo other = (emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo) obj;
 
-      if (!getParamListList()
-          .equals(other.getParamListList())) return false;
       if (!getSlotIdentifier()
           .equals(other.getSlotIdentifier())) return false;
+      if (!getParamListList()
+          .equals(other.getParamListList())) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
       if (getParentIndex()
@@ -366,12 +422,12 @@ public final class CustomCommonNodeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SLOT_IDENTIFIER_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotIdentifier().hashCode();
       if (getParamListCount() > 0) {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
-      hash = (37 * hash) + SLOT_IDENTIFIER_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotIdentifier().hashCode();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
       hash = (37 * hash) + PARENT_INDEX_FIELD_NUMBER;
@@ -509,10 +565,10 @@ public final class CustomCommonNodeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        paramList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         slotIdentifier_ = "";
 
+        paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         configId_ = 0;
 
         parentIndex_ = 0;
@@ -544,12 +600,12 @@ public final class CustomCommonNodeInfoOuterClass {
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo buildPartial() {
         emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo result = new emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo(this);
         int from_bitField0_ = bitField0_;
+        result.slotIdentifier_ = slotIdentifier_;
         if (((bitField0_ & 0x00000001) != 0)) {
           paramList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.paramList_ = paramList_;
-        result.slotIdentifier_ = slotIdentifier_;
         result.configId_ = configId_;
         result.parentIndex_ = parentIndex_;
         onBuilt();
@@ -600,6 +656,10 @@ public final class CustomCommonNodeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo other) {
         if (other == emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.getDefaultInstance()) return this;
+        if (!other.getSlotIdentifier().isEmpty()) {
+          slotIdentifier_ = other.slotIdentifier_;
+          onChanged();
+        }
         if (!other.paramList_.isEmpty()) {
           if (paramList_.isEmpty()) {
             paramList_ = other.paramList_;
@@ -608,10 +668,6 @@ public final class CustomCommonNodeInfoOuterClass {
             ensureParamListIsMutable();
             paramList_.addAll(other.paramList_);
           }
-          onChanged();
-        }
-        if (!other.getSlotIdentifier().isEmpty()) {
-          slotIdentifier_ = other.slotIdentifier_;
           onChanged();
         }
         if (other.getConfigId() != 0) {
@@ -650,87 +706,12 @@ public final class CustomCommonNodeInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
-      private void ensureParamListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          paramList_ = mutableCopy(paramList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @return A list containing the paramList.
-       */
-      public java.util.List<java.lang.Integer>
-          getParamListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(paramList_) : paramList_;
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @return The count of paramList.
-       */
-      public int getParamListCount() {
-        return paramList_.size();
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @param index The index of the element to return.
-       * @return The paramList at the given index.
-       */
-      public int getParamList(int index) {
-        return paramList_.getInt(index);
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The paramList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParamList(
-          int index, int value) {
-        ensureParamListIsMutable();
-        paramList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @param value The paramList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addParamList(int value) {
-        ensureParamListIsMutable();
-        paramList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @param values The paramList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllParamList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureParamListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, paramList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 param_list = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParamList() {
-        paramList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object slotIdentifier_ = "";
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string slot_identifier = 3;</code>
        * @return The slotIdentifier.
        */
@@ -747,6 +728,10 @@ public final class CustomCommonNodeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string slot_identifier = 3;</code>
        * @return The bytes for slotIdentifier.
        */
@@ -764,6 +749,10 @@ public final class CustomCommonNodeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string slot_identifier = 3;</code>
        * @param value The slotIdentifier to set.
        * @return This builder for chaining.
@@ -779,6 +768,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string slot_identifier = 3;</code>
        * @return This builder for chaining.
        */
@@ -789,6 +782,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string slot_identifier = 3;</code>
        * @param value The bytes for slotIdentifier to set.
        * @return This builder for chaining.
@@ -805,8 +802,119 @@ public final class CustomCommonNodeInfoOuterClass {
         return this;
       }
 
+      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
+      private void ensureParamListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          paramList_ = mutableCopy(paramList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @return A list containing the paramList.
+       */
+      public java.util.List<java.lang.Integer>
+          getParamListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(paramList_) : paramList_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @return The count of paramList.
+       */
+      public int getParamListCount() {
+        return paramList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @param index The index of the element to return.
+       * @return The paramList at the given index.
+       */
+      public int getParamList(int index) {
+        return paramList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @param index The index to set the value at.
+       * @param value The paramList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamList(
+          int index, int value) {
+        ensureParamListIsMutable();
+        paramList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @param value The paramList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addParamList(int value) {
+        ensureParamListIsMutable();
+        paramList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @param values The paramList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllParamList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureParamListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, paramList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated int32 param_list = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamList() {
+        paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private int configId_ ;
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 config_id = 2;</code>
        * @return The configId.
        */
@@ -815,6 +923,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return configId_;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 config_id = 2;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -826,6 +938,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 config_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -838,6 +954,10 @@ public final class CustomCommonNodeInfoOuterClass {
 
       private int parentIndex_ ;
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>int32 parent_index = 1;</code>
        * @return The parentIndex.
        */
@@ -846,6 +966,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return parentIndex_;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>int32 parent_index = 1;</code>
        * @param value The parentIndex to set.
        * @return This builder for chaining.
@@ -857,6 +981,10 @@ public final class CustomCommonNodeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>int32 parent_index = 1;</code>
        * @return This builder for chaining.
        */
@@ -934,8 +1062,8 @@ public final class CustomCommonNodeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032CustomCommonNodeInfo.proto\"l\n\024CustomCo" +
-      "mmonNodeInfo\022\022\n\nparam_list\030\004 \003(\005\022\027\n\017slot" +
-      "_identifier\030\003 \001(\t\022\021\n\tconfig_id\030\002 \001(\r\022\024\n\014" +
+      "mmonNodeInfo\022\027\n\017slot_identifier\030\003 \001(\t\022\022\n" +
+      "\nparam_list\030\004 \003(\005\022\021\n\tconfig_id\030\002 \001(\r\022\024\n\014" +
       "parent_index\030\001 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
@@ -948,7 +1076,7 @@ public final class CustomCommonNodeInfoOuterClass {
     internal_static_CustomCommonNodeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomCommonNodeInfo_descriptor,
-        new java.lang.String[] { "ParamList", "SlotIdentifier", "ConfigId", "ParentIndex", });
+        new java.lang.String[] { "SlotIdentifier", "ParamList", "ConfigId", "ParentIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

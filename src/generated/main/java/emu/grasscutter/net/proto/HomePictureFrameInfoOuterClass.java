@@ -19,22 +19,18 @@ public final class HomePictureFrameInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 guid = 7;</code>
-     * @return The guid.
-     */
-    int getGuid();
-
-    /**
-     * <code>uint32 picture_id = 15;</code>
+     * <code>uint32 picture_id = 2;</code>
      * @return The pictureId.
      */
     int getPictureId();
+
+    /**
+     * <code>uint32 guid = 12;</code>
+     * @return The guid.
+     */
+    int getGuid();
   }
   /**
-   * <pre>
-   * Obf: DCLOEDNCIHD
-   * </pre>
-   *
    * Protobuf type {@code HomePictureFrameInfo}
    */
   public static final class HomePictureFrameInfo extends
@@ -79,14 +75,14 @@ public final class HomePictureFrameInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              guid_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 16: {
 
               pictureId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              guid_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class HomePictureFrameInfoOuterClass {
               emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.class, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 7;
-    private int guid_;
-    /**
-     * <code>uint32 guid = 7;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public int getGuid() {
-      return guid_;
-    }
-
-    public static final int PICTURE_ID_FIELD_NUMBER = 15;
+    public static final int PICTURE_ID_FIELD_NUMBER = 2;
     private int pictureId_;
     /**
-     * <code>uint32 picture_id = 15;</code>
+     * <code>uint32 picture_id = 2;</code>
      * @return The pictureId.
      */
     @java.lang.Override
     public int getPictureId() {
       return pictureId_;
+    }
+
+    public static final int GUID_FIELD_NUMBER = 12;
+    private int guid_;
+    /**
+     * <code>uint32 guid = 12;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public int getGuid() {
+      return guid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class HomePictureFrameInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (guid_ != 0) {
-        output.writeUInt32(7, guid_);
-      }
       if (pictureId_ != 0) {
-        output.writeUInt32(15, pictureId_);
+        output.writeUInt32(2, pictureId_);
+      }
+      if (guid_ != 0) {
+        output.writeUInt32(12, guid_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class HomePictureFrameInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (guid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, guid_);
-      }
       if (pictureId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, pictureId_);
+          .computeUInt32Size(2, pictureId_);
+      }
+      if (guid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, guid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class HomePictureFrameInfoOuterClass {
       }
       emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo other = (emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo) obj;
 
-      if (getGuid()
-          != other.getGuid()) return false;
       if (getPictureId()
           != other.getPictureId()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class HomePictureFrameInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
       hash = (37 * hash) + PICTURE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPictureId();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class HomePictureFrameInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DCLOEDNCIHD
-     * </pre>
-     *
      * Protobuf type {@code HomePictureFrameInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class HomePictureFrameInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        guid_ = 0;
-
         pictureId_ = 0;
+
+        guid_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class HomePictureFrameInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo buildPartial() {
         emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo result = new emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo(this);
-        result.guid_ = guid_;
         result.pictureId_ = pictureId_;
+        result.guid_ = guid_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class HomePictureFrameInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo other) {
         if (other == emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.getDefaultInstance()) return this;
-        if (other.getGuid() != 0) {
-          setGuid(other.getGuid());
-        }
         if (other.getPictureId() != 0) {
           setPictureId(other.getPictureId());
+        }
+        if (other.getGuid() != 0) {
+          setGuid(other.getGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +458,9 @@ public final class HomePictureFrameInfoOuterClass {
         return this;
       }
 
-      private int guid_ ;
-      /**
-       * <code>uint32 guid = 7;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public int getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint32 guid = 7;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(int value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 guid = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int pictureId_ ;
       /**
-       * <code>uint32 picture_id = 15;</code>
+       * <code>uint32 picture_id = 2;</code>
        * @return The pictureId.
        */
       @java.lang.Override
@@ -507,7 +468,7 @@ public final class HomePictureFrameInfoOuterClass {
         return pictureId_;
       }
       /**
-       * <code>uint32 picture_id = 15;</code>
+       * <code>uint32 picture_id = 2;</code>
        * @param value The pictureId to set.
        * @return This builder for chaining.
        */
@@ -518,12 +479,43 @@ public final class HomePictureFrameInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 picture_id = 15;</code>
+       * <code>uint32 picture_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPictureId() {
         
         pictureId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int guid_ ;
+      /**
+       * <code>uint32 guid = 12;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public int getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint32 guid = 12;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(int value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 guid = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +587,8 @@ public final class HomePictureFrameInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032HomePictureFrameInfo.proto\"8\n\024HomePict" +
-      "ureFrameInfo\022\014\n\004guid\030\007 \001(\r\022\022\n\npicture_id" +
-      "\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "ureFrameInfo\022\022\n\npicture_id\030\002 \001(\r\022\014\n\004guid" +
+      "\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +600,7 @@ public final class HomePictureFrameInfoOuterClass {
     internal_static_HomePictureFrameInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomePictureFrameInfo_descriptor,
-        new java.lang.String[] { "Guid", "PictureId", });
+        new java.lang.String[] { "PictureId", "Guid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

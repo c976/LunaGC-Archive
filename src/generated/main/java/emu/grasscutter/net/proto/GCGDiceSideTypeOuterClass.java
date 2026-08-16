@@ -15,89 +15,85 @@ public final class GCGDiceSideTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: FNMHKJNGFMI
-   * </pre>
-   *
    * Protobuf enum {@code GCGDiceSideType}
    */
   public enum GCGDiceSideType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GCG_DICE_SIDE_INVALID = 0;</code>
+     * <code>GCG_DICE_SIDE_TYPE_INVALID = 0;</code>
      */
-    GCG_DICE_SIDE_INVALID(0),
+    GCG_DICE_SIDE_TYPE_INVALID(0),
     /**
-     * <code>GCG_DICE_SIDE_CRYO = 1;</code>
+     * <code>GCG_DICE_SIDE_TYPE_CRYO = 1;</code>
      */
-    GCG_DICE_SIDE_CRYO(1),
+    GCG_DICE_SIDE_TYPE_CRYO(1),
     /**
-     * <code>GCG_DICE_SIDE_HYDRO = 2;</code>
+     * <code>GCG_DICE_SIDE_TYPE_HYDRO = 2;</code>
      */
-    GCG_DICE_SIDE_HYDRO(2),
+    GCG_DICE_SIDE_TYPE_HYDRO(2),
     /**
-     * <code>GCG_DICE_SIDE_PYRO = 3;</code>
+     * <code>GCG_DICE_SIDE_TYPE_PYRO = 3;</code>
      */
-    GCG_DICE_SIDE_PYRO(3),
+    GCG_DICE_SIDE_TYPE_PYRO(3),
     /**
-     * <code>GCG_DICE_SIDE_ELECTRO = 4;</code>
+     * <code>GCG_DICE_SIDE_TYPE_ELECTRO = 4;</code>
      */
-    GCG_DICE_SIDE_ELECTRO(4),
+    GCG_DICE_SIDE_TYPE_ELECTRO(4),
     /**
-     * <code>GCG_DICE_SIDE_GEO = 5;</code>
+     * <code>GCG_DICE_SIDE_TYPE_GEO = 5;</code>
      */
-    GCG_DICE_SIDE_GEO(5),
+    GCG_DICE_SIDE_TYPE_GEO(5),
     /**
-     * <code>GCG_DICE_SIDE_DENDRO = 6;</code>
+     * <code>GCG_DICE_SIDE_TYPE_DENDRO = 6;</code>
      */
-    GCG_DICE_SIDE_DENDRO(6),
+    GCG_DICE_SIDE_TYPE_DENDRO(6),
     /**
-     * <code>GCG_DICE_SIDE_ANEMO = 7;</code>
+     * <code>GCG_DICE_SIDE_TYPE_ANEMO = 7;</code>
      */
-    GCG_DICE_SIDE_ANEMO(7),
+    GCG_DICE_SIDE_TYPE_ANEMO(7),
     /**
-     * <code>GCG_DICE_SIDE_PAIMON = 8;</code>
+     * <code>GCG_DICE_SIDE_TYPE_PAIMON = 8;</code>
      */
-    GCG_DICE_SIDE_PAIMON(8),
+    GCG_DICE_SIDE_TYPE_PAIMON(8),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GCG_DICE_SIDE_INVALID = 0;</code>
+     * <code>GCG_DICE_SIDE_TYPE_INVALID = 0;</code>
      */
-    public static final int GCG_DICE_SIDE_INVALID_VALUE = 0;
+    public static final int GCG_DICE_SIDE_TYPE_INVALID_VALUE = 0;
     /**
-     * <code>GCG_DICE_SIDE_CRYO = 1;</code>
+     * <code>GCG_DICE_SIDE_TYPE_CRYO = 1;</code>
      */
-    public static final int GCG_DICE_SIDE_CRYO_VALUE = 1;
+    public static final int GCG_DICE_SIDE_TYPE_CRYO_VALUE = 1;
     /**
-     * <code>GCG_DICE_SIDE_HYDRO = 2;</code>
+     * <code>GCG_DICE_SIDE_TYPE_HYDRO = 2;</code>
      */
-    public static final int GCG_DICE_SIDE_HYDRO_VALUE = 2;
+    public static final int GCG_DICE_SIDE_TYPE_HYDRO_VALUE = 2;
     /**
-     * <code>GCG_DICE_SIDE_PYRO = 3;</code>
+     * <code>GCG_DICE_SIDE_TYPE_PYRO = 3;</code>
      */
-    public static final int GCG_DICE_SIDE_PYRO_VALUE = 3;
+    public static final int GCG_DICE_SIDE_TYPE_PYRO_VALUE = 3;
     /**
-     * <code>GCG_DICE_SIDE_ELECTRO = 4;</code>
+     * <code>GCG_DICE_SIDE_TYPE_ELECTRO = 4;</code>
      */
-    public static final int GCG_DICE_SIDE_ELECTRO_VALUE = 4;
+    public static final int GCG_DICE_SIDE_TYPE_ELECTRO_VALUE = 4;
     /**
-     * <code>GCG_DICE_SIDE_GEO = 5;</code>
+     * <code>GCG_DICE_SIDE_TYPE_GEO = 5;</code>
      */
-    public static final int GCG_DICE_SIDE_GEO_VALUE = 5;
+    public static final int GCG_DICE_SIDE_TYPE_GEO_VALUE = 5;
     /**
-     * <code>GCG_DICE_SIDE_DENDRO = 6;</code>
+     * <code>GCG_DICE_SIDE_TYPE_DENDRO = 6;</code>
      */
-    public static final int GCG_DICE_SIDE_DENDRO_VALUE = 6;
+    public static final int GCG_DICE_SIDE_TYPE_DENDRO_VALUE = 6;
     /**
-     * <code>GCG_DICE_SIDE_ANEMO = 7;</code>
+     * <code>GCG_DICE_SIDE_TYPE_ANEMO = 7;</code>
      */
-    public static final int GCG_DICE_SIDE_ANEMO_VALUE = 7;
+    public static final int GCG_DICE_SIDE_TYPE_ANEMO_VALUE = 7;
     /**
-     * <code>GCG_DICE_SIDE_PAIMON = 8;</code>
+     * <code>GCG_DICE_SIDE_TYPE_PAIMON = 8;</code>
      */
-    public static final int GCG_DICE_SIDE_PAIMON_VALUE = 8;
+    public static final int GCG_DICE_SIDE_TYPE_PAIMON_VALUE = 8;
 
 
     public final int getNumber() {
@@ -124,15 +120,15 @@ public final class GCGDiceSideTypeOuterClass {
      */
     public static GCGDiceSideType forNumber(int value) {
       switch (value) {
-        case 0: return GCG_DICE_SIDE_INVALID;
-        case 1: return GCG_DICE_SIDE_CRYO;
-        case 2: return GCG_DICE_SIDE_HYDRO;
-        case 3: return GCG_DICE_SIDE_PYRO;
-        case 4: return GCG_DICE_SIDE_ELECTRO;
-        case 5: return GCG_DICE_SIDE_GEO;
-        case 6: return GCG_DICE_SIDE_DENDRO;
-        case 7: return GCG_DICE_SIDE_ANEMO;
-        case 8: return GCG_DICE_SIDE_PAIMON;
+        case 0: return GCG_DICE_SIDE_TYPE_INVALID;
+        case 1: return GCG_DICE_SIDE_TYPE_CRYO;
+        case 2: return GCG_DICE_SIDE_TYPE_HYDRO;
+        case 3: return GCG_DICE_SIDE_TYPE_PYRO;
+        case 4: return GCG_DICE_SIDE_TYPE_ELECTRO;
+        case 5: return GCG_DICE_SIDE_TYPE_GEO;
+        case 6: return GCG_DICE_SIDE_TYPE_DENDRO;
+        case 7: return GCG_DICE_SIDE_TYPE_ANEMO;
+        case 8: return GCG_DICE_SIDE_TYPE_PAIMON;
         default: return null;
       }
     }
@@ -198,14 +194,15 @@ public final class GCGDiceSideTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GCGDiceSideType.proto*\364\001\n\017GCGDiceSideT" +
-      "ype\022\031\n\025GCG_DICE_SIDE_INVALID\020\000\022\026\n\022GCG_DI" +
-      "CE_SIDE_CRYO\020\001\022\027\n\023GCG_DICE_SIDE_HYDRO\020\002\022" +
-      "\026\n\022GCG_DICE_SIDE_PYRO\020\003\022\031\n\025GCG_DICE_SIDE" +
-      "_ELECTRO\020\004\022\025\n\021GCG_DICE_SIDE_GEO\020\005\022\030\n\024GCG" +
-      "_DICE_SIDE_DENDRO\020\006\022\027\n\023GCG_DICE_SIDE_ANE" +
-      "MO\020\007\022\030\n\024GCG_DICE_SIDE_PAIMON\020\010B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\025GCGDiceSideType.proto*\241\002\n\017GCGDiceSideT" +
+      "ype\022\036\n\032GCG_DICE_SIDE_TYPE_INVALID\020\000\022\033\n\027G" +
+      "CG_DICE_SIDE_TYPE_CRYO\020\001\022\034\n\030GCG_DICE_SID" +
+      "E_TYPE_HYDRO\020\002\022\033\n\027GCG_DICE_SIDE_TYPE_PYR" +
+      "O\020\003\022\036\n\032GCG_DICE_SIDE_TYPE_ELECTRO\020\004\022\032\n\026G" +
+      "CG_DICE_SIDE_TYPE_GEO\020\005\022\035\n\031GCG_DICE_SIDE" +
+      "_TYPE_DENDRO\020\006\022\034\n\030GCG_DICE_SIDE_TYPE_ANE" +
+      "MO\020\007\022\035\n\031GCG_DICE_SIDE_TYPE_PAIMON\020\010B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

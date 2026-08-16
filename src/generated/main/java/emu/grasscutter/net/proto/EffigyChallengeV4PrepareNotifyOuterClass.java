@@ -19,45 +19,49 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     * @return Whether the levelInfo field is set.
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
-    boolean hasLevelInfo();
-    /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     * @return The levelInfo.
-     */
-    emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo getLevelInfo();
-    /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     */
-    emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder getLevelInfoOrBuilder();
-
-    /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> 
+    java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> 
         getPlayerInfoListList();
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo getPlayerInfoList(int index);
+    emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN getPlayerInfoList(int index);
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     int getPlayerInfoListCount();
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder> 
         getPlayerInfoListOrBuilderList();
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
-    emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder getPlayerInfoListOrBuilder(
+    emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder getPlayerInfoListOrBuilder(
         int index);
+
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     * @return Whether the gMLLFBNGLDG field is set.
+     */
+    boolean hasGMLLFBNGLDG();
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     * @return The gMLLFBNGLDG.
+     */
+    emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE getGMLLFBNGLDG();
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     */
+    emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder getGMLLFBNGLDGOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 6612
+   * </pre>
+   *
    * Protobuf type {@code EffigyChallengeV4PrepareNotify}
    */
   public static final class EffigyChallengeV4PrepareNotify extends
@@ -105,25 +109,25 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
               done = true;
               break;
             case 50: {
-              emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder subBuilder = null;
-              if (levelInfo_ != null) {
-                subBuilder = levelInfo_.toBuilder();
-              }
-              levelInfo_ = input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(levelInfo_);
-                levelInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                playerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo>();
+                playerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN>();
                 mutable_bitField0_ |= 0x00000001;
               }
               playerInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.parser(), extensionRegistry));
+              break;
+            }
+            case 90: {
+              emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder subBuilder = null;
+              if (gMLLFBNGLDG_ != null) {
+                subBuilder = gMLLFBNGLDG_.toBuilder();
+              }
+              gMLLFBNGLDG_ = input.readMessage(emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(gMLLFBNGLDG_);
+                gMLLFBNGLDG_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -161,70 +165,70 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify.class, emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify.Builder.class);
     }
 
-    public static final int LEVEL_INFO_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo levelInfo_;
+    public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> playerInfoList_;
     /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     * @return Whether the levelInfo field is set.
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     @java.lang.Override
-    public boolean hasLevelInfo() {
-      return levelInfo_ != null;
-    }
-    /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     * @return The levelInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo getLevelInfo() {
-      return levelInfo_ == null ? emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.getDefaultInstance() : levelInfo_;
-    }
-    /**
-     * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder getLevelInfoOrBuilder() {
-      return getLevelInfo();
-    }
-
-    public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> playerInfoList_;
-    /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> getPlayerInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> getPlayerInfoListList() {
       return playerInfoList_;
     }
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder> 
         getPlayerInfoListOrBuilderList() {
       return playerInfoList_;
     }
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     @java.lang.Override
     public int getPlayerInfoListCount() {
       return playerInfoList_.size();
     }
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo getPlayerInfoList(int index) {
+    public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN getPlayerInfoList(int index) {
       return playerInfoList_.get(index);
     }
     /**
-     * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+     * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder getPlayerInfoListOrBuilder(
+    public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder getPlayerInfoListOrBuilder(
         int index) {
       return playerInfoList_.get(index);
+    }
+
+    public static final int GMLLFBNGLDG_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE gMLLFBNGLDG_;
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     * @return Whether the gMLLFBNGLDG field is set.
+     */
+    @java.lang.Override
+    public boolean hasGMLLFBNGLDG() {
+      return gMLLFBNGLDG_ != null;
+    }
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     * @return The gMLLFBNGLDG.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE getGMLLFBNGLDG() {
+      return gMLLFBNGLDG_ == null ? emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.getDefaultInstance() : gMLLFBNGLDG_;
+    }
+    /**
+     * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder getGMLLFBNGLDGOrBuilder() {
+      return getGMLLFBNGLDG();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,11 +245,11 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelInfo_ != null) {
-        output.writeMessage(6, getLevelInfo());
-      }
       for (int i = 0; i < playerInfoList_.size(); i++) {
-        output.writeMessage(7, playerInfoList_.get(i));
+        output.writeMessage(6, playerInfoList_.get(i));
+      }
+      if (gMLLFBNGLDG_ != null) {
+        output.writeMessage(11, getGMLLFBNGLDG());
       }
       unknownFields.writeTo(output);
     }
@@ -256,13 +260,13 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getLevelInfo());
-      }
       for (int i = 0; i < playerInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, playerInfoList_.get(i));
+          .computeMessageSize(6, playerInfoList_.get(i));
+      }
+      if (gMLLFBNGLDG_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getGMLLFBNGLDG());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,13 +283,13 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify other = (emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify) obj;
 
-      if (hasLevelInfo() != other.hasLevelInfo()) return false;
-      if (hasLevelInfo()) {
-        if (!getLevelInfo()
-            .equals(other.getLevelInfo())) return false;
-      }
       if (!getPlayerInfoListList()
           .equals(other.getPlayerInfoListList())) return false;
+      if (hasGMLLFBNGLDG() != other.hasGMLLFBNGLDG()) return false;
+      if (hasGMLLFBNGLDG()) {
+        if (!getGMLLFBNGLDG()
+            .equals(other.getGMLLFBNGLDG())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,13 +301,13 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasLevelInfo()) {
-        hash = (37 * hash) + LEVEL_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getLevelInfo().hashCode();
-      }
       if (getPlayerInfoListCount() > 0) {
         hash = (37 * hash) + PLAYER_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfoListList().hashCode();
+      }
+      if (hasGMLLFBNGLDG()) {
+        hash = (37 * hash) + GMLLFBNGLDG_FIELD_NUMBER;
+        hash = (53 * hash) + getGMLLFBNGLDG().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -401,6 +405,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 6612
+     * </pre>
+     *
      * Protobuf type {@code EffigyChallengeV4PrepareNotify}
      */
     public static final class Builder extends
@@ -439,17 +447,17 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (levelInfoBuilder_ == null) {
-          levelInfo_ = null;
-        } else {
-          levelInfo_ = null;
-          levelInfoBuilder_ = null;
-        }
         if (playerInfoListBuilder_ == null) {
           playerInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           playerInfoListBuilder_.clear();
+        }
+        if (gMLLFBNGLDGBuilder_ == null) {
+          gMLLFBNGLDG_ = null;
+        } else {
+          gMLLFBNGLDG_ = null;
+          gMLLFBNGLDGBuilder_ = null;
         }
         return this;
       }
@@ -478,11 +486,6 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       public emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify result = new emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify(this);
         int from_bitField0_ = bitField0_;
-        if (levelInfoBuilder_ == null) {
-          result.levelInfo_ = levelInfo_;
-        } else {
-          result.levelInfo_ = levelInfoBuilder_.build();
-        }
         if (playerInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             playerInfoList_ = java.util.Collections.unmodifiableList(playerInfoList_);
@@ -491,6 +494,11 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
           result.playerInfoList_ = playerInfoList_;
         } else {
           result.playerInfoList_ = playerInfoListBuilder_.build();
+        }
+        if (gMLLFBNGLDGBuilder_ == null) {
+          result.gMLLFBNGLDG_ = gMLLFBNGLDG_;
+        } else {
+          result.gMLLFBNGLDG_ = gMLLFBNGLDGBuilder_.build();
         }
         onBuilt();
         return result;
@@ -540,9 +548,6 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV4PrepareNotifyOuterClass.EffigyChallengeV4PrepareNotify.getDefaultInstance()) return this;
-        if (other.hasLevelInfo()) {
-          mergeLevelInfo(other.getLevelInfo());
-        }
         if (playerInfoListBuilder_ == null) {
           if (!other.playerInfoList_.isEmpty()) {
             if (playerInfoList_.isEmpty()) {
@@ -568,6 +573,9 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
               playerInfoListBuilder_.addAllMessages(other.playerInfoList_);
             }
           }
+        }
+        if (other.hasGMLLFBNGLDG()) {
+          mergeGMLLFBNGLDG(other.getGMLLFBNGLDG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -599,141 +607,22 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo levelInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder> levelInfoBuilder_;
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       * @return Whether the levelInfo field is set.
-       */
-      public boolean hasLevelInfo() {
-        return levelInfoBuilder_ != null || levelInfo_ != null;
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       * @return The levelInfo.
-       */
-      public emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo getLevelInfo() {
-        if (levelInfoBuilder_ == null) {
-          return levelInfo_ == null ? emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.getDefaultInstance() : levelInfo_;
-        } else {
-          return levelInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public Builder setLevelInfo(emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo value) {
-        if (levelInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          levelInfo_ = value;
-          onChanged();
-        } else {
-          levelInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public Builder setLevelInfo(
-          emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder builderForValue) {
-        if (levelInfoBuilder_ == null) {
-          levelInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          levelInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public Builder mergeLevelInfo(emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo value) {
-        if (levelInfoBuilder_ == null) {
-          if (levelInfo_ != null) {
-            levelInfo_ =
-              emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.newBuilder(levelInfo_).mergeFrom(value).buildPartial();
-          } else {
-            levelInfo_ = value;
-          }
-          onChanged();
-        } else {
-          levelInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public Builder clearLevelInfo() {
-        if (levelInfoBuilder_ == null) {
-          levelInfo_ = null;
-          onChanged();
-        } else {
-          levelInfo_ = null;
-          levelInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder getLevelInfoBuilder() {
-        
-        onChanged();
-        return getLevelInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder getLevelInfoOrBuilder() {
-        if (levelInfoBuilder_ != null) {
-          return levelInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return levelInfo_ == null ?
-              emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.getDefaultInstance() : levelInfo_;
-        }
-      }
-      /**
-       * <code>.EffigyChallengeV4LevelInfo level_info = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder> 
-          getLevelInfoFieldBuilder() {
-        if (levelInfoBuilder_ == null) {
-          levelInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.EffigyChallengeV4LevelInfoOrBuilder>(
-                  getLevelInfo(),
-                  getParentForChildren(),
-                  isClean());
-          levelInfo_ = null;
-        }
-        return levelInfoBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> playerInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> playerInfoList_ =
         java.util.Collections.emptyList();
       private void ensurePlayerInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          playerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo>(playerInfoList_);
+          playerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN>(playerInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder> playerInfoListBuilder_;
+          emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder> playerInfoListBuilder_;
 
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> getPlayerInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> getPlayerInfoListList() {
         if (playerInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(playerInfoList_);
         } else {
@@ -741,7 +630,7 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public int getPlayerInfoListCount() {
         if (playerInfoListBuilder_ == null) {
@@ -751,9 +640,9 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo getPlayerInfoList(int index) {
+      public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN getPlayerInfoList(int index) {
         if (playerInfoListBuilder_ == null) {
           return playerInfoList_.get(index);
         } else {
@@ -761,10 +650,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder setPlayerInfoList(
-          int index, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo value) {
+          int index, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN value) {
         if (playerInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -778,10 +667,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder setPlayerInfoList(
-          int index, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder builderForValue) {
         if (playerInfoListBuilder_ == null) {
           ensurePlayerInfoListIsMutable();
           playerInfoList_.set(index, builderForValue.build());
@@ -792,9 +681,9 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public Builder addPlayerInfoList(emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo value) {
+      public Builder addPlayerInfoList(emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN value) {
         if (playerInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -808,10 +697,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder addPlayerInfoList(
-          int index, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo value) {
+          int index, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN value) {
         if (playerInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -825,10 +714,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder addPlayerInfoList(
-          emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder builderForValue) {
         if (playerInfoListBuilder_ == null) {
           ensurePlayerInfoListIsMutable();
           playerInfoList_.add(builderForValue.build());
@@ -839,10 +728,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder addPlayerInfoList(
-          int index, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder builderForValue) {
         if (playerInfoListBuilder_ == null) {
           ensurePlayerInfoListIsMutable();
           playerInfoList_.add(index, builderForValue.build());
@@ -853,10 +742,10 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder addAllPlayerInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN> values) {
         if (playerInfoListBuilder_ == null) {
           ensurePlayerInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -868,7 +757,7 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder clearPlayerInfoList() {
         if (playerInfoListBuilder_ == null) {
@@ -881,7 +770,7 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
       public Builder removePlayerInfoList(int index) {
         if (playerInfoListBuilder_ == null) {
@@ -894,16 +783,16 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder getPlayerInfoListBuilder(
+      public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder getPlayerInfoListBuilder(
           int index) {
         return getPlayerInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder getPlayerInfoListOrBuilder(
+      public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder getPlayerInfoListOrBuilder(
           int index) {
         if (playerInfoListBuilder_ == null) {
           return playerInfoList_.get(index);  } else {
@@ -911,9 +800,9 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder> 
            getPlayerInfoListOrBuilderList() {
         if (playerInfoListBuilder_ != null) {
           return playerInfoListBuilder_.getMessageOrBuilderList();
@@ -922,33 +811,33 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder addPlayerInfoListBuilder() {
+      public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder addPlayerInfoListBuilder() {
         return getPlayerInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.getDefaultInstance());
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder addPlayerInfoListBuilder(
+      public emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder addPlayerInfoListBuilder(
           int index) {
         return getPlayerInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.getDefaultInstance());
       }
       /**
-       * <code>repeated .EffigyChallengeV4PlayerInfo player_info_list = 7;</code>
+       * <code>repeated .MJGEBEGNKMN player_info_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder> 
            getPlayerInfoListBuilderList() {
         return getPlayerInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder> 
+          emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder> 
           getPlayerInfoListFieldBuilder() {
         if (playerInfoListBuilder_ == null) {
           playerInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.EffigyChallengeV4PlayerInfoOrBuilder>(
+              emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMN.Builder, emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.MJGEBEGNKMNOrBuilder>(
                   playerInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -956,6 +845,125 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
           playerInfoList_ = null;
         }
         return playerInfoListBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE gMLLFBNGLDG_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder> gMLLFBNGLDGBuilder_;
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       * @return Whether the gMLLFBNGLDG field is set.
+       */
+      public boolean hasGMLLFBNGLDG() {
+        return gMLLFBNGLDGBuilder_ != null || gMLLFBNGLDG_ != null;
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       * @return The gMLLFBNGLDG.
+       */
+      public emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE getGMLLFBNGLDG() {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          return gMLLFBNGLDG_ == null ? emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.getDefaultInstance() : gMLLFBNGLDG_;
+        } else {
+          return gMLLFBNGLDGBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public Builder setGMLLFBNGLDG(emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE value) {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gMLLFBNGLDG_ = value;
+          onChanged();
+        } else {
+          gMLLFBNGLDGBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public Builder setGMLLFBNGLDG(
+          emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder builderForValue) {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          gMLLFBNGLDG_ = builderForValue.build();
+          onChanged();
+        } else {
+          gMLLFBNGLDGBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public Builder mergeGMLLFBNGLDG(emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE value) {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          if (gMLLFBNGLDG_ != null) {
+            gMLLFBNGLDG_ =
+              emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.newBuilder(gMLLFBNGLDG_).mergeFrom(value).buildPartial();
+          } else {
+            gMLLFBNGLDG_ = value;
+          }
+          onChanged();
+        } else {
+          gMLLFBNGLDGBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public Builder clearGMLLFBNGLDG() {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          gMLLFBNGLDG_ = null;
+          onChanged();
+        } else {
+          gMLLFBNGLDG_ = null;
+          gMLLFBNGLDGBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder getGMLLFBNGLDGBuilder() {
+        
+        onChanged();
+        return getGMLLFBNGLDGFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      public emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder getGMLLFBNGLDGOrBuilder() {
+        if (gMLLFBNGLDGBuilder_ != null) {
+          return gMLLFBNGLDGBuilder_.getMessageOrBuilder();
+        } else {
+          return gMLLFBNGLDG_ == null ?
+              emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.getDefaultInstance() : gMLLFBNGLDG_;
+        }
+      }
+      /**
+       * <code>.ONHNJJGIIJE GMLLFBNGLDG = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder> 
+          getGMLLFBNGLDGFieldBuilder() {
+        if (gMLLFBNGLDGBuilder_ == null) {
+          gMLLFBNGLDGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJE.Builder, emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.ONHNJJGIIJEOrBuilder>(
+                  getGMLLFBNGLDG(),
+                  getParentForChildren(),
+                  isClean());
+          gMLLFBNGLDG_ = null;
+        }
+        return gMLLFBNGLDGBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1024,29 +1032,27 @@ public final class EffigyChallengeV4PrepareNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$EffigyChallengeV4PrepareNotify.proto\032 " +
-      "EffigyChallengeV4LevelInfo.proto\032!Effigy" +
-      "ChallengeV4PlayerInfo.proto\"\211\001\n\036EffigyCh" +
-      "allengeV4PrepareNotify\022/\n\nlevel_info\030\006 \001" +
-      "(\0132\033.EffigyChallengeV4LevelInfo\0226\n\020playe" +
-      "r_info_list\030\007 \003(\0132\034.EffigyChallengeV4Pla" +
-      "yerInfoB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n$EffigyChallengeV4PrepareNotify.proto\032\021" +
+      "MJGEBEGNKMN.proto\032\021ONHNJJGIIJE.proto\"k\n\036" +
+      "EffigyChallengeV4PrepareNotify\022&\n\020player" +
+      "_info_list\030\006 \003(\0132\014.MJGEBEGNKMN\022!\n\013GMLLFB" +
+      "NGLDG\030\013 \001(\0132\014.ONHNJJGIIJEB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.getDescriptor(),
         });
     internal_static_EffigyChallengeV4PrepareNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EffigyChallengeV4PrepareNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV4PrepareNotify_descriptor,
-        new java.lang.String[] { "LevelInfo", "PlayerInfoList", });
-    emu.grasscutter.net.proto.EffigyChallengeV4LevelInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.EffigyChallengeV4PlayerInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "PlayerInfoList", "GMLLFBNGLDG", });
+    emu.grasscutter.net.proto.MJGEBEGNKMNOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ONHNJJGIIJEOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

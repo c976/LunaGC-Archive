@@ -19,16 +19,10 @@ public final class ClientAIStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_tactic = 10;</code>
-     * @return The curTactic.
+     * <code>uint32 PGLJAFPOGDG = 4;</code>
+     * @return The pGLJAFPOGDG.
      */
-    int getCurTactic();
-
-    /**
-     * <code>uint32 LHEOHBGDDFB = 11;</code>
-     * @return The lHEOHBGDDFB.
-     */
-    int getLHEOHBGDDFB();
+    int getPGLJAFPOGDG();
 
     /**
      * <code>uint32 entity_id = 2;</code>
@@ -38,7 +32,7 @@ public final class ClientAIStateNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21994
+   * CmdId: 22165
    * </pre>
    *
    * Protobuf type {@code ClientAIStateNotify}
@@ -90,14 +84,9 @@ public final class ClientAIStateNotifyOuterClass {
               entityId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 32: {
 
-              curTactic_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              lHEOHBGDDFB_ = input.readUInt32();
+              pGLJAFPOGDG_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,26 +121,15 @@ public final class ClientAIStateNotifyOuterClass {
               emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify.class, emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify.Builder.class);
     }
 
-    public static final int CUR_TACTIC_FIELD_NUMBER = 10;
-    private int curTactic_;
+    public static final int PGLJAFPOGDG_FIELD_NUMBER = 4;
+    private int pGLJAFPOGDG_;
     /**
-     * <code>uint32 cur_tactic = 10;</code>
-     * @return The curTactic.
+     * <code>uint32 PGLJAFPOGDG = 4;</code>
+     * @return The pGLJAFPOGDG.
      */
     @java.lang.Override
-    public int getCurTactic() {
-      return curTactic_;
-    }
-
-    public static final int LHEOHBGDDFB_FIELD_NUMBER = 11;
-    private int lHEOHBGDDFB_;
-    /**
-     * <code>uint32 LHEOHBGDDFB = 11;</code>
-     * @return The lHEOHBGDDFB.
-     */
-    @java.lang.Override
-    public int getLHEOHBGDDFB() {
-      return lHEOHBGDDFB_;
+    public int getPGLJAFPOGDG() {
+      return pGLJAFPOGDG_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 2;
@@ -182,11 +160,8 @@ public final class ClientAIStateNotifyOuterClass {
       if (entityId_ != 0) {
         output.writeUInt32(2, entityId_);
       }
-      if (curTactic_ != 0) {
-        output.writeUInt32(10, curTactic_);
-      }
-      if (lHEOHBGDDFB_ != 0) {
-        output.writeUInt32(11, lHEOHBGDDFB_);
+      if (pGLJAFPOGDG_ != 0) {
+        output.writeUInt32(4, pGLJAFPOGDG_);
       }
       unknownFields.writeTo(output);
     }
@@ -201,13 +176,9 @@ public final class ClientAIStateNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, entityId_);
       }
-      if (curTactic_ != 0) {
+      if (pGLJAFPOGDG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, curTactic_);
-      }
-      if (lHEOHBGDDFB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, lHEOHBGDDFB_);
+          .computeUInt32Size(4, pGLJAFPOGDG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,10 +195,8 @@ public final class ClientAIStateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify other = (emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify) obj;
 
-      if (getCurTactic()
-          != other.getCurTactic()) return false;
-      if (getLHEOHBGDDFB()
-          != other.getLHEOHBGDDFB()) return false;
+      if (getPGLJAFPOGDG()
+          != other.getPGLJAFPOGDG()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -241,10 +210,8 @@ public final class ClientAIStateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_TACTIC_FIELD_NUMBER;
-      hash = (53 * hash) + getCurTactic();
-      hash = (37 * hash) + LHEOHBGDDFB_FIELD_NUMBER;
-      hash = (53 * hash) + getLHEOHBGDDFB();
+      hash = (37 * hash) + PGLJAFPOGDG_FIELD_NUMBER;
+      hash = (53 * hash) + getPGLJAFPOGDG();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -344,7 +311,7 @@ public final class ClientAIStateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21994
+     * CmdId: 22165
      * </pre>
      *
      * Protobuf type {@code ClientAIStateNotify}
@@ -384,9 +351,7 @@ public final class ClientAIStateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curTactic_ = 0;
-
-        lHEOHBGDDFB_ = 0;
+        pGLJAFPOGDG_ = 0;
 
         entityId_ = 0;
 
@@ -416,8 +381,7 @@ public final class ClientAIStateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify buildPartial() {
         emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify result = new emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify(this);
-        result.curTactic_ = curTactic_;
-        result.lHEOHBGDDFB_ = lHEOHBGDDFB_;
+        result.pGLJAFPOGDG_ = pGLJAFPOGDG_;
         result.entityId_ = entityId_;
         onBuilt();
         return result;
@@ -467,11 +431,8 @@ public final class ClientAIStateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify other) {
         if (other == emu.grasscutter.net.proto.ClientAIStateNotifyOuterClass.ClientAIStateNotify.getDefaultInstance()) return this;
-        if (other.getCurTactic() != 0) {
-          setCurTactic(other.getCurTactic());
-        }
-        if (other.getLHEOHBGDDFB() != 0) {
-          setLHEOHBGDDFB(other.getLHEOHBGDDFB());
+        if (other.getPGLJAFPOGDG() != 0) {
+          setPGLJAFPOGDG(other.getPGLJAFPOGDG());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
@@ -505,64 +466,33 @@ public final class ClientAIStateNotifyOuterClass {
         return this;
       }
 
-      private int curTactic_ ;
+      private int pGLJAFPOGDG_ ;
       /**
-       * <code>uint32 cur_tactic = 10;</code>
-       * @return The curTactic.
+       * <code>uint32 PGLJAFPOGDG = 4;</code>
+       * @return The pGLJAFPOGDG.
        */
       @java.lang.Override
-      public int getCurTactic() {
-        return curTactic_;
+      public int getPGLJAFPOGDG() {
+        return pGLJAFPOGDG_;
       }
       /**
-       * <code>uint32 cur_tactic = 10;</code>
-       * @param value The curTactic to set.
+       * <code>uint32 PGLJAFPOGDG = 4;</code>
+       * @param value The pGLJAFPOGDG to set.
        * @return This builder for chaining.
        */
-      public Builder setCurTactic(int value) {
+      public Builder setPGLJAFPOGDG(int value) {
         
-        curTactic_ = value;
+        pGLJAFPOGDG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_tactic = 10;</code>
+       * <code>uint32 PGLJAFPOGDG = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurTactic() {
+      public Builder clearPGLJAFPOGDG() {
         
-        curTactic_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lHEOHBGDDFB_ ;
-      /**
-       * <code>uint32 LHEOHBGDDFB = 11;</code>
-       * @return The lHEOHBGDDFB.
-       */
-      @java.lang.Override
-      public int getLHEOHBGDDFB() {
-        return lHEOHBGDDFB_;
-      }
-      /**
-       * <code>uint32 LHEOHBGDDFB = 11;</code>
-       * @param value The lHEOHBGDDFB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLHEOHBGDDFB(int value) {
-        
-        lHEOHBGDDFB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LHEOHBGDDFB = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLHEOHBGDDFB() {
-        
-        lHEOHBGDDFB_ = 0;
+        pGLJAFPOGDG_ = 0;
         onChanged();
         return this;
       }
@@ -664,10 +594,10 @@ public final class ClientAIStateNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ClientAIStateNotify.proto\"Q\n\023ClientAIS" +
-      "tateNotify\022\022\n\ncur_tactic\030\n \001(\r\022\023\n\013LHEOHB" +
-      "GDDFB\030\013 \001(\r\022\021\n\tentity_id\030\002 \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\031ClientAIStateNotify.proto\"=\n\023ClientAIS" +
+      "tateNotify\022\023\n\013PGLJAFPOGDG\030\004 \001(\r\022\021\n\tentit" +
+      "y_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -678,7 +608,7 @@ public final class ClientAIStateNotifyOuterClass {
     internal_static_ClientAIStateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientAIStateNotify_descriptor,
-        new java.lang.String[] { "CurTactic", "LHEOHBGDDFB", "EntityId", });
+        new java.lang.String[] { "PGLJAFPOGDG", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

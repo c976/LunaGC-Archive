@@ -19,27 +19,26 @@ public final class CharAmusementSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_time = 9;</code>
+     * <code>uint32 finish_time = 5;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>bool is_new_record = 8;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>bool is_succ = 3;</code>
+     * <code>bool is_succ = 15;</code>
      * @return The isSucc.
      */
     boolean getIsSucc();
   }
   /**
    * <pre>
-   * CmdId: 7004
-   * Obf: POCEIGICBMH
+   * CmdId: 29598
    * </pre>
    *
    * Protobuf type {@code CharAmusementSettleNotify}
@@ -86,19 +85,19 @@ public final class CharAmusementSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
-              isSucc_ = input.readBool();
+              finishTime_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 104: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 72: {
+            case 120: {
 
-              finishTime_ = input.readUInt32();
+              isSucc_ = input.readBool();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class CharAmusementSettleNotifyOuterClass {
               emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify.class, emu.grasscutter.net.proto.CharAmusementSettleNotifyOuterClass.CharAmusementSettleNotify.Builder.class);
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 9;
+    public static final int FINISH_TIME_FIELD_NUMBER = 5;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 9;</code>
+     * <code>uint32 finish_time = 5;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -144,10 +143,10 @@ public final class CharAmusementSettleNotifyOuterClass {
       return finishTime_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 8;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -155,10 +154,10 @@ public final class CharAmusementSettleNotifyOuterClass {
       return isNewRecord_;
     }
 
-    public static final int IS_SUCC_FIELD_NUMBER = 3;
+    public static final int IS_SUCC_FIELD_NUMBER = 15;
     private boolean isSucc_;
     /**
-     * <code>bool is_succ = 3;</code>
+     * <code>bool is_succ = 15;</code>
      * @return The isSucc.
      */
     @java.lang.Override
@@ -180,14 +179,14 @@ public final class CharAmusementSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSucc_ != false) {
-        output.writeBool(3, isSucc_);
+      if (finishTime_ != 0) {
+        output.writeUInt32(5, finishTime_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(8, isNewRecord_);
+        output.writeBool(13, isNewRecord_);
       }
-      if (finishTime_ != 0) {
-        output.writeUInt32(9, finishTime_);
+      if (isSucc_ != false) {
+        output.writeBool(15, isSucc_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class CharAmusementSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSucc_ != false) {
+      if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSucc_);
+          .computeUInt32Size(5, finishTime_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNewRecord_);
+          .computeBoolSize(13, isNewRecord_);
       }
-      if (finishTime_ != 0) {
+      if (isSucc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, finishTime_);
+          .computeBoolSize(15, isSucc_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,8 +346,7 @@ public final class CharAmusementSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7004
-     * Obf: POCEIGICBMH
+     * CmdId: 29598
      * </pre>
      *
      * Protobuf type {@code CharAmusementSettleNotify}
@@ -511,7 +509,7 @@ public final class CharAmusementSettleNotifyOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 9;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -519,7 +517,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 9;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -530,7 +528,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 9;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -542,7 +540,7 @@ public final class CharAmusementSettleNotifyOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 8;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -550,7 +548,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 8;</code>
+       * <code>bool is_new_record = 13;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -561,7 +559,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 8;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -573,7 +571,7 @@ public final class CharAmusementSettleNotifyOuterClass {
 
       private boolean isSucc_ ;
       /**
-       * <code>bool is_succ = 3;</code>
+       * <code>bool is_succ = 15;</code>
        * @return The isSucc.
        */
       @java.lang.Override
@@ -581,7 +579,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return isSucc_;
       }
       /**
-       * <code>bool is_succ = 3;</code>
+       * <code>bool is_succ = 15;</code>
        * @param value The isSucc to set.
        * @return This builder for chaining.
        */
@@ -592,7 +590,7 @@ public final class CharAmusementSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_succ = 3;</code>
+       * <code>bool is_succ = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSucc() {
@@ -669,8 +667,8 @@ public final class CharAmusementSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037CharAmusementSettleNotify.proto\"X\n\031Cha" +
-      "rAmusementSettleNotify\022\023\n\013finish_time\030\t " +
-      "\001(\r\022\025\n\ris_new_record\030\010 \001(\010\022\017\n\007is_succ\030\003 " +
+      "rAmusementSettleNotify\022\023\n\013finish_time\030\005 " +
+      "\001(\r\022\025\n\ris_new_record\030\r \001(\010\022\017\n\007is_succ\030\017 " +
       "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

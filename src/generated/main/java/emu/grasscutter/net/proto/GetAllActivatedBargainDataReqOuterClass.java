@@ -20,7 +20,7 @@ public final class GetAllActivatedBargainDataReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 28053
+   * CmdId: 22082
    * </pre>
    *
    * Protobuf type {@code GetAllActivatedBargainDataReq}
@@ -245,7 +245,7 @@ public final class GetAllActivatedBargainDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28053
+     * CmdId: 22082
      * </pre>
      *
      * Protobuf type {@code GetAllActivatedBargainDataReq}

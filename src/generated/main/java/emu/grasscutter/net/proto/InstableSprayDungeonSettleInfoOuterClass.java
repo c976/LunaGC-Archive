@@ -19,51 +19,83 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @return A list containing the scoreList.
      */
     java.util.List<java.lang.Integer> getScoreListList();
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @return The count of scoreList.
      */
     int getScoreListCount();
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @param index The index of the element to return.
      * @return The scoreList at the given index.
      */
     int getScoreList(int index);
 
     /**
-     * <code>uint32 difficulty = 15;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>bool is_new_record = 3;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 level_id = 7;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 stage_id = 9;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 round = 6;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 5;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 round = 11;</code>
      * @return The round.
      */
     int getRound();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 13;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * Protobuf type {@code InstableSprayDungeonSettleInfo}
@@ -112,12 +144,7 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 scoreList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -125,7 +152,7 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
               scoreList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,24 +165,29 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 24: {
+            case 40: {
 
-              isNewRecord_ = input.readBool();
+              difficulty_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 72: {
+
+              stageId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               round_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 104: {
 
-              levelId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 120: {
 
-              difficulty_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -193,10 +225,14 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.class, emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_LIST_FIELD_NUMBER = 2;
+    public static final int SCORE_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList scoreList_;
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @return A list containing the scoreList.
      */
     @java.lang.Override
@@ -205,14 +241,22 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
       return scoreList_;
     }
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @return The count of scoreList.
      */
     public int getScoreListCount() {
       return scoreList_.size();
     }
     /**
-     * <code>repeated uint32 score_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 score_list = 3;</code>
      * @param index The index of the element to return.
      * @return The scoreList at the given index.
      */
@@ -221,43 +265,14 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
     }
     private int scoreListMemoizedSerializedSize = -1;
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 15;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 15;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 3;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 7;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 7;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    public static final int STAGE_ID_FIELD_NUMBER = 9;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 stage_id = 9;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -265,15 +280,64 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
       return stageId_;
     }
 
-    public static final int ROUND_FIELD_NUMBER = 6;
+    public static final int DIFFICULTY_FIELD_NUMBER = 5;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 5;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int ROUND_FIELD_NUMBER = 11;
     private int round_;
     /**
-     * <code>uint32 round = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 round = 11;</code>
      * @return The round.
      */
     @java.lang.Override
     public int getRound() {
       return round_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>bool is_new_record = 13;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,27 +355,27 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (stageId_ != 0) {
-        output.writeUInt32(1, stageId_);
-      }
       if (getScoreListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(scoreListMemoizedSerializedSize);
       }
       for (int i = 0; i < scoreList_.size(); i++) {
         output.writeUInt32NoTag(scoreList_.getInt(i));
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
+      if (difficulty_ != 0) {
+        output.writeUInt32(5, difficulty_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(9, stageId_);
       }
       if (round_ != 0) {
-        output.writeUInt32(6, round_);
+        output.writeUInt32(11, round_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(13, isNewRecord_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(7, levelId_);
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(15, difficulty_);
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,10 +386,6 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, stageId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < scoreList_.size(); i++) {
@@ -340,21 +400,25 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         }
         scoreListMemoizedSerializedSize = dataSize;
       }
-      if (isNewRecord_ != false) {
+      if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
+          .computeUInt32Size(5, difficulty_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, stageId_);
       }
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, round_);
+          .computeUInt32Size(11, round_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isNewRecord_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, levelId_);
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, difficulty_);
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -373,16 +437,16 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
 
       if (!getScoreListList()
           .equals(other.getScoreListList())) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getRound()
+          != other.getRound()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getRound()
-          != other.getRound()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -398,17 +462,17 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         hash = (37 * hash) + SCORE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getScoreListList().hashCode();
       }
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getRound();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getRound();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -544,15 +608,15 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         super.clear();
         scoreList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        stageId_ = 0;
+
         difficulty_ = 0;
+
+        round_ = 0;
 
         isNewRecord_ = false;
 
         levelId_ = 0;
-
-        stageId_ = 0;
-
-        round_ = 0;
 
         return this;
       }
@@ -586,11 +650,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.scoreList_ = scoreList_;
+        result.stageId_ = stageId_;
         result.difficulty_ = difficulty_;
+        result.round_ = round_;
         result.isNewRecord_ = isNewRecord_;
         result.levelId_ = levelId_;
-        result.stageId_ = stageId_;
-        result.round_ = round_;
         onBuilt();
         return result;
       }
@@ -649,20 +713,20 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
           }
           onChanged();
         }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
+        }
+        if (other.getRound() != 0) {
+          setRound(other.getRound());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        if (other.getRound() != 0) {
-          setRound(other.getRound());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -702,7 +766,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @return A list containing the scoreList.
        */
       public java.util.List<java.lang.Integer>
@@ -711,14 +779,22 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(scoreList_) : scoreList_;
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @return The count of scoreList.
        */
       public int getScoreListCount() {
         return scoreList_.size();
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @param index The index of the element to return.
        * @return The scoreList at the given index.
        */
@@ -726,7 +802,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return scoreList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The scoreList to set.
        * @return This builder for chaining.
@@ -739,7 +819,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @param value The scoreList to add.
        * @return This builder for chaining.
        */
@@ -750,7 +834,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @param values The scoreList to add.
        * @return This builder for chaining.
        */
@@ -763,7 +851,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 score_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 score_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScoreList() {
@@ -773,9 +865,56 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
 
+      private int stageId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 stage_id = 9;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 stage_id = 9;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 stage_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -783,7 +922,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -794,7 +937,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -804,9 +951,56 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
 
+      private int round_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 round = 11;</code>
+       * @return The round.
+       */
+      @java.lang.Override
+      public int getRound() {
+        return round_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 round = 11;</code>
+       * @param value The round to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRound(int value) {
+        
+        round_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 round = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRound() {
+        
+        round_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -814,7 +1008,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -825,7 +1023,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -837,7 +1039,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -845,7 +1051,11 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -856,74 +1066,16 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 1;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 1;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int round_ ;
-      /**
-       * <code>uint32 round = 6;</code>
-       * @return The round.
-       */
-      @java.lang.Override
-      public int getRound() {
-        return round_;
-      }
-      /**
-       * <code>uint32 round = 6;</code>
-       * @param value The round to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRound(int value) {
-        
-        round_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 round = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRound() {
-        
-        round_ = 0;
         onChanged();
         return this;
       }
@@ -996,9 +1148,9 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$InstableSprayDungeonSettleInfo.proto\"\222" +
       "\001\n\036InstableSprayDungeonSettleInfo\022\022\n\nsco" +
-      "re_list\030\002 \003(\r\022\022\n\ndifficulty\030\017 \001(\r\022\025\n\ris_" +
-      "new_record\030\003 \001(\010\022\020\n\010level_id\030\007 \001(\r\022\020\n\010st" +
-      "age_id\030\001 \001(\r\022\r\n\005round\030\006 \001(\rB\033\n\031emu.grass" +
+      "re_list\030\003 \003(\r\022\020\n\010stage_id\030\t \001(\r\022\022\n\ndiffi" +
+      "culty\030\005 \001(\r\022\r\n\005round\030\013 \001(\r\022\025\n\ris_new_rec" +
+      "ord\030\r \001(\010\022\020\n\010level_id\030\017 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1010,7 +1162,7 @@ public final class InstableSprayDungeonSettleInfoOuterClass {
     internal_static_InstableSprayDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InstableSprayDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "ScoreList", "Difficulty", "IsNewRecord", "LevelId", "StageId", "Round", });
+        new java.lang.String[] { "ScoreList", "StageId", "Difficulty", "Round", "IsNewRecord", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

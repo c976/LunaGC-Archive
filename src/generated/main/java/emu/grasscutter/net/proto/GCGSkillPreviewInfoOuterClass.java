@@ -19,6 +19,55 @@ public final class GCGSkillPreviewInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     * @return Whether the extraInfo field is set.
+     */
+    boolean hasExtraInfo();
+    /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     * @return The extraInfo.
+     */
+    emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo();
+    /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     */
+    emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder();
+
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    int getCardTokenChangeMapCount();
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    boolean containsCardTokenChangeMap(
+        int key);
+    /**
+     * Use {@link #getCardTokenChangeMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+    getCardTokenChangeMap();
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+    getCardTokenChangeMapMap();
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+
+    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+
+    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
+        int key);
+
+    /**
      * <code>repeated .GCGSkillPreviewOnstageChangeInfo change_onstage_character_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo> 
@@ -43,114 +92,59 @@ public final class GCGSkillPreviewInfoOuterClass {
         int index);
 
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    int getCardTokenChangeMapCount();
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    boolean containsCardTokenChangeMap(
-        int key);
-    /**
-     * Use {@link #getCardTokenChangeMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-    getCardTokenChangeMap();
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-    getCardTokenChangeMapMap();
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-
-    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-
-    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
-        int key);
-
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     * @return Whether the extraInfo field is set.
-     */
-    boolean hasExtraInfo();
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     * @return The extraInfo.
-     */
-    emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo();
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     */
-    emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder();
-
-    /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> 
-        getOJDLMJCEAIKList();
+        getAddCardListList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getOJDLMJCEAIK(int index);
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getAddCardList(int index);
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
-    int getOJDLMJCEAIKCount();
+    int getAddCardListCount();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getOJDLMJCEAIKOrBuilderList();
+        getAddCardListOrBuilderList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getOJDLMJCEAIKOrBuilder(
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getAddCardListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 skill_id = 14;</code>
-     * @return The skillId.
-     */
-    int getSkillId();
-
-    /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> 
-        getMAKCCCFPDJEList();
+        getRmCardListList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getMAKCCCFPDJE(int index);
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRmCardList(int index);
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
-    int getMAKCCCFPDJECount();
+    int getRmCardListCount();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getMAKCCCFPDJEOrBuilderList();
+        getRmCardListOrBuilderList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getMAKCCCFPDJEOrBuilder(
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRmCardListOrBuilder(
         int index);
 
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     int getHpInfoMapCount();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     boolean containsHpInfoMap(
         int key);
@@ -161,30 +155,30 @@ public final class GCGSkillPreviewInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo>
     getHpInfoMap();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo>
     getHpInfoMapMap();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
 
     emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo getHpInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
 
     emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo getHpInfoMapOrThrow(
         int key);
 
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     int getReactionInfoMapCount();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     boolean containsReactionInfoMap(
         int key);
@@ -195,29 +189,31 @@ public final class GCGSkillPreviewInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
     getReactionInfoMap();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
     getReactionInfoMapMap();
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
 
     emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo getReactionInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
 
     emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo getReactionInfoMapOrThrow(
         int key);
+
+    /**
+     * <code>uint32 skill_id = 2;</code>
+     * @return The skillId.
+     */
+    int getSkillId();
   }
   /**
-   * <pre>
-   * Obf: OOGGELKHODM
-   * </pre>
-   *
    * Protobuf type {@code GCGSkillPreviewInfo}
    */
   public static final class GCGSkillPreviewInfo extends
@@ -231,8 +227,8 @@ public final class GCGSkillPreviewInfoOuterClass {
     }
     private GCGSkillPreviewInfo() {
       changeOnstageCharacterList_ = java.util.Collections.emptyList();
-      oJDLMJCEAIK_ = java.util.Collections.emptyList();
-      mAKCCCFPDJE_ = java.util.Collections.emptyList();
+      addCardList_ = java.util.Collections.emptyList();
+      rmCardList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -266,64 +262,12 @@ public final class GCGSkillPreviewInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                reactionInfoMap_ = com.google.protobuf.MapField.newMapField(
-                    ReactionInfoMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000020;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
-              reactionInfoMap__ = input.readMessage(
-                  ReactionInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              reactionInfoMap_.getMutableMap().put(
-                  reactionInfoMap__.getKey(), reactionInfoMap__.getValue());
+            case 16: {
+
+              skillId_ = input.readUInt32();
               break;
             }
             case 34: {
-              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder subBuilder = null;
-              if (extraInfo_ != null) {
-                subBuilder = extraInfo_.toBuilder();
-              }
-              extraInfo_ = input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(extraInfo_);
-                extraInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                changeOnstageCharacterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              changeOnstageCharacterList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                cardTokenChangeMap_ = com.google.protobuf.MapField.newMapField(
-                    CardTokenChangeMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-              cardTokenChangeMap__ = input.readMessage(
-                  CardTokenChangeMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              cardTokenChangeMap_.getMutableMap().put(
-                  cardTokenChangeMap__.getKey(), cardTokenChangeMap__.getValue());
-              break;
-            }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                oJDLMJCEAIK_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              oJDLMJCEAIK_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 106: {
               if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 hpInfoMap_ = com.google.protobuf.MapField.newMapField(
                     HpInfoMapDefaultEntryHolder.defaultEntry);
@@ -336,18 +280,70 @@ public final class GCGSkillPreviewInfoOuterClass {
                   hpInfoMap__.getKey(), hpInfoMap__.getValue());
               break;
             }
-            case 112: {
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                changeOnstageCharacterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              changeOnstageCharacterList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                addCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              addCardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                rmCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              rmCardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                reactionInfoMap_ = com.google.protobuf.MapField.newMapField(
+                    ReactionInfoMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000020;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
+              reactionInfoMap__ = input.readMessage(
+                  ReactionInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              reactionInfoMap_.getMutableMap().put(
+                  reactionInfoMap__.getKey(), reactionInfoMap__.getValue());
+              break;
+            }
+            case 82: {
+              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder subBuilder = null;
+              if (extraInfo_ != null) {
+                subBuilder = extraInfo_.toBuilder();
+              }
+              extraInfo_ = input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(extraInfo_);
+                extraInfo_ = subBuilder.buildPartial();
+              }
 
-              skillId_ = input.readUInt32();
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                mAKCCCFPDJE_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
-                mutable_bitField0_ |= 0x00000008;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cardTokenChangeMap_ = com.google.protobuf.MapField.newMapField(
+                    CardTokenChangeMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
-              mAKCCCFPDJE_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+              cardTokenChangeMap__ = input.readMessage(
+                  CardTokenChangeMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              cardTokenChangeMap_.getMutableMap().put(
+                  cardTokenChangeMap__.getKey(), cardTokenChangeMap__.getValue());
               break;
             }
             default: {
@@ -365,14 +361,14 @@ public final class GCGSkillPreviewInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           changeOnstageCharacterList_ = java.util.Collections.unmodifiableList(changeOnstageCharacterList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          oJDLMJCEAIK_ = java.util.Collections.unmodifiableList(oJDLMJCEAIK_);
+          addCardList_ = java.util.Collections.unmodifiableList(addCardList_);
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          mAKCCCFPDJE_ = java.util.Collections.unmodifiableList(mAKCCCFPDJE_);
+          rmCardList_ = java.util.Collections.unmodifiableList(rmCardList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -388,11 +384,11 @@ public final class GCGSkillPreviewInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 15:
           return internalGetCardTokenChangeMap();
-        case 13:
+        case 4:
           return internalGetHpInfoMap();
-        case 2:
+        case 9:
           return internalGetReactionInfoMap();
         default:
           throw new RuntimeException(
@@ -405,6 +401,113 @@ public final class GCGSkillPreviewInfoOuterClass {
       return emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.internal_static_GCGSkillPreviewInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.Builder.class);
+    }
+
+    public static final int EXTRA_INFO_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo extraInfo_;
+    /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     * @return Whether the extraInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasExtraInfo() {
+      return extraInfo_ != null;
+    }
+    /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     * @return The extraInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo() {
+      return extraInfo_ == null ? emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
+    }
+    /**
+     * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder() {
+      return getExtraInfo();
+    }
+
+    public static final int CARD_TOKEN_CHANGE_MAP_FIELD_NUMBER = 15;
+    private static final class CardTokenChangeMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>newDefaultInstance(
+                  emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.internal_static_GCGSkillPreviewInfo_CardTokenChangeMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo.getDefaultInstance());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> cardTokenChangeMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+    internalGetCardTokenChangeMap() {
+      if (cardTokenChangeMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            CardTokenChangeMapDefaultEntryHolder.defaultEntry);
+      }
+      return cardTokenChangeMap_;
+    }
+
+    public int getCardTokenChangeMapCount() {
+      return internalGetCardTokenChangeMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsCardTokenChangeMap(
+        int key) {
+      
+      return internalGetCardTokenChangeMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getCardTokenChangeMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMap() {
+      return getCardTokenChangeMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMapMap() {
+      return internalGetCardTokenChangeMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
+          internalGetCardTokenChangeMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
+          internalGetCardTokenChangeMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     public static final int CHANGE_ONSTAGE_CHARACTER_LIST_FIELD_NUMBER = 5;
@@ -447,205 +550,87 @@ public final class GCGSkillPreviewInfoOuterClass {
       return changeOnstageCharacterList_.get(index);
     }
 
-    public static final int CARD_TOKEN_CHANGE_MAP_FIELD_NUMBER = 6;
-    private static final class CardTokenChangeMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.internal_static_GCGSkillPreviewInfo_CardTokenChangeMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> cardTokenChangeMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-    internalGetCardTokenChangeMap() {
-      if (cardTokenChangeMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            CardTokenChangeMapDefaultEntryHolder.defaultEntry);
-      }
-      return cardTokenChangeMap_;
-    }
-
-    public int getCardTokenChangeMapCount() {
-      return internalGetCardTokenChangeMap().getMap().size();
-    }
+    public static final int ADD_CARD_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> addCardList_;
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsCardTokenChangeMap(
-        int key) {
-      
-      return internalGetCardTokenChangeMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getCardTokenChangeMapMap()} instead.
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMap() {
-      return getCardTokenChangeMapMap();
+    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getAddCardListList() {
+      return addCardList_;
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMapMap() {
-      return internalGetCardTokenChangeMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
-          internalGetCardTokenChangeMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
-          internalGetCardTokenChangeMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int EXTRA_INFO_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo extraInfo_;
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     * @return Whether the extraInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasExtraInfo() {
-      return extraInfo_ != null;
-    }
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     * @return The extraInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo() {
-      return extraInfo_ == null ? emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
-    }
-    /**
-     * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder() {
-      return getExtraInfo();
-    }
-
-    public static final int OJDLMJCEAIK_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> oJDLMJCEAIK_;
-    /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getOJDLMJCEAIKList() {
-      return oJDLMJCEAIK_;
-    }
-    /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getOJDLMJCEAIKOrBuilderList() {
-      return oJDLMJCEAIK_;
+        getAddCardListOrBuilderList() {
+      return addCardList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     @java.lang.Override
-    public int getOJDLMJCEAIKCount() {
-      return oJDLMJCEAIK_.size();
+    public int getAddCardListCount() {
+      return addCardList_.size();
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getOJDLMJCEAIK(int index) {
-      return oJDLMJCEAIK_.get(index);
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getAddCardList(int index) {
+      return addCardList_.get(index);
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getOJDLMJCEAIKOrBuilder(
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getAddCardListOrBuilder(
         int index) {
-      return oJDLMJCEAIK_.get(index);
+      return addCardList_.get(index);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 14;
-    private int skillId_;
+    public static final int RM_CARD_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> rmCardList_;
     /**
-     * <code>uint32 skill_id = 14;</code>
-     * @return The skillId.
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     @java.lang.Override
-    public int getSkillId() {
-      return skillId_;
-    }
-
-    public static final int MAKCCCFPDJE_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> mAKCCCFPDJE_;
-    /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getMAKCCCFPDJEList() {
-      return mAKCCCFPDJE_;
+    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getRmCardListList() {
+      return rmCardList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getMAKCCCFPDJEOrBuilderList() {
-      return mAKCCCFPDJE_;
+        getRmCardListOrBuilderList() {
+      return rmCardList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     @java.lang.Override
-    public int getMAKCCCFPDJECount() {
-      return mAKCCCFPDJE_.size();
+    public int getRmCardListCount() {
+      return rmCardList_.size();
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getMAKCCCFPDJE(int index) {
-      return mAKCCCFPDJE_.get(index);
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRmCardList(int index) {
+      return rmCardList_.get(index);
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getMAKCCCFPDJEOrBuilder(
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRmCardListOrBuilder(
         int index) {
-      return mAKCCCFPDJE_.get(index);
+      return rmCardList_.get(index);
     }
 
-    public static final int HP_INFO_MAP_FIELD_NUMBER = 13;
+    public static final int HP_INFO_MAP_FIELD_NUMBER = 4;
     private static final class HpInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo> defaultEntry =
@@ -672,7 +657,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return internalGetHpInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
 
     @java.lang.Override
@@ -690,7 +675,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return getHpInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -698,7 +683,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return internalGetHpInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -711,7 +696,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
      */
     @java.lang.Override
 
@@ -726,7 +711,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int REACTION_INFO_MAP_FIELD_NUMBER = 2;
+    public static final int REACTION_INFO_MAP_FIELD_NUMBER = 9;
     private static final class ReactionInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo> defaultEntry =
@@ -753,7 +738,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return internalGetReactionInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
 
     @java.lang.Override
@@ -771,7 +756,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return getReactionInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     @java.lang.Override
 
@@ -779,7 +764,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return internalGetReactionInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     @java.lang.Override
 
@@ -792,7 +777,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+     * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
      */
     @java.lang.Override
 
@@ -805,6 +790,17 @@ public final class GCGSkillPreviewInfoOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int SKILL_ID_FIELD_NUMBER = 2;
+    private int skillId_;
+    /**
+     * <code>uint32 skill_id = 2;</code>
+     * @return The skillId.
+     */
+    @java.lang.Override
+    public int getSkillId() {
+      return skillId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -821,39 +817,39 @@ public final class GCGSkillPreviewInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetReactionInfoMap(),
-          ReactionInfoMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (extraInfo_ != null) {
-        output.writeMessage(4, getExtraInfo());
-      }
-      for (int i = 0; i < changeOnstageCharacterList_.size(); i++) {
-        output.writeMessage(5, changeOnstageCharacterList_.get(i));
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetCardTokenChangeMap(),
-          CardTokenChangeMapDefaultEntryHolder.defaultEntry,
-          6);
-      for (int i = 0; i < oJDLMJCEAIK_.size(); i++) {
-        output.writeMessage(8, oJDLMJCEAIK_.get(i));
+      if (skillId_ != 0) {
+        output.writeUInt32(2, skillId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetHpInfoMap(),
           HpInfoMapDefaultEntryHolder.defaultEntry,
-          13);
-      if (skillId_ != 0) {
-        output.writeUInt32(14, skillId_);
+          4);
+      for (int i = 0; i < changeOnstageCharacterList_.size(); i++) {
+        output.writeMessage(5, changeOnstageCharacterList_.get(i));
       }
-      for (int i = 0; i < mAKCCCFPDJE_.size(); i++) {
-        output.writeMessage(15, mAKCCCFPDJE_.get(i));
+      for (int i = 0; i < addCardList_.size(); i++) {
+        output.writeMessage(7, addCardList_.get(i));
       }
+      for (int i = 0; i < rmCardList_.size(); i++) {
+        output.writeMessage(8, rmCardList_.get(i));
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetReactionInfoMap(),
+          ReactionInfoMapDefaultEntryHolder.defaultEntry,
+          9);
+      if (extraInfo_ != null) {
+        output.writeMessage(10, getExtraInfo());
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetCardTokenChangeMap(),
+          CardTokenChangeMapDefaultEntryHolder.defaultEntry,
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -863,37 +859,9 @@ public final class GCGSkillPreviewInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo> entry
-           : internalGetReactionInfoMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
-        reactionInfoMap__ = ReactionInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, reactionInfoMap__);
-      }
-      if (extraInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getExtraInfo());
-      }
-      for (int i = 0; i < changeOnstageCharacterList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, changeOnstageCharacterList_.get(i));
-      }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> entry
-           : internalGetCardTokenChangeMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-        cardTokenChangeMap__ = CardTokenChangeMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, cardTokenChangeMap__);
-      }
-      for (int i = 0; i < oJDLMJCEAIK_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, oJDLMJCEAIK_.get(i));
+          .computeUInt32Size(2, skillId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.GCGSkillPreviewHpInfo> entry
            : internalGetHpInfoMap().getMap().entrySet()) {
@@ -903,15 +871,43 @@ public final class GCGSkillPreviewInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, hpInfoMap__);
+            .computeMessageSize(4, hpInfoMap__);
       }
-      if (skillId_ != 0) {
+      for (int i = 0; i < changeOnstageCharacterList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, skillId_);
+          .computeMessageSize(5, changeOnstageCharacterList_.get(i));
       }
-      for (int i = 0; i < mAKCCCFPDJE_.size(); i++) {
+      for (int i = 0; i < addCardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, mAKCCCFPDJE_.get(i));
+          .computeMessageSize(7, addCardList_.get(i));
+      }
+      for (int i = 0; i < rmCardList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, rmCardList_.get(i));
+      }
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo> entry
+           : internalGetReactionInfoMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo>
+        reactionInfoMap__ = ReactionInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(9, reactionInfoMap__);
+      }
+      if (extraInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getExtraInfo());
+      }
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> entry
+           : internalGetCardTokenChangeMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+        cardTokenChangeMap__ = CardTokenChangeMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(15, cardTokenChangeMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -928,25 +924,25 @@ public final class GCGSkillPreviewInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo) obj;
 
-      if (!getChangeOnstageCharacterListList()
-          .equals(other.getChangeOnstageCharacterListList())) return false;
-      if (!internalGetCardTokenChangeMap().equals(
-          other.internalGetCardTokenChangeMap())) return false;
       if (hasExtraInfo() != other.hasExtraInfo()) return false;
       if (hasExtraInfo()) {
         if (!getExtraInfo()
             .equals(other.getExtraInfo())) return false;
       }
-      if (!getOJDLMJCEAIKList()
-          .equals(other.getOJDLMJCEAIKList())) return false;
-      if (getSkillId()
-          != other.getSkillId()) return false;
-      if (!getMAKCCCFPDJEList()
-          .equals(other.getMAKCCCFPDJEList())) return false;
+      if (!internalGetCardTokenChangeMap().equals(
+          other.internalGetCardTokenChangeMap())) return false;
+      if (!getChangeOnstageCharacterListList()
+          .equals(other.getChangeOnstageCharacterListList())) return false;
+      if (!getAddCardListList()
+          .equals(other.getAddCardListList())) return false;
+      if (!getRmCardListList()
+          .equals(other.getRmCardListList())) return false;
       if (!internalGetHpInfoMap().equals(
           other.internalGetHpInfoMap())) return false;
       if (!internalGetReactionInfoMap().equals(
           other.internalGetReactionInfoMap())) return false;
+      if (getSkillId()
+          != other.getSkillId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -958,27 +954,25 @@ public final class GCGSkillPreviewInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getChangeOnstageCharacterListCount() > 0) {
-        hash = (37 * hash) + CHANGE_ONSTAGE_CHARACTER_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChangeOnstageCharacterListList().hashCode();
+      if (hasExtraInfo()) {
+        hash = (37 * hash) + EXTRA_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getExtraInfo().hashCode();
       }
       if (!internalGetCardTokenChangeMap().getMap().isEmpty()) {
         hash = (37 * hash) + CARD_TOKEN_CHANGE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetCardTokenChangeMap().hashCode();
       }
-      if (hasExtraInfo()) {
-        hash = (37 * hash) + EXTRA_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getExtraInfo().hashCode();
+      if (getChangeOnstageCharacterListCount() > 0) {
+        hash = (37 * hash) + CHANGE_ONSTAGE_CHARACTER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChangeOnstageCharacterListList().hashCode();
       }
-      if (getOJDLMJCEAIKCount() > 0) {
-        hash = (37 * hash) + OJDLMJCEAIK_FIELD_NUMBER;
-        hash = (53 * hash) + getOJDLMJCEAIKList().hashCode();
+      if (getAddCardListCount() > 0) {
+        hash = (37 * hash) + ADD_CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAddCardListList().hashCode();
       }
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
-      if (getMAKCCCFPDJECount() > 0) {
-        hash = (37 * hash) + MAKCCCFPDJE_FIELD_NUMBER;
-        hash = (53 * hash) + getMAKCCCFPDJEList().hashCode();
+      if (getRmCardListCount() > 0) {
+        hash = (37 * hash) + RM_CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getRmCardListList().hashCode();
       }
       if (!internalGetHpInfoMap().getMap().isEmpty()) {
         hash = (37 * hash) + HP_INFO_MAP_FIELD_NUMBER;
@@ -988,6 +982,8 @@ public final class GCGSkillPreviewInfoOuterClass {
         hash = (37 * hash) + REACTION_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetReactionInfoMap().hashCode();
       }
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1084,10 +1080,6 @@ public final class GCGSkillPreviewInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OOGGELKHODM
-     * </pre>
-     *
      * Protobuf type {@code GCGSkillPreviewInfo}
      */
     public static final class Builder extends
@@ -1103,11 +1095,11 @@ public final class GCGSkillPreviewInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 15:
             return internalGetCardTokenChangeMap();
-          case 13:
+          case 4:
             return internalGetHpInfoMap();
-          case 2:
+          case 9:
             return internalGetReactionInfoMap();
           default:
             throw new RuntimeException(
@@ -1118,11 +1110,11 @@ public final class GCGSkillPreviewInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 15:
             return internalGetMutableCardTokenChangeMap();
-          case 13:
+          case 4:
             return internalGetMutableHpInfoMap();
-          case 2:
+          case 9:
             return internalGetMutableReactionInfoMap();
           default:
             throw new RuntimeException(
@@ -1151,42 +1143,42 @@ public final class GCGSkillPreviewInfoOuterClass {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getChangeOnstageCharacterListFieldBuilder();
-          getOJDLMJCEAIKFieldBuilder();
-          getMAKCCCFPDJEFieldBuilder();
+          getAddCardListFieldBuilder();
+          getRmCardListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (changeOnstageCharacterListBuilder_ == null) {
-          changeOnstageCharacterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          changeOnstageCharacterListBuilder_.clear();
-        }
-        internalGetMutableCardTokenChangeMap().clear();
         if (extraInfoBuilder_ == null) {
           extraInfo_ = null;
         } else {
           extraInfo_ = null;
           extraInfoBuilder_ = null;
         }
-        if (oJDLMJCEAIKBuilder_ == null) {
-          oJDLMJCEAIK_ = java.util.Collections.emptyList();
+        internalGetMutableCardTokenChangeMap().clear();
+        if (changeOnstageCharacterListBuilder_ == null) {
+          changeOnstageCharacterList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          changeOnstageCharacterListBuilder_.clear();
+        }
+        if (addCardListBuilder_ == null) {
+          addCardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          oJDLMJCEAIKBuilder_.clear();
+          addCardListBuilder_.clear();
         }
-        skillId_ = 0;
-
-        if (mAKCCCFPDJEBuilder_ == null) {
-          mAKCCCFPDJE_ = java.util.Collections.emptyList();
+        if (rmCardListBuilder_ == null) {
+          rmCardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000008);
         } else {
-          mAKCCCFPDJEBuilder_.clear();
+          rmCardListBuilder_.clear();
         }
         internalGetMutableHpInfoMap().clear();
         internalGetMutableReactionInfoMap().clear();
+        skillId_ = 0;
+
         return this;
       }
 
@@ -1214,45 +1206,45 @@ public final class GCGSkillPreviewInfoOuterClass {
       public emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo(this);
         int from_bitField0_ = bitField0_;
-        if (changeOnstageCharacterListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            changeOnstageCharacterList_ = java.util.Collections.unmodifiableList(changeOnstageCharacterList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.changeOnstageCharacterList_ = changeOnstageCharacterList_;
-        } else {
-          result.changeOnstageCharacterList_ = changeOnstageCharacterListBuilder_.build();
-        }
-        result.cardTokenChangeMap_ = internalGetCardTokenChangeMap();
-        result.cardTokenChangeMap_.makeImmutable();
         if (extraInfoBuilder_ == null) {
           result.extraInfo_ = extraInfo_;
         } else {
           result.extraInfo_ = extraInfoBuilder_.build();
         }
-        if (oJDLMJCEAIKBuilder_ == null) {
+        result.cardTokenChangeMap_ = internalGetCardTokenChangeMap();
+        result.cardTokenChangeMap_.makeImmutable();
+        if (changeOnstageCharacterListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            changeOnstageCharacterList_ = java.util.Collections.unmodifiableList(changeOnstageCharacterList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.changeOnstageCharacterList_ = changeOnstageCharacterList_;
+        } else {
+          result.changeOnstageCharacterList_ = changeOnstageCharacterListBuilder_.build();
+        }
+        if (addCardListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
-            oJDLMJCEAIK_ = java.util.Collections.unmodifiableList(oJDLMJCEAIK_);
+            addCardList_ = java.util.Collections.unmodifiableList(addCardList_);
             bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.oJDLMJCEAIK_ = oJDLMJCEAIK_;
+          result.addCardList_ = addCardList_;
         } else {
-          result.oJDLMJCEAIK_ = oJDLMJCEAIKBuilder_.build();
+          result.addCardList_ = addCardListBuilder_.build();
         }
-        result.skillId_ = skillId_;
-        if (mAKCCCFPDJEBuilder_ == null) {
+        if (rmCardListBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0)) {
-            mAKCCCFPDJE_ = java.util.Collections.unmodifiableList(mAKCCCFPDJE_);
+            rmCardList_ = java.util.Collections.unmodifiableList(rmCardList_);
             bitField0_ = (bitField0_ & ~0x00000008);
           }
-          result.mAKCCCFPDJE_ = mAKCCCFPDJE_;
+          result.rmCardList_ = rmCardList_;
         } else {
-          result.mAKCCCFPDJE_ = mAKCCCFPDJEBuilder_.build();
+          result.rmCardList_ = rmCardListBuilder_.build();
         }
         result.hpInfoMap_ = internalGetHpInfoMap();
         result.hpInfoMap_.makeImmutable();
         result.reactionInfoMap_ = internalGetReactionInfoMap();
         result.reactionInfoMap_.makeImmutable();
+        result.skillId_ = skillId_;
         onBuilt();
         return result;
       }
@@ -1301,11 +1293,16 @@ public final class GCGSkillPreviewInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewInfoOuterClass.GCGSkillPreviewInfo.getDefaultInstance()) return this;
+        if (other.hasExtraInfo()) {
+          mergeExtraInfo(other.getExtraInfo());
+        }
+        internalGetMutableCardTokenChangeMap().mergeFrom(
+            other.internalGetCardTokenChangeMap());
         if (changeOnstageCharacterListBuilder_ == null) {
           if (!other.changeOnstageCharacterList_.isEmpty()) {
             if (changeOnstageCharacterList_.isEmpty()) {
               changeOnstageCharacterList_ = other.changeOnstageCharacterList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureChangeOnstageCharacterListIsMutable();
               changeOnstageCharacterList_.addAll(other.changeOnstageCharacterList_);
@@ -1318,7 +1315,7 @@ public final class GCGSkillPreviewInfoOuterClass {
               changeOnstageCharacterListBuilder_.dispose();
               changeOnstageCharacterListBuilder_ = null;
               changeOnstageCharacterList_ = other.changeOnstageCharacterList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               changeOnstageCharacterListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getChangeOnstageCharacterListFieldBuilder() : null;
@@ -1327,63 +1324,55 @@ public final class GCGSkillPreviewInfoOuterClass {
             }
           }
         }
-        internalGetMutableCardTokenChangeMap().mergeFrom(
-            other.internalGetCardTokenChangeMap());
-        if (other.hasExtraInfo()) {
-          mergeExtraInfo(other.getExtraInfo());
-        }
-        if (oJDLMJCEAIKBuilder_ == null) {
-          if (!other.oJDLMJCEAIK_.isEmpty()) {
-            if (oJDLMJCEAIK_.isEmpty()) {
-              oJDLMJCEAIK_ = other.oJDLMJCEAIK_;
+        if (addCardListBuilder_ == null) {
+          if (!other.addCardList_.isEmpty()) {
+            if (addCardList_.isEmpty()) {
+              addCardList_ = other.addCardList_;
               bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureOJDLMJCEAIKIsMutable();
-              oJDLMJCEAIK_.addAll(other.oJDLMJCEAIK_);
+              ensureAddCardListIsMutable();
+              addCardList_.addAll(other.addCardList_);
             }
             onChanged();
           }
         } else {
-          if (!other.oJDLMJCEAIK_.isEmpty()) {
-            if (oJDLMJCEAIKBuilder_.isEmpty()) {
-              oJDLMJCEAIKBuilder_.dispose();
-              oJDLMJCEAIKBuilder_ = null;
-              oJDLMJCEAIK_ = other.oJDLMJCEAIK_;
+          if (!other.addCardList_.isEmpty()) {
+            if (addCardListBuilder_.isEmpty()) {
+              addCardListBuilder_.dispose();
+              addCardListBuilder_ = null;
+              addCardList_ = other.addCardList_;
               bitField0_ = (bitField0_ & ~0x00000004);
-              oJDLMJCEAIKBuilder_ = 
+              addCardListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getOJDLMJCEAIKFieldBuilder() : null;
+                   getAddCardListFieldBuilder() : null;
             } else {
-              oJDLMJCEAIKBuilder_.addAllMessages(other.oJDLMJCEAIK_);
+              addCardListBuilder_.addAllMessages(other.addCardList_);
             }
           }
         }
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
-        }
-        if (mAKCCCFPDJEBuilder_ == null) {
-          if (!other.mAKCCCFPDJE_.isEmpty()) {
-            if (mAKCCCFPDJE_.isEmpty()) {
-              mAKCCCFPDJE_ = other.mAKCCCFPDJE_;
+        if (rmCardListBuilder_ == null) {
+          if (!other.rmCardList_.isEmpty()) {
+            if (rmCardList_.isEmpty()) {
+              rmCardList_ = other.rmCardList_;
               bitField0_ = (bitField0_ & ~0x00000008);
             } else {
-              ensureMAKCCCFPDJEIsMutable();
-              mAKCCCFPDJE_.addAll(other.mAKCCCFPDJE_);
+              ensureRmCardListIsMutable();
+              rmCardList_.addAll(other.rmCardList_);
             }
             onChanged();
           }
         } else {
-          if (!other.mAKCCCFPDJE_.isEmpty()) {
-            if (mAKCCCFPDJEBuilder_.isEmpty()) {
-              mAKCCCFPDJEBuilder_.dispose();
-              mAKCCCFPDJEBuilder_ = null;
-              mAKCCCFPDJE_ = other.mAKCCCFPDJE_;
+          if (!other.rmCardList_.isEmpty()) {
+            if (rmCardListBuilder_.isEmpty()) {
+              rmCardListBuilder_.dispose();
+              rmCardListBuilder_ = null;
+              rmCardList_ = other.rmCardList_;
               bitField0_ = (bitField0_ & ~0x00000008);
-              mAKCCCFPDJEBuilder_ = 
+              rmCardListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMAKCCCFPDJEFieldBuilder() : null;
+                   getRmCardListFieldBuilder() : null;
             } else {
-              mAKCCCFPDJEBuilder_.addAllMessages(other.mAKCCCFPDJE_);
+              rmCardListBuilder_.addAllMessages(other.rmCardList_);
             }
           }
         }
@@ -1391,6 +1380,9 @@ public final class GCGSkillPreviewInfoOuterClass {
             other.internalGetHpInfoMap());
         internalGetMutableReactionInfoMap().mergeFrom(
             other.internalGetReactionInfoMap());
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1421,12 +1413,259 @@ public final class GCGSkillPreviewInfoOuterClass {
       }
       private int bitField0_;
 
+      private emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo extraInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder> extraInfoBuilder_;
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       * @return Whether the extraInfo field is set.
+       */
+      public boolean hasExtraInfo() {
+        return extraInfoBuilder_ != null || extraInfo_ != null;
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       * @return The extraInfo.
+       */
+      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo() {
+        if (extraInfoBuilder_ == null) {
+          return extraInfo_ == null ? emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
+        } else {
+          return extraInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public Builder setExtraInfo(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo value) {
+        if (extraInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          extraInfo_ = value;
+          onChanged();
+        } else {
+          extraInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public Builder setExtraInfo(
+          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder builderForValue) {
+        if (extraInfoBuilder_ == null) {
+          extraInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          extraInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public Builder mergeExtraInfo(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo value) {
+        if (extraInfoBuilder_ == null) {
+          if (extraInfo_ != null) {
+            extraInfo_ =
+              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.newBuilder(extraInfo_).mergeFrom(value).buildPartial();
+          } else {
+            extraInfo_ = value;
+          }
+          onChanged();
+        } else {
+          extraInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public Builder clearExtraInfo() {
+        if (extraInfoBuilder_ == null) {
+          extraInfo_ = null;
+          onChanged();
+        } else {
+          extraInfo_ = null;
+          extraInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder getExtraInfoBuilder() {
+        
+        onChanged();
+        return getExtraInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder() {
+        if (extraInfoBuilder_ != null) {
+          return extraInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return extraInfo_ == null ?
+              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
+        }
+      }
+      /**
+       * <code>.GCGSkillPreviewExtraInfo extra_info = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder> 
+          getExtraInfoFieldBuilder() {
+        if (extraInfoBuilder_ == null) {
+          extraInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder>(
+                  getExtraInfo(),
+                  getParentForChildren(),
+                  isClean());
+          extraInfo_ = null;
+        }
+        return extraInfoBuilder_;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> cardTokenChangeMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+      internalGetCardTokenChangeMap() {
+        if (cardTokenChangeMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              CardTokenChangeMapDefaultEntryHolder.defaultEntry);
+        }
+        return cardTokenChangeMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+      internalGetMutableCardTokenChangeMap() {
+        onChanged();;
+        if (cardTokenChangeMap_ == null) {
+          cardTokenChangeMap_ = com.google.protobuf.MapField.newMapField(
+              CardTokenChangeMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!cardTokenChangeMap_.isMutable()) {
+          cardTokenChangeMap_ = cardTokenChangeMap_.copy();
+        }
+        return cardTokenChangeMap_;
+      }
+
+      public int getCardTokenChangeMapCount() {
+        return internalGetCardTokenChangeMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsCardTokenChangeMap(
+          int key) {
+        
+        return internalGetCardTokenChangeMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getCardTokenChangeMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMap() {
+        return getCardTokenChangeMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMapMap() {
+        return internalGetCardTokenChangeMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
+          int key,
+          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
+            internalGetCardTokenChangeMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
+            internalGetCardTokenChangeMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearCardTokenChangeMap() {
+        internalGetMutableCardTokenChangeMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+
+      public Builder removeCardTokenChangeMap(
+          int key) {
+        
+        internalGetMutableCardTokenChangeMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
+      getMutableCardTokenChangeMap() {
+        return internalGetMutableCardTokenChangeMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+      public Builder putCardTokenChangeMap(
+          int key,
+          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableCardTokenChangeMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 15;</code>
+       */
+
+      public Builder putAllCardTokenChangeMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> values) {
+        internalGetMutableCardTokenChangeMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo> changeOnstageCharacterList_ =
         java.util.Collections.emptyList();
       private void ensureChangeOnstageCharacterListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           changeOnstageCharacterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo>(changeOnstageCharacterList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1576,7 +1815,7 @@ public final class GCGSkillPreviewInfoOuterClass {
       public Builder clearChangeOnstageCharacterList() {
         if (changeOnstageCharacterListBuilder_ == null) {
           changeOnstageCharacterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           changeOnstageCharacterListBuilder_.clear();
@@ -1653,7 +1892,7 @@ public final class GCGSkillPreviewInfoOuterClass {
           changeOnstageCharacterListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo, emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.GCGSkillPreviewOnstageChangeInfoOrBuilder>(
                   changeOnstageCharacterList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           changeOnstageCharacterList_ = null;
@@ -1661,762 +1900,484 @@ public final class GCGSkillPreviewInfoOuterClass {
         return changeOnstageCharacterListBuilder_;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> cardTokenChangeMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-      internalGetCardTokenChangeMap() {
-        if (cardTokenChangeMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              CardTokenChangeMapDefaultEntryHolder.defaultEntry);
-        }
-        return cardTokenChangeMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-      internalGetMutableCardTokenChangeMap() {
-        onChanged();;
-        if (cardTokenChangeMap_ == null) {
-          cardTokenChangeMap_ = com.google.protobuf.MapField.newMapField(
-              CardTokenChangeMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!cardTokenChangeMap_.isMutable()) {
-          cardTokenChangeMap_ = cardTokenChangeMap_.copy();
-        }
-        return cardTokenChangeMap_;
-      }
-
-      public int getCardTokenChangeMapCount() {
-        return internalGetCardTokenChangeMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsCardTokenChangeMap(
-          int key) {
-        
-        return internalGetCardTokenChangeMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getCardTokenChangeMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMap() {
-        return getCardTokenChangeMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> getCardTokenChangeMapMap() {
-        return internalGetCardTokenChangeMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo defaultValue) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
-            internalGetCardTokenChangeMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo getCardTokenChangeMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> map =
-            internalGetCardTokenChangeMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearCardTokenChangeMap() {
-        internalGetMutableCardTokenChangeMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-
-      public Builder removeCardTokenChangeMap(
-          int key) {
-        
-        internalGetMutableCardTokenChangeMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo>
-      getMutableCardTokenChangeMap() {
-        return internalGetMutableCardTokenChangeMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-      public Builder putCardTokenChangeMap(
-          int key,
-          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableCardTokenChangeMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGSkillPreviewTokenChangeInfo&gt; card_token_change_map = 6;</code>
-       */
-
-      public Builder putAllCardTokenChangeMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.GCGSkillPreviewTokenChangeInfo> values) {
-        internalGetMutableCardTokenChangeMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo extraInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder> extraInfoBuilder_;
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       * @return Whether the extraInfo field is set.
-       */
-      public boolean hasExtraInfo() {
-        return extraInfoBuilder_ != null || extraInfo_ != null;
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       * @return The extraInfo.
-       */
-      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo getExtraInfo() {
-        if (extraInfoBuilder_ == null) {
-          return extraInfo_ == null ? emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
-        } else {
-          return extraInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public Builder setExtraInfo(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo value) {
-        if (extraInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          extraInfo_ = value;
-          onChanged();
-        } else {
-          extraInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public Builder setExtraInfo(
-          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder builderForValue) {
-        if (extraInfoBuilder_ == null) {
-          extraInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          extraInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public Builder mergeExtraInfo(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo value) {
-        if (extraInfoBuilder_ == null) {
-          if (extraInfo_ != null) {
-            extraInfo_ =
-              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.newBuilder(extraInfo_).mergeFrom(value).buildPartial();
-          } else {
-            extraInfo_ = value;
-          }
-          onChanged();
-        } else {
-          extraInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public Builder clearExtraInfo() {
-        if (extraInfoBuilder_ == null) {
-          extraInfo_ = null;
-          onChanged();
-        } else {
-          extraInfo_ = null;
-          extraInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder getExtraInfoBuilder() {
-        
-        onChanged();
-        return getExtraInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder getExtraInfoOrBuilder() {
-        if (extraInfoBuilder_ != null) {
-          return extraInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return extraInfo_ == null ?
-              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance() : extraInfo_;
-        }
-      }
-      /**
-       * <code>.GCGSkillPreviewExtraInfo extra_info = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder> 
-          getExtraInfoFieldBuilder() {
-        if (extraInfoBuilder_ == null) {
-          extraInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfoOrBuilder>(
-                  getExtraInfo(),
-                  getParentForChildren(),
-                  isClean());
-          extraInfo_ = null;
-        }
-        return extraInfoBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> oJDLMJCEAIK_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> addCardList_ =
         java.util.Collections.emptyList();
-      private void ensureOJDLMJCEAIKIsMutable() {
+      private void ensureAddCardListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          oJDLMJCEAIK_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(oJDLMJCEAIK_);
+          addCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(addCardList_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> oJDLMJCEAIKBuilder_;
+          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> addCardListBuilder_;
 
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getOJDLMJCEAIKList() {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(oJDLMJCEAIK_);
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getAddCardListList() {
+        if (addCardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(addCardList_);
         } else {
-          return oJDLMJCEAIKBuilder_.getMessageList();
+          return addCardListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public int getOJDLMJCEAIKCount() {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          return oJDLMJCEAIK_.size();
+      public int getAddCardListCount() {
+        if (addCardListBuilder_ == null) {
+          return addCardList_.size();
         } else {
-          return oJDLMJCEAIKBuilder_.getCount();
+          return addCardListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getOJDLMJCEAIK(int index) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          return oJDLMJCEAIK_.get(index);
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getAddCardList(int index) {
+        if (addCardListBuilder_ == null) {
+          return addCardList_.get(index);
         } else {
-          return oJDLMJCEAIKBuilder_.getMessage(index);
+          return addCardListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder setOJDLMJCEAIK(
+      public Builder setAddCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (oJDLMJCEAIKBuilder_ == null) {
+        if (addCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.set(index, value);
+          ensureAddCardListIsMutable();
+          addCardList_.set(index, value);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.setMessage(index, value);
+          addCardListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder setOJDLMJCEAIK(
+      public Builder setAddCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.set(index, builderForValue.build());
+        if (addCardListBuilder_ == null) {
+          ensureAddCardListIsMutable();
+          addCardList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.setMessage(index, builderForValue.build());
+          addCardListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder addOJDLMJCEAIK(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (oJDLMJCEAIKBuilder_ == null) {
+      public Builder addAddCardList(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
+        if (addCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.add(value);
+          ensureAddCardListIsMutable();
+          addCardList_.add(value);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.addMessage(value);
+          addCardListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder addOJDLMJCEAIK(
+      public Builder addAddCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (oJDLMJCEAIKBuilder_ == null) {
+        if (addCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.add(index, value);
+          ensureAddCardListIsMutable();
+          addCardList_.add(index, value);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.addMessage(index, value);
+          addCardListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder addOJDLMJCEAIK(
+      public Builder addAddCardList(
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.add(builderForValue.build());
+        if (addCardListBuilder_ == null) {
+          ensureAddCardListIsMutable();
+          addCardList_.add(builderForValue.build());
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.addMessage(builderForValue.build());
+          addCardListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder addOJDLMJCEAIK(
+      public Builder addAddCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.add(index, builderForValue.build());
+        if (addCardListBuilder_ == null) {
+          ensureAddCardListIsMutable();
+          addCardList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.addMessage(index, builderForValue.build());
+          addCardListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder addAllOJDLMJCEAIK(
+      public Builder addAllAddCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> values) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          ensureOJDLMJCEAIKIsMutable();
+        if (addCardListBuilder_ == null) {
+          ensureAddCardListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, oJDLMJCEAIK_);
+              values, addCardList_);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.addAllMessages(values);
+          addCardListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder clearOJDLMJCEAIK() {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          oJDLMJCEAIK_ = java.util.Collections.emptyList();
+      public Builder clearAddCardList() {
+        if (addCardListBuilder_ == null) {
+          addCardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.clear();
+          addCardListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public Builder removeOJDLMJCEAIK(int index) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          ensureOJDLMJCEAIKIsMutable();
-          oJDLMJCEAIK_.remove(index);
+      public Builder removeAddCardList(int index) {
+        if (addCardListBuilder_ == null) {
+          ensureAddCardListIsMutable();
+          addCardList_.remove(index);
           onChanged();
         } else {
-          oJDLMJCEAIKBuilder_.remove(index);
+          addCardListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getOJDLMJCEAIKBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getAddCardListBuilder(
           int index) {
-        return getOJDLMJCEAIKFieldBuilder().getBuilder(index);
+        return getAddCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getOJDLMJCEAIKOrBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getAddCardListOrBuilder(
           int index) {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          return oJDLMJCEAIK_.get(index);  } else {
-          return oJDLMJCEAIKBuilder_.getMessageOrBuilder(index);
+        if (addCardListBuilder_ == null) {
+          return addCardList_.get(index);  } else {
+          return addCardListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-           getOJDLMJCEAIKOrBuilderList() {
-        if (oJDLMJCEAIKBuilder_ != null) {
-          return oJDLMJCEAIKBuilder_.getMessageOrBuilderList();
+           getAddCardListOrBuilderList() {
+        if (addCardListBuilder_ != null) {
+          return addCardListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(oJDLMJCEAIK_);
+          return java.util.Collections.unmodifiableList(addCardList_);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addOJDLMJCEAIKBuilder() {
-        return getOJDLMJCEAIKFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addAddCardListBuilder() {
+        return getAddCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addOJDLMJCEAIKBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addAddCardListBuilder(
           int index) {
-        return getOJDLMJCEAIKFieldBuilder().addBuilder(
+        return getAddCardListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo OJDLMJCEAIK = 8;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo add_card_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder> 
-           getOJDLMJCEAIKBuilderList() {
-        return getOJDLMJCEAIKFieldBuilder().getBuilderList();
+           getAddCardListBuilderList() {
+        return getAddCardListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-          getOJDLMJCEAIKFieldBuilder() {
-        if (oJDLMJCEAIKBuilder_ == null) {
-          oJDLMJCEAIKBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getAddCardListFieldBuilder() {
+        if (addCardListBuilder_ == null) {
+          addCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder>(
-                  oJDLMJCEAIK_,
+                  addCardList_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          oJDLMJCEAIK_ = null;
+          addCardList_ = null;
         }
-        return oJDLMJCEAIKBuilder_;
+        return addCardListBuilder_;
       }
 
-      private int skillId_ ;
-      /**
-       * <code>uint32 skill_id = 14;</code>
-       * @return The skillId.
-       */
-      @java.lang.Override
-      public int getSkillId() {
-        return skillId_;
-      }
-      /**
-       * <code>uint32 skill_id = 14;</code>
-       * @param value The skillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillId(int value) {
-        
-        skillId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillId() {
-        
-        skillId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> mAKCCCFPDJE_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> rmCardList_ =
         java.util.Collections.emptyList();
-      private void ensureMAKCCCFPDJEIsMutable() {
+      private void ensureRmCardListIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          mAKCCCFPDJE_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(mAKCCCFPDJE_);
+          rmCardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(rmCardList_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> mAKCCCFPDJEBuilder_;
+          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> rmCardListBuilder_;
 
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getMAKCCCFPDJEList() {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(mAKCCCFPDJE_);
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getRmCardListList() {
+        if (rmCardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(rmCardList_);
         } else {
-          return mAKCCCFPDJEBuilder_.getMessageList();
+          return rmCardListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public int getMAKCCCFPDJECount() {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          return mAKCCCFPDJE_.size();
+      public int getRmCardListCount() {
+        if (rmCardListBuilder_ == null) {
+          return rmCardList_.size();
         } else {
-          return mAKCCCFPDJEBuilder_.getCount();
+          return rmCardListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getMAKCCCFPDJE(int index) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          return mAKCCCFPDJE_.get(index);
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRmCardList(int index) {
+        if (rmCardListBuilder_ == null) {
+          return rmCardList_.get(index);
         } else {
-          return mAKCCCFPDJEBuilder_.getMessage(index);
+          return rmCardListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder setMAKCCCFPDJE(
+      public Builder setRmCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (mAKCCCFPDJEBuilder_ == null) {
+        if (rmCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.set(index, value);
+          ensureRmCardListIsMutable();
+          rmCardList_.set(index, value);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.setMessage(index, value);
+          rmCardListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder setMAKCCCFPDJE(
+      public Builder setRmCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.set(index, builderForValue.build());
+        if (rmCardListBuilder_ == null) {
+          ensureRmCardListIsMutable();
+          rmCardList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.setMessage(index, builderForValue.build());
+          rmCardListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder addMAKCCCFPDJE(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (mAKCCCFPDJEBuilder_ == null) {
+      public Builder addRmCardList(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
+        if (rmCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.add(value);
+          ensureRmCardListIsMutable();
+          rmCardList_.add(value);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.addMessage(value);
+          rmCardListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder addMAKCCCFPDJE(
+      public Builder addRmCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (mAKCCCFPDJEBuilder_ == null) {
+        if (rmCardListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.add(index, value);
+          ensureRmCardListIsMutable();
+          rmCardList_.add(index, value);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.addMessage(index, value);
+          rmCardListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder addMAKCCCFPDJE(
+      public Builder addRmCardList(
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.add(builderForValue.build());
+        if (rmCardListBuilder_ == null) {
+          ensureRmCardListIsMutable();
+          rmCardList_.add(builderForValue.build());
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.addMessage(builderForValue.build());
+          rmCardListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder addMAKCCCFPDJE(
+      public Builder addRmCardList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.add(index, builderForValue.build());
+        if (rmCardListBuilder_ == null) {
+          ensureRmCardListIsMutable();
+          rmCardList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.addMessage(index, builderForValue.build());
+          rmCardListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder addAllMAKCCCFPDJE(
+      public Builder addAllRmCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> values) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          ensureMAKCCCFPDJEIsMutable();
+        if (rmCardListBuilder_ == null) {
+          ensureRmCardListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, mAKCCCFPDJE_);
+              values, rmCardList_);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.addAllMessages(values);
+          rmCardListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder clearMAKCCCFPDJE() {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          mAKCCCFPDJE_ = java.util.Collections.emptyList();
+      public Builder clearRmCardList() {
+        if (rmCardListBuilder_ == null) {
+          rmCardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.clear();
+          rmCardListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public Builder removeMAKCCCFPDJE(int index) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          ensureMAKCCCFPDJEIsMutable();
-          mAKCCCFPDJE_.remove(index);
+      public Builder removeRmCardList(int index) {
+        if (rmCardListBuilder_ == null) {
+          ensureRmCardListIsMutable();
+          rmCardList_.remove(index);
           onChanged();
         } else {
-          mAKCCCFPDJEBuilder_.remove(index);
+          rmCardListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getMAKCCCFPDJEBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getRmCardListBuilder(
           int index) {
-        return getMAKCCCFPDJEFieldBuilder().getBuilder(index);
+        return getRmCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getMAKCCCFPDJEOrBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRmCardListOrBuilder(
           int index) {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          return mAKCCCFPDJE_.get(index);  } else {
-          return mAKCCCFPDJEBuilder_.getMessageOrBuilder(index);
+        if (rmCardListBuilder_ == null) {
+          return rmCardList_.get(index);  } else {
+          return rmCardListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-           getMAKCCCFPDJEOrBuilderList() {
-        if (mAKCCCFPDJEBuilder_ != null) {
-          return mAKCCCFPDJEBuilder_.getMessageOrBuilderList();
+           getRmCardListOrBuilderList() {
+        if (rmCardListBuilder_ != null) {
+          return rmCardListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(mAKCCCFPDJE_);
+          return java.util.Collections.unmodifiableList(rmCardList_);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addMAKCCCFPDJEBuilder() {
-        return getMAKCCCFPDJEFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addRmCardListBuilder() {
+        return getRmCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addMAKCCCFPDJEBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addRmCardListBuilder(
           int index) {
-        return getMAKCCCFPDJEFieldBuilder().addBuilder(
+        return getRmCardListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo MAKCCCFPDJE = 15;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo rm_card_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder> 
-           getMAKCCCFPDJEBuilderList() {
-        return getMAKCCCFPDJEFieldBuilder().getBuilderList();
+           getRmCardListBuilderList() {
+        return getRmCardListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-          getMAKCCCFPDJEFieldBuilder() {
-        if (mAKCCCFPDJEBuilder_ == null) {
-          mAKCCCFPDJEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getRmCardListFieldBuilder() {
+        if (rmCardListBuilder_ == null) {
+          rmCardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder>(
-                  mAKCCCFPDJE_,
+                  rmCardList_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
-          mAKCCCFPDJE_ = null;
+          rmCardList_ = null;
         }
-        return mAKCCCFPDJEBuilder_;
+        return rmCardListBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -2446,7 +2407,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetHpInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
 
       @java.lang.Override
@@ -2464,7 +2425,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return getHpInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -2472,7 +2433,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetHpInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -2485,7 +2446,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
       @java.lang.Override
 
@@ -2506,7 +2467,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
 
       public Builder removeHpInfoMap(
@@ -2525,7 +2486,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetMutableHpInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
       public Builder putHpInfoMap(
           int key,
@@ -2537,7 +2498,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 13;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewHpInfo&gt; hp_info_map = 4;</code>
        */
 
       public Builder putAllHpInfoMap(
@@ -2574,7 +2535,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetReactionInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
 
       @java.lang.Override
@@ -2592,7 +2553,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return getReactionInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
       @java.lang.Override
 
@@ -2600,7 +2561,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetReactionInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
       @java.lang.Override
 
@@ -2613,7 +2574,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
       @java.lang.Override
 
@@ -2634,7 +2595,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
 
       public Builder removeReactionInfoMap(
@@ -2653,7 +2614,7 @@ public final class GCGSkillPreviewInfoOuterClass {
         return internalGetMutableReactionInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
       public Builder putReactionInfoMap(
           int key,
@@ -2665,13 +2626,44 @@ public final class GCGSkillPreviewInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 2;</code>
+       * <code>map&lt;uint32, .GCGSkillPreviewElementReactionInfo&gt; reaction_info_map = 9;</code>
        */
 
       public Builder putAllReactionInfoMap(
           java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.GCGSkillPreviewElementReactionInfo> values) {
         internalGetMutableReactionInfoMap().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int skillId_ ;
+      /**
+       * <code>uint32 skill_id = 2;</code>
+       * @return The skillId.
+       */
+      @java.lang.Override
+      public int getSkillId() {
+        return skillId_;
+      }
+      /**
+       * <code>uint32 skill_id = 2;</code>
+       * @param value The skillId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillId(int value) {
+        
+        skillId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 skill_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillId() {
+        
+        skillId_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -2756,38 +2748,38 @@ public final class GCGSkillPreviewInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031GCGSkillPreviewInfo.proto\032&GCGSkillPre" +
-      "viewOnstageChangeInfo.proto\032$GCGSkillPre" +
-      "viewTokenChangeInfo.proto\032\036GCGSkillPrevi" +
-      "ewExtraInfo.proto\032\035GCGSkillPreviewCardIn" +
+      "\n\031GCGSkillPreviewInfo.proto\032\036GCGSkillPre" +
+      "viewExtraInfo.proto\032$GCGSkillPreviewToke" +
+      "nChangeInfo.proto\032&GCGSkillPreviewOnstag" +
+      "eChangeInfo.proto\032\035GCGSkillPreviewCardIn" +
       "fo.proto\032\033GCGSkillPreviewHpInfo.proto\032(G" +
       "CGSkillPreviewElementReactionInfo.proto\"" +
-      "\316\005\n\023GCGSkillPreviewInfo\022H\n\035change_onstag" +
-      "e_character_list\030\005 \003(\0132!.GCGSkillPreview" +
-      "OnstageChangeInfo\022K\n\025card_token_change_m" +
-      "ap\030\006 \003(\0132,.GCGSkillPreviewInfo.CardToken" +
-      "ChangeMapEntry\022-\n\nextra_info\030\004 \001(\0132\031.GCG" +
-      "SkillPreviewExtraInfo\022-\n\013OJDLMJCEAIK\030\010 \003" +
-      "(\0132\030.GCGSkillPreviewCardInfo\022\020\n\010skill_id" +
-      "\030\016 \001(\r\022-\n\013MAKCCCFPDJE\030\017 \003(\0132\030.GCGSkillPr" +
-      "eviewCardInfo\0228\n\013hp_info_map\030\r \003(\0132#.GCG" +
-      "SkillPreviewInfo.HpInfoMapEntry\022D\n\021react" +
-      "ion_info_map\030\002 \003(\0132).GCGSkillPreviewInfo" +
-      ".ReactionInfoMapEntry\032Z\n\027CardTokenChange" +
-      "MapEntry\022\013\n\003key\030\001 \001(\r\022.\n\005value\030\002 \001(\0132\037.G" +
-      "CGSkillPreviewTokenChangeInfo:\0028\001\032H\n\016HpI" +
-      "nfoMapEntry\022\013\n\003key\030\001 \001(\r\022%\n\005value\030\002 \001(\0132" +
-      "\026.GCGSkillPreviewHpInfo:\0028\001\032[\n\024ReactionI" +
-      "nfoMapEntry\022\013\n\003key\030\001 \001(\r\0222\n\005value\030\002 \001(\0132" +
-      "#.GCGSkillPreviewElementReactionInfo:\0028\001" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\321\005\n\023GCGSkillPreviewInfo\022-\n\nextra_info\030\n " +
+      "\001(\0132\031.GCGSkillPreviewExtraInfo\022K\n\025card_t" +
+      "oken_change_map\030\017 \003(\0132,.GCGSkillPreviewI" +
+      "nfo.CardTokenChangeMapEntry\022H\n\035change_on" +
+      "stage_character_list\030\005 \003(\0132!.GCGSkillPre" +
+      "viewOnstageChangeInfo\022/\n\radd_card_list\030\007" +
+      " \003(\0132\030.GCGSkillPreviewCardInfo\022.\n\014rm_car" +
+      "d_list\030\010 \003(\0132\030.GCGSkillPreviewCardInfo\0228" +
+      "\n\013hp_info_map\030\004 \003(\0132#.GCGSkillPreviewInf" +
+      "o.HpInfoMapEntry\022D\n\021reaction_info_map\030\t " +
+      "\003(\0132).GCGSkillPreviewInfo.ReactionInfoMa" +
+      "pEntry\022\020\n\010skill_id\030\002 \001(\r\032Z\n\027CardTokenCha" +
+      "ngeMapEntry\022\013\n\003key\030\001 \001(\r\022.\n\005value\030\002 \001(\0132" +
+      "\037.GCGSkillPreviewTokenChangeInfo:\0028\001\032H\n\016" +
+      "HpInfoMapEntry\022\013\n\003key\030\001 \001(\r\022%\n\005value\030\002 \001" +
+      "(\0132\026.GCGSkillPreviewHpInfo:\0028\001\032[\n\024Reacti" +
+      "onInfoMapEntry\022\013\n\003key\030\001 \001(\r\0222\n\005value\030\002 \001" +
+      "(\0132#.GCGSkillPreviewElementReactionInfo:" +
+      "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.getDescriptor(),
@@ -2797,7 +2789,7 @@ public final class GCGSkillPreviewInfoOuterClass {
     internal_static_GCGSkillPreviewInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewInfo_descriptor,
-        new java.lang.String[] { "ChangeOnstageCharacterList", "CardTokenChangeMap", "ExtraInfo", "OJDLMJCEAIK", "SkillId", "MAKCCCFPDJE", "HpInfoMap", "ReactionInfoMap", });
+        new java.lang.String[] { "ExtraInfo", "CardTokenChangeMap", "ChangeOnstageCharacterList", "AddCardList", "RmCardList", "HpInfoMap", "ReactionInfoMap", "SkillId", });
     internal_static_GCGSkillPreviewInfo_CardTokenChangeMapEntry_descriptor =
       internal_static_GCGSkillPreviewInfo_descriptor.getNestedTypes().get(0);
     internal_static_GCGSkillPreviewInfo_CardTokenChangeMapEntry_fieldAccessorTable = new
@@ -2816,9 +2808,9 @@ public final class GCGSkillPreviewInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewInfo_ReactionInfoMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGSkillPreviewTokenChangeInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGSkillPreviewOnstageChangeInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGSkillPreviewHpInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGSkillPreviewElementReactionInfoOuterClass.getDescriptor();

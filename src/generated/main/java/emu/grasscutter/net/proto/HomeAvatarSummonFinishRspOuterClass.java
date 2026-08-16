@@ -19,21 +19,20 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 event_id = 4;</code>
+     * <code>uint32 event_id = 14;</code>
      * @return The eventId.
      */
     int getEventId();
   }
   /**
    * <pre>
-   * CmdId: 8835
-   * Obf: LIPNGPJHCIB
+   * CmdId: 3323
    * </pre>
    *
    * Protobuf type {@code HomeAvatarSummonFinishRsp}
@@ -80,12 +79,12 @@ public final class HomeAvatarSummonFinishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 112: {
 
               eventId_ = input.readUInt32();
               break;
@@ -122,10 +121,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
               emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp.class, emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       return retcode_;
     }
 
-    public static final int EVENT_ID_FIELD_NUMBER = 4;
+    public static final int EVENT_ID_FIELD_NUMBER = 14;
     private int eventId_;
     /**
-     * <code>uint32 event_id = 4;</code>
+     * <code>uint32 event_id = 14;</code>
      * @return The eventId.
      */
     @java.lang.Override
@@ -159,10 +158,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (eventId_ != 0) {
-        output.writeUInt32(4, eventId_);
+        output.writeUInt32(14, eventId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (eventId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, eventId_);
+          .computeUInt32Size(14, eventId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8835
-     * Obf: LIPNGPJHCIB
+     * CmdId: 3323
      * </pre>
      *
      * Protobuf type {@code HomeAvatarSummonFinishRsp}
@@ -470,7 +468,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +499,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
 
       private int eventId_ ;
       /**
-       * <code>uint32 event_id = 4;</code>
+       * <code>uint32 event_id = 14;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return eventId_;
       }
       /**
-       * <code>uint32 event_id = 4;</code>
+       * <code>uint32 event_id = 14;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_id = 4;</code>
+       * <code>uint32 event_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
@@ -597,8 +595,8 @@ public final class HomeAvatarSummonFinishRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037HomeAvatarSummonFinishRsp.proto\">\n\031Hom" +
-      "eAvatarSummonFinishRsp\022\017\n\007retcode\030\001 \001(\005\022" +
-      "\020\n\010event_id\030\004 \001(\rB\033\n\031emu.grasscutter.net" +
+      "eAvatarSummonFinishRsp\022\017\n\007retcode\030\n \001(\005\022" +
+      "\020\n\010event_id\030\016 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,7 @@ public final class GCGWorldPlayerGCGStateReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24419
-   * Obf: NFGGAMILGAE
+   * CMD_ID = 6445
    * </pre>
    *
    * Protobuf type {@code GCGWorldPlayerGCGStateReq}
@@ -246,8 +245,7 @@ public final class GCGWorldPlayerGCGStateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24419
-     * Obf: NFGGAMILGAE
+     * CMD_ID = 6445
      * </pre>
      *
      * Protobuf type {@code GCGWorldPlayerGCGStateReq}

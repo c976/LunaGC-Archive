@@ -19,28 +19,24 @@ public final class GCGDuelChallengeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_progress = 4;</code>
+     * <code>uint32 challenge_id = 8;</code>
+     * @return The challengeId.
+     */
+    int getChallengeId();
+
+    /**
+     * <code>uint32 total_progress = 1;</code>
      * @return The totalProgress.
      */
     int getTotalProgress();
 
     /**
-     * <code>uint32 cur_progress = 5;</code>
+     * <code>uint32 cur_progress = 15;</code>
      * @return The curProgress.
      */
     int getCurProgress();
-
-    /**
-     * <code>uint32 challenge_id = 15;</code>
-     * @return The challengeId.
-     */
-    int getChallengeId();
   }
   /**
-   * <pre>
-   * Obf: OIEHOMKJPKB
-   * </pre>
-   *
    * Protobuf type {@code GCGDuelChallenge}
    */
   public static final class GCGDuelChallenge extends
@@ -85,19 +81,19 @@ public final class GCGDuelChallengeOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               totalProgress_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 64: {
 
-              curProgress_ = input.readUInt32();
+              challengeId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              challengeId_ = input.readUInt32();
+              curProgress_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +128,21 @@ public final class GCGDuelChallengeOuterClass {
               emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.class, emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.Builder.class);
     }
 
-    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 4;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 8;
+    private int challengeId_;
+    /**
+     * <code>uint32 challenge_id = 8;</code>
+     * @return The challengeId.
+     */
+    @java.lang.Override
+    public int getChallengeId() {
+      return challengeId_;
+    }
+
+    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 1;
     private int totalProgress_;
     /**
-     * <code>uint32 total_progress = 4;</code>
+     * <code>uint32 total_progress = 1;</code>
      * @return The totalProgress.
      */
     @java.lang.Override
@@ -143,26 +150,15 @@ public final class GCGDuelChallengeOuterClass {
       return totalProgress_;
     }
 
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 5;
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 15;
     private int curProgress_;
     /**
-     * <code>uint32 cur_progress = 5;</code>
+     * <code>uint32 cur_progress = 15;</code>
      * @return The curProgress.
      */
     @java.lang.Override
     public int getCurProgress() {
       return curProgress_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 15;
-    private int challengeId_;
-    /**
-     * <code>uint32 challenge_id = 15;</code>
-     * @return The challengeId.
-     */
-    @java.lang.Override
-    public int getChallengeId() {
-      return challengeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,13 +176,13 @@ public final class GCGDuelChallengeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (totalProgress_ != 0) {
-        output.writeUInt32(4, totalProgress_);
-      }
-      if (curProgress_ != 0) {
-        output.writeUInt32(5, curProgress_);
+        output.writeUInt32(1, totalProgress_);
       }
       if (challengeId_ != 0) {
-        output.writeUInt32(15, challengeId_);
+        output.writeUInt32(8, challengeId_);
+      }
+      if (curProgress_ != 0) {
+        output.writeUInt32(15, curProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,15 +195,15 @@ public final class GCGDuelChallengeOuterClass {
       size = 0;
       if (totalProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, totalProgress_);
-      }
-      if (curProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, curProgress_);
+          .computeUInt32Size(1, totalProgress_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, challengeId_);
+          .computeUInt32Size(8, challengeId_);
+      }
+      if (curProgress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, curProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class GCGDuelChallengeOuterClass {
       }
       emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge other = (emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge) obj;
 
+      if (getChallengeId()
+          != other.getChallengeId()) return false;
       if (getTotalProgress()
           != other.getTotalProgress()) return false;
       if (getCurProgress()
           != other.getCurProgress()) return false;
-      if (getChallengeId()
-          != other.getChallengeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +237,12 @@ public final class GCGDuelChallengeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeId();
       hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getTotalProgress();
       hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getCurProgress();
-      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +339,6 @@ public final class GCGDuelChallengeOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OIEHOMKJPKB
-     * </pre>
-     *
      * Protobuf type {@code GCGDuelChallenge}
      */
     public static final class Builder extends
@@ -384,11 +376,11 @@ public final class GCGDuelChallengeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        challengeId_ = 0;
+
         totalProgress_ = 0;
 
         curProgress_ = 0;
-
-        challengeId_ = 0;
 
         return this;
       }
@@ -416,9 +408,9 @@ public final class GCGDuelChallengeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge buildPartial() {
         emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge result = new emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge(this);
+        result.challengeId_ = challengeId_;
         result.totalProgress_ = totalProgress_;
         result.curProgress_ = curProgress_;
-        result.challengeId_ = challengeId_;
         onBuilt();
         return result;
       }
@@ -467,14 +459,14 @@ public final class GCGDuelChallengeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge other) {
         if (other == emu.grasscutter.net.proto.GCGDuelChallengeOuterClass.GCGDuelChallenge.getDefaultInstance()) return this;
+        if (other.getChallengeId() != 0) {
+          setChallengeId(other.getChallengeId());
+        }
         if (other.getTotalProgress() != 0) {
           setTotalProgress(other.getTotalProgress());
         }
         if (other.getCurProgress() != 0) {
           setCurProgress(other.getCurProgress());
-        }
-        if (other.getChallengeId() != 0) {
-          setChallengeId(other.getChallengeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,9 +497,40 @@ public final class GCGDuelChallengeOuterClass {
         return this;
       }
 
+      private int challengeId_ ;
+      /**
+       * <code>uint32 challenge_id = 8;</code>
+       * @return The challengeId.
+       */
+      @java.lang.Override
+      public int getChallengeId() {
+        return challengeId_;
+      }
+      /**
+       * <code>uint32 challenge_id = 8;</code>
+       * @param value The challengeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeId(int value) {
+        
+        challengeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeId() {
+        
+        challengeId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int totalProgress_ ;
       /**
-       * <code>uint32 total_progress = 4;</code>
+       * <code>uint32 total_progress = 1;</code>
        * @return The totalProgress.
        */
       @java.lang.Override
@@ -515,7 +538,7 @@ public final class GCGDuelChallengeOuterClass {
         return totalProgress_;
       }
       /**
-       * <code>uint32 total_progress = 4;</code>
+       * <code>uint32 total_progress = 1;</code>
        * @param value The totalProgress to set.
        * @return This builder for chaining.
        */
@@ -526,7 +549,7 @@ public final class GCGDuelChallengeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_progress = 4;</code>
+       * <code>uint32 total_progress = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalProgress() {
@@ -538,7 +561,7 @@ public final class GCGDuelChallengeOuterClass {
 
       private int curProgress_ ;
       /**
-       * <code>uint32 cur_progress = 5;</code>
+       * <code>uint32 cur_progress = 15;</code>
        * @return The curProgress.
        */
       @java.lang.Override
@@ -546,7 +569,7 @@ public final class GCGDuelChallengeOuterClass {
         return curProgress_;
       }
       /**
-       * <code>uint32 cur_progress = 5;</code>
+       * <code>uint32 cur_progress = 15;</code>
        * @param value The curProgress to set.
        * @return This builder for chaining.
        */
@@ -557,43 +580,12 @@ public final class GCGDuelChallengeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_progress = 5;</code>
+       * <code>uint32 cur_progress = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurProgress() {
         
         curProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeId_ ;
-      /**
-       * <code>uint32 challenge_id = 15;</code>
-       * @return The challengeId.
-       */
-      @java.lang.Override
-      public int getChallengeId() {
-        return challengeId_;
-      }
-      /**
-       * <code>uint32 challenge_id = 15;</code>
-       * @param value The challengeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeId(int value) {
-        
-        challengeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeId() {
-        
-        challengeId_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +657,8 @@ public final class GCGDuelChallengeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GCGDuelChallenge.proto\"V\n\020GCGDuelChall" +
-      "enge\022\026\n\016total_progress\030\004 \001(\r\022\024\n\014cur_prog" +
-      "ress\030\005 \001(\r\022\024\n\014challenge_id\030\017 \001(\rB\033\n\031emu." +
+      "enge\022\024\n\014challenge_id\030\010 \001(\r\022\026\n\016total_prog" +
+      "ress\030\001 \001(\r\022\024\n\014cur_progress\030\017 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +670,7 @@ public final class GCGDuelChallengeOuterClass {
     internal_static_GCGDuelChallenge_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDuelChallenge_descriptor,
-        new java.lang.String[] { "TotalProgress", "CurProgress", "ChallengeId", });
+        new java.lang.String[] { "ChallengeId", "TotalProgress", "CurProgress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

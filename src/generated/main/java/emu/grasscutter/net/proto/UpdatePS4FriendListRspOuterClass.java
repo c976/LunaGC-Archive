@@ -19,24 +19,40 @@ public final class UpdatePS4FriendListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @return A list containing the psnIdList.
      */
     java.util.List<java.lang.String>
         getPsnIdListList();
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @return The count of psnIdList.
      */
     int getPsnIdListCount();
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The psnIdList at the given index.
      */
     java.lang.String getPsnIdList(int index);
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the psnIdList at the given index.
      */
@@ -44,15 +60,18 @@ public final class UpdatePS4FriendListRspOuterClass {
         getPsnIdListBytes(int index);
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5389
-   * Obf: FLDCNEGDODM
+   * CmdId: 25069
    * </pre>
    *
    * Protobuf type {@code UpdatePS4FriendListRsp}
@@ -101,18 +120,18 @@ public final class UpdatePS4FriendListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 50: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 psnIdList_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
               }
               psnIdList_.add(s);
+              break;
+            }
+            case 72: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -150,10 +169,14 @@ public final class UpdatePS4FriendListRspOuterClass {
               emu.grasscutter.net.proto.UpdatePS4FriendListRspOuterClass.UpdatePS4FriendListRsp.class, emu.grasscutter.net.proto.UpdatePS4FriendListRspOuterClass.UpdatePS4FriendListRsp.Builder.class);
     }
 
-    public static final int PSN_ID_LIST_FIELD_NUMBER = 6;
+    public static final int PSN_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.LazyStringList psnIdList_;
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @return A list containing the psnIdList.
      */
     public com.google.protobuf.ProtocolStringList
@@ -161,14 +184,22 @@ public final class UpdatePS4FriendListRspOuterClass {
       return psnIdList_;
     }
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @return The count of psnIdList.
      */
     public int getPsnIdListCount() {
       return psnIdList_.size();
     }
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The psnIdList at the given index.
      */
@@ -176,7 +207,11 @@ public final class UpdatePS4FriendListRspOuterClass {
       return psnIdList_.get(index);
     }
     /**
-     * <code>repeated string psn_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated string psn_id_list = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the psnIdList at the given index.
      */
@@ -185,10 +220,14 @@ public final class UpdatePS4FriendListRspOuterClass {
       return psnIdList_.getByteString(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -210,11 +249,11 @@ public final class UpdatePS4FriendListRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       for (int i = 0; i < psnIdList_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, psnIdList_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, psnIdList_.getRaw(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,10 +264,6 @@ public final class UpdatePS4FriendListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < psnIdList_.size(); i++) {
@@ -236,6 +271,10 @@ public final class UpdatePS4FriendListRspOuterClass {
         }
         size += dataSize;
         size += 1 * getPsnIdListList().size();
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,8 +409,7 @@ public final class UpdatePS4FriendListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5389
-     * Obf: FLDCNEGDODM
+     * CmdId: 25069
      * </pre>
      *
      * Protobuf type {@code UpdatePS4FriendListRsp}
@@ -547,7 +585,11 @@ public final class UpdatePS4FriendListRspOuterClass {
          }
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @return A list containing the psnIdList.
        */
       public com.google.protobuf.ProtocolStringList
@@ -555,14 +597,22 @@ public final class UpdatePS4FriendListRspOuterClass {
         return psnIdList_.getUnmodifiableView();
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @return The count of psnIdList.
        */
       public int getPsnIdListCount() {
         return psnIdList_.size();
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The psnIdList at the given index.
        */
@@ -570,7 +620,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return psnIdList_.get(index);
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param index The index of the value to return.
        * @return The bytes of the psnIdList at the given index.
        */
@@ -579,7 +633,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return psnIdList_.getByteString(index);
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The psnIdList to set.
        * @return This builder for chaining.
@@ -595,7 +653,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param value The psnIdList to add.
        * @return This builder for chaining.
        */
@@ -610,7 +672,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param values The psnIdList to add.
        * @return This builder for chaining.
        */
@@ -623,7 +689,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPsnIdList() {
@@ -633,7 +703,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated string psn_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated string psn_id_list = 2;</code>
        * @param value The bytes of the psnIdList to add.
        * @return This builder for chaining.
        */
@@ -651,7 +725,11 @@ public final class UpdatePS4FriendListRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -659,7 +737,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -670,7 +752,11 @@ public final class UpdatePS4FriendListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -747,8 +833,8 @@ public final class UpdatePS4FriendListRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034UpdatePS4FriendListRsp.proto\">\n\026Update" +
-      "PS4FriendListRsp\022\023\n\013psn_id_list\030\006 \003(\t\022\017\n" +
-      "\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "PS4FriendListRsp\022\023\n\013psn_id_list\030\002 \003(\t\022\017\n" +
+      "\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

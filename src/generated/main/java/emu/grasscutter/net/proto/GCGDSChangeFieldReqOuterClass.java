@@ -19,23 +19,22 @@ public final class GCGDSChangeFieldReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 3;</code>
+     * <pre>
+     * CMD_ID = 842
+     * </pre>
+     *
+     * <code>uint32 deck_id = 14;</code>
      * @return The deckId.
      */
     int getDeckId();
 
     /**
-     * <code>uint32 field_id = 7;</code>
+     * <code>uint32 field_id = 9;</code>
      * @return The fieldId.
      */
     int getFieldId();
   }
   /**
-   * <pre>
-   * CmdId: 549
-   * Obf: LMNCFIKIMJF
-   * </pre>
-   *
    * Protobuf type {@code GCGDSChangeFieldReq}
    */
   public static final class GCGDSChangeFieldReq extends
@@ -80,14 +79,14 @@ public final class GCGDSChangeFieldReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              deckId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 72: {
 
               fieldId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              deckId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGDSChangeFieldReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.class, emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 3;
+    public static final int DECK_ID_FIELD_NUMBER = 14;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 3;</code>
+     * <pre>
+     * CMD_ID = 842
+     * </pre>
+     *
+     * <code>uint32 deck_id = 14;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGDSChangeFieldReqOuterClass {
       return deckId_;
     }
 
-    public static final int FIELD_ID_FIELD_NUMBER = 7;
+    public static final int FIELD_ID_FIELD_NUMBER = 9;
     private int fieldId_;
     /**
-     * <code>uint32 field_id = 7;</code>
+     * <code>uint32 field_id = 9;</code>
      * @return The fieldId.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGDSChangeFieldReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (deckId_ != 0) {
-        output.writeUInt32(3, deckId_);
-      }
       if (fieldId_ != 0) {
-        output.writeUInt32(7, fieldId_);
+        output.writeUInt32(9, fieldId_);
+      }
+      if (deckId_ != 0) {
+        output.writeUInt32(14, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGDSChangeFieldReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (deckId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, deckId_);
-      }
       if (fieldId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fieldId_);
+          .computeUInt32Size(9, fieldId_);
+      }
+      if (deckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGDSChangeFieldReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 549
-     * Obf: LMNCFIKIMJF
-     * </pre>
-     *
      * Protobuf type {@code GCGDSChangeFieldReq}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGDSChangeFieldReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 3;</code>
+       * <pre>
+       * CMD_ID = 842
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGDSChangeFieldReqOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 3;</code>
+       * <pre>
+       * CMD_ID = 842
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 3;</code>
+       * <pre>
+       * CMD_ID = 842
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -501,7 +511,7 @@ public final class GCGDSChangeFieldReqOuterClass {
 
       private int fieldId_ ;
       /**
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 9;</code>
        * @return The fieldId.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return fieldId_;
       }
       /**
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 9;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldId() {
@@ -597,8 +607,8 @@ public final class GCGDSChangeFieldReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGDSChangeFieldReq.proto\"8\n\023GCGDSChan" +
-      "geFieldReq\022\017\n\007deck_id\030\003 \001(\r\022\020\n\010field_id\030" +
-      "\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "geFieldReq\022\017\n\007deck_id\030\016 \001(\r\022\020\n\010field_id\030" +
+      "\t \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,27 +19,23 @@ public final class GCGOperationRerollOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @return A list containing the diceIndexList.
      */
     java.util.List<java.lang.Integer> getDiceIndexListList();
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @return The count of diceIndexList.
      */
     int getDiceIndexListCount();
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @param index The index of the element to return.
      * @return The diceIndexList at the given index.
      */
     int getDiceIndexList(int index);
   }
   /**
-   * <pre>
-   * Obf: NBMJJHNECMH
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationReroll}
    */
   public static final class GCGOperationReroll extends
@@ -86,7 +82,7 @@ public final class GCGOperationRerollOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 diceIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -94,7 +90,7 @@ public final class GCGOperationRerollOuterClass {
               diceIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,10 +138,10 @@ public final class GCGOperationRerollOuterClass {
               emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.class, emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder.class);
     }
 
-    public static final int DICE_INDEX_LIST_FIELD_NUMBER = 12;
+    public static final int DICE_INDEX_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList diceIndexList_;
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @return A list containing the diceIndexList.
      */
     @java.lang.Override
@@ -154,14 +150,14 @@ public final class GCGOperationRerollOuterClass {
       return diceIndexList_;
     }
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @return The count of diceIndexList.
      */
     public int getDiceIndexListCount() {
       return diceIndexList_.size();
     }
     /**
-     * <code>repeated uint32 dice_index_list = 12;</code>
+     * <code>repeated uint32 dice_index_list = 13;</code>
      * @param index The index of the element to return.
      * @return The diceIndexList at the given index.
      */
@@ -186,7 +182,7 @@ public final class GCGOperationRerollOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getDiceIndexListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(diceIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < diceIndexList_.size(); i++) {
@@ -343,10 +339,6 @@ public final class GCGOperationRerollOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NBMJJHNECMH
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationReroll}
      */
     public static final class Builder extends
@@ -514,7 +506,7 @@ public final class GCGOperationRerollOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @return A list containing the diceIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -523,14 +515,14 @@ public final class GCGOperationRerollOuterClass {
                  java.util.Collections.unmodifiableList(diceIndexList_) : diceIndexList_;
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @return The count of diceIndexList.
        */
       public int getDiceIndexListCount() {
         return diceIndexList_.size();
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @param index The index of the element to return.
        * @return The diceIndexList at the given index.
        */
@@ -538,7 +530,7 @@ public final class GCGOperationRerollOuterClass {
         return diceIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The diceIndexList to set.
        * @return This builder for chaining.
@@ -551,7 +543,7 @@ public final class GCGOperationRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @param value The diceIndexList to add.
        * @return This builder for chaining.
        */
@@ -562,7 +554,7 @@ public final class GCGOperationRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @param values The diceIndexList to add.
        * @return This builder for chaining.
        */
@@ -575,7 +567,7 @@ public final class GCGOperationRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 dice_index_list = 12;</code>
+       * <code>repeated uint32 dice_index_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDiceIndexList() {
@@ -652,7 +644,7 @@ public final class GCGOperationRerollOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGOperationReroll.proto\"-\n\022GCGOperati" +
-      "onReroll\022\027\n\017dice_index_list\030\014 \003(\rB\033\n\031emu" +
+      "onReroll\022\027\n\017dice_index_list\030\r \003(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

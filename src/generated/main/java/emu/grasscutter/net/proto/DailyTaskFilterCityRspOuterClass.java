@@ -19,21 +19,28 @@ public final class DailyTaskFilterCityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 2;</code>
-     * @return The cityId.
-     */
-    int getCityId();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 city_id = 6;</code>
+     * @return The cityId.
+     */
+    int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 8986
-   * Obf: AJDFJMPKPDK
+   * CmdId: 23179
    * </pre>
    *
    * Protobuf type {@code DailyTaskFilterCityRsp}
@@ -80,12 +87,12 @@ public final class DailyTaskFilterCityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               cityId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,26 +129,34 @@ public final class DailyTaskFilterCityRspOuterClass {
               emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp.class, emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 2;
-    private int cityId_;
-    /**
-     * <code>uint32 city_id = 2;</code>
-     * @return The cityId.
-     */
-    @java.lang.Override
-    public int getCityId() {
-      return cityId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int CITY_ID_FIELD_NUMBER = 6;
+    private int cityId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 city_id = 6;</code>
+     * @return The cityId.
+     */
+    @java.lang.Override
+    public int getCityId() {
+      return cityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +174,10 @@ public final class DailyTaskFilterCityRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cityId_ != 0) {
-        output.writeUInt32(2, cityId_);
+        output.writeUInt32(6, cityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class DailyTaskFilterCityRspOuterClass {
       size = 0;
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cityId_);
+          .computeUInt32Size(6, cityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +211,10 @@ public final class DailyTaskFilterCityRspOuterClass {
       }
       emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp other = (emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp) obj;
 
-      if (getCityId()
-          != other.getCityId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getCityId()
+          != other.getCityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +226,10 @@ public final class DailyTaskFilterCityRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCityId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +327,7 @@ public final class DailyTaskFilterCityRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8986
-     * Obf: AJDFJMPKPDK
+     * CmdId: 23179
      * </pre>
      *
      * Protobuf type {@code DailyTaskFilterCityRsp}
@@ -353,9 +367,9 @@ public final class DailyTaskFilterCityRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cityId_ = 0;
-
         retcode_ = 0;
+
+        cityId_ = 0;
 
         return this;
       }
@@ -383,8 +397,8 @@ public final class DailyTaskFilterCityRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp buildPartial() {
         emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp result = new emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp(this);
-        result.cityId_ = cityId_;
         result.retcode_ = retcode_;
+        result.cityId_ = cityId_;
         onBuilt();
         return result;
       }
@@ -433,11 +447,11 @@ public final class DailyTaskFilterCityRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp other) {
         if (other == emu.grasscutter.net.proto.DailyTaskFilterCityRspOuterClass.DailyTaskFilterCityRsp.getDefaultInstance()) return this;
-        if (other.getCityId() != 0) {
-          setCityId(other.getCityId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getCityId() != 0) {
+          setCityId(other.getCityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +482,13 @@ public final class DailyTaskFilterCityRspOuterClass {
         return this;
       }
 
-      private int cityId_ ;
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @return The cityId.
-       */
-      @java.lang.Override
-      public int getCityId() {
-        return cityId_;
-      }
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @param value The cityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCityId(int value) {
-        
-        cityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 city_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCityId() {
-        
-        cityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +496,11 @@ public final class DailyTaskFilterCityRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,12 +511,59 @@ public final class DailyTaskFilterCityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cityId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 city_id = 6;</code>
+       * @return The cityId.
+       */
+      @java.lang.Override
+      public int getCityId() {
+        return cityId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 city_id = 6;</code>
+       * @param value The cityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCityId(int value) {
+        
+        cityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 city_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCityId() {
+        
+        cityId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +635,8 @@ public final class DailyTaskFilterCityRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034DailyTaskFilterCityRsp.proto\":\n\026DailyT" +
-      "askFilterCityRsp\022\017\n\007city_id\030\002 \001(\r\022\017\n\007ret" +
-      "code\030\004 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "askFilterCityRsp\022\017\n\007retcode\030\n \001(\005\022\017\n\007cit" +
+      "y_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +648,7 @@ public final class DailyTaskFilterCityRspOuterClass {
     internal_static_DailyTaskFilterCityRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DailyTaskFilterCityRsp_descriptor,
-        new java.lang.String[] { "CityId", "Retcode", });
+        new java.lang.String[] { "Retcode", "CityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,27 +19,47 @@ public final class FungusFighterV2DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> 
+    java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> 
         getLevelDataListList();
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
-    emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData getLevelDataList(int index);
+    emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ getLevelDataList(int index);
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     int getLevelDataListCount();
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder> 
         getLevelDataListOrBuilderList();
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
-    emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder getLevelDataListOrBuilder(
+    emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder getLevelDataListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class FungusFighterV2DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData>();
+                levelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class FungusFighterV2DetailInfoOuterClass {
               emu.grasscutter.net.proto.FungusFighterV2DetailInfoOuterClass.FungusFighterV2DetailInfo.class, emu.grasscutter.net.proto.FungusFighterV2DetailInfoOuterClass.FungusFighterV2DetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_DATA_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> levelDataList_;
+    public static final int LEVEL_DATA_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> levelDataList_;
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> getLevelDataListList() {
+    public java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> getLevelDataListList() {
       return levelDataList_;
     }
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder> 
         getLevelDataListOrBuilderList() {
       return levelDataList_;
     }
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     @java.lang.Override
     public int getLevelDataListCount() {
       return levelDataList_.size();
     }
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData getLevelDataList(int index) {
+    public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ getLevelDataList(int index) {
       return levelDataList_.get(index);
     }
     /**
-     * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder getLevelDataListOrBuilder(
+    public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder getLevelDataListOrBuilder(
         int index) {
       return levelDataList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class FungusFighterV2DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelDataList_.size(); i++) {
-        output.writeMessage(3, levelDataList_.get(i));
+        output.writeMessage(9, levelDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class FungusFighterV2DetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, levelDataList_.get(i));
+          .computeMessageSize(9, levelDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class FungusFighterV2DetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> levelDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> levelDataList_ =
         java.util.Collections.emptyList();
       private void ensureLevelDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData>(levelDataList_);
+          levelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ>(levelDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder> levelDataListBuilder_;
+          emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder> levelDataListBuilder_;
 
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> getLevelDataListList() {
+      public java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> getLevelDataListList() {
         if (levelDataListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelDataList_);
         } else {
@@ -538,7 +582,11 @@ public final class FungusFighterV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public int getLevelDataListCount() {
         if (levelDataListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class FungusFighterV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData getLevelDataList(int index) {
+      public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ getLevelDataList(int index) {
         if (levelDataListBuilder_ == null) {
           return levelDataList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder setLevelDataList(
-          int index, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData value) {
+          int index, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ value) {
         if (levelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder setLevelDataList(
-          int index, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder builderForValue) {
         if (levelDataListBuilder_ == null) {
           ensureLevelDataListIsMutable();
           levelDataList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public Builder addLevelDataList(emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData value) {
+      public Builder addLevelDataList(emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ value) {
         if (levelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder addLevelDataList(
-          int index, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData value) {
+          int index, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ value) {
         if (levelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder addLevelDataList(
-          emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder builderForValue) {
+          emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder builderForValue) {
         if (levelDataListBuilder_ == null) {
           ensureLevelDataListIsMutable();
           levelDataList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder addLevelDataList(
-          int index, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder builderForValue) {
         if (levelDataListBuilder_ == null) {
           ensureLevelDataListIsMutable();
           levelDataList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder addAllLevelDataList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ> values) {
         if (levelDataListBuilder_ == null) {
           ensureLevelDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder clearLevelDataList() {
         if (levelDataListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
       public Builder removeLevelDataList(int index) {
         if (levelDataListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class FungusFighterV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder getLevelDataListBuilder(
+      public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder getLevelDataListBuilder(
           int index) {
         return getLevelDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder getLevelDataListOrBuilder(
+      public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder getLevelDataListOrBuilder(
           int index) {
         if (levelDataListBuilder_ == null) {
           return levelDataList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class FungusFighterV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder> 
            getLevelDataListOrBuilderList() {
         if (levelDataListBuilder_ != null) {
           return levelDataListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class FungusFighterV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder addLevelDataListBuilder() {
+      public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder addLevelDataListBuilder() {
         return getLevelDataListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.getDefaultInstance());
+            emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder addLevelDataListBuilder(
+      public emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder addLevelDataListBuilder(
           int index) {
         return getLevelDataListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.getDefaultInstance());
+            index, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .FungusFighterV2LevelData level_data_list = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LACKKIIKLIJ level_data_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder> 
            getLevelDataListBuilderList() {
         return getLevelDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder> 
+          emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder> 
           getLevelDataListFieldBuilder() {
         if (levelDataListBuilder_ == null) {
           levelDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelDataOrBuilder>(
+              emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJ.Builder, emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.LACKKIIKLIJOrBuilder>(
                   levelDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class FungusFighterV2DetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037FungusFighterV2DetailInfo.proto\032\036Fungu" +
-      "sFighterV2LevelData.proto\"O\n\031FungusFight" +
-      "erV2DetailInfo\0222\n\017level_data_list\030\003 \003(\0132" +
-      "\031.FungusFighterV2LevelDataB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\037FungusFighterV2DetailInfo.proto\032\021LACKK" +
+      "IIKLIJ.proto\"B\n\031FungusFighterV2DetailInf" +
+      "o\022%\n\017level_data_list\030\t \003(\0132\014.LACKKIIKLIJ" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.getDescriptor(),
         });
     internal_static_FungusFighterV2DetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class FungusFighterV2DetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterV2DetailInfo_descriptor,
         new java.lang.String[] { "LevelDataList", });
-    emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LACKKIIKLIJOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

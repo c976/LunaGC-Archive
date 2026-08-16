@@ -20,7 +20,7 @@ public final class GetCityReputationMapInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24080
+   * CmdId: 27532
    * </pre>
    *
    * Protobuf type {@code GetCityReputationMapInfoReq}
@@ -245,7 +245,7 @@ public final class GetCityReputationMapInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24080
+     * CmdId: 27532
      * </pre>
      *
      * Protobuf type {@code GetCityReputationMapInfoReq}

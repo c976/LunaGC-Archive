@@ -19,40 +19,64 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 PGOAPMAGEME = 5;</code>
-     * @return The pGOAPMAGEME.
-     */
-    int getPGOAPMAGEME();
-
-    /**
-     * <code>uint32 score = 12;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>uint32 HPBPDGCNHGB = 3;</code>
-     * @return The hPBPDGCNHGB.
-     */
-    int getHPBPDGCNHGB();
-
-    /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_new_record = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 1;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 OHOEHLCJDDL = 4;</code>
-     * @return The oHOEHLCJDDL.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 AEANBKCBAGC = 3;</code>
+     * @return The aEANBKCBAGC.
      */
-    int getOHOEHLCJDDL();
+    int getAEANBKCBAGC();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OAHJJGPNNID = 7;</code>
+     * @return The oAHJJGPNNID.
+     */
+    int getOAHJJGPNNID();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 score = 6;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GFJBNEIBMBP = 15;</code>
+     * @return The gFJBNEIBMBP.
+     */
+    int getGFJBNEIBMBP();
   }
   /**
    * Protobuf type {@code BulletHellDungeonSettleInfo}
@@ -99,34 +123,34 @@ public final class BulletHellDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              hPBPDGCNHGB_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              oHOEHLCJDDL_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              pGOAPMAGEME_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 8: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 96: {
+            case 24: {
+
+              aEANBKCBAGC_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
+
+              oAHJJGPNNID_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              gFJBNEIBMBP_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,54 +185,14 @@ public final class BulletHellDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo.class, emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo.Builder.class);
     }
 
-    public static final int PGOAPMAGEME_FIELD_NUMBER = 5;
-    private int pGOAPMAGEME_;
-    /**
-     * <code>uint32 PGOAPMAGEME = 5;</code>
-     * @return The pGOAPMAGEME.
-     */
-    @java.lang.Override
-    public int getPGOAPMAGEME() {
-      return pGOAPMAGEME_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 12;
-    private int score_;
-    /**
-     * <code>uint32 score = 12;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int HPBPDGCNHGB_FIELD_NUMBER = 3;
-    private int hPBPDGCNHGB_;
-    /**
-     * <code>uint32 HPBPDGCNHGB = 3;</code>
-     * @return The hPBPDGCNHGB.
-     */
-    @java.lang.Override
-    public int getHPBPDGCNHGB() {
-      return hPBPDGCNHGB_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 1;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -216,15 +200,79 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int OHOEHLCJDDL_FIELD_NUMBER = 4;
-    private int oHOEHLCJDDL_;
+    public static final int AEANBKCBAGC_FIELD_NUMBER = 3;
+    private int aEANBKCBAGC_;
     /**
-     * <code>uint32 OHOEHLCJDDL = 4;</code>
-     * @return The oHOEHLCJDDL.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 AEANBKCBAGC = 3;</code>
+     * @return The aEANBKCBAGC.
      */
     @java.lang.Override
-    public int getOHOEHLCJDDL() {
-      return oHOEHLCJDDL_;
+    public int getAEANBKCBAGC() {
+      return aEANBKCBAGC_;
+    }
+
+    public static final int OAHJJGPNNID_FIELD_NUMBER = 7;
+    private int oAHJJGPNNID_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OAHJJGPNNID = 7;</code>
+     * @return The oAHJJGPNNID.
+     */
+    @java.lang.Override
+    public int getOAHJJGPNNID() {
+      return oAHJJGPNNID_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 6;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 score = 6;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int GFJBNEIBMBP_FIELD_NUMBER = 15;
+    private int gFJBNEIBMBP_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GFJBNEIBMBP = 15;</code>
+     * @return The gFJBNEIBMBP.
+     */
+    @java.lang.Override
+    public int getGFJBNEIBMBP() {
+      return gFJBNEIBMBP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +289,23 @@ public final class BulletHellDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hPBPDGCNHGB_ != 0) {
-        output.writeUInt32(3, hPBPDGCNHGB_);
-      }
-      if (oHOEHLCJDDL_ != 0) {
-        output.writeUInt32(4, oHOEHLCJDDL_);
-      }
-      if (pGOAPMAGEME_ != 0) {
-        output.writeUInt32(5, pGOAPMAGEME_);
-      }
       if (isNewRecord_ != false) {
-        output.writeBool(10, isNewRecord_);
+        output.writeBool(1, isNewRecord_);
+      }
+      if (aEANBKCBAGC_ != 0) {
+        output.writeUInt32(3, aEANBKCBAGC_);
       }
       if (score_ != 0) {
-        output.writeUInt32(12, score_);
+        output.writeUInt32(6, score_);
+      }
+      if (oAHJJGPNNID_ != 0) {
+        output.writeUInt32(7, oAHJJGPNNID_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(9, levelId_);
+      }
+      if (gFJBNEIBMBP_ != 0) {
+        output.writeUInt32(15, gFJBNEIBMBP_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +316,29 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hPBPDGCNHGB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, hPBPDGCNHGB_);
-      }
-      if (oHOEHLCJDDL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oHOEHLCJDDL_);
-      }
-      if (pGOAPMAGEME_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, pGOAPMAGEME_);
-      }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isNewRecord_);
+          .computeBoolSize(1, isNewRecord_);
+      }
+      if (aEANBKCBAGC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, aEANBKCBAGC_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, score_);
+          .computeUInt32Size(6, score_);
+      }
+      if (oAHJJGPNNID_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, oAHJJGPNNID_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(9, levelId_);
+      }
+      if (gFJBNEIBMBP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, gFJBNEIBMBP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +355,18 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo other = (emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo) obj;
 
-      if (getPGOAPMAGEME()
-          != other.getPGOAPMAGEME()) return false;
-      if (getScore()
-          != other.getScore()) return false;
-      if (getHPBPDGCNHGB()
-          != other.getHPBPDGCNHGB()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getOHOEHLCJDDL()
-          != other.getOHOEHLCJDDL()) return false;
+      if (getAEANBKCBAGC()
+          != other.getAEANBKCBAGC()) return false;
+      if (getOAHJJGPNNID()
+          != other.getOAHJJGPNNID()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getGFJBNEIBMBP()
+          != other.getGFJBNEIBMBP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,19 +378,19 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PGOAPMAGEME_FIELD_NUMBER;
-      hash = (53 * hash) + getPGOAPMAGEME();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + HPBPDGCNHGB_FIELD_NUMBER;
-      hash = (53 * hash) + getHPBPDGCNHGB();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + OHOEHLCJDDL_FIELD_NUMBER;
-      hash = (53 * hash) + getOHOEHLCJDDL();
+      hash = (37 * hash) + AEANBKCBAGC_FIELD_NUMBER;
+      hash = (53 * hash) + getAEANBKCBAGC();
+      hash = (37 * hash) + OAHJJGPNNID_FIELD_NUMBER;
+      hash = (53 * hash) + getOAHJJGPNNID();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + GFJBNEIBMBP_FIELD_NUMBER;
+      hash = (53 * hash) + getGFJBNEIBMBP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,17 +524,17 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pGOAPMAGEME_ = 0;
+        isNewRecord_ = false;
 
-        score_ = 0;
+        aEANBKCBAGC_ = 0;
 
-        hPBPDGCNHGB_ = 0;
+        oAHJJGPNNID_ = 0;
 
         levelId_ = 0;
 
-        isNewRecord_ = false;
+        score_ = 0;
 
-        oHOEHLCJDDL_ = 0;
+        gFJBNEIBMBP_ = 0;
 
         return this;
       }
@@ -514,12 +562,12 @@ public final class BulletHellDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo result = new emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo(this);
-        result.pGOAPMAGEME_ = pGOAPMAGEME_;
-        result.score_ = score_;
-        result.hPBPDGCNHGB_ = hPBPDGCNHGB_;
-        result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
-        result.oHOEHLCJDDL_ = oHOEHLCJDDL_;
+        result.aEANBKCBAGC_ = aEANBKCBAGC_;
+        result.oAHJJGPNNID_ = oAHJJGPNNID_;
+        result.levelId_ = levelId_;
+        result.score_ = score_;
+        result.gFJBNEIBMBP_ = gFJBNEIBMBP_;
         onBuilt();
         return result;
       }
@@ -568,23 +616,23 @@ public final class BulletHellDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BulletHellDungeonSettleInfoOuterClass.BulletHellDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getPGOAPMAGEME() != 0) {
-          setPGOAPMAGEME(other.getPGOAPMAGEME());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getAEANBKCBAGC() != 0) {
+          setAEANBKCBAGC(other.getAEANBKCBAGC());
         }
-        if (other.getHPBPDGCNHGB() != 0) {
-          setHPBPDGCNHGB(other.getHPBPDGCNHGB());
+        if (other.getOAHJJGPNNID() != 0) {
+          setOAHJJGPNNID(other.getOAHJJGPNNID());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
-        if (other.getOHOEHLCJDDL() != 0) {
-          setOHOEHLCJDDL(other.getOHOEHLCJDDL());
+        if (other.getGFJBNEIBMBP() != 0) {
+          setGFJBNEIBMBP(other.getGFJBNEIBMBP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,133 +663,13 @@ public final class BulletHellDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int pGOAPMAGEME_ ;
-      /**
-       * <code>uint32 PGOAPMAGEME = 5;</code>
-       * @return The pGOAPMAGEME.
-       */
-      @java.lang.Override
-      public int getPGOAPMAGEME() {
-        return pGOAPMAGEME_;
-      }
-      /**
-       * <code>uint32 PGOAPMAGEME = 5;</code>
-       * @param value The pGOAPMAGEME to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPGOAPMAGEME(int value) {
-        
-        pGOAPMAGEME_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PGOAPMAGEME = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPGOAPMAGEME() {
-        
-        pGOAPMAGEME_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 12;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 12;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hPBPDGCNHGB_ ;
-      /**
-       * <code>uint32 HPBPDGCNHGB = 3;</code>
-       * @return The hPBPDGCNHGB.
-       */
-      @java.lang.Override
-      public int getHPBPDGCNHGB() {
-        return hPBPDGCNHGB_;
-      }
-      /**
-       * <code>uint32 HPBPDGCNHGB = 3;</code>
-       * @param value The hPBPDGCNHGB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHPBPDGCNHGB(int value) {
-        
-        hPBPDGCNHGB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HPBPDGCNHGB = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHPBPDGCNHGB() {
-        
-        hPBPDGCNHGB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -749,7 +677,11 @@ public final class BulletHellDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -760,7 +692,11 @@ public final class BulletHellDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -770,33 +706,217 @@ public final class BulletHellDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int oHOEHLCJDDL_ ;
+      private int aEANBKCBAGC_ ;
       /**
-       * <code>uint32 OHOEHLCJDDL = 4;</code>
-       * @return The oHOEHLCJDDL.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 AEANBKCBAGC = 3;</code>
+       * @return The aEANBKCBAGC.
        */
       @java.lang.Override
-      public int getOHOEHLCJDDL() {
-        return oHOEHLCJDDL_;
+      public int getAEANBKCBAGC() {
+        return aEANBKCBAGC_;
       }
       /**
-       * <code>uint32 OHOEHLCJDDL = 4;</code>
-       * @param value The oHOEHLCJDDL to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 AEANBKCBAGC = 3;</code>
+       * @param value The aEANBKCBAGC to set.
        * @return This builder for chaining.
        */
-      public Builder setOHOEHLCJDDL(int value) {
+      public Builder setAEANBKCBAGC(int value) {
         
-        oHOEHLCJDDL_ = value;
+        aEANBKCBAGC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OHOEHLCJDDL = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 AEANBKCBAGC = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOHOEHLCJDDL() {
+      public Builder clearAEANBKCBAGC() {
         
-        oHOEHLCJDDL_ = 0;
+        aEANBKCBAGC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oAHJJGPNNID_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OAHJJGPNNID = 7;</code>
+       * @return The oAHJJGPNNID.
+       */
+      @java.lang.Override
+      public int getOAHJJGPNNID() {
+        return oAHJJGPNNID_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OAHJJGPNNID = 7;</code>
+       * @param value The oAHJJGPNNID to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOAHJJGPNNID(int value) {
+        
+        oAHJJGPNNID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OAHJJGPNNID = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOAHJJGPNNID() {
+        
+        oAHJJGPNNID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 6;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 6;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gFJBNEIBMBP_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GFJBNEIBMBP = 15;</code>
+       * @return The gFJBNEIBMBP.
+       */
+      @java.lang.Override
+      public int getGFJBNEIBMBP() {
+        return gFJBNEIBMBP_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GFJBNEIBMBP = 15;</code>
+       * @param value The gFJBNEIBMBP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGFJBNEIBMBP(int value) {
+        
+        gFJBNEIBMBP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GFJBNEIBMBP = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGFJBNEIBMBP() {
+        
+        gFJBNEIBMBP_ = 0;
         onChanged();
         return this;
       }
@@ -868,10 +988,10 @@ public final class BulletHellDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!BulletHellDungeonSettleInfo.proto\"\224\001\n\033" +
-      "BulletHellDungeonSettleInfo\022\023\n\013PGOAPMAGE" +
-      "ME\030\005 \001(\r\022\r\n\005score\030\014 \001(\r\022\023\n\013HPBPDGCNHGB\030\003" +
-      " \001(\r\022\020\n\010level_id\030\017 \001(\r\022\025\n\ris_new_record\030" +
-      "\n \001(\010\022\023\n\013OHOEHLCJDDL\030\004 \001(\rB\033\n\031emu.grassc" +
+      "BulletHellDungeonSettleInfo\022\025\n\ris_new_re" +
+      "cord\030\001 \001(\010\022\023\n\013AEANBKCBAGC\030\003 \001(\r\022\023\n\013OAHJJ" +
+      "GPNNID\030\007 \001(\r\022\020\n\010level_id\030\t \001(\r\022\r\n\005score\030" +
+      "\006 \001(\r\022\023\n\013GFJBNEIBMBP\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +1003,7 @@ public final class BulletHellDungeonSettleInfoOuterClass {
     internal_static_BulletHellDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BulletHellDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "PGOAPMAGEME", "Score", "HPBPDGCNHGB", "LevelId", "IsNewRecord", "OHOEHLCJDDL", });
+        new java.lang.String[] { "IsNewRecord", "AEANBKCBAGC", "OAHJJGPNNID", "LevelId", "Score", "GFJBNEIBMBP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

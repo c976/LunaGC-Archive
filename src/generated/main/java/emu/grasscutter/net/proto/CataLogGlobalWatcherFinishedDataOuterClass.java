@@ -19,33 +19,29 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 catalog_type = 6;</code>
-     * @return The catalogType.
-     */
-    int getCatalogType();
-
-    /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @return A list containing the finishedGlobalWatcherList.
      */
     java.util.List<java.lang.Integer> getFinishedGlobalWatcherListList();
     /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @return The count of finishedGlobalWatcherList.
      */
     int getFinishedGlobalWatcherListCount();
     /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @param index The index of the element to return.
      * @return The finishedGlobalWatcherList at the given index.
      */
     int getFinishedGlobalWatcherList(int index);
+
+    /**
+     * <code>uint32 catalog_type = 15;</code>
+     * @return The catalogType.
+     */
+    int getCatalogType();
   }
   /**
-   * <pre>
-   * Obf: NIPLDABFDEK
-   * </pre>
-   *
    * Protobuf type {@code CataLogGlobalWatcherFinishedData}
    */
   public static final class CataLogGlobalWatcherFinishedData extends
@@ -92,12 +88,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              catalogType_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedGlobalWatcherList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -105,7 +96,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
               finishedGlobalWatcherList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -116,6 +107,11 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
                 finishedGlobalWatcherList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 120: {
+
+              catalogType_ = input.readUInt32();
               break;
             }
             default: {
@@ -153,21 +149,10 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
               emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.class, emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.Builder.class);
     }
 
-    public static final int CATALOG_TYPE_FIELD_NUMBER = 6;
-    private int catalogType_;
-    /**
-     * <code>uint32 catalog_type = 6;</code>
-     * @return The catalogType.
-     */
-    @java.lang.Override
-    public int getCatalogType() {
-      return catalogType_;
-    }
-
-    public static final int FINISHED_GLOBAL_WATCHER_LIST_FIELD_NUMBER = 8;
+    public static final int FINISHED_GLOBAL_WATCHER_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList finishedGlobalWatcherList_;
     /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @return A list containing the finishedGlobalWatcherList.
      */
     @java.lang.Override
@@ -176,14 +161,14 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       return finishedGlobalWatcherList_;
     }
     /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @return The count of finishedGlobalWatcherList.
      */
     public int getFinishedGlobalWatcherListCount() {
       return finishedGlobalWatcherList_.size();
     }
     /**
-     * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+     * <code>repeated uint32 finished_global_watcher_list = 12;</code>
      * @param index The index of the element to return.
      * @return The finishedGlobalWatcherList at the given index.
      */
@@ -191,6 +176,17 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       return finishedGlobalWatcherList_.getInt(index);
     }
     private int finishedGlobalWatcherListMemoizedSerializedSize = -1;
+
+    public static final int CATALOG_TYPE_FIELD_NUMBER = 15;
+    private int catalogType_;
+    /**
+     * <code>uint32 catalog_type = 15;</code>
+     * @return The catalogType.
+     */
+    @java.lang.Override
+    public int getCatalogType() {
+      return catalogType_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -207,15 +203,15 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (catalogType_ != 0) {
-        output.writeUInt32(6, catalogType_);
-      }
       if (getFinishedGlobalWatcherListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(finishedGlobalWatcherListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedGlobalWatcherList_.size(); i++) {
         output.writeUInt32NoTag(finishedGlobalWatcherList_.getInt(i));
+      }
+      if (catalogType_ != 0) {
+        output.writeUInt32(15, catalogType_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,10 +222,6 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (catalogType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, catalogType_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < finishedGlobalWatcherList_.size(); i++) {
@@ -243,6 +235,10 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         finishedGlobalWatcherListMemoizedSerializedSize = dataSize;
+      }
+      if (catalogType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, catalogType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -259,10 +255,10 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       }
       emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData other = (emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData) obj;
 
-      if (getCatalogType()
-          != other.getCatalogType()) return false;
       if (!getFinishedGlobalWatcherListList()
           .equals(other.getFinishedGlobalWatcherListList())) return false;
+      if (getCatalogType()
+          != other.getCatalogType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,12 +270,12 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CATALOG_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getCatalogType();
       if (getFinishedGlobalWatcherListCount() > 0) {
         hash = (37 * hash) + FINISHED_GLOBAL_WATCHER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedGlobalWatcherListList().hashCode();
       }
+      hash = (37 * hash) + CATALOG_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getCatalogType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +372,6 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NIPLDABFDEK
-     * </pre>
-     *
      * Protobuf type {@code CataLogGlobalWatcherFinishedData}
      */
     public static final class Builder extends
@@ -417,10 +409,10 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        catalogType_ = 0;
-
         finishedGlobalWatcherList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        catalogType_ = 0;
+
         return this;
       }
 
@@ -448,12 +440,12 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       public emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData buildPartial() {
         emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData result = new emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData(this);
         int from_bitField0_ = bitField0_;
-        result.catalogType_ = catalogType_;
         if (((bitField0_ & 0x00000001) != 0)) {
           finishedGlobalWatcherList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.finishedGlobalWatcherList_ = finishedGlobalWatcherList_;
+        result.catalogType_ = catalogType_;
         onBuilt();
         return result;
       }
@@ -502,9 +494,6 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData other) {
         if (other == emu.grasscutter.net.proto.CataLogGlobalWatcherFinishedDataOuterClass.CataLogGlobalWatcherFinishedData.getDefaultInstance()) return this;
-        if (other.getCatalogType() != 0) {
-          setCatalogType(other.getCatalogType());
-        }
         if (!other.finishedGlobalWatcherList_.isEmpty()) {
           if (finishedGlobalWatcherList_.isEmpty()) {
             finishedGlobalWatcherList_ = other.finishedGlobalWatcherList_;
@@ -514,6 +503,9 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
             finishedGlobalWatcherList_.addAll(other.finishedGlobalWatcherList_);
           }
           onChanged();
+        }
+        if (other.getCatalogType() != 0) {
+          setCatalogType(other.getCatalogType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,37 +537,6 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
       }
       private int bitField0_;
 
-      private int catalogType_ ;
-      /**
-       * <code>uint32 catalog_type = 6;</code>
-       * @return The catalogType.
-       */
-      @java.lang.Override
-      public int getCatalogType() {
-        return catalogType_;
-      }
-      /**
-       * <code>uint32 catalog_type = 6;</code>
-       * @param value The catalogType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCatalogType(int value) {
-        
-        catalogType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 catalog_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCatalogType() {
-        
-        catalogType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList finishedGlobalWatcherList_ = emptyIntList();
       private void ensureFinishedGlobalWatcherListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -584,7 +545,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @return A list containing the finishedGlobalWatcherList.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +554,14 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
                  java.util.Collections.unmodifiableList(finishedGlobalWatcherList_) : finishedGlobalWatcherList_;
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @return The count of finishedGlobalWatcherList.
        */
       public int getFinishedGlobalWatcherListCount() {
         return finishedGlobalWatcherList_.size();
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @param index The index of the element to return.
        * @return The finishedGlobalWatcherList at the given index.
        */
@@ -608,7 +569,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
         return finishedGlobalWatcherList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The finishedGlobalWatcherList to set.
        * @return This builder for chaining.
@@ -621,7 +582,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @param value The finishedGlobalWatcherList to add.
        * @return This builder for chaining.
        */
@@ -632,7 +593,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @param values The finishedGlobalWatcherList to add.
        * @return This builder for chaining.
        */
@@ -645,12 +606,43 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_global_watcher_list = 8;</code>
+       * <code>repeated uint32 finished_global_watcher_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedGlobalWatcherList() {
         finishedGlobalWatcherList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int catalogType_ ;
+      /**
+       * <code>uint32 catalog_type = 15;</code>
+       * @return The catalogType.
+       */
+      @java.lang.Override
+      public int getCatalogType() {
+        return catalogType_;
+      }
+      /**
+       * <code>uint32 catalog_type = 15;</code>
+       * @param value The catalogType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCatalogType(int value) {
+        
+        catalogType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 catalog_type = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCatalogType() {
+        
+        catalogType_ = 0;
         onChanged();
         return this;
       }
@@ -722,9 +714,9 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&CataLogGlobalWatcherFinishedData.proto" +
-      "\"^\n CataLogGlobalWatcherFinishedData\022\024\n\014" +
-      "catalog_type\030\006 \001(\r\022$\n\034finished_global_wa" +
-      "tcher_list\030\010 \003(\rB\033\n\031emu.grasscutter.net." +
+      "\"^\n CataLogGlobalWatcherFinishedData\022$\n\034" +
+      "finished_global_watcher_list\030\014 \003(\r\022\024\n\014ca" +
+      "talog_type\030\017 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -736,7 +728,7 @@ public final class CataLogGlobalWatcherFinishedDataOuterClass {
     internal_static_CataLogGlobalWatcherFinishedData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CataLogGlobalWatcherFinishedData_descriptor,
-        new java.lang.String[] { "CatalogType", "FinishedGlobalWatcherList", });
+        new java.lang.String[] { "FinishedGlobalWatcherList", "CatalogType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

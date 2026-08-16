@@ -19,17 +19,17 @@ public final class TakeHuntingOfferRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      * @return Whether the huntingPair field is set.
      */
     boolean hasHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      * @return The huntingPair.
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
 
@@ -40,15 +40,14 @@ public final class TakeHuntingOfferRspOuterClass {
     int getCityId();
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 8846
-   * Obf: KODBBECLOLL
+   * CmdId: 2178
    * </pre>
    *
    * Protobuf type {@code TakeHuntingOfferRsp}
@@ -95,17 +94,7 @@ public final class TakeHuntingOfferRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 74: {
+            case 10: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -116,6 +105,16 @@ public final class TakeHuntingOfferRspOuterClass {
                 huntingPair_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 16: {
+
+              cityId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -150,10 +149,10 @@ public final class TakeHuntingOfferRspOuterClass {
               emu.grasscutter.net.proto.TakeHuntingOfferRspOuterClass.TakeHuntingOfferRsp.class, emu.grasscutter.net.proto.TakeHuntingOfferRspOuterClass.TakeHuntingOfferRsp.Builder.class);
     }
 
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 9;
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      * @return Whether the huntingPair field is set.
      */
     @java.lang.Override
@@ -161,7 +160,7 @@ public final class TakeHuntingOfferRspOuterClass {
       return huntingPair_ != null;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      * @return The huntingPair.
      */
     @java.lang.Override
@@ -169,7 +168,7 @@ public final class TakeHuntingOfferRspOuterClass {
       return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 9;</code>
+     * <code>.HuntingPair hunting_pair = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
@@ -187,10 +186,10 @@ public final class TakeHuntingOfferRspOuterClass {
       return cityId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -212,14 +211,14 @@ public final class TakeHuntingOfferRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (huntingPair_ != null) {
+        output.writeMessage(1, getHuntingPair());
+      }
       if (cityId_ != 0) {
         output.writeUInt32(2, cityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
-      if (huntingPair_ != null) {
-        output.writeMessage(9, getHuntingPair());
+        output.writeInt32(4, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +229,17 @@ public final class TakeHuntingOfferRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (huntingPair_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHuntingPair());
+      }
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, cityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
-      if (huntingPair_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getHuntingPair());
+          .computeInt32Size(4, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,8 +381,7 @@ public final class TakeHuntingOfferRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8846
-     * Obf: KODBBECLOLL
+     * CmdId: 2178
      * </pre>
      *
      * Protobuf type {@code TakeHuntingOfferRsp}
@@ -556,14 +554,14 @@ public final class TakeHuntingOfferRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -574,7 +572,7 @@ public final class TakeHuntingOfferRspOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -590,7 +588,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -604,7 +602,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -622,7 +620,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -636,7 +634,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -644,7 +642,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -655,7 +653,7 @@ public final class TakeHuntingOfferRspOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 9;</code>
+       * <code>.HuntingPair hunting_pair = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -704,7 +702,7 @@ public final class TakeHuntingOfferRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -712,7 +710,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -723,7 +721,7 @@ public final class TakeHuntingOfferRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -801,8 +799,8 @@ public final class TakeHuntingOfferRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031TakeHuntingOfferRsp.proto\032\021HuntingPair" +
       ".proto\"[\n\023TakeHuntingOfferRsp\022\"\n\014hunting" +
-      "_pair\030\t \001(\0132\014.HuntingPair\022\017\n\007city_id\030\002 \001" +
-      "(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter.n" +
+      "_pair\030\001 \001(\0132\014.HuntingPair\022\017\n\007city_id\030\002 \001" +
+      "(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

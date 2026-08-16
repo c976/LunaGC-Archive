@@ -19,28 +19,24 @@ public final class GCGWeekChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JBCNJCHOJPF = 1;</code>
-     * @return The jBCNJCHOJPF.
-     */
-    int getJBCNJCHOJPF();
-
-    /**
-     * <code>bool is_finished = 10;</code>
-     * @return The isFinished.
-     */
-    boolean getIsFinished();
-
-    /**
-     * <code>uint32 npc_id = 4;</code>
+     * <code>uint32 npc_id = 3;</code>
      * @return The npcId.
      */
     int getNpcId();
+
+    /**
+     * <code>uint32 unlock_time = 15;</code>
+     * @return The unlockTime.
+     */
+    int getUnlockTime();
+
+    /**
+     * <code>bool is_finished = 1;</code>
+     * @return The isFinished.
+     */
+    boolean getIsFinished();
   }
   /**
-   * <pre>
-   * Obf: JBHLMPKGLAM
-   * </pre>
-   *
    * Protobuf type {@code GCGWeekChallengeInfo}
    */
   public static final class GCGWeekChallengeInfo extends
@@ -87,17 +83,17 @@ public final class GCGWeekChallengeInfoOuterClass {
               break;
             case 8: {
 
-              jBCNJCHOJPF_ = input.readUInt32();
+              isFinished_ = input.readBool();
               break;
             }
-            case 32: {
+            case 24: {
 
               npcId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
 
-              isFinished_ = input.readBool();
+              unlockTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,37 +128,37 @@ public final class GCGWeekChallengeInfoOuterClass {
               emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.class, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder.class);
     }
 
-    public static final int JBCNJCHOJPF_FIELD_NUMBER = 1;
-    private int jBCNJCHOJPF_;
-    /**
-     * <code>uint32 JBCNJCHOJPF = 1;</code>
-     * @return The jBCNJCHOJPF.
-     */
-    @java.lang.Override
-    public int getJBCNJCHOJPF() {
-      return jBCNJCHOJPF_;
-    }
-
-    public static final int IS_FINISHED_FIELD_NUMBER = 10;
-    private boolean isFinished_;
-    /**
-     * <code>bool is_finished = 10;</code>
-     * @return The isFinished.
-     */
-    @java.lang.Override
-    public boolean getIsFinished() {
-      return isFinished_;
-    }
-
-    public static final int NPC_ID_FIELD_NUMBER = 4;
+    public static final int NPC_ID_FIELD_NUMBER = 3;
     private int npcId_;
     /**
-     * <code>uint32 npc_id = 4;</code>
+     * <code>uint32 npc_id = 3;</code>
      * @return The npcId.
      */
     @java.lang.Override
     public int getNpcId() {
       return npcId_;
+    }
+
+    public static final int UNLOCK_TIME_FIELD_NUMBER = 15;
+    private int unlockTime_;
+    /**
+     * <code>uint32 unlock_time = 15;</code>
+     * @return The unlockTime.
+     */
+    @java.lang.Override
+    public int getUnlockTime() {
+      return unlockTime_;
+    }
+
+    public static final int IS_FINISHED_FIELD_NUMBER = 1;
+    private boolean isFinished_;
+    /**
+     * <code>bool is_finished = 1;</code>
+     * @return The isFinished.
+     */
+    @java.lang.Override
+    public boolean getIsFinished() {
+      return isFinished_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class GCGWeekChallengeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (jBCNJCHOJPF_ != 0) {
-        output.writeUInt32(1, jBCNJCHOJPF_);
+      if (isFinished_ != false) {
+        output.writeBool(1, isFinished_);
       }
       if (npcId_ != 0) {
-        output.writeUInt32(4, npcId_);
+        output.writeUInt32(3, npcId_);
       }
-      if (isFinished_ != false) {
-        output.writeBool(10, isFinished_);
+      if (unlockTime_ != 0) {
+        output.writeUInt32(15, unlockTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class GCGWeekChallengeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (jBCNJCHOJPF_ != 0) {
+      if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, jBCNJCHOJPF_);
+          .computeBoolSize(1, isFinished_);
       }
       if (npcId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, npcId_);
+          .computeUInt32Size(3, npcId_);
       }
-      if (isFinished_ != false) {
+      if (unlockTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinished_);
+          .computeUInt32Size(15, unlockTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class GCGWeekChallengeInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo other = (emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo) obj;
 
-      if (getJBCNJCHOJPF()
-          != other.getJBCNJCHOJPF()) return false;
-      if (getIsFinished()
-          != other.getIsFinished()) return false;
       if (getNpcId()
           != other.getNpcId()) return false;
+      if (getUnlockTime()
+          != other.getUnlockTime()) return false;
+      if (getIsFinished()
+          != other.getIsFinished()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +237,13 @@ public final class GCGWeekChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JBCNJCHOJPF_FIELD_NUMBER;
-      hash = (53 * hash) + getJBCNJCHOJPF();
+      hash = (37 * hash) + NPC_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getNpcId();
+      hash = (37 * hash) + UNLOCK_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getUnlockTime();
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
-      hash = (37 * hash) + NPC_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getNpcId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +340,6 @@ public final class GCGWeekChallengeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JBHLMPKGLAM
-     * </pre>
-     *
      * Protobuf type {@code GCGWeekChallengeInfo}
      */
     public static final class Builder extends
@@ -385,11 +377,11 @@ public final class GCGWeekChallengeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jBCNJCHOJPF_ = 0;
+        npcId_ = 0;
+
+        unlockTime_ = 0;
 
         isFinished_ = false;
-
-        npcId_ = 0;
 
         return this;
       }
@@ -417,9 +409,9 @@ public final class GCGWeekChallengeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo buildPartial() {
         emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo result = new emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo(this);
-        result.jBCNJCHOJPF_ = jBCNJCHOJPF_;
-        result.isFinished_ = isFinished_;
         result.npcId_ = npcId_;
+        result.unlockTime_ = unlockTime_;
+        result.isFinished_ = isFinished_;
         onBuilt();
         return result;
       }
@@ -468,14 +460,14 @@ public final class GCGWeekChallengeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo other) {
         if (other == emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.getDefaultInstance()) return this;
-        if (other.getJBCNJCHOJPF() != 0) {
-          setJBCNJCHOJPF(other.getJBCNJCHOJPF());
+        if (other.getNpcId() != 0) {
+          setNpcId(other.getNpcId());
+        }
+        if (other.getUnlockTime() != 0) {
+          setUnlockTime(other.getUnlockTime());
         }
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
-        }
-        if (other.getNpcId() != 0) {
-          setNpcId(other.getNpcId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,71 +498,9 @@ public final class GCGWeekChallengeInfoOuterClass {
         return this;
       }
 
-      private int jBCNJCHOJPF_ ;
-      /**
-       * <code>uint32 JBCNJCHOJPF = 1;</code>
-       * @return The jBCNJCHOJPF.
-       */
-      @java.lang.Override
-      public int getJBCNJCHOJPF() {
-        return jBCNJCHOJPF_;
-      }
-      /**
-       * <code>uint32 JBCNJCHOJPF = 1;</code>
-       * @param value The jBCNJCHOJPF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJBCNJCHOJPF(int value) {
-        
-        jBCNJCHOJPF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JBCNJCHOJPF = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJBCNJCHOJPF() {
-        
-        jBCNJCHOJPF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinished_ ;
-      /**
-       * <code>bool is_finished = 10;</code>
-       * @return The isFinished.
-       */
-      @java.lang.Override
-      public boolean getIsFinished() {
-        return isFinished_;
-      }
-      /**
-       * <code>bool is_finished = 10;</code>
-       * @param value The isFinished to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinished(boolean value) {
-        
-        isFinished_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finished = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinished() {
-        
-        isFinished_ = false;
-        onChanged();
-        return this;
-      }
-
       private int npcId_ ;
       /**
-       * <code>uint32 npc_id = 4;</code>
+       * <code>uint32 npc_id = 3;</code>
        * @return The npcId.
        */
       @java.lang.Override
@@ -578,7 +508,7 @@ public final class GCGWeekChallengeInfoOuterClass {
         return npcId_;
       }
       /**
-       * <code>uint32 npc_id = 4;</code>
+       * <code>uint32 npc_id = 3;</code>
        * @param value The npcId to set.
        * @return This builder for chaining.
        */
@@ -589,12 +519,74 @@ public final class GCGWeekChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 npc_id = 4;</code>
+       * <code>uint32 npc_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearNpcId() {
         
         npcId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unlockTime_ ;
+      /**
+       * <code>uint32 unlock_time = 15;</code>
+       * @return The unlockTime.
+       */
+      @java.lang.Override
+      public int getUnlockTime() {
+        return unlockTime_;
+      }
+      /**
+       * <code>uint32 unlock_time = 15;</code>
+       * @param value The unlockTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnlockTime(int value) {
+        
+        unlockTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 unlock_time = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnlockTime() {
+        
+        unlockTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinished_ ;
+      /**
+       * <code>bool is_finished = 1;</code>
+       * @return The isFinished.
+       */
+      @java.lang.Override
+      public boolean getIsFinished() {
+        return isFinished_;
+      }
+      /**
+       * <code>bool is_finished = 1;</code>
+       * @param value The isFinished to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinished(boolean value) {
+        
+        isFinished_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finished = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinished() {
+        
+        isFinished_ = false;
         onChanged();
         return this;
       }
@@ -666,8 +658,8 @@ public final class GCGWeekChallengeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGWeekChallengeInfo.proto\"P\n\024GCGWeekC" +
-      "hallengeInfo\022\023\n\013JBCNJCHOJPF\030\001 \001(\r\022\023\n\013is_" +
-      "finished\030\n \001(\010\022\016\n\006npc_id\030\004 \001(\rB\033\n\031emu.gr" +
+      "hallengeInfo\022\016\n\006npc_id\030\003 \001(\r\022\023\n\013unlock_t" +
+      "ime\030\017 \001(\r\022\023\n\013is_finished\030\001 \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +671,7 @@ public final class GCGWeekChallengeInfoOuterClass {
     internal_static_GCGWeekChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGWeekChallengeInfo_descriptor,
-        new java.lang.String[] { "JBCNJCHOJPF", "IsFinished", "NpcId", });
+        new java.lang.String[] { "NpcId", "UnlockTime", "IsFinished", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

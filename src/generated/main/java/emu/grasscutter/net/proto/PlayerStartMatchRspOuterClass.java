@@ -19,62 +19,131 @@ public final class PlayerStartMatchRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MatchType match_type = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> 
+        getHMIGEIDBMBIList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC getHMIGEIDBMBI(int index);
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    int getHMIGEIDBMBICount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder> 
+        getHMIGEIDBMBIOrBuilderList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder getHMIGEIDBMBIOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NGPLKAADCEI = 15;</code>
+     * @return The nGPLKAADCEI.
+     */
+    int getNGPLKAADCEI();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 EOAGNHFNOPK = 10;</code>
+     * @return The eOAGNHFNOPK.
+     */
+    int getEOAGNHFNOPK();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.MatchType match_type = 4;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     int getMatchTypeValue();
     /**
-     * <code>.MatchType match_type = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.MatchType match_type = 4;</code>
      * @return The matchType.
      */
     emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
 
     /**
-     * <code>uint32 match_id = 14;</code>
-     * @return The matchId.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
      */
-    int getMatchId();
+    int getDungeonId();
 
     /**
-     * <code>uint32 mechanicus_difficult_level = 15;</code>
-     * @return The mechanicusDifficultLevel.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 HOKPCGLJMHJ = 9;</code>
+     * @return The hOKPCGLJMHJ.
      */
-    int getMechanicusDifficultLevel();
+    int getHOKPCGLJMHJ();
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 punish_end_time = 10;</code>
-     * @return The punishEndTime.
-     */
-    int getPunishEndTime();
-
-    /**
-     * <code>uint32 mp_play_id = 4;</code>
-     * @return The mpPlayId.
-     */
-    int getMpPlayId();
-
-    /**
-     * <code>uint32 param = 13;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 param = 12;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <code>uint32 dungeon_id = 5;</code>
-     * @return The dungeonId.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
      */
-    int getDungeonId();
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21172
-   * Obf: AAJPPGMIGOE
+   * CmdId: 27085
    * </pre>
    *
    * Protobuf type {@code PlayerStartMatchRsp}
@@ -89,6 +158,7 @@ public final class PlayerStartMatchRspOuterClass {
       super(builder);
     }
     private PlayerStartMatchRsp() {
+      hMIGEIDBMBI_ = java.util.Collections.emptyList();
       matchType_ = 0;
     }
 
@@ -112,6 +182,7 @@ public final class PlayerStartMatchRspOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -122,45 +193,49 @@ public final class PlayerStartMatchRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
-
-              punishEndTime_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 32: {
               int rawValue = input.readEnum();
 
               matchType_ = rawValue;
               break;
             }
-            case 104: {
+            case 64: {
+
+              dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              hOKPCGLJMHJ_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              eOAGNHFNOPK_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               param_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              matchId_ = input.readUInt32();
-              break;
-            }
             case 120: {
 
-              mechanicusDifficultLevel_ = input.readUInt32();
+              nGPLKAADCEI_ = input.readUInt32();
+              break;
+            }
+            case 12514: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                hMIGEIDBMBI_ = new java.util.ArrayList<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              hMIGEIDBMBI_.add(
+                  input.readMessage(emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -178,6 +253,9 @@ public final class PlayerStartMatchRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          hMIGEIDBMBI_ = java.util.Collections.unmodifiableList(hMIGEIDBMBI_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -195,17 +273,115 @@ public final class PlayerStartMatchRspOuterClass {
               emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.class, emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.Builder.class);
     }
 
-    public static final int MATCH_TYPE_FIELD_NUMBER = 12;
+    public static final int HMIGEIDBMBI_FIELD_NUMBER = 1564;
+    private java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> hMIGEIDBMBI_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> getHMIGEIDBMBIList() {
+      return hMIGEIDBMBI_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder> 
+        getHMIGEIDBMBIOrBuilderList() {
+      return hMIGEIDBMBI_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    @java.lang.Override
+    public int getHMIGEIDBMBICount() {
+      return hMIGEIDBMBI_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC getHMIGEIDBMBI(int index) {
+      return hMIGEIDBMBI_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder getHMIGEIDBMBIOrBuilder(
+        int index) {
+      return hMIGEIDBMBI_.get(index);
+    }
+
+    public static final int NGPLKAADCEI_FIELD_NUMBER = 15;
+    private int nGPLKAADCEI_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NGPLKAADCEI = 15;</code>
+     * @return The nGPLKAADCEI.
+     */
+    @java.lang.Override
+    public int getNGPLKAADCEI() {
+      return nGPLKAADCEI_;
+    }
+
+    public static final int EOAGNHFNOPK_FIELD_NUMBER = 10;
+    private int eOAGNHFNOPK_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 EOAGNHFNOPK = 10;</code>
+     * @return The eOAGNHFNOPK.
+     */
+    @java.lang.Override
+    public int getEOAGNHFNOPK() {
+      return eOAGNHFNOPK_;
+    }
+
+    public static final int MATCH_TYPE_FIELD_NUMBER = 4;
     private int matchType_;
     /**
-     * <code>.MatchType match_type = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.MatchType match_type = 4;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     @java.lang.Override public int getMatchTypeValue() {
       return matchType_;
     }
     /**
-     * <code>.MatchType match_type = 12;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.MatchType match_type = 4;</code>
      * @return The matchType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
@@ -214,65 +390,44 @@ public final class PlayerStartMatchRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
     }
 
-    public static final int MATCH_ID_FIELD_NUMBER = 14;
-    private int matchId_;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
+    private int dungeonId_;
     /**
-     * <code>uint32 match_id = 14;</code>
-     * @return The matchId.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
      */
     @java.lang.Override
-    public int getMatchId() {
-      return matchId_;
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
-    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 15;
-    private int mechanicusDifficultLevel_;
+    public static final int HOKPCGLJMHJ_FIELD_NUMBER = 9;
+    private int hOKPCGLJMHJ_;
     /**
-     * <code>uint32 mechanicus_difficult_level = 15;</code>
-     * @return The mechanicusDifficultLevel.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 HOKPCGLJMHJ = 9;</code>
+     * @return The hOKPCGLJMHJ.
      */
     @java.lang.Override
-    public int getMechanicusDifficultLevel() {
-      return mechanicusDifficultLevel_;
+    public int getHOKPCGLJMHJ() {
+      return hOKPCGLJMHJ_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int PUNISH_END_TIME_FIELD_NUMBER = 10;
-    private int punishEndTime_;
-    /**
-     * <code>uint32 punish_end_time = 10;</code>
-     * @return The punishEndTime.
-     */
-    @java.lang.Override
-    public int getPunishEndTime() {
-      return punishEndTime_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 4;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 4;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
-    }
-
-    public static final int PARAM_FIELD_NUMBER = 13;
+    public static final int PARAM_FIELD_NUMBER = 12;
     private int param_;
     /**
-     * <code>uint32 param = 13;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 param = 12;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -280,15 +435,19 @@ public final class PlayerStartMatchRspOuterClass {
       return param_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
-    private int dungeonId_;
+    public static final int RETCODE_FIELD_NUMBER = 2;
+    private int retcode_;
     /**
-     * <code>uint32 dungeon_id = 5;</code>
-     * @return The dungeonId.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -305,29 +464,29 @@ public final class PlayerStartMatchRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(4, mpPlayId_);
-      }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(5, dungeonId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
-      if (punishEndTime_ != 0) {
-        output.writeUInt32(10, punishEndTime_);
+        output.writeInt32(2, retcode_);
       }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(12, matchType_);
+        output.writeEnum(4, matchType_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(8, dungeonId_);
+      }
+      if (hOKPCGLJMHJ_ != 0) {
+        output.writeUInt32(9, hOKPCGLJMHJ_);
+      }
+      if (eOAGNHFNOPK_ != 0) {
+        output.writeUInt32(10, eOAGNHFNOPK_);
       }
       if (param_ != 0) {
-        output.writeUInt32(13, param_);
+        output.writeUInt32(12, param_);
       }
-      if (matchId_ != 0) {
-        output.writeUInt32(14, matchId_);
+      if (nGPLKAADCEI_ != 0) {
+        output.writeUInt32(15, nGPLKAADCEI_);
       }
-      if (mechanicusDifficultLevel_ != 0) {
-        output.writeUInt32(15, mechanicusDifficultLevel_);
+      for (int i = 0; i < hMIGEIDBMBI_.size(); i++) {
+        output.writeMessage(1564, hMIGEIDBMBI_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -338,37 +497,37 @@ public final class PlayerStartMatchRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mpPlayId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, mpPlayId_);
-      }
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
-      if (punishEndTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, punishEndTime_);
+          .computeInt32Size(2, retcode_);
       }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, matchType_);
+          .computeEnumSize(4, matchType_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dungeonId_);
+      }
+      if (hOKPCGLJMHJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, hOKPCGLJMHJ_);
+      }
+      if (eOAGNHFNOPK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, eOAGNHFNOPK_);
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, param_);
+          .computeUInt32Size(12, param_);
       }
-      if (matchId_ != 0) {
+      if (nGPLKAADCEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, matchId_);
+          .computeUInt32Size(15, nGPLKAADCEI_);
       }
-      if (mechanicusDifficultLevel_ != 0) {
+      for (int i = 0; i < hMIGEIDBMBI_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, mechanicusDifficultLevel_);
+          .computeMessageSize(1564, hMIGEIDBMBI_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -385,21 +544,21 @@ public final class PlayerStartMatchRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp other = (emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp) obj;
 
+      if (!getHMIGEIDBMBIList()
+          .equals(other.getHMIGEIDBMBIList())) return false;
+      if (getNGPLKAADCEI()
+          != other.getNGPLKAADCEI()) return false;
+      if (getEOAGNHFNOPK()
+          != other.getEOAGNHFNOPK()) return false;
       if (matchType_ != other.matchType_) return false;
-      if (getMatchId()
-          != other.getMatchId()) return false;
-      if (getMechanicusDifficultLevel()
-          != other.getMechanicusDifficultLevel()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getPunishEndTime()
-          != other.getPunishEndTime()) return false;
-      if (getMpPlayId()
-          != other.getMpPlayId()) return false;
-      if (getParam()
-          != other.getParam()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getHOKPCGLJMHJ()
+          != other.getHOKPCGLJMHJ()) return false;
+      if (getParam()
+          != other.getParam()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -411,22 +570,24 @@ public final class PlayerStartMatchRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getHMIGEIDBMBICount() > 0) {
+        hash = (37 * hash) + HMIGEIDBMBI_FIELD_NUMBER;
+        hash = (53 * hash) + getHMIGEIDBMBIList().hashCode();
+      }
+      hash = (37 * hash) + NGPLKAADCEI_FIELD_NUMBER;
+      hash = (53 * hash) + getNGPLKAADCEI();
+      hash = (37 * hash) + EOAGNHFNOPK_FIELD_NUMBER;
+      hash = (53 * hash) + getEOAGNHFNOPK();
       hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + matchType_;
-      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchId();
-      hash = (37 * hash) + MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusDifficultLevel();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + PUNISH_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPunishEndTime();
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
-      hash = (37 * hash) + PARAM_FIELD_NUMBER;
-      hash = (53 * hash) + getParam();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + HOKPCGLJMHJ_FIELD_NUMBER;
+      hash = (53 * hash) + getHOKPCGLJMHJ();
+      hash = (37 * hash) + PARAM_FIELD_NUMBER;
+      hash = (53 * hash) + getParam();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -524,8 +685,7 @@ public final class PlayerStartMatchRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21172
-     * Obf: AAJPPGMIGOE
+     * CmdId: 27085
      * </pre>
      *
      * Protobuf type {@code PlayerStartMatchRsp}
@@ -560,26 +720,31 @@ public final class PlayerStartMatchRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getHMIGEIDBMBIFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (hMIGEIDBMBIBuilder_ == null) {
+          hMIGEIDBMBI_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          hMIGEIDBMBIBuilder_.clear();
+        }
+        nGPLKAADCEI_ = 0;
+
+        eOAGNHFNOPK_ = 0;
+
         matchType_ = 0;
 
-        matchId_ = 0;
+        dungeonId_ = 0;
 
-        mechanicusDifficultLevel_ = 0;
-
-        retcode_ = 0;
-
-        punishEndTime_ = 0;
-
-        mpPlayId_ = 0;
+        hOKPCGLJMHJ_ = 0;
 
         param_ = 0;
 
-        dungeonId_ = 0;
+        retcode_ = 0;
 
         return this;
       }
@@ -607,14 +772,23 @@ public final class PlayerStartMatchRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp result = new emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp(this);
+        int from_bitField0_ = bitField0_;
+        if (hMIGEIDBMBIBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            hMIGEIDBMBI_ = java.util.Collections.unmodifiableList(hMIGEIDBMBI_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.hMIGEIDBMBI_ = hMIGEIDBMBI_;
+        } else {
+          result.hMIGEIDBMBI_ = hMIGEIDBMBIBuilder_.build();
+        }
+        result.nGPLKAADCEI_ = nGPLKAADCEI_;
+        result.eOAGNHFNOPK_ = eOAGNHFNOPK_;
         result.matchType_ = matchType_;
-        result.matchId_ = matchId_;
-        result.mechanicusDifficultLevel_ = mechanicusDifficultLevel_;
-        result.retcode_ = retcode_;
-        result.punishEndTime_ = punishEndTime_;
-        result.mpPlayId_ = mpPlayId_;
-        result.param_ = param_;
         result.dungeonId_ = dungeonId_;
+        result.hOKPCGLJMHJ_ = hOKPCGLJMHJ_;
+        result.param_ = param_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -663,29 +837,52 @@ public final class PlayerStartMatchRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.getDefaultInstance()) return this;
+        if (hMIGEIDBMBIBuilder_ == null) {
+          if (!other.hMIGEIDBMBI_.isEmpty()) {
+            if (hMIGEIDBMBI_.isEmpty()) {
+              hMIGEIDBMBI_ = other.hMIGEIDBMBI_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureHMIGEIDBMBIIsMutable();
+              hMIGEIDBMBI_.addAll(other.hMIGEIDBMBI_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.hMIGEIDBMBI_.isEmpty()) {
+            if (hMIGEIDBMBIBuilder_.isEmpty()) {
+              hMIGEIDBMBIBuilder_.dispose();
+              hMIGEIDBMBIBuilder_ = null;
+              hMIGEIDBMBI_ = other.hMIGEIDBMBI_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              hMIGEIDBMBIBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getHMIGEIDBMBIFieldBuilder() : null;
+            } else {
+              hMIGEIDBMBIBuilder_.addAllMessages(other.hMIGEIDBMBI_);
+            }
+          }
+        }
+        if (other.getNGPLKAADCEI() != 0) {
+          setNGPLKAADCEI(other.getNGPLKAADCEI());
+        }
+        if (other.getEOAGNHFNOPK() != 0) {
+          setEOAGNHFNOPK(other.getEOAGNHFNOPK());
+        }
         if (other.matchType_ != 0) {
           setMatchTypeValue(other.getMatchTypeValue());
         }
-        if (other.getMatchId() != 0) {
-          setMatchId(other.getMatchId());
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
-        if (other.getMechanicusDifficultLevel() != 0) {
-          setMechanicusDifficultLevel(other.getMechanicusDifficultLevel());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getPunishEndTime() != 0) {
-          setPunishEndTime(other.getPunishEndTime());
-        }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
+        if (other.getHOKPCGLJMHJ() != 0) {
+          setHOKPCGLJMHJ(other.getHOKPCGLJMHJ());
         }
         if (other.getParam() != 0) {
           setParam(other.getParam());
         }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -715,17 +912,424 @@ public final class PlayerStartMatchRspOuterClass {
         }
         return this;
       }
+      private int bitField0_;
+
+      private java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> hMIGEIDBMBI_ =
+        java.util.Collections.emptyList();
+      private void ensureHMIGEIDBMBIIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          hMIGEIDBMBI_ = new java.util.ArrayList<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC>(hMIGEIDBMBI_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder> hMIGEIDBMBIBuilder_;
+
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> getHMIGEIDBMBIList() {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(hMIGEIDBMBI_);
+        } else {
+          return hMIGEIDBMBIBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public int getHMIGEIDBMBICount() {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          return hMIGEIDBMBI_.size();
+        } else {
+          return hMIGEIDBMBIBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC getHMIGEIDBMBI(int index) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          return hMIGEIDBMBI_.get(index);
+        } else {
+          return hMIGEIDBMBIBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder setHMIGEIDBMBI(
+          int index, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC value) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.set(index, value);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder setHMIGEIDBMBI(
+          int index, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder builderForValue) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder addHMIGEIDBMBI(emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC value) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.add(value);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder addHMIGEIDBMBI(
+          int index, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC value) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.add(index, value);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder addHMIGEIDBMBI(
+          emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder builderForValue) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.add(builderForValue.build());
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder addHMIGEIDBMBI(
+          int index, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder builderForValue) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder addAllHMIGEIDBMBI(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC> values) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          ensureHMIGEIDBMBIIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, hMIGEIDBMBI_);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder clearHMIGEIDBMBI() {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          hMIGEIDBMBI_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public Builder removeHMIGEIDBMBI(int index) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          ensureHMIGEIDBMBIIsMutable();
+          hMIGEIDBMBI_.remove(index);
+          onChanged();
+        } else {
+          hMIGEIDBMBIBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder getHMIGEIDBMBIBuilder(
+          int index) {
+        return getHMIGEIDBMBIFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder getHMIGEIDBMBIOrBuilder(
+          int index) {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          return hMIGEIDBMBI_.get(index);  } else {
+          return hMIGEIDBMBIBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder> 
+           getHMIGEIDBMBIOrBuilderList() {
+        if (hMIGEIDBMBIBuilder_ != null) {
+          return hMIGEIDBMBIBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(hMIGEIDBMBI_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder addHMIGEIDBMBIBuilder() {
+        return getHMIGEIDBMBIFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder addHMIGEIDBMBIBuilder(
+          int index) {
+        return getHMIGEIDBMBIFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DKMGFODHLJC HMIGEIDBMBI = 1564;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder> 
+           getHMIGEIDBMBIBuilderList() {
+        return getHMIGEIDBMBIFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder> 
+          getHMIGEIDBMBIFieldBuilder() {
+        if (hMIGEIDBMBIBuilder_ == null) {
+          hMIGEIDBMBIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJC.Builder, emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.DKMGFODHLJCOrBuilder>(
+                  hMIGEIDBMBI_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          hMIGEIDBMBI_ = null;
+        }
+        return hMIGEIDBMBIBuilder_;
+      }
+
+      private int nGPLKAADCEI_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 15;</code>
+       * @return The nGPLKAADCEI.
+       */
+      @java.lang.Override
+      public int getNGPLKAADCEI() {
+        return nGPLKAADCEI_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 15;</code>
+       * @param value The nGPLKAADCEI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNGPLKAADCEI(int value) {
+        
+        nGPLKAADCEI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NGPLKAADCEI = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNGPLKAADCEI() {
+        
+        nGPLKAADCEI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eOAGNHFNOPK_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 10;</code>
+       * @return The eOAGNHFNOPK.
+       */
+      @java.lang.Override
+      public int getEOAGNHFNOPK() {
+        return eOAGNHFNOPK_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 10;</code>
+       * @param value The eOAGNHFNOPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEOAGNHFNOPK(int value) {
+        
+        eOAGNHFNOPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 EOAGNHFNOPK = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEOAGNHFNOPK() {
+        
+        eOAGNHFNOPK_ = 0;
+        onChanged();
+        return this;
+      }
 
       private int matchType_ = 0;
       /**
-       * <code>.MatchType match_type = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.MatchType match_type = 4;</code>
        * @return The enum numeric value on the wire for matchType.
        */
       @java.lang.Override public int getMatchTypeValue() {
         return matchType_;
       }
       /**
-       * <code>.MatchType match_type = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.MatchType match_type = 4;</code>
        * @param value The enum numeric value on the wire for matchType to set.
        * @return This builder for chaining.
        */
@@ -736,7 +1340,11 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.MatchType match_type = 4;</code>
        * @return The matchType.
        */
       @java.lang.Override
@@ -746,7 +1354,11 @@ public final class PlayerStartMatchRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchType match_type = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.MatchType match_type = 4;</code>
        * @param value The matchType to set.
        * @return This builder for chaining.
        */
@@ -760,7 +1372,11 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 12;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.MatchType match_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchType() {
@@ -770,195 +1386,13 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
 
-      private int matchId_ ;
-      /**
-       * <code>uint32 match_id = 14;</code>
-       * @return The matchId.
-       */
-      @java.lang.Override
-      public int getMatchId() {
-        return matchId_;
-      }
-      /**
-       * <code>uint32 match_id = 14;</code>
-       * @param value The matchId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchId(int value) {
-        
-        matchId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 match_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchId() {
-        
-        matchId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mechanicusDifficultLevel_ ;
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @return The mechanicusDifficultLevel.
-       */
-      @java.lang.Override
-      public int getMechanicusDifficultLevel() {
-        return mechanicusDifficultLevel_;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @param value The mechanicusDifficultLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusDifficultLevel(int value) {
-        
-        mechanicusDifficultLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusDifficultLevel() {
-        
-        mechanicusDifficultLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int punishEndTime_ ;
-      /**
-       * <code>uint32 punish_end_time = 10;</code>
-       * @return The punishEndTime.
-       */
-      @java.lang.Override
-      public int getPunishEndTime() {
-        return punishEndTime_;
-      }
-      /**
-       * <code>uint32 punish_end_time = 10;</code>
-       * @param value The punishEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPunishEndTime(int value) {
-        
-        punishEndTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 punish_end_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPunishEndTime() {
-        
-        punishEndTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 4;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 4;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int param_ ;
-      /**
-       * <code>uint32 param = 13;</code>
-       * @return The param.
-       */
-      @java.lang.Override
-      public int getParam() {
-        return param_;
-      }
-      /**
-       * <code>uint32 param = 13;</code>
-       * @param value The param to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam(int value) {
-        
-        param_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 param = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam() {
-        
-        param_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -966,7 +1400,11 @@ public final class PlayerStartMatchRspOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -977,12 +1415,145 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hOKPCGLJMHJ_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 HOKPCGLJMHJ = 9;</code>
+       * @return The hOKPCGLJMHJ.
+       */
+      @java.lang.Override
+      public int getHOKPCGLJMHJ() {
+        return hOKPCGLJMHJ_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 HOKPCGLJMHJ = 9;</code>
+       * @param value The hOKPCGLJMHJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHOKPCGLJMHJ(int value) {
+        
+        hOKPCGLJMHJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 HOKPCGLJMHJ = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHOKPCGLJMHJ() {
+        
+        hOKPCGLJMHJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 param = 12;</code>
+       * @return The param.
+       */
+      @java.lang.Override
+      public int getParam() {
+        return param_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 param = 12;</code>
+       * @param value The param to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam(int value) {
+        
+        param_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 param = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam() {
+        
+        param_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>int32 retcode = 2;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>int32 retcode = 2;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>int32 retcode = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -1053,18 +1624,19 @@ public final class PlayerStartMatchRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031PlayerStartMatchRsp.proto\032\017MatchType.p" +
-      "roto\"\314\001\n\023PlayerStartMatchRsp\022\036\n\nmatch_ty" +
-      "pe\030\014 \001(\0162\n.MatchType\022\020\n\010match_id\030\016 \001(\r\022\"" +
-      "\n\032mechanicus_difficult_level\030\017 \001(\r\022\017\n\007re" +
-      "tcode\030\007 \001(\005\022\027\n\017punish_end_time\030\n \001(\r\022\022\n\n" +
-      "mp_play_id\030\004 \001(\r\022\r\n\005param\030\r \001(\r\022\022\n\ndunge" +
-      "on_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\031PlayerStartMatchRsp.proto\032\021DKMGFODHLJC" +
+      ".proto\032\017MatchType.proto\"\314\001\n\023PlayerStartM" +
+      "atchRsp\022\"\n\013HMIGEIDBMBI\030\234\014 \003(\0132\014.DKMGFODH" +
+      "LJC\022\023\n\013NGPLKAADCEI\030\017 \001(\r\022\023\n\013EOAGNHFNOPK\030" +
+      "\n \001(\r\022\036\n\nmatch_type\030\004 \001(\0162\n.MatchType\022\022\n" +
+      "\ndungeon_id\030\010 \001(\r\022\023\n\013HOKPCGLJMHJ\030\t \001(\r\022\r" +
+      "\n\005param\030\014 \001(\r\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor(),
         });
     internal_static_PlayerStartMatchRsp_descriptor =
@@ -1072,7 +1644,8 @@ public final class PlayerStartMatchRspOuterClass {
     internal_static_PlayerStartMatchRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerStartMatchRsp_descriptor,
-        new java.lang.String[] { "MatchType", "MatchId", "MechanicusDifficultLevel", "Retcode", "PunishEndTime", "MpPlayId", "Param", "DungeonId", });
+        new java.lang.String[] { "HMIGEIDBMBI", "NGPLKAADCEI", "EOAGNHFNOPK", "MatchType", "DungeonId", "HOKPCGLJMHJ", "Param", "Retcode", });
+    emu.grasscutter.net.proto.DKMGFODHLJCOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
   }
 

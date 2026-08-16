@@ -19,21 +19,20 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_scene_id = 13;</code>
-     * @return The dungeonSceneId.
+     * <code>uint32 GHPHLENIBFD = 5;</code>
+     * @return The gHPHLENIBFD.
      */
-    int getDungeonSceneId();
+    int getGHPHLENIBFD();
 
     /**
-     * <code>uint32 floor_level = 7;</code>
-     * @return The floorLevel.
+     * <code>uint32 IOIELPJDIFA = 15;</code>
+     * @return The iOIELPJDIFA.
      */
-    int getFloorLevel();
+    int getIOIELPJDIFA();
   }
   /**
    * <pre>
-   * CmdId: 9166
-   * Obf: KEDBFDOGFDH
+   * CmdId: 3673
    * </pre>
    *
    * Protobuf type {@code MistTrialFloorLevelNotify}
@@ -80,14 +79,14 @@ public final class MistTrialFloorLevelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
-              floorLevel_ = input.readUInt32();
+              gHPHLENIBFD_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
-              dungeonSceneId_ = input.readUInt32();
+              iOIELPJDIFA_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class MistTrialFloorLevelNotifyOuterClass {
               emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify.class, emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify.Builder.class);
     }
 
-    public static final int DUNGEON_SCENE_ID_FIELD_NUMBER = 13;
-    private int dungeonSceneId_;
+    public static final int GHPHLENIBFD_FIELD_NUMBER = 5;
+    private int gHPHLENIBFD_;
     /**
-     * <code>uint32 dungeon_scene_id = 13;</code>
-     * @return The dungeonSceneId.
+     * <code>uint32 GHPHLENIBFD = 5;</code>
+     * @return The gHPHLENIBFD.
      */
     @java.lang.Override
-    public int getDungeonSceneId() {
-      return dungeonSceneId_;
+    public int getGHPHLENIBFD() {
+      return gHPHLENIBFD_;
     }
 
-    public static final int FLOOR_LEVEL_FIELD_NUMBER = 7;
-    private int floorLevel_;
+    public static final int IOIELPJDIFA_FIELD_NUMBER = 15;
+    private int iOIELPJDIFA_;
     /**
-     * <code>uint32 floor_level = 7;</code>
-     * @return The floorLevel.
+     * <code>uint32 IOIELPJDIFA = 15;</code>
+     * @return The iOIELPJDIFA.
      */
     @java.lang.Override
-    public int getFloorLevel() {
-      return floorLevel_;
+    public int getIOIELPJDIFA() {
+      return iOIELPJDIFA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class MistTrialFloorLevelNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (floorLevel_ != 0) {
-        output.writeUInt32(7, floorLevel_);
+      if (gHPHLENIBFD_ != 0) {
+        output.writeUInt32(5, gHPHLENIBFD_);
       }
-      if (dungeonSceneId_ != 0) {
-        output.writeUInt32(13, dungeonSceneId_);
+      if (iOIELPJDIFA_ != 0) {
+        output.writeUInt32(15, iOIELPJDIFA_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (floorLevel_ != 0) {
+      if (gHPHLENIBFD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, floorLevel_);
+          .computeUInt32Size(5, gHPHLENIBFD_);
       }
-      if (dungeonSceneId_ != 0) {
+      if (iOIELPJDIFA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dungeonSceneId_);
+          .computeUInt32Size(15, iOIELPJDIFA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify other = (emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify) obj;
 
-      if (getDungeonSceneId()
-          != other.getDungeonSceneId()) return false;
-      if (getFloorLevel()
-          != other.getFloorLevel()) return false;
+      if (getGHPHLENIBFD()
+          != other.getGHPHLENIBFD()) return false;
+      if (getIOIELPJDIFA()
+          != other.getIOIELPJDIFA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonSceneId();
-      hash = (37 * hash) + FLOOR_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getFloorLevel();
+      hash = (37 * hash) + GHPHLENIBFD_FIELD_NUMBER;
+      hash = (53 * hash) + getGHPHLENIBFD();
+      hash = (37 * hash) + IOIELPJDIFA_FIELD_NUMBER;
+      hash = (53 * hash) + getIOIELPJDIFA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class MistTrialFloorLevelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9166
-     * Obf: KEDBFDOGFDH
+     * CmdId: 3673
      * </pre>
      *
      * Protobuf type {@code MistTrialFloorLevelNotify}
@@ -353,9 +351,9 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonSceneId_ = 0;
+        gHPHLENIBFD_ = 0;
 
-        floorLevel_ = 0;
+        iOIELPJDIFA_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify buildPartial() {
         emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify result = new emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify(this);
-        result.dungeonSceneId_ = dungeonSceneId_;
-        result.floorLevel_ = floorLevel_;
+        result.gHPHLENIBFD_ = gHPHLENIBFD_;
+        result.iOIELPJDIFA_ = iOIELPJDIFA_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class MistTrialFloorLevelNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify other) {
         if (other == emu.grasscutter.net.proto.MistTrialFloorLevelNotifyOuterClass.MistTrialFloorLevelNotify.getDefaultInstance()) return this;
-        if (other.getDungeonSceneId() != 0) {
-          setDungeonSceneId(other.getDungeonSceneId());
+        if (other.getGHPHLENIBFD() != 0) {
+          setGHPHLENIBFD(other.getGHPHLENIBFD());
         }
-        if (other.getFloorLevel() != 0) {
-          setFloorLevel(other.getFloorLevel());
+        if (other.getIOIELPJDIFA() != 0) {
+          setIOIELPJDIFA(other.getIOIELPJDIFA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +466,64 @@ public final class MistTrialFloorLevelNotifyOuterClass {
         return this;
       }
 
-      private int dungeonSceneId_ ;
+      private int gHPHLENIBFD_ ;
       /**
-       * <code>uint32 dungeon_scene_id = 13;</code>
-       * @return The dungeonSceneId.
+       * <code>uint32 GHPHLENIBFD = 5;</code>
+       * @return The gHPHLENIBFD.
        */
       @java.lang.Override
-      public int getDungeonSceneId() {
-        return dungeonSceneId_;
+      public int getGHPHLENIBFD() {
+        return gHPHLENIBFD_;
       }
       /**
-       * <code>uint32 dungeon_scene_id = 13;</code>
-       * @param value The dungeonSceneId to set.
+       * <code>uint32 GHPHLENIBFD = 5;</code>
+       * @param value The gHPHLENIBFD to set.
        * @return This builder for chaining.
        */
-      public Builder setDungeonSceneId(int value) {
+      public Builder setGHPHLENIBFD(int value) {
         
-        dungeonSceneId_ = value;
+        gHPHLENIBFD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dungeon_scene_id = 13;</code>
+       * <code>uint32 GHPHLENIBFD = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDungeonSceneId() {
+      public Builder clearGHPHLENIBFD() {
         
-        dungeonSceneId_ = 0;
+        gHPHLENIBFD_ = 0;
         onChanged();
         return this;
       }
 
-      private int floorLevel_ ;
+      private int iOIELPJDIFA_ ;
       /**
-       * <code>uint32 floor_level = 7;</code>
-       * @return The floorLevel.
+       * <code>uint32 IOIELPJDIFA = 15;</code>
+       * @return The iOIELPJDIFA.
        */
       @java.lang.Override
-      public int getFloorLevel() {
-        return floorLevel_;
+      public int getIOIELPJDIFA() {
+        return iOIELPJDIFA_;
       }
       /**
-       * <code>uint32 floor_level = 7;</code>
-       * @param value The floorLevel to set.
+       * <code>uint32 IOIELPJDIFA = 15;</code>
+       * @param value The iOIELPJDIFA to set.
        * @return This builder for chaining.
        */
-      public Builder setFloorLevel(int value) {
+      public Builder setIOIELPJDIFA(int value) {
         
-        floorLevel_ = value;
+        iOIELPJDIFA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 floor_level = 7;</code>
+       * <code>uint32 IOIELPJDIFA = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFloorLevel() {
+      public Builder clearIOIELPJDIFA() {
         
-        floorLevel_ = 0;
+        iOIELPJDIFA_ = 0;
         onChanged();
         return this;
       }
@@ -596,10 +594,10 @@ public final class MistTrialFloorLevelNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037MistTrialFloorLevelNotify.proto\"J\n\031Mis" +
-      "tTrialFloorLevelNotify\022\030\n\020dungeon_scene_" +
-      "id\030\r \001(\r\022\023\n\013floor_level\030\007 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\037MistTrialFloorLevelNotify.proto\"E\n\031Mis" +
+      "tTrialFloorLevelNotify\022\023\n\013GHPHLENIBFD\030\005 " +
+      "\001(\r\022\023\n\013IOIELPJDIFA\030\017 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +608,7 @@ public final class MistTrialFloorLevelNotifyOuterClass {
     internal_static_MistTrialFloorLevelNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialFloorLevelNotify_descriptor,
-        new java.lang.String[] { "DungeonSceneId", "FloorLevel", });
+        new java.lang.String[] { "GHPHLENIBFD", "IOIELPJDIFA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

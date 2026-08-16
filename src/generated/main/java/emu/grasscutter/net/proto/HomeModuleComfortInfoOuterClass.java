@@ -36,16 +36,16 @@ public final class HomeModuleComfortInfoOuterClass {
     int getWorldSceneBlockComfortValueList(int index);
 
     /**
-     * <code>uint32 module_id = 9;</code>
+     * <code>uint32 module_id = 6;</code>
      * @return The moduleId.
      */
     int getModuleId();
 
     /**
-     * <code>uint32 room_scene_comfort_value = 15;</code>
-     * @return The roomSceneComfortValue.
+     * <code>uint32 HDEJOBJBLFF = 11;</code>
+     * @return The hDEJOBJBLFF.
      */
-    int getRoomSceneComfortValue();
+    int getHDEJOBJBLFF();
   }
   /**
    * Protobuf type {@code HomeModuleComfortInfo}
@@ -115,14 +115,14 @@ public final class HomeModuleComfortInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 48: {
 
               moduleId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              roomSceneComfortValue_ = input.readUInt32();
+              hDEJOBJBLFF_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,10 +188,10 @@ public final class HomeModuleComfortInfoOuterClass {
     }
     private int worldSceneBlockComfortValueListMemoizedSerializedSize = -1;
 
-    public static final int MODULE_ID_FIELD_NUMBER = 9;
+    public static final int MODULE_ID_FIELD_NUMBER = 6;
     private int moduleId_;
     /**
-     * <code>uint32 module_id = 9;</code>
+     * <code>uint32 module_id = 6;</code>
      * @return The moduleId.
      */
     @java.lang.Override
@@ -199,15 +199,15 @@ public final class HomeModuleComfortInfoOuterClass {
       return moduleId_;
     }
 
-    public static final int ROOM_SCENE_COMFORT_VALUE_FIELD_NUMBER = 15;
-    private int roomSceneComfortValue_;
+    public static final int HDEJOBJBLFF_FIELD_NUMBER = 11;
+    private int hDEJOBJBLFF_;
     /**
-     * <code>uint32 room_scene_comfort_value = 15;</code>
-     * @return The roomSceneComfortValue.
+     * <code>uint32 HDEJOBJBLFF = 11;</code>
+     * @return The hDEJOBJBLFF.
      */
     @java.lang.Override
-    public int getRoomSceneComfortValue() {
-      return roomSceneComfortValue_;
+    public int getHDEJOBJBLFF() {
+      return hDEJOBJBLFF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -233,10 +233,10 @@ public final class HomeModuleComfortInfoOuterClass {
         output.writeUInt32NoTag(worldSceneBlockComfortValueList_.getInt(i));
       }
       if (moduleId_ != 0) {
-        output.writeUInt32(9, moduleId_);
+        output.writeUInt32(6, moduleId_);
       }
-      if (roomSceneComfortValue_ != 0) {
-        output.writeUInt32(15, roomSceneComfortValue_);
+      if (hDEJOBJBLFF_ != 0) {
+        output.writeUInt32(11, hDEJOBJBLFF_);
       }
       unknownFields.writeTo(output);
     }
@@ -263,11 +263,11 @@ public final class HomeModuleComfortInfoOuterClass {
       }
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, moduleId_);
+          .computeUInt32Size(6, moduleId_);
       }
-      if (roomSceneComfortValue_ != 0) {
+      if (hDEJOBJBLFF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, roomSceneComfortValue_);
+          .computeUInt32Size(11, hDEJOBJBLFF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,8 +288,8 @@ public final class HomeModuleComfortInfoOuterClass {
           .equals(other.getWorldSceneBlockComfortValueListList())) return false;
       if (getModuleId()
           != other.getModuleId()) return false;
-      if (getRoomSceneComfortValue()
-          != other.getRoomSceneComfortValue()) return false;
+      if (getHDEJOBJBLFF()
+          != other.getHDEJOBJBLFF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,8 +307,8 @@ public final class HomeModuleComfortInfoOuterClass {
       }
       hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getModuleId();
-      hash = (37 * hash) + ROOM_SCENE_COMFORT_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getRoomSceneComfortValue();
+      hash = (37 * hash) + HDEJOBJBLFF_FIELD_NUMBER;
+      hash = (53 * hash) + getHDEJOBJBLFF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,7 +446,7 @@ public final class HomeModuleComfortInfoOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         moduleId_ = 0;
 
-        roomSceneComfortValue_ = 0;
+        hDEJOBJBLFF_ = 0;
 
         return this;
       }
@@ -481,7 +481,7 @@ public final class HomeModuleComfortInfoOuterClass {
         }
         result.worldSceneBlockComfortValueList_ = worldSceneBlockComfortValueList_;
         result.moduleId_ = moduleId_;
-        result.roomSceneComfortValue_ = roomSceneComfortValue_;
+        result.hDEJOBJBLFF_ = hDEJOBJBLFF_;
         onBuilt();
         return result;
       }
@@ -543,8 +543,8 @@ public final class HomeModuleComfortInfoOuterClass {
         if (other.getModuleId() != 0) {
           setModuleId(other.getModuleId());
         }
-        if (other.getRoomSceneComfortValue() != 0) {
-          setRoomSceneComfortValue(other.getRoomSceneComfortValue());
+        if (other.getHDEJOBJBLFF() != 0) {
+          setHDEJOBJBLFF(other.getHDEJOBJBLFF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -657,7 +657,7 @@ public final class HomeModuleComfortInfoOuterClass {
 
       private int moduleId_ ;
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 6;</code>
        * @return The moduleId.
        */
       @java.lang.Override
@@ -665,7 +665,7 @@ public final class HomeModuleComfortInfoOuterClass {
         return moduleId_;
       }
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 6;</code>
        * @param value The moduleId to set.
        * @return This builder for chaining.
        */
@@ -676,7 +676,7 @@ public final class HomeModuleComfortInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearModuleId() {
@@ -686,33 +686,33 @@ public final class HomeModuleComfortInfoOuterClass {
         return this;
       }
 
-      private int roomSceneComfortValue_ ;
+      private int hDEJOBJBLFF_ ;
       /**
-       * <code>uint32 room_scene_comfort_value = 15;</code>
-       * @return The roomSceneComfortValue.
+       * <code>uint32 HDEJOBJBLFF = 11;</code>
+       * @return The hDEJOBJBLFF.
        */
       @java.lang.Override
-      public int getRoomSceneComfortValue() {
-        return roomSceneComfortValue_;
+      public int getHDEJOBJBLFF() {
+        return hDEJOBJBLFF_;
       }
       /**
-       * <code>uint32 room_scene_comfort_value = 15;</code>
-       * @param value The roomSceneComfortValue to set.
+       * <code>uint32 HDEJOBJBLFF = 11;</code>
+       * @param value The hDEJOBJBLFF to set.
        * @return This builder for chaining.
        */
-      public Builder setRoomSceneComfortValue(int value) {
+      public Builder setHDEJOBJBLFF(int value) {
         
-        roomSceneComfortValue_ = value;
+        hDEJOBJBLFF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 room_scene_comfort_value = 15;</code>
+       * <code>uint32 HDEJOBJBLFF = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRoomSceneComfortValue() {
+      public Builder clearHDEJOBJBLFF() {
         
-        roomSceneComfortValue_ = 0;
+        hDEJOBJBLFF_ = 0;
         onChanged();
         return this;
       }
@@ -783,11 +783,11 @@ public final class HomeModuleComfortInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033HomeModuleComfortInfo.proto\"z\n\025HomeMod" +
+      "\n\033HomeModuleComfortInfo.proto\"m\n\025HomeMod" +
       "uleComfortInfo\022,\n$world_scene_block_comf" +
-      "ort_value_list\030\001 \003(\r\022\021\n\tmodule_id\030\t \001(\r\022" +
-      " \n\030room_scene_comfort_value\030\017 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "ort_value_list\030\001 \003(\r\022\021\n\tmodule_id\030\006 \001(\r\022" +
+      "\023\n\013HDEJOBJBLFF\030\013 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -798,7 +798,7 @@ public final class HomeModuleComfortInfoOuterClass {
     internal_static_HomeModuleComfortInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeModuleComfortInfo_descriptor,
-        new java.lang.String[] { "WorldSceneBlockComfortValueList", "ModuleId", "RoomSceneComfortValue", });
+        new java.lang.String[] { "WorldSceneBlockComfortValueList", "ModuleId", "HDEJOBJBLFF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

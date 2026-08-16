@@ -19,23 +19,22 @@ public final class GCGOperationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <pre>
+     * CMD_ID = 27232
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 op_seq = 12;</code>
+     * <code>uint32 op_seq = 4;</code>
      * @return The opSeq.
      */
     int getOpSeq();
   }
   /**
-   * <pre>
-   * CmdId: 7952
-   * Obf: IFPJBIHDMLM
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationRsp}
    */
   public static final class GCGOperationRsp extends
@@ -80,14 +79,14 @@ public final class GCGOperationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
+            case 32: {
 
               opSeq_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGOperationRspOuterClass {
               emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp.class, emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <pre>
+     * CMD_ID = 27232
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGOperationRspOuterClass {
       return retcode_;
     }
 
-    public static final int OP_SEQ_FIELD_NUMBER = 12;
+    public static final int OP_SEQ_FIELD_NUMBER = 4;
     private int opSeq_;
     /**
-     * <code>uint32 op_seq = 12;</code>
+     * <code>uint32 op_seq = 4;</code>
      * @return The opSeq.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGOperationRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
-      }
       if (opSeq_ != 0) {
-        output.writeUInt32(12, opSeq_);
+        output.writeUInt32(4, opSeq_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGOperationRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
-      }
       if (opSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, opSeq_);
+          .computeUInt32Size(4, opSeq_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGOperationRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7952
-     * Obf: IFPJBIHDMLM
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationRsp}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGOperationRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * CMD_ID = 27232
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGOperationRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * CMD_ID = 27232
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGOperationRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <pre>
+       * CMD_ID = 27232
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +511,7 @@ public final class GCGOperationRspOuterClass {
 
       private int opSeq_ ;
       /**
-       * <code>uint32 op_seq = 12;</code>
+       * <code>uint32 op_seq = 4;</code>
        * @return The opSeq.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGOperationRspOuterClass {
         return opSeq_;
       }
       /**
-       * <code>uint32 op_seq = 12;</code>
+       * <code>uint32 op_seq = 4;</code>
        * @param value The opSeq to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGOperationRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_seq = 12;</code>
+       * <code>uint32 op_seq = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpSeq() {
@@ -597,7 +607,7 @@ public final class GCGOperationRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GCGOperationRsp.proto\"2\n\017GCGOperationR" +
-      "sp\022\017\n\007retcode\030\t \001(\005\022\016\n\006op_seq\030\014 \001(\rB\033\n\031e" +
+      "sp\022\017\n\007retcode\030\n \001(\005\022\016\n\006op_seq\030\004 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

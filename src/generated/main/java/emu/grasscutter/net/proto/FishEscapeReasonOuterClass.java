@@ -20,32 +20,32 @@ public final class FishEscapeReasonOuterClass {
   public enum FishEscapeReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0;</code>
+     * <code>NMGFEOEMOON_FISN_ESCAPE_NONE = 0;</code>
      */
-    FISH_ESCAPE_REASON_FISN_ESCAPE_NONE(0),
+    NMGFEOEMOON_FISN_ESCAPE_NONE(0),
     /**
-     * <code>FISH_ESCAPE_REASON_SHOCKED = 1;</code>
+     * <code>NMGFEOEMOON_FISH_ESCAPE_SHOCKED = 1;</code>
      */
-    FISH_ESCAPE_REASON_SHOCKED(1),
+    NMGFEOEMOON_FISH_ESCAPE_SHOCKED(1),
     /**
-     * <code>FISH_ESCAPE_REASON_UNHOOK = 2;</code>
+     * <code>NMGFEOEMOON_FISH_ESCAPE_UNHOOK = 2;</code>
      */
-    FISH_ESCAPE_REASON_UNHOOK(2),
+    NMGFEOEMOON_FISH_ESCAPE_UNHOOK(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0;</code>
+     * <code>NMGFEOEMOON_FISN_ESCAPE_NONE = 0;</code>
      */
-    public static final int FISH_ESCAPE_REASON_FISN_ESCAPE_NONE_VALUE = 0;
+    public static final int NMGFEOEMOON_FISN_ESCAPE_NONE_VALUE = 0;
     /**
-     * <code>FISH_ESCAPE_REASON_SHOCKED = 1;</code>
+     * <code>NMGFEOEMOON_FISH_ESCAPE_SHOCKED = 1;</code>
      */
-    public static final int FISH_ESCAPE_REASON_SHOCKED_VALUE = 1;
+    public static final int NMGFEOEMOON_FISH_ESCAPE_SHOCKED_VALUE = 1;
     /**
-     * <code>FISH_ESCAPE_REASON_UNHOOK = 2;</code>
+     * <code>NMGFEOEMOON_FISH_ESCAPE_UNHOOK = 2;</code>
      */
-    public static final int FISH_ESCAPE_REASON_UNHOOK_VALUE = 2;
+    public static final int NMGFEOEMOON_FISH_ESCAPE_UNHOOK_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class FishEscapeReasonOuterClass {
      */
     public static FishEscapeReason forNumber(int value) {
       switch (value) {
-        case 0: return FISH_ESCAPE_REASON_FISN_ESCAPE_NONE;
-        case 1: return FISH_ESCAPE_REASON_SHOCKED;
-        case 2: return FISH_ESCAPE_REASON_UNHOOK;
+        case 0: return NMGFEOEMOON_FISN_ESCAPE_NONE;
+        case 1: return NMGFEOEMOON_FISH_ESCAPE_SHOCKED;
+        case 2: return NMGFEOEMOON_FISH_ESCAPE_UNHOOK;
         default: return null;
       }
     }
@@ -140,11 +140,11 @@ public final class FishEscapeReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FishEscapeReason.proto*z\n\020FishEscapeRe" +
-      "ason\022\'\n#FISH_ESCAPE_REASON_FISN_ESCAPE_N" +
-      "ONE\020\000\022\036\n\032FISH_ESCAPE_REASON_SHOCKED\020\001\022\035\n" +
-      "\031FISH_ESCAPE_REASON_UNHOOK\020\002B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\026FishEscapeReason.proto*}\n\020FishEscapeRe" +
+      "ason\022 \n\034NMGFEOEMOON_FISN_ESCAPE_NONE\020\000\022#" +
+      "\n\037NMGFEOEMOON_FISH_ESCAPE_SHOCKED\020\001\022\"\n\036N" +
+      "MGFEOEMOON_FISH_ESCAPE_UNHOOK\020\002B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

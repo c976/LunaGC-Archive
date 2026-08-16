@@ -19,40 +19,40 @@ public final class SlimeCannonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BDHEDKMFOHG = 1;</code>
-     * @return The bDHEDKMFOHG.
+     * <code>uint32 LAFHJJGOCNE = 1;</code>
+     * @return The lAFHJJGOCNE.
      */
-    int getBDHEDKMFOHG();
+    int getLAFHJJGOCNE();
 
     /**
-     * <code>uint32 BGADBINJGCA = 9;</code>
-     * @return The bGADBINJGCA.
+     * <code>uint32 JKKBGPIDLJB = 3;</code>
+     * @return The jKKBGPIDLJB.
      */
-    int getBGADBINJGCA();
+    int getJKKBGPIDLJB();
 
     /**
-     * <code>uint32 LFBHELGMOEG = 8;</code>
-     * @return The lFBHELGMOEG.
+     * <code>uint32 BGJOCAGINOM = 7;</code>
+     * @return The bGJOCAGINOM.
      */
-    int getLFBHELGMOEG();
+    int getBGJOCAGINOM();
 
     /**
-     * <code>uint32 GLNOACCLDIC = 13;</code>
-     * @return The gLNOACCLDIC.
+     * <code>uint32 LKDGINHBIEC = 9;</code>
+     * @return The lKDGINHBIEC.
      */
-    int getGLNOACCLDIC();
+    int getLKDGINHBIEC();
 
     /**
-     * <code>uint32 EJIIPODEINA = 10;</code>
-     * @return The eJIIPODEINA.
-     */
-    int getEJIIPODEINA();
-
-    /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 NMNKDGJMPHI = 15;</code>
+     * @return The nMNKDGJMPHI.
+     */
+    int getNMNKDGJMPHI();
   }
   /**
    * Protobuf type {@code SlimeCannonSettleInfo}
@@ -101,32 +101,32 @@ public final class SlimeCannonSettleInfoOuterClass {
               break;
             case 8: {
 
-              bDHEDKMFOHG_ = input.readUInt32();
+              lAFHJJGOCNE_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 24: {
 
-              levelId_ = input.readUInt32();
+              jKKBGPIDLJB_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 56: {
 
-              lFBHELGMOEG_ = input.readUInt32();
+              bGJOCAGINOM_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              bGADBINJGCA_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              eJIIPODEINA_ = input.readUInt32();
+              lKDGINHBIEC_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              gLNOACCLDIC_ = input.readUInt32();
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              nMNKDGJMPHI_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,70 +161,70 @@ public final class SlimeCannonSettleInfoOuterClass {
               emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.class, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder.class);
     }
 
-    public static final int BDHEDKMFOHG_FIELD_NUMBER = 1;
-    private int bDHEDKMFOHG_;
+    public static final int LAFHJJGOCNE_FIELD_NUMBER = 1;
+    private int lAFHJJGOCNE_;
     /**
-     * <code>uint32 BDHEDKMFOHG = 1;</code>
-     * @return The bDHEDKMFOHG.
+     * <code>uint32 LAFHJJGOCNE = 1;</code>
+     * @return The lAFHJJGOCNE.
      */
     @java.lang.Override
-    public int getBDHEDKMFOHG() {
-      return bDHEDKMFOHG_;
+    public int getLAFHJJGOCNE() {
+      return lAFHJJGOCNE_;
     }
 
-    public static final int BGADBINJGCA_FIELD_NUMBER = 9;
-    private int bGADBINJGCA_;
+    public static final int JKKBGPIDLJB_FIELD_NUMBER = 3;
+    private int jKKBGPIDLJB_;
     /**
-     * <code>uint32 BGADBINJGCA = 9;</code>
-     * @return The bGADBINJGCA.
+     * <code>uint32 JKKBGPIDLJB = 3;</code>
+     * @return The jKKBGPIDLJB.
      */
     @java.lang.Override
-    public int getBGADBINJGCA() {
-      return bGADBINJGCA_;
+    public int getJKKBGPIDLJB() {
+      return jKKBGPIDLJB_;
     }
 
-    public static final int LFBHELGMOEG_FIELD_NUMBER = 8;
-    private int lFBHELGMOEG_;
+    public static final int BGJOCAGINOM_FIELD_NUMBER = 7;
+    private int bGJOCAGINOM_;
     /**
-     * <code>uint32 LFBHELGMOEG = 8;</code>
-     * @return The lFBHELGMOEG.
+     * <code>uint32 BGJOCAGINOM = 7;</code>
+     * @return The bGJOCAGINOM.
      */
     @java.lang.Override
-    public int getLFBHELGMOEG() {
-      return lFBHELGMOEG_;
+    public int getBGJOCAGINOM() {
+      return bGJOCAGINOM_;
     }
 
-    public static final int GLNOACCLDIC_FIELD_NUMBER = 13;
-    private int gLNOACCLDIC_;
+    public static final int LKDGINHBIEC_FIELD_NUMBER = 9;
+    private int lKDGINHBIEC_;
     /**
-     * <code>uint32 GLNOACCLDIC = 13;</code>
-     * @return The gLNOACCLDIC.
+     * <code>uint32 LKDGINHBIEC = 9;</code>
+     * @return The lKDGINHBIEC.
      */
     @java.lang.Override
-    public int getGLNOACCLDIC() {
-      return gLNOACCLDIC_;
+    public int getLKDGINHBIEC() {
+      return lKDGINHBIEC_;
     }
 
-    public static final int EJIIPODEINA_FIELD_NUMBER = 10;
-    private int eJIIPODEINA_;
-    /**
-     * <code>uint32 EJIIPODEINA = 10;</code>
-     * @return The eJIIPODEINA.
-     */
-    @java.lang.Override
-    public int getEJIIPODEINA() {
-      return eJIIPODEINA_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int NMNKDGJMPHI_FIELD_NUMBER = 15;
+    private int nMNKDGJMPHI_;
+    /**
+     * <code>uint32 NMNKDGJMPHI = 15;</code>
+     * @return The nMNKDGJMPHI.
+     */
+    @java.lang.Override
+    public int getNMNKDGJMPHI() {
+      return nMNKDGJMPHI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class SlimeCannonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bDHEDKMFOHG_ != 0) {
-        output.writeUInt32(1, bDHEDKMFOHG_);
+      if (lAFHJJGOCNE_ != 0) {
+        output.writeUInt32(1, lAFHJJGOCNE_);
+      }
+      if (jKKBGPIDLJB_ != 0) {
+        output.writeUInt32(3, jKKBGPIDLJB_);
+      }
+      if (bGJOCAGINOM_ != 0) {
+        output.writeUInt32(7, bGJOCAGINOM_);
+      }
+      if (lKDGINHBIEC_ != 0) {
+        output.writeUInt32(9, lKDGINHBIEC_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+        output.writeUInt32(13, levelId_);
       }
-      if (lFBHELGMOEG_ != 0) {
-        output.writeUInt32(8, lFBHELGMOEG_);
-      }
-      if (bGADBINJGCA_ != 0) {
-        output.writeUInt32(9, bGADBINJGCA_);
-      }
-      if (eJIIPODEINA_ != 0) {
-        output.writeUInt32(10, eJIIPODEINA_);
-      }
-      if (gLNOACCLDIC_ != 0) {
-        output.writeUInt32(13, gLNOACCLDIC_);
+      if (nMNKDGJMPHI_ != 0) {
+        output.writeUInt32(15, nMNKDGJMPHI_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class SlimeCannonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bDHEDKMFOHG_ != 0) {
+      if (lAFHJJGOCNE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bDHEDKMFOHG_);
+          .computeUInt32Size(1, lAFHJJGOCNE_);
+      }
+      if (jKKBGPIDLJB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, jKKBGPIDLJB_);
+      }
+      if (bGJOCAGINOM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, bGJOCAGINOM_);
+      }
+      if (lKDGINHBIEC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, lKDGINHBIEC_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(13, levelId_);
       }
-      if (lFBHELGMOEG_ != 0) {
+      if (nMNKDGJMPHI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, lFBHELGMOEG_);
-      }
-      if (bGADBINJGCA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bGADBINJGCA_);
-      }
-      if (eJIIPODEINA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, eJIIPODEINA_);
-      }
-      if (gLNOACCLDIC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, gLNOACCLDIC_);
+          .computeUInt32Size(15, nMNKDGJMPHI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +307,18 @@ public final class SlimeCannonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo other = (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) obj;
 
-      if (getBDHEDKMFOHG()
-          != other.getBDHEDKMFOHG()) return false;
-      if (getBGADBINJGCA()
-          != other.getBGADBINJGCA()) return false;
-      if (getLFBHELGMOEG()
-          != other.getLFBHELGMOEG()) return false;
-      if (getGLNOACCLDIC()
-          != other.getGLNOACCLDIC()) return false;
-      if (getEJIIPODEINA()
-          != other.getEJIIPODEINA()) return false;
+      if (getLAFHJJGOCNE()
+          != other.getLAFHJJGOCNE()) return false;
+      if (getJKKBGPIDLJB()
+          != other.getJKKBGPIDLJB()) return false;
+      if (getBGJOCAGINOM()
+          != other.getBGJOCAGINOM()) return false;
+      if (getLKDGINHBIEC()
+          != other.getLKDGINHBIEC()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getNMNKDGJMPHI()
+          != other.getNMNKDGJMPHI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,18 +330,18 @@ public final class SlimeCannonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BDHEDKMFOHG_FIELD_NUMBER;
-      hash = (53 * hash) + getBDHEDKMFOHG();
-      hash = (37 * hash) + BGADBINJGCA_FIELD_NUMBER;
-      hash = (53 * hash) + getBGADBINJGCA();
-      hash = (37 * hash) + LFBHELGMOEG_FIELD_NUMBER;
-      hash = (53 * hash) + getLFBHELGMOEG();
-      hash = (37 * hash) + GLNOACCLDIC_FIELD_NUMBER;
-      hash = (53 * hash) + getGLNOACCLDIC();
-      hash = (37 * hash) + EJIIPODEINA_FIELD_NUMBER;
-      hash = (53 * hash) + getEJIIPODEINA();
+      hash = (37 * hash) + LAFHJJGOCNE_FIELD_NUMBER;
+      hash = (53 * hash) + getLAFHJJGOCNE();
+      hash = (37 * hash) + JKKBGPIDLJB_FIELD_NUMBER;
+      hash = (53 * hash) + getJKKBGPIDLJB();
+      hash = (37 * hash) + BGJOCAGINOM_FIELD_NUMBER;
+      hash = (53 * hash) + getBGJOCAGINOM();
+      hash = (37 * hash) + LKDGINHBIEC_FIELD_NUMBER;
+      hash = (53 * hash) + getLKDGINHBIEC();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + NMNKDGJMPHI_FIELD_NUMBER;
+      hash = (53 * hash) + getNMNKDGJMPHI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,17 +475,17 @@ public final class SlimeCannonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bDHEDKMFOHG_ = 0;
+        lAFHJJGOCNE_ = 0;
 
-        bGADBINJGCA_ = 0;
+        jKKBGPIDLJB_ = 0;
 
-        lFBHELGMOEG_ = 0;
+        bGJOCAGINOM_ = 0;
 
-        gLNOACCLDIC_ = 0;
-
-        eJIIPODEINA_ = 0;
+        lKDGINHBIEC_ = 0;
 
         levelId_ = 0;
+
+        nMNKDGJMPHI_ = 0;
 
         return this;
       }
@@ -513,12 +513,12 @@ public final class SlimeCannonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo result = new emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo(this);
-        result.bDHEDKMFOHG_ = bDHEDKMFOHG_;
-        result.bGADBINJGCA_ = bGADBINJGCA_;
-        result.lFBHELGMOEG_ = lFBHELGMOEG_;
-        result.gLNOACCLDIC_ = gLNOACCLDIC_;
-        result.eJIIPODEINA_ = eJIIPODEINA_;
+        result.lAFHJJGOCNE_ = lAFHJJGOCNE_;
+        result.jKKBGPIDLJB_ = jKKBGPIDLJB_;
+        result.bGJOCAGINOM_ = bGJOCAGINOM_;
+        result.lKDGINHBIEC_ = lKDGINHBIEC_;
         result.levelId_ = levelId_;
+        result.nMNKDGJMPHI_ = nMNKDGJMPHI_;
         onBuilt();
         return result;
       }
@@ -567,23 +567,23 @@ public final class SlimeCannonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance()) return this;
-        if (other.getBDHEDKMFOHG() != 0) {
-          setBDHEDKMFOHG(other.getBDHEDKMFOHG());
+        if (other.getLAFHJJGOCNE() != 0) {
+          setLAFHJJGOCNE(other.getLAFHJJGOCNE());
         }
-        if (other.getBGADBINJGCA() != 0) {
-          setBGADBINJGCA(other.getBGADBINJGCA());
+        if (other.getJKKBGPIDLJB() != 0) {
+          setJKKBGPIDLJB(other.getJKKBGPIDLJB());
         }
-        if (other.getLFBHELGMOEG() != 0) {
-          setLFBHELGMOEG(other.getLFBHELGMOEG());
+        if (other.getBGJOCAGINOM() != 0) {
+          setBGJOCAGINOM(other.getBGJOCAGINOM());
         }
-        if (other.getGLNOACCLDIC() != 0) {
-          setGLNOACCLDIC(other.getGLNOACCLDIC());
-        }
-        if (other.getEJIIPODEINA() != 0) {
-          setEJIIPODEINA(other.getEJIIPODEINA());
+        if (other.getLKDGINHBIEC() != 0) {
+          setLKDGINHBIEC(other.getLKDGINHBIEC());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getNMNKDGJMPHI() != 0) {
+          setNMNKDGJMPHI(other.getNMNKDGJMPHI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -614,164 +614,133 @@ public final class SlimeCannonSettleInfoOuterClass {
         return this;
       }
 
-      private int bDHEDKMFOHG_ ;
+      private int lAFHJJGOCNE_ ;
       /**
-       * <code>uint32 BDHEDKMFOHG = 1;</code>
-       * @return The bDHEDKMFOHG.
+       * <code>uint32 LAFHJJGOCNE = 1;</code>
+       * @return The lAFHJJGOCNE.
        */
       @java.lang.Override
-      public int getBDHEDKMFOHG() {
-        return bDHEDKMFOHG_;
+      public int getLAFHJJGOCNE() {
+        return lAFHJJGOCNE_;
       }
       /**
-       * <code>uint32 BDHEDKMFOHG = 1;</code>
-       * @param value The bDHEDKMFOHG to set.
+       * <code>uint32 LAFHJJGOCNE = 1;</code>
+       * @param value The lAFHJJGOCNE to set.
        * @return This builder for chaining.
        */
-      public Builder setBDHEDKMFOHG(int value) {
+      public Builder setLAFHJJGOCNE(int value) {
         
-        bDHEDKMFOHG_ = value;
+        lAFHJJGOCNE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BDHEDKMFOHG = 1;</code>
+       * <code>uint32 LAFHJJGOCNE = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBDHEDKMFOHG() {
+      public Builder clearLAFHJJGOCNE() {
         
-        bDHEDKMFOHG_ = 0;
+        lAFHJJGOCNE_ = 0;
         onChanged();
         return this;
       }
 
-      private int bGADBINJGCA_ ;
+      private int jKKBGPIDLJB_ ;
       /**
-       * <code>uint32 BGADBINJGCA = 9;</code>
-       * @return The bGADBINJGCA.
+       * <code>uint32 JKKBGPIDLJB = 3;</code>
+       * @return The jKKBGPIDLJB.
        */
       @java.lang.Override
-      public int getBGADBINJGCA() {
-        return bGADBINJGCA_;
+      public int getJKKBGPIDLJB() {
+        return jKKBGPIDLJB_;
       }
       /**
-       * <code>uint32 BGADBINJGCA = 9;</code>
-       * @param value The bGADBINJGCA to set.
+       * <code>uint32 JKKBGPIDLJB = 3;</code>
+       * @param value The jKKBGPIDLJB to set.
        * @return This builder for chaining.
        */
-      public Builder setBGADBINJGCA(int value) {
+      public Builder setJKKBGPIDLJB(int value) {
         
-        bGADBINJGCA_ = value;
+        jKKBGPIDLJB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BGADBINJGCA = 9;</code>
+       * <code>uint32 JKKBGPIDLJB = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBGADBINJGCA() {
+      public Builder clearJKKBGPIDLJB() {
         
-        bGADBINJGCA_ = 0;
+        jKKBGPIDLJB_ = 0;
         onChanged();
         return this;
       }
 
-      private int lFBHELGMOEG_ ;
+      private int bGJOCAGINOM_ ;
       /**
-       * <code>uint32 LFBHELGMOEG = 8;</code>
-       * @return The lFBHELGMOEG.
+       * <code>uint32 BGJOCAGINOM = 7;</code>
+       * @return The bGJOCAGINOM.
        */
       @java.lang.Override
-      public int getLFBHELGMOEG() {
-        return lFBHELGMOEG_;
+      public int getBGJOCAGINOM() {
+        return bGJOCAGINOM_;
       }
       /**
-       * <code>uint32 LFBHELGMOEG = 8;</code>
-       * @param value The lFBHELGMOEG to set.
+       * <code>uint32 BGJOCAGINOM = 7;</code>
+       * @param value The bGJOCAGINOM to set.
        * @return This builder for chaining.
        */
-      public Builder setLFBHELGMOEG(int value) {
+      public Builder setBGJOCAGINOM(int value) {
         
-        lFBHELGMOEG_ = value;
+        bGJOCAGINOM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LFBHELGMOEG = 8;</code>
+       * <code>uint32 BGJOCAGINOM = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLFBHELGMOEG() {
+      public Builder clearBGJOCAGINOM() {
         
-        lFBHELGMOEG_ = 0;
+        bGJOCAGINOM_ = 0;
         onChanged();
         return this;
       }
 
-      private int gLNOACCLDIC_ ;
+      private int lKDGINHBIEC_ ;
       /**
-       * <code>uint32 GLNOACCLDIC = 13;</code>
-       * @return The gLNOACCLDIC.
+       * <code>uint32 LKDGINHBIEC = 9;</code>
+       * @return The lKDGINHBIEC.
        */
       @java.lang.Override
-      public int getGLNOACCLDIC() {
-        return gLNOACCLDIC_;
+      public int getLKDGINHBIEC() {
+        return lKDGINHBIEC_;
       }
       /**
-       * <code>uint32 GLNOACCLDIC = 13;</code>
-       * @param value The gLNOACCLDIC to set.
+       * <code>uint32 LKDGINHBIEC = 9;</code>
+       * @param value The lKDGINHBIEC to set.
        * @return This builder for chaining.
        */
-      public Builder setGLNOACCLDIC(int value) {
+      public Builder setLKDGINHBIEC(int value) {
         
-        gLNOACCLDIC_ = value;
+        lKDGINHBIEC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GLNOACCLDIC = 13;</code>
+       * <code>uint32 LKDGINHBIEC = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGLNOACCLDIC() {
+      public Builder clearLKDGINHBIEC() {
         
-        gLNOACCLDIC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eJIIPODEINA_ ;
-      /**
-       * <code>uint32 EJIIPODEINA = 10;</code>
-       * @return The eJIIPODEINA.
-       */
-      @java.lang.Override
-      public int getEJIIPODEINA() {
-        return eJIIPODEINA_;
-      }
-      /**
-       * <code>uint32 EJIIPODEINA = 10;</code>
-       * @param value The eJIIPODEINA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEJIIPODEINA(int value) {
-        
-        eJIIPODEINA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EJIIPODEINA = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEJIIPODEINA() {
-        
-        eJIIPODEINA_ = 0;
+        lKDGINHBIEC_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -779,7 +748,7 @@ public final class SlimeCannonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -790,12 +759,43 @@ public final class SlimeCannonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMNKDGJMPHI_ ;
+      /**
+       * <code>uint32 NMNKDGJMPHI = 15;</code>
+       * @return The nMNKDGJMPHI.
+       */
+      @java.lang.Override
+      public int getNMNKDGJMPHI() {
+        return nMNKDGJMPHI_;
+      }
+      /**
+       * <code>uint32 NMNKDGJMPHI = 15;</code>
+       * @param value The nMNKDGJMPHI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMNKDGJMPHI(int value) {
+        
+        nMNKDGJMPHI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NMNKDGJMPHI = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMNKDGJMPHI() {
+        
+        nMNKDGJMPHI_ = 0;
         onChanged();
         return this;
       }
@@ -867,10 +867,10 @@ public final class SlimeCannonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SlimeCannonSettleInfo.proto\"\222\001\n\025SlimeC" +
-      "annonSettleInfo\022\023\n\013BDHEDKMFOHG\030\001 \001(\r\022\023\n\013" +
-      "BGADBINJGCA\030\t \001(\r\022\023\n\013LFBHELGMOEG\030\010 \001(\r\022\023" +
-      "\n\013GLNOACCLDIC\030\r \001(\r\022\023\n\013EJIIPODEINA\030\n \001(\r" +
-      "\022\020\n\010level_id\030\005 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "annonSettleInfo\022\023\n\013LAFHJJGOCNE\030\001 \001(\r\022\023\n\013" +
+      "JKKBGPIDLJB\030\003 \001(\r\022\023\n\013BGJOCAGINOM\030\007 \001(\r\022\023" +
+      "\n\013LKDGINHBIEC\030\t \001(\r\022\020\n\010level_id\030\r \001(\r\022\023\n" +
+      "\013NMNKDGJMPHI\030\017 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -882,7 +882,7 @@ public final class SlimeCannonSettleInfoOuterClass {
     internal_static_SlimeCannonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SlimeCannonSettleInfo_descriptor,
-        new java.lang.String[] { "BDHEDKMFOHG", "BGADBINJGCA", "LFBHELGMOEG", "GLNOACCLDIC", "EJIIPODEINA", "LevelId", });
+        new java.lang.String[] { "LAFHJJGOCNE", "JKKBGPIDLJB", "BGJOCAGINOM", "LKDGINHBIEC", "LevelId", "NMNKDGJMPHI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

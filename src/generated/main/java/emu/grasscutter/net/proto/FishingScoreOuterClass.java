@@ -19,16 +19,16 @@ public final class FishingScoreOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fishing_score = 13;</code>
-     * @return The fishingScore.
-     */
-    int getFishingScore();
-
-    /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 fishing_score = 7;</code>
+     * @return The fishingScore.
+     */
+    int getFishingScore();
   }
   /**
    * Protobuf type {@code FishingScore}
@@ -75,12 +75,12 @@ public final class FishingScoreOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 104: {
+            case 56: {
 
               fishingScore_ = input.readUInt32();
               break;
@@ -117,26 +117,26 @@ public final class FishingScoreOuterClass {
               emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.class, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder.class);
     }
 
-    public static final int FISHING_SCORE_FIELD_NUMBER = 13;
-    private int fishingScore_;
-    /**
-     * <code>uint32 fishing_score = 13;</code>
-     * @return The fishingScore.
-     */
-    @java.lang.Override
-    public int getFishingScore() {
-      return fishingScore_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
+    }
+
+    public static final int FISHING_SCORE_FIELD_NUMBER = 7;
+    private int fishingScore_;
+    /**
+     * <code>uint32 fishing_score = 7;</code>
+     * @return The fishingScore.
+     */
+    @java.lang.Override
+    public int getFishingScore() {
+      return fishingScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,10 +154,10 @@ public final class FishingScoreOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+        output.writeBool(5, isNewRecord_);
       }
       if (fishingScore_ != 0) {
-        output.writeUInt32(13, fishingScore_);
+        output.writeUInt32(7, fishingScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class FishingScoreOuterClass {
       size = 0;
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(5, isNewRecord_);
       }
       if (fishingScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, fishingScore_);
+          .computeUInt32Size(7, fishingScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class FishingScoreOuterClass {
       }
       emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore other = (emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore) obj;
 
-      if (getFishingScore()
-          != other.getFishingScore()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getFishingScore()
+          != other.getFishingScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +206,11 @@ public final class FishingScoreOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FISHING_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFishingScore();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + FISHING_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getFishingScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +344,9 @@ public final class FishingScoreOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fishingScore_ = 0;
-
         isNewRecord_ = false;
+
+        fishingScore_ = 0;
 
         return this;
       }
@@ -374,8 +374,8 @@ public final class FishingScoreOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore buildPartial() {
         emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore result = new emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore(this);
-        result.fishingScore_ = fishingScore_;
         result.isNewRecord_ = isNewRecord_;
+        result.fishingScore_ = fishingScore_;
         onBuilt();
         return result;
       }
@@ -424,11 +424,11 @@ public final class FishingScoreOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore other) {
         if (other == emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.getDefaultInstance()) return this;
-        if (other.getFishingScore() != 0) {
-          setFishingScore(other.getFishingScore());
-        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getFishingScore() != 0) {
+          setFishingScore(other.getFishingScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,40 +459,9 @@ public final class FishingScoreOuterClass {
         return this;
       }
 
-      private int fishingScore_ ;
-      /**
-       * <code>uint32 fishing_score = 13;</code>
-       * @return The fishingScore.
-       */
-      @java.lang.Override
-      public int getFishingScore() {
-        return fishingScore_;
-      }
-      /**
-       * <code>uint32 fishing_score = 13;</code>
-       * @param value The fishingScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFishingScore(int value) {
-        
-        fishingScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 fishing_score = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFishingScore() {
-        
-        fishingScore_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -500,7 +469,7 @@ public final class FishingScoreOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 5;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -511,12 +480,43 @@ public final class FishingScoreOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int fishingScore_ ;
+      /**
+       * <code>uint32 fishing_score = 7;</code>
+       * @return The fishingScore.
+       */
+      @java.lang.Override
+      public int getFishingScore() {
+        return fishingScore_;
+      }
+      /**
+       * <code>uint32 fishing_score = 7;</code>
+       * @param value The fishingScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFishingScore(int value) {
+        
+        fishingScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 fishing_score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFishingScore() {
+        
+        fishingScore_ = 0;
         onChanged();
         return this;
       }
@@ -588,8 +588,8 @@ public final class FishingScoreOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022FishingScore.proto\"<\n\014FishingScore\022\025\n\r" +
-      "fishing_score\030\r \001(\r\022\025\n\ris_new_record\030\t \001" +
-      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "is_new_record\030\005 \001(\010\022\025\n\rfishing_score\030\007 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class FishingScoreOuterClass {
     internal_static_FishingScore_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishingScore_descriptor,
-        new java.lang.String[] { "FishingScore", "IsNewRecord", });
+        new java.lang.String[] { "IsNewRecord", "FishingScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

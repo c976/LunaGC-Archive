@@ -19,27 +19,47 @@ public final class TowerChallengeDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> 
         getLevelInfoListList();
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC getLevelInfoList(int index);
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class TowerChallengeDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class TowerChallengeDetailInfoOuterClass {
               emu.grasscutter.net.proto.TowerChallengeDetailInfoOuterClass.TowerChallengeDetailInfo.class, emu.grasscutter.net.proto.TowerChallengeDetailInfoOuterClass.TowerChallengeDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> levelInfoList_;
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class TowerChallengeDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(8, levelInfoList_.get(i));
+        output.writeMessage(9, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class TowerChallengeDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, levelInfoList_.get(i));
+          .computeMessageSize(9, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class TowerChallengeDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class TowerChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class TowerChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo value) {
+          int index, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo value) {
+          int index, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class TowerChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class TowerChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class TowerChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerChallengeLevelInfo level_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KKDBGFDHLOC level_info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfo.Builder, emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.TowerChallengeLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOC.Builder, emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.KKDBGFDHLOCOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class TowerChallengeDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036TowerChallengeDetailInfo.proto\032\035TowerC" +
-      "hallengeLevelInfo.proto\"M\n\030TowerChalleng" +
-      "eDetailInfo\0221\n\017level_info_list\030\010 \003(\0132\030.T" +
-      "owerChallengeLevelInfoB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\036TowerChallengeDetailInfo.proto\032\021KKDBGF" +
+      "DHLOC.proto\"A\n\030TowerChallengeDetailInfo\022" +
+      "%\n\017level_info_list\030\t \003(\0132\014.KKDBGFDHLOCB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.getDescriptor(),
         });
     internal_static_TowerChallengeDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class TowerChallengeDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerChallengeDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.TowerChallengeLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.KKDBGFDHLOCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

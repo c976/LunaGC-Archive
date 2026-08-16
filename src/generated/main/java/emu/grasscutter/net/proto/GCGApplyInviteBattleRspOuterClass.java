@@ -19,23 +19,22 @@ public final class GCGApplyInviteBattleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * CMD_ID = 25746
+     * </pre>
+     *
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 punish_end_time = 7;</code>
+     * <code>uint32 punish_end_time = 2;</code>
      * @return The punishEndTime.
      */
     int getPunishEndTime();
   }
   /**
-   * <pre>
-   * CmdId: 6602
-   * Obf: NCDDDLDKEKK
-   * </pre>
-   *
    * Protobuf type {@code GCGApplyInviteBattleRsp}
    */
   public static final class GCGApplyInviteBattleRsp extends
@@ -80,14 +79,14 @@ public final class GCGApplyInviteBattleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               punishEndTime_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +121,14 @@ public final class GCGApplyInviteBattleRspOuterClass {
               emu.grasscutter.net.proto.GCGApplyInviteBattleRspOuterClass.GCGApplyInviteBattleRsp.class, emu.grasscutter.net.proto.GCGApplyInviteBattleRspOuterClass.GCGApplyInviteBattleRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <pre>
+     * CMD_ID = 25746
+     * </pre>
+     *
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +136,10 @@ public final class GCGApplyInviteBattleRspOuterClass {
       return retcode_;
     }
 
-    public static final int PUNISH_END_TIME_FIELD_NUMBER = 7;
+    public static final int PUNISH_END_TIME_FIELD_NUMBER = 2;
     private int punishEndTime_;
     /**
-     * <code>uint32 punish_end_time = 7;</code>
+     * <code>uint32 punish_end_time = 2;</code>
      * @return The punishEndTime.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGApplyInviteBattleRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (punishEndTime_ != 0) {
-        output.writeUInt32(7, punishEndTime_);
+        output.writeUInt32(2, punishEndTime_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGApplyInviteBattleRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       if (punishEndTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, punishEndTime_);
+          .computeUInt32Size(2, punishEndTime_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,11 +314,6 @@ public final class GCGApplyInviteBattleRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6602
-     * Obf: NCDDDLDKEKK
-     * </pre>
-     *
      * Protobuf type {@code GCGApplyInviteBattleRsp}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class GCGApplyInviteBattleRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * CMD_ID = 25746
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class GCGApplyInviteBattleRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * CMD_ID = 25746
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class GCGApplyInviteBattleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <pre>
+       * CMD_ID = 25746
+       * </pre>
+       *
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +511,7 @@ public final class GCGApplyInviteBattleRspOuterClass {
 
       private int punishEndTime_ ;
       /**
-       * <code>uint32 punish_end_time = 7;</code>
+       * <code>uint32 punish_end_time = 2;</code>
        * @return The punishEndTime.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGApplyInviteBattleRspOuterClass {
         return punishEndTime_;
       }
       /**
-       * <code>uint32 punish_end_time = 7;</code>
+       * <code>uint32 punish_end_time = 2;</code>
        * @param value The punishEndTime to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGApplyInviteBattleRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 punish_end_time = 7;</code>
+       * <code>uint32 punish_end_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPunishEndTime() {
@@ -597,8 +607,8 @@ public final class GCGApplyInviteBattleRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GCGApplyInviteBattleRsp.proto\"C\n\027GCGAp" +
-      "plyInviteBattleRsp\022\017\n\007retcode\030\004 \001(\005\022\027\n\017p" +
-      "unish_end_time\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "plyInviteBattleRsp\022\017\n\007retcode\030\003 \001(\005\022\027\n\017p" +
+      "unish_end_time\030\002 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

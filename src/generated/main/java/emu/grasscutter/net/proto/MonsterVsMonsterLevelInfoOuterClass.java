@@ -19,63 +19,103 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @return A list containing the aMNMAGDLPPF.
      */
     java.util.List<java.lang.Integer> getAMNMAGDLPPFList();
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @return The count of aMNMAGDLPPF.
      */
     int getAMNMAGDLPPFCount();
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @param index The index of the element to return.
      * @return The aMNMAGDLPPF at the given index.
      */
     int getAMNMAGDLPPF(int index);
 
     /**
-     * <code>uint32 ALKBDFNFAHH = 12;</code>
-     * @return The aLKBDFNFAHH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool BEHBBCGCJLE = 11;</code>
+     * @return The bEHBBCGCJLE.
      */
-    int getALKBDFNFAHH();
+    boolean getBEHBBCGCJLE();
 
     /**
-     * <code>uint32 level_id = 9;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 GFGFBFFJHKA = 15;</code>
-     * @return The gFGFBFFJHKA.
-     */
-    int getGFGFBFFJHKA();
-
-    /**
-     * <code>uint32 JKNAIKCGDFN = 4;</code>
-     * @return The jKNAIKCGDFN.
-     */
-    int getJKNAIKCGDFN();
-
-    /**
-     * <code>bool ICGFHPJKALD = 7;</code>
-     * @return The iCGFHPJKALD.
-     */
-    boolean getICGFHPJKALD();
-
-    /**
-     * <code>bool is_unlock = 6;</code>
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool is_unlock = 5;</code>
      * @return The isUnlock.
      */
     boolean getIsUnlock();
 
     /**
-     * <code>bool is_finished = 3;</code>
+     * <pre>
+     * offset: 42
+     * </pre>
+     *
+     * <code>bool is_finished = 12;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NAKGKEOMNMH = 7;</code>
+     * @return The nAKGKEOMNMH.
+     */
+    int getNAKGKEOMNMH();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EMNPGIFDBKL = 10;</code>
+     * @return The eMNPGIFDBKL.
+     */
+    int getEMNPGIFDBKL();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 AGGFAGDCBEE = 14;</code>
+     * @return The aGGFAGDCBEE.
+     */
+    int getAGGFAGDCBEE();
   }
   /**
    * Protobuf type {@code MonsterVsMonsterLevelInfo}
@@ -124,7 +164,7 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 aMNMAGDLPPF_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -132,7 +172,7 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
               aMNMAGDLPPF_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,39 +185,39 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 24: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              jKNAIKCGDFN_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 40: {
 
               isUnlock_ = input.readBool();
               break;
             }
             case 56: {
 
-              iCGFHPJKALD_ = input.readBool();
+              nAKGKEOMNMH_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 64: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              aLKBDFNFAHH_ = input.readUInt32();
+              eMNPGIFDBKL_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              gFGFBFFJHKA_ = input.readUInt32();
+              bEHBBCGCJLE_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              isFinished_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              aGGFAGDCBEE_ = input.readUInt32();
               break;
             }
             default: {
@@ -215,10 +255,14 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
               emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.class, emu.grasscutter.net.proto.MonsterVsMonsterLevelInfoOuterClass.MonsterVsMonsterLevelInfo.Builder.class);
     }
 
-    public static final int AMNMAGDLPPF_FIELD_NUMBER = 1;
+    public static final int AMNMAGDLPPF_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList aMNMAGDLPPF_;
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @return A list containing the aMNMAGDLPPF.
      */
     @java.lang.Override
@@ -227,14 +271,22 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
       return aMNMAGDLPPF_;
     }
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @return The count of aMNMAGDLPPF.
      */
     public int getAMNMAGDLPPFCount() {
       return aMNMAGDLPPF_.size();
     }
     /**
-     * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
      * @param index The index of the element to return.
      * @return The aMNMAGDLPPF at the given index.
      */
@@ -243,65 +295,29 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
     }
     private int aMNMAGDLPPFMemoizedSerializedSize = -1;
 
-    public static final int ALKBDFNFAHH_FIELD_NUMBER = 12;
-    private int aLKBDFNFAHH_;
+    public static final int BEHBBCGCJLE_FIELD_NUMBER = 11;
+    private boolean bEHBBCGCJLE_;
     /**
-     * <code>uint32 ALKBDFNFAHH = 12;</code>
-     * @return The aLKBDFNFAHH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool BEHBBCGCJLE = 11;</code>
+     * @return The bEHBBCGCJLE.
      */
     @java.lang.Override
-    public int getALKBDFNFAHH() {
-      return aLKBDFNFAHH_;
+    public boolean getBEHBBCGCJLE() {
+      return bEHBBCGCJLE_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 9;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int GFGFBFFJHKA_FIELD_NUMBER = 15;
-    private int gFGFBFFJHKA_;
-    /**
-     * <code>uint32 GFGFBFFJHKA = 15;</code>
-     * @return The gFGFBFFJHKA.
-     */
-    @java.lang.Override
-    public int getGFGFBFFJHKA() {
-      return gFGFBFFJHKA_;
-    }
-
-    public static final int JKNAIKCGDFN_FIELD_NUMBER = 4;
-    private int jKNAIKCGDFN_;
-    /**
-     * <code>uint32 JKNAIKCGDFN = 4;</code>
-     * @return The jKNAIKCGDFN.
-     */
-    @java.lang.Override
-    public int getJKNAIKCGDFN() {
-      return jKNAIKCGDFN_;
-    }
-
-    public static final int ICGFHPJKALD_FIELD_NUMBER = 7;
-    private boolean iCGFHPJKALD_;
-    /**
-     * <code>bool ICGFHPJKALD = 7;</code>
-     * @return The iCGFHPJKALD.
-     */
-    @java.lang.Override
-    public boolean getICGFHPJKALD() {
-      return iCGFHPJKALD_;
-    }
-
-    public static final int IS_UNLOCK_FIELD_NUMBER = 6;
+    public static final int IS_UNLOCK_FIELD_NUMBER = 5;
     private boolean isUnlock_;
     /**
-     * <code>bool is_unlock = 6;</code>
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool is_unlock = 5;</code>
      * @return The isUnlock.
      */
     @java.lang.Override
@@ -309,15 +325,79 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
       return isUnlock_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 3;
+    public static final int IS_FINISHED_FIELD_NUMBER = 12;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 3;</code>
+     * <pre>
+     * offset: 42
+     * </pre>
+     *
+     * <code>bool is_finished = 12;</code>
      * @return The isFinished.
      */
     @java.lang.Override
     public boolean getIsFinished() {
       return isFinished_;
+    }
+
+    public static final int NAKGKEOMNMH_FIELD_NUMBER = 7;
+    private int nAKGKEOMNMH_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NAKGKEOMNMH = 7;</code>
+     * @return The nAKGKEOMNMH.
+     */
+    @java.lang.Override
+    public int getNAKGKEOMNMH() {
+      return nAKGKEOMNMH_;
+    }
+
+    public static final int EMNPGIFDBKL_FIELD_NUMBER = 10;
+    private int eMNPGIFDBKL_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EMNPGIFDBKL = 10;</code>
+     * @return The eMNPGIFDBKL.
+     */
+    @java.lang.Override
+    public int getEMNPGIFDBKL() {
+      return eMNPGIFDBKL_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int AGGFAGDCBEE_FIELD_NUMBER = 14;
+    private int aGGFAGDCBEE_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 AGGFAGDCBEE = 14;</code>
+     * @return The aGGFAGDCBEE.
+     */
+    @java.lang.Override
+    public int getAGGFAGDCBEE() {
+      return aGGFAGDCBEE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -336,32 +416,32 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAMNMAGDLPPFList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(aMNMAGDLPPFMemoizedSerializedSize);
       }
       for (int i = 0; i < aMNMAGDLPPF_.size(); i++) {
         output.writeUInt32NoTag(aMNMAGDLPPF_.getInt(i));
       }
-      if (isFinished_ != false) {
-        output.writeBool(3, isFinished_);
-      }
-      if (jKNAIKCGDFN_ != 0) {
-        output.writeUInt32(4, jKNAIKCGDFN_);
-      }
       if (isUnlock_ != false) {
-        output.writeBool(6, isUnlock_);
+        output.writeBool(5, isUnlock_);
       }
-      if (iCGFHPJKALD_ != false) {
-        output.writeBool(7, iCGFHPJKALD_);
+      if (nAKGKEOMNMH_ != 0) {
+        output.writeUInt32(7, nAKGKEOMNMH_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(8, levelId_);
       }
-      if (aLKBDFNFAHH_ != 0) {
-        output.writeUInt32(12, aLKBDFNFAHH_);
+      if (eMNPGIFDBKL_ != 0) {
+        output.writeUInt32(10, eMNPGIFDBKL_);
       }
-      if (gFGFBFFJHKA_ != 0) {
-        output.writeUInt32(15, gFGFBFFJHKA_);
+      if (bEHBBCGCJLE_ != false) {
+        output.writeBool(11, bEHBBCGCJLE_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(12, isFinished_);
+      }
+      if (aGGFAGDCBEE_ != 0) {
+        output.writeUInt32(14, aGGFAGDCBEE_);
       }
       unknownFields.writeTo(output);
     }
@@ -386,33 +466,33 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         }
         aMNMAGDLPPFMemoizedSerializedSize = dataSize;
       }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinished_);
-      }
-      if (jKNAIKCGDFN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, jKNAIKCGDFN_);
-      }
       if (isUnlock_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isUnlock_);
+          .computeBoolSize(5, isUnlock_);
       }
-      if (iCGFHPJKALD_ != false) {
+      if (nAKGKEOMNMH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, iCGFHPJKALD_);
+          .computeUInt32Size(7, nAKGKEOMNMH_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(8, levelId_);
       }
-      if (aLKBDFNFAHH_ != 0) {
+      if (eMNPGIFDBKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, aLKBDFNFAHH_);
+          .computeUInt32Size(10, eMNPGIFDBKL_);
       }
-      if (gFGFBFFJHKA_ != 0) {
+      if (bEHBBCGCJLE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gFGFBFFJHKA_);
+          .computeBoolSize(11, bEHBBCGCJLE_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isFinished_);
+      }
+      if (aGGFAGDCBEE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, aGGFAGDCBEE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -431,20 +511,20 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
 
       if (!getAMNMAGDLPPFList()
           .equals(other.getAMNMAGDLPPFList())) return false;
-      if (getALKBDFNFAHH()
-          != other.getALKBDFNFAHH()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getGFGFBFFJHKA()
-          != other.getGFGFBFFJHKA()) return false;
-      if (getJKNAIKCGDFN()
-          != other.getJKNAIKCGDFN()) return false;
-      if (getICGFHPJKALD()
-          != other.getICGFHPJKALD()) return false;
+      if (getBEHBBCGCJLE()
+          != other.getBEHBBCGCJLE()) return false;
       if (getIsUnlock()
           != other.getIsUnlock()) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
+      if (getNAKGKEOMNMH()
+          != other.getNAKGKEOMNMH()) return false;
+      if (getEMNPGIFDBKL()
+          != other.getEMNPGIFDBKL()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getAGGFAGDCBEE()
+          != other.getAGGFAGDCBEE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,23 +540,23 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         hash = (37 * hash) + AMNMAGDLPPF_FIELD_NUMBER;
         hash = (53 * hash) + getAMNMAGDLPPFList().hashCode();
       }
-      hash = (37 * hash) + ALKBDFNFAHH_FIELD_NUMBER;
-      hash = (53 * hash) + getALKBDFNFAHH();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + GFGFBFFJHKA_FIELD_NUMBER;
-      hash = (53 * hash) + getGFGFBFFJHKA();
-      hash = (37 * hash) + JKNAIKCGDFN_FIELD_NUMBER;
-      hash = (53 * hash) + getJKNAIKCGDFN();
-      hash = (37 * hash) + ICGFHPJKALD_FIELD_NUMBER;
+      hash = (37 * hash) + BEHBBCGCJLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getICGFHPJKALD());
+          getBEHBBCGCJLE());
       hash = (37 * hash) + IS_UNLOCK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsUnlock());
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
+      hash = (37 * hash) + NAKGKEOMNMH_FIELD_NUMBER;
+      hash = (53 * hash) + getNAKGKEOMNMH();
+      hash = (37 * hash) + EMNPGIFDBKL_FIELD_NUMBER;
+      hash = (53 * hash) + getEMNPGIFDBKL();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + AGGFAGDCBEE_FIELD_NUMBER;
+      hash = (53 * hash) + getAGGFAGDCBEE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -612,19 +692,19 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         super.clear();
         aMNMAGDLPPF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        aLKBDFNFAHH_ = 0;
-
-        levelId_ = 0;
-
-        gFGFBFFJHKA_ = 0;
-
-        jKNAIKCGDFN_ = 0;
-
-        iCGFHPJKALD_ = false;
+        bEHBBCGCJLE_ = false;
 
         isUnlock_ = false;
 
         isFinished_ = false;
+
+        nAKGKEOMNMH_ = 0;
+
+        eMNPGIFDBKL_ = 0;
+
+        levelId_ = 0;
+
+        aGGFAGDCBEE_ = 0;
 
         return this;
       }
@@ -658,13 +738,13 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.aMNMAGDLPPF_ = aMNMAGDLPPF_;
-        result.aLKBDFNFAHH_ = aLKBDFNFAHH_;
-        result.levelId_ = levelId_;
-        result.gFGFBFFJHKA_ = gFGFBFFJHKA_;
-        result.jKNAIKCGDFN_ = jKNAIKCGDFN_;
-        result.iCGFHPJKALD_ = iCGFHPJKALD_;
+        result.bEHBBCGCJLE_ = bEHBBCGCJLE_;
         result.isUnlock_ = isUnlock_;
         result.isFinished_ = isFinished_;
+        result.nAKGKEOMNMH_ = nAKGKEOMNMH_;
+        result.eMNPGIFDBKL_ = eMNPGIFDBKL_;
+        result.levelId_ = levelId_;
+        result.aGGFAGDCBEE_ = aGGFAGDCBEE_;
         onBuilt();
         return result;
       }
@@ -723,26 +803,26 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getALKBDFNFAHH() != 0) {
-          setALKBDFNFAHH(other.getALKBDFNFAHH());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getGFGFBFFJHKA() != 0) {
-          setGFGFBFFJHKA(other.getGFGFBFFJHKA());
-        }
-        if (other.getJKNAIKCGDFN() != 0) {
-          setJKNAIKCGDFN(other.getJKNAIKCGDFN());
-        }
-        if (other.getICGFHPJKALD() != false) {
-          setICGFHPJKALD(other.getICGFHPJKALD());
+        if (other.getBEHBBCGCJLE() != false) {
+          setBEHBBCGCJLE(other.getBEHBBCGCJLE());
         }
         if (other.getIsUnlock() != false) {
           setIsUnlock(other.getIsUnlock());
         }
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
+        }
+        if (other.getNAKGKEOMNMH() != 0) {
+          setNAKGKEOMNMH(other.getNAKGKEOMNMH());
+        }
+        if (other.getEMNPGIFDBKL() != 0) {
+          setEMNPGIFDBKL(other.getEMNPGIFDBKL());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getAGGFAGDCBEE() != 0) {
+          setAGGFAGDCBEE(other.getAGGFAGDCBEE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -782,7 +862,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @return A list containing the aMNMAGDLPPF.
        */
       public java.util.List<java.lang.Integer>
@@ -791,14 +875,22 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
                  java.util.Collections.unmodifiableList(aMNMAGDLPPF_) : aMNMAGDLPPF_;
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @return The count of aMNMAGDLPPF.
        */
       public int getAMNMAGDLPPFCount() {
         return aMNMAGDLPPF_.size();
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @param index The index of the element to return.
        * @return The aMNMAGDLPPF at the given index.
        */
@@ -806,7 +898,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return aMNMAGDLPPF_.getInt(index);
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @param index The index to set the value at.
        * @param value The aMNMAGDLPPF to set.
        * @return This builder for chaining.
@@ -819,7 +915,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @param value The aMNMAGDLPPF to add.
        * @return This builder for chaining.
        */
@@ -830,7 +930,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @param values The aMNMAGDLPPF to add.
        * @return This builder for chaining.
        */
@@ -843,7 +947,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AMNMAGDLPPF = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 AMNMAGDLPPF = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearAMNMAGDLPPF() {
@@ -853,164 +961,56 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
 
-      private int aLKBDFNFAHH_ ;
+      private boolean bEHBBCGCJLE_ ;
       /**
-       * <code>uint32 ALKBDFNFAHH = 12;</code>
-       * @return The aLKBDFNFAHH.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool BEHBBCGCJLE = 11;</code>
+       * @return The bEHBBCGCJLE.
        */
       @java.lang.Override
-      public int getALKBDFNFAHH() {
-        return aLKBDFNFAHH_;
+      public boolean getBEHBBCGCJLE() {
+        return bEHBBCGCJLE_;
       }
       /**
-       * <code>uint32 ALKBDFNFAHH = 12;</code>
-       * @param value The aLKBDFNFAHH to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool BEHBBCGCJLE = 11;</code>
+       * @param value The bEHBBCGCJLE to set.
        * @return This builder for chaining.
        */
-      public Builder setALKBDFNFAHH(int value) {
+      public Builder setBEHBBCGCJLE(boolean value) {
         
-        aLKBDFNFAHH_ = value;
+        bEHBBCGCJLE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ALKBDFNFAHH = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool BEHBBCGCJLE = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearALKBDFNFAHH() {
+      public Builder clearBEHBBCGCJLE() {
         
-        aLKBDFNFAHH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gFGFBFFJHKA_ ;
-      /**
-       * <code>uint32 GFGFBFFJHKA = 15;</code>
-       * @return The gFGFBFFJHKA.
-       */
-      @java.lang.Override
-      public int getGFGFBFFJHKA() {
-        return gFGFBFFJHKA_;
-      }
-      /**
-       * <code>uint32 GFGFBFFJHKA = 15;</code>
-       * @param value The gFGFBFFJHKA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGFGFBFFJHKA(int value) {
-        
-        gFGFBFFJHKA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GFGFBFFJHKA = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGFGFBFFJHKA() {
-        
-        gFGFBFFJHKA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jKNAIKCGDFN_ ;
-      /**
-       * <code>uint32 JKNAIKCGDFN = 4;</code>
-       * @return The jKNAIKCGDFN.
-       */
-      @java.lang.Override
-      public int getJKNAIKCGDFN() {
-        return jKNAIKCGDFN_;
-      }
-      /**
-       * <code>uint32 JKNAIKCGDFN = 4;</code>
-       * @param value The jKNAIKCGDFN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJKNAIKCGDFN(int value) {
-        
-        jKNAIKCGDFN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JKNAIKCGDFN = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJKNAIKCGDFN() {
-        
-        jKNAIKCGDFN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean iCGFHPJKALD_ ;
-      /**
-       * <code>bool ICGFHPJKALD = 7;</code>
-       * @return The iCGFHPJKALD.
-       */
-      @java.lang.Override
-      public boolean getICGFHPJKALD() {
-        return iCGFHPJKALD_;
-      }
-      /**
-       * <code>bool ICGFHPJKALD = 7;</code>
-       * @param value The iCGFHPJKALD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setICGFHPJKALD(boolean value) {
-        
-        iCGFHPJKALD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool ICGFHPJKALD = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearICGFHPJKALD() {
-        
-        iCGFHPJKALD_ = false;
+        bEHBBCGCJLE_ = false;
         onChanged();
         return this;
       }
 
       private boolean isUnlock_ ;
       /**
-       * <code>bool is_unlock = 6;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_unlock = 5;</code>
        * @return The isUnlock.
        */
       @java.lang.Override
@@ -1018,7 +1018,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return isUnlock_;
       }
       /**
-       * <code>bool is_unlock = 6;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_unlock = 5;</code>
        * @param value The isUnlock to set.
        * @return This builder for chaining.
        */
@@ -1029,7 +1033,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_unlock = 6;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_unlock = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUnlock() {
@@ -1041,7 +1049,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 3;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_finished = 12;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -1049,7 +1061,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_finished = 12;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -1060,12 +1076,188 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_finished = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
         
         isFinished_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int nAKGKEOMNMH_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NAKGKEOMNMH = 7;</code>
+       * @return The nAKGKEOMNMH.
+       */
+      @java.lang.Override
+      public int getNAKGKEOMNMH() {
+        return nAKGKEOMNMH_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NAKGKEOMNMH = 7;</code>
+       * @param value The nAKGKEOMNMH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNAKGKEOMNMH(int value) {
+        
+        nAKGKEOMNMH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NAKGKEOMNMH = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNAKGKEOMNMH() {
+        
+        nAKGKEOMNMH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eMNPGIFDBKL_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EMNPGIFDBKL = 10;</code>
+       * @return The eMNPGIFDBKL.
+       */
+      @java.lang.Override
+      public int getEMNPGIFDBKL() {
+        return eMNPGIFDBKL_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EMNPGIFDBKL = 10;</code>
+       * @param value The eMNPGIFDBKL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEMNPGIFDBKL(int value) {
+        
+        eMNPGIFDBKL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EMNPGIFDBKL = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEMNPGIFDBKL() {
+        
+        eMNPGIFDBKL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aGGFAGDCBEE_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 AGGFAGDCBEE = 14;</code>
+       * @return The aGGFAGDCBEE.
+       */
+      @java.lang.Override
+      public int getAGGFAGDCBEE() {
+        return aGGFAGDCBEE_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 AGGFAGDCBEE = 14;</code>
+       * @param value The aGGFAGDCBEE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAGGFAGDCBEE(int value) {
+        
+        aGGFAGDCBEE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 AGGFAGDCBEE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAGGFAGDCBEE() {
+        
+        aGGFAGDCBEE_ = 0;
         onChanged();
         return this;
       }
@@ -1137,11 +1329,11 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037MonsterVsMonsterLevelInfo.proto\"\276\001\n\031Mo" +
-      "nsterVsMonsterLevelInfo\022\023\n\013AMNMAGDLPPF\030\001" +
-      " \003(\r\022\023\n\013ALKBDFNFAHH\030\014 \001(\r\022\020\n\010level_id\030\t " +
-      "\001(\r\022\023\n\013GFGFBFFJHKA\030\017 \001(\r\022\023\n\013JKNAIKCGDFN\030" +
-      "\004 \001(\r\022\023\n\013ICGFHPJKALD\030\007 \001(\010\022\021\n\tis_unlock\030" +
-      "\006 \001(\010\022\023\n\013is_finished\030\003 \001(\010B\033\n\031emu.grassc" +
+      "nsterVsMonsterLevelInfo\022\023\n\013AMNMAGDLPPF\030\004" +
+      " \003(\r\022\023\n\013BEHBBCGCJLE\030\013 \001(\010\022\021\n\tis_unlock\030\005" +
+      " \001(\010\022\023\n\013is_finished\030\014 \001(\010\022\023\n\013NAKGKEOMNMH" +
+      "\030\007 \001(\r\022\023\n\013EMNPGIFDBKL\030\n \001(\r\022\020\n\010level_id\030" +
+      "\010 \001(\r\022\023\n\013AGGFAGDCBEE\030\016 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1153,7 +1345,7 @@ public final class MonsterVsMonsterLevelInfoOuterClass {
     internal_static_MonsterVsMonsterLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MonsterVsMonsterLevelInfo_descriptor,
-        new java.lang.String[] { "AMNMAGDLPPF", "ALKBDFNFAHH", "LevelId", "GFGFBFFJHKA", "JKNAIKCGDFN", "ICGFHPJKALD", "IsUnlock", "IsFinished", });
+        new java.lang.String[] { "AMNMAGDLPPF", "BEHBBCGCJLE", "IsUnlock", "IsFinished", "NAKGKEOMNMH", "EMNPGIFDBKL", "LevelId", "AGGFAGDCBEE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,27 +19,47 @@ public final class IslandPartyDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> 
+    java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> 
         getStageDataListList();
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
-    emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData getStageDataList(int index);
+    emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI getStageDataList(int index);
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     int getStageDataListCount();
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder> 
         getStageDataListOrBuilderList();
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
-    emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder getStageDataListOrBuilder(
+    emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder getStageDataListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class IslandPartyDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData>();
+                stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI>();
                 mutable_bitField0_ |= 0x00000001;
               }
               stageDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class IslandPartyDetailInfoOuterClass {
               emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.class, emu.grasscutter.net.proto.IslandPartyDetailInfoOuterClass.IslandPartyDetailInfo.Builder.class);
     }
 
-    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> stageDataList_;
+    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> stageDataList_;
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> getStageDataListList() {
+    public java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> getStageDataListList() {
       return stageDataList_;
     }
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder> 
         getStageDataListOrBuilderList() {
       return stageDataList_;
     }
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     @java.lang.Override
     public int getStageDataListCount() {
       return stageDataList_.size();
     }
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData getStageDataList(int index) {
+    public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI getStageDataList(int index) {
       return stageDataList_.get(index);
     }
     /**
-     * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder getStageDataListOrBuilder(
+    public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder getStageDataListOrBuilder(
         int index) {
       return stageDataList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class IslandPartyDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < stageDataList_.size(); i++) {
-        output.writeMessage(12, stageDataList_.get(i));
+        output.writeMessage(4, stageDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class IslandPartyDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < stageDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, stageDataList_.get(i));
+          .computeMessageSize(4, stageDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class IslandPartyDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> stageDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> stageDataList_ =
         java.util.Collections.emptyList();
       private void ensureStageDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData>(stageDataList_);
+          stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI>(stageDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder> stageDataListBuilder_;
+          emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder> stageDataListBuilder_;
 
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> getStageDataListList() {
+      public java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> getStageDataListList() {
         if (stageDataListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(stageDataList_);
         } else {
@@ -538,7 +582,11 @@ public final class IslandPartyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public int getStageDataListCount() {
         if (stageDataListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class IslandPartyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData getStageDataList(int index) {
+      public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI getStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
           return stageDataList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class IslandPartyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder setStageDataList(
-          int index, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData value) {
+          int index, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI value) {
         if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder setStageDataList(
-          int index, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder builderForValue) {
         if (stageDataListBuilder_ == null) {
           ensureStageDataListIsMutable();
           stageDataList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public Builder addStageDataList(emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData value) {
+      public Builder addStageDataList(emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI value) {
         if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder addStageDataList(
-          int index, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData value) {
+          int index, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI value) {
         if (stageDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder addStageDataList(
-          emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder builderForValue) {
+          emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder builderForValue) {
         if (stageDataListBuilder_ == null) {
           ensureStageDataListIsMutable();
           stageDataList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder addStageDataList(
-          int index, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder builderForValue) {
         if (stageDataListBuilder_ == null) {
           ensureStageDataListIsMutable();
           stageDataList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder addAllStageDataList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI> values) {
         if (stageDataListBuilder_ == null) {
           ensureStageDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder clearStageDataList() {
         if (stageDataListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
       public Builder removeStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class IslandPartyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder getStageDataListBuilder(
+      public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder getStageDataListBuilder(
           int index) {
         return getStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder getStageDataListOrBuilder(
+      public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder getStageDataListOrBuilder(
           int index) {
         if (stageDataListBuilder_ == null) {
           return stageDataList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class IslandPartyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder> 
            getStageDataListOrBuilderList() {
         if (stageDataListBuilder_ != null) {
           return stageDataListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class IslandPartyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder addStageDataListBuilder() {
+      public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder addStageDataListBuilder() {
         return getStageDataListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.getDefaultInstance());
+            emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.getDefaultInstance());
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder addStageDataListBuilder(
+      public emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder addStageDataListBuilder(
           int index) {
         return getStageDataListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.getDefaultInstance());
+            index, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.getDefaultInstance());
       }
       /**
-       * <code>repeated .IslandPartyStageData stage_data_list = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .MPBLCHEINAI stage_data_list = 4;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder> 
            getStageDataListBuilderList() {
         return getStageDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder> 
+          emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder> 
           getStageDataListFieldBuilder() {
         if (stageDataListBuilder_ == null) {
           stageDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageData.Builder, emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.IslandPartyStageDataOrBuilder>(
+              emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAI.Builder, emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.MPBLCHEINAIOrBuilder>(
                   stageDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class IslandPartyDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033IslandPartyDetailInfo.proto\032\032IslandPar" +
-      "tyStageData.proto\"G\n\025IslandPartyDetailIn" +
-      "fo\022.\n\017stage_data_list\030\014 \003(\0132\025.IslandPart" +
-      "yStageDataB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\033IslandPartyDetailInfo.proto\032\021MPBLCHEIN" +
+      "AI.proto\">\n\025IslandPartyDetailInfo\022%\n\017sta" +
+      "ge_data_list\030\004 \003(\0132\014.MPBLCHEINAIB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.getDescriptor(),
         });
     internal_static_IslandPartyDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class IslandPartyDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IslandPartyDetailInfo_descriptor,
         new java.lang.String[] { "StageDataList", });
-    emu.grasscutter.net.proto.IslandPartyStageDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MPBLCHEINAIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -15,10 +15,6 @@ public final class AuditStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: MDIBKDBOAAO
-   * </pre>
-   *
    * Protobuf enum {@code AuditState}
    */
   public enum AuditState

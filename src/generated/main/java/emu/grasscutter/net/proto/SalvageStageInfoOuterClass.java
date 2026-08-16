@@ -19,40 +19,40 @@ public final class SalvageStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> 
         getChallengeInfoListList();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index);
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     int getChallengeInfoListCount();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
         getChallengeInfoListOrBuilderList();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index);
-
-    /**
-     * <code>bool is_open = 5;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
 
     /**
      * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     int getStageId();
+
+    /**
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
   }
   /**
    * Protobuf type {@code SalvageStageInfo}
@@ -101,7 +101,7 @@ public final class SalvageStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -115,7 +115,7 @@ public final class SalvageStageInfoOuterClass {
               stageId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 80: {
 
               isOpen_ = input.readBool();
               break;
@@ -155,17 +155,17 @@ public final class SalvageStageInfoOuterClass {
               emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.class, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder.class);
     }
 
-    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 1;
+    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> challengeInfoList_;
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getChallengeInfoListList() {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
@@ -173,37 +173,26 @@ public final class SalvageStageInfoOuterClass {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     @java.lang.Override
     public int getChallengeInfoListCount() {
       return challengeInfoList_.size();
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index) {
       return challengeInfoList_.get(index);
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+     * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index) {
       return challengeInfoList_.get(index);
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 5;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 5;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
     }
 
     public static final int STAGE_ID_FIELD_NUMBER = 4;
@@ -215,6 +204,17 @@ public final class SalvageStageInfoOuterClass {
     @java.lang.Override
     public int getStageId() {
       return stageId_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -232,13 +232,13 @@ public final class SalvageStageInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < challengeInfoList_.size(); i++) {
-        output.writeMessage(1, challengeInfoList_.get(i));
+        output.writeMessage(2, challengeInfoList_.get(i));
       }
       if (stageId_ != 0) {
         output.writeUInt32(4, stageId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(5, isOpen_);
+        output.writeBool(10, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,7 +251,7 @@ public final class SalvageStageInfoOuterClass {
       size = 0;
       for (int i = 0; i < challengeInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, challengeInfoList_.get(i));
+          .computeMessageSize(2, challengeInfoList_.get(i));
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -259,7 +259,7 @@ public final class SalvageStageInfoOuterClass {
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOpen_);
+          .computeBoolSize(10, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,10 +278,10 @@ public final class SalvageStageInfoOuterClass {
 
       if (!getChallengeInfoListList()
           .equals(other.getChallengeInfoListList())) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,11 +297,11 @@ public final class SalvageStageInfoOuterClass {
         hash = (37 * hash) + CHALLENGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChallengeInfoListList().hashCode();
       }
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,9 +442,9 @@ public final class SalvageStageInfoOuterClass {
         } else {
           challengeInfoListBuilder_.clear();
         }
-        isOpen_ = false;
-
         stageId_ = 0;
+
+        isOpen_ = false;
 
         return this;
       }
@@ -482,8 +482,8 @@ public final class SalvageStageInfoOuterClass {
         } else {
           result.challengeInfoList_ = challengeInfoListBuilder_.build();
         }
-        result.isOpen_ = isOpen_;
         result.stageId_ = stageId_;
+        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -558,11 +558,11 @@ public final class SalvageStageInfoOuterClass {
             }
           }
         }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -607,7 +607,7 @@ public final class SalvageStageInfoOuterClass {
           emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> challengeInfoListBuilder_;
 
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getChallengeInfoListList() {
         if (challengeInfoListBuilder_ == null) {
@@ -617,7 +617,7 @@ public final class SalvageStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public int getChallengeInfoListCount() {
         if (challengeInfoListBuilder_ == null) {
@@ -627,7 +627,7 @@ public final class SalvageStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -637,7 +637,7 @@ public final class SalvageStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
@@ -654,7 +654,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
@@ -668,7 +668,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder addChallengeInfoList(emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
         if (challengeInfoListBuilder_ == null) {
@@ -684,7 +684,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
@@ -701,7 +701,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder addChallengeInfoList(
           emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
@@ -715,7 +715,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
@@ -729,7 +729,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder addAllChallengeInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> values) {
@@ -744,7 +744,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder clearChallengeInfoList() {
         if (challengeInfoListBuilder_ == null) {
@@ -757,7 +757,7 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public Builder removeChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -770,14 +770,14 @@ public final class SalvageStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder getChallengeInfoListBuilder(
           int index) {
         return getChallengeInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
           int index) {
@@ -787,7 +787,7 @@ public final class SalvageStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
            getChallengeInfoListOrBuilderList() {
@@ -798,14 +798,14 @@ public final class SalvageStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addChallengeInfoListBuilder() {
         return getChallengeInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addChallengeInfoListBuilder(
           int index) {
@@ -813,7 +813,7 @@ public final class SalvageStageInfoOuterClass {
             index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 1;</code>
+       * <code>repeated .SalvageChallengeInfo challenge_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder> 
            getChallengeInfoListBuilderList() {
@@ -832,37 +832,6 @@ public final class SalvageStageInfoOuterClass {
           challengeInfoList_ = null;
         }
         return challengeInfoListBuilder_;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 5;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 5;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
       }
 
       private int stageId_ ;
@@ -892,6 +861,37 @@ public final class SalvageStageInfoOuterClass {
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 10;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 10;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
         onChanged();
         return this;
       }
@@ -964,8 +964,8 @@ public final class SalvageStageInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026SalvageStageInfo.proto\032\032SalvageChallen" +
       "geInfo.proto\"i\n\020SalvageStageInfo\0222\n\023chal" +
-      "lenge_info_list\030\001 \003(\0132\025.SalvageChallenge" +
-      "Info\022\017\n\007is_open\030\005 \001(\010\022\020\n\010stage_id\030\004 \001(\rB" +
+      "lenge_info_list\030\002 \003(\0132\025.SalvageChallenge" +
+      "Info\022\020\n\010stage_id\030\004 \001(\r\022\017\n\007is_open\030\n \001(\010B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -978,7 +978,7 @@ public final class SalvageStageInfoOuterClass {
     internal_static_SalvageStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvageStageInfo_descriptor,
-        new java.lang.String[] { "ChallengeInfoList", "IsOpen", "StageId", });
+        new java.lang.String[] { "ChallengeInfoList", "StageId", "IsOpen", });
     emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.getDescriptor();
   }
 

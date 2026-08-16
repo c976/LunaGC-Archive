@@ -19,41 +19,44 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool GJJGJOMABDO = 13;</code>
-     * @return The gJJGJOMABDO.
+     * <pre>
+     * CMD_ID = 6270
+     * </pre>
+     *
+     * <code>string name = 1;</code>
+     * @return The name.
      */
-    boolean getGJJGJOMABDO();
+    java.lang.String getName();
+    /**
+     * <pre>
+     * CMD_ID = 6270
+     * </pre>
+     *
+     * <code>string name = 1;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
 
     /**
-     * <code>uint32 deck_id = 2;</code>
-     * @return The deckId.
-     */
-    int getDeckId();
-
-    /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>string name = 12;</code>
-     * @return The name.
+     * <code>uint32 deck_id = 4;</code>
+     * @return The deckId.
      */
-    java.lang.String getName();
+    int getDeckId();
+
     /**
-     * <code>string name = 12;</code>
-     * @return The bytes for name.
+     * <code>bool is_only_check = 5;</code>
+     * @return The isOnlyCheck.
      */
-    com.google.protobuf.ByteString
-        getNameBytes();
+    boolean getIsOnlyCheck();
   }
   /**
-   * <pre>
-   * CmdId: 4254
-   * Obf: EPBOHPDPFOO
-   * </pre>
-   *
    * Protobuf type {@code GCGDSChangeDeckNameRsp}
    */
   public static final class GCGDSChangeDeckNameRsp extends
@@ -99,25 +102,25 @@ public final class GCGDSChangeDeckNameRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              deckId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 98: {
+            case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
-            case 104: {
+            case 32: {
 
-              gJJGJOMABDO_ = input.readBool();
+              deckId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              isOnlyCheck_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -152,43 +155,14 @@ public final class GCGDSChangeDeckNameRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.class, emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.Builder.class);
     }
 
-    public static final int GJJGJOMABDO_FIELD_NUMBER = 13;
-    private boolean gJJGJOMABDO_;
-    /**
-     * <code>bool GJJGJOMABDO = 13;</code>
-     * @return The gJJGJOMABDO.
-     */
-    @java.lang.Override
-    public boolean getGJJGJOMABDO() {
-      return gJJGJOMABDO_;
-    }
-
-    public static final int DECK_ID_FIELD_NUMBER = 2;
-    private int deckId_;
-    /**
-     * <code>uint32 deck_id = 2;</code>
-     * @return The deckId.
-     */
-    @java.lang.Override
-    public int getDeckId() {
-      return deckId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 3;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 3;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int NAME_FIELD_NUMBER = 12;
+    public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 12;</code>
+     * <pre>
+     * CMD_ID = 6270
+     * </pre>
+     *
+     * <code>string name = 1;</code>
      * @return The name.
      */
     @java.lang.Override
@@ -205,7 +179,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
     }
     /**
-     * <code>string name = 12;</code>
+     * <pre>
+     * CMD_ID = 6270
+     * </pre>
+     *
+     * <code>string name = 1;</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -223,6 +201,39 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
     }
 
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int DECK_ID_FIELD_NUMBER = 4;
+    private int deckId_;
+    /**
+     * <code>uint32 deck_id = 4;</code>
+     * @return The deckId.
+     */
+    @java.lang.Override
+    public int getDeckId() {
+      return deckId_;
+    }
+
+    public static final int IS_ONLY_CHECK_FIELD_NUMBER = 5;
+    private boolean isOnlyCheck_;
+    /**
+     * <code>bool is_only_check = 5;</code>
+     * @return The isOnlyCheck.
+     */
+    @java.lang.Override
+    public boolean getIsOnlyCheck() {
+      return isOnlyCheck_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -237,17 +248,17 @@ public final class GCGDSChangeDeckNameRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      }
       if (deckId_ != 0) {
-        output.writeUInt32(2, deckId_);
+        output.writeUInt32(4, deckId_);
+      }
+      if (isOnlyCheck_ != false) {
+        output.writeBool(5, isOnlyCheck_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, name_);
-      }
-      if (gJJGJOMABDO_ != false) {
-        output.writeBool(13, gJJGJOMABDO_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -258,20 +269,20 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, deckId_);
+          .computeUInt32Size(4, deckId_);
+      }
+      if (isOnlyCheck_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, isOnlyCheck_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, name_);
-      }
-      if (gJJGJOMABDO_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, gJJGJOMABDO_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,14 +299,14 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp other = (emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp) obj;
 
-      if (getGJJGJOMABDO()
-          != other.getGJJGJOMABDO()) return false;
-      if (getDeckId()
-          != other.getDeckId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getName()
           .equals(other.getName())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getDeckId()
+          != other.getDeckId()) return false;
+      if (getIsOnlyCheck()
+          != other.getIsOnlyCheck()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,15 +318,15 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GJJGJOMABDO_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getGJJGJOMABDO());
-      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDeckId();
+      hash = (37 * hash) + IS_ONLY_CHECK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOnlyCheck());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,11 +423,6 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 4254
-     * Obf: EPBOHPDPFOO
-     * </pre>
-     *
      * Protobuf type {@code GCGDSChangeDeckNameRsp}
      */
     public static final class Builder extends
@@ -454,13 +460,13 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gJJGJOMABDO_ = false;
-
-        deckId_ = 0;
+        name_ = "";
 
         retcode_ = 0;
 
-        name_ = "";
+        deckId_ = 0;
+
+        isOnlyCheck_ = false;
 
         return this;
       }
@@ -488,10 +494,10 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp buildPartial() {
         emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp result = new emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp(this);
-        result.gJJGJOMABDO_ = gJJGJOMABDO_;
-        result.deckId_ = deckId_;
-        result.retcode_ = retcode_;
         result.name_ = name_;
+        result.retcode_ = retcode_;
+        result.deckId_ = deckId_;
+        result.isOnlyCheck_ = isOnlyCheck_;
         onBuilt();
         return result;
       }
@@ -540,18 +546,18 @@ public final class GCGDSChangeDeckNameRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp other) {
         if (other == emu.grasscutter.net.proto.GCGDSChangeDeckNameRspOuterClass.GCGDSChangeDeckNameRsp.getDefaultInstance()) return this;
-        if (other.getGJJGJOMABDO() != false) {
-          setGJJGJOMABDO(other.getGJJGJOMABDO());
-        }
-        if (other.getDeckId() != 0) {
-          setDeckId(other.getDeckId());
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
+        if (other.getDeckId() != 0) {
+          setDeckId(other.getDeckId());
+        }
+        if (other.getIsOnlyCheck() != false) {
+          setIsOnlyCheck(other.getIsOnlyCheck());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -582,102 +588,13 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
 
-      private boolean gJJGJOMABDO_ ;
-      /**
-       * <code>bool GJJGJOMABDO = 13;</code>
-       * @return The gJJGJOMABDO.
-       */
-      @java.lang.Override
-      public boolean getGJJGJOMABDO() {
-        return gJJGJOMABDO_;
-      }
-      /**
-       * <code>bool GJJGJOMABDO = 13;</code>
-       * @param value The gJJGJOMABDO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGJJGJOMABDO(boolean value) {
-        
-        gJJGJOMABDO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool GJJGJOMABDO = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGJJGJOMABDO() {
-        
-        gJJGJOMABDO_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int deckId_ ;
-      /**
-       * <code>uint32 deck_id = 2;</code>
-       * @return The deckId.
-       */
-      @java.lang.Override
-      public int getDeckId() {
-        return deckId_;
-      }
-      /**
-       * <code>uint32 deck_id = 2;</code>
-       * @param value The deckId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeckId(int value) {
-        
-        deckId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 deck_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeckId() {
-        
-        deckId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 12;</code>
+       * <pre>
+       * CMD_ID = 6270
+       * </pre>
+       *
+       * <code>string name = 1;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -693,7 +610,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         }
       }
       /**
-       * <code>string name = 12;</code>
+       * <pre>
+       * CMD_ID = 6270
+       * </pre>
+       *
+       * <code>string name = 1;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -710,7 +631,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         }
       }
       /**
-       * <code>string name = 12;</code>
+       * <pre>
+       * CMD_ID = 6270
+       * </pre>
+       *
+       * <code>string name = 1;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -725,7 +650,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string name = 12;</code>
+       * <pre>
+       * CMD_ID = 6270
+       * </pre>
+       *
+       * <code>string name = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -735,7 +664,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string name = 12;</code>
+       * <pre>
+       * CMD_ID = 6270
+       * </pre>
+       *
+       * <code>string name = 1;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -747,6 +680,99 @@ public final class GCGDSChangeDeckNameRspOuterClass {
   checkByteStringIsUtf8(value);
         
         name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int deckId_ ;
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @return The deckId.
+       */
+      @java.lang.Override
+      public int getDeckId() {
+        return deckId_;
+      }
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @param value The deckId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeckId(int value) {
+        
+        deckId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeckId() {
+        
+        deckId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOnlyCheck_ ;
+      /**
+       * <code>bool is_only_check = 5;</code>
+       * @return The isOnlyCheck.
+       */
+      @java.lang.Override
+      public boolean getIsOnlyCheck() {
+        return isOnlyCheck_;
+      }
+      /**
+       * <code>bool is_only_check = 5;</code>
+       * @param value The isOnlyCheck to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOnlyCheck(boolean value) {
+        
+        isOnlyCheck_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_only_check = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOnlyCheck() {
+        
+        isOnlyCheck_ = false;
         onChanged();
         return this;
       }
@@ -817,11 +843,11 @@ public final class GCGDSChangeDeckNameRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GCGDSChangeDeckNameRsp.proto\"]\n\026GCGDSC" +
-      "hangeDeckNameRsp\022\023\n\013GJJGJOMABDO\030\r \001(\010\022\017\n" +
-      "\007deck_id\030\002 \001(\r\022\017\n\007retcode\030\003 \001(\005\022\014\n\004name\030" +
-      "\014 \001(\tB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\034GCGDSChangeDeckNameRsp.proto\"_\n\026GCGDSC" +
+      "hangeDeckNameRsp\022\014\n\004name\030\001 \001(\t\022\017\n\007retcod" +
+      "e\030\014 \001(\005\022\017\n\007deck_id\030\004 \001(\r\022\025\n\ris_only_chec" +
+      "k\030\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -832,7 +858,7 @@ public final class GCGDSChangeDeckNameRspOuterClass {
     internal_static_GCGDSChangeDeckNameRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSChangeDeckNameRsp_descriptor,
-        new java.lang.String[] { "GJJGJOMABDO", "DeckId", "Retcode", "Name", });
+        new java.lang.String[] { "Name", "Retcode", "DeckId", "IsOnlyCheck", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

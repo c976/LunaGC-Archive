@@ -19,21 +19,20 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FMABDGMGDAM = 14;</code>
-     * @return The fMABDGMGDAM.
+     * <code>uint32 coin_c = 6;</code>
+     * @return The coinC.
      */
-    int getFMABDGMGDAM();
+    int getCoinC();
 
     /**
-     * <code>uint32 LCIDAMLLGHM = 6;</code>
-     * @return The lCIDAMLLGHM.
+     * <code>uint32 coin_a = 12;</code>
+     * @return The coinA.
      */
-    int getLCIDAMLLGHM();
+    int getCoinA();
   }
   /**
    * <pre>
-   * CmdId: 1158
-   * Obf: LKKGMJHPCCF
+   * CmdId: 6596
    * </pre>
    *
    * Protobuf type {@code VintageMarketDividendFinishNotify}
@@ -82,12 +81,12 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
               break;
             case 48: {
 
-              lCIDAMLLGHM_ = input.readUInt32();
+              coinC_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
-              fMABDGMGDAM_ = input.readUInt32();
+              coinA_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify.class, emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify.Builder.class);
     }
 
-    public static final int FMABDGMGDAM_FIELD_NUMBER = 14;
-    private int fMABDGMGDAM_;
+    public static final int COIN_C_FIELD_NUMBER = 6;
+    private int coinC_;
     /**
-     * <code>uint32 FMABDGMGDAM = 14;</code>
-     * @return The fMABDGMGDAM.
+     * <code>uint32 coin_c = 6;</code>
+     * @return The coinC.
      */
     @java.lang.Override
-    public int getFMABDGMGDAM() {
-      return fMABDGMGDAM_;
+    public int getCoinC() {
+      return coinC_;
     }
 
-    public static final int LCIDAMLLGHM_FIELD_NUMBER = 6;
-    private int lCIDAMLLGHM_;
+    public static final int COIN_A_FIELD_NUMBER = 12;
+    private int coinA_;
     /**
-     * <code>uint32 LCIDAMLLGHM = 6;</code>
-     * @return The lCIDAMLLGHM.
+     * <code>uint32 coin_a = 12;</code>
+     * @return The coinA.
      */
     @java.lang.Override
-    public int getLCIDAMLLGHM() {
-      return lCIDAMLLGHM_;
+    public int getCoinA() {
+      return coinA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lCIDAMLLGHM_ != 0) {
-        output.writeUInt32(6, lCIDAMLLGHM_);
+      if (coinC_ != 0) {
+        output.writeUInt32(6, coinC_);
       }
-      if (fMABDGMGDAM_ != 0) {
-        output.writeUInt32(14, fMABDGMGDAM_);
+      if (coinA_ != 0) {
+        output.writeUInt32(12, coinA_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lCIDAMLLGHM_ != 0) {
+      if (coinC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lCIDAMLLGHM_);
+          .computeUInt32Size(6, coinC_);
       }
-      if (fMABDGMGDAM_ != 0) {
+      if (coinA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, fMABDGMGDAM_);
+          .computeUInt32Size(12, coinA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify other = (emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify) obj;
 
-      if (getFMABDGMGDAM()
-          != other.getFMABDGMGDAM()) return false;
-      if (getLCIDAMLLGHM()
-          != other.getLCIDAMLLGHM()) return false;
+      if (getCoinC()
+          != other.getCoinC()) return false;
+      if (getCoinA()
+          != other.getCoinA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FMABDGMGDAM_FIELD_NUMBER;
-      hash = (53 * hash) + getFMABDGMGDAM();
-      hash = (37 * hash) + LCIDAMLLGHM_FIELD_NUMBER;
-      hash = (53 * hash) + getLCIDAMLLGHM();
+      hash = (37 * hash) + COIN_C_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinC();
+      hash = (37 * hash) + COIN_A_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1158
-     * Obf: LKKGMJHPCCF
+     * CmdId: 6596
      * </pre>
      *
      * Protobuf type {@code VintageMarketDividendFinishNotify}
@@ -353,9 +351,9 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fMABDGMGDAM_ = 0;
+        coinC_ = 0;
 
-        lCIDAMLLGHM_ = 0;
+        coinA_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify buildPartial() {
         emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify result = new emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify(this);
-        result.fMABDGMGDAM_ = fMABDGMGDAM_;
-        result.lCIDAMLLGHM_ = lCIDAMLLGHM_;
+        result.coinC_ = coinC_;
+        result.coinA_ = coinA_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify other) {
         if (other == emu.grasscutter.net.proto.VintageMarketDividendFinishNotifyOuterClass.VintageMarketDividendFinishNotify.getDefaultInstance()) return this;
-        if (other.getFMABDGMGDAM() != 0) {
-          setFMABDGMGDAM(other.getFMABDGMGDAM());
+        if (other.getCoinC() != 0) {
+          setCoinC(other.getCoinC());
         }
-        if (other.getLCIDAMLLGHM() != 0) {
-          setLCIDAMLLGHM(other.getLCIDAMLLGHM());
+        if (other.getCoinA() != 0) {
+          setCoinA(other.getCoinA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +466,64 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
         return this;
       }
 
-      private int fMABDGMGDAM_ ;
+      private int coinC_ ;
       /**
-       * <code>uint32 FMABDGMGDAM = 14;</code>
-       * @return The fMABDGMGDAM.
+       * <code>uint32 coin_c = 6;</code>
+       * @return The coinC.
        */
       @java.lang.Override
-      public int getFMABDGMGDAM() {
-        return fMABDGMGDAM_;
+      public int getCoinC() {
+        return coinC_;
       }
       /**
-       * <code>uint32 FMABDGMGDAM = 14;</code>
-       * @param value The fMABDGMGDAM to set.
+       * <code>uint32 coin_c = 6;</code>
+       * @param value The coinC to set.
        * @return This builder for chaining.
        */
-      public Builder setFMABDGMGDAM(int value) {
+      public Builder setCoinC(int value) {
         
-        fMABDGMGDAM_ = value;
+        coinC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FMABDGMGDAM = 14;</code>
+       * <code>uint32 coin_c = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFMABDGMGDAM() {
+      public Builder clearCoinC() {
         
-        fMABDGMGDAM_ = 0;
+        coinC_ = 0;
         onChanged();
         return this;
       }
 
-      private int lCIDAMLLGHM_ ;
+      private int coinA_ ;
       /**
-       * <code>uint32 LCIDAMLLGHM = 6;</code>
-       * @return The lCIDAMLLGHM.
+       * <code>uint32 coin_a = 12;</code>
+       * @return The coinA.
        */
       @java.lang.Override
-      public int getLCIDAMLLGHM() {
-        return lCIDAMLLGHM_;
+      public int getCoinA() {
+        return coinA_;
       }
       /**
-       * <code>uint32 LCIDAMLLGHM = 6;</code>
-       * @param value The lCIDAMLLGHM to set.
+       * <code>uint32 coin_a = 12;</code>
+       * @param value The coinA to set.
        * @return This builder for chaining.
        */
-      public Builder setLCIDAMLLGHM(int value) {
+      public Builder setCoinA(int value) {
         
-        lCIDAMLLGHM_ = value;
+        coinA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LCIDAMLLGHM = 6;</code>
+       * <code>uint32 coin_a = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLCIDAMLLGHM() {
+      public Builder clearCoinA() {
         
-        lCIDAMLLGHM_ = 0;
+        coinA_ = 0;
         onChanged();
         return this;
       }
@@ -597,9 +595,9 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'VintageMarketDividendFinishNotify.prot" +
-      "o\"M\n!VintageMarketDividendFinishNotify\022\023" +
-      "\n\013FMABDGMGDAM\030\016 \001(\r\022\023\n\013LCIDAMLLGHM\030\006 \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\"C\n!VintageMarketDividendFinishNotify\022\016" +
+      "\n\006coin_c\030\006 \001(\r\022\016\n\006coin_a\030\014 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +608,7 @@ public final class VintageMarketDividendFinishNotifyOuterClass {
     internal_static_VintageMarketDividendFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketDividendFinishNotify_descriptor,
-        new java.lang.String[] { "FMABDGMGDAM", "LCIDAMLLGHM", });
+        new java.lang.String[] { "CoinC", "CoinA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

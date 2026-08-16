@@ -19,33 +19,29 @@ public final class GCGMsgSelectOnStageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGReason reason = 4;</code>
+     * <code>.GCGReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGReason reason = 4;</code>
+     * <code>.GCGReason reason = 15;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason();
 
     /**
-     * <code>uint32 card_guid = 9;</code>
+     * <code>uint32 card_guid = 4;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
 
     /**
-     * <code>uint32 controller_id = 12;</code>
+     * <code>uint32 controller_id = 13;</code>
      * @return The controllerId.
      */
     int getControllerId();
   }
   /**
-   * <pre>
-   * Obf: CJGMMPPDOAE
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgSelectOnStage}
    */
   public static final class GCGMsgSelectOnStage extends
@@ -92,19 +88,19 @@ public final class GCGMsgSelectOnStageOuterClass {
               done = true;
               break;
             case 32: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            case 72: {
 
               cardGuid_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               controllerId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -139,17 +135,17 @@ public final class GCGMsgSelectOnStageOuterClass {
               emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.class, emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_FIELD_NUMBER = 15;
     private int reason_;
     /**
-     * <code>.GCGReason reason = 4;</code>
+     * <code>.GCGReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGReason reason = 4;</code>
+     * <code>.GCGReason reason = 15;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
@@ -158,10 +154,10 @@ public final class GCGMsgSelectOnStageOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 9;
+    public static final int CARD_GUID_FIELD_NUMBER = 4;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 9;</code>
+     * <code>uint32 card_guid = 4;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -169,10 +165,10 @@ public final class GCGMsgSelectOnStageOuterClass {
       return cardGuid_;
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 12;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 12;</code>
+     * <code>uint32 controller_id = 13;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -194,14 +190,14 @@ public final class GCGMsgSelectOnStageOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.MNDCMMKBIBP_Default.getNumber()) {
-        output.writeEnum(4, reason_);
-      }
       if (cardGuid_ != 0) {
-        output.writeUInt32(9, cardGuid_);
+        output.writeUInt32(4, cardGuid_);
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(12, controllerId_);
+        output.writeUInt32(13, controllerId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(15, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -212,17 +208,17 @@ public final class GCGMsgSelectOnStageOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.MNDCMMKBIBP_Default.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, reason_);
-      }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cardGuid_);
+          .computeUInt32Size(4, cardGuid_);
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, controllerId_);
+          .computeUInt32Size(13, controllerId_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(15, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -357,10 +353,6 @@ public final class GCGMsgSelectOnStageOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CJGMMPPDOAE
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgSelectOnStage}
      */
     public static final class Builder extends
@@ -521,14 +513,14 @@ public final class GCGMsgSelectOnStageOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GCGReason reason = 4;</code>
+       * <code>.GCGReason reason = 15;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGReason reason = 4;</code>
+       * <code>.GCGReason reason = 15;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -539,7 +531,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 4;</code>
+       * <code>.GCGReason reason = 15;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -549,7 +541,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGReason reason = 4;</code>
+       * <code>.GCGReason reason = 15;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -563,7 +555,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 4;</code>
+       * <code>.GCGReason reason = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -575,7 +567,7 @@ public final class GCGMsgSelectOnStageOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -583,7 +575,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -594,7 +586,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 9;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -606,7 +598,7 @@ public final class GCGMsgSelectOnStageOuterClass {
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 12;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -614,7 +606,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 12;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -625,7 +617,7 @@ public final class GCGMsgSelectOnStageOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 12;</code>
+       * <code>uint32 controller_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -702,9 +694,9 @@ public final class GCGMsgSelectOnStageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGMsgSelectOnStage.proto\032\017GCGReason.p" +
-      "roto\"[\n\023GCGMsgSelectOnStage\022\032\n\006reason\030\004 " +
-      "\001(\0162\n.GCGReason\022\021\n\tcard_guid\030\t \001(\r\022\025\n\rco" +
-      "ntroller_id\030\014 \001(\rB\033\n\031emu.grasscutter.net" +
+      "roto\"[\n\023GCGMsgSelectOnStage\022\032\n\006reason\030\017 " +
+      "\001(\0162\n.GCGReason\022\021\n\tcard_guid\030\004 \001(\r\022\025\n\rco" +
+      "ntroller_id\030\r \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

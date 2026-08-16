@@ -19,34 +19,58 @@ public final class NatlanArenaDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> 
+    java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> 
         getLevelInfoListList();
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
-    emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE getLevelInfoList(int index);
+    emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA getLevelInfoList(int index);
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
-    emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder getLevelInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 AIPMFIEFGEO = 8;</code>
-     * @return The aIPMFIEFGEO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KLEOMALJGFO = 4;</code>
+     * @return The kLEOMALJGFO.
      */
-    int getAIPMFIEFGEO();
+    int getKLEOMALJGFO();
   }
   /**
    * Protobuf type {@code NatlanArenaDetailInfo}
@@ -95,18 +119,18 @@ public final class NatlanArenaDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 32: {
+
+              kLEOMALJGFO_ = input.readUInt32();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
-
-              aIPMFIEFGEO_ = input.readUInt32();
+                  input.readMessage(emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -144,55 +168,79 @@ public final class NatlanArenaDetailInfoOuterClass {
               emu.grasscutter.net.proto.NatlanArenaDetailInfoOuterClass.NatlanArenaDetailInfo.class, emu.grasscutter.net.proto.NatlanArenaDetailInfoOuterClass.NatlanArenaDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> levelInfoList_;
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
 
-    public static final int AIPMFIEFGEO_FIELD_NUMBER = 8;
-    private int aIPMFIEFGEO_;
+    public static final int KLEOMALJGFO_FIELD_NUMBER = 4;
+    private int kLEOMALJGFO_;
     /**
-     * <code>uint32 AIPMFIEFGEO = 8;</code>
-     * @return The aIPMFIEFGEO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KLEOMALJGFO = 4;</code>
+     * @return The kLEOMALJGFO.
      */
     @java.lang.Override
-    public int getAIPMFIEFGEO() {
-      return aIPMFIEFGEO_;
+    public int getKLEOMALJGFO() {
+      return kLEOMALJGFO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -209,11 +257,11 @@ public final class NatlanArenaDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(7, levelInfoList_.get(i));
+      if (kLEOMALJGFO_ != 0) {
+        output.writeUInt32(4, kLEOMALJGFO_);
       }
-      if (aIPMFIEFGEO_ != 0) {
-        output.writeUInt32(8, aIPMFIEFGEO_);
+      for (int i = 0; i < levelInfoList_.size(); i++) {
+        output.writeMessage(11, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -224,13 +272,13 @@ public final class NatlanArenaDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (kLEOMALJGFO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, kLEOMALJGFO_);
+      }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, levelInfoList_.get(i));
-      }
-      if (aIPMFIEFGEO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, aIPMFIEFGEO_);
+          .computeMessageSize(11, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,8 +297,8 @@ public final class NatlanArenaDetailInfoOuterClass {
 
       if (!getLevelInfoListList()
           .equals(other.getLevelInfoListList())) return false;
-      if (getAIPMFIEFGEO()
-          != other.getAIPMFIEFGEO()) return false;
+      if (getKLEOMALJGFO()
+          != other.getKLEOMALJGFO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -266,8 +314,8 @@ public final class NatlanArenaDetailInfoOuterClass {
         hash = (37 * hash) + LEVEL_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelInfoListList().hashCode();
       }
-      hash = (37 * hash) + AIPMFIEFGEO_FIELD_NUMBER;
-      hash = (53 * hash) + getAIPMFIEFGEO();
+      hash = (37 * hash) + KLEOMALJGFO_FIELD_NUMBER;
+      hash = (53 * hash) + getKLEOMALJGFO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -408,7 +456,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         } else {
           levelInfoListBuilder_.clear();
         }
-        aIPMFIEFGEO_ = 0;
+        kLEOMALJGFO_ = 0;
 
         return this;
       }
@@ -446,7 +494,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         } else {
           result.levelInfoList_ = levelInfoListBuilder_.build();
         }
-        result.aIPMFIEFGEO_ = aIPMFIEFGEO_;
+        result.kLEOMALJGFO_ = kLEOMALJGFO_;
         onBuilt();
         return result;
       }
@@ -521,8 +569,8 @@ public final class NatlanArenaDetailInfoOuterClass {
             }
           }
         }
-        if (other.getAIPMFIEFGEO() != 0) {
-          setAIPMFIEFGEO(other.getAIPMFIEFGEO());
+        if (other.getKLEOMALJGFO() != 0) {
+          setKLEOMALJGFO(other.getKLEOMALJGFO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -554,22 +602,26 @@ public final class NatlanArenaDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -577,7 +629,11 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -587,9 +643,13 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -597,10 +657,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE value) {
+          int index, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -614,10 +678,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -628,9 +696,13 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -644,10 +716,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE value) {
+          int index, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -661,10 +737,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder builderForValue) {
+          emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -675,10 +755,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -689,10 +773,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -704,7 +792,11 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -717,7 +809,11 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -730,16 +826,24 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -747,9 +851,13 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -758,33 +866,45 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.getDefaultInstance());
+            emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.getDefaultInstance());
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.getDefaultInstance());
+            index, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.getDefaultInstance());
       }
       /**
-       * <code>repeated .GIPNLGHLPBE level_info_list = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .IELBFLLJPAA level_info_list = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder> 
+          emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBE.Builder, emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.GIPNLGHLPBEOrBuilder>(
+              emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAA.Builder, emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.IELBFLLJPAAOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -794,33 +914,45 @@ public final class NatlanArenaDetailInfoOuterClass {
         return levelInfoListBuilder_;
       }
 
-      private int aIPMFIEFGEO_ ;
+      private int kLEOMALJGFO_ ;
       /**
-       * <code>uint32 AIPMFIEFGEO = 8;</code>
-       * @return The aIPMFIEFGEO.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KLEOMALJGFO = 4;</code>
+       * @return The kLEOMALJGFO.
        */
       @java.lang.Override
-      public int getAIPMFIEFGEO() {
-        return aIPMFIEFGEO_;
+      public int getKLEOMALJGFO() {
+        return kLEOMALJGFO_;
       }
       /**
-       * <code>uint32 AIPMFIEFGEO = 8;</code>
-       * @param value The aIPMFIEFGEO to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KLEOMALJGFO = 4;</code>
+       * @param value The kLEOMALJGFO to set.
        * @return This builder for chaining.
        */
-      public Builder setAIPMFIEFGEO(int value) {
+      public Builder setKLEOMALJGFO(int value) {
         
-        aIPMFIEFGEO_ = value;
+        kLEOMALJGFO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AIPMFIEFGEO = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KLEOMALJGFO = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAIPMFIEFGEO() {
+      public Builder clearKLEOMALJGFO() {
         
-        aIPMFIEFGEO_ = 0;
+        kLEOMALJGFO_ = 0;
         onChanged();
         return this;
       }
@@ -891,24 +1023,24 @@ public final class NatlanArenaDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033NatlanArenaDetailInfo.proto\032\021GIPNLGHLP" +
-      "BE.proto\"S\n\025NatlanArenaDetailInfo\022%\n\017lev" +
-      "el_info_list\030\007 \003(\0132\014.GIPNLGHLPBE\022\023\n\013AIPM" +
-      "FIEFGEO\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\n\033NatlanArenaDetailInfo.proto\032\021IELBFLLJP" +
+      "AA.proto\"S\n\025NatlanArenaDetailInfo\022%\n\017lev" +
+      "el_info_list\030\013 \003(\0132\014.IELBFLLJPAA\022\023\n\013KLEO" +
+      "MALJGFO\030\004 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.getDescriptor(),
         });
     internal_static_NatlanArenaDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_NatlanArenaDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NatlanArenaDetailInfo_descriptor,
-        new java.lang.String[] { "LevelInfoList", "AIPMFIEFGEO", });
-    emu.grasscutter.net.proto.GIPNLGHLPBEOuterClass.getDescriptor();
+        new java.lang.String[] { "LevelInfoList", "KLEOMALJGFO", });
+    emu.grasscutter.net.proto.IELBFLLJPAAOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

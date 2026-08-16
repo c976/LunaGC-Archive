@@ -19,40 +19,68 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData> 
         getRegionDataListList();
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData getRegionDataList(int index);
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     int getRegionDataListCount();
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder> 
         getRegionDataListOrBuilderList();
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder getRegionDataListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_content_closed = 7;</code>
-     * @return The isContentClosed.
-     */
-    boolean getIsContentClosed();
-
-    /**
-     * <code>uint32 treasure_close_time = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 treasure_close_time = 7;</code>
      * @return The treasureCloseTime.
      */
     int getTreasureCloseTime();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>bool is_content_closed = 6;</code>
+     * @return The isContentClosed.
+     */
+    boolean getIsContentClosed();
   }
   /**
    * Protobuf type {@code TreasureSeelieActivityDetailInfo}
@@ -101,23 +129,23 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              treasureCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 regionDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               regionDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.parser(), extensionRegistry));
+              break;
+            }
+            case 48: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 56: {
+
+              treasureCloseTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,17 +183,25 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.class, emu.grasscutter.net.proto.TreasureSeelieActivityDetailInfoOuterClass.TreasureSeelieActivityDetailInfo.Builder.class);
     }
 
-    public static final int REGION_DATA_LIST_FIELD_NUMBER = 14;
+    public static final int REGION_DATA_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData> regionDataList_;
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData> getRegionDataListList() {
       return regionDataList_;
     }
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder> 
@@ -173,21 +209,33 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
       return regionDataList_;
     }
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     @java.lang.Override
     public int getRegionDataListCount() {
       return regionDataList_.size();
     }
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData getRegionDataList(int index) {
       return regionDataList_.get(index);
     }
     /**
-     * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder getRegionDataListOrBuilder(
@@ -195,26 +243,34 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
       return regionDataList_.get(index);
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 7;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 7;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int TREASURE_CLOSE_TIME_FIELD_NUMBER = 8;
+    public static final int TREASURE_CLOSE_TIME_FIELD_NUMBER = 7;
     private int treasureCloseTime_;
     /**
-     * <code>uint32 treasure_close_time = 8;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 treasure_close_time = 7;</code>
      * @return The treasureCloseTime.
      */
     @java.lang.Override
     public int getTreasureCloseTime() {
       return treasureCloseTime_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 6;
+    private boolean isContentClosed_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>bool is_content_closed = 6;</code>
+     * @return The isContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,14 +287,14 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < regionDataList_.size(); i++) {
+        output.writeMessage(4, regionDataList_.get(i));
+      }
       if (isContentClosed_ != false) {
-        output.writeBool(7, isContentClosed_);
+        output.writeBool(6, isContentClosed_);
       }
       if (treasureCloseTime_ != 0) {
-        output.writeUInt32(8, treasureCloseTime_);
-      }
-      for (int i = 0; i < regionDataList_.size(); i++) {
-        output.writeMessage(14, regionDataList_.get(i));
+        output.writeUInt32(7, treasureCloseTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,17 +305,17 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < regionDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, regionDataList_.get(i));
+      }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isContentClosed_);
+          .computeBoolSize(6, isContentClosed_);
       }
       if (treasureCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, treasureCloseTime_);
-      }
-      for (int i = 0; i < regionDataList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, regionDataList_.get(i));
+          .computeUInt32Size(7, treasureCloseTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,10 +334,10 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
 
       if (!getRegionDataListList()
           .equals(other.getRegionDataListList())) return false;
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
       if (getTreasureCloseTime()
           != other.getTreasureCloseTime()) return false;
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,11 +353,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         hash = (37 * hash) + REGION_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRegionDataListList().hashCode();
       }
+      hash = (37 * hash) + TREASURE_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getTreasureCloseTime();
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + TREASURE_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTreasureCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,9 +498,9 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         } else {
           regionDataListBuilder_.clear();
         }
-        isContentClosed_ = false;
-
         treasureCloseTime_ = 0;
+
+        isContentClosed_ = false;
 
         return this;
       }
@@ -482,8 +538,8 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         } else {
           result.regionDataList_ = regionDataListBuilder_.build();
         }
-        result.isContentClosed_ = isContentClosed_;
         result.treasureCloseTime_ = treasureCloseTime_;
+        result.isContentClosed_ = isContentClosed_;
         onBuilt();
         return result;
       }
@@ -558,11 +614,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
             }
           }
         }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
         if (other.getTreasureCloseTime() != 0) {
           setTreasureCloseTime(other.getTreasureCloseTime());
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -607,7 +663,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder> regionDataListBuilder_;
 
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData> getRegionDataListList() {
         if (regionDataListBuilder_ == null) {
@@ -617,7 +677,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public int getRegionDataListCount() {
         if (regionDataListBuilder_ == null) {
@@ -627,7 +691,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData getRegionDataList(int index) {
         if (regionDataListBuilder_ == null) {
@@ -637,7 +705,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder setRegionDataList(
           int index, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData value) {
@@ -654,7 +726,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder setRegionDataList(
           int index, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder builderForValue) {
@@ -668,7 +744,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder addRegionDataList(emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData value) {
         if (regionDataListBuilder_ == null) {
@@ -684,7 +764,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder addRegionDataList(
           int index, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData value) {
@@ -701,7 +785,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder addRegionDataList(
           emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder builderForValue) {
@@ -715,7 +803,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder addRegionDataList(
           int index, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder builderForValue) {
@@ -729,7 +821,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder addAllRegionDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData> values) {
@@ -744,7 +840,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder clearRegionDataList() {
         if (regionDataListBuilder_ == null) {
@@ -757,7 +857,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public Builder removeRegionDataList(int index) {
         if (regionDataListBuilder_ == null) {
@@ -770,14 +874,22 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder getRegionDataListBuilder(
           int index) {
         return getRegionDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder getRegionDataListOrBuilder(
           int index) {
@@ -787,7 +899,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionDataOrBuilder> 
            getRegionDataListOrBuilderList() {
@@ -798,14 +914,22 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder addRegionDataListBuilder() {
         return getRegionDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder addRegionDataListBuilder(
           int index) {
@@ -813,7 +937,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureSeelieRegionData region_data_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .TreasureSeelieRegionData region_data_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.TreasureSeelieRegionData.Builder> 
            getRegionDataListBuilderList() {
@@ -834,40 +962,13 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return regionDataListBuilder_;
       }
 
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 7;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 7;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
       private int treasureCloseTime_ ;
       /**
-       * <code>uint32 treasure_close_time = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 treasure_close_time = 7;</code>
        * @return The treasureCloseTime.
        */
       @java.lang.Override
@@ -875,7 +976,11 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return treasureCloseTime_;
       }
       /**
-       * <code>uint32 treasure_close_time = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 treasure_close_time = 7;</code>
        * @param value The treasureCloseTime to set.
        * @return This builder for chaining.
        */
@@ -886,12 +991,59 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 treasure_close_time = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 treasure_close_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTreasureCloseTime() {
         
         treasureCloseTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isContentClosed_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>bool is_content_closed = 6;</code>
+       * @return The isContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>bool is_content_closed = 6;</code>
+       * @param value The isContentClosed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsContentClosed(boolean value) {
+        
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>bool is_content_closed = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsContentClosed() {
+        
+        isContentClosed_ = false;
         onChanged();
         return this;
       }
@@ -965,9 +1117,9 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
       "\n&TreasureSeelieActivityDetailInfo.proto" +
       "\032\036TreasureSeelieRegionData.proto\"\217\001\n Tre" +
       "asureSeelieActivityDetailInfo\0223\n\020region_" +
-      "data_list\030\016 \003(\0132\031.TreasureSeelieRegionDa" +
-      "ta\022\031\n\021is_content_closed\030\007 \001(\010\022\033\n\023treasur" +
-      "e_close_time\030\010 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "data_list\030\004 \003(\0132\031.TreasureSeelieRegionDa" +
+      "ta\022\033\n\023treasure_close_time\030\007 \001(\r\022\031\n\021is_co" +
+      "ntent_closed\030\006 \001(\010B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -980,7 +1132,7 @@ public final class TreasureSeelieActivityDetailInfoOuterClass {
     internal_static_TreasureSeelieActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TreasureSeelieActivityDetailInfo_descriptor,
-        new java.lang.String[] { "RegionDataList", "IsContentClosed", "TreasureCloseTime", });
+        new java.lang.String[] { "RegionDataList", "TreasureCloseTime", "IsContentClosed", });
     emu.grasscutter.net.proto.TreasureSeelieRegionDataOuterClass.getDescriptor();
   }
 

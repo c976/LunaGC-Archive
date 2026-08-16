@@ -20,8 +20,7 @@ public final class FurnitureMakeFinishNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5151
-   * Obf: LDABDLLOMKP
+   * CmdId: 7729
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeFinishNotify}
@@ -246,8 +245,7 @@ public final class FurnitureMakeFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5151
-     * Obf: LDABDLLOMKP
+     * CmdId: 7729
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeFinishNotify}

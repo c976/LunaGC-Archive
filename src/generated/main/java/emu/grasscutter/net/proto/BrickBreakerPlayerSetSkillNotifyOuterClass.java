@@ -19,32 +19,31 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>uint32 uid = 2;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
     int getSkillIdList(int index);
-
-    /**
-     * <code>uint32 uid = 9;</code>
-     * @return The uid.
-     */
-    int getUid();
   }
   /**
    * <pre>
-   * CmdId: 9620
-   * Obf: AMMLEILIKAJ
+   * CmdId: 29731
    * </pre>
    *
    * Protobuf type {@code BrickBreakerPlayerSetSkillNotify}
@@ -93,7 +92,12 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +105,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
               skillIdList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -112,11 +116,6 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
                 skillIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 72: {
-
-              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +153,21 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
               emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify.class, emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify.Builder.class);
     }
 
-    public static final int SKILL_ID_LIST_FIELD_NUMBER = 1;
+    public static final int UID_FIELD_NUMBER = 2;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 2;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int SKILL_ID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return A list containing the skillIdList.
      */
     @java.lang.Override
@@ -166,14 +176,14 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       return skillIdList_;
     }
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @return The count of skillIdList.
      */
     public int getSkillIdListCount() {
       return skillIdList_.size();
     }
     /**
-     * <code>repeated uint32 skill_id_list = 1;</code>
+     * <code>repeated uint32 skill_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
@@ -181,17 +191,6 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       return skillIdList_.getInt(index);
     }
     private int skillIdListMemoizedSerializedSize = -1;
-
-    public static final int UID_FIELD_NUMBER = 9;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 9;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -208,15 +207,15 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (uid_ != 0) {
+        output.writeUInt32(2, uid_);
+      }
       if (getSkillIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(skillIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillIdList_.size(); i++) {
         output.writeUInt32NoTag(skillIdList_.getInt(i));
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(9, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,6 +226,10 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, uid_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < skillIdList_.size(); i++) {
@@ -240,10 +243,6 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         skillIdListMemoizedSerializedSize = dataSize;
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -260,10 +259,10 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify other = (emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify) obj;
 
-      if (!getSkillIdListList()
-          .equals(other.getSkillIdListList())) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (!getSkillIdListList()
+          .equals(other.getSkillIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +274,12 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       if (getSkillIdListCount() > 0) {
         hash = (37 * hash) + SKILL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSkillIdListList().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +377,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9620
-     * Obf: AMMLEILIKAJ
+     * CmdId: 29731
      * </pre>
      *
      * Protobuf type {@code BrickBreakerPlayerSetSkillNotify}
@@ -419,10 +417,10 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        skillIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         uid_ = 0;
 
+        skillIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -450,12 +448,12 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       public emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify buildPartial() {
         emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify result = new emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify(this);
         int from_bitField0_ = bitField0_;
+        result.uid_ = uid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           skillIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.skillIdList_ = skillIdList_;
-        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -504,6 +502,9 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify other) {
         if (other == emu.grasscutter.net.proto.BrickBreakerPlayerSetSkillNotifyOuterClass.BrickBreakerPlayerSetSkillNotify.getDefaultInstance()) return this;
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (!other.skillIdList_.isEmpty()) {
           if (skillIdList_.isEmpty()) {
             skillIdList_ = other.skillIdList_;
@@ -513,9 +514,6 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
             skillIdList_.addAll(other.skillIdList_);
           }
           onChanged();
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,6 +545,37 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList skillIdList_ = emptyIntList();
       private void ensureSkillIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -555,7 +584,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return A list containing the skillIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +593,14 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return The count of skillIdList.
        */
       public int getSkillIdListCount() {
         return skillIdList_.size();
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
        */
@@ -579,7 +608,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
        * @return This builder for chaining.
@@ -592,7 +621,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +632,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -616,43 +645,12 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 1;</code>
+       * <code>repeated uint32 skill_id_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillIdList() {
         skillIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 9;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 9;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
         onChanged();
         return this;
       }
@@ -724,8 +722,8 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&BrickBreakerPlayerSetSkillNotify.proto" +
-      "\"F\n BrickBreakerPlayerSetSkillNotify\022\025\n\r" +
-      "skill_id_list\030\001 \003(\r\022\013\n\003uid\030\t \001(\rB\033\n\031emu." +
+      "\"F\n BrickBreakerPlayerSetSkillNotify\022\013\n\003" +
+      "uid\030\002 \001(\r\022\025\n\rskill_id_list\030\014 \003(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +735,7 @@ public final class BrickBreakerPlayerSetSkillNotifyOuterClass {
     internal_static_BrickBreakerPlayerSetSkillNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BrickBreakerPlayerSetSkillNotify_descriptor,
-        new java.lang.String[] { "SkillIdList", "Uid", });
+        new java.lang.String[] { "Uid", "SkillIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

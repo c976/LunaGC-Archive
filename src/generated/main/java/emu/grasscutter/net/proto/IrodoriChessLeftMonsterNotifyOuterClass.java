@@ -19,15 +19,14 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 left_monsters = 1;</code>
+     * <code>uint32 left_monsters = 8;</code>
      * @return The leftMonsters.
      */
     int getLeftMonsters();
   }
   /**
    * <pre>
-   * CmdId: 7965
-   * Obf: CFKCFDGGKBO
+   * CmdId: 27486
    * </pre>
    *
    * Protobuf type {@code IrodoriChessLeftMonsterNotify}
@@ -74,7 +73,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               leftMonsters_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.IrodoriChessLeftMonsterNotifyOuterClass.IrodoriChessLeftMonsterNotify.class, emu.grasscutter.net.proto.IrodoriChessLeftMonsterNotifyOuterClass.IrodoriChessLeftMonsterNotify.Builder.class);
     }
 
-    public static final int LEFT_MONSTERS_FIELD_NUMBER = 1;
+    public static final int LEFT_MONSTERS_FIELD_NUMBER = 8;
     private int leftMonsters_;
     /**
-     * <code>uint32 left_monsters = 1;</code>
+     * <code>uint32 left_monsters = 8;</code>
      * @return The leftMonsters.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (leftMonsters_ != 0) {
-        output.writeUInt32(1, leftMonsters_);
+        output.writeUInt32(8, leftMonsters_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
       size = 0;
       if (leftMonsters_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, leftMonsters_);
+          .computeUInt32Size(8, leftMonsters_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7965
-     * Obf: CFKCFDGGKBO
+     * CmdId: 27486
      * </pre>
      *
      * Protobuf type {@code IrodoriChessLeftMonsterNotify}
@@ -431,7 +429,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
 
       private int leftMonsters_ ;
       /**
-       * <code>uint32 left_monsters = 1;</code>
+       * <code>uint32 left_monsters = 8;</code>
        * @return The leftMonsters.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
         return leftMonsters_;
       }
       /**
-       * <code>uint32 left_monsters = 1;</code>
+       * <code>uint32 left_monsters = 8;</code>
        * @param value The leftMonsters to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 left_monsters = 1;</code>
+       * <code>uint32 left_monsters = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLeftMonsters() {
@@ -528,7 +526,7 @@ public final class IrodoriChessLeftMonsterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#IrodoriChessLeftMonsterNotify.proto\"6\n" +
       "\035IrodoriChessLeftMonsterNotify\022\025\n\rleft_m" +
-      "onsters\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "onsters\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

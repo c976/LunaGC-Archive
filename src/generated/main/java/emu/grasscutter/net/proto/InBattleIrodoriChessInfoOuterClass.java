@@ -19,60 +19,92 @@ public final class InBattleIrodoriChessInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     * @return Whether the mysteryInfo field is set.
+     */
+    boolean hasMysteryInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     * @return The mysteryInfo.
+     */
+    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     */
+    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @return A list containing the selectedCardIdList.
      */
     java.util.List<java.lang.Integer> getSelectedCardIdListList();
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @return The count of selectedCardIdList.
      */
     int getSelectedCardIdListCount();
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The selectedCardIdList at the given index.
      */
     int getSelectedCardIdList(int index);
 
     /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     * @return Whether the mysteryInfo field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 JEGDOENEJNF = 4;</code>
+     * @return The jEGDOENEJNF.
      */
-    boolean hasMysteryInfo();
-    /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     * @return The mysteryInfo.
-     */
-    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo();
-    /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     */
-    emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder();
+    int getJEGDOENEJNF();
 
     /**
-     * <code>uint32 ALNKBIFEJHG = 11;</code>
-     * @return The aLNKBIFEJHG.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 IDAEPLGLPOF = 7;</code>
+     * @return The iDAEPLGLPOF.
      */
-    int getALNKBIFEJHG();
+    int getIDAEPLGLPOF();
 
     /**
-     * <code>uint32 left_monsters = 7;</code>
-     * @return The leftMonsters.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 KPDHIBACMDP = 11;</code>
+     * @return The kPDHIBACMDP.
      */
-    int getLeftMonsters();
-
-    /**
-     * <code>uint32 BPPCDLMFKCP = 10;</code>
-     * @return The bPPCDLMFKCP.
-     */
-    int getBPPCDLMFKCP();
+    int getKPDHIBACMDP();
   }
   /**
-   * <pre>
-   * Obf: OEGGLNPLBIG
-   * </pre>
-   *
    * Protobuf type {@code InBattleIrodoriChessInfo}
    */
   public static final class InBattleIrodoriChessInfo extends
@@ -119,7 +151,17 @@ public final class InBattleIrodoriChessInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 32: {
+
+              jEGDOENEJNF_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              iDAEPLGLPOF_ = input.readUInt32();
+              break;
+            }
+            case 74: {
               emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder subBuilder = null;
               if (mysteryInfo_ != null) {
                 subBuilder = mysteryInfo_.toBuilder();
@@ -132,12 +174,7 @@ public final class InBattleIrodoriChessInfoOuterClass {
 
               break;
             }
-            case 56: {
-
-              leftMonsters_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 selectedCardIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -145,7 +182,7 @@ public final class InBattleIrodoriChessInfoOuterClass {
               selectedCardIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -158,14 +195,9 @@ public final class InBattleIrodoriChessInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 80: {
-
-              bPPCDLMFKCP_ = input.readUInt32();
-              break;
-            }
             case 88: {
 
-              aLNKBIFEJHG_ = input.readUInt32();
+              kPDHIBACMDP_ = input.readUInt32();
               break;
             }
             default: {
@@ -203,10 +235,52 @@ public final class InBattleIrodoriChessInfoOuterClass {
               emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo.class, emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo.Builder.class);
     }
 
-    public static final int SELECTED_CARD_ID_LIST_FIELD_NUMBER = 9;
+    public static final int MYSTERY_INFO_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo mysteryInfo_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     * @return Whether the mysteryInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasMysteryInfo() {
+      return mysteryInfo_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     * @return The mysteryInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo() {
+      return mysteryInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
+      return getMysteryInfo();
+    }
+
+    public static final int SELECTED_CARD_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList selectedCardIdList_;
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @return A list containing the selectedCardIdList.
      */
     @java.lang.Override
@@ -215,14 +289,22 @@ public final class InBattleIrodoriChessInfoOuterClass {
       return selectedCardIdList_;
     }
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @return The count of selectedCardIdList.
      */
     public int getSelectedCardIdListCount() {
       return selectedCardIdList_.size();
     }
     /**
-     * <code>repeated uint32 selected_card_id_list = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 selected_card_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The selectedCardIdList at the given index.
      */
@@ -231,63 +313,49 @@ public final class InBattleIrodoriChessInfoOuterClass {
     }
     private int selectedCardIdListMemoizedSerializedSize = -1;
 
-    public static final int MYSTERY_INFO_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo mysteryInfo_;
+    public static final int JEGDOENEJNF_FIELD_NUMBER = 4;
+    private int jEGDOENEJNF_;
     /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     * @return Whether the mysteryInfo field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 JEGDOENEJNF = 4;</code>
+     * @return The jEGDOENEJNF.
      */
     @java.lang.Override
-    public boolean hasMysteryInfo() {
-      return mysteryInfo_ != null;
-    }
-    /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     * @return The mysteryInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo() {
-      return mysteryInfo_ == null ? emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.getDefaultInstance() : mysteryInfo_;
-    }
-    /**
-     * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
-      return getMysteryInfo();
+    public int getJEGDOENEJNF() {
+      return jEGDOENEJNF_;
     }
 
-    public static final int ALNKBIFEJHG_FIELD_NUMBER = 11;
-    private int aLNKBIFEJHG_;
+    public static final int IDAEPLGLPOF_FIELD_NUMBER = 7;
+    private int iDAEPLGLPOF_;
     /**
-     * <code>uint32 ALNKBIFEJHG = 11;</code>
-     * @return The aLNKBIFEJHG.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 IDAEPLGLPOF = 7;</code>
+     * @return The iDAEPLGLPOF.
      */
     @java.lang.Override
-    public int getALNKBIFEJHG() {
-      return aLNKBIFEJHG_;
+    public int getIDAEPLGLPOF() {
+      return iDAEPLGLPOF_;
     }
 
-    public static final int LEFT_MONSTERS_FIELD_NUMBER = 7;
-    private int leftMonsters_;
+    public static final int KPDHIBACMDP_FIELD_NUMBER = 11;
+    private int kPDHIBACMDP_;
     /**
-     * <code>uint32 left_monsters = 7;</code>
-     * @return The leftMonsters.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 KPDHIBACMDP = 11;</code>
+     * @return The kPDHIBACMDP.
      */
     @java.lang.Override
-    public int getLeftMonsters() {
-      return leftMonsters_;
-    }
-
-    public static final int BPPCDLMFKCP_FIELD_NUMBER = 10;
-    private int bPPCDLMFKCP_;
-    /**
-     * <code>uint32 BPPCDLMFKCP = 10;</code>
-     * @return The bPPCDLMFKCP.
-     */
-    @java.lang.Override
-    public int getBPPCDLMFKCP() {
-      return bPPCDLMFKCP_;
+    public int getKPDHIBACMDP() {
+      return kPDHIBACMDP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -305,24 +373,24 @@ public final class InBattleIrodoriChessInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mysteryInfo_ != null) {
-        output.writeMessage(1, getMysteryInfo());
+      if (jEGDOENEJNF_ != 0) {
+        output.writeUInt32(4, jEGDOENEJNF_);
       }
-      if (leftMonsters_ != 0) {
-        output.writeUInt32(7, leftMonsters_);
+      if (iDAEPLGLPOF_ != 0) {
+        output.writeUInt32(7, iDAEPLGLPOF_);
+      }
+      if (mysteryInfo_ != null) {
+        output.writeMessage(9, getMysteryInfo());
       }
       if (getSelectedCardIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(selectedCardIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < selectedCardIdList_.size(); i++) {
         output.writeUInt32NoTag(selectedCardIdList_.getInt(i));
       }
-      if (bPPCDLMFKCP_ != 0) {
-        output.writeUInt32(10, bPPCDLMFKCP_);
-      }
-      if (aLNKBIFEJHG_ != 0) {
-        output.writeUInt32(11, aLNKBIFEJHG_);
+      if (kPDHIBACMDP_ != 0) {
+        output.writeUInt32(11, kPDHIBACMDP_);
       }
       unknownFields.writeTo(output);
     }
@@ -333,13 +401,17 @@ public final class InBattleIrodoriChessInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (jEGDOENEJNF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, jEGDOENEJNF_);
+      }
+      if (iDAEPLGLPOF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, iDAEPLGLPOF_);
+      }
       if (mysteryInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getMysteryInfo());
-      }
-      if (leftMonsters_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, leftMonsters_);
+          .computeMessageSize(9, getMysteryInfo());
       }
       {
         int dataSize = 0;
@@ -355,13 +427,9 @@ public final class InBattleIrodoriChessInfoOuterClass {
         }
         selectedCardIdListMemoizedSerializedSize = dataSize;
       }
-      if (bPPCDLMFKCP_ != 0) {
+      if (kPDHIBACMDP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, bPPCDLMFKCP_);
-      }
-      if (aLNKBIFEJHG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, aLNKBIFEJHG_);
+          .computeUInt32Size(11, kPDHIBACMDP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,19 +446,19 @@ public final class InBattleIrodoriChessInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo other = (emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo) obj;
 
-      if (!getSelectedCardIdListList()
-          .equals(other.getSelectedCardIdListList())) return false;
       if (hasMysteryInfo() != other.hasMysteryInfo()) return false;
       if (hasMysteryInfo()) {
         if (!getMysteryInfo()
             .equals(other.getMysteryInfo())) return false;
       }
-      if (getALNKBIFEJHG()
-          != other.getALNKBIFEJHG()) return false;
-      if (getLeftMonsters()
-          != other.getLeftMonsters()) return false;
-      if (getBPPCDLMFKCP()
-          != other.getBPPCDLMFKCP()) return false;
+      if (!getSelectedCardIdListList()
+          .equals(other.getSelectedCardIdListList())) return false;
+      if (getJEGDOENEJNF()
+          != other.getJEGDOENEJNF()) return false;
+      if (getIDAEPLGLPOF()
+          != other.getIDAEPLGLPOF()) return false;
+      if (getKPDHIBACMDP()
+          != other.getKPDHIBACMDP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -402,20 +470,20 @@ public final class InBattleIrodoriChessInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getSelectedCardIdListCount() > 0) {
-        hash = (37 * hash) + SELECTED_CARD_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSelectedCardIdListList().hashCode();
-      }
       if (hasMysteryInfo()) {
         hash = (37 * hash) + MYSTERY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMysteryInfo().hashCode();
       }
-      hash = (37 * hash) + ALNKBIFEJHG_FIELD_NUMBER;
-      hash = (53 * hash) + getALNKBIFEJHG();
-      hash = (37 * hash) + LEFT_MONSTERS_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftMonsters();
-      hash = (37 * hash) + BPPCDLMFKCP_FIELD_NUMBER;
-      hash = (53 * hash) + getBPPCDLMFKCP();
+      if (getSelectedCardIdListCount() > 0) {
+        hash = (37 * hash) + SELECTED_CARD_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSelectedCardIdListList().hashCode();
+      }
+      hash = (37 * hash) + JEGDOENEJNF_FIELD_NUMBER;
+      hash = (53 * hash) + getJEGDOENEJNF();
+      hash = (37 * hash) + IDAEPLGLPOF_FIELD_NUMBER;
+      hash = (53 * hash) + getIDAEPLGLPOF();
+      hash = (37 * hash) + KPDHIBACMDP_FIELD_NUMBER;
+      hash = (53 * hash) + getKPDHIBACMDP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,10 +580,6 @@ public final class InBattleIrodoriChessInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OEGGLNPLBIG
-     * </pre>
-     *
      * Protobuf type {@code InBattleIrodoriChessInfo}
      */
     public static final class Builder extends
@@ -553,19 +617,19 @@ public final class InBattleIrodoriChessInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        selectedCardIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (mysteryInfoBuilder_ == null) {
           mysteryInfo_ = null;
         } else {
           mysteryInfo_ = null;
           mysteryInfoBuilder_ = null;
         }
-        aLNKBIFEJHG_ = 0;
+        selectedCardIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        jEGDOENEJNF_ = 0;
 
-        leftMonsters_ = 0;
+        iDAEPLGLPOF_ = 0;
 
-        bPPCDLMFKCP_ = 0;
+        kPDHIBACMDP_ = 0;
 
         return this;
       }
@@ -594,19 +658,19 @@ public final class InBattleIrodoriChessInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo result = new emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          selectedCardIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.selectedCardIdList_ = selectedCardIdList_;
         if (mysteryInfoBuilder_ == null) {
           result.mysteryInfo_ = mysteryInfo_;
         } else {
           result.mysteryInfo_ = mysteryInfoBuilder_.build();
         }
-        result.aLNKBIFEJHG_ = aLNKBIFEJHG_;
-        result.leftMonsters_ = leftMonsters_;
-        result.bPPCDLMFKCP_ = bPPCDLMFKCP_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          selectedCardIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.selectedCardIdList_ = selectedCardIdList_;
+        result.jEGDOENEJNF_ = jEGDOENEJNF_;
+        result.iDAEPLGLPOF_ = iDAEPLGLPOF_;
+        result.kPDHIBACMDP_ = kPDHIBACMDP_;
         onBuilt();
         return result;
       }
@@ -655,6 +719,9 @@ public final class InBattleIrodoriChessInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleIrodoriChessInfoOuterClass.InBattleIrodoriChessInfo.getDefaultInstance()) return this;
+        if (other.hasMysteryInfo()) {
+          mergeMysteryInfo(other.getMysteryInfo());
+        }
         if (!other.selectedCardIdList_.isEmpty()) {
           if (selectedCardIdList_.isEmpty()) {
             selectedCardIdList_ = other.selectedCardIdList_;
@@ -665,17 +732,14 @@ public final class InBattleIrodoriChessInfoOuterClass {
           }
           onChanged();
         }
-        if (other.hasMysteryInfo()) {
-          mergeMysteryInfo(other.getMysteryInfo());
+        if (other.getJEGDOENEJNF() != 0) {
+          setJEGDOENEJNF(other.getJEGDOENEJNF());
         }
-        if (other.getALNKBIFEJHG() != 0) {
-          setALNKBIFEJHG(other.getALNKBIFEJHG());
+        if (other.getIDAEPLGLPOF() != 0) {
+          setIDAEPLGLPOF(other.getIDAEPLGLPOF());
         }
-        if (other.getLeftMonsters() != 0) {
-          setLeftMonsters(other.getLeftMonsters());
-        }
-        if (other.getBPPCDLMFKCP() != 0) {
-          setBPPCDLMFKCP(other.getBPPCDLMFKCP());
+        if (other.getKPDHIBACMDP() != 0) {
+          setKPDHIBACMDP(other.getKPDHIBACMDP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -707,97 +771,26 @@ public final class InBattleIrodoriChessInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList selectedCardIdList_ = emptyIntList();
-      private void ensureSelectedCardIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          selectedCardIdList_ = mutableCopy(selectedCardIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @return A list containing the selectedCardIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getSelectedCardIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(selectedCardIdList_) : selectedCardIdList_;
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @return The count of selectedCardIdList.
-       */
-      public int getSelectedCardIdListCount() {
-        return selectedCardIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The selectedCardIdList at the given index.
-       */
-      public int getSelectedCardIdList(int index) {
-        return selectedCardIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The selectedCardIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSelectedCardIdList(
-          int index, int value) {
-        ensureSelectedCardIdListIsMutable();
-        selectedCardIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @param value The selectedCardIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addSelectedCardIdList(int value) {
-        ensureSelectedCardIdListIsMutable();
-        selectedCardIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @param values The selectedCardIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllSelectedCardIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureSelectedCardIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, selectedCardIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 selected_card_id_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSelectedCardIdList() {
-        selectedCardIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo mysteryInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder> mysteryInfoBuilder_;
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        * @return Whether the mysteryInfo field is set.
        */
       public boolean hasMysteryInfo() {
         return mysteryInfoBuilder_ != null || mysteryInfo_ != null;
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        * @return The mysteryInfo.
        */
       public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo getMysteryInfo() {
@@ -808,7 +801,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public Builder setMysteryInfo(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
@@ -824,7 +821,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public Builder setMysteryInfo(
           emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder builderForValue) {
@@ -838,7 +839,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public Builder mergeMysteryInfo(emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo value) {
         if (mysteryInfoBuilder_ == null) {
@@ -856,7 +861,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public Builder clearMysteryInfo() {
         if (mysteryInfoBuilder_ == null) {
@@ -870,7 +879,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder getMysteryInfoBuilder() {
         
@@ -878,7 +891,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return getMysteryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       public emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder getMysteryInfoOrBuilder() {
         if (mysteryInfoBuilder_ != null) {
@@ -889,7 +906,11 @@ public final class InBattleIrodoriChessInfoOuterClass {
         }
       }
       /**
-       * <code>.IrodoriChessMysteryInfo mystery_info = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.IrodoriChessMysteryInfo mystery_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfo.Builder, emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.IrodoriChessMysteryInfoOrBuilder> 
@@ -905,95 +926,238 @@ public final class InBattleIrodoriChessInfoOuterClass {
         return mysteryInfoBuilder_;
       }
 
-      private int aLNKBIFEJHG_ ;
-      /**
-       * <code>uint32 ALNKBIFEJHG = 11;</code>
-       * @return The aLNKBIFEJHG.
-       */
-      @java.lang.Override
-      public int getALNKBIFEJHG() {
-        return aLNKBIFEJHG_;
+      private com.google.protobuf.Internal.IntList selectedCardIdList_ = emptyIntList();
+      private void ensureSelectedCardIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          selectedCardIdList_ = mutableCopy(selectedCardIdList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 ALNKBIFEJHG = 11;</code>
-       * @param value The aLNKBIFEJHG to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @return A list containing the selectedCardIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getSelectedCardIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(selectedCardIdList_) : selectedCardIdList_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @return The count of selectedCardIdList.
+       */
+      public int getSelectedCardIdListCount() {
+        return selectedCardIdList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @param index The index of the element to return.
+       * @return The selectedCardIdList at the given index.
+       */
+      public int getSelectedCardIdList(int index) {
+        return selectedCardIdList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The selectedCardIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setALNKBIFEJHG(int value) {
-        
-        aLNKBIFEJHG_ = value;
+      public Builder setSelectedCardIdList(
+          int index, int value) {
+        ensureSelectedCardIdListIsMutable();
+        selectedCardIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ALNKBIFEJHG = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @param value The selectedCardIdList to add.
        * @return This builder for chaining.
        */
-      public Builder clearALNKBIFEJHG() {
-        
-        aLNKBIFEJHG_ = 0;
+      public Builder addSelectedCardIdList(int value) {
+        ensureSelectedCardIdListIsMutable();
+        selectedCardIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @param values The selectedCardIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllSelectedCardIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureSelectedCardIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, selectedCardIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 selected_card_id_list = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSelectedCardIdList() {
+        selectedCardIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private int leftMonsters_ ;
+      private int jEGDOENEJNF_ ;
       /**
-       * <code>uint32 left_monsters = 7;</code>
-       * @return The leftMonsters.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 4;</code>
+       * @return The jEGDOENEJNF.
        */
       @java.lang.Override
-      public int getLeftMonsters() {
-        return leftMonsters_;
+      public int getJEGDOENEJNF() {
+        return jEGDOENEJNF_;
       }
       /**
-       * <code>uint32 left_monsters = 7;</code>
-       * @param value The leftMonsters to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 4;</code>
+       * @param value The jEGDOENEJNF to set.
        * @return This builder for chaining.
        */
-      public Builder setLeftMonsters(int value) {
+      public Builder setJEGDOENEJNF(int value) {
         
-        leftMonsters_ = value;
+        jEGDOENEJNF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 left_monsters = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLeftMonsters() {
+      public Builder clearJEGDOENEJNF() {
         
-        leftMonsters_ = 0;
+        jEGDOENEJNF_ = 0;
         onChanged();
         return this;
       }
 
-      private int bPPCDLMFKCP_ ;
+      private int iDAEPLGLPOF_ ;
       /**
-       * <code>uint32 BPPCDLMFKCP = 10;</code>
-       * @return The bPPCDLMFKCP.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 IDAEPLGLPOF = 7;</code>
+       * @return The iDAEPLGLPOF.
        */
       @java.lang.Override
-      public int getBPPCDLMFKCP() {
-        return bPPCDLMFKCP_;
+      public int getIDAEPLGLPOF() {
+        return iDAEPLGLPOF_;
       }
       /**
-       * <code>uint32 BPPCDLMFKCP = 10;</code>
-       * @param value The bPPCDLMFKCP to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 IDAEPLGLPOF = 7;</code>
+       * @param value The iDAEPLGLPOF to set.
        * @return This builder for chaining.
        */
-      public Builder setBPPCDLMFKCP(int value) {
+      public Builder setIDAEPLGLPOF(int value) {
         
-        bPPCDLMFKCP_ = value;
+        iDAEPLGLPOF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BPPCDLMFKCP = 10;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 IDAEPLGLPOF = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBPPCDLMFKCP() {
+      public Builder clearIDAEPLGLPOF() {
         
-        bPPCDLMFKCP_ = 0;
+        iDAEPLGLPOF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kPDHIBACMDP_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KPDHIBACMDP = 11;</code>
+       * @return The kPDHIBACMDP.
+       */
+      @java.lang.Override
+      public int getKPDHIBACMDP() {
+        return kPDHIBACMDP_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KPDHIBACMDP = 11;</code>
+       * @param value The kPDHIBACMDP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKPDHIBACMDP(int value) {
+        
+        kPDHIBACMDP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KPDHIBACMDP = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKPDHIBACMDP() {
+        
+        kPDHIBACMDP_ = 0;
         onChanged();
         return this;
       }
@@ -1065,12 +1229,12 @@ public final class InBattleIrodoriChessInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036InBattleIrodoriChessInfo.proto\032\035Irodor" +
-      "iChessMysteryInfo.proto\"\252\001\n\030InBattleIrod" +
-      "oriChessInfo\022\035\n\025selected_card_id_list\030\t " +
-      "\003(\r\022.\n\014mystery_info\030\001 \001(\0132\030.IrodoriChess" +
-      "MysteryInfo\022\023\n\013ALNKBIFEJHG\030\013 \001(\r\022\025\n\rleft" +
-      "_monsters\030\007 \001(\r\022\023\n\013BPPCDLMFKCP\030\n \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "iChessMysteryInfo.proto\"\250\001\n\030InBattleIrod" +
+      "oriChessInfo\022.\n\014mystery_info\030\t \001(\0132\030.Iro" +
+      "doriChessMysteryInfo\022\035\n\025selected_card_id" +
+      "_list\030\n \003(\r\022\023\n\013JEGDOENEJNF\030\004 \001(\r\022\023\n\013IDAE" +
+      "PLGLPOF\030\007 \001(\r\022\023\n\013KPDHIBACMDP\030\013 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1082,7 +1246,7 @@ public final class InBattleIrodoriChessInfoOuterClass {
     internal_static_InBattleIrodoriChessInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleIrodoriChessInfo_descriptor,
-        new java.lang.String[] { "SelectedCardIdList", "MysteryInfo", "ALNKBIFEJHG", "LeftMonsters", "BPPCDLMFKCP", });
+        new java.lang.String[] { "MysteryInfo", "SelectedCardIdList", "JEGDOENEJNF", "IDAEPLGLPOF", "KPDHIBACMDP", });
     emu.grasscutter.net.proto.IrodoriChessMysteryInfoOuterClass.getDescriptor();
   }
 

@@ -19,11 +19,11 @@ public final class DungeonDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     int getDungeonDataMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     boolean containsDungeonDataMap(
         int key);
@@ -34,28 +34,44 @@ public final class DungeonDataNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getDungeonDataMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getDungeonDataMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
 
     int getDungeonDataMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
 
     int getDungeonDataMapOrThrow(
         int key);
+
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     * @return Whether the diversityBattleDungeonInfo field is set.
+     */
+    boolean hasDiversityBattleDungeonInfo();
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     * @return The diversityBattleDungeonInfo.
+     */
+    emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB getDiversityBattleDungeonInfo();
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     */
+    emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder getDiversityBattleDungeonInfoOrBuilder();
+
+    public emu.grasscutter.net.proto.DungeonDataNotifyOuterClass.DungeonDataNotify.DetailCase getDetailCase();
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * CmdId: 6799
+   * CmdId: 5686
    * </pre>
    *
    * Protobuf type {@code DungeonDataNotify}
@@ -103,7 +119,7 @@ public final class DungeonDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dungeonDataMap_ = com.google.protobuf.MapField.newMapField(
                     DungeonDataMapDefaultEntryHolder.defaultEntry);
@@ -114,6 +130,20 @@ public final class DungeonDataNotifyOuterClass {
                   DungeonDataMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               dungeonDataMap_.getMutableMap().put(
                   dungeonDataMap__.getKey(), dungeonDataMap__.getValue());
+              break;
+            }
+            case 139698: {
+              emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder subBuilder = null;
+              if (detailCase_ == 17462) {
+                subBuilder = ((emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 17462;
               break;
             }
             default: {
@@ -145,7 +175,7 @@ public final class DungeonDataNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 10:
+        case 9:
           return internalGetDungeonDataMap();
         default:
           throw new RuntimeException(
@@ -160,7 +190,46 @@ public final class DungeonDataNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonDataNotifyOuterClass.DungeonDataNotify.class, emu.grasscutter.net.proto.DungeonDataNotifyOuterClass.DungeonDataNotify.Builder.class);
     }
 
-    public static final int DUNGEON_DATA_MAP_FIELD_NUMBER = 10;
+    private int detailCase_ = 0;
+    private java.lang.Object detail_;
+    public enum DetailCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      DIVERSITY_BATTLE_DUNGEON_INFO(17462),
+      DETAIL_NOT_SET(0);
+      private final int value;
+      private DetailCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DetailCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static DetailCase forNumber(int value) {
+        switch (value) {
+          case 17462: return DIVERSITY_BATTLE_DUNGEON_INFO;
+          case 0: return DETAIL_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public DetailCase
+    getDetailCase() {
+      return DetailCase.forNumber(
+          detailCase_);
+    }
+
+    public static final int DUNGEON_DATA_MAP_FIELD_NUMBER = 9;
     private static final class DungeonDataMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -187,7 +256,7 @@ public final class DungeonDataNotifyOuterClass {
       return internalGetDungeonDataMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
 
     @java.lang.Override
@@ -205,7 +274,7 @@ public final class DungeonDataNotifyOuterClass {
       return getDungeonDataMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     @java.lang.Override
 
@@ -213,7 +282,7 @@ public final class DungeonDataNotifyOuterClass {
       return internalGetDungeonDataMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     @java.lang.Override
 
@@ -226,7 +295,7 @@ public final class DungeonDataNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
      */
     @java.lang.Override
 
@@ -239,6 +308,37 @@ public final class DungeonDataNotifyOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int DIVERSITY_BATTLE_DUNGEON_INFO_FIELD_NUMBER = 17462;
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     * @return Whether the diversityBattleDungeonInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasDiversityBattleDungeonInfo() {
+      return detailCase_ == 17462;
+    }
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     * @return The diversityBattleDungeonInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB getDiversityBattleDungeonInfo() {
+      if (detailCase_ == 17462) {
+         return (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_;
+      }
+      return emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
+    }
+    /**
+     * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder getDiversityBattleDungeonInfoOrBuilder() {
+      if (detailCase_ == 17462) {
+         return (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_;
+      }
+      return emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -260,7 +360,10 @@ public final class DungeonDataNotifyOuterClass {
           output,
           internalGetDungeonDataMap(),
           DungeonDataMapDefaultEntryHolder.defaultEntry,
-          10);
+          9);
+      if (detailCase_ == 17462) {
+        output.writeMessage(17462, (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -278,7 +381,11 @@ public final class DungeonDataNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, dungeonDataMap__);
+            .computeMessageSize(9, dungeonDataMap__);
+      }
+      if (detailCase_ == 17462) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(17462, (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -297,6 +404,15 @@ public final class DungeonDataNotifyOuterClass {
 
       if (!internalGetDungeonDataMap().equals(
           other.internalGetDungeonDataMap())) return false;
+      if (!getDetailCase().equals(other.getDetailCase())) return false;
+      switch (detailCase_) {
+        case 17462:
+          if (!getDiversityBattleDungeonInfo()
+              .equals(other.getDiversityBattleDungeonInfo())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -311,6 +427,14 @@ public final class DungeonDataNotifyOuterClass {
       if (!internalGetDungeonDataMap().getMap().isEmpty()) {
         hash = (37 * hash) + DUNGEON_DATA_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetDungeonDataMap().hashCode();
+      }
+      switch (detailCase_) {
+        case 17462:
+          hash = (37 * hash) + DIVERSITY_BATTLE_DUNGEON_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getDiversityBattleDungeonInfo().hashCode();
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -409,8 +533,7 @@ public final class DungeonDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Version: 4.6.0
-     * CmdId: 6799
+     * CmdId: 5686
      * </pre>
      *
      * Protobuf type {@code DungeonDataNotify}
@@ -428,7 +551,7 @@ public final class DungeonDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 9:
             return internalGetDungeonDataMap();
           default:
             throw new RuntimeException(
@@ -439,7 +562,7 @@ public final class DungeonDataNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 10:
+          case 9:
             return internalGetMutableDungeonDataMap();
           default:
             throw new RuntimeException(
@@ -473,6 +596,8 @@ public final class DungeonDataNotifyOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableDungeonDataMap().clear();
+        detailCase_ = 0;
+        detail_ = null;
         return this;
       }
 
@@ -502,6 +627,14 @@ public final class DungeonDataNotifyOuterClass {
         int from_bitField0_ = bitField0_;
         result.dungeonDataMap_ = internalGetDungeonDataMap();
         result.dungeonDataMap_.makeImmutable();
+        if (detailCase_ == 17462) {
+          if (diversityBattleDungeonInfoBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = diversityBattleDungeonInfoBuilder_.build();
+          }
+        }
+        result.detailCase_ = detailCase_;
         onBuilt();
         return result;
       }
@@ -552,6 +685,15 @@ public final class DungeonDataNotifyOuterClass {
         if (other == emu.grasscutter.net.proto.DungeonDataNotifyOuterClass.DungeonDataNotify.getDefaultInstance()) return this;
         internalGetMutableDungeonDataMap().mergeFrom(
             other.internalGetDungeonDataMap());
+        switch (other.getDetailCase()) {
+          case DIVERSITY_BATTLE_DUNGEON_INFO: {
+            mergeDiversityBattleDungeonInfo(other.getDiversityBattleDungeonInfo());
+            break;
+          }
+          case DETAIL_NOT_SET: {
+            break;
+          }
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -580,6 +722,21 @@ public final class DungeonDataNotifyOuterClass {
         }
         return this;
       }
+      private int detailCase_ = 0;
+      private java.lang.Object detail_;
+      public DetailCase
+          getDetailCase() {
+        return DetailCase.forNumber(
+            detailCase_);
+      }
+
+      public Builder clearDetail() {
+        detailCase_ = 0;
+        detail_ = null;
+        onChanged();
+        return this;
+      }
+
       private int bitField0_;
 
       private com.google.protobuf.MapField<
@@ -609,7 +766,7 @@ public final class DungeonDataNotifyOuterClass {
         return internalGetDungeonDataMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
 
       @java.lang.Override
@@ -627,7 +784,7 @@ public final class DungeonDataNotifyOuterClass {
         return getDungeonDataMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
       @java.lang.Override
 
@@ -635,7 +792,7 @@ public final class DungeonDataNotifyOuterClass {
         return internalGetDungeonDataMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
       @java.lang.Override
 
@@ -648,7 +805,7 @@ public final class DungeonDataNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
       @java.lang.Override
 
@@ -669,7 +826,7 @@ public final class DungeonDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
 
       public Builder removeDungeonDataMap(
@@ -688,7 +845,7 @@ public final class DungeonDataNotifyOuterClass {
         return internalGetMutableDungeonDataMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
       public Builder putDungeonDataMap(
           int key,
@@ -700,7 +857,7 @@ public final class DungeonDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; dungeon_data_map = 9;</code>
        */
 
       public Builder putAllDungeonDataMap(
@@ -708,6 +865,147 @@ public final class DungeonDataNotifyOuterClass {
         internalGetMutableDungeonDataMap().getMutableMap()
             .putAll(values);
         return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder> diversityBattleDungeonInfoBuilder_;
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       * @return Whether the diversityBattleDungeonInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasDiversityBattleDungeonInfo() {
+        return detailCase_ == 17462;
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       * @return The diversityBattleDungeonInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB getDiversityBattleDungeonInfo() {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          if (detailCase_ == 17462) {
+            return (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_;
+          }
+          return emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
+        } else {
+          if (detailCase_ == 17462) {
+            return diversityBattleDungeonInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      public Builder setDiversityBattleDungeonInfo(emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB value) {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          diversityBattleDungeonInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 17462;
+        return this;
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      public Builder setDiversityBattleDungeonInfo(
+          emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder builderForValue) {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          diversityBattleDungeonInfoBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 17462;
+        return this;
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      public Builder mergeDiversityBattleDungeonInfo(emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB value) {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          if (detailCase_ == 17462 &&
+              detail_ != emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.newBuilder((emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 17462) {
+            diversityBattleDungeonInfoBuilder_.mergeFrom(value);
+          }
+          diversityBattleDungeonInfoBuilder_.setMessage(value);
+        }
+        detailCase_ = 17462;
+        return this;
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      public Builder clearDiversityBattleDungeonInfo() {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          if (detailCase_ == 17462) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 17462) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          diversityBattleDungeonInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      public emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder getDiversityBattleDungeonInfoBuilder() {
+        return getDiversityBattleDungeonInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder getDiversityBattleDungeonInfoOrBuilder() {
+        if ((detailCase_ == 17462) && (diversityBattleDungeonInfoBuilder_ != null)) {
+          return diversityBattleDungeonInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 17462) {
+            return (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_;
+          }
+          return emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.IFFHIFAGGIB diversity_battle_dungeon_info = 17462;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder> 
+          getDiversityBattleDungeonInfoFieldBuilder() {
+        if (diversityBattleDungeonInfoBuilder_ == null) {
+          if (!(detailCase_ == 17462)) {
+            detail_ = emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.getDefaultInstance();
+          }
+          diversityBattleDungeonInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB.Builder, emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIBOrBuilder>(
+                  (emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.IFFHIFAGGIB) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 17462;
+        onChanged();;
+        return diversityBattleDungeonInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -781,29 +1079,33 @@ public final class DungeonDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027DungeonDataNotify.proto\"\214\001\n\021DungeonDat" +
-      "aNotify\022@\n\020dungeon_data_map\030\n \003(\0132&.Dung" +
-      "eonDataNotify.DungeonDataMapEntry\0325\n\023Dun" +
-      "geonDataMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002" +
-      " \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\027DungeonDataNotify.proto\032\021IFFHIFAGGIB.p" +
+      "roto\"\317\001\n\021DungeonDataNotify\022@\n\020dungeon_da" +
+      "ta_map\030\t \003(\0132&.DungeonDataNotify.Dungeon" +
+      "DataMapEntry\0227\n\035diversity_battle_dungeon" +
+      "_info\030\266\210\001 \001(\0132\014.IFFHIFAGGIBH\000\0325\n\023Dungeon" +
+      "DataMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
+      ":\0028\001B\010\n\006detailB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.getDescriptor(),
         });
     internal_static_DungeonDataNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_DungeonDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonDataNotify_descriptor,
-        new java.lang.String[] { "DungeonDataMap", });
+        new java.lang.String[] { "DungeonDataMap", "DiversityBattleDungeonInfo", "Detail", });
     internal_static_DungeonDataNotify_DungeonDataMapEntry_descriptor =
       internal_static_DungeonDataNotify_descriptor.getNestedTypes().get(0);
     internal_static_DungeonDataNotify_DungeonDataMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonDataNotify_DungeonDataMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    emu.grasscutter.net.proto.IFFHIFAGGIBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -15,73 +15,61 @@ public final class SvrMsgIdOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf enum {@code SvrMsgId}
    */
   public enum SvrMsgId
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MSG_UNKNOWN = 0;</code>
+     * <code>EFJFKBECJIB_MSG_UNKNOWN = 0;</code>
      */
-    MSG_UNKNOWN(0),
+    EFJFKBECJIB_MSG_UNKNOWN(0),
     /**
-     * <code>MSG_BLOCK_REFRESH_COUNTDOWN = 1;</code>
+     * <code>EFJFKBECJIB_MSG_BLOCK_REFRESH_COUNTDOWN = 1;</code>
      */
-    MSG_BLOCK_REFRESH_COUNTDOWN(1),
+    EFJFKBECJIB_MSG_BLOCK_REFRESH_COUNTDOWN(1),
     /**
-     * <code>MSG_AVATAR_REVIVE_BY_STATUE = 2;</code>
+     * <code>EFJFKBECJIB_MSG_AVATAR_REVIVE_BY_STATUE = 2;</code>
      */
-    MSG_AVATAR_REVIVE_BY_STATUE(2),
+    EFJFKBECJIB_MSG_AVATAR_REVIVE_BY_STATUE(2),
     /**
-     * <code>MSG_DAILY_TASK_REWARD_MAX_NUM = 3;</code>
+     * <code>EFJFKBECJIB_MSG_DAILY_TASK_REWARD_MAX_NUM = 3;</code>
      */
-    MSG_DAILY_TASK_REWARD_MAX_NUM(3),
+    EFJFKBECJIB_MSG_DAILY_TASK_REWARD_MAX_NUM(3),
     /**
-     * <code>MSG_ROUTINE_TYPE_NOT_OPEN = 4;</code>
+     * <code>EFJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN = 4;</code>
      */
-    MSG_ROUTINE_TYPE_NOT_OPEN(4),
+    EFJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN(4),
     /**
-     * <code>MSG_ROUTINE_TYPE_REWARD_MAX_NUM = 5;</code>
+     * <code>EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MAX_NUM = 5;</code>
      */
-    MSG_ROUTINE_TYPE_REWARD_MAX_NUM(5),
-    /**
-     * <code>MSG_MECHANICUS_COIN_LIMIT = 6;</code>
-     */
-    MSG_MECHANICUS_COIN_LIMIT(6),
+    EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MAX_NUM(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>MSG_UNKNOWN = 0;</code>
+     * <code>EFJFKBECJIB_MSG_UNKNOWN = 0;</code>
      */
-    public static final int MSG_UNKNOWN_VALUE = 0;
+    public static final int EFJFKBECJIB_MSG_UNKNOWN_VALUE = 0;
     /**
-     * <code>MSG_BLOCK_REFRESH_COUNTDOWN = 1;</code>
+     * <code>EFJFKBECJIB_MSG_BLOCK_REFRESH_COUNTDOWN = 1;</code>
      */
-    public static final int MSG_BLOCK_REFRESH_COUNTDOWN_VALUE = 1;
+    public static final int EFJFKBECJIB_MSG_BLOCK_REFRESH_COUNTDOWN_VALUE = 1;
     /**
-     * <code>MSG_AVATAR_REVIVE_BY_STATUE = 2;</code>
+     * <code>EFJFKBECJIB_MSG_AVATAR_REVIVE_BY_STATUE = 2;</code>
      */
-    public static final int MSG_AVATAR_REVIVE_BY_STATUE_VALUE = 2;
+    public static final int EFJFKBECJIB_MSG_AVATAR_REVIVE_BY_STATUE_VALUE = 2;
     /**
-     * <code>MSG_DAILY_TASK_REWARD_MAX_NUM = 3;</code>
+     * <code>EFJFKBECJIB_MSG_DAILY_TASK_REWARD_MAX_NUM = 3;</code>
      */
-    public static final int MSG_DAILY_TASK_REWARD_MAX_NUM_VALUE = 3;
+    public static final int EFJFKBECJIB_MSG_DAILY_TASK_REWARD_MAX_NUM_VALUE = 3;
     /**
-     * <code>MSG_ROUTINE_TYPE_NOT_OPEN = 4;</code>
+     * <code>EFJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN = 4;</code>
      */
-    public static final int MSG_ROUTINE_TYPE_NOT_OPEN_VALUE = 4;
+    public static final int EFJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN_VALUE = 4;
     /**
-     * <code>MSG_ROUTINE_TYPE_REWARD_MAX_NUM = 5;</code>
+     * <code>EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MAX_NUM = 5;</code>
      */
-    public static final int MSG_ROUTINE_TYPE_REWARD_MAX_NUM_VALUE = 5;
-    /**
-     * <code>MSG_MECHANICUS_COIN_LIMIT = 6;</code>
-     */
-    public static final int MSG_MECHANICUS_COIN_LIMIT_VALUE = 6;
+    public static final int EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MAX_NUM_VALUE = 5;
 
 
     public final int getNumber() {
@@ -108,13 +96,12 @@ public final class SvrMsgIdOuterClass {
      */
     public static SvrMsgId forNumber(int value) {
       switch (value) {
-        case 0: return MSG_UNKNOWN;
-        case 1: return MSG_BLOCK_REFRESH_COUNTDOWN;
-        case 2: return MSG_AVATAR_REVIVE_BY_STATUE;
-        case 3: return MSG_DAILY_TASK_REWARD_MAX_NUM;
-        case 4: return MSG_ROUTINE_TYPE_NOT_OPEN;
-        case 5: return MSG_ROUTINE_TYPE_REWARD_MAX_NUM;
-        case 6: return MSG_MECHANICUS_COIN_LIMIT;
+        case 0: return EFJFKBECJIB_MSG_UNKNOWN;
+        case 1: return EFJFKBECJIB_MSG_BLOCK_REFRESH_COUNTDOWN;
+        case 2: return EFJFKBECJIB_MSG_AVATAR_REVIVE_BY_STATUE;
+        case 3: return EFJFKBECJIB_MSG_DAILY_TASK_REWARD_MAX_NUM;
+        case 4: return EFJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN;
+        case 5: return EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MAX_NUM;
         default: return null;
       }
     }
@@ -180,14 +167,15 @@ public final class SvrMsgIdOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016SvrMsgId.proto*\343\001\n\010SvrMsgId\022\017\n\013MSG_UNK" +
-      "NOWN\020\000\022\037\n\033MSG_BLOCK_REFRESH_COUNTDOWN\020\001\022" +
-      "\037\n\033MSG_AVATAR_REVIVE_BY_STATUE\020\002\022!\n\035MSG_" +
-      "DAILY_TASK_REWARD_MAX_NUM\020\003\022\035\n\031MSG_ROUTI" +
-      "NE_TYPE_NOT_OPEN\020\004\022#\n\037MSG_ROUTINE_TYPE_R" +
-      "EWARD_MAX_NUM\020\005\022\035\n\031MSG_MECHANICUS_COIN_L" +
-      "IMIT\020\006B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\016SvrMsgId.proto*\214\002\n\010SvrMsgId\022\033\n\027EFJFKBE" +
+      "CJIB_MSG_UNKNOWN\020\000\022+\n\'EFJFKBECJIB_MSG_BL" +
+      "OCK_REFRESH_COUNTDOWN\020\001\022+\n\'EFJFKBECJIB_M" +
+      "SG_AVATAR_REVIVE_BY_STATUE\020\002\022-\n)EFJFKBEC" +
+      "JIB_MSG_DAILY_TASK_REWARD_MAX_NUM\020\003\022)\n%E" +
+      "FJFKBECJIB_MSG_ROUTINE_TYPE_NOT_OPEN\020\004\022/" +
+      "\n+EFJFKBECJIB_MSG_ROUTINE_TYPE_REWARD_MA" +
+      "X_NUM\020\005B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

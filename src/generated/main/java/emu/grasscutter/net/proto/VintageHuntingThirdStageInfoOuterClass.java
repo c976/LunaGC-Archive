@@ -19,10 +19,6 @@ public final class VintageHuntingThirdStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * Obf: ALBKMPFFDDE
-   * </pre>
-   *
    * Protobuf type {@code VintageHuntingThirdStageInfo}
    */
   public static final class VintageHuntingThirdStageInfo extends
@@ -244,10 +240,6 @@ public final class VintageHuntingThirdStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: ALBKMPFFDDE
-     * </pre>
-     *
      * Protobuf type {@code VintageHuntingThirdStageInfo}
      */
     public static final class Builder extends

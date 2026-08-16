@@ -19,27 +19,26 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 challenge_mode_difficulty = 12;</code>
-     * @return The challengeModeDifficulty.
+     * <code>uint32 NPOLAGLIKPK = 12;</code>
+     * @return The nPOLAGLIKPK.
      */
-    int getChallengeModeDifficulty();
+    int getNPOLAGLIKPK();
 
     /**
-     * <code>uint32 skill_no = 2;</code>
-     * @return The skillNo.
+     * <code>uint32 OPGPKHAKFAI = 14;</code>
+     * @return The oPGPKHAKFAI.
      */
-    int getSkillNo();
+    int getOPGPKHAKFAI();
   }
   /**
    * <pre>
-   * CmdId: 25353
-   * Obf: KLKEPODPBIL
+   * CmdId: 5812
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2DungeonInfoNotify}
@@ -86,19 +85,19 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              skillNo_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 88: {
 
               levelId_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              challengeModeDifficulty_ = input.readUInt32();
+              nPOLAGLIKPK_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              oPGPKHAKFAI_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify.class, emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -144,26 +143,26 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 12;
-    private int challengeModeDifficulty_;
+    public static final int NPOLAGLIKPK_FIELD_NUMBER = 12;
+    private int nPOLAGLIKPK_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 12;</code>
-     * @return The challengeModeDifficulty.
+     * <code>uint32 NPOLAGLIKPK = 12;</code>
+     * @return The nPOLAGLIKPK.
      */
     @java.lang.Override
-    public int getChallengeModeDifficulty() {
-      return challengeModeDifficulty_;
+    public int getNPOLAGLIKPK() {
+      return nPOLAGLIKPK_;
     }
 
-    public static final int SKILL_NO_FIELD_NUMBER = 2;
-    private int skillNo_;
+    public static final int OPGPKHAKFAI_FIELD_NUMBER = 14;
+    private int oPGPKHAKFAI_;
     /**
-     * <code>uint32 skill_no = 2;</code>
-     * @return The skillNo.
+     * <code>uint32 OPGPKHAKFAI = 14;</code>
+     * @return The oPGPKHAKFAI.
      */
     @java.lang.Override
-    public int getSkillNo() {
-      return skillNo_;
+    public int getOPGPKHAKFAI() {
+      return oPGPKHAKFAI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (skillNo_ != 0) {
-        output.writeUInt32(2, skillNo_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+        output.writeUInt32(11, levelId_);
       }
-      if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(12, challengeModeDifficulty_);
+      if (nPOLAGLIKPK_ != 0) {
+        output.writeUInt32(12, nPOLAGLIKPK_);
+      }
+      if (oPGPKHAKFAI_ != 0) {
+        output.writeUInt32(14, oPGPKHAKFAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (skillNo_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, skillNo_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(11, levelId_);
       }
-      if (challengeModeDifficulty_ != 0) {
+      if (nPOLAGLIKPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, challengeModeDifficulty_);
+          .computeUInt32Size(12, nPOLAGLIKPK_);
+      }
+      if (oPGPKHAKFAI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, oPGPKHAKFAI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +226,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
 
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getChallengeModeDifficulty()
-          != other.getChallengeModeDifficulty()) return false;
-      if (getSkillNo()
-          != other.getSkillNo()) return false;
+      if (getNPOLAGLIKPK()
+          != other.getNPOLAGLIKPK()) return false;
+      if (getOPGPKHAKFAI()
+          != other.getOPGPKHAKFAI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,10 +243,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeDifficulty();
-      hash = (37 * hash) + SKILL_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillNo();
+      hash = (37 * hash) + NPOLAGLIKPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNPOLAGLIKPK();
+      hash = (37 * hash) + OPGPKHAKFAI_FIELD_NUMBER;
+      hash = (53 * hash) + getOPGPKHAKFAI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25353
-     * Obf: KLKEPODPBIL
+     * CmdId: 5812
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2DungeonInfoNotify}
@@ -388,9 +386,9 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         super.clear();
         levelId_ = 0;
 
-        challengeModeDifficulty_ = 0;
+        nPOLAGLIKPK_ = 0;
 
-        skillNo_ = 0;
+        oPGPKHAKFAI_ = 0;
 
         return this;
       }
@@ -419,8 +417,8 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify result = new emu.grasscutter.net.proto.EffigyChallengeV2DungeonInfoNotifyOuterClass.EffigyChallengeV2DungeonInfoNotify(this);
         result.levelId_ = levelId_;
-        result.challengeModeDifficulty_ = challengeModeDifficulty_;
-        result.skillNo_ = skillNo_;
+        result.nPOLAGLIKPK_ = nPOLAGLIKPK_;
+        result.oPGPKHAKFAI_ = oPGPKHAKFAI_;
         onBuilt();
         return result;
       }
@@ -472,11 +470,11 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getChallengeModeDifficulty() != 0) {
-          setChallengeModeDifficulty(other.getChallengeModeDifficulty());
+        if (other.getNPOLAGLIKPK() != 0) {
+          setNPOLAGLIKPK(other.getNPOLAGLIKPK());
         }
-        if (other.getSkillNo() != 0) {
-          setSkillNo(other.getSkillNo());
+        if (other.getOPGPKHAKFAI() != 0) {
+          setOPGPKHAKFAI(other.getOPGPKHAKFAI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +507,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -517,7 +515,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +526,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -538,64 +536,64 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
         return this;
       }
 
-      private int challengeModeDifficulty_ ;
+      private int nPOLAGLIKPK_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 12;</code>
-       * @return The challengeModeDifficulty.
+       * <code>uint32 NPOLAGLIKPK = 12;</code>
+       * @return The nPOLAGLIKPK.
        */
       @java.lang.Override
-      public int getChallengeModeDifficulty() {
-        return challengeModeDifficulty_;
+      public int getNPOLAGLIKPK() {
+        return nPOLAGLIKPK_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 12;</code>
-       * @param value The challengeModeDifficulty to set.
+       * <code>uint32 NPOLAGLIKPK = 12;</code>
+       * @param value The nPOLAGLIKPK to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeModeDifficulty(int value) {
+      public Builder setNPOLAGLIKPK(int value) {
         
-        challengeModeDifficulty_ = value;
+        nPOLAGLIKPK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 12;</code>
+       * <code>uint32 NPOLAGLIKPK = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeModeDifficulty() {
+      public Builder clearNPOLAGLIKPK() {
         
-        challengeModeDifficulty_ = 0;
+        nPOLAGLIKPK_ = 0;
         onChanged();
         return this;
       }
 
-      private int skillNo_ ;
+      private int oPGPKHAKFAI_ ;
       /**
-       * <code>uint32 skill_no = 2;</code>
-       * @return The skillNo.
+       * <code>uint32 OPGPKHAKFAI = 14;</code>
+       * @return The oPGPKHAKFAI.
        */
       @java.lang.Override
-      public int getSkillNo() {
-        return skillNo_;
+      public int getOPGPKHAKFAI() {
+        return oPGPKHAKFAI_;
       }
       /**
-       * <code>uint32 skill_no = 2;</code>
-       * @param value The skillNo to set.
+       * <code>uint32 OPGPKHAKFAI = 14;</code>
+       * @param value The oPGPKHAKFAI to set.
        * @return This builder for chaining.
        */
-      public Builder setSkillNo(int value) {
+      public Builder setOPGPKHAKFAI(int value) {
         
-        skillNo_ = value;
+        oPGPKHAKFAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 skill_no = 2;</code>
+       * <code>uint32 OPGPKHAKFAI = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSkillNo() {
+      public Builder clearOPGPKHAKFAI() {
         
-        skillNo_ = 0;
+        oPGPKHAKFAI_ = 0;
         onChanged();
         return this;
       }
@@ -667,10 +665,10 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(EffigyChallengeV2DungeonInfoNotify.pro" +
-      "to\"k\n\"EffigyChallengeV2DungeonInfoNotify" +
-      "\022\020\n\010level_id\030\005 \001(\r\022!\n\031challenge_mode_dif" +
-      "ficulty\030\014 \001(\r\022\020\n\010skill_no\030\002 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "to\"`\n\"EffigyChallengeV2DungeonInfoNotify" +
+      "\022\020\n\010level_id\030\013 \001(\r\022\023\n\013NPOLAGLIKPK\030\014 \001(\r\022" +
+      "\023\n\013OPGPKHAKFAI\030\016 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -681,7 +679,7 @@ public final class EffigyChallengeV2DungeonInfoNotifyOuterClass {
     internal_static_EffigyChallengeV2DungeonInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV2DungeonInfoNotify_descriptor,
-        new java.lang.String[] { "LevelId", "ChallengeModeDifficulty", "SkillNo", });
+        new java.lang.String[] { "LevelId", "NPOLAGLIKPK", "OPGPKHAKFAI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,32 +19,47 @@ public final class PublishCustomDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @return A list containing the tagList.
      */
     java.util.List<java.lang.Integer> getTagListList();
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @return The count of tagList.
      */
     int getTagListCount();
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @param index The index of the element to return.
      * @return The tagList at the given index.
      */
     int getTagList(int index);
 
     /**
-     * <code>uint64 dungeon_guid = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 dungeon_guid = 5;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
   }
   /**
    * <pre>
-   * CmdId: 21897
-   * Obf: GBABEIIMMEL
+   * CmdId: 21464
    * </pre>
    *
    * Protobuf type {@code PublishCustomDungeonReq}
@@ -94,11 +109,6 @@ public final class PublishCustomDungeonReqOuterClass {
               done = true;
               break;
             case 16: {
-
-              dungeonGuid_ = input.readUInt64();
-              break;
-            }
-            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 tagList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +116,7 @@ public final class PublishCustomDungeonReqOuterClass {
               tagList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,6 +127,11 @@ public final class PublishCustomDungeonReqOuterClass {
                 tagList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 40: {
+
+              dungeonGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -154,10 +169,14 @@ public final class PublishCustomDungeonReqOuterClass {
               emu.grasscutter.net.proto.PublishCustomDungeonReqOuterClass.PublishCustomDungeonReq.class, emu.grasscutter.net.proto.PublishCustomDungeonReqOuterClass.PublishCustomDungeonReq.Builder.class);
     }
 
-    public static final int TAG_LIST_FIELD_NUMBER = 9;
+    public static final int TAG_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList tagList_;
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @return A list containing the tagList.
      */
     @java.lang.Override
@@ -166,14 +185,22 @@ public final class PublishCustomDungeonReqOuterClass {
       return tagList_;
     }
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @return The count of tagList.
      */
     public int getTagListCount() {
       return tagList_.size();
     }
     /**
-     * <code>repeated uint32 tag_list = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 tag_list = 2;</code>
      * @param index The index of the element to return.
      * @return The tagList at the given index.
      */
@@ -182,10 +209,14 @@ public final class PublishCustomDungeonReqOuterClass {
     }
     private int tagListMemoizedSerializedSize = -1;
 
-    public static final int DUNGEON_GUID_FIELD_NUMBER = 2;
+    public static final int DUNGEON_GUID_FIELD_NUMBER = 5;
     private long dungeonGuid_;
     /**
-     * <code>uint64 dungeon_guid = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 dungeon_guid = 5;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
@@ -208,15 +239,15 @@ public final class PublishCustomDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (dungeonGuid_ != 0L) {
-        output.writeUInt64(2, dungeonGuid_);
-      }
       if (getTagListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(tagListMemoizedSerializedSize);
       }
       for (int i = 0; i < tagList_.size(); i++) {
         output.writeUInt32NoTag(tagList_.getInt(i));
+      }
+      if (dungeonGuid_ != 0L) {
+        output.writeUInt64(5, dungeonGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,10 +258,6 @@ public final class PublishCustomDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, dungeonGuid_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < tagList_.size(); i++) {
@@ -244,6 +271,10 @@ public final class PublishCustomDungeonReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         tagListMemoizedSerializedSize = dataSize;
+      }
+      if (dungeonGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(5, dungeonGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,8 +410,7 @@ public final class PublishCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21897
-     * Obf: GBABEIIMMEL
+     * CmdId: 21464
      * </pre>
      *
      * Protobuf type {@code PublishCustomDungeonReq}
@@ -556,7 +586,11 @@ public final class PublishCustomDungeonReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @return A list containing the tagList.
        */
       public java.util.List<java.lang.Integer>
@@ -565,14 +599,22 @@ public final class PublishCustomDungeonReqOuterClass {
                  java.util.Collections.unmodifiableList(tagList_) : tagList_;
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @return The count of tagList.
        */
       public int getTagListCount() {
         return tagList_.size();
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @param index The index of the element to return.
        * @return The tagList at the given index.
        */
@@ -580,7 +622,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return tagList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The tagList to set.
        * @return This builder for chaining.
@@ -593,7 +639,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @param value The tagList to add.
        * @return This builder for chaining.
        */
@@ -604,7 +654,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @param values The tagList to add.
        * @return This builder for chaining.
        */
@@ -617,7 +671,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tag_list = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 tag_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTagList() {
@@ -629,7 +687,11 @@ public final class PublishCustomDungeonReqOuterClass {
 
       private long dungeonGuid_ ;
       /**
-       * <code>uint64 dungeon_guid = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 5;</code>
        * @return The dungeonGuid.
        */
       @java.lang.Override
@@ -637,7 +699,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return dungeonGuid_;
       }
       /**
-       * <code>uint64 dungeon_guid = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 5;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
        */
@@ -648,7 +714,11 @@ public final class PublishCustomDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 dungeon_guid = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 dungeon_guid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
@@ -725,8 +795,8 @@ public final class PublishCustomDungeonReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035PublishCustomDungeonReq.proto\"A\n\027Publi" +
-      "shCustomDungeonReq\022\020\n\010tag_list\030\t \003(\r\022\024\n\014" +
-      "dungeon_guid\030\002 \001(\004B\033\n\031emu.grasscutter.ne" +
+      "shCustomDungeonReq\022\020\n\010tag_list\030\002 \003(\r\022\024\n\014" +
+      "dungeon_guid\030\005 \001(\004B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

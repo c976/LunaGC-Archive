@@ -20,64 +20,64 @@ public final class SalvagePreventStopReasonOuterClass {
   public enum SalvagePreventStopReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SALVAGE_PREVENT_STOP_NONE = 0;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_NONE = 0;</code>
      */
-    SALVAGE_PREVENT_STOP_NONE(0),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_NONE(0),
     /**
-     * <code>SALVAGE_PREVENT_STOP_SUCCESS = 1;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_SUCCESS = 1;</code>
      */
-    SALVAGE_PREVENT_STOP_SUCCESS(1),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_SUCCESS(1),
     /**
-     * <code>SALVAGE_PREVENT_STOP_ARRIVAL = 2;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_ARRIVAL = 2;</code>
      */
-    SALVAGE_PREVENT_STOP_ARRIVAL(2),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_ARRIVAL(2),
     /**
-     * <code>SALVAGE_PREVENT_STOP_INTERRUPT = 3;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRUPT = 3;</code>
      */
-    SALVAGE_PREVENT_STOP_INTERRUPT(3),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRUPT(3),
     /**
-     * <code>SALVAGE_PREVENT_STOP_LEAVE = 4;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_LEAVE = 4;</code>
      */
-    SALVAGE_PREVENT_STOP_LEAVE(4),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_LEAVE(4),
     /**
-     * <code>SALVAGE_PREVENT_STOP_FULL = 5;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_FULL = 5;</code>
      */
-    SALVAGE_PREVENT_STOP_FULL(5),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_FULL(5),
     /**
-     * <code>SALVAGE_PREVENT_STOP_AWAY = 6;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_AWAY = 6;</code>
      */
-    SALVAGE_PREVENT_STOP_AWAY(6),
+    FMONJHJOKBM_SALVAGE_PREVENT_STOP_AWAY(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SALVAGE_PREVENT_STOP_NONE = 0;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_NONE = 0;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_NONE_VALUE = 0;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_NONE_VALUE = 0;
     /**
-     * <code>SALVAGE_PREVENT_STOP_SUCCESS = 1;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_SUCCESS = 1;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_SUCCESS_VALUE = 1;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_SUCCESS_VALUE = 1;
     /**
-     * <code>SALVAGE_PREVENT_STOP_ARRIVAL = 2;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_ARRIVAL = 2;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_ARRIVAL_VALUE = 2;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_ARRIVAL_VALUE = 2;
     /**
-     * <code>SALVAGE_PREVENT_STOP_INTERRUPT = 3;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRUPT = 3;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_INTERRUPT_VALUE = 3;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRUPT_VALUE = 3;
     /**
-     * <code>SALVAGE_PREVENT_STOP_LEAVE = 4;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_LEAVE = 4;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_LEAVE_VALUE = 4;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_LEAVE_VALUE = 4;
     /**
-     * <code>SALVAGE_PREVENT_STOP_FULL = 5;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_FULL = 5;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_FULL_VALUE = 5;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_FULL_VALUE = 5;
     /**
-     * <code>SALVAGE_PREVENT_STOP_AWAY = 6;</code>
+     * <code>FMONJHJOKBM_SALVAGE_PREVENT_STOP_AWAY = 6;</code>
      */
-    public static final int SALVAGE_PREVENT_STOP_AWAY_VALUE = 6;
+    public static final int FMONJHJOKBM_SALVAGE_PREVENT_STOP_AWAY_VALUE = 6;
 
 
     public final int getNumber() {
@@ -104,13 +104,13 @@ public final class SalvagePreventStopReasonOuterClass {
      */
     public static SalvagePreventStopReason forNumber(int value) {
       switch (value) {
-        case 0: return SALVAGE_PREVENT_STOP_NONE;
-        case 1: return SALVAGE_PREVENT_STOP_SUCCESS;
-        case 2: return SALVAGE_PREVENT_STOP_ARRIVAL;
-        case 3: return SALVAGE_PREVENT_STOP_INTERRUPT;
-        case 4: return SALVAGE_PREVENT_STOP_LEAVE;
-        case 5: return SALVAGE_PREVENT_STOP_FULL;
-        case 6: return SALVAGE_PREVENT_STOP_AWAY;
+        case 0: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_NONE;
+        case 1: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_SUCCESS;
+        case 2: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_ARRIVAL;
+        case 3: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRUPT;
+        case 4: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_LEAVE;
+        case 5: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_FULL;
+        case 6: return FMONJHJOKBM_SALVAGE_PREVENT_STOP_AWAY;
         default: return null;
       }
     }
@@ -176,15 +176,17 @@ public final class SalvagePreventStopReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SalvagePreventStopReason.proto*\377\001\n\030Sal" +
-      "vagePreventStopReason\022\035\n\031SALVAGE_PREVENT" +
-      "_STOP_NONE\020\000\022 \n\034SALVAGE_PREVENT_STOP_SUC" +
-      "CESS\020\001\022 \n\034SALVAGE_PREVENT_STOP_ARRIVAL\020\002" +
-      "\022\"\n\036SALVAGE_PREVENT_STOP_INTERRUPT\020\003\022\036\n\032" +
-      "SALVAGE_PREVENT_STOP_LEAVE\020\004\022\035\n\031SALVAGE_" +
-      "PREVENT_STOP_FULL\020\005\022\035\n\031SALVAGE_PREVENT_S" +
-      "TOP_AWAY\020\006B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\036SalvagePreventStopReason.proto*\323\002\n\030Sal" +
+      "vagePreventStopReason\022)\n%FMONJHJOKBM_SAL" +
+      "VAGE_PREVENT_STOP_NONE\020\000\022,\n(FMONJHJOKBM_" +
+      "SALVAGE_PREVENT_STOP_SUCCESS\020\001\022,\n(FMONJH" +
+      "JOKBM_SALVAGE_PREVENT_STOP_ARRIVAL\020\002\022.\n*" +
+      "FMONJHJOKBM_SALVAGE_PREVENT_STOP_INTERRU" +
+      "PT\020\003\022*\n&FMONJHJOKBM_SALVAGE_PREVENT_STOP" +
+      "_LEAVE\020\004\022)\n%FMONJHJOKBM_SALVAGE_PREVENT_" +
+      "STOP_FULL\020\005\022)\n%FMONJHJOKBM_SALVAGE_PREVE" +
+      "NT_STOP_AWAY\020\006B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

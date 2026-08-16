@@ -19,22 +19,22 @@ public final class SetBattlePassViewedRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * sus
-     * </pre>
-     *
-     * <code>uint32 schedule_id = 5;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
+   * <pre>
+   * CmdId: 21391
+   * </pre>
+   *
    * Protobuf type {@code SetBattlePassViewedRsp}
    */
   public static final class SetBattlePassViewedRsp extends
@@ -79,12 +79,12 @@ public final class SetBattlePassViewedRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -121,30 +121,26 @@ public final class SetBattlePassViewedRspOuterClass {
               emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp.class, emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 5;
-    private int scheduleId_;
-    /**
-     * <pre>
-     * sus
-     * </pre>
-     *
-     * <code>uint32 schedule_id = 5;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 7;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -162,10 +158,10 @@ public final class SetBattlePassViewedRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(5, scheduleId_);
+        output.writeUInt32(7, scheduleId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -178,11 +174,11 @@ public final class SetBattlePassViewedRspOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, scheduleId_);
+          .computeUInt32Size(7, scheduleId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -199,10 +195,10 @@ public final class SetBattlePassViewedRspOuterClass {
       }
       emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp other = (emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp) obj;
 
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -214,10 +210,10 @@ public final class SetBattlePassViewedRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,6 +310,10 @@ public final class SetBattlePassViewedRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21391
+     * </pre>
+     *
      * Protobuf type {@code SetBattlePassViewedRsp}
      */
     public static final class Builder extends
@@ -351,9 +351,9 @@ public final class SetBattlePassViewedRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        scheduleId_ = 0;
-
         retcode_ = 0;
+
+        scheduleId_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class SetBattlePassViewedRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp buildPartial() {
         emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp result = new emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp(this);
-        result.scheduleId_ = scheduleId_;
         result.retcode_ = retcode_;
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class SetBattlePassViewedRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp other) {
         if (other == emu.grasscutter.net.proto.SetBattlePassViewedRspOuterClass.SetBattlePassViewedRsp.getDefaultInstance()) return this;
-        if (other.getScheduleId() != 0) {
-          setScheduleId(other.getScheduleId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,52 +466,9 @@ public final class SetBattlePassViewedRspOuterClass {
         return this;
       }
 
-      private int scheduleId_ ;
-      /**
-       * <pre>
-       * sus
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 5;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <pre>
-       * sus
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 5;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * sus
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -519,7 +476,7 @@ public final class SetBattlePassViewedRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -530,12 +487,43 @@ public final class SetBattlePassViewedRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -607,8 +595,8 @@ public final class SetBattlePassViewedRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SetBattlePassViewedRsp.proto\">\n\026SetBat" +
-      "tlePassViewedRsp\022\023\n\013schedule_id\030\005 \001(\r\022\017\n" +
-      "\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "tlePassViewedRsp\022\017\n\007retcode\030\017 \001(\005\022\023\n\013sch" +
+      "edule_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -620,7 +608,7 @@ public final class SetBattlePassViewedRspOuterClass {
     internal_static_SetBattlePassViewedRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetBattlePassViewedRsp_descriptor,
-        new java.lang.String[] { "ScheduleId", "Retcode", });
+        new java.lang.String[] { "Retcode", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

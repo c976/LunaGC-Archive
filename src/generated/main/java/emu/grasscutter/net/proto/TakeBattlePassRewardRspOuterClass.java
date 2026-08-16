@@ -1271,8 +1271,8 @@ public final class TakeBattlePassRewardRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035TakeBattlePassRewardRsp.proto\032\017ItemPar" +
-      "am.proto\032 BattlePassRewardTakeOption.pro" +
+      "\n\035TakeBattlePassRewardRsp.proto\032 BattleP" +
+      "assRewardTakeOption.proto\032\017ItemParam.pro" +
       "to\"\200\001\n\027TakeBattlePassRewardRsp\0225\n\020take_o" +
       "ption_list\030\013 \003(\0132\033.BattlePassRewardTakeO" +
       "ption\022\035\n\titem_list\030\001 \003(\0132\n.ItemParam\022\017\n\007" +
@@ -1282,8 +1282,8 @@ public final class TakeBattlePassRewardRspOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BattlePassRewardTakeOptionOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
         });
     internal_static_TakeBattlePassRewardRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1291,8 +1291,8 @@ public final class TakeBattlePassRewardRspOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeBattlePassRewardRsp_descriptor,
         new java.lang.String[] { "TakeOptionList", "ItemList", "Retcode", });
-    emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BattlePassRewardTakeOptionOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

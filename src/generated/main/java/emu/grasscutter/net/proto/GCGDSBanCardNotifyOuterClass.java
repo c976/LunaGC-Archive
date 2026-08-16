@@ -19,28 +19,35 @@ public final class GCGDSBanCardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @return A list containing the cardList.
      */
     java.util.List<java.lang.Integer> getCardListList();
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @return The count of cardList.
      */
     int getCardListCount();
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
     int getCardList(int index);
   }
   /**
-   * <pre>
-   * CmdId: 6451
-   * Obf: AOPLHLKEBNK
-   * </pre>
-   *
    * Protobuf type {@code GCGDSBanCardNotify}
    */
   public static final class GCGDSBanCardNotify extends
@@ -87,7 +94,7 @@ public final class GCGDSBanCardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +102,7 @@ public final class GCGDSBanCardNotifyOuterClass {
               cardList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +150,14 @@ public final class GCGDSBanCardNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSBanCardNotifyOuterClass.GCGDSBanCardNotify.class, emu.grasscutter.net.proto.GCGDSBanCardNotifyOuterClass.GCGDSBanCardNotify.Builder.class);
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 6;
+    public static final int CARD_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList cardList_;
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @return A list containing the cardList.
      */
     @java.lang.Override
@@ -155,14 +166,22 @@ public final class GCGDSBanCardNotifyOuterClass {
       return cardList_;
     }
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @return The count of cardList.
      */
     public int getCardListCount() {
       return cardList_.size();
     }
     /**
-     * <code>repeated uint32 card_list = 6;</code>
+     * <pre>
+     * CMD_ID = 4229
+     * </pre>
+     *
+     * <code>repeated uint32 card_list = 13;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
@@ -187,7 +206,7 @@ public final class GCGDSBanCardNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCardListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(cardListMemoizedSerializedSize);
       }
       for (int i = 0; i < cardList_.size(); i++) {
@@ -344,11 +363,6 @@ public final class GCGDSBanCardNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6451
-     * Obf: AOPLHLKEBNK
-     * </pre>
-     *
      * Protobuf type {@code GCGDSBanCardNotify}
      */
     public static final class Builder extends
@@ -516,7 +530,11 @@ public final class GCGDSBanCardNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @return A list containing the cardList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +543,22 @@ public final class GCGDSBanCardNotifyOuterClass {
                  java.util.Collections.unmodifiableList(cardList_) : cardList_;
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @return The count of cardList.
        */
       public int getCardListCount() {
         return cardList_.size();
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @param index The index of the element to return.
        * @return The cardList at the given index.
        */
@@ -540,7 +566,11 @@ public final class GCGDSBanCardNotifyOuterClass {
         return cardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The cardList to set.
        * @return This builder for chaining.
@@ -553,7 +583,11 @@ public final class GCGDSBanCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @param value The cardList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +598,11 @@ public final class GCGDSBanCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @param values The cardList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +615,11 @@ public final class GCGDSBanCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 6;</code>
+       * <pre>
+       * CMD_ID = 4229
+       * </pre>
+       *
+       * <code>repeated uint32 card_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardList() {
@@ -654,7 +696,7 @@ public final class GCGDSBanCardNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGDSBanCardNotify.proto\"\'\n\022GCGDSBanCa" +
-      "rdNotify\022\021\n\tcard_list\030\006 \003(\rB\033\n\031emu.grass" +
+      "rdNotify\022\021\n\tcard_list\030\r \003(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,40 +20,40 @@ public final class MissionStatusOuterClass {
   public enum MissionStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MISSION_INVALID = 0;</code>
+     * <code>MISSION_STATUS_INVALID = 0;</code>
      */
-    MISSION_INVALID(0),
+    MISSION_STATUS_INVALID(0),
     /**
-     * <code>MISSION_UNFINISHED = 1;</code>
+     * <code>MISSION_STATUS_UNFINISHED = 1;</code>
      */
-    MISSION_UNFINISHED(1),
+    MISSION_STATUS_UNFINISHED(1),
     /**
-     * <code>MISSION_FINISHED = 2;</code>
+     * <code>MISSION_STATUS_FINISHED = 2;</code>
      */
-    MISSION_FINISHED(2),
+    MISSION_STATUS_FINISHED(2),
     /**
-     * <code>MISSION_POINT_TAKEN = 3;</code>
+     * <code>MISSION_STATUS_POINT_TAKEN = 3;</code>
      */
-    MISSION_POINT_TAKEN(3),
+    MISSION_STATUS_POINT_TAKEN(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>MISSION_INVALID = 0;</code>
+     * <code>MISSION_STATUS_INVALID = 0;</code>
      */
-    public static final int MISSION_INVALID_VALUE = 0;
+    public static final int MISSION_STATUS_INVALID_VALUE = 0;
     /**
-     * <code>MISSION_UNFINISHED = 1;</code>
+     * <code>MISSION_STATUS_UNFINISHED = 1;</code>
      */
-    public static final int MISSION_UNFINISHED_VALUE = 1;
+    public static final int MISSION_STATUS_UNFINISHED_VALUE = 1;
     /**
-     * <code>MISSION_FINISHED = 2;</code>
+     * <code>MISSION_STATUS_FINISHED = 2;</code>
      */
-    public static final int MISSION_FINISHED_VALUE = 2;
+    public static final int MISSION_STATUS_FINISHED_VALUE = 2;
     /**
-     * <code>MISSION_POINT_TAKEN = 3;</code>
+     * <code>MISSION_STATUS_POINT_TAKEN = 3;</code>
      */
-    public static final int MISSION_POINT_TAKEN_VALUE = 3;
+    public static final int MISSION_STATUS_POINT_TAKEN_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class MissionStatusOuterClass {
      */
     public static MissionStatus forNumber(int value) {
       switch (value) {
-        case 0: return MISSION_INVALID;
-        case 1: return MISSION_UNFINISHED;
-        case 2: return MISSION_FINISHED;
-        case 3: return MISSION_POINT_TAKEN;
+        case 0: return MISSION_STATUS_INVALID;
+        case 1: return MISSION_STATUS_UNFINISHED;
+        case 2: return MISSION_STATUS_FINISHED;
+        case 3: return MISSION_STATUS_POINT_TAKEN;
         default: return null;
       }
     }
@@ -149,11 +149,11 @@ public final class MissionStatusOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023MissionStatus.proto*k\n\rMissionStatus\022\023" +
-      "\n\017MISSION_INVALID\020\000\022\026\n\022MISSION_UNFINISHE" +
-      "D\020\001\022\024\n\020MISSION_FINISHED\020\002\022\027\n\023MISSION_POI" +
-      "NT_TAKEN\020\003B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\023MissionStatus.proto*\207\001\n\rMissionStatus\022" +
+      "\032\n\026MISSION_STATUS_INVALID\020\000\022\035\n\031MISSION_S" +
+      "TATUS_UNFINISHED\020\001\022\033\n\027MISSION_STATUS_FIN" +
+      "ISHED\020\002\022\036\n\032MISSION_STATUS_POINT_TAKEN\020\003B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

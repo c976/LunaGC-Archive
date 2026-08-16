@@ -19,15 +19,14 @@ public final class SetSceneWeatherAreaRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 29445
-   * Obf: CNFBIIHKOLL
+   * CmdId: 23470
    * </pre>
    *
    * Protobuf type {@code SetSceneWeatherAreaRsp}
@@ -74,7 +73,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class SetSceneWeatherAreaRspOuterClass {
               emu.grasscutter.net.proto.SetSceneWeatherAreaRspOuterClass.SetSceneWeatherAreaRsp.class, emu.grasscutter.net.proto.SetSceneWeatherAreaRspOuterClass.SetSceneWeatherAreaRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29445
-     * Obf: CNFBIIHKOLL
+     * CmdId: 23470
      * </pre>
      *
      * Protobuf type {@code SetSceneWeatherAreaRsp}
@@ -431,7 +429,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class SetSceneWeatherAreaRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SetSceneWeatherAreaRsp.proto\")\n\026SetSce" +
-      "neWeatherAreaRsp\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu" +
+      "neWeatherAreaRsp\022\017\n\007retcode\030\t \001(\005B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

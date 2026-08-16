@@ -19,41 +19,73 @@ public final class GearActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> 
+    java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> 
         getGearLevelDataListList();
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
-    emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData getGearLevelDataList(int index);
+    emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData getGearLevelDataList(int index);
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     int getGearLevelDataListCount();
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> 
         getGearLevelDataListOrBuilderList();
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
-    emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder getGearLevelDataListOrBuilder(
+    emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getGearLevelDataListOrBuilder(
         int index);
 
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      * @return Whether the jigsawPictureData field is set.
      */
     boolean hasJigsawPictureData();
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      * @return The jigsawPictureData.
      */
     emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData getJigsawPictureData();
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      */
     emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getJigsawPictureDataOrBuilder();
   }
@@ -104,7 +136,7 @@ public final class GearActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder subBuilder = null;
               if (jigsawPictureData_ != null) {
                 subBuilder = jigsawPictureData_.toBuilder();
@@ -117,13 +149,13 @@ public final class GearActivityDetailInfoOuterClass {
 
               break;
             }
-            case 122: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                gearLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData>();
+                gearLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               gearLevelDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -161,50 +193,74 @@ public final class GearActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.GearActivityDetailInfoOuterClass.GearActivityDetailInfo.class, emu.grasscutter.net.proto.GearActivityDetailInfoOuterClass.GearActivityDetailInfo.Builder.class);
     }
 
-    public static final int GEAR_LEVEL_DATA_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> gearLevelDataList_;
+    public static final int GEAR_LEVEL_DATA_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> gearLevelDataList_;
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> getGearLevelDataListList() {
+    public java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> getGearLevelDataListList() {
       return gearLevelDataList_;
     }
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> 
         getGearLevelDataListOrBuilderList() {
       return gearLevelDataList_;
     }
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     @java.lang.Override
     public int getGearLevelDataListCount() {
       return gearLevelDataList_.size();
     }
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData getGearLevelDataList(int index) {
+    public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData getGearLevelDataList(int index) {
       return gearLevelDataList_.get(index);
     }
     /**
-     * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder getGearLevelDataListOrBuilder(
+    public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getGearLevelDataListOrBuilder(
         int index) {
       return gearLevelDataList_.get(index);
     }
 
-    public static final int JIGSAW_PICTURE_DATA_FIELD_NUMBER = 3;
+    public static final int JIGSAW_PICTURE_DATA_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData jigsawPictureData_;
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      * @return Whether the jigsawPictureData field is set.
      */
     @java.lang.Override
@@ -212,7 +268,11 @@ public final class GearActivityDetailInfoOuterClass {
       return jigsawPictureData_ != null;
     }
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      * @return The jigsawPictureData.
      */
     @java.lang.Override
@@ -220,7 +280,11 @@ public final class GearActivityDetailInfoOuterClass {
       return jigsawPictureData_ == null ? emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.getDefaultInstance() : jigsawPictureData_;
     }
     /**
-     * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getJigsawPictureDataOrBuilder() {
@@ -242,10 +306,10 @@ public final class GearActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (jigsawPictureData_ != null) {
-        output.writeMessage(3, getJigsawPictureData());
+        output.writeMessage(1, getJigsawPictureData());
       }
       for (int i = 0; i < gearLevelDataList_.size(); i++) {
-        output.writeMessage(15, gearLevelDataList_.get(i));
+        output.writeMessage(5, gearLevelDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -258,11 +322,11 @@ public final class GearActivityDetailInfoOuterClass {
       size = 0;
       if (jigsawPictureData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getJigsawPictureData());
+          .computeMessageSize(1, getJigsawPictureData());
       }
       for (int i = 0; i < gearLevelDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, gearLevelDataList_.get(i));
+          .computeMessageSize(5, gearLevelDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -599,22 +663,26 @@ public final class GearActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> gearLevelDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> gearLevelDataList_ =
         java.util.Collections.emptyList();
       private void ensureGearLevelDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          gearLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData>(gearLevelDataList_);
+          gearLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData>(gearLevelDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder> gearLevelDataListBuilder_;
+          emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> gearLevelDataListBuilder_;
 
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> getGearLevelDataListList() {
+      public java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> getGearLevelDataListList() {
         if (gearLevelDataListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(gearLevelDataList_);
         } else {
@@ -622,7 +690,11 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public int getGearLevelDataListCount() {
         if (gearLevelDataListBuilder_ == null) {
@@ -632,9 +704,13 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData getGearLevelDataList(int index) {
+      public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData getGearLevelDataList(int index) {
         if (gearLevelDataListBuilder_ == null) {
           return gearLevelDataList_.get(index);
         } else {
@@ -642,10 +718,14 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder setGearLevelDataList(
-          int index, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData value) {
+          int index, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData value) {
         if (gearLevelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -659,10 +739,14 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder setGearLevelDataList(
-          int index, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder builderForValue) {
         if (gearLevelDataListBuilder_ == null) {
           ensureGearLevelDataListIsMutable();
           gearLevelDataList_.set(index, builderForValue.build());
@@ -673,9 +757,13 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public Builder addGearLevelDataList(emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData value) {
+      public Builder addGearLevelDataList(emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData value) {
         if (gearLevelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -689,10 +777,14 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder addGearLevelDataList(
-          int index, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData value) {
+          int index, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData value) {
         if (gearLevelDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -706,10 +798,14 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder addGearLevelDataList(
-          emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder builderForValue) {
+          emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder builderForValue) {
         if (gearLevelDataListBuilder_ == null) {
           ensureGearLevelDataListIsMutable();
           gearLevelDataList_.add(builderForValue.build());
@@ -720,10 +816,14 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder addGearLevelDataList(
-          int index, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder builderForValue) {
         if (gearLevelDataListBuilder_ == null) {
           ensureGearLevelDataListIsMutable();
           gearLevelDataList_.add(index, builderForValue.build());
@@ -734,10 +834,14 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder addAllGearLevelDataList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData> values) {
         if (gearLevelDataListBuilder_ == null) {
           ensureGearLevelDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -749,7 +853,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder clearGearLevelDataList() {
         if (gearLevelDataListBuilder_ == null) {
@@ -762,7 +870,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
       public Builder removeGearLevelDataList(int index) {
         if (gearLevelDataListBuilder_ == null) {
@@ -775,16 +887,24 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder getGearLevelDataListBuilder(
+      public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder getGearLevelDataListBuilder(
           int index) {
         return getGearLevelDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder getGearLevelDataListOrBuilder(
+      public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getGearLevelDataListOrBuilder(
           int index) {
         if (gearLevelDataListBuilder_ == null) {
           return gearLevelDataList_.get(index);  } else {
@@ -792,9 +912,13 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> 
            getGearLevelDataListOrBuilderList() {
         if (gearLevelDataListBuilder_ != null) {
           return gearLevelDataListBuilder_.getMessageOrBuilderList();
@@ -803,33 +927,45 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder addGearLevelDataListBuilder() {
+      public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder addGearLevelDataListBuilder() {
         return getGearLevelDataListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.getDefaultInstance());
+            emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder addGearLevelDataListBuilder(
+      public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder addGearLevelDataListBuilder(
           int index) {
         return getGearLevelDataListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.getDefaultInstance());
+            index, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GearLevelData gear_level_data_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .JigsawPictureData gear_level_data_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder> 
            getGearLevelDataListBuilderList() {
         return getGearLevelDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder> 
+          emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> 
           getGearLevelDataListFieldBuilder() {
         if (gearLevelDataListBuilder_ == null) {
           gearLevelDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelData.Builder, emu.grasscutter.net.proto.GearLevelDataOuterClass.GearLevelDataOrBuilder>(
+              emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder>(
                   gearLevelDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -843,14 +979,22 @@ public final class GearActivityDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> jigsawPictureDataBuilder_;
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        * @return Whether the jigsawPictureData field is set.
        */
       public boolean hasJigsawPictureData() {
         return jigsawPictureDataBuilder_ != null || jigsawPictureData_ != null;
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        * @return The jigsawPictureData.
        */
       public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData getJigsawPictureData() {
@@ -861,7 +1005,11 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public Builder setJigsawPictureData(emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData value) {
         if (jigsawPictureDataBuilder_ == null) {
@@ -877,7 +1025,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public Builder setJigsawPictureData(
           emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder builderForValue) {
@@ -891,7 +1043,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public Builder mergeJigsawPictureData(emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData value) {
         if (jigsawPictureDataBuilder_ == null) {
@@ -909,7 +1065,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public Builder clearJigsawPictureData() {
         if (jigsawPictureDataBuilder_ == null) {
@@ -923,7 +1083,11 @@ public final class GearActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder getJigsawPictureDataBuilder() {
         
@@ -931,7 +1095,11 @@ public final class GearActivityDetailInfoOuterClass {
         return getJigsawPictureDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder getJigsawPictureDataOrBuilder() {
         if (jigsawPictureDataBuilder_ != null) {
@@ -942,7 +1110,11 @@ public final class GearActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JigsawPictureData jigsaw_picture_data = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.JigsawPictureData jigsaw_picture_data = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureDataOrBuilder> 
@@ -1024,17 +1196,16 @@ public final class GearActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GearActivityDetailInfo.proto\032\023GearLeve" +
-      "lData.proto\032\027JigsawPictureData.proto\"w\n\026" +
-      "GearActivityDetailInfo\022,\n\024gear_level_dat" +
-      "a_list\030\017 \003(\0132\016.GearLevelData\022/\n\023jigsaw_p" +
-      "icture_data\030\003 \001(\0132\022.JigsawPictureDataB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\034GearActivityDetailInfo.proto\032\027JigsawPi" +
+      "ctureData.proto\"{\n\026GearActivityDetailInf" +
+      "o\0220\n\024gear_level_data_list\030\005 \003(\0132\022.Jigsaw" +
+      "PictureData\022/\n\023jigsaw_picture_data\030\001 \001(\013" +
+      "2\022.JigsawPictureDataB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GearLevelDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.JigsawPictureDataOuterClass.getDescriptor(),
         });
     internal_static_GearActivityDetailInfo_descriptor =
@@ -1043,7 +1214,6 @@ public final class GearActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GearActivityDetailInfo_descriptor,
         new java.lang.String[] { "GearLevelDataList", "JigsawPictureData", });
-    emu.grasscutter.net.proto.GearLevelDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.JigsawPictureDataOuterClass.getDescriptor();
   }
 

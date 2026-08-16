@@ -19,48 +19,47 @@ public final class SceneEntityMoveRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
+     * <code>.MotionInfo fail_motion = 1;</code>
+     * @return Whether the failMotion field is set.
      */
-    int getRetcode();
+    boolean hasFailMotion();
+    /**
+     * <code>.MotionInfo fail_motion = 1;</code>
+     * @return The failMotion.
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getFailMotion();
+    /**
+     * <code>.MotionInfo fail_motion = 1;</code>
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getFailMotionOrBuilder();
 
     /**
-     * <code>uint32 reliable_seq = 12;</code>
-     * @return The reliableSeq.
-     */
-    int getReliableSeq();
-
-    /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 scene_time = 1;</code>
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 scene_time = 8;</code>
      * @return The sceneTime.
      */
     int getSceneTime();
 
     /**
-     * <code>.MotionInfo fail_motion = 9;</code>
-     * @return Whether the failMotion field is set.
+     * <code>uint32 reliable_seq = 9;</code>
+     * @return The reliableSeq.
      */
-    boolean hasFailMotion();
-    /**
-     * <code>.MotionInfo fail_motion = 9;</code>
-     * @return The failMotion.
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getFailMotion();
-    /**
-     * <code>.MotionInfo fail_motion = 9;</code>
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getFailMotionOrBuilder();
+    int getReliableSeq();
   }
   /**
    * <pre>
-   * CmdId: 20380
-   * Obf: EAFJAPJJKNJ
+   * CmdId: 2067
    * </pre>
    *
    * Protobuf type {@code SceneEntityMoveRsp}
@@ -107,17 +106,7 @@ public final class SceneEntityMoveRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sceneTime_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 74: {
+            case 10: {
               emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder subBuilder = null;
               if (failMotion_ != null) {
                 subBuilder = failMotion_.toBuilder();
@@ -130,14 +119,24 @@ public final class SceneEntityMoveRspOuterClass {
 
               break;
             }
-            case 96: {
-
-              reliableSeq_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 16: {
 
               entityId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              sceneTime_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              reliableSeq_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,54 +171,10 @@ public final class SceneEntityMoveRspOuterClass {
               emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp.class, emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int RELIABLE_SEQ_FIELD_NUMBER = 12;
-    private int reliableSeq_;
-    /**
-     * <code>uint32 reliable_seq = 12;</code>
-     * @return The reliableSeq.
-     */
-    @java.lang.Override
-    public int getReliableSeq() {
-      return reliableSeq_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 15;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 15;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int SCENE_TIME_FIELD_NUMBER = 1;
-    private int sceneTime_;
-    /**
-     * <code>uint32 scene_time = 1;</code>
-     * @return The sceneTime.
-     */
-    @java.lang.Override
-    public int getSceneTime() {
-      return sceneTime_;
-    }
-
-    public static final int FAIL_MOTION_FIELD_NUMBER = 9;
+    public static final int FAIL_MOTION_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo failMotion_;
     /**
-     * <code>.MotionInfo fail_motion = 9;</code>
+     * <code>.MotionInfo fail_motion = 1;</code>
      * @return Whether the failMotion field is set.
      */
     @java.lang.Override
@@ -227,7 +182,7 @@ public final class SceneEntityMoveRspOuterClass {
       return failMotion_ != null;
     }
     /**
-     * <code>.MotionInfo fail_motion = 9;</code>
+     * <code>.MotionInfo fail_motion = 1;</code>
      * @return The failMotion.
      */
     @java.lang.Override
@@ -235,11 +190,55 @@ public final class SceneEntityMoveRspOuterClass {
       return failMotion_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : failMotion_;
     }
     /**
-     * <code>.MotionInfo fail_motion = 9;</code>
+     * <code>.MotionInfo fail_motion = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getFailMotionOrBuilder() {
       return getFailMotion();
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 2;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 6;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int SCENE_TIME_FIELD_NUMBER = 8;
+    private int sceneTime_;
+    /**
+     * <code>uint32 scene_time = 8;</code>
+     * @return The sceneTime.
+     */
+    @java.lang.Override
+    public int getSceneTime() {
+      return sceneTime_;
+    }
+
+    public static final int RELIABLE_SEQ_FIELD_NUMBER = 9;
+    private int reliableSeq_;
+    /**
+     * <code>uint32 reliable_seq = 9;</code>
+     * @return The reliableSeq.
+     */
+    @java.lang.Override
+    public int getReliableSeq() {
+      return reliableSeq_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -256,20 +255,20 @@ public final class SceneEntityMoveRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneTime_ != 0) {
-        output.writeUInt32(1, sceneTime_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (failMotion_ != null) {
-        output.writeMessage(9, getFailMotion());
-      }
-      if (reliableSeq_ != 0) {
-        output.writeUInt32(12, reliableSeq_);
+        output.writeMessage(1, getFailMotion());
       }
       if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
+        output.writeUInt32(2, entityId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
+      }
+      if (sceneTime_ != 0) {
+        output.writeUInt32(8, sceneTime_);
+      }
+      if (reliableSeq_ != 0) {
+        output.writeUInt32(9, reliableSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,25 +279,25 @@ public final class SceneEntityMoveRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneTime_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (failMotion_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getFailMotion());
-      }
-      if (reliableSeq_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, reliableSeq_);
+          .computeMessageSize(1, getFailMotion());
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
+          .computeUInt32Size(2, entityId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
+      }
+      if (sceneTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, sceneTime_);
+      }
+      if (reliableSeq_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, reliableSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,19 +314,19 @@ public final class SceneEntityMoveRspOuterClass {
       }
       emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp other = (emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getReliableSeq()
-          != other.getReliableSeq()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getSceneTime()
-          != other.getSceneTime()) return false;
       if (hasFailMotion() != other.hasFailMotion()) return false;
       if (hasFailMotion()) {
         if (!getFailMotion()
             .equals(other.getFailMotion())) return false;
       }
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getSceneTime()
+          != other.getSceneTime()) return false;
+      if (getReliableSeq()
+          != other.getReliableSeq()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,18 +338,18 @@ public final class SceneEntityMoveRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + RELIABLE_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getReliableSeq();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneTime();
       if (hasFailMotion()) {
         hash = (37 * hash) + FAIL_MOTION_FIELD_NUMBER;
         hash = (53 * hash) + getFailMotion().hashCode();
       }
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneTime();
+      hash = (37 * hash) + RELIABLE_SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getReliableSeq();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -448,8 +447,7 @@ public final class SceneEntityMoveRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20380
-     * Obf: EAFJAPJJKNJ
+     * CmdId: 2067
      * </pre>
      *
      * Protobuf type {@code SceneEntityMoveRsp}
@@ -489,20 +487,20 @@ public final class SceneEntityMoveRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
-        reliableSeq_ = 0;
-
-        entityId_ = 0;
-
-        sceneTime_ = 0;
-
         if (failMotionBuilder_ == null) {
           failMotion_ = null;
         } else {
           failMotion_ = null;
           failMotionBuilder_ = null;
         }
+        entityId_ = 0;
+
+        retcode_ = 0;
+
+        sceneTime_ = 0;
+
+        reliableSeq_ = 0;
+
         return this;
       }
 
@@ -529,15 +527,15 @@ public final class SceneEntityMoveRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp buildPartial() {
         emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp result = new emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp(this);
-        result.retcode_ = retcode_;
-        result.reliableSeq_ = reliableSeq_;
-        result.entityId_ = entityId_;
-        result.sceneTime_ = sceneTime_;
         if (failMotionBuilder_ == null) {
           result.failMotion_ = failMotion_;
         } else {
           result.failMotion_ = failMotionBuilder_.build();
         }
+        result.entityId_ = entityId_;
+        result.retcode_ = retcode_;
+        result.sceneTime_ = sceneTime_;
+        result.reliableSeq_ = reliableSeq_;
         onBuilt();
         return result;
       }
@@ -586,20 +584,20 @@ public final class SceneEntityMoveRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp other) {
         if (other == emu.grasscutter.net.proto.SceneEntityMoveRspOuterClass.SceneEntityMoveRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getReliableSeq() != 0) {
-          setReliableSeq(other.getReliableSeq());
+        if (other.hasFailMotion()) {
+          mergeFailMotion(other.getFailMotion());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getSceneTime() != 0) {
           setSceneTime(other.getSceneTime());
         }
-        if (other.hasFailMotion()) {
-          mergeFailMotion(other.getFailMotion());
+        if (other.getReliableSeq() != 0) {
+          setReliableSeq(other.getReliableSeq());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -630,142 +628,18 @@ public final class SceneEntityMoveRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reliableSeq_ ;
-      /**
-       * <code>uint32 reliable_seq = 12;</code>
-       * @return The reliableSeq.
-       */
-      @java.lang.Override
-      public int getReliableSeq() {
-        return reliableSeq_;
-      }
-      /**
-       * <code>uint32 reliable_seq = 12;</code>
-       * @param value The reliableSeq to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReliableSeq(int value) {
-        
-        reliableSeq_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 reliable_seq = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReliableSeq() {
-        
-        reliableSeq_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneTime_ ;
-      /**
-       * <code>uint32 scene_time = 1;</code>
-       * @return The sceneTime.
-       */
-      @java.lang.Override
-      public int getSceneTime() {
-        return sceneTime_;
-      }
-      /**
-       * <code>uint32 scene_time = 1;</code>
-       * @param value The sceneTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneTime(int value) {
-        
-        sceneTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneTime() {
-        
-        sceneTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo failMotion_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> failMotionBuilder_;
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        * @return Whether the failMotion field is set.
        */
       public boolean hasFailMotion() {
         return failMotionBuilder_ != null || failMotion_ != null;
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        * @return The failMotion.
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getFailMotion() {
@@ -776,7 +650,7 @@ public final class SceneEntityMoveRspOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public Builder setFailMotion(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (failMotionBuilder_ == null) {
@@ -792,7 +666,7 @@ public final class SceneEntityMoveRspOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public Builder setFailMotion(
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder builderForValue) {
@@ -806,7 +680,7 @@ public final class SceneEntityMoveRspOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public Builder mergeFailMotion(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
         if (failMotionBuilder_ == null) {
@@ -824,7 +698,7 @@ public final class SceneEntityMoveRspOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public Builder clearFailMotion() {
         if (failMotionBuilder_ == null) {
@@ -838,7 +712,7 @@ public final class SceneEntityMoveRspOuterClass {
         return this;
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder getFailMotionBuilder() {
         
@@ -846,7 +720,7 @@ public final class SceneEntityMoveRspOuterClass {
         return getFailMotionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getFailMotionOrBuilder() {
         if (failMotionBuilder_ != null) {
@@ -857,7 +731,7 @@ public final class SceneEntityMoveRspOuterClass {
         }
       }
       /**
-       * <code>.MotionInfo fail_motion = 9;</code>
+       * <code>.MotionInfo fail_motion = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> 
@@ -871,6 +745,130 @@ public final class SceneEntityMoveRspOuterClass {
           failMotion_ = null;
         }
         return failMotionBuilder_;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sceneTime_ ;
+      /**
+       * <code>uint32 scene_time = 8;</code>
+       * @return The sceneTime.
+       */
+      @java.lang.Override
+      public int getSceneTime() {
+        return sceneTime_;
+      }
+      /**
+       * <code>uint32 scene_time = 8;</code>
+       * @param value The sceneTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneTime(int value) {
+        
+        sceneTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneTime() {
+        
+        sceneTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int reliableSeq_ ;
+      /**
+       * <code>uint32 reliable_seq = 9;</code>
+       * @return The reliableSeq.
+       */
+      @java.lang.Override
+      public int getReliableSeq() {
+        return reliableSeq_;
+      }
+      /**
+       * <code>uint32 reliable_seq = 9;</code>
+       * @param value The reliableSeq to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReliableSeq(int value) {
+        
+        reliableSeq_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 reliable_seq = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReliableSeq() {
+        
+        reliableSeq_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -940,10 +938,10 @@ public final class SceneEntityMoveRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030SceneEntityMoveRsp.proto\032\020MotionInfo.p" +
-      "roto\"\204\001\n\022SceneEntityMoveRsp\022\017\n\007retcode\030\010" +
-      " \001(\005\022\024\n\014reliable_seq\030\014 \001(\r\022\021\n\tentity_id\030" +
-      "\017 \001(\r\022\022\n\nscene_time\030\001 \001(\r\022 \n\013fail_motion" +
-      "\030\t \001(\0132\013.MotionInfoB\033\n\031emu.grasscutter.n" +
+      "roto\"\204\001\n\022SceneEntityMoveRsp\022 \n\013fail_moti" +
+      "on\030\001 \001(\0132\013.MotionInfo\022\021\n\tentity_id\030\002 \001(\r" +
+      "\022\017\n\007retcode\030\006 \001(\005\022\022\n\nscene_time\030\010 \001(\r\022\024\n" +
+      "\014reliable_seq\030\t \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -956,7 +954,7 @@ public final class SceneEntityMoveRspOuterClass {
     internal_static_SceneEntityMoveRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityMoveRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ReliableSeq", "EntityId", "SceneTime", "FailMotion", });
+        new java.lang.String[] { "FailMotion", "EntityId", "Retcode", "SceneTime", "ReliableSeq", });
     emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor();
   }
 

@@ -19,30 +19,45 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      * @return Whether the customGadgetTreeInfo field is set.
      */
     boolean hasCustomGadgetTreeInfo();
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      * @return The customGadgetTreeInfo.
      */
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCustomGadgetTreeInfo();
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      */
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCustomGadgetTreeInfoOrBuilder();
 
     /**
-     * <code>uint32 gadget_entity_id = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gadget_entity_id = 4;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8377
-   * Obf: BFFLIJJIIDB
+   * CmdId: 20458
    * </pre>
    *
    * Protobuf type {@code GadgetCustomTreeInfoNotify}
@@ -89,12 +104,12 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 58: {
               emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder subBuilder = null;
               if (customGadgetTreeInfo_ != null) {
                 subBuilder = customGadgetTreeInfo_.toBuilder();
@@ -139,10 +154,14 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GadgetCustomTreeInfoNotifyOuterClass.GadgetCustomTreeInfoNotify.class, emu.grasscutter.net.proto.GadgetCustomTreeInfoNotifyOuterClass.GadgetCustomTreeInfoNotify.Builder.class);
     }
 
-    public static final int CUSTOM_GADGET_TREE_INFO_FIELD_NUMBER = 13;
+    public static final int CUSTOM_GADGET_TREE_INFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo customGadgetTreeInfo_;
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      * @return Whether the customGadgetTreeInfo field is set.
      */
     @java.lang.Override
@@ -150,7 +169,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       return customGadgetTreeInfo_ != null;
     }
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      * @return The customGadgetTreeInfo.
      */
     @java.lang.Override
@@ -158,17 +181,25 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       return customGadgetTreeInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : customGadgetTreeInfo_;
     }
     /**
-     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCustomGadgetTreeInfoOrBuilder() {
       return getCustomGadgetTreeInfo();
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 4;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gadget_entity_id = 4;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -191,10 +222,10 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(7, gadgetEntityId_);
+        output.writeUInt32(4, gadgetEntityId_);
       }
       if (customGadgetTreeInfo_ != null) {
-        output.writeMessage(13, getCustomGadgetTreeInfo());
+        output.writeMessage(7, getCustomGadgetTreeInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +238,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       size = 0;
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gadgetEntityId_);
+          .computeUInt32Size(4, gadgetEntityId_);
       }
       if (customGadgetTreeInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getCustomGadgetTreeInfo());
+          .computeMessageSize(7, getCustomGadgetTreeInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +380,7 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8377
-     * Obf: BFFLIJJIIDB
+     * CmdId: 20458
      * </pre>
      *
      * Protobuf type {@code GadgetCustomTreeInfoNotify}
@@ -517,14 +547,22 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> customGadgetTreeInfoBuilder_;
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        * @return Whether the customGadgetTreeInfo field is set.
        */
       public boolean hasCustomGadgetTreeInfo() {
         return customGadgetTreeInfoBuilder_ != null || customGadgetTreeInfo_ != null;
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        * @return The customGadgetTreeInfo.
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCustomGadgetTreeInfo() {
@@ -535,7 +573,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public Builder setCustomGadgetTreeInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (customGadgetTreeInfoBuilder_ == null) {
@@ -551,7 +593,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public Builder setCustomGadgetTreeInfo(
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder builderForValue) {
@@ -565,7 +611,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public Builder mergeCustomGadgetTreeInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
         if (customGadgetTreeInfoBuilder_ == null) {
@@ -583,7 +633,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public Builder clearCustomGadgetTreeInfo() {
         if (customGadgetTreeInfoBuilder_ == null) {
@@ -597,7 +651,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder getCustomGadgetTreeInfoBuilder() {
         
@@ -605,7 +663,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return getCustomGadgetTreeInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCustomGadgetTreeInfoOrBuilder() {
         if (customGadgetTreeInfoBuilder_ != null) {
@@ -616,7 +678,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.CustomGadgetTreeInfo custom_gadget_tree_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> 
@@ -634,7 +700,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gadget_entity_id = 4;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -642,7 +712,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gadget_entity_id = 4;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -653,7 +727,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gadget_entity_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -732,8 +810,8 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       "\n GadgetCustomTreeInfoNotify.proto\032\032Cust" +
       "omGadgetTreeInfo.proto\"n\n\032GadgetCustomTr" +
       "eeInfoNotify\0226\n\027custom_gadget_tree_info\030" +
-      "\r \001(\0132\025.CustomGadgetTreeInfo\022\030\n\020gadget_e" +
-      "ntity_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "\007 \001(\0132\025.CustomGadgetTreeInfo\022\030\n\020gadget_e" +
+      "ntity_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

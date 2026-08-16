@@ -19,19 +19,19 @@ public final class WatergunLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>bool is_finish = 4;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
+
+    /**
      * <code>uint32 max_score = 6;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
@@ -87,7 +87,7 @@ public final class WatergunLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
               isFinish_ = input.readBool();
               break;
@@ -97,7 +97,7 @@ public final class WatergunLevelInfoOuterClass {
               maxScore_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               isOpen_ = input.readBool();
               break;
@@ -139,6 +139,17 @@ public final class WatergunLevelInfoOuterClass {
               emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.class, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder.class);
     }
 
+    public static final int IS_FINISH_FIELD_NUMBER = 4;
+    private boolean isFinish_;
+    /**
+     * <code>bool is_finish = 4;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
+    }
+
     public static final int MAX_SCORE_FIELD_NUMBER = 6;
     private int maxScore_;
     /**
@@ -150,21 +161,10 @@ public final class WatergunLevelInfoOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 3;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -198,13 +198,13 @@ public final class WatergunLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinish_ != false) {
-        output.writeBool(3, isFinish_);
+        output.writeBool(4, isFinish_);
       }
       if (maxScore_ != 0) {
         output.writeUInt32(6, maxScore_);
       }
       if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+        output.writeBool(10, isOpen_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(12, levelId_);
@@ -220,7 +220,7 @@ public final class WatergunLevelInfoOuterClass {
       size = 0;
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinish_);
+          .computeBoolSize(4, isFinish_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -228,7 +228,7 @@ public final class WatergunLevelInfoOuterClass {
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeBoolSize(10, isOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,10 +249,10 @@ public final class WatergunLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo other = (emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo) obj;
 
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
+      if (getMaxScore()
+          != other.getMaxScore()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getLevelId()
@@ -268,11 +268,11 @@ public final class WatergunLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
+      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxScore();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -411,9 +411,9 @@ public final class WatergunLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        maxScore_ = 0;
-
         isFinish_ = false;
+
+        maxScore_ = 0;
 
         isOpen_ = false;
 
@@ -445,8 +445,8 @@ public final class WatergunLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo buildPartial() {
         emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo result = new emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo(this);
-        result.maxScore_ = maxScore_;
         result.isFinish_ = isFinish_;
+        result.maxScore_ = maxScore_;
         result.isOpen_ = isOpen_;
         result.levelId_ = levelId_;
         onBuilt();
@@ -497,11 +497,11 @@ public final class WatergunLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo other) {
         if (other == emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.getDefaultInstance()) return this;
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
-        }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
+        }
+        if (other.getMaxScore() != 0) {
+          setMaxScore(other.getMaxScore());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -538,6 +538,37 @@ public final class WatergunLevelInfoOuterClass {
         return this;
       }
 
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+        
+        isFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        
+        isFinish_ = false;
+        onChanged();
+        return this;
+      }
+
       private int maxScore_ ;
       /**
        * <code>uint32 max_score = 6;</code>
@@ -569,40 +600,9 @@ public final class WatergunLevelInfoOuterClass {
         return this;
       }
 
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class WatergunLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class WatergunLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -729,8 +729,8 @@ public final class WatergunLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027WatergunLevelInfo.proto\"\\\n\021WatergunLev" +
-      "elInfo\022\021\n\tmax_score\030\006 \001(\r\022\021\n\tis_finish\030\003" +
-      " \001(\010\022\017\n\007is_open\030\013 \001(\010\022\020\n\010level_id\030\014 \001(\rB" +
+      "elInfo\022\021\n\tis_finish\030\004 \001(\010\022\021\n\tmax_score\030\006" +
+      " \001(\r\022\017\n\007is_open\030\n \001(\010\022\020\n\010level_id\030\014 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +742,7 @@ public final class WatergunLevelInfoOuterClass {
     internal_static_WatergunLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WatergunLevelInfo_descriptor,
-        new java.lang.String[] { "MaxScore", "IsFinish", "IsOpen", "LevelId", });
+        new java.lang.String[] { "IsFinish", "MaxScore", "IsOpen", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

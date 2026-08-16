@@ -19,124 +19,163 @@ public final class PlayerEyePointStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DEOOGIIMFBE = 13;</code>
-     * @return The dEOOGIIMFBE.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
+     * @return Whether the eyePointPos field is set.
      */
-    int getDEOOGIIMFBE();
+    boolean hasEyePointPos();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
+     * @return The eyePointPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getEyePointPos();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEyePointPosOrBuilder();
 
     /**
-     * <code>uint32 DOKGNDBIHPI = 2;</code>
-     * @return The dOKGNDBIHPI.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 PGKOBEIKONB = 8;</code>
+     * @return The pGKOBEIKONB.
      */
-    int getDOKGNDBIHPI();
+    int getPGKOBEIKONB();
 
     /**
-     * <code>int32 fix_lod_level = 11;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>int32 fix_lod_level = 4;</code>
      * @return The fixLodLevel.
      */
     int getFixLodLevel();
 
     /**
-     * <code>bool NEGNMGELLCN = 5;</code>
-     * @return The nEGNMGELLCN.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 PDAIPMOIFKI = 13;</code>
+     * @return The pDAIPMOIFKI.
      */
-    boolean getNEGNMGELLCN();
+    int getPDAIPMOIFKI();
 
     /**
-     * <code>uint32 IOGAOKLPFGP = 10;</code>
-     * @return The iOGAOKLPFGP.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 AHEJOJFKBJG = 12;</code>
+     * @return The aHEJOJFKBJG.
      */
-    int getIOGAOKLPFGP();
+    int getAHEJOJFKBJG();
 
     /**
-     * <code>uint32 JLFOFGIFNGL = 7;</code>
-     * @return The jLFOFGIFNGL.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool PNEBIECBKKM = 3;</code>
+     * @return The pNEBIECBKKM.
      */
-    int getJLFOFGIFNGL();
+    boolean getPNEBIECBKKM();
 
     /**
-     * <code>bool PAOBMOJHPKC = 14;</code>
-     * @return The pAOBMOJHPKC.
+     * <pre>
+     * offset: 69
+     * </pre>
+     *
+     * <code>bool OMIAIFICJCF = 6;</code>
+     * @return The oMIAIFICJCF.
      */
-    boolean getPAOBMOJHPKC();
+    boolean getOMIAIFICJCF();
 
     /**
-     * <code>.Vector eye_point_pos = 12;</code>
-     * @return Whether the eyePointPos field is set.
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 CAJLIJMCEGK = 5;</code>
+     * @return The cAJLIJMCEGK.
      */
-    boolean hasEyePointPos();
-    /**
-     * <code>.Vector eye_point_pos = 12;</code>
-     * @return The eyePointPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getEyePointPos();
-    /**
-     * <code>.Vector eye_point_pos = 12;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEyePointPosOrBuilder();
+    int getCAJLIJMCEGK();
 
     /**
-     * <code>float sphere_radius = 1032;</code>
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     * @return Whether the polygonSize field is set.
+     */
+    boolean hasPolygonSize();
+    /**
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     * @return The polygonSize.
+     */
+    emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize getPolygonSize();
+    /**
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     */
+    emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder getPolygonSizeOrBuilder();
+
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     * @return Whether the cylinderSize field is set.
+     */
+    boolean hasCylinderSize();
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     * @return The cylinderSize.
+     */
+    emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize();
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     */
+    emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder();
+
+    /**
+     * <code>float sphere_radius = 837;</code>
      * @return Whether the sphereRadius field is set.
      */
     boolean hasSphereRadius();
     /**
-     * <code>float sphere_radius = 1032;</code>
+     * <code>float sphere_radius = 837;</code>
      * @return The sphereRadius.
      */
     float getSphereRadius();
 
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      * @return Whether the cubicSize field is set.
      */
     boolean hasCubicSize();
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      * @return The cubicSize.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCubicSize();
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCubicSizeOrBuilder();
-
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     * @return Whether the cylinderSize field is set.
-     */
-    boolean hasCylinderSize();
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     * @return The cylinderSize.
-     */
-    emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize();
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     */
-    emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder();
-
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     * @return Whether the polygonSize field is set.
-     */
-    boolean hasPolygonSize();
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     * @return The polygonSize.
-     */
-    emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize getPolygonSize();
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     */
-    emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder getPolygonSizeOrBuilder();
 
     public emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify.RegionSizeCase getRegionSizeCase();
   }
   /**
    * <pre>
-   * CmdId: 27367
-   * Obf: ANOPEDIPEFI
+   * CmdId: 20893
    * </pre>
    *
    * Protobuf type {@code PlayerEyePointStateNotify}
@@ -183,32 +222,32 @@ public final class PlayerEyePointStateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              dOKGNDBIHPI_ = input.readUInt32();
+              pNEBIECBKKM_ = input.readBool();
               break;
             }
-            case 40: {
-
-              nEGNMGELLCN_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              jLFOFGIFNGL_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              iOGAOKLPFGP_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 32: {
 
               fixLodLevel_ = input.readInt32();
               break;
             }
-            case 98: {
+            case 40: {
+
+              cAJLIJMCEGK_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              oMIAIFICJCF_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              pGKOBEIKONB_ = input.readUInt32();
+              break;
+            }
+            case 82: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (eyePointPos_ != null) {
                 subBuilder = eyePointPos_.toBuilder();
@@ -221,52 +260,19 @@ public final class PlayerEyePointStateNotifyOuterClass {
 
               break;
             }
+            case 96: {
+
+              aHEJOJFKBJG_ = input.readUInt32();
+              break;
+            }
             case 104: {
 
-              dEOOGIIMFBE_ = input.readUInt32();
+              pDAIPMOIFKI_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              pAOBMOJHPKC_ = input.readBool();
-              break;
-            }
-            case 8261: {
-              regionSizeCase_ = 1032;
-              regionSize_ = input.readFloat();
-              break;
-            }
-            case 9018: {
-              emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder subBuilder = null;
-              if (regionSizeCase_ == 1127) {
-                subBuilder = ((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_).toBuilder();
-              }
-              regionSize_ =
-                  input.readMessage(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
-                regionSize_ = subBuilder.buildPartial();
-              }
-              regionSizeCase_ = 1127;
-              break;
-            }
-            case 9458: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (regionSizeCase_ == 1182) {
-                subBuilder = ((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_).toBuilder();
-              }
-              regionSize_ =
-                  input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
-                regionSize_ = subBuilder.buildPartial();
-              }
-              regionSizeCase_ = 1182;
-              break;
-            }
-            case 15338: {
+            case 1394: {
               emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.Builder subBuilder = null;
-              if (regionSizeCase_ == 1917) {
+              if (regionSizeCase_ == 174) {
                 subBuilder = ((emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_).toBuilder();
               }
               regionSize_ =
@@ -275,7 +281,40 @@ public final class PlayerEyePointStateNotifyOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_);
                 regionSize_ = subBuilder.buildPartial();
               }
-              regionSizeCase_ = 1917;
+              regionSizeCase_ = 174;
+              break;
+            }
+            case 4282: {
+              emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder subBuilder = null;
+              if (regionSizeCase_ == 535) {
+                subBuilder = ((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_).toBuilder();
+              }
+              regionSize_ =
+                  input.readMessage(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
+                regionSize_ = subBuilder.buildPartial();
+              }
+              regionSizeCase_ = 535;
+              break;
+            }
+            case 6701: {
+              regionSizeCase_ = 837;
+              regionSize_ = input.readFloat();
+              break;
+            }
+            case 8634: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (regionSizeCase_ == 1079) {
+                subBuilder = ((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_).toBuilder();
+              }
+              regionSize_ =
+                  input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
+                regionSize_ = subBuilder.buildPartial();
+              }
+              regionSizeCase_ = 1079;
               break;
             }
             default: {
@@ -315,10 +354,10 @@ public final class PlayerEyePointStateNotifyOuterClass {
     public enum RegionSizeCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      SPHERE_RADIUS(1032),
-      CUBIC_SIZE(1182),
-      CYLINDER_SIZE(1127),
-      POLYGON_SIZE(1917),
+      POLYGON_SIZE(174),
+      CYLINDER_SIZE(535),
+      SPHERE_RADIUS(837),
+      CUBIC_SIZE(1079),
       REGIONSIZE_NOT_SET(0);
       private final int value;
       private RegionSizeCase(int value) {
@@ -336,10 +375,10 @@ public final class PlayerEyePointStateNotifyOuterClass {
 
       public static RegionSizeCase forNumber(int value) {
         switch (value) {
-          case 1032: return SPHERE_RADIUS;
-          case 1182: return CUBIC_SIZE;
-          case 1127: return CYLINDER_SIZE;
-          case 1917: return POLYGON_SIZE;
+          case 174: return POLYGON_SIZE;
+          case 535: return CYLINDER_SIZE;
+          case 837: return SPHERE_RADIUS;
+          case 1079: return CUBIC_SIZE;
           case 0: return REGIONSIZE_NOT_SET;
           default: return null;
         }
@@ -355,87 +394,14 @@ public final class PlayerEyePointStateNotifyOuterClass {
           regionSizeCase_);
     }
 
-    public static final int DEOOGIIMFBE_FIELD_NUMBER = 13;
-    private int dEOOGIIMFBE_;
-    /**
-     * <code>uint32 DEOOGIIMFBE = 13;</code>
-     * @return The dEOOGIIMFBE.
-     */
-    @java.lang.Override
-    public int getDEOOGIIMFBE() {
-      return dEOOGIIMFBE_;
-    }
-
-    public static final int DOKGNDBIHPI_FIELD_NUMBER = 2;
-    private int dOKGNDBIHPI_;
-    /**
-     * <code>uint32 DOKGNDBIHPI = 2;</code>
-     * @return The dOKGNDBIHPI.
-     */
-    @java.lang.Override
-    public int getDOKGNDBIHPI() {
-      return dOKGNDBIHPI_;
-    }
-
-    public static final int FIX_LOD_LEVEL_FIELD_NUMBER = 11;
-    private int fixLodLevel_;
-    /**
-     * <code>int32 fix_lod_level = 11;</code>
-     * @return The fixLodLevel.
-     */
-    @java.lang.Override
-    public int getFixLodLevel() {
-      return fixLodLevel_;
-    }
-
-    public static final int NEGNMGELLCN_FIELD_NUMBER = 5;
-    private boolean nEGNMGELLCN_;
-    /**
-     * <code>bool NEGNMGELLCN = 5;</code>
-     * @return The nEGNMGELLCN.
-     */
-    @java.lang.Override
-    public boolean getNEGNMGELLCN() {
-      return nEGNMGELLCN_;
-    }
-
-    public static final int IOGAOKLPFGP_FIELD_NUMBER = 10;
-    private int iOGAOKLPFGP_;
-    /**
-     * <code>uint32 IOGAOKLPFGP = 10;</code>
-     * @return The iOGAOKLPFGP.
-     */
-    @java.lang.Override
-    public int getIOGAOKLPFGP() {
-      return iOGAOKLPFGP_;
-    }
-
-    public static final int JLFOFGIFNGL_FIELD_NUMBER = 7;
-    private int jLFOFGIFNGL_;
-    /**
-     * <code>uint32 JLFOFGIFNGL = 7;</code>
-     * @return The jLFOFGIFNGL.
-     */
-    @java.lang.Override
-    public int getJLFOFGIFNGL() {
-      return jLFOFGIFNGL_;
-    }
-
-    public static final int PAOBMOJHPKC_FIELD_NUMBER = 14;
-    private boolean pAOBMOJHPKC_;
-    /**
-     * <code>bool PAOBMOJHPKC = 14;</code>
-     * @return The pAOBMOJHPKC.
-     */
-    @java.lang.Override
-    public boolean getPAOBMOJHPKC() {
-      return pAOBMOJHPKC_;
-    }
-
-    public static final int EYE_POINT_POS_FIELD_NUMBER = 12;
+    public static final int EYE_POINT_POS_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector eyePointPos_;
     /**
-     * <code>.Vector eye_point_pos = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
      * @return Whether the eyePointPos field is set.
      */
     @java.lang.Override
@@ -443,7 +409,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
       return eyePointPos_ != null;
     }
     /**
-     * <code>.Vector eye_point_pos = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
      * @return The eyePointPos.
      */
     @java.lang.Override
@@ -451,125 +421,234 @@ public final class PlayerEyePointStateNotifyOuterClass {
       return eyePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : eyePointPos_;
     }
     /**
-     * <code>.Vector eye_point_pos = 12;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector eye_point_pos = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEyePointPosOrBuilder() {
       return getEyePointPos();
     }
 
-    public static final int SPHERE_RADIUS_FIELD_NUMBER = 1032;
+    public static final int PGKOBEIKONB_FIELD_NUMBER = 8;
+    private int pGKOBEIKONB_;
     /**
-     * <code>float sphere_radius = 1032;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 PGKOBEIKONB = 8;</code>
+     * @return The pGKOBEIKONB.
+     */
+    @java.lang.Override
+    public int getPGKOBEIKONB() {
+      return pGKOBEIKONB_;
+    }
+
+    public static final int FIX_LOD_LEVEL_FIELD_NUMBER = 4;
+    private int fixLodLevel_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>int32 fix_lod_level = 4;</code>
+     * @return The fixLodLevel.
+     */
+    @java.lang.Override
+    public int getFixLodLevel() {
+      return fixLodLevel_;
+    }
+
+    public static final int PDAIPMOIFKI_FIELD_NUMBER = 13;
+    private int pDAIPMOIFKI_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 PDAIPMOIFKI = 13;</code>
+     * @return The pDAIPMOIFKI.
+     */
+    @java.lang.Override
+    public int getPDAIPMOIFKI() {
+      return pDAIPMOIFKI_;
+    }
+
+    public static final int AHEJOJFKBJG_FIELD_NUMBER = 12;
+    private int aHEJOJFKBJG_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 AHEJOJFKBJG = 12;</code>
+     * @return The aHEJOJFKBJG.
+     */
+    @java.lang.Override
+    public int getAHEJOJFKBJG() {
+      return aHEJOJFKBJG_;
+    }
+
+    public static final int PNEBIECBKKM_FIELD_NUMBER = 3;
+    private boolean pNEBIECBKKM_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool PNEBIECBKKM = 3;</code>
+     * @return The pNEBIECBKKM.
+     */
+    @java.lang.Override
+    public boolean getPNEBIECBKKM() {
+      return pNEBIECBKKM_;
+    }
+
+    public static final int OMIAIFICJCF_FIELD_NUMBER = 6;
+    private boolean oMIAIFICJCF_;
+    /**
+     * <pre>
+     * offset: 69
+     * </pre>
+     *
+     * <code>bool OMIAIFICJCF = 6;</code>
+     * @return The oMIAIFICJCF.
+     */
+    @java.lang.Override
+    public boolean getOMIAIFICJCF() {
+      return oMIAIFICJCF_;
+    }
+
+    public static final int CAJLIJMCEGK_FIELD_NUMBER = 5;
+    private int cAJLIJMCEGK_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 CAJLIJMCEGK = 5;</code>
+     * @return The cAJLIJMCEGK.
+     */
+    @java.lang.Override
+    public int getCAJLIJMCEGK() {
+      return cAJLIJMCEGK_;
+    }
+
+    public static final int POLYGON_SIZE_FIELD_NUMBER = 174;
+    /**
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     * @return Whether the polygonSize field is set.
+     */
+    @java.lang.Override
+    public boolean hasPolygonSize() {
+      return regionSizeCase_ == 174;
+    }
+    /**
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     * @return The polygonSize.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize getPolygonSize() {
+      if (regionSizeCase_ == 174) {
+         return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
+      }
+      return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
+    }
+    /**
+     * <code>.PolygonRegionSize polygon_size = 174;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder getPolygonSizeOrBuilder() {
+      if (regionSizeCase_ == 174) {
+         return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
+      }
+      return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
+    }
+
+    public static final int CYLINDER_SIZE_FIELD_NUMBER = 535;
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     * @return Whether the cylinderSize field is set.
+     */
+    @java.lang.Override
+    public boolean hasCylinderSize() {
+      return regionSizeCase_ == 535;
+    }
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     * @return The cylinderSize.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize() {
+      if (regionSizeCase_ == 535) {
+         return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
+      }
+      return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+    }
+    /**
+     * <code>.CylinderRegionSize cylinder_size = 535;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder() {
+      if (regionSizeCase_ == 535) {
+         return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
+      }
+      return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+    }
+
+    public static final int SPHERE_RADIUS_FIELD_NUMBER = 837;
+    /**
+     * <code>float sphere_radius = 837;</code>
      * @return Whether the sphereRadius field is set.
      */
     @java.lang.Override
     public boolean hasSphereRadius() {
-      return regionSizeCase_ == 1032;
+      return regionSizeCase_ == 837;
     }
     /**
-     * <code>float sphere_radius = 1032;</code>
+     * <code>float sphere_radius = 837;</code>
      * @return The sphereRadius.
      */
     @java.lang.Override
     public float getSphereRadius() {
-      if (regionSizeCase_ == 1032) {
+      if (regionSizeCase_ == 837) {
         return (java.lang.Float) regionSize_;
       }
       return 0F;
     }
 
-    public static final int CUBIC_SIZE_FIELD_NUMBER = 1182;
+    public static final int CUBIC_SIZE_FIELD_NUMBER = 1079;
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      * @return Whether the cubicSize field is set.
      */
     @java.lang.Override
     public boolean hasCubicSize() {
-      return regionSizeCase_ == 1182;
+      return regionSizeCase_ == 1079;
     }
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      * @return The cubicSize.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.Vector getCubicSize() {
-      if (regionSizeCase_ == 1182) {
+      if (regionSizeCase_ == 1079) {
          return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
       }
       return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
     }
     /**
-     * <code>.Vector cubic_size = 1182;</code>
+     * <code>.Vector cubic_size = 1079;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCubicSizeOrBuilder() {
-      if (regionSizeCase_ == 1182) {
+      if (regionSizeCase_ == 1079) {
          return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
       }
       return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
-    }
-
-    public static final int CYLINDER_SIZE_FIELD_NUMBER = 1127;
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     * @return Whether the cylinderSize field is set.
-     */
-    @java.lang.Override
-    public boolean hasCylinderSize() {
-      return regionSizeCase_ == 1127;
-    }
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     * @return The cylinderSize.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize() {
-      if (regionSizeCase_ == 1127) {
-         return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
-      }
-      return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-    }
-    /**
-     * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder() {
-      if (regionSizeCase_ == 1127) {
-         return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
-      }
-      return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-    }
-
-    public static final int POLYGON_SIZE_FIELD_NUMBER = 1917;
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     * @return Whether the polygonSize field is set.
-     */
-    @java.lang.Override
-    public boolean hasPolygonSize() {
-      return regionSizeCase_ == 1917;
-    }
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     * @return The polygonSize.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize getPolygonSize() {
-      if (regionSizeCase_ == 1917) {
-         return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
-      }
-      return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
-    }
-    /**
-     * <code>.PolygonRegionSize polygon_size = 1917;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder getPolygonSizeOrBuilder() {
-      if (regionSizeCase_ == 1917) {
-         return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
-      }
-      return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -586,42 +665,42 @@ public final class PlayerEyePointStateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dOKGNDBIHPI_ != 0) {
-        output.writeUInt32(2, dOKGNDBIHPI_);
-      }
-      if (nEGNMGELLCN_ != false) {
-        output.writeBool(5, nEGNMGELLCN_);
-      }
-      if (jLFOFGIFNGL_ != 0) {
-        output.writeUInt32(7, jLFOFGIFNGL_);
-      }
-      if (iOGAOKLPFGP_ != 0) {
-        output.writeUInt32(10, iOGAOKLPFGP_);
+      if (pNEBIECBKKM_ != false) {
+        output.writeBool(3, pNEBIECBKKM_);
       }
       if (fixLodLevel_ != 0) {
-        output.writeInt32(11, fixLodLevel_);
+        output.writeInt32(4, fixLodLevel_);
+      }
+      if (cAJLIJMCEGK_ != 0) {
+        output.writeUInt32(5, cAJLIJMCEGK_);
+      }
+      if (oMIAIFICJCF_ != false) {
+        output.writeBool(6, oMIAIFICJCF_);
+      }
+      if (pGKOBEIKONB_ != 0) {
+        output.writeUInt32(8, pGKOBEIKONB_);
       }
       if (eyePointPos_ != null) {
-        output.writeMessage(12, getEyePointPos());
+        output.writeMessage(10, getEyePointPos());
       }
-      if (dEOOGIIMFBE_ != 0) {
-        output.writeUInt32(13, dEOOGIIMFBE_);
+      if (aHEJOJFKBJG_ != 0) {
+        output.writeUInt32(12, aHEJOJFKBJG_);
       }
-      if (pAOBMOJHPKC_ != false) {
-        output.writeBool(14, pAOBMOJHPKC_);
+      if (pDAIPMOIFKI_ != 0) {
+        output.writeUInt32(13, pDAIPMOIFKI_);
       }
-      if (regionSizeCase_ == 1032) {
+      if (regionSizeCase_ == 174) {
+        output.writeMessage(174, (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_);
+      }
+      if (regionSizeCase_ == 535) {
+        output.writeMessage(535, (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
+      }
+      if (regionSizeCase_ == 837) {
         output.writeFloat(
-            1032, (float)((java.lang.Float) regionSize_));
+            837, (float)((java.lang.Float) regionSize_));
       }
-      if (regionSizeCase_ == 1127) {
-        output.writeMessage(1127, (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
-      }
-      if (regionSizeCase_ == 1182) {
-        output.writeMessage(1182, (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
-      }
-      if (regionSizeCase_ == 1917) {
-        output.writeMessage(1917, (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_);
+      if (regionSizeCase_ == 1079) {
+        output.writeMessage(1079, (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
       }
       unknownFields.writeTo(output);
     }
@@ -632,54 +711,54 @@ public final class PlayerEyePointStateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dOKGNDBIHPI_ != 0) {
+      if (pNEBIECBKKM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dOKGNDBIHPI_);
-      }
-      if (nEGNMGELLCN_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, nEGNMGELLCN_);
-      }
-      if (jLFOFGIFNGL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, jLFOFGIFNGL_);
-      }
-      if (iOGAOKLPFGP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, iOGAOKLPFGP_);
+          .computeBoolSize(3, pNEBIECBKKM_);
       }
       if (fixLodLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, fixLodLevel_);
+          .computeInt32Size(4, fixLodLevel_);
+      }
+      if (cAJLIJMCEGK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, cAJLIJMCEGK_);
+      }
+      if (oMIAIFICJCF_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, oMIAIFICJCF_);
+      }
+      if (pGKOBEIKONB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, pGKOBEIKONB_);
       }
       if (eyePointPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getEyePointPos());
+          .computeMessageSize(10, getEyePointPos());
       }
-      if (dEOOGIIMFBE_ != 0) {
+      if (aHEJOJFKBJG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dEOOGIIMFBE_);
+          .computeUInt32Size(12, aHEJOJFKBJG_);
       }
-      if (pAOBMOJHPKC_ != false) {
+      if (pDAIPMOIFKI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, pAOBMOJHPKC_);
+          .computeUInt32Size(13, pDAIPMOIFKI_);
       }
-      if (regionSizeCase_ == 1032) {
+      if (regionSizeCase_ == 174) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(174, (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_);
+      }
+      if (regionSizeCase_ == 535) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(535, (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
+      }
+      if (regionSizeCase_ == 837) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(
-              1032, (float)((java.lang.Float) regionSize_));
+              837, (float)((java.lang.Float) regionSize_));
       }
-      if (regionSizeCase_ == 1127) {
+      if (regionSizeCase_ == 1079) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1127, (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_);
-      }
-      if (regionSizeCase_ == 1182) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1182, (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
-      }
-      if (regionSizeCase_ == 1917) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1917, (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_);
+          .computeMessageSize(1079, (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -696,43 +775,43 @@ public final class PlayerEyePointStateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify other = (emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify) obj;
 
-      if (getDEOOGIIMFBE()
-          != other.getDEOOGIIMFBE()) return false;
-      if (getDOKGNDBIHPI()
-          != other.getDOKGNDBIHPI()) return false;
-      if (getFixLodLevel()
-          != other.getFixLodLevel()) return false;
-      if (getNEGNMGELLCN()
-          != other.getNEGNMGELLCN()) return false;
-      if (getIOGAOKLPFGP()
-          != other.getIOGAOKLPFGP()) return false;
-      if (getJLFOFGIFNGL()
-          != other.getJLFOFGIFNGL()) return false;
-      if (getPAOBMOJHPKC()
-          != other.getPAOBMOJHPKC()) return false;
       if (hasEyePointPos() != other.hasEyePointPos()) return false;
       if (hasEyePointPos()) {
         if (!getEyePointPos()
             .equals(other.getEyePointPos())) return false;
       }
+      if (getPGKOBEIKONB()
+          != other.getPGKOBEIKONB()) return false;
+      if (getFixLodLevel()
+          != other.getFixLodLevel()) return false;
+      if (getPDAIPMOIFKI()
+          != other.getPDAIPMOIFKI()) return false;
+      if (getAHEJOJFKBJG()
+          != other.getAHEJOJFKBJG()) return false;
+      if (getPNEBIECBKKM()
+          != other.getPNEBIECBKKM()) return false;
+      if (getOMIAIFICJCF()
+          != other.getOMIAIFICJCF()) return false;
+      if (getCAJLIJMCEGK()
+          != other.getCAJLIJMCEGK()) return false;
       if (!getRegionSizeCase().equals(other.getRegionSizeCase())) return false;
       switch (regionSizeCase_) {
-        case 1032:
+        case 174:
+          if (!getPolygonSize()
+              .equals(other.getPolygonSize())) return false;
+          break;
+        case 535:
+          if (!getCylinderSize()
+              .equals(other.getCylinderSize())) return false;
+          break;
+        case 837:
           if (java.lang.Float.floatToIntBits(getSphereRadius())
               != java.lang.Float.floatToIntBits(
                   other.getSphereRadius())) return false;
           break;
-        case 1182:
+        case 1079:
           if (!getCubicSize()
               .equals(other.getCubicSize())) return false;
-          break;
-        case 1127:
-          if (!getCylinderSize()
-              .equals(other.getCylinderSize())) return false;
-          break;
-        case 1917:
-          if (!getPolygonSize()
-              .equals(other.getPolygonSize())) return false;
           break;
         case 0:
         default:
@@ -748,43 +827,43 @@ public final class PlayerEyePointStateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DEOOGIIMFBE_FIELD_NUMBER;
-      hash = (53 * hash) + getDEOOGIIMFBE();
-      hash = (37 * hash) + DOKGNDBIHPI_FIELD_NUMBER;
-      hash = (53 * hash) + getDOKGNDBIHPI();
-      hash = (37 * hash) + FIX_LOD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getFixLodLevel();
-      hash = (37 * hash) + NEGNMGELLCN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getNEGNMGELLCN());
-      hash = (37 * hash) + IOGAOKLPFGP_FIELD_NUMBER;
-      hash = (53 * hash) + getIOGAOKLPFGP();
-      hash = (37 * hash) + JLFOFGIFNGL_FIELD_NUMBER;
-      hash = (53 * hash) + getJLFOFGIFNGL();
-      hash = (37 * hash) + PAOBMOJHPKC_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPAOBMOJHPKC());
       if (hasEyePointPos()) {
         hash = (37 * hash) + EYE_POINT_POS_FIELD_NUMBER;
         hash = (53 * hash) + getEyePointPos().hashCode();
       }
+      hash = (37 * hash) + PGKOBEIKONB_FIELD_NUMBER;
+      hash = (53 * hash) + getPGKOBEIKONB();
+      hash = (37 * hash) + FIX_LOD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getFixLodLevel();
+      hash = (37 * hash) + PDAIPMOIFKI_FIELD_NUMBER;
+      hash = (53 * hash) + getPDAIPMOIFKI();
+      hash = (37 * hash) + AHEJOJFKBJG_FIELD_NUMBER;
+      hash = (53 * hash) + getAHEJOJFKBJG();
+      hash = (37 * hash) + PNEBIECBKKM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPNEBIECBKKM());
+      hash = (37 * hash) + OMIAIFICJCF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOMIAIFICJCF());
+      hash = (37 * hash) + CAJLIJMCEGK_FIELD_NUMBER;
+      hash = (53 * hash) + getCAJLIJMCEGK();
       switch (regionSizeCase_) {
-        case 1032:
+        case 174:
+          hash = (37 * hash) + POLYGON_SIZE_FIELD_NUMBER;
+          hash = (53 * hash) + getPolygonSize().hashCode();
+          break;
+        case 535:
+          hash = (37 * hash) + CYLINDER_SIZE_FIELD_NUMBER;
+          hash = (53 * hash) + getCylinderSize().hashCode();
+          break;
+        case 837:
           hash = (37 * hash) + SPHERE_RADIUS_FIELD_NUMBER;
           hash = (53 * hash) + java.lang.Float.floatToIntBits(
               getSphereRadius());
           break;
-        case 1182:
+        case 1079:
           hash = (37 * hash) + CUBIC_SIZE_FIELD_NUMBER;
           hash = (53 * hash) + getCubicSize().hashCode();
-          break;
-        case 1127:
-          hash = (37 * hash) + CYLINDER_SIZE_FIELD_NUMBER;
-          hash = (53 * hash) + getCylinderSize().hashCode();
-          break;
-        case 1917:
-          hash = (37 * hash) + POLYGON_SIZE_FIELD_NUMBER;
-          hash = (53 * hash) + getPolygonSize().hashCode();
           break;
         case 0:
         default:
@@ -886,8 +965,7 @@ public final class PlayerEyePointStateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27367
-     * Obf: ANOPEDIPEFI
+     * CmdId: 20893
      * </pre>
      *
      * Protobuf type {@code PlayerEyePointStateNotify}
@@ -927,26 +1005,26 @@ public final class PlayerEyePointStateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dEOOGIIMFBE_ = 0;
-
-        dOKGNDBIHPI_ = 0;
-
-        fixLodLevel_ = 0;
-
-        nEGNMGELLCN_ = false;
-
-        iOGAOKLPFGP_ = 0;
-
-        jLFOFGIFNGL_ = 0;
-
-        pAOBMOJHPKC_ = false;
-
         if (eyePointPosBuilder_ == null) {
           eyePointPos_ = null;
         } else {
           eyePointPos_ = null;
           eyePointPosBuilder_ = null;
         }
+        pGKOBEIKONB_ = 0;
+
+        fixLodLevel_ = 0;
+
+        pDAIPMOIFKI_ = 0;
+
+        aHEJOJFKBJG_ = 0;
+
+        pNEBIECBKKM_ = false;
+
+        oMIAIFICJCF_ = false;
+
+        cAJLIJMCEGK_ = 0;
+
         regionSizeCase_ = 0;
         regionSize_ = null;
         return this;
@@ -975,40 +1053,40 @@ public final class PlayerEyePointStateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify result = new emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify(this);
-        result.dEOOGIIMFBE_ = dEOOGIIMFBE_;
-        result.dOKGNDBIHPI_ = dOKGNDBIHPI_;
-        result.fixLodLevel_ = fixLodLevel_;
-        result.nEGNMGELLCN_ = nEGNMGELLCN_;
-        result.iOGAOKLPFGP_ = iOGAOKLPFGP_;
-        result.jLFOFGIFNGL_ = jLFOFGIFNGL_;
-        result.pAOBMOJHPKC_ = pAOBMOJHPKC_;
         if (eyePointPosBuilder_ == null) {
           result.eyePointPos_ = eyePointPos_;
         } else {
           result.eyePointPos_ = eyePointPosBuilder_.build();
         }
-        if (regionSizeCase_ == 1032) {
-          result.regionSize_ = regionSize_;
-        }
-        if (regionSizeCase_ == 1182) {
-          if (cubicSizeBuilder_ == null) {
+        result.pGKOBEIKONB_ = pGKOBEIKONB_;
+        result.fixLodLevel_ = fixLodLevel_;
+        result.pDAIPMOIFKI_ = pDAIPMOIFKI_;
+        result.aHEJOJFKBJG_ = aHEJOJFKBJG_;
+        result.pNEBIECBKKM_ = pNEBIECBKKM_;
+        result.oMIAIFICJCF_ = oMIAIFICJCF_;
+        result.cAJLIJMCEGK_ = cAJLIJMCEGK_;
+        if (regionSizeCase_ == 174) {
+          if (polygonSizeBuilder_ == null) {
             result.regionSize_ = regionSize_;
           } else {
-            result.regionSize_ = cubicSizeBuilder_.build();
+            result.regionSize_ = polygonSizeBuilder_.build();
           }
         }
-        if (regionSizeCase_ == 1127) {
+        if (regionSizeCase_ == 535) {
           if (cylinderSizeBuilder_ == null) {
             result.regionSize_ = regionSize_;
           } else {
             result.regionSize_ = cylinderSizeBuilder_.build();
           }
         }
-        if (regionSizeCase_ == 1917) {
-          if (polygonSizeBuilder_ == null) {
+        if (regionSizeCase_ == 837) {
+          result.regionSize_ = regionSize_;
+        }
+        if (regionSizeCase_ == 1079) {
+          if (cubicSizeBuilder_ == null) {
             result.regionSize_ = regionSize_;
           } else {
-            result.regionSize_ = polygonSizeBuilder_.build();
+            result.regionSize_ = cubicSizeBuilder_.build();
           }
         }
         result.regionSizeCase_ = regionSizeCase_;
@@ -1060,45 +1138,45 @@ public final class PlayerEyePointStateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerEyePointStateNotifyOuterClass.PlayerEyePointStateNotify.getDefaultInstance()) return this;
-        if (other.getDEOOGIIMFBE() != 0) {
-          setDEOOGIIMFBE(other.getDEOOGIIMFBE());
+        if (other.hasEyePointPos()) {
+          mergeEyePointPos(other.getEyePointPos());
         }
-        if (other.getDOKGNDBIHPI() != 0) {
-          setDOKGNDBIHPI(other.getDOKGNDBIHPI());
+        if (other.getPGKOBEIKONB() != 0) {
+          setPGKOBEIKONB(other.getPGKOBEIKONB());
         }
         if (other.getFixLodLevel() != 0) {
           setFixLodLevel(other.getFixLodLevel());
         }
-        if (other.getNEGNMGELLCN() != false) {
-          setNEGNMGELLCN(other.getNEGNMGELLCN());
+        if (other.getPDAIPMOIFKI() != 0) {
+          setPDAIPMOIFKI(other.getPDAIPMOIFKI());
         }
-        if (other.getIOGAOKLPFGP() != 0) {
-          setIOGAOKLPFGP(other.getIOGAOKLPFGP());
+        if (other.getAHEJOJFKBJG() != 0) {
+          setAHEJOJFKBJG(other.getAHEJOJFKBJG());
         }
-        if (other.getJLFOFGIFNGL() != 0) {
-          setJLFOFGIFNGL(other.getJLFOFGIFNGL());
+        if (other.getPNEBIECBKKM() != false) {
+          setPNEBIECBKKM(other.getPNEBIECBKKM());
         }
-        if (other.getPAOBMOJHPKC() != false) {
-          setPAOBMOJHPKC(other.getPAOBMOJHPKC());
+        if (other.getOMIAIFICJCF() != false) {
+          setOMIAIFICJCF(other.getOMIAIFICJCF());
         }
-        if (other.hasEyePointPos()) {
-          mergeEyePointPos(other.getEyePointPos());
+        if (other.getCAJLIJMCEGK() != 0) {
+          setCAJLIJMCEGK(other.getCAJLIJMCEGK());
         }
         switch (other.getRegionSizeCase()) {
-          case SPHERE_RADIUS: {
-            setSphereRadius(other.getSphereRadius());
-            break;
-          }
-          case CUBIC_SIZE: {
-            mergeCubicSize(other.getCubicSize());
+          case POLYGON_SIZE: {
+            mergePolygonSize(other.getPolygonSize());
             break;
           }
           case CYLINDER_SIZE: {
             mergeCylinderSize(other.getCylinderSize());
             break;
           }
-          case POLYGON_SIZE: {
-            mergePolygonSize(other.getPolygonSize());
+          case SPHERE_RADIUS: {
+            setSphereRadius(other.getSphereRadius());
+            break;
+          }
+          case CUBIC_SIZE: {
+            mergeCubicSize(other.getCubicSize());
             break;
           }
           case REGIONSIZE_NOT_SET: {
@@ -1149,235 +1227,26 @@ public final class PlayerEyePointStateNotifyOuterClass {
       }
 
 
-      private int dEOOGIIMFBE_ ;
-      /**
-       * <code>uint32 DEOOGIIMFBE = 13;</code>
-       * @return The dEOOGIIMFBE.
-       */
-      @java.lang.Override
-      public int getDEOOGIIMFBE() {
-        return dEOOGIIMFBE_;
-      }
-      /**
-       * <code>uint32 DEOOGIIMFBE = 13;</code>
-       * @param value The dEOOGIIMFBE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDEOOGIIMFBE(int value) {
-        
-        dEOOGIIMFBE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DEOOGIIMFBE = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDEOOGIIMFBE() {
-        
-        dEOOGIIMFBE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dOKGNDBIHPI_ ;
-      /**
-       * <code>uint32 DOKGNDBIHPI = 2;</code>
-       * @return The dOKGNDBIHPI.
-       */
-      @java.lang.Override
-      public int getDOKGNDBIHPI() {
-        return dOKGNDBIHPI_;
-      }
-      /**
-       * <code>uint32 DOKGNDBIHPI = 2;</code>
-       * @param value The dOKGNDBIHPI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDOKGNDBIHPI(int value) {
-        
-        dOKGNDBIHPI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DOKGNDBIHPI = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDOKGNDBIHPI() {
-        
-        dOKGNDBIHPI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fixLodLevel_ ;
-      /**
-       * <code>int32 fix_lod_level = 11;</code>
-       * @return The fixLodLevel.
-       */
-      @java.lang.Override
-      public int getFixLodLevel() {
-        return fixLodLevel_;
-      }
-      /**
-       * <code>int32 fix_lod_level = 11;</code>
-       * @param value The fixLodLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFixLodLevel(int value) {
-        
-        fixLodLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 fix_lod_level = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFixLodLevel() {
-        
-        fixLodLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean nEGNMGELLCN_ ;
-      /**
-       * <code>bool NEGNMGELLCN = 5;</code>
-       * @return The nEGNMGELLCN.
-       */
-      @java.lang.Override
-      public boolean getNEGNMGELLCN() {
-        return nEGNMGELLCN_;
-      }
-      /**
-       * <code>bool NEGNMGELLCN = 5;</code>
-       * @param value The nEGNMGELLCN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNEGNMGELLCN(boolean value) {
-        
-        nEGNMGELLCN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool NEGNMGELLCN = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNEGNMGELLCN() {
-        
-        nEGNMGELLCN_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int iOGAOKLPFGP_ ;
-      /**
-       * <code>uint32 IOGAOKLPFGP = 10;</code>
-       * @return The iOGAOKLPFGP.
-       */
-      @java.lang.Override
-      public int getIOGAOKLPFGP() {
-        return iOGAOKLPFGP_;
-      }
-      /**
-       * <code>uint32 IOGAOKLPFGP = 10;</code>
-       * @param value The iOGAOKLPFGP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIOGAOKLPFGP(int value) {
-        
-        iOGAOKLPFGP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IOGAOKLPFGP = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIOGAOKLPFGP() {
-        
-        iOGAOKLPFGP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jLFOFGIFNGL_ ;
-      /**
-       * <code>uint32 JLFOFGIFNGL = 7;</code>
-       * @return The jLFOFGIFNGL.
-       */
-      @java.lang.Override
-      public int getJLFOFGIFNGL() {
-        return jLFOFGIFNGL_;
-      }
-      /**
-       * <code>uint32 JLFOFGIFNGL = 7;</code>
-       * @param value The jLFOFGIFNGL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJLFOFGIFNGL(int value) {
-        
-        jLFOFGIFNGL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JLFOFGIFNGL = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJLFOFGIFNGL() {
-        
-        jLFOFGIFNGL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean pAOBMOJHPKC_ ;
-      /**
-       * <code>bool PAOBMOJHPKC = 14;</code>
-       * @return The pAOBMOJHPKC.
-       */
-      @java.lang.Override
-      public boolean getPAOBMOJHPKC() {
-        return pAOBMOJHPKC_;
-      }
-      /**
-       * <code>bool PAOBMOJHPKC = 14;</code>
-       * @param value The pAOBMOJHPKC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPAOBMOJHPKC(boolean value) {
-        
-        pAOBMOJHPKC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool PAOBMOJHPKC = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPAOBMOJHPKC() {
-        
-        pAOBMOJHPKC_ = false;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector eyePointPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> eyePointPosBuilder_;
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        * @return Whether the eyePointPos field is set.
        */
       public boolean hasEyePointPos() {
         return eyePointPosBuilder_ != null || eyePointPos_ != null;
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        * @return The eyePointPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getEyePointPos() {
@@ -1388,7 +1257,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public Builder setEyePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (eyePointPosBuilder_ == null) {
@@ -1404,7 +1277,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public Builder setEyePointPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1418,7 +1295,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public Builder mergeEyePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (eyePointPosBuilder_ == null) {
@@ -1436,7 +1317,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public Builder clearEyePointPos() {
         if (eyePointPosBuilder_ == null) {
@@ -1450,7 +1335,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getEyePointPosBuilder() {
         
@@ -1458,7 +1347,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return getEyePointPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getEyePointPosOrBuilder() {
         if (eyePointPosBuilder_ != null) {
@@ -1469,7 +1362,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector eye_point_pos = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector eye_point_pos = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1485,359 +1382,337 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return eyePointPosBuilder_;
       }
 
+      private int pGKOBEIKONB_ ;
       /**
-       * <code>float sphere_radius = 1032;</code>
-       * @return Whether the sphereRadius field is set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PGKOBEIKONB = 8;</code>
+       * @return The pGKOBEIKONB.
        */
-      public boolean hasSphereRadius() {
-        return regionSizeCase_ == 1032;
+      @java.lang.Override
+      public int getPGKOBEIKONB() {
+        return pGKOBEIKONB_;
       }
       /**
-       * <code>float sphere_radius = 1032;</code>
-       * @return The sphereRadius.
-       */
-      public float getSphereRadius() {
-        if (regionSizeCase_ == 1032) {
-          return (java.lang.Float) regionSize_;
-        }
-        return 0F;
-      }
-      /**
-       * <code>float sphere_radius = 1032;</code>
-       * @param value The sphereRadius to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PGKOBEIKONB = 8;</code>
+       * @param value The pGKOBEIKONB to set.
        * @return This builder for chaining.
        */
-      public Builder setSphereRadius(float value) {
-        regionSizeCase_ = 1032;
-        regionSize_ = value;
+      public Builder setPGKOBEIKONB(int value) {
+        
+        pGKOBEIKONB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float sphere_radius = 1032;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PGKOBEIKONB = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSphereRadius() {
-        if (regionSizeCase_ == 1032) {
-          regionSizeCase_ = 0;
-          regionSize_ = null;
-          onChanged();
-        }
+      public Builder clearPGKOBEIKONB() {
+        
+        pGKOBEIKONB_ = 0;
+        onChanged();
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> cubicSizeBuilder_;
+      private int fixLodLevel_ ;
       /**
-       * <code>.Vector cubic_size = 1182;</code>
-       * @return Whether the cubicSize field is set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>int32 fix_lod_level = 4;</code>
+       * @return The fixLodLevel.
        */
       @java.lang.Override
-      public boolean hasCubicSize() {
-        return regionSizeCase_ == 1182;
+      public int getFixLodLevel() {
+        return fixLodLevel_;
       }
       /**
-       * <code>.Vector cubic_size = 1182;</code>
-       * @return The cubicSize.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>int32 fix_lod_level = 4;</code>
+       * @param value The fixLodLevel to set.
+       * @return This builder for chaining.
        */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCubicSize() {
-        if (cubicSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1182) {
-            return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
-          }
-          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
-        } else {
-          if (regionSizeCase_ == 1182) {
-            return cubicSizeBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      public Builder setCubicSize(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cubicSizeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          regionSize_ = value;
-          onChanged();
-        } else {
-          cubicSizeBuilder_.setMessage(value);
-        }
-        regionSizeCase_ = 1182;
+      public Builder setFixLodLevel(int value) {
+        
+        fixLodLevel_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>.Vector cubic_size = 1182;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>int32 fix_lod_level = 4;</code>
+       * @return This builder for chaining.
        */
-      public Builder setCubicSize(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (cubicSizeBuilder_ == null) {
-          regionSize_ = builderForValue.build();
-          onChanged();
-        } else {
-          cubicSizeBuilder_.setMessage(builderForValue.build());
-        }
-        regionSizeCase_ = 1182;
+      public Builder clearFixLodLevel() {
+        
+        fixLodLevel_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      public Builder mergeCubicSize(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cubicSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1182 &&
-              regionSize_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
-            regionSize_ = emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            regionSize_ = value;
-          }
-          onChanged();
-        } else {
-          if (regionSizeCase_ == 1182) {
-            cubicSizeBuilder_.mergeFrom(value);
-          }
-          cubicSizeBuilder_.setMessage(value);
-        }
-        regionSizeCase_ = 1182;
-        return this;
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      public Builder clearCubicSize() {
-        if (cubicSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1182) {
-            regionSizeCase_ = 0;
-            regionSize_ = null;
-            onChanged();
-          }
-        } else {
-          if (regionSizeCase_ == 1182) {
-            regionSizeCase_ = 0;
-            regionSize_ = null;
-          }
-          cubicSizeBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCubicSizeBuilder() {
-        return getCubicSizeFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCubicSizeOrBuilder() {
-        if ((regionSizeCase_ == 1182) && (cubicSizeBuilder_ != null)) {
-          return cubicSizeBuilder_.getMessageOrBuilder();
-        } else {
-          if (regionSizeCase_ == 1182) {
-            return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
-          }
-          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Vector cubic_size = 1182;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getCubicSizeFieldBuilder() {
-        if (cubicSizeBuilder_ == null) {
-          if (!(regionSizeCase_ == 1182)) {
-            regionSize_ = emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
-          }
-          cubicSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_,
-                  getParentForChildren(),
-                  isClean());
-          regionSize_ = null;
-        }
-        regionSizeCase_ = 1182;
-        onChanged();;
-        return cubicSizeBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder> cylinderSizeBuilder_;
+      private int pDAIPMOIFKI_ ;
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-       * @return Whether the cylinderSize field is set.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PDAIPMOIFKI = 13;</code>
+       * @return The pDAIPMOIFKI.
        */
       @java.lang.Override
-      public boolean hasCylinderSize() {
-        return regionSizeCase_ == 1127;
+      public int getPDAIPMOIFKI() {
+        return pDAIPMOIFKI_;
       }
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-       * @return The cylinderSize.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PDAIPMOIFKI = 13;</code>
+       * @param value The pDAIPMOIFKI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPDAIPMOIFKI(int value) {
+        
+        pDAIPMOIFKI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PDAIPMOIFKI = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPDAIPMOIFKI() {
+        
+        pDAIPMOIFKI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aHEJOJFKBJG_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 AHEJOJFKBJG = 12;</code>
+       * @return The aHEJOJFKBJG.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize() {
-        if (cylinderSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1127) {
-            return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
-          }
-          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-        } else {
-          if (regionSizeCase_ == 1127) {
-            return cylinderSizeBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-        }
+      public int getAHEJOJFKBJG() {
+        return aHEJOJFKBJG_;
       }
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 AHEJOJFKBJG = 12;</code>
+       * @param value The aHEJOJFKBJG to set.
+       * @return This builder for chaining.
        */
-      public Builder setCylinderSize(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize value) {
-        if (cylinderSizeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          regionSize_ = value;
-          onChanged();
-        } else {
-          cylinderSizeBuilder_.setMessage(value);
-        }
-        regionSizeCase_ = 1127;
+      public Builder setAHEJOJFKBJG(int value) {
+        
+        aHEJOJFKBJG_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 AHEJOJFKBJG = 12;</code>
+       * @return This builder for chaining.
        */
-      public Builder setCylinderSize(
-          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder builderForValue) {
-        if (cylinderSizeBuilder_ == null) {
-          regionSize_ = builderForValue.build();
-          onChanged();
-        } else {
-          cylinderSizeBuilder_.setMessage(builderForValue.build());
-        }
-        regionSizeCase_ = 1127;
+      public Builder clearAHEJOJFKBJG() {
+        
+        aHEJOJFKBJG_ = 0;
+        onChanged();
         return this;
       }
+
+      private boolean pNEBIECBKKM_ ;
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-       */
-      public Builder mergeCylinderSize(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize value) {
-        if (cylinderSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1127 &&
-              regionSize_ != emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance()) {
-            regionSize_ = emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.newBuilder((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            regionSize_ = value;
-          }
-          onChanged();
-        } else {
-          if (regionSizeCase_ == 1127) {
-            cylinderSizeBuilder_.mergeFrom(value);
-          }
-          cylinderSizeBuilder_.setMessage(value);
-        }
-        regionSizeCase_ = 1127;
-        return this;
-      }
-      /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-       */
-      public Builder clearCylinderSize() {
-        if (cylinderSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1127) {
-            regionSizeCase_ = 0;
-            regionSize_ = null;
-            onChanged();
-          }
-        } else {
-          if (regionSizeCase_ == 1127) {
-            regionSizeCase_ = 0;
-            regionSize_ = null;
-          }
-          cylinderSizeBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
-       */
-      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder getCylinderSizeBuilder() {
-        return getCylinderSizeFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool PNEBIECBKKM = 3;</code>
+       * @return The pNEBIECBKKM.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder() {
-        if ((regionSizeCase_ == 1127) && (cylinderSizeBuilder_ != null)) {
-          return cylinderSizeBuilder_.getMessageOrBuilder();
-        } else {
-          if (regionSizeCase_ == 1127) {
-            return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
-          }
-          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-        }
+      public boolean getPNEBIECBKKM() {
+        return pNEBIECBKKM_;
       }
       /**
-       * <code>.CylinderRegionSize cylinder_size = 1127;</code>
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool PNEBIECBKKM = 3;</code>
+       * @param value The pNEBIECBKKM to set.
+       * @return This builder for chaining.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder> 
-          getCylinderSizeFieldBuilder() {
-        if (cylinderSizeBuilder_ == null) {
-          if (!(regionSizeCase_ == 1127)) {
-            regionSize_ = emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
-          }
-          cylinderSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder>(
-                  (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_,
-                  getParentForChildren(),
-                  isClean());
-          regionSize_ = null;
-        }
-        regionSizeCase_ = 1127;
-        onChanged();;
-        return cylinderSizeBuilder_;
+      public Builder setPNEBIECBKKM(boolean value) {
+        
+        pNEBIECBKKM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool PNEBIECBKKM = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPNEBIECBKKM() {
+        
+        pNEBIECBKKM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean oMIAIFICJCF_ ;
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool OMIAIFICJCF = 6;</code>
+       * @return The oMIAIFICJCF.
+       */
+      @java.lang.Override
+      public boolean getOMIAIFICJCF() {
+        return oMIAIFICJCF_;
+      }
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool OMIAIFICJCF = 6;</code>
+       * @param value The oMIAIFICJCF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOMIAIFICJCF(boolean value) {
+        
+        oMIAIFICJCF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool OMIAIFICJCF = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOMIAIFICJCF() {
+        
+        oMIAIFICJCF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int cAJLIJMCEGK_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 CAJLIJMCEGK = 5;</code>
+       * @return The cAJLIJMCEGK.
+       */
+      @java.lang.Override
+      public int getCAJLIJMCEGK() {
+        return cAJLIJMCEGK_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 CAJLIJMCEGK = 5;</code>
+       * @param value The cAJLIJMCEGK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCAJLIJMCEGK(int value) {
+        
+        cAJLIJMCEGK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 CAJLIJMCEGK = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCAJLIJMCEGK() {
+        
+        cAJLIJMCEGK_ = 0;
+        onChanged();
+        return this;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize, emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.Builder, emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder> polygonSizeBuilder_;
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        * @return Whether the polygonSize field is set.
        */
       @java.lang.Override
       public boolean hasPolygonSize() {
-        return regionSizeCase_ == 1917;
+        return regionSizeCase_ == 174;
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        * @return The polygonSize.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize getPolygonSize() {
         if (polygonSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
           }
           return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
         } else {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             return polygonSizeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
         }
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       public Builder setPolygonSize(emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize value) {
         if (polygonSizeBuilder_ == null) {
@@ -1849,11 +1724,11 @@ public final class PlayerEyePointStateNotifyOuterClass {
         } else {
           polygonSizeBuilder_.setMessage(value);
         }
-        regionSizeCase_ = 1917;
+        regionSizeCase_ = 174;
         return this;
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       public Builder setPolygonSize(
           emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.Builder builderForValue) {
@@ -1863,15 +1738,15 @@ public final class PlayerEyePointStateNotifyOuterClass {
         } else {
           polygonSizeBuilder_.setMessage(builderForValue.build());
         }
-        regionSizeCase_ = 1917;
+        regionSizeCase_ = 174;
         return this;
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       public Builder mergePolygonSize(emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize value) {
         if (polygonSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1917 &&
+          if (regionSizeCase_ == 174 &&
               regionSize_ != emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance()) {
             regionSize_ = emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.newBuilder((emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_)
                 .mergeFrom(value).buildPartial();
@@ -1880,26 +1755,26 @@ public final class PlayerEyePointStateNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             polygonSizeBuilder_.mergeFrom(value);
           }
           polygonSizeBuilder_.setMessage(value);
         }
-        regionSizeCase_ = 1917;
+        regionSizeCase_ = 174;
         return this;
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       public Builder clearPolygonSize() {
         if (polygonSizeBuilder_ == null) {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             regionSizeCase_ = 0;
             regionSize_ = null;
             onChanged();
           }
         } else {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             regionSizeCase_ = 0;
             regionSize_ = null;
           }
@@ -1908,33 +1783,33 @@ public final class PlayerEyePointStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.Builder getPolygonSizeBuilder() {
         return getPolygonSizeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder getPolygonSizeOrBuilder() {
-        if ((regionSizeCase_ == 1917) && (polygonSizeBuilder_ != null)) {
+        if ((regionSizeCase_ == 174) && (polygonSizeBuilder_ != null)) {
           return polygonSizeBuilder_.getMessageOrBuilder();
         } else {
-          if (regionSizeCase_ == 1917) {
+          if (regionSizeCase_ == 174) {
             return (emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize) regionSize_;
           }
           return emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
         }
       }
       /**
-       * <code>.PolygonRegionSize polygon_size = 1917;</code>
+       * <code>.PolygonRegionSize polygon_size = 174;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize, emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.Builder, emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSizeOrBuilder> 
           getPolygonSizeFieldBuilder() {
         if (polygonSizeBuilder_ == null) {
-          if (!(regionSizeCase_ == 1917)) {
+          if (!(regionSizeCase_ == 174)) {
             regionSize_ = emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.PolygonRegionSize.getDefaultInstance();
           }
           polygonSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1944,9 +1819,332 @@ public final class PlayerEyePointStateNotifyOuterClass {
                   isClean());
           regionSize_ = null;
         }
-        regionSizeCase_ = 1917;
+        regionSizeCase_ = 174;
         onChanged();;
         return polygonSizeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder> cylinderSizeBuilder_;
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       * @return Whether the cylinderSize field is set.
+       */
+      @java.lang.Override
+      public boolean hasCylinderSize() {
+        return regionSizeCase_ == 535;
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       * @return The cylinderSize.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize getCylinderSize() {
+        if (cylinderSizeBuilder_ == null) {
+          if (regionSizeCase_ == 535) {
+            return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
+          }
+          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+        } else {
+          if (regionSizeCase_ == 535) {
+            return cylinderSizeBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      public Builder setCylinderSize(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize value) {
+        if (cylinderSizeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          regionSize_ = value;
+          onChanged();
+        } else {
+          cylinderSizeBuilder_.setMessage(value);
+        }
+        regionSizeCase_ = 535;
+        return this;
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      public Builder setCylinderSize(
+          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder builderForValue) {
+        if (cylinderSizeBuilder_ == null) {
+          regionSize_ = builderForValue.build();
+          onChanged();
+        } else {
+          cylinderSizeBuilder_.setMessage(builderForValue.build());
+        }
+        regionSizeCase_ = 535;
+        return this;
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      public Builder mergeCylinderSize(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize value) {
+        if (cylinderSizeBuilder_ == null) {
+          if (regionSizeCase_ == 535 &&
+              regionSize_ != emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance()) {
+            regionSize_ = emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.newBuilder((emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            regionSize_ = value;
+          }
+          onChanged();
+        } else {
+          if (regionSizeCase_ == 535) {
+            cylinderSizeBuilder_.mergeFrom(value);
+          }
+          cylinderSizeBuilder_.setMessage(value);
+        }
+        regionSizeCase_ = 535;
+        return this;
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      public Builder clearCylinderSize() {
+        if (cylinderSizeBuilder_ == null) {
+          if (regionSizeCase_ == 535) {
+            regionSizeCase_ = 0;
+            regionSize_ = null;
+            onChanged();
+          }
+        } else {
+          if (regionSizeCase_ == 535) {
+            regionSizeCase_ = 0;
+            regionSize_ = null;
+          }
+          cylinderSizeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder getCylinderSizeBuilder() {
+        return getCylinderSizeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder getCylinderSizeOrBuilder() {
+        if ((regionSizeCase_ == 535) && (cylinderSizeBuilder_ != null)) {
+          return cylinderSizeBuilder_.getMessageOrBuilder();
+        } else {
+          if (regionSizeCase_ == 535) {
+            return (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_;
+          }
+          return emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CylinderRegionSize cylinder_size = 535;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder> 
+          getCylinderSizeFieldBuilder() {
+        if (cylinderSizeBuilder_ == null) {
+          if (!(regionSizeCase_ == 535)) {
+            regionSize_ = emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance();
+          }
+          cylinderSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSizeOrBuilder>(
+                  (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) regionSize_,
+                  getParentForChildren(),
+                  isClean());
+          regionSize_ = null;
+        }
+        regionSizeCase_ = 535;
+        onChanged();;
+        return cylinderSizeBuilder_;
+      }
+
+      /**
+       * <code>float sphere_radius = 837;</code>
+       * @return Whether the sphereRadius field is set.
+       */
+      public boolean hasSphereRadius() {
+        return regionSizeCase_ == 837;
+      }
+      /**
+       * <code>float sphere_radius = 837;</code>
+       * @return The sphereRadius.
+       */
+      public float getSphereRadius() {
+        if (regionSizeCase_ == 837) {
+          return (java.lang.Float) regionSize_;
+        }
+        return 0F;
+      }
+      /**
+       * <code>float sphere_radius = 837;</code>
+       * @param value The sphereRadius to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSphereRadius(float value) {
+        regionSizeCase_ = 837;
+        regionSize_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float sphere_radius = 837;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSphereRadius() {
+        if (regionSizeCase_ == 837) {
+          regionSizeCase_ = 0;
+          regionSize_ = null;
+          onChanged();
+        }
+        return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> cubicSizeBuilder_;
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       * @return Whether the cubicSize field is set.
+       */
+      @java.lang.Override
+      public boolean hasCubicSize() {
+        return regionSizeCase_ == 1079;
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       * @return The cubicSize.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCubicSize() {
+        if (cubicSizeBuilder_ == null) {
+          if (regionSizeCase_ == 1079) {
+            return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
+          }
+          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
+        } else {
+          if (regionSizeCase_ == 1079) {
+            return cubicSizeBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      public Builder setCubicSize(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (cubicSizeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          regionSize_ = value;
+          onChanged();
+        } else {
+          cubicSizeBuilder_.setMessage(value);
+        }
+        regionSizeCase_ = 1079;
+        return this;
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      public Builder setCubicSize(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (cubicSizeBuilder_ == null) {
+          regionSize_ = builderForValue.build();
+          onChanged();
+        } else {
+          cubicSizeBuilder_.setMessage(builderForValue.build());
+        }
+        regionSizeCase_ = 1079;
+        return this;
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      public Builder mergeCubicSize(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (cubicSizeBuilder_ == null) {
+          if (regionSizeCase_ == 1079 &&
+              regionSize_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            regionSize_ = emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder((emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            regionSize_ = value;
+          }
+          onChanged();
+        } else {
+          if (regionSizeCase_ == 1079) {
+            cubicSizeBuilder_.mergeFrom(value);
+          }
+          cubicSizeBuilder_.setMessage(value);
+        }
+        regionSizeCase_ = 1079;
+        return this;
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      public Builder clearCubicSize() {
+        if (cubicSizeBuilder_ == null) {
+          if (regionSizeCase_ == 1079) {
+            regionSizeCase_ = 0;
+            regionSize_ = null;
+            onChanged();
+          }
+        } else {
+          if (regionSizeCase_ == 1079) {
+            regionSizeCase_ = 0;
+            regionSize_ = null;
+          }
+          cubicSizeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCubicSizeBuilder() {
+        return getCubicSizeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCubicSizeOrBuilder() {
+        if ((regionSizeCase_ == 1079) && (cubicSizeBuilder_ != null)) {
+          return cubicSizeBuilder_.getMessageOrBuilder();
+        } else {
+          if (regionSizeCase_ == 1079) {
+            return (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_;
+          }
+          return emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.Vector cubic_size = 1079;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getCubicSizeFieldBuilder() {
+        if (cubicSizeBuilder_ == null) {
+          if (!(regionSizeCase_ == 1079)) {
+            regionSize_ = emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance();
+          }
+          cubicSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  (emu.grasscutter.net.proto.VectorOuterClass.Vector) regionSize_,
+                  getParentForChildren(),
+                  isClean());
+          regionSize_ = null;
+        }
+        regionSizeCase_ = 1079;
+        onChanged();;
+        return cubicSizeBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -2015,36 +2213,36 @@ public final class PlayerEyePointStateNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037PlayerEyePointStateNotify.proto\032\014Vecto" +
-      "r.proto\032\030CylinderRegionSize.proto\032\027Polyg" +
-      "onRegionSize.proto\"\365\002\n\031PlayerEyePointSta" +
-      "teNotify\022\023\n\013DEOOGIIMFBE\030\r \001(\r\022\023\n\013DOKGNDB" +
-      "IHPI\030\002 \001(\r\022\025\n\rfix_lod_level\030\013 \001(\005\022\023\n\013NEG" +
-      "NMGELLCN\030\005 \001(\010\022\023\n\013IOGAOKLPFGP\030\n \001(\r\022\023\n\013J" +
-      "LFOFGIFNGL\030\007 \001(\r\022\023\n\013PAOBMOJHPKC\030\016 \001(\010\022\036\n" +
-      "\reye_point_pos\030\014 \001(\0132\007.Vector\022\030\n\rsphere_" +
-      "radius\030\210\010 \001(\002H\000\022\036\n\ncubic_size\030\236\t \001(\0132\007.V" +
-      "ectorH\000\022-\n\rcylinder_size\030\347\010 \001(\0132\023.Cylind" +
-      "erRegionSizeH\000\022+\n\014polygon_size\030\375\016 \001(\0132\022." +
-      "PolygonRegionSizeH\000B\r\n\013region_sizeB\033\n\031em" +
+      "\n\037PlayerEyePointStateNotify.proto\032\030Cylin" +
+      "derRegionSize.proto\032\027PolygonRegionSize.p" +
+      "roto\032\014Vector.proto\"\365\002\n\031PlayerEyePointSta" +
+      "teNotify\022\036\n\reye_point_pos\030\n \001(\0132\007.Vector" +
+      "\022\023\n\013PGKOBEIKONB\030\010 \001(\r\022\025\n\rfix_lod_level\030\004" +
+      " \001(\005\022\023\n\013PDAIPMOIFKI\030\r \001(\r\022\023\n\013AHEJOJFKBJG" +
+      "\030\014 \001(\r\022\023\n\013PNEBIECBKKM\030\003 \001(\010\022\023\n\013OMIAIFICJ" +
+      "CF\030\006 \001(\010\022\023\n\013CAJLIJMCEGK\030\005 \001(\r\022+\n\014polygon" +
+      "_size\030\256\001 \001(\0132\022.PolygonRegionSizeH\000\022-\n\rcy" +
+      "linder_size\030\227\004 \001(\0132\023.CylinderRegionSizeH" +
+      "\000\022\030\n\rsphere_radius\030\305\006 \001(\002H\000\022\036\n\ncubic_siz" +
+      "e\030\267\010 \001(\0132\007.VectorH\000B\r\n\013region_sizeB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_PlayerEyePointStateNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerEyePointStateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerEyePointStateNotify_descriptor,
-        new java.lang.String[] { "DEOOGIIMFBE", "DOKGNDBIHPI", "FixLodLevel", "NEGNMGELLCN", "IOGAOKLPFGP", "JLFOFGIFNGL", "PAOBMOJHPKC", "EyePointPos", "SphereRadius", "CubicSize", "CylinderSize", "PolygonSize", "RegionSize", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+        new java.lang.String[] { "EyePointPos", "PGKOBEIKONB", "FixLodLevel", "PDAIPMOIFKI", "AHEJOJFKBJG", "PNEBIECBKKM", "OMIAIFICJCF", "CAJLIJMCEGK", "PolygonSize", "CylinderSize", "SphereRadius", "CubicSize", "RegionSize", });
     emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PolygonRegionSizeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

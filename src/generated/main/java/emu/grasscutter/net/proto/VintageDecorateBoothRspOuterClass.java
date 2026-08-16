@@ -19,15 +19,14 @@ public final class VintageDecorateBoothRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 26648
-   * Obf: NCFCPFPADFD
+   * CmdId: 5395
    * </pre>
    *
    * Protobuf type {@code VintageDecorateBoothRsp}
@@ -74,7 +73,7 @@ public final class VintageDecorateBoothRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class VintageDecorateBoothRspOuterClass {
               emu.grasscutter.net.proto.VintageDecorateBoothRspOuterClass.VintageDecorateBoothRsp.class, emu.grasscutter.net.proto.VintageDecorateBoothRspOuterClass.VintageDecorateBoothRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class VintageDecorateBoothRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class VintageDecorateBoothRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class VintageDecorateBoothRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26648
-     * Obf: NCFCPFPADFD
+     * CmdId: 5395
      * </pre>
      *
      * Protobuf type {@code VintageDecorateBoothRsp}
@@ -431,7 +429,7 @@ public final class VintageDecorateBoothRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class VintageDecorateBoothRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class VintageDecorateBoothRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class VintageDecorateBoothRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035VintageDecorateBoothRsp.proto\"*\n\027Vinta" +
-      "geDecorateBoothRsp\022\017\n\007retcode\030\007 \001(\005B\033\n\031e" +
+      "geDecorateBoothRsp\022\017\n\007retcode\030\006 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,15 +19,18 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_ready = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_ready = 7;</code>
      * @return The isReady.
      */
     boolean getIsReady();
   }
   /**
    * <pre>
-   * CmdId: 23358
-   * Obf: DOCBKNBOMEH
+   * CmdId: 1359
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamSetReadyReq}
@@ -74,7 +77,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
               isReady_ = input.readBool();
               break;
@@ -111,10 +114,14 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamSetReadyReqOuterClass.DungeonCandidateTeamSetReadyReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamSetReadyReqOuterClass.DungeonCandidateTeamSetReadyReq.Builder.class);
     }
 
-    public static final int IS_READY_FIELD_NUMBER = 11;
+    public static final int IS_READY_FIELD_NUMBER = 7;
     private boolean isReady_;
     /**
-     * <code>bool is_ready = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_ready = 7;</code>
      * @return The isReady.
      */
     @java.lang.Override
@@ -137,7 +144,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isReady_ != false) {
-        output.writeBool(11, isReady_);
+        output.writeBool(7, isReady_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +157,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
       size = 0;
       if (isReady_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isReady_);
+          .computeBoolSize(7, isReady_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +287,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23358
-     * Obf: DOCBKNBOMEH
+     * CmdId: 1359
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamSetReadyReq}
@@ -432,7 +438,11 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
 
       private boolean isReady_ ;
       /**
-       * <code>bool is_ready = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_ready = 7;</code>
        * @return The isReady.
        */
       @java.lang.Override
@@ -440,7 +450,11 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
         return isReady_;
       }
       /**
-       * <code>bool is_ready = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_ready = 7;</code>
        * @param value The isReady to set.
        * @return This builder for chaining.
        */
@@ -451,7 +465,11 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ready = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_ready = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsReady() {
@@ -529,7 +547,7 @@ public final class DungeonCandidateTeamSetReadyReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%DungeonCandidateTeamSetReadyReq.proto\"" +
       "3\n\037DungeonCandidateTeamSetReadyReq\022\020\n\010is" +
-      "_ready\030\013 \001(\010B\033\n\031emu.grasscutter.net.prot" +
+      "_ready\030\007 \001(\010B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

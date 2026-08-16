@@ -19,46 +19,70 @@ public final class CoinCollectStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> 
+        getPlayerInfoListList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
+     */
+    emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo getPlayerInfoList(int index);
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
+     */
+    int getPlayerInfoListCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder> 
+        getPlayerInfoListOrBuilderList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
+     */
+    emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder getPlayerInfoListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 play_index = 3;</code>
-     * @return The playIndex.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NIIEFNIEECK = 1;</code>
+     * @return The nIIEFNIEECK.
      */
-    int getPlayIndex();
-
-    /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> 
-        getPlayerInfoListList();
-    /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo getPlayerInfoList(int index);
-    /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
-     */
-    int getPlayerInfoListCount();
-    /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder> 
-        getPlayerInfoListOrBuilderList();
-    /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder getPlayerInfoListOrBuilder(
-        int index);
+    int getNIIEFNIEECK();
   }
   /**
-   * <pre>
-   * Obf: LEJNOEMDAHE
-   * </pre>
-   *
    * Protobuf type {@code CoinCollectStageInfo}
    */
   public static final class CoinCollectStageInfo extends
@@ -105,23 +129,23 @@ public final class CoinCollectStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              playIndex_ = input.readUInt32();
+              nIIEFNIEECK_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 16: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               playerInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -159,39 +183,25 @@ public final class CoinCollectStageInfoOuterClass {
               emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo.class, emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 9;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int PLAY_INDEX_FIELD_NUMBER = 3;
-    private int playIndex_;
-    /**
-     * <code>uint32 play_index = 3;</code>
-     * @return The playIndex.
-     */
-    @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
-    }
-
-    public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 5;
+    public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> playerInfoList_;
     /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> getPlayerInfoListList() {
       return playerInfoList_;
     }
     /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder> 
@@ -199,26 +209,68 @@ public final class CoinCollectStageInfoOuterClass {
       return playerInfoList_;
     }
     /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
      */
     @java.lang.Override
     public int getPlayerInfoListCount() {
       return playerInfoList_.size();
     }
     /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo getPlayerInfoList(int index) {
       return playerInfoList_.get(index);
     }
     /**
-     * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder getPlayerInfoListOrBuilder(
         int index) {
       return playerInfoList_.get(index);
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 2;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int NIIEFNIEECK_FIELD_NUMBER = 1;
+    private int nIIEFNIEECK_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NIIEFNIEECK = 1;</code>
+     * @return The nIIEFNIEECK.
+     */
+    @java.lang.Override
+    public int getNIIEFNIEECK() {
+      return nIIEFNIEECK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -235,14 +287,14 @@ public final class CoinCollectStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playIndex_ != 0) {
-        output.writeUInt32(3, playIndex_);
-      }
-      for (int i = 0; i < playerInfoList_.size(); i++) {
-        output.writeMessage(5, playerInfoList_.get(i));
+      if (nIIEFNIEECK_ != 0) {
+        output.writeUInt32(1, nIIEFNIEECK_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(2, levelId_);
+      }
+      for (int i = 0; i < playerInfoList_.size(); i++) {
+        output.writeMessage(13, playerInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -253,17 +305,17 @@ public final class CoinCollectStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playIndex_ != 0) {
+      if (nIIEFNIEECK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playIndex_);
-      }
-      for (int i = 0; i < playerInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, playerInfoList_.get(i));
+          .computeUInt32Size(1, nIIEFNIEECK_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(2, levelId_);
+      }
+      for (int i = 0; i < playerInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, playerInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,12 +332,12 @@ public final class CoinCollectStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo other = (emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
       if (!getPlayerInfoListList()
           .equals(other.getPlayerInfoListList())) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getNIIEFNIEECK()
+          != other.getNIIEFNIEECK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,14 +349,14 @@ public final class CoinCollectStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
       if (getPlayerInfoListCount() > 0) {
         hash = (37 * hash) + PLAYER_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfoListList().hashCode();
       }
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + NIIEFNIEECK_FIELD_NUMBER;
+      hash = (53 * hash) + getNIIEFNIEECK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -401,10 +453,6 @@ public final class CoinCollectStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LEJNOEMDAHE
-     * </pre>
-     *
      * Protobuf type {@code CoinCollectStageInfo}
      */
     public static final class Builder extends
@@ -443,16 +491,16 @@ public final class CoinCollectStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
-        playIndex_ = 0;
-
         if (playerInfoListBuilder_ == null) {
           playerInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           playerInfoListBuilder_.clear();
         }
+        levelId_ = 0;
+
+        nIIEFNIEECK_ = 0;
+
         return this;
       }
 
@@ -480,8 +528,6 @@ public final class CoinCollectStageInfoOuterClass {
       public emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo buildPartial() {
         emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo result = new emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo(this);
         int from_bitField0_ = bitField0_;
-        result.levelId_ = levelId_;
-        result.playIndex_ = playIndex_;
         if (playerInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             playerInfoList_ = java.util.Collections.unmodifiableList(playerInfoList_);
@@ -491,6 +537,8 @@ public final class CoinCollectStageInfoOuterClass {
         } else {
           result.playerInfoList_ = playerInfoListBuilder_.build();
         }
+        result.levelId_ = levelId_;
+        result.nIIEFNIEECK_ = nIIEFNIEECK_;
         onBuilt();
         return result;
       }
@@ -539,12 +587,6 @@ public final class CoinCollectStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo other) {
         if (other == emu.grasscutter.net.proto.CoinCollectStageInfoOuterClass.CoinCollectStageInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
-        }
         if (playerInfoListBuilder_ == null) {
           if (!other.playerInfoList_.isEmpty()) {
             if (playerInfoList_.isEmpty()) {
@@ -570,6 +612,12 @@ public final class CoinCollectStageInfoOuterClass {
               playerInfoListBuilder_.addAllMessages(other.playerInfoList_);
             }
           }
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getNIIEFNIEECK() != 0) {
+          setNIIEFNIEECK(other.getNIIEFNIEECK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -601,68 +649,6 @@ public final class CoinCollectStageInfoOuterClass {
       }
       private int bitField0_;
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playIndex_ ;
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return The playIndex.
-       */
-      @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @param value The playIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayIndex(int value) {
-        
-        playIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayIndex() {
-        
-        playIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> playerInfoList_ =
         java.util.Collections.emptyList();
       private void ensurePlayerInfoListIsMutable() {
@@ -676,7 +662,11 @@ public final class CoinCollectStageInfoOuterClass {
           emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder> playerInfoListBuilder_;
 
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> getPlayerInfoListList() {
         if (playerInfoListBuilder_ == null) {
@@ -686,7 +676,11 @@ public final class CoinCollectStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public int getPlayerInfoListCount() {
         if (playerInfoListBuilder_ == null) {
@@ -696,7 +690,11 @@ public final class CoinCollectStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo getPlayerInfoList(int index) {
         if (playerInfoListBuilder_ == null) {
@@ -706,7 +704,11 @@ public final class CoinCollectStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder setPlayerInfoList(
           int index, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo value) {
@@ -723,7 +725,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder setPlayerInfoList(
           int index, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder builderForValue) {
@@ -737,7 +743,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder addPlayerInfoList(emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo value) {
         if (playerInfoListBuilder_ == null) {
@@ -753,7 +763,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder addPlayerInfoList(
           int index, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo value) {
@@ -770,7 +784,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder addPlayerInfoList(
           emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder builderForValue) {
@@ -784,7 +802,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder addPlayerInfoList(
           int index, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder builderForValue) {
@@ -798,7 +820,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder addAllPlayerInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo> values) {
@@ -813,7 +839,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder clearPlayerInfoList() {
         if (playerInfoListBuilder_ == null) {
@@ -826,7 +856,11 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public Builder removePlayerInfoList(int index) {
         if (playerInfoListBuilder_ == null) {
@@ -839,14 +873,22 @@ public final class CoinCollectStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder getPlayerInfoListBuilder(
           int index) {
         return getPlayerInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder getPlayerInfoListOrBuilder(
           int index) {
@@ -856,7 +898,11 @@ public final class CoinCollectStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfoOrBuilder> 
            getPlayerInfoListOrBuilderList() {
@@ -867,14 +913,22 @@ public final class CoinCollectStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder addPlayerInfoListBuilder() {
         return getPlayerInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder addPlayerInfoListBuilder(
           int index) {
@@ -882,7 +936,11 @@ public final class CoinCollectStageInfoOuterClass {
             index, emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoinCollectPlayerInfo player_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .CoinCollectPlayerInfo player_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.CoinCollectPlayerInfo.Builder> 
            getPlayerInfoListBuilderList() {
@@ -901,6 +959,92 @@ public final class CoinCollectStageInfoOuterClass {
           playerInfoList_ = null;
         }
         return playerInfoListBuilder_;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 2;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 2;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nIIEFNIEECK_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 1;</code>
+       * @return The nIIEFNIEECK.
+       */
+      @java.lang.Override
+      public int getNIIEFNIEECK() {
+        return nIIEFNIEECK_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 1;</code>
+       * @param value The nIIEFNIEECK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNIIEFNIEECK(int value) {
+        
+        nIIEFNIEECK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIIEFNIEECK = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNIIEFNIEECK() {
+        
+        nIIEFNIEECK_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -970,11 +1114,11 @@ public final class CoinCollectStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032CoinCollectStageInfo.proto\032\033CoinCollec" +
-      "tPlayerInfo.proto\"n\n\024CoinCollectStageInf" +
-      "o\022\020\n\010level_id\030\t \001(\r\022\022\n\nplay_index\030\003 \001(\r\022" +
-      "0\n\020player_info_list\030\005 \003(\0132\026.CoinCollectP" +
-      "layerInfoB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "tPlayerInfo.proto\"o\n\024CoinCollectStageInf" +
+      "o\0220\n\020player_info_list\030\r \003(\0132\026.CoinCollec" +
+      "tPlayerInfo\022\020\n\010level_id\030\002 \001(\r\022\023\n\013NIIEFNI" +
+      "EECK\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -986,7 +1130,7 @@ public final class CoinCollectStageInfoOuterClass {
     internal_static_CoinCollectStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoinCollectStageInfo_descriptor,
-        new java.lang.String[] { "LevelId", "PlayIndex", "PlayerInfoList", });
+        new java.lang.String[] { "PlayerInfoList", "LevelId", "NIIEFNIEECK", });
     emu.grasscutter.net.proto.CoinCollectPlayerInfoOuterClass.getDescriptor();
   }
 

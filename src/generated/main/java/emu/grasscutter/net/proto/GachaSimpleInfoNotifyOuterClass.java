@@ -19,14 +19,18 @@ public final class GachaSimpleInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new = 13;</code>
      * @return The isNew.
      */
     boolean getIsNew();
   }
   /**
    * <pre>
-   * CmdId: 23345
+   * CmdId: 4492
    * </pre>
    *
    * Protobuf type {@code GachaSimpleInfoNotify}
@@ -73,7 +77,7 @@ public final class GachaSimpleInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 104: {
 
               isNew_ = input.readBool();
               break;
@@ -110,10 +114,14 @@ public final class GachaSimpleInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GachaSimpleInfoNotifyOuterClass.GachaSimpleInfoNotify.class, emu.grasscutter.net.proto.GachaSimpleInfoNotifyOuterClass.GachaSimpleInfoNotify.Builder.class);
     }
 
-    public static final int IS_NEW_FIELD_NUMBER = 2;
+    public static final int IS_NEW_FIELD_NUMBER = 13;
     private boolean isNew_;
     /**
-     * <code>bool is_new = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new = 13;</code>
      * @return The isNew.
      */
     @java.lang.Override
@@ -136,7 +144,7 @@ public final class GachaSimpleInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isNew_ != false) {
-        output.writeBool(2, isNew_);
+        output.writeBool(13, isNew_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +157,7 @@ public final class GachaSimpleInfoNotifyOuterClass {
       size = 0;
       if (isNew_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNew_);
+          .computeBoolSize(13, isNew_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,7 +287,7 @@ public final class GachaSimpleInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23345
+     * CmdId: 4492
      * </pre>
      *
      * Protobuf type {@code GachaSimpleInfoNotify}
@@ -430,7 +438,11 @@ public final class GachaSimpleInfoNotifyOuterClass {
 
       private boolean isNew_ ;
       /**
-       * <code>bool is_new = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new = 13;</code>
        * @return The isNew.
        */
       @java.lang.Override
@@ -438,7 +450,11 @@ public final class GachaSimpleInfoNotifyOuterClass {
         return isNew_;
       }
       /**
-       * <code>bool is_new = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new = 13;</code>
        * @param value The isNew to set.
        * @return This builder for chaining.
        */
@@ -449,7 +465,11 @@ public final class GachaSimpleInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNew() {
@@ -526,7 +546,7 @@ public final class GachaSimpleInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GachaSimpleInfoNotify.proto\"\'\n\025GachaSi" +
-      "mpleInfoNotify\022\016\n\006is_new\030\002 \001(\010B\033\n\031emu.gr" +
+      "mpleInfoNotify\022\016\n\006is_new\030\r \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

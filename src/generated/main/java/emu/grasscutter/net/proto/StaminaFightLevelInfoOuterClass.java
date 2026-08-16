@@ -19,28 +19,28 @@ public final class StaminaFightLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>uint32 ONCPKECLODA = 5;</code>
+     * @return The oNCPKECLODA.
+     */
+    int getONCPKECLODA();
+
+    /**
+     * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 IIFGKKNFBHI = 11;</code>
-     * @return The iIFGKKNFBHI.
-     */
-    int getIIFGKKNFBHI();
-
-    /**
-     * <code>uint32 min_cost_time = 14;</code>
-     * @return The minCostTime.
-     */
-    int getMinCostTime();
-
-    /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 DKMIMMKLEFP = 12;</code>
+     * @return The dKMIMMKLEFP.
+     */
+    int getDKMIMMKLEFP();
   }
   /**
    * Protobuf type {@code StaminaFightLevelInfo}
@@ -87,24 +87,24 @@ public final class StaminaFightLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
-              levelId_ = input.readUInt32();
+              oNCPKECLODA_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 88: {
+            case 72: {
 
-              iIFGKKNFBHI_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
-              minCostTime_ = input.readUInt32();
+              dKMIMMKLEFP_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,21 @@ public final class StaminaFightLevelInfoOuterClass {
               emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.class, emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int ONCPKECLODA_FIELD_NUMBER = 5;
+    private int oNCPKECLODA_;
+    /**
+     * <code>uint32 ONCPKECLODA = 5;</code>
+     * @return The oNCPKECLODA.
+     */
+    @java.lang.Override
+    public int getONCPKECLODA() {
+      return oNCPKECLODA_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -150,37 +161,26 @@ public final class StaminaFightLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int IIFGKKNFBHI_FIELD_NUMBER = 11;
-    private int iIFGKKNFBHI_;
-    /**
-     * <code>uint32 IIFGKKNFBHI = 11;</code>
-     * @return The iIFGKKNFBHI.
-     */
-    @java.lang.Override
-    public int getIIFGKKNFBHI() {
-      return iIFGKKNFBHI_;
-    }
-
-    public static final int MIN_COST_TIME_FIELD_NUMBER = 14;
-    private int minCostTime_;
-    /**
-     * <code>uint32 min_cost_time = 14;</code>
-     * @return The minCostTime.
-     */
-    @java.lang.Override
-    public int getMinCostTime() {
-      return minCostTime_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int DKMIMMKLEFP_FIELD_NUMBER = 12;
+    private int dKMIMMKLEFP_;
+    /**
+     * <code>uint32 DKMIMMKLEFP = 12;</code>
+     * @return The dKMIMMKLEFP.
+     */
+    @java.lang.Override
+    public int getDKMIMMKLEFP() {
+      return dKMIMMKLEFP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class StaminaFightLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(7, levelId_);
+      if (oNCPKECLODA_ != 0) {
+        output.writeUInt32(5, oNCPKECLODA_);
       }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(7, isOpen_);
       }
-      if (iIFGKKNFBHI_ != 0) {
-        output.writeUInt32(11, iIFGKKNFBHI_);
+      if (levelId_ != 0) {
+        output.writeUInt32(9, levelId_);
       }
-      if (minCostTime_ != 0) {
-        output.writeUInt32(14, minCostTime_);
+      if (dKMIMMKLEFP_ != 0) {
+        output.writeUInt32(12, dKMIMMKLEFP_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class StaminaFightLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (oNCPKECLODA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, levelId_);
+          .computeUInt32Size(5, oNCPKECLODA_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(7, isOpen_);
       }
-      if (iIFGKKNFBHI_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, iIFGKKNFBHI_);
+          .computeUInt32Size(9, levelId_);
       }
-      if (minCostTime_ != 0) {
+      if (dKMIMMKLEFP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, minCostTime_);
+          .computeUInt32Size(12, dKMIMMKLEFP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class StaminaFightLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo other = (emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo) obj;
 
+      if (getONCPKECLODA()
+          != other.getONCPKECLODA()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getIIFGKKNFBHI()
-          != other.getIIFGKKNFBHI()) return false;
-      if (getMinCostTime()
-          != other.getMinCostTime()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getDKMIMMKLEFP()
+          != other.getDKMIMMKLEFP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class StaminaFightLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ONCPKECLODA_FIELD_NUMBER;
+      hash = (53 * hash) + getONCPKECLODA();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + IIFGKKNFBHI_FIELD_NUMBER;
-      hash = (53 * hash) + getIIFGKKNFBHI();
-      hash = (37 * hash) + MIN_COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getMinCostTime();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + DKMIMMKLEFP_FIELD_NUMBER;
+      hash = (53 * hash) + getDKMIMMKLEFP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class StaminaFightLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        oNCPKECLODA_ = 0;
+
         isOpen_ = false;
 
-        iIFGKKNFBHI_ = 0;
-
-        minCostTime_ = 0;
-
         levelId_ = 0;
+
+        dKMIMMKLEFP_ = 0;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class StaminaFightLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo buildPartial() {
         emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo result = new emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo(this);
+        result.oNCPKECLODA_ = oNCPKECLODA_;
         result.isOpen_ = isOpen_;
-        result.iIFGKKNFBHI_ = iIFGKKNFBHI_;
-        result.minCostTime_ = minCostTime_;
         result.levelId_ = levelId_;
+        result.dKMIMMKLEFP_ = dKMIMMKLEFP_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class StaminaFightLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo other) {
         if (other == emu.grasscutter.net.proto.StaminaFightLevelInfoOuterClass.StaminaFightLevelInfo.getDefaultInstance()) return this;
+        if (other.getONCPKECLODA() != 0) {
+          setONCPKECLODA(other.getONCPKECLODA());
+        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getIIFGKKNFBHI() != 0) {
-          setIIFGKKNFBHI(other.getIIFGKKNFBHI());
-        }
-        if (other.getMinCostTime() != 0) {
-          setMinCostTime(other.getMinCostTime());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getDKMIMMKLEFP() != 0) {
+          setDKMIMMKLEFP(other.getDKMIMMKLEFP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,9 +537,40 @@ public final class StaminaFightLevelInfoOuterClass {
         return this;
       }
 
+      private int oNCPKECLODA_ ;
+      /**
+       * <code>uint32 ONCPKECLODA = 5;</code>
+       * @return The oNCPKECLODA.
+       */
+      @java.lang.Override
+      public int getONCPKECLODA() {
+        return oNCPKECLODA_;
+      }
+      /**
+       * <code>uint32 ONCPKECLODA = 5;</code>
+       * @param value The oNCPKECLODA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setONCPKECLODA(int value) {
+        
+        oNCPKECLODA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 ONCPKECLODA = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearONCPKECLODA() {
+        
+        oNCPKECLODA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -547,7 +578,7 @@ public final class StaminaFightLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -558,7 +589,7 @@ public final class StaminaFightLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -568,71 +599,9 @@ public final class StaminaFightLevelInfoOuterClass {
         return this;
       }
 
-      private int iIFGKKNFBHI_ ;
-      /**
-       * <code>uint32 IIFGKKNFBHI = 11;</code>
-       * @return The iIFGKKNFBHI.
-       */
-      @java.lang.Override
-      public int getIIFGKKNFBHI() {
-        return iIFGKKNFBHI_;
-      }
-      /**
-       * <code>uint32 IIFGKKNFBHI = 11;</code>
-       * @param value The iIFGKKNFBHI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIIFGKKNFBHI(int value) {
-        
-        iIFGKKNFBHI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IIFGKKNFBHI = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIIFGKKNFBHI() {
-        
-        iIFGKKNFBHI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int minCostTime_ ;
-      /**
-       * <code>uint32 min_cost_time = 14;</code>
-       * @return The minCostTime.
-       */
-      @java.lang.Override
-      public int getMinCostTime() {
-        return minCostTime_;
-      }
-      /**
-       * <code>uint32 min_cost_time = 14;</code>
-       * @param value The minCostTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMinCostTime(int value) {
-        
-        minCostTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 min_cost_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMinCostTime() {
-        
-        minCostTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -640,7 +609,7 @@ public final class StaminaFightLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -651,12 +620,43 @@ public final class StaminaFightLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dKMIMMKLEFP_ ;
+      /**
+       * <code>uint32 DKMIMMKLEFP = 12;</code>
+       * @return The dKMIMMKLEFP.
+       */
+      @java.lang.Override
+      public int getDKMIMMKLEFP() {
+        return dKMIMMKLEFP_;
+      }
+      /**
+       * <code>uint32 DKMIMMKLEFP = 12;</code>
+       * @param value The dKMIMMKLEFP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDKMIMMKLEFP(int value) {
+        
+        dKMIMMKLEFP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DKMIMMKLEFP = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDKMIMMKLEFP() {
+        
+        dKMIMMKLEFP_ = 0;
         onChanged();
         return this;
       }
@@ -727,11 +727,11 @@ public final class StaminaFightLevelInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033StaminaFightLevelInfo.proto\"f\n\025Stamina" +
-      "FightLevelInfo\022\017\n\007is_open\030\t \001(\010\022\023\n\013IIFGK" +
-      "KNFBHI\030\013 \001(\r\022\025\n\rmin_cost_time\030\016 \001(\r\022\020\n\010l" +
-      "evel_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\033StaminaFightLevelInfo.proto\"d\n\025Stamina" +
+      "FightLevelInfo\022\023\n\013ONCPKECLODA\030\005 \001(\r\022\017\n\007i" +
+      "s_open\030\007 \001(\010\022\020\n\010level_id\030\t \001(\r\022\023\n\013DKMIMM" +
+      "KLEFP\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class StaminaFightLevelInfoOuterClass {
     internal_static_StaminaFightLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StaminaFightLevelInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "IIFGKKNFBHI", "MinCostTime", "LevelId", });
+        new java.lang.String[] { "ONCPKECLODA", "IsOpen", "LevelId", "DKMIMMKLEFP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

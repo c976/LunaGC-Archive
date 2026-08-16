@@ -19,24 +19,23 @@ public final class HuntingSuccessNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      * @return Whether the huntingPair field is set.
      */
     boolean hasHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      * @return The huntingPair.
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      */
     emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 28721
-   * Obf: IPJFJJENICP
+   * CmdId: 275
    * </pre>
    *
    * Protobuf type {@code HuntingSuccessNotify}
@@ -83,7 +82,7 @@ public final class HuntingSuccessNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 74: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -128,10 +127,10 @@ public final class HuntingSuccessNotifyOuterClass {
               emu.grasscutter.net.proto.HuntingSuccessNotifyOuterClass.HuntingSuccessNotify.class, emu.grasscutter.net.proto.HuntingSuccessNotifyOuterClass.HuntingSuccessNotify.Builder.class);
     }
 
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 1;
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      * @return Whether the huntingPair field is set.
      */
     @java.lang.Override
@@ -139,7 +138,7 @@ public final class HuntingSuccessNotifyOuterClass {
       return huntingPair_ != null;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      * @return The huntingPair.
      */
     @java.lang.Override
@@ -147,7 +146,7 @@ public final class HuntingSuccessNotifyOuterClass {
       return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
     }
     /**
-     * <code>.HuntingPair hunting_pair = 1;</code>
+     * <code>.HuntingPair hunting_pair = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
@@ -169,7 +168,7 @@ public final class HuntingSuccessNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (huntingPair_ != null) {
-        output.writeMessage(1, getHuntingPair());
+        output.writeMessage(9, getHuntingPair());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +181,7 @@ public final class HuntingSuccessNotifyOuterClass {
       size = 0;
       if (huntingPair_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getHuntingPair());
+          .computeMessageSize(9, getHuntingPair());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +315,7 @@ public final class HuntingSuccessNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28721
-     * Obf: IPJFJJENICP
+     * CmdId: 275
      * </pre>
      *
      * Protobuf type {@code HuntingSuccessNotify}
@@ -478,14 +476,14 @@ public final class HuntingSuccessNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -496,7 +494,7 @@ public final class HuntingSuccessNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -512,7 +510,7 @@ public final class HuntingSuccessNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -526,7 +524,7 @@ public final class HuntingSuccessNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -544,7 +542,7 @@ public final class HuntingSuccessNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class HuntingSuccessNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -566,7 +564,7 @@ public final class HuntingSuccessNotifyOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -577,7 +575,7 @@ public final class HuntingSuccessNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 1;</code>
+       * <code>.HuntingPair hunting_pair = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -661,7 +659,7 @@ public final class HuntingSuccessNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032HuntingSuccessNotify.proto\032\021HuntingPai" +
       "r.proto\":\n\024HuntingSuccessNotify\022\"\n\014hunti" +
-      "ng_pair\030\001 \001(\0132\014.HuntingPairB\033\n\031emu.grass" +
+      "ng_pair\030\t \001(\0132\014.HuntingPairB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

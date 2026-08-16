@@ -19,20 +19,27 @@ public final class ClientReconnectNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ClientReconnectReason reason = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ClientReconnectReason reason = 8;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.ClientReconnectReason reason = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ClientReconnectReason reason = 8;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason getReason();
   }
   /**
    * <pre>
-   * CmdId: 650
-   * Obf: FIDFKFNOCEC
+   * CmdId: 8494
    * </pre>
    *
    * Protobuf type {@code ClientReconnectNotify}
@@ -80,7 +87,7 @@ public final class ClientReconnectNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 64: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -118,17 +125,25 @@ public final class ClientReconnectNotifyOuterClass {
               emu.grasscutter.net.proto.ClientReconnectNotifyOuterClass.ClientReconnectNotify.class, emu.grasscutter.net.proto.ClientReconnectNotifyOuterClass.ClientReconnectNotify.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 10;
+    public static final int REASON_FIELD_NUMBER = 8;
     private int reason_;
     /**
-     * <code>.ClientReconnectReason reason = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ClientReconnectReason reason = 8;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.ClientReconnectReason reason = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ClientReconnectReason reason = 8;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason getReason() {
@@ -152,7 +167,7 @@ public final class ClientReconnectNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNNECT_NONE.getNumber()) {
-        output.writeEnum(10, reason_);
+        output.writeEnum(8, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -165,7 +180,7 @@ public final class ClientReconnectNotifyOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.CLIENT_RECONNNECT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, reason_);
+          .computeEnumSize(8, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -293,8 +308,7 @@ public final class ClientReconnectNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 650
-     * Obf: FIDFKFNOCEC
+     * CmdId: 8494
      * </pre>
      *
      * Protobuf type {@code ClientReconnectNotify}
@@ -445,14 +459,22 @@ public final class ClientReconnectNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.ClientReconnectReason reason = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ClientReconnectReason reason = 8;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.ClientReconnectReason reason = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ClientReconnectReason reason = 8;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -463,7 +485,11 @@ public final class ClientReconnectNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ClientReconnectReason reason = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ClientReconnectReason reason = 8;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -473,7 +499,11 @@ public final class ClientReconnectNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.ClientReconnectReasonOuterClass.ClientReconnectReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ClientReconnectReason reason = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ClientReconnectReason reason = 8;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -487,7 +517,11 @@ public final class ClientReconnectNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ClientReconnectReason reason = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ClientReconnectReason reason = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -565,7 +599,7 @@ public final class ClientReconnectNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033ClientReconnectNotify.proto\032\033ClientRec" +
       "onnectReason.proto\"?\n\025ClientReconnectNot" +
-      "ify\022&\n\006reason\030\n \001(\0162\026.ClientReconnectRea" +
+      "ify\022&\n\006reason\030\010 \001(\0162\026.ClientReconnectRea" +
       "sonB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

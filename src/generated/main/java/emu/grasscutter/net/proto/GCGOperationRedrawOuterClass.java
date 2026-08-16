@@ -19,27 +19,23 @@ public final class GCGOperationRedrawOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @return A list containing the cardList.
      */
     java.util.List<java.lang.Integer> getCardListList();
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @return The count of cardList.
      */
     int getCardListCount();
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
     int getCardList(int index);
   }
   /**
-   * <pre>
-   * Obf: EBHGFCMJEFN
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationRedraw}
    */
   public static final class GCGOperationRedraw extends
@@ -86,7 +82,7 @@ public final class GCGOperationRedrawOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -94,7 +90,7 @@ public final class GCGOperationRedrawOuterClass {
               cardList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,10 +138,10 @@ public final class GCGOperationRedrawOuterClass {
               emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.class, emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder.class);
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 7;
+    public static final int CARD_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList cardList_;
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @return A list containing the cardList.
      */
     @java.lang.Override
@@ -154,14 +150,14 @@ public final class GCGOperationRedrawOuterClass {
       return cardList_;
     }
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @return The count of cardList.
      */
     public int getCardListCount() {
       return cardList_.size();
     }
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 15;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
@@ -186,7 +182,7 @@ public final class GCGOperationRedrawOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCardListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(cardListMemoizedSerializedSize);
       }
       for (int i = 0; i < cardList_.size(); i++) {
@@ -343,10 +339,6 @@ public final class GCGOperationRedrawOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EBHGFCMJEFN
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationRedraw}
      */
     public static final class Builder extends
@@ -514,7 +506,7 @@ public final class GCGOperationRedrawOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @return A list containing the cardList.
        */
       public java.util.List<java.lang.Integer>
@@ -523,14 +515,14 @@ public final class GCGOperationRedrawOuterClass {
                  java.util.Collections.unmodifiableList(cardList_) : cardList_;
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @return The count of cardList.
        */
       public int getCardListCount() {
         return cardList_.size();
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @param index The index of the element to return.
        * @return The cardList at the given index.
        */
@@ -538,7 +530,7 @@ public final class GCGOperationRedrawOuterClass {
         return cardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The cardList to set.
        * @return This builder for chaining.
@@ -551,7 +543,7 @@ public final class GCGOperationRedrawOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @param value The cardList to add.
        * @return This builder for chaining.
        */
@@ -562,7 +554,7 @@ public final class GCGOperationRedrawOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @param values The cardList to add.
        * @return This builder for chaining.
        */
@@ -575,7 +567,7 @@ public final class GCGOperationRedrawOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 card_list = 7;</code>
+       * <code>repeated uint32 card_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardList() {
@@ -652,7 +644,7 @@ public final class GCGOperationRedrawOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGOperationRedraw.proto\"\'\n\022GCGOperati" +
-      "onRedraw\022\021\n\tcard_list\030\007 \003(\rB\033\n\031emu.grass" +
+      "onRedraw\022\021\n\tcard_list\030\017 \003(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

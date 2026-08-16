@@ -19,13 +19,13 @@ public final class OfficialCustomDungeonOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HOEEHGIEBOF = 13;</code>
-     * @return The hOEEHGIEBOF.
+     * <code>uint32 win_times = 2;</code>
+     * @return The winTimes.
      */
-    int getHOEEHGIEBOF();
+    int getWinTimes();
 
     /**
-     * <code>uint32 dungeon_id = 9;</code>
+     * <code>uint32 dungeon_id = 14;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
@@ -75,14 +75,14 @@ public final class OfficialCustomDungeonOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
-              dungeonId_ = input.readUInt32();
+              winTimes_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
-              hOEEHGIEBOF_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,21 +117,21 @@ public final class OfficialCustomDungeonOuterClass {
               emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.class, emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.Builder.class);
     }
 
-    public static final int HOEEHGIEBOF_FIELD_NUMBER = 13;
-    private int hOEEHGIEBOF_;
+    public static final int WIN_TIMES_FIELD_NUMBER = 2;
+    private int winTimes_;
     /**
-     * <code>uint32 HOEEHGIEBOF = 13;</code>
-     * @return The hOEEHGIEBOF.
+     * <code>uint32 win_times = 2;</code>
+     * @return The winTimes.
      */
     @java.lang.Override
-    public int getHOEEHGIEBOF() {
-      return hOEEHGIEBOF_;
+    public int getWinTimes() {
+      return winTimes_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 14;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 9;</code>
+     * <code>uint32 dungeon_id = 14;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class OfficialCustomDungeonOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(9, dungeonId_);
+      if (winTimes_ != 0) {
+        output.writeUInt32(2, winTimes_);
       }
-      if (hOEEHGIEBOF_ != 0) {
-        output.writeUInt32(13, hOEEHGIEBOF_);
+      if (dungeonId_ != 0) {
+        output.writeUInt32(14, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class OfficialCustomDungeonOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (winTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, winTimes_);
+      }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dungeonId_);
-      }
-      if (hOEEHGIEBOF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hOEEHGIEBOF_);
+          .computeUInt32Size(14, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,8 +191,8 @@ public final class OfficialCustomDungeonOuterClass {
       }
       emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon other = (emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon) obj;
 
-      if (getHOEEHGIEBOF()
-          != other.getHOEEHGIEBOF()) return false;
+      if (getWinTimes()
+          != other.getWinTimes()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -206,8 +206,8 @@ public final class OfficialCustomDungeonOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HOEEHGIEBOF_FIELD_NUMBER;
-      hash = (53 * hash) + getHOEEHGIEBOF();
+      hash = (37 * hash) + WIN_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getWinTimes();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -343,7 +343,7 @@ public final class OfficialCustomDungeonOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hOEEHGIEBOF_ = 0;
+        winTimes_ = 0;
 
         dungeonId_ = 0;
 
@@ -373,7 +373,7 @@ public final class OfficialCustomDungeonOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon buildPartial() {
         emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon result = new emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon(this);
-        result.hOEEHGIEBOF_ = hOEEHGIEBOF_;
+        result.winTimes_ = winTimes_;
         result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
@@ -423,8 +423,8 @@ public final class OfficialCustomDungeonOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon other) {
         if (other == emu.grasscutter.net.proto.OfficialCustomDungeonOuterClass.OfficialCustomDungeon.getDefaultInstance()) return this;
-        if (other.getHOEEHGIEBOF() != 0) {
-          setHOEEHGIEBOF(other.getHOEEHGIEBOF());
+        if (other.getWinTimes() != 0) {
+          setWinTimes(other.getWinTimes());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
@@ -458,40 +458,40 @@ public final class OfficialCustomDungeonOuterClass {
         return this;
       }
 
-      private int hOEEHGIEBOF_ ;
+      private int winTimes_ ;
       /**
-       * <code>uint32 HOEEHGIEBOF = 13;</code>
-       * @return The hOEEHGIEBOF.
+       * <code>uint32 win_times = 2;</code>
+       * @return The winTimes.
        */
       @java.lang.Override
-      public int getHOEEHGIEBOF() {
-        return hOEEHGIEBOF_;
+      public int getWinTimes() {
+        return winTimes_;
       }
       /**
-       * <code>uint32 HOEEHGIEBOF = 13;</code>
-       * @param value The hOEEHGIEBOF to set.
+       * <code>uint32 win_times = 2;</code>
+       * @param value The winTimes to set.
        * @return This builder for chaining.
        */
-      public Builder setHOEEHGIEBOF(int value) {
+      public Builder setWinTimes(int value) {
         
-        hOEEHGIEBOF_ = value;
+        winTimes_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HOEEHGIEBOF = 13;</code>
+       * <code>uint32 win_times = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHOEEHGIEBOF() {
+      public Builder clearWinTimes() {
         
-        hOEEHGIEBOF_ = 0;
+        winTimes_ = 0;
         onChanged();
         return this;
       }
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class OfficialCustomDungeonOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class OfficialCustomDungeonOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -586,10 +586,10 @@ public final class OfficialCustomDungeonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033OfficialCustomDungeon.proto\"@\n\025Officia" +
-      "lCustomDungeon\022\023\n\013HOEEHGIEBOF\030\r \001(\r\022\022\n\nd" +
-      "ungeon_id\030\t \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\033OfficialCustomDungeon.proto\">\n\025Officia" +
+      "lCustomDungeon\022\021\n\twin_times\030\002 \001(\r\022\022\n\ndun" +
+      "geon_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class OfficialCustomDungeonOuterClass {
     internal_static_OfficialCustomDungeon_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OfficialCustomDungeon_descriptor,
-        new java.lang.String[] { "HOEEHGIEBOF", "DungeonId", });
+        new java.lang.String[] { "WinTimes", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

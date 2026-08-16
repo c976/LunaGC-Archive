@@ -19,27 +19,26 @@ public final class BlessingGiveFriendPicRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 pic_id = 13;</code>
-     * @return The picId.
+     * <code>uint32 PLDGPHIEEDJ = 12;</code>
+     * @return The pLDGPHIEEDJ.
      */
-    int getPicId();
+    int getPLDGPHIEEDJ();
   }
   /**
    * <pre>
-   * CmdId: 28964
-   * Obf: MCIIDMDIKBG
+   * CmdId: 29191
    * </pre>
    *
    * Protobuf type {@code BlessingGiveFriendPicRsp}
@@ -86,19 +85,19 @@ public final class BlessingGiveFriendPicRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
             case 96: {
 
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              picId_ = input.readUInt32();
+              pLDGPHIEEDJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class BlessingGiveFriendPicRspOuterClass {
               emu.grasscutter.net.proto.BlessingGiveFriendPicRspOuterClass.BlessingGiveFriendPicRsp.class, emu.grasscutter.net.proto.BlessingGiveFriendPicRspOuterClass.BlessingGiveFriendPicRsp.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 12;
+    public static final int UID_FIELD_NUMBER = 2;
     private int uid_;
     /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -144,10 +143,10 @@ public final class BlessingGiveFriendPicRspOuterClass {
       return uid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +154,15 @@ public final class BlessingGiveFriendPicRspOuterClass {
       return retcode_;
     }
 
-    public static final int PIC_ID_FIELD_NUMBER = 13;
-    private int picId_;
+    public static final int PLDGPHIEEDJ_FIELD_NUMBER = 12;
+    private int pLDGPHIEEDJ_;
     /**
-     * <code>uint32 pic_id = 13;</code>
-     * @return The picId.
+     * <code>uint32 PLDGPHIEEDJ = 12;</code>
+     * @return The pLDGPHIEEDJ.
      */
     @java.lang.Override
-    public int getPicId() {
-      return picId_;
+    public int getPLDGPHIEEDJ() {
+      return pLDGPHIEEDJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class BlessingGiveFriendPicRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (uid_ != 0) {
-        output.writeUInt32(12, uid_);
+        output.writeUInt32(2, uid_);
       }
-      if (picId_ != 0) {
-        output.writeUInt32(13, picId_);
+      if (retcode_ != 0) {
+        output.writeInt32(4, retcode_);
+      }
+      if (pLDGPHIEEDJ_ != 0) {
+        output.writeUInt32(12, pLDGPHIEEDJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class BlessingGiveFriendPicRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, uid_);
+          .computeUInt32Size(2, uid_);
       }
-      if (picId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, picId_);
+          .computeInt32Size(4, retcode_);
+      }
+      if (pLDGPHIEEDJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, pLDGPHIEEDJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -229,8 +228,8 @@ public final class BlessingGiveFriendPicRspOuterClass {
           != other.getUid()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getPicId()
-          != other.getPicId()) return false;
+      if (getPLDGPHIEEDJ()
+          != other.getPLDGPHIEEDJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,8 +245,8 @@ public final class BlessingGiveFriendPicRspOuterClass {
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + PIC_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPicId();
+      hash = (37 * hash) + PLDGPHIEEDJ_FIELD_NUMBER;
+      hash = (53 * hash) + getPLDGPHIEEDJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28964
-     * Obf: MCIIDMDIKBG
+     * CmdId: 29191
      * </pre>
      *
      * Protobuf type {@code BlessingGiveFriendPicRsp}
@@ -390,7 +388,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
 
         retcode_ = 0;
 
-        picId_ = 0;
+        pLDGPHIEEDJ_ = 0;
 
         return this;
       }
@@ -420,7 +418,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
         emu.grasscutter.net.proto.BlessingGiveFriendPicRspOuterClass.BlessingGiveFriendPicRsp result = new emu.grasscutter.net.proto.BlessingGiveFriendPicRspOuterClass.BlessingGiveFriendPicRsp(this);
         result.uid_ = uid_;
         result.retcode_ = retcode_;
-        result.picId_ = picId_;
+        result.pLDGPHIEEDJ_ = pLDGPHIEEDJ_;
         onBuilt();
         return result;
       }
@@ -475,8 +473,8 @@ public final class BlessingGiveFriendPicRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getPicId() != 0) {
-          setPicId(other.getPicId());
+        if (other.getPLDGPHIEEDJ() != 0) {
+          setPLDGPHIEEDJ(other.getPLDGPHIEEDJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +507,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 2;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -517,7 +515,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 2;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -528,7 +526,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -540,7 +538,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +546,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,7 +557,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -569,33 +567,33 @@ public final class BlessingGiveFriendPicRspOuterClass {
         return this;
       }
 
-      private int picId_ ;
+      private int pLDGPHIEEDJ_ ;
       /**
-       * <code>uint32 pic_id = 13;</code>
-       * @return The picId.
+       * <code>uint32 PLDGPHIEEDJ = 12;</code>
+       * @return The pLDGPHIEEDJ.
        */
       @java.lang.Override
-      public int getPicId() {
-        return picId_;
+      public int getPLDGPHIEEDJ() {
+        return pLDGPHIEEDJ_;
       }
       /**
-       * <code>uint32 pic_id = 13;</code>
-       * @param value The picId to set.
+       * <code>uint32 PLDGPHIEEDJ = 12;</code>
+       * @param value The pLDGPHIEEDJ to set.
        * @return This builder for chaining.
        */
-      public Builder setPicId(int value) {
+      public Builder setPLDGPHIEEDJ(int value) {
         
-        picId_ = value;
+        pLDGPHIEEDJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 pic_id = 13;</code>
+       * <code>uint32 PLDGPHIEEDJ = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPicId() {
+      public Builder clearPLDGPHIEEDJ() {
         
-        picId_ = 0;
+        pLDGPHIEEDJ_ = 0;
         onChanged();
         return this;
       }
@@ -666,10 +664,10 @@ public final class BlessingGiveFriendPicRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036BlessingGiveFriendPicRsp.proto\"H\n\030Bles" +
-      "singGiveFriendPicRsp\022\013\n\003uid\030\014 \001(\r\022\017\n\007ret" +
-      "code\030\001 \001(\005\022\016\n\006pic_id\030\r \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\036BlessingGiveFriendPicRsp.proto\"M\n\030Bles" +
+      "singGiveFriendPicRsp\022\013\n\003uid\030\002 \001(\r\022\017\n\007ret" +
+      "code\030\004 \001(\005\022\023\n\013PLDGPHIEEDJ\030\014 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +678,7 @@ public final class BlessingGiveFriendPicRspOuterClass {
     internal_static_BlessingGiveFriendPicRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingGiveFriendPicRsp_descriptor,
-        new java.lang.String[] { "Uid", "Retcode", "PicId", });
+        new java.lang.String[] { "Uid", "Retcode", "PLDGPHIEEDJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

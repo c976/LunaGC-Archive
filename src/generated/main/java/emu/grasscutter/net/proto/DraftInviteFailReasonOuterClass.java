@@ -15,73 +15,69 @@ public final class DraftInviteFailReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: ABGFENJLAMG
-   * </pre>
-   *
    * Protobuf enum {@code DraftInviteFailReason}
    */
   public enum DraftInviteFailReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DRAFT_FAIL_UNKNOWN = 0;</code>
+     * <code>OAKDJHABEPM_DRAFT_FAIL_UNKNOWN = 0;</code>
      */
-    DRAFT_FAIL_UNKNOWN(0),
+    OAKDJHABEPM_DRAFT_FAIL_UNKNOWN(0),
     /**
-     * <code>DRAFT_ACTIVITY_NOT_OPEN = 1;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_NOT_OPEN = 1;</code>
      */
-    DRAFT_ACTIVITY_NOT_OPEN(1),
+    OAKDJHABEPM_DRAFT_ACTIVITY_NOT_OPEN(1),
     /**
-     * <code>DRAFT_ACTIVITY_PLAY_NOT_OPEN = 2;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_PLAY_NOT_OPEN = 2;</code>
      */
-    DRAFT_ACTIVITY_PLAY_NOT_OPEN(2),
+    OAKDJHABEPM_DRAFT_ACTIVITY_PLAY_NOT_OPEN(2),
     /**
-     * <code>DRAFT_SCENE_NOT_MEET = 3;</code>
+     * <code>OAKDJHABEPM_DRAFT_SCENE_NOT_MEET = 3;</code>
      */
-    DRAFT_SCENE_NOT_MEET(3),
+    OAKDJHABEPM_DRAFT_SCENE_NOT_MEET(3),
     /**
-     * <code>DRAFT_WORLD_NOT_MEET = 4;</code>
+     * <code>OAKDJHABEPM_DRAFT_WORLD_NOT_MEET = 4;</code>
      */
-    DRAFT_WORLD_NOT_MEET(4),
+    OAKDJHABEPM_DRAFT_WORLD_NOT_MEET(4),
     /**
-     * <code>DRAFT_PLAY_LIMIT_NOT_MEET = 5;</code>
+     * <code>OAKDJHABEPM_DRAFT_PLAY_LIMIT_NOT_MEET = 5;</code>
      */
-    DRAFT_PLAY_LIMIT_NOT_MEET(5),
+    OAKDJHABEPM_DRAFT_PLAY_LIMIT_NOT_MEET(5),
     /**
-     * <code>LNILPEDBCDB_DraftActivityConfigNotFound = 6;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_CONFIG_NOT_FOUND = 6;</code>
      */
-    LNILPEDBCDB_DraftActivityConfigNotFound(6),
+    OAKDJHABEPM_DRAFT_ACTIVITY_CONFIG_NOT_FOUND(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DRAFT_FAIL_UNKNOWN = 0;</code>
+     * <code>OAKDJHABEPM_DRAFT_FAIL_UNKNOWN = 0;</code>
      */
-    public static final int DRAFT_FAIL_UNKNOWN_VALUE = 0;
+    public static final int OAKDJHABEPM_DRAFT_FAIL_UNKNOWN_VALUE = 0;
     /**
-     * <code>DRAFT_ACTIVITY_NOT_OPEN = 1;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_NOT_OPEN = 1;</code>
      */
-    public static final int DRAFT_ACTIVITY_NOT_OPEN_VALUE = 1;
+    public static final int OAKDJHABEPM_DRAFT_ACTIVITY_NOT_OPEN_VALUE = 1;
     /**
-     * <code>DRAFT_ACTIVITY_PLAY_NOT_OPEN = 2;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_PLAY_NOT_OPEN = 2;</code>
      */
-    public static final int DRAFT_ACTIVITY_PLAY_NOT_OPEN_VALUE = 2;
+    public static final int OAKDJHABEPM_DRAFT_ACTIVITY_PLAY_NOT_OPEN_VALUE = 2;
     /**
-     * <code>DRAFT_SCENE_NOT_MEET = 3;</code>
+     * <code>OAKDJHABEPM_DRAFT_SCENE_NOT_MEET = 3;</code>
      */
-    public static final int DRAFT_SCENE_NOT_MEET_VALUE = 3;
+    public static final int OAKDJHABEPM_DRAFT_SCENE_NOT_MEET_VALUE = 3;
     /**
-     * <code>DRAFT_WORLD_NOT_MEET = 4;</code>
+     * <code>OAKDJHABEPM_DRAFT_WORLD_NOT_MEET = 4;</code>
      */
-    public static final int DRAFT_WORLD_NOT_MEET_VALUE = 4;
+    public static final int OAKDJHABEPM_DRAFT_WORLD_NOT_MEET_VALUE = 4;
     /**
-     * <code>DRAFT_PLAY_LIMIT_NOT_MEET = 5;</code>
+     * <code>OAKDJHABEPM_DRAFT_PLAY_LIMIT_NOT_MEET = 5;</code>
      */
-    public static final int DRAFT_PLAY_LIMIT_NOT_MEET_VALUE = 5;
+    public static final int OAKDJHABEPM_DRAFT_PLAY_LIMIT_NOT_MEET_VALUE = 5;
     /**
-     * <code>LNILPEDBCDB_DraftActivityConfigNotFound = 6;</code>
+     * <code>OAKDJHABEPM_DRAFT_ACTIVITY_CONFIG_NOT_FOUND = 6;</code>
      */
-    public static final int LNILPEDBCDB_DraftActivityConfigNotFound_VALUE = 6;
+    public static final int OAKDJHABEPM_DRAFT_ACTIVITY_CONFIG_NOT_FOUND_VALUE = 6;
 
 
     public final int getNumber() {
@@ -108,13 +104,13 @@ public final class DraftInviteFailReasonOuterClass {
      */
     public static DraftInviteFailReason forNumber(int value) {
       switch (value) {
-        case 0: return DRAFT_FAIL_UNKNOWN;
-        case 1: return DRAFT_ACTIVITY_NOT_OPEN;
-        case 2: return DRAFT_ACTIVITY_PLAY_NOT_OPEN;
-        case 3: return DRAFT_SCENE_NOT_MEET;
-        case 4: return DRAFT_WORLD_NOT_MEET;
-        case 5: return DRAFT_PLAY_LIMIT_NOT_MEET;
-        case 6: return LNILPEDBCDB_DraftActivityConfigNotFound;
+        case 0: return OAKDJHABEPM_DRAFT_FAIL_UNKNOWN;
+        case 1: return OAKDJHABEPM_DRAFT_ACTIVITY_NOT_OPEN;
+        case 2: return OAKDJHABEPM_DRAFT_ACTIVITY_PLAY_NOT_OPEN;
+        case 3: return OAKDJHABEPM_DRAFT_SCENE_NOT_MEET;
+        case 4: return OAKDJHABEPM_DRAFT_WORLD_NOT_MEET;
+        case 5: return OAKDJHABEPM_DRAFT_PLAY_LIMIT_NOT_MEET;
+        case 6: return OAKDJHABEPM_DRAFT_ACTIVITY_CONFIG_NOT_FOUND;
         default: return null;
       }
     }
@@ -180,14 +176,16 @@ public final class DraftInviteFailReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033DraftInviteFailReason.proto*\356\001\n\025DraftI" +
-      "nviteFailReason\022\026\n\022DRAFT_FAIL_UNKNOWN\020\000\022" +
-      "\033\n\027DRAFT_ACTIVITY_NOT_OPEN\020\001\022 \n\034DRAFT_AC" +
-      "TIVITY_PLAY_NOT_OPEN\020\002\022\030\n\024DRAFT_SCENE_NO" +
-      "T_MEET\020\003\022\030\n\024DRAFT_WORLD_NOT_MEET\020\004\022\035\n\031DR" +
-      "AFT_PLAY_LIMIT_NOT_MEET\020\005\022+\n\'LNILPEDBCDB" +
-      "_DraftActivityConfigNotFound\020\006B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\033DraftInviteFailReason.proto*\272\002\n\025DraftI" +
+      "nviteFailReason\022\"\n\036OAKDJHABEPM_DRAFT_FAI" +
+      "L_UNKNOWN\020\000\022\'\n#OAKDJHABEPM_DRAFT_ACTIVIT" +
+      "Y_NOT_OPEN\020\001\022,\n(OAKDJHABEPM_DRAFT_ACTIVI" +
+      "TY_PLAY_NOT_OPEN\020\002\022$\n OAKDJHABEPM_DRAFT_" +
+      "SCENE_NOT_MEET\020\003\022$\n OAKDJHABEPM_DRAFT_WO" +
+      "RLD_NOT_MEET\020\004\022)\n%OAKDJHABEPM_DRAFT_PLAY" +
+      "_LIMIT_NOT_MEET\020\005\022/\n+OAKDJHABEPM_DRAFT_A" +
+      "CTIVITY_CONFIG_NOT_FOUND\020\006B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

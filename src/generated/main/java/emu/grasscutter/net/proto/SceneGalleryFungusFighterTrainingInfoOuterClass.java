@@ -19,52 +19,76 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ODNFAFPKLKF = 11;</code>
-     * @return The oDNFAFPKLKF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GOKFELGBAKC = 4;</code>
+     * @return The gOKFELGBAKC.
      */
-    int getODNFAFPKLKF();
+    int getGOKFELGBAKC();
 
     /**
-     * <code>uint32 NKDAHKKLFMC = 7;</code>
-     * @return The nKDAHKKLFMC.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 JGNAIPJAFDG = 10;</code>
+     * @return The jGNAIPJAFDG.
      */
-    int getNKDAHKKLFMC();
+    int getJGNAIPJAFDG();
 
     /**
-     * <code>uint32 AAIGFGNIFNF = 4;</code>
-     * @return The aAIGFGNIFNF.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NIEGMBDGJLC = 8;</code>
+     * @return The nIEGMBDGJLC.
      */
-    int getAAIGFGNIFNF();
+    int getNIEGMBDGJLC();
 
     /**
-     * <code>uint32 buff_id = 8;</code>
-     * @return The buffId.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 KHFCLJIKKNL = 9;</code>
+     * @return The kHFCLJIKKNL.
      */
-    int getBuffId();
+    int getKHFCLJIKKNL();
 
     /**
-     * <code>uint32 HELFHNFBNNE = 5;</code>
-     * @return The hELFHNFBNNE.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 OCDODLHGHNP = 13;</code>
+     * @return The oCDODLHGHNP.
      */
-    int getHELFHNFBNNE();
+    int getOCDODLHGHNP();
 
     /**
-     * <code>uint32 FPODCAPPDKP = 12;</code>
-     * @return The fPODCAPPDKP.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GHDFGMOOJOH = 5;</code>
+     * @return The gHDFGMOOJOH.
      */
-    int getFPODCAPPDKP();
+    int getGHDFGMOOJOH();
 
     /**
-     * <code>uint32 JGFOFOCHKGG = 6;</code>
-     * @return The jGFOFOCHKGG.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ECIOJJGBEMC = 3;</code>
+     * @return The eCIOJJGBEMC.
      */
-    int getJGFOFOCHKGG();
+    int getECIOJJGBEMC();
   }
   /**
-   * <pre>
-   * Obf: IBMOGEBNHEK
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryFungusFighterTrainingInfo}
    */
   public static final class SceneGalleryFungusFighterTrainingInfo extends
@@ -109,39 +133,39 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              eCIOJJGBEMC_ = input.readUInt32();
+              break;
+            }
             case 32: {
 
-              aAIGFGNIFNF_ = input.readUInt32();
+              gOKFELGBAKC_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              hELFHNFBNNE_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              jGFOFOCHKGG_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              nKDAHKKLFMC_ = input.readUInt32();
+              gHDFGMOOJOH_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              buffId_ = input.readUInt32();
+              nIEGMBDGJLC_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 72: {
 
-              oDNFAFPKLKF_ = input.readUInt32();
+              kHFCLJIKKNL_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              fPODCAPPDKP_ = input.readUInt32();
+              jGNAIPJAFDG_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              oCDODLHGHNP_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,81 +200,109 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.class, emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.Builder.class);
     }
 
-    public static final int ODNFAFPKLKF_FIELD_NUMBER = 11;
-    private int oDNFAFPKLKF_;
+    public static final int GOKFELGBAKC_FIELD_NUMBER = 4;
+    private int gOKFELGBAKC_;
     /**
-     * <code>uint32 ODNFAFPKLKF = 11;</code>
-     * @return The oDNFAFPKLKF.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GOKFELGBAKC = 4;</code>
+     * @return The gOKFELGBAKC.
      */
     @java.lang.Override
-    public int getODNFAFPKLKF() {
-      return oDNFAFPKLKF_;
+    public int getGOKFELGBAKC() {
+      return gOKFELGBAKC_;
     }
 
-    public static final int NKDAHKKLFMC_FIELD_NUMBER = 7;
-    private int nKDAHKKLFMC_;
+    public static final int JGNAIPJAFDG_FIELD_NUMBER = 10;
+    private int jGNAIPJAFDG_;
     /**
-     * <code>uint32 NKDAHKKLFMC = 7;</code>
-     * @return The nKDAHKKLFMC.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 JGNAIPJAFDG = 10;</code>
+     * @return The jGNAIPJAFDG.
      */
     @java.lang.Override
-    public int getNKDAHKKLFMC() {
-      return nKDAHKKLFMC_;
+    public int getJGNAIPJAFDG() {
+      return jGNAIPJAFDG_;
     }
 
-    public static final int AAIGFGNIFNF_FIELD_NUMBER = 4;
-    private int aAIGFGNIFNF_;
+    public static final int NIEGMBDGJLC_FIELD_NUMBER = 8;
+    private int nIEGMBDGJLC_;
     /**
-     * <code>uint32 AAIGFGNIFNF = 4;</code>
-     * @return The aAIGFGNIFNF.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NIEGMBDGJLC = 8;</code>
+     * @return The nIEGMBDGJLC.
      */
     @java.lang.Override
-    public int getAAIGFGNIFNF() {
-      return aAIGFGNIFNF_;
+    public int getNIEGMBDGJLC() {
+      return nIEGMBDGJLC_;
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 8;
-    private int buffId_;
+    public static final int KHFCLJIKKNL_FIELD_NUMBER = 9;
+    private int kHFCLJIKKNL_;
     /**
-     * <code>uint32 buff_id = 8;</code>
-     * @return The buffId.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 KHFCLJIKKNL = 9;</code>
+     * @return The kHFCLJIKKNL.
      */
     @java.lang.Override
-    public int getBuffId() {
-      return buffId_;
+    public int getKHFCLJIKKNL() {
+      return kHFCLJIKKNL_;
     }
 
-    public static final int HELFHNFBNNE_FIELD_NUMBER = 5;
-    private int hELFHNFBNNE_;
+    public static final int OCDODLHGHNP_FIELD_NUMBER = 13;
+    private int oCDODLHGHNP_;
     /**
-     * <code>uint32 HELFHNFBNNE = 5;</code>
-     * @return The hELFHNFBNNE.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 OCDODLHGHNP = 13;</code>
+     * @return The oCDODLHGHNP.
      */
     @java.lang.Override
-    public int getHELFHNFBNNE() {
-      return hELFHNFBNNE_;
+    public int getOCDODLHGHNP() {
+      return oCDODLHGHNP_;
     }
 
-    public static final int FPODCAPPDKP_FIELD_NUMBER = 12;
-    private int fPODCAPPDKP_;
+    public static final int GHDFGMOOJOH_FIELD_NUMBER = 5;
+    private int gHDFGMOOJOH_;
     /**
-     * <code>uint32 FPODCAPPDKP = 12;</code>
-     * @return The fPODCAPPDKP.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GHDFGMOOJOH = 5;</code>
+     * @return The gHDFGMOOJOH.
      */
     @java.lang.Override
-    public int getFPODCAPPDKP() {
-      return fPODCAPPDKP_;
+    public int getGHDFGMOOJOH() {
+      return gHDFGMOOJOH_;
     }
 
-    public static final int JGFOFOCHKGG_FIELD_NUMBER = 6;
-    private int jGFOFOCHKGG_;
+    public static final int ECIOJJGBEMC_FIELD_NUMBER = 3;
+    private int eCIOJJGBEMC_;
     /**
-     * <code>uint32 JGFOFOCHKGG = 6;</code>
-     * @return The jGFOFOCHKGG.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ECIOJJGBEMC = 3;</code>
+     * @return The eCIOJJGBEMC.
      */
     @java.lang.Override
-    public int getJGFOFOCHKGG() {
-      return jGFOFOCHKGG_;
+    public int getECIOJJGBEMC() {
+      return eCIOJJGBEMC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -267,26 +319,26 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aAIGFGNIFNF_ != 0) {
-        output.writeUInt32(4, aAIGFGNIFNF_);
+      if (eCIOJJGBEMC_ != 0) {
+        output.writeUInt32(3, eCIOJJGBEMC_);
       }
-      if (hELFHNFBNNE_ != 0) {
-        output.writeUInt32(5, hELFHNFBNNE_);
+      if (gOKFELGBAKC_ != 0) {
+        output.writeUInt32(4, gOKFELGBAKC_);
       }
-      if (jGFOFOCHKGG_ != 0) {
-        output.writeUInt32(6, jGFOFOCHKGG_);
+      if (gHDFGMOOJOH_ != 0) {
+        output.writeUInt32(5, gHDFGMOOJOH_);
       }
-      if (nKDAHKKLFMC_ != 0) {
-        output.writeUInt32(7, nKDAHKKLFMC_);
+      if (nIEGMBDGJLC_ != 0) {
+        output.writeUInt32(8, nIEGMBDGJLC_);
       }
-      if (buffId_ != 0) {
-        output.writeUInt32(8, buffId_);
+      if (kHFCLJIKKNL_ != 0) {
+        output.writeUInt32(9, kHFCLJIKKNL_);
       }
-      if (oDNFAFPKLKF_ != 0) {
-        output.writeUInt32(11, oDNFAFPKLKF_);
+      if (jGNAIPJAFDG_ != 0) {
+        output.writeUInt32(10, jGNAIPJAFDG_);
       }
-      if (fPODCAPPDKP_ != 0) {
-        output.writeUInt32(12, fPODCAPPDKP_);
+      if (oCDODLHGHNP_ != 0) {
+        output.writeUInt32(13, oCDODLHGHNP_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,33 +349,33 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aAIGFGNIFNF_ != 0) {
+      if (eCIOJJGBEMC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, aAIGFGNIFNF_);
+          .computeUInt32Size(3, eCIOJJGBEMC_);
       }
-      if (hELFHNFBNNE_ != 0) {
+      if (gOKFELGBAKC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, hELFHNFBNNE_);
+          .computeUInt32Size(4, gOKFELGBAKC_);
       }
-      if (jGFOFOCHKGG_ != 0) {
+      if (gHDFGMOOJOH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, jGFOFOCHKGG_);
+          .computeUInt32Size(5, gHDFGMOOJOH_);
       }
-      if (nKDAHKKLFMC_ != 0) {
+      if (nIEGMBDGJLC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, nKDAHKKLFMC_);
+          .computeUInt32Size(8, nIEGMBDGJLC_);
       }
-      if (buffId_ != 0) {
+      if (kHFCLJIKKNL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, buffId_);
+          .computeUInt32Size(9, kHFCLJIKKNL_);
       }
-      if (oDNFAFPKLKF_ != 0) {
+      if (jGNAIPJAFDG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, oDNFAFPKLKF_);
+          .computeUInt32Size(10, jGNAIPJAFDG_);
       }
-      if (fPODCAPPDKP_ != 0) {
+      if (oCDODLHGHNP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, fPODCAPPDKP_);
+          .computeUInt32Size(13, oCDODLHGHNP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -340,20 +392,20 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo other = (emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo) obj;
 
-      if (getODNFAFPKLKF()
-          != other.getODNFAFPKLKF()) return false;
-      if (getNKDAHKKLFMC()
-          != other.getNKDAHKKLFMC()) return false;
-      if (getAAIGFGNIFNF()
-          != other.getAAIGFGNIFNF()) return false;
-      if (getBuffId()
-          != other.getBuffId()) return false;
-      if (getHELFHNFBNNE()
-          != other.getHELFHNFBNNE()) return false;
-      if (getFPODCAPPDKP()
-          != other.getFPODCAPPDKP()) return false;
-      if (getJGFOFOCHKGG()
-          != other.getJGFOFOCHKGG()) return false;
+      if (getGOKFELGBAKC()
+          != other.getGOKFELGBAKC()) return false;
+      if (getJGNAIPJAFDG()
+          != other.getJGNAIPJAFDG()) return false;
+      if (getNIEGMBDGJLC()
+          != other.getNIEGMBDGJLC()) return false;
+      if (getKHFCLJIKKNL()
+          != other.getKHFCLJIKKNL()) return false;
+      if (getOCDODLHGHNP()
+          != other.getOCDODLHGHNP()) return false;
+      if (getGHDFGMOOJOH()
+          != other.getGHDFGMOOJOH()) return false;
+      if (getECIOJJGBEMC()
+          != other.getECIOJJGBEMC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -365,20 +417,20 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ODNFAFPKLKF_FIELD_NUMBER;
-      hash = (53 * hash) + getODNFAFPKLKF();
-      hash = (37 * hash) + NKDAHKKLFMC_FIELD_NUMBER;
-      hash = (53 * hash) + getNKDAHKKLFMC();
-      hash = (37 * hash) + AAIGFGNIFNF_FIELD_NUMBER;
-      hash = (53 * hash) + getAAIGFGNIFNF();
-      hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + HELFHNFBNNE_FIELD_NUMBER;
-      hash = (53 * hash) + getHELFHNFBNNE();
-      hash = (37 * hash) + FPODCAPPDKP_FIELD_NUMBER;
-      hash = (53 * hash) + getFPODCAPPDKP();
-      hash = (37 * hash) + JGFOFOCHKGG_FIELD_NUMBER;
-      hash = (53 * hash) + getJGFOFOCHKGG();
+      hash = (37 * hash) + GOKFELGBAKC_FIELD_NUMBER;
+      hash = (53 * hash) + getGOKFELGBAKC();
+      hash = (37 * hash) + JGNAIPJAFDG_FIELD_NUMBER;
+      hash = (53 * hash) + getJGNAIPJAFDG();
+      hash = (37 * hash) + NIEGMBDGJLC_FIELD_NUMBER;
+      hash = (53 * hash) + getNIEGMBDGJLC();
+      hash = (37 * hash) + KHFCLJIKKNL_FIELD_NUMBER;
+      hash = (53 * hash) + getKHFCLJIKKNL();
+      hash = (37 * hash) + OCDODLHGHNP_FIELD_NUMBER;
+      hash = (53 * hash) + getOCDODLHGHNP();
+      hash = (37 * hash) + GHDFGMOOJOH_FIELD_NUMBER;
+      hash = (53 * hash) + getGHDFGMOOJOH();
+      hash = (37 * hash) + ECIOJJGBEMC_FIELD_NUMBER;
+      hash = (53 * hash) + getECIOJJGBEMC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,10 +527,6 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IBMOGEBNHEK
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryFungusFighterTrainingInfo}
      */
     public static final class Builder extends
@@ -516,19 +564,19 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oDNFAFPKLKF_ = 0;
+        gOKFELGBAKC_ = 0;
 
-        nKDAHKKLFMC_ = 0;
+        jGNAIPJAFDG_ = 0;
 
-        aAIGFGNIFNF_ = 0;
+        nIEGMBDGJLC_ = 0;
 
-        buffId_ = 0;
+        kHFCLJIKKNL_ = 0;
 
-        hELFHNFBNNE_ = 0;
+        oCDODLHGHNP_ = 0;
 
-        fPODCAPPDKP_ = 0;
+        gHDFGMOOJOH_ = 0;
 
-        jGFOFOCHKGG_ = 0;
+        eCIOJJGBEMC_ = 0;
 
         return this;
       }
@@ -556,13 +604,13 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo result = new emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo(this);
-        result.oDNFAFPKLKF_ = oDNFAFPKLKF_;
-        result.nKDAHKKLFMC_ = nKDAHKKLFMC_;
-        result.aAIGFGNIFNF_ = aAIGFGNIFNF_;
-        result.buffId_ = buffId_;
-        result.hELFHNFBNNE_ = hELFHNFBNNE_;
-        result.fPODCAPPDKP_ = fPODCAPPDKP_;
-        result.jGFOFOCHKGG_ = jGFOFOCHKGG_;
+        result.gOKFELGBAKC_ = gOKFELGBAKC_;
+        result.jGNAIPJAFDG_ = jGNAIPJAFDG_;
+        result.nIEGMBDGJLC_ = nIEGMBDGJLC_;
+        result.kHFCLJIKKNL_ = kHFCLJIKKNL_;
+        result.oCDODLHGHNP_ = oCDODLHGHNP_;
+        result.gHDFGMOOJOH_ = gHDFGMOOJOH_;
+        result.eCIOJJGBEMC_ = eCIOJJGBEMC_;
         onBuilt();
         return result;
       }
@@ -611,26 +659,26 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryFungusFighterTrainingInfoOuterClass.SceneGalleryFungusFighterTrainingInfo.getDefaultInstance()) return this;
-        if (other.getODNFAFPKLKF() != 0) {
-          setODNFAFPKLKF(other.getODNFAFPKLKF());
+        if (other.getGOKFELGBAKC() != 0) {
+          setGOKFELGBAKC(other.getGOKFELGBAKC());
         }
-        if (other.getNKDAHKKLFMC() != 0) {
-          setNKDAHKKLFMC(other.getNKDAHKKLFMC());
+        if (other.getJGNAIPJAFDG() != 0) {
+          setJGNAIPJAFDG(other.getJGNAIPJAFDG());
         }
-        if (other.getAAIGFGNIFNF() != 0) {
-          setAAIGFGNIFNF(other.getAAIGFGNIFNF());
+        if (other.getNIEGMBDGJLC() != 0) {
+          setNIEGMBDGJLC(other.getNIEGMBDGJLC());
         }
-        if (other.getBuffId() != 0) {
-          setBuffId(other.getBuffId());
+        if (other.getKHFCLJIKKNL() != 0) {
+          setKHFCLJIKKNL(other.getKHFCLJIKKNL());
         }
-        if (other.getHELFHNFBNNE() != 0) {
-          setHELFHNFBNNE(other.getHELFHNFBNNE());
+        if (other.getOCDODLHGHNP() != 0) {
+          setOCDODLHGHNP(other.getOCDODLHGHNP());
         }
-        if (other.getFPODCAPPDKP() != 0) {
-          setFPODCAPPDKP(other.getFPODCAPPDKP());
+        if (other.getGHDFGMOOJOH() != 0) {
+          setGHDFGMOOJOH(other.getGHDFGMOOJOH());
         }
-        if (other.getJGFOFOCHKGG() != 0) {
-          setJGFOFOCHKGG(other.getJGFOFOCHKGG());
+        if (other.getECIOJJGBEMC() != 0) {
+          setECIOJJGBEMC(other.getECIOJJGBEMC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -661,219 +709,303 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
         return this;
       }
 
-      private int oDNFAFPKLKF_ ;
+      private int gOKFELGBAKC_ ;
       /**
-       * <code>uint32 ODNFAFPKLKF = 11;</code>
-       * @return The oDNFAFPKLKF.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GOKFELGBAKC = 4;</code>
+       * @return The gOKFELGBAKC.
        */
       @java.lang.Override
-      public int getODNFAFPKLKF() {
-        return oDNFAFPKLKF_;
+      public int getGOKFELGBAKC() {
+        return gOKFELGBAKC_;
       }
       /**
-       * <code>uint32 ODNFAFPKLKF = 11;</code>
-       * @param value The oDNFAFPKLKF to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GOKFELGBAKC = 4;</code>
+       * @param value The gOKFELGBAKC to set.
        * @return This builder for chaining.
        */
-      public Builder setODNFAFPKLKF(int value) {
+      public Builder setGOKFELGBAKC(int value) {
         
-        oDNFAFPKLKF_ = value;
+        gOKFELGBAKC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ODNFAFPKLKF = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GOKFELGBAKC = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearODNFAFPKLKF() {
+      public Builder clearGOKFELGBAKC() {
         
-        oDNFAFPKLKF_ = 0;
+        gOKFELGBAKC_ = 0;
         onChanged();
         return this;
       }
 
-      private int nKDAHKKLFMC_ ;
+      private int jGNAIPJAFDG_ ;
       /**
-       * <code>uint32 NKDAHKKLFMC = 7;</code>
-       * @return The nKDAHKKLFMC.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JGNAIPJAFDG = 10;</code>
+       * @return The jGNAIPJAFDG.
        */
       @java.lang.Override
-      public int getNKDAHKKLFMC() {
-        return nKDAHKKLFMC_;
+      public int getJGNAIPJAFDG() {
+        return jGNAIPJAFDG_;
       }
       /**
-       * <code>uint32 NKDAHKKLFMC = 7;</code>
-       * @param value The nKDAHKKLFMC to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JGNAIPJAFDG = 10;</code>
+       * @param value The jGNAIPJAFDG to set.
        * @return This builder for chaining.
        */
-      public Builder setNKDAHKKLFMC(int value) {
+      public Builder setJGNAIPJAFDG(int value) {
         
-        nKDAHKKLFMC_ = value;
+        jGNAIPJAFDG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NKDAHKKLFMC = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 JGNAIPJAFDG = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNKDAHKKLFMC() {
+      public Builder clearJGNAIPJAFDG() {
         
-        nKDAHKKLFMC_ = 0;
+        jGNAIPJAFDG_ = 0;
         onChanged();
         return this;
       }
 
-      private int aAIGFGNIFNF_ ;
+      private int nIEGMBDGJLC_ ;
       /**
-       * <code>uint32 AAIGFGNIFNF = 4;</code>
-       * @return The aAIGFGNIFNF.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 8;</code>
+       * @return The nIEGMBDGJLC.
        */
       @java.lang.Override
-      public int getAAIGFGNIFNF() {
-        return aAIGFGNIFNF_;
+      public int getNIEGMBDGJLC() {
+        return nIEGMBDGJLC_;
       }
       /**
-       * <code>uint32 AAIGFGNIFNF = 4;</code>
-       * @param value The aAIGFGNIFNF to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 8;</code>
+       * @param value The nIEGMBDGJLC to set.
        * @return This builder for chaining.
        */
-      public Builder setAAIGFGNIFNF(int value) {
+      public Builder setNIEGMBDGJLC(int value) {
         
-        aAIGFGNIFNF_ = value;
+        nIEGMBDGJLC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AAIGFGNIFNF = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAAIGFGNIFNF() {
+      public Builder clearNIEGMBDGJLC() {
         
-        aAIGFGNIFNF_ = 0;
+        nIEGMBDGJLC_ = 0;
         onChanged();
         return this;
       }
 
-      private int buffId_ ;
+      private int kHFCLJIKKNL_ ;
       /**
-       * <code>uint32 buff_id = 8;</code>
-       * @return The buffId.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KHFCLJIKKNL = 9;</code>
+       * @return The kHFCLJIKKNL.
        */
       @java.lang.Override
-      public int getBuffId() {
-        return buffId_;
+      public int getKHFCLJIKKNL() {
+        return kHFCLJIKKNL_;
       }
       /**
-       * <code>uint32 buff_id = 8;</code>
-       * @param value The buffId to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KHFCLJIKKNL = 9;</code>
+       * @param value The kHFCLJIKKNL to set.
        * @return This builder for chaining.
        */
-      public Builder setBuffId(int value) {
+      public Builder setKHFCLJIKKNL(int value) {
         
-        buffId_ = value;
+        kHFCLJIKKNL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 buff_id = 8;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 KHFCLJIKKNL = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBuffId() {
+      public Builder clearKHFCLJIKKNL() {
         
-        buffId_ = 0;
+        kHFCLJIKKNL_ = 0;
         onChanged();
         return this;
       }
 
-      private int hELFHNFBNNE_ ;
+      private int oCDODLHGHNP_ ;
       /**
-       * <code>uint32 HELFHNFBNNE = 5;</code>
-       * @return The hELFHNFBNNE.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 OCDODLHGHNP = 13;</code>
+       * @return The oCDODLHGHNP.
        */
       @java.lang.Override
-      public int getHELFHNFBNNE() {
-        return hELFHNFBNNE_;
+      public int getOCDODLHGHNP() {
+        return oCDODLHGHNP_;
       }
       /**
-       * <code>uint32 HELFHNFBNNE = 5;</code>
-       * @param value The hELFHNFBNNE to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 OCDODLHGHNP = 13;</code>
+       * @param value The oCDODLHGHNP to set.
        * @return This builder for chaining.
        */
-      public Builder setHELFHNFBNNE(int value) {
+      public Builder setOCDODLHGHNP(int value) {
         
-        hELFHNFBNNE_ = value;
+        oCDODLHGHNP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HELFHNFBNNE = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 OCDODLHGHNP = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHELFHNFBNNE() {
+      public Builder clearOCDODLHGHNP() {
         
-        hELFHNFBNNE_ = 0;
+        oCDODLHGHNP_ = 0;
         onChanged();
         return this;
       }
 
-      private int fPODCAPPDKP_ ;
+      private int gHDFGMOOJOH_ ;
       /**
-       * <code>uint32 FPODCAPPDKP = 12;</code>
-       * @return The fPODCAPPDKP.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GHDFGMOOJOH = 5;</code>
+       * @return The gHDFGMOOJOH.
        */
       @java.lang.Override
-      public int getFPODCAPPDKP() {
-        return fPODCAPPDKP_;
+      public int getGHDFGMOOJOH() {
+        return gHDFGMOOJOH_;
       }
       /**
-       * <code>uint32 FPODCAPPDKP = 12;</code>
-       * @param value The fPODCAPPDKP to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GHDFGMOOJOH = 5;</code>
+       * @param value The gHDFGMOOJOH to set.
        * @return This builder for chaining.
        */
-      public Builder setFPODCAPPDKP(int value) {
+      public Builder setGHDFGMOOJOH(int value) {
         
-        fPODCAPPDKP_ = value;
+        gHDFGMOOJOH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FPODCAPPDKP = 12;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GHDFGMOOJOH = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFPODCAPPDKP() {
+      public Builder clearGHDFGMOOJOH() {
         
-        fPODCAPPDKP_ = 0;
+        gHDFGMOOJOH_ = 0;
         onChanged();
         return this;
       }
 
-      private int jGFOFOCHKGG_ ;
+      private int eCIOJJGBEMC_ ;
       /**
-       * <code>uint32 JGFOFOCHKGG = 6;</code>
-       * @return The jGFOFOCHKGG.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ECIOJJGBEMC = 3;</code>
+       * @return The eCIOJJGBEMC.
        */
       @java.lang.Override
-      public int getJGFOFOCHKGG() {
-        return jGFOFOCHKGG_;
+      public int getECIOJJGBEMC() {
+        return eCIOJJGBEMC_;
       }
       /**
-       * <code>uint32 JGFOFOCHKGG = 6;</code>
-       * @param value The jGFOFOCHKGG to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ECIOJJGBEMC = 3;</code>
+       * @param value The eCIOJJGBEMC to set.
        * @return This builder for chaining.
        */
-      public Builder setJGFOFOCHKGG(int value) {
+      public Builder setECIOJJGBEMC(int value) {
         
-        jGFOFOCHKGG_ = value;
+        eCIOJJGBEMC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JGFOFOCHKGG = 6;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ECIOJJGBEMC = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJGFOFOCHKGG() {
+      public Builder clearECIOJJGBEMC() {
         
-        jGFOFOCHKGG_ = 0;
+        eCIOJJGBEMC_ = 0;
         onChanged();
         return this;
       }
@@ -945,12 +1077,12 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+SceneGalleryFungusFighterTrainingInfo." +
-      "proto\"\266\001\n%SceneGalleryFungusFighterTrain" +
-      "ingInfo\022\023\n\013ODNFAFPKLKF\030\013 \001(\r\022\023\n\013NKDAHKKL" +
-      "FMC\030\007 \001(\r\022\023\n\013AAIGFGNIFNF\030\004 \001(\r\022\017\n\007buff_i" +
-      "d\030\010 \001(\r\022\023\n\013HELFHNFBNNE\030\005 \001(\r\022\023\n\013FPODCAPP" +
-      "DKP\030\014 \001(\r\022\023\n\013JGFOFOCHKGG\030\006 \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "proto\"\272\001\n%SceneGalleryFungusFighterTrain" +
+      "ingInfo\022\023\n\013GOKFELGBAKC\030\004 \001(\r\022\023\n\013JGNAIPJA" +
+      "FDG\030\n \001(\r\022\023\n\013NIEGMBDGJLC\030\010 \001(\r\022\023\n\013KHFCLJ" +
+      "IKKNL\030\t \001(\r\022\023\n\013OCDODLHGHNP\030\r \001(\r\022\023\n\013GHDF" +
+      "GMOOJOH\030\005 \001(\r\022\023\n\013ECIOJJGBEMC\030\003 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -961,7 +1093,7 @@ public final class SceneGalleryFungusFighterTrainingInfoOuterClass {
     internal_static_SceneGalleryFungusFighterTrainingInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryFungusFighterTrainingInfo_descriptor,
-        new java.lang.String[] { "ODNFAFPKLKF", "NKDAHKKLFMC", "AAIGFGNIFNF", "BuffId", "HELFHNFBNNE", "FPODCAPPDKP", "JGFOFOCHKGG", });
+        new java.lang.String[] { "GOKFELGBAKC", "JGNAIPJAFDG", "NIEGMBDGJLC", "KHFCLJIKKNL", "OCDODLHGHNP", "GHDFGMOOJOH", "ECIOJJGBEMC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,67 +19,111 @@ public final class GadgetPlayUidInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string online_id = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    boolean hasProfilePicture();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string online_id = 11;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string online_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string online_id = 11;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-    /**
-     * <code>string nickname = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <code>string nickname = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
 
     /**
-     * <code>uint32 icon = 13;</code>
-     * @return The icon.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
      */
-    int getIcon();
+    int getUid();
 
     /**
-     * <code>uint32 battle_watcher_id = 5;</code>
-     * @return The battleWatcherId.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 PAMJOMCOPII = 4;</code>
+     * @return The pAMJOMCOPII.
      */
-    int getBattleWatcherId();
+    int getPAMJOMCOPII();
 
     /**
-     * <code>uint32 score = 15;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 BLDAGHCLIFK = 8;</code>
+     * @return The bLDAGHCLIFK.
      */
-    int getUid();
+    int getBLDAGHCLIFK();
   }
   /**
    * Protobuf type {@code GadgetPlayUidInfo}
@@ -128,29 +172,39 @@ public final class GadgetPlayUidInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
-            case 40: {
-
-              battleWatcherId_ = input.readUInt32();
-              break;
-            }
-            case 58: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
               break;
             }
-            case 88: {
+            case 32: {
+
+              pAMJOMCOPII_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              bLDAGHCLIFK_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 90: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              onlineId_ = s;
+              break;
+            }
+            case 96: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 98: {
+            case 106: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -161,16 +215,6 @@ public final class GadgetPlayUidInfoOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 104: {
-
-              icon_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -205,10 +249,52 @@ public final class GadgetPlayUidInfoOuterClass {
               emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.class, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder.class);
     }
 
-    public static final int ONLINE_ID_FIELD_NUMBER = 3;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
+    }
+
+    public static final int ONLINE_ID_FIELD_NUMBER = 11;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string online_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string online_id = 11;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -225,7 +311,11 @@ public final class GadgetPlayUidInfoOuterClass {
       }
     }
     /**
-     * <code>string online_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string online_id = 11;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -243,36 +333,14 @@ public final class GadgetPlayUidInfoOuterClass {
       }
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
-    public static final int NICKNAME_FIELD_NUMBER = 7;
+    public static final int NICKNAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object nickname_;
     /**
-     * <code>string nickname = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -289,7 +357,11 @@ public final class GadgetPlayUidInfoOuterClass {
       }
     }
     /**
-     * <code>string nickname = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>string nickname = 2;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -307,32 +379,44 @@ public final class GadgetPlayUidInfoOuterClass {
       }
     }
 
-    public static final int ICON_FIELD_NUMBER = 13;
-    private int icon_;
+    public static final int UID_FIELD_NUMBER = 12;
+    private int uid_;
     /**
-     * <code>uint32 icon = 13;</code>
-     * @return The icon.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
      */
     @java.lang.Override
-    public int getIcon() {
-      return icon_;
+    public int getUid() {
+      return uid_;
     }
 
-    public static final int BATTLE_WATCHER_ID_FIELD_NUMBER = 5;
-    private int battleWatcherId_;
+    public static final int PAMJOMCOPII_FIELD_NUMBER = 4;
+    private int pAMJOMCOPII_;
     /**
-     * <code>uint32 battle_watcher_id = 5;</code>
-     * @return The battleWatcherId.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 PAMJOMCOPII = 4;</code>
+     * @return The pAMJOMCOPII.
      */
     @java.lang.Override
-    public int getBattleWatcherId() {
-      return battleWatcherId_;
+    public int getPAMJOMCOPII() {
+      return pAMJOMCOPII_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 15;
+    public static final int SCORE_FIELD_NUMBER = 9;
     private int score_;
     /**
-     * <code>uint32 score = 15;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -340,15 +424,19 @@ public final class GadgetPlayUidInfoOuterClass {
       return score_;
     }
 
-    public static final int UID_FIELD_NUMBER = 11;
-    private int uid_;
+    public static final int BLDAGHCLIFK_FIELD_NUMBER = 8;
+    private int bLDAGHCLIFK_;
     /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 BLDAGHCLIFK = 8;</code>
+     * @return The bLDAGHCLIFK.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public int getBLDAGHCLIFK() {
+      return bLDAGHCLIFK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -365,26 +453,26 @@ public final class GadgetPlayUidInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, onlineId_);
-      }
-      if (battleWatcherId_ != 0) {
-        output.writeUInt32(5, battleWatcherId_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nickname_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
-      if (uid_ != 0) {
-        output.writeUInt32(11, uid_);
+      if (pAMJOMCOPII_ != 0) {
+        output.writeUInt32(4, pAMJOMCOPII_);
       }
-      if (profilePicture_ != null) {
-        output.writeMessage(12, getProfilePicture());
-      }
-      if (icon_ != 0) {
-        output.writeUInt32(13, icon_);
+      if (bLDAGHCLIFK_ != 0) {
+        output.writeUInt32(8, bLDAGHCLIFK_);
       }
       if (score_ != 0) {
-        output.writeUInt32(15, score_);
+        output.writeUInt32(9, score_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, onlineId_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(12, uid_);
+      }
+      if (profilePicture_ != null) {
+        output.writeMessage(13, getProfilePicture());
       }
       unknownFields.writeTo(output);
     }
@@ -395,31 +483,31 @@ public final class GadgetPlayUidInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, onlineId_);
-      }
-      if (battleWatcherId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, battleWatcherId_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nickname_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
-      if (uid_ != 0) {
+      if (pAMJOMCOPII_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, uid_);
+          .computeUInt32Size(4, pAMJOMCOPII_);
       }
-      if (profilePicture_ != null) {
+      if (bLDAGHCLIFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getProfilePicture());
-      }
-      if (icon_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, icon_);
+          .computeUInt32Size(8, bLDAGHCLIFK_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, score_);
+          .computeUInt32Size(9, score_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, onlineId_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, uid_);
+      }
+      if (profilePicture_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getProfilePicture());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -436,23 +524,23 @@ public final class GadgetPlayUidInfoOuterClass {
       }
       emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo other = (emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo) obj;
 
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
       if (!getNickname()
           .equals(other.getNickname())) return false;
-      if (getIcon()
-          != other.getIcon()) return false;
-      if (getBattleWatcherId()
-          != other.getBattleWatcherId()) return false;
-      if (getScore()
-          != other.getScore()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getPAMJOMCOPII()
+          != other.getPAMJOMCOPII()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getBLDAGHCLIFK()
+          != other.getBLDAGHCLIFK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -464,22 +552,22 @@ public final class GadgetPlayUidInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
       hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
       hash = (53 * hash) + getNickname().hashCode();
-      hash = (37 * hash) + ICON_FIELD_NUMBER;
-      hash = (53 * hash) + getIcon();
-      hash = (37 * hash) + BATTLE_WATCHER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBattleWatcherId();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + PAMJOMCOPII_FIELD_NUMBER;
+      hash = (53 * hash) + getPAMJOMCOPII();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + BLDAGHCLIFK_FIELD_NUMBER;
+      hash = (53 * hash) + getBLDAGHCLIFK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -613,23 +701,23 @@ public final class GadgetPlayUidInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        onlineId_ = "";
-
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
         } else {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
+        onlineId_ = "";
+
         nickname_ = "";
 
-        icon_ = 0;
+        uid_ = 0;
 
-        battleWatcherId_ = 0;
+        pAMJOMCOPII_ = 0;
 
         score_ = 0;
 
-        uid_ = 0;
+        bLDAGHCLIFK_ = 0;
 
         return this;
       }
@@ -657,17 +745,17 @@ public final class GadgetPlayUidInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo buildPartial() {
         emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo result = new emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo(this);
-        result.onlineId_ = onlineId_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
+        result.onlineId_ = onlineId_;
         result.nickname_ = nickname_;
-        result.icon_ = icon_;
-        result.battleWatcherId_ = battleWatcherId_;
-        result.score_ = score_;
         result.uid_ = uid_;
+        result.pAMJOMCOPII_ = pAMJOMCOPII_;
+        result.score_ = score_;
+        result.bLDAGHCLIFK_ = bLDAGHCLIFK_;
         onBuilt();
         return result;
       }
@@ -716,28 +804,28 @@ public final class GadgetPlayUidInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo other) {
         if (other == emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.getDefaultInstance()) return this;
+        if (other.hasProfilePicture()) {
+          mergeProfilePicture(other.getProfilePicture());
+        }
         if (!other.getOnlineId().isEmpty()) {
           onlineId_ = other.onlineId_;
           onChanged();
-        }
-        if (other.hasProfilePicture()) {
-          mergeProfilePicture(other.getProfilePicture());
         }
         if (!other.getNickname().isEmpty()) {
           nickname_ = other.nickname_;
           onChanged();
         }
-        if (other.getIcon() != 0) {
-          setIcon(other.getIcon());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
-        if (other.getBattleWatcherId() != 0) {
-          setBattleWatcherId(other.getBattleWatcherId());
+        if (other.getPAMJOMCOPII() != 0) {
+          setPAMJOMCOPII(other.getPAMJOMCOPII());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (other.getBLDAGHCLIFK() != 0) {
+          setBLDAGHCLIFK(other.getBLDAGHCLIFK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -768,94 +856,26 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object onlineId_ = "";
-      /**
-       * <code>string online_id = 3;</code>
-       * @return The onlineId.
-       */
-      public java.lang.String getOnlineId() {
-        java.lang.Object ref = onlineId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          onlineId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string online_id = 3;</code>
-       * @return The bytes for onlineId.
-       */
-      public com.google.protobuf.ByteString
-          getOnlineIdBytes() {
-        java.lang.Object ref = onlineId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          onlineId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string online_id = 3;</code>
-       * @param value The onlineId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnlineId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        onlineId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string online_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOnlineId() {
-        
-        onlineId_ = getDefaultInstance().getOnlineId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string online_id = 3;</code>
-       * @param value The bytes for onlineId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnlineIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        onlineId_ = value;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -866,7 +886,11 @@ public final class GadgetPlayUidInfoOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -882,7 +906,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -896,7 +924,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -914,7 +946,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder clearProfilePicture() {
         if (profilePictureBuilder_ == null) {
@@ -928,7 +964,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         
@@ -936,7 +976,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -947,7 +991,11 @@ public final class GadgetPlayUidInfoOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -963,9 +1011,109 @@ public final class GadgetPlayUidInfoOuterClass {
         return profilePictureBuilder_;
       }
 
+      private java.lang.Object onlineId_ = "";
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string online_id = 11;</code>
+       * @return The onlineId.
+       */
+      public java.lang.String getOnlineId() {
+        java.lang.Object ref = onlineId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          onlineId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string online_id = 11;</code>
+       * @return The bytes for onlineId.
+       */
+      public com.google.protobuf.ByteString
+          getOnlineIdBytes() {
+        java.lang.Object ref = onlineId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          onlineId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string online_id = 11;</code>
+       * @param value The onlineId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOnlineId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        onlineId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string online_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOnlineId() {
+        
+        onlineId_ = getDefaultInstance().getOnlineId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string online_id = 11;</code>
+       * @param value The bytes for onlineId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOnlineIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        onlineId_ = value;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object nickname_ = "";
       /**
-       * <code>string nickname = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -981,7 +1129,11 @@ public final class GadgetPlayUidInfoOuterClass {
         }
       }
       /**
-       * <code>string nickname = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -998,7 +1150,11 @@ public final class GadgetPlayUidInfoOuterClass {
         }
       }
       /**
-       * <code>string nickname = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -1013,7 +1169,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -1023,7 +1183,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>string nickname = 2;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -1039,102 +1203,13 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
 
-      private int icon_ ;
-      /**
-       * <code>uint32 icon = 13;</code>
-       * @return The icon.
-       */
-      @java.lang.Override
-      public int getIcon() {
-        return icon_;
-      }
-      /**
-       * <code>uint32 icon = 13;</code>
-       * @param value The icon to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIcon(int value) {
-        
-        icon_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 icon = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIcon() {
-        
-        icon_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int battleWatcherId_ ;
-      /**
-       * <code>uint32 battle_watcher_id = 5;</code>
-       * @return The battleWatcherId.
-       */
-      @java.lang.Override
-      public int getBattleWatcherId() {
-        return battleWatcherId_;
-      }
-      /**
-       * <code>uint32 battle_watcher_id = 5;</code>
-       * @param value The battleWatcherId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBattleWatcherId(int value) {
-        
-        battleWatcherId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 battle_watcher_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBattleWatcherId() {
-        
-        battleWatcherId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 15;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 15;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -1142,7 +1217,11 @@ public final class GadgetPlayUidInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -1153,12 +1232,145 @@ public final class GadgetPlayUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pAMJOMCOPII_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PAMJOMCOPII = 4;</code>
+       * @return The pAMJOMCOPII.
+       */
+      @java.lang.Override
+      public int getPAMJOMCOPII() {
+        return pAMJOMCOPII_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PAMJOMCOPII = 4;</code>
+       * @param value The pAMJOMCOPII to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPAMJOMCOPII(int value) {
+        
+        pAMJOMCOPII_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 PAMJOMCOPII = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPAMJOMCOPII() {
+        
+        pAMJOMCOPII_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bLDAGHCLIFK_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BLDAGHCLIFK = 8;</code>
+       * @return The bLDAGHCLIFK.
+       */
+      @java.lang.Override
+      public int getBLDAGHCLIFK() {
+        return bLDAGHCLIFK_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BLDAGHCLIFK = 8;</code>
+       * @param value The bLDAGHCLIFK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBLDAGHCLIFK(int value) {
+        
+        bLDAGHCLIFK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BLDAGHCLIFK = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBLDAGHCLIFK() {
+        
+        bLDAGHCLIFK_ = 0;
         onChanged();
         return this;
       }
@@ -1230,12 +1442,12 @@ public final class GadgetPlayUidInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GadgetPlayUidInfo.proto\032\024ProfilePictur" +
-      "e.proto\"\247\001\n\021GadgetPlayUidInfo\022\021\n\tonline_" +
-      "id\030\003 \001(\t\022(\n\017profile_picture\030\014 \001(\0132\017.Prof" +
-      "ilePicture\022\020\n\010nickname\030\007 \001(\t\022\014\n\004icon\030\r \001" +
-      "(\r\022\031\n\021battle_watcher_id\030\005 \001(\r\022\r\n\005score\030\017" +
-      " \001(\r\022\013\n\003uid\030\013 \001(\rB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "e.proto\"\250\001\n\021GadgetPlayUidInfo\022(\n\017profile" +
+      "_picture\030\r \001(\0132\017.ProfilePicture\022\021\n\tonlin" +
+      "e_id\030\013 \001(\t\022\020\n\010nickname\030\002 \001(\t\022\013\n\003uid\030\014 \001(" +
+      "\r\022\023\n\013PAMJOMCOPII\030\004 \001(\r\022\r\n\005score\030\t \001(\r\022\023\n" +
+      "\013BLDAGHCLIFK\030\010 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1247,7 +1459,7 @@ public final class GadgetPlayUidInfoOuterClass {
     internal_static_GadgetPlayUidInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetPlayUidInfo_descriptor,
-        new java.lang.String[] { "OnlineId", "ProfilePicture", "Nickname", "Icon", "BattleWatcherId", "Score", "Uid", });
+        new java.lang.String[] { "ProfilePicture", "OnlineId", "Nickname", "Uid", "PAMJOMCOPII", "Score", "BLDAGHCLIFK", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 

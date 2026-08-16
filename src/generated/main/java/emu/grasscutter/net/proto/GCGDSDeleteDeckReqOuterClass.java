@@ -19,17 +19,16 @@ public final class GCGDSDeleteDeckReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 7;</code>
+     * <pre>
+     * CMD_ID = 29022
+     * </pre>
+     *
+     * <code>uint32 deck_id = 14;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
-   * <pre>
-   * CmdId: 27984
-   * Obf: POBAMAFCDFA
-   * </pre>
-   *
    * Protobuf type {@code GCGDSDeleteDeckReq}
    */
   public static final class GCGDSDeleteDeckReq extends
@@ -74,7 +73,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 112: {
 
               deckId_ = input.readUInt32();
               break;
@@ -111,10 +110,14 @@ public final class GCGDSDeleteDeckReqOuterClass {
               emu.grasscutter.net.proto.GCGDSDeleteDeckReqOuterClass.GCGDSDeleteDeckReq.class, emu.grasscutter.net.proto.GCGDSDeleteDeckReqOuterClass.GCGDSDeleteDeckReq.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 7;
+    public static final int DECK_ID_FIELD_NUMBER = 14;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 7;</code>
+     * <pre>
+     * CMD_ID = 29022
+     * </pre>
+     *
+     * <code>uint32 deck_id = 14;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (deckId_ != 0) {
-        output.writeUInt32(7, deckId_);
+        output.writeUInt32(14, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
       size = 0;
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, deckId_);
+          .computeUInt32Size(14, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +281,6 @@ public final class GCGDSDeleteDeckReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 27984
-     * Obf: POBAMAFCDFA
-     * </pre>
-     *
      * Protobuf type {@code GCGDSDeleteDeckReq}
      */
     public static final class Builder extends
@@ -431,7 +429,11 @@ public final class GCGDSDeleteDeckReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 29022
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -439,7 +441,11 @@ public final class GCGDSDeleteDeckReqOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 29022
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +456,11 @@ public final class GCGDSDeleteDeckReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 29022
+       * </pre>
+       *
+       * <code>uint32 deck_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -527,7 +537,7 @@ public final class GCGDSDeleteDeckReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGDSDeleteDeckReq.proto\"%\n\022GCGDSDelet" +
-      "eDeckReq\022\017\n\007deck_id\030\007 \001(\rB\033\n\031emu.grasscu" +
+      "eDeckReq\022\017\n\007deck_id\030\016 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,28 @@ public final class DeathZoneObserveNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_entity_id = 5;</code>
-     * @return The targetEntityId.
-     */
-    int getTargetEntityId();
-
-    /**
-     * <code>uint32 source_entity_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 source_entity_id = 3;</code>
      * @return The sourceEntityId.
      */
     int getSourceEntityId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 target_entity_id = 1;</code>
+     * @return The targetEntityId.
+     */
+    int getTargetEntityId();
   }
   /**
    * <pre>
-   * CmdId: 29864
-   * Obf: GLFCPEKJHGL
+   * CmdId: 28777
    * </pre>
    *
    * Protobuf type {@code DeathZoneObserveNotify}
@@ -80,12 +87,12 @@ public final class DeathZoneObserveNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               targetEntityId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 24: {
 
               sourceEntityId_ = input.readUInt32();
               break;
@@ -122,26 +129,34 @@ public final class DeathZoneObserveNotifyOuterClass {
               emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify.class, emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify.Builder.class);
     }
 
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int targetEntityId_;
-    /**
-     * <code>uint32 target_entity_id = 5;</code>
-     * @return The targetEntityId.
-     */
-    @java.lang.Override
-    public int getTargetEntityId() {
-      return targetEntityId_;
-    }
-
-    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 3;
     private int sourceEntityId_;
     /**
-     * <code>uint32 source_entity_id = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 source_entity_id = 3;</code>
      * @return The sourceEntityId.
      */
     @java.lang.Override
     public int getSourceEntityId() {
       return sourceEntityId_;
+    }
+
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 1;
+    private int targetEntityId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 target_entity_id = 1;</code>
+     * @return The targetEntityId.
+     */
+    @java.lang.Override
+    public int getTargetEntityId() {
+      return targetEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +174,10 @@ public final class DeathZoneObserveNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetEntityId_ != 0) {
-        output.writeUInt32(5, targetEntityId_);
+        output.writeUInt32(1, targetEntityId_);
       }
       if (sourceEntityId_ != 0) {
-        output.writeUInt32(14, sourceEntityId_);
+        output.writeUInt32(3, sourceEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +190,11 @@ public final class DeathZoneObserveNotifyOuterClass {
       size = 0;
       if (targetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, targetEntityId_);
+          .computeUInt32Size(1, targetEntityId_);
       }
       if (sourceEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, sourceEntityId_);
+          .computeUInt32Size(3, sourceEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +211,10 @@ public final class DeathZoneObserveNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify other = (emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify) obj;
 
-      if (getTargetEntityId()
-          != other.getTargetEntityId()) return false;
       if (getSourceEntityId()
           != other.getSourceEntityId()) return false;
+      if (getTargetEntityId()
+          != other.getTargetEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +226,10 @@ public final class DeathZoneObserveNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetEntityId();
       hash = (37 * hash) + SOURCE_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSourceEntityId();
+      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +327,7 @@ public final class DeathZoneObserveNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29864
-     * Obf: GLFCPEKJHGL
+     * CmdId: 28777
      * </pre>
      *
      * Protobuf type {@code DeathZoneObserveNotify}
@@ -353,9 +367,9 @@ public final class DeathZoneObserveNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetEntityId_ = 0;
-
         sourceEntityId_ = 0;
+
+        targetEntityId_ = 0;
 
         return this;
       }
@@ -383,8 +397,8 @@ public final class DeathZoneObserveNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify buildPartial() {
         emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify result = new emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify(this);
-        result.targetEntityId_ = targetEntityId_;
         result.sourceEntityId_ = sourceEntityId_;
+        result.targetEntityId_ = targetEntityId_;
         onBuilt();
         return result;
       }
@@ -433,11 +447,11 @@ public final class DeathZoneObserveNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify other) {
         if (other == emu.grasscutter.net.proto.DeathZoneObserveNotifyOuterClass.DeathZoneObserveNotify.getDefaultInstance()) return this;
-        if (other.getTargetEntityId() != 0) {
-          setTargetEntityId(other.getTargetEntityId());
-        }
         if (other.getSourceEntityId() != 0) {
           setSourceEntityId(other.getSourceEntityId());
+        }
+        if (other.getTargetEntityId() != 0) {
+          setTargetEntityId(other.getTargetEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +482,13 @@ public final class DeathZoneObserveNotifyOuterClass {
         return this;
       }
 
-      private int targetEntityId_ ;
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @return The targetEntityId.
-       */
-      @java.lang.Override
-      public int getTargetEntityId() {
-        return targetEntityId_;
-      }
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @param value The targetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetEntityId(int value) {
-        
-        targetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetEntityId() {
-        
-        targetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int sourceEntityId_ ;
       /**
-       * <code>uint32 source_entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 source_entity_id = 3;</code>
        * @return The sourceEntityId.
        */
       @java.lang.Override
@@ -509,7 +496,11 @@ public final class DeathZoneObserveNotifyOuterClass {
         return sourceEntityId_;
       }
       /**
-       * <code>uint32 source_entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 source_entity_id = 3;</code>
        * @param value The sourceEntityId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +511,59 @@ public final class DeathZoneObserveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_entity_id = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 source_entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceEntityId() {
         
         sourceEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int targetEntityId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 target_entity_id = 1;</code>
+       * @return The targetEntityId.
+       */
+      @java.lang.Override
+      public int getTargetEntityId() {
+        return targetEntityId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 target_entity_id = 1;</code>
+       * @param value The targetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetEntityId(int value) {
+        
+        targetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 target_entity_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetEntityId() {
+        
+        targetEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +635,8 @@ public final class DeathZoneObserveNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034DeathZoneObserveNotify.proto\"L\n\026DeathZ" +
-      "oneObserveNotify\022\030\n\020target_entity_id\030\005 \001" +
-      "(\r\022\030\n\020source_entity_id\030\016 \001(\rB\033\n\031emu.gras" +
+      "oneObserveNotify\022\030\n\020source_entity_id\030\003 \001" +
+      "(\r\022\030\n\020target_entity_id\030\001 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +648,7 @@ public final class DeathZoneObserveNotifyOuterClass {
     internal_static_DeathZoneObserveNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeathZoneObserveNotify_descriptor,
-        new java.lang.String[] { "TargetEntityId", "SourceEntityId", });
+        new java.lang.String[] { "SourceEntityId", "TargetEntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

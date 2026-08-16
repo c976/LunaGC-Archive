@@ -19,12 +19,20 @@ public final class Uint32PairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 key = 1;</code>
      * @return The key.
      */
     int getKey();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 value = 2;</code>
      * @return The value.
      */
@@ -120,6 +128,10 @@ public final class Uint32PairOuterClass {
     public static final int KEY_FIELD_NUMBER = 1;
     private int key_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 key = 1;</code>
      * @return The key.
      */
@@ -131,6 +143,10 @@ public final class Uint32PairOuterClass {
     public static final int VALUE_FIELD_NUMBER = 2;
     private int value_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 value = 2;</code>
      * @return The value.
      */
@@ -460,6 +476,10 @@ public final class Uint32PairOuterClass {
 
       private int key_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 key = 1;</code>
        * @return The key.
        */
@@ -468,6 +488,10 @@ public final class Uint32PairOuterClass {
         return key_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 key = 1;</code>
        * @param value The key to set.
        * @return This builder for chaining.
@@ -479,6 +503,10 @@ public final class Uint32PairOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 key = 1;</code>
        * @return This builder for chaining.
        */
@@ -491,6 +519,10 @@ public final class Uint32PairOuterClass {
 
       private int value_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 value = 2;</code>
        * @return The value.
        */
@@ -499,6 +531,10 @@ public final class Uint32PairOuterClass {
         return value_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 value = 2;</code>
        * @param value The value to set.
        * @return This builder for chaining.
@@ -510,6 +546,10 @@ public final class Uint32PairOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 value = 2;</code>
        * @return This builder for chaining.
        */

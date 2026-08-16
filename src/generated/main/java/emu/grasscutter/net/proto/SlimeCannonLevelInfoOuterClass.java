@@ -19,46 +19,74 @@ public final class SlimeCannonLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 use_time = 6;</code>
+     * @return The useTime.
      */
-    int getLevelId();
+    int getUseTime();
 
     /**
-     * <code>uint32 score = 2;</code>
-     * @return The score.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 DMDJJOOCOFI = 1;</code>
+     * @return The dMDJJOOCOFI.
      */
-    int getScore();
+    int getDMDJJOOCOFI();
 
     /**
-     * <code>uint32 FMCNOHGGOHE = 5;</code>
-     * @return The fMCNOHGGOHE.
-     */
-    int getFMCNOHGGOHE();
-
-    /**
-     * <code>uint32 OICALHDNGGN = 13;</code>
-     * @return The oICALHDNGGN.
-     */
-    int getOICALHDNGGN();
-
-    /**
-     * <code>bool is_open = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 14;</code>
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 use_time = 1;</code>
-     * @return The useTime.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
-    int getUseTime();
+    int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 HEAAOGMENIE = 12;</code>
+     * @return The hEAAOGMENIE.
+     */
+    int getHEAAOGMENIE();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
+     * @return The score.
+     */
+    int getScore();
   }
   /**
    * Protobuf type {@code SlimeCannonLevelInfo}
@@ -107,37 +135,37 @@ public final class SlimeCannonLevelInfoOuterClass {
               break;
             case 8: {
 
-              useTime_ = input.readUInt32();
+              dMDJJOOCOFI_ = input.readUInt32();
               break;
             }
-            case 16: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              fMCNOHGGOHE_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 32: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 40: {
 
-              oICALHDNGGN_ = input.readUInt32();
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 48: {
+
+              useTime_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              hEAAOGMENIE_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              isFinish_ = input.readBool();
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -172,54 +200,44 @@ public final class SlimeCannonLevelInfoOuterClass {
               emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo.class, emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
-    private int levelId_;
+    public static final int USE_TIME_FIELD_NUMBER = 6;
+    private int useTime_;
     /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 use_time = 6;</code>
+     * @return The useTime.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getUseTime() {
+      return useTime_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 2;
-    private int score_;
+    public static final int DMDJJOOCOFI_FIELD_NUMBER = 1;
+    private int dMDJJOOCOFI_;
     /**
-     * <code>uint32 score = 2;</code>
-     * @return The score.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 DMDJJOOCOFI = 1;</code>
+     * @return The dMDJJOOCOFI.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public int getDMDJJOOCOFI() {
+      return dMDJJOOCOFI_;
     }
 
-    public static final int FMCNOHGGOHE_FIELD_NUMBER = 5;
-    private int fMCNOHGGOHE_;
-    /**
-     * <code>uint32 FMCNOHGGOHE = 5;</code>
-     * @return The fMCNOHGGOHE.
-     */
-    @java.lang.Override
-    public int getFMCNOHGGOHE() {
-      return fMCNOHGGOHE_;
-    }
-
-    public static final int OICALHDNGGN_FIELD_NUMBER = 13;
-    private int oICALHDNGGN_;
-    /**
-     * <code>uint32 OICALHDNGGN = 13;</code>
-     * @return The oICALHDNGGN.
-     */
-    @java.lang.Override
-    public int getOICALHDNGGN() {
-      return oICALHDNGGN_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -227,10 +245,14 @@ public final class SlimeCannonLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 14;
+    public static final int IS_FINISH_FIELD_NUMBER = 5;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 14;</code>
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -238,15 +260,49 @@ public final class SlimeCannonLevelInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int USE_TIME_FIELD_NUMBER = 1;
-    private int useTime_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    private int levelId_;
     /**
-     * <code>uint32 use_time = 1;</code>
-     * @return The useTime.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getUseTime() {
-      return useTime_;
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int HEAAOGMENIE_FIELD_NUMBER = 12;
+    private int hEAAOGMENIE_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 HEAAOGMENIE = 12;</code>
+     * @return The hEAAOGMENIE.
+     */
+    @java.lang.Override
+    public int getHEAAOGMENIE() {
+      return hEAAOGMENIE_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 9;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -263,26 +319,26 @@ public final class SlimeCannonLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (useTime_ != 0) {
-        output.writeUInt32(1, useTime_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(2, score_);
-      }
-      if (fMCNOHGGOHE_ != 0) {
-        output.writeUInt32(5, fMCNOHGGOHE_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+      if (dMDJJOOCOFI_ != 0) {
+        output.writeUInt32(1, dMDJJOOCOFI_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
-      }
-      if (oICALHDNGGN_ != 0) {
-        output.writeUInt32(13, oICALHDNGGN_);
+        output.writeUInt32(4, levelId_);
       }
       if (isFinish_ != false) {
-        output.writeBool(14, isFinish_);
+        output.writeBool(5, isFinish_);
+      }
+      if (useTime_ != 0) {
+        output.writeUInt32(6, useTime_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(9, score_);
+      }
+      if (hEAAOGMENIE_ != 0) {
+        output.writeUInt32(12, hEAAOGMENIE_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(14, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -293,33 +349,33 @@ public final class SlimeCannonLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (useTime_ != 0) {
+      if (dMDJJOOCOFI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, useTime_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, score_);
-      }
-      if (fMCNOHGGOHE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, fMCNOHGGOHE_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeUInt32Size(1, dMDJJOOCOFI_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
-      }
-      if (oICALHDNGGN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, oICALHDNGGN_);
+          .computeUInt32Size(4, levelId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isFinish_);
+          .computeBoolSize(5, isFinish_);
+      }
+      if (useTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, useTime_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, score_);
+      }
+      if (hEAAOGMENIE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, hEAAOGMENIE_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -336,20 +392,20 @@ public final class SlimeCannonLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo other = (emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getScore()
-          != other.getScore()) return false;
-      if (getFMCNOHGGOHE()
-          != other.getFMCNOHGGOHE()) return false;
-      if (getOICALHDNGGN()
-          != other.getOICALHDNGGN()) return false;
+      if (getUseTime()
+          != other.getUseTime()) return false;
+      if (getDMDJJOOCOFI()
+          != other.getDMDJJOOCOFI()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
-      if (getUseTime()
-          != other.getUseTime()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getHEAAOGMENIE()
+          != other.getHEAAOGMENIE()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -361,22 +417,22 @@ public final class SlimeCannonLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + FMCNOHGGOHE_FIELD_NUMBER;
-      hash = (53 * hash) + getFMCNOHGGOHE();
-      hash = (37 * hash) + OICALHDNGGN_FIELD_NUMBER;
-      hash = (53 * hash) + getOICALHDNGGN();
+      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getUseTime();
+      hash = (37 * hash) + DMDJJOOCOFI_FIELD_NUMBER;
+      hash = (53 * hash) + getDMDJJOOCOFI();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getUseTime();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + HEAAOGMENIE_FIELD_NUMBER;
+      hash = (53 * hash) + getHEAAOGMENIE();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,19 +566,19 @@ public final class SlimeCannonLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
+        useTime_ = 0;
 
-        score_ = 0;
-
-        fMCNOHGGOHE_ = 0;
-
-        oICALHDNGGN_ = 0;
+        dMDJJOOCOFI_ = 0;
 
         isOpen_ = false;
 
         isFinish_ = false;
 
-        useTime_ = 0;
+        levelId_ = 0;
+
+        hEAAOGMENIE_ = 0;
+
+        score_ = 0;
 
         return this;
       }
@@ -550,13 +606,13 @@ public final class SlimeCannonLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo buildPartial() {
         emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo result = new emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo(this);
-        result.levelId_ = levelId_;
-        result.score_ = score_;
-        result.fMCNOHGGOHE_ = fMCNOHGGOHE_;
-        result.oICALHDNGGN_ = oICALHDNGGN_;
+        result.useTime_ = useTime_;
+        result.dMDJJOOCOFI_ = dMDJJOOCOFI_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
-        result.useTime_ = useTime_;
+        result.levelId_ = levelId_;
+        result.hEAAOGMENIE_ = hEAAOGMENIE_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -605,17 +661,11 @@ public final class SlimeCannonLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo other) {
         if (other == emu.grasscutter.net.proto.SlimeCannonLevelInfoOuterClass.SlimeCannonLevelInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getUseTime() != 0) {
+          setUseTime(other.getUseTime());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
-        if (other.getFMCNOHGGOHE() != 0) {
-          setFMCNOHGGOHE(other.getFMCNOHGGOHE());
-        }
-        if (other.getOICALHDNGGN() != 0) {
-          setOICALHDNGGN(other.getOICALHDNGGN());
+        if (other.getDMDJJOOCOFI() != 0) {
+          setDMDJJOOCOFI(other.getDMDJJOOCOFI());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -623,8 +673,14 @@ public final class SlimeCannonLevelInfoOuterClass {
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
-        if (other.getUseTime() != 0) {
-          setUseTime(other.getUseTime());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getHEAAOGMENIE() != 0) {
+          setHEAAOGMENIE(other.getHEAAOGMENIE());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,133 +711,99 @@ public final class SlimeCannonLevelInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
+      private int useTime_ ;
       /**
-       * <code>uint32 level_id = 12;</code>
-       * @return The levelId.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 use_time = 6;</code>
+       * @return The useTime.
        */
       @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
+      public int getUseTime() {
+        return useTime_;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
-       * @param value The levelId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 use_time = 6;</code>
+       * @param value The useTime to set.
        * @return This builder for chaining.
        */
-      public Builder setLevelId(int value) {
+      public Builder setUseTime(int value) {
         
-        levelId_ = value;
+        useTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 use_time = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevelId() {
+      public Builder clearUseTime() {
         
-        levelId_ = 0;
+        useTime_ = 0;
         onChanged();
         return this;
       }
 
-      private int score_ ;
+      private int dMDJJOOCOFI_ ;
       /**
-       * <code>uint32 score = 2;</code>
-       * @return The score.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DMDJJOOCOFI = 1;</code>
+       * @return The dMDJJOOCOFI.
        */
       @java.lang.Override
-      public int getScore() {
-        return score_;
+      public int getDMDJJOOCOFI() {
+        return dMDJJOOCOFI_;
       }
       /**
-       * <code>uint32 score = 2;</code>
-       * @param value The score to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DMDJJOOCOFI = 1;</code>
+       * @param value The dMDJJOOCOFI to set.
        * @return This builder for chaining.
        */
-      public Builder setScore(int value) {
+      public Builder setDMDJJOOCOFI(int value) {
         
-        score_ = value;
+        dMDJJOOCOFI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 DMDJJOOCOFI = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScore() {
+      public Builder clearDMDJJOOCOFI() {
         
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fMCNOHGGOHE_ ;
-      /**
-       * <code>uint32 FMCNOHGGOHE = 5;</code>
-       * @return The fMCNOHGGOHE.
-       */
-      @java.lang.Override
-      public int getFMCNOHGGOHE() {
-        return fMCNOHGGOHE_;
-      }
-      /**
-       * <code>uint32 FMCNOHGGOHE = 5;</code>
-       * @param value The fMCNOHGGOHE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFMCNOHGGOHE(int value) {
-        
-        fMCNOHGGOHE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FMCNOHGGOHE = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFMCNOHGGOHE() {
-        
-        fMCNOHGGOHE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oICALHDNGGN_ ;
-      /**
-       * <code>uint32 OICALHDNGGN = 13;</code>
-       * @return The oICALHDNGGN.
-       */
-      @java.lang.Override
-      public int getOICALHDNGGN() {
-        return oICALHDNGGN_;
-      }
-      /**
-       * <code>uint32 OICALHDNGGN = 13;</code>
-       * @param value The oICALHDNGGN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOICALHDNGGN(int value) {
-        
-        oICALHDNGGN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OICALHDNGGN = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOICALHDNGGN() {
-        
-        oICALHDNGGN_ = 0;
+        dMDJJOOCOFI_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -789,7 +811,11 @@ public final class SlimeCannonLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -800,7 +826,11 @@ public final class SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -812,7 +842,11 @@ public final class SlimeCannonLevelInfoOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 14;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_finish = 5;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -820,7 +854,11 @@ public final class SlimeCannonLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 14;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_finish = 5;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -831,7 +869,11 @@ public final class SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 14;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool is_finish = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -841,33 +883,131 @@ public final class SlimeCannonLevelInfoOuterClass {
         return this;
       }
 
-      private int useTime_ ;
+      private int levelId_ ;
       /**
-       * <code>uint32 use_time = 1;</code>
-       * @return The useTime.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
+       * @return The levelId.
        */
       @java.lang.Override
-      public int getUseTime() {
-        return useTime_;
+      public int getLevelId() {
+        return levelId_;
       }
       /**
-       * <code>uint32 use_time = 1;</code>
-       * @param value The useTime to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
+       * @param value The levelId to set.
        * @return This builder for chaining.
        */
-      public Builder setUseTime(int value) {
+      public Builder setLevelId(int value) {
         
-        useTime_ = value;
+        levelId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 use_time = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUseTime() {
+      public Builder clearLevelId() {
         
-        useTime_ = 0;
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hEAAOGMENIE_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 HEAAOGMENIE = 12;</code>
+       * @return The hEAAOGMENIE.
+       */
+      @java.lang.Override
+      public int getHEAAOGMENIE() {
+        return hEAAOGMENIE_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 HEAAOGMENIE = 12;</code>
+       * @param value The hEAAOGMENIE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHEAAOGMENIE(int value) {
+        
+        hEAAOGMENIE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 HEAAOGMENIE = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHEAAOGMENIE() {
+        
+        hEAAOGMENIE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -939,10 +1079,10 @@ public final class SlimeCannonLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032SlimeCannonLevelInfo.proto\"\227\001\n\024SlimeCa" +
-      "nnonLevelInfo\022\020\n\010level_id\030\014 \001(\r\022\r\n\005score" +
-      "\030\002 \001(\r\022\023\n\013FMCNOHGGOHE\030\005 \001(\r\022\023\n\013OICALHDNG" +
-      "GN\030\r \001(\r\022\017\n\007is_open\030\013 \001(\010\022\021\n\tis_finish\030\016" +
-      " \001(\010\022\020\n\010use_time\030\001 \001(\rB\033\n\031emu.grasscutte" +
+      "nnonLevelInfo\022\020\n\010use_time\030\006 \001(\r\022\023\n\013DMDJJ" +
+      "OOCOFI\030\001 \001(\r\022\017\n\007is_open\030\016 \001(\010\022\021\n\tis_fini" +
+      "sh\030\005 \001(\010\022\020\n\010level_id\030\004 \001(\r\022\023\n\013HEAAOGMENI" +
+      "E\030\014 \001(\r\022\r\n\005score\030\t \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -954,7 +1094,7 @@ public final class SlimeCannonLevelInfoOuterClass {
     internal_static_SlimeCannonLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SlimeCannonLevelInfo_descriptor,
-        new java.lang.String[] { "LevelId", "Score", "FMCNOHGGOHE", "OICALHDNGGN", "IsOpen", "IsFinish", "UseTime", });
+        new java.lang.String[] { "UseTime", "DMDJJOOCOFI", "IsOpen", "IsFinish", "LevelId", "HEAAOGMENIE", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

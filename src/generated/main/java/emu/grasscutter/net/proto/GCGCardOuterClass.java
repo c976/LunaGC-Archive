@@ -19,122 +19,118 @@ public final class GCGCardOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> 
-        getSkillLimitsListList();
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index);
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    int getSkillLimitsListCount();
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
-        getSkillLimitsListOrBuilderList();
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 controller_id = 5;</code>
-     * @return The controllerId.
-     */
-    int getControllerId();
-
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @return A list containing the tagList.
-     */
-    java.util.List<java.lang.Integer> getTagListList();
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @return The count of tagList.
-     */
-    int getTagListCount();
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The tagList at the given index.
-     */
-    int getTagList(int index);
-
-    /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> 
         getTokenListList();
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken getTokenList(int index);
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     int getTokenListCount();
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder> 
         getTokenListOrBuilderList();
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder getTokenListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 face_type = 10;</code>
-     * @return The faceType.
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
      */
-    int getFaceType();
+    java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> 
+        getSkillLimitsListList();
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index);
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    int getSkillLimitsListCount();
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
+        getSkillLimitsListOrBuilderList();
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
+        int index);
 
     /**
-     * <code>bool is_show = 11;</code>
-     * @return The isShow.
-     */
-    boolean getIsShow();
-
-    /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
     int getSkillIdList(int index);
 
     /**
-     * <code>uint32 id = 12;</code>
-     * @return The id.
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @return A list containing the tagList.
      */
-    int getId();
+    java.util.List<java.lang.Integer> getTagListList();
+    /**
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @return The count of tagList.
+     */
+    int getTagListCount();
+    /**
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The tagList at the given index.
+     */
+    int getTagList(int index);
 
     /**
-     * <code>uint32 guid = 9;</code>
+     * <code>uint32 controller_id = 6;</code>
+     * @return The controllerId.
+     */
+    int getControllerId();
+
+    /**
+     * <code>uint32 guid = 4;</code>
      * @return The guid.
      */
     int getGuid();
+
+    /**
+     * <code>uint32 face_type = 13;</code>
+     * @return The faceType.
+     */
+    int getFaceType();
+
+    /**
+     * <code>bool is_show = 3;</code>
+     * @return The isShow.
+     */
+    boolean getIsShow();
+
+    /**
+     * <code>uint32 id = 5;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
-   * <pre>
-   * Obf: OEOPLGEHLKG
-   * </pre>
-   *
    * Protobuf type {@code GCGCard}
    */
   public static final class GCGCard extends
@@ -147,10 +143,10 @@ public final class GCGCardOuterClass {
       super(builder);
     }
     private GCGCard() {
-      skillLimitsList_ = java.util.Collections.emptyList();
-      tagList_ = emptyIntList();
       tokenList_ = java.util.Collections.emptyList();
+      skillLimitsList_ = java.util.Collections.emptyList();
       skillIdList_ = emptyIntList();
+      tagList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -185,37 +181,28 @@ public final class GCGCardOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                tokenList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              tokenList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.parser(), extensionRegistry));
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 skillLimitsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               skillLimitsList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.parser(), extensionRegistry));
               break;
             }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 skillIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               skillIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
                 skillIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
                 skillIdList_.addInt(input.readUInt32());
@@ -223,25 +210,49 @@ public final class GCGCardOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 24: {
+
+              isShow_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              guid_ = input.readUInt32();
+              break;
+            }
             case 40: {
+
+              id_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               controllerId_ = input.readUInt32();
               break;
             }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                tokenList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              tokenList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.parser(), extensionRegistry));
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 tagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000008;
               }
               tagList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
                 tagList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000008;
               }
               while (input.getBytesUntilLimit() > 0) {
                 tagList_.addInt(input.readUInt32());
@@ -249,24 +260,9 @@ public final class GCGCardOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
-
-              guid_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 104: {
 
               faceType_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isShow_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -284,16 +280,16 @@ public final class GCGCardOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          tokenList_ = java.util.Collections.unmodifiableList(tokenList_);
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           skillLimitsList_ = java.util.Collections.unmodifiableList(skillLimitsList_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           skillIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          tokenList_ = java.util.Collections.unmodifiableList(tokenList_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           tagList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -313,96 +309,17 @@ public final class GCGCardOuterClass {
               emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.class, emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.Builder.class);
     }
 
-    public static final int SKILL_LIMITS_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> skillLimitsList_;
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> getSkillLimitsListList() {
-      return skillLimitsList_;
-    }
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
-        getSkillLimitsListOrBuilderList() {
-      return skillLimitsList_;
-    }
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    @java.lang.Override
-    public int getSkillLimitsListCount() {
-      return skillLimitsList_.size();
-    }
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index) {
-      return skillLimitsList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
-        int index) {
-      return skillLimitsList_.get(index);
-    }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 5;
-    private int controllerId_;
-    /**
-     * <code>uint32 controller_id = 5;</code>
-     * @return The controllerId.
-     */
-    @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
-    }
-
-    public static final int TAG_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList tagList_;
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @return A list containing the tagList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTagListList() {
-      return tagList_;
-    }
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @return The count of tagList.
-     */
-    public int getTagListCount() {
-      return tagList_.size();
-    }
-    /**
-     * <code>repeated uint32 tag_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The tagList at the given index.
-     */
-    public int getTagList(int index) {
-      return tagList_.getInt(index);
-    }
-    private int tagListMemoizedSerializedSize = -1;
-
-    public static final int TOKEN_LIST_FIELD_NUMBER = 1;
+    public static final int TOKEN_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> tokenList_;
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> getTokenListList() {
       return tokenList_;
     }
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder> 
@@ -410,21 +327,21 @@ public final class GCGCardOuterClass {
       return tokenList_;
     }
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     @java.lang.Override
     public int getTokenListCount() {
       return tokenList_.size();
     }
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken getTokenList(int index) {
       return tokenList_.get(index);
     }
     /**
-     * <code>repeated .GCGToken token_list = 1;</code>
+     * <code>repeated .GCGToken token_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder getTokenListOrBuilder(
@@ -432,32 +349,50 @@ public final class GCGCardOuterClass {
       return tokenList_.get(index);
     }
 
-    public static final int FACE_TYPE_FIELD_NUMBER = 10;
-    private int faceType_;
+    public static final int SKILL_LIMITS_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> skillLimitsList_;
     /**
-     * <code>uint32 face_type = 10;</code>
-     * @return The faceType.
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
      */
     @java.lang.Override
-    public int getFaceType() {
-      return faceType_;
+    public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> getSkillLimitsListList() {
+      return skillLimitsList_;
     }
-
-    public static final int IS_SHOW_FIELD_NUMBER = 11;
-    private boolean isShow_;
     /**
-     * <code>bool is_show = 11;</code>
-     * @return The isShow.
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
      */
     @java.lang.Override
-    public boolean getIsShow() {
-      return isShow_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
+        getSkillLimitsListOrBuilderList() {
+      return skillLimitsList_;
+    }
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    @java.lang.Override
+    public int getSkillLimitsListCount() {
+      return skillLimitsList_.size();
+    }
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index) {
+      return skillLimitsList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
+        int index) {
+      return skillLimitsList_.get(index);
     }
 
-    public static final int SKILL_ID_LIST_FIELD_NUMBER = 4;
+    public static final int SKILL_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @return A list containing the skillIdList.
      */
     @java.lang.Override
@@ -466,14 +401,14 @@ public final class GCGCardOuterClass {
       return skillIdList_;
     }
     /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @return The count of skillIdList.
      */
     public int getSkillIdListCount() {
       return skillIdList_.size();
     }
     /**
-     * <code>repeated uint32 skill_id_list = 4;</code>
+     * <code>repeated uint32 skill_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
@@ -482,26 +417,87 @@ public final class GCGCardOuterClass {
     }
     private int skillIdListMemoizedSerializedSize = -1;
 
-    public static final int ID_FIELD_NUMBER = 12;
-    private int id_;
+    public static final int TAG_LIST_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList tagList_;
     /**
-     * <code>uint32 id = 12;</code>
-     * @return The id.
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @return A list containing the tagList.
      */
     @java.lang.Override
-    public int getId() {
-      return id_;
+    public java.util.List<java.lang.Integer>
+        getTagListList() {
+      return tagList_;
+    }
+    /**
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @return The count of tagList.
+     */
+    public int getTagListCount() {
+      return tagList_.size();
+    }
+    /**
+     * <code>repeated uint32 tag_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The tagList at the given index.
+     */
+    public int getTagList(int index) {
+      return tagList_.getInt(index);
+    }
+    private int tagListMemoizedSerializedSize = -1;
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 6;
+    private int controllerId_;
+    /**
+     * <code>uint32 controller_id = 6;</code>
+     * @return The controllerId.
+     */
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 9;
+    public static final int GUID_FIELD_NUMBER = 4;
     private int guid_;
     /**
-     * <code>uint32 guid = 9;</code>
+     * <code>uint32 guid = 4;</code>
      * @return The guid.
      */
     @java.lang.Override
     public int getGuid() {
       return guid_;
+    }
+
+    public static final int FACE_TYPE_FIELD_NUMBER = 13;
+    private int faceType_;
+    /**
+     * <code>uint32 face_type = 13;</code>
+     * @return The faceType.
+     */
+    @java.lang.Override
+    public int getFaceType() {
+      return faceType_;
+    }
+
+    public static final int IS_SHOW_FIELD_NUMBER = 3;
+    private boolean isShow_;
+    /**
+     * <code>bool is_show = 3;</code>
+     * @return The isShow.
+     */
+    @java.lang.Override
+    public boolean getIsShow() {
+      return isShow_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 5;
+    private int id_;
+    /**
+     * <code>uint32 id = 5;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -519,40 +515,40 @@ public final class GCGCardOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < tokenList_.size(); i++) {
-        output.writeMessage(1, tokenList_.get(i));
-      }
       for (int i = 0; i < skillLimitsList_.size(); i++) {
-        output.writeMessage(2, skillLimitsList_.get(i));
+        output.writeMessage(1, skillLimitsList_.get(i));
       }
       if (getSkillIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(skillIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillIdList_.size(); i++) {
         output.writeUInt32NoTag(skillIdList_.getInt(i));
       }
+      if (isShow_ != false) {
+        output.writeBool(3, isShow_);
+      }
+      if (guid_ != 0) {
+        output.writeUInt32(4, guid_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(5, id_);
+      }
       if (controllerId_ != 0) {
-        output.writeUInt32(5, controllerId_);
+        output.writeUInt32(6, controllerId_);
+      }
+      for (int i = 0; i < tokenList_.size(); i++) {
+        output.writeMessage(8, tokenList_.get(i));
       }
       if (getTagListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(tagListMemoizedSerializedSize);
       }
       for (int i = 0; i < tagList_.size(); i++) {
         output.writeUInt32NoTag(tagList_.getInt(i));
       }
-      if (guid_ != 0) {
-        output.writeUInt32(9, guid_);
-      }
       if (faceType_ != 0) {
-        output.writeUInt32(10, faceType_);
-      }
-      if (isShow_ != false) {
-        output.writeBool(11, isShow_);
-      }
-      if (id_ != 0) {
-        output.writeUInt32(12, id_);
+        output.writeUInt32(13, faceType_);
       }
       unknownFields.writeTo(output);
     }
@@ -563,13 +559,9 @@ public final class GCGCardOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < tokenList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, tokenList_.get(i));
-      }
       for (int i = 0; i < skillLimitsList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, skillLimitsList_.get(i));
+          .computeMessageSize(1, skillLimitsList_.get(i));
       }
       {
         int dataSize = 0;
@@ -585,9 +577,25 @@ public final class GCGCardOuterClass {
         }
         skillIdListMemoizedSerializedSize = dataSize;
       }
+      if (isShow_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isShow_);
+      }
+      if (guid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, guid_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, id_);
+      }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, controllerId_);
+          .computeUInt32Size(6, controllerId_);
+      }
+      for (int i = 0; i < tokenList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, tokenList_.get(i));
       }
       {
         int dataSize = 0;
@@ -603,21 +611,9 @@ public final class GCGCardOuterClass {
         }
         tagListMemoizedSerializedSize = dataSize;
       }
-      if (guid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, guid_);
-      }
       if (faceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, faceType_);
-      }
-      if (isShow_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isShow_);
-      }
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, id_);
+          .computeUInt32Size(13, faceType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -634,24 +630,24 @@ public final class GCGCardOuterClass {
       }
       emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard other = (emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard) obj;
 
-      if (!getSkillLimitsListList()
-          .equals(other.getSkillLimitsListList())) return false;
-      if (getControllerId()
-          != other.getControllerId()) return false;
-      if (!getTagListList()
-          .equals(other.getTagListList())) return false;
       if (!getTokenListList()
           .equals(other.getTokenListList())) return false;
+      if (!getSkillLimitsListList()
+          .equals(other.getSkillLimitsListList())) return false;
+      if (!getSkillIdListList()
+          .equals(other.getSkillIdListList())) return false;
+      if (!getTagListList()
+          .equals(other.getTagListList())) return false;
+      if (getControllerId()
+          != other.getControllerId()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
       if (getFaceType()
           != other.getFaceType()) return false;
       if (getIsShow()
           != other.getIsShow()) return false;
-      if (!getSkillIdListList()
-          .equals(other.getSkillIdListList())) return false;
       if (getId()
           != other.getId()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -663,33 +659,33 @@ public final class GCGCardOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getSkillLimitsListCount() > 0) {
-        hash = (37 * hash) + SKILL_LIMITS_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSkillLimitsListList().hashCode();
-      }
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      if (getTagListCount() > 0) {
-        hash = (37 * hash) + TAG_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTagListList().hashCode();
-      }
       if (getTokenListCount() > 0) {
         hash = (37 * hash) + TOKEN_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTokenListList().hashCode();
       }
+      if (getSkillLimitsListCount() > 0) {
+        hash = (37 * hash) + SKILL_LIMITS_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSkillLimitsListList().hashCode();
+      }
+      if (getSkillIdListCount() > 0) {
+        hash = (37 * hash) + SKILL_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSkillIdListList().hashCode();
+      }
+      if (getTagListCount() > 0) {
+        hash = (37 * hash) + TAG_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTagListList().hashCode();
+      }
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
       hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getFaceType();
       hash = (37 * hash) + IS_SHOW_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShow());
-      if (getSkillIdListCount() > 0) {
-        hash = (37 * hash) + SKILL_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSkillIdListList().hashCode();
-      }
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -786,10 +782,6 @@ public final class GCGCardOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OEOPLGEHLKG
-     * </pre>
-     *
      * Protobuf type {@code GCGCard}
      */
     public static final class Builder extends
@@ -822,38 +814,38 @@ public final class GCGCardOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getSkillLimitsListFieldBuilder();
           getTokenListFieldBuilder();
+          getSkillLimitsListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (skillLimitsListBuilder_ == null) {
-          skillLimitsList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          skillLimitsListBuilder_.clear();
-        }
-        controllerId_ = 0;
-
-        tagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         if (tokenListBuilder_ == null) {
           tokenList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           tokenListBuilder_.clear();
         }
+        if (skillLimitsListBuilder_ == null) {
+          skillLimitsList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          skillLimitsListBuilder_.clear();
+        }
+        skillIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        tagList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        controllerId_ = 0;
+
+        guid_ = 0;
+
         faceType_ = 0;
 
         isShow_ = false;
 
-        skillIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
         id_ = 0;
-
-        guid_ = 0;
 
         return this;
       }
@@ -882,39 +874,39 @@ public final class GCGCardOuterClass {
       public emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard buildPartial() {
         emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard result = new emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard(this);
         int from_bitField0_ = bitField0_;
-        if (skillLimitsListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            skillLimitsList_ = java.util.Collections.unmodifiableList(skillLimitsList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.skillLimitsList_ = skillLimitsList_;
-        } else {
-          result.skillLimitsList_ = skillLimitsListBuilder_.build();
-        }
-        result.controllerId_ = controllerId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          tagList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.tagList_ = tagList_;
         if (tokenListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             tokenList_ = java.util.Collections.unmodifiableList(tokenList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.tokenList_ = tokenList_;
         } else {
           result.tokenList_ = tokenListBuilder_.build();
         }
-        result.faceType_ = faceType_;
-        result.isShow_ = isShow_;
-        if (((bitField0_ & 0x00000008) != 0)) {
+        if (skillLimitsListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            skillLimitsList_ = java.util.Collections.unmodifiableList(skillLimitsList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.skillLimitsList_ = skillLimitsList_;
+        } else {
+          result.skillLimitsList_ = skillLimitsListBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000004) != 0)) {
           skillIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.skillIdList_ = skillIdList_;
-        result.id_ = id_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          tagList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.tagList_ = tagList_;
+        result.controllerId_ = controllerId_;
         result.guid_ = guid_;
+        result.faceType_ = faceType_;
+        result.isShow_ = isShow_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -963,50 +955,11 @@ public final class GCGCardOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard other) {
         if (other == emu.grasscutter.net.proto.GCGCardOuterClass.GCGCard.getDefaultInstance()) return this;
-        if (skillLimitsListBuilder_ == null) {
-          if (!other.skillLimitsList_.isEmpty()) {
-            if (skillLimitsList_.isEmpty()) {
-              skillLimitsList_ = other.skillLimitsList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureSkillLimitsListIsMutable();
-              skillLimitsList_.addAll(other.skillLimitsList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.skillLimitsList_.isEmpty()) {
-            if (skillLimitsListBuilder_.isEmpty()) {
-              skillLimitsListBuilder_.dispose();
-              skillLimitsListBuilder_ = null;
-              skillLimitsList_ = other.skillLimitsList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              skillLimitsListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getSkillLimitsListFieldBuilder() : null;
-            } else {
-              skillLimitsListBuilder_.addAllMessages(other.skillLimitsList_);
-            }
-          }
-        }
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
-        }
-        if (!other.tagList_.isEmpty()) {
-          if (tagList_.isEmpty()) {
-            tagList_ = other.tagList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureTagListIsMutable();
-            tagList_.addAll(other.tagList_);
-          }
-          onChanged();
-        }
         if (tokenListBuilder_ == null) {
           if (!other.tokenList_.isEmpty()) {
             if (tokenList_.isEmpty()) {
               tokenList_ = other.tokenList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureTokenListIsMutable();
               tokenList_.addAll(other.tokenList_);
@@ -1019,7 +972,7 @@ public final class GCGCardOuterClass {
               tokenListBuilder_.dispose();
               tokenListBuilder_ = null;
               tokenList_ = other.tokenList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
               tokenListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getTokenListFieldBuilder() : null;
@@ -1028,27 +981,66 @@ public final class GCGCardOuterClass {
             }
           }
         }
-        if (other.getFaceType() != 0) {
-          setFaceType(other.getFaceType());
-        }
-        if (other.getIsShow() != false) {
-          setIsShow(other.getIsShow());
+        if (skillLimitsListBuilder_ == null) {
+          if (!other.skillLimitsList_.isEmpty()) {
+            if (skillLimitsList_.isEmpty()) {
+              skillLimitsList_ = other.skillLimitsList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureSkillLimitsListIsMutable();
+              skillLimitsList_.addAll(other.skillLimitsList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.skillLimitsList_.isEmpty()) {
+            if (skillLimitsListBuilder_.isEmpty()) {
+              skillLimitsListBuilder_.dispose();
+              skillLimitsListBuilder_ = null;
+              skillLimitsList_ = other.skillLimitsList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              skillLimitsListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSkillLimitsListFieldBuilder() : null;
+            } else {
+              skillLimitsListBuilder_.addAllMessages(other.skillLimitsList_);
+            }
+          }
         }
         if (!other.skillIdList_.isEmpty()) {
           if (skillIdList_.isEmpty()) {
             skillIdList_ = other.skillIdList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureSkillIdListIsMutable();
             skillIdList_.addAll(other.skillIdList_);
           }
           onChanged();
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
+        if (!other.tagList_.isEmpty()) {
+          if (tagList_.isEmpty()) {
+            tagList_ = other.tagList_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureTagListIsMutable();
+            tagList_.addAll(other.tagList_);
+          }
+          onChanged();
+        }
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
         }
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
+        }
+        if (other.getFaceType() != 0) {
+          setFaceType(other.getFaceType());
+        }
+        if (other.getIsShow() != false) {
+          setIsShow(other.getIsShow());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1080,362 +1072,12 @@ public final class GCGCardOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> skillLimitsList_ =
-        java.util.Collections.emptyList();
-      private void ensureSkillLimitsListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          skillLimitsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo>(skillLimitsList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> skillLimitsListBuilder_;
-
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> getSkillLimitsListList() {
-        if (skillLimitsListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(skillLimitsList_);
-        } else {
-          return skillLimitsListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public int getSkillLimitsListCount() {
-        if (skillLimitsListBuilder_ == null) {
-          return skillLimitsList_.size();
-        } else {
-          return skillLimitsListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index) {
-        if (skillLimitsListBuilder_ == null) {
-          return skillLimitsList_.get(index);
-        } else {
-          return skillLimitsListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder setSkillLimitsList(
-          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
-        if (skillLimitsListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.set(index, value);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder setSkillLimitsList(
-          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
-        if (skillLimitsListBuilder_ == null) {
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder addSkillLimitsList(emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
-        if (skillLimitsListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.add(value);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder addSkillLimitsList(
-          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
-        if (skillLimitsListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.add(index, value);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder addSkillLimitsList(
-          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
-        if (skillLimitsListBuilder_ == null) {
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder addSkillLimitsList(
-          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
-        if (skillLimitsListBuilder_ == null) {
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder addAllSkillLimitsList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> values) {
-        if (skillLimitsListBuilder_ == null) {
-          ensureSkillLimitsListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, skillLimitsList_);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder clearSkillLimitsList() {
-        if (skillLimitsListBuilder_ == null) {
-          skillLimitsList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public Builder removeSkillLimitsList(int index) {
-        if (skillLimitsListBuilder_ == null) {
-          ensureSkillLimitsListIsMutable();
-          skillLimitsList_.remove(index);
-          onChanged();
-        } else {
-          skillLimitsListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder getSkillLimitsListBuilder(
-          int index) {
-        return getSkillLimitsListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
-          int index) {
-        if (skillLimitsListBuilder_ == null) {
-          return skillLimitsList_.get(index);  } else {
-          return skillLimitsListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
-           getSkillLimitsListOrBuilderList() {
-        if (skillLimitsListBuilder_ != null) {
-          return skillLimitsListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(skillLimitsList_);
-        }
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder addSkillLimitsListBuilder() {
-        return getSkillLimitsListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder addSkillLimitsListBuilder(
-          int index) {
-        return getSkillLimitsListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 2;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder> 
-           getSkillLimitsListBuilderList() {
-        return getSkillLimitsListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
-          getSkillLimitsListFieldBuilder() {
-        if (skillLimitsListBuilder_ == null) {
-          skillLimitsListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder>(
-                  skillLimitsList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          skillLimitsList_ = null;
-        }
-        return skillLimitsListBuilder_;
-      }
-
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 5;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 5;</code>
-       * @param value The controllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setControllerId(int value) {
-        
-        controllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 controller_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearControllerId() {
-        
-        controllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList tagList_ = emptyIntList();
-      private void ensureTagListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          tagList_ = mutableCopy(tagList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @return A list containing the tagList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTagListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(tagList_) : tagList_;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @return The count of tagList.
-       */
-      public int getTagListCount() {
-        return tagList_.size();
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The tagList at the given index.
-       */
-      public int getTagList(int index) {
-        return tagList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The tagList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTagList(
-          int index, int value) {
-        ensureTagListIsMutable();
-        tagList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @param value The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTagList(int value) {
-        ensureTagListIsMutable();
-        tagList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @param values The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTagList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTagListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, tagList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 tag_list = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTagList() {
-        tagList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> tokenList_ =
         java.util.Collections.emptyList();
       private void ensureTokenListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           tokenList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken>(tokenList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -1443,7 +1085,7 @@ public final class GCGCardOuterClass {
           emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder> tokenListBuilder_;
 
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> getTokenListList() {
         if (tokenListBuilder_ == null) {
@@ -1453,7 +1095,7 @@ public final class GCGCardOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public int getTokenListCount() {
         if (tokenListBuilder_ == null) {
@@ -1463,7 +1105,7 @@ public final class GCGCardOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken getTokenList(int index) {
         if (tokenListBuilder_ == null) {
@@ -1473,7 +1115,7 @@ public final class GCGCardOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder setTokenList(
           int index, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken value) {
@@ -1490,7 +1132,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder setTokenList(
           int index, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder builderForValue) {
@@ -1504,7 +1146,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder addTokenList(emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken value) {
         if (tokenListBuilder_ == null) {
@@ -1520,7 +1162,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder addTokenList(
           int index, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken value) {
@@ -1537,7 +1179,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder addTokenList(
           emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder builderForValue) {
@@ -1551,7 +1193,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder addTokenList(
           int index, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder builderForValue) {
@@ -1565,7 +1207,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder addAllTokenList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken> values) {
@@ -1580,12 +1222,12 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder clearTokenList() {
         if (tokenListBuilder_ == null) {
           tokenList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           tokenListBuilder_.clear();
@@ -1593,7 +1235,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public Builder removeTokenList(int index) {
         if (tokenListBuilder_ == null) {
@@ -1606,14 +1248,14 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder getTokenListBuilder(
           int index) {
         return getTokenListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder getTokenListOrBuilder(
           int index) {
@@ -1623,7 +1265,7 @@ public final class GCGCardOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder> 
            getTokenListOrBuilderList() {
@@ -1634,14 +1276,14 @@ public final class GCGCardOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder addTokenListBuilder() {
         return getTokenListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder addTokenListBuilder(
           int index) {
@@ -1649,7 +1291,7 @@ public final class GCGCardOuterClass {
             index, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGToken token_list = 1;</code>
+       * <code>repeated .GCGToken token_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder> 
            getTokenListBuilderList() {
@@ -1662,7 +1304,7 @@ public final class GCGCardOuterClass {
           tokenListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGTokenOrBuilder>(
                   tokenList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           tokenList_ = null;
@@ -1670,93 +1312,271 @@ public final class GCGCardOuterClass {
         return tokenListBuilder_;
       }
 
-      private int faceType_ ;
-      /**
-       * <code>uint32 face_type = 10;</code>
-       * @return The faceType.
-       */
-      @java.lang.Override
-      public int getFaceType() {
-        return faceType_;
-      }
-      /**
-       * <code>uint32 face_type = 10;</code>
-       * @param value The faceType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFaceType(int value) {
-        
-        faceType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 face_type = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFaceType() {
-        
-        faceType_ = 0;
-        onChanged();
-        return this;
+      private java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> skillLimitsList_ =
+        java.util.Collections.emptyList();
+      private void ensureSkillLimitsListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          skillLimitsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo>(skillLimitsList_);
+          bitField0_ |= 0x00000002;
+         }
       }
 
-      private boolean isShow_ ;
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> skillLimitsListBuilder_;
+
       /**
-       * <code>bool is_show = 11;</code>
-       * @return The isShow.
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
        */
-      @java.lang.Override
-      public boolean getIsShow() {
-        return isShow_;
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> getSkillLimitsListList() {
+        if (skillLimitsListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(skillLimitsList_);
+        } else {
+          return skillLimitsListBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>bool is_show = 11;</code>
-       * @param value The isShow to set.
-       * @return This builder for chaining.
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
        */
-      public Builder setIsShow(boolean value) {
-        
-        isShow_ = value;
-        onChanged();
+      public int getSkillLimitsListCount() {
+        if (skillLimitsListBuilder_ == null) {
+          return skillLimitsList_.size();
+        } else {
+          return skillLimitsListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo getSkillLimitsList(int index) {
+        if (skillLimitsListBuilder_ == null) {
+          return skillLimitsList_.get(index);
+        } else {
+          return skillLimitsListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder setSkillLimitsList(
+          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
+        if (skillLimitsListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.set(index, value);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>bool is_show = 11;</code>
-       * @return This builder for chaining.
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
        */
-      public Builder clearIsShow() {
-        
-        isShow_ = false;
-        onChanged();
+      public Builder setSkillLimitsList(
+          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
+        if (skillLimitsListBuilder_ == null) {
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder addSkillLimitsList(emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
+        if (skillLimitsListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.add(value);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder addSkillLimitsList(
+          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo value) {
+        if (skillLimitsListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.add(index, value);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder addSkillLimitsList(
+          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
+        if (skillLimitsListBuilder_ == null) {
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder addSkillLimitsList(
+          int index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder builderForValue) {
+        if (skillLimitsListBuilder_ == null) {
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder addAllSkillLimitsList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo> values) {
+        if (skillLimitsListBuilder_ == null) {
+          ensureSkillLimitsListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, skillLimitsList_);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder clearSkillLimitsList() {
+        if (skillLimitsListBuilder_ == null) {
+          skillLimitsList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public Builder removeSkillLimitsList(int index) {
+        if (skillLimitsListBuilder_ == null) {
+          ensureSkillLimitsListIsMutable();
+          skillLimitsList_.remove(index);
+          onChanged();
+        } else {
+          skillLimitsListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder getSkillLimitsListBuilder(
+          int index) {
+        return getSkillLimitsListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder getSkillLimitsListOrBuilder(
+          int index) {
+        if (skillLimitsListBuilder_ == null) {
+          return skillLimitsList_.get(index);  } else {
+          return skillLimitsListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
+           getSkillLimitsListOrBuilderList() {
+        if (skillLimitsListBuilder_ != null) {
+          return skillLimitsListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(skillLimitsList_);
+        }
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder addSkillLimitsListBuilder() {
+        return getSkillLimitsListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder addSkillLimitsListBuilder(
+          int index) {
+        return getSkillLimitsListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGSkillLimitsInfo skill_limits_list = 1;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder> 
+           getSkillLimitsListBuilderList() {
+        return getSkillLimitsListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder> 
+          getSkillLimitsListFieldBuilder() {
+        if (skillLimitsListBuilder_ == null) {
+          skillLimitsListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfoOrBuilder>(
+                  skillLimitsList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          skillLimitsList_ = null;
+        }
+        return skillLimitsListBuilder_;
       }
 
       private com.google.protobuf.Internal.IntList skillIdList_ = emptyIntList();
       private void ensureSkillIdListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           skillIdList_ = mutableCopy(skillIdList_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @return A list containing the skillIdList.
        */
       public java.util.List<java.lang.Integer>
           getSkillIdListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
+        return ((bitField0_ & 0x00000004) != 0) ?
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @return The count of skillIdList.
        */
       public int getSkillIdListCount() {
         return skillIdList_.size();
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
        */
@@ -1764,7 +1584,7 @@ public final class GCGCardOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
        * @return This builder for chaining.
@@ -1777,7 +1597,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -1788,7 +1608,7 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -1801,50 +1621,129 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 4;</code>
+       * <code>repeated uint32 skill_id_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillIdList() {
         skillIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList tagList_ = emptyIntList();
+      private void ensureTagListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          tagList_ = mutableCopy(tagList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @return A list containing the tagList.
+       */
+      public java.util.List<java.lang.Integer>
+          getTagListList() {
+        return ((bitField0_ & 0x00000008) != 0) ?
+                 java.util.Collections.unmodifiableList(tagList_) : tagList_;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @return The count of tagList.
+       */
+      public int getTagListCount() {
+        return tagList_.size();
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @param index The index of the element to return.
+       * @return The tagList at the given index.
+       */
+      public int getTagList(int index) {
+        return tagList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The tagList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTagList(
+          int index, int value) {
+        ensureTagListIsMutable();
+        tagList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @param value The tagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addTagList(int value) {
+        ensureTagListIsMutable();
+        tagList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @param values The tagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllTagList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTagListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, tagList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 tag_list = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTagList() {
+        tagList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
 
-      private int id_ ;
+      private int controllerId_ ;
       /**
-       * <code>uint32 id = 12;</code>
-       * @return The id.
+       * <code>uint32 controller_id = 6;</code>
+       * @return The controllerId.
        */
       @java.lang.Override
-      public int getId() {
-        return id_;
+      public int getControllerId() {
+        return controllerId_;
       }
       /**
-       * <code>uint32 id = 12;</code>
-       * @param value The id to set.
+       * <code>uint32 controller_id = 6;</code>
+       * @param value The controllerId to set.
        * @return This builder for chaining.
        */
-      public Builder setId(int value) {
+      public Builder setControllerId(int value) {
         
-        id_ = value;
+        controllerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 id = 12;</code>
+       * <code>uint32 controller_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearId() {
+      public Builder clearControllerId() {
         
-        id_ = 0;
+        controllerId_ = 0;
         onChanged();
         return this;
       }
 
       private int guid_ ;
       /**
-       * <code>uint32 guid = 9;</code>
+       * <code>uint32 guid = 4;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -1852,7 +1751,7 @@ public final class GCGCardOuterClass {
         return guid_;
       }
       /**
-       * <code>uint32 guid = 9;</code>
+       * <code>uint32 guid = 4;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -1863,12 +1762,105 @@ public final class GCGCardOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guid = 9;</code>
+       * <code>uint32 guid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
         
         guid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int faceType_ ;
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @return The faceType.
+       */
+      @java.lang.Override
+      public int getFaceType() {
+        return faceType_;
+      }
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @param value The faceType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceType(int value) {
+        
+        faceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 face_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceType() {
+        
+        faceType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isShow_ ;
+      /**
+       * <code>bool is_show = 3;</code>
+       * @return The isShow.
+       */
+      @java.lang.Override
+      public boolean getIsShow() {
+        return isShow_;
+      }
+      /**
+       * <code>bool is_show = 3;</code>
+       * @param value The isShow to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsShow(boolean value) {
+        
+        isShow_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_show = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsShow() {
+        
+        isShow_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -1939,29 +1931,29 @@ public final class GCGCardOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rGCGCard.proto\032\030GCGSkillLimitsInfo.prot" +
-      "o\032\016GCGToken.proto\"\326\001\n\007GCGCard\022.\n\021skill_l" +
-      "imits_list\030\002 \003(\0132\023.GCGSkillLimitsInfo\022\025\n" +
-      "\rcontroller_id\030\005 \001(\r\022\020\n\010tag_list\030\010 \003(\r\022\035" +
-      "\n\ntoken_list\030\001 \003(\0132\t.GCGToken\022\021\n\tface_ty" +
-      "pe\030\n \001(\r\022\017\n\007is_show\030\013 \001(\010\022\025\n\rskill_id_li" +
-      "st\030\004 \003(\r\022\n\n\002id\030\014 \001(\r\022\014\n\004guid\030\t \001(\rB\033\n\031em" +
+      "\n\rGCGCard.proto\032\016GCGToken.proto\032\030GCGSkil" +
+      "lLimitsInfo.proto\"\326\001\n\007GCGCard\022\035\n\ntoken_l" +
+      "ist\030\010 \003(\0132\t.GCGToken\022.\n\021skill_limits_lis" +
+      "t\030\001 \003(\0132\023.GCGSkillLimitsInfo\022\025\n\rskill_id" +
+      "_list\030\002 \003(\r\022\020\n\010tag_list\030\014 \003(\r\022\025\n\rcontrol" +
+      "ler_id\030\006 \001(\r\022\014\n\004guid\030\004 \001(\r\022\021\n\tface_type\030" +
+      "\r \001(\r\022\017\n\007is_show\030\003 \001(\010\022\n\n\002id\030\005 \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGTokenOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.getDescriptor(),
         });
     internal_static_GCGCard_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGCard_descriptor,
-        new java.lang.String[] { "SkillLimitsList", "ControllerId", "TagList", "TokenList", "FaceType", "IsShow", "SkillIdList", "Id", "Guid", });
-    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "TokenList", "SkillLimitsList", "SkillIdList", "TagList", "ControllerId", "Guid", "FaceType", "IsShow", "Id", });
     emu.grasscutter.net.proto.GCGTokenOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

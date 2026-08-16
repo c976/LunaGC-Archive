@@ -20,40 +20,40 @@ public final class SalesmanStatusTypeOuterClass {
   public enum SalesmanStatusType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SALESMAN_STATUS_TYPE_NONE = 0;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_NONE = 0;</code>
      */
-    SALESMAN_STATUS_TYPE_NONE(0),
+    JPBLMLOKCEI_SALESMAN_STATUS_NONE(0),
     /**
-     * <code>SALESMAN_STATUS_TYPE_UNSTARTED = 1;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_UNSTARTED = 1;</code>
      */
-    SALESMAN_STATUS_TYPE_UNSTARTED(1),
+    JPBLMLOKCEI_SALESMAN_STATUS_UNSTARTED(1),
     /**
-     * <code>SALESMAN_STATUS_TYPE_STARTED = 2;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_STARTED = 2;</code>
      */
-    SALESMAN_STATUS_TYPE_STARTED(2),
+    JPBLMLOKCEI_SALESMAN_STATUS_STARTED(2),
     /**
-     * <code>SALESMAN_STATUS_TYPE_DELIVERED = 3;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_DELIVERED = 3;</code>
      */
-    SALESMAN_STATUS_TYPE_DELIVERED(3),
+    JPBLMLOKCEI_SALESMAN_STATUS_DELIVERED(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SALESMAN_STATUS_TYPE_NONE = 0;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_NONE = 0;</code>
      */
-    public static final int SALESMAN_STATUS_TYPE_NONE_VALUE = 0;
+    public static final int JPBLMLOKCEI_SALESMAN_STATUS_NONE_VALUE = 0;
     /**
-     * <code>SALESMAN_STATUS_TYPE_UNSTARTED = 1;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_UNSTARTED = 1;</code>
      */
-    public static final int SALESMAN_STATUS_TYPE_UNSTARTED_VALUE = 1;
+    public static final int JPBLMLOKCEI_SALESMAN_STATUS_UNSTARTED_VALUE = 1;
     /**
-     * <code>SALESMAN_STATUS_TYPE_STARTED = 2;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_STARTED = 2;</code>
      */
-    public static final int SALESMAN_STATUS_TYPE_STARTED_VALUE = 2;
+    public static final int JPBLMLOKCEI_SALESMAN_STATUS_STARTED_VALUE = 2;
     /**
-     * <code>SALESMAN_STATUS_TYPE_DELIVERED = 3;</code>
+     * <code>JPBLMLOKCEI_SALESMAN_STATUS_DELIVERED = 3;</code>
      */
-    public static final int SALESMAN_STATUS_TYPE_DELIVERED_VALUE = 3;
+    public static final int JPBLMLOKCEI_SALESMAN_STATUS_DELIVERED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class SalesmanStatusTypeOuterClass {
      */
     public static SalesmanStatusType forNumber(int value) {
       switch (value) {
-        case 0: return SALESMAN_STATUS_TYPE_NONE;
-        case 1: return SALESMAN_STATUS_TYPE_UNSTARTED;
-        case 2: return SALESMAN_STATUS_TYPE_STARTED;
-        case 3: return SALESMAN_STATUS_TYPE_DELIVERED;
+        case 0: return JPBLMLOKCEI_SALESMAN_STATUS_NONE;
+        case 1: return JPBLMLOKCEI_SALESMAN_STATUS_UNSTARTED;
+        case 2: return JPBLMLOKCEI_SALESMAN_STATUS_STARTED;
+        case 3: return JPBLMLOKCEI_SALESMAN_STATUS_DELIVERED;
         default: return null;
       }
     }
@@ -149,12 +149,13 @@ public final class SalesmanStatusTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030SalesmanStatusType.proto*\235\001\n\022SalesmanS" +
-      "tatusType\022\035\n\031SALESMAN_STATUS_TYPE_NONE\020\000" +
-      "\022\"\n\036SALESMAN_STATUS_TYPE_UNSTARTED\020\001\022 \n\034" +
-      "SALESMAN_STATUS_TYPE_STARTED\020\002\022\"\n\036SALESM" +
-      "AN_STATUS_TYPE_DELIVERED\020\003B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\030SalesmanStatusType.proto*\271\001\n\022SalesmanS" +
+      "tatusType\022$\n JPBLMLOKCEI_SALESMAN_STATUS" +
+      "_NONE\020\000\022)\n%JPBLMLOKCEI_SALESMAN_STATUS_U" +
+      "NSTARTED\020\001\022\'\n#JPBLMLOKCEI_SALESMAN_STATU" +
+      "S_STARTED\020\002\022)\n%JPBLMLOKCEI_SALESMAN_STAT" +
+      "US_DELIVERED\020\003B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

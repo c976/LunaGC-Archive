@@ -19,27 +19,47 @@ public final class RechargeDiskDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> 
         getLevelInfoListList();
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
-    emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG getLevelInfoList(int index);
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
-    emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class RechargeDiskDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class RechargeDiskDetailInfoOuterClass {
               emu.grasscutter.net.proto.RechargeDiskDetailInfoOuterClass.RechargeDiskDetailInfo.class, emu.grasscutter.net.proto.RechargeDiskDetailInfoOuterClass.RechargeDiskDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> levelInfoList_;
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class RechargeDiskDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(10, levelInfoList_.get(i));
+        output.writeMessage(15, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class RechargeDiskDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, levelInfoList_.get(i));
+          .computeMessageSize(15, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class RechargeDiskDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class RechargeDiskDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class RechargeDiskDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo value) {
+          int index, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo value) {
+          int index, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class RechargeDiskDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class RechargeDiskDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class RechargeDiskDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.getDefaultInstance());
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.getDefaultInstance());
       }
       /**
-       * <code>repeated .RechargeDiskLevelInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .KNNEKHBFGOG level_info_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfo.Builder, emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.RechargeDiskLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOG.Builder, emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.KNNEKHBFGOGOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,16 +933,15 @@ public final class RechargeDiskDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034RechargeDiskDetailInfo.proto\032\033Recharge" +
-      "DiskLevelInfo.proto\"I\n\026RechargeDiskDetai" +
-      "lInfo\022/\n\017level_info_list\030\n \003(\0132\026.Recharg" +
-      "eDiskLevelInfoB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\034RechargeDiskDetailInfo.proto\032\021KNNEKHBF" +
+      "GOG.proto\"?\n\026RechargeDiskDetailInfo\022%\n\017l" +
+      "evel_info_list\030\017 \003(\0132\014.KNNEKHBFGOGB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.getDescriptor(),
         });
     internal_static_RechargeDiskDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -838,7 +949,7 @@ public final class RechargeDiskDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RechargeDiskDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.RechargeDiskLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.KNNEKHBFGOGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

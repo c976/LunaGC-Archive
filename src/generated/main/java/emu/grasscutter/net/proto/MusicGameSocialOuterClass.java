@@ -19,34 +19,34 @@ public final class MusicGameSocialOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DDDCGKKPMOE = 1;</code>
-     * @return The dDDCGKKPMOE.
+     * <code>uint32 HCOMINDANPE = 2;</code>
+     * @return The hCOMINDANPE.
      */
-    int getDDDCGKKPMOE();
+    int getHCOMINDANPE();
 
     /**
-     * <code>uint32 like_num = 6;</code>
+     * <code>uint32 like_num = 3;</code>
      * @return The likeNum.
      */
     int getLikeNum();
 
     /**
-     * <code>uint32 IJBALHADDGK = 3;</code>
-     * @return The iJBALHADDGK.
+     * <code>uint32 IEPOIICNLKA = 5;</code>
+     * @return The iEPOIICNLKA.
      */
-    int getIJBALHADDGK();
+    int getIEPOIICNLKA();
 
     /**
-     * <code>uint32 EDAJDLBHAAN = 14;</code>
-     * @return The eDAJDLBHAAN.
+     * <code>uint32 GOLJCMCJCAP = 6;</code>
+     * @return The gOLJCMCJCAP.
      */
-    int getEDAJDLBHAAN();
+    int getGOLJCMCJCAP();
 
     /**
-     * <code>uint32 HEBEHGIBJEN = 7;</code>
-     * @return The hEBEHGIBJEN.
+     * <code>uint32 HFEALNJCACE = 15;</code>
+     * @return The hFEALNJCACE.
      */
-    int getHEBEHGIBJEN();
+    int getHFEALNJCACE();
   }
   /**
    * Protobuf type {@code MusicGameSocial}
@@ -93,29 +93,29 @@ public final class MusicGameSocialOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              dDDCGKKPMOE_ = input.readUInt32();
+              hCOMINDANPE_ = input.readUInt32();
               break;
             }
             case 24: {
 
-              iJBALHADDGK_ = input.readUInt32();
+              likeNum_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              iEPOIICNLKA_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              likeNum_ = input.readUInt32();
+              gOLJCMCJCAP_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 120: {
 
-              hEBEHGIBJEN_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              eDAJDLBHAAN_ = input.readUInt32();
+              hFEALNJCACE_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,21 +150,21 @@ public final class MusicGameSocialOuterClass {
               emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial.class, emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial.Builder.class);
     }
 
-    public static final int DDDCGKKPMOE_FIELD_NUMBER = 1;
-    private int dDDCGKKPMOE_;
+    public static final int HCOMINDANPE_FIELD_NUMBER = 2;
+    private int hCOMINDANPE_;
     /**
-     * <code>uint32 DDDCGKKPMOE = 1;</code>
-     * @return The dDDCGKKPMOE.
+     * <code>uint32 HCOMINDANPE = 2;</code>
+     * @return The hCOMINDANPE.
      */
     @java.lang.Override
-    public int getDDDCGKKPMOE() {
-      return dDDCGKKPMOE_;
+    public int getHCOMINDANPE() {
+      return hCOMINDANPE_;
     }
 
-    public static final int LIKE_NUM_FIELD_NUMBER = 6;
+    public static final int LIKE_NUM_FIELD_NUMBER = 3;
     private int likeNum_;
     /**
-     * <code>uint32 like_num = 6;</code>
+     * <code>uint32 like_num = 3;</code>
      * @return The likeNum.
      */
     @java.lang.Override
@@ -172,37 +172,37 @@ public final class MusicGameSocialOuterClass {
       return likeNum_;
     }
 
-    public static final int IJBALHADDGK_FIELD_NUMBER = 3;
-    private int iJBALHADDGK_;
+    public static final int IEPOIICNLKA_FIELD_NUMBER = 5;
+    private int iEPOIICNLKA_;
     /**
-     * <code>uint32 IJBALHADDGK = 3;</code>
-     * @return The iJBALHADDGK.
+     * <code>uint32 IEPOIICNLKA = 5;</code>
+     * @return The iEPOIICNLKA.
      */
     @java.lang.Override
-    public int getIJBALHADDGK() {
-      return iJBALHADDGK_;
+    public int getIEPOIICNLKA() {
+      return iEPOIICNLKA_;
     }
 
-    public static final int EDAJDLBHAAN_FIELD_NUMBER = 14;
-    private int eDAJDLBHAAN_;
+    public static final int GOLJCMCJCAP_FIELD_NUMBER = 6;
+    private int gOLJCMCJCAP_;
     /**
-     * <code>uint32 EDAJDLBHAAN = 14;</code>
-     * @return The eDAJDLBHAAN.
+     * <code>uint32 GOLJCMCJCAP = 6;</code>
+     * @return The gOLJCMCJCAP.
      */
     @java.lang.Override
-    public int getEDAJDLBHAAN() {
-      return eDAJDLBHAAN_;
+    public int getGOLJCMCJCAP() {
+      return gOLJCMCJCAP_;
     }
 
-    public static final int HEBEHGIBJEN_FIELD_NUMBER = 7;
-    private int hEBEHGIBJEN_;
+    public static final int HFEALNJCACE_FIELD_NUMBER = 15;
+    private int hFEALNJCACE_;
     /**
-     * <code>uint32 HEBEHGIBJEN = 7;</code>
-     * @return The hEBEHGIBJEN.
+     * <code>uint32 HFEALNJCACE = 15;</code>
+     * @return The hFEALNJCACE.
      */
     @java.lang.Override
-    public int getHEBEHGIBJEN() {
-      return hEBEHGIBJEN_;
+    public int getHFEALNJCACE() {
+      return hFEALNJCACE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +219,20 @@ public final class MusicGameSocialOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dDDCGKKPMOE_ != 0) {
-        output.writeUInt32(1, dDDCGKKPMOE_);
-      }
-      if (iJBALHADDGK_ != 0) {
-        output.writeUInt32(3, iJBALHADDGK_);
+      if (hCOMINDANPE_ != 0) {
+        output.writeUInt32(2, hCOMINDANPE_);
       }
       if (likeNum_ != 0) {
-        output.writeUInt32(6, likeNum_);
+        output.writeUInt32(3, likeNum_);
       }
-      if (hEBEHGIBJEN_ != 0) {
-        output.writeUInt32(7, hEBEHGIBJEN_);
+      if (iEPOIICNLKA_ != 0) {
+        output.writeUInt32(5, iEPOIICNLKA_);
       }
-      if (eDAJDLBHAAN_ != 0) {
-        output.writeUInt32(14, eDAJDLBHAAN_);
+      if (gOLJCMCJCAP_ != 0) {
+        output.writeUInt32(6, gOLJCMCJCAP_);
+      }
+      if (hFEALNJCACE_ != 0) {
+        output.writeUInt32(15, hFEALNJCACE_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class MusicGameSocialOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dDDCGKKPMOE_ != 0) {
+      if (hCOMINDANPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dDDCGKKPMOE_);
-      }
-      if (iJBALHADDGK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, iJBALHADDGK_);
+          .computeUInt32Size(2, hCOMINDANPE_);
       }
       if (likeNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, likeNum_);
+          .computeUInt32Size(3, likeNum_);
       }
-      if (hEBEHGIBJEN_ != 0) {
+      if (iEPOIICNLKA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, hEBEHGIBJEN_);
+          .computeUInt32Size(5, iEPOIICNLKA_);
       }
-      if (eDAJDLBHAAN_ != 0) {
+      if (gOLJCMCJCAP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, eDAJDLBHAAN_);
+          .computeUInt32Size(6, gOLJCMCJCAP_);
+      }
+      if (hFEALNJCACE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, hFEALNJCACE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class MusicGameSocialOuterClass {
       }
       emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial other = (emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial) obj;
 
-      if (getDDDCGKKPMOE()
-          != other.getDDDCGKKPMOE()) return false;
+      if (getHCOMINDANPE()
+          != other.getHCOMINDANPE()) return false;
       if (getLikeNum()
           != other.getLikeNum()) return false;
-      if (getIJBALHADDGK()
-          != other.getIJBALHADDGK()) return false;
-      if (getEDAJDLBHAAN()
-          != other.getEDAJDLBHAAN()) return false;
-      if (getHEBEHGIBJEN()
-          != other.getHEBEHGIBJEN()) return false;
+      if (getIEPOIICNLKA()
+          != other.getIEPOIICNLKA()) return false;
+      if (getGOLJCMCJCAP()
+          != other.getGOLJCMCJCAP()) return false;
+      if (getHFEALNJCACE()
+          != other.getHFEALNJCACE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,16 +299,16 @@ public final class MusicGameSocialOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DDDCGKKPMOE_FIELD_NUMBER;
-      hash = (53 * hash) + getDDDCGKKPMOE();
+      hash = (37 * hash) + HCOMINDANPE_FIELD_NUMBER;
+      hash = (53 * hash) + getHCOMINDANPE();
       hash = (37 * hash) + LIKE_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getLikeNum();
-      hash = (37 * hash) + IJBALHADDGK_FIELD_NUMBER;
-      hash = (53 * hash) + getIJBALHADDGK();
-      hash = (37 * hash) + EDAJDLBHAAN_FIELD_NUMBER;
-      hash = (53 * hash) + getEDAJDLBHAAN();
-      hash = (37 * hash) + HEBEHGIBJEN_FIELD_NUMBER;
-      hash = (53 * hash) + getHEBEHGIBJEN();
+      hash = (37 * hash) + IEPOIICNLKA_FIELD_NUMBER;
+      hash = (53 * hash) + getIEPOIICNLKA();
+      hash = (37 * hash) + GOLJCMCJCAP_FIELD_NUMBER;
+      hash = (53 * hash) + getGOLJCMCJCAP();
+      hash = (37 * hash) + HFEALNJCACE_FIELD_NUMBER;
+      hash = (53 * hash) + getHFEALNJCACE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,15 +442,15 @@ public final class MusicGameSocialOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dDDCGKKPMOE_ = 0;
+        hCOMINDANPE_ = 0;
 
         likeNum_ = 0;
 
-        iJBALHADDGK_ = 0;
+        iEPOIICNLKA_ = 0;
 
-        eDAJDLBHAAN_ = 0;
+        gOLJCMCJCAP_ = 0;
 
-        hEBEHGIBJEN_ = 0;
+        hFEALNJCACE_ = 0;
 
         return this;
       }
@@ -478,11 +478,11 @@ public final class MusicGameSocialOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial buildPartial() {
         emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial result = new emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial(this);
-        result.dDDCGKKPMOE_ = dDDCGKKPMOE_;
+        result.hCOMINDANPE_ = hCOMINDANPE_;
         result.likeNum_ = likeNum_;
-        result.iJBALHADDGK_ = iJBALHADDGK_;
-        result.eDAJDLBHAAN_ = eDAJDLBHAAN_;
-        result.hEBEHGIBJEN_ = hEBEHGIBJEN_;
+        result.iEPOIICNLKA_ = iEPOIICNLKA_;
+        result.gOLJCMCJCAP_ = gOLJCMCJCAP_;
+        result.hFEALNJCACE_ = hFEALNJCACE_;
         onBuilt();
         return result;
       }
@@ -531,20 +531,20 @@ public final class MusicGameSocialOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial other) {
         if (other == emu.grasscutter.net.proto.MusicGameSocialOuterClass.MusicGameSocial.getDefaultInstance()) return this;
-        if (other.getDDDCGKKPMOE() != 0) {
-          setDDDCGKKPMOE(other.getDDDCGKKPMOE());
+        if (other.getHCOMINDANPE() != 0) {
+          setHCOMINDANPE(other.getHCOMINDANPE());
         }
         if (other.getLikeNum() != 0) {
           setLikeNum(other.getLikeNum());
         }
-        if (other.getIJBALHADDGK() != 0) {
-          setIJBALHADDGK(other.getIJBALHADDGK());
+        if (other.getIEPOIICNLKA() != 0) {
+          setIEPOIICNLKA(other.getIEPOIICNLKA());
         }
-        if (other.getEDAJDLBHAAN() != 0) {
-          setEDAJDLBHAAN(other.getEDAJDLBHAAN());
+        if (other.getGOLJCMCJCAP() != 0) {
+          setGOLJCMCJCAP(other.getGOLJCMCJCAP());
         }
-        if (other.getHEBEHGIBJEN() != 0) {
-          setHEBEHGIBJEN(other.getHEBEHGIBJEN());
+        if (other.getHFEALNJCACE() != 0) {
+          setHFEALNJCACE(other.getHFEALNJCACE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,40 +575,40 @@ public final class MusicGameSocialOuterClass {
         return this;
       }
 
-      private int dDDCGKKPMOE_ ;
+      private int hCOMINDANPE_ ;
       /**
-       * <code>uint32 DDDCGKKPMOE = 1;</code>
-       * @return The dDDCGKKPMOE.
+       * <code>uint32 HCOMINDANPE = 2;</code>
+       * @return The hCOMINDANPE.
        */
       @java.lang.Override
-      public int getDDDCGKKPMOE() {
-        return dDDCGKKPMOE_;
+      public int getHCOMINDANPE() {
+        return hCOMINDANPE_;
       }
       /**
-       * <code>uint32 DDDCGKKPMOE = 1;</code>
-       * @param value The dDDCGKKPMOE to set.
+       * <code>uint32 HCOMINDANPE = 2;</code>
+       * @param value The hCOMINDANPE to set.
        * @return This builder for chaining.
        */
-      public Builder setDDDCGKKPMOE(int value) {
+      public Builder setHCOMINDANPE(int value) {
         
-        dDDCGKKPMOE_ = value;
+        hCOMINDANPE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DDDCGKKPMOE = 1;</code>
+       * <code>uint32 HCOMINDANPE = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDDDCGKKPMOE() {
+      public Builder clearHCOMINDANPE() {
         
-        dDDCGKKPMOE_ = 0;
+        hCOMINDANPE_ = 0;
         onChanged();
         return this;
       }
 
       private int likeNum_ ;
       /**
-       * <code>uint32 like_num = 6;</code>
+       * <code>uint32 like_num = 3;</code>
        * @return The likeNum.
        */
       @java.lang.Override
@@ -616,7 +616,7 @@ public final class MusicGameSocialOuterClass {
         return likeNum_;
       }
       /**
-       * <code>uint32 like_num = 6;</code>
+       * <code>uint32 like_num = 3;</code>
        * @param value The likeNum to set.
        * @return This builder for chaining.
        */
@@ -627,7 +627,7 @@ public final class MusicGameSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 like_num = 6;</code>
+       * <code>uint32 like_num = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLikeNum() {
@@ -637,95 +637,95 @@ public final class MusicGameSocialOuterClass {
         return this;
       }
 
-      private int iJBALHADDGK_ ;
+      private int iEPOIICNLKA_ ;
       /**
-       * <code>uint32 IJBALHADDGK = 3;</code>
-       * @return The iJBALHADDGK.
+       * <code>uint32 IEPOIICNLKA = 5;</code>
+       * @return The iEPOIICNLKA.
        */
       @java.lang.Override
-      public int getIJBALHADDGK() {
-        return iJBALHADDGK_;
+      public int getIEPOIICNLKA() {
+        return iEPOIICNLKA_;
       }
       /**
-       * <code>uint32 IJBALHADDGK = 3;</code>
-       * @param value The iJBALHADDGK to set.
+       * <code>uint32 IEPOIICNLKA = 5;</code>
+       * @param value The iEPOIICNLKA to set.
        * @return This builder for chaining.
        */
-      public Builder setIJBALHADDGK(int value) {
+      public Builder setIEPOIICNLKA(int value) {
         
-        iJBALHADDGK_ = value;
+        iEPOIICNLKA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IJBALHADDGK = 3;</code>
+       * <code>uint32 IEPOIICNLKA = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIJBALHADDGK() {
+      public Builder clearIEPOIICNLKA() {
         
-        iJBALHADDGK_ = 0;
+        iEPOIICNLKA_ = 0;
         onChanged();
         return this;
       }
 
-      private int eDAJDLBHAAN_ ;
+      private int gOLJCMCJCAP_ ;
       /**
-       * <code>uint32 EDAJDLBHAAN = 14;</code>
-       * @return The eDAJDLBHAAN.
+       * <code>uint32 GOLJCMCJCAP = 6;</code>
+       * @return The gOLJCMCJCAP.
        */
       @java.lang.Override
-      public int getEDAJDLBHAAN() {
-        return eDAJDLBHAAN_;
+      public int getGOLJCMCJCAP() {
+        return gOLJCMCJCAP_;
       }
       /**
-       * <code>uint32 EDAJDLBHAAN = 14;</code>
-       * @param value The eDAJDLBHAAN to set.
+       * <code>uint32 GOLJCMCJCAP = 6;</code>
+       * @param value The gOLJCMCJCAP to set.
        * @return This builder for chaining.
        */
-      public Builder setEDAJDLBHAAN(int value) {
+      public Builder setGOLJCMCJCAP(int value) {
         
-        eDAJDLBHAAN_ = value;
+        gOLJCMCJCAP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EDAJDLBHAAN = 14;</code>
+       * <code>uint32 GOLJCMCJCAP = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEDAJDLBHAAN() {
+      public Builder clearGOLJCMCJCAP() {
         
-        eDAJDLBHAAN_ = 0;
+        gOLJCMCJCAP_ = 0;
         onChanged();
         return this;
       }
 
-      private int hEBEHGIBJEN_ ;
+      private int hFEALNJCACE_ ;
       /**
-       * <code>uint32 HEBEHGIBJEN = 7;</code>
-       * @return The hEBEHGIBJEN.
+       * <code>uint32 HFEALNJCACE = 15;</code>
+       * @return The hFEALNJCACE.
        */
       @java.lang.Override
-      public int getHEBEHGIBJEN() {
-        return hEBEHGIBJEN_;
+      public int getHFEALNJCACE() {
+        return hFEALNJCACE_;
       }
       /**
-       * <code>uint32 HEBEHGIBJEN = 7;</code>
-       * @param value The hEBEHGIBJEN to set.
+       * <code>uint32 HFEALNJCACE = 15;</code>
+       * @param value The hFEALNJCACE to set.
        * @return This builder for chaining.
        */
-      public Builder setHEBEHGIBJEN(int value) {
+      public Builder setHFEALNJCACE(int value) {
         
-        hEBEHGIBJEN_ = value;
+        hFEALNJCACE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HEBEHGIBJEN = 7;</code>
+       * <code>uint32 HFEALNJCACE = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHEBEHGIBJEN() {
+      public Builder clearHFEALNJCACE() {
         
-        hEBEHGIBJEN_ = 0;
+        hFEALNJCACE_ = 0;
         onChanged();
         return this;
       }
@@ -797,9 +797,9 @@ public final class MusicGameSocialOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025MusicGameSocial.proto\"w\n\017MusicGameSoci" +
-      "al\022\023\n\013DDDCGKKPMOE\030\001 \001(\r\022\020\n\010like_num\030\006 \001(" +
-      "\r\022\023\n\013IJBALHADDGK\030\003 \001(\r\022\023\n\013EDAJDLBHAAN\030\016 " +
-      "\001(\r\022\023\n\013HEBEHGIBJEN\030\007 \001(\rB\033\n\031emu.grasscut" +
+      "al\022\023\n\013HCOMINDANPE\030\002 \001(\r\022\020\n\010like_num\030\003 \001(" +
+      "\r\022\023\n\013IEPOIICNLKA\030\005 \001(\r\022\023\n\013GOLJCMCJCAP\030\006 " +
+      "\001(\r\022\023\n\013HFEALNJCACE\030\017 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -811,7 +811,7 @@ public final class MusicGameSocialOuterClass {
     internal_static_MusicGameSocial_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MusicGameSocial_descriptor,
-        new java.lang.String[] { "DDDCGKKPMOE", "LikeNum", "IJBALHADDGK", "EDAJDLBHAAN", "HEBEHGIBJEN", });
+        new java.lang.String[] { "HCOMINDANPE", "LikeNum", "IEPOIICNLKA", "GOLJCMCJCAP", "HFEALNJCACE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

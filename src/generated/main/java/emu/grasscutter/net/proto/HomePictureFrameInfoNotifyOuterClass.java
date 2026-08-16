@@ -19,33 +19,32 @@ public final class HomePictureFrameInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo> 
         getPictureFrameInfoListList();
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfoList(int index);
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     int getPictureFrameInfoListCount();
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> 
         getPictureFrameInfoListOrBuilderList();
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 24256
-   * Obf: MHPADHDCIBP
+   * CmdId: 8024
    * </pre>
    *
    * Protobuf type {@code HomePictureFrameInfoNotify}
@@ -94,7 +93,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 90: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 pictureFrameInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class HomePictureFrameInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomePictureFrameInfoNotifyOuterClass.HomePictureFrameInfoNotify.class, emu.grasscutter.net.proto.HomePictureFrameInfoNotifyOuterClass.HomePictureFrameInfoNotify.Builder.class);
     }
 
-    public static final int PICTURE_FRAME_INFO_LIST_FIELD_NUMBER = 11;
+    public static final int PICTURE_FRAME_INFO_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo> pictureFrameInfoList_;
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo> getPictureFrameInfoListList() {
       return pictureFrameInfoList_;
     }
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> 
@@ -156,21 +155,21 @@ public final class HomePictureFrameInfoNotifyOuterClass {
       return pictureFrameInfoList_;
     }
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     @java.lang.Override
     public int getPictureFrameInfoListCount() {
       return pictureFrameInfoList_.size();
     }
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfoList(int index) {
       return pictureFrameInfoList_.get(index);
     }
     /**
-     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+     * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoListOrBuilder(
@@ -193,7 +192,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < pictureFrameInfoList_.size(); i++) {
-        output.writeMessage(11, pictureFrameInfoList_.get(i));
+        output.writeMessage(15, pictureFrameInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
       size = 0;
       for (int i = 0; i < pictureFrameInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, pictureFrameInfoList_.get(i));
+          .computeMessageSize(15, pictureFrameInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24256
-     * Obf: MHPADHDCIBP
+     * CmdId: 8024
      * </pre>
      *
      * Protobuf type {@code HomePictureFrameInfoNotify}
@@ -538,7 +536,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> pictureFrameInfoListBuilder_;
 
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo> getPictureFrameInfoListList() {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public int getPictureFrameInfoListCount() {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfoList(int index) {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder setPictureFrameInfoList(
           int index, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
@@ -585,7 +583,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder setPictureFrameInfoList(
           int index, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder addPictureFrameInfoList(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder addPictureFrameInfoList(
           int index, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
@@ -632,7 +630,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder addPictureFrameInfoList(
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder addPictureFrameInfoList(
           int index, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder addAllPictureFrameInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo> values) {
@@ -675,7 +673,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder clearPictureFrameInfoList() {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public Builder removePictureFrameInfoList(int index) {
         if (pictureFrameInfoListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder getPictureFrameInfoListBuilder(
           int index) {
         return getPictureFrameInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> 
            getPictureFrameInfoListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class HomePictureFrameInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder addPictureFrameInfoListBuilder() {
         return getPictureFrameInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder addPictureFrameInfoListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 11;</code>
+       * <code>repeated .HomePictureFrameInfo picture_frame_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder> 
            getPictureFrameInfoListBuilderList() {
@@ -834,7 +832,7 @@ public final class HomePictureFrameInfoNotifyOuterClass {
       "\n HomePictureFrameInfoNotify.proto\032\032Home" +
       "PictureFrameInfo.proto\"T\n\032HomePictureFra" +
       "meInfoNotify\0226\n\027picture_frame_info_list\030" +
-      "\013 \003(\0132\025.HomePictureFrameInfoB\033\n\031emu.gras" +
+      "\017 \003(\0132\025.HomePictureFrameInfoB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,6 +19,10 @@ public final class EndCameraSceneLookNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 23527
+   * </pre>
+   *
    * Protobuf type {@code EndCameraSceneLookNotify}
    */
   public static final class EndCameraSceneLookNotify extends
@@ -240,6 +244,10 @@ public final class EndCameraSceneLookNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 23527
+     * </pre>
+     *
      * Protobuf type {@code EndCameraSceneLookNotify}
      */
     public static final class Builder extends

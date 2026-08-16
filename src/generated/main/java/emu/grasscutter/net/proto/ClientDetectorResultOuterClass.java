@@ -19,21 +19,21 @@ public final class ClientDetectorResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-     * @return A list containing the pBPGDEHABLG.
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+     * @return A list containing the mLJJHIGPDJD.
      */
-    java.util.List<java.lang.Integer> getPBPGDEHABLGList();
+    java.util.List<java.lang.Integer> getMLJJHIGPDJDList();
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-     * @return The count of pBPGDEHABLG.
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+     * @return The count of mLJJHIGPDJD.
      */
-    int getPBPGDEHABLGCount();
+    int getMLJJHIGPDJDCount();
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
      * @param index The index of the element to return.
-     * @return The pBPGDEHABLG at the given index.
+     * @return The mLJJHIGPDJD at the given index.
      */
-    int getPBPGDEHABLG(int index);
+    int getMLJJHIGPDJD(int index);
   }
   /**
    * Protobuf type {@code ClientDetectorResult}
@@ -48,7 +48,7 @@ public final class ClientDetectorResultOuterClass {
       super(builder);
     }
     private ClientDetectorResult() {
-      pBPGDEHABLG_ = emptyIntList();
+      mLJJHIGPDJD_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -82,23 +82,23 @@ public final class ClientDetectorResultOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                pBPGDEHABLG_ = newIntList();
+                mLJJHIGPDJD_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              pBPGDEHABLG_.addInt(input.readUInt32());
+              mLJJHIGPDJD_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                pBPGDEHABLG_ = newIntList();
+                mLJJHIGPDJD_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                pBPGDEHABLG_.addInt(input.readUInt32());
+                mLJJHIGPDJD_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -119,7 +119,7 @@ public final class ClientDetectorResultOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          pBPGDEHABLG_.makeImmutable(); // C
+          mLJJHIGPDJD_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -138,33 +138,33 @@ public final class ClientDetectorResultOuterClass {
               emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult.class, emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult.Builder.class);
     }
 
-    public static final int PBPGDEHABLG_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList pBPGDEHABLG_;
+    public static final int MLJJHIGPDJD_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList mLJJHIGPDJD_;
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-     * @return A list containing the pBPGDEHABLG.
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+     * @return A list containing the mLJJHIGPDJD.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getPBPGDEHABLGList() {
-      return pBPGDEHABLG_;
+        getMLJJHIGPDJDList() {
+      return mLJJHIGPDJD_;
     }
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-     * @return The count of pBPGDEHABLG.
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+     * @return The count of mLJJHIGPDJD.
      */
-    public int getPBPGDEHABLGCount() {
-      return pBPGDEHABLG_.size();
+    public int getMLJJHIGPDJDCount() {
+      return mLJJHIGPDJD_.size();
     }
     /**
-     * <code>repeated uint32 PBPGDEHABLG = 11;</code>
+     * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
      * @param index The index of the element to return.
-     * @return The pBPGDEHABLG at the given index.
+     * @return The mLJJHIGPDJD at the given index.
      */
-    public int getPBPGDEHABLG(int index) {
-      return pBPGDEHABLG_.getInt(index);
+    public int getMLJJHIGPDJD(int index) {
+      return mLJJHIGPDJD_.getInt(index);
     }
-    private int pBPGDEHABLGMemoizedSerializedSize = -1;
+    private int mLJJHIGPDJDMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -181,12 +181,12 @@ public final class ClientDetectorResultOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getPBPGDEHABLGList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(pBPGDEHABLGMemoizedSerializedSize);
+      if (getMLJJHIGPDJDList().size() > 0) {
+        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(mLJJHIGPDJDMemoizedSerializedSize);
       }
-      for (int i = 0; i < pBPGDEHABLG_.size(); i++) {
-        output.writeUInt32NoTag(pBPGDEHABLG_.getInt(i));
+      for (int i = 0; i < mLJJHIGPDJD_.size(); i++) {
+        output.writeUInt32NoTag(mLJJHIGPDJD_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -199,17 +199,17 @@ public final class ClientDetectorResultOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < pBPGDEHABLG_.size(); i++) {
+        for (int i = 0; i < mLJJHIGPDJD_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(pBPGDEHABLG_.getInt(i));
+            .computeUInt32SizeNoTag(mLJJHIGPDJD_.getInt(i));
         }
         size += dataSize;
-        if (!getPBPGDEHABLGList().isEmpty()) {
+        if (!getMLJJHIGPDJDList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        pBPGDEHABLGMemoizedSerializedSize = dataSize;
+        mLJJHIGPDJDMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,8 +226,8 @@ public final class ClientDetectorResultOuterClass {
       }
       emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult other = (emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult) obj;
 
-      if (!getPBPGDEHABLGList()
-          .equals(other.getPBPGDEHABLGList())) return false;
+      if (!getMLJJHIGPDJDList()
+          .equals(other.getMLJJHIGPDJDList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,9 +239,9 @@ public final class ClientDetectorResultOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPBPGDEHABLGCount() > 0) {
-        hash = (37 * hash) + PBPGDEHABLG_FIELD_NUMBER;
-        hash = (53 * hash) + getPBPGDEHABLGList().hashCode();
+      if (getMLJJHIGPDJDCount() > 0) {
+        hash = (37 * hash) + MLJJHIGPDJD_FIELD_NUMBER;
+        hash = (53 * hash) + getMLJJHIGPDJDList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,7 +376,7 @@ public final class ClientDetectorResultOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pBPGDEHABLG_ = emptyIntList();
+        mLJJHIGPDJD_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -406,10 +406,10 @@ public final class ClientDetectorResultOuterClass {
         emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult result = new emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          pBPGDEHABLG_.makeImmutable();
+          mLJJHIGPDJD_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.pBPGDEHABLG_ = pBPGDEHABLG_;
+        result.mLJJHIGPDJD_ = mLJJHIGPDJD_;
         onBuilt();
         return result;
       }
@@ -458,13 +458,13 @@ public final class ClientDetectorResultOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult other) {
         if (other == emu.grasscutter.net.proto.ClientDetectorResultOuterClass.ClientDetectorResult.getDefaultInstance()) return this;
-        if (!other.pBPGDEHABLG_.isEmpty()) {
-          if (pBPGDEHABLG_.isEmpty()) {
-            pBPGDEHABLG_ = other.pBPGDEHABLG_;
+        if (!other.mLJJHIGPDJD_.isEmpty()) {
+          if (mLJJHIGPDJD_.isEmpty()) {
+            mLJJHIGPDJD_ = other.mLJJHIGPDJD_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensurePBPGDEHABLGIsMutable();
-            pBPGDEHABLG_.addAll(other.pBPGDEHABLG_);
+            ensureMLJJHIGPDJDIsMutable();
+            mLJJHIGPDJD_.addAll(other.mLJJHIGPDJD_);
           }
           onChanged();
         }
@@ -498,80 +498,80 @@ public final class ClientDetectorResultOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList pBPGDEHABLG_ = emptyIntList();
-      private void ensurePBPGDEHABLGIsMutable() {
+      private com.google.protobuf.Internal.IntList mLJJHIGPDJD_ = emptyIntList();
+      private void ensureMLJJHIGPDJDIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          pBPGDEHABLG_ = mutableCopy(pBPGDEHABLG_);
+          mLJJHIGPDJD_ = mutableCopy(mLJJHIGPDJD_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-       * @return A list containing the pBPGDEHABLG.
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+       * @return A list containing the mLJJHIGPDJD.
        */
       public java.util.List<java.lang.Integer>
-          getPBPGDEHABLGList() {
+          getMLJJHIGPDJDList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(pBPGDEHABLG_) : pBPGDEHABLG_;
+                 java.util.Collections.unmodifiableList(mLJJHIGPDJD_) : mLJJHIGPDJD_;
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-       * @return The count of pBPGDEHABLG.
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+       * @return The count of mLJJHIGPDJD.
        */
-      public int getPBPGDEHABLGCount() {
-        return pBPGDEHABLG_.size();
+      public int getMLJJHIGPDJDCount() {
+        return mLJJHIGPDJD_.size();
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
        * @param index The index of the element to return.
-       * @return The pBPGDEHABLG at the given index.
+       * @return The mLJJHIGPDJD at the given index.
        */
-      public int getPBPGDEHABLG(int index) {
-        return pBPGDEHABLG_.getInt(index);
+      public int getMLJJHIGPDJD(int index) {
+        return mLJJHIGPDJD_.getInt(index);
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
        * @param index The index to set the value at.
-       * @param value The pBPGDEHABLG to set.
+       * @param value The mLJJHIGPDJD to set.
        * @return This builder for chaining.
        */
-      public Builder setPBPGDEHABLG(
+      public Builder setMLJJHIGPDJD(
           int index, int value) {
-        ensurePBPGDEHABLGIsMutable();
-        pBPGDEHABLG_.setInt(index, value);
+        ensureMLJJHIGPDJDIsMutable();
+        mLJJHIGPDJD_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-       * @param value The pBPGDEHABLG to add.
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+       * @param value The mLJJHIGPDJD to add.
        * @return This builder for chaining.
        */
-      public Builder addPBPGDEHABLG(int value) {
-        ensurePBPGDEHABLGIsMutable();
-        pBPGDEHABLG_.addInt(value);
+      public Builder addMLJJHIGPDJD(int value) {
+        ensureMLJJHIGPDJDIsMutable();
+        mLJJHIGPDJD_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
-       * @param values The pBPGDEHABLG to add.
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
+       * @param values The mLJJHIGPDJD to add.
        * @return This builder for chaining.
        */
-      public Builder addAllPBPGDEHABLG(
+      public Builder addAllMLJJHIGPDJD(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensurePBPGDEHABLGIsMutable();
+        ensureMLJJHIGPDJDIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, pBPGDEHABLG_);
+            values, mLJJHIGPDJD_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PBPGDEHABLG = 11;</code>
+       * <code>repeated uint32 MLJJHIGPDJD = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPBPGDEHABLG() {
-        pBPGDEHABLG_ = emptyIntList();
+      public Builder clearMLJJHIGPDJD() {
+        mLJJHIGPDJD_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -644,7 +644,7 @@ public final class ClientDetectorResultOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ClientDetectorResult.proto\"+\n\024ClientDe" +
-      "tectorResult\022\023\n\013PBPGDEHABLG\030\013 \003(\rB\033\n\031emu" +
+      "tectorResult\022\023\n\013MLJJHIGPDJD\030\010 \003(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -656,7 +656,7 @@ public final class ClientDetectorResultOuterClass {
     internal_static_ClientDetectorResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientDetectorResult_descriptor,
-        new java.lang.String[] { "PBPGDEHABLG", });
+        new java.lang.String[] { "MLJJHIGPDJD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

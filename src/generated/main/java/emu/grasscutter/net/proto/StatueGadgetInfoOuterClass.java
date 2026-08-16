@@ -19,16 +19,28 @@ public final class StatueGadgetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @return A list containing the openedStatueUidList.
      */
     java.util.List<java.lang.Integer> getOpenedStatueUidListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @return The count of openedStatueUidList.
      */
     int getOpenedStatueUidListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @param index The index of the element to return.
      * @return The openedStatueUidList at the given index.
@@ -141,6 +153,10 @@ public final class StatueGadgetInfoOuterClass {
     public static final int OPENED_STATUE_UID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList openedStatueUidList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @return A list containing the openedStatueUidList.
      */
@@ -150,6 +166,10 @@ public final class StatueGadgetInfoOuterClass {
       return openedStatueUidList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @return The count of openedStatueUidList.
      */
@@ -157,6 +177,10 @@ public final class StatueGadgetInfoOuterClass {
       return openedStatueUidList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 opened_statue_uid_list = 1;</code>
      * @param index The index of the element to return.
      * @return The openedStatueUidList at the given index.
@@ -506,6 +530,10 @@ public final class StatueGadgetInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @return A list containing the openedStatueUidList.
        */
@@ -515,6 +543,10 @@ public final class StatueGadgetInfoOuterClass {
                  java.util.Collections.unmodifiableList(openedStatueUidList_) : openedStatueUidList_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @return The count of openedStatueUidList.
        */
@@ -522,6 +554,10 @@ public final class StatueGadgetInfoOuterClass {
         return openedStatueUidList_.size();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @param index The index of the element to return.
        * @return The openedStatueUidList at the given index.
@@ -530,6 +566,10 @@ public final class StatueGadgetInfoOuterClass {
         return openedStatueUidList_.getInt(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The openedStatueUidList to set.
@@ -543,6 +583,10 @@ public final class StatueGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @param value The openedStatueUidList to add.
        * @return This builder for chaining.
@@ -554,6 +598,10 @@ public final class StatueGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @param values The openedStatueUidList to add.
        * @return This builder for chaining.
@@ -567,6 +615,10 @@ public final class StatueGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 opened_statue_uid_list = 1;</code>
        * @return This builder for chaining.
        */

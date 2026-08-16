@@ -19,111 +19,193 @@ public final class CityReputationInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-     * @return Whether the huntInfo field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+     * @return Whether the iCBOOPABHDD field is set.
      */
-    boolean hasHuntInfo();
+    boolean hasICBOOPABHDD();
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-     * @return The huntInfo.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+     * @return The iCBOOPABHDD.
      */
-    emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo getHuntInfo();
+    emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG getICBOOPABHDD();
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
      */
-    emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder getHuntInfoOrBuilder();
+    emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder getICBOOPABHDDOrBuilder();
 
     /**
-     * <code>uint32 next_refresh_time = 3;</code>
-     * @return The nextRefreshTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     * @return Whether the lFNKAPAIEGM field is set.
      */
-    int getNextRefreshTime();
+    boolean hasLFNKAPAIEGM();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     * @return The lFNKAPAIEGM.
+     */
+    emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN getLFNKAPAIEGM();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     */
+    emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder getLFNKAPAIEGMOrBuilder();
 
     /**
-     * <code>uint32 total_accept_request_num = 5;</code>
-     * @return The totalAcceptRequestNum.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
+     * @return Whether the requestInfo field is set.
      */
-    int getTotalAcceptRequestNum();
+    boolean hasRequestInfo();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
+     * @return The requestInfo.
+     */
+    emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo getRequestInfo();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
+     */
+    emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder getRequestInfoOrBuilder();
 
     /**
-     * <code>uint32 exp = 12;</code>
-     * @return The exp.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     * @return Whether the hBPLFBBCABG field is set.
      */
-    int getExp();
+    boolean hasHBPLFBBCABG();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     * @return The hBPLFBBCABG.
+     */
+    emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG getHBPLFBBCABG();
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     */
+    emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder getHBPLFBBCABGOrBuilder();
 
     /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
-     * @return Whether the exploreInfo field is set.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
+     * @return A list containing the takenLevelRewardList.
      */
-    boolean hasExploreInfo();
+    java.util.List<java.lang.Integer> getTakenLevelRewardListList();
     /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
-     * @return The exploreInfo.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
+     * @return The count of takenLevelRewardList.
      */
-    emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo getExploreInfo();
+    int getTakenLevelRewardListCount();
     /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
+     * @param index The index of the element to return.
+     * @return The takenLevelRewardList at the given index.
      */
-    emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder getExploreInfoOrBuilder();
+    int getTakenLevelRewardList(int index);
 
     /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     * @return Whether the questInfo field is set.
-     */
-    boolean hasQuestInfo();
-    /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     * @return The questInfo.
-     */
-    emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo getQuestInfo();
-    /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     */
-    emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder getQuestInfoOrBuilder();
-
-    /**
-     * <code>uint32 level = 4;</code>
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 level = 11;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
-     * @return Whether the requestInfo field is set.
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
      */
-    boolean hasRequestInfo();
-    /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
-     * @return The requestInfo.
-     */
-    emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo getRequestInfo();
-    /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
-     */
-    emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder getRequestInfoOrBuilder();
+    int getExp();
 
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
-     * @return A list containing the takenLevelRewardList.
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 FPOBKHNNHBO = 5;</code>
+     * @return The fPOBKHNNHBO.
      */
-    java.util.List<java.lang.Integer> getTakenLevelRewardListList();
+    int getFPOBKHNNHBO();
+
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
-     * @return The count of takenLevelRewardList.
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 ICJAMBKKEIF = 7;</code>
+     * @return The iCJAMBKKEIF.
      */
-    int getTakenLevelRewardListCount();
+    int getICJAMBKKEIF();
+
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The takenLevelRewardList at the given index.
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 14;</code>
+     * @return The nextRefreshTime.
      */
-    int getTakenLevelRewardList(int index);
+    int getNextRefreshTime();
   }
   /**
-   * <pre>
-   * Obf: FCEOCFJNBNE
-   * </pre>
-   *
    * Protobuf type {@code CityReputationInfo}
    */
   public static final class CityReputationInfo extends
@@ -170,61 +252,61 @@ public final class CityReputationInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 10: {
+              emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder subBuilder = null;
+              if (requestInfo_ != null) {
+                subBuilder = requestInfo_.toBuilder();
+              }
+              requestInfo_ = input.readMessage(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(requestInfo_);
+                requestInfo_ = subBuilder.buildPartial();
+              }
 
-              nextRefreshTime_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 16: {
 
-              level_ = input.readUInt32();
+              exp_ = input.readUInt32();
+              break;
+            }
+            case 26: {
+              emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder subBuilder = null;
+              if (hBPLFBBCABG_ != null) {
+                subBuilder = hBPLFBBCABG_.toBuilder();
+              }
+              hBPLFBBCABG_ = input.readMessage(emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(hBPLFBBCABG_);
+                hBPLFBBCABG_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             case 40: {
 
-              totalAcceptRequestNum_ = input.readUInt32();
+              fPOBKHNNHBO_ = input.readUInt32();
               break;
             }
             case 50: {
-              emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder subBuilder = null;
-              if (exploreInfo_ != null) {
-                subBuilder = exploreInfo_.toBuilder();
+              emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder subBuilder = null;
+              if (iCBOOPABHDD_ != null) {
+                subBuilder = iCBOOPABHDD_.toBuilder();
               }
-              exploreInfo_ = input.readMessage(emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.parser(), extensionRegistry);
+              iCBOOPABHDD_ = input.readMessage(emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(exploreInfo_);
-                exploreInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(iCBOOPABHDD_);
+                iCBOOPABHDD_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 58: {
-              emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder subBuilder = null;
-              if (questInfo_ != null) {
-                subBuilder = questInfo_.toBuilder();
-              }
-              questInfo_ = input.readMessage(emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(questInfo_);
-                questInfo_ = subBuilder.buildPartial();
-              }
+            case 56: {
 
+              iCJAMBKKEIF_ = input.readUInt32();
               break;
             }
-            case 82: {
-              emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder subBuilder = null;
-              if (huntInfo_ != null) {
-                subBuilder = huntInfo_.toBuilder();
-              }
-              huntInfo_ = input.readMessage(emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(huntInfo_);
-                huntInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 88: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 takenLevelRewardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -232,7 +314,7 @@ public final class CityReputationInfoOuterClass {
               takenLevelRewardList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -245,20 +327,25 @@ public final class CityReputationInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 88: {
 
-              exp_ = input.readUInt32();
+              level_ = input.readUInt32();
               break;
             }
-            case 106: {
-              emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder subBuilder = null;
-              if (requestInfo_ != null) {
-                subBuilder = requestInfo_.toBuilder();
+            case 112: {
+
+              nextRefreshTime_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+              emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder subBuilder = null;
+              if (lFNKAPAIEGM_ != null) {
+                subBuilder = lFNKAPAIEGM_.toBuilder();
               }
-              requestInfo_ = input.readMessage(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.parser(), extensionRegistry);
+              lFNKAPAIEGM_ = input.readMessage(emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(requestInfo_);
-                requestInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(lFNKAPAIEGM_);
+                lFNKAPAIEGM_ = subBuilder.buildPartial();
               }
 
               break;
@@ -298,132 +385,90 @@ public final class CityReputationInfoOuterClass {
               emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo.class, emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo.Builder.class);
     }
 
-    public static final int HUNT_INFO_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo huntInfo_;
+    public static final int ICBOOPABHDD_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG iCBOOPABHDD_;
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-     * @return Whether the huntInfo field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+     * @return Whether the iCBOOPABHDD field is set.
      */
     @java.lang.Override
-    public boolean hasHuntInfo() {
-      return huntInfo_ != null;
+    public boolean hasICBOOPABHDD() {
+      return iCBOOPABHDD_ != null;
     }
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-     * @return The huntInfo.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+     * @return The iCBOOPABHDD.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo getHuntInfo() {
-      return huntInfo_ == null ? emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.getDefaultInstance() : huntInfo_;
+    public emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG getICBOOPABHDD() {
+      return iCBOOPABHDD_ == null ? emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.getDefaultInstance() : iCBOOPABHDD_;
     }
     /**
-     * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder getHuntInfoOrBuilder() {
-      return getHuntInfo();
-    }
-
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 3;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 3;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
-    }
-
-    public static final int TOTAL_ACCEPT_REQUEST_NUM_FIELD_NUMBER = 5;
-    private int totalAcceptRequestNum_;
-    /**
-     * <code>uint32 total_accept_request_num = 5;</code>
-     * @return The totalAcceptRequestNum.
-     */
-    @java.lang.Override
-    public int getTotalAcceptRequestNum() {
-      return totalAcceptRequestNum_;
+    public emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder getICBOOPABHDDOrBuilder() {
+      return getICBOOPABHDD();
     }
 
-    public static final int EXP_FIELD_NUMBER = 12;
-    private int exp_;
+    public static final int LFNKAPAIEGM_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN lFNKAPAIEGM_;
     /**
-     * <code>uint32 exp = 12;</code>
-     * @return The exp.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     * @return Whether the lFNKAPAIEGM field is set.
      */
     @java.lang.Override
-    public int getExp() {
-      return exp_;
+    public boolean hasLFNKAPAIEGM() {
+      return lFNKAPAIEGM_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     * @return The lFNKAPAIEGM.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN getLFNKAPAIEGM() {
+      return lFNKAPAIEGM_ == null ? emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.getDefaultInstance() : lFNKAPAIEGM_;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder getLFNKAPAIEGMOrBuilder() {
+      return getLFNKAPAIEGM();
     }
 
-    public static final int EXPLORE_INFO_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo exploreInfo_;
-    /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
-     * @return Whether the exploreInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasExploreInfo() {
-      return exploreInfo_ != null;
-    }
-    /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
-     * @return The exploreInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo getExploreInfo() {
-      return exploreInfo_ == null ? emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.getDefaultInstance() : exploreInfo_;
-    }
-    /**
-     * <code>.CityReputationExploreInfo explore_info = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder getExploreInfoOrBuilder() {
-      return getExploreInfo();
-    }
-
-    public static final int QUEST_INFO_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo questInfo_;
-    /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     * @return Whether the questInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasQuestInfo() {
-      return questInfo_ != null;
-    }
-    /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     * @return The questInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo getQuestInfo() {
-      return questInfo_ == null ? emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.getDefaultInstance() : questInfo_;
-    }
-    /**
-     * <code>.CityReputationQuestInfo quest_info = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder getQuestInfoOrBuilder() {
-      return getQuestInfo();
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 4;
-    private int level_;
-    /**
-     * <code>uint32 level = 4;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int REQUEST_INFO_FIELD_NUMBER = 13;
+    public static final int REQUEST_INFO_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo requestInfo_;
     /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
      * @return Whether the requestInfo field is set.
      */
     @java.lang.Override
@@ -431,7 +476,11 @@ public final class CityReputationInfoOuterClass {
       return requestInfo_ != null;
     }
     /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
      * @return The requestInfo.
      */
     @java.lang.Override
@@ -439,17 +488,63 @@ public final class CityReputationInfoOuterClass {
       return requestInfo_ == null ? emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.getDefaultInstance() : requestInfo_;
     }
     /**
-     * <code>.CityReputationRequestInfo request_info = 13;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.CityReputationRequestInfo request_info = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder getRequestInfoOrBuilder() {
       return getRequestInfo();
     }
 
-    public static final int TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER = 11;
+    public static final int HBPLFBBCABG_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG hBPLFBBCABG_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     * @return Whether the hBPLFBBCABG field is set.
+     */
+    @java.lang.Override
+    public boolean hasHBPLFBBCABG() {
+      return hBPLFBBCABG_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     * @return The hBPLFBBCABG.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG getHBPLFBBCABG() {
+      return hBPLFBBCABG_ == null ? emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.getDefaultInstance() : hBPLFBBCABG_;
+    }
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder getHBPLFBBCABGOrBuilder() {
+      return getHBPLFBBCABG();
+    }
+
+    public static final int TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList takenLevelRewardList_;
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
      * @return A list containing the takenLevelRewardList.
      */
     @java.lang.Override
@@ -458,14 +553,22 @@ public final class CityReputationInfoOuterClass {
       return takenLevelRewardList_;
     }
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
      * @return The count of takenLevelRewardList.
      */
     public int getTakenLevelRewardListCount() {
       return takenLevelRewardList_.size();
     }
     /**
-     * <code>repeated uint32 taken_level_reward_list = 11;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>repeated uint32 taken_level_reward_list = 10;</code>
      * @param index The index of the element to return.
      * @return The takenLevelRewardList at the given index.
      */
@@ -473,6 +576,81 @@ public final class CityReputationInfoOuterClass {
       return takenLevelRewardList_.getInt(index);
     }
     private int takenLevelRewardListMemoizedSerializedSize = -1;
+
+    public static final int LEVEL_FIELD_NUMBER = 11;
+    private int level_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 level = 11;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+
+    public static final int EXP_FIELD_NUMBER = 2;
+    private int exp_;
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
+     */
+    @java.lang.Override
+    public int getExp() {
+      return exp_;
+    }
+
+    public static final int FPOBKHNNHBO_FIELD_NUMBER = 5;
+    private int fPOBKHNNHBO_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 FPOBKHNNHBO = 5;</code>
+     * @return The fPOBKHNNHBO.
+     */
+    @java.lang.Override
+    public int getFPOBKHNNHBO() {
+      return fPOBKHNNHBO_;
+    }
+
+    public static final int ICJAMBKKEIF_FIELD_NUMBER = 7;
+    private int iCJAMBKKEIF_;
+    /**
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 ICJAMBKKEIF = 7;</code>
+     * @return The iCJAMBKKEIF.
+     */
+    @java.lang.Override
+    public int getICJAMBKKEIF() {
+      return iCJAMBKKEIF_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 14;
+    private int nextRefreshTime_;
+    /**
+     * <pre>
+     * offset: 88
+     * </pre>
+     *
+     * <code>uint32 next_refresh_time = 14;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -489,36 +667,39 @@ public final class CityReputationInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(3, nextRefreshTime_);
+      if (requestInfo_ != null) {
+        output.writeMessage(1, getRequestInfo());
       }
-      if (level_ != 0) {
-        output.writeUInt32(4, level_);
+      if (exp_ != 0) {
+        output.writeUInt32(2, exp_);
       }
-      if (totalAcceptRequestNum_ != 0) {
-        output.writeUInt32(5, totalAcceptRequestNum_);
+      if (hBPLFBBCABG_ != null) {
+        output.writeMessage(3, getHBPLFBBCABG());
       }
-      if (exploreInfo_ != null) {
-        output.writeMessage(6, getExploreInfo());
+      if (fPOBKHNNHBO_ != 0) {
+        output.writeUInt32(5, fPOBKHNNHBO_);
       }
-      if (questInfo_ != null) {
-        output.writeMessage(7, getQuestInfo());
+      if (iCBOOPABHDD_ != null) {
+        output.writeMessage(6, getICBOOPABHDD());
       }
-      if (huntInfo_ != null) {
-        output.writeMessage(10, getHuntInfo());
+      if (iCJAMBKKEIF_ != 0) {
+        output.writeUInt32(7, iCJAMBKKEIF_);
       }
       if (getTakenLevelRewardListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(takenLevelRewardListMemoizedSerializedSize);
       }
       for (int i = 0; i < takenLevelRewardList_.size(); i++) {
         output.writeUInt32NoTag(takenLevelRewardList_.getInt(i));
       }
-      if (exp_ != 0) {
-        output.writeUInt32(12, exp_);
+      if (level_ != 0) {
+        output.writeUInt32(11, level_);
       }
-      if (requestInfo_ != null) {
-        output.writeMessage(13, getRequestInfo());
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(14, nextRefreshTime_);
+      }
+      if (lFNKAPAIEGM_ != null) {
+        output.writeMessage(15, getLFNKAPAIEGM());
       }
       unknownFields.writeTo(output);
     }
@@ -529,29 +710,29 @@ public final class CityReputationInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nextRefreshTime_ != 0) {
+      if (requestInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, nextRefreshTime_);
+          .computeMessageSize(1, getRequestInfo());
       }
-      if (level_ != 0) {
+      if (exp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, level_);
+          .computeUInt32Size(2, exp_);
       }
-      if (totalAcceptRequestNum_ != 0) {
+      if (hBPLFBBCABG_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, totalAcceptRequestNum_);
+          .computeMessageSize(3, getHBPLFBBCABG());
       }
-      if (exploreInfo_ != null) {
+      if (fPOBKHNNHBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getExploreInfo());
+          .computeUInt32Size(5, fPOBKHNNHBO_);
       }
-      if (questInfo_ != null) {
+      if (iCBOOPABHDD_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getQuestInfo());
+          .computeMessageSize(6, getICBOOPABHDD());
       }
-      if (huntInfo_ != null) {
+      if (iCJAMBKKEIF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getHuntInfo());
+          .computeUInt32Size(7, iCJAMBKKEIF_);
       }
       {
         int dataSize = 0;
@@ -567,13 +748,17 @@ public final class CityReputationInfoOuterClass {
         }
         takenLevelRewardListMemoizedSerializedSize = dataSize;
       }
-      if (exp_ != 0) {
+      if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, exp_);
+          .computeUInt32Size(11, level_);
       }
-      if (requestInfo_ != null) {
+      if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getRequestInfo());
+          .computeUInt32Size(14, nextRefreshTime_);
+      }
+      if (lFNKAPAIEGM_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getLFNKAPAIEGM());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -590,36 +775,38 @@ public final class CityReputationInfoOuterClass {
       }
       emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo other = (emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo) obj;
 
-      if (hasHuntInfo() != other.hasHuntInfo()) return false;
-      if (hasHuntInfo()) {
-        if (!getHuntInfo()
-            .equals(other.getHuntInfo())) return false;
+      if (hasICBOOPABHDD() != other.hasICBOOPABHDD()) return false;
+      if (hasICBOOPABHDD()) {
+        if (!getICBOOPABHDD()
+            .equals(other.getICBOOPABHDD())) return false;
       }
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
-      if (getTotalAcceptRequestNum()
-          != other.getTotalAcceptRequestNum()) return false;
-      if (getExp()
-          != other.getExp()) return false;
-      if (hasExploreInfo() != other.hasExploreInfo()) return false;
-      if (hasExploreInfo()) {
-        if (!getExploreInfo()
-            .equals(other.getExploreInfo())) return false;
+      if (hasLFNKAPAIEGM() != other.hasLFNKAPAIEGM()) return false;
+      if (hasLFNKAPAIEGM()) {
+        if (!getLFNKAPAIEGM()
+            .equals(other.getLFNKAPAIEGM())) return false;
       }
-      if (hasQuestInfo() != other.hasQuestInfo()) return false;
-      if (hasQuestInfo()) {
-        if (!getQuestInfo()
-            .equals(other.getQuestInfo())) return false;
-      }
-      if (getLevel()
-          != other.getLevel()) return false;
       if (hasRequestInfo() != other.hasRequestInfo()) return false;
       if (hasRequestInfo()) {
         if (!getRequestInfo()
             .equals(other.getRequestInfo())) return false;
       }
+      if (hasHBPLFBBCABG() != other.hasHBPLFBBCABG()) return false;
+      if (hasHBPLFBBCABG()) {
+        if (!getHBPLFBBCABG()
+            .equals(other.getHBPLFBBCABG())) return false;
+      }
       if (!getTakenLevelRewardListList()
           .equals(other.getTakenLevelRewardListList())) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (getExp()
+          != other.getExp()) return false;
+      if (getFPOBKHNNHBO()
+          != other.getFPOBKHNNHBO()) return false;
+      if (getICJAMBKKEIF()
+          != other.getICJAMBKKEIF()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -631,34 +818,36 @@ public final class CityReputationInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasHuntInfo()) {
-        hash = (37 * hash) + HUNT_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getHuntInfo().hashCode();
+      if (hasICBOOPABHDD()) {
+        hash = (37 * hash) + ICBOOPABHDD_FIELD_NUMBER;
+        hash = (53 * hash) + getICBOOPABHDD().hashCode();
       }
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
-      hash = (37 * hash) + TOTAL_ACCEPT_REQUEST_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalAcceptRequestNum();
-      hash = (37 * hash) + EXP_FIELD_NUMBER;
-      hash = (53 * hash) + getExp();
-      if (hasExploreInfo()) {
-        hash = (37 * hash) + EXPLORE_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getExploreInfo().hashCode();
+      if (hasLFNKAPAIEGM()) {
+        hash = (37 * hash) + LFNKAPAIEGM_FIELD_NUMBER;
+        hash = (53 * hash) + getLFNKAPAIEGM().hashCode();
       }
-      if (hasQuestInfo()) {
-        hash = (37 * hash) + QUEST_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getQuestInfo().hashCode();
-      }
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
       if (hasRequestInfo()) {
         hash = (37 * hash) + REQUEST_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getRequestInfo().hashCode();
+      }
+      if (hasHBPLFBBCABG()) {
+        hash = (37 * hash) + HBPLFBBCABG_FIELD_NUMBER;
+        hash = (53 * hash) + getHBPLFBBCABG().hashCode();
       }
       if (getTakenLevelRewardListCount() > 0) {
         hash = (37 * hash) + TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTakenLevelRewardListList().hashCode();
       }
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getExp();
+      hash = (37 * hash) + FPOBKHNNHBO_FIELD_NUMBER;
+      hash = (53 * hash) + getFPOBKHNNHBO();
+      hash = (37 * hash) + ICJAMBKKEIF_FIELD_NUMBER;
+      hash = (53 * hash) + getICJAMBKKEIF();
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -755,10 +944,6 @@ public final class CityReputationInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FCEOCFJNBNE
-     * </pre>
-     *
      * Protobuf type {@code CityReputationInfo}
      */
     public static final class Builder extends
@@ -796,40 +981,42 @@ public final class CityReputationInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (huntInfoBuilder_ == null) {
-          huntInfo_ = null;
+        if (iCBOOPABHDDBuilder_ == null) {
+          iCBOOPABHDD_ = null;
         } else {
-          huntInfo_ = null;
-          huntInfoBuilder_ = null;
+          iCBOOPABHDD_ = null;
+          iCBOOPABHDDBuilder_ = null;
         }
-        nextRefreshTime_ = 0;
-
-        totalAcceptRequestNum_ = 0;
-
-        exp_ = 0;
-
-        if (exploreInfoBuilder_ == null) {
-          exploreInfo_ = null;
+        if (lFNKAPAIEGMBuilder_ == null) {
+          lFNKAPAIEGM_ = null;
         } else {
-          exploreInfo_ = null;
-          exploreInfoBuilder_ = null;
+          lFNKAPAIEGM_ = null;
+          lFNKAPAIEGMBuilder_ = null;
         }
-        if (questInfoBuilder_ == null) {
-          questInfo_ = null;
-        } else {
-          questInfo_ = null;
-          questInfoBuilder_ = null;
-        }
-        level_ = 0;
-
         if (requestInfoBuilder_ == null) {
           requestInfo_ = null;
         } else {
           requestInfo_ = null;
           requestInfoBuilder_ = null;
         }
+        if (hBPLFBBCABGBuilder_ == null) {
+          hBPLFBBCABG_ = null;
+        } else {
+          hBPLFBBCABG_ = null;
+          hBPLFBBCABGBuilder_ = null;
+        }
         takenLevelRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        level_ = 0;
+
+        exp_ = 0;
+
+        fPOBKHNNHBO_ = 0;
+
+        iCJAMBKKEIF_ = 0;
+
+        nextRefreshTime_ = 0;
+
         return this;
       }
 
@@ -857,35 +1044,36 @@ public final class CityReputationInfoOuterClass {
       public emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo buildPartial() {
         emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo result = new emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo(this);
         int from_bitField0_ = bitField0_;
-        if (huntInfoBuilder_ == null) {
-          result.huntInfo_ = huntInfo_;
+        if (iCBOOPABHDDBuilder_ == null) {
+          result.iCBOOPABHDD_ = iCBOOPABHDD_;
         } else {
-          result.huntInfo_ = huntInfoBuilder_.build();
+          result.iCBOOPABHDD_ = iCBOOPABHDDBuilder_.build();
         }
-        result.nextRefreshTime_ = nextRefreshTime_;
-        result.totalAcceptRequestNum_ = totalAcceptRequestNum_;
-        result.exp_ = exp_;
-        if (exploreInfoBuilder_ == null) {
-          result.exploreInfo_ = exploreInfo_;
+        if (lFNKAPAIEGMBuilder_ == null) {
+          result.lFNKAPAIEGM_ = lFNKAPAIEGM_;
         } else {
-          result.exploreInfo_ = exploreInfoBuilder_.build();
+          result.lFNKAPAIEGM_ = lFNKAPAIEGMBuilder_.build();
         }
-        if (questInfoBuilder_ == null) {
-          result.questInfo_ = questInfo_;
-        } else {
-          result.questInfo_ = questInfoBuilder_.build();
-        }
-        result.level_ = level_;
         if (requestInfoBuilder_ == null) {
           result.requestInfo_ = requestInfo_;
         } else {
           result.requestInfo_ = requestInfoBuilder_.build();
+        }
+        if (hBPLFBBCABGBuilder_ == null) {
+          result.hBPLFBBCABG_ = hBPLFBBCABG_;
+        } else {
+          result.hBPLFBBCABG_ = hBPLFBBCABGBuilder_.build();
         }
         if (((bitField0_ & 0x00000001) != 0)) {
           takenLevelRewardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.takenLevelRewardList_ = takenLevelRewardList_;
+        result.level_ = level_;
+        result.exp_ = exp_;
+        result.fPOBKHNNHBO_ = fPOBKHNNHBO_;
+        result.iCJAMBKKEIF_ = iCJAMBKKEIF_;
+        result.nextRefreshTime_ = nextRefreshTime_;
         onBuilt();
         return result;
       }
@@ -934,29 +1122,17 @@ public final class CityReputationInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo other) {
         if (other == emu.grasscutter.net.proto.CityReputationInfoOuterClass.CityReputationInfo.getDefaultInstance()) return this;
-        if (other.hasHuntInfo()) {
-          mergeHuntInfo(other.getHuntInfo());
+        if (other.hasICBOOPABHDD()) {
+          mergeICBOOPABHDD(other.getICBOOPABHDD());
         }
-        if (other.getNextRefreshTime() != 0) {
-          setNextRefreshTime(other.getNextRefreshTime());
-        }
-        if (other.getTotalAcceptRequestNum() != 0) {
-          setTotalAcceptRequestNum(other.getTotalAcceptRequestNum());
-        }
-        if (other.getExp() != 0) {
-          setExp(other.getExp());
-        }
-        if (other.hasExploreInfo()) {
-          mergeExploreInfo(other.getExploreInfo());
-        }
-        if (other.hasQuestInfo()) {
-          mergeQuestInfo(other.getQuestInfo());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
+        if (other.hasLFNKAPAIEGM()) {
+          mergeLFNKAPAIEGM(other.getLFNKAPAIEGM());
         }
         if (other.hasRequestInfo()) {
           mergeRequestInfo(other.getRequestInfo());
+        }
+        if (other.hasHBPLFBBCABG()) {
+          mergeHBPLFBBCABG(other.getHBPLFBBCABG());
         }
         if (!other.takenLevelRewardList_.isEmpty()) {
           if (takenLevelRewardList_.isEmpty()) {
@@ -967,6 +1143,21 @@ public final class CityReputationInfoOuterClass {
             takenLevelRewardList_.addAll(other.takenLevelRewardList_);
           }
           onChanged();
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
+        if (other.getExp() != 0) {
+          setExp(other.getExp());
+        }
+        if (other.getFPOBKHNNHBO() != 0) {
+          setFPOBKHNNHBO(other.getFPOBKHNNHBO());
+        }
+        if (other.getICJAMBKKEIF() != 0) {
+          setICJAMBKKEIF(other.getICJAMBKKEIF());
+        }
+        if (other.getNextRefreshTime() != 0) {
+          setNextRefreshTime(other.getNextRefreshTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -998,499 +1189,336 @@ public final class CityReputationInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo huntInfo_;
+      private emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG iCBOOPABHDD_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder> huntInfoBuilder_;
+          emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder> iCBOOPABHDDBuilder_;
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-       * @return Whether the huntInfo field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+       * @return Whether the iCBOOPABHDD field is set.
        */
-      public boolean hasHuntInfo() {
-        return huntInfoBuilder_ != null || huntInfo_ != null;
+      public boolean hasICBOOPABHDD() {
+        return iCBOOPABHDDBuilder_ != null || iCBOOPABHDD_ != null;
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
-       * @return The huntInfo.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
+       * @return The iCBOOPABHDD.
        */
-      public emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo getHuntInfo() {
-        if (huntInfoBuilder_ == null) {
-          return huntInfo_ == null ? emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.getDefaultInstance() : huntInfo_;
+      public emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG getICBOOPABHDD() {
+        if (iCBOOPABHDDBuilder_ == null) {
+          return iCBOOPABHDD_ == null ? emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.getDefaultInstance() : iCBOOPABHDD_;
         } else {
-          return huntInfoBuilder_.getMessage();
+          return iCBOOPABHDDBuilder_.getMessage();
         }
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public Builder setHuntInfo(emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo value) {
-        if (huntInfoBuilder_ == null) {
+      public Builder setICBOOPABHDD(emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG value) {
+        if (iCBOOPABHDDBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          huntInfo_ = value;
+          iCBOOPABHDD_ = value;
           onChanged();
         } else {
-          huntInfoBuilder_.setMessage(value);
+          iCBOOPABHDDBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public Builder setHuntInfo(
-          emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder builderForValue) {
-        if (huntInfoBuilder_ == null) {
-          huntInfo_ = builderForValue.build();
+      public Builder setICBOOPABHDD(
+          emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder builderForValue) {
+        if (iCBOOPABHDDBuilder_ == null) {
+          iCBOOPABHDD_ = builderForValue.build();
           onChanged();
         } else {
-          huntInfoBuilder_.setMessage(builderForValue.build());
+          iCBOOPABHDDBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public Builder mergeHuntInfo(emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo value) {
-        if (huntInfoBuilder_ == null) {
-          if (huntInfo_ != null) {
-            huntInfo_ =
-              emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.newBuilder(huntInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeICBOOPABHDD(emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG value) {
+        if (iCBOOPABHDDBuilder_ == null) {
+          if (iCBOOPABHDD_ != null) {
+            iCBOOPABHDD_ =
+              emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.newBuilder(iCBOOPABHDD_).mergeFrom(value).buildPartial();
           } else {
-            huntInfo_ = value;
+            iCBOOPABHDD_ = value;
           }
           onChanged();
         } else {
-          huntInfoBuilder_.mergeFrom(value);
+          iCBOOPABHDDBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public Builder clearHuntInfo() {
-        if (huntInfoBuilder_ == null) {
-          huntInfo_ = null;
+      public Builder clearICBOOPABHDD() {
+        if (iCBOOPABHDDBuilder_ == null) {
+          iCBOOPABHDD_ = null;
           onChanged();
         } else {
-          huntInfo_ = null;
-          huntInfoBuilder_ = null;
+          iCBOOPABHDD_ = null;
+          iCBOOPABHDDBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder getHuntInfoBuilder() {
+      public emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder getICBOOPABHDDBuilder() {
         
         onChanged();
-        return getHuntInfoFieldBuilder().getBuilder();
+        return getICBOOPABHDDFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
-      public emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder getHuntInfoOrBuilder() {
-        if (huntInfoBuilder_ != null) {
-          return huntInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder getICBOOPABHDDOrBuilder() {
+        if (iCBOOPABHDDBuilder_ != null) {
+          return iCBOOPABHDDBuilder_.getMessageOrBuilder();
         } else {
-          return huntInfo_ == null ?
-              emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.getDefaultInstance() : huntInfo_;
+          return iCBOOPABHDD_ == null ?
+              emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.getDefaultInstance() : iCBOOPABHDD_;
         }
       }
       /**
-       * <code>.CityReputationHuntInfo hunt_info = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.BPCBHOIKKHG ICBOOPABHDD = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder> 
-          getHuntInfoFieldBuilder() {
-        if (huntInfoBuilder_ == null) {
-          huntInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfo.Builder, emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.CityReputationHuntInfoOrBuilder>(
-                  getHuntInfo(),
+          emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder> 
+          getICBOOPABHDDFieldBuilder() {
+        if (iCBOOPABHDDBuilder_ == null) {
+          iCBOOPABHDDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHG.Builder, emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.BPCBHOIKKHGOrBuilder>(
+                  getICBOOPABHDD(),
                   getParentForChildren(),
                   isClean());
-          huntInfo_ = null;
+          iCBOOPABHDD_ = null;
         }
-        return huntInfoBuilder_;
+        return iCBOOPABHDDBuilder_;
       }
 
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 3;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 3;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int totalAcceptRequestNum_ ;
-      /**
-       * <code>uint32 total_accept_request_num = 5;</code>
-       * @return The totalAcceptRequestNum.
-       */
-      @java.lang.Override
-      public int getTotalAcceptRequestNum() {
-        return totalAcceptRequestNum_;
-      }
-      /**
-       * <code>uint32 total_accept_request_num = 5;</code>
-       * @param value The totalAcceptRequestNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTotalAcceptRequestNum(int value) {
-        
-        totalAcceptRequestNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 total_accept_request_num = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTotalAcceptRequestNum() {
-        
-        totalAcceptRequestNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int exp_ ;
-      /**
-       * <code>uint32 exp = 12;</code>
-       * @return The exp.
-       */
-      @java.lang.Override
-      public int getExp() {
-        return exp_;
-      }
-      /**
-       * <code>uint32 exp = 12;</code>
-       * @param value The exp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExp(int value) {
-        
-        exp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 exp = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExp() {
-        
-        exp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo exploreInfo_;
+      private emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN lFNKAPAIEGM_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder> exploreInfoBuilder_;
+          emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder> lFNKAPAIEGMBuilder_;
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
-       * @return Whether the exploreInfo field is set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+       * @return Whether the lFNKAPAIEGM field is set.
        */
-      public boolean hasExploreInfo() {
-        return exploreInfoBuilder_ != null || exploreInfo_ != null;
+      public boolean hasLFNKAPAIEGM() {
+        return lFNKAPAIEGMBuilder_ != null || lFNKAPAIEGM_ != null;
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
-       * @return The exploreInfo.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
+       * @return The lFNKAPAIEGM.
        */
-      public emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo getExploreInfo() {
-        if (exploreInfoBuilder_ == null) {
-          return exploreInfo_ == null ? emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.getDefaultInstance() : exploreInfo_;
+      public emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN getLFNKAPAIEGM() {
+        if (lFNKAPAIEGMBuilder_ == null) {
+          return lFNKAPAIEGM_ == null ? emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.getDefaultInstance() : lFNKAPAIEGM_;
         } else {
-          return exploreInfoBuilder_.getMessage();
+          return lFNKAPAIEGMBuilder_.getMessage();
         }
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public Builder setExploreInfo(emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo value) {
-        if (exploreInfoBuilder_ == null) {
+      public Builder setLFNKAPAIEGM(emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN value) {
+        if (lFNKAPAIEGMBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          exploreInfo_ = value;
+          lFNKAPAIEGM_ = value;
           onChanged();
         } else {
-          exploreInfoBuilder_.setMessage(value);
+          lFNKAPAIEGMBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public Builder setExploreInfo(
-          emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder builderForValue) {
-        if (exploreInfoBuilder_ == null) {
-          exploreInfo_ = builderForValue.build();
+      public Builder setLFNKAPAIEGM(
+          emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder builderForValue) {
+        if (lFNKAPAIEGMBuilder_ == null) {
+          lFNKAPAIEGM_ = builderForValue.build();
           onChanged();
         } else {
-          exploreInfoBuilder_.setMessage(builderForValue.build());
+          lFNKAPAIEGMBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public Builder mergeExploreInfo(emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo value) {
-        if (exploreInfoBuilder_ == null) {
-          if (exploreInfo_ != null) {
-            exploreInfo_ =
-              emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.newBuilder(exploreInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeLFNKAPAIEGM(emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN value) {
+        if (lFNKAPAIEGMBuilder_ == null) {
+          if (lFNKAPAIEGM_ != null) {
+            lFNKAPAIEGM_ =
+              emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.newBuilder(lFNKAPAIEGM_).mergeFrom(value).buildPartial();
           } else {
-            exploreInfo_ = value;
+            lFNKAPAIEGM_ = value;
           }
           onChanged();
         } else {
-          exploreInfoBuilder_.mergeFrom(value);
+          lFNKAPAIEGMBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public Builder clearExploreInfo() {
-        if (exploreInfoBuilder_ == null) {
-          exploreInfo_ = null;
+      public Builder clearLFNKAPAIEGM() {
+        if (lFNKAPAIEGMBuilder_ == null) {
+          lFNKAPAIEGM_ = null;
           onChanged();
         } else {
-          exploreInfo_ = null;
-          exploreInfoBuilder_ = null;
+          lFNKAPAIEGM_ = null;
+          lFNKAPAIEGMBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder getExploreInfoBuilder() {
+      public emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder getLFNKAPAIEGMBuilder() {
         
         onChanged();
-        return getExploreInfoFieldBuilder().getBuilder();
+        return getLFNKAPAIEGMFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
-      public emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder getExploreInfoOrBuilder() {
-        if (exploreInfoBuilder_ != null) {
-          return exploreInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder getLFNKAPAIEGMOrBuilder() {
+        if (lFNKAPAIEGMBuilder_ != null) {
+          return lFNKAPAIEGMBuilder_.getMessageOrBuilder();
         } else {
-          return exploreInfo_ == null ?
-              emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.getDefaultInstance() : exploreInfo_;
+          return lFNKAPAIEGM_ == null ?
+              emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.getDefaultInstance() : lFNKAPAIEGM_;
         }
       }
       /**
-       * <code>.CityReputationExploreInfo explore_info = 6;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.OGADNOIBDLN LFNKAPAIEGM = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder> 
-          getExploreInfoFieldBuilder() {
-        if (exploreInfoBuilder_ == null) {
-          exploreInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfo.Builder, emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.CityReputationExploreInfoOrBuilder>(
-                  getExploreInfo(),
+          emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder> 
+          getLFNKAPAIEGMFieldBuilder() {
+        if (lFNKAPAIEGMBuilder_ == null) {
+          lFNKAPAIEGMBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLN.Builder, emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.OGADNOIBDLNOrBuilder>(
+                  getLFNKAPAIEGM(),
                   getParentForChildren(),
                   isClean());
-          exploreInfo_ = null;
+          lFNKAPAIEGM_ = null;
         }
-        return exploreInfoBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo questInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder> questInfoBuilder_;
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       * @return Whether the questInfo field is set.
-       */
-      public boolean hasQuestInfo() {
-        return questInfoBuilder_ != null || questInfo_ != null;
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       * @return The questInfo.
-       */
-      public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo getQuestInfo() {
-        if (questInfoBuilder_ == null) {
-          return questInfo_ == null ? emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.getDefaultInstance() : questInfo_;
-        } else {
-          return questInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public Builder setQuestInfo(emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo value) {
-        if (questInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          questInfo_ = value;
-          onChanged();
-        } else {
-          questInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public Builder setQuestInfo(
-          emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder builderForValue) {
-        if (questInfoBuilder_ == null) {
-          questInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          questInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public Builder mergeQuestInfo(emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo value) {
-        if (questInfoBuilder_ == null) {
-          if (questInfo_ != null) {
-            questInfo_ =
-              emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.newBuilder(questInfo_).mergeFrom(value).buildPartial();
-          } else {
-            questInfo_ = value;
-          }
-          onChanged();
-        } else {
-          questInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public Builder clearQuestInfo() {
-        if (questInfoBuilder_ == null) {
-          questInfo_ = null;
-          onChanged();
-        } else {
-          questInfo_ = null;
-          questInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder getQuestInfoBuilder() {
-        
-        onChanged();
-        return getQuestInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      public emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder getQuestInfoOrBuilder() {
-        if (questInfoBuilder_ != null) {
-          return questInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return questInfo_ == null ?
-              emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.getDefaultInstance() : questInfo_;
-        }
-      }
-      /**
-       * <code>.CityReputationQuestInfo quest_info = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder> 
-          getQuestInfoFieldBuilder() {
-        if (questInfoBuilder_ == null) {
-          questInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfo.Builder, emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.CityReputationQuestInfoOrBuilder>(
-                  getQuestInfo(),
-                  getParentForChildren(),
-                  isClean());
-          questInfo_ = null;
-        }
-        return questInfoBuilder_;
-      }
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 4;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 4;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
+        return lFNKAPAIEGMBuilder_;
       }
 
       private emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo requestInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder> requestInfoBuilder_;
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        * @return Whether the requestInfo field is set.
        */
       public boolean hasRequestInfo() {
         return requestInfoBuilder_ != null || requestInfo_ != null;
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        * @return The requestInfo.
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo getRequestInfo() {
@@ -1501,7 +1529,11 @@ public final class CityReputationInfoOuterClass {
         }
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public Builder setRequestInfo(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo value) {
         if (requestInfoBuilder_ == null) {
@@ -1517,7 +1549,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public Builder setRequestInfo(
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder builderForValue) {
@@ -1531,7 +1567,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public Builder mergeRequestInfo(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo value) {
         if (requestInfoBuilder_ == null) {
@@ -1549,7 +1589,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public Builder clearRequestInfo() {
         if (requestInfoBuilder_ == null) {
@@ -1563,7 +1607,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder getRequestInfoBuilder() {
         
@@ -1571,7 +1619,11 @@ public final class CityReputationInfoOuterClass {
         return getRequestInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder getRequestInfoOrBuilder() {
         if (requestInfoBuilder_ != null) {
@@ -1582,7 +1634,11 @@ public final class CityReputationInfoOuterClass {
         }
       }
       /**
-       * <code>.CityReputationRequestInfo request_info = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.CityReputationRequestInfo request_info = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.Builder, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfoOrBuilder> 
@@ -1598,6 +1654,161 @@ public final class CityReputationInfoOuterClass {
         return requestInfoBuilder_;
       }
 
+      private emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG hBPLFBBCABG_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder> hBPLFBBCABGBuilder_;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       * @return Whether the hBPLFBBCABG field is set.
+       */
+      public boolean hasHBPLFBBCABG() {
+        return hBPLFBBCABGBuilder_ != null || hBPLFBBCABG_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       * @return The hBPLFBBCABG.
+       */
+      public emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG getHBPLFBBCABG() {
+        if (hBPLFBBCABGBuilder_ == null) {
+          return hBPLFBBCABG_ == null ? emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.getDefaultInstance() : hBPLFBBCABG_;
+        } else {
+          return hBPLFBBCABGBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public Builder setHBPLFBBCABG(emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG value) {
+        if (hBPLFBBCABGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          hBPLFBBCABG_ = value;
+          onChanged();
+        } else {
+          hBPLFBBCABGBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public Builder setHBPLFBBCABG(
+          emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder builderForValue) {
+        if (hBPLFBBCABGBuilder_ == null) {
+          hBPLFBBCABG_ = builderForValue.build();
+          onChanged();
+        } else {
+          hBPLFBBCABGBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public Builder mergeHBPLFBBCABG(emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG value) {
+        if (hBPLFBBCABGBuilder_ == null) {
+          if (hBPLFBBCABG_ != null) {
+            hBPLFBBCABG_ =
+              emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.newBuilder(hBPLFBBCABG_).mergeFrom(value).buildPartial();
+          } else {
+            hBPLFBBCABG_ = value;
+          }
+          onChanged();
+        } else {
+          hBPLFBBCABGBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public Builder clearHBPLFBBCABG() {
+        if (hBPLFBBCABGBuilder_ == null) {
+          hBPLFBBCABG_ = null;
+          onChanged();
+        } else {
+          hBPLFBBCABG_ = null;
+          hBPLFBBCABGBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder getHBPLFBBCABGBuilder() {
+        
+        onChanged();
+        return getHBPLFBBCABGFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      public emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder getHBPLFBBCABGOrBuilder() {
+        if (hBPLFBBCABGBuilder_ != null) {
+          return hBPLFBBCABGBuilder_.getMessageOrBuilder();
+        } else {
+          return hBPLFBBCABG_ == null ?
+              emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.getDefaultInstance() : hBPLFBBCABG_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>.AKCGLFLCHMG HBPLFBBCABG = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder> 
+          getHBPLFBBCABGFieldBuilder() {
+        if (hBPLFBBCABGBuilder_ == null) {
+          hBPLFBBCABGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMG.Builder, emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.AKCGLFLCHMGOrBuilder>(
+                  getHBPLFBBCABG(),
+                  getParentForChildren(),
+                  isClean());
+          hBPLFBBCABG_ = null;
+        }
+        return hBPLFBBCABGBuilder_;
+      }
+
       private com.google.protobuf.Internal.IntList takenLevelRewardList_ = emptyIntList();
       private void ensureTakenLevelRewardListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -1606,7 +1817,11 @@ public final class CityReputationInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @return A list containing the takenLevelRewardList.
        */
       public java.util.List<java.lang.Integer>
@@ -1615,14 +1830,22 @@ public final class CityReputationInfoOuterClass {
                  java.util.Collections.unmodifiableList(takenLevelRewardList_) : takenLevelRewardList_;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @return The count of takenLevelRewardList.
        */
       public int getTakenLevelRewardListCount() {
         return takenLevelRewardList_.size();
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @param index The index of the element to return.
        * @return The takenLevelRewardList at the given index.
        */
@@ -1630,7 +1853,11 @@ public final class CityReputationInfoOuterClass {
         return takenLevelRewardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The takenLevelRewardList to set.
        * @return This builder for chaining.
@@ -1643,7 +1870,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @param value The takenLevelRewardList to add.
        * @return This builder for chaining.
        */
@@ -1654,7 +1885,11 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @param values The takenLevelRewardList to add.
        * @return This builder for chaining.
        */
@@ -1667,12 +1902,231 @@ public final class CityReputationInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 taken_level_reward_list = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>repeated uint32 taken_level_reward_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTakenLevelRewardList() {
         takenLevelRewardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 level = 11;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 level = 11;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 level = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int exp_ ;
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 exp = 2;</code>
+       * @return The exp.
+       */
+      @java.lang.Override
+      public int getExp() {
+        return exp_;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 exp = 2;</code>
+       * @param value The exp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExp(int value) {
+        
+        exp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>uint32 exp = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExp() {
+        
+        exp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fPOBKHNNHBO_ ;
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 FPOBKHNNHBO = 5;</code>
+       * @return The fPOBKHNNHBO.
+       */
+      @java.lang.Override
+      public int getFPOBKHNNHBO() {
+        return fPOBKHNNHBO_;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 FPOBKHNNHBO = 5;</code>
+       * @param value The fPOBKHNNHBO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFPOBKHNNHBO(int value) {
+        
+        fPOBKHNNHBO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 FPOBKHNNHBO = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFPOBKHNNHBO() {
+        
+        fPOBKHNNHBO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iCJAMBKKEIF_ ;
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 ICJAMBKKEIF = 7;</code>
+       * @return The iCJAMBKKEIF.
+       */
+      @java.lang.Override
+      public int getICJAMBKKEIF() {
+        return iCJAMBKKEIF_;
+      }
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 ICJAMBKKEIF = 7;</code>
+       * @param value The iCJAMBKKEIF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setICJAMBKKEIF(int value) {
+        
+        iCJAMBKKEIF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 ICJAMBKKEIF = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearICJAMBKKEIF() {
+        
+        iCJAMBKKEIF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 14;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 14;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 88
+       * </pre>
+       *
+       * <code>uint32 next_refresh_time = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
         onChanged();
         return this;
       }
@@ -1743,39 +2197,37 @@ public final class CityReputationInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030CityReputationInfo.proto\032\034CityReputati" +
-      "onHuntInfo.proto\032\037CityReputationExploreI" +
-      "nfo.proto\032\035CityReputationQuestInfo.proto" +
-      "\032\037CityReputationRequestInfo.proto\"\314\002\n\022Ci" +
-      "tyReputationInfo\022*\n\thunt_info\030\n \001(\0132\027.Ci" +
-      "tyReputationHuntInfo\022\031\n\021next_refresh_tim" +
-      "e\030\003 \001(\r\022 \n\030total_accept_request_num\030\005 \001(" +
-      "\r\022\013\n\003exp\030\014 \001(\r\0220\n\014explore_info\030\006 \001(\0132\032.C" +
-      "ityReputationExploreInfo\022,\n\nquest_info\030\007" +
-      " \001(\0132\030.CityReputationQuestInfo\022\r\n\005level\030" +
-      "\004 \001(\r\0220\n\014request_info\030\r \001(\0132\032.CityReputa" +
-      "tionRequestInfo\022\037\n\027taken_level_reward_li" +
-      "st\030\013 \003(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\030CityReputationInfo.proto\032\021AKCGLFLCHMG." +
+      "proto\032\021BPCBHOIKKHG.proto\032\037CityReputation" +
+      "RequestInfo.proto\032\021OGADNOIBDLN.proto\"\261\002\n" +
+      "\022CityReputationInfo\022!\n\013ICBOOPABHDD\030\006 \001(\013" +
+      "2\014.BPCBHOIKKHG\022!\n\013LFNKAPAIEGM\030\017 \001(\0132\014.OG" +
+      "ADNOIBDLN\0220\n\014request_info\030\001 \001(\0132\032.CityRe" +
+      "putationRequestInfo\022!\n\013HBPLFBBCABG\030\003 \001(\013" +
+      "2\014.AKCGLFLCHMG\022\037\n\027taken_level_reward_lis" +
+      "t\030\n \003(\r\022\r\n\005level\030\013 \001(\r\022\013\n\003exp\030\002 \001(\r\022\023\n\013F" +
+      "POBKHNNHBO\030\005 \001(\r\022\023\n\013ICJAMBKKEIF\030\007 \001(\r\022\031\n" +
+      "\021next_refresh_time\030\016 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.getDescriptor(),
         });
     internal_static_CityReputationInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CityReputationInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CityReputationInfo_descriptor,
-        new java.lang.String[] { "HuntInfo", "NextRefreshTime", "TotalAcceptRequestNum", "Exp", "ExploreInfo", "QuestInfo", "Level", "RequestInfo", "TakenLevelRewardList", });
-    emu.grasscutter.net.proto.CityReputationHuntInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CityReputationExploreInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CityReputationQuestInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "ICBOOPABHDD", "LFNKAPAIEGM", "RequestInfo", "HBPLFBBCABG", "TakenLevelRewardList", "Level", "Exp", "FPOBKHNNHBO", "ICJAMBKKEIF", "NextRefreshTime", });
+    emu.grasscutter.net.proto.AKCGLFLCHMGOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BPCBHOIKKHGOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.OGADNOIBDLNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

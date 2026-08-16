@@ -19,49 +19,85 @@ public final class AbilityBornTypeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector rot = 14;</code>
-     * @return Whether the rot field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
+     * @return Whether the moveDir field is set.
      */
-    boolean hasRot();
+    boolean hasMoveDir();
     /**
-     * <code>.Vector rot = 14;</code>
-     * @return The rot.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
+     * @return The moveDir.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir();
     /**
-     * <code>.Vector rot = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder();
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>.Vector moveDir = 6;</code>
-     * @return Whether the moveDir field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
+     * @return Whether the rot field is set.
      */
-    boolean hasMoveDir();
+    boolean hasRot();
     /**
-     * <code>.Vector moveDir = 6;</code>
-     * @return The moveDir.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
+     * @return The rot.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector moveDir = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
   }
   /**
    * Protobuf type {@code AbilityBornType}
@@ -179,35 +215,51 @@ public final class AbilityBornTypeOuterClass {
               emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType.class, emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType.Builder.class);
     }
 
-    public static final int ROT_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+    public static final int MOVE_DIR_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector moveDir_;
     /**
-     * <code>.Vector rot = 14;</code>
-     * @return Whether the rot field is set.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
+     * @return Whether the moveDir field is set.
      */
     @java.lang.Override
-    public boolean hasRot() {
-      return rot_ != null;
+    public boolean hasMoveDir() {
+      return moveDir_ != null;
     }
     /**
-     * <code>.Vector rot = 14;</code>
-     * @return The rot.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
+     * @return The moveDir.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir() {
+      return moveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
     }
     /**
-     * <code>.Vector rot = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector move_dir = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-      return getRot();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder() {
+      return getMoveDir();
     }
 
     public static final int POS_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
@@ -216,6 +268,10 @@ public final class AbilityBornTypeOuterClass {
       return pos_ != null;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
@@ -224,6 +280,10 @@ public final class AbilityBornTypeOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 9;</code>
      */
     @java.lang.Override
@@ -231,30 +291,42 @@ public final class AbilityBornTypeOuterClass {
       return getPos();
     }
 
-    public static final int MOVEDIR_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector moveDir_;
+    public static final int ROT_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector moveDir = 6;</code>
-     * @return Whether the moveDir field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
+     * @return Whether the rot field is set.
      */
     @java.lang.Override
-    public boolean hasMoveDir() {
-      return moveDir_ != null;
+    public boolean hasRot() {
+      return rot_ != null;
     }
     /**
-     * <code>.Vector moveDir = 6;</code>
-     * @return The moveDir.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
+     * @return The rot.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir() {
-      return moveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector moveDir = 6;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.Vector rot = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder() {
-      return getMoveDir();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+      return getRot();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -316,20 +388,20 @@ public final class AbilityBornTypeOuterClass {
       }
       emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType other = (emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType) obj;
 
-      if (hasRot() != other.hasRot()) return false;
-      if (hasRot()) {
-        if (!getRot()
-            .equals(other.getRot())) return false;
+      if (hasMoveDir() != other.hasMoveDir()) return false;
+      if (hasMoveDir()) {
+        if (!getMoveDir()
+            .equals(other.getMoveDir())) return false;
       }
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (hasMoveDir() != other.hasMoveDir()) return false;
-      if (hasMoveDir()) {
-        if (!getMoveDir()
-            .equals(other.getMoveDir())) return false;
+      if (hasRot() != other.hasRot()) return false;
+      if (hasRot()) {
+        if (!getRot()
+            .equals(other.getRot())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -342,17 +414,17 @@ public final class AbilityBornTypeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasRot()) {
-        hash = (37 * hash) + ROT_FIELD_NUMBER;
-        hash = (53 * hash) + getRot().hashCode();
+      if (hasMoveDir()) {
+        hash = (37 * hash) + MOVE_DIR_FIELD_NUMBER;
+        hash = (53 * hash) + getMoveDir().hashCode();
       }
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      if (hasMoveDir()) {
-        hash = (37 * hash) + MOVEDIR_FIELD_NUMBER;
-        hash = (53 * hash) + getMoveDir().hashCode();
+      if (hasRot()) {
+        hash = (37 * hash) + ROT_FIELD_NUMBER;
+        hash = (53 * hash) + getRot().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -487,11 +559,11 @@ public final class AbilityBornTypeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (rotBuilder_ == null) {
-          rot_ = null;
+        if (moveDirBuilder_ == null) {
+          moveDir_ = null;
         } else {
-          rot_ = null;
-          rotBuilder_ = null;
+          moveDir_ = null;
+          moveDirBuilder_ = null;
         }
         if (posBuilder_ == null) {
           pos_ = null;
@@ -499,11 +571,11 @@ public final class AbilityBornTypeOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        if (moveDirBuilder_ == null) {
-          moveDir_ = null;
+        if (rotBuilder_ == null) {
+          rot_ = null;
         } else {
-          moveDir_ = null;
-          moveDirBuilder_ = null;
+          rot_ = null;
+          rotBuilder_ = null;
         }
         return this;
       }
@@ -531,20 +603,20 @@ public final class AbilityBornTypeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType buildPartial() {
         emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType result = new emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType(this);
-        if (rotBuilder_ == null) {
-          result.rot_ = rot_;
+        if (moveDirBuilder_ == null) {
+          result.moveDir_ = moveDir_;
         } else {
-          result.rot_ = rotBuilder_.build();
+          result.moveDir_ = moveDirBuilder_.build();
         }
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
-        if (moveDirBuilder_ == null) {
-          result.moveDir_ = moveDir_;
+        if (rotBuilder_ == null) {
+          result.rot_ = rot_;
         } else {
-          result.moveDir_ = moveDirBuilder_.build();
+          result.rot_ = rotBuilder_.build();
         }
         onBuilt();
         return result;
@@ -594,14 +666,14 @@ public final class AbilityBornTypeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType other) {
         if (other == emu.grasscutter.net.proto.AbilityBornTypeOuterClass.AbilityBornType.getDefaultInstance()) return this;
-        if (other.hasRot()) {
-          mergeRot(other.getRot());
+        if (other.hasMoveDir()) {
+          mergeMoveDir(other.getMoveDir());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        if (other.hasMoveDir()) {
-          mergeMoveDir(other.getMoveDir());
+        if (other.hasRot()) {
+          mergeRot(other.getRot());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -632,129 +704,169 @@ public final class AbilityBornTypeOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector moveDir_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> moveDirBuilder_;
       /**
-       * <code>.Vector rot = 14;</code>
-       * @return Whether the rot field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
+       * @return Whether the moveDir field is set.
        */
-      public boolean hasRot() {
-        return rotBuilder_ != null || rot_ != null;
+      public boolean hasMoveDir() {
+        return moveDirBuilder_ != null || moveDir_ != null;
       }
       /**
-       * <code>.Vector rot = 14;</code>
-       * @return The rot.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
+       * @return The moveDir.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-        if (rotBuilder_ == null) {
-          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir() {
+        if (moveDirBuilder_ == null) {
+          return moveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
         } else {
-          return rotBuilder_.getMessage();
+          return moveDirBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
+      public Builder setMoveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (moveDirBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          rot_ = value;
+          moveDir_ = value;
           onChanged();
         } else {
-          rotBuilder_.setMessage(value);
+          moveDirBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public Builder setRot(
+      public Builder setMoveDir(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (rotBuilder_ == null) {
-          rot_ = builderForValue.build();
+        if (moveDirBuilder_ == null) {
+          moveDir_ = builderForValue.build();
           onChanged();
         } else {
-          rotBuilder_.setMessage(builderForValue.build());
+          moveDirBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
-          if (rot_ != null) {
-            rot_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
+      public Builder mergeMoveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (moveDirBuilder_ == null) {
+          if (moveDir_ != null) {
+            moveDir_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(moveDir_).mergeFrom(value).buildPartial();
           } else {
-            rot_ = value;
+            moveDir_ = value;
           }
           onChanged();
         } else {
-          rotBuilder_.mergeFrom(value);
+          moveDirBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public Builder clearRot() {
-        if (rotBuilder_ == null) {
-          rot_ = null;
+      public Builder clearMoveDir() {
+        if (moveDirBuilder_ == null) {
+          moveDir_ = null;
           onChanged();
         } else {
-          rot_ = null;
-          rotBuilder_ = null;
+          moveDir_ = null;
+          moveDirBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getMoveDirBuilder() {
         
         onChanged();
-        return getRotFieldBuilder().getBuilder();
+        return getMoveDirFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-        if (rotBuilder_ != null) {
-          return rotBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder() {
+        if (moveDirBuilder_ != null) {
+          return moveDirBuilder_.getMessageOrBuilder();
         } else {
-          return rot_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+          return moveDir_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
         }
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector move_dir = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getRotFieldBuilder() {
-        if (rotBuilder_ == null) {
-          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getMoveDirFieldBuilder() {
+        if (moveDirBuilder_ == null) {
+          moveDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getRot(),
+                  getMoveDir(),
                   getParentForChildren(),
                   isClean());
-          rot_ = null;
+          moveDir_ = null;
         }
-        return rotBuilder_;
+        return moveDirBuilder_;
       }
 
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        * @return Whether the pos field is set.
        */
@@ -762,6 +874,10 @@ public final class AbilityBornTypeOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        * @return The pos.
        */
@@ -773,6 +889,10 @@ public final class AbilityBornTypeOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -789,6 +909,10 @@ public final class AbilityBornTypeOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(
@@ -803,6 +927,10 @@ public final class AbilityBornTypeOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -821,6 +949,10 @@ public final class AbilityBornTypeOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder clearPos() {
@@ -835,6 +967,10 @@ public final class AbilityBornTypeOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -843,6 +979,10 @@ public final class AbilityBornTypeOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -854,6 +994,10 @@ public final class AbilityBornTypeOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -870,123 +1014,159 @@ public final class AbilityBornTypeOuterClass {
         return posBuilder_;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector moveDir_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> moveDirBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector moveDir = 6;</code>
-       * @return Whether the moveDir field is set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
+       * @return Whether the rot field is set.
        */
-      public boolean hasMoveDir() {
-        return moveDirBuilder_ != null || moveDir_ != null;
+      public boolean hasRot() {
+        return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
-       * @return The moveDir.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
+       * @return The rot.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getMoveDir() {
-        if (moveDirBuilder_ == null) {
-          return moveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+        if (rotBuilder_ == null) {
+          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
         } else {
-          return moveDirBuilder_.getMessage();
+          return rotBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public Builder setMoveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (moveDirBuilder_ == null) {
+      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          moveDir_ = value;
+          rot_ = value;
           onChanged();
         } else {
-          moveDirBuilder_.setMessage(value);
+          rotBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public Builder setMoveDir(
+      public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (moveDirBuilder_ == null) {
-          moveDir_ = builderForValue.build();
+        if (rotBuilder_ == null) {
+          rot_ = builderForValue.build();
           onChanged();
         } else {
-          moveDirBuilder_.setMessage(builderForValue.build());
+          rotBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public Builder mergeMoveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (moveDirBuilder_ == null) {
-          if (moveDir_ != null) {
-            moveDir_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(moveDir_).mergeFrom(value).buildPartial();
+      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
+          if (rot_ != null) {
+            rot_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
           } else {
-            moveDir_ = value;
+            rot_ = value;
           }
           onChanged();
         } else {
-          moveDirBuilder_.mergeFrom(value);
+          rotBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public Builder clearMoveDir() {
-        if (moveDirBuilder_ == null) {
-          moveDir_ = null;
+      public Builder clearRot() {
+        if (rotBuilder_ == null) {
+          rot_ = null;
           onChanged();
         } else {
-          moveDir_ = null;
-          moveDirBuilder_ = null;
+          rot_ = null;
+          rotBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getMoveDirBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
         onChanged();
-        return getMoveDirFieldBuilder().getBuilder();
+        return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMoveDirOrBuilder() {
-        if (moveDirBuilder_ != null) {
-          return moveDirBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+        if (rotBuilder_ != null) {
+          return rotBuilder_.getMessageOrBuilder();
         } else {
-          return moveDir_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : moveDir_;
+          return rot_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
         }
       }
       /**
-       * <code>.Vector moveDir = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.Vector rot = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getMoveDirFieldBuilder() {
-        if (moveDirBuilder_ == null) {
-          moveDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getRotFieldBuilder() {
+        if (rotBuilder_ == null) {
+          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getMoveDir(),
+                  getRot(),
                   getParentForChildren(),
                   isClean());
-          moveDir_ = null;
+          rot_ = null;
         }
-        return moveDirBuilder_;
+        return rotBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1055,11 +1235,11 @@ public final class AbilityBornTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025AbilityBornType.proto\032\014Vector.proto\"W\n" +
-      "\017AbilityBornType\022\024\n\003rot\030\016 \001(\0132\007.Vector\022\024" +
-      "\n\003pos\030\t \001(\0132\007.Vector\022\030\n\007moveDir\030\006 \001(\0132\007." +
-      "VectorB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\025AbilityBornType.proto\032\014Vector.proto\"X\n" +
+      "\017AbilityBornType\022\031\n\010move_dir\030\006 \001(\0132\007.Vec" +
+      "tor\022\024\n\003pos\030\t \001(\0132\007.Vector\022\024\n\003rot\030\016 \001(\0132\007" +
+      ".VectorB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1071,7 +1251,7 @@ public final class AbilityBornTypeOuterClass {
     internal_static_AbilityBornType_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityBornType_descriptor,
-        new java.lang.String[] { "Rot", "Pos", "MoveDir", });
+        new java.lang.String[] { "MoveDir", "Pos", "Rot", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

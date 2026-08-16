@@ -19,30 +19,34 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo> 
         getAvatarTalkInfoListList();
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo getAvatarTalkInfoList(int index);
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     int getAvatarTalkInfoListCount();
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder> 
         getAvatarTalkInfoListOrBuilderList();
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder getAvatarTalkInfoListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * CmdId: 3009
+   * </pre>
+   *
    * Protobuf type {@code HomeAvatarTalkFinishInfoNotify}
    */
   public static final class HomeAvatarTalkFinishInfoNotify extends
@@ -89,7 +93,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarTalkInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +137,17 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoNotifyOuterClass.HomeAvatarTalkFinishInfoNotify.class, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoNotifyOuterClass.HomeAvatarTalkFinishInfoNotify.Builder.class);
     }
 
-    public static final int AVATAR_TALK_INFO_LIST_FIELD_NUMBER = 8;
+    public static final int AVATAR_TALK_INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo> avatarTalkInfoList_;
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo> getAvatarTalkInfoListList() {
       return avatarTalkInfoList_;
     }
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder> 
@@ -151,21 +155,21 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
       return avatarTalkInfoList_;
     }
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     @java.lang.Override
     public int getAvatarTalkInfoListCount() {
       return avatarTalkInfoList_.size();
     }
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo getAvatarTalkInfoList(int index) {
       return avatarTalkInfoList_.get(index);
     }
     /**
-     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+     * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder getAvatarTalkInfoListOrBuilder(
@@ -188,7 +192,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < avatarTalkInfoList_.size(); i++) {
-        output.writeMessage(8, avatarTalkInfoList_.get(i));
+        output.writeMessage(9, avatarTalkInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +205,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
       size = 0;
       for (int i = 0; i < avatarTalkInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, avatarTalkInfoList_.get(i));
+          .computeMessageSize(9, avatarTalkInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -331,6 +335,10 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3009
+     * </pre>
+     *
      * Protobuf type {@code HomeAvatarTalkFinishInfoNotify}
      */
     public static final class Builder extends
@@ -528,7 +536,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
           emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder> avatarTalkInfoListBuilder_;
 
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo> getAvatarTalkInfoListList() {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -538,7 +546,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public int getAvatarTalkInfoListCount() {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo getAvatarTalkInfoList(int index) {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -558,7 +566,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder setAvatarTalkInfoList(
           int index, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo value) {
@@ -575,7 +583,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder setAvatarTalkInfoList(
           int index, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder builderForValue) {
@@ -589,7 +597,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder addAvatarTalkInfoList(emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo value) {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -605,7 +613,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder addAvatarTalkInfoList(
           int index, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo value) {
@@ -622,7 +630,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder addAvatarTalkInfoList(
           emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder builderForValue) {
@@ -636,7 +644,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder addAvatarTalkInfoList(
           int index, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder addAllAvatarTalkInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo> values) {
@@ -665,7 +673,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder clearAvatarTalkInfoList() {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -678,7 +686,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public Builder removeAvatarTalkInfoList(int index) {
         if (avatarTalkInfoListBuilder_ == null) {
@@ -691,14 +699,14 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder getAvatarTalkInfoListBuilder(
           int index) {
         return getAvatarTalkInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder getAvatarTalkInfoListOrBuilder(
           int index) {
@@ -708,7 +716,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfoOrBuilder> 
            getAvatarTalkInfoListOrBuilderList() {
@@ -719,14 +727,14 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder addAvatarTalkInfoListBuilder() {
         return getAvatarTalkInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder addAvatarTalkInfoListBuilder(
           int index) {
@@ -734,7 +742,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 8;</code>
+       * <code>repeated .HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeAvatarTalkFinishInfoOuterClass.HomeAvatarTalkFinishInfo.Builder> 
            getAvatarTalkInfoListBuilderList() {
@@ -824,7 +832,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
       "\n$HomeAvatarTalkFinishInfoNotify.proto\032\036" +
       "HomeAvatarTalkFinishInfo.proto\"Z\n\036HomeAv" +
       "atarTalkFinishInfoNotify\0228\n\025avatar_talk_" +
-      "info_list\030\010 \003(\0132\031.HomeAvatarTalkFinishIn" +
+      "info_list\030\t \003(\0132\031.HomeAvatarTalkFinishIn" +
       "foB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

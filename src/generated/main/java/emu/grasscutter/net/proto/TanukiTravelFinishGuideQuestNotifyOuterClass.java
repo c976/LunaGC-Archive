@@ -19,15 +19,14 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 2;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 29894
-   * Obf: HLGANLFHMGL
+   * CmdId: 25242
    * </pre>
    *
    * Protobuf type {@code TanukiTravelFinishGuideQuestNotify}
@@ -74,7 +73,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 72: {
 
               activityId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
               emu.grasscutter.net.proto.TanukiTravelFinishGuideQuestNotifyOuterClass.TanukiTravelFinishGuideQuestNotify.class, emu.grasscutter.net.proto.TanukiTravelFinishGuideQuestNotifyOuterClass.TanukiTravelFinishGuideQuestNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 2;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 9;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 2;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(2, activityId_);
+        output.writeUInt32(9, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, activityId_);
+          .computeUInt32Size(9, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29894
-     * Obf: HLGANLFHMGL
+     * CmdId: 25242
      * </pre>
      *
      * Protobuf type {@code TanukiTravelFinishGuideQuestNotify}
@@ -431,7 +429,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -528,7 +526,7 @@ public final class TanukiTravelFinishGuideQuestNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n(TanukiTravelFinishGuideQuestNotify.pro" +
       "to\"9\n\"TanukiTravelFinishGuideQuestNotify" +
-      "\022\023\n\013activity_id\030\002 \001(\rB\033\n\031emu.grasscutter" +
+      "\022\023\n\013activity_id\030\t \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,58 +19,94 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ALJGKMOAALP = 1;</code>
-     * @return The aLJGKMOAALP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HHMEPAEHCNO = 6;</code>
+     * @return The hHMEPAEHCNO.
      */
-    int getALJGKMOAALP();
+    int getHHMEPAEHCNO();
 
     /**
-     * <code>uint32 cost_time = 5;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_new_record = 1;</code>
+     * @return The isNewRecord.
      */
-    int getCostTime();
+    boolean getIsNewRecord();
 
     /**
-     * <code>uint32 BJACPJIBKIC = 3;</code>
-     * @return The bJACPJIBKIC.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 EMAIOLJLPNK = 15;</code>
+     * @return The eMAIOLJLPNK.
      */
-    int getBJACPJIBKIC();
+    int getEMAIOLJLPNK();
 
     /**
-     * <code>uint32 CMMPJIKJINI = 14;</code>
-     * @return The cMMPJIKJINI.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 9;</code>
+     * @return The nMGJKKDMGPK.
      */
-    int getCMMPJIKJINI();
+    int getNMGJKKDMGPK();
 
     /**
-     * <code>uint32 PKHEHEHDGAN = 9;</code>
-     * @return The pKHEHEHDGAN.
-     */
-    int getPKHEHEHDGAN();
-
-    /**
-     * <code>uint32 level_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 OILGHJJBHFC = 6;</code>
-     * @return The oILGHJJBHFC.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 BIDBBIAEJEI = 8;</code>
+     * @return The bIDBBIAEJEI.
      */
-    int getOILGHJJBHFC();
+    int getBIDBBIAEJEI();
 
     /**
-     * <code>uint32 KMAPLBBHDPM = 7;</code>
-     * @return The kMAPLBBHDPM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 KDMLFODGBCN = 12;</code>
+     * @return The kDMLFODGBCN.
      */
-    int getKMAPLBBHDPM();
+    int getKDMLFODGBCN();
 
     /**
-     * <code>bool is_new_record = 12;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 KEGLBAKLGJK = 7;</code>
+     * @return The kEGLBAKLGJK.
      */
-    boolean getIsNewRecord();
+    int getKEGLBAKLGJK();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 DNEDLPIJFOI = 3;</code>
+     * @return The dNEDLPIJFOI.
+     */
+    int getDNEDLPIJFOI();
   }
   /**
    * Protobuf type {@code FungusFighterV3DungeonSettleInfo}
@@ -119,47 +155,47 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
               break;
             case 8: {
 
-              aLJGKMOAALP_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 24: {
 
-              bJACPJIBKIC_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              costTime_ = input.readUInt32();
+              dNEDLPIJFOI_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              oILGHJJBHFC_ = input.readUInt32();
+              hHMEPAEHCNO_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              kMAPLBBHDPM_ = input.readUInt32();
+              kEGLBAKLGJK_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              bIDBBIAEJEI_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              pKHEHEHDGAN_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              levelId_ = input.readUInt32();
+              nMGJKKDMGPK_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              isNewRecord_ = input.readBool();
+              kDMLFODGBCN_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              cMMPJIKJINI_ = input.readUInt32();
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              eMAIOLJLPNK_ = input.readUInt32();
               break;
             }
             default: {
@@ -194,65 +230,74 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo.class, emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo.Builder.class);
     }
 
-    public static final int ALJGKMOAALP_FIELD_NUMBER = 1;
-    private int aLJGKMOAALP_;
+    public static final int HHMEPAEHCNO_FIELD_NUMBER = 6;
+    private int hHMEPAEHCNO_;
     /**
-     * <code>uint32 ALJGKMOAALP = 1;</code>
-     * @return The aLJGKMOAALP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HHMEPAEHCNO = 6;</code>
+     * @return The hHMEPAEHCNO.
      */
     @java.lang.Override
-    public int getALJGKMOAALP() {
-      return aLJGKMOAALP_;
+    public int getHHMEPAEHCNO() {
+      return hHMEPAEHCNO_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 5;
-    private int costTime_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
+    private boolean isNewRecord_;
     /**
-     * <code>uint32 cost_time = 5;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_new_record = 1;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
-    public static final int BJACPJIBKIC_FIELD_NUMBER = 3;
-    private int bJACPJIBKIC_;
+    public static final int EMAIOLJLPNK_FIELD_NUMBER = 15;
+    private int eMAIOLJLPNK_;
     /**
-     * <code>uint32 BJACPJIBKIC = 3;</code>
-     * @return The bJACPJIBKIC.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 EMAIOLJLPNK = 15;</code>
+     * @return The eMAIOLJLPNK.
      */
     @java.lang.Override
-    public int getBJACPJIBKIC() {
-      return bJACPJIBKIC_;
+    public int getEMAIOLJLPNK() {
+      return eMAIOLJLPNK_;
     }
 
-    public static final int CMMPJIKJINI_FIELD_NUMBER = 14;
-    private int cMMPJIKJINI_;
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 9;
+    private int nMGJKKDMGPK_;
     /**
-     * <code>uint32 CMMPJIKJINI = 14;</code>
-     * @return The cMMPJIKJINI.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 9;</code>
+     * @return The nMGJKKDMGPK.
      */
     @java.lang.Override
-    public int getCMMPJIKJINI() {
-      return cMMPJIKJINI_;
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
     }
 
-    public static final int PKHEHEHDGAN_FIELD_NUMBER = 9;
-    private int pKHEHEHDGAN_;
-    /**
-     * <code>uint32 PKHEHEHDGAN = 9;</code>
-     * @return The pKHEHEHDGAN.
-     */
-    @java.lang.Override
-    public int getPKHEHEHDGAN() {
-      return pKHEHEHDGAN_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -260,37 +305,64 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int OILGHJJBHFC_FIELD_NUMBER = 6;
-    private int oILGHJJBHFC_;
+    public static final int BIDBBIAEJEI_FIELD_NUMBER = 8;
+    private int bIDBBIAEJEI_;
     /**
-     * <code>uint32 OILGHJJBHFC = 6;</code>
-     * @return The oILGHJJBHFC.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 BIDBBIAEJEI = 8;</code>
+     * @return The bIDBBIAEJEI.
      */
     @java.lang.Override
-    public int getOILGHJJBHFC() {
-      return oILGHJJBHFC_;
+    public int getBIDBBIAEJEI() {
+      return bIDBBIAEJEI_;
     }
 
-    public static final int KMAPLBBHDPM_FIELD_NUMBER = 7;
-    private int kMAPLBBHDPM_;
+    public static final int KDMLFODGBCN_FIELD_NUMBER = 12;
+    private int kDMLFODGBCN_;
     /**
-     * <code>uint32 KMAPLBBHDPM = 7;</code>
-     * @return The kMAPLBBHDPM.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 KDMLFODGBCN = 12;</code>
+     * @return The kDMLFODGBCN.
      */
     @java.lang.Override
-    public int getKMAPLBBHDPM() {
-      return kMAPLBBHDPM_;
+    public int getKDMLFODGBCN() {
+      return kDMLFODGBCN_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
-    private boolean isNewRecord_;
+    public static final int KEGLBAKLGJK_FIELD_NUMBER = 7;
+    private int kEGLBAKLGJK_;
     /**
-     * <code>bool is_new_record = 12;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 KEGLBAKLGJK = 7;</code>
+     * @return The kEGLBAKLGJK.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getKEGLBAKLGJK() {
+      return kEGLBAKLGJK_;
+    }
+
+    public static final int DNEDLPIJFOI_FIELD_NUMBER = 3;
+    private int dNEDLPIJFOI_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 DNEDLPIJFOI = 3;</code>
+     * @return The dNEDLPIJFOI.
+     */
+    @java.lang.Override
+    public int getDNEDLPIJFOI() {
+      return dNEDLPIJFOI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -307,32 +379,32 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aLJGKMOAALP_ != 0) {
-        output.writeUInt32(1, aLJGKMOAALP_);
+      if (isNewRecord_ != false) {
+        output.writeBool(1, isNewRecord_);
       }
-      if (bJACPJIBKIC_ != 0) {
-        output.writeUInt32(3, bJACPJIBKIC_);
+      if (dNEDLPIJFOI_ != 0) {
+        output.writeUInt32(3, dNEDLPIJFOI_);
       }
-      if (costTime_ != 0) {
-        output.writeUInt32(5, costTime_);
+      if (hHMEPAEHCNO_ != 0) {
+        output.writeUInt32(6, hHMEPAEHCNO_);
       }
-      if (oILGHJJBHFC_ != 0) {
-        output.writeUInt32(6, oILGHJJBHFC_);
+      if (kEGLBAKLGJK_ != 0) {
+        output.writeUInt32(7, kEGLBAKLGJK_);
       }
-      if (kMAPLBBHDPM_ != 0) {
-        output.writeUInt32(7, kMAPLBBHDPM_);
+      if (bIDBBIAEJEI_ != 0) {
+        output.writeUInt32(8, bIDBBIAEJEI_);
       }
-      if (pKHEHEHDGAN_ != 0) {
-        output.writeUInt32(9, pKHEHEHDGAN_);
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(9, nMGJKKDMGPK_);
+      }
+      if (kDMLFODGBCN_ != 0) {
+        output.writeUInt32(12, kDMLFODGBCN_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(14, levelId_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
-      }
-      if (cMMPJIKJINI_ != 0) {
-        output.writeUInt32(14, cMMPJIKJINI_);
+      if (eMAIOLJLPNK_ != 0) {
+        output.writeUInt32(15, eMAIOLJLPNK_);
       }
       unknownFields.writeTo(output);
     }
@@ -343,41 +415,41 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aLJGKMOAALP_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, aLJGKMOAALP_);
+          .computeBoolSize(1, isNewRecord_);
       }
-      if (bJACPJIBKIC_ != 0) {
+      if (dNEDLPIJFOI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, bJACPJIBKIC_);
+          .computeUInt32Size(3, dNEDLPIJFOI_);
       }
-      if (costTime_ != 0) {
+      if (hHMEPAEHCNO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, costTime_);
+          .computeUInt32Size(6, hHMEPAEHCNO_);
       }
-      if (oILGHJJBHFC_ != 0) {
+      if (kEGLBAKLGJK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, oILGHJJBHFC_);
+          .computeUInt32Size(7, kEGLBAKLGJK_);
       }
-      if (kMAPLBBHDPM_ != 0) {
+      if (bIDBBIAEJEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, kMAPLBBHDPM_);
+          .computeUInt32Size(8, bIDBBIAEJEI_);
       }
-      if (pKHEHEHDGAN_ != 0) {
+      if (nMGJKKDMGPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, pKHEHEHDGAN_);
+          .computeUInt32Size(9, nMGJKKDMGPK_);
+      }
+      if (kDMLFODGBCN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, kDMLFODGBCN_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(14, levelId_);
       }
-      if (isNewRecord_ != false) {
+      if (eMAIOLJLPNK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
-      }
-      if (cMMPJIKJINI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cMMPJIKJINI_);
+          .computeUInt32Size(15, eMAIOLJLPNK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -394,24 +466,24 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo other = (emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo) obj;
 
-      if (getALJGKMOAALP()
-          != other.getALJGKMOAALP()) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
-      if (getBJACPJIBKIC()
-          != other.getBJACPJIBKIC()) return false;
-      if (getCMMPJIKJINI()
-          != other.getCMMPJIKJINI()) return false;
-      if (getPKHEHEHDGAN()
-          != other.getPKHEHEHDGAN()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getOILGHJJBHFC()
-          != other.getOILGHJJBHFC()) return false;
-      if (getKMAPLBBHDPM()
-          != other.getKMAPLBBHDPM()) return false;
+      if (getHHMEPAEHCNO()
+          != other.getHHMEPAEHCNO()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getEMAIOLJLPNK()
+          != other.getEMAIOLJLPNK()) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getBIDBBIAEJEI()
+          != other.getBIDBBIAEJEI()) return false;
+      if (getKDMLFODGBCN()
+          != other.getKDMLFODGBCN()) return false;
+      if (getKEGLBAKLGJK()
+          != other.getKEGLBAKLGJK()) return false;
+      if (getDNEDLPIJFOI()
+          != other.getDNEDLPIJFOI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -423,25 +495,25 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ALJGKMOAALP_FIELD_NUMBER;
-      hash = (53 * hash) + getALJGKMOAALP();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + BJACPJIBKIC_FIELD_NUMBER;
-      hash = (53 * hash) + getBJACPJIBKIC();
-      hash = (37 * hash) + CMMPJIKJINI_FIELD_NUMBER;
-      hash = (53 * hash) + getCMMPJIKJINI();
-      hash = (37 * hash) + PKHEHEHDGAN_FIELD_NUMBER;
-      hash = (53 * hash) + getPKHEHEHDGAN();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + OILGHJJBHFC_FIELD_NUMBER;
-      hash = (53 * hash) + getOILGHJJBHFC();
-      hash = (37 * hash) + KMAPLBBHDPM_FIELD_NUMBER;
-      hash = (53 * hash) + getKMAPLBBHDPM();
+      hash = (37 * hash) + HHMEPAEHCNO_FIELD_NUMBER;
+      hash = (53 * hash) + getHHMEPAEHCNO();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + EMAIOLJLPNK_FIELD_NUMBER;
+      hash = (53 * hash) + getEMAIOLJLPNK();
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + BIDBBIAEJEI_FIELD_NUMBER;
+      hash = (53 * hash) + getBIDBBIAEJEI();
+      hash = (37 * hash) + KDMLFODGBCN_FIELD_NUMBER;
+      hash = (53 * hash) + getKDMLFODGBCN();
+      hash = (37 * hash) + KEGLBAKLGJK_FIELD_NUMBER;
+      hash = (53 * hash) + getKEGLBAKLGJK();
+      hash = (37 * hash) + DNEDLPIJFOI_FIELD_NUMBER;
+      hash = (53 * hash) + getDNEDLPIJFOI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -575,23 +647,23 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aLJGKMOAALP_ = 0;
+        hHMEPAEHCNO_ = 0;
 
-        costTime_ = 0;
+        isNewRecord_ = false;
 
-        bJACPJIBKIC_ = 0;
+        eMAIOLJLPNK_ = 0;
 
-        cMMPJIKJINI_ = 0;
-
-        pKHEHEHDGAN_ = 0;
+        nMGJKKDMGPK_ = 0;
 
         levelId_ = 0;
 
-        oILGHJJBHFC_ = 0;
+        bIDBBIAEJEI_ = 0;
 
-        kMAPLBBHDPM_ = 0;
+        kDMLFODGBCN_ = 0;
 
-        isNewRecord_ = false;
+        kEGLBAKLGJK_ = 0;
+
+        dNEDLPIJFOI_ = 0;
 
         return this;
       }
@@ -619,15 +691,15 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo result = new emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo(this);
-        result.aLJGKMOAALP_ = aLJGKMOAALP_;
-        result.costTime_ = costTime_;
-        result.bJACPJIBKIC_ = bJACPJIBKIC_;
-        result.cMMPJIKJINI_ = cMMPJIKJINI_;
-        result.pKHEHEHDGAN_ = pKHEHEHDGAN_;
-        result.levelId_ = levelId_;
-        result.oILGHJJBHFC_ = oILGHJJBHFC_;
-        result.kMAPLBBHDPM_ = kMAPLBBHDPM_;
+        result.hHMEPAEHCNO_ = hHMEPAEHCNO_;
         result.isNewRecord_ = isNewRecord_;
+        result.eMAIOLJLPNK_ = eMAIOLJLPNK_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
+        result.levelId_ = levelId_;
+        result.bIDBBIAEJEI_ = bIDBBIAEJEI_;
+        result.kDMLFODGBCN_ = kDMLFODGBCN_;
+        result.kEGLBAKLGJK_ = kEGLBAKLGJK_;
+        result.dNEDLPIJFOI_ = dNEDLPIJFOI_;
         onBuilt();
         return result;
       }
@@ -676,32 +748,32 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FungusFighterV3DungeonSettleInfoOuterClass.FungusFighterV3DungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getALJGKMOAALP() != 0) {
-          setALJGKMOAALP(other.getALJGKMOAALP());
+        if (other.getHHMEPAEHCNO() != 0) {
+          setHHMEPAEHCNO(other.getHHMEPAEHCNO());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getBJACPJIBKIC() != 0) {
-          setBJACPJIBKIC(other.getBJACPJIBKIC());
+        if (other.getEMAIOLJLPNK() != 0) {
+          setEMAIOLJLPNK(other.getEMAIOLJLPNK());
         }
-        if (other.getCMMPJIKJINI() != 0) {
-          setCMMPJIKJINI(other.getCMMPJIKJINI());
-        }
-        if (other.getPKHEHEHDGAN() != 0) {
-          setPKHEHEHDGAN(other.getPKHEHEHDGAN());
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getOILGHJJBHFC() != 0) {
-          setOILGHJJBHFC(other.getOILGHJJBHFC());
+        if (other.getBIDBBIAEJEI() != 0) {
+          setBIDBBIAEJEI(other.getBIDBBIAEJEI());
         }
-        if (other.getKMAPLBBHDPM() != 0) {
-          setKMAPLBBHDPM(other.getKMAPLBBHDPM());
+        if (other.getKDMLFODGBCN() != 0) {
+          setKDMLFODGBCN(other.getKDMLFODGBCN());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getKEGLBAKLGJK() != 0) {
+          setKEGLBAKLGJK(other.getKEGLBAKLGJK());
+        }
+        if (other.getDNEDLPIJFOI() != 0) {
+          setDNEDLPIJFOI(other.getDNEDLPIJFOI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -732,257 +804,56 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int aLJGKMOAALP_ ;
+      private int hHMEPAEHCNO_ ;
       /**
-       * <code>uint32 ALJGKMOAALP = 1;</code>
-       * @return The aLJGKMOAALP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HHMEPAEHCNO = 6;</code>
+       * @return The hHMEPAEHCNO.
        */
       @java.lang.Override
-      public int getALJGKMOAALP() {
-        return aLJGKMOAALP_;
+      public int getHHMEPAEHCNO() {
+        return hHMEPAEHCNO_;
       }
       /**
-       * <code>uint32 ALJGKMOAALP = 1;</code>
-       * @param value The aLJGKMOAALP to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HHMEPAEHCNO = 6;</code>
+       * @param value The hHMEPAEHCNO to set.
        * @return This builder for chaining.
        */
-      public Builder setALJGKMOAALP(int value) {
+      public Builder setHHMEPAEHCNO(int value) {
         
-        aLJGKMOAALP_ = value;
+        hHMEPAEHCNO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ALJGKMOAALP = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HHMEPAEHCNO = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearALJGKMOAALP() {
+      public Builder clearHHMEPAEHCNO() {
         
-        aLJGKMOAALP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 5;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 5;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bJACPJIBKIC_ ;
-      /**
-       * <code>uint32 BJACPJIBKIC = 3;</code>
-       * @return The bJACPJIBKIC.
-       */
-      @java.lang.Override
-      public int getBJACPJIBKIC() {
-        return bJACPJIBKIC_;
-      }
-      /**
-       * <code>uint32 BJACPJIBKIC = 3;</code>
-       * @param value The bJACPJIBKIC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBJACPJIBKIC(int value) {
-        
-        bJACPJIBKIC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BJACPJIBKIC = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBJACPJIBKIC() {
-        
-        bJACPJIBKIC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cMMPJIKJINI_ ;
-      /**
-       * <code>uint32 CMMPJIKJINI = 14;</code>
-       * @return The cMMPJIKJINI.
-       */
-      @java.lang.Override
-      public int getCMMPJIKJINI() {
-        return cMMPJIKJINI_;
-      }
-      /**
-       * <code>uint32 CMMPJIKJINI = 14;</code>
-       * @param value The cMMPJIKJINI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCMMPJIKJINI(int value) {
-        
-        cMMPJIKJINI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CMMPJIKJINI = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCMMPJIKJINI() {
-        
-        cMMPJIKJINI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pKHEHEHDGAN_ ;
-      /**
-       * <code>uint32 PKHEHEHDGAN = 9;</code>
-       * @return The pKHEHEHDGAN.
-       */
-      @java.lang.Override
-      public int getPKHEHEHDGAN() {
-        return pKHEHEHDGAN_;
-      }
-      /**
-       * <code>uint32 PKHEHEHDGAN = 9;</code>
-       * @param value The pKHEHEHDGAN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPKHEHEHDGAN(int value) {
-        
-        pKHEHEHDGAN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PKHEHEHDGAN = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPKHEHEHDGAN() {
-        
-        pKHEHEHDGAN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 11;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 11;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oILGHJJBHFC_ ;
-      /**
-       * <code>uint32 OILGHJJBHFC = 6;</code>
-       * @return The oILGHJJBHFC.
-       */
-      @java.lang.Override
-      public int getOILGHJJBHFC() {
-        return oILGHJJBHFC_;
-      }
-      /**
-       * <code>uint32 OILGHJJBHFC = 6;</code>
-       * @param value The oILGHJJBHFC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOILGHJJBHFC(int value) {
-        
-        oILGHJJBHFC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OILGHJJBHFC = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOILGHJJBHFC() {
-        
-        oILGHJJBHFC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int kMAPLBBHDPM_ ;
-      /**
-       * <code>uint32 KMAPLBBHDPM = 7;</code>
-       * @return The kMAPLBBHDPM.
-       */
-      @java.lang.Override
-      public int getKMAPLBBHDPM() {
-        return kMAPLBBHDPM_;
-      }
-      /**
-       * <code>uint32 KMAPLBBHDPM = 7;</code>
-       * @param value The kMAPLBBHDPM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKMAPLBBHDPM(int value) {
-        
-        kMAPLBBHDPM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 KMAPLBBHDPM = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKMAPLBBHDPM() {
-        
-        kMAPLBBHDPM_ = 0;
+        hHMEPAEHCNO_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -990,7 +861,11 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -1001,12 +876,317 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int eMAIOLJLPNK_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 EMAIOLJLPNK = 15;</code>
+       * @return The eMAIOLJLPNK.
+       */
+      @java.lang.Override
+      public int getEMAIOLJLPNK() {
+        return eMAIOLJLPNK_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 EMAIOLJLPNK = 15;</code>
+       * @param value The eMAIOLJLPNK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEMAIOLJLPNK(int value) {
+        
+        eMAIOLJLPNK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 EMAIOLJLPNK = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEMAIOLJLPNK() {
+        
+        eMAIOLJLPNK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 9;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 9;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
+        
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 14;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 14;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 level_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bIDBBIAEJEI_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BIDBBIAEJEI = 8;</code>
+       * @return The bIDBBIAEJEI.
+       */
+      @java.lang.Override
+      public int getBIDBBIAEJEI() {
+        return bIDBBIAEJEI_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BIDBBIAEJEI = 8;</code>
+       * @param value The bIDBBIAEJEI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBIDBBIAEJEI(int value) {
+        
+        bIDBBIAEJEI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BIDBBIAEJEI = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBIDBBIAEJEI() {
+        
+        bIDBBIAEJEI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kDMLFODGBCN_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KDMLFODGBCN = 12;</code>
+       * @return The kDMLFODGBCN.
+       */
+      @java.lang.Override
+      public int getKDMLFODGBCN() {
+        return kDMLFODGBCN_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KDMLFODGBCN = 12;</code>
+       * @param value The kDMLFODGBCN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKDMLFODGBCN(int value) {
+        
+        kDMLFODGBCN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 KDMLFODGBCN = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKDMLFODGBCN() {
+        
+        kDMLFODGBCN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kEGLBAKLGJK_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 KEGLBAKLGJK = 7;</code>
+       * @return The kEGLBAKLGJK.
+       */
+      @java.lang.Override
+      public int getKEGLBAKLGJK() {
+        return kEGLBAKLGJK_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 KEGLBAKLGJK = 7;</code>
+       * @param value The kEGLBAKLGJK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEGLBAKLGJK(int value) {
+        
+        kEGLBAKLGJK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 KEGLBAKLGJK = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKEGLBAKLGJK() {
+        
+        kEGLBAKLGJK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dNEDLPIJFOI_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 DNEDLPIJFOI = 3;</code>
+       * @return The dNEDLPIJFOI.
+       */
+      @java.lang.Override
+      public int getDNEDLPIJFOI() {
+        return dNEDLPIJFOI_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 DNEDLPIJFOI = 3;</code>
+       * @param value The dNEDLPIJFOI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDNEDLPIJFOI(int value) {
+        
+        dNEDLPIJFOI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 DNEDLPIJFOI = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDNEDLPIJFOI() {
+        
+        dNEDLPIJFOI_ = 0;
         onChanged();
         return this;
       }
@@ -1078,13 +1258,13 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&FungusFighterV3DungeonSettleInfo.proto" +
-      "\"\334\001\n FungusFighterV3DungeonSettleInfo\022\023\n" +
-      "\013ALJGKMOAALP\030\001 \001(\r\022\021\n\tcost_time\030\005 \001(\r\022\023\n" +
-      "\013BJACPJIBKIC\030\003 \001(\r\022\023\n\013CMMPJIKJINI\030\016 \001(\r\022" +
-      "\023\n\013PKHEHEHDGAN\030\t \001(\r\022\020\n\010level_id\030\013 \001(\r\022\023" +
-      "\n\013OILGHJJBHFC\030\006 \001(\r\022\023\n\013KMAPLBBHDPM\030\007 \001(\r" +
-      "\022\025\n\ris_new_record\030\014 \001(\010B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\"\336\001\n FungusFighterV3DungeonSettleInfo\022\023\n" +
+      "\013HHMEPAEHCNO\030\006 \001(\r\022\025\n\ris_new_record\030\001 \001(" +
+      "\010\022\023\n\013EMAIOLJLPNK\030\017 \001(\r\022\023\n\013NMGJKKDMGPK\030\t " +
+      "\001(\r\022\020\n\010level_id\030\016 \001(\r\022\023\n\013BIDBBIAEJEI\030\010 \001" +
+      "(\r\022\023\n\013KDMLFODGBCN\030\014 \001(\r\022\023\n\013KEGLBAKLGJK\030\007" +
+      " \001(\r\022\023\n\013DNEDLPIJFOI\030\003 \001(\rB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1095,7 +1275,7 @@ public final class FungusFighterV3DungeonSettleInfoOuterClass {
     internal_static_FungusFighterV3DungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterV3DungeonSettleInfo_descriptor,
-        new java.lang.String[] { "ALJGKMOAALP", "CostTime", "BJACPJIBKIC", "CMMPJIKJINI", "PKHEHEHDGAN", "LevelId", "OILGHJJBHFC", "KMAPLBBHDPM", "IsNewRecord", });
+        new java.lang.String[] { "HHMEPAEHCNO", "IsNewRecord", "EMAIOLJLPNK", "NMGJKKDMGPK", "LevelId", "BIDBBIAEJEI", "KDMLFODGBCN", "KEGLBAKLGJK", "DNEDLPIJFOI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

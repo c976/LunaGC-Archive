@@ -19,18 +19,30 @@ public final class Vector3IntOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>int32 x = 1;</code>
      * @return The x.
      */
     int getX();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>int32 z = 3;</code>
      * @return The z.
      */
     int getZ();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>int32 y = 2;</code>
      * @return The y.
      */
@@ -131,6 +143,10 @@ public final class Vector3IntOuterClass {
     public static final int X_FIELD_NUMBER = 1;
     private int x_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>int32 x = 1;</code>
      * @return The x.
      */
@@ -142,6 +158,10 @@ public final class Vector3IntOuterClass {
     public static final int Z_FIELD_NUMBER = 3;
     private int z_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>int32 z = 3;</code>
      * @return The z.
      */
@@ -153,6 +173,10 @@ public final class Vector3IntOuterClass {
     public static final int Y_FIELD_NUMBER = 2;
     private int y_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>int32 y = 2;</code>
      * @return The y.
      */
@@ -499,6 +523,10 @@ public final class Vector3IntOuterClass {
 
       private int x_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>int32 x = 1;</code>
        * @return The x.
        */
@@ -507,6 +535,10 @@ public final class Vector3IntOuterClass {
         return x_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>int32 x = 1;</code>
        * @param value The x to set.
        * @return This builder for chaining.
@@ -518,6 +550,10 @@ public final class Vector3IntOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>int32 x = 1;</code>
        * @return This builder for chaining.
        */
@@ -530,6 +566,10 @@ public final class Vector3IntOuterClass {
 
       private int z_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>int32 z = 3;</code>
        * @return The z.
        */
@@ -538,6 +578,10 @@ public final class Vector3IntOuterClass {
         return z_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>int32 z = 3;</code>
        * @param value The z to set.
        * @return This builder for chaining.
@@ -549,6 +593,10 @@ public final class Vector3IntOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>int32 z = 3;</code>
        * @return This builder for chaining.
        */
@@ -561,6 +609,10 @@ public final class Vector3IntOuterClass {
 
       private int y_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 y = 2;</code>
        * @return The y.
        */
@@ -569,6 +621,10 @@ public final class Vector3IntOuterClass {
         return y_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 y = 2;</code>
        * @param value The y to set.
        * @return This builder for chaining.
@@ -580,6 +636,10 @@ public final class Vector3IntOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 y = 2;</code>
        * @return This builder for chaining.
        */

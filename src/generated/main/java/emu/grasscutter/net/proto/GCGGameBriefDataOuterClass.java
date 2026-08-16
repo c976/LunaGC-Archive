@@ -19,69 +19,65 @@ public final class GCGGameBriefDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 PAFNOEDDJNJ = 7;</code>
-     * @return The pAFNOEDDJNJ.
-     */
-    int getPAFNOEDDJNJ();
-
-    /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> 
         getPlayerBriefListList();
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData getPlayerBriefList(int index);
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     int getPlayerBriefListCount();
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder> 
         getPlayerBriefListOrBuilderList();
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder getPlayerBriefListOrBuilder(
         int index);
 
     /**
-     * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-     * @return The enum numeric value on the wire for jOENIKOCBAL.
+     * <code>uint32 Unk3850_AEIPHNKPCJJ = 11;</code>
+     * @return The unk3850AEIPHNKPCJJ.
      */
-    int getJOENIKOCBALValue();
-    /**
-     * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-     * @return The jOENIKOCBAL.
-     */
-    emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE getJOENIKOCBAL();
+    int getUnk3850AEIPHNKPCJJ();
 
     /**
-     * <code>uint32 platform_type = 15;</code>
+     * <code>.GCGGameBusinessType business_type = 8;</code>
+     * @return The enum numeric value on the wire for businessType.
+     */
+    int getBusinessTypeValue();
+    /**
+     * <code>.GCGGameBusinessType business_type = 8;</code>
+     * @return The businessType.
+     */
+    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
+
+    /**
+     * <code>uint32 platform_type = 13;</code>
      * @return The platformType.
      */
     int getPlatformType();
 
     /**
-     * <code>uint32 NFGCKNEHGEE = 9;</code>
-     * @return The nFGCKNEHGEE.
+     * <code>uint32 Unk3850_AJHNMNEEOLH = 2;</code>
+     * @return The unk3850AJHNMNEEOLH.
      */
-    int getNFGCKNEHGEE();
+    int getUnk3850AJHNMNEEOLH();
 
     /**
-     * <code>uint32 CLFLBPJPBJB = 13;</code>
-     * @return The cLFLBPJPBJB.
+     * <code>uint32 game_id = 12;</code>
+     * @return The gameId.
      */
-    int getCLFLBPJPBJB();
+    int getGameId();
   }
   /**
-   * <pre>
-   * Obf: DCACCKPDOJH
-   * </pre>
-   *
    * Protobuf type {@code GCGGameBriefData}
    */
   public static final class GCGGameBriefData extends
@@ -95,7 +91,7 @@ public final class GCGGameBriefDataOuterClass {
     }
     private GCGGameBriefData() {
       playerBriefList_ = java.util.Collections.emptyList();
-      jOENIKOCBAL_ = 0;
+      businessType_ = 0;
     }
 
     @java.lang.Override
@@ -129,17 +125,18 @@ public final class GCGGameBriefDataOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
-              pAFNOEDDJNJ_ = input.readUInt32();
+              unk3850AJHNMNEEOLH_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 64: {
+              int rawValue = input.readEnum();
 
-              nFGCKNEHGEE_ = input.readUInt32();
+              businessType_ = rawValue;
               break;
             }
-            case 82: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerBriefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -148,18 +145,17 @@ public final class GCGGameBriefDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.parser(), extensionRegistry));
               break;
             }
+            case 88: {
+
+              unk3850AEIPHNKPCJJ_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              gameId_ = input.readUInt32();
+              break;
+            }
             case 104: {
-
-              cLFLBPJPBJB_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              jOENIKOCBAL_ = rawValue;
-              break;
-            }
-            case 120: {
 
               platformType_ = input.readUInt32();
               break;
@@ -199,28 +195,17 @@ public final class GCGGameBriefDataOuterClass {
               emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.class, emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.Builder.class);
     }
 
-    public static final int PAFNOEDDJNJ_FIELD_NUMBER = 7;
-    private int pAFNOEDDJNJ_;
-    /**
-     * <code>uint32 PAFNOEDDJNJ = 7;</code>
-     * @return The pAFNOEDDJNJ.
-     */
-    @java.lang.Override
-    public int getPAFNOEDDJNJ() {
-      return pAFNOEDDJNJ_;
-    }
-
-    public static final int PLAYER_BRIEF_LIST_FIELD_NUMBER = 10;
+    public static final int PLAYER_BRIEF_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> playerBriefList_;
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> getPlayerBriefListList() {
       return playerBriefList_;
     }
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder> 
@@ -228,21 +213,21 @@ public final class GCGGameBriefDataOuterClass {
       return playerBriefList_;
     }
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     @java.lang.Override
     public int getPlayerBriefListCount() {
       return playerBriefList_.size();
     }
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData getPlayerBriefList(int index) {
       return playerBriefList_.get(index);
     }
     /**
-     * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+     * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder getPlayerBriefListOrBuilder(
@@ -250,29 +235,40 @@ public final class GCGGameBriefDataOuterClass {
       return playerBriefList_.get(index);
     }
 
-    public static final int JOENIKOCBAL_FIELD_NUMBER = 14;
-    private int jOENIKOCBAL_;
+    public static final int UNK3850_AEIPHNKPCJJ_FIELD_NUMBER = 11;
+    private int unk3850AEIPHNKPCJJ_;
     /**
-     * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-     * @return The enum numeric value on the wire for jOENIKOCBAL.
+     * <code>uint32 Unk3850_AEIPHNKPCJJ = 11;</code>
+     * @return The unk3850AEIPHNKPCJJ.
      */
-    @java.lang.Override public int getJOENIKOCBALValue() {
-      return jOENIKOCBAL_;
-    }
-    /**
-     * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-     * @return The jOENIKOCBAL.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE getJOENIKOCBAL() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE result = emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.valueOf(jOENIKOCBAL_);
-      return result == null ? emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getUnk3850AEIPHNKPCJJ() {
+      return unk3850AEIPHNKPCJJ_;
     }
 
-    public static final int PLATFORM_TYPE_FIELD_NUMBER = 15;
+    public static final int BUSINESS_TYPE_FIELD_NUMBER = 8;
+    private int businessType_;
+    /**
+     * <code>.GCGGameBusinessType business_type = 8;</code>
+     * @return The enum numeric value on the wire for businessType.
+     */
+    @java.lang.Override public int getBusinessTypeValue() {
+      return businessType_;
+    }
+    /**
+     * <code>.GCGGameBusinessType business_type = 8;</code>
+     * @return The businessType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
+      return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+    }
+
+    public static final int PLATFORM_TYPE_FIELD_NUMBER = 13;
     private int platformType_;
     /**
-     * <code>uint32 platform_type = 15;</code>
+     * <code>uint32 platform_type = 13;</code>
      * @return The platformType.
      */
     @java.lang.Override
@@ -280,26 +276,26 @@ public final class GCGGameBriefDataOuterClass {
       return platformType_;
     }
 
-    public static final int NFGCKNEHGEE_FIELD_NUMBER = 9;
-    private int nFGCKNEHGEE_;
+    public static final int UNK3850_AJHNMNEEOLH_FIELD_NUMBER = 2;
+    private int unk3850AJHNMNEEOLH_;
     /**
-     * <code>uint32 NFGCKNEHGEE = 9;</code>
-     * @return The nFGCKNEHGEE.
+     * <code>uint32 Unk3850_AJHNMNEEOLH = 2;</code>
+     * @return The unk3850AJHNMNEEOLH.
      */
     @java.lang.Override
-    public int getNFGCKNEHGEE() {
-      return nFGCKNEHGEE_;
+    public int getUnk3850AJHNMNEEOLH() {
+      return unk3850AJHNMNEEOLH_;
     }
 
-    public static final int CLFLBPJPBJB_FIELD_NUMBER = 13;
-    private int cLFLBPJPBJB_;
+    public static final int GAME_ID_FIELD_NUMBER = 12;
+    private int gameId_;
     /**
-     * <code>uint32 CLFLBPJPBJB = 13;</code>
-     * @return The cLFLBPJPBJB.
+     * <code>uint32 game_id = 12;</code>
+     * @return The gameId.
      */
     @java.lang.Override
-    public int getCLFLBPJPBJB() {
-      return cLFLBPJPBJB_;
+    public int getGameId() {
+      return gameId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -316,23 +312,23 @@ public final class GCGGameBriefDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pAFNOEDDJNJ_ != 0) {
-        output.writeUInt32(7, pAFNOEDDJNJ_);
+      if (unk3850AJHNMNEEOLH_ != 0) {
+        output.writeUInt32(2, unk3850AJHNMNEEOLH_);
       }
-      if (nFGCKNEHGEE_ != 0) {
-        output.writeUInt32(9, nFGCKNEHGEE_);
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+        output.writeEnum(8, businessType_);
       }
       for (int i = 0; i < playerBriefList_.size(); i++) {
-        output.writeMessage(10, playerBriefList_.get(i));
+        output.writeMessage(9, playerBriefList_.get(i));
       }
-      if (cLFLBPJPBJB_ != 0) {
-        output.writeUInt32(13, cLFLBPJPBJB_);
+      if (unk3850AEIPHNKPCJJ_ != 0) {
+        output.writeUInt32(11, unk3850AEIPHNKPCJJ_);
       }
-      if (jOENIKOCBAL_ != emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.BEHIKOPKKHE_GcgGameNone.getNumber()) {
-        output.writeEnum(14, jOENIKOCBAL_);
+      if (gameId_ != 0) {
+        output.writeUInt32(12, gameId_);
       }
       if (platformType_ != 0) {
-        output.writeUInt32(15, platformType_);
+        output.writeUInt32(13, platformType_);
       }
       unknownFields.writeTo(output);
     }
@@ -343,29 +339,29 @@ public final class GCGGameBriefDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pAFNOEDDJNJ_ != 0) {
+      if (unk3850AJHNMNEEOLH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pAFNOEDDJNJ_);
+          .computeUInt32Size(2, unk3850AJHNMNEEOLH_);
       }
-      if (nFGCKNEHGEE_ != 0) {
+      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nFGCKNEHGEE_);
+          .computeEnumSize(8, businessType_);
       }
       for (int i = 0; i < playerBriefList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, playerBriefList_.get(i));
+          .computeMessageSize(9, playerBriefList_.get(i));
       }
-      if (cLFLBPJPBJB_ != 0) {
+      if (unk3850AEIPHNKPCJJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cLFLBPJPBJB_);
+          .computeUInt32Size(11, unk3850AEIPHNKPCJJ_);
       }
-      if (jOENIKOCBAL_ != emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.BEHIKOPKKHE_GcgGameNone.getNumber()) {
+      if (gameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, jOENIKOCBAL_);
+          .computeUInt32Size(12, gameId_);
       }
       if (platformType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, platformType_);
+          .computeUInt32Size(13, platformType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,17 +378,17 @@ public final class GCGGameBriefDataOuterClass {
       }
       emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData other = (emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData) obj;
 
-      if (getPAFNOEDDJNJ()
-          != other.getPAFNOEDDJNJ()) return false;
       if (!getPlayerBriefListList()
           .equals(other.getPlayerBriefListList())) return false;
-      if (jOENIKOCBAL_ != other.jOENIKOCBAL_) return false;
+      if (getUnk3850AEIPHNKPCJJ()
+          != other.getUnk3850AEIPHNKPCJJ()) return false;
+      if (businessType_ != other.businessType_) return false;
       if (getPlatformType()
           != other.getPlatformType()) return false;
-      if (getNFGCKNEHGEE()
-          != other.getNFGCKNEHGEE()) return false;
-      if (getCLFLBPJPBJB()
-          != other.getCLFLBPJPBJB()) return false;
+      if (getUnk3850AJHNMNEEOLH()
+          != other.getUnk3850AJHNMNEEOLH()) return false;
+      if (getGameId()
+          != other.getGameId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -404,20 +400,20 @@ public final class GCGGameBriefDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PAFNOEDDJNJ_FIELD_NUMBER;
-      hash = (53 * hash) + getPAFNOEDDJNJ();
       if (getPlayerBriefListCount() > 0) {
         hash = (37 * hash) + PLAYER_BRIEF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerBriefListList().hashCode();
       }
-      hash = (37 * hash) + JOENIKOCBAL_FIELD_NUMBER;
-      hash = (53 * hash) + jOENIKOCBAL_;
+      hash = (37 * hash) + UNK3850_AEIPHNKPCJJ_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3850AEIPHNKPCJJ();
+      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + businessType_;
       hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPlatformType();
-      hash = (37 * hash) + NFGCKNEHGEE_FIELD_NUMBER;
-      hash = (53 * hash) + getNFGCKNEHGEE();
-      hash = (37 * hash) + CLFLBPJPBJB_FIELD_NUMBER;
-      hash = (53 * hash) + getCLFLBPJPBJB();
+      hash = (37 * hash) + UNK3850_AJHNMNEEOLH_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3850AJHNMNEEOLH();
+      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGameId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -514,10 +510,6 @@ public final class GCGGameBriefDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DCACCKPDOJH
-     * </pre>
-     *
      * Protobuf type {@code GCGGameBriefData}
      */
     public static final class Builder extends
@@ -556,21 +548,21 @@ public final class GCGGameBriefDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pAFNOEDDJNJ_ = 0;
-
         if (playerBriefListBuilder_ == null) {
           playerBriefList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           playerBriefListBuilder_.clear();
         }
-        jOENIKOCBAL_ = 0;
+        unk3850AEIPHNKPCJJ_ = 0;
+
+        businessType_ = 0;
 
         platformType_ = 0;
 
-        nFGCKNEHGEE_ = 0;
+        unk3850AJHNMNEEOLH_ = 0;
 
-        cLFLBPJPBJB_ = 0;
+        gameId_ = 0;
 
         return this;
       }
@@ -599,7 +591,6 @@ public final class GCGGameBriefDataOuterClass {
       public emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData buildPartial() {
         emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData result = new emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData(this);
         int from_bitField0_ = bitField0_;
-        result.pAFNOEDDJNJ_ = pAFNOEDDJNJ_;
         if (playerBriefListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             playerBriefList_ = java.util.Collections.unmodifiableList(playerBriefList_);
@@ -609,10 +600,11 @@ public final class GCGGameBriefDataOuterClass {
         } else {
           result.playerBriefList_ = playerBriefListBuilder_.build();
         }
-        result.jOENIKOCBAL_ = jOENIKOCBAL_;
+        result.unk3850AEIPHNKPCJJ_ = unk3850AEIPHNKPCJJ_;
+        result.businessType_ = businessType_;
         result.platformType_ = platformType_;
-        result.nFGCKNEHGEE_ = nFGCKNEHGEE_;
-        result.cLFLBPJPBJB_ = cLFLBPJPBJB_;
+        result.unk3850AJHNMNEEOLH_ = unk3850AJHNMNEEOLH_;
+        result.gameId_ = gameId_;
         onBuilt();
         return result;
       }
@@ -661,9 +653,6 @@ public final class GCGGameBriefDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData other) {
         if (other == emu.grasscutter.net.proto.GCGGameBriefDataOuterClass.GCGGameBriefData.getDefaultInstance()) return this;
-        if (other.getPAFNOEDDJNJ() != 0) {
-          setPAFNOEDDJNJ(other.getPAFNOEDDJNJ());
-        }
         if (playerBriefListBuilder_ == null) {
           if (!other.playerBriefList_.isEmpty()) {
             if (playerBriefList_.isEmpty()) {
@@ -690,17 +679,20 @@ public final class GCGGameBriefDataOuterClass {
             }
           }
         }
-        if (other.jOENIKOCBAL_ != 0) {
-          setJOENIKOCBALValue(other.getJOENIKOCBALValue());
+        if (other.getUnk3850AEIPHNKPCJJ() != 0) {
+          setUnk3850AEIPHNKPCJJ(other.getUnk3850AEIPHNKPCJJ());
+        }
+        if (other.businessType_ != 0) {
+          setBusinessTypeValue(other.getBusinessTypeValue());
         }
         if (other.getPlatformType() != 0) {
           setPlatformType(other.getPlatformType());
         }
-        if (other.getNFGCKNEHGEE() != 0) {
-          setNFGCKNEHGEE(other.getNFGCKNEHGEE());
+        if (other.getUnk3850AJHNMNEEOLH() != 0) {
+          setUnk3850AJHNMNEEOLH(other.getUnk3850AJHNMNEEOLH());
         }
-        if (other.getCLFLBPJPBJB() != 0) {
-          setCLFLBPJPBJB(other.getCLFLBPJPBJB());
+        if (other.getGameId() != 0) {
+          setGameId(other.getGameId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -732,37 +724,6 @@ public final class GCGGameBriefDataOuterClass {
       }
       private int bitField0_;
 
-      private int pAFNOEDDJNJ_ ;
-      /**
-       * <code>uint32 PAFNOEDDJNJ = 7;</code>
-       * @return The pAFNOEDDJNJ.
-       */
-      @java.lang.Override
-      public int getPAFNOEDDJNJ() {
-        return pAFNOEDDJNJ_;
-      }
-      /**
-       * <code>uint32 PAFNOEDDJNJ = 7;</code>
-       * @param value The pAFNOEDDJNJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPAFNOEDDJNJ(int value) {
-        
-        pAFNOEDDJNJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PAFNOEDDJNJ = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPAFNOEDDJNJ() {
-        
-        pAFNOEDDJNJ_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> playerBriefList_ =
         java.util.Collections.emptyList();
       private void ensurePlayerBriefListIsMutable() {
@@ -776,7 +737,7 @@ public final class GCGGameBriefDataOuterClass {
           emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder> playerBriefListBuilder_;
 
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> getPlayerBriefListList() {
         if (playerBriefListBuilder_ == null) {
@@ -786,7 +747,7 @@ public final class GCGGameBriefDataOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public int getPlayerBriefListCount() {
         if (playerBriefListBuilder_ == null) {
@@ -796,7 +757,7 @@ public final class GCGGameBriefDataOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData getPlayerBriefList(int index) {
         if (playerBriefListBuilder_ == null) {
@@ -806,7 +767,7 @@ public final class GCGGameBriefDataOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder setPlayerBriefList(
           int index, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData value) {
@@ -823,7 +784,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder setPlayerBriefList(
           int index, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder builderForValue) {
@@ -837,7 +798,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder addPlayerBriefList(emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData value) {
         if (playerBriefListBuilder_ == null) {
@@ -853,7 +814,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder addPlayerBriefList(
           int index, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData value) {
@@ -870,7 +831,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder addPlayerBriefList(
           emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder builderForValue) {
@@ -884,7 +845,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder addPlayerBriefList(
           int index, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder builderForValue) {
@@ -898,7 +859,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder addAllPlayerBriefList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData> values) {
@@ -913,7 +874,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder clearPlayerBriefList() {
         if (playerBriefListBuilder_ == null) {
@@ -926,7 +887,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public Builder removePlayerBriefList(int index) {
         if (playerBriefListBuilder_ == null) {
@@ -939,14 +900,14 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder getPlayerBriefListBuilder(
           int index) {
         return getPlayerBriefListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder getPlayerBriefListOrBuilder(
           int index) {
@@ -956,7 +917,7 @@ public final class GCGGameBriefDataOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefDataOrBuilder> 
            getPlayerBriefListOrBuilderList() {
@@ -967,14 +928,14 @@ public final class GCGGameBriefDataOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder addPlayerBriefListBuilder() {
         return getPlayerBriefListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder addPlayerBriefListBuilder(
           int index) {
@@ -982,7 +943,7 @@ public final class GCGGameBriefDataOuterClass {
             index, emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGPlayerBriefData player_brief_list = 10;</code>
+       * <code>repeated .GCGPlayerBriefData player_brief_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.GCGPlayerBriefData.Builder> 
            getPlayerBriefListBuilderList() {
@@ -1003,63 +964,94 @@ public final class GCGGameBriefDataOuterClass {
         return playerBriefListBuilder_;
       }
 
-      private int jOENIKOCBAL_ = 0;
+      private int unk3850AEIPHNKPCJJ_ ;
       /**
-       * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-       * @return The enum numeric value on the wire for jOENIKOCBAL.
+       * <code>uint32 Unk3850_AEIPHNKPCJJ = 11;</code>
+       * @return The unk3850AEIPHNKPCJJ.
        */
-      @java.lang.Override public int getJOENIKOCBALValue() {
-        return jOENIKOCBAL_;
+      @java.lang.Override
+      public int getUnk3850AEIPHNKPCJJ() {
+        return unk3850AEIPHNKPCJJ_;
       }
       /**
-       * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-       * @param value The enum numeric value on the wire for jOENIKOCBAL to set.
+       * <code>uint32 Unk3850_AEIPHNKPCJJ = 11;</code>
+       * @param value The unk3850AEIPHNKPCJJ to set.
        * @return This builder for chaining.
        */
-      public Builder setJOENIKOCBALValue(int value) {
+      public Builder setUnk3850AEIPHNKPCJJ(int value) {
         
-        jOENIKOCBAL_ = value;
+        unk3850AEIPHNKPCJJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-       * @return The jOENIKOCBAL.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE getJOENIKOCBAL() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE result = emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.valueOf(jOENIKOCBAL_);
-        return result == null ? emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
-       * @param value The jOENIKOCBAL to set.
+       * <code>uint32 Unk3850_AEIPHNKPCJJ = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder setJOENIKOCBAL(emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.BEHIKOPKKHE value) {
+      public Builder clearUnk3850AEIPHNKPCJJ() {
+        
+        unk3850AEIPHNKPCJJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int businessType_ = 0;
+      /**
+       * <code>.GCGGameBusinessType business_type = 8;</code>
+       * @return The enum numeric value on the wire for businessType.
+       */
+      @java.lang.Override public int getBusinessTypeValue() {
+        return businessType_;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 8;</code>
+       * @param value The enum numeric value on the wire for businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessTypeValue(int value) {
+        
+        businessType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 8;</code>
+       * @return The businessType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
+        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGGameBusinessType business_type = 8;</code>
+       * @param value The businessType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        jOENIKOCBAL_ = value.getNumber();
+        businessType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.BEHIKOPKKHE JOENIKOCBAL = 14;</code>
+       * <code>.GCGGameBusinessType business_type = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJOENIKOCBAL() {
+      public Builder clearBusinessType() {
         
-        jOENIKOCBAL_ = 0;
+        businessType_ = 0;
         onChanged();
         return this;
       }
 
       private int platformType_ ;
       /**
-       * <code>uint32 platform_type = 15;</code>
+       * <code>uint32 platform_type = 13;</code>
        * @return The platformType.
        */
       @java.lang.Override
@@ -1067,7 +1059,7 @@ public final class GCGGameBriefDataOuterClass {
         return platformType_;
       }
       /**
-       * <code>uint32 platform_type = 15;</code>
+       * <code>uint32 platform_type = 13;</code>
        * @param value The platformType to set.
        * @return This builder for chaining.
        */
@@ -1078,7 +1070,7 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 platform_type = 15;</code>
+       * <code>uint32 platform_type = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlatformType() {
@@ -1088,64 +1080,64 @@ public final class GCGGameBriefDataOuterClass {
         return this;
       }
 
-      private int nFGCKNEHGEE_ ;
+      private int unk3850AJHNMNEEOLH_ ;
       /**
-       * <code>uint32 NFGCKNEHGEE = 9;</code>
-       * @return The nFGCKNEHGEE.
+       * <code>uint32 Unk3850_AJHNMNEEOLH = 2;</code>
+       * @return The unk3850AJHNMNEEOLH.
        */
       @java.lang.Override
-      public int getNFGCKNEHGEE() {
-        return nFGCKNEHGEE_;
+      public int getUnk3850AJHNMNEEOLH() {
+        return unk3850AJHNMNEEOLH_;
       }
       /**
-       * <code>uint32 NFGCKNEHGEE = 9;</code>
-       * @param value The nFGCKNEHGEE to set.
+       * <code>uint32 Unk3850_AJHNMNEEOLH = 2;</code>
+       * @param value The unk3850AJHNMNEEOLH to set.
        * @return This builder for chaining.
        */
-      public Builder setNFGCKNEHGEE(int value) {
+      public Builder setUnk3850AJHNMNEEOLH(int value) {
         
-        nFGCKNEHGEE_ = value;
+        unk3850AJHNMNEEOLH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NFGCKNEHGEE = 9;</code>
+       * <code>uint32 Unk3850_AJHNMNEEOLH = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNFGCKNEHGEE() {
+      public Builder clearUnk3850AJHNMNEEOLH() {
         
-        nFGCKNEHGEE_ = 0;
+        unk3850AJHNMNEEOLH_ = 0;
         onChanged();
         return this;
       }
 
-      private int cLFLBPJPBJB_ ;
+      private int gameId_ ;
       /**
-       * <code>uint32 CLFLBPJPBJB = 13;</code>
-       * @return The cLFLBPJPBJB.
+       * <code>uint32 game_id = 12;</code>
+       * @return The gameId.
        */
       @java.lang.Override
-      public int getCLFLBPJPBJB() {
-        return cLFLBPJPBJB_;
+      public int getGameId() {
+        return gameId_;
       }
       /**
-       * <code>uint32 CLFLBPJPBJB = 13;</code>
-       * @param value The cLFLBPJPBJB to set.
+       * <code>uint32 game_id = 12;</code>
+       * @param value The gameId to set.
        * @return This builder for chaining.
        */
-      public Builder setCLFLBPJPBJB(int value) {
+      public Builder setGameId(int value) {
         
-        cLFLBPJPBJB_ = value;
+        gameId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CLFLBPJPBJB = 13;</code>
+       * <code>uint32 game_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCLFLBPJPBJB() {
+      public Builder clearGameId() {
         
-        cLFLBPJPBJB_ = 0;
+        gameId_ = 0;
         onChanged();
         return this;
       }
@@ -1217,28 +1209,29 @@ public final class GCGGameBriefDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GCGGameBriefData.proto\032\030GCGPlayerBrief" +
-      "Data.proto\032\021BEHIKOPKKHE.proto\"\273\001\n\020GCGGam" +
-      "eBriefData\022\023\n\013PAFNOEDDJNJ\030\007 \001(\r\022.\n\021playe" +
-      "r_brief_list\030\n \003(\0132\023.GCGPlayerBriefData\022" +
-      "!\n\013JOENIKOCBAL\030\016 \001(\0162\014.BEHIKOPKKHE\022\025\n\rpl" +
-      "atform_type\030\017 \001(\r\022\023\n\013NFGCKNEHGEE\030\t \001(\r\022\023" +
-      "\n\013CLFLBPJPBJB\030\r \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "Data.proto\032\031GCGGameBusinessType.proto\"\321\001" +
+      "\n\020GCGGameBriefData\022.\n\021player_brief_list\030" +
+      "\t \003(\0132\023.GCGPlayerBriefData\022\033\n\023Unk3850_AE" +
+      "IPHNKPCJJ\030\013 \001(\r\022+\n\rbusiness_type\030\010 \001(\0162\024" +
+      ".GCGGameBusinessType\022\025\n\rplatform_type\030\r " +
+      "\001(\r\022\033\n\023Unk3850_AJHNMNEEOLH\030\002 \001(\r\022\017\n\007game" +
+      "_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor(),
         });
     internal_static_GCGGameBriefData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGGameBriefData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGGameBriefData_descriptor,
-        new java.lang.String[] { "PAFNOEDDJNJ", "PlayerBriefList", "JOENIKOCBAL", "PlatformType", "NFGCKNEHGEE", "CLFLBPJPBJB", });
+        new java.lang.String[] { "PlayerBriefList", "Unk3850AEIPHNKPCJJ", "BusinessType", "PlatformType", "Unk3850AJHNMNEEOLH", "GameId", });
     emu.grasscutter.net.proto.GCGPlayerBriefDataOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BEHIKOPKKHEOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,32 +19,47 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cell_id = 4;</code>
-     * @return The cellId.
-     */
-    int getCellId();
-
-    /**
-     * <code>uint32 dungeon_id = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 8;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
      * @return The enum numeric value on the wire for difficulty.
      */
     int getDifficultyValue();
     /**
-     * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
      * @return The difficulty.
      */
     emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 cell_id = 15;</code>
+     * @return The cellId.
+     */
+    int getCellId();
   }
   /**
    * <pre>
-   * CmdId: 24719
-   * Obf: HEAHANPPGNM
+   * CmdId: 29302
    * </pre>
    *
    * Protobuf type {@code StartRogueEliteCellChallengeReq}
@@ -93,19 +108,19 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
               done = true;
               break;
             case 32: {
-
-              cellId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
               int rawValue = input.readEnum();
 
               difficulty_ = rawValue;
               break;
             }
-            case 72: {
+            case 64: {
 
               dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              cellId_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,21 +155,14 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
               emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq.class, emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq.Builder.class);
     }
 
-    public static final int CELL_ID_FIELD_NUMBER = 4;
-    private int cellId_;
-    /**
-     * <code>uint32 cell_id = 4;</code>
-     * @return The cellId.
-     */
-    @java.lang.Override
-    public int getCellId() {
-      return cellId_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 dungeon_id = 8;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -162,23 +170,46 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       return dungeonId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 7;
+    public static final int DIFFICULTY_FIELD_NUMBER = 4;
     private int difficulty_;
     /**
-     * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
      * @return The enum numeric value on the wire for difficulty.
      */
     @java.lang.Override public int getDifficultyValue() {
       return difficulty_;
     }
     /**
-     * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
      * @return The difficulty.
      */
     @java.lang.Override public emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType getDifficulty() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType result = emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.valueOf(difficulty_);
       return result == null ? emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.UNRECOGNIZED : result;
+    }
+
+    public static final int CELL_ID_FIELD_NUMBER = 15;
+    private int cellId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 cell_id = 15;</code>
+     * @return The cellId.
+     */
+    @java.lang.Override
+    public int getCellId() {
+      return cellId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -195,14 +226,14 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cellId_ != 0) {
-        output.writeUInt32(4, cellId_);
-      }
-      if (difficulty_ != emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.ROGUE_ELITE_NORMAL.getNumber()) {
-        output.writeEnum(7, difficulty_);
+      if (difficulty_ != emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.ICGFBGMHAJL_ROGUE_ELITE_NORMAL.getNumber()) {
+        output.writeEnum(4, difficulty_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(9, dungeonId_);
+        output.writeUInt32(8, dungeonId_);
+      }
+      if (cellId_ != 0) {
+        output.writeUInt32(15, cellId_);
       }
       unknownFields.writeTo(output);
     }
@@ -213,17 +244,17 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cellId_ != 0) {
+      if (difficulty_ != emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.ICGFBGMHAJL_ROGUE_ELITE_NORMAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cellId_);
-      }
-      if (difficulty_ != emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.ROGUE_ELITE_NORMAL.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, difficulty_);
+          .computeEnumSize(4, difficulty_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dungeonId_);
+          .computeUInt32Size(8, dungeonId_);
+      }
+      if (cellId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cellId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,11 +271,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       }
       emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq other = (emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq) obj;
 
-      if (getCellId()
-          != other.getCellId()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (difficulty_ != other.difficulty_) return false;
+      if (getCellId()
+          != other.getCellId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -256,12 +287,12 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCellId();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + difficulty_;
+      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCellId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,8 +390,7 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24719
-     * Obf: HEAHANPPGNM
+     * CmdId: 29302
      * </pre>
      *
      * Protobuf type {@code StartRogueEliteCellChallengeReq}
@@ -400,11 +430,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cellId_ = 0;
-
         dungeonId_ = 0;
 
         difficulty_ = 0;
+
+        cellId_ = 0;
 
         return this;
       }
@@ -432,9 +462,9 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq buildPartial() {
         emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq result = new emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq(this);
-        result.cellId_ = cellId_;
         result.dungeonId_ = dungeonId_;
         result.difficulty_ = difficulty_;
+        result.cellId_ = cellId_;
         onBuilt();
         return result;
       }
@@ -483,14 +513,14 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq other) {
         if (other == emu.grasscutter.net.proto.StartRogueEliteCellChallengeReqOuterClass.StartRogueEliteCellChallengeReq.getDefaultInstance()) return this;
-        if (other.getCellId() != 0) {
-          setCellId(other.getCellId());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
         if (other.difficulty_ != 0) {
           setDifficultyValue(other.getDifficultyValue());
+        }
+        if (other.getCellId() != 0) {
+          setCellId(other.getCellId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -521,40 +551,13 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return this;
       }
 
-      private int cellId_ ;
-      /**
-       * <code>uint32 cell_id = 4;</code>
-       * @return The cellId.
-       */
-      @java.lang.Override
-      public int getCellId() {
-        return cellId_;
-      }
-      /**
-       * <code>uint32 cell_id = 4;</code>
-       * @param value The cellId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCellId(int value) {
-        
-        cellId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cell_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCellId() {
-        
-        cellId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -562,7 +565,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -573,7 +580,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 dungeon_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -585,14 +596,22 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
 
       private int difficulty_ = 0;
       /**
-       * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
        * @return The enum numeric value on the wire for difficulty.
        */
       @java.lang.Override public int getDifficultyValue() {
         return difficulty_;
       }
       /**
-       * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
        * @param value The enum numeric value on the wire for difficulty to set.
        * @return This builder for chaining.
        */
@@ -603,7 +622,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -613,7 +636,11 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.RogueEliteCellDifficultyType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -627,12 +654,59 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>.RogueEliteCellDifficultyType difficulty = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.RogueEliteCellDifficultyType difficulty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cellId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 cell_id = 15;</code>
+       * @return The cellId.
+       */
+      @java.lang.Override
+      public int getCellId() {
+        return cellId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 cell_id = 15;</code>
+       * @param value The cellId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCellId(int value) {
+        
+        cellId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 cell_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCellId() {
+        
+        cellId_ = 0;
         onChanged();
         return this;
       }
@@ -705,9 +779,9 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%StartRogueEliteCellChallengeReq.proto\032" +
       "\"RogueEliteCellDifficultyType.proto\"y\n\037S" +
-      "tartRogueEliteCellChallengeReq\022\017\n\007cell_i" +
-      "d\030\004 \001(\r\022\022\n\ndungeon_id\030\t \001(\r\0221\n\ndifficult" +
-      "y\030\007 \001(\0162\035.RogueEliteCellDifficultyTypeB\033" +
+      "tartRogueEliteCellChallengeReq\022\022\n\ndungeo" +
+      "n_id\030\010 \001(\r\0221\n\ndifficulty\030\004 \001(\0162\035.RogueEl" +
+      "iteCellDifficultyType\022\017\n\007cell_id\030\017 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -720,7 +794,7 @@ public final class StartRogueEliteCellChallengeReqOuterClass {
     internal_static_StartRogueEliteCellChallengeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartRogueEliteCellChallengeReq_descriptor,
-        new java.lang.String[] { "CellId", "DungeonId", "Difficulty", });
+        new java.lang.String[] { "DungeonId", "Difficulty", "CellId", });
     emu.grasscutter.net.proto.RogueEliteCellDifficultyTypeOuterClass.getDescriptor();
   }
 

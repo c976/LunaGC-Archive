@@ -19,21 +19,28 @@ public final class PlayerInjectFixNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bytes inject_fix = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bytes inject_fix = 8;</code>
      * @return The injectFix.
      */
     com.google.protobuf.ByteString getInjectFix();
 
     /**
-     * <code>uint32 id = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * CmdId: 27662
-   * Obf: JAGPJBOAGGK
+   * CmdId: 3731
    * </pre>
    *
    * Protobuf type {@code PlayerInjectFixNotify}
@@ -81,12 +88,12 @@ public final class PlayerInjectFixNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 66: {
 
               injectFix_ = input.readBytes();
               break;
             }
-            case 56: {
+            case 88: {
 
               id_ = input.readUInt32();
               break;
@@ -123,10 +130,14 @@ public final class PlayerInjectFixNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.class, emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.Builder.class);
     }
 
-    public static final int INJECT_FIX_FIELD_NUMBER = 3;
+    public static final int INJECT_FIX_FIELD_NUMBER = 8;
     private com.google.protobuf.ByteString injectFix_;
     /**
-     * <code>bytes inject_fix = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bytes inject_fix = 8;</code>
      * @return The injectFix.
      */
     @java.lang.Override
@@ -134,10 +145,14 @@ public final class PlayerInjectFixNotifyOuterClass {
       return injectFix_;
     }
 
-    public static final int ID_FIELD_NUMBER = 7;
+    public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <code>uint32 id = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -160,10 +175,10 @@ public final class PlayerInjectFixNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!injectFix_.isEmpty()) {
-        output.writeBytes(3, injectFix_);
+        output.writeBytes(8, injectFix_);
       }
       if (id_ != 0) {
-        output.writeUInt32(7, id_);
+        output.writeUInt32(11, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +191,11 @@ public final class PlayerInjectFixNotifyOuterClass {
       size = 0;
       if (!injectFix_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, injectFix_);
+          .computeBytesSize(8, injectFix_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, id_);
+          .computeUInt32Size(11, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +328,7 @@ public final class PlayerInjectFixNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27662
-     * Obf: JAGPJBOAGGK
+     * CmdId: 3731
      * </pre>
      *
      * Protobuf type {@code PlayerInjectFixNotify}
@@ -471,7 +485,11 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private com.google.protobuf.ByteString injectFix_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes inject_fix = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bytes inject_fix = 8;</code>
        * @return The injectFix.
        */
       @java.lang.Override
@@ -479,7 +497,11 @@ public final class PlayerInjectFixNotifyOuterClass {
         return injectFix_;
       }
       /**
-       * <code>bytes inject_fix = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bytes inject_fix = 8;</code>
        * @param value The injectFix to set.
        * @return This builder for chaining.
        */
@@ -493,7 +515,11 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bytes inject_fix = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bytes inject_fix = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearInjectFix() {
@@ -505,7 +531,11 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 11;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -513,7 +543,11 @@ public final class PlayerInjectFixNotifyOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -524,7 +558,11 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -601,8 +639,8 @@ public final class PlayerInjectFixNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerInjectFixNotify.proto\"7\n\025PlayerI" +
-      "njectFixNotify\022\022\n\ninject_fix\030\003 \001(\014\022\n\n\002id" +
-      "\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "njectFixNotify\022\022\n\ninject_fix\030\010 \001(\014\022\n\n\002id" +
+      "\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

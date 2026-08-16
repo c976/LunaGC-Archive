@@ -15,65 +15,61 @@ public final class HideAndSeekStageTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: AIHOPPMEJNG
-   * </pre>
-   *
    * Protobuf enum {@code HideAndSeekStageType}
    */
   public enum HideAndSeekStageType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>HIDE_AND_SEEK_STAGE_PREPARE = 0;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE = 0;</code>
      */
-    HIDE_AND_SEEK_STAGE_PREPARE(0),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE(0),
     /**
-     * <code>HIDE_AND_SEEK_STAGE_PICK = 1;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PICK = 1;</code>
      */
-    HIDE_AND_SEEK_STAGE_PICK(1),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PICK(1),
     /**
-     * <code>HIDE_AND_SEEK_STAGE_GAME = 2;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_GAME = 2;</code>
      */
-    HIDE_AND_SEEK_STAGE_GAME(2),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_GAME(2),
     /**
-     * <code>HIDE_AND_SEEK_STAGE_HIDE = 3;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_HIDE = 3;</code>
      */
-    HIDE_AND_SEEK_STAGE_HIDE(3),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_HIDE(3),
     /**
-     * <code>HIDE_AND_SEEK_STAGE_SEEK = 4;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SEEK = 4;</code>
      */
-    HIDE_AND_SEEK_STAGE_SEEK(4),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SEEK(4),
     /**
-     * <code>HIDE_AND_SEEK_STAGE_SETTLE = 5;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SETTLE = 5;</code>
      */
-    HIDE_AND_SEEK_STAGE_SETTLE(5),
+    GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SETTLE(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>HIDE_AND_SEEK_STAGE_PREPARE = 0;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE = 0;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_PREPARE_VALUE = 0;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE_VALUE = 0;
     /**
-     * <code>HIDE_AND_SEEK_STAGE_PICK = 1;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PICK = 1;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_PICK_VALUE = 1;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PICK_VALUE = 1;
     /**
-     * <code>HIDE_AND_SEEK_STAGE_GAME = 2;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_GAME = 2;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_GAME_VALUE = 2;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_GAME_VALUE = 2;
     /**
-     * <code>HIDE_AND_SEEK_STAGE_HIDE = 3;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_HIDE = 3;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_HIDE_VALUE = 3;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_HIDE_VALUE = 3;
     /**
-     * <code>HIDE_AND_SEEK_STAGE_SEEK = 4;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SEEK = 4;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_SEEK_VALUE = 4;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SEEK_VALUE = 4;
     /**
-     * <code>HIDE_AND_SEEK_STAGE_SETTLE = 5;</code>
+     * <code>GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SETTLE = 5;</code>
      */
-    public static final int HIDE_AND_SEEK_STAGE_SETTLE_VALUE = 5;
+    public static final int GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SETTLE_VALUE = 5;
 
 
     public final int getNumber() {
@@ -100,12 +96,12 @@ public final class HideAndSeekStageTypeOuterClass {
      */
     public static HideAndSeekStageType forNumber(int value) {
       switch (value) {
-        case 0: return HIDE_AND_SEEK_STAGE_PREPARE;
-        case 1: return HIDE_AND_SEEK_STAGE_PICK;
-        case 2: return HIDE_AND_SEEK_STAGE_GAME;
-        case 3: return HIDE_AND_SEEK_STAGE_HIDE;
-        case 4: return HIDE_AND_SEEK_STAGE_SEEK;
-        case 5: return HIDE_AND_SEEK_STAGE_SETTLE;
+        case 0: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PREPARE;
+        case 1: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_PICK;
+        case 2: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_GAME;
+        case 3: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_HIDE;
+        case 4: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SEEK;
+        case 5: return GOEJIDGPCMH_HIDE_AND_SEEK_STAGE_SETTLE;
         default: return null;
       }
     }
@@ -171,13 +167,15 @@ public final class HideAndSeekStageTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032HideAndSeekStageType.proto*\317\001\n\024HideAnd" +
-      "SeekStageType\022\037\n\033HIDE_AND_SEEK_STAGE_PRE" +
-      "PARE\020\000\022\034\n\030HIDE_AND_SEEK_STAGE_PICK\020\001\022\034\n\030" +
-      "HIDE_AND_SEEK_STAGE_GAME\020\002\022\034\n\030HIDE_AND_S" +
-      "EEK_STAGE_HIDE\020\003\022\034\n\030HIDE_AND_SEEK_STAGE_" +
-      "SEEK\020\004\022\036\n\032HIDE_AND_SEEK_STAGE_SETTLE\020\005B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032HideAndSeekStageType.proto*\227\002\n\024HideAnd" +
+      "SeekStageType\022+\n\'GOEJIDGPCMH_HIDE_AND_SE" +
+      "EK_STAGE_PREPARE\020\000\022(\n$GOEJIDGPCMH_HIDE_A" +
+      "ND_SEEK_STAGE_PICK\020\001\022(\n$GOEJIDGPCMH_HIDE" +
+      "_AND_SEEK_STAGE_GAME\020\002\022(\n$GOEJIDGPCMH_HI" +
+      "DE_AND_SEEK_STAGE_HIDE\020\003\022(\n$GOEJIDGPCMH_" +
+      "HIDE_AND_SEEK_STAGE_SEEK\020\004\022*\n&GOEJIDGPCM" +
+      "H_HIDE_AND_SEEK_STAGE_SETTLE\020\005B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

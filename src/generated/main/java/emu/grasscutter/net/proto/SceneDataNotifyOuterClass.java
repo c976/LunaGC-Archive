@@ -19,24 +19,67 @@ public final class SceneDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     * @return Whether the mapLayerInfo field is set.
+     */
+    boolean hasMapLayerInfo();
+    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     * @return The mapLayerInfo.
+     */
+    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
+    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     */
+    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @return A list containing the levelConfigNameList.
      */
     java.util.List<java.lang.String>
         getLevelConfigNameListList();
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @return The count of levelConfigNameList.
      */
     int getLevelConfigNameListCount();
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @param index The index of the element to return.
      * @return The levelConfigNameList at the given index.
      */
     java.lang.String getLevelConfigNameList(int index);
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the levelConfigNameList at the given index.
      */
@@ -44,32 +87,56 @@ public final class SceneDataNotifyOuterClass {
         getLevelConfigNameListBytes(int index);
 
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
-     * @return Whether the mapLayerInfo field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+     * @return Whether the iNNNIOKKFGH field is set.
      */
-    boolean hasMapLayerInfo();
+    boolean hasINNNIOKKFGH();
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
-     * @return The mapLayerInfo.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+     * @return The iNNNIOKKFGH.
      */
-    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
+    emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB getINNNIOKKFGH();
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
      */
-    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
+    emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder getINNNIOKKFGHOrBuilder();
 
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return A list containing the sceneTagIdList.
      */
     java.util.List<java.lang.Integer> getSceneTagIdListList();
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return The count of sceneTagIdList.
      */
     int getSceneTagIdListCount();
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
      */
@@ -77,7 +144,7 @@ public final class SceneDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2772
+   * CmdId: 20790
    * </pre>
    *
    * Protobuf type {@code SceneDataNotify}
@@ -127,7 +194,7 @@ public final class SceneDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelConfigNameList_ = new com.google.protobuf.LazyStringArrayList();
@@ -136,28 +203,7 @@ public final class SceneDataNotifyOuterClass {
               levelConfigNameList_.add(s);
               break;
             }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                sceneTagIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              sceneTagIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                sceneTagIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                sceneTagIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 82: {
+            case 58: {
               emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
               if (mapLayerInfo_ != null) {
                 subBuilder = mapLayerInfo_.toBuilder();
@@ -168,6 +214,40 @@ public final class SceneDataNotifyOuterClass {
                 mapLayerInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 66: {
+              emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder subBuilder = null;
+              if (iNNNIOKKFGH_ != null) {
+                subBuilder = iNNNIOKKFGH_.toBuilder();
+              }
+              iNNNIOKKFGH_ = input.readMessage(emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(iNNNIOKKFGH_);
+                iNNNIOKKFGH_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                sceneTagIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              sceneTagIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 82: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                sceneTagIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                sceneTagIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -208,10 +288,52 @@ public final class SceneDataNotifyOuterClass {
               emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify.class, emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify.Builder.class);
     }
 
-    public static final int LEVEL_CONFIG_NAME_LIST_FIELD_NUMBER = 1;
+    public static final int MAP_LAYER_INFO_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     * @return Whether the mapLayerInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasMapLayerInfo() {
+      return mapLayerInfo_ != null;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     * @return The mapLayerInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
+      return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.MapLayerInfo map_layer_info = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
+      return getMapLayerInfo();
+    }
+
+    public static final int LEVEL_CONFIG_NAME_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.LazyStringList levelConfigNameList_;
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @return A list containing the levelConfigNameList.
      */
     public com.google.protobuf.ProtocolStringList
@@ -219,14 +341,22 @@ public final class SceneDataNotifyOuterClass {
       return levelConfigNameList_;
     }
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @return The count of levelConfigNameList.
      */
     public int getLevelConfigNameListCount() {
       return levelConfigNameList_.size();
     }
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @param index The index of the element to return.
      * @return The levelConfigNameList at the given index.
      */
@@ -234,7 +364,11 @@ public final class SceneDataNotifyOuterClass {
       return levelConfigNameList_.get(index);
     }
     /**
-     * <code>repeated string level_config_name_list = 1;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>repeated string level_config_name_list = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the levelConfigNameList at the given index.
      */
@@ -243,36 +377,52 @@ public final class SceneDataNotifyOuterClass {
       return levelConfigNameList_.getByteString(index);
     }
 
-    public static final int MAP_LAYER_INFO_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
+    public static final int INNNIOKKFGH_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB iNNNIOKKFGH_;
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
-     * @return Whether the mapLayerInfo field is set.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+     * @return Whether the iNNNIOKKFGH field is set.
      */
     @java.lang.Override
-    public boolean hasMapLayerInfo() {
-      return mapLayerInfo_ != null;
+    public boolean hasINNNIOKKFGH() {
+      return iNNNIOKKFGH_ != null;
     }
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
-     * @return The mapLayerInfo.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+     * @return The iNNNIOKKFGH.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
-      return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
+    public emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB getINNNIOKKFGH() {
+      return iNNNIOKKFGH_ == null ? emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.getDefaultInstance() : iNNNIOKKFGH_;
     }
     /**
-     * <code>.MapLayerInfo map_layer_info = 10;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
-      return getMapLayerInfo();
+    public emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder getINNNIOKKFGHOrBuilder() {
+      return getINNNIOKKFGH();
     }
 
-    public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 4;
+    public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList sceneTagIdList_;
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return A list containing the sceneTagIdList.
      */
     @java.lang.Override
@@ -281,14 +431,22 @@ public final class SceneDataNotifyOuterClass {
       return sceneTagIdList_;
     }
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return The count of sceneTagIdList.
      */
     public int getSceneTagIdListCount() {
       return sceneTagIdList_.size();
     }
     /**
-     * <code>repeated uint32 scene_tag_id_list = 4;</code>
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
      */
@@ -313,17 +471,20 @@ public final class SceneDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       for (int i = 0; i < levelConfigNameList_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, levelConfigNameList_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, levelConfigNameList_.getRaw(i));
+      }
+      if (mapLayerInfo_ != null) {
+        output.writeMessage(7, getMapLayerInfo());
+      }
+      if (iNNNIOKKFGH_ != null) {
+        output.writeMessage(8, getINNNIOKKFGH());
       }
       if (getSceneTagIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(sceneTagIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < sceneTagIdList_.size(); i++) {
         output.writeUInt32NoTag(sceneTagIdList_.getInt(i));
-      }
-      if (mapLayerInfo_ != null) {
-        output.writeMessage(10, getMapLayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -342,6 +503,14 @@ public final class SceneDataNotifyOuterClass {
         size += dataSize;
         size += 1 * getLevelConfigNameListList().size();
       }
+      if (mapLayerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getMapLayerInfo());
+      }
+      if (iNNNIOKKFGH_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getINNNIOKKFGH());
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < sceneTagIdList_.size(); i++) {
@@ -355,10 +524,6 @@ public final class SceneDataNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         sceneTagIdListMemoizedSerializedSize = dataSize;
-      }
-      if (mapLayerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getMapLayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -375,12 +540,17 @@ public final class SceneDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify other = (emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify) obj;
 
-      if (!getLevelConfigNameListList()
-          .equals(other.getLevelConfigNameListList())) return false;
       if (hasMapLayerInfo() != other.hasMapLayerInfo()) return false;
       if (hasMapLayerInfo()) {
         if (!getMapLayerInfo()
             .equals(other.getMapLayerInfo())) return false;
+      }
+      if (!getLevelConfigNameListList()
+          .equals(other.getLevelConfigNameListList())) return false;
+      if (hasINNNIOKKFGH() != other.hasINNNIOKKFGH()) return false;
+      if (hasINNNIOKKFGH()) {
+        if (!getINNNIOKKFGH()
+            .equals(other.getINNNIOKKFGH())) return false;
       }
       if (!getSceneTagIdListList()
           .equals(other.getSceneTagIdListList())) return false;
@@ -395,13 +565,17 @@ public final class SceneDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasMapLayerInfo()) {
+        hash = (37 * hash) + MAP_LAYER_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getMapLayerInfo().hashCode();
+      }
       if (getLevelConfigNameListCount() > 0) {
         hash = (37 * hash) + LEVEL_CONFIG_NAME_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelConfigNameListList().hashCode();
       }
-      if (hasMapLayerInfo()) {
-        hash = (37 * hash) + MAP_LAYER_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getMapLayerInfo().hashCode();
+      if (hasINNNIOKKFGH()) {
+        hash = (37 * hash) + INNNIOKKFGH_FIELD_NUMBER;
+        hash = (53 * hash) + getINNNIOKKFGH().hashCode();
       }
       if (getSceneTagIdListCount() > 0) {
         hash = (37 * hash) + SCENE_TAG_ID_LIST_FIELD_NUMBER;
@@ -504,7 +678,7 @@ public final class SceneDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2772
+     * CmdId: 20790
      * </pre>
      *
      * Protobuf type {@code SceneDataNotify}
@@ -544,13 +718,19 @@ public final class SceneDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (mapLayerInfoBuilder_ == null) {
           mapLayerInfo_ = null;
         } else {
           mapLayerInfo_ = null;
           mapLayerInfoBuilder_ = null;
+        }
+        levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (iNNNIOKKFGHBuilder_ == null) {
+          iNNNIOKKFGH_ = null;
+        } else {
+          iNNNIOKKFGH_ = null;
+          iNNNIOKKFGHBuilder_ = null;
         }
         sceneTagIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -581,15 +761,20 @@ public final class SceneDataNotifyOuterClass {
       public emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify buildPartial() {
         emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify result = new emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify(this);
         int from_bitField0_ = bitField0_;
+        if (mapLayerInfoBuilder_ == null) {
+          result.mapLayerInfo_ = mapLayerInfo_;
+        } else {
+          result.mapLayerInfo_ = mapLayerInfoBuilder_.build();
+        }
         if (((bitField0_ & 0x00000001) != 0)) {
           levelConfigNameList_ = levelConfigNameList_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.levelConfigNameList_ = levelConfigNameList_;
-        if (mapLayerInfoBuilder_ == null) {
-          result.mapLayerInfo_ = mapLayerInfo_;
+        if (iNNNIOKKFGHBuilder_ == null) {
+          result.iNNNIOKKFGH_ = iNNNIOKKFGH_;
         } else {
-          result.mapLayerInfo_ = mapLayerInfoBuilder_.build();
+          result.iNNNIOKKFGH_ = iNNNIOKKFGHBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           sceneTagIdList_.makeImmutable();
@@ -644,6 +829,9 @@ public final class SceneDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify other) {
         if (other == emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify.getDefaultInstance()) return this;
+        if (other.hasMapLayerInfo()) {
+          mergeMapLayerInfo(other.getMapLayerInfo());
+        }
         if (!other.levelConfigNameList_.isEmpty()) {
           if (levelConfigNameList_.isEmpty()) {
             levelConfigNameList_ = other.levelConfigNameList_;
@@ -654,8 +842,8 @@ public final class SceneDataNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.hasMapLayerInfo()) {
-          mergeMapLayerInfo(other.getMapLayerInfo());
+        if (other.hasINNNIOKKFGH()) {
+          mergeINNNIOKKFGH(other.getINNNIOKKFGH());
         }
         if (!other.sceneTagIdList_.isEmpty()) {
           if (sceneTagIdList_.isEmpty()) {
@@ -697,128 +885,26 @@ public final class SceneDataNotifyOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.LazyStringList levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureLevelConfigNameListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          levelConfigNameList_ = new com.google.protobuf.LazyStringArrayList(levelConfigNameList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @return A list containing the levelConfigNameList.
-       */
-      public com.google.protobuf.ProtocolStringList
-          getLevelConfigNameListList() {
-        return levelConfigNameList_.getUnmodifiableView();
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @return The count of levelConfigNameList.
-       */
-      public int getLevelConfigNameListCount() {
-        return levelConfigNameList_.size();
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param index The index of the element to return.
-       * @return The levelConfigNameList at the given index.
-       */
-      public java.lang.String getLevelConfigNameList(int index) {
-        return levelConfigNameList_.get(index);
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the levelConfigNameList at the given index.
-       */
-      public com.google.protobuf.ByteString
-          getLevelConfigNameListBytes(int index) {
-        return levelConfigNameList_.getByteString(index);
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param index The index to set the value at.
-       * @param value The levelConfigNameList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelConfigNameList(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureLevelConfigNameListIsMutable();
-        levelConfigNameList_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param value The levelConfigNameList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addLevelConfigNameList(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureLevelConfigNameListIsMutable();
-        levelConfigNameList_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param values The levelConfigNameList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllLevelConfigNameList(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureLevelConfigNameListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, levelConfigNameList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelConfigNameList() {
-        levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string level_config_name_list = 1;</code>
-       * @param value The bytes of the levelConfigNameList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addLevelConfigNameListBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        ensureLevelConfigNameListIsMutable();
-        levelConfigNameList_.add(value);
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> mapLayerInfoBuilder_;
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        * @return Whether the mapLayerInfo field is set.
        */
       public boolean hasMapLayerInfo() {
         return mapLayerInfoBuilder_ != null || mapLayerInfo_ != null;
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        * @return The mapLayerInfo.
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
@@ -829,7 +915,11 @@ public final class SceneDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public Builder setMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
         if (mapLayerInfoBuilder_ == null) {
@@ -845,7 +935,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public Builder setMapLayerInfo(
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder builderForValue) {
@@ -859,7 +953,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public Builder mergeMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
         if (mapLayerInfoBuilder_ == null) {
@@ -877,7 +975,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public Builder clearMapLayerInfo() {
         if (mapLayerInfoBuilder_ == null) {
@@ -891,7 +993,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder getMapLayerInfoBuilder() {
         
@@ -899,7 +1005,11 @@ public final class SceneDataNotifyOuterClass {
         return getMapLayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
         if (mapLayerInfoBuilder_ != null) {
@@ -910,7 +1020,11 @@ public final class SceneDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.MapLayerInfo map_layer_info = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.MapLayerInfo map_layer_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> 
@@ -926,6 +1040,307 @@ public final class SceneDataNotifyOuterClass {
         return mapLayerInfoBuilder_;
       }
 
+      private com.google.protobuf.LazyStringList levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureLevelConfigNameListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          levelConfigNameList_ = new com.google.protobuf.LazyStringArrayList(levelConfigNameList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @return A list containing the levelConfigNameList.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getLevelConfigNameListList() {
+        return levelConfigNameList_.getUnmodifiableView();
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @return The count of levelConfigNameList.
+       */
+      public int getLevelConfigNameListCount() {
+        return levelConfigNameList_.size();
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The levelConfigNameList at the given index.
+       */
+      public java.lang.String getLevelConfigNameList(int index) {
+        return levelConfigNameList_.get(index);
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the levelConfigNameList at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getLevelConfigNameListBytes(int index) {
+        return levelConfigNameList_.getByteString(index);
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The levelConfigNameList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelConfigNameList(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureLevelConfigNameListIsMutable();
+        levelConfigNameList_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param value The levelConfigNameList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addLevelConfigNameList(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureLevelConfigNameListIsMutable();
+        levelConfigNameList_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param values The levelConfigNameList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllLevelConfigNameList(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureLevelConfigNameListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, levelConfigNameList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelConfigNameList() {
+        levelConfigNameList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>repeated string level_config_name_list = 2;</code>
+       * @param value The bytes of the levelConfigNameList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addLevelConfigNameListBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureLevelConfigNameListIsMutable();
+        levelConfigNameList_.add(value);
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB iNNNIOKKFGH_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder> iNNNIOKKFGHBuilder_;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       * @return Whether the iNNNIOKKFGH field is set.
+       */
+      public boolean hasINNNIOKKFGH() {
+        return iNNNIOKKFGHBuilder_ != null || iNNNIOKKFGH_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       * @return The iNNNIOKKFGH.
+       */
+      public emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB getINNNIOKKFGH() {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          return iNNNIOKKFGH_ == null ? emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.getDefaultInstance() : iNNNIOKKFGH_;
+        } else {
+          return iNNNIOKKFGHBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public Builder setINNNIOKKFGH(emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB value) {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          iNNNIOKKFGH_ = value;
+          onChanged();
+        } else {
+          iNNNIOKKFGHBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public Builder setINNNIOKKFGH(
+          emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder builderForValue) {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          iNNNIOKKFGH_ = builderForValue.build();
+          onChanged();
+        } else {
+          iNNNIOKKFGHBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public Builder mergeINNNIOKKFGH(emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB value) {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          if (iNNNIOKKFGH_ != null) {
+            iNNNIOKKFGH_ =
+              emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.newBuilder(iNNNIOKKFGH_).mergeFrom(value).buildPartial();
+          } else {
+            iNNNIOKKFGH_ = value;
+          }
+          onChanged();
+        } else {
+          iNNNIOKKFGHBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public Builder clearINNNIOKKFGH() {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          iNNNIOKKFGH_ = null;
+          onChanged();
+        } else {
+          iNNNIOKKFGH_ = null;
+          iNNNIOKKFGHBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder getINNNIOKKFGHBuilder() {
+        
+        onChanged();
+        return getINNNIOKKFGHFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      public emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder getINNNIOKKFGHOrBuilder() {
+        if (iNNNIOKKFGHBuilder_ != null) {
+          return iNNNIOKKFGHBuilder_.getMessageOrBuilder();
+        } else {
+          return iNNNIOKKFGH_ == null ?
+              emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.getDefaultInstance() : iNNNIOKKFGH_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.HKNMBDNPDNB INNNIOKKFGH = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder> 
+          getINNNIOKKFGHFieldBuilder() {
+        if (iNNNIOKKFGHBuilder_ == null) {
+          iNNNIOKKFGHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNB.Builder, emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.HKNMBDNPDNBOrBuilder>(
+                  getINNNIOKKFGH(),
+                  getParentForChildren(),
+                  isClean());
+          iNNNIOKKFGH_ = null;
+        }
+        return iNNNIOKKFGHBuilder_;
+      }
+
       private com.google.protobuf.Internal.IntList sceneTagIdList_ = emptyIntList();
       private void ensureSceneTagIdListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
@@ -934,7 +1349,11 @@ public final class SceneDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return A list containing the sceneTagIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -943,14 +1362,22 @@ public final class SceneDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(sceneTagIdList_) : sceneTagIdList_;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return The count of sceneTagIdList.
        */
       public int getSceneTagIdListCount() {
         return sceneTagIdList_.size();
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The sceneTagIdList at the given index.
        */
@@ -958,7 +1385,11 @@ public final class SceneDataNotifyOuterClass {
         return sceneTagIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The sceneTagIdList to set.
        * @return This builder for chaining.
@@ -971,7 +1402,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param value The sceneTagIdList to add.
        * @return This builder for chaining.
        */
@@ -982,7 +1417,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param values The sceneTagIdList to add.
        * @return This builder for chaining.
        */
@@ -995,7 +1434,11 @@ public final class SceneDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 4;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTagIdList() {
@@ -1071,15 +1514,18 @@ public final class SceneDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneDataNotify.proto\032\022MapLayerInfo.pr" +
-      "oto\"s\n\017SceneDataNotify\022\036\n\026level_config_n" +
-      "ame_list\030\001 \003(\t\022%\n\016map_layer_info\030\n \001(\0132\r" +
-      ".MapLayerInfo\022\031\n\021scene_tag_id_list\030\004 \003(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\025SceneDataNotify.proto\032\021HKNMBDNPDNB.pro" +
+      "to\032\022MapLayerInfo.proto\"\226\001\n\017SceneDataNoti" +
+      "fy\022%\n\016map_layer_info\030\007 \001(\0132\r.MapLayerInf" +
+      "o\022\036\n\026level_config_name_list\030\002 \003(\t\022!\n\013INN" +
+      "NIOKKFGH\030\010 \001(\0132\014.HKNMBDNPDNB\022\031\n\021scene_ta" +
+      "g_id_list\030\n \003(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneDataNotify_descriptor =
@@ -1087,7 +1533,8 @@ public final class SceneDataNotifyOuterClass {
     internal_static_SceneDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneDataNotify_descriptor,
-        new java.lang.String[] { "LevelConfigNameList", "MapLayerInfo", "SceneTagIdList", });
+        new java.lang.String[] { "MapLayerInfo", "LevelConfigNameList", "INNNIOKKFGH", "SceneTagIdList", });
+    emu.grasscutter.net.proto.HKNMBDNPDNBOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor();
   }
 

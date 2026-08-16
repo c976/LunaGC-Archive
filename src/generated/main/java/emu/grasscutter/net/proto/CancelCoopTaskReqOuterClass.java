@@ -19,15 +19,14 @@ public final class CancelCoopTaskReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 chapter_id = 9;</code>
+     * <code>uint32 chapter_id = 15;</code>
      * @return The chapterId.
      */
     int getChapterId();
   }
   /**
    * <pre>
-   * CmdId: 27925
-   * Obf: EGFKMLLMKGB
+   * CmdId: 20225
    * </pre>
    *
    * Protobuf type {@code CancelCoopTaskReq}
@@ -74,7 +73,7 @@ public final class CancelCoopTaskReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 120: {
 
               chapterId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class CancelCoopTaskReqOuterClass {
               emu.grasscutter.net.proto.CancelCoopTaskReqOuterClass.CancelCoopTaskReq.class, emu.grasscutter.net.proto.CancelCoopTaskReqOuterClass.CancelCoopTaskReq.Builder.class);
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 9;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 15;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 9;</code>
+     * <code>uint32 chapter_id = 15;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class CancelCoopTaskReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (chapterId_ != 0) {
-        output.writeUInt32(9, chapterId_);
+        output.writeUInt32(15, chapterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class CancelCoopTaskReqOuterClass {
       size = 0;
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, chapterId_);
+          .computeUInt32Size(15, chapterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class CancelCoopTaskReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27925
-     * Obf: EGFKMLLMKGB
+     * CmdId: 20225
      * </pre>
      *
      * Protobuf type {@code CancelCoopTaskReq}
@@ -431,7 +429,7 @@ public final class CancelCoopTaskReqOuterClass {
 
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 9;</code>
+       * <code>uint32 chapter_id = 15;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class CancelCoopTaskReqOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 9;</code>
+       * <code>uint32 chapter_id = 15;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class CancelCoopTaskReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 9;</code>
+       * <code>uint32 chapter_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -527,7 +525,7 @@ public final class CancelCoopTaskReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CancelCoopTaskReq.proto\"\'\n\021CancelCoopT" +
-      "askReq\022\022\n\nchapter_id\030\t \001(\rB\033\n\031emu.grassc" +
+      "askReq\022\022\n\nchapter_id\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

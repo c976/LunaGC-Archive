@@ -19,13 +19,13 @@ public final class DeathZoneInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 id = 10;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     int getId();
@@ -75,12 +75,12 @@ public final class DeathZoneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 80: {
+            case 32: {
 
               id_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class DeathZoneInfoOuterClass {
               emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.class, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class DeathZoneInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int ID_FIELD_NUMBER = 10;
+    public static final int ID_FIELD_NUMBER = 4;
     private int id_;
     /**
-     * <code>uint32 id = 10;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class DeathZoneInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(6, isOpen_);
+        output.writeBool(1, isOpen_);
       }
       if (id_ != 0) {
-        output.writeUInt32(10, id_);
+        output.writeUInt32(4, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class DeathZoneInfoOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isOpen_);
+          .computeBoolSize(1, isOpen_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, id_);
+          .computeUInt32Size(4, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class DeathZoneInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class DeathZoneInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class DeathZoneInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -492,7 +492,7 @@ public final class DeathZoneInfoOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 4;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class DeathZoneInfoOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 4;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class DeathZoneInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 10;</code>
+       * <code>uint32 id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -588,7 +588,7 @@ public final class DeathZoneInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023DeathZoneInfo.proto\",\n\rDeathZoneInfo\022\017" +
-      "\n\007is_open\030\006 \001(\010\022\n\n\002id\030\n \001(\rB\033\n\031emu.grass" +
+      "\n\007is_open\030\001 \001(\010\022\n\n\002id\030\004 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

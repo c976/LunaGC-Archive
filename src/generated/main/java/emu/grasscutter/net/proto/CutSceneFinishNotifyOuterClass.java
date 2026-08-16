@@ -19,12 +19,20 @@ public final class CutSceneFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cutscene_id = 2;</code>
-     * @return The cutsceneId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OCFDACNGKFG = 1;</code>
+     * @return The oCFDACNGKFG.
      */
-    int getCutsceneId();
+    int getOCFDACNGKFG();
   }
   /**
+   * <pre>
+   * CmdId: 8891
+   * </pre>
+   *
    * Protobuf type {@code CutSceneFinishNotify}
    */
   public static final class CutSceneFinishNotify extends
@@ -69,9 +77,9 @@ public final class CutSceneFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              cutsceneId_ = input.readUInt32();
+              oCFDACNGKFG_ = input.readUInt32();
               break;
             }
             default: {
@@ -106,15 +114,19 @@ public final class CutSceneFinishNotifyOuterClass {
               emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify.class, emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify.Builder.class);
     }
 
-    public static final int CUTSCENE_ID_FIELD_NUMBER = 2;
-    private int cutsceneId_;
+    public static final int OCFDACNGKFG_FIELD_NUMBER = 1;
+    private int oCFDACNGKFG_;
     /**
-     * <code>uint32 cutscene_id = 2;</code>
-     * @return The cutsceneId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OCFDACNGKFG = 1;</code>
+     * @return The oCFDACNGKFG.
      */
     @java.lang.Override
-    public int getCutsceneId() {
-      return cutsceneId_;
+    public int getOCFDACNGKFG() {
+      return oCFDACNGKFG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +143,8 @@ public final class CutSceneFinishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cutsceneId_ != 0) {
-        output.writeUInt32(2, cutsceneId_);
+      if (oCFDACNGKFG_ != 0) {
+        output.writeUInt32(1, oCFDACNGKFG_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +155,9 @@ public final class CutSceneFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cutsceneId_ != 0) {
+      if (oCFDACNGKFG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cutsceneId_);
+          .computeUInt32Size(1, oCFDACNGKFG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +174,8 @@ public final class CutSceneFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify other = (emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify) obj;
 
-      if (getCutsceneId()
-          != other.getCutsceneId()) return false;
+      if (getOCFDACNGKFG()
+          != other.getOCFDACNGKFG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +187,8 @@ public final class CutSceneFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUTSCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCutsceneId();
+      hash = (37 * hash) + OCFDACNGKFG_FIELD_NUMBER;
+      hash = (53 * hash) + getOCFDACNGKFG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -273,6 +285,10 @@ public final class CutSceneFinishNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8891
+     * </pre>
+     *
      * Protobuf type {@code CutSceneFinishNotify}
      */
     public static final class Builder extends
@@ -310,7 +326,7 @@ public final class CutSceneFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cutsceneId_ = 0;
+        oCFDACNGKFG_ = 0;
 
         return this;
       }
@@ -338,7 +354,7 @@ public final class CutSceneFinishNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify buildPartial() {
         emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify result = new emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify(this);
-        result.cutsceneId_ = cutsceneId_;
+        result.oCFDACNGKFG_ = oCFDACNGKFG_;
         onBuilt();
         return result;
       }
@@ -387,8 +403,8 @@ public final class CutSceneFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify other) {
         if (other == emu.grasscutter.net.proto.CutSceneFinishNotifyOuterClass.CutSceneFinishNotify.getDefaultInstance()) return this;
-        if (other.getCutsceneId() != 0) {
-          setCutsceneId(other.getCutsceneId());
+        if (other.getOCFDACNGKFG() != 0) {
+          setOCFDACNGKFG(other.getOCFDACNGKFG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,33 +435,45 @@ public final class CutSceneFinishNotifyOuterClass {
         return this;
       }
 
-      private int cutsceneId_ ;
+      private int oCFDACNGKFG_ ;
       /**
-       * <code>uint32 cutscene_id = 2;</code>
-       * @return The cutsceneId.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCFDACNGKFG = 1;</code>
+       * @return The oCFDACNGKFG.
        */
       @java.lang.Override
-      public int getCutsceneId() {
-        return cutsceneId_;
+      public int getOCFDACNGKFG() {
+        return oCFDACNGKFG_;
       }
       /**
-       * <code>uint32 cutscene_id = 2;</code>
-       * @param value The cutsceneId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCFDACNGKFG = 1;</code>
+       * @param value The oCFDACNGKFG to set.
        * @return This builder for chaining.
        */
-      public Builder setCutsceneId(int value) {
+      public Builder setOCFDACNGKFG(int value) {
         
-        cutsceneId_ = value;
+        oCFDACNGKFG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cutscene_id = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCFDACNGKFG = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCutsceneId() {
+      public Builder clearOCFDACNGKFG() {
         
-        cutsceneId_ = 0;
+        oCFDACNGKFG_ = 0;
         onChanged();
         return this;
       }
@@ -517,7 +545,7 @@ public final class CutSceneFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032CutSceneFinishNotify.proto\"+\n\024CutScene" +
-      "FinishNotify\022\023\n\013cutscene_id\030\002 \001(\rB\033\n\031emu" +
+      "FinishNotify\022\023\n\013OCFDACNGKFG\030\001 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -529,7 +557,7 @@ public final class CutSceneFinishNotifyOuterClass {
     internal_static_CutSceneFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CutSceneFinishNotify_descriptor,
-        new java.lang.String[] { "CutsceneId", });
+        new java.lang.String[] { "OCFDACNGKFG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

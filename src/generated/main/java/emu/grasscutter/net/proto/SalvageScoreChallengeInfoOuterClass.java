@@ -19,16 +19,24 @@ public final class SalvageScoreChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 max_score = 7;</code>
-     * @return The maxScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 11;</code>
+     * @return The dPPGDBBLCCM.
      */
-    int getMaxScore();
+    int getDPPGDBBLCCM();
 
     /**
-     * <code>uint32 salvage_challenge_id = 11;</code>
-     * @return The salvageChallengeId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 KLAONLLBFCH = 14;</code>
+     * @return The kLAONLLBFCH.
      */
-    int getSalvageChallengeId();
+    int getKLAONLLBFCH();
   }
   /**
    * Protobuf type {@code SalvageScoreChallengeInfo}
@@ -75,14 +83,14 @@ public final class SalvageScoreChallengeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              maxScore_ = input.readUInt32();
-              break;
-            }
             case 88: {
 
-              salvageChallengeId_ = input.readUInt32();
+              dPPGDBBLCCM_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              kLAONLLBFCH_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +125,34 @@ public final class SalvageScoreChallengeInfoOuterClass {
               emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.class, emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.Builder.class);
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 7;
-    private int maxScore_;
+    public static final int DPPGDBBLCCM_FIELD_NUMBER = 11;
+    private int dPPGDBBLCCM_;
     /**
-     * <code>uint32 max_score = 7;</code>
-     * @return The maxScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 DPPGDBBLCCM = 11;</code>
+     * @return The dPPGDBBLCCM.
      */
     @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
+    public int getDPPGDBBLCCM() {
+      return dPPGDBBLCCM_;
     }
 
-    public static final int SALVAGE_CHALLENGE_ID_FIELD_NUMBER = 11;
-    private int salvageChallengeId_;
+    public static final int KLAONLLBFCH_FIELD_NUMBER = 14;
+    private int kLAONLLBFCH_;
     /**
-     * <code>uint32 salvage_challenge_id = 11;</code>
-     * @return The salvageChallengeId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 KLAONLLBFCH = 14;</code>
+     * @return The kLAONLLBFCH.
      */
     @java.lang.Override
-    public int getSalvageChallengeId() {
-      return salvageChallengeId_;
+    public int getKLAONLLBFCH() {
+      return kLAONLLBFCH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +169,11 @@ public final class SalvageScoreChallengeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (maxScore_ != 0) {
-        output.writeUInt32(7, maxScore_);
+      if (dPPGDBBLCCM_ != 0) {
+        output.writeUInt32(11, dPPGDBBLCCM_);
       }
-      if (salvageChallengeId_ != 0) {
-        output.writeUInt32(11, salvageChallengeId_);
+      if (kLAONLLBFCH_ != 0) {
+        output.writeUInt32(14, kLAONLLBFCH_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +184,13 @@ public final class SalvageScoreChallengeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (maxScore_ != 0) {
+      if (dPPGDBBLCCM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxScore_);
+          .computeUInt32Size(11, dPPGDBBLCCM_);
       }
-      if (salvageChallengeId_ != 0) {
+      if (kLAONLLBFCH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, salvageChallengeId_);
+          .computeUInt32Size(14, kLAONLLBFCH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +207,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
       }
       emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo other = (emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo) obj;
 
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
-      if (getSalvageChallengeId()
-          != other.getSalvageChallengeId()) return false;
+      if (getDPPGDBBLCCM()
+          != other.getDPPGDBBLCCM()) return false;
+      if (getKLAONLLBFCH()
+          != other.getKLAONLLBFCH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +222,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
-      hash = (37 * hash) + SALVAGE_CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSalvageChallengeId();
+      hash = (37 * hash) + DPPGDBBLCCM_FIELD_NUMBER;
+      hash = (53 * hash) + getDPPGDBBLCCM();
+      hash = (37 * hash) + KLAONLLBFCH_FIELD_NUMBER;
+      hash = (53 * hash) + getKLAONLLBFCH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +359,9 @@ public final class SalvageScoreChallengeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        maxScore_ = 0;
+        dPPGDBBLCCM_ = 0;
 
-        salvageChallengeId_ = 0;
+        kLAONLLBFCH_ = 0;
 
         return this;
       }
@@ -373,8 +389,8 @@ public final class SalvageScoreChallengeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo buildPartial() {
         emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo result = new emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo(this);
-        result.maxScore_ = maxScore_;
-        result.salvageChallengeId_ = salvageChallengeId_;
+        result.dPPGDBBLCCM_ = dPPGDBBLCCM_;
+        result.kLAONLLBFCH_ = kLAONLLBFCH_;
         onBuilt();
         return result;
       }
@@ -423,11 +439,11 @@ public final class SalvageScoreChallengeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo other) {
         if (other == emu.grasscutter.net.proto.SalvageScoreChallengeInfoOuterClass.SalvageScoreChallengeInfo.getDefaultInstance()) return this;
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
+        if (other.getDPPGDBBLCCM() != 0) {
+          setDPPGDBBLCCM(other.getDPPGDBBLCCM());
         }
-        if (other.getSalvageChallengeId() != 0) {
-          setSalvageChallengeId(other.getSalvageChallengeId());
+        if (other.getKLAONLLBFCH() != 0) {
+          setKLAONLLBFCH(other.getKLAONLLBFCH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +474,88 @@ public final class SalvageScoreChallengeInfoOuterClass {
         return this;
       }
 
-      private int maxScore_ ;
+      private int dPPGDBBLCCM_ ;
       /**
-       * <code>uint32 max_score = 7;</code>
-       * @return The maxScore.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 11;</code>
+       * @return The dPPGDBBLCCM.
        */
       @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
+      public int getDPPGDBBLCCM() {
+        return dPPGDBBLCCM_;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
-       * @param value The maxScore to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 11;</code>
+       * @param value The dPPGDBBLCCM to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxScore(int value) {
+      public Builder setDPPGDBBLCCM(int value) {
         
-        maxScore_ = value;
+        dPPGDBBLCCM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 DPPGDBBLCCM = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxScore() {
+      public Builder clearDPPGDBBLCCM() {
         
-        maxScore_ = 0;
+        dPPGDBBLCCM_ = 0;
         onChanged();
         return this;
       }
 
-      private int salvageChallengeId_ ;
+      private int kLAONLLBFCH_ ;
       /**
-       * <code>uint32 salvage_challenge_id = 11;</code>
-       * @return The salvageChallengeId.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KLAONLLBFCH = 14;</code>
+       * @return The kLAONLLBFCH.
        */
       @java.lang.Override
-      public int getSalvageChallengeId() {
-        return salvageChallengeId_;
+      public int getKLAONLLBFCH() {
+        return kLAONLLBFCH_;
       }
       /**
-       * <code>uint32 salvage_challenge_id = 11;</code>
-       * @param value The salvageChallengeId to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KLAONLLBFCH = 14;</code>
+       * @param value The kLAONLLBFCH to set.
        * @return This builder for chaining.
        */
-      public Builder setSalvageChallengeId(int value) {
+      public Builder setKLAONLLBFCH(int value) {
         
-        salvageChallengeId_ = value;
+        kLAONLLBFCH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 salvage_challenge_id = 11;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KLAONLLBFCH = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSalvageChallengeId() {
+      public Builder clearKLAONLLBFCH() {
         
-        salvageChallengeId_ = 0;
+        kLAONLLBFCH_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +626,10 @@ public final class SalvageScoreChallengeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037SalvageScoreChallengeInfo.proto\"L\n\031Sal" +
-      "vageScoreChallengeInfo\022\021\n\tmax_score\030\007 \001(" +
-      "\r\022\034\n\024salvage_challenge_id\030\013 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\037SalvageScoreChallengeInfo.proto\"E\n\031Sal" +
+      "vageScoreChallengeInfo\022\023\n\013DPPGDBBLCCM\030\013 " +
+      "\001(\r\022\023\n\013KLAONLLBFCH\030\016 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +640,7 @@ public final class SalvageScoreChallengeInfoOuterClass {
     internal_static_SalvageScoreChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvageScoreChallengeInfo_descriptor,
-        new java.lang.String[] { "MaxScore", "SalvageChallengeId", });
+        new java.lang.String[] { "DPPGDBBLCCM", "KLAONLLBFCH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

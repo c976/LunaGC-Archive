@@ -19,22 +19,26 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DKPANNIJPEN = 8;</code>
-     * @return The dKPANNIJPEN.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GIKBJNNFOFE = 4;</code>
+     * @return The gIKBJNNFOFE.
      */
-    int getDKPANNIJPEN();
+    int getGIKBJNNFOFE();
 
     /**
-     * <code>uint32 LAJGLFDJOFN = 1;</code>
-     * @return The lAJGLFDJOFN.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 MEEFFBOOMON = 6;</code>
+     * @return The mEEFFBOOMON.
      */
-    int getLAJGLFDJOFN();
+    int getMEEFFBOOMON();
   }
   /**
-   * <pre>
-   * Obf: HEKOMNEEHCO
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryCoinCollectInfo}
    */
   public static final class SceneGalleryCoinCollectInfo extends
@@ -79,14 +83,14 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              lAJGLFDJOFN_ = input.readUInt32();
+              gIKBJNNFOFE_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 48: {
 
-              dKPANNIJPEN_ = input.readUInt32();
+              mEEFFBOOMON_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +125,34 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.class, emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.Builder.class);
     }
 
-    public static final int DKPANNIJPEN_FIELD_NUMBER = 8;
-    private int dKPANNIJPEN_;
+    public static final int GIKBJNNFOFE_FIELD_NUMBER = 4;
+    private int gIKBJNNFOFE_;
     /**
-     * <code>uint32 DKPANNIJPEN = 8;</code>
-     * @return The dKPANNIJPEN.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GIKBJNNFOFE = 4;</code>
+     * @return The gIKBJNNFOFE.
      */
     @java.lang.Override
-    public int getDKPANNIJPEN() {
-      return dKPANNIJPEN_;
+    public int getGIKBJNNFOFE() {
+      return gIKBJNNFOFE_;
     }
 
-    public static final int LAJGLFDJOFN_FIELD_NUMBER = 1;
-    private int lAJGLFDJOFN_;
+    public static final int MEEFFBOOMON_FIELD_NUMBER = 6;
+    private int mEEFFBOOMON_;
     /**
-     * <code>uint32 LAJGLFDJOFN = 1;</code>
-     * @return The lAJGLFDJOFN.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 MEEFFBOOMON = 6;</code>
+     * @return The mEEFFBOOMON.
      */
     @java.lang.Override
-    public int getLAJGLFDJOFN() {
-      return lAJGLFDJOFN_;
+    public int getMEEFFBOOMON() {
+      return mEEFFBOOMON_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +169,11 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lAJGLFDJOFN_ != 0) {
-        output.writeUInt32(1, lAJGLFDJOFN_);
+      if (gIKBJNNFOFE_ != 0) {
+        output.writeUInt32(4, gIKBJNNFOFE_);
       }
-      if (dKPANNIJPEN_ != 0) {
-        output.writeUInt32(8, dKPANNIJPEN_);
+      if (mEEFFBOOMON_ != 0) {
+        output.writeUInt32(6, mEEFFBOOMON_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +184,13 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lAJGLFDJOFN_ != 0) {
+      if (gIKBJNNFOFE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, lAJGLFDJOFN_);
+          .computeUInt32Size(4, gIKBJNNFOFE_);
       }
-      if (dKPANNIJPEN_ != 0) {
+      if (mEEFFBOOMON_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, dKPANNIJPEN_);
+          .computeUInt32Size(6, mEEFFBOOMON_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +207,10 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo other = (emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo) obj;
 
-      if (getDKPANNIJPEN()
-          != other.getDKPANNIJPEN()) return false;
-      if (getLAJGLFDJOFN()
-          != other.getLAJGLFDJOFN()) return false;
+      if (getGIKBJNNFOFE()
+          != other.getGIKBJNNFOFE()) return false;
+      if (getMEEFFBOOMON()
+          != other.getMEEFFBOOMON()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +222,10 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DKPANNIJPEN_FIELD_NUMBER;
-      hash = (53 * hash) + getDKPANNIJPEN();
-      hash = (37 * hash) + LAJGLFDJOFN_FIELD_NUMBER;
-      hash = (53 * hash) + getLAJGLFDJOFN();
+      hash = (37 * hash) + GIKBJNNFOFE_FIELD_NUMBER;
+      hash = (53 * hash) + getGIKBJNNFOFE();
+      hash = (37 * hash) + MEEFFBOOMON_FIELD_NUMBER;
+      hash = (53 * hash) + getMEEFFBOOMON();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +322,6 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HEKOMNEEHCO
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryCoinCollectInfo}
      */
     public static final class Builder extends
@@ -351,9 +359,9 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dKPANNIJPEN_ = 0;
+        gIKBJNNFOFE_ = 0;
 
-        lAJGLFDJOFN_ = 0;
+        mEEFFBOOMON_ = 0;
 
         return this;
       }
@@ -381,8 +389,8 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo result = new emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo(this);
-        result.dKPANNIJPEN_ = dKPANNIJPEN_;
-        result.lAJGLFDJOFN_ = lAJGLFDJOFN_;
+        result.gIKBJNNFOFE_ = gIKBJNNFOFE_;
+        result.mEEFFBOOMON_ = mEEFFBOOMON_;
         onBuilt();
         return result;
       }
@@ -431,11 +439,11 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.getDefaultInstance()) return this;
-        if (other.getDKPANNIJPEN() != 0) {
-          setDKPANNIJPEN(other.getDKPANNIJPEN());
+        if (other.getGIKBJNNFOFE() != 0) {
+          setGIKBJNNFOFE(other.getGIKBJNNFOFE());
         }
-        if (other.getLAJGLFDJOFN() != 0) {
-          setLAJGLFDJOFN(other.getLAJGLFDJOFN());
+        if (other.getMEEFFBOOMON() != 0) {
+          setMEEFFBOOMON(other.getMEEFFBOOMON());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +474,88 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
         return this;
       }
 
-      private int dKPANNIJPEN_ ;
+      private int gIKBJNNFOFE_ ;
       /**
-       * <code>uint32 DKPANNIJPEN = 8;</code>
-       * @return The dKPANNIJPEN.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GIKBJNNFOFE = 4;</code>
+       * @return The gIKBJNNFOFE.
        */
       @java.lang.Override
-      public int getDKPANNIJPEN() {
-        return dKPANNIJPEN_;
+      public int getGIKBJNNFOFE() {
+        return gIKBJNNFOFE_;
       }
       /**
-       * <code>uint32 DKPANNIJPEN = 8;</code>
-       * @param value The dKPANNIJPEN to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GIKBJNNFOFE = 4;</code>
+       * @param value The gIKBJNNFOFE to set.
        * @return This builder for chaining.
        */
-      public Builder setDKPANNIJPEN(int value) {
+      public Builder setGIKBJNNFOFE(int value) {
         
-        dKPANNIJPEN_ = value;
+        gIKBJNNFOFE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DKPANNIJPEN = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GIKBJNNFOFE = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDKPANNIJPEN() {
+      public Builder clearGIKBJNNFOFE() {
         
-        dKPANNIJPEN_ = 0;
+        gIKBJNNFOFE_ = 0;
         onChanged();
         return this;
       }
 
-      private int lAJGLFDJOFN_ ;
+      private int mEEFFBOOMON_ ;
       /**
-       * <code>uint32 LAJGLFDJOFN = 1;</code>
-       * @return The lAJGLFDJOFN.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 MEEFFBOOMON = 6;</code>
+       * @return The mEEFFBOOMON.
        */
       @java.lang.Override
-      public int getLAJGLFDJOFN() {
-        return lAJGLFDJOFN_;
+      public int getMEEFFBOOMON() {
+        return mEEFFBOOMON_;
       }
       /**
-       * <code>uint32 LAJGLFDJOFN = 1;</code>
-       * @param value The lAJGLFDJOFN to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 MEEFFBOOMON = 6;</code>
+       * @param value The mEEFFBOOMON to set.
        * @return This builder for chaining.
        */
-      public Builder setLAJGLFDJOFN(int value) {
+      public Builder setMEEFFBOOMON(int value) {
         
-        lAJGLFDJOFN_ = value;
+        mEEFFBOOMON_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LAJGLFDJOFN = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 MEEFFBOOMON = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLAJGLFDJOFN() {
+      public Builder clearMEEFFBOOMON() {
         
-        lAJGLFDJOFN_ = 0;
+        mEEFFBOOMON_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +627,8 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SceneGalleryCoinCollectInfo.proto\"G\n\033S" +
-      "ceneGalleryCoinCollectInfo\022\023\n\013DKPANNIJPE" +
-      "N\030\010 \001(\r\022\023\n\013LAJGLFDJOFN\030\001 \001(\rB\033\n\031emu.gras" +
+      "ceneGalleryCoinCollectInfo\022\023\n\013GIKBJNNFOF" +
+      "E\030\004 \001(\r\022\023\n\013MEEFFBOOMON\030\006 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +640,7 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
     internal_static_SceneGalleryCoinCollectInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryCoinCollectInfo_descriptor,
-        new java.lang.String[] { "DKPANNIJPEN", "LAJGLFDJOFN", });
+        new java.lang.String[] { "GIKBJNNFOFE", "MEEFFBOOMON", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

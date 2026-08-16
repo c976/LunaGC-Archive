@@ -35,8 +35,7 @@ public final class GroupLinkChangeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5992
-   * Obf: EFKGBILBKKB
+   * CmdId: 3433
    * </pre>
    *
    * Protobuf type {@code GroupLinkChangeNotify}
@@ -316,8 +315,7 @@ public final class GroupLinkChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5992
-     * Obf: EFKGBILBKKB
+     * CmdId: 3433
      * </pre>
      *
      * Protobuf type {@code GroupLinkChangeNotify}

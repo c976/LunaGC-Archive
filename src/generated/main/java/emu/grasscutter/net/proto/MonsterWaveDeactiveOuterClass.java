@@ -19,16 +19,16 @@ public final class MonsterWaveDeactiveOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GLJDIOCLDMP = 4;</code>
-     * @return The gLJDIOCLDMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_EANJMBBNFBK = 14;</code>
+     * @return The unk37EANJMBBNFBK.
      */
-    int getGLJDIOCLDMP();
+    int getUnk37EANJMBBNFBK();
   }
   /**
-   * <pre>
-   * Obf: LAJAHGJCLCJ
-   * </pre>
-   *
    * Protobuf type {@code MonsterWaveDeactive}
    */
   public static final class MonsterWaveDeactive extends
@@ -73,9 +73,9 @@ public final class MonsterWaveDeactiveOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 112: {
 
-              gLJDIOCLDMP_ = input.readUInt32();
+              unk37EANJMBBNFBK_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +110,19 @@ public final class MonsterWaveDeactiveOuterClass {
               emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive.class, emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive.Builder.class);
     }
 
-    public static final int GLJDIOCLDMP_FIELD_NUMBER = 4;
-    private int gLJDIOCLDMP_;
+    public static final int UNK_37_EANJMBBNFBK_FIELD_NUMBER = 14;
+    private int unk37EANJMBBNFBK_;
     /**
-     * <code>uint32 GLJDIOCLDMP = 4;</code>
-     * @return The gLJDIOCLDMP.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_EANJMBBNFBK = 14;</code>
+     * @return The unk37EANJMBBNFBK.
      */
     @java.lang.Override
-    public int getGLJDIOCLDMP() {
-      return gLJDIOCLDMP_;
+    public int getUnk37EANJMBBNFBK() {
+      return unk37EANJMBBNFBK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +139,8 @@ public final class MonsterWaveDeactiveOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gLJDIOCLDMP_ != 0) {
-        output.writeUInt32(4, gLJDIOCLDMP_);
+      if (unk37EANJMBBNFBK_ != 0) {
+        output.writeUInt32(14, unk37EANJMBBNFBK_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +151,9 @@ public final class MonsterWaveDeactiveOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gLJDIOCLDMP_ != 0) {
+      if (unk37EANJMBBNFBK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, gLJDIOCLDMP_);
+          .computeUInt32Size(14, unk37EANJMBBNFBK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +170,8 @@ public final class MonsterWaveDeactiveOuterClass {
       }
       emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive other = (emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive) obj;
 
-      if (getGLJDIOCLDMP()
-          != other.getGLJDIOCLDMP()) return false;
+      if (getUnk37EANJMBBNFBK()
+          != other.getUnk37EANJMBBNFBK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +183,8 @@ public final class MonsterWaveDeactiveOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GLJDIOCLDMP_FIELD_NUMBER;
-      hash = (53 * hash) + getGLJDIOCLDMP();
+      hash = (37 * hash) + UNK_37_EANJMBBNFBK_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk37EANJMBBNFBK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -277,10 +281,6 @@ public final class MonsterWaveDeactiveOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LAJAHGJCLCJ
-     * </pre>
-     *
      * Protobuf type {@code MonsterWaveDeactive}
      */
     public static final class Builder extends
@@ -318,7 +318,7 @@ public final class MonsterWaveDeactiveOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gLJDIOCLDMP_ = 0;
+        unk37EANJMBBNFBK_ = 0;
 
         return this;
       }
@@ -346,7 +346,7 @@ public final class MonsterWaveDeactiveOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive buildPartial() {
         emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive result = new emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive(this);
-        result.gLJDIOCLDMP_ = gLJDIOCLDMP_;
+        result.unk37EANJMBBNFBK_ = unk37EANJMBBNFBK_;
         onBuilt();
         return result;
       }
@@ -395,8 +395,8 @@ public final class MonsterWaveDeactiveOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive other) {
         if (other == emu.grasscutter.net.proto.MonsterWaveDeactiveOuterClass.MonsterWaveDeactive.getDefaultInstance()) return this;
-        if (other.getGLJDIOCLDMP() != 0) {
-          setGLJDIOCLDMP(other.getGLJDIOCLDMP());
+        if (other.getUnk37EANJMBBNFBK() != 0) {
+          setUnk37EANJMBBNFBK(other.getUnk37EANJMBBNFBK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +427,45 @@ public final class MonsterWaveDeactiveOuterClass {
         return this;
       }
 
-      private int gLJDIOCLDMP_ ;
+      private int unk37EANJMBBNFBK_ ;
       /**
-       * <code>uint32 GLJDIOCLDMP = 4;</code>
-       * @return The gLJDIOCLDMP.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_EANJMBBNFBK = 14;</code>
+       * @return The unk37EANJMBBNFBK.
        */
       @java.lang.Override
-      public int getGLJDIOCLDMP() {
-        return gLJDIOCLDMP_;
+      public int getUnk37EANJMBBNFBK() {
+        return unk37EANJMBBNFBK_;
       }
       /**
-       * <code>uint32 GLJDIOCLDMP = 4;</code>
-       * @param value The gLJDIOCLDMP to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_EANJMBBNFBK = 14;</code>
+       * @param value The unk37EANJMBBNFBK to set.
        * @return This builder for chaining.
        */
-      public Builder setGLJDIOCLDMP(int value) {
+      public Builder setUnk37EANJMBBNFBK(int value) {
         
-        gLJDIOCLDMP_ = value;
+        unk37EANJMBBNFBK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GLJDIOCLDMP = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_EANJMBBNFBK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGLJDIOCLDMP() {
+      public Builder clearUnk37EANJMBBNFBK() {
         
-        gLJDIOCLDMP_ = 0;
+        unk37EANJMBBNFBK_ = 0;
         onChanged();
         return this;
       }
@@ -524,9 +536,9 @@ public final class MonsterWaveDeactiveOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031MonsterWaveDeactive.proto\"*\n\023MonsterWa" +
-      "veDeactive\022\023\n\013GLJDIOCLDMP\030\004 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\031MonsterWaveDeactive.proto\"1\n\023MonsterWa" +
+      "veDeactive\022\032\n\022unk_37_EANJMBBNFBK\030\016 \001(\rB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -537,7 +549,7 @@ public final class MonsterWaveDeactiveOuterClass {
     internal_static_MonsterWaveDeactive_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MonsterWaveDeactive_descriptor,
-        new java.lang.String[] { "GLJDIOCLDMP", });
+        new java.lang.String[] { "Unk37EANJMBBNFBK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,10 +19,16 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FFJODAJJEMP = 7;</code>
-     * @return The fFJODAJJEMP.
+     * <code>bool is_level_open = 1;</code>
+     * @return The isLevelOpen.
      */
-    int getFFJODAJJEMP();
+    boolean getIsLevelOpen();
+
+    /**
+     * <code>bool is_finished = 4;</code>
+     * @return The isFinished.
+     */
+    boolean getIsFinished();
 
     /**
      * <code>uint32 level_id = 10;</code>
@@ -31,16 +37,10 @@ public final class CollectUnderwaterLevelInfoOuterClass {
     int getLevelId();
 
     /**
-     * <code>bool is_finished = 2;</code>
-     * @return The isFinished.
+     * <code>uint32 MBHMNAHKAFK = 14;</code>
+     * @return The mBHMNAHKAFK.
      */
-    boolean getIsFinished();
-
-    /**
-     * <code>bool is_level_open = 9;</code>
-     * @return The isLevelOpen.
-     */
-    boolean getIsLevelOpen();
+    int getMBHMNAHKAFK();
   }
   /**
    * Protobuf type {@code CollectUnderwaterLevelInfo}
@@ -87,24 +87,24 @@ public final class CollectUnderwaterLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              fFJODAJJEMP_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 8: {
 
               isLevelOpen_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              isFinished_ = input.readBool();
               break;
             }
             case 80: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              mBHMNAHKAFK_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,15 +139,26 @@ public final class CollectUnderwaterLevelInfoOuterClass {
               emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo.class, emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo.Builder.class);
     }
 
-    public static final int FFJODAJJEMP_FIELD_NUMBER = 7;
-    private int fFJODAJJEMP_;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 1;
+    private boolean isLevelOpen_;
     /**
-     * <code>uint32 FFJODAJJEMP = 7;</code>
-     * @return The fFJODAJJEMP.
+     * <code>bool is_level_open = 1;</code>
+     * @return The isLevelOpen.
      */
     @java.lang.Override
-    public int getFFJODAJJEMP() {
-      return fFJODAJJEMP_;
+    public boolean getIsLevelOpen() {
+      return isLevelOpen_;
+    }
+
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
+    private boolean isFinished_;
+    /**
+     * <code>bool is_finished = 4;</code>
+     * @return The isFinished.
+     */
+    @java.lang.Override
+    public boolean getIsFinished() {
+      return isFinished_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
@@ -161,26 +172,15 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 2;
-    private boolean isFinished_;
+    public static final int MBHMNAHKAFK_FIELD_NUMBER = 14;
+    private int mBHMNAHKAFK_;
     /**
-     * <code>bool is_finished = 2;</code>
-     * @return The isFinished.
+     * <code>uint32 MBHMNAHKAFK = 14;</code>
+     * @return The mBHMNAHKAFK.
      */
     @java.lang.Override
-    public boolean getIsFinished() {
-      return isFinished_;
-    }
-
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 9;
-    private boolean isLevelOpen_;
-    /**
-     * <code>bool is_level_open = 9;</code>
-     * @return The isLevelOpen.
-     */
-    @java.lang.Override
-    public boolean getIsLevelOpen() {
-      return isLevelOpen_;
+    public int getMBHMNAHKAFK() {
+      return mBHMNAHKAFK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class CollectUnderwaterLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinished_ != false) {
-        output.writeBool(2, isFinished_);
-      }
-      if (fFJODAJJEMP_ != 0) {
-        output.writeUInt32(7, fFJODAJJEMP_);
-      }
       if (isLevelOpen_ != false) {
-        output.writeBool(9, isLevelOpen_);
+        output.writeBool(1, isLevelOpen_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(4, isFinished_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(10, levelId_);
+      }
+      if (mBHMNAHKAFK_ != 0) {
+        output.writeUInt32(14, mBHMNAHKAFK_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isFinished_);
-      }
-      if (fFJODAJJEMP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fFJODAJJEMP_);
-      }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isLevelOpen_);
+          .computeBoolSize(1, isLevelOpen_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isFinished_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, levelId_);
+      }
+      if (mBHMNAHKAFK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, mBHMNAHKAFK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo other = (emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo) obj;
 
-      if (getFFJODAJJEMP()
-          != other.getFFJODAJJEMP()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsFinished()
-          != other.getIsFinished()) return false;
       if (getIsLevelOpen()
           != other.getIsLevelOpen()) return false;
+      if (getIsFinished()
+          != other.getIsFinished()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getMBHMNAHKAFK()
+          != other.getMBHMNAHKAFK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +268,16 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FFJODAJJEMP_FIELD_NUMBER;
-      hash = (53 * hash) + getFFJODAJJEMP();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinished());
       hash = (37 * hash) + IS_LEVEL_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsLevelOpen());
+      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinished());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + MBHMNAHKAFK_FIELD_NUMBER;
+      hash = (53 * hash) + getMBHMNAHKAFK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,13 +411,13 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fFJODAJJEMP_ = 0;
-
-        levelId_ = 0;
+        isLevelOpen_ = false;
 
         isFinished_ = false;
 
-        isLevelOpen_ = false;
+        levelId_ = 0;
+
+        mBHMNAHKAFK_ = 0;
 
         return this;
       }
@@ -445,10 +445,10 @@ public final class CollectUnderwaterLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo buildPartial() {
         emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo result = new emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo(this);
-        result.fFJODAJJEMP_ = fFJODAJJEMP_;
-        result.levelId_ = levelId_;
-        result.isFinished_ = isFinished_;
         result.isLevelOpen_ = isLevelOpen_;
+        result.isFinished_ = isFinished_;
+        result.levelId_ = levelId_;
+        result.mBHMNAHKAFK_ = mBHMNAHKAFK_;
         onBuilt();
         return result;
       }
@@ -497,17 +497,17 @@ public final class CollectUnderwaterLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo other) {
         if (other == emu.grasscutter.net.proto.CollectUnderwaterLevelInfoOuterClass.CollectUnderwaterLevelInfo.getDefaultInstance()) return this;
-        if (other.getFFJODAJJEMP() != 0) {
-          setFFJODAJJEMP(other.getFFJODAJJEMP());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getIsLevelOpen() != false) {
+          setIsLevelOpen(other.getIsLevelOpen());
         }
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
         }
-        if (other.getIsLevelOpen() != false) {
-          setIsLevelOpen(other.getIsLevelOpen());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getMBHMNAHKAFK() != 0) {
+          setMBHMNAHKAFK(other.getMBHMNAHKAFK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,33 +538,64 @@ public final class CollectUnderwaterLevelInfoOuterClass {
         return this;
       }
 
-      private int fFJODAJJEMP_ ;
+      private boolean isLevelOpen_ ;
       /**
-       * <code>uint32 FFJODAJJEMP = 7;</code>
-       * @return The fFJODAJJEMP.
+       * <code>bool is_level_open = 1;</code>
+       * @return The isLevelOpen.
        */
       @java.lang.Override
-      public int getFFJODAJJEMP() {
-        return fFJODAJJEMP_;
+      public boolean getIsLevelOpen() {
+        return isLevelOpen_;
       }
       /**
-       * <code>uint32 FFJODAJJEMP = 7;</code>
-       * @param value The fFJODAJJEMP to set.
+       * <code>bool is_level_open = 1;</code>
+       * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
-      public Builder setFFJODAJJEMP(int value) {
+      public Builder setIsLevelOpen(boolean value) {
         
-        fFJODAJJEMP_ = value;
+        isLevelOpen_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FFJODAJJEMP = 7;</code>
+       * <code>bool is_level_open = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFFJODAJJEMP() {
+      public Builder clearIsLevelOpen() {
         
-        fFJODAJJEMP_ = 0;
+        isLevelOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinished_ ;
+      /**
+       * <code>bool is_finished = 4;</code>
+       * @return The isFinished.
+       */
+      @java.lang.Override
+      public boolean getIsFinished() {
+        return isFinished_;
+      }
+      /**
+       * <code>bool is_finished = 4;</code>
+       * @param value The isFinished to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinished(boolean value) {
+        
+        isFinished_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finished = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinished() {
+        
+        isFinished_ = false;
         onChanged();
         return this;
       }
@@ -600,64 +631,33 @@ public final class CollectUnderwaterLevelInfoOuterClass {
         return this;
       }
 
-      private boolean isFinished_ ;
+      private int mBHMNAHKAFK_ ;
       /**
-       * <code>bool is_finished = 2;</code>
-       * @return The isFinished.
+       * <code>uint32 MBHMNAHKAFK = 14;</code>
+       * @return The mBHMNAHKAFK.
        */
       @java.lang.Override
-      public boolean getIsFinished() {
-        return isFinished_;
+      public int getMBHMNAHKAFK() {
+        return mBHMNAHKAFK_;
       }
       /**
-       * <code>bool is_finished = 2;</code>
-       * @param value The isFinished to set.
+       * <code>uint32 MBHMNAHKAFK = 14;</code>
+       * @param value The mBHMNAHKAFK to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFinished(boolean value) {
+      public Builder setMBHMNAHKAFK(int value) {
         
-        isFinished_ = value;
+        mBHMNAHKAFK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_finished = 2;</code>
+       * <code>uint32 MBHMNAHKAFK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFinished() {
+      public Builder clearMBHMNAHKAFK() {
         
-        isFinished_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isLevelOpen_ ;
-      /**
-       * <code>bool is_level_open = 9;</code>
-       * @return The isLevelOpen.
-       */
-      @java.lang.Override
-      public boolean getIsLevelOpen() {
-        return isLevelOpen_;
-      }
-      /**
-       * <code>bool is_level_open = 9;</code>
-       * @param value The isLevelOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsLevelOpen(boolean value) {
-        
-        isLevelOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_level_open = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsLevelOpen() {
-        
-        isLevelOpen_ = false;
+        mBHMNAHKAFK_ = 0;
         onChanged();
         return this;
       }
@@ -729,9 +729,9 @@ public final class CollectUnderwaterLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n CollectUnderwaterLevelInfo.proto\"o\n\032Co" +
-      "llectUnderwaterLevelInfo\022\023\n\013FFJODAJJEMP\030" +
-      "\007 \001(\r\022\020\n\010level_id\030\n \001(\r\022\023\n\013is_finished\030\002" +
-      " \001(\010\022\025\n\ris_level_open\030\t \001(\010B\033\n\031emu.grass" +
+      "llectUnderwaterLevelInfo\022\025\n\ris_level_ope" +
+      "n\030\001 \001(\010\022\023\n\013is_finished\030\004 \001(\010\022\020\n\010level_id" +
+      "\030\n \001(\r\022\023\n\013MBHMNAHKAFK\030\016 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -743,7 +743,7 @@ public final class CollectUnderwaterLevelInfoOuterClass {
     internal_static_CollectUnderwaterLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CollectUnderwaterLevelInfo_descriptor,
-        new java.lang.String[] { "FFJODAJJEMP", "LevelId", "IsFinished", "IsLevelOpen", });
+        new java.lang.String[] { "IsLevelOpen", "IsFinished", "LevelId", "MBHMNAHKAFK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

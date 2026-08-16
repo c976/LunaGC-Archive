@@ -19,34 +19,46 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OIIIBGMCKAE = 7;</code>
-     * @return The oIIIBGMCKAE.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 MLPFGCEDPKG = 1;</code>
+     * @return The mLPFGCEDPKG.
      */
-    int getOIIIBGMCKAE();
+    int getMLPFGCEDPKG();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 monster_count = 5;</code>
      * @return The monsterCount.
      */
     int getMonsterCount();
 
     /**
-     * <code>uint32 MEJHMNFHDED = 14;</code>
-     * @return The mEJHMNFHDED.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KKJNPGLMOEF = 8;</code>
+     * @return The kKJNPGLMOEF.
      */
-    int getMEJHMNFHDED();
+    int getKKJNPGLMOEF();
 
     /**
-     * <code>uint32 NKDAHKKLFMC = 15;</code>
-     * @return The nKDAHKKLFMC.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NIEGMBDGJLC = 15;</code>
+     * @return The nIEGMBDGJLC.
      */
-    int getNKDAHKKLFMC();
+    int getNIEGMBDGJLC();
   }
   /**
-   * <pre>
-   * Obf: PDCHCJHBJII
-   * </pre>
-   *
    * Protobuf type {@code SceneGallerySalvageEscortInfo}
    */
   public static final class SceneGallerySalvageEscortInfo extends
@@ -91,24 +103,24 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              mLPFGCEDPKG_ = input.readUInt32();
+              break;
+            }
             case 40: {
 
               monsterCount_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 64: {
 
-              oIIIBGMCKAE_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              mEJHMNFHDED_ = input.readUInt32();
+              kKJNPGLMOEF_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              nKDAHKKLFMC_ = input.readUInt32();
+              nIEGMBDGJLC_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,20 +155,28 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo.class, emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo.Builder.class);
     }
 
-    public static final int OIIIBGMCKAE_FIELD_NUMBER = 7;
-    private int oIIIBGMCKAE_;
+    public static final int MLPFGCEDPKG_FIELD_NUMBER = 1;
+    private int mLPFGCEDPKG_;
     /**
-     * <code>uint32 OIIIBGMCKAE = 7;</code>
-     * @return The oIIIBGMCKAE.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 MLPFGCEDPKG = 1;</code>
+     * @return The mLPFGCEDPKG.
      */
     @java.lang.Override
-    public int getOIIIBGMCKAE() {
-      return oIIIBGMCKAE_;
+    public int getMLPFGCEDPKG() {
+      return mLPFGCEDPKG_;
     }
 
     public static final int MONSTER_COUNT_FIELD_NUMBER = 5;
     private int monsterCount_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 monster_count = 5;</code>
      * @return The monsterCount.
      */
@@ -165,26 +185,34 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       return monsterCount_;
     }
 
-    public static final int MEJHMNFHDED_FIELD_NUMBER = 14;
-    private int mEJHMNFHDED_;
+    public static final int KKJNPGLMOEF_FIELD_NUMBER = 8;
+    private int kKJNPGLMOEF_;
     /**
-     * <code>uint32 MEJHMNFHDED = 14;</code>
-     * @return The mEJHMNFHDED.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KKJNPGLMOEF = 8;</code>
+     * @return The kKJNPGLMOEF.
      */
     @java.lang.Override
-    public int getMEJHMNFHDED() {
-      return mEJHMNFHDED_;
+    public int getKKJNPGLMOEF() {
+      return kKJNPGLMOEF_;
     }
 
-    public static final int NKDAHKKLFMC_FIELD_NUMBER = 15;
-    private int nKDAHKKLFMC_;
+    public static final int NIEGMBDGJLC_FIELD_NUMBER = 15;
+    private int nIEGMBDGJLC_;
     /**
-     * <code>uint32 NKDAHKKLFMC = 15;</code>
-     * @return The nKDAHKKLFMC.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NIEGMBDGJLC = 15;</code>
+     * @return The nIEGMBDGJLC.
      */
     @java.lang.Override
-    public int getNKDAHKKLFMC() {
-      return nKDAHKKLFMC_;
+    public int getNIEGMBDGJLC() {
+      return nIEGMBDGJLC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +229,17 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (mLPFGCEDPKG_ != 0) {
+        output.writeUInt32(1, mLPFGCEDPKG_);
+      }
       if (monsterCount_ != 0) {
         output.writeUInt32(5, monsterCount_);
       }
-      if (oIIIBGMCKAE_ != 0) {
-        output.writeUInt32(7, oIIIBGMCKAE_);
+      if (kKJNPGLMOEF_ != 0) {
+        output.writeUInt32(8, kKJNPGLMOEF_);
       }
-      if (mEJHMNFHDED_ != 0) {
-        output.writeUInt32(14, mEJHMNFHDED_);
-      }
-      if (nKDAHKKLFMC_ != 0) {
-        output.writeUInt32(15, nKDAHKKLFMC_);
+      if (nIEGMBDGJLC_ != 0) {
+        output.writeUInt32(15, nIEGMBDGJLC_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +250,21 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (mLPFGCEDPKG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, mLPFGCEDPKG_);
+      }
       if (monsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, monsterCount_);
       }
-      if (oIIIBGMCKAE_ != 0) {
+      if (kKJNPGLMOEF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, oIIIBGMCKAE_);
+          .computeUInt32Size(8, kKJNPGLMOEF_);
       }
-      if (mEJHMNFHDED_ != 0) {
+      if (nIEGMBDGJLC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, mEJHMNFHDED_);
-      }
-      if (nKDAHKKLFMC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, nKDAHKKLFMC_);
+          .computeUInt32Size(15, nIEGMBDGJLC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +281,14 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo other = (emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo) obj;
 
-      if (getOIIIBGMCKAE()
-          != other.getOIIIBGMCKAE()) return false;
+      if (getMLPFGCEDPKG()
+          != other.getMLPFGCEDPKG()) return false;
       if (getMonsterCount()
           != other.getMonsterCount()) return false;
-      if (getMEJHMNFHDED()
-          != other.getMEJHMNFHDED()) return false;
-      if (getNKDAHKKLFMC()
-          != other.getNKDAHKKLFMC()) return false;
+      if (getKKJNPGLMOEF()
+          != other.getKKJNPGLMOEF()) return false;
+      if (getNIEGMBDGJLC()
+          != other.getNIEGMBDGJLC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +300,14 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OIIIBGMCKAE_FIELD_NUMBER;
-      hash = (53 * hash) + getOIIIBGMCKAE();
+      hash = (37 * hash) + MLPFGCEDPKG_FIELD_NUMBER;
+      hash = (53 * hash) + getMLPFGCEDPKG();
       hash = (37 * hash) + MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMonsterCount();
-      hash = (37 * hash) + MEJHMNFHDED_FIELD_NUMBER;
-      hash = (53 * hash) + getMEJHMNFHDED();
-      hash = (37 * hash) + NKDAHKKLFMC_FIELD_NUMBER;
-      hash = (53 * hash) + getNKDAHKKLFMC();
+      hash = (37 * hash) + KKJNPGLMOEF_FIELD_NUMBER;
+      hash = (53 * hash) + getKKJNPGLMOEF();
+      hash = (37 * hash) + NIEGMBDGJLC_FIELD_NUMBER;
+      hash = (53 * hash) + getNIEGMBDGJLC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +404,6 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PDCHCJHBJII
-     * </pre>
-     *
      * Protobuf type {@code SceneGallerySalvageEscortInfo}
      */
     public static final class Builder extends
@@ -417,13 +441,13 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oIIIBGMCKAE_ = 0;
+        mLPFGCEDPKG_ = 0;
 
         monsterCount_ = 0;
 
-        mEJHMNFHDED_ = 0;
+        kKJNPGLMOEF_ = 0;
 
-        nKDAHKKLFMC_ = 0;
+        nIEGMBDGJLC_ = 0;
 
         return this;
       }
@@ -451,10 +475,10 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo result = new emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo(this);
-        result.oIIIBGMCKAE_ = oIIIBGMCKAE_;
+        result.mLPFGCEDPKG_ = mLPFGCEDPKG_;
         result.monsterCount_ = monsterCount_;
-        result.mEJHMNFHDED_ = mEJHMNFHDED_;
-        result.nKDAHKKLFMC_ = nKDAHKKLFMC_;
+        result.kKJNPGLMOEF_ = kKJNPGLMOEF_;
+        result.nIEGMBDGJLC_ = nIEGMBDGJLC_;
         onBuilt();
         return result;
       }
@@ -503,17 +527,17 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySalvageEscortInfoOuterClass.SceneGallerySalvageEscortInfo.getDefaultInstance()) return this;
-        if (other.getOIIIBGMCKAE() != 0) {
-          setOIIIBGMCKAE(other.getOIIIBGMCKAE());
+        if (other.getMLPFGCEDPKG() != 0) {
+          setMLPFGCEDPKG(other.getMLPFGCEDPKG());
         }
         if (other.getMonsterCount() != 0) {
           setMonsterCount(other.getMonsterCount());
         }
-        if (other.getMEJHMNFHDED() != 0) {
-          setMEJHMNFHDED(other.getMEJHMNFHDED());
+        if (other.getKKJNPGLMOEF() != 0) {
+          setKKJNPGLMOEF(other.getKKJNPGLMOEF());
         }
-        if (other.getNKDAHKKLFMC() != 0) {
-          setNKDAHKKLFMC(other.getNKDAHKKLFMC());
+        if (other.getNIEGMBDGJLC() != 0) {
+          setNIEGMBDGJLC(other.getNIEGMBDGJLC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,39 +568,55 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
         return this;
       }
 
-      private int oIIIBGMCKAE_ ;
+      private int mLPFGCEDPKG_ ;
       /**
-       * <code>uint32 OIIIBGMCKAE = 7;</code>
-       * @return The oIIIBGMCKAE.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 MLPFGCEDPKG = 1;</code>
+       * @return The mLPFGCEDPKG.
        */
       @java.lang.Override
-      public int getOIIIBGMCKAE() {
-        return oIIIBGMCKAE_;
+      public int getMLPFGCEDPKG() {
+        return mLPFGCEDPKG_;
       }
       /**
-       * <code>uint32 OIIIBGMCKAE = 7;</code>
-       * @param value The oIIIBGMCKAE to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 MLPFGCEDPKG = 1;</code>
+       * @param value The mLPFGCEDPKG to set.
        * @return This builder for chaining.
        */
-      public Builder setOIIIBGMCKAE(int value) {
+      public Builder setMLPFGCEDPKG(int value) {
         
-        oIIIBGMCKAE_ = value;
+        mLPFGCEDPKG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OIIIBGMCKAE = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 MLPFGCEDPKG = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOIIIBGMCKAE() {
+      public Builder clearMLPFGCEDPKG() {
         
-        oIIIBGMCKAE_ = 0;
+        mLPFGCEDPKG_ = 0;
         onChanged();
         return this;
       }
 
       private int monsterCount_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 monster_count = 5;</code>
        * @return The monsterCount.
        */
@@ -585,6 +625,10 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
         return monsterCount_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 monster_count = 5;</code>
        * @param value The monsterCount to set.
        * @return This builder for chaining.
@@ -596,6 +640,10 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 monster_count = 5;</code>
        * @return This builder for chaining.
        */
@@ -606,64 +654,88 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
         return this;
       }
 
-      private int mEJHMNFHDED_ ;
+      private int kKJNPGLMOEF_ ;
       /**
-       * <code>uint32 MEJHMNFHDED = 14;</code>
-       * @return The mEJHMNFHDED.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KKJNPGLMOEF = 8;</code>
+       * @return The kKJNPGLMOEF.
        */
       @java.lang.Override
-      public int getMEJHMNFHDED() {
-        return mEJHMNFHDED_;
+      public int getKKJNPGLMOEF() {
+        return kKJNPGLMOEF_;
       }
       /**
-       * <code>uint32 MEJHMNFHDED = 14;</code>
-       * @param value The mEJHMNFHDED to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KKJNPGLMOEF = 8;</code>
+       * @param value The kKJNPGLMOEF to set.
        * @return This builder for chaining.
        */
-      public Builder setMEJHMNFHDED(int value) {
+      public Builder setKKJNPGLMOEF(int value) {
         
-        mEJHMNFHDED_ = value;
+        kKJNPGLMOEF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MEJHMNFHDED = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KKJNPGLMOEF = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMEJHMNFHDED() {
+      public Builder clearKKJNPGLMOEF() {
         
-        mEJHMNFHDED_ = 0;
+        kKJNPGLMOEF_ = 0;
         onChanged();
         return this;
       }
 
-      private int nKDAHKKLFMC_ ;
+      private int nIEGMBDGJLC_ ;
       /**
-       * <code>uint32 NKDAHKKLFMC = 15;</code>
-       * @return The nKDAHKKLFMC.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 15;</code>
+       * @return The nIEGMBDGJLC.
        */
       @java.lang.Override
-      public int getNKDAHKKLFMC() {
-        return nKDAHKKLFMC_;
+      public int getNIEGMBDGJLC() {
+        return nIEGMBDGJLC_;
       }
       /**
-       * <code>uint32 NKDAHKKLFMC = 15;</code>
-       * @param value The nKDAHKKLFMC to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 15;</code>
+       * @param value The nIEGMBDGJLC to set.
        * @return This builder for chaining.
        */
-      public Builder setNKDAHKKLFMC(int value) {
+      public Builder setNIEGMBDGJLC(int value) {
         
-        nKDAHKKLFMC_ = value;
+        nIEGMBDGJLC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NKDAHKKLFMC = 15;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NIEGMBDGJLC = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNKDAHKKLFMC() {
+      public Builder clearNIEGMBDGJLC() {
         
-        nKDAHKKLFMC_ = 0;
+        nIEGMBDGJLC_ = 0;
         onChanged();
         return this;
       }
@@ -735,9 +807,9 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#SceneGallerySalvageEscortInfo.proto\"u\n" +
-      "\035SceneGallerySalvageEscortInfo\022\023\n\013OIIIBG" +
-      "MCKAE\030\007 \001(\r\022\025\n\rmonster_count\030\005 \001(\r\022\023\n\013ME" +
-      "JHMNFHDED\030\016 \001(\r\022\023\n\013NKDAHKKLFMC\030\017 \001(\rB\033\n\031" +
+      "\035SceneGallerySalvageEscortInfo\022\023\n\013MLPFGC" +
+      "EDPKG\030\001 \001(\r\022\025\n\rmonster_count\030\005 \001(\r\022\023\n\013KK" +
+      "JNPGLMOEF\030\010 \001(\r\022\023\n\013NIEGMBDGJLC\030\017 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -749,7 +821,7 @@ public final class SceneGallerySalvageEscortInfoOuterClass {
     internal_static_SceneGallerySalvageEscortInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySalvageEscortInfo_descriptor,
-        new java.lang.String[] { "OIIIBGMCKAE", "MonsterCount", "MEJHMNFHDED", "NKDAHKKLFMC", });
+        new java.lang.String[] { "MLPFGCEDPKG", "MonsterCount", "KKJNPGLMOEF", "NIEGMBDGJLC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

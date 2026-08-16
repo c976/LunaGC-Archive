@@ -19,10 +19,18 @@ public final class AvatarFetterDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     int getFetterInfoMapCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     boolean containsFetterInfoMap(
@@ -34,11 +42,19 @@ public final class AvatarFetterDataNotifyOuterClass {
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo>
     getFetterInfoMap();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo>
     getFetterInfoMapMap();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
 
@@ -46,6 +62,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         long key,
         emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo defaultValue);
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
 
@@ -54,7 +74,7 @@ public final class AvatarFetterDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7267
+   * CmdId: 28749
    * </pre>
    *
    * Protobuf type {@code AvatarFetterDataNotify}
@@ -186,6 +206,10 @@ public final class AvatarFetterDataNotifyOuterClass {
       return internalGetFetterInfoMap().getMap().size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
 
@@ -204,6 +228,10 @@ public final class AvatarFetterDataNotifyOuterClass {
       return getFetterInfoMapMap();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     @java.lang.Override
@@ -212,6 +240,10 @@ public final class AvatarFetterDataNotifyOuterClass {
       return internalGetFetterInfoMap().getMap();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     @java.lang.Override
@@ -225,6 +257,10 @@ public final class AvatarFetterDataNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
      */
     @java.lang.Override
@@ -408,7 +444,7 @@ public final class AvatarFetterDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7267
+     * CmdId: 28749
      * </pre>
      *
      * Protobuf type {@code AvatarFetterDataNotify}
@@ -607,6 +643,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return internalGetFetterInfoMap().getMap().size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
 
@@ -625,6 +665,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return getFetterInfoMapMap();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
       @java.lang.Override
@@ -633,6 +677,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return internalGetFetterInfoMap().getMap();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
       @java.lang.Override
@@ -646,6 +694,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
       @java.lang.Override
@@ -667,6 +719,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
 
@@ -686,6 +742,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return internalGetMutableFetterInfoMap().getMutableMap();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
       public Builder putFetterInfoMap(
@@ -698,6 +758,10 @@ public final class AvatarFetterDataNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint64, .AvatarFetterInfo&gt; fetter_info_map = 11;</code>
        */
 

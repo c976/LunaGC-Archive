@@ -43,12 +43,16 @@ public final class HomeGetArrangementInfoRspOuterClass {
         int index);
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 24047
+   * </pre>
+   *
    * Protobuf type {@code HomeGetArrangementInfoRsp}
    */
   public static final class HomeGetArrangementInfoRsp extends
@@ -104,7 +108,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -184,10 +188,10 @@ public final class HomeGetArrangementInfoRspOuterClass {
       return sceneArrangementInfoList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -213,7 +217,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
         output.writeMessage(8, sceneArrangementInfoList_.get(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,7 +234,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -364,6 +368,10 @@ public final class HomeGetArrangementInfoRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24047
+     * </pre>
+     *
      * Protobuf type {@code HomeGetArrangementInfoRsp}
      */
     public static final class Builder extends
@@ -796,7 +804,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -804,7 +812,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -815,7 +823,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -895,7 +903,7 @@ public final class HomeGetArrangementInfoRspOuterClass {
       "ceneArrangementInfo.proto\"l\n\031HomeGetArra" +
       "ngementInfoRsp\022>\n\033scene_arrangement_info" +
       "_list\030\010 \003(\0132\031.HomeSceneArrangementInfo\022\017" +
-      "\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,28 +19,36 @@ public final class SumoDungeonAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_avlive = 4;</code>
-     * @return The isAvlive.
-     */
-    boolean getIsAvlive();
-
-    /**
-     * <code>uint64 avatar_guid = 10;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
-     * <code>bool is_trial = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_trial = 15;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
+
+    /**
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool GKMIPANHNPC = 11;</code>
+     * @return The gKMIPANHNPC.
+     */
+    boolean getGKMIPANHNPC();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 avatar_guid = 2;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
-   * <pre>
-   * Obf: ADALLMGGAPN
-   * </pre>
-   *
    * Protobuf type {@code SumoDungeonAvatar}
    */
   public static final class SumoDungeonAvatar extends
@@ -85,19 +93,19 @@ public final class SumoDungeonAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              isAvlive_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 88: {
+
+              gKMIPANHNPC_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              isTrial_ = input.readBool();
               break;
             }
             default: {
@@ -132,37 +140,49 @@ public final class SumoDungeonAvatarOuterClass {
               emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.class, emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.Builder.class);
     }
 
-    public static final int IS_AVLIVE_FIELD_NUMBER = 4;
-    private boolean isAvlive_;
-    /**
-     * <code>bool is_avlive = 4;</code>
-     * @return The isAvlive.
-     */
-    @java.lang.Override
-    public boolean getIsAvlive() {
-      return isAvlive_;
-    }
-
-    public static final int AVATAR_GUID_FIELD_NUMBER = 10;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 10;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int IS_TRIAL_FIELD_NUMBER = 6;
+    public static final int IS_TRIAL_FIELD_NUMBER = 15;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_trial = 15;</code>
      * @return The isTrial.
      */
     @java.lang.Override
     public boolean getIsTrial() {
       return isTrial_;
+    }
+
+    public static final int GKMIPANHNPC_FIELD_NUMBER = 11;
+    private boolean gKMIPANHNPC_;
+    /**
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool GKMIPANHNPC = 11;</code>
+     * @return The gKMIPANHNPC.
+     */
+    @java.lang.Override
+    public boolean getGKMIPANHNPC() {
+      return gKMIPANHNPC_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 2;
+    private long avatarGuid_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 avatar_guid = 2;</code>
+     * @return The avatarGuid.
+     */
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +199,14 @@ public final class SumoDungeonAvatarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAvlive_ != false) {
-        output.writeBool(4, isAvlive_);
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(2, avatarGuid_);
+      }
+      if (gKMIPANHNPC_ != false) {
+        output.writeBool(11, gKMIPANHNPC_);
       }
       if (isTrial_ != false) {
-        output.writeBool(6, isTrial_);
-      }
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(10, avatarGuid_);
+        output.writeBool(15, isTrial_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +217,17 @@ public final class SumoDungeonAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAvlive_ != false) {
+      if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isAvlive_);
+          .computeUInt64Size(2, avatarGuid_);
+      }
+      if (gKMIPANHNPC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, gKMIPANHNPC_);
       }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isTrial_);
-      }
-      if (avatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, avatarGuid_);
+          .computeBoolSize(15, isTrial_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class SumoDungeonAvatarOuterClass {
       }
       emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar other = (emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar) obj;
 
-      if (getIsAvlive()
-          != other.getIsAvlive()) return false;
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (getIsTrial()
           != other.getIsTrial()) return false;
+      if (getGKMIPANHNPC()
+          != other.getGKMIPANHNPC()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,15 +261,15 @@ public final class SumoDungeonAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_AVLIVE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAvlive());
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarGuid());
       hash = (37 * hash) + IS_TRIAL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTrial());
+      hash = (37 * hash) + GKMIPANHNPC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGKMIPANHNPC());
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,10 +366,6 @@ public final class SumoDungeonAvatarOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: ADALLMGGAPN
-     * </pre>
-     *
      * Protobuf type {@code SumoDungeonAvatar}
      */
     public static final class Builder extends
@@ -387,11 +403,11 @@ public final class SumoDungeonAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAvlive_ = false;
+        isTrial_ = false;
+
+        gKMIPANHNPC_ = false;
 
         avatarGuid_ = 0L;
-
-        isTrial_ = false;
 
         return this;
       }
@@ -419,9 +435,9 @@ public final class SumoDungeonAvatarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar buildPartial() {
         emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar result = new emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar(this);
-        result.isAvlive_ = isAvlive_;
-        result.avatarGuid_ = avatarGuid_;
         result.isTrial_ = isTrial_;
+        result.gKMIPANHNPC_ = gKMIPANHNPC_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -470,14 +486,14 @@ public final class SumoDungeonAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar other) {
         if (other == emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.getDefaultInstance()) return this;
-        if (other.getIsAvlive() != false) {
-          setIsAvlive(other.getIsAvlive());
+        if (other.getIsTrial() != false) {
+          setIsTrial(other.getIsTrial());
+        }
+        if (other.getGKMIPANHNPC() != false) {
+          setGKMIPANHNPC(other.getGKMIPANHNPC());
         }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
-        }
-        if (other.getIsTrial() != false) {
-          setIsTrial(other.getIsTrial());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,71 +524,13 @@ public final class SumoDungeonAvatarOuterClass {
         return this;
       }
 
-      private boolean isAvlive_ ;
-      /**
-       * <code>bool is_avlive = 4;</code>
-       * @return The isAvlive.
-       */
-      @java.lang.Override
-      public boolean getIsAvlive() {
-        return isAvlive_;
-      }
-      /**
-       * <code>bool is_avlive = 4;</code>
-       * @param value The isAvlive to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAvlive(boolean value) {
-        
-        isAvlive_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_avlive = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAvlive() {
-        
-        isAvlive_ = false;
-        onChanged();
-        return this;
-      }
-
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_trial = 15;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -580,7 +538,11 @@ public final class SumoDungeonAvatarOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_trial = 15;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -591,12 +553,102 @@ public final class SumoDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_trial = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
         
         isTrial_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gKMIPANHNPC_ ;
+      /**
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool GKMIPANHNPC = 11;</code>
+       * @return The gKMIPANHNPC.
+       */
+      @java.lang.Override
+      public boolean getGKMIPANHNPC() {
+        return gKMIPANHNPC_;
+      }
+      /**
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool GKMIPANHNPC = 11;</code>
+       * @param value The gKMIPANHNPC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGKMIPANHNPC(boolean value) {
+        
+        gKMIPANHNPC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool GKMIPANHNPC = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGKMIPANHNPC() {
+        
+        gKMIPANHNPC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 2;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 2;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 avatar_guid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -667,10 +719,10 @@ public final class SumoDungeonAvatarOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027SumoDungeonAvatar.proto\"M\n\021SumoDungeon" +
-      "Avatar\022\021\n\tis_avlive\030\004 \001(\010\022\023\n\013avatar_guid" +
-      "\030\n \001(\004\022\020\n\010is_trial\030\006 \001(\010B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\027SumoDungeonAvatar.proto\"O\n\021SumoDungeon" +
+      "Avatar\022\020\n\010is_trial\030\017 \001(\010\022\023\n\013GKMIPANHNPC\030" +
+      "\013 \001(\010\022\023\n\013avatar_guid\030\002 \001(\004B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -681,7 +733,7 @@ public final class SumoDungeonAvatarOuterClass {
     internal_static_SumoDungeonAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoDungeonAvatar_descriptor,
-        new java.lang.String[] { "IsAvlive", "AvatarGuid", "IsTrial", });
+        new java.lang.String[] { "IsTrial", "GKMIPANHNPC", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

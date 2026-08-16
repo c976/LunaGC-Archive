@@ -19,52 +19,76 @@ public final class BuildingInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 building_id = 1;</code>
-     * @return The buildingId.
-     */
-    int getBuildingId();
-
-    /**
-     * <code>uint32 point_config_id = 2;</code>
-     * @return The pointConfigId.
-     */
-    int getPointConfigId();
-
-    /**
-     * <code>uint32 cost = 3;</code>
-     * @return The cost.
-     */
-    int getCost();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 refund = 5;</code>
      * @return The refund.
      */
     int getRefund();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 max_num = 8;</code>
+     * @return The maxNum.
+     */
+    int getMaxNum();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 building_id = 1;</code>
+     * @return The buildingId.
+     */
+    int getBuildingId();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 owner_uid = 6;</code>
      * @return The ownerUid.
      */
     int getOwnerUid();
 
     /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 cost = 3;</code>
+     * @return The cost.
+     */
+    int getCost();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>uint32 current_num = 7;</code>
      * @return The currentNum.
      */
     int getCurrentNum();
 
     /**
-     * <code>uint32 max_num = 8;</code>
-     * @return The maxNum.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 point_config_id = 2;</code>
+     * @return The pointConfigId.
      */
-    int getMaxNum();
+    int getPointConfigId();
   }
   /**
-   * <pre>
-   * Obf: OPKICDMJEJM
-   * </pre>
-   *
    * Protobuf type {@code BuildingInfo}
    */
   public static final class BuildingInfo extends
@@ -176,42 +200,13 @@ public final class BuildingInfoOuterClass {
               emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.class, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder.class);
     }
 
-    public static final int BUILDING_ID_FIELD_NUMBER = 1;
-    private int buildingId_;
-    /**
-     * <code>uint32 building_id = 1;</code>
-     * @return The buildingId.
-     */
-    @java.lang.Override
-    public int getBuildingId() {
-      return buildingId_;
-    }
-
-    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 2;
-    private int pointConfigId_;
-    /**
-     * <code>uint32 point_config_id = 2;</code>
-     * @return The pointConfigId.
-     */
-    @java.lang.Override
-    public int getPointConfigId() {
-      return pointConfigId_;
-    }
-
-    public static final int COST_FIELD_NUMBER = 3;
-    private int cost_;
-    /**
-     * <code>uint32 cost = 3;</code>
-     * @return The cost.
-     */
-    @java.lang.Override
-    public int getCost() {
-      return cost_;
-    }
-
     public static final int REFUND_FIELD_NUMBER = 5;
     private int refund_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 refund = 5;</code>
      * @return The refund.
      */
@@ -220,9 +215,43 @@ public final class BuildingInfoOuterClass {
       return refund_;
     }
 
+    public static final int MAX_NUM_FIELD_NUMBER = 8;
+    private int maxNum_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 max_num = 8;</code>
+     * @return The maxNum.
+     */
+    @java.lang.Override
+    public int getMaxNum() {
+      return maxNum_;
+    }
+
+    public static final int BUILDING_ID_FIELD_NUMBER = 1;
+    private int buildingId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 building_id = 1;</code>
+     * @return The buildingId.
+     */
+    @java.lang.Override
+    public int getBuildingId() {
+      return buildingId_;
+    }
+
     public static final int OWNER_UID_FIELD_NUMBER = 6;
     private int ownerUid_;
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 owner_uid = 6;</code>
      * @return The ownerUid.
      */
@@ -231,9 +260,28 @@ public final class BuildingInfoOuterClass {
       return ownerUid_;
     }
 
+    public static final int COST_FIELD_NUMBER = 3;
+    private int cost_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 cost = 3;</code>
+     * @return The cost.
+     */
+    @java.lang.Override
+    public int getCost() {
+      return cost_;
+    }
+
     public static final int CURRENT_NUM_FIELD_NUMBER = 7;
     private int currentNum_;
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>uint32 current_num = 7;</code>
      * @return The currentNum.
      */
@@ -242,15 +290,19 @@ public final class BuildingInfoOuterClass {
       return currentNum_;
     }
 
-    public static final int MAX_NUM_FIELD_NUMBER = 8;
-    private int maxNum_;
+    public static final int POINT_CONFIG_ID_FIELD_NUMBER = 2;
+    private int pointConfigId_;
     /**
-     * <code>uint32 max_num = 8;</code>
-     * @return The maxNum.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 point_config_id = 2;</code>
+     * @return The pointConfigId.
      */
     @java.lang.Override
-    public int getMaxNum() {
-      return maxNum_;
+    public int getPointConfigId() {
+      return pointConfigId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -340,20 +392,20 @@ public final class BuildingInfoOuterClass {
       }
       emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo other = (emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo) obj;
 
-      if (getBuildingId()
-          != other.getBuildingId()) return false;
-      if (getPointConfigId()
-          != other.getPointConfigId()) return false;
-      if (getCost()
-          != other.getCost()) return false;
       if (getRefund()
           != other.getRefund()) return false;
-      if (getOwnerUid()
-          != other.getOwnerUid()) return false;
-      if (getCurrentNum()
-          != other.getCurrentNum()) return false;
       if (getMaxNum()
           != other.getMaxNum()) return false;
+      if (getBuildingId()
+          != other.getBuildingId()) return false;
+      if (getOwnerUid()
+          != other.getOwnerUid()) return false;
+      if (getCost()
+          != other.getCost()) return false;
+      if (getCurrentNum()
+          != other.getCurrentNum()) return false;
+      if (getPointConfigId()
+          != other.getPointConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -365,20 +417,20 @@ public final class BuildingInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBuildingId();
-      hash = (37 * hash) + POINT_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointConfigId();
-      hash = (37 * hash) + COST_FIELD_NUMBER;
-      hash = (53 * hash) + getCost();
       hash = (37 * hash) + REFUND_FIELD_NUMBER;
       hash = (53 * hash) + getRefund();
-      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerUid();
-      hash = (37 * hash) + CURRENT_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getCurrentNum();
       hash = (37 * hash) + MAX_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getMaxNum();
+      hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuildingId();
+      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerUid();
+      hash = (37 * hash) + COST_FIELD_NUMBER;
+      hash = (53 * hash) + getCost();
+      hash = (37 * hash) + CURRENT_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getCurrentNum();
+      hash = (37 * hash) + POINT_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,10 +527,6 @@ public final class BuildingInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OPKICDMJEJM
-     * </pre>
-     *
      * Protobuf type {@code BuildingInfo}
      */
     public static final class Builder extends
@@ -516,19 +564,19 @@ public final class BuildingInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        buildingId_ = 0;
-
-        pointConfigId_ = 0;
-
-        cost_ = 0;
-
         refund_ = 0;
+
+        maxNum_ = 0;
+
+        buildingId_ = 0;
 
         ownerUid_ = 0;
 
+        cost_ = 0;
+
         currentNum_ = 0;
 
-        maxNum_ = 0;
+        pointConfigId_ = 0;
 
         return this;
       }
@@ -556,13 +604,13 @@ public final class BuildingInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo buildPartial() {
         emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo result = new emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo(this);
-        result.buildingId_ = buildingId_;
-        result.pointConfigId_ = pointConfigId_;
-        result.cost_ = cost_;
         result.refund_ = refund_;
-        result.ownerUid_ = ownerUid_;
-        result.currentNum_ = currentNum_;
         result.maxNum_ = maxNum_;
+        result.buildingId_ = buildingId_;
+        result.ownerUid_ = ownerUid_;
+        result.cost_ = cost_;
+        result.currentNum_ = currentNum_;
+        result.pointConfigId_ = pointConfigId_;
         onBuilt();
         return result;
       }
@@ -611,26 +659,26 @@ public final class BuildingInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo other) {
         if (other == emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.getDefaultInstance()) return this;
-        if (other.getBuildingId() != 0) {
-          setBuildingId(other.getBuildingId());
-        }
-        if (other.getPointConfigId() != 0) {
-          setPointConfigId(other.getPointConfigId());
-        }
-        if (other.getCost() != 0) {
-          setCost(other.getCost());
-        }
         if (other.getRefund() != 0) {
           setRefund(other.getRefund());
+        }
+        if (other.getMaxNum() != 0) {
+          setMaxNum(other.getMaxNum());
+        }
+        if (other.getBuildingId() != 0) {
+          setBuildingId(other.getBuildingId());
         }
         if (other.getOwnerUid() != 0) {
           setOwnerUid(other.getOwnerUid());
         }
+        if (other.getCost() != 0) {
+          setCost(other.getCost());
+        }
         if (other.getCurrentNum() != 0) {
           setCurrentNum(other.getCurrentNum());
         }
-        if (other.getMaxNum() != 0) {
-          setMaxNum(other.getMaxNum());
+        if (other.getPointConfigId() != 0) {
+          setPointConfigId(other.getPointConfigId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -661,101 +709,12 @@ public final class BuildingInfoOuterClass {
         return this;
       }
 
-      private int buildingId_ ;
-      /**
-       * <code>uint32 building_id = 1;</code>
-       * @return The buildingId.
-       */
-      @java.lang.Override
-      public int getBuildingId() {
-        return buildingId_;
-      }
-      /**
-       * <code>uint32 building_id = 1;</code>
-       * @param value The buildingId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuildingId(int value) {
-        
-        buildingId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 building_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuildingId() {
-        
-        buildingId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pointConfigId_ ;
-      /**
-       * <code>uint32 point_config_id = 2;</code>
-       * @return The pointConfigId.
-       */
-      @java.lang.Override
-      public int getPointConfigId() {
-        return pointConfigId_;
-      }
-      /**
-       * <code>uint32 point_config_id = 2;</code>
-       * @param value The pointConfigId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointConfigId(int value) {
-        
-        pointConfigId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_config_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointConfigId() {
-        
-        pointConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cost_ ;
-      /**
-       * <code>uint32 cost = 3;</code>
-       * @return The cost.
-       */
-      @java.lang.Override
-      public int getCost() {
-        return cost_;
-      }
-      /**
-       * <code>uint32 cost = 3;</code>
-       * @param value The cost to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCost(int value) {
-        
-        cost_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCost() {
-        
-        cost_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int refund_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refund = 5;</code>
        * @return The refund.
        */
@@ -764,6 +723,10 @@ public final class BuildingInfoOuterClass {
         return refund_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refund = 5;</code>
        * @param value The refund to set.
        * @return This builder for chaining.
@@ -775,6 +738,10 @@ public final class BuildingInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 refund = 5;</code>
        * @return This builder for chaining.
        */
@@ -785,70 +752,12 @@ public final class BuildingInfoOuterClass {
         return this;
       }
 
-      private int ownerUid_ ;
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @return The ownerUid.
-       */
-      @java.lang.Override
-      public int getOwnerUid() {
-        return ownerUid_;
-      }
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @param value The ownerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerUid(int value) {
-        
-        ownerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 owner_uid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerUid() {
-        
-        ownerUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int currentNum_ ;
-      /**
-       * <code>uint32 current_num = 7;</code>
-       * @return The currentNum.
-       */
-      @java.lang.Override
-      public int getCurrentNum() {
-        return currentNum_;
-      }
-      /**
-       * <code>uint32 current_num = 7;</code>
-       * @param value The currentNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurrentNum(int value) {
-        
-        currentNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 current_num = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurrentNum() {
-        
-        currentNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int maxNum_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 max_num = 8;</code>
        * @return The maxNum.
        */
@@ -857,6 +766,10 @@ public final class BuildingInfoOuterClass {
         return maxNum_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 max_num = 8;</code>
        * @param value The maxNum to set.
        * @return This builder for chaining.
@@ -868,12 +781,231 @@ public final class BuildingInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 max_num = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxNum() {
         
         maxNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int buildingId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 building_id = 1;</code>
+       * @return The buildingId.
+       */
+      @java.lang.Override
+      public int getBuildingId() {
+        return buildingId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 building_id = 1;</code>
+       * @param value The buildingId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuildingId(int value) {
+        
+        buildingId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 building_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuildingId() {
+        
+        buildingId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ownerUid_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 6;</code>
+       * @return The ownerUid.
+       */
+      @java.lang.Override
+      public int getOwnerUid() {
+        return ownerUid_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 6;</code>
+       * @param value The ownerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerUid(int value) {
+        
+        ownerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOwnerUid() {
+        
+        ownerUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cost_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 cost = 3;</code>
+       * @return The cost.
+       */
+      @java.lang.Override
+      public int getCost() {
+        return cost_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 cost = 3;</code>
+       * @param value The cost to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCost(int value) {
+        
+        cost_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 cost = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCost() {
+        
+        cost_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int currentNum_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 current_num = 7;</code>
+       * @return The currentNum.
+       */
+      @java.lang.Override
+      public int getCurrentNum() {
+        return currentNum_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 current_num = 7;</code>
+       * @param value The currentNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurrentNum(int value) {
+        
+        currentNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 current_num = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurrentNum() {
+        
+        currentNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pointConfigId_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 point_config_id = 2;</code>
+       * @return The pointConfigId.
+       */
+      @java.lang.Override
+      public int getPointConfigId() {
+        return pointConfigId_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 point_config_id = 2;</code>
+       * @param value The pointConfigId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointConfigId(int value) {
+        
+        pointConfigId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 point_config_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointConfigId() {
+        
+        pointConfigId_ = 0;
         onChanged();
         return this;
       }
@@ -944,11 +1076,11 @@ public final class BuildingInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022BuildingInfo.proto\"\223\001\n\014BuildingInfo\022\023\n" +
-      "\013building_id\030\001 \001(\r\022\027\n\017point_config_id\030\002 " +
-      "\001(\r\022\014\n\004cost\030\003 \001(\r\022\016\n\006refund\030\005 \001(\r\022\021\n\town" +
-      "er_uid\030\006 \001(\r\022\023\n\013current_num\030\007 \001(\r\022\017\n\007max" +
-      "_num\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\n\022BuildingInfo.proto\"\223\001\n\014BuildingInfo\022\016\n" +
+      "\006refund\030\005 \001(\r\022\017\n\007max_num\030\010 \001(\r\022\023\n\013buildi" +
+      "ng_id\030\001 \001(\r\022\021\n\towner_uid\030\006 \001(\r\022\014\n\004cost\030\003" +
+      " \001(\r\022\023\n\013current_num\030\007 \001(\r\022\027\n\017point_confi" +
+      "g_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -960,7 +1092,7 @@ public final class BuildingInfoOuterClass {
     internal_static_BuildingInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BuildingInfo_descriptor,
-        new java.lang.String[] { "BuildingId", "PointConfigId", "Cost", "Refund", "OwnerUid", "CurrentNum", "MaxNum", });
+        new java.lang.String[] { "Refund", "MaxNum", "BuildingId", "OwnerUid", "Cost", "CurrentNum", "PointConfigId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

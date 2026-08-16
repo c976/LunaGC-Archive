@@ -19,16 +19,16 @@ public final class ActiveMonsterGroupOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BGJGDPDJCJI = 14;</code>
-     * @return The bGJGDPDJCJI.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_LKLKONKMBNA = 11;</code>
+     * @return The unk37LKLKONKMBNA.
      */
-    int getBGJGDPDJCJI();
+    int getUnk37LKLKONKMBNA();
   }
   /**
-   * <pre>
-   * Obf: DIJGJHMPADN
-   * </pre>
-   *
    * Protobuf type {@code ActiveMonsterGroup}
    */
   public static final class ActiveMonsterGroup extends
@@ -73,9 +73,9 @@ public final class ActiveMonsterGroupOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 88: {
 
-              bGJGDPDJCJI_ = input.readUInt32();
+              unk37LKLKONKMBNA_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +110,19 @@ public final class ActiveMonsterGroupOuterClass {
               emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup.class, emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup.Builder.class);
     }
 
-    public static final int BGJGDPDJCJI_FIELD_NUMBER = 14;
-    private int bGJGDPDJCJI_;
+    public static final int UNK_37_LKLKONKMBNA_FIELD_NUMBER = 11;
+    private int unk37LKLKONKMBNA_;
     /**
-     * <code>uint32 BGJGDPDJCJI = 14;</code>
-     * @return The bGJGDPDJCJI.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 unk_37_LKLKONKMBNA = 11;</code>
+     * @return The unk37LKLKONKMBNA.
      */
     @java.lang.Override
-    public int getBGJGDPDJCJI() {
-      return bGJGDPDJCJI_;
+    public int getUnk37LKLKONKMBNA() {
+      return unk37LKLKONKMBNA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +139,8 @@ public final class ActiveMonsterGroupOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bGJGDPDJCJI_ != 0) {
-        output.writeUInt32(14, bGJGDPDJCJI_);
+      if (unk37LKLKONKMBNA_ != 0) {
+        output.writeUInt32(11, unk37LKLKONKMBNA_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +151,9 @@ public final class ActiveMonsterGroupOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bGJGDPDJCJI_ != 0) {
+      if (unk37LKLKONKMBNA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bGJGDPDJCJI_);
+          .computeUInt32Size(11, unk37LKLKONKMBNA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +170,8 @@ public final class ActiveMonsterGroupOuterClass {
       }
       emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup other = (emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup) obj;
 
-      if (getBGJGDPDJCJI()
-          != other.getBGJGDPDJCJI()) return false;
+      if (getUnk37LKLKONKMBNA()
+          != other.getUnk37LKLKONKMBNA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +183,8 @@ public final class ActiveMonsterGroupOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BGJGDPDJCJI_FIELD_NUMBER;
-      hash = (53 * hash) + getBGJGDPDJCJI();
+      hash = (37 * hash) + UNK_37_LKLKONKMBNA_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk37LKLKONKMBNA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -277,10 +281,6 @@ public final class ActiveMonsterGroupOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DIJGJHMPADN
-     * </pre>
-     *
      * Protobuf type {@code ActiveMonsterGroup}
      */
     public static final class Builder extends
@@ -318,7 +318,7 @@ public final class ActiveMonsterGroupOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bGJGDPDJCJI_ = 0;
+        unk37LKLKONKMBNA_ = 0;
 
         return this;
       }
@@ -346,7 +346,7 @@ public final class ActiveMonsterGroupOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup buildPartial() {
         emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup result = new emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup(this);
-        result.bGJGDPDJCJI_ = bGJGDPDJCJI_;
+        result.unk37LKLKONKMBNA_ = unk37LKLKONKMBNA_;
         onBuilt();
         return result;
       }
@@ -395,8 +395,8 @@ public final class ActiveMonsterGroupOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup other) {
         if (other == emu.grasscutter.net.proto.ActiveMonsterGroupOuterClass.ActiveMonsterGroup.getDefaultInstance()) return this;
-        if (other.getBGJGDPDJCJI() != 0) {
-          setBGJGDPDJCJI(other.getBGJGDPDJCJI());
+        if (other.getUnk37LKLKONKMBNA() != 0) {
+          setUnk37LKLKONKMBNA(other.getUnk37LKLKONKMBNA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +427,45 @@ public final class ActiveMonsterGroupOuterClass {
         return this;
       }
 
-      private int bGJGDPDJCJI_ ;
+      private int unk37LKLKONKMBNA_ ;
       /**
-       * <code>uint32 BGJGDPDJCJI = 14;</code>
-       * @return The bGJGDPDJCJI.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_LKLKONKMBNA = 11;</code>
+       * @return The unk37LKLKONKMBNA.
        */
       @java.lang.Override
-      public int getBGJGDPDJCJI() {
-        return bGJGDPDJCJI_;
+      public int getUnk37LKLKONKMBNA() {
+        return unk37LKLKONKMBNA_;
       }
       /**
-       * <code>uint32 BGJGDPDJCJI = 14;</code>
-       * @param value The bGJGDPDJCJI to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_LKLKONKMBNA = 11;</code>
+       * @param value The unk37LKLKONKMBNA to set.
        * @return This builder for chaining.
        */
-      public Builder setBGJGDPDJCJI(int value) {
+      public Builder setUnk37LKLKONKMBNA(int value) {
         
-        bGJGDPDJCJI_ = value;
+        unk37LKLKONKMBNA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BGJGDPDJCJI = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 unk_37_LKLKONKMBNA = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBGJGDPDJCJI() {
+      public Builder clearUnk37LKLKONKMBNA() {
         
-        bGJGDPDJCJI_ = 0;
+        unk37LKLKONKMBNA_ = 0;
         onChanged();
         return this;
       }
@@ -524,9 +536,9 @@ public final class ActiveMonsterGroupOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ActiveMonsterGroup.proto\")\n\022ActiveMons" +
-      "terGroup\022\023\n\013BGJGDPDJCJI\030\016 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\030ActiveMonsterGroup.proto\"0\n\022ActiveMons" +
+      "terGroup\022\032\n\022unk_37_LKLKONKMBNA\030\013 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -537,7 +549,7 @@ public final class ActiveMonsterGroupOuterClass {
     internal_static_ActiveMonsterGroup_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActiveMonsterGroup_descriptor,
-        new java.lang.String[] { "BGJGDPDJCJI", });
+        new java.lang.String[] { "Unk37LKLKONKMBNA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

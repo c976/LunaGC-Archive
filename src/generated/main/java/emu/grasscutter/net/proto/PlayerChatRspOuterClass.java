@@ -19,20 +19,20 @@ public final class PlayerChatRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 chat_forbidden_endtime = 15;</code>
+     * <code>uint32 chat_forbidden_endtime = 4;</code>
      * @return The chatForbiddenEndtime.
      */
     int getChatForbiddenEndtime();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 20082
+   * CmdId: 6336
    * </pre>
    *
    * Protobuf type {@code PlayerChatRsp}
@@ -79,12 +79,12 @@ public final class PlayerChatRspOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 32: {
 
               chatForbiddenEndtime_ = input.readUInt32();
               break;
@@ -121,26 +121,26 @@ public final class PlayerChatRspOuterClass {
               emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp.class, emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int CHAT_FORBIDDEN_ENDTIME_FIELD_NUMBER = 15;
+    public static final int CHAT_FORBIDDEN_ENDTIME_FIELD_NUMBER = 4;
     private int chatForbiddenEndtime_;
     /**
-     * <code>uint32 chat_forbidden_endtime = 15;</code>
+     * <code>uint32 chat_forbidden_endtime = 4;</code>
      * @return The chatForbiddenEndtime.
      */
     @java.lang.Override
     public int getChatForbiddenEndtime() {
       return chatForbiddenEndtime_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,10 +158,10 @@ public final class PlayerChatRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (chatForbiddenEndtime_ != 0) {
-        output.writeUInt32(15, chatForbiddenEndtime_);
+        output.writeUInt32(4, chatForbiddenEndtime_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +174,11 @@ public final class PlayerChatRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (chatForbiddenEndtime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, chatForbiddenEndtime_);
+          .computeUInt32Size(4, chatForbiddenEndtime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class PlayerChatRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp other = (emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getChatForbiddenEndtime()
           != other.getChatForbiddenEndtime()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class PlayerChatRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CHAT_FORBIDDEN_ENDTIME_FIELD_NUMBER;
       hash = (53 * hash) + getChatForbiddenEndtime();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class PlayerChatRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20082
+     * CmdId: 6336
      * </pre>
      *
      * Protobuf type {@code PlayerChatRsp}
@@ -351,9 +351,9 @@ public final class PlayerChatRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         chatForbiddenEndtime_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class PlayerChatRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp result = new emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp(this);
-        result.retcode_ = retcode_;
         result.chatForbiddenEndtime_ = chatForbiddenEndtime_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class PlayerChatRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getChatForbiddenEndtime() != 0) {
           setChatForbiddenEndtime(other.getChatForbiddenEndtime());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class PlayerChatRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int chatForbiddenEndtime_ ;
       /**
-       * <code>uint32 chat_forbidden_endtime = 15;</code>
+       * <code>uint32 chat_forbidden_endtime = 4;</code>
        * @return The chatForbiddenEndtime.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class PlayerChatRspOuterClass {
         return chatForbiddenEndtime_;
       }
       /**
-       * <code>uint32 chat_forbidden_endtime = 15;</code>
+       * <code>uint32 chat_forbidden_endtime = 4;</code>
        * @param value The chatForbiddenEndtime to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class PlayerChatRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chat_forbidden_endtime = 15;</code>
+       * <code>uint32 chat_forbidden_endtime = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearChatForbiddenEndtime() {
         
         chatForbiddenEndtime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -594,9 +594,9 @@ public final class PlayerChatRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023PlayerChatRsp.proto\"@\n\rPlayerChatRsp\022\017" +
-      "\n\007retcode\030\n \001(\005\022\036\n\026chat_forbidden_endtim" +
-      "e\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "\n\023PlayerChatRsp.proto\"@\n\rPlayerChatRsp\022\036" +
+      "\n\026chat_forbidden_endtime\030\004 \001(\r\022\017\n\007retcod" +
+      "e\030\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class PlayerChatRspOuterClass {
     internal_static_PlayerChatRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerChatRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ChatForbiddenEndtime", });
+        new java.lang.String[] { "ChatForbiddenEndtime", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

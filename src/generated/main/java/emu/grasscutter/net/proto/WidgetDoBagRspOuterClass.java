@@ -19,20 +19,20 @@ public final class WidgetDoBagRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 27385
+   * CmdId: 28887
    * </pre>
    *
    * Protobuf type {@code WidgetDoBagRsp}
@@ -79,12 +79,12 @@ public final class WidgetDoBagRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 64: {
 
               materialId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -121,10 +121,10 @@ public final class WidgetDoBagRspOuterClass {
               emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.class, emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 5;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 8;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class WidgetDoBagRspOuterClass {
       return materialId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,10 +158,10 @@ public final class WidgetDoBagRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (materialId_ != 0) {
-        output.writeUInt32(5, materialId_);
+        output.writeUInt32(8, materialId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +174,11 @@ public final class WidgetDoBagRspOuterClass {
       size = 0;
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, materialId_);
+          .computeUInt32Size(8, materialId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class WidgetDoBagRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27385
+     * CmdId: 28887
      * </pre>
      *
      * Protobuf type {@code WidgetDoBagRsp}
@@ -468,7 +468,7 @@ public final class WidgetDoBagRspOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -476,7 +476,7 @@ public final class WidgetDoBagRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class WidgetDoBagRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -499,7 +499,7 @@ public final class WidgetDoBagRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class WidgetDoBagRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class WidgetDoBagRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -595,7 +595,7 @@ public final class WidgetDoBagRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024WidgetDoBagRsp.proto\"6\n\016WidgetDoBagRsp" +
-      "\022\023\n\013material_id\030\005 \001(\r\022\017\n\007retcode\030\t \001(\005B\033" +
+      "\022\023\n\013material_id\030\010 \001(\r\022\017\n\007retcode\030\017 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

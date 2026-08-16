@@ -19,85 +19,81 @@ public final class LanV3BoatSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string nickname = 7;</code>
-     * @return The nickname.
-     */
-    java.lang.String getNickname();
-    /**
-     * <code>string nickname = 7;</code>
-     * @return The bytes for nickname.
-     */
-    com.google.protobuf.ByteString
-        getNicknameBytes();
-
-    /**
-     * <code>uint32 uid = 14;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>uint32 head_image = 8;</code>
+     * <code>uint32 head_image = 4;</code>
      * @return The headImage.
      */
     int getHeadImage();
 
     /**
-     * <code>string online_id = 9;</code>
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    boolean hasProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+    /**
+     * <code>uint32 uid = 11;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>string online_id = 12;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string online_id = 9;</code>
+     * <code>string online_id = 12;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>string nickname = 13;</code>
+     * @return The nickname.
+     */
+    java.lang.String getNickname();
+    /**
+     * <code>string nickname = 13;</code>
+     * @return The bytes for nickname.
+     */
+    com.google.protobuf.ByteString
+        getNicknameBytes();
+
+    /**
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
         getCardListList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     int getCardListCount();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
         getCardListOrBuilderList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
         int index);
-
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: PIMMEBGGMGO
-   * </pre>
-   *
    * Protobuf type {@code LanV3BoatSettleInfo}
    */
   public static final class LanV3BoatSettleInfo extends
@@ -110,8 +106,8 @@ public final class LanV3BoatSettleInfoOuterClass {
       super(builder);
     }
     private LanV3BoatSettleInfo() {
-      nickname_ = "";
       onlineId_ = "";
+      nickname_ = "";
       cardList_ = java.util.Collections.emptyList();
     }
 
@@ -146,33 +142,12 @@ public final class LanV3BoatSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nickname_ = s;
-              break;
-            }
-            case 64: {
+            case 32: {
 
               headImage_ = input.readUInt32();
               break;
             }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              cardList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 98: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -185,9 +160,30 @@ public final class LanV3BoatSettleInfoOuterClass {
 
               break;
             }
-            case 112: {
+            case 88: {
 
               uid_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              onlineId_ = s;
+              break;
+            }
+            case 106: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              nickname_ = s;
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              cardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -225,59 +221,10 @@ public final class LanV3BoatSettleInfoOuterClass {
               emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.class, emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.Builder.class);
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 7;
-    private volatile java.lang.Object nickname_;
-    /**
-     * <code>string nickname = 7;</code>
-     * @return The nickname.
-     */
-    @java.lang.Override
-    public java.lang.String getNickname() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nickname_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string nickname = 7;</code>
-     * @return The bytes for nickname.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNicknameBytes() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nickname_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int UID_FIELD_NUMBER = 14;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 14;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int HEAD_IMAGE_FIELD_NUMBER = 8;
+    public static final int HEAD_IMAGE_FIELD_NUMBER = 4;
     private int headImage_;
     /**
-     * <code>uint32 head_image = 8;</code>
+     * <code>uint32 head_image = 4;</code>
      * @return The headImage.
      */
     @java.lang.Override
@@ -285,10 +232,47 @@ public final class LanV3BoatSettleInfoOuterClass {
       return headImage_;
     }
 
-    public static final int ONLINE_ID_FIELD_NUMBER = 9;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
+    }
+
+    public static final int UID_FIELD_NUMBER = 11;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 11;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int ONLINE_ID_FIELD_NUMBER = 12;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string online_id = 9;</code>
+     * <code>string online_id = 12;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -305,7 +289,7 @@ public final class LanV3BoatSettleInfoOuterClass {
       }
     }
     /**
-     * <code>string online_id = 9;</code>
+     * <code>string online_id = 12;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -323,17 +307,55 @@ public final class LanV3BoatSettleInfoOuterClass {
       }
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 10;
+    public static final int NICKNAME_FIELD_NUMBER = 13;
+    private volatile java.lang.Object nickname_;
+    /**
+     * <code>string nickname = 13;</code>
+     * @return The nickname.
+     */
+    @java.lang.Override
+    public java.lang.String getNickname() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        nickname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string nickname = 13;</code>
+     * @return The bytes for nickname.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNicknameBytes() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        nickname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CARD_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
       return cardList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
@@ -341,52 +363,26 @@ public final class LanV3BoatSettleInfoOuterClass {
       return cardList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     @java.lang.Override
     public int getCardListCount() {
       return cardList_.size();
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
       return cardList_.get(index);
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
         int index) {
       return cardList_.get(index);
-    }
-
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -403,23 +399,23 @@ public final class LanV3BoatSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nickname_);
-      }
       if (headImage_ != 0) {
-        output.writeUInt32(8, headImage_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, onlineId_);
-      }
-      for (int i = 0; i < cardList_.size(); i++) {
-        output.writeMessage(10, cardList_.get(i));
+        output.writeUInt32(4, headImage_);
       }
       if (profilePicture_ != null) {
-        output.writeMessage(12, getProfilePicture());
+        output.writeMessage(10, getProfilePicture());
       }
       if (uid_ != 0) {
-        output.writeUInt32(14, uid_);
+        output.writeUInt32(11, uid_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, onlineId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, nickname_);
+      }
+      for (int i = 0; i < cardList_.size(); i++) {
+        output.writeMessage(14, cardList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -430,27 +426,27 @@ public final class LanV3BoatSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nickname_);
-      }
       if (headImage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, headImage_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, onlineId_);
-      }
-      for (int i = 0; i < cardList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, cardList_.get(i));
+          .computeUInt32Size(4, headImage_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getProfilePicture());
+          .computeMessageSize(10, getProfilePicture());
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, uid_);
+          .computeUInt32Size(11, uid_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, onlineId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, nickname_);
+      }
+      for (int i = 0; i < cardList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, cardList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -467,21 +463,21 @@ public final class LanV3BoatSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo other = (emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo) obj;
 
-      if (!getNickname()
-          .equals(other.getNickname())) return false;
-      if (getUid()
-          != other.getUid()) return false;
       if (getHeadImage()
           != other.getHeadImage()) return false;
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
-      if (!getCardListList()
-          .equals(other.getCardListList())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
+      if (getUid()
+          != other.getUid()) return false;
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
+      if (!getNickname()
+          .equals(other.getNickname())) return false;
+      if (!getCardListList()
+          .equals(other.getCardListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -493,21 +489,21 @@ public final class LanV3BoatSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickname().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + HEAD_IMAGE_FIELD_NUMBER;
       hash = (53 * hash) + getHeadImage();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
-      if (getCardListCount() > 0) {
-        hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCardListList().hashCode();
-      }
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
+      }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
+      if (getCardListCount() > 0) {
+        hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCardListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -605,10 +601,6 @@ public final class LanV3BoatSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PIMMEBGGMGO
-     * </pre>
-     *
      * Protobuf type {@code LanV3BoatSettleInfo}
      */
     public static final class Builder extends
@@ -647,25 +639,25 @@ public final class LanV3BoatSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nickname_ = "";
-
-        uid_ = 0;
-
         headImage_ = 0;
 
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+        uid_ = 0;
+
         onlineId_ = "";
+
+        nickname_ = "";
 
         if (cardListBuilder_ == null) {
           cardList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           cardListBuilder_.clear();
-        }
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
         }
         return this;
       }
@@ -694,10 +686,15 @@ public final class LanV3BoatSettleInfoOuterClass {
       public emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo buildPartial() {
         emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo result = new emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.nickname_ = nickname_;
-        result.uid_ = uid_;
         result.headImage_ = headImage_;
+        if (profilePictureBuilder_ == null) {
+          result.profilePicture_ = profilePicture_;
+        } else {
+          result.profilePicture_ = profilePictureBuilder_.build();
+        }
+        result.uid_ = uid_;
         result.onlineId_ = onlineId_;
+        result.nickname_ = nickname_;
         if (cardListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             cardList_ = java.util.Collections.unmodifiableList(cardList_);
@@ -706,11 +703,6 @@ public final class LanV3BoatSettleInfoOuterClass {
           result.cardList_ = cardList_;
         } else {
           result.cardList_ = cardListBuilder_.build();
-        }
-        if (profilePictureBuilder_ == null) {
-          result.profilePicture_ = profilePicture_;
-        } else {
-          result.profilePicture_ = profilePictureBuilder_.build();
         }
         onBuilt();
         return result;
@@ -760,18 +752,21 @@ public final class LanV3BoatSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo other) {
         if (other == emu.grasscutter.net.proto.LanV3BoatSettleInfoOuterClass.LanV3BoatSettleInfo.getDefaultInstance()) return this;
-        if (!other.getNickname().isEmpty()) {
-          nickname_ = other.nickname_;
-          onChanged();
+        if (other.getHeadImage() != 0) {
+          setHeadImage(other.getHeadImage());
+        }
+        if (other.hasProfilePicture()) {
+          mergeProfilePicture(other.getProfilePicture());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
-        if (other.getHeadImage() != 0) {
-          setHeadImage(other.getHeadImage());
-        }
         if (!other.getOnlineId().isEmpty()) {
           onlineId_ = other.onlineId_;
+          onChanged();
+        }
+        if (!other.getNickname().isEmpty()) {
+          nickname_ = other.nickname_;
           onChanged();
         }
         if (cardListBuilder_ == null) {
@@ -799,9 +794,6 @@ public final class LanV3BoatSettleInfoOuterClass {
               cardListBuilder_.addAllMessages(other.cardList_);
             }
           }
-        }
-        if (other.hasProfilePicture()) {
-          mergeProfilePicture(other.getProfilePicture());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -833,116 +825,9 @@ public final class LanV3BoatSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.lang.Object nickname_ = "";
-      /**
-       * <code>string nickname = 7;</code>
-       * @return The nickname.
-       */
-      public java.lang.String getNickname() {
-        java.lang.Object ref = nickname_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nickname_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string nickname = 7;</code>
-       * @return The bytes for nickname.
-       */
-      public com.google.protobuf.ByteString
-          getNicknameBytes() {
-        java.lang.Object ref = nickname_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nickname_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string nickname = 7;</code>
-       * @param value The nickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNickname(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nickname_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nickname = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNickname() {
-        
-        nickname_ = getDefaultInstance().getNickname();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nickname = 7;</code>
-       * @param value The bytes for nickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNicknameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        nickname_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int headImage_ ;
       /**
-       * <code>uint32 head_image = 8;</code>
+       * <code>uint32 head_image = 4;</code>
        * @return The headImage.
        */
       @java.lang.Override
@@ -950,7 +835,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return headImage_;
       }
       /**
-       * <code>uint32 head_image = 8;</code>
+       * <code>uint32 head_image = 4;</code>
        * @param value The headImage to set.
        * @return This builder for chaining.
        */
@@ -961,7 +846,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 head_image = 8;</code>
+       * <code>uint32 head_image = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearHeadImage() {
@@ -971,9 +856,159 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      public boolean hasProfilePicture() {
+        return profilePictureBuilder_ != null || profilePicture_ != null;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       * @return The profilePicture.
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        } else {
+          return profilePictureBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          profilePicture_ = value;
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public Builder setProfilePicture(
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = builderForValue.build();
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (profilePicture_ != null) {
+            profilePicture_ =
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
+          } else {
+            profilePicture_ = value;
+          }
+          onChanged();
+        } else {
+          profilePictureBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public Builder clearProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+          onChanged();
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
+        
+        onChanged();
+        return getProfilePictureFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        if (profilePictureBuilder_ != null) {
+          return profilePictureBuilder_.getMessageOrBuilder();
+        } else {
+          return profilePicture_ == null ?
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
+          getProfilePictureFieldBuilder() {
+        if (profilePictureBuilder_ == null) {
+          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
+                  getProfilePicture(),
+                  getParentForChildren(),
+                  isClean());
+          profilePicture_ = null;
+        }
+        return profilePictureBuilder_;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 11;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 11;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object onlineId_ = "";
       /**
-       * <code>string online_id = 9;</code>
+       * <code>string online_id = 12;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -989,7 +1024,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 9;</code>
+       * <code>string online_id = 12;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -1006,7 +1041,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 9;</code>
+       * <code>string online_id = 12;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -1021,7 +1056,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 9;</code>
+       * <code>string online_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -1031,7 +1066,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 9;</code>
+       * <code>string online_id = 12;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -1043,6 +1078,82 @@ public final class LanV3BoatSettleInfoOuterClass {
   checkByteStringIsUtf8(value);
         
         onlineId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object nickname_ = "";
+      /**
+       * <code>string nickname = 13;</code>
+       * @return The nickname.
+       */
+      public java.lang.String getNickname() {
+        java.lang.Object ref = nickname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          nickname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 13;</code>
+       * @return The bytes for nickname.
+       */
+      public com.google.protobuf.ByteString
+          getNicknameBytes() {
+        java.lang.Object ref = nickname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          nickname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 13;</code>
+       * @param value The nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNickname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        nickname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNickname() {
+        
+        nickname_ = getDefaultInstance().getNickname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 13;</code>
+       * @param value The bytes for nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNicknameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        nickname_ = value;
         onChanged();
         return this;
       }
@@ -1060,7 +1171,7 @@ public final class LanV3BoatSettleInfoOuterClass {
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> cardListBuilder_;
 
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
         if (cardListBuilder_ == null) {
@@ -1070,7 +1181,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public int getCardListCount() {
         if (cardListBuilder_ == null) {
@@ -1080,7 +1191,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -1090,7 +1201,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1107,7 +1218,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1121,7 +1232,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder addCardList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
         if (cardListBuilder_ == null) {
@@ -1137,7 +1248,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -1154,7 +1265,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder addCardList(
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1168,7 +1279,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -1182,7 +1293,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder addAllCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -1197,7 +1308,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder clearCardList() {
         if (cardListBuilder_ == null) {
@@ -1210,7 +1321,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public Builder removeCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -1223,14 +1334,14 @@ public final class LanV3BoatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getCardListBuilder(
           int index) {
         return getCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
           int index) {
@@ -1240,7 +1351,7 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
            getCardListOrBuilderList() {
@@ -1251,14 +1362,14 @@ public final class LanV3BoatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder() {
         return getCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder(
           int index) {
@@ -1266,7 +1377,7 @@ public final class LanV3BoatSettleInfoOuterClass {
             index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
            getCardListBuilderList() {
@@ -1285,125 +1396,6 @@ public final class LanV3BoatSettleInfoOuterClass {
           cardList_ = null;
         }
         return cardListBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      public boolean hasProfilePicture() {
-        return profilePictureBuilder_ != null || profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       * @return The profilePicture.
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        } else {
-          return profilePictureBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          profilePicture_ = value;
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder setProfilePicture(
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = builderForValue.build();
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (profilePicture_ != null) {
-            profilePicture_ =
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
-          } else {
-            profilePicture_ = value;
-          }
-          onChanged();
-        } else {
-          profilePictureBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder clearProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-          onChanged();
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
-        
-        onChanged();
-        return getProfilePictureFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        if (profilePictureBuilder_ != null) {
-          return profilePictureBuilder_.getMessageOrBuilder();
-        } else {
-          return profilePicture_ == null ?
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
-          getProfilePictureFieldBuilder() {
-        if (profilePictureBuilder_ == null) {
-          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
-                  getProfilePicture(),
-                  getParentForChildren(),
-                  isClean());
-          profilePicture_ = null;
-        }
-        return profilePictureBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1474,11 +1466,11 @@ public final class LanV3BoatSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031LanV3BoatSettleInfo.proto\032\033ExhibitionD" +
       "isplayInfo.proto\032\024ProfilePicture.proto\"\260" +
-      "\001\n\023LanV3BoatSettleInfo\022\020\n\010nickname\030\007 \001(\t" +
-      "\022\013\n\003uid\030\016 \001(\r\022\022\n\nhead_image\030\010 \001(\r\022\021\n\tonl" +
-      "ine_id\030\t \001(\t\022)\n\tcard_list\030\n \003(\0132\026.Exhibi" +
-      "tionDisplayInfo\022(\n\017profile_picture\030\014 \001(\013" +
-      "2\017.ProfilePictureB\033\n\031emu.grasscutter.net" +
+      "\001\n\023LanV3BoatSettleInfo\022\022\n\nhead_image\030\004 \001" +
+      "(\r\022(\n\017profile_picture\030\n \001(\0132\017.ProfilePic" +
+      "ture\022\013\n\003uid\030\013 \001(\r\022\021\n\tonline_id\030\014 \001(\t\022\020\n\010" +
+      "nickname\030\r \001(\t\022)\n\tcard_list\030\016 \003(\0132\026.Exhi" +
+      "bitionDisplayInfoB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1492,7 +1484,7 @@ public final class LanV3BoatSettleInfoOuterClass {
     internal_static_LanV3BoatSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanV3BoatSettleInfo_descriptor,
-        new java.lang.String[] { "Nickname", "Uid", "HeadImage", "OnlineId", "CardList", "ProfilePicture", });
+        new java.lang.String[] { "HeadImage", "ProfilePicture", "Uid", "OnlineId", "Nickname", "CardList", });
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }

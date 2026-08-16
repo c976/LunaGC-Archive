@@ -19,15 +19,14 @@ public final class GadgetChangeLevelTagRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 9742
-   * Obf: FNFAIBECOME
+   * CmdId: 25703
    * </pre>
    *
    * Protobuf type {@code GadgetChangeLevelTagRsp}
@@ -74,7 +73,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class GadgetChangeLevelTagRspOuterClass {
               emu.grasscutter.net.proto.GadgetChangeLevelTagRspOuterClass.GadgetChangeLevelTagRsp.class, emu.grasscutter.net.proto.GadgetChangeLevelTagRspOuterClass.GadgetChangeLevelTagRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(3, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9742
-     * Obf: FNFAIBECOME
+     * CmdId: 25703
      * </pre>
      *
      * Protobuf type {@code GadgetChangeLevelTagRsp}
@@ -431,7 +429,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class GadgetChangeLevelTagRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GadgetChangeLevelTagRsp.proto\"*\n\027Gadge" +
-      "tChangeLevelTagRsp\022\017\n\007retcode\030\017 \001(\005B\033\n\031e" +
+      "tChangeLevelTagRsp\022\017\n\007retcode\030\003 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

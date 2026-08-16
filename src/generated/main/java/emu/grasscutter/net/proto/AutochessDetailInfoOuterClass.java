@@ -19,10 +19,10 @@ public final class AutochessDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HLMJNGBMELH = 5;</code>
-     * @return The hLMJNGBMELH.
+     * <code>uint32 MAICCDGLKOJ = 9;</code>
+     * @return The mAICCDGLKOJ.
      */
-    int getHLMJNGBMELH();
+    int getMAICCDGLKOJ();
   }
   /**
    * Protobuf type {@code AutochessDetailInfo}
@@ -69,9 +69,9 @@ public final class AutochessDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 72: {
 
-              hLMJNGBMELH_ = input.readUInt32();
+              mAICCDGLKOJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -106,15 +106,15 @@ public final class AutochessDetailInfoOuterClass {
               emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo.class, emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo.Builder.class);
     }
 
-    public static final int HLMJNGBMELH_FIELD_NUMBER = 5;
-    private int hLMJNGBMELH_;
+    public static final int MAICCDGLKOJ_FIELD_NUMBER = 9;
+    private int mAICCDGLKOJ_;
     /**
-     * <code>uint32 HLMJNGBMELH = 5;</code>
-     * @return The hLMJNGBMELH.
+     * <code>uint32 MAICCDGLKOJ = 9;</code>
+     * @return The mAICCDGLKOJ.
      */
     @java.lang.Override
-    public int getHLMJNGBMELH() {
-      return hLMJNGBMELH_;
+    public int getMAICCDGLKOJ() {
+      return mAICCDGLKOJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +131,8 @@ public final class AutochessDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hLMJNGBMELH_ != 0) {
-        output.writeUInt32(5, hLMJNGBMELH_);
+      if (mAICCDGLKOJ_ != 0) {
+        output.writeUInt32(9, mAICCDGLKOJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +143,9 @@ public final class AutochessDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hLMJNGBMELH_ != 0) {
+      if (mAICCDGLKOJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, hLMJNGBMELH_);
+          .computeUInt32Size(9, mAICCDGLKOJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +162,8 @@ public final class AutochessDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo other = (emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo) obj;
 
-      if (getHLMJNGBMELH()
-          != other.getHLMJNGBMELH()) return false;
+      if (getMAICCDGLKOJ()
+          != other.getMAICCDGLKOJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +175,8 @@ public final class AutochessDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HLMJNGBMELH_FIELD_NUMBER;
-      hash = (53 * hash) + getHLMJNGBMELH();
+      hash = (37 * hash) + MAICCDGLKOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getMAICCDGLKOJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,7 +310,7 @@ public final class AutochessDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hLMJNGBMELH_ = 0;
+        mAICCDGLKOJ_ = 0;
 
         return this;
       }
@@ -338,7 +338,7 @@ public final class AutochessDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo buildPartial() {
         emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo result = new emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo(this);
-        result.hLMJNGBMELH_ = hLMJNGBMELH_;
+        result.mAICCDGLKOJ_ = mAICCDGLKOJ_;
         onBuilt();
         return result;
       }
@@ -387,8 +387,8 @@ public final class AutochessDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo other) {
         if (other == emu.grasscutter.net.proto.AutochessDetailInfoOuterClass.AutochessDetailInfo.getDefaultInstance()) return this;
-        if (other.getHLMJNGBMELH() != 0) {
-          setHLMJNGBMELH(other.getHLMJNGBMELH());
+        if (other.getMAICCDGLKOJ() != 0) {
+          setMAICCDGLKOJ(other.getMAICCDGLKOJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,33 +419,33 @@ public final class AutochessDetailInfoOuterClass {
         return this;
       }
 
-      private int hLMJNGBMELH_ ;
+      private int mAICCDGLKOJ_ ;
       /**
-       * <code>uint32 HLMJNGBMELH = 5;</code>
-       * @return The hLMJNGBMELH.
+       * <code>uint32 MAICCDGLKOJ = 9;</code>
+       * @return The mAICCDGLKOJ.
        */
       @java.lang.Override
-      public int getHLMJNGBMELH() {
-        return hLMJNGBMELH_;
+      public int getMAICCDGLKOJ() {
+        return mAICCDGLKOJ_;
       }
       /**
-       * <code>uint32 HLMJNGBMELH = 5;</code>
-       * @param value The hLMJNGBMELH to set.
+       * <code>uint32 MAICCDGLKOJ = 9;</code>
+       * @param value The mAICCDGLKOJ to set.
        * @return This builder for chaining.
        */
-      public Builder setHLMJNGBMELH(int value) {
+      public Builder setMAICCDGLKOJ(int value) {
         
-        hLMJNGBMELH_ = value;
+        mAICCDGLKOJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HLMJNGBMELH = 5;</code>
+       * <code>uint32 MAICCDGLKOJ = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHLMJNGBMELH() {
+      public Builder clearMAICCDGLKOJ() {
         
-        hLMJNGBMELH_ = 0;
+        mAICCDGLKOJ_ = 0;
         onChanged();
         return this;
       }
@@ -517,7 +517,7 @@ public final class AutochessDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AutochessDetailInfo.proto\"*\n\023Autochess" +
-      "DetailInfo\022\023\n\013HLMJNGBMELH\030\005 \001(\rB\033\n\031emu.g" +
+      "DetailInfo\022\023\n\013MAICCDGLKOJ\030\t \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -529,7 +529,7 @@ public final class AutochessDetailInfoOuterClass {
     internal_static_AutochessDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AutochessDetailInfo_descriptor,
-        new java.lang.String[] { "HLMJNGBMELH", });
+        new java.lang.String[] { "MAICCDGLKOJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

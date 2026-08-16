@@ -15,57 +15,53 @@ public final class BrickBreakerStageTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: EDEDAHIPILO
-   * </pre>
-   *
    * Protobuf enum {@code BrickBreakerStageType}
    */
   public enum BrickBreakerStageType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>BRICK_BREAKER_STAGE_PREPARE = 0;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PREPARE = 0;</code>
      */
-    BRICK_BREAKER_STAGE_PREPARE(0),
+    BNHMPAFHNOF_BRICK_BREAKER_STAGE_PREPARE(0),
     /**
-     * <code>BRICK_BREAKER_STAGE_PICK = 1;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PICK = 1;</code>
      */
-    BRICK_BREAKER_STAGE_PICK(1),
+    BNHMPAFHNOF_BRICK_BREAKER_STAGE_PICK(1),
     /**
-     * <code>BRICK_BREAKER_STAGE_GAME = 2;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_GAME = 2;</code>
      */
-    BRICK_BREAKER_STAGE_GAME(2),
+    BNHMPAFHNOF_BRICK_BREAKER_STAGE_GAME(2),
     /**
-     * <code>BRICK_BREAKER_STAGE_PLAY = 3;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PLAY = 3;</code>
      */
-    BRICK_BREAKER_STAGE_PLAY(3),
+    BNHMPAFHNOF_BRICK_BREAKER_STAGE_PLAY(3),
     /**
-     * <code>BRICK_BREAKER_STAGE_SETTLE = 4;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_SETTLE = 4;</code>
      */
-    BRICK_BREAKER_STAGE_SETTLE(4),
+    BNHMPAFHNOF_BRICK_BREAKER_STAGE_SETTLE(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>BRICK_BREAKER_STAGE_PREPARE = 0;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PREPARE = 0;</code>
      */
-    public static final int BRICK_BREAKER_STAGE_PREPARE_VALUE = 0;
+    public static final int BNHMPAFHNOF_BRICK_BREAKER_STAGE_PREPARE_VALUE = 0;
     /**
-     * <code>BRICK_BREAKER_STAGE_PICK = 1;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PICK = 1;</code>
      */
-    public static final int BRICK_BREAKER_STAGE_PICK_VALUE = 1;
+    public static final int BNHMPAFHNOF_BRICK_BREAKER_STAGE_PICK_VALUE = 1;
     /**
-     * <code>BRICK_BREAKER_STAGE_GAME = 2;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_GAME = 2;</code>
      */
-    public static final int BRICK_BREAKER_STAGE_GAME_VALUE = 2;
+    public static final int BNHMPAFHNOF_BRICK_BREAKER_STAGE_GAME_VALUE = 2;
     /**
-     * <code>BRICK_BREAKER_STAGE_PLAY = 3;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_PLAY = 3;</code>
      */
-    public static final int BRICK_BREAKER_STAGE_PLAY_VALUE = 3;
+    public static final int BNHMPAFHNOF_BRICK_BREAKER_STAGE_PLAY_VALUE = 3;
     /**
-     * <code>BRICK_BREAKER_STAGE_SETTLE = 4;</code>
+     * <code>BNHMPAFHNOF_BRICK_BREAKER_STAGE_SETTLE = 4;</code>
      */
-    public static final int BRICK_BREAKER_STAGE_SETTLE_VALUE = 4;
+    public static final int BNHMPAFHNOF_BRICK_BREAKER_STAGE_SETTLE_VALUE = 4;
 
 
     public final int getNumber() {
@@ -92,11 +88,11 @@ public final class BrickBreakerStageTypeOuterClass {
      */
     public static BrickBreakerStageType forNumber(int value) {
       switch (value) {
-        case 0: return BRICK_BREAKER_STAGE_PREPARE;
-        case 1: return BRICK_BREAKER_STAGE_PICK;
-        case 2: return BRICK_BREAKER_STAGE_GAME;
-        case 3: return BRICK_BREAKER_STAGE_PLAY;
-        case 4: return BRICK_BREAKER_STAGE_SETTLE;
+        case 0: return BNHMPAFHNOF_BRICK_BREAKER_STAGE_PREPARE;
+        case 1: return BNHMPAFHNOF_BRICK_BREAKER_STAGE_PICK;
+        case 2: return BNHMPAFHNOF_BRICK_BREAKER_STAGE_GAME;
+        case 3: return BNHMPAFHNOF_BRICK_BREAKER_STAGE_PLAY;
+        case 4: return BNHMPAFHNOF_BRICK_BREAKER_STAGE_SETTLE;
         default: return null;
       }
     }
@@ -162,13 +158,14 @@ public final class BrickBreakerStageTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033BrickBreakerStageType.proto*\262\001\n\025BrickB" +
-      "reakerStageType\022\037\n\033BRICK_BREAKER_STAGE_P" +
-      "REPARE\020\000\022\034\n\030BRICK_BREAKER_STAGE_PICK\020\001\022\034" +
-      "\n\030BRICK_BREAKER_STAGE_GAME\020\002\022\034\n\030BRICK_BR" +
-      "EAKER_STAGE_PLAY\020\003\022\036\n\032BRICK_BREAKER_STAG" +
-      "E_SETTLE\020\004B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\033BrickBreakerStageType.proto*\356\001\n\025BrickB" +
+      "reakerStageType\022+\n\'BNHMPAFHNOF_BRICK_BRE" +
+      "AKER_STAGE_PREPARE\020\000\022(\n$BNHMPAFHNOF_BRIC" +
+      "K_BREAKER_STAGE_PICK\020\001\022(\n$BNHMPAFHNOF_BR" +
+      "ICK_BREAKER_STAGE_GAME\020\002\022(\n$BNHMPAFHNOF_" +
+      "BRICK_BREAKER_STAGE_PLAY\020\003\022*\n&BNHMPAFHNO" +
+      "F_BRICK_BREAKER_STAGE_SETTLE\020\004B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

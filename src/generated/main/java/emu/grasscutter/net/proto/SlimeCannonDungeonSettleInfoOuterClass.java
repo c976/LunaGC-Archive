@@ -19,16 +19,64 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GGFDEFBENPG = 10;</code>
+     * @return The gGFDEFBENPG.
      */
-    int getScore();
+    int getGGFDEFBENPG();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 CJMOIPPEIOJ = 15;</code>
+     * @return The cJMOIPPEIOJ.
+     */
+    int getCJMOIPPEIOJ();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 HNDMKENALBG = 9;</code>
+     * @return The hNDMKENALBG.
+     */
+    int getHNDMKENALBG();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EAFLKBJLEKD = 6;</code>
+     * @return The eAFLKBJLEKD.
+     */
+    int getEAFLKBJLEKD();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DLODBEMIPKL = 8;</code>
+     * @return The dLODBEMIPKL.
+     */
+    int getDLODBEMIPKL();
   }
   /**
    * Protobuf type {@code SlimeCannonDungeonSettleInfo}
@@ -75,14 +123,34 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
-              score_ = input.readUInt32();
+              eAFLKBJLEKD_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              dLODBEMIPKL_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              hNDMKENALBG_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              gGFDEFBENPG_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              levelId_ = input.readUInt32();
+              cJMOIPPEIOJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +185,94 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo.class, emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 5;
-    private int score_;
+    public static final int GGFDEFBENPG_FIELD_NUMBER = 10;
+    private int gGFDEFBENPG_;
     /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 GGFDEFBENPG = 10;</code>
+     * @return The gGFDEFBENPG.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public int getGGFDEFBENPG() {
+      return gGFDEFBENPG_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int CJMOIPPEIOJ_FIELD_NUMBER = 15;
+    private int cJMOIPPEIOJ_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 CJMOIPPEIOJ = 15;</code>
+     * @return The cJMOIPPEIOJ.
+     */
+    @java.lang.Override
+    public int getCJMOIPPEIOJ() {
+      return cJMOIPPEIOJ_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int HNDMKENALBG_FIELD_NUMBER = 9;
+    private int hNDMKENALBG_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 HNDMKENALBG = 9;</code>
+     * @return The hNDMKENALBG.
+     */
+    @java.lang.Override
+    public int getHNDMKENALBG() {
+      return hNDMKENALBG_;
+    }
+
+    public static final int EAFLKBJLEKD_FIELD_NUMBER = 6;
+    private int eAFLKBJLEKD_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 EAFLKBJLEKD = 6;</code>
+     * @return The eAFLKBJLEKD.
+     */
+    @java.lang.Override
+    public int getEAFLKBJLEKD() {
+      return eAFLKBJLEKD_;
+    }
+
+    public static final int DLODBEMIPKL_FIELD_NUMBER = 8;
+    private int dLODBEMIPKL_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 DLODBEMIPKL = 8;</code>
+     * @return The dLODBEMIPKL.
+     */
+    @java.lang.Override
+    public int getDLODBEMIPKL() {
+      return dLODBEMIPKL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +289,23 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (score_ != 0) {
-        output.writeUInt32(5, score_);
+      if (eAFLKBJLEKD_ != 0) {
+        output.writeUInt32(6, eAFLKBJLEKD_);
+      }
+      if (dLODBEMIPKL_ != 0) {
+        output.writeUInt32(8, dLODBEMIPKL_);
+      }
+      if (hNDMKENALBG_ != 0) {
+        output.writeUInt32(9, hNDMKENALBG_);
+      }
+      if (gGFDEFBENPG_ != 0) {
+        output.writeUInt32(10, gGFDEFBENPG_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(11, levelId_);
+      }
+      if (cJMOIPPEIOJ_ != 0) {
+        output.writeUInt32(15, cJMOIPPEIOJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +316,29 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (score_ != 0) {
+      if (eAFLKBJLEKD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, score_);
+          .computeUInt32Size(6, eAFLKBJLEKD_);
+      }
+      if (dLODBEMIPKL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dLODBEMIPKL_);
+      }
+      if (hNDMKENALBG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, hNDMKENALBG_);
+      }
+      if (gGFDEFBENPG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, gGFDEFBENPG_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(11, levelId_);
+      }
+      if (cJMOIPPEIOJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cJMOIPPEIOJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +355,18 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo other = (emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
+      if (getGGFDEFBENPG()
+          != other.getGGFDEFBENPG()) return false;
+      if (getCJMOIPPEIOJ()
+          != other.getCJMOIPPEIOJ()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getHNDMKENALBG()
+          != other.getHNDMKENALBG()) return false;
+      if (getEAFLKBJLEKD()
+          != other.getEAFLKBJLEKD()) return false;
+      if (getDLODBEMIPKL()
+          != other.getDLODBEMIPKL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +378,18 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + GGFDEFBENPG_FIELD_NUMBER;
+      hash = (53 * hash) + getGGFDEFBENPG();
+      hash = (37 * hash) + CJMOIPPEIOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getCJMOIPPEIOJ();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + HNDMKENALBG_FIELD_NUMBER;
+      hash = (53 * hash) + getHNDMKENALBG();
+      hash = (37 * hash) + EAFLKBJLEKD_FIELD_NUMBER;
+      hash = (53 * hash) + getEAFLKBJLEKD();
+      hash = (37 * hash) + DLODBEMIPKL_FIELD_NUMBER;
+      hash = (53 * hash) + getDLODBEMIPKL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +523,17 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
+        gGFDEFBENPG_ = 0;
+
+        cJMOIPPEIOJ_ = 0;
 
         levelId_ = 0;
+
+        hNDMKENALBG_ = 0;
+
+        eAFLKBJLEKD_ = 0;
+
+        dLODBEMIPKL_ = 0;
 
         return this;
       }
@@ -373,8 +561,12 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo result = new emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo(this);
-        result.score_ = score_;
+        result.gGFDEFBENPG_ = gGFDEFBENPG_;
+        result.cJMOIPPEIOJ_ = cJMOIPPEIOJ_;
         result.levelId_ = levelId_;
+        result.hNDMKENALBG_ = hNDMKENALBG_;
+        result.eAFLKBJLEKD_ = eAFLKBJLEKD_;
+        result.dLODBEMIPKL_ = dLODBEMIPKL_;
         onBuilt();
         return result;
       }
@@ -423,11 +615,23 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.SlimeCannonDungeonSettleInfoOuterClass.SlimeCannonDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getGGFDEFBENPG() != 0) {
+          setGGFDEFBENPG(other.getGGFDEFBENPG());
+        }
+        if (other.getCJMOIPPEIOJ() != 0) {
+          setCJMOIPPEIOJ(other.getCJMOIPPEIOJ());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getHNDMKENALBG() != 0) {
+          setHNDMKENALBG(other.getHNDMKENALBG());
+        }
+        if (other.getEAFLKBJLEKD() != 0) {
+          setEAFLKBJLEKD(other.getEAFLKBJLEKD());
+        }
+        if (other.getDLODBEMIPKL() != 0) {
+          setDLODBEMIPKL(other.getDLODBEMIPKL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +662,99 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int score_ ;
+      private int gGFDEFBENPG_ ;
       /**
-       * <code>uint32 score = 5;</code>
-       * @return The score.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GGFDEFBENPG = 10;</code>
+       * @return The gGFDEFBENPG.
        */
       @java.lang.Override
-      public int getScore() {
-        return score_;
+      public int getGGFDEFBENPG() {
+        return gGFDEFBENPG_;
       }
       /**
-       * <code>uint32 score = 5;</code>
-       * @param value The score to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GGFDEFBENPG = 10;</code>
+       * @param value The gGFDEFBENPG to set.
        * @return This builder for chaining.
        */
-      public Builder setScore(int value) {
+      public Builder setGGFDEFBENPG(int value) {
         
-        score_ = value;
+        gGFDEFBENPG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 GGFDEFBENPG = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScore() {
+      public Builder clearGGFDEFBENPG() {
         
-        score_ = 0;
+        gGFDEFBENPG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cJMOIPPEIOJ_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 CJMOIPPEIOJ = 15;</code>
+       * @return The cJMOIPPEIOJ.
+       */
+      @java.lang.Override
+      public int getCJMOIPPEIOJ() {
+        return cJMOIPPEIOJ_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 CJMOIPPEIOJ = 15;</code>
+       * @param value The cJMOIPPEIOJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCJMOIPPEIOJ(int value) {
+        
+        cJMOIPPEIOJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 CJMOIPPEIOJ = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCJMOIPPEIOJ() {
+        
+        cJMOIPPEIOJ_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -499,7 +762,11 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -510,12 +777,145 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hNDMKENALBG_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 HNDMKENALBG = 9;</code>
+       * @return The hNDMKENALBG.
+       */
+      @java.lang.Override
+      public int getHNDMKENALBG() {
+        return hNDMKENALBG_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 HNDMKENALBG = 9;</code>
+       * @param value The hNDMKENALBG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHNDMKENALBG(int value) {
+        
+        hNDMKENALBG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 HNDMKENALBG = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHNDMKENALBG() {
+        
+        hNDMKENALBG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eAFLKBJLEKD_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EAFLKBJLEKD = 6;</code>
+       * @return The eAFLKBJLEKD.
+       */
+      @java.lang.Override
+      public int getEAFLKBJLEKD() {
+        return eAFLKBJLEKD_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EAFLKBJLEKD = 6;</code>
+       * @param value The eAFLKBJLEKD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEAFLKBJLEKD(int value) {
+        
+        eAFLKBJLEKD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 EAFLKBJLEKD = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEAFLKBJLEKD() {
+        
+        eAFLKBJLEKD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dLODBEMIPKL_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DLODBEMIPKL = 8;</code>
+       * @return The dLODBEMIPKL.
+       */
+      @java.lang.Override
+      public int getDLODBEMIPKL() {
+        return dLODBEMIPKL_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DLODBEMIPKL = 8;</code>
+       * @param value The dLODBEMIPKL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDLODBEMIPKL(int value) {
+        
+        dLODBEMIPKL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 DLODBEMIPKL = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDLODBEMIPKL() {
+        
+        dLODBEMIPKL_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +986,12 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"SlimeCannonDungeonSettleInfo.proto\"?\n\034" +
-      "SlimeCannonDungeonSettleInfo\022\r\n\005score\030\005 " +
-      "\001(\r\022\020\n\010level_id\030\017 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\"SlimeCannonDungeonSettleInfo.proto\"\231\001\n" +
+      "\034SlimeCannonDungeonSettleInfo\022\023\n\013GGFDEFB" +
+      "ENPG\030\n \001(\r\022\023\n\013CJMOIPPEIOJ\030\017 \001(\r\022\020\n\010level" +
+      "_id\030\013 \001(\r\022\023\n\013HNDMKENALBG\030\t \001(\r\022\023\n\013EAFLKB" +
+      "JLEKD\030\006 \001(\r\022\023\n\013DLODBEMIPKL\030\010 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +1002,7 @@ public final class SlimeCannonDungeonSettleInfoOuterClass {
     internal_static_SlimeCannonDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SlimeCannonDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "Score", "LevelId", });
+        new java.lang.String[] { "GGFDEFBENPG", "CJMOIPPEIOJ", "LevelId", "HNDMKENALBG", "EAFLKBJLEKD", "DLODBEMIPKL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

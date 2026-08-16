@@ -19,27 +19,47 @@ public final class WatergunDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> 
         getLevelInfoListList();
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
-    emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI getLevelInfoList(int index);
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
-    emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class WatergunDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class WatergunDetailInfoOuterClass {
               emu.grasscutter.net.proto.WatergunDetailInfoOuterClass.WatergunDetailInfo.class, emu.grasscutter.net.proto.WatergunDetailInfoOuterClass.WatergunDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> levelInfoList_;
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class WatergunDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(5, levelInfoList_.get(i));
+        output.writeMessage(2, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class WatergunDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, levelInfoList_.get(i));
+          .computeMessageSize(2, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class WatergunDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class WatergunDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class WatergunDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class WatergunDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo value) {
+          int index, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo value) {
+          int index, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class WatergunDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class WatergunDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class WatergunDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.getDefaultInstance());
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.getDefaultInstance());
       }
       /**
-       * <code>repeated .WatergunLevelInfo level_info_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .NNFEHEOKIBI level_info_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfo.Builder, emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.WatergunLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBI.Builder, emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.NNFEHEOKIBIOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,15 +933,15 @@ public final class WatergunDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030WatergunDetailInfo.proto\032\027WatergunLeve" +
-      "lInfo.proto\"A\n\022WatergunDetailInfo\022+\n\017lev" +
-      "el_info_list\030\005 \003(\0132\022.WatergunLevelInfoB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\030WatergunDetailInfo.proto\032\021NNFEHEOKIBI." +
+      "proto\";\n\022WatergunDetailInfo\022%\n\017level_inf" +
+      "o_list\030\002 \003(\0132\014.NNFEHEOKIBIB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.getDescriptor(),
         });
     internal_static_WatergunDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -837,7 +949,7 @@ public final class WatergunDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WatergunDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.WatergunLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.NNFEHEOKIBIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

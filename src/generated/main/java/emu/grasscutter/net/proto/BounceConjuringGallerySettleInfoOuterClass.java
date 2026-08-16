@@ -19,74 +19,46 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
-        getCardListList();
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    int getCardListCount();
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-        getCardListOrBuilderList();
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 IMAFLHKPLFJ = 6;</code>
-     * @return The iMAFLHKPLFJ.
-     */
-    int getIMAFLHKPLFJ();
-
-    /**
-     * <code>uint32 DKCMBMLKONM = 11;</code>
-     * @return The dKCMBMLKONM.
-     */
-    int getDKCMBMLKONM();
-
-    /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>uint32 JJHGFEDDADK = 13;</code>
-     * @return The jJHGFEDDADK.
-     */
-    int getJJHGFEDDADK();
-
-    /**
-     * <code>uint32 IOIDBLDFMJP = 5;</code>
-     * @return The iOIDBLDFMJP.
-     */
-    int getIOIDBLDFMJP();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     int getGadgetCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     boolean containsGadgetCountMap(
         int key);
@@ -97,41 +69,141 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getGadgetCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getGadgetCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
 
     int getGadgetCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
 
     int getGadgetCountMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 score = 8;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
+        getCardListList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    int getCardListCount();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+        getCardListOrBuilderList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>float damage = 12;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 LNKHJJGHIBC = 14;</code>
+     * @return The lNKHJJGHIBC.
+     */
+    int getLNKHJJGHIBC();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 FEJPDEJIHBO = 7;</code>
+     * @return The fEJPDEJIHBO.
+     */
+    int getFEJPDEJIHBO();
+
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 MAIFPAADLKL = 4;</code>
+     * @return The mAIFPAADLKL.
+     */
+    int getMAIFPAADLKL();
+
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 LFJKMMKIOPG = 11;</code>
+     * @return The lFJKMMKIOPG.
+     */
+    int getLFJKMMKIOPG();
+
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>float damage = 5;</code>
      * @return The damage.
      */
     float getDamage();
   }
   /**
-   * <pre>
-   * Obf: LKKMELHPJDE
-   * </pre>
-   *
    * Protobuf type {@code BounceConjuringGallerySettleInfo}
    */
   public static final class BounceConjuringGallerySettleInfo extends
@@ -178,59 +250,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              iOIDBLDFMJP_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              iMAFLHKPLFJ_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                gadgetCountMap_ = com.google.protobuf.MapField.newMapField(
-                    GadgetCountMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              gadgetCountMap__ = input.readMessage(
-                  GadgetCountMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              gadgetCountMap_.getMutableMap().put(
-                  gadgetCountMap__.getKey(), gadgetCountMap__.getValue());
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              cardList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 88: {
-
-              dKCMBMLKONM_ = input.readUInt32();
-              break;
-            }
-            case 101: {
-
-              damage_ = input.readFloat();
-              break;
-            }
-            case 104: {
-
-              jJHGFEDDADK_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 10: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -241,6 +261,58 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                gadgetCountMap_ = com.google.protobuf.MapField.newMapField(
+                    GadgetCountMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              gadgetCountMap__ = input.readMessage(
+                  GadgetCountMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              gadgetCountMap_.getMutableMap().put(
+                  gadgetCountMap__.getKey(), gadgetCountMap__.getValue());
+              break;
+            }
+            case 32: {
+
+              mAIFPAADLKL_ = input.readUInt32();
+              break;
+            }
+            case 45: {
+
+              damage_ = input.readFloat();
+              break;
+            }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              cardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 56: {
+
+              fEJPDEJIHBO_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              lFJKMMKIOPG_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              lNKHJJGHIBC_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -258,7 +330,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           cardList_ = java.util.Collections.unmodifiableList(cardList_);
         }
         this.unknownFields = unknownFields.build();
@@ -275,7 +347,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
+        case 3:
           return internalGetGadgetCountMap();
         default:
           throw new RuntimeException(
@@ -290,72 +362,14 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo.class, emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo.Builder.class);
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
-      return cardList_;
-    }
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-        getCardListOrBuilderList() {
-      return cardList_;
-    }
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getCardListCount() {
-      return cardList_.size();
-    }
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
-      return cardList_.get(index);
-    }
-    /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
-        int index) {
-      return cardList_.get(index);
-    }
-
-    public static final int IMAFLHKPLFJ_FIELD_NUMBER = 6;
-    private int iMAFLHKPLFJ_;
-    /**
-     * <code>uint32 IMAFLHKPLFJ = 6;</code>
-     * @return The iMAFLHKPLFJ.
-     */
-    @java.lang.Override
-    public int getIMAFLHKPLFJ() {
-      return iMAFLHKPLFJ_;
-    }
-
-    public static final int DKCMBMLKONM_FIELD_NUMBER = 11;
-    private int dKCMBMLKONM_;
-    /**
-     * <code>uint32 DKCMBMLKONM = 11;</code>
-     * @return The dKCMBMLKONM.
-     */
-    @java.lang.Override
-    public int getDKCMBMLKONM() {
-      return dKCMBMLKONM_;
-    }
-
-    public static final int PLAYER_INFO_FIELD_NUMBER = 14;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -363,7 +377,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -371,36 +389,18 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.OnlinePlayerInfo player_info = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
       return getPlayerInfo();
     }
 
-    public static final int JJHGFEDDADK_FIELD_NUMBER = 13;
-    private int jJHGFEDDADK_;
-    /**
-     * <code>uint32 JJHGFEDDADK = 13;</code>
-     * @return The jJHGFEDDADK.
-     */
-    @java.lang.Override
-    public int getJJHGFEDDADK() {
-      return jJHGFEDDADK_;
-    }
-
-    public static final int IOIDBLDFMJP_FIELD_NUMBER = 5;
-    private int iOIDBLDFMJP_;
-    /**
-     * <code>uint32 IOIDBLDFMJP = 5;</code>
-     * @return The iOIDBLDFMJP.
-     */
-    @java.lang.Override
-    public int getIOIDBLDFMJP() {
-      return iOIDBLDFMJP_;
-    }
-
-    public static final int GADGET_COUNT_MAP_FIELD_NUMBER = 9;
+    public static final int GADGET_COUNT_MAP_FIELD_NUMBER = 3;
     private static final class GadgetCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -427,7 +427,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return internalGetGadgetCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
 
     @java.lang.Override
@@ -445,7 +449,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return getGadgetCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -453,7 +461,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return internalGetGadgetCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -466,7 +478,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -481,10 +497,74 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 8;
+    public static final int CARD_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
+      return cardList_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+        getCardListOrBuilderList() {
+      return cardList_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    @java.lang.Override
+    public int getCardListCount() {
+      return cardList_.size();
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
+      return cardList_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
+        int index) {
+      return cardList_.get(index);
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 15;
     private int score_;
     /**
-     * <code>uint32 score = 8;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -492,10 +572,74 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return score_;
     }
 
-    public static final int DAMAGE_FIELD_NUMBER = 12;
+    public static final int LNKHJJGHIBC_FIELD_NUMBER = 14;
+    private int lNKHJJGHIBC_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 LNKHJJGHIBC = 14;</code>
+     * @return The lNKHJJGHIBC.
+     */
+    @java.lang.Override
+    public int getLNKHJJGHIBC() {
+      return lNKHJJGHIBC_;
+    }
+
+    public static final int FEJPDEJIHBO_FIELD_NUMBER = 7;
+    private int fEJPDEJIHBO_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 FEJPDEJIHBO = 7;</code>
+     * @return The fEJPDEJIHBO.
+     */
+    @java.lang.Override
+    public int getFEJPDEJIHBO() {
+      return fEJPDEJIHBO_;
+    }
+
+    public static final int MAIFPAADLKL_FIELD_NUMBER = 4;
+    private int mAIFPAADLKL_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 MAIFPAADLKL = 4;</code>
+     * @return The mAIFPAADLKL.
+     */
+    @java.lang.Override
+    public int getMAIFPAADLKL() {
+      return mAIFPAADLKL_;
+    }
+
+    public static final int LFJKMMKIOPG_FIELD_NUMBER = 11;
+    private int lFJKMMKIOPG_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 LFJKMMKIOPG = 11;</code>
+     * @return The lFJKMMKIOPG.
+     */
+    @java.lang.Override
+    public int getLFJKMMKIOPG() {
+      return lFJKMMKIOPG_;
+    }
+
+    public static final int DAMAGE_FIELD_NUMBER = 5;
     private float damage_;
     /**
-     * <code>float damage = 12;</code>
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>float damage = 5;</code>
      * @return The damage.
      */
     @java.lang.Override
@@ -517,35 +661,35 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iOIDBLDFMJP_ != 0) {
-        output.writeUInt32(5, iOIDBLDFMJP_);
-      }
-      if (iMAFLHKPLFJ_ != 0) {
-        output.writeUInt32(6, iMAFLHKPLFJ_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(8, score_);
+      if (playerInfo_ != null) {
+        output.writeMessage(1, getPlayerInfo());
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetGadgetCountMap(),
           GadgetCountMapDefaultEntryHolder.defaultEntry,
-          9);
-      for (int i = 0; i < cardList_.size(); i++) {
-        output.writeMessage(10, cardList_.get(i));
-      }
-      if (dKCMBMLKONM_ != 0) {
-        output.writeUInt32(11, dKCMBMLKONM_);
+          3);
+      if (mAIFPAADLKL_ != 0) {
+        output.writeUInt32(4, mAIFPAADLKL_);
       }
       if (damage_ != 0F) {
-        output.writeFloat(12, damage_);
+        output.writeFloat(5, damage_);
       }
-      if (jJHGFEDDADK_ != 0) {
-        output.writeUInt32(13, jJHGFEDDADK_);
+      for (int i = 0; i < cardList_.size(); i++) {
+        output.writeMessage(6, cardList_.get(i));
       }
-      if (playerInfo_ != null) {
-        output.writeMessage(14, getPlayerInfo());
+      if (fEJPDEJIHBO_ != 0) {
+        output.writeUInt32(7, fEJPDEJIHBO_);
+      }
+      if (lFJKMMKIOPG_ != 0) {
+        output.writeUInt32(11, lFJKMMKIOPG_);
+      }
+      if (lNKHJJGHIBC_ != 0) {
+        output.writeUInt32(14, lNKHJJGHIBC_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(15, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -556,17 +700,9 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iOIDBLDFMJP_ != 0) {
+      if (playerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, iOIDBLDFMJP_);
-      }
-      if (iMAFLHKPLFJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, iMAFLHKPLFJ_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, score_);
+          .computeMessageSize(1, getPlayerInfo());
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetGadgetCountMap().getMap().entrySet()) {
@@ -576,27 +712,35 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, gadgetCountMap__);
+            .computeMessageSize(3, gadgetCountMap__);
       }
-      for (int i = 0; i < cardList_.size(); i++) {
+      if (mAIFPAADLKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, cardList_.get(i));
-      }
-      if (dKCMBMLKONM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dKCMBMLKONM_);
+          .computeUInt32Size(4, mAIFPAADLKL_);
       }
       if (damage_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(12, damage_);
+          .computeFloatSize(5, damage_);
       }
-      if (jJHGFEDDADK_ != 0) {
+      for (int i = 0; i < cardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, jJHGFEDDADK_);
+          .computeMessageSize(6, cardList_.get(i));
       }
-      if (playerInfo_ != null) {
+      if (fEJPDEJIHBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getPlayerInfo());
+          .computeUInt32Size(7, fEJPDEJIHBO_);
+      }
+      if (lFJKMMKIOPG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, lFJKMMKIOPG_);
+      }
+      if (lNKHJJGHIBC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, lNKHJJGHIBC_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -613,25 +757,25 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo other = (emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo) obj;
 
-      if (!getCardListList()
-          .equals(other.getCardListList())) return false;
-      if (getIMAFLHKPLFJ()
-          != other.getIMAFLHKPLFJ()) return false;
-      if (getDKCMBMLKONM()
-          != other.getDKCMBMLKONM()) return false;
       if (hasPlayerInfo() != other.hasPlayerInfo()) return false;
       if (hasPlayerInfo()) {
         if (!getPlayerInfo()
             .equals(other.getPlayerInfo())) return false;
       }
-      if (getJJHGFEDDADK()
-          != other.getJJHGFEDDADK()) return false;
-      if (getIOIDBLDFMJP()
-          != other.getIOIDBLDFMJP()) return false;
       if (!internalGetGadgetCountMap().equals(
           other.internalGetGadgetCountMap())) return false;
+      if (!getCardListList()
+          .equals(other.getCardListList())) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getLNKHJJGHIBC()
+          != other.getLNKHJJGHIBC()) return false;
+      if (getFEJPDEJIHBO()
+          != other.getFEJPDEJIHBO()) return false;
+      if (getMAIFPAADLKL()
+          != other.getMAIFPAADLKL()) return false;
+      if (getLFJKMMKIOPG()
+          != other.getLFJKMMKIOPG()) return false;
       if (java.lang.Float.floatToIntBits(getDamage())
           != java.lang.Float.floatToIntBits(
               other.getDamage())) return false;
@@ -646,28 +790,28 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCardListCount() > 0) {
-        hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCardListList().hashCode();
-      }
-      hash = (37 * hash) + IMAFLHKPLFJ_FIELD_NUMBER;
-      hash = (53 * hash) + getIMAFLHKPLFJ();
-      hash = (37 * hash) + DKCMBMLKONM_FIELD_NUMBER;
-      hash = (53 * hash) + getDKCMBMLKONM();
       if (hasPlayerInfo()) {
         hash = (37 * hash) + PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfo().hashCode();
       }
-      hash = (37 * hash) + JJHGFEDDADK_FIELD_NUMBER;
-      hash = (53 * hash) + getJJHGFEDDADK();
-      hash = (37 * hash) + IOIDBLDFMJP_FIELD_NUMBER;
-      hash = (53 * hash) + getIOIDBLDFMJP();
       if (!internalGetGadgetCountMap().getMap().isEmpty()) {
         hash = (37 * hash) + GADGET_COUNT_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetGadgetCountMap().hashCode();
       }
+      if (getCardListCount() > 0) {
+        hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCardListList().hashCode();
+      }
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + LNKHJJGHIBC_FIELD_NUMBER;
+      hash = (53 * hash) + getLNKHJJGHIBC();
+      hash = (37 * hash) + FEJPDEJIHBO_FIELD_NUMBER;
+      hash = (53 * hash) + getFEJPDEJIHBO();
+      hash = (37 * hash) + MAIFPAADLKL_FIELD_NUMBER;
+      hash = (53 * hash) + getMAIFPAADLKL();
+      hash = (37 * hash) + LFJKMMKIOPG_FIELD_NUMBER;
+      hash = (53 * hash) + getLFJKMMKIOPG();
       hash = (37 * hash) + DAMAGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getDamage());
@@ -767,10 +911,6 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LKKMELHPJDE
-     * </pre>
-     *
      * Protobuf type {@code BounceConjuringGallerySettleInfo}
      */
     public static final class Builder extends
@@ -786,7 +926,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 3:
             return internalGetGadgetCountMap();
           default:
             throw new RuntimeException(
@@ -797,7 +937,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 3:
             return internalGetMutableGadgetCountMap();
           default:
             throw new RuntimeException(
@@ -831,28 +971,28 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (cardListBuilder_ == null) {
-          cardList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          cardListBuilder_.clear();
-        }
-        iMAFLHKPLFJ_ = 0;
-
-        dKCMBMLKONM_ = 0;
-
         if (playerInfoBuilder_ == null) {
           playerInfo_ = null;
         } else {
           playerInfo_ = null;
           playerInfoBuilder_ = null;
         }
-        jJHGFEDDADK_ = 0;
-
-        iOIDBLDFMJP_ = 0;
-
         internalGetMutableGadgetCountMap().clear();
+        if (cardListBuilder_ == null) {
+          cardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          cardListBuilder_.clear();
+        }
         score_ = 0;
+
+        lNKHJJGHIBC_ = 0;
+
+        fEJPDEJIHBO_ = 0;
+
+        mAIFPAADLKL_ = 0;
+
+        lFJKMMKIOPG_ = 0;
 
         damage_ = 0F;
 
@@ -883,27 +1023,27 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       public emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo result = new emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo(this);
         int from_bitField0_ = bitField0_;
-        if (cardListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            cardList_ = java.util.Collections.unmodifiableList(cardList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.cardList_ = cardList_;
-        } else {
-          result.cardList_ = cardListBuilder_.build();
-        }
-        result.iMAFLHKPLFJ_ = iMAFLHKPLFJ_;
-        result.dKCMBMLKONM_ = dKCMBMLKONM_;
         if (playerInfoBuilder_ == null) {
           result.playerInfo_ = playerInfo_;
         } else {
           result.playerInfo_ = playerInfoBuilder_.build();
         }
-        result.jJHGFEDDADK_ = jJHGFEDDADK_;
-        result.iOIDBLDFMJP_ = iOIDBLDFMJP_;
         result.gadgetCountMap_ = internalGetGadgetCountMap();
         result.gadgetCountMap_.makeImmutable();
+        if (cardListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            cardList_ = java.util.Collections.unmodifiableList(cardList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.cardList_ = cardList_;
+        } else {
+          result.cardList_ = cardListBuilder_.build();
+        }
         result.score_ = score_;
+        result.lNKHJJGHIBC_ = lNKHJJGHIBC_;
+        result.fEJPDEJIHBO_ = fEJPDEJIHBO_;
+        result.mAIFPAADLKL_ = mAIFPAADLKL_;
+        result.lFJKMMKIOPG_ = lFJKMMKIOPG_;
         result.damage_ = damage_;
         onBuilt();
         return result;
@@ -953,11 +1093,16 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.BounceConjuringGallerySettleInfoOuterClass.BounceConjuringGallerySettleInfo.getDefaultInstance()) return this;
+        if (other.hasPlayerInfo()) {
+          mergePlayerInfo(other.getPlayerInfo());
+        }
+        internalGetMutableGadgetCountMap().mergeFrom(
+            other.internalGetGadgetCountMap());
         if (cardListBuilder_ == null) {
           if (!other.cardList_.isEmpty()) {
             if (cardList_.isEmpty()) {
               cardList_ = other.cardList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureCardListIsMutable();
               cardList_.addAll(other.cardList_);
@@ -970,7 +1115,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
               cardListBuilder_.dispose();
               cardListBuilder_ = null;
               cardList_ = other.cardList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               cardListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCardListFieldBuilder() : null;
@@ -979,25 +1124,20 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
             }
           }
         }
-        if (other.getIMAFLHKPLFJ() != 0) {
-          setIMAFLHKPLFJ(other.getIMAFLHKPLFJ());
-        }
-        if (other.getDKCMBMLKONM() != 0) {
-          setDKCMBMLKONM(other.getDKCMBMLKONM());
-        }
-        if (other.hasPlayerInfo()) {
-          mergePlayerInfo(other.getPlayerInfo());
-        }
-        if (other.getJJHGFEDDADK() != 0) {
-          setJJHGFEDDADK(other.getJJHGFEDDADK());
-        }
-        if (other.getIOIDBLDFMJP() != 0) {
-          setIOIDBLDFMJP(other.getIOIDBLDFMJP());
-        }
-        internalGetMutableGadgetCountMap().mergeFrom(
-            other.internalGetGadgetCountMap());
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getLNKHJJGHIBC() != 0) {
+          setLNKHJJGHIBC(other.getLNKHJJGHIBC());
+        }
+        if (other.getFEJPDEJIHBO() != 0) {
+          setFEJPDEJIHBO(other.getFEJPDEJIHBO());
+        }
+        if (other.getMAIFPAADLKL() != 0) {
+          setMAIFPAADLKL(other.getMAIFPAADLKL());
+        }
+        if (other.getLFJKMMKIOPG() != 0) {
+          setLFJKMMKIOPG(other.getLFJKMMKIOPG());
         }
         if (other.getDamage() != 0F) {
           setDamage(other.getDamage());
@@ -1032,320 +1172,26 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_ =
-        java.util.Collections.emptyList();
-      private void ensureCardListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>(cardList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> cardListBuilder_;
-
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
-        if (cardListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cardList_);
-        } else {
-          return cardListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public int getCardListCount() {
-        if (cardListBuilder_ == null) {
-          return cardList_.size();
-        } else {
-          return cardListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
-        if (cardListBuilder_ == null) {
-          return cardList_.get(index);
-        } else {
-          return cardListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder setCardList(
-          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.set(index, value);
-          onChanged();
-        } else {
-          cardListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder setCardList(
-          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder addCardList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.add(value);
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder addCardList(
-          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
-        if (cardListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCardListIsMutable();
-          cardList_.add(index, value);
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder addCardList(
-          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder addCardList(
-          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          cardListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder addAllCardList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cardList_);
-          onChanged();
-        } else {
-          cardListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder clearCardList() {
-        if (cardListBuilder_ == null) {
-          cardList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          cardListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public Builder removeCardList(int index) {
-        if (cardListBuilder_ == null) {
-          ensureCardListIsMutable();
-          cardList_.remove(index);
-          onChanged();
-        } else {
-          cardListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getCardListBuilder(
-          int index) {
-        return getCardListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
-          int index) {
-        if (cardListBuilder_ == null) {
-          return cardList_.get(index);  } else {
-          return cardListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-           getCardListOrBuilderList() {
-        if (cardListBuilder_ != null) {
-          return cardListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(cardList_);
-        }
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder() {
-        return getCardListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder(
-          int index) {
-        return getCardListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
-           getCardListBuilderList() {
-        return getCardListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
-          getCardListFieldBuilder() {
-        if (cardListBuilder_ == null) {
-          cardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder>(
-                  cardList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          cardList_ = null;
-        }
-        return cardListBuilder_;
-      }
-
-      private int iMAFLHKPLFJ_ ;
-      /**
-       * <code>uint32 IMAFLHKPLFJ = 6;</code>
-       * @return The iMAFLHKPLFJ.
-       */
-      @java.lang.Override
-      public int getIMAFLHKPLFJ() {
-        return iMAFLHKPLFJ_;
-      }
-      /**
-       * <code>uint32 IMAFLHKPLFJ = 6;</code>
-       * @param value The iMAFLHKPLFJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIMAFLHKPLFJ(int value) {
-        
-        iMAFLHKPLFJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IMAFLHKPLFJ = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIMAFLHKPLFJ() {
-        
-        iMAFLHKPLFJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dKCMBMLKONM_ ;
-      /**
-       * <code>uint32 DKCMBMLKONM = 11;</code>
-       * @return The dKCMBMLKONM.
-       */
-      @java.lang.Override
-      public int getDKCMBMLKONM() {
-        return dKCMBMLKONM_;
-      }
-      /**
-       * <code>uint32 DKCMBMLKONM = 11;</code>
-       * @param value The dKCMBMLKONM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDKCMBMLKONM(int value) {
-        
-        dKCMBMLKONM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DKCMBMLKONM = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDKCMBMLKONM() {
-        
-        dKCMBMLKONM_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
@@ -1356,7 +1202,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -1372,7 +1222,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -1386,7 +1240,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -1404,7 +1262,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -1418,7 +1280,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -1426,7 +1292,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -1437,7 +1307,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.OnlinePlayerInfo player_info = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -1451,68 +1325,6 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
           playerInfo_ = null;
         }
         return playerInfoBuilder_;
-      }
-
-      private int jJHGFEDDADK_ ;
-      /**
-       * <code>uint32 JJHGFEDDADK = 13;</code>
-       * @return The jJHGFEDDADK.
-       */
-      @java.lang.Override
-      public int getJJHGFEDDADK() {
-        return jJHGFEDDADK_;
-      }
-      /**
-       * <code>uint32 JJHGFEDDADK = 13;</code>
-       * @param value The jJHGFEDDADK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJJHGFEDDADK(int value) {
-        
-        jJHGFEDDADK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JJHGFEDDADK = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJJHGFEDDADK() {
-        
-        jJHGFEDDADK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int iOIDBLDFMJP_ ;
-      /**
-       * <code>uint32 IOIDBLDFMJP = 5;</code>
-       * @return The iOIDBLDFMJP.
-       */
-      @java.lang.Override
-      public int getIOIDBLDFMJP() {
-        return iOIDBLDFMJP_;
-      }
-      /**
-       * <code>uint32 IOIDBLDFMJP = 5;</code>
-       * @param value The iOIDBLDFMJP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIOIDBLDFMJP(int value) {
-        
-        iOIDBLDFMJP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IOIDBLDFMJP = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIOIDBLDFMJP() {
-        
-        iOIDBLDFMJP_ = 0;
-        onChanged();
-        return this;
       }
 
       private com.google.protobuf.MapField<
@@ -1542,7 +1354,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return internalGetGadgetCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
 
       @java.lang.Override
@@ -1560,7 +1376,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return getGadgetCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1568,7 +1388,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return internalGetGadgetCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1581,7 +1405,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1602,7 +1430,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
 
       public Builder removeGadgetCountMap(
@@ -1621,7 +1453,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return internalGetMutableGadgetCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
       public Builder putGadgetCountMap(
           int key,
@@ -1633,7 +1469,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; gadget_count_map = 3;</code>
        */
 
       public Builder putAllGadgetCountMap(
@@ -1643,9 +1483,325 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
 
+      private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_ =
+        java.util.Collections.emptyList();
+      private void ensureCardListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>(cardList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> cardListBuilder_;
+
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
+        if (cardListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(cardList_);
+        } else {
+          return cardListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public int getCardListCount() {
+        if (cardListBuilder_ == null) {
+          return cardList_.size();
+        } else {
+          return cardListBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
+        if (cardListBuilder_ == null) {
+          return cardList_.get(index);
+        } else {
+          return cardListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder setCardList(
+          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
+        if (cardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardListIsMutable();
+          cardList_.set(index, value);
+          onChanged();
+        } else {
+          cardListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder setCardList(
+          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder addCardList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
+        if (cardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardListIsMutable();
+          cardList_.add(value);
+          onChanged();
+        } else {
+          cardListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder addCardList(
+          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
+        if (cardListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardListIsMutable();
+          cardList_.add(index, value);
+          onChanged();
+        } else {
+          cardListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder addCardList(
+          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          cardListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder addCardList(
+          int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder addAllCardList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, cardList_);
+          onChanged();
+        } else {
+          cardListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder clearCardList() {
+        if (cardListBuilder_ == null) {
+          cardList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          cardListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public Builder removeCardList(int index) {
+        if (cardListBuilder_ == null) {
+          ensureCardListIsMutable();
+          cardList_.remove(index);
+          onChanged();
+        } else {
+          cardListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getCardListBuilder(
+          int index) {
+        return getCardListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
+          int index) {
+        if (cardListBuilder_ == null) {
+          return cardList_.get(index);  } else {
+          return cardListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+           getCardListOrBuilderList() {
+        if (cardListBuilder_ != null) {
+          return cardListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(cardList_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder() {
+        return getCardListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder(
+          int index) {
+        return getCardListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo card_list = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
+           getCardListBuilderList() {
+        return getCardListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
+          getCardListFieldBuilder() {
+        if (cardListBuilder_ == null) {
+          cardListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder>(
+                  cardList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          cardList_ = null;
+        }
+        return cardListBuilder_;
+      }
+
       private int score_ ;
       /**
-       * <code>uint32 score = 8;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 score = 15;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -1653,7 +1809,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 score = 15;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -1664,7 +1824,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -1674,9 +1838,185 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int lNKHJJGHIBC_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 LNKHJJGHIBC = 14;</code>
+       * @return The lNKHJJGHIBC.
+       */
+      @java.lang.Override
+      public int getLNKHJJGHIBC() {
+        return lNKHJJGHIBC_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 LNKHJJGHIBC = 14;</code>
+       * @param value The lNKHJJGHIBC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLNKHJJGHIBC(int value) {
+        
+        lNKHJJGHIBC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 LNKHJJGHIBC = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLNKHJJGHIBC() {
+        
+        lNKHJJGHIBC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fEJPDEJIHBO_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 FEJPDEJIHBO = 7;</code>
+       * @return The fEJPDEJIHBO.
+       */
+      @java.lang.Override
+      public int getFEJPDEJIHBO() {
+        return fEJPDEJIHBO_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 FEJPDEJIHBO = 7;</code>
+       * @param value The fEJPDEJIHBO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFEJPDEJIHBO(int value) {
+        
+        fEJPDEJIHBO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 FEJPDEJIHBO = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFEJPDEJIHBO() {
+        
+        fEJPDEJIHBO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mAIFPAADLKL_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 MAIFPAADLKL = 4;</code>
+       * @return The mAIFPAADLKL.
+       */
+      @java.lang.Override
+      public int getMAIFPAADLKL() {
+        return mAIFPAADLKL_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 MAIFPAADLKL = 4;</code>
+       * @param value The mAIFPAADLKL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMAIFPAADLKL(int value) {
+        
+        mAIFPAADLKL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 MAIFPAADLKL = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMAIFPAADLKL() {
+        
+        mAIFPAADLKL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lFJKMMKIOPG_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 LFJKMMKIOPG = 11;</code>
+       * @return The lFJKMMKIOPG.
+       */
+      @java.lang.Override
+      public int getLFJKMMKIOPG() {
+        return lFJKMMKIOPG_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 LFJKMMKIOPG = 11;</code>
+       * @param value The lFJKMMKIOPG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLFJKMMKIOPG(int value) {
+        
+        lFJKMMKIOPG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 LFJKMMKIOPG = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLFJKMMKIOPG() {
+        
+        lFJKMMKIOPG_ = 0;
+        onChanged();
+        return this;
+      }
+
       private float damage_ ;
       /**
-       * <code>float damage = 12;</code>
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float damage = 5;</code>
        * @return The damage.
        */
       @java.lang.Override
@@ -1684,7 +2024,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return damage_;
       }
       /**
-       * <code>float damage = 12;</code>
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float damage = 5;</code>
        * @param value The damage to set.
        * @return This builder for chaining.
        */
@@ -1695,7 +2039,11 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>float damage = 12;</code>
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float damage = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDamage() {
@@ -1779,14 +2127,14 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
       "\n&BounceConjuringGallerySettleInfo.proto" +
       "\032\033ExhibitionDisplayInfo.proto\032\026OnlinePla" +
       "yerInfo.proto\"\360\002\n BounceConjuringGallery" +
-      "SettleInfo\022)\n\tcard_list\030\n \003(\0132\026.Exhibiti" +
-      "onDisplayInfo\022\023\n\013IMAFLHKPLFJ\030\006 \001(\r\022\023\n\013DK" +
-      "CMBMLKONM\030\013 \001(\r\022&\n\013player_info\030\016 \001(\0132\021.O" +
-      "nlinePlayerInfo\022\023\n\013JJHGFEDDADK\030\r \001(\r\022\023\n\013" +
-      "IOIDBLDFMJP\030\005 \001(\r\022O\n\020gadget_count_map\030\t " +
-      "\003(\01325.BounceConjuringGallerySettleInfo.G" +
-      "adgetCountMapEntry\022\r\n\005score\030\010 \001(\r\022\016\n\006dam" +
-      "age\030\014 \001(\002\0325\n\023GadgetCountMapEntry\022\013\n\003key\030" +
+      "SettleInfo\022&\n\013player_info\030\001 \001(\0132\021.Online" +
+      "PlayerInfo\022O\n\020gadget_count_map\030\003 \003(\01325.B" +
+      "ounceConjuringGallerySettleInfo.GadgetCo" +
+      "untMapEntry\022)\n\tcard_list\030\006 \003(\0132\026.Exhibit" +
+      "ionDisplayInfo\022\r\n\005score\030\017 \001(\r\022\023\n\013LNKHJJG" +
+      "HIBC\030\016 \001(\r\022\023\n\013FEJPDEJIHBO\030\007 \001(\r\022\023\n\013MAIFP" +
+      "AADLKL\030\004 \001(\r\022\023\n\013LFJKMMKIOPG\030\013 \001(\r\022\016\n\006dam" +
+      "age\030\005 \001(\002\0325\n\023GadgetCountMapEntry\022\013\n\003key\030" +
       "\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
@@ -1801,7 +2149,7 @@ public final class BounceConjuringGallerySettleInfoOuterClass {
     internal_static_BounceConjuringGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BounceConjuringGallerySettleInfo_descriptor,
-        new java.lang.String[] { "CardList", "IMAFLHKPLFJ", "DKCMBMLKONM", "PlayerInfo", "JJHGFEDDADK", "IOIDBLDFMJP", "GadgetCountMap", "Score", "Damage", });
+        new java.lang.String[] { "PlayerInfo", "GadgetCountMap", "CardList", "Score", "LNKHJJGHIBC", "FEJPDEJIHBO", "MAIFPAADLKL", "LFJKMMKIOPG", "Damage", });
     internal_static_BounceConjuringGallerySettleInfo_GadgetCountMapEntry_descriptor =
       internal_static_BounceConjuringGallerySettleInfo_descriptor.getNestedTypes().get(0);
     internal_static_BounceConjuringGallerySettleInfo_GadgetCountMapEntry_fieldAccessorTable = new

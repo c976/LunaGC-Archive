@@ -19,21 +19,20 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 trial_id = 4;</code>
+     * <code>uint32 trial_id = 14;</code>
      * @return The trialId.
      */
     int getTrialId();
   }
   /**
    * <pre>
-   * CmdId: 2046
-   * Obf: AJFOMEKACNG
+   * CmdId: 24552
    * </pre>
    *
    * Protobuf type {@code MistTrialGetDungeonExhibitionDataRsp}
@@ -80,14 +79,14 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              trialId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 64: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              trialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +121,10 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
               emu.grasscutter.net.proto.MistTrialGetDungeonExhibitionDataRspOuterClass.MistTrialGetDungeonExhibitionDataRsp.class, emu.grasscutter.net.proto.MistTrialGetDungeonExhibitionDataRspOuterClass.MistTrialGetDungeonExhibitionDataRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
       return retcode_;
     }
 
-    public static final int TRIAL_ID_FIELD_NUMBER = 4;
+    public static final int TRIAL_ID_FIELD_NUMBER = 14;
     private int trialId_;
     /**
-     * <code>uint32 trial_id = 4;</code>
+     * <code>uint32 trial_id = 14;</code>
      * @return The trialId.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (trialId_ != 0) {
-        output.writeUInt32(4, trialId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(8, retcode_);
+      }
+      if (trialId_ != 0) {
+        output.writeUInt32(14, trialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (trialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, trialId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(8, retcode_);
+      }
+      if (trialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, trialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2046
-     * Obf: AJFOMEKACNG
+     * CmdId: 24552
      * </pre>
      *
      * Protobuf type {@code MistTrialGetDungeonExhibitionDataRsp}
@@ -470,7 +468,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +499,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
 
       private int trialId_ ;
       /**
-       * <code>uint32 trial_id = 4;</code>
+       * <code>uint32 trial_id = 14;</code>
        * @return The trialId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
         return trialId_;
       }
       /**
-       * <code>uint32 trial_id = 4;</code>
+       * <code>uint32 trial_id = 14;</code>
        * @param value The trialId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_id = 4;</code>
+       * <code>uint32 trial_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialId() {
@@ -598,7 +596,7 @@ public final class MistTrialGetDungeonExhibitionDataRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*MistTrialGetDungeonExhibitionDataRsp.p" +
       "roto\"I\n$MistTrialGetDungeonExhibitionDat" +
-      "aRsp\022\017\n\007retcode\030\014 \001(\005\022\020\n\010trial_id\030\004 \001(\rB" +
+      "aRsp\022\017\n\007retcode\030\010 \001(\005\022\020\n\010trial_id\030\016 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

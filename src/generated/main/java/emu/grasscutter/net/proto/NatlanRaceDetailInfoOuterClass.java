@@ -19,31 +19,55 @@ public final class NatlanRaceDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> 
         getLevelInfoListList();
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
-    emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI getLevelInfoList(int index);
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
-    emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder getLevelInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_special_reward_taken = 7;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>bool is_special_reward_taken = 6;</code>
      * @return The isSpecialRewardTaken.
      */
     boolean getIsSpecialRewardTaken();
@@ -95,18 +119,18 @@ public final class NatlanRaceDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
 
               isSpecialRewardTaken_ = input.readBool();
               break;
             }
-            case 90: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -144,50 +168,74 @@ public final class NatlanRaceDetailInfoOuterClass {
               emu.grasscutter.net.proto.NatlanRaceDetailInfoOuterClass.NatlanRaceDetailInfo.class, emu.grasscutter.net.proto.NatlanRaceDetailInfoOuterClass.NatlanRaceDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 11;
-    private java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> levelInfoList_;
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
 
-    public static final int IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER = 7;
+    public static final int IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER = 6;
     private boolean isSpecialRewardTaken_;
     /**
-     * <code>bool is_special_reward_taken = 7;</code>
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>bool is_special_reward_taken = 6;</code>
      * @return The isSpecialRewardTaken.
      */
     @java.lang.Override
@@ -210,10 +258,10 @@ public final class NatlanRaceDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSpecialRewardTaken_ != false) {
-        output.writeBool(7, isSpecialRewardTaken_);
+        output.writeBool(6, isSpecialRewardTaken_);
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(11, levelInfoList_.get(i));
+        output.writeMessage(8, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -226,11 +274,11 @@ public final class NatlanRaceDetailInfoOuterClass {
       size = 0;
       if (isSpecialRewardTaken_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSpecialRewardTaken_);
+          .computeBoolSize(6, isSpecialRewardTaken_);
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, levelInfoList_.get(i));
+          .computeMessageSize(8, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -555,22 +603,26 @@ public final class NatlanRaceDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -578,7 +630,11 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -588,9 +644,13 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -598,10 +658,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo value) {
+          int index, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -615,10 +679,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -629,9 +697,13 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -645,10 +717,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo value) {
+          int index, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -662,10 +738,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -676,10 +756,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -690,10 +774,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -705,7 +793,11 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -718,7 +810,11 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -731,16 +827,24 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -748,9 +852,13 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -759,33 +867,45 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.getDefaultInstance());
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.getDefaultInstance());
       }
       /**
-       * <code>repeated .NatlanRaceLevelInfo level_info_list = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .DLHFABOAIHI level_info_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfo.Builder, emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.NatlanRaceLevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHI.Builder, emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.DLHFABOAIHIOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -797,7 +917,11 @@ public final class NatlanRaceDetailInfoOuterClass {
 
       private boolean isSpecialRewardTaken_ ;
       /**
-       * <code>bool is_special_reward_taken = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>bool is_special_reward_taken = 6;</code>
        * @return The isSpecialRewardTaken.
        */
       @java.lang.Override
@@ -805,7 +929,11 @@ public final class NatlanRaceDetailInfoOuterClass {
         return isSpecialRewardTaken_;
       }
       /**
-       * <code>bool is_special_reward_taken = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>bool is_special_reward_taken = 6;</code>
        * @param value The isSpecialRewardTaken to set.
        * @return This builder for chaining.
        */
@@ -816,7 +944,11 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_special_reward_taken = 7;</code>
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>bool is_special_reward_taken = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSpecialRewardTaken() {
@@ -892,16 +1024,16 @@ public final class NatlanRaceDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032NatlanRaceDetailInfo.proto\032\031NatlanRace" +
-      "LevelInfo.proto\"f\n\024NatlanRaceDetailInfo\022" +
-      "-\n\017level_info_list\030\013 \003(\0132\024.NatlanRaceLev" +
-      "elInfo\022\037\n\027is_special_reward_taken\030\007 \001(\010B" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032NatlanRaceDetailInfo.proto\032\021DLHFABOAIH" +
+      "I.proto\"^\n\024NatlanRaceDetailInfo\022%\n\017level" +
+      "_info_list\030\010 \003(\0132\014.DLHFABOAIHI\022\037\n\027is_spe" +
+      "cial_reward_taken\030\006 \001(\010B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.getDescriptor(),
         });
     internal_static_NatlanRaceDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -909,7 +1041,7 @@ public final class NatlanRaceDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NatlanRaceDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", "IsSpecialRewardTaken", });
-    emu.grasscutter.net.proto.NatlanRaceLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.DLHFABOAIHIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

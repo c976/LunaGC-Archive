@@ -26,8 +26,7 @@ public final class OutStuckCustomDungeonRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9580
-   * Obf: DGCBOCHBEEB
+   * CmdId: 9265
    * </pre>
    *
    * Protobuf type {@code OutStuckCustomDungeonRsp}
@@ -279,8 +278,7 @@ public final class OutStuckCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9580
-     * Obf: DGCBOCHBEEB
+     * CmdId: 9265
      * </pre>
      *
      * Protobuf type {@code OutStuckCustomDungeonRsp}

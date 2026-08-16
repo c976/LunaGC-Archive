@@ -19,58 +19,98 @@ public final class WidgetSorushInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 slot = 9;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool IKMDEODCDDL = 5;</code>
+     * @return The iKMDEODCDDL.
+     */
+    boolean getIKMDEODCDDL();
+
+    /**
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool AIIFHOEHGCE = 7;</code>
+     * @return The aIIFHOEHGCE.
+     */
+    boolean getAIIFHOEHGCE();
+
+    /**
+     * <pre>
+     * offset: 50
+     * </pre>
+     *
+     * <code>bool AMOHDDIDKLM = 13;</code>
+     * @return The aMOHDDIDKLM.
+     */
+    boolean getAMOHDDIDKLM();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 slot = 6;</code>
      * @return The slot.
      */
     int getSlot();
-
-    /**
-     * <code>bool OHKLAPGEBNM = 11;</code>
-     * @return The oHKLAPGEBNM.
-     */
-    boolean getOHKLAPGEBNM();
-
-    /**
-     * <code>bool EAPHCPFFHKM = 7;</code>
-     * @return The eAPHCPFFHKM.
-     */
-    boolean getEAPHCPFFHKM();
-
-    /**
-     * <code>bool LMAJGICLEKI = 4;</code>
-     * @return The lMAJGICLEKI.
-     */
-    boolean getLMAJGICLEKI();
   }
   /**
    * Protobuf type {@code WidgetSorushInfo}
@@ -117,22 +157,22 @@ public final class WidgetSorushInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
 
-              lMAJGICLEKI_ = input.readBool();
+              iKMDEODCDDL_ = input.readBool();
               break;
             }
-            case 56: {
-
-              eAPHCPFFHKM_ = input.readBool();
-              break;
-            }
-            case 72: {
+            case 48: {
 
               slot_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 56: {
+
+              aIIFHOEHGCE_ = input.readBool();
+              break;
+            }
+            case 74: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -145,9 +185,9 @@ public final class WidgetSorushInfoOuterClass {
 
               break;
             }
-            case 88: {
+            case 104: {
 
-              oHKLAPGEBNM_ = input.readBool();
+              aMOHDDIDKLM_ = input.readBool();
               break;
             }
             case 114: {
@@ -198,6 +238,10 @@ public final class WidgetSorushInfoOuterClass {
     public static final int ROT_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      * @return Whether the rot field is set.
      */
@@ -206,6 +250,10 @@ public final class WidgetSorushInfoOuterClass {
       return rot_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      * @return The rot.
      */
@@ -214,6 +262,10 @@ public final class WidgetSorushInfoOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector rot = 14;</code>
      */
     @java.lang.Override
@@ -221,10 +273,14 @@ public final class WidgetSorushInfoOuterClass {
       return getRot();
     }
 
-    public static final int POS_FIELD_NUMBER = 10;
+    public static final int POS_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -232,7 +288,11 @@ public final class WidgetSorushInfoOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -240,55 +300,75 @@ public final class WidgetSorushInfoOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.Vector pos = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int SLOT_FIELD_NUMBER = 9;
+    public static final int IKMDEODCDDL_FIELD_NUMBER = 5;
+    private boolean iKMDEODCDDL_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool IKMDEODCDDL = 5;</code>
+     * @return The iKMDEODCDDL.
+     */
+    @java.lang.Override
+    public boolean getIKMDEODCDDL() {
+      return iKMDEODCDDL_;
+    }
+
+    public static final int AIIFHOEHGCE_FIELD_NUMBER = 7;
+    private boolean aIIFHOEHGCE_;
+    /**
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool AIIFHOEHGCE = 7;</code>
+     * @return The aIIFHOEHGCE.
+     */
+    @java.lang.Override
+    public boolean getAIIFHOEHGCE() {
+      return aIIFHOEHGCE_;
+    }
+
+    public static final int AMOHDDIDKLM_FIELD_NUMBER = 13;
+    private boolean aMOHDDIDKLM_;
+    /**
+     * <pre>
+     * offset: 50
+     * </pre>
+     *
+     * <code>bool AMOHDDIDKLM = 13;</code>
+     * @return The aMOHDDIDKLM.
+     */
+    @java.lang.Override
+    public boolean getAMOHDDIDKLM() {
+      return aMOHDDIDKLM_;
+    }
+
+    public static final int SLOT_FIELD_NUMBER = 6;
     private int slot_;
     /**
-     * <code>uint32 slot = 9;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 slot = 6;</code>
      * @return The slot.
      */
     @java.lang.Override
     public int getSlot() {
       return slot_;
-    }
-
-    public static final int OHKLAPGEBNM_FIELD_NUMBER = 11;
-    private boolean oHKLAPGEBNM_;
-    /**
-     * <code>bool OHKLAPGEBNM = 11;</code>
-     * @return The oHKLAPGEBNM.
-     */
-    @java.lang.Override
-    public boolean getOHKLAPGEBNM() {
-      return oHKLAPGEBNM_;
-    }
-
-    public static final int EAPHCPFFHKM_FIELD_NUMBER = 7;
-    private boolean eAPHCPFFHKM_;
-    /**
-     * <code>bool EAPHCPFFHKM = 7;</code>
-     * @return The eAPHCPFFHKM.
-     */
-    @java.lang.Override
-    public boolean getEAPHCPFFHKM() {
-      return eAPHCPFFHKM_;
-    }
-
-    public static final int LMAJGICLEKI_FIELD_NUMBER = 4;
-    private boolean lMAJGICLEKI_;
-    /**
-     * <code>bool LMAJGICLEKI = 4;</code>
-     * @return The lMAJGICLEKI.
-     */
-    @java.lang.Override
-    public boolean getLMAJGICLEKI() {
-      return lMAJGICLEKI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -305,20 +385,20 @@ public final class WidgetSorushInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lMAJGICLEKI_ != false) {
-        output.writeBool(4, lMAJGICLEKI_);
-      }
-      if (eAPHCPFFHKM_ != false) {
-        output.writeBool(7, eAPHCPFFHKM_);
+      if (iKMDEODCDDL_ != false) {
+        output.writeBool(5, iKMDEODCDDL_);
       }
       if (slot_ != 0) {
-        output.writeUInt32(9, slot_);
+        output.writeUInt32(6, slot_);
+      }
+      if (aIIFHOEHGCE_ != false) {
+        output.writeBool(7, aIIFHOEHGCE_);
       }
       if (pos_ != null) {
-        output.writeMessage(10, getPos());
+        output.writeMessage(9, getPos());
       }
-      if (oHKLAPGEBNM_ != false) {
-        output.writeBool(11, oHKLAPGEBNM_);
+      if (aMOHDDIDKLM_ != false) {
+        output.writeBool(13, aMOHDDIDKLM_);
       }
       if (rot_ != null) {
         output.writeMessage(14, getRot());
@@ -332,25 +412,25 @@ public final class WidgetSorushInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lMAJGICLEKI_ != false) {
+      if (iKMDEODCDDL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, lMAJGICLEKI_);
-      }
-      if (eAPHCPFFHKM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, eAPHCPFFHKM_);
+          .computeBoolSize(5, iKMDEODCDDL_);
       }
       if (slot_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, slot_);
+          .computeUInt32Size(6, slot_);
+      }
+      if (aIIFHOEHGCE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, aIIFHOEHGCE_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getPos());
+          .computeMessageSize(9, getPos());
       }
-      if (oHKLAPGEBNM_ != false) {
+      if (aMOHDDIDKLM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, oHKLAPGEBNM_);
+          .computeBoolSize(13, aMOHDDIDKLM_);
       }
       if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -381,14 +461,14 @@ public final class WidgetSorushInfoOuterClass {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getIKMDEODCDDL()
+          != other.getIKMDEODCDDL()) return false;
+      if (getAIIFHOEHGCE()
+          != other.getAIIFHOEHGCE()) return false;
+      if (getAMOHDDIDKLM()
+          != other.getAMOHDDIDKLM()) return false;
       if (getSlot()
           != other.getSlot()) return false;
-      if (getOHKLAPGEBNM()
-          != other.getOHKLAPGEBNM()) return false;
-      if (getEAPHCPFFHKM()
-          != other.getEAPHCPFFHKM()) return false;
-      if (getLMAJGICLEKI()
-          != other.getLMAJGICLEKI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -408,17 +488,17 @@ public final class WidgetSorushInfoOuterClass {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + IKMDEODCDDL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIKMDEODCDDL());
+      hash = (37 * hash) + AIIFHOEHGCE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getAIIFHOEHGCE());
+      hash = (37 * hash) + AMOHDDIDKLM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getAMOHDDIDKLM());
       hash = (37 * hash) + SLOT_FIELD_NUMBER;
       hash = (53 * hash) + getSlot();
-      hash = (37 * hash) + OHKLAPGEBNM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOHKLAPGEBNM());
-      hash = (37 * hash) + EAPHCPFFHKM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getEAPHCPFFHKM());
-      hash = (37 * hash) + LMAJGICLEKI_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLMAJGICLEKI());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -564,13 +644,13 @@ public final class WidgetSorushInfoOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
+        iKMDEODCDDL_ = false;
+
+        aIIFHOEHGCE_ = false;
+
+        aMOHDDIDKLM_ = false;
+
         slot_ = 0;
-
-        oHKLAPGEBNM_ = false;
-
-        eAPHCPFFHKM_ = false;
-
-        lMAJGICLEKI_ = false;
 
         return this;
       }
@@ -608,10 +688,10 @@ public final class WidgetSorushInfoOuterClass {
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.iKMDEODCDDL_ = iKMDEODCDDL_;
+        result.aIIFHOEHGCE_ = aIIFHOEHGCE_;
+        result.aMOHDDIDKLM_ = aMOHDDIDKLM_;
         result.slot_ = slot_;
-        result.oHKLAPGEBNM_ = oHKLAPGEBNM_;
-        result.eAPHCPFFHKM_ = eAPHCPFFHKM_;
-        result.lMAJGICLEKI_ = lMAJGICLEKI_;
         onBuilt();
         return result;
       }
@@ -666,17 +746,17 @@ public final class WidgetSorushInfoOuterClass {
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
+        if (other.getIKMDEODCDDL() != false) {
+          setIKMDEODCDDL(other.getIKMDEODCDDL());
+        }
+        if (other.getAIIFHOEHGCE() != false) {
+          setAIIFHOEHGCE(other.getAIIFHOEHGCE());
+        }
+        if (other.getAMOHDDIDKLM() != false) {
+          setAMOHDDIDKLM(other.getAMOHDDIDKLM());
+        }
         if (other.getSlot() != 0) {
           setSlot(other.getSlot());
-        }
-        if (other.getOHKLAPGEBNM() != false) {
-          setOHKLAPGEBNM(other.getOHKLAPGEBNM());
-        }
-        if (other.getEAPHCPFFHKM() != false) {
-          setEAPHCPFFHKM(other.getEAPHCPFFHKM());
-        }
-        if (other.getLMAJGICLEKI() != false) {
-          setLMAJGICLEKI(other.getLMAJGICLEKI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -711,6 +791,10 @@ public final class WidgetSorushInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        * @return Whether the rot field is set.
        */
@@ -718,6 +802,10 @@ public final class WidgetSorushInfoOuterClass {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        * @return The rot.
        */
@@ -729,6 +817,10 @@ public final class WidgetSorushInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -745,6 +837,10 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public Builder setRot(
@@ -759,6 +855,10 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -777,6 +877,10 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public Builder clearRot() {
@@ -791,6 +895,10 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
@@ -799,6 +907,10 @@ public final class WidgetSorushInfoOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
@@ -810,6 +922,10 @@ public final class WidgetSorushInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector rot = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -830,14 +946,22 @@ public final class WidgetSorushInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -848,7 +972,11 @@ public final class WidgetSorushInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -864,7 +992,11 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -878,7 +1010,11 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -896,7 +1032,11 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -910,7 +1050,11 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -918,7 +1062,11 @@ public final class WidgetSorushInfoOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -929,7 +1077,11 @@ public final class WidgetSorushInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.Vector pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -945,9 +1097,142 @@ public final class WidgetSorushInfoOuterClass {
         return posBuilder_;
       }
 
+      private boolean iKMDEODCDDL_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool IKMDEODCDDL = 5;</code>
+       * @return The iKMDEODCDDL.
+       */
+      @java.lang.Override
+      public boolean getIKMDEODCDDL() {
+        return iKMDEODCDDL_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool IKMDEODCDDL = 5;</code>
+       * @param value The iKMDEODCDDL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIKMDEODCDDL(boolean value) {
+        
+        iKMDEODCDDL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool IKMDEODCDDL = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIKMDEODCDDL() {
+        
+        iKMDEODCDDL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean aIIFHOEHGCE_ ;
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool AIIFHOEHGCE = 7;</code>
+       * @return The aIIFHOEHGCE.
+       */
+      @java.lang.Override
+      public boolean getAIIFHOEHGCE() {
+        return aIIFHOEHGCE_;
+      }
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool AIIFHOEHGCE = 7;</code>
+       * @param value The aIIFHOEHGCE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAIIFHOEHGCE(boolean value) {
+        
+        aIIFHOEHGCE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool AIIFHOEHGCE = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAIIFHOEHGCE() {
+        
+        aIIFHOEHGCE_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean aMOHDDIDKLM_ ;
+      /**
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool AMOHDDIDKLM = 13;</code>
+       * @return The aMOHDDIDKLM.
+       */
+      @java.lang.Override
+      public boolean getAMOHDDIDKLM() {
+        return aMOHDDIDKLM_;
+      }
+      /**
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool AMOHDDIDKLM = 13;</code>
+       * @param value The aMOHDDIDKLM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAMOHDDIDKLM(boolean value) {
+        
+        aMOHDDIDKLM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool AMOHDDIDKLM = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAMOHDDIDKLM() {
+        
+        aMOHDDIDKLM_ = false;
+        onChanged();
+        return this;
+      }
+
       private int slot_ ;
       /**
-       * <code>uint32 slot = 9;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 slot = 6;</code>
        * @return The slot.
        */
       @java.lang.Override
@@ -955,7 +1240,11 @@ public final class WidgetSorushInfoOuterClass {
         return slot_;
       }
       /**
-       * <code>uint32 slot = 9;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 slot = 6;</code>
        * @param value The slot to set.
        * @return This builder for chaining.
        */
@@ -966,105 +1255,16 @@ public final class WidgetSorushInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot = 9;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 slot = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlot() {
         
         slot_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean oHKLAPGEBNM_ ;
-      /**
-       * <code>bool OHKLAPGEBNM = 11;</code>
-       * @return The oHKLAPGEBNM.
-       */
-      @java.lang.Override
-      public boolean getOHKLAPGEBNM() {
-        return oHKLAPGEBNM_;
-      }
-      /**
-       * <code>bool OHKLAPGEBNM = 11;</code>
-       * @param value The oHKLAPGEBNM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOHKLAPGEBNM(boolean value) {
-        
-        oHKLAPGEBNM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool OHKLAPGEBNM = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOHKLAPGEBNM() {
-        
-        oHKLAPGEBNM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean eAPHCPFFHKM_ ;
-      /**
-       * <code>bool EAPHCPFFHKM = 7;</code>
-       * @return The eAPHCPFFHKM.
-       */
-      @java.lang.Override
-      public boolean getEAPHCPFFHKM() {
-        return eAPHCPFFHKM_;
-      }
-      /**
-       * <code>bool EAPHCPFFHKM = 7;</code>
-       * @param value The eAPHCPFFHKM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEAPHCPFFHKM(boolean value) {
-        
-        eAPHCPFFHKM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool EAPHCPFFHKM = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEAPHCPFFHKM() {
-        
-        eAPHCPFFHKM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean lMAJGICLEKI_ ;
-      /**
-       * <code>bool LMAJGICLEKI = 4;</code>
-       * @return The lMAJGICLEKI.
-       */
-      @java.lang.Override
-      public boolean getLMAJGICLEKI() {
-        return lMAJGICLEKI_;
-      }
-      /**
-       * <code>bool LMAJGICLEKI = 4;</code>
-       * @param value The lMAJGICLEKI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLMAJGICLEKI(boolean value) {
-        
-        lMAJGICLEKI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool LMAJGICLEKI = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLMAJGICLEKI() {
-        
-        lMAJGICLEKI_ = false;
         onChanged();
         return this;
       }
@@ -1137,9 +1337,9 @@ public final class WidgetSorushInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026WidgetSorushInfo.proto\032\014Vector.proto\"\213" +
       "\001\n\020WidgetSorushInfo\022\024\n\003rot\030\016 \001(\0132\007.Vecto" +
-      "r\022\024\n\003pos\030\n \001(\0132\007.Vector\022\014\n\004slot\030\t \001(\r\022\023\n" +
-      "\013OHKLAPGEBNM\030\013 \001(\010\022\023\n\013EAPHCPFFHKM\030\007 \001(\010\022" +
-      "\023\n\013LMAJGICLEKI\030\004 \001(\010B\033\n\031emu.grasscutter." +
+      "r\022\024\n\003pos\030\t \001(\0132\007.Vector\022\023\n\013IKMDEODCDDL\030\005" +
+      " \001(\010\022\023\n\013AIIFHOEHGCE\030\007 \001(\010\022\023\n\013AMOHDDIDKLM" +
+      "\030\r \001(\010\022\014\n\004slot\030\006 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1152,7 +1352,7 @@ public final class WidgetSorushInfoOuterClass {
     internal_static_WidgetSorushInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetSorushInfo_descriptor,
-        new java.lang.String[] { "Rot", "Pos", "Slot", "OHKLAPGEBNM", "EAPHCPFFHKM", "LMAJGICLEKI", });
+        new java.lang.String[] { "Rot", "Pos", "IKMDEODCDDL", "AIIFHOEHGCE", "AMOHDDIDKLM", "Slot", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

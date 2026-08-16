@@ -19,35 +19,34 @@ public final class GCGDSDeckSaveRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_valid = 3;</code>
-     * @return The isValid.
-     */
-    boolean getIsValid();
-
-    /**
-     * <code>uint32 deck_id = 11;</code>
+     * <pre>
+     * CMD_ID = 25310
+     * </pre>
+     *
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     int getDeckId();
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>bool is_valid = 6;</code>
+     * @return The isValid.
+     */
+    boolean getIsValid();
+
+    /**
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>fixed32 create_time = 9;</code>
+     * <code>fixed32 create_time = 15;</code>
      * @return The createTime.
      */
     int getCreateTime();
   }
   /**
-   * <pre>
-   * CmdId: 9738
-   * Obf: BMBIGJKELML
-   * </pre>
-   *
    * Protobuf type {@code GCGDSDeckSaveRsp}
    */
   public static final class GCGDSDeckSaveRsp extends
@@ -92,24 +91,24 @@ public final class GCGDSDeckSaveRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              isValid_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 77: {
+            case 48: {
 
-              createTime_ = input.readFixed32();
+              isValid_ = input.readBool();
               break;
             }
-            case 88: {
+            case 96: {
 
               deckId_ = input.readUInt32();
+              break;
+            }
+            case 125: {
+
+              createTime_ = input.readFixed32();
               break;
             }
             default: {
@@ -144,21 +143,14 @@ public final class GCGDSDeckSaveRspOuterClass {
               emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp.class, emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp.Builder.class);
     }
 
-    public static final int IS_VALID_FIELD_NUMBER = 3;
-    private boolean isValid_;
-    /**
-     * <code>bool is_valid = 3;</code>
-     * @return The isValid.
-     */
-    @java.lang.Override
-    public boolean getIsValid() {
-      return isValid_;
-    }
-
-    public static final int DECK_ID_FIELD_NUMBER = 11;
+    public static final int DECK_ID_FIELD_NUMBER = 12;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 11;</code>
+     * <pre>
+     * CMD_ID = 25310
+     * </pre>
+     *
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -166,10 +158,21 @@ public final class GCGDSDeckSaveRspOuterClass {
       return deckId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int IS_VALID_FIELD_NUMBER = 6;
+    private boolean isValid_;
+    /**
+     * <code>bool is_valid = 6;</code>
+     * @return The isValid.
+     */
+    @java.lang.Override
+    public boolean getIsValid() {
+      return isValid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -177,10 +180,10 @@ public final class GCGDSDeckSaveRspOuterClass {
       return retcode_;
     }
 
-    public static final int CREATE_TIME_FIELD_NUMBER = 9;
+    public static final int CREATE_TIME_FIELD_NUMBER = 15;
     private int createTime_;
     /**
-     * <code>fixed32 create_time = 9;</code>
+     * <code>fixed32 create_time = 15;</code>
      * @return The createTime.
      */
     @java.lang.Override
@@ -202,17 +205,17 @@ public final class GCGDSDeckSaveRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isValid_ != false) {
-        output.writeBool(3, isValid_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(2, retcode_);
       }
-      if (createTime_ != 0) {
-        output.writeFixed32(9, createTime_);
+      if (isValid_ != false) {
+        output.writeBool(6, isValid_);
       }
       if (deckId_ != 0) {
-        output.writeUInt32(11, deckId_);
+        output.writeUInt32(12, deckId_);
+      }
+      if (createTime_ != 0) {
+        output.writeFixed32(15, createTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +226,21 @@ public final class GCGDSDeckSaveRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isValid_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isValid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(2, retcode_);
       }
-      if (createTime_ != 0) {
+      if (isValid_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(9, createTime_);
+          .computeBoolSize(6, isValid_);
       }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, deckId_);
+          .computeUInt32Size(12, deckId_);
+      }
+      if (createTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(15, createTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,10 +257,10 @@ public final class GCGDSDeckSaveRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp other = (emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp) obj;
 
-      if (getIsValid()
-          != other.getIsValid()) return false;
       if (getDeckId()
           != other.getDeckId()) return false;
+      if (getIsValid()
+          != other.getIsValid()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getCreateTime()
@@ -273,11 +276,11 @@ public final class GCGDSDeckSaveRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDeckId();
       hash = (37 * hash) + IS_VALID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsValid());
-      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
@@ -378,11 +381,6 @@ public final class GCGDSDeckSaveRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 9738
-     * Obf: BMBIGJKELML
-     * </pre>
-     *
      * Protobuf type {@code GCGDSDeckSaveRsp}
      */
     public static final class Builder extends
@@ -420,9 +418,9 @@ public final class GCGDSDeckSaveRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isValid_ = false;
-
         deckId_ = 0;
+
+        isValid_ = false;
 
         retcode_ = 0;
 
@@ -454,8 +452,8 @@ public final class GCGDSDeckSaveRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp buildPartial() {
         emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp result = new emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp(this);
-        result.isValid_ = isValid_;
         result.deckId_ = deckId_;
+        result.isValid_ = isValid_;
         result.retcode_ = retcode_;
         result.createTime_ = createTime_;
         onBuilt();
@@ -506,11 +504,11 @@ public final class GCGDSDeckSaveRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp other) {
         if (other == emu.grasscutter.net.proto.GCGDSDeckSaveRspOuterClass.GCGDSDeckSaveRsp.getDefaultInstance()) return this;
-        if (other.getIsValid() != false) {
-          setIsValid(other.getIsValid());
-        }
         if (other.getDeckId() != 0) {
           setDeckId(other.getDeckId());
+        }
+        if (other.getIsValid() != false) {
+          setIsValid(other.getIsValid());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
@@ -547,40 +545,13 @@ public final class GCGDSDeckSaveRspOuterClass {
         return this;
       }
 
-      private boolean isValid_ ;
-      /**
-       * <code>bool is_valid = 3;</code>
-       * @return The isValid.
-       */
-      @java.lang.Override
-      public boolean getIsValid() {
-        return isValid_;
-      }
-      /**
-       * <code>bool is_valid = 3;</code>
-       * @param value The isValid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsValid(boolean value) {
-        
-        isValid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_valid = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsValid() {
-        
-        isValid_ = false;
-        onChanged();
-        return this;
-      }
-
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <pre>
+       * CMD_ID = 25310
+       * </pre>
+       *
+       * <code>uint32 deck_id = 12;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -588,7 +559,11 @@ public final class GCGDSDeckSaveRspOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <pre>
+       * CMD_ID = 25310
+       * </pre>
+       *
+       * <code>uint32 deck_id = 12;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -599,7 +574,11 @@ public final class GCGDSDeckSaveRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 11;</code>
+       * <pre>
+       * CMD_ID = 25310
+       * </pre>
+       *
+       * <code>uint32 deck_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -609,9 +588,40 @@ public final class GCGDSDeckSaveRspOuterClass {
         return this;
       }
 
+      private boolean isValid_ ;
+      /**
+       * <code>bool is_valid = 6;</code>
+       * @return The isValid.
+       */
+      @java.lang.Override
+      public boolean getIsValid() {
+        return isValid_;
+      }
+      /**
+       * <code>bool is_valid = 6;</code>
+       * @param value The isValid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsValid(boolean value) {
+        
+        isValid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_valid = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsValid() {
+        
+        isValid_ = false;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -619,7 +629,7 @@ public final class GCGDSDeckSaveRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -630,7 +640,7 @@ public final class GCGDSDeckSaveRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -642,7 +652,7 @@ public final class GCGDSDeckSaveRspOuterClass {
 
       private int createTime_ ;
       /**
-       * <code>fixed32 create_time = 9;</code>
+       * <code>fixed32 create_time = 15;</code>
        * @return The createTime.
        */
       @java.lang.Override
@@ -650,7 +660,7 @@ public final class GCGDSDeckSaveRspOuterClass {
         return createTime_;
       }
       /**
-       * <code>fixed32 create_time = 9;</code>
+       * <code>fixed32 create_time = 15;</code>
        * @param value The createTime to set.
        * @return This builder for chaining.
        */
@@ -661,7 +671,7 @@ public final class GCGDSDeckSaveRspOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 create_time = 9;</code>
+       * <code>fixed32 create_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCreateTime() {
@@ -738,8 +748,8 @@ public final class GCGDSDeckSaveRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GCGDSDeckSaveRsp.proto\"[\n\020GCGDSDeckSav" +
-      "eRsp\022\020\n\010is_valid\030\003 \001(\010\022\017\n\007deck_id\030\013 \001(\r\022" +
-      "\017\n\007retcode\030\007 \001(\005\022\023\n\013create_time\030\t \001(\007B\033\n" +
+      "eRsp\022\017\n\007deck_id\030\014 \001(\r\022\020\n\010is_valid\030\006 \001(\010\022" +
+      "\017\n\007retcode\030\002 \001(\005\022\023\n\013create_time\030\017 \001(\007B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +761,7 @@ public final class GCGDSDeckSaveRspOuterClass {
     internal_static_GCGDSDeckSaveRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSDeckSaveRsp_descriptor,
-        new java.lang.String[] { "IsValid", "DeckId", "Retcode", "CreateTime", });
+        new java.lang.String[] { "DeckId", "IsValid", "Retcode", "CreateTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

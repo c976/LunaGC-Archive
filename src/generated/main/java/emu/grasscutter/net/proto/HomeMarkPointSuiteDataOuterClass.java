@@ -19,6 +19,10 @@ public final class HomeMarkPointSuiteDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 suite_id = 1;</code>
      * @return The suiteId.
      */
@@ -109,6 +113,10 @@ public final class HomeMarkPointSuiteDataOuterClass {
     public static final int SUITE_ID_FIELD_NUMBER = 1;
     private int suiteId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 suite_id = 1;</code>
      * @return The suiteId.
      */
@@ -421,6 +429,10 @@ public final class HomeMarkPointSuiteDataOuterClass {
 
       private int suiteId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 suite_id = 1;</code>
        * @return The suiteId.
        */
@@ -429,6 +441,10 @@ public final class HomeMarkPointSuiteDataOuterClass {
         return suiteId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 suite_id = 1;</code>
        * @param value The suiteId to set.
        * @return This builder for chaining.
@@ -440,6 +456,10 @@ public final class HomeMarkPointSuiteDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 suite_id = 1;</code>
        * @return This builder for chaining.
        */

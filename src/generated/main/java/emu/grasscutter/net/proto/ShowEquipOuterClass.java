@@ -19,6 +19,10 @@ public final class ShowEquipOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 item_id = 1;</code>
      * @return The itemId.
      */
@@ -210,6 +214,10 @@ public final class ShowEquipOuterClass {
     public static final int ITEM_ID_FIELD_NUMBER = 1;
     private int itemId_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 item_id = 1;</code>
      * @return The itemId.
      */
@@ -668,6 +676,10 @@ public final class ShowEquipOuterClass {
 
       private int itemId_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @return The itemId.
        */
@@ -676,6 +688,10 @@ public final class ShowEquipOuterClass {
         return itemId_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
@@ -687,6 +703,10 @@ public final class ShowEquipOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 item_id = 1;</code>
        * @return This builder for chaining.
        */

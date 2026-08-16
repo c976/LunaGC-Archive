@@ -19,11 +19,19 @@ public final class SceneGalleryFallInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     int getScenePlayerFallInfoMapCount();
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     boolean containsScenePlayerFallInfoMap(
         int key);
@@ -34,35 +42,47 @@ public final class SceneGalleryFallInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo>
     getScenePlayerFallInfoMap();
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo>
     getScenePlayerFallInfoMapMap();
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo getScenePlayerFallInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo getScenePlayerFallInfoMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 end_time = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 end_time = 8;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
-   * <pre>
-   * Obf: IIBDBKMHMBI
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryFallInfo}
    */
   public static final class SceneGalleryFallInfo extends
@@ -108,7 +128,7 @@ public final class SceneGalleryFallInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 scenePlayerFallInfoMap_ = com.google.protobuf.MapField.newMapField(
                     ScenePlayerFallInfoMapDefaultEntryHolder.defaultEntry);
@@ -121,7 +141,7 @@ public final class SceneGalleryFallInfoOuterClass {
                   scenePlayerFallInfoMap__.getKey(), scenePlayerFallInfoMap__.getValue());
               break;
             }
-            case 56: {
+            case 64: {
 
               endTime_ = input.readUInt32();
               break;
@@ -155,7 +175,7 @@ public final class SceneGalleryFallInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 5:
+        case 7:
           return internalGetScenePlayerFallInfoMap();
         default:
           throw new RuntimeException(
@@ -170,7 +190,7 @@ public final class SceneGalleryFallInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryFallInfoOuterClass.SceneGalleryFallInfo.class, emu.grasscutter.net.proto.SceneGalleryFallInfoOuterClass.SceneGalleryFallInfo.Builder.class);
     }
 
-    public static final int SCENE_PLAYER_FALL_INFO_MAP_FIELD_NUMBER = 5;
+    public static final int SCENE_PLAYER_FALL_INFO_MAP_FIELD_NUMBER = 7;
     private static final class ScenePlayerFallInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.FallPlayerInfoOuterClass.FallPlayerInfo> defaultEntry =
@@ -197,7 +217,11 @@ public final class SceneGalleryFallInfoOuterClass {
       return internalGetScenePlayerFallInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
 
     @java.lang.Override
@@ -215,7 +239,11 @@ public final class SceneGalleryFallInfoOuterClass {
       return getScenePlayerFallInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -223,7 +251,11 @@ public final class SceneGalleryFallInfoOuterClass {
       return internalGetScenePlayerFallInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -236,7 +268,11 @@ public final class SceneGalleryFallInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -251,10 +287,14 @@ public final class SceneGalleryFallInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 7;
+    public static final int END_TIME_FIELD_NUMBER = 8;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 end_time = 8;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -281,9 +321,9 @@ public final class SceneGalleryFallInfoOuterClass {
           output,
           internalGetScenePlayerFallInfoMap(),
           ScenePlayerFallInfoMapDefaultEntryHolder.defaultEntry,
-          5);
+          7);
       if (endTime_ != 0) {
-        output.writeUInt32(7, endTime_);
+        output.writeUInt32(8, endTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -302,11 +342,11 @@ public final class SceneGalleryFallInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(5, scenePlayerFallInfoMap__);
+            .computeMessageSize(7, scenePlayerFallInfoMap__);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, endTime_);
+          .computeUInt32Size(8, endTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -440,10 +480,6 @@ public final class SceneGalleryFallInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IIBDBKMHMBI
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryFallInfo}
      */
     public static final class Builder extends
@@ -459,7 +495,7 @@ public final class SceneGalleryFallInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 5:
+          case 7:
             return internalGetScenePlayerFallInfoMap();
           default:
             throw new RuntimeException(
@@ -470,7 +506,7 @@ public final class SceneGalleryFallInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 5:
+          case 7:
             return internalGetMutableScenePlayerFallInfoMap();
           default:
             throw new RuntimeException(
@@ -646,7 +682,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return internalGetScenePlayerFallInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
 
       @java.lang.Override
@@ -664,7 +704,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return getScenePlayerFallInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -672,7 +716,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return internalGetScenePlayerFallInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -685,7 +733,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -706,7 +758,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
 
       public Builder removeScenePlayerFallInfoMap(
@@ -725,7 +781,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return internalGetMutableScenePlayerFallInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
       public Builder putScenePlayerFallInfoMap(
           int key,
@@ -737,7 +797,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .FallPlayerInfo&gt; scene_player_fall_info_map = 7;</code>
        */
 
       public Builder putAllScenePlayerFallInfoMap(
@@ -749,7 +813,11 @@ public final class SceneGalleryFallInfoOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 end_time = 8;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -757,7 +825,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 end_time = 8;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -768,7 +840,11 @@ public final class SceneGalleryFallInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 end_time = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -851,9 +927,9 @@ public final class SceneGalleryFallInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032SceneGalleryFallInfo.proto\032\024FallPlayer" +
       "Info.proto\"\317\001\n\024SceneGalleryFallInfo\022U\n\032s" +
-      "cene_player_fall_info_map\030\005 \003(\01321.SceneG" +
+      "cene_player_fall_info_map\030\007 \003(\01321.SceneG" +
       "alleryFallInfo.ScenePlayerFallInfoMapEnt" +
-      "ry\022\020\n\010end_time\030\007 \001(\r\032N\n\033ScenePlayerFallI" +
+      "ry\022\020\n\010end_time\030\010 \001(\r\032N\n\033ScenePlayerFallI" +
       "nfoMapEntry\022\013\n\003key\030\001 \001(\r\022\036\n\005value\030\002 \001(\0132" +
       "\017.FallPlayerInfo:\0028\001B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"

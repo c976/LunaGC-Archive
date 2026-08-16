@@ -19,12 +19,20 @@ public final class AvatarEquipAffixInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 equip_affix_id = 1;</code>
      * @return The equipAffixId.
      */
     int getEquipAffixId();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 left_cd_time = 2;</code>
      * @return The leftCdTime.
      */
@@ -120,6 +128,10 @@ public final class AvatarEquipAffixInfoOuterClass {
     public static final int EQUIP_AFFIX_ID_FIELD_NUMBER = 1;
     private int equipAffixId_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 equip_affix_id = 1;</code>
      * @return The equipAffixId.
      */
@@ -131,6 +143,10 @@ public final class AvatarEquipAffixInfoOuterClass {
     public static final int LEFT_CD_TIME_FIELD_NUMBER = 2;
     private int leftCdTime_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 left_cd_time = 2;</code>
      * @return The leftCdTime.
      */
@@ -460,6 +476,10 @@ public final class AvatarEquipAffixInfoOuterClass {
 
       private int equipAffixId_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 equip_affix_id = 1;</code>
        * @return The equipAffixId.
        */
@@ -468,6 +488,10 @@ public final class AvatarEquipAffixInfoOuterClass {
         return equipAffixId_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 equip_affix_id = 1;</code>
        * @param value The equipAffixId to set.
        * @return This builder for chaining.
@@ -479,6 +503,10 @@ public final class AvatarEquipAffixInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 equip_affix_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -491,6 +519,10 @@ public final class AvatarEquipAffixInfoOuterClass {
 
       private int leftCdTime_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 left_cd_time = 2;</code>
        * @return The leftCdTime.
        */
@@ -499,6 +531,10 @@ public final class AvatarEquipAffixInfoOuterClass {
         return leftCdTime_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 left_cd_time = 2;</code>
        * @param value The leftCdTime to set.
        * @return This builder for chaining.
@@ -510,6 +546,10 @@ public final class AvatarEquipAffixInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 left_cd_time = 2;</code>
        * @return This builder for chaining.
        */

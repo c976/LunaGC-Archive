@@ -20,8 +20,7 @@ public final class GCGInitFinishReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25601
-   * Obf: JNBMOBCMHKK
+   * CMD_ID = 748
    * </pre>
    *
    * Protobuf type {@code GCGInitFinishReq}
@@ -246,8 +245,7 @@ public final class GCGInitFinishReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25601
-     * Obf: JNBMOBCMHKK
+     * CMD_ID = 748
      * </pre>
      *
      * Protobuf type {@code GCGInitFinishReq}

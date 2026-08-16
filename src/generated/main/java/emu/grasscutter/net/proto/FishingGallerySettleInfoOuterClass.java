@@ -19,35 +19,63 @@ public final class FishingGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> 
+    java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> 
         getFishingScoreListList();
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
-    emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore getFishingScoreList(int index);
+    emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP getFishingScoreList(int index);
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     int getFishingScoreListCount();
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder> 
         getFishingScoreListOrBuilderList();
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
-    emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder getFishingScoreListOrBuilder(
+    emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder getFishingScoreListOrBuilder(
         int index);
 
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
     int getFishMapCount();
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
     boolean containsFishMap(
         int key);
@@ -55,25 +83,37 @@ public final class FishingGallerySettleInfoOuterClass {
      * Use {@link #getFishMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
     getFishMap();
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
     getFishMapMap();
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
 
-    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+    emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue);
+        emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC defaultValue);
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
 
-    emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+    emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrThrow(
         int key);
   }
   /**
@@ -123,26 +163,26 @@ public final class FishingGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 fishMap_ = com.google.protobuf.MapField.newMapField(
                     FishMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
               fishMap__ = input.readMessage(
                   FishMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               fishMap_.getMutableMap().put(
                   fishMap__.getKey(), fishMap__.getValue());
               break;
             }
-            case 114: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore>();
+                fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP>();
                 mutable_bitField0_ |= 0x00000001;
               }
               fishingScoreList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -177,7 +217,7 @@ public final class FishingGallerySettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 7:
+        case 10:
           return internalGetFishMap();
         default:
           throw new RuntimeException(
@@ -192,61 +232,81 @@ public final class FishingGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.class, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder.class);
     }
 
-    public static final int FISHING_SCORE_LIST_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> fishingScoreList_;
+    public static final int FISHING_SCORE_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> fishingScoreList_;
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> getFishingScoreListList() {
+    public java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> getFishingScoreListList() {
       return fishingScoreList_;
     }
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder> 
         getFishingScoreListOrBuilderList() {
       return fishingScoreList_;
     }
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     @java.lang.Override
     public int getFishingScoreListCount() {
       return fishingScoreList_.size();
     }
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore getFishingScoreList(int index) {
+    public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP getFishingScoreList(int index) {
       return fishingScoreList_.get(index);
     }
     /**
-     * <code>repeated .FishingScore fishing_score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder getFishingScoreListOrBuilder(
+    public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder getFishingScoreListOrBuilder(
         int index) {
       return fishingScoreList_.get(index);
     }
 
-    public static final int FISH_MAP_FIELD_NUMBER = 7;
+    public static final int FISH_MAP_FIELD_NUMBER = 10;
     private static final class FishMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> defaultEntry =
+          java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>newDefaultInstance(
+              .<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>newDefaultInstance(
                   emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.internal_static_FishingGallerySettleInfo_FishMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo.getDefaultInstance());
+                  emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+        java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> fishMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
     internalGetFishMap() {
       if (fishMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -259,7 +319,11 @@ public final class FishingGallerySettleInfoOuterClass {
       return internalGetFishMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
 
     @java.lang.Override
@@ -273,39 +337,51 @@ public final class FishingGallerySettleInfoOuterClass {
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> getFishMap() {
       return getFishMapMap();
     }
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> getFishMapMap() {
       return internalGetFishMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+    public emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
+        emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC defaultValue) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> map =
           internalGetFishMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+    public emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> map =
           internalGetFishMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -332,9 +408,9 @@ public final class FishingGallerySettleInfoOuterClass {
           output,
           internalGetFishMap(),
           FishMapDefaultEntryHolder.defaultEntry,
-          7);
+          10);
       for (int i = 0; i < fishingScoreList_.size(); i++) {
-        output.writeMessage(14, fishingScoreList_.get(i));
+        output.writeMessage(15, fishingScoreList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -345,19 +421,19 @@ public final class FishingGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> entry
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> entry
            : internalGetFishMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
         fishMap__ = FishMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, fishMap__);
+            .computeMessageSize(10, fishMap__);
       }
       for (int i = 0; i < fishingScoreList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, fishingScoreList_.get(i));
+          .computeMessageSize(15, fishingScoreList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -508,7 +584,7 @@ public final class FishingGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 7:
+          case 10:
             return internalGetFishMap();
           default:
             throw new RuntimeException(
@@ -519,7 +595,7 @@ public final class FishingGallerySettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 7:
+          case 10:
             return internalGetMutableFishMap();
           default:
             throw new RuntimeException(
@@ -704,22 +780,26 @@ public final class FishingGallerySettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> fishingScoreList_ =
+      private java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> fishingScoreList_ =
         java.util.Collections.emptyList();
       private void ensureFishingScoreListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore>(fishingScoreList_);
+          fishingScoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP>(fishingScoreList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder> fishingScoreListBuilder_;
+          emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder> fishingScoreListBuilder_;
 
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> getFishingScoreListList() {
+      public java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> getFishingScoreListList() {
         if (fishingScoreListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(fishingScoreList_);
         } else {
@@ -727,7 +807,11 @@ public final class FishingGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public int getFishingScoreListCount() {
         if (fishingScoreListBuilder_ == null) {
@@ -737,9 +821,13 @@ public final class FishingGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore getFishingScoreList(int index) {
+      public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP getFishingScoreList(int index) {
         if (fishingScoreListBuilder_ == null) {
           return fishingScoreList_.get(index);
         } else {
@@ -747,10 +835,14 @@ public final class FishingGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder setFishingScoreList(
-          int index, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore value) {
+          int index, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP value) {
         if (fishingScoreListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -764,10 +856,14 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder setFishingScoreList(
-          int index, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder builderForValue) {
         if (fishingScoreListBuilder_ == null) {
           ensureFishingScoreListIsMutable();
           fishingScoreList_.set(index, builderForValue.build());
@@ -778,9 +874,13 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public Builder addFishingScoreList(emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore value) {
+      public Builder addFishingScoreList(emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP value) {
         if (fishingScoreListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -794,10 +894,14 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder addFishingScoreList(
-          int index, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore value) {
+          int index, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP value) {
         if (fishingScoreListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -811,10 +915,14 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder addFishingScoreList(
-          emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder builderForValue) {
+          emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder builderForValue) {
         if (fishingScoreListBuilder_ == null) {
           ensureFishingScoreListIsMutable();
           fishingScoreList_.add(builderForValue.build());
@@ -825,10 +933,14 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder addFishingScoreList(
-          int index, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder builderForValue) {
         if (fishingScoreListBuilder_ == null) {
           ensureFishingScoreListIsMutable();
           fishingScoreList_.add(index, builderForValue.build());
@@ -839,10 +951,14 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder addAllFishingScoreList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP> values) {
         if (fishingScoreListBuilder_ == null) {
           ensureFishingScoreListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -854,7 +970,11 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder clearFishingScoreList() {
         if (fishingScoreListBuilder_ == null) {
@@ -867,7 +987,11 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
       public Builder removeFishingScoreList(int index) {
         if (fishingScoreListBuilder_ == null) {
@@ -880,16 +1004,24 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder getFishingScoreListBuilder(
+      public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder getFishingScoreListBuilder(
           int index) {
         return getFishingScoreListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder getFishingScoreListOrBuilder(
+      public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder getFishingScoreListOrBuilder(
           int index) {
         if (fishingScoreListBuilder_ == null) {
           return fishingScoreList_.get(index);  } else {
@@ -897,9 +1029,13 @@ public final class FishingGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder> 
            getFishingScoreListOrBuilderList() {
         if (fishingScoreListBuilder_ != null) {
           return fishingScoreListBuilder_.getMessageOrBuilderList();
@@ -908,33 +1044,45 @@ public final class FishingGallerySettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder addFishingScoreListBuilder() {
+      public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder addFishingScoreListBuilder() {
         return getFishingScoreListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.getDefaultInstance());
+            emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.getDefaultInstance());
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder addFishingScoreListBuilder(
+      public emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder addFishingScoreListBuilder(
           int index) {
         return getFishingScoreListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.getDefaultInstance());
+            index, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.getDefaultInstance());
       }
       /**
-       * <code>repeated .FishingScore fishing_score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .EKDICKIGOJP fishing_score_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder> 
            getFishingScoreListBuilderList() {
         return getFishingScoreListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder> 
+          emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder> 
           getFishingScoreListFieldBuilder() {
         if (fishingScoreListBuilder_ == null) {
           fishingScoreListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScore.Builder, emu.grasscutter.net.proto.FishingScoreOuterClass.FishingScoreOrBuilder>(
+              emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJP.Builder, emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.EKDICKIGOJPOrBuilder>(
                   fishingScoreList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -945,8 +1093,8 @@ public final class FishingGallerySettleInfoOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> fishMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+          java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> fishMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
       internalGetFishMap() {
         if (fishMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -954,7 +1102,7 @@ public final class FishingGallerySettleInfoOuterClass {
         }
         return fishMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
       internalGetMutableFishMap() {
         onChanged();;
         if (fishMap_ == null) {
@@ -971,7 +1119,11 @@ public final class FishingGallerySettleInfoOuterClass {
         return internalGetFishMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
 
       @java.lang.Override
@@ -985,39 +1137,51 @@ public final class FishingGallerySettleInfoOuterClass {
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> getFishMap() {
         return getFishMapMap();
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> getFishMapMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> getFishMapMap() {
         return internalGetFishMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrDefault(
+      public emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrDefault(
           int key,
-          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo defaultValue) {
+          emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC defaultValue) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> map =
             internalGetFishMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo getFishMapOrThrow(
+      public emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC getFishMapOrThrow(
           int key) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> map =
             internalGetFishMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
@@ -1031,7 +1195,11 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
 
       public Builder removeFishMap(
@@ -1045,16 +1213,20 @@ public final class FishingGallerySettleInfoOuterClass {
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo>
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC>
       getMutableFishMap() {
         return internalGetMutableFishMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
       public Builder putFishMap(
           int key,
-          emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo value) {
+          emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableFishMap().getMutableMap()
@@ -1062,11 +1234,15 @@ public final class FishingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FishInfo&gt; fish_map = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>map&lt;uint32, .OOCKFJMOAFC&gt; fish_map = 10;</code>
        */
 
       public Builder putAllFishMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FishInfoOuterClass.FishInfo> values) {
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.OOCKFJMOAFC> values) {
         internalGetMutableFishMap().getMutableMap()
             .putAll(values);
         return this;
@@ -1143,20 +1319,20 @@ public final class FishingGallerySettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036FishingGallerySettleInfo.proto\032\022Fishin" +
-      "gScore.proto\032\016FishInfo.proto\"\272\001\n\030Fishing" +
-      "GallerySettleInfo\022)\n\022fishing_score_list\030" +
-      "\016 \003(\0132\r.FishingScore\0228\n\010fish_map\030\007 \003(\0132&" +
-      ".FishingGallerySettleInfo.FishMapEntry\0329" +
-      "\n\014FishMapEntry\022\013\n\003key\030\001 \001(\r\022\030\n\005value\030\002 \001" +
-      "(\0132\t.FishInfo:\0028\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\036FishingGallerySettleInfo.proto\032\021EKDICK" +
+      "IGOJP.proto\032\021OOCKFJMOAFC.proto\"\274\001\n\030Fishi" +
+      "ngGallerySettleInfo\022(\n\022fishing_score_lis" +
+      "t\030\017 \003(\0132\014.EKDICKIGOJP\0228\n\010fish_map\030\n \003(\0132" +
+      "&.FishingGallerySettleInfo.FishMapEntry\032" +
+      "<\n\014FishMapEntry\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 " +
+      "\001(\0132\014.OOCKFJMOAFC:\0028\001B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FishingScoreOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FishInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.getDescriptor(),
         });
     internal_static_FishingGallerySettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1170,8 +1346,8 @@ public final class FishingGallerySettleInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishingGallerySettleInfo_FishMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.FishingScoreOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FishInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EKDICKIGOJPOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.OOCKFJMOAFCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

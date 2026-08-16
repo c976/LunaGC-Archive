@@ -19,21 +19,20 @@ public final class PhotoActivityFinishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 pos_id = 13;</code>
+     * <code>uint32 pos_id = 3;</code>
      * @return The posId.
      */
     int getPosId();
   }
   /**
    * <pre>
-   * CmdId: 25296
-   * Obf: MPGHKGLKBBJ
+   * CmdId: 9046
    * </pre>
    *
    * Protobuf type {@code PhotoActivityFinishRsp}
@@ -80,12 +79,12 @@ public final class PhotoActivityFinishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 24: {
 
               posId_ = input.readUInt32();
               break;
@@ -122,10 +121,10 @@ public final class PhotoActivityFinishRspOuterClass {
               emu.grasscutter.net.proto.PhotoActivityFinishRspOuterClass.PhotoActivityFinishRsp.class, emu.grasscutter.net.proto.PhotoActivityFinishRspOuterClass.PhotoActivityFinishRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class PhotoActivityFinishRspOuterClass {
       return retcode_;
     }
 
-    public static final int POS_ID_FIELD_NUMBER = 13;
+    public static final int POS_ID_FIELD_NUMBER = 3;
     private int posId_;
     /**
-     * <code>uint32 pos_id = 13;</code>
+     * <code>uint32 pos_id = 3;</code>
      * @return The posId.
      */
     @java.lang.Override
@@ -159,10 +158,10 @@ public final class PhotoActivityFinishRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (posId_ != 0) {
-        output.writeUInt32(13, posId_);
+        output.writeUInt32(3, posId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class PhotoActivityFinishRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       if (posId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, posId_);
+          .computeUInt32Size(3, posId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class PhotoActivityFinishRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25296
-     * Obf: MPGHKGLKBBJ
+     * CmdId: 9046
      * </pre>
      *
      * Protobuf type {@code PhotoActivityFinishRsp}
@@ -470,7 +468,7 @@ public final class PhotoActivityFinishRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class PhotoActivityFinishRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class PhotoActivityFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +499,7 @@ public final class PhotoActivityFinishRspOuterClass {
 
       private int posId_ ;
       /**
-       * <code>uint32 pos_id = 13;</code>
+       * <code>uint32 pos_id = 3;</code>
        * @return The posId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class PhotoActivityFinishRspOuterClass {
         return posId_;
       }
       /**
-       * <code>uint32 pos_id = 13;</code>
+       * <code>uint32 pos_id = 3;</code>
        * @param value The posId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class PhotoActivityFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pos_id = 13;</code>
+       * <code>uint32 pos_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPosId() {
@@ -597,8 +595,8 @@ public final class PhotoActivityFinishRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PhotoActivityFinishRsp.proto\"9\n\026PhotoA" +
-      "ctivityFinishRsp\022\017\n\007retcode\030\006 \001(\005\022\016\n\006pos" +
-      "_id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ctivityFinishRsp\022\017\n\007retcode\030\002 \001(\005\022\016\n\006pos" +
+      "_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

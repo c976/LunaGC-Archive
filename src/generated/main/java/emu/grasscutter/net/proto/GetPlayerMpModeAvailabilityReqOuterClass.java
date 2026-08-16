@@ -19,6 +19,11 @@ public final class GetPlayerMpModeAvailabilityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 26251
+   * Obf: IEIHGELBNKF
+   * </pre>
+   *
    * Protobuf type {@code GetPlayerMpModeAvailabilityReq}
    */
   public static final class GetPlayerMpModeAvailabilityReq extends
@@ -240,6 +245,11 @@ public final class GetPlayerMpModeAvailabilityReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 26251
+     * Obf: IEIHGELBNKF
+     * </pre>
+     *
      * Protobuf type {@code GetPlayerMpModeAvailabilityReq}
      */
     public static final class Builder extends

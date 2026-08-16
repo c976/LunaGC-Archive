@@ -20,8 +20,7 @@ public final class GCGAskDuelReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9805
-   * Obf: BPBEHFFOFDJ
+   * CMD_ID = 6720
    * </pre>
    *
    * Protobuf type {@code GCGAskDuelReq}
@@ -246,8 +245,7 @@ public final class GCGAskDuelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9805
-     * Obf: BPBEHFFOFDJ
+     * CMD_ID = 6720
      * </pre>
      *
      * Protobuf type {@code GCGAskDuelReq}

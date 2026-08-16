@@ -19,16 +19,28 @@ public final class FishPoolInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @return A list containing the fishAreaList.
      */
     java.util.List<java.lang.Integer> getFishAreaListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @return The count of fishAreaList.
      */
     int getFishAreaListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @param index The index of the element to return.
      * @return The fishAreaList at the given index.
@@ -36,12 +48,20 @@ public final class FishPoolInfoOuterClass {
     int getFishAreaList(int index);
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 pool_id = 1;</code>
      * @return The poolId.
      */
     int getPoolId();
 
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 today_fish_num = 3;</code>
      * @return The todayFishNum.
      */
@@ -163,6 +183,10 @@ public final class FishPoolInfoOuterClass {
     public static final int FISH_AREA_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList fishAreaList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @return A list containing the fishAreaList.
      */
@@ -172,6 +196,10 @@ public final class FishPoolInfoOuterClass {
       return fishAreaList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @return The count of fishAreaList.
      */
@@ -179,6 +207,10 @@ public final class FishPoolInfoOuterClass {
       return fishAreaList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @param index The index of the element to return.
      * @return The fishAreaList at the given index.
@@ -191,6 +223,10 @@ public final class FishPoolInfoOuterClass {
     public static final int POOL_ID_FIELD_NUMBER = 1;
     private int poolId_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 pool_id = 1;</code>
      * @return The poolId.
      */
@@ -202,6 +238,10 @@ public final class FishPoolInfoOuterClass {
     public static final int TODAY_FISH_NUM_FIELD_NUMBER = 3;
     private int todayFishNum_;
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 today_fish_num = 3;</code>
      * @return The todayFishNum.
      */
@@ -584,6 +624,10 @@ public final class FishPoolInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @return A list containing the fishAreaList.
        */
@@ -593,6 +637,10 @@ public final class FishPoolInfoOuterClass {
                  java.util.Collections.unmodifiableList(fishAreaList_) : fishAreaList_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @return The count of fishAreaList.
        */
@@ -600,6 +648,10 @@ public final class FishPoolInfoOuterClass {
         return fishAreaList_.size();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @param index The index of the element to return.
        * @return The fishAreaList at the given index.
@@ -608,6 +660,10 @@ public final class FishPoolInfoOuterClass {
         return fishAreaList_.getInt(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The fishAreaList to set.
@@ -621,6 +677,10 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @param value The fishAreaList to add.
        * @return This builder for chaining.
@@ -632,6 +692,10 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @param values The fishAreaList to add.
        * @return This builder for chaining.
@@ -645,6 +709,10 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 fish_area_list = 2;</code>
        * @return This builder for chaining.
        */
@@ -657,6 +725,10 @@ public final class FishPoolInfoOuterClass {
 
       private int poolId_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 pool_id = 1;</code>
        * @return The poolId.
        */
@@ -665,6 +737,10 @@ public final class FishPoolInfoOuterClass {
         return poolId_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 pool_id = 1;</code>
        * @param value The poolId to set.
        * @return This builder for chaining.
@@ -676,6 +752,10 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 pool_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -688,6 +768,10 @@ public final class FishPoolInfoOuterClass {
 
       private int todayFishNum_ ;
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 today_fish_num = 3;</code>
        * @return The todayFishNum.
        */
@@ -696,6 +780,10 @@ public final class FishPoolInfoOuterClass {
         return todayFishNum_;
       }
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 today_fish_num = 3;</code>
        * @param value The todayFishNum to set.
        * @return This builder for chaining.
@@ -707,6 +795,10 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 today_fish_num = 3;</code>
        * @return This builder for chaining.
        */

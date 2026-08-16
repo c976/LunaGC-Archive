@@ -15,10 +15,6 @@ public final class GCGEndReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: PNMCCGIBCDL
-   * </pre>
-   *
    * Protobuf enum {@code GCGEndReason}
    */
   public enum GCGEndReason

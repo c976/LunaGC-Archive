@@ -19,37 +19,57 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
-    int getEMKMBDCDIPGCount();
+    int getAOKLHDMLMKFCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
-    boolean containsEMKMBDCDIPG(
+    boolean containsAOKLHDMLMKF(
         int key);
     /**
-     * Use {@link #getEMKMBDCDIPGMap()} instead.
+     * Use {@link #getAOKLHDMLMKFMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEMKMBDCDIPG();
+    getAOKLHDMLMKF();
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEMKMBDCDIPGMap();
+    getAOKLHDMLMKFMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
 
-    int getEMKMBDCDIPGOrDefault(
+    int getAOKLHDMLMKFOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
 
-    int getEMKMBDCDIPGOrThrow(
+    int getAOKLHDMLMKFOrThrow(
         int key);
   }
   /**
@@ -98,17 +118,17 @@ public final class MistTrialDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                eMKMBDCDIPG_ = com.google.protobuf.MapField.newMapField(
-                    EMKMBDCDIPGDefaultEntryHolder.defaultEntry);
+                aOKLHDMLMKF_ = com.google.protobuf.MapField.newMapField(
+                    AOKLHDMLMKFDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              eMKMBDCDIPG__ = input.readMessage(
-                  EMKMBDCDIPGDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              eMKMBDCDIPG_.getMutableMap().put(
-                  eMKMBDCDIPG__.getKey(), eMKMBDCDIPG__.getValue());
+              aOKLHDMLMKF__ = input.readMessage(
+                  AOKLHDMLMKFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              aOKLHDMLMKF_.getMutableMap().put(
+                  aOKLHDMLMKF__.getKey(), aOKLHDMLMKF__.getValue());
               break;
             }
             default: {
@@ -140,8 +160,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
-          return internalGetEMKMBDCDIPG();
+        case 11:
+          return internalGetAOKLHDMLMKF();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -155,81 +175,97 @@ public final class MistTrialDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo.class, emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo.Builder.class);
     }
 
-    public static final int EMKMBDCDIPG_FIELD_NUMBER = 12;
-    private static final class EMKMBDCDIPGDefaultEntryHolder {
+    public static final int AOKLHDMLMKF_FIELD_NUMBER = 11;
+    private static final class AOKLHDMLMKFDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_descriptor, 
+                  emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> eMKMBDCDIPG_;
+        java.lang.Integer, java.lang.Integer> aOKLHDMLMKF_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetEMKMBDCDIPG() {
-      if (eMKMBDCDIPG_ == null) {
+    internalGetAOKLHDMLMKF() {
+      if (aOKLHDMLMKF_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            EMKMBDCDIPGDefaultEntryHolder.defaultEntry);
+            AOKLHDMLMKFDefaultEntryHolder.defaultEntry);
       }
-      return eMKMBDCDIPG_;
+      return aOKLHDMLMKF_;
     }
 
-    public int getEMKMBDCDIPGCount() {
-      return internalGetEMKMBDCDIPG().getMap().size();
+    public int getAOKLHDMLMKFCount() {
+      return internalGetAOKLHDMLMKF().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
 
     @java.lang.Override
-    public boolean containsEMKMBDCDIPG(
+    public boolean containsAOKLHDMLMKF(
         int key) {
       
-      return internalGetEMKMBDCDIPG().getMap().containsKey(key);
+      return internalGetAOKLHDMLMKF().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getEMKMBDCDIPGMap()} instead.
+     * Use {@link #getAOKLHDMLMKFMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEMKMBDCDIPG() {
-      return getEMKMBDCDIPGMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getAOKLHDMLMKF() {
+      return getAOKLHDMLMKFMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEMKMBDCDIPGMap() {
-      return internalGetEMKMBDCDIPG().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getAOKLHDMLMKFMap() {
+      return internalGetAOKLHDMLMKF().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
     @java.lang.Override
 
-    public int getEMKMBDCDIPGOrDefault(
+    public int getAOKLHDMLMKFOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEMKMBDCDIPG().getMap();
+          internalGetAOKLHDMLMKF().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
      */
     @java.lang.Override
 
-    public int getEMKMBDCDIPGOrThrow(
+    public int getAOKLHDMLMKFOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEMKMBDCDIPG().getMap();
+          internalGetAOKLHDMLMKF().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -253,9 +289,9 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetEMKMBDCDIPG(),
-          EMKMBDCDIPGDefaultEntryHolder.defaultEntry,
-          12);
+          internalGetAOKLHDMLMKF(),
+          AOKLHDMLMKFDefaultEntryHolder.defaultEntry,
+          11);
       unknownFields.writeTo(output);
     }
 
@@ -266,14 +302,14 @@ public final class MistTrialDungeonSettleInfoOuterClass {
 
       size = 0;
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetEMKMBDCDIPG().getMap().entrySet()) {
+           : internalGetAOKLHDMLMKF().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        eMKMBDCDIPG__ = EMKMBDCDIPGDefaultEntryHolder.defaultEntry.newBuilderForType()
+        aOKLHDMLMKF__ = AOKLHDMLMKFDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, eMKMBDCDIPG__);
+            .computeMessageSize(11, aOKLHDMLMKF__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,8 +326,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo other = (emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo) obj;
 
-      if (!internalGetEMKMBDCDIPG().equals(
-          other.internalGetEMKMBDCDIPG())) return false;
+      if (!internalGetAOKLHDMLMKF().equals(
+          other.internalGetAOKLHDMLMKF())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,9 +339,9 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetEMKMBDCDIPG().getMap().isEmpty()) {
-        hash = (37 * hash) + EMKMBDCDIPG_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetEMKMBDCDIPG().hashCode();
+      if (!internalGetAOKLHDMLMKF().getMap().isEmpty()) {
+        hash = (37 * hash) + AOKLHDMLMKF_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetAOKLHDMLMKF().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -418,8 +454,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
-            return internalGetEMKMBDCDIPG();
+          case 11:
+            return internalGetAOKLHDMLMKF();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -429,8 +465,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
-            return internalGetMutableEMKMBDCDIPG();
+          case 11:
+            return internalGetMutableAOKLHDMLMKF();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -462,7 +498,7 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableEMKMBDCDIPG().clear();
+        internalGetMutableAOKLHDMLMKF().clear();
         return this;
       }
 
@@ -490,8 +526,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       public emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo result = new emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.eMKMBDCDIPG_ = internalGetEMKMBDCDIPG();
-        result.eMKMBDCDIPG_.makeImmutable();
+        result.aOKLHDMLMKF_ = internalGetAOKLHDMLMKF();
+        result.aOKLHDMLMKF_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -540,8 +576,8 @@ public final class MistTrialDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.MistTrialDungeonSettleInfoOuterClass.MistTrialDungeonSettleInfo.getDefaultInstance()) return this;
-        internalGetMutableEMKMBDCDIPG().mergeFrom(
-            other.internalGetEMKMBDCDIPG());
+        internalGetMutableAOKLHDMLMKF().mergeFrom(
+            other.internalGetAOKLHDMLMKF());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -573,99 +609,119 @@ public final class MistTrialDungeonSettleInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> eMKMBDCDIPG_;
+          java.lang.Integer, java.lang.Integer> aOKLHDMLMKF_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetEMKMBDCDIPG() {
-        if (eMKMBDCDIPG_ == null) {
+      internalGetAOKLHDMLMKF() {
+        if (aOKLHDMLMKF_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              EMKMBDCDIPGDefaultEntryHolder.defaultEntry);
+              AOKLHDMLMKFDefaultEntryHolder.defaultEntry);
         }
-        return eMKMBDCDIPG_;
+        return aOKLHDMLMKF_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableEMKMBDCDIPG() {
+      internalGetMutableAOKLHDMLMKF() {
         onChanged();;
-        if (eMKMBDCDIPG_ == null) {
-          eMKMBDCDIPG_ = com.google.protobuf.MapField.newMapField(
-              EMKMBDCDIPGDefaultEntryHolder.defaultEntry);
+        if (aOKLHDMLMKF_ == null) {
+          aOKLHDMLMKF_ = com.google.protobuf.MapField.newMapField(
+              AOKLHDMLMKFDefaultEntryHolder.defaultEntry);
         }
-        if (!eMKMBDCDIPG_.isMutable()) {
-          eMKMBDCDIPG_ = eMKMBDCDIPG_.copy();
+        if (!aOKLHDMLMKF_.isMutable()) {
+          aOKLHDMLMKF_ = aOKLHDMLMKF_.copy();
         }
-        return eMKMBDCDIPG_;
+        return aOKLHDMLMKF_;
       }
 
-      public int getEMKMBDCDIPGCount() {
-        return internalGetEMKMBDCDIPG().getMap().size();
+      public int getAOKLHDMLMKFCount() {
+        return internalGetAOKLHDMLMKF().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
 
       @java.lang.Override
-      public boolean containsEMKMBDCDIPG(
+      public boolean containsAOKLHDMLMKF(
           int key) {
         
-        return internalGetEMKMBDCDIPG().getMap().containsKey(key);
+        return internalGetAOKLHDMLMKF().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getEMKMBDCDIPGMap()} instead.
+       * Use {@link #getAOKLHDMLMKFMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEMKMBDCDIPG() {
-        return getEMKMBDCDIPGMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getAOKLHDMLMKF() {
+        return getAOKLHDMLMKFMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEMKMBDCDIPGMap() {
-        return internalGetEMKMBDCDIPG().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getAOKLHDMLMKFMap() {
+        return internalGetAOKLHDMLMKF().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
       @java.lang.Override
 
-      public int getEMKMBDCDIPGOrDefault(
+      public int getAOKLHDMLMKFOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEMKMBDCDIPG().getMap();
+            internalGetAOKLHDMLMKF().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
       @java.lang.Override
 
-      public int getEMKMBDCDIPGOrThrow(
+      public int getAOKLHDMLMKFOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEMKMBDCDIPG().getMap();
+            internalGetAOKLHDMLMKF().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearEMKMBDCDIPG() {
-        internalGetMutableEMKMBDCDIPG().getMutableMap()
+      public Builder clearAOKLHDMLMKF() {
+        internalGetMutableAOKLHDMLMKF().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
 
-      public Builder removeEMKMBDCDIPG(
+      public Builder removeAOKLHDMLMKF(
           int key) {
         
-        internalGetMutableEMKMBDCDIPG().getMutableMap()
+        internalGetMutableAOKLHDMLMKF().getMutableMap()
             .remove(key);
         return this;
       }
@@ -674,28 +730,36 @@ public final class MistTrialDungeonSettleInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableEMKMBDCDIPG() {
-        return internalGetMutableEMKMBDCDIPG().getMutableMap();
+      getMutableAOKLHDMLMKF() {
+        return internalGetMutableAOKLHDMLMKF().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
-      public Builder putEMKMBDCDIPG(
+      public Builder putAOKLHDMLMKF(
           int key,
           int value) {
         
         
-        internalGetMutableEMKMBDCDIPG().getMutableMap()
+        internalGetMutableAOKLHDMLMKF().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; EMKMBDCDIPG = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; AOKLHDMLMKF = 11;</code>
        */
 
-      public Builder putAllEMKMBDCDIPG(
+      public Builder putAllAOKLHDMLMKF(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableEMKMBDCDIPG().getMutableMap()
+        internalGetMutableAOKLHDMLMKF().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -758,10 +822,10 @@ public final class MistTrialDungeonSettleInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MistTrialDungeonSettleInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_descriptor;
+    internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_fieldAccessorTable;
+      internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -772,9 +836,9 @@ public final class MistTrialDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n MistTrialDungeonSettleInfo.proto\"\223\001\n\032M" +
-      "istTrialDungeonSettleInfo\022A\n\013EMKMBDCDIPG" +
-      "\030\014 \003(\0132,.MistTrialDungeonSettleInfo.EMKM" +
-      "BDCDIPGEntry\0322\n\020EMKMBDCDIPGEntry\022\013\n\003key\030" +
+      "istTrialDungeonSettleInfo\022A\n\013AOKLHDMLMKF" +
+      "\030\013 \003(\0132,.MistTrialDungeonSettleInfo.AOKL" +
+      "HDMLMKFEntry\0322\n\020AOKLHDMLMKFEntry\022\013\n\003key\030" +
       "\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
@@ -787,12 +851,12 @@ public final class MistTrialDungeonSettleInfoOuterClass {
     internal_static_MistTrialDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "EMKMBDCDIPG", });
-    internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_descriptor =
+        new java.lang.String[] { "AOKLHDMLMKF", });
+    internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_descriptor =
       internal_static_MistTrialDungeonSettleInfo_descriptor.getNestedTypes().get(0);
-    internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_fieldAccessorTable = new
+    internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MistTrialDungeonSettleInfo_EMKMBDCDIPGEntry_descriptor,
+        internal_static_MistTrialDungeonSettleInfo_AOKLHDMLMKFEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

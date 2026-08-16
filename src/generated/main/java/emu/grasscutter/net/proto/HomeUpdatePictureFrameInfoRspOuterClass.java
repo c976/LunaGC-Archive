@@ -19,30 +19,29 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return Whether the pictureFrameInfo field is set.
      */
     boolean hasPictureFrameInfo();
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return The pictureFrameInfo.
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfo();
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      */
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder();
-
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 5740
-   * Obf: EDHFOGMDKKM
+   * CmdId: 22958
    * </pre>
    *
    * Protobuf type {@code HomeUpdatePictureFrameInfoRsp}
@@ -89,7 +88,12 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 64: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder subBuilder = null;
               if (pictureFrameInfo_ != null) {
                 subBuilder = pictureFrameInfo_.toBuilder();
@@ -100,11 +104,6 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
                 pictureFrameInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 104: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -139,10 +138,21 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
               emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp.class, emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp.Builder.class);
     }
 
-    public static final int PICTURE_FRAME_INFO_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int PICTURE_FRAME_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo pictureFrameInfo_;
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return Whether the pictureFrameInfo field is set.
      */
     @java.lang.Override
@@ -150,7 +160,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       return pictureFrameInfo_ != null;
     }
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      * @return The pictureFrameInfo.
      */
     @java.lang.Override
@@ -158,22 +168,11 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       return pictureFrameInfo_ == null ? emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.getDefaultInstance() : pictureFrameInfo_;
     }
     /**
-     * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+     * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder() {
       return getPictureFrameInfo();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,11 +189,11 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pictureFrameInfo_ != null) {
-        output.writeMessage(9, getPictureFrameInfo());
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(8, retcode_);
+      }
+      if (pictureFrameInfo_ != null) {
+        output.writeMessage(13, getPictureFrameInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +204,13 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pictureFrameInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getPictureFrameInfo());
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(8, retcode_);
+      }
+      if (pictureFrameInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getPictureFrameInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +227,13 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp other = (emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasPictureFrameInfo() != other.hasPictureFrameInfo()) return false;
       if (hasPictureFrameInfo()) {
         if (!getPictureFrameInfo()
             .equals(other.getPictureFrameInfo())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +245,12 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasPictureFrameInfo()) {
         hash = (37 * hash) + PICTURE_FRAME_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getPictureFrameInfo().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,8 +348,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5740
-     * Obf: EDHFOGMDKKM
+     * CmdId: 22958
      * </pre>
      *
      * Protobuf type {@code HomeUpdatePictureFrameInfoRsp}
@@ -390,14 +388,14 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (pictureFrameInfoBuilder_ == null) {
           pictureFrameInfo_ = null;
         } else {
           pictureFrameInfo_ = null;
           pictureFrameInfoBuilder_ = null;
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -424,12 +422,12 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp buildPartial() {
         emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp result = new emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp(this);
+        result.retcode_ = retcode_;
         if (pictureFrameInfoBuilder_ == null) {
           result.pictureFrameInfo_ = pictureFrameInfo_;
         } else {
           result.pictureFrameInfo_ = pictureFrameInfoBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -478,11 +476,11 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp other) {
         if (other == emu.grasscutter.net.proto.HomeUpdatePictureFrameInfoRspOuterClass.HomeUpdatePictureFrameInfoRsp.getDefaultInstance()) return this;
-        if (other.hasPictureFrameInfo()) {
-          mergePictureFrameInfo(other.getPictureFrameInfo());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.hasPictureFrameInfo()) {
+          mergePictureFrameInfo(other.getPictureFrameInfo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,18 +511,49 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo pictureFrameInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> pictureFrameInfoBuilder_;
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        * @return Whether the pictureFrameInfo field is set.
        */
       public boolean hasPictureFrameInfo() {
         return pictureFrameInfoBuilder_ != null || pictureFrameInfo_ != null;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        * @return The pictureFrameInfo.
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo getPictureFrameInfo() {
@@ -535,7 +564,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         }
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder setPictureFrameInfo(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
         if (pictureFrameInfoBuilder_ == null) {
@@ -551,7 +580,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder setPictureFrameInfo(
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder builderForValue) {
@@ -565,7 +594,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder mergePictureFrameInfo(emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo value) {
         if (pictureFrameInfoBuilder_ == null) {
@@ -583,7 +612,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public Builder clearPictureFrameInfo() {
         if (pictureFrameInfoBuilder_ == null) {
@@ -597,7 +626,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder getPictureFrameInfoBuilder() {
         
@@ -605,7 +634,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         return getPictureFrameInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       public emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder getPictureFrameInfoOrBuilder() {
         if (pictureFrameInfoBuilder_ != null) {
@@ -616,7 +645,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
         }
       }
       /**
-       * <code>.HomePictureFrameInfo picture_frame_info = 9;</code>
+       * <code>.HomePictureFrameInfo picture_frame_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfoOrBuilder> 
@@ -630,37 +659,6 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
           pictureFrameInfo_ = null;
         }
         return pictureFrameInfoBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -731,9 +729,9 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#HomeUpdatePictureFrameInfoRsp.proto\032\032H" +
       "omePictureFrameInfo.proto\"c\n\035HomeUpdateP" +
-      "ictureFrameInfoRsp\0221\n\022picture_frame_info" +
-      "\030\t \001(\0132\025.HomePictureFrameInfo\022\017\n\007retcode" +
-      "\030\r \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "ictureFrameInfoRsp\022\017\n\007retcode\030\010 \001(\005\0221\n\022p" +
+      "icture_frame_info\030\r \001(\0132\025.HomePictureFra" +
+      "meInfoB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -746,7 +744,7 @@ public final class HomeUpdatePictureFrameInfoRspOuterClass {
     internal_static_HomeUpdatePictureFrameInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeUpdatePictureFrameInfoRsp_descriptor,
-        new java.lang.String[] { "PictureFrameInfo", "Retcode", });
+        new java.lang.String[] { "Retcode", "PictureFrameInfo", });
     emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.getDescriptor();
   }
 

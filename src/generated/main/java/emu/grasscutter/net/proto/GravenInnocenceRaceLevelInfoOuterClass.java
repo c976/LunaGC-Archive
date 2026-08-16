@@ -19,28 +19,24 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 max_score = 8;</code>
+     * <code>uint32 max_score = 3;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
   }
   /**
-   * <pre>
-   * Obf: FPLDMIJMPGA
-   * </pre>
-   *
    * Protobuf type {@code GravenInnocenceRaceLevelInfo}
    */
   public static final class GravenInnocenceRaceLevelInfo extends
@@ -85,19 +81,19 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 24: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -132,21 +128,10 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.class, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 15;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int MAX_SCORE_FIELD_NUMBER = 8;
+    public static final int MAX_SCORE_FIELD_NUMBER = 3;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 8;</code>
+     * <code>uint32 max_score = 3;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -154,10 +139,21 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -179,14 +175,14 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(6, isOpen_);
-      }
       if (maxScore_ != 0) {
-        output.writeUInt32(8, maxScore_);
+        output.writeUInt32(3, maxScore_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(8, levelId_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(10, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isOpen_);
-      }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, maxScore_);
+          .computeUInt32Size(3, maxScore_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(8, levelId_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,10 +220,10 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo other = (emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getMaxScore()
           != other.getMaxScore()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -241,10 +237,10 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -344,10 +340,6 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FPLDMIJMPGA
-     * </pre>
-     *
      * Protobuf type {@code GravenInnocenceRaceLevelInfo}
      */
     public static final class Builder extends
@@ -385,9 +377,9 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         maxScore_ = 0;
+
+        levelId_ = 0;
 
         isOpen_ = false;
 
@@ -417,8 +409,8 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo buildPartial() {
         emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo result = new emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo(this);
-        result.levelId_ = levelId_;
         result.maxScore_ = maxScore_;
+        result.levelId_ = levelId_;
         result.isOpen_ = isOpen_;
         onBuilt();
         return result;
@@ -468,11 +460,11 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo other) {
         if (other == emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getMaxScore() != 0) {
           setMaxScore(other.getMaxScore());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -506,40 +498,9 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 8;</code>
+       * <code>uint32 max_score = 3;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -547,7 +508,7 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 8;</code>
+       * <code>uint32 max_score = 3;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -558,7 +519,7 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 8;</code>
+       * <code>uint32 max_score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -568,9 +529,40 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return this;
       }
 
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -578,7 +570,7 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -589,7 +581,7 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -666,8 +658,8 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"GravenInnocenceRaceLevelInfo.proto\"T\n\034" +
-      "GravenInnocenceRaceLevelInfo\022\020\n\010level_id" +
-      "\030\017 \001(\r\022\021\n\tmax_score\030\010 \001(\r\022\017\n\007is_open\030\006 \001" +
+      "GravenInnocenceRaceLevelInfo\022\021\n\tmax_scor" +
+      "e\030\003 \001(\r\022\020\n\010level_id\030\010 \001(\r\022\017\n\007is_open\030\n \001" +
       "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +671,7 @@ public final class GravenInnocenceRaceLevelInfoOuterClass {
     internal_static_GravenInnocenceRaceLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocenceRaceLevelInfo_descriptor,
-        new java.lang.String[] { "LevelId", "MaxScore", "IsOpen", });
+        new java.lang.String[] { "MaxScore", "LevelId", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

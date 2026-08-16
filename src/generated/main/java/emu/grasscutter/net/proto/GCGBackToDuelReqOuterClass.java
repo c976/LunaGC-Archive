@@ -19,17 +19,16 @@ public final class GCGBackToDuelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_back = 9;</code>
+     * <pre>
+     * CMD_ID = 25472
+     * </pre>
+     *
+     * <code>bool is_back = 8;</code>
      * @return The isBack.
      */
     boolean getIsBack();
   }
   /**
-   * <pre>
-   * CmdId: 664
-   * Obf: OMMOCDHAKEJ
-   * </pre>
-   *
    * Protobuf type {@code GCGBackToDuelReq}
    */
   public static final class GCGBackToDuelReq extends
@@ -74,7 +73,7 @@ public final class GCGBackToDuelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 64: {
 
               isBack_ = input.readBool();
               break;
@@ -111,10 +110,14 @@ public final class GCGBackToDuelReqOuterClass {
               emu.grasscutter.net.proto.GCGBackToDuelReqOuterClass.GCGBackToDuelReq.class, emu.grasscutter.net.proto.GCGBackToDuelReqOuterClass.GCGBackToDuelReq.Builder.class);
     }
 
-    public static final int IS_BACK_FIELD_NUMBER = 9;
+    public static final int IS_BACK_FIELD_NUMBER = 8;
     private boolean isBack_;
     /**
-     * <code>bool is_back = 9;</code>
+     * <pre>
+     * CMD_ID = 25472
+     * </pre>
+     *
+     * <code>bool is_back = 8;</code>
      * @return The isBack.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGBackToDuelReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isBack_ != false) {
-        output.writeBool(9, isBack_);
+        output.writeBool(8, isBack_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGBackToDuelReqOuterClass {
       size = 0;
       if (isBack_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isBack_);
+          .computeBoolSize(8, isBack_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,11 +282,6 @@ public final class GCGBackToDuelReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 664
-     * Obf: OMMOCDHAKEJ
-     * </pre>
-     *
      * Protobuf type {@code GCGBackToDuelReq}
      */
     public static final class Builder extends
@@ -432,7 +430,11 @@ public final class GCGBackToDuelReqOuterClass {
 
       private boolean isBack_ ;
       /**
-       * <code>bool is_back = 9;</code>
+       * <pre>
+       * CMD_ID = 25472
+       * </pre>
+       *
+       * <code>bool is_back = 8;</code>
        * @return The isBack.
        */
       @java.lang.Override
@@ -440,7 +442,11 @@ public final class GCGBackToDuelReqOuterClass {
         return isBack_;
       }
       /**
-       * <code>bool is_back = 9;</code>
+       * <pre>
+       * CMD_ID = 25472
+       * </pre>
+       *
+       * <code>bool is_back = 8;</code>
        * @param value The isBack to set.
        * @return This builder for chaining.
        */
@@ -451,7 +457,11 @@ public final class GCGBackToDuelReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_back = 9;</code>
+       * <pre>
+       * CMD_ID = 25472
+       * </pre>
+       *
+       * <code>bool is_back = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsBack() {
@@ -528,7 +538,7 @@ public final class GCGBackToDuelReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GCGBackToDuelReq.proto\"#\n\020GCGBackToDue" +
-      "lReq\022\017\n\007is_back\030\t \001(\010B\033\n\031emu.grasscutter" +
+      "lReq\022\017\n\007is_back\030\010 \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

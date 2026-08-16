@@ -19,22 +19,18 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MDCBCLNOGNC = 10;</code>
-     * @return The mDCBCLNOGNC.
+     * <code>uint32 target_element = 7;</code>
+     * @return The targetElement.
      */
-    int getMDCBCLNOGNC();
+    int getTargetElement();
 
     /**
-     * <code>uint32 EMCIICOHDNB = 9;</code>
-     * @return The eMCIICOHDNB.
+     * <code>uint32 source_element = 15;</code>
+     * @return The sourceElement.
      */
-    int getEMCIICOHDNB();
+    int getSourceElement();
   }
   /**
-   * <pre>
-   * Obf: FBHMAFBNDNF
-   * </pre>
-   *
    * Protobuf type {@code GCGSkillPreviewReactionInfo}
    */
   public static final class GCGSkillPreviewReactionInfo extends
@@ -79,14 +75,14 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 56: {
 
-              eMCIICOHDNB_ = input.readUInt32();
+              targetElement_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
 
-              mDCBCLNOGNC_ = input.readUInt32();
+              sourceElement_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.Builder.class);
     }
 
-    public static final int MDCBCLNOGNC_FIELD_NUMBER = 10;
-    private int mDCBCLNOGNC_;
+    public static final int TARGET_ELEMENT_FIELD_NUMBER = 7;
+    private int targetElement_;
     /**
-     * <code>uint32 MDCBCLNOGNC = 10;</code>
-     * @return The mDCBCLNOGNC.
+     * <code>uint32 target_element = 7;</code>
+     * @return The targetElement.
      */
     @java.lang.Override
-    public int getMDCBCLNOGNC() {
-      return mDCBCLNOGNC_;
+    public int getTargetElement() {
+      return targetElement_;
     }
 
-    public static final int EMCIICOHDNB_FIELD_NUMBER = 9;
-    private int eMCIICOHDNB_;
+    public static final int SOURCE_ELEMENT_FIELD_NUMBER = 15;
+    private int sourceElement_;
     /**
-     * <code>uint32 EMCIICOHDNB = 9;</code>
-     * @return The eMCIICOHDNB.
+     * <code>uint32 source_element = 15;</code>
+     * @return The sourceElement.
      */
     @java.lang.Override
-    public int getEMCIICOHDNB() {
-      return eMCIICOHDNB_;
+    public int getSourceElement() {
+      return sourceElement_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eMCIICOHDNB_ != 0) {
-        output.writeUInt32(9, eMCIICOHDNB_);
+      if (targetElement_ != 0) {
+        output.writeUInt32(7, targetElement_);
       }
-      if (mDCBCLNOGNC_ != 0) {
-        output.writeUInt32(10, mDCBCLNOGNC_);
+      if (sourceElement_ != 0) {
+        output.writeUInt32(15, sourceElement_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eMCIICOHDNB_ != 0) {
+      if (targetElement_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, eMCIICOHDNB_);
+          .computeUInt32Size(7, targetElement_);
       }
-      if (mDCBCLNOGNC_ != 0) {
+      if (sourceElement_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mDCBCLNOGNC_);
+          .computeUInt32Size(15, sourceElement_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo) obj;
 
-      if (getMDCBCLNOGNC()
-          != other.getMDCBCLNOGNC()) return false;
-      if (getEMCIICOHDNB()
-          != other.getEMCIICOHDNB()) return false;
+      if (getTargetElement()
+          != other.getTargetElement()) return false;
+      if (getSourceElement()
+          != other.getSourceElement()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MDCBCLNOGNC_FIELD_NUMBER;
-      hash = (53 * hash) + getMDCBCLNOGNC();
-      hash = (37 * hash) + EMCIICOHDNB_FIELD_NUMBER;
-      hash = (53 * hash) + getEMCIICOHDNB();
+      hash = (37 * hash) + TARGET_ELEMENT_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetElement();
+      hash = (37 * hash) + SOURCE_ELEMENT_FIELD_NUMBER;
+      hash = (53 * hash) + getSourceElement();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FBHMAFBNDNF
-     * </pre>
-     *
      * Protobuf type {@code GCGSkillPreviewReactionInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mDCBCLNOGNC_ = 0;
+        targetElement_ = 0;
 
-        eMCIICOHDNB_ = 0;
+        sourceElement_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo(this);
-        result.mDCBCLNOGNC_ = mDCBCLNOGNC_;
-        result.eMCIICOHDNB_ = eMCIICOHDNB_;
+        result.targetElement_ = targetElement_;
+        result.sourceElement_ = sourceElement_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewReactionInfoOuterClass.GCGSkillPreviewReactionInfo.getDefaultInstance()) return this;
-        if (other.getMDCBCLNOGNC() != 0) {
-          setMDCBCLNOGNC(other.getMDCBCLNOGNC());
+        if (other.getTargetElement() != 0) {
+          setTargetElement(other.getTargetElement());
         }
-        if (other.getEMCIICOHDNB() != 0) {
-          setEMCIICOHDNB(other.getEMCIICOHDNB());
+        if (other.getSourceElement() != 0) {
+          setSourceElement(other.getSourceElement());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +458,64 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
         return this;
       }
 
-      private int mDCBCLNOGNC_ ;
+      private int targetElement_ ;
       /**
-       * <code>uint32 MDCBCLNOGNC = 10;</code>
-       * @return The mDCBCLNOGNC.
+       * <code>uint32 target_element = 7;</code>
+       * @return The targetElement.
        */
       @java.lang.Override
-      public int getMDCBCLNOGNC() {
-        return mDCBCLNOGNC_;
+      public int getTargetElement() {
+        return targetElement_;
       }
       /**
-       * <code>uint32 MDCBCLNOGNC = 10;</code>
-       * @param value The mDCBCLNOGNC to set.
+       * <code>uint32 target_element = 7;</code>
+       * @param value The targetElement to set.
        * @return This builder for chaining.
        */
-      public Builder setMDCBCLNOGNC(int value) {
+      public Builder setTargetElement(int value) {
         
-        mDCBCLNOGNC_ = value;
+        targetElement_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MDCBCLNOGNC = 10;</code>
+       * <code>uint32 target_element = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMDCBCLNOGNC() {
+      public Builder clearTargetElement() {
         
-        mDCBCLNOGNC_ = 0;
+        targetElement_ = 0;
         onChanged();
         return this;
       }
 
-      private int eMCIICOHDNB_ ;
+      private int sourceElement_ ;
       /**
-       * <code>uint32 EMCIICOHDNB = 9;</code>
-       * @return The eMCIICOHDNB.
+       * <code>uint32 source_element = 15;</code>
+       * @return The sourceElement.
        */
       @java.lang.Override
-      public int getEMCIICOHDNB() {
-        return eMCIICOHDNB_;
+      public int getSourceElement() {
+        return sourceElement_;
       }
       /**
-       * <code>uint32 EMCIICOHDNB = 9;</code>
-       * @param value The eMCIICOHDNB to set.
+       * <code>uint32 source_element = 15;</code>
+       * @param value The sourceElement to set.
        * @return This builder for chaining.
        */
-      public Builder setEMCIICOHDNB(int value) {
+      public Builder setSourceElement(int value) {
         
-        eMCIICOHDNB_ = value;
+        sourceElement_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EMCIICOHDNB = 9;</code>
+       * <code>uint32 source_element = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEMCIICOHDNB() {
+      public Builder clearSourceElement() {
         
-        eMCIICOHDNB_ = 0;
+        sourceElement_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +586,10 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!GCGSkillPreviewReactionInfo.proto\"G\n\033G" +
-      "CGSkillPreviewReactionInfo\022\023\n\013MDCBCLNOGN" +
-      "C\030\n \001(\r\022\023\n\013EMCIICOHDNB\030\t \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n!GCGSkillPreviewReactionInfo.proto\"M\n\033G" +
+      "CGSkillPreviewReactionInfo\022\026\n\016target_ele" +
+      "ment\030\007 \001(\r\022\026\n\016source_element\030\017 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +600,7 @@ public final class GCGSkillPreviewReactionInfoOuterClass {
     internal_static_GCGSkillPreviewReactionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewReactionInfo_descriptor,
-        new java.lang.String[] { "MDCBCLNOGNC", "EMCIICOHDNB", });
+        new java.lang.String[] { "TargetElement", "SourceElement", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

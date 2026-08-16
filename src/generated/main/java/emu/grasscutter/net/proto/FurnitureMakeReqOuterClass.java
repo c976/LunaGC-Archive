@@ -19,6 +19,10 @@ public final class FurnitureMakeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 4780
+   * </pre>
+   *
    * Protobuf type {@code FurnitureMakeReq}
    */
   public static final class FurnitureMakeReq extends
@@ -240,6 +244,10 @@ public final class FurnitureMakeReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4780
+     * </pre>
+     *
      * Protobuf type {@code FurnitureMakeReq}
      */
     public static final class Builder extends

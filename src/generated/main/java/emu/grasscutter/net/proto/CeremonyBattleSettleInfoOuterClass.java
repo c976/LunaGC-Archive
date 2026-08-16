@@ -19,28 +19,28 @@ public final class CeremonyBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 13;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>uint32 DPBICMKGPDB = 10;</code>
-     * @return The dPBICMKGPDB.
-     */
-    int getDPBICMKGPDB();
-
-    /**
      * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 DALAGKAJCJM = 8;</code>
+     * @return The dALAGKAJCJM.
+     */
+    int getDALAGKAJCJM();
+
+    /**
+     * <code>uint32 score = 14;</code>
+     * @return The score.
+     */
+    int getScore();
   }
   /**
    * Protobuf type {@code CeremonyBattleSettleInfo}
@@ -92,17 +92,17 @@ public final class CeremonyBattleSettleInfoOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              dPBICMKGPDB_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 40: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 104: {
+            case 64: {
+
+              dALAGKAJCJM_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               score_ = input.readUInt32();
               break;
@@ -139,28 +139,6 @@ public final class CeremonyBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.class, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 13;
-    private int score_;
-    /**
-     * <code>uint32 score = 13;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int DPBICMKGPDB_FIELD_NUMBER = 10;
-    private int dPBICMKGPDB_;
-    /**
-     * <code>uint32 DPBICMKGPDB = 10;</code>
-     * @return The dPBICMKGPDB.
-     */
-    @java.lang.Override
-    public int getDPBICMKGPDB() {
-      return dPBICMKGPDB_;
-    }
-
     public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
@@ -172,15 +150,37 @@ public final class CeremonyBattleSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
+    }
+
+    public static final int DALAGKAJCJM_FIELD_NUMBER = 8;
+    private int dALAGKAJCJM_;
+    /**
+     * <code>uint32 DALAGKAJCJM = 8;</code>
+     * @return The dALAGKAJCJM.
+     */
+    @java.lang.Override
+    public int getDALAGKAJCJM() {
+      return dALAGKAJCJM_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 14;
+    private int score_;
+    /**
+     * <code>uint32 score = 14;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -200,14 +200,14 @@ public final class CeremonyBattleSettleInfoOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(1, levelId_);
       }
-      if (dPBICMKGPDB_ != 0) {
-        output.writeUInt32(10, dPBICMKGPDB_);
-      }
       if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
+        output.writeBool(5, isNewRecord_);
+      }
+      if (dALAGKAJCJM_ != 0) {
+        output.writeUInt32(8, dALAGKAJCJM_);
       }
       if (score_ != 0) {
-        output.writeUInt32(13, score_);
+        output.writeUInt32(14, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,17 +222,17 @@ public final class CeremonyBattleSettleInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, levelId_);
       }
-      if (dPBICMKGPDB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, dPBICMKGPDB_);
-      }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
+          .computeBoolSize(5, isNewRecord_);
+      }
+      if (dALAGKAJCJM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dALAGKAJCJM_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, score_);
+          .computeUInt32Size(14, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class CeremonyBattleSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo other = (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
-      if (getDPBICMKGPDB()
-          != other.getDPBICMKGPDB()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getDALAGKAJCJM()
+          != other.getDALAGKAJCJM()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +268,15 @@ public final class CeremonyBattleSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + DPBICMKGPDB_FIELD_NUMBER;
-      hash = (53 * hash) + getDPBICMKGPDB();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + DALAGKAJCJM_FIELD_NUMBER;
+      hash = (53 * hash) + getDALAGKAJCJM();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +410,13 @@ public final class CeremonyBattleSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
-
-        dPBICMKGPDB_ = 0;
-
         levelId_ = 0;
 
         isNewRecord_ = false;
+
+        dALAGKAJCJM_ = 0;
+
+        score_ = 0;
 
         return this;
       }
@@ -444,10 +444,10 @@ public final class CeremonyBattleSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo buildPartial() {
         emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo result = new emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo(this);
-        result.score_ = score_;
-        result.dPBICMKGPDB_ = dPBICMKGPDB_;
         result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
+        result.dALAGKAJCJM_ = dALAGKAJCJM_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -496,17 +496,17 @@ public final class CeremonyBattleSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo other) {
         if (other == emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
-        if (other.getDPBICMKGPDB() != 0) {
-          setDPBICMKGPDB(other.getDPBICMKGPDB());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getDALAGKAJCJM() != 0) {
+          setDALAGKAJCJM(other.getDALAGKAJCJM());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -534,68 +534,6 @@ public final class CeremonyBattleSettleInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 13;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 13;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dPBICMKGPDB_ ;
-      /**
-       * <code>uint32 DPBICMKGPDB = 10;</code>
-       * @return The dPBICMKGPDB.
-       */
-      @java.lang.Override
-      public int getDPBICMKGPDB() {
-        return dPBICMKGPDB_;
-      }
-      /**
-       * <code>uint32 DPBICMKGPDB = 10;</code>
-       * @param value The dPBICMKGPDB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDPBICMKGPDB(int value) {
-        
-        dPBICMKGPDB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DPBICMKGPDB = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDPBICMKGPDB() {
-        
-        dPBICMKGPDB_ = 0;
-        onChanged();
         return this;
       }
 
@@ -632,7 +570,7 @@ public final class CeremonyBattleSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -640,7 +578,7 @@ public final class CeremonyBattleSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 5;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -651,12 +589,74 @@ public final class CeremonyBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int dALAGKAJCJM_ ;
+      /**
+       * <code>uint32 DALAGKAJCJM = 8;</code>
+       * @return The dALAGKAJCJM.
+       */
+      @java.lang.Override
+      public int getDALAGKAJCJM() {
+        return dALAGKAJCJM_;
+      }
+      /**
+       * <code>uint32 DALAGKAJCJM = 8;</code>
+       * @param value The dALAGKAJCJM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDALAGKAJCJM(int value) {
+        
+        dALAGKAJCJM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DALAGKAJCJM = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDALAGKAJCJM() {
+        
+        dALAGKAJCJM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 14;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 14;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -728,9 +728,9 @@ public final class CeremonyBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036CeremonyBattleSettleInfo.proto\"g\n\030Cere" +
-      "monyBattleSettleInfo\022\r\n\005score\030\r \001(\r\022\023\n\013D" +
-      "PBICMKGPDB\030\n \001(\r\022\020\n\010level_id\030\001 \001(\r\022\025\n\ris" +
-      "_new_record\030\014 \001(\010B\033\n\031emu.grasscutter.net" +
+      "monyBattleSettleInfo\022\020\n\010level_id\030\001 \001(\r\022\025" +
+      "\n\ris_new_record\030\005 \001(\010\022\023\n\013DALAGKAJCJM\030\010 \001" +
+      "(\r\022\r\n\005score\030\016 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +742,7 @@ public final class CeremonyBattleSettleInfoOuterClass {
     internal_static_CeremonyBattleSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CeremonyBattleSettleInfo_descriptor,
-        new java.lang.String[] { "Score", "DPBICMKGPDB", "LevelId", "IsNewRecord", });
+        new java.lang.String[] { "LevelId", "IsNewRecord", "DALAGKAJCJM", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

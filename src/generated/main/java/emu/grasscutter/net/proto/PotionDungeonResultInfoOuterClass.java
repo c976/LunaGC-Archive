@@ -19,40 +19,64 @@ public final class PotionDungeonResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty_level = 2;</code>
-     * @return The difficultyLevel.
-     */
-    int getDifficultyLevel();
-
-    /**
-     * <code>uint32 final_score = 1;</code>
-     * @return The finalScore.
-     */
-    int getFinalScore();
-
-    /**
-     * <code>uint32 stage_id = 3;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 left_time = 7;</code>
-     * @return The leftTime.
-     */
-    int getLeftTime();
-
-    /**
-     * <code>uint32 level_id = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 mode_id = 8;</code>
-     * @return The modeId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
      */
-    int getModeId();
+    int getStageId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 4;</code>
+     * @return The kEABNKEIJAD.
+     */
+    int getKEABNKEIJAD();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 ONJBLHHJBAF = 13;</code>
+     * @return The oNJBLHHJBAF.
+     */
+    int getONJBLHHJBAF();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 JANLIIDIKPM = 15;</code>
+     * @return The jANLIIDIKPM.
+     */
+    int getJANLIIDIKPM();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 left_time = 8;</code>
+     * @return The leftTime.
+     */
+    int getLeftTime();
   }
   /**
    * Protobuf type {@code PotionDungeonResultInfo}
@@ -99,34 +123,34 @@ public final class PotionDungeonResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              finalScore_ = input.readUInt32();
+              kEABNKEIJAD_ = input.readUInt32();
               break;
             }
-            case 16: {
-
-              difficultyLevel_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 48: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 64: {
 
               leftTime_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              modeId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 96: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              oNJBLHHJBAF_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              jANLIIDIKPM_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,54 +185,14 @@ public final class PotionDungeonResultInfoOuterClass {
               emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo.class, emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo.Builder.class);
     }
 
-    public static final int DIFFICULTY_LEVEL_FIELD_NUMBER = 2;
-    private int difficultyLevel_;
-    /**
-     * <code>uint32 difficulty_level = 2;</code>
-     * @return The difficultyLevel.
-     */
-    @java.lang.Override
-    public int getDifficultyLevel() {
-      return difficultyLevel_;
-    }
-
-    public static final int FINAL_SCORE_FIELD_NUMBER = 1;
-    private int finalScore_;
-    /**
-     * <code>uint32 final_score = 1;</code>
-     * @return The finalScore.
-     */
-    @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 3;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 3;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int LEFT_TIME_FIELD_NUMBER = 7;
-    private int leftTime_;
-    /**
-     * <code>uint32 left_time = 7;</code>
-     * @return The leftTime.
-     */
-    @java.lang.Override
-    public int getLeftTime() {
-      return leftTime_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -216,15 +200,79 @@ public final class PotionDungeonResultInfoOuterClass {
       return levelId_;
     }
 
-    public static final int MODE_ID_FIELD_NUMBER = 8;
-    private int modeId_;
+    public static final int STAGE_ID_FIELD_NUMBER = 6;
+    private int stageId_;
     /**
-     * <code>uint32 mode_id = 8;</code>
-     * @return The modeId.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getModeId() {
-      return modeId_;
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int KEABNKEIJAD_FIELD_NUMBER = 4;
+    private int kEABNKEIJAD_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 4;</code>
+     * @return The kEABNKEIJAD.
+     */
+    @java.lang.Override
+    public int getKEABNKEIJAD() {
+      return kEABNKEIJAD_;
+    }
+
+    public static final int ONJBLHHJBAF_FIELD_NUMBER = 13;
+    private int oNJBLHHJBAF_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 ONJBLHHJBAF = 13;</code>
+     * @return The oNJBLHHJBAF.
+     */
+    @java.lang.Override
+    public int getONJBLHHJBAF() {
+      return oNJBLHHJBAF_;
+    }
+
+    public static final int JANLIIDIKPM_FIELD_NUMBER = 15;
+    private int jANLIIDIKPM_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 JANLIIDIKPM = 15;</code>
+     * @return The jANLIIDIKPM.
+     */
+    @java.lang.Override
+    public int getJANLIIDIKPM() {
+      return jANLIIDIKPM_;
+    }
+
+    public static final int LEFT_TIME_FIELD_NUMBER = 8;
+    private int leftTime_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 left_time = 8;</code>
+     * @return The leftTime.
+     */
+    @java.lang.Override
+    public int getLeftTime() {
+      return leftTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +289,23 @@ public final class PotionDungeonResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finalScore_ != 0) {
-        output.writeUInt32(1, finalScore_);
-      }
-      if (difficultyLevel_ != 0) {
-        output.writeUInt32(2, difficultyLevel_);
+      if (kEABNKEIJAD_ != 0) {
+        output.writeUInt32(4, kEABNKEIJAD_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(3, stageId_);
+        output.writeUInt32(6, stageId_);
       }
       if (leftTime_ != 0) {
-        output.writeUInt32(7, leftTime_);
-      }
-      if (modeId_ != 0) {
-        output.writeUInt32(8, modeId_);
+        output.writeUInt32(8, leftTime_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(12, levelId_);
+      }
+      if (oNJBLHHJBAF_ != 0) {
+        output.writeUInt32(13, oNJBLHHJBAF_);
+      }
+      if (jANLIIDIKPM_ != 0) {
+        output.writeUInt32(15, jANLIIDIKPM_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +316,29 @@ public final class PotionDungeonResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finalScore_ != 0) {
+      if (kEABNKEIJAD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, finalScore_);
-      }
-      if (difficultyLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, difficultyLevel_);
+          .computeUInt32Size(4, kEABNKEIJAD_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, stageId_);
+          .computeUInt32Size(6, stageId_);
       }
       if (leftTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, leftTime_);
-      }
-      if (modeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, modeId_);
+          .computeUInt32Size(8, leftTime_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(12, levelId_);
+      }
+      if (oNJBLHHJBAF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, oNJBLHHJBAF_);
+      }
+      if (jANLIIDIKPM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, jANLIIDIKPM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +355,18 @@ public final class PotionDungeonResultInfoOuterClass {
       }
       emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo other = (emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo) obj;
 
-      if (getDifficultyLevel()
-          != other.getDifficultyLevel()) return false;
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getLeftTime()
-          != other.getLeftTime()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getModeId()
-          != other.getModeId()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (getKEABNKEIJAD()
+          != other.getKEABNKEIJAD()) return false;
+      if (getONJBLHHJBAF()
+          != other.getONJBLHHJBAF()) return false;
+      if (getJANLIIDIKPM()
+          != other.getJANLIIDIKPM()) return false;
+      if (getLeftTime()
+          != other.getLeftTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,18 +378,18 @@ public final class PotionDungeonResultInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DIFFICULTY_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyLevel();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftTime();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + MODE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModeId();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + KEABNKEIJAD_FIELD_NUMBER;
+      hash = (53 * hash) + getKEABNKEIJAD();
+      hash = (37 * hash) + ONJBLHHJBAF_FIELD_NUMBER;
+      hash = (53 * hash) + getONJBLHHJBAF();
+      hash = (37 * hash) + JANLIIDIKPM_FIELD_NUMBER;
+      hash = (53 * hash) + getJANLIIDIKPM();
+      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -475,17 +523,17 @@ public final class PotionDungeonResultInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        difficultyLevel_ = 0;
-
-        finalScore_ = 0;
+        levelId_ = 0;
 
         stageId_ = 0;
 
+        kEABNKEIJAD_ = 0;
+
+        oNJBLHHJBAF_ = 0;
+
+        jANLIIDIKPM_ = 0;
+
         leftTime_ = 0;
-
-        levelId_ = 0;
-
-        modeId_ = 0;
 
         return this;
       }
@@ -513,12 +561,12 @@ public final class PotionDungeonResultInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo buildPartial() {
         emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo result = new emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo(this);
-        result.difficultyLevel_ = difficultyLevel_;
-        result.finalScore_ = finalScore_;
-        result.stageId_ = stageId_;
-        result.leftTime_ = leftTime_;
         result.levelId_ = levelId_;
-        result.modeId_ = modeId_;
+        result.stageId_ = stageId_;
+        result.kEABNKEIJAD_ = kEABNKEIJAD_;
+        result.oNJBLHHJBAF_ = oNJBLHHJBAF_;
+        result.jANLIIDIKPM_ = jANLIIDIKPM_;
+        result.leftTime_ = leftTime_;
         onBuilt();
         return result;
       }
@@ -567,23 +615,23 @@ public final class PotionDungeonResultInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo other) {
         if (other == emu.grasscutter.net.proto.PotionDungeonResultInfoOuterClass.PotionDungeonResultInfo.getDefaultInstance()) return this;
-        if (other.getDifficultyLevel() != 0) {
-          setDifficultyLevel(other.getDifficultyLevel());
-        }
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
+        if (other.getKEABNKEIJAD() != 0) {
+          setKEABNKEIJAD(other.getKEABNKEIJAD());
+        }
+        if (other.getONJBLHHJBAF() != 0) {
+          setONJBLHHJBAF(other.getONJBLHHJBAF());
+        }
+        if (other.getJANLIIDIKPM() != 0) {
+          setJANLIIDIKPM(other.getJANLIIDIKPM());
+        }
         if (other.getLeftTime() != 0) {
           setLeftTime(other.getLeftTime());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getModeId() != 0) {
-          setModeId(other.getModeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -614,133 +662,13 @@ public final class PotionDungeonResultInfoOuterClass {
         return this;
       }
 
-      private int difficultyLevel_ ;
-      /**
-       * <code>uint32 difficulty_level = 2;</code>
-       * @return The difficultyLevel.
-       */
-      @java.lang.Override
-      public int getDifficultyLevel() {
-        return difficultyLevel_;
-      }
-      /**
-       * <code>uint32 difficulty_level = 2;</code>
-       * @param value The difficultyLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyLevel(int value) {
-        
-        difficultyLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_level = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyLevel() {
-        
-        difficultyLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int finalScore_ ;
-      /**
-       * <code>uint32 final_score = 1;</code>
-       * @return The finalScore.
-       */
-      @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
-      }
-      /**
-       * <code>uint32 final_score = 1;</code>
-       * @param value The finalScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinalScore(int value) {
-        
-        finalScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 final_score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinalScore() {
-        
-        finalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 3;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 3;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int leftTime_ ;
-      /**
-       * <code>uint32 left_time = 7;</code>
-       * @return The leftTime.
-       */
-      @java.lang.Override
-      public int getLeftTime() {
-        return leftTime_;
-      }
-      /**
-       * <code>uint32 left_time = 7;</code>
-       * @param value The leftTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLeftTime(int value) {
-        
-        leftTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 left_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLeftTime() {
-        
-        leftTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -748,7 +676,11 @@ public final class PotionDungeonResultInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -759,7 +691,11 @@ public final class PotionDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -769,33 +705,217 @@ public final class PotionDungeonResultInfoOuterClass {
         return this;
       }
 
-      private int modeId_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 mode_id = 8;</code>
-       * @return The modeId.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getModeId() {
-        return modeId_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 mode_id = 8;</code>
-       * @param value The modeId to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setModeId(int value) {
+      public Builder setStageId(int value) {
         
-        modeId_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mode_id = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearModeId() {
+      public Builder clearStageId() {
         
-        modeId_ = 0;
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kEABNKEIJAD_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 4;</code>
+       * @return The kEABNKEIJAD.
+       */
+      @java.lang.Override
+      public int getKEABNKEIJAD() {
+        return kEABNKEIJAD_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 4;</code>
+       * @param value The kEABNKEIJAD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEABNKEIJAD(int value) {
+        
+        kEABNKEIJAD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKEABNKEIJAD() {
+        
+        kEABNKEIJAD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oNJBLHHJBAF_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 ONJBLHHJBAF = 13;</code>
+       * @return The oNJBLHHJBAF.
+       */
+      @java.lang.Override
+      public int getONJBLHHJBAF() {
+        return oNJBLHHJBAF_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 ONJBLHHJBAF = 13;</code>
+       * @param value The oNJBLHHJBAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setONJBLHHJBAF(int value) {
+        
+        oNJBLHHJBAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 ONJBLHHJBAF = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearONJBLHHJBAF() {
+        
+        oNJBLHHJBAF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jANLIIDIKPM_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JANLIIDIKPM = 15;</code>
+       * @return The jANLIIDIKPM.
+       */
+      @java.lang.Override
+      public int getJANLIIDIKPM() {
+        return jANLIIDIKPM_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JANLIIDIKPM = 15;</code>
+       * @param value The jANLIIDIKPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJANLIIDIKPM(int value) {
+        
+        jANLIIDIKPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 JANLIIDIKPM = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJANLIIDIKPM() {
+        
+        jANLIIDIKPM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int leftTime_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 left_time = 8;</code>
+       * @return The leftTime.
+       */
+      @java.lang.Override
+      public int getLeftTime() {
+        return leftTime_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 left_time = 8;</code>
+       * @param value The leftTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLeftTime(int value) {
+        
+        leftTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 left_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLeftTime() {
+        
+        leftTime_ = 0;
         onChanged();
         return this;
       }
@@ -866,12 +986,12 @@ public final class PotionDungeonResultInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035PotionDungeonResultInfo.proto\"\220\001\n\027Poti" +
-      "onDungeonResultInfo\022\030\n\020difficulty_level\030" +
-      "\002 \001(\r\022\023\n\013final_score\030\001 \001(\r\022\020\n\010stage_id\030\003" +
-      " \001(\r\022\021\n\tleft_time\030\007 \001(\r\022\020\n\010level_id\030\t \001(" +
-      "\r\022\017\n\007mode_id\030\010 \001(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\035PotionDungeonResultInfo.proto\"\217\001\n\027Poti" +
+      "onDungeonResultInfo\022\020\n\010level_id\030\014 \001(\r\022\020\n" +
+      "\010stage_id\030\006 \001(\r\022\023\n\013KEABNKEIJAD\030\004 \001(\r\022\023\n\013" +
+      "ONJBLHHJBAF\030\r \001(\r\022\023\n\013JANLIIDIKPM\030\017 \001(\r\022\021" +
+      "\n\tleft_time\030\010 \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -882,7 +1002,7 @@ public final class PotionDungeonResultInfoOuterClass {
     internal_static_PotionDungeonResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionDungeonResultInfo_descriptor,
-        new java.lang.String[] { "DifficultyLevel", "FinalScore", "StageId", "LeftTime", "LevelId", "ModeId", });
+        new java.lang.String[] { "LevelId", "StageId", "KEABNKEIJAD", "ONJBLHHJBAF", "JANLIIDIKPM", "LeftTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

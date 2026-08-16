@@ -19,27 +19,27 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>uint32 skill_depot_id = 2;</code>
+     * @return The skillDepotId.
+     */
+    int getSkillDepotId();
+
+    /**
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
     int getSkillIdList(int index);
-
-    /**
-     * <code>uint32 skill_depot_id = 13;</code>
-     * @return The skillDepotId.
-     */
-    int getSkillDepotId();
   }
   /**
    * Protobuf type {@code GameplayRecommendationSkillResponse}
@@ -88,7 +88,12 @@ public final class GameplayRecommendationSkillResponseOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
+
+              skillDepotId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +101,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
               skillIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -107,11 +112,6 @@ public final class GameplayRecommendationSkillResponseOuterClass {
                 skillIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 104: {
-
-              skillDepotId_ = input.readUInt32();
               break;
             }
             default: {
@@ -149,10 +149,21 @@ public final class GameplayRecommendationSkillResponseOuterClass {
               emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse.class, emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse.Builder.class);
     }
 
-    public static final int SKILL_ID_LIST_FIELD_NUMBER = 9;
+    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 2;
+    private int skillDepotId_;
+    /**
+     * <code>uint32 skill_depot_id = 2;</code>
+     * @return The skillDepotId.
+     */
+    @java.lang.Override
+    public int getSkillDepotId() {
+      return skillDepotId_;
+    }
+
+    public static final int SKILL_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @return A list containing the skillIdList.
      */
     @java.lang.Override
@@ -161,14 +172,14 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       return skillIdList_;
     }
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @return The count of skillIdList.
      */
     public int getSkillIdListCount() {
       return skillIdList_.size();
     }
     /**
-     * <code>repeated uint32 skill_id_list = 9;</code>
+     * <code>repeated uint32 skill_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
      */
@@ -176,17 +187,6 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       return skillIdList_.getInt(index);
     }
     private int skillIdListMemoizedSerializedSize = -1;
-
-    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 13;
-    private int skillDepotId_;
-    /**
-     * <code>uint32 skill_depot_id = 13;</code>
-     * @return The skillDepotId.
-     */
-    @java.lang.Override
-    public int getSkillDepotId() {
-      return skillDepotId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -203,15 +203,15 @@ public final class GameplayRecommendationSkillResponseOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (skillDepotId_ != 0) {
+        output.writeUInt32(2, skillDepotId_);
+      }
       if (getSkillIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(skillIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillIdList_.size(); i++) {
         output.writeUInt32NoTag(skillIdList_.getInt(i));
-      }
-      if (skillDepotId_ != 0) {
-        output.writeUInt32(13, skillDepotId_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,6 +222,10 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (skillDepotId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, skillDepotId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < skillIdList_.size(); i++) {
@@ -235,10 +239,6 @@ public final class GameplayRecommendationSkillResponseOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         skillIdListMemoizedSerializedSize = dataSize;
-      }
-      if (skillDepotId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, skillDepotId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,10 +255,10 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       }
       emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse other = (emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse) obj;
 
-      if (!getSkillIdListList()
-          .equals(other.getSkillIdListList())) return false;
       if (getSkillDepotId()
           != other.getSkillDepotId()) return false;
+      if (!getSkillIdListList()
+          .equals(other.getSkillIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -270,12 +270,12 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillDepotId();
       if (getSkillIdListCount() > 0) {
         hash = (37 * hash) + SKILL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSkillIdListList().hashCode();
       }
-      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillDepotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,10 +409,10 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        skillIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         skillDepotId_ = 0;
 
+        skillIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -440,12 +440,12 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       public emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse buildPartial() {
         emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse result = new emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse(this);
         int from_bitField0_ = bitField0_;
+        result.skillDepotId_ = skillDepotId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           skillIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.skillIdList_ = skillIdList_;
-        result.skillDepotId_ = skillDepotId_;
         onBuilt();
         return result;
       }
@@ -494,6 +494,9 @@ public final class GameplayRecommendationSkillResponseOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse other) {
         if (other == emu.grasscutter.net.proto.GameplayRecommendationSkillResponseOuterClass.GameplayRecommendationSkillResponse.getDefaultInstance()) return this;
+        if (other.getSkillDepotId() != 0) {
+          setSkillDepotId(other.getSkillDepotId());
+        }
         if (!other.skillIdList_.isEmpty()) {
           if (skillIdList_.isEmpty()) {
             skillIdList_ = other.skillIdList_;
@@ -503,9 +506,6 @@ public final class GameplayRecommendationSkillResponseOuterClass {
             skillIdList_.addAll(other.skillIdList_);
           }
           onChanged();
-        }
-        if (other.getSkillDepotId() != 0) {
-          setSkillDepotId(other.getSkillDepotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,6 +537,37 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       }
       private int bitField0_;
 
+      private int skillDepotId_ ;
+      /**
+       * <code>uint32 skill_depot_id = 2;</code>
+       * @return The skillDepotId.
+       */
+      @java.lang.Override
+      public int getSkillDepotId() {
+        return skillDepotId_;
+      }
+      /**
+       * <code>uint32 skill_depot_id = 2;</code>
+       * @param value The skillDepotId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillDepotId(int value) {
+        
+        skillDepotId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 skill_depot_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillDepotId() {
+        
+        skillDepotId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList skillIdList_ = emptyIntList();
       private void ensureSkillIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -545,7 +576,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @return A list containing the skillIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -554,14 +585,14 @@ public final class GameplayRecommendationSkillResponseOuterClass {
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @return The count of skillIdList.
        */
       public int getSkillIdListCount() {
         return skillIdList_.size();
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
        */
@@ -569,7 +600,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
        * @return This builder for chaining.
@@ -582,7 +613,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -593,7 +624,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
        */
@@ -606,43 +637,12 @@ public final class GameplayRecommendationSkillResponseOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id_list = 9;</code>
+       * <code>repeated uint32 skill_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillIdList() {
         skillIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int skillDepotId_ ;
-      /**
-       * <code>uint32 skill_depot_id = 13;</code>
-       * @return The skillDepotId.
-       */
-      @java.lang.Override
-      public int getSkillDepotId() {
-        return skillDepotId_;
-      }
-      /**
-       * <code>uint32 skill_depot_id = 13;</code>
-       * @param value The skillDepotId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillDepotId(int value) {
-        
-        skillDepotId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_depot_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillDepotId() {
-        
-        skillDepotId_ = 0;
         onChanged();
         return this;
       }
@@ -715,8 +715,8 @@ public final class GameplayRecommendationSkillResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\n)GameplayRecommendationSkillResponse.pr" +
       "oto\"T\n#GameplayRecommendationSkillRespon" +
-      "se\022\025\n\rskill_id_list\030\t \003(\r\022\026\n\016skill_depot" +
-      "_id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "se\022\026\n\016skill_depot_id\030\002 \001(\r\022\025\n\rskill_id_l" +
+      "ist\030\007 \003(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -728,7 +728,7 @@ public final class GameplayRecommendationSkillResponseOuterClass {
     internal_static_GameplayRecommendationSkillResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GameplayRecommendationSkillResponse_descriptor,
-        new java.lang.String[] { "SkillIdList", "SkillDepotId", });
+        new java.lang.String[] { "SkillDepotId", "SkillIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

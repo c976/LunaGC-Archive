@@ -19,21 +19,37 @@ public final class HitClientTrivialNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      * @return Whether the position field is set.
      */
     boolean hasPosition();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      * @return The position.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder();
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 owner_entity_id = 5;</code>
      * @return The ownerEntityId.
      */
@@ -141,6 +157,10 @@ public final class HitClientTrivialNotifyOuterClass {
     public static final int POSITION_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      * @return Whether the position field is set.
      */
@@ -149,6 +169,10 @@ public final class HitClientTrivialNotifyOuterClass {
       return position_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      * @return The position.
      */
@@ -157,6 +181,10 @@ public final class HitClientTrivialNotifyOuterClass {
       return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector position = 1;</code>
      */
     @java.lang.Override
@@ -167,6 +195,10 @@ public final class HitClientTrivialNotifyOuterClass {
     public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 5;
     private int ownerEntityId_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>uint32 owner_entity_id = 5;</code>
      * @return The ownerEntityId.
      */
@@ -515,6 +547,10 @@ public final class HitClientTrivialNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> positionBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        * @return Whether the position field is set.
        */
@@ -522,6 +558,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return positionBuilder_ != null || position_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        * @return The position.
        */
@@ -533,6 +573,10 @@ public final class HitClientTrivialNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public Builder setPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -549,6 +593,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public Builder setPosition(
@@ -563,6 +611,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public Builder mergePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -581,6 +633,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public Builder clearPosition() {
@@ -595,6 +651,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPositionBuilder() {
@@ -603,6 +663,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return getPositionFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder() {
@@ -614,6 +678,10 @@ public final class HitClientTrivialNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector position = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -632,6 +700,10 @@ public final class HitClientTrivialNotifyOuterClass {
 
       private int ownerEntityId_ ;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 owner_entity_id = 5;</code>
        * @return The ownerEntityId.
        */
@@ -640,6 +712,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return ownerEntityId_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 owner_entity_id = 5;</code>
        * @param value The ownerEntityId to set.
        * @return This builder for chaining.
@@ -651,6 +727,10 @@ public final class HitClientTrivialNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>uint32 owner_entity_id = 5;</code>
        * @return This builder for chaining.
        */

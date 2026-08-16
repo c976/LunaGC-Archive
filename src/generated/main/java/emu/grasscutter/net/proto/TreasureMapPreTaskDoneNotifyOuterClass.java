@@ -20,8 +20,7 @@ public final class TreasureMapPreTaskDoneNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 20410
-   * Obf: HJHMFJBJDIC
+   * CmdId: 21858
    * </pre>
    *
    * Protobuf type {@code TreasureMapPreTaskDoneNotify}
@@ -246,8 +245,7 @@ public final class TreasureMapPreTaskDoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20410
-     * Obf: HJHMFJBJDIC
+     * CmdId: 21858
      * </pre>
      *
      * Protobuf type {@code TreasureMapPreTaskDoneNotify}

@@ -19,15 +19,14 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 match_id = 7;</code>
+     * <code>uint32 match_id = 2;</code>
      * @return The matchId.
      */
     int getMatchId();
   }
   /**
    * <pre>
-   * CmdId: 7158
-   * Obf: CFABFBCEICO
+   * CmdId: 6938
    * </pre>
    *
    * Protobuf type {@code ServerTryCancelGeneralMatchNotify}
@@ -74,7 +73,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
               matchId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
               emu.grasscutter.net.proto.ServerTryCancelGeneralMatchNotifyOuterClass.ServerTryCancelGeneralMatchNotify.class, emu.grasscutter.net.proto.ServerTryCancelGeneralMatchNotifyOuterClass.ServerTryCancelGeneralMatchNotify.Builder.class);
     }
 
-    public static final int MATCH_ID_FIELD_NUMBER = 7;
+    public static final int MATCH_ID_FIELD_NUMBER = 2;
     private int matchId_;
     /**
-     * <code>uint32 match_id = 7;</code>
+     * <code>uint32 match_id = 2;</code>
      * @return The matchId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (matchId_ != 0) {
-        output.writeUInt32(7, matchId_);
+        output.writeUInt32(2, matchId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
       size = 0;
       if (matchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, matchId_);
+          .computeUInt32Size(2, matchId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7158
-     * Obf: CFABFBCEICO
+     * CmdId: 6938
      * </pre>
      *
      * Protobuf type {@code ServerTryCancelGeneralMatchNotify}
@@ -431,7 +429,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
 
       private int matchId_ ;
       /**
-       * <code>uint32 match_id = 7;</code>
+       * <code>uint32 match_id = 2;</code>
        * @return The matchId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
         return matchId_;
       }
       /**
-       * <code>uint32 match_id = 7;</code>
+       * <code>uint32 match_id = 2;</code>
        * @param value The matchId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 match_id = 7;</code>
+       * <code>uint32 match_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchId() {
@@ -528,7 +526,7 @@ public final class ServerTryCancelGeneralMatchNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'ServerTryCancelGeneralMatchNotify.prot" +
       "o\"5\n!ServerTryCancelGeneralMatchNotify\022\020" +
-      "\n\010match_id\030\007 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\010match_id\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

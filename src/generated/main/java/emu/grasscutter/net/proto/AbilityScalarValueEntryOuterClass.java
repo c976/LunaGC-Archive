@@ -19,37 +19,19 @@ public final class AbilityScalarValueEntryOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilityString key = 1;</code>
-     * @return Whether the key field is set.
-     */
-    boolean hasKey();
-    /**
-     * <code>.AbilityString key = 1;</code>
-     * @return The key.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey();
-    /**
-     * <code>.AbilityString key = 1;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder();
-
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The enum numeric value on the wire for valueType.
-     */
-    int getValueTypeValue();
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The valueType.
-     */
-    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType();
-
-    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>float float_value = 3;</code>
      * @return Whether the floatValue field is set.
      */
     boolean hasFloatValue();
     /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>float float_value = 3;</code>
      * @return The floatValue.
      */
@@ -93,6 +75,44 @@ public final class AbilityScalarValueEntryOuterClass {
      * @return The uintValue.
      */
     int getUintValue();
+
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     * @return Whether the key field is set.
+     */
+    boolean hasKey();
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     * @return The key.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey();
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder();
+
+    /**
+     * <code>.AbilityScalarType value_type = 2;</code>
+     * @return The enum numeric value on the wire for valueType.
+     */
+    int getValueTypeValue();
+    /**
+     * <code>.AbilityScalarType value_type = 2;</code>
+     * @return The valueType.
+     */
+    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType();
 
     public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.ValueCase getValueCase();
   }
@@ -259,53 +279,12 @@ public final class AbilityScalarValueEntryOuterClass {
           valueCase_);
     }
 
-    public static final int KEY_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
-    /**
-     * <code>.AbilityString key = 1;</code>
-     * @return Whether the key field is set.
-     */
-    @java.lang.Override
-    public boolean hasKey() {
-      return key_ != null;
-    }
-    /**
-     * <code>.AbilityString key = 1;</code>
-     * @return The key.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey() {
-      return key_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
-    }
-    /**
-     * <code>.AbilityString key = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder() {
-      return getKey();
-    }
-
-    public static final int VALUE_TYPE_FIELD_NUMBER = 2;
-    private int valueType_;
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The enum numeric value on the wire for valueType.
-     */
-    @java.lang.Override public int getValueTypeValue() {
-      return valueType_;
-    }
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The valueType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
-      return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
-    }
-
     public static final int FLOAT_VALUE_FIELD_NUMBER = 3;
     /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>float float_value = 3;</code>
      * @return Whether the floatValue field is set.
      */
@@ -314,6 +293,10 @@ public final class AbilityScalarValueEntryOuterClass {
       return valueCase_ == 3;
     }
     /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>float float_value = 3;</code>
      * @return The floatValue.
      */
@@ -417,6 +400,63 @@ public final class AbilityScalarValueEntryOuterClass {
         return (java.lang.Integer) value_;
       }
       return 0;
+    }
+
+    public static final int KEY_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     * @return Whether the key field is set.
+     */
+    @java.lang.Override
+    public boolean hasKey() {
+      return key_ != null;
+    }
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     * @return The key.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey() {
+      return key_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
+    }
+    /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
+     * <code>.AbilityString key = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder() {
+      return getKey();
+    }
+
+    public static final int VALUE_TYPE_FIELD_NUMBER = 2;
+    private int valueType_;
+    /**
+     * <code>.AbilityScalarType value_type = 2;</code>
+     * @return The enum numeric value on the wire for valueType.
+     */
+    @java.lang.Override public int getValueTypeValue() {
+      return valueType_;
+    }
+    /**
+     * <code>.AbilityScalarType value_type = 2;</code>
+     * @return The valueType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
+      return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -739,12 +779,6 @@ public final class AbilityScalarValueEntryOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry buildPartial() {
         emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry result = new emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry(this);
-        if (keyBuilder_ == null) {
-          result.key_ = key_;
-        } else {
-          result.key_ = keyBuilder_.build();
-        }
-        result.valueType_ = valueType_;
         if (valueCase_ == 3) {
           result.value_ = value_;
         }
@@ -757,6 +791,12 @@ public final class AbilityScalarValueEntryOuterClass {
         if (valueCase_ == 6) {
           result.value_ = value_;
         }
+        if (keyBuilder_ == null) {
+          result.key_ = key_;
+        } else {
+          result.key_ = keyBuilder_.build();
+        }
+        result.valueType_ = valueType_;
         result.valueCase_ = valueCase_;
         onBuilt();
         return result;
@@ -879,180 +919,11 @@ public final class AbilityScalarValueEntryOuterClass {
       }
 
 
-      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> keyBuilder_;
       /**
-       * <code>.AbilityString key = 1;</code>
-       * @return Whether the key field is set.
-       */
-      public boolean hasKey() {
-        return keyBuilder_ != null || key_ != null;
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       * @return The key.
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey() {
-        if (keyBuilder_ == null) {
-          return key_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
-        } else {
-          return keyBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public Builder setKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (keyBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          key_ = value;
-          onChanged();
-        } else {
-          keyBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public Builder setKey(
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
-        if (keyBuilder_ == null) {
-          key_ = builderForValue.build();
-          onChanged();
-        } else {
-          keyBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public Builder mergeKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (keyBuilder_ == null) {
-          if (key_ != null) {
-            key_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(key_).mergeFrom(value).buildPartial();
-          } else {
-            key_ = value;
-          }
-          onChanged();
-        } else {
-          keyBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public Builder clearKey() {
-        if (keyBuilder_ == null) {
-          key_ = null;
-          onChanged();
-        } else {
-          key_ = null;
-          keyBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getKeyBuilder() {
-        
-        onChanged();
-        return getKeyFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder() {
-        if (keyBuilder_ != null) {
-          return keyBuilder_.getMessageOrBuilder();
-        } else {
-          return key_ == null ?
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
-        }
-      }
-      /**
-       * <code>.AbilityString key = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
-          getKeyFieldBuilder() {
-        if (keyBuilder_ == null) {
-          keyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
-                  getKey(),
-                  getParentForChildren(),
-                  isClean());
-          key_ = null;
-        }
-        return keyBuilder_;
-      }
-
-      private int valueType_ = 0;
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @return The enum numeric value on the wire for valueType.
-       */
-      @java.lang.Override public int getValueTypeValue() {
-        return valueType_;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @param value The enum numeric value on the wire for valueType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValueTypeValue(int value) {
-        
-        valueType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @return The valueType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
-        return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @param value The valueType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValueType(emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        valueType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearValueType() {
-        
-        valueType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>float float_value = 3;</code>
        * @return Whether the floatValue field is set.
        */
@@ -1060,6 +931,10 @@ public final class AbilityScalarValueEntryOuterClass {
         return valueCase_ == 3;
       }
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>float float_value = 3;</code>
        * @return The floatValue.
        */
@@ -1070,6 +945,10 @@ public final class AbilityScalarValueEntryOuterClass {
         return 0F;
       }
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>float float_value = 3;</code>
        * @param value The floatValue to set.
        * @return This builder for chaining.
@@ -1081,6 +960,10 @@ public final class AbilityScalarValueEntryOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>float float_value = 3;</code>
        * @return This builder for chaining.
        */
@@ -1271,6 +1154,215 @@ public final class AbilityScalarValueEntryOuterClass {
         }
         return this;
       }
+
+      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> keyBuilder_;
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       * @return Whether the key field is set.
+       */
+      public boolean hasKey() {
+        return keyBuilder_ != null || key_ != null;
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       * @return The key.
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey() {
+        if (keyBuilder_ == null) {
+          return key_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
+        } else {
+          return keyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public Builder setKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (keyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          key_ = value;
+          onChanged();
+        } else {
+          keyBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public Builder setKey(
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
+        if (keyBuilder_ == null) {
+          key_ = builderForValue.build();
+          onChanged();
+        } else {
+          keyBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public Builder mergeKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (keyBuilder_ == null) {
+          if (key_ != null) {
+            key_ =
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(key_).mergeFrom(value).buildPartial();
+          } else {
+            key_ = value;
+          }
+          onChanged();
+        } else {
+          keyBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public Builder clearKey() {
+        if (keyBuilder_ == null) {
+          key_ = null;
+          onChanged();
+        } else {
+          key_ = null;
+          keyBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getKeyBuilder() {
+        
+        onChanged();
+        return getKeyFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder() {
+        if (keyBuilder_ != null) {
+          return keyBuilder_.getMessageOrBuilder();
+        } else {
+          return key_ == null ?
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
+       * <code>.AbilityString key = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
+          getKeyFieldBuilder() {
+        if (keyBuilder_ == null) {
+          keyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
+                  getKey(),
+                  getParentForChildren(),
+                  isClean());
+          key_ = null;
+        }
+        return keyBuilder_;
+      }
+
+      private int valueType_ = 0;
+      /**
+       * <code>.AbilityScalarType value_type = 2;</code>
+       * @return The enum numeric value on the wire for valueType.
+       */
+      @java.lang.Override public int getValueTypeValue() {
+        return valueType_;
+      }
+      /**
+       * <code>.AbilityScalarType value_type = 2;</code>
+       * @param value The enum numeric value on the wire for valueType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValueTypeValue(int value) {
+        
+        valueType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityScalarType value_type = 2;</code>
+       * @return The valueType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
+        return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.AbilityScalarType value_type = 2;</code>
+       * @param value The valueType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValueType(emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        valueType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityScalarType value_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearValueType() {
+        
+        valueType_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1340,11 +1432,11 @@ public final class AbilityScalarValueEntryOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035AbilityScalarValueEntry.proto\032\023Ability" +
       "String.proto\032\027AbilityScalarType.proto\"\301\001" +
-      "\n\027AbilityScalarValueEntry\022\033\n\003key\030\001 \001(\0132\016" +
-      ".AbilityString\022&\n\nvalue_type\030\002 \001(\0162\022.Abi" +
-      "lityScalarType\022\025\n\013float_value\030\003 \001(\002H\000\022\026\n" +
-      "\014string_value\030\004 \001(\tH\000\022\023\n\tint_value\030\005 \001(\005" +
-      "H\000\022\024\n\nuint_value\030\006 \001(\rH\000B\007\n\005valueB\033\n\031emu" +
+      "\n\027AbilityScalarValueEntry\022\025\n\013float_value" +
+      "\030\003 \001(\002H\000\022\026\n\014string_value\030\004 \001(\tH\000\022\023\n\tint_" +
+      "value\030\005 \001(\005H\000\022\024\n\nuint_value\030\006 \001(\rH\000\022\033\n\003k" +
+      "ey\030\001 \001(\0132\016.AbilityString\022&\n\nvalue_type\030\002" +
+      " \001(\0162\022.AbilityScalarTypeB\007\n\005valueB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1358,7 +1450,7 @@ public final class AbilityScalarValueEntryOuterClass {
     internal_static_AbilityScalarValueEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityScalarValueEntry_descriptor,
-        new java.lang.String[] { "Key", "ValueType", "FloatValue", "StringValue", "IntValue", "UintValue", "Value", });
+        new java.lang.String[] { "FloatValue", "StringValue", "IntValue", "UintValue", "Key", "ValueType", "Value", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor();
   }

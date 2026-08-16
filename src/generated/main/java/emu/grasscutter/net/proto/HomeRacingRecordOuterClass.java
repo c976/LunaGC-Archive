@@ -19,34 +19,50 @@ public final class HomeRacingRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord> 
         getRecordListList();
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord getRecordList(int index);
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     int getRecordListCount();
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder> 
         getRecordListOrBuilderList();
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder getRecordListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: OGHOGCMDPIO
-   * </pre>
-   *
    * Protobuf type {@code HomeRacingRecord}
    */
   public static final class HomeRacingRecord extends
@@ -93,7 +109,7 @@ public final class HomeRacingRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 recordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -137,17 +153,25 @@ public final class HomeRacingRecordOuterClass {
               emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.class, emu.grasscutter.net.proto.HomeRacingRecordOuterClass.HomeRacingRecord.Builder.class);
     }
 
-    public static final int RECORD_LIST_FIELD_NUMBER = 13;
+    public static final int RECORD_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord> recordList_;
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord> getRecordListList() {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder> 
@@ -155,21 +179,33 @@ public final class HomeRacingRecordOuterClass {
       return recordList_;
     }
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     @java.lang.Override
     public int getRecordListCount() {
       return recordList_.size();
     }
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord getRecordList(int index) {
       return recordList_.get(index);
     }
     /**
-     * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder getRecordListOrBuilder(
@@ -192,7 +228,7 @@ public final class HomeRacingRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < recordList_.size(); i++) {
-        output.writeMessage(13, recordList_.get(i));
+        output.writeMessage(6, recordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -205,7 +241,7 @@ public final class HomeRacingRecordOuterClass {
       size = 0;
       for (int i = 0; i < recordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, recordList_.get(i));
+          .computeMessageSize(6, recordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -335,10 +371,6 @@ public final class HomeRacingRecordOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OGHOGCMDPIO
-     * </pre>
-     *
      * Protobuf type {@code HomeRacingRecord}
      */
     public static final class Builder extends
@@ -536,7 +568,11 @@ public final class HomeRacingRecordOuterClass {
           emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder> recordListBuilder_;
 
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord> getRecordListList() {
         if (recordListBuilder_ == null) {
@@ -546,7 +582,11 @@ public final class HomeRacingRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public int getRecordListCount() {
         if (recordListBuilder_ == null) {
@@ -556,7 +596,11 @@ public final class HomeRacingRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord getRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -566,7 +610,11 @@ public final class HomeRacingRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder setRecordList(
           int index, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord value) {
@@ -583,7 +631,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder setRecordList(
           int index, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder builderForValue) {
@@ -597,7 +649,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder addRecordList(emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord value) {
         if (recordListBuilder_ == null) {
@@ -613,7 +669,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder addRecordList(
           int index, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord value) {
@@ -630,7 +690,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder addRecordList(
           emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder builderForValue) {
@@ -644,7 +708,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder addRecordList(
           int index, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder builderForValue) {
@@ -658,7 +726,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder addAllRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord> values) {
@@ -673,7 +745,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder clearRecordList() {
         if (recordListBuilder_ == null) {
@@ -686,7 +762,11 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public Builder removeRecordList(int index) {
         if (recordListBuilder_ == null) {
@@ -699,14 +779,22 @@ public final class HomeRacingRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder getRecordListBuilder(
           int index) {
         return getRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder getRecordListOrBuilder(
           int index) {
@@ -716,7 +804,11 @@ public final class HomeRacingRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecordOrBuilder> 
            getRecordListOrBuilderList() {
@@ -727,14 +819,22 @@ public final class HomeRacingRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder addRecordListBuilder() {
         return getRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder addRecordListBuilder(
           int index) {
@@ -742,7 +842,11 @@ public final class HomeRacingRecordOuterClass {
             index, emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeRacingGalleryRecord record_list = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HomeRacingGalleryRecord record_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeRacingGalleryRecordOuterClass.HomeRacingGalleryRecord.Builder> 
            getRecordListBuilderList() {
@@ -831,7 +935,7 @@ public final class HomeRacingRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026HomeRacingRecord.proto\032\035HomeRacingGall" +
       "eryRecord.proto\"A\n\020HomeRacingRecord\022-\n\013r" +
-      "ecord_list\030\r \003(\0132\030.HomeRacingGalleryReco" +
+      "ecord_list\030\006 \003(\0132\030.HomeRacingGalleryReco" +
       "rdB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

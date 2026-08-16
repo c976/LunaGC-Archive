@@ -15,33 +15,29 @@ public final class RogueEliteCellDifficultyTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: ICMLDBMKFPC
-   * </pre>
-   *
    * Protobuf enum {@code RogueEliteCellDifficultyType}
    */
   public enum RogueEliteCellDifficultyType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ROGUE_ELITE_NORMAL = 0;</code>
+     * <code>ICGFBGMHAJL_ROGUE_ELITE_NORMAL = 0;</code>
      */
-    ROGUE_ELITE_NORMAL(0),
+    ICGFBGMHAJL_ROGUE_ELITE_NORMAL(0),
     /**
-     * <code>ROGUE_ELITE_HARD = 1;</code>
+     * <code>ICGFBGMHAJL_ROGUE_ELITE_HARD = 1;</code>
      */
-    ROGUE_ELITE_HARD(1),
+    ICGFBGMHAJL_ROGUE_ELITE_HARD(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ROGUE_ELITE_NORMAL = 0;</code>
+     * <code>ICGFBGMHAJL_ROGUE_ELITE_NORMAL = 0;</code>
      */
-    public static final int ROGUE_ELITE_NORMAL_VALUE = 0;
+    public static final int ICGFBGMHAJL_ROGUE_ELITE_NORMAL_VALUE = 0;
     /**
-     * <code>ROGUE_ELITE_HARD = 1;</code>
+     * <code>ICGFBGMHAJL_ROGUE_ELITE_HARD = 1;</code>
      */
-    public static final int ROGUE_ELITE_HARD_VALUE = 1;
+    public static final int ICGFBGMHAJL_ROGUE_ELITE_HARD_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +64,8 @@ public final class RogueEliteCellDifficultyTypeOuterClass {
      */
     public static RogueEliteCellDifficultyType forNumber(int value) {
       switch (value) {
-        case 0: return ROGUE_ELITE_NORMAL;
-        case 1: return ROGUE_ELITE_HARD;
+        case 0: return ICGFBGMHAJL_ROGUE_ELITE_NORMAL;
+        case 1: return ICGFBGMHAJL_ROGUE_ELITE_HARD;
         default: return null;
       }
     }
@@ -135,10 +131,11 @@ public final class RogueEliteCellDifficultyTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"RogueEliteCellDifficultyType.proto*L\n\034" +
-      "RogueEliteCellDifficultyType\022\026\n\022ROGUE_EL" +
-      "ITE_NORMAL\020\000\022\024\n\020ROGUE_ELITE_HARD\020\001B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\"RogueEliteCellDifficultyType.proto*d\n\034" +
+      "RogueEliteCellDifficultyType\022\"\n\036ICGFBGMH" +
+      "AJL_ROGUE_ELITE_NORMAL\020\000\022 \n\034ICGFBGMHAJL_" +
+      "ROGUE_ELITE_HARD\020\001B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

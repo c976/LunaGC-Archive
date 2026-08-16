@@ -20,48 +20,40 @@ public final class LuaShellTypeOuterClass {
   public enum LuaShellType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <pre>
-     *forced
-     * </pre>
-     *
-     * <code>LUASHELL_NONE = 0;</code>
+     * <code>FACCHDFAGMM_LUASHELL_NONE = 0;</code>
      */
-    LUASHELL_NONE(0),
+    FACCHDFAGMM_LUASHELL_NONE(0),
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_NORMAL = 1;</code>
+     * <code>FACCHDFAGMM_LUASHELL_NORMAL = 1;</code>
      */
-    LUA_SHELL_TYPE_LUASHELL_NORMAL(1),
+    FACCHDFAGMM_LUASHELL_NORMAL(1),
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_SECURITY = 2;</code>
+     * <code>FACCHDFAGMM_LUASHELL_SECURITY = 2;</code>
      */
-    LUA_SHELL_TYPE_LUASHELL_SECURITY(2),
+    FACCHDFAGMM_LUASHELL_SECURITY(2),
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_SHELL_CODE = 3;</code>
+     * <code>FACCHDFAGMM_LUASHELL_SHELL_CODE = 3;</code>
      */
-    LUA_SHELL_TYPE_LUASHELL_SHELL_CODE(3),
+    FACCHDFAGMM_LUASHELL_SHELL_CODE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <pre>
-     *forced
-     * </pre>
-     *
-     * <code>LUASHELL_NONE = 0;</code>
+     * <code>FACCHDFAGMM_LUASHELL_NONE = 0;</code>
      */
-    public static final int LUASHELL_NONE_VALUE = 0;
+    public static final int FACCHDFAGMM_LUASHELL_NONE_VALUE = 0;
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_NORMAL = 1;</code>
+     * <code>FACCHDFAGMM_LUASHELL_NORMAL = 1;</code>
      */
-    public static final int LUA_SHELL_TYPE_LUASHELL_NORMAL_VALUE = 1;
+    public static final int FACCHDFAGMM_LUASHELL_NORMAL_VALUE = 1;
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_SECURITY = 2;</code>
+     * <code>FACCHDFAGMM_LUASHELL_SECURITY = 2;</code>
      */
-    public static final int LUA_SHELL_TYPE_LUASHELL_SECURITY_VALUE = 2;
+    public static final int FACCHDFAGMM_LUASHELL_SECURITY_VALUE = 2;
     /**
-     * <code>LUA_SHELL_TYPE_LUASHELL_SHELL_CODE = 3;</code>
+     * <code>FACCHDFAGMM_LUASHELL_SHELL_CODE = 3;</code>
      */
-    public static final int LUA_SHELL_TYPE_LUASHELL_SHELL_CODE_VALUE = 3;
+    public static final int FACCHDFAGMM_LUASHELL_SHELL_CODE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -88,10 +80,10 @@ public final class LuaShellTypeOuterClass {
      */
     public static LuaShellType forNumber(int value) {
       switch (value) {
-        case 0: return LUASHELL_NONE;
-        case 1: return LUA_SHELL_TYPE_LUASHELL_NORMAL;
-        case 2: return LUA_SHELL_TYPE_LUASHELL_SECURITY;
-        case 3: return LUA_SHELL_TYPE_LUASHELL_SHELL_CODE;
+        case 0: return FACCHDFAGMM_LUASHELL_NONE;
+        case 1: return FACCHDFAGMM_LUASHELL_NORMAL;
+        case 2: return FACCHDFAGMM_LUASHELL_SECURITY;
+        case 3: return FACCHDFAGMM_LUASHELL_SHELL_CODE;
         default: return null;
       }
     }
@@ -157,12 +149,12 @@ public final class LuaShellTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022LuaShellType.proto*\223\001\n\014LuaShellType\022\021\n" +
-      "\rLUASHELL_NONE\020\000\022\"\n\036LUA_SHELL_TYPE_LUASH" +
-      "ELL_NORMAL\020\001\022$\n LUA_SHELL_TYPE_LUASHELL_" +
-      "SECURITY\020\002\022&\n\"LUA_SHELL_TYPE_LUASHELL_SH" +
-      "ELL_CODE\020\003B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\022LuaShellType.proto*\226\001\n\014LuaShellType\022\035\n" +
+      "\031FACCHDFAGMM_LUASHELL_NONE\020\000\022\037\n\033FACCHDFA" +
+      "GMM_LUASHELL_NORMAL\020\001\022!\n\035FACCHDFAGMM_LUA" +
+      "SHELL_SECURITY\020\002\022#\n\037FACCHDFAGMM_LUASHELL" +
+      "_SHELL_CODE\020\003B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

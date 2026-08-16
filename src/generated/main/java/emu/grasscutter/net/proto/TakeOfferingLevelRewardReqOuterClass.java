@@ -19,21 +19,28 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 offering_id = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 offering_id = 1;</code>
      * @return The offeringId.
      */
     int getOfferingId();
 
     /**
-     * <code>uint32 level = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level = 8;</code>
      * @return The level.
      */
     int getLevel();
   }
   /**
    * <pre>
-   * CmdId: 20499
-   * Obf: HBNBPABDFFF
+   * CmdId: 24439
    * </pre>
    *
    * Protobuf type {@code TakeOfferingLevelRewardReq}
@@ -80,14 +87,14 @@ public final class TakeOfferingLevelRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 8: {
 
               offeringId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              level_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +129,14 @@ public final class TakeOfferingLevelRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeOfferingLevelRewardReqOuterClass.TakeOfferingLevelRewardReq.class, emu.grasscutter.net.proto.TakeOfferingLevelRewardReqOuterClass.TakeOfferingLevelRewardReq.Builder.class);
     }
 
-    public static final int OFFERING_ID_FIELD_NUMBER = 15;
+    public static final int OFFERING_ID_FIELD_NUMBER = 1;
     private int offeringId_;
     /**
-     * <code>uint32 offering_id = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 offering_id = 1;</code>
      * @return The offeringId.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       return offeringId_;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 12;
+    public static final int LEVEL_FIELD_NUMBER = 8;
     private int level_;
     /**
-     * <code>uint32 level = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level = 8;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -158,11 +173,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeUInt32(12, level_);
-      }
       if (offeringId_ != 0) {
-        output.writeUInt32(15, offeringId_);
+        output.writeUInt32(1, offeringId_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(8, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class TakeOfferingLevelRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, level_);
-      }
       if (offeringId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, offeringId_);
+          .computeUInt32Size(1, offeringId_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20499
-     * Obf: HBNBPABDFFF
+     * CmdId: 24439
      * </pre>
      *
      * Protobuf type {@code TakeOfferingLevelRewardReq}
@@ -470,7 +484,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
 
       private int offeringId_ ;
       /**
-       * <code>uint32 offering_id = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 offering_id = 1;</code>
        * @return The offeringId.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return offeringId_;
       }
       /**
-       * <code>uint32 offering_id = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 offering_id = 1;</code>
        * @param value The offeringId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 offering_id = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 offering_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearOfferingId() {
@@ -501,7 +527,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level = 8;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level = 8;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class TakeOfferingLevelRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -598,7 +636,7 @@ public final class TakeOfferingLevelRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n TakeOfferingLevelRewardReq.proto\"@\n\032Ta" +
       "keOfferingLevelRewardReq\022\023\n\013offering_id\030" +
-      "\017 \001(\r\022\r\n\005level\030\014 \001(\rB\033\n\031emu.grasscutter." +
+      "\001 \001(\r\022\r\n\005level\030\010 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

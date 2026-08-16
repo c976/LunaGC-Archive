@@ -19,22 +19,38 @@ public final class AbilityActionSetCrashDamageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      * @return Whether the hitPos field is set.
      */
     boolean hasHitPos();
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      * @return The hitPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getHitPos();
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHitPosOrBuilder();
 
     /**
-     * <code>float damage = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float damage = 2;</code>
      * @return The damage.
      */
     float getDamage();
@@ -84,12 +100,12 @@ public final class AbilityActionSetCrashDamageOuterClass {
             case 0:
               done = true;
               break;
-            case 13: {
+            case 21: {
 
               damage_ = input.readFloat();
               break;
             }
-            case 74: {
+            case 98: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (hitPos_ != null) {
                 subBuilder = hitPos_.toBuilder();
@@ -134,10 +150,14 @@ public final class AbilityActionSetCrashDamageOuterClass {
               emu.grasscutter.net.proto.AbilityActionSetCrashDamageOuterClass.AbilityActionSetCrashDamage.class, emu.grasscutter.net.proto.AbilityActionSetCrashDamageOuterClass.AbilityActionSetCrashDamage.Builder.class);
     }
 
-    public static final int HIT_POS_FIELD_NUMBER = 9;
+    public static final int HIT_POS_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector hitPos_;
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      * @return Whether the hitPos field is set.
      */
     @java.lang.Override
@@ -145,7 +165,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
       return hitPos_ != null;
     }
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      * @return The hitPos.
      */
     @java.lang.Override
@@ -153,17 +177,25 @@ public final class AbilityActionSetCrashDamageOuterClass {
       return hitPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : hitPos_;
     }
     /**
-     * <code>.Vector hit_pos = 9;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector hit_pos = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHitPosOrBuilder() {
       return getHitPos();
     }
 
-    public static final int DAMAGE_FIELD_NUMBER = 1;
+    public static final int DAMAGE_FIELD_NUMBER = 2;
     private float damage_;
     /**
-     * <code>float damage = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float damage = 2;</code>
      * @return The damage.
      */
     @java.lang.Override
@@ -186,10 +218,10 @@ public final class AbilityActionSetCrashDamageOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (damage_ != 0F) {
-        output.writeFloat(1, damage_);
+        output.writeFloat(2, damage_);
       }
       if (hitPos_ != null) {
-        output.writeMessage(9, getHitPos());
+        output.writeMessage(12, getHitPos());
       }
       unknownFields.writeTo(output);
     }
@@ -202,11 +234,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
       size = 0;
       if (damage_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1, damage_);
+          .computeFloatSize(2, damage_);
       }
       if (hitPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getHitPos());
+          .computeMessageSize(12, getHitPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -509,14 +541,22 @@ public final class AbilityActionSetCrashDamageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> hitPosBuilder_;
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        * @return Whether the hitPos field is set.
        */
       public boolean hasHitPos() {
         return hitPosBuilder_ != null || hitPos_ != null;
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        * @return The hitPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getHitPos() {
@@ -527,7 +567,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         }
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public Builder setHitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (hitPosBuilder_ == null) {
@@ -543,7 +587,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public Builder setHitPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -557,7 +605,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public Builder mergeHitPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (hitPosBuilder_ == null) {
@@ -575,7 +627,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public Builder clearHitPos() {
         if (hitPosBuilder_ == null) {
@@ -589,7 +645,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return this;
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getHitPosBuilder() {
         
@@ -597,7 +657,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return getHitPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHitPosOrBuilder() {
         if (hitPosBuilder_ != null) {
@@ -608,7 +672,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         }
       }
       /**
-       * <code>.Vector hit_pos = 9;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector hit_pos = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -626,7 +694,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
 
       private float damage_ ;
       /**
-       * <code>float damage = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float damage = 2;</code>
        * @return The damage.
        */
       @java.lang.Override
@@ -634,7 +706,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return damage_;
       }
       /**
-       * <code>float damage = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float damage = 2;</code>
        * @param value The damage to set.
        * @return This builder for chaining.
        */
@@ -645,7 +721,11 @@ public final class AbilityActionSetCrashDamageOuterClass {
         return this;
       }
       /**
-       * <code>float damage = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float damage = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDamage() {
@@ -723,7 +803,7 @@ public final class AbilityActionSetCrashDamageOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AbilityActionSetCrashDamage.proto\032\014Vec" +
       "tor.proto\"G\n\033AbilityActionSetCrashDamage" +
-      "\022\030\n\007hit_pos\030\t \001(\0132\007.Vector\022\016\n\006damage\030\001 \001" +
+      "\022\030\n\007hit_pos\030\014 \001(\0132\007.Vector\022\016\n\006damage\030\002 \001" +
       "(\002B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

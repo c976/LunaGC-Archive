@@ -19,28 +19,44 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 9;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>uint32 level_id = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 1;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>bool is_new_record = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 12;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 5;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
   }
   /**
    * Protobuf type {@code GainBuffDungeonSettleInfo}
@@ -87,24 +103,24 @@ public final class GainBuffDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 40: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 72: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              score_ = input.readUInt32();
-              break;
-            }
             case 96: {
 
-              isNewRecord_ = input.readBool();
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,21 +155,14 @@ public final class GainBuffDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo.class, emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 9;
-    private int score_;
-    /**
-     * <code>uint32 score = 9;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,26 +170,49 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 1;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 1;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 12;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 12;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 12;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 5;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 5;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +229,17 @@ public final class GainBuffDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isNewRecord_ != false) {
+        output.writeBool(3, isNewRecord_);
+      }
       if (difficulty_ != 0) {
-        output.writeUInt32(1, difficulty_);
+        output.writeUInt32(5, difficulty_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+        output.writeUInt32(9, levelId_);
       }
       if (score_ != 0) {
-        output.writeUInt32(9, score_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
+        output.writeUInt32(12, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +250,21 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isNewRecord_);
+      }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, difficulty_);
+          .computeUInt32Size(5, difficulty_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(9, levelId_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, score_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
+          .computeUInt32Size(12, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +281,14 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo other = (emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getDifficulty()
-          != other.getDifficulty()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getDifficulty()
+          != other.getDifficulty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,15 +300,15 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,13 +442,13 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
-
         levelId_ = 0;
 
-        difficulty_ = 0;
-
         isNewRecord_ = false;
+
+        score_ = 0;
+
+        difficulty_ = 0;
 
         return this;
       }
@@ -444,10 +476,10 @@ public final class GainBuffDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo result = new emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo(this);
-        result.score_ = score_;
         result.levelId_ = levelId_;
-        result.difficulty_ = difficulty_;
         result.isNewRecord_ = isNewRecord_;
+        result.score_ = score_;
+        result.difficulty_ = difficulty_;
         onBuilt();
         return result;
       }
@@ -496,17 +528,17 @@ public final class GainBuffDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.GainBuffDungeonSettleInfoOuterClass.GainBuffDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
-        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,40 +569,13 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int score_ ;
-      /**
-       * <code>uint32 score = 9;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 9;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -578,7 +583,11 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +598,11 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -599,40 +612,13 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int difficulty_ ;
-      /**
-       * <code>uint32 difficulty = 1;</code>
-       * @return The difficulty.
-       */
-      @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
-      }
-      /**
-       * <code>uint32 difficulty = 1;</code>
-       * @param value The difficulty to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficulty(int value) {
-        
-        difficulty_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficulty() {
-        
-        difficulty_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -640,7 +626,11 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -651,12 +641,102 @@ public final class GainBuffDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 12;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 12;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficulty_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
+       * @return The difficulty.
+       */
+      @java.lang.Override
+      public int getDifficulty() {
+        return difficulty_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
+       * @param value The difficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficulty(int value) {
+        
+        difficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficulty() {
+        
+        difficulty_ = 0;
         onChanged();
         return this;
       }
@@ -728,9 +808,9 @@ public final class GainBuffDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GainBuffDungeonSettleInfo.proto\"g\n\031Gai" +
-      "nBuffDungeonSettleInfo\022\r\n\005score\030\t \001(\r\022\020\n" +
-      "\010level_id\030\002 \001(\r\022\022\n\ndifficulty\030\001 \001(\r\022\025\n\ri" +
-      "s_new_record\030\014 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "nBuffDungeonSettleInfo\022\020\n\010level_id\030\t \001(\r" +
+      "\022\025\n\ris_new_record\030\003 \001(\010\022\r\n\005score\030\014 \001(\r\022\022" +
+      "\n\ndifficulty\030\005 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -742,7 +822,7 @@ public final class GainBuffDungeonSettleInfoOuterClass {
     internal_static_GainBuffDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GainBuffDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "Score", "LevelId", "Difficulty", "IsNewRecord", });
+        new java.lang.String[] { "LevelId", "IsNewRecord", "Score", "Difficulty", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

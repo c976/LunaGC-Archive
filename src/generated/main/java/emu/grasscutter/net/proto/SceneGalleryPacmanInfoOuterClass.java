@@ -19,34 +19,30 @@ public final class SceneGalleryPacmanInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 start_time = 3;</code>
-     * @return The startTime.
-     */
-    int getStartTime();
-
-    /**
-     * <code>uint32 NHFGIBDCPGC = 11;</code>
-     * @return The nHFGIBDCPGC.
-     */
-    int getNHFGIBDCPGC();
-
-    /**
-     * <code>uint32 cur_score = 15;</code>
+     * <code>uint32 cur_score = 4;</code>
      * @return The curScore.
      */
     int getCurScore();
 
     /**
-     * <code>uint32 GIMCFEIADKI = 14;</code>
-     * @return The gIMCFEIADKI.
+     * <code>uint32 start_time = 5;</code>
+     * @return The startTime.
      */
-    int getGIMCFEIADKI();
+    int getStartTime();
+
+    /**
+     * <code>uint32 coin_num = 13;</code>
+     * @return The coinNum.
+     */
+    int getCoinNum();
+
+    /**
+     * <code>uint32 killed_monster_num = 15;</code>
+     * @return The killedMonsterNum.
+     */
+    int getKilledMonsterNum();
   }
   /**
-   * <pre>
-   * Obf: JNDKJNKIOLA
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryPacmanInfo}
    */
   public static final class SceneGalleryPacmanInfo extends
@@ -91,24 +87,24 @@ public final class SceneGalleryPacmanInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
+
+              curScore_ = input.readUInt32();
+              break;
+            }
+            case 40: {
 
               startTime_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
-              nHFGIBDCPGC_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              gIMCFEIADKI_ = input.readUInt32();
+              coinNum_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              curScore_ = input.readUInt32();
+              killedMonsterNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,32 +139,10 @@ public final class SceneGalleryPacmanInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo.class, emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo.Builder.class);
     }
 
-    public static final int START_TIME_FIELD_NUMBER = 3;
-    private int startTime_;
-    /**
-     * <code>uint32 start_time = 3;</code>
-     * @return The startTime.
-     */
-    @java.lang.Override
-    public int getStartTime() {
-      return startTime_;
-    }
-
-    public static final int NHFGIBDCPGC_FIELD_NUMBER = 11;
-    private int nHFGIBDCPGC_;
-    /**
-     * <code>uint32 NHFGIBDCPGC = 11;</code>
-     * @return The nHFGIBDCPGC.
-     */
-    @java.lang.Override
-    public int getNHFGIBDCPGC() {
-      return nHFGIBDCPGC_;
-    }
-
-    public static final int CUR_SCORE_FIELD_NUMBER = 15;
+    public static final int CUR_SCORE_FIELD_NUMBER = 4;
     private int curScore_;
     /**
-     * <code>uint32 cur_score = 15;</code>
+     * <code>uint32 cur_score = 4;</code>
      * @return The curScore.
      */
     @java.lang.Override
@@ -176,15 +150,37 @@ public final class SceneGalleryPacmanInfoOuterClass {
       return curScore_;
     }
 
-    public static final int GIMCFEIADKI_FIELD_NUMBER = 14;
-    private int gIMCFEIADKI_;
+    public static final int START_TIME_FIELD_NUMBER = 5;
+    private int startTime_;
     /**
-     * <code>uint32 GIMCFEIADKI = 14;</code>
-     * @return The gIMCFEIADKI.
+     * <code>uint32 start_time = 5;</code>
+     * @return The startTime.
      */
     @java.lang.Override
-    public int getGIMCFEIADKI() {
-      return gIMCFEIADKI_;
+    public int getStartTime() {
+      return startTime_;
+    }
+
+    public static final int COIN_NUM_FIELD_NUMBER = 13;
+    private int coinNum_;
+    /**
+     * <code>uint32 coin_num = 13;</code>
+     * @return The coinNum.
+     */
+    @java.lang.Override
+    public int getCoinNum() {
+      return coinNum_;
+    }
+
+    public static final int KILLED_MONSTER_NUM_FIELD_NUMBER = 15;
+    private int killedMonsterNum_;
+    /**
+     * <code>uint32 killed_monster_num = 15;</code>
+     * @return The killedMonsterNum.
+     */
+    @java.lang.Override
+    public int getKilledMonsterNum() {
+      return killedMonsterNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +197,17 @@ public final class SceneGalleryPacmanInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (startTime_ != 0) {
-        output.writeUInt32(3, startTime_);
-      }
-      if (nHFGIBDCPGC_ != 0) {
-        output.writeUInt32(11, nHFGIBDCPGC_);
-      }
-      if (gIMCFEIADKI_ != 0) {
-        output.writeUInt32(14, gIMCFEIADKI_);
-      }
       if (curScore_ != 0) {
-        output.writeUInt32(15, curScore_);
+        output.writeUInt32(4, curScore_);
+      }
+      if (startTime_ != 0) {
+        output.writeUInt32(5, startTime_);
+      }
+      if (coinNum_ != 0) {
+        output.writeUInt32(13, coinNum_);
+      }
+      if (killedMonsterNum_ != 0) {
+        output.writeUInt32(15, killedMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +218,21 @@ public final class SceneGalleryPacmanInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (startTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, startTime_);
-      }
-      if (nHFGIBDCPGC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, nHFGIBDCPGC_);
-      }
-      if (gIMCFEIADKI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gIMCFEIADKI_);
-      }
       if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, curScore_);
+          .computeUInt32Size(4, curScore_);
+      }
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, startTime_);
+      }
+      if (coinNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, coinNum_);
+      }
+      if (killedMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, killedMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +249,14 @@ public final class SceneGalleryPacmanInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo other = (emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo) obj;
 
-      if (getStartTime()
-          != other.getStartTime()) return false;
-      if (getNHFGIBDCPGC()
-          != other.getNHFGIBDCPGC()) return false;
       if (getCurScore()
           != other.getCurScore()) return false;
-      if (getGIMCFEIADKI()
-          != other.getGIMCFEIADKI()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getCoinNum()
+          != other.getCoinNum()) return false;
+      if (getKilledMonsterNum()
+          != other.getKilledMonsterNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +268,14 @@ public final class SceneGalleryPacmanInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + NHFGIBDCPGC_FIELD_NUMBER;
-      hash = (53 * hash) + getNHFGIBDCPGC();
       hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getCurScore();
-      hash = (37 * hash) + GIMCFEIADKI_FIELD_NUMBER;
-      hash = (53 * hash) + getGIMCFEIADKI();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
+      hash = (37 * hash) + COIN_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getCoinNum();
+      hash = (37 * hash) + KILLED_MONSTER_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getKilledMonsterNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +372,6 @@ public final class SceneGalleryPacmanInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JNDKJNKIOLA
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryPacmanInfo}
      */
     public static final class Builder extends
@@ -417,13 +409,13 @@ public final class SceneGalleryPacmanInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        startTime_ = 0;
-
-        nHFGIBDCPGC_ = 0;
-
         curScore_ = 0;
 
-        gIMCFEIADKI_ = 0;
+        startTime_ = 0;
+
+        coinNum_ = 0;
+
+        killedMonsterNum_ = 0;
 
         return this;
       }
@@ -451,10 +443,10 @@ public final class SceneGalleryPacmanInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo result = new emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo(this);
-        result.startTime_ = startTime_;
-        result.nHFGIBDCPGC_ = nHFGIBDCPGC_;
         result.curScore_ = curScore_;
-        result.gIMCFEIADKI_ = gIMCFEIADKI_;
+        result.startTime_ = startTime_;
+        result.coinNum_ = coinNum_;
+        result.killedMonsterNum_ = killedMonsterNum_;
         onBuilt();
         return result;
       }
@@ -503,17 +495,17 @@ public final class SceneGalleryPacmanInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryPacmanInfoOuterClass.SceneGalleryPacmanInfo.getDefaultInstance()) return this;
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
-        }
-        if (other.getNHFGIBDCPGC() != 0) {
-          setNHFGIBDCPGC(other.getNHFGIBDCPGC());
-        }
         if (other.getCurScore() != 0) {
           setCurScore(other.getCurScore());
         }
-        if (other.getGIMCFEIADKI() != 0) {
-          setGIMCFEIADKI(other.getGIMCFEIADKI());
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getCoinNum() != 0) {
+          setCoinNum(other.getCoinNum());
+        }
+        if (other.getKilledMonsterNum() != 0) {
+          setKilledMonsterNum(other.getKilledMonsterNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,71 +536,9 @@ public final class SceneGalleryPacmanInfoOuterClass {
         return this;
       }
 
-      private int startTime_ ;
-      /**
-       * <code>uint32 start_time = 3;</code>
-       * @return The startTime.
-       */
-      @java.lang.Override
-      public int getStartTime() {
-        return startTime_;
-      }
-      /**
-       * <code>uint32 start_time = 3;</code>
-       * @param value The startTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartTime(int value) {
-        
-        startTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 start_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStartTime() {
-        
-        startTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nHFGIBDCPGC_ ;
-      /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
-       * @return The nHFGIBDCPGC.
-       */
-      @java.lang.Override
-      public int getNHFGIBDCPGC() {
-        return nHFGIBDCPGC_;
-      }
-      /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
-       * @param value The nHFGIBDCPGC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNHFGIBDCPGC(int value) {
-        
-        nHFGIBDCPGC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNHFGIBDCPGC() {
-        
-        nHFGIBDCPGC_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curScore_ ;
       /**
-       * <code>uint32 cur_score = 15;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @return The curScore.
        */
       @java.lang.Override
@@ -616,7 +546,7 @@ public final class SceneGalleryPacmanInfoOuterClass {
         return curScore_;
       }
       /**
-       * <code>uint32 cur_score = 15;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @param value The curScore to set.
        * @return This builder for chaining.
        */
@@ -627,7 +557,7 @@ public final class SceneGalleryPacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_score = 15;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurScore() {
@@ -637,33 +567,95 @@ public final class SceneGalleryPacmanInfoOuterClass {
         return this;
       }
 
-      private int gIMCFEIADKI_ ;
+      private int startTime_ ;
       /**
-       * <code>uint32 GIMCFEIADKI = 14;</code>
-       * @return The gIMCFEIADKI.
+       * <code>uint32 start_time = 5;</code>
+       * @return The startTime.
        */
       @java.lang.Override
-      public int getGIMCFEIADKI() {
-        return gIMCFEIADKI_;
+      public int getStartTime() {
+        return startTime_;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 14;</code>
-       * @param value The gIMCFEIADKI to set.
+       * <code>uint32 start_time = 5;</code>
+       * @param value The startTime to set.
        * @return This builder for chaining.
        */
-      public Builder setGIMCFEIADKI(int value) {
+      public Builder setStartTime(int value) {
         
-        gIMCFEIADKI_ = value;
+        startTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 14;</code>
+       * <code>uint32 start_time = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGIMCFEIADKI() {
+      public Builder clearStartTime() {
         
-        gIMCFEIADKI_ = 0;
+        startTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int coinNum_ ;
+      /**
+       * <code>uint32 coin_num = 13;</code>
+       * @return The coinNum.
+       */
+      @java.lang.Override
+      public int getCoinNum() {
+        return coinNum_;
+      }
+      /**
+       * <code>uint32 coin_num = 13;</code>
+       * @param value The coinNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoinNum(int value) {
+        
+        coinNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin_num = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoinNum() {
+        
+        coinNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int killedMonsterNum_ ;
+      /**
+       * <code>uint32 killed_monster_num = 15;</code>
+       * @return The killedMonsterNum.
+       */
+      @java.lang.Override
+      public int getKilledMonsterNum() {
+        return killedMonsterNum_;
+      }
+      /**
+       * <code>uint32 killed_monster_num = 15;</code>
+       * @param value The killedMonsterNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKilledMonsterNum(int value) {
+        
+        killedMonsterNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 killed_monster_num = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKilledMonsterNum() {
+        
+        killedMonsterNum_ = 0;
         onChanged();
         return this;
       }
@@ -734,11 +726,11 @@ public final class SceneGalleryPacmanInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034SceneGalleryPacmanInfo.proto\"i\n\026SceneG" +
-      "alleryPacmanInfo\022\022\n\nstart_time\030\003 \001(\r\022\023\n\013" +
-      "NHFGIBDCPGC\030\013 \001(\r\022\021\n\tcur_score\030\017 \001(\r\022\023\n\013" +
-      "GIMCFEIADKI\030\016 \001(\rB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\034SceneGalleryPacmanInfo.proto\"m\n\026SceneG" +
+      "alleryPacmanInfo\022\021\n\tcur_score\030\004 \001(\r\022\022\n\ns" +
+      "tart_time\030\005 \001(\r\022\020\n\010coin_num\030\r \001(\r\022\032\n\022kil" +
+      "led_monster_num\030\017 \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -749,7 +741,7 @@ public final class SceneGalleryPacmanInfoOuterClass {
     internal_static_SceneGalleryPacmanInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryPacmanInfo_descriptor,
-        new java.lang.String[] { "StartTime", "NHFGIBDCPGC", "CurScore", "GIMCFEIADKI", });
+        new java.lang.String[] { "CurScore", "StartTime", "CoinNum", "KilledMonsterNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

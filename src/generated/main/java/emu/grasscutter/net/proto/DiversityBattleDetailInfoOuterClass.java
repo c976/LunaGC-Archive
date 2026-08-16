@@ -19,10 +19,14 @@ public final class DiversityBattleDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_difficulty_id = 7;</code>
-     * @return The lastDifficultyId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 AJCHLMNMGBI = 3;</code>
+     * @return The aJCHLMNMGBI.
      */
-    int getLastDifficultyId();
+    int getAJCHLMNMGBI();
   }
   /**
    * Protobuf type {@code DiversityBattleDetailInfo}
@@ -69,9 +73,9 @@ public final class DiversityBattleDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
 
-              lastDifficultyId_ = input.readUInt32();
+              aJCHLMNMGBI_ = input.readUInt32();
               break;
             }
             default: {
@@ -106,15 +110,19 @@ public final class DiversityBattleDetailInfoOuterClass {
               emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo.class, emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo.Builder.class);
     }
 
-    public static final int LAST_DIFFICULTY_ID_FIELD_NUMBER = 7;
-    private int lastDifficultyId_;
+    public static final int AJCHLMNMGBI_FIELD_NUMBER = 3;
+    private int aJCHLMNMGBI_;
     /**
-     * <code>uint32 last_difficulty_id = 7;</code>
-     * @return The lastDifficultyId.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 AJCHLMNMGBI = 3;</code>
+     * @return The aJCHLMNMGBI.
      */
     @java.lang.Override
-    public int getLastDifficultyId() {
-      return lastDifficultyId_;
+    public int getAJCHLMNMGBI() {
+      return aJCHLMNMGBI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +139,8 @@ public final class DiversityBattleDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lastDifficultyId_ != 0) {
-        output.writeUInt32(7, lastDifficultyId_);
+      if (aJCHLMNMGBI_ != 0) {
+        output.writeUInt32(3, aJCHLMNMGBI_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +151,9 @@ public final class DiversityBattleDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lastDifficultyId_ != 0) {
+      if (aJCHLMNMGBI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, lastDifficultyId_);
+          .computeUInt32Size(3, aJCHLMNMGBI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +170,8 @@ public final class DiversityBattleDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo other = (emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo) obj;
 
-      if (getLastDifficultyId()
-          != other.getLastDifficultyId()) return false;
+      if (getAJCHLMNMGBI()
+          != other.getAJCHLMNMGBI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +183,8 @@ public final class DiversityBattleDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LAST_DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLastDifficultyId();
+      hash = (37 * hash) + AJCHLMNMGBI_FIELD_NUMBER;
+      hash = (53 * hash) + getAJCHLMNMGBI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,7 +318,7 @@ public final class DiversityBattleDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lastDifficultyId_ = 0;
+        aJCHLMNMGBI_ = 0;
 
         return this;
       }
@@ -338,7 +346,7 @@ public final class DiversityBattleDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo buildPartial() {
         emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo result = new emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo(this);
-        result.lastDifficultyId_ = lastDifficultyId_;
+        result.aJCHLMNMGBI_ = aJCHLMNMGBI_;
         onBuilt();
         return result;
       }
@@ -387,8 +395,8 @@ public final class DiversityBattleDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo other) {
         if (other == emu.grasscutter.net.proto.DiversityBattleDetailInfoOuterClass.DiversityBattleDetailInfo.getDefaultInstance()) return this;
-        if (other.getLastDifficultyId() != 0) {
-          setLastDifficultyId(other.getLastDifficultyId());
+        if (other.getAJCHLMNMGBI() != 0) {
+          setAJCHLMNMGBI(other.getAJCHLMNMGBI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,33 +427,45 @@ public final class DiversityBattleDetailInfoOuterClass {
         return this;
       }
 
-      private int lastDifficultyId_ ;
+      private int aJCHLMNMGBI_ ;
       /**
-       * <code>uint32 last_difficulty_id = 7;</code>
-       * @return The lastDifficultyId.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 AJCHLMNMGBI = 3;</code>
+       * @return The aJCHLMNMGBI.
        */
       @java.lang.Override
-      public int getLastDifficultyId() {
-        return lastDifficultyId_;
+      public int getAJCHLMNMGBI() {
+        return aJCHLMNMGBI_;
       }
       /**
-       * <code>uint32 last_difficulty_id = 7;</code>
-       * @param value The lastDifficultyId to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 AJCHLMNMGBI = 3;</code>
+       * @param value The aJCHLMNMGBI to set.
        * @return This builder for chaining.
        */
-      public Builder setLastDifficultyId(int value) {
+      public Builder setAJCHLMNMGBI(int value) {
         
-        lastDifficultyId_ = value;
+        aJCHLMNMGBI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_difficulty_id = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 AJCHLMNMGBI = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastDifficultyId() {
+      public Builder clearAJCHLMNMGBI() {
         
-        lastDifficultyId_ = 0;
+        aJCHLMNMGBI_ = 0;
         onChanged();
         return this;
       }
@@ -516,10 +536,9 @@ public final class DiversityBattleDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037DiversityBattleDetailInfo.proto\"7\n\031Div" +
-      "ersityBattleDetailInfo\022\032\n\022last_difficult" +
-      "y_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\037DiversityBattleDetailInfo.proto\"0\n\031Div" +
+      "ersityBattleDetailInfo\022\023\n\013AJCHLMNMGBI\030\003 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -530,7 +549,7 @@ public final class DiversityBattleDetailInfoOuterClass {
     internal_static_DiversityBattleDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DiversityBattleDetailInfo_descriptor,
-        new java.lang.String[] { "LastDifficultyId", });
+        new java.lang.String[] { "AJCHLMNMGBI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

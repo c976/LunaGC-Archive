@@ -19,23 +19,22 @@ public final class GCGInviteGuestBattleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GCKJBMKBJEF = 9;</code>
-     * @return The gCKJBMKBJEF.
+     * <pre>
+     * CMD_ID = 29623
+     * </pre>
+     *
+     * <code>uint32 festival_mode_type = 3;</code>
+     * @return The festivalModeType.
      */
-    int getGCKJBMKBJEF();
+    int getFestivalModeType();
 
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
-   * <pre>
-   * CmdId: 8113
-   * Obf: DNMKFELFKPN
-   * </pre>
-   *
    * Protobuf type {@code GCGInviteGuestBattleReq}
    */
   public static final class GCGInviteGuestBattleReq extends
@@ -80,14 +79,14 @@ public final class GCGInviteGuestBattleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
-              uid_ = input.readUInt32();
+              festivalModeType_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 80: {
 
-              gCKJBMKBJEF_ = input.readUInt32();
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,21 +121,25 @@ public final class GCGInviteGuestBattleReqOuterClass {
               emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq.class, emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq.Builder.class);
     }
 
-    public static final int GCKJBMKBJEF_FIELD_NUMBER = 9;
-    private int gCKJBMKBJEF_;
+    public static final int FESTIVAL_MODE_TYPE_FIELD_NUMBER = 3;
+    private int festivalModeType_;
     /**
-     * <code>uint32 GCKJBMKBJEF = 9;</code>
-     * @return The gCKJBMKBJEF.
+     * <pre>
+     * CMD_ID = 29623
+     * </pre>
+     *
+     * <code>uint32 festival_mode_type = 3;</code>
+     * @return The festivalModeType.
      */
     @java.lang.Override
-    public int getGCKJBMKBJEF() {
-      return gCKJBMKBJEF_;
+    public int getFestivalModeType() {
+      return festivalModeType_;
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
+    public static final int UID_FIELD_NUMBER = 10;
     private int uid_;
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -158,11 +161,11 @@ public final class GCGInviteGuestBattleReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+      if (festivalModeType_ != 0) {
+        output.writeUInt32(3, festivalModeType_);
       }
-      if (gCKJBMKBJEF_ != 0) {
-        output.writeUInt32(9, gCKJBMKBJEF_);
+      if (uid_ != 0) {
+        output.writeUInt32(10, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +176,13 @@ public final class GCGInviteGuestBattleReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (festivalModeType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, festivalModeType_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
-      }
-      if (gCKJBMKBJEF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gCKJBMKBJEF_);
+          .computeUInt32Size(10, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,8 +199,8 @@ public final class GCGInviteGuestBattleReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq other = (emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq) obj;
 
-      if (getGCKJBMKBJEF()
-          != other.getGCKJBMKBJEF()) return false;
+      if (getFestivalModeType()
+          != other.getFestivalModeType()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -211,8 +214,8 @@ public final class GCGInviteGuestBattleReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GCKJBMKBJEF_FIELD_NUMBER;
-      hash = (53 * hash) + getGCKJBMKBJEF();
+      hash = (37 * hash) + FESTIVAL_MODE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFestivalModeType();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -311,11 +314,6 @@ public final class GCGInviteGuestBattleReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8113
-     * Obf: DNMKFELFKPN
-     * </pre>
-     *
      * Protobuf type {@code GCGInviteGuestBattleReq}
      */
     public static final class Builder extends
@@ -353,7 +351,7 @@ public final class GCGInviteGuestBattleReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gCKJBMKBJEF_ = 0;
+        festivalModeType_ = 0;
 
         uid_ = 0;
 
@@ -383,7 +381,7 @@ public final class GCGInviteGuestBattleReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq buildPartial() {
         emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq result = new emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq(this);
-        result.gCKJBMKBJEF_ = gCKJBMKBJEF_;
+        result.festivalModeType_ = festivalModeType_;
         result.uid_ = uid_;
         onBuilt();
         return result;
@@ -433,8 +431,8 @@ public final class GCGInviteGuestBattleReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq other) {
         if (other == emu.grasscutter.net.proto.GCGInviteGuestBattleReqOuterClass.GCGInviteGuestBattleReq.getDefaultInstance()) return this;
-        if (other.getGCKJBMKBJEF() != 0) {
-          setGCKJBMKBJEF(other.getGCKJBMKBJEF());
+        if (other.getFestivalModeType() != 0) {
+          setFestivalModeType(other.getFestivalModeType());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
@@ -468,40 +466,52 @@ public final class GCGInviteGuestBattleReqOuterClass {
         return this;
       }
 
-      private int gCKJBMKBJEF_ ;
+      private int festivalModeType_ ;
       /**
-       * <code>uint32 GCKJBMKBJEF = 9;</code>
-       * @return The gCKJBMKBJEF.
+       * <pre>
+       * CMD_ID = 29623
+       * </pre>
+       *
+       * <code>uint32 festival_mode_type = 3;</code>
+       * @return The festivalModeType.
        */
       @java.lang.Override
-      public int getGCKJBMKBJEF() {
-        return gCKJBMKBJEF_;
+      public int getFestivalModeType() {
+        return festivalModeType_;
       }
       /**
-       * <code>uint32 GCKJBMKBJEF = 9;</code>
-       * @param value The gCKJBMKBJEF to set.
+       * <pre>
+       * CMD_ID = 29623
+       * </pre>
+       *
+       * <code>uint32 festival_mode_type = 3;</code>
+       * @param value The festivalModeType to set.
        * @return This builder for chaining.
        */
-      public Builder setGCKJBMKBJEF(int value) {
+      public Builder setFestivalModeType(int value) {
         
-        gCKJBMKBJEF_ = value;
+        festivalModeType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCKJBMKBJEF = 9;</code>
+       * <pre>
+       * CMD_ID = 29623
+       * </pre>
+       *
+       * <code>uint32 festival_mode_type = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCKJBMKBJEF() {
+      public Builder clearFestivalModeType() {
         
-        gCKJBMKBJEF_ = 0;
+        festivalModeType_ = 0;
         onChanged();
         return this;
       }
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 10;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -509,7 +519,7 @@ public final class GCGInviteGuestBattleReqOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 10;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -520,7 +530,7 @@ public final class GCGInviteGuestBattleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -596,10 +606,10 @@ public final class GCGInviteGuestBattleReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035GCGInviteGuestBattleReq.proto\";\n\027GCGIn" +
-      "viteGuestBattleReq\022\023\n\013GCKJBMKBJEF\030\t \001(\r\022" +
-      "\013\n\003uid\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\035GCGInviteGuestBattleReq.proto\"B\n\027GCGIn" +
+      "viteGuestBattleReq\022\032\n\022festival_mode_type" +
+      "\030\003 \001(\r\022\013\n\003uid\030\n \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +620,7 @@ public final class GCGInviteGuestBattleReqOuterClass {
     internal_static_GCGInviteGuestBattleReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGInviteGuestBattleReq_descriptor,
-        new java.lang.String[] { "GCKJBMKBJEF", "Uid", });
+        new java.lang.String[] { "FestivalModeType", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

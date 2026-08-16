@@ -19,31 +19,31 @@ public final class MarkNewNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @return A list containing the idList.
      */
     java.util.List<java.lang.Integer> getIdListList();
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @return The count of idList.
      */
     int getIdListCount();
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The idList at the given index.
      */
     int getIdList(int index);
 
     /**
-     * <code>uint32 mark_new_type = 13;</code>
+     * <code>uint32 mark_new_type = 1;</code>
      * @return The markNewType.
      */
     int getMarkNewType();
   }
   /**
    * <pre>
-   * CmdId: 24801
+   * CmdId: 4422
    * </pre>
    *
    * Protobuf type {@code MarkNewNotify}
@@ -92,7 +92,12 @@ public final class MarkNewNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 8: {
+
+              markNewType_ = input.readUInt32();
+              break;
+            }
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 idList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -100,7 +105,7 @@ public final class MarkNewNotifyOuterClass {
               idList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -111,11 +116,6 @@ public final class MarkNewNotifyOuterClass {
                 idList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 104: {
-
-              markNewType_ = input.readUInt32();
               break;
             }
             default: {
@@ -153,10 +153,10 @@ public final class MarkNewNotifyOuterClass {
               emu.grasscutter.net.proto.MarkNewNotifyOuterClass.MarkNewNotify.class, emu.grasscutter.net.proto.MarkNewNotifyOuterClass.MarkNewNotify.Builder.class);
     }
 
-    public static final int ID_LIST_FIELD_NUMBER = 12;
+    public static final int ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList idList_;
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @return A list containing the idList.
      */
     @java.lang.Override
@@ -165,14 +165,14 @@ public final class MarkNewNotifyOuterClass {
       return idList_;
     }
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @return The count of idList.
      */
     public int getIdListCount() {
       return idList_.size();
     }
     /**
-     * <code>repeated uint32 id_list = 12;</code>
+     * <code>repeated uint32 id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The idList at the given index.
      */
@@ -181,10 +181,10 @@ public final class MarkNewNotifyOuterClass {
     }
     private int idListMemoizedSerializedSize = -1;
 
-    public static final int MARK_NEW_TYPE_FIELD_NUMBER = 13;
+    public static final int MARK_NEW_TYPE_FIELD_NUMBER = 1;
     private int markNewType_;
     /**
-     * <code>uint32 mark_new_type = 13;</code>
+     * <code>uint32 mark_new_type = 1;</code>
      * @return The markNewType.
      */
     @java.lang.Override
@@ -207,15 +207,15 @@ public final class MarkNewNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (markNewType_ != 0) {
+        output.writeUInt32(1, markNewType_);
+      }
       if (getIdListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(idListMemoizedSerializedSize);
       }
       for (int i = 0; i < idList_.size(); i++) {
         output.writeUInt32NoTag(idList_.getInt(i));
-      }
-      if (markNewType_ != 0) {
-        output.writeUInt32(13, markNewType_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,6 +226,10 @@ public final class MarkNewNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (markNewType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, markNewType_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < idList_.size(); i++) {
@@ -239,10 +243,6 @@ public final class MarkNewNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         idListMemoizedSerializedSize = dataSize;
-      }
-      if (markNewType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, markNewType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -377,7 +377,7 @@ public final class MarkNewNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24801
+     * CmdId: 4422
      * </pre>
      *
      * Protobuf type {@code MarkNewNotify}
@@ -553,7 +553,7 @@ public final class MarkNewNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @return A list containing the idList.
        */
       public java.util.List<java.lang.Integer>
@@ -562,14 +562,14 @@ public final class MarkNewNotifyOuterClass {
                  java.util.Collections.unmodifiableList(idList_) : idList_;
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @return The count of idList.
        */
       public int getIdListCount() {
         return idList_.size();
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The idList at the given index.
        */
@@ -577,7 +577,7 @@ public final class MarkNewNotifyOuterClass {
         return idList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The idList to set.
        * @return This builder for chaining.
@@ -590,7 +590,7 @@ public final class MarkNewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @param value The idList to add.
        * @return This builder for chaining.
        */
@@ -601,7 +601,7 @@ public final class MarkNewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @param values The idList to add.
        * @return This builder for chaining.
        */
@@ -614,7 +614,7 @@ public final class MarkNewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 12;</code>
+       * <code>repeated uint32 id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIdList() {
@@ -626,7 +626,7 @@ public final class MarkNewNotifyOuterClass {
 
       private int markNewType_ ;
       /**
-       * <code>uint32 mark_new_type = 13;</code>
+       * <code>uint32 mark_new_type = 1;</code>
        * @return The markNewType.
        */
       @java.lang.Override
@@ -634,7 +634,7 @@ public final class MarkNewNotifyOuterClass {
         return markNewType_;
       }
       /**
-       * <code>uint32 mark_new_type = 13;</code>
+       * <code>uint32 mark_new_type = 1;</code>
        * @param value The markNewType to set.
        * @return This builder for chaining.
        */
@@ -645,7 +645,7 @@ public final class MarkNewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mark_new_type = 13;</code>
+       * <code>uint32 mark_new_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMarkNewType() {
@@ -722,7 +722,7 @@ public final class MarkNewNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023MarkNewNotify.proto\"7\n\rMarkNewNotify\022\017" +
-      "\n\007id_list\030\014 \003(\r\022\025\n\rmark_new_type\030\r \001(\rB\033" +
+      "\n\007id_list\030\n \003(\r\022\025\n\rmark_new_type\030\001 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

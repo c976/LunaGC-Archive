@@ -19,23 +19,26 @@ public final class GCGDebugReplayNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string json_str = 8;</code>
+     * <pre>
+     * CMD_ID = 27016
+     * </pre>
+     *
+     * <code>string json_str = 5;</code>
      * @return The jsonStr.
      */
     java.lang.String getJsonStr();
     /**
-     * <code>string json_str = 8;</code>
+     * <pre>
+     * CMD_ID = 27016
+     * </pre>
+     *
+     * <code>string json_str = 5;</code>
      * @return The bytes for jsonStr.
      */
     com.google.protobuf.ByteString
         getJsonStrBytes();
   }
   /**
-   * <pre>
-   * CmdId: 21995
-   * Obf: IKIPCIJDGNH
-   * </pre>
-   *
    * Protobuf type {@code GCGDebugReplayNotify}
    */
   public static final class GCGDebugReplayNotify extends
@@ -81,7 +84,7 @@ public final class GCGDebugReplayNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
               jsonStr_ = s;
@@ -119,10 +122,14 @@ public final class GCGDebugReplayNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDebugReplayNotifyOuterClass.GCGDebugReplayNotify.class, emu.grasscutter.net.proto.GCGDebugReplayNotifyOuterClass.GCGDebugReplayNotify.Builder.class);
     }
 
-    public static final int JSON_STR_FIELD_NUMBER = 8;
+    public static final int JSON_STR_FIELD_NUMBER = 5;
     private volatile java.lang.Object jsonStr_;
     /**
-     * <code>string json_str = 8;</code>
+     * <pre>
+     * CMD_ID = 27016
+     * </pre>
+     *
+     * <code>string json_str = 5;</code>
      * @return The jsonStr.
      */
     @java.lang.Override
@@ -139,7 +146,11 @@ public final class GCGDebugReplayNotifyOuterClass {
       }
     }
     /**
-     * <code>string json_str = 8;</code>
+     * <pre>
+     * CMD_ID = 27016
+     * </pre>
+     *
+     * <code>string json_str = 5;</code>
      * @return The bytes for jsonStr.
      */
     @java.lang.Override
@@ -172,7 +183,7 @@ public final class GCGDebugReplayNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jsonStr_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, jsonStr_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, jsonStr_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,7 +195,7 @@ public final class GCGDebugReplayNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jsonStr_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, jsonStr_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, jsonStr_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,11 +323,6 @@ public final class GCGDebugReplayNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 21995
-     * Obf: IKIPCIJDGNH
-     * </pre>
-     *
      * Protobuf type {@code GCGDebugReplayNotify}
      */
     public static final class Builder extends
@@ -466,7 +472,11 @@ public final class GCGDebugReplayNotifyOuterClass {
 
       private java.lang.Object jsonStr_ = "";
       /**
-       * <code>string json_str = 8;</code>
+       * <pre>
+       * CMD_ID = 27016
+       * </pre>
+       *
+       * <code>string json_str = 5;</code>
        * @return The jsonStr.
        */
       public java.lang.String getJsonStr() {
@@ -482,7 +492,11 @@ public final class GCGDebugReplayNotifyOuterClass {
         }
       }
       /**
-       * <code>string json_str = 8;</code>
+       * <pre>
+       * CMD_ID = 27016
+       * </pre>
+       *
+       * <code>string json_str = 5;</code>
        * @return The bytes for jsonStr.
        */
       public com.google.protobuf.ByteString
@@ -499,7 +513,11 @@ public final class GCGDebugReplayNotifyOuterClass {
         }
       }
       /**
-       * <code>string json_str = 8;</code>
+       * <pre>
+       * CMD_ID = 27016
+       * </pre>
+       *
+       * <code>string json_str = 5;</code>
        * @param value The jsonStr to set.
        * @return This builder for chaining.
        */
@@ -514,7 +532,11 @@ public final class GCGDebugReplayNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string json_str = 8;</code>
+       * <pre>
+       * CMD_ID = 27016
+       * </pre>
+       *
+       * <code>string json_str = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearJsonStr() {
@@ -524,7 +546,11 @@ public final class GCGDebugReplayNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string json_str = 8;</code>
+       * <pre>
+       * CMD_ID = 27016
+       * </pre>
+       *
+       * <code>string json_str = 5;</code>
        * @param value The bytes for jsonStr to set.
        * @return This builder for chaining.
        */
@@ -607,7 +633,7 @@ public final class GCGDebugReplayNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGDebugReplayNotify.proto\"(\n\024GCGDebug" +
-      "ReplayNotify\022\020\n\010json_str\030\010 \001(\tB\033\n\031emu.gr" +
+      "ReplayNotify\022\020\n\010json_str\030\005 \001(\tB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,70 +19,110 @@ public final class InBattleChessSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 APEDJKIDLPC = 12;</code>
-     * @return The aPEDJKIDLPC.
-     */
-    int getAPEDJKIDLPC();
-
-    /**
-     * <code>uint64 scene_time_ms = 6;</code>
-     * @return The sceneTimeMs.
-     */
-    long getSceneTimeMs();
-
-    /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
         getScoreListList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index);
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     int getScoreListCount();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
         getScoreListOrBuilderList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 FGMOMMCFHLH = 10;</code>
-     * @return The fGMOMMCFHLH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 AEMEALFAHAJ = 9;</code>
+     * @return The aEMEALFAHAJ.
      */
-    int getFGMOMMCFHLH();
+    int getAEMEALFAHAJ();
 
     /**
-     * <code>uint32 CKOGGPOAAKH = 9;</code>
-     * @return The cKOGGPOAAKH.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 FCIKHMEPIEB = 15;</code>
+     * @return The fCIKHMEPIEB.
      */
-    int getCKOGGPOAAKH();
+    int getFCIKHMEPIEB();
 
     /**
-     * <code>bool is_success = 11;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 CGBDLDLEGHP = 12;</code>
+     * @return The cGBDLDLEGHP.
+     */
+    int getCGBDLDLEGHP();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 7;</code>
+     * @return The sceneTimeMs.
+     */
+    long getSceneTimeMs();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>bool is_success = 8;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 PPKIBJMPFJG = 15;</code>
-     * @return The pPKIBJMPFJG.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 GJNIAPCFNND = 10;</code>
+     * @return The gJNIAPCFNND.
      */
-    int getPPKIBJMPFJG();
+    int getGJNIAPCFNND();
   }
   /**
-   * <pre>
-   * Obf: GNMNAFJNHDB
-   * </pre>
-   *
    * Protobuf type {@code InBattleChessSettleInfo}
    */
   public static final class InBattleChessSettleInfo extends
@@ -129,32 +169,7 @@ public final class InBattleChessSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              sceneTimeMs_ = input.readUInt64();
-              break;
-            }
-            case 72: {
-
-              cKOGGPOAAKH_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              fGMOMMCFHLH_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              aPEDJKIDLPC_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 scoreList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -163,9 +178,34 @@ public final class InBattleChessSettleInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
               break;
             }
+            case 56: {
+
+              sceneTimeMs_ = input.readUInt64();
+              break;
+            }
+            case 64: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              aEMEALFAHAJ_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              gJNIAPCFNND_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cGBDLDLEGHP_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              pPKIBJMPFJG_ = input.readUInt32();
+              fCIKHMEPIEB_ = input.readUInt32();
               break;
             }
             default: {
@@ -203,39 +243,25 @@ public final class InBattleChessSettleInfoOuterClass {
               emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo.class, emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo.Builder.class);
     }
 
-    public static final int APEDJKIDLPC_FIELD_NUMBER = 12;
-    private int aPEDJKIDLPC_;
-    /**
-     * <code>uint32 APEDJKIDLPC = 12;</code>
-     * @return The aPEDJKIDLPC.
-     */
-    @java.lang.Override
-    public int getAPEDJKIDLPC() {
-      return aPEDJKIDLPC_;
-    }
-
-    public static final int SCENE_TIME_MS_FIELD_NUMBER = 6;
-    private long sceneTimeMs_;
-    /**
-     * <code>uint64 scene_time_ms = 6;</code>
-     * @return The sceneTimeMs.
-     */
-    @java.lang.Override
-    public long getSceneTimeMs() {
-      return sceneTimeMs_;
-    }
-
-    public static final int SCORE_LIST_FIELD_NUMBER = 14;
+    public static final int SCORE_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> scoreList_;
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
@@ -243,21 +269,33 @@ public final class InBattleChessSettleInfoOuterClass {
       return scoreList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     @java.lang.Override
     public int getScoreListCount() {
       return scoreList_.size();
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
       return scoreList_.get(index);
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
@@ -265,32 +303,74 @@ public final class InBattleChessSettleInfoOuterClass {
       return scoreList_.get(index);
     }
 
-    public static final int FGMOMMCFHLH_FIELD_NUMBER = 10;
-    private int fGMOMMCFHLH_;
+    public static final int AEMEALFAHAJ_FIELD_NUMBER = 9;
+    private int aEMEALFAHAJ_;
     /**
-     * <code>uint32 FGMOMMCFHLH = 10;</code>
-     * @return The fGMOMMCFHLH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 AEMEALFAHAJ = 9;</code>
+     * @return The aEMEALFAHAJ.
      */
     @java.lang.Override
-    public int getFGMOMMCFHLH() {
-      return fGMOMMCFHLH_;
+    public int getAEMEALFAHAJ() {
+      return aEMEALFAHAJ_;
     }
 
-    public static final int CKOGGPOAAKH_FIELD_NUMBER = 9;
-    private int cKOGGPOAAKH_;
+    public static final int FCIKHMEPIEB_FIELD_NUMBER = 15;
+    private int fCIKHMEPIEB_;
     /**
-     * <code>uint32 CKOGGPOAAKH = 9;</code>
-     * @return The cKOGGPOAAKH.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 FCIKHMEPIEB = 15;</code>
+     * @return The fCIKHMEPIEB.
      */
     @java.lang.Override
-    public int getCKOGGPOAAKH() {
-      return cKOGGPOAAKH_;
+    public int getFCIKHMEPIEB() {
+      return fCIKHMEPIEB_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 11;
+    public static final int CGBDLDLEGHP_FIELD_NUMBER = 12;
+    private int cGBDLDLEGHP_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 CGBDLDLEGHP = 12;</code>
+     * @return The cGBDLDLEGHP.
+     */
+    @java.lang.Override
+    public int getCGBDLDLEGHP() {
+      return cGBDLDLEGHP_;
+    }
+
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 7;
+    private long sceneTimeMs_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 7;</code>
+     * @return The sceneTimeMs.
+     */
+    @java.lang.Override
+    public long getSceneTimeMs() {
+      return sceneTimeMs_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 11;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>bool is_success = 8;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -298,15 +378,19 @@ public final class InBattleChessSettleInfoOuterClass {
       return isSuccess_;
     }
 
-    public static final int PPKIBJMPFJG_FIELD_NUMBER = 15;
-    private int pPKIBJMPFJG_;
+    public static final int GJNIAPCFNND_FIELD_NUMBER = 10;
+    private int gJNIAPCFNND_;
     /**
-     * <code>uint32 PPKIBJMPFJG = 15;</code>
-     * @return The pPKIBJMPFJG.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 GJNIAPCFNND = 10;</code>
+     * @return The gJNIAPCFNND.
      */
     @java.lang.Override
-    public int getPPKIBJMPFJG() {
-      return pPKIBJMPFJG_;
+    public int getGJNIAPCFNND() {
+      return gJNIAPCFNND_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -323,26 +407,26 @@ public final class InBattleChessSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < scoreList_.size(); i++) {
+        output.writeMessage(2, scoreList_.get(i));
+      }
       if (sceneTimeMs_ != 0L) {
-        output.writeUInt64(6, sceneTimeMs_);
-      }
-      if (cKOGGPOAAKH_ != 0) {
-        output.writeUInt32(9, cKOGGPOAAKH_);
-      }
-      if (fGMOMMCFHLH_ != 0) {
-        output.writeUInt32(10, fGMOMMCFHLH_);
+        output.writeUInt64(7, sceneTimeMs_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(11, isSuccess_);
+        output.writeBool(8, isSuccess_);
       }
-      if (aPEDJKIDLPC_ != 0) {
-        output.writeUInt32(12, aPEDJKIDLPC_);
+      if (aEMEALFAHAJ_ != 0) {
+        output.writeUInt32(9, aEMEALFAHAJ_);
       }
-      for (int i = 0; i < scoreList_.size(); i++) {
-        output.writeMessage(14, scoreList_.get(i));
+      if (gJNIAPCFNND_ != 0) {
+        output.writeUInt32(10, gJNIAPCFNND_);
       }
-      if (pPKIBJMPFJG_ != 0) {
-        output.writeUInt32(15, pPKIBJMPFJG_);
+      if (cGBDLDLEGHP_ != 0) {
+        output.writeUInt32(12, cGBDLDLEGHP_);
+      }
+      if (fCIKHMEPIEB_ != 0) {
+        output.writeUInt32(15, fCIKHMEPIEB_);
       }
       unknownFields.writeTo(output);
     }
@@ -353,33 +437,33 @@ public final class InBattleChessSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < scoreList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, scoreList_.get(i));
+      }
       if (sceneTimeMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, sceneTimeMs_);
-      }
-      if (cKOGGPOAAKH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cKOGGPOAAKH_);
-      }
-      if (fGMOMMCFHLH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, fGMOMMCFHLH_);
+          .computeUInt64Size(7, sceneTimeMs_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isSuccess_);
+          .computeBoolSize(8, isSuccess_);
       }
-      if (aPEDJKIDLPC_ != 0) {
+      if (aEMEALFAHAJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, aPEDJKIDLPC_);
+          .computeUInt32Size(9, aEMEALFAHAJ_);
       }
-      for (int i = 0; i < scoreList_.size(); i++) {
+      if (gJNIAPCFNND_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, scoreList_.get(i));
+          .computeUInt32Size(10, gJNIAPCFNND_);
       }
-      if (pPKIBJMPFJG_ != 0) {
+      if (cGBDLDLEGHP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, pPKIBJMPFJG_);
+          .computeUInt32Size(12, cGBDLDLEGHP_);
+      }
+      if (fCIKHMEPIEB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, fCIKHMEPIEB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -396,20 +480,20 @@ public final class InBattleChessSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo other = (emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo) obj;
 
-      if (getAPEDJKIDLPC()
-          != other.getAPEDJKIDLPC()) return false;
-      if (getSceneTimeMs()
-          != other.getSceneTimeMs()) return false;
       if (!getScoreListList()
           .equals(other.getScoreListList())) return false;
-      if (getFGMOMMCFHLH()
-          != other.getFGMOMMCFHLH()) return false;
-      if (getCKOGGPOAAKH()
-          != other.getCKOGGPOAAKH()) return false;
+      if (getAEMEALFAHAJ()
+          != other.getAEMEALFAHAJ()) return false;
+      if (getFCIKHMEPIEB()
+          != other.getFCIKHMEPIEB()) return false;
+      if (getCGBDLDLEGHP()
+          != other.getCGBDLDLEGHP()) return false;
+      if (getSceneTimeMs()
+          != other.getSceneTimeMs()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (getPPKIBJMPFJG()
-          != other.getPPKIBJMPFJG()) return false;
+      if (getGJNIAPCFNND()
+          != other.getGJNIAPCFNND()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -421,24 +505,24 @@ public final class InBattleChessSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + APEDJKIDLPC_FIELD_NUMBER;
-      hash = (53 * hash) + getAPEDJKIDLPC();
-      hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getSceneTimeMs());
       if (getScoreListCount() > 0) {
         hash = (37 * hash) + SCORE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getScoreListList().hashCode();
       }
-      hash = (37 * hash) + FGMOMMCFHLH_FIELD_NUMBER;
-      hash = (53 * hash) + getFGMOMMCFHLH();
-      hash = (37 * hash) + CKOGGPOAAKH_FIELD_NUMBER;
-      hash = (53 * hash) + getCKOGGPOAAKH();
+      hash = (37 * hash) + AEMEALFAHAJ_FIELD_NUMBER;
+      hash = (53 * hash) + getAEMEALFAHAJ();
+      hash = (37 * hash) + FCIKHMEPIEB_FIELD_NUMBER;
+      hash = (53 * hash) + getFCIKHMEPIEB();
+      hash = (37 * hash) + CGBDLDLEGHP_FIELD_NUMBER;
+      hash = (53 * hash) + getCGBDLDLEGHP();
+      hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getSceneTimeMs());
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + PPKIBJMPFJG_FIELD_NUMBER;
-      hash = (53 * hash) + getPPKIBJMPFJG();
+      hash = (37 * hash) + GJNIAPCFNND_FIELD_NUMBER;
+      hash = (53 * hash) + getGJNIAPCFNND();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -535,10 +619,6 @@ public final class InBattleChessSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GNMNAFJNHDB
-     * </pre>
-     *
      * Protobuf type {@code InBattleChessSettleInfo}
      */
     public static final class Builder extends
@@ -577,23 +657,23 @@ public final class InBattleChessSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aPEDJKIDLPC_ = 0;
-
-        sceneTimeMs_ = 0L;
-
         if (scoreListBuilder_ == null) {
           scoreList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           scoreListBuilder_.clear();
         }
-        fGMOMMCFHLH_ = 0;
+        aEMEALFAHAJ_ = 0;
 
-        cKOGGPOAAKH_ = 0;
+        fCIKHMEPIEB_ = 0;
+
+        cGBDLDLEGHP_ = 0;
+
+        sceneTimeMs_ = 0L;
 
         isSuccess_ = false;
 
-        pPKIBJMPFJG_ = 0;
+        gJNIAPCFNND_ = 0;
 
         return this;
       }
@@ -622,8 +702,6 @@ public final class InBattleChessSettleInfoOuterClass {
       public emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo result = new emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.aPEDJKIDLPC_ = aPEDJKIDLPC_;
-        result.sceneTimeMs_ = sceneTimeMs_;
         if (scoreListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             scoreList_ = java.util.Collections.unmodifiableList(scoreList_);
@@ -633,10 +711,12 @@ public final class InBattleChessSettleInfoOuterClass {
         } else {
           result.scoreList_ = scoreListBuilder_.build();
         }
-        result.fGMOMMCFHLH_ = fGMOMMCFHLH_;
-        result.cKOGGPOAAKH_ = cKOGGPOAAKH_;
+        result.aEMEALFAHAJ_ = aEMEALFAHAJ_;
+        result.fCIKHMEPIEB_ = fCIKHMEPIEB_;
+        result.cGBDLDLEGHP_ = cGBDLDLEGHP_;
+        result.sceneTimeMs_ = sceneTimeMs_;
         result.isSuccess_ = isSuccess_;
-        result.pPKIBJMPFJG_ = pPKIBJMPFJG_;
+        result.gJNIAPCFNND_ = gJNIAPCFNND_;
         onBuilt();
         return result;
       }
@@ -685,12 +765,6 @@ public final class InBattleChessSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleChessSettleInfoOuterClass.InBattleChessSettleInfo.getDefaultInstance()) return this;
-        if (other.getAPEDJKIDLPC() != 0) {
-          setAPEDJKIDLPC(other.getAPEDJKIDLPC());
-        }
-        if (other.getSceneTimeMs() != 0L) {
-          setSceneTimeMs(other.getSceneTimeMs());
-        }
         if (scoreListBuilder_ == null) {
           if (!other.scoreList_.isEmpty()) {
             if (scoreList_.isEmpty()) {
@@ -717,17 +791,23 @@ public final class InBattleChessSettleInfoOuterClass {
             }
           }
         }
-        if (other.getFGMOMMCFHLH() != 0) {
-          setFGMOMMCFHLH(other.getFGMOMMCFHLH());
+        if (other.getAEMEALFAHAJ() != 0) {
+          setAEMEALFAHAJ(other.getAEMEALFAHAJ());
         }
-        if (other.getCKOGGPOAAKH() != 0) {
-          setCKOGGPOAAKH(other.getCKOGGPOAAKH());
+        if (other.getFCIKHMEPIEB() != 0) {
+          setFCIKHMEPIEB(other.getFCIKHMEPIEB());
+        }
+        if (other.getCGBDLDLEGHP() != 0) {
+          setCGBDLDLEGHP(other.getCGBDLDLEGHP());
+        }
+        if (other.getSceneTimeMs() != 0L) {
+          setSceneTimeMs(other.getSceneTimeMs());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        if (other.getPPKIBJMPFJG() != 0) {
-          setPPKIBJMPFJG(other.getPPKIBJMPFJG());
+        if (other.getGJNIAPCFNND() != 0) {
+          setGJNIAPCFNND(other.getGJNIAPCFNND());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -759,68 +839,6 @@ public final class InBattleChessSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int aPEDJKIDLPC_ ;
-      /**
-       * <code>uint32 APEDJKIDLPC = 12;</code>
-       * @return The aPEDJKIDLPC.
-       */
-      @java.lang.Override
-      public int getAPEDJKIDLPC() {
-        return aPEDJKIDLPC_;
-      }
-      /**
-       * <code>uint32 APEDJKIDLPC = 12;</code>
-       * @param value The aPEDJKIDLPC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAPEDJKIDLPC(int value) {
-        
-        aPEDJKIDLPC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 APEDJKIDLPC = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAPEDJKIDLPC() {
-        
-        aPEDJKIDLPC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long sceneTimeMs_ ;
-      /**
-       * <code>uint64 scene_time_ms = 6;</code>
-       * @return The sceneTimeMs.
-       */
-      @java.lang.Override
-      public long getSceneTimeMs() {
-        return sceneTimeMs_;
-      }
-      /**
-       * <code>uint64 scene_time_ms = 6;</code>
-       * @param value The sceneTimeMs to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneTimeMs(long value) {
-        
-        sceneTimeMs_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 scene_time_ms = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneTimeMs() {
-        
-        sceneTimeMs_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> scoreList_ =
         java.util.Collections.emptyList();
       private void ensureScoreListIsMutable() {
@@ -834,7 +852,11 @@ public final class InBattleChessSettleInfoOuterClass {
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> scoreListBuilder_;
 
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getScoreListList() {
         if (scoreListBuilder_ == null) {
@@ -844,7 +866,11 @@ public final class InBattleChessSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public int getScoreListCount() {
         if (scoreListBuilder_ == null) {
@@ -854,7 +880,11 @@ public final class InBattleChessSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -864,7 +894,11 @@ public final class InBattleChessSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -881,7 +915,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder setScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -895,7 +933,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder addScoreList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
         if (scoreListBuilder_ == null) {
@@ -911,7 +953,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -928,7 +974,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder addScoreList(
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -942,7 +992,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder addScoreList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -956,7 +1010,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder addAllScoreList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -971,7 +1029,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder clearScoreList() {
         if (scoreListBuilder_ == null) {
@@ -984,7 +1046,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public Builder removeScoreList(int index) {
         if (scoreListBuilder_ == null) {
@@ -997,14 +1063,22 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getScoreListBuilder(
           int index) {
         return getScoreListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getScoreListOrBuilder(
           int index) {
@@ -1014,7 +1088,11 @@ public final class InBattleChessSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
            getScoreListOrBuilderList() {
@@ -1025,14 +1103,22 @@ public final class InBattleChessSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder() {
         return getScoreListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addScoreListBuilder(
           int index) {
@@ -1040,7 +1126,11 @@ public final class InBattleChessSettleInfoOuterClass {
             index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo score_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .ExhibitionDisplayInfo score_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
            getScoreListBuilderList() {
@@ -1061,71 +1151,185 @@ public final class InBattleChessSettleInfoOuterClass {
         return scoreListBuilder_;
       }
 
-      private int fGMOMMCFHLH_ ;
+      private int aEMEALFAHAJ_ ;
       /**
-       * <code>uint32 FGMOMMCFHLH = 10;</code>
-       * @return The fGMOMMCFHLH.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 AEMEALFAHAJ = 9;</code>
+       * @return The aEMEALFAHAJ.
        */
       @java.lang.Override
-      public int getFGMOMMCFHLH() {
-        return fGMOMMCFHLH_;
+      public int getAEMEALFAHAJ() {
+        return aEMEALFAHAJ_;
       }
       /**
-       * <code>uint32 FGMOMMCFHLH = 10;</code>
-       * @param value The fGMOMMCFHLH to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 AEMEALFAHAJ = 9;</code>
+       * @param value The aEMEALFAHAJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFGMOMMCFHLH(int value) {
+      public Builder setAEMEALFAHAJ(int value) {
         
-        fGMOMMCFHLH_ = value;
+        aEMEALFAHAJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FGMOMMCFHLH = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 AEMEALFAHAJ = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFGMOMMCFHLH() {
+      public Builder clearAEMEALFAHAJ() {
         
-        fGMOMMCFHLH_ = 0;
+        aEMEALFAHAJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int cKOGGPOAAKH_ ;
+      private int fCIKHMEPIEB_ ;
       /**
-       * <code>uint32 CKOGGPOAAKH = 9;</code>
-       * @return The cKOGGPOAAKH.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 FCIKHMEPIEB = 15;</code>
+       * @return The fCIKHMEPIEB.
        */
       @java.lang.Override
-      public int getCKOGGPOAAKH() {
-        return cKOGGPOAAKH_;
+      public int getFCIKHMEPIEB() {
+        return fCIKHMEPIEB_;
       }
       /**
-       * <code>uint32 CKOGGPOAAKH = 9;</code>
-       * @param value The cKOGGPOAAKH to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 FCIKHMEPIEB = 15;</code>
+       * @param value The fCIKHMEPIEB to set.
        * @return This builder for chaining.
        */
-      public Builder setCKOGGPOAAKH(int value) {
+      public Builder setFCIKHMEPIEB(int value) {
         
-        cKOGGPOAAKH_ = value;
+        fCIKHMEPIEB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CKOGGPOAAKH = 9;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 FCIKHMEPIEB = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCKOGGPOAAKH() {
+      public Builder clearFCIKHMEPIEB() {
         
-        cKOGGPOAAKH_ = 0;
+        fCIKHMEPIEB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cGBDLDLEGHP_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 CGBDLDLEGHP = 12;</code>
+       * @return The cGBDLDLEGHP.
+       */
+      @java.lang.Override
+      public int getCGBDLDLEGHP() {
+        return cGBDLDLEGHP_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 CGBDLDLEGHP = 12;</code>
+       * @param value The cGBDLDLEGHP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCGBDLDLEGHP(int value) {
+        
+        cGBDLDLEGHP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 CGBDLDLEGHP = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCGBDLDLEGHP() {
+        
+        cGBDLDLEGHP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long sceneTimeMs_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 7;</code>
+       * @return The sceneTimeMs.
+       */
+      @java.lang.Override
+      public long getSceneTimeMs() {
+        return sceneTimeMs_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 7;</code>
+       * @param value The sceneTimeMs to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneTimeMs(long value) {
+        
+        sceneTimeMs_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneTimeMs() {
+        
+        sceneTimeMs_ = 0L;
         onChanged();
         return this;
       }
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 8;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -1133,7 +1337,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 8;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -1144,7 +1352,11 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 11;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>bool is_success = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -1154,33 +1366,45 @@ public final class InBattleChessSettleInfoOuterClass {
         return this;
       }
 
-      private int pPKIBJMPFJG_ ;
+      private int gJNIAPCFNND_ ;
       /**
-       * <code>uint32 PPKIBJMPFJG = 15;</code>
-       * @return The pPKIBJMPFJG.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 GJNIAPCFNND = 10;</code>
+       * @return The gJNIAPCFNND.
        */
       @java.lang.Override
-      public int getPPKIBJMPFJG() {
-        return pPKIBJMPFJG_;
+      public int getGJNIAPCFNND() {
+        return gJNIAPCFNND_;
       }
       /**
-       * <code>uint32 PPKIBJMPFJG = 15;</code>
-       * @param value The pPKIBJMPFJG to set.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 GJNIAPCFNND = 10;</code>
+       * @param value The gJNIAPCFNND to set.
        * @return This builder for chaining.
        */
-      public Builder setPPKIBJMPFJG(int value) {
+      public Builder setGJNIAPCFNND(int value) {
         
-        pPKIBJMPFJG_ = value;
+        gJNIAPCFNND_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 PPKIBJMPFJG = 15;</code>
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 GJNIAPCFNND = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPPKIBJMPFJG() {
+      public Builder clearGJNIAPCFNND() {
         
-        pPKIBJMPFJG_ = 0;
+        gJNIAPCFNND_ = 0;
         onChanged();
         return this;
       }
@@ -1253,11 +1477,11 @@ public final class InBattleChessSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035InBattleChessSettleInfo.proto\032\033Exhibit" +
       "ionDisplayInfo.proto\"\304\001\n\027InBattleChessSe" +
-      "ttleInfo\022\023\n\013APEDJKIDLPC\030\014 \001(\r\022\025\n\rscene_t" +
-      "ime_ms\030\006 \001(\004\022*\n\nscore_list\030\016 \003(\0132\026.Exhib" +
-      "itionDisplayInfo\022\023\n\013FGMOMMCFHLH\030\n \001(\r\022\023\n" +
-      "\013CKOGGPOAAKH\030\t \001(\r\022\022\n\nis_success\030\013 \001(\010\022\023" +
-      "\n\013PPKIBJMPFJG\030\017 \001(\rB\033\n\031emu.grasscutter.n" +
+      "ttleInfo\022*\n\nscore_list\030\002 \003(\0132\026.Exhibitio" +
+      "nDisplayInfo\022\023\n\013AEMEALFAHAJ\030\t \001(\r\022\023\n\013FCI" +
+      "KHMEPIEB\030\017 \001(\r\022\023\n\013CGBDLDLEGHP\030\014 \001(\r\022\025\n\rs" +
+      "cene_time_ms\030\007 \001(\004\022\022\n\nis_success\030\010 \001(\010\022\023" +
+      "\n\013GJNIAPCFNND\030\n \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1270,7 +1494,7 @@ public final class InBattleChessSettleInfoOuterClass {
     internal_static_InBattleChessSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleChessSettleInfo_descriptor,
-        new java.lang.String[] { "APEDJKIDLPC", "SceneTimeMs", "ScoreList", "FGMOMMCFHLH", "CKOGGPOAAKH", "IsSuccess", "PPKIBJMPFJG", });
+        new java.lang.String[] { "ScoreList", "AEMEALFAHAJ", "FCIKHMEPIEB", "CGBDLDLEGHP", "SceneTimeMs", "IsSuccess", "GJNIAPCFNND", });
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.getDescriptor();
   }
 

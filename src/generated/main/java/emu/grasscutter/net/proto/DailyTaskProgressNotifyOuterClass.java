@@ -19,16 +19,28 @@ public final class DailyTaskProgressNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      * @return The info.
      */
     emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo getInfo();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      */
     emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfoOrBuilder getInfoOrBuilder();
@@ -130,6 +142,10 @@ public final class DailyTaskProgressNotifyOuterClass {
     public static final int INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo info_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      * @return Whether the info field is set.
      */
@@ -138,6 +154,10 @@ public final class DailyTaskProgressNotifyOuterClass {
       return info_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      * @return The info.
      */
@@ -146,6 +166,10 @@ public final class DailyTaskProgressNotifyOuterClass {
       return info_ == null ? emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo.getDefaultInstance() : info_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.DailyTaskInfo info = 3;</code>
      */
     @java.lang.Override
@@ -476,6 +500,10 @@ public final class DailyTaskProgressNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo, emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo.Builder, emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfoOrBuilder> infoBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        * @return Whether the info field is set.
        */
@@ -483,6 +511,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return infoBuilder_ != null || info_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        * @return The info.
        */
@@ -494,6 +526,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public Builder setInfo(emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo value) {
@@ -510,6 +546,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public Builder setInfo(
@@ -524,6 +564,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public Builder mergeInfo(emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo value) {
@@ -542,6 +586,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public Builder clearInfo() {
@@ -556,6 +604,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfo.Builder getInfoBuilder() {
@@ -564,6 +616,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       public emu.grasscutter.net.proto.DailyTaskInfoOuterClass.DailyTaskInfoOrBuilder getInfoOrBuilder() {
@@ -575,6 +631,10 @@ public final class DailyTaskProgressNotifyOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.DailyTaskInfo info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

@@ -19,33 +19,32 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
+     * <code>uint32 HFBDCLKIAEC = 2;</code>
+     * @return The hFBDCLKIAEC.
      */
-    int getLevelId();
+    int getHFBDCLKIAEC();
 
     /**
-     * <code>uint32 challenge_mode_skill_no = 9;</code>
-     * @return The challengeModeSkillNo.
-     */
-    int getChallengeModeSkillNo();
-
-    /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 challenge_mode_difficulty = 2;</code>
-     * @return The challengeModeDifficulty.
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
      */
-    int getChallengeModeDifficulty();
+    int getLevelId();
+
+    /**
+     * <code>uint32 OPGPKHAKFAI = 12;</code>
+     * @return The oPGPKHAKFAI.
+     */
+    int getOPGPKHAKFAI();
   }
   /**
    * <pre>
-   * CmdId: 25032
-   * Obf: FAGKJGGHIFK
+   * CmdId: 21957
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2EnterDungeonRsp}
@@ -94,22 +93,22 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
               break;
             case 16: {
 
-              challengeModeDifficulty_ = input.readUInt32();
+              hFBDCLKIAEC_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 72: {
-
-              challengeModeSkillNo_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 88: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              oPGPKHAKFAI_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,32 +143,21 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp.class, emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
+    public static final int HFBDCLKIAEC_FIELD_NUMBER = 2;
+    private int hFBDCLKIAEC_;
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
+     * <code>uint32 HFBDCLKIAEC = 2;</code>
+     * @return The hFBDCLKIAEC.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getHFBDCLKIAEC() {
+      return hFBDCLKIAEC_;
     }
 
-    public static final int CHALLENGE_MODE_SKILL_NO_FIELD_NUMBER = 9;
-    private int challengeModeSkillNo_;
-    /**
-     * <code>uint32 challenge_mode_skill_no = 9;</code>
-     * @return The challengeModeSkillNo.
-     */
-    @java.lang.Override
-    public int getChallengeModeSkillNo() {
-      return challengeModeSkillNo_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -177,15 +165,26 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 2;
-    private int challengeModeDifficulty_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    private int levelId_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 2;</code>
-     * @return The challengeModeDifficulty.
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getChallengeModeDifficulty() {
-      return challengeModeDifficulty_;
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int OPGPKHAKFAI_FIELD_NUMBER = 12;
+    private int oPGPKHAKFAI_;
+    /**
+     * <code>uint32 OPGPKHAKFAI = 12;</code>
+     * @return The oPGPKHAKFAI.
+     */
+    @java.lang.Override
+    public int getOPGPKHAKFAI() {
+      return oPGPKHAKFAI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +201,17 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(2, challengeModeDifficulty_);
+      if (hFBDCLKIAEC_ != 0) {
+        output.writeUInt32(2, hFBDCLKIAEC_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
-      if (challengeModeSkillNo_ != 0) {
-        output.writeUInt32(9, challengeModeSkillNo_);
+        output.writeInt32(4, retcode_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(11, levelId_);
+      }
+      if (oPGPKHAKFAI_ != 0) {
+        output.writeUInt32(12, oPGPKHAKFAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +222,21 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeModeDifficulty_ != 0) {
+      if (hFBDCLKIAEC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, challengeModeDifficulty_);
+          .computeUInt32Size(2, hFBDCLKIAEC_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (challengeModeSkillNo_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, challengeModeSkillNo_);
+          .computeInt32Size(4, retcode_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(11, levelId_);
+      }
+      if (oPGPKHAKFAI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, oPGPKHAKFAI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +253,14 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp other = (emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getChallengeModeSkillNo()
-          != other.getChallengeModeSkillNo()) return false;
+      if (getHFBDCLKIAEC()
+          != other.getHFBDCLKIAEC()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getChallengeModeDifficulty()
-          != other.getChallengeModeDifficulty()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getOPGPKHAKFAI()
+          != other.getOPGPKHAKFAI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +272,14 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + CHALLENGE_MODE_SKILL_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeSkillNo();
+      hash = (37 * hash) + HFBDCLKIAEC_FIELD_NUMBER;
+      hash = (53 * hash) + getHFBDCLKIAEC();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeModeDifficulty();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + OPGPKHAKFAI_FIELD_NUMBER;
+      hash = (53 * hash) + getOPGPKHAKFAI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +377,7 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25032
-     * Obf: FAGKJGGHIFK
+     * CmdId: 21957
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2EnterDungeonRsp}
@@ -419,13 +417,13 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
-        challengeModeSkillNo_ = 0;
+        hFBDCLKIAEC_ = 0;
 
         retcode_ = 0;
 
-        challengeModeDifficulty_ = 0;
+        levelId_ = 0;
+
+        oPGPKHAKFAI_ = 0;
 
         return this;
       }
@@ -453,10 +451,10 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp result = new emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp(this);
-        result.levelId_ = levelId_;
-        result.challengeModeSkillNo_ = challengeModeSkillNo_;
+        result.hFBDCLKIAEC_ = hFBDCLKIAEC_;
         result.retcode_ = retcode_;
-        result.challengeModeDifficulty_ = challengeModeDifficulty_;
+        result.levelId_ = levelId_;
+        result.oPGPKHAKFAI_ = oPGPKHAKFAI_;
         onBuilt();
         return result;
       }
@@ -505,17 +503,17 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV2EnterDungeonRspOuterClass.EffigyChallengeV2EnterDungeonRsp.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getChallengeModeSkillNo() != 0) {
-          setChallengeModeSkillNo(other.getChallengeModeSkillNo());
+        if (other.getHFBDCLKIAEC() != 0) {
+          setHFBDCLKIAEC(other.getHFBDCLKIAEC());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getChallengeModeDifficulty() != 0) {
-          setChallengeModeDifficulty(other.getChallengeModeDifficulty());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getOPGPKHAKFAI() != 0) {
+          setOPGPKHAKFAI(other.getOPGPKHAKFAI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,71 +544,40 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
         return this;
       }
 
-      private int levelId_ ;
+      private int hFBDCLKIAEC_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
-       * @return The levelId.
+       * <code>uint32 HFBDCLKIAEC = 2;</code>
+       * @return The hFBDCLKIAEC.
        */
       @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
+      public int getHFBDCLKIAEC() {
+        return hFBDCLKIAEC_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
-       * @param value The levelId to set.
+       * <code>uint32 HFBDCLKIAEC = 2;</code>
+       * @param value The hFBDCLKIAEC to set.
        * @return This builder for chaining.
        */
-      public Builder setLevelId(int value) {
+      public Builder setHFBDCLKIAEC(int value) {
         
-        levelId_ = value;
+        hFBDCLKIAEC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 HFBDCLKIAEC = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevelId() {
+      public Builder clearHFBDCLKIAEC() {
         
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeModeSkillNo_ ;
-      /**
-       * <code>uint32 challenge_mode_skill_no = 9;</code>
-       * @return The challengeModeSkillNo.
-       */
-      @java.lang.Override
-      public int getChallengeModeSkillNo() {
-        return challengeModeSkillNo_;
-      }
-      /**
-       * <code>uint32 challenge_mode_skill_no = 9;</code>
-       * @param value The challengeModeSkillNo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeModeSkillNo(int value) {
-        
-        challengeModeSkillNo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_mode_skill_no = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeModeSkillNo() {
-        
-        challengeModeSkillNo_ = 0;
+        hFBDCLKIAEC_ = 0;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -618,7 +585,7 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -629,7 +596,7 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -639,33 +606,64 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
         return this;
       }
 
-      private int challengeModeDifficulty_ ;
+      private int levelId_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
-       * @return The challengeModeDifficulty.
+       * <code>uint32 level_id = 11;</code>
+       * @return The levelId.
        */
       @java.lang.Override
-      public int getChallengeModeDifficulty() {
-        return challengeModeDifficulty_;
+      public int getLevelId() {
+        return levelId_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
-       * @param value The challengeModeDifficulty to set.
+       * <code>uint32 level_id = 11;</code>
+       * @param value The levelId to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeModeDifficulty(int value) {
+      public Builder setLevelId(int value) {
         
-        challengeModeDifficulty_ = value;
+        levelId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 2;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeModeDifficulty() {
+      public Builder clearLevelId() {
         
-        challengeModeDifficulty_ = 0;
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oPGPKHAKFAI_ ;
+      /**
+       * <code>uint32 OPGPKHAKFAI = 12;</code>
+       * @return The oPGPKHAKFAI.
+       */
+      @java.lang.Override
+      public int getOPGPKHAKFAI() {
+        return oPGPKHAKFAI_;
+      }
+      /**
+       * <code>uint32 OPGPKHAKFAI = 12;</code>
+       * @param value The oPGPKHAKFAI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOPGPKHAKFAI(int value) {
+        
+        oPGPKHAKFAI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OPGPKHAKFAI = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOPGPKHAKFAI() {
+        
+        oPGPKHAKFAI_ = 0;
         onChanged();
         return this;
       }
@@ -737,11 +735,10 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&EffigyChallengeV2EnterDungeonRsp.proto" +
-      "\"\211\001\n EffigyChallengeV2EnterDungeonRsp\022\020\n" +
-      "\010level_id\030\r \001(\r\022\037\n\027challenge_mode_skill_" +
-      "no\030\t \001(\r\022\017\n\007retcode\030\005 \001(\005\022!\n\031challenge_m" +
-      "ode_difficulty\030\002 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\"o\n EffigyChallengeV2EnterDungeonRsp\022\023\n\013" +
+      "HFBDCLKIAEC\030\002 \001(\r\022\017\n\007retcode\030\004 \001(\005\022\020\n\010le" +
+      "vel_id\030\013 \001(\r\022\023\n\013OPGPKHAKFAI\030\014 \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -752,7 +749,7 @@ public final class EffigyChallengeV2EnterDungeonRspOuterClass {
     internal_static_EffigyChallengeV2EnterDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV2EnterDungeonRsp_descriptor,
-        new java.lang.String[] { "LevelId", "ChallengeModeSkillNo", "Retcode", "ChallengeModeDifficulty", });
+        new java.lang.String[] { "HFBDCLKIAEC", "Retcode", "LevelId", "OPGPKHAKFAI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

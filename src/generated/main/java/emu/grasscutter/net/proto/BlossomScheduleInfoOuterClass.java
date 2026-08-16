@@ -19,46 +19,66 @@ public final class BlossomScheduleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_progress = 1;</code>
-     * @return The finishProgress.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 progress = 1;</code>
+     * @return The progress.
      */
-    int getFinishProgress();
+    int getProgress();
 
     /**
-     * <code>uint32 round = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 KAPGNOLIIGL = 11;</code>
+     * @return The kAPGNOLIIGL.
+     */
+    int getKAPGNOLIIGL();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 round = 6;</code>
      * @return The round.
      */
     int getRound();
 
     /**
-     * <code>uint32 state = 2;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 GHJLEDFDOCD = 3;</code>
+     * @return The gHJLEDFDOCD.
+     */
+    int getGHJLEDFDOCD();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 state = 15;</code>
      * @return The state.
      */
     int getState();
 
     /**
-     * <code>uint32 refresh_id = 5;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 refresh_id = 9;</code>
      * @return The refreshId.
      */
     int getRefreshId();
-
-    /**
-     * <code>uint32 circle_camp_id = 13;</code>
-     * @return The circleCampId.
-     */
-    int getCircleCampId();
-
-    /**
-     * <code>uint32 progress = 14;</code>
-     * @return The progress.
-     */
-    int getProgress();
   }
   /**
-   * <pre>
-   * Obf: OAHPDJFJHLB
-   * </pre>
-   *
    * Protobuf type {@code BlossomScheduleInfo}
    */
   public static final class BlossomScheduleInfo extends
@@ -105,32 +125,32 @@ public final class BlossomScheduleInfoOuterClass {
               break;
             case 8: {
 
-              finishProgress_ = input.readUInt32();
+              progress_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 24: {
 
-              state_ = input.readUInt32();
+              gHJLEDFDOCD_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 48: {
+
+              round_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               refreshId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 88: {
 
-              circleCampId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              progress_ = input.readUInt32();
+              kAPGNOLIIGL_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              round_ = input.readUInt32();
+              state_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,21 +185,44 @@ public final class BlossomScheduleInfoOuterClass {
               emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo.class, emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo.Builder.class);
     }
 
-    public static final int FINISH_PROGRESS_FIELD_NUMBER = 1;
-    private int finishProgress_;
+    public static final int PROGRESS_FIELD_NUMBER = 1;
+    private int progress_;
     /**
-     * <code>uint32 finish_progress = 1;</code>
-     * @return The finishProgress.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 progress = 1;</code>
+     * @return The progress.
      */
     @java.lang.Override
-    public int getFinishProgress() {
-      return finishProgress_;
+    public int getProgress() {
+      return progress_;
     }
 
-    public static final int ROUND_FIELD_NUMBER = 15;
+    public static final int KAPGNOLIIGL_FIELD_NUMBER = 11;
+    private int kAPGNOLIIGL_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 KAPGNOLIIGL = 11;</code>
+     * @return The kAPGNOLIIGL.
+     */
+    @java.lang.Override
+    public int getKAPGNOLIIGL() {
+      return kAPGNOLIIGL_;
+    }
+
+    public static final int ROUND_FIELD_NUMBER = 6;
     private int round_;
     /**
-     * <code>uint32 round = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 round = 6;</code>
      * @return The round.
      */
     @java.lang.Override
@@ -187,10 +230,29 @@ public final class BlossomScheduleInfoOuterClass {
       return round_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 2;
+    public static final int GHJLEDFDOCD_FIELD_NUMBER = 3;
+    private int gHJLEDFDOCD_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 GHJLEDFDOCD = 3;</code>
+     * @return The gHJLEDFDOCD.
+     */
+    @java.lang.Override
+    public int getGHJLEDFDOCD() {
+      return gHJLEDFDOCD_;
+    }
+
+    public static final int STATE_FIELD_NUMBER = 15;
     private int state_;
     /**
-     * <code>uint32 state = 2;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 state = 15;</code>
      * @return The state.
      */
     @java.lang.Override
@@ -198,37 +260,19 @@ public final class BlossomScheduleInfoOuterClass {
       return state_;
     }
 
-    public static final int REFRESH_ID_FIELD_NUMBER = 5;
+    public static final int REFRESH_ID_FIELD_NUMBER = 9;
     private int refreshId_;
     /**
-     * <code>uint32 refresh_id = 5;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 refresh_id = 9;</code>
      * @return The refreshId.
      */
     @java.lang.Override
     public int getRefreshId() {
       return refreshId_;
-    }
-
-    public static final int CIRCLE_CAMP_ID_FIELD_NUMBER = 13;
-    private int circleCampId_;
-    /**
-     * <code>uint32 circle_camp_id = 13;</code>
-     * @return The circleCampId.
-     */
-    @java.lang.Override
-    public int getCircleCampId() {
-      return circleCampId_;
-    }
-
-    public static final int PROGRESS_FIELD_NUMBER = 14;
-    private int progress_;
-    /**
-     * <code>uint32 progress = 14;</code>
-     * @return The progress.
-     */
-    @java.lang.Override
-    public int getProgress() {
-      return progress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +289,23 @@ public final class BlossomScheduleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishProgress_ != 0) {
-        output.writeUInt32(1, finishProgress_);
-      }
-      if (state_ != 0) {
-        output.writeUInt32(2, state_);
-      }
-      if (refreshId_ != 0) {
-        output.writeUInt32(5, refreshId_);
-      }
-      if (circleCampId_ != 0) {
-        output.writeUInt32(13, circleCampId_);
-      }
       if (progress_ != 0) {
-        output.writeUInt32(14, progress_);
+        output.writeUInt32(1, progress_);
+      }
+      if (gHJLEDFDOCD_ != 0) {
+        output.writeUInt32(3, gHJLEDFDOCD_);
       }
       if (round_ != 0) {
-        output.writeUInt32(15, round_);
+        output.writeUInt32(6, round_);
+      }
+      if (refreshId_ != 0) {
+        output.writeUInt32(9, refreshId_);
+      }
+      if (kAPGNOLIIGL_ != 0) {
+        output.writeUInt32(11, kAPGNOLIIGL_);
+      }
+      if (state_ != 0) {
+        output.writeUInt32(15, state_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +316,29 @@ public final class BlossomScheduleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, finishProgress_);
-      }
-      if (state_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, state_);
-      }
-      if (refreshId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, refreshId_);
-      }
-      if (circleCampId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, circleCampId_);
-      }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, progress_);
+          .computeUInt32Size(1, progress_);
+      }
+      if (gHJLEDFDOCD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, gHJLEDFDOCD_);
       }
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, round_);
+          .computeUInt32Size(6, round_);
+      }
+      if (refreshId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, refreshId_);
+      }
+      if (kAPGNOLIIGL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, kAPGNOLIIGL_);
+      }
+      if (state_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, state_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,18 +355,18 @@ public final class BlossomScheduleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo other = (emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo) obj;
 
-      if (getFinishProgress()
-          != other.getFinishProgress()) return false;
+      if (getProgress()
+          != other.getProgress()) return false;
+      if (getKAPGNOLIIGL()
+          != other.getKAPGNOLIIGL()) return false;
       if (getRound()
           != other.getRound()) return false;
+      if (getGHJLEDFDOCD()
+          != other.getGHJLEDFDOCD()) return false;
       if (getState()
           != other.getState()) return false;
       if (getRefreshId()
           != other.getRefreshId()) return false;
-      if (getCircleCampId()
-          != other.getCircleCampId()) return false;
-      if (getProgress()
-          != other.getProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,18 +378,18 @@ public final class BlossomScheduleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISH_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishProgress();
+      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + KAPGNOLIIGL_FIELD_NUMBER;
+      hash = (53 * hash) + getKAPGNOLIIGL();
       hash = (37 * hash) + ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getRound();
+      hash = (37 * hash) + GHJLEDFDOCD_FIELD_NUMBER;
+      hash = (53 * hash) + getGHJLEDFDOCD();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + getState();
       hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRefreshId();
-      hash = (37 * hash) + CIRCLE_CAMP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCircleCampId();
-      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,10 +486,6 @@ public final class BlossomScheduleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OAHPDJFJHLB
-     * </pre>
-     *
      * Protobuf type {@code BlossomScheduleInfo}
      */
     public static final class Builder extends
@@ -483,17 +523,17 @@ public final class BlossomScheduleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishProgress_ = 0;
+        progress_ = 0;
+
+        kAPGNOLIIGL_ = 0;
 
         round_ = 0;
+
+        gHJLEDFDOCD_ = 0;
 
         state_ = 0;
 
         refreshId_ = 0;
-
-        circleCampId_ = 0;
-
-        progress_ = 0;
 
         return this;
       }
@@ -521,12 +561,12 @@ public final class BlossomScheduleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo buildPartial() {
         emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo result = new emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo(this);
-        result.finishProgress_ = finishProgress_;
+        result.progress_ = progress_;
+        result.kAPGNOLIIGL_ = kAPGNOLIIGL_;
         result.round_ = round_;
+        result.gHJLEDFDOCD_ = gHJLEDFDOCD_;
         result.state_ = state_;
         result.refreshId_ = refreshId_;
-        result.circleCampId_ = circleCampId_;
-        result.progress_ = progress_;
         onBuilt();
         return result;
       }
@@ -575,23 +615,23 @@ public final class BlossomScheduleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo other) {
         if (other == emu.grasscutter.net.proto.BlossomScheduleInfoOuterClass.BlossomScheduleInfo.getDefaultInstance()) return this;
-        if (other.getFinishProgress() != 0) {
-          setFinishProgress(other.getFinishProgress());
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
+        }
+        if (other.getKAPGNOLIIGL() != 0) {
+          setKAPGNOLIIGL(other.getKAPGNOLIIGL());
         }
         if (other.getRound() != 0) {
           setRound(other.getRound());
+        }
+        if (other.getGHJLEDFDOCD() != 0) {
+          setGHJLEDFDOCD(other.getGHJLEDFDOCD());
         }
         if (other.getState() != 0) {
           setState(other.getState());
         }
         if (other.getRefreshId() != 0) {
           setRefreshId(other.getRefreshId());
-        }
-        if (other.getCircleCampId() != 0) {
-          setCircleCampId(other.getCircleCampId());
-        }
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -622,40 +662,99 @@ public final class BlossomScheduleInfoOuterClass {
         return this;
       }
 
-      private int finishProgress_ ;
+      private int progress_ ;
       /**
-       * <code>uint32 finish_progress = 1;</code>
-       * @return The finishProgress.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 1;</code>
+       * @return The progress.
        */
       @java.lang.Override
-      public int getFinishProgress() {
-        return finishProgress_;
+      public int getProgress() {
+        return progress_;
       }
       /**
-       * <code>uint32 finish_progress = 1;</code>
-       * @param value The finishProgress to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 1;</code>
+       * @param value The progress to set.
        * @return This builder for chaining.
        */
-      public Builder setFinishProgress(int value) {
+      public Builder setProgress(int value) {
         
-        finishProgress_ = value;
+        progress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 finish_progress = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 progress = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinishProgress() {
+      public Builder clearProgress() {
         
-        finishProgress_ = 0;
+        progress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kAPGNOLIIGL_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KAPGNOLIIGL = 11;</code>
+       * @return The kAPGNOLIIGL.
+       */
+      @java.lang.Override
+      public int getKAPGNOLIIGL() {
+        return kAPGNOLIIGL_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KAPGNOLIIGL = 11;</code>
+       * @param value The kAPGNOLIIGL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKAPGNOLIIGL(int value) {
+        
+        kAPGNOLIIGL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 KAPGNOLIIGL = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKAPGNOLIIGL() {
+        
+        kAPGNOLIIGL_ = 0;
         onChanged();
         return this;
       }
 
       private int round_ ;
       /**
-       * <code>uint32 round = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 round = 6;</code>
        * @return The round.
        */
       @java.lang.Override
@@ -663,7 +762,11 @@ public final class BlossomScheduleInfoOuterClass {
         return round_;
       }
       /**
-       * <code>uint32 round = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 round = 6;</code>
        * @param value The round to set.
        * @return This builder for chaining.
        */
@@ -674,7 +777,11 @@ public final class BlossomScheduleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 round = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 round = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRound() {
@@ -684,9 +791,56 @@ public final class BlossomScheduleInfoOuterClass {
         return this;
       }
 
+      private int gHJLEDFDOCD_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 GHJLEDFDOCD = 3;</code>
+       * @return The gHJLEDFDOCD.
+       */
+      @java.lang.Override
+      public int getGHJLEDFDOCD() {
+        return gHJLEDFDOCD_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 GHJLEDFDOCD = 3;</code>
+       * @param value The gHJLEDFDOCD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGHJLEDFDOCD(int value) {
+        
+        gHJLEDFDOCD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 GHJLEDFDOCD = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGHJLEDFDOCD() {
+        
+        gHJLEDFDOCD_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int state_ ;
       /**
-       * <code>uint32 state = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 state = 15;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -694,7 +848,11 @@ public final class BlossomScheduleInfoOuterClass {
         return state_;
       }
       /**
-       * <code>uint32 state = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 state = 15;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -705,7 +863,11 @@ public final class BlossomScheduleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 state = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 state = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -717,7 +879,11 @@ public final class BlossomScheduleInfoOuterClass {
 
       private int refreshId_ ;
       /**
-       * <code>uint32 refresh_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 9;</code>
        * @return The refreshId.
        */
       @java.lang.Override
@@ -725,7 +891,11 @@ public final class BlossomScheduleInfoOuterClass {
         return refreshId_;
       }
       /**
-       * <code>uint32 refresh_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 9;</code>
        * @param value The refreshId to set.
        * @return This builder for chaining.
        */
@@ -736,74 +906,16 @@ public final class BlossomScheduleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 refresh_id = 5;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRefreshId() {
         
         refreshId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int circleCampId_ ;
-      /**
-       * <code>uint32 circle_camp_id = 13;</code>
-       * @return The circleCampId.
-       */
-      @java.lang.Override
-      public int getCircleCampId() {
-        return circleCampId_;
-      }
-      /**
-       * <code>uint32 circle_camp_id = 13;</code>
-       * @param value The circleCampId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCircleCampId(int value) {
-        
-        circleCampId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 circle_camp_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCircleCampId() {
-        
-        circleCampId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 progress = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
         onChanged();
         return this;
       }
@@ -874,12 +986,11 @@ public final class BlossomScheduleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031BlossomScheduleInfo.proto\"\212\001\n\023BlossomS" +
-      "cheduleInfo\022\027\n\017finish_progress\030\001 \001(\r\022\r\n\005" +
-      "round\030\017 \001(\r\022\r\n\005state\030\002 \001(\r\022\022\n\nrefresh_id" +
-      "\030\005 \001(\r\022\026\n\016circle_camp_id\030\r \001(\r\022\020\n\010progre" +
-      "ss\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\031BlossomScheduleInfo.proto\"\203\001\n\023BlossomS" +
+      "cheduleInfo\022\020\n\010progress\030\001 \001(\r\022\023\n\013KAPGNOL" +
+      "IIGL\030\013 \001(\r\022\r\n\005round\030\006 \001(\r\022\023\n\013GHJLEDFDOCD" +
+      "\030\003 \001(\r\022\r\n\005state\030\017 \001(\r\022\022\n\nrefresh_id\030\t \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -890,7 +1001,7 @@ public final class BlossomScheduleInfoOuterClass {
     internal_static_BlossomScheduleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlossomScheduleInfo_descriptor,
-        new java.lang.String[] { "FinishProgress", "Round", "State", "RefreshId", "CircleCampId", "Progress", });
+        new java.lang.String[] { "Progress", "KAPGNOLIIGL", "Round", "GHJLEDFDOCD", "State", "RefreshId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,32 +19,48 @@ public final class TryEnterHomeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_point = 11;</code>
-     * @return The targetPoint.
-     */
-    int getTargetPoint();
-
-    /**
-     * <code>uint32 target_uid = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 target_uid = 15;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>bool is_transfer_to_safe_point = 13;</code>
-     * @return The isTransferToSafePoint.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LENAFBEJOBE = 8;</code>
+     * @return The lENAFBEJOBE.
      */
-    boolean getIsTransferToSafePoint();
+    boolean getLENAFBEJOBE();
 
     /**
-     * <code>bool is_transfer_to_main_house = 3;</code>
-     * @return The isTransferToMainHouse.
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool IFIDLLGDLEF = 4;</code>
+     * @return The iFIDLLGDLEF.
      */
-    boolean getIsTransferToMainHouse();
+    boolean getIFIDLLGDLEF();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GBAIFLJIIAE = 12;</code>
+     * @return The gBAIFLJIIAE.
+     */
+    int getGBAIFLJIIAE();
   }
   /**
    * <pre>
-   * CmdId: 6021
+   * CmdId: 2065
    * </pre>
    *
    * Protobuf type {@code TryEnterHomeReq}
@@ -91,22 +107,22 @@ public final class TryEnterHomeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
-              isTransferToMainHouse_ = input.readBool();
+              iFIDLLGDLEF_ = input.readBool();
               break;
             }
-            case 88: {
+            case 64: {
 
-              targetPoint_ = input.readUInt32();
+              lENAFBEJOBE_ = input.readBool();
               break;
             }
-            case 104: {
+            case 96: {
 
-              isTransferToSafePoint_ = input.readBool();
+              gBAIFLJIIAE_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -143,21 +159,14 @@ public final class TryEnterHomeReqOuterClass {
               emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.class, emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.Builder.class);
     }
 
-    public static final int TARGET_POINT_FIELD_NUMBER = 11;
-    private int targetPoint_;
-    /**
-     * <code>uint32 target_point = 11;</code>
-     * @return The targetPoint.
-     */
-    @java.lang.Override
-    public int getTargetPoint() {
-      return targetPoint_;
-    }
-
-    public static final int TARGET_UID_FIELD_NUMBER = 14;
+    public static final int TARGET_UID_FIELD_NUMBER = 15;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 target_uid = 15;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -165,26 +174,49 @@ public final class TryEnterHomeReqOuterClass {
       return targetUid_;
     }
 
-    public static final int IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER = 13;
-    private boolean isTransferToSafePoint_;
+    public static final int LENAFBEJOBE_FIELD_NUMBER = 8;
+    private boolean lENAFBEJOBE_;
     /**
-     * <code>bool is_transfer_to_safe_point = 13;</code>
-     * @return The isTransferToSafePoint.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LENAFBEJOBE = 8;</code>
+     * @return The lENAFBEJOBE.
      */
     @java.lang.Override
-    public boolean getIsTransferToSafePoint() {
-      return isTransferToSafePoint_;
+    public boolean getLENAFBEJOBE() {
+      return lENAFBEJOBE_;
     }
 
-    public static final int IS_TRANSFER_TO_MAIN_HOUSE_FIELD_NUMBER = 3;
-    private boolean isTransferToMainHouse_;
+    public static final int IFIDLLGDLEF_FIELD_NUMBER = 4;
+    private boolean iFIDLLGDLEF_;
     /**
-     * <code>bool is_transfer_to_main_house = 3;</code>
-     * @return The isTransferToMainHouse.
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool IFIDLLGDLEF = 4;</code>
+     * @return The iFIDLLGDLEF.
      */
     @java.lang.Override
-    public boolean getIsTransferToMainHouse() {
-      return isTransferToMainHouse_;
+    public boolean getIFIDLLGDLEF() {
+      return iFIDLLGDLEF_;
+    }
+
+    public static final int GBAIFLJIIAE_FIELD_NUMBER = 12;
+    private int gBAIFLJIIAE_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GBAIFLJIIAE = 12;</code>
+     * @return The gBAIFLJIIAE.
+     */
+    @java.lang.Override
+    public int getGBAIFLJIIAE() {
+      return gBAIFLJIIAE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +233,17 @@ public final class TryEnterHomeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTransferToMainHouse_ != false) {
-        output.writeBool(3, isTransferToMainHouse_);
+      if (iFIDLLGDLEF_ != false) {
+        output.writeBool(4, iFIDLLGDLEF_);
       }
-      if (targetPoint_ != 0) {
-        output.writeUInt32(11, targetPoint_);
+      if (lENAFBEJOBE_ != false) {
+        output.writeBool(8, lENAFBEJOBE_);
       }
-      if (isTransferToSafePoint_ != false) {
-        output.writeBool(13, isTransferToSafePoint_);
+      if (gBAIFLJIIAE_ != 0) {
+        output.writeUInt32(12, gBAIFLJIIAE_);
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(14, targetUid_);
+        output.writeUInt32(15, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +254,21 @@ public final class TryEnterHomeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTransferToMainHouse_ != false) {
+      if (iFIDLLGDLEF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isTransferToMainHouse_);
+          .computeBoolSize(4, iFIDLLGDLEF_);
       }
-      if (targetPoint_ != 0) {
+      if (lENAFBEJOBE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, targetPoint_);
+          .computeBoolSize(8, lENAFBEJOBE_);
       }
-      if (isTransferToSafePoint_ != false) {
+      if (gBAIFLJIIAE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isTransferToSafePoint_);
+          .computeUInt32Size(12, gBAIFLJIIAE_);
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, targetUid_);
+          .computeUInt32Size(15, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +285,14 @@ public final class TryEnterHomeReqOuterClass {
       }
       emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq other = (emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq) obj;
 
-      if (getTargetPoint()
-          != other.getTargetPoint()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (getIsTransferToSafePoint()
-          != other.getIsTransferToSafePoint()) return false;
-      if (getIsTransferToMainHouse()
-          != other.getIsTransferToMainHouse()) return false;
+      if (getLENAFBEJOBE()
+          != other.getLENAFBEJOBE()) return false;
+      if (getIFIDLLGDLEF()
+          != other.getIFIDLLGDLEF()) return false;
+      if (getGBAIFLJIIAE()
+          != other.getGBAIFLJIIAE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,16 +304,16 @@ public final class TryEnterHomeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_POINT_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetPoint();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER;
+      hash = (37 * hash) + LENAFBEJOBE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTransferToSafePoint());
-      hash = (37 * hash) + IS_TRANSFER_TO_MAIN_HOUSE_FIELD_NUMBER;
+          getLENAFBEJOBE());
+      hash = (37 * hash) + IFIDLLGDLEF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTransferToMainHouse());
+          getIFIDLLGDLEF());
+      hash = (37 * hash) + GBAIFLJIIAE_FIELD_NUMBER;
+      hash = (53 * hash) + getGBAIFLJIIAE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,7 +411,7 @@ public final class TryEnterHomeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6021
+     * CmdId: 2065
      * </pre>
      *
      * Protobuf type {@code TryEnterHomeReq}
@@ -419,13 +451,13 @@ public final class TryEnterHomeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetPoint_ = 0;
-
         targetUid_ = 0;
 
-        isTransferToSafePoint_ = false;
+        lENAFBEJOBE_ = false;
 
-        isTransferToMainHouse_ = false;
+        iFIDLLGDLEF_ = false;
+
+        gBAIFLJIIAE_ = 0;
 
         return this;
       }
@@ -453,10 +485,10 @@ public final class TryEnterHomeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq buildPartial() {
         emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq result = new emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq(this);
-        result.targetPoint_ = targetPoint_;
         result.targetUid_ = targetUid_;
-        result.isTransferToSafePoint_ = isTransferToSafePoint_;
-        result.isTransferToMainHouse_ = isTransferToMainHouse_;
+        result.lENAFBEJOBE_ = lENAFBEJOBE_;
+        result.iFIDLLGDLEF_ = iFIDLLGDLEF_;
+        result.gBAIFLJIIAE_ = gBAIFLJIIAE_;
         onBuilt();
         return result;
       }
@@ -505,17 +537,17 @@ public final class TryEnterHomeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq other) {
         if (other == emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.getDefaultInstance()) return this;
-        if (other.getTargetPoint() != 0) {
-          setTargetPoint(other.getTargetPoint());
-        }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
-        if (other.getIsTransferToSafePoint() != false) {
-          setIsTransferToSafePoint(other.getIsTransferToSafePoint());
+        if (other.getLENAFBEJOBE() != false) {
+          setLENAFBEJOBE(other.getLENAFBEJOBE());
         }
-        if (other.getIsTransferToMainHouse() != false) {
-          setIsTransferToMainHouse(other.getIsTransferToMainHouse());
+        if (other.getIFIDLLGDLEF() != false) {
+          setIFIDLLGDLEF(other.getIFIDLLGDLEF());
+        }
+        if (other.getGBAIFLJIIAE() != 0) {
+          setGBAIFLJIIAE(other.getGBAIFLJIIAE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,40 +578,13 @@ public final class TryEnterHomeReqOuterClass {
         return this;
       }
 
-      private int targetPoint_ ;
-      /**
-       * <code>uint32 target_point = 11;</code>
-       * @return The targetPoint.
-       */
-      @java.lang.Override
-      public int getTargetPoint() {
-        return targetPoint_;
-      }
-      /**
-       * <code>uint32 target_point = 11;</code>
-       * @param value The targetPoint to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetPoint(int value) {
-        
-        targetPoint_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_point = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetPoint() {
-        
-        targetPoint_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 target_uid = 15;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -587,7 +592,11 @@ public final class TryEnterHomeReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 target_uid = 15;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -598,7 +607,11 @@ public final class TryEnterHomeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 target_uid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -608,64 +621,131 @@ public final class TryEnterHomeReqOuterClass {
         return this;
       }
 
-      private boolean isTransferToSafePoint_ ;
+      private boolean lENAFBEJOBE_ ;
       /**
-       * <code>bool is_transfer_to_safe_point = 13;</code>
-       * @return The isTransferToSafePoint.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LENAFBEJOBE = 8;</code>
+       * @return The lENAFBEJOBE.
        */
       @java.lang.Override
-      public boolean getIsTransferToSafePoint() {
-        return isTransferToSafePoint_;
+      public boolean getLENAFBEJOBE() {
+        return lENAFBEJOBE_;
       }
       /**
-       * <code>bool is_transfer_to_safe_point = 13;</code>
-       * @param value The isTransferToSafePoint to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LENAFBEJOBE = 8;</code>
+       * @param value The lENAFBEJOBE to set.
        * @return This builder for chaining.
        */
-      public Builder setIsTransferToSafePoint(boolean value) {
+      public Builder setLENAFBEJOBE(boolean value) {
         
-        isTransferToSafePoint_ = value;
+        lENAFBEJOBE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_transfer_to_safe_point = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LENAFBEJOBE = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsTransferToSafePoint() {
+      public Builder clearLENAFBEJOBE() {
         
-        isTransferToSafePoint_ = false;
+        lENAFBEJOBE_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isTransferToMainHouse_ ;
+      private boolean iFIDLLGDLEF_ ;
       /**
-       * <code>bool is_transfer_to_main_house = 3;</code>
-       * @return The isTransferToMainHouse.
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool IFIDLLGDLEF = 4;</code>
+       * @return The iFIDLLGDLEF.
        */
       @java.lang.Override
-      public boolean getIsTransferToMainHouse() {
-        return isTransferToMainHouse_;
+      public boolean getIFIDLLGDLEF() {
+        return iFIDLLGDLEF_;
       }
       /**
-       * <code>bool is_transfer_to_main_house = 3;</code>
-       * @param value The isTransferToMainHouse to set.
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool IFIDLLGDLEF = 4;</code>
+       * @param value The iFIDLLGDLEF to set.
        * @return This builder for chaining.
        */
-      public Builder setIsTransferToMainHouse(boolean value) {
+      public Builder setIFIDLLGDLEF(boolean value) {
         
-        isTransferToMainHouse_ = value;
+        iFIDLLGDLEF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_transfer_to_main_house = 3;</code>
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool IFIDLLGDLEF = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsTransferToMainHouse() {
+      public Builder clearIFIDLLGDLEF() {
         
-        isTransferToMainHouse_ = false;
+        iFIDLLGDLEF_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int gBAIFLJIIAE_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GBAIFLJIIAE = 12;</code>
+       * @return The gBAIFLJIIAE.
+       */
+      @java.lang.Override
+      public int getGBAIFLJIIAE() {
+        return gBAIFLJIIAE_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GBAIFLJIIAE = 12;</code>
+       * @param value The gBAIFLJIIAE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGBAIFLJIIAE(int value) {
+        
+        gBAIFLJIIAE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GBAIFLJIIAE = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGBAIFLJIIAE() {
+        
+        gBAIFLJIIAE_ = 0;
         onChanged();
         return this;
       }
@@ -736,11 +816,11 @@ public final class TryEnterHomeReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025TryEnterHomeReq.proto\"\201\001\n\017TryEnterHome" +
-      "Req\022\024\n\014target_point\030\013 \001(\r\022\022\n\ntarget_uid\030" +
-      "\016 \001(\r\022!\n\031is_transfer_to_safe_point\030\r \001(\010" +
-      "\022!\n\031is_transfer_to_main_house\030\003 \001(\010B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\025TryEnterHomeReq.proto\"d\n\017TryEnterHomeR" +
+      "eq\022\022\n\ntarget_uid\030\017 \001(\r\022\023\n\013LENAFBEJOBE\030\010 " +
+      "\001(\010\022\023\n\013IFIDLLGDLEF\030\004 \001(\010\022\023\n\013GBAIFLJIIAE\030" +
+      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -751,7 +831,7 @@ public final class TryEnterHomeReqOuterClass {
     internal_static_TryEnterHomeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TryEnterHomeReq_descriptor,
-        new java.lang.String[] { "TargetPoint", "TargetUid", "IsTransferToSafePoint", "IsTransferToMainHouse", });
+        new java.lang.String[] { "TargetUid", "LENAFBEJOBE", "IFIDLLGDLEF", "GBAIFLJIIAE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

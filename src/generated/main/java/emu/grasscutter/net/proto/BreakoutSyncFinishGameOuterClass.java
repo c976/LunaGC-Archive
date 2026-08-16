@@ -19,28 +19,36 @@ public final class BreakoutSyncFinishGameOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_stop_gallery = 10;</code>
-     * @return The isStopGallery.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool ENIMLOHFGJP = 4;</code>
+     * @return The eNIMLOHFGJP.
      */
-    boolean getIsStopGallery();
+    boolean getENIMLOHFGJP();
 
     /**
-     * <code>uint64 server_game_time = 6;</code>
-     * @return The serverGameTime.
-     */
-    long getServerGameTime();
-
-    /**
-     * <code>bool is_win = 13;</code>
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool is_win = 11;</code>
      * @return The isWin.
      */
     boolean getIsWin();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 server_game_time = 8;</code>
+     * @return The serverGameTime.
+     */
+    long getServerGameTime();
   }
   /**
-   * <pre>
-   * Obf: GDHMPFDFCDO
-   * </pre>
-   *
    * Protobuf type {@code BreakoutSyncFinishGame}
    */
   public static final class BreakoutSyncFinishGame extends
@@ -85,17 +93,17 @@ public final class BreakoutSyncFinishGameOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
+
+              eNIMLOHFGJP_ = input.readBool();
+              break;
+            }
+            case 64: {
 
               serverGameTime_ = input.readUInt64();
               break;
             }
-            case 80: {
-
-              isStopGallery_ = input.readBool();
-              break;
-            }
-            case 104: {
+            case 88: {
 
               isWin_ = input.readBool();
               break;
@@ -132,37 +140,49 @@ public final class BreakoutSyncFinishGameOuterClass {
               emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame.class, emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame.Builder.class);
     }
 
-    public static final int IS_STOP_GALLERY_FIELD_NUMBER = 10;
-    private boolean isStopGallery_;
+    public static final int ENIMLOHFGJP_FIELD_NUMBER = 4;
+    private boolean eNIMLOHFGJP_;
     /**
-     * <code>bool is_stop_gallery = 10;</code>
-     * @return The isStopGallery.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool ENIMLOHFGJP = 4;</code>
+     * @return The eNIMLOHFGJP.
      */
     @java.lang.Override
-    public boolean getIsStopGallery() {
-      return isStopGallery_;
+    public boolean getENIMLOHFGJP() {
+      return eNIMLOHFGJP_;
     }
 
-    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 6;
-    private long serverGameTime_;
-    /**
-     * <code>uint64 server_game_time = 6;</code>
-     * @return The serverGameTime.
-     */
-    @java.lang.Override
-    public long getServerGameTime() {
-      return serverGameTime_;
-    }
-
-    public static final int IS_WIN_FIELD_NUMBER = 13;
+    public static final int IS_WIN_FIELD_NUMBER = 11;
     private boolean isWin_;
     /**
-     * <code>bool is_win = 13;</code>
+     * <pre>
+     * offset: 33
+     * </pre>
+     *
+     * <code>bool is_win = 11;</code>
      * @return The isWin.
      */
     @java.lang.Override
     public boolean getIsWin() {
       return isWin_;
+    }
+
+    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 8;
+    private long serverGameTime_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 server_game_time = 8;</code>
+     * @return The serverGameTime.
+     */
+    @java.lang.Override
+    public long getServerGameTime() {
+      return serverGameTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +199,14 @@ public final class BreakoutSyncFinishGameOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (serverGameTime_ != 0L) {
-        output.writeUInt64(6, serverGameTime_);
+      if (eNIMLOHFGJP_ != false) {
+        output.writeBool(4, eNIMLOHFGJP_);
       }
-      if (isStopGallery_ != false) {
-        output.writeBool(10, isStopGallery_);
+      if (serverGameTime_ != 0L) {
+        output.writeUInt64(8, serverGameTime_);
       }
       if (isWin_ != false) {
-        output.writeBool(13, isWin_);
+        output.writeBool(11, isWin_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +217,17 @@ public final class BreakoutSyncFinishGameOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eNIMLOHFGJP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, eNIMLOHFGJP_);
+      }
       if (serverGameTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, serverGameTime_);
-      }
-      if (isStopGallery_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isStopGallery_);
+          .computeUInt64Size(8, serverGameTime_);
       }
       if (isWin_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isWin_);
+          .computeBoolSize(11, isWin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class BreakoutSyncFinishGameOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame other = (emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame) obj;
 
-      if (getIsStopGallery()
-          != other.getIsStopGallery()) return false;
-      if (getServerGameTime()
-          != other.getServerGameTime()) return false;
+      if (getENIMLOHFGJP()
+          != other.getENIMLOHFGJP()) return false;
       if (getIsWin()
           != other.getIsWin()) return false;
+      if (getServerGameTime()
+          != other.getServerGameTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,15 +261,15 @@ public final class BreakoutSyncFinishGameOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_STOP_GALLERY_FIELD_NUMBER;
+      hash = (37 * hash) + ENIMLOHFGJP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsStopGallery());
-      hash = (37 * hash) + SERVER_GAME_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getServerGameTime());
+          getENIMLOHFGJP());
       hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsWin());
+      hash = (37 * hash) + SERVER_GAME_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getServerGameTime());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,10 +366,6 @@ public final class BreakoutSyncFinishGameOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GDHMPFDFCDO
-     * </pre>
-     *
      * Protobuf type {@code BreakoutSyncFinishGame}
      */
     public static final class Builder extends
@@ -387,11 +403,11 @@ public final class BreakoutSyncFinishGameOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isStopGallery_ = false;
-
-        serverGameTime_ = 0L;
+        eNIMLOHFGJP_ = false;
 
         isWin_ = false;
+
+        serverGameTime_ = 0L;
 
         return this;
       }
@@ -419,9 +435,9 @@ public final class BreakoutSyncFinishGameOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame buildPartial() {
         emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame result = new emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame(this);
-        result.isStopGallery_ = isStopGallery_;
-        result.serverGameTime_ = serverGameTime_;
+        result.eNIMLOHFGJP_ = eNIMLOHFGJP_;
         result.isWin_ = isWin_;
+        result.serverGameTime_ = serverGameTime_;
         onBuilt();
         return result;
       }
@@ -470,14 +486,14 @@ public final class BreakoutSyncFinishGameOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame other) {
         if (other == emu.grasscutter.net.proto.BreakoutSyncFinishGameOuterClass.BreakoutSyncFinishGame.getDefaultInstance()) return this;
-        if (other.getIsStopGallery() != false) {
-          setIsStopGallery(other.getIsStopGallery());
-        }
-        if (other.getServerGameTime() != 0L) {
-          setServerGameTime(other.getServerGameTime());
+        if (other.getENIMLOHFGJP() != false) {
+          setENIMLOHFGJP(other.getENIMLOHFGJP());
         }
         if (other.getIsWin() != false) {
           setIsWin(other.getIsWin());
+        }
+        if (other.getServerGameTime() != 0L) {
+          setServerGameTime(other.getServerGameTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,71 +524,56 @@ public final class BreakoutSyncFinishGameOuterClass {
         return this;
       }
 
-      private boolean isStopGallery_ ;
+      private boolean eNIMLOHFGJP_ ;
       /**
-       * <code>bool is_stop_gallery = 10;</code>
-       * @return The isStopGallery.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool ENIMLOHFGJP = 4;</code>
+       * @return The eNIMLOHFGJP.
        */
       @java.lang.Override
-      public boolean getIsStopGallery() {
-        return isStopGallery_;
+      public boolean getENIMLOHFGJP() {
+        return eNIMLOHFGJP_;
       }
       /**
-       * <code>bool is_stop_gallery = 10;</code>
-       * @param value The isStopGallery to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool ENIMLOHFGJP = 4;</code>
+       * @param value The eNIMLOHFGJP to set.
        * @return This builder for chaining.
        */
-      public Builder setIsStopGallery(boolean value) {
+      public Builder setENIMLOHFGJP(boolean value) {
         
-        isStopGallery_ = value;
+        eNIMLOHFGJP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_stop_gallery = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool ENIMLOHFGJP = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsStopGallery() {
+      public Builder clearENIMLOHFGJP() {
         
-        isStopGallery_ = false;
-        onChanged();
-        return this;
-      }
-
-      private long serverGameTime_ ;
-      /**
-       * <code>uint64 server_game_time = 6;</code>
-       * @return The serverGameTime.
-       */
-      @java.lang.Override
-      public long getServerGameTime() {
-        return serverGameTime_;
-      }
-      /**
-       * <code>uint64 server_game_time = 6;</code>
-       * @param value The serverGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setServerGameTime(long value) {
-        
-        serverGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 server_game_time = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearServerGameTime() {
-        
-        serverGameTime_ = 0L;
+        eNIMLOHFGJP_ = false;
         onChanged();
         return this;
       }
 
       private boolean isWin_ ;
       /**
-       * <code>bool is_win = 13;</code>
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool is_win = 11;</code>
        * @return The isWin.
        */
       @java.lang.Override
@@ -580,7 +581,11 @@ public final class BreakoutSyncFinishGameOuterClass {
         return isWin_;
       }
       /**
-       * <code>bool is_win = 13;</code>
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool is_win = 11;</code>
        * @param value The isWin to set.
        * @return This builder for chaining.
        */
@@ -591,12 +596,59 @@ public final class BreakoutSyncFinishGameOuterClass {
         return this;
       }
       /**
-       * <code>bool is_win = 13;</code>
+       * <pre>
+       * offset: 33
+       * </pre>
+       *
+       * <code>bool is_win = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsWin() {
         
         isWin_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long serverGameTime_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 8;</code>
+       * @return The serverGameTime.
+       */
+      @java.lang.Override
+      public long getServerGameTime() {
+        return serverGameTime_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 8;</code>
+       * @param value The serverGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setServerGameTime(long value) {
+        
+        serverGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearServerGameTime() {
+        
+        serverGameTime_ = 0L;
         onChanged();
         return this;
       }
@@ -667,10 +719,10 @@ public final class BreakoutSyncFinishGameOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034BreakoutSyncFinishGame.proto\"[\n\026Breako" +
-      "utSyncFinishGame\022\027\n\017is_stop_gallery\030\n \001(" +
-      "\010\022\030\n\020server_game_time\030\006 \001(\004\022\016\n\006is_win\030\r " +
-      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\034BreakoutSyncFinishGame.proto\"W\n\026Breako" +
+      "utSyncFinishGame\022\023\n\013ENIMLOHFGJP\030\004 \001(\010\022\016\n" +
+      "\006is_win\030\013 \001(\010\022\030\n\020server_game_time\030\010 \001(\004B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -681,7 +733,7 @@ public final class BreakoutSyncFinishGameOuterClass {
     internal_static_BreakoutSyncFinishGame_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutSyncFinishGame_descriptor,
-        new java.lang.String[] { "IsStopGallery", "ServerGameTime", "IsWin", });
+        new java.lang.String[] { "ENIMLOHFGJP", "IsWin", "ServerGameTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

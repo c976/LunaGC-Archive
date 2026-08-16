@@ -15,49 +15,45 @@ public final class InBattleMechanicusStageTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: MPJAFJCKMDI
-   * </pre>
-   *
    * Protobuf enum {@code InBattleMechanicusStageType}
    */
   public enum InBattleMechanicusStageType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_NONE = 0;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_NONE = 0;</code>
      */
-    IN_BATTLE_MECHANICUS_STAGE_NONE(0),
+    ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_NONE(0),
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_BUILD = 1;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_BUILD = 1;</code>
      */
-    IN_BATTLE_MECHANICUS_STAGE_BUILD(1),
+    ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_BUILD(1),
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP = 2;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP = 2;</code>
      */
-    IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP(2),
+    ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP(2),
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_KILL = 3;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_KILL = 3;</code>
      */
-    IN_BATTLE_MECHANICUS_STAGE_KILL(3),
+    ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_KILL(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_NONE = 0;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_NONE = 0;</code>
      */
-    public static final int IN_BATTLE_MECHANICUS_STAGE_NONE_VALUE = 0;
+    public static final int ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_NONE_VALUE = 0;
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_BUILD = 1;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_BUILD = 1;</code>
      */
-    public static final int IN_BATTLE_MECHANICUS_STAGE_BUILD_VALUE = 1;
+    public static final int ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_BUILD_VALUE = 1;
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP = 2;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP = 2;</code>
      */
-    public static final int IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP_VALUE = 2;
+    public static final int ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP_VALUE = 2;
     /**
-     * <code>IN_BATTLE_MECHANICUS_STAGE_KILL = 3;</code>
+     * <code>ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_KILL = 3;</code>
      */
-    public static final int IN_BATTLE_MECHANICUS_STAGE_KILL_VALUE = 3;
+    public static final int ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_KILL_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class InBattleMechanicusStageTypeOuterClass {
      */
     public static InBattleMechanicusStageType forNumber(int value) {
       switch (value) {
-        case 0: return IN_BATTLE_MECHANICUS_STAGE_NONE;
-        case 1: return IN_BATTLE_MECHANICUS_STAGE_BUILD;
-        case 2: return IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP;
-        case 3: return IN_BATTLE_MECHANICUS_STAGE_KILL;
+        case 0: return ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_NONE;
+        case 1: return ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_BUILD;
+        case 2: return ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_CARD_FLIP;
+        case 3: return ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_KILL;
         default: return null;
       }
     }
@@ -153,13 +149,14 @@ public final class InBattleMechanicusStageTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!InBattleMechanicusStageType.proto*\267\001\n\033" +
-      "InBattleMechanicusStageType\022#\n\037IN_BATTLE" +
-      "_MECHANICUS_STAGE_NONE\020\000\022$\n IN_BATTLE_ME" +
-      "CHANICUS_STAGE_BUILD\020\001\022(\n$IN_BATTLE_MECH" +
-      "ANICUS_STAGE_CARD_FLIP\020\002\022#\n\037IN_BATTLE_ME" +
-      "CHANICUS_STAGE_KILL\020\003B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n!InBattleMechanicusStageType.proto*\347\001\n\033" +
+      "InBattleMechanicusStageType\022/\n+ODJPJMEJM" +
+      "KI_IN_BATTLE_MECHANICUS_STAGE_NONE\020\000\0220\n," +
+      "ODJPJMEJMKI_IN_BATTLE_MECHANICUS_STAGE_B" +
+      "UILD\020\001\0224\n0ODJPJMEJMKI_IN_BATTLE_MECHANIC" +
+      "US_STAGE_CARD_FLIP\020\002\022/\n+ODJPJMEJMKI_IN_B" +
+      "ATTLE_MECHANICUS_STAGE_KILL\020\003B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

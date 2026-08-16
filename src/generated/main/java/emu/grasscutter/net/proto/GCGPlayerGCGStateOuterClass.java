@@ -19,28 +19,24 @@ public final class GCGPlayerGCGStateOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool BBPAKEDIMOK = 1;</code>
-     * @return The bBPAKEDIMOK.
+     * <code>bool is_reasouce_complete = 3;</code>
+     * @return The isReasouceComplete.
      */
-    boolean getBBPAKEDIMOK();
+    boolean getIsReasouceComplete();
 
     /**
-     * <code>uint32 uid = 4;</code>
+     * <code>bool is_gcg_state_open = 13;</code>
+     * @return The isGcgStateOpen.
+     */
+    boolean getIsGcgStateOpen();
+
+    /**
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     int getUid();
-
-    /**
-     * <code>bool FPKMCAHAFIF = 15;</code>
-     * @return The fPKMCAHAFIF.
-     */
-    boolean getFPKMCAHAFIF();
   }
   /**
-   * <pre>
-   * Obf: INLADMODIGO
-   * </pre>
-   *
    * Protobuf type {@code GCGPlayerGCGState}
    */
   public static final class GCGPlayerGCGState extends
@@ -85,19 +81,19 @@ public final class GCGPlayerGCGStateOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              bBPAKEDIMOK_ = input.readBool();
+              isReasouceComplete_ = input.readBool();
               break;
             }
-            case 32: {
+            case 80: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
-              fPKMCAHAFIF_ = input.readBool();
+              isGcgStateOpen_ = input.readBool();
               break;
             }
             default: {
@@ -132,37 +128,37 @@ public final class GCGPlayerGCGStateOuterClass {
               emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.class, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder.class);
     }
 
-    public static final int BBPAKEDIMOK_FIELD_NUMBER = 1;
-    private boolean bBPAKEDIMOK_;
+    public static final int IS_REASOUCE_COMPLETE_FIELD_NUMBER = 3;
+    private boolean isReasouceComplete_;
     /**
-     * <code>bool BBPAKEDIMOK = 1;</code>
-     * @return The bBPAKEDIMOK.
+     * <code>bool is_reasouce_complete = 3;</code>
+     * @return The isReasouceComplete.
      */
     @java.lang.Override
-    public boolean getBBPAKEDIMOK() {
-      return bBPAKEDIMOK_;
+    public boolean getIsReasouceComplete() {
+      return isReasouceComplete_;
     }
 
-    public static final int UID_FIELD_NUMBER = 4;
+    public static final int IS_GCG_STATE_OPEN_FIELD_NUMBER = 13;
+    private boolean isGcgStateOpen_;
+    /**
+     * <code>bool is_gcg_state_open = 13;</code>
+     * @return The isGcgStateOpen.
+     */
+    @java.lang.Override
+    public boolean getIsGcgStateOpen() {
+      return isGcgStateOpen_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 10;
     private int uid_;
     /**
-     * <code>uint32 uid = 4;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     @java.lang.Override
     public int getUid() {
       return uid_;
-    }
-
-    public static final int FPKMCAHAFIF_FIELD_NUMBER = 15;
-    private boolean fPKMCAHAFIF_;
-    /**
-     * <code>bool FPKMCAHAFIF = 15;</code>
-     * @return The fPKMCAHAFIF.
-     */
-    @java.lang.Override
-    public boolean getFPKMCAHAFIF() {
-      return fPKMCAHAFIF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class GCGPlayerGCGStateOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bBPAKEDIMOK_ != false) {
-        output.writeBool(1, bBPAKEDIMOK_);
+      if (isReasouceComplete_ != false) {
+        output.writeBool(3, isReasouceComplete_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(4, uid_);
+        output.writeUInt32(10, uid_);
       }
-      if (fPKMCAHAFIF_ != false) {
-        output.writeBool(15, fPKMCAHAFIF_);
+      if (isGcgStateOpen_ != false) {
+        output.writeBool(13, isGcgStateOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class GCGPlayerGCGStateOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bBPAKEDIMOK_ != false) {
+      if (isReasouceComplete_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, bBPAKEDIMOK_);
+          .computeBoolSize(3, isReasouceComplete_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, uid_);
+          .computeUInt32Size(10, uid_);
       }
-      if (fPKMCAHAFIF_ != false) {
+      if (isGcgStateOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, fPKMCAHAFIF_);
+          .computeBoolSize(13, isGcgStateOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class GCGPlayerGCGStateOuterClass {
       }
       emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState other = (emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState) obj;
 
-      if (getBBPAKEDIMOK()
-          != other.getBBPAKEDIMOK()) return false;
+      if (getIsReasouceComplete()
+          != other.getIsReasouceComplete()) return false;
+      if (getIsGcgStateOpen()
+          != other.getIsGcgStateOpen()) return false;
       if (getUid()
           != other.getUid()) return false;
-      if (getFPKMCAHAFIF()
-          != other.getFPKMCAHAFIF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,14 +237,14 @@ public final class GCGPlayerGCGStateOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BBPAKEDIMOK_FIELD_NUMBER;
+      hash = (37 * hash) + IS_REASOUCE_COMPLETE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBBPAKEDIMOK());
+          getIsReasouceComplete());
+      hash = (37 * hash) + IS_GCG_STATE_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsGcgStateOpen());
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      hash = (37 * hash) + FPKMCAHAFIF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFPKMCAHAFIF());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,10 +341,6 @@ public final class GCGPlayerGCGStateOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: INLADMODIGO
-     * </pre>
-     *
      * Protobuf type {@code GCGPlayerGCGState}
      */
     public static final class Builder extends
@@ -386,11 +378,11 @@ public final class GCGPlayerGCGStateOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bBPAKEDIMOK_ = false;
+        isReasouceComplete_ = false;
+
+        isGcgStateOpen_ = false;
 
         uid_ = 0;
-
-        fPKMCAHAFIF_ = false;
 
         return this;
       }
@@ -418,9 +410,9 @@ public final class GCGPlayerGCGStateOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState buildPartial() {
         emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState result = new emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState(this);
-        result.bBPAKEDIMOK_ = bBPAKEDIMOK_;
+        result.isReasouceComplete_ = isReasouceComplete_;
+        result.isGcgStateOpen_ = isGcgStateOpen_;
         result.uid_ = uid_;
-        result.fPKMCAHAFIF_ = fPKMCAHAFIF_;
         onBuilt();
         return result;
       }
@@ -469,14 +461,14 @@ public final class GCGPlayerGCGStateOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState other) {
         if (other == emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.getDefaultInstance()) return this;
-        if (other.getBBPAKEDIMOK() != false) {
-          setBBPAKEDIMOK(other.getBBPAKEDIMOK());
+        if (other.getIsReasouceComplete() != false) {
+          setIsReasouceComplete(other.getIsReasouceComplete());
+        }
+        if (other.getIsGcgStateOpen() != false) {
+          setIsGcgStateOpen(other.getIsGcgStateOpen());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
-        }
-        if (other.getFPKMCAHAFIF() != false) {
-          setFPKMCAHAFIF(other.getFPKMCAHAFIF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +499,71 @@ public final class GCGPlayerGCGStateOuterClass {
         return this;
       }
 
-      private boolean bBPAKEDIMOK_ ;
+      private boolean isReasouceComplete_ ;
       /**
-       * <code>bool BBPAKEDIMOK = 1;</code>
-       * @return The bBPAKEDIMOK.
+       * <code>bool is_reasouce_complete = 3;</code>
+       * @return The isReasouceComplete.
        */
       @java.lang.Override
-      public boolean getBBPAKEDIMOK() {
-        return bBPAKEDIMOK_;
+      public boolean getIsReasouceComplete() {
+        return isReasouceComplete_;
       }
       /**
-       * <code>bool BBPAKEDIMOK = 1;</code>
-       * @param value The bBPAKEDIMOK to set.
+       * <code>bool is_reasouce_complete = 3;</code>
+       * @param value The isReasouceComplete to set.
        * @return This builder for chaining.
        */
-      public Builder setBBPAKEDIMOK(boolean value) {
+      public Builder setIsReasouceComplete(boolean value) {
         
-        bBPAKEDIMOK_ = value;
+        isReasouceComplete_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool BBPAKEDIMOK = 1;</code>
+       * <code>bool is_reasouce_complete = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBBPAKEDIMOK() {
+      public Builder clearIsReasouceComplete() {
         
-        bBPAKEDIMOK_ = false;
+        isReasouceComplete_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isGcgStateOpen_ ;
+      /**
+       * <code>bool is_gcg_state_open = 13;</code>
+       * @return The isGcgStateOpen.
+       */
+      @java.lang.Override
+      public boolean getIsGcgStateOpen() {
+        return isGcgStateOpen_;
+      }
+      /**
+       * <code>bool is_gcg_state_open = 13;</code>
+       * @param value The isGcgStateOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsGcgStateOpen(boolean value) {
+        
+        isGcgStateOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_gcg_state_open = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsGcgStateOpen() {
+        
+        isGcgStateOpen_ = false;
         onChanged();
         return this;
       }
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -548,7 +571,7 @@ public final class GCGPlayerGCGStateOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -559,43 +582,12 @@ public final class GCGPlayerGCGStateOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 4;</code>
+       * <code>uint32 uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean fPKMCAHAFIF_ ;
-      /**
-       * <code>bool FPKMCAHAFIF = 15;</code>
-       * @return The fPKMCAHAFIF.
-       */
-      @java.lang.Override
-      public boolean getFPKMCAHAFIF() {
-        return fPKMCAHAFIF_;
-      }
-      /**
-       * <code>bool FPKMCAHAFIF = 15;</code>
-       * @param value The fPKMCAHAFIF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFPKMCAHAFIF(boolean value) {
-        
-        fPKMCAHAFIF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool FPKMCAHAFIF = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFPKMCAHAFIF() {
-        
-        fPKMCAHAFIF_ = false;
         onChanged();
         return this;
       }
@@ -666,10 +658,10 @@ public final class GCGPlayerGCGStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GCGPlayerGCGState.proto\"J\n\021GCGPlayerGC" +
-      "GState\022\023\n\013BBPAKEDIMOK\030\001 \001(\010\022\013\n\003uid\030\004 \001(\r" +
-      "\022\023\n\013FPKMCAHAFIF\030\017 \001(\010B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\027GCGPlayerGCGState.proto\"Y\n\021GCGPlayerGC" +
+      "GState\022\034\n\024is_reasouce_complete\030\003 \001(\010\022\031\n\021" +
+      "is_gcg_state_open\030\r \001(\010\022\013\n\003uid\030\n \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +672,7 @@ public final class GCGPlayerGCGStateOuterClass {
     internal_static_GCGPlayerGCGState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGPlayerGCGState_descriptor,
-        new java.lang.String[] { "BBPAKEDIMOK", "Uid", "FPKMCAHAFIF", });
+        new java.lang.String[] { "IsReasouceComplete", "IsGcgStateOpen", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

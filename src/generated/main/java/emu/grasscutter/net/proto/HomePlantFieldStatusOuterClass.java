@@ -15,49 +15,45 @@ public final class HomePlantFieldStatusOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: JBPMMAEOHLJ
-   * </pre>
-   *
    * Protobuf enum {@code HomePlantFieldStatus}
    */
   public enum HomePlantFieldStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>HOME_FIELD_STATUE_NONE = 0;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_NONE = 0;</code>
      */
-    HOME_FIELD_STATUE_NONE(0),
+    GKLIPJHGKNG_HOME_FIELD_STATUE_NONE(0),
     /**
-     * <code>HOME_FIELD_STATUE_SEED = 1;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_SEED = 1;</code>
      */
-    HOME_FIELD_STATUE_SEED(1),
+    GKLIPJHGKNG_HOME_FIELD_STATUE_SEED(1),
     /**
-     * <code>HOME_FIELD_STATUE_SPROUT = 2;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_SPROUT = 2;</code>
      */
-    HOME_FIELD_STATUE_SPROUT(2),
+    GKLIPJHGKNG_HOME_FIELD_STATUE_SPROUT(2),
     /**
-     * <code>HOME_FIELD_STATUE_GATHER = 3;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_GATHER = 3;</code>
      */
-    HOME_FIELD_STATUE_GATHER(3),
+    GKLIPJHGKNG_HOME_FIELD_STATUE_GATHER(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>HOME_FIELD_STATUE_NONE = 0;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_NONE = 0;</code>
      */
-    public static final int HOME_FIELD_STATUE_NONE_VALUE = 0;
+    public static final int GKLIPJHGKNG_HOME_FIELD_STATUE_NONE_VALUE = 0;
     /**
-     * <code>HOME_FIELD_STATUE_SEED = 1;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_SEED = 1;</code>
      */
-    public static final int HOME_FIELD_STATUE_SEED_VALUE = 1;
+    public static final int GKLIPJHGKNG_HOME_FIELD_STATUE_SEED_VALUE = 1;
     /**
-     * <code>HOME_FIELD_STATUE_SPROUT = 2;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_SPROUT = 2;</code>
      */
-    public static final int HOME_FIELD_STATUE_SPROUT_VALUE = 2;
+    public static final int GKLIPJHGKNG_HOME_FIELD_STATUE_SPROUT_VALUE = 2;
     /**
-     * <code>HOME_FIELD_STATUE_GATHER = 3;</code>
+     * <code>GKLIPJHGKNG_HOME_FIELD_STATUE_GATHER = 3;</code>
      */
-    public static final int HOME_FIELD_STATUE_GATHER_VALUE = 3;
+    public static final int GKLIPJHGKNG_HOME_FIELD_STATUE_GATHER_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class HomePlantFieldStatusOuterClass {
      */
     public static HomePlantFieldStatus forNumber(int value) {
       switch (value) {
-        case 0: return HOME_FIELD_STATUE_NONE;
-        case 1: return HOME_FIELD_STATUE_SEED;
-        case 2: return HOME_FIELD_STATUE_SPROUT;
-        case 3: return HOME_FIELD_STATUE_GATHER;
+        case 0: return GKLIPJHGKNG_HOME_FIELD_STATUE_NONE;
+        case 1: return GKLIPJHGKNG_HOME_FIELD_STATUE_SEED;
+        case 2: return GKLIPJHGKNG_HOME_FIELD_STATUE_SPROUT;
+        case 3: return GKLIPJHGKNG_HOME_FIELD_STATUE_GATHER;
         default: return null;
       }
     }
@@ -153,12 +149,13 @@ public final class HomePlantFieldStatusOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032HomePlantFieldStatus.proto*\212\001\n\024HomePla" +
-      "ntFieldStatus\022\032\n\026HOME_FIELD_STATUE_NONE\020" +
-      "\000\022\032\n\026HOME_FIELD_STATUE_SEED\020\001\022\034\n\030HOME_FI" +
-      "ELD_STATUE_SPROUT\020\002\022\034\n\030HOME_FIELD_STATUE" +
-      "_GATHER\020\003B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\032HomePlantFieldStatus.proto*\272\001\n\024HomePla" +
+      "ntFieldStatus\022&\n\"GKLIPJHGKNG_HOME_FIELD_" +
+      "STATUE_NONE\020\000\022&\n\"GKLIPJHGKNG_HOME_FIELD_" +
+      "STATUE_SEED\020\001\022(\n$GKLIPJHGKNG_HOME_FIELD_" +
+      "STATUE_SPROUT\020\002\022(\n$GKLIPJHGKNG_HOME_FIEL" +
+      "D_STATUE_GATHER\020\003B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

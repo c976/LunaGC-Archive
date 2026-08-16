@@ -19,33 +19,32 @@ public final class GroupLinkAllNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle> 
         getBundleListList();
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle getBundleList(int index);
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     int getBundleListCount();
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> 
         getBundleListOrBuilderList();
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 22877
-   * Obf: ICDIPPGCHPF
+   * CmdId: 9914
    * </pre>
    *
    * Protobuf type {@code GroupLinkAllNotify}
@@ -94,7 +93,7 @@ public final class GroupLinkAllNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 bundleList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class GroupLinkAllNotifyOuterClass {
               emu.grasscutter.net.proto.GroupLinkAllNotifyOuterClass.GroupLinkAllNotify.class, emu.grasscutter.net.proto.GroupLinkAllNotifyOuterClass.GroupLinkAllNotify.Builder.class);
     }
 
-    public static final int BUNDLE_LIST_FIELD_NUMBER = 4;
+    public static final int BUNDLE_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle> bundleList_;
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle> getBundleListList() {
       return bundleList_;
     }
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> 
@@ -156,21 +155,21 @@ public final class GroupLinkAllNotifyOuterClass {
       return bundleList_;
     }
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     @java.lang.Override
     public int getBundleListCount() {
       return bundleList_.size();
     }
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle getBundleList(int index) {
       return bundleList_.get(index);
     }
     /**
-     * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+     * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleListOrBuilder(
@@ -193,7 +192,7 @@ public final class GroupLinkAllNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < bundleList_.size(); i++) {
-        output.writeMessage(4, bundleList_.get(i));
+        output.writeMessage(15, bundleList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class GroupLinkAllNotifyOuterClass {
       size = 0;
       for (int i = 0; i < bundleList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, bundleList_.get(i));
+          .computeMessageSize(15, bundleList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class GroupLinkAllNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22877
-     * Obf: ICDIPPGCHPF
+     * CmdId: 9914
      * </pre>
      *
      * Protobuf type {@code GroupLinkAllNotify}
@@ -538,7 +536,7 @@ public final class GroupLinkAllNotifyOuterClass {
           emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> bundleListBuilder_;
 
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle> getBundleListList() {
         if (bundleListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class GroupLinkAllNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public int getBundleListCount() {
         if (bundleListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class GroupLinkAllNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle getBundleList(int index) {
         if (bundleListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class GroupLinkAllNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder setBundleList(
           int index, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle value) {
@@ -585,7 +583,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder setBundleList(
           int index, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder addBundleList(emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle value) {
         if (bundleListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder addBundleList(
           int index, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle value) {
@@ -632,7 +630,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder addBundleList(
           emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder addBundleList(
           int index, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder addAllBundleList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle> values) {
@@ -675,7 +673,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder clearBundleList() {
         if (bundleListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public Builder removeBundleList(int index) {
         if (bundleListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class GroupLinkAllNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder getBundleListBuilder(
           int index) {
         return getBundleListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder getBundleListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class GroupLinkAllNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundleOrBuilder> 
            getBundleListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class GroupLinkAllNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder addBundleListBuilder() {
         return getBundleListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.getDefaultInstance());
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder addBundleListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class GroupLinkAllNotifyOuterClass {
             index, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.getDefaultInstance());
       }
       /**
-       * <code>repeated .GroupLinkBundle bundle_list = 4;</code>
+       * <code>repeated .GroupLinkBundle bundle_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder> 
            getBundleListBuilderList() {
@@ -833,7 +831,7 @@ public final class GroupLinkAllNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GroupLinkAllNotify.proto\032\025GroupLinkBun" +
       "dle.proto\";\n\022GroupLinkAllNotify\022%\n\013bundl" +
-      "e_list\030\004 \003(\0132\020.GroupLinkBundleB\033\n\031emu.gr" +
+      "e_list\030\017 \003(\0132\020.GroupLinkBundleB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

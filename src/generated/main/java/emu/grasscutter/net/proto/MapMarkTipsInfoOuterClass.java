@@ -19,32 +19,52 @@ public final class MapMarkTipsInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @return A list containing the pointIdList.
+     */
+    java.util.List<java.lang.Integer> getPointIdListList();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @return The count of pointIdList.
+     */
+    int getPointIdListCount();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The pointIdList at the given index.
+     */
+    int getPointIdList(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.MapMarkTipsType tips_type = 1;</code>
      * @return The enum numeric value on the wire for tipsType.
      */
     int getTipsTypeValue();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.MapMarkTipsType tips_type = 1;</code>
      * @return The tipsType.
      */
     emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType getTipsType();
-
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @return A list containing the aCFMNOOCDCB.
-     */
-    java.util.List<java.lang.Integer> getACFMNOOCDCBList();
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @return The count of aCFMNOOCDCB.
-     */
-    int getACFMNOOCDCBCount();
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @param index The index of the element to return.
-     * @return The aCFMNOOCDCB at the given index.
-     */
-    int getACFMNOOCDCB(int index);
   }
   /**
    * Protobuf type {@code MapMarkTipsInfo}
@@ -59,8 +79,8 @@ public final class MapMarkTipsInfoOuterClass {
       super(builder);
     }
     private MapMarkTipsInfo() {
+      pointIdList_ = emptyIntList();
       tipsType_ = 0;
-      aCFMNOOCDCB_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -102,21 +122,21 @@ public final class MapMarkTipsInfoOuterClass {
             }
             case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aCFMNOOCDCB_ = newIntList();
+                pointIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              aCFMNOOCDCB_.addInt(input.readUInt32());
+              pointIdList_.addInt(input.readUInt32());
               break;
             }
             case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                aCFMNOOCDCB_ = newIntList();
+                pointIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                aCFMNOOCDCB_.addInt(input.readUInt32());
+                pointIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -137,7 +157,7 @@ public final class MapMarkTipsInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          aCFMNOOCDCB_.makeImmutable(); // C
+          pointIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -156,9 +176,53 @@ public final class MapMarkTipsInfoOuterClass {
               emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo.class, emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo.Builder.class);
     }
 
+    public static final int POINT_ID_LIST_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList pointIdList_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @return A list containing the pointIdList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getPointIdListList() {
+      return pointIdList_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @return The count of pointIdList.
+     */
+    public int getPointIdListCount() {
+      return pointIdList_.size();
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 point_id_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The pointIdList at the given index.
+     */
+    public int getPointIdList(int index) {
+      return pointIdList_.getInt(index);
+    }
+    private int pointIdListMemoizedSerializedSize = -1;
+
     public static final int TIPS_TYPE_FIELD_NUMBER = 1;
     private int tipsType_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.MapMarkTipsType tips_type = 1;</code>
      * @return The enum numeric value on the wire for tipsType.
      */
@@ -166,6 +230,10 @@ public final class MapMarkTipsInfoOuterClass {
       return tipsType_;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.MapMarkTipsType tips_type = 1;</code>
      * @return The tipsType.
      */
@@ -174,34 +242,6 @@ public final class MapMarkTipsInfoOuterClass {
       emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType result = emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.valueOf(tipsType_);
       return result == null ? emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.UNRECOGNIZED : result;
     }
-
-    public static final int ACFMNOOCDCB_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList aCFMNOOCDCB_;
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @return A list containing the aCFMNOOCDCB.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getACFMNOOCDCBList() {
-      return aCFMNOOCDCB_;
-    }
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @return The count of aCFMNOOCDCB.
-     */
-    public int getACFMNOOCDCBCount() {
-      return aCFMNOOCDCB_.size();
-    }
-    /**
-     * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-     * @param index The index of the element to return.
-     * @return The aCFMNOOCDCB at the given index.
-     */
-    public int getACFMNOOCDCB(int index) {
-      return aCFMNOOCDCB_.getInt(index);
-    }
-    private int aCFMNOOCDCBMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -218,15 +258,15 @@ public final class MapMarkTipsInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (tipsType_ != emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.MARK_TIPS_DUNGEON_ELEMENT_TRIAL.getNumber()) {
+      if (tipsType_ != emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.KEDHJCFMPJH_MARK_TIPS_DUNGEON_ELEMENT_TRIAL.getNumber()) {
         output.writeEnum(1, tipsType_);
       }
-      if (getACFMNOOCDCBList().size() > 0) {
+      if (getPointIdListList().size() > 0) {
         output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(aCFMNOOCDCBMemoizedSerializedSize);
+        output.writeUInt32NoTag(pointIdListMemoizedSerializedSize);
       }
-      for (int i = 0; i < aCFMNOOCDCB_.size(); i++) {
-        output.writeUInt32NoTag(aCFMNOOCDCB_.getInt(i));
+      for (int i = 0; i < pointIdList_.size(); i++) {
+        output.writeUInt32NoTag(pointIdList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -237,23 +277,23 @@ public final class MapMarkTipsInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (tipsType_ != emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.MARK_TIPS_DUNGEON_ELEMENT_TRIAL.getNumber()) {
+      if (tipsType_ != emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.KEDHJCFMPJH_MARK_TIPS_DUNGEON_ELEMENT_TRIAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, tipsType_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < aCFMNOOCDCB_.size(); i++) {
+        for (int i = 0; i < pointIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(aCFMNOOCDCB_.getInt(i));
+            .computeUInt32SizeNoTag(pointIdList_.getInt(i));
         }
         size += dataSize;
-        if (!getACFMNOOCDCBList().isEmpty()) {
+        if (!getPointIdListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        aCFMNOOCDCBMemoizedSerializedSize = dataSize;
+        pointIdListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -270,9 +310,9 @@ public final class MapMarkTipsInfoOuterClass {
       }
       emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo other = (emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo) obj;
 
+      if (!getPointIdListList()
+          .equals(other.getPointIdListList())) return false;
       if (tipsType_ != other.tipsType_) return false;
-      if (!getACFMNOOCDCBList()
-          .equals(other.getACFMNOOCDCBList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -284,12 +324,12 @@ public final class MapMarkTipsInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getPointIdListCount() > 0) {
+        hash = (37 * hash) + POINT_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPointIdListList().hashCode();
+      }
       hash = (37 * hash) + TIPS_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + tipsType_;
-      if (getACFMNOOCDCBCount() > 0) {
-        hash = (37 * hash) + ACFMNOOCDCB_FIELD_NUMBER;
-        hash = (53 * hash) + getACFMNOOCDCBList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -423,10 +463,10 @@ public final class MapMarkTipsInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        pointIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         tipsType_ = 0;
 
-        aCFMNOOCDCB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -454,12 +494,12 @@ public final class MapMarkTipsInfoOuterClass {
       public emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo buildPartial() {
         emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo result = new emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo(this);
         int from_bitField0_ = bitField0_;
-        result.tipsType_ = tipsType_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          aCFMNOOCDCB_.makeImmutable();
+          pointIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.aCFMNOOCDCB_ = aCFMNOOCDCB_;
+        result.pointIdList_ = pointIdList_;
+        result.tipsType_ = tipsType_;
         onBuilt();
         return result;
       }
@@ -508,18 +548,18 @@ public final class MapMarkTipsInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo other) {
         if (other == emu.grasscutter.net.proto.MapMarkTipsInfoOuterClass.MapMarkTipsInfo.getDefaultInstance()) return this;
-        if (other.tipsType_ != 0) {
-          setTipsTypeValue(other.getTipsTypeValue());
-        }
-        if (!other.aCFMNOOCDCB_.isEmpty()) {
-          if (aCFMNOOCDCB_.isEmpty()) {
-            aCFMNOOCDCB_ = other.aCFMNOOCDCB_;
+        if (!other.pointIdList_.isEmpty()) {
+          if (pointIdList_.isEmpty()) {
+            pointIdList_ = other.pointIdList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureACFMNOOCDCBIsMutable();
-            aCFMNOOCDCB_.addAll(other.aCFMNOOCDCB_);
+            ensurePointIdListIsMutable();
+            pointIdList_.addAll(other.pointIdList_);
           }
           onChanged();
+        }
+        if (other.tipsType_ != 0) {
+          setTipsTypeValue(other.getTipsTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -551,8 +591,119 @@ public final class MapMarkTipsInfoOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList pointIdList_ = emptyIntList();
+      private void ensurePointIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          pointIdList_ = mutableCopy(pointIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @return A list containing the pointIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getPointIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(pointIdList_) : pointIdList_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @return The count of pointIdList.
+       */
+      public int getPointIdListCount() {
+        return pointIdList_.size();
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The pointIdList at the given index.
+       */
+      public int getPointIdList(int index) {
+        return pointIdList_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The pointIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointIdList(
+          int index, int value) {
+        ensurePointIdListIsMutable();
+        pointIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @param value The pointIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addPointIdList(int value) {
+        ensurePointIdListIsMutable();
+        pointIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @param values The pointIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllPointIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensurePointIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, pointIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 point_id_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointIdList() {
+        pointIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private int tipsType_ = 0;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.MapMarkTipsType tips_type = 1;</code>
        * @return The enum numeric value on the wire for tipsType.
        */
@@ -560,6 +711,10 @@ public final class MapMarkTipsInfoOuterClass {
         return tipsType_;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.MapMarkTipsType tips_type = 1;</code>
        * @param value The enum numeric value on the wire for tipsType to set.
        * @return This builder for chaining.
@@ -571,6 +726,10 @@ public final class MapMarkTipsInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.MapMarkTipsType tips_type = 1;</code>
        * @return The tipsType.
        */
@@ -581,6 +740,10 @@ public final class MapMarkTipsInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.MapMarkTipsType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.MapMarkTipsType tips_type = 1;</code>
        * @param value The tipsType to set.
        * @return This builder for chaining.
@@ -595,91 +758,16 @@ public final class MapMarkTipsInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.MapMarkTipsType tips_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTipsType() {
         
         tipsType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList aCFMNOOCDCB_ = emptyIntList();
-      private void ensureACFMNOOCDCBIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          aCFMNOOCDCB_ = mutableCopy(aCFMNOOCDCB_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @return A list containing the aCFMNOOCDCB.
-       */
-      public java.util.List<java.lang.Integer>
-          getACFMNOOCDCBList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(aCFMNOOCDCB_) : aCFMNOOCDCB_;
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @return The count of aCFMNOOCDCB.
-       */
-      public int getACFMNOOCDCBCount() {
-        return aCFMNOOCDCB_.size();
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @param index The index of the element to return.
-       * @return The aCFMNOOCDCB at the given index.
-       */
-      public int getACFMNOOCDCB(int index) {
-        return aCFMNOOCDCB_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @param index The index to set the value at.
-       * @param value The aCFMNOOCDCB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setACFMNOOCDCB(
-          int index, int value) {
-        ensureACFMNOOCDCBIsMutable();
-        aCFMNOOCDCB_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @param value The aCFMNOOCDCB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addACFMNOOCDCB(int value) {
-        ensureACFMNOOCDCBIsMutable();
-        aCFMNOOCDCB_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @param values The aCFMNOOCDCB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllACFMNOOCDCB(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureACFMNOOCDCBIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, aCFMNOOCDCB_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 ACFMNOOCDCB = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearACFMNOOCDCB() {
-        aCFMNOOCDCB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -751,9 +839,10 @@ public final class MapMarkTipsInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025MapMarkTipsInfo.proto\032\025MapMarkTipsType" +
-      ".proto\"K\n\017MapMarkTipsInfo\022#\n\ttips_type\030\001" +
-      " \001(\0162\020.MapMarkTipsType\022\023\n\013ACFMNOOCDCB\030\002 " +
-      "\003(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      ".proto\"M\n\017MapMarkTipsInfo\022\025\n\rpoint_id_li" +
+      "st\030\002 \003(\r\022#\n\ttips_type\030\001 \001(\0162\020.MapMarkTip" +
+      "sTypeB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -765,7 +854,7 @@ public final class MapMarkTipsInfoOuterClass {
     internal_static_MapMarkTipsInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MapMarkTipsInfo_descriptor,
-        new java.lang.String[] { "TipsType", "ACFMNOOCDCB", });
+        new java.lang.String[] { "PointIdList", "TipsType", });
     emu.grasscutter.net.proto.MapMarkTipsTypeOuterClass.getDescriptor();
   }
 

@@ -19,40 +19,56 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool AOPLIONFLEF = 6;</code>
-     * @return The aOPLIONFLEF.
-     */
-    boolean getAOPLIONFLEF();
-
-    /**
-     * <code>uint32 skill_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 skill_id = 4;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>bool KCOIOILFEJG = 2;</code>
-     * @return The kCOIOILFEJG.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LDBNPBHMEAI = 14;</code>
+     * @return The lDBNPBHMEAI.
      */
-    boolean getKCOIOILFEJG();
+    boolean getLDBNPBHMEAI();
 
     /**
-     * <code>bool OMHCFDIDJPC = 3;</code>
-     * @return The oMHCFDIDJPC.
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool KPIDBADOAJL = 10;</code>
+     * @return The kPIDBADOAJL.
      */
-    boolean getOMHCFDIDJPC();
+    boolean getKPIDBADOAJL();
 
     /**
-     * <code>bool OIOLEBJAMEH = 13;</code>
-     * @return The oIOLEBJAMEH.
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool KPEKNCJKGJD = 13;</code>
+     * @return The kPEKNCJKGJD.
      */
-    boolean getOIOLEBJAMEH();
+    boolean getKPEKNCJKGJD();
+
+    /**
+     * <pre>
+     * offset: 39
+     * </pre>
+     *
+     * <code>bool PMEMNLFBGCO = 8;</code>
+     * @return The pMEMNLFBGCO.
+     */
+    boolean getPMEMNLFBGCO();
   }
   /**
-   * <pre>
-   * Obf: PKECKJELEOK
-   * </pre>
-   *
    * Protobuf type {@code AISnapshotEntitySkillCycle}
    */
   public static final class AISnapshotEntitySkillCycle extends
@@ -97,29 +113,29 @@ public final class AISnapshotEntitySkillCycleOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              kCOIOILFEJG_ = input.readBool();
-              break;
-            }
-            case 24: {
-
-              oMHCFDIDJPC_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              aOPLIONFLEF_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 32: {
 
               skillId_ = input.readUInt32();
               break;
             }
+            case 64: {
+
+              pMEMNLFBGCO_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              kPIDBADOAJL_ = input.readBool();
+              break;
+            }
             case 104: {
 
-              oIOLEBJAMEH_ = input.readBool();
+              kPEKNCJKGJD_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              lDBNPBHMEAI_ = input.readBool();
               break;
             }
             default: {
@@ -154,21 +170,14 @@ public final class AISnapshotEntitySkillCycleOuterClass {
               emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.class, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder.class);
     }
 
-    public static final int AOPLIONFLEF_FIELD_NUMBER = 6;
-    private boolean aOPLIONFLEF_;
-    /**
-     * <code>bool AOPLIONFLEF = 6;</code>
-     * @return The aOPLIONFLEF.
-     */
-    @java.lang.Override
-    public boolean getAOPLIONFLEF() {
-      return aOPLIONFLEF_;
-    }
-
-    public static final int SKILL_ID_FIELD_NUMBER = 8;
+    public static final int SKILL_ID_FIELD_NUMBER = 4;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 skill_id = 4;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -176,37 +185,64 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       return skillId_;
     }
 
-    public static final int KCOIOILFEJG_FIELD_NUMBER = 2;
-    private boolean kCOIOILFEJG_;
+    public static final int LDBNPBHMEAI_FIELD_NUMBER = 14;
+    private boolean lDBNPBHMEAI_;
     /**
-     * <code>bool KCOIOILFEJG = 2;</code>
-     * @return The kCOIOILFEJG.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool LDBNPBHMEAI = 14;</code>
+     * @return The lDBNPBHMEAI.
      */
     @java.lang.Override
-    public boolean getKCOIOILFEJG() {
-      return kCOIOILFEJG_;
+    public boolean getLDBNPBHMEAI() {
+      return lDBNPBHMEAI_;
     }
 
-    public static final int OMHCFDIDJPC_FIELD_NUMBER = 3;
-    private boolean oMHCFDIDJPC_;
+    public static final int KPIDBADOAJL_FIELD_NUMBER = 10;
+    private boolean kPIDBADOAJL_;
     /**
-     * <code>bool OMHCFDIDJPC = 3;</code>
-     * @return The oMHCFDIDJPC.
+     * <pre>
+     * offset: 37
+     * </pre>
+     *
+     * <code>bool KPIDBADOAJL = 10;</code>
+     * @return The kPIDBADOAJL.
      */
     @java.lang.Override
-    public boolean getOMHCFDIDJPC() {
-      return oMHCFDIDJPC_;
+    public boolean getKPIDBADOAJL() {
+      return kPIDBADOAJL_;
     }
 
-    public static final int OIOLEBJAMEH_FIELD_NUMBER = 13;
-    private boolean oIOLEBJAMEH_;
+    public static final int KPEKNCJKGJD_FIELD_NUMBER = 13;
+    private boolean kPEKNCJKGJD_;
     /**
-     * <code>bool OIOLEBJAMEH = 13;</code>
-     * @return The oIOLEBJAMEH.
+     * <pre>
+     * offset: 38
+     * </pre>
+     *
+     * <code>bool KPEKNCJKGJD = 13;</code>
+     * @return The kPEKNCJKGJD.
      */
     @java.lang.Override
-    public boolean getOIOLEBJAMEH() {
-      return oIOLEBJAMEH_;
+    public boolean getKPEKNCJKGJD() {
+      return kPEKNCJKGJD_;
+    }
+
+    public static final int PMEMNLFBGCO_FIELD_NUMBER = 8;
+    private boolean pMEMNLFBGCO_;
+    /**
+     * <pre>
+     * offset: 39
+     * </pre>
+     *
+     * <code>bool PMEMNLFBGCO = 8;</code>
+     * @return The pMEMNLFBGCO.
+     */
+    @java.lang.Override
+    public boolean getPMEMNLFBGCO() {
+      return pMEMNLFBGCO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,20 +259,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kCOIOILFEJG_ != false) {
-        output.writeBool(2, kCOIOILFEJG_);
-      }
-      if (oMHCFDIDJPC_ != false) {
-        output.writeBool(3, oMHCFDIDJPC_);
-      }
-      if (aOPLIONFLEF_ != false) {
-        output.writeBool(6, aOPLIONFLEF_);
-      }
       if (skillId_ != 0) {
-        output.writeUInt32(8, skillId_);
+        output.writeUInt32(4, skillId_);
       }
-      if (oIOLEBJAMEH_ != false) {
-        output.writeBool(13, oIOLEBJAMEH_);
+      if (pMEMNLFBGCO_ != false) {
+        output.writeBool(8, pMEMNLFBGCO_);
+      }
+      if (kPIDBADOAJL_ != false) {
+        output.writeBool(10, kPIDBADOAJL_);
+      }
+      if (kPEKNCJKGJD_ != false) {
+        output.writeBool(13, kPEKNCJKGJD_);
+      }
+      if (lDBNPBHMEAI_ != false) {
+        output.writeBool(14, lDBNPBHMEAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,25 +283,25 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kCOIOILFEJG_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, kCOIOILFEJG_);
-      }
-      if (oMHCFDIDJPC_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, oMHCFDIDJPC_);
-      }
-      if (aOPLIONFLEF_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, aOPLIONFLEF_);
-      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, skillId_);
+          .computeUInt32Size(4, skillId_);
       }
-      if (oIOLEBJAMEH_ != false) {
+      if (pMEMNLFBGCO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, oIOLEBJAMEH_);
+          .computeBoolSize(8, pMEMNLFBGCO_);
+      }
+      if (kPIDBADOAJL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, kPIDBADOAJL_);
+      }
+      if (kPEKNCJKGJD_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, kPEKNCJKGJD_);
+      }
+      if (lDBNPBHMEAI_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, lDBNPBHMEAI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,16 +318,16 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       }
       emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle other = (emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle) obj;
 
-      if (getAOPLIONFLEF()
-          != other.getAOPLIONFLEF()) return false;
       if (getSkillId()
           != other.getSkillId()) return false;
-      if (getKCOIOILFEJG()
-          != other.getKCOIOILFEJG()) return false;
-      if (getOMHCFDIDJPC()
-          != other.getOMHCFDIDJPC()) return false;
-      if (getOIOLEBJAMEH()
-          != other.getOIOLEBJAMEH()) return false;
+      if (getLDBNPBHMEAI()
+          != other.getLDBNPBHMEAI()) return false;
+      if (getKPIDBADOAJL()
+          != other.getKPIDBADOAJL()) return false;
+      if (getKPEKNCJKGJD()
+          != other.getKPEKNCJKGJD()) return false;
+      if (getPMEMNLFBGCO()
+          != other.getPMEMNLFBGCO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,20 +339,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AOPLIONFLEF_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAOPLIONFLEF());
       hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillId();
-      hash = (37 * hash) + KCOIOILFEJG_FIELD_NUMBER;
+      hash = (37 * hash) + LDBNPBHMEAI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKCOIOILFEJG());
-      hash = (37 * hash) + OMHCFDIDJPC_FIELD_NUMBER;
+          getLDBNPBHMEAI());
+      hash = (37 * hash) + KPIDBADOAJL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOMHCFDIDJPC());
-      hash = (37 * hash) + OIOLEBJAMEH_FIELD_NUMBER;
+          getKPIDBADOAJL());
+      hash = (37 * hash) + KPEKNCJKGJD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOIOLEBJAMEH());
+          getKPEKNCJKGJD());
+      hash = (37 * hash) + PMEMNLFBGCO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPMEMNLFBGCO());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,10 +449,6 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PKECKJELEOK
-     * </pre>
-     *
      * Protobuf type {@code AISnapshotEntitySkillCycle}
      */
     public static final class Builder extends
@@ -454,15 +486,15 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aOPLIONFLEF_ = false;
-
         skillId_ = 0;
 
-        kCOIOILFEJG_ = false;
+        lDBNPBHMEAI_ = false;
 
-        oMHCFDIDJPC_ = false;
+        kPIDBADOAJL_ = false;
 
-        oIOLEBJAMEH_ = false;
+        kPEKNCJKGJD_ = false;
+
+        pMEMNLFBGCO_ = false;
 
         return this;
       }
@@ -490,11 +522,11 @@ public final class AISnapshotEntitySkillCycleOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle buildPartial() {
         emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle result = new emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle(this);
-        result.aOPLIONFLEF_ = aOPLIONFLEF_;
         result.skillId_ = skillId_;
-        result.kCOIOILFEJG_ = kCOIOILFEJG_;
-        result.oMHCFDIDJPC_ = oMHCFDIDJPC_;
-        result.oIOLEBJAMEH_ = oIOLEBJAMEH_;
+        result.lDBNPBHMEAI_ = lDBNPBHMEAI_;
+        result.kPIDBADOAJL_ = kPIDBADOAJL_;
+        result.kPEKNCJKGJD_ = kPEKNCJKGJD_;
+        result.pMEMNLFBGCO_ = pMEMNLFBGCO_;
         onBuilt();
         return result;
       }
@@ -543,20 +575,20 @@ public final class AISnapshotEntitySkillCycleOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle other) {
         if (other == emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance()) return this;
-        if (other.getAOPLIONFLEF() != false) {
-          setAOPLIONFLEF(other.getAOPLIONFLEF());
-        }
         if (other.getSkillId() != 0) {
           setSkillId(other.getSkillId());
         }
-        if (other.getKCOIOILFEJG() != false) {
-          setKCOIOILFEJG(other.getKCOIOILFEJG());
+        if (other.getLDBNPBHMEAI() != false) {
+          setLDBNPBHMEAI(other.getLDBNPBHMEAI());
         }
-        if (other.getOMHCFDIDJPC() != false) {
-          setOMHCFDIDJPC(other.getOMHCFDIDJPC());
+        if (other.getKPIDBADOAJL() != false) {
+          setKPIDBADOAJL(other.getKPIDBADOAJL());
         }
-        if (other.getOIOLEBJAMEH() != false) {
-          setOIOLEBJAMEH(other.getOIOLEBJAMEH());
+        if (other.getKPEKNCJKGJD() != false) {
+          setKPEKNCJKGJD(other.getKPEKNCJKGJD());
+        }
+        if (other.getPMEMNLFBGCO() != false) {
+          setPMEMNLFBGCO(other.getPMEMNLFBGCO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,40 +619,13 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return this;
       }
 
-      private boolean aOPLIONFLEF_ ;
-      /**
-       * <code>bool AOPLIONFLEF = 6;</code>
-       * @return The aOPLIONFLEF.
-       */
-      @java.lang.Override
-      public boolean getAOPLIONFLEF() {
-        return aOPLIONFLEF_;
-      }
-      /**
-       * <code>bool AOPLIONFLEF = 6;</code>
-       * @param value The aOPLIONFLEF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAOPLIONFLEF(boolean value) {
-        
-        aOPLIONFLEF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool AOPLIONFLEF = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAOPLIONFLEF() {
-        
-        aOPLIONFLEF_ = false;
-        onChanged();
-        return this;
-      }
-
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 4;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -628,7 +633,11 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 4;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -639,7 +648,11 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 skill_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -649,95 +662,174 @@ public final class AISnapshotEntitySkillCycleOuterClass {
         return this;
       }
 
-      private boolean kCOIOILFEJG_ ;
+      private boolean lDBNPBHMEAI_ ;
       /**
-       * <code>bool KCOIOILFEJG = 2;</code>
-       * @return The kCOIOILFEJG.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LDBNPBHMEAI = 14;</code>
+       * @return The lDBNPBHMEAI.
        */
       @java.lang.Override
-      public boolean getKCOIOILFEJG() {
-        return kCOIOILFEJG_;
+      public boolean getLDBNPBHMEAI() {
+        return lDBNPBHMEAI_;
       }
       /**
-       * <code>bool KCOIOILFEJG = 2;</code>
-       * @param value The kCOIOILFEJG to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LDBNPBHMEAI = 14;</code>
+       * @param value The lDBNPBHMEAI to set.
        * @return This builder for chaining.
        */
-      public Builder setKCOIOILFEJG(boolean value) {
+      public Builder setLDBNPBHMEAI(boolean value) {
         
-        kCOIOILFEJG_ = value;
+        lDBNPBHMEAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool KCOIOILFEJG = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool LDBNPBHMEAI = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKCOIOILFEJG() {
+      public Builder clearLDBNPBHMEAI() {
         
-        kCOIOILFEJG_ = false;
+        lDBNPBHMEAI_ = false;
         onChanged();
         return this;
       }
 
-      private boolean oMHCFDIDJPC_ ;
+      private boolean kPIDBADOAJL_ ;
       /**
-       * <code>bool OMHCFDIDJPC = 3;</code>
-       * @return The oMHCFDIDJPC.
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool KPIDBADOAJL = 10;</code>
+       * @return The kPIDBADOAJL.
        */
       @java.lang.Override
-      public boolean getOMHCFDIDJPC() {
-        return oMHCFDIDJPC_;
+      public boolean getKPIDBADOAJL() {
+        return kPIDBADOAJL_;
       }
       /**
-       * <code>bool OMHCFDIDJPC = 3;</code>
-       * @param value The oMHCFDIDJPC to set.
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool KPIDBADOAJL = 10;</code>
+       * @param value The kPIDBADOAJL to set.
        * @return This builder for chaining.
        */
-      public Builder setOMHCFDIDJPC(boolean value) {
+      public Builder setKPIDBADOAJL(boolean value) {
         
-        oMHCFDIDJPC_ = value;
+        kPIDBADOAJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OMHCFDIDJPC = 3;</code>
+       * <pre>
+       * offset: 37
+       * </pre>
+       *
+       * <code>bool KPIDBADOAJL = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOMHCFDIDJPC() {
+      public Builder clearKPIDBADOAJL() {
         
-        oMHCFDIDJPC_ = false;
+        kPIDBADOAJL_ = false;
         onChanged();
         return this;
       }
 
-      private boolean oIOLEBJAMEH_ ;
+      private boolean kPEKNCJKGJD_ ;
       /**
-       * <code>bool OIOLEBJAMEH = 13;</code>
-       * @return The oIOLEBJAMEH.
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool KPEKNCJKGJD = 13;</code>
+       * @return The kPEKNCJKGJD.
        */
       @java.lang.Override
-      public boolean getOIOLEBJAMEH() {
-        return oIOLEBJAMEH_;
+      public boolean getKPEKNCJKGJD() {
+        return kPEKNCJKGJD_;
       }
       /**
-       * <code>bool OIOLEBJAMEH = 13;</code>
-       * @param value The oIOLEBJAMEH to set.
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool KPEKNCJKGJD = 13;</code>
+       * @param value The kPEKNCJKGJD to set.
        * @return This builder for chaining.
        */
-      public Builder setOIOLEBJAMEH(boolean value) {
+      public Builder setKPEKNCJKGJD(boolean value) {
         
-        oIOLEBJAMEH_ = value;
+        kPEKNCJKGJD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OIOLEBJAMEH = 13;</code>
+       * <pre>
+       * offset: 38
+       * </pre>
+       *
+       * <code>bool KPEKNCJKGJD = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOIOLEBJAMEH() {
+      public Builder clearKPEKNCJKGJD() {
         
-        oIOLEBJAMEH_ = false;
+        kPEKNCJKGJD_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean pMEMNLFBGCO_ ;
+      /**
+       * <pre>
+       * offset: 39
+       * </pre>
+       *
+       * <code>bool PMEMNLFBGCO = 8;</code>
+       * @return The pMEMNLFBGCO.
+       */
+      @java.lang.Override
+      public boolean getPMEMNLFBGCO() {
+        return pMEMNLFBGCO_;
+      }
+      /**
+       * <pre>
+       * offset: 39
+       * </pre>
+       *
+       * <code>bool PMEMNLFBGCO = 8;</code>
+       * @param value The pMEMNLFBGCO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPMEMNLFBGCO(boolean value) {
+        
+        pMEMNLFBGCO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 39
+       * </pre>
+       *
+       * <code>bool PMEMNLFBGCO = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPMEMNLFBGCO() {
+        
+        pMEMNLFBGCO_ = false;
         onChanged();
         return this;
       }
@@ -809,10 +901,10 @@ public final class AISnapshotEntitySkillCycleOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AISnapshotEntitySkillCycle.proto\"\202\001\n\032A" +
-      "ISnapshotEntitySkillCycle\022\023\n\013AOPLIONFLEF" +
-      "\030\006 \001(\010\022\020\n\010skill_id\030\010 \001(\r\022\023\n\013KCOIOILFEJG\030" +
-      "\002 \001(\010\022\023\n\013OMHCFDIDJPC\030\003 \001(\010\022\023\n\013OIOLEBJAME" +
-      "H\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "ISnapshotEntitySkillCycle\022\020\n\010skill_id\030\004 " +
+      "\001(\r\022\023\n\013LDBNPBHMEAI\030\016 \001(\010\022\023\n\013KPIDBADOAJL\030" +
+      "\n \001(\010\022\023\n\013KPEKNCJKGJD\030\r \001(\010\022\023\n\013PMEMNLFBGC" +
+      "O\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -824,7 +916,7 @@ public final class AISnapshotEntitySkillCycleOuterClass {
     internal_static_AISnapshotEntitySkillCycle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AISnapshotEntitySkillCycle_descriptor,
-        new java.lang.String[] { "AOPLIONFLEF", "SkillId", "KCOIOILFEJG", "OMHCFDIDJPC", "OIOLEBJAMEH", });
+        new java.lang.String[] { "SkillId", "LDBNPBHMEAI", "KPIDBADOAJL", "KPEKNCJKGJD", "PMEMNLFBGCO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

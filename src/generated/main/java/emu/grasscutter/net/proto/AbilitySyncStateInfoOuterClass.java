@@ -19,126 +19,230 @@ public final class AbilitySyncStateInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier> 
         getAppliedModifiersList();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier getAppliedModifiers(int index);
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     int getAppliedModifiersCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifierOrBuilder> 
         getAppliedModifiersOrBuilderList();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifierOrBuilder getAppliedModifiersOrBuilder(
         int index);
 
     /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> 
-        getMixinRecoverInfosList();
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index);
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    int getMixinRecoverInfosCount();
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
-        getMixinRecoverInfosOrBuilderList();
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
-        int index);
-
-    /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> 
         getDynamicValueMapList();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry getDynamicValueMap(int index);
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     int getDynamicValueMapCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> 
         getDynamicValueMapOrBuilderList();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder getDynamicValueMapOrBuilder(
         int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> 
         getSgvDynamicValueMapList();
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry getSgvDynamicValueMap(int index);
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     int getSgvDynamicValueMapCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> 
         getSgvDynamicValueMapOrBuilderList();
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder getSgvDynamicValueMapOrBuilder(
         int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility> 
         getAppliedAbilitiesList();
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility getAppliedAbilities(int index);
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     int getAppliedAbilitiesCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> 
         getAppliedAbilitiesOrBuilderList();
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder getAppliedAbilitiesOrBuilder(
         int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> 
+        getMixinRecoverInfosList();
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index);
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    int getMixinRecoverInfosCount();
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
+        getMixinRecoverInfosOrBuilderList();
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
      * <code>bool is_inited = 1;</code>
      * @return The isInited.
      */
@@ -158,10 +262,10 @@ public final class AbilitySyncStateInfoOuterClass {
     }
     private AbilitySyncStateInfo() {
       appliedModifiers_ = java.util.Collections.emptyList();
-      mixinRecoverInfos_ = java.util.Collections.emptyList();
       dynamicValueMap_ = java.util.Collections.emptyList();
       sgvDynamicValueMap_ = java.util.Collections.emptyList();
       appliedAbilities_ = java.util.Collections.emptyList();
+      mixinRecoverInfos_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -201,18 +305,18 @@ public final class AbilitySyncStateInfoOuterClass {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 dynamicValueMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               dynamicValueMap_.add(
                   input.readMessage(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.parser(), extensionRegistry));
               break;
             }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 appliedAbilities_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000008;
               }
               appliedAbilities_.add(
                   input.readMessage(emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.parser(), extensionRegistry));
@@ -228,18 +332,18 @@ public final class AbilitySyncStateInfoOuterClass {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 mixinRecoverInfos_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000010;
               }
               mixinRecoverInfos_.add(
                   input.readMessage(emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.parser(), extensionRegistry));
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 sgvDynamicValueMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               sgvDynamicValueMap_.add(
                   input.readMessage(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.parser(), extensionRegistry));
@@ -260,19 +364,19 @@ public final class AbilitySyncStateInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           dynamicValueMap_ = java.util.Collections.unmodifiableList(dynamicValueMap_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           appliedAbilities_ = java.util.Collections.unmodifiableList(appliedAbilities_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           appliedModifiers_ = java.util.Collections.unmodifiableList(appliedModifiers_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           mixinRecoverInfos_ = java.util.Collections.unmodifiableList(mixinRecoverInfos_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           sgvDynamicValueMap_ = java.util.Collections.unmodifiableList(sgvDynamicValueMap_);
         }
         this.unknownFields = unknownFields.build();
@@ -295,6 +399,10 @@ public final class AbilitySyncStateInfoOuterClass {
     public static final int APPLIED_MODIFIERS_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier> appliedModifiers_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     @java.lang.Override
@@ -302,6 +410,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedModifiers_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     @java.lang.Override
@@ -310,6 +422,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedModifiers_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     @java.lang.Override
@@ -317,6 +433,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedModifiers_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     @java.lang.Override
@@ -324,6 +444,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedModifiers_.get(index);
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
      */
     @java.lang.Override
@@ -332,49 +456,13 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedModifiers_.get(index);
     }
 
-    public static final int MIXIN_RECOVER_INFOS_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> mixinRecoverInfos_;
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> getMixinRecoverInfosList() {
-      return mixinRecoverInfos_;
-    }
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
-        getMixinRecoverInfosOrBuilderList() {
-      return mixinRecoverInfos_;
-    }
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    @java.lang.Override
-    public int getMixinRecoverInfosCount() {
-      return mixinRecoverInfos_.size();
-    }
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index) {
-      return mixinRecoverInfos_.get(index);
-    }
-    /**
-     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
-        int index) {
-      return mixinRecoverInfos_.get(index);
-    }
-
     public static final int DYNAMIC_VALUE_MAP_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> dynamicValueMap_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     @java.lang.Override
@@ -382,6 +470,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return dynamicValueMap_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     @java.lang.Override
@@ -390,6 +482,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return dynamicValueMap_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     @java.lang.Override
@@ -397,6 +493,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return dynamicValueMap_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     @java.lang.Override
@@ -404,6 +504,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return dynamicValueMap_.get(index);
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
      */
     @java.lang.Override
@@ -415,6 +519,10 @@ public final class AbilitySyncStateInfoOuterClass {
     public static final int SGV_DYNAMIC_VALUE_MAP_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> sgvDynamicValueMap_;
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     @java.lang.Override
@@ -422,6 +530,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return sgvDynamicValueMap_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     @java.lang.Override
@@ -430,6 +542,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return sgvDynamicValueMap_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     @java.lang.Override
@@ -437,6 +553,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return sgvDynamicValueMap_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     @java.lang.Override
@@ -444,6 +564,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return sgvDynamicValueMap_.get(index);
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
      */
     @java.lang.Override
@@ -455,6 +579,10 @@ public final class AbilitySyncStateInfoOuterClass {
     public static final int APPLIED_ABILITIES_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility> appliedAbilities_;
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     @java.lang.Override
@@ -462,6 +590,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedAbilities_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     @java.lang.Override
@@ -470,6 +602,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedAbilities_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     @java.lang.Override
@@ -477,6 +613,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedAbilities_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     @java.lang.Override
@@ -484,6 +624,10 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedAbilities_.get(index);
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
      * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
      */
     @java.lang.Override
@@ -492,9 +636,73 @@ public final class AbilitySyncStateInfoOuterClass {
       return appliedAbilities_.get(index);
     }
 
+    public static final int MIXIN_RECOVER_INFOS_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> mixinRecoverInfos_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> getMixinRecoverInfosList() {
+      return mixinRecoverInfos_;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
+        getMixinRecoverInfosOrBuilderList() {
+      return mixinRecoverInfos_;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    @java.lang.Override
+    public int getMixinRecoverInfosCount() {
+      return mixinRecoverInfos_.size();
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index) {
+      return mixinRecoverInfos_.get(index);
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
+     * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
+        int index) {
+      return mixinRecoverInfos_.get(index);
+    }
+
     public static final int IS_INITED_FIELD_NUMBER = 1;
     private boolean isInited_;
     /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
      * <code>bool is_inited = 1;</code>
      * @return The isInited.
      */
@@ -585,14 +793,14 @@ public final class AbilitySyncStateInfoOuterClass {
 
       if (!getAppliedModifiersList()
           .equals(other.getAppliedModifiersList())) return false;
-      if (!getMixinRecoverInfosList()
-          .equals(other.getMixinRecoverInfosList())) return false;
       if (!getDynamicValueMapList()
           .equals(other.getDynamicValueMapList())) return false;
       if (!getSgvDynamicValueMapList()
           .equals(other.getSgvDynamicValueMapList())) return false;
       if (!getAppliedAbilitiesList()
           .equals(other.getAppliedAbilitiesList())) return false;
+      if (!getMixinRecoverInfosList()
+          .equals(other.getMixinRecoverInfosList())) return false;
       if (getIsInited()
           != other.getIsInited()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -610,10 +818,6 @@ public final class AbilitySyncStateInfoOuterClass {
         hash = (37 * hash) + APPLIED_MODIFIERS_FIELD_NUMBER;
         hash = (53 * hash) + getAppliedModifiersList().hashCode();
       }
-      if (getMixinRecoverInfosCount() > 0) {
-        hash = (37 * hash) + MIXIN_RECOVER_INFOS_FIELD_NUMBER;
-        hash = (53 * hash) + getMixinRecoverInfosList().hashCode();
-      }
       if (getDynamicValueMapCount() > 0) {
         hash = (37 * hash) + DYNAMIC_VALUE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + getDynamicValueMapList().hashCode();
@@ -625,6 +829,10 @@ public final class AbilitySyncStateInfoOuterClass {
       if (getAppliedAbilitiesCount() > 0) {
         hash = (37 * hash) + APPLIED_ABILITIES_FIELD_NUMBER;
         hash = (53 * hash) + getAppliedAbilitiesList().hashCode();
+      }
+      if (getMixinRecoverInfosCount() > 0) {
+        hash = (37 * hash) + MIXIN_RECOVER_INFOS_FIELD_NUMBER;
+        hash = (53 * hash) + getMixinRecoverInfosList().hashCode();
       }
       hash = (37 * hash) + IS_INITED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -758,10 +966,10 @@ public final class AbilitySyncStateInfoOuterClass {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getAppliedModifiersFieldBuilder();
-          getMixinRecoverInfosFieldBuilder();
           getDynamicValueMapFieldBuilder();
           getSgvDynamicValueMapFieldBuilder();
           getAppliedAbilitiesFieldBuilder();
+          getMixinRecoverInfosFieldBuilder();
         }
       }
       @java.lang.Override
@@ -773,29 +981,29 @@ public final class AbilitySyncStateInfoOuterClass {
         } else {
           appliedModifiersBuilder_.clear();
         }
-        if (mixinRecoverInfosBuilder_ == null) {
-          mixinRecoverInfos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          mixinRecoverInfosBuilder_.clear();
-        }
         if (dynamicValueMapBuilder_ == null) {
           dynamicValueMap_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           dynamicValueMapBuilder_.clear();
         }
         if (sgvDynamicValueMapBuilder_ == null) {
           sgvDynamicValueMap_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           sgvDynamicValueMapBuilder_.clear();
         }
         if (appliedAbilitiesBuilder_ == null) {
           appliedAbilities_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
           appliedAbilitiesBuilder_.clear();
+        }
+        if (mixinRecoverInfosBuilder_ == null) {
+          mixinRecoverInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          mixinRecoverInfosBuilder_.clear();
         }
         isInited_ = false;
 
@@ -835,41 +1043,41 @@ public final class AbilitySyncStateInfoOuterClass {
         } else {
           result.appliedModifiers_ = appliedModifiersBuilder_.build();
         }
-        if (mixinRecoverInfosBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            mixinRecoverInfos_ = java.util.Collections.unmodifiableList(mixinRecoverInfos_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.mixinRecoverInfos_ = mixinRecoverInfos_;
-        } else {
-          result.mixinRecoverInfos_ = mixinRecoverInfosBuilder_.build();
-        }
         if (dynamicValueMapBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             dynamicValueMap_ = java.util.Collections.unmodifiableList(dynamicValueMap_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.dynamicValueMap_ = dynamicValueMap_;
         } else {
           result.dynamicValueMap_ = dynamicValueMapBuilder_.build();
         }
         if (sgvDynamicValueMapBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             sgvDynamicValueMap_ = java.util.Collections.unmodifiableList(sgvDynamicValueMap_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.sgvDynamicValueMap_ = sgvDynamicValueMap_;
         } else {
           result.sgvDynamicValueMap_ = sgvDynamicValueMapBuilder_.build();
         }
         if (appliedAbilitiesBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             appliedAbilities_ = java.util.Collections.unmodifiableList(appliedAbilities_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.appliedAbilities_ = appliedAbilities_;
         } else {
           result.appliedAbilities_ = appliedAbilitiesBuilder_.build();
+        }
+        if (mixinRecoverInfosBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0)) {
+            mixinRecoverInfos_ = java.util.Collections.unmodifiableList(mixinRecoverInfos_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.mixinRecoverInfos_ = mixinRecoverInfos_;
+        } else {
+          result.mixinRecoverInfos_ = mixinRecoverInfosBuilder_.build();
         }
         result.isInited_ = isInited_;
         onBuilt();
@@ -946,37 +1154,11 @@ public final class AbilitySyncStateInfoOuterClass {
             }
           }
         }
-        if (mixinRecoverInfosBuilder_ == null) {
-          if (!other.mixinRecoverInfos_.isEmpty()) {
-            if (mixinRecoverInfos_.isEmpty()) {
-              mixinRecoverInfos_ = other.mixinRecoverInfos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureMixinRecoverInfosIsMutable();
-              mixinRecoverInfos_.addAll(other.mixinRecoverInfos_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.mixinRecoverInfos_.isEmpty()) {
-            if (mixinRecoverInfosBuilder_.isEmpty()) {
-              mixinRecoverInfosBuilder_.dispose();
-              mixinRecoverInfosBuilder_ = null;
-              mixinRecoverInfos_ = other.mixinRecoverInfos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              mixinRecoverInfosBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMixinRecoverInfosFieldBuilder() : null;
-            } else {
-              mixinRecoverInfosBuilder_.addAllMessages(other.mixinRecoverInfos_);
-            }
-          }
-        }
         if (dynamicValueMapBuilder_ == null) {
           if (!other.dynamicValueMap_.isEmpty()) {
             if (dynamicValueMap_.isEmpty()) {
               dynamicValueMap_ = other.dynamicValueMap_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureDynamicValueMapIsMutable();
               dynamicValueMap_.addAll(other.dynamicValueMap_);
@@ -989,7 +1171,7 @@ public final class AbilitySyncStateInfoOuterClass {
               dynamicValueMapBuilder_.dispose();
               dynamicValueMapBuilder_ = null;
               dynamicValueMap_ = other.dynamicValueMap_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               dynamicValueMapBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getDynamicValueMapFieldBuilder() : null;
@@ -1002,7 +1184,7 @@ public final class AbilitySyncStateInfoOuterClass {
           if (!other.sgvDynamicValueMap_.isEmpty()) {
             if (sgvDynamicValueMap_.isEmpty()) {
               sgvDynamicValueMap_ = other.sgvDynamicValueMap_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureSgvDynamicValueMapIsMutable();
               sgvDynamicValueMap_.addAll(other.sgvDynamicValueMap_);
@@ -1015,7 +1197,7 @@ public final class AbilitySyncStateInfoOuterClass {
               sgvDynamicValueMapBuilder_.dispose();
               sgvDynamicValueMapBuilder_ = null;
               sgvDynamicValueMap_ = other.sgvDynamicValueMap_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000004);
               sgvDynamicValueMapBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSgvDynamicValueMapFieldBuilder() : null;
@@ -1028,7 +1210,7 @@ public final class AbilitySyncStateInfoOuterClass {
           if (!other.appliedAbilities_.isEmpty()) {
             if (appliedAbilities_.isEmpty()) {
               appliedAbilities_ = other.appliedAbilities_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensureAppliedAbilitiesIsMutable();
               appliedAbilities_.addAll(other.appliedAbilities_);
@@ -1041,12 +1223,38 @@ public final class AbilitySyncStateInfoOuterClass {
               appliedAbilitiesBuilder_.dispose();
               appliedAbilitiesBuilder_ = null;
               appliedAbilities_ = other.appliedAbilities_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000008);
               appliedAbilitiesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getAppliedAbilitiesFieldBuilder() : null;
             } else {
               appliedAbilitiesBuilder_.addAllMessages(other.appliedAbilities_);
+            }
+          }
+        }
+        if (mixinRecoverInfosBuilder_ == null) {
+          if (!other.mixinRecoverInfos_.isEmpty()) {
+            if (mixinRecoverInfos_.isEmpty()) {
+              mixinRecoverInfos_ = other.mixinRecoverInfos_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureMixinRecoverInfosIsMutable();
+              mixinRecoverInfos_.addAll(other.mixinRecoverInfos_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.mixinRecoverInfos_.isEmpty()) {
+            if (mixinRecoverInfosBuilder_.isEmpty()) {
+              mixinRecoverInfosBuilder_.dispose();
+              mixinRecoverInfosBuilder_ = null;
+              mixinRecoverInfos_ = other.mixinRecoverInfos_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              mixinRecoverInfosBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMixinRecoverInfosFieldBuilder() : null;
+            } else {
+              mixinRecoverInfosBuilder_.addAllMessages(other.mixinRecoverInfos_);
             }
           }
         }
@@ -1096,6 +1304,10 @@ public final class AbilitySyncStateInfoOuterClass {
           emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier, emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder, emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifierOrBuilder> appliedModifiersBuilder_;
 
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier> getAppliedModifiersList() {
@@ -1106,6 +1318,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public int getAppliedModifiersCount() {
@@ -1116,6 +1332,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier getAppliedModifiers(int index) {
@@ -1126,6 +1346,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder setAppliedModifiers(
@@ -1143,6 +1367,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder setAppliedModifiers(
@@ -1157,6 +1385,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder addAppliedModifiers(emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier value) {
@@ -1173,6 +1405,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder addAppliedModifiers(
@@ -1190,6 +1426,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder addAppliedModifiers(
@@ -1204,6 +1444,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder addAppliedModifiers(
@@ -1218,6 +1462,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder addAllAppliedModifiers(
@@ -1233,6 +1481,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder clearAppliedModifiers() {
@@ -1246,6 +1498,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public Builder removeAppliedModifiers(int index) {
@@ -1259,6 +1515,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder getAppliedModifiersBuilder(
@@ -1266,6 +1526,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return getAppliedModifiersFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifierOrBuilder getAppliedModifiersOrBuilder(
@@ -1276,6 +1540,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifierOrBuilder> 
@@ -1287,6 +1555,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder addAppliedModifiersBuilder() {
@@ -1294,6 +1566,10 @@ public final class AbilitySyncStateInfoOuterClass {
             emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder addAppliedModifiersBuilder(
@@ -1302,6 +1578,10 @@ public final class AbilitySyncStateInfoOuterClass {
             index, emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedModifier applied_modifiers = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder> 
@@ -1323,252 +1603,12 @@ public final class AbilitySyncStateInfoOuterClass {
         return appliedModifiersBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> mixinRecoverInfos_ =
-        java.util.Collections.emptyList();
-      private void ensureMixinRecoverInfosIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          mixinRecoverInfos_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo>(mixinRecoverInfos_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> mixinRecoverInfosBuilder_;
-
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> getMixinRecoverInfosList() {
-        if (mixinRecoverInfosBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(mixinRecoverInfos_);
-        } else {
-          return mixinRecoverInfosBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public int getMixinRecoverInfosCount() {
-        if (mixinRecoverInfosBuilder_ == null) {
-          return mixinRecoverInfos_.size();
-        } else {
-          return mixinRecoverInfosBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          return mixinRecoverInfos_.get(index);
-        } else {
-          return mixinRecoverInfosBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder setMixinRecoverInfos(
-          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.set(index, value);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder setMixinRecoverInfos(
-          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder addMixinRecoverInfos(emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.add(value);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder addMixinRecoverInfos(
-          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.add(index, value);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder addMixinRecoverInfos(
-          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.add(builderForValue.build());
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder addMixinRecoverInfos(
-          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder addAllMixinRecoverInfos(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> values) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          ensureMixinRecoverInfosIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, mixinRecoverInfos_);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder clearMixinRecoverInfos() {
-        if (mixinRecoverInfosBuilder_ == null) {
-          mixinRecoverInfos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public Builder removeMixinRecoverInfos(int index) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          ensureMixinRecoverInfosIsMutable();
-          mixinRecoverInfos_.remove(index);
-          onChanged();
-        } else {
-          mixinRecoverInfosBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder getMixinRecoverInfosBuilder(
-          int index) {
-        return getMixinRecoverInfosFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
-          int index) {
-        if (mixinRecoverInfosBuilder_ == null) {
-          return mixinRecoverInfos_.get(index);  } else {
-          return mixinRecoverInfosBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
-           getMixinRecoverInfosOrBuilderList() {
-        if (mixinRecoverInfosBuilder_ != null) {
-          return mixinRecoverInfosBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(mixinRecoverInfos_);
-        }
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder addMixinRecoverInfosBuilder() {
-        return getMixinRecoverInfosFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder addMixinRecoverInfosBuilder(
-          int index) {
-        return getMixinRecoverInfosFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder> 
-           getMixinRecoverInfosBuilderList() {
-        return getMixinRecoverInfosFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
-          getMixinRecoverInfosFieldBuilder() {
-        if (mixinRecoverInfosBuilder_ == null) {
-          mixinRecoverInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder>(
-                  mixinRecoverInfos_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          mixinRecoverInfos_ = null;
-        }
-        return mixinRecoverInfosBuilder_;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> dynamicValueMap_ =
         java.util.Collections.emptyList();
       private void ensureDynamicValueMapIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           dynamicValueMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry>(dynamicValueMap_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1576,6 +1616,10 @@ public final class AbilitySyncStateInfoOuterClass {
           emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> dynamicValueMapBuilder_;
 
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> getDynamicValueMapList() {
@@ -1586,6 +1630,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public int getDynamicValueMapCount() {
@@ -1596,6 +1644,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry getDynamicValueMap(int index) {
@@ -1606,6 +1658,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder setDynamicValueMap(
@@ -1623,6 +1679,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder setDynamicValueMap(
@@ -1637,6 +1697,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder addDynamicValueMap(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry value) {
@@ -1653,6 +1717,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder addDynamicValueMap(
@@ -1670,6 +1738,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder addDynamicValueMap(
@@ -1684,6 +1756,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder addDynamicValueMap(
@@ -1698,6 +1774,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder addAllDynamicValueMap(
@@ -1713,12 +1793,16 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder clearDynamicValueMap() {
         if (dynamicValueMapBuilder_ == null) {
           dynamicValueMap_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           dynamicValueMapBuilder_.clear();
@@ -1726,6 +1810,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public Builder removeDynamicValueMap(int index) {
@@ -1739,6 +1827,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder getDynamicValueMapBuilder(
@@ -1746,6 +1838,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return getDynamicValueMapFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder getDynamicValueMapOrBuilder(
@@ -1756,6 +1852,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> 
@@ -1767,6 +1867,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder addDynamicValueMapBuilder() {
@@ -1774,6 +1878,10 @@ public final class AbilitySyncStateInfoOuterClass {
             emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder addDynamicValueMapBuilder(
@@ -1782,6 +1890,10 @@ public final class AbilitySyncStateInfoOuterClass {
             index, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry dynamic_value_map = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder> 
@@ -1795,7 +1907,7 @@ public final class AbilitySyncStateInfoOuterClass {
           dynamicValueMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder>(
                   dynamicValueMap_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           dynamicValueMap_ = null;
@@ -1806,9 +1918,9 @@ public final class AbilitySyncStateInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> sgvDynamicValueMap_ =
         java.util.Collections.emptyList();
       private void ensureSgvDynamicValueMapIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           sgvDynamicValueMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry>(sgvDynamicValueMap_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -1816,6 +1928,10 @@ public final class AbilitySyncStateInfoOuterClass {
           emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> sgvDynamicValueMapBuilder_;
 
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> getSgvDynamicValueMapList() {
@@ -1826,6 +1942,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public int getSgvDynamicValueMapCount() {
@@ -1836,6 +1956,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry getSgvDynamicValueMap(int index) {
@@ -1846,6 +1970,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder setSgvDynamicValueMap(
@@ -1863,6 +1991,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder setSgvDynamicValueMap(
@@ -1877,6 +2009,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder addSgvDynamicValueMap(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry value) {
@@ -1893,6 +2029,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder addSgvDynamicValueMap(
@@ -1910,6 +2050,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder addSgvDynamicValueMap(
@@ -1924,6 +2068,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder addSgvDynamicValueMap(
@@ -1938,6 +2086,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder addAllSgvDynamicValueMap(
@@ -1953,12 +2105,16 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder clearSgvDynamicValueMap() {
         if (sgvDynamicValueMapBuilder_ == null) {
           sgvDynamicValueMap_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           sgvDynamicValueMapBuilder_.clear();
@@ -1966,6 +2122,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public Builder removeSgvDynamicValueMap(int index) {
@@ -1979,6 +2139,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder getSgvDynamicValueMapBuilder(
@@ -1986,6 +2150,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return getSgvDynamicValueMapFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder getSgvDynamicValueMapOrBuilder(
@@ -1996,6 +2164,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder> 
@@ -2007,6 +2179,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder addSgvDynamicValueMapBuilder() {
@@ -2014,6 +2190,10 @@ public final class AbilitySyncStateInfoOuterClass {
             emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder addSgvDynamicValueMapBuilder(
@@ -2022,6 +2202,10 @@ public final class AbilitySyncStateInfoOuterClass {
             index, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>repeated .AbilityScalarValueEntry sgv_dynamic_value_map = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder> 
@@ -2035,7 +2219,7 @@ public final class AbilitySyncStateInfoOuterClass {
           sgvDynamicValueMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntryOrBuilder>(
                   sgvDynamicValueMap_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           sgvDynamicValueMap_ = null;
@@ -2046,9 +2230,9 @@ public final class AbilitySyncStateInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility> appliedAbilities_ =
         java.util.Collections.emptyList();
       private void ensureAppliedAbilitiesIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           appliedAbilities_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility>(appliedAbilities_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000008;
          }
       }
 
@@ -2056,6 +2240,10 @@ public final class AbilitySyncStateInfoOuterClass {
           emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> appliedAbilitiesBuilder_;
 
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility> getAppliedAbilitiesList() {
@@ -2066,6 +2254,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public int getAppliedAbilitiesCount() {
@@ -2076,6 +2268,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility getAppliedAbilities(int index) {
@@ -2086,6 +2282,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder setAppliedAbilities(
@@ -2103,6 +2303,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder setAppliedAbilities(
@@ -2117,6 +2321,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder addAppliedAbilities(emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility value) {
@@ -2133,6 +2341,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder addAppliedAbilities(
@@ -2150,6 +2362,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder addAppliedAbilities(
@@ -2164,6 +2380,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder addAppliedAbilities(
@@ -2178,6 +2398,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder addAllAppliedAbilities(
@@ -2193,12 +2417,16 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder clearAppliedAbilities() {
         if (appliedAbilitiesBuilder_ == null) {
           appliedAbilities_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
           appliedAbilitiesBuilder_.clear();
@@ -2206,6 +2434,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public Builder removeAppliedAbilities(int index) {
@@ -2219,6 +2451,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder getAppliedAbilitiesBuilder(
@@ -2226,6 +2462,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return getAppliedAbilitiesFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder getAppliedAbilitiesOrBuilder(
@@ -2236,6 +2476,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> 
@@ -2247,6 +2491,10 @@ public final class AbilitySyncStateInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder addAppliedAbilitiesBuilder() {
@@ -2254,6 +2502,10 @@ public final class AbilitySyncStateInfoOuterClass {
             emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder addAppliedAbilitiesBuilder(
@@ -2262,6 +2514,10 @@ public final class AbilitySyncStateInfoOuterClass {
             index, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.getDefaultInstance());
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
        * <code>repeated .AbilityAppliedAbility applied_abilities = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder> 
@@ -2275,7 +2531,7 @@ public final class AbilitySyncStateInfoOuterClass {
           appliedAbilitiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder>(
                   appliedAbilities_,
-                  ((bitField0_ & 0x00000010) != 0),
+                  ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
           appliedAbilities_ = null;
@@ -2283,8 +2539,324 @@ public final class AbilitySyncStateInfoOuterClass {
         return appliedAbilitiesBuilder_;
       }
 
+      private java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> mixinRecoverInfos_ =
+        java.util.Collections.emptyList();
+      private void ensureMixinRecoverInfosIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          mixinRecoverInfos_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo>(mixinRecoverInfos_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> mixinRecoverInfosBuilder_;
+
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> getMixinRecoverInfosList() {
+        if (mixinRecoverInfosBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(mixinRecoverInfos_);
+        } else {
+          return mixinRecoverInfosBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public int getMixinRecoverInfosCount() {
+        if (mixinRecoverInfosBuilder_ == null) {
+          return mixinRecoverInfos_.size();
+        } else {
+          return mixinRecoverInfosBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo getMixinRecoverInfos(int index) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          return mixinRecoverInfos_.get(index);
+        } else {
+          return mixinRecoverInfosBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder setMixinRecoverInfos(
+          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.set(index, value);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder setMixinRecoverInfos(
+          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder addMixinRecoverInfos(emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.add(value);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder addMixinRecoverInfos(
+          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo value) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.add(index, value);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder addMixinRecoverInfos(
+          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.add(builderForValue.build());
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder addMixinRecoverInfos(
+          int index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder builderForValue) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder addAllMixinRecoverInfos(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo> values) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          ensureMixinRecoverInfosIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, mixinRecoverInfos_);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder clearMixinRecoverInfos() {
+        if (mixinRecoverInfosBuilder_ == null) {
+          mixinRecoverInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public Builder removeMixinRecoverInfos(int index) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          ensureMixinRecoverInfosIsMutable();
+          mixinRecoverInfos_.remove(index);
+          onChanged();
+        } else {
+          mixinRecoverInfosBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder getMixinRecoverInfosBuilder(
+          int index) {
+        return getMixinRecoverInfosFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder getMixinRecoverInfosOrBuilder(
+          int index) {
+        if (mixinRecoverInfosBuilder_ == null) {
+          return mixinRecoverInfos_.get(index);  } else {
+          return mixinRecoverInfosBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
+           getMixinRecoverInfosOrBuilderList() {
+        if (mixinRecoverInfosBuilder_ != null) {
+          return mixinRecoverInfosBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(mixinRecoverInfos_);
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder addMixinRecoverInfosBuilder() {
+        return getMixinRecoverInfosFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder addMixinRecoverInfosBuilder(
+          int index) {
+        return getMixinRecoverInfosFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>repeated .AbilityMixinRecoverInfo mixin_recover_infos = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder> 
+           getMixinRecoverInfosBuilderList() {
+        return getMixinRecoverInfosFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder> 
+          getMixinRecoverInfosFieldBuilder() {
+        if (mixinRecoverInfosBuilder_ == null) {
+          mixinRecoverInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.Builder, emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfoOrBuilder>(
+                  mixinRecoverInfos_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          mixinRecoverInfos_ = null;
+        }
+        return mixinRecoverInfosBuilder_;
+      }
+
       private boolean isInited_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
        * <code>bool is_inited = 1;</code>
        * @return The isInited.
        */
@@ -2293,6 +2865,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return isInited_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
        * <code>bool is_inited = 1;</code>
        * @param value The isInited to set.
        * @return This builder for chaining.
@@ -2304,6 +2880,10 @@ public final class AbilitySyncStateInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
        * <code>bool is_inited = 1;</code>
        * @return This builder for chaining.
        */
@@ -2380,38 +2960,38 @@ public final class AbilitySyncStateInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032AbilitySyncStateInfo.proto\032\034AbilityApp" +
-      "liedModifier.proto\032\035AbilityMixinRecoverI" +
-      "nfo.proto\032\035AbilityScalarValueEntry.proto" +
-      "\032\033AbilityAppliedAbility.proto\"\265\002\n\024Abilit" +
+      "\n\032AbilitySyncStateInfo.proto\032\033AbilityApp" +
+      "liedAbility.proto\032\034AbilityAppliedModifie" +
+      "r.proto\032\035AbilityMixinRecoverInfo.proto\032\035" +
+      "AbilityScalarValueEntry.proto\"\265\002\n\024Abilit" +
       "ySyncStateInfo\0222\n\021applied_modifiers\030\004 \003(" +
-      "\0132\027.AbilityAppliedModifier\0225\n\023mixin_reco" +
-      "ver_infos\030\005 \003(\0132\030.AbilityMixinRecoverInf" +
-      "o\0223\n\021dynamic_value_map\030\002 \003(\0132\030.AbilitySc" +
-      "alarValueEntry\0227\n\025sgv_dynamic_value_map\030" +
-      "\006 \003(\0132\030.AbilityScalarValueEntry\0221\n\021appli" +
-      "ed_abilities\030\003 \003(\0132\026.AbilityAppliedAbili" +
-      "ty\022\021\n\tis_inited\030\001 \001(\010B\033\n\031emu.grasscutter" +
+      "\0132\027.AbilityAppliedModifier\0223\n\021dynamic_va" +
+      "lue_map\030\002 \003(\0132\030.AbilityScalarValueEntry\022" +
+      "7\n\025sgv_dynamic_value_map\030\006 \003(\0132\030.Ability" +
+      "ScalarValueEntry\0221\n\021applied_abilities\030\003 " +
+      "\003(\0132\026.AbilityAppliedAbility\0225\n\023mixin_rec" +
+      "over_infos\030\005 \003(\0132\030.AbilityMixinRecoverIn" +
+      "fo\022\021\n\tis_inited\030\001 \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.getDescriptor(),
         });
     internal_static_AbilitySyncStateInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilitySyncStateInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilitySyncStateInfo_descriptor,
-        new java.lang.String[] { "AppliedModifiers", "MixinRecoverInfos", "DynamicValueMap", "SgvDynamicValueMap", "AppliedAbilities", "IsInited", });
+        new java.lang.String[] { "AppliedModifiers", "DynamicValueMap", "SgvDynamicValueMap", "AppliedAbilities", "MixinRecoverInfos", "IsInited", });
+    emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

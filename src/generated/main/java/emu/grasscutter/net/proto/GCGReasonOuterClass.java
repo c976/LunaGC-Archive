@@ -15,177 +15,173 @@ public final class GCGReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: MEDIDIAPFAD
-   * </pre>
-   *
    * Protobuf enum {@code GCGReason}
    */
   public enum GCGReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MNDCMMKBIBP_Default = 0;</code>
+     * <code>GCG_REASON_DEFAULT = 0;</code>
      */
-    MNDCMMKBIBP_Default(0),
+    GCG_REASON_DEFAULT(0),
     /**
-     * <code>MNDCMMKBIBP_Effect = 1;</code>
+     * <code>GCG_REASON_EFFECT = 1;</code>
      */
-    MNDCMMKBIBP_Effect(1),
+    GCG_REASON_EFFECT(1),
     /**
-     * <code>MNDCMMKBIBP_Cost = 2;</code>
+     * <code>GCG_REASON_COST = 2;</code>
      */
-    MNDCMMKBIBP_Cost(2),
+    GCG_REASON_COST(2),
     /**
-     * <code>MNDCMMKBIBP_Gm = 3;</code>
+     * <code>GCG_REASON_GM = 3;</code>
      */
-    MNDCMMKBIBP_Gm(3),
+    GCG_REASON_GM(3),
     /**
-     * <code>MNDCMMKBIBP_Attack = 4;</code>
+     * <code>GCG_REASON_ATTACK = 4;</code>
      */
-    MNDCMMKBIBP_Attack(4),
+    GCG_REASON_ATTACK(4),
     /**
-     * <code>MNDCMMKBIBP_Reboot = 5;</code>
+     * <code>GCG_REASON_REBOOT = 5;</code>
      */
-    MNDCMMKBIBP_Reboot(5),
+    GCG_REASON_REBOOT(5),
     /**
-     * <code>MNDCMMKBIBP_PlayCard = 6;</code>
+     * <code>GCG_REASON_PLAY_CARD = 6;</code>
      */
-    MNDCMMKBIBP_PlayCard(6),
+    GCG_REASON_PLAY_CARD(6),
     /**
-     * <code>MNDCMMKBIBP_QuicklyOnstage = 7;</code>
+     * <code>GCG_REASON_QUICKLY_ONSTAGE = 7;</code>
      */
-    MNDCMMKBIBP_QuicklyOnstage(7),
+    GCG_REASON_QUICKLY_ONSTAGE(7),
     /**
-     * <code>MNDCMMKBIBP_RemoveAfterDie = 8;</code>
+     * <code>GCG_REASON_REMOVE_AFTER_DIE = 8;</code>
      */
-    MNDCMMKBIBP_RemoveAfterDie(8),
+    GCG_REASON_REMOVE_AFTER_DIE(8),
     /**
-     * <code>MNDCMMKBIBP_Init = 9;</code>
+     * <code>GCG_REASON_INIT = 9;</code>
      */
-    MNDCMMKBIBP_Init(9),
+    GCG_REASON_INIT(9),
     /**
-     * <code>MNDCMMKBIBP_EffectDamage = 10;</code>
+     * <code>GCG_REASON_EFFECT_DAMAGE = 10;</code>
      */
-    MNDCMMKBIBP_EffectDamage(10),
+    GCG_REASON_EFFECT_DAMAGE(10),
     /**
-     * <code>MNDCMMKBIBP_EffectHeal = 11;</code>
+     * <code>GCG_REASON_EFFECT_HEAL = 11;</code>
      */
-    MNDCMMKBIBP_EffectHeal(11),
+    GCG_REASON_EFFECT_HEAL(11),
     /**
-     * <code>MNDCMMKBIBP_EffectRevive = 12;</code>
+     * <code>GCG_REASON_EFFECT_REVIVE = 12;</code>
      */
-    MNDCMMKBIBP_EffectRevive(12),
+    GCG_REASON_EFFECT_REVIVE(12),
     /**
-     * <code>MNDCMMKBIBP_InitOnstage = 13;</code>
+     * <code>GCG_REASON_INIT_ONSTAGE = 13;</code>
      */
-    MNDCMMKBIBP_InitOnstage(13),
+    GCG_REASON_INIT_ONSTAGE(13),
     /**
-     * <code>MNDCMMKBIBP_DieOnstage = 14;</code>
+     * <code>GCG_REASON_DIE_ONSTAGE = 14;</code>
      */
-    MNDCMMKBIBP_DieOnstage(14),
+    GCG_REASON_DIE_ONSTAGE(14),
     /**
-     * <code>MNDCMMKBIBP_SelectOnstage = 15;</code>
+     * <code>GCG_REASON_SELECT_ONSTAGE = 15;</code>
      */
-    MNDCMMKBIBP_SelectOnstage(15),
+    GCG_REASON_SELECT_ONSTAGE(15),
     /**
-     * <code>MNDCMMKBIBP_CharacterDie = 16;</code>
+     * <code>GCG_REASON_CHARACTER_DIE = 16;</code>
      */
-    MNDCMMKBIBP_CharacterDie(16),
+    GCG_REASON_CHARACTER_DIE(16),
     /**
-     * <code>MNDCMMKBIBP_ReviveWhenDeath = 17;</code>
+     * <code>GCG_REASON_REVIVE_WHEN_DEATH = 17;</code>
      */
-    MNDCMMKBIBP_ReviveWhenDeath(17),
+    GCG_REASON_REVIVE_WHEN_DEATH(17),
     /**
-     * <code>MNDCMMKBIBP_TransferToOpponent = 18;</code>
+     * <code>GCG_REASON_TRANSFER_TO_OPPONENT = 18;</code>
      */
-    MNDCMMKBIBP_TransferToOpponent(18),
+    GCG_REASON_TRANSFER_TO_OPPONENT(18),
     /**
-     * <code>MNDCMMKBIBP_TransferDice = 19;</code>
+     * <code>GCG_REASON_TRANSFER_DICE = 19;</code>
      */
-    MNDCMMKBIBP_TransferDice(19),
+    GCG_REASON_TRANSFER_DICE(19),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>MNDCMMKBIBP_Default = 0;</code>
+     * <code>GCG_REASON_DEFAULT = 0;</code>
      */
-    public static final int MNDCMMKBIBP_Default_VALUE = 0;
+    public static final int GCG_REASON_DEFAULT_VALUE = 0;
     /**
-     * <code>MNDCMMKBIBP_Effect = 1;</code>
+     * <code>GCG_REASON_EFFECT = 1;</code>
      */
-    public static final int MNDCMMKBIBP_Effect_VALUE = 1;
+    public static final int GCG_REASON_EFFECT_VALUE = 1;
     /**
-     * <code>MNDCMMKBIBP_Cost = 2;</code>
+     * <code>GCG_REASON_COST = 2;</code>
      */
-    public static final int MNDCMMKBIBP_Cost_VALUE = 2;
+    public static final int GCG_REASON_COST_VALUE = 2;
     /**
-     * <code>MNDCMMKBIBP_Gm = 3;</code>
+     * <code>GCG_REASON_GM = 3;</code>
      */
-    public static final int MNDCMMKBIBP_Gm_VALUE = 3;
+    public static final int GCG_REASON_GM_VALUE = 3;
     /**
-     * <code>MNDCMMKBIBP_Attack = 4;</code>
+     * <code>GCG_REASON_ATTACK = 4;</code>
      */
-    public static final int MNDCMMKBIBP_Attack_VALUE = 4;
+    public static final int GCG_REASON_ATTACK_VALUE = 4;
     /**
-     * <code>MNDCMMKBIBP_Reboot = 5;</code>
+     * <code>GCG_REASON_REBOOT = 5;</code>
      */
-    public static final int MNDCMMKBIBP_Reboot_VALUE = 5;
+    public static final int GCG_REASON_REBOOT_VALUE = 5;
     /**
-     * <code>MNDCMMKBIBP_PlayCard = 6;</code>
+     * <code>GCG_REASON_PLAY_CARD = 6;</code>
      */
-    public static final int MNDCMMKBIBP_PlayCard_VALUE = 6;
+    public static final int GCG_REASON_PLAY_CARD_VALUE = 6;
     /**
-     * <code>MNDCMMKBIBP_QuicklyOnstage = 7;</code>
+     * <code>GCG_REASON_QUICKLY_ONSTAGE = 7;</code>
      */
-    public static final int MNDCMMKBIBP_QuicklyOnstage_VALUE = 7;
+    public static final int GCG_REASON_QUICKLY_ONSTAGE_VALUE = 7;
     /**
-     * <code>MNDCMMKBIBP_RemoveAfterDie = 8;</code>
+     * <code>GCG_REASON_REMOVE_AFTER_DIE = 8;</code>
      */
-    public static final int MNDCMMKBIBP_RemoveAfterDie_VALUE = 8;
+    public static final int GCG_REASON_REMOVE_AFTER_DIE_VALUE = 8;
     /**
-     * <code>MNDCMMKBIBP_Init = 9;</code>
+     * <code>GCG_REASON_INIT = 9;</code>
      */
-    public static final int MNDCMMKBIBP_Init_VALUE = 9;
+    public static final int GCG_REASON_INIT_VALUE = 9;
     /**
-     * <code>MNDCMMKBIBP_EffectDamage = 10;</code>
+     * <code>GCG_REASON_EFFECT_DAMAGE = 10;</code>
      */
-    public static final int MNDCMMKBIBP_EffectDamage_VALUE = 10;
+    public static final int GCG_REASON_EFFECT_DAMAGE_VALUE = 10;
     /**
-     * <code>MNDCMMKBIBP_EffectHeal = 11;</code>
+     * <code>GCG_REASON_EFFECT_HEAL = 11;</code>
      */
-    public static final int MNDCMMKBIBP_EffectHeal_VALUE = 11;
+    public static final int GCG_REASON_EFFECT_HEAL_VALUE = 11;
     /**
-     * <code>MNDCMMKBIBP_EffectRevive = 12;</code>
+     * <code>GCG_REASON_EFFECT_REVIVE = 12;</code>
      */
-    public static final int MNDCMMKBIBP_EffectRevive_VALUE = 12;
+    public static final int GCG_REASON_EFFECT_REVIVE_VALUE = 12;
     /**
-     * <code>MNDCMMKBIBP_InitOnstage = 13;</code>
+     * <code>GCG_REASON_INIT_ONSTAGE = 13;</code>
      */
-    public static final int MNDCMMKBIBP_InitOnstage_VALUE = 13;
+    public static final int GCG_REASON_INIT_ONSTAGE_VALUE = 13;
     /**
-     * <code>MNDCMMKBIBP_DieOnstage = 14;</code>
+     * <code>GCG_REASON_DIE_ONSTAGE = 14;</code>
      */
-    public static final int MNDCMMKBIBP_DieOnstage_VALUE = 14;
+    public static final int GCG_REASON_DIE_ONSTAGE_VALUE = 14;
     /**
-     * <code>MNDCMMKBIBP_SelectOnstage = 15;</code>
+     * <code>GCG_REASON_SELECT_ONSTAGE = 15;</code>
      */
-    public static final int MNDCMMKBIBP_SelectOnstage_VALUE = 15;
+    public static final int GCG_REASON_SELECT_ONSTAGE_VALUE = 15;
     /**
-     * <code>MNDCMMKBIBP_CharacterDie = 16;</code>
+     * <code>GCG_REASON_CHARACTER_DIE = 16;</code>
      */
-    public static final int MNDCMMKBIBP_CharacterDie_VALUE = 16;
+    public static final int GCG_REASON_CHARACTER_DIE_VALUE = 16;
     /**
-     * <code>MNDCMMKBIBP_ReviveWhenDeath = 17;</code>
+     * <code>GCG_REASON_REVIVE_WHEN_DEATH = 17;</code>
      */
-    public static final int MNDCMMKBIBP_ReviveWhenDeath_VALUE = 17;
+    public static final int GCG_REASON_REVIVE_WHEN_DEATH_VALUE = 17;
     /**
-     * <code>MNDCMMKBIBP_TransferToOpponent = 18;</code>
+     * <code>GCG_REASON_TRANSFER_TO_OPPONENT = 18;</code>
      */
-    public static final int MNDCMMKBIBP_TransferToOpponent_VALUE = 18;
+    public static final int GCG_REASON_TRANSFER_TO_OPPONENT_VALUE = 18;
     /**
-     * <code>MNDCMMKBIBP_TransferDice = 19;</code>
+     * <code>GCG_REASON_TRANSFER_DICE = 19;</code>
      */
-    public static final int MNDCMMKBIBP_TransferDice_VALUE = 19;
+    public static final int GCG_REASON_TRANSFER_DICE_VALUE = 19;
 
 
     public final int getNumber() {
@@ -212,26 +208,26 @@ public final class GCGReasonOuterClass {
      */
     public static GCGReason forNumber(int value) {
       switch (value) {
-        case 0: return MNDCMMKBIBP_Default;
-        case 1: return MNDCMMKBIBP_Effect;
-        case 2: return MNDCMMKBIBP_Cost;
-        case 3: return MNDCMMKBIBP_Gm;
-        case 4: return MNDCMMKBIBP_Attack;
-        case 5: return MNDCMMKBIBP_Reboot;
-        case 6: return MNDCMMKBIBP_PlayCard;
-        case 7: return MNDCMMKBIBP_QuicklyOnstage;
-        case 8: return MNDCMMKBIBP_RemoveAfterDie;
-        case 9: return MNDCMMKBIBP_Init;
-        case 10: return MNDCMMKBIBP_EffectDamage;
-        case 11: return MNDCMMKBIBP_EffectHeal;
-        case 12: return MNDCMMKBIBP_EffectRevive;
-        case 13: return MNDCMMKBIBP_InitOnstage;
-        case 14: return MNDCMMKBIBP_DieOnstage;
-        case 15: return MNDCMMKBIBP_SelectOnstage;
-        case 16: return MNDCMMKBIBP_CharacterDie;
-        case 17: return MNDCMMKBIBP_ReviveWhenDeath;
-        case 18: return MNDCMMKBIBP_TransferToOpponent;
-        case 19: return MNDCMMKBIBP_TransferDice;
+        case 0: return GCG_REASON_DEFAULT;
+        case 1: return GCG_REASON_EFFECT;
+        case 2: return GCG_REASON_COST;
+        case 3: return GCG_REASON_GM;
+        case 4: return GCG_REASON_ATTACK;
+        case 5: return GCG_REASON_REBOOT;
+        case 6: return GCG_REASON_PLAY_CARD;
+        case 7: return GCG_REASON_QUICKLY_ONSTAGE;
+        case 8: return GCG_REASON_REMOVE_AFTER_DIE;
+        case 9: return GCG_REASON_INIT;
+        case 10: return GCG_REASON_EFFECT_DAMAGE;
+        case 11: return GCG_REASON_EFFECT_HEAL;
+        case 12: return GCG_REASON_EFFECT_REVIVE;
+        case 13: return GCG_REASON_INIT_ONSTAGE;
+        case 14: return GCG_REASON_DIE_ONSTAGE;
+        case 15: return GCG_REASON_SELECT_ONSTAGE;
+        case 16: return GCG_REASON_CHARACTER_DIE;
+        case 17: return GCG_REASON_REVIVE_WHEN_DEATH;
+        case 18: return GCG_REASON_TRANSFER_TO_OPPONENT;
+        case 19: return GCG_REASON_TRANSFER_DICE;
         default: return null;
       }
     }
@@ -297,22 +293,22 @@ public final class GCGReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GCGReason.proto*\267\004\n\tGCGReason\022\027\n\023MNDCM" +
-      "MKBIBP_Default\020\000\022\026\n\022MNDCMMKBIBP_Effect\020\001" +
-      "\022\024\n\020MNDCMMKBIBP_Cost\020\002\022\022\n\016MNDCMMKBIBP_Gm" +
-      "\020\003\022\026\n\022MNDCMMKBIBP_Attack\020\004\022\026\n\022MNDCMMKBIB" +
-      "P_Reboot\020\005\022\030\n\024MNDCMMKBIBP_PlayCard\020\006\022\036\n\032" +
-      "MNDCMMKBIBP_QuicklyOnstage\020\007\022\036\n\032MNDCMMKB" +
-      "IBP_RemoveAfterDie\020\010\022\024\n\020MNDCMMKBIBP_Init" +
-      "\020\t\022\034\n\030MNDCMMKBIBP_EffectDamage\020\n\022\032\n\026MNDC" +
-      "MMKBIBP_EffectHeal\020\013\022\034\n\030MNDCMMKBIBP_Effe" +
-      "ctRevive\020\014\022\033\n\027MNDCMMKBIBP_InitOnstage\020\r\022" +
-      "\032\n\026MNDCMMKBIBP_DieOnstage\020\016\022\035\n\031MNDCMMKBI" +
-      "BP_SelectOnstage\020\017\022\034\n\030MNDCMMKBIBP_Charac" +
-      "terDie\020\020\022\037\n\033MNDCMMKBIBP_ReviveWhenDeath\020" +
-      "\021\022\"\n\036MNDCMMKBIBP_TransferToOpponent\020\022\022\034\n" +
-      "\030MNDCMMKBIBP_TransferDice\020\023B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\017GCGReason.proto*\263\004\n\tGCGReason\022\026\n\022GCG_R" +
+      "EASON_DEFAULT\020\000\022\025\n\021GCG_REASON_EFFECT\020\001\022\023" +
+      "\n\017GCG_REASON_COST\020\002\022\021\n\rGCG_REASON_GM\020\003\022\025" +
+      "\n\021GCG_REASON_ATTACK\020\004\022\025\n\021GCG_REASON_REBO" +
+      "OT\020\005\022\030\n\024GCG_REASON_PLAY_CARD\020\006\022\036\n\032GCG_RE" +
+      "ASON_QUICKLY_ONSTAGE\020\007\022\037\n\033GCG_REASON_REM" +
+      "OVE_AFTER_DIE\020\010\022\023\n\017GCG_REASON_INIT\020\t\022\034\n\030" +
+      "GCG_REASON_EFFECT_DAMAGE\020\n\022\032\n\026GCG_REASON" +
+      "_EFFECT_HEAL\020\013\022\034\n\030GCG_REASON_EFFECT_REVI" +
+      "VE\020\014\022\033\n\027GCG_REASON_INIT_ONSTAGE\020\r\022\032\n\026GCG" +
+      "_REASON_DIE_ONSTAGE\020\016\022\035\n\031GCG_REASON_SELE" +
+      "CT_ONSTAGE\020\017\022\034\n\030GCG_REASON_CHARACTER_DIE" +
+      "\020\020\022 \n\034GCG_REASON_REVIVE_WHEN_DEATH\020\021\022#\n\037" +
+      "GCG_REASON_TRANSFER_TO_OPPONENT\020\022\022\034\n\030GCG" +
+      "_REASON_TRANSFER_DICE\020\023B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

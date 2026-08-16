@@ -19,37 +19,37 @@ public final class MistTrialSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
-    int getOJENJKOEHHECount();
+    int getBHCOABDMJIACount();
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
-    boolean containsOJENJKOEHHE(
+    boolean containsBHCOABDMJIA(
         int key);
     /**
-     * Use {@link #getOJENJKOEHHEMap()} instead.
+     * Use {@link #getBHCOABDMJIAMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOJENJKOEHHE();
+    getBHCOABDMJIA();
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOJENJKOEHHEMap();
+    getBHCOABDMJIAMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
 
-    int getOJENJKOEHHEOrDefault(
+    int getBHCOABDMJIAOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
 
-    int getOJENJKOEHHEOrThrow(
+    int getBHCOABDMJIAOrThrow(
         int key);
   }
   /**
@@ -98,17 +98,17 @@ public final class MistTrialSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oJENJKOEHHE_ = com.google.protobuf.MapField.newMapField(
-                    OJENJKOEHHEDefaultEntryHolder.defaultEntry);
+                bHCOABDMJIA_ = com.google.protobuf.MapField.newMapField(
+                    BHCOABDMJIADefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              oJENJKOEHHE__ = input.readMessage(
-                  OJENJKOEHHEDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              oJENJKOEHHE_.getMutableMap().put(
-                  oJENJKOEHHE__.getKey(), oJENJKOEHHE__.getValue());
+              bHCOABDMJIA__ = input.readMessage(
+                  BHCOABDMJIADefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              bHCOABDMJIA_.getMutableMap().put(
+                  bHCOABDMJIA__.getKey(), bHCOABDMJIA__.getValue());
               break;
             }
             default: {
@@ -140,8 +140,8 @@ public final class MistTrialSettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 5:
-          return internalGetOJENJKOEHHE();
+        case 9:
+          return internalGetBHCOABDMJIA();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -155,81 +155,81 @@ public final class MistTrialSettleInfoOuterClass {
               emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.class, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder.class);
     }
 
-    public static final int OJENJKOEHHE_FIELD_NUMBER = 5;
-    private static final class OJENJKOEHHEDefaultEntryHolder {
+    public static final int BHCOABDMJIA_FIELD_NUMBER = 9;
+    private static final class BHCOABDMJIADefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_descriptor, 
+                  emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> oJENJKOEHHE_;
+        java.lang.Integer, java.lang.Integer> bHCOABDMJIA_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetOJENJKOEHHE() {
-      if (oJENJKOEHHE_ == null) {
+    internalGetBHCOABDMJIA() {
+      if (bHCOABDMJIA_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            OJENJKOEHHEDefaultEntryHolder.defaultEntry);
+            BHCOABDMJIADefaultEntryHolder.defaultEntry);
       }
-      return oJENJKOEHHE_;
+      return bHCOABDMJIA_;
     }
 
-    public int getOJENJKOEHHECount() {
-      return internalGetOJENJKOEHHE().getMap().size();
+    public int getBHCOABDMJIACount() {
+      return internalGetBHCOABDMJIA().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
 
     @java.lang.Override
-    public boolean containsOJENJKOEHHE(
+    public boolean containsBHCOABDMJIA(
         int key) {
       
-      return internalGetOJENJKOEHHE().getMap().containsKey(key);
+      return internalGetBHCOABDMJIA().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getOJENJKOEHHEMap()} instead.
+     * Use {@link #getBHCOABDMJIAMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getOJENJKOEHHE() {
-      return getOJENJKOEHHEMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getBHCOABDMJIA() {
+      return getBHCOABDMJIAMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getOJENJKOEHHEMap() {
-      return internalGetOJENJKOEHHE().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getBHCOABDMJIAMap() {
+      return internalGetBHCOABDMJIA().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
     @java.lang.Override
 
-    public int getOJENJKOEHHEOrDefault(
+    public int getBHCOABDMJIAOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOJENJKOEHHE().getMap();
+          internalGetBHCOABDMJIA().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+     * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
      */
     @java.lang.Override
 
-    public int getOJENJKOEHHEOrThrow(
+    public int getBHCOABDMJIAOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOJENJKOEHHE().getMap();
+          internalGetBHCOABDMJIA().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -253,9 +253,9 @@ public final class MistTrialSettleInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetOJENJKOEHHE(),
-          OJENJKOEHHEDefaultEntryHolder.defaultEntry,
-          5);
+          internalGetBHCOABDMJIA(),
+          BHCOABDMJIADefaultEntryHolder.defaultEntry,
+          9);
       unknownFields.writeTo(output);
     }
 
@@ -266,14 +266,14 @@ public final class MistTrialSettleInfoOuterClass {
 
       size = 0;
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetOJENJKOEHHE().getMap().entrySet()) {
+           : internalGetBHCOABDMJIA().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        oJENJKOEHHE__ = OJENJKOEHHEDefaultEntryHolder.defaultEntry.newBuilderForType()
+        bHCOABDMJIA__ = BHCOABDMJIADefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(5, oJENJKOEHHE__);
+            .computeMessageSize(9, bHCOABDMJIA__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,8 +290,8 @@ public final class MistTrialSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo other = (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) obj;
 
-      if (!internalGetOJENJKOEHHE().equals(
-          other.internalGetOJENJKOEHHE())) return false;
+      if (!internalGetBHCOABDMJIA().equals(
+          other.internalGetBHCOABDMJIA())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,9 +303,9 @@ public final class MistTrialSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetOJENJKOEHHE().getMap().isEmpty()) {
-        hash = (37 * hash) + OJENJKOEHHE_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetOJENJKOEHHE().hashCode();
+      if (!internalGetBHCOABDMJIA().getMap().isEmpty()) {
+        hash = (37 * hash) + BHCOABDMJIA_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetBHCOABDMJIA().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -418,8 +418,8 @@ public final class MistTrialSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 5:
-            return internalGetOJENJKOEHHE();
+          case 9:
+            return internalGetBHCOABDMJIA();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -429,8 +429,8 @@ public final class MistTrialSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 5:
-            return internalGetMutableOJENJKOEHHE();
+          case 9:
+            return internalGetMutableBHCOABDMJIA();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -462,7 +462,7 @@ public final class MistTrialSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableOJENJKOEHHE().clear();
+        internalGetMutableBHCOABDMJIA().clear();
         return this;
       }
 
@@ -490,8 +490,8 @@ public final class MistTrialSettleInfoOuterClass {
       public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo buildPartial() {
         emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo result = new emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.oJENJKOEHHE_ = internalGetOJENJKOEHHE();
-        result.oJENJKOEHHE_.makeImmutable();
+        result.bHCOABDMJIA_ = internalGetBHCOABDMJIA();
+        result.bHCOABDMJIA_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -540,8 +540,8 @@ public final class MistTrialSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo other) {
         if (other == emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance()) return this;
-        internalGetMutableOJENJKOEHHE().mergeFrom(
-            other.internalGetOJENJKOEHHE());
+        internalGetMutableBHCOABDMJIA().mergeFrom(
+            other.internalGetBHCOABDMJIA());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -573,99 +573,99 @@ public final class MistTrialSettleInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> oJENJKOEHHE_;
+          java.lang.Integer, java.lang.Integer> bHCOABDMJIA_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetOJENJKOEHHE() {
-        if (oJENJKOEHHE_ == null) {
+      internalGetBHCOABDMJIA() {
+        if (bHCOABDMJIA_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              OJENJKOEHHEDefaultEntryHolder.defaultEntry);
+              BHCOABDMJIADefaultEntryHolder.defaultEntry);
         }
-        return oJENJKOEHHE_;
+        return bHCOABDMJIA_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableOJENJKOEHHE() {
+      internalGetMutableBHCOABDMJIA() {
         onChanged();;
-        if (oJENJKOEHHE_ == null) {
-          oJENJKOEHHE_ = com.google.protobuf.MapField.newMapField(
-              OJENJKOEHHEDefaultEntryHolder.defaultEntry);
+        if (bHCOABDMJIA_ == null) {
+          bHCOABDMJIA_ = com.google.protobuf.MapField.newMapField(
+              BHCOABDMJIADefaultEntryHolder.defaultEntry);
         }
-        if (!oJENJKOEHHE_.isMutable()) {
-          oJENJKOEHHE_ = oJENJKOEHHE_.copy();
+        if (!bHCOABDMJIA_.isMutable()) {
+          bHCOABDMJIA_ = bHCOABDMJIA_.copy();
         }
-        return oJENJKOEHHE_;
+        return bHCOABDMJIA_;
       }
 
-      public int getOJENJKOEHHECount() {
-        return internalGetOJENJKOEHHE().getMap().size();
+      public int getBHCOABDMJIACount() {
+        return internalGetBHCOABDMJIA().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
 
       @java.lang.Override
-      public boolean containsOJENJKOEHHE(
+      public boolean containsBHCOABDMJIA(
           int key) {
         
-        return internalGetOJENJKOEHHE().getMap().containsKey(key);
+        return internalGetBHCOABDMJIA().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getOJENJKOEHHEMap()} instead.
+       * Use {@link #getBHCOABDMJIAMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getOJENJKOEHHE() {
-        return getOJENJKOEHHEMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getBHCOABDMJIA() {
+        return getBHCOABDMJIAMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getOJENJKOEHHEMap() {
-        return internalGetOJENJKOEHHE().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getBHCOABDMJIAMap() {
+        return internalGetBHCOABDMJIA().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
       @java.lang.Override
 
-      public int getOJENJKOEHHEOrDefault(
+      public int getBHCOABDMJIAOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOJENJKOEHHE().getMap();
+            internalGetBHCOABDMJIA().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
       @java.lang.Override
 
-      public int getOJENJKOEHHEOrThrow(
+      public int getBHCOABDMJIAOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOJENJKOEHHE().getMap();
+            internalGetBHCOABDMJIA().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearOJENJKOEHHE() {
-        internalGetMutableOJENJKOEHHE().getMutableMap()
+      public Builder clearBHCOABDMJIA() {
+        internalGetMutableBHCOABDMJIA().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
 
-      public Builder removeOJENJKOEHHE(
+      public Builder removeBHCOABDMJIA(
           int key) {
         
-        internalGetMutableOJENJKOEHHE().getMutableMap()
+        internalGetMutableBHCOABDMJIA().getMutableMap()
             .remove(key);
         return this;
       }
@@ -674,28 +674,28 @@ public final class MistTrialSettleInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableOJENJKOEHHE() {
-        return internalGetMutableOJENJKOEHHE().getMutableMap();
+      getMutableBHCOABDMJIA() {
+        return internalGetMutableBHCOABDMJIA().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
-      public Builder putOJENJKOEHHE(
+      public Builder putBHCOABDMJIA(
           int key,
           int value) {
         
         
-        internalGetMutableOJENJKOEHHE().getMutableMap()
+        internalGetMutableBHCOABDMJIA().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OJENJKOEHHE = 5;</code>
+       * <code>map&lt;uint32, uint32&gt; BHCOABDMJIA = 9;</code>
        */
 
-      public Builder putAllOJENJKOEHHE(
+      public Builder putAllBHCOABDMJIA(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableOJENJKOEHHE().getMutableMap()
+        internalGetMutableBHCOABDMJIA().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -758,10 +758,10 @@ public final class MistTrialSettleInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MistTrialSettleInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_descriptor;
+    internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_fieldAccessorTable;
+      internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -772,9 +772,9 @@ public final class MistTrialSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031MistTrialSettleInfo.proto\"\205\001\n\023MistTria" +
-      "lSettleInfo\022:\n\013OJENJKOEHHE\030\005 \003(\0132%.MistT" +
-      "rialSettleInfo.OJENJKOEHHEEntry\0322\n\020OJENJ" +
-      "KOEHHEEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
+      "lSettleInfo\022:\n\013BHCOABDMJIA\030\t \003(\0132%.MistT" +
+      "rialSettleInfo.BHCOABDMJIAEntry\0322\n\020BHCOA" +
+      "BDMJIAEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
       "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -786,12 +786,12 @@ public final class MistTrialSettleInfoOuterClass {
     internal_static_MistTrialSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialSettleInfo_descriptor,
-        new java.lang.String[] { "OJENJKOEHHE", });
-    internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_descriptor =
+        new java.lang.String[] { "BHCOABDMJIA", });
+    internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_descriptor =
       internal_static_MistTrialSettleInfo_descriptor.getNestedTypes().get(0);
-    internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_fieldAccessorTable = new
+    internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MistTrialSettleInfo_OJENJKOEHHEEntry_descriptor,
+        internal_static_MistTrialSettleInfo_BHCOABDMJIAEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

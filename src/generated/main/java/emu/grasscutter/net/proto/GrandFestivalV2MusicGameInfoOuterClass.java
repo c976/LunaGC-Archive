@@ -19,25 +19,25 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord> 
         getMusicGameRecordListList();
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord getMusicGameRecordList(int index);
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     int getMusicGameRecordListCount();
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder> 
         getMusicGameRecordListOrBuilderList();
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder getMusicGameRecordListOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 musicGameRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
               emu.grasscutter.net.proto.GrandFestivalV2MusicGameInfoOuterClass.GrandFestivalV2MusicGameInfo.class, emu.grasscutter.net.proto.GrandFestivalV2MusicGameInfoOuterClass.GrandFestivalV2MusicGameInfo.Builder.class);
     }
 
-    public static final int MUSIC_GAME_RECORD_LIST_FIELD_NUMBER = 10;
+    public static final int MUSIC_GAME_RECORD_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord> musicGameRecordList_;
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord> getMusicGameRecordListList() {
       return musicGameRecordList_;
     }
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder> 
@@ -151,21 +151,21 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
       return musicGameRecordList_;
     }
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     @java.lang.Override
     public int getMusicGameRecordListCount() {
       return musicGameRecordList_.size();
     }
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord getMusicGameRecordList(int index) {
       return musicGameRecordList_.get(index);
     }
     /**
-     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+     * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder getMusicGameRecordListOrBuilder(
@@ -188,7 +188,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < musicGameRecordList_.size(); i++) {
-        output.writeMessage(10, musicGameRecordList_.get(i));
+        output.writeMessage(4, musicGameRecordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
       size = 0;
       for (int i = 0; i < musicGameRecordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, musicGameRecordList_.get(i));
+          .computeMessageSize(4, musicGameRecordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
           emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder> musicGameRecordListBuilder_;
 
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord> getMusicGameRecordListList() {
         if (musicGameRecordListBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public int getMusicGameRecordListCount() {
         if (musicGameRecordListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord getMusicGameRecordList(int index) {
         if (musicGameRecordListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder setMusicGameRecordList(
           int index, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord value) {
@@ -575,7 +575,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder setMusicGameRecordList(
           int index, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder addMusicGameRecordList(emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord value) {
         if (musicGameRecordListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder addMusicGameRecordList(
           int index, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord value) {
@@ -622,7 +622,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder addMusicGameRecordList(
           emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder addMusicGameRecordList(
           int index, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder addAllMusicGameRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord> values) {
@@ -665,7 +665,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder clearMusicGameRecordList() {
         if (musicGameRecordListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public Builder removeMusicGameRecordList(int index) {
         if (musicGameRecordListBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder getMusicGameRecordListBuilder(
           int index) {
         return getMusicGameRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder getMusicGameRecordListOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecordOrBuilder> 
            getMusicGameRecordListOrBuilderList() {
@@ -719,14 +719,14 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder addMusicGameRecordListBuilder() {
         return getMusicGameRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder addMusicGameRecordListBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
             index, emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 10;</code>
+       * <code>repeated .GrandFestivalMusicGameRecord music_game_record_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GrandFestivalMusicGameRecordOuterClass.GrandFestivalMusicGameRecord.Builder> 
            getMusicGameRecordListBuilderList() {
@@ -824,7 +824,7 @@ public final class GrandFestivalV2MusicGameInfoOuterClass {
       "\n\"GrandFestivalV2MusicGameInfo.proto\032\"Gr" +
       "andFestivalMusicGameRecord.proto\"]\n\034Gran" +
       "dFestivalV2MusicGameInfo\022=\n\026music_game_r" +
-      "ecord_list\030\n \003(\0132\035.GrandFestivalMusicGam" +
+      "ecord_list\030\004 \003(\0132\035.GrandFestivalMusicGam" +
       "eRecordB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };

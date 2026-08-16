@@ -19,70 +19,106 @@ public final class H5ActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string prefab_path = 12;</code>
-     * @return The prefabPath.
-     */
-    java.lang.String getPrefabPath();
-    /**
-     * <code>string prefab_path = 12;</code>
-     * @return The bytes for prefabPath.
-     */
-    com.google.protobuf.ByteString
-        getPrefabPathBytes();
-
-    /**
-     * <code>string url = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string url = 1;</code>
      * @return The url.
      */
     java.lang.String getUrl();
     /**
-     * <code>string url = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string url = 1;</code>
      * @return The bytes for url.
      */
     com.google.protobuf.ByteString
         getUrlBytes();
 
     /**
-     * <code>bool is_entrance_open = 1;</code>
-     * @return The isEntranceOpen.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string ONGGGPGBOBM = 4;</code>
+     * @return The oNGGGPGBOBM.
      */
-    boolean getIsEntranceOpen();
+    java.lang.String getONGGGPGBOBM();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string ONGGGPGBOBM = 4;</code>
+     * @return The bytes for oNGGGPGBOBM.
+     */
+    com.google.protobuf.ByteString
+        getONGGGPGBOBMBytes();
 
     /**
-     * <code>uint32 FMENOAFNGHO = 13;</code>
-     * @return The fMENOAFNGHO.
-     */
-    int getFMENOAFNGHO();
-
-    /**
-     * <code>uint32 end_time = 3;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
-
-    /**
-     * <code>uint32 content_close_time = 4;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 content_close_time = 11;</code>
      * @return The contentCloseTime.
      */
     int getContentCloseTime();
 
     /**
-     * <code>uint32 begin_time = 15;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GBCNNLFEPPM = 15;</code>
+     * @return The gBCNNLFEPPM.
+     */
+    int getGBCNNLFEPPM();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_entrance_open = 13;</code>
+     * @return The isEntranceOpen.
+     */
+    boolean getIsEntranceOpen();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 end_time = 9;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 begin_time = 10;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 JELEFCPLEJB = 14;</code>
-     * @return The jELEFCPLEJB.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 BIDMADNCIHF = 5;</code>
+     * @return The bIDMADNCIHF.
      */
-    int getJELEFCPLEJB();
+    int getBIDMADNCIHF();
   }
   /**
-   * <pre>
-   * Obf: KDDLGDGMJJJ
-   * </pre>
-   *
    * Protobuf type {@code H5ActivityInfo}
    */
   public static final class H5ActivityInfo extends
@@ -95,8 +131,8 @@ public final class H5ActivityInfoOuterClass {
       super(builder);
     }
     private H5ActivityInfo() {
-      prefabPath_ = "";
       url_ = "";
+      oNGGGPGBOBM_ = "";
     }
 
     @java.lang.Override
@@ -129,46 +165,46 @@ public final class H5ActivityInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isEntranceOpen_ = input.readBool();
-              break;
-            }
-            case 24: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              contentCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 66: {
+            case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
               url_ = s;
               break;
             }
-            case 98: {
+            case 34: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              prefabPath_ = s;
+              oNGGGPGBOBM_ = s;
+              break;
+            }
+            case 40: {
+
+              bIDMADNCIHF_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              beginTime_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              contentCloseTime_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              fMENOAFNGHO_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              jELEFCPLEJB_ = input.readUInt32();
+              isEntranceOpen_ = input.readBool();
               break;
             }
             case 120: {
 
-              beginTime_ = input.readUInt32();
+              gBCNNLFEPPM_ = input.readUInt32();
               break;
             }
             default: {
@@ -203,48 +239,14 @@ public final class H5ActivityInfoOuterClass {
               emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.class, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder.class);
     }
 
-    public static final int PREFAB_PATH_FIELD_NUMBER = 12;
-    private volatile java.lang.Object prefabPath_;
-    /**
-     * <code>string prefab_path = 12;</code>
-     * @return The prefabPath.
-     */
-    @java.lang.Override
-    public java.lang.String getPrefabPath() {
-      java.lang.Object ref = prefabPath_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        prefabPath_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string prefab_path = 12;</code>
-     * @return The bytes for prefabPath.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPrefabPathBytes() {
-      java.lang.Object ref = prefabPath_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        prefabPath_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int URL_FIELD_NUMBER = 8;
+    public static final int URL_FIELD_NUMBER = 1;
     private volatile java.lang.Object url_;
     /**
-     * <code>string url = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string url = 1;</code>
      * @return The url.
      */
     @java.lang.Override
@@ -261,7 +263,11 @@ public final class H5ActivityInfoOuterClass {
       }
     }
     /**
-     * <code>string url = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string url = 1;</code>
      * @return The bytes for url.
      */
     @java.lang.Override
@@ -279,43 +285,60 @@ public final class H5ActivityInfoOuterClass {
       }
     }
 
-    public static final int IS_ENTRANCE_OPEN_FIELD_NUMBER = 1;
-    private boolean isEntranceOpen_;
+    public static final int ONGGGPGBOBM_FIELD_NUMBER = 4;
+    private volatile java.lang.Object oNGGGPGBOBM_;
     /**
-     * <code>bool is_entrance_open = 1;</code>
-     * @return The isEntranceOpen.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string ONGGGPGBOBM = 4;</code>
+     * @return The oNGGGPGBOBM.
      */
     @java.lang.Override
-    public boolean getIsEntranceOpen() {
-      return isEntranceOpen_;
+    public java.lang.String getONGGGPGBOBM() {
+      java.lang.Object ref = oNGGGPGBOBM_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        oNGGGPGBOBM_ = s;
+        return s;
+      }
     }
-
-    public static final int FMENOAFNGHO_FIELD_NUMBER = 13;
-    private int fMENOAFNGHO_;
     /**
-     * <code>uint32 FMENOAFNGHO = 13;</code>
-     * @return The fMENOAFNGHO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>string ONGGGPGBOBM = 4;</code>
+     * @return The bytes for oNGGGPGBOBM.
      */
     @java.lang.Override
-    public int getFMENOAFNGHO() {
-      return fMENOAFNGHO_;
+    public com.google.protobuf.ByteString
+        getONGGGPGBOBMBytes() {
+      java.lang.Object ref = oNGGGPGBOBM_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        oNGGGPGBOBM_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 3;
-    private int endTime_;
-    /**
-     * <code>uint32 end_time = 3;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 4;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 11;
     private int contentCloseTime_;
     /**
-     * <code>uint32 content_close_time = 4;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 content_close_time = 11;</code>
      * @return The contentCloseTime.
      */
     @java.lang.Override
@@ -323,10 +346,59 @@ public final class H5ActivityInfoOuterClass {
       return contentCloseTime_;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 15;
+    public static final int GBCNNLFEPPM_FIELD_NUMBER = 15;
+    private int gBCNNLFEPPM_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 GBCNNLFEPPM = 15;</code>
+     * @return The gBCNNLFEPPM.
+     */
+    @java.lang.Override
+    public int getGBCNNLFEPPM() {
+      return gBCNNLFEPPM_;
+    }
+
+    public static final int IS_ENTRANCE_OPEN_FIELD_NUMBER = 13;
+    private boolean isEntranceOpen_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>bool is_entrance_open = 13;</code>
+     * @return The isEntranceOpen.
+     */
+    @java.lang.Override
+    public boolean getIsEntranceOpen() {
+      return isEntranceOpen_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 9;
+    private int endTime_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 end_time = 9;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int BEGIN_TIME_FIELD_NUMBER = 10;
     private int beginTime_;
     /**
-     * <code>uint32 begin_time = 15;</code>
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 begin_time = 10;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -334,15 +406,19 @@ public final class H5ActivityInfoOuterClass {
       return beginTime_;
     }
 
-    public static final int JELEFCPLEJB_FIELD_NUMBER = 14;
-    private int jELEFCPLEJB_;
+    public static final int BIDMADNCIHF_FIELD_NUMBER = 5;
+    private int bIDMADNCIHF_;
     /**
-     * <code>uint32 JELEFCPLEJB = 14;</code>
-     * @return The jELEFCPLEJB.
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>uint32 BIDMADNCIHF = 5;</code>
+     * @return The bIDMADNCIHF.
      */
     @java.lang.Override
-    public int getJELEFCPLEJB() {
-      return jELEFCPLEJB_;
+    public int getBIDMADNCIHF() {
+      return bIDMADNCIHF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -359,29 +435,29 @@ public final class H5ActivityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isEntranceOpen_ != false) {
-        output.writeBool(1, isEntranceOpen_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, url_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(oNGGGPGBOBM_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, oNGGGPGBOBM_);
+      }
+      if (bIDMADNCIHF_ != 0) {
+        output.writeUInt32(5, bIDMADNCIHF_);
       }
       if (endTime_ != 0) {
-        output.writeUInt32(3, endTime_);
-      }
-      if (contentCloseTime_ != 0) {
-        output.writeUInt32(4, contentCloseTime_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, url_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(prefabPath_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, prefabPath_);
-      }
-      if (fMENOAFNGHO_ != 0) {
-        output.writeUInt32(13, fMENOAFNGHO_);
-      }
-      if (jELEFCPLEJB_ != 0) {
-        output.writeUInt32(14, jELEFCPLEJB_);
+        output.writeUInt32(9, endTime_);
       }
       if (beginTime_ != 0) {
-        output.writeUInt32(15, beginTime_);
+        output.writeUInt32(10, beginTime_);
+      }
+      if (contentCloseTime_ != 0) {
+        output.writeUInt32(11, contentCloseTime_);
+      }
+      if (isEntranceOpen_ != false) {
+        output.writeBool(13, isEntranceOpen_);
+      }
+      if (gBCNNLFEPPM_ != 0) {
+        output.writeUInt32(15, gBCNNLFEPPM_);
       }
       unknownFields.writeTo(output);
     }
@@ -392,35 +468,35 @@ public final class H5ActivityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isEntranceOpen_ != false) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, url_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(oNGGGPGBOBM_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, oNGGGPGBOBM_);
+      }
+      if (bIDMADNCIHF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isEntranceOpen_);
+          .computeUInt32Size(5, bIDMADNCIHF_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, endTime_);
-      }
-      if (contentCloseTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, contentCloseTime_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, url_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(prefabPath_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, prefabPath_);
-      }
-      if (fMENOAFNGHO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, fMENOAFNGHO_);
-      }
-      if (jELEFCPLEJB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, jELEFCPLEJB_);
+          .computeUInt32Size(9, endTime_);
       }
       if (beginTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, beginTime_);
+          .computeUInt32Size(10, beginTime_);
+      }
+      if (contentCloseTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, contentCloseTime_);
+      }
+      if (isEntranceOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isEntranceOpen_);
+      }
+      if (gBCNNLFEPPM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, gBCNNLFEPPM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -437,22 +513,22 @@ public final class H5ActivityInfoOuterClass {
       }
       emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo other = (emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo) obj;
 
-      if (!getPrefabPath()
-          .equals(other.getPrefabPath())) return false;
       if (!getUrl()
           .equals(other.getUrl())) return false;
-      if (getIsEntranceOpen()
-          != other.getIsEntranceOpen()) return false;
-      if (getFMENOAFNGHO()
-          != other.getFMENOAFNGHO()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
+      if (!getONGGGPGBOBM()
+          .equals(other.getONGGGPGBOBM())) return false;
       if (getContentCloseTime()
           != other.getContentCloseTime()) return false;
+      if (getGBCNNLFEPPM()
+          != other.getGBCNNLFEPPM()) return false;
+      if (getIsEntranceOpen()
+          != other.getIsEntranceOpen()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
-      if (getJELEFCPLEJB()
-          != other.getJELEFCPLEJB()) return false;
+      if (getBIDMADNCIHF()
+          != other.getBIDMADNCIHF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -464,23 +540,23 @@ public final class H5ActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PREFAB_PATH_FIELD_NUMBER;
-      hash = (53 * hash) + getPrefabPath().hashCode();
       hash = (37 * hash) + URL_FIELD_NUMBER;
       hash = (53 * hash) + getUrl().hashCode();
+      hash = (37 * hash) + ONGGGPGBOBM_FIELD_NUMBER;
+      hash = (53 * hash) + getONGGGPGBOBM().hashCode();
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
+      hash = (37 * hash) + GBCNNLFEPPM_FIELD_NUMBER;
+      hash = (53 * hash) + getGBCNNLFEPPM();
       hash = (37 * hash) + IS_ENTRANCE_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEntranceOpen());
-      hash = (37 * hash) + FMENOAFNGHO_FIELD_NUMBER;
-      hash = (53 * hash) + getFMENOAFNGHO();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
       hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + JELEFCPLEJB_FIELD_NUMBER;
-      hash = (53 * hash) + getJELEFCPLEJB();
+      hash = (37 * hash) + BIDMADNCIHF_FIELD_NUMBER;
+      hash = (53 * hash) + getBIDMADNCIHF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -577,10 +653,6 @@ public final class H5ActivityInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KDDLGDGMJJJ
-     * </pre>
-     *
      * Protobuf type {@code H5ActivityInfo}
      */
     public static final class Builder extends
@@ -618,21 +690,21 @@ public final class H5ActivityInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        prefabPath_ = "";
-
         url_ = "";
 
-        isEntranceOpen_ = false;
-
-        fMENOAFNGHO_ = 0;
-
-        endTime_ = 0;
+        oNGGGPGBOBM_ = "";
 
         contentCloseTime_ = 0;
 
+        gBCNNLFEPPM_ = 0;
+
+        isEntranceOpen_ = false;
+
+        endTime_ = 0;
+
         beginTime_ = 0;
 
-        jELEFCPLEJB_ = 0;
+        bIDMADNCIHF_ = 0;
 
         return this;
       }
@@ -660,14 +732,14 @@ public final class H5ActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo buildPartial() {
         emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo result = new emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo(this);
-        result.prefabPath_ = prefabPath_;
         result.url_ = url_;
-        result.isEntranceOpen_ = isEntranceOpen_;
-        result.fMENOAFNGHO_ = fMENOAFNGHO_;
-        result.endTime_ = endTime_;
+        result.oNGGGPGBOBM_ = oNGGGPGBOBM_;
         result.contentCloseTime_ = contentCloseTime_;
+        result.gBCNNLFEPPM_ = gBCNNLFEPPM_;
+        result.isEntranceOpen_ = isEntranceOpen_;
+        result.endTime_ = endTime_;
         result.beginTime_ = beginTime_;
-        result.jELEFCPLEJB_ = jELEFCPLEJB_;
+        result.bIDMADNCIHF_ = bIDMADNCIHF_;
         onBuilt();
         return result;
       }
@@ -716,31 +788,31 @@ public final class H5ActivityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo other) {
         if (other == emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.getDefaultInstance()) return this;
-        if (!other.getPrefabPath().isEmpty()) {
-          prefabPath_ = other.prefabPath_;
-          onChanged();
-        }
         if (!other.getUrl().isEmpty()) {
           url_ = other.url_;
           onChanged();
         }
-        if (other.getIsEntranceOpen() != false) {
-          setIsEntranceOpen(other.getIsEntranceOpen());
-        }
-        if (other.getFMENOAFNGHO() != 0) {
-          setFMENOAFNGHO(other.getFMENOAFNGHO());
-        }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
+        if (!other.getONGGGPGBOBM().isEmpty()) {
+          oNGGGPGBOBM_ = other.oNGGGPGBOBM_;
+          onChanged();
         }
         if (other.getContentCloseTime() != 0) {
           setContentCloseTime(other.getContentCloseTime());
         }
+        if (other.getGBCNNLFEPPM() != 0) {
+          setGBCNNLFEPPM(other.getGBCNNLFEPPM());
+        }
+        if (other.getIsEntranceOpen() != false) {
+          setIsEntranceOpen(other.getIsEntranceOpen());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
+        }
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
         }
-        if (other.getJELEFCPLEJB() != 0) {
-          setJELEFCPLEJB(other.getJELEFCPLEJB());
+        if (other.getBIDMADNCIHF() != 0) {
+          setBIDMADNCIHF(other.getBIDMADNCIHF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -771,85 +843,13 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object prefabPath_ = "";
-      /**
-       * <code>string prefab_path = 12;</code>
-       * @return The prefabPath.
-       */
-      public java.lang.String getPrefabPath() {
-        java.lang.Object ref = prefabPath_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          prefabPath_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string prefab_path = 12;</code>
-       * @return The bytes for prefabPath.
-       */
-      public com.google.protobuf.ByteString
-          getPrefabPathBytes() {
-        java.lang.Object ref = prefabPath_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          prefabPath_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string prefab_path = 12;</code>
-       * @param value The prefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPrefabPath(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        prefabPath_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string prefab_path = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPrefabPath() {
-        
-        prefabPath_ = getDefaultInstance().getPrefabPath();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string prefab_path = 12;</code>
-       * @param value The bytes for prefabPath to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPrefabPathBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        prefabPath_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object url_ = "";
       /**
-       * <code>string url = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string url = 1;</code>
        * @return The url.
        */
       public java.lang.String getUrl() {
@@ -865,7 +865,11 @@ public final class H5ActivityInfoOuterClass {
         }
       }
       /**
-       * <code>string url = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string url = 1;</code>
        * @return The bytes for url.
        */
       public com.google.protobuf.ByteString
@@ -882,7 +886,11 @@ public final class H5ActivityInfoOuterClass {
         }
       }
       /**
-       * <code>string url = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string url = 1;</code>
        * @param value The url to set.
        * @return This builder for chaining.
        */
@@ -897,7 +905,11 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>string url = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string url = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearUrl() {
@@ -907,7 +919,11 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>string url = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string url = 1;</code>
        * @param value The bytes for url to set.
        * @return This builder for chaining.
        */
@@ -923,102 +939,109 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
-      private boolean isEntranceOpen_ ;
+      private java.lang.Object oNGGGPGBOBM_ = "";
       /**
-       * <code>bool is_entrance_open = 1;</code>
-       * @return The isEntranceOpen.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string ONGGGPGBOBM = 4;</code>
+       * @return The oNGGGPGBOBM.
        */
-      @java.lang.Override
-      public boolean getIsEntranceOpen() {
-        return isEntranceOpen_;
+      public java.lang.String getONGGGPGBOBM() {
+        java.lang.Object ref = oNGGGPGBOBM_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          oNGGGPGBOBM_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>bool is_entrance_open = 1;</code>
-       * @param value The isEntranceOpen to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string ONGGGPGBOBM = 4;</code>
+       * @return The bytes for oNGGGPGBOBM.
+       */
+      public com.google.protobuf.ByteString
+          getONGGGPGBOBMBytes() {
+        java.lang.Object ref = oNGGGPGBOBM_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          oNGGGPGBOBM_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string ONGGGPGBOBM = 4;</code>
+       * @param value The oNGGGPGBOBM to set.
        * @return This builder for chaining.
        */
-      public Builder setIsEntranceOpen(boolean value) {
-        
-        isEntranceOpen_ = value;
+      public Builder setONGGGPGBOBM(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        oNGGGPGBOBM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_entrance_open = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string ONGGGPGBOBM = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsEntranceOpen() {
+      public Builder clearONGGGPGBOBM() {
         
-        isEntranceOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int fMENOAFNGHO_ ;
-      /**
-       * <code>uint32 FMENOAFNGHO = 13;</code>
-       * @return The fMENOAFNGHO.
-       */
-      @java.lang.Override
-      public int getFMENOAFNGHO() {
-        return fMENOAFNGHO_;
-      }
-      /**
-       * <code>uint32 FMENOAFNGHO = 13;</code>
-       * @param value The fMENOAFNGHO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFMENOAFNGHO(int value) {
-        
-        fMENOAFNGHO_ = value;
+        oNGGGPGBOBM_ = getDefaultInstance().getONGGGPGBOBM();
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FMENOAFNGHO = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>string ONGGGPGBOBM = 4;</code>
+       * @param value The bytes for oNGGGPGBOBM to set.
        * @return This builder for chaining.
        */
-      public Builder clearFMENOAFNGHO() {
+      public Builder setONGGGPGBOBMBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        fMENOAFNGHO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 3;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <code>uint32 end_time = 3;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 end_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
+        oNGGGPGBOBM_ = value;
         onChanged();
         return this;
       }
 
       private int contentCloseTime_ ;
       /**
-       * <code>uint32 content_close_time = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 11;</code>
        * @return The contentCloseTime.
        */
       @java.lang.Override
@@ -1026,7 +1049,11 @@ public final class H5ActivityInfoOuterClass {
         return contentCloseTime_;
       }
       /**
-       * <code>uint32 content_close_time = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 11;</code>
        * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
@@ -1037,7 +1064,11 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 content_close_time = 4;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 content_close_time = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentCloseTime() {
@@ -1047,9 +1078,142 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
+      private int gBCNNLFEPPM_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GBCNNLFEPPM = 15;</code>
+       * @return The gBCNNLFEPPM.
+       */
+      @java.lang.Override
+      public int getGBCNNLFEPPM() {
+        return gBCNNLFEPPM_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GBCNNLFEPPM = 15;</code>
+       * @param value The gBCNNLFEPPM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGBCNNLFEPPM(int value) {
+        
+        gBCNNLFEPPM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 GBCNNLFEPPM = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGBCNNLFEPPM() {
+        
+        gBCNNLFEPPM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isEntranceOpen_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_entrance_open = 13;</code>
+       * @return The isEntranceOpen.
+       */
+      @java.lang.Override
+      public boolean getIsEntranceOpen() {
+        return isEntranceOpen_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_entrance_open = 13;</code>
+       * @param value The isEntranceOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsEntranceOpen(boolean value) {
+        
+        isEntranceOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>bool is_entrance_open = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsEntranceOpen() {
+        
+        isEntranceOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 end_time = 9;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 end_time = 9;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 end_time = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int beginTime_ ;
       /**
-       * <code>uint32 begin_time = 15;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 begin_time = 10;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -1057,7 +1221,11 @@ public final class H5ActivityInfoOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 begin_time = 15;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 begin_time = 10;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
@@ -1068,7 +1236,11 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 begin_time = 15;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 begin_time = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
@@ -1078,33 +1250,45 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
-      private int jELEFCPLEJB_ ;
+      private int bIDMADNCIHF_ ;
       /**
-       * <code>uint32 JELEFCPLEJB = 14;</code>
-       * @return The jELEFCPLEJB.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BIDMADNCIHF = 5;</code>
+       * @return The bIDMADNCIHF.
        */
       @java.lang.Override
-      public int getJELEFCPLEJB() {
-        return jELEFCPLEJB_;
+      public int getBIDMADNCIHF() {
+        return bIDMADNCIHF_;
       }
       /**
-       * <code>uint32 JELEFCPLEJB = 14;</code>
-       * @param value The jELEFCPLEJB to set.
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BIDMADNCIHF = 5;</code>
+       * @param value The bIDMADNCIHF to set.
        * @return This builder for chaining.
        */
-      public Builder setJELEFCPLEJB(int value) {
+      public Builder setBIDMADNCIHF(int value) {
         
-        jELEFCPLEJB_ = value;
+        bIDMADNCIHF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JELEFCPLEJB = 14;</code>
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>uint32 BIDMADNCIHF = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJELEFCPLEJB() {
+      public Builder clearBIDMADNCIHF() {
         
-        jELEFCPLEJB_ = 0;
+        bIDMADNCIHF_ = 0;
         onChanged();
         return this;
       }
@@ -1176,11 +1360,11 @@ public final class H5ActivityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024H5ActivityInfo.proto\"\270\001\n\016H5ActivityInf" +
-      "o\022\023\n\013prefab_path\030\014 \001(\t\022\013\n\003url\030\010 \001(\t\022\030\n\020i" +
-      "s_entrance_open\030\001 \001(\010\022\023\n\013FMENOAFNGHO\030\r \001" +
-      "(\r\022\020\n\010end_time\030\003 \001(\r\022\032\n\022content_close_ti" +
-      "me\030\004 \001(\r\022\022\n\nbegin_time\030\017 \001(\r\022\023\n\013JELEFCPL" +
-      "EJB\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "o\022\013\n\003url\030\001 \001(\t\022\023\n\013ONGGGPGBOBM\030\004 \001(\t\022\032\n\022c" +
+      "ontent_close_time\030\013 \001(\r\022\023\n\013GBCNNLFEPPM\030\017" +
+      " \001(\r\022\030\n\020is_entrance_open\030\r \001(\010\022\020\n\010end_ti" +
+      "me\030\t \001(\r\022\022\n\nbegin_time\030\n \001(\r\022\023\n\013BIDMADNC" +
+      "IHF\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1192,7 +1376,7 @@ public final class H5ActivityInfoOuterClass {
     internal_static_H5ActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_H5ActivityInfo_descriptor,
-        new java.lang.String[] { "PrefabPath", "Url", "IsEntranceOpen", "FMENOAFNGHO", "EndTime", "ContentCloseTime", "BeginTime", "JELEFCPLEJB", });
+        new java.lang.String[] { "Url", "ONGGGPGBOBM", "ContentCloseTime", "GBCNNLFEPPM", "IsEntranceOpen", "EndTime", "BeginTime", "BIDMADNCIHF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

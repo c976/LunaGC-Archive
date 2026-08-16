@@ -19,33 +19,29 @@ public final class GCGOperationAttackOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 15;</code>
-     * @return The skillId.
-     */
-    int getSkillId();
-
-    /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @return A list containing the costDiceIndexList.
      */
     java.util.List<java.lang.Integer> getCostDiceIndexListList();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @return The count of costDiceIndexList.
      */
     int getCostDiceIndexListCount();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
     int getCostDiceIndexList(int index);
+
+    /**
+     * <code>uint32 skill_id = 14;</code>
+     * @return The skillId.
+     */
+    int getSkillId();
   }
   /**
-   * <pre>
-   * Obf: FCNFPIDIMGI
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationAttack}
    */
   public static final class GCGOperationAttack extends
@@ -92,7 +88,7 @@ public final class GCGOperationAttackOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 costDiceIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -100,7 +96,7 @@ public final class GCGOperationAttackOuterClass {
               costDiceIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -113,7 +109,7 @@ public final class GCGOperationAttackOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 120: {
+            case 112: {
 
               skillId_ = input.readUInt32();
               break;
@@ -153,21 +149,10 @@ public final class GCGOperationAttackOuterClass {
               emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.class, emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 15;
-    private int skillId_;
-    /**
-     * <code>uint32 skill_id = 15;</code>
-     * @return The skillId.
-     */
-    @java.lang.Override
-    public int getSkillId() {
-      return skillId_;
-    }
-
-    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 14;
+    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList costDiceIndexList_;
     /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @return A list containing the costDiceIndexList.
      */
     @java.lang.Override
@@ -176,14 +161,14 @@ public final class GCGOperationAttackOuterClass {
       return costDiceIndexList_;
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @return The count of costDiceIndexList.
      */
     public int getCostDiceIndexListCount() {
       return costDiceIndexList_.size();
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 14;</code>
+     * <code>repeated uint32 cost_dice_index_list = 9;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
@@ -191,6 +176,17 @@ public final class GCGOperationAttackOuterClass {
       return costDiceIndexList_.getInt(index);
     }
     private int costDiceIndexListMemoizedSerializedSize = -1;
+
+    public static final int SKILL_ID_FIELD_NUMBER = 14;
+    private int skillId_;
+    /**
+     * <code>uint32 skill_id = 14;</code>
+     * @return The skillId.
+     */
+    @java.lang.Override
+    public int getSkillId() {
+      return skillId_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -208,14 +204,14 @@ public final class GCGOperationAttackOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCostDiceIndexListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(costDiceIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < costDiceIndexList_.size(); i++) {
         output.writeUInt32NoTag(costDiceIndexList_.getInt(i));
       }
       if (skillId_ != 0) {
-        output.writeUInt32(15, skillId_);
+        output.writeUInt32(14, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -242,7 +238,7 @@ public final class GCGOperationAttackOuterClass {
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, skillId_);
+          .computeUInt32Size(14, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -259,10 +255,10 @@ public final class GCGOperationAttackOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack other = (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) obj;
 
-      if (getSkillId()
-          != other.getSkillId()) return false;
       if (!getCostDiceIndexListList()
           .equals(other.getCostDiceIndexListList())) return false;
+      if (getSkillId()
+          != other.getSkillId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,12 +270,12 @@ public final class GCGOperationAttackOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
       if (getCostDiceIndexListCount() > 0) {
         hash = (37 * hash) + COST_DICE_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCostDiceIndexListList().hashCode();
       }
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,10 +372,6 @@ public final class GCGOperationAttackOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FCNFPIDIMGI
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationAttack}
      */
     public static final class Builder extends
@@ -417,10 +409,10 @@ public final class GCGOperationAttackOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        skillId_ = 0;
-
         costDiceIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        skillId_ = 0;
+
         return this;
       }
 
@@ -448,12 +440,12 @@ public final class GCGOperationAttackOuterClass {
       public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack buildPartial() {
         emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack result = new emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack(this);
         int from_bitField0_ = bitField0_;
-        result.skillId_ = skillId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           costDiceIndexList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.costDiceIndexList_ = costDiceIndexList_;
+        result.skillId_ = skillId_;
         onBuilt();
         return result;
       }
@@ -502,9 +494,6 @@ public final class GCGOperationAttackOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack other) {
         if (other == emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance()) return this;
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
-        }
         if (!other.costDiceIndexList_.isEmpty()) {
           if (costDiceIndexList_.isEmpty()) {
             costDiceIndexList_ = other.costDiceIndexList_;
@@ -514,6 +503,9 @@ public final class GCGOperationAttackOuterClass {
             costDiceIndexList_.addAll(other.costDiceIndexList_);
           }
           onChanged();
+        }
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,37 +537,6 @@ public final class GCGOperationAttackOuterClass {
       }
       private int bitField0_;
 
-      private int skillId_ ;
-      /**
-       * <code>uint32 skill_id = 15;</code>
-       * @return The skillId.
-       */
-      @java.lang.Override
-      public int getSkillId() {
-        return skillId_;
-      }
-      /**
-       * <code>uint32 skill_id = 15;</code>
-       * @param value The skillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillId(int value) {
-        
-        skillId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillId() {
-        
-        skillId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList costDiceIndexList_ = emptyIntList();
       private void ensureCostDiceIndexListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -584,7 +545,7 @@ public final class GCGOperationAttackOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @return A list containing the costDiceIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +554,14 @@ public final class GCGOperationAttackOuterClass {
                  java.util.Collections.unmodifiableList(costDiceIndexList_) : costDiceIndexList_;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @return The count of costDiceIndexList.
        */
       public int getCostDiceIndexListCount() {
         return costDiceIndexList_.size();
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @param index The index of the element to return.
        * @return The costDiceIndexList at the given index.
        */
@@ -608,7 +569,7 @@ public final class GCGOperationAttackOuterClass {
         return costDiceIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The costDiceIndexList to set.
        * @return This builder for chaining.
@@ -621,7 +582,7 @@ public final class GCGOperationAttackOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @param value The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -632,7 +593,7 @@ public final class GCGOperationAttackOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @param values The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -645,12 +606,43 @@ public final class GCGOperationAttackOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 14;</code>
+       * <code>repeated uint32 cost_dice_index_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostDiceIndexList() {
         costDiceIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int skillId_ ;
+      /**
+       * <code>uint32 skill_id = 14;</code>
+       * @return The skillId.
+       */
+      @java.lang.Override
+      public int getSkillId() {
+        return skillId_;
+      }
+      /**
+       * <code>uint32 skill_id = 14;</code>
+       * @param value The skillId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillId(int value) {
+        
+        skillId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 skill_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillId() {
+        
+        skillId_ = 0;
         onChanged();
         return this;
       }
@@ -722,8 +714,8 @@ public final class GCGOperationAttackOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGOperationAttack.proto\"D\n\022GCGOperati" +
-      "onAttack\022\020\n\010skill_id\030\017 \001(\r\022\034\n\024cost_dice_" +
-      "index_list\030\016 \003(\rB\033\n\031emu.grasscutter.net." +
+      "onAttack\022\034\n\024cost_dice_index_list\030\t \003(\r\022\020" +
+      "\n\010skill_id\030\016 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -735,7 +727,7 @@ public final class GCGOperationAttackOuterClass {
     internal_static_GCGOperationAttack_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationAttack_descriptor,
-        new java.lang.String[] { "SkillId", "CostDiceIndexList", });
+        new java.lang.String[] { "CostDiceIndexList", "SkillId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

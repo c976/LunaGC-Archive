@@ -19,15 +19,14 @@ public final class ServerMessageNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 index = 12;</code>
+     * <code>uint32 index = 5;</code>
      * @return The index.
      */
     int getIndex();
   }
   /**
    * <pre>
-   * CmdId: 20880
-   * Obf: IEOPFDFPIND
+   * CmdId: 789
    * </pre>
    *
    * Protobuf type {@code ServerMessageNotify}
@@ -74,7 +73,7 @@ public final class ServerMessageNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 40: {
 
               index_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class ServerMessageNotifyOuterClass {
               emu.grasscutter.net.proto.ServerMessageNotifyOuterClass.ServerMessageNotify.class, emu.grasscutter.net.proto.ServerMessageNotifyOuterClass.ServerMessageNotify.Builder.class);
     }
 
-    public static final int INDEX_FIELD_NUMBER = 12;
+    public static final int INDEX_FIELD_NUMBER = 5;
     private int index_;
     /**
-     * <code>uint32 index = 12;</code>
+     * <code>uint32 index = 5;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class ServerMessageNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (index_ != 0) {
-        output.writeUInt32(12, index_);
+        output.writeUInt32(5, index_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class ServerMessageNotifyOuterClass {
       size = 0;
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, index_);
+          .computeUInt32Size(5, index_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class ServerMessageNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20880
-     * Obf: IEOPFDFPIND
+     * CmdId: 789
      * </pre>
      *
      * Protobuf type {@code ServerMessageNotify}
@@ -431,7 +429,7 @@ public final class ServerMessageNotifyOuterClass {
 
       private int index_ ;
       /**
-       * <code>uint32 index = 12;</code>
+       * <code>uint32 index = 5;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class ServerMessageNotifyOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 12;</code>
+       * <code>uint32 index = 5;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class ServerMessageNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 12;</code>
+       * <code>uint32 index = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
@@ -527,7 +525,7 @@ public final class ServerMessageNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ServerMessageNotify.proto\"$\n\023ServerMes" +
-      "sageNotify\022\r\n\005index\030\014 \001(\rB\033\n\031emu.grasscu" +
+      "sageNotify\022\r\n\005index\030\005 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -15,73 +15,69 @@ public final class FoundationOpTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LJLDCFOCBKF
-   * </pre>
-   *
    * Protobuf enum {@code FoundationOpType}
    */
   public enum FoundationOpType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FOUNDATION_OP_NONE = 0;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_NONE = 0;</code>
      */
-    FOUNDATION_OP_NONE(0),
+    KHEPGJJGMKK_FOUNDATION_OP_NONE(0),
     /**
-     * <code>FOUNDATION_OP_BUILD = 1;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_BUILD = 1;</code>
      */
-    FOUNDATION_OP_BUILD(1),
+    KHEPGJJGMKK_FOUNDATION_OP_BUILD(1),
     /**
-     * <code>FOUNDATION_OP_DEMOLITION = 2;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION = 2;</code>
      */
-    FOUNDATION_OP_DEMOLITION(2),
+    KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION(2),
     /**
-     * <code>FOUNDATION_OP_REBUILD = 3;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_REBUILD = 3;</code>
      */
-    FOUNDATION_OP_REBUILD(3),
+    KHEPGJJGMKK_FOUNDATION_OP_REBUILD(3),
     /**
-     * <code>FOUNDATION_OP_ROTATE = 4;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_ROTATE = 4;</code>
      */
-    FOUNDATION_OP_ROTATE(4),
+    KHEPGJJGMKK_FOUNDATION_OP_ROTATE(4),
     /**
-     * <code>FOUNDATION_OP_LOCK = 5;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_LOCK = 5;</code>
      */
-    FOUNDATION_OP_LOCK(5),
+    KHEPGJJGMKK_FOUNDATION_OP_LOCK(5),
     /**
-     * <code>FOUNDATION_OP_UNLOCK = 6;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_UNLOCK = 6;</code>
      */
-    FOUNDATION_OP_UNLOCK(6),
+    KHEPGJJGMKK_FOUNDATION_OP_UNLOCK(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FOUNDATION_OP_NONE = 0;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_NONE = 0;</code>
      */
-    public static final int FOUNDATION_OP_NONE_VALUE = 0;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_NONE_VALUE = 0;
     /**
-     * <code>FOUNDATION_OP_BUILD = 1;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_BUILD = 1;</code>
      */
-    public static final int FOUNDATION_OP_BUILD_VALUE = 1;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_BUILD_VALUE = 1;
     /**
-     * <code>FOUNDATION_OP_DEMOLITION = 2;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION = 2;</code>
      */
-    public static final int FOUNDATION_OP_DEMOLITION_VALUE = 2;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION_VALUE = 2;
     /**
-     * <code>FOUNDATION_OP_REBUILD = 3;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_REBUILD = 3;</code>
      */
-    public static final int FOUNDATION_OP_REBUILD_VALUE = 3;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_REBUILD_VALUE = 3;
     /**
-     * <code>FOUNDATION_OP_ROTATE = 4;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_ROTATE = 4;</code>
      */
-    public static final int FOUNDATION_OP_ROTATE_VALUE = 4;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_ROTATE_VALUE = 4;
     /**
-     * <code>FOUNDATION_OP_LOCK = 5;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_LOCK = 5;</code>
      */
-    public static final int FOUNDATION_OP_LOCK_VALUE = 5;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_LOCK_VALUE = 5;
     /**
-     * <code>FOUNDATION_OP_UNLOCK = 6;</code>
+     * <code>KHEPGJJGMKK_FOUNDATION_OP_UNLOCK = 6;</code>
      */
-    public static final int FOUNDATION_OP_UNLOCK_VALUE = 6;
+    public static final int KHEPGJJGMKK_FOUNDATION_OP_UNLOCK_VALUE = 6;
 
 
     public final int getNumber() {
@@ -108,13 +104,13 @@ public final class FoundationOpTypeOuterClass {
      */
     public static FoundationOpType forNumber(int value) {
       switch (value) {
-        case 0: return FOUNDATION_OP_NONE;
-        case 1: return FOUNDATION_OP_BUILD;
-        case 2: return FOUNDATION_OP_DEMOLITION;
-        case 3: return FOUNDATION_OP_REBUILD;
-        case 4: return FOUNDATION_OP_ROTATE;
-        case 5: return FOUNDATION_OP_LOCK;
-        case 6: return FOUNDATION_OP_UNLOCK;
+        case 0: return KHEPGJJGMKK_FOUNDATION_OP_NONE;
+        case 1: return KHEPGJJGMKK_FOUNDATION_OP_BUILD;
+        case 2: return KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION;
+        case 3: return KHEPGJJGMKK_FOUNDATION_OP_REBUILD;
+        case 4: return KHEPGJJGMKK_FOUNDATION_OP_ROTATE;
+        case 5: return KHEPGJJGMKK_FOUNDATION_OP_LOCK;
+        case 6: return KHEPGJJGMKK_FOUNDATION_OP_UNLOCK;
         default: return null;
       }
     }
@@ -180,13 +176,15 @@ public final class FoundationOpTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FoundationOpType.proto*\310\001\n\020FoundationO" +
-      "pType\022\026\n\022FOUNDATION_OP_NONE\020\000\022\027\n\023FOUNDAT" +
-      "ION_OP_BUILD\020\001\022\034\n\030FOUNDATION_OP_DEMOLITI" +
-      "ON\020\002\022\031\n\025FOUNDATION_OP_REBUILD\020\003\022\030\n\024FOUND" +
-      "ATION_OP_ROTATE\020\004\022\026\n\022FOUNDATION_OP_LOCK\020" +
-      "\005\022\030\n\024FOUNDATION_OP_UNLOCK\020\006B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\026FoundationOpType.proto*\234\002\n\020FoundationO" +
+      "pType\022\"\n\036KHEPGJJGMKK_FOUNDATION_OP_NONE\020" +
+      "\000\022#\n\037KHEPGJJGMKK_FOUNDATION_OP_BUILD\020\001\022(" +
+      "\n$KHEPGJJGMKK_FOUNDATION_OP_DEMOLITION\020\002" +
+      "\022%\n!KHEPGJJGMKK_FOUNDATION_OP_REBUILD\020\003\022" +
+      "$\n KHEPGJJGMKK_FOUNDATION_OP_ROTATE\020\004\022\"\n" +
+      "\036KHEPGJJGMKK_FOUNDATION_OP_LOCK\020\005\022$\n KHE" +
+      "PGJJGMKK_FOUNDATION_OP_UNLOCK\020\006B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

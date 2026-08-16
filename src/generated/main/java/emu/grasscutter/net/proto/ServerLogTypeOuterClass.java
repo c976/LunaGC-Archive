@@ -15,10 +15,6 @@ public final class ServerLogTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf enum {@code ServerLogType}
    */
   public enum ServerLogType
@@ -47,6 +43,14 @@ public final class ServerLogTypeOuterClass {
      * <code>SERVER_LOG_DAILYTASK = 5;</code>
      */
     SERVER_LOG_DAILYTASK(5),
+    /**
+     * <code>SERVER_LOG_QUEST = 6;</code>
+     */
+    SERVER_LOG_QUEST(6),
+    /**
+     * <code>SERVER_LOG_ACTIVITY = 7;</code>
+     */
+    SERVER_LOG_ACTIVITY(7),
     UNRECOGNIZED(-1),
     ;
 
@@ -74,6 +78,14 @@ public final class ServerLogTypeOuterClass {
      * <code>SERVER_LOG_DAILYTASK = 5;</code>
      */
     public static final int SERVER_LOG_DAILYTASK_VALUE = 5;
+    /**
+     * <code>SERVER_LOG_QUEST = 6;</code>
+     */
+    public static final int SERVER_LOG_QUEST_VALUE = 6;
+    /**
+     * <code>SERVER_LOG_ACTIVITY = 7;</code>
+     */
+    public static final int SERVER_LOG_ACTIVITY_VALUE = 7;
 
 
     public final int getNumber() {
@@ -106,6 +118,8 @@ public final class ServerLogTypeOuterClass {
         case 3: return SERVER_LOG_ENTITY;
         case 4: return SERVER_LOG_LUA;
         case 5: return SERVER_LOG_DAILYTASK;
+        case 6: return SERVER_LOG_QUEST;
+        case 7: return SERVER_LOG_ACTIVITY;
         default: return null;
       }
     }
@@ -171,12 +185,13 @@ public final class ServerLogTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ServerLogType.proto*\227\001\n\rServerLogType\022" +
+      "\n\023ServerLogType.proto*\306\001\n\rServerLogType\022" +
       "\023\n\017SERVER_LOG_NONE\020\000\022\026\n\022SERVER_LOG_ABILI" +
       "TY\020\001\022\024\n\020SERVER_LOG_LEVEL\020\002\022\025\n\021SERVER_LOG" +
       "_ENTITY\020\003\022\022\n\016SERVER_LOG_LUA\020\004\022\030\n\024SERVER_" +
-      "LOG_DAILYTASK\020\005B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "LOG_DAILYTASK\020\005\022\024\n\020SERVER_LOG_QUEST\020\006\022\027\n" +
+      "\023SERVER_LOG_ACTIVITY\020\007B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,18 +19,30 @@ public final class AbilityGadgetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 camp_target_type = 2;</code>
      * @return The campTargetType.
      */
     int getCampTargetType();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 target_entity_id = 3;</code>
      * @return The targetEntityId.
      */
     int getTargetEntityId();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>uint32 camp_id = 1;</code>
      * @return The campId.
      */
@@ -131,6 +143,10 @@ public final class AbilityGadgetInfoOuterClass {
     public static final int CAMP_TARGET_TYPE_FIELD_NUMBER = 2;
     private int campTargetType_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 camp_target_type = 2;</code>
      * @return The campTargetType.
      */
@@ -142,6 +158,10 @@ public final class AbilityGadgetInfoOuterClass {
     public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 3;
     private int targetEntityId_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 target_entity_id = 3;</code>
      * @return The targetEntityId.
      */
@@ -153,6 +173,10 @@ public final class AbilityGadgetInfoOuterClass {
     public static final int CAMP_ID_FIELD_NUMBER = 1;
     private int campId_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>uint32 camp_id = 1;</code>
      * @return The campId.
      */
@@ -499,6 +523,10 @@ public final class AbilityGadgetInfoOuterClass {
 
       private int campTargetType_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 camp_target_type = 2;</code>
        * @return The campTargetType.
        */
@@ -507,6 +535,10 @@ public final class AbilityGadgetInfoOuterClass {
         return campTargetType_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 camp_target_type = 2;</code>
        * @param value The campTargetType to set.
        * @return This builder for chaining.
@@ -518,6 +550,10 @@ public final class AbilityGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 camp_target_type = 2;</code>
        * @return This builder for chaining.
        */
@@ -530,6 +566,10 @@ public final class AbilityGadgetInfoOuterClass {
 
       private int targetEntityId_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 target_entity_id = 3;</code>
        * @return The targetEntityId.
        */
@@ -538,6 +578,10 @@ public final class AbilityGadgetInfoOuterClass {
         return targetEntityId_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 target_entity_id = 3;</code>
        * @param value The targetEntityId to set.
        * @return This builder for chaining.
@@ -549,6 +593,10 @@ public final class AbilityGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 target_entity_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -561,6 +609,10 @@ public final class AbilityGadgetInfoOuterClass {
 
       private int campId_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>uint32 camp_id = 1;</code>
        * @return The campId.
        */
@@ -569,6 +621,10 @@ public final class AbilityGadgetInfoOuterClass {
         return campId_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>uint32 camp_id = 1;</code>
        * @param value The campId to set.
        * @return This builder for chaining.
@@ -580,6 +636,10 @@ public final class AbilityGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>uint32 camp_id = 1;</code>
        * @return This builder for chaining.
        */

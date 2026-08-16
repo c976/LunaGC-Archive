@@ -19,32 +19,47 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @return A list containing the skillId.
      */
     java.util.List<java.lang.Integer> getSkillIdList();
     /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @return The count of skillId.
      */
     int getSkillIdCount();
     /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @param index The index of the element to return.
      * @return The skillId at the given index.
      */
     int getSkillId(int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 23314
-   * Obf: HHGLBBHOLHB
+   * CmdId: 1925
    * </pre>
    *
    * Protobuf type {@code BrickBreakerSelectSkillRsp}
@@ -93,7 +108,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillId_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +116,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
               skillId_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -114,7 +129,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 48: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -154,21 +169,14 @@ public final class BrickBreakerSelectSkillRspOuterClass {
               emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp.class, emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int SKILL_ID_FIELD_NUMBER = 5;
+    public static final int SKILL_ID_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList skillId_;
     /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @return A list containing the skillId.
      */
     @java.lang.Override
@@ -177,14 +185,22 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       return skillId_;
     }
     /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @return The count of skillId.
      */
     public int getSkillIdCount() {
       return skillId_.size();
     }
     /**
-     * <code>repeated uint32 skill_id = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 skill_id = 6;</code>
      * @param index The index of the element to return.
      * @return The skillId at the given index.
      */
@@ -192,6 +208,21 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       return skillId_.getInt(index);
     }
     private int skillIdMemoizedSerializedSize = -1;
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -209,14 +240,14 @@ public final class BrickBreakerSelectSkillRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSkillIdList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(skillIdMemoizedSerializedSize);
       }
       for (int i = 0; i < skillId_.size(); i++) {
         output.writeUInt32NoTag(skillId_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,7 +274,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -260,10 +291,10 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       }
       emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp other = (emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getSkillIdList()
           .equals(other.getSkillIdList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +306,12 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getSkillIdCount() > 0) {
         hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
         hash = (53 * hash) + getSkillIdList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +409,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23314
-     * Obf: HHGLBBHOLHB
+     * CmdId: 1925
      * </pre>
      *
      * Protobuf type {@code BrickBreakerSelectSkillRsp}
@@ -419,10 +449,10 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         skillId_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
         return this;
       }
 
@@ -450,12 +480,12 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       public emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp buildPartial() {
         emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp result = new emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           skillId_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.skillId_ = skillId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -504,9 +534,6 @@ public final class BrickBreakerSelectSkillRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp other) {
         if (other == emu.grasscutter.net.proto.BrickBreakerSelectSkillRspOuterClass.BrickBreakerSelectSkillRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.skillId_.isEmpty()) {
           if (skillId_.isEmpty()) {
             skillId_ = other.skillId_;
@@ -516,6 +543,9 @@ public final class BrickBreakerSelectSkillRspOuterClass {
             skillId_.addAll(other.skillId_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,37 +577,6 @@ public final class BrickBreakerSelectSkillRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList skillId_ = emptyIntList();
       private void ensureSkillIdIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -586,7 +585,11 @@ public final class BrickBreakerSelectSkillRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @return A list containing the skillId.
        */
       public java.util.List<java.lang.Integer>
@@ -595,14 +598,22 @@ public final class BrickBreakerSelectSkillRspOuterClass {
                  java.util.Collections.unmodifiableList(skillId_) : skillId_;
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @return The count of skillId.
        */
       public int getSkillIdCount() {
         return skillId_.size();
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @param index The index of the element to return.
        * @return The skillId at the given index.
        */
@@ -610,7 +621,11 @@ public final class BrickBreakerSelectSkillRspOuterClass {
         return skillId_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @param index The index to set the value at.
        * @param value The skillId to set.
        * @return This builder for chaining.
@@ -623,7 +638,11 @@ public final class BrickBreakerSelectSkillRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @param value The skillId to add.
        * @return This builder for chaining.
        */
@@ -634,7 +653,11 @@ public final class BrickBreakerSelectSkillRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @param values The skillId to add.
        * @return This builder for chaining.
        */
@@ -647,12 +670,59 @@ public final class BrickBreakerSelectSkillRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_id = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 skill_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
         skillId_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -724,8 +794,8 @@ public final class BrickBreakerSelectSkillRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n BrickBreakerSelectSkillRsp.proto\"?\n\032Br" +
-      "ickBreakerSelectSkillRsp\022\017\n\007retcode\030\006 \001(" +
-      "\005\022\020\n\010skill_id\030\005 \003(\rB\033\n\031emu.grasscutter.n" +
+      "ickBreakerSelectSkillRsp\022\020\n\010skill_id\030\006 \003" +
+      "(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +807,7 @@ public final class BrickBreakerSelectSkillRspOuterClass {
     internal_static_BrickBreakerSelectSkillRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BrickBreakerSelectSkillRsp_descriptor,
-        new java.lang.String[] { "Retcode", "SkillId", });
+        new java.lang.String[] { "SkillId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

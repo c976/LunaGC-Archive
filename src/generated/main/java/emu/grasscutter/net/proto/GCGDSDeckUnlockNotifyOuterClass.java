@@ -19,17 +19,16 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <pre>
+     * CMD_ID = 21237
+     * </pre>
+     *
+     * <code>uint32 deck_id = 2;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
-   * <pre>
-   * CmdId: 2863
-   * Obf: GGKAJODMIJJ
-   * </pre>
-   *
    * Protobuf type {@code GCGDSDeckUnlockNotify}
    */
   public static final class GCGDSDeckUnlockNotify extends
@@ -74,7 +73,7 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 16: {
 
               deckId_ = input.readUInt32();
               break;
@@ -111,10 +110,14 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSDeckUnlockNotifyOuterClass.GCGDSDeckUnlockNotify.class, emu.grasscutter.net.proto.GCGDSDeckUnlockNotifyOuterClass.GCGDSDeckUnlockNotify.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 15;
+    public static final int DECK_ID_FIELD_NUMBER = 2;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 15;</code>
+     * <pre>
+     * CMD_ID = 21237
+     * </pre>
+     *
+     * <code>uint32 deck_id = 2;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (deckId_ != 0) {
-        output.writeUInt32(15, deckId_);
+        output.writeUInt32(2, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
       size = 0;
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, deckId_);
+          .computeUInt32Size(2, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +281,6 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 2863
-     * Obf: GGKAJODMIJJ
-     * </pre>
-     *
      * Protobuf type {@code GCGDSDeckUnlockNotify}
      */
     public static final class Builder extends
@@ -431,7 +429,11 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <pre>
+       * CMD_ID = 21237
+       * </pre>
+       *
+       * <code>uint32 deck_id = 2;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -439,7 +441,11 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <pre>
+       * CMD_ID = 21237
+       * </pre>
+       *
+       * <code>uint32 deck_id = 2;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +456,11 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 15;</code>
+       * <pre>
+       * CMD_ID = 21237
+       * </pre>
+       *
+       * <code>uint32 deck_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -527,7 +537,7 @@ public final class GCGDSDeckUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GCGDSDeckUnlockNotify.proto\"(\n\025GCGDSDe" +
-      "ckUnlockNotify\022\017\n\007deck_id\030\017 \001(\rB\033\n\031emu.g" +
+      "ckUnlockNotify\022\017\n\007deck_id\030\002 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

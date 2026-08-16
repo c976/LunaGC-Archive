@@ -15,41 +15,37 @@ public final class CustomDungeonStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: FNOIEOJLKAB
-   * </pre>
-   *
    * Protobuf enum {@code CustomDungeonState}
    */
   public enum CustomDungeonState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CUSTOM_DUNGEON_STATE_EDIT = 0;</code>
+     * <code>DLDLLELKJIF_EDIT = 0;</code>
      */
-    CUSTOM_DUNGEON_STATE_EDIT(0),
+    DLDLLELKJIF_EDIT(0),
     /**
-     * <code>CUSTOM_DUNGEON_STATE_SELF_PASS = 1;</code>
+     * <code>DLDLLELKJIF_SELF_PASS = 1;</code>
      */
-    CUSTOM_DUNGEON_STATE_SELF_PASS(1),
+    DLDLLELKJIF_SELF_PASS(1),
     /**
-     * <code>CUSTOM_DUNGEON_STATE_PUBLISHED = 2;</code>
+     * <code>DLDLLELKJIF_PUBLISHED = 2;</code>
      */
-    CUSTOM_DUNGEON_STATE_PUBLISHED(2),
+    DLDLLELKJIF_PUBLISHED(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CUSTOM_DUNGEON_STATE_EDIT = 0;</code>
+     * <code>DLDLLELKJIF_EDIT = 0;</code>
      */
-    public static final int CUSTOM_DUNGEON_STATE_EDIT_VALUE = 0;
+    public static final int DLDLLELKJIF_EDIT_VALUE = 0;
     /**
-     * <code>CUSTOM_DUNGEON_STATE_SELF_PASS = 1;</code>
+     * <code>DLDLLELKJIF_SELF_PASS = 1;</code>
      */
-    public static final int CUSTOM_DUNGEON_STATE_SELF_PASS_VALUE = 1;
+    public static final int DLDLLELKJIF_SELF_PASS_VALUE = 1;
     /**
-     * <code>CUSTOM_DUNGEON_STATE_PUBLISHED = 2;</code>
+     * <code>DLDLLELKJIF_PUBLISHED = 2;</code>
      */
-    public static final int CUSTOM_DUNGEON_STATE_PUBLISHED_VALUE = 2;
+    public static final int DLDLLELKJIF_PUBLISHED_VALUE = 2;
 
 
     public final int getNumber() {
@@ -76,9 +72,9 @@ public final class CustomDungeonStateOuterClass {
      */
     public static CustomDungeonState forNumber(int value) {
       switch (value) {
-        case 0: return CUSTOM_DUNGEON_STATE_EDIT;
-        case 1: return CUSTOM_DUNGEON_STATE_SELF_PASS;
-        case 2: return CUSTOM_DUNGEON_STATE_PUBLISHED;
+        case 0: return DLDLLELKJIF_EDIT;
+        case 1: return DLDLLELKJIF_SELF_PASS;
+        case 2: return DLDLLELKJIF_PUBLISHED;
         default: return null;
       }
     }
@@ -144,11 +140,11 @@ public final class CustomDungeonStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030CustomDungeonState.proto*{\n\022CustomDung" +
-      "eonState\022\035\n\031CUSTOM_DUNGEON_STATE_EDIT\020\000\022" +
-      "\"\n\036CUSTOM_DUNGEON_STATE_SELF_PASS\020\001\022\"\n\036C" +
-      "USTOM_DUNGEON_STATE_PUBLISHED\020\002B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\030CustomDungeonState.proto*`\n\022CustomDung" +
+      "eonState\022\024\n\020DLDLLELKJIF_EDIT\020\000\022\031\n\025DLDLLE" +
+      "LKJIF_SELF_PASS\020\001\022\031\n\025DLDLLELKJIF_PUBLISH" +
+      "ED\020\002B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

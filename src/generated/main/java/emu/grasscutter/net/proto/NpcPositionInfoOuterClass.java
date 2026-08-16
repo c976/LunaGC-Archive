@@ -40,11 +40,6 @@ public final class NpcPositionInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: ICFBHOPMKCI
-   * </pre>
-   *
    * Protobuf type {@code NpcPositionInfo}
    */
   public static final class NpcPositionInfo extends
@@ -348,11 +343,6 @@ public final class NpcPositionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: ICFBHOPMKCI
-     * </pre>
-     *
      * Protobuf type {@code NpcPositionInfo}
      */
     public static final class Builder extends

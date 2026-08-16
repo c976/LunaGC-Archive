@@ -20,40 +20,40 @@ public final class CompoundBoostTakeStatusTypeOuterClass {
   public enum CompoundBoostTakeStatusType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_NONE = 0;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_NONE = 0;</code>
      */
-    COMPOUND_BOOST_TAKE_STATUS_TYPE_NONE(0),
+    HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_NONE(0),
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY = 1;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY = 1;</code>
      */
-    COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY(1),
+    HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY(1),
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_AND_TAKE = 2;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE = 2;</code>
      */
-    COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_AND_TAKE(2),
+    HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE(2),
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BAG_FULL = 3;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FULL = 3;</code>
      */
-    COMPOUND_BOOST_TAKE_STATUS_TYPE_BAG_FULL(3),
+    HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FULL(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_NONE = 0;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_NONE = 0;</code>
      */
-    public static final int COMPOUND_BOOST_TAKE_STATUS_TYPE_NONE_VALUE = 0;
+    public static final int HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_NONE_VALUE = 0;
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY = 1;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY = 1;</code>
      */
-    public static final int COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY_VALUE = 1;
+    public static final int HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY_VALUE = 1;
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_AND_TAKE = 2;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE = 2;</code>
      */
-    public static final int COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_AND_TAKE_VALUE = 2;
+    public static final int HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE_VALUE = 2;
     /**
-     * <code>COMPOUND_BOOST_TAKE_STATUS_TYPE_BAG_FULL = 3;</code>
+     * <code>HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FULL = 3;</code>
      */
-    public static final int COMPOUND_BOOST_TAKE_STATUS_TYPE_BAG_FULL_VALUE = 3;
+    public static final int HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FULL_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class CompoundBoostTakeStatusTypeOuterClass {
      */
     public static CompoundBoostTakeStatusType forNumber(int value) {
       switch (value) {
-        case 0: return COMPOUND_BOOST_TAKE_STATUS_TYPE_NONE;
-        case 1: return COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY;
-        case 2: return COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_AND_TAKE;
-        case 3: return COMPOUND_BOOST_TAKE_STATUS_TYPE_BAG_FULL;
+        case 0: return HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_NONE;
+        case 1: return HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY;
+        case 2: return HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE;
+        case 3: return HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FULL;
         default: return null;
       }
     }
@@ -149,14 +149,14 @@ public final class CompoundBoostTakeStatusTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!CompoundBoostTakeStatusType.proto*\331\001\n\033" +
-      "CompoundBoostTakeStatusType\022(\n$COMPOUND_" +
-      "BOOST_TAKE_STATUS_TYPE_NONE\020\000\022.\n*COMPOUN" +
-      "D_BOOST_TAKE_STATUS_TYPE_BOOST_ONLY\020\001\0222\n" +
-      ".COMPOUND_BOOST_TAKE_STATUS_TYPE_BOOST_A" +
-      "ND_TAKE\020\002\022,\n(COMPOUND_BOOST_TAKE_STATUS_" +
-      "TYPE_BAG_FULL\020\003B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n!CompoundBoostTakeStatusType.proto*\365\001\n\033" +
+      "CompoundBoostTakeStatusType\022/\n+HAJKPMJDP" +
+      "IL_COMPOUND_BOOST_TAKE_STATUS_NONE\020\000\0225\n1" +
+      "HAJKPMJDPIL_COMPOUND_BOOST_TAKE_STATUS_B" +
+      "OOST_ONLY\020\001\0229\n5HAJKPMJDPIL_COMPOUND_BOOS" +
+      "T_TAKE_STATUS_BOOST_AND_TAKE\020\002\0223\n/HAJKPM" +
+      "JDPIL_COMPOUND_BOOST_TAKE_STATUS_BAG_FUL" +
+      "L\020\003B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

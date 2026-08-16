@@ -15,89 +15,85 @@ public final class GCGZoneTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: BENDDOOFHHP
-   * </pre>
-   *
    * Protobuf enum {@code GCGZoneType}
    */
   public enum GCGZoneType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GCG_ZONE_INVALID = 0;</code>
+     * <code>GCG_ZONE_TYPE_INVALID = 0;</code>
      */
-    GCG_ZONE_INVALID(0),
+    GCG_ZONE_TYPE_INVALID(0),
     /**
-     * <code>GCG_ZONE_DECK = 1;</code>
+     * <code>GCG_ZONE_TYPE_DECK = 1;</code>
      */
-    GCG_ZONE_DECK(1),
+    GCG_ZONE_TYPE_DECK(1),
     /**
-     * <code>GCG_ZONE_HAND = 2;</code>
+     * <code>GCG_ZONE_TYPE_HAND = 2;</code>
      */
-    GCG_ZONE_HAND(2),
+    GCG_ZONE_TYPE_HAND(2),
     /**
-     * <code>GCG_ZONE_CHARACTER = 3;</code>
+     * <code>GCG_ZONE_TYPE_CHARACTER = 3;</code>
      */
-    GCG_ZONE_CHARACTER(3),
+    GCG_ZONE_TYPE_CHARACTER(3),
     /**
-     * <code>GCG_ZONE_MODIFY = 4;</code>
+     * <code>GCG_ZONE_TYPE_MODIFY = 4;</code>
      */
-    GCG_ZONE_MODIFY(4),
+    GCG_ZONE_TYPE_MODIFY(4),
     /**
-     * <code>GCG_ZONE_SUMMON = 5;</code>
+     * <code>GCG_ZONE_TYPE_SUMMON = 5;</code>
      */
-    GCG_ZONE_SUMMON(5),
+    GCG_ZONE_TYPE_SUMMON(5),
     /**
-     * <code>GCG_ZONE_ASSIST = 7;</code>
+     * <code>GCG_ZONE_TYPE_ASSIST = 7;</code>
      */
-    GCG_ZONE_ASSIST(7),
+    GCG_ZONE_TYPE_ASSIST(7),
     /**
-     * <code>GCG_ZONE_ONSTAGE = 8;</code>
+     * <code>GCG_ZONE_TYPE_ONSTAGE = 8;</code>
      */
-    GCG_ZONE_ONSTAGE(8),
+    GCG_ZONE_TYPE_ONSTAGE(8),
     /**
-     * <code>GCG_ZONE_RULE = 9;</code>
+     * <code>GCG_ZONE_TYPE_RULE = 9;</code>
      */
-    GCG_ZONE_RULE(9),
+    GCG_ZONE_TYPE_RULE(9),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GCG_ZONE_INVALID = 0;</code>
+     * <code>GCG_ZONE_TYPE_INVALID = 0;</code>
      */
-    public static final int GCG_ZONE_INVALID_VALUE = 0;
+    public static final int GCG_ZONE_TYPE_INVALID_VALUE = 0;
     /**
-     * <code>GCG_ZONE_DECK = 1;</code>
+     * <code>GCG_ZONE_TYPE_DECK = 1;</code>
      */
-    public static final int GCG_ZONE_DECK_VALUE = 1;
+    public static final int GCG_ZONE_TYPE_DECK_VALUE = 1;
     /**
-     * <code>GCG_ZONE_HAND = 2;</code>
+     * <code>GCG_ZONE_TYPE_HAND = 2;</code>
      */
-    public static final int GCG_ZONE_HAND_VALUE = 2;
+    public static final int GCG_ZONE_TYPE_HAND_VALUE = 2;
     /**
-     * <code>GCG_ZONE_CHARACTER = 3;</code>
+     * <code>GCG_ZONE_TYPE_CHARACTER = 3;</code>
      */
-    public static final int GCG_ZONE_CHARACTER_VALUE = 3;
+    public static final int GCG_ZONE_TYPE_CHARACTER_VALUE = 3;
     /**
-     * <code>GCG_ZONE_MODIFY = 4;</code>
+     * <code>GCG_ZONE_TYPE_MODIFY = 4;</code>
      */
-    public static final int GCG_ZONE_MODIFY_VALUE = 4;
+    public static final int GCG_ZONE_TYPE_MODIFY_VALUE = 4;
     /**
-     * <code>GCG_ZONE_SUMMON = 5;</code>
+     * <code>GCG_ZONE_TYPE_SUMMON = 5;</code>
      */
-    public static final int GCG_ZONE_SUMMON_VALUE = 5;
+    public static final int GCG_ZONE_TYPE_SUMMON_VALUE = 5;
     /**
-     * <code>GCG_ZONE_ASSIST = 7;</code>
+     * <code>GCG_ZONE_TYPE_ASSIST = 7;</code>
      */
-    public static final int GCG_ZONE_ASSIST_VALUE = 7;
+    public static final int GCG_ZONE_TYPE_ASSIST_VALUE = 7;
     /**
-     * <code>GCG_ZONE_ONSTAGE = 8;</code>
+     * <code>GCG_ZONE_TYPE_ONSTAGE = 8;</code>
      */
-    public static final int GCG_ZONE_ONSTAGE_VALUE = 8;
+    public static final int GCG_ZONE_TYPE_ONSTAGE_VALUE = 8;
     /**
-     * <code>GCG_ZONE_RULE = 9;</code>
+     * <code>GCG_ZONE_TYPE_RULE = 9;</code>
      */
-    public static final int GCG_ZONE_RULE_VALUE = 9;
+    public static final int GCG_ZONE_TYPE_RULE_VALUE = 9;
 
 
     public final int getNumber() {
@@ -124,15 +120,15 @@ public final class GCGZoneTypeOuterClass {
      */
     public static GCGZoneType forNumber(int value) {
       switch (value) {
-        case 0: return GCG_ZONE_INVALID;
-        case 1: return GCG_ZONE_DECK;
-        case 2: return GCG_ZONE_HAND;
-        case 3: return GCG_ZONE_CHARACTER;
-        case 4: return GCG_ZONE_MODIFY;
-        case 5: return GCG_ZONE_SUMMON;
-        case 7: return GCG_ZONE_ASSIST;
-        case 8: return GCG_ZONE_ONSTAGE;
-        case 9: return GCG_ZONE_RULE;
+        case 0: return GCG_ZONE_TYPE_INVALID;
+        case 1: return GCG_ZONE_TYPE_DECK;
+        case 2: return GCG_ZONE_TYPE_HAND;
+        case 3: return GCG_ZONE_TYPE_CHARACTER;
+        case 4: return GCG_ZONE_TYPE_MODIFY;
+        case 5: return GCG_ZONE_TYPE_SUMMON;
+        case 7: return GCG_ZONE_TYPE_ASSIST;
+        case 8: return GCG_ZONE_TYPE_ONSTAGE;
+        case 9: return GCG_ZONE_TYPE_RULE;
         default: return null;
       }
     }
@@ -198,13 +194,14 @@ public final class GCGZoneTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GCGZoneType.proto*\311\001\n\013GCGZoneType\022\024\n\020G" +
-      "CG_ZONE_INVALID\020\000\022\021\n\rGCG_ZONE_DECK\020\001\022\021\n\r" +
-      "GCG_ZONE_HAND\020\002\022\026\n\022GCG_ZONE_CHARACTER\020\003\022" +
-      "\023\n\017GCG_ZONE_MODIFY\020\004\022\023\n\017GCG_ZONE_SUMMON\020" +
-      "\005\022\023\n\017GCG_ZONE_ASSIST\020\007\022\024\n\020GCG_ZONE_ONSTA" +
-      "GE\020\010\022\021\n\rGCG_ZONE_RULE\020\tB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\021GCGZoneType.proto*\366\001\n\013GCGZoneType\022\031\n\025G" +
+      "CG_ZONE_TYPE_INVALID\020\000\022\026\n\022GCG_ZONE_TYPE_" +
+      "DECK\020\001\022\026\n\022GCG_ZONE_TYPE_HAND\020\002\022\033\n\027GCG_ZO" +
+      "NE_TYPE_CHARACTER\020\003\022\030\n\024GCG_ZONE_TYPE_MOD" +
+      "IFY\020\004\022\030\n\024GCG_ZONE_TYPE_SUMMON\020\005\022\030\n\024GCG_Z" +
+      "ONE_TYPE_ASSIST\020\007\022\031\n\025GCG_ZONE_TYPE_ONSTA" +
+      "GE\020\010\022\026\n\022GCG_ZONE_TYPE_RULE\020\tB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

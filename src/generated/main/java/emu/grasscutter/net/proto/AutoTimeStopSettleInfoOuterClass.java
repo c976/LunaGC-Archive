@@ -19,22 +19,22 @@ public final class AutoTimeStopSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BIPHADFGKLC = 2;</code>
-     * @return The bIPHADFGKLC.
+     * <code>uint32 score = 6;</code>
+     * @return The score.
      */
-    int getBIPHADFGKLC();
+    int getScore();
+
+    /**
+     * <code>uint32 MLAAFBKDHOO = 8;</code>
+     * @return The mLAAFBKDHOO.
+     */
+    int getMLAAFBKDHOO();
 
     /**
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
-
-    /**
-     * <code>uint32 score = 8;</code>
-     * @return The score.
-     */
-    int getScore();
 
     /**
      * <code>bool is_new_record = 11;</code>
@@ -87,14 +87,14 @@ public final class AutoTimeStopSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
-              bIPHADFGKLC_ = input.readUInt32();
+              score_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              score_ = input.readUInt32();
+              mLAAFBKDHOO_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -139,15 +139,26 @@ public final class AutoTimeStopSettleInfoOuterClass {
               emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.class, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder.class);
     }
 
-    public static final int BIPHADFGKLC_FIELD_NUMBER = 2;
-    private int bIPHADFGKLC_;
+    public static final int SCORE_FIELD_NUMBER = 6;
+    private int score_;
     /**
-     * <code>uint32 BIPHADFGKLC = 2;</code>
-     * @return The bIPHADFGKLC.
+     * <code>uint32 score = 6;</code>
+     * @return The score.
      */
     @java.lang.Override
-    public int getBIPHADFGKLC() {
-      return bIPHADFGKLC_;
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int MLAAFBKDHOO_FIELD_NUMBER = 8;
+    private int mLAAFBKDHOO_;
+    /**
+     * <code>uint32 MLAAFBKDHOO = 8;</code>
+     * @return The mLAAFBKDHOO.
+     */
+    @java.lang.Override
+    public int getMLAAFBKDHOO() {
+      return mLAAFBKDHOO_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 9;
@@ -159,17 +170,6 @@ public final class AutoTimeStopSettleInfoOuterClass {
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 8;
-    private int score_;
-    /**
-     * <code>uint32 score = 8;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
     }
 
     public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
@@ -197,11 +197,11 @@ public final class AutoTimeStopSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bIPHADFGKLC_ != 0) {
-        output.writeUInt32(2, bIPHADFGKLC_);
-      }
       if (score_ != 0) {
-        output.writeUInt32(8, score_);
+        output.writeUInt32(6, score_);
+      }
+      if (mLAAFBKDHOO_ != 0) {
+        output.writeUInt32(8, mLAAFBKDHOO_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(9, levelId_);
@@ -218,13 +218,13 @@ public final class AutoTimeStopSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bIPHADFGKLC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bIPHADFGKLC_);
-      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, score_);
+          .computeUInt32Size(6, score_);
+      }
+      if (mLAAFBKDHOO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, mLAAFBKDHOO_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,12 +249,12 @@ public final class AutoTimeStopSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo other = (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) obj;
 
-      if (getBIPHADFGKLC()
-          != other.getBIPHADFGKLC()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getMLAAFBKDHOO()
+          != other.getMLAAFBKDHOO()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -268,12 +268,12 @@ public final class AutoTimeStopSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BIPHADFGKLC_FIELD_NUMBER;
-      hash = (53 * hash) + getBIPHADFGKLC();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + MLAAFBKDHOO_FIELD_NUMBER;
+      hash = (53 * hash) + getMLAAFBKDHOO();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
@@ -410,11 +410,11 @@ public final class AutoTimeStopSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bIPHADFGKLC_ = 0;
+        score_ = 0;
+
+        mLAAFBKDHOO_ = 0;
 
         levelId_ = 0;
-
-        score_ = 0;
 
         isNewRecord_ = false;
 
@@ -444,9 +444,9 @@ public final class AutoTimeStopSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo buildPartial() {
         emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo result = new emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo(this);
-        result.bIPHADFGKLC_ = bIPHADFGKLC_;
-        result.levelId_ = levelId_;
         result.score_ = score_;
+        result.mLAAFBKDHOO_ = mLAAFBKDHOO_;
+        result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
@@ -496,14 +496,14 @@ public final class AutoTimeStopSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo other) {
         if (other == emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance()) return this;
-        if (other.getBIPHADFGKLC() != 0) {
-          setBIPHADFGKLC(other.getBIPHADFGKLC());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getMLAAFBKDHOO() != 0) {
+          setMLAAFBKDHOO(other.getMLAAFBKDHOO());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
-        }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
@@ -537,33 +537,64 @@ public final class AutoTimeStopSettleInfoOuterClass {
         return this;
       }
 
-      private int bIPHADFGKLC_ ;
+      private int score_ ;
       /**
-       * <code>uint32 BIPHADFGKLC = 2;</code>
-       * @return The bIPHADFGKLC.
+       * <code>uint32 score = 6;</code>
+       * @return The score.
        */
       @java.lang.Override
-      public int getBIPHADFGKLC() {
-        return bIPHADFGKLC_;
+      public int getScore() {
+        return score_;
       }
       /**
-       * <code>uint32 BIPHADFGKLC = 2;</code>
-       * @param value The bIPHADFGKLC to set.
+       * <code>uint32 score = 6;</code>
+       * @param value The score to set.
        * @return This builder for chaining.
        */
-      public Builder setBIPHADFGKLC(int value) {
+      public Builder setScore(int value) {
         
-        bIPHADFGKLC_ = value;
+        score_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BIPHADFGKLC = 2;</code>
+       * <code>uint32 score = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBIPHADFGKLC() {
+      public Builder clearScore() {
         
-        bIPHADFGKLC_ = 0;
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mLAAFBKDHOO_ ;
+      /**
+       * <code>uint32 MLAAFBKDHOO = 8;</code>
+       * @return The mLAAFBKDHOO.
+       */
+      @java.lang.Override
+      public int getMLAAFBKDHOO() {
+        return mLAAFBKDHOO_;
+      }
+      /**
+       * <code>uint32 MLAAFBKDHOO = 8;</code>
+       * @param value The mLAAFBKDHOO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMLAAFBKDHOO(int value) {
+        
+        mLAAFBKDHOO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MLAAFBKDHOO = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMLAAFBKDHOO() {
+        
+        mLAAFBKDHOO_ = 0;
         onChanged();
         return this;
       }
@@ -595,37 +626,6 @@ public final class AutoTimeStopSettleInfoOuterClass {
       public Builder clearLevelId() {
         
         levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 8;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 8;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
         onChanged();
         return this;
       }
@@ -728,8 +728,8 @@ public final class AutoTimeStopSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034AutoTimeStopSettleInfo.proto\"e\n\026AutoTi" +
-      "meStopSettleInfo\022\023\n\013BIPHADFGKLC\030\002 \001(\r\022\020\n" +
-      "\010level_id\030\t \001(\r\022\r\n\005score\030\010 \001(\r\022\025\n\ris_new" +
+      "meStopSettleInfo\022\r\n\005score\030\006 \001(\r\022\023\n\013MLAAF" +
+      "BKDHOO\030\010 \001(\r\022\020\n\010level_id\030\t \001(\r\022\025\n\ris_new" +
       "_record\030\013 \001(\010B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
@@ -742,7 +742,7 @@ public final class AutoTimeStopSettleInfoOuterClass {
     internal_static_AutoTimeStopSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AutoTimeStopSettleInfo_descriptor,
-        new java.lang.String[] { "BIPHADFGKLC", "LevelId", "Score", "IsNewRecord", });
+        new java.lang.String[] { "Score", "MLAAFBKDHOO", "LevelId", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

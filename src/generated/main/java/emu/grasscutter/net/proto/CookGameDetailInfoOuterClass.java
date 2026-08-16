@@ -19,27 +19,47 @@ public final class CookGameDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> 
+    java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> 
         getLevelInfoListList();
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
-    emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ getLevelInfoList(int index);
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
-    emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -89,13 +109,13 @@ public final class CookGameDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -133,42 +153,62 @@ public final class CookGameDetailInfoOuterClass {
               emu.grasscutter.net.proto.CookGameDetailInfoOuterClass.CookGameDetailInfo.class, emu.grasscutter.net.proto.CookGameDetailInfoOuterClass.CookGameDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> levelInfoList_;
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -188,7 +228,7 @@ public final class CookGameDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(10, levelInfoList_.get(i));
+        output.writeMessage(3, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +241,7 @@ public final class CookGameDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, levelInfoList_.get(i));
+          .computeMessageSize(3, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -515,22 +555,26 @@ public final class CookGameDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ>(levelInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -538,7 +582,11 @@ public final class CookGameDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,9 +596,13 @@ public final class CookGameDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -558,10 +610,14 @@ public final class CookGameDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo value) {
+          int index, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -575,10 +631,14 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -589,9 +649,13 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -605,10 +669,14 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo value) {
+          int index, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -622,10 +690,14 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -636,10 +708,14 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -650,10 +726,14 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -665,7 +745,11 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +762,11 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,16 +779,24 @@ public final class CookGameDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -708,9 +804,13 @@ public final class CookGameDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -719,33 +819,45 @@ public final class CookGameDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .CookGameLevellInfo level_info_list = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .HDLPNNFKOPJ level_info_list = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder> 
+          emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfo.Builder, emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.CookGameLevellInfoOrBuilder>(
+              emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJ.Builder, emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.HDLPNNFKOPJOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -821,15 +933,15 @@ public final class CookGameDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030CookGameDetailInfo.proto\032\030CookGameLeve" +
-      "llInfo.proto\"B\n\022CookGameDetailInfo\022,\n\017le" +
-      "vel_info_list\030\n \003(\0132\023.CookGameLevellInfo" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\030CookGameDetailInfo.proto\032\021HDLPNNFKOPJ." +
+      "proto\";\n\022CookGameDetailInfo\022%\n\017level_inf" +
+      "o_list\030\003 \003(\0132\014.HDLPNNFKOPJB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.getDescriptor(),
         });
     internal_static_CookGameDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -837,7 +949,7 @@ public final class CookGameDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CookGameDetailInfo_descriptor,
         new java.lang.String[] { "LevelInfoList", });
-    emu.grasscutter.net.proto.CookGameLevellInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HDLPNNFKOPJOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

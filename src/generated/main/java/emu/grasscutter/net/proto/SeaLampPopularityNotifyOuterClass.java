@@ -26,8 +26,7 @@ public final class SeaLampPopularityNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6421
-   * Obf: IFNKOMOKHDM
+   * CmdId: 4726
    * </pre>
    *
    * Protobuf type {@code SeaLampPopularityNotify}
@@ -279,8 +278,7 @@ public final class SeaLampPopularityNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6421
-     * Obf: IFNKOMOKHDM
+     * CmdId: 4726
      * </pre>
      *
      * Protobuf type {@code SeaLampPopularityNotify}

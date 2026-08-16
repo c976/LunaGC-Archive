@@ -19,21 +19,20 @@ public final class InstableSprayRestartDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 2448
-   * Obf: PEIAOFDMODM
+   * CmdId: 2532
    * </pre>
    *
    * Protobuf type {@code InstableSprayRestartDungeonRsp}
@@ -80,12 +79,12 @@ public final class InstableSprayRestartDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,10 +121,10 @@ public final class InstableSprayRestartDungeonRspOuterClass {
               emu.grasscutter.net.proto.InstableSprayRestartDungeonRspOuterClass.InstableSprayRestartDungeonRsp.class, emu.grasscutter.net.proto.InstableSprayRestartDungeonRspOuterClass.InstableSprayRestartDungeonRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class InstableSprayRestartDungeonRspOuterClass {
       return levelId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +158,10 @@ public final class InstableSprayRestartDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
+        output.writeUInt32(6, levelId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class InstableSprayRestartDungeonRspOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
+          .computeUInt32Size(6, levelId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2448
-     * Obf: PEIAOFDMODM
+     * CmdId: 2532
      * </pre>
      *
      * Protobuf type {@code InstableSprayRestartDungeonRsp}
@@ -470,7 +468,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -501,7 +499,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +596,7 @@ public final class InstableSprayRestartDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$InstableSprayRestartDungeonRsp.proto\"C" +
       "\n\036InstableSprayRestartDungeonRsp\022\020\n\010leve" +
-      "l_id\030\001 \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grass" +
+      "l_id\030\006 \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

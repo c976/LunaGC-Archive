@@ -19,22 +19,18 @@ public final class GCGLimitsInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ALDCMICHPPK = 11;</code>
-     * @return The aLDCMICHPPK.
+     * <code>uint32 limit_value = 4;</code>
+     * @return The limitValue.
      */
-    int getALDCMICHPPK();
+    int getLimitValue();
 
     /**
-     * <code>uint32 IHELMLLKKJB = 7;</code>
-     * @return The iHELMLLKKJB.
+     * <code>uint32 limit_type = 15;</code>
+     * @return The limitType.
      */
-    int getIHELMLLKKJB();
+    int getLimitType();
   }
   /**
-   * <pre>
-   * Obf: NNODCOEDNIP
-   * </pre>
-   *
    * Protobuf type {@code GCGLimitsInfo}
    */
   public static final class GCGLimitsInfo extends
@@ -79,14 +75,14 @@ public final class GCGLimitsInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
-              iHELMLLKKJB_ = input.readUInt32();
+              limitValue_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
-              aLDCMICHPPK_ = input.readUInt32();
+              limitType_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class GCGLimitsInfoOuterClass {
               emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.class, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder.class);
     }
 
-    public static final int ALDCMICHPPK_FIELD_NUMBER = 11;
-    private int aLDCMICHPPK_;
+    public static final int LIMIT_VALUE_FIELD_NUMBER = 4;
+    private int limitValue_;
     /**
-     * <code>uint32 ALDCMICHPPK = 11;</code>
-     * @return The aLDCMICHPPK.
+     * <code>uint32 limit_value = 4;</code>
+     * @return The limitValue.
      */
     @java.lang.Override
-    public int getALDCMICHPPK() {
-      return aLDCMICHPPK_;
+    public int getLimitValue() {
+      return limitValue_;
     }
 
-    public static final int IHELMLLKKJB_FIELD_NUMBER = 7;
-    private int iHELMLLKKJB_;
+    public static final int LIMIT_TYPE_FIELD_NUMBER = 15;
+    private int limitType_;
     /**
-     * <code>uint32 IHELMLLKKJB = 7;</code>
-     * @return The iHELMLLKKJB.
+     * <code>uint32 limit_type = 15;</code>
+     * @return The limitType.
      */
     @java.lang.Override
-    public int getIHELMLLKKJB() {
-      return iHELMLLKKJB_;
+    public int getLimitType() {
+      return limitType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class GCGLimitsInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iHELMLLKKJB_ != 0) {
-        output.writeUInt32(7, iHELMLLKKJB_);
+      if (limitValue_ != 0) {
+        output.writeUInt32(4, limitValue_);
       }
-      if (aLDCMICHPPK_ != 0) {
-        output.writeUInt32(11, aLDCMICHPPK_);
+      if (limitType_ != 0) {
+        output.writeUInt32(15, limitType_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class GCGLimitsInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iHELMLLKKJB_ != 0) {
+      if (limitValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iHELMLLKKJB_);
+          .computeUInt32Size(4, limitValue_);
       }
-      if (aLDCMICHPPK_ != 0) {
+      if (limitType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, aLDCMICHPPK_);
+          .computeUInt32Size(15, limitType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class GCGLimitsInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo other = (emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo) obj;
 
-      if (getALDCMICHPPK()
-          != other.getALDCMICHPPK()) return false;
-      if (getIHELMLLKKJB()
-          != other.getIHELMLLKKJB()) return false;
+      if (getLimitValue()
+          != other.getLimitValue()) return false;
+      if (getLimitType()
+          != other.getLimitType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class GCGLimitsInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ALDCMICHPPK_FIELD_NUMBER;
-      hash = (53 * hash) + getALDCMICHPPK();
-      hash = (37 * hash) + IHELMLLKKJB_FIELD_NUMBER;
-      hash = (53 * hash) + getIHELMLLKKJB();
+      hash = (37 * hash) + LIMIT_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getLimitValue();
+      hash = (37 * hash) + LIMIT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getLimitType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class GCGLimitsInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NNODCOEDNIP
-     * </pre>
-     *
      * Protobuf type {@code GCGLimitsInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class GCGLimitsInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aLDCMICHPPK_ = 0;
+        limitValue_ = 0;
 
-        iHELMLLKKJB_ = 0;
+        limitType_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class GCGLimitsInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo buildPartial() {
         emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo result = new emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo(this);
-        result.aLDCMICHPPK_ = aLDCMICHPPK_;
-        result.iHELMLLKKJB_ = iHELMLLKKJB_;
+        result.limitValue_ = limitValue_;
+        result.limitType_ = limitType_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class GCGLimitsInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo other) {
         if (other == emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.getDefaultInstance()) return this;
-        if (other.getALDCMICHPPK() != 0) {
-          setALDCMICHPPK(other.getALDCMICHPPK());
+        if (other.getLimitValue() != 0) {
+          setLimitValue(other.getLimitValue());
         }
-        if (other.getIHELMLLKKJB() != 0) {
-          setIHELMLLKKJB(other.getIHELMLLKKJB());
+        if (other.getLimitType() != 0) {
+          setLimitType(other.getLimitType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +458,64 @@ public final class GCGLimitsInfoOuterClass {
         return this;
       }
 
-      private int aLDCMICHPPK_ ;
+      private int limitValue_ ;
       /**
-       * <code>uint32 ALDCMICHPPK = 11;</code>
-       * @return The aLDCMICHPPK.
+       * <code>uint32 limit_value = 4;</code>
+       * @return The limitValue.
        */
       @java.lang.Override
-      public int getALDCMICHPPK() {
-        return aLDCMICHPPK_;
+      public int getLimitValue() {
+        return limitValue_;
       }
       /**
-       * <code>uint32 ALDCMICHPPK = 11;</code>
-       * @param value The aLDCMICHPPK to set.
+       * <code>uint32 limit_value = 4;</code>
+       * @param value The limitValue to set.
        * @return This builder for chaining.
        */
-      public Builder setALDCMICHPPK(int value) {
+      public Builder setLimitValue(int value) {
         
-        aLDCMICHPPK_ = value;
+        limitValue_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ALDCMICHPPK = 11;</code>
+       * <code>uint32 limit_value = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearALDCMICHPPK() {
+      public Builder clearLimitValue() {
         
-        aLDCMICHPPK_ = 0;
+        limitValue_ = 0;
         onChanged();
         return this;
       }
 
-      private int iHELMLLKKJB_ ;
+      private int limitType_ ;
       /**
-       * <code>uint32 IHELMLLKKJB = 7;</code>
-       * @return The iHELMLLKKJB.
+       * <code>uint32 limit_type = 15;</code>
+       * @return The limitType.
        */
       @java.lang.Override
-      public int getIHELMLLKKJB() {
-        return iHELMLLKKJB_;
+      public int getLimitType() {
+        return limitType_;
       }
       /**
-       * <code>uint32 IHELMLLKKJB = 7;</code>
-       * @param value The iHELMLLKKJB to set.
+       * <code>uint32 limit_type = 15;</code>
+       * @param value The limitType to set.
        * @return This builder for chaining.
        */
-      public Builder setIHELMLLKKJB(int value) {
+      public Builder setLimitType(int value) {
         
-        iHELMLLKKJB_ = value;
+        limitType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IHELMLLKKJB = 7;</code>
+       * <code>uint32 limit_type = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIHELMLLKKJB() {
+      public Builder clearLimitType() {
         
-        iHELMLLKKJB_ = 0;
+        limitType_ = 0;
         onChanged();
         return this;
       }
@@ -594,9 +586,9 @@ public final class GCGLimitsInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGLimitsInfo.proto\"9\n\rGCGLimitsInfo\022\023" +
-      "\n\013ALDCMICHPPK\030\013 \001(\r\022\023\n\013IHELMLLKKJB\030\007 \001(\r" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\023GCGLimitsInfo.proto\"8\n\rGCGLimitsInfo\022\023" +
+      "\n\013limit_value\030\004 \001(\r\022\022\n\nlimit_type\030\017 \001(\rB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -607,7 +599,7 @@ public final class GCGLimitsInfoOuterClass {
     internal_static_GCGLimitsInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGLimitsInfo_descriptor,
-        new java.lang.String[] { "ALDCMICHPPK", "IHELMLLKKJB", });
+        new java.lang.String[] { "LimitValue", "LimitType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

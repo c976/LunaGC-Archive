@@ -19,30 +19,34 @@ public final class ReliquaryFilterStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getReliquaryFilterStateMapList();
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getReliquaryFilterStateMap(int index);
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     int getReliquaryFilterStateMapCount();
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getReliquaryFilterStateMapOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getReliquaryFilterStateMapOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * CmdId: 2952
+   * </pre>
+   *
    * Protobuf type {@code ReliquaryFilterStateNotify}
    */
   public static final class ReliquaryFilterStateNotify extends
@@ -89,7 +93,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 reliquaryFilterStateMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +137,17 @@ public final class ReliquaryFilterStateNotifyOuterClass {
               emu.grasscutter.net.proto.ReliquaryFilterStateNotifyOuterClass.ReliquaryFilterStateNotify.class, emu.grasscutter.net.proto.ReliquaryFilterStateNotifyOuterClass.ReliquaryFilterStateNotify.Builder.class);
     }
 
-    public static final int RELIQUARY_FILTER_STATE_MAP_FIELD_NUMBER = 12;
+    public static final int RELIQUARY_FILTER_STATE_MAP_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> reliquaryFilterStateMap_;
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getReliquaryFilterStateMapList() {
       return reliquaryFilterStateMap_;
     }
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -151,21 +155,21 @@ public final class ReliquaryFilterStateNotifyOuterClass {
       return reliquaryFilterStateMap_;
     }
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     @java.lang.Override
     public int getReliquaryFilterStateMapCount() {
       return reliquaryFilterStateMap_.size();
     }
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getReliquaryFilterStateMap(int index) {
       return reliquaryFilterStateMap_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+     * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getReliquaryFilterStateMapOrBuilder(
@@ -188,7 +192,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < reliquaryFilterStateMap_.size(); i++) {
-        output.writeMessage(12, reliquaryFilterStateMap_.get(i));
+        output.writeMessage(11, reliquaryFilterStateMap_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +205,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
       size = 0;
       for (int i = 0; i < reliquaryFilterStateMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, reliquaryFilterStateMap_.get(i));
+          .computeMessageSize(11, reliquaryFilterStateMap_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -331,6 +335,10 @@ public final class ReliquaryFilterStateNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2952
+     * </pre>
+     *
      * Protobuf type {@code ReliquaryFilterStateNotify}
      */
     public static final class Builder extends
@@ -528,7 +536,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> reliquaryFilterStateMapBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getReliquaryFilterStateMapList() {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -538,7 +546,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public int getReliquaryFilterStateMapCount() {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getReliquaryFilterStateMap(int index) {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -558,7 +566,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder setReliquaryFilterStateMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -575,7 +583,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder setReliquaryFilterStateMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -589,7 +597,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder addReliquaryFilterStateMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -605,7 +613,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder addReliquaryFilterStateMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -622,7 +630,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder addReliquaryFilterStateMap(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -636,7 +644,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder addReliquaryFilterStateMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder addAllReliquaryFilterStateMap(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -665,7 +673,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder clearReliquaryFilterStateMap() {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -678,7 +686,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public Builder removeReliquaryFilterStateMap(int index) {
         if (reliquaryFilterStateMapBuilder_ == null) {
@@ -691,14 +699,14 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getReliquaryFilterStateMapBuilder(
           int index) {
         return getReliquaryFilterStateMapFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getReliquaryFilterStateMapOrBuilder(
           int index) {
@@ -708,7 +716,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getReliquaryFilterStateMapOrBuilderList() {
@@ -719,14 +727,14 @@ public final class ReliquaryFilterStateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addReliquaryFilterStateMapBuilder() {
         return getReliquaryFilterStateMapFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addReliquaryFilterStateMapBuilder(
           int index) {
@@ -734,7 +742,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair reliquary_filter_state_map = 12;</code>
+       * <code>repeated .Uint32Pair reliquary_filter_state_map = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getReliquaryFilterStateMapBuilderList() {
@@ -823,7 +831,7 @@ public final class ReliquaryFilterStateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n ReliquaryFilterStateNotify.proto\032\020Uint" +
       "32Pair.proto\"M\n\032ReliquaryFilterStateNoti" +
-      "fy\022/\n\032reliquary_filter_state_map\030\014 \003(\0132\013" +
+      "fy\022/\n\032reliquary_filter_state_map\030\013 \003(\0132\013" +
       ".Uint32PairB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };

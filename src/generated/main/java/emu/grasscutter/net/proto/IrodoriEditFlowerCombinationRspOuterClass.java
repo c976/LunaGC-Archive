@@ -19,27 +19,26 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool ODLPBHCGNJL = 15;</code>
-     * @return The oDLPBHCGNJL.
+     * <code>bool PEADKHKMHJO = 2;</code>
+     * @return The pEADKHKMHJO.
      */
-    boolean getODLPBHCGNJL();
+    boolean getPEADKHKMHJO();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool MBDLGCECEIG = 1;</code>
-     * @return The mBDLGCECEIG.
+     * <code>bool BDHCIOJCEOI = 13;</code>
+     * @return The bDHCIOJCEOI.
      */
-    boolean getMBDLGCECEIG();
+    boolean getBDHCIOJCEOI();
   }
   /**
    * <pre>
-   * CmdId: 26271
-   * Obf: KAHODAHFAJB
+   * CmdId: 3624
    * </pre>
    *
    * Protobuf type {@code IrodoriEditFlowerCombinationRsp}
@@ -86,19 +85,19 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              mBDLGCECEIG_ = input.readBool();
+              pEADKHKMHJO_ = input.readBool();
               break;
             }
-            case 88: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
-              oDLPBHCGNJL_ = input.readBool();
+              bDHCIOJCEOI_ = input.readBool();
               break;
             }
             default: {
@@ -133,21 +132,21 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
               emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.class, emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.Builder.class);
     }
 
-    public static final int ODLPBHCGNJL_FIELD_NUMBER = 15;
-    private boolean oDLPBHCGNJL_;
+    public static final int PEADKHKMHJO_FIELD_NUMBER = 2;
+    private boolean pEADKHKMHJO_;
     /**
-     * <code>bool ODLPBHCGNJL = 15;</code>
-     * @return The oDLPBHCGNJL.
+     * <code>bool PEADKHKMHJO = 2;</code>
+     * @return The pEADKHKMHJO.
      */
     @java.lang.Override
-    public boolean getODLPBHCGNJL() {
-      return oDLPBHCGNJL_;
+    public boolean getPEADKHKMHJO() {
+      return pEADKHKMHJO_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +154,15 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       return retcode_;
     }
 
-    public static final int MBDLGCECEIG_FIELD_NUMBER = 1;
-    private boolean mBDLGCECEIG_;
+    public static final int BDHCIOJCEOI_FIELD_NUMBER = 13;
+    private boolean bDHCIOJCEOI_;
     /**
-     * <code>bool MBDLGCECEIG = 1;</code>
-     * @return The mBDLGCECEIG.
+     * <code>bool BDHCIOJCEOI = 13;</code>
+     * @return The bDHCIOJCEOI.
      */
     @java.lang.Override
-    public boolean getMBDLGCECEIG() {
-      return mBDLGCECEIG_;
+    public boolean getBDHCIOJCEOI() {
+      return bDHCIOJCEOI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mBDLGCECEIG_ != false) {
-        output.writeBool(1, mBDLGCECEIG_);
+      if (pEADKHKMHJO_ != false) {
+        output.writeBool(2, pEADKHKMHJO_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(8, retcode_);
       }
-      if (oDLPBHCGNJL_ != false) {
-        output.writeBool(15, oDLPBHCGNJL_);
+      if (bDHCIOJCEOI_ != false) {
+        output.writeBool(13, bDHCIOJCEOI_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mBDLGCECEIG_ != false) {
+      if (pEADKHKMHJO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, mBDLGCECEIG_);
+          .computeBoolSize(2, pEADKHKMHJO_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(8, retcode_);
       }
-      if (oDLPBHCGNJL_ != false) {
+      if (bDHCIOJCEOI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, oDLPBHCGNJL_);
+          .computeBoolSize(13, bDHCIOJCEOI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp other = (emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp) obj;
 
-      if (getODLPBHCGNJL()
-          != other.getODLPBHCGNJL()) return false;
+      if (getPEADKHKMHJO()
+          != other.getPEADKHKMHJO()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getMBDLGCECEIG()
-          != other.getMBDLGCECEIG()) return false;
+      if (getBDHCIOJCEOI()
+          != other.getBDHCIOJCEOI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,14 +241,14 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ODLPBHCGNJL_FIELD_NUMBER;
+      hash = (37 * hash) + PEADKHKMHJO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getODLPBHCGNJL());
+          getPEADKHKMHJO());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + MBDLGCECEIG_FIELD_NUMBER;
+      hash = (37 * hash) + BDHCIOJCEOI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMBDLGCECEIG());
+          getBDHCIOJCEOI());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,8 +346,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26271
-     * Obf: KAHODAHFAJB
+     * CmdId: 3624
      * </pre>
      *
      * Protobuf type {@code IrodoriEditFlowerCombinationRsp}
@@ -388,11 +386,11 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oDLPBHCGNJL_ = false;
+        pEADKHKMHJO_ = false;
 
         retcode_ = 0;
 
-        mBDLGCECEIG_ = false;
+        bDHCIOJCEOI_ = false;
 
         return this;
       }
@@ -420,9 +418,9 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp buildPartial() {
         emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp result = new emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp(this);
-        result.oDLPBHCGNJL_ = oDLPBHCGNJL_;
+        result.pEADKHKMHJO_ = pEADKHKMHJO_;
         result.retcode_ = retcode_;
-        result.mBDLGCECEIG_ = mBDLGCECEIG_;
+        result.bDHCIOJCEOI_ = bDHCIOJCEOI_;
         onBuilt();
         return result;
       }
@@ -471,14 +469,14 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp other) {
         if (other == emu.grasscutter.net.proto.IrodoriEditFlowerCombinationRspOuterClass.IrodoriEditFlowerCombinationRsp.getDefaultInstance()) return this;
-        if (other.getODLPBHCGNJL() != false) {
-          setODLPBHCGNJL(other.getODLPBHCGNJL());
+        if (other.getPEADKHKMHJO() != false) {
+          setPEADKHKMHJO(other.getPEADKHKMHJO());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getMBDLGCECEIG() != false) {
-          setMBDLGCECEIG(other.getMBDLGCECEIG());
+        if (other.getBDHCIOJCEOI() != false) {
+          setBDHCIOJCEOI(other.getBDHCIOJCEOI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +507,40 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return this;
       }
 
-      private boolean oDLPBHCGNJL_ ;
+      private boolean pEADKHKMHJO_ ;
       /**
-       * <code>bool ODLPBHCGNJL = 15;</code>
-       * @return The oDLPBHCGNJL.
+       * <code>bool PEADKHKMHJO = 2;</code>
+       * @return The pEADKHKMHJO.
        */
       @java.lang.Override
-      public boolean getODLPBHCGNJL() {
-        return oDLPBHCGNJL_;
+      public boolean getPEADKHKMHJO() {
+        return pEADKHKMHJO_;
       }
       /**
-       * <code>bool ODLPBHCGNJL = 15;</code>
-       * @param value The oDLPBHCGNJL to set.
+       * <code>bool PEADKHKMHJO = 2;</code>
+       * @param value The pEADKHKMHJO to set.
        * @return This builder for chaining.
        */
-      public Builder setODLPBHCGNJL(boolean value) {
+      public Builder setPEADKHKMHJO(boolean value) {
         
-        oDLPBHCGNJL_ = value;
+        pEADKHKMHJO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool ODLPBHCGNJL = 15;</code>
+       * <code>bool PEADKHKMHJO = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearODLPBHCGNJL() {
+      public Builder clearPEADKHKMHJO() {
         
-        oDLPBHCGNJL_ = false;
+        pEADKHKMHJO_ = false;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -550,7 +548,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -561,7 +559,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -571,33 +569,33 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
         return this;
       }
 
-      private boolean mBDLGCECEIG_ ;
+      private boolean bDHCIOJCEOI_ ;
       /**
-       * <code>bool MBDLGCECEIG = 1;</code>
-       * @return The mBDLGCECEIG.
+       * <code>bool BDHCIOJCEOI = 13;</code>
+       * @return The bDHCIOJCEOI.
        */
       @java.lang.Override
-      public boolean getMBDLGCECEIG() {
-        return mBDLGCECEIG_;
+      public boolean getBDHCIOJCEOI() {
+        return bDHCIOJCEOI_;
       }
       /**
-       * <code>bool MBDLGCECEIG = 1;</code>
-       * @param value The mBDLGCECEIG to set.
+       * <code>bool BDHCIOJCEOI = 13;</code>
+       * @param value The bDHCIOJCEOI to set.
        * @return This builder for chaining.
        */
-      public Builder setMBDLGCECEIG(boolean value) {
+      public Builder setBDHCIOJCEOI(boolean value) {
         
-        mBDLGCECEIG_ = value;
+        bDHCIOJCEOI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool MBDLGCECEIG = 1;</code>
+       * <code>bool BDHCIOJCEOI = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMBDLGCECEIG() {
+      public Builder clearBDHCIOJCEOI() {
         
-        mBDLGCECEIG_ = false;
+        bDHCIOJCEOI_ = false;
         onChanged();
         return this;
       }
@@ -669,9 +667,9 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%IrodoriEditFlowerCombinationRsp.proto\"" +
-      "\\\n\037IrodoriEditFlowerCombinationRsp\022\023\n\013OD" +
-      "LPBHCGNJL\030\017 \001(\010\022\017\n\007retcode\030\013 \001(\005\022\023\n\013MBDL" +
-      "GCECEIG\030\001 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "\\\n\037IrodoriEditFlowerCombinationRsp\022\023\n\013PE" +
+      "ADKHKMHJO\030\002 \001(\010\022\017\n\007retcode\030\010 \001(\005\022\023\n\013BDHC" +
+      "IOJCEOI\030\r \001(\010B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +681,7 @@ public final class IrodoriEditFlowerCombinationRspOuterClass {
     internal_static_IrodoriEditFlowerCombinationRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriEditFlowerCombinationRsp_descriptor,
-        new java.lang.String[] { "ODLPBHCGNJL", "Retcode", "MBDLGCECEIG", });
+        new java.lang.String[] { "PEADKHKMHJO", "Retcode", "BDHCIOJCEOI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -15,49 +15,45 @@ public final class GCGSettleOptionOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: HMHCFCIHGCO
-   * </pre>
-   *
    * Protobuf enum {@code GCGSettleOption}
    */
   public enum GCGSettleOption
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GCG_SETTLE_OPT_NONE = 0;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_NONE = 0;</code>
      */
-    GCG_SETTLE_OPT_NONE(0),
+    GCG_SETTLE_OPTION_OPT_NONE(0),
     /**
-     * <code>GCG_SETTLE_OPT_EXIT = 1;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_EXIT = 1;</code>
      */
-    GCG_SETTLE_OPT_EXIT(1),
+    GCG_SETTLE_OPTION_OPT_EXIT(1),
     /**
-     * <code>GCG_SETTLE_OPT_CONTINUE = 2;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_CONTINUE = 2;</code>
      */
-    GCG_SETTLE_OPT_CONTINUE(2),
+    GCG_SETTLE_OPTION_OPT_CONTINUE(2),
     /**
-     * <code>GCG_SETTLE_OPT_RESTART = 3;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_RESTART = 3;</code>
      */
-    GCG_SETTLE_OPT_RESTART(3),
+    GCG_SETTLE_OPTION_OPT_RESTART(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GCG_SETTLE_OPT_NONE = 0;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_NONE = 0;</code>
      */
-    public static final int GCG_SETTLE_OPT_NONE_VALUE = 0;
+    public static final int GCG_SETTLE_OPTION_OPT_NONE_VALUE = 0;
     /**
-     * <code>GCG_SETTLE_OPT_EXIT = 1;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_EXIT = 1;</code>
      */
-    public static final int GCG_SETTLE_OPT_EXIT_VALUE = 1;
+    public static final int GCG_SETTLE_OPTION_OPT_EXIT_VALUE = 1;
     /**
-     * <code>GCG_SETTLE_OPT_CONTINUE = 2;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_CONTINUE = 2;</code>
      */
-    public static final int GCG_SETTLE_OPT_CONTINUE_VALUE = 2;
+    public static final int GCG_SETTLE_OPTION_OPT_CONTINUE_VALUE = 2;
     /**
-     * <code>GCG_SETTLE_OPT_RESTART = 3;</code>
+     * <code>GCG_SETTLE_OPTION_OPT_RESTART = 3;</code>
      */
-    public static final int GCG_SETTLE_OPT_RESTART_VALUE = 3;
+    public static final int GCG_SETTLE_OPTION_OPT_RESTART_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class GCGSettleOptionOuterClass {
      */
     public static GCGSettleOption forNumber(int value) {
       switch (value) {
-        case 0: return GCG_SETTLE_OPT_NONE;
-        case 1: return GCG_SETTLE_OPT_EXIT;
-        case 2: return GCG_SETTLE_OPT_CONTINUE;
-        case 3: return GCG_SETTLE_OPT_RESTART;
+        case 0: return GCG_SETTLE_OPTION_OPT_NONE;
+        case 1: return GCG_SETTLE_OPTION_OPT_EXIT;
+        case 2: return GCG_SETTLE_OPTION_OPT_CONTINUE;
+        case 3: return GCG_SETTLE_OPTION_OPT_RESTART;
         default: return null;
       }
     }
@@ -153,11 +149,12 @@ public final class GCGSettleOptionOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GCGSettleOption.proto*|\n\017GCGSettleOpti" +
-      "on\022\027\n\023GCG_SETTLE_OPT_NONE\020\000\022\027\n\023GCG_SETTL" +
-      "E_OPT_EXIT\020\001\022\033\n\027GCG_SETTLE_OPT_CONTINUE\020" +
-      "\002\022\032\n\026GCG_SETTLE_OPT_RESTART\020\003B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\025GCGSettleOption.proto*\230\001\n\017GCGSettleOpt" +
+      "ion\022\036\n\032GCG_SETTLE_OPTION_OPT_NONE\020\000\022\036\n\032G" +
+      "CG_SETTLE_OPTION_OPT_EXIT\020\001\022\"\n\036GCG_SETTL" +
+      "E_OPTION_OPT_CONTINUE\020\002\022!\n\035GCG_SETTLE_OP" +
+      "TION_OPT_RESTART\020\003B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

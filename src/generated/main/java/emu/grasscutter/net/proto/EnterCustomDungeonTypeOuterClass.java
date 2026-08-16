@@ -20,40 +20,40 @@ public final class EnterCustomDungeonTypeOuterClass {
   public enum EnterCustomDungeonType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_NONE = 0;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE = 0;</code>
      */
-    ENTER_CUSTOM_DUNGEON_NONE(0),
+    IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE(0),
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_EDIT = 1;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_EDIT = 1;</code>
      */
-    ENTER_CUSTOM_DUNGEON_EDIT(1),
+    IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_EDIT(1),
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_PLAY = 2;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_PLAY = 2;</code>
      */
-    ENTER_CUSTOM_DUNGEON_PLAY(2),
+    IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_PLAY(2),
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_OFFICIAL = 3;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_OFFICIAL = 3;</code>
      */
-    ENTER_CUSTOM_DUNGEON_OFFICIAL(3),
+    IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_OFFICIAL(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_NONE = 0;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE = 0;</code>
      */
-    public static final int ENTER_CUSTOM_DUNGEON_NONE_VALUE = 0;
+    public static final int IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE_VALUE = 0;
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_EDIT = 1;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_EDIT = 1;</code>
      */
-    public static final int ENTER_CUSTOM_DUNGEON_EDIT_VALUE = 1;
+    public static final int IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_EDIT_VALUE = 1;
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_PLAY = 2;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_PLAY = 2;</code>
      */
-    public static final int ENTER_CUSTOM_DUNGEON_PLAY_VALUE = 2;
+    public static final int IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_PLAY_VALUE = 2;
     /**
-     * <code>ENTER_CUSTOM_DUNGEON_OFFICIAL = 3;</code>
+     * <code>IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_OFFICIAL = 3;</code>
      */
-    public static final int ENTER_CUSTOM_DUNGEON_OFFICIAL_VALUE = 3;
+    public static final int IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_OFFICIAL_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class EnterCustomDungeonTypeOuterClass {
      */
     public static EnterCustomDungeonType forNumber(int value) {
       switch (value) {
-        case 0: return ENTER_CUSTOM_DUNGEON_NONE;
-        case 1: return ENTER_CUSTOM_DUNGEON_EDIT;
-        case 2: return ENTER_CUSTOM_DUNGEON_PLAY;
-        case 3: return ENTER_CUSTOM_DUNGEON_OFFICIAL;
+        case 0: return IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE;
+        case 1: return IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_EDIT;
+        case 2: return IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_PLAY;
+        case 3: return IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_OFFICIAL;
         default: return null;
       }
     }
@@ -149,12 +149,13 @@ public final class EnterCustomDungeonTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034EnterCustomDungeonType.proto*\230\001\n\026Enter" +
-      "CustomDungeonType\022\035\n\031ENTER_CUSTOM_DUNGEO" +
-      "N_NONE\020\000\022\035\n\031ENTER_CUSTOM_DUNGEON_EDIT\020\001\022" +
-      "\035\n\031ENTER_CUSTOM_DUNGEON_PLAY\020\002\022!\n\035ENTER_" +
-      "CUSTOM_DUNGEON_OFFICIAL\020\003B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\034EnterCustomDungeonType.proto*\310\001\n\026Enter" +
+      "CustomDungeonType\022)\n%IIEHONBEFJC_ENTER_C" +
+      "USTOM_DUNGEON_NONE\020\000\022)\n%IIEHONBEFJC_ENTE" +
+      "R_CUSTOM_DUNGEON_EDIT\020\001\022)\n%IIEHONBEFJC_E" +
+      "NTER_CUSTOM_DUNGEON_PLAY\020\002\022-\n)IIEHONBEFJ" +
+      "C_ENTER_CUSTOM_DUNGEON_OFFICIAL\020\003B\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

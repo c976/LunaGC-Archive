@@ -19,33 +19,48 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_score = 13;</code>
-     * @return The curScore.
-     */
-    int getCurScore();
-
-    /**
-     * <code>uint32 trigger_entity_id = 2;</code>
-     * @return The triggerEntityId.
-     */
-    int getTriggerEntityId();
-
-    /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 add_score = 7;</code>
-     * @return The addScore.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 12;</code>
+     * @return The oIGNGOLLEKO.
      */
-    int getAddScore();
+    int getOIGNGOLLEKO();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 8;</code>
+     * @return The fMOCDOENEOL.
+     */
+    int getFMOCDOENEOL();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 score = 13;</code>
+     * @return The score.
+     */
+    int getScore();
   }
   /**
    * <pre>
-   * CmdId: 20418
-   * Obf: GIBKOEEJGPH
+   * CmdId: 4651
    * </pre>
    *
    * Protobuf type {@code HomeBalloonGalleryScoreNotify}
@@ -92,24 +107,24 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 64: {
 
-              triggerEntityId_ = input.readUInt32();
+              fMOCDOENEOL_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 96: {
 
-              addScore_ = input.readUInt32();
+              oIGNGOLLEKO_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              curScore_ = input.readUInt32();
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,32 +159,14 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify.class, emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify.Builder.class);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 13;
-    private int curScore_;
-    /**
-     * <code>uint32 cur_score = 13;</code>
-     * @return The curScore.
-     */
-    @java.lang.Override
-    public int getCurScore() {
-      return curScore_;
-    }
-
-    public static final int TRIGGER_ENTITY_ID_FIELD_NUMBER = 2;
-    private int triggerEntityId_;
-    /**
-     * <code>uint32 trigger_entity_id = 2;</code>
-     * @return The triggerEntityId.
-     */
-    @java.lang.Override
-    public int getTriggerEntityId() {
-      return triggerEntityId_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 1;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -177,15 +174,49 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int ADD_SCORE_FIELD_NUMBER = 7;
-    private int addScore_;
+    public static final int OIGNGOLLEKO_FIELD_NUMBER = 12;
+    private int oIGNGOLLEKO_;
     /**
-     * <code>uint32 add_score = 7;</code>
-     * @return The addScore.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 OIGNGOLLEKO = 12;</code>
+     * @return The oIGNGOLLEKO.
      */
     @java.lang.Override
-    public int getAddScore() {
-      return addScore_;
+    public int getOIGNGOLLEKO() {
+      return oIGNGOLLEKO_;
+    }
+
+    public static final int FMOCDOENEOL_FIELD_NUMBER = 8;
+    private int fMOCDOENEOL_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FMOCDOENEOL = 8;</code>
+     * @return The fMOCDOENEOL.
+     */
+    @java.lang.Override
+    public int getFMOCDOENEOL() {
+      return fMOCDOENEOL_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 13;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 score = 13;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,16 +234,16 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(1, galleryId_);
+        output.writeUInt32(3, galleryId_);
       }
-      if (triggerEntityId_ != 0) {
-        output.writeUInt32(2, triggerEntityId_);
+      if (fMOCDOENEOL_ != 0) {
+        output.writeUInt32(8, fMOCDOENEOL_);
       }
-      if (addScore_ != 0) {
-        output.writeUInt32(7, addScore_);
+      if (oIGNGOLLEKO_ != 0) {
+        output.writeUInt32(12, oIGNGOLLEKO_);
       }
-      if (curScore_ != 0) {
-        output.writeUInt32(13, curScore_);
+      if (score_ != 0) {
+        output.writeUInt32(13, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,19 +256,19 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, galleryId_);
+          .computeUInt32Size(3, galleryId_);
       }
-      if (triggerEntityId_ != 0) {
+      if (fMOCDOENEOL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, triggerEntityId_);
+          .computeUInt32Size(8, fMOCDOENEOL_);
       }
-      if (addScore_ != 0) {
+      if (oIGNGOLLEKO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, addScore_);
+          .computeUInt32Size(12, oIGNGOLLEKO_);
       }
-      if (curScore_ != 0) {
+      if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, curScore_);
+          .computeUInt32Size(13, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +285,14 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify other = (emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify) obj;
 
-      if (getCurScore()
-          != other.getCurScore()) return false;
-      if (getTriggerEntityId()
-          != other.getTriggerEntityId()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
-      if (getAddScore()
-          != other.getAddScore()) return false;
+      if (getOIGNGOLLEKO()
+          != other.getOIGNGOLLEKO()) return false;
+      if (getFMOCDOENEOL()
+          != other.getFMOCDOENEOL()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +304,14 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getCurScore();
-      hash = (37 * hash) + TRIGGER_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTriggerEntityId();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
-      hash = (37 * hash) + ADD_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getAddScore();
+      hash = (37 * hash) + OIGNGOLLEKO_FIELD_NUMBER;
+      hash = (53 * hash) + getOIGNGOLLEKO();
+      hash = (37 * hash) + FMOCDOENEOL_FIELD_NUMBER;
+      hash = (53 * hash) + getFMOCDOENEOL();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +409,7 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20418
-     * Obf: GIBKOEEJGPH
+     * CmdId: 4651
      * </pre>
      *
      * Protobuf type {@code HomeBalloonGalleryScoreNotify}
@@ -419,13 +449,13 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curScore_ = 0;
-
-        triggerEntityId_ = 0;
-
         galleryId_ = 0;
 
-        addScore_ = 0;
+        oIGNGOLLEKO_ = 0;
+
+        fMOCDOENEOL_ = 0;
+
+        score_ = 0;
 
         return this;
       }
@@ -453,10 +483,10 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify buildPartial() {
         emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify result = new emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify(this);
-        result.curScore_ = curScore_;
-        result.triggerEntityId_ = triggerEntityId_;
         result.galleryId_ = galleryId_;
-        result.addScore_ = addScore_;
+        result.oIGNGOLLEKO_ = oIGNGOLLEKO_;
+        result.fMOCDOENEOL_ = fMOCDOENEOL_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -505,17 +535,17 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify other) {
         if (other == emu.grasscutter.net.proto.HomeBalloonGalleryScoreNotifyOuterClass.HomeBalloonGalleryScoreNotify.getDefaultInstance()) return this;
-        if (other.getCurScore() != 0) {
-          setCurScore(other.getCurScore());
-        }
-        if (other.getTriggerEntityId() != 0) {
-          setTriggerEntityId(other.getTriggerEntityId());
-        }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
         }
-        if (other.getAddScore() != 0) {
-          setAddScore(other.getAddScore());
+        if (other.getOIGNGOLLEKO() != 0) {
+          setOIGNGOLLEKO(other.getOIGNGOLLEKO());
+        }
+        if (other.getFMOCDOENEOL() != 0) {
+          setFMOCDOENEOL(other.getFMOCDOENEOL());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,71 +576,13 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
         return this;
       }
 
-      private int curScore_ ;
-      /**
-       * <code>uint32 cur_score = 13;</code>
-       * @return The curScore.
-       */
-      @java.lang.Override
-      public int getCurScore() {
-        return curScore_;
-      }
-      /**
-       * <code>uint32 cur_score = 13;</code>
-       * @param value The curScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurScore(int value) {
-        
-        curScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_score = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurScore() {
-        
-        curScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int triggerEntityId_ ;
-      /**
-       * <code>uint32 trigger_entity_id = 2;</code>
-       * @return The triggerEntityId.
-       */
-      @java.lang.Override
-      public int getTriggerEntityId() {
-        return triggerEntityId_;
-      }
-      /**
-       * <code>uint32 trigger_entity_id = 2;</code>
-       * @param value The triggerEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTriggerEntityId(int value) {
-        
-        triggerEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 trigger_entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTriggerEntityId() {
-        
-        triggerEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -618,7 +590,11 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -629,7 +605,11 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -639,33 +619,131 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
         return this;
       }
 
-      private int addScore_ ;
+      private int oIGNGOLLEKO_ ;
       /**
-       * <code>uint32 add_score = 7;</code>
-       * @return The addScore.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 12;</code>
+       * @return The oIGNGOLLEKO.
        */
       @java.lang.Override
-      public int getAddScore() {
-        return addScore_;
+      public int getOIGNGOLLEKO() {
+        return oIGNGOLLEKO_;
       }
       /**
-       * <code>uint32 add_score = 7;</code>
-       * @param value The addScore to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 12;</code>
+       * @param value The oIGNGOLLEKO to set.
        * @return This builder for chaining.
        */
-      public Builder setAddScore(int value) {
+      public Builder setOIGNGOLLEKO(int value) {
         
-        addScore_ = value;
+        oIGNGOLLEKO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 add_score = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 OIGNGOLLEKO = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAddScore() {
+      public Builder clearOIGNGOLLEKO() {
         
-        addScore_ = 0;
+        oIGNGOLLEKO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fMOCDOENEOL_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 8;</code>
+       * @return The fMOCDOENEOL.
+       */
+      @java.lang.Override
+      public int getFMOCDOENEOL() {
+        return fMOCDOENEOL_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 8;</code>
+       * @param value The fMOCDOENEOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFMOCDOENEOL(int value) {
+        
+        fMOCDOENEOL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FMOCDOENEOL = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFMOCDOENEOL() {
+        
+        fMOCDOENEOL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 score = 13;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 score = 13;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 score = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -736,11 +814,11 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#HomeBalloonGalleryScoreNotify.proto\"t\n" +
-      "\035HomeBalloonGalleryScoreNotify\022\021\n\tcur_sc" +
-      "ore\030\r \001(\r\022\031\n\021trigger_entity_id\030\002 \001(\r\022\022\n\n" +
-      "gallery_id\030\001 \001(\r\022\021\n\tadd_score\030\007 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n#HomeBalloonGalleryScoreNotify.proto\"l\n" +
+      "\035HomeBalloonGalleryScoreNotify\022\022\n\ngaller" +
+      "y_id\030\003 \001(\r\022\023\n\013OIGNGOLLEKO\030\014 \001(\r\022\023\n\013FMOCD" +
+      "OENEOL\030\010 \001(\r\022\r\n\005score\030\r \001(\rB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -751,7 +829,7 @@ public final class HomeBalloonGalleryScoreNotifyOuterClass {
     internal_static_HomeBalloonGalleryScoreNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBalloonGalleryScoreNotify_descriptor,
-        new java.lang.String[] { "CurScore", "TriggerEntityId", "GalleryId", "AddScore", });
+        new java.lang.String[] { "GalleryId", "OIGNGOLLEKO", "FMOCDOENEOL", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,40 +20,40 @@ public final class EdgeTypeOuterClass {
   public enum EdgeType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>INNER = 0;</code>
+     * <code>CFKPOKHHDBD_INNER = 0;</code>
      */
-    INNER(0),
+    CFKPOKHHDBD_INNER(0),
     /**
-     * <code>TILE_BOUND = 1;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND = 1;</code>
      */
-    TILE_BOUND(1),
+    CFKPOKHHDBD_TILE_BOUND(1),
     /**
-     * <code>TILE_BOUND_UNCONNECT = 2;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND_UNCONNECT = 2;</code>
      */
-    TILE_BOUND_UNCONNECT(2),
+    CFKPOKHHDBD_TILE_BOUND_UNCONNECT(2),
     /**
-     * <code>TILE_BOUND_OVERIDE = 3;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND_OVERIDE = 3;</code>
      */
-    TILE_BOUND_OVERIDE(3),
+    CFKPOKHHDBD_TILE_BOUND_OVERIDE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>INNER = 0;</code>
+     * <code>CFKPOKHHDBD_INNER = 0;</code>
      */
-    public static final int INNER_VALUE = 0;
+    public static final int CFKPOKHHDBD_INNER_VALUE = 0;
     /**
-     * <code>TILE_BOUND = 1;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND = 1;</code>
      */
-    public static final int TILE_BOUND_VALUE = 1;
+    public static final int CFKPOKHHDBD_TILE_BOUND_VALUE = 1;
     /**
-     * <code>TILE_BOUND_UNCONNECT = 2;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND_UNCONNECT = 2;</code>
      */
-    public static final int TILE_BOUND_UNCONNECT_VALUE = 2;
+    public static final int CFKPOKHHDBD_TILE_BOUND_UNCONNECT_VALUE = 2;
     /**
-     * <code>TILE_BOUND_OVERIDE = 3;</code>
+     * <code>CFKPOKHHDBD_TILE_BOUND_OVERIDE = 3;</code>
      */
-    public static final int TILE_BOUND_OVERIDE_VALUE = 3;
+    public static final int CFKPOKHHDBD_TILE_BOUND_OVERIDE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class EdgeTypeOuterClass {
      */
     public static EdgeType forNumber(int value) {
       switch (value) {
-        case 0: return INNER;
-        case 1: return TILE_BOUND;
-        case 2: return TILE_BOUND_UNCONNECT;
-        case 3: return TILE_BOUND_OVERIDE;
+        case 0: return CFKPOKHHDBD_INNER;
+        case 1: return CFKPOKHHDBD_TILE_BOUND;
+        case 2: return CFKPOKHHDBD_TILE_BOUND_UNCONNECT;
+        case 3: return CFKPOKHHDBD_TILE_BOUND_OVERIDE;
         default: return null;
       }
     }
@@ -149,10 +149,11 @@ public final class EdgeTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016EdgeType.proto*W\n\010EdgeType\022\t\n\005INNER\020\000\022" +
-      "\016\n\nTILE_BOUND\020\001\022\030\n\024TILE_BOUND_UNCONNECT\020" +
-      "\002\022\026\n\022TILE_BOUND_OVERIDE\020\003B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\016EdgeType.proto*\207\001\n\010EdgeType\022\025\n\021CFKPOKH" +
+      "HDBD_INNER\020\000\022\032\n\026CFKPOKHHDBD_TILE_BOUND\020\001" +
+      "\022$\n CFKPOKHHDBD_TILE_BOUND_UNCONNECT\020\002\022\"" +
+      "\n\036CFKPOKHHDBD_TILE_BOUND_OVERIDE\020\003B\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

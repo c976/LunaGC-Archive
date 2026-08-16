@@ -19,80 +19,91 @@ public final class UgcDungeonSettingOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-     * @return A list containing the nCEPKAKGOFN.
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+     * @return A list containing the cFEEAMMKCCH.
      */
-    java.util.List<java.lang.Integer> getNCEPKAKGOFNList();
+    java.util.List<java.lang.Integer> getCFEEAMMKCCHList();
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-     * @return The count of nCEPKAKGOFN.
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+     * @return The count of cFEEAMMKCCH.
      */
-    int getNCEPKAKGOFNCount();
+    int getCFEEAMMKCCHCount();
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
      * @param index The index of the element to return.
-     * @return The nCEPKAKGOFN at the given index.
+     * @return The cFEEAMMKCCH at the given index.
      */
-    int getNCEPKAKGOFN(int index);
+    int getCFEEAMMKCCH(int index);
 
     /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @return A list containing the dNPEDKEAPGB.
-     */
-    java.util.List<java.lang.Integer> getDNPEDKEAPGBList();
-    /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @return The count of dNPEDKEAPGB.
-     */
-    int getDNPEDKEAPGBCount();
-    /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @param index The index of the element to return.
-     * @return The dNPEDKEAPGB at the given index.
-     */
-    int getDNPEDKEAPGB(int index);
-
-    /**
-     * <code>uint32 ACJPJINLPDM = 7;</code>
-     * @return The aCJPJINLPDM.
-     */
-    int getACJPJINLPDM();
-
-    /**
-     * <code>uint32 GPLGGCNDIPG = 15;</code>
-     * @return The gPLGGCNDIPG.
-     */
-    int getGPLGGCNDIPG();
-
-    /**
-     * <code>bool is_ban_skill = 6;</code>
-     * @return The isBanSkill.
-     */
-    boolean getIsBanSkill();
-
-    /**
-     * <code>uint32 PKMFJEINMFI = 1;</code>
-     * @return The pKMFJEINMFI.
-     */
-    int getPKMFJEINMFI();
-
-    /**
-     * <code>uint32 target_score = 14;</code>
+     * <code>uint32 target_score = 4;</code>
      * @return The targetScore.
      */
     int getTargetScore();
 
     /**
-     * <code>uint32 AOAMBLPDMCD = 10;</code>
-     * @return The aOAMBLPDMCD.
+     * <code>uint32 LFLLIPGOCOP = 5;</code>
+     * @return The lFLLIPGOCOP.
      */
-    int getAOAMBLPDMCD();
+    int getLFLLIPGOCOP();
 
     /**
-     * <code>uint32 GEJHPIMAICM = 11;</code>
-     * @return The gEJHPIMAICM.
+     * <code>uint32 KIDNINNHNKL = 7;</code>
+     * @return The kIDNINNHNKL.
      */
-    int getGEJHPIMAICM();
+    int getKIDNINNHNKL();
+
+    /**
+     * <code>uint32 HAGFOCFANKB = 8;</code>
+     * @return The hAGFOCFANKB.
+     */
+    int getHAGFOCFANKB();
+
+    /**
+     * <code>uint32 BNLBDMGIAOD = 9;</code>
+     * @return The bNLBDMGIAOD.
+     */
+    int getBNLBDMGIAOD();
+
+    /**
+     * <code>bool is_ban_skill = 11;</code>
+     * @return The isBanSkill.
+     */
+    boolean getIsBanSkill();
+
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @return A list containing the hIMLKBHOPGJ.
+     */
+    java.util.List<java.lang.Integer> getHIMLKBHOPGJList();
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @return The count of hIMLKBHOPGJ.
+     */
+    int getHIMLKBHOPGJCount();
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @param index The index of the element to return.
+     * @return The hIMLKBHOPGJ at the given index.
+     */
+    int getHIMLKBHOPGJ(int index);
+
+    /**
+     * <code>uint32 FEHAIEECMLK = 13;</code>
+     * @return The fEHAIEECMLK.
+     */
+    int getFEHAIEECMLK();
+
+    /**
+     * <code>.UgcDungeonSettleType settle_type = 14;</code>
+     * @return The enum numeric value on the wire for settleType.
+     */
+    int getSettleTypeValue();
+    /**
+     * <code>.UgcDungeonSettleType settle_type = 14;</code>
+     * @return The settleType.
+     */
+    emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType getSettleType();
   }
   /**
    * Protobuf type {@code UgcDungeonSetting}
@@ -107,8 +118,9 @@ public final class UgcDungeonSettingOuterClass {
       super(builder);
     }
     private UgcDungeonSetting() {
-      nCEPKAKGOFN_ = emptyIntList();
-      dNPEDKEAPGB_ = emptyIntList();
+      cFEEAMMKCCH_ = emptyIntList();
+      hIMLKBHOPGJ_ = emptyIntList();
+      settleType_ = 0;
     }
 
     @java.lang.Override
@@ -142,81 +154,87 @@ public final class UgcDungeonSettingOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              pKMFJEINMFI_ = input.readUInt32();
-              break;
-            }
             case 24: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                dNPEDKEAPGB_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cFEEAMMKCCH_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              dNPEDKEAPGB_.addInt(input.readUInt32());
+              cFEEAMMKCCH_.addInt(input.readUInt32());
               break;
             }
             case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                dNPEDKEAPGB_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                dNPEDKEAPGB_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                nCEPKAKGOFN_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              nCEPKAKGOFN_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                nCEPKAKGOFN_ = newIntList();
+                cFEEAMMKCCH_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                nCEPKAKGOFN_.addInt(input.readUInt32());
+                cFEEAMMKCCH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 48: {
-
-              isBanSkill_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              aCJPJINLPDM_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              aOAMBLPDMCD_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              gEJHPIMAICM_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 32: {
 
               targetScore_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 40: {
 
-              gPLGGCNDIPG_ = input.readUInt32();
+              lFLLIPGOCOP_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              kIDNINNHNKL_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              hAGFOCFANKB_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              bNLBDMGIAOD_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              isBanSkill_ = input.readBool();
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                hIMLKBHOPGJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              hIMLKBHOPGJ_.addInt(input.readUInt32());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                hIMLKBHOPGJ_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                hIMLKBHOPGJ_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 104: {
+
+              fEHAIEECMLK_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+              int rawValue = input.readEnum();
+
+              settleType_ = rawValue;
               break;
             }
             default: {
@@ -234,11 +252,11 @@ public final class UgcDungeonSettingOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          dNPEDKEAPGB_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          nCEPKAKGOFN_.makeImmutable(); // C
+          cFEEAMMKCCH_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          hIMLKBHOPGJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -257,110 +275,38 @@ public final class UgcDungeonSettingOuterClass {
               emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.class, emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.Builder.class);
     }
 
-    public static final int NCEPKAKGOFN_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.IntList nCEPKAKGOFN_;
+    public static final int CFEEAMMKCCH_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList cFEEAMMKCCH_;
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-     * @return A list containing the nCEPKAKGOFN.
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+     * @return A list containing the cFEEAMMKCCH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getNCEPKAKGOFNList() {
-      return nCEPKAKGOFN_;
+        getCFEEAMMKCCHList() {
+      return cFEEAMMKCCH_;
     }
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-     * @return The count of nCEPKAKGOFN.
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+     * @return The count of cFEEAMMKCCH.
      */
-    public int getNCEPKAKGOFNCount() {
-      return nCEPKAKGOFN_.size();
+    public int getCFEEAMMKCCHCount() {
+      return cFEEAMMKCCH_.size();
     }
     /**
-     * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
+     * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
      * @param index The index of the element to return.
-     * @return The nCEPKAKGOFN at the given index.
+     * @return The cFEEAMMKCCH at the given index.
      */
-    public int getNCEPKAKGOFN(int index) {
-      return nCEPKAKGOFN_.getInt(index);
+    public int getCFEEAMMKCCH(int index) {
+      return cFEEAMMKCCH_.getInt(index);
     }
-    private int nCEPKAKGOFNMemoizedSerializedSize = -1;
+    private int cFEEAMMKCCHMemoizedSerializedSize = -1;
 
-    public static final int DNPEDKEAPGB_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList dNPEDKEAPGB_;
-    /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @return A list containing the dNPEDKEAPGB.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getDNPEDKEAPGBList() {
-      return dNPEDKEAPGB_;
-    }
-    /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @return The count of dNPEDKEAPGB.
-     */
-    public int getDNPEDKEAPGBCount() {
-      return dNPEDKEAPGB_.size();
-    }
-    /**
-     * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-     * @param index The index of the element to return.
-     * @return The dNPEDKEAPGB at the given index.
-     */
-    public int getDNPEDKEAPGB(int index) {
-      return dNPEDKEAPGB_.getInt(index);
-    }
-    private int dNPEDKEAPGBMemoizedSerializedSize = -1;
-
-    public static final int ACJPJINLPDM_FIELD_NUMBER = 7;
-    private int aCJPJINLPDM_;
-    /**
-     * <code>uint32 ACJPJINLPDM = 7;</code>
-     * @return The aCJPJINLPDM.
-     */
-    @java.lang.Override
-    public int getACJPJINLPDM() {
-      return aCJPJINLPDM_;
-    }
-
-    public static final int GPLGGCNDIPG_FIELD_NUMBER = 15;
-    private int gPLGGCNDIPG_;
-    /**
-     * <code>uint32 GPLGGCNDIPG = 15;</code>
-     * @return The gPLGGCNDIPG.
-     */
-    @java.lang.Override
-    public int getGPLGGCNDIPG() {
-      return gPLGGCNDIPG_;
-    }
-
-    public static final int IS_BAN_SKILL_FIELD_NUMBER = 6;
-    private boolean isBanSkill_;
-    /**
-     * <code>bool is_ban_skill = 6;</code>
-     * @return The isBanSkill.
-     */
-    @java.lang.Override
-    public boolean getIsBanSkill() {
-      return isBanSkill_;
-    }
-
-    public static final int PKMFJEINMFI_FIELD_NUMBER = 1;
-    private int pKMFJEINMFI_;
-    /**
-     * <code>uint32 PKMFJEINMFI = 1;</code>
-     * @return The pKMFJEINMFI.
-     */
-    @java.lang.Override
-    public int getPKMFJEINMFI() {
-      return pKMFJEINMFI_;
-    }
-
-    public static final int TARGET_SCORE_FIELD_NUMBER = 14;
+    public static final int TARGET_SCORE_FIELD_NUMBER = 4;
     private int targetScore_;
     /**
-     * <code>uint32 target_score = 14;</code>
+     * <code>uint32 target_score = 4;</code>
      * @return The targetScore.
      */
     @java.lang.Override
@@ -368,26 +314,117 @@ public final class UgcDungeonSettingOuterClass {
       return targetScore_;
     }
 
-    public static final int AOAMBLPDMCD_FIELD_NUMBER = 10;
-    private int aOAMBLPDMCD_;
+    public static final int LFLLIPGOCOP_FIELD_NUMBER = 5;
+    private int lFLLIPGOCOP_;
     /**
-     * <code>uint32 AOAMBLPDMCD = 10;</code>
-     * @return The aOAMBLPDMCD.
+     * <code>uint32 LFLLIPGOCOP = 5;</code>
+     * @return The lFLLIPGOCOP.
      */
     @java.lang.Override
-    public int getAOAMBLPDMCD() {
-      return aOAMBLPDMCD_;
+    public int getLFLLIPGOCOP() {
+      return lFLLIPGOCOP_;
     }
 
-    public static final int GEJHPIMAICM_FIELD_NUMBER = 11;
-    private int gEJHPIMAICM_;
+    public static final int KIDNINNHNKL_FIELD_NUMBER = 7;
+    private int kIDNINNHNKL_;
     /**
-     * <code>uint32 GEJHPIMAICM = 11;</code>
-     * @return The gEJHPIMAICM.
+     * <code>uint32 KIDNINNHNKL = 7;</code>
+     * @return The kIDNINNHNKL.
      */
     @java.lang.Override
-    public int getGEJHPIMAICM() {
-      return gEJHPIMAICM_;
+    public int getKIDNINNHNKL() {
+      return kIDNINNHNKL_;
+    }
+
+    public static final int HAGFOCFANKB_FIELD_NUMBER = 8;
+    private int hAGFOCFANKB_;
+    /**
+     * <code>uint32 HAGFOCFANKB = 8;</code>
+     * @return The hAGFOCFANKB.
+     */
+    @java.lang.Override
+    public int getHAGFOCFANKB() {
+      return hAGFOCFANKB_;
+    }
+
+    public static final int BNLBDMGIAOD_FIELD_NUMBER = 9;
+    private int bNLBDMGIAOD_;
+    /**
+     * <code>uint32 BNLBDMGIAOD = 9;</code>
+     * @return The bNLBDMGIAOD.
+     */
+    @java.lang.Override
+    public int getBNLBDMGIAOD() {
+      return bNLBDMGIAOD_;
+    }
+
+    public static final int IS_BAN_SKILL_FIELD_NUMBER = 11;
+    private boolean isBanSkill_;
+    /**
+     * <code>bool is_ban_skill = 11;</code>
+     * @return The isBanSkill.
+     */
+    @java.lang.Override
+    public boolean getIsBanSkill() {
+      return isBanSkill_;
+    }
+
+    public static final int HIMLKBHOPGJ_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList hIMLKBHOPGJ_;
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @return A list containing the hIMLKBHOPGJ.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getHIMLKBHOPGJList() {
+      return hIMLKBHOPGJ_;
+    }
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @return The count of hIMLKBHOPGJ.
+     */
+    public int getHIMLKBHOPGJCount() {
+      return hIMLKBHOPGJ_.size();
+    }
+    /**
+     * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+     * @param index The index of the element to return.
+     * @return The hIMLKBHOPGJ at the given index.
+     */
+    public int getHIMLKBHOPGJ(int index) {
+      return hIMLKBHOPGJ_.getInt(index);
+    }
+    private int hIMLKBHOPGJMemoizedSerializedSize = -1;
+
+    public static final int FEHAIEECMLK_FIELD_NUMBER = 13;
+    private int fEHAIEECMLK_;
+    /**
+     * <code>uint32 FEHAIEECMLK = 13;</code>
+     * @return The fEHAIEECMLK.
+     */
+    @java.lang.Override
+    public int getFEHAIEECMLK() {
+      return fEHAIEECMLK_;
+    }
+
+    public static final int SETTLE_TYPE_FIELD_NUMBER = 14;
+    private int settleType_;
+    /**
+     * <code>.UgcDungeonSettleType settle_type = 14;</code>
+     * @return The enum numeric value on the wire for settleType.
+     */
+    @java.lang.Override public int getSettleTypeValue() {
+      return settleType_;
+    }
+    /**
+     * <code>.UgcDungeonSettleType settle_type = 14;</code>
+     * @return The settleType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType getSettleType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType result = emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.valueOf(settleType_);
+      return result == null ? emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -405,40 +442,43 @@ public final class UgcDungeonSettingOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (pKMFJEINMFI_ != 0) {
-        output.writeUInt32(1, pKMFJEINMFI_);
-      }
-      if (getDNPEDKEAPGBList().size() > 0) {
+      if (getCFEEAMMKCCHList().size() > 0) {
         output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(dNPEDKEAPGBMemoizedSerializedSize);
+        output.writeUInt32NoTag(cFEEAMMKCCHMemoizedSerializedSize);
       }
-      for (int i = 0; i < dNPEDKEAPGB_.size(); i++) {
-        output.writeUInt32NoTag(dNPEDKEAPGB_.getInt(i));
-      }
-      if (getNCEPKAKGOFNList().size() > 0) {
-        output.writeUInt32NoTag(42);
-        output.writeUInt32NoTag(nCEPKAKGOFNMemoizedSerializedSize);
-      }
-      for (int i = 0; i < nCEPKAKGOFN_.size(); i++) {
-        output.writeUInt32NoTag(nCEPKAKGOFN_.getInt(i));
-      }
-      if (isBanSkill_ != false) {
-        output.writeBool(6, isBanSkill_);
-      }
-      if (aCJPJINLPDM_ != 0) {
-        output.writeUInt32(7, aCJPJINLPDM_);
-      }
-      if (aOAMBLPDMCD_ != 0) {
-        output.writeUInt32(10, aOAMBLPDMCD_);
-      }
-      if (gEJHPIMAICM_ != 0) {
-        output.writeUInt32(11, gEJHPIMAICM_);
+      for (int i = 0; i < cFEEAMMKCCH_.size(); i++) {
+        output.writeUInt32NoTag(cFEEAMMKCCH_.getInt(i));
       }
       if (targetScore_ != 0) {
-        output.writeUInt32(14, targetScore_);
+        output.writeUInt32(4, targetScore_);
       }
-      if (gPLGGCNDIPG_ != 0) {
-        output.writeUInt32(15, gPLGGCNDIPG_);
+      if (lFLLIPGOCOP_ != 0) {
+        output.writeUInt32(5, lFLLIPGOCOP_);
+      }
+      if (kIDNINNHNKL_ != 0) {
+        output.writeUInt32(7, kIDNINNHNKL_);
+      }
+      if (hAGFOCFANKB_ != 0) {
+        output.writeUInt32(8, hAGFOCFANKB_);
+      }
+      if (bNLBDMGIAOD_ != 0) {
+        output.writeUInt32(9, bNLBDMGIAOD_);
+      }
+      if (isBanSkill_ != false) {
+        output.writeBool(11, isBanSkill_);
+      }
+      if (getHIMLKBHOPGJList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(hIMLKBHOPGJMemoizedSerializedSize);
+      }
+      for (int i = 0; i < hIMLKBHOPGJ_.size(); i++) {
+        output.writeUInt32NoTag(hIMLKBHOPGJ_.getInt(i));
+      }
+      if (fEHAIEECMLK_ != 0) {
+        output.writeUInt32(13, fEHAIEECMLK_);
+      }
+      if (settleType_ != emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.NDEFMHMAELJ_NONE.getNumber()) {
+        output.writeEnum(14, settleType_);
       }
       unknownFields.writeTo(output);
     }
@@ -449,61 +489,65 @@ public final class UgcDungeonSettingOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pKMFJEINMFI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, pKMFJEINMFI_);
-      }
       {
         int dataSize = 0;
-        for (int i = 0; i < dNPEDKEAPGB_.size(); i++) {
+        for (int i = 0; i < cFEEAMMKCCH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(dNPEDKEAPGB_.getInt(i));
+            .computeUInt32SizeNoTag(cFEEAMMKCCH_.getInt(i));
         }
         size += dataSize;
-        if (!getDNPEDKEAPGBList().isEmpty()) {
+        if (!getCFEEAMMKCCHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        dNPEDKEAPGBMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < nCEPKAKGOFN_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(nCEPKAKGOFN_.getInt(i));
-        }
-        size += dataSize;
-        if (!getNCEPKAKGOFNList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        nCEPKAKGOFNMemoizedSerializedSize = dataSize;
-      }
-      if (isBanSkill_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isBanSkill_);
-      }
-      if (aCJPJINLPDM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, aCJPJINLPDM_);
-      }
-      if (aOAMBLPDMCD_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, aOAMBLPDMCD_);
-      }
-      if (gEJHPIMAICM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gEJHPIMAICM_);
+        cFEEAMMKCCHMemoizedSerializedSize = dataSize;
       }
       if (targetScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, targetScore_);
+          .computeUInt32Size(4, targetScore_);
       }
-      if (gPLGGCNDIPG_ != 0) {
+      if (lFLLIPGOCOP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gPLGGCNDIPG_);
+          .computeUInt32Size(5, lFLLIPGOCOP_);
+      }
+      if (kIDNINNHNKL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, kIDNINNHNKL_);
+      }
+      if (hAGFOCFANKB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, hAGFOCFANKB_);
+      }
+      if (bNLBDMGIAOD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, bNLBDMGIAOD_);
+      }
+      if (isBanSkill_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isBanSkill_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < hIMLKBHOPGJ_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(hIMLKBHOPGJ_.getInt(i));
+        }
+        size += dataSize;
+        if (!getHIMLKBHOPGJList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        hIMLKBHOPGJMemoizedSerializedSize = dataSize;
+      }
+      if (fEHAIEECMLK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, fEHAIEECMLK_);
+      }
+      if (settleType_ != emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.NDEFMHMAELJ_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(14, settleType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -520,24 +564,25 @@ public final class UgcDungeonSettingOuterClass {
       }
       emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting other = (emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting) obj;
 
-      if (!getNCEPKAKGOFNList()
-          .equals(other.getNCEPKAKGOFNList())) return false;
-      if (!getDNPEDKEAPGBList()
-          .equals(other.getDNPEDKEAPGBList())) return false;
-      if (getACJPJINLPDM()
-          != other.getACJPJINLPDM()) return false;
-      if (getGPLGGCNDIPG()
-          != other.getGPLGGCNDIPG()) return false;
-      if (getIsBanSkill()
-          != other.getIsBanSkill()) return false;
-      if (getPKMFJEINMFI()
-          != other.getPKMFJEINMFI()) return false;
+      if (!getCFEEAMMKCCHList()
+          .equals(other.getCFEEAMMKCCHList())) return false;
       if (getTargetScore()
           != other.getTargetScore()) return false;
-      if (getAOAMBLPDMCD()
-          != other.getAOAMBLPDMCD()) return false;
-      if (getGEJHPIMAICM()
-          != other.getGEJHPIMAICM()) return false;
+      if (getLFLLIPGOCOP()
+          != other.getLFLLIPGOCOP()) return false;
+      if (getKIDNINNHNKL()
+          != other.getKIDNINNHNKL()) return false;
+      if (getHAGFOCFANKB()
+          != other.getHAGFOCFANKB()) return false;
+      if (getBNLBDMGIAOD()
+          != other.getBNLBDMGIAOD()) return false;
+      if (getIsBanSkill()
+          != other.getIsBanSkill()) return false;
+      if (!getHIMLKBHOPGJList()
+          .equals(other.getHIMLKBHOPGJList())) return false;
+      if (getFEHAIEECMLK()
+          != other.getFEHAIEECMLK()) return false;
+      if (settleType_ != other.settleType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -549,29 +594,31 @@ public final class UgcDungeonSettingOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getNCEPKAKGOFNCount() > 0) {
-        hash = (37 * hash) + NCEPKAKGOFN_FIELD_NUMBER;
-        hash = (53 * hash) + getNCEPKAKGOFNList().hashCode();
+      if (getCFEEAMMKCCHCount() > 0) {
+        hash = (37 * hash) + CFEEAMMKCCH_FIELD_NUMBER;
+        hash = (53 * hash) + getCFEEAMMKCCHList().hashCode();
       }
-      if (getDNPEDKEAPGBCount() > 0) {
-        hash = (37 * hash) + DNPEDKEAPGB_FIELD_NUMBER;
-        hash = (53 * hash) + getDNPEDKEAPGBList().hashCode();
-      }
-      hash = (37 * hash) + ACJPJINLPDM_FIELD_NUMBER;
-      hash = (53 * hash) + getACJPJINLPDM();
-      hash = (37 * hash) + GPLGGCNDIPG_FIELD_NUMBER;
-      hash = (53 * hash) + getGPLGGCNDIPG();
+      hash = (37 * hash) + TARGET_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetScore();
+      hash = (37 * hash) + LFLLIPGOCOP_FIELD_NUMBER;
+      hash = (53 * hash) + getLFLLIPGOCOP();
+      hash = (37 * hash) + KIDNINNHNKL_FIELD_NUMBER;
+      hash = (53 * hash) + getKIDNINNHNKL();
+      hash = (37 * hash) + HAGFOCFANKB_FIELD_NUMBER;
+      hash = (53 * hash) + getHAGFOCFANKB();
+      hash = (37 * hash) + BNLBDMGIAOD_FIELD_NUMBER;
+      hash = (53 * hash) + getBNLBDMGIAOD();
       hash = (37 * hash) + IS_BAN_SKILL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsBanSkill());
-      hash = (37 * hash) + PKMFJEINMFI_FIELD_NUMBER;
-      hash = (53 * hash) + getPKMFJEINMFI();
-      hash = (37 * hash) + TARGET_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetScore();
-      hash = (37 * hash) + AOAMBLPDMCD_FIELD_NUMBER;
-      hash = (53 * hash) + getAOAMBLPDMCD();
-      hash = (37 * hash) + GEJHPIMAICM_FIELD_NUMBER;
-      hash = (53 * hash) + getGEJHPIMAICM();
+      if (getHIMLKBHOPGJCount() > 0) {
+        hash = (37 * hash) + HIMLKBHOPGJ_FIELD_NUMBER;
+        hash = (53 * hash) + getHIMLKBHOPGJList().hashCode();
+      }
+      hash = (37 * hash) + FEHAIEECMLK_FIELD_NUMBER;
+      hash = (53 * hash) + getFEHAIEECMLK();
+      hash = (37 * hash) + SETTLE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + settleType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -705,23 +752,25 @@ public final class UgcDungeonSettingOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nCEPKAKGOFN_ = emptyIntList();
+        cFEEAMMKCCH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        dNPEDKEAPGB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        aCJPJINLPDM_ = 0;
+        targetScore_ = 0;
 
-        gPLGGCNDIPG_ = 0;
+        lFLLIPGOCOP_ = 0;
+
+        kIDNINNHNKL_ = 0;
+
+        hAGFOCFANKB_ = 0;
+
+        bNLBDMGIAOD_ = 0;
 
         isBanSkill_ = false;
 
-        pKMFJEINMFI_ = 0;
+        hIMLKBHOPGJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        fEHAIEECMLK_ = 0;
 
-        targetScore_ = 0;
-
-        aOAMBLPDMCD_ = 0;
-
-        gEJHPIMAICM_ = 0;
+        settleType_ = 0;
 
         return this;
       }
@@ -751,22 +800,23 @@ public final class UgcDungeonSettingOuterClass {
         emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting result = new emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          nCEPKAKGOFN_.makeImmutable();
+          cFEEAMMKCCH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.nCEPKAKGOFN_ = nCEPKAKGOFN_;
+        result.cFEEAMMKCCH_ = cFEEAMMKCCH_;
+        result.targetScore_ = targetScore_;
+        result.lFLLIPGOCOP_ = lFLLIPGOCOP_;
+        result.kIDNINNHNKL_ = kIDNINNHNKL_;
+        result.hAGFOCFANKB_ = hAGFOCFANKB_;
+        result.bNLBDMGIAOD_ = bNLBDMGIAOD_;
+        result.isBanSkill_ = isBanSkill_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          dNPEDKEAPGB_.makeImmutable();
+          hIMLKBHOPGJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.dNPEDKEAPGB_ = dNPEDKEAPGB_;
-        result.aCJPJINLPDM_ = aCJPJINLPDM_;
-        result.gPLGGCNDIPG_ = gPLGGCNDIPG_;
-        result.isBanSkill_ = isBanSkill_;
-        result.pKMFJEINMFI_ = pKMFJEINMFI_;
-        result.targetScore_ = targetScore_;
-        result.aOAMBLPDMCD_ = aOAMBLPDMCD_;
-        result.gEJHPIMAICM_ = gEJHPIMAICM_;
+        result.hIMLKBHOPGJ_ = hIMLKBHOPGJ_;
+        result.fEHAIEECMLK_ = fEHAIEECMLK_;
+        result.settleType_ = settleType_;
         onBuilt();
         return result;
       }
@@ -815,46 +865,49 @@ public final class UgcDungeonSettingOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting other) {
         if (other == emu.grasscutter.net.proto.UgcDungeonSettingOuterClass.UgcDungeonSetting.getDefaultInstance()) return this;
-        if (!other.nCEPKAKGOFN_.isEmpty()) {
-          if (nCEPKAKGOFN_.isEmpty()) {
-            nCEPKAKGOFN_ = other.nCEPKAKGOFN_;
+        if (!other.cFEEAMMKCCH_.isEmpty()) {
+          if (cFEEAMMKCCH_.isEmpty()) {
+            cFEEAMMKCCH_ = other.cFEEAMMKCCH_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureNCEPKAKGOFNIsMutable();
-            nCEPKAKGOFN_.addAll(other.nCEPKAKGOFN_);
+            ensureCFEEAMMKCCHIsMutable();
+            cFEEAMMKCCH_.addAll(other.cFEEAMMKCCH_);
           }
           onChanged();
-        }
-        if (!other.dNPEDKEAPGB_.isEmpty()) {
-          if (dNPEDKEAPGB_.isEmpty()) {
-            dNPEDKEAPGB_ = other.dNPEDKEAPGB_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureDNPEDKEAPGBIsMutable();
-            dNPEDKEAPGB_.addAll(other.dNPEDKEAPGB_);
-          }
-          onChanged();
-        }
-        if (other.getACJPJINLPDM() != 0) {
-          setACJPJINLPDM(other.getACJPJINLPDM());
-        }
-        if (other.getGPLGGCNDIPG() != 0) {
-          setGPLGGCNDIPG(other.getGPLGGCNDIPG());
-        }
-        if (other.getIsBanSkill() != false) {
-          setIsBanSkill(other.getIsBanSkill());
-        }
-        if (other.getPKMFJEINMFI() != 0) {
-          setPKMFJEINMFI(other.getPKMFJEINMFI());
         }
         if (other.getTargetScore() != 0) {
           setTargetScore(other.getTargetScore());
         }
-        if (other.getAOAMBLPDMCD() != 0) {
-          setAOAMBLPDMCD(other.getAOAMBLPDMCD());
+        if (other.getLFLLIPGOCOP() != 0) {
+          setLFLLIPGOCOP(other.getLFLLIPGOCOP());
         }
-        if (other.getGEJHPIMAICM() != 0) {
-          setGEJHPIMAICM(other.getGEJHPIMAICM());
+        if (other.getKIDNINNHNKL() != 0) {
+          setKIDNINNHNKL(other.getKIDNINNHNKL());
+        }
+        if (other.getHAGFOCFANKB() != 0) {
+          setHAGFOCFANKB(other.getHAGFOCFANKB());
+        }
+        if (other.getBNLBDMGIAOD() != 0) {
+          setBNLBDMGIAOD(other.getBNLBDMGIAOD());
+        }
+        if (other.getIsBanSkill() != false) {
+          setIsBanSkill(other.getIsBanSkill());
+        }
+        if (!other.hIMLKBHOPGJ_.isEmpty()) {
+          if (hIMLKBHOPGJ_.isEmpty()) {
+            hIMLKBHOPGJ_ = other.hIMLKBHOPGJ_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureHIMLKBHOPGJIsMutable();
+            hIMLKBHOPGJ_.addAll(other.hIMLKBHOPGJ_);
+          }
+          onChanged();
+        }
+        if (other.getFEHAIEECMLK() != 0) {
+          setFEHAIEECMLK(other.getFEHAIEECMLK());
+        }
+        if (other.settleType_ != 0) {
+          setSettleTypeValue(other.getSettleTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -886,291 +939,88 @@ public final class UgcDungeonSettingOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList nCEPKAKGOFN_ = emptyIntList();
-      private void ensureNCEPKAKGOFNIsMutable() {
+      private com.google.protobuf.Internal.IntList cFEEAMMKCCH_ = emptyIntList();
+      private void ensureCFEEAMMKCCHIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          nCEPKAKGOFN_ = mutableCopy(nCEPKAKGOFN_);
+          cFEEAMMKCCH_ = mutableCopy(cFEEAMMKCCH_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-       * @return A list containing the nCEPKAKGOFN.
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+       * @return A list containing the cFEEAMMKCCH.
        */
       public java.util.List<java.lang.Integer>
-          getNCEPKAKGOFNList() {
+          getCFEEAMMKCCHList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(nCEPKAKGOFN_) : nCEPKAKGOFN_;
+                 java.util.Collections.unmodifiableList(cFEEAMMKCCH_) : cFEEAMMKCCH_;
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-       * @return The count of nCEPKAKGOFN.
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+       * @return The count of cFEEAMMKCCH.
        */
-      public int getNCEPKAKGOFNCount() {
-        return nCEPKAKGOFN_.size();
+      public int getCFEEAMMKCCHCount() {
+        return cFEEAMMKCCH_.size();
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
        * @param index The index of the element to return.
-       * @return The nCEPKAKGOFN at the given index.
+       * @return The cFEEAMMKCCH at the given index.
        */
-      public int getNCEPKAKGOFN(int index) {
-        return nCEPKAKGOFN_.getInt(index);
+      public int getCFEEAMMKCCH(int index) {
+        return cFEEAMMKCCH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
        * @param index The index to set the value at.
-       * @param value The nCEPKAKGOFN to set.
+       * @param value The cFEEAMMKCCH to set.
        * @return This builder for chaining.
        */
-      public Builder setNCEPKAKGOFN(
+      public Builder setCFEEAMMKCCH(
           int index, int value) {
-        ensureNCEPKAKGOFNIsMutable();
-        nCEPKAKGOFN_.setInt(index, value);
+        ensureCFEEAMMKCCHIsMutable();
+        cFEEAMMKCCH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-       * @param value The nCEPKAKGOFN to add.
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+       * @param value The cFEEAMMKCCH to add.
        * @return This builder for chaining.
        */
-      public Builder addNCEPKAKGOFN(int value) {
-        ensureNCEPKAKGOFNIsMutable();
-        nCEPKAKGOFN_.addInt(value);
+      public Builder addCFEEAMMKCCH(int value) {
+        ensureCFEEAMMKCCHIsMutable();
+        cFEEAMMKCCH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
-       * @param values The nCEPKAKGOFN to add.
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
+       * @param values The cFEEAMMKCCH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllNCEPKAKGOFN(
+      public Builder addAllCFEEAMMKCCH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureNCEPKAKGOFNIsMutable();
+        ensureCFEEAMMKCCHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, nCEPKAKGOFN_);
+            values, cFEEAMMKCCH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NCEPKAKGOFN = 5;</code>
+       * <code>repeated uint32 CFEEAMMKCCH = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNCEPKAKGOFN() {
-        nCEPKAKGOFN_ = emptyIntList();
+      public Builder clearCFEEAMMKCCH() {
+        cFEEAMMKCCH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList dNPEDKEAPGB_ = emptyIntList();
-      private void ensureDNPEDKEAPGBIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          dNPEDKEAPGB_ = mutableCopy(dNPEDKEAPGB_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @return A list containing the dNPEDKEAPGB.
-       */
-      public java.util.List<java.lang.Integer>
-          getDNPEDKEAPGBList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(dNPEDKEAPGB_) : dNPEDKEAPGB_;
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @return The count of dNPEDKEAPGB.
-       */
-      public int getDNPEDKEAPGBCount() {
-        return dNPEDKEAPGB_.size();
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @param index The index of the element to return.
-       * @return The dNPEDKEAPGB at the given index.
-       */
-      public int getDNPEDKEAPGB(int index) {
-        return dNPEDKEAPGB_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The dNPEDKEAPGB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDNPEDKEAPGB(
-          int index, int value) {
-        ensureDNPEDKEAPGBIsMutable();
-        dNPEDKEAPGB_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @param value The dNPEDKEAPGB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDNPEDKEAPGB(int value) {
-        ensureDNPEDKEAPGBIsMutable();
-        dNPEDKEAPGB_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @param values The dNPEDKEAPGB to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDNPEDKEAPGB(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDNPEDKEAPGBIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, dNPEDKEAPGB_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 DNPEDKEAPGB = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDNPEDKEAPGB() {
-        dNPEDKEAPGB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int aCJPJINLPDM_ ;
-      /**
-       * <code>uint32 ACJPJINLPDM = 7;</code>
-       * @return The aCJPJINLPDM.
-       */
-      @java.lang.Override
-      public int getACJPJINLPDM() {
-        return aCJPJINLPDM_;
-      }
-      /**
-       * <code>uint32 ACJPJINLPDM = 7;</code>
-       * @param value The aCJPJINLPDM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setACJPJINLPDM(int value) {
-        
-        aCJPJINLPDM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ACJPJINLPDM = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearACJPJINLPDM() {
-        
-        aCJPJINLPDM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gPLGGCNDIPG_ ;
-      /**
-       * <code>uint32 GPLGGCNDIPG = 15;</code>
-       * @return The gPLGGCNDIPG.
-       */
-      @java.lang.Override
-      public int getGPLGGCNDIPG() {
-        return gPLGGCNDIPG_;
-      }
-      /**
-       * <code>uint32 GPLGGCNDIPG = 15;</code>
-       * @param value The gPLGGCNDIPG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGPLGGCNDIPG(int value) {
-        
-        gPLGGCNDIPG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GPLGGCNDIPG = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGPLGGCNDIPG() {
-        
-        gPLGGCNDIPG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isBanSkill_ ;
-      /**
-       * <code>bool is_ban_skill = 6;</code>
-       * @return The isBanSkill.
-       */
-      @java.lang.Override
-      public boolean getIsBanSkill() {
-        return isBanSkill_;
-      }
-      /**
-       * <code>bool is_ban_skill = 6;</code>
-       * @param value The isBanSkill to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsBanSkill(boolean value) {
-        
-        isBanSkill_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_ban_skill = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsBanSkill() {
-        
-        isBanSkill_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int pKMFJEINMFI_ ;
-      /**
-       * <code>uint32 PKMFJEINMFI = 1;</code>
-       * @return The pKMFJEINMFI.
-       */
-      @java.lang.Override
-      public int getPKMFJEINMFI() {
-        return pKMFJEINMFI_;
-      }
-      /**
-       * <code>uint32 PKMFJEINMFI = 1;</code>
-       * @param value The pKMFJEINMFI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPKMFJEINMFI(int value) {
-        
-        pKMFJEINMFI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PKMFJEINMFI = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPKMFJEINMFI() {
-        
-        pKMFJEINMFI_ = 0;
         onChanged();
         return this;
       }
 
       private int targetScore_ ;
       /**
-       * <code>uint32 target_score = 14;</code>
+       * <code>uint32 target_score = 4;</code>
        * @return The targetScore.
        */
       @java.lang.Override
@@ -1178,7 +1028,7 @@ public final class UgcDungeonSettingOuterClass {
         return targetScore_;
       }
       /**
-       * <code>uint32 target_score = 14;</code>
+       * <code>uint32 target_score = 4;</code>
        * @param value The targetScore to set.
        * @return This builder for chaining.
        */
@@ -1189,7 +1039,7 @@ public final class UgcDungeonSettingOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_score = 14;</code>
+       * <code>uint32 target_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetScore() {
@@ -1199,64 +1049,321 @@ public final class UgcDungeonSettingOuterClass {
         return this;
       }
 
-      private int aOAMBLPDMCD_ ;
+      private int lFLLIPGOCOP_ ;
       /**
-       * <code>uint32 AOAMBLPDMCD = 10;</code>
-       * @return The aOAMBLPDMCD.
+       * <code>uint32 LFLLIPGOCOP = 5;</code>
+       * @return The lFLLIPGOCOP.
        */
       @java.lang.Override
-      public int getAOAMBLPDMCD() {
-        return aOAMBLPDMCD_;
+      public int getLFLLIPGOCOP() {
+        return lFLLIPGOCOP_;
       }
       /**
-       * <code>uint32 AOAMBLPDMCD = 10;</code>
-       * @param value The aOAMBLPDMCD to set.
+       * <code>uint32 LFLLIPGOCOP = 5;</code>
+       * @param value The lFLLIPGOCOP to set.
        * @return This builder for chaining.
        */
-      public Builder setAOAMBLPDMCD(int value) {
+      public Builder setLFLLIPGOCOP(int value) {
         
-        aOAMBLPDMCD_ = value;
+        lFLLIPGOCOP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AOAMBLPDMCD = 10;</code>
+       * <code>uint32 LFLLIPGOCOP = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAOAMBLPDMCD() {
+      public Builder clearLFLLIPGOCOP() {
         
-        aOAMBLPDMCD_ = 0;
+        lFLLIPGOCOP_ = 0;
         onChanged();
         return this;
       }
 
-      private int gEJHPIMAICM_ ;
+      private int kIDNINNHNKL_ ;
       /**
-       * <code>uint32 GEJHPIMAICM = 11;</code>
-       * @return The gEJHPIMAICM.
+       * <code>uint32 KIDNINNHNKL = 7;</code>
+       * @return The kIDNINNHNKL.
        */
       @java.lang.Override
-      public int getGEJHPIMAICM() {
-        return gEJHPIMAICM_;
+      public int getKIDNINNHNKL() {
+        return kIDNINNHNKL_;
       }
       /**
-       * <code>uint32 GEJHPIMAICM = 11;</code>
-       * @param value The gEJHPIMAICM to set.
+       * <code>uint32 KIDNINNHNKL = 7;</code>
+       * @param value The kIDNINNHNKL to set.
        * @return This builder for chaining.
        */
-      public Builder setGEJHPIMAICM(int value) {
+      public Builder setKIDNINNHNKL(int value) {
         
-        gEJHPIMAICM_ = value;
+        kIDNINNHNKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GEJHPIMAICM = 11;</code>
+       * <code>uint32 KIDNINNHNKL = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGEJHPIMAICM() {
+      public Builder clearKIDNINNHNKL() {
         
-        gEJHPIMAICM_ = 0;
+        kIDNINNHNKL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hAGFOCFANKB_ ;
+      /**
+       * <code>uint32 HAGFOCFANKB = 8;</code>
+       * @return The hAGFOCFANKB.
+       */
+      @java.lang.Override
+      public int getHAGFOCFANKB() {
+        return hAGFOCFANKB_;
+      }
+      /**
+       * <code>uint32 HAGFOCFANKB = 8;</code>
+       * @param value The hAGFOCFANKB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHAGFOCFANKB(int value) {
+        
+        hAGFOCFANKB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HAGFOCFANKB = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHAGFOCFANKB() {
+        
+        hAGFOCFANKB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bNLBDMGIAOD_ ;
+      /**
+       * <code>uint32 BNLBDMGIAOD = 9;</code>
+       * @return The bNLBDMGIAOD.
+       */
+      @java.lang.Override
+      public int getBNLBDMGIAOD() {
+        return bNLBDMGIAOD_;
+      }
+      /**
+       * <code>uint32 BNLBDMGIAOD = 9;</code>
+       * @param value The bNLBDMGIAOD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBNLBDMGIAOD(int value) {
+        
+        bNLBDMGIAOD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BNLBDMGIAOD = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBNLBDMGIAOD() {
+        
+        bNLBDMGIAOD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isBanSkill_ ;
+      /**
+       * <code>bool is_ban_skill = 11;</code>
+       * @return The isBanSkill.
+       */
+      @java.lang.Override
+      public boolean getIsBanSkill() {
+        return isBanSkill_;
+      }
+      /**
+       * <code>bool is_ban_skill = 11;</code>
+       * @param value The isBanSkill to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsBanSkill(boolean value) {
+        
+        isBanSkill_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_ban_skill = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsBanSkill() {
+        
+        isBanSkill_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList hIMLKBHOPGJ_ = emptyIntList();
+      private void ensureHIMLKBHOPGJIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          hIMLKBHOPGJ_ = mutableCopy(hIMLKBHOPGJ_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @return A list containing the hIMLKBHOPGJ.
+       */
+      public java.util.List<java.lang.Integer>
+          getHIMLKBHOPGJList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(hIMLKBHOPGJ_) : hIMLKBHOPGJ_;
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @return The count of hIMLKBHOPGJ.
+       */
+      public int getHIMLKBHOPGJCount() {
+        return hIMLKBHOPGJ_.size();
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @param index The index of the element to return.
+       * @return The hIMLKBHOPGJ at the given index.
+       */
+      public int getHIMLKBHOPGJ(int index) {
+        return hIMLKBHOPGJ_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The hIMLKBHOPGJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHIMLKBHOPGJ(
+          int index, int value) {
+        ensureHIMLKBHOPGJIsMutable();
+        hIMLKBHOPGJ_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @param value The hIMLKBHOPGJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addHIMLKBHOPGJ(int value) {
+        ensureHIMLKBHOPGJIsMutable();
+        hIMLKBHOPGJ_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @param values The hIMLKBHOPGJ to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllHIMLKBHOPGJ(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureHIMLKBHOPGJIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, hIMLKBHOPGJ_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 HIMLKBHOPGJ = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHIMLKBHOPGJ() {
+        hIMLKBHOPGJ_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int fEHAIEECMLK_ ;
+      /**
+       * <code>uint32 FEHAIEECMLK = 13;</code>
+       * @return The fEHAIEECMLK.
+       */
+      @java.lang.Override
+      public int getFEHAIEECMLK() {
+        return fEHAIEECMLK_;
+      }
+      /**
+       * <code>uint32 FEHAIEECMLK = 13;</code>
+       * @param value The fEHAIEECMLK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFEHAIEECMLK(int value) {
+        
+        fEHAIEECMLK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FEHAIEECMLK = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFEHAIEECMLK() {
+        
+        fEHAIEECMLK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int settleType_ = 0;
+      /**
+       * <code>.UgcDungeonSettleType settle_type = 14;</code>
+       * @return The enum numeric value on the wire for settleType.
+       */
+      @java.lang.Override public int getSettleTypeValue() {
+        return settleType_;
+      }
+      /**
+       * <code>.UgcDungeonSettleType settle_type = 14;</code>
+       * @param value The enum numeric value on the wire for settleType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSettleTypeValue(int value) {
+        
+        settleType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonSettleType settle_type = 14;</code>
+       * @return The settleType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType getSettleType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType result = emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.valueOf(settleType_);
+        return result == null ? emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.UgcDungeonSettleType settle_type = 14;</code>
+       * @param value The settleType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSettleType(emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.UgcDungeonSettleType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        settleType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonSettleType settle_type = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSettleType() {
+        
+        settleType_ = 0;
         onChanged();
         return this;
       }
@@ -1327,24 +1434,28 @@ public final class UgcDungeonSettingOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027UgcDungeonSetting.proto\"\322\001\n\021UgcDungeon" +
-      "Setting\022\023\n\013NCEPKAKGOFN\030\005 \003(\r\022\023\n\013DNPEDKEA" +
-      "PGB\030\003 \003(\r\022\023\n\013ACJPJINLPDM\030\007 \001(\r\022\023\n\013GPLGGC" +
-      "NDIPG\030\017 \001(\r\022\024\n\014is_ban_skill\030\006 \001(\010\022\023\n\013PKM" +
-      "FJEINMFI\030\001 \001(\r\022\024\n\014target_score\030\016 \001(\r\022\023\n\013" +
-      "AOAMBLPDMCD\030\n \001(\r\022\023\n\013GEJHPIMAICM\030\013 \001(\rB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027UgcDungeonSetting.proto\032\032UgcDungeonSet" +
+      "tleType.proto\"\376\001\n\021UgcDungeonSetting\022\023\n\013C" +
+      "FEEAMMKCCH\030\003 \003(\r\022\024\n\014target_score\030\004 \001(\r\022\023" +
+      "\n\013LFLLIPGOCOP\030\005 \001(\r\022\023\n\013KIDNINNHNKL\030\007 \001(\r" +
+      "\022\023\n\013HAGFOCFANKB\030\010 \001(\r\022\023\n\013BNLBDMGIAOD\030\t \001" +
+      "(\r\022\024\n\014is_ban_skill\030\013 \001(\010\022\023\n\013HIMLKBHOPGJ\030" +
+      "\014 \003(\r\022\023\n\013FEHAIEECMLK\030\r \001(\r\022*\n\013settle_typ" +
+      "e\030\016 \001(\0162\025.UgcDungeonSettleTypeB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.getDescriptor(),
         });
     internal_static_UgcDungeonSetting_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcDungeonSetting_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcDungeonSetting_descriptor,
-        new java.lang.String[] { "NCEPKAKGOFN", "DNPEDKEAPGB", "ACJPJINLPDM", "GPLGGCNDIPG", "IsBanSkill", "PKMFJEINMFI", "TargetScore", "AOAMBLPDMCD", "GEJHPIMAICM", });
+        new java.lang.String[] { "CFEEAMMKCCH", "TargetScore", "LFLLIPGOCOP", "KIDNINNHNKL", "HAGFOCFANKB", "BNLBDMGIAOD", "IsBanSkill", "HIMLKBHOPGJ", "FEHAIEECMLK", "SettleType", });
+    emu.grasscutter.net.proto.UgcDungeonSettleTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

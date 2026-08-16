@@ -19,62 +19,102 @@ public final class GadgetPlayStopNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo> 
         getUidInfoListList();
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo getUidInfoList(int index);
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     int getUidInfoListCount();
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder> 
         getUidInfoListOrBuilderList();
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder getUidInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 cost_time = 1;</code>
-     * @return The costTime.
-     */
-    int getCostTime();
-
-    /**
-     * <code>uint32 play_type = 12;</code>
-     * @return The playType.
-     */
-    int getPlayType();
-
-    /**
-     * <code>uint32 score = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_win = 13;</code>
+     * @return The isWin.
+     */
+    boolean getIsWin();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 play_type = 10;</code>
+     * @return The playType.
+     */
+    int getPlayType();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>bool is_win = 4;</code>
-     * @return The isWin.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 3;</code>
+     * @return The nMGJKKDMGPK.
      */
-    boolean getIsWin();
+    int getNMGJKKDMGPK();
   }
   /**
    * <pre>
-   * CmdId: 7578
+   * CmdId: 22286
    * </pre>
    *
    * Protobuf type {@code GadgetPlayStopNotify}
@@ -123,22 +163,17 @@ public final class GadgetPlayStopNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              costTime_ = input.readUInt32();
+              nMGJKKDMGPK_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 40: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 32: {
-
-              isWin_ = input.readBool();
-              break;
-            }
-            case 66: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,12 +184,17 @@ public final class GadgetPlayStopNotifyOuterClass {
             }
             case 80: {
 
+              playType_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
               entityId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
-              playType_ = input.readUInt32();
+              isWin_ = input.readBool();
               break;
             }
             default: {
@@ -192,17 +232,25 @@ public final class GadgetPlayStopNotifyOuterClass {
               emu.grasscutter.net.proto.GadgetPlayStopNotifyOuterClass.GadgetPlayStopNotify.class, emu.grasscutter.net.proto.GadgetPlayStopNotifyOuterClass.GadgetPlayStopNotify.Builder.class);
     }
 
-    public static final int UID_INFO_LIST_FIELD_NUMBER = 8;
+    public static final int UID_INFO_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo> uidInfoList_;
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo> getUidInfoListList() {
       return uidInfoList_;
     }
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder> 
@@ -210,21 +258,33 @@ public final class GadgetPlayStopNotifyOuterClass {
       return uidInfoList_;
     }
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     @java.lang.Override
     public int getUidInfoListCount() {
       return uidInfoList_.size();
     }
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo getUidInfoList(int index) {
       return uidInfoList_.get(index);
     }
     /**
-     * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder getUidInfoListOrBuilder(
@@ -232,32 +292,14 @@ public final class GadgetPlayStopNotifyOuterClass {
       return uidInfoList_.get(index);
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 1;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 1;</code>
-     * @return The costTime.
-     */
-    @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
-    }
-
-    public static final int PLAY_TYPE_FIELD_NUMBER = 12;
-    private int playType_;
-    /**
-     * <code>uint32 play_type = 12;</code>
-     * @return The playType.
-     */
-    @java.lang.Override
-    public int getPlayType() {
-      return playType_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 3;
+    public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <code>uint32 score = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -265,10 +307,44 @@ public final class GadgetPlayStopNotifyOuterClass {
       return score_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int IS_WIN_FIELD_NUMBER = 13;
+    private boolean isWin_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_win = 13;</code>
+     * @return The isWin.
+     */
+    @java.lang.Override
+    public boolean getIsWin() {
+      return isWin_;
+    }
+
+    public static final int PLAY_TYPE_FIELD_NUMBER = 10;
+    private int playType_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 play_type = 10;</code>
+     * @return The playType.
+     */
+    @java.lang.Override
+    public int getPlayType() {
+      return playType_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -276,15 +352,19 @@ public final class GadgetPlayStopNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int IS_WIN_FIELD_NUMBER = 4;
-    private boolean isWin_;
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 3;
+    private int nMGJKKDMGPK_;
     /**
-     * <code>bool is_win = 4;</code>
-     * @return The isWin.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 3;</code>
+     * @return The nMGJKKDMGPK.
      */
     @java.lang.Override
-    public boolean getIsWin() {
-      return isWin_;
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -301,23 +381,23 @@ public final class GadgetPlayStopNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (costTime_ != 0) {
-        output.writeUInt32(1, costTime_);
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(3, nMGJKKDMGPK_);
       }
       if (score_ != 0) {
-        output.writeUInt32(3, score_);
-      }
-      if (isWin_ != false) {
-        output.writeBool(4, isWin_);
+        output.writeUInt32(5, score_);
       }
       for (int i = 0; i < uidInfoList_.size(); i++) {
-        output.writeMessage(8, uidInfoList_.get(i));
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeMessage(7, uidInfoList_.get(i));
       }
       if (playType_ != 0) {
-        output.writeUInt32(12, playType_);
+        output.writeUInt32(10, playType_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(11, entityId_);
+      }
+      if (isWin_ != false) {
+        output.writeBool(13, isWin_);
       }
       unknownFields.writeTo(output);
     }
@@ -328,29 +408,29 @@ public final class GadgetPlayStopNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (costTime_ != 0) {
+      if (nMGJKKDMGPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, costTime_);
+          .computeUInt32Size(3, nMGJKKDMGPK_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, score_);
-      }
-      if (isWin_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isWin_);
+          .computeUInt32Size(5, score_);
       }
       for (int i = 0; i < uidInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, uidInfoList_.get(i));
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeMessageSize(7, uidInfoList_.get(i));
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, playType_);
+          .computeUInt32Size(10, playType_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, entityId_);
+      }
+      if (isWin_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isWin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,16 +449,16 @@ public final class GadgetPlayStopNotifyOuterClass {
 
       if (!getUidInfoListList()
           .equals(other.getUidInfoListList())) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
-      if (getPlayType()
-          != other.getPlayType()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getIsWin()
           != other.getIsWin()) return false;
+      if (getPlayType()
+          != other.getPlayType()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -394,17 +474,17 @@ public final class GadgetPlayStopNotifyOuterClass {
         hash = (37 * hash) + UID_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUidInfoListList().hashCode();
       }
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayType();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsWin());
+      hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayType();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -502,7 +582,7 @@ public final class GadgetPlayStopNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7578
+     * CmdId: 22286
      * </pre>
      *
      * Protobuf type {@code GadgetPlayStopNotify}
@@ -549,15 +629,15 @@ public final class GadgetPlayStopNotifyOuterClass {
         } else {
           uidInfoListBuilder_.clear();
         }
-        costTime_ = 0;
+        score_ = 0;
+
+        isWin_ = false;
 
         playType_ = 0;
 
-        score_ = 0;
-
         entityId_ = 0;
 
-        isWin_ = false;
+        nMGJKKDMGPK_ = 0;
 
         return this;
       }
@@ -595,11 +675,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         } else {
           result.uidInfoList_ = uidInfoListBuilder_.build();
         }
-        result.costTime_ = costTime_;
-        result.playType_ = playType_;
         result.score_ = score_;
-        result.entityId_ = entityId_;
         result.isWin_ = isWin_;
+        result.playType_ = playType_;
+        result.entityId_ = entityId_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
         onBuilt();
         return result;
       }
@@ -674,20 +754,20 @@ public final class GadgetPlayStopNotifyOuterClass {
             }
           }
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getIsWin() != false) {
+          setIsWin(other.getIsWin());
         }
         if (other.getPlayType() != 0) {
           setPlayType(other.getPlayType());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getIsWin() != false) {
-          setIsWin(other.getIsWin());
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -732,7 +812,11 @@ public final class GadgetPlayStopNotifyOuterClass {
           emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder> uidInfoListBuilder_;
 
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo> getUidInfoListList() {
         if (uidInfoListBuilder_ == null) {
@@ -742,7 +826,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public int getUidInfoListCount() {
         if (uidInfoListBuilder_ == null) {
@@ -752,7 +840,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo getUidInfoList(int index) {
         if (uidInfoListBuilder_ == null) {
@@ -762,7 +854,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder setUidInfoList(
           int index, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo value) {
@@ -779,7 +875,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder setUidInfoList(
           int index, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder builderForValue) {
@@ -793,7 +893,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder addUidInfoList(emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo value) {
         if (uidInfoListBuilder_ == null) {
@@ -809,7 +913,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder addUidInfoList(
           int index, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo value) {
@@ -826,7 +934,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder addUidInfoList(
           emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder builderForValue) {
@@ -840,7 +952,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder addUidInfoList(
           int index, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder builderForValue) {
@@ -854,7 +970,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder addAllUidInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo> values) {
@@ -869,7 +989,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder clearUidInfoList() {
         if (uidInfoListBuilder_ == null) {
@@ -882,7 +1006,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public Builder removeUidInfoList(int index) {
         if (uidInfoListBuilder_ == null) {
@@ -895,14 +1023,22 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder getUidInfoListBuilder(
           int index) {
         return getUidInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder getUidInfoListOrBuilder(
           int index) {
@@ -912,7 +1048,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfoOrBuilder> 
            getUidInfoListOrBuilderList() {
@@ -923,14 +1063,22 @@ public final class GadgetPlayStopNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder addUidInfoListBuilder() {
         return getUidInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder addUidInfoListBuilder(
           int index) {
@@ -938,7 +1086,11 @@ public final class GadgetPlayStopNotifyOuterClass {
             index, emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GadgetPlayUidInfo uid_info_list = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GadgetPlayUidInfo uid_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.GadgetPlayUidInfo.Builder> 
            getUidInfoListBuilderList() {
@@ -959,71 +1111,13 @@ public final class GadgetPlayStopNotifyOuterClass {
         return uidInfoListBuilder_;
       }
 
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 1;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 1;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playType_ ;
-      /**
-       * <code>uint32 play_type = 12;</code>
-       * @return The playType.
-       */
-      @java.lang.Override
-      public int getPlayType() {
-        return playType_;
-      }
-      /**
-       * <code>uint32 play_type = 12;</code>
-       * @param value The playType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayType(int value) {
-        
-        playType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_type = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayType() {
-        
-        playType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int score_ ;
       /**
-       * <code>uint32 score = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 5;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -1031,7 +1125,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -1042,7 +1140,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -1052,40 +1154,13 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 10;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 10;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isWin_ ;
       /**
-       * <code>bool is_win = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_win = 13;</code>
        * @return The isWin.
        */
       @java.lang.Override
@@ -1093,7 +1168,11 @@ public final class GadgetPlayStopNotifyOuterClass {
         return isWin_;
       }
       /**
-       * <code>bool is_win = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_win = 13;</code>
        * @param value The isWin to set.
        * @return This builder for chaining.
        */
@@ -1104,12 +1183,145 @@ public final class GadgetPlayStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_win = 4;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_win = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsWin() {
         
         isWin_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int playType_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 play_type = 10;</code>
+       * @return The playType.
+       */
+      @java.lang.Override
+      public int getPlayType() {
+        return playType_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 play_type = 10;</code>
+       * @param value The playType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayType(int value) {
+        
+        playType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 play_type = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayType() {
+        
+        playType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 entity_id = 11;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 entity_id = 11;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 entity_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
+        
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
         onChanged();
         return this;
       }
@@ -1181,12 +1393,12 @@ public final class GadgetPlayStopNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GadgetPlayStopNotify.proto\032\027GadgetPlay" +
-      "UidInfo.proto\"\231\001\n\024GadgetPlayStopNotify\022)" +
-      "\n\ruid_info_list\030\010 \003(\0132\022.GadgetPlayUidInf" +
-      "o\022\021\n\tcost_time\030\001 \001(\r\022\021\n\tplay_type\030\014 \001(\r\022" +
-      "\r\n\005score\030\003 \001(\r\022\021\n\tentity_id\030\n \001(\r\022\016\n\006is_" +
-      "win\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "UidInfo.proto\"\233\001\n\024GadgetPlayStopNotify\022)" +
+      "\n\ruid_info_list\030\007 \003(\0132\022.GadgetPlayUidInf" +
+      "o\022\r\n\005score\030\005 \001(\r\022\016\n\006is_win\030\r \001(\010\022\021\n\tplay" +
+      "_type\030\n \001(\r\022\021\n\tentity_id\030\013 \001(\r\022\023\n\013NMGJKK" +
+      "DMGPK\030\003 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1198,7 +1410,7 @@ public final class GadgetPlayStopNotifyOuterClass {
     internal_static_GadgetPlayStopNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetPlayStopNotify_descriptor,
-        new java.lang.String[] { "UidInfoList", "CostTime", "PlayType", "Score", "EntityId", "IsWin", });
+        new java.lang.String[] { "UidInfoList", "Score", "IsWin", "PlayType", "EntityId", "NMGJKKDMGPK", });
     emu.grasscutter.net.proto.GadgetPlayUidInfoOuterClass.getDescriptor();
   }
 

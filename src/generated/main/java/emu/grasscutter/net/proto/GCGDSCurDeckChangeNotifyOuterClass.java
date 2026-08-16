@@ -19,17 +19,16 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 7;</code>
+     * <pre>
+     * CMD_ID = 7392
+     * </pre>
+     *
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
-   * <pre>
-   * CmdId: 26619
-   * Obf: IPOLOAOIEKC
-   * </pre>
-   *
    * Protobuf type {@code GCGDSCurDeckChangeNotify}
    */
   public static final class GCGDSCurDeckChangeNotify extends
@@ -74,7 +73,7 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 104: {
 
               deckId_ = input.readUInt32();
               break;
@@ -111,10 +110,14 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCurDeckChangeNotifyOuterClass.GCGDSCurDeckChangeNotify.class, emu.grasscutter.net.proto.GCGDSCurDeckChangeNotifyOuterClass.GCGDSCurDeckChangeNotify.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 7;
+    public static final int DECK_ID_FIELD_NUMBER = 13;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 7;</code>
+     * <pre>
+     * CMD_ID = 7392
+     * </pre>
+     *
+     * <code>uint32 deck_id = 13;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (deckId_ != 0) {
-        output.writeUInt32(7, deckId_);
+        output.writeUInt32(13, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
       size = 0;
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, deckId_);
+          .computeUInt32Size(13, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +281,6 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26619
-     * Obf: IPOLOAOIEKC
-     * </pre>
-     *
      * Protobuf type {@code GCGDSCurDeckChangeNotify}
      */
     public static final class Builder extends
@@ -431,7 +429,11 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 7392
+       * </pre>
+       *
+       * <code>uint32 deck_id = 13;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -439,7 +441,11 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 7392
+       * </pre>
+       *
+       * <code>uint32 deck_id = 13;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +456,11 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 7;</code>
+       * <pre>
+       * CMD_ID = 7392
+       * </pre>
+       *
+       * <code>uint32 deck_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -527,7 +537,7 @@ public final class GCGDSCurDeckChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGDSCurDeckChangeNotify.proto\"+\n\030GCGD" +
-      "SCurDeckChangeNotify\022\017\n\007deck_id\030\007 \001(\rB\033\n" +
+      "SCurDeckChangeNotify\022\017\n\007deck_id\030\r \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,39 +19,141 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @return A list containing the playerUidList.
      */
     java.util.List<java.lang.Integer> getPlayerUidListList();
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @return The count of playerUidList.
      */
     int getPlayerUidListCount();
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @param index The index of the element to return.
      * @return The playerUidList at the given index.
      */
     int getPlayerUidList(int index);
 
     /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @return A list containing the hLIBJOBEMMI.
      */
-    boolean getIsNewRecord();
+    java.util.List<java.lang.Integer> getHLIBJOBEMMIList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @return The count of hLIBJOBEMMI.
+     */
+    int getHLIBJOBEMMICount();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @param index The index of the element to return.
+     * @return The hLIBJOBEMMI at the given index.
+     */
+    int getHLIBJOBEMMI(int index);
 
     /**
-     * <code>uint32 cost_time = 13;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @return A list containing the hDDBLCDGOED.
      */
-    int getCostTime();
+    java.util.List<java.lang.Integer> getHDDBLCDGOEDList();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @return The count of hDDBLCDGOED.
+     */
+    int getHDDBLCDGOEDCount();
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @param index The index of the element to return.
+     * @return The hDDBLCDGOED at the given index.
+     */
+    int getHDDBLCDGOED(int index);
 
     /**
-     * <code>uint32 difficulty_id = 9;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 14;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    int getNMGJKKDMGPK();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 12;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 LOBMKOONDJE = 5;</code>
+     * @return The lOBMKOONDJE.
+     */
+    int getLOBMKOONDJE();
+
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool JEOKPMLIJPK = 1;</code>
+     * @return The jEOKPMLIJPK.
+     */
+    boolean getJEOKPMLIJPK();
+
+    /**
+     * <pre>
+     * offset: 69
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * Protobuf type {@code EffigyChallengeV5DungeonSettleInfo}
@@ -67,6 +169,8 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
     }
     private EffigyChallengeV5DungeonSettleInfo() {
       playerUidList_ = emptyIntList();
+      hLIBJOBEMMI_ = emptyIntList();
+      hDDBLCDGOED_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -100,17 +204,74 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              jEOKPMLIJPK_ = input.readBool();
+              break;
+            }
+            case 24: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              lOBMKOONDJE_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                hDDBLCDGOED_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              hDDBLCDGOED_.addInt(input.readUInt32());
+              break;
+            }
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                hDDBLCDGOED_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                hDDBLCDGOED_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
             case 72: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                hLIBJOBEMMI_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              hLIBJOBEMMI_.addInt(input.readUInt32());
+              break;
+            }
+            case 74: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                hLIBJOBEMMI_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                hLIBJOBEMMI_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 96: {
 
               difficultyId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
-              costTime_ = input.readUInt32();
+              nMGJKKDMGPK_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerUidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +279,7 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
               playerUidList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -129,11 +290,6 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
                 playerUidList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -151,6 +307,12 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          hDDBLCDGOED_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          hLIBJOBEMMI_.makeImmutable(); // C
+        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           playerUidList_.makeImmutable(); // C
         }
@@ -171,10 +333,14 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV5DungeonSettleInfoOuterClass.EffigyChallengeV5DungeonSettleInfo.class, emu.grasscutter.net.proto.EffigyChallengeV5DungeonSettleInfoOuterClass.EffigyChallengeV5DungeonSettleInfo.Builder.class);
     }
 
-    public static final int PLAYER_UID_LIST_FIELD_NUMBER = 14;
+    public static final int PLAYER_UID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList playerUidList_;
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @return A list containing the playerUidList.
      */
     @java.lang.Override
@@ -183,14 +349,22 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
       return playerUidList_;
     }
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @return The count of playerUidList.
      */
     public int getPlayerUidListCount() {
       return playerUidList_.size();
     }
     /**
-     * <code>repeated uint32 player_uid_list = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 player_uid_list = 15;</code>
      * @param index The index of the element to return.
      * @return The playerUidList at the given index.
      */
@@ -199,37 +373,159 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
     }
     private int playerUidListMemoizedSerializedSize = -1;
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
-    private boolean isNewRecord_;
+    public static final int HLIBJOBEMMI_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList hLIBJOBEMMI_;
     /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @return A list containing the hLIBJOBEMMI.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public java.util.List<java.lang.Integer>
+        getHLIBJOBEMMIList() {
+      return hLIBJOBEMMI_;
     }
-
-    public static final int COST_TIME_FIELD_NUMBER = 13;
-    private int costTime_;
     /**
-     * <code>uint32 cost_time = 13;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @return The count of hLIBJOBEMMI.
+     */
+    public int getHLIBJOBEMMICount() {
+      return hLIBJOBEMMI_.size();
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+     * @param index The index of the element to return.
+     * @return The hLIBJOBEMMI at the given index.
+     */
+    public int getHLIBJOBEMMI(int index) {
+      return hLIBJOBEMMI_.getInt(index);
+    }
+    private int hLIBJOBEMMIMemoizedSerializedSize = -1;
+
+    public static final int HDDBLCDGOED_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList hDDBLCDGOED_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @return A list containing the hDDBLCDGOED.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public java.util.List<java.lang.Integer>
+        getHDDBLCDGOEDList() {
+      return hDDBLCDGOED_;
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @return The count of hDDBLCDGOED.
+     */
+    public int getHDDBLCDGOEDCount() {
+      return hDDBLCDGOED_.size();
+    }
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+     * @param index The index of the element to return.
+     * @return The hDDBLCDGOED at the given index.
+     */
+    public int getHDDBLCDGOED(int index) {
+      return hDDBLCDGOED_.getInt(index);
+    }
+    private int hDDBLCDGOEDMemoizedSerializedSize = -1;
+
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 14;
+    private int nMGJKKDMGPK_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 14;</code>
+     * @return The nMGJKKDMGPK.
+     */
+    @java.lang.Override
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 9;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 12;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 9;</code>
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 12;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
     public int getDifficultyId() {
       return difficultyId_;
+    }
+
+    public static final int LOBMKOONDJE_FIELD_NUMBER = 5;
+    private int lOBMKOONDJE_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 LOBMKOONDJE = 5;</code>
+     * @return The lOBMKOONDJE.
+     */
+    @java.lang.Override
+    public int getLOBMKOONDJE() {
+      return lOBMKOONDJE_;
+    }
+
+    public static final int JEOKPMLIJPK_FIELD_NUMBER = 1;
+    private boolean jEOKPMLIJPK_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>bool JEOKPMLIJPK = 1;</code>
+     * @return The jEOKPMLIJPK.
+     */
+    @java.lang.Override
+    public boolean getJEOKPMLIJPK() {
+      return jEOKPMLIJPK_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 69
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -247,21 +543,41 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (difficultyId_ != 0) {
-        output.writeUInt32(9, difficultyId_);
+      if (jEOKPMLIJPK_ != false) {
+        output.writeBool(1, jEOKPMLIJPK_);
       }
-      if (costTime_ != 0) {
-        output.writeUInt32(13, costTime_);
+      if (isNewRecord_ != false) {
+        output.writeBool(3, isNewRecord_);
+      }
+      if (lOBMKOONDJE_ != 0) {
+        output.writeUInt32(5, lOBMKOONDJE_);
+      }
+      if (getHDDBLCDGOEDList().size() > 0) {
+        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(hDDBLCDGOEDMemoizedSerializedSize);
+      }
+      for (int i = 0; i < hDDBLCDGOED_.size(); i++) {
+        output.writeUInt32NoTag(hDDBLCDGOED_.getInt(i));
+      }
+      if (getHLIBJOBEMMIList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(hLIBJOBEMMIMemoizedSerializedSize);
+      }
+      for (int i = 0; i < hLIBJOBEMMI_.size(); i++) {
+        output.writeUInt32NoTag(hLIBJOBEMMI_.getInt(i));
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(12, difficultyId_);
+      }
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(14, nMGJKKDMGPK_);
       }
       if (getPlayerUidListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(playerUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < playerUidList_.size(); i++) {
         output.writeUInt32NoTag(playerUidList_.getInt(i));
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(15, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,13 +588,53 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (jEOKPMLIJPK_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, jEOKPMLIJPK_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isNewRecord_);
+      }
+      if (lOBMKOONDJE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, lOBMKOONDJE_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < hDDBLCDGOED_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(hDDBLCDGOED_.getInt(i));
+        }
+        size += dataSize;
+        if (!getHDDBLCDGOEDList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        hDDBLCDGOEDMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < hLIBJOBEMMI_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(hLIBJOBEMMI_.getInt(i));
+        }
+        size += dataSize;
+        if (!getHLIBJOBEMMIList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        hLIBJOBEMMIMemoizedSerializedSize = dataSize;
+      }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, difficultyId_);
+          .computeUInt32Size(12, difficultyId_);
       }
-      if (costTime_ != 0) {
+      if (nMGJKKDMGPK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, costTime_);
+          .computeUInt32Size(14, nMGJKKDMGPK_);
       }
       {
         int dataSize = 0;
@@ -293,10 +649,6 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         playerUidListMemoizedSerializedSize = dataSize;
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,12 +667,20 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
 
       if (!getPlayerUidListList()
           .equals(other.getPlayerUidListList())) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
+      if (!getHLIBJOBEMMIList()
+          .equals(other.getHLIBJOBEMMIList())) return false;
+      if (!getHDDBLCDGOEDList()
+          .equals(other.getHDDBLCDGOEDList())) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
+      if (getLOBMKOONDJE()
+          != other.getLOBMKOONDJE()) return false;
+      if (getJEOKPMLIJPK()
+          != other.getJEOKPMLIJPK()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -336,13 +696,26 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         hash = (37 * hash) + PLAYER_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerUidListList().hashCode();
       }
+      if (getHLIBJOBEMMICount() > 0) {
+        hash = (37 * hash) + HLIBJOBEMMI_FIELD_NUMBER;
+        hash = (53 * hash) + getHLIBJOBEMMIList().hashCode();
+      }
+      if (getHDDBLCDGOEDCount() > 0) {
+        hash = (37 * hash) + HDDBLCDGOED_FIELD_NUMBER;
+        hash = (53 * hash) + getHDDBLCDGOEDList().hashCode();
+      }
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + LOBMKOONDJE_FIELD_NUMBER;
+      hash = (53 * hash) + getLOBMKOONDJE();
+      hash = (37 * hash) + JEOKPMLIJPK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getJEOKPMLIJPK());
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -478,11 +851,19 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         super.clear();
         playerUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isNewRecord_ = false;
-
-        costTime_ = 0;
+        hLIBJOBEMMI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        hDDBLCDGOED_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        nMGJKKDMGPK_ = 0;
 
         difficultyId_ = 0;
+
+        lOBMKOONDJE_ = 0;
+
+        jEOKPMLIJPK_ = false;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -516,9 +897,21 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.playerUidList_ = playerUidList_;
-        result.isNewRecord_ = isNewRecord_;
-        result.costTime_ = costTime_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          hLIBJOBEMMI_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.hLIBJOBEMMI_ = hLIBJOBEMMI_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          hDDBLCDGOED_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.hDDBLCDGOED_ = hDDBLCDGOED_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
         result.difficultyId_ = difficultyId_;
+        result.lOBMKOONDJE_ = lOBMKOONDJE_;
+        result.jEOKPMLIJPK_ = jEOKPMLIJPK_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -577,14 +970,40 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (!other.hLIBJOBEMMI_.isEmpty()) {
+          if (hLIBJOBEMMI_.isEmpty()) {
+            hLIBJOBEMMI_ = other.hLIBJOBEMMI_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureHLIBJOBEMMIIsMutable();
+            hLIBJOBEMMI_.addAll(other.hLIBJOBEMMI_);
+          }
+          onChanged();
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (!other.hDDBLCDGOED_.isEmpty()) {
+          if (hDDBLCDGOED_.isEmpty()) {
+            hDDBLCDGOED_ = other.hDDBLCDGOED_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureHDDBLCDGOEDIsMutable();
+            hDDBLCDGOED_.addAll(other.hDDBLCDGOED_);
+          }
+          onChanged();
+        }
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
+        }
+        if (other.getLOBMKOONDJE() != 0) {
+          setLOBMKOONDJE(other.getLOBMKOONDJE());
+        }
+        if (other.getJEOKPMLIJPK() != false) {
+          setJEOKPMLIJPK(other.getJEOKPMLIJPK());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,7 +1043,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @return A list containing the playerUidList.
        */
       public java.util.List<java.lang.Integer>
@@ -633,14 +1056,22 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(playerUidList_) : playerUidList_;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @return The count of playerUidList.
        */
       public int getPlayerUidListCount() {
         return playerUidList_.size();
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @param index The index of the element to return.
        * @return The playerUidList at the given index.
        */
@@ -648,7 +1079,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return playerUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The playerUidList to set.
        * @return This builder for chaining.
@@ -661,7 +1096,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @param value The playerUidList to add.
        * @return This builder for chaining.
        */
@@ -672,7 +1111,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @param values The playerUidList to add.
        * @return This builder for chaining.
        */
@@ -685,7 +1128,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 player_uid_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUidList() {
@@ -695,71 +1142,270 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
+      private com.google.protobuf.Internal.IntList hLIBJOBEMMI_ = emptyIntList();
+      private void ensureHLIBJOBEMMIIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          hLIBJOBEMMI_ = mutableCopy(hLIBJOBEMMI_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>bool is_new_record = 15;</code>
-       * @param value The isNewRecord to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @return A list containing the hLIBJOBEMMI.
+       */
+      public java.util.List<java.lang.Integer>
+          getHLIBJOBEMMIList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(hLIBJOBEMMI_) : hLIBJOBEMMI_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @return The count of hLIBJOBEMMI.
+       */
+      public int getHLIBJOBEMMICount() {
+        return hLIBJOBEMMI_.size();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @param index The index of the element to return.
+       * @return The hLIBJOBEMMI at the given index.
+       */
+      public int getHLIBJOBEMMI(int index) {
+        return hLIBJOBEMMI_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The hLIBJOBEMMI to set.
        * @return This builder for chaining.
        */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
+      public Builder setHLIBJOBEMMI(
+          int index, int value) {
+        ensureHLIBJOBEMMIIsMutable();
+        hLIBJOBEMMI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_new_record = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @param value The hLIBJOBEMMI to add.
        * @return This builder for chaining.
        */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
+      public Builder addHLIBJOBEMMI(int value) {
+        ensureHLIBJOBEMMIIsMutable();
+        hLIBJOBEMMI_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @param values The hLIBJOBEMMI to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllHLIBJOBEMMI(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureHLIBJOBEMMIIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, hLIBJOBEMMI_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 HLIBJOBEMMI = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHLIBJOBEMMI() {
+        hLIBJOBEMMI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 13;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
+      private com.google.protobuf.Internal.IntList hDDBLCDGOED_ = emptyIntList();
+      private void ensureHDDBLCDGOEDIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          hDDBLCDGOED_ = mutableCopy(hDDBLCDGOED_);
+          bitField0_ |= 0x00000004;
+         }
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
-       * @param value The costTime to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @return A list containing the hDDBLCDGOED.
+       */
+      public java.util.List<java.lang.Integer>
+          getHDDBLCDGOEDList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(hDDBLCDGOED_) : hDDBLCDGOED_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @return The count of hDDBLCDGOED.
+       */
+      public int getHDDBLCDGOEDCount() {
+        return hDDBLCDGOED_.size();
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @param index The index of the element to return.
+       * @return The hDDBLCDGOED at the given index.
+       */
+      public int getHDDBLCDGOED(int index) {
+        return hDDBLCDGOED_.getInt(index);
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The hDDBLCDGOED to set.
        * @return This builder for chaining.
        */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
+      public Builder setHDDBLCDGOED(
+          int index, int value) {
+        ensureHDDBLCDGOEDIsMutable();
+        hDDBLCDGOED_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @param value The hDDBLCDGOED to add.
        * @return This builder for chaining.
        */
-      public Builder clearCostTime() {
+      public Builder addHDDBLCDGOED(int value) {
+        ensureHDDBLCDGOEDIsMutable();
+        hDDBLCDGOED_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @param values The hDDBLCDGOED to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllHDDBLCDGOED(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureHDDBLCDGOEDIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, hDDBLCDGOED_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated uint32 HDDBLCDGOED = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHDDBLCDGOED() {
+        hDDBLCDGOED_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 14;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 14;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
         
-        costTime_ = 0;
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
         onChanged();
         return this;
       }
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 9;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 12;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -767,7 +1413,11 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 9;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 12;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -778,12 +1428,145 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 9;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
         
         difficultyId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lOBMKOONDJE_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 LOBMKOONDJE = 5;</code>
+       * @return The lOBMKOONDJE.
+       */
+      @java.lang.Override
+      public int getLOBMKOONDJE() {
+        return lOBMKOONDJE_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 LOBMKOONDJE = 5;</code>
+       * @param value The lOBMKOONDJE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOBMKOONDJE(int value) {
+        
+        lOBMKOONDJE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 LOBMKOONDJE = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOBMKOONDJE() {
+        
+        lOBMKOONDJE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean jEOKPMLIJPK_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool JEOKPMLIJPK = 1;</code>
+       * @return The jEOKPMLIJPK.
+       */
+      @java.lang.Override
+      public boolean getJEOKPMLIJPK() {
+        return jEOKPMLIJPK_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool JEOKPMLIJPK = 1;</code>
+       * @param value The jEOKPMLIJPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJEOKPMLIJPK(boolean value) {
+        
+        jEOKPMLIJPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>bool JEOKPMLIJPK = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJEOKPMLIJPK() {
+        
+        jEOKPMLIJPK_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 69
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -855,11 +1638,13 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(EffigyChallengeV5DungeonSettleInfo.pro" +
-      "to\"~\n\"EffigyChallengeV5DungeonSettleInfo" +
-      "\022\027\n\017player_uid_list\030\016 \003(\r\022\025\n\ris_new_reco" +
-      "rd\030\017 \001(\010\022\021\n\tcost_time\030\r \001(\r\022\025\n\rdifficult" +
-      "y_id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "to\"\324\001\n\"EffigyChallengeV5DungeonSettleInf" +
+      "o\022\027\n\017player_uid_list\030\017 \003(\r\022\023\n\013HLIBJOBEMM" +
+      "I\030\t \003(\r\022\023\n\013HDDBLCDGOED\030\007 \003(\r\022\023\n\013NMGJKKDM" +
+      "GPK\030\016 \001(\r\022\025\n\rdifficulty_id\030\014 \001(\r\022\023\n\013LOBM" +
+      "KOONDJE\030\005 \001(\r\022\023\n\013JEOKPMLIJPK\030\001 \001(\010\022\025\n\ris" +
+      "_new_record\030\003 \001(\010B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -870,7 +1655,7 @@ public final class EffigyChallengeV5DungeonSettleInfoOuterClass {
     internal_static_EffigyChallengeV5DungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV5DungeonSettleInfo_descriptor,
-        new java.lang.String[] { "PlayerUidList", "IsNewRecord", "CostTime", "DifficultyId", });
+        new java.lang.String[] { "PlayerUidList", "HLIBJOBEMMI", "HDDBLCDGOED", "NMGJKKDMGPK", "DifficultyId", "LOBMKOONDJE", "JEOKPMLIJPK", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

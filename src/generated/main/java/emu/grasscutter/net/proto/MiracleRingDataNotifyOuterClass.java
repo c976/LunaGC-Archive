@@ -19,39 +19,38 @@ public final class MiracleRingDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 HBLKKAEFDDH = 3;</code>
+     * @return The hBLKKAEFDDH.
+     */
+    int getHBLKKAEFDDH();
+
+    /**
+     * <code>uint32 last_take_reward_time = 4;</code>
+     * @return The lastTakeRewardTime.
+     */
+    int getLastTakeRewardTime();
+
+    /**
+     * <code>uint32 FIPHGOKKCDG = 5;</code>
+     * @return The fIPHGOKKCDG.
+     */
+    int getFIPHGOKKCDG();
+
+    /**
+     * <code>uint32 gadget_entity_id = 11;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
 
     /**
-     * <code>uint32 BNDKPIPBONP = 8;</code>
-     * @return The bNDKPIPBONP.
-     */
-    int getBNDKPIPBONP();
-
-    /**
-     * <code>bool is_gadget_created = 7;</code>
+     * <code>bool is_gadget_created = 14;</code>
      * @return The isGadgetCreated.
      */
     boolean getIsGadgetCreated();
-
-    /**
-     * <code>uint32 MALMBCPAHOC = 11;</code>
-     * @return The mALMBCPAHOC.
-     */
-    int getMALMBCPAHOC();
-
-    /**
-     * <code>uint32 FJNJHHGGFKG = 12;</code>
-     * @return The fJNJHHGGFKG.
-     */
-    int getFJNJHHGGFKG();
   }
   /**
    * <pre>
-   * CmdId: 3064
-   * Obf: EPHNIFDJPJA
+   * CmdId: 20785
    * </pre>
    *
    * Protobuf type {@code MiracleRingDataNotify}
@@ -98,29 +97,29 @@ public final class MiracleRingDataNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              hBLKKAEFDDH_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              lastTakeRewardTime_ = input.readUInt32();
+              break;
+            }
             case 40: {
 
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isGadgetCreated_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              bNDKPIPBONP_ = input.readUInt32();
+              fIPHGOKKCDG_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              mALMBCPAHOC_ = input.readUInt32();
+              gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 112: {
 
-              fJNJHHGGFKG_ = input.readUInt32();
+              isGadgetCreated_ = input.readBool();
               break;
             }
             default: {
@@ -155,10 +154,43 @@ public final class MiracleRingDataNotifyOuterClass {
               emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify.class, emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
+    public static final int HBLKKAEFDDH_FIELD_NUMBER = 3;
+    private int hBLKKAEFDDH_;
+    /**
+     * <code>uint32 HBLKKAEFDDH = 3;</code>
+     * @return The hBLKKAEFDDH.
+     */
+    @java.lang.Override
+    public int getHBLKKAEFDDH() {
+      return hBLKKAEFDDH_;
+    }
+
+    public static final int LAST_TAKE_REWARD_TIME_FIELD_NUMBER = 4;
+    private int lastTakeRewardTime_;
+    /**
+     * <code>uint32 last_take_reward_time = 4;</code>
+     * @return The lastTakeRewardTime.
+     */
+    @java.lang.Override
+    public int getLastTakeRewardTime() {
+      return lastTakeRewardTime_;
+    }
+
+    public static final int FIPHGOKKCDG_FIELD_NUMBER = 5;
+    private int fIPHGOKKCDG_;
+    /**
+     * <code>uint32 FIPHGOKKCDG = 5;</code>
+     * @return The fIPHGOKKCDG.
+     */
+    @java.lang.Override
+    public int getFIPHGOKKCDG() {
+      return fIPHGOKKCDG_;
+    }
+
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 11;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 gadget_entity_id = 11;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -166,48 +198,15 @@ public final class MiracleRingDataNotifyOuterClass {
       return gadgetEntityId_;
     }
 
-    public static final int BNDKPIPBONP_FIELD_NUMBER = 8;
-    private int bNDKPIPBONP_;
-    /**
-     * <code>uint32 BNDKPIPBONP = 8;</code>
-     * @return The bNDKPIPBONP.
-     */
-    @java.lang.Override
-    public int getBNDKPIPBONP() {
-      return bNDKPIPBONP_;
-    }
-
-    public static final int IS_GADGET_CREATED_FIELD_NUMBER = 7;
+    public static final int IS_GADGET_CREATED_FIELD_NUMBER = 14;
     private boolean isGadgetCreated_;
     /**
-     * <code>bool is_gadget_created = 7;</code>
+     * <code>bool is_gadget_created = 14;</code>
      * @return The isGadgetCreated.
      */
     @java.lang.Override
     public boolean getIsGadgetCreated() {
       return isGadgetCreated_;
-    }
-
-    public static final int MALMBCPAHOC_FIELD_NUMBER = 11;
-    private int mALMBCPAHOC_;
-    /**
-     * <code>uint32 MALMBCPAHOC = 11;</code>
-     * @return The mALMBCPAHOC.
-     */
-    @java.lang.Override
-    public int getMALMBCPAHOC() {
-      return mALMBCPAHOC_;
-    }
-
-    public static final int FJNJHHGGFKG_FIELD_NUMBER = 12;
-    private int fJNJHHGGFKG_;
-    /**
-     * <code>uint32 FJNJHHGGFKG = 12;</code>
-     * @return The fJNJHHGGFKG.
-     */
-    @java.lang.Override
-    public int getFJNJHHGGFKG() {
-      return fJNJHHGGFKG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,20 +223,20 @@ public final class MiracleRingDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (hBLKKAEFDDH_ != 0) {
+        output.writeUInt32(3, hBLKKAEFDDH_);
+      }
+      if (lastTakeRewardTime_ != 0) {
+        output.writeUInt32(4, lastTakeRewardTime_);
+      }
+      if (fIPHGOKKCDG_ != 0) {
+        output.writeUInt32(5, fIPHGOKKCDG_);
+      }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(5, gadgetEntityId_);
+        output.writeUInt32(11, gadgetEntityId_);
       }
       if (isGadgetCreated_ != false) {
-        output.writeBool(7, isGadgetCreated_);
-      }
-      if (bNDKPIPBONP_ != 0) {
-        output.writeUInt32(8, bNDKPIPBONP_);
-      }
-      if (mALMBCPAHOC_ != 0) {
-        output.writeUInt32(11, mALMBCPAHOC_);
-      }
-      if (fJNJHHGGFKG_ != 0) {
-        output.writeUInt32(12, fJNJHHGGFKG_);
+        output.writeBool(14, isGadgetCreated_);
       }
       unknownFields.writeTo(output);
     }
@@ -248,25 +247,25 @@ public final class MiracleRingDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (hBLKKAEFDDH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, hBLKKAEFDDH_);
+      }
+      if (lastTakeRewardTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, lastTakeRewardTime_);
+      }
+      if (fIPHGOKKCDG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, fIPHGOKKCDG_);
+      }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gadgetEntityId_);
+          .computeUInt32Size(11, gadgetEntityId_);
       }
       if (isGadgetCreated_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isGadgetCreated_);
-      }
-      if (bNDKPIPBONP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, bNDKPIPBONP_);
-      }
-      if (mALMBCPAHOC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, mALMBCPAHOC_);
-      }
-      if (fJNJHHGGFKG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, fJNJHHGGFKG_);
+          .computeBoolSize(14, isGadgetCreated_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -283,16 +282,16 @@ public final class MiracleRingDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify other = (emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify) obj;
 
+      if (getHBLKKAEFDDH()
+          != other.getHBLKKAEFDDH()) return false;
+      if (getLastTakeRewardTime()
+          != other.getLastTakeRewardTime()) return false;
+      if (getFIPHGOKKCDG()
+          != other.getFIPHGOKKCDG()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (getBNDKPIPBONP()
-          != other.getBNDKPIPBONP()) return false;
       if (getIsGadgetCreated()
           != other.getIsGadgetCreated()) return false;
-      if (getMALMBCPAHOC()
-          != other.getMALMBCPAHOC()) return false;
-      if (getFJNJHHGGFKG()
-          != other.getFJNJHHGGFKG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -304,17 +303,17 @@ public final class MiracleRingDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HBLKKAEFDDH_FIELD_NUMBER;
+      hash = (53 * hash) + getHBLKKAEFDDH();
+      hash = (37 * hash) + LAST_TAKE_REWARD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLastTakeRewardTime();
+      hash = (37 * hash) + FIPHGOKKCDG_FIELD_NUMBER;
+      hash = (53 * hash) + getFIPHGOKKCDG();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (37 * hash) + BNDKPIPBONP_FIELD_NUMBER;
-      hash = (53 * hash) + getBNDKPIPBONP();
       hash = (37 * hash) + IS_GADGET_CREATED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGadgetCreated());
-      hash = (37 * hash) + MALMBCPAHOC_FIELD_NUMBER;
-      hash = (53 * hash) + getMALMBCPAHOC();
-      hash = (37 * hash) + FJNJHHGGFKG_FIELD_NUMBER;
-      hash = (53 * hash) + getFJNJHHGGFKG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -412,8 +411,7 @@ public final class MiracleRingDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3064
-     * Obf: EPHNIFDJPJA
+     * CmdId: 20785
      * </pre>
      *
      * Protobuf type {@code MiracleRingDataNotify}
@@ -453,15 +451,15 @@ public final class MiracleRingDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        hBLKKAEFDDH_ = 0;
+
+        lastTakeRewardTime_ = 0;
+
+        fIPHGOKKCDG_ = 0;
+
         gadgetEntityId_ = 0;
 
-        bNDKPIPBONP_ = 0;
-
         isGadgetCreated_ = false;
-
-        mALMBCPAHOC_ = 0;
-
-        fJNJHHGGFKG_ = 0;
 
         return this;
       }
@@ -489,11 +487,11 @@ public final class MiracleRingDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify buildPartial() {
         emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify result = new emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify(this);
+        result.hBLKKAEFDDH_ = hBLKKAEFDDH_;
+        result.lastTakeRewardTime_ = lastTakeRewardTime_;
+        result.fIPHGOKKCDG_ = fIPHGOKKCDG_;
         result.gadgetEntityId_ = gadgetEntityId_;
-        result.bNDKPIPBONP_ = bNDKPIPBONP_;
         result.isGadgetCreated_ = isGadgetCreated_;
-        result.mALMBCPAHOC_ = mALMBCPAHOC_;
-        result.fJNJHHGGFKG_ = fJNJHHGGFKG_;
         onBuilt();
         return result;
       }
@@ -542,20 +540,20 @@ public final class MiracleRingDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify other) {
         if (other == emu.grasscutter.net.proto.MiracleRingDataNotifyOuterClass.MiracleRingDataNotify.getDefaultInstance()) return this;
+        if (other.getHBLKKAEFDDH() != 0) {
+          setHBLKKAEFDDH(other.getHBLKKAEFDDH());
+        }
+        if (other.getLastTakeRewardTime() != 0) {
+          setLastTakeRewardTime(other.getLastTakeRewardTime());
+        }
+        if (other.getFIPHGOKKCDG() != 0) {
+          setFIPHGOKKCDG(other.getFIPHGOKKCDG());
+        }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
         }
-        if (other.getBNDKPIPBONP() != 0) {
-          setBNDKPIPBONP(other.getBNDKPIPBONP());
-        }
         if (other.getIsGadgetCreated() != false) {
           setIsGadgetCreated(other.getIsGadgetCreated());
-        }
-        if (other.getMALMBCPAHOC() != 0) {
-          setMALMBCPAHOC(other.getMALMBCPAHOC());
-        }
-        if (other.getFJNJHHGGFKG() != 0) {
-          setFJNJHHGGFKG(other.getFJNJHHGGFKG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,9 +584,102 @@ public final class MiracleRingDataNotifyOuterClass {
         return this;
       }
 
+      private int hBLKKAEFDDH_ ;
+      /**
+       * <code>uint32 HBLKKAEFDDH = 3;</code>
+       * @return The hBLKKAEFDDH.
+       */
+      @java.lang.Override
+      public int getHBLKKAEFDDH() {
+        return hBLKKAEFDDH_;
+      }
+      /**
+       * <code>uint32 HBLKKAEFDDH = 3;</code>
+       * @param value The hBLKKAEFDDH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHBLKKAEFDDH(int value) {
+        
+        hBLKKAEFDDH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HBLKKAEFDDH = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHBLKKAEFDDH() {
+        
+        hBLKKAEFDDH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lastTakeRewardTime_ ;
+      /**
+       * <code>uint32 last_take_reward_time = 4;</code>
+       * @return The lastTakeRewardTime.
+       */
+      @java.lang.Override
+      public int getLastTakeRewardTime() {
+        return lastTakeRewardTime_;
+      }
+      /**
+       * <code>uint32 last_take_reward_time = 4;</code>
+       * @param value The lastTakeRewardTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLastTakeRewardTime(int value) {
+        
+        lastTakeRewardTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 last_take_reward_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLastTakeRewardTime() {
+        
+        lastTakeRewardTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fIPHGOKKCDG_ ;
+      /**
+       * <code>uint32 FIPHGOKKCDG = 5;</code>
+       * @return The fIPHGOKKCDG.
+       */
+      @java.lang.Override
+      public int getFIPHGOKKCDG() {
+        return fIPHGOKKCDG_;
+      }
+      /**
+       * <code>uint32 FIPHGOKKCDG = 5;</code>
+       * @param value The fIPHGOKKCDG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFIPHGOKKCDG(int value) {
+        
+        fIPHGOKKCDG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FIPHGOKKCDG = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFIPHGOKKCDG() {
+        
+        fIPHGOKKCDG_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 11;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -596,7 +687,7 @@ public final class MiracleRingDataNotifyOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 11;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -607,7 +698,7 @@ public final class MiracleRingDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadget_entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -617,40 +708,9 @@ public final class MiracleRingDataNotifyOuterClass {
         return this;
       }
 
-      private int bNDKPIPBONP_ ;
-      /**
-       * <code>uint32 BNDKPIPBONP = 8;</code>
-       * @return The bNDKPIPBONP.
-       */
-      @java.lang.Override
-      public int getBNDKPIPBONP() {
-        return bNDKPIPBONP_;
-      }
-      /**
-       * <code>uint32 BNDKPIPBONP = 8;</code>
-       * @param value The bNDKPIPBONP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBNDKPIPBONP(int value) {
-        
-        bNDKPIPBONP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BNDKPIPBONP = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBNDKPIPBONP() {
-        
-        bNDKPIPBONP_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isGadgetCreated_ ;
       /**
-       * <code>bool is_gadget_created = 7;</code>
+       * <code>bool is_gadget_created = 14;</code>
        * @return The isGadgetCreated.
        */
       @java.lang.Override
@@ -658,7 +718,7 @@ public final class MiracleRingDataNotifyOuterClass {
         return isGadgetCreated_;
       }
       /**
-       * <code>bool is_gadget_created = 7;</code>
+       * <code>bool is_gadget_created = 14;</code>
        * @param value The isGadgetCreated to set.
        * @return This builder for chaining.
        */
@@ -669,74 +729,12 @@ public final class MiracleRingDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_gadget_created = 7;</code>
+       * <code>bool is_gadget_created = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsGadgetCreated() {
         
         isGadgetCreated_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int mALMBCPAHOC_ ;
-      /**
-       * <code>uint32 MALMBCPAHOC = 11;</code>
-       * @return The mALMBCPAHOC.
-       */
-      @java.lang.Override
-      public int getMALMBCPAHOC() {
-        return mALMBCPAHOC_;
-      }
-      /**
-       * <code>uint32 MALMBCPAHOC = 11;</code>
-       * @param value The mALMBCPAHOC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMALMBCPAHOC(int value) {
-        
-        mALMBCPAHOC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MALMBCPAHOC = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMALMBCPAHOC() {
-        
-        mALMBCPAHOC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fJNJHHGGFKG_ ;
-      /**
-       * <code>uint32 FJNJHHGGFKG = 12;</code>
-       * @return The fJNJHHGGFKG.
-       */
-      @java.lang.Override
-      public int getFJNJHHGGFKG() {
-        return fJNJHHGGFKG_;
-      }
-      /**
-       * <code>uint32 FJNJHHGGFKG = 12;</code>
-       * @param value The fJNJHHGGFKG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFJNJHHGGFKG(int value) {
-        
-        fJNJHHGGFKG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FJNJHHGGFKG = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFJNJHHGGFKG() {
-        
-        fJNJHHGGFKG_ = 0;
         onChanged();
         return this;
       }
@@ -807,12 +805,12 @@ public final class MiracleRingDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033MiracleRingDataNotify.proto\"\213\001\n\025Miracl" +
-      "eRingDataNotify\022\030\n\020gadget_entity_id\030\005 \001(" +
-      "\r\022\023\n\013BNDKPIPBONP\030\010 \001(\r\022\031\n\021is_gadget_crea" +
-      "ted\030\007 \001(\010\022\023\n\013MALMBCPAHOC\030\013 \001(\r\022\023\n\013FJNJHH" +
-      "GGFKG\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\033MiracleRingDataNotify.proto\"\225\001\n\025Miracl" +
+      "eRingDataNotify\022\023\n\013HBLKKAEFDDH\030\003 \001(\r\022\035\n\025" +
+      "last_take_reward_time\030\004 \001(\r\022\023\n\013FIPHGOKKC" +
+      "DG\030\005 \001(\r\022\030\n\020gadget_entity_id\030\013 \001(\r\022\031\n\021is" +
+      "_gadget_created\030\016 \001(\010B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -823,7 +821,7 @@ public final class MiracleRingDataNotifyOuterClass {
     internal_static_MiracleRingDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingDataNotify_descriptor,
-        new java.lang.String[] { "GadgetEntityId", "BNDKPIPBONP", "IsGadgetCreated", "MALMBCPAHOC", "FJNJHHGGFKG", });
+        new java.lang.String[] { "HBLKKAEFDDH", "LastTakeRewardTime", "FIPHGOKKCDG", "GadgetEntityId", "IsGadgetCreated", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,43 +19,63 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CMJGEIMODDO = 12;</code>
-     * @return The cMJGEIMODDO.
-     */
-    int getCMJGEIMODDO();
-
-    /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      * @return Whether the targetPos field is set.
      */
     boolean hasTargetPos();
     /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      * @return The targetPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos();
     /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder();
 
     /**
-     * <code>uint32 JIKEAELPDOC = 3;</code>
-     * @return The jIKEAELPDOC.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MADKKKBBONI = 15;</code>
+     * @return The mADKKKBBONI.
      */
-    int getJIKEAELPDOC();
+    int getMADKKKBBONI();
 
     /**
-     * <code>uint32 entity_id = 1;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MHICNFKMKCJ = 11;</code>
+     * @return The mHICNFKMKCJ.
+     */
+    int getMHICNFKMKCJ();
   }
   /**
-   * <pre>
-   * Obf: DLAHFFBOIFA
-   * </pre>
-   *
    * Protobuf type {@code EvtCombatForceSetPosInfo}
    */
   public static final class EvtCombatForceSetPosInfo extends
@@ -100,17 +120,7 @@ public final class EvtCombatForceSetPosInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              jIKEAELPDOC_ = input.readUInt32();
-              break;
-            }
-            case 42: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (targetPos_ != null) {
                 subBuilder = targetPos_.toBuilder();
@@ -123,9 +133,19 @@ public final class EvtCombatForceSetPosInfoOuterClass {
 
               break;
             }
-            case 96: {
+            case 40: {
 
-              cMJGEIMODDO_ = input.readUInt32();
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              mHICNFKMKCJ_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              mADKKKBBONI_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,21 +180,14 @@ public final class EvtCombatForceSetPosInfoOuterClass {
               emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.class, emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.Builder.class);
     }
 
-    public static final int CMJGEIMODDO_FIELD_NUMBER = 12;
-    private int cMJGEIMODDO_;
-    /**
-     * <code>uint32 CMJGEIMODDO = 12;</code>
-     * @return The cMJGEIMODDO.
-     */
-    @java.lang.Override
-    public int getCMJGEIMODDO() {
-      return cMJGEIMODDO_;
-    }
-
-    public static final int TARGET_POS_FIELD_NUMBER = 5;
+    public static final int TARGET_POS_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
     /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      * @return Whether the targetPos field is set.
      */
     @java.lang.Override
@@ -182,7 +195,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       return targetPos_ != null;
     }
     /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      * @return The targetPos.
      */
     @java.lang.Override
@@ -190,33 +207,60 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       return targetPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : targetPos_;
     }
     /**
-     * <code>.Vector target_pos = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector target_pos = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
       return getTargetPos();
     }
 
-    public static final int JIKEAELPDOC_FIELD_NUMBER = 3;
-    private int jIKEAELPDOC_;
+    public static final int MADKKKBBONI_FIELD_NUMBER = 15;
+    private int mADKKKBBONI_;
     /**
-     * <code>uint32 JIKEAELPDOC = 3;</code>
-     * @return The jIKEAELPDOC.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MADKKKBBONI = 15;</code>
+     * @return The mADKKKBBONI.
      */
     @java.lang.Override
-    public int getJIKEAELPDOC() {
-      return jIKEAELPDOC_;
+    public int getMADKKKBBONI() {
+      return mADKKKBBONI_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 1;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int MHICNFKMKCJ_FIELD_NUMBER = 11;
+    private int mHICNFKMKCJ_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MHICNFKMKCJ = 11;</code>
+     * @return The mHICNFKMKCJ.
+     */
+    @java.lang.Override
+    public int getMHICNFKMKCJ() {
+      return mHICNFKMKCJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -233,17 +277,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(1, entityId_);
-      }
-      if (jIKEAELPDOC_ != 0) {
-        output.writeUInt32(3, jIKEAELPDOC_);
-      }
       if (targetPos_ != null) {
-        output.writeMessage(5, getTargetPos());
+        output.writeMessage(3, getTargetPos());
       }
-      if (cMJGEIMODDO_ != 0) {
-        output.writeUInt32(12, cMJGEIMODDO_);
+      if (entityId_ != 0) {
+        output.writeUInt32(5, entityId_);
+      }
+      if (mHICNFKMKCJ_ != 0) {
+        output.writeUInt32(11, mHICNFKMKCJ_);
+      }
+      if (mADKKKBBONI_ != 0) {
+        output.writeUInt32(15, mADKKKBBONI_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,21 +298,21 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, entityId_);
-      }
-      if (jIKEAELPDOC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, jIKEAELPDOC_);
-      }
       if (targetPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getTargetPos());
+          .computeMessageSize(3, getTargetPos());
       }
-      if (cMJGEIMODDO_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cMJGEIMODDO_);
+          .computeUInt32Size(5, entityId_);
+      }
+      if (mHICNFKMKCJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, mHICNFKMKCJ_);
+      }
+      if (mADKKKBBONI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, mADKKKBBONI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -285,17 +329,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo other = (emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo) obj;
 
-      if (getCMJGEIMODDO()
-          != other.getCMJGEIMODDO()) return false;
       if (hasTargetPos() != other.hasTargetPos()) return false;
       if (hasTargetPos()) {
         if (!getTargetPos()
             .equals(other.getTargetPos())) return false;
       }
-      if (getJIKEAELPDOC()
-          != other.getJIKEAELPDOC()) return false;
+      if (getMADKKKBBONI()
+          != other.getMADKKKBBONI()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getMHICNFKMKCJ()
+          != other.getMHICNFKMKCJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,16 +351,16 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CMJGEIMODDO_FIELD_NUMBER;
-      hash = (53 * hash) + getCMJGEIMODDO();
       if (hasTargetPos()) {
         hash = (37 * hash) + TARGET_POS_FIELD_NUMBER;
         hash = (53 * hash) + getTargetPos().hashCode();
       }
-      hash = (37 * hash) + JIKEAELPDOC_FIELD_NUMBER;
-      hash = (53 * hash) + getJIKEAELPDOC();
+      hash = (37 * hash) + MADKKKBBONI_FIELD_NUMBER;
+      hash = (53 * hash) + getMADKKKBBONI();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + MHICNFKMKCJ_FIELD_NUMBER;
+      hash = (53 * hash) + getMHICNFKMKCJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,10 +457,6 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DLAHFFBOIFA
-     * </pre>
-     *
      * Protobuf type {@code EvtCombatForceSetPosInfo}
      */
     public static final class Builder extends
@@ -454,17 +494,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cMJGEIMODDO_ = 0;
-
         if (targetPosBuilder_ == null) {
           targetPos_ = null;
         } else {
           targetPos_ = null;
           targetPosBuilder_ = null;
         }
-        jIKEAELPDOC_ = 0;
+        mADKKKBBONI_ = 0;
 
         entityId_ = 0;
+
+        mHICNFKMKCJ_ = 0;
 
         return this;
       }
@@ -492,14 +532,14 @@ public final class EvtCombatForceSetPosInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo buildPartial() {
         emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo result = new emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo(this);
-        result.cMJGEIMODDO_ = cMJGEIMODDO_;
         if (targetPosBuilder_ == null) {
           result.targetPos_ = targetPos_;
         } else {
           result.targetPos_ = targetPosBuilder_.build();
         }
-        result.jIKEAELPDOC_ = jIKEAELPDOC_;
+        result.mADKKKBBONI_ = mADKKKBBONI_;
         result.entityId_ = entityId_;
+        result.mHICNFKMKCJ_ = mHICNFKMKCJ_;
         onBuilt();
         return result;
       }
@@ -548,17 +588,17 @@ public final class EvtCombatForceSetPosInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo other) {
         if (other == emu.grasscutter.net.proto.EvtCombatForceSetPosInfoOuterClass.EvtCombatForceSetPosInfo.getDefaultInstance()) return this;
-        if (other.getCMJGEIMODDO() != 0) {
-          setCMJGEIMODDO(other.getCMJGEIMODDO());
-        }
         if (other.hasTargetPos()) {
           mergeTargetPos(other.getTargetPos());
         }
-        if (other.getJIKEAELPDOC() != 0) {
-          setJIKEAELPDOC(other.getJIKEAELPDOC());
+        if (other.getMADKKKBBONI() != 0) {
+          setMADKKKBBONI(other.getMADKKKBBONI());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getMHICNFKMKCJ() != 0) {
+          setMHICNFKMKCJ(other.getMHICNFKMKCJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -589,49 +629,26 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
 
-      private int cMJGEIMODDO_ ;
-      /**
-       * <code>uint32 CMJGEIMODDO = 12;</code>
-       * @return The cMJGEIMODDO.
-       */
-      @java.lang.Override
-      public int getCMJGEIMODDO() {
-        return cMJGEIMODDO_;
-      }
-      /**
-       * <code>uint32 CMJGEIMODDO = 12;</code>
-       * @param value The cMJGEIMODDO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCMJGEIMODDO(int value) {
-        
-        cMJGEIMODDO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CMJGEIMODDO = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCMJGEIMODDO() {
-        
-        cMJGEIMODDO_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector targetPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> targetPosBuilder_;
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        * @return Whether the targetPos field is set.
        */
       public boolean hasTargetPos() {
         return targetPosBuilder_ != null || targetPos_ != null;
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        * @return The targetPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getTargetPos() {
@@ -642,7 +659,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public Builder setTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -658,7 +679,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public Builder setTargetPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -672,7 +697,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public Builder mergeTargetPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (targetPosBuilder_ == null) {
@@ -690,7 +719,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public Builder clearTargetPos() {
         if (targetPosBuilder_ == null) {
@@ -704,7 +737,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTargetPosBuilder() {
         
@@ -712,7 +749,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return getTargetPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTargetPosOrBuilder() {
         if (targetPosBuilder_ != null) {
@@ -723,7 +764,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector target_pos = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector target_pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -739,40 +784,56 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return targetPosBuilder_;
       }
 
-      private int jIKEAELPDOC_ ;
+      private int mADKKKBBONI_ ;
       /**
-       * <code>uint32 JIKEAELPDOC = 3;</code>
-       * @return The jIKEAELPDOC.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MADKKKBBONI = 15;</code>
+       * @return The mADKKKBBONI.
        */
       @java.lang.Override
-      public int getJIKEAELPDOC() {
-        return jIKEAELPDOC_;
+      public int getMADKKKBBONI() {
+        return mADKKKBBONI_;
       }
       /**
-       * <code>uint32 JIKEAELPDOC = 3;</code>
-       * @param value The jIKEAELPDOC to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MADKKKBBONI = 15;</code>
+       * @param value The mADKKKBBONI to set.
        * @return This builder for chaining.
        */
-      public Builder setJIKEAELPDOC(int value) {
+      public Builder setMADKKKBBONI(int value) {
         
-        jIKEAELPDOC_ = value;
+        mADKKKBBONI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JIKEAELPDOC = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MADKKKBBONI = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJIKEAELPDOC() {
+      public Builder clearMADKKKBBONI() {
         
-        jIKEAELPDOC_ = 0;
+        mADKKKBBONI_ = 0;
         onChanged();
         return this;
       }
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -780,7 +841,11 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -791,12 +856,59 @@ public final class EvtCombatForceSetPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mHICNFKMKCJ_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MHICNFKMKCJ = 11;</code>
+       * @return The mHICNFKMKCJ.
+       */
+      @java.lang.Override
+      public int getMHICNFKMKCJ() {
+        return mHICNFKMKCJ_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MHICNFKMKCJ = 11;</code>
+       * @param value The mHICNFKMKCJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMHICNFKMKCJ(int value) {
+        
+        mHICNFKMKCJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MHICNFKMKCJ = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMHICNFKMKCJ() {
+        
+        mHICNFKMKCJ_ = 0;
         onChanged();
         return this;
       }
@@ -868,9 +980,9 @@ public final class EvtCombatForceSetPosInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036EvtCombatForceSetPosInfo.proto\032\014Vector" +
-      ".proto\"t\n\030EvtCombatForceSetPosInfo\022\023\n\013CM" +
-      "JGEIMODDO\030\014 \001(\r\022\033\n\ntarget_pos\030\005 \001(\0132\007.Ve" +
-      "ctor\022\023\n\013JIKEAELPDOC\030\003 \001(\r\022\021\n\tentity_id\030\001" +
+      ".proto\"t\n\030EvtCombatForceSetPosInfo\022\033\n\nta" +
+      "rget_pos\030\003 \001(\0132\007.Vector\022\023\n\013MADKKKBBONI\030\017" +
+      " \001(\r\022\021\n\tentity_id\030\005 \001(\r\022\023\n\013MHICNFKMKCJ\030\013" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -884,7 +996,7 @@ public final class EvtCombatForceSetPosInfoOuterClass {
     internal_static_EvtCombatForceSetPosInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCombatForceSetPosInfo_descriptor,
-        new java.lang.String[] { "CMJGEIMODDO", "TargetPos", "JIKEAELPDOC", "EntityId", });
+        new java.lang.String[] { "TargetPos", "MADKKKBBONI", "EntityId", "MHICNFKMKCJ", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

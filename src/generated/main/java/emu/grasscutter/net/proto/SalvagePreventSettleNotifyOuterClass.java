@@ -19,27 +19,47 @@ public final class SalvagePreventSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CLIAKIMDCJI = 9;</code>
-     * @return The cLIAKIMDCJI.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     * @return Whether the settleInfo field is set.
      */
-    int getCLIAKIMDCJI();
+    boolean hasSettleInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     * @return The settleInfo.
+     */
+    emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getSettleInfo();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     */
+    emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     * @return Whether the nJPFBDOLHBF field is set.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 5;</code>
+     * @return The galleryId.
      */
-    boolean hasNJPFBDOLHBF();
-    /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     * @return The nJPFBDOLHBF.
-     */
-    emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getNJPFBDOLHBF();
-    /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     */
-    emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getNJPFBDOLHBFOrBuilder();
+    int getGalleryId();
   }
   /**
+   * <pre>
+   * CmdId: 29376
+   * </pre>
+   *
    * Protobuf type {@code SalvagePreventSettleNotify}
    */
   public static final class SalvagePreventSettleNotify extends
@@ -84,20 +104,20 @@ public final class SalvagePreventSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
-              cLIAKIMDCJI_ = input.readUInt32();
+              galleryId_ = input.readUInt32();
               break;
             }
-            case 98: {
+            case 74: {
               emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder subBuilder = null;
-              if (nJPFBDOLHBF_ != null) {
-                subBuilder = nJPFBDOLHBF_.toBuilder();
+              if (settleInfo_ != null) {
+                subBuilder = settleInfo_.toBuilder();
               }
-              nJPFBDOLHBF_ = input.readMessage(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.parser(), extensionRegistry);
+              settleInfo_ = input.readMessage(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(nJPFBDOLHBF_);
-                nJPFBDOLHBF_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(settleInfo_);
+                settleInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -134,41 +154,57 @@ public final class SalvagePreventSettleNotifyOuterClass {
               emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify.class, emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify.Builder.class);
     }
 
-    public static final int CLIAKIMDCJI_FIELD_NUMBER = 9;
-    private int cLIAKIMDCJI_;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo settleInfo_;
     /**
-     * <code>uint32 CLIAKIMDCJI = 9;</code>
-     * @return The cLIAKIMDCJI.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
-    public int getCLIAKIMDCJI() {
-      return cLIAKIMDCJI_;
+    public boolean hasSettleInfo() {
+      return settleInfo_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     * @return The settleInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getSettleInfo() {
+      return settleInfo_ == null ? emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : settleInfo_;
+    }
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getSettleInfoOrBuilder() {
+      return getSettleInfo();
     }
 
-    public static final int NJPFBDOLHBF_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo nJPFBDOLHBF_;
+    public static final int GALLERY_ID_FIELD_NUMBER = 5;
+    private int galleryId_;
     /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     * @return Whether the nJPFBDOLHBF field is set.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 5;</code>
+     * @return The galleryId.
      */
     @java.lang.Override
-    public boolean hasNJPFBDOLHBF() {
-      return nJPFBDOLHBF_ != null;
-    }
-    /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     * @return The nJPFBDOLHBF.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getNJPFBDOLHBF() {
-      return nJPFBDOLHBF_ == null ? emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
-    }
-    /**
-     * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getNJPFBDOLHBFOrBuilder() {
-      return getNJPFBDOLHBF();
+    public int getGalleryId() {
+      return galleryId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -185,11 +221,11 @@ public final class SalvagePreventSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cLIAKIMDCJI_ != 0) {
-        output.writeUInt32(9, cLIAKIMDCJI_);
+      if (galleryId_ != 0) {
+        output.writeUInt32(5, galleryId_);
       }
-      if (nJPFBDOLHBF_ != null) {
-        output.writeMessage(12, getNJPFBDOLHBF());
+      if (settleInfo_ != null) {
+        output.writeMessage(9, getSettleInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +236,13 @@ public final class SalvagePreventSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cLIAKIMDCJI_ != 0) {
+      if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cLIAKIMDCJI_);
+          .computeUInt32Size(5, galleryId_);
       }
-      if (nJPFBDOLHBF_ != null) {
+      if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getNJPFBDOLHBF());
+          .computeMessageSize(9, getSettleInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,13 +259,13 @@ public final class SalvagePreventSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify other = (emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify) obj;
 
-      if (getCLIAKIMDCJI()
-          != other.getCLIAKIMDCJI()) return false;
-      if (hasNJPFBDOLHBF() != other.hasNJPFBDOLHBF()) return false;
-      if (hasNJPFBDOLHBF()) {
-        if (!getNJPFBDOLHBF()
-            .equals(other.getNJPFBDOLHBF())) return false;
+      if (hasSettleInfo() != other.hasSettleInfo()) return false;
+      if (hasSettleInfo()) {
+        if (!getSettleInfo()
+            .equals(other.getSettleInfo())) return false;
       }
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +277,12 @@ public final class SalvagePreventSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CLIAKIMDCJI_FIELD_NUMBER;
-      hash = (53 * hash) + getCLIAKIMDCJI();
-      if (hasNJPFBDOLHBF()) {
-        hash = (37 * hash) + NJPFBDOLHBF_FIELD_NUMBER;
-        hash = (53 * hash) + getNJPFBDOLHBF().hashCode();
+      if (hasSettleInfo()) {
+        hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getSettleInfo().hashCode();
       }
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,6 +379,10 @@ public final class SalvagePreventSettleNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29376
+     * </pre>
+     *
      * Protobuf type {@code SalvagePreventSettleNotify}
      */
     public static final class Builder extends
@@ -380,14 +420,14 @@ public final class SalvagePreventSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cLIAKIMDCJI_ = 0;
-
-        if (nJPFBDOLHBFBuilder_ == null) {
-          nJPFBDOLHBF_ = null;
+        if (settleInfoBuilder_ == null) {
+          settleInfo_ = null;
         } else {
-          nJPFBDOLHBF_ = null;
-          nJPFBDOLHBFBuilder_ = null;
+          settleInfo_ = null;
+          settleInfoBuilder_ = null;
         }
+        galleryId_ = 0;
+
         return this;
       }
 
@@ -414,12 +454,12 @@ public final class SalvagePreventSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify buildPartial() {
         emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify result = new emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify(this);
-        result.cLIAKIMDCJI_ = cLIAKIMDCJI_;
-        if (nJPFBDOLHBFBuilder_ == null) {
-          result.nJPFBDOLHBF_ = nJPFBDOLHBF_;
+        if (settleInfoBuilder_ == null) {
+          result.settleInfo_ = settleInfo_;
         } else {
-          result.nJPFBDOLHBF_ = nJPFBDOLHBFBuilder_.build();
+          result.settleInfo_ = settleInfoBuilder_.build();
         }
+        result.galleryId_ = galleryId_;
         onBuilt();
         return result;
       }
@@ -468,11 +508,11 @@ public final class SalvagePreventSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify other) {
         if (other == emu.grasscutter.net.proto.SalvagePreventSettleNotifyOuterClass.SalvagePreventSettleNotify.getDefaultInstance()) return this;
-        if (other.getCLIAKIMDCJI() != 0) {
-          setCLIAKIMDCJI(other.getCLIAKIMDCJI());
+        if (other.hasSettleInfo()) {
+          mergeSettleInfo(other.getSettleInfo());
         }
-        if (other.hasNJPFBDOLHBF()) {
-          mergeNJPFBDOLHBF(other.getNJPFBDOLHBF());
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -503,154 +543,202 @@ public final class SalvagePreventSettleNotifyOuterClass {
         return this;
       }
 
-      private int cLIAKIMDCJI_ ;
-      /**
-       * <code>uint32 CLIAKIMDCJI = 9;</code>
-       * @return The cLIAKIMDCJI.
-       */
-      @java.lang.Override
-      public int getCLIAKIMDCJI() {
-        return cLIAKIMDCJI_;
-      }
-      /**
-       * <code>uint32 CLIAKIMDCJI = 9;</code>
-       * @param value The cLIAKIMDCJI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCLIAKIMDCJI(int value) {
-        
-        cLIAKIMDCJI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CLIAKIMDCJI = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCLIAKIMDCJI() {
-        
-        cLIAKIMDCJI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo nJPFBDOLHBF_;
+      private emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo settleInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder> nJPFBDOLHBFBuilder_;
+          emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-       * @return Whether the nJPFBDOLHBF field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+       * @return Whether the settleInfo field is set.
        */
-      public boolean hasNJPFBDOLHBF() {
-        return nJPFBDOLHBFBuilder_ != null || nJPFBDOLHBF_ != null;
+      public boolean hasSettleInfo() {
+        return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
-       * @return The nJPFBDOLHBF.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
+       * @return The settleInfo.
        */
-      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getNJPFBDOLHBF() {
-        if (nJPFBDOLHBFBuilder_ == null) {
-          return nJPFBDOLHBF_ == null ? emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
+      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo getSettleInfo() {
+        if (settleInfoBuilder_ == null) {
+          return settleInfo_ == null ? emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : settleInfo_;
         } else {
-          return nJPFBDOLHBFBuilder_.getMessage();
+          return settleInfoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public Builder setNJPFBDOLHBF(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo value) {
-        if (nJPFBDOLHBFBuilder_ == null) {
+      public Builder setSettleInfo(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo value) {
+        if (settleInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          nJPFBDOLHBF_ = value;
+          settleInfo_ = value;
           onChanged();
         } else {
-          nJPFBDOLHBFBuilder_.setMessage(value);
+          settleInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public Builder setNJPFBDOLHBF(
+      public Builder setSettleInfo(
           emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder builderForValue) {
-        if (nJPFBDOLHBFBuilder_ == null) {
-          nJPFBDOLHBF_ = builderForValue.build();
+        if (settleInfoBuilder_ == null) {
+          settleInfo_ = builderForValue.build();
           onChanged();
         } else {
-          nJPFBDOLHBFBuilder_.setMessage(builderForValue.build());
+          settleInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public Builder mergeNJPFBDOLHBF(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo value) {
-        if (nJPFBDOLHBFBuilder_ == null) {
-          if (nJPFBDOLHBF_ != null) {
-            nJPFBDOLHBF_ =
-              emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.newBuilder(nJPFBDOLHBF_).mergeFrom(value).buildPartial();
+      public Builder mergeSettleInfo(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo value) {
+        if (settleInfoBuilder_ == null) {
+          if (settleInfo_ != null) {
+            settleInfo_ =
+              emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.newBuilder(settleInfo_).mergeFrom(value).buildPartial();
           } else {
-            nJPFBDOLHBF_ = value;
+            settleInfo_ = value;
           }
           onChanged();
         } else {
-          nJPFBDOLHBFBuilder_.mergeFrom(value);
+          settleInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public Builder clearNJPFBDOLHBF() {
-        if (nJPFBDOLHBFBuilder_ == null) {
-          nJPFBDOLHBF_ = null;
+      public Builder clearSettleInfo() {
+        if (settleInfoBuilder_ == null) {
+          settleInfo_ = null;
           onChanged();
         } else {
-          nJPFBDOLHBF_ = null;
-          nJPFBDOLHBFBuilder_ = null;
+          settleInfo_ = null;
+          settleInfoBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder getNJPFBDOLHBFBuilder() {
+      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder getSettleInfoBuilder() {
         
         onChanged();
-        return getNJPFBDOLHBFFieldBuilder().getBuilder();
+        return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
-      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getNJPFBDOLHBFOrBuilder() {
-        if (nJPFBDOLHBFBuilder_ != null) {
-          return nJPFBDOLHBFBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder getSettleInfoOrBuilder() {
+        if (settleInfoBuilder_ != null) {
+          return settleInfoBuilder_.getMessageOrBuilder();
         } else {
-          return nJPFBDOLHBF_ == null ?
-              emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
+          return settleInfo_ == null ?
+              emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance() : settleInfo_;
         }
       }
       /**
-       * <code>.SalvagePreventSettleInfo NJPFBDOLHBF = 12;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.SalvagePreventSettleInfo settle_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder> 
-          getNJPFBDOLHBFFieldBuilder() {
-        if (nJPFBDOLHBFBuilder_ == null) {
-          nJPFBDOLHBFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getSettleInfoFieldBuilder() {
+        if (settleInfoBuilder_ == null) {
+          settleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfoOrBuilder>(
-                  getNJPFBDOLHBF(),
+                  getSettleInfo(),
                   getParentForChildren(),
                   isClean());
-          nJPFBDOLHBF_ = null;
+          settleInfo_ = null;
         }
-        return nJPFBDOLHBFBuilder_;
+        return settleInfoBuilder_;
+      }
+
+      private int galleryId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 5;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 5;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -720,11 +808,11 @@ public final class SalvagePreventSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SalvagePreventSettleNotify.proto\032\036Salv" +
-      "agePreventSettleInfo.proto\"a\n\032SalvagePre" +
-      "ventSettleNotify\022\023\n\013CLIAKIMDCJI\030\t \001(\r\022.\n" +
-      "\013NJPFBDOLHBF\030\014 \001(\0132\031.SalvagePreventSettl" +
-      "eInfoB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "agePreventSettleInfo.proto\"`\n\032SalvagePre" +
+      "ventSettleNotify\022.\n\013settle_info\030\t \001(\0132\031." +
+      "SalvagePreventSettleInfo\022\022\n\ngallery_id\030\005" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -736,7 +824,7 @@ public final class SalvagePreventSettleNotifyOuterClass {
     internal_static_SalvagePreventSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvagePreventSettleNotify_descriptor,
-        new java.lang.String[] { "CLIAKIMDCJI", "NJPFBDOLHBF", });
+        new java.lang.String[] { "SettleInfo", "GalleryId", });
     emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.getDescriptor();
   }
 

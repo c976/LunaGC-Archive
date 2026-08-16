@@ -19,71 +19,75 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> 
-        getStarredRoomListList();
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData getStarredRoomList(int index);
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    int getStarredRoomListCount();
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> 
-        getStarredRoomListOrBuilderList();
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder getStarredRoomListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> 
-        getBriefListList();
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getBriefList(int index);
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    int getBriefListCount();
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
-        getBriefListOrBuilderList();
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getBriefListOrBuilder(
-        int index);
-
-    /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> 
+        getStarredRoomListList();
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData getStarredRoomList(int index);
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    int getStarredRoomListCount();
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> 
+        getStarredRoomListOrBuilderList();
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder getStarredRoomListOrBuilder(
+        int index);
+
+    /**
+     * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
      * @return The enum numeric value on the wire for getBriefType.
      */
     int getGetBriefTypeValue();
     /**
-     * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
+     * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
      * @return The getBriefType.
      */
     emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType getGetBriefType();
+
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> 
+        getBriefListList();
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getBriefList(int index);
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    int getBriefListCount();
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
+        getBriefListOrBuilderList();
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getBriefListOrBuilder(
+        int index);
   }
   /**
+   * <pre>
+   * CmdId: 24058
+   * </pre>
+   *
    * Protobuf type {@code GetUgcDungeonBriefListRsp}
    */
   public static final class GetUgcDungeonBriefListRsp extends
@@ -97,8 +101,8 @@ public final class GetUgcDungeonBriefListRspOuterClass {
     }
     private GetUgcDungeonBriefListRsp() {
       starredRoomList_ = java.util.Collections.emptyList();
-      briefList_ = java.util.Collections.emptyList();
       getBriefType_ = 0;
+      briefList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -132,7 +136,12 @@ public final class GetUgcDungeonBriefListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 8: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 starredRoomList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -141,24 +150,19 @@ public final class GetUgcDungeonBriefListRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.parser(), extensionRegistry));
               break;
             }
-            case 66: {
+            case 32: {
+              int rawValue = input.readEnum();
+
+              getBriefType_ = rawValue;
+              break;
+            }
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 briefList_ = new java.util.ArrayList<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief>();
                 mutable_bitField0_ |= 0x00000002;
               }
               briefList_.add(
                   input.readMessage(emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              getBriefType_ = rawValue;
               break;
             }
             default: {
@@ -199,90 +203,10 @@ public final class GetUgcDungeonBriefListRspOuterClass {
               emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp.class, emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp.Builder.class);
     }
 
-    public static final int STARRED_ROOM_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> starredRoomList_;
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> getStarredRoomListList() {
-      return starredRoomList_;
-    }
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> 
-        getStarredRoomListOrBuilderList() {
-      return starredRoomList_;
-    }
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    @java.lang.Override
-    public int getStarredRoomListCount() {
-      return starredRoomList_.size();
-    }
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData getStarredRoomList(int index) {
-      return starredRoomList_.get(index);
-    }
-    /**
-     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder getStarredRoomListOrBuilder(
-        int index) {
-      return starredRoomList_.get(index);
-    }
-
-    public static final int BRIEF_LIST_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> briefList_;
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> getBriefListList() {
-      return briefList_;
-    }
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
-        getBriefListOrBuilderList() {
-      return briefList_;
-    }
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    @java.lang.Override
-    public int getBriefListCount() {
-      return briefList_.size();
-    }
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getBriefList(int index) {
-      return briefList_.get(index);
-    }
-    /**
-     * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getBriefListOrBuilder(
-        int index) {
-      return briefList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -290,23 +214,103 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       return retcode_;
     }
 
-    public static final int GET_BRIEF_TYPE_FIELD_NUMBER = 12;
+    public static final int STARRED_ROOM_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> starredRoomList_;
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> getStarredRoomListList() {
+      return starredRoomList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> 
+        getStarredRoomListOrBuilderList() {
+      return starredRoomList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    @java.lang.Override
+    public int getStarredRoomListCount() {
+      return starredRoomList_.size();
+    }
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData getStarredRoomList(int index) {
+      return starredRoomList_.get(index);
+    }
+    /**
+     * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder getStarredRoomListOrBuilder(
+        int index) {
+      return starredRoomList_.get(index);
+    }
+
+    public static final int GET_BRIEF_TYPE_FIELD_NUMBER = 4;
     private int getBriefType_;
     /**
-     * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
+     * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
      * @return The enum numeric value on the wire for getBriefType.
      */
     @java.lang.Override public int getGetBriefTypeValue() {
       return getBriefType_;
     }
     /**
-     * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
+     * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
      * @return The getBriefType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType getGetBriefType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType result = emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.valueOf(getBriefType_);
       return result == null ? emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.UNRECOGNIZED : result;
+    }
+
+    public static final int BRIEF_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> briefList_;
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> getBriefListList() {
+      return briefList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
+        getBriefListOrBuilderList() {
+      return briefList_;
+    }
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getBriefListCount() {
+      return briefList_.size();
+    }
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getBriefList(int index) {
+      return briefList_.get(index);
+    }
+    /**
+     * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getBriefListOrBuilder(
+        int index) {
+      return briefList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -323,17 +327,17 @@ public final class GetUgcDungeonBriefListRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(1, retcode_);
+      }
       for (int i = 0; i < starredRoomList_.size(); i++) {
-        output.writeMessage(7, starredRoomList_.get(i));
+        output.writeMessage(2, starredRoomList_.get(i));
+      }
+      if (getBriefType_ != emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.JBAOBCFFFAN_NONE.getNumber()) {
+        output.writeEnum(4, getBriefType_);
       }
       for (int i = 0; i < briefList_.size(); i++) {
-        output.writeMessage(8, briefList_.get(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
-      }
-      if (getBriefType_ != emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.GetUgcDungeonBriefType_NONE.getNumber()) {
-        output.writeEnum(12, getBriefType_);
+        output.writeMessage(9, briefList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -344,21 +348,21 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, retcode_);
+      }
       for (int i = 0; i < starredRoomList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, starredRoomList_.get(i));
+          .computeMessageSize(2, starredRoomList_.get(i));
+      }
+      if (getBriefType_ != emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.JBAOBCFFFAN_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(4, getBriefType_);
       }
       for (int i = 0; i < briefList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, briefList_.get(i));
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
-      }
-      if (getBriefType_ != emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.GetUgcDungeonBriefType_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, getBriefType_);
+          .computeMessageSize(9, briefList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -375,13 +379,13 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       }
       emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp other = (emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp) obj;
 
-      if (!getStarredRoomListList()
-          .equals(other.getStarredRoomListList())) return false;
-      if (!getBriefListList()
-          .equals(other.getBriefListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getStarredRoomListList()
+          .equals(other.getStarredRoomListList())) return false;
       if (getBriefType_ != other.getBriefType_) return false;
+      if (!getBriefListList()
+          .equals(other.getBriefListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,18 +397,18 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getStarredRoomListCount() > 0) {
         hash = (37 * hash) + STARRED_ROOM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStarredRoomListList().hashCode();
       }
+      hash = (37 * hash) + GET_BRIEF_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getBriefType_;
       if (getBriefListCount() > 0) {
         hash = (37 * hash) + BRIEF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBriefListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + GET_BRIEF_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getBriefType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -501,6 +505,10 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24058
+     * </pre>
+     *
      * Protobuf type {@code GetUgcDungeonBriefListRsp}
      */
     public static final class Builder extends
@@ -540,22 +548,22 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (starredRoomListBuilder_ == null) {
           starredRoomList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           starredRoomListBuilder_.clear();
         }
+        getBriefType_ = 0;
+
         if (briefListBuilder_ == null) {
           briefList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           briefListBuilder_.clear();
         }
-        retcode_ = 0;
-
-        getBriefType_ = 0;
-
         return this;
       }
 
@@ -583,6 +591,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       public emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp buildPartial() {
         emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp result = new emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (starredRoomListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             starredRoomList_ = java.util.Collections.unmodifiableList(starredRoomList_);
@@ -592,6 +601,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         } else {
           result.starredRoomList_ = starredRoomListBuilder_.build();
         }
+        result.getBriefType_ = getBriefType_;
         if (briefListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             briefList_ = java.util.Collections.unmodifiableList(briefList_);
@@ -601,8 +611,6 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         } else {
           result.briefList_ = briefListBuilder_.build();
         }
-        result.retcode_ = retcode_;
-        result.getBriefType_ = getBriefType_;
         onBuilt();
         return result;
       }
@@ -651,6 +659,9 @@ public final class GetUgcDungeonBriefListRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp other) {
         if (other == emu.grasscutter.net.proto.GetUgcDungeonBriefListRspOuterClass.GetUgcDungeonBriefListRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (starredRoomListBuilder_ == null) {
           if (!other.starredRoomList_.isEmpty()) {
             if (starredRoomList_.isEmpty()) {
@@ -677,6 +688,9 @@ public final class GetUgcDungeonBriefListRspOuterClass {
             }
           }
         }
+        if (other.getBriefType_ != 0) {
+          setGetBriefTypeValue(other.getGetBriefTypeValue());
+        }
         if (briefListBuilder_ == null) {
           if (!other.briefList_.isEmpty()) {
             if (briefList_.isEmpty()) {
@@ -702,12 +716,6 @@ public final class GetUgcDungeonBriefListRspOuterClass {
               briefListBuilder_.addAllMessages(other.briefList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getBriefType_ != 0) {
-          setGetBriefTypeValue(other.getGetBriefTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -739,6 +747,37 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> starredRoomList_ =
         java.util.Collections.emptyList();
       private void ensureStarredRoomListIsMutable() {
@@ -752,7 +791,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
           emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> starredRoomListBuilder_;
 
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> getStarredRoomListList() {
         if (starredRoomListBuilder_ == null) {
@@ -762,7 +801,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public int getStarredRoomListCount() {
         if (starredRoomListBuilder_ == null) {
@@ -772,7 +811,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData getStarredRoomList(int index) {
         if (starredRoomListBuilder_ == null) {
@@ -782,7 +821,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder setStarredRoomList(
           int index, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData value) {
@@ -799,7 +838,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder setStarredRoomList(
           int index, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder builderForValue) {
@@ -813,7 +852,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder addStarredRoomList(emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData value) {
         if (starredRoomListBuilder_ == null) {
@@ -829,7 +868,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder addStarredRoomList(
           int index, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData value) {
@@ -846,7 +885,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder addStarredRoomList(
           emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder builderForValue) {
@@ -860,7 +899,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder addStarredRoomList(
           int index, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder builderForValue) {
@@ -874,7 +913,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder addAllStarredRoomList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData> values) {
@@ -889,7 +928,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder clearStarredRoomList() {
         if (starredRoomListBuilder_ == null) {
@@ -902,7 +941,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public Builder removeStarredRoomList(int index) {
         if (starredRoomListBuilder_ == null) {
@@ -915,14 +954,14 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder getStarredRoomListBuilder(
           int index) {
         return getStarredRoomListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder getStarredRoomListOrBuilder(
           int index) {
@@ -932,7 +971,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomDataOrBuilder> 
            getStarredRoomListOrBuilderList() {
@@ -943,14 +982,14 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder addStarredRoomListBuilder() {
         return getStarredRoomListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.getDefaultInstance());
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder addStarredRoomListBuilder(
           int index) {
@@ -958,7 +997,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
             index, emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.getDefaultInstance());
       }
       /**
-       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 7;</code>
+       * <code>repeated .UgcDungeonStarredRoomData starred_room_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.UgcDungeonStarredRoomData.Builder> 
            getStarredRoomListBuilderList() {
@@ -979,6 +1018,60 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return starredRoomListBuilder_;
       }
 
+      private int getBriefType_ = 0;
+      /**
+       * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
+       * @return The enum numeric value on the wire for getBriefType.
+       */
+      @java.lang.Override public int getGetBriefTypeValue() {
+        return getBriefType_;
+      }
+      /**
+       * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
+       * @param value The enum numeric value on the wire for getBriefType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGetBriefTypeValue(int value) {
+        
+        getBriefType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
+       * @return The getBriefType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType getGetBriefType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType result = emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.valueOf(getBriefType_);
+        return result == null ? emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
+       * @param value The getBriefType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGetBriefType(emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        getBriefType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GetUgcDungeonBriefType get_brief_type = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGetBriefType() {
+        
+        getBriefType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> briefList_ =
         java.util.Collections.emptyList();
       private void ensureBriefListIsMutable() {
@@ -992,7 +1085,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
           emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> briefListBuilder_;
 
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> getBriefListList() {
         if (briefListBuilder_ == null) {
@@ -1002,7 +1095,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public int getBriefListCount() {
         if (briefListBuilder_ == null) {
@@ -1012,7 +1105,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief getBriefList(int index) {
         if (briefListBuilder_ == null) {
@@ -1022,7 +1115,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder setBriefList(
           int index, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief value) {
@@ -1039,7 +1132,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder setBriefList(
           int index, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder builderForValue) {
@@ -1053,7 +1146,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder addBriefList(emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief value) {
         if (briefListBuilder_ == null) {
@@ -1069,7 +1162,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder addBriefList(
           int index, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief value) {
@@ -1086,7 +1179,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder addBriefList(
           emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder builderForValue) {
@@ -1100,7 +1193,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder addBriefList(
           int index, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder builderForValue) {
@@ -1114,7 +1207,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder addAllBriefList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief> values) {
@@ -1129,7 +1222,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder clearBriefList() {
         if (briefListBuilder_ == null) {
@@ -1142,7 +1235,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public Builder removeBriefList(int index) {
         if (briefListBuilder_ == null) {
@@ -1155,14 +1248,14 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder getBriefListBuilder(
           int index) {
         return getBriefListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder getBriefListOrBuilder(
           int index) {
@@ -1172,7 +1265,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBriefOrBuilder> 
            getBriefListOrBuilderList() {
@@ -1183,14 +1276,14 @@ public final class GetUgcDungeonBriefListRspOuterClass {
         }
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder addBriefListBuilder() {
         return getBriefListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder addBriefListBuilder(
           int index) {
@@ -1198,7 +1291,7 @@ public final class GetUgcDungeonBriefListRspOuterClass {
             index, emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .UgcDungeonBrief brief_list = 8;</code>
+       * <code>repeated .UgcDungeonBrief brief_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.UgcDungeonBrief.Builder> 
            getBriefListBuilderList() {
@@ -1217,91 +1310,6 @@ public final class GetUgcDungeonBriefListRspOuterClass {
           briefList_ = null;
         }
         return briefListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int getBriefType_ = 0;
-      /**
-       * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
-       * @return The enum numeric value on the wire for getBriefType.
-       */
-      @java.lang.Override public int getGetBriefTypeValue() {
-        return getBriefType_;
-      }
-      /**
-       * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
-       * @param value The enum numeric value on the wire for getBriefType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGetBriefTypeValue(int value) {
-        
-        getBriefType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
-       * @return The getBriefType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType getGetBriefType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType result = emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.valueOf(getBriefType_);
-        return result == null ? emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
-       * @param value The getBriefType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGetBriefType(emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.GetUgcDungeonBriefType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        getBriefType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GetUgcDungeonBriefType get_brief_type = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGetBriefType() {
-        
-        getBriefType_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1370,32 +1378,32 @@ public final class GetUgcDungeonBriefListRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037GetUgcDungeonBriefListRsp.proto\032\037UgcDu" +
-      "ngeonStarredRoomData.proto\032\025UgcDungeonBr" +
-      "ief.proto\032\034GetUgcDungeonBriefType.proto\"" +
-      "\272\001\n\031GetUgcDungeonBriefListRsp\0225\n\021starred" +
-      "_room_list\030\007 \003(\0132\032.UgcDungeonStarredRoom" +
-      "Data\022$\n\nbrief_list\030\010 \003(\0132\020.UgcDungeonBri" +
-      "ef\022\017\n\007retcode\030\t \001(\005\022/\n\016get_brief_type\030\014 " +
-      "\001(\0162\027.GetUgcDungeonBriefTypeB\033\n\031emu.gras" +
+      "\n\037GetUgcDungeonBriefListRsp.proto\032\034GetUg" +
+      "cDungeonBriefType.proto\032\025UgcDungeonBrief" +
+      ".proto\032\037UgcDungeonStarredRoomData.proto\"" +
+      "\272\001\n\031GetUgcDungeonBriefListRsp\022\017\n\007retcode" +
+      "\030\001 \001(\005\0225\n\021starred_room_list\030\002 \003(\0132\032.UgcD" +
+      "ungeonStarredRoomData\022/\n\016get_brief_type\030" +
+      "\004 \001(\0162\027.GetUgcDungeonBriefType\022$\n\nbrief_" +
+      "list\030\t \003(\0132\020.UgcDungeonBriefB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.getDescriptor(),
         });
     internal_static_GetUgcDungeonBriefListRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GetUgcDungeonBriefListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetUgcDungeonBriefListRsp_descriptor,
-        new java.lang.String[] { "StarredRoomList", "BriefList", "Retcode", "GetBriefType", });
-    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor();
+        new java.lang.String[] { "Retcode", "StarredRoomList", "GetBriefType", "BriefList", });
     emu.grasscutter.net.proto.GetUgcDungeonBriefTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcDungeonBriefOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcDungeonStarredRoomDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

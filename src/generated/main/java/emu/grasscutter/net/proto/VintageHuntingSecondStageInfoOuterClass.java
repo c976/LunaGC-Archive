@@ -19,28 +19,36 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 capture_animal_num = 3;</code>
-     * @return The captureAnimalNum.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HOJHGAHCJBI = 9;</code>
+     * @return The hOJHGAHCJBI.
      */
-    int getCaptureAnimalNum();
+    int getHOJHGAHCJBI();
 
     /**
-     * <code>uint32 left_num = 9;</code>
-     * @return The leftNum.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 NDIDGKPPPJF = 13;</code>
+     * @return The nDIDGKPPPJF.
      */
-    int getLeftNum();
+    int getNDIDGKPPPJF();
 
     /**
-     * <code>uint32 total_num = 8;</code>
-     * @return The totalNum.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FIAELPJBKJN = 1;</code>
+     * @return The fIAELPJBKJN.
      */
-    int getTotalNum();
+    int getFIAELPJBKJN();
   }
   /**
-   * <pre>
-   * Obf: KAIDHCNAICH
-   * </pre>
-   *
    * Protobuf type {@code VintageHuntingSecondStageInfo}
    */
   public static final class VintageHuntingSecondStageInfo extends
@@ -85,19 +93,19 @@ public final class VintageHuntingSecondStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              captureAnimalNum_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              totalNum_ = input.readUInt32();
+              fIAELPJBKJN_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              leftNum_ = input.readUInt32();
+              hOJHGAHCJBI_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              nDIDGKPPPJF_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,37 +140,49 @@ public final class VintageHuntingSecondStageInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.class, emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.Builder.class);
     }
 
-    public static final int CAPTURE_ANIMAL_NUM_FIELD_NUMBER = 3;
-    private int captureAnimalNum_;
+    public static final int HOJHGAHCJBI_FIELD_NUMBER = 9;
+    private int hOJHGAHCJBI_;
     /**
-     * <code>uint32 capture_animal_num = 3;</code>
-     * @return The captureAnimalNum.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 HOJHGAHCJBI = 9;</code>
+     * @return The hOJHGAHCJBI.
      */
     @java.lang.Override
-    public int getCaptureAnimalNum() {
-      return captureAnimalNum_;
+    public int getHOJHGAHCJBI() {
+      return hOJHGAHCJBI_;
     }
 
-    public static final int LEFT_NUM_FIELD_NUMBER = 9;
-    private int leftNum_;
+    public static final int NDIDGKPPPJF_FIELD_NUMBER = 13;
+    private int nDIDGKPPPJF_;
     /**
-     * <code>uint32 left_num = 9;</code>
-     * @return The leftNum.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 NDIDGKPPPJF = 13;</code>
+     * @return The nDIDGKPPPJF.
      */
     @java.lang.Override
-    public int getLeftNum() {
-      return leftNum_;
+    public int getNDIDGKPPPJF() {
+      return nDIDGKPPPJF_;
     }
 
-    public static final int TOTAL_NUM_FIELD_NUMBER = 8;
-    private int totalNum_;
+    public static final int FIAELPJBKJN_FIELD_NUMBER = 1;
+    private int fIAELPJBKJN_;
     /**
-     * <code>uint32 total_num = 8;</code>
-     * @return The totalNum.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FIAELPJBKJN = 1;</code>
+     * @return The fIAELPJBKJN.
      */
     @java.lang.Override
-    public int getTotalNum() {
-      return totalNum_;
+    public int getFIAELPJBKJN() {
+      return fIAELPJBKJN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +199,14 @@ public final class VintageHuntingSecondStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (captureAnimalNum_ != 0) {
-        output.writeUInt32(3, captureAnimalNum_);
+      if (fIAELPJBKJN_ != 0) {
+        output.writeUInt32(1, fIAELPJBKJN_);
       }
-      if (totalNum_ != 0) {
-        output.writeUInt32(8, totalNum_);
+      if (hOJHGAHCJBI_ != 0) {
+        output.writeUInt32(9, hOJHGAHCJBI_);
       }
-      if (leftNum_ != 0) {
-        output.writeUInt32(9, leftNum_);
+      if (nDIDGKPPPJF_ != 0) {
+        output.writeUInt32(13, nDIDGKPPPJF_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +217,17 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (captureAnimalNum_ != 0) {
+      if (fIAELPJBKJN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, captureAnimalNum_);
+          .computeUInt32Size(1, fIAELPJBKJN_);
       }
-      if (totalNum_ != 0) {
+      if (hOJHGAHCJBI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, totalNum_);
+          .computeUInt32Size(9, hOJHGAHCJBI_);
       }
-      if (leftNum_ != 0) {
+      if (nDIDGKPPPJF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, leftNum_);
+          .computeUInt32Size(13, nDIDGKPPPJF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo other = (emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo) obj;
 
-      if (getCaptureAnimalNum()
-          != other.getCaptureAnimalNum()) return false;
-      if (getLeftNum()
-          != other.getLeftNum()) return false;
-      if (getTotalNum()
-          != other.getTotalNum()) return false;
+      if (getHOJHGAHCJBI()
+          != other.getHOJHGAHCJBI()) return false;
+      if (getNDIDGKPPPJF()
+          != other.getNDIDGKPPPJF()) return false;
+      if (getFIAELPJBKJN()
+          != other.getFIAELPJBKJN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +261,12 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CAPTURE_ANIMAL_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getCaptureAnimalNum();
-      hash = (37 * hash) + LEFT_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftNum();
-      hash = (37 * hash) + TOTAL_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalNum();
+      hash = (37 * hash) + HOJHGAHCJBI_FIELD_NUMBER;
+      hash = (53 * hash) + getHOJHGAHCJBI();
+      hash = (37 * hash) + NDIDGKPPPJF_FIELD_NUMBER;
+      hash = (53 * hash) + getNDIDGKPPPJF();
+      hash = (37 * hash) + FIAELPJBKJN_FIELD_NUMBER;
+      hash = (53 * hash) + getFIAELPJBKJN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +363,6 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KAIDHCNAICH
-     * </pre>
-     *
      * Protobuf type {@code VintageHuntingSecondStageInfo}
      */
     public static final class Builder extends
@@ -384,11 +400,11 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        captureAnimalNum_ = 0;
+        hOJHGAHCJBI_ = 0;
 
-        leftNum_ = 0;
+        nDIDGKPPPJF_ = 0;
 
-        totalNum_ = 0;
+        fIAELPJBKJN_ = 0;
 
         return this;
       }
@@ -416,9 +432,9 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo result = new emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo(this);
-        result.captureAnimalNum_ = captureAnimalNum_;
-        result.leftNum_ = leftNum_;
-        result.totalNum_ = totalNum_;
+        result.hOJHGAHCJBI_ = hOJHGAHCJBI_;
+        result.nDIDGKPPPJF_ = nDIDGKPPPJF_;
+        result.fIAELPJBKJN_ = fIAELPJBKJN_;
         onBuilt();
         return result;
       }
@@ -467,14 +483,14 @@ public final class VintageHuntingSecondStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo other) {
         if (other == emu.grasscutter.net.proto.VintageHuntingSecondStageInfoOuterClass.VintageHuntingSecondStageInfo.getDefaultInstance()) return this;
-        if (other.getCaptureAnimalNum() != 0) {
-          setCaptureAnimalNum(other.getCaptureAnimalNum());
+        if (other.getHOJHGAHCJBI() != 0) {
+          setHOJHGAHCJBI(other.getHOJHGAHCJBI());
         }
-        if (other.getLeftNum() != 0) {
-          setLeftNum(other.getLeftNum());
+        if (other.getNDIDGKPPPJF() != 0) {
+          setNDIDGKPPPJF(other.getNDIDGKPPPJF());
         }
-        if (other.getTotalNum() != 0) {
-          setTotalNum(other.getTotalNum());
+        if (other.getFIAELPJBKJN() != 0) {
+          setFIAELPJBKJN(other.getFIAELPJBKJN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,95 +521,131 @@ public final class VintageHuntingSecondStageInfoOuterClass {
         return this;
       }
 
-      private int captureAnimalNum_ ;
+      private int hOJHGAHCJBI_ ;
       /**
-       * <code>uint32 capture_animal_num = 3;</code>
-       * @return The captureAnimalNum.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HOJHGAHCJBI = 9;</code>
+       * @return The hOJHGAHCJBI.
        */
       @java.lang.Override
-      public int getCaptureAnimalNum() {
-        return captureAnimalNum_;
+      public int getHOJHGAHCJBI() {
+        return hOJHGAHCJBI_;
       }
       /**
-       * <code>uint32 capture_animal_num = 3;</code>
-       * @param value The captureAnimalNum to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HOJHGAHCJBI = 9;</code>
+       * @param value The hOJHGAHCJBI to set.
        * @return This builder for chaining.
        */
-      public Builder setCaptureAnimalNum(int value) {
+      public Builder setHOJHGAHCJBI(int value) {
         
-        captureAnimalNum_ = value;
+        hOJHGAHCJBI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 capture_animal_num = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 HOJHGAHCJBI = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCaptureAnimalNum() {
+      public Builder clearHOJHGAHCJBI() {
         
-        captureAnimalNum_ = 0;
+        hOJHGAHCJBI_ = 0;
         onChanged();
         return this;
       }
 
-      private int leftNum_ ;
+      private int nDIDGKPPPJF_ ;
       /**
-       * <code>uint32 left_num = 9;</code>
-       * @return The leftNum.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 NDIDGKPPPJF = 13;</code>
+       * @return The nDIDGKPPPJF.
        */
       @java.lang.Override
-      public int getLeftNum() {
-        return leftNum_;
+      public int getNDIDGKPPPJF() {
+        return nDIDGKPPPJF_;
       }
       /**
-       * <code>uint32 left_num = 9;</code>
-       * @param value The leftNum to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 NDIDGKPPPJF = 13;</code>
+       * @param value The nDIDGKPPPJF to set.
        * @return This builder for chaining.
        */
-      public Builder setLeftNum(int value) {
+      public Builder setNDIDGKPPPJF(int value) {
         
-        leftNum_ = value;
+        nDIDGKPPPJF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 left_num = 9;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 NDIDGKPPPJF = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLeftNum() {
+      public Builder clearNDIDGKPPPJF() {
         
-        leftNum_ = 0;
+        nDIDGKPPPJF_ = 0;
         onChanged();
         return this;
       }
 
-      private int totalNum_ ;
+      private int fIAELPJBKJN_ ;
       /**
-       * <code>uint32 total_num = 8;</code>
-       * @return The totalNum.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FIAELPJBKJN = 1;</code>
+       * @return The fIAELPJBKJN.
        */
       @java.lang.Override
-      public int getTotalNum() {
-        return totalNum_;
+      public int getFIAELPJBKJN() {
+        return fIAELPJBKJN_;
       }
       /**
-       * <code>uint32 total_num = 8;</code>
-       * @param value The totalNum to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FIAELPJBKJN = 1;</code>
+       * @param value The fIAELPJBKJN to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalNum(int value) {
+      public Builder setFIAELPJBKJN(int value) {
         
-        totalNum_ = value;
+        fIAELPJBKJN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_num = 8;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FIAELPJBKJN = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalNum() {
+      public Builder clearFIAELPJBKJN() {
         
-        totalNum_ = 0;
+        fIAELPJBKJN_ = 0;
         onChanged();
         return this;
       }
@@ -664,11 +716,11 @@ public final class VintageHuntingSecondStageInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#VintageHuntingSecondStageInfo.proto\"`\n" +
-      "\035VintageHuntingSecondStageInfo\022\032\n\022captur" +
-      "e_animal_num\030\003 \001(\r\022\020\n\010left_num\030\t \001(\r\022\021\n\t" +
-      "total_num\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n#VintageHuntingSecondStageInfo.proto\"^\n" +
+      "\035VintageHuntingSecondStageInfo\022\023\n\013HOJHGA" +
+      "HCJBI\030\t \001(\r\022\023\n\013NDIDGKPPPJF\030\r \001(\r\022\023\n\013FIAE" +
+      "LPJBKJN\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -679,7 +731,7 @@ public final class VintageHuntingSecondStageInfoOuterClass {
     internal_static_VintageHuntingSecondStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingSecondStageInfo_descriptor,
-        new java.lang.String[] { "CaptureAnimalNum", "LeftNum", "TotalNum", });
+        new java.lang.String[] { "HOJHGAHCJBI", "NDIDGKPPPJF", "FIAELPJBKJN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,21 +19,20 @@ public final class BlossomChestCreateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 refresh_id = 8;</code>
-     * @return The refreshId.
-     */
-    int getRefreshId();
-
-    /**
-     * <code>uint32 circle_camp_id = 2;</code>
+     * <code>uint32 circle_camp_id = 12;</code>
      * @return The circleCampId.
      */
     int getCircleCampId();
+
+    /**
+     * <code>uint32 refresh_id = 15;</code>
+     * @return The refreshId.
+     */
+    int getRefreshId();
   }
   /**
    * <pre>
-   * CmdId: 2992
-   * Obf: DHFOJJJLEBN
+   * CmdId: 22479
    * </pre>
    *
    * Protobuf type {@code BlossomChestCreateNotify}
@@ -80,12 +79,12 @@ public final class BlossomChestCreateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 96: {
 
               circleCampId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
               refreshId_ = input.readUInt32();
               break;
@@ -122,26 +121,26 @@ public final class BlossomChestCreateNotifyOuterClass {
               emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify.class, emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify.Builder.class);
     }
 
-    public static final int REFRESH_ID_FIELD_NUMBER = 8;
-    private int refreshId_;
-    /**
-     * <code>uint32 refresh_id = 8;</code>
-     * @return The refreshId.
-     */
-    @java.lang.Override
-    public int getRefreshId() {
-      return refreshId_;
-    }
-
-    public static final int CIRCLE_CAMP_ID_FIELD_NUMBER = 2;
+    public static final int CIRCLE_CAMP_ID_FIELD_NUMBER = 12;
     private int circleCampId_;
     /**
-     * <code>uint32 circle_camp_id = 2;</code>
+     * <code>uint32 circle_camp_id = 12;</code>
      * @return The circleCampId.
      */
     @java.lang.Override
     public int getCircleCampId() {
       return circleCampId_;
+    }
+
+    public static final int REFRESH_ID_FIELD_NUMBER = 15;
+    private int refreshId_;
+    /**
+     * <code>uint32 refresh_id = 15;</code>
+     * @return The refreshId.
+     */
+    @java.lang.Override
+    public int getRefreshId() {
+      return refreshId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +158,10 @@ public final class BlossomChestCreateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (circleCampId_ != 0) {
-        output.writeUInt32(2, circleCampId_);
+        output.writeUInt32(12, circleCampId_);
       }
       if (refreshId_ != 0) {
-        output.writeUInt32(8, refreshId_);
+        output.writeUInt32(15, refreshId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class BlossomChestCreateNotifyOuterClass {
       size = 0;
       if (circleCampId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, circleCampId_);
+          .computeUInt32Size(12, circleCampId_);
       }
       if (refreshId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, refreshId_);
+          .computeUInt32Size(15, refreshId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class BlossomChestCreateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify other = (emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify) obj;
 
-      if (getRefreshId()
-          != other.getRefreshId()) return false;
       if (getCircleCampId()
           != other.getCircleCampId()) return false;
+      if (getRefreshId()
+          != other.getRefreshId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class BlossomChestCreateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRefreshId();
       hash = (37 * hash) + CIRCLE_CAMP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCircleCampId();
+      hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRefreshId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class BlossomChestCreateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2992
-     * Obf: DHFOJJJLEBN
+     * CmdId: 22479
      * </pre>
      *
      * Protobuf type {@code BlossomChestCreateNotify}
@@ -353,9 +351,9 @@ public final class BlossomChestCreateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        refreshId_ = 0;
-
         circleCampId_ = 0;
+
+        refreshId_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class BlossomChestCreateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify buildPartial() {
         emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify result = new emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify(this);
-        result.refreshId_ = refreshId_;
         result.circleCampId_ = circleCampId_;
+        result.refreshId_ = refreshId_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class BlossomChestCreateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify other) {
         if (other == emu.grasscutter.net.proto.BlossomChestCreateNotifyOuterClass.BlossomChestCreateNotify.getDefaultInstance()) return this;
-        if (other.getRefreshId() != 0) {
-          setRefreshId(other.getRefreshId());
-        }
         if (other.getCircleCampId() != 0) {
           setCircleCampId(other.getCircleCampId());
+        }
+        if (other.getRefreshId() != 0) {
+          setRefreshId(other.getRefreshId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,9 @@ public final class BlossomChestCreateNotifyOuterClass {
         return this;
       }
 
-      private int refreshId_ ;
-      /**
-       * <code>uint32 refresh_id = 8;</code>
-       * @return The refreshId.
-       */
-      @java.lang.Override
-      public int getRefreshId() {
-        return refreshId_;
-      }
-      /**
-       * <code>uint32 refresh_id = 8;</code>
-       * @param value The refreshId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRefreshId(int value) {
-        
-        refreshId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 refresh_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRefreshId() {
-        
-        refreshId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int circleCampId_ ;
       /**
-       * <code>uint32 circle_camp_id = 2;</code>
+       * <code>uint32 circle_camp_id = 12;</code>
        * @return The circleCampId.
        */
       @java.lang.Override
@@ -509,7 +476,7 @@ public final class BlossomChestCreateNotifyOuterClass {
         return circleCampId_;
       }
       /**
-       * <code>uint32 circle_camp_id = 2;</code>
+       * <code>uint32 circle_camp_id = 12;</code>
        * @param value The circleCampId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +487,43 @@ public final class BlossomChestCreateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 circle_camp_id = 2;</code>
+       * <code>uint32 circle_camp_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCircleCampId() {
         
         circleCampId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int refreshId_ ;
+      /**
+       * <code>uint32 refresh_id = 15;</code>
+       * @return The refreshId.
+       */
+      @java.lang.Override
+      public int getRefreshId() {
+        return refreshId_;
+      }
+      /**
+       * <code>uint32 refresh_id = 15;</code>
+       * @param value The refreshId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRefreshId(int value) {
+        
+        refreshId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 refresh_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRefreshId() {
+        
+        refreshId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class BlossomChestCreateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036BlossomChestCreateNotify.proto\"F\n\030Blos" +
-      "somChestCreateNotify\022\022\n\nrefresh_id\030\010 \001(\r" +
-      "\022\026\n\016circle_camp_id\030\002 \001(\rB\033\n\031emu.grasscut" +
+      "somChestCreateNotify\022\026\n\016circle_camp_id\030\014" +
+      " \001(\r\022\022\n\nrefresh_id\030\017 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +608,7 @@ public final class BlossomChestCreateNotifyOuterClass {
     internal_static_BlossomChestCreateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlossomChestCreateNotify_descriptor,
-        new java.lang.String[] { "RefreshId", "CircleCampId", });
+        new java.lang.String[] { "CircleCampId", "RefreshId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

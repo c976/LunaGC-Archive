@@ -19,26 +19,26 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cd = 13;</code>
+     * <code>uint32 mp_play_id = 2;</code>
+     * @return The mpPlayId.
+     */
+    int getMpPlayId();
+
+    /**
+     * <code>uint32 cd = 7;</code>
      * @return The cd.
      */
     int getCd();
 
     /**
-     * <code>bool is_remain_reward = 3;</code>
+     * <code>bool is_remain_reward = 14;</code>
      * @return The isRemainReward.
      */
     boolean getIsRemainReward();
-
-    /**
-     * <code>uint32 mp_play_id = 8;</code>
-     * @return The mpPlayId.
-     */
-    int getMpPlayId();
   }
   /**
    * <pre>
-   * CmdId: 1958
+   * CmdId: 27944
    * </pre>
    *
    * Protobuf type {@code MpPlayOwnerInviteNotify}
@@ -85,19 +85,19 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              isRemainReward_ = input.readBool();
-              break;
-            }
-            case 64: {
+            case 16: {
 
               mpPlayId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 56: {
 
               cd_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isRemainReward_ = input.readBool();
               break;
             }
             default: {
@@ -132,10 +132,21 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
               emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify.class, emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify.Builder.class);
     }
 
-    public static final int CD_FIELD_NUMBER = 13;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 2;
+    private int mpPlayId_;
+    /**
+     * <code>uint32 mp_play_id = 2;</code>
+     * @return The mpPlayId.
+     */
+    @java.lang.Override
+    public int getMpPlayId() {
+      return mpPlayId_;
+    }
+
+    public static final int CD_FIELD_NUMBER = 7;
     private int cd_;
     /**
-     * <code>uint32 cd = 13;</code>
+     * <code>uint32 cd = 7;</code>
      * @return The cd.
      */
     @java.lang.Override
@@ -143,26 +154,15 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       return cd_;
     }
 
-    public static final int IS_REMAIN_REWARD_FIELD_NUMBER = 3;
+    public static final int IS_REMAIN_REWARD_FIELD_NUMBER = 14;
     private boolean isRemainReward_;
     /**
-     * <code>bool is_remain_reward = 3;</code>
+     * <code>bool is_remain_reward = 14;</code>
      * @return The isRemainReward.
      */
     @java.lang.Override
     public boolean getIsRemainReward() {
       return isRemainReward_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 8;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 8;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +179,14 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isRemainReward_ != false) {
-        output.writeBool(3, isRemainReward_);
-      }
       if (mpPlayId_ != 0) {
-        output.writeUInt32(8, mpPlayId_);
+        output.writeUInt32(2, mpPlayId_);
       }
       if (cd_ != 0) {
-        output.writeUInt32(13, cd_);
+        output.writeUInt32(7, cd_);
+      }
+      if (isRemainReward_ != false) {
+        output.writeBool(14, isRemainReward_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isRemainReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isRemainReward_);
-      }
       if (mpPlayId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, mpPlayId_);
+          .computeUInt32Size(2, mpPlayId_);
       }
       if (cd_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cd_);
+          .computeUInt32Size(7, cd_);
+      }
+      if (isRemainReward_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isRemainReward_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +224,12 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify other = (emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify) obj;
 
+      if (getMpPlayId()
+          != other.getMpPlayId()) return false;
       if (getCd()
           != other.getCd()) return false;
       if (getIsRemainReward()
           != other.getIsRemainReward()) return false;
-      if (getMpPlayId()
-          != other.getMpPlayId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +241,13 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMpPlayId();
       hash = (37 * hash) + CD_FIELD_NUMBER;
       hash = (53 * hash) + getCd();
       hash = (37 * hash) + IS_REMAIN_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRemainReward());
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +345,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1958
+     * CmdId: 27944
      * </pre>
      *
      * Protobuf type {@code MpPlayOwnerInviteNotify}
@@ -385,11 +385,11 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        mpPlayId_ = 0;
+
         cd_ = 0;
 
         isRemainReward_ = false;
-
-        mpPlayId_ = 0;
 
         return this;
       }
@@ -417,9 +417,9 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify buildPartial() {
         emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify result = new emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify(this);
+        result.mpPlayId_ = mpPlayId_;
         result.cd_ = cd_;
         result.isRemainReward_ = isRemainReward_;
-        result.mpPlayId_ = mpPlayId_;
         onBuilt();
         return result;
       }
@@ -468,14 +468,14 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify other) {
         if (other == emu.grasscutter.net.proto.MpPlayOwnerInviteNotifyOuterClass.MpPlayOwnerInviteNotify.getDefaultInstance()) return this;
+        if (other.getMpPlayId() != 0) {
+          setMpPlayId(other.getMpPlayId());
+        }
         if (other.getCd() != 0) {
           setCd(other.getCd());
         }
         if (other.getIsRemainReward() != false) {
           setIsRemainReward(other.getIsRemainReward());
-        }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,9 +506,40 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
         return this;
       }
 
+      private int mpPlayId_ ;
+      /**
+       * <code>uint32 mp_play_id = 2;</code>
+       * @return The mpPlayId.
+       */
+      @java.lang.Override
+      public int getMpPlayId() {
+        return mpPlayId_;
+      }
+      /**
+       * <code>uint32 mp_play_id = 2;</code>
+       * @param value The mpPlayId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMpPlayId(int value) {
+        
+        mpPlayId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mp_play_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMpPlayId() {
+        
+        mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int cd_ ;
       /**
-       * <code>uint32 cd = 13;</code>
+       * <code>uint32 cd = 7;</code>
        * @return The cd.
        */
       @java.lang.Override
@@ -516,7 +547,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
         return cd_;
       }
       /**
-       * <code>uint32 cd = 13;</code>
+       * <code>uint32 cd = 7;</code>
        * @param value The cd to set.
        * @return This builder for chaining.
        */
@@ -527,7 +558,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd = 13;</code>
+       * <code>uint32 cd = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCd() {
@@ -539,7 +570,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
 
       private boolean isRemainReward_ ;
       /**
-       * <code>bool is_remain_reward = 3;</code>
+       * <code>bool is_remain_reward = 14;</code>
        * @return The isRemainReward.
        */
       @java.lang.Override
@@ -547,7 +578,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
         return isRemainReward_;
       }
       /**
-       * <code>bool is_remain_reward = 3;</code>
+       * <code>bool is_remain_reward = 14;</code>
        * @param value The isRemainReward to set.
        * @return This builder for chaining.
        */
@@ -558,43 +589,12 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_remain_reward = 3;</code>
+       * <code>bool is_remain_reward = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsRemainReward() {
         
         isRemainReward_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 8;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 8;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
         onChanged();
         return this;
       }
@@ -666,8 +666,8 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035MpPlayOwnerInviteNotify.proto\"S\n\027MpPla" +
-      "yOwnerInviteNotify\022\n\n\002cd\030\r \001(\r\022\030\n\020is_rem" +
-      "ain_reward\030\003 \001(\010\022\022\n\nmp_play_id\030\010 \001(\rB\033\n\031" +
+      "yOwnerInviteNotify\022\022\n\nmp_play_id\030\002 \001(\r\022\n" +
+      "\n\002cd\030\007 \001(\r\022\030\n\020is_remain_reward\030\016 \001(\010B\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +679,7 @@ public final class MpPlayOwnerInviteNotifyOuterClass {
     internal_static_MpPlayOwnerInviteNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpPlayOwnerInviteNotify_descriptor,
-        new java.lang.String[] { "Cd", "IsRemainReward", "MpPlayId", });
+        new java.lang.String[] { "MpPlayId", "Cd", "IsRemainReward", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

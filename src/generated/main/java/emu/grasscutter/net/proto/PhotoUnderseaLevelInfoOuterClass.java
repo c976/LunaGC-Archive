@@ -19,16 +19,16 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>bool is_open = 8;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
      * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
-
-    /**
-     * <code>bool is_open = 11;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
   }
   /**
    * Protobuf type {@code PhotoUnderseaLevelInfo}
@@ -75,7 +75,7 @@ public final class PhotoUnderseaLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 64: {
 
               isOpen_ = input.readBool();
               break;
@@ -117,6 +117,17 @@ public final class PhotoUnderseaLevelInfoOuterClass {
               emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo.class, emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo.Builder.class);
     }
 
+    public static final int IS_OPEN_FIELD_NUMBER = 8;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 8;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
     public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
@@ -126,17 +137,6 @@ public final class PhotoUnderseaLevelInfoOuterClass {
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 11;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,7 +154,7 @@ public final class PhotoUnderseaLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+        output.writeBool(8, isOpen_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(15, levelId_);
@@ -170,7 +170,7 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeBoolSize(8, isOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -191,10 +191,10 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo other = (emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +206,11 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +344,9 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         isOpen_ = false;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -374,8 +374,8 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo buildPartial() {
         emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo result = new emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo(this);
-        result.levelId_ = levelId_;
         result.isOpen_ = isOpen_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -424,11 +424,11 @@ public final class PhotoUnderseaLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo other) {
         if (other == emu.grasscutter.net.proto.PhotoUnderseaLevelInfoOuterClass.PhotoUnderseaLevelInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,6 +459,37 @@ public final class PhotoUnderseaLevelInfoOuterClass {
         return this;
       }
 
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 8;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 8;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
       private int levelId_ ;
       /**
        * <code>uint32 level_id = 15;</code>
@@ -486,37 +517,6 @@ public final class PhotoUnderseaLevelInfoOuterClass {
       public Builder clearLevelId() {
         
         levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 11;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 11;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
         onChanged();
         return this;
       }
@@ -588,8 +588,8 @@ public final class PhotoUnderseaLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PhotoUnderseaLevelInfo.proto\";\n\026PhotoU" +
-      "nderseaLevelInfo\022\020\n\010level_id\030\017 \001(\r\022\017\n\007is" +
-      "_open\030\013 \001(\010B\033\n\031emu.grasscutter.net.proto" +
+      "nderseaLevelInfo\022\017\n\007is_open\030\010 \001(\010\022\020\n\010lev" +
+      "el_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -601,7 +601,7 @@ public final class PhotoUnderseaLevelInfoOuterClass {
     internal_static_PhotoUnderseaLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PhotoUnderseaLevelInfo_descriptor,
-        new java.lang.String[] { "LevelId", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,6 +19,30 @@ public final class SumoSaveTeamRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 activity_id = 1;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
+
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 difficulty_id = 5;</code>
+     * @return The difficultyId.
+     */
+    int getDifficultyId();
+
+    /**
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
      * <code>repeated .SumoTeamData team_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> 
@@ -41,35 +65,10 @@ public final class SumoSaveTeamRspOuterClass {
      */
     emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 difficulty_id = 3;</code>
-     * @return The difficultyId.
-     */
-    int getDifficultyId();
-
-    /**
-     * <code>uint32 activity_id = 5;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
-     */
-    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 24118
-   * Obf: ELNBOHDIACJ
+   * CmdId: 9101
    * </pre>
    *
    * Protobuf type {@code SumoSaveTeamRsp}
@@ -118,22 +117,22 @@ public final class SumoSaveTeamRspOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              activityId_ = input.readUInt32();
+              break;
+            }
             case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 40: {
 
               difficultyId_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 56: {
 
               stageId_ = input.readUInt32();
               break;
@@ -182,6 +181,50 @@ public final class SumoSaveTeamRspOuterClass {
               emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp.class, emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp.Builder.class);
     }
 
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 1;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 2;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 5;
+    private int difficultyId_;
+    /**
+     * <code>uint32 difficulty_id = 5;</code>
+     * @return The difficultyId.
+     */
+    @java.lang.Override
+    public int getDifficultyId() {
+      return difficultyId_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
     public static final int TEAM_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_;
     /**
@@ -222,50 +265,6 @@ public final class SumoSaveTeamRspOuterClass {
       return teamList_.get(index);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 3;
-    private int difficultyId_;
-    /**
-     * <code>uint32 difficulty_id = 3;</code>
-     * @return The difficultyId.
-     */
-    @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 5;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 5;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 6;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -280,17 +279,17 @@ public final class SumoSaveTeamRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (activityId_ != 0) {
+        output.writeUInt32(1, activityId_);
+      }
       if (retcode_ != 0) {
         output.writeInt32(2, retcode_);
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(3, difficultyId_);
-      }
-      if (activityId_ != 0) {
-        output.writeUInt32(5, activityId_);
+        output.writeUInt32(5, difficultyId_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(6, stageId_);
+        output.writeUInt32(7, stageId_);
       }
       for (int i = 0; i < teamList_.size(); i++) {
         output.writeMessage(12, teamList_.get(i));
@@ -304,21 +303,21 @@ public final class SumoSaveTeamRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, activityId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, retcode_);
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, difficultyId_);
-      }
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, activityId_);
+          .computeUInt32Size(5, difficultyId_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, stageId_);
+          .computeUInt32Size(7, stageId_);
       }
       for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -339,16 +338,16 @@ public final class SumoSaveTeamRspOuterClass {
       }
       emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp other = (emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp) obj;
 
-      if (!getTeamListList()
-          .equals(other.getTeamListList())) return false;
-      if (getDifficultyId()
-          != other.getDifficultyId()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getDifficultyId()
+          != other.getDifficultyId()) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (!getTeamListList()
+          .equals(other.getTeamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -360,18 +359,18 @@ public final class SumoSaveTeamRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getTeamListCount() > 0) {
-        hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTeamListList().hashCode();
-      }
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      if (getTeamListCount() > 0) {
+        hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTeamListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -469,8 +468,7 @@ public final class SumoSaveTeamRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24118
-     * Obf: ELNBOHDIACJ
+     * CmdId: 9101
      * </pre>
      *
      * Protobuf type {@code SumoSaveTeamRsp}
@@ -511,20 +509,20 @@ public final class SumoSaveTeamRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        activityId_ = 0;
+
+        retcode_ = 0;
+
+        difficultyId_ = 0;
+
+        stageId_ = 0;
+
         if (teamListBuilder_ == null) {
           teamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           teamListBuilder_.clear();
         }
-        difficultyId_ = 0;
-
-        activityId_ = 0;
-
-        retcode_ = 0;
-
-        stageId_ = 0;
-
         return this;
       }
 
@@ -552,6 +550,10 @@ public final class SumoSaveTeamRspOuterClass {
       public emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp buildPartial() {
         emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp result = new emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp(this);
         int from_bitField0_ = bitField0_;
+        result.activityId_ = activityId_;
+        result.retcode_ = retcode_;
+        result.difficultyId_ = difficultyId_;
+        result.stageId_ = stageId_;
         if (teamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             teamList_ = java.util.Collections.unmodifiableList(teamList_);
@@ -561,10 +563,6 @@ public final class SumoSaveTeamRspOuterClass {
         } else {
           result.teamList_ = teamListBuilder_.build();
         }
-        result.difficultyId_ = difficultyId_;
-        result.activityId_ = activityId_;
-        result.retcode_ = retcode_;
-        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -613,6 +611,18 @@ public final class SumoSaveTeamRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp other) {
         if (other == emu.grasscutter.net.proto.SumoSaveTeamRspOuterClass.SumoSaveTeamRsp.getDefaultInstance()) return this;
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
         if (teamListBuilder_ == null) {
           if (!other.teamList_.isEmpty()) {
             if (teamList_.isEmpty()) {
@@ -638,18 +648,6 @@ public final class SumoSaveTeamRspOuterClass {
               teamListBuilder_.addAllMessages(other.teamList_);
             }
           }
-        }
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
-        }
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -680,6 +678,130 @@ public final class SumoSaveTeamRspOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 1;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 1;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficultyId_ ;
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @return The difficultyId.
+       */
+      @java.lang.Override
+      public int getDifficultyId() {
+        return difficultyId_;
+      }
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @param value The difficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficultyId(int value) {
+        
+        difficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficultyId() {
+        
+        difficultyId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 7;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 7;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_ =
         java.util.Collections.emptyList();
@@ -920,130 +1042,6 @@ public final class SumoSaveTeamRspOuterClass {
         }
         return teamListBuilder_;
       }
-
-      private int difficultyId_ ;
-      /**
-       * <code>uint32 difficulty_id = 3;</code>
-       * @return The difficultyId.
-       */
-      @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
-      }
-      /**
-       * <code>uint32 difficulty_id = 3;</code>
-       * @param value The difficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyId(int value) {
-        
-        difficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyId() {
-        
-        difficultyId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 5;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 5;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1112,10 +1110,10 @@ public final class SumoSaveTeamRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025SumoSaveTeamRsp.proto\032\022SumoTeamData.pr" +
-      "oto\"\202\001\n\017SumoSaveTeamRsp\022 \n\tteam_list\030\014 \003" +
-      "(\0132\r.SumoTeamData\022\025\n\rdifficulty_id\030\003 \001(\r" +
-      "\022\023\n\013activity_id\030\005 \001(\r\022\017\n\007retcode\030\002 \001(\005\022\020" +
-      "\n\010stage_id\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
+      "oto\"\202\001\n\017SumoSaveTeamRsp\022\023\n\013activity_id\030\001" +
+      " \001(\r\022\017\n\007retcode\030\002 \001(\005\022\025\n\rdifficulty_id\030\005" +
+      " \001(\r\022\020\n\010stage_id\030\007 \001(\r\022 \n\tteam_list\030\014 \003(" +
+      "\0132\r.SumoTeamDataB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1128,7 +1126,7 @@ public final class SumoSaveTeamRspOuterClass {
     internal_static_SumoSaveTeamRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoSaveTeamRsp_descriptor,
-        new java.lang.String[] { "TeamList", "DifficultyId", "ActivityId", "Retcode", "StageId", });
+        new java.lang.String[] { "ActivityId", "Retcode", "DifficultyId", "StageId", "TeamList", });
     emu.grasscutter.net.proto.SumoTeamDataOuterClass.getDescriptor();
   }
 

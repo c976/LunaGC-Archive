@@ -19,40 +19,60 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 1;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
-    int getScore();
-
-    /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> 
+    java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> 
         getBuffInfoListList();
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
-    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index);
+    emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC getBuffInfoList(int index);
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     int getBuffInfoListCount();
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder> 
         getBuffInfoListOrBuilderList();
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
-    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
+    emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder getBuffInfoListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 7;</code>
+     * @return The score.
+     */
+    int getScore();
   }
   /**
-   * <pre>
-   * Obf: EFDDBLJDBKF
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryInstaleSprayInfo}
    */
   public static final class SceneGalleryInstaleSprayInfo extends
@@ -99,18 +119,18 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 18: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo>();
+                buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC>();
                 mutable_bitField0_ |= 0x00000001;
               }
               buffInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -148,55 +168,79 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo.class, emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 1;
-    private int score_;
+    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> buffInfoList_;
     /**
-     * <code>uint32 score = 1;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int BUFF_INFO_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> buffInfoList_;
-    /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> getBuffInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> getBuffInfoListList() {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder> 
         getBuffInfoListOrBuilderList() {
       return buffInfoList_;
     }
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     @java.lang.Override
     public int getBuffInfoListCount() {
       return buffInfoList_.size();
     }
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index) {
+    public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC getBuffInfoList(int index) {
       return buffInfoList_.get(index);
     }
     /**
-     * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
+    public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder getBuffInfoListOrBuilder(
         int index) {
       return buffInfoList_.get(index);
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 7;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 7;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -214,10 +258,10 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(1, score_);
+        output.writeUInt32(7, score_);
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
-        output.writeMessage(2, buffInfoList_.get(i));
+        output.writeMessage(15, buffInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -230,11 +274,11 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, score_);
+          .computeUInt32Size(7, score_);
       }
       for (int i = 0; i < buffInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, buffInfoList_.get(i));
+          .computeMessageSize(15, buffInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,10 +295,10 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo other = (emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
       if (!getBuffInfoListList()
           .equals(other.getBuffInfoListList())) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -266,12 +310,12 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
       if (getBuffInfoListCount() > 0) {
         hash = (37 * hash) + BUFF_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuffInfoListList().hashCode();
       }
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -368,10 +412,6 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EFDDBLJDBKF
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryInstaleSprayInfo}
      */
     public static final class Builder extends
@@ -410,14 +450,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
-
         if (buffInfoListBuilder_ == null) {
           buffInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           buffInfoListBuilder_.clear();
         }
+        score_ = 0;
+
         return this;
       }
 
@@ -445,7 +485,6 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo result = new emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo(this);
         int from_bitField0_ = bitField0_;
-        result.score_ = score_;
         if (buffInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             buffInfoList_ = java.util.Collections.unmodifiableList(buffInfoList_);
@@ -455,6 +494,7 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         } else {
           result.buffInfoList_ = buffInfoListBuilder_.build();
         }
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -503,9 +543,6 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryInstaleSprayInfoOuterClass.SceneGalleryInstaleSprayInfo.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
         if (buffInfoListBuilder_ == null) {
           if (!other.buffInfoList_.isEmpty()) {
             if (buffInfoList_.isEmpty()) {
@@ -531,6 +568,9 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
               buffInfoListBuilder_.addAllMessages(other.buffInfoList_);
             }
           }
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -562,53 +602,26 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       }
       private int bitField0_;
 
-      private int score_ ;
-      /**
-       * <code>uint32 score = 1;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 1;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> buffInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> buffInfoList_ =
         java.util.Collections.emptyList();
       private void ensureBuffInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo>(buffInfoList_);
+          buffInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC>(buffInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> buffInfoListBuilder_;
+          emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder> buffInfoListBuilder_;
 
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> getBuffInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> getBuffInfoListList() {
         if (buffInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(buffInfoList_);
         } else {
@@ -616,7 +629,11 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public int getBuffInfoListCount() {
         if (buffInfoListBuilder_ == null) {
@@ -626,9 +643,13 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo getBuffInfoList(int index) {
+      public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC getBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
           return buffInfoList_.get(index);
         } else {
@@ -636,10 +657,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder setBuffInfoList(
-          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+          int index, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC value) {
         if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -653,10 +678,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder setBuffInfoList(
-          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder builderForValue) {
         if (buffInfoListBuilder_ == null) {
           ensureBuffInfoListIsMutable();
           buffInfoList_.set(index, builderForValue.build());
@@ -667,9 +696,13 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public Builder addBuffInfoList(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+      public Builder addBuffInfoList(emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC value) {
         if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -683,10 +716,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder addBuffInfoList(
-          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo value) {
+          int index, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC value) {
         if (buffInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -700,10 +737,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder addBuffInfoList(
-          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder builderForValue) {
         if (buffInfoListBuilder_ == null) {
           ensureBuffInfoListIsMutable();
           buffInfoList_.add(builderForValue.build());
@@ -714,10 +755,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder addBuffInfoList(
-          int index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder builderForValue) {
         if (buffInfoListBuilder_ == null) {
           ensureBuffInfoListIsMutable();
           buffInfoList_.add(index, builderForValue.build());
@@ -728,10 +773,14 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder addAllBuffInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC> values) {
         if (buffInfoListBuilder_ == null) {
           ensureBuffInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -743,7 +792,11 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder clearBuffInfoList() {
         if (buffInfoListBuilder_ == null) {
@@ -756,7 +809,11 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
       public Builder removeBuffInfoList(int index) {
         if (buffInfoListBuilder_ == null) {
@@ -769,16 +826,24 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder getBuffInfoListBuilder(
+      public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder getBuffInfoListBuilder(
           int index) {
         return getBuffInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder getBuffInfoListOrBuilder(
+      public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder getBuffInfoListOrBuilder(
           int index) {
         if (buffInfoListBuilder_ == null) {
           return buffInfoList_.get(index);  } else {
@@ -786,9 +851,13 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder> 
            getBuffInfoListOrBuilderList() {
         if (buffInfoListBuilder_ != null) {
           return buffInfoListBuilder_.getMessageOrBuilderList();
@@ -797,33 +866,45 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder addBuffInfoListBuilder() {
+      public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder addBuffInfoListBuilder() {
         return getBuffInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder addBuffInfoListBuilder(
+      public emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder addBuffInfoListBuilder(
           int index) {
         return getBuffInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneGalleryInstableSprayBuffInfo buff_info_list = 2;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .GNJDPIOBPDC buff_info_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder> 
            getBuffInfoListBuilderList() {
         return getBuffInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder> 
+          emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder> 
           getBuffInfoListFieldBuilder() {
         if (buffInfoListBuilder_ == null) {
           buffInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfoOrBuilder>(
+              emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDC.Builder, emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.GNJDPIOBPDCOrBuilder>(
                   buffInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -831,6 +912,49 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
           buffInfoList_ = null;
         }
         return buffInfoListBuilder_;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 7;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 7;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -899,25 +1023,24 @@ public final class SceneGalleryInstaleSprayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"SceneGalleryInstaleSprayInfo.proto\032\'Sc" +
-      "eneGalleryInstableSprayBuffInfo.proto\"i\n" +
-      "\034SceneGalleryInstaleSprayInfo\022\r\n\005score\030\001" +
-      " \001(\r\022:\n\016buff_info_list\030\002 \003(\0132\".SceneGall" +
-      "eryInstableSprayBuffInfoB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\"SceneGalleryInstaleSprayInfo.proto\032\021GN" +
+      "JDPIOBPDC.proto\"S\n\034SceneGalleryInstaleSp" +
+      "rayInfo\022$\n\016buff_info_list\030\017 \003(\0132\014.GNJDPI" +
+      "OBPDC\022\r\n\005score\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.getDescriptor(),
         });
     internal_static_SceneGalleryInstaleSprayInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneGalleryInstaleSprayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstaleSprayInfo_descriptor,
-        new java.lang.String[] { "Score", "BuffInfoList", });
-    emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "BuffInfoList", "Score", });
+    emu.grasscutter.net.proto.GNJDPIOBPDCOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

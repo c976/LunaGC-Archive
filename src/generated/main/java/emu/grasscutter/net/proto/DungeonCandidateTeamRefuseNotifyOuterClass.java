@@ -19,15 +19,14 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 8;</code>
+     * <code>uint32 player_uid = 12;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
   }
   /**
    * <pre>
-   * CmdId: 20800
-   * Obf: GCCLANHLJPH
+   * CmdId: 25898
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamRefuseNotify}
@@ -74,7 +73,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 96: {
 
               playerUid_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamRefuseNotifyOuterClass.DungeonCandidateTeamRefuseNotify.class, emu.grasscutter.net.proto.DungeonCandidateTeamRefuseNotifyOuterClass.DungeonCandidateTeamRefuseNotify.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 8;
+    public static final int PLAYER_UID_FIELD_NUMBER = 12;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 8;</code>
+     * <code>uint32 player_uid = 12;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerUid_ != 0) {
-        output.writeUInt32(8, playerUid_);
+        output.writeUInt32(12, playerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
       size = 0;
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playerUid_);
+          .computeUInt32Size(12, playerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20800
-     * Obf: GCCLANHLJPH
+     * CmdId: 25898
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamRefuseNotify}
@@ -431,7 +429,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 12;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 12;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -528,7 +526,7 @@ public final class DungeonCandidateTeamRefuseNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n&DungeonCandidateTeamRefuseNotify.proto" +
       "\"6\n DungeonCandidateTeamRefuseNotify\022\022\n\n" +
-      "player_uid\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
+      "player_uid\030\014 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

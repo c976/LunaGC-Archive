@@ -19,32 +19,47 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cd_group = 9;</code>
-     * @return The cdGroup.
-     */
-    int getCdGroup();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
      * @return The enum numeric value on the wire for extraCdType.
      */
     int getExtraCdTypeValue();
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
      * @return The extraCdType.
      */
-    emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType getExtraCdType();
+    emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 ABMKHEHPKGP = 2;</code>
+     * @return The aBMKHEHPKGP.
+     */
+    int getABMKHEHPKGP();
   }
   /**
    * <pre>
-   * CmdId: 24037
-   * Obf: MNBKHKHMIBN
+   * CmdId: 20297
    * </pre>
    *
    * Protobuf type {@code WidgetUpdateExtraCDReq}
@@ -92,7 +107,12 @@ public final class WidgetUpdateExtraCDReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
+
+              aBMKHEHPKGP_ = input.readUInt32();
+              break;
+            }
+            case 24: {
               int rawValue = input.readEnum();
 
               extraCdType_ = rawValue;
@@ -101,11 +121,6 @@ public final class WidgetUpdateExtraCDReqOuterClass {
             case 64: {
 
               materialId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              cdGroup_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,20 +155,13 @@ public final class WidgetUpdateExtraCDReqOuterClass {
               emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq.class, emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq.Builder.class);
     }
 
-    public static final int CD_GROUP_FIELD_NUMBER = 9;
-    private int cdGroup_;
-    /**
-     * <code>uint32 cd_group = 9;</code>
-     * @return The cdGroup.
-     */
-    @java.lang.Override
-    public int getCdGroup() {
-      return cdGroup_;
-    }
-
     public static final int MATERIAL_ID_FIELD_NUMBER = 8;
     private int materialId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
@@ -162,23 +170,46 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       return materialId_;
     }
 
-    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 4;
+    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 3;
     private int extraCdType_;
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
      * @return The enum numeric value on the wire for extraCdType.
      */
     @java.lang.Override public int getExtraCdTypeValue() {
       return extraCdType_;
     }
     /**
-     * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
      * @return The extraCdType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType getExtraCdType() {
+    @java.lang.Override public emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType result = emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.valueOf(extraCdType_);
-      return result == null ? emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE result = emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.valueOf(extraCdType_);
+      return result == null ? emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.UNRECOGNIZED : result;
+    }
+
+    public static final int ABMKHEHPKGP_FIELD_NUMBER = 2;
+    private int aBMKHEHPKGP_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 ABMKHEHPKGP = 2;</code>
+     * @return The aBMKHEHPKGP.
+     */
+    @java.lang.Override
+    public int getABMKHEHPKGP() {
+      return aBMKHEHPKGP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -195,14 +226,14 @@ public final class WidgetUpdateExtraCDReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (extraCdType_ != emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
-        output.writeEnum(4, extraCdType_);
+      if (aBMKHEHPKGP_ != 0) {
+        output.writeUInt32(2, aBMKHEHPKGP_);
+      }
+      if (extraCdType_ != emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.NKLNPBFLODH_NONE.getNumber()) {
+        output.writeEnum(3, extraCdType_);
       }
       if (materialId_ != 0) {
         output.writeUInt32(8, materialId_);
-      }
-      if (cdGroup_ != 0) {
-        output.writeUInt32(9, cdGroup_);
       }
       unknownFields.writeTo(output);
     }
@@ -213,17 +244,17 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (extraCdType_ != emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
+      if (aBMKHEHPKGP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, extraCdType_);
+          .computeUInt32Size(2, aBMKHEHPKGP_);
+      }
+      if (extraCdType_ != emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.NKLNPBFLODH_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, extraCdType_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, materialId_);
-      }
-      if (cdGroup_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cdGroup_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,11 +271,11 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       }
       emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq other = (emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq) obj;
 
-      if (getCdGroup()
-          != other.getCdGroup()) return false;
       if (getMaterialId()
           != other.getMaterialId()) return false;
       if (extraCdType_ != other.extraCdType_) return false;
+      if (getABMKHEHPKGP()
+          != other.getABMKHEHPKGP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -256,12 +287,12 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CD_GROUP_FIELD_NUMBER;
-      hash = (53 * hash) + getCdGroup();
       hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMaterialId();
       hash = (37 * hash) + EXTRA_CD_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + extraCdType_;
+      hash = (37 * hash) + ABMKHEHPKGP_FIELD_NUMBER;
+      hash = (53 * hash) + getABMKHEHPKGP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,8 +390,7 @@ public final class WidgetUpdateExtraCDReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24037
-     * Obf: MNBKHKHMIBN
+     * CmdId: 20297
      * </pre>
      *
      * Protobuf type {@code WidgetUpdateExtraCDReq}
@@ -400,11 +430,11 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cdGroup_ = 0;
-
         materialId_ = 0;
 
         extraCdType_ = 0;
+
+        aBMKHEHPKGP_ = 0;
 
         return this;
       }
@@ -432,9 +462,9 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq buildPartial() {
         emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq result = new emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq(this);
-        result.cdGroup_ = cdGroup_;
         result.materialId_ = materialId_;
         result.extraCdType_ = extraCdType_;
+        result.aBMKHEHPKGP_ = aBMKHEHPKGP_;
         onBuilt();
         return result;
       }
@@ -483,14 +513,14 @@ public final class WidgetUpdateExtraCDReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq other) {
         if (other == emu.grasscutter.net.proto.WidgetUpdateExtraCDReqOuterClass.WidgetUpdateExtraCDReq.getDefaultInstance()) return this;
-        if (other.getCdGroup() != 0) {
-          setCdGroup(other.getCdGroup());
-        }
         if (other.getMaterialId() != 0) {
           setMaterialId(other.getMaterialId());
         }
         if (other.extraCdType_ != 0) {
           setExtraCdTypeValue(other.getExtraCdTypeValue());
+        }
+        if (other.getABMKHEHPKGP() != 0) {
+          setABMKHEHPKGP(other.getABMKHEHPKGP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -521,39 +551,12 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
 
-      private int cdGroup_ ;
-      /**
-       * <code>uint32 cd_group = 9;</code>
-       * @return The cdGroup.
-       */
-      @java.lang.Override
-      public int getCdGroup() {
-        return cdGroup_;
-      }
-      /**
-       * <code>uint32 cd_group = 9;</code>
-       * @param value The cdGroup to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCdGroup(int value) {
-        
-        cdGroup_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cd_group = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCdGroup() {
-        
-        cdGroup_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int materialId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 material_id = 8;</code>
        * @return The materialId.
        */
@@ -562,6 +565,10 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return materialId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 material_id = 8;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
@@ -573,6 +580,10 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 material_id = 8;</code>
        * @return This builder for chaining.
        */
@@ -585,14 +596,22 @@ public final class WidgetUpdateExtraCDReqOuterClass {
 
       private int extraCdType_ = 0;
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
        * @return The enum numeric value on the wire for extraCdType.
        */
       @java.lang.Override public int getExtraCdTypeValue() {
         return extraCdType_;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
        * @param value The enum numeric value on the wire for extraCdType to set.
        * @return This builder for chaining.
        */
@@ -603,21 +622,29 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
        * @return The extraCdType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType getExtraCdType() {
+      public emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType result = emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.valueOf(extraCdType_);
-        return result == null ? emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE result = emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.valueOf(extraCdType_);
+        return result == null ? emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.UNRECOGNIZED : result;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
        * @param value The extraCdType to set.
        * @return This builder for chaining.
        */
-      public Builder setExtraCdType(emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.WidgetExtraCdType value) {
+      public Builder setExtraCdType(emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -627,12 +654,59 @@ public final class WidgetUpdateExtraCDReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetExtraCdType extra_cd_type = 4;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraCdType() {
         
         extraCdType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aBMKHEHPKGP_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 ABMKHEHPKGP = 2;</code>
+       * @return The aBMKHEHPKGP.
+       */
+      @java.lang.Override
+      public int getABMKHEHPKGP() {
+        return aBMKHEHPKGP_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 ABMKHEHPKGP = 2;</code>
+       * @param value The aBMKHEHPKGP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setABMKHEHPKGP(int value) {
+        
+        aBMKHEHPKGP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 ABMKHEHPKGP = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearABMKHEHPKGP() {
+        
+        aBMKHEHPKGP_ = 0;
         onChanged();
         return this;
       }
@@ -703,24 +777,25 @@ public final class WidgetUpdateExtraCDReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034WidgetUpdateExtraCDReq.proto\032\027WidgetEx" +
-      "traCdType.proto\"j\n\026WidgetUpdateExtraCDRe" +
-      "q\022\020\n\010cd_group\030\t \001(\r\022\023\n\013material_id\030\010 \001(\r" +
-      "\022)\n\rextra_cd_type\030\004 \001(\0162\022.WidgetExtraCdT" +
-      "ypeB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\034WidgetUpdateExtraCDReq.proto\032\032WIDGET_E" +
+      "XTRA_CD_TYPE.proto\"p\n\026WidgetUpdateExtraC" +
+      "DReq\022\023\n\013material_id\030\010 \001(\r\022,\n\rextra_cd_ty" +
+      "pe\030\003 \001(\0162\025.WIDGET_EXTRA_CD_TYPE\022\023\n\013ABMKH" +
+      "EHPKGP\030\002 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.getDescriptor(),
         });
     internal_static_WidgetUpdateExtraCDReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_WidgetUpdateExtraCDReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetUpdateExtraCDReq_descriptor,
-        new java.lang.String[] { "CdGroup", "MaterialId", "ExtraCdType", });
-    emu.grasscutter.net.proto.WidgetExtraCdTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "MaterialId", "ExtraCdType", "ABMKHEHPKGP", });
+    emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

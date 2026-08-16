@@ -19,40 +19,36 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
-        getCostMapList();
+        getCostListList();
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index);
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostList(int index);
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
-    int getCostMapCount();
+    int getCostListCount();
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getCostMapOrBuilderList();
+        getCostListOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 card_guid = 13;</code>
+     * <code>uint32 card_guid = 4;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
   }
   /**
-   * <pre>
-   * Obf: CDKNMFIMBMH
-   * </pre>
-   *
    * Protobuf type {@code GCGSelectOnStageCostInfo}
    */
   public static final class GCGSelectOnStageCostInfo extends
@@ -65,7 +61,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       super(builder);
     }
     private GCGSelectOnStageCostInfo() {
-      costMap_ = java.util.Collections.emptyList();
+      costList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -99,18 +95,18 @@ public final class GCGSelectOnStageCostInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                costMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              costMap_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
-              break;
-            }
-            case 104: {
+            case 32: {
 
               cardGuid_ = input.readUInt32();
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                costList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              costList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -129,7 +125,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          costMap_ = java.util.Collections.unmodifiableList(costMap_);
+          costList_ = java.util.Collections.unmodifiableList(costList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -148,50 +144,50 @@ public final class GCGSelectOnStageCostInfoOuterClass {
               emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.class, emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.Builder.class);
     }
 
-    public static final int COST_MAP_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_;
+    public static final int COST_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costList_;
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
-      return costMap_;
+    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostListList() {
+      return costList_;
     }
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getCostMapOrBuilderList() {
-      return costMap_;
+        getCostListOrBuilderList() {
+      return costList_;
     }
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     @java.lang.Override
-    public int getCostMapCount() {
-      return costMap_.size();
+    public int getCostListCount() {
+      return costList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
-      return costMap_.get(index);
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostList(int index) {
+      return costList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair cost_map = 10;</code>
+     * <code>repeated .Uint32Pair cost_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostListOrBuilder(
         int index) {
-      return costMap_.get(index);
+      return costList_.get(index);
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 13;
+    public static final int CARD_GUID_FIELD_NUMBER = 4;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 13;</code>
+     * <code>uint32 card_guid = 4;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -213,11 +209,11 @@ public final class GCGSelectOnStageCostInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < costMap_.size(); i++) {
-        output.writeMessage(10, costMap_.get(i));
-      }
       if (cardGuid_ != 0) {
-        output.writeUInt32(13, cardGuid_);
+        output.writeUInt32(4, cardGuid_);
+      }
+      for (int i = 0; i < costList_.size(); i++) {
+        output.writeMessage(9, costList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -228,13 +224,13 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < costMap_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, costMap_.get(i));
-      }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cardGuid_);
+          .computeUInt32Size(4, cardGuid_);
+      }
+      for (int i = 0; i < costList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, costList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,8 +247,8 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo other = (emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo) obj;
 
-      if (!getCostMapList()
-          .equals(other.getCostMapList())) return false;
+      if (!getCostListList()
+          .equals(other.getCostListList())) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -266,9 +262,9 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCostMapCount() > 0) {
-        hash = (37 * hash) + COST_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + getCostMapList().hashCode();
+      if (getCostListCount() > 0) {
+        hash = (37 * hash) + COST_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCostListList().hashCode();
       }
       hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getCardGuid();
@@ -368,10 +364,6 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CDKNMFIMBMH
-     * </pre>
-     *
      * Protobuf type {@code GCGSelectOnStageCostInfo}
      */
     public static final class Builder extends
@@ -404,17 +396,17 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCostMapFieldBuilder();
+          getCostListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (costMapBuilder_ == null) {
-          costMap_ = java.util.Collections.emptyList();
+        if (costListBuilder_ == null) {
+          costList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          costMapBuilder_.clear();
+          costListBuilder_.clear();
         }
         cardGuid_ = 0;
 
@@ -445,14 +437,14 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       public emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo result = new emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo(this);
         int from_bitField0_ = bitField0_;
-        if (costMapBuilder_ == null) {
+        if (costListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            costMap_ = java.util.Collections.unmodifiableList(costMap_);
+            costList_ = java.util.Collections.unmodifiableList(costList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.costMap_ = costMap_;
+          result.costList_ = costList_;
         } else {
-          result.costMap_ = costMapBuilder_.build();
+          result.costList_ = costListBuilder_.build();
         }
         result.cardGuid_ = cardGuid_;
         onBuilt();
@@ -503,29 +495,29 @@ public final class GCGSelectOnStageCostInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSelectOnStageCostInfoOuterClass.GCGSelectOnStageCostInfo.getDefaultInstance()) return this;
-        if (costMapBuilder_ == null) {
-          if (!other.costMap_.isEmpty()) {
-            if (costMap_.isEmpty()) {
-              costMap_ = other.costMap_;
+        if (costListBuilder_ == null) {
+          if (!other.costList_.isEmpty()) {
+            if (costList_.isEmpty()) {
+              costList_ = other.costList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCostMapIsMutable();
-              costMap_.addAll(other.costMap_);
+              ensureCostListIsMutable();
+              costList_.addAll(other.costList_);
             }
             onChanged();
           }
         } else {
-          if (!other.costMap_.isEmpty()) {
-            if (costMapBuilder_.isEmpty()) {
-              costMapBuilder_.dispose();
-              costMapBuilder_ = null;
-              costMap_ = other.costMap_;
+          if (!other.costList_.isEmpty()) {
+            if (costListBuilder_.isEmpty()) {
+              costListBuilder_.dispose();
+              costListBuilder_ = null;
+              costList_ = other.costList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              costMapBuilder_ = 
+              costListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCostMapFieldBuilder() : null;
+                   getCostListFieldBuilder() : null;
             } else {
-              costMapBuilder_.addAllMessages(other.costMap_);
+              costListBuilder_.addAllMessages(other.costList_);
             }
           }
         }
@@ -562,249 +554,249 @@ public final class GCGSelectOnStageCostInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_ =
+      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costList_ =
         java.util.Collections.emptyList();
-      private void ensureCostMapIsMutable() {
+      private void ensureCostListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          costMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(costMap_);
+          costList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(costList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> costMapBuilder_;
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> costListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
-        if (costMapBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(costMap_);
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostListList() {
+        if (costListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(costList_);
         } else {
-          return costMapBuilder_.getMessageList();
+          return costListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public int getCostMapCount() {
-        if (costMapBuilder_ == null) {
-          return costMap_.size();
+      public int getCostListCount() {
+        if (costListBuilder_ == null) {
+          return costList_.size();
         } else {
-          return costMapBuilder_.getCount();
+          return costListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
-        if (costMapBuilder_ == null) {
-          return costMap_.get(index);
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostList(int index) {
+        if (costListBuilder_ == null) {
+          return costList_.get(index);
         } else {
-          return costMapBuilder_.getMessage(index);
+          return costListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder setCostMap(
+      public Builder setCostList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (costMapBuilder_ == null) {
+        if (costListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCostMapIsMutable();
-          costMap_.set(index, value);
+          ensureCostListIsMutable();
+          costList_.set(index, value);
           onChanged();
         } else {
-          costMapBuilder_.setMessage(index, value);
+          costListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder setCostMap(
+      public Builder setCostList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (costMapBuilder_ == null) {
-          ensureCostMapIsMutable();
-          costMap_.set(index, builderForValue.build());
+        if (costListBuilder_ == null) {
+          ensureCostListIsMutable();
+          costList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          costMapBuilder_.setMessage(index, builderForValue.build());
+          costListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder addCostMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (costMapBuilder_ == null) {
+      public Builder addCostList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (costListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCostMapIsMutable();
-          costMap_.add(value);
+          ensureCostListIsMutable();
+          costList_.add(value);
           onChanged();
         } else {
-          costMapBuilder_.addMessage(value);
+          costListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder addCostMap(
+      public Builder addCostList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (costMapBuilder_ == null) {
+        if (costListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCostMapIsMutable();
-          costMap_.add(index, value);
+          ensureCostListIsMutable();
+          costList_.add(index, value);
           onChanged();
         } else {
-          costMapBuilder_.addMessage(index, value);
+          costListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder addCostMap(
+      public Builder addCostList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (costMapBuilder_ == null) {
-          ensureCostMapIsMutable();
-          costMap_.add(builderForValue.build());
+        if (costListBuilder_ == null) {
+          ensureCostListIsMutable();
+          costList_.add(builderForValue.build());
           onChanged();
         } else {
-          costMapBuilder_.addMessage(builderForValue.build());
+          costListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder addCostMap(
+      public Builder addCostList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (costMapBuilder_ == null) {
-          ensureCostMapIsMutable();
-          costMap_.add(index, builderForValue.build());
+        if (costListBuilder_ == null) {
+          ensureCostListIsMutable();
+          costList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          costMapBuilder_.addMessage(index, builderForValue.build());
+          costListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder addAllCostMap(
+      public Builder addAllCostList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
-        if (costMapBuilder_ == null) {
-          ensureCostMapIsMutable();
+        if (costListBuilder_ == null) {
+          ensureCostListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, costMap_);
+              values, costList_);
           onChanged();
         } else {
-          costMapBuilder_.addAllMessages(values);
+          costListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder clearCostMap() {
-        if (costMapBuilder_ == null) {
-          costMap_ = java.util.Collections.emptyList();
+      public Builder clearCostList() {
+        if (costListBuilder_ == null) {
+          costList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          costMapBuilder_.clear();
+          costListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public Builder removeCostMap(int index) {
-        if (costMapBuilder_ == null) {
-          ensureCostMapIsMutable();
-          costMap_.remove(index);
+      public Builder removeCostList(int index) {
+        if (costListBuilder_ == null) {
+          ensureCostListIsMutable();
+          costList_.remove(index);
           onChanged();
         } else {
-          costMapBuilder_.remove(index);
+          costListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getCostMapBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getCostListBuilder(
           int index) {
-        return getCostMapFieldBuilder().getBuilder(index);
+        return getCostListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostListOrBuilder(
           int index) {
-        if (costMapBuilder_ == null) {
-          return costMap_.get(index);  } else {
-          return costMapBuilder_.getMessageOrBuilder(index);
+        if (costListBuilder_ == null) {
+          return costList_.get(index);  } else {
+          return costListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-           getCostMapOrBuilderList() {
-        if (costMapBuilder_ != null) {
-          return costMapBuilder_.getMessageOrBuilderList();
+           getCostListOrBuilderList() {
+        if (costListBuilder_ != null) {
+          return costListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(costMap_);
+          return java.util.Collections.unmodifiableList(costList_);
         }
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder() {
-        return getCostMapFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostListBuilder() {
+        return getCostListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostListBuilder(
           int index) {
-        return getCostMapFieldBuilder().addBuilder(
+        return getCostListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair cost_map = 10;</code>
+       * <code>repeated .Uint32Pair cost_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
-           getCostMapBuilderList() {
-        return getCostMapFieldBuilder().getBuilderList();
+           getCostListBuilderList() {
+        return getCostListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-          getCostMapFieldBuilder() {
-        if (costMapBuilder_ == null) {
-          costMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getCostListFieldBuilder() {
+        if (costListBuilder_ == null) {
+          costListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
-                  costMap_,
+                  costList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          costMap_ = null;
+          costList_ = null;
         }
-        return costMapBuilder_;
+        return costListBuilder_;
       }
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 13;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -812,7 +804,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 13;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -823,7 +815,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 13;</code>
+       * <code>uint32 card_guid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -900,10 +892,10 @@ public final class GCGSelectOnStageCostInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGSelectOnStageCostInfo.proto\032\020Uint32" +
-      "Pair.proto\"L\n\030GCGSelectOnStageCostInfo\022\035" +
-      "\n\010cost_map\030\n \003(\0132\013.Uint32Pair\022\021\n\tcard_gu" +
-      "id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "Pair.proto\"M\n\030GCGSelectOnStageCostInfo\022\036" +
+      "\n\tcost_list\030\t \003(\0132\013.Uint32Pair\022\021\n\tcard_g" +
+      "uid\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -915,7 +907,7 @@ public final class GCGSelectOnStageCostInfoOuterClass {
     internal_static_GCGSelectOnStageCostInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSelectOnStageCostInfo_descriptor,
-        new java.lang.String[] { "CostMap", "CardGuid", });
+        new java.lang.String[] { "CostList", "CardGuid", });
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 

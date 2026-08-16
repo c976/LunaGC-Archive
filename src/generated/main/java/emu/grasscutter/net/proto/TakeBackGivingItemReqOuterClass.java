@@ -19,15 +19,18 @@ public final class TakeBackGivingItemReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 giving_id = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 giving_id = 10;</code>
      * @return The givingId.
      */
     int getGivingId();
   }
   /**
    * <pre>
-   * CmdId: 21351
-   * Obf: PMIAFBEBJNF
+   * CmdId: 3979
    * </pre>
    *
    * Protobuf type {@code TakeBackGivingItemReq}
@@ -74,7 +77,7 @@ public final class TakeBackGivingItemReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 80: {
 
               givingId_ = input.readUInt32();
               break;
@@ -111,10 +114,14 @@ public final class TakeBackGivingItemReqOuterClass {
               emu.grasscutter.net.proto.TakeBackGivingItemReqOuterClass.TakeBackGivingItemReq.class, emu.grasscutter.net.proto.TakeBackGivingItemReqOuterClass.TakeBackGivingItemReq.Builder.class);
     }
 
-    public static final int GIVING_ID_FIELD_NUMBER = 6;
+    public static final int GIVING_ID_FIELD_NUMBER = 10;
     private int givingId_;
     /**
-     * <code>uint32 giving_id = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 giving_id = 10;</code>
      * @return The givingId.
      */
     @java.lang.Override
@@ -137,7 +144,7 @@ public final class TakeBackGivingItemReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (givingId_ != 0) {
-        output.writeUInt32(6, givingId_);
+        output.writeUInt32(10, givingId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +157,7 @@ public final class TakeBackGivingItemReqOuterClass {
       size = 0;
       if (givingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, givingId_);
+          .computeUInt32Size(10, givingId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +286,7 @@ public final class TakeBackGivingItemReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21351
-     * Obf: PMIAFBEBJNF
+     * CmdId: 3979
      * </pre>
      *
      * Protobuf type {@code TakeBackGivingItemReq}
@@ -431,7 +437,11 @@ public final class TakeBackGivingItemReqOuterClass {
 
       private int givingId_ ;
       /**
-       * <code>uint32 giving_id = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 10;</code>
        * @return The givingId.
        */
       @java.lang.Override
@@ -439,7 +449,11 @@ public final class TakeBackGivingItemReqOuterClass {
         return givingId_;
       }
       /**
-       * <code>uint32 giving_id = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 10;</code>
        * @param value The givingId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +464,11 @@ public final class TakeBackGivingItemReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 giving_id = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 giving_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGivingId() {
@@ -527,7 +545,7 @@ public final class TakeBackGivingItemReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033TakeBackGivingItemReq.proto\"*\n\025TakeBac" +
-      "kGivingItemReq\022\021\n\tgiving_id\030\006 \001(\rB\033\n\031emu" +
+      "kGivingItemReq\022\021\n\tgiving_id\030\n \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

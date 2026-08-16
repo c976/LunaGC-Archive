@@ -19,23 +19,22 @@ public final class GCGInviteBattleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GCKJBMKBJEF = 5;</code>
-     * @return The gCKJBMKBJEF.
-     */
-    int getGCKJBMKBJEF();
-
-    /**
-     * <code>uint32 confirm_end_time = 1;</code>
+     * <pre>
+     * CMD_ID = 20557
+     * </pre>
+     *
+     * <code>uint32 confirm_end_time = 8;</code>
      * @return The confirmEndTime.
      */
     int getConfirmEndTime();
+
+    /**
+     * <code>uint32 festival_mode_type = 15;</code>
+     * @return The festivalModeType.
+     */
+    int getFestivalModeType();
   }
   /**
-   * <pre>
-   * CmdId: 9258
-   * Obf: NLKPMJMGJHG
-   * </pre>
-   *
    * Protobuf type {@code GCGInviteBattleNotify}
    */
   public static final class GCGInviteBattleNotify extends
@@ -80,14 +79,14 @@ public final class GCGInviteBattleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               confirmEndTime_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 120: {
 
-              gCKJBMKBJEF_ = input.readUInt32();
+              festivalModeType_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +121,30 @@ public final class GCGInviteBattleNotifyOuterClass {
               emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify.class, emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify.Builder.class);
     }
 
-    public static final int GCKJBMKBJEF_FIELD_NUMBER = 5;
-    private int gCKJBMKBJEF_;
-    /**
-     * <code>uint32 GCKJBMKBJEF = 5;</code>
-     * @return The gCKJBMKBJEF.
-     */
-    @java.lang.Override
-    public int getGCKJBMKBJEF() {
-      return gCKJBMKBJEF_;
-    }
-
-    public static final int CONFIRM_END_TIME_FIELD_NUMBER = 1;
+    public static final int CONFIRM_END_TIME_FIELD_NUMBER = 8;
     private int confirmEndTime_;
     /**
-     * <code>uint32 confirm_end_time = 1;</code>
+     * <pre>
+     * CMD_ID = 20557
+     * </pre>
+     *
+     * <code>uint32 confirm_end_time = 8;</code>
      * @return The confirmEndTime.
      */
     @java.lang.Override
     public int getConfirmEndTime() {
       return confirmEndTime_;
+    }
+
+    public static final int FESTIVAL_MODE_TYPE_FIELD_NUMBER = 15;
+    private int festivalModeType_;
+    /**
+     * <code>uint32 festival_mode_type = 15;</code>
+     * @return The festivalModeType.
+     */
+    @java.lang.Override
+    public int getFestivalModeType() {
+      return festivalModeType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +162,10 @@ public final class GCGInviteBattleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (confirmEndTime_ != 0) {
-        output.writeUInt32(1, confirmEndTime_);
+        output.writeUInt32(8, confirmEndTime_);
       }
-      if (gCKJBMKBJEF_ != 0) {
-        output.writeUInt32(5, gCKJBMKBJEF_);
+      if (festivalModeType_ != 0) {
+        output.writeUInt32(15, festivalModeType_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +178,11 @@ public final class GCGInviteBattleNotifyOuterClass {
       size = 0;
       if (confirmEndTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, confirmEndTime_);
+          .computeUInt32Size(8, confirmEndTime_);
       }
-      if (gCKJBMKBJEF_ != 0) {
+      if (festivalModeType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gCKJBMKBJEF_);
+          .computeUInt32Size(15, festivalModeType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +199,10 @@ public final class GCGInviteBattleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify other = (emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify) obj;
 
-      if (getGCKJBMKBJEF()
-          != other.getGCKJBMKBJEF()) return false;
       if (getConfirmEndTime()
           != other.getConfirmEndTime()) return false;
+      if (getFestivalModeType()
+          != other.getFestivalModeType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +214,10 @@ public final class GCGInviteBattleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GCKJBMKBJEF_FIELD_NUMBER;
-      hash = (53 * hash) + getGCKJBMKBJEF();
       hash = (37 * hash) + CONFIRM_END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getConfirmEndTime();
+      hash = (37 * hash) + FESTIVAL_MODE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFestivalModeType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,11 +314,6 @@ public final class GCGInviteBattleNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 9258
-     * Obf: NLKPMJMGJHG
-     * </pre>
-     *
      * Protobuf type {@code GCGInviteBattleNotify}
      */
     public static final class Builder extends
@@ -353,9 +351,9 @@ public final class GCGInviteBattleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gCKJBMKBJEF_ = 0;
-
         confirmEndTime_ = 0;
+
+        festivalModeType_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class GCGInviteBattleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify buildPartial() {
         emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify result = new emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify(this);
-        result.gCKJBMKBJEF_ = gCKJBMKBJEF_;
         result.confirmEndTime_ = confirmEndTime_;
+        result.festivalModeType_ = festivalModeType_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class GCGInviteBattleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify other) {
         if (other == emu.grasscutter.net.proto.GCGInviteBattleNotifyOuterClass.GCGInviteBattleNotify.getDefaultInstance()) return this;
-        if (other.getGCKJBMKBJEF() != 0) {
-          setGCKJBMKBJEF(other.getGCKJBMKBJEF());
-        }
         if (other.getConfirmEndTime() != 0) {
           setConfirmEndTime(other.getConfirmEndTime());
+        }
+        if (other.getFestivalModeType() != 0) {
+          setFestivalModeType(other.getFestivalModeType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,13 @@ public final class GCGInviteBattleNotifyOuterClass {
         return this;
       }
 
-      private int gCKJBMKBJEF_ ;
-      /**
-       * <code>uint32 GCKJBMKBJEF = 5;</code>
-       * @return The gCKJBMKBJEF.
-       */
-      @java.lang.Override
-      public int getGCKJBMKBJEF() {
-        return gCKJBMKBJEF_;
-      }
-      /**
-       * <code>uint32 GCKJBMKBJEF = 5;</code>
-       * @param value The gCKJBMKBJEF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGCKJBMKBJEF(int value) {
-        
-        gCKJBMKBJEF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GCKJBMKBJEF = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGCKJBMKBJEF() {
-        
-        gCKJBMKBJEF_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int confirmEndTime_ ;
       /**
-       * <code>uint32 confirm_end_time = 1;</code>
+       * <pre>
+       * CMD_ID = 20557
+       * </pre>
+       *
+       * <code>uint32 confirm_end_time = 8;</code>
        * @return The confirmEndTime.
        */
       @java.lang.Override
@@ -509,7 +480,11 @@ public final class GCGInviteBattleNotifyOuterClass {
         return confirmEndTime_;
       }
       /**
-       * <code>uint32 confirm_end_time = 1;</code>
+       * <pre>
+       * CMD_ID = 20557
+       * </pre>
+       *
+       * <code>uint32 confirm_end_time = 8;</code>
        * @param value The confirmEndTime to set.
        * @return This builder for chaining.
        */
@@ -520,12 +495,47 @@ public final class GCGInviteBattleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 confirm_end_time = 1;</code>
+       * <pre>
+       * CMD_ID = 20557
+       * </pre>
+       *
+       * <code>uint32 confirm_end_time = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfirmEndTime() {
         
         confirmEndTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int festivalModeType_ ;
+      /**
+       * <code>uint32 festival_mode_type = 15;</code>
+       * @return The festivalModeType.
+       */
+      @java.lang.Override
+      public int getFestivalModeType() {
+        return festivalModeType_;
+      }
+      /**
+       * <code>uint32 festival_mode_type = 15;</code>
+       * @param value The festivalModeType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFestivalModeType(int value) {
+        
+        festivalModeType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 festival_mode_type = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFestivalModeType() {
+        
+        festivalModeType_ = 0;
         onChanged();
         return this;
       }
@@ -596,10 +606,10 @@ public final class GCGInviteBattleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033GCGInviteBattleNotify.proto\"F\n\025GCGInvi" +
-      "teBattleNotify\022\023\n\013GCKJBMKBJEF\030\005 \001(\r\022\030\n\020c" +
-      "onfirm_end_time\030\001 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\033GCGInviteBattleNotify.proto\"M\n\025GCGInvi" +
+      "teBattleNotify\022\030\n\020confirm_end_time\030\010 \001(\r" +
+      "\022\032\n\022festival_mode_type\030\017 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +620,7 @@ public final class GCGInviteBattleNotifyOuterClass {
     internal_static_GCGInviteBattleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGInviteBattleNotify_descriptor,
-        new java.lang.String[] { "GCKJBMKBJEF", "ConfirmEndTime", });
+        new java.lang.String[] { "ConfirmEndTime", "FestivalModeType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

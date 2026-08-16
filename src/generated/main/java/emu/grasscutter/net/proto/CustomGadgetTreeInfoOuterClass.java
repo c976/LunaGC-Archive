@@ -19,24 +19,44 @@ public final class CustomGadgetTreeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo> 
         getNodeListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo getNodeList(int index);
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     int getNodeListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfoOrBuilder> 
         getNodeListOrBuilderList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfoOrBuilder getNodeListOrBuilder(
@@ -136,6 +156,10 @@ public final class CustomGadgetTreeInfoOuterClass {
     public static final int NODE_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo> nodeList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     @java.lang.Override
@@ -143,6 +167,10 @@ public final class CustomGadgetTreeInfoOuterClass {
       return nodeList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     @java.lang.Override
@@ -151,6 +179,10 @@ public final class CustomGadgetTreeInfoOuterClass {
       return nodeList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     @java.lang.Override
@@ -158,6 +190,10 @@ public final class CustomGadgetTreeInfoOuterClass {
       return nodeList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     @java.lang.Override
@@ -165,6 +201,10 @@ public final class CustomGadgetTreeInfoOuterClass {
       return nodeList_.get(index);
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
      */
     @java.lang.Override
@@ -528,6 +568,10 @@ public final class CustomGadgetTreeInfoOuterClass {
           emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo, emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder, emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfoOrBuilder> nodeListBuilder_;
 
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo> getNodeListList() {
@@ -538,6 +582,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public int getNodeListCount() {
@@ -548,6 +596,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo getNodeList(int index) {
@@ -558,6 +610,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder setNodeList(
@@ -575,6 +631,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder setNodeList(
@@ -589,6 +649,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder addNodeList(emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo value) {
@@ -605,6 +669,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder addNodeList(
@@ -622,6 +690,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder addNodeList(
@@ -636,6 +708,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder addNodeList(
@@ -650,6 +726,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder addAllNodeList(
@@ -665,6 +745,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder clearNodeList() {
@@ -678,6 +762,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public Builder removeNodeList(int index) {
@@ -691,6 +779,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder getNodeListBuilder(
@@ -698,6 +790,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         return getNodeListFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfoOrBuilder getNodeListOrBuilder(
@@ -708,6 +804,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfoOrBuilder> 
@@ -719,6 +819,10 @@ public final class CustomGadgetTreeInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder addNodeListBuilder() {
@@ -726,6 +830,10 @@ public final class CustomGadgetTreeInfoOuterClass {
             emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.getDefaultInstance());
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder addNodeListBuilder(
@@ -734,6 +842,10 @@ public final class CustomGadgetTreeInfoOuterClass {
             index, emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.getDefaultInstance());
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated .CustomCommonNodeInfo node_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder> 

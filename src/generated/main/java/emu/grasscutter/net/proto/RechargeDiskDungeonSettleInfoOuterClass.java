@@ -19,16 +19,28 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @return A list containing the scoreList.
      */
     java.util.List<java.lang.Integer> getScoreListList();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @return The count of scoreList.
      */
     int getScoreListCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @param index The index of the element to return.
      * @return The scoreList at the given index.
@@ -36,22 +48,44 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
     int getScoreList(int index);
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 2;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 difficulty = 1;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 POKECHHLKFE = 13;</code>
+     * @return The pOKECHHLKFE.
      */
-    int getDifficulty();
+    int getPOKECHHLKFE();
   }
   /**
    * Protobuf type {@code RechargeDiskDungeonSettleInfo}
@@ -100,14 +134,14 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 24: {
 
-              levelId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 48: {
@@ -131,9 +165,14 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 80: {
 
-              isNewRecord_ = input.readBool();
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              pOKECHHLKFE_ = input.readUInt32();
               break;
             }
             default: {
@@ -174,6 +213,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
     public static final int SCORE_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList scoreList_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @return A list containing the scoreList.
      */
@@ -183,6 +226,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       return scoreList_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @return The count of scoreList.
      */
@@ -190,6 +237,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       return scoreList_.size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 score_list = 6;</code>
      * @param index The index of the element to return.
      * @return The scoreList at the given index.
@@ -199,10 +250,14 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
     }
     private int scoreListMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -210,10 +265,29 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_FIELD_NUMBER = 2;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 2;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -221,15 +295,19 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 1;
-    private int difficulty_;
+    public static final int POKECHHLKFE_FIELD_NUMBER = 13;
+    private int pOKECHHLKFE_;
     /**
-     * <code>uint32 difficulty = 1;</code>
-     * @return The difficulty.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 POKECHHLKFE = 13;</code>
+     * @return The pOKECHHLKFE.
      */
     @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
+    public int getPOKECHHLKFE() {
+      return pOKECHHLKFE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -248,10 +326,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (difficulty_ != 0) {
-        output.writeUInt32(1, difficulty_);
+        output.writeUInt32(2, difficulty_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+      if (isNewRecord_ != false) {
+        output.writeBool(3, isNewRecord_);
       }
       if (getScoreListList().size() > 0) {
         output.writeUInt32NoTag(50);
@@ -260,8 +338,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       for (int i = 0; i < scoreList_.size(); i++) {
         output.writeUInt32NoTag(scoreList_.getInt(i));
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+      if (levelId_ != 0) {
+        output.writeUInt32(10, levelId_);
+      }
+      if (pOKECHHLKFE_ != 0) {
+        output.writeUInt32(13, pOKECHHLKFE_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,11 +355,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       size = 0;
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, difficulty_);
+          .computeUInt32Size(2, difficulty_);
       }
-      if (levelId_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeBoolSize(3, isNewRecord_);
       }
       {
         int dataSize = 0;
@@ -294,9 +375,13 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         }
         scoreListMemoizedSerializedSize = dataSize;
       }
-      if (isNewRecord_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeUInt32Size(10, levelId_);
+      }
+      if (pOKECHHLKFE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, pOKECHHLKFE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,10 +402,12 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
           .equals(other.getScoreListList())) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getPOKECHHLKFE()
+          != other.getPOKECHHLKFE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,11 +425,13 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       }
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + POKECHHLKFE_FIELD_NUMBER;
+      hash = (53 * hash) + getPOKECHHLKFE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -480,9 +569,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         levelId_ = 0;
 
+        difficulty_ = 0;
+
         isNewRecord_ = false;
 
-        difficulty_ = 0;
+        pOKECHHLKFE_ = 0;
 
         return this;
       }
@@ -517,8 +608,9 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         }
         result.scoreList_ = scoreList_;
         result.levelId_ = levelId_;
-        result.isNewRecord_ = isNewRecord_;
         result.difficulty_ = difficulty_;
+        result.isNewRecord_ = isNewRecord_;
+        result.pOKECHHLKFE_ = pOKECHHLKFE_;
         onBuilt();
         return result;
       }
@@ -580,11 +672,14 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
+        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (other.getPOKECHHLKFE() != 0) {
+          setPOKECHHLKFE(other.getPOKECHHLKFE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,6 +719,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @return A list containing the scoreList.
        */
@@ -633,6 +732,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(scoreList_) : scoreList_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @return The count of scoreList.
        */
@@ -640,6 +743,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return scoreList_.size();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @param index The index of the element to return.
        * @return The scoreList at the given index.
@@ -648,6 +755,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return scoreList_.getInt(index);
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The scoreList to set.
@@ -661,6 +772,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @param value The scoreList to add.
        * @return This builder for chaining.
@@ -672,6 +787,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @param values The scoreList to add.
        * @return This builder for chaining.
@@ -685,6 +804,10 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 score_list = 6;</code>
        * @return This builder for chaining.
        */
@@ -697,7 +820,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -705,7 +832,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -716,7 +847,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -726,40 +861,13 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 2;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -767,7 +875,11 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 2;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -778,12 +890,102 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int pOKECHHLKFE_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 POKECHHLKFE = 13;</code>
+       * @return The pOKECHHLKFE.
+       */
+      @java.lang.Override
+      public int getPOKECHHLKFE() {
+        return pOKECHHLKFE_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 POKECHHLKFE = 13;</code>
+       * @param value The pOKECHHLKFE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPOKECHHLKFE(int value) {
+        
+        pOKECHHLKFE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 POKECHHLKFE = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPOKECHHLKFE() {
+        
+        pOKECHHLKFE_ = 0;
         onChanged();
         return this;
       }
@@ -854,11 +1056,12 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#RechargeDiskDungeonSettleInfo.proto\"p\n" +
-      "\035RechargeDiskDungeonSettleInfo\022\022\n\nscore_" +
-      "list\030\006 \003(\r\022\020\n\010level_id\030\002 \001(\r\022\025\n\ris_new_r" +
-      "ecord\030\016 \001(\010\022\022\n\ndifficulty\030\001 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n#RechargeDiskDungeonSettleInfo.proto\"\205\001" +
+      "\n\035RechargeDiskDungeonSettleInfo\022\022\n\nscore" +
+      "_list\030\006 \003(\r\022\020\n\010level_id\030\n \001(\r\022\022\n\ndifficu" +
+      "lty\030\002 \001(\r\022\025\n\ris_new_record\030\003 \001(\010\022\023\n\013POKE" +
+      "CHHLKFE\030\r \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -869,7 +1072,7 @@ public final class RechargeDiskDungeonSettleInfoOuterClass {
     internal_static_RechargeDiskDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RechargeDiskDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "ScoreList", "LevelId", "IsNewRecord", "Difficulty", });
+        new java.lang.String[] { "ScoreList", "LevelId", "Difficulty", "IsNewRecord", "POKECHHLKFE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

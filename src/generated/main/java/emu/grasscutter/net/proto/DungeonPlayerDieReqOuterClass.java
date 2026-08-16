@@ -19,25 +19,25 @@ public final class DungeonPlayerDieReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 1;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>.PlayerDieType die_type = 11;</code>
+     * <code>.PlayerDieType die_type = 7;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     int getDieTypeValue();
     /**
-     * <code>.PlayerDieType die_type = 11;</code>
+     * <code>.PlayerDieType die_type = 7;</code>
      * @return The dieType.
      */
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
   }
   /**
    * <pre>
-   * CmdId: 7955
+   * CmdId: 5849
    * </pre>
    *
    * Protobuf type {@code DungeonPlayerDieReq}
@@ -85,12 +85,12 @@ public final class DungeonPlayerDieReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 56: {
               int rawValue = input.readEnum();
 
               dieType_ = rawValue;
@@ -128,10 +128,10 @@ public final class DungeonPlayerDieReqOuterClass {
               emu.grasscutter.net.proto.DungeonPlayerDieReqOuterClass.DungeonPlayerDieReq.class, emu.grasscutter.net.proto.DungeonPlayerDieReqOuterClass.DungeonPlayerDieReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 6;</code>
+     * <code>uint32 dungeon_id = 1;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -139,17 +139,17 @@ public final class DungeonPlayerDieReqOuterClass {
       return dungeonId_;
     }
 
-    public static final int DIE_TYPE_FIELD_NUMBER = 11;
+    public static final int DIE_TYPE_FIELD_NUMBER = 7;
     private int dieType_;
     /**
-     * <code>.PlayerDieType die_type = 11;</code>
+     * <code>.PlayerDieType die_type = 7;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     @java.lang.Override public int getDieTypeValue() {
       return dieType_;
     }
     /**
-     * <code>.PlayerDieType die_type = 11;</code>
+     * <code>.PlayerDieType die_type = 7;</code>
      * @return The dieType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
@@ -173,10 +173,10 @@ public final class DungeonPlayerDieReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonId_ != 0) {
-        output.writeUInt32(6, dungeonId_);
+        output.writeUInt32(1, dungeonId_);
       }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        output.writeEnum(11, dieType_);
+        output.writeEnum(7, dieType_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,11 +189,11 @@ public final class DungeonPlayerDieReqOuterClass {
       size = 0;
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonId_);
+          .computeUInt32Size(1, dungeonId_);
       }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, dieType_);
+          .computeEnumSize(7, dieType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -325,7 +325,7 @@ public final class DungeonPlayerDieReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7955
+     * CmdId: 5849
      * </pre>
      *
      * Protobuf type {@code DungeonPlayerDieReq}
@@ -482,7 +482,7 @@ public final class DungeonPlayerDieReqOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -490,7 +490,7 @@ public final class DungeonPlayerDieReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -501,7 +501,7 @@ public final class DungeonPlayerDieReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 6;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -513,14 +513,14 @@ public final class DungeonPlayerDieReqOuterClass {
 
       private int dieType_ = 0;
       /**
-       * <code>.PlayerDieType die_type = 11;</code>
+       * <code>.PlayerDieType die_type = 7;</code>
        * @return The enum numeric value on the wire for dieType.
        */
       @java.lang.Override public int getDieTypeValue() {
         return dieType_;
       }
       /**
-       * <code>.PlayerDieType die_type = 11;</code>
+       * <code>.PlayerDieType die_type = 7;</code>
        * @param value The enum numeric value on the wire for dieType to set.
        * @return This builder for chaining.
        */
@@ -531,7 +531,7 @@ public final class DungeonPlayerDieReqOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 11;</code>
+       * <code>.PlayerDieType die_type = 7;</code>
        * @return The dieType.
        */
       @java.lang.Override
@@ -541,7 +541,7 @@ public final class DungeonPlayerDieReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieType die_type = 11;</code>
+       * <code>.PlayerDieType die_type = 7;</code>
        * @param value The dieType to set.
        * @return This builder for chaining.
        */
@@ -555,7 +555,7 @@ public final class DungeonPlayerDieReqOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 11;</code>
+       * <code>.PlayerDieType die_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieType() {
@@ -633,7 +633,7 @@ public final class DungeonPlayerDieReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DungeonPlayerDieReq.proto\032\023PlayerDieTy" +
       "pe.proto\"K\n\023DungeonPlayerDieReq\022\022\n\ndunge" +
-      "on_id\030\006 \001(\r\022 \n\010die_type\030\013 \001(\0162\016.PlayerDi" +
+      "on_id\030\001 \001(\r\022 \n\010die_type\030\007 \001(\0162\016.PlayerDi" +
       "eTypeB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

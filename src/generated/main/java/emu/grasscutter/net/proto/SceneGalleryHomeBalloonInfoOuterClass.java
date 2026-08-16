@@ -19,16 +19,16 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
-   * <pre>
-   * Obf: JOBPHDFAPPI
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryHomeBalloonInfo}
    */
   public static final class SceneGalleryHomeBalloonInfo extends
@@ -73,7 +73,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 24: {
 
               score_ = input.readUInt32();
               break;
@@ -110,10 +110,14 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo.class, emu.grasscutter.net.proto.SceneGalleryHomeBalloonInfoOuterClass.SceneGalleryHomeBalloonInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 3;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -136,7 +140,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(3, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +153,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(3, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -277,10 +281,6 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JOBPHDFAPPI
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryHomeBalloonInfo}
      */
     public static final class Builder extends
@@ -429,7 +429,11 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -437,7 +441,11 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -448,7 +456,11 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -525,7 +537,7 @@ public final class SceneGalleryHomeBalloonInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SceneGalleryHomeBalloonInfo.proto\",\n\033S" +
-      "ceneGalleryHomeBalloonInfo\022\r\n\005score\030\n \001(" +
+      "ceneGalleryHomeBalloonInfo\022\r\n\005score\030\003 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,24 +20,24 @@ public final class TransmitReasonOuterClass {
   public enum TransmitReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TRANSMIT_REASON_NONE = 0;</code>
+     * <code>HCBNPJIADOO_TRANSMIT_NONE = 0;</code>
      */
-    TRANSMIT_REASON_NONE(0),
+    HCBNPJIADOO_TRANSMIT_NONE(0),
     /**
-     * <code>TRANSMIT_REASON_QUEST = 1;</code>
+     * <code>HCBNPJIADOO_TRANSMIT_QUEST = 1;</code>
      */
-    TRANSMIT_REASON_QUEST(1),
+    HCBNPJIADOO_TRANSMIT_QUEST(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TRANSMIT_REASON_NONE = 0;</code>
+     * <code>HCBNPJIADOO_TRANSMIT_NONE = 0;</code>
      */
-    public static final int TRANSMIT_REASON_NONE_VALUE = 0;
+    public static final int HCBNPJIADOO_TRANSMIT_NONE_VALUE = 0;
     /**
-     * <code>TRANSMIT_REASON_QUEST = 1;</code>
+     * <code>HCBNPJIADOO_TRANSMIT_QUEST = 1;</code>
      */
-    public static final int TRANSMIT_REASON_QUEST_VALUE = 1;
+    public static final int HCBNPJIADOO_TRANSMIT_QUEST_VALUE = 1;
 
 
     public final int getNumber() {
@@ -64,8 +64,8 @@ public final class TransmitReasonOuterClass {
      */
     public static TransmitReason forNumber(int value) {
       switch (value) {
-        case 0: return TRANSMIT_REASON_NONE;
-        case 1: return TRANSMIT_REASON_QUEST;
+        case 0: return HCBNPJIADOO_TRANSMIT_NONE;
+        case 1: return HCBNPJIADOO_TRANSMIT_QUEST;
         default: return null;
       }
     }
@@ -131,10 +131,10 @@ public final class TransmitReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024TransmitReason.proto*E\n\016TransmitReason" +
-      "\022\030\n\024TRANSMIT_REASON_NONE\020\000\022\031\n\025TRANSMIT_R" +
-      "EASON_QUEST\020\001B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\024TransmitReason.proto*O\n\016TransmitReason" +
+      "\022\035\n\031HCBNPJIADOO_TRANSMIT_NONE\020\000\022\036\n\032HCBNP" +
+      "JIADOO_TRANSMIT_QUEST\020\001B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

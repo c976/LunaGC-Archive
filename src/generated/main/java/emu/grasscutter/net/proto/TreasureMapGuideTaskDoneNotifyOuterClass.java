@@ -20,8 +20,7 @@ public final class TreasureMapGuideTaskDoneNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1567
-   * Obf: HKPFGBDPCLI
+   * CmdId: 9630
    * </pre>
    *
    * Protobuf type {@code TreasureMapGuideTaskDoneNotify}
@@ -246,8 +245,7 @@ public final class TreasureMapGuideTaskDoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1567
-     * Obf: HKPFGBDPCLI
+     * CmdId: 9630
      * </pre>
      *
      * Protobuf type {@code TreasureMapGuideTaskDoneNotify}

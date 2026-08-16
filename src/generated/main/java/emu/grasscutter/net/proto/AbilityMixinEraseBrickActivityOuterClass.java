@@ -19,27 +19,35 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @return A list containing the data.
      */
     java.util.List<java.lang.Integer> getDataList();
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @return The count of data.
      */
     int getDataCount();
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @param index The index of the element to return.
      * @return The data at the given index.
      */
     int getData(int index);
   }
   /**
-   * <pre>
-   * Obf: DCMFEAOECBO
-   * </pre>
-   *
    * Protobuf type {@code AbilityMixinEraseBrickActivity}
    */
   public static final class AbilityMixinEraseBrickActivity extends
@@ -86,7 +94,7 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 data_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -94,7 +102,7 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
               data_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,10 +150,14 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
               emu.grasscutter.net.proto.AbilityMixinEraseBrickActivityOuterClass.AbilityMixinEraseBrickActivity.class, emu.grasscutter.net.proto.AbilityMixinEraseBrickActivityOuterClass.AbilityMixinEraseBrickActivity.Builder.class);
     }
 
-    public static final int DATA_FIELD_NUMBER = 6;
+    public static final int DATA_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList data_;
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @return A list containing the data.
      */
     @java.lang.Override
@@ -154,14 +166,22 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
       return data_;
     }
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @return The count of data.
      */
     public int getDataCount() {
       return data_.size();
     }
     /**
-     * <code>repeated uint32 data = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 data = 13;</code>
      * @param index The index of the element to return.
      * @return The data at the given index.
      */
@@ -186,7 +206,7 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getDataList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(dataMemoizedSerializedSize);
       }
       for (int i = 0; i < data_.size(); i++) {
@@ -343,10 +363,6 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DCMFEAOECBO
-     * </pre>
-     *
      * Protobuf type {@code AbilityMixinEraseBrickActivity}
      */
     public static final class Builder extends
@@ -514,7 +530,11 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @return A list containing the data.
        */
       public java.util.List<java.lang.Integer>
@@ -523,14 +543,22 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
                  java.util.Collections.unmodifiableList(data_) : data_;
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @return The count of data.
        */
       public int getDataCount() {
         return data_.size();
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @param index The index of the element to return.
        * @return The data at the given index.
        */
@@ -538,7 +566,11 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
         return data_.getInt(index);
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @param index The index to set the value at.
        * @param value The data to set.
        * @return This builder for chaining.
@@ -551,7 +583,11 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @param value The data to add.
        * @return This builder for chaining.
        */
@@ -562,7 +598,11 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @param values The data to add.
        * @return This builder for chaining.
        */
@@ -575,7 +615,11 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 data = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 data = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearData() {
@@ -653,7 +697,7 @@ public final class AbilityMixinEraseBrickActivityOuterClass {
     java.lang.String[] descriptorData = {
       "\n$AbilityMixinEraseBrickActivity.proto\"." +
       "\n\036AbilityMixinEraseBrickActivity\022\014\n\004data" +
-      "\030\006 \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\r \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

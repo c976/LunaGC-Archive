@@ -19,7 +19,7 @@ public final class InstableSprayAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_id = 6;</code>
+     * <code>uint64 avatar_id = 10;</code>
      * @return The avatarId.
      */
     long getAvatarId();
@@ -75,7 +75,7 @@ public final class InstableSprayAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 80: {
 
               avatarId_ = input.readUInt64();
               break;
@@ -117,10 +117,10 @@ public final class InstableSprayAvatarInfoOuterClass {
               emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.class, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
+    public static final int AVATAR_ID_FIELD_NUMBER = 10;
     private long avatarId_;
     /**
-     * <code>uint64 avatar_id = 6;</code>
+     * <code>uint64 avatar_id = 10;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -154,7 +154,7 @@ public final class InstableSprayAvatarInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarId_ != 0L) {
-        output.writeUInt64(6, avatarId_);
+        output.writeUInt64(10, avatarId_);
       }
       if (isTrial_ != false) {
         output.writeBool(13, isTrial_);
@@ -170,7 +170,7 @@ public final class InstableSprayAvatarInfoOuterClass {
       size = 0;
       if (avatarId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, avatarId_);
+          .computeUInt64Size(10, avatarId_);
       }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -462,7 +462,7 @@ public final class InstableSprayAvatarInfoOuterClass {
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 6;</code>
+       * <code>uint64 avatar_id = 10;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -470,7 +470,7 @@ public final class InstableSprayAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 6;</code>
+       * <code>uint64 avatar_id = 10;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -481,7 +481,7 @@ public final class InstableSprayAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 6;</code>
+       * <code>uint64 avatar_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -589,7 +589,7 @@ public final class InstableSprayAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035InstableSprayAvatarInfo.proto\">\n\027Insta" +
-      "bleSprayAvatarInfo\022\021\n\tavatar_id\030\006 \001(\004\022\020\n" +
+      "bleSprayAvatarInfo\022\021\n\tavatar_id\030\n \001(\004\022\020\n" +
       "\010is_trial\030\r \001(\010B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };

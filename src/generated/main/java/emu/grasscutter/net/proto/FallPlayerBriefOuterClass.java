@@ -19,28 +19,36 @@ public final class FallPlayerBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 3;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_ground = 6;</code>
+     * @return The isGround.
      */
-    int getScore();
+    boolean getIsGround();
 
     /**
-     * <code>uint32 uid = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>bool is_ground = 6;</code>
-     * @return The isGround.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 3;</code>
+     * @return The score.
      */
-    boolean getIsGround();
+    int getScore();
   }
   /**
-   * <pre>
-   * Obf: CAPMOPJNBBE
-   * </pre>
-   *
    * Protobuf type {@code FallPlayerBrief}
    */
   public static final class FallPlayerBrief extends
@@ -95,7 +103,7 @@ public final class FallPlayerBriefOuterClass {
               isGround_ = input.readBool();
               break;
             }
-            case 120: {
+            case 56: {
 
               uid_ = input.readUInt32();
               break;
@@ -132,21 +140,29 @@ public final class FallPlayerBriefOuterClass {
               emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief.class, emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 3;
-    private int score_;
+    public static final int IS_GROUND_FIELD_NUMBER = 6;
+    private boolean isGround_;
     /**
-     * <code>uint32 score = 3;</code>
-     * @return The score.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_ground = 6;</code>
+     * @return The isGround.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public boolean getIsGround() {
+      return isGround_;
     }
 
-    public static final int UID_FIELD_NUMBER = 15;
+    public static final int UID_FIELD_NUMBER = 7;
     private int uid_;
     /**
-     * <code>uint32 uid = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -154,15 +170,19 @@ public final class FallPlayerBriefOuterClass {
       return uid_;
     }
 
-    public static final int IS_GROUND_FIELD_NUMBER = 6;
-    private boolean isGround_;
+    public static final int SCORE_FIELD_NUMBER = 3;
+    private int score_;
     /**
-     * <code>bool is_ground = 6;</code>
-     * @return The isGround.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 score = 3;</code>
+     * @return The score.
      */
     @java.lang.Override
-    public boolean getIsGround() {
-      return isGround_;
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -186,7 +206,7 @@ public final class FallPlayerBriefOuterClass {
         output.writeBool(6, isGround_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(15, uid_);
+        output.writeUInt32(7, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -207,7 +227,7 @@ public final class FallPlayerBriefOuterClass {
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, uid_);
+          .computeUInt32Size(7, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class FallPlayerBriefOuterClass {
       }
       emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief other = (emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
-      if (getUid()
-          != other.getUid()) return false;
       if (getIsGround()
           != other.getIsGround()) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +261,13 @@ public final class FallPlayerBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + IS_GROUND_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGround());
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +364,6 @@ public final class FallPlayerBriefOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CAPMOPJNBBE
-     * </pre>
-     *
      * Protobuf type {@code FallPlayerBrief}
      */
     public static final class Builder extends
@@ -385,11 +401,11 @@ public final class FallPlayerBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
+        isGround_ = false;
 
         uid_ = 0;
 
-        isGround_ = false;
+        score_ = 0;
 
         return this;
       }
@@ -417,9 +433,9 @@ public final class FallPlayerBriefOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief buildPartial() {
         emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief result = new emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief(this);
-        result.score_ = score_;
-        result.uid_ = uid_;
         result.isGround_ = isGround_;
+        result.uid_ = uid_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -468,14 +484,14 @@ public final class FallPlayerBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief other) {
         if (other == emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getIsGround() != false) {
+          setIsGround(other.getIsGround());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
-        if (other.getIsGround() != false) {
-          setIsGround(other.getIsGround());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,70 +522,12 @@ public final class FallPlayerBriefOuterClass {
         return this;
       }
 
-      private int score_ ;
-      /**
-       * <code>uint32 score = 3;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 3;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isGround_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_ground = 6;</code>
        * @return The isGround.
        */
@@ -578,6 +536,10 @@ public final class FallPlayerBriefOuterClass {
         return isGround_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_ground = 6;</code>
        * @param value The isGround to set.
        * @return This builder for chaining.
@@ -589,12 +551,102 @@ public final class FallPlayerBriefOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_ground = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsGround() {
         
         isGround_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 uid = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 score = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -666,8 +718,8 @@ public final class FallPlayerBriefOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025FallPlayerBrief.proto\"@\n\017FallPlayerBri" +
-      "ef\022\r\n\005score\030\003 \001(\r\022\013\n\003uid\030\017 \001(\r\022\021\n\tis_gro" +
-      "und\030\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
+      "ef\022\021\n\tis_ground\030\006 \001(\010\022\013\n\003uid\030\007 \001(\r\022\r\n\005sc" +
+      "ore\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +731,7 @@ public final class FallPlayerBriefOuterClass {
     internal_static_FallPlayerBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FallPlayerBrief_descriptor,
-        new java.lang.String[] { "Score", "Uid", "IsGround", });
+        new java.lang.String[] { "IsGround", "Uid", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

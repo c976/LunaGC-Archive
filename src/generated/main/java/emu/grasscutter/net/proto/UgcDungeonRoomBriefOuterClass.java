@@ -19,31 +19,46 @@ public final class UgcDungeonRoomBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     * @return Whether the displayData field is set.
-     */
-    boolean hasDisplayData();
-    /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     * @return The displayData.
-     */
-    emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData getDisplayData();
-    /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     */
-    emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder getDisplayDataOrBuilder();
-
-    /**
-     * <code>uint32 room_config_id = 5;</code>
+     * <code>uint32 room_config_id = 6;</code>
      * @return The roomConfigId.
      */
     int getRoomConfigId();
 
     /**
-     * <code>uint32 room_id = 10;</code>
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     * @return Whether the displayData field is set.
+     */
+    boolean hasDisplayData();
+    /**
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     * @return The displayData.
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData getDisplayData();
+    /**
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder getDisplayDataOrBuilder();
+
+    /**
+     * <code>uint32 room_id = 11;</code>
      * @return The roomId.
      */
     int getRoomId();
+
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     * @return Whether the roomSetting field is set.
+     */
+    boolean hasRoomSetting();
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     * @return The roomSetting.
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting getRoomSetting();
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     */
+    emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder getRoomSettingOrBuilder();
   }
   /**
    * Protobuf type {@code UgcDungeonRoomBrief}
@@ -90,12 +105,12 @@ public final class UgcDungeonRoomBriefOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
               roomConfigId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 66: {
               emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder subBuilder = null;
               if (displayData_ != null) {
                 subBuilder = displayData_.toBuilder();
@@ -108,9 +123,22 @@ public final class UgcDungeonRoomBriefOuterClass {
 
               break;
             }
-            case 80: {
+            case 88: {
 
               roomId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder subBuilder = null;
+              if (roomSetting_ != null) {
+                subBuilder = roomSetting_.toBuilder();
+              }
+              roomSetting_ = input.readMessage(emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(roomSetting_);
+                roomSetting_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -145,36 +173,10 @@ public final class UgcDungeonRoomBriefOuterClass {
               emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.class, emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.Builder.class);
     }
 
-    public static final int DISPLAY_DATA_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData displayData_;
-    /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     * @return Whether the displayData field is set.
-     */
-    @java.lang.Override
-    public boolean hasDisplayData() {
-      return displayData_ != null;
-    }
-    /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     * @return The displayData.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData getDisplayData() {
-      return displayData_ == null ? emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.getDefaultInstance() : displayData_;
-    }
-    /**
-     * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder getDisplayDataOrBuilder() {
-      return getDisplayData();
-    }
-
-    public static final int ROOM_CONFIG_ID_FIELD_NUMBER = 5;
+    public static final int ROOM_CONFIG_ID_FIELD_NUMBER = 6;
     private int roomConfigId_;
     /**
-     * <code>uint32 room_config_id = 5;</code>
+     * <code>uint32 room_config_id = 6;</code>
      * @return The roomConfigId.
      */
     @java.lang.Override
@@ -182,15 +184,67 @@ public final class UgcDungeonRoomBriefOuterClass {
       return roomConfigId_;
     }
 
-    public static final int ROOM_ID_FIELD_NUMBER = 10;
+    public static final int DISPLAY_DATA_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData displayData_;
+    /**
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     * @return Whether the displayData field is set.
+     */
+    @java.lang.Override
+    public boolean hasDisplayData() {
+      return displayData_ != null;
+    }
+    /**
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     * @return The displayData.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData getDisplayData() {
+      return displayData_ == null ? emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.getDefaultInstance() : displayData_;
+    }
+    /**
+     * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder getDisplayDataOrBuilder() {
+      return getDisplayData();
+    }
+
+    public static final int ROOM_ID_FIELD_NUMBER = 11;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 10;</code>
+     * <code>uint32 room_id = 11;</code>
      * @return The roomId.
      */
     @java.lang.Override
     public int getRoomId() {
       return roomId_;
+    }
+
+    public static final int ROOM_SETTING_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting roomSetting_;
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     * @return Whether the roomSetting field is set.
+     */
+    @java.lang.Override
+    public boolean hasRoomSetting() {
+      return roomSetting_ != null;
+    }
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     * @return The roomSetting.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting getRoomSetting() {
+      return roomSetting_ == null ? emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.getDefaultInstance() : roomSetting_;
+    }
+    /**
+     * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder getRoomSettingOrBuilder() {
+      return getRoomSetting();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -208,13 +262,16 @@ public final class UgcDungeonRoomBriefOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (roomConfigId_ != 0) {
-        output.writeUInt32(5, roomConfigId_);
+        output.writeUInt32(6, roomConfigId_);
       }
       if (displayData_ != null) {
-        output.writeMessage(9, getDisplayData());
+        output.writeMessage(8, getDisplayData());
       }
       if (roomId_ != 0) {
-        output.writeUInt32(10, roomId_);
+        output.writeUInt32(11, roomId_);
+      }
+      if (roomSetting_ != null) {
+        output.writeMessage(12, getRoomSetting());
       }
       unknownFields.writeTo(output);
     }
@@ -227,15 +284,19 @@ public final class UgcDungeonRoomBriefOuterClass {
       size = 0;
       if (roomConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, roomConfigId_);
+          .computeUInt32Size(6, roomConfigId_);
       }
       if (displayData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getDisplayData());
+          .computeMessageSize(8, getDisplayData());
       }
       if (roomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, roomId_);
+          .computeUInt32Size(11, roomId_);
+      }
+      if (roomSetting_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getRoomSetting());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,15 +313,20 @@ public final class UgcDungeonRoomBriefOuterClass {
       }
       emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief other = (emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief) obj;
 
+      if (getRoomConfigId()
+          != other.getRoomConfigId()) return false;
       if (hasDisplayData() != other.hasDisplayData()) return false;
       if (hasDisplayData()) {
         if (!getDisplayData()
             .equals(other.getDisplayData())) return false;
       }
-      if (getRoomConfigId()
-          != other.getRoomConfigId()) return false;
       if (getRoomId()
           != other.getRoomId()) return false;
+      if (hasRoomSetting() != other.hasRoomSetting()) return false;
+      if (hasRoomSetting()) {
+        if (!getRoomSetting()
+            .equals(other.getRoomSetting())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +338,18 @@ public final class UgcDungeonRoomBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ROOM_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRoomConfigId();
       if (hasDisplayData()) {
         hash = (37 * hash) + DISPLAY_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getDisplayData().hashCode();
       }
-      hash = (37 * hash) + ROOM_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRoomConfigId();
       hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
+      if (hasRoomSetting()) {
+        hash = (37 * hash) + ROOM_SETTING_FIELD_NUMBER;
+        hash = (53 * hash) + getRoomSetting().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,16 +483,22 @@ public final class UgcDungeonRoomBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        roomConfigId_ = 0;
+
         if (displayDataBuilder_ == null) {
           displayData_ = null;
         } else {
           displayData_ = null;
           displayDataBuilder_ = null;
         }
-        roomConfigId_ = 0;
-
         roomId_ = 0;
 
+        if (roomSettingBuilder_ == null) {
+          roomSetting_ = null;
+        } else {
+          roomSetting_ = null;
+          roomSettingBuilder_ = null;
+        }
         return this;
       }
 
@@ -449,13 +525,18 @@ public final class UgcDungeonRoomBriefOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief buildPartial() {
         emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief result = new emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief(this);
+        result.roomConfigId_ = roomConfigId_;
         if (displayDataBuilder_ == null) {
           result.displayData_ = displayData_;
         } else {
           result.displayData_ = displayDataBuilder_.build();
         }
-        result.roomConfigId_ = roomConfigId_;
         result.roomId_ = roomId_;
+        if (roomSettingBuilder_ == null) {
+          result.roomSetting_ = roomSetting_;
+        } else {
+          result.roomSetting_ = roomSettingBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -504,14 +585,17 @@ public final class UgcDungeonRoomBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief other) {
         if (other == emu.grasscutter.net.proto.UgcDungeonRoomBriefOuterClass.UgcDungeonRoomBrief.getDefaultInstance()) return this;
-        if (other.hasDisplayData()) {
-          mergeDisplayData(other.getDisplayData());
-        }
         if (other.getRoomConfigId() != 0) {
           setRoomConfigId(other.getRoomConfigId());
         }
+        if (other.hasDisplayData()) {
+          mergeDisplayData(other.getDisplayData());
+        }
         if (other.getRoomId() != 0) {
           setRoomId(other.getRoomId());
+        }
+        if (other.hasRoomSetting()) {
+          mergeRoomSetting(other.getRoomSetting());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -542,18 +626,49 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
 
+      private int roomConfigId_ ;
+      /**
+       * <code>uint32 room_config_id = 6;</code>
+       * @return The roomConfigId.
+       */
+      @java.lang.Override
+      public int getRoomConfigId() {
+        return roomConfigId_;
+      }
+      /**
+       * <code>uint32 room_config_id = 6;</code>
+       * @param value The roomConfigId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRoomConfigId(int value) {
+        
+        roomConfigId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 room_config_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRoomConfigId() {
+        
+        roomConfigId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData displayData_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData, emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder, emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder> displayDataBuilder_;
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        * @return Whether the displayData field is set.
        */
       public boolean hasDisplayData() {
         return displayDataBuilder_ != null || displayData_ != null;
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        * @return The displayData.
        */
       public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData getDisplayData() {
@@ -564,7 +679,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public Builder setDisplayData(emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData value) {
         if (displayDataBuilder_ == null) {
@@ -580,7 +695,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public Builder setDisplayData(
           emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder builderForValue) {
@@ -594,7 +709,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public Builder mergeDisplayData(emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData value) {
         if (displayDataBuilder_ == null) {
@@ -612,7 +727,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public Builder clearDisplayData() {
         if (displayDataBuilder_ == null) {
@@ -626,7 +741,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder getDisplayDataBuilder() {
         
@@ -634,7 +749,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return getDisplayDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       public emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder getDisplayDataOrBuilder() {
         if (displayDataBuilder_ != null) {
@@ -645,7 +760,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         }
       }
       /**
-       * <code>.UgcDungeonRoomDisplayData display_data = 9;</code>
+       * <code>.UgcDungeonRoomDisplayData display_data = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData, emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayData.Builder, emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.UgcDungeonRoomDisplayDataOrBuilder> 
@@ -661,40 +776,9 @@ public final class UgcDungeonRoomBriefOuterClass {
         return displayDataBuilder_;
       }
 
-      private int roomConfigId_ ;
-      /**
-       * <code>uint32 room_config_id = 5;</code>
-       * @return The roomConfigId.
-       */
-      @java.lang.Override
-      public int getRoomConfigId() {
-        return roomConfigId_;
-      }
-      /**
-       * <code>uint32 room_config_id = 5;</code>
-       * @param value The roomConfigId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRoomConfigId(int value) {
-        
-        roomConfigId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 room_config_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRoomConfigId() {
-        
-        roomConfigId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int roomId_ ;
       /**
-       * <code>uint32 room_id = 10;</code>
+       * <code>uint32 room_id = 11;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -702,7 +786,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 room_id = 10;</code>
+       * <code>uint32 room_id = 11;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -713,7 +797,7 @@ public final class UgcDungeonRoomBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_id = 10;</code>
+       * <code>uint32 room_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
@@ -721,6 +805,125 @@ public final class UgcDungeonRoomBriefOuterClass {
         roomId_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting roomSetting_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder> roomSettingBuilder_;
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       * @return Whether the roomSetting field is set.
+       */
+      public boolean hasRoomSetting() {
+        return roomSettingBuilder_ != null || roomSetting_ != null;
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       * @return The roomSetting.
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting getRoomSetting() {
+        if (roomSettingBuilder_ == null) {
+          return roomSetting_ == null ? emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.getDefaultInstance() : roomSetting_;
+        } else {
+          return roomSettingBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public Builder setRoomSetting(emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting value) {
+        if (roomSettingBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          roomSetting_ = value;
+          onChanged();
+        } else {
+          roomSettingBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public Builder setRoomSetting(
+          emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder builderForValue) {
+        if (roomSettingBuilder_ == null) {
+          roomSetting_ = builderForValue.build();
+          onChanged();
+        } else {
+          roomSettingBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public Builder mergeRoomSetting(emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting value) {
+        if (roomSettingBuilder_ == null) {
+          if (roomSetting_ != null) {
+            roomSetting_ =
+              emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.newBuilder(roomSetting_).mergeFrom(value).buildPartial();
+          } else {
+            roomSetting_ = value;
+          }
+          onChanged();
+        } else {
+          roomSettingBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public Builder clearRoomSetting() {
+        if (roomSettingBuilder_ == null) {
+          roomSetting_ = null;
+          onChanged();
+        } else {
+          roomSetting_ = null;
+          roomSettingBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder getRoomSettingBuilder() {
+        
+        onChanged();
+        return getRoomSettingFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      public emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder getRoomSettingOrBuilder() {
+        if (roomSettingBuilder_ != null) {
+          return roomSettingBuilder_.getMessageOrBuilder();
+        } else {
+          return roomSetting_ == null ?
+              emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.getDefaultInstance() : roomSetting_;
+        }
+      }
+      /**
+       * <code>.UgcDungeonRoomSetting room_setting = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder> 
+          getRoomSettingFieldBuilder() {
+        if (roomSettingBuilder_ == null) {
+          roomSettingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSetting.Builder, emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.UgcDungeonRoomSettingOrBuilder>(
+                  getRoomSetting(),
+                  getParentForChildren(),
+                  isClean());
+          roomSetting_ = null;
+        }
+        return roomSettingBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -790,24 +993,28 @@ public final class UgcDungeonRoomBriefOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031UgcDungeonRoomBrief.proto\032\037UgcDungeonR" +
-      "oomDisplayData.proto\"p\n\023UgcDungeonRoomBr" +
-      "ief\0220\n\014display_data\030\t \001(\0132\032.UgcDungeonRo" +
-      "omDisplayData\022\026\n\016room_config_id\030\005 \001(\r\022\017\n" +
-      "\007room_id\030\n \001(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "oomDisplayData.proto\032\033UgcDungeonRoomSett" +
+      "ing.proto\"\236\001\n\023UgcDungeonRoomBrief\022\026\n\016roo" +
+      "m_config_id\030\006 \001(\r\0220\n\014display_data\030\010 \001(\0132" +
+      "\032.UgcDungeonRoomDisplayData\022\017\n\007room_id\030\013" +
+      " \001(\r\022,\n\014room_setting\030\014 \001(\0132\026.UgcDungeonR" +
+      "oomSettingB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.getDescriptor(),
         });
     internal_static_UgcDungeonRoomBrief_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_UgcDungeonRoomBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UgcDungeonRoomBrief_descriptor,
-        new java.lang.String[] { "DisplayData", "RoomConfigId", "RoomId", });
+        new java.lang.String[] { "RoomConfigId", "DisplayData", "RoomId", "RoomSetting", });
     emu.grasscutter.net.proto.UgcDungeonRoomDisplayDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.UgcDungeonRoomSettingOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

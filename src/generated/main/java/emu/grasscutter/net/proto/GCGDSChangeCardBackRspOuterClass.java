@@ -19,7 +19,11 @@ public final class GCGDSChangeCardBackRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 deck_id = 12;</code>
+     * <pre>
+     * CMD_ID = 28314
+     * </pre>
+     *
+     * <code>uint32 deck_id = 15;</code>
      * @return The deckId.
      */
     int getDeckId();
@@ -31,17 +35,12 @@ public final class GCGDSChangeCardBackRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 card_back_id = 3;</code>
+     * <code>uint32 card_back_id = 7;</code>
      * @return The cardBackId.
      */
     int getCardBackId();
   }
   /**
-   * <pre>
-   * CmdId: 22521
-   * Obf: JLDCHJHDMLI
-   * </pre>
-   *
    * Protobuf type {@code GCGDSChangeCardBackRsp}
    */
   public static final class GCGDSChangeCardBackRsp extends
@@ -86,19 +85,19 @@ public final class GCGDSChangeCardBackRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 56: {
 
               cardBackId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              deckId_ = input.readUInt32();
               break;
             }
             case 112: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              deckId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,14 @@ public final class GCGDSChangeCardBackRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCardBackRspOuterClass.GCGDSChangeCardBackRsp.class, emu.grasscutter.net.proto.GCGDSChangeCardBackRspOuterClass.GCGDSChangeCardBackRsp.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 12;
+    public static final int DECK_ID_FIELD_NUMBER = 15;
     private int deckId_;
     /**
-     * <code>uint32 deck_id = 12;</code>
+     * <pre>
+     * CMD_ID = 28314
+     * </pre>
+     *
+     * <code>uint32 deck_id = 15;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -155,10 +158,10 @@ public final class GCGDSChangeCardBackRspOuterClass {
       return retcode_;
     }
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 3;
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 7;
     private int cardBackId_;
     /**
-     * <code>uint32 card_back_id = 3;</code>
+     * <code>uint32 card_back_id = 7;</code>
      * @return The cardBackId.
      */
     @java.lang.Override
@@ -181,13 +184,13 @@ public final class GCGDSChangeCardBackRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardBackId_ != 0) {
-        output.writeUInt32(3, cardBackId_);
-      }
-      if (deckId_ != 0) {
-        output.writeUInt32(12, deckId_);
+        output.writeUInt32(7, cardBackId_);
       }
       if (retcode_ != 0) {
         output.writeInt32(14, retcode_);
+      }
+      if (deckId_ != 0) {
+        output.writeUInt32(15, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +203,15 @@ public final class GCGDSChangeCardBackRspOuterClass {
       size = 0;
       if (cardBackId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cardBackId_);
-      }
-      if (deckId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, deckId_);
+          .computeUInt32Size(7, cardBackId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(14, retcode_);
+      }
+      if (deckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,11 +347,6 @@ public final class GCGDSChangeCardBackRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 22521
-     * Obf: JLDCHJHDMLI
-     * </pre>
-     *
      * Protobuf type {@code GCGDSChangeCardBackRsp}
      */
     public static final class Builder extends
@@ -509,7 +507,11 @@ public final class GCGDSChangeCardBackRspOuterClass {
 
       private int deckId_ ;
       /**
-       * <code>uint32 deck_id = 12;</code>
+       * <pre>
+       * CMD_ID = 28314
+       * </pre>
+       *
+       * <code>uint32 deck_id = 15;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -517,7 +519,11 @@ public final class GCGDSChangeCardBackRspOuterClass {
         return deckId_;
       }
       /**
-       * <code>uint32 deck_id = 12;</code>
+       * <pre>
+       * CMD_ID = 28314
+       * </pre>
+       *
+       * <code>uint32 deck_id = 15;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +534,11 @@ public final class GCGDSChangeCardBackRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 deck_id = 12;</code>
+       * <pre>
+       * CMD_ID = 28314
+       * </pre>
+       *
+       * <code>uint32 deck_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -571,7 +581,7 @@ public final class GCGDSChangeCardBackRspOuterClass {
 
       private int cardBackId_ ;
       /**
-       * <code>uint32 card_back_id = 3;</code>
+       * <code>uint32 card_back_id = 7;</code>
        * @return The cardBackId.
        */
       @java.lang.Override
@@ -579,7 +589,7 @@ public final class GCGDSChangeCardBackRspOuterClass {
         return cardBackId_;
       }
       /**
-       * <code>uint32 card_back_id = 3;</code>
+       * <code>uint32 card_back_id = 7;</code>
        * @param value The cardBackId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +600,7 @@ public final class GCGDSChangeCardBackRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_back_id = 3;</code>
+       * <code>uint32 card_back_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardBackId() {
@@ -667,8 +677,8 @@ public final class GCGDSChangeCardBackRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSChangeCardBackRsp.proto\"P\n\026GCGDSC" +
-      "hangeCardBackRsp\022\017\n\007deck_id\030\014 \001(\r\022\017\n\007ret" +
-      "code\030\016 \001(\005\022\024\n\014card_back_id\030\003 \001(\rB\033\n\031emu." +
+      "hangeCardBackRsp\022\017\n\007deck_id\030\017 \001(\r\022\017\n\007ret" +
+      "code\030\016 \001(\005\022\024\n\014card_back_id\030\007 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

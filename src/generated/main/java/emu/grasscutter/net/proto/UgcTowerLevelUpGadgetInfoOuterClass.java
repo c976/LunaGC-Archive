@@ -19,6 +19,10 @@ public final class UgcTowerLevelUpGadgetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>uint32 tower_level = 1;</code>
      * @return The towerLevel.
      */
@@ -109,6 +113,10 @@ public final class UgcTowerLevelUpGadgetInfoOuterClass {
     public static final int TOWER_LEVEL_FIELD_NUMBER = 1;
     private int towerLevel_;
     /**
+     * <pre>
+     *6.3.0
+     * </pre>
+     *
      * <code>uint32 tower_level = 1;</code>
      * @return The towerLevel.
      */
@@ -421,6 +429,10 @@ public final class UgcTowerLevelUpGadgetInfoOuterClass {
 
       private int towerLevel_ ;
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>uint32 tower_level = 1;</code>
        * @return The towerLevel.
        */
@@ -429,6 +441,10 @@ public final class UgcTowerLevelUpGadgetInfoOuterClass {
         return towerLevel_;
       }
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>uint32 tower_level = 1;</code>
        * @param value The towerLevel to set.
        * @return This builder for chaining.
@@ -440,6 +456,10 @@ public final class UgcTowerLevelUpGadgetInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0
+       * </pre>
+       *
        * <code>uint32 tower_level = 1;</code>
        * @return This builder for chaining.
        */

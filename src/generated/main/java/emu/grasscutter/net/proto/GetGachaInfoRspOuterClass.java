@@ -19,50 +19,54 @@ public final class GetGachaInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo> 
         getGachaInfoListList();
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo getGachaInfoList(int index);
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     int getGachaInfoListCount();
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder> 
         getGachaInfoListOrBuilderList();
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder getGachaInfoListOrBuilder(
         int index);
 
     /**
      * <pre>
-     * ?
+     *6.3.0 // offset: 40
      * </pre>
      *
-     * <code>bool is_under_minors_restrict = 9;</code>
-     * @return The isUnderMinorsRestrict.
-     */
-    boolean getIsUnderMinorsRestrict();
-
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool is_under_general_restrict = 12;</code>
-     * @return The isUnderGeneralRestrict.
-     */
-    boolean getIsUnderGeneralRestrict();
-
-    /**
      * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
@@ -70,23 +74,47 @@ public final class GetGachaInfoRspOuterClass {
 
     /**
      * <pre>
-     * ?
+     * offset: 44
      * </pre>
      *
-     * <code>uint32 daily_gacha_times = 1;</code>
-     * @return The dailyGachaTimes.
+     * <code>bool LPLBACIOAPM = 10;</code>
+     * @return The lPLBACIOAPM.
      */
-    int getDailyGachaTimes();
+    boolean getLPLBACIOAPM();
 
     /**
-     * <code>uint32 gacha_random = 7;</code>
-     * @return The gachaRandom.
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool EFMBDFMMMDL = 14123;</code>
+     * @return The eFMBDFMMMDL.
      */
-    int getGachaRandom();
+    boolean getEFMBDFMMMDL();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MGBLPEBKPOE = 9;</code>
+     * @return The mGBLPEBKPOE.
+     */
+    int getMGBLPEBKPOE();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 AIHKFBJEEAF = 13;</code>
+     * @return The aIHKFBJEEAF.
+     */
+    int getAIHKFBJEEAF();
   }
   /**
    * <pre>
-   * CmdId: 25921
+   * CmdId: 1986
    * </pre>
    *
    * Protobuf type {@code GetGachaInfoRsp}
@@ -135,27 +163,22 @@ public final class GetGachaInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              dailyGachaTimes_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
-
-              gachaRandom_ = input.readUInt32();
-              break;
-            }
             case 72: {
 
-              isUnderMinorsRestrict_ = input.readBool();
+              mGBLPEBKPOE_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 80: {
+
+              lPLBACIOAPM_ = input.readBool();
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 gachaInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -164,9 +187,14 @@ public final class GetGachaInfoRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 104: {
 
-              isUnderGeneralRestrict_ = input.readBool();
+              aIHKFBJEEAF_ = input.readUInt32();
+              break;
+            }
+            case 112984: {
+
+              eFMBDFMMMDL_ = input.readBool();
               break;
             }
             default: {
@@ -204,17 +232,25 @@ public final class GetGachaInfoRspOuterClass {
               emu.grasscutter.net.proto.GetGachaInfoRspOuterClass.GetGachaInfoRsp.class, emu.grasscutter.net.proto.GetGachaInfoRspOuterClass.GetGachaInfoRsp.Builder.class);
     }
 
-    public static final int GACHA_INFO_LIST_FIELD_NUMBER = 10;
+    public static final int GACHA_INFO_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo> gachaInfoList_;
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo> getGachaInfoListList() {
       return gachaInfoList_;
     }
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder> 
@@ -222,21 +258,33 @@ public final class GetGachaInfoRspOuterClass {
       return gachaInfoList_;
     }
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     @java.lang.Override
     public int getGachaInfoListCount() {
       return gachaInfoList_.size();
     }
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo getGachaInfoList(int index) {
       return gachaInfoList_.get(index);
     }
     /**
-     * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .GachaInfo gacha_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder getGachaInfoListOrBuilder(
@@ -244,39 +292,13 @@ public final class GetGachaInfoRspOuterClass {
       return gachaInfoList_.get(index);
     }
 
-    public static final int IS_UNDER_MINORS_RESTRICT_FIELD_NUMBER = 9;
-    private boolean isUnderMinorsRestrict_;
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool is_under_minors_restrict = 9;</code>
-     * @return The isUnderMinorsRestrict.
-     */
-    @java.lang.Override
-    public boolean getIsUnderMinorsRestrict() {
-      return isUnderMinorsRestrict_;
-    }
-
-    public static final int IS_UNDER_GENERAL_RESTRICT_FIELD_NUMBER = 12;
-    private boolean isUnderGeneralRestrict_;
-    /**
-     * <pre>
-     * ?
-     * </pre>
-     *
-     * <code>bool is_under_general_restrict = 12;</code>
-     * @return The isUnderGeneralRestrict.
-     */
-    @java.lang.Override
-    public boolean getIsUnderGeneralRestrict() {
-      return isUnderGeneralRestrict_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
@@ -285,30 +307,64 @@ public final class GetGachaInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int DAILY_GACHA_TIMES_FIELD_NUMBER = 1;
-    private int dailyGachaTimes_;
+    public static final int LPLBACIOAPM_FIELD_NUMBER = 10;
+    private boolean lPLBACIOAPM_;
     /**
      * <pre>
-     * ?
+     * offset: 44
      * </pre>
      *
-     * <code>uint32 daily_gacha_times = 1;</code>
-     * @return The dailyGachaTimes.
+     * <code>bool LPLBACIOAPM = 10;</code>
+     * @return The lPLBACIOAPM.
      */
     @java.lang.Override
-    public int getDailyGachaTimes() {
-      return dailyGachaTimes_;
+    public boolean getLPLBACIOAPM() {
+      return lPLBACIOAPM_;
     }
 
-    public static final int GACHA_RANDOM_FIELD_NUMBER = 7;
-    private int gachaRandom_;
+    public static final int EFMBDFMMMDL_FIELD_NUMBER = 14123;
+    private boolean eFMBDFMMMDL_;
     /**
-     * <code>uint32 gacha_random = 7;</code>
-     * @return The gachaRandom.
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool EFMBDFMMMDL = 14123;</code>
+     * @return The eFMBDFMMMDL.
      */
     @java.lang.Override
-    public int getGachaRandom() {
-      return gachaRandom_;
+    public boolean getEFMBDFMMMDL() {
+      return eFMBDFMMMDL_;
+    }
+
+    public static final int MGBLPEBKPOE_FIELD_NUMBER = 9;
+    private int mGBLPEBKPOE_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MGBLPEBKPOE = 9;</code>
+     * @return The mGBLPEBKPOE.
+     */
+    @java.lang.Override
+    public int getMGBLPEBKPOE() {
+      return mGBLPEBKPOE_;
+    }
+
+    public static final int AIHKFBJEEAF_FIELD_NUMBER = 13;
+    private int aIHKFBJEEAF_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 AIHKFBJEEAF = 13;</code>
+     * @return The aIHKFBJEEAF.
+     */
+    @java.lang.Override
+    public int getAIHKFBJEEAF() {
+      return aIHKFBJEEAF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -325,23 +381,23 @@ public final class GetGachaInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dailyGachaTimes_ != 0) {
-        output.writeUInt32(1, dailyGachaTimes_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(2, retcode_);
       }
-      if (gachaRandom_ != 0) {
-        output.writeUInt32(7, gachaRandom_);
+      if (mGBLPEBKPOE_ != 0) {
+        output.writeUInt32(9, mGBLPEBKPOE_);
       }
-      if (isUnderMinorsRestrict_ != false) {
-        output.writeBool(9, isUnderMinorsRestrict_);
+      if (lPLBACIOAPM_ != false) {
+        output.writeBool(10, lPLBACIOAPM_);
       }
       for (int i = 0; i < gachaInfoList_.size(); i++) {
-        output.writeMessage(10, gachaInfoList_.get(i));
+        output.writeMessage(12, gachaInfoList_.get(i));
       }
-      if (isUnderGeneralRestrict_ != false) {
-        output.writeBool(12, isUnderGeneralRestrict_);
+      if (aIHKFBJEEAF_ != 0) {
+        output.writeUInt32(13, aIHKFBJEEAF_);
+      }
+      if (eFMBDFMMMDL_ != false) {
+        output.writeBool(14123, eFMBDFMMMDL_);
       }
       unknownFields.writeTo(output);
     }
@@ -352,29 +408,29 @@ public final class GetGachaInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dailyGachaTimes_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dailyGachaTimes_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, retcode_);
       }
-      if (gachaRandom_ != 0) {
+      if (mGBLPEBKPOE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gachaRandom_);
+          .computeUInt32Size(9, mGBLPEBKPOE_);
       }
-      if (isUnderMinorsRestrict_ != false) {
+      if (lPLBACIOAPM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isUnderMinorsRestrict_);
+          .computeBoolSize(10, lPLBACIOAPM_);
       }
       for (int i = 0; i < gachaInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, gachaInfoList_.get(i));
+          .computeMessageSize(12, gachaInfoList_.get(i));
       }
-      if (isUnderGeneralRestrict_ != false) {
+      if (aIHKFBJEEAF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isUnderGeneralRestrict_);
+          .computeUInt32Size(13, aIHKFBJEEAF_);
+      }
+      if (eFMBDFMMMDL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14123, eFMBDFMMMDL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -393,16 +449,16 @@ public final class GetGachaInfoRspOuterClass {
 
       if (!getGachaInfoListList()
           .equals(other.getGachaInfoListList())) return false;
-      if (getIsUnderMinorsRestrict()
-          != other.getIsUnderMinorsRestrict()) return false;
-      if (getIsUnderGeneralRestrict()
-          != other.getIsUnderGeneralRestrict()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getDailyGachaTimes()
-          != other.getDailyGachaTimes()) return false;
-      if (getGachaRandom()
-          != other.getGachaRandom()) return false;
+      if (getLPLBACIOAPM()
+          != other.getLPLBACIOAPM()) return false;
+      if (getEFMBDFMMMDL()
+          != other.getEFMBDFMMMDL()) return false;
+      if (getMGBLPEBKPOE()
+          != other.getMGBLPEBKPOE()) return false;
+      if (getAIHKFBJEEAF()
+          != other.getAIHKFBJEEAF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -418,18 +474,18 @@ public final class GetGachaInfoRspOuterClass {
         hash = (37 * hash) + GACHA_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGachaInfoListList().hashCode();
       }
-      hash = (37 * hash) + IS_UNDER_MINORS_RESTRICT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUnderMinorsRestrict());
-      hash = (37 * hash) + IS_UNDER_GENERAL_RESTRICT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUnderGeneralRestrict());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + DAILY_GACHA_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getDailyGachaTimes();
-      hash = (37 * hash) + GACHA_RANDOM_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaRandom();
+      hash = (37 * hash) + LPLBACIOAPM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getLPLBACIOAPM());
+      hash = (37 * hash) + EFMBDFMMMDL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEFMBDFMMMDL());
+      hash = (37 * hash) + MGBLPEBKPOE_FIELD_NUMBER;
+      hash = (53 * hash) + getMGBLPEBKPOE();
+      hash = (37 * hash) + AIHKFBJEEAF_FIELD_NUMBER;
+      hash = (53 * hash) + getAIHKFBJEEAF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -527,7 +583,7 @@ public final class GetGachaInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25921
+     * CmdId: 1986
      * </pre>
      *
      * Protobuf type {@code GetGachaInfoRsp}
@@ -574,15 +630,15 @@ public final class GetGachaInfoRspOuterClass {
         } else {
           gachaInfoListBuilder_.clear();
         }
-        isUnderMinorsRestrict_ = false;
-
-        isUnderGeneralRestrict_ = false;
-
         retcode_ = 0;
 
-        dailyGachaTimes_ = 0;
+        lPLBACIOAPM_ = false;
 
-        gachaRandom_ = 0;
+        eFMBDFMMMDL_ = false;
+
+        mGBLPEBKPOE_ = 0;
+
+        aIHKFBJEEAF_ = 0;
 
         return this;
       }
@@ -620,11 +676,11 @@ public final class GetGachaInfoRspOuterClass {
         } else {
           result.gachaInfoList_ = gachaInfoListBuilder_.build();
         }
-        result.isUnderMinorsRestrict_ = isUnderMinorsRestrict_;
-        result.isUnderGeneralRestrict_ = isUnderGeneralRestrict_;
         result.retcode_ = retcode_;
-        result.dailyGachaTimes_ = dailyGachaTimes_;
-        result.gachaRandom_ = gachaRandom_;
+        result.lPLBACIOAPM_ = lPLBACIOAPM_;
+        result.eFMBDFMMMDL_ = eFMBDFMMMDL_;
+        result.mGBLPEBKPOE_ = mGBLPEBKPOE_;
+        result.aIHKFBJEEAF_ = aIHKFBJEEAF_;
         onBuilt();
         return result;
       }
@@ -699,20 +755,20 @@ public final class GetGachaInfoRspOuterClass {
             }
           }
         }
-        if (other.getIsUnderMinorsRestrict() != false) {
-          setIsUnderMinorsRestrict(other.getIsUnderMinorsRestrict());
-        }
-        if (other.getIsUnderGeneralRestrict() != false) {
-          setIsUnderGeneralRestrict(other.getIsUnderGeneralRestrict());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getDailyGachaTimes() != 0) {
-          setDailyGachaTimes(other.getDailyGachaTimes());
+        if (other.getLPLBACIOAPM() != false) {
+          setLPLBACIOAPM(other.getLPLBACIOAPM());
         }
-        if (other.getGachaRandom() != 0) {
-          setGachaRandom(other.getGachaRandom());
+        if (other.getEFMBDFMMMDL() != false) {
+          setEFMBDFMMMDL(other.getEFMBDFMMMDL());
+        }
+        if (other.getMGBLPEBKPOE() != 0) {
+          setMGBLPEBKPOE(other.getMGBLPEBKPOE());
+        }
+        if (other.getAIHKFBJEEAF() != 0) {
+          setAIHKFBJEEAF(other.getAIHKFBJEEAF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -757,7 +813,11 @@ public final class GetGachaInfoRspOuterClass {
           emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder> gachaInfoListBuilder_;
 
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo> getGachaInfoListList() {
         if (gachaInfoListBuilder_ == null) {
@@ -767,7 +827,11 @@ public final class GetGachaInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public int getGachaInfoListCount() {
         if (gachaInfoListBuilder_ == null) {
@@ -777,7 +841,11 @@ public final class GetGachaInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo getGachaInfoList(int index) {
         if (gachaInfoListBuilder_ == null) {
@@ -787,7 +855,11 @@ public final class GetGachaInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder setGachaInfoList(
           int index, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo value) {
@@ -804,7 +876,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder setGachaInfoList(
           int index, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder builderForValue) {
@@ -818,7 +894,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder addGachaInfoList(emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo value) {
         if (gachaInfoListBuilder_ == null) {
@@ -834,7 +914,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder addGachaInfoList(
           int index, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo value) {
@@ -851,7 +935,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder addGachaInfoList(
           emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder builderForValue) {
@@ -865,7 +953,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder addGachaInfoList(
           int index, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder builderForValue) {
@@ -879,7 +971,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder addAllGachaInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo> values) {
@@ -894,7 +990,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder clearGachaInfoList() {
         if (gachaInfoListBuilder_ == null) {
@@ -907,7 +1007,11 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public Builder removeGachaInfoList(int index) {
         if (gachaInfoListBuilder_ == null) {
@@ -920,14 +1024,22 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder getGachaInfoListBuilder(
           int index) {
         return getGachaInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder getGachaInfoListOrBuilder(
           int index) {
@@ -937,7 +1049,11 @@ public final class GetGachaInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfoOrBuilder> 
            getGachaInfoListOrBuilderList() {
@@ -948,14 +1064,22 @@ public final class GetGachaInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder addGachaInfoListBuilder() {
         return getGachaInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder addGachaInfoListBuilder(
           int index) {
@@ -963,7 +1087,11 @@ public final class GetGachaInfoRspOuterClass {
             index, emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaInfo gacha_info_list = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .GachaInfo gacha_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo.Builder> 
            getGachaInfoListBuilderList() {
@@ -984,94 +1112,12 @@ public final class GetGachaInfoRspOuterClass {
         return gachaInfoListBuilder_;
       }
 
-      private boolean isUnderMinorsRestrict_ ;
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_minors_restrict = 9;</code>
-       * @return The isUnderMinorsRestrict.
-       */
-      @java.lang.Override
-      public boolean getIsUnderMinorsRestrict() {
-        return isUnderMinorsRestrict_;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_minors_restrict = 9;</code>
-       * @param value The isUnderMinorsRestrict to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUnderMinorsRestrict(boolean value) {
-        
-        isUnderMinorsRestrict_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_minors_restrict = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUnderMinorsRestrict() {
-        
-        isUnderMinorsRestrict_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isUnderGeneralRestrict_ ;
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_general_restrict = 12;</code>
-       * @return The isUnderGeneralRestrict.
-       */
-      @java.lang.Override
-      public boolean getIsUnderGeneralRestrict() {
-        return isUnderGeneralRestrict_;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_general_restrict = 12;</code>
-       * @param value The isUnderGeneralRestrict to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUnderGeneralRestrict(boolean value) {
-        
-        isUnderGeneralRestrict_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ?
-       * </pre>
-       *
-       * <code>bool is_under_general_restrict = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUnderGeneralRestrict() {
-        
-        isUnderGeneralRestrict_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
@@ -1080,6 +1126,10 @@ public final class GetGachaInfoRspOuterClass {
         return retcode_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -1091,6 +1141,10 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
@@ -1101,76 +1155,174 @@ public final class GetGachaInfoRspOuterClass {
         return this;
       }
 
-      private int dailyGachaTimes_ ;
+      private boolean lPLBACIOAPM_ ;
       /**
        * <pre>
-       * ?
+       * offset: 44
        * </pre>
        *
-       * <code>uint32 daily_gacha_times = 1;</code>
-       * @return The dailyGachaTimes.
+       * <code>bool LPLBACIOAPM = 10;</code>
+       * @return The lPLBACIOAPM.
        */
       @java.lang.Override
-      public int getDailyGachaTimes() {
-        return dailyGachaTimes_;
+      public boolean getLPLBACIOAPM() {
+        return lPLBACIOAPM_;
       }
       /**
        * <pre>
-       * ?
+       * offset: 44
        * </pre>
        *
-       * <code>uint32 daily_gacha_times = 1;</code>
-       * @param value The dailyGachaTimes to set.
+       * <code>bool LPLBACIOAPM = 10;</code>
+       * @param value The lPLBACIOAPM to set.
        * @return This builder for chaining.
        */
-      public Builder setDailyGachaTimes(int value) {
+      public Builder setLPLBACIOAPM(boolean value) {
         
-        dailyGachaTimes_ = value;
+        lPLBACIOAPM_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * ?
+       * offset: 44
        * </pre>
        *
-       * <code>uint32 daily_gacha_times = 1;</code>
+       * <code>bool LPLBACIOAPM = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDailyGachaTimes() {
+      public Builder clearLPLBACIOAPM() {
         
-        dailyGachaTimes_ = 0;
+        lPLBACIOAPM_ = false;
         onChanged();
         return this;
       }
 
-      private int gachaRandom_ ;
+      private boolean eFMBDFMMMDL_ ;
       /**
-       * <code>uint32 gacha_random = 7;</code>
-       * @return The gachaRandom.
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool EFMBDFMMMDL = 14123;</code>
+       * @return The eFMBDFMMMDL.
        */
       @java.lang.Override
-      public int getGachaRandom() {
-        return gachaRandom_;
+      public boolean getEFMBDFMMMDL() {
+        return eFMBDFMMMDL_;
       }
       /**
-       * <code>uint32 gacha_random = 7;</code>
-       * @param value The gachaRandom to set.
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool EFMBDFMMMDL = 14123;</code>
+       * @param value The eFMBDFMMMDL to set.
        * @return This builder for chaining.
        */
-      public Builder setGachaRandom(int value) {
+      public Builder setEFMBDFMMMDL(boolean value) {
         
-        gachaRandom_ = value;
+        eFMBDFMMMDL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gacha_random = 7;</code>
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool EFMBDFMMMDL = 14123;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGachaRandom() {
+      public Builder clearEFMBDFMMMDL() {
         
-        gachaRandom_ = 0;
+        eFMBDFMMMDL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int mGBLPEBKPOE_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGBLPEBKPOE = 9;</code>
+       * @return The mGBLPEBKPOE.
+       */
+      @java.lang.Override
+      public int getMGBLPEBKPOE() {
+        return mGBLPEBKPOE_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGBLPEBKPOE = 9;</code>
+       * @param value The mGBLPEBKPOE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMGBLPEBKPOE(int value) {
+        
+        mGBLPEBKPOE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGBLPEBKPOE = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMGBLPEBKPOE() {
+        
+        mGBLPEBKPOE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aIHKFBJEEAF_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 AIHKFBJEEAF = 13;</code>
+       * @return The aIHKFBJEEAF.
+       */
+      @java.lang.Override
+      public int getAIHKFBJEEAF() {
+        return aIHKFBJEEAF_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 AIHKFBJEEAF = 13;</code>
+       * @param value The aIHKFBJEEAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAIHKFBJEEAF(int value) {
+        
+        aIHKFBJEEAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 AIHKFBJEEAF = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAIHKFBJEEAF() {
+        
+        aIHKFBJEEAF_ = 0;
         onChanged();
         return this;
       }
@@ -1242,12 +1394,11 @@ public final class GetGachaInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GetGachaInfoRsp.proto\032\017GachaInfo.proto" +
-      "\"\275\001\n\017GetGachaInfoRsp\022#\n\017gacha_info_list\030" +
-      "\n \003(\0132\n.GachaInfo\022 \n\030is_under_minors_res" +
-      "trict\030\t \001(\010\022!\n\031is_under_general_restrict" +
-      "\030\014 \001(\010\022\017\n\007retcode\030\002 \001(\005\022\031\n\021daily_gacha_t" +
-      "imes\030\001 \001(\r\022\024\n\014gacha_random\030\007 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\"\234\001\n\017GetGachaInfoRsp\022#\n\017gacha_info_list\030" +
+      "\014 \003(\0132\n.GachaInfo\022\017\n\007retcode\030\002 \001(\005\022\023\n\013LP" +
+      "LBACIOAPM\030\n \001(\010\022\024\n\013EFMBDFMMMDL\030\253n \001(\010\022\023\n" +
+      "\013MGBLPEBKPOE\030\t \001(\r\022\023\n\013AIHKFBJEEAF\030\r \001(\rB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1259,7 +1410,7 @@ public final class GetGachaInfoRspOuterClass {
     internal_static_GetGachaInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetGachaInfoRsp_descriptor,
-        new java.lang.String[] { "GachaInfoList", "IsUnderMinorsRestrict", "IsUnderGeneralRestrict", "Retcode", "DailyGachaTimes", "GachaRandom", });
+        new java.lang.String[] { "GachaInfoList", "Retcode", "LPLBACIOAPM", "EFMBDFMMMDL", "MGBLPEBKPOE", "AIHKFBJEEAF", });
     emu.grasscutter.net.proto.GachaInfoOuterClass.getDescriptor();
   }
 

@@ -19,40 +19,40 @@ public final class FungusFighterV2SettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LNGOHFNLDCF = 11;</code>
-     * @return The lNGOHFNLDCF.
-     */
-    int getLNGOHFNLDCF();
-
-    /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 died_monster_count = 10;</code>
-     * @return The diedMonsterCount.
+     * <code>uint32 IJJAGONHDHA = 5;</code>
+     * @return The iJJAGONHDHA.
      */
-    int getDiedMonsterCount();
+    int getIJJAGONHDHA();
 
     /**
-     * <code>uint32 PILPAGHJLOC = 5;</code>
-     * @return The pILPAGHJLOC.
+     * <code>uint32 cost_time = 7;</code>
+     * @return The costTime.
      */
-    int getPILPAGHJLOC();
+    int getCostTime();
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 cost_time = 13;</code>
-     * @return The costTime.
+     * <code>uint32 OGAIMFACEEN = 10;</code>
+     * @return The oGAIMFACEEN.
      */
-    int getCostTime();
+    int getOGAIMFACEEN();
+
+    /**
+     * <code>uint32 died_monster_count = 14;</code>
+     * @return The diedMonsterCount.
+     */
+    int getDiedMonsterCount();
   }
   /**
    * Protobuf type {@code FungusFighterV2SettleInfo}
@@ -99,34 +99,34 @@ public final class FungusFighterV2SettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              levelId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 40: {
 
-              pILPAGHJLOC_ = input.readUInt32();
+              iJJAGONHDHA_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              diedMonsterCount_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              lNGOHFNLDCF_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 56: {
 
               costTime_ = input.readUInt32();
               break;
             }
+            case 72: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              oGAIMFACEEN_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              isNewRecord_ = input.readBool();
+              diedMonsterCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,21 +161,10 @@ public final class FungusFighterV2SettleInfoOuterClass {
               emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.class, emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder.class);
     }
 
-    public static final int LNGOHFNLDCF_FIELD_NUMBER = 11;
-    private int lNGOHFNLDCF_;
-    /**
-     * <code>uint32 LNGOHFNLDCF = 11;</code>
-     * @return The lNGOHFNLDCF.
-     */
-    @java.lang.Override
-    public int getLNGOHFNLDCF() {
-      return lNGOHFNLDCF_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -183,32 +172,32 @@ public final class FungusFighterV2SettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int DIED_MONSTER_COUNT_FIELD_NUMBER = 10;
-    private int diedMonsterCount_;
+    public static final int IJJAGONHDHA_FIELD_NUMBER = 5;
+    private int iJJAGONHDHA_;
     /**
-     * <code>uint32 died_monster_count = 10;</code>
-     * @return The diedMonsterCount.
+     * <code>uint32 IJJAGONHDHA = 5;</code>
+     * @return The iJJAGONHDHA.
      */
     @java.lang.Override
-    public int getDiedMonsterCount() {
-      return diedMonsterCount_;
+    public int getIJJAGONHDHA() {
+      return iJJAGONHDHA_;
     }
 
-    public static final int PILPAGHJLOC_FIELD_NUMBER = 5;
-    private int pILPAGHJLOC_;
+    public static final int COST_TIME_FIELD_NUMBER = 7;
+    private int costTime_;
     /**
-     * <code>uint32 PILPAGHJLOC = 5;</code>
-     * @return The pILPAGHJLOC.
+     * <code>uint32 cost_time = 7;</code>
+     * @return The costTime.
      */
     @java.lang.Override
-    public int getPILPAGHJLOC() {
-      return pILPAGHJLOC_;
+    public int getCostTime() {
+      return costTime_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -216,15 +205,26 @@ public final class FungusFighterV2SettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 13;
-    private int costTime_;
+    public static final int OGAIMFACEEN_FIELD_NUMBER = 10;
+    private int oGAIMFACEEN_;
     /**
-     * <code>uint32 cost_time = 13;</code>
-     * @return The costTime.
+     * <code>uint32 OGAIMFACEEN = 10;</code>
+     * @return The oGAIMFACEEN.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public int getOGAIMFACEEN() {
+      return oGAIMFACEEN_;
+    }
+
+    public static final int DIED_MONSTER_COUNT_FIELD_NUMBER = 14;
+    private int diedMonsterCount_;
+    /**
+     * <code>uint32 died_monster_count = 14;</code>
+     * @return The diedMonsterCount.
+     */
+    @java.lang.Override
+    public int getDiedMonsterCount() {
+      return diedMonsterCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,23 +241,23 @@ public final class FungusFighterV2SettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+      if (isNewRecord_ != false) {
+        output.writeBool(2, isNewRecord_);
       }
-      if (pILPAGHJLOC_ != 0) {
-        output.writeUInt32(5, pILPAGHJLOC_);
-      }
-      if (diedMonsterCount_ != 0) {
-        output.writeUInt32(10, diedMonsterCount_);
-      }
-      if (lNGOHFNLDCF_ != 0) {
-        output.writeUInt32(11, lNGOHFNLDCF_);
+      if (iJJAGONHDHA_ != 0) {
+        output.writeUInt32(5, iJJAGONHDHA_);
       }
       if (costTime_ != 0) {
-        output.writeUInt32(13, costTime_);
+        output.writeUInt32(7, costTime_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+      if (levelId_ != 0) {
+        output.writeUInt32(9, levelId_);
+      }
+      if (oGAIMFACEEN_ != 0) {
+        output.writeUInt32(10, oGAIMFACEEN_);
+      }
+      if (diedMonsterCount_ != 0) {
+        output.writeUInt32(14, diedMonsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class FungusFighterV2SettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeBoolSize(2, isNewRecord_);
       }
-      if (pILPAGHJLOC_ != 0) {
+      if (iJJAGONHDHA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, pILPAGHJLOC_);
-      }
-      if (diedMonsterCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, diedMonsterCount_);
-      }
-      if (lNGOHFNLDCF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, lNGOHFNLDCF_);
+          .computeUInt32Size(5, iJJAGONHDHA_);
       }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, costTime_);
+          .computeUInt32Size(7, costTime_);
       }
-      if (isNewRecord_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeUInt32Size(9, levelId_);
+      }
+      if (oGAIMFACEEN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, oGAIMFACEEN_);
+      }
+      if (diedMonsterCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, diedMonsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,18 +307,18 @@ public final class FungusFighterV2SettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo other = (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) obj;
 
-      if (getLNGOHFNLDCF()
-          != other.getLNGOHFNLDCF()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getDiedMonsterCount()
-          != other.getDiedMonsterCount()) return false;
-      if (getPILPAGHJLOC()
-          != other.getPILPAGHJLOC()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
+      if (getIJJAGONHDHA()
+          != other.getIJJAGONHDHA()) return false;
       if (getCostTime()
           != other.getCostTime()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getOGAIMFACEEN()
+          != other.getOGAIMFACEEN()) return false;
+      if (getDiedMonsterCount()
+          != other.getDiedMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,19 +330,19 @@ public final class FungusFighterV2SettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LNGOHFNLDCF_FIELD_NUMBER;
-      hash = (53 * hash) + getLNGOHFNLDCF();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + DIED_MONSTER_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getDiedMonsterCount();
-      hash = (37 * hash) + PILPAGHJLOC_FIELD_NUMBER;
-      hash = (53 * hash) + getPILPAGHJLOC();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + IJJAGONHDHA_FIELD_NUMBER;
+      hash = (53 * hash) + getIJJAGONHDHA();
       hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCostTime();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + OGAIMFACEEN_FIELD_NUMBER;
+      hash = (53 * hash) + getOGAIMFACEEN();
+      hash = (37 * hash) + DIED_MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getDiedMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -476,17 +476,17 @@ public final class FungusFighterV2SettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lNGOHFNLDCF_ = 0;
-
         isNewRecord_ = false;
 
-        diedMonsterCount_ = 0;
+        iJJAGONHDHA_ = 0;
 
-        pILPAGHJLOC_ = 0;
+        costTime_ = 0;
 
         levelId_ = 0;
 
-        costTime_ = 0;
+        oGAIMFACEEN_ = 0;
+
+        diedMonsterCount_ = 0;
 
         return this;
       }
@@ -514,12 +514,12 @@ public final class FungusFighterV2SettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo buildPartial() {
         emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo result = new emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo(this);
-        result.lNGOHFNLDCF_ = lNGOHFNLDCF_;
         result.isNewRecord_ = isNewRecord_;
-        result.diedMonsterCount_ = diedMonsterCount_;
-        result.pILPAGHJLOC_ = pILPAGHJLOC_;
-        result.levelId_ = levelId_;
+        result.iJJAGONHDHA_ = iJJAGONHDHA_;
         result.costTime_ = costTime_;
+        result.levelId_ = levelId_;
+        result.oGAIMFACEEN_ = oGAIMFACEEN_;
+        result.diedMonsterCount_ = diedMonsterCount_;
         onBuilt();
         return result;
       }
@@ -568,23 +568,23 @@ public final class FungusFighterV2SettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo other) {
         if (other == emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance()) return this;
-        if (other.getLNGOHFNLDCF() != 0) {
-          setLNGOHFNLDCF(other.getLNGOHFNLDCF());
-        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getDiedMonsterCount() != 0) {
-          setDiedMonsterCount(other.getDiedMonsterCount());
+        if (other.getIJJAGONHDHA() != 0) {
+          setIJJAGONHDHA(other.getIJJAGONHDHA());
         }
-        if (other.getPILPAGHJLOC() != 0) {
-          setPILPAGHJLOC(other.getPILPAGHJLOC());
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getOGAIMFACEEN() != 0) {
+          setOGAIMFACEEN(other.getOGAIMFACEEN());
+        }
+        if (other.getDiedMonsterCount() != 0) {
+          setDiedMonsterCount(other.getDiedMonsterCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -615,40 +615,9 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return this;
       }
 
-      private int lNGOHFNLDCF_ ;
-      /**
-       * <code>uint32 LNGOHFNLDCF = 11;</code>
-       * @return The lNGOHFNLDCF.
-       */
-      @java.lang.Override
-      public int getLNGOHFNLDCF() {
-        return lNGOHFNLDCF_;
-      }
-      /**
-       * <code>uint32 LNGOHFNLDCF = 11;</code>
-       * @param value The lNGOHFNLDCF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLNGOHFNLDCF(int value) {
-        
-        lNGOHFNLDCF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LNGOHFNLDCF = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLNGOHFNLDCF() {
-        
-        lNGOHFNLDCF_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 2;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -656,7 +625,7 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 2;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -667,7 +636,7 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -677,102 +646,40 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return this;
       }
 
-      private int diedMonsterCount_ ;
+      private int iJJAGONHDHA_ ;
       /**
-       * <code>uint32 died_monster_count = 10;</code>
-       * @return The diedMonsterCount.
+       * <code>uint32 IJJAGONHDHA = 5;</code>
+       * @return The iJJAGONHDHA.
        */
       @java.lang.Override
-      public int getDiedMonsterCount() {
-        return diedMonsterCount_;
+      public int getIJJAGONHDHA() {
+        return iJJAGONHDHA_;
       }
       /**
-       * <code>uint32 died_monster_count = 10;</code>
-       * @param value The diedMonsterCount to set.
+       * <code>uint32 IJJAGONHDHA = 5;</code>
+       * @param value The iJJAGONHDHA to set.
        * @return This builder for chaining.
        */
-      public Builder setDiedMonsterCount(int value) {
+      public Builder setIJJAGONHDHA(int value) {
         
-        diedMonsterCount_ = value;
+        iJJAGONHDHA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 died_monster_count = 10;</code>
+       * <code>uint32 IJJAGONHDHA = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDiedMonsterCount() {
+      public Builder clearIJJAGONHDHA() {
         
-        diedMonsterCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pILPAGHJLOC_ ;
-      /**
-       * <code>uint32 PILPAGHJLOC = 5;</code>
-       * @return The pILPAGHJLOC.
-       */
-      @java.lang.Override
-      public int getPILPAGHJLOC() {
-        return pILPAGHJLOC_;
-      }
-      /**
-       * <code>uint32 PILPAGHJLOC = 5;</code>
-       * @param value The pILPAGHJLOC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPILPAGHJLOC(int value) {
-        
-        pILPAGHJLOC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PILPAGHJLOC = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPILPAGHJLOC() {
-        
-        pILPAGHJLOC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
+        iJJAGONHDHA_ = 0;
         onChanged();
         return this;
       }
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 7;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -780,7 +687,7 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 7;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -791,12 +698,105 @@ public final class FungusFighterV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
         
         costTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oGAIMFACEEN_ ;
+      /**
+       * <code>uint32 OGAIMFACEEN = 10;</code>
+       * @return The oGAIMFACEEN.
+       */
+      @java.lang.Override
+      public int getOGAIMFACEEN() {
+        return oGAIMFACEEN_;
+      }
+      /**
+       * <code>uint32 OGAIMFACEEN = 10;</code>
+       * @param value The oGAIMFACEEN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOGAIMFACEEN(int value) {
+        
+        oGAIMFACEEN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OGAIMFACEEN = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOGAIMFACEEN() {
+        
+        oGAIMFACEEN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int diedMonsterCount_ ;
+      /**
+       * <code>uint32 died_monster_count = 14;</code>
+       * @return The diedMonsterCount.
+       */
+      @java.lang.Override
+      public int getDiedMonsterCount() {
+        return diedMonsterCount_;
+      }
+      /**
+       * <code>uint32 died_monster_count = 14;</code>
+       * @param value The diedMonsterCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDiedMonsterCount(int value) {
+        
+        diedMonsterCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 died_monster_count = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDiedMonsterCount() {
+        
+        diedMonsterCount_ = 0;
         onChanged();
         return this;
       }
@@ -868,10 +868,10 @@ public final class FungusFighterV2SettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037FungusFighterV2SettleInfo.proto\"\235\001\n\031Fu" +
-      "ngusFighterV2SettleInfo\022\023\n\013LNGOHFNLDCF\030\013" +
-      " \001(\r\022\025\n\ris_new_record\030\016 \001(\010\022\032\n\022died_mons" +
-      "ter_count\030\n \001(\r\022\023\n\013PILPAGHJLOC\030\005 \001(\r\022\020\n\010" +
-      "level_id\030\003 \001(\r\022\021\n\tcost_time\030\r \001(\rB\033\n\031emu" +
+      "ngusFighterV2SettleInfo\022\025\n\ris_new_record" +
+      "\030\002 \001(\010\022\023\n\013IJJAGONHDHA\030\005 \001(\r\022\021\n\tcost_time" +
+      "\030\007 \001(\r\022\020\n\010level_id\030\t \001(\r\022\023\n\013OGAIMFACEEN\030" +
+      "\n \001(\r\022\032\n\022died_monster_count\030\016 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +883,7 @@ public final class FungusFighterV2SettleInfoOuterClass {
     internal_static_FungusFighterV2SettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterV2SettleInfo_descriptor,
-        new java.lang.String[] { "LNGOHFNLDCF", "IsNewRecord", "DiedMonsterCount", "PILPAGHJLOC", "LevelId", "CostTime", });
+        new java.lang.String[] { "IsNewRecord", "IJJAGONHDHA", "CostTime", "LevelId", "OGAIMFACEEN", "DiedMonsterCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

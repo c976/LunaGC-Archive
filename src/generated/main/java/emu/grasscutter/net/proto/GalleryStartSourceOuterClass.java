@@ -20,32 +20,32 @@ public final class GalleryStartSourceOuterClass {
   public enum GalleryStartSource
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GALLERY_START_BY_NONE = 0;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_NONE = 0;</code>
      */
-    GALLERY_START_BY_NONE(0),
+    HMFGEFHLFLC_GALLERY_START_BY_NONE(0),
     /**
-     * <code>GALLERY_START_BY_MATCH = 1;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_MATCH = 1;</code>
      */
-    GALLERY_START_BY_MATCH(1),
+    HMFGEFHLFLC_GALLERY_START_BY_MATCH(1),
     /**
-     * <code>GALLERY_START_BY_DRAFT = 2;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_DRAFT = 2;</code>
      */
-    GALLERY_START_BY_DRAFT(2),
+    HMFGEFHLFLC_GALLERY_START_BY_DRAFT(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GALLERY_START_BY_NONE = 0;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_NONE = 0;</code>
      */
-    public static final int GALLERY_START_BY_NONE_VALUE = 0;
+    public static final int HMFGEFHLFLC_GALLERY_START_BY_NONE_VALUE = 0;
     /**
-     * <code>GALLERY_START_BY_MATCH = 1;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_MATCH = 1;</code>
      */
-    public static final int GALLERY_START_BY_MATCH_VALUE = 1;
+    public static final int HMFGEFHLFLC_GALLERY_START_BY_MATCH_VALUE = 1;
     /**
-     * <code>GALLERY_START_BY_DRAFT = 2;</code>
+     * <code>HMFGEFHLFLC_GALLERY_START_BY_DRAFT = 2;</code>
      */
-    public static final int GALLERY_START_BY_DRAFT_VALUE = 2;
+    public static final int HMFGEFHLFLC_GALLERY_START_BY_DRAFT_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class GalleryStartSourceOuterClass {
      */
     public static GalleryStartSource forNumber(int value) {
       switch (value) {
-        case 0: return GALLERY_START_BY_NONE;
-        case 1: return GALLERY_START_BY_MATCH;
-        case 2: return GALLERY_START_BY_DRAFT;
+        case 0: return HMFGEFHLFLC_GALLERY_START_BY_NONE;
+        case 1: return HMFGEFHLFLC_GALLERY_START_BY_MATCH;
+        case 2: return HMFGEFHLFLC_GALLERY_START_BY_DRAFT;
         default: return null;
       }
     }
@@ -140,11 +140,12 @@ public final class GalleryStartSourceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030GalleryStartSource.proto*g\n\022GallerySta" +
-      "rtSource\022\031\n\025GALLERY_START_BY_NONE\020\000\022\032\n\026G" +
-      "ALLERY_START_BY_MATCH\020\001\022\032\n\026GALLERY_START" +
-      "_BY_DRAFT\020\002B\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\030GalleryStartSource.proto*\213\001\n\022GallerySt" +
+      "artSource\022%\n!HMFGEFHLFLC_GALLERY_START_B" +
+      "Y_NONE\020\000\022&\n\"HMFGEFHLFLC_GALLERY_START_BY" +
+      "_MATCH\020\001\022&\n\"HMFGEFHLFLC_GALLERY_START_BY" +
+      "_DRAFT\020\002B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

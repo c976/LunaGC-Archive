@@ -19,21 +19,20 @@ public final class SpringUseRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint64 guid = 12;</code>
+     * <code>uint64 guid = 6;</code>
      * @return The guid.
      */
     long getGuid();
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22687
-   * Obf: LOFEGPAMIBK
+   * CmdId: 21416
    * </pre>
    *
    * Protobuf type {@code SpringUseRsp}
@@ -80,14 +79,14 @@ public final class SpringUseRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
+            case 48: {
 
               guid_ = input.readUInt64();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class SpringUseRspOuterClass {
               emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp.class, emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 12;
+    public static final int GUID_FIELD_NUMBER = 6;
     private long guid_;
     /**
-     * <code>uint64 guid = 12;</code>
+     * <code>uint64 guid = 6;</code>
      * @return The guid.
      */
     @java.lang.Override
     public long getGuid() {
       return guid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class SpringUseRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
       if (guid_ != 0L) {
-        output.writeUInt64(12, guid_);
+        output.writeUInt64(6, guid_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class SpringUseRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, guid_);
+          .computeUInt64Size(6, guid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class SpringUseRspOuterClass {
       }
       emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp other = (emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +210,11 @@ public final class SpringUseRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +312,7 @@ public final class SpringUseRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22687
-     * Obf: LOFEGPAMIBK
+     * CmdId: 21416
      * </pre>
      *
      * Protobuf type {@code SpringUseRsp}
@@ -354,9 +352,9 @@ public final class SpringUseRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         guid_ = 0L;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -384,8 +382,8 @@ public final class SpringUseRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp buildPartial() {
         emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp result = new emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp(this);
-        result.retcode_ = retcode_;
         result.guid_ = guid_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -434,11 +432,11 @@ public final class SpringUseRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp other) {
         if (other == emu.grasscutter.net.proto.SpringUseRspOuterClass.SpringUseRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getGuid() != 0L) {
           setGuid(other.getGuid());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +467,9 @@ public final class SpringUseRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private long guid_ ;
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 6;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -510,7 +477,7 @@ public final class SpringUseRspOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 6;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -521,12 +488,43 @@ public final class SpringUseRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
         
         guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class SpringUseRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022SpringUseRsp.proto\"-\n\014SpringUseRsp\022\017\n\007" +
-      "retcode\030\007 \001(\005\022\014\n\004guid\030\014 \001(\004B\033\n\031emu.grass" +
+      "\n\022SpringUseRsp.proto\"-\n\014SpringUseRsp\022\014\n\004" +
+      "guid\030\006 \001(\004\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +608,7 @@ public final class SpringUseRspOuterClass {
     internal_static_SpringUseRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SpringUseRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Guid", });
+        new java.lang.String[] { "Guid", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

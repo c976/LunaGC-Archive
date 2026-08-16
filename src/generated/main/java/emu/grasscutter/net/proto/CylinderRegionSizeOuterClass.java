@@ -19,22 +19,26 @@ public final class CylinderRegionSizeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float height = 4;</code>
-     * @return The height.
-     */
-    float getHeight();
-
-    /**
-     * <code>float radius = 13;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>float radius = 14;</code>
      * @return The radius.
      */
     float getRadius();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>float height = 1;</code>
+     * @return The height.
+     */
+    float getHeight();
   }
   /**
-   * <pre>
-   * Obf: IHDOOLIJIMD
-   * </pre>
-   *
    * Protobuf type {@code CylinderRegionSize}
    */
   public static final class CylinderRegionSize extends
@@ -79,12 +83,12 @@ public final class CylinderRegionSizeOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
+            case 13: {
 
               height_ = input.readFloat();
               break;
             }
-            case 109: {
+            case 117: {
 
               radius_ = input.readFloat();
               break;
@@ -121,26 +125,34 @@ public final class CylinderRegionSizeOuterClass {
               emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.class, emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.Builder.class);
     }
 
-    public static final int HEIGHT_FIELD_NUMBER = 4;
-    private float height_;
-    /**
-     * <code>float height = 4;</code>
-     * @return The height.
-     */
-    @java.lang.Override
-    public float getHeight() {
-      return height_;
-    }
-
-    public static final int RADIUS_FIELD_NUMBER = 13;
+    public static final int RADIUS_FIELD_NUMBER = 14;
     private float radius_;
     /**
-     * <code>float radius = 13;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>float radius = 14;</code>
      * @return The radius.
      */
     @java.lang.Override
     public float getRadius() {
       return radius_;
+    }
+
+    public static final int HEIGHT_FIELD_NUMBER = 1;
+    private float height_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>float height = 1;</code>
+     * @return The height.
+     */
+    @java.lang.Override
+    public float getHeight() {
+      return height_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,10 +170,10 @@ public final class CylinderRegionSizeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (height_ != 0F) {
-        output.writeFloat(4, height_);
+        output.writeFloat(1, height_);
       }
       if (radius_ != 0F) {
-        output.writeFloat(13, radius_);
+        output.writeFloat(14, radius_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +186,11 @@ public final class CylinderRegionSizeOuterClass {
       size = 0;
       if (height_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, height_);
+          .computeFloatSize(1, height_);
       }
       if (radius_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, radius_);
+          .computeFloatSize(14, radius_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,12 +207,12 @@ public final class CylinderRegionSizeOuterClass {
       }
       emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize other = (emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize) obj;
 
-      if (java.lang.Float.floatToIntBits(getHeight())
-          != java.lang.Float.floatToIntBits(
-              other.getHeight())) return false;
       if (java.lang.Float.floatToIntBits(getRadius())
           != java.lang.Float.floatToIntBits(
               other.getRadius())) return false;
+      if (java.lang.Float.floatToIntBits(getHeight())
+          != java.lang.Float.floatToIntBits(
+              other.getHeight())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -212,12 +224,12 @@ public final class CylinderRegionSizeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HEIGHT_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getHeight());
       hash = (37 * hash) + RADIUS_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getRadius());
+      hash = (37 * hash) + HEIGHT_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getHeight());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,10 +326,6 @@ public final class CylinderRegionSizeOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IHDOOLIJIMD
-     * </pre>
-     *
      * Protobuf type {@code CylinderRegionSize}
      */
     public static final class Builder extends
@@ -355,9 +363,9 @@ public final class CylinderRegionSizeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        height_ = 0F;
-
         radius_ = 0F;
+
+        height_ = 0F;
 
         return this;
       }
@@ -385,8 +393,8 @@ public final class CylinderRegionSizeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize buildPartial() {
         emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize result = new emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize(this);
-        result.height_ = height_;
         result.radius_ = radius_;
+        result.height_ = height_;
         onBuilt();
         return result;
       }
@@ -435,11 +443,11 @@ public final class CylinderRegionSizeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize other) {
         if (other == emu.grasscutter.net.proto.CylinderRegionSizeOuterClass.CylinderRegionSize.getDefaultInstance()) return this;
-        if (other.getHeight() != 0F) {
-          setHeight(other.getHeight());
-        }
         if (other.getRadius() != 0F) {
           setRadius(other.getRadius());
+        }
+        if (other.getHeight() != 0F) {
+          setHeight(other.getHeight());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +478,13 @@ public final class CylinderRegionSizeOuterClass {
         return this;
       }
 
-      private float height_ ;
-      /**
-       * <code>float height = 4;</code>
-       * @return The height.
-       */
-      @java.lang.Override
-      public float getHeight() {
-        return height_;
-      }
-      /**
-       * <code>float height = 4;</code>
-       * @param value The height to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHeight(float value) {
-        
-        height_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float height = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHeight() {
-        
-        height_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private float radius_ ;
       /**
-       * <code>float radius = 13;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>float radius = 14;</code>
        * @return The radius.
        */
       @java.lang.Override
@@ -511,7 +492,11 @@ public final class CylinderRegionSizeOuterClass {
         return radius_;
       }
       /**
-       * <code>float radius = 13;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>float radius = 14;</code>
        * @param value The radius to set.
        * @return This builder for chaining.
        */
@@ -522,12 +507,59 @@ public final class CylinderRegionSizeOuterClass {
         return this;
       }
       /**
-       * <code>float radius = 13;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>float radius = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRadius() {
         
         radius_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float height_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>float height = 1;</code>
+       * @return The height.
+       */
+      @java.lang.Override
+      public float getHeight() {
+        return height_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>float height = 1;</code>
+       * @param value The height to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHeight(float value) {
+        
+        height_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>float height = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHeight() {
+        
+        height_ = 0F;
         onChanged();
         return this;
       }
@@ -599,7 +631,7 @@ public final class CylinderRegionSizeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030CylinderRegionSize.proto\"4\n\022CylinderRe" +
-      "gionSize\022\016\n\006height\030\004 \001(\002\022\016\n\006radius\030\r \001(\002" +
+      "gionSize\022\016\n\006radius\030\016 \001(\002\022\016\n\006height\030\001 \001(\002" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +643,7 @@ public final class CylinderRegionSizeOuterClass {
     internal_static_CylinderRegionSize_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CylinderRegionSize_descriptor,
-        new java.lang.String[] { "Height", "Radius", });
+        new java.lang.String[] { "Radius", "Height", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

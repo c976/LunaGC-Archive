@@ -20,8 +20,7 @@ public final class SumoLeaveDungeonNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4886
-   * Obf: FEIBGIGLAKF
+   * CmdId: 7299
    * </pre>
    *
    * Protobuf type {@code SumoLeaveDungeonNotify}
@@ -246,8 +245,7 @@ public final class SumoLeaveDungeonNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4886
-     * Obf: FEIBGIGLAKF
+     * CmdId: 7299
      * </pre>
      *
      * Protobuf type {@code SumoLeaveDungeonNotify}

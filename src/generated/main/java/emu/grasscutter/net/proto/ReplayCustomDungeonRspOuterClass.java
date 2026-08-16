@@ -19,15 +19,14 @@ public final class ReplayCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 25962
-   * Obf: GOAKCLJFFHI
+   * CmdId: 20615
    * </pre>
    *
    * Protobuf type {@code ReplayCustomDungeonRsp}
@@ -74,7 +73,7 @@ public final class ReplayCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class ReplayCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.ReplayCustomDungeonRspOuterClass.ReplayCustomDungeonRsp.class, emu.grasscutter.net.proto.ReplayCustomDungeonRspOuterClass.ReplayCustomDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class ReplayCustomDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class ReplayCustomDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class ReplayCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25962
-     * Obf: GOAKCLJFFHI
+     * CmdId: 20615
      * </pre>
      *
      * Protobuf type {@code ReplayCustomDungeonRsp}
@@ -431,7 +429,7 @@ public final class ReplayCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class ReplayCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class ReplayCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class ReplayCustomDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ReplayCustomDungeonRsp.proto\")\n\026Replay" +
-      "CustomDungeonRsp\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu" +
+      "CustomDungeonRsp\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

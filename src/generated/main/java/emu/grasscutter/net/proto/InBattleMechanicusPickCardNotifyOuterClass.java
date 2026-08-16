@@ -19,33 +19,32 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 4;</code>
+     * <code>uint32 card_id = 2;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
-     * <code>uint32 play_index = 1;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     int getPlayIndex();
 
     /**
-     * <code>uint32 player_uid = 8;</code>
+     * <code>uint32 player_uid = 10;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
 
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 13;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * CmdId: 2126
-   * Obf: LIPPPMECKLO
+   * CmdId: 20203
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusPickCardNotify}
@@ -92,24 +91,24 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              playIndex_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 16: {
 
               cardId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 32: {
 
-              groupId_ = input.readUInt32();
+              playIndex_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 80: {
 
               playerUid_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,10 +143,10 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify.class, emu.grasscutter.net.proto.InBattleMechanicusPickCardNotifyOuterClass.InBattleMechanicusPickCardNotify.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 4;
+    public static final int CARD_ID_FIELD_NUMBER = 2;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 4;</code>
+     * <code>uint32 card_id = 2;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -155,10 +154,10 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       return cardId_;
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 1;
+    public static final int PLAY_INDEX_FIELD_NUMBER = 4;
     private int playIndex_;
     /**
-     * <code>uint32 play_index = 1;</code>
+     * <code>uint32 play_index = 4;</code>
      * @return The playIndex.
      */
     @java.lang.Override
@@ -166,10 +165,10 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       return playIndex_;
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 8;
+    public static final int PLAYER_UID_FIELD_NUMBER = 10;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 8;</code>
+     * <code>uint32 player_uid = 10;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -177,10 +176,10 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       return playerUid_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
+    public static final int GROUP_ID_FIELD_NUMBER = 13;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 13;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -202,17 +201,17 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playIndex_ != 0) {
-        output.writeUInt32(1, playIndex_);
-      }
       if (cardId_ != 0) {
-        output.writeUInt32(4, cardId_);
+        output.writeUInt32(2, cardId_);
       }
-      if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
+      if (playIndex_ != 0) {
+        output.writeUInt32(4, playIndex_);
       }
       if (playerUid_ != 0) {
-        output.writeUInt32(8, playerUid_);
+        output.writeUInt32(10, playerUid_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(13, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +222,21 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, playIndex_);
-      }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cardId_);
+          .computeUInt32Size(2, cardId_);
       }
-      if (groupId_ != 0) {
+      if (playIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
+          .computeUInt32Size(4, playIndex_);
       }
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, playerUid_);
+          .computeUInt32Size(10, playerUid_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +377,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2126
-     * Obf: LIPPPMECKLO
+     * CmdId: 20203
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusPickCardNotify}
@@ -548,7 +546,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 4;</code>
+       * <code>uint32 card_id = 2;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -556,7 +554,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 4;</code>
+       * <code>uint32 card_id = 2;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -567,7 +565,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 4;</code>
+       * <code>uint32 card_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -579,7 +577,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int playIndex_ ;
       /**
-       * <code>uint32 play_index = 1;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return The playIndex.
        */
       @java.lang.Override
@@ -587,7 +585,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return playIndex_;
       }
       /**
-       * <code>uint32 play_index = 1;</code>
+       * <code>uint32 play_index = 4;</code>
        * @param value The playIndex to set.
        * @return This builder for chaining.
        */
@@ -598,7 +596,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_index = 1;</code>
+       * <code>uint32 play_index = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayIndex() {
@@ -610,7 +608,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 10;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -618,7 +616,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 10;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -629,7 +627,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 8;</code>
+       * <code>uint32 player_uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -641,7 +639,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -649,7 +647,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -660,7 +658,7 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -738,8 +736,8 @@ public final class InBattleMechanicusPickCardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n&InBattleMechanicusPickCardNotify.proto" +
       "\"m\n InBattleMechanicusPickCardNotify\022\017\n\007" +
-      "card_id\030\004 \001(\r\022\022\n\nplay_index\030\001 \001(\r\022\022\n\npla" +
-      "yer_uid\030\010 \001(\r\022\020\n\010group_id\030\007 \001(\rB\033\n\031emu.g" +
+      "card_id\030\002 \001(\r\022\022\n\nplay_index\030\004 \001(\r\022\022\n\npla" +
+      "yer_uid\030\n \001(\r\022\020\n\010group_id\030\r \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

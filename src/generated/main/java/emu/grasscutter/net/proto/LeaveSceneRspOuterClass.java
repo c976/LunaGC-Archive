@@ -25,6 +25,10 @@ public final class LeaveSceneRspOuterClass {
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 407
+   * </pre>
+   *
    * Protobuf type {@code LeaveSceneRsp}
    */
   public static final class LeaveSceneRsp extends
@@ -273,6 +277,10 @@ public final class LeaveSceneRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 407
+     * </pre>
+     *
      * Protobuf type {@code LeaveSceneRsp}
      */
     public static final class Builder extends

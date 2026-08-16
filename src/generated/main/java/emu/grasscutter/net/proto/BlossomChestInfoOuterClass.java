@@ -19,16 +19,28 @@ public final class BlossomChestInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @return A list containing the qualifyUidList.
      */
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @return The count of qualifyUidList.
      */
     int getQualifyUidListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
@@ -36,16 +48,28 @@ public final class BlossomChestInfoOuterClass {
     int getQualifyUidList(int index);
 
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return A list containing the remainUidList.
      */
     java.util.List<java.lang.Integer> getRemainUidListList();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return The count of remainUidList.
      */
     int getRemainUidListCount();
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
@@ -53,28 +77,44 @@ public final class BlossomChestInfoOuterClass {
     int getRemainUidList(int index);
 
     /**
-     * <code>uint32 refresh_id = 6;</code>
-     * @return The refreshId.
-     */
-    int getRefreshId();
-
-    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 blossom_refresh_type = 5;</code>
      * @return The blossomRefreshType.
      */
     int getBlossomRefreshType();
 
     /**
-     * <code>uint32 dead_time = 4;</code>
-     * @return The deadTime.
-     */
-    int getDeadTime();
-
-    /**
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
      * <code>uint32 resin = 1;</code>
      * @return The resin.
      */
     int getResin();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 refresh_id = 6;</code>
+     * @return The refreshId.
+     */
+    int getRefreshId();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 dead_time = 4;</code>
+     * @return The deadTime.
+     */
+    int getDeadTime();
   }
   /**
    * Protobuf type {@code BlossomChestInfo}
@@ -227,6 +267,10 @@ public final class BlossomChestInfoOuterClass {
     public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @return A list containing the qualifyUidList.
      */
@@ -236,6 +280,10 @@ public final class BlossomChestInfoOuterClass {
       return qualifyUidList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @return The count of qualifyUidList.
      */
@@ -243,6 +291,10 @@ public final class BlossomChestInfoOuterClass {
       return qualifyUidList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>repeated uint32 qualify_uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
@@ -255,6 +307,10 @@ public final class BlossomChestInfoOuterClass {
     public static final int REMAIN_UID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList remainUidList_;
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return A list containing the remainUidList.
      */
@@ -264,6 +320,10 @@ public final class BlossomChestInfoOuterClass {
       return remainUidList_;
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @return The count of remainUidList.
      */
@@ -271,6 +331,10 @@ public final class BlossomChestInfoOuterClass {
       return remainUidList_.size();
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
      * <code>repeated uint32 remain_uid_list = 3;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
@@ -280,20 +344,13 @@ public final class BlossomChestInfoOuterClass {
     }
     private int remainUidListMemoizedSerializedSize = -1;
 
-    public static final int REFRESH_ID_FIELD_NUMBER = 6;
-    private int refreshId_;
-    /**
-     * <code>uint32 refresh_id = 6;</code>
-     * @return The refreshId.
-     */
-    @java.lang.Override
-    public int getRefreshId() {
-      return refreshId_;
-    }
-
     public static final int BLOSSOM_REFRESH_TYPE_FIELD_NUMBER = 5;
     private int blossomRefreshType_;
     /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
      * <code>uint32 blossom_refresh_type = 5;</code>
      * @return The blossomRefreshType.
      */
@@ -302,26 +359,49 @@ public final class BlossomChestInfoOuterClass {
       return blossomRefreshType_;
     }
 
-    public static final int DEAD_TIME_FIELD_NUMBER = 4;
-    private int deadTime_;
-    /**
-     * <code>uint32 dead_time = 4;</code>
-     * @return The deadTime.
-     */
-    @java.lang.Override
-    public int getDeadTime() {
-      return deadTime_;
-    }
-
     public static final int RESIN_FIELD_NUMBER = 1;
     private int resin_;
     /**
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
      * <code>uint32 resin = 1;</code>
      * @return The resin.
      */
     @java.lang.Override
     public int getResin() {
       return resin_;
+    }
+
+    public static final int REFRESH_ID_FIELD_NUMBER = 6;
+    private int refreshId_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 refresh_id = 6;</code>
+     * @return The refreshId.
+     */
+    @java.lang.Override
+    public int getRefreshId() {
+      return refreshId_;
+    }
+
+    public static final int DEAD_TIME_FIELD_NUMBER = 4;
+    private int deadTime_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 dead_time = 4;</code>
+     * @return The deadTime.
+     */
+    @java.lang.Override
+    public int getDeadTime() {
+      return deadTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -437,14 +517,14 @@ public final class BlossomChestInfoOuterClass {
           .equals(other.getQualifyUidListList())) return false;
       if (!getRemainUidListList()
           .equals(other.getRemainUidListList())) return false;
-      if (getRefreshId()
-          != other.getRefreshId()) return false;
       if (getBlossomRefreshType()
           != other.getBlossomRefreshType()) return false;
-      if (getDeadTime()
-          != other.getDeadTime()) return false;
       if (getResin()
           != other.getResin()) return false;
+      if (getRefreshId()
+          != other.getRefreshId()) return false;
+      if (getDeadTime()
+          != other.getDeadTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -464,14 +544,14 @@ public final class BlossomChestInfoOuterClass {
         hash = (37 * hash) + REMAIN_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRemainUidListList().hashCode();
       }
-      hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRefreshId();
       hash = (37 * hash) + BLOSSOM_REFRESH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getBlossomRefreshType();
-      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getDeadTime();
       hash = (37 * hash) + RESIN_FIELD_NUMBER;
       hash = (53 * hash) + getResin();
+      hash = (37 * hash) + REFRESH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRefreshId();
+      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getDeadTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -609,13 +689,13 @@ public final class BlossomChestInfoOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         remainUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        refreshId_ = 0;
-
         blossomRefreshType_ = 0;
 
-        deadTime_ = 0;
-
         resin_ = 0;
+
+        refreshId_ = 0;
+
+        deadTime_ = 0;
 
         return this;
       }
@@ -654,10 +734,10 @@ public final class BlossomChestInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.remainUidList_ = remainUidList_;
-        result.refreshId_ = refreshId_;
         result.blossomRefreshType_ = blossomRefreshType_;
-        result.deadTime_ = deadTime_;
         result.resin_ = resin_;
+        result.refreshId_ = refreshId_;
+        result.deadTime_ = deadTime_;
         onBuilt();
         return result;
       }
@@ -726,17 +806,17 @@ public final class BlossomChestInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getRefreshId() != 0) {
-          setRefreshId(other.getRefreshId());
-        }
         if (other.getBlossomRefreshType() != 0) {
           setBlossomRefreshType(other.getBlossomRefreshType());
         }
-        if (other.getDeadTime() != 0) {
-          setDeadTime(other.getDeadTime());
-        }
         if (other.getResin() != 0) {
           setResin(other.getResin());
+        }
+        if (other.getRefreshId() != 0) {
+          setRefreshId(other.getRefreshId());
+        }
+        if (other.getDeadTime() != 0) {
+          setDeadTime(other.getDeadTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -776,6 +856,10 @@ public final class BlossomChestInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @return A list containing the qualifyUidList.
        */
@@ -785,6 +869,10 @@ public final class BlossomChestInfoOuterClass {
                  java.util.Collections.unmodifiableList(qualifyUidList_) : qualifyUidList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @return The count of qualifyUidList.
        */
@@ -792,6 +880,10 @@ public final class BlossomChestInfoOuterClass {
         return qualifyUidList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The qualifyUidList at the given index.
@@ -800,6 +892,10 @@ public final class BlossomChestInfoOuterClass {
         return qualifyUidList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The qualifyUidList to set.
@@ -813,6 +909,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @param value The qualifyUidList to add.
        * @return This builder for chaining.
@@ -824,6 +924,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @param values The qualifyUidList to add.
        * @return This builder for chaining.
@@ -837,6 +941,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>repeated uint32 qualify_uid_list = 2;</code>
        * @return This builder for chaining.
        */
@@ -855,6 +963,10 @@ public final class BlossomChestInfoOuterClass {
          }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return A list containing the remainUidList.
        */
@@ -864,6 +976,10 @@ public final class BlossomChestInfoOuterClass {
                  java.util.Collections.unmodifiableList(remainUidList_) : remainUidList_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return The count of remainUidList.
        */
@@ -871,6 +987,10 @@ public final class BlossomChestInfoOuterClass {
         return remainUidList_.size();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param index The index of the element to return.
        * @return The remainUidList at the given index.
@@ -879,6 +999,10 @@ public final class BlossomChestInfoOuterClass {
         return remainUidList_.getInt(index);
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The remainUidList to set.
@@ -892,6 +1016,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param value The remainUidList to add.
        * @return This builder for chaining.
@@ -903,6 +1031,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @param values The remainUidList to add.
        * @return This builder for chaining.
@@ -916,6 +1048,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>repeated uint32 remain_uid_list = 3;</code>
        * @return This builder for chaining.
        */
@@ -926,39 +1062,12 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
 
-      private int refreshId_ ;
-      /**
-       * <code>uint32 refresh_id = 6;</code>
-       * @return The refreshId.
-       */
-      @java.lang.Override
-      public int getRefreshId() {
-        return refreshId_;
-      }
-      /**
-       * <code>uint32 refresh_id = 6;</code>
-       * @param value The refreshId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRefreshId(int value) {
-        
-        refreshId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 refresh_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRefreshId() {
-        
-        refreshId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int blossomRefreshType_ ;
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 blossom_refresh_type = 5;</code>
        * @return The blossomRefreshType.
        */
@@ -967,6 +1076,10 @@ public final class BlossomChestInfoOuterClass {
         return blossomRefreshType_;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 blossom_refresh_type = 5;</code>
        * @param value The blossomRefreshType to set.
        * @return This builder for chaining.
@@ -978,6 +1091,10 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
        * <code>uint32 blossom_refresh_type = 5;</code>
        * @return This builder for chaining.
        */
@@ -988,39 +1105,12 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
 
-      private int deadTime_ ;
-      /**
-       * <code>uint32 dead_time = 4;</code>
-       * @return The deadTime.
-       */
-      @java.lang.Override
-      public int getDeadTime() {
-        return deadTime_;
-      }
-      /**
-       * <code>uint32 dead_time = 4;</code>
-       * @param value The deadTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeadTime(int value) {
-        
-        deadTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dead_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeadTime() {
-        
-        deadTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int resin_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @return The resin.
        */
@@ -1029,6 +1119,10 @@ public final class BlossomChestInfoOuterClass {
         return resin_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @param value The resin to set.
        * @return This builder for chaining.
@@ -1040,12 +1134,102 @@ public final class BlossomChestInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
        * <code>uint32 resin = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearResin() {
         
         resin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int refreshId_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 6;</code>
+       * @return The refreshId.
+       */
+      @java.lang.Override
+      public int getRefreshId() {
+        return refreshId_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 6;</code>
+       * @param value The refreshId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRefreshId(int value) {
+        
+        refreshId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 refresh_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRefreshId() {
+        
+        refreshId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int deadTime_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 4;</code>
+       * @return The deadTime.
+       */
+      @java.lang.Override
+      public int getDeadTime() {
+        return deadTime_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 4;</code>
+       * @param value The deadTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeadTime(int value) {
+        
+        deadTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 dead_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeadTime() {
+        
+        deadTime_ = 0;
         onChanged();
         return this;
       }
@@ -1118,9 +1302,9 @@ public final class BlossomChestInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026BlossomChestInfo.proto\"\231\001\n\020BlossomChes" +
       "tInfo\022\030\n\020qualify_uid_list\030\002 \003(\r\022\027\n\017remai" +
-      "n_uid_list\030\003 \003(\r\022\022\n\nrefresh_id\030\006 \001(\r\022\034\n\024" +
-      "blossom_refresh_type\030\005 \001(\r\022\021\n\tdead_time\030" +
-      "\004 \001(\r\022\r\n\005resin\030\001 \001(\rB\033\n\031emu.grasscutter." +
+      "n_uid_list\030\003 \003(\r\022\034\n\024blossom_refresh_type" +
+      "\030\005 \001(\r\022\r\n\005resin\030\001 \001(\r\022\022\n\nrefresh_id\030\006 \001(" +
+      "\r\022\021\n\tdead_time\030\004 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1132,7 +1316,7 @@ public final class BlossomChestInfoOuterClass {
     internal_static_BlossomChestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlossomChestInfo_descriptor,
-        new java.lang.String[] { "QualifyUidList", "RemainUidList", "RefreshId", "BlossomRefreshType", "DeadTime", "Resin", });
+        new java.lang.String[] { "QualifyUidList", "RemainUidList", "BlossomRefreshType", "Resin", "RefreshId", "DeadTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

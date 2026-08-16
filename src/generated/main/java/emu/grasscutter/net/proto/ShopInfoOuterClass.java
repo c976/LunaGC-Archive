@@ -19,40 +19,60 @@ public final class ShopInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> 
-        getCNNOGBKOAFFList();
+    java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> 
+        getOLGJOIOANALList();
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
-    emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE getCNNOGBKOAFF(int index);
+    emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB getOLGJOIOANAL(int index);
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
-    int getCNNOGBKOAFFCount();
+    int getOLGJOIOANALCount();
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder> 
-        getCNNOGBKOAFFOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder> 
+        getOLGJOIOANALOrBuilderList();
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
-    emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder getCNNOGBKOAFFOrBuilder(
+    emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder getOLGJOIOANALOrBuilder(
         int index);
 
     /**
-     * <code>uint32 NPFNHADIONO = 7;</code>
-     * @return The nPFNHADIONO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FDHOFILHAAN = 12;</code>
+     * @return The fDHOFILHAAN.
      */
-    int getNPFNHADIONO();
+    int getFDHOFILHAAN();
   }
   /**
-   * <pre>
-   * Obf: FMHPMNOGCHK
-   * </pre>
-   *
    * Protobuf type {@code ShopInfo}
    */
   public static final class ShopInfo extends
@@ -65,7 +85,7 @@ public final class ShopInfoOuterClass {
       super(builder);
     }
     private ShopInfo() {
-      cNNOGBKOAFF_ = java.util.Collections.emptyList();
+      oLGJOIOANAL_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -99,18 +119,18 @@ public final class ShopInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cNNOGBKOAFF_ = new java.util.ArrayList<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE>();
+                oLGJOIOANAL_ = new java.util.ArrayList<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              cNNOGBKOAFF_.add(
-                  input.readMessage(emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.parser(), extensionRegistry));
+              oLGJOIOANAL_.add(
+                  input.readMessage(emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.parser(), extensionRegistry));
               break;
             }
-            case 56: {
+            case 96: {
 
-              nPFNHADIONO_ = input.readUInt32();
+              fDHOFILHAAN_ = input.readUInt32();
               break;
             }
             default: {
@@ -129,7 +149,7 @@ public final class ShopInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cNNOGBKOAFF_ = java.util.Collections.unmodifiableList(cNNOGBKOAFF_);
+          oLGJOIOANAL_ = java.util.Collections.unmodifiableList(oLGJOIOANAL_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -148,55 +168,79 @@ public final class ShopInfoOuterClass {
               emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo.class, emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo.Builder.class);
     }
 
-    public static final int CNNOGBKOAFF_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> cNNOGBKOAFF_;
+    public static final int OLGJOIOANAL_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> oLGJOIOANAL_;
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> getCNNOGBKOAFFList() {
-      return cNNOGBKOAFF_;
+    public java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> getOLGJOIOANALList() {
+      return oLGJOIOANAL_;
     }
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder> 
-        getCNNOGBKOAFFOrBuilderList() {
-      return cNNOGBKOAFF_;
+    public java.util.List<? extends emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder> 
+        getOLGJOIOANALOrBuilderList() {
+      return oLGJOIOANAL_;
     }
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
     @java.lang.Override
-    public int getCNNOGBKOAFFCount() {
-      return cNNOGBKOAFF_.size();
+    public int getOLGJOIOANALCount() {
+      return oLGJOIOANAL_.size();
     }
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE getCNNOGBKOAFF(int index) {
-      return cNNOGBKOAFF_.get(index);
+    public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB getOLGJOIOANAL(int index) {
+      return oLGJOIOANAL_.get(index);
     }
     /**
-     * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder getCNNOGBKOAFFOrBuilder(
+    public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder getOLGJOIOANALOrBuilder(
         int index) {
-      return cNNOGBKOAFF_.get(index);
+      return oLGJOIOANAL_.get(index);
     }
 
-    public static final int NPFNHADIONO_FIELD_NUMBER = 7;
-    private int nPFNHADIONO_;
+    public static final int FDHOFILHAAN_FIELD_NUMBER = 12;
+    private int fDHOFILHAAN_;
     /**
-     * <code>uint32 NPFNHADIONO = 7;</code>
-     * @return The nPFNHADIONO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 FDHOFILHAAN = 12;</code>
+     * @return The fDHOFILHAAN.
      */
     @java.lang.Override
-    public int getNPFNHADIONO() {
-      return nPFNHADIONO_;
+    public int getFDHOFILHAAN() {
+      return fDHOFILHAAN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -213,11 +257,11 @@ public final class ShopInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < cNNOGBKOAFF_.size(); i++) {
-        output.writeMessage(3, cNNOGBKOAFF_.get(i));
+      for (int i = 0; i < oLGJOIOANAL_.size(); i++) {
+        output.writeMessage(4, oLGJOIOANAL_.get(i));
       }
-      if (nPFNHADIONO_ != 0) {
-        output.writeUInt32(7, nPFNHADIONO_);
+      if (fDHOFILHAAN_ != 0) {
+        output.writeUInt32(12, fDHOFILHAAN_);
       }
       unknownFields.writeTo(output);
     }
@@ -228,13 +272,13 @@ public final class ShopInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < cNNOGBKOAFF_.size(); i++) {
+      for (int i = 0; i < oLGJOIOANAL_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, cNNOGBKOAFF_.get(i));
+          .computeMessageSize(4, oLGJOIOANAL_.get(i));
       }
-      if (nPFNHADIONO_ != 0) {
+      if (fDHOFILHAAN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, nPFNHADIONO_);
+          .computeUInt32Size(12, fDHOFILHAAN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,10 +295,10 @@ public final class ShopInfoOuterClass {
       }
       emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo other = (emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo) obj;
 
-      if (!getCNNOGBKOAFFList()
-          .equals(other.getCNNOGBKOAFFList())) return false;
-      if (getNPFNHADIONO()
-          != other.getNPFNHADIONO()) return false;
+      if (!getOLGJOIOANALList()
+          .equals(other.getOLGJOIOANALList())) return false;
+      if (getFDHOFILHAAN()
+          != other.getFDHOFILHAAN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -266,12 +310,12 @@ public final class ShopInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCNNOGBKOAFFCount() > 0) {
-        hash = (37 * hash) + CNNOGBKOAFF_FIELD_NUMBER;
-        hash = (53 * hash) + getCNNOGBKOAFFList().hashCode();
+      if (getOLGJOIOANALCount() > 0) {
+        hash = (37 * hash) + OLGJOIOANAL_FIELD_NUMBER;
+        hash = (53 * hash) + getOLGJOIOANALList().hashCode();
       }
-      hash = (37 * hash) + NPFNHADIONO_FIELD_NUMBER;
-      hash = (53 * hash) + getNPFNHADIONO();
+      hash = (37 * hash) + FDHOFILHAAN_FIELD_NUMBER;
+      hash = (53 * hash) + getFDHOFILHAAN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -368,10 +412,6 @@ public final class ShopInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FMHPMNOGCHK
-     * </pre>
-     *
      * Protobuf type {@code ShopInfo}
      */
     public static final class Builder extends
@@ -404,19 +444,19 @@ public final class ShopInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCNNOGBKOAFFFieldBuilder();
+          getOLGJOIOANALFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (cNNOGBKOAFFBuilder_ == null) {
-          cNNOGBKOAFF_ = java.util.Collections.emptyList();
+        if (oLGJOIOANALBuilder_ == null) {
+          oLGJOIOANAL_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          cNNOGBKOAFFBuilder_.clear();
+          oLGJOIOANALBuilder_.clear();
         }
-        nPFNHADIONO_ = 0;
+        fDHOFILHAAN_ = 0;
 
         return this;
       }
@@ -445,16 +485,16 @@ public final class ShopInfoOuterClass {
       public emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo buildPartial() {
         emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo result = new emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo(this);
         int from_bitField0_ = bitField0_;
-        if (cNNOGBKOAFFBuilder_ == null) {
+        if (oLGJOIOANALBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            cNNOGBKOAFF_ = java.util.Collections.unmodifiableList(cNNOGBKOAFF_);
+            oLGJOIOANAL_ = java.util.Collections.unmodifiableList(oLGJOIOANAL_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.cNNOGBKOAFF_ = cNNOGBKOAFF_;
+          result.oLGJOIOANAL_ = oLGJOIOANAL_;
         } else {
-          result.cNNOGBKOAFF_ = cNNOGBKOAFFBuilder_.build();
+          result.oLGJOIOANAL_ = oLGJOIOANALBuilder_.build();
         }
-        result.nPFNHADIONO_ = nPFNHADIONO_;
+        result.fDHOFILHAAN_ = fDHOFILHAAN_;
         onBuilt();
         return result;
       }
@@ -503,34 +543,34 @@ public final class ShopInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo other) {
         if (other == emu.grasscutter.net.proto.ShopInfoOuterClass.ShopInfo.getDefaultInstance()) return this;
-        if (cNNOGBKOAFFBuilder_ == null) {
-          if (!other.cNNOGBKOAFF_.isEmpty()) {
-            if (cNNOGBKOAFF_.isEmpty()) {
-              cNNOGBKOAFF_ = other.cNNOGBKOAFF_;
+        if (oLGJOIOANALBuilder_ == null) {
+          if (!other.oLGJOIOANAL_.isEmpty()) {
+            if (oLGJOIOANAL_.isEmpty()) {
+              oLGJOIOANAL_ = other.oLGJOIOANAL_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCNNOGBKOAFFIsMutable();
-              cNNOGBKOAFF_.addAll(other.cNNOGBKOAFF_);
+              ensureOLGJOIOANALIsMutable();
+              oLGJOIOANAL_.addAll(other.oLGJOIOANAL_);
             }
             onChanged();
           }
         } else {
-          if (!other.cNNOGBKOAFF_.isEmpty()) {
-            if (cNNOGBKOAFFBuilder_.isEmpty()) {
-              cNNOGBKOAFFBuilder_.dispose();
-              cNNOGBKOAFFBuilder_ = null;
-              cNNOGBKOAFF_ = other.cNNOGBKOAFF_;
+          if (!other.oLGJOIOANAL_.isEmpty()) {
+            if (oLGJOIOANALBuilder_.isEmpty()) {
+              oLGJOIOANALBuilder_.dispose();
+              oLGJOIOANALBuilder_ = null;
+              oLGJOIOANAL_ = other.oLGJOIOANAL_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              cNNOGBKOAFFBuilder_ = 
+              oLGJOIOANALBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCNNOGBKOAFFFieldBuilder() : null;
+                   getOLGJOIOANALFieldBuilder() : null;
             } else {
-              cNNOGBKOAFFBuilder_.addAllMessages(other.cNNOGBKOAFF_);
+              oLGJOIOANALBuilder_.addAllMessages(other.oLGJOIOANAL_);
             }
           }
         }
-        if (other.getNPFNHADIONO() != 0) {
-          setNPFNHADIONO(other.getNPFNHADIONO());
+        if (other.getFDHOFILHAAN() != 0) {
+          setFDHOFILHAAN(other.getFDHOFILHAAN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -562,273 +602,357 @@ public final class ShopInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> cNNOGBKOAFF_ =
+      private java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> oLGJOIOANAL_ =
         java.util.Collections.emptyList();
-      private void ensureCNNOGBKOAFFIsMutable() {
+      private void ensureOLGJOIOANALIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          cNNOGBKOAFF_ = new java.util.ArrayList<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE>(cNNOGBKOAFF_);
+          oLGJOIOANAL_ = new java.util.ArrayList<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB>(oLGJOIOANAL_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder> cNNOGBKOAFFBuilder_;
+          emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder> oLGJOIOANALBuilder_;
 
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> getCNNOGBKOAFFList() {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cNNOGBKOAFF_);
+      public java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> getOLGJOIOANALList() {
+        if (oLGJOIOANALBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(oLGJOIOANAL_);
         } else {
-          return cNNOGBKOAFFBuilder_.getMessageList();
+          return oLGJOIOANALBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public int getCNNOGBKOAFFCount() {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          return cNNOGBKOAFF_.size();
+      public int getOLGJOIOANALCount() {
+        if (oLGJOIOANALBuilder_ == null) {
+          return oLGJOIOANAL_.size();
         } else {
-          return cNNOGBKOAFFBuilder_.getCount();
+          return oLGJOIOANALBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE getCNNOGBKOAFF(int index) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          return cNNOGBKOAFF_.get(index);
+      public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB getOLGJOIOANAL(int index) {
+        if (oLGJOIOANALBuilder_ == null) {
+          return oLGJOIOANAL_.get(index);
         } else {
-          return cNNOGBKOAFFBuilder_.getMessage(index);
+          return oLGJOIOANALBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder setCNNOGBKOAFF(
-          int index, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE value) {
-        if (cNNOGBKOAFFBuilder_ == null) {
+      public Builder setOLGJOIOANAL(
+          int index, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB value) {
+        if (oLGJOIOANALBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.set(index, value);
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.set(index, value);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.setMessage(index, value);
+          oLGJOIOANALBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder setCNNOGBKOAFF(
-          int index, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder builderForValue) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.set(index, builderForValue.build());
+      public Builder setOLGJOIOANAL(
+          int index, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder builderForValue) {
+        if (oLGJOIOANALBuilder_ == null) {
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.set(index, builderForValue.build());
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.setMessage(index, builderForValue.build());
+          oLGJOIOANALBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder addCNNOGBKOAFF(emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE value) {
-        if (cNNOGBKOAFFBuilder_ == null) {
+      public Builder addOLGJOIOANAL(emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB value) {
+        if (oLGJOIOANALBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.add(value);
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.add(value);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.addMessage(value);
+          oLGJOIOANALBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder addCNNOGBKOAFF(
-          int index, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE value) {
-        if (cNNOGBKOAFFBuilder_ == null) {
+      public Builder addOLGJOIOANAL(
+          int index, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB value) {
+        if (oLGJOIOANALBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.add(index, value);
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.add(index, value);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.addMessage(index, value);
+          oLGJOIOANALBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder addCNNOGBKOAFF(
-          emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder builderForValue) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.add(builderForValue.build());
+      public Builder addOLGJOIOANAL(
+          emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder builderForValue) {
+        if (oLGJOIOANALBuilder_ == null) {
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.add(builderForValue.build());
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.addMessage(builderForValue.build());
+          oLGJOIOANALBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder addCNNOGBKOAFF(
-          int index, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder builderForValue) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.add(index, builderForValue.build());
+      public Builder addOLGJOIOANAL(
+          int index, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder builderForValue) {
+        if (oLGJOIOANALBuilder_ == null) {
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.add(index, builderForValue.build());
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.addMessage(index, builderForValue.build());
+          oLGJOIOANALBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder addAllCNNOGBKOAFF(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE> values) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          ensureCNNOGBKOAFFIsMutable();
+      public Builder addAllOLGJOIOANAL(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB> values) {
+        if (oLGJOIOANALBuilder_ == null) {
+          ensureOLGJOIOANALIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cNNOGBKOAFF_);
+              values, oLGJOIOANAL_);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.addAllMessages(values);
+          oLGJOIOANALBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder clearCNNOGBKOAFF() {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          cNNOGBKOAFF_ = java.util.Collections.emptyList();
+      public Builder clearOLGJOIOANAL() {
+        if (oLGJOIOANALBuilder_ == null) {
+          oLGJOIOANAL_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.clear();
+          oLGJOIOANALBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public Builder removeCNNOGBKOAFF(int index) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          ensureCNNOGBKOAFFIsMutable();
-          cNNOGBKOAFF_.remove(index);
+      public Builder removeOLGJOIOANAL(int index) {
+        if (oLGJOIOANALBuilder_ == null) {
+          ensureOLGJOIOANALIsMutable();
+          oLGJOIOANAL_.remove(index);
           onChanged();
         } else {
-          cNNOGBKOAFFBuilder_.remove(index);
+          oLGJOIOANALBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder getCNNOGBKOAFFBuilder(
+      public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder getOLGJOIOANALBuilder(
           int index) {
-        return getCNNOGBKOAFFFieldBuilder().getBuilder(index);
+        return getOLGJOIOANALFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder getCNNOGBKOAFFOrBuilder(
+      public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder getOLGJOIOANALOrBuilder(
           int index) {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          return cNNOGBKOAFF_.get(index);  } else {
-          return cNNOGBKOAFFBuilder_.getMessageOrBuilder(index);
+        if (oLGJOIOANALBuilder_ == null) {
+          return oLGJOIOANAL_.get(index);  } else {
+          return oLGJOIOANALBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder> 
-           getCNNOGBKOAFFOrBuilderList() {
-        if (cNNOGBKOAFFBuilder_ != null) {
-          return cNNOGBKOAFFBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder> 
+           getOLGJOIOANALOrBuilderList() {
+        if (oLGJOIOANALBuilder_ != null) {
+          return oLGJOIOANALBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(cNNOGBKOAFF_);
+          return java.util.Collections.unmodifiableList(oLGJOIOANAL_);
         }
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder addCNNOGBKOAFFBuilder() {
-        return getCNNOGBKOAFFFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.getDefaultInstance());
+      public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder addOLGJOIOANALBuilder() {
+        return getOLGJOIOANALFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.getDefaultInstance());
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder addCNNOGBKOAFFBuilder(
+      public emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder addOLGJOIOANALBuilder(
           int index) {
-        return getCNNOGBKOAFFFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.getDefaultInstance());
+        return getOLGJOIOANALFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.getDefaultInstance());
       }
       /**
-       * <code>repeated .NEHEKBBFPIE CNNOGBKOAFF = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .LODPOILDFJB OLGJOIOANAL = 4;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder> 
-           getCNNOGBKOAFFBuilderList() {
-        return getCNNOGBKOAFFFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder> 
+           getOLGJOIOANALBuilderList() {
+        return getOLGJOIOANALFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder> 
-          getCNNOGBKOAFFFieldBuilder() {
-        if (cNNOGBKOAFFBuilder_ == null) {
-          cNNOGBKOAFFBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIE.Builder, emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.NEHEKBBFPIEOrBuilder>(
-                  cNNOGBKOAFF_,
+          emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder> 
+          getOLGJOIOANALFieldBuilder() {
+        if (oLGJOIOANALBuilder_ == null) {
+          oLGJOIOANALBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJB.Builder, emu.grasscutter.net.proto.LODPOILDFJBOuterClass.LODPOILDFJBOrBuilder>(
+                  oLGJOIOANAL_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          cNNOGBKOAFF_ = null;
+          oLGJOIOANAL_ = null;
         }
-        return cNNOGBKOAFFBuilder_;
+        return oLGJOIOANALBuilder_;
       }
 
-      private int nPFNHADIONO_ ;
+      private int fDHOFILHAAN_ ;
       /**
-       * <code>uint32 NPFNHADIONO = 7;</code>
-       * @return The nPFNHADIONO.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FDHOFILHAAN = 12;</code>
+       * @return The fDHOFILHAAN.
        */
       @java.lang.Override
-      public int getNPFNHADIONO() {
-        return nPFNHADIONO_;
+      public int getFDHOFILHAAN() {
+        return fDHOFILHAAN_;
       }
       /**
-       * <code>uint32 NPFNHADIONO = 7;</code>
-       * @param value The nPFNHADIONO to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FDHOFILHAAN = 12;</code>
+       * @param value The fDHOFILHAAN to set.
        * @return This builder for chaining.
        */
-      public Builder setNPFNHADIONO(int value) {
+      public Builder setFDHOFILHAAN(int value) {
         
-        nPFNHADIONO_ = value;
+        fDHOFILHAAN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NPFNHADIONO = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 FDHOFILHAAN = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNPFNHADIONO() {
+      public Builder clearFDHOFILHAAN() {
         
-        nPFNHADIONO_ = 0;
+        fDHOFILHAAN_ = 0;
         onChanged();
         return this;
       }
@@ -899,23 +1023,23 @@ public final class ShopInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016ShopInfo.proto\032\021NEHEKBBFPIE.proto\"B\n\010S" +
-      "hopInfo\022!\n\013CNNOGBKOAFF\030\003 \003(\0132\014.NEHEKBBFP" +
-      "IE\022\023\n\013NPFNHADIONO\030\007 \001(\rB\033\n\031emu.grasscutt" +
+      "\n\016ShopInfo.proto\032\021LODPOILDFJB.proto\"B\n\010S" +
+      "hopInfo\022!\n\013OLGJOIOANAL\030\004 \003(\0132\014.LODPOILDF" +
+      "JB\022\023\n\013FDHOFILHAAN\030\014 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LODPOILDFJBOuterClass.getDescriptor(),
         });
     internal_static_ShopInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ShopInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShopInfo_descriptor,
-        new java.lang.String[] { "CNNOGBKOAFF", "NPFNHADIONO", });
-    emu.grasscutter.net.proto.NEHEKBBFPIEOuterClass.getDescriptor();
+        new java.lang.String[] { "OLGJOIOANAL", "FDHOFILHAAN", });
+    emu.grasscutter.net.proto.LODPOILDFJBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

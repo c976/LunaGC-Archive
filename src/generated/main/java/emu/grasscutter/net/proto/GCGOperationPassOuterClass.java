@@ -19,10 +19,6 @@ public final class GCGOperationPassOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * Obf: NIFHACLJODD
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationPass}
    */
   public static final class GCGOperationPass extends
@@ -244,10 +240,6 @@ public final class GCGOperationPassOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NIFHACLJODD
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationPass}
      */
     public static final class Builder extends

@@ -19,51 +19,47 @@ public final class TeamChainChooseTeamInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @return A list containing the skillNoList.
      */
     java.util.List<java.lang.Integer> getSkillNoListList();
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @return The count of skillNoList.
      */
     int getSkillNoListCount();
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @param index The index of the element to return.
      * @return The skillNoList at the given index.
      */
     int getSkillNoList(int index);
 
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo> 
         getAvatarInfoListList();
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo getAvatarInfoList(int index);
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     int getAvatarInfoListCount();
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder> 
         getAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: JDGNMEEHNGP
-   * </pre>
-   *
    * Protobuf type {@code TeamChainChooseTeamInfo}
    */
   public static final class TeamChainChooseTeamInfo extends
@@ -111,7 +107,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 skillNoList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -119,7 +115,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
               skillNoList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -132,7 +128,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 106: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -179,10 +175,10 @@ public final class TeamChainChooseTeamInfoOuterClass {
               emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.class, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder.class);
     }
 
-    public static final int SKILL_NO_LIST_FIELD_NUMBER = 12;
+    public static final int SKILL_NO_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList skillNoList_;
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @return A list containing the skillNoList.
      */
     @java.lang.Override
@@ -191,14 +187,14 @@ public final class TeamChainChooseTeamInfoOuterClass {
       return skillNoList_;
     }
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @return The count of skillNoList.
      */
     public int getSkillNoListCount() {
       return skillNoList_.size();
     }
     /**
-     * <code>repeated uint32 skill_no_list = 12;</code>
+     * <code>repeated uint32 skill_no_list = 6;</code>
      * @param index The index of the element to return.
      * @return The skillNoList at the given index.
      */
@@ -207,17 +203,17 @@ public final class TeamChainChooseTeamInfoOuterClass {
     }
     private int skillNoListMemoizedSerializedSize = -1;
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 13;
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo> avatarInfoList_;
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo> getAvatarInfoListList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder> 
@@ -225,21 +221,21 @@ public final class TeamChainChooseTeamInfoOuterClass {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     @java.lang.Override
     public int getAvatarInfoListCount() {
       return avatarInfoList_.size();
     }
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo getAvatarInfoList(int index) {
       return avatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+     * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
@@ -263,14 +259,14 @@ public final class TeamChainChooseTeamInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSkillNoListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(skillNoListMemoizedSerializedSize);
       }
       for (int i = 0; i < skillNoList_.size(); i++) {
         output.writeUInt32NoTag(skillNoList_.getInt(i));
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(13, avatarInfoList_.get(i));
+        output.writeMessage(9, avatarInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -297,7 +293,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, avatarInfoList_.get(i));
+          .computeMessageSize(9, avatarInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -433,10 +429,6 @@ public final class TeamChainChooseTeamInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JDGNMEEHNGP
-     * </pre>
-     *
      * Protobuf type {@code TeamChainChooseTeamInfo}
      */
     public static final class Builder extends
@@ -646,7 +638,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @return A list containing the skillNoList.
        */
       public java.util.List<java.lang.Integer>
@@ -655,14 +647,14 @@ public final class TeamChainChooseTeamInfoOuterClass {
                  java.util.Collections.unmodifiableList(skillNoList_) : skillNoList_;
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @return The count of skillNoList.
        */
       public int getSkillNoListCount() {
         return skillNoList_.size();
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @param index The index of the element to return.
        * @return The skillNoList at the given index.
        */
@@ -670,7 +662,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return skillNoList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The skillNoList to set.
        * @return This builder for chaining.
@@ -683,7 +675,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @param value The skillNoList to add.
        * @return This builder for chaining.
        */
@@ -694,7 +686,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @param values The skillNoList to add.
        * @return This builder for chaining.
        */
@@ -707,7 +699,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 skill_no_list = 12;</code>
+       * <code>repeated uint32 skill_no_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillNoList() {
@@ -730,7 +722,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
           emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -740,7 +732,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -750,7 +742,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -760,7 +752,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo value) {
@@ -777,7 +769,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder builderForValue) {
@@ -791,7 +783,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -807,7 +799,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo value) {
@@ -824,7 +816,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder builderForValue) {
@@ -838,7 +830,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder builderForValue) {
@@ -852,7 +844,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo> values) {
@@ -867,7 +859,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -880,7 +872,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -893,14 +885,14 @@ public final class TeamChainChooseTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -910,7 +902,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -921,14 +913,14 @@ public final class TeamChainChooseTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -936,7 +928,7 @@ public final class TeamChainChooseTeamInfoOuterClass {
             index, emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 13;</code>
+       * <code>repeated .TeamChainChooseAvatarInfo avatar_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainChooseAvatarInfoOuterClass.TeamChainChooseAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -1025,8 +1017,8 @@ public final class TeamChainChooseTeamInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035TeamChainChooseTeamInfo.proto\032\037TeamCha" +
       "inChooseAvatarInfo.proto\"f\n\027TeamChainCho" +
-      "oseTeamInfo\022\025\n\rskill_no_list\030\014 \003(\r\0224\n\020av" +
-      "atar_info_list\030\r \003(\0132\032.TeamChainChooseAv" +
+      "oseTeamInfo\022\025\n\rskill_no_list\030\006 \003(\r\0224\n\020av" +
+      "atar_info_list\030\t \003(\0132\032.TeamChainChooseAv" +
       "atarInfoB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

@@ -19,27 +19,26 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool BNAIJODKBJL = 10;</code>
-     * @return The bNAIJODKBJL.
+     * <code>bool EFPAMDNFJCO = 9;</code>
+     * @return The eFPAMDNFJCO.
      */
-    boolean getBNAIJODKBJL();
+    boolean getEFPAMDNFJCO();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool HMIHEBDACID = 8;</code>
-     * @return The hMIHEBDACID.
+     * <code>bool OKOGFEEBGOK = 14;</code>
+     * @return The oKOGFEEBGOK.
      */
-    boolean getHMIHEBDACID();
+    boolean getOKOGFEEBGOK();
   }
   /**
    * <pre>
-   * CmdId: 3981
-   * Obf: GNIAPEEIAEC
+   * CmdId: 25949
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -86,19 +85,19 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 72: {
+
+              eFPAMDNFJCO_ = input.readBool();
+              break;
+            }
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
-              hMIHEBDACID_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              bNAIJODKBJL_ = input.readBool();
+              oKOGFEEBGOK_ = input.readBool();
               break;
             }
             default: {
@@ -133,21 +132,21 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.class, emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.Builder.class);
     }
 
-    public static final int BNAIJODKBJL_FIELD_NUMBER = 10;
-    private boolean bNAIJODKBJL_;
+    public static final int EFPAMDNFJCO_FIELD_NUMBER = 9;
+    private boolean eFPAMDNFJCO_;
     /**
-     * <code>bool BNAIJODKBJL = 10;</code>
-     * @return The bNAIJODKBJL.
+     * <code>bool EFPAMDNFJCO = 9;</code>
+     * @return The eFPAMDNFJCO.
      */
     @java.lang.Override
-    public boolean getBNAIJODKBJL() {
-      return bNAIJODKBJL_;
+    public boolean getEFPAMDNFJCO() {
+      return eFPAMDNFJCO_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +154,15 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       return retcode_;
     }
 
-    public static final int HMIHEBDACID_FIELD_NUMBER = 8;
-    private boolean hMIHEBDACID_;
+    public static final int OKOGFEEBGOK_FIELD_NUMBER = 14;
+    private boolean oKOGFEEBGOK_;
     /**
-     * <code>bool HMIHEBDACID = 8;</code>
-     * @return The hMIHEBDACID.
+     * <code>bool OKOGFEEBGOK = 14;</code>
+     * @return The oKOGFEEBGOK.
      */
     @java.lang.Override
-    public boolean getHMIHEBDACID() {
-      return hMIHEBDACID_;
+    public boolean getOKOGFEEBGOK() {
+      return oKOGFEEBGOK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (eFPAMDNFJCO_ != false) {
+        output.writeBool(9, eFPAMDNFJCO_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(12, retcode_);
       }
-      if (hMIHEBDACID_ != false) {
-        output.writeBool(8, hMIHEBDACID_);
-      }
-      if (bNAIJODKBJL_ != false) {
-        output.writeBool(10, bNAIJODKBJL_);
+      if (oKOGFEEBGOK_ != false) {
+        output.writeBool(14, oKOGFEEBGOK_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eFPAMDNFJCO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, eFPAMDNFJCO_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(12, retcode_);
       }
-      if (hMIHEBDACID_ != false) {
+      if (oKOGFEEBGOK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, hMIHEBDACID_);
-      }
-      if (bNAIJODKBJL_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, bNAIJODKBJL_);
+          .computeBoolSize(14, oKOGFEEBGOK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp other = (emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp) obj;
 
-      if (getBNAIJODKBJL()
-          != other.getBNAIJODKBJL()) return false;
+      if (getEFPAMDNFJCO()
+          != other.getEFPAMDNFJCO()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getHMIHEBDACID()
-          != other.getHMIHEBDACID()) return false;
+      if (getOKOGFEEBGOK()
+          != other.getOKOGFEEBGOK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,14 +241,14 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BNAIJODKBJL_FIELD_NUMBER;
+      hash = (37 * hash) + EFPAMDNFJCO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBNAIJODKBJL());
+          getEFPAMDNFJCO());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + HMIHEBDACID_FIELD_NUMBER;
+      hash = (37 * hash) + OKOGFEEBGOK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHMIHEBDACID());
+          getOKOGFEEBGOK());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,8 +346,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3981
-     * Obf: GNIAPEEIAEC
+     * CmdId: 25949
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -388,11 +386,11 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bNAIJODKBJL_ = false;
+        eFPAMDNFJCO_ = false;
 
         retcode_ = 0;
 
-        hMIHEBDACID_ = false;
+        oKOGFEEBGOK_ = false;
 
         return this;
       }
@@ -420,9 +418,9 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp buildPartial() {
         emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp result = new emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp(this);
-        result.bNAIJODKBJL_ = bNAIJODKBJL_;
+        result.eFPAMDNFJCO_ = eFPAMDNFJCO_;
         result.retcode_ = retcode_;
-        result.hMIHEBDACID_ = hMIHEBDACID_;
+        result.oKOGFEEBGOK_ = oKOGFEEBGOK_;
         onBuilt();
         return result;
       }
@@ -471,14 +469,14 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp other) {
         if (other == emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.getDefaultInstance()) return this;
-        if (other.getBNAIJODKBJL() != false) {
-          setBNAIJODKBJL(other.getBNAIJODKBJL());
+        if (other.getEFPAMDNFJCO() != false) {
+          setEFPAMDNFJCO(other.getEFPAMDNFJCO());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getHMIHEBDACID() != false) {
-          setHMIHEBDACID(other.getHMIHEBDACID());
+        if (other.getOKOGFEEBGOK() != false) {
+          setOKOGFEEBGOK(other.getOKOGFEEBGOK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +507,40 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
 
-      private boolean bNAIJODKBJL_ ;
+      private boolean eFPAMDNFJCO_ ;
       /**
-       * <code>bool BNAIJODKBJL = 10;</code>
-       * @return The bNAIJODKBJL.
+       * <code>bool EFPAMDNFJCO = 9;</code>
+       * @return The eFPAMDNFJCO.
        */
       @java.lang.Override
-      public boolean getBNAIJODKBJL() {
-        return bNAIJODKBJL_;
+      public boolean getEFPAMDNFJCO() {
+        return eFPAMDNFJCO_;
       }
       /**
-       * <code>bool BNAIJODKBJL = 10;</code>
-       * @param value The bNAIJODKBJL to set.
+       * <code>bool EFPAMDNFJCO = 9;</code>
+       * @param value The eFPAMDNFJCO to set.
        * @return This builder for chaining.
        */
-      public Builder setBNAIJODKBJL(boolean value) {
+      public Builder setEFPAMDNFJCO(boolean value) {
         
-        bNAIJODKBJL_ = value;
+        eFPAMDNFJCO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool BNAIJODKBJL = 10;</code>
+       * <code>bool EFPAMDNFJCO = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBNAIJODKBJL() {
+      public Builder clearEFPAMDNFJCO() {
         
-        bNAIJODKBJL_ = false;
+        eFPAMDNFJCO_ = false;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -550,7 +548,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -561,7 +559,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -571,33 +569,33 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
 
-      private boolean hMIHEBDACID_ ;
+      private boolean oKOGFEEBGOK_ ;
       /**
-       * <code>bool HMIHEBDACID = 8;</code>
-       * @return The hMIHEBDACID.
+       * <code>bool OKOGFEEBGOK = 14;</code>
+       * @return The oKOGFEEBGOK.
        */
       @java.lang.Override
-      public boolean getHMIHEBDACID() {
-        return hMIHEBDACID_;
+      public boolean getOKOGFEEBGOK() {
+        return oKOGFEEBGOK_;
       }
       /**
-       * <code>bool HMIHEBDACID = 8;</code>
-       * @param value The hMIHEBDACID to set.
+       * <code>bool OKOGFEEBGOK = 14;</code>
+       * @param value The oKOGFEEBGOK to set.
        * @return This builder for chaining.
        */
-      public Builder setHMIHEBDACID(boolean value) {
+      public Builder setOKOGFEEBGOK(boolean value) {
         
-        hMIHEBDACID_ = value;
+        oKOGFEEBGOK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool HMIHEBDACID = 8;</code>
+       * <code>bool OKOGFEEBGOK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHMIHEBDACID() {
+      public Builder clearOKOGFEEBGOK() {
         
-        hMIHEBDACID_ = false;
+        oKOGFEEBGOK_ = false;
         onChanged();
         return this;
       }
@@ -669,9 +667,9 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%HomeSetBlueprintFriendOptionRsp.proto\"" +
-      "\\\n\037HomeSetBlueprintFriendOptionRsp\022\023\n\013BN" +
-      "AIJODKBJL\030\n \001(\010\022\017\n\007retcode\030\001 \001(\005\022\023\n\013HMIH" +
-      "EBDACID\030\010 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "\\\n\037HomeSetBlueprintFriendOptionRsp\022\023\n\013EF" +
+      "PAMDNFJCO\030\t \001(\010\022\017\n\007retcode\030\014 \001(\005\022\023\n\013OKOG" +
+      "FEEBGOK\030\016 \001(\010B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +681,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     internal_static_HomeSetBlueprintFriendOptionRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSetBlueprintFriendOptionRsp_descriptor,
-        new java.lang.String[] { "BNAIJODKBJL", "Retcode", "HMIHEBDACID", });
+        new java.lang.String[] { "EFPAMDNFJCO", "Retcode", "OKOGFEEBGOK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

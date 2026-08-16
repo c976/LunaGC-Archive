@@ -19,33 +19,53 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GalleryStopReason reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
+     * @return The isNewRecord.
      */
-    int getReasonValue();
-    /**
-     * <code>.GalleryStopReason reason = 13;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
+    boolean getIsNewRecord();
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 cost_time = 12;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 3;</code>
+     * @return The nMGJKKDMGPK.
      */
-    int getCostTime();
+    int getNMGJKKDMGPK();
 
     /**
-     * <code>bool is_new_record = 10;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
      */
-    boolean getIsNewRecord();
+    int getReasonValue();
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
   }
   /**
    * Protobuf type {@code LostSamachurlSneakDungeonSettleInfo}
@@ -93,22 +113,22 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              nMGJKKDMGPK_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 96: {
-
-              costTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 112: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -146,29 +166,29 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo.class, emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 13;
-    private int reason_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    private boolean isNewRecord_;
     /**
-     * <code>.GalleryStopReason reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_new_record = 12;</code>
+     * @return The isNewRecord.
      */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.GalleryStopReason reason = 13;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -176,26 +196,46 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 12;
-    private int costTime_;
+    public static final int NMGJKKDMGPK_FIELD_NUMBER = 3;
+    private int nMGJKKDMGPK_;
     /**
-     * <code>uint32 cost_time = 12;</code>
-     * @return The costTime.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NMGJKKDMGPK = 3;</code>
+     * @return The nMGJKKDMGPK.
      */
     @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
+    public int getNMGJKKDMGPK() {
+      return nMGJKKDMGPK_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
-    private boolean isNewRecord_;
+    public static final int REASON_FIELD_NUMBER = 14;
+    private int reason_;
     /**
-     * <code>bool is_new_record = 10;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
      */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>.GalleryStopReason reason = 14;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,17 +252,17 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (nMGJKKDMGPK_ != 0) {
+        output.writeUInt32(3, nMGJKKDMGPK_);
+      }
       if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
+        output.writeUInt32(8, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(10, isNewRecord_);
+        output.writeBool(12, isNewRecord_);
       }
-      if (costTime_ != 0) {
-        output.writeUInt32(12, costTime_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        output.writeEnum(13, reason_);
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        output.writeEnum(14, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -233,21 +273,21 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (nMGJKKDMGPK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, nMGJKKDMGPK_);
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
+          .computeUInt32Size(8, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isNewRecord_);
+          .computeBoolSize(12, isNewRecord_);
       }
-      if (costTime_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, costTime_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, reason_);
+          .computeEnumSize(14, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -264,13 +304,13 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo other = (emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo) obj;
 
-      if (reason_ != other.reason_) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getNMGJKKDMGPK()
+          != other.getNMGJKKDMGPK()) return false;
+      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -282,15 +322,15 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + NMGJKKDMGPK_FIELD_NUMBER;
+      hash = (53 * hash) + getNMGJKKDMGPK();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -424,13 +464,13 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reason_ = 0;
+        isNewRecord_ = false;
 
         levelId_ = 0;
 
-        costTime_ = 0;
+        nMGJKKDMGPK_ = 0;
 
-        isNewRecord_ = false;
+        reason_ = 0;
 
         return this;
       }
@@ -458,10 +498,10 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo buildPartial() {
         emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo result = new emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo(this);
-        result.reason_ = reason_;
-        result.levelId_ = levelId_;
-        result.costTime_ = costTime_;
         result.isNewRecord_ = isNewRecord_;
+        result.levelId_ = levelId_;
+        result.nMGJKKDMGPK_ = nMGJKKDMGPK_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -510,17 +550,17 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.LostSamachurlSneakDungeonSettleInfoOuterClass.LostSamachurlSneakDungeonSettleInfo.getDefaultInstance()) return this;
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
+        if (other.getNMGJKKDMGPK() != 0) {
+          setNMGJKKDMGPK(other.getNMGJKKDMGPK());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -551,16 +591,153 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
         return this;
       }
 
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_new_record = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 level_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMGJKKDMGPK_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @return The nMGJKKDMGPK.
+       */
+      @java.lang.Override
+      public int getNMGJKKDMGPK() {
+        return nMGJKKDMGPK_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @param value The nMGJKKDMGPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMGJKKDMGPK(int value) {
+        
+        nMGJKKDMGPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NMGJKKDMGPK = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMGJKKDMGPK() {
+        
+        nMGJKKDMGPK_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -571,7 +748,11 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -581,7 +762,11 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -595,105 +780,16 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>.GalleryStopReason reason = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
         
         reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 12;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 12;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 10;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 10;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -765,12 +861,12 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)LostSamachurlSneakDungeonSettleInfo.pr" +
-      "oto\032\027GalleryStopReason.proto\"\205\001\n#LostSam" +
-      "achurlSneakDungeonSettleInfo\022\"\n\006reason\030\r" +
-      " \001(\0162\022.GalleryStopReason\022\020\n\010level_id\030\001 \001" +
-      "(\r\022\021\n\tcost_time\030\014 \001(\r\022\025\n\ris_new_record\030\n" +
-      " \001(\010B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "oto\032\027GalleryStopReason.proto\"\207\001\n#LostSam" +
+      "achurlSneakDungeonSettleInfo\022\025\n\ris_new_r" +
+      "ecord\030\014 \001(\010\022\020\n\010level_id\030\010 \001(\r\022\023\n\013NMGJKKD" +
+      "MGPK\030\003 \001(\r\022\"\n\006reason\030\016 \001(\0162\022.GalleryStop" +
+      "ReasonB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -782,7 +878,7 @@ public final class LostSamachurlSneakDungeonSettleInfoOuterClass {
     internal_static_LostSamachurlSneakDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LostSamachurlSneakDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "Reason", "LevelId", "CostTime", "IsNewRecord", });
+        new java.lang.String[] { "IsNewRecord", "LevelId", "NMGJKKDMGPK", "Reason", });
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
   }
 

@@ -20,48 +20,48 @@ public final class RegionSearchStateOuterClass {
   public enum RegionSearchState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>REGION_SEARCH_NONE = 0;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_NONE = 0;</code>
      */
-    REGION_SEARCH_NONE(0),
+    CCNGPDLFGFE_REGION_SEARCH_NONE(0),
     /**
-     * <code>REGION_SEARCH_UNSTARTED = 1;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_UNSTARTED = 1;</code>
      */
-    REGION_SEARCH_UNSTARTED(1),
+    CCNGPDLFGFE_REGION_SEARCH_UNSTARTED(1),
     /**
-     * <code>REGION_SEARCH_STARTED = 2;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_STARTED = 2;</code>
      */
-    REGION_SEARCH_STARTED(2),
+    CCNGPDLFGFE_REGION_SEARCH_STARTED(2),
     /**
-     * <code>REGION_SEARCH_WAIT_REWARD = 3;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_WAIT_REWARD = 3;</code>
      */
-    REGION_SEARCH_WAIT_REWARD(3),
+    CCNGPDLFGFE_REGION_SEARCH_WAIT_REWARD(3),
     /**
-     * <code>REGION_SEARCH_FINISHED = 4;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_FINISHED = 4;</code>
      */
-    REGION_SEARCH_FINISHED(4),
+    CCNGPDLFGFE_REGION_SEARCH_FINISHED(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>REGION_SEARCH_NONE = 0;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_NONE = 0;</code>
      */
-    public static final int REGION_SEARCH_NONE_VALUE = 0;
+    public static final int CCNGPDLFGFE_REGION_SEARCH_NONE_VALUE = 0;
     /**
-     * <code>REGION_SEARCH_UNSTARTED = 1;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_UNSTARTED = 1;</code>
      */
-    public static final int REGION_SEARCH_UNSTARTED_VALUE = 1;
+    public static final int CCNGPDLFGFE_REGION_SEARCH_UNSTARTED_VALUE = 1;
     /**
-     * <code>REGION_SEARCH_STARTED = 2;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_STARTED = 2;</code>
      */
-    public static final int REGION_SEARCH_STARTED_VALUE = 2;
+    public static final int CCNGPDLFGFE_REGION_SEARCH_STARTED_VALUE = 2;
     /**
-     * <code>REGION_SEARCH_WAIT_REWARD = 3;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_WAIT_REWARD = 3;</code>
      */
-    public static final int REGION_SEARCH_WAIT_REWARD_VALUE = 3;
+    public static final int CCNGPDLFGFE_REGION_SEARCH_WAIT_REWARD_VALUE = 3;
     /**
-     * <code>REGION_SEARCH_FINISHED = 4;</code>
+     * <code>CCNGPDLFGFE_REGION_SEARCH_FINISHED = 4;</code>
      */
-    public static final int REGION_SEARCH_FINISHED_VALUE = 4;
+    public static final int CCNGPDLFGFE_REGION_SEARCH_FINISHED_VALUE = 4;
 
 
     public final int getNumber() {
@@ -88,11 +88,11 @@ public final class RegionSearchStateOuterClass {
      */
     public static RegionSearchState forNumber(int value) {
       switch (value) {
-        case 0: return REGION_SEARCH_NONE;
-        case 1: return REGION_SEARCH_UNSTARTED;
-        case 2: return REGION_SEARCH_STARTED;
-        case 3: return REGION_SEARCH_WAIT_REWARD;
-        case 4: return REGION_SEARCH_FINISHED;
+        case 0: return CCNGPDLFGFE_REGION_SEARCH_NONE;
+        case 1: return CCNGPDLFGFE_REGION_SEARCH_UNSTARTED;
+        case 2: return CCNGPDLFGFE_REGION_SEARCH_STARTED;
+        case 3: return CCNGPDLFGFE_REGION_SEARCH_WAIT_REWARD;
+        case 4: return CCNGPDLFGFE_REGION_SEARCH_FINISHED;
         default: return null;
       }
     }
@@ -158,12 +158,14 @@ public final class RegionSearchStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027RegionSearchState.proto*\236\001\n\021RegionSear" +
-      "chState\022\026\n\022REGION_SEARCH_NONE\020\000\022\033\n\027REGIO" +
-      "N_SEARCH_UNSTARTED\020\001\022\031\n\025REGION_SEARCH_ST" +
-      "ARTED\020\002\022\035\n\031REGION_SEARCH_WAIT_REWARD\020\003\022\032" +
-      "\n\026REGION_SEARCH_FINISHED\020\004B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\027RegionSearchState.proto*\332\001\n\021RegionSear" +
+      "chState\022\"\n\036CCNGPDLFGFE_REGION_SEARCH_NON" +
+      "E\020\000\022\'\n#CCNGPDLFGFE_REGION_SEARCH_UNSTART" +
+      "ED\020\001\022%\n!CCNGPDLFGFE_REGION_SEARCH_STARTE" +
+      "D\020\002\022)\n%CCNGPDLFGFE_REGION_SEARCH_WAIT_RE" +
+      "WARD\020\003\022&\n\"CCNGPDLFGFE_REGION_SEARCH_FINI" +
+      "SHED\020\004B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

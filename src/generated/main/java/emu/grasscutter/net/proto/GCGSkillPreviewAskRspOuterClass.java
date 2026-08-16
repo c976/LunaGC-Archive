@@ -19,17 +19,16 @@ public final class GCGSkillPreviewAskRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * CMD_ID = 23919
+     * </pre>
+     *
      * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 24602
-   * Obf: BGEPCHMCEBK
-   * </pre>
-   *
    * Protobuf type {@code GCGSkillPreviewAskRsp}
    */
   public static final class GCGSkillPreviewAskRsp extends
@@ -114,6 +113,10 @@ public final class GCGSkillPreviewAskRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
+     * <pre>
+     * CMD_ID = 23919
+     * </pre>
+     *
      * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
@@ -278,11 +281,6 @@ public final class GCGSkillPreviewAskRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 24602
-     * Obf: BGEPCHMCEBK
-     * </pre>
-     *
      * Protobuf type {@code GCGSkillPreviewAskRsp}
      */
     public static final class Builder extends
@@ -431,6 +429,10 @@ public final class GCGSkillPreviewAskRspOuterClass {
 
       private int retcode_ ;
       /**
+       * <pre>
+       * CMD_ID = 23919
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
@@ -439,6 +441,10 @@ public final class GCGSkillPreviewAskRspOuterClass {
         return retcode_;
       }
       /**
+       * <pre>
+       * CMD_ID = 23919
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -450,6 +456,10 @@ public final class GCGSkillPreviewAskRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * CMD_ID = 23919
+       * </pre>
+       *
        * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */

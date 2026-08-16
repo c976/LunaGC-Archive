@@ -19,38 +19,62 @@ public final class BatchBuyGoodsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> 
-        getBuyGoodsListList();
+        getEPCBKICFFJGList();
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
-    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index);
+    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getEPCBKICFFJG(int index);
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
-    int getBuyGoodsListCount();
+    int getEPCBKICFFJGCount();
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-        getBuyGoodsListOrBuilderList();
+        getEPCBKICFFJGOrBuilderList();
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
-    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
+    emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getEPCBKICFFJGOrBuilder(
         int index);
 
     /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OCKGKNNDLLJ = 5;</code>
+     * @return The oCKGKNNDLLJ.
      */
-    int getShopType();
+    int getOCKGKNNDLLJ();
   }
   /**
    * <pre>
-   * CmdId: 406
+   * CmdId: 25072
    * </pre>
    *
    * Protobuf type {@code BatchBuyGoodsReq}
@@ -65,7 +89,7 @@ public final class BatchBuyGoodsReqOuterClass {
       super(builder);
     }
     private BatchBuyGoodsReq() {
-      buyGoodsList_ = java.util.Collections.emptyList();
+      ePCBKICFFJG_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -99,17 +123,17 @@ public final class BatchBuyGoodsReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 40: {
 
-              shopType_ = input.readUInt32();
+              oCKGKNNDLLJ_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                buyGoodsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>();
+                ePCBKICFFJG_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              buyGoodsList_.add(
+              ePCBKICFFJG_.add(
                   input.readMessage(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.parser(), extensionRegistry));
               break;
             }
@@ -129,7 +153,7 @@ public final class BatchBuyGoodsReqOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
+          ePCBKICFFJG_ = java.util.Collections.unmodifiableList(ePCBKICFFJG_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -148,55 +172,79 @@ public final class BatchBuyGoodsReqOuterClass {
               emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.class, emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.Builder.class);
     }
 
-    public static final int BUY_GOODS_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_;
+    public static final int EPCBKICFFJG_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> ePCBKICFFJG_;
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getBuyGoodsListList() {
-      return buyGoodsList_;
+    public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getEPCBKICFFJGList() {
+      return ePCBKICFFJG_;
     }
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-        getBuyGoodsListOrBuilderList() {
-      return buyGoodsList_;
+        getEPCBKICFFJGOrBuilderList() {
+      return ePCBKICFFJG_;
     }
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     @java.lang.Override
-    public int getBuyGoodsListCount() {
-      return buyGoodsList_.size();
+    public int getEPCBKICFFJGCount() {
+      return ePCBKICFFJG_.size();
     }
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index) {
-      return buyGoodsList_.get(index);
+    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getEPCBKICFFJG(int index) {
+      return ePCBKICFFJG_.get(index);
     }
     /**
-     * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
+    public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getEPCBKICFFJGOrBuilder(
         int index) {
-      return buyGoodsList_.get(index);
+      return ePCBKICFFJG_.get(index);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 10;
-    private int shopType_;
+    public static final int OCKGKNNDLLJ_FIELD_NUMBER = 5;
+    private int oCKGKNNDLLJ_;
     /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 OCKGKNNDLLJ = 5;</code>
+     * @return The oCKGKNNDLLJ.
      */
     @java.lang.Override
-    public int getShopType() {
-      return shopType_;
+    public int getOCKGKNNDLLJ() {
+      return oCKGKNNDLLJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -213,11 +261,11 @@ public final class BatchBuyGoodsReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shopType_ != 0) {
-        output.writeUInt32(10, shopType_);
+      if (oCKGKNNDLLJ_ != 0) {
+        output.writeUInt32(5, oCKGKNNDLLJ_);
       }
-      for (int i = 0; i < buyGoodsList_.size(); i++) {
-        output.writeMessage(15, buyGoodsList_.get(i));
+      for (int i = 0; i < ePCBKICFFJG_.size(); i++) {
+        output.writeMessage(6, ePCBKICFFJG_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -228,13 +276,13 @@ public final class BatchBuyGoodsReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shopType_ != 0) {
+      if (oCKGKNNDLLJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, shopType_);
+          .computeUInt32Size(5, oCKGKNNDLLJ_);
       }
-      for (int i = 0; i < buyGoodsList_.size(); i++) {
+      for (int i = 0; i < ePCBKICFFJG_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, buyGoodsList_.get(i));
+          .computeMessageSize(6, ePCBKICFFJG_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -251,10 +299,10 @@ public final class BatchBuyGoodsReqOuterClass {
       }
       emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq other = (emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq) obj;
 
-      if (!getBuyGoodsListList()
-          .equals(other.getBuyGoodsListList())) return false;
-      if (getShopType()
-          != other.getShopType()) return false;
+      if (!getEPCBKICFFJGList()
+          .equals(other.getEPCBKICFFJGList())) return false;
+      if (getOCKGKNNDLLJ()
+          != other.getOCKGKNNDLLJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -266,12 +314,12 @@ public final class BatchBuyGoodsReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getBuyGoodsListCount() > 0) {
-        hash = (37 * hash) + BUY_GOODS_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBuyGoodsListList().hashCode();
+      if (getEPCBKICFFJGCount() > 0) {
+        hash = (37 * hash) + EPCBKICFFJG_FIELD_NUMBER;
+        hash = (53 * hash) + getEPCBKICFFJGList().hashCode();
       }
-      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getShopType();
+      hash = (37 * hash) + OCKGKNNDLLJ_FIELD_NUMBER;
+      hash = (53 * hash) + getOCKGKNNDLLJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -369,7 +417,7 @@ public final class BatchBuyGoodsReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 406
+     * CmdId: 25072
      * </pre>
      *
      * Protobuf type {@code BatchBuyGoodsReq}
@@ -404,19 +452,19 @@ public final class BatchBuyGoodsReqOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getBuyGoodsListFieldBuilder();
+          getEPCBKICFFJGFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (buyGoodsListBuilder_ == null) {
-          buyGoodsList_ = java.util.Collections.emptyList();
+        if (ePCBKICFFJGBuilder_ == null) {
+          ePCBKICFFJG_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          buyGoodsListBuilder_.clear();
+          ePCBKICFFJGBuilder_.clear();
         }
-        shopType_ = 0;
+        oCKGKNNDLLJ_ = 0;
 
         return this;
       }
@@ -445,16 +493,16 @@ public final class BatchBuyGoodsReqOuterClass {
       public emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq buildPartial() {
         emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq result = new emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq(this);
         int from_bitField0_ = bitField0_;
-        if (buyGoodsListBuilder_ == null) {
+        if (ePCBKICFFJGBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
+            ePCBKICFFJG_ = java.util.Collections.unmodifiableList(ePCBKICFFJG_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.buyGoodsList_ = buyGoodsList_;
+          result.ePCBKICFFJG_ = ePCBKICFFJG_;
         } else {
-          result.buyGoodsList_ = buyGoodsListBuilder_.build();
+          result.ePCBKICFFJG_ = ePCBKICFFJGBuilder_.build();
         }
-        result.shopType_ = shopType_;
+        result.oCKGKNNDLLJ_ = oCKGKNNDLLJ_;
         onBuilt();
         return result;
       }
@@ -503,34 +551,34 @@ public final class BatchBuyGoodsReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq other) {
         if (other == emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.getDefaultInstance()) return this;
-        if (buyGoodsListBuilder_ == null) {
-          if (!other.buyGoodsList_.isEmpty()) {
-            if (buyGoodsList_.isEmpty()) {
-              buyGoodsList_ = other.buyGoodsList_;
+        if (ePCBKICFFJGBuilder_ == null) {
+          if (!other.ePCBKICFFJG_.isEmpty()) {
+            if (ePCBKICFFJG_.isEmpty()) {
+              ePCBKICFFJG_ = other.ePCBKICFFJG_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureBuyGoodsListIsMutable();
-              buyGoodsList_.addAll(other.buyGoodsList_);
+              ensureEPCBKICFFJGIsMutable();
+              ePCBKICFFJG_.addAll(other.ePCBKICFFJG_);
             }
             onChanged();
           }
         } else {
-          if (!other.buyGoodsList_.isEmpty()) {
-            if (buyGoodsListBuilder_.isEmpty()) {
-              buyGoodsListBuilder_.dispose();
-              buyGoodsListBuilder_ = null;
-              buyGoodsList_ = other.buyGoodsList_;
+          if (!other.ePCBKICFFJG_.isEmpty()) {
+            if (ePCBKICFFJGBuilder_.isEmpty()) {
+              ePCBKICFFJGBuilder_.dispose();
+              ePCBKICFFJGBuilder_ = null;
+              ePCBKICFFJG_ = other.ePCBKICFFJG_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              buyGoodsListBuilder_ = 
+              ePCBKICFFJGBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getBuyGoodsListFieldBuilder() : null;
+                   getEPCBKICFFJGFieldBuilder() : null;
             } else {
-              buyGoodsListBuilder_.addAllMessages(other.buyGoodsList_);
+              ePCBKICFFJGBuilder_.addAllMessages(other.ePCBKICFFJG_);
             }
           }
         }
-        if (other.getShopType() != 0) {
-          setShopType(other.getShopType());
+        if (other.getOCKGKNNDLLJ() != 0) {
+          setOCKGKNNDLLJ(other.getOCKGKNNDLLJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -562,273 +610,357 @@ public final class BatchBuyGoodsReqOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_ =
+      private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> ePCBKICFFJG_ =
         java.util.Collections.emptyList();
-      private void ensureBuyGoodsListIsMutable() {
+      private void ensureEPCBKICFFJGIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          buyGoodsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>(buyGoodsList_);
+          ePCBKICFFJG_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam>(ePCBKICFFJG_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> buyGoodsListBuilder_;
+          emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> ePCBKICFFJGBuilder_;
 
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getBuyGoodsListList() {
-        if (buyGoodsListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(buyGoodsList_);
+      public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> getEPCBKICFFJGList() {
+        if (ePCBKICFFJGBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(ePCBKICFFJG_);
         } else {
-          return buyGoodsListBuilder_.getMessageList();
+          return ePCBKICFFJGBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public int getBuyGoodsListCount() {
-        if (buyGoodsListBuilder_ == null) {
-          return buyGoodsList_.size();
+      public int getEPCBKICFFJGCount() {
+        if (ePCBKICFFJGBuilder_ == null) {
+          return ePCBKICFFJG_.size();
         } else {
-          return buyGoodsListBuilder_.getCount();
+          return ePCBKICFFJGBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getBuyGoodsList(int index) {
-        if (buyGoodsListBuilder_ == null) {
-          return buyGoodsList_.get(index);
+      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam getEPCBKICFFJG(int index) {
+        if (ePCBKICFFJGBuilder_ == null) {
+          return ePCBKICFFJG_.get(index);
         } else {
-          return buyGoodsListBuilder_.getMessage(index);
+          return ePCBKICFFJGBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder setBuyGoodsList(
+      public Builder setEPCBKICFFJG(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
-        if (buyGoodsListBuilder_ == null) {
+        if (ePCBKICFFJGBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.set(index, value);
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.set(index, value);
           onChanged();
         } else {
-          buyGoodsListBuilder_.setMessage(index, value);
+          ePCBKICFFJGBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder setBuyGoodsList(
+      public Builder setEPCBKICFFJG(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
-        if (buyGoodsListBuilder_ == null) {
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.set(index, builderForValue.build());
+        if (ePCBKICFFJGBuilder_ == null) {
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.set(index, builderForValue.build());
           onChanged();
         } else {
-          buyGoodsListBuilder_.setMessage(index, builderForValue.build());
+          ePCBKICFFJGBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder addBuyGoodsList(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
-        if (buyGoodsListBuilder_ == null) {
+      public Builder addEPCBKICFFJG(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
+        if (ePCBKICFFJGBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.add(value);
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.add(value);
           onChanged();
         } else {
-          buyGoodsListBuilder_.addMessage(value);
+          ePCBKICFFJGBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder addBuyGoodsList(
+      public Builder addEPCBKICFFJG(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam value) {
-        if (buyGoodsListBuilder_ == null) {
+        if (ePCBKICFFJGBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.add(index, value);
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.add(index, value);
           onChanged();
         } else {
-          buyGoodsListBuilder_.addMessage(index, value);
+          ePCBKICFFJGBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder addBuyGoodsList(
+      public Builder addEPCBKICFFJG(
           emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
-        if (buyGoodsListBuilder_ == null) {
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.add(builderForValue.build());
+        if (ePCBKICFFJGBuilder_ == null) {
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.add(builderForValue.build());
           onChanged();
         } else {
-          buyGoodsListBuilder_.addMessage(builderForValue.build());
+          ePCBKICFFJGBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder addBuyGoodsList(
+      public Builder addEPCBKICFFJG(
           int index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder builderForValue) {
-        if (buyGoodsListBuilder_ == null) {
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.add(index, builderForValue.build());
+        if (ePCBKICFFJGBuilder_ == null) {
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.add(index, builderForValue.build());
           onChanged();
         } else {
-          buyGoodsListBuilder_.addMessage(index, builderForValue.build());
+          ePCBKICFFJGBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder addAllBuyGoodsList(
+      public Builder addAllEPCBKICFFJG(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> values) {
-        if (buyGoodsListBuilder_ == null) {
-          ensureBuyGoodsListIsMutable();
+        if (ePCBKICFFJGBuilder_ == null) {
+          ensureEPCBKICFFJGIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, buyGoodsList_);
+              values, ePCBKICFFJG_);
           onChanged();
         } else {
-          buyGoodsListBuilder_.addAllMessages(values);
+          ePCBKICFFJGBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder clearBuyGoodsList() {
-        if (buyGoodsListBuilder_ == null) {
-          buyGoodsList_ = java.util.Collections.emptyList();
+      public Builder clearEPCBKICFFJG() {
+        if (ePCBKICFFJGBuilder_ == null) {
+          ePCBKICFFJG_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          buyGoodsListBuilder_.clear();
+          ePCBKICFFJGBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public Builder removeBuyGoodsList(int index) {
-        if (buyGoodsListBuilder_ == null) {
-          ensureBuyGoodsListIsMutable();
-          buyGoodsList_.remove(index);
+      public Builder removeEPCBKICFFJG(int index) {
+        if (ePCBKICFFJGBuilder_ == null) {
+          ensureEPCBKICFFJGIsMutable();
+          ePCBKICFFJG_.remove(index);
           onChanged();
         } else {
-          buyGoodsListBuilder_.remove(index);
+          ePCBKICFFJGBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder getBuyGoodsListBuilder(
+      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder getEPCBKICFFJGBuilder(
           int index) {
-        return getBuyGoodsListFieldBuilder().getBuilder(index);
+        return getEPCBKICFFJGFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
+      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getEPCBKICFFJGOrBuilder(
           int index) {
-        if (buyGoodsListBuilder_ == null) {
-          return buyGoodsList_.get(index);  } else {
-          return buyGoodsListBuilder_.getMessageOrBuilder(index);
+        if (ePCBKICFFJGBuilder_ == null) {
+          return ePCBKICFFJG_.get(index);  } else {
+          return ePCBKICFFJGBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-           getBuyGoodsListOrBuilderList() {
-        if (buyGoodsListBuilder_ != null) {
-          return buyGoodsListBuilder_.getMessageOrBuilderList();
+           getEPCBKICFFJGOrBuilderList() {
+        if (ePCBKICFFJGBuilder_ != null) {
+          return ePCBKICFFJGBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(buyGoodsList_);
+          return java.util.Collections.unmodifiableList(ePCBKICFFJG_);
         }
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addBuyGoodsListBuilder() {
-        return getBuyGoodsListFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addEPCBKICFFJGBuilder() {
+        return getEPCBKICFFJGFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
-      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addBuyGoodsListBuilder(
+      public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder addEPCBKICFFJGBuilder(
           int index) {
-        return getBuyGoodsListFieldBuilder().addBuilder(
+        return getEPCBKICFFJGFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuyGoodsParam buy_goods_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .BuyGoodsParam EPCBKICFFJG = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder> 
-           getBuyGoodsListBuilderList() {
-        return getBuyGoodsListFieldBuilder().getBuilderList();
+           getEPCBKICFFJGBuilderList() {
+        return getEPCBKICFFJGFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder> 
-          getBuyGoodsListFieldBuilder() {
-        if (buyGoodsListBuilder_ == null) {
-          buyGoodsListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getEPCBKICFFJGFieldBuilder() {
+        if (ePCBKICFFJGBuilder_ == null) {
+          ePCBKICFFJGBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder>(
-                  buyGoodsList_,
+                  ePCBKICFFJG_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          buyGoodsList_ = null;
+          ePCBKICFFJG_ = null;
         }
-        return buyGoodsListBuilder_;
+        return ePCBKICFFJGBuilder_;
       }
 
-      private int shopType_ ;
+      private int oCKGKNNDLLJ_ ;
       /**
-       * <code>uint32 shop_type = 10;</code>
-       * @return The shopType.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 5;</code>
+       * @return The oCKGKNNDLLJ.
        */
       @java.lang.Override
-      public int getShopType() {
-        return shopType_;
+      public int getOCKGKNNDLLJ() {
+        return oCKGKNNDLLJ_;
       }
       /**
-       * <code>uint32 shop_type = 10;</code>
-       * @param value The shopType to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 5;</code>
+       * @param value The oCKGKNNDLLJ to set.
        * @return This builder for chaining.
        */
-      public Builder setShopType(int value) {
+      public Builder setOCKGKNNDLLJ(int value) {
         
-        shopType_ = value;
+        oCKGKNNDLLJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 shop_type = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearShopType() {
+      public Builder clearOCKGKNNDLLJ() {
         
-        shopType_ = 0;
+        oCKGKNNDLLJ_ = 0;
         onChanged();
         return this;
       }
@@ -900,10 +1032,9 @@ public final class BatchBuyGoodsReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026BatchBuyGoodsReq.proto\032\023BuyGoodsParam." +
-      "proto\"M\n\020BatchBuyGoodsReq\022&\n\016buy_goods_l" +
-      "ist\030\017 \003(\0132\016.BuyGoodsParam\022\021\n\tshop_type\030\n" +
-      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "proto\"L\n\020BatchBuyGoodsReq\022#\n\013EPCBKICFFJG" +
+      "\030\006 \003(\0132\016.BuyGoodsParam\022\023\n\013OCKGKNNDLLJ\030\005 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -915,7 +1046,7 @@ public final class BatchBuyGoodsReqOuterClass {
     internal_static_BatchBuyGoodsReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BatchBuyGoodsReq_descriptor,
-        new java.lang.String[] { "BuyGoodsList", "ShopType", });
+        new java.lang.String[] { "EPCBKICFFJG", "OCKGKNNDLLJ", });
     emu.grasscutter.net.proto.BuyGoodsParamOuterClass.getDescriptor();
   }
 

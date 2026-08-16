@@ -19,21 +19,28 @@ public final class FleurFairMusicGameStartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 music_basic_id = 12;</code>
      * @return The musicBasicId.
      */
     int getMusicBasicId();
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21453
-   * Obf: PMKEBLJDAIA
+   * CmdId: 5797
    * </pre>
    *
    * Protobuf type {@code FleurFairMusicGameStartRsp}
@@ -80,7 +87,7 @@ public final class FleurFairMusicGameStartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
@@ -125,6 +132,10 @@ public final class FleurFairMusicGameStartRspOuterClass {
     public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 12;
     private int musicBasicId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 music_basic_id = 12;</code>
      * @return The musicBasicId.
      */
@@ -133,10 +144,14 @@ public final class FleurFairMusicGameStartRspOuterClass {
       return musicBasicId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,7 +174,7 @@ public final class FleurFairMusicGameStartRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (musicBasicId_ != 0) {
         output.writeUInt32(12, musicBasicId_);
@@ -175,7 +190,7 @@ public final class FleurFairMusicGameStartRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (musicBasicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +327,7 @@ public final class FleurFairMusicGameStartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21453
-     * Obf: PMKEBLJDAIA
+     * CmdId: 5797
      * </pre>
      *
      * Protobuf type {@code FleurFairMusicGameStartRsp}
@@ -470,6 +484,10 @@ public final class FleurFairMusicGameStartRspOuterClass {
 
       private int musicBasicId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 music_basic_id = 12;</code>
        * @return The musicBasicId.
        */
@@ -478,6 +496,10 @@ public final class FleurFairMusicGameStartRspOuterClass {
         return musicBasicId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 music_basic_id = 12;</code>
        * @param value The musicBasicId to set.
        * @return This builder for chaining.
@@ -489,6 +511,10 @@ public final class FleurFairMusicGameStartRspOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 music_basic_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -501,7 +527,11 @@ public final class FleurFairMusicGameStartRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class FleurFairMusicGameStartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class FleurFairMusicGameStartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +636,7 @@ public final class FleurFairMusicGameStartRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n FleurFairMusicGameStartRsp.proto\"E\n\032Fl" +
       "eurFairMusicGameStartRsp\022\026\n\016music_basic_" +
-      "id\030\014 \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscu" +
+      "id\030\014 \001(\r\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

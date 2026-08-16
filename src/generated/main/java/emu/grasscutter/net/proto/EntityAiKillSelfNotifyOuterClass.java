@@ -19,16 +19,14 @@ public final class EntityAiKillSelfNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * 4.7.0
-   * Obf: KENDFFHKAEL?
-   * CmdId: 4703
+   * CmdId: 22643
    * </pre>
    *
    * Protobuf type {@code EntityAiKillSelfNotify}
@@ -75,7 +73,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 88: {
 
               entityId_ = input.readUInt32();
               break;
@@ -112,10 +110,10 @@ public final class EntityAiKillSelfNotifyOuterClass {
               emu.grasscutter.net.proto.EntityAiKillSelfNotifyOuterClass.EntityAiKillSelfNotify.class, emu.grasscutter.net.proto.EntityAiKillSelfNotifyOuterClass.EntityAiKillSelfNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -138,7 +136,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,7 +149,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,9 +278,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
-     * Obf: KENDFFHKAEL?
-     * CmdId: 4703
+     * CmdId: 22643
      * </pre>
      *
      * Protobuf type {@code EntityAiKillSelfNotify}
@@ -433,7 +429,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -441,7 +437,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -452,7 +448,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -529,7 +525,7 @@ public final class EntityAiKillSelfNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EntityAiKillSelfNotify.proto\"+\n\026Entity" +
-      "AiKillSelfNotify\022\021\n\tentity_id\030\017 \001(\rB\033\n\031e" +
+      "AiKillSelfNotify\022\021\n\tentity_id\030\013 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

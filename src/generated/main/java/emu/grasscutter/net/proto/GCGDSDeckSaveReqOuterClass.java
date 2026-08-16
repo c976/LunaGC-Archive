@@ -19,63 +19,66 @@ public final class GCGDSDeckSaveReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @return A list containing the aPCFHCPFONE.
+     * <pre>
+     * CMD_ID = 8059
+     * </pre>
+     *
+     * <code>string name = 6;</code>
+     * @return The name.
      */
-    java.util.List<java.lang.Integer> getAPCFHCPFONEList();
+    java.lang.String getName();
     /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @return The count of aPCFHCPFONE.
+     * <pre>
+     * CMD_ID = 8059
+     * </pre>
+     *
+     * <code>string name = 6;</code>
+     * @return The bytes for name.
      */
-    int getAPCFHCPFONECount();
-    /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @param index The index of the element to return.
-     * @return The aPCFHCPFONE at the given index.
-     */
-    int getAPCFHCPFONE(int index);
+    com.google.protobuf.ByteString
+        getNameBytes();
 
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 9;</code>
      * @return A list containing the cardList.
      */
     java.util.List<java.lang.Integer> getCardListList();
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 9;</code>
      * @return The count of cardList.
      */
     int getCardListCount();
     /**
-     * <code>repeated uint32 card_list = 7;</code>
+     * <code>repeated uint32 card_list = 9;</code>
      * @param index The index of the element to return.
      * @return The cardList at the given index.
      */
     int getCardList(int index);
 
     /**
-     * <code>uint32 deck_id = 8;</code>
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @return A list containing the characterCardList.
+     */
+    java.util.List<java.lang.Integer> getCharacterCardListList();
+    /**
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @return The count of characterCardList.
+     */
+    int getCharacterCardListCount();
+    /**
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The characterCardList at the given index.
+     */
+    int getCharacterCardList(int index);
+
+    /**
+     * <code>uint32 deck_id = 1;</code>
      * @return The deckId.
      */
     int getDeckId();
-
-    /**
-     * <code>string name = 9;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <code>string name = 9;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
   }
   /**
-   * <pre>
-   * CmdId: 1963
-   * Obf: IPIBAHELHDK
-   * </pre>
-   *
    * Protobuf type {@code GCGDSDeckSaveReq}
    */
   public static final class GCGDSDeckSaveReq extends
@@ -88,9 +91,9 @@ public final class GCGDSDeckSaveReqOuterClass {
       super(builder);
     }
     private GCGDSDeckSaveReq() {
-      aPCFHCPFONE_ = emptyIntList();
-      cardList_ = emptyIntList();
       name_ = "";
+      cardList_ = emptyIntList();
+      characterCardList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -124,20 +127,31 @@ public final class GCGDSDeckSaveReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 8: {
+
+              deckId_ = input.readUInt32();
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 72: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               cardList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 cardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 cardList_.addInt(input.readUInt32());
@@ -145,34 +159,23 @@ public final class GCGDSDeckSaveReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
-
-              deckId_ = input.readUInt32();
-              break;
-            }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              name_ = s;
-              break;
-            }
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aPCFHCPFONE_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                characterCardList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              aPCFHCPFONE_.addInt(input.readUInt32());
+              characterCardList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                aPCFHCPFONE_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                characterCardList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                aPCFHCPFONE_.addInt(input.readUInt32());
+                characterCardList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -192,11 +195,11 @@ public final class GCGDSDeckSaveReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           cardList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          aPCFHCPFONE_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          characterCardList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -215,77 +218,14 @@ public final class GCGDSDeckSaveReqOuterClass {
               emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq.class, emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq.Builder.class);
     }
 
-    public static final int APCFHCPFONE_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList aPCFHCPFONE_;
-    /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @return A list containing the aPCFHCPFONE.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getAPCFHCPFONEList() {
-      return aPCFHCPFONE_;
-    }
-    /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @return The count of aPCFHCPFONE.
-     */
-    public int getAPCFHCPFONECount() {
-      return aPCFHCPFONE_.size();
-    }
-    /**
-     * <code>repeated uint32 APCFHCPFONE = 13;</code>
-     * @param index The index of the element to return.
-     * @return The aPCFHCPFONE at the given index.
-     */
-    public int getAPCFHCPFONE(int index) {
-      return aPCFHCPFONE_.getInt(index);
-    }
-    private int aPCFHCPFONEMemoizedSerializedSize = -1;
-
-    public static final int CARD_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList cardList_;
-    /**
-     * <code>repeated uint32 card_list = 7;</code>
-     * @return A list containing the cardList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getCardListList() {
-      return cardList_;
-    }
-    /**
-     * <code>repeated uint32 card_list = 7;</code>
-     * @return The count of cardList.
-     */
-    public int getCardListCount() {
-      return cardList_.size();
-    }
-    /**
-     * <code>repeated uint32 card_list = 7;</code>
-     * @param index The index of the element to return.
-     * @return The cardList at the given index.
-     */
-    public int getCardList(int index) {
-      return cardList_.getInt(index);
-    }
-    private int cardListMemoizedSerializedSize = -1;
-
-    public static final int DECK_ID_FIELD_NUMBER = 8;
-    private int deckId_;
-    /**
-     * <code>uint32 deck_id = 8;</code>
-     * @return The deckId.
-     */
-    @java.lang.Override
-    public int getDeckId() {
-      return deckId_;
-    }
-
-    public static final int NAME_FIELD_NUMBER = 9;
+    public static final int NAME_FIELD_NUMBER = 6;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 9;</code>
+     * <pre>
+     * CMD_ID = 8059
+     * </pre>
+     *
+     * <code>string name = 6;</code>
      * @return The name.
      */
     @java.lang.Override
@@ -302,7 +242,11 @@ public final class GCGDSDeckSaveReqOuterClass {
       }
     }
     /**
-     * <code>string name = 9;</code>
+     * <pre>
+     * CMD_ID = 8059
+     * </pre>
+     *
+     * <code>string name = 6;</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -320,6 +264,73 @@ public final class GCGDSDeckSaveReqOuterClass {
       }
     }
 
+    public static final int CARD_LIST_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList cardList_;
+    /**
+     * <code>repeated uint32 card_list = 9;</code>
+     * @return A list containing the cardList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getCardListList() {
+      return cardList_;
+    }
+    /**
+     * <code>repeated uint32 card_list = 9;</code>
+     * @return The count of cardList.
+     */
+    public int getCardListCount() {
+      return cardList_.size();
+    }
+    /**
+     * <code>repeated uint32 card_list = 9;</code>
+     * @param index The index of the element to return.
+     * @return The cardList at the given index.
+     */
+    public int getCardList(int index) {
+      return cardList_.getInt(index);
+    }
+    private int cardListMemoizedSerializedSize = -1;
+
+    public static final int CHARACTER_CARD_LIST_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList characterCardList_;
+    /**
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @return A list containing the characterCardList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getCharacterCardListList() {
+      return characterCardList_;
+    }
+    /**
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @return The count of characterCardList.
+     */
+    public int getCharacterCardListCount() {
+      return characterCardList_.size();
+    }
+    /**
+     * <code>repeated uint32 character_card_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The characterCardList at the given index.
+     */
+    public int getCharacterCardList(int index) {
+      return characterCardList_.getInt(index);
+    }
+    private int characterCardListMemoizedSerializedSize = -1;
+
+    public static final int DECK_ID_FIELD_NUMBER = 1;
+    private int deckId_;
+    /**
+     * <code>uint32 deck_id = 1;</code>
+     * @return The deckId.
+     */
+    @java.lang.Override
+    public int getDeckId() {
+      return deckId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -335,25 +346,25 @@ public final class GCGDSDeckSaveReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (deckId_ != 0) {
+        output.writeUInt32(1, deckId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, name_);
+      }
       if (getCardListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(cardListMemoizedSerializedSize);
       }
       for (int i = 0; i < cardList_.size(); i++) {
         output.writeUInt32NoTag(cardList_.getInt(i));
       }
-      if (deckId_ != 0) {
-        output.writeUInt32(8, deckId_);
+      if (getCharacterCardListList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(characterCardListMemoizedSerializedSize);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, name_);
-      }
-      if (getAPCFHCPFONEList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(aPCFHCPFONEMemoizedSerializedSize);
-      }
-      for (int i = 0; i < aPCFHCPFONE_.size(); i++) {
-        output.writeUInt32NoTag(aPCFHCPFONE_.getInt(i));
+      for (int i = 0; i < characterCardList_.size(); i++) {
+        output.writeUInt32NoTag(characterCardList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -364,6 +375,13 @@ public final class GCGDSDeckSaveReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (deckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, deckId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, name_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < cardList_.size(); i++) {
@@ -378,26 +396,19 @@ public final class GCGDSDeckSaveReqOuterClass {
         }
         cardListMemoizedSerializedSize = dataSize;
       }
-      if (deckId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, deckId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, name_);
-      }
       {
         int dataSize = 0;
-        for (int i = 0; i < aPCFHCPFONE_.size(); i++) {
+        for (int i = 0; i < characterCardList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(aPCFHCPFONE_.getInt(i));
+            .computeUInt32SizeNoTag(characterCardList_.getInt(i));
         }
         size += dataSize;
-        if (!getAPCFHCPFONEList().isEmpty()) {
+        if (!getCharacterCardListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        aPCFHCPFONEMemoizedSerializedSize = dataSize;
+        characterCardListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -414,14 +425,14 @@ public final class GCGDSDeckSaveReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq other = (emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq) obj;
 
-      if (!getAPCFHCPFONEList()
-          .equals(other.getAPCFHCPFONEList())) return false;
-      if (!getCardListList()
-          .equals(other.getCardListList())) return false;
-      if (getDeckId()
-          != other.getDeckId()) return false;
       if (!getName()
           .equals(other.getName())) return false;
+      if (!getCardListList()
+          .equals(other.getCardListList())) return false;
+      if (!getCharacterCardListList()
+          .equals(other.getCharacterCardListList())) return false;
+      if (getDeckId()
+          != other.getDeckId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -433,18 +444,18 @@ public final class GCGDSDeckSaveReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAPCFHCPFONECount() > 0) {
-        hash = (37 * hash) + APCFHCPFONE_FIELD_NUMBER;
-        hash = (53 * hash) + getAPCFHCPFONEList().hashCode();
-      }
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
       if (getCardListCount() > 0) {
         hash = (37 * hash) + CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCardListList().hashCode();
       }
+      if (getCharacterCardListCount() > 0) {
+        hash = (37 * hash) + CHARACTER_CARD_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCharacterCardListList().hashCode();
+      }
       hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDeckId();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -541,11 +552,6 @@ public final class GCGDSDeckSaveReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 1963
-     * Obf: IPIBAHELHDK
-     * </pre>
-     *
      * Protobuf type {@code GCGDSDeckSaveReq}
      */
     public static final class Builder extends
@@ -583,13 +589,13 @@ public final class GCGDSDeckSaveReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aPCFHCPFONE_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = "";
+
         cardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        characterCardList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         deckId_ = 0;
-
-        name_ = "";
 
         return this;
       }
@@ -618,18 +624,18 @@ public final class GCGDSDeckSaveReqOuterClass {
       public emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq buildPartial() {
         emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq result = new emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq(this);
         int from_bitField0_ = bitField0_;
+        result.name_ = name_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          aPCFHCPFONE_.makeImmutable();
+          cardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.aPCFHCPFONE_ = aPCFHCPFONE_;
+        result.cardList_ = cardList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          cardList_.makeImmutable();
+          characterCardList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.cardList_ = cardList_;
+        result.characterCardList_ = characterCardList_;
         result.deckId_ = deckId_;
-        result.name_ = name_;
         onBuilt();
         return result;
       }
@@ -678,32 +684,32 @@ public final class GCGDSDeckSaveReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq other) {
         if (other == emu.grasscutter.net.proto.GCGDSDeckSaveReqOuterClass.GCGDSDeckSaveReq.getDefaultInstance()) return this;
-        if (!other.aPCFHCPFONE_.isEmpty()) {
-          if (aPCFHCPFONE_.isEmpty()) {
-            aPCFHCPFONE_ = other.aPCFHCPFONE_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureAPCFHCPFONEIsMutable();
-            aPCFHCPFONE_.addAll(other.aPCFHCPFONE_);
-          }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
           onChanged();
         }
         if (!other.cardList_.isEmpty()) {
           if (cardList_.isEmpty()) {
             cardList_ = other.cardList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureCardListIsMutable();
             cardList_.addAll(other.cardList_);
           }
           onChanged();
         }
+        if (!other.characterCardList_.isEmpty()) {
+          if (characterCardList_.isEmpty()) {
+            characterCardList_ = other.characterCardList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureCharacterCardListIsMutable();
+            characterCardList_.addAll(other.characterCardList_);
+          }
+          onChanged();
+        }
         if (other.getDeckId() != 0) {
           setDeckId(other.getDeckId());
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -735,198 +741,13 @@ public final class GCGDSDeckSaveReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList aPCFHCPFONE_ = emptyIntList();
-      private void ensureAPCFHCPFONEIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          aPCFHCPFONE_ = mutableCopy(aPCFHCPFONE_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @return A list containing the aPCFHCPFONE.
-       */
-      public java.util.List<java.lang.Integer>
-          getAPCFHCPFONEList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(aPCFHCPFONE_) : aPCFHCPFONE_;
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @return The count of aPCFHCPFONE.
-       */
-      public int getAPCFHCPFONECount() {
-        return aPCFHCPFONE_.size();
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @param index The index of the element to return.
-       * @return The aPCFHCPFONE at the given index.
-       */
-      public int getAPCFHCPFONE(int index) {
-        return aPCFHCPFONE_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @param index The index to set the value at.
-       * @param value The aPCFHCPFONE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAPCFHCPFONE(
-          int index, int value) {
-        ensureAPCFHCPFONEIsMutable();
-        aPCFHCPFONE_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @param value The aPCFHCPFONE to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAPCFHCPFONE(int value) {
-        ensureAPCFHCPFONEIsMutable();
-        aPCFHCPFONE_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @param values The aPCFHCPFONE to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllAPCFHCPFONE(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureAPCFHCPFONEIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, aPCFHCPFONE_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 APCFHCPFONE = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAPCFHCPFONE() {
-        aPCFHCPFONE_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList cardList_ = emptyIntList();
-      private void ensureCardListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          cardList_ = mutableCopy(cardList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @return A list containing the cardList.
-       */
-      public java.util.List<java.lang.Integer>
-          getCardListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(cardList_) : cardList_;
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @return The count of cardList.
-       */
-      public int getCardListCount() {
-        return cardList_.size();
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @param index The index of the element to return.
-       * @return The cardList at the given index.
-       */
-      public int getCardList(int index) {
-        return cardList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The cardList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardList(
-          int index, int value) {
-        ensureCardListIsMutable();
-        cardList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @param value The cardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addCardList(int value) {
-        ensureCardListIsMutable();
-        cardList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @param values The cardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllCardList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCardListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, cardList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 card_list = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardList() {
-        cardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int deckId_ ;
-      /**
-       * <code>uint32 deck_id = 8;</code>
-       * @return The deckId.
-       */
-      @java.lang.Override
-      public int getDeckId() {
-        return deckId_;
-      }
-      /**
-       * <code>uint32 deck_id = 8;</code>
-       * @param value The deckId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeckId(int value) {
-        
-        deckId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 deck_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeckId() {
-        
-        deckId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 9;</code>
+       * <pre>
+       * CMD_ID = 8059
+       * </pre>
+       *
+       * <code>string name = 6;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -942,7 +763,11 @@ public final class GCGDSDeckSaveReqOuterClass {
         }
       }
       /**
-       * <code>string name = 9;</code>
+       * <pre>
+       * CMD_ID = 8059
+       * </pre>
+       *
+       * <code>string name = 6;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -959,7 +784,11 @@ public final class GCGDSDeckSaveReqOuterClass {
         }
       }
       /**
-       * <code>string name = 9;</code>
+       * <pre>
+       * CMD_ID = 8059
+       * </pre>
+       *
+       * <code>string name = 6;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -974,7 +803,11 @@ public final class GCGDSDeckSaveReqOuterClass {
         return this;
       }
       /**
-       * <code>string name = 9;</code>
+       * <pre>
+       * CMD_ID = 8059
+       * </pre>
+       *
+       * <code>string name = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -984,7 +817,11 @@ public final class GCGDSDeckSaveReqOuterClass {
         return this;
       }
       /**
-       * <code>string name = 9;</code>
+       * <pre>
+       * CMD_ID = 8059
+       * </pre>
+       *
+       * <code>string name = 6;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -996,6 +833,195 @@ public final class GCGDSDeckSaveReqOuterClass {
   checkByteStringIsUtf8(value);
         
         name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList cardList_ = emptyIntList();
+      private void ensureCardListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          cardList_ = mutableCopy(cardList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @return A list containing the cardList.
+       */
+      public java.util.List<java.lang.Integer>
+          getCardListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(cardList_) : cardList_;
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @return The count of cardList.
+       */
+      public int getCardListCount() {
+        return cardList_.size();
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @param index The index of the element to return.
+       * @return The cardList at the given index.
+       */
+      public int getCardList(int index) {
+        return cardList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The cardList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardList(
+          int index, int value) {
+        ensureCardListIsMutable();
+        cardList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @param value The cardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addCardList(int value) {
+        ensureCardListIsMutable();
+        cardList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @param values The cardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllCardList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureCardListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, cardList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 card_list = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardList() {
+        cardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList characterCardList_ = emptyIntList();
+      private void ensureCharacterCardListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          characterCardList_ = mutableCopy(characterCardList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @return A list containing the characterCardList.
+       */
+      public java.util.List<java.lang.Integer>
+          getCharacterCardListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(characterCardList_) : characterCardList_;
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @return The count of characterCardList.
+       */
+      public int getCharacterCardListCount() {
+        return characterCardList_.size();
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @param index The index of the element to return.
+       * @return The characterCardList at the given index.
+       */
+      public int getCharacterCardList(int index) {
+        return characterCardList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The characterCardList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCharacterCardList(
+          int index, int value) {
+        ensureCharacterCardListIsMutable();
+        characterCardList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @param value The characterCardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addCharacterCardList(int value) {
+        ensureCharacterCardListIsMutable();
+        characterCardList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @param values The characterCardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllCharacterCardList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureCharacterCardListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, characterCardList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 character_card_list = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCharacterCardList() {
+        characterCardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int deckId_ ;
+      /**
+       * <code>uint32 deck_id = 1;</code>
+       * @return The deckId.
+       */
+      @java.lang.Override
+      public int getDeckId() {
+        return deckId_;
+      }
+      /**
+       * <code>uint32 deck_id = 1;</code>
+       * @param value The deckId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeckId(int value) {
+        
+        deckId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 deck_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeckId() {
+        
+        deckId_ = 0;
         onChanged();
         return this;
       }
@@ -1066,10 +1092,10 @@ public final class GCGDSDeckSaveReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026GCGDSDeckSaveReq.proto\"Y\n\020GCGDSDeckSav" +
-      "eReq\022\023\n\013APCFHCPFONE\030\r \003(\r\022\021\n\tcard_list\030\007" +
-      " \003(\r\022\017\n\007deck_id\030\010 \001(\r\022\014\n\004name\030\t \001(\tB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\026GCGDSDeckSaveReq.proto\"a\n\020GCGDSDeckSav" +
+      "eReq\022\014\n\004name\030\006 \001(\t\022\021\n\tcard_list\030\t \003(\r\022\033\n" +
+      "\023character_card_list\030\014 \003(\r\022\017\n\007deck_id\030\001 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1080,7 +1106,7 @@ public final class GCGDSDeckSaveReqOuterClass {
     internal_static_GCGDSDeckSaveReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSDeckSaveReq_descriptor,
-        new java.lang.String[] { "APCFHCPFONE", "CardList", "DeckId", "Name", });
+        new java.lang.String[] { "Name", "CardList", "CharacterCardList", "DeckId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

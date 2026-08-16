@@ -20,7 +20,7 @@ public final class PersonalLineAllDataReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3505
+   * CmdId: 4838
    * </pre>
    *
    * Protobuf type {@code PersonalLineAllDataReq}
@@ -245,7 +245,7 @@ public final class PersonalLineAllDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3505
+     * CmdId: 4838
      * </pre>
      *
      * Protobuf type {@code PersonalLineAllDataReq}

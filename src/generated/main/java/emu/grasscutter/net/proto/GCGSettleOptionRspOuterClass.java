@@ -19,28 +19,31 @@ public final class GCGSettleOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGSettleOption option = 1;</code>
+     * <pre>
+     * CMD_ID = 1094
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 13;</code>
      * @return The enum numeric value on the wire for option.
      */
     int getOptionValue();
     /**
-     * <code>.GCGSettleOption option = 1;</code>
+     * <pre>
+     * CMD_ID = 1094
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 13;</code>
      * @return The option.
      */
     emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption getOption();
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 3014
-   * Obf: KMGOBCNOLII
-   * </pre>
-   *
    * Protobuf type {@code GCGSettleOptionRsp}
    */
   public static final class GCGSettleOptionRsp extends
@@ -86,15 +89,15 @@ public final class GCGSettleOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
               int rawValue = input.readEnum();
 
               option_ = rawValue;
-              break;
-            }
-            case 16: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -129,17 +132,25 @@ public final class GCGSettleOptionRspOuterClass {
               emu.grasscutter.net.proto.GCGSettleOptionRspOuterClass.GCGSettleOptionRsp.class, emu.grasscutter.net.proto.GCGSettleOptionRspOuterClass.GCGSettleOptionRsp.Builder.class);
     }
 
-    public static final int OPTION_FIELD_NUMBER = 1;
+    public static final int OPTION_FIELD_NUMBER = 13;
     private int option_;
     /**
-     * <code>.GCGSettleOption option = 1;</code>
+     * <pre>
+     * CMD_ID = 1094
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 13;</code>
      * @return The enum numeric value on the wire for option.
      */
     @java.lang.Override public int getOptionValue() {
       return option_;
     }
     /**
-     * <code>.GCGSettleOption option = 1;</code>
+     * <pre>
+     * CMD_ID = 1094
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 13;</code>
      * @return The option.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption getOption() {
@@ -148,10 +159,10 @@ public final class GCGSettleOptionRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.UNRECOGNIZED : result;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -173,11 +184,11 @@ public final class GCGSettleOptionRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
-        output.writeEnum(1, option_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
+        output.writeEnum(13, option_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +199,13 @@ public final class GCGSettleOptionRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, option_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, option_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -325,11 +336,6 @@ public final class GCGSettleOptionRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 3014
-     * Obf: KMGOBCNOLII
-     * </pre>
-     *
      * Protobuf type {@code GCGSettleOptionRsp}
      */
     public static final class Builder extends
@@ -484,14 +490,22 @@ public final class GCGSettleOptionRspOuterClass {
 
       private int option_ = 0;
       /**
-       * <code>.GCGSettleOption option = 1;</code>
+       * <pre>
+       * CMD_ID = 1094
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 13;</code>
        * @return The enum numeric value on the wire for option.
        */
       @java.lang.Override public int getOptionValue() {
         return option_;
       }
       /**
-       * <code>.GCGSettleOption option = 1;</code>
+       * <pre>
+       * CMD_ID = 1094
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 13;</code>
        * @param value The enum numeric value on the wire for option to set.
        * @return This builder for chaining.
        */
@@ -502,7 +516,11 @@ public final class GCGSettleOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSettleOption option = 1;</code>
+       * <pre>
+       * CMD_ID = 1094
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 13;</code>
        * @return The option.
        */
       @java.lang.Override
@@ -512,7 +530,11 @@ public final class GCGSettleOptionRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGSettleOption option = 1;</code>
+       * <pre>
+       * CMD_ID = 1094
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 13;</code>
        * @param value The option to set.
        * @return This builder for chaining.
        */
@@ -526,7 +548,11 @@ public final class GCGSettleOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSettleOption option = 1;</code>
+       * <pre>
+       * CMD_ID = 1094
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearOption() {
@@ -538,7 +564,7 @@ public final class GCGSettleOptionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -546,7 +572,7 @@ public final class GCGSettleOptionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -557,7 +583,7 @@ public final class GCGSettleOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -635,7 +661,7 @@ public final class GCGSettleOptionRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GCGSettleOptionRsp.proto\032\025GCGSettleOpt" +
       "ion.proto\"G\n\022GCGSettleOptionRsp\022 \n\006optio" +
-      "n\030\001 \001(\0162\020.GCGSettleOption\022\017\n\007retcode\030\002 \001" +
+      "n\030\r \001(\0162\020.GCGSettleOption\022\017\n\007retcode\030\006 \001" +
       "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

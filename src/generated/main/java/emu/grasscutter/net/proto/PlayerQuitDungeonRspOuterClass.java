@@ -19,20 +19,20 @@ public final class PlayerQuitDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 14;</code>
-     * @return The pointId.
-     */
-    int getPointId();
-
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 point_id = 12;</code>
+     * @return The pointId.
+     */
+    int getPointId();
   }
   /**
    * <pre>
-   * CmdId: 25094
+   * CmdId: 25285
    * </pre>
    *
    * Protobuf type {@code PlayerQuitDungeonRsp}
@@ -79,12 +79,12 @@ public final class PlayerQuitDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
               pointId_ = input.readUInt32();
               break;
@@ -121,26 +121,26 @@ public final class PlayerQuitDungeonRspOuterClass {
               emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp.class, emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 14;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 14;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 12;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 12;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,10 +158,10 @@ public final class PlayerQuitDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(14, pointId_);
+        output.writeUInt32(12, pointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +174,11 @@ public final class PlayerQuitDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, pointId_);
+          .computeUInt32Size(12, pointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class PlayerQuitDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp other = (emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp) obj;
 
-      if (getPointId()
-          != other.getPointId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class PlayerQuitDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class PlayerQuitDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25094
+     * CmdId: 25285
      * </pre>
      *
      * Protobuf type {@code PlayerQuitDungeonRsp}
@@ -351,9 +351,9 @@ public final class PlayerQuitDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pointId_ = 0;
-
         retcode_ = 0;
+
+        pointId_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class PlayerQuitDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp result = new emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp(this);
-        result.pointId_ = pointId_;
         result.retcode_ = retcode_;
+        result.pointId_ = pointId_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class PlayerQuitDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerQuitDungeonRspOuterClass.PlayerQuitDungeonRsp.getDefaultInstance()) return this;
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class PlayerQuitDungeonRspOuterClass {
         return this;
       }
 
-      private int pointId_ ;
-      /**
-       * <code>uint32 point_id = 14;</code>
-       * @return The pointId.
-       */
-      @java.lang.Override
-      public int getPointId() {
-        return pointId_;
-      }
-      /**
-       * <code>uint32 point_id = 14;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointId(int value) {
-        
-        pointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointId() {
-        
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class PlayerQuitDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class PlayerQuitDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pointId_ ;
+      /**
+       * <code>uint32 point_id = 12;</code>
+       * @return The pointId.
+       */
+      @java.lang.Override
+      public int getPointId() {
+        return pointId_;
+      }
+      /**
+       * <code>uint32 point_id = 12;</code>
+       * @param value The pointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointId(int value) {
+        
+        pointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointId() {
+        
+        pointId_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class PlayerQuitDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerQuitDungeonRsp.proto\"9\n\024PlayerQu" +
-      "itDungeonRsp\022\020\n\010point_id\030\016 \001(\r\022\017\n\007retcod" +
-      "e\030\r \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "itDungeonRsp\022\017\n\007retcode\030\006 \001(\005\022\020\n\010point_i" +
+      "d\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class PlayerQuitDungeonRspOuterClass {
     internal_static_PlayerQuitDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerQuitDungeonRsp_descriptor,
-        new java.lang.String[] { "PointId", "Retcode", });
+        new java.lang.String[] { "Retcode", "PointId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,27 +19,38 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_index = 10;</code>
-     * @return The challengeIndex.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 NJLFCICFNFG = 6;</code>
+     * @return The nJLFCICFNFG.
      */
-    int getChallengeIndex();
+    int getNJLFCICFNFG();
 
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 active_camp_index = 9;</code>
-     * @return The activeCampIndex.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GKGLDOGAEFH = 9;</code>
+     * @return The gKGLDOGAEFH.
      */
-    int getActiveCampIndex();
+    int getGKGLDOGAEFH();
   }
   /**
    * <pre>
-   * CmdId: 25106
-   * Obf: HILKCPIOHOJ
+   * CmdId: 24384
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabStageActiveChallengeIndexNotify}
@@ -86,19 +97,19 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
 
-              activeCampIndex_ = input.readUInt32();
+              nJLFCICFNFG_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
-              challengeIndex_ = input.readUInt32();
+              gKGLDOGAEFH_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +144,29 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify.class, emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify.Builder.class);
     }
 
-    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 10;
-    private int challengeIndex_;
+    public static final int NJLFCICFNFG_FIELD_NUMBER = 6;
+    private int nJLFCICFNFG_;
     /**
-     * <code>uint32 challenge_index = 10;</code>
-     * @return The challengeIndex.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 NJLFCICFNFG = 6;</code>
+     * @return The nJLFCICFNFG.
      */
     @java.lang.Override
-    public int getChallengeIndex() {
-      return challengeIndex_;
+    public int getNJLFCICFNFG() {
+      return nJLFCICFNFG_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 stage_id = 4;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -155,15 +174,19 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       return stageId_;
     }
 
-    public static final int ACTIVE_CAMP_INDEX_FIELD_NUMBER = 9;
-    private int activeCampIndex_;
+    public static final int GKGLDOGAEFH_FIELD_NUMBER = 9;
+    private int gKGLDOGAEFH_;
     /**
-     * <code>uint32 active_camp_index = 9;</code>
-     * @return The activeCampIndex.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 GKGLDOGAEFH = 9;</code>
+     * @return The gKGLDOGAEFH.
      */
     @java.lang.Override
-    public int getActiveCampIndex() {
-      return activeCampIndex_;
+    public int getGKGLDOGAEFH() {
+      return gKGLDOGAEFH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +204,13 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(1, stageId_);
+        output.writeUInt32(4, stageId_);
       }
-      if (activeCampIndex_ != 0) {
-        output.writeUInt32(9, activeCampIndex_);
+      if (nJLFCICFNFG_ != 0) {
+        output.writeUInt32(6, nJLFCICFNFG_);
       }
-      if (challengeIndex_ != 0) {
-        output.writeUInt32(10, challengeIndex_);
+      if (gKGLDOGAEFH_ != 0) {
+        output.writeUInt32(9, gKGLDOGAEFH_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +223,15 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, stageId_);
+          .computeUInt32Size(4, stageId_);
       }
-      if (activeCampIndex_ != 0) {
+      if (nJLFCICFNFG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, activeCampIndex_);
+          .computeUInt32Size(6, nJLFCICFNFG_);
       }
-      if (challengeIndex_ != 0) {
+      if (gKGLDOGAEFH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, challengeIndex_);
+          .computeUInt32Size(9, gKGLDOGAEFH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +248,12 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify other = (emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify) obj;
 
-      if (getChallengeIndex()
-          != other.getChallengeIndex()) return false;
+      if (getNJLFCICFNFG()
+          != other.getNJLFCICFNFG()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getActiveCampIndex()
-          != other.getActiveCampIndex()) return false;
+      if (getGKGLDOGAEFH()
+          != other.getGKGLDOGAEFH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +265,12 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeIndex();
+      hash = (37 * hash) + NJLFCICFNFG_FIELD_NUMBER;
+      hash = (53 * hash) + getNJLFCICFNFG();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + ACTIVE_CAMP_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getActiveCampIndex();
+      hash = (37 * hash) + GKGLDOGAEFH_FIELD_NUMBER;
+      hash = (53 * hash) + getGKGLDOGAEFH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +368,7 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25106
-     * Obf: HILKCPIOHOJ
+     * CmdId: 24384
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabStageActiveChallengeIndexNotify}
@@ -386,11 +408,11 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        challengeIndex_ = 0;
+        nJLFCICFNFG_ = 0;
 
         stageId_ = 0;
 
-        activeCampIndex_ = 0;
+        gKGLDOGAEFH_ = 0;
 
         return this;
       }
@@ -418,9 +440,9 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify result = new emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify(this);
-        result.challengeIndex_ = challengeIndex_;
+        result.nJLFCICFNFG_ = nJLFCICFNFG_;
         result.stageId_ = stageId_;
-        result.activeCampIndex_ = activeCampIndex_;
+        result.gKGLDOGAEFH_ = gKGLDOGAEFH_;
         onBuilt();
         return result;
       }
@@ -469,14 +491,14 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabStageActiveChallengeIndexNotifyOuterClass.ChannelerSlabStageActiveChallengeIndexNotify.getDefaultInstance()) return this;
-        if (other.getChallengeIndex() != 0) {
-          setChallengeIndex(other.getChallengeIndex());
+        if (other.getNJLFCICFNFG() != 0) {
+          setNJLFCICFNFG(other.getNJLFCICFNFG());
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
-        if (other.getActiveCampIndex() != 0) {
-          setActiveCampIndex(other.getActiveCampIndex());
+        if (other.getGKGLDOGAEFH() != 0) {
+          setGKGLDOGAEFH(other.getGKGLDOGAEFH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +529,56 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
         return this;
       }
 
-      private int challengeIndex_ ;
+      private int nJLFCICFNFG_ ;
       /**
-       * <code>uint32 challenge_index = 10;</code>
-       * @return The challengeIndex.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NJLFCICFNFG = 6;</code>
+       * @return The nJLFCICFNFG.
        */
       @java.lang.Override
-      public int getChallengeIndex() {
-        return challengeIndex_;
+      public int getNJLFCICFNFG() {
+        return nJLFCICFNFG_;
       }
       /**
-       * <code>uint32 challenge_index = 10;</code>
-       * @param value The challengeIndex to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NJLFCICFNFG = 6;</code>
+       * @param value The nJLFCICFNFG to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeIndex(int value) {
+      public Builder setNJLFCICFNFG(int value) {
         
-        challengeIndex_ = value;
+        nJLFCICFNFG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_index = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 NJLFCICFNFG = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeIndex() {
+      public Builder clearNJLFCICFNFG() {
         
-        challengeIndex_ = 0;
+        nJLFCICFNFG_ = 0;
         onChanged();
         return this;
       }
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -548,7 +586,11 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +601,11 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -569,33 +615,45 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
         return this;
       }
 
-      private int activeCampIndex_ ;
+      private int gKGLDOGAEFH_ ;
       /**
-       * <code>uint32 active_camp_index = 9;</code>
-       * @return The activeCampIndex.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GKGLDOGAEFH = 9;</code>
+       * @return The gKGLDOGAEFH.
        */
       @java.lang.Override
-      public int getActiveCampIndex() {
-        return activeCampIndex_;
+      public int getGKGLDOGAEFH() {
+        return gKGLDOGAEFH_;
       }
       /**
-       * <code>uint32 active_camp_index = 9;</code>
-       * @param value The activeCampIndex to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GKGLDOGAEFH = 9;</code>
+       * @param value The gKGLDOGAEFH to set.
        * @return This builder for chaining.
        */
-      public Builder setActiveCampIndex(int value) {
+      public Builder setGKGLDOGAEFH(int value) {
         
-        activeCampIndex_ = value;
+        gKGLDOGAEFH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 active_camp_index = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 GKGLDOGAEFH = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearActiveCampIndex() {
+      public Builder clearGKGLDOGAEFH() {
         
-        activeCampIndex_ = 0;
+        gKGLDOGAEFH_ = 0;
         onChanged();
         return this;
       }
@@ -667,11 +725,10 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n2ChannelerSlabStageActiveChallengeIndex" +
-      "Notify.proto\"t\n,ChannelerSlabStageActive" +
-      "ChallengeIndexNotify\022\027\n\017challenge_index\030" +
-      "\n \001(\r\022\020\n\010stage_id\030\001 \001(\r\022\031\n\021active_camp_i" +
-      "ndex\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "Notify.proto\"j\n,ChannelerSlabStageActive" +
+      "ChallengeIndexNotify\022\023\n\013NJLFCICFNFG\030\006 \001(" +
+      "\r\022\020\n\010stage_id\030\004 \001(\r\022\023\n\013GKGLDOGAEFH\030\t \001(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -682,7 +739,7 @@ public final class ChannelerSlabStageActiveChallengeIndexNotifyOuterClass {
     internal_static_ChannelerSlabStageActiveChallengeIndexNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabStageActiveChallengeIndexNotify_descriptor,
-        new java.lang.String[] { "ChallengeIndex", "StageId", "ActiveCampIndex", });
+        new java.lang.String[] { "NJLFCICFNFG", "StageId", "GKGLDOGAEFH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

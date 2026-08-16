@@ -19,46 +19,66 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 7;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JEGDOENEJNF = 12;</code>
+     * @return The jEGDOENEJNF.
      */
-    boolean getIsNewRecord();
+    int getJEGDOENEJNF();
 
     /**
-     * <code>uint64 scene_time_ms = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 11;</code>
      * @return The sceneTimeMs.
      */
     long getSceneTimeMs();
 
     /**
-     * <code>uint32 BPPCDLMFKCP = 12;</code>
-     * @return The bPPCDLMFKCP.
-     */
-    int getBPPCDLMFKCP();
-
-    /**
-     * <code>bool is_perfect = 2;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_perfect = 9;</code>
      * @return The isPerfect.
      */
     boolean getIsPerfect();
 
     /**
-     * <code>uint32 KDPNBLFJKND = 10;</code>
-     * @return The kDPNBLFJKND.
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool OHBGFHFJBJM = 2;</code>
+     * @return The oHBGFHFJBJM.
      */
-    int getKDPNBLFJKND();
+    boolean getOHBGFHFJBJM();
 
     /**
-     * <code>bool is_activity_end = 5;</code>
-     * @return The isActivityEnd.
+     * <pre>
+     * offset: 50
+     * </pre>
+     *
+     * <code>bool is_new_record = 6;</code>
+     * @return The isNewRecord.
      */
-    boolean getIsActivityEnd();
+    boolean getIsNewRecord();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 LGNBKDKKPLP = 8;</code>
+     * @return The lGNBKDKKPLP.
+     */
+    int getLGNBKDKKPLP();
   }
   /**
-   * <pre>
-   * Obf: MOMBFEIPFCD
-   * </pre>
-   *
    * Protobuf type {@code InBattleIrodoriChessSettleInfo}
    */
   public static final class InBattleIrodoriChessSettleInfo extends
@@ -105,32 +125,32 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
               break;
             case 16: {
 
-              isPerfect_ = input.readBool();
+              oHBGFHFJBJM_ = input.readBool();
               break;
             }
-            case 40: {
-
-              isActivityEnd_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 48: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 80: {
+            case 64: {
 
-              kDPNBLFJKND_ = input.readUInt32();
+              lGNBKDKKPLP_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isPerfect_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              sceneTimeMs_ = input.readUInt64();
               break;
             }
             case 96: {
 
-              bPPCDLMFKCP_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              sceneTimeMs_ = input.readUInt64();
+              jEGDOENEJNF_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,21 +185,29 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
               emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.class, emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
-    private boolean isNewRecord_;
+    public static final int JEGDOENEJNF_FIELD_NUMBER = 12;
+    private int jEGDOENEJNF_;
     /**
-     * <code>bool is_new_record = 7;</code>
-     * @return The isNewRecord.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 JEGDOENEJNF = 12;</code>
+     * @return The jEGDOENEJNF.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getJEGDOENEJNF() {
+      return jEGDOENEJNF_;
     }
 
-    public static final int SCENE_TIME_MS_FIELD_NUMBER = 15;
+    public static final int SCENE_TIME_MS_FIELD_NUMBER = 11;
     private long sceneTimeMs_;
     /**
-     * <code>uint64 scene_time_ms = 15;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint64 scene_time_ms = 11;</code>
      * @return The sceneTimeMs.
      */
     @java.lang.Override
@@ -187,21 +215,14 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       return sceneTimeMs_;
     }
 
-    public static final int BPPCDLMFKCP_FIELD_NUMBER = 12;
-    private int bPPCDLMFKCP_;
-    /**
-     * <code>uint32 BPPCDLMFKCP = 12;</code>
-     * @return The bPPCDLMFKCP.
-     */
-    @java.lang.Override
-    public int getBPPCDLMFKCP() {
-      return bPPCDLMFKCP_;
-    }
-
-    public static final int IS_PERFECT_FIELD_NUMBER = 2;
+    public static final int IS_PERFECT_FIELD_NUMBER = 9;
     private boolean isPerfect_;
     /**
-     * <code>bool is_perfect = 2;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_perfect = 9;</code>
      * @return The isPerfect.
      */
     @java.lang.Override
@@ -209,26 +230,49 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       return isPerfect_;
     }
 
-    public static final int KDPNBLFJKND_FIELD_NUMBER = 10;
-    private int kDPNBLFJKND_;
+    public static final int OHBGFHFJBJM_FIELD_NUMBER = 2;
+    private boolean oHBGFHFJBJM_;
     /**
-     * <code>uint32 KDPNBLFJKND = 10;</code>
-     * @return The kDPNBLFJKND.
+     * <pre>
+     * offset: 49
+     * </pre>
+     *
+     * <code>bool OHBGFHFJBJM = 2;</code>
+     * @return The oHBGFHFJBJM.
      */
     @java.lang.Override
-    public int getKDPNBLFJKND() {
-      return kDPNBLFJKND_;
+    public boolean getOHBGFHFJBJM() {
+      return oHBGFHFJBJM_;
     }
 
-    public static final int IS_ACTIVITY_END_FIELD_NUMBER = 5;
-    private boolean isActivityEnd_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 6;
+    private boolean isNewRecord_;
     /**
-     * <code>bool is_activity_end = 5;</code>
-     * @return The isActivityEnd.
+     * <pre>
+     * offset: 50
+     * </pre>
+     *
+     * <code>bool is_new_record = 6;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public boolean getIsActivityEnd() {
-      return isActivityEnd_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int LGNBKDKKPLP_FIELD_NUMBER = 8;
+    private int lGNBKDKKPLP_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 LGNBKDKKPLP = 8;</code>
+     * @return The lGNBKDKKPLP.
+     */
+    @java.lang.Override
+    public int getLGNBKDKKPLP() {
+      return lGNBKDKKPLP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +289,23 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isPerfect_ != false) {
-        output.writeBool(2, isPerfect_);
-      }
-      if (isActivityEnd_ != false) {
-        output.writeBool(5, isActivityEnd_);
+      if (oHBGFHFJBJM_ != false) {
+        output.writeBool(2, oHBGFHFJBJM_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
+        output.writeBool(6, isNewRecord_);
       }
-      if (kDPNBLFJKND_ != 0) {
-        output.writeUInt32(10, kDPNBLFJKND_);
+      if (lGNBKDKKPLP_ != 0) {
+        output.writeUInt32(8, lGNBKDKKPLP_);
       }
-      if (bPPCDLMFKCP_ != 0) {
-        output.writeUInt32(12, bPPCDLMFKCP_);
+      if (isPerfect_ != false) {
+        output.writeBool(9, isPerfect_);
       }
       if (sceneTimeMs_ != 0L) {
-        output.writeUInt64(15, sceneTimeMs_);
+        output.writeUInt64(11, sceneTimeMs_);
+      }
+      if (jEGDOENEJNF_ != 0) {
+        output.writeUInt32(12, jEGDOENEJNF_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +316,29 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isPerfect_ != false) {
+      if (oHBGFHFJBJM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isPerfect_);
-      }
-      if (isActivityEnd_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isActivityEnd_);
+          .computeBoolSize(2, oHBGFHFJBJM_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
+          .computeBoolSize(6, isNewRecord_);
       }
-      if (kDPNBLFJKND_ != 0) {
+      if (lGNBKDKKPLP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, kDPNBLFJKND_);
+          .computeUInt32Size(8, lGNBKDKKPLP_);
       }
-      if (bPPCDLMFKCP_ != 0) {
+      if (isPerfect_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bPPCDLMFKCP_);
+          .computeBoolSize(9, isPerfect_);
       }
       if (sceneTimeMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(15, sceneTimeMs_);
+          .computeUInt64Size(11, sceneTimeMs_);
+      }
+      if (jEGDOENEJNF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, jEGDOENEJNF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,18 +355,18 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo other = (emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo) obj;
 
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
+      if (getJEGDOENEJNF()
+          != other.getJEGDOENEJNF()) return false;
       if (getSceneTimeMs()
           != other.getSceneTimeMs()) return false;
-      if (getBPPCDLMFKCP()
-          != other.getBPPCDLMFKCP()) return false;
       if (getIsPerfect()
           != other.getIsPerfect()) return false;
-      if (getKDPNBLFJKND()
-          != other.getKDPNBLFJKND()) return false;
-      if (getIsActivityEnd()
-          != other.getIsActivityEnd()) return false;
+      if (getOHBGFHFJBJM()
+          != other.getOHBGFHFJBJM()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getLGNBKDKKPLP()
+          != other.getLGNBKDKKPLP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,22 +378,22 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
+      hash = (37 * hash) + JEGDOENEJNF_FIELD_NUMBER;
+      hash = (53 * hash) + getJEGDOENEJNF();
       hash = (37 * hash) + SCENE_TIME_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getSceneTimeMs());
-      hash = (37 * hash) + BPPCDLMFKCP_FIELD_NUMBER;
-      hash = (53 * hash) + getBPPCDLMFKCP();
       hash = (37 * hash) + IS_PERFECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPerfect());
-      hash = (37 * hash) + KDPNBLFJKND_FIELD_NUMBER;
-      hash = (53 * hash) + getKDPNBLFJKND();
-      hash = (37 * hash) + IS_ACTIVITY_END_FIELD_NUMBER;
+      hash = (37 * hash) + OHBGFHFJBJM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivityEnd());
+          getOHBGFHFJBJM());
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
+      hash = (37 * hash) + LGNBKDKKPLP_FIELD_NUMBER;
+      hash = (53 * hash) + getLGNBKDKKPLP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,10 +490,6 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MOMBFEIPFCD
-     * </pre>
-     *
      * Protobuf type {@code InBattleIrodoriChessSettleInfo}
      */
     public static final class Builder extends
@@ -487,17 +527,17 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewRecord_ = false;
+        jEGDOENEJNF_ = 0;
 
         sceneTimeMs_ = 0L;
 
-        bPPCDLMFKCP_ = 0;
-
         isPerfect_ = false;
 
-        kDPNBLFJKND_ = 0;
+        oHBGFHFJBJM_ = false;
 
-        isActivityEnd_ = false;
+        isNewRecord_ = false;
+
+        lGNBKDKKPLP_ = 0;
 
         return this;
       }
@@ -525,12 +565,12 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo result = new emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo(this);
-        result.isNewRecord_ = isNewRecord_;
+        result.jEGDOENEJNF_ = jEGDOENEJNF_;
         result.sceneTimeMs_ = sceneTimeMs_;
-        result.bPPCDLMFKCP_ = bPPCDLMFKCP_;
         result.isPerfect_ = isPerfect_;
-        result.kDPNBLFJKND_ = kDPNBLFJKND_;
-        result.isActivityEnd_ = isActivityEnd_;
+        result.oHBGFHFJBJM_ = oHBGFHFJBJM_;
+        result.isNewRecord_ = isNewRecord_;
+        result.lGNBKDKKPLP_ = lGNBKDKKPLP_;
         onBuilt();
         return result;
       }
@@ -579,23 +619,23 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleIrodoriChessSettleInfoOuterClass.InBattleIrodoriChessSettleInfo.getDefaultInstance()) return this;
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getJEGDOENEJNF() != 0) {
+          setJEGDOENEJNF(other.getJEGDOENEJNF());
         }
         if (other.getSceneTimeMs() != 0L) {
           setSceneTimeMs(other.getSceneTimeMs());
         }
-        if (other.getBPPCDLMFKCP() != 0) {
-          setBPPCDLMFKCP(other.getBPPCDLMFKCP());
-        }
         if (other.getIsPerfect() != false) {
           setIsPerfect(other.getIsPerfect());
         }
-        if (other.getKDPNBLFJKND() != 0) {
-          setKDPNBLFJKND(other.getKDPNBLFJKND());
+        if (other.getOHBGFHFJBJM() != false) {
+          setOHBGFHFJBJM(other.getOHBGFHFJBJM());
         }
-        if (other.getIsActivityEnd() != false) {
-          setIsActivityEnd(other.getIsActivityEnd());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getLGNBKDKKPLP() != 0) {
+          setLGNBKDKKPLP(other.getLGNBKDKKPLP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -626,40 +666,56 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
 
-      private boolean isNewRecord_ ;
+      private int jEGDOENEJNF_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
-       * @return The isNewRecord.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 12;</code>
+       * @return The jEGDOENEJNF.
        */
       @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
+      public int getJEGDOENEJNF() {
+        return jEGDOENEJNF_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
-       * @param value The isNewRecord to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 12;</code>
+       * @param value The jEGDOENEJNF to set.
        * @return This builder for chaining.
        */
-      public Builder setIsNewRecord(boolean value) {
+      public Builder setJEGDOENEJNF(int value) {
         
-        isNewRecord_ = value;
+        jEGDOENEJNF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 JEGDOENEJNF = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsNewRecord() {
+      public Builder clearJEGDOENEJNF() {
         
-        isNewRecord_ = false;
+        jEGDOENEJNF_ = 0;
         onChanged();
         return this;
       }
 
       private long sceneTimeMs_ ;
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 11;</code>
        * @return The sceneTimeMs.
        */
       @java.lang.Override
@@ -667,7 +723,11 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return sceneTimeMs_;
       }
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 11;</code>
        * @param value The sceneTimeMs to set.
        * @return This builder for chaining.
        */
@@ -678,7 +738,11 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 scene_time_ms = 15;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint64 scene_time_ms = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTimeMs() {
@@ -688,40 +752,13 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
 
-      private int bPPCDLMFKCP_ ;
-      /**
-       * <code>uint32 BPPCDLMFKCP = 12;</code>
-       * @return The bPPCDLMFKCP.
-       */
-      @java.lang.Override
-      public int getBPPCDLMFKCP() {
-        return bPPCDLMFKCP_;
-      }
-      /**
-       * <code>uint32 BPPCDLMFKCP = 12;</code>
-       * @param value The bPPCDLMFKCP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBPPCDLMFKCP(int value) {
-        
-        bPPCDLMFKCP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BPPCDLMFKCP = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBPPCDLMFKCP() {
-        
-        bPPCDLMFKCP_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isPerfect_ ;
       /**
-       * <code>bool is_perfect = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_perfect = 9;</code>
        * @return The isPerfect.
        */
       @java.lang.Override
@@ -729,7 +766,11 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return isPerfect_;
       }
       /**
-       * <code>bool is_perfect = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_perfect = 9;</code>
        * @param value The isPerfect to set.
        * @return This builder for chaining.
        */
@@ -740,7 +781,11 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_perfect = 2;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_perfect = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPerfect() {
@@ -750,64 +795,131 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
         return this;
       }
 
-      private int kDPNBLFJKND_ ;
+      private boolean oHBGFHFJBJM_ ;
       /**
-       * <code>uint32 KDPNBLFJKND = 10;</code>
-       * @return The kDPNBLFJKND.
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool OHBGFHFJBJM = 2;</code>
+       * @return The oHBGFHFJBJM.
        */
       @java.lang.Override
-      public int getKDPNBLFJKND() {
-        return kDPNBLFJKND_;
+      public boolean getOHBGFHFJBJM() {
+        return oHBGFHFJBJM_;
       }
       /**
-       * <code>uint32 KDPNBLFJKND = 10;</code>
-       * @param value The kDPNBLFJKND to set.
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool OHBGFHFJBJM = 2;</code>
+       * @param value The oHBGFHFJBJM to set.
        * @return This builder for chaining.
        */
-      public Builder setKDPNBLFJKND(int value) {
+      public Builder setOHBGFHFJBJM(boolean value) {
         
-        kDPNBLFJKND_ = value;
+        oHBGFHFJBJM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KDPNBLFJKND = 10;</code>
+       * <pre>
+       * offset: 49
+       * </pre>
+       *
+       * <code>bool OHBGFHFJBJM = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKDPNBLFJKND() {
+      public Builder clearOHBGFHFJBJM() {
         
-        kDPNBLFJKND_ = 0;
+        oHBGFHFJBJM_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isActivityEnd_ ;
+      private boolean isNewRecord_ ;
       /**
-       * <code>bool is_activity_end = 5;</code>
-       * @return The isActivityEnd.
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool is_new_record = 6;</code>
+       * @return The isNewRecord.
        */
       @java.lang.Override
-      public boolean getIsActivityEnd() {
-        return isActivityEnd_;
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
       }
       /**
-       * <code>bool is_activity_end = 5;</code>
-       * @param value The isActivityEnd to set.
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool is_new_record = 6;</code>
+       * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
-      public Builder setIsActivityEnd(boolean value) {
+      public Builder setIsNewRecord(boolean value) {
         
-        isActivityEnd_ = value;
+        isNewRecord_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_activity_end = 5;</code>
+       * <pre>
+       * offset: 50
+       * </pre>
+       *
+       * <code>bool is_new_record = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsActivityEnd() {
+      public Builder clearIsNewRecord() {
         
-        isActivityEnd_ = false;
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int lGNBKDKKPLP_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 8;</code>
+       * @return The lGNBKDKKPLP.
+       */
+      @java.lang.Override
+      public int getLGNBKDKKPLP() {
+        return lGNBKDKKPLP_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 8;</code>
+       * @param value The lGNBKDKKPLP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLGNBKDKKPLP(int value) {
+        
+        lGNBKDKKPLP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 LGNBKDKKPLP = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLGNBKDKKPLP() {
+        
+        lGNBKDKKPLP_ = 0;
         onChanged();
         return this;
       }
@@ -878,13 +990,12 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$InBattleIrodoriChessSettleInfo.proto\"\245" +
-      "\001\n\036InBattleIrodoriChessSettleInfo\022\025\n\ris_" +
-      "new_record\030\007 \001(\010\022\025\n\rscene_time_ms\030\017 \001(\004\022" +
-      "\023\n\013BPPCDLMFKCP\030\014 \001(\r\022\022\n\nis_perfect\030\002 \001(\010" +
-      "\022\023\n\013KDPNBLFJKND\030\n \001(\r\022\027\n\017is_activity_end" +
-      "\030\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n$InBattleIrodoriChessSettleInfo.proto\"\241" +
+      "\001\n\036InBattleIrodoriChessSettleInfo\022\023\n\013JEG" +
+      "DOENEJNF\030\014 \001(\r\022\025\n\rscene_time_ms\030\013 \001(\004\022\022\n" +
+      "\nis_perfect\030\t \001(\010\022\023\n\013OHBGFHFJBJM\030\002 \001(\010\022\025" +
+      "\n\ris_new_record\030\006 \001(\010\022\023\n\013LGNBKDKKPLP\030\010 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -895,7 +1006,7 @@ public final class InBattleIrodoriChessSettleInfoOuterClass {
     internal_static_InBattleIrodoriChessSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleIrodoriChessSettleInfo_descriptor,
-        new java.lang.String[] { "IsNewRecord", "SceneTimeMs", "BPPCDLMFKCP", "IsPerfect", "KDPNBLFJKND", "IsActivityEnd", });
+        new java.lang.String[] { "JEGDOENEJNF", "SceneTimeMs", "IsPerfect", "OHBGFHFJBJM", "IsNewRecord", "LGNBKDKKPLP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

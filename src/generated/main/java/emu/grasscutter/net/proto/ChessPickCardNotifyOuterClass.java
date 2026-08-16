@@ -19,30 +19,29 @@ public final class ChessPickCardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 curse_card_id = 10;</code>
+     * <code>uint32 curse_card_id = 9;</code>
      * @return The curseCardId.
      */
     int getCurseCardId();
 
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      * @return Whether the normalCardInfo field is set.
      */
     boolean hasNormalCardInfo();
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      * @return The normalCardInfo.
      */
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getNormalCardInfo();
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      */
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getNormalCardInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 7573
-   * Obf: BLKAJBHIMKA
+   * CmdId: 5094
    * </pre>
    *
    * Protobuf type {@code ChessPickCardNotify}
@@ -89,12 +88,12 @@ public final class ChessPickCardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 72: {
 
               curseCardId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 106: {
               emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder subBuilder = null;
               if (normalCardInfo_ != null) {
                 subBuilder = normalCardInfo_.toBuilder();
@@ -139,10 +138,10 @@ public final class ChessPickCardNotifyOuterClass {
               emu.grasscutter.net.proto.ChessPickCardNotifyOuterClass.ChessPickCardNotify.class, emu.grasscutter.net.proto.ChessPickCardNotifyOuterClass.ChessPickCardNotify.Builder.class);
     }
 
-    public static final int CURSE_CARD_ID_FIELD_NUMBER = 10;
+    public static final int CURSE_CARD_ID_FIELD_NUMBER = 9;
     private int curseCardId_;
     /**
-     * <code>uint32 curse_card_id = 10;</code>
+     * <code>uint32 curse_card_id = 9;</code>
      * @return The curseCardId.
      */
     @java.lang.Override
@@ -150,10 +149,10 @@ public final class ChessPickCardNotifyOuterClass {
       return curseCardId_;
     }
 
-    public static final int NORMAL_CARD_INFO_FIELD_NUMBER = 15;
+    public static final int NORMAL_CARD_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo normalCardInfo_;
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      * @return Whether the normalCardInfo field is set.
      */
     @java.lang.Override
@@ -161,7 +160,7 @@ public final class ChessPickCardNotifyOuterClass {
       return normalCardInfo_ != null;
     }
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      * @return The normalCardInfo.
      */
     @java.lang.Override
@@ -169,7 +168,7 @@ public final class ChessPickCardNotifyOuterClass {
       return normalCardInfo_ == null ? emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance() : normalCardInfo_;
     }
     /**
-     * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+     * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getNormalCardInfoOrBuilder() {
@@ -191,10 +190,10 @@ public final class ChessPickCardNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curseCardId_ != 0) {
-        output.writeUInt32(10, curseCardId_);
+        output.writeUInt32(9, curseCardId_);
       }
       if (normalCardInfo_ != null) {
-        output.writeMessage(15, getNormalCardInfo());
+        output.writeMessage(13, getNormalCardInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +206,11 @@ public final class ChessPickCardNotifyOuterClass {
       size = 0;
       if (curseCardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, curseCardId_);
+          .computeUInt32Size(9, curseCardId_);
       }
       if (normalCardInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getNormalCardInfo());
+          .computeMessageSize(13, getNormalCardInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +348,7 @@ public final class ChessPickCardNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7573
-     * Obf: BLKAJBHIMKA
+     * CmdId: 5094
      * </pre>
      *
      * Protobuf type {@code ChessPickCardNotify}
@@ -515,7 +513,7 @@ public final class ChessPickCardNotifyOuterClass {
 
       private int curseCardId_ ;
       /**
-       * <code>uint32 curse_card_id = 10;</code>
+       * <code>uint32 curse_card_id = 9;</code>
        * @return The curseCardId.
        */
       @java.lang.Override
@@ -523,7 +521,7 @@ public final class ChessPickCardNotifyOuterClass {
         return curseCardId_;
       }
       /**
-       * <code>uint32 curse_card_id = 10;</code>
+       * <code>uint32 curse_card_id = 9;</code>
        * @param value The curseCardId to set.
        * @return This builder for chaining.
        */
@@ -534,7 +532,7 @@ public final class ChessPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 curse_card_id = 10;</code>
+       * <code>uint32 curse_card_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurseCardId() {
@@ -548,14 +546,14 @@ public final class ChessPickCardNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> normalCardInfoBuilder_;
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        * @return Whether the normalCardInfo field is set.
        */
       public boolean hasNormalCardInfo() {
         return normalCardInfoBuilder_ != null || normalCardInfo_ != null;
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        * @return The normalCardInfo.
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getNormalCardInfo() {
@@ -566,7 +564,7 @@ public final class ChessPickCardNotifyOuterClass {
         }
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public Builder setNormalCardInfo(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
         if (normalCardInfoBuilder_ == null) {
@@ -582,7 +580,7 @@ public final class ChessPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public Builder setNormalCardInfo(
           emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
@@ -596,7 +594,7 @@ public final class ChessPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public Builder mergeNormalCardInfo(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
         if (normalCardInfoBuilder_ == null) {
@@ -614,7 +612,7 @@ public final class ChessPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public Builder clearNormalCardInfo() {
         if (normalCardInfoBuilder_ == null) {
@@ -628,7 +626,7 @@ public final class ChessPickCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder getNormalCardInfoBuilder() {
         
@@ -636,7 +634,7 @@ public final class ChessPickCardNotifyOuterClass {
         return getNormalCardInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getNormalCardInfoOrBuilder() {
         if (normalCardInfoBuilder_ != null) {
@@ -647,7 +645,7 @@ public final class ChessPickCardNotifyOuterClass {
         }
       }
       /**
-       * <code>.ChessNormalCardInfo normal_card_info = 15;</code>
+       * <code>.ChessNormalCardInfo normal_card_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
@@ -731,8 +729,8 @@ public final class ChessPickCardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031ChessPickCardNotify.proto\032\031ChessNormal" +
       "CardInfo.proto\"\\\n\023ChessPickCardNotify\022\025\n" +
-      "\rcurse_card_id\030\n \001(\r\022.\n\020normal_card_info" +
-      "\030\017 \001(\0132\024.ChessNormalCardInfoB\033\n\031emu.gras" +
+      "\rcurse_card_id\030\t \001(\r\022.\n\020normal_card_info" +
+      "\030\r \001(\0132\024.ChessNormalCardInfoB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

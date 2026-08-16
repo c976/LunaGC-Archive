@@ -19,15 +19,43 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return A list containing the lCPKPLAIHEO.
+     */
+    java.util.List<emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType> getLCPKPLAIHEOList();
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return The count of lCPKPLAIHEO.
+     */
+    int getLCPKPLAIHEOCount();
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @param index The index of the element to return.
+     * @return The lCPKPLAIHEO at the given index.
+     */
+    emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType getLCPKPLAIHEO(int index);
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return A list containing the enum numeric values on the wire for lCPKPLAIHEO.
+     */
+    java.util.List<java.lang.Integer>
+    getLCPKPLAIHEOValueList();
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of lCPKPLAIHEO at the given index.
+     */
+    int getLCPKPLAIHEOValue(int index);
+
+    /**
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 4542
-   * Obf: MJLLALFOONC
+   * CmdId: 8865
    * </pre>
    *
    * Protobuf type {@code EvtLocalGadgetOwnerLeaveSceneNotify}
@@ -42,6 +70,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       super(builder);
     }
     private EvtLocalGadgetOwnerLeaveSceneNotify() {
+      lCPKPLAIHEO_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -64,6 +93,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -74,7 +104,30 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 80: {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                lCPKPLAIHEO_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              lCPKPLAIHEO_.add(rawValue);
+              break;
+            }
+            case 82: {
+              int length = input.readRawVarint32();
+              int oldLimit = input.pushLimit(length);
+              while(input.getBytesUntilLimit() > 0) {
+                int rawValue = input.readEnum();
+                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                  lCPKPLAIHEO_ = new java.util.ArrayList<java.lang.Integer>();
+                  mutable_bitField0_ |= 0x00000001;
+                }
+                lCPKPLAIHEO_.add(rawValue);
+              }
+              input.popLimit(oldLimit);
+              break;
+            }
+            case 112: {
 
               entityId_ = input.readUInt32();
               break;
@@ -94,6 +147,9 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          lCPKPLAIHEO_ = java.util.Collections.unmodifiableList(lCPKPLAIHEO_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -111,10 +167,68 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
               emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify.class, emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    public static final int LCPKPLAIHEO_FIELD_NUMBER = 10;
+    private java.util.List<java.lang.Integer> lCPKPLAIHEO_;
+    private static final com.google.protobuf.Internal.ListAdapter.Converter<
+        java.lang.Integer, emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType> lCPKPLAIHEO_converter_ =
+            new com.google.protobuf.Internal.ListAdapter.Converter<
+                java.lang.Integer, emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType>() {
+              public emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType convert(java.lang.Integer from) {
+                @SuppressWarnings("deprecation")
+                emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType result = emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.valueOf(from);
+                return result == null ? emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.UNRECOGNIZED : result;
+              }
+            };
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return A list containing the lCPKPLAIHEO.
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType> getLCPKPLAIHEOList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType>(lCPKPLAIHEO_, lCPKPLAIHEO_converter_);
+    }
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return The count of lCPKPLAIHEO.
+     */
+    @java.lang.Override
+    public int getLCPKPLAIHEOCount() {
+      return lCPKPLAIHEO_.size();
+    }
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @param index The index of the element to return.
+     * @return The lCPKPLAIHEO at the given index.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType getLCPKPLAIHEO(int index) {
+      return lCPKPLAIHEO_converter_.convert(lCPKPLAIHEO_.get(index));
+    }
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @return A list containing the enum numeric values on the wire for lCPKPLAIHEO.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+    getLCPKPLAIHEOValueList() {
+      return lCPKPLAIHEO_;
+    }
+    /**
+     * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of lCPKPLAIHEO at the given index.
+     */
+    @java.lang.Override
+    public int getLCPKPLAIHEOValue(int index) {
+      return lCPKPLAIHEO_.get(index);
+    }
+    private int lCPKPLAIHEOMemoizedSerializedSize;
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 14;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -136,8 +250,16 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      getSerializedSize();
+      if (getLCPKPLAIHEOList().size() > 0) {
+        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(lCPKPLAIHEOMemoizedSerializedSize);
+      }
+      for (int i = 0; i < lCPKPLAIHEO_.size(); i++) {
+        output.writeEnumNoTag(lCPKPLAIHEO_.get(i));
+      }
       if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+        output.writeUInt32(14, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +270,21 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < lCPKPLAIHEO_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeEnumSizeNoTag(lCPKPLAIHEO_.get(i));
+        }
+        size += dataSize;
+        if (!getLCPKPLAIHEOList().isEmpty()) {  size += 1;
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(dataSize);
+        }lCPKPLAIHEOMemoizedSerializedSize = dataSize;
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeUInt32Size(14, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,6 +301,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify other = (emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify) obj;
 
+      if (!lCPKPLAIHEO_.equals(other.lCPKPLAIHEO_)) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -180,6 +315,10 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getLCPKPLAIHEOCount() > 0) {
+        hash = (37 * hash) + LCPKPLAIHEO_FIELD_NUMBER;
+        hash = (53 * hash) + lCPKPLAIHEO_.hashCode();
+      }
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -279,8 +418,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4542
-     * Obf: MJLLALFOONC
+     * CmdId: 8865
      * </pre>
      *
      * Protobuf type {@code EvtLocalGadgetOwnerLeaveSceneNotify}
@@ -320,6 +458,8 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        lCPKPLAIHEO_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         entityId_ = 0;
 
         return this;
@@ -348,6 +488,12 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify buildPartial() {
         emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify result = new emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          lCPKPLAIHEO_ = java.util.Collections.unmodifiableList(lCPKPLAIHEO_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.lCPKPLAIHEO_ = lCPKPLAIHEO_;
         result.entityId_ = entityId_;
         onBuilt();
         return result;
@@ -397,6 +543,16 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify other) {
         if (other == emu.grasscutter.net.proto.EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass.EvtLocalGadgetOwnerLeaveSceneNotify.getDefaultInstance()) return this;
+        if (!other.lCPKPLAIHEO_.isEmpty()) {
+          if (lCPKPLAIHEO_.isEmpty()) {
+            lCPKPLAIHEO_ = other.lCPKPLAIHEO_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureLCPKPLAIHEOIsMutable();
+            lCPKPLAIHEO_.addAll(other.lCPKPLAIHEO_);
+          }
+          onChanged();
+        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
@@ -428,10 +584,151 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         }
         return this;
       }
+      private int bitField0_;
+
+      private java.util.List<java.lang.Integer> lCPKPLAIHEO_ =
+        java.util.Collections.emptyList();
+      private void ensureLCPKPLAIHEOIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          lCPKPLAIHEO_ = new java.util.ArrayList<java.lang.Integer>(lCPKPLAIHEO_);
+          bitField0_ |= 0x00000001;
+        }
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @return A list containing the lCPKPLAIHEO.
+       */
+      public java.util.List<emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType> getLCPKPLAIHEOList() {
+        return new com.google.protobuf.Internal.ListAdapter<
+            java.lang.Integer, emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType>(lCPKPLAIHEO_, lCPKPLAIHEO_converter_);
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @return The count of lCPKPLAIHEO.
+       */
+      public int getLCPKPLAIHEOCount() {
+        return lCPKPLAIHEO_.size();
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param index The index of the element to return.
+       * @return The lCPKPLAIHEO at the given index.
+       */
+      public emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType getLCPKPLAIHEO(int index) {
+        return lCPKPLAIHEO_converter_.convert(lCPKPLAIHEO_.get(index));
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The lCPKPLAIHEO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLCPKPLAIHEO(
+          int index, emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureLCPKPLAIHEOIsMutable();
+        lCPKPLAIHEO_.set(index, value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param value The lCPKPLAIHEO to add.
+       * @return This builder for chaining.
+       */
+      public Builder addLCPKPLAIHEO(emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureLCPKPLAIHEOIsMutable();
+        lCPKPLAIHEO_.add(value.getNumber());
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param values The lCPKPLAIHEO to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllLCPKPLAIHEO(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType> values) {
+        ensureLCPKPLAIHEOIsMutable();
+        for (emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType value : values) {
+          lCPKPLAIHEO_.add(value.getNumber());
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLCPKPLAIHEO() {
+        lCPKPLAIHEO_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @return A list containing the enum numeric values on the wire for lCPKPLAIHEO.
+       */
+      public java.util.List<java.lang.Integer>
+      getLCPKPLAIHEOValueList() {
+        return java.util.Collections.unmodifiableList(lCPKPLAIHEO_);
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of lCPKPLAIHEO at the given index.
+       */
+      public int getLCPKPLAIHEOValue(int index) {
+        return lCPKPLAIHEO_.get(index);
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param index The index of the value to return.
+       * @return The enum numeric value on the wire of lCPKPLAIHEO at the given index.
+       * @return This builder for chaining.
+       */
+      public Builder setLCPKPLAIHEOValue(
+          int index, int value) {
+        ensureLCPKPLAIHEOIsMutable();
+        lCPKPLAIHEO_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param value The enum numeric value on the wire for lCPKPLAIHEO to add.
+       * @return This builder for chaining.
+       */
+      public Builder addLCPKPLAIHEOValue(int value) {
+        ensureLCPKPLAIHEOIsMutable();
+        lCPKPLAIHEO_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated .LifeByOwnerType LCPKPLAIHEO = 10;</code>
+       * @param values The enum numeric values on the wire for lCPKPLAIHEO to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllLCPKPLAIHEOValue(
+          java.lang.Iterable<java.lang.Integer> values) {
+        ensureLCPKPLAIHEOIsMutable();
+        for (int value : values) {
+          lCPKPLAIHEO_.add(value);
+        }
+        onChanged();
+        return this;
+      }
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -439,7 +736,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +747,7 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -527,20 +824,23 @@ public final class EvtLocalGadgetOwnerLeaveSceneNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)EvtLocalGadgetOwnerLeaveSceneNotify.pr" +
-      "oto\"8\n#EvtLocalGadgetOwnerLeaveSceneNoti" +
-      "fy\022\021\n\tentity_id\030\013 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "oto\032\025LifeByOwnerType.proto\"_\n#EvtLocalGa" +
+      "dgetOwnerLeaveSceneNotify\022%\n\013LCPKPLAIHEO" +
+      "\030\n \003(\0162\020.LifeByOwnerType\022\021\n\tentity_id\030\016 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.getDescriptor(),
         });
     internal_static_EvtLocalGadgetOwnerLeaveSceneNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EvtLocalGadgetOwnerLeaveSceneNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtLocalGadgetOwnerLeaveSceneNotify_descriptor,
-        new java.lang.String[] { "EntityId", });
+        new java.lang.String[] { "LCPKPLAIHEO", "EntityId", });
+    emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

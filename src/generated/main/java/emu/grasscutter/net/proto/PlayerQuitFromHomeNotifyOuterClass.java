@@ -19,19 +19,27 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.PlayerQuitFromHomeNotifyOuterClass.PlayerQuitFromHomeNotify.QuitReason getReason();
   }
   /**
    * <pre>
-   * CmdId: 4018
+   * CmdId: 1132
    * </pre>
    *
    * Protobuf type {@code PlayerQuitFromHomeNotify}
@@ -79,7 +87,7 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 8: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -270,17 +278,25 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:PlayerQuitFromHomeNotify.QuitReason)
     }
 
-    public static final int REASON_FIELD_NUMBER = 13;
+    public static final int REASON_FIELD_NUMBER = 1;
     private int reason_;
     /**
-     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerQuitFromHomeNotifyOuterClass.PlayerQuitFromHomeNotify.QuitReason getReason() {
@@ -304,7 +320,7 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.PlayerQuitFromHomeNotifyOuterClass.PlayerQuitFromHomeNotify.QuitReason.INVALID.getNumber()) {
-        output.writeEnum(13, reason_);
+        output.writeEnum(1, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -317,7 +333,7 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.PlayerQuitFromHomeNotifyOuterClass.PlayerQuitFromHomeNotify.QuitReason.INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, reason_);
+          .computeEnumSize(1, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -445,7 +461,7 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4018
+     * CmdId: 1132
      * </pre>
      *
      * Protobuf type {@code PlayerQuitFromHomeNotify}
@@ -596,14 +612,22 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -614,7 +638,11 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -624,7 +652,11 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerQuitFromHomeNotifyOuterClass.PlayerQuitFromHomeNotify.QuitReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -638,7 +670,11 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.PlayerQuitFromHomeNotify.QuitReason reason = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -714,18 +750,19 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036PlayerQuitFromHomeNotify.proto\"\341\001\n\030Pla" +
-      "yerQuitFromHomeNotify\0224\n\006reason\030\r \001(\0162$." +
-      "PlayerQuitFromHomeNotify.QuitReason\"\216\001\n\n" +
-      "QuitReason\022\013\n\007INVALID\020\000\022\020\n\014KICK_BY_HOST\020" +
-      "\001\022\024\n\020BACK_TO_MY_WORLD\020\002\022\020\n\014HOME_BLOCKED\020" +
-      "\003\022\025\n\021HOME_IN_EDIT_MODE\020\004\022\013\n\007BY_MUIP\020\005\022\025\n" +
-      "\021CUR_MODULE_CLOSED\020\006B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\036PlayerQuitFromHomeNotify.proto\032\020QuitRe" +
+      "ason.proto\"\341\001\n\030PlayerQuitFromHomeNotify\022" +
+      "4\n\006reason\030\001 \001(\0162$.PlayerQuitFromHomeNoti" +
+      "fy.QuitReason\"\216\001\n\nQuitReason\022\013\n\007INVALID\020" +
+      "\000\022\020\n\014KICK_BY_HOST\020\001\022\024\n\020BACK_TO_MY_WORLD\020" +
+      "\002\022\020\n\014HOME_BLOCKED\020\003\022\025\n\021HOME_IN_EDIT_MODE" +
+      "\020\004\022\013\n\007BY_MUIP\020\005\022\025\n\021CUR_MODULE_CLOSED\020\006B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.QuitReasonOuterClass.getDescriptor(),
         });
     internal_static_PlayerQuitFromHomeNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -733,6 +770,7 @@ public final class PlayerQuitFromHomeNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerQuitFromHomeNotify_descriptor,
         new java.lang.String[] { "Reason", });
+    emu.grasscutter.net.proto.QuitReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

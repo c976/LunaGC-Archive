@@ -19,21 +19,20 @@ public final class MiracleRingDropResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FJNJHHGGFKG = 15;</code>
-     * @return The fJNJHHGGFKG.
+     * <code>uint32 last_take_reward_time = 7;</code>
+     * @return The lastTakeRewardTime.
      */
-    int getFJNJHHGGFKG();
+    int getLastTakeRewardTime();
 
     /**
-     * <code>int32 BKFAGMHHFDD = 7;</code>
-     * @return The bKFAGMHHFDD.
+     * <code>int32 drop_result = 8;</code>
+     * @return The dropResult.
      */
-    int getBKFAGMHHFDD();
+    int getDropResult();
   }
   /**
    * <pre>
-   * CmdId: 7312
-   * Obf: CIFAJMLOOIJ
+   * CmdId: 6725
    * </pre>
    *
    * Protobuf type {@code MiracleRingDropResultNotify}
@@ -82,12 +81,12 @@ public final class MiracleRingDropResultNotifyOuterClass {
               break;
             case 56: {
 
-              bKFAGMHHFDD_ = input.readInt32();
+              lastTakeRewardTime_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
-              fJNJHHGGFKG_ = input.readUInt32();
+              dropResult_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class MiracleRingDropResultNotifyOuterClass {
               emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.class, emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.Builder.class);
     }
 
-    public static final int FJNJHHGGFKG_FIELD_NUMBER = 15;
-    private int fJNJHHGGFKG_;
+    public static final int LAST_TAKE_REWARD_TIME_FIELD_NUMBER = 7;
+    private int lastTakeRewardTime_;
     /**
-     * <code>uint32 FJNJHHGGFKG = 15;</code>
-     * @return The fJNJHHGGFKG.
+     * <code>uint32 last_take_reward_time = 7;</code>
+     * @return The lastTakeRewardTime.
      */
     @java.lang.Override
-    public int getFJNJHHGGFKG() {
-      return fJNJHHGGFKG_;
+    public int getLastTakeRewardTime() {
+      return lastTakeRewardTime_;
     }
 
-    public static final int BKFAGMHHFDD_FIELD_NUMBER = 7;
-    private int bKFAGMHHFDD_;
+    public static final int DROP_RESULT_FIELD_NUMBER = 8;
+    private int dropResult_;
     /**
-     * <code>int32 BKFAGMHHFDD = 7;</code>
-     * @return The bKFAGMHHFDD.
+     * <code>int32 drop_result = 8;</code>
+     * @return The dropResult.
      */
     @java.lang.Override
-    public int getBKFAGMHHFDD() {
-      return bKFAGMHHFDD_;
+    public int getDropResult() {
+      return dropResult_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class MiracleRingDropResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bKFAGMHHFDD_ != 0) {
-        output.writeInt32(7, bKFAGMHHFDD_);
+      if (lastTakeRewardTime_ != 0) {
+        output.writeUInt32(7, lastTakeRewardTime_);
       }
-      if (fJNJHHGGFKG_ != 0) {
-        output.writeUInt32(15, fJNJHHGGFKG_);
+      if (dropResult_ != 0) {
+        output.writeInt32(8, dropResult_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class MiracleRingDropResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bKFAGMHHFDD_ != 0) {
+      if (lastTakeRewardTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, bKFAGMHHFDD_);
+          .computeUInt32Size(7, lastTakeRewardTime_);
       }
-      if (fJNJHHGGFKG_ != 0) {
+      if (dropResult_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, fJNJHHGGFKG_);
+          .computeInt32Size(8, dropResult_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify other = (emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify) obj;
 
-      if (getFJNJHHGGFKG()
-          != other.getFJNJHHGGFKG()) return false;
-      if (getBKFAGMHHFDD()
-          != other.getBKFAGMHHFDD()) return false;
+      if (getLastTakeRewardTime()
+          != other.getLastTakeRewardTime()) return false;
+      if (getDropResult()
+          != other.getDropResult()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FJNJHHGGFKG_FIELD_NUMBER;
-      hash = (53 * hash) + getFJNJHHGGFKG();
-      hash = (37 * hash) + BKFAGMHHFDD_FIELD_NUMBER;
-      hash = (53 * hash) + getBKFAGMHHFDD();
+      hash = (37 * hash) + LAST_TAKE_REWARD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLastTakeRewardTime();
+      hash = (37 * hash) + DROP_RESULT_FIELD_NUMBER;
+      hash = (53 * hash) + getDropResult();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7312
-     * Obf: CIFAJMLOOIJ
+     * CmdId: 6725
      * </pre>
      *
      * Protobuf type {@code MiracleRingDropResultNotify}
@@ -353,9 +351,9 @@ public final class MiracleRingDropResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fJNJHHGGFKG_ = 0;
+        lastTakeRewardTime_ = 0;
 
-        bKFAGMHHFDD_ = 0;
+        dropResult_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class MiracleRingDropResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify buildPartial() {
         emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify result = new emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify(this);
-        result.fJNJHHGGFKG_ = fJNJHHGGFKG_;
-        result.bKFAGMHHFDD_ = bKFAGMHHFDD_;
+        result.lastTakeRewardTime_ = lastTakeRewardTime_;
+        result.dropResult_ = dropResult_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class MiracleRingDropResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify other) {
         if (other == emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.getDefaultInstance()) return this;
-        if (other.getFJNJHHGGFKG() != 0) {
-          setFJNJHHGGFKG(other.getFJNJHHGGFKG());
+        if (other.getLastTakeRewardTime() != 0) {
+          setLastTakeRewardTime(other.getLastTakeRewardTime());
         }
-        if (other.getBKFAGMHHFDD() != 0) {
-          setBKFAGMHHFDD(other.getBKFAGMHHFDD());
+        if (other.getDropResult() != 0) {
+          setDropResult(other.getDropResult());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +466,64 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return this;
       }
 
-      private int fJNJHHGGFKG_ ;
+      private int lastTakeRewardTime_ ;
       /**
-       * <code>uint32 FJNJHHGGFKG = 15;</code>
-       * @return The fJNJHHGGFKG.
+       * <code>uint32 last_take_reward_time = 7;</code>
+       * @return The lastTakeRewardTime.
        */
       @java.lang.Override
-      public int getFJNJHHGGFKG() {
-        return fJNJHHGGFKG_;
+      public int getLastTakeRewardTime() {
+        return lastTakeRewardTime_;
       }
       /**
-       * <code>uint32 FJNJHHGGFKG = 15;</code>
-       * @param value The fJNJHHGGFKG to set.
+       * <code>uint32 last_take_reward_time = 7;</code>
+       * @param value The lastTakeRewardTime to set.
        * @return This builder for chaining.
        */
-      public Builder setFJNJHHGGFKG(int value) {
+      public Builder setLastTakeRewardTime(int value) {
         
-        fJNJHHGGFKG_ = value;
+        lastTakeRewardTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FJNJHHGGFKG = 15;</code>
+       * <code>uint32 last_take_reward_time = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFJNJHHGGFKG() {
+      public Builder clearLastTakeRewardTime() {
         
-        fJNJHHGGFKG_ = 0;
+        lastTakeRewardTime_ = 0;
         onChanged();
         return this;
       }
 
-      private int bKFAGMHHFDD_ ;
+      private int dropResult_ ;
       /**
-       * <code>int32 BKFAGMHHFDD = 7;</code>
-       * @return The bKFAGMHHFDD.
+       * <code>int32 drop_result = 8;</code>
+       * @return The dropResult.
        */
       @java.lang.Override
-      public int getBKFAGMHHFDD() {
-        return bKFAGMHHFDD_;
+      public int getDropResult() {
+        return dropResult_;
       }
       /**
-       * <code>int32 BKFAGMHHFDD = 7;</code>
-       * @param value The bKFAGMHHFDD to set.
+       * <code>int32 drop_result = 8;</code>
+       * @param value The dropResult to set.
        * @return This builder for chaining.
        */
-      public Builder setBKFAGMHHFDD(int value) {
+      public Builder setDropResult(int value) {
         
-        bKFAGMHHFDD_ = value;
+        dropResult_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 BKFAGMHHFDD = 7;</code>
+       * <code>int32 drop_result = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBKFAGMHHFDD() {
+      public Builder clearDropResult() {
         
-        bKFAGMHHFDD_ = 0;
+        dropResult_ = 0;
         onChanged();
         return this;
       }
@@ -596,10 +594,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!MiracleRingDropResultNotify.proto\"G\n\033M" +
-      "iracleRingDropResultNotify\022\023\n\013FJNJHHGGFK" +
-      "G\030\017 \001(\r\022\023\n\013BKFAGMHHFDD\030\007 \001(\005B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n!MiracleRingDropResultNotify.proto\"Q\n\033M" +
+      "iracleRingDropResultNotify\022\035\n\025last_take_" +
+      "reward_time\030\007 \001(\r\022\023\n\013drop_result\030\010 \001(\005B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -610,7 +608,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
     internal_static_MiracleRingDropResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingDropResultNotify_descriptor,
-        new java.lang.String[] { "FJNJHHGGFKG", "BKFAGMHHFDD", });
+        new java.lang.String[] { "LastTakeRewardTime", "DropResult", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

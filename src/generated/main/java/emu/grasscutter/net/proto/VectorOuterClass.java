@@ -19,22 +19,34 @@ public final class VectorOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>float y = 2;</code>
      * @return The y.
      */
     float getY();
 
     /**
-     * <code>float x = 1;</code>
-     * @return The x.
-     */
-    float getX();
-
-    /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>float z = 3;</code>
      * @return The z.
      */
     float getZ();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>float x = 1;</code>
+     * @return The x.
+     */
+    float getX();
   }
   /**
    * Protobuf type {@code Vector}
@@ -131,6 +143,10 @@ public final class VectorOuterClass {
     public static final int Y_FIELD_NUMBER = 2;
     private float y_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>float y = 2;</code>
      * @return The y.
      */
@@ -139,26 +155,34 @@ public final class VectorOuterClass {
       return y_;
     }
 
-    public static final int X_FIELD_NUMBER = 1;
-    private float x_;
-    /**
-     * <code>float x = 1;</code>
-     * @return The x.
-     */
-    @java.lang.Override
-    public float getX() {
-      return x_;
-    }
-
     public static final int Z_FIELD_NUMBER = 3;
     private float z_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>float z = 3;</code>
      * @return The z.
      */
     @java.lang.Override
     public float getZ() {
       return z_;
+    }
+
+    public static final int X_FIELD_NUMBER = 1;
+    private float x_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>float x = 1;</code>
+     * @return The x.
+     */
+    @java.lang.Override
+    public float getX() {
+      return x_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,12 +247,12 @@ public final class VectorOuterClass {
       if (java.lang.Float.floatToIntBits(getY())
           != java.lang.Float.floatToIntBits(
               other.getY())) return false;
-      if (java.lang.Float.floatToIntBits(getX())
-          != java.lang.Float.floatToIntBits(
-              other.getX())) return false;
       if (java.lang.Float.floatToIntBits(getZ())
           != java.lang.Float.floatToIntBits(
               other.getZ())) return false;
+      if (java.lang.Float.floatToIntBits(getX())
+          != java.lang.Float.floatToIntBits(
+              other.getX())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,12 +267,12 @@ public final class VectorOuterClass {
       hash = (37 * hash) + Y_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getY());
-      hash = (37 * hash) + X_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getX());
       hash = (37 * hash) + Z_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getZ());
+      hash = (37 * hash) + X_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getX());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -384,9 +408,9 @@ public final class VectorOuterClass {
         super.clear();
         y_ = 0F;
 
-        x_ = 0F;
-
         z_ = 0F;
+
+        x_ = 0F;
 
         return this;
       }
@@ -415,8 +439,8 @@ public final class VectorOuterClass {
       public emu.grasscutter.net.proto.VectorOuterClass.Vector buildPartial() {
         emu.grasscutter.net.proto.VectorOuterClass.Vector result = new emu.grasscutter.net.proto.VectorOuterClass.Vector(this);
         result.y_ = y_;
-        result.x_ = x_;
         result.z_ = z_;
+        result.x_ = x_;
         onBuilt();
         return result;
       }
@@ -468,11 +492,11 @@ public final class VectorOuterClass {
         if (other.getY() != 0F) {
           setY(other.getY());
         }
-        if (other.getX() != 0F) {
-          setX(other.getX());
-        }
         if (other.getZ() != 0F) {
           setZ(other.getZ());
+        }
+        if (other.getX() != 0F) {
+          setX(other.getX());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,6 +529,10 @@ public final class VectorOuterClass {
 
       private float y_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>float y = 2;</code>
        * @return The y.
        */
@@ -513,6 +541,10 @@ public final class VectorOuterClass {
         return y_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>float y = 2;</code>
        * @param value The y to set.
        * @return This builder for chaining.
@@ -524,6 +556,10 @@ public final class VectorOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>float y = 2;</code>
        * @return This builder for chaining.
        */
@@ -534,39 +570,12 @@ public final class VectorOuterClass {
         return this;
       }
 
-      private float x_ ;
-      /**
-       * <code>float x = 1;</code>
-       * @return The x.
-       */
-      @java.lang.Override
-      public float getX() {
-        return x_;
-      }
-      /**
-       * <code>float x = 1;</code>
-       * @param value The x to set.
-       * @return This builder for chaining.
-       */
-      public Builder setX(float value) {
-        
-        x_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float x = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearX() {
-        
-        x_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private float z_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>float z = 3;</code>
        * @return The z.
        */
@@ -575,6 +584,10 @@ public final class VectorOuterClass {
         return z_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>float z = 3;</code>
        * @param value The z to set.
        * @return This builder for chaining.
@@ -586,12 +599,59 @@ public final class VectorOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>float z = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearZ() {
         
         z_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float x_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @return The x.
+       */
+      @java.lang.Override
+      public float getX() {
+        return x_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @param value The x to set.
+       * @return This builder for chaining.
+       */
+      public Builder setX(float value) {
+        
+        x_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearX() {
+        
+        x_ = 0F;
         onChanged();
         return this;
       }
@@ -662,8 +722,8 @@ public final class VectorOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Vector.proto\")\n\006Vector\022\t\n\001y\030\002 \001(\002\022\t\n\001x" +
-      "\030\001 \001(\002\022\t\n\001z\030\003 \001(\002B\033\n\031emu.grasscutter.net" +
+      "\n\014Vector.proto\")\n\006Vector\022\t\n\001y\030\002 \001(\002\022\t\n\001z" +
+      "\030\003 \001(\002\022\t\n\001x\030\001 \001(\002B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -675,7 +735,7 @@ public final class VectorOuterClass {
     internal_static_Vector_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Vector_descriptor,
-        new java.lang.String[] { "Y", "X", "Z", });
+        new java.lang.String[] { "Y", "Z", "X", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

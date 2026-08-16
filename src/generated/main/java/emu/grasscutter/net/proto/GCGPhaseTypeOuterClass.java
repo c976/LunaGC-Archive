@@ -15,113 +15,109 @@ public final class GCGPhaseTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: NNHMLKCECBP
-   * </pre>
-   *
    * Protobuf enum {@code GCGPhaseType}
    */
   public enum GCGPhaseType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseInvalid = 0;</code>
+     * <code>GCG_PHASE_TYPE_INVALID = 0;</code>
      */
-    OFOHJIEDJKD_GcgPhaseInvalid(0),
+    GCG_PHASE_TYPE_INVALID(0),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseStart = 1;</code>
+     * <code>GCG_PHASE_TYPE_START = 1;</code>
      */
-    OFOHJIEDJKD_GcgPhaseStart(1),
+    GCG_PHASE_TYPE_START(1),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDraw = 2;</code>
+     * <code>GCG_PHASE_TYPE_DRAW = 2;</code>
      */
-    OFOHJIEDJKD_GcgPhaseDraw(2),
+    GCG_PHASE_TYPE_DRAW(2),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseOnStage = 3;</code>
+     * <code>GCG_PHASE_TYPE_ON_STAGE = 3;</code>
      */
-    OFOHJIEDJKD_GcgPhaseOnStage(3),
+    GCG_PHASE_TYPE_ON_STAGE(3),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDice = 4;</code>
+     * <code>GCG_PHASE_TYPE_DICE = 4;</code>
      */
-    OFOHJIEDJKD_GcgPhaseDice(4),
+    GCG_PHASE_TYPE_DICE(4),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseMain = 5;</code>
+     * <code>GCG_PHASE_TYPE_MAIN = 5;</code>
      */
-    OFOHJIEDJKD_GcgPhaseMain(5),
+    GCG_PHASE_TYPE_MAIN(5),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseEnd = 6;</code>
+     * <code>GCG_PHASE_TYPE_END = 6;</code>
      */
-    OFOHJIEDJKD_GcgPhaseEnd(6),
+    GCG_PHASE_TYPE_END(6),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDie = 7;</code>
+     * <code>GCG_PHASE_TYPE_DIE = 7;</code>
      */
-    OFOHJIEDJKD_GcgPhaseDie(7),
+    GCG_PHASE_TYPE_DIE(7),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseFin = 8;</code>
+     * <code>GCG_PHASE_TYPE_FIN = 8;</code>
      */
-    OFOHJIEDJKD_GcgPhaseFin(8),
+    GCG_PHASE_TYPE_FIN(8),
     /**
-     * <code>OFOHJIEDJKD_GcgPhasePreMain = 9;</code>
+     * <code>GCG_PHASE_TYPE_PRE_MAIN = 9;</code>
      */
-    OFOHJIEDJKD_GcgPhasePreMain(9),
+    GCG_PHASE_TYPE_PRE_MAIN(9),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseReroll = 10;</code>
+     * <code>GCG_PHASE_TYPE_REROLL = 10;</code>
      */
-    OFOHJIEDJKD_GcgPhaseReroll(10),
+    GCG_PHASE_TYPE_REROLL(10),
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseRedraw = 11;</code>
+     * <code>GCG_PHASE_TYPE_REDRAW = 11;</code>
      */
-    OFOHJIEDJKD_GcgPhaseRedraw(11),
+    GCG_PHASE_TYPE_REDRAW(11),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseInvalid = 0;</code>
+     * <code>GCG_PHASE_TYPE_INVALID = 0;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseInvalid_VALUE = 0;
+    public static final int GCG_PHASE_TYPE_INVALID_VALUE = 0;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseStart = 1;</code>
+     * <code>GCG_PHASE_TYPE_START = 1;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseStart_VALUE = 1;
+    public static final int GCG_PHASE_TYPE_START_VALUE = 1;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDraw = 2;</code>
+     * <code>GCG_PHASE_TYPE_DRAW = 2;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseDraw_VALUE = 2;
+    public static final int GCG_PHASE_TYPE_DRAW_VALUE = 2;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseOnStage = 3;</code>
+     * <code>GCG_PHASE_TYPE_ON_STAGE = 3;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseOnStage_VALUE = 3;
+    public static final int GCG_PHASE_TYPE_ON_STAGE_VALUE = 3;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDice = 4;</code>
+     * <code>GCG_PHASE_TYPE_DICE = 4;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseDice_VALUE = 4;
+    public static final int GCG_PHASE_TYPE_DICE_VALUE = 4;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseMain = 5;</code>
+     * <code>GCG_PHASE_TYPE_MAIN = 5;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseMain_VALUE = 5;
+    public static final int GCG_PHASE_TYPE_MAIN_VALUE = 5;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseEnd = 6;</code>
+     * <code>GCG_PHASE_TYPE_END = 6;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseEnd_VALUE = 6;
+    public static final int GCG_PHASE_TYPE_END_VALUE = 6;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseDie = 7;</code>
+     * <code>GCG_PHASE_TYPE_DIE = 7;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseDie_VALUE = 7;
+    public static final int GCG_PHASE_TYPE_DIE_VALUE = 7;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseFin = 8;</code>
+     * <code>GCG_PHASE_TYPE_FIN = 8;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseFin_VALUE = 8;
+    public static final int GCG_PHASE_TYPE_FIN_VALUE = 8;
     /**
-     * <code>OFOHJIEDJKD_GcgPhasePreMain = 9;</code>
+     * <code>GCG_PHASE_TYPE_PRE_MAIN = 9;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhasePreMain_VALUE = 9;
+    public static final int GCG_PHASE_TYPE_PRE_MAIN_VALUE = 9;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseReroll = 10;</code>
+     * <code>GCG_PHASE_TYPE_REROLL = 10;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseReroll_VALUE = 10;
+    public static final int GCG_PHASE_TYPE_REROLL_VALUE = 10;
     /**
-     * <code>OFOHJIEDJKD_GcgPhaseRedraw = 11;</code>
+     * <code>GCG_PHASE_TYPE_REDRAW = 11;</code>
      */
-    public static final int OFOHJIEDJKD_GcgPhaseRedraw_VALUE = 11;
+    public static final int GCG_PHASE_TYPE_REDRAW_VALUE = 11;
 
 
     public final int getNumber() {
@@ -148,18 +144,18 @@ public final class GCGPhaseTypeOuterClass {
      */
     public static GCGPhaseType forNumber(int value) {
       switch (value) {
-        case 0: return OFOHJIEDJKD_GcgPhaseInvalid;
-        case 1: return OFOHJIEDJKD_GcgPhaseStart;
-        case 2: return OFOHJIEDJKD_GcgPhaseDraw;
-        case 3: return OFOHJIEDJKD_GcgPhaseOnStage;
-        case 4: return OFOHJIEDJKD_GcgPhaseDice;
-        case 5: return OFOHJIEDJKD_GcgPhaseMain;
-        case 6: return OFOHJIEDJKD_GcgPhaseEnd;
-        case 7: return OFOHJIEDJKD_GcgPhaseDie;
-        case 8: return OFOHJIEDJKD_GcgPhaseFin;
-        case 9: return OFOHJIEDJKD_GcgPhasePreMain;
-        case 10: return OFOHJIEDJKD_GcgPhaseReroll;
-        case 11: return OFOHJIEDJKD_GcgPhaseRedraw;
+        case 0: return GCG_PHASE_TYPE_INVALID;
+        case 1: return GCG_PHASE_TYPE_START;
+        case 2: return GCG_PHASE_TYPE_DRAW;
+        case 3: return GCG_PHASE_TYPE_ON_STAGE;
+        case 4: return GCG_PHASE_TYPE_DICE;
+        case 5: return GCG_PHASE_TYPE_MAIN;
+        case 6: return GCG_PHASE_TYPE_END;
+        case 7: return GCG_PHASE_TYPE_DIE;
+        case 8: return GCG_PHASE_TYPE_FIN;
+        case 9: return GCG_PHASE_TYPE_PRE_MAIN;
+        case 10: return GCG_PHASE_TYPE_REROLL;
+        case 11: return GCG_PHASE_TYPE_REDRAW;
         default: return null;
       }
     }
@@ -225,18 +221,16 @@ public final class GCGPhaseTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GCGPhaseType.proto*\201\003\n\014GCGPhaseType\022\037\n" +
-      "\033OFOHJIEDJKD_GcgPhaseInvalid\020\000\022\035\n\031OFOHJI" +
-      "EDJKD_GcgPhaseStart\020\001\022\034\n\030OFOHJIEDJKD_Gcg" +
-      "PhaseDraw\020\002\022\037\n\033OFOHJIEDJKD_GcgPhaseOnSta" +
-      "ge\020\003\022\034\n\030OFOHJIEDJKD_GcgPhaseDice\020\004\022\034\n\030OF" +
-      "OHJIEDJKD_GcgPhaseMain\020\005\022\033\n\027OFOHJIEDJKD_" +
-      "GcgPhaseEnd\020\006\022\033\n\027OFOHJIEDJKD_GcgPhaseDie" +
-      "\020\007\022\033\n\027OFOHJIEDJKD_GcgPhaseFin\020\010\022\037\n\033OFOHJ" +
-      "IEDJKD_GcgPhasePreMain\020\t\022\036\n\032OFOHJIEDJKD_" +
-      "GcgPhaseReroll\020\n\022\036\n\032OFOHJIEDJKD_GcgPhase" +
-      "Redraw\020\013B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\022GCGPhaseType.proto*\307\002\n\014GCGPhaseType\022\032\n" +
+      "\026GCG_PHASE_TYPE_INVALID\020\000\022\030\n\024GCG_PHASE_T" +
+      "YPE_START\020\001\022\027\n\023GCG_PHASE_TYPE_DRAW\020\002\022\033\n\027" +
+      "GCG_PHASE_TYPE_ON_STAGE\020\003\022\027\n\023GCG_PHASE_T" +
+      "YPE_DICE\020\004\022\027\n\023GCG_PHASE_TYPE_MAIN\020\005\022\026\n\022G" +
+      "CG_PHASE_TYPE_END\020\006\022\026\n\022GCG_PHASE_TYPE_DI" +
+      "E\020\007\022\026\n\022GCG_PHASE_TYPE_FIN\020\010\022\033\n\027GCG_PHASE" +
+      "_TYPE_PRE_MAIN\020\t\022\031\n\025GCG_PHASE_TYPE_REROL" +
+      "L\020\n\022\031\n\025GCG_PHASE_TYPE_REDRAW\020\013B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,21 +19,28 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 card_id = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 card_id = 8;</code>
      * @return The cardId.
      */
     int getCardId();
   }
   /**
    * <pre>
-   * CmdId: 24868
-   * Obf: BJDDHFIJPEK
+   * CmdId: 21040
    * </pre>
    *
    * Protobuf type {@code SelectRoguelikeDungeonCardRsp}
@@ -80,14 +87,14 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 40: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +129,14 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
               emu.grasscutter.net.proto.SelectRoguelikeDungeonCardRspOuterClass.SelectRoguelikeDungeonCardRsp.class, emu.grasscutter.net.proto.SelectRoguelikeDungeonCardRspOuterClass.SelectRoguelikeDungeonCardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +144,14 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
       return retcode_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 7;
+    public static final int CARD_ID_FIELD_NUMBER = 8;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 7;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 card_id = 8;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -158,11 +173,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(7, cardId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(5, retcode_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(8, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cardId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(5, retcode_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +327,7 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24868
-     * Obf: BJDDHFIJPEK
+     * CmdId: 21040
      * </pre>
      *
      * Protobuf type {@code SelectRoguelikeDungeonCardRsp}
@@ -470,7 +484,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +496,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +511,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +527,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_id = 8;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -509,7 +539,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_id = 8;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +554,11 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -598,7 +636,7 @@ public final class SelectRoguelikeDungeonCardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#SelectRoguelikeDungeonCardRsp.proto\"A\n" +
       "\035SelectRoguelikeDungeonCardRsp\022\017\n\007retcod" +
-      "e\030\n \001(\005\022\017\n\007card_id\030\007 \001(\rB\033\n\031emu.grasscut" +
+      "e\030\005 \001(\005\022\017\n\007card_id\030\010 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

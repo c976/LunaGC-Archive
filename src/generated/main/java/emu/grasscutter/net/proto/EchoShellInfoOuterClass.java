@@ -19,6 +19,10 @@ public final class EchoShellInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 shell_id = 1;</code>
      * @return The shellId.
      */
@@ -109,6 +113,10 @@ public final class EchoShellInfoOuterClass {
     public static final int SHELL_ID_FIELD_NUMBER = 1;
     private int shellId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 shell_id = 1;</code>
      * @return The shellId.
      */
@@ -421,6 +429,10 @@ public final class EchoShellInfoOuterClass {
 
       private int shellId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 shell_id = 1;</code>
        * @return The shellId.
        */
@@ -429,6 +441,10 @@ public final class EchoShellInfoOuterClass {
         return shellId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 shell_id = 1;</code>
        * @param value The shellId to set.
        * @return This builder for chaining.
@@ -440,6 +456,10 @@ public final class EchoShellInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 shell_id = 1;</code>
        * @return This builder for chaining.
        */

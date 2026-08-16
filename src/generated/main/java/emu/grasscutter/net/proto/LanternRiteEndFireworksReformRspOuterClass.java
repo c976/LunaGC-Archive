@@ -19,63 +19,98 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 final_score = 1;</code>
-     * @return The finalScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool DIONDKJLOEF = 13;</code>
+     * @return The dIONDKJLOEF.
      */
-    int getFinalScore();
+    boolean getDIONDKJLOEF();
 
     /**
-     * <code>bool HPLLPLKOHLL = 6;</code>
-     * @return The hPLLPLKOHLL.
-     */
-    boolean getHPLLPLKOHLL();
-
-    /**
-     * <code>int32 retcode = 2;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 stage_id = 3;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool NBKBHCHMEIL = 11;</code>
+     * @return The nBKBHCHMEIL.
+     */
+    boolean getNBKBHCHMEIL();
+
+    /**
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool LFHPGGKMOLJ = 5;</code>
+     * @return The lFHPGGKMOLJ.
+     */
+    boolean getLFHPGGKMOLJ();
+
+    /**
+     * <pre>
+     * offset: 42
+     * </pre>
+     *
+     * <code>bool is_new_record = 4;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
+
+    /**
+     * <pre>
+     * offset: 43
+     * </pre>
+     *
+     * <code>bool IHKPLPHBNMM = 3;</code>
+     * @return The iHKPLPHBNMM.
+     */
+    boolean getIHKPLPHBNMM();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool FBGNCOBOMAA = 9;</code>
-     * @return The fBGNCOBOMAA.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 6;</code>
+     * @return The kEABNKEIJAD.
      */
-    boolean getFBGNCOBOMAA();
+    int getKEABNKEIJAD();
 
     /**
-     * <code>bool is_full_score = 10;</code>
-     * @return The isFullScore.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 MKBEJKGLPDB = 10;</code>
+     * @return The mKBEJKGLPDB.
      */
-    boolean getIsFullScore();
-
-    /**
-     * <code>bool HKBEDNIDDEI = 13;</code>
-     * @return The hKBEDNIDDEI.
-     */
-    boolean getHKBEDNIDDEI();
-
-    /**
-     * <code>uint32 challenge_id = 4;</code>
-     * @return The challengeId.
-     */
-    int getChallengeId();
-
-    /**
-     * <code>bool is_new_record = 11;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
+    int getMKBEJKGLPDB();
   }
   /**
    * <pre>
-   * CmdId: 709
-   * Obf: JBBOLPPBMHC
+   * CmdId: 24674
    * </pre>
    *
    * Protobuf type {@code LanternRiteEndFireworksReformRsp}
@@ -122,49 +157,49 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              finalScore_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 24: {
 
-              stageId_ = input.readUInt32();
+              iHKPLPHBNMM_ = input.readBool();
               break;
             }
             case 32: {
 
-              challengeId_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              lFHPGGKMOLJ_ = input.readBool();
               break;
             }
             case 48: {
 
-              hPLLPLKOHLL_ = input.readBool();
+              kEABNKEIJAD_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              fBGNCOBOMAA_ = input.readBool();
+              retcode_ = input.readInt32();
               break;
             }
             case 80: {
 
-              isFullScore_ = input.readBool();
+              mKBEJKGLPDB_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              isNewRecord_ = input.readBool();
+              nBKBHCHMEIL_ = input.readBool();
               break;
             }
             case 104: {
 
-              hKBEDNIDDEI_ = input.readBool();
+              dIONDKJLOEF_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -199,32 +234,29 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
               emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.class, emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.Builder.class);
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 1;
-    private int finalScore_;
+    public static final int DIONDKJLOEF_FIELD_NUMBER = 13;
+    private boolean dIONDKJLOEF_;
     /**
-     * <code>uint32 final_score = 1;</code>
-     * @return The finalScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool DIONDKJLOEF = 13;</code>
+     * @return The dIONDKJLOEF.
      */
     @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
+    public boolean getDIONDKJLOEF() {
+      return dIONDKJLOEF_;
     }
 
-    public static final int HPLLPLKOHLL_FIELD_NUMBER = 6;
-    private boolean hPLLPLKOHLL_;
-    /**
-     * <code>bool HPLLPLKOHLL = 6;</code>
-     * @return The hPLLPLKOHLL.
-     */
-    @java.lang.Override
-    public boolean getHPLLPLKOHLL() {
-      return hPLLPLKOHLL_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -232,10 +264,74 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return retcode_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    public static final int NBKBHCHMEIL_FIELD_NUMBER = 11;
+    private boolean nBKBHCHMEIL_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool NBKBHCHMEIL = 11;</code>
+     * @return The nBKBHCHMEIL.
+     */
+    @java.lang.Override
+    public boolean getNBKBHCHMEIL() {
+      return nBKBHCHMEIL_;
+    }
+
+    public static final int LFHPGGKMOLJ_FIELD_NUMBER = 5;
+    private boolean lFHPGGKMOLJ_;
+    /**
+     * <pre>
+     * offset: 41
+     * </pre>
+     *
+     * <code>bool LFHPGGKMOLJ = 5;</code>
+     * @return The lFHPGGKMOLJ.
+     */
+    @java.lang.Override
+    public boolean getLFHPGGKMOLJ() {
+      return lFHPGGKMOLJ_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 4;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 42
+     * </pre>
+     *
+     * <code>bool is_new_record = 4;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
+    }
+
+    public static final int IHKPLPHBNMM_FIELD_NUMBER = 3;
+    private boolean iHKPLPHBNMM_;
+    /**
+     * <pre>
+     * offset: 43
+     * </pre>
+     *
+     * <code>bool IHKPLPHBNMM = 3;</code>
+     * @return The iHKPLPHBNMM.
+     */
+    @java.lang.Override
+    public boolean getIHKPLPHBNMM() {
+      return iHKPLPHBNMM_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 3;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -243,59 +339,34 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       return stageId_;
     }
 
-    public static final int FBGNCOBOMAA_FIELD_NUMBER = 9;
-    private boolean fBGNCOBOMAA_;
+    public static final int KEABNKEIJAD_FIELD_NUMBER = 6;
+    private int kEABNKEIJAD_;
     /**
-     * <code>bool FBGNCOBOMAA = 9;</code>
-     * @return The fBGNCOBOMAA.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 KEABNKEIJAD = 6;</code>
+     * @return The kEABNKEIJAD.
      */
     @java.lang.Override
-    public boolean getFBGNCOBOMAA() {
-      return fBGNCOBOMAA_;
+    public int getKEABNKEIJAD() {
+      return kEABNKEIJAD_;
     }
 
-    public static final int IS_FULL_SCORE_FIELD_NUMBER = 10;
-    private boolean isFullScore_;
+    public static final int MKBEJKGLPDB_FIELD_NUMBER = 10;
+    private int mKBEJKGLPDB_;
     /**
-     * <code>bool is_full_score = 10;</code>
-     * @return The isFullScore.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 MKBEJKGLPDB = 10;</code>
+     * @return The mKBEJKGLPDB.
      */
     @java.lang.Override
-    public boolean getIsFullScore() {
-      return isFullScore_;
-    }
-
-    public static final int HKBEDNIDDEI_FIELD_NUMBER = 13;
-    private boolean hKBEDNIDDEI_;
-    /**
-     * <code>bool HKBEDNIDDEI = 13;</code>
-     * @return The hKBEDNIDDEI.
-     */
-    @java.lang.Override
-    public boolean getHKBEDNIDDEI() {
-      return hKBEDNIDDEI_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 4;
-    private int challengeId_;
-    /**
-     * <code>uint32 challenge_id = 4;</code>
-     * @return The challengeId.
-     */
-    @java.lang.Override
-    public int getChallengeId() {
-      return challengeId_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 11;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getMKBEJKGLPDB() {
+      return mKBEJKGLPDB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -312,32 +383,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finalScore_ != 0) {
-        output.writeUInt32(1, finalScore_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(3, stageId_);
-      }
-      if (challengeId_ != 0) {
-        output.writeUInt32(4, challengeId_);
-      }
-      if (hPLLPLKOHLL_ != false) {
-        output.writeBool(6, hPLLPLKOHLL_);
-      }
-      if (fBGNCOBOMAA_ != false) {
-        output.writeBool(9, fBGNCOBOMAA_);
-      }
-      if (isFullScore_ != false) {
-        output.writeBool(10, isFullScore_);
+      if (iHKPLPHBNMM_ != false) {
+        output.writeBool(3, iHKPLPHBNMM_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(11, isNewRecord_);
+        output.writeBool(4, isNewRecord_);
       }
-      if (hKBEDNIDDEI_ != false) {
-        output.writeBool(13, hKBEDNIDDEI_);
+      if (lFHPGGKMOLJ_ != false) {
+        output.writeBool(5, lFHPGGKMOLJ_);
+      }
+      if (kEABNKEIJAD_ != 0) {
+        output.writeUInt32(6, kEABNKEIJAD_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
+      }
+      if (mKBEJKGLPDB_ != 0) {
+        output.writeUInt32(10, mKBEJKGLPDB_);
+      }
+      if (nBKBHCHMEIL_ != false) {
+        output.writeBool(11, nBKBHCHMEIL_);
+      }
+      if (dIONDKJLOEF_ != false) {
+        output.writeBool(13, dIONDKJLOEF_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -348,41 +419,41 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finalScore_ != 0) {
+      if (iHKPLPHBNMM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, finalScore_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, stageId_);
-      }
-      if (challengeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, challengeId_);
-      }
-      if (hPLLPLKOHLL_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, hPLLPLKOHLL_);
-      }
-      if (fBGNCOBOMAA_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, fBGNCOBOMAA_);
-      }
-      if (isFullScore_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFullScore_);
+          .computeBoolSize(3, iHKPLPHBNMM_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isNewRecord_);
+          .computeBoolSize(4, isNewRecord_);
       }
-      if (hKBEDNIDDEI_ != false) {
+      if (lFHPGGKMOLJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, hKBEDNIDDEI_);
+          .computeBoolSize(5, lFHPGGKMOLJ_);
+      }
+      if (kEABNKEIJAD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, kEABNKEIJAD_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, retcode_);
+      }
+      if (mKBEJKGLPDB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, mKBEJKGLPDB_);
+      }
+      if (nBKBHCHMEIL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, nBKBHCHMEIL_);
+      }
+      if (dIONDKJLOEF_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, dIONDKJLOEF_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -399,24 +470,24 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp other = (emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp) obj;
 
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
-      if (getHPLLPLKOHLL()
-          != other.getHPLLPLKOHLL()) return false;
+      if (getDIONDKJLOEF()
+          != other.getDIONDKJLOEF()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getFBGNCOBOMAA()
-          != other.getFBGNCOBOMAA()) return false;
-      if (getIsFullScore()
-          != other.getIsFullScore()) return false;
-      if (getHKBEDNIDDEI()
-          != other.getHKBEDNIDDEI()) return false;
-      if (getChallengeId()
-          != other.getChallengeId()) return false;
+      if (getNBKBHCHMEIL()
+          != other.getNBKBHCHMEIL()) return false;
+      if (getLFHPGGKMOLJ()
+          != other.getLFHPGGKMOLJ()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getIHKPLPHBNMM()
+          != other.getIHKPLPHBNMM()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (getKEABNKEIJAD()
+          != other.getKEABNKEIJAD()) return false;
+      if (getMKBEJKGLPDB()
+          != other.getMKBEJKGLPDB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -428,29 +499,29 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + HPLLPLKOHLL_FIELD_NUMBER;
+      hash = (37 * hash) + DIONDKJLOEF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHPLLPLKOHLL());
+          getDIONDKJLOEF());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + FBGNCOBOMAA_FIELD_NUMBER;
+      hash = (37 * hash) + NBKBHCHMEIL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFBGNCOBOMAA());
-      hash = (37 * hash) + IS_FULL_SCORE_FIELD_NUMBER;
+          getNBKBHCHMEIL());
+      hash = (37 * hash) + LFHPGGKMOLJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFullScore());
-      hash = (37 * hash) + HKBEDNIDDEI_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHKBEDNIDDEI());
-      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeId();
+          getLFHPGGKMOLJ());
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + IHKPLPHBNMM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIHKPLPHBNMM());
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + KEABNKEIJAD_FIELD_NUMBER;
+      hash = (53 * hash) + getKEABNKEIJAD();
+      hash = (37 * hash) + MKBEJKGLPDB_FIELD_NUMBER;
+      hash = (53 * hash) + getMKBEJKGLPDB();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -548,8 +619,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 709
-     * Obf: JBBOLPPBMHC
+     * CmdId: 24674
      * </pre>
      *
      * Protobuf type {@code LanternRiteEndFireworksReformRsp}
@@ -589,23 +659,23 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finalScore_ = 0;
-
-        hPLLPLKOHLL_ = false;
+        dIONDKJLOEF_ = false;
 
         retcode_ = 0;
 
-        stageId_ = 0;
+        nBKBHCHMEIL_ = false;
 
-        fBGNCOBOMAA_ = false;
-
-        isFullScore_ = false;
-
-        hKBEDNIDDEI_ = false;
-
-        challengeId_ = 0;
+        lFHPGGKMOLJ_ = false;
 
         isNewRecord_ = false;
+
+        iHKPLPHBNMM_ = false;
+
+        stageId_ = 0;
+
+        kEABNKEIJAD_ = 0;
+
+        mKBEJKGLPDB_ = 0;
 
         return this;
       }
@@ -633,15 +703,15 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp buildPartial() {
         emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp result = new emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp(this);
-        result.finalScore_ = finalScore_;
-        result.hPLLPLKOHLL_ = hPLLPLKOHLL_;
+        result.dIONDKJLOEF_ = dIONDKJLOEF_;
         result.retcode_ = retcode_;
-        result.stageId_ = stageId_;
-        result.fBGNCOBOMAA_ = fBGNCOBOMAA_;
-        result.isFullScore_ = isFullScore_;
-        result.hKBEDNIDDEI_ = hKBEDNIDDEI_;
-        result.challengeId_ = challengeId_;
+        result.nBKBHCHMEIL_ = nBKBHCHMEIL_;
+        result.lFHPGGKMOLJ_ = lFHPGGKMOLJ_;
         result.isNewRecord_ = isNewRecord_;
+        result.iHKPLPHBNMM_ = iHKPLPHBNMM_;
+        result.stageId_ = stageId_;
+        result.kEABNKEIJAD_ = kEABNKEIJAD_;
+        result.mKBEJKGLPDB_ = mKBEJKGLPDB_;
         onBuilt();
         return result;
       }
@@ -690,32 +760,32 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp other) {
         if (other == emu.grasscutter.net.proto.LanternRiteEndFireworksReformRspOuterClass.LanternRiteEndFireworksReformRsp.getDefaultInstance()) return this;
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
-        }
-        if (other.getHPLLPLKOHLL() != false) {
-          setHPLLPLKOHLL(other.getHPLLPLKOHLL());
+        if (other.getDIONDKJLOEF() != false) {
+          setDIONDKJLOEF(other.getDIONDKJLOEF());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
+        if (other.getNBKBHCHMEIL() != false) {
+          setNBKBHCHMEIL(other.getNBKBHCHMEIL());
         }
-        if (other.getFBGNCOBOMAA() != false) {
-          setFBGNCOBOMAA(other.getFBGNCOBOMAA());
-        }
-        if (other.getIsFullScore() != false) {
-          setIsFullScore(other.getIsFullScore());
-        }
-        if (other.getHKBEDNIDDEI() != false) {
-          setHKBEDNIDDEI(other.getHKBEDNIDDEI());
-        }
-        if (other.getChallengeId() != 0) {
-          setChallengeId(other.getChallengeId());
+        if (other.getLFHPGGKMOLJ() != false) {
+          setLFHPGGKMOLJ(other.getLFHPGGKMOLJ());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getIHKPLPHBNMM() != false) {
+          setIHKPLPHBNMM(other.getIHKPLPHBNMM());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
+        if (other.getKEABNKEIJAD() != 0) {
+          setKEABNKEIJAD(other.getKEABNKEIJAD());
+        }
+        if (other.getMKBEJKGLPDB() != 0) {
+          setMKBEJKGLPDB(other.getMKBEJKGLPDB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -746,71 +816,56 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private int finalScore_ ;
+      private boolean dIONDKJLOEF_ ;
       /**
-       * <code>uint32 final_score = 1;</code>
-       * @return The finalScore.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool DIONDKJLOEF = 13;</code>
+       * @return The dIONDKJLOEF.
        */
       @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
+      public boolean getDIONDKJLOEF() {
+        return dIONDKJLOEF_;
       }
       /**
-       * <code>uint32 final_score = 1;</code>
-       * @param value The finalScore to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool DIONDKJLOEF = 13;</code>
+       * @param value The dIONDKJLOEF to set.
        * @return This builder for chaining.
        */
-      public Builder setFinalScore(int value) {
+      public Builder setDIONDKJLOEF(boolean value) {
         
-        finalScore_ = value;
+        dIONDKJLOEF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 final_score = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool DIONDKJLOEF = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinalScore() {
+      public Builder clearDIONDKJLOEF() {
         
-        finalScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean hPLLPLKOHLL_ ;
-      /**
-       * <code>bool HPLLPLKOHLL = 6;</code>
-       * @return The hPLLPLKOHLL.
-       */
-      @java.lang.Override
-      public boolean getHPLLPLKOHLL() {
-        return hPLLPLKOHLL_;
-      }
-      /**
-       * <code>bool HPLLPLKOHLL = 6;</code>
-       * @param value The hPLLPLKOHLL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHPLLPLKOHLL(boolean value) {
-        
-        hPLLPLKOHLL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool HPLLPLKOHLL = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHPLLPLKOHLL() {
-        
-        hPLLPLKOHLL_ = false;
+        dIONDKJLOEF_ = false;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -818,7 +873,11 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -829,7 +888,11 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -839,164 +902,99 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
 
-      private int stageId_ ;
+      private boolean nBKBHCHMEIL_ ;
       /**
-       * <code>uint32 stage_id = 3;</code>
-       * @return The stageId.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool NBKBHCHMEIL = 11;</code>
+       * @return The nBKBHCHMEIL.
        */
       @java.lang.Override
-      public int getStageId() {
-        return stageId_;
+      public boolean getNBKBHCHMEIL() {
+        return nBKBHCHMEIL_;
       }
       /**
-       * <code>uint32 stage_id = 3;</code>
-       * @param value The stageId to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool NBKBHCHMEIL = 11;</code>
+       * @param value The nBKBHCHMEIL to set.
        * @return This builder for chaining.
        */
-      public Builder setStageId(int value) {
+      public Builder setNBKBHCHMEIL(boolean value) {
         
-        stageId_ = value;
+        nBKBHCHMEIL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 stage_id = 3;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool NBKBHCHMEIL = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStageId() {
+      public Builder clearNBKBHCHMEIL() {
         
-        stageId_ = 0;
+        nBKBHCHMEIL_ = false;
         onChanged();
         return this;
       }
 
-      private boolean fBGNCOBOMAA_ ;
+      private boolean lFHPGGKMOLJ_ ;
       /**
-       * <code>bool FBGNCOBOMAA = 9;</code>
-       * @return The fBGNCOBOMAA.
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool LFHPGGKMOLJ = 5;</code>
+       * @return The lFHPGGKMOLJ.
        */
       @java.lang.Override
-      public boolean getFBGNCOBOMAA() {
-        return fBGNCOBOMAA_;
+      public boolean getLFHPGGKMOLJ() {
+        return lFHPGGKMOLJ_;
       }
       /**
-       * <code>bool FBGNCOBOMAA = 9;</code>
-       * @param value The fBGNCOBOMAA to set.
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool LFHPGGKMOLJ = 5;</code>
+       * @param value The lFHPGGKMOLJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFBGNCOBOMAA(boolean value) {
+      public Builder setLFHPGGKMOLJ(boolean value) {
         
-        fBGNCOBOMAA_ = value;
+        lFHPGGKMOLJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool FBGNCOBOMAA = 9;</code>
+       * <pre>
+       * offset: 41
+       * </pre>
+       *
+       * <code>bool LFHPGGKMOLJ = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFBGNCOBOMAA() {
+      public Builder clearLFHPGGKMOLJ() {
         
-        fBGNCOBOMAA_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFullScore_ ;
-      /**
-       * <code>bool is_full_score = 10;</code>
-       * @return The isFullScore.
-       */
-      @java.lang.Override
-      public boolean getIsFullScore() {
-        return isFullScore_;
-      }
-      /**
-       * <code>bool is_full_score = 10;</code>
-       * @param value The isFullScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFullScore(boolean value) {
-        
-        isFullScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_full_score = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFullScore() {
-        
-        isFullScore_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean hKBEDNIDDEI_ ;
-      /**
-       * <code>bool HKBEDNIDDEI = 13;</code>
-       * @return The hKBEDNIDDEI.
-       */
-      @java.lang.Override
-      public boolean getHKBEDNIDDEI() {
-        return hKBEDNIDDEI_;
-      }
-      /**
-       * <code>bool HKBEDNIDDEI = 13;</code>
-       * @param value The hKBEDNIDDEI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHKBEDNIDDEI(boolean value) {
-        
-        hKBEDNIDDEI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool HKBEDNIDDEI = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHKBEDNIDDEI() {
-        
-        hKBEDNIDDEI_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int challengeId_ ;
-      /**
-       * <code>uint32 challenge_id = 4;</code>
-       * @return The challengeId.
-       */
-      @java.lang.Override
-      public int getChallengeId() {
-        return challengeId_;
-      }
-      /**
-       * <code>uint32 challenge_id = 4;</code>
-       * @param value The challengeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeId(int value) {
-        
-        challengeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeId() {
-        
-        challengeId_ = 0;
+        lFHPGGKMOLJ_ = false;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_new_record = 4;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -1004,7 +1002,11 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_new_record = 4;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -1015,12 +1017,188 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <pre>
+       * offset: 42
+       * </pre>
+       *
+       * <code>bool is_new_record = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean iHKPLPHBNMM_ ;
+      /**
+       * <pre>
+       * offset: 43
+       * </pre>
+       *
+       * <code>bool IHKPLPHBNMM = 3;</code>
+       * @return The iHKPLPHBNMM.
+       */
+      @java.lang.Override
+      public boolean getIHKPLPHBNMM() {
+        return iHKPLPHBNMM_;
+      }
+      /**
+       * <pre>
+       * offset: 43
+       * </pre>
+       *
+       * <code>bool IHKPLPHBNMM = 3;</code>
+       * @param value The iHKPLPHBNMM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIHKPLPHBNMM(boolean value) {
+        
+        iHKPLPHBNMM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 43
+       * </pre>
+       *
+       * <code>bool IHKPLPHBNMM = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIHKPLPHBNMM() {
+        
+        iHKPLPHBNMM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 stage_id = 15;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 stage_id = 15;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 stage_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kEABNKEIJAD_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 6;</code>
+       * @return The kEABNKEIJAD.
+       */
+      @java.lang.Override
+      public int getKEABNKEIJAD() {
+        return kEABNKEIJAD_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 6;</code>
+       * @param value The kEABNKEIJAD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEABNKEIJAD(int value) {
+        
+        kEABNKEIJAD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 KEABNKEIJAD = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKEABNKEIJAD() {
+        
+        kEABNKEIJAD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mKBEJKGLPDB_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 MKBEJKGLPDB = 10;</code>
+       * @return The mKBEJKGLPDB.
+       */
+      @java.lang.Override
+      public int getMKBEJKGLPDB() {
+        return mKBEJKGLPDB_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 MKBEJKGLPDB = 10;</code>
+       * @param value The mKBEJKGLPDB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMKBEJKGLPDB(int value) {
+        
+        mKBEJKGLPDB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 MKBEJKGLPDB = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMKBEJKGLPDB() {
+        
+        mKBEJKGLPDB_ = 0;
         onChanged();
         return this;
       }
@@ -1092,13 +1270,13 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&LanternRiteEndFireworksReformRsp.proto" +
-      "\"\335\001\n LanternRiteEndFireworksReformRsp\022\023\n" +
-      "\013final_score\030\001 \001(\r\022\023\n\013HPLLPLKOHLL\030\006 \001(\010\022" +
-      "\017\n\007retcode\030\002 \001(\005\022\020\n\010stage_id\030\003 \001(\r\022\023\n\013FB" +
-      "GNCOBOMAA\030\t \001(\010\022\025\n\ris_full_score\030\n \001(\010\022\023" +
-      "\n\013HKBEDNIDDEI\030\r \001(\010\022\024\n\014challenge_id\030\004 \001(" +
-      "\r\022\025\n\ris_new_record\030\013 \001(\010B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\"\332\001\n LanternRiteEndFireworksReformRsp\022\023\n" +
+      "\013DIONDKJLOEF\030\r \001(\010\022\017\n\007retcode\030\t \001(\005\022\023\n\013N" +
+      "BKBHCHMEIL\030\013 \001(\010\022\023\n\013LFHPGGKMOLJ\030\005 \001(\010\022\025\n" +
+      "\ris_new_record\030\004 \001(\010\022\023\n\013IHKPLPHBNMM\030\003 \001(" +
+      "\010\022\020\n\010stage_id\030\017 \001(\r\022\023\n\013KEABNKEIJAD\030\006 \001(\r" +
+      "\022\023\n\013MKBEJKGLPDB\030\n \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1109,7 +1287,7 @@ public final class LanternRiteEndFireworksReformRspOuterClass {
     internal_static_LanternRiteEndFireworksReformRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteEndFireworksReformRsp_descriptor,
-        new java.lang.String[] { "FinalScore", "HPLLPLKOHLL", "Retcode", "StageId", "FBGNCOBOMAA", "IsFullScore", "HKBEDNIDDEI", "ChallengeId", "IsNewRecord", });
+        new java.lang.String[] { "DIONDKJLOEF", "Retcode", "NBKBHCHMEIL", "LFHPGGKMOLJ", "IsNewRecord", "IHKPLPHBNMM", "StageId", "KEABNKEIJAD", "MKBEJKGLPDB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

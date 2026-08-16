@@ -19,28 +19,44 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_score = 11;</code>
-     * @return The bestScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 EBFGBBLDBDC = 9;</code>
+     * @return The eBFGBBLDBDC.
      */
-    int getBestScore();
+    int getEBFGBBLDBDC();
 
     /**
-     * <code>bool is_content_closed = 15;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool EAEDOIFGENM = 12;</code>
+     * @return The eAEDOIFGENM.
+     */
+    boolean getEAEDOIFGENM();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 37
+     * </pre>
+     *
+     * <code>bool is_content_closed = 10;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>bool is_final_gallery_complete = 14;</code>
-     * @return The isFinalGalleryComplete.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 best_score = 3;</code>
+     * @return The bestScore.
      */
-    boolean getIsFinalGalleryComplete();
-
-    /**
-     * <code>uint32 current_stage_id = 12;</code>
-     * @return The currentStageId.
-     */
-    int getCurrentStageId();
+    int getBestScore();
   }
   /**
    * Protobuf type {@code LuminanceStoneChallengeActivityDetailInfo}
@@ -87,24 +103,24 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 24: {
 
               bestScore_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 72: {
 
-              currentStageId_ = input.readUInt32();
+              eBFGBBLDBDC_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              isFinalGalleryComplete_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 80: {
 
               isContentClosed_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              eAEDOIFGENM_ = input.readBool();
               break;
             }
             default: {
@@ -139,21 +155,44 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.class, emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.Builder.class);
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 11;
-    private int bestScore_;
+    public static final int EBFGBBLDBDC_FIELD_NUMBER = 9;
+    private int eBFGBBLDBDC_;
     /**
-     * <code>uint32 best_score = 11;</code>
-     * @return The bestScore.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 EBFGBBLDBDC = 9;</code>
+     * @return The eBFGBBLDBDC.
      */
     @java.lang.Override
-    public int getBestScore() {
-      return bestScore_;
+    public int getEBFGBBLDBDC() {
+      return eBFGBBLDBDC_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 15;
+    public static final int EAEDOIFGENM_FIELD_NUMBER = 12;
+    private boolean eAEDOIFGENM_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool EAEDOIFGENM = 12;</code>
+     * @return The eAEDOIFGENM.
+     */
+    @java.lang.Override
+    public boolean getEAEDOIFGENM() {
+      return eAEDOIFGENM_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 10;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 37
+     * </pre>
+     *
+     * <code>bool is_content_closed = 10;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -161,26 +200,19 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int IS_FINAL_GALLERY_COMPLETE_FIELD_NUMBER = 14;
-    private boolean isFinalGalleryComplete_;
+    public static final int BEST_SCORE_FIELD_NUMBER = 3;
+    private int bestScore_;
     /**
-     * <code>bool is_final_gallery_complete = 14;</code>
-     * @return The isFinalGalleryComplete.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 best_score = 3;</code>
+     * @return The bestScore.
      */
     @java.lang.Override
-    public boolean getIsFinalGalleryComplete() {
-      return isFinalGalleryComplete_;
-    }
-
-    public static final int CURRENT_STAGE_ID_FIELD_NUMBER = 12;
-    private int currentStageId_;
-    /**
-     * <code>uint32 current_stage_id = 12;</code>
-     * @return The currentStageId.
-     */
-    @java.lang.Override
-    public int getCurrentStageId() {
-      return currentStageId_;
+    public int getBestScore() {
+      return bestScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -198,16 +230,16 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bestScore_ != 0) {
-        output.writeUInt32(11, bestScore_);
+        output.writeUInt32(3, bestScore_);
       }
-      if (currentStageId_ != 0) {
-        output.writeUInt32(12, currentStageId_);
-      }
-      if (isFinalGalleryComplete_ != false) {
-        output.writeBool(14, isFinalGalleryComplete_);
+      if (eBFGBBLDBDC_ != 0) {
+        output.writeUInt32(9, eBFGBBLDBDC_);
       }
       if (isContentClosed_ != false) {
-        output.writeBool(15, isContentClosed_);
+        output.writeBool(10, isContentClosed_);
+      }
+      if (eAEDOIFGENM_ != false) {
+        output.writeBool(12, eAEDOIFGENM_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +252,19 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       size = 0;
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, bestScore_);
+          .computeUInt32Size(3, bestScore_);
       }
-      if (currentStageId_ != 0) {
+      if (eBFGBBLDBDC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, currentStageId_);
-      }
-      if (isFinalGalleryComplete_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isFinalGalleryComplete_);
+          .computeUInt32Size(9, eBFGBBLDBDC_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isContentClosed_);
+          .computeBoolSize(10, isContentClosed_);
+      }
+      if (eAEDOIFGENM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, eAEDOIFGENM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +281,14 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo other = (emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo) obj;
 
-      if (getBestScore()
-          != other.getBestScore()) return false;
+      if (getEBFGBBLDBDC()
+          != other.getEBFGBBLDBDC()) return false;
+      if (getEAEDOIFGENM()
+          != other.getEAEDOIFGENM()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getIsFinalGalleryComplete()
-          != other.getIsFinalGalleryComplete()) return false;
-      if (getCurrentStageId()
-          != other.getCurrentStageId()) return false;
+      if (getBestScore()
+          != other.getBestScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +300,16 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBestScore();
+      hash = (37 * hash) + EBFGBBLDBDC_FIELD_NUMBER;
+      hash = (53 * hash) + getEBFGBBLDBDC();
+      hash = (37 * hash) + EAEDOIFGENM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEAEDOIFGENM());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + IS_FINAL_GALLERY_COMPLETE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinalGalleryComplete());
-      hash = (37 * hash) + CURRENT_STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurrentStageId();
+      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getBestScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,13 +443,13 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bestScore_ = 0;
+        eBFGBBLDBDC_ = 0;
+
+        eAEDOIFGENM_ = false;
 
         isContentClosed_ = false;
 
-        isFinalGalleryComplete_ = false;
-
-        currentStageId_ = 0;
+        bestScore_ = 0;
 
         return this;
       }
@@ -445,10 +477,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo result = new emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo(this);
-        result.bestScore_ = bestScore_;
+        result.eBFGBBLDBDC_ = eBFGBBLDBDC_;
+        result.eAEDOIFGENM_ = eAEDOIFGENM_;
         result.isContentClosed_ = isContentClosed_;
-        result.isFinalGalleryComplete_ = isFinalGalleryComplete_;
-        result.currentStageId_ = currentStageId_;
+        result.bestScore_ = bestScore_;
         onBuilt();
         return result;
       }
@@ -497,17 +529,17 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getBestScore() != 0) {
-          setBestScore(other.getBestScore());
+        if (other.getEBFGBBLDBDC() != 0) {
+          setEBFGBBLDBDC(other.getEBFGBBLDBDC());
+        }
+        if (other.getEAEDOIFGENM() != false) {
+          setEAEDOIFGENM(other.getEAEDOIFGENM());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getIsFinalGalleryComplete() != false) {
-          setIsFinalGalleryComplete(other.getIsFinalGalleryComplete());
-        }
-        if (other.getCurrentStageId() != 0) {
-          setCurrentStageId(other.getCurrentStageId());
+        if (other.getBestScore() != 0) {
+          setBestScore(other.getBestScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,40 +570,99 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int bestScore_ ;
+      private int eBFGBBLDBDC_ ;
       /**
-       * <code>uint32 best_score = 11;</code>
-       * @return The bestScore.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EBFGBBLDBDC = 9;</code>
+       * @return The eBFGBBLDBDC.
        */
       @java.lang.Override
-      public int getBestScore() {
-        return bestScore_;
+      public int getEBFGBBLDBDC() {
+        return eBFGBBLDBDC_;
       }
       /**
-       * <code>uint32 best_score = 11;</code>
-       * @param value The bestScore to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EBFGBBLDBDC = 9;</code>
+       * @param value The eBFGBBLDBDC to set.
        * @return This builder for chaining.
        */
-      public Builder setBestScore(int value) {
+      public Builder setEBFGBBLDBDC(int value) {
         
-        bestScore_ = value;
+        eBFGBBLDBDC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 best_score = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 EBFGBBLDBDC = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBestScore() {
+      public Builder clearEBFGBBLDBDC() {
         
-        bestScore_ = 0;
+        eBFGBBLDBDC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean eAEDOIFGENM_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool EAEDOIFGENM = 12;</code>
+       * @return The eAEDOIFGENM.
+       */
+      @java.lang.Override
+      public boolean getEAEDOIFGENM() {
+        return eAEDOIFGENM_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool EAEDOIFGENM = 12;</code>
+       * @param value The eAEDOIFGENM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEAEDOIFGENM(boolean value) {
+        
+        eAEDOIFGENM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool EAEDOIFGENM = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEAEDOIFGENM() {
+        
+        eAEDOIFGENM_ = false;
         onChanged();
         return this;
       }
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_content_closed = 10;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -579,7 +670,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_content_closed = 10;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -590,7 +685,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 37
+       * </pre>
+       *
+       * <code>bool is_content_closed = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -600,64 +699,45 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
 
-      private boolean isFinalGalleryComplete_ ;
+      private int bestScore_ ;
       /**
-       * <code>bool is_final_gallery_complete = 14;</code>
-       * @return The isFinalGalleryComplete.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 best_score = 3;</code>
+       * @return The bestScore.
        */
       @java.lang.Override
-      public boolean getIsFinalGalleryComplete() {
-        return isFinalGalleryComplete_;
+      public int getBestScore() {
+        return bestScore_;
       }
       /**
-       * <code>bool is_final_gallery_complete = 14;</code>
-       * @param value The isFinalGalleryComplete to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 best_score = 3;</code>
+       * @param value The bestScore to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFinalGalleryComplete(boolean value) {
+      public Builder setBestScore(int value) {
         
-        isFinalGalleryComplete_ = value;
+        bestScore_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_final_gallery_complete = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 best_score = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFinalGalleryComplete() {
+      public Builder clearBestScore() {
         
-        isFinalGalleryComplete_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int currentStageId_ ;
-      /**
-       * <code>uint32 current_stage_id = 12;</code>
-       * @return The currentStageId.
-       */
-      @java.lang.Override
-      public int getCurrentStageId() {
-        return currentStageId_;
-      }
-      /**
-       * <code>uint32 current_stage_id = 12;</code>
-       * @param value The currentStageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurrentStageId(int value) {
-        
-        currentStageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 current_stage_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurrentStageId() {
-        
-        currentStageId_ = 0;
+        bestScore_ = 0;
         onChanged();
         return this;
       }
@@ -729,11 +809,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n/LuminanceStoneChallengeActivityDetailI" +
-      "nfo.proto\"\227\001\n)LuminanceStoneChallengeAct" +
-      "ivityDetailInfo\022\022\n\nbest_score\030\013 \001(\r\022\031\n\021i" +
-      "s_content_closed\030\017 \001(\010\022!\n\031is_final_galle" +
-      "ry_complete\030\016 \001(\010\022\030\n\020current_stage_id\030\014 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "nfo.proto\"\204\001\n)LuminanceStoneChallengeAct" +
+      "ivityDetailInfo\022\023\n\013EBFGBBLDBDC\030\t \001(\r\022\023\n\013" +
+      "EAEDOIFGENM\030\014 \001(\010\022\031\n\021is_content_closed\030\n" +
+      " \001(\010\022\022\n\nbest_score\030\003 \001(\rB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -744,7 +824,7 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     internal_static_LuminanceStoneChallengeActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LuminanceStoneChallengeActivityDetailInfo_descriptor,
-        new java.lang.String[] { "BestScore", "IsContentClosed", "IsFinalGalleryComplete", "CurrentStageId", });
+        new java.lang.String[] { "EBFGBBLDBDC", "EAEDOIFGENM", "IsContentClosed", "BestScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

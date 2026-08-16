@@ -19,21 +19,28 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 10;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>uint32 reward_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 reward_id = 15;</code>
      * @return The rewardId.
      */
     int getRewardId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 activity_id = 2;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 6953
-   * Obf: HBNGNNBBKKO
+   * CmdId: 7868
    * </pre>
    *
    * Protobuf type {@code ActivitySelectAvatarCardReq}
@@ -80,14 +87,14 @@ public final class ActivitySelectAvatarCardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              rewardId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               activityId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              rewardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +129,34 @@ public final class ActivitySelectAvatarCardReqOuterClass {
               emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq.class, emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 10;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int REWARD_ID_FIELD_NUMBER = 1;
+    public static final int REWARD_ID_FIELD_NUMBER = 15;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 reward_id = 15;</code>
      * @return The rewardId.
      */
     @java.lang.Override
     public int getRewardId() {
       return rewardId_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 2;
+    private int activityId_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 activity_id = 2;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +173,11 @@ public final class ActivitySelectAvatarCardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rewardId_ != 0) {
-        output.writeUInt32(1, rewardId_);
-      }
       if (activityId_ != 0) {
-        output.writeUInt32(10, activityId_);
+        output.writeUInt32(2, activityId_);
+      }
+      if (rewardId_ != 0) {
+        output.writeUInt32(15, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +188,13 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, rewardId_);
-      }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, activityId_);
+          .computeUInt32Size(2, activityId_);
+      }
+      if (rewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +211,10 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       }
       emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq other = (emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (getRewardId()
           != other.getRewardId()) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +226,10 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRewardId();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +327,7 @@ public final class ActivitySelectAvatarCardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6953
-     * Obf: HBNGNNBBKKO
+     * CmdId: 7868
      * </pre>
      *
      * Protobuf type {@code ActivitySelectAvatarCardReq}
@@ -353,9 +367,9 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
         rewardId_ = 0;
+
+        activityId_ = 0;
 
         return this;
       }
@@ -383,8 +397,8 @@ public final class ActivitySelectAvatarCardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq buildPartial() {
         emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq result = new emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq(this);
-        result.activityId_ = activityId_;
         result.rewardId_ = rewardId_;
+        result.activityId_ = activityId_;
         onBuilt();
         return result;
       }
@@ -433,11 +447,11 @@ public final class ActivitySelectAvatarCardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq other) {
         if (other == emu.grasscutter.net.proto.ActivitySelectAvatarCardReqOuterClass.ActivitySelectAvatarCardReq.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
         if (other.getRewardId() != 0) {
           setRewardId(other.getRewardId());
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +482,13 @@ public final class ActivitySelectAvatarCardReqOuterClass {
         return this;
       }
 
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 15;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -509,7 +496,11 @@ public final class ActivitySelectAvatarCardReqOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 15;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +511,59 @@ public final class ActivitySelectAvatarCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 reward_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
         
         rewardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_id = 2;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_id = 2;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +635,8 @@ public final class ActivitySelectAvatarCardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!ActivitySelectAvatarCardReq.proto\"E\n\033A" +
-      "ctivitySelectAvatarCardReq\022\023\n\013activity_i" +
-      "d\030\n \001(\r\022\021\n\treward_id\030\001 \001(\rB\033\n\031emu.grassc" +
+      "ctivitySelectAvatarCardReq\022\021\n\treward_id\030" +
+      "\017 \001(\r\022\023\n\013activity_id\030\002 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +648,7 @@ public final class ActivitySelectAvatarCardReqOuterClass {
     internal_static_ActivitySelectAvatarCardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivitySelectAvatarCardReq_descriptor,
-        new java.lang.String[] { "ActivityId", "RewardId", });
+        new java.lang.String[] { "RewardId", "ActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

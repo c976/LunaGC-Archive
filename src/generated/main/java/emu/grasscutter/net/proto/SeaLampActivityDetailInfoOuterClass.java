@@ -19,68 +19,112 @@ public final class SeaLampActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-     * @return A list containing the kDAFEPBMKGD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+     * @return A list containing the nHHACEMGAFP.
      */
-    java.util.List<java.lang.Integer> getKDAFEPBMKGDList();
+    java.util.List<java.lang.Integer> getNHHACEMGAFPList();
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-     * @return The count of kDAFEPBMKGD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+     * @return The count of nHHACEMGAFP.
      */
-    int getKDAFEPBMKGDCount();
+    int getNHHACEMGAFPCount();
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
      * @param index The index of the element to return.
-     * @return The kDAFEPBMKGD at the given index.
+     * @return The nHHACEMGAFP at the given index.
      */
-    int getKDAFEPBMKGD(int index);
+    int getNHHACEMGAFP(int index);
 
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-     * @return A list containing the oFJFAMENEMB.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+     * @return A list containing the pHHEMACKPOK.
      */
-    java.util.List<java.lang.Integer> getOFJFAMENEMBList();
+    java.util.List<java.lang.Integer> getPHHEMACKPOKList();
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-     * @return The count of oFJFAMENEMB.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+     * @return The count of pHHEMACKPOK.
      */
-    int getOFJFAMENEMBCount();
+    int getPHHEMACKPOKCount();
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
      * @param index The index of the element to return.
-     * @return The oFJFAMENEMB at the given index.
+     * @return The pHHEMACKPOK at the given index.
      */
-    int getOFJFAMENEMB(int index);
+    int getPHHEMACKPOK(int index);
 
     /**
-     * <code>uint32 OAFHEIIKAMA = 11;</code>
-     * @return The oAFHEIIKAMA.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 PEEMEKGKMKL = 12;</code>
+     * @return The pEEMEKGKMKL.
      */
-    int getOAFHEIIKAMA();
+    int getPEEMEKGKMKL();
 
     /**
-     * <code>uint32 progress = 9;</code>
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
+     * <code>uint32 progress = 3;</code>
      * @return The progress.
      */
     int getProgress();
 
     /**
-     * <code>uint32 phase_id = 2;</code>
-     * @return The phaseId.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 MPLBGIACDEE = 13;</code>
+     * @return The mPLBGIACDEE.
      */
-    int getPhaseId();
+    int getMPLBGIACDEE();
 
     /**
-     * <code>uint32 PIAEEINJKKI = 12;</code>
-     * @return The pIAEEINJKKI.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 IGMFPKCOFOI = 14;</code>
+     * @return The iGMFPKCOFOI.
      */
-    int getPIAEEINJKKI();
+    int getIGMFPKCOFOI();
 
     /**
-     * <code>uint32 DJNDBILMOMH = 15;</code>
-     * @return The dJNDBILMOMH.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 KPFBKGNGAHE = 1123;</code>
+     * @return The kPFBKGNGAHE.
      */
-    int getDJNDBILMOMH();
+    int getKPFBKGNGAHE();
   }
   /**
    * Protobuf type {@code SeaLampActivityDetailInfo}
@@ -95,8 +139,8 @@ public final class SeaLampActivityDetailInfoOuterClass {
       super(builder);
     }
     private SeaLampActivityDetailInfo() {
-      kDAFEPBMKGD_ = emptyIntList();
-      oFJFAMENEMB_ = emptyIntList();
+      nHHACEMGAFP_ = emptyIntList();
+      pHHEMACKPOK_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -130,71 +174,71 @@ public final class SeaLampActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              phaseId_ = input.readUInt32();
-              break;
-            }
             case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                kDAFEPBMKGD_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              kDAFEPBMKGD_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                kDAFEPBMKGD_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                kDAFEPBMKGD_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 72: {
 
               progress_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                oFJFAMENEMB_ = newIntList();
+                pHHEMACKPOK_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              oFJFAMENEMB_.addInt(input.readUInt32());
+              pHHEMACKPOK_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                oFJFAMENEMB_ = newIntList();
+                pHHEMACKPOK_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oFJFAMENEMB_.addInt(input.readUInt32());
+                pHHEMACKPOK_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 88: {
-
-              oAFHEIIKAMA_ = input.readUInt32();
+            case 40: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                nHHACEMGAFP_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              nHHACEMGAFP_.addInt(input.readUInt32());
+              break;
+            }
+            case 42: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                nHHACEMGAFP_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                nHHACEMGAFP_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             case 96: {
 
-              pIAEEINJKKI_ = input.readUInt32();
+              pEEMEKGKMKL_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
-              dJNDBILMOMH_ = input.readUInt32();
+              mPLBGIACDEE_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              iGMFPKCOFOI_ = input.readUInt32();
+              break;
+            }
+            case 8984: {
+
+              kPFBKGNGAHE_ = input.readUInt32();
               break;
             }
             default: {
@@ -212,11 +256,11 @@ public final class SeaLampActivityDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          kDAFEPBMKGD_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          oFJFAMENEMB_.makeImmutable(); // C
+          pHHEMACKPOK_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          nHHACEMGAFP_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -235,77 +279,109 @@ public final class SeaLampActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo.class, emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo.Builder.class);
     }
 
-    public static final int KDAFEPBMKGD_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList kDAFEPBMKGD_;
+    public static final int NHHACEMGAFP_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.IntList nHHACEMGAFP_;
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-     * @return A list containing the kDAFEPBMKGD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+     * @return A list containing the nHHACEMGAFP.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getKDAFEPBMKGDList() {
-      return kDAFEPBMKGD_;
+        getNHHACEMGAFPList() {
+      return nHHACEMGAFP_;
     }
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-     * @return The count of kDAFEPBMKGD.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+     * @return The count of nHHACEMGAFP.
      */
-    public int getKDAFEPBMKGDCount() {
-      return kDAFEPBMKGD_.size();
+    public int getNHHACEMGAFPCount() {
+      return nHHACEMGAFP_.size();
     }
     /**
-     * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NHHACEMGAFP = 5;</code>
      * @param index The index of the element to return.
-     * @return The kDAFEPBMKGD at the given index.
+     * @return The nHHACEMGAFP at the given index.
      */
-    public int getKDAFEPBMKGD(int index) {
-      return kDAFEPBMKGD_.getInt(index);
+    public int getNHHACEMGAFP(int index) {
+      return nHHACEMGAFP_.getInt(index);
     }
-    private int kDAFEPBMKGDMemoizedSerializedSize = -1;
+    private int nHHACEMGAFPMemoizedSerializedSize = -1;
 
-    public static final int OFJFAMENEMB_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList oFJFAMENEMB_;
+    public static final int PHHEMACKPOK_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList pHHEMACKPOK_;
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-     * @return A list containing the oFJFAMENEMB.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+     * @return A list containing the pHHEMACKPOK.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOFJFAMENEMBList() {
-      return oFJFAMENEMB_;
+        getPHHEMACKPOKList() {
+      return pHHEMACKPOK_;
     }
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-     * @return The count of oFJFAMENEMB.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+     * @return The count of pHHEMACKPOK.
      */
-    public int getOFJFAMENEMBCount() {
-      return oFJFAMENEMB_.size();
+    public int getPHHEMACKPOKCount() {
+      return pHHEMACKPOK_.size();
     }
     /**
-     * <code>repeated uint32 OFJFAMENEMB = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 PHHEMACKPOK = 4;</code>
      * @param index The index of the element to return.
-     * @return The oFJFAMENEMB at the given index.
+     * @return The pHHEMACKPOK at the given index.
      */
-    public int getOFJFAMENEMB(int index) {
-      return oFJFAMENEMB_.getInt(index);
+    public int getPHHEMACKPOK(int index) {
+      return pHHEMACKPOK_.getInt(index);
     }
-    private int oFJFAMENEMBMemoizedSerializedSize = -1;
+    private int pHHEMACKPOKMemoizedSerializedSize = -1;
 
-    public static final int OAFHEIIKAMA_FIELD_NUMBER = 11;
-    private int oAFHEIIKAMA_;
+    public static final int PEEMEKGKMKL_FIELD_NUMBER = 12;
+    private int pEEMEKGKMKL_;
     /**
-     * <code>uint32 OAFHEIIKAMA = 11;</code>
-     * @return The oAFHEIIKAMA.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 PEEMEKGKMKL = 12;</code>
+     * @return The pEEMEKGKMKL.
      */
     @java.lang.Override
-    public int getOAFHEIIKAMA() {
-      return oAFHEIIKAMA_;
+    public int getPEEMEKGKMKL() {
+      return pEEMEKGKMKL_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 9;
+    public static final int PROGRESS_FIELD_NUMBER = 3;
     private int progress_;
     /**
-     * <code>uint32 progress = 9;</code>
+     * <pre>
+     *6.3.0 // offset: 52
+     * </pre>
+     *
+     * <code>uint32 progress = 3;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -313,37 +389,49 @@ public final class SeaLampActivityDetailInfoOuterClass {
       return progress_;
     }
 
-    public static final int PHASE_ID_FIELD_NUMBER = 2;
-    private int phaseId_;
+    public static final int MPLBGIACDEE_FIELD_NUMBER = 13;
+    private int mPLBGIACDEE_;
     /**
-     * <code>uint32 phase_id = 2;</code>
-     * @return The phaseId.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 MPLBGIACDEE = 13;</code>
+     * @return The mPLBGIACDEE.
      */
     @java.lang.Override
-    public int getPhaseId() {
-      return phaseId_;
+    public int getMPLBGIACDEE() {
+      return mPLBGIACDEE_;
     }
 
-    public static final int PIAEEINJKKI_FIELD_NUMBER = 12;
-    private int pIAEEINJKKI_;
+    public static final int IGMFPKCOFOI_FIELD_NUMBER = 14;
+    private int iGMFPKCOFOI_;
     /**
-     * <code>uint32 PIAEEINJKKI = 12;</code>
-     * @return The pIAEEINJKKI.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 IGMFPKCOFOI = 14;</code>
+     * @return The iGMFPKCOFOI.
      */
     @java.lang.Override
-    public int getPIAEEINJKKI() {
-      return pIAEEINJKKI_;
+    public int getIGMFPKCOFOI() {
+      return iGMFPKCOFOI_;
     }
 
-    public static final int DJNDBILMOMH_FIELD_NUMBER = 15;
-    private int dJNDBILMOMH_;
+    public static final int KPFBKGNGAHE_FIELD_NUMBER = 1123;
+    private int kPFBKGNGAHE_;
     /**
-     * <code>uint32 DJNDBILMOMH = 15;</code>
-     * @return The dJNDBILMOMH.
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>uint32 KPFBKGNGAHE = 1123;</code>
+     * @return The kPFBKGNGAHE.
      */
     @java.lang.Override
-    public int getDJNDBILMOMH() {
-      return dJNDBILMOMH_;
+    public int getKPFBKGNGAHE() {
+      return kPFBKGNGAHE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -361,34 +449,34 @@ public final class SeaLampActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (phaseId_ != 0) {
-        output.writeUInt32(2, phaseId_);
-      }
-      if (getKDAFEPBMKGDList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(kDAFEPBMKGDMemoizedSerializedSize);
-      }
-      for (int i = 0; i < kDAFEPBMKGD_.size(); i++) {
-        output.writeUInt32NoTag(kDAFEPBMKGD_.getInt(i));
-      }
       if (progress_ != 0) {
-        output.writeUInt32(9, progress_);
+        output.writeUInt32(3, progress_);
       }
-      if (getOFJFAMENEMBList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(oFJFAMENEMBMemoizedSerializedSize);
+      if (getPHHEMACKPOKList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(pHHEMACKPOKMemoizedSerializedSize);
       }
-      for (int i = 0; i < oFJFAMENEMB_.size(); i++) {
-        output.writeUInt32NoTag(oFJFAMENEMB_.getInt(i));
+      for (int i = 0; i < pHHEMACKPOK_.size(); i++) {
+        output.writeUInt32NoTag(pHHEMACKPOK_.getInt(i));
       }
-      if (oAFHEIIKAMA_ != 0) {
-        output.writeUInt32(11, oAFHEIIKAMA_);
+      if (getNHHACEMGAFPList().size() > 0) {
+        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(nHHACEMGAFPMemoizedSerializedSize);
       }
-      if (pIAEEINJKKI_ != 0) {
-        output.writeUInt32(12, pIAEEINJKKI_);
+      for (int i = 0; i < nHHACEMGAFP_.size(); i++) {
+        output.writeUInt32NoTag(nHHACEMGAFP_.getInt(i));
       }
-      if (dJNDBILMOMH_ != 0) {
-        output.writeUInt32(15, dJNDBILMOMH_);
+      if (pEEMEKGKMKL_ != 0) {
+        output.writeUInt32(12, pEEMEKGKMKL_);
+      }
+      if (mPLBGIACDEE_ != 0) {
+        output.writeUInt32(13, mPLBGIACDEE_);
+      }
+      if (iGMFPKCOFOI_ != 0) {
+        output.writeUInt32(14, iGMFPKCOFOI_);
+      }
+      if (kPFBKGNGAHE_ != 0) {
+        output.writeUInt32(1123, kPFBKGNGAHE_);
       }
       unknownFields.writeTo(output);
     }
@@ -399,53 +487,53 @@ public final class SeaLampActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (phaseId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, phaseId_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < kDAFEPBMKGD_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(kDAFEPBMKGD_.getInt(i));
-        }
-        size += dataSize;
-        if (!getKDAFEPBMKGDList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        kDAFEPBMKGDMemoizedSerializedSize = dataSize;
-      }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, progress_);
+          .computeUInt32Size(3, progress_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < oFJFAMENEMB_.size(); i++) {
+        for (int i = 0; i < pHHEMACKPOK_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oFJFAMENEMB_.getInt(i));
+            .computeUInt32SizeNoTag(pHHEMACKPOK_.getInt(i));
         }
         size += dataSize;
-        if (!getOFJFAMENEMBList().isEmpty()) {
+        if (!getPHHEMACKPOKList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oFJFAMENEMBMemoizedSerializedSize = dataSize;
+        pHHEMACKPOKMemoizedSerializedSize = dataSize;
       }
-      if (oAFHEIIKAMA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, oAFHEIIKAMA_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < nHHACEMGAFP_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(nHHACEMGAFP_.getInt(i));
+        }
+        size += dataSize;
+        if (!getNHHACEMGAFPList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        nHHACEMGAFPMemoizedSerializedSize = dataSize;
       }
-      if (pIAEEINJKKI_ != 0) {
+      if (pEEMEKGKMKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pIAEEINJKKI_);
+          .computeUInt32Size(12, pEEMEKGKMKL_);
       }
-      if (dJNDBILMOMH_ != 0) {
+      if (mPLBGIACDEE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, dJNDBILMOMH_);
+          .computeUInt32Size(13, mPLBGIACDEE_);
+      }
+      if (iGMFPKCOFOI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, iGMFPKCOFOI_);
+      }
+      if (kPFBKGNGAHE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1123, kPFBKGNGAHE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,20 +550,20 @@ public final class SeaLampActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo other = (emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo) obj;
 
-      if (!getKDAFEPBMKGDList()
-          .equals(other.getKDAFEPBMKGDList())) return false;
-      if (!getOFJFAMENEMBList()
-          .equals(other.getOFJFAMENEMBList())) return false;
-      if (getOAFHEIIKAMA()
-          != other.getOAFHEIIKAMA()) return false;
+      if (!getNHHACEMGAFPList()
+          .equals(other.getNHHACEMGAFPList())) return false;
+      if (!getPHHEMACKPOKList()
+          .equals(other.getPHHEMACKPOKList())) return false;
+      if (getPEEMEKGKMKL()
+          != other.getPEEMEKGKMKL()) return false;
       if (getProgress()
           != other.getProgress()) return false;
-      if (getPhaseId()
-          != other.getPhaseId()) return false;
-      if (getPIAEEINJKKI()
-          != other.getPIAEEINJKKI()) return false;
-      if (getDJNDBILMOMH()
-          != other.getDJNDBILMOMH()) return false;
+      if (getMPLBGIACDEE()
+          != other.getMPLBGIACDEE()) return false;
+      if (getIGMFPKCOFOI()
+          != other.getIGMFPKCOFOI()) return false;
+      if (getKPFBKGNGAHE()
+          != other.getKPFBKGNGAHE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -487,24 +575,24 @@ public final class SeaLampActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getKDAFEPBMKGDCount() > 0) {
-        hash = (37 * hash) + KDAFEPBMKGD_FIELD_NUMBER;
-        hash = (53 * hash) + getKDAFEPBMKGDList().hashCode();
+      if (getNHHACEMGAFPCount() > 0) {
+        hash = (37 * hash) + NHHACEMGAFP_FIELD_NUMBER;
+        hash = (53 * hash) + getNHHACEMGAFPList().hashCode();
       }
-      if (getOFJFAMENEMBCount() > 0) {
-        hash = (37 * hash) + OFJFAMENEMB_FIELD_NUMBER;
-        hash = (53 * hash) + getOFJFAMENEMBList().hashCode();
+      if (getPHHEMACKPOKCount() > 0) {
+        hash = (37 * hash) + PHHEMACKPOK_FIELD_NUMBER;
+        hash = (53 * hash) + getPHHEMACKPOKList().hashCode();
       }
-      hash = (37 * hash) + OAFHEIIKAMA_FIELD_NUMBER;
-      hash = (53 * hash) + getOAFHEIIKAMA();
+      hash = (37 * hash) + PEEMEKGKMKL_FIELD_NUMBER;
+      hash = (53 * hash) + getPEEMEKGKMKL();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
-      hash = (37 * hash) + PHASE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPhaseId();
-      hash = (37 * hash) + PIAEEINJKKI_FIELD_NUMBER;
-      hash = (53 * hash) + getPIAEEINJKKI();
-      hash = (37 * hash) + DJNDBILMOMH_FIELD_NUMBER;
-      hash = (53 * hash) + getDJNDBILMOMH();
+      hash = (37 * hash) + MPLBGIACDEE_FIELD_NUMBER;
+      hash = (53 * hash) + getMPLBGIACDEE();
+      hash = (37 * hash) + IGMFPKCOFOI_FIELD_NUMBER;
+      hash = (53 * hash) + getIGMFPKCOFOI();
+      hash = (37 * hash) + KPFBKGNGAHE_FIELD_NUMBER;
+      hash = (53 * hash) + getKPFBKGNGAHE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -638,19 +726,19 @@ public final class SeaLampActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kDAFEPBMKGD_ = emptyIntList();
+        nHHACEMGAFP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        oFJFAMENEMB_ = emptyIntList();
+        pHHEMACKPOK_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        oAFHEIIKAMA_ = 0;
+        pEEMEKGKMKL_ = 0;
 
         progress_ = 0;
 
-        phaseId_ = 0;
+        mPLBGIACDEE_ = 0;
 
-        pIAEEINJKKI_ = 0;
+        iGMFPKCOFOI_ = 0;
 
-        dJNDBILMOMH_ = 0;
+        kPFBKGNGAHE_ = 0;
 
         return this;
       }
@@ -680,20 +768,20 @@ public final class SeaLampActivityDetailInfoOuterClass {
         emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo result = new emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          kDAFEPBMKGD_.makeImmutable();
+          nHHACEMGAFP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.kDAFEPBMKGD_ = kDAFEPBMKGD_;
+        result.nHHACEMGAFP_ = nHHACEMGAFP_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          oFJFAMENEMB_.makeImmutable();
+          pHHEMACKPOK_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.oFJFAMENEMB_ = oFJFAMENEMB_;
-        result.oAFHEIIKAMA_ = oAFHEIIKAMA_;
+        result.pHHEMACKPOK_ = pHHEMACKPOK_;
+        result.pEEMEKGKMKL_ = pEEMEKGKMKL_;
         result.progress_ = progress_;
-        result.phaseId_ = phaseId_;
-        result.pIAEEINJKKI_ = pIAEEINJKKI_;
-        result.dJNDBILMOMH_ = dJNDBILMOMH_;
+        result.mPLBGIACDEE_ = mPLBGIACDEE_;
+        result.iGMFPKCOFOI_ = iGMFPKCOFOI_;
+        result.kPFBKGNGAHE_ = kPFBKGNGAHE_;
         onBuilt();
         return result;
       }
@@ -742,40 +830,40 @@ public final class SeaLampActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.SeaLampActivityDetailInfoOuterClass.SeaLampActivityDetailInfo.getDefaultInstance()) return this;
-        if (!other.kDAFEPBMKGD_.isEmpty()) {
-          if (kDAFEPBMKGD_.isEmpty()) {
-            kDAFEPBMKGD_ = other.kDAFEPBMKGD_;
+        if (!other.nHHACEMGAFP_.isEmpty()) {
+          if (nHHACEMGAFP_.isEmpty()) {
+            nHHACEMGAFP_ = other.nHHACEMGAFP_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureKDAFEPBMKGDIsMutable();
-            kDAFEPBMKGD_.addAll(other.kDAFEPBMKGD_);
+            ensureNHHACEMGAFPIsMutable();
+            nHHACEMGAFP_.addAll(other.nHHACEMGAFP_);
           }
           onChanged();
         }
-        if (!other.oFJFAMENEMB_.isEmpty()) {
-          if (oFJFAMENEMB_.isEmpty()) {
-            oFJFAMENEMB_ = other.oFJFAMENEMB_;
+        if (!other.pHHEMACKPOK_.isEmpty()) {
+          if (pHHEMACKPOK_.isEmpty()) {
+            pHHEMACKPOK_ = other.pHHEMACKPOK_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureOFJFAMENEMBIsMutable();
-            oFJFAMENEMB_.addAll(other.oFJFAMENEMB_);
+            ensurePHHEMACKPOKIsMutable();
+            pHHEMACKPOK_.addAll(other.pHHEMACKPOK_);
           }
           onChanged();
         }
-        if (other.getOAFHEIIKAMA() != 0) {
-          setOAFHEIIKAMA(other.getOAFHEIIKAMA());
+        if (other.getPEEMEKGKMKL() != 0) {
+          setPEEMEKGKMKL(other.getPEEMEKGKMKL());
         }
         if (other.getProgress() != 0) {
           setProgress(other.getProgress());
         }
-        if (other.getPhaseId() != 0) {
-          setPhaseId(other.getPhaseId());
+        if (other.getMPLBGIACDEE() != 0) {
+          setMPLBGIACDEE(other.getMPLBGIACDEE());
         }
-        if (other.getPIAEEINJKKI() != 0) {
-          setPIAEEINJKKI(other.getPIAEEINJKKI());
+        if (other.getIGMFPKCOFOI() != 0) {
+          setIGMFPKCOFOI(other.getIGMFPKCOFOI());
         }
-        if (other.getDJNDBILMOMH() != 0) {
-          setDJNDBILMOMH(other.getDJNDBILMOMH());
+        if (other.getKPFBKGNGAHE() != 0) {
+          setKPFBKGNGAHE(other.getKPFBKGNGAHE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -807,198 +895,270 @@ public final class SeaLampActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList kDAFEPBMKGD_ = emptyIntList();
-      private void ensureKDAFEPBMKGDIsMutable() {
+      private com.google.protobuf.Internal.IntList nHHACEMGAFP_ = emptyIntList();
+      private void ensureNHHACEMGAFPIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          kDAFEPBMKGD_ = mutableCopy(kDAFEPBMKGD_);
+          nHHACEMGAFP_ = mutableCopy(nHHACEMGAFP_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-       * @return A list containing the kDAFEPBMKGD.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+       * @return A list containing the nHHACEMGAFP.
        */
       public java.util.List<java.lang.Integer>
-          getKDAFEPBMKGDList() {
+          getNHHACEMGAFPList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(kDAFEPBMKGD_) : kDAFEPBMKGD_;
+                 java.util.Collections.unmodifiableList(nHHACEMGAFP_) : nHHACEMGAFP_;
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-       * @return The count of kDAFEPBMKGD.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+       * @return The count of nHHACEMGAFP.
        */
-      public int getKDAFEPBMKGDCount() {
-        return kDAFEPBMKGD_.size();
+      public int getNHHACEMGAFPCount() {
+        return nHHACEMGAFP_.size();
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
        * @param index The index of the element to return.
-       * @return The kDAFEPBMKGD at the given index.
+       * @return The nHHACEMGAFP at the given index.
        */
-      public int getKDAFEPBMKGD(int index) {
-        return kDAFEPBMKGD_.getInt(index);
+      public int getNHHACEMGAFP(int index) {
+        return nHHACEMGAFP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
        * @param index The index to set the value at.
-       * @param value The kDAFEPBMKGD to set.
+       * @param value The nHHACEMGAFP to set.
        * @return This builder for chaining.
        */
-      public Builder setKDAFEPBMKGD(
+      public Builder setNHHACEMGAFP(
           int index, int value) {
-        ensureKDAFEPBMKGDIsMutable();
-        kDAFEPBMKGD_.setInt(index, value);
+        ensureNHHACEMGAFPIsMutable();
+        nHHACEMGAFP_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-       * @param value The kDAFEPBMKGD to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+       * @param value The nHHACEMGAFP to add.
        * @return This builder for chaining.
        */
-      public Builder addKDAFEPBMKGD(int value) {
-        ensureKDAFEPBMKGDIsMutable();
-        kDAFEPBMKGD_.addInt(value);
+      public Builder addNHHACEMGAFP(int value) {
+        ensureNHHACEMGAFPIsMutable();
+        nHHACEMGAFP_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
-       * @param values The kDAFEPBMKGD to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
+       * @param values The nHHACEMGAFP to add.
        * @return This builder for chaining.
        */
-      public Builder addAllKDAFEPBMKGD(
+      public Builder addAllNHHACEMGAFP(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureKDAFEPBMKGDIsMutable();
+        ensureNHHACEMGAFPIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, kDAFEPBMKGD_);
+            values, nHHACEMGAFP_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 KDAFEPBMKGD = 3;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NHHACEMGAFP = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKDAFEPBMKGD() {
-        kDAFEPBMKGD_ = emptyIntList();
+      public Builder clearNHHACEMGAFP() {
+        nHHACEMGAFP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList oFJFAMENEMB_ = emptyIntList();
-      private void ensureOFJFAMENEMBIsMutable() {
+      private com.google.protobuf.Internal.IntList pHHEMACKPOK_ = emptyIntList();
+      private void ensurePHHEMACKPOKIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          oFJFAMENEMB_ = mutableCopy(oFJFAMENEMB_);
+          pHHEMACKPOK_ = mutableCopy(pHHEMACKPOK_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-       * @return A list containing the oFJFAMENEMB.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+       * @return A list containing the pHHEMACKPOK.
        */
       public java.util.List<java.lang.Integer>
-          getOFJFAMENEMBList() {
+          getPHHEMACKPOKList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(oFJFAMENEMB_) : oFJFAMENEMB_;
+                 java.util.Collections.unmodifiableList(pHHEMACKPOK_) : pHHEMACKPOK_;
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-       * @return The count of oFJFAMENEMB.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+       * @return The count of pHHEMACKPOK.
        */
-      public int getOFJFAMENEMBCount() {
-        return oFJFAMENEMB_.size();
+      public int getPHHEMACKPOKCount() {
+        return pHHEMACKPOK_.size();
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
        * @param index The index of the element to return.
-       * @return The oFJFAMENEMB at the given index.
+       * @return The pHHEMACKPOK at the given index.
        */
-      public int getOFJFAMENEMB(int index) {
-        return oFJFAMENEMB_.getInt(index);
+      public int getPHHEMACKPOK(int index) {
+        return pHHEMACKPOK_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
        * @param index The index to set the value at.
-       * @param value The oFJFAMENEMB to set.
+       * @param value The pHHEMACKPOK to set.
        * @return This builder for chaining.
        */
-      public Builder setOFJFAMENEMB(
+      public Builder setPHHEMACKPOK(
           int index, int value) {
-        ensureOFJFAMENEMBIsMutable();
-        oFJFAMENEMB_.setInt(index, value);
+        ensurePHHEMACKPOKIsMutable();
+        pHHEMACKPOK_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-       * @param value The oFJFAMENEMB to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+       * @param value The pHHEMACKPOK to add.
        * @return This builder for chaining.
        */
-      public Builder addOFJFAMENEMB(int value) {
-        ensureOFJFAMENEMBIsMutable();
-        oFJFAMENEMB_.addInt(value);
+      public Builder addPHHEMACKPOK(int value) {
+        ensurePHHEMACKPOKIsMutable();
+        pHHEMACKPOK_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
-       * @param values The oFJFAMENEMB to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
+       * @param values The pHHEMACKPOK to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOFJFAMENEMB(
+      public Builder addAllPHHEMACKPOK(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOFJFAMENEMBIsMutable();
+        ensurePHHEMACKPOKIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oFJFAMENEMB_);
+            values, pHHEMACKPOK_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OFJFAMENEMB = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 PHHEMACKPOK = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOFJFAMENEMB() {
-        oFJFAMENEMB_ = emptyIntList();
+      public Builder clearPHHEMACKPOK() {
+        pHHEMACKPOK_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int oAFHEIIKAMA_ ;
+      private int pEEMEKGKMKL_ ;
       /**
-       * <code>uint32 OAFHEIIKAMA = 11;</code>
-       * @return The oAFHEIIKAMA.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PEEMEKGKMKL = 12;</code>
+       * @return The pEEMEKGKMKL.
        */
       @java.lang.Override
-      public int getOAFHEIIKAMA() {
-        return oAFHEIIKAMA_;
+      public int getPEEMEKGKMKL() {
+        return pEEMEKGKMKL_;
       }
       /**
-       * <code>uint32 OAFHEIIKAMA = 11;</code>
-       * @param value The oAFHEIIKAMA to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PEEMEKGKMKL = 12;</code>
+       * @param value The pEEMEKGKMKL to set.
        * @return This builder for chaining.
        */
-      public Builder setOAFHEIIKAMA(int value) {
+      public Builder setPEEMEKGKMKL(int value) {
         
-        oAFHEIIKAMA_ = value;
+        pEEMEKGKMKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OAFHEIIKAMA = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 PEEMEKGKMKL = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOAFHEIIKAMA() {
+      public Builder clearPEEMEKGKMKL() {
         
-        oAFHEIIKAMA_ = 0;
+        pEEMEKGKMKL_ = 0;
         onChanged();
         return this;
       }
 
       private int progress_ ;
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
+       * <code>uint32 progress = 3;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -1006,7 +1166,11 @@ public final class SeaLampActivityDetailInfoOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
+       * <code>uint32 progress = 3;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -1017,7 +1181,11 @@ public final class SeaLampActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 9;</code>
+       * <pre>
+       *6.3.0 // offset: 52
+       * </pre>
+       *
+       * <code>uint32 progress = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -1027,95 +1195,131 @@ public final class SeaLampActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int phaseId_ ;
+      private int mPLBGIACDEE_ ;
       /**
-       * <code>uint32 phase_id = 2;</code>
-       * @return The phaseId.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 MPLBGIACDEE = 13;</code>
+       * @return The mPLBGIACDEE.
        */
       @java.lang.Override
-      public int getPhaseId() {
-        return phaseId_;
+      public int getMPLBGIACDEE() {
+        return mPLBGIACDEE_;
       }
       /**
-       * <code>uint32 phase_id = 2;</code>
-       * @param value The phaseId to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 MPLBGIACDEE = 13;</code>
+       * @param value The mPLBGIACDEE to set.
        * @return This builder for chaining.
        */
-      public Builder setPhaseId(int value) {
+      public Builder setMPLBGIACDEE(int value) {
         
-        phaseId_ = value;
+        mPLBGIACDEE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 phase_id = 2;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 MPLBGIACDEE = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPhaseId() {
+      public Builder clearMPLBGIACDEE() {
         
-        phaseId_ = 0;
+        mPLBGIACDEE_ = 0;
         onChanged();
         return this;
       }
 
-      private int pIAEEINJKKI_ ;
+      private int iGMFPKCOFOI_ ;
       /**
-       * <code>uint32 PIAEEINJKKI = 12;</code>
-       * @return The pIAEEINJKKI.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 IGMFPKCOFOI = 14;</code>
+       * @return The iGMFPKCOFOI.
        */
       @java.lang.Override
-      public int getPIAEEINJKKI() {
-        return pIAEEINJKKI_;
+      public int getIGMFPKCOFOI() {
+        return iGMFPKCOFOI_;
       }
       /**
-       * <code>uint32 PIAEEINJKKI = 12;</code>
-       * @param value The pIAEEINJKKI to set.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 IGMFPKCOFOI = 14;</code>
+       * @param value The iGMFPKCOFOI to set.
        * @return This builder for chaining.
        */
-      public Builder setPIAEEINJKKI(int value) {
+      public Builder setIGMFPKCOFOI(int value) {
         
-        pIAEEINJKKI_ = value;
+        iGMFPKCOFOI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 PIAEEINJKKI = 12;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 IGMFPKCOFOI = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPIAEEINJKKI() {
+      public Builder clearIGMFPKCOFOI() {
         
-        pIAEEINJKKI_ = 0;
+        iGMFPKCOFOI_ = 0;
         onChanged();
         return this;
       }
 
-      private int dJNDBILMOMH_ ;
+      private int kPFBKGNGAHE_ ;
       /**
-       * <code>uint32 DJNDBILMOMH = 15;</code>
-       * @return The dJNDBILMOMH.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 KPFBKGNGAHE = 1123;</code>
+       * @return The kPFBKGNGAHE.
        */
       @java.lang.Override
-      public int getDJNDBILMOMH() {
-        return dJNDBILMOMH_;
+      public int getKPFBKGNGAHE() {
+        return kPFBKGNGAHE_;
       }
       /**
-       * <code>uint32 DJNDBILMOMH = 15;</code>
-       * @param value The dJNDBILMOMH to set.
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 KPFBKGNGAHE = 1123;</code>
+       * @param value The kPFBKGNGAHE to set.
        * @return This builder for chaining.
        */
-      public Builder setDJNDBILMOMH(int value) {
+      public Builder setKPFBKGNGAHE(int value) {
         
-        dJNDBILMOMH_ = value;
+        kPFBKGNGAHE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DJNDBILMOMH = 15;</code>
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>uint32 KPFBKGNGAHE = 1123;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDJNDBILMOMH() {
+      public Builder clearKPFBKGNGAHE() {
         
-        dJNDBILMOMH_ = 0;
+        kPFBKGNGAHE_ = 0;
         onChanged();
         return this;
       }
@@ -1186,13 +1390,13 @@ public final class SeaLampActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037SeaLampActivityDetailInfo.proto\"\250\001\n\031Se" +
-      "aLampActivityDetailInfo\022\023\n\013KDAFEPBMKGD\030\003" +
-      " \003(\r\022\023\n\013OFJFAMENEMB\030\n \003(\r\022\023\n\013OAFHEIIKAMA" +
-      "\030\013 \001(\r\022\020\n\010progress\030\t \001(\r\022\020\n\010phase_id\030\002 \001" +
-      "(\r\022\023\n\013PIAEEINJKKI\030\014 \001(\r\022\023\n\013DJNDBILMOMH\030\017" +
-      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n\037SeaLampActivityDetailInfo.proto\"\254\001\n\031Se" +
+      "aLampActivityDetailInfo\022\023\n\013NHHACEMGAFP\030\005" +
+      " \003(\r\022\023\n\013PHHEMACKPOK\030\004 \003(\r\022\023\n\013PEEMEKGKMKL" +
+      "\030\014 \001(\r\022\020\n\010progress\030\003 \001(\r\022\023\n\013MPLBGIACDEE\030" +
+      "\r \001(\r\022\023\n\013IGMFPKCOFOI\030\016 \001(\r\022\024\n\013KPFBKGNGAH" +
+      "E\030\343\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1203,7 +1407,7 @@ public final class SeaLampActivityDetailInfoOuterClass {
     internal_static_SeaLampActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampActivityDetailInfo_descriptor,
-        new java.lang.String[] { "KDAFEPBMKGD", "OFJFAMENEMB", "OAFHEIIKAMA", "Progress", "PhaseId", "PIAEEINJKKI", "DJNDBILMOMH", });
+        new java.lang.String[] { "NHHACEMGAFP", "PHHEMACKPOK", "PEEMEKGKMKL", "Progress", "MPLBGIACDEE", "IGMFPKCOFOI", "KPFBKGNGAHE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,57 +19,56 @@ public final class PotionEnterDungeonNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 mode_id = 9;</code>
-     * @return The modeId.
-     */
-    int getModeId();
-
-    /**
-     * <code>uint32 difficulty_level = 6;</code>
+     * <code>uint32 difficulty_level = 4;</code>
      * @return The difficultyLevel.
      */
     int getDifficultyLevel();
 
     /**
-     * <code>uint32 stage_id = 7;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar> 
         getDungeonAvatarListList();
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar getDungeonAvatarList(int index);
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     int getDungeonAvatarListCount();
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder> 
         getDungeonAvatarListOrBuilderList();
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder getDungeonAvatarListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 mode_id = 11;</code>
+     * @return The modeId.
+     */
+    int getModeId();
+
+    /**
+     * <code>uint32 level_id = 13;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>uint32 stage_id = 14;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * CmdId: 21097
-   * Obf: FIIKFAIKOOE
+   * CmdId: 4839
    * </pre>
    *
    * Protobuf type {@code PotionEnterDungeonNotify}
@@ -118,7 +117,12 @@ public final class PotionEnterDungeonNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 32: {
+
+              difficultyLevel_ = input.readUInt32();
+              break;
+            }
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dungeonAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar>();
                 mutable_bitField0_ |= 0x00000001;
@@ -127,24 +131,19 @@ public final class PotionEnterDungeonNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.parser(), extensionRegistry));
               break;
             }
-            case 24: {
+            case 88: {
+
+              modeId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              difficultyLevel_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 112: {
 
               stageId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              modeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -182,32 +181,10 @@ public final class PotionEnterDungeonNotifyOuterClass {
               emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify.class, emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int MODE_ID_FIELD_NUMBER = 9;
-    private int modeId_;
-    /**
-     * <code>uint32 mode_id = 9;</code>
-     * @return The modeId.
-     */
-    @java.lang.Override
-    public int getModeId() {
-      return modeId_;
-    }
-
-    public static final int DIFFICULTY_LEVEL_FIELD_NUMBER = 6;
+    public static final int DIFFICULTY_LEVEL_FIELD_NUMBER = 4;
     private int difficultyLevel_;
     /**
-     * <code>uint32 difficulty_level = 6;</code>
+     * <code>uint32 difficulty_level = 4;</code>
      * @return The difficultyLevel.
      */
     @java.lang.Override
@@ -215,28 +192,17 @@ public final class PotionEnterDungeonNotifyOuterClass {
       return difficultyLevel_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 7;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int DUNGEON_AVATAR_LIST_FIELD_NUMBER = 2;
+    public static final int DUNGEON_AVATAR_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar> dungeonAvatarList_;
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar> getDungeonAvatarListList() {
       return dungeonAvatarList_;
     }
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder> 
@@ -244,26 +210,59 @@ public final class PotionEnterDungeonNotifyOuterClass {
       return dungeonAvatarList_;
     }
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     @java.lang.Override
     public int getDungeonAvatarListCount() {
       return dungeonAvatarList_.size();
     }
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar getDungeonAvatarList(int index) {
       return dungeonAvatarList_.get(index);
     }
     /**
-     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+     * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder getDungeonAvatarListOrBuilder(
         int index) {
       return dungeonAvatarList_.get(index);
+    }
+
+    public static final int MODE_ID_FIELD_NUMBER = 11;
+    private int modeId_;
+    /**
+     * <code>uint32 mode_id = 11;</code>
+     * @return The modeId.
+     */
+    @java.lang.Override
+    public int getModeId() {
+      return modeId_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 13;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 14;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 14;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -280,20 +279,20 @@ public final class PotionEnterDungeonNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < dungeonAvatarList_.size(); i++) {
-        output.writeMessage(2, dungeonAvatarList_.get(i));
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
-      }
       if (difficultyLevel_ != 0) {
-        output.writeUInt32(6, difficultyLevel_);
+        output.writeUInt32(4, difficultyLevel_);
       }
-      if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
+      for (int i = 0; i < dungeonAvatarList_.size(); i++) {
+        output.writeMessage(9, dungeonAvatarList_.get(i));
       }
       if (modeId_ != 0) {
-        output.writeUInt32(9, modeId_);
+        output.writeUInt32(11, modeId_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(13, levelId_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(14, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -304,25 +303,25 @@ public final class PotionEnterDungeonNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < dungeonAvatarList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, dungeonAvatarList_.get(i));
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
-      }
       if (difficultyLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficultyLevel_);
+          .computeUInt32Size(4, difficultyLevel_);
       }
-      if (stageId_ != 0) {
+      for (int i = 0; i < dungeonAvatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
+          .computeMessageSize(9, dungeonAvatarList_.get(i));
       }
       if (modeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, modeId_);
+          .computeUInt32Size(11, modeId_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, levelId_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,16 +338,16 @@ public final class PotionEnterDungeonNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify other = (emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getModeId()
-          != other.getModeId()) return false;
       if (getDifficultyLevel()
           != other.getDifficultyLevel()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
       if (!getDungeonAvatarListList()
           .equals(other.getDungeonAvatarListList())) return false;
+      if (getModeId()
+          != other.getModeId()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -360,18 +359,18 @@ public final class PotionEnterDungeonNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + MODE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModeId();
       hash = (37 * hash) + DIFFICULTY_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyLevel();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       if (getDungeonAvatarListCount() > 0) {
         hash = (37 * hash) + DUNGEON_AVATAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDungeonAvatarListList().hashCode();
       }
+      hash = (37 * hash) + MODE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModeId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -469,8 +468,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21097
-     * Obf: FIIKFAIKOOE
+     * CmdId: 4839
      * </pre>
      *
      * Protobuf type {@code PotionEnterDungeonNotify}
@@ -511,13 +509,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
-        modeId_ = 0;
-
         difficultyLevel_ = 0;
-
-        stageId_ = 0;
 
         if (dungeonAvatarListBuilder_ == null) {
           dungeonAvatarList_ = java.util.Collections.emptyList();
@@ -525,6 +517,12 @@ public final class PotionEnterDungeonNotifyOuterClass {
         } else {
           dungeonAvatarListBuilder_.clear();
         }
+        modeId_ = 0;
+
+        levelId_ = 0;
+
+        stageId_ = 0;
+
         return this;
       }
 
@@ -552,10 +550,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
       public emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify buildPartial() {
         emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify result = new emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify(this);
         int from_bitField0_ = bitField0_;
-        result.levelId_ = levelId_;
-        result.modeId_ = modeId_;
         result.difficultyLevel_ = difficultyLevel_;
-        result.stageId_ = stageId_;
         if (dungeonAvatarListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             dungeonAvatarList_ = java.util.Collections.unmodifiableList(dungeonAvatarList_);
@@ -565,6 +560,9 @@ public final class PotionEnterDungeonNotifyOuterClass {
         } else {
           result.dungeonAvatarList_ = dungeonAvatarListBuilder_.build();
         }
+        result.modeId_ = modeId_;
+        result.levelId_ = levelId_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -613,17 +611,8 @@ public final class PotionEnterDungeonNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify other) {
         if (other == emu.grasscutter.net.proto.PotionEnterDungeonNotifyOuterClass.PotionEnterDungeonNotify.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getModeId() != 0) {
-          setModeId(other.getModeId());
-        }
         if (other.getDifficultyLevel() != 0) {
           setDifficultyLevel(other.getDifficultyLevel());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
         }
         if (dungeonAvatarListBuilder_ == null) {
           if (!other.dungeonAvatarList_.isEmpty()) {
@@ -650,6 +639,15 @@ public final class PotionEnterDungeonNotifyOuterClass {
               dungeonAvatarListBuilder_.addAllMessages(other.dungeonAvatarList_);
             }
           }
+        }
+        if (other.getModeId() != 0) {
+          setModeId(other.getModeId());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -681,71 +679,9 @@ public final class PotionEnterDungeonNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int modeId_ ;
-      /**
-       * <code>uint32 mode_id = 9;</code>
-       * @return The modeId.
-       */
-      @java.lang.Override
-      public int getModeId() {
-        return modeId_;
-      }
-      /**
-       * <code>uint32 mode_id = 9;</code>
-       * @param value The modeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModeId(int value) {
-        
-        modeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mode_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModeId() {
-        
-        modeId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int difficultyLevel_ ;
       /**
-       * <code>uint32 difficulty_level = 6;</code>
+       * <code>uint32 difficulty_level = 4;</code>
        * @return The difficultyLevel.
        */
       @java.lang.Override
@@ -753,7 +689,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return difficultyLevel_;
       }
       /**
-       * <code>uint32 difficulty_level = 6;</code>
+       * <code>uint32 difficulty_level = 4;</code>
        * @param value The difficultyLevel to set.
        * @return This builder for chaining.
        */
@@ -764,43 +700,12 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_level = 6;</code>
+       * <code>uint32 difficulty_level = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyLevel() {
         
         difficultyLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -818,7 +723,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
           emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder> dungeonAvatarListBuilder_;
 
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar> getDungeonAvatarListList() {
         if (dungeonAvatarListBuilder_ == null) {
@@ -828,7 +733,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public int getDungeonAvatarListCount() {
         if (dungeonAvatarListBuilder_ == null) {
@@ -838,7 +743,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar getDungeonAvatarList(int index) {
         if (dungeonAvatarListBuilder_ == null) {
@@ -848,7 +753,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder setDungeonAvatarList(
           int index, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar value) {
@@ -865,7 +770,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder setDungeonAvatarList(
           int index, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder builderForValue) {
@@ -879,7 +784,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder addDungeonAvatarList(emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar value) {
         if (dungeonAvatarListBuilder_ == null) {
@@ -895,7 +800,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder addDungeonAvatarList(
           int index, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar value) {
@@ -912,7 +817,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder addDungeonAvatarList(
           emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder builderForValue) {
@@ -926,7 +831,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder addDungeonAvatarList(
           int index, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder builderForValue) {
@@ -940,7 +845,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder addAllDungeonAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar> values) {
@@ -955,7 +860,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder clearDungeonAvatarList() {
         if (dungeonAvatarListBuilder_ == null) {
@@ -968,7 +873,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public Builder removeDungeonAvatarList(int index) {
         if (dungeonAvatarListBuilder_ == null) {
@@ -981,14 +886,14 @@ public final class PotionEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder getDungeonAvatarListBuilder(
           int index) {
         return getDungeonAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder getDungeonAvatarListOrBuilder(
           int index) {
@@ -998,7 +903,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatarOrBuilder> 
            getDungeonAvatarListOrBuilderList() {
@@ -1009,14 +914,14 @@ public final class PotionEnterDungeonNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder addDungeonAvatarListBuilder() {
         return getDungeonAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder addDungeonAvatarListBuilder(
           int index) {
@@ -1024,7 +929,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
             index, emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 2;</code>
+       * <code>repeated .PotionDungeonAvatar dungeon_avatar_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.PotionDungeonAvatar.Builder> 
            getDungeonAvatarListBuilderList() {
@@ -1043,6 +948,99 @@ public final class PotionEnterDungeonNotifyOuterClass {
           dungeonAvatarList_ = null;
         }
         return dungeonAvatarListBuilder_;
+      }
+
+      private int modeId_ ;
+      /**
+       * <code>uint32 mode_id = 11;</code>
+       * @return The modeId.
+       */
+      @java.lang.Override
+      public int getModeId() {
+        return modeId_;
+      }
+      /**
+       * <code>uint32 mode_id = 11;</code>
+       * @param value The modeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModeId(int value) {
+        
+        modeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mode_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModeId() {
+        
+        modeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 13;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 13;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 14;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 14;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1113,10 +1111,10 @@ public final class PotionEnterDungeonNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036PotionEnterDungeonNotify.proto\032\031Potion" +
       "DungeonAvatar.proto\"\234\001\n\030PotionEnterDunge" +
-      "onNotify\022\020\n\010level_id\030\003 \001(\r\022\017\n\007mode_id\030\t " +
-      "\001(\r\022\030\n\020difficulty_level\030\006 \001(\r\022\020\n\010stage_i" +
-      "d\030\007 \001(\r\0221\n\023dungeon_avatar_list\030\002 \003(\0132\024.P" +
-      "otionDungeonAvatarB\033\n\031emu.grasscutter.ne" +
+      "onNotify\022\030\n\020difficulty_level\030\004 \001(\r\0221\n\023du" +
+      "ngeon_avatar_list\030\t \003(\0132\024.PotionDungeonA" +
+      "vatar\022\017\n\007mode_id\030\013 \001(\r\022\020\n\010level_id\030\r \001(\r" +
+      "\022\020\n\010stage_id\030\016 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1129,7 +1127,7 @@ public final class PotionEnterDungeonNotifyOuterClass {
     internal_static_PotionEnterDungeonNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionEnterDungeonNotify_descriptor,
-        new java.lang.String[] { "LevelId", "ModeId", "DifficultyLevel", "StageId", "DungeonAvatarList", });
+        new java.lang.String[] { "DifficultyLevel", "DungeonAvatarList", "ModeId", "LevelId", "StageId", });
     emu.grasscutter.net.proto.PotionDungeonAvatarOuterClass.getDescriptor();
   }
 

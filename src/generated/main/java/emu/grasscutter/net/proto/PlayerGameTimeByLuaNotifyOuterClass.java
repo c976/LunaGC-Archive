@@ -19,24 +19,28 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 3;</code>
+     * <code>uint32 sim_speed = 1;</code>
+     * @return The simSpeed.
+     */
+    int getSimSpeed();
+
+    /**
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 game_time = 11;</code>
+     * <code>uint32 game_time = 12;</code>
      * @return The gameTime.
      */
     int getGameTime();
-
-    /**
-     * <code>uint32 sim_speed = 13;</code>
-     * @return The simSpeed.
-     */
-    int getSimSpeed();
   }
   /**
+   * <pre>
+   * CmdId: 3764
+   * </pre>
+   *
    * Protobuf type {@code PlayerGameTimeByLuaNotify}
    */
   public static final class PlayerGameTimeByLuaNotify extends
@@ -81,19 +85,19 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
+
+              simSpeed_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 96: {
 
               gameTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              simSpeed_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,21 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify.class, emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 3;
+    public static final int SIM_SPEED_FIELD_NUMBER = 1;
+    private int simSpeed_;
+    /**
+     * <code>uint32 sim_speed = 1;</code>
+     * @return The simSpeed.
+     */
+    @java.lang.Override
+    public int getSimSpeed() {
+      return simSpeed_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 2;
     private int uid_;
     /**
-     * <code>uint32 uid = 3;</code>
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -139,26 +154,15 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       return uid_;
     }
 
-    public static final int GAME_TIME_FIELD_NUMBER = 11;
+    public static final int GAME_TIME_FIELD_NUMBER = 12;
     private int gameTime_;
     /**
-     * <code>uint32 game_time = 11;</code>
+     * <code>uint32 game_time = 12;</code>
      * @return The gameTime.
      */
     @java.lang.Override
     public int getGameTime() {
       return gameTime_;
-    }
-
-    public static final int SIM_SPEED_FIELD_NUMBER = 13;
-    private int simSpeed_;
-    /**
-     * <code>uint32 sim_speed = 13;</code>
-     * @return The simSpeed.
-     */
-    @java.lang.Override
-    public int getSimSpeed() {
-      return simSpeed_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +179,14 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (simSpeed_ != 0) {
+        output.writeUInt32(1, simSpeed_);
+      }
       if (uid_ != 0) {
-        output.writeUInt32(3, uid_);
+        output.writeUInt32(2, uid_);
       }
       if (gameTime_ != 0) {
-        output.writeUInt32(11, gameTime_);
-      }
-      if (simSpeed_ != 0) {
-        output.writeUInt32(13, simSpeed_);
+        output.writeUInt32(12, gameTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (simSpeed_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, simSpeed_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, uid_);
+          .computeUInt32Size(2, uid_);
       }
       if (gameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gameTime_);
-      }
-      if (simSpeed_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, simSpeed_);
+          .computeUInt32Size(12, gameTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +224,12 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify other = (emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify) obj;
 
+      if (getSimSpeed()
+          != other.getSimSpeed()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (getGameTime()
           != other.getGameTime()) return false;
-      if (getSimSpeed()
-          != other.getSimSpeed()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +241,12 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SIM_SPEED_FIELD_NUMBER;
+      hash = (53 * hash) + getSimSpeed();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getGameTime();
-      hash = (37 * hash) + SIM_SPEED_FIELD_NUMBER;
-      hash = (53 * hash) + getSimSpeed();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -339,6 +343,10 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3764
+     * </pre>
+     *
      * Protobuf type {@code PlayerGameTimeByLuaNotify}
      */
     public static final class Builder extends
@@ -376,11 +384,11 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        simSpeed_ = 0;
+
         uid_ = 0;
 
         gameTime_ = 0;
-
-        simSpeed_ = 0;
 
         return this;
       }
@@ -408,9 +416,9 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify result = new emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify(this);
+        result.simSpeed_ = simSpeed_;
         result.uid_ = uid_;
         result.gameTime_ = gameTime_;
-        result.simSpeed_ = simSpeed_;
         onBuilt();
         return result;
       }
@@ -459,14 +467,14 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerGameTimeByLuaNotifyOuterClass.PlayerGameTimeByLuaNotify.getDefaultInstance()) return this;
+        if (other.getSimSpeed() != 0) {
+          setSimSpeed(other.getSimSpeed());
+        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
         if (other.getGameTime() != 0) {
           setGameTime(other.getGameTime());
-        }
-        if (other.getSimSpeed() != 0) {
-          setSimSpeed(other.getSimSpeed());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,9 +505,40 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
         return this;
       }
 
+      private int simSpeed_ ;
+      /**
+       * <code>uint32 sim_speed = 1;</code>
+       * @return The simSpeed.
+       */
+      @java.lang.Override
+      public int getSimSpeed() {
+        return simSpeed_;
+      }
+      /**
+       * <code>uint32 sim_speed = 1;</code>
+       * @param value The simSpeed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSimSpeed(int value) {
+        
+        simSpeed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sim_speed = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSimSpeed() {
+        
+        simSpeed_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int uid_ ;
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 2;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -507,7 +546,7 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 2;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +557,7 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -530,7 +569,7 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
 
       private int gameTime_ ;
       /**
-       * <code>uint32 game_time = 11;</code>
+       * <code>uint32 game_time = 12;</code>
        * @return The gameTime.
        */
       @java.lang.Override
@@ -538,7 +577,7 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
         return gameTime_;
       }
       /**
-       * <code>uint32 game_time = 11;</code>
+       * <code>uint32 game_time = 12;</code>
        * @param value The gameTime to set.
        * @return This builder for chaining.
        */
@@ -549,43 +588,12 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 game_time = 11;</code>
+       * <code>uint32 game_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGameTime() {
         
         gameTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int simSpeed_ ;
-      /**
-       * <code>uint32 sim_speed = 13;</code>
-       * @return The simSpeed.
-       */
-      @java.lang.Override
-      public int getSimSpeed() {
-        return simSpeed_;
-      }
-      /**
-       * <code>uint32 sim_speed = 13;</code>
-       * @param value The simSpeed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSimSpeed(int value) {
-        
-        simSpeed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 sim_speed = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSimSpeed() {
-        
-        simSpeed_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +665,8 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037PlayerGameTimeByLuaNotify.proto\"N\n\031Pla" +
-      "yerGameTimeByLuaNotify\022\013\n\003uid\030\003 \001(\r\022\021\n\tg" +
-      "ame_time\030\013 \001(\r\022\021\n\tsim_speed\030\r \001(\rB\033\n\031emu" +
+      "yerGameTimeByLuaNotify\022\021\n\tsim_speed\030\001 \001(" +
+      "\r\022\013\n\003uid\030\002 \001(\r\022\021\n\tgame_time\030\014 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +678,7 @@ public final class PlayerGameTimeByLuaNotifyOuterClass {
     internal_static_PlayerGameTimeByLuaNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerGameTimeByLuaNotify_descriptor,
-        new java.lang.String[] { "Uid", "GameTime", "SimSpeed", });
+        new java.lang.String[] { "SimSpeed", "Uid", "GameTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,20 +19,20 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 floor_id = 12;</code>
-     * @return The floorId.
-     */
-    int getFloorId();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 floor_id = 14;</code>
+     * @return The floorId.
+     */
+    int getFloorId();
   }
   /**
    * <pre>
-   * CmdId: 5731
+   * CmdId: 21009
    * </pre>
    *
    * Protobuf type {@code TowerGetFloorStarRewardRsp}
@@ -79,12 +79,12 @@ public final class TowerGetFloorStarRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 112: {
 
               floorId_ = input.readUInt32();
               break;
@@ -121,26 +121,26 @@ public final class TowerGetFloorStarRewardRspOuterClass {
               emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp.class, emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp.Builder.class);
     }
 
-    public static final int FLOOR_ID_FIELD_NUMBER = 12;
-    private int floorId_;
-    /**
-     * <code>uint32 floor_id = 12;</code>
-     * @return The floorId.
-     */
-    @java.lang.Override
-    public int getFloorId() {
-      return floorId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int FLOOR_ID_FIELD_NUMBER = 14;
+    private int floorId_;
+    /**
+     * <code>uint32 floor_id = 14;</code>
+     * @return The floorId.
+     */
+    @java.lang.Override
+    public int getFloorId() {
+      return floorId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,10 +158,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(9, retcode_);
       }
       if (floorId_ != 0) {
-        output.writeUInt32(12, floorId_);
+        output.writeUInt32(14, floorId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +174,11 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       if (floorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, floorId_);
+          .computeUInt32Size(14, floorId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp other = (emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp) obj;
 
-      if (getFloorId()
-          != other.getFloorId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getFloorId()
+          != other.getFloorId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FLOOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFloorId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + FLOOR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFloorId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5731
+     * CmdId: 21009
      * </pre>
      *
      * Protobuf type {@code TowerGetFloorStarRewardRsp}
@@ -351,9 +351,9 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        floorId_ = 0;
-
         retcode_ = 0;
+
+        floorId_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp result = new emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp(this);
-        result.floorId_ = floorId_;
         result.retcode_ = retcode_;
+        result.floorId_ = floorId_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class TowerGetFloorStarRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp.getDefaultInstance()) return this;
-        if (other.getFloorId() != 0) {
-          setFloorId(other.getFloorId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getFloorId() != 0) {
+          setFloorId(other.getFloorId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return this;
       }
 
-      private int floorId_ ;
-      /**
-       * <code>uint32 floor_id = 12;</code>
-       * @return The floorId.
-       */
-      @java.lang.Override
-      public int getFloorId() {
-        return floorId_;
-      }
-      /**
-       * <code>uint32 floor_id = 12;</code>
-       * @param value The floorId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFloorId(int value) {
-        
-        floorId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 floor_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFloorId() {
-        
-        floorId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int floorId_ ;
+      /**
+       * <code>uint32 floor_id = 14;</code>
+       * @return The floorId.
+       */
+      @java.lang.Override
+      public int getFloorId() {
+        return floorId_;
+      }
+      /**
+       * <code>uint32 floor_id = 14;</code>
+       * @param value The floorId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFloorId(int value) {
+        
+        floorId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 floor_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFloorId() {
+        
+        floorId_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class TowerGetFloorStarRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TowerGetFloorStarRewardRsp.proto\"?\n\032To" +
-      "werGetFloorStarRewardRsp\022\020\n\010floor_id\030\014 \001" +
-      "(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscutter.n" +
+      "werGetFloorStarRewardRsp\022\017\n\007retcode\030\t \001(" +
+      "\005\022\020\n\010floor_id\030\016 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     internal_static_TowerGetFloorStarRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerGetFloorStarRewardRsp_descriptor,
-        new java.lang.String[] { "FloorId", "Retcode", });
+        new java.lang.String[] { "Retcode", "FloorId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

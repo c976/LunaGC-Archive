@@ -19,42 +19,65 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 rank = 5;</code>
-     * @return The rank.
-     */
-    int getRank();
-
-    /**
-     * <code>bool is_new_record = 3;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo getSettleInfo();
     /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      */
     emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>uint32 gallery_id = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     int getGalleryId();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 MBNMLLEFPCI = 4;</code>
+     * @return The mBNMLLEFPCI.
+     */
+    int getMBNMLLEFPCI();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_new_record = 13;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * <pre>
-   * CmdId: 20371
-   * Obf: DNKELDJBGIG
+   * CmdId: 21182
    * </pre>
    *
    * Protobuf type {@code HomeRacingGallerySettleNotify}
@@ -101,17 +124,12 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
-              isNewRecord_ = input.readBool();
+              mBNMLLEFPCI_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              rank_ = input.readUInt32();
-              break;
-            }
-            case 106: {
+            case 90: {
               emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -124,9 +142,14 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
 
               break;
             }
-            case 112: {
+            case 96: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -161,32 +184,14 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify.class, emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify.Builder.class);
     }
 
-    public static final int RANK_FIELD_NUMBER = 5;
-    private int rank_;
-    /**
-     * <code>uint32 rank = 5;</code>
-     * @return The rank.
-     */
-    @java.lang.Override
-    public int getRank() {
-      return rank_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 3;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int SETTLE_INFO_FIELD_NUMBER = 13;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo settleInfo_;
     /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -194,7 +199,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -202,22 +211,60 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.RacingGallerySettleInfo settle_info = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 14;
+    public static final int GALLERY_ID_FIELD_NUMBER = 12;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 gallery_id = 12;</code>
      * @return The galleryId.
      */
     @java.lang.Override
     public int getGalleryId() {
       return galleryId_;
+    }
+
+    public static final int MBNMLLEFPCI_FIELD_NUMBER = 4;
+    private int mBNMLLEFPCI_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 MBNMLLEFPCI = 4;</code>
+     * @return The mBNMLLEFPCI.
+     */
+    @java.lang.Override
+    public int getMBNMLLEFPCI() {
+      return mBNMLLEFPCI_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
+    private boolean isNewRecord_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_new_record = 13;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,17 +281,17 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
-      }
-      if (rank_ != 0) {
-        output.writeUInt32(5, rank_);
+      if (mBNMLLEFPCI_ != 0) {
+        output.writeUInt32(4, mBNMLLEFPCI_);
       }
       if (settleInfo_ != null) {
-        output.writeMessage(13, getSettleInfo());
+        output.writeMessage(11, getSettleInfo());
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(14, galleryId_);
+        output.writeUInt32(12, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(13, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,21 +302,21 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
+      if (mBNMLLEFPCI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
-      }
-      if (rank_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, rank_);
+          .computeUInt32Size(4, mBNMLLEFPCI_);
       }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getSettleInfo());
+          .computeMessageSize(11, getSettleInfo());
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, galleryId_);
+          .computeUInt32Size(12, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,10 +333,6 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify other = (emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify) obj;
 
-      if (getRank()
-          != other.getRank()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (hasSettleInfo() != other.hasSettleInfo()) return false;
       if (hasSettleInfo()) {
         if (!getSettleInfo()
@@ -297,6 +340,10 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       }
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getMBNMLLEFPCI()
+          != other.getMBNMLLEFPCI()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -308,17 +355,17 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RANK_FIELD_NUMBER;
-      hash = (53 * hash) + getRank();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
       if (hasSettleInfo()) {
         hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSettleInfo().hashCode();
       }
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + MBNMLLEFPCI_FIELD_NUMBER;
+      hash = (53 * hash) + getMBNMLLEFPCI();
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -416,8 +463,7 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20371
-     * Obf: DNKELDJBGIG
+     * CmdId: 21182
      * </pre>
      *
      * Protobuf type {@code HomeRacingGallerySettleNotify}
@@ -457,10 +503,6 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rank_ = 0;
-
-        isNewRecord_ = false;
-
         if (settleInfoBuilder_ == null) {
           settleInfo_ = null;
         } else {
@@ -468,6 +510,10 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
           settleInfoBuilder_ = null;
         }
         galleryId_ = 0;
+
+        mBNMLLEFPCI_ = 0;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -495,14 +541,14 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify buildPartial() {
         emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify result = new emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify(this);
-        result.rank_ = rank_;
-        result.isNewRecord_ = isNewRecord_;
         if (settleInfoBuilder_ == null) {
           result.settleInfo_ = settleInfo_;
         } else {
           result.settleInfo_ = settleInfoBuilder_.build();
         }
         result.galleryId_ = galleryId_;
+        result.mBNMLLEFPCI_ = mBNMLLEFPCI_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -551,17 +597,17 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify other) {
         if (other == emu.grasscutter.net.proto.HomeRacingGallerySettleNotifyOuterClass.HomeRacingGallerySettleNotify.getDefaultInstance()) return this;
-        if (other.getRank() != 0) {
-          setRank(other.getRank());
-        }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
         if (other.hasSettleInfo()) {
           mergeSettleInfo(other.getSettleInfo());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
+        }
+        if (other.getMBNMLLEFPCI() != 0) {
+          setMBNMLLEFPCI(other.getMBNMLLEFPCI());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -592,80 +638,26 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private int rank_ ;
-      /**
-       * <code>uint32 rank = 5;</code>
-       * @return The rank.
-       */
-      @java.lang.Override
-      public int getRank() {
-        return rank_;
-      }
-      /**
-       * <code>uint32 rank = 5;</code>
-       * @param value The rank to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRank(int value) {
-        
-        rank_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rank = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRank() {
-        
-        rank_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo settleInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo, emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.Builder, emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo getSettleInfo() {
@@ -676,7 +668,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -692,7 +688,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.Builder builderForValue) {
@@ -706,7 +706,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -724,7 +728,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -738,7 +746,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.Builder getSettleInfoBuilder() {
         
@@ -746,7 +758,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       public emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -757,7 +773,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.RacingGallerySettleInfo settle_info = 13;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.RacingGallerySettleInfo settle_info = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo, emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfo.Builder, emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.RacingGallerySettleInfoOrBuilder> 
@@ -775,7 +795,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 12;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -783,7 +807,11 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 12;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -794,12 +822,102 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 gallery_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
         
         galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mBNMLLEFPCI_ ;
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 MBNMLLEFPCI = 4;</code>
+       * @return The mBNMLLEFPCI.
+       */
+      @java.lang.Override
+      public int getMBNMLLEFPCI() {
+        return mBNMLLEFPCI_;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 MBNMLLEFPCI = 4;</code>
+       * @param value The mBNMLLEFPCI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMBNMLLEFPCI(int value) {
+        
+        mBNMLLEFPCI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 MBNMLLEFPCI = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMBNMLLEFPCI() {
+        
+        mBNMLLEFPCI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_new_record = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -871,12 +989,12 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#HomeRacingGallerySettleNotify.proto\032\035R" +
-      "acingGallerySettleInfo.proto\"\207\001\n\035HomeRac" +
-      "ingGallerySettleNotify\022\014\n\004rank\030\005 \001(\r\022\025\n\r" +
-      "is_new_record\030\003 \001(\010\022-\n\013settle_info\030\r \001(\013" +
-      "2\030.RacingGallerySettleInfo\022\022\n\ngallery_id" +
-      "\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "acingGallerySettleInfo.proto\"\216\001\n\035HomeRac" +
+      "ingGallerySettleNotify\022-\n\013settle_info\030\013 " +
+      "\001(\0132\030.RacingGallerySettleInfo\022\022\n\ngallery" +
+      "_id\030\014 \001(\r\022\023\n\013MBNMLLEFPCI\030\004 \001(\r\022\025\n\ris_new" +
+      "_record\030\r \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -888,7 +1006,7 @@ public final class HomeRacingGallerySettleNotifyOuterClass {
     internal_static_HomeRacingGallerySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeRacingGallerySettleNotify_descriptor,
-        new java.lang.String[] { "Rank", "IsNewRecord", "SettleInfo", "GalleryId", });
+        new java.lang.String[] { "SettleInfo", "GalleryId", "MBNMLLEFPCI", "IsNewRecord", });
     emu.grasscutter.net.proto.RacingGallerySettleInfoOuterClass.getDescriptor();
   }
 

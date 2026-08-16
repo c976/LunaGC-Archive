@@ -19,15 +19,14 @@ public final class FishBiteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 653
-   * Obf: ICBFGJKDNNP
+   * CmdId: 29168
    * </pre>
    *
    * Protobuf type {@code FishBiteRsp}
@@ -74,7 +73,7 @@ public final class FishBiteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class FishBiteRspOuterClass {
               emu.grasscutter.net.proto.FishBiteRspOuterClass.FishBiteRsp.class, emu.grasscutter.net.proto.FishBiteRspOuterClass.FishBiteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class FishBiteRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class FishBiteRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class FishBiteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 653
-     * Obf: ICBFGJKDNNP
+     * CmdId: 29168
      * </pre>
      *
      * Protobuf type {@code FishBiteRsp}
@@ -431,7 +429,7 @@ public final class FishBiteRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class FishBiteRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class FishBiteRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class FishBiteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021FishBiteRsp.proto\"\036\n\013FishBiteRsp\022\017\n\007re" +
-      "tcode\030\001 \001(\005B\033\n\031emu.grasscutter.net.proto" +
+      "tcode\030\006 \001(\005B\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

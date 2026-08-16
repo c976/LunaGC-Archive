@@ -19,14 +19,14 @@ public final class ReadPrivateChatRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4735
+   * CmdId: 25123
    * </pre>
    *
    * Protobuf type {@code ReadPrivateChatRsp}
@@ -73,7 +73,7 @@ public final class ReadPrivateChatRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
@@ -110,10 +110,10 @@ public final class ReadPrivateChatRspOuterClass {
               emu.grasscutter.net.proto.ReadPrivateChatRspOuterClass.ReadPrivateChatRsp.class, emu.grasscutter.net.proto.ReadPrivateChatRspOuterClass.ReadPrivateChatRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -136,7 +136,7 @@ public final class ReadPrivateChatRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(1, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +149,7 @@ public final class ReadPrivateChatRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,7 +278,7 @@ public final class ReadPrivateChatRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4735
+     * CmdId: 25123
      * </pre>
      *
      * Protobuf type {@code ReadPrivateChatRsp}
@@ -429,7 +429,7 @@ public final class ReadPrivateChatRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -437,7 +437,7 @@ public final class ReadPrivateChatRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -448,7 +448,7 @@ public final class ReadPrivateChatRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -525,7 +525,7 @@ public final class ReadPrivateChatRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ReadPrivateChatRsp.proto\"%\n\022ReadPrivat" +
-      "eChatRsp\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscu" +
+      "eChatRsp\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

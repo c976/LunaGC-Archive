@@ -19,24 +19,23 @@ public final class HomePlantFieldNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      * @return Whether the field field is set.
      */
     boolean hasField();
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      * @return The field.
      */
     emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData getField();
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      */
     emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 5595
-   * Obf: BKLCBHHMEOM
+   * CmdId: 5461
    * </pre>
    *
    * Protobuf type {@code HomePlantFieldNotify}
@@ -83,7 +82,7 @@ public final class HomePlantFieldNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 122: {
               emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder subBuilder = null;
               if (field_ != null) {
                 subBuilder = field_.toBuilder();
@@ -128,10 +127,10 @@ public final class HomePlantFieldNotifyOuterClass {
               emu.grasscutter.net.proto.HomePlantFieldNotifyOuterClass.HomePlantFieldNotify.class, emu.grasscutter.net.proto.HomePlantFieldNotifyOuterClass.HomePlantFieldNotify.Builder.class);
     }
 
-    public static final int FIELD_FIELD_NUMBER = 5;
+    public static final int FIELD_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData field_;
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      * @return Whether the field field is set.
      */
     @java.lang.Override
@@ -139,7 +138,7 @@ public final class HomePlantFieldNotifyOuterClass {
       return field_ != null;
     }
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      * @return The field.
      */
     @java.lang.Override
@@ -147,7 +146,7 @@ public final class HomePlantFieldNotifyOuterClass {
       return field_ == null ? emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.getDefaultInstance() : field_;
     }
     /**
-     * <code>.HomePlantFieldData field = 5;</code>
+     * <code>.HomePlantFieldData field = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldOrBuilder() {
@@ -169,7 +168,7 @@ public final class HomePlantFieldNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (field_ != null) {
-        output.writeMessage(5, getField());
+        output.writeMessage(15, getField());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +181,7 @@ public final class HomePlantFieldNotifyOuterClass {
       size = 0;
       if (field_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getField());
+          .computeMessageSize(15, getField());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +315,7 @@ public final class HomePlantFieldNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5595
-     * Obf: BKLCBHHMEOM
+     * CmdId: 5461
      * </pre>
      *
      * Protobuf type {@code HomePlantFieldNotify}
@@ -478,14 +476,14 @@ public final class HomePlantFieldNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> fieldBuilder_;
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        * @return Whether the field field is set.
        */
       public boolean hasField() {
         return fieldBuilder_ != null || field_ != null;
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        * @return The field.
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData getField() {
@@ -496,7 +494,7 @@ public final class HomePlantFieldNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public Builder setField(emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData value) {
         if (fieldBuilder_ == null) {
@@ -512,7 +510,7 @@ public final class HomePlantFieldNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public Builder setField(
           emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder builderForValue) {
@@ -526,7 +524,7 @@ public final class HomePlantFieldNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public Builder mergeField(emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData value) {
         if (fieldBuilder_ == null) {
@@ -544,7 +542,7 @@ public final class HomePlantFieldNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public Builder clearField() {
         if (fieldBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class HomePlantFieldNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder getFieldBuilder() {
         
@@ -566,7 +564,7 @@ public final class HomePlantFieldNotifyOuterClass {
         return getFieldFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       public emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder getFieldOrBuilder() {
         if (fieldBuilder_ != null) {
@@ -577,7 +575,7 @@ public final class HomePlantFieldNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomePlantFieldData field = 5;</code>
+       * <code>.HomePlantFieldData field = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldData.Builder, emu.grasscutter.net.proto.HomePlantFieldDataOuterClass.HomePlantFieldDataOrBuilder> 
@@ -661,7 +659,7 @@ public final class HomePlantFieldNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032HomePlantFieldNotify.proto\032\030HomePlantF" +
       "ieldData.proto\":\n\024HomePlantFieldNotify\022\"" +
-      "\n\005field\030\005 \001(\0132\023.HomePlantFieldDataB\033\n\031em" +
+      "\n\005field\030\017 \001(\0132\023.HomePlantFieldDataB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

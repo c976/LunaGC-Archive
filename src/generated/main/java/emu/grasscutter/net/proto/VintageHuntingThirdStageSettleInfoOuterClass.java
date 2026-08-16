@@ -19,22 +19,26 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 left_time = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 left_time = 2;</code>
      * @return The leftTime.
      */
     int getLeftTime();
 
     /**
-     * <code>bool is_success = 8;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_success = 3;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
-   * <pre>
-   * Obf: PFNELEKLOFJ
-   * </pre>
-   *
    * Protobuf type {@code VintageHuntingThirdStageSettleInfo}
    */
   public static final class VintageHuntingThirdStageSettleInfo extends
@@ -79,14 +83,14 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               leftTime_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -121,10 +125,14 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo.class, emu.grasscutter.net.proto.VintageHuntingThirdStageSettleInfoOuterClass.VintageHuntingThirdStageSettleInfo.Builder.class);
     }
 
-    public static final int LEFT_TIME_FIELD_NUMBER = 14;
+    public static final int LEFT_TIME_FIELD_NUMBER = 2;
     private int leftTime_;
     /**
-     * <code>uint32 left_time = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 left_time = 2;</code>
      * @return The leftTime.
      */
     @java.lang.Override
@@ -132,10 +140,14 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       return leftTime_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 8;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 8;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_success = 3;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -157,11 +169,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(8, isSuccess_);
-      }
       if (leftTime_ != 0) {
-        output.writeUInt32(14, leftTime_);
+        output.writeUInt32(2, leftTime_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(3, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +184,13 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isSuccess_);
-      }
       if (leftTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, leftTime_);
+          .computeUInt32Size(2, leftTime_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,10 +323,6 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PFNELEKLOFJ
-     * </pre>
-     *
      * Protobuf type {@code VintageHuntingThirdStageSettleInfo}
      */
     public static final class Builder extends
@@ -469,7 +477,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
 
       private int leftTime_ ;
       /**
-       * <code>uint32 left_time = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 left_time = 2;</code>
        * @return The leftTime.
        */
       @java.lang.Override
@@ -477,7 +489,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return leftTime_;
       }
       /**
-       * <code>uint32 left_time = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 left_time = 2;</code>
        * @param value The leftTime to set.
        * @return This builder for chaining.
        */
@@ -488,7 +504,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 left_time = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 left_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLeftTime() {
@@ -500,7 +520,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_success = 3;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -508,7 +532,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_success = 3;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -519,7 +547,11 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 8;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_success = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -597,7 +629,7 @@ public final class VintageHuntingThirdStageSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(VintageHuntingThirdStageSettleInfo.pro" +
       "to\"K\n\"VintageHuntingThirdStageSettleInfo" +
-      "\022\021\n\tleft_time\030\016 \001(\r\022\022\n\nis_success\030\010 \001(\010B" +
+      "\022\021\n\tleft_time\030\002 \001(\r\022\022\n\nis_success\030\003 \001(\010B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

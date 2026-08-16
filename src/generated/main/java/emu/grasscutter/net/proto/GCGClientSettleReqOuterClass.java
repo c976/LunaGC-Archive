@@ -20,8 +20,7 @@ public final class GCGClientSettleReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5826
-   * Obf: MAPPJDLLDEM
+   * CMD_ID = 5901
    * </pre>
    *
    * Protobuf type {@code GCGClientSettleReq}
@@ -246,8 +245,7 @@ public final class GCGClientSettleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5826
-     * Obf: MAPPJDLLDEM
+     * CMD_ID = 5901
      * </pre>
      *
      * Protobuf type {@code GCGClientSettleReq}

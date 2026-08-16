@@ -19,15 +19,14 @@ public final class BrickBreakerQuitRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22313
-   * Obf: JOENFPPHBEL
+   * CmdId: 27700
    * </pre>
    *
    * Protobuf type {@code BrickBreakerQuitRsp}
@@ -74,7 +73,7 @@ public final class BrickBreakerQuitRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class BrickBreakerQuitRspOuterClass {
               emu.grasscutter.net.proto.BrickBreakerQuitRspOuterClass.BrickBreakerQuitRsp.class, emu.grasscutter.net.proto.BrickBreakerQuitRspOuterClass.BrickBreakerQuitRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class BrickBreakerQuitRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class BrickBreakerQuitRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class BrickBreakerQuitRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22313
-     * Obf: JOENFPPHBEL
+     * CmdId: 27700
      * </pre>
      *
      * Protobuf type {@code BrickBreakerQuitRsp}
@@ -431,7 +429,7 @@ public final class BrickBreakerQuitRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class BrickBreakerQuitRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class BrickBreakerQuitRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class BrickBreakerQuitRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031BrickBreakerQuitRsp.proto\"&\n\023BrickBrea" +
-      "kerQuitRsp\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grass" +
+      "kerQuitRsp\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,12 +19,20 @@ public final class VintageBoothUsedItemDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 gadget_id = 15;</code>
      * @return The gadgetId.
      */
@@ -75,7 +83,7 @@ public final class VintageBoothUsedItemDataOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 112: {
 
               isOpen_ = input.readBool();
               break;
@@ -117,10 +125,14 @@ public final class VintageBoothUsedItemDataOuterClass {
               emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.class, emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 8;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 8;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -131,6 +143,10 @@ public final class VintageBoothUsedItemDataOuterClass {
     public static final int GADGET_ID_FIELD_NUMBER = 15;
     private int gadgetId_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 gadget_id = 15;</code>
      * @return The gadgetId.
      */
@@ -154,7 +170,7 @@ public final class VintageBoothUsedItemDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(8, isOpen_);
+        output.writeBool(14, isOpen_);
       }
       if (gadgetId_ != 0) {
         output.writeUInt32(15, gadgetId_);
@@ -170,7 +186,7 @@ public final class VintageBoothUsedItemDataOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isOpen_);
+          .computeBoolSize(14, isOpen_);
       }
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -461,7 +477,11 @@ public final class VintageBoothUsedItemDataOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -469,7 +489,11 @@ public final class VintageBoothUsedItemDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -480,7 +504,11 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -492,6 +520,10 @@ public final class VintageBoothUsedItemDataOuterClass {
 
       private int gadgetId_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 gadget_id = 15;</code>
        * @return The gadgetId.
        */
@@ -500,6 +532,10 @@ public final class VintageBoothUsedItemDataOuterClass {
         return gadgetId_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 gadget_id = 15;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
@@ -511,6 +547,10 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 gadget_id = 15;</code>
        * @return This builder for chaining.
        */
@@ -588,7 +628,7 @@ public final class VintageBoothUsedItemDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036VintageBoothUsedItemData.proto\">\n\030Vint" +
-      "ageBoothUsedItemData\022\017\n\007is_open\030\010 \001(\010\022\021\n" +
+      "ageBoothUsedItemData\022\017\n\007is_open\030\016 \001(\010\022\021\n" +
       "\tgadget_id\030\017 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };

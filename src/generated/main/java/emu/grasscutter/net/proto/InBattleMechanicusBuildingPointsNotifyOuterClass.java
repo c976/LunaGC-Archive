@@ -19,11 +19,11 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     int getPlayerBuildingPointsMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     boolean containsPlayerBuildingPointsMap(
         int key);
@@ -34,19 +34,19 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerBuildingPointsMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerBuildingPointsMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
 
     int getPlayerBuildingPointsMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
 
     int getPlayerBuildingPointsMapOrThrow(
@@ -54,8 +54,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 26238
-   * Obf: BHLJKMKNHBL
+   * CmdId: 27475
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusBuildingPointsNotify}
@@ -103,7 +102,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerBuildingPointsMap_ = com.google.protobuf.MapField.newMapField(
                     PlayerBuildingPointsMapDefaultEntryHolder.defaultEntry);
@@ -145,7 +144,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
+        case 14:
           return internalGetPlayerBuildingPointsMap();
         default:
           throw new RuntimeException(
@@ -160,7 +159,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusBuildingPointsNotifyOuterClass.InBattleMechanicusBuildingPointsNotify.class, emu.grasscutter.net.proto.InBattleMechanicusBuildingPointsNotifyOuterClass.InBattleMechanicusBuildingPointsNotify.Builder.class);
     }
 
-    public static final int PLAYER_BUILDING_POINTS_MAP_FIELD_NUMBER = 3;
+    public static final int PLAYER_BUILDING_POINTS_MAP_FIELD_NUMBER = 14;
     private static final class PlayerBuildingPointsMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -187,7 +186,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       return internalGetPlayerBuildingPointsMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
 
     @java.lang.Override
@@ -205,7 +204,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       return getPlayerBuildingPointsMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     @java.lang.Override
 
@@ -213,7 +212,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       return internalGetPlayerBuildingPointsMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     @java.lang.Override
 
@@ -226,7 +225,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
      */
     @java.lang.Override
 
@@ -260,7 +259,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
           output,
           internalGetPlayerBuildingPointsMap(),
           PlayerBuildingPointsMapDefaultEntryHolder.defaultEntry,
-          3);
+          14);
       unknownFields.writeTo(output);
     }
 
@@ -278,7 +277,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, playerBuildingPointsMap__);
+            .computeMessageSize(14, playerBuildingPointsMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -409,8 +408,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26238
-     * Obf: BHLJKMKNHBL
+     * CmdId: 27475
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusBuildingPointsNotify}
@@ -428,7 +426,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 14:
             return internalGetPlayerBuildingPointsMap();
           default:
             throw new RuntimeException(
@@ -439,7 +437,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 14:
             return internalGetMutablePlayerBuildingPointsMap();
           default:
             throw new RuntimeException(
@@ -609,7 +607,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return internalGetPlayerBuildingPointsMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
 
       @java.lang.Override
@@ -627,7 +625,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return getPlayerBuildingPointsMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
       @java.lang.Override
 
@@ -635,7 +633,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return internalGetPlayerBuildingPointsMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
       @java.lang.Override
 
@@ -648,7 +646,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
       @java.lang.Override
 
@@ -669,7 +667,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
 
       public Builder removePlayerBuildingPointsMap(
@@ -688,7 +686,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return internalGetMutablePlayerBuildingPointsMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
       public Builder putPlayerBuildingPointsMap(
           int key,
@@ -700,7 +698,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; player_building_points_map = 14;</code>
        */
 
       public Builder putAllPlayerBuildingPointsMap(
@@ -784,7 +782,7 @@ public final class InBattleMechanicusBuildingPointsNotifyOuterClass {
       "\n,InBattleMechanicusBuildingPointsNotify" +
       ".proto\"\322\001\n&InBattleMechanicusBuildingPoi" +
       "ntsNotify\022h\n\032player_building_points_map\030" +
-      "\003 \003(\0132D.InBattleMechanicusBuildingPoints" +
+      "\016 \003(\0132D.InBattleMechanicusBuildingPoints" +
       "Notify.PlayerBuildingPointsMapEntry\032>\n\034P" +
       "layerBuildingPointsMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.n" +

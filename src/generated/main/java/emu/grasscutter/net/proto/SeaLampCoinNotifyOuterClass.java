@@ -19,15 +19,14 @@ public final class SeaLampCoinNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 sea_lamp_coin = 11;</code>
+     * <code>uint32 sea_lamp_coin = 14;</code>
      * @return The seaLampCoin.
      */
     int getSeaLampCoin();
   }
   /**
    * <pre>
-   * CmdId: 8079
-   * Obf: NHJJEFLAFLN
+   * CmdId: 7559
    * </pre>
    *
    * Protobuf type {@code SeaLampCoinNotify}
@@ -74,7 +73,7 @@ public final class SeaLampCoinNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 112: {
 
               seaLampCoin_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class SeaLampCoinNotifyOuterClass {
               emu.grasscutter.net.proto.SeaLampCoinNotifyOuterClass.SeaLampCoinNotify.class, emu.grasscutter.net.proto.SeaLampCoinNotifyOuterClass.SeaLampCoinNotify.Builder.class);
     }
 
-    public static final int SEA_LAMP_COIN_FIELD_NUMBER = 11;
+    public static final int SEA_LAMP_COIN_FIELD_NUMBER = 14;
     private int seaLampCoin_;
     /**
-     * <code>uint32 sea_lamp_coin = 11;</code>
+     * <code>uint32 sea_lamp_coin = 14;</code>
      * @return The seaLampCoin.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class SeaLampCoinNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (seaLampCoin_ != 0) {
-        output.writeUInt32(11, seaLampCoin_);
+        output.writeUInt32(14, seaLampCoin_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class SeaLampCoinNotifyOuterClass {
       size = 0;
       if (seaLampCoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, seaLampCoin_);
+          .computeUInt32Size(14, seaLampCoin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class SeaLampCoinNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8079
-     * Obf: NHJJEFLAFLN
+     * CmdId: 7559
      * </pre>
      *
      * Protobuf type {@code SeaLampCoinNotify}
@@ -431,7 +429,7 @@ public final class SeaLampCoinNotifyOuterClass {
 
       private int seaLampCoin_ ;
       /**
-       * <code>uint32 sea_lamp_coin = 11;</code>
+       * <code>uint32 sea_lamp_coin = 14;</code>
        * @return The seaLampCoin.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class SeaLampCoinNotifyOuterClass {
         return seaLampCoin_;
       }
       /**
-       * <code>uint32 sea_lamp_coin = 11;</code>
+       * <code>uint32 sea_lamp_coin = 14;</code>
        * @param value The seaLampCoin to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class SeaLampCoinNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sea_lamp_coin = 11;</code>
+       * <code>uint32 sea_lamp_coin = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeaLampCoin() {
@@ -527,7 +525,7 @@ public final class SeaLampCoinNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SeaLampCoinNotify.proto\"*\n\021SeaLampCoin" +
-      "Notify\022\025\n\rsea_lamp_coin\030\013 \001(\rB\033\n\031emu.gra" +
+      "Notify\022\025\n\rsea_lamp_coin\030\016 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

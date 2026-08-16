@@ -19,36 +19,60 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-     * @return A list containing the pNFCOJBKJPM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+     * @return A list containing the eKPAPILLJPL.
      */
-    java.util.List<java.lang.Integer> getPNFCOJBKJPMList();
+    java.util.List<java.lang.Integer> getEKPAPILLJPLList();
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-     * @return The count of pNFCOJBKJPM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+     * @return The count of eKPAPILLJPL.
      */
-    int getPNFCOJBKJPMCount();
+    int getEKPAPILLJPLCount();
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
      * @param index The index of the element to return.
-     * @return The pNFCOJBKJPM at the given index.
+     * @return The eKPAPILLJPL at the given index.
      */
-    int getPNFCOJBKJPM(int index);
+    int getEKPAPILLJPL(int index);
 
     /**
-     * <code>uint32 difficulty = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 7;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 6;</code>
      * @return The stageId.
      */
     int getStageId();
@@ -66,7 +90,7 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       super(builder);
     }
     private GoalChallengeDungeonSettleInfo() {
-      pNFCOJBKJPM_ = emptyIntList();
+      eKPAPILLJPL_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -100,38 +124,38 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                pNFCOJBKJPM_ = newIntList();
+                eKPAPILLJPL_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              pNFCOJBKJPM_.addInt(input.readUInt32());
+              eKPAPILLJPL_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                pNFCOJBKJPM_ = newIntList();
+                eKPAPILLJPL_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                pNFCOJBKJPM_.addInt(input.readUInt32());
+                eKPAPILLJPL_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 24: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 48: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 56: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 64: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -152,7 +176,7 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          pNFCOJBKJPM_.makeImmutable(); // C
+          eKPAPILLJPL_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -171,38 +195,54 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo.class, emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo.Builder.class);
     }
 
-    public static final int PNFCOJBKJPM_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList pNFCOJBKJPM_;
+    public static final int EKPAPILLJPL_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList eKPAPILLJPL_;
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-     * @return A list containing the pNFCOJBKJPM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+     * @return A list containing the eKPAPILLJPL.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getPNFCOJBKJPMList() {
-      return pNFCOJBKJPM_;
+        getEKPAPILLJPLList() {
+      return eKPAPILLJPL_;
     }
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-     * @return The count of pNFCOJBKJPM.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+     * @return The count of eKPAPILLJPL.
      */
-    public int getPNFCOJBKJPMCount() {
-      return pNFCOJBKJPM_.size();
+    public int getEKPAPILLJPLCount() {
+      return eKPAPILLJPL_.size();
     }
     /**
-     * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 EKPAPILLJPL = 3;</code>
      * @param index The index of the element to return.
-     * @return The pNFCOJBKJPM at the given index.
+     * @return The eKPAPILLJPL at the given index.
      */
-    public int getPNFCOJBKJPM(int index) {
-      return pNFCOJBKJPM_.getInt(index);
+    public int getEKPAPILLJPL(int index) {
+      return eKPAPILLJPL_.getInt(index);
     }
-    private int pNFCOJBKJPMMemoizedSerializedSize = -1;
+    private int eKPAPILLJPLMemoizedSerializedSize = -1;
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_FIELD_NUMBER = 8;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 11;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -210,10 +250,14 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_new_record = 7;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -221,10 +265,14 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 6;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 stage_id = 6;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -247,21 +295,21 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getPNFCOJBKJPMList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(pNFCOJBKJPMMemoizedSerializedSize);
+      if (getEKPAPILLJPLList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(eKPAPILLJPLMemoizedSerializedSize);
       }
-      for (int i = 0; i < pNFCOJBKJPM_.size(); i++) {
-        output.writeUInt32NoTag(pNFCOJBKJPM_.getInt(i));
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
+      for (int i = 0; i < eKPAPILLJPL_.size(); i++) {
+        output.writeUInt32NoTag(eKPAPILLJPL_.getInt(i));
       }
       if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
+        output.writeUInt32(6, stageId_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(7, isNewRecord_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(11, difficulty_);
+        output.writeUInt32(8, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,29 +322,29 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < pNFCOJBKJPM_.size(); i++) {
+        for (int i = 0; i < eKPAPILLJPL_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(pNFCOJBKJPM_.getInt(i));
+            .computeUInt32SizeNoTag(eKPAPILLJPL_.getInt(i));
         }
         size += dataSize;
-        if (!getPNFCOJBKJPMList().isEmpty()) {
+        if (!getEKPAPILLJPLList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        pNFCOJBKJPMMemoizedSerializedSize = dataSize;
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
+        eKPAPILLJPLMemoizedSerializedSize = dataSize;
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
+          .computeUInt32Size(6, stageId_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isNewRecord_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficulty_);
+          .computeUInt32Size(8, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +361,8 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo other = (emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo) obj;
 
-      if (!getPNFCOJBKJPMList()
-          .equals(other.getPNFCOJBKJPMList())) return false;
+      if (!getEKPAPILLJPLList()
+          .equals(other.getEKPAPILLJPLList())) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
       if (getIsNewRecord()
@@ -332,9 +380,9 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPNFCOJBKJPMCount() > 0) {
-        hash = (37 * hash) + PNFCOJBKJPM_FIELD_NUMBER;
-        hash = (53 * hash) + getPNFCOJBKJPMList().hashCode();
+      if (getEKPAPILLJPLCount() > 0) {
+        hash = (37 * hash) + EKPAPILLJPL_FIELD_NUMBER;
+        hash = (53 * hash) + getEKPAPILLJPLList().hashCode();
       }
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
@@ -476,7 +524,7 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pNFCOJBKJPM_ = emptyIntList();
+        eKPAPILLJPL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         difficulty_ = 0;
 
@@ -512,10 +560,10 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo result = new emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          pNFCOJBKJPM_.makeImmutable();
+          eKPAPILLJPL_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.pNFCOJBKJPM_ = pNFCOJBKJPM_;
+        result.eKPAPILLJPL_ = eKPAPILLJPL_;
         result.difficulty_ = difficulty_;
         result.isNewRecord_ = isNewRecord_;
         result.stageId_ = stageId_;
@@ -567,13 +615,13 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.GoalChallengeDungeonSettleInfoOuterClass.GoalChallengeDungeonSettleInfo.getDefaultInstance()) return this;
-        if (!other.pNFCOJBKJPM_.isEmpty()) {
-          if (pNFCOJBKJPM_.isEmpty()) {
-            pNFCOJBKJPM_ = other.pNFCOJBKJPM_;
+        if (!other.eKPAPILLJPL_.isEmpty()) {
+          if (eKPAPILLJPL_.isEmpty()) {
+            eKPAPILLJPL_ = other.eKPAPILLJPL_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensurePNFCOJBKJPMIsMutable();
-            pNFCOJBKJPM_.addAll(other.pNFCOJBKJPM_);
+            ensureEKPAPILLJPLIsMutable();
+            eKPAPILLJPL_.addAll(other.eKPAPILLJPL_);
           }
           onChanged();
         }
@@ -616,80 +664,108 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList pNFCOJBKJPM_ = emptyIntList();
-      private void ensurePNFCOJBKJPMIsMutable() {
+      private com.google.protobuf.Internal.IntList eKPAPILLJPL_ = emptyIntList();
+      private void ensureEKPAPILLJPLIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          pNFCOJBKJPM_ = mutableCopy(pNFCOJBKJPM_);
+          eKPAPILLJPL_ = mutableCopy(eKPAPILLJPL_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-       * @return A list containing the pNFCOJBKJPM.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+       * @return A list containing the eKPAPILLJPL.
        */
       public java.util.List<java.lang.Integer>
-          getPNFCOJBKJPMList() {
+          getEKPAPILLJPLList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(pNFCOJBKJPM_) : pNFCOJBKJPM_;
+                 java.util.Collections.unmodifiableList(eKPAPILLJPL_) : eKPAPILLJPL_;
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-       * @return The count of pNFCOJBKJPM.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+       * @return The count of eKPAPILLJPL.
        */
-      public int getPNFCOJBKJPMCount() {
-        return pNFCOJBKJPM_.size();
+      public int getEKPAPILLJPLCount() {
+        return eKPAPILLJPL_.size();
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
        * @param index The index of the element to return.
-       * @return The pNFCOJBKJPM at the given index.
+       * @return The eKPAPILLJPL at the given index.
        */
-      public int getPNFCOJBKJPM(int index) {
-        return pNFCOJBKJPM_.getInt(index);
+      public int getEKPAPILLJPL(int index) {
+        return eKPAPILLJPL_.getInt(index);
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
        * @param index The index to set the value at.
-       * @param value The pNFCOJBKJPM to set.
+       * @param value The eKPAPILLJPL to set.
        * @return This builder for chaining.
        */
-      public Builder setPNFCOJBKJPM(
+      public Builder setEKPAPILLJPL(
           int index, int value) {
-        ensurePNFCOJBKJPMIsMutable();
-        pNFCOJBKJPM_.setInt(index, value);
+        ensureEKPAPILLJPLIsMutable();
+        eKPAPILLJPL_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-       * @param value The pNFCOJBKJPM to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+       * @param value The eKPAPILLJPL to add.
        * @return This builder for chaining.
        */
-      public Builder addPNFCOJBKJPM(int value) {
-        ensurePNFCOJBKJPMIsMutable();
-        pNFCOJBKJPM_.addInt(value);
+      public Builder addEKPAPILLJPL(int value) {
+        ensureEKPAPILLJPLIsMutable();
+        eKPAPILLJPL_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
-       * @param values The pNFCOJBKJPM to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
+       * @param values The eKPAPILLJPL to add.
        * @return This builder for chaining.
        */
-      public Builder addAllPNFCOJBKJPM(
+      public Builder addAllEKPAPILLJPL(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensurePNFCOJBKJPMIsMutable();
+        ensureEKPAPILLJPLIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, pNFCOJBKJPM_);
+            values, eKPAPILLJPL_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PNFCOJBKJPM = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 EKPAPILLJPL = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPNFCOJBKJPM() {
-        pNFCOJBKJPM_ = emptyIntList();
+      public Builder clearEKPAPILLJPL() {
+        eKPAPILLJPL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -697,7 +773,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 8;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -705,7 +785,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 8;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -716,7 +800,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 difficulty = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -728,7 +816,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 7;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -736,7 +828,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 7;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -747,7 +843,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_new_record = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -759,7 +859,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -767,7 +871,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -778,7 +886,11 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 stage_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -855,9 +967,9 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$GoalChallengeDungeonSettleInfo.proto\"r" +
-      "\n\036GoalChallengeDungeonSettleInfo\022\023\n\013PNFC" +
-      "OJBKJPM\030\001 \003(\r\022\022\n\ndifficulty\030\013 \001(\r\022\025\n\ris_" +
-      "new_record\030\003 \001(\010\022\020\n\010stage_id\030\007 \001(\rB\033\n\031em" +
+      "\n\036GoalChallengeDungeonSettleInfo\022\023\n\013EKPA" +
+      "PILLJPL\030\003 \003(\r\022\022\n\ndifficulty\030\010 \001(\r\022\025\n\ris_" +
+      "new_record\030\007 \001(\010\022\020\n\010stage_id\030\006 \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -869,7 +981,7 @@ public final class GoalChallengeDungeonSettleInfoOuterClass {
     internal_static_GoalChallengeDungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GoalChallengeDungeonSettleInfo_descriptor,
-        new java.lang.String[] { "PNFCOJBKJPM", "Difficulty", "IsNewRecord", "StageId", });
+        new java.lang.String[] { "EKPAPILLJPL", "Difficulty", "IsNewRecord", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,45 +19,44 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> 
-        getFriendFlowerWishListList();
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData getFriendFlowerWishList(int index);
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    int getFriendFlowerWishListCount();
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder> 
-        getFriendFlowerWishListOrBuilderList();
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder getFriendFlowerWishListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 schedule_id = 13;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> 
+        getIJEPHLKIBCEList();
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB getIJEPHLKIBCE(int index);
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    int getIJEPHLKIBCECount();
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder> 
+        getIJEPHLKIBCEOrBuilderList();
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder getIJEPHLKIBCEOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 schedule_id = 14;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 24917
-   * Obf: AECNCPPBEKH
+   * CmdId: 1509
    * </pre>
    *
    * Protobuf type {@code PlantFlowerGetFriendFlowerWishListRsp}
@@ -72,7 +71,7 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       super(builder);
     }
     private PlantFlowerGetFriendFlowerWishListRsp() {
-      friendFlowerWishList_ = java.util.Collections.emptyList();
+      iJEPHLKIBCE_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -106,23 +105,23 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                friendFlowerWishList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              friendFlowerWishList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
+            case 16: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                iJEPHLKIBCE_ = new java.util.ArrayList<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              iJEPHLKIBCE_.add(
+                  input.readMessage(emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.parser(), extensionRegistry));
+              break;
+            }
+            case 112: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -141,7 +140,7 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          friendFlowerWishList_ = java.util.Collections.unmodifiableList(friendFlowerWishList_);
+          iJEPHLKIBCE_ = java.util.Collections.unmodifiableList(iJEPHLKIBCE_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -160,66 +159,66 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
               emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp.class, emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp.Builder.class);
     }
 
-    public static final int FRIEND_FLOWER_WISH_LIST_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> friendFlowerWishList_;
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> getFriendFlowerWishListList() {
-      return friendFlowerWishList_;
-    }
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder> 
-        getFriendFlowerWishListOrBuilderList() {
-      return friendFlowerWishList_;
-    }
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    @java.lang.Override
-    public int getFriendFlowerWishListCount() {
-      return friendFlowerWishList_.size();
-    }
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData getFriendFlowerWishList(int index) {
-      return friendFlowerWishList_.get(index);
-    }
-    /**
-     * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder getFriendFlowerWishListOrBuilder(
-        int index) {
-      return friendFlowerWishList_.get(index);
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 13;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int IJEPHLKIBCE_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> iJEPHLKIBCE_;
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> getIJEPHLKIBCEList() {
+      return iJEPHLKIBCE_;
+    }
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder> 
+        getIJEPHLKIBCEOrBuilderList() {
+      return iJEPHLKIBCE_;
+    }
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    @java.lang.Override
+    public int getIJEPHLKIBCECount() {
+      return iJEPHLKIBCE_.size();
+    }
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB getIJEPHLKIBCE(int index) {
+      return iJEPHLKIBCE_.get(index);
+    }
+    /**
+     * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder getIJEPHLKIBCEOrBuilder(
+        int index) {
+      return iJEPHLKIBCE_.get(index);
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 14;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -236,14 +235,14 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(13, scheduleId_);
-      }
-      for (int i = 0; i < friendFlowerWishList_.size(); i++) {
-        output.writeMessage(14, friendFlowerWishList_.get(i));
-      }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(2, retcode_);
+      }
+      for (int i = 0; i < iJEPHLKIBCE_.size(); i++) {
+        output.writeMessage(4, iJEPHLKIBCE_.get(i));
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(14, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +253,17 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, scheduleId_);
-      }
-      for (int i = 0; i < friendFlowerWishList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, friendFlowerWishList_.get(i));
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(2, retcode_);
+      }
+      for (int i = 0; i < iJEPHLKIBCE_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, iJEPHLKIBCE_.get(i));
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,12 +280,12 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp other = (emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp) obj;
 
-      if (!getFriendFlowerWishListList()
-          .equals(other.getFriendFlowerWishListList())) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getIJEPHLKIBCEList()
+          .equals(other.getIJEPHLKIBCEList())) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -298,14 +297,14 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFriendFlowerWishListCount() > 0) {
-        hash = (37 * hash) + FRIEND_FLOWER_WISH_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getFriendFlowerWishListList().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      if (getIJEPHLKIBCECount() > 0) {
+        hash = (37 * hash) + IJEPHLKIBCE_FIELD_NUMBER;
+        hash = (53 * hash) + getIJEPHLKIBCEList().hashCode();
       }
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -403,8 +402,7 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24917
-     * Obf: AECNCPPBEKH
+     * CmdId: 1509
      * </pre>
      *
      * Protobuf type {@code PlantFlowerGetFriendFlowerWishListRsp}
@@ -439,21 +437,21 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getFriendFlowerWishListFieldBuilder();
+          getIJEPHLKIBCEFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (friendFlowerWishListBuilder_ == null) {
-          friendFlowerWishList_ = java.util.Collections.emptyList();
+        retcode_ = 0;
+
+        if (iJEPHLKIBCEBuilder_ == null) {
+          iJEPHLKIBCE_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          friendFlowerWishListBuilder_.clear();
+          iJEPHLKIBCEBuilder_.clear();
         }
         scheduleId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -482,17 +480,17 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp result = new emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp(this);
         int from_bitField0_ = bitField0_;
-        if (friendFlowerWishListBuilder_ == null) {
+        result.retcode_ = retcode_;
+        if (iJEPHLKIBCEBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            friendFlowerWishList_ = java.util.Collections.unmodifiableList(friendFlowerWishList_);
+            iJEPHLKIBCE_ = java.util.Collections.unmodifiableList(iJEPHLKIBCE_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.friendFlowerWishList_ = friendFlowerWishList_;
+          result.iJEPHLKIBCE_ = iJEPHLKIBCE_;
         } else {
-          result.friendFlowerWishList_ = friendFlowerWishListBuilder_.build();
+          result.iJEPHLKIBCE_ = iJEPHLKIBCEBuilder_.build();
         }
         result.scheduleId_ = scheduleId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -541,37 +539,37 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerGetFriendFlowerWishListRspOuterClass.PlantFlowerGetFriendFlowerWishListRsp.getDefaultInstance()) return this;
-        if (friendFlowerWishListBuilder_ == null) {
-          if (!other.friendFlowerWishList_.isEmpty()) {
-            if (friendFlowerWishList_.isEmpty()) {
-              friendFlowerWishList_ = other.friendFlowerWishList_;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (iJEPHLKIBCEBuilder_ == null) {
+          if (!other.iJEPHLKIBCE_.isEmpty()) {
+            if (iJEPHLKIBCE_.isEmpty()) {
+              iJEPHLKIBCE_ = other.iJEPHLKIBCE_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureFriendFlowerWishListIsMutable();
-              friendFlowerWishList_.addAll(other.friendFlowerWishList_);
+              ensureIJEPHLKIBCEIsMutable();
+              iJEPHLKIBCE_.addAll(other.iJEPHLKIBCE_);
             }
             onChanged();
           }
         } else {
-          if (!other.friendFlowerWishList_.isEmpty()) {
-            if (friendFlowerWishListBuilder_.isEmpty()) {
-              friendFlowerWishListBuilder_.dispose();
-              friendFlowerWishListBuilder_ = null;
-              friendFlowerWishList_ = other.friendFlowerWishList_;
+          if (!other.iJEPHLKIBCE_.isEmpty()) {
+            if (iJEPHLKIBCEBuilder_.isEmpty()) {
+              iJEPHLKIBCEBuilder_.dispose();
+              iJEPHLKIBCEBuilder_ = null;
+              iJEPHLKIBCE_ = other.iJEPHLKIBCE_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              friendFlowerWishListBuilder_ = 
+              iJEPHLKIBCEBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getFriendFlowerWishListFieldBuilder() : null;
+                   getIJEPHLKIBCEFieldBuilder() : null;
             } else {
-              friendFlowerWishListBuilder_.addAllMessages(other.friendFlowerWishList_);
+              iJEPHLKIBCEBuilder_.addAllMessages(other.iJEPHLKIBCE_);
             }
           }
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,280 +601,9 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> friendFlowerWishList_ =
-        java.util.Collections.emptyList();
-      private void ensureFriendFlowerWishListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          friendFlowerWishList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData>(friendFlowerWishList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder> friendFlowerWishListBuilder_;
-
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> getFriendFlowerWishListList() {
-        if (friendFlowerWishListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(friendFlowerWishList_);
-        } else {
-          return friendFlowerWishListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public int getFriendFlowerWishListCount() {
-        if (friendFlowerWishListBuilder_ == null) {
-          return friendFlowerWishList_.size();
-        } else {
-          return friendFlowerWishListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData getFriendFlowerWishList(int index) {
-        if (friendFlowerWishListBuilder_ == null) {
-          return friendFlowerWishList_.get(index);
-        } else {
-          return friendFlowerWishListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder setFriendFlowerWishList(
-          int index, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData value) {
-        if (friendFlowerWishListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.set(index, value);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder setFriendFlowerWishList(
-          int index, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder builderForValue) {
-        if (friendFlowerWishListBuilder_ == null) {
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder addFriendFlowerWishList(emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData value) {
-        if (friendFlowerWishListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.add(value);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder addFriendFlowerWishList(
-          int index, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData value) {
-        if (friendFlowerWishListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.add(index, value);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder addFriendFlowerWishList(
-          emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder builderForValue) {
-        if (friendFlowerWishListBuilder_ == null) {
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder addFriendFlowerWishList(
-          int index, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder builderForValue) {
-        if (friendFlowerWishListBuilder_ == null) {
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder addAllFriendFlowerWishList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData> values) {
-        if (friendFlowerWishListBuilder_ == null) {
-          ensureFriendFlowerWishListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, friendFlowerWishList_);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder clearFriendFlowerWishList() {
-        if (friendFlowerWishListBuilder_ == null) {
-          friendFlowerWishList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public Builder removeFriendFlowerWishList(int index) {
-        if (friendFlowerWishListBuilder_ == null) {
-          ensureFriendFlowerWishListIsMutable();
-          friendFlowerWishList_.remove(index);
-          onChanged();
-        } else {
-          friendFlowerWishListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder getFriendFlowerWishListBuilder(
-          int index) {
-        return getFriendFlowerWishListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder getFriendFlowerWishListOrBuilder(
-          int index) {
-        if (friendFlowerWishListBuilder_ == null) {
-          return friendFlowerWishList_.get(index);  } else {
-          return friendFlowerWishListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder> 
-           getFriendFlowerWishListOrBuilderList() {
-        if (friendFlowerWishListBuilder_ != null) {
-          return friendFlowerWishListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(friendFlowerWishList_);
-        }
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder addFriendFlowerWishListBuilder() {
-        return getFriendFlowerWishListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder addFriendFlowerWishListBuilder(
-          int index) {
-        return getFriendFlowerWishListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder> 
-           getFriendFlowerWishListBuilderList() {
-        return getFriendFlowerWishListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder> 
-          getFriendFlowerWishListFieldBuilder() {
-        if (friendFlowerWishListBuilder_ == null) {
-          friendFlowerWishListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishDataOrBuilder>(
-                  friendFlowerWishList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          friendFlowerWishList_ = null;
-        }
-        return friendFlowerWishListBuilder_;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 13;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 13;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -884,7 +611,7 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -895,12 +622,283 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> iJEPHLKIBCE_ =
+        java.util.Collections.emptyList();
+      private void ensureIJEPHLKIBCEIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          iJEPHLKIBCE_ = new java.util.ArrayList<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB>(iJEPHLKIBCE_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder> iJEPHLKIBCEBuilder_;
+
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> getIJEPHLKIBCEList() {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(iJEPHLKIBCE_);
+        } else {
+          return iJEPHLKIBCEBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public int getIJEPHLKIBCECount() {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          return iJEPHLKIBCE_.size();
+        } else {
+          return iJEPHLKIBCEBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB getIJEPHLKIBCE(int index) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          return iJEPHLKIBCE_.get(index);
+        } else {
+          return iJEPHLKIBCEBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder setIJEPHLKIBCE(
+          int index, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB value) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.set(index, value);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder setIJEPHLKIBCE(
+          int index, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder builderForValue) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder addIJEPHLKIBCE(emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB value) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.add(value);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder addIJEPHLKIBCE(
+          int index, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB value) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.add(index, value);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder addIJEPHLKIBCE(
+          emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder builderForValue) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.add(builderForValue.build());
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder addIJEPHLKIBCE(
+          int index, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder builderForValue) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder addAllIJEPHLKIBCE(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB> values) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          ensureIJEPHLKIBCEIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, iJEPHLKIBCE_);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder clearIJEPHLKIBCE() {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          iJEPHLKIBCE_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public Builder removeIJEPHLKIBCE(int index) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          ensureIJEPHLKIBCEIsMutable();
+          iJEPHLKIBCE_.remove(index);
+          onChanged();
+        } else {
+          iJEPHLKIBCEBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder getIJEPHLKIBCEBuilder(
+          int index) {
+        return getIJEPHLKIBCEFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder getIJEPHLKIBCEOrBuilder(
+          int index) {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          return iJEPHLKIBCE_.get(index);  } else {
+          return iJEPHLKIBCEBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder> 
+           getIJEPHLKIBCEOrBuilderList() {
+        if (iJEPHLKIBCEBuilder_ != null) {
+          return iJEPHLKIBCEBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(iJEPHLKIBCE_);
+        }
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder addIJEPHLKIBCEBuilder() {
+        return getIJEPHLKIBCEFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder addIJEPHLKIBCEBuilder(
+          int index) {
+        return getIJEPHLKIBCEFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .JBCHDGGCGBB IJEPHLKIBCE = 4;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder> 
+           getIJEPHLKIBCEBuilderList() {
+        return getIJEPHLKIBCEFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder> 
+          getIJEPHLKIBCEFieldBuilder() {
+        if (iJEPHLKIBCEBuilder_ == null) {
+          iJEPHLKIBCEBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBB.Builder, emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.JBCHDGGCGBBOrBuilder>(
+                  iJEPHLKIBCE_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          iJEPHLKIBCE_ = null;
+        }
+        return iJEPHLKIBCEBuilder_;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 14;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 14;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -972,25 +970,24 @@ public final class PlantFlowerGetFriendFlowerWishListRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+PlantFlowerGetFriendFlowerWishListRsp." +
-      "proto\032%PlantFlowerFriendFlowerWishData.p" +
-      "roto\"\220\001\n%PlantFlowerGetFriendFlowerWishL" +
-      "istRsp\022A\n\027friend_flower_wish_list\030\016 \003(\0132" +
-      " .PlantFlowerFriendFlowerWishData\022\023\n\013sch" +
-      "edule_id\030\r \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "proto\032\021JBCHDGGCGBB.proto\"p\n%PlantFlowerG" +
+      "etFriendFlowerWishListRsp\022\017\n\007retcode\030\002 \001" +
+      "(\005\022!\n\013IJEPHLKIBCE\030\004 \003(\0132\014.JBCHDGGCGBB\022\023\n" +
+      "\013schedule_id\030\016 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.getDescriptor(),
         });
     internal_static_PlantFlowerGetFriendFlowerWishListRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlantFlowerGetFriendFlowerWishListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerGetFriendFlowerWishListRsp_descriptor,
-        new java.lang.String[] { "FriendFlowerWishList", "ScheduleId", "Retcode", });
-    emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.getDescriptor();
+        new java.lang.String[] { "Retcode", "IJEPHLKIBCE", "ScheduleId", });
+    emu.grasscutter.net.proto.JBCHDGGCGBBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

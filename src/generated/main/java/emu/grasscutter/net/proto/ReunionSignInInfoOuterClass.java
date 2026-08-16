@@ -19,45 +19,65 @@ public final class ReunionSignInInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IOGOBJPGDPJ = 10;</code>
-     * @return The iOGOBJPGDPJ.
-     */
-    int getIOGOBJPGDPJ();
-
-    /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @return A list containing the rewardDayList.
      */
     java.util.List<java.lang.Integer> getRewardDayListList();
     /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @return The count of rewardDayList.
      */
     int getRewardDayListCount();
     /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
     int getRewardDayList(int index);
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 JGAOALKABMA = 7;</code>
+     * @return The jGAOALKABMA.
+     */
+    int getJGAOALKABMA();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 LMOEFBHICGL = 11;</code>
-     * @return The lMOEFBHICGL.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 GCMFPCFNKEN = 4;</code>
+     * @return The gCMFPCFNKEN.
      */
-    int getLMOEFBHICGL();
+    int getGCMFPCFNKEN();
   }
   /**
-   * <pre>
-   * Obf: KADJKCANCHH
-   * </pre>
-   *
    * Protobuf type {@code ReunionSignInInfo}
    */
   public static final class ReunionSignInInfo extends
@@ -110,6 +130,16 @@ public final class ReunionSignInInfoOuterClass {
               break;
             }
             case 32: {
+
+              gCMFPCFNKEN_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              jGAOALKABMA_ = input.readUInt32();
+              break;
+            }
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardDayList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -117,7 +147,7 @@ public final class ReunionSignInInfoOuterClass {
               rewardDayList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,16 +158,6 @@ public final class ReunionSignInInfoOuterClass {
                 rewardDayList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 80: {
-
-              iOGOBJPGDPJ_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              lMOEFBHICGL_ = input.readUInt32();
               break;
             }
             default: {
@@ -175,21 +195,14 @@ public final class ReunionSignInInfoOuterClass {
               emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.class, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder.class);
     }
 
-    public static final int IOGOBJPGDPJ_FIELD_NUMBER = 10;
-    private int iOGOBJPGDPJ_;
-    /**
-     * <code>uint32 IOGOBJPGDPJ = 10;</code>
-     * @return The iOGOBJPGDPJ.
-     */
-    @java.lang.Override
-    public int getIOGOBJPGDPJ() {
-      return iOGOBJPGDPJ_;
-    }
-
-    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 4;
+    public static final int REWARD_DAY_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList rewardDayList_;
     /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @return A list containing the rewardDayList.
      */
     @java.lang.Override
@@ -198,14 +211,22 @@ public final class ReunionSignInInfoOuterClass {
       return rewardDayList_;
     }
     /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @return The count of rewardDayList.
      */
     public int getRewardDayListCount() {
       return rewardDayList_.size();
     }
     /**
-     * <code>repeated uint32 reward_day_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 reward_day_list = 8;</code>
      * @param index The index of the element to return.
      * @return The rewardDayList at the given index.
      */
@@ -214,9 +235,28 @@ public final class ReunionSignInInfoOuterClass {
     }
     private int rewardDayListMemoizedSerializedSize = -1;
 
+    public static final int JGAOALKABMA_FIELD_NUMBER = 7;
+    private int jGAOALKABMA_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 JGAOALKABMA = 7;</code>
+     * @return The jGAOALKABMA.
+     */
+    @java.lang.Override
+    public int getJGAOALKABMA() {
+      return jGAOALKABMA_;
+    }
+
     public static final int CONFIG_ID_FIELD_NUMBER = 1;
     private int configId_;
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
      * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
@@ -225,15 +265,19 @@ public final class ReunionSignInInfoOuterClass {
       return configId_;
     }
 
-    public static final int LMOEFBHICGL_FIELD_NUMBER = 11;
-    private int lMOEFBHICGL_;
+    public static final int GCMFPCFNKEN_FIELD_NUMBER = 4;
+    private int gCMFPCFNKEN_;
     /**
-     * <code>uint32 LMOEFBHICGL = 11;</code>
-     * @return The lMOEFBHICGL.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 GCMFPCFNKEN = 4;</code>
+     * @return The gCMFPCFNKEN.
      */
     @java.lang.Override
-    public int getLMOEFBHICGL() {
-      return lMOEFBHICGL_;
+    public int getGCMFPCFNKEN() {
+      return gCMFPCFNKEN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,18 +298,18 @@ public final class ReunionSignInInfoOuterClass {
       if (configId_ != 0) {
         output.writeUInt32(1, configId_);
       }
+      if (gCMFPCFNKEN_ != 0) {
+        output.writeUInt32(4, gCMFPCFNKEN_);
+      }
+      if (jGAOALKABMA_ != 0) {
+        output.writeUInt32(7, jGAOALKABMA_);
+      }
       if (getRewardDayListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(rewardDayListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardDayList_.size(); i++) {
         output.writeUInt32NoTag(rewardDayList_.getInt(i));
-      }
-      if (iOGOBJPGDPJ_ != 0) {
-        output.writeUInt32(10, iOGOBJPGDPJ_);
-      }
-      if (lMOEFBHICGL_ != 0) {
-        output.writeUInt32(11, lMOEFBHICGL_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,6 +324,14 @@ public final class ReunionSignInInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, configId_);
       }
+      if (gCMFPCFNKEN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, gCMFPCFNKEN_);
+      }
+      if (jGAOALKABMA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, jGAOALKABMA_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < rewardDayList_.size(); i++) {
@@ -293,14 +345,6 @@ public final class ReunionSignInInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         rewardDayListMemoizedSerializedSize = dataSize;
-      }
-      if (iOGOBJPGDPJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, iOGOBJPGDPJ_);
-      }
-      if (lMOEFBHICGL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, lMOEFBHICGL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,14 +361,14 @@ public final class ReunionSignInInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo other = (emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo) obj;
 
-      if (getIOGOBJPGDPJ()
-          != other.getIOGOBJPGDPJ()) return false;
       if (!getRewardDayListList()
           .equals(other.getRewardDayListList())) return false;
+      if (getJGAOALKABMA()
+          != other.getJGAOALKABMA()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
-      if (getLMOEFBHICGL()
-          != other.getLMOEFBHICGL()) return false;
+      if (getGCMFPCFNKEN()
+          != other.getGCMFPCFNKEN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -336,16 +380,16 @@ public final class ReunionSignInInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IOGOBJPGDPJ_FIELD_NUMBER;
-      hash = (53 * hash) + getIOGOBJPGDPJ();
       if (getRewardDayListCount() > 0) {
         hash = (37 * hash) + REWARD_DAY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardDayListList().hashCode();
       }
+      hash = (37 * hash) + JGAOALKABMA_FIELD_NUMBER;
+      hash = (53 * hash) + getJGAOALKABMA();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
-      hash = (37 * hash) + LMOEFBHICGL_FIELD_NUMBER;
-      hash = (53 * hash) + getLMOEFBHICGL();
+      hash = (37 * hash) + GCMFPCFNKEN_FIELD_NUMBER;
+      hash = (53 * hash) + getGCMFPCFNKEN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,10 +486,6 @@ public final class ReunionSignInInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KADJKCANCHH
-     * </pre>
-     *
      * Protobuf type {@code ReunionSignInInfo}
      */
     public static final class Builder extends
@@ -483,13 +523,13 @@ public final class ReunionSignInInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iOGOBJPGDPJ_ = 0;
-
         rewardDayList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        jGAOALKABMA_ = 0;
+
         configId_ = 0;
 
-        lMOEFBHICGL_ = 0;
+        gCMFPCFNKEN_ = 0;
 
         return this;
       }
@@ -518,14 +558,14 @@ public final class ReunionSignInInfoOuterClass {
       public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo result = new emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo(this);
         int from_bitField0_ = bitField0_;
-        result.iOGOBJPGDPJ_ = iOGOBJPGDPJ_;
         if (((bitField0_ & 0x00000001) != 0)) {
           rewardDayList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.rewardDayList_ = rewardDayList_;
+        result.jGAOALKABMA_ = jGAOALKABMA_;
         result.configId_ = configId_;
-        result.lMOEFBHICGL_ = lMOEFBHICGL_;
+        result.gCMFPCFNKEN_ = gCMFPCFNKEN_;
         onBuilt();
         return result;
       }
@@ -574,9 +614,6 @@ public final class ReunionSignInInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.getDefaultInstance()) return this;
-        if (other.getIOGOBJPGDPJ() != 0) {
-          setIOGOBJPGDPJ(other.getIOGOBJPGDPJ());
-        }
         if (!other.rewardDayList_.isEmpty()) {
           if (rewardDayList_.isEmpty()) {
             rewardDayList_ = other.rewardDayList_;
@@ -587,11 +624,14 @@ public final class ReunionSignInInfoOuterClass {
           }
           onChanged();
         }
+        if (other.getJGAOALKABMA() != 0) {
+          setJGAOALKABMA(other.getJGAOALKABMA());
+        }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        if (other.getLMOEFBHICGL() != 0) {
-          setLMOEFBHICGL(other.getLMOEFBHICGL());
+        if (other.getGCMFPCFNKEN() != 0) {
+          setGCMFPCFNKEN(other.getGCMFPCFNKEN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -623,37 +663,6 @@ public final class ReunionSignInInfoOuterClass {
       }
       private int bitField0_;
 
-      private int iOGOBJPGDPJ_ ;
-      /**
-       * <code>uint32 IOGOBJPGDPJ = 10;</code>
-       * @return The iOGOBJPGDPJ.
-       */
-      @java.lang.Override
-      public int getIOGOBJPGDPJ() {
-        return iOGOBJPGDPJ_;
-      }
-      /**
-       * <code>uint32 IOGOBJPGDPJ = 10;</code>
-       * @param value The iOGOBJPGDPJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIOGOBJPGDPJ(int value) {
-        
-        iOGOBJPGDPJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IOGOBJPGDPJ = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIOGOBJPGDPJ() {
-        
-        iOGOBJPGDPJ_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList rewardDayList_ = emptyIntList();
       private void ensureRewardDayListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -662,7 +671,11 @@ public final class ReunionSignInInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @return A list containing the rewardDayList.
        */
       public java.util.List<java.lang.Integer>
@@ -671,14 +684,22 @@ public final class ReunionSignInInfoOuterClass {
                  java.util.Collections.unmodifiableList(rewardDayList_) : rewardDayList_;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @return The count of rewardDayList.
        */
       public int getRewardDayListCount() {
         return rewardDayList_.size();
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @param index The index of the element to return.
        * @return The rewardDayList at the given index.
        */
@@ -686,7 +707,11 @@ public final class ReunionSignInInfoOuterClass {
         return rewardDayList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The rewardDayList to set.
        * @return This builder for chaining.
@@ -699,7 +724,11 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @param value The rewardDayList to add.
        * @return This builder for chaining.
        */
@@ -710,7 +739,11 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @param values The rewardDayList to add.
        * @return This builder for chaining.
        */
@@ -723,7 +756,11 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_day_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 reward_day_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardDayList() {
@@ -733,8 +770,55 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
 
+      private int jGAOALKABMA_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JGAOALKABMA = 7;</code>
+       * @return The jGAOALKABMA.
+       */
+      @java.lang.Override
+      public int getJGAOALKABMA() {
+        return jGAOALKABMA_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JGAOALKABMA = 7;</code>
+       * @param value The jGAOALKABMA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJGAOALKABMA(int value) {
+        
+        jGAOALKABMA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 JGAOALKABMA = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJGAOALKABMA() {
+        
+        jGAOALKABMA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int configId_ ;
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 config_id = 1;</code>
        * @return The configId.
        */
@@ -743,6 +827,10 @@ public final class ReunionSignInInfoOuterClass {
         return configId_;
       }
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 config_id = 1;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -754,6 +842,10 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
        * <code>uint32 config_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -764,33 +856,45 @@ public final class ReunionSignInInfoOuterClass {
         return this;
       }
 
-      private int lMOEFBHICGL_ ;
+      private int gCMFPCFNKEN_ ;
       /**
-       * <code>uint32 LMOEFBHICGL = 11;</code>
-       * @return The lMOEFBHICGL.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 GCMFPCFNKEN = 4;</code>
+       * @return The gCMFPCFNKEN.
        */
       @java.lang.Override
-      public int getLMOEFBHICGL() {
-        return lMOEFBHICGL_;
+      public int getGCMFPCFNKEN() {
+        return gCMFPCFNKEN_;
       }
       /**
-       * <code>uint32 LMOEFBHICGL = 11;</code>
-       * @param value The lMOEFBHICGL to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 GCMFPCFNKEN = 4;</code>
+       * @param value The gCMFPCFNKEN to set.
        * @return This builder for chaining.
        */
-      public Builder setLMOEFBHICGL(int value) {
+      public Builder setGCMFPCFNKEN(int value) {
         
-        lMOEFBHICGL_ = value;
+        gCMFPCFNKEN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LMOEFBHICGL = 11;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 GCMFPCFNKEN = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLMOEFBHICGL() {
+      public Builder clearGCMFPCFNKEN() {
         
-        lMOEFBHICGL_ = 0;
+        gCMFPCFNKEN_ = 0;
         onChanged();
         return this;
       }
@@ -862,9 +966,9 @@ public final class ReunionSignInInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ReunionSignInInfo.proto\"i\n\021ReunionSign" +
-      "InInfo\022\023\n\013IOGOBJPGDPJ\030\n \001(\r\022\027\n\017reward_da" +
-      "y_list\030\004 \003(\r\022\021\n\tconfig_id\030\001 \001(\r\022\023\n\013LMOEF" +
-      "BHICGL\030\013 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "InInfo\022\027\n\017reward_day_list\030\010 \003(\r\022\023\n\013JGAOA" +
+      "LKABMA\030\007 \001(\r\022\021\n\tconfig_id\030\001 \001(\r\022\023\n\013GCMFP" +
+      "CFNKEN\030\004 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -876,7 +980,7 @@ public final class ReunionSignInInfoOuterClass {
     internal_static_ReunionSignInInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionSignInInfo_descriptor,
-        new java.lang.String[] { "IOGOBJPGDPJ", "RewardDayList", "ConfigId", "LMOEFBHICGL", });
+        new java.lang.String[] { "RewardDayList", "JGAOALKABMA", "ConfigId", "GCMFPCFNKEN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

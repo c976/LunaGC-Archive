@@ -19,7 +19,7 @@ public final class AbilityMetaLoseHpOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 lose_hp_config_idx = 2;</code>
+     * <code>uint32 lose_hp_config_idx = 9;</code>
      * @return The loseHpConfigIdx.
      */
     int getLoseHpConfigIdx();
@@ -69,7 +69,7 @@ public final class AbilityMetaLoseHpOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 72: {
 
               loseHpConfigIdx_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMetaLoseHpOuterClass {
               emu.grasscutter.net.proto.AbilityMetaLoseHpOuterClass.AbilityMetaLoseHp.class, emu.grasscutter.net.proto.AbilityMetaLoseHpOuterClass.AbilityMetaLoseHp.Builder.class);
     }
 
-    public static final int LOSE_HP_CONFIG_IDX_FIELD_NUMBER = 2;
+    public static final int LOSE_HP_CONFIG_IDX_FIELD_NUMBER = 9;
     private int loseHpConfigIdx_;
     /**
-     * <code>uint32 lose_hp_config_idx = 2;</code>
+     * <code>uint32 lose_hp_config_idx = 9;</code>
      * @return The loseHpConfigIdx.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMetaLoseHpOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (loseHpConfigIdx_ != 0) {
-        output.writeUInt32(2, loseHpConfigIdx_);
+        output.writeUInt32(9, loseHpConfigIdx_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMetaLoseHpOuterClass {
       size = 0;
       if (loseHpConfigIdx_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, loseHpConfigIdx_);
+          .computeUInt32Size(9, loseHpConfigIdx_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class AbilityMetaLoseHpOuterClass {
 
       private int loseHpConfigIdx_ ;
       /**
-       * <code>uint32 lose_hp_config_idx = 2;</code>
+       * <code>uint32 lose_hp_config_idx = 9;</code>
        * @return The loseHpConfigIdx.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class AbilityMetaLoseHpOuterClass {
         return loseHpConfigIdx_;
       }
       /**
-       * <code>uint32 lose_hp_config_idx = 2;</code>
+       * <code>uint32 lose_hp_config_idx = 9;</code>
        * @param value The loseHpConfigIdx to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class AbilityMetaLoseHpOuterClass {
         return this;
       }
       /**
-       * <code>uint32 lose_hp_config_idx = 2;</code>
+       * <code>uint32 lose_hp_config_idx = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLoseHpConfigIdx() {
@@ -517,7 +517,7 @@ public final class AbilityMetaLoseHpOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027AbilityMetaLoseHp.proto\"/\n\021AbilityMeta" +
-      "LoseHp\022\032\n\022lose_hp_config_idx\030\002 \001(\rB\033\n\031em" +
+      "LoseHp\022\032\n\022lose_hp_config_idx\030\t \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

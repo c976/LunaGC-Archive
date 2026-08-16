@@ -19,14 +19,18 @@ public final class GetShopReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shop_type = 8;</code>
-     * @return The shopType.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OCKGKNNDLLJ = 6;</code>
+     * @return The oCKGKNNDLLJ.
      */
-    int getShopType();
+    int getOCKGKNNDLLJ();
   }
   /**
    * <pre>
-   * CmdId: 25227
+   * CmdId: 6474
    * </pre>
    *
    * Protobuf type {@code GetShopReq}
@@ -73,9 +77,9 @@ public final class GetShopReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 48: {
 
-              shopType_ = input.readUInt32();
+              oCKGKNNDLLJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +114,19 @@ public final class GetShopReqOuterClass {
               emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.class, emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.Builder.class);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 8;
-    private int shopType_;
+    public static final int OCKGKNNDLLJ_FIELD_NUMBER = 6;
+    private int oCKGKNNDLLJ_;
     /**
-     * <code>uint32 shop_type = 8;</code>
-     * @return The shopType.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 OCKGKNNDLLJ = 6;</code>
+     * @return The oCKGKNNDLLJ.
      */
     @java.lang.Override
-    public int getShopType() {
-      return shopType_;
+    public int getOCKGKNNDLLJ() {
+      return oCKGKNNDLLJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +143,8 @@ public final class GetShopReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shopType_ != 0) {
-        output.writeUInt32(8, shopType_);
+      if (oCKGKNNDLLJ_ != 0) {
+        output.writeUInt32(6, oCKGKNNDLLJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +155,9 @@ public final class GetShopReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shopType_ != 0) {
+      if (oCKGKNNDLLJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, shopType_);
+          .computeUInt32Size(6, oCKGKNNDLLJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +174,8 @@ public final class GetShopReqOuterClass {
       }
       emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq other = (emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq) obj;
 
-      if (getShopType()
-          != other.getShopType()) return false;
+      if (getOCKGKNNDLLJ()
+          != other.getOCKGKNNDLLJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +187,8 @@ public final class GetShopReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getShopType();
+      hash = (37 * hash) + OCKGKNNDLLJ_FIELD_NUMBER;
+      hash = (53 * hash) + getOCKGKNNDLLJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,7 +286,7 @@ public final class GetShopReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25227
+     * CmdId: 6474
      * </pre>
      *
      * Protobuf type {@code GetShopReq}
@@ -318,7 +326,7 @@ public final class GetShopReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        shopType_ = 0;
+        oCKGKNNDLLJ_ = 0;
 
         return this;
       }
@@ -346,7 +354,7 @@ public final class GetShopReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq buildPartial() {
         emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq result = new emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq(this);
-        result.shopType_ = shopType_;
+        result.oCKGKNNDLLJ_ = oCKGKNNDLLJ_;
         onBuilt();
         return result;
       }
@@ -395,8 +403,8 @@ public final class GetShopReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq other) {
         if (other == emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.getDefaultInstance()) return this;
-        if (other.getShopType() != 0) {
-          setShopType(other.getShopType());
+        if (other.getOCKGKNNDLLJ() != 0) {
+          setOCKGKNNDLLJ(other.getOCKGKNNDLLJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +435,45 @@ public final class GetShopReqOuterClass {
         return this;
       }
 
-      private int shopType_ ;
+      private int oCKGKNNDLLJ_ ;
       /**
-       * <code>uint32 shop_type = 8;</code>
-       * @return The shopType.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 6;</code>
+       * @return The oCKGKNNDLLJ.
        */
       @java.lang.Override
-      public int getShopType() {
-        return shopType_;
+      public int getOCKGKNNDLLJ() {
+        return oCKGKNNDLLJ_;
       }
       /**
-       * <code>uint32 shop_type = 8;</code>
-       * @param value The shopType to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 6;</code>
+       * @param value The oCKGKNNDLLJ to set.
        * @return This builder for chaining.
        */
-      public Builder setShopType(int value) {
+      public Builder setOCKGKNNDLLJ(int value) {
         
-        shopType_ = value;
+        oCKGKNNDLLJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 shop_type = 8;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 OCKGKNNDLLJ = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearShopType() {
+      public Builder clearOCKGKNNDLLJ() {
         
-        shopType_ = 0;
+        oCKGKNNDLLJ_ = 0;
         onChanged();
         return this;
       }
@@ -524,9 +544,9 @@ public final class GetShopReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020GetShopReq.proto\"\037\n\nGetShopReq\022\021\n\tshop" +
-      "_type\030\010 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\020GetShopReq.proto\"!\n\nGetShopReq\022\023\n\013OCKG" +
+      "KNNDLLJ\030\006 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -537,7 +557,7 @@ public final class GetShopReqOuterClass {
     internal_static_GetShopReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetShopReq_descriptor,
-        new java.lang.String[] { "ShopType", });
+        new java.lang.String[] { "OCKGKNNDLLJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

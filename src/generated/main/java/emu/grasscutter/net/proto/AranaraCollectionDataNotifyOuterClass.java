@@ -19,33 +19,32 @@ public final class AranaraCollectionDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite> 
         getCollectionSuiteListList();
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite getCollectionSuiteList(int index);
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     int getCollectionSuiteListCount();
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder> 
         getCollectionSuiteListOrBuilderList();
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder getCollectionSuiteListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 21685
-   * Obf: HCNPIEGFIGJ
+   * CmdId: 27806
    * </pre>
    *
    * Protobuf type {@code AranaraCollectionDataNotify}
@@ -94,7 +93,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 collectionSuiteList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +137,17 @@ public final class AranaraCollectionDataNotifyOuterClass {
               emu.grasscutter.net.proto.AranaraCollectionDataNotifyOuterClass.AranaraCollectionDataNotify.class, emu.grasscutter.net.proto.AranaraCollectionDataNotifyOuterClass.AranaraCollectionDataNotify.Builder.class);
     }
 
-    public static final int COLLECTION_SUITE_LIST_FIELD_NUMBER = 2;
+    public static final int COLLECTION_SUITE_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite> collectionSuiteList_;
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite> getCollectionSuiteListList() {
       return collectionSuiteList_;
     }
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder> 
@@ -156,21 +155,21 @@ public final class AranaraCollectionDataNotifyOuterClass {
       return collectionSuiteList_;
     }
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     @java.lang.Override
     public int getCollectionSuiteListCount() {
       return collectionSuiteList_.size();
     }
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite getCollectionSuiteList(int index) {
       return collectionSuiteList_.get(index);
     }
     /**
-     * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+     * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder getCollectionSuiteListOrBuilder(
@@ -193,7 +192,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < collectionSuiteList_.size(); i++) {
-        output.writeMessage(2, collectionSuiteList_.get(i));
+        output.writeMessage(3, collectionSuiteList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +205,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
       size = 0;
       for (int i = 0; i < collectionSuiteList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, collectionSuiteList_.get(i));
+          .computeMessageSize(3, collectionSuiteList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +336,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21685
-     * Obf: HCNPIEGFIGJ
+     * CmdId: 27806
      * </pre>
      *
      * Protobuf type {@code AranaraCollectionDataNotify}
@@ -538,7 +536,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
           emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder> collectionSuiteListBuilder_;
 
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite> getCollectionSuiteListList() {
         if (collectionSuiteListBuilder_ == null) {
@@ -548,7 +546,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public int getCollectionSuiteListCount() {
         if (collectionSuiteListBuilder_ == null) {
@@ -558,7 +556,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite getCollectionSuiteList(int index) {
         if (collectionSuiteListBuilder_ == null) {
@@ -568,7 +566,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder setCollectionSuiteList(
           int index, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite value) {
@@ -585,7 +583,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder setCollectionSuiteList(
           int index, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder builderForValue) {
@@ -599,7 +597,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder addCollectionSuiteList(emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite value) {
         if (collectionSuiteListBuilder_ == null) {
@@ -615,7 +613,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder addCollectionSuiteList(
           int index, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite value) {
@@ -632,7 +630,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder addCollectionSuiteList(
           emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder builderForValue) {
@@ -646,7 +644,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder addCollectionSuiteList(
           int index, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder builderForValue) {
@@ -660,7 +658,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder addAllCollectionSuiteList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite> values) {
@@ -675,7 +673,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder clearCollectionSuiteList() {
         if (collectionSuiteListBuilder_ == null) {
@@ -688,7 +686,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public Builder removeCollectionSuiteList(int index) {
         if (collectionSuiteListBuilder_ == null) {
@@ -701,14 +699,14 @@ public final class AranaraCollectionDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder getCollectionSuiteListBuilder(
           int index) {
         return getCollectionSuiteListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder getCollectionSuiteListOrBuilder(
           int index) {
@@ -718,7 +716,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuiteOrBuilder> 
            getCollectionSuiteListOrBuilderList() {
@@ -729,14 +727,14 @@ public final class AranaraCollectionDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder addCollectionSuiteListBuilder() {
         return getCollectionSuiteListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.getDefaultInstance());
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder addCollectionSuiteListBuilder(
           int index) {
@@ -744,7 +742,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.getDefaultInstance());
       }
       /**
-       * <code>repeated .AranaraCollectionSuite collection_suite_list = 2;</code>
+       * <code>repeated .AranaraCollectionSuite collection_suite_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder> 
            getCollectionSuiteListBuilderList() {
@@ -834,7 +832,7 @@ public final class AranaraCollectionDataNotifyOuterClass {
       "\n!AranaraCollectionDataNotify.proto\032\034Ara" +
       "naraCollectionSuite.proto\"U\n\033AranaraColl" +
       "ectionDataNotify\0226\n\025collection_suite_lis" +
-      "t\030\002 \003(\0132\027.AranaraCollectionSuiteB\033\n\031emu." +
+      "t\030\003 \003(\0132\027.AranaraCollectionSuiteB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

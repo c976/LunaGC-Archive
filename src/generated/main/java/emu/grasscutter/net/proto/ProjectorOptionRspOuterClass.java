@@ -19,27 +19,38 @@ public final class ProjectorOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 op_type = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 op_type = 8;</code>
      * @return The opType.
      */
     int getOpType();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 919
-   * Obf: ECMCEKIMIEI
+   * CmdId: 8629
    * </pre>
    *
    * Protobuf type {@code ProjectorOptionRsp}
@@ -86,17 +97,17 @@ public final class ProjectorOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 24: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               opType_ = input.readUInt32();
               break;
@@ -133,10 +144,14 @@ public final class ProjectorOptionRspOuterClass {
               emu.grasscutter.net.proto.ProjectorOptionRspOuterClass.ProjectorOptionRsp.class, emu.grasscutter.net.proto.ProjectorOptionRspOuterClass.ProjectorOptionRsp.Builder.class);
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 15;
+    public static final int OP_TYPE_FIELD_NUMBER = 8;
     private int opType_;
     /**
-     * <code>uint32 op_type = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 op_type = 8;</code>
      * @return The opType.
      */
     @java.lang.Override
@@ -144,10 +159,14 @@ public final class ProjectorOptionRspOuterClass {
       return opType_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,10 +174,14 @@ public final class ProjectorOptionRspOuterClass {
       return retcode_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -181,13 +204,13 @@ public final class ProjectorOptionRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(3, entityId_);
       }
       if (opType_ != 0) {
-        output.writeUInt32(15, opType_);
+        output.writeUInt32(8, opType_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +223,15 @@ public final class ProjectorOptionRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(3, entityId_);
       }
       if (opType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, opType_);
+          .computeUInt32Size(8, opType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +368,7 @@ public final class ProjectorOptionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 919
-     * Obf: ECMCEKIMIEI
+     * CmdId: 8629
      * </pre>
      *
      * Protobuf type {@code ProjectorOptionRsp}
@@ -509,7 +531,11 @@ public final class ProjectorOptionRspOuterClass {
 
       private int opType_ ;
       /**
-       * <code>uint32 op_type = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 op_type = 8;</code>
        * @return The opType.
        */
       @java.lang.Override
@@ -517,7 +543,11 @@ public final class ProjectorOptionRspOuterClass {
         return opType_;
       }
       /**
-       * <code>uint32 op_type = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 op_type = 8;</code>
        * @param value The opType to set.
        * @return This builder for chaining.
        */
@@ -528,7 +558,11 @@ public final class ProjectorOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_type = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 op_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpType() {
@@ -540,7 +574,11 @@ public final class ProjectorOptionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +586,11 @@ public final class ProjectorOptionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,7 +601,11 @@ public final class ProjectorOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -571,7 +617,11 @@ public final class ProjectorOptionRspOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 3;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -579,7 +629,11 @@ public final class ProjectorOptionRspOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 3;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +644,11 @@ public final class ProjectorOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -667,8 +725,8 @@ public final class ProjectorOptionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ProjectorOptionRsp.proto\"I\n\022ProjectorO" +
-      "ptionRsp\022\017\n\007op_type\030\017 \001(\r\022\017\n\007retcode\030\006 \001" +
-      "(\005\022\021\n\tentity_id\030\n \001(\rB\033\n\031emu.grasscutter" +
+      "ptionRsp\022\017\n\007op_type\030\010 \001(\r\022\017\n\007retcode\030\001 \001" +
+      "(\005\022\021\n\tentity_id\030\003 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

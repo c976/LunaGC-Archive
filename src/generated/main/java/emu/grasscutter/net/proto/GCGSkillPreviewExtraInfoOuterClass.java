@@ -19,58 +19,54 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> 
-        getHJKOLBBIEKPList();
+        getFailAddedWhenFullListList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getHJKOLBBIEKP(int index);
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getFailAddedWhenFullList(int index);
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
-    int getHJKOLBBIEKPCount();
+    int getFailAddedWhenFullListCount();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getHJKOLBBIEKPOrBuilderList();
+        getFailAddedWhenFullListOrBuilderList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getHJKOLBBIEKPOrBuilder(
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getFailAddedWhenFullListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> 
-        getGDOGONCLICIList();
+        getRefreshCardWhenExistListList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getGDOGONCLICI(int index);
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRefreshCardWhenExistList(int index);
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
-    int getGDOGONCLICICount();
+    int getRefreshCardWhenExistListCount();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getGDOGONCLICIOrBuilderList();
+        getRefreshCardWhenExistListOrBuilderList();
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
-    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getGDOGONCLICIOrBuilder(
+    emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRefreshCardWhenExistListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: FCPHAKGFEOD
-   * </pre>
-   *
    * Protobuf type {@code GCGSkillPreviewExtraInfo}
    */
   public static final class GCGSkillPreviewExtraInfo extends
@@ -83,8 +79,8 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       super(builder);
     }
     private GCGSkillPreviewExtraInfo() {
-      hJKOLBBIEKP_ = java.util.Collections.emptyList();
-      gDOGONCLICI_ = java.util.Collections.emptyList();
+      failAddedWhenFullList_ = java.util.Collections.emptyList();
+      refreshCardWhenExistList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -118,21 +114,21 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                hJKOLBBIEKP_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
+                failAddedWhenFullList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              hJKOLBBIEKP_.add(
+              failAddedWhenFullList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
               break;
             }
-            case 106: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                gDOGONCLICI_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
+                refreshCardWhenExistList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              gDOGONCLICI_.add(
+              refreshCardWhenExistList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.parser(), extensionRegistry));
               break;
             }
@@ -152,10 +148,10 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          hJKOLBBIEKP_ = java.util.Collections.unmodifiableList(hJKOLBBIEKP_);
+          failAddedWhenFullList_ = java.util.Collections.unmodifiableList(failAddedWhenFullList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          gDOGONCLICI_ = java.util.Collections.unmodifiableList(gDOGONCLICI_);
+          refreshCardWhenExistList_ = java.util.Collections.unmodifiableList(refreshCardWhenExistList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -174,84 +170,84 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.class, emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.Builder.class);
     }
 
-    public static final int HJKOLBBIEKP_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> hJKOLBBIEKP_;
+    public static final int FAIL_ADDED_WHEN_FULL_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> failAddedWhenFullList_;
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getHJKOLBBIEKPList() {
-      return hJKOLBBIEKP_;
+    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getFailAddedWhenFullListList() {
+      return failAddedWhenFullList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getHJKOLBBIEKPOrBuilderList() {
-      return hJKOLBBIEKP_;
+        getFailAddedWhenFullListOrBuilderList() {
+      return failAddedWhenFullList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     @java.lang.Override
-    public int getHJKOLBBIEKPCount() {
-      return hJKOLBBIEKP_.size();
+    public int getFailAddedWhenFullListCount() {
+      return failAddedWhenFullList_.size();
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getHJKOLBBIEKP(int index) {
-      return hJKOLBBIEKP_.get(index);
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getFailAddedWhenFullList(int index) {
+      return failAddedWhenFullList_.get(index);
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getHJKOLBBIEKPOrBuilder(
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getFailAddedWhenFullListOrBuilder(
         int index) {
-      return hJKOLBBIEKP_.get(index);
+      return failAddedWhenFullList_.get(index);
     }
 
-    public static final int GDOGONCLICI_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> gDOGONCLICI_;
+    public static final int REFRESH_CARD_WHEN_EXIST_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> refreshCardWhenExistList_;
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getGDOGONCLICIList() {
-      return gDOGONCLICI_;
+    public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getRefreshCardWhenExistListList() {
+      return refreshCardWhenExistList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-        getGDOGONCLICIOrBuilderList() {
-      return gDOGONCLICI_;
+        getRefreshCardWhenExistListOrBuilderList() {
+      return refreshCardWhenExistList_;
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     @java.lang.Override
-    public int getGDOGONCLICICount() {
-      return gDOGONCLICI_.size();
+    public int getRefreshCardWhenExistListCount() {
+      return refreshCardWhenExistList_.size();
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getGDOGONCLICI(int index) {
-      return gDOGONCLICI_.get(index);
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRefreshCardWhenExistList(int index) {
+      return refreshCardWhenExistList_.get(index);
     }
     /**
-     * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+     * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getGDOGONCLICIOrBuilder(
+    public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRefreshCardWhenExistListOrBuilder(
         int index) {
-      return gDOGONCLICI_.get(index);
+      return refreshCardWhenExistList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -268,11 +264,11 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < hJKOLBBIEKP_.size(); i++) {
-        output.writeMessage(10, hJKOLBBIEKP_.get(i));
+      for (int i = 0; i < failAddedWhenFullList_.size(); i++) {
+        output.writeMessage(8, failAddedWhenFullList_.get(i));
       }
-      for (int i = 0; i < gDOGONCLICI_.size(); i++) {
-        output.writeMessage(13, gDOGONCLICI_.get(i));
+      for (int i = 0; i < refreshCardWhenExistList_.size(); i++) {
+        output.writeMessage(12, refreshCardWhenExistList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -283,13 +279,13 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < hJKOLBBIEKP_.size(); i++) {
+      for (int i = 0; i < failAddedWhenFullList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, hJKOLBBIEKP_.get(i));
+          .computeMessageSize(8, failAddedWhenFullList_.get(i));
       }
-      for (int i = 0; i < gDOGONCLICI_.size(); i++) {
+      for (int i = 0; i < refreshCardWhenExistList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, gDOGONCLICI_.get(i));
+          .computeMessageSize(12, refreshCardWhenExistList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,10 +302,10 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo other = (emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo) obj;
 
-      if (!getHJKOLBBIEKPList()
-          .equals(other.getHJKOLBBIEKPList())) return false;
-      if (!getGDOGONCLICIList()
-          .equals(other.getGDOGONCLICIList())) return false;
+      if (!getFailAddedWhenFullListList()
+          .equals(other.getFailAddedWhenFullListList())) return false;
+      if (!getRefreshCardWhenExistListList()
+          .equals(other.getRefreshCardWhenExistListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -321,13 +317,13 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getHJKOLBBIEKPCount() > 0) {
-        hash = (37 * hash) + HJKOLBBIEKP_FIELD_NUMBER;
-        hash = (53 * hash) + getHJKOLBBIEKPList().hashCode();
+      if (getFailAddedWhenFullListCount() > 0) {
+        hash = (37 * hash) + FAIL_ADDED_WHEN_FULL_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFailAddedWhenFullListList().hashCode();
       }
-      if (getGDOGONCLICICount() > 0) {
-        hash = (37 * hash) + GDOGONCLICI_FIELD_NUMBER;
-        hash = (53 * hash) + getGDOGONCLICIList().hashCode();
+      if (getRefreshCardWhenExistListCount() > 0) {
+        hash = (37 * hash) + REFRESH_CARD_WHEN_EXIST_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getRefreshCardWhenExistListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -425,10 +421,6 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FCPHAKGFEOD
-     * </pre>
-     *
      * Protobuf type {@code GCGSkillPreviewExtraInfo}
      */
     public static final class Builder extends
@@ -461,24 +453,24 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getHJKOLBBIEKPFieldBuilder();
-          getGDOGONCLICIFieldBuilder();
+          getFailAddedWhenFullListFieldBuilder();
+          getRefreshCardWhenExistListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (hJKOLBBIEKPBuilder_ == null) {
-          hJKOLBBIEKP_ = java.util.Collections.emptyList();
+        if (failAddedWhenFullListBuilder_ == null) {
+          failAddedWhenFullList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          hJKOLBBIEKPBuilder_.clear();
+          failAddedWhenFullListBuilder_.clear();
         }
-        if (gDOGONCLICIBuilder_ == null) {
-          gDOGONCLICI_ = java.util.Collections.emptyList();
+        if (refreshCardWhenExistListBuilder_ == null) {
+          refreshCardWhenExistList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          gDOGONCLICIBuilder_.clear();
+          refreshCardWhenExistListBuilder_.clear();
         }
         return this;
       }
@@ -507,23 +499,23 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       public emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo buildPartial() {
         emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo result = new emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo(this);
         int from_bitField0_ = bitField0_;
-        if (hJKOLBBIEKPBuilder_ == null) {
+        if (failAddedWhenFullListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            hJKOLBBIEKP_ = java.util.Collections.unmodifiableList(hJKOLBBIEKP_);
+            failAddedWhenFullList_ = java.util.Collections.unmodifiableList(failAddedWhenFullList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.hJKOLBBIEKP_ = hJKOLBBIEKP_;
+          result.failAddedWhenFullList_ = failAddedWhenFullList_;
         } else {
-          result.hJKOLBBIEKP_ = hJKOLBBIEKPBuilder_.build();
+          result.failAddedWhenFullList_ = failAddedWhenFullListBuilder_.build();
         }
-        if (gDOGONCLICIBuilder_ == null) {
+        if (refreshCardWhenExistListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            gDOGONCLICI_ = java.util.Collections.unmodifiableList(gDOGONCLICI_);
+            refreshCardWhenExistList_ = java.util.Collections.unmodifiableList(refreshCardWhenExistList_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.gDOGONCLICI_ = gDOGONCLICI_;
+          result.refreshCardWhenExistList_ = refreshCardWhenExistList_;
         } else {
-          result.gDOGONCLICI_ = gDOGONCLICIBuilder_.build();
+          result.refreshCardWhenExistList_ = refreshCardWhenExistListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -573,55 +565,55 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo other) {
         if (other == emu.grasscutter.net.proto.GCGSkillPreviewExtraInfoOuterClass.GCGSkillPreviewExtraInfo.getDefaultInstance()) return this;
-        if (hJKOLBBIEKPBuilder_ == null) {
-          if (!other.hJKOLBBIEKP_.isEmpty()) {
-            if (hJKOLBBIEKP_.isEmpty()) {
-              hJKOLBBIEKP_ = other.hJKOLBBIEKP_;
+        if (failAddedWhenFullListBuilder_ == null) {
+          if (!other.failAddedWhenFullList_.isEmpty()) {
+            if (failAddedWhenFullList_.isEmpty()) {
+              failAddedWhenFullList_ = other.failAddedWhenFullList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureHJKOLBBIEKPIsMutable();
-              hJKOLBBIEKP_.addAll(other.hJKOLBBIEKP_);
+              ensureFailAddedWhenFullListIsMutable();
+              failAddedWhenFullList_.addAll(other.failAddedWhenFullList_);
             }
             onChanged();
           }
         } else {
-          if (!other.hJKOLBBIEKP_.isEmpty()) {
-            if (hJKOLBBIEKPBuilder_.isEmpty()) {
-              hJKOLBBIEKPBuilder_.dispose();
-              hJKOLBBIEKPBuilder_ = null;
-              hJKOLBBIEKP_ = other.hJKOLBBIEKP_;
+          if (!other.failAddedWhenFullList_.isEmpty()) {
+            if (failAddedWhenFullListBuilder_.isEmpty()) {
+              failAddedWhenFullListBuilder_.dispose();
+              failAddedWhenFullListBuilder_ = null;
+              failAddedWhenFullList_ = other.failAddedWhenFullList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              hJKOLBBIEKPBuilder_ = 
+              failAddedWhenFullListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getHJKOLBBIEKPFieldBuilder() : null;
+                   getFailAddedWhenFullListFieldBuilder() : null;
             } else {
-              hJKOLBBIEKPBuilder_.addAllMessages(other.hJKOLBBIEKP_);
+              failAddedWhenFullListBuilder_.addAllMessages(other.failAddedWhenFullList_);
             }
           }
         }
-        if (gDOGONCLICIBuilder_ == null) {
-          if (!other.gDOGONCLICI_.isEmpty()) {
-            if (gDOGONCLICI_.isEmpty()) {
-              gDOGONCLICI_ = other.gDOGONCLICI_;
+        if (refreshCardWhenExistListBuilder_ == null) {
+          if (!other.refreshCardWhenExistList_.isEmpty()) {
+            if (refreshCardWhenExistList_.isEmpty()) {
+              refreshCardWhenExistList_ = other.refreshCardWhenExistList_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureGDOGONCLICIIsMutable();
-              gDOGONCLICI_.addAll(other.gDOGONCLICI_);
+              ensureRefreshCardWhenExistListIsMutable();
+              refreshCardWhenExistList_.addAll(other.refreshCardWhenExistList_);
             }
             onChanged();
           }
         } else {
-          if (!other.gDOGONCLICI_.isEmpty()) {
-            if (gDOGONCLICIBuilder_.isEmpty()) {
-              gDOGONCLICIBuilder_.dispose();
-              gDOGONCLICIBuilder_ = null;
-              gDOGONCLICI_ = other.gDOGONCLICI_;
+          if (!other.refreshCardWhenExistList_.isEmpty()) {
+            if (refreshCardWhenExistListBuilder_.isEmpty()) {
+              refreshCardWhenExistListBuilder_.dispose();
+              refreshCardWhenExistListBuilder_ = null;
+              refreshCardWhenExistList_ = other.refreshCardWhenExistList_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              gDOGONCLICIBuilder_ = 
+              refreshCardWhenExistListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getGDOGONCLICIFieldBuilder() : null;
+                   getRefreshCardWhenExistListFieldBuilder() : null;
             } else {
-              gDOGONCLICIBuilder_.addAllMessages(other.gDOGONCLICI_);
+              refreshCardWhenExistListBuilder_.addAllMessages(other.refreshCardWhenExistList_);
             }
           }
         }
@@ -655,484 +647,484 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> hJKOLBBIEKP_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> failAddedWhenFullList_ =
         java.util.Collections.emptyList();
-      private void ensureHJKOLBBIEKPIsMutable() {
+      private void ensureFailAddedWhenFullListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          hJKOLBBIEKP_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(hJKOLBBIEKP_);
+          failAddedWhenFullList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(failAddedWhenFullList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> hJKOLBBIEKPBuilder_;
+          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> failAddedWhenFullListBuilder_;
 
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getHJKOLBBIEKPList() {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(hJKOLBBIEKP_);
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getFailAddedWhenFullListList() {
+        if (failAddedWhenFullListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(failAddedWhenFullList_);
         } else {
-          return hJKOLBBIEKPBuilder_.getMessageList();
+          return failAddedWhenFullListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public int getHJKOLBBIEKPCount() {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          return hJKOLBBIEKP_.size();
+      public int getFailAddedWhenFullListCount() {
+        if (failAddedWhenFullListBuilder_ == null) {
+          return failAddedWhenFullList_.size();
         } else {
-          return hJKOLBBIEKPBuilder_.getCount();
+          return failAddedWhenFullListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getHJKOLBBIEKP(int index) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          return hJKOLBBIEKP_.get(index);
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getFailAddedWhenFullList(int index) {
+        if (failAddedWhenFullListBuilder_ == null) {
+          return failAddedWhenFullList_.get(index);
         } else {
-          return hJKOLBBIEKPBuilder_.getMessage(index);
+          return failAddedWhenFullListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder setHJKOLBBIEKP(
+      public Builder setFailAddedWhenFullList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (hJKOLBBIEKPBuilder_ == null) {
+        if (failAddedWhenFullListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.set(index, value);
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.set(index, value);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.setMessage(index, value);
+          failAddedWhenFullListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder setHJKOLBBIEKP(
+      public Builder setFailAddedWhenFullList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.set(index, builderForValue.build());
+        if (failAddedWhenFullListBuilder_ == null) {
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.setMessage(index, builderForValue.build());
+          failAddedWhenFullListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder addHJKOLBBIEKP(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (hJKOLBBIEKPBuilder_ == null) {
+      public Builder addFailAddedWhenFullList(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
+        if (failAddedWhenFullListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.add(value);
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.add(value);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.addMessage(value);
+          failAddedWhenFullListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder addHJKOLBBIEKP(
+      public Builder addFailAddedWhenFullList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (hJKOLBBIEKPBuilder_ == null) {
+        if (failAddedWhenFullListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.add(index, value);
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.add(index, value);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.addMessage(index, value);
+          failAddedWhenFullListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder addHJKOLBBIEKP(
+      public Builder addFailAddedWhenFullList(
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.add(builderForValue.build());
+        if (failAddedWhenFullListBuilder_ == null) {
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.add(builderForValue.build());
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.addMessage(builderForValue.build());
+          failAddedWhenFullListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder addHJKOLBBIEKP(
+      public Builder addFailAddedWhenFullList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.add(index, builderForValue.build());
+        if (failAddedWhenFullListBuilder_ == null) {
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.addMessage(index, builderForValue.build());
+          failAddedWhenFullListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder addAllHJKOLBBIEKP(
+      public Builder addAllFailAddedWhenFullList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> values) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          ensureHJKOLBBIEKPIsMutable();
+        if (failAddedWhenFullListBuilder_ == null) {
+          ensureFailAddedWhenFullListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, hJKOLBBIEKP_);
+              values, failAddedWhenFullList_);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.addAllMessages(values);
+          failAddedWhenFullListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder clearHJKOLBBIEKP() {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          hJKOLBBIEKP_ = java.util.Collections.emptyList();
+      public Builder clearFailAddedWhenFullList() {
+        if (failAddedWhenFullListBuilder_ == null) {
+          failAddedWhenFullList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.clear();
+          failAddedWhenFullListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public Builder removeHJKOLBBIEKP(int index) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          ensureHJKOLBBIEKPIsMutable();
-          hJKOLBBIEKP_.remove(index);
+      public Builder removeFailAddedWhenFullList(int index) {
+        if (failAddedWhenFullListBuilder_ == null) {
+          ensureFailAddedWhenFullListIsMutable();
+          failAddedWhenFullList_.remove(index);
           onChanged();
         } else {
-          hJKOLBBIEKPBuilder_.remove(index);
+          failAddedWhenFullListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getHJKOLBBIEKPBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getFailAddedWhenFullListBuilder(
           int index) {
-        return getHJKOLBBIEKPFieldBuilder().getBuilder(index);
+        return getFailAddedWhenFullListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getHJKOLBBIEKPOrBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getFailAddedWhenFullListOrBuilder(
           int index) {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          return hJKOLBBIEKP_.get(index);  } else {
-          return hJKOLBBIEKPBuilder_.getMessageOrBuilder(index);
+        if (failAddedWhenFullListBuilder_ == null) {
+          return failAddedWhenFullList_.get(index);  } else {
+          return failAddedWhenFullListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-           getHJKOLBBIEKPOrBuilderList() {
-        if (hJKOLBBIEKPBuilder_ != null) {
-          return hJKOLBBIEKPBuilder_.getMessageOrBuilderList();
+           getFailAddedWhenFullListOrBuilderList() {
+        if (failAddedWhenFullListBuilder_ != null) {
+          return failAddedWhenFullListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(hJKOLBBIEKP_);
+          return java.util.Collections.unmodifiableList(failAddedWhenFullList_);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addHJKOLBBIEKPBuilder() {
-        return getHJKOLBBIEKPFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addFailAddedWhenFullListBuilder() {
+        return getFailAddedWhenFullListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addHJKOLBBIEKPBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addFailAddedWhenFullListBuilder(
           int index) {
-        return getHJKOLBBIEKPFieldBuilder().addBuilder(
+        return getFailAddedWhenFullListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo HJKOLBBIEKP = 10;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo fail_added_when_full_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder> 
-           getHJKOLBBIEKPBuilderList() {
-        return getHJKOLBBIEKPFieldBuilder().getBuilderList();
+           getFailAddedWhenFullListBuilderList() {
+        return getFailAddedWhenFullListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-          getHJKOLBBIEKPFieldBuilder() {
-        if (hJKOLBBIEKPBuilder_ == null) {
-          hJKOLBBIEKPBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getFailAddedWhenFullListFieldBuilder() {
+        if (failAddedWhenFullListBuilder_ == null) {
+          failAddedWhenFullListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder>(
-                  hJKOLBBIEKP_,
+                  failAddedWhenFullList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          hJKOLBBIEKP_ = null;
+          failAddedWhenFullList_ = null;
         }
-        return hJKOLBBIEKPBuilder_;
+        return failAddedWhenFullListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> gDOGONCLICI_ =
+      private java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> refreshCardWhenExistList_ =
         java.util.Collections.emptyList();
-      private void ensureGDOGONCLICIIsMutable() {
+      private void ensureRefreshCardWhenExistListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          gDOGONCLICI_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(gDOGONCLICI_);
+          refreshCardWhenExistList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo>(refreshCardWhenExistList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> gDOGONCLICIBuilder_;
+          emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> refreshCardWhenExistListBuilder_;
 
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getGDOGONCLICIList() {
-        if (gDOGONCLICIBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(gDOGONCLICI_);
+      public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> getRefreshCardWhenExistListList() {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(refreshCardWhenExistList_);
         } else {
-          return gDOGONCLICIBuilder_.getMessageList();
+          return refreshCardWhenExistListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public int getGDOGONCLICICount() {
-        if (gDOGONCLICIBuilder_ == null) {
-          return gDOGONCLICI_.size();
+      public int getRefreshCardWhenExistListCount() {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          return refreshCardWhenExistList_.size();
         } else {
-          return gDOGONCLICIBuilder_.getCount();
+          return refreshCardWhenExistListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getGDOGONCLICI(int index) {
-        if (gDOGONCLICIBuilder_ == null) {
-          return gDOGONCLICI_.get(index);
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo getRefreshCardWhenExistList(int index) {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          return refreshCardWhenExistList_.get(index);
         } else {
-          return gDOGONCLICIBuilder_.getMessage(index);
+          return refreshCardWhenExistListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder setGDOGONCLICI(
+      public Builder setRefreshCardWhenExistList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (gDOGONCLICIBuilder_ == null) {
+        if (refreshCardWhenExistListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.set(index, value);
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.set(index, value);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.setMessage(index, value);
+          refreshCardWhenExistListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder setGDOGONCLICI(
+      public Builder setRefreshCardWhenExistList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (gDOGONCLICIBuilder_ == null) {
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.set(index, builderForValue.build());
+        if (refreshCardWhenExistListBuilder_ == null) {
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.setMessage(index, builderForValue.build());
+          refreshCardWhenExistListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder addGDOGONCLICI(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (gDOGONCLICIBuilder_ == null) {
+      public Builder addRefreshCardWhenExistList(emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
+        if (refreshCardWhenExistListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.add(value);
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.add(value);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.addMessage(value);
+          refreshCardWhenExistListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder addGDOGONCLICI(
+      public Builder addRefreshCardWhenExistList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo value) {
-        if (gDOGONCLICIBuilder_ == null) {
+        if (refreshCardWhenExistListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.add(index, value);
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.add(index, value);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.addMessage(index, value);
+          refreshCardWhenExistListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder addGDOGONCLICI(
+      public Builder addRefreshCardWhenExistList(
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (gDOGONCLICIBuilder_ == null) {
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.add(builderForValue.build());
+        if (refreshCardWhenExistListBuilder_ == null) {
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.add(builderForValue.build());
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.addMessage(builderForValue.build());
+          refreshCardWhenExistListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder addGDOGONCLICI(
+      public Builder addRefreshCardWhenExistList(
           int index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder builderForValue) {
-        if (gDOGONCLICIBuilder_ == null) {
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.add(index, builderForValue.build());
+        if (refreshCardWhenExistListBuilder_ == null) {
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.addMessage(index, builderForValue.build());
+          refreshCardWhenExistListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder addAllGDOGONCLICI(
+      public Builder addAllRefreshCardWhenExistList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo> values) {
-        if (gDOGONCLICIBuilder_ == null) {
-          ensureGDOGONCLICIIsMutable();
+        if (refreshCardWhenExistListBuilder_ == null) {
+          ensureRefreshCardWhenExistListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, gDOGONCLICI_);
+              values, refreshCardWhenExistList_);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.addAllMessages(values);
+          refreshCardWhenExistListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder clearGDOGONCLICI() {
-        if (gDOGONCLICIBuilder_ == null) {
-          gDOGONCLICI_ = java.util.Collections.emptyList();
+      public Builder clearRefreshCardWhenExistList() {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          refreshCardWhenExistList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.clear();
+          refreshCardWhenExistListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public Builder removeGDOGONCLICI(int index) {
-        if (gDOGONCLICIBuilder_ == null) {
-          ensureGDOGONCLICIIsMutable();
-          gDOGONCLICI_.remove(index);
+      public Builder removeRefreshCardWhenExistList(int index) {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          ensureRefreshCardWhenExistListIsMutable();
+          refreshCardWhenExistList_.remove(index);
           onChanged();
         } else {
-          gDOGONCLICIBuilder_.remove(index);
+          refreshCardWhenExistListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getGDOGONCLICIBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder getRefreshCardWhenExistListBuilder(
           int index) {
-        return getGDOGONCLICIFieldBuilder().getBuilder(index);
+        return getRefreshCardWhenExistListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getGDOGONCLICIOrBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder getRefreshCardWhenExistListOrBuilder(
           int index) {
-        if (gDOGONCLICIBuilder_ == null) {
-          return gDOGONCLICI_.get(index);  } else {
-          return gDOGONCLICIBuilder_.getMessageOrBuilder(index);
+        if (refreshCardWhenExistListBuilder_ == null) {
+          return refreshCardWhenExistList_.get(index);  } else {
+          return refreshCardWhenExistListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-           getGDOGONCLICIOrBuilderList() {
-        if (gDOGONCLICIBuilder_ != null) {
-          return gDOGONCLICIBuilder_.getMessageOrBuilderList();
+           getRefreshCardWhenExistListOrBuilderList() {
+        if (refreshCardWhenExistListBuilder_ != null) {
+          return refreshCardWhenExistListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(gDOGONCLICI_);
+          return java.util.Collections.unmodifiableList(refreshCardWhenExistList_);
         }
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addGDOGONCLICIBuilder() {
-        return getGDOGONCLICIFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addRefreshCardWhenExistListBuilder() {
+        return getRefreshCardWhenExistListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
-      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addGDOGONCLICIBuilder(
+      public emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder addRefreshCardWhenExistListBuilder(
           int index) {
-        return getGDOGONCLICIFieldBuilder().addBuilder(
+        return getRefreshCardWhenExistListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGSkillPreviewCardInfo GDOGONCLICI = 13;</code>
+       * <code>repeated .GCGSkillPreviewCardInfo refresh_card_when_exist_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder> 
-           getGDOGONCLICIBuilderList() {
-        return getGDOGONCLICIFieldBuilder().getBuilderList();
+           getRefreshCardWhenExistListBuilderList() {
+        return getRefreshCardWhenExistListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder> 
-          getGDOGONCLICIFieldBuilder() {
-        if (gDOGONCLICIBuilder_ == null) {
-          gDOGONCLICIBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getRefreshCardWhenExistListFieldBuilder() {
+        if (refreshCardWhenExistListBuilder_ == null) {
+          refreshCardWhenExistListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfo.Builder, emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.GCGSkillPreviewCardInfoOrBuilder>(
-                  gDOGONCLICI_,
+                  refreshCardWhenExistList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          gDOGONCLICI_ = null;
+          refreshCardWhenExistList_ = null;
         }
-        return gDOGONCLICIBuilder_;
+        return refreshCardWhenExistListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1202,11 +1194,12 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GCGSkillPreviewExtraInfo.proto\032\035GCGSki" +
-      "llPreviewCardInfo.proto\"x\n\030GCGSkillPrevi" +
-      "ewExtraInfo\022-\n\013HJKOLBBIEKP\030\n \003(\0132\030.GCGSk" +
-      "illPreviewCardInfo\022-\n\013GDOGONCLICI\030\r \003(\0132" +
-      "\030.GCGSkillPreviewCardInfoB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "llPreviewCardInfo.proto\"\227\001\n\030GCGSkillPrev" +
+      "iewExtraInfo\022;\n\031fail_added_when_full_lis" +
+      "t\030\010 \003(\0132\030.GCGSkillPreviewCardInfo\022>\n\034ref" +
+      "resh_card_when_exist_list\030\014 \003(\0132\030.GCGSki" +
+      "llPreviewCardInfoB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1218,7 +1211,7 @@ public final class GCGSkillPreviewExtraInfoOuterClass {
     internal_static_GCGSkillPreviewExtraInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSkillPreviewExtraInfo_descriptor,
-        new java.lang.String[] { "HJKOLBBIEKP", "GDOGONCLICI", });
+        new java.lang.String[] { "FailAddedWhenFullList", "RefreshCardWhenExistList", });
     emu.grasscutter.net.proto.GCGSkillPreviewCardInfoOuterClass.getDescriptor();
   }
 

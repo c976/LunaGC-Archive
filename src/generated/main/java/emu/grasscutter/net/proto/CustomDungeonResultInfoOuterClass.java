@@ -19,75 +19,127 @@ public final class CustomDungeonResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> 
+    java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> 
         getChildChallengeListList();
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
-    emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief getChildChallengeList(int index);
+    emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK getChildChallengeList(int index);
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     int getChildChallengeListCount();
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder> 
         getChildChallengeListOrBuilderList();
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
-    emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder getChildChallengeListOrBuilder(
+    emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder getChildChallengeListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 time_cost = 2;</code>
-     * @return The timeCost.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NAGLHEFPGNK = 9;</code>
+     * @return The nAGLHEFPGNK.
      */
-    int getTimeCost();
+    int getNAGLHEFPGNK();
 
     /**
-     * <code>bool is_arrive_finish = 13;</code>
-     * @return The isArriveFinish.
-     */
-    boolean getIsArriveFinish();
-
-    /**
-     * <code>bool is_stored = 10;</code>
-     * @return The isStored.
-     */
-    boolean getIsStored();
-
-    /**
-     * <code>bool is_liked = 3;</code>
-     * @return The isLiked.
-     */
-    boolean getIsLiked();
-
-    /**
-     * <code>uint32 got_coin_num = 1;</code>
-     * @return The gotCoinNum.
-     */
-    int getGotCoinNum();
-
-    /**
-     * <code>.CustomDungeonFinishType finish_type = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.CustomDungeonFinishType finish_type = 5;</code>
      * @return The enum numeric value on the wire for finishType.
      */
     int getFinishTypeValue();
     /**
-     * <code>.CustomDungeonFinishType finish_type = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.CustomDungeonFinishType finish_type = 5;</code>
      * @return The finishType.
      */
     emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType getFinishType();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint64 dungeon_guid = 14;</code>
      * @return The dungeonGuid.
      */
     long getDungeonGuid();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 IKFPAAGABJD = 11;</code>
+     * @return The iKFPAAGABJD.
+     */
+    int getIKFPAAGABJD();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool GLAFJACBFLP = 15;</code>
+     * @return The gLAFJACBFLP.
+     */
+    boolean getGLAFJACBFLP();
+
+    /**
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
+     * <code>bool EONLJINFGAC = 8;</code>
+     * @return The eONLJINFGAC.
+     */
+    boolean getEONLJINFGAC();
+
+    /**
+     * <pre>
+     * offset: 62
+     * </pre>
+     *
+     * <code>bool OBFGIGKIGAA = 12123;</code>
+     * @return The oBFGIGKIGAA.
+     */
+    boolean getOBFGIGKIGAA();
   }
   /**
    * Protobuf type {@code CustomDungeonResultInfo}
@@ -137,38 +189,34 @@ public final class CustomDungeonResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
+              int rawValue = input.readEnum();
 
-              gotCoinNum_ = input.readUInt32();
+              finishType_ = rawValue;
               break;
             }
-            case 16: {
-
-              timeCost_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              isLiked_ = input.readBool();
-              break;
-            }
-            case 42: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                childChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief>();
+                childChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK>();
                 mutable_bitField0_ |= 0x00000001;
               }
               childChallengeList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 64: {
 
-              isStored_ = input.readBool();
+              eONLJINFGAC_ = input.readBool();
               break;
             }
-            case 104: {
+            case 72: {
 
-              isArriveFinish_ = input.readBool();
+              nAGLHEFPGNK_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              iKFPAAGABJD_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -177,9 +225,13 @@ public final class CustomDungeonResultInfoOuterClass {
               break;
             }
             case 120: {
-              int rawValue = input.readEnum();
 
-              finishType_ = rawValue;
+              gLAFJACBFLP_ = input.readBool();
+              break;
+            }
+            case 96984: {
+
+              oBFGIGKIGAA_ = input.readBool();
               break;
             }
             default: {
@@ -217,112 +269,100 @@ public final class CustomDungeonResultInfoOuterClass {
               emu.grasscutter.net.proto.CustomDungeonResultInfoOuterClass.CustomDungeonResultInfo.class, emu.grasscutter.net.proto.CustomDungeonResultInfoOuterClass.CustomDungeonResultInfo.Builder.class);
     }
 
-    public static final int CHILD_CHALLENGE_LIST_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> childChallengeList_;
+    public static final int CHILD_CHALLENGE_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> childChallengeList_;
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> getChildChallengeListList() {
+    public java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> getChildChallengeListList() {
       return childChallengeList_;
     }
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder> 
         getChildChallengeListOrBuilderList() {
       return childChallengeList_;
     }
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     @java.lang.Override
     public int getChildChallengeListCount() {
       return childChallengeList_.size();
     }
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief getChildChallengeList(int index) {
+    public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK getChildChallengeList(int index) {
       return childChallengeList_.get(index);
     }
     /**
-     * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder getChildChallengeListOrBuilder(
+    public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder getChildChallengeListOrBuilder(
         int index) {
       return childChallengeList_.get(index);
     }
 
-    public static final int TIME_COST_FIELD_NUMBER = 2;
-    private int timeCost_;
+    public static final int NAGLHEFPGNK_FIELD_NUMBER = 9;
+    private int nAGLHEFPGNK_;
     /**
-     * <code>uint32 time_cost = 2;</code>
-     * @return The timeCost.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 NAGLHEFPGNK = 9;</code>
+     * @return The nAGLHEFPGNK.
      */
     @java.lang.Override
-    public int getTimeCost() {
-      return timeCost_;
+    public int getNAGLHEFPGNK() {
+      return nAGLHEFPGNK_;
     }
 
-    public static final int IS_ARRIVE_FINISH_FIELD_NUMBER = 13;
-    private boolean isArriveFinish_;
-    /**
-     * <code>bool is_arrive_finish = 13;</code>
-     * @return The isArriveFinish.
-     */
-    @java.lang.Override
-    public boolean getIsArriveFinish() {
-      return isArriveFinish_;
-    }
-
-    public static final int IS_STORED_FIELD_NUMBER = 10;
-    private boolean isStored_;
-    /**
-     * <code>bool is_stored = 10;</code>
-     * @return The isStored.
-     */
-    @java.lang.Override
-    public boolean getIsStored() {
-      return isStored_;
-    }
-
-    public static final int IS_LIKED_FIELD_NUMBER = 3;
-    private boolean isLiked_;
-    /**
-     * <code>bool is_liked = 3;</code>
-     * @return The isLiked.
-     */
-    @java.lang.Override
-    public boolean getIsLiked() {
-      return isLiked_;
-    }
-
-    public static final int GOT_COIN_NUM_FIELD_NUMBER = 1;
-    private int gotCoinNum_;
-    /**
-     * <code>uint32 got_coin_num = 1;</code>
-     * @return The gotCoinNum.
-     */
-    @java.lang.Override
-    public int getGotCoinNum() {
-      return gotCoinNum_;
-    }
-
-    public static final int FINISH_TYPE_FIELD_NUMBER = 15;
+    public static final int FINISH_TYPE_FIELD_NUMBER = 5;
     private int finishType_;
     /**
-     * <code>.CustomDungeonFinishType finish_type = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.CustomDungeonFinishType finish_type = 5;</code>
      * @return The enum numeric value on the wire for finishType.
      */
     @java.lang.Override public int getFinishTypeValue() {
       return finishType_;
     }
     /**
-     * <code>.CustomDungeonFinishType finish_type = 15;</code>
+     * <pre>
+     *6.3.0 // offset: 44
+     * </pre>
+     *
+     * <code>.CustomDungeonFinishType finish_type = 5;</code>
      * @return The finishType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType getFinishType() {
@@ -334,12 +374,76 @@ public final class CustomDungeonResultInfoOuterClass {
     public static final int DUNGEON_GUID_FIELD_NUMBER = 14;
     private long dungeonGuid_;
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
      * <code>uint64 dungeon_guid = 14;</code>
      * @return The dungeonGuid.
      */
     @java.lang.Override
     public long getDungeonGuid() {
       return dungeonGuid_;
+    }
+
+    public static final int IKFPAAGABJD_FIELD_NUMBER = 11;
+    private int iKFPAAGABJD_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 IKFPAAGABJD = 11;</code>
+     * @return The iKFPAAGABJD.
+     */
+    @java.lang.Override
+    public int getIKFPAAGABJD() {
+      return iKFPAAGABJD_;
+    }
+
+    public static final int GLAFJACBFLP_FIELD_NUMBER = 15;
+    private boolean gLAFJACBFLP_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool GLAFJACBFLP = 15;</code>
+     * @return The gLAFJACBFLP.
+     */
+    @java.lang.Override
+    public boolean getGLAFJACBFLP() {
+      return gLAFJACBFLP_;
+    }
+
+    public static final int EONLJINFGAC_FIELD_NUMBER = 8;
+    private boolean eONLJINFGAC_;
+    /**
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
+     * <code>bool EONLJINFGAC = 8;</code>
+     * @return The eONLJINFGAC.
+     */
+    @java.lang.Override
+    public boolean getEONLJINFGAC() {
+      return eONLJINFGAC_;
+    }
+
+    public static final int OBFGIGKIGAA_FIELD_NUMBER = 12123;
+    private boolean oBFGIGKIGAA_;
+    /**
+     * <pre>
+     * offset: 62
+     * </pre>
+     *
+     * <code>bool OBFGIGKIGAA = 12123;</code>
+     * @return The oBFGIGKIGAA.
+     */
+    @java.lang.Override
+    public boolean getOBFGIGKIGAA() {
+      return oBFGIGKIGAA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -356,29 +460,29 @@ public final class CustomDungeonResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gotCoinNum_ != 0) {
-        output.writeUInt32(1, gotCoinNum_);
-      }
-      if (timeCost_ != 0) {
-        output.writeUInt32(2, timeCost_);
-      }
-      if (isLiked_ != false) {
-        output.writeBool(3, isLiked_);
+      if (finishType_ != emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType.CustomDungeonFinishType_CUSTOM_DUNGEON_FINISH_PLAY_NORMAL.getNumber()) {
+        output.writeEnum(5, finishType_);
       }
       for (int i = 0; i < childChallengeList_.size(); i++) {
-        output.writeMessage(5, childChallengeList_.get(i));
+        output.writeMessage(7, childChallengeList_.get(i));
       }
-      if (isStored_ != false) {
-        output.writeBool(10, isStored_);
+      if (eONLJINFGAC_ != false) {
+        output.writeBool(8, eONLJINFGAC_);
       }
-      if (isArriveFinish_ != false) {
-        output.writeBool(13, isArriveFinish_);
+      if (nAGLHEFPGNK_ != 0) {
+        output.writeUInt32(9, nAGLHEFPGNK_);
+      }
+      if (iKFPAAGABJD_ != 0) {
+        output.writeUInt32(11, iKFPAAGABJD_);
       }
       if (dungeonGuid_ != 0L) {
         output.writeUInt64(14, dungeonGuid_);
       }
-      if (finishType_ != emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType.CUSTOM_DUNGEON_FINISH_TYPE_PLAY_NORMAL.getNumber()) {
-        output.writeEnum(15, finishType_);
+      if (gLAFJACBFLP_ != false) {
+        output.writeBool(15, gLAFJACBFLP_);
+      }
+      if (oBFGIGKIGAA_ != false) {
+        output.writeBool(12123, oBFGIGKIGAA_);
       }
       unknownFields.writeTo(output);
     }
@@ -389,37 +493,37 @@ public final class CustomDungeonResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gotCoinNum_ != 0) {
+      if (finishType_ != emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType.CustomDungeonFinishType_CUSTOM_DUNGEON_FINISH_PLAY_NORMAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, gotCoinNum_);
-      }
-      if (timeCost_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, timeCost_);
-      }
-      if (isLiked_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isLiked_);
+          .computeEnumSize(5, finishType_);
       }
       for (int i = 0; i < childChallengeList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, childChallengeList_.get(i));
+          .computeMessageSize(7, childChallengeList_.get(i));
       }
-      if (isStored_ != false) {
+      if (eONLJINFGAC_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isStored_);
+          .computeBoolSize(8, eONLJINFGAC_);
       }
-      if (isArriveFinish_ != false) {
+      if (nAGLHEFPGNK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isArriveFinish_);
+          .computeUInt32Size(9, nAGLHEFPGNK_);
+      }
+      if (iKFPAAGABJD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, iKFPAAGABJD_);
       }
       if (dungeonGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(14, dungeonGuid_);
       }
-      if (finishType_ != emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType.CUSTOM_DUNGEON_FINISH_TYPE_PLAY_NORMAL.getNumber()) {
+      if (gLAFJACBFLP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, finishType_);
+          .computeBoolSize(15, gLAFJACBFLP_);
+      }
+      if (oBFGIGKIGAA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12123, oBFGIGKIGAA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -438,19 +542,19 @@ public final class CustomDungeonResultInfoOuterClass {
 
       if (!getChildChallengeListList()
           .equals(other.getChildChallengeListList())) return false;
-      if (getTimeCost()
-          != other.getTimeCost()) return false;
-      if (getIsArriveFinish()
-          != other.getIsArriveFinish()) return false;
-      if (getIsStored()
-          != other.getIsStored()) return false;
-      if (getIsLiked()
-          != other.getIsLiked()) return false;
-      if (getGotCoinNum()
-          != other.getGotCoinNum()) return false;
+      if (getNAGLHEFPGNK()
+          != other.getNAGLHEFPGNK()) return false;
       if (finishType_ != other.finishType_) return false;
       if (getDungeonGuid()
           != other.getDungeonGuid()) return false;
+      if (getIKFPAAGABJD()
+          != other.getIKFPAAGABJD()) return false;
+      if (getGLAFJACBFLP()
+          != other.getGLAFJACBFLP()) return false;
+      if (getEONLJINFGAC()
+          != other.getEONLJINFGAC()) return false;
+      if (getOBFGIGKIGAA()
+          != other.getOBFGIGKIGAA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -466,24 +570,24 @@ public final class CustomDungeonResultInfoOuterClass {
         hash = (37 * hash) + CHILD_CHALLENGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChildChallengeListList().hashCode();
       }
-      hash = (37 * hash) + TIME_COST_FIELD_NUMBER;
-      hash = (53 * hash) + getTimeCost();
-      hash = (37 * hash) + IS_ARRIVE_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsArriveFinish());
-      hash = (37 * hash) + IS_STORED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsStored());
-      hash = (37 * hash) + IS_LIKED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsLiked());
-      hash = (37 * hash) + GOT_COIN_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getGotCoinNum();
+      hash = (37 * hash) + NAGLHEFPGNK_FIELD_NUMBER;
+      hash = (53 * hash) + getNAGLHEFPGNK();
       hash = (37 * hash) + FINISH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + finishType_;
       hash = (37 * hash) + DUNGEON_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getDungeonGuid());
+      hash = (37 * hash) + IKFPAAGABJD_FIELD_NUMBER;
+      hash = (53 * hash) + getIKFPAAGABJD();
+      hash = (37 * hash) + GLAFJACBFLP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGLAFJACBFLP());
+      hash = (37 * hash) + EONLJINFGAC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEONLJINFGAC());
+      hash = (37 * hash) + OBFGIGKIGAA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOBFGIGKIGAA());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -624,19 +728,19 @@ public final class CustomDungeonResultInfoOuterClass {
         } else {
           childChallengeListBuilder_.clear();
         }
-        timeCost_ = 0;
-
-        isArriveFinish_ = false;
-
-        isStored_ = false;
-
-        isLiked_ = false;
-
-        gotCoinNum_ = 0;
+        nAGLHEFPGNK_ = 0;
 
         finishType_ = 0;
 
         dungeonGuid_ = 0L;
+
+        iKFPAAGABJD_ = 0;
+
+        gLAFJACBFLP_ = false;
+
+        eONLJINFGAC_ = false;
+
+        oBFGIGKIGAA_ = false;
 
         return this;
       }
@@ -674,13 +778,13 @@ public final class CustomDungeonResultInfoOuterClass {
         } else {
           result.childChallengeList_ = childChallengeListBuilder_.build();
         }
-        result.timeCost_ = timeCost_;
-        result.isArriveFinish_ = isArriveFinish_;
-        result.isStored_ = isStored_;
-        result.isLiked_ = isLiked_;
-        result.gotCoinNum_ = gotCoinNum_;
+        result.nAGLHEFPGNK_ = nAGLHEFPGNK_;
         result.finishType_ = finishType_;
         result.dungeonGuid_ = dungeonGuid_;
+        result.iKFPAAGABJD_ = iKFPAAGABJD_;
+        result.gLAFJACBFLP_ = gLAFJACBFLP_;
+        result.eONLJINFGAC_ = eONLJINFGAC_;
+        result.oBFGIGKIGAA_ = oBFGIGKIGAA_;
         onBuilt();
         return result;
       }
@@ -755,26 +859,26 @@ public final class CustomDungeonResultInfoOuterClass {
             }
           }
         }
-        if (other.getTimeCost() != 0) {
-          setTimeCost(other.getTimeCost());
-        }
-        if (other.getIsArriveFinish() != false) {
-          setIsArriveFinish(other.getIsArriveFinish());
-        }
-        if (other.getIsStored() != false) {
-          setIsStored(other.getIsStored());
-        }
-        if (other.getIsLiked() != false) {
-          setIsLiked(other.getIsLiked());
-        }
-        if (other.getGotCoinNum() != 0) {
-          setGotCoinNum(other.getGotCoinNum());
+        if (other.getNAGLHEFPGNK() != 0) {
+          setNAGLHEFPGNK(other.getNAGLHEFPGNK());
         }
         if (other.finishType_ != 0) {
           setFinishTypeValue(other.getFinishTypeValue());
         }
         if (other.getDungeonGuid() != 0L) {
           setDungeonGuid(other.getDungeonGuid());
+        }
+        if (other.getIKFPAAGABJD() != 0) {
+          setIKFPAAGABJD(other.getIKFPAAGABJD());
+        }
+        if (other.getGLAFJACBFLP() != false) {
+          setGLAFJACBFLP(other.getGLAFJACBFLP());
+        }
+        if (other.getEONLJINFGAC() != false) {
+          setEONLJINFGAC(other.getEONLJINFGAC());
+        }
+        if (other.getOBFGIGKIGAA() != false) {
+          setOBFGIGKIGAA(other.getOBFGIGKIGAA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -806,22 +910,26 @@ public final class CustomDungeonResultInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> childChallengeList_ =
+      private java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> childChallengeList_ =
         java.util.Collections.emptyList();
       private void ensureChildChallengeListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          childChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief>(childChallengeList_);
+          childChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK>(childChallengeList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder> childChallengeListBuilder_;
+          emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder> childChallengeListBuilder_;
 
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> getChildChallengeListList() {
+      public java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> getChildChallengeListList() {
         if (childChallengeListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(childChallengeList_);
         } else {
@@ -829,7 +937,11 @@ public final class CustomDungeonResultInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public int getChildChallengeListCount() {
         if (childChallengeListBuilder_ == null) {
@@ -839,9 +951,13 @@ public final class CustomDungeonResultInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief getChildChallengeList(int index) {
+      public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK getChildChallengeList(int index) {
         if (childChallengeListBuilder_ == null) {
           return childChallengeList_.get(index);
         } else {
@@ -849,10 +965,14 @@ public final class CustomDungeonResultInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder setChildChallengeList(
-          int index, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief value) {
+          int index, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK value) {
         if (childChallengeListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -866,10 +986,14 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder setChildChallengeList(
-          int index, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder builderForValue) {
         if (childChallengeListBuilder_ == null) {
           ensureChildChallengeListIsMutable();
           childChallengeList_.set(index, builderForValue.build());
@@ -880,9 +1004,13 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public Builder addChildChallengeList(emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief value) {
+      public Builder addChildChallengeList(emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK value) {
         if (childChallengeListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -896,10 +1024,14 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder addChildChallengeList(
-          int index, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief value) {
+          int index, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK value) {
         if (childChallengeListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -913,10 +1045,14 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder addChildChallengeList(
-          emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder builderForValue) {
+          emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder builderForValue) {
         if (childChallengeListBuilder_ == null) {
           ensureChildChallengeListIsMutable();
           childChallengeList_.add(builderForValue.build());
@@ -927,10 +1063,14 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder addChildChallengeList(
-          int index, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder builderForValue) {
         if (childChallengeListBuilder_ == null) {
           ensureChildChallengeListIsMutable();
           childChallengeList_.add(index, builderForValue.build());
@@ -941,10 +1081,14 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder addAllChildChallengeList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK> values) {
         if (childChallengeListBuilder_ == null) {
           ensureChildChallengeListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -956,7 +1100,11 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder clearChildChallengeList() {
         if (childChallengeListBuilder_ == null) {
@@ -969,7 +1117,11 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
       public Builder removeChildChallengeList(int index) {
         if (childChallengeListBuilder_ == null) {
@@ -982,16 +1134,24 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder getChildChallengeListBuilder(
+      public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder getChildChallengeListBuilder(
           int index) {
         return getChildChallengeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder getChildChallengeListOrBuilder(
+      public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder getChildChallengeListOrBuilder(
           int index) {
         if (childChallengeListBuilder_ == null) {
           return childChallengeList_.get(index);  } else {
@@ -999,9 +1159,13 @@ public final class CustomDungeonResultInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder> 
            getChildChallengeListOrBuilderList() {
         if (childChallengeListBuilder_ != null) {
           return childChallengeListBuilder_.getMessageOrBuilderList();
@@ -1010,33 +1174,45 @@ public final class CustomDungeonResultInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder addChildChallengeListBuilder() {
+      public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder addChildChallengeListBuilder() {
         return getChildChallengeListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.getDefaultInstance());
+            emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder addChildChallengeListBuilder(
+      public emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder addChildChallengeListBuilder(
           int index) {
         return getChildChallengeListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.getDefaultInstance());
+            index, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChallengeBrief child_challenge_list = 5;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>repeated .BCONICGICAK child_challenge_list = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder> 
            getChildChallengeListBuilderList() {
         return getChildChallengeListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder> 
+          emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder> 
           getChildChallengeListFieldBuilder() {
         if (childChallengeListBuilder_ == null) {
           childChallengeListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBriefOrBuilder>(
+              emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAK.Builder, emu.grasscutter.net.proto.BCONICGICAKOuterClass.BCONICGICAKOrBuilder>(
                   childChallengeList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1046,171 +1222,67 @@ public final class CustomDungeonResultInfoOuterClass {
         return childChallengeListBuilder_;
       }
 
-      private int timeCost_ ;
+      private int nAGLHEFPGNK_ ;
       /**
-       * <code>uint32 time_cost = 2;</code>
-       * @return The timeCost.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NAGLHEFPGNK = 9;</code>
+       * @return The nAGLHEFPGNK.
        */
       @java.lang.Override
-      public int getTimeCost() {
-        return timeCost_;
+      public int getNAGLHEFPGNK() {
+        return nAGLHEFPGNK_;
       }
       /**
-       * <code>uint32 time_cost = 2;</code>
-       * @param value The timeCost to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NAGLHEFPGNK = 9;</code>
+       * @param value The nAGLHEFPGNK to set.
        * @return This builder for chaining.
        */
-      public Builder setTimeCost(int value) {
+      public Builder setNAGLHEFPGNK(int value) {
         
-        timeCost_ = value;
+        nAGLHEFPGNK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 time_cost = 2;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 NAGLHEFPGNK = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTimeCost() {
+      public Builder clearNAGLHEFPGNK() {
         
-        timeCost_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isArriveFinish_ ;
-      /**
-       * <code>bool is_arrive_finish = 13;</code>
-       * @return The isArriveFinish.
-       */
-      @java.lang.Override
-      public boolean getIsArriveFinish() {
-        return isArriveFinish_;
-      }
-      /**
-       * <code>bool is_arrive_finish = 13;</code>
-       * @param value The isArriveFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsArriveFinish(boolean value) {
-        
-        isArriveFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_arrive_finish = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsArriveFinish() {
-        
-        isArriveFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isStored_ ;
-      /**
-       * <code>bool is_stored = 10;</code>
-       * @return The isStored.
-       */
-      @java.lang.Override
-      public boolean getIsStored() {
-        return isStored_;
-      }
-      /**
-       * <code>bool is_stored = 10;</code>
-       * @param value The isStored to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsStored(boolean value) {
-        
-        isStored_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_stored = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsStored() {
-        
-        isStored_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isLiked_ ;
-      /**
-       * <code>bool is_liked = 3;</code>
-       * @return The isLiked.
-       */
-      @java.lang.Override
-      public boolean getIsLiked() {
-        return isLiked_;
-      }
-      /**
-       * <code>bool is_liked = 3;</code>
-       * @param value The isLiked to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsLiked(boolean value) {
-        
-        isLiked_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_liked = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsLiked() {
-        
-        isLiked_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int gotCoinNum_ ;
-      /**
-       * <code>uint32 got_coin_num = 1;</code>
-       * @return The gotCoinNum.
-       */
-      @java.lang.Override
-      public int getGotCoinNum() {
-        return gotCoinNum_;
-      }
-      /**
-       * <code>uint32 got_coin_num = 1;</code>
-       * @param value The gotCoinNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGotCoinNum(int value) {
-        
-        gotCoinNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 got_coin_num = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGotCoinNum() {
-        
-        gotCoinNum_ = 0;
+        nAGLHEFPGNK_ = 0;
         onChanged();
         return this;
       }
 
       private int finishType_ = 0;
       /**
-       * <code>.CustomDungeonFinishType finish_type = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.CustomDungeonFinishType finish_type = 5;</code>
        * @return The enum numeric value on the wire for finishType.
        */
       @java.lang.Override public int getFinishTypeValue() {
         return finishType_;
       }
       /**
-       * <code>.CustomDungeonFinishType finish_type = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.CustomDungeonFinishType finish_type = 5;</code>
        * @param value The enum numeric value on the wire for finishType to set.
        * @return This builder for chaining.
        */
@@ -1221,7 +1293,11 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeonFinishType finish_type = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.CustomDungeonFinishType finish_type = 5;</code>
        * @return The finishType.
        */
       @java.lang.Override
@@ -1231,7 +1307,11 @@ public final class CustomDungeonResultInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.CustomDungeonFinishType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.CustomDungeonFinishType finish_type = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.CustomDungeonFinishType finish_type = 5;</code>
        * @param value The finishType to set.
        * @return This builder for chaining.
        */
@@ -1245,7 +1325,11 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeonFinishType finish_type = 15;</code>
+       * <pre>
+       *6.3.0 // offset: 44
+       * </pre>
+       *
+       * <code>.CustomDungeonFinishType finish_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishType() {
@@ -1257,6 +1341,10 @@ public final class CustomDungeonResultInfoOuterClass {
 
       private long dungeonGuid_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint64 dungeon_guid = 14;</code>
        * @return The dungeonGuid.
        */
@@ -1265,6 +1353,10 @@ public final class CustomDungeonResultInfoOuterClass {
         return dungeonGuid_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint64 dungeon_guid = 14;</code>
        * @param value The dungeonGuid to set.
        * @return This builder for chaining.
@@ -1276,12 +1368,188 @@ public final class CustomDungeonResultInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
        * <code>uint64 dungeon_guid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonGuid() {
         
         dungeonGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int iKFPAAGABJD_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 IKFPAAGABJD = 11;</code>
+       * @return The iKFPAAGABJD.
+       */
+      @java.lang.Override
+      public int getIKFPAAGABJD() {
+        return iKFPAAGABJD_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 IKFPAAGABJD = 11;</code>
+       * @param value The iKFPAAGABJD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIKFPAAGABJD(int value) {
+        
+        iKFPAAGABJD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 IKFPAAGABJD = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIKFPAAGABJD() {
+        
+        iKFPAAGABJD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean gLAFJACBFLP_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool GLAFJACBFLP = 15;</code>
+       * @return The gLAFJACBFLP.
+       */
+      @java.lang.Override
+      public boolean getGLAFJACBFLP() {
+        return gLAFJACBFLP_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool GLAFJACBFLP = 15;</code>
+       * @param value The gLAFJACBFLP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGLAFJACBFLP(boolean value) {
+        
+        gLAFJACBFLP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool GLAFJACBFLP = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGLAFJACBFLP() {
+        
+        gLAFJACBFLP_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean eONLJINFGAC_ ;
+      /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool EONLJINFGAC = 8;</code>
+       * @return The eONLJINFGAC.
+       */
+      @java.lang.Override
+      public boolean getEONLJINFGAC() {
+        return eONLJINFGAC_;
+      }
+      /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool EONLJINFGAC = 8;</code>
+       * @param value The eONLJINFGAC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEONLJINFGAC(boolean value) {
+        
+        eONLJINFGAC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
+       * <code>bool EONLJINFGAC = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEONLJINFGAC() {
+        
+        eONLJINFGAC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean oBFGIGKIGAA_ ;
+      /**
+       * <pre>
+       * offset: 62
+       * </pre>
+       *
+       * <code>bool OBFGIGKIGAA = 12123;</code>
+       * @return The oBFGIGKIGAA.
+       */
+      @java.lang.Override
+      public boolean getOBFGIGKIGAA() {
+        return oBFGIGKIGAA_;
+      }
+      /**
+       * <pre>
+       * offset: 62
+       * </pre>
+       *
+       * <code>bool OBFGIGKIGAA = 12123;</code>
+       * @param value The oBFGIGKIGAA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOBFGIGKIGAA(boolean value) {
+        
+        oBFGIGKIGAA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 62
+       * </pre>
+       *
+       * <code>bool OBFGIGKIGAA = 12123;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOBFGIGKIGAA() {
+        
+        oBFGIGKIGAA_ = false;
         onChanged();
         return this;
       }
@@ -1352,21 +1620,21 @@ public final class CustomDungeonResultInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035CustomDungeonResultInfo.proto\032\024Challen" +
-      "geBrief.proto\032\035CustomDungeonFinishType.p" +
-      "roto\"\365\001\n\027CustomDungeonResultInfo\022-\n\024chil" +
-      "d_challenge_list\030\005 \003(\0132\017.ChallengeBrief\022" +
-      "\021\n\ttime_cost\030\002 \001(\r\022\030\n\020is_arrive_finish\030\r" +
-      " \001(\010\022\021\n\tis_stored\030\n \001(\010\022\020\n\010is_liked\030\003 \001(" +
-      "\010\022\024\n\014got_coin_num\030\001 \001(\r\022-\n\013finish_type\030\017" +
-      " \001(\0162\030.CustomDungeonFinishType\022\024\n\014dungeo" +
-      "n_guid\030\016 \001(\004B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\035CustomDungeonResultInfo.proto\032\021BCONICG" +
+      "ICAK.proto\032\035CustomDungeonFinishType.prot" +
+      "o\"\364\001\n\027CustomDungeonResultInfo\022*\n\024child_c" +
+      "hallenge_list\030\007 \003(\0132\014.BCONICGICAK\022\023\n\013NAG" +
+      "LHEFPGNK\030\t \001(\r\022-\n\013finish_type\030\005 \001(\0162\030.Cu" +
+      "stomDungeonFinishType\022\024\n\014dungeon_guid\030\016 " +
+      "\001(\004\022\023\n\013IKFPAAGABJD\030\013 \001(\r\022\023\n\013GLAFJACBFLP\030" +
+      "\017 \001(\010\022\023\n\013EONLJINFGAC\030\010 \001(\010\022\024\n\013OBFGIGKIGA" +
+      "A\030\333^ \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ChallengeBriefOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BCONICGICAKOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.getDescriptor(),
         });
     internal_static_CustomDungeonResultInfo_descriptor =
@@ -1374,8 +1642,8 @@ public final class CustomDungeonResultInfoOuterClass {
     internal_static_CustomDungeonResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonResultInfo_descriptor,
-        new java.lang.String[] { "ChildChallengeList", "TimeCost", "IsArriveFinish", "IsStored", "IsLiked", "GotCoinNum", "FinishType", "DungeonGuid", });
-    emu.grasscutter.net.proto.ChallengeBriefOuterClass.getDescriptor();
+        new java.lang.String[] { "ChildChallengeList", "NAGLHEFPGNK", "FinishType", "DungeonGuid", "IKFPAAGABJD", "GLAFJACBFLP", "EONLJINFGAC", "OBFGIGKIGAA", });
+    emu.grasscutter.net.proto.BCONICGICAKOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CustomDungeonFinishTypeOuterClass.getDescriptor();
   }
 

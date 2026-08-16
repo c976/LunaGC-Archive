@@ -19,61 +19,96 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-     * @return A list containing the schemeBuffIdList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+     * @return A list containing the lICNJCPFMPE.
      */
-    java.util.List<java.lang.Integer> getSchemeBuffIdListList();
+    java.util.List<java.lang.Integer> getLICNJCPFMPEList();
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-     * @return The count of schemeBuffIdList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+     * @return The count of lICNJCPFMPE.
      */
-    int getSchemeBuffIdListCount();
+    int getLICNJCPFMPECount();
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
      * @param index The index of the element to return.
-     * @return The schemeBuffIdList at the given index.
+     * @return The lICNJCPFMPE at the given index.
      */
-    int getSchemeBuffIdList(int index);
+    int getLICNJCPFMPE(int index);
 
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
-     * @return A list containing the conditionIdList.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
+     * @return A list containing the bICALHDIFCD.
      */
-    java.util.List<java.lang.Integer> getConditionIdListList();
+    java.util.List<java.lang.Integer> getBICALHDIFCDList();
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
-     * @return The count of conditionIdList.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
+     * @return The count of bICALHDIFCD.
      */
-    int getConditionIdListCount();
+    int getBICALHDIFCDCount();
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
      * @param index The index of the element to return.
-     * @return The conditionIdList at the given index.
+     * @return The bICALHDIFCD at the given index.
      */
-    int getConditionIdList(int index);
+    int getBICALHDIFCD(int index);
 
     /**
-     * <code>uint32 dungeon_index = 5;</code>
-     * @return The dungeonIndex.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NBDKOFAHBKK = 5;</code>
+     * @return The nBDKOFAHBKK.
      */
-    int getDungeonIndex();
+    int getNBDKOFAHBKK();
 
     /**
-     * <code>uint32 challenge_score = 10;</code>
-     * @return The challengeScore.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 CCENPFMILFP = 4;</code>
+     * @return The cCENPFMILFP.
      */
-    int getChallengeScore();
+    int getCCENPFMILFP();
 
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 9;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
   }
   /**
    * <pre>
-   * CmdId: 9955
-   * Obf: OBHDPBPCFMN
+   * CmdId: 20783
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabLoopDungeonChallengeInfoNotify}
@@ -88,8 +123,8 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       super(builder);
     }
     private ChannellerSlabLoopDungeonChallengeInfoNotify() {
-      schemeBuffIdList_ = emptyIntList();
-      conditionIdList_ = emptyIntList();
+      lICNJCPFMPE_ = emptyIntList();
+      bICALHDIFCD_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -123,59 +158,59 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              cCENPFMILFP_ = input.readUInt32();
+              break;
+            }
             case 40: {
 
-              dungeonIndex_ = input.readUInt32();
+              nBDKOFAHBKK_ = input.readUInt32();
               break;
             }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                conditionIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                lICNJCPFMPE_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              conditionIdList_.addInt(input.readUInt32());
+              lICNJCPFMPE_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                conditionIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                lICNJCPFMPE_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                conditionIdList_.addInt(input.readUInt32());
+                lICNJCPFMPE_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 80: {
-
-              challengeScore_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 72: {
 
               difficultyId_ = input.readUInt32();
               break;
             }
-            case 120: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                schemeBuffIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                bICALHDIFCD_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              schemeBuffIdList_.addInt(input.readUInt32());
+              bICALHDIFCD_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                schemeBuffIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                bICALHDIFCD_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                schemeBuffIdList_.addInt(input.readUInt32());
+                bICALHDIFCD_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -195,11 +230,11 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          conditionIdList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          schemeBuffIdList_.makeImmutable(); // C
+          lICNJCPFMPE_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          bICALHDIFCD_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -218,88 +253,124 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify.class, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify.Builder.class);
     }
 
-    public static final int SCHEME_BUFF_ID_LIST_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.IntList schemeBuffIdList_;
+    public static final int LICNJCPFMPE_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList lICNJCPFMPE_;
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-     * @return A list containing the schemeBuffIdList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+     * @return A list containing the lICNJCPFMPE.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getSchemeBuffIdListList() {
-      return schemeBuffIdList_;
+        getLICNJCPFMPEList() {
+      return lICNJCPFMPE_;
     }
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-     * @return The count of schemeBuffIdList.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+     * @return The count of lICNJCPFMPE.
      */
-    public int getSchemeBuffIdListCount() {
-      return schemeBuffIdList_.size();
+    public int getLICNJCPFMPECount() {
+      return lICNJCPFMPE_.size();
     }
     /**
-     * <code>repeated uint32 scheme_buff_id_list = 15;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 LICNJCPFMPE = 6;</code>
      * @param index The index of the element to return.
-     * @return The schemeBuffIdList at the given index.
+     * @return The lICNJCPFMPE at the given index.
      */
-    public int getSchemeBuffIdList(int index) {
-      return schemeBuffIdList_.getInt(index);
+    public int getLICNJCPFMPE(int index) {
+      return lICNJCPFMPE_.getInt(index);
     }
-    private int schemeBuffIdListMemoizedSerializedSize = -1;
+    private int lICNJCPFMPEMemoizedSerializedSize = -1;
 
-    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList conditionIdList_;
+    public static final int BICALHDIFCD_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList bICALHDIFCD_;
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
-     * @return A list containing the conditionIdList.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
+     * @return A list containing the bICALHDIFCD.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getConditionIdListList() {
-      return conditionIdList_;
+        getBICALHDIFCDList() {
+      return bICALHDIFCD_;
     }
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
-     * @return The count of conditionIdList.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
+     * @return The count of bICALHDIFCD.
      */
-    public int getConditionIdListCount() {
-      return conditionIdList_.size();
+    public int getBICALHDIFCDCount() {
+      return bICALHDIFCD_.size();
     }
     /**
-     * <code>repeated uint32 condition_id_list = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated uint32 BICALHDIFCD = 12;</code>
      * @param index The index of the element to return.
-     * @return The conditionIdList at the given index.
+     * @return The bICALHDIFCD at the given index.
      */
-    public int getConditionIdList(int index) {
-      return conditionIdList_.getInt(index);
+    public int getBICALHDIFCD(int index) {
+      return bICALHDIFCD_.getInt(index);
     }
-    private int conditionIdListMemoizedSerializedSize = -1;
+    private int bICALHDIFCDMemoizedSerializedSize = -1;
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 5;
-    private int dungeonIndex_;
+    public static final int NBDKOFAHBKK_FIELD_NUMBER = 5;
+    private int nBDKOFAHBKK_;
     /**
-     * <code>uint32 dungeon_index = 5;</code>
-     * @return The dungeonIndex.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 NBDKOFAHBKK = 5;</code>
+     * @return The nBDKOFAHBKK.
      */
     @java.lang.Override
-    public int getDungeonIndex() {
-      return dungeonIndex_;
+    public int getNBDKOFAHBKK() {
+      return nBDKOFAHBKK_;
     }
 
-    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 10;
-    private int challengeScore_;
+    public static final int CCENPFMILFP_FIELD_NUMBER = 4;
+    private int cCENPFMILFP_;
     /**
-     * <code>uint32 challenge_score = 10;</code>
-     * @return The challengeScore.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 CCENPFMILFP = 4;</code>
+     * @return The cCENPFMILFP.
      */
     @java.lang.Override
-    public int getChallengeScore() {
-      return challengeScore_;
+    public int getCCENPFMILFP() {
+      return cCENPFMILFP_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 9;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 11;</code>
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 difficulty_id = 9;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -322,28 +393,28 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (dungeonIndex_ != 0) {
-        output.writeUInt32(5, dungeonIndex_);
+      if (cCENPFMILFP_ != 0) {
+        output.writeUInt32(4, cCENPFMILFP_);
       }
-      if (getConditionIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(conditionIdListMemoizedSerializedSize);
+      if (nBDKOFAHBKK_ != 0) {
+        output.writeUInt32(5, nBDKOFAHBKK_);
       }
-      for (int i = 0; i < conditionIdList_.size(); i++) {
-        output.writeUInt32NoTag(conditionIdList_.getInt(i));
+      if (getLICNJCPFMPEList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(lICNJCPFMPEMemoizedSerializedSize);
       }
-      if (challengeScore_ != 0) {
-        output.writeUInt32(10, challengeScore_);
+      for (int i = 0; i < lICNJCPFMPE_.size(); i++) {
+        output.writeUInt32NoTag(lICNJCPFMPE_.getInt(i));
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(11, difficultyId_);
+        output.writeUInt32(9, difficultyId_);
       }
-      if (getSchemeBuffIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
-        output.writeUInt32NoTag(schemeBuffIdListMemoizedSerializedSize);
+      if (getBICALHDIFCDList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(bICALHDIFCDMemoizedSerializedSize);
       }
-      for (int i = 0; i < schemeBuffIdList_.size(); i++) {
-        output.writeUInt32NoTag(schemeBuffIdList_.getInt(i));
+      for (int i = 0; i < bICALHDIFCD_.size(); i++) {
+        output.writeUInt32NoTag(bICALHDIFCD_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -354,45 +425,45 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonIndex_ != 0) {
+      if (cCENPFMILFP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonIndex_);
+          .computeUInt32Size(4, cCENPFMILFP_);
+      }
+      if (nBDKOFAHBKK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, nBDKOFAHBKK_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < conditionIdList_.size(); i++) {
+        for (int i = 0; i < lICNJCPFMPE_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(conditionIdList_.getInt(i));
+            .computeUInt32SizeNoTag(lICNJCPFMPE_.getInt(i));
         }
         size += dataSize;
-        if (!getConditionIdListList().isEmpty()) {
+        if (!getLICNJCPFMPEList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        conditionIdListMemoizedSerializedSize = dataSize;
-      }
-      if (challengeScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, challengeScore_);
+        lICNJCPFMPEMemoizedSerializedSize = dataSize;
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficultyId_);
+          .computeUInt32Size(9, difficultyId_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < schemeBuffIdList_.size(); i++) {
+        for (int i = 0; i < bICALHDIFCD_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(schemeBuffIdList_.getInt(i));
+            .computeUInt32SizeNoTag(bICALHDIFCD_.getInt(i));
         }
         size += dataSize;
-        if (!getSchemeBuffIdListList().isEmpty()) {
+        if (!getBICALHDIFCDList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        schemeBuffIdListMemoizedSerializedSize = dataSize;
+        bICALHDIFCDMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -409,14 +480,14 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify other = (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify) obj;
 
-      if (!getSchemeBuffIdListList()
-          .equals(other.getSchemeBuffIdListList())) return false;
-      if (!getConditionIdListList()
-          .equals(other.getConditionIdListList())) return false;
-      if (getDungeonIndex()
-          != other.getDungeonIndex()) return false;
-      if (getChallengeScore()
-          != other.getChallengeScore()) return false;
+      if (!getLICNJCPFMPEList()
+          .equals(other.getLICNJCPFMPEList())) return false;
+      if (!getBICALHDIFCDList()
+          .equals(other.getBICALHDIFCDList())) return false;
+      if (getNBDKOFAHBKK()
+          != other.getNBDKOFAHBKK()) return false;
+      if (getCCENPFMILFP()
+          != other.getCCENPFMILFP()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -430,18 +501,18 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getSchemeBuffIdListCount() > 0) {
-        hash = (37 * hash) + SCHEME_BUFF_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSchemeBuffIdListList().hashCode();
+      if (getLICNJCPFMPECount() > 0) {
+        hash = (37 * hash) + LICNJCPFMPE_FIELD_NUMBER;
+        hash = (53 * hash) + getLICNJCPFMPEList().hashCode();
       }
-      if (getConditionIdListCount() > 0) {
-        hash = (37 * hash) + CONDITION_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getConditionIdListList().hashCode();
+      if (getBICALHDIFCDCount() > 0) {
+        hash = (37 * hash) + BICALHDIFCD_FIELD_NUMBER;
+        hash = (53 * hash) + getBICALHDIFCDList().hashCode();
       }
-      hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonIndex();
-      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeScore();
+      hash = (37 * hash) + NBDKOFAHBKK_FIELD_NUMBER;
+      hash = (53 * hash) + getNBDKOFAHBKK();
+      hash = (37 * hash) + CCENPFMILFP_FIELD_NUMBER;
+      hash = (53 * hash) + getCCENPFMILFP();
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -541,8 +612,7 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9955
-     * Obf: OBHDPBPCFMN
+     * CmdId: 20783
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabLoopDungeonChallengeInfoNotify}
@@ -582,13 +652,13 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        schemeBuffIdList_ = emptyIntList();
+        lICNJCPFMPE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        conditionIdList_ = emptyIntList();
+        bICALHDIFCD_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        dungeonIndex_ = 0;
+        nBDKOFAHBKK_ = 0;
 
-        challengeScore_ = 0;
+        cCENPFMILFP_ = 0;
 
         difficultyId_ = 0;
 
@@ -620,17 +690,17 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
         emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify result = new emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          schemeBuffIdList_.makeImmutable();
+          lICNJCPFMPE_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.schemeBuffIdList_ = schemeBuffIdList_;
+        result.lICNJCPFMPE_ = lICNJCPFMPE_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          conditionIdList_.makeImmutable();
+          bICALHDIFCD_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.conditionIdList_ = conditionIdList_;
-        result.dungeonIndex_ = dungeonIndex_;
-        result.challengeScore_ = challengeScore_;
+        result.bICALHDIFCD_ = bICALHDIFCD_;
+        result.nBDKOFAHBKK_ = nBDKOFAHBKK_;
+        result.cCENPFMILFP_ = cCENPFMILFP_;
         result.difficultyId_ = difficultyId_;
         onBuilt();
         return result;
@@ -680,31 +750,31 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify other) {
         if (other == emu.grasscutter.net.proto.ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass.ChannellerSlabLoopDungeonChallengeInfoNotify.getDefaultInstance()) return this;
-        if (!other.schemeBuffIdList_.isEmpty()) {
-          if (schemeBuffIdList_.isEmpty()) {
-            schemeBuffIdList_ = other.schemeBuffIdList_;
+        if (!other.lICNJCPFMPE_.isEmpty()) {
+          if (lICNJCPFMPE_.isEmpty()) {
+            lICNJCPFMPE_ = other.lICNJCPFMPE_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureSchemeBuffIdListIsMutable();
-            schemeBuffIdList_.addAll(other.schemeBuffIdList_);
+            ensureLICNJCPFMPEIsMutable();
+            lICNJCPFMPE_.addAll(other.lICNJCPFMPE_);
           }
           onChanged();
         }
-        if (!other.conditionIdList_.isEmpty()) {
-          if (conditionIdList_.isEmpty()) {
-            conditionIdList_ = other.conditionIdList_;
+        if (!other.bICALHDIFCD_.isEmpty()) {
+          if (bICALHDIFCD_.isEmpty()) {
+            bICALHDIFCD_ = other.bICALHDIFCD_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureConditionIdListIsMutable();
-            conditionIdList_.addAll(other.conditionIdList_);
+            ensureBICALHDIFCDIsMutable();
+            bICALHDIFCD_.addAll(other.bICALHDIFCD_);
           }
           onChanged();
         }
-        if (other.getDungeonIndex() != 0) {
-          setDungeonIndex(other.getDungeonIndex());
+        if (other.getNBDKOFAHBKK() != 0) {
+          setNBDKOFAHBKK(other.getNBDKOFAHBKK());
         }
-        if (other.getChallengeScore() != 0) {
-          setChallengeScore(other.getChallengeScore());
+        if (other.getCCENPFMILFP() != 0) {
+          setCCENPFMILFP(other.getCCENPFMILFP());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
@@ -739,229 +809,313 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList schemeBuffIdList_ = emptyIntList();
-      private void ensureSchemeBuffIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList lICNJCPFMPE_ = emptyIntList();
+      private void ensureLICNJCPFMPEIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          schemeBuffIdList_ = mutableCopy(schemeBuffIdList_);
+          lICNJCPFMPE_ = mutableCopy(lICNJCPFMPE_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-       * @return A list containing the schemeBuffIdList.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+       * @return A list containing the lICNJCPFMPE.
        */
       public java.util.List<java.lang.Integer>
-          getSchemeBuffIdListList() {
+          getLICNJCPFMPEList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(schemeBuffIdList_) : schemeBuffIdList_;
+                 java.util.Collections.unmodifiableList(lICNJCPFMPE_) : lICNJCPFMPE_;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-       * @return The count of schemeBuffIdList.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+       * @return The count of lICNJCPFMPE.
        */
-      public int getSchemeBuffIdListCount() {
-        return schemeBuffIdList_.size();
+      public int getLICNJCPFMPECount() {
+        return lICNJCPFMPE_.size();
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
        * @param index The index of the element to return.
-       * @return The schemeBuffIdList at the given index.
+       * @return The lICNJCPFMPE at the given index.
        */
-      public int getSchemeBuffIdList(int index) {
-        return schemeBuffIdList_.getInt(index);
+      public int getLICNJCPFMPE(int index) {
+        return lICNJCPFMPE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
        * @param index The index to set the value at.
-       * @param value The schemeBuffIdList to set.
+       * @param value The lICNJCPFMPE to set.
        * @return This builder for chaining.
        */
-      public Builder setSchemeBuffIdList(
+      public Builder setLICNJCPFMPE(
           int index, int value) {
-        ensureSchemeBuffIdListIsMutable();
-        schemeBuffIdList_.setInt(index, value);
+        ensureLICNJCPFMPEIsMutable();
+        lICNJCPFMPE_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-       * @param value The schemeBuffIdList to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+       * @param value The lICNJCPFMPE to add.
        * @return This builder for chaining.
        */
-      public Builder addSchemeBuffIdList(int value) {
-        ensureSchemeBuffIdListIsMutable();
-        schemeBuffIdList_.addInt(value);
+      public Builder addLICNJCPFMPE(int value) {
+        ensureLICNJCPFMPEIsMutable();
+        lICNJCPFMPE_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
-       * @param values The schemeBuffIdList to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
+       * @param values The lICNJCPFMPE to add.
        * @return This builder for chaining.
        */
-      public Builder addAllSchemeBuffIdList(
+      public Builder addAllLICNJCPFMPE(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureSchemeBuffIdListIsMutable();
+        ensureLICNJCPFMPEIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, schemeBuffIdList_);
+            values, lICNJCPFMPE_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 scheme_buff_id_list = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 LICNJCPFMPE = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSchemeBuffIdList() {
-        schemeBuffIdList_ = emptyIntList();
+      public Builder clearLICNJCPFMPE() {
+        lICNJCPFMPE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList conditionIdList_ = emptyIntList();
-      private void ensureConditionIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList bICALHDIFCD_ = emptyIntList();
+      private void ensureBICALHDIFCDIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          conditionIdList_ = mutableCopy(conditionIdList_);
+          bICALHDIFCD_ = mutableCopy(bICALHDIFCD_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
-       * @return A list containing the conditionIdList.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
+       * @return A list containing the bICALHDIFCD.
        */
       public java.util.List<java.lang.Integer>
-          getConditionIdListList() {
+          getBICALHDIFCDList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(conditionIdList_) : conditionIdList_;
+                 java.util.Collections.unmodifiableList(bICALHDIFCD_) : bICALHDIFCD_;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
-       * @return The count of conditionIdList.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
+       * @return The count of bICALHDIFCD.
        */
-      public int getConditionIdListCount() {
-        return conditionIdList_.size();
+      public int getBICALHDIFCDCount() {
+        return bICALHDIFCD_.size();
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
        * @param index The index of the element to return.
-       * @return The conditionIdList at the given index.
+       * @return The bICALHDIFCD at the given index.
        */
-      public int getConditionIdList(int index) {
-        return conditionIdList_.getInt(index);
+      public int getBICALHDIFCD(int index) {
+        return bICALHDIFCD_.getInt(index);
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
        * @param index The index to set the value at.
-       * @param value The conditionIdList to set.
+       * @param value The bICALHDIFCD to set.
        * @return This builder for chaining.
        */
-      public Builder setConditionIdList(
+      public Builder setBICALHDIFCD(
           int index, int value) {
-        ensureConditionIdListIsMutable();
-        conditionIdList_.setInt(index, value);
+        ensureBICALHDIFCDIsMutable();
+        bICALHDIFCD_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
-       * @param value The conditionIdList to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
+       * @param value The bICALHDIFCD to add.
        * @return This builder for chaining.
        */
-      public Builder addConditionIdList(int value) {
-        ensureConditionIdListIsMutable();
-        conditionIdList_.addInt(value);
+      public Builder addBICALHDIFCD(int value) {
+        ensureBICALHDIFCDIsMutable();
+        bICALHDIFCD_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
-       * @param values The conditionIdList to add.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
+       * @param values The bICALHDIFCD to add.
        * @return This builder for chaining.
        */
-      public Builder addAllConditionIdList(
+      public Builder addAllBICALHDIFCD(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureConditionIdListIsMutable();
+        ensureBICALHDIFCDIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, conditionIdList_);
+            values, bICALHDIFCD_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated uint32 BICALHDIFCD = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearConditionIdList() {
-        conditionIdList_ = emptyIntList();
+      public Builder clearBICALHDIFCD() {
+        bICALHDIFCD_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int dungeonIndex_ ;
+      private int nBDKOFAHBKK_ ;
       /**
-       * <code>uint32 dungeon_index = 5;</code>
-       * @return The dungeonIndex.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NBDKOFAHBKK = 5;</code>
+       * @return The nBDKOFAHBKK.
        */
       @java.lang.Override
-      public int getDungeonIndex() {
-        return dungeonIndex_;
+      public int getNBDKOFAHBKK() {
+        return nBDKOFAHBKK_;
       }
       /**
-       * <code>uint32 dungeon_index = 5;</code>
-       * @param value The dungeonIndex to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NBDKOFAHBKK = 5;</code>
+       * @param value The nBDKOFAHBKK to set.
        * @return This builder for chaining.
        */
-      public Builder setDungeonIndex(int value) {
+      public Builder setNBDKOFAHBKK(int value) {
         
-        dungeonIndex_ = value;
+        nBDKOFAHBKK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 5;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 NBDKOFAHBKK = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDungeonIndex() {
+      public Builder clearNBDKOFAHBKK() {
         
-        dungeonIndex_ = 0;
+        nBDKOFAHBKK_ = 0;
         onChanged();
         return this;
       }
 
-      private int challengeScore_ ;
+      private int cCENPFMILFP_ ;
       /**
-       * <code>uint32 challenge_score = 10;</code>
-       * @return The challengeScore.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CCENPFMILFP = 4;</code>
+       * @return The cCENPFMILFP.
        */
       @java.lang.Override
-      public int getChallengeScore() {
-        return challengeScore_;
+      public int getCCENPFMILFP() {
+        return cCENPFMILFP_;
       }
       /**
-       * <code>uint32 challenge_score = 10;</code>
-       * @param value The challengeScore to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CCENPFMILFP = 4;</code>
+       * @param value The cCENPFMILFP to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeScore(int value) {
+      public Builder setCCENPFMILFP(int value) {
         
-        challengeScore_ = value;
+        cCENPFMILFP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_score = 10;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CCENPFMILFP = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeScore() {
+      public Builder clearCCENPFMILFP() {
         
-        challengeScore_ = 0;
+        cCENPFMILFP_ = 0;
         onChanged();
         return this;
       }
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 9;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -969,7 +1123,11 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 9;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -980,7 +1138,11 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 difficulty_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -1057,12 +1219,12 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n2ChannellerSlabLoopDungeonChallengeInfo" +
-      "Notify.proto\"\255\001\n,ChannellerSlabLoopDunge" +
-      "onChallengeInfoNotify\022\033\n\023scheme_buff_id_" +
-      "list\030\017 \003(\r\022\031\n\021condition_id_list\030\007 \003(\r\022\025\n" +
-      "\rdungeon_index\030\005 \001(\r\022\027\n\017challenge_score\030" +
-      "\n \001(\r\022\025\n\rdifficulty_id\030\013 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "Notify.proto\"\231\001\n,ChannellerSlabLoopDunge" +
+      "onChallengeInfoNotify\022\023\n\013LICNJCPFMPE\030\006 \003" +
+      "(\r\022\023\n\013BICALHDIFCD\030\014 \003(\r\022\023\n\013NBDKOFAHBKK\030\005" +
+      " \001(\r\022\023\n\013CCENPFMILFP\030\004 \001(\r\022\025\n\rdifficulty_" +
+      "id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1073,7 +1235,7 @@ public final class ChannellerSlabLoopDungeonChallengeInfoNotifyOuterClass {
     internal_static_ChannellerSlabLoopDungeonChallengeInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannellerSlabLoopDungeonChallengeInfoNotify_descriptor,
-        new java.lang.String[] { "SchemeBuffIdList", "ConditionIdList", "DungeonIndex", "ChallengeScore", "DifficultyId", });
+        new java.lang.String[] { "LICNJCPFMPE", "BICALHDIFCD", "NBDKOFAHBKK", "CCENPFMILFP", "DifficultyId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

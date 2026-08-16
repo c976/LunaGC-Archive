@@ -19,28 +19,36 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 6;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 difficulty = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 difficulty = 13;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>bool is_cg_viewed = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_cg_viewed = 8;</code>
      * @return The isCgViewed.
      */
     boolean getIsCgViewed();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 3;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
-   * <pre>
-   * Obf: ILOFFNEAFNL
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryIrodoriMasterInfo}
    */
   public static final class SceneGalleryIrodoriMasterInfo extends
@@ -85,17 +93,17 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 64: {
 
               isCgViewed_ = input.readBool();
               break;
             }
-            case 88: {
+            case 104: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -132,21 +140,14 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo.class, emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 6;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int DIFFICULTY_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_FIELD_NUMBER = 13;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 difficulty = 13;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -154,15 +155,34 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int IS_CG_VIEWED_FIELD_NUMBER = 10;
+    public static final int IS_CG_VIEWED_FIELD_NUMBER = 8;
     private boolean isCgViewed_;
     /**
-     * <code>bool is_cg_viewed = 10;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_cg_viewed = 8;</code>
      * @return The isCgViewed.
      */
     @java.lang.Override
     public boolean getIsCgViewed() {
       return isCgViewed_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    private int levelId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 3;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,13 +200,13 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
+        output.writeUInt32(3, levelId_);
       }
       if (isCgViewed_ != false) {
-        output.writeBool(10, isCgViewed_);
+        output.writeBool(8, isCgViewed_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(11, difficulty_);
+        output.writeUInt32(13, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,15 +219,15 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
+          .computeUInt32Size(3, levelId_);
       }
       if (isCgViewed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isCgViewed_);
+          .computeBoolSize(8, isCgViewed_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficulty_);
+          .computeUInt32Size(13, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +244,12 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo other = (emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
       if (getIsCgViewed()
           != other.getIsCgViewed()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +261,13 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + IS_CG_VIEWED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCgViewed());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +364,6 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: ILOFFNEAFNL
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryIrodoriMasterInfo}
      */
     public static final class Builder extends
@@ -385,11 +401,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         difficulty_ = 0;
 
         isCgViewed_ = false;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -417,9 +433,9 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo result = new emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo(this);
-        result.levelId_ = levelId_;
         result.difficulty_ = difficulty_;
         result.isCgViewed_ = isCgViewed_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -468,14 +484,14 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryIrodoriMasterInfoOuterClass.SceneGalleryIrodoriMasterInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
         if (other.getIsCgViewed() != false) {
           setIsCgViewed(other.getIsCgViewed());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,40 +522,13 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 6;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 6;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 13;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -547,7 +536,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 13;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -558,7 +551,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 difficulty = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -570,7 +567,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
 
       private boolean isCgViewed_ ;
       /**
-       * <code>bool is_cg_viewed = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_cg_viewed = 8;</code>
        * @return The isCgViewed.
        */
       @java.lang.Override
@@ -578,7 +579,11 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return isCgViewed_;
       }
       /**
-       * <code>bool is_cg_viewed = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_cg_viewed = 8;</code>
        * @param value The isCgViewed to set.
        * @return This builder for chaining.
        */
@@ -589,12 +594,59 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_cg_viewed = 10;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_cg_viewed = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCgViewed() {
         
         isCgViewed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -666,9 +718,9 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#SceneGalleryIrodoriMasterInfo.proto\"[\n" +
-      "\035SceneGalleryIrodoriMasterInfo\022\020\n\010level_" +
-      "id\030\006 \001(\r\022\022\n\ndifficulty\030\013 \001(\r\022\024\n\014is_cg_vi" +
-      "ewed\030\n \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\035SceneGalleryIrodoriMasterInfo\022\022\n\ndiffic" +
+      "ulty\030\r \001(\r\022\024\n\014is_cg_viewed\030\010 \001(\010\022\020\n\010leve" +
+      "l_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +732,7 @@ public final class SceneGalleryIrodoriMasterInfoOuterClass {
     internal_static_SceneGalleryIrodoriMasterInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIrodoriMasterInfo_descriptor,
-        new java.lang.String[] { "LevelId", "Difficulty", "IsCgViewed", });
+        new java.lang.String[] { "Difficulty", "IsCgViewed", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

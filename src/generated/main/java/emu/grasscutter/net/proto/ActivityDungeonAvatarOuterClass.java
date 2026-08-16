@@ -19,28 +19,36 @@ public final class ActivityDungeonAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_trial = 2;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 costume_id = 3;</code>
      * @return The costumeId.
      */
     int getCostumeId();
+
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 1;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
   }
   /**
-   * <pre>
-   * Obf: OILMJMJGMKP
-   * </pre>
-   *
    * Protobuf type {@code ActivityDungeonAvatar}
    */
   public static final class ActivityDungeonAvatar extends
@@ -132,20 +140,13 @@ public final class ActivityDungeonAvatarOuterClass {
               emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.class, emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 1;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
     public static final int IS_TRIAL_FIELD_NUMBER = 2;
     private boolean isTrial_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>bool is_trial = 2;</code>
      * @return The isTrial.
      */
@@ -157,12 +158,31 @@ public final class ActivityDungeonAvatarOuterClass {
     public static final int COSTUME_ID_FIELD_NUMBER = 3;
     private int costumeId_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 costume_id = 3;</code>
      * @return The costumeId.
      */
     @java.lang.Override
     public int getCostumeId() {
       return costumeId_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 1;
+    private int avatarId_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 avatar_id = 1;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,12 +244,12 @@ public final class ActivityDungeonAvatarOuterClass {
       }
       emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar other = (emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar) obj;
 
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
       if (getIsTrial()
           != other.getIsTrial()) return false;
       if (getCostumeId()
           != other.getCostumeId()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +261,13 @@ public final class ActivityDungeonAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + IS_TRIAL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTrial());
       hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,10 +364,6 @@ public final class ActivityDungeonAvatarOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OILMJMJGMKP
-     * </pre>
-     *
      * Protobuf type {@code ActivityDungeonAvatar}
      */
     public static final class Builder extends
@@ -385,11 +401,11 @@ public final class ActivityDungeonAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarId_ = 0;
-
         isTrial_ = false;
 
         costumeId_ = 0;
+
+        avatarId_ = 0;
 
         return this;
       }
@@ -417,9 +433,9 @@ public final class ActivityDungeonAvatarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar buildPartial() {
         emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar result = new emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar(this);
-        result.avatarId_ = avatarId_;
         result.isTrial_ = isTrial_;
         result.costumeId_ = costumeId_;
+        result.avatarId_ = avatarId_;
         onBuilt();
         return result;
       }
@@ -468,14 +484,14 @@ public final class ActivityDungeonAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar other) {
         if (other == emu.grasscutter.net.proto.ActivityDungeonAvatarOuterClass.ActivityDungeonAvatar.getDefaultInstance()) return this;
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
-        }
         if (other.getIsTrial() != false) {
           setIsTrial(other.getIsTrial());
         }
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
+        }
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,39 +522,12 @@ public final class ActivityDungeonAvatarOuterClass {
         return this;
       }
 
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isTrial_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_trial = 2;</code>
        * @return The isTrial.
        */
@@ -547,6 +536,10 @@ public final class ActivityDungeonAvatarOuterClass {
         return isTrial_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_trial = 2;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
@@ -558,6 +551,10 @@ public final class ActivityDungeonAvatarOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>bool is_trial = 2;</code>
        * @return This builder for chaining.
        */
@@ -570,6 +567,10 @@ public final class ActivityDungeonAvatarOuterClass {
 
       private int costumeId_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 costume_id = 3;</code>
        * @return The costumeId.
        */
@@ -578,6 +579,10 @@ public final class ActivityDungeonAvatarOuterClass {
         return costumeId_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 costume_id = 3;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
@@ -589,12 +594,59 @@ public final class ActivityDungeonAvatarOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 costume_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostumeId() {
         
         costumeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 1;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 1;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 avatar_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
         onChanged();
         return this;
       }
@@ -666,8 +718,8 @@ public final class ActivityDungeonAvatarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ActivityDungeonAvatar.proto\"P\n\025Activit" +
-      "yDungeonAvatar\022\021\n\tavatar_id\030\001 \001(\r\022\020\n\010is_" +
-      "trial\030\002 \001(\010\022\022\n\ncostume_id\030\003 \001(\rB\033\n\031emu.g" +
+      "yDungeonAvatar\022\020\n\010is_trial\030\002 \001(\010\022\022\n\ncost" +
+      "ume_id\030\003 \001(\r\022\021\n\tavatar_id\030\001 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +731,7 @@ public final class ActivityDungeonAvatarOuterClass {
     internal_static_ActivityDungeonAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityDungeonAvatar_descriptor,
-        new java.lang.String[] { "AvatarId", "IsTrial", "CostumeId", });
+        new java.lang.String[] { "IsTrial", "CostumeId", "AvatarId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

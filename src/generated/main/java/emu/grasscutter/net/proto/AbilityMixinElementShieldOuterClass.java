@@ -19,46 +19,66 @@ public final class AbilityMixinElementShieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_shield_broken = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float BMJAKOOADEK = 11;</code>
+     * @return The bMJAKOOADEK.
+     */
+    float getBMJAKOOADEK();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_shield_broken = 14;</code>
      * @return The isShieldBroken.
      */
     boolean getIsShieldBroken();
 
     /**
-     * <code>float FIEFKGHCBBO = 4;</code>
-     * @return The fIEFKGHCBBO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PJBEOHCDLNJ = 15;</code>
+     * @return The pJBEOHCDLNJ.
      */
-    float getFIEFKGHCBBO();
+    float getPJBEOHCDLNJ();
 
     /**
-     * <code>float AFHOPKKJCJF = 9;</code>
-     * @return The aFHOPKKJCJF.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 9;</code>
+     * @return The bBCMJOGEOPC.
      */
-    float getAFHOPKKJCJF();
+    float getBBCMJOGEOPC();
 
     /**
-     * <code>uint32 GCAEMIGCBAK = 7;</code>
-     * @return The gCAEMIGCBAK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 LMABPNEGCKP = 10;</code>
+     * @return The lMABPNEGCKP.
      */
-    int getGCAEMIGCBAK();
+    int getLMABPNEGCKP();
 
     /**
-     * <code>float FFMBPIKIJAP = 3;</code>
-     * @return The fFMBPIKIJAP.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 HNKBJDACIGL = 8;</code>
+     * @return The hNKBJDACIGL.
      */
-    float getFFMBPIKIJAP();
-
-    /**
-     * <code>uint32 player_num = 6;</code>
-     * @return The playerNum.
-     */
-    int getPlayerNum();
+    int getHNKBJDACIGL();
   }
   /**
-   * <pre>
-   * Obf: HLPPHMDAIKF
-   * </pre>
-   *
    * Protobuf type {@code AbilityMixinElementShield}
    */
   public static final class AbilityMixinElementShield extends
@@ -103,34 +123,34 @@ public final class AbilityMixinElementShieldOuterClass {
             case 0:
               done = true;
               break;
-            case 29: {
+            case 64: {
 
-              fFMBPIKIJAP_ = input.readFloat();
-              break;
-            }
-            case 37: {
-
-              fIEFKGHCBBO_ = input.readFloat();
-              break;
-            }
-            case 40: {
-
-              isShieldBroken_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              playerNum_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              gCAEMIGCBAK_ = input.readUInt32();
+              hNKBJDACIGL_ = input.readUInt32();
               break;
             }
             case 77: {
 
-              aFHOPKKJCJF_ = input.readFloat();
+              bBCMJOGEOPC_ = input.readFloat();
+              break;
+            }
+            case 80: {
+
+              lMABPNEGCKP_ = input.readUInt32();
+              break;
+            }
+            case 93: {
+
+              bMJAKOOADEK_ = input.readFloat();
+              break;
+            }
+            case 112: {
+
+              isShieldBroken_ = input.readBool();
+              break;
+            }
+            case 125: {
+
+              pJBEOHCDLNJ_ = input.readFloat();
               break;
             }
             default: {
@@ -165,10 +185,29 @@ public final class AbilityMixinElementShieldOuterClass {
               emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.class, emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.Builder.class);
     }
 
-    public static final int IS_SHIELD_BROKEN_FIELD_NUMBER = 5;
+    public static final int BMJAKOOADEK_FIELD_NUMBER = 11;
+    private float bMJAKOOADEK_;
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>float BMJAKOOADEK = 11;</code>
+     * @return The bMJAKOOADEK.
+     */
+    @java.lang.Override
+    public float getBMJAKOOADEK() {
+      return bMJAKOOADEK_;
+    }
+
+    public static final int IS_SHIELD_BROKEN_FIELD_NUMBER = 14;
     private boolean isShieldBroken_;
     /**
-     * <code>bool is_shield_broken = 5;</code>
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>bool is_shield_broken = 14;</code>
      * @return The isShieldBroken.
      */
     @java.lang.Override
@@ -176,59 +215,64 @@ public final class AbilityMixinElementShieldOuterClass {
       return isShieldBroken_;
     }
 
-    public static final int FIEFKGHCBBO_FIELD_NUMBER = 4;
-    private float fIEFKGHCBBO_;
+    public static final int PJBEOHCDLNJ_FIELD_NUMBER = 15;
+    private float pJBEOHCDLNJ_;
     /**
-     * <code>float FIEFKGHCBBO = 4;</code>
-     * @return The fIEFKGHCBBO.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>float PJBEOHCDLNJ = 15;</code>
+     * @return The pJBEOHCDLNJ.
      */
     @java.lang.Override
-    public float getFIEFKGHCBBO() {
-      return fIEFKGHCBBO_;
+    public float getPJBEOHCDLNJ() {
+      return pJBEOHCDLNJ_;
     }
 
-    public static final int AFHOPKKJCJF_FIELD_NUMBER = 9;
-    private float aFHOPKKJCJF_;
+    public static final int BBCMJOGEOPC_FIELD_NUMBER = 9;
+    private float bBCMJOGEOPC_;
     /**
-     * <code>float AFHOPKKJCJF = 9;</code>
-     * @return The aFHOPKKJCJF.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>float BBCMJOGEOPC = 9;</code>
+     * @return The bBCMJOGEOPC.
      */
     @java.lang.Override
-    public float getAFHOPKKJCJF() {
-      return aFHOPKKJCJF_;
+    public float getBBCMJOGEOPC() {
+      return bBCMJOGEOPC_;
     }
 
-    public static final int GCAEMIGCBAK_FIELD_NUMBER = 7;
-    private int gCAEMIGCBAK_;
+    public static final int LMABPNEGCKP_FIELD_NUMBER = 10;
+    private int lMABPNEGCKP_;
     /**
-     * <code>uint32 GCAEMIGCBAK = 7;</code>
-     * @return The gCAEMIGCBAK.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 LMABPNEGCKP = 10;</code>
+     * @return The lMABPNEGCKP.
      */
     @java.lang.Override
-    public int getGCAEMIGCBAK() {
-      return gCAEMIGCBAK_;
+    public int getLMABPNEGCKP() {
+      return lMABPNEGCKP_;
     }
 
-    public static final int FFMBPIKIJAP_FIELD_NUMBER = 3;
-    private float fFMBPIKIJAP_;
+    public static final int HNKBJDACIGL_FIELD_NUMBER = 8;
+    private int hNKBJDACIGL_;
     /**
-     * <code>float FFMBPIKIJAP = 3;</code>
-     * @return The fFMBPIKIJAP.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 HNKBJDACIGL = 8;</code>
+     * @return The hNKBJDACIGL.
      */
     @java.lang.Override
-    public float getFFMBPIKIJAP() {
-      return fFMBPIKIJAP_;
-    }
-
-    public static final int PLAYER_NUM_FIELD_NUMBER = 6;
-    private int playerNum_;
-    /**
-     * <code>uint32 player_num = 6;</code>
-     * @return The playerNum.
-     */
-    @java.lang.Override
-    public int getPlayerNum() {
-      return playerNum_;
+    public int getHNKBJDACIGL() {
+      return hNKBJDACIGL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +289,23 @@ public final class AbilityMixinElementShieldOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fFMBPIKIJAP_ != 0F) {
-        output.writeFloat(3, fFMBPIKIJAP_);
+      if (hNKBJDACIGL_ != 0) {
+        output.writeUInt32(8, hNKBJDACIGL_);
       }
-      if (fIEFKGHCBBO_ != 0F) {
-        output.writeFloat(4, fIEFKGHCBBO_);
+      if (bBCMJOGEOPC_ != 0F) {
+        output.writeFloat(9, bBCMJOGEOPC_);
+      }
+      if (lMABPNEGCKP_ != 0) {
+        output.writeUInt32(10, lMABPNEGCKP_);
+      }
+      if (bMJAKOOADEK_ != 0F) {
+        output.writeFloat(11, bMJAKOOADEK_);
       }
       if (isShieldBroken_ != false) {
-        output.writeBool(5, isShieldBroken_);
+        output.writeBool(14, isShieldBroken_);
       }
-      if (playerNum_ != 0) {
-        output.writeUInt32(6, playerNum_);
-      }
-      if (gCAEMIGCBAK_ != 0) {
-        output.writeUInt32(7, gCAEMIGCBAK_);
-      }
-      if (aFHOPKKJCJF_ != 0F) {
-        output.writeFloat(9, aFHOPKKJCJF_);
+      if (pJBEOHCDLNJ_ != 0F) {
+        output.writeFloat(15, pJBEOHCDLNJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +316,29 @@ public final class AbilityMixinElementShieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fFMBPIKIJAP_ != 0F) {
+      if (hNKBJDACIGL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, fFMBPIKIJAP_);
+          .computeUInt32Size(8, hNKBJDACIGL_);
       }
-      if (fIEFKGHCBBO_ != 0F) {
+      if (bBCMJOGEOPC_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, fIEFKGHCBBO_);
+          .computeFloatSize(9, bBCMJOGEOPC_);
+      }
+      if (lMABPNEGCKP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, lMABPNEGCKP_);
+      }
+      if (bMJAKOOADEK_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(11, bMJAKOOADEK_);
       }
       if (isShieldBroken_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isShieldBroken_);
+          .computeBoolSize(14, isShieldBroken_);
       }
-      if (playerNum_ != 0) {
+      if (pJBEOHCDLNJ_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playerNum_);
-      }
-      if (gCAEMIGCBAK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, gCAEMIGCBAK_);
-      }
-      if (aFHOPKKJCJF_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(9, aFHOPKKJCJF_);
+          .computeFloatSize(15, pJBEOHCDLNJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,21 +355,21 @@ public final class AbilityMixinElementShieldOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield other = (emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield) obj;
 
+      if (java.lang.Float.floatToIntBits(getBMJAKOOADEK())
+          != java.lang.Float.floatToIntBits(
+              other.getBMJAKOOADEK())) return false;
       if (getIsShieldBroken()
           != other.getIsShieldBroken()) return false;
-      if (java.lang.Float.floatToIntBits(getFIEFKGHCBBO())
+      if (java.lang.Float.floatToIntBits(getPJBEOHCDLNJ())
           != java.lang.Float.floatToIntBits(
-              other.getFIEFKGHCBBO())) return false;
-      if (java.lang.Float.floatToIntBits(getAFHOPKKJCJF())
+              other.getPJBEOHCDLNJ())) return false;
+      if (java.lang.Float.floatToIntBits(getBBCMJOGEOPC())
           != java.lang.Float.floatToIntBits(
-              other.getAFHOPKKJCJF())) return false;
-      if (getGCAEMIGCBAK()
-          != other.getGCAEMIGCBAK()) return false;
-      if (java.lang.Float.floatToIntBits(getFFMBPIKIJAP())
-          != java.lang.Float.floatToIntBits(
-              other.getFFMBPIKIJAP())) return false;
-      if (getPlayerNum()
-          != other.getPlayerNum()) return false;
+              other.getBBCMJOGEOPC())) return false;
+      if (getLMABPNEGCKP()
+          != other.getLMABPNEGCKP()) return false;
+      if (getHNKBJDACIGL()
+          != other.getHNKBJDACIGL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,22 +381,22 @@ public final class AbilityMixinElementShieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BMJAKOOADEK_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getBMJAKOOADEK());
       hash = (37 * hash) + IS_SHIELD_BROKEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShieldBroken());
-      hash = (37 * hash) + FIEFKGHCBBO_FIELD_NUMBER;
+      hash = (37 * hash) + PJBEOHCDLNJ_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFIEFKGHCBBO());
-      hash = (37 * hash) + AFHOPKKJCJF_FIELD_NUMBER;
+          getPJBEOHCDLNJ());
+      hash = (37 * hash) + BBCMJOGEOPC_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAFHOPKKJCJF());
-      hash = (37 * hash) + GCAEMIGCBAK_FIELD_NUMBER;
-      hash = (53 * hash) + getGCAEMIGCBAK();
-      hash = (37 * hash) + FFMBPIKIJAP_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFFMBPIKIJAP());
-      hash = (37 * hash) + PLAYER_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerNum();
+          getBBCMJOGEOPC());
+      hash = (37 * hash) + LMABPNEGCKP_FIELD_NUMBER;
+      hash = (53 * hash) + getLMABPNEGCKP();
+      hash = (37 * hash) + HNKBJDACIGL_FIELD_NUMBER;
+      hash = (53 * hash) + getHNKBJDACIGL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -449,10 +493,6 @@ public final class AbilityMixinElementShieldOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HLPPHMDAIKF
-     * </pre>
-     *
      * Protobuf type {@code AbilityMixinElementShield}
      */
     public static final class Builder extends
@@ -490,17 +530,17 @@ public final class AbilityMixinElementShieldOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bMJAKOOADEK_ = 0F;
+
         isShieldBroken_ = false;
 
-        fIEFKGHCBBO_ = 0F;
+        pJBEOHCDLNJ_ = 0F;
 
-        aFHOPKKJCJF_ = 0F;
+        bBCMJOGEOPC_ = 0F;
 
-        gCAEMIGCBAK_ = 0;
+        lMABPNEGCKP_ = 0;
 
-        fFMBPIKIJAP_ = 0F;
-
-        playerNum_ = 0;
+        hNKBJDACIGL_ = 0;
 
         return this;
       }
@@ -528,12 +568,12 @@ public final class AbilityMixinElementShieldOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield result = new emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield(this);
+        result.bMJAKOOADEK_ = bMJAKOOADEK_;
         result.isShieldBroken_ = isShieldBroken_;
-        result.fIEFKGHCBBO_ = fIEFKGHCBBO_;
-        result.aFHOPKKJCJF_ = aFHOPKKJCJF_;
-        result.gCAEMIGCBAK_ = gCAEMIGCBAK_;
-        result.fFMBPIKIJAP_ = fFMBPIKIJAP_;
-        result.playerNum_ = playerNum_;
+        result.pJBEOHCDLNJ_ = pJBEOHCDLNJ_;
+        result.bBCMJOGEOPC_ = bBCMJOGEOPC_;
+        result.lMABPNEGCKP_ = lMABPNEGCKP_;
+        result.hNKBJDACIGL_ = hNKBJDACIGL_;
         onBuilt();
         return result;
       }
@@ -582,23 +622,23 @@ public final class AbilityMixinElementShieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinElementShieldOuterClass.AbilityMixinElementShield.getDefaultInstance()) return this;
+        if (other.getBMJAKOOADEK() != 0F) {
+          setBMJAKOOADEK(other.getBMJAKOOADEK());
+        }
         if (other.getIsShieldBroken() != false) {
           setIsShieldBroken(other.getIsShieldBroken());
         }
-        if (other.getFIEFKGHCBBO() != 0F) {
-          setFIEFKGHCBBO(other.getFIEFKGHCBBO());
+        if (other.getPJBEOHCDLNJ() != 0F) {
+          setPJBEOHCDLNJ(other.getPJBEOHCDLNJ());
         }
-        if (other.getAFHOPKKJCJF() != 0F) {
-          setAFHOPKKJCJF(other.getAFHOPKKJCJF());
+        if (other.getBBCMJOGEOPC() != 0F) {
+          setBBCMJOGEOPC(other.getBBCMJOGEOPC());
         }
-        if (other.getGCAEMIGCBAK() != 0) {
-          setGCAEMIGCBAK(other.getGCAEMIGCBAK());
+        if (other.getLMABPNEGCKP() != 0) {
+          setLMABPNEGCKP(other.getLMABPNEGCKP());
         }
-        if (other.getFFMBPIKIJAP() != 0F) {
-          setFFMBPIKIJAP(other.getFFMBPIKIJAP());
-        }
-        if (other.getPlayerNum() != 0) {
-          setPlayerNum(other.getPlayerNum());
+        if (other.getHNKBJDACIGL() != 0) {
+          setHNKBJDACIGL(other.getHNKBJDACIGL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -629,9 +669,56 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
+      private float bMJAKOOADEK_ ;
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 11;</code>
+       * @return The bMJAKOOADEK.
+       */
+      @java.lang.Override
+      public float getBMJAKOOADEK() {
+        return bMJAKOOADEK_;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 11;</code>
+       * @param value The bMJAKOOADEK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBMJAKOOADEK(float value) {
+        
+        bMJAKOOADEK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>float BMJAKOOADEK = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBMJAKOOADEK() {
+        
+        bMJAKOOADEK_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private boolean isShieldBroken_ ;
       /**
-       * <code>bool is_shield_broken = 5;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_shield_broken = 14;</code>
        * @return The isShieldBroken.
        */
       @java.lang.Override
@@ -639,7 +726,11 @@ public final class AbilityMixinElementShieldOuterClass {
         return isShieldBroken_;
       }
       /**
-       * <code>bool is_shield_broken = 5;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_shield_broken = 14;</code>
        * @param value The isShieldBroken to set.
        * @return This builder for chaining.
        */
@@ -650,7 +741,11 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
       /**
-       * <code>bool is_shield_broken = 5;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>bool is_shield_broken = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShieldBroken() {
@@ -660,157 +755,174 @@ public final class AbilityMixinElementShieldOuterClass {
         return this;
       }
 
-      private float fIEFKGHCBBO_ ;
+      private float pJBEOHCDLNJ_ ;
       /**
-       * <code>float FIEFKGHCBBO = 4;</code>
-       * @return The fIEFKGHCBBO.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 15;</code>
+       * @return The pJBEOHCDLNJ.
        */
       @java.lang.Override
-      public float getFIEFKGHCBBO() {
-        return fIEFKGHCBBO_;
+      public float getPJBEOHCDLNJ() {
+        return pJBEOHCDLNJ_;
       }
       /**
-       * <code>float FIEFKGHCBBO = 4;</code>
-       * @param value The fIEFKGHCBBO to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 15;</code>
+       * @param value The pJBEOHCDLNJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFIEFKGHCBBO(float value) {
+      public Builder setPJBEOHCDLNJ(float value) {
         
-        fIEFKGHCBBO_ = value;
+        pJBEOHCDLNJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FIEFKGHCBBO = 4;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>float PJBEOHCDLNJ = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFIEFKGHCBBO() {
+      public Builder clearPJBEOHCDLNJ() {
         
-        fIEFKGHCBBO_ = 0F;
+        pJBEOHCDLNJ_ = 0F;
         onChanged();
         return this;
       }
 
-      private float aFHOPKKJCJF_ ;
+      private float bBCMJOGEOPC_ ;
       /**
-       * <code>float AFHOPKKJCJF = 9;</code>
-       * @return The aFHOPKKJCJF.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 9;</code>
+       * @return The bBCMJOGEOPC.
        */
       @java.lang.Override
-      public float getAFHOPKKJCJF() {
-        return aFHOPKKJCJF_;
+      public float getBBCMJOGEOPC() {
+        return bBCMJOGEOPC_;
       }
       /**
-       * <code>float AFHOPKKJCJF = 9;</code>
-       * @param value The aFHOPKKJCJF to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 9;</code>
+       * @param value The bBCMJOGEOPC to set.
        * @return This builder for chaining.
        */
-      public Builder setAFHOPKKJCJF(float value) {
+      public Builder setBBCMJOGEOPC(float value) {
         
-        aFHOPKKJCJF_ = value;
+        bBCMJOGEOPC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float AFHOPKKJCJF = 9;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>float BBCMJOGEOPC = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAFHOPKKJCJF() {
+      public Builder clearBBCMJOGEOPC() {
         
-        aFHOPKKJCJF_ = 0F;
+        bBCMJOGEOPC_ = 0F;
         onChanged();
         return this;
       }
 
-      private int gCAEMIGCBAK_ ;
+      private int lMABPNEGCKP_ ;
       /**
-       * <code>uint32 GCAEMIGCBAK = 7;</code>
-       * @return The gCAEMIGCBAK.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 LMABPNEGCKP = 10;</code>
+       * @return The lMABPNEGCKP.
        */
       @java.lang.Override
-      public int getGCAEMIGCBAK() {
-        return gCAEMIGCBAK_;
+      public int getLMABPNEGCKP() {
+        return lMABPNEGCKP_;
       }
       /**
-       * <code>uint32 GCAEMIGCBAK = 7;</code>
-       * @param value The gCAEMIGCBAK to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 LMABPNEGCKP = 10;</code>
+       * @param value The lMABPNEGCKP to set.
        * @return This builder for chaining.
        */
-      public Builder setGCAEMIGCBAK(int value) {
+      public Builder setLMABPNEGCKP(int value) {
         
-        gCAEMIGCBAK_ = value;
+        lMABPNEGCKP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCAEMIGCBAK = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 LMABPNEGCKP = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCAEMIGCBAK() {
+      public Builder clearLMABPNEGCKP() {
         
-        gCAEMIGCBAK_ = 0;
+        lMABPNEGCKP_ = 0;
         onChanged();
         return this;
       }
 
-      private float fFMBPIKIJAP_ ;
+      private int hNKBJDACIGL_ ;
       /**
-       * <code>float FFMBPIKIJAP = 3;</code>
-       * @return The fFMBPIKIJAP.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 8;</code>
+       * @return The hNKBJDACIGL.
        */
       @java.lang.Override
-      public float getFFMBPIKIJAP() {
-        return fFMBPIKIJAP_;
+      public int getHNKBJDACIGL() {
+        return hNKBJDACIGL_;
       }
       /**
-       * <code>float FFMBPIKIJAP = 3;</code>
-       * @param value The fFMBPIKIJAP to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 8;</code>
+       * @param value The hNKBJDACIGL to set.
        * @return This builder for chaining.
        */
-      public Builder setFFMBPIKIJAP(float value) {
+      public Builder setHNKBJDACIGL(int value) {
         
-        fFMBPIKIJAP_ = value;
+        hNKBJDACIGL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FFMBPIKIJAP = 3;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 HNKBJDACIGL = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFFMBPIKIJAP() {
+      public Builder clearHNKBJDACIGL() {
         
-        fFMBPIKIJAP_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int playerNum_ ;
-      /**
-       * <code>uint32 player_num = 6;</code>
-       * @return The playerNum.
-       */
-      @java.lang.Override
-      public int getPlayerNum() {
-        return playerNum_;
-      }
-      /**
-       * <code>uint32 player_num = 6;</code>
-       * @param value The playerNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerNum(int value) {
-        
-        playerNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerNum() {
-        
-        playerNum_ = 0;
+        hNKBJDACIGL_ = 0;
         onChanged();
         return this;
       }
@@ -881,12 +993,12 @@ public final class AbilityMixinElementShieldOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037AbilityMixinElementShield.proto\"\235\001\n\031Ab" +
-      "ilityMixinElementShield\022\030\n\020is_shield_bro" +
-      "ken\030\005 \001(\010\022\023\n\013FIEFKGHCBBO\030\004 \001(\002\022\023\n\013AFHOPK" +
-      "KJCJF\030\t \001(\002\022\023\n\013GCAEMIGCBAK\030\007 \001(\r\022\023\n\013FFMB" +
-      "PIKIJAP\030\003 \001(\002\022\022\n\nplayer_num\030\006 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\037AbilityMixinElementShield.proto\"\236\001\n\031Ab" +
+      "ilityMixinElementShield\022\023\n\013BMJAKOOADEK\030\013" +
+      " \001(\002\022\030\n\020is_shield_broken\030\016 \001(\010\022\023\n\013PJBEOH" +
+      "CDLNJ\030\017 \001(\002\022\023\n\013BBCMJOGEOPC\030\t \001(\002\022\023\n\013LMAB" +
+      "PNEGCKP\030\n \001(\r\022\023\n\013HNKBJDACIGL\030\010 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -897,7 +1009,7 @@ public final class AbilityMixinElementShieldOuterClass {
     internal_static_AbilityMixinElementShield_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinElementShield_descriptor,
-        new java.lang.String[] { "IsShieldBroken", "FIEFKGHCBBO", "AFHOPKKJCJF", "GCAEMIGCBAK", "FFMBPIKIJAP", "PlayerNum", });
+        new java.lang.String[] { "BMJAKOOADEK", "IsShieldBroken", "PJBEOHCDLNJ", "BBCMJOGEOPC", "LMABPNEGCKP", "HNKBJDACIGL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -15,10 +15,6 @@ public final class BargainResultTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: AGEMDFOGNBD
-   * </pre>
-   *
    * Protobuf enum {@code BargainResultType}
    */
   public enum BargainResultType

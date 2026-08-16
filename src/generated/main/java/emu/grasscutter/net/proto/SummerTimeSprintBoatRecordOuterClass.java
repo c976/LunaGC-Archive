@@ -19,45 +19,45 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>uint32 start_time = 2;</code>
+     * @return The startTime.
+     */
+    int getStartTime();
+
+    /**
+     * <code>bool is_touched = 4;</code>
+     * @return The isTouched.
+     */
+    boolean getIsTouched();
+
+    /**
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @return A list containing the watcherIdList.
      */
     java.util.List<java.lang.Integer> getWatcherIdListList();
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @return The count of watcherIdList.
      */
     int getWatcherIdListCount();
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
     int getWatcherIdList(int index);
 
     /**
-     * <code>uint32 start_time = 5;</code>
-     * @return The startTime.
-     */
-    int getStartTime();
-
-    /**
-     * <code>uint32 group_id = 2;</code>
-     * @return The groupId.
-     */
-    int getGroupId();
-
-    /**
-     * <code>bool is_touched = 1;</code>
-     * @return The isTouched.
-     */
-    boolean getIsTouched();
-
-    /**
-     * <code>uint32 best_score = 14;</code>
+     * <code>uint32 best_score = 7;</code>
      * @return The bestScore.
      */
     int getBestScore();
+
+    /**
+     * <code>uint32 group_id = 11;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
   }
   /**
    * Protobuf type {@code SummerTimeSprintBoatRecord}
@@ -106,22 +106,17 @@ public final class SummerTimeSprintBoatRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isTouched_ = input.readBool();
-              break;
-            }
             case 16: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
 
               startTime_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 32: {
+
+              isTouched_ = input.readBool();
+              break;
+            }
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 watcherIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -129,7 +124,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
               watcherIdList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,9 +137,14 @@ public final class SummerTimeSprintBoatRecordOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 56: {
 
               bestScore_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -182,10 +182,32 @@ public final class SummerTimeSprintBoatRecordOuterClass {
               emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.class, emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.Builder.class);
     }
 
-    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 10;
+    public static final int START_TIME_FIELD_NUMBER = 2;
+    private int startTime_;
+    /**
+     * <code>uint32 start_time = 2;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public int getStartTime() {
+      return startTime_;
+    }
+
+    public static final int IS_TOUCHED_FIELD_NUMBER = 4;
+    private boolean isTouched_;
+    /**
+     * <code>bool is_touched = 4;</code>
+     * @return The isTouched.
+     */
+    @java.lang.Override
+    public boolean getIsTouched() {
+      return isTouched_;
+    }
+
+    public static final int WATCHER_ID_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList watcherIdList_;
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @return A list containing the watcherIdList.
      */
     @java.lang.Override
@@ -194,14 +216,14 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       return watcherIdList_;
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @return The count of watcherIdList.
      */
     public int getWatcherIdListCount() {
       return watcherIdList_.size();
     }
     /**
-     * <code>repeated uint32 watcher_id_list = 10;</code>
+     * <code>repeated uint32 watcher_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The watcherIdList at the given index.
      */
@@ -210,48 +232,26 @@ public final class SummerTimeSprintBoatRecordOuterClass {
     }
     private int watcherIdListMemoizedSerializedSize = -1;
 
-    public static final int START_TIME_FIELD_NUMBER = 5;
-    private int startTime_;
-    /**
-     * <code>uint32 start_time = 5;</code>
-     * @return The startTime.
-     */
-    @java.lang.Override
-    public int getStartTime() {
-      return startTime_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 2;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 2;</code>
-     * @return The groupId.
-     */
-    @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
-    }
-
-    public static final int IS_TOUCHED_FIELD_NUMBER = 1;
-    private boolean isTouched_;
-    /**
-     * <code>bool is_touched = 1;</code>
-     * @return The isTouched.
-     */
-    @java.lang.Override
-    public boolean getIsTouched() {
-      return isTouched_;
-    }
-
-    public static final int BEST_SCORE_FIELD_NUMBER = 14;
+    public static final int BEST_SCORE_FIELD_NUMBER = 7;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 14;</code>
+     * <code>uint32 best_score = 7;</code>
      * @return The bestScore.
      */
     @java.lang.Override
     public int getBestScore() {
       return bestScore_;
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 11;
+    private int groupId_;
+    /**
+     * <code>uint32 group_id = 11;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,24 +269,24 @@ public final class SummerTimeSprintBoatRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isTouched_ != false) {
-        output.writeBool(1, isTouched_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(2, groupId_);
-      }
       if (startTime_ != 0) {
-        output.writeUInt32(5, startTime_);
+        output.writeUInt32(2, startTime_);
+      }
+      if (isTouched_ != false) {
+        output.writeBool(4, isTouched_);
       }
       if (getWatcherIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(watcherIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < watcherIdList_.size(); i++) {
         output.writeUInt32NoTag(watcherIdList_.getInt(i));
       }
       if (bestScore_ != 0) {
-        output.writeUInt32(14, bestScore_);
+        output.writeUInt32(7, bestScore_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(11, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,17 +297,13 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTouched_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isTouched_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, groupId_);
-      }
       if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, startTime_);
+          .computeUInt32Size(2, startTime_);
+      }
+      if (isTouched_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isTouched_);
       }
       {
         int dataSize = 0;
@@ -325,7 +321,11 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bestScore_);
+          .computeUInt32Size(7, bestScore_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,16 +342,16 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord other = (emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord) obj;
 
-      if (!getWatcherIdListList()
-          .equals(other.getWatcherIdListList())) return false;
       if (getStartTime()
           != other.getStartTime()) return false;
-      if (getGroupId()
-          != other.getGroupId()) return false;
       if (getIsTouched()
           != other.getIsTouched()) return false;
+      if (!getWatcherIdListList()
+          .equals(other.getWatcherIdListList())) return false;
       if (getBestScore()
           != other.getBestScore()) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,19 +363,19 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
+      hash = (37 * hash) + IS_TOUCHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTouched());
       if (getWatcherIdListCount() > 0) {
         hash = (37 * hash) + WATCHER_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getWatcherIdListList().hashCode();
       }
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + IS_TOUCHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTouched());
       hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getBestScore();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,15 +509,15 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        watcherIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         startTime_ = 0;
-
-        groupId_ = 0;
 
         isTouched_ = false;
 
+        watcherIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         bestScore_ = 0;
+
+        groupId_ = 0;
 
         return this;
       }
@@ -546,15 +546,15 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       public emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord buildPartial() {
         emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord result = new emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord(this);
         int from_bitField0_ = bitField0_;
+        result.startTime_ = startTime_;
+        result.isTouched_ = isTouched_;
         if (((bitField0_ & 0x00000001) != 0)) {
           watcherIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.watcherIdList_ = watcherIdList_;
-        result.startTime_ = startTime_;
-        result.groupId_ = groupId_;
-        result.isTouched_ = isTouched_;
         result.bestScore_ = bestScore_;
+        result.groupId_ = groupId_;
         onBuilt();
         return result;
       }
@@ -603,6 +603,12 @@ public final class SummerTimeSprintBoatRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord other) {
         if (other == emu.grasscutter.net.proto.SummerTimeSprintBoatRecordOuterClass.SummerTimeSprintBoatRecord.getDefaultInstance()) return this;
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getIsTouched() != false) {
+          setIsTouched(other.getIsTouched());
+        }
         if (!other.watcherIdList_.isEmpty()) {
           if (watcherIdList_.isEmpty()) {
             watcherIdList_ = other.watcherIdList_;
@@ -613,17 +619,11 @@ public final class SummerTimeSprintBoatRecordOuterClass {
           }
           onChanged();
         }
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
+        if (other.getBestScore() != 0) {
+          setBestScore(other.getBestScore());
         }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
-        }
-        if (other.getIsTouched() != false) {
-          setIsTouched(other.getIsTouched());
-        }
-        if (other.getBestScore() != 0) {
-          setBestScore(other.getBestScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,6 +655,68 @@ public final class SummerTimeSprintBoatRecordOuterClass {
       }
       private int bitField0_;
 
+      private int startTime_ ;
+      /**
+       * <code>uint32 start_time = 2;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public int getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>uint32 start_time = 2;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(int value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isTouched_ ;
+      /**
+       * <code>bool is_touched = 4;</code>
+       * @return The isTouched.
+       */
+      @java.lang.Override
+      public boolean getIsTouched() {
+        return isTouched_;
+      }
+      /**
+       * <code>bool is_touched = 4;</code>
+       * @param value The isTouched to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsTouched(boolean value) {
+        
+        isTouched_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_touched = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsTouched() {
+        
+        isTouched_ = false;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList watcherIdList_ = emptyIntList();
       private void ensureWatcherIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -663,7 +725,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @return A list containing the watcherIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -672,14 +734,14 @@ public final class SummerTimeSprintBoatRecordOuterClass {
                  java.util.Collections.unmodifiableList(watcherIdList_) : watcherIdList_;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @return The count of watcherIdList.
        */
       public int getWatcherIdListCount() {
         return watcherIdList_.size();
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @param index The index of the element to return.
        * @return The watcherIdList at the given index.
        */
@@ -687,7 +749,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return watcherIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The watcherIdList to set.
        * @return This builder for chaining.
@@ -700,7 +762,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @param value The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -711,7 +773,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @param values The watcherIdList to add.
        * @return This builder for chaining.
        */
@@ -724,7 +786,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 watcher_id_list = 10;</code>
+       * <code>repeated uint32 watcher_id_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherIdList() {
@@ -734,102 +796,9 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return this;
       }
 
-      private int startTime_ ;
-      /**
-       * <code>uint32 start_time = 5;</code>
-       * @return The startTime.
-       */
-      @java.lang.Override
-      public int getStartTime() {
-        return startTime_;
-      }
-      /**
-       * <code>uint32 start_time = 5;</code>
-       * @param value The startTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartTime(int value) {
-        
-        startTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 start_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStartTime() {
-        
-        startTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 2;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 2;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isTouched_ ;
-      /**
-       * <code>bool is_touched = 1;</code>
-       * @return The isTouched.
-       */
-      @java.lang.Override
-      public boolean getIsTouched() {
-        return isTouched_;
-      }
-      /**
-       * <code>bool is_touched = 1;</code>
-       * @param value The isTouched to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTouched(boolean value) {
-        
-        isTouched_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_touched = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTouched() {
-        
-        isTouched_ = false;
-        onChanged();
-        return this;
-      }
-
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 7;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -837,7 +806,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 7;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -848,12 +817,43 @@ public final class SummerTimeSprintBoatRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
         
         bestScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
         onChanged();
         return this;
       }
@@ -925,10 +925,10 @@ public final class SummerTimeSprintBoatRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SummerTimeSprintBoatRecord.proto\"\203\001\n\032S" +
-      "ummerTimeSprintBoatRecord\022\027\n\017watcher_id_" +
-      "list\030\n \003(\r\022\022\n\nstart_time\030\005 \001(\r\022\020\n\010group_" +
-      "id\030\002 \001(\r\022\022\n\nis_touched\030\001 \001(\010\022\022\n\nbest_sco" +
-      "re\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "ummerTimeSprintBoatRecord\022\022\n\nstart_time\030" +
+      "\002 \001(\r\022\022\n\nis_touched\030\004 \001(\010\022\027\n\017watcher_id_" +
+      "list\030\006 \003(\r\022\022\n\nbest_score\030\007 \001(\r\022\020\n\010group_" +
+      "id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -940,7 +940,7 @@ public final class SummerTimeSprintBoatRecordOuterClass {
     internal_static_SummerTimeSprintBoatRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeSprintBoatRecord_descriptor,
-        new java.lang.String[] { "WatcherIdList", "StartTime", "GroupId", "IsTouched", "BestScore", });
+        new java.lang.String[] { "StartTime", "IsTouched", "WatcherIdList", "BestScore", "GroupId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,40 +20,40 @@ public final class SandwormLevelStateOuterClass {
   public enum SandwormLevelState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SANDWORM_LEVEL_STATE_NOT_OPEN = 0;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_NOT_OPEN = 0;</code>
      */
-    SANDWORM_LEVEL_STATE_NOT_OPEN(0),
+    BJECDFMFPAJ_SANDWORM_LEVEL_NOT_OPEN(0),
     /**
-     * <code>SANDWORM_LEVEL_STATE_PRE_QUEST = 1;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_PRE_QUEST = 1;</code>
      */
-    SANDWORM_LEVEL_STATE_PRE_QUEST(1),
+    BJECDFMFPAJ_SANDWORM_LEVEL_PRE_QUEST(1),
     /**
-     * <code>SANDWORM_LEVEL_STATE_START = 2;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_START = 2;</code>
      */
-    SANDWORM_LEVEL_STATE_START(2),
+    BJECDFMFPAJ_SANDWORM_LEVEL_START(2),
     /**
-     * <code>SANDWORM_LEVEL_STATE_SEQUEL_QUEST = 3;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_SEQUEL_QUEST = 3;</code>
      */
-    SANDWORM_LEVEL_STATE_SEQUEL_QUEST(3),
+    BJECDFMFPAJ_SANDWORM_LEVEL_SEQUEL_QUEST(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SANDWORM_LEVEL_STATE_NOT_OPEN = 0;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_NOT_OPEN = 0;</code>
      */
-    public static final int SANDWORM_LEVEL_STATE_NOT_OPEN_VALUE = 0;
+    public static final int BJECDFMFPAJ_SANDWORM_LEVEL_NOT_OPEN_VALUE = 0;
     /**
-     * <code>SANDWORM_LEVEL_STATE_PRE_QUEST = 1;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_PRE_QUEST = 1;</code>
      */
-    public static final int SANDWORM_LEVEL_STATE_PRE_QUEST_VALUE = 1;
+    public static final int BJECDFMFPAJ_SANDWORM_LEVEL_PRE_QUEST_VALUE = 1;
     /**
-     * <code>SANDWORM_LEVEL_STATE_START = 2;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_START = 2;</code>
      */
-    public static final int SANDWORM_LEVEL_STATE_START_VALUE = 2;
+    public static final int BJECDFMFPAJ_SANDWORM_LEVEL_START_VALUE = 2;
     /**
-     * <code>SANDWORM_LEVEL_STATE_SEQUEL_QUEST = 3;</code>
+     * <code>BJECDFMFPAJ_SANDWORM_LEVEL_SEQUEL_QUEST = 3;</code>
      */
-    public static final int SANDWORM_LEVEL_STATE_SEQUEL_QUEST_VALUE = 3;
+    public static final int BJECDFMFPAJ_SANDWORM_LEVEL_SEQUEL_QUEST_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class SandwormLevelStateOuterClass {
      */
     public static SandwormLevelState forNumber(int value) {
       switch (value) {
-        case 0: return SANDWORM_LEVEL_STATE_NOT_OPEN;
-        case 1: return SANDWORM_LEVEL_STATE_PRE_QUEST;
-        case 2: return SANDWORM_LEVEL_STATE_START;
-        case 3: return SANDWORM_LEVEL_STATE_SEQUEL_QUEST;
+        case 0: return BJECDFMFPAJ_SANDWORM_LEVEL_NOT_OPEN;
+        case 1: return BJECDFMFPAJ_SANDWORM_LEVEL_PRE_QUEST;
+        case 2: return BJECDFMFPAJ_SANDWORM_LEVEL_START;
+        case 3: return BJECDFMFPAJ_SANDWORM_LEVEL_SEQUEL_QUEST;
         default: return null;
       }
     }
@@ -149,12 +149,13 @@ public final class SandwormLevelStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030SandwormLevelState.proto*\242\001\n\022SandwormL" +
-      "evelState\022!\n\035SANDWORM_LEVEL_STATE_NOT_OP" +
-      "EN\020\000\022\"\n\036SANDWORM_LEVEL_STATE_PRE_QUEST\020\001" +
-      "\022\036\n\032SANDWORM_LEVEL_STATE_START\020\002\022%\n!SAND" +
-      "WORM_LEVEL_STATE_SEQUEL_QUEST\020\003B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\030SandwormLevelState.proto*\272\001\n\022SandwormL" +
+      "evelState\022\'\n#BJECDFMFPAJ_SANDWORM_LEVEL_" +
+      "NOT_OPEN\020\000\022(\n$BJECDFMFPAJ_SANDWORM_LEVEL" +
+      "_PRE_QUEST\020\001\022$\n BJECDFMFPAJ_SANDWORM_LEV" +
+      "EL_START\020\002\022+\n\'BJECDFMFPAJ_SANDWORM_LEVEL" +
+      "_SEQUEL_QUEST\020\003B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

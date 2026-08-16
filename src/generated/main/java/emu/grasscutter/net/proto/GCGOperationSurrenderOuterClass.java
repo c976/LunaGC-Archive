@@ -19,10 +19,6 @@ public final class GCGOperationSurrenderOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * Obf: BGEEMCOJKPG
-   * </pre>
-   *
    * Protobuf type {@code GCGOperationSurrender}
    */
   public static final class GCGOperationSurrender extends
@@ -244,10 +240,6 @@ public final class GCGOperationSurrenderOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BGEEMCOJKPG
-     * </pre>
-     *
      * Protobuf type {@code GCGOperationSurrender}
      */
     public static final class Builder extends

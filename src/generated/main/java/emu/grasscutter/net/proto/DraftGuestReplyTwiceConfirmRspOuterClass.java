@@ -19,27 +19,26 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 draft_id = 12;</code>
-     * @return The draftId.
-     */
-    int getDraftId();
-
-    /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 draft_id = 15;</code>
+     * @return The draftId.
+     */
+    int getDraftId();
   }
   /**
    * <pre>
-   * CmdId: 1114
-   * Obf: DNLPDFFLIIK
+   * CmdId: 21862
    * </pre>
    *
    * Protobuf type {@code DraftGuestReplyTwiceConfirmRsp}
@@ -86,19 +85,19 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
+
+              isAgree_ = input.readBool();
+              break;
+            }
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
-
-              draftId_ = input.readUInt32();
-              break;
-            }
             case 120: {
 
-              isAgree_ = input.readBool();
+              draftId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
               emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmRspOuterClass.DraftGuestReplyTwiceConfirmRsp.class, emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmRspOuterClass.DraftGuestReplyTwiceConfirmRsp.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 15;
+    public static final int IS_AGREE_FIELD_NUMBER = 1;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 15;</code>
+     * <code>bool is_agree = 1;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -144,26 +143,26 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
       return isAgree_;
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 12;
-    private int draftId_;
-    /**
-     * <code>uint32 draft_id = 12;</code>
-     * @return The draftId.
-     */
-    @java.lang.Override
-    public int getDraftId() {
-      return draftId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int DRAFT_ID_FIELD_NUMBER = 15;
+    private int draftId_;
+    /**
+     * <code>uint32 draft_id = 15;</code>
+     * @return The draftId.
+     */
+    @java.lang.Override
+    public int getDraftId() {
+      return draftId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isAgree_ != false) {
+        output.writeBool(1, isAgree_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (draftId_ != 0) {
-        output.writeUInt32(12, draftId_);
-      }
-      if (isAgree_ != false) {
-        output.writeBool(15, isAgree_);
+        output.writeUInt32(15, draftId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isAgree_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isAgree_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       if (draftId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, draftId_);
-      }
-      if (isAgree_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isAgree_);
+          .computeUInt32Size(15, draftId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +226,10 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
 
       if (getIsAgree()
           != other.getIsAgree()) return false;
-      if (getDraftId()
-          != other.getDraftId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getDraftId()
+          != other.getDraftId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -245,10 +244,10 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
       hash = (37 * hash) + IS_AGREE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAgree());
-      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDraftId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDraftId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +345,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1114
-     * Obf: DNLPDFFLIIK
+     * CmdId: 21862
      * </pre>
      *
      * Protobuf type {@code DraftGuestReplyTwiceConfirmRsp}
@@ -389,9 +387,9 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         super.clear();
         isAgree_ = false;
 
-        draftId_ = 0;
-
         retcode_ = 0;
+
+        draftId_ = 0;
 
         return this;
       }
@@ -420,8 +418,8 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
       public emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmRspOuterClass.DraftGuestReplyTwiceConfirmRsp buildPartial() {
         emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmRspOuterClass.DraftGuestReplyTwiceConfirmRsp result = new emu.grasscutter.net.proto.DraftGuestReplyTwiceConfirmRspOuterClass.DraftGuestReplyTwiceConfirmRsp(this);
         result.isAgree_ = isAgree_;
-        result.draftId_ = draftId_;
         result.retcode_ = retcode_;
+        result.draftId_ = draftId_;
         onBuilt();
         return result;
       }
@@ -473,11 +471,11 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         if (other.getIsAgree() != false) {
           setIsAgree(other.getIsAgree());
         }
-        if (other.getDraftId() != 0) {
-          setDraftId(other.getDraftId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getDraftId() != 0) {
+          setDraftId(other.getDraftId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -510,7 +508,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
 
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 1;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -518,7 +516,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 1;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -529,7 +527,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 15;</code>
+       * <code>bool is_agree = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -539,40 +537,9 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         return this;
       }
 
-      private int draftId_ ;
-      /**
-       * <code>uint32 draft_id = 12;</code>
-       * @return The draftId.
-       */
-      @java.lang.Override
-      public int getDraftId() {
-        return draftId_;
-      }
-      /**
-       * <code>uint32 draft_id = 12;</code>
-       * @param value The draftId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDraftId(int value) {
-        
-        draftId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 draft_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDraftId() {
-        
-        draftId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -580,7 +547,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -591,12 +558,43 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int draftId_ ;
+      /**
+       * <code>uint32 draft_id = 15;</code>
+       * @return The draftId.
+       */
+      @java.lang.Override
+      public int getDraftId() {
+        return draftId_;
+      }
+      /**
+       * <code>uint32 draft_id = 15;</code>
+       * @param value The draftId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDraftId(int value) {
+        
+        draftId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 draft_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDraftId() {
+        
+        draftId_ = 0;
         onChanged();
         return this;
       }
@@ -669,8 +667,8 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$DraftGuestReplyTwiceConfirmRsp.proto\"U" +
       "\n\036DraftGuestReplyTwiceConfirmRsp\022\020\n\010is_a" +
-      "gree\030\017 \001(\010\022\020\n\010draft_id\030\014 \001(\r\022\017\n\007retcode\030" +
-      "\007 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "gree\030\001 \001(\010\022\017\n\007retcode\030\010 \001(\005\022\020\n\010draft_id\030" +
+      "\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +680,7 @@ public final class DraftGuestReplyTwiceConfirmRspOuterClass {
     internal_static_DraftGuestReplyTwiceConfirmRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DraftGuestReplyTwiceConfirmRsp_descriptor,
-        new java.lang.String[] { "IsAgree", "DraftId", "Retcode", });
+        new java.lang.String[] { "IsAgree", "Retcode", "DraftId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

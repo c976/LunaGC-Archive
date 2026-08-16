@@ -20,7 +20,8 @@ public final class LeaveWorldNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 20875
+   * CmdId: 22405
+   * Obf: AFINGDDHMPO
    * </pre>
    *
    * Protobuf type {@code LeaveWorldNotify}
@@ -245,7 +246,8 @@ public final class LeaveWorldNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20875
+     * CmdId: 22405
+     * Obf: AFINGDDHMPO
      * </pre>
      *
      * Protobuf type {@code LeaveWorldNotify}

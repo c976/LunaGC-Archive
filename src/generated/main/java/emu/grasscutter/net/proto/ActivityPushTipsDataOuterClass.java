@@ -19,18 +19,30 @@ public final class ActivityPushTipsDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ActivityPushTipsState state = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.ActivityPushTipsState state = 13;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <code>.ActivityPushTipsState state = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.ActivityPushTipsState state = 13;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState getState();
 
     /**
-     * <code>uint32 activity_push_tips_id = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 activity_push_tips_id = 6;</code>
      * @return The activityPushTipsId.
      */
     int getActivityPushTipsId();
@@ -81,12 +93,12 @@ public final class ActivityPushTipsDataOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 48: {
 
               activityPushTipsId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
@@ -124,17 +136,25 @@ public final class ActivityPushTipsDataOuterClass {
               emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.class, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder.class);
     }
 
-    public static final int STATE_FIELD_NUMBER = 12;
+    public static final int STATE_FIELD_NUMBER = 13;
     private int state_;
     /**
-     * <code>.ActivityPushTipsState state = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.ActivityPushTipsState state = 13;</code>
      * @return The enum numeric value on the wire for state.
      */
     @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
-     * <code>.ActivityPushTipsState state = 12;</code>
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
+     * <code>.ActivityPushTipsState state = 13;</code>
      * @return The state.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState getState() {
@@ -143,10 +163,14 @@ public final class ActivityPushTipsDataOuterClass {
       return result == null ? emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.UNRECOGNIZED : result;
     }
 
-    public static final int ACTIVITY_PUSH_TIPS_ID_FIELD_NUMBER = 10;
+    public static final int ACTIVITY_PUSH_TIPS_ID_FIELD_NUMBER = 6;
     private int activityPushTipsId_;
     /**
-     * <code>uint32 activity_push_tips_id = 10;</code>
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
+     * <code>uint32 activity_push_tips_id = 6;</code>
      * @return The activityPushTipsId.
      */
     @java.lang.Override
@@ -169,10 +193,10 @@ public final class ActivityPushTipsDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityPushTipsId_ != 0) {
-        output.writeUInt32(10, activityPushTipsId_);
+        output.writeUInt32(6, activityPushTipsId_);
       }
-      if (state_ != emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.ACITITY_PUSH_TIPS_STATE_NONE.getNumber()) {
-        output.writeEnum(12, state_);
+      if (state_ != emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.ACTIVITY_PUSH_TIPS_STATE_NONE.getNumber()) {
+        output.writeEnum(13, state_);
       }
       unknownFields.writeTo(output);
     }
@@ -185,11 +209,11 @@ public final class ActivityPushTipsDataOuterClass {
       size = 0;
       if (activityPushTipsId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, activityPushTipsId_);
+          .computeUInt32Size(6, activityPushTipsId_);
       }
-      if (state_ != emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.ACITITY_PUSH_TIPS_STATE_NONE.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.ACTIVITY_PUSH_TIPS_STATE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, state_);
+          .computeEnumSize(13, state_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,14 +498,22 @@ public final class ActivityPushTipsDataOuterClass {
 
       private int state_ = 0;
       /**
-       * <code>.ActivityPushTipsState state = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.ActivityPushTipsState state = 13;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>.ActivityPushTipsState state = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.ActivityPushTipsState state = 13;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -492,7 +524,11 @@ public final class ActivityPushTipsDataOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityPushTipsState state = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.ActivityPushTipsState state = 13;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -502,7 +538,11 @@ public final class ActivityPushTipsDataOuterClass {
         return result == null ? emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ActivityPushTipsState state = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.ActivityPushTipsState state = 13;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -516,7 +556,11 @@ public final class ActivityPushTipsDataOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityPushTipsState state = 12;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>.ActivityPushTipsState state = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -528,7 +572,11 @@ public final class ActivityPushTipsDataOuterClass {
 
       private int activityPushTipsId_ ;
       /**
-       * <code>uint32 activity_push_tips_id = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_push_tips_id = 6;</code>
        * @return The activityPushTipsId.
        */
       @java.lang.Override
@@ -536,7 +584,11 @@ public final class ActivityPushTipsDataOuterClass {
         return activityPushTipsId_;
       }
       /**
-       * <code>uint32 activity_push_tips_id = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_push_tips_id = 6;</code>
        * @param value The activityPushTipsId to set.
        * @return This builder for chaining.
        */
@@ -547,7 +599,11 @@ public final class ActivityPushTipsDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_push_tips_id = 10;</code>
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
+       * <code>uint32 activity_push_tips_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityPushTipsId() {
@@ -625,8 +681,8 @@ public final class ActivityPushTipsDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032ActivityPushTipsData.proto\032\033ActivityPu" +
       "shTipsState.proto\"\\\n\024ActivityPushTipsDat" +
-      "a\022%\n\005state\030\014 \001(\0162\026.ActivityPushTipsState" +
-      "\022\035\n\025activity_push_tips_id\030\n \001(\rB\033\n\031emu.g" +
+      "a\022%\n\005state\030\r \001(\0162\026.ActivityPushTipsState" +
+      "\022\035\n\025activity_push_tips_id\030\006 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

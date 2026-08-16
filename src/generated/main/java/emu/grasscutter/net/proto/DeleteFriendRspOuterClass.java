@@ -25,12 +25,16 @@ public final class DeleteFriendRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 12;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
+   * <pre>
+   * CmdId: 20501
+   * </pre>
+   *
    * Protobuf type {@code DeleteFriendRsp}
    */
   public static final class DeleteFriendRsp extends
@@ -80,7 +84,7 @@ public final class DeleteFriendRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -128,10 +132,10 @@ public final class DeleteFriendRspOuterClass {
       return retcode_;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 8;
+    public static final int TARGET_UID_FIELD_NUMBER = 12;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 12;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -157,7 +161,7 @@ public final class DeleteFriendRspOuterClass {
         output.writeInt32(4, retcode_);
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(8, targetUid_);
+        output.writeUInt32(12, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,7 +178,7 @@ public final class DeleteFriendRspOuterClass {
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, targetUid_);
+          .computeUInt32Size(12, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class DeleteFriendRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20501
+     * </pre>
+     *
      * Protobuf type {@code DeleteFriendRsp}
      */
     public static final class Builder extends
@@ -491,7 +499,7 @@ public final class DeleteFriendRspOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 12;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class DeleteFriendRspOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 12;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class DeleteFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -587,7 +595,7 @@ public final class DeleteFriendRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025DeleteFriendRsp.proto\"6\n\017DeleteFriendR" +
-      "sp\022\017\n\007retcode\030\004 \001(\005\022\022\n\ntarget_uid\030\010 \001(\rB" +
+      "sp\022\017\n\007retcode\030\004 \001(\005\022\022\n\ntarget_uid\030\014 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

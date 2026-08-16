@@ -35,8 +35,7 @@ public final class PlayerNicknameAuditDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 29372
-   * Obf: IBIFMJEIJFH
+   * CmdId: 21392
    * </pre>
    *
    * Protobuf type {@code PlayerNicknameAuditDataNotify}
@@ -316,8 +315,7 @@ public final class PlayerNicknameAuditDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29372
-     * Obf: IBIFMJEIJFH
+     * CmdId: 21392
      * </pre>
      *
      * Protobuf type {@code PlayerNicknameAuditDataNotify}

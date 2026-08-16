@@ -15,41 +15,45 @@ public final class GalleryStageTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: BNFCHMDPDFG
-   * </pre>
-   *
    * Protobuf enum {@code GalleryStageType}
    */
   public enum GalleryStageType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GALLERY_NONE = 0;</code>
+     * <code>PIPMKANCBBI_GALLERY_NONE = 0;</code>
      */
-    GALLERY_NONE(0),
+    PIPMKANCBBI_GALLERY_NONE(0),
     /**
-     * <code>GALLERY_PRESTART = 1;</code>
+     * <code>PIPMKANCBBI_GALLERY_PRESTART = 1;</code>
      */
-    GALLERY_PRESTART(1),
+    PIPMKANCBBI_GALLERY_PRESTART(1),
     /**
-     * <code>GALLERY_START = 2;</code>
+     * <code>PIPMKANCBBI_GALLERY_START = 2;</code>
      */
-    GALLERY_START(2),
+    PIPMKANCBBI_GALLERY_START(2),
+    /**
+     * <code>PIPMKANCBBI_GALLERY_INIT = 3;</code>
+     */
+    PIPMKANCBBI_GALLERY_INIT(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GALLERY_NONE = 0;</code>
+     * <code>PIPMKANCBBI_GALLERY_NONE = 0;</code>
      */
-    public static final int GALLERY_NONE_VALUE = 0;
+    public static final int PIPMKANCBBI_GALLERY_NONE_VALUE = 0;
     /**
-     * <code>GALLERY_PRESTART = 1;</code>
+     * <code>PIPMKANCBBI_GALLERY_PRESTART = 1;</code>
      */
-    public static final int GALLERY_PRESTART_VALUE = 1;
+    public static final int PIPMKANCBBI_GALLERY_PRESTART_VALUE = 1;
     /**
-     * <code>GALLERY_START = 2;</code>
+     * <code>PIPMKANCBBI_GALLERY_START = 2;</code>
      */
-    public static final int GALLERY_START_VALUE = 2;
+    public static final int PIPMKANCBBI_GALLERY_START_VALUE = 2;
+    /**
+     * <code>PIPMKANCBBI_GALLERY_INIT = 3;</code>
+     */
+    public static final int PIPMKANCBBI_GALLERY_INIT_VALUE = 3;
 
 
     public final int getNumber() {
@@ -76,9 +80,10 @@ public final class GalleryStageTypeOuterClass {
      */
     public static GalleryStageType forNumber(int value) {
       switch (value) {
-        case 0: return GALLERY_NONE;
-        case 1: return GALLERY_PRESTART;
-        case 2: return GALLERY_START;
+        case 0: return PIPMKANCBBI_GALLERY_NONE;
+        case 1: return PIPMKANCBBI_GALLERY_PRESTART;
+        case 2: return PIPMKANCBBI_GALLERY_START;
+        case 3: return PIPMKANCBBI_GALLERY_INIT;
         default: return null;
       }
     }
@@ -144,10 +149,12 @@ public final class GalleryStageTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026GalleryStageType.proto*M\n\020GalleryStage" +
-      "Type\022\020\n\014GALLERY_NONE\020\000\022\024\n\020GALLERY_PRESTA" +
-      "RT\020\001\022\021\n\rGALLERY_START\020\002B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\026GalleryStageType.proto*\217\001\n\020GalleryStag" +
+      "eType\022\034\n\030PIPMKANCBBI_GALLERY_NONE\020\000\022 \n\034P" +
+      "IPMKANCBBI_GALLERY_PRESTART\020\001\022\035\n\031PIPMKAN" +
+      "CBBI_GALLERY_START\020\002\022\034\n\030PIPMKANCBBI_GALL" +
+      "ERY_INIT\020\003B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

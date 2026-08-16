@@ -19,22 +19,18 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DPFKGAJIFGG = 4;</code>
-     * @return The dPFKGAJIFGG.
+     * <code>uint32 total_count = 3;</code>
+     * @return The totalCount.
      */
-    int getDPFKGAJIFGG();
+    int getTotalCount();
 
     /**
-     * <code>uint32 FNFGFKGDJPH = 7;</code>
-     * @return The fNFGFKGDJPH.
+     * <code>uint32 found_count = 8;</code>
+     * @return The foundCount.
      */
-    int getFNFGFKGDJPH();
+    int getFoundCount();
   }
   /**
-   * <pre>
-   * Obf: EBKELAKJJEC
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryAkaFesArchaeologyInfo}
    */
   public static final class SceneGalleryAkaFesArchaeologyInfo extends
@@ -79,14 +75,14 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
-              dPFKGAJIFGG_ = input.readUInt32();
+              totalCount_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 64: {
 
-              fNFGFKGDJPH_ = input.readUInt32();
+              foundCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +117,26 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo.class, emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo.Builder.class);
     }
 
-    public static final int DPFKGAJIFGG_FIELD_NUMBER = 4;
-    private int dPFKGAJIFGG_;
+    public static final int TOTAL_COUNT_FIELD_NUMBER = 3;
+    private int totalCount_;
     /**
-     * <code>uint32 DPFKGAJIFGG = 4;</code>
-     * @return The dPFKGAJIFGG.
+     * <code>uint32 total_count = 3;</code>
+     * @return The totalCount.
      */
     @java.lang.Override
-    public int getDPFKGAJIFGG() {
-      return dPFKGAJIFGG_;
+    public int getTotalCount() {
+      return totalCount_;
     }
 
-    public static final int FNFGFKGDJPH_FIELD_NUMBER = 7;
-    private int fNFGFKGDJPH_;
+    public static final int FOUND_COUNT_FIELD_NUMBER = 8;
+    private int foundCount_;
     /**
-     * <code>uint32 FNFGFKGDJPH = 7;</code>
-     * @return The fNFGFKGDJPH.
+     * <code>uint32 found_count = 8;</code>
+     * @return The foundCount.
      */
     @java.lang.Override
-    public int getFNFGFKGDJPH() {
-      return fNFGFKGDJPH_;
+    public int getFoundCount() {
+      return foundCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dPFKGAJIFGG_ != 0) {
-        output.writeUInt32(4, dPFKGAJIFGG_);
+      if (totalCount_ != 0) {
+        output.writeUInt32(3, totalCount_);
       }
-      if (fNFGFKGDJPH_ != 0) {
-        output.writeUInt32(7, fNFGFKGDJPH_);
+      if (foundCount_ != 0) {
+        output.writeUInt32(8, foundCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dPFKGAJIFGG_ != 0) {
+      if (totalCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dPFKGAJIFGG_);
+          .computeUInt32Size(3, totalCount_);
       }
-      if (fNFGFKGDJPH_ != 0) {
+      if (foundCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fNFGFKGDJPH_);
+          .computeUInt32Size(8, foundCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo other = (emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo) obj;
 
-      if (getDPFKGAJIFGG()
-          != other.getDPFKGAJIFGG()) return false;
-      if (getFNFGFKGDJPH()
-          != other.getFNFGFKGDJPH()) return false;
+      if (getTotalCount()
+          != other.getTotalCount()) return false;
+      if (getFoundCount()
+          != other.getFoundCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DPFKGAJIFGG_FIELD_NUMBER;
-      hash = (53 * hash) + getDPFKGAJIFGG();
-      hash = (37 * hash) + FNFGFKGDJPH_FIELD_NUMBER;
-      hash = (53 * hash) + getFNFGFKGDJPH();
+      hash = (37 * hash) + TOTAL_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalCount();
+      hash = (37 * hash) + FOUND_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getFoundCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EBKELAKJJEC
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryAkaFesArchaeologyInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dPFKGAJIFGG_ = 0;
+        totalCount_ = 0;
 
-        fNFGFKGDJPH_ = 0;
+        foundCount_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo result = new emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo(this);
-        result.dPFKGAJIFGG_ = dPFKGAJIFGG_;
-        result.fNFGFKGDJPH_ = fNFGFKGDJPH_;
+        result.totalCount_ = totalCount_;
+        result.foundCount_ = foundCount_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryAkaFesArchaeologyInfoOuterClass.SceneGalleryAkaFesArchaeologyInfo.getDefaultInstance()) return this;
-        if (other.getDPFKGAJIFGG() != 0) {
-          setDPFKGAJIFGG(other.getDPFKGAJIFGG());
+        if (other.getTotalCount() != 0) {
+          setTotalCount(other.getTotalCount());
         }
-        if (other.getFNFGFKGDJPH() != 0) {
-          setFNFGFKGDJPH(other.getFNFGFKGDJPH());
+        if (other.getFoundCount() != 0) {
+          setFoundCount(other.getFoundCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +458,64 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
         return this;
       }
 
-      private int dPFKGAJIFGG_ ;
+      private int totalCount_ ;
       /**
-       * <code>uint32 DPFKGAJIFGG = 4;</code>
-       * @return The dPFKGAJIFGG.
+       * <code>uint32 total_count = 3;</code>
+       * @return The totalCount.
        */
       @java.lang.Override
-      public int getDPFKGAJIFGG() {
-        return dPFKGAJIFGG_;
+      public int getTotalCount() {
+        return totalCount_;
       }
       /**
-       * <code>uint32 DPFKGAJIFGG = 4;</code>
-       * @param value The dPFKGAJIFGG to set.
+       * <code>uint32 total_count = 3;</code>
+       * @param value The totalCount to set.
        * @return This builder for chaining.
        */
-      public Builder setDPFKGAJIFGG(int value) {
+      public Builder setTotalCount(int value) {
         
-        dPFKGAJIFGG_ = value;
+        totalCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DPFKGAJIFGG = 4;</code>
+       * <code>uint32 total_count = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDPFKGAJIFGG() {
+      public Builder clearTotalCount() {
         
-        dPFKGAJIFGG_ = 0;
+        totalCount_ = 0;
         onChanged();
         return this;
       }
 
-      private int fNFGFKGDJPH_ ;
+      private int foundCount_ ;
       /**
-       * <code>uint32 FNFGFKGDJPH = 7;</code>
-       * @return The fNFGFKGDJPH.
+       * <code>uint32 found_count = 8;</code>
+       * @return The foundCount.
        */
       @java.lang.Override
-      public int getFNFGFKGDJPH() {
-        return fNFGFKGDJPH_;
+      public int getFoundCount() {
+        return foundCount_;
       }
       /**
-       * <code>uint32 FNFGFKGDJPH = 7;</code>
-       * @param value The fNFGFKGDJPH to set.
+       * <code>uint32 found_count = 8;</code>
+       * @param value The foundCount to set.
        * @return This builder for chaining.
        */
-      public Builder setFNFGFKGDJPH(int value) {
+      public Builder setFoundCount(int value) {
         
-        fNFGFKGDJPH_ = value;
+        foundCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FNFGFKGDJPH = 7;</code>
+       * <code>uint32 found_count = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFNFGFKGDJPH() {
+      public Builder clearFoundCount() {
         
-        fNFGFKGDJPH_ = 0;
+        foundCount_ = 0;
         onChanged();
         return this;
       }
@@ -596,7 +588,7 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryAkaFesArchaeologyInfo.prot" +
       "o\"M\n!SceneGalleryAkaFesArchaeologyInfo\022\023" +
-      "\n\013DPFKGAJIFGG\030\004 \001(\r\022\023\n\013FNFGFKGDJPH\030\007 \001(\r" +
+      "\n\013total_count\030\003 \001(\r\022\023\n\013found_count\030\010 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +600,7 @@ public final class SceneGalleryAkaFesArchaeologyInfoOuterClass {
     internal_static_SceneGalleryAkaFesArchaeologyInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryAkaFesArchaeologyInfo_descriptor,
-        new java.lang.String[] { "DPFKGAJIFGG", "FNFGFKGDJPH", });
+        new java.lang.String[] { "TotalCount", "FoundCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

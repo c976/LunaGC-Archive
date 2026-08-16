@@ -19,72 +19,112 @@ public final class GroupLinkBundleOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bundle_id = 1;</code>
-     * @return The bundleId.
-     */
-    int getBundleId();
-
-    /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      * @return Whether the center field is set.
      */
     boolean hasCenter();
     /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      * @return The center.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
     /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
 
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+     * @return The enum numeric value on the wire for fBLCJPMOLIK.
+     */
+    int getFBLCJPMOLIKValue();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+     * @return The fBLCJPMOLIK.
+     */
+    emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI getFBLCJPMOLIK();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 radius = 9;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 radius = 13;</code>
      * @return The radius.
      */
     int getRadius();
 
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 BOMOHLGIFBF = 6;</code>
+     * @return The bOMOHLGIFBF.
+     */
+    int getBOMOHLGIFBF();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 map_layer_id = 4;</code>
+     * @return The mapLayerId.
+     */
+    int getMapLayerId();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool FJCKIFCDBAH = 5;</code>
+     * @return The fJCKIFCDBAH.
+     */
+    boolean getFJCKIFCDBAH();
+
+    /**
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
      * <code>bool is_activated = 12;</code>
      * @return The isActivated.
      */
     boolean getIsActivated();
-
-    /**
-     * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-     * @return The enum numeric value on the wire for aCEOKLIIBEL.
-     */
-    int getACEOKLIIBELValue();
-    /**
-     * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-     * @return The aCEOKLIIBEL.
-     */
-    emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI getACEOKLIIBEL();
-
-    /**
-     * <code>uint32 HJMMAOMEHOL = 13;</code>
-     * @return The hJMMAOMEHOL.
-     */
-    int getHJMMAOMEHOL();
-
-    /**
-     * <code>bool KBKLLODIIOD = 7;</code>
-     * @return The kBKLLODIIOD.
-     */
-    boolean getKBKLLODIIOD();
   }
   /**
-   * <pre>
-   * Obf: KNPEBMLJPPI
-   * </pre>
-   *
    * Protobuf type {@code GroupLinkBundle}
    */
   public static final class GroupLinkBundle extends
@@ -97,7 +137,7 @@ public final class GroupLinkBundleOuterClass {
       super(builder);
     }
     private GroupLinkBundle() {
-      aCEOKLIIBEL_ = 0;
+      fBLCJPMOLIK_ = 0;
     }
 
     @java.lang.Override
@@ -130,12 +170,43 @@ public final class GroupLinkBundleOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              bundleId_ = input.readUInt32();
+              sceneId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 32: {
+
+              mapLayerId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              fJCKIFCDBAH_ = input.readBool();
+              break;
+            }
+            case 48: {
+
+              bOMOHLGIFBF_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+              int rawValue = input.readEnum();
+
+              fBLCJPMOLIK_ = rawValue;
+              break;
+            }
+            case 96: {
+
+              isActivated_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              radius_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (center_ != null) {
                 subBuilder = center_.toBuilder();
@@ -146,37 +217,6 @@ public final class GroupLinkBundleOuterClass {
                 center_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 48: {
-              int rawValue = input.readEnum();
-
-              aCEOKLIIBEL_ = rawValue;
-              break;
-            }
-            case 56: {
-
-              kBKLLODIIOD_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              radius_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isActivated_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              hJMMAOMEHOL_ = input.readUInt32();
               break;
             }
             default: {
@@ -211,21 +251,14 @@ public final class GroupLinkBundleOuterClass {
               emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.class, emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.Builder.class);
     }
 
-    public static final int BUNDLE_ID_FIELD_NUMBER = 1;
-    private int bundleId_;
-    /**
-     * <code>uint32 bundle_id = 1;</code>
-     * @return The bundleId.
-     */
-    @java.lang.Override
-    public int getBundleId() {
-      return bundleId_;
-    }
-
-    public static final int CENTER_FIELD_NUMBER = 5;
+    public static final int CENTER_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      * @return Whether the center field is set.
      */
     @java.lang.Override
@@ -233,7 +266,11 @@ public final class GroupLinkBundleOuterClass {
       return center_ != null;
     }
     /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      * @return The center.
      */
     @java.lang.Override
@@ -241,17 +278,52 @@ public final class GroupLinkBundleOuterClass {
       return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
     }
     /**
-     * <code>.Vector center = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.Vector center = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
       return getCenter();
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 10;
+    public static final int FBLCJPMOLIK_FIELD_NUMBER = 10;
+    private int fBLCJPMOLIK_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+     * @return The enum numeric value on the wire for fBLCJPMOLIK.
+     */
+    @java.lang.Override public int getFBLCJPMOLIKValue() {
+      return fBLCJPMOLIK_;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+     * @return The fBLCJPMOLIK.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI getFBLCJPMOLIK() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI result = emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.valueOf(fBLCJPMOLIK_);
+      return result == null ? emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.UNRECOGNIZED : result;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 3;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -259,10 +331,14 @@ public final class GroupLinkBundleOuterClass {
       return sceneId_;
     }
 
-    public static final int RADIUS_FIELD_NUMBER = 9;
+    public static final int RADIUS_FIELD_NUMBER = 13;
     private int radius_;
     /**
-     * <code>uint32 radius = 9;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 radius = 13;</code>
      * @return The radius.
      */
     @java.lang.Override
@@ -270,56 +346,64 @@ public final class GroupLinkBundleOuterClass {
       return radius_;
     }
 
+    public static final int BOMOHLGIFBF_FIELD_NUMBER = 6;
+    private int bOMOHLGIFBF_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 BOMOHLGIFBF = 6;</code>
+     * @return The bOMOHLGIFBF.
+     */
+    @java.lang.Override
+    public int getBOMOHLGIFBF() {
+      return bOMOHLGIFBF_;
+    }
+
+    public static final int MAP_LAYER_ID_FIELD_NUMBER = 4;
+    private int mapLayerId_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 map_layer_id = 4;</code>
+     * @return The mapLayerId.
+     */
+    @java.lang.Override
+    public int getMapLayerId() {
+      return mapLayerId_;
+    }
+
+    public static final int FJCKIFCDBAH_FIELD_NUMBER = 5;
+    private boolean fJCKIFCDBAH_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>bool FJCKIFCDBAH = 5;</code>
+     * @return The fJCKIFCDBAH.
+     */
+    @java.lang.Override
+    public boolean getFJCKIFCDBAH() {
+      return fJCKIFCDBAH_;
+    }
+
     public static final int IS_ACTIVATED_FIELD_NUMBER = 12;
     private boolean isActivated_;
     /**
+     * <pre>
+     * offset: 61
+     * </pre>
+     *
      * <code>bool is_activated = 12;</code>
      * @return The isActivated.
      */
     @java.lang.Override
     public boolean getIsActivated() {
       return isActivated_;
-    }
-
-    public static final int ACEOKLIIBEL_FIELD_NUMBER = 6;
-    private int aCEOKLIIBEL_;
-    /**
-     * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-     * @return The enum numeric value on the wire for aCEOKLIIBEL.
-     */
-    @java.lang.Override public int getACEOKLIIBELValue() {
-      return aCEOKLIIBEL_;
-    }
-    /**
-     * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-     * @return The aCEOKLIIBEL.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI getACEOKLIIBEL() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI result = emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.valueOf(aCEOKLIIBEL_);
-      return result == null ? emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.UNRECOGNIZED : result;
-    }
-
-    public static final int HJMMAOMEHOL_FIELD_NUMBER = 13;
-    private int hJMMAOMEHOL_;
-    /**
-     * <code>uint32 HJMMAOMEHOL = 13;</code>
-     * @return The hJMMAOMEHOL.
-     */
-    @java.lang.Override
-    public int getHJMMAOMEHOL() {
-      return hJMMAOMEHOL_;
-    }
-
-    public static final int KBKLLODIIOD_FIELD_NUMBER = 7;
-    private boolean kBKLLODIIOD_;
-    /**
-     * <code>bool KBKLLODIIOD = 7;</code>
-     * @return The kBKLLODIIOD.
-     */
-    @java.lang.Override
-    public boolean getKBKLLODIIOD() {
-      return kBKLLODIIOD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -336,29 +420,29 @@ public final class GroupLinkBundleOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bundleId_ != 0) {
-        output.writeUInt32(1, bundleId_);
-      }
-      if (center_ != null) {
-        output.writeMessage(5, getCenter());
-      }
-      if (aCEOKLIIBEL_ != emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.IDEMOFBGNAI_None.getNumber()) {
-        output.writeEnum(6, aCEOKLIIBEL_);
-      }
-      if (kBKLLODIIOD_ != false) {
-        output.writeBool(7, kBKLLODIIOD_);
-      }
-      if (radius_ != 0) {
-        output.writeUInt32(9, radius_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(10, sceneId_);
+        output.writeUInt32(3, sceneId_);
+      }
+      if (mapLayerId_ != 0) {
+        output.writeUInt32(4, mapLayerId_);
+      }
+      if (fJCKIFCDBAH_ != false) {
+        output.writeBool(5, fJCKIFCDBAH_);
+      }
+      if (bOMOHLGIFBF_ != 0) {
+        output.writeUInt32(6, bOMOHLGIFBF_);
+      }
+      if (fBLCJPMOLIK_ != emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.NHOFHPBJNCO_NONE.getNumber()) {
+        output.writeEnum(10, fBLCJPMOLIK_);
       }
       if (isActivated_ != false) {
         output.writeBool(12, isActivated_);
       }
-      if (hJMMAOMEHOL_ != 0) {
-        output.writeUInt32(13, hJMMAOMEHOL_);
+      if (radius_ != 0) {
+        output.writeUInt32(13, radius_);
+      }
+      if (center_ != null) {
+        output.writeMessage(15, getCenter());
       }
       unknownFields.writeTo(output);
     }
@@ -369,37 +453,37 @@ public final class GroupLinkBundleOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bundleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bundleId_);
-      }
-      if (center_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getCenter());
-      }
-      if (aCEOKLIIBEL_ != emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.IDEMOFBGNAI_None.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, aCEOKLIIBEL_);
-      }
-      if (kBKLLODIIOD_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, kBKLLODIIOD_);
-      }
-      if (radius_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, radius_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sceneId_);
+          .computeUInt32Size(3, sceneId_);
+      }
+      if (mapLayerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, mapLayerId_);
+      }
+      if (fJCKIFCDBAH_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, fJCKIFCDBAH_);
+      }
+      if (bOMOHLGIFBF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, bOMOHLGIFBF_);
+      }
+      if (fBLCJPMOLIK_ != emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.NHOFHPBJNCO_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(10, fBLCJPMOLIK_);
       }
       if (isActivated_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isActivated_);
       }
-      if (hJMMAOMEHOL_ != 0) {
+      if (radius_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hJMMAOMEHOL_);
+          .computeUInt32Size(13, radius_);
+      }
+      if (center_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getCenter());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -416,24 +500,24 @@ public final class GroupLinkBundleOuterClass {
       }
       emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle other = (emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle) obj;
 
-      if (getBundleId()
-          != other.getBundleId()) return false;
       if (hasCenter() != other.hasCenter()) return false;
       if (hasCenter()) {
         if (!getCenter()
             .equals(other.getCenter())) return false;
       }
+      if (fBLCJPMOLIK_ != other.fBLCJPMOLIK_) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (getRadius()
           != other.getRadius()) return false;
+      if (getBOMOHLGIFBF()
+          != other.getBOMOHLGIFBF()) return false;
+      if (getMapLayerId()
+          != other.getMapLayerId()) return false;
+      if (getFJCKIFCDBAH()
+          != other.getFJCKIFCDBAH()) return false;
       if (getIsActivated()
           != other.getIsActivated()) return false;
-      if (aCEOKLIIBEL_ != other.aCEOKLIIBEL_) return false;
-      if (getHJMMAOMEHOL()
-          != other.getHJMMAOMEHOL()) return false;
-      if (getKBKLLODIIOD()
-          != other.getKBKLLODIIOD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -445,26 +529,26 @@ public final class GroupLinkBundleOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUNDLE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBundleId();
       if (hasCenter()) {
         hash = (37 * hash) + CENTER_FIELD_NUMBER;
         hash = (53 * hash) + getCenter().hashCode();
       }
+      hash = (37 * hash) + FBLCJPMOLIK_FIELD_NUMBER;
+      hash = (53 * hash) + fBLCJPMOLIK_;
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + RADIUS_FIELD_NUMBER;
       hash = (53 * hash) + getRadius();
+      hash = (37 * hash) + BOMOHLGIFBF_FIELD_NUMBER;
+      hash = (53 * hash) + getBOMOHLGIFBF();
+      hash = (37 * hash) + MAP_LAYER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMapLayerId();
+      hash = (37 * hash) + FJCKIFCDBAH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFJCKIFCDBAH());
       hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsActivated());
-      hash = (37 * hash) + ACEOKLIIBEL_FIELD_NUMBER;
-      hash = (53 * hash) + aCEOKLIIBEL_;
-      hash = (37 * hash) + HJMMAOMEHOL_FIELD_NUMBER;
-      hash = (53 * hash) + getHJMMAOMEHOL();
-      hash = (37 * hash) + KBKLLODIIOD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKBKLLODIIOD());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -561,10 +645,6 @@ public final class GroupLinkBundleOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KNPEBMLJPPI
-     * </pre>
-     *
      * Protobuf type {@code GroupLinkBundle}
      */
     public static final class Builder extends
@@ -602,25 +682,25 @@ public final class GroupLinkBundleOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bundleId_ = 0;
-
         if (centerBuilder_ == null) {
           center_ = null;
         } else {
           center_ = null;
           centerBuilder_ = null;
         }
+        fBLCJPMOLIK_ = 0;
+
         sceneId_ = 0;
 
         radius_ = 0;
 
+        bOMOHLGIFBF_ = 0;
+
+        mapLayerId_ = 0;
+
+        fJCKIFCDBAH_ = false;
+
         isActivated_ = false;
-
-        aCEOKLIIBEL_ = 0;
-
-        hJMMAOMEHOL_ = 0;
-
-        kBKLLODIIOD_ = false;
 
         return this;
       }
@@ -648,18 +728,18 @@ public final class GroupLinkBundleOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle buildPartial() {
         emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle result = new emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle(this);
-        result.bundleId_ = bundleId_;
         if (centerBuilder_ == null) {
           result.center_ = center_;
         } else {
           result.center_ = centerBuilder_.build();
         }
+        result.fBLCJPMOLIK_ = fBLCJPMOLIK_;
         result.sceneId_ = sceneId_;
         result.radius_ = radius_;
+        result.bOMOHLGIFBF_ = bOMOHLGIFBF_;
+        result.mapLayerId_ = mapLayerId_;
+        result.fJCKIFCDBAH_ = fJCKIFCDBAH_;
         result.isActivated_ = isActivated_;
-        result.aCEOKLIIBEL_ = aCEOKLIIBEL_;
-        result.hJMMAOMEHOL_ = hJMMAOMEHOL_;
-        result.kBKLLODIIOD_ = kBKLLODIIOD_;
         onBuilt();
         return result;
       }
@@ -708,11 +788,11 @@ public final class GroupLinkBundleOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle other) {
         if (other == emu.grasscutter.net.proto.GroupLinkBundleOuterClass.GroupLinkBundle.getDefaultInstance()) return this;
-        if (other.getBundleId() != 0) {
-          setBundleId(other.getBundleId());
-        }
         if (other.hasCenter()) {
           mergeCenter(other.getCenter());
+        }
+        if (other.fBLCJPMOLIK_ != 0) {
+          setFBLCJPMOLIKValue(other.getFBLCJPMOLIKValue());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
@@ -720,17 +800,17 @@ public final class GroupLinkBundleOuterClass {
         if (other.getRadius() != 0) {
           setRadius(other.getRadius());
         }
+        if (other.getBOMOHLGIFBF() != 0) {
+          setBOMOHLGIFBF(other.getBOMOHLGIFBF());
+        }
+        if (other.getMapLayerId() != 0) {
+          setMapLayerId(other.getMapLayerId());
+        }
+        if (other.getFJCKIFCDBAH() != false) {
+          setFJCKIFCDBAH(other.getFJCKIFCDBAH());
+        }
         if (other.getIsActivated() != false) {
           setIsActivated(other.getIsActivated());
-        }
-        if (other.aCEOKLIIBEL_ != 0) {
-          setACEOKLIIBELValue(other.getACEOKLIIBELValue());
-        }
-        if (other.getHJMMAOMEHOL() != 0) {
-          setHJMMAOMEHOL(other.getHJMMAOMEHOL());
-        }
-        if (other.getKBKLLODIIOD() != false) {
-          setKBKLLODIIOD(other.getKBKLLODIIOD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -761,49 +841,26 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
 
-      private int bundleId_ ;
-      /**
-       * <code>uint32 bundle_id = 1;</code>
-       * @return The bundleId.
-       */
-      @java.lang.Override
-      public int getBundleId() {
-        return bundleId_;
-      }
-      /**
-       * <code>uint32 bundle_id = 1;</code>
-       * @param value The bundleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBundleId(int value) {
-        
-        bundleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 bundle_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBundleId() {
-        
-        bundleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        * @return Whether the center field is set.
        */
       public boolean hasCenter() {
         return centerBuilder_ != null || center_ != null;
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        * @return The center.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
@@ -814,7 +871,11 @@ public final class GroupLinkBundleOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -830,7 +891,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public Builder setCenter(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -844,7 +909,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (centerBuilder_ == null) {
@@ -862,7 +931,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public Builder clearCenter() {
         if (centerBuilder_ == null) {
@@ -876,7 +949,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
         
@@ -884,7 +961,11 @@ public final class GroupLinkBundleOuterClass {
         return getCenterFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
         if (centerBuilder_ != null) {
@@ -895,7 +976,11 @@ public final class GroupLinkBundleOuterClass {
         }
       }
       /**
-       * <code>.Vector center = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.Vector center = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -911,9 +996,87 @@ public final class GroupLinkBundleOuterClass {
         return centerBuilder_;
       }
 
+      private int fBLCJPMOLIK_ = 0;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+       * @return The enum numeric value on the wire for fBLCJPMOLIK.
+       */
+      @java.lang.Override public int getFBLCJPMOLIKValue() {
+        return fBLCJPMOLIK_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+       * @param value The enum numeric value on the wire for fBLCJPMOLIK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFBLCJPMOLIKValue(int value) {
+        
+        fBLCJPMOLIK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+       * @return The fBLCJPMOLIK.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI getFBLCJPMOLIK() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI result = emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.valueOf(fBLCJPMOLIK_);
+        return result == null ? emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+       * @param value The fBLCJPMOLIK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFBLCJPMOLIK(emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.NDFBGFDJFCI value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        fBLCJPMOLIK_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.NDFBGFDJFCI FBLCJPMOLIK = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFBLCJPMOLIK() {
+        
+        fBLCJPMOLIK_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 scene_id = 3;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -921,7 +1084,11 @@ public final class GroupLinkBundleOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 scene_id = 3;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -932,7 +1099,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 scene_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -944,7 +1115,11 @@ public final class GroupLinkBundleOuterClass {
 
       private int radius_ ;
       /**
-       * <code>uint32 radius = 9;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 radius = 13;</code>
        * @return The radius.
        */
       @java.lang.Override
@@ -952,7 +1127,11 @@ public final class GroupLinkBundleOuterClass {
         return radius_;
       }
       /**
-       * <code>uint32 radius = 9;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 radius = 13;</code>
        * @param value The radius to set.
        * @return This builder for chaining.
        */
@@ -963,7 +1142,11 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 radius = 9;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 radius = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRadius() {
@@ -973,8 +1156,141 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
 
+      private int bOMOHLGIFBF_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BOMOHLGIFBF = 6;</code>
+       * @return The bOMOHLGIFBF.
+       */
+      @java.lang.Override
+      public int getBOMOHLGIFBF() {
+        return bOMOHLGIFBF_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BOMOHLGIFBF = 6;</code>
+       * @param value The bOMOHLGIFBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBOMOHLGIFBF(int value) {
+        
+        bOMOHLGIFBF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 BOMOHLGIFBF = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBOMOHLGIFBF() {
+        
+        bOMOHLGIFBF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mapLayerId_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 4;</code>
+       * @return The mapLayerId.
+       */
+      @java.lang.Override
+      public int getMapLayerId() {
+        return mapLayerId_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 4;</code>
+       * @param value The mapLayerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMapLayerId(int value) {
+        
+        mapLayerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 map_layer_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMapLayerId() {
+        
+        mapLayerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean fJCKIFCDBAH_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool FJCKIFCDBAH = 5;</code>
+       * @return The fJCKIFCDBAH.
+       */
+      @java.lang.Override
+      public boolean getFJCKIFCDBAH() {
+        return fJCKIFCDBAH_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool FJCKIFCDBAH = 5;</code>
+       * @param value The fJCKIFCDBAH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFJCKIFCDBAH(boolean value) {
+        
+        fJCKIFCDBAH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>bool FJCKIFCDBAH = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFJCKIFCDBAH() {
+        
+        fJCKIFCDBAH_ = false;
+        onChanged();
+        return this;
+      }
+
       private boolean isActivated_ ;
       /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
        * <code>bool is_activated = 12;</code>
        * @return The isActivated.
        */
@@ -983,6 +1299,10 @@ public final class GroupLinkBundleOuterClass {
         return isActivated_;
       }
       /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
        * <code>bool is_activated = 12;</code>
        * @param value The isActivated to set.
        * @return This builder for chaining.
@@ -994,128 +1314,16 @@ public final class GroupLinkBundleOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 61
+       * </pre>
+       *
        * <code>bool is_activated = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActivated() {
         
         isActivated_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int aCEOKLIIBEL_ = 0;
-      /**
-       * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-       * @return The enum numeric value on the wire for aCEOKLIIBEL.
-       */
-      @java.lang.Override public int getACEOKLIIBELValue() {
-        return aCEOKLIIBEL_;
-      }
-      /**
-       * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-       * @param value The enum numeric value on the wire for aCEOKLIIBEL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setACEOKLIIBELValue(int value) {
-        
-        aCEOKLIIBEL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-       * @return The aCEOKLIIBEL.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI getACEOKLIIBEL() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI result = emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.valueOf(aCEOKLIIBEL_);
-        return result == null ? emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-       * @param value The aCEOKLIIBEL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setACEOKLIIBEL(emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.IDEMOFBGNAI value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        aCEOKLIIBEL_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.IDEMOFBGNAI ACEOKLIIBEL = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearACEOKLIIBEL() {
-        
-        aCEOKLIIBEL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hJMMAOMEHOL_ ;
-      /**
-       * <code>uint32 HJMMAOMEHOL = 13;</code>
-       * @return The hJMMAOMEHOL.
-       */
-      @java.lang.Override
-      public int getHJMMAOMEHOL() {
-        return hJMMAOMEHOL_;
-      }
-      /**
-       * <code>uint32 HJMMAOMEHOL = 13;</code>
-       * @param value The hJMMAOMEHOL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHJMMAOMEHOL(int value) {
-        
-        hJMMAOMEHOL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HJMMAOMEHOL = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHJMMAOMEHOL() {
-        
-        hJMMAOMEHOL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean kBKLLODIIOD_ ;
-      /**
-       * <code>bool KBKLLODIIOD = 7;</code>
-       * @return The kBKLLODIIOD.
-       */
-      @java.lang.Override
-      public boolean getKBKLLODIIOD() {
-        return kBKLLODIIOD_;
-      }
-      /**
-       * <code>bool KBKLLODIIOD = 7;</code>
-       * @param value The kBKLLODIIOD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKBKLLODIIOD(boolean value) {
-        
-        kBKLLODIIOD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool KBKLLODIIOD = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKBKLLODIIOD() {
-        
-        kBKLLODIIOD_ = false;
         onChanged();
         return this;
       }
@@ -1186,29 +1394,29 @@ public final class GroupLinkBundleOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GroupLinkBundle.proto\032\014Vector.proto\032\021I" +
-      "DEMOFBGNAI.proto\"\302\001\n\017GroupLinkBundle\022\021\n\t" +
-      "bundle_id\030\001 \001(\r\022\027\n\006center\030\005 \001(\0132\007.Vector" +
-      "\022\020\n\010scene_id\030\n \001(\r\022\016\n\006radius\030\t \001(\r\022\024\n\014is" +
-      "_activated\030\014 \001(\010\022!\n\013ACEOKLIIBEL\030\006 \001(\0162\014." +
-      "IDEMOFBGNAI\022\023\n\013HJMMAOMEHOL\030\r \001(\r\022\023\n\013KBKL" +
-      "LODIIOD\030\007 \001(\010B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\025GroupLinkBundle.proto\032\021NDFBGFDJFCI.pro" +
+      "to\032\014Vector.proto\"\305\001\n\017GroupLinkBundle\022\027\n\006" +
+      "center\030\017 \001(\0132\007.Vector\022!\n\013FBLCJPMOLIK\030\n \001" +
+      "(\0162\014.NDFBGFDJFCI\022\020\n\010scene_id\030\003 \001(\r\022\016\n\006ra" +
+      "dius\030\r \001(\r\022\023\n\013BOMOHLGIFBF\030\006 \001(\r\022\024\n\014map_l" +
+      "ayer_id\030\004 \001(\r\022\023\n\013FJCKIFCDBAH\030\005 \001(\010\022\024\n\014is" +
+      "_activated\030\014 \001(\010B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.getDescriptor(),
         });
     internal_static_GroupLinkBundle_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GroupLinkBundle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GroupLinkBundle_descriptor,
-        new java.lang.String[] { "BundleId", "Center", "SceneId", "Radius", "IsActivated", "ACEOKLIIBEL", "HJMMAOMEHOL", "KBKLLODIIOD", });
+        new java.lang.String[] { "Center", "FBLCJPMOLIK", "SceneId", "Radius", "BOMOHLGIFBF", "MapLayerId", "FJCKIFCDBAH", "IsActivated", });
+    emu.grasscutter.net.proto.NDFBGFDJFCIOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.IDEMOFBGNAIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,34 +19,30 @@ public final class GCGMsgUpdateControllerOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
-        getAllowControllerMapList();
+        getAllowControllerListList();
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index);
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerList(int index);
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
-    int getAllowControllerMapCount();
+    int getAllowControllerListCount();
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getAllowControllerMapOrBuilderList();
+        getAllowControllerListOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: EFHGOKHJEEO
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgUpdateController}
    */
   public static final class GCGMsgUpdateController extends
@@ -59,7 +55,7 @@ public final class GCGMsgUpdateControllerOuterClass {
       super(builder);
     }
     private GCGMsgUpdateController() {
-      allowControllerMap_ = java.util.Collections.emptyList();
+      allowControllerList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -93,12 +89,12 @@ public final class GCGMsgUpdateControllerOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                allowControllerMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
+                allowControllerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              allowControllerMap_.add(
+              allowControllerList_.add(
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
@@ -118,7 +114,7 @@ public final class GCGMsgUpdateControllerOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          allowControllerMap_ = java.util.Collections.unmodifiableList(allowControllerMap_);
+          allowControllerList_ = java.util.Collections.unmodifiableList(allowControllerList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -137,44 +133,44 @@ public final class GCGMsgUpdateControllerOuterClass {
               emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.class, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder.class);
     }
 
-    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 1;
-    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerMap_;
+    public static final int ALLOW_CONTROLLER_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerList_;
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
-      return allowControllerMap_;
+    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerListList() {
+      return allowControllerList_;
     }
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getAllowControllerMapOrBuilderList() {
-      return allowControllerMap_;
+        getAllowControllerListOrBuilderList() {
+      return allowControllerList_;
     }
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     @java.lang.Override
-    public int getAllowControllerMapCount() {
-      return allowControllerMap_.size();
+    public int getAllowControllerListCount() {
+      return allowControllerList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
-      return allowControllerMap_.get(index);
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerList(int index) {
+      return allowControllerList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+     * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerListOrBuilder(
         int index) {
-      return allowControllerMap_.get(index);
+      return allowControllerList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,8 +187,8 @@ public final class GCGMsgUpdateControllerOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < allowControllerMap_.size(); i++) {
-        output.writeMessage(1, allowControllerMap_.get(i));
+      for (int i = 0; i < allowControllerList_.size(); i++) {
+        output.writeMessage(2, allowControllerList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -203,9 +199,9 @@ public final class GCGMsgUpdateControllerOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < allowControllerMap_.size(); i++) {
+      for (int i = 0; i < allowControllerList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, allowControllerMap_.get(i));
+          .computeMessageSize(2, allowControllerList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,8 +218,8 @@ public final class GCGMsgUpdateControllerOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController other = (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) obj;
 
-      if (!getAllowControllerMapList()
-          .equals(other.getAllowControllerMapList())) return false;
+      if (!getAllowControllerListList()
+          .equals(other.getAllowControllerListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -235,9 +231,9 @@ public final class GCGMsgUpdateControllerOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAllowControllerMapCount() > 0) {
-        hash = (37 * hash) + ALLOW_CONTROLLER_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + getAllowControllerMapList().hashCode();
+      if (getAllowControllerListCount() > 0) {
+        hash = (37 * hash) + ALLOW_CONTROLLER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAllowControllerListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -335,10 +331,6 @@ public final class GCGMsgUpdateControllerOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EFHGOKHJEEO
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgUpdateController}
      */
     public static final class Builder extends
@@ -371,17 +363,17 @@ public final class GCGMsgUpdateControllerOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAllowControllerMapFieldBuilder();
+          getAllowControllerListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (allowControllerMapBuilder_ == null) {
-          allowControllerMap_ = java.util.Collections.emptyList();
+        if (allowControllerListBuilder_ == null) {
+          allowControllerList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          allowControllerMapBuilder_.clear();
+          allowControllerListBuilder_.clear();
         }
         return this;
       }
@@ -410,14 +402,14 @@ public final class GCGMsgUpdateControllerOuterClass {
       public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController buildPartial() {
         emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController result = new emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController(this);
         int from_bitField0_ = bitField0_;
-        if (allowControllerMapBuilder_ == null) {
+        if (allowControllerListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            allowControllerMap_ = java.util.Collections.unmodifiableList(allowControllerMap_);
+            allowControllerList_ = java.util.Collections.unmodifiableList(allowControllerList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.allowControllerMap_ = allowControllerMap_;
+          result.allowControllerList_ = allowControllerList_;
         } else {
-          result.allowControllerMap_ = allowControllerMapBuilder_.build();
+          result.allowControllerList_ = allowControllerListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -467,29 +459,29 @@ public final class GCGMsgUpdateControllerOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController other) {
         if (other == emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance()) return this;
-        if (allowControllerMapBuilder_ == null) {
-          if (!other.allowControllerMap_.isEmpty()) {
-            if (allowControllerMap_.isEmpty()) {
-              allowControllerMap_ = other.allowControllerMap_;
+        if (allowControllerListBuilder_ == null) {
+          if (!other.allowControllerList_.isEmpty()) {
+            if (allowControllerList_.isEmpty()) {
+              allowControllerList_ = other.allowControllerList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureAllowControllerMapIsMutable();
-              allowControllerMap_.addAll(other.allowControllerMap_);
+              ensureAllowControllerListIsMutable();
+              allowControllerList_.addAll(other.allowControllerList_);
             }
             onChanged();
           }
         } else {
-          if (!other.allowControllerMap_.isEmpty()) {
-            if (allowControllerMapBuilder_.isEmpty()) {
-              allowControllerMapBuilder_.dispose();
-              allowControllerMapBuilder_ = null;
-              allowControllerMap_ = other.allowControllerMap_;
+          if (!other.allowControllerList_.isEmpty()) {
+            if (allowControllerListBuilder_.isEmpty()) {
+              allowControllerListBuilder_.dispose();
+              allowControllerListBuilder_ = null;
+              allowControllerList_ = other.allowControllerList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              allowControllerMapBuilder_ = 
+              allowControllerListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAllowControllerMapFieldBuilder() : null;
+                   getAllowControllerListFieldBuilder() : null;
             } else {
-              allowControllerMapBuilder_.addAllMessages(other.allowControllerMap_);
+              allowControllerListBuilder_.addAllMessages(other.allowControllerList_);
             }
           }
         }
@@ -523,244 +515,244 @@ public final class GCGMsgUpdateControllerOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerMap_ =
+      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerList_ =
         java.util.Collections.emptyList();
-      private void ensureAllowControllerMapIsMutable() {
+      private void ensureAllowControllerListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          allowControllerMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(allowControllerMap_);
+          allowControllerList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(allowControllerList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> allowControllerMapBuilder_;
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> allowControllerListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
-        if (allowControllerMapBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(allowControllerMap_);
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerListList() {
+        if (allowControllerListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(allowControllerList_);
         } else {
-          return allowControllerMapBuilder_.getMessageList();
+          return allowControllerListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public int getAllowControllerMapCount() {
-        if (allowControllerMapBuilder_ == null) {
-          return allowControllerMap_.size();
+      public int getAllowControllerListCount() {
+        if (allowControllerListBuilder_ == null) {
+          return allowControllerList_.size();
         } else {
-          return allowControllerMapBuilder_.getCount();
+          return allowControllerListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
-        if (allowControllerMapBuilder_ == null) {
-          return allowControllerMap_.get(index);
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerList(int index) {
+        if (allowControllerListBuilder_ == null) {
+          return allowControllerList_.get(index);
         } else {
-          return allowControllerMapBuilder_.getMessage(index);
+          return allowControllerListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder setAllowControllerMap(
+      public Builder setAllowControllerList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (allowControllerMapBuilder_ == null) {
+        if (allowControllerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.set(index, value);
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.set(index, value);
           onChanged();
         } else {
-          allowControllerMapBuilder_.setMessage(index, value);
+          allowControllerListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder setAllowControllerMap(
+      public Builder setAllowControllerList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (allowControllerMapBuilder_ == null) {
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.set(index, builderForValue.build());
+        if (allowControllerListBuilder_ == null) {
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          allowControllerMapBuilder_.setMessage(index, builderForValue.build());
+          allowControllerListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder addAllowControllerMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (allowControllerMapBuilder_ == null) {
+      public Builder addAllowControllerList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (allowControllerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.add(value);
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.add(value);
           onChanged();
         } else {
-          allowControllerMapBuilder_.addMessage(value);
+          allowControllerListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder addAllowControllerMap(
+      public Builder addAllowControllerList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (allowControllerMapBuilder_ == null) {
+        if (allowControllerListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.add(index, value);
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.add(index, value);
           onChanged();
         } else {
-          allowControllerMapBuilder_.addMessage(index, value);
+          allowControllerListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder addAllowControllerMap(
+      public Builder addAllowControllerList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (allowControllerMapBuilder_ == null) {
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.add(builderForValue.build());
+        if (allowControllerListBuilder_ == null) {
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.add(builderForValue.build());
           onChanged();
         } else {
-          allowControllerMapBuilder_.addMessage(builderForValue.build());
+          allowControllerListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder addAllowControllerMap(
+      public Builder addAllowControllerList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (allowControllerMapBuilder_ == null) {
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.add(index, builderForValue.build());
+        if (allowControllerListBuilder_ == null) {
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          allowControllerMapBuilder_.addMessage(index, builderForValue.build());
+          allowControllerListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder addAllAllowControllerMap(
+      public Builder addAllAllowControllerList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
-        if (allowControllerMapBuilder_ == null) {
-          ensureAllowControllerMapIsMutable();
+        if (allowControllerListBuilder_ == null) {
+          ensureAllowControllerListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, allowControllerMap_);
+              values, allowControllerList_);
           onChanged();
         } else {
-          allowControllerMapBuilder_.addAllMessages(values);
+          allowControllerListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder clearAllowControllerMap() {
-        if (allowControllerMapBuilder_ == null) {
-          allowControllerMap_ = java.util.Collections.emptyList();
+      public Builder clearAllowControllerList() {
+        if (allowControllerListBuilder_ == null) {
+          allowControllerList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          allowControllerMapBuilder_.clear();
+          allowControllerListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public Builder removeAllowControllerMap(int index) {
-        if (allowControllerMapBuilder_ == null) {
-          ensureAllowControllerMapIsMutable();
-          allowControllerMap_.remove(index);
+      public Builder removeAllowControllerList(int index) {
+        if (allowControllerListBuilder_ == null) {
+          ensureAllowControllerListIsMutable();
+          allowControllerList_.remove(index);
           onChanged();
         } else {
-          allowControllerMapBuilder_.remove(index);
+          allowControllerListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getAllowControllerMapBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getAllowControllerListBuilder(
           int index) {
-        return getAllowControllerMapFieldBuilder().getBuilder(index);
+        return getAllowControllerListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerListOrBuilder(
           int index) {
-        if (allowControllerMapBuilder_ == null) {
-          return allowControllerMap_.get(index);  } else {
-          return allowControllerMapBuilder_.getMessageOrBuilder(index);
+        if (allowControllerListBuilder_ == null) {
+          return allowControllerList_.get(index);  } else {
+          return allowControllerListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-           getAllowControllerMapOrBuilderList() {
-        if (allowControllerMapBuilder_ != null) {
-          return allowControllerMapBuilder_.getMessageOrBuilderList();
+           getAllowControllerListOrBuilderList() {
+        if (allowControllerListBuilder_ != null) {
+          return allowControllerListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(allowControllerMap_);
+          return java.util.Collections.unmodifiableList(allowControllerList_);
         }
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder() {
-        return getAllowControllerMapFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerListBuilder() {
+        return getAllowControllerListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerListBuilder(
           int index) {
-        return getAllowControllerMapFieldBuilder().addBuilder(
+        return getAllowControllerListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair allow_controller_map = 1;</code>
+       * <code>repeated .Uint32Pair allow_controller_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
-           getAllowControllerMapBuilderList() {
-        return getAllowControllerMapFieldBuilder().getBuilderList();
+           getAllowControllerListBuilderList() {
+        return getAllowControllerListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-          getAllowControllerMapFieldBuilder() {
-        if (allowControllerMapBuilder_ == null) {
-          allowControllerMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getAllowControllerListFieldBuilder() {
+        if (allowControllerListBuilder_ == null) {
+          allowControllerListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
-                  allowControllerMap_,
+                  allowControllerList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          allowControllerMap_ = null;
+          allowControllerList_ = null;
         }
-        return allowControllerMapBuilder_;
+        return allowControllerListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -830,9 +822,9 @@ public final class GCGMsgUpdateControllerOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGMsgUpdateController.proto\032\020Uint32Pa" +
-      "ir.proto\"C\n\026GCGMsgUpdateController\022)\n\024al" +
-      "low_controller_map\030\001 \003(\0132\013.Uint32PairB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "ir.proto\"D\n\026GCGMsgUpdateController\022*\n\025al" +
+      "low_controller_list\030\002 \003(\0132\013.Uint32PairB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -844,7 +836,7 @@ public final class GCGMsgUpdateControllerOuterClass {
     internal_static_GCGMsgUpdateController_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgUpdateController_descriptor,
-        new java.lang.String[] { "AllowControllerMap", });
+        new java.lang.String[] { "AllowControllerList", });
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 

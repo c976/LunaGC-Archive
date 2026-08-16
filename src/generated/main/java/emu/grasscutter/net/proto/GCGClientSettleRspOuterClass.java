@@ -19,23 +19,22 @@ public final class GCGClientSettleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 close_time = 13;</code>
-     * @return The closeTime.
-     */
-    int getCloseTime();
-
-    /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     * CMD_ID = 6662
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 close_time = 12;</code>
+     * @return The closeTime.
+     */
+    int getCloseTime();
   }
   /**
-   * <pre>
-   * CmdId: 26809
-   * Obf: DPEDKFHGAFG
-   * </pre>
-   *
    * Protobuf type {@code GCGClientSettleRsp}
    */
   public static final class GCGClientSettleRsp extends
@@ -80,12 +79,12 @@ public final class GCGClientSettleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
               closeTime_ = input.readUInt32();
               break;
@@ -122,26 +121,30 @@ public final class GCGClientSettleRspOuterClass {
               emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp.class, emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp.Builder.class);
     }
 
-    public static final int CLOSE_TIME_FIELD_NUMBER = 13;
-    private int closeTime_;
-    /**
-     * <code>uint32 close_time = 13;</code>
-     * @return The closeTime.
-     */
-    @java.lang.Override
-    public int getCloseTime() {
-      return closeTime_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <pre>
+     * CMD_ID = 6662
+     * </pre>
+     *
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int CLOSE_TIME_FIELD_NUMBER = 12;
+    private int closeTime_;
+    /**
+     * <code>uint32 close_time = 12;</code>
+     * @return The closeTime.
+     */
+    @java.lang.Override
+    public int getCloseTime() {
+      return closeTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +162,10 @@ public final class GCGClientSettleRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (closeTime_ != 0) {
-        output.writeUInt32(13, closeTime_);
+        output.writeUInt32(12, closeTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +178,11 @@ public final class GCGClientSettleRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (closeTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, closeTime_);
+          .computeUInt32Size(12, closeTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +199,10 @@ public final class GCGClientSettleRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp other = (emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp) obj;
 
-      if (getCloseTime()
-          != other.getCloseTime()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getCloseTime()
+          != other.getCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +214,10 @@ public final class GCGClientSettleRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCloseTime();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,11 +314,6 @@ public final class GCGClientSettleRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26809
-     * Obf: DPEDKFHGAFG
-     * </pre>
-     *
      * Protobuf type {@code GCGClientSettleRsp}
      */
     public static final class Builder extends
@@ -353,9 +351,9 @@ public final class GCGClientSettleRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        closeTime_ = 0;
-
         retcode_ = 0;
+
+        closeTime_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class GCGClientSettleRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp buildPartial() {
         emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp result = new emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp(this);
-        result.closeTime_ = closeTime_;
         result.retcode_ = retcode_;
+        result.closeTime_ = closeTime_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class GCGClientSettleRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp other) {
         if (other == emu.grasscutter.net.proto.GCGClientSettleRspOuterClass.GCGClientSettleRsp.getDefaultInstance()) return this;
-        if (other.getCloseTime() != 0) {
-          setCloseTime(other.getCloseTime());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getCloseTime() != 0) {
+          setCloseTime(other.getCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,13 @@ public final class GCGClientSettleRspOuterClass {
         return this;
       }
 
-      private int closeTime_ ;
-      /**
-       * <code>uint32 close_time = 13;</code>
-       * @return The closeTime.
-       */
-      @java.lang.Override
-      public int getCloseTime() {
-        return closeTime_;
-      }
-      /**
-       * <code>uint32 close_time = 13;</code>
-       * @param value The closeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCloseTime(int value) {
-        
-        closeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 close_time = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCloseTime() {
-        
-        closeTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * CMD_ID = 6662
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +480,11 @@ public final class GCGClientSettleRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * CMD_ID = 6662
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,12 +495,47 @@ public final class GCGClientSettleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <pre>
+       * CMD_ID = 6662
+       * </pre>
+       *
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int closeTime_ ;
+      /**
+       * <code>uint32 close_time = 12;</code>
+       * @return The closeTime.
+       */
+      @java.lang.Override
+      public int getCloseTime() {
+        return closeTime_;
+      }
+      /**
+       * <code>uint32 close_time = 12;</code>
+       * @param value The closeTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCloseTime(int value) {
+        
+        closeTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 close_time = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCloseTime() {
+        
+        closeTime_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +607,8 @@ public final class GCGClientSettleRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGClientSettleRsp.proto\"9\n\022GCGClientS" +
-      "ettleRsp\022\022\n\nclose_time\030\r \001(\r\022\017\n\007retcode\030" +
-      "\013 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "ettleRsp\022\017\n\007retcode\030\n \001(\005\022\022\n\nclose_time\030" +
+      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +620,7 @@ public final class GCGClientSettleRspOuterClass {
     internal_static_GCGClientSettleRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGClientSettleRsp_descriptor,
-        new java.lang.String[] { "CloseTime", "Retcode", });
+        new java.lang.String[] { "Retcode", "CloseTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

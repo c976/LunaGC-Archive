@@ -19,11 +19,19 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
     int getLevelInfoMapCount();
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
     boolean containsLevelInfoMap(
         int key);
@@ -31,29 +39,45 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
      * Use {@link #getLevelInfoMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
     getLevelInfoMap();
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
     getLevelInfoMapMap();
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
 
-    emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrDefault(
+    emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo defaultValue);
+        emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO defaultValue);
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
 
-    emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrThrow(
+    emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 special_fish_count = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 special_fish_count = 10;</code>
      * @return The specialFishCount.
      */
     int getSpecialFishCount();
@@ -104,18 +128,18 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               specialFishCount_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoMap_ = com.google.protobuf.MapField.newMapField(
                     LevelInfoMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
               levelInfoMap__ = input.readMessage(
                   LevelInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               levelInfoMap_.getMutableMap().put(
@@ -151,7 +175,7 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 11:
+        case 14:
           return internalGetLevelInfoMap();
         default:
           throw new RuntimeException(
@@ -166,21 +190,21 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.MoonfinTrialActivityDetailInfo.class, emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.MoonfinTrialActivityDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_MAP_FIELD_NUMBER = 11;
+    public static final int LEVEL_INFO_MAP_FIELD_NUMBER = 14;
     private static final class LevelInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> defaultEntry =
+          java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>newDefaultInstance(
+              .<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>newDefaultInstance(
                   emu.grasscutter.net.proto.MoonfinTrialActivityDetailInfoOuterClass.internal_static_MoonfinTrialActivityDetailInfo_LevelInfoMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo.getDefaultInstance());
+                  emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> levelInfoMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+        java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> levelInfoMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
     internalGetLevelInfoMap() {
       if (levelInfoMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -193,7 +217,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       return internalGetLevelInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
 
     @java.lang.Override
@@ -207,39 +235,51 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> getLevelInfoMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> getLevelInfoMap() {
       return getLevelInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> getLevelInfoMapMap() {
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> getLevelInfoMapMap() {
       return internalGetLevelInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrDefault(
+    public emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo defaultValue) {
+        emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO defaultValue) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> map =
           internalGetLevelInfoMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrThrow(
+    public emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> map =
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> map =
           internalGetLevelInfoMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -247,10 +287,14 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SPECIAL_FISH_COUNT_FIELD_NUMBER = 1;
+    public static final int SPECIAL_FISH_COUNT_FIELD_NUMBER = 10;
     private int specialFishCount_;
     /**
-     * <code>uint32 special_fish_count = 1;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 special_fish_count = 10;</code>
      * @return The specialFishCount.
      */
     @java.lang.Override
@@ -273,14 +317,14 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (specialFishCount_ != 0) {
-        output.writeUInt32(1, specialFishCount_);
+        output.writeUInt32(10, specialFishCount_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetLevelInfoMap(),
           LevelInfoMapDefaultEntryHolder.defaultEntry,
-          11);
+          14);
       unknownFields.writeTo(output);
     }
 
@@ -292,17 +336,17 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       size = 0;
       if (specialFishCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, specialFishCount_);
+          .computeUInt32Size(10, specialFishCount_);
       }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> entry
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> entry
            : internalGetLevelInfoMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
         levelInfoMap__ = LevelInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, levelInfoMap__);
+            .computeMessageSize(14, levelInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -451,7 +495,7 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 14:
             return internalGetLevelInfoMap();
           default:
             throw new RuntimeException(
@@ -462,7 +506,7 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 14:
             return internalGetMutableLevelInfoMap();
           default:
             throw new RuntimeException(
@@ -612,8 +656,8 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> levelInfoMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+          java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> levelInfoMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
       internalGetLevelInfoMap() {
         if (levelInfoMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -621,7 +665,7 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         }
         return levelInfoMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
       internalGetMutableLevelInfoMap() {
         onChanged();;
         if (levelInfoMap_ == null) {
@@ -638,7 +682,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         return internalGetLevelInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
 
       @java.lang.Override
@@ -652,39 +700,51 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> getLevelInfoMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> getLevelInfoMap() {
         return getLevelInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> getLevelInfoMapMap() {
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> getLevelInfoMapMap() {
         return internalGetLevelInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrDefault(
+      public emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrDefault(
           int key,
-          emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo defaultValue) {
+          emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO defaultValue) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> map =
             internalGetLevelInfoMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo getLevelInfoMapOrThrow(
+      public emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO getLevelInfoMapOrThrow(
           int key) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> map =
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> map =
             internalGetLevelInfoMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
@@ -698,7 +758,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
 
       public Builder removeLevelInfoMap(
@@ -712,16 +776,20 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo>
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO>
       getMutableLevelInfoMap() {
         return internalGetMutableLevelInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
       public Builder putLevelInfoMap(
           int key,
-          emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo value) {
+          emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableLevelInfoMap().getMutableMap()
@@ -729,11 +797,15 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .MoonfinTrialLevelInfo&gt; level_info_map = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, .COACHKCDDOO&gt; level_info_map = 14;</code>
        */
 
       public Builder putAllLevelInfoMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo> values) {
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.COACHKCDDOOOuterClass.COACHKCDDOO> values) {
         internalGetMutableLevelInfoMap().getMutableMap()
             .putAll(values);
         return this;
@@ -741,7 +813,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
 
       private int specialFishCount_ ;
       /**
-       * <code>uint32 special_fish_count = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 special_fish_count = 10;</code>
        * @return The specialFishCount.
        */
       @java.lang.Override
@@ -749,7 +825,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         return specialFishCount_;
       }
       /**
-       * <code>uint32 special_fish_count = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 special_fish_count = 10;</code>
        * @param value The specialFishCount to set.
        * @return This builder for chaining.
        */
@@ -760,7 +840,11 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 special_fish_count = 1;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 special_fish_count = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSpecialFishCount() {
@@ -841,19 +925,19 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$MoonfinTrialActivityDetailInfo.proto\032\033" +
-      "MoonfinTrialLevelInfo.proto\"\324\001\n\036MoonfinT" +
-      "rialActivityDetailInfo\022I\n\016level_info_map" +
-      "\030\013 \003(\01321.MoonfinTrialActivityDetailInfo." +
-      "LevelInfoMapEntry\022\032\n\022special_fish_count\030" +
-      "\001 \001(\r\032K\n\021LevelInfoMapEntry\022\013\n\003key\030\001 \001(\r\022" +
-      "%\n\005value\030\002 \001(\0132\026.MoonfinTrialLevelInfo:\002" +
-      "8\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n$MoonfinTrialActivityDetailInfo.proto\032\021" +
+      "COACHKCDDOO.proto\"\312\001\n\036MoonfinTrialActivi" +
+      "tyDetailInfo\022I\n\016level_info_map\030\016 \003(\01321.M" +
+      "oonfinTrialActivityDetailInfo.LevelInfoM" +
+      "apEntry\022\032\n\022special_fish_count\030\n \001(\r\032A\n\021L" +
+      "evelInfoMapEntry\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002" +
+      " \001(\0132\014.COACHKCDDOO:\0028\001B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.COACHKCDDOOOuterClass.getDescriptor(),
         });
     internal_static_MoonfinTrialActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -867,7 +951,7 @@ public final class MoonfinTrialActivityDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MoonfinTrialActivityDetailInfo_LevelInfoMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.COACHKCDDOOOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

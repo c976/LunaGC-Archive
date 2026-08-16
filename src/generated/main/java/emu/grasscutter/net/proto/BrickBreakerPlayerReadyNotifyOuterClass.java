@@ -19,17 +19,17 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @return A list containing the uidList.
      */
     java.util.List<java.lang.Integer> getUidListList();
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @return The count of uidList.
      */
     int getUidListCount();
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @param index The index of the element to return.
      * @return The uidList at the given index.
      */
@@ -37,8 +37,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 26920
-   * Obf: GLCKLHPBFNH
+   * CmdId: 3595
    * </pre>
    *
    * Protobuf type {@code BrickBreakerPlayerReadyNotify}
@@ -87,7 +86,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 uidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +94,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
               uidList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +142,10 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
               emu.grasscutter.net.proto.BrickBreakerPlayerReadyNotifyOuterClass.BrickBreakerPlayerReadyNotify.class, emu.grasscutter.net.proto.BrickBreakerPlayerReadyNotifyOuterClass.BrickBreakerPlayerReadyNotify.Builder.class);
     }
 
-    public static final int UID_LIST_FIELD_NUMBER = 6;
+    public static final int UID_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList uidList_;
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @return A list containing the uidList.
      */
     @java.lang.Override
@@ -155,14 +154,14 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
       return uidList_;
     }
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @return The count of uidList.
      */
     public int getUidListCount() {
       return uidList_.size();
     }
     /**
-     * <code>repeated uint32 uid_list = 6;</code>
+     * <code>repeated uint32 uid_list = 11;</code>
      * @param index The index of the element to return.
      * @return The uidList at the given index.
      */
@@ -187,7 +186,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getUidListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(uidListMemoizedSerializedSize);
       }
       for (int i = 0; i < uidList_.size(); i++) {
@@ -345,8 +344,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26920
-     * Obf: GLCKLHPBFNH
+     * CmdId: 3595
      * </pre>
      *
      * Protobuf type {@code BrickBreakerPlayerReadyNotify}
@@ -516,7 +514,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @return A list containing the uidList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +523,14 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
                  java.util.Collections.unmodifiableList(uidList_) : uidList_;
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @return The count of uidList.
        */
       public int getUidListCount() {
         return uidList_.size();
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @param index The index of the element to return.
        * @return The uidList at the given index.
        */
@@ -540,7 +538,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
         return uidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The uidList to set.
        * @return This builder for chaining.
@@ -553,7 +551,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @param value The uidList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +562,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @param values The uidList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +575,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 6;</code>
+       * <code>repeated uint32 uid_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUidList() {
@@ -655,7 +653,7 @@ public final class BrickBreakerPlayerReadyNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#BrickBreakerPlayerReadyNotify.proto\"1\n" +
       "\035BrickBreakerPlayerReadyNotify\022\020\n\010uid_li" +
-      "st\030\006 \003(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "st\030\013 \003(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

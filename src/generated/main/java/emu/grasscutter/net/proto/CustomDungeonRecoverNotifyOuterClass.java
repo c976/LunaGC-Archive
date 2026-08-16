@@ -19,63 +19,102 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @return A list containing the officialBlackCoinList.
      */
     java.util.List<java.lang.Integer> getOfficialBlackCoinListList();
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @return The count of officialBlackCoinList.
      */
     int getOfficialBlackCoinListCount();
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @param index The index of the element to return.
      * @return The officialBlackCoinList at the given index.
      */
     int getOfficialBlackCoinList(int index);
 
     /**
-     * <code>.EnterCustomDungeonType enter_type = 13;</code>
-     * @return The enum numeric value on the wire for enterType.
-     */
-    int getEnterTypeValue();
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 13;</code>
-     * @return The enterType.
-     */
-    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
-
-    /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      * @return Whether the customDungeon field is set.
      */
     boolean hasCustomDungeon();
     /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      * @return The customDungeon.
      */
     emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon();
     /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      */
     emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder();
 
     /**
-     * <code>.TryCustomDungeonType try_type = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TryCustomDungeonType try_type = 8;</code>
      * @return The enum numeric value on the wire for tryType.
      */
     int getTryTypeValue();
     /**
-     * <code>.TryCustomDungeonType try_type = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TryCustomDungeonType try_type = 8;</code>
      * @return The tryType.
      */
     emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType getTryType();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.EnterCustomDungeonType enter_type = 2;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    int getEnterTypeValue();
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.EnterCustomDungeonType enter_type = 2;</code>
+     * @return The enterType.
+     */
+    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
   }
   /**
    * <pre>
-   * CmdId: 22043
-   * Obf: FBLJGJHMEGH
+   * CmdId: 26697
    * </pre>
    *
    * Protobuf type {@code CustomDungeonRecoverNotify}
@@ -91,8 +130,8 @@ public final class CustomDungeonRecoverNotifyOuterClass {
     }
     private CustomDungeonRecoverNotify() {
       officialBlackCoinList_ = emptyIntList();
-      enterType_ = 0;
       tryType_ = 0;
+      enterType_ = 0;
     }
 
     @java.lang.Override
@@ -126,7 +165,19 @@ public final class CustomDungeonRecoverNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
+              int rawValue = input.readEnum();
+
+              enterType_ = rawValue;
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              tryType_ = rawValue;
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 officialBlackCoinList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -134,7 +185,7 @@ public final class CustomDungeonRecoverNotifyOuterClass {
               officialBlackCoinList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -147,7 +198,7 @@ public final class CustomDungeonRecoverNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 58: {
+            case 122: {
               emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder subBuilder = null;
               if (customDungeon_ != null) {
                 subBuilder = customDungeon_.toBuilder();
@@ -158,18 +209,6 @@ public final class CustomDungeonRecoverNotifyOuterClass {
                 customDungeon_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 104: {
-              int rawValue = input.readEnum();
-
-              enterType_ = rawValue;
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              tryType_ = rawValue;
               break;
             }
             default: {
@@ -207,10 +246,14 @@ public final class CustomDungeonRecoverNotifyOuterClass {
               emu.grasscutter.net.proto.CustomDungeonRecoverNotifyOuterClass.CustomDungeonRecoverNotify.class, emu.grasscutter.net.proto.CustomDungeonRecoverNotifyOuterClass.CustomDungeonRecoverNotify.Builder.class);
     }
 
-    public static final int OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER = 5;
+    public static final int OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList officialBlackCoinList_;
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @return A list containing the officialBlackCoinList.
      */
     @java.lang.Override
@@ -219,14 +262,22 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       return officialBlackCoinList_;
     }
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @return The count of officialBlackCoinList.
      */
     public int getOfficialBlackCoinListCount() {
       return officialBlackCoinList_.size();
     }
     /**
-     * <code>repeated uint32 official_black_coin_list = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 official_black_coin_list = 13;</code>
      * @param index The index of the element to return.
      * @return The officialBlackCoinList at the given index.
      */
@@ -235,29 +286,14 @@ public final class CustomDungeonRecoverNotifyOuterClass {
     }
     private int officialBlackCoinListMemoizedSerializedSize = -1;
 
-    public static final int ENTER_TYPE_FIELD_NUMBER = 13;
-    private int enterType_;
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 13;</code>
-     * @return The enum numeric value on the wire for enterType.
-     */
-    @java.lang.Override public int getEnterTypeValue() {
-      return enterType_;
-    }
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 13;</code>
-     * @return The enterType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
-      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
-    }
-
-    public static final int CUSTOM_DUNGEON_FIELD_NUMBER = 7;
+    public static final int CUSTOM_DUNGEON_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon customDungeon_;
     /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      * @return Whether the customDungeon field is set.
      */
     @java.lang.Override
@@ -265,7 +301,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       return customDungeon_ != null;
     }
     /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      * @return The customDungeon.
      */
     @java.lang.Override
@@ -273,30 +313,69 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       return customDungeon_ == null ? emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.getDefaultInstance() : customDungeon_;
     }
     /**
-     * <code>.CustomDungeon custom_dungeon = 7;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.CustomDungeon custom_dungeon = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder() {
       return getCustomDungeon();
     }
 
-    public static final int TRY_TYPE_FIELD_NUMBER = 14;
+    public static final int TRY_TYPE_FIELD_NUMBER = 8;
     private int tryType_;
     /**
-     * <code>.TryCustomDungeonType try_type = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TryCustomDungeonType try_type = 8;</code>
      * @return The enum numeric value on the wire for tryType.
      */
     @java.lang.Override public int getTryTypeValue() {
       return tryType_;
     }
     /**
-     * <code>.TryCustomDungeonType try_type = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>.TryCustomDungeonType try_type = 8;</code>
      * @return The tryType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType getTryType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType result = emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.valueOf(tryType_);
       return result == null ? emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.UNRECOGNIZED : result;
+    }
+
+    public static final int ENTER_TYPE_FIELD_NUMBER = 2;
+    private int enterType_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.EnterCustomDungeonType enter_type = 2;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    @java.lang.Override public int getEnterTypeValue() {
+      return enterType_;
+    }
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>.EnterCustomDungeonType enter_type = 2;</code>
+     * @return The enterType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -314,21 +393,21 @@ public final class CustomDungeonRecoverNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
+        output.writeEnum(2, enterType_);
+      }
+      if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE.getNumber()) {
+        output.writeEnum(8, tryType_);
+      }
       if (getOfficialBlackCoinListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(officialBlackCoinListMemoizedSerializedSize);
       }
       for (int i = 0; i < officialBlackCoinList_.size(); i++) {
         output.writeUInt32NoTag(officialBlackCoinList_.getInt(i));
       }
       if (customDungeon_ != null) {
-        output.writeMessage(7, getCustomDungeon());
-      }
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
-        output.writeEnum(13, enterType_);
-      }
-      if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.TRY_CUSTOM_DUNGEON_NONE.getNumber()) {
-        output.writeEnum(14, tryType_);
+        output.writeMessage(15, getCustomDungeon());
       }
       unknownFields.writeTo(output);
     }
@@ -339,6 +418,14 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.IIEHONBEFJC_ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, enterType_);
+      }
+      if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.JILLIMBELOD_TRY_CUSTOM_DUNGEON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, tryType_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < officialBlackCoinList_.size(); i++) {
@@ -355,15 +442,7 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       }
       if (customDungeon_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getCustomDungeon());
-      }
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, enterType_);
-      }
-      if (tryType_ != emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.TRY_CUSTOM_DUNGEON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, tryType_);
+          .computeMessageSize(15, getCustomDungeon());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,13 +461,13 @@ public final class CustomDungeonRecoverNotifyOuterClass {
 
       if (!getOfficialBlackCoinListList()
           .equals(other.getOfficialBlackCoinListList())) return false;
-      if (enterType_ != other.enterType_) return false;
       if (hasCustomDungeon() != other.hasCustomDungeon()) return false;
       if (hasCustomDungeon()) {
         if (!getCustomDungeon()
             .equals(other.getCustomDungeon())) return false;
       }
       if (tryType_ != other.tryType_) return false;
+      if (enterType_ != other.enterType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -404,14 +483,14 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         hash = (37 * hash) + OFFICIAL_BLACK_COIN_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOfficialBlackCoinListList().hashCode();
       }
-      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + enterType_;
       if (hasCustomDungeon()) {
         hash = (37 * hash) + CUSTOM_DUNGEON_FIELD_NUMBER;
         hash = (53 * hash) + getCustomDungeon().hashCode();
       }
       hash = (37 * hash) + TRY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + tryType_;
+      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + enterType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,8 +588,7 @@ public final class CustomDungeonRecoverNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22043
-     * Obf: FBLJGJHMEGH
+     * CmdId: 26697
      * </pre>
      *
      * Protobuf type {@code CustomDungeonRecoverNotify}
@@ -552,8 +630,6 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         super.clear();
         officialBlackCoinList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        enterType_ = 0;
-
         if (customDungeonBuilder_ == null) {
           customDungeon_ = null;
         } else {
@@ -561,6 +637,8 @@ public final class CustomDungeonRecoverNotifyOuterClass {
           customDungeonBuilder_ = null;
         }
         tryType_ = 0;
+
+        enterType_ = 0;
 
         return this;
       }
@@ -594,13 +672,13 @@ public final class CustomDungeonRecoverNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.officialBlackCoinList_ = officialBlackCoinList_;
-        result.enterType_ = enterType_;
         if (customDungeonBuilder_ == null) {
           result.customDungeon_ = customDungeon_;
         } else {
           result.customDungeon_ = customDungeonBuilder_.build();
         }
         result.tryType_ = tryType_;
+        result.enterType_ = enterType_;
         onBuilt();
         return result;
       }
@@ -659,14 +737,14 @@ public final class CustomDungeonRecoverNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.enterType_ != 0) {
-          setEnterTypeValue(other.getEnterTypeValue());
-        }
         if (other.hasCustomDungeon()) {
           mergeCustomDungeon(other.getCustomDungeon());
         }
         if (other.tryType_ != 0) {
           setTryTypeValue(other.getTryTypeValue());
+        }
+        if (other.enterType_ != 0) {
+          setEnterTypeValue(other.getEnterTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -706,7 +784,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @return A list containing the officialBlackCoinList.
        */
       public java.util.List<java.lang.Integer>
@@ -715,14 +797,22 @@ public final class CustomDungeonRecoverNotifyOuterClass {
                  java.util.Collections.unmodifiableList(officialBlackCoinList_) : officialBlackCoinList_;
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @return The count of officialBlackCoinList.
        */
       public int getOfficialBlackCoinListCount() {
         return officialBlackCoinList_.size();
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @param index The index of the element to return.
        * @return The officialBlackCoinList at the given index.
        */
@@ -730,7 +820,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return officialBlackCoinList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The officialBlackCoinList to set.
        * @return This builder for chaining.
@@ -743,7 +837,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @param value The officialBlackCoinList to add.
        * @return This builder for chaining.
        */
@@ -754,7 +852,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @param values The officialBlackCoinList to add.
        * @return This builder for chaining.
        */
@@ -767,7 +869,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 official_black_coin_list = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 official_black_coin_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearOfficialBlackCoinList() {
@@ -777,72 +883,26 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
 
-      private int enterType_ = 0;
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 13;</code>
-       * @return The enum numeric value on the wire for enterType.
-       */
-      @java.lang.Override public int getEnterTypeValue() {
-        return enterType_;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 13;</code>
-       * @param value The enum numeric value on the wire for enterType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnterTypeValue(int value) {
-        
-        enterType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 13;</code>
-       * @return The enterType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
-        return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 13;</code>
-       * @param value The enterType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnterType(emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        enterType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEnterType() {
-        
-        enterType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon customDungeon_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder> customDungeonBuilder_;
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        * @return Whether the customDungeon field is set.
        */
       public boolean hasCustomDungeon() {
         return customDungeonBuilder_ != null || customDungeon_ != null;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        * @return The customDungeon.
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon() {
@@ -853,7 +913,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         }
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public Builder setCustomDungeon(emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon value) {
         if (customDungeonBuilder_ == null) {
@@ -869,7 +933,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public Builder setCustomDungeon(
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder builderForValue) {
@@ -883,7 +951,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public Builder mergeCustomDungeon(emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon value) {
         if (customDungeonBuilder_ == null) {
@@ -901,7 +973,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public Builder clearCustomDungeon() {
         if (customDungeonBuilder_ == null) {
@@ -915,7 +991,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder getCustomDungeonBuilder() {
         
@@ -923,7 +1003,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return getCustomDungeonFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder() {
         if (customDungeonBuilder_ != null) {
@@ -934,7 +1018,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         }
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 7;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.CustomDungeon custom_dungeon = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder> 
@@ -952,14 +1040,22 @@ public final class CustomDungeonRecoverNotifyOuterClass {
 
       private int tryType_ = 0;
       /**
-       * <code>.TryCustomDungeonType try_type = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TryCustomDungeonType try_type = 8;</code>
        * @return The enum numeric value on the wire for tryType.
        */
       @java.lang.Override public int getTryTypeValue() {
         return tryType_;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TryCustomDungeonType try_type = 8;</code>
        * @param value The enum numeric value on the wire for tryType to set.
        * @return This builder for chaining.
        */
@@ -970,7 +1066,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TryCustomDungeonType try_type = 8;</code>
        * @return The tryType.
        */
       @java.lang.Override
@@ -980,7 +1080,11 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.TryCustomDungeonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TryCustomDungeonType try_type = 8;</code>
        * @param value The tryType to set.
        * @return This builder for chaining.
        */
@@ -994,12 +1098,90 @@ public final class CustomDungeonRecoverNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TryCustomDungeonType try_type = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>.TryCustomDungeonType try_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearTryType() {
         
         tryType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int enterType_ = 0;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.EnterCustomDungeonType enter_type = 2;</code>
+       * @return The enum numeric value on the wire for enterType.
+       */
+      @java.lang.Override public int getEnterTypeValue() {
+        return enterType_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.EnterCustomDungeonType enter_type = 2;</code>
+       * @param value The enum numeric value on the wire for enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterTypeValue(int value) {
+        
+        enterType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.EnterCustomDungeonType enter_type = 2;</code>
+       * @return The enterType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
+        return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.EnterCustomDungeonType enter_type = 2;</code>
+       * @param value The enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterType(emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        enterType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>.EnterCustomDungeonType enter_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterType() {
+        
+        enterType_ = 0;
         onChanged();
         return this;
       }
@@ -1070,21 +1252,21 @@ public final class CustomDungeonRecoverNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n CustomDungeonRecoverNotify.proto\032\034Ente" +
-      "rCustomDungeonType.proto\032\023CustomDungeon." +
+      "\n CustomDungeonRecoverNotify.proto\032\023Cust" +
+      "omDungeon.proto\032\034EnterCustomDungeonType." +
       "proto\032\032TryCustomDungeonType.proto\"\274\001\n\032Cu" +
       "stomDungeonRecoverNotify\022 \n\030official_bla" +
-      "ck_coin_list\030\005 \003(\r\022+\n\nenter_type\030\r \001(\0162\027" +
-      ".EnterCustomDungeonType\022&\n\016custom_dungeo" +
-      "n\030\007 \001(\0132\016.CustomDungeon\022\'\n\010try_type\030\016 \001(" +
-      "\0162\025.TryCustomDungeonTypeB\033\n\031emu.grasscut" +
+      "ck_coin_list\030\r \003(\r\022&\n\016custom_dungeon\030\017 \001" +
+      "(\0132\016.CustomDungeon\022\'\n\010try_type\030\010 \001(\0162\025.T" +
+      "ryCustomDungeonType\022+\n\nenter_type\030\002 \001(\0162" +
+      "\027.EnterCustomDungeonTypeB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CustomDungeonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.getDescriptor(),
         });
     internal_static_CustomDungeonRecoverNotify_descriptor =
@@ -1092,9 +1274,9 @@ public final class CustomDungeonRecoverNotifyOuterClass {
     internal_static_CustomDungeonRecoverNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CustomDungeonRecoverNotify_descriptor,
-        new java.lang.String[] { "OfficialBlackCoinList", "EnterType", "CustomDungeon", "TryType", });
-    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "OfficialBlackCoinList", "CustomDungeon", "TryType", "EnterType", });
     emu.grasscutter.net.proto.CustomDungeonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TryCustomDungeonTypeOuterClass.getDescriptor();
   }
 

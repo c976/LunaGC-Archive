@@ -19,12 +19,20 @@ public final class ServantInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 master_entity_id = 1;</code>
      * @return The masterEntityId.
      */
     int getMasterEntityId();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 born_slot_index = 2;</code>
      * @return The bornSlotIndex.
      */
@@ -120,6 +128,10 @@ public final class ServantInfoOuterClass {
     public static final int MASTER_ENTITY_ID_FIELD_NUMBER = 1;
     private int masterEntityId_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>uint32 master_entity_id = 1;</code>
      * @return The masterEntityId.
      */
@@ -131,6 +143,10 @@ public final class ServantInfoOuterClass {
     public static final int BORN_SLOT_INDEX_FIELD_NUMBER = 2;
     private int bornSlotIndex_;
     /**
+     * <pre>
+     *6.3.0 // offset: 36
+     * </pre>
+     *
      * <code>uint32 born_slot_index = 2;</code>
      * @return The bornSlotIndex.
      */
@@ -460,6 +476,10 @@ public final class ServantInfoOuterClass {
 
       private int masterEntityId_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 master_entity_id = 1;</code>
        * @return The masterEntityId.
        */
@@ -468,6 +488,10 @@ public final class ServantInfoOuterClass {
         return masterEntityId_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 master_entity_id = 1;</code>
        * @param value The masterEntityId to set.
        * @return This builder for chaining.
@@ -479,6 +503,10 @@ public final class ServantInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
        * <code>uint32 master_entity_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -491,6 +519,10 @@ public final class ServantInfoOuterClass {
 
       private int bornSlotIndex_ ;
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 born_slot_index = 2;</code>
        * @return The bornSlotIndex.
        */
@@ -499,6 +531,10 @@ public final class ServantInfoOuterClass {
         return bornSlotIndex_;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 born_slot_index = 2;</code>
        * @param value The bornSlotIndex to set.
        * @return This builder for chaining.
@@ -510,6 +546,10 @@ public final class ServantInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 36
+       * </pre>
+       *
        * <code>uint32 born_slot_index = 2;</code>
        * @return This builder for chaining.
        */

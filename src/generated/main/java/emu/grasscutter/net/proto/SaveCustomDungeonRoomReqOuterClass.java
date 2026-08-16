@@ -19,45 +19,72 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_update_setting = 9;</code>
-     * @return The isUpdateSetting.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+     * @return Whether the oCELNEONAHG field is set.
      */
-    boolean getIsUpdateSetting();
+    boolean hasOCELNEONAHG();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+     * @return The oCELNEONAHG.
+     */
+    emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM getOCELNEONAHG();
+    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+     */
+    emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder getOCELNEONAHGOrBuilder();
 
     /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-     * @return Whether the customDungeonRoom field is set.
-     */
-    boolean hasCustomDungeonRoom();
-    /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-     * @return The customDungeonRoom.
-     */
-    emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom getCustomDungeonRoom();
-    /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-     */
-    emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder getCustomDungeonRoomOrBuilder();
-
-    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      * @return Whether the setting field is set.
      */
     boolean hasSetting();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      * @return The setting.
      */
     emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting getSetting();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      */
     emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSettingOrBuilder getSettingOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_update_setting = 4;</code>
+     * @return The isUpdateSetting.
+     */
+    boolean getIsUpdateSetting();
   }
   /**
    * <pre>
-   * CmdId: 7311
-   * Obf: JBKNDGLOCNF
+   * CmdId: 1851
    * </pre>
    *
    * Protobuf type {@code SaveCustomDungeonRoomReq}
@@ -104,9 +131,22 @@ public final class SaveCustomDungeonRoomReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 32: {
 
               isUpdateSetting_ = input.readBool();
+              break;
+            }
+            case 74: {
+              emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder subBuilder = null;
+              if (oCELNEONAHG_ != null) {
+                subBuilder = oCELNEONAHG_.toBuilder();
+              }
+              oCELNEONAHG_ = input.readMessage(emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(oCELNEONAHG_);
+                oCELNEONAHG_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             case 98: {
@@ -118,19 +158,6 @@ public final class SaveCustomDungeonRoomReqOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(setting_);
                 setting_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 114: {
-              emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder subBuilder = null;
-              if (customDungeonRoom_ != null) {
-                subBuilder = customDungeonRoom_.toBuilder();
-              }
-              customDungeonRoom_ = input.readMessage(emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(customDungeonRoom_);
-                customDungeonRoom_ = subBuilder.buildPartial();
               }
 
               break;
@@ -167,46 +194,51 @@ public final class SaveCustomDungeonRoomReqOuterClass {
               emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq.class, emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq.Builder.class);
     }
 
-    public static final int IS_UPDATE_SETTING_FIELD_NUMBER = 9;
-    private boolean isUpdateSetting_;
+    public static final int OCELNEONAHG_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM oCELNEONAHG_;
     /**
-     * <code>bool is_update_setting = 9;</code>
-     * @return The isUpdateSetting.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+     * @return Whether the oCELNEONAHG field is set.
      */
     @java.lang.Override
-    public boolean getIsUpdateSetting() {
-      return isUpdateSetting_;
-    }
-
-    public static final int CUSTOM_DUNGEON_ROOM_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom customDungeonRoom_;
-    /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-     * @return Whether the customDungeonRoom field is set.
-     */
-    @java.lang.Override
-    public boolean hasCustomDungeonRoom() {
-      return customDungeonRoom_ != null;
+    public boolean hasOCELNEONAHG() {
+      return oCELNEONAHG_ != null;
     }
     /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-     * @return The customDungeonRoom.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+     * @return The oCELNEONAHG.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom getCustomDungeonRoom() {
-      return customDungeonRoom_ == null ? emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.getDefaultInstance() : customDungeonRoom_;
+    public emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM getOCELNEONAHG() {
+      return oCELNEONAHG_ == null ? emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.getDefaultInstance() : oCELNEONAHG_;
     }
     /**
-     * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder getCustomDungeonRoomOrBuilder() {
-      return getCustomDungeonRoom();
+    public emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder getOCELNEONAHGOrBuilder() {
+      return getOCELNEONAHG();
     }
 
     public static final int SETTING_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting setting_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      * @return Whether the setting field is set.
      */
@@ -215,6 +247,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       return setting_ != null;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      * @return The setting.
      */
@@ -223,11 +259,30 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       return setting_ == null ? emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.getDefaultInstance() : setting_;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.CustomDungeonSetting setting = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSettingOrBuilder getSettingOrBuilder() {
       return getSetting();
+    }
+
+    public static final int IS_UPDATE_SETTING_FIELD_NUMBER = 4;
+    private boolean isUpdateSetting_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>bool is_update_setting = 4;</code>
+     * @return The isUpdateSetting.
+     */
+    @java.lang.Override
+    public boolean getIsUpdateSetting() {
+      return isUpdateSetting_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,13 +300,13 @@ public final class SaveCustomDungeonRoomReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isUpdateSetting_ != false) {
-        output.writeBool(9, isUpdateSetting_);
+        output.writeBool(4, isUpdateSetting_);
+      }
+      if (oCELNEONAHG_ != null) {
+        output.writeMessage(9, getOCELNEONAHG());
       }
       if (setting_ != null) {
         output.writeMessage(12, getSetting());
-      }
-      if (customDungeonRoom_ != null) {
-        output.writeMessage(14, getCustomDungeonRoom());
       }
       unknownFields.writeTo(output);
     }
@@ -264,15 +319,15 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       size = 0;
       if (isUpdateSetting_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isUpdateSetting_);
+          .computeBoolSize(4, isUpdateSetting_);
+      }
+      if (oCELNEONAHG_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getOCELNEONAHG());
       }
       if (setting_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getSetting());
-      }
-      if (customDungeonRoom_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCustomDungeonRoom());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,18 +344,18 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       }
       emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq other = (emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq) obj;
 
-      if (getIsUpdateSetting()
-          != other.getIsUpdateSetting()) return false;
-      if (hasCustomDungeonRoom() != other.hasCustomDungeonRoom()) return false;
-      if (hasCustomDungeonRoom()) {
-        if (!getCustomDungeonRoom()
-            .equals(other.getCustomDungeonRoom())) return false;
+      if (hasOCELNEONAHG() != other.hasOCELNEONAHG()) return false;
+      if (hasOCELNEONAHG()) {
+        if (!getOCELNEONAHG()
+            .equals(other.getOCELNEONAHG())) return false;
       }
       if (hasSetting() != other.hasSetting()) return false;
       if (hasSetting()) {
         if (!getSetting()
             .equals(other.getSetting())) return false;
       }
+      if (getIsUpdateSetting()
+          != other.getIsUpdateSetting()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -312,17 +367,17 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_UPDATE_SETTING_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUpdateSetting());
-      if (hasCustomDungeonRoom()) {
-        hash = (37 * hash) + CUSTOM_DUNGEON_ROOM_FIELD_NUMBER;
-        hash = (53 * hash) + getCustomDungeonRoom().hashCode();
+      if (hasOCELNEONAHG()) {
+        hash = (37 * hash) + OCELNEONAHG_FIELD_NUMBER;
+        hash = (53 * hash) + getOCELNEONAHG().hashCode();
       }
       if (hasSetting()) {
         hash = (37 * hash) + SETTING_FIELD_NUMBER;
         hash = (53 * hash) + getSetting().hashCode();
       }
+      hash = (37 * hash) + IS_UPDATE_SETTING_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsUpdateSetting());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -420,8 +475,7 @@ public final class SaveCustomDungeonRoomReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7311
-     * Obf: JBKNDGLOCNF
+     * CmdId: 1851
      * </pre>
      *
      * Protobuf type {@code SaveCustomDungeonRoomReq}
@@ -461,13 +515,11 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isUpdateSetting_ = false;
-
-        if (customDungeonRoomBuilder_ == null) {
-          customDungeonRoom_ = null;
+        if (oCELNEONAHGBuilder_ == null) {
+          oCELNEONAHG_ = null;
         } else {
-          customDungeonRoom_ = null;
-          customDungeonRoomBuilder_ = null;
+          oCELNEONAHG_ = null;
+          oCELNEONAHGBuilder_ = null;
         }
         if (settingBuilder_ == null) {
           setting_ = null;
@@ -475,6 +527,8 @@ public final class SaveCustomDungeonRoomReqOuterClass {
           setting_ = null;
           settingBuilder_ = null;
         }
+        isUpdateSetting_ = false;
+
         return this;
       }
 
@@ -501,17 +555,17 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq buildPartial() {
         emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq result = new emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq(this);
-        result.isUpdateSetting_ = isUpdateSetting_;
-        if (customDungeonRoomBuilder_ == null) {
-          result.customDungeonRoom_ = customDungeonRoom_;
+        if (oCELNEONAHGBuilder_ == null) {
+          result.oCELNEONAHG_ = oCELNEONAHG_;
         } else {
-          result.customDungeonRoom_ = customDungeonRoomBuilder_.build();
+          result.oCELNEONAHG_ = oCELNEONAHGBuilder_.build();
         }
         if (settingBuilder_ == null) {
           result.setting_ = setting_;
         } else {
           result.setting_ = settingBuilder_.build();
         }
+        result.isUpdateSetting_ = isUpdateSetting_;
         onBuilt();
         return result;
       }
@@ -560,14 +614,14 @@ public final class SaveCustomDungeonRoomReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq other) {
         if (other == emu.grasscutter.net.proto.SaveCustomDungeonRoomReqOuterClass.SaveCustomDungeonRoomReq.getDefaultInstance()) return this;
-        if (other.getIsUpdateSetting() != false) {
-          setIsUpdateSetting(other.getIsUpdateSetting());
-        }
-        if (other.hasCustomDungeonRoom()) {
-          mergeCustomDungeonRoom(other.getCustomDungeonRoom());
+        if (other.hasOCELNEONAHG()) {
+          mergeOCELNEONAHG(other.getOCELNEONAHG());
         }
         if (other.hasSetting()) {
           mergeSetting(other.getSetting());
+        }
+        if (other.getIsUpdateSetting() != false) {
+          setIsUpdateSetting(other.getIsUpdateSetting());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -598,160 +652,169 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return this;
       }
 
-      private boolean isUpdateSetting_ ;
-      /**
-       * <code>bool is_update_setting = 9;</code>
-       * @return The isUpdateSetting.
-       */
-      @java.lang.Override
-      public boolean getIsUpdateSetting() {
-        return isUpdateSetting_;
-      }
-      /**
-       * <code>bool is_update_setting = 9;</code>
-       * @param value The isUpdateSetting to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsUpdateSetting(boolean value) {
-        
-        isUpdateSetting_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_update_setting = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsUpdateSetting() {
-        
-        isUpdateSetting_ = false;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom customDungeonRoom_;
+      private emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM oCELNEONAHG_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder> customDungeonRoomBuilder_;
+          emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder> oCELNEONAHGBuilder_;
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-       * @return Whether the customDungeonRoom field is set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+       * @return Whether the oCELNEONAHG field is set.
        */
-      public boolean hasCustomDungeonRoom() {
-        return customDungeonRoomBuilder_ != null || customDungeonRoom_ != null;
+      public boolean hasOCELNEONAHG() {
+        return oCELNEONAHGBuilder_ != null || oCELNEONAHG_ != null;
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
-       * @return The customDungeonRoom.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
+       * @return The oCELNEONAHG.
        */
-      public emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom getCustomDungeonRoom() {
-        if (customDungeonRoomBuilder_ == null) {
-          return customDungeonRoom_ == null ? emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.getDefaultInstance() : customDungeonRoom_;
+      public emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM getOCELNEONAHG() {
+        if (oCELNEONAHGBuilder_ == null) {
+          return oCELNEONAHG_ == null ? emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.getDefaultInstance() : oCELNEONAHG_;
         } else {
-          return customDungeonRoomBuilder_.getMessage();
+          return oCELNEONAHGBuilder_.getMessage();
         }
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public Builder setCustomDungeonRoom(emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom value) {
-        if (customDungeonRoomBuilder_ == null) {
+      public Builder setOCELNEONAHG(emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM value) {
+        if (oCELNEONAHGBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          customDungeonRoom_ = value;
+          oCELNEONAHG_ = value;
           onChanged();
         } else {
-          customDungeonRoomBuilder_.setMessage(value);
+          oCELNEONAHGBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public Builder setCustomDungeonRoom(
-          emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder builderForValue) {
-        if (customDungeonRoomBuilder_ == null) {
-          customDungeonRoom_ = builderForValue.build();
+      public Builder setOCELNEONAHG(
+          emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder builderForValue) {
+        if (oCELNEONAHGBuilder_ == null) {
+          oCELNEONAHG_ = builderForValue.build();
           onChanged();
         } else {
-          customDungeonRoomBuilder_.setMessage(builderForValue.build());
+          oCELNEONAHGBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public Builder mergeCustomDungeonRoom(emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom value) {
-        if (customDungeonRoomBuilder_ == null) {
-          if (customDungeonRoom_ != null) {
-            customDungeonRoom_ =
-              emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.newBuilder(customDungeonRoom_).mergeFrom(value).buildPartial();
+      public Builder mergeOCELNEONAHG(emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM value) {
+        if (oCELNEONAHGBuilder_ == null) {
+          if (oCELNEONAHG_ != null) {
+            oCELNEONAHG_ =
+              emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.newBuilder(oCELNEONAHG_).mergeFrom(value).buildPartial();
           } else {
-            customDungeonRoom_ = value;
+            oCELNEONAHG_ = value;
           }
           onChanged();
         } else {
-          customDungeonRoomBuilder_.mergeFrom(value);
+          oCELNEONAHGBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public Builder clearCustomDungeonRoom() {
-        if (customDungeonRoomBuilder_ == null) {
-          customDungeonRoom_ = null;
+      public Builder clearOCELNEONAHG() {
+        if (oCELNEONAHGBuilder_ == null) {
+          oCELNEONAHG_ = null;
           onChanged();
         } else {
-          customDungeonRoom_ = null;
-          customDungeonRoomBuilder_ = null;
+          oCELNEONAHG_ = null;
+          oCELNEONAHGBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder getCustomDungeonRoomBuilder() {
+      public emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder getOCELNEONAHGBuilder() {
         
         onChanged();
-        return getCustomDungeonRoomFieldBuilder().getBuilder();
+        return getOCELNEONAHGFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
-      public emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder getCustomDungeonRoomOrBuilder() {
-        if (customDungeonRoomBuilder_ != null) {
-          return customDungeonRoomBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder getOCELNEONAHGOrBuilder() {
+        if (oCELNEONAHGBuilder_ != null) {
+          return oCELNEONAHGBuilder_.getMessageOrBuilder();
         } else {
-          return customDungeonRoom_ == null ?
-              emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.getDefaultInstance() : customDungeonRoom_;
+          return oCELNEONAHG_ == null ?
+              emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.getDefaultInstance() : oCELNEONAHG_;
         }
       }
       /**
-       * <code>.CustomDungeonRoom custom_dungeon_room = 14;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.KCCEFFCEBCM OCELNEONAHG = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder> 
-          getCustomDungeonRoomFieldBuilder() {
-        if (customDungeonRoomBuilder_ == null) {
-          customDungeonRoomBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.Builder, emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoomOrBuilder>(
-                  getCustomDungeonRoom(),
+          emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder> 
+          getOCELNEONAHGFieldBuilder() {
+        if (oCELNEONAHGBuilder_ == null) {
+          oCELNEONAHGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCM.Builder, emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.KCCEFFCEBCMOrBuilder>(
+                  getOCELNEONAHG(),
                   getParentForChildren(),
                   isClean());
-          customDungeonRoom_ = null;
+          oCELNEONAHG_ = null;
         }
-        return customDungeonRoomBuilder_;
+        return oCELNEONAHGBuilder_;
       }
 
       private emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting setting_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting, emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.Builder, emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSettingOrBuilder> settingBuilder_;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        * @return Whether the setting field is set.
        */
@@ -759,6 +822,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return settingBuilder_ != null || setting_ != null;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        * @return The setting.
        */
@@ -770,6 +837,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public Builder setSetting(emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting value) {
@@ -786,6 +857,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public Builder setSetting(
@@ -800,6 +875,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public Builder mergeSetting(emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting value) {
@@ -818,6 +897,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public Builder clearSetting() {
@@ -832,6 +915,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.Builder getSettingBuilder() {
@@ -840,6 +927,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         return getSettingFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSettingOrBuilder getSettingOrBuilder() {
@@ -851,6 +942,10 @@ public final class SaveCustomDungeonRoomReqOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.CustomDungeonSetting setting = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -865,6 +960,49 @@ public final class SaveCustomDungeonRoomReqOuterClass {
           setting_ = null;
         }
         return settingBuilder_;
+      }
+
+      private boolean isUpdateSetting_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_update_setting = 4;</code>
+       * @return The isUpdateSetting.
+       */
+      @java.lang.Override
+      public boolean getIsUpdateSetting() {
+        return isUpdateSetting_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_update_setting = 4;</code>
+       * @param value The isUpdateSetting to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsUpdateSetting(boolean value) {
+        
+        isUpdateSetting_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>bool is_update_setting = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsUpdateSetting() {
+        
+        isUpdateSetting_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -933,28 +1071,28 @@ public final class SaveCustomDungeonRoomReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SaveCustomDungeonRoomReq.proto\032\027Custom" +
-      "DungeonRoom.proto\032\032CustomDungeonSetting." +
-      "proto\"\216\001\n\030SaveCustomDungeonRoomReq\022\031\n\021is" +
-      "_update_setting\030\t \001(\010\022/\n\023custom_dungeon_" +
-      "room\030\016 \001(\0132\022.CustomDungeonRoom\022&\n\007settin" +
-      "g\030\014 \001(\0132\025.CustomDungeonSettingB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\036SaveCustomDungeonRoomReq.proto\032\032Custom" +
+      "DungeonSetting.proto\032\021KCCEFFCEBCM.proto\"" +
+      "\200\001\n\030SaveCustomDungeonRoomReq\022!\n\013OCELNEON" +
+      "AHG\030\t \001(\0132\014.KCCEFFCEBCM\022&\n\007setting\030\014 \001(\013" +
+      "2\025.CustomDungeonSetting\022\031\n\021is_update_set" +
+      "ting\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.getDescriptor(),
         });
     internal_static_SaveCustomDungeonRoomReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SaveCustomDungeonRoomReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveCustomDungeonRoomReq_descriptor,
-        new java.lang.String[] { "IsUpdateSetting", "CustomDungeonRoom", "Setting", });
-    emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.getDescriptor();
+        new java.lang.String[] { "OCELNEONAHG", "Setting", "IsUpdateSetting", });
     emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.KCCEFFCEBCMOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

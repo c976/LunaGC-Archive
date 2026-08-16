@@ -19,21 +19,20 @@ public final class ActivitySaleChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_close = 1;</code>
+     * <code>bool is_close = 3;</code>
      * @return The isClose.
      */
     boolean getIsClose();
 
     /**
-     * <code>uint32 sale_id = 15;</code>
+     * <code>uint32 sale_id = 14;</code>
      * @return The saleId.
      */
     int getSaleId();
   }
   /**
    * <pre>
-   * CmdId: 7366
-   * Obf: PEBIAODKCLI
+   * CmdId: 8272
    * </pre>
    *
    * Protobuf type {@code ActivitySaleChangeNotify}
@@ -80,12 +79,12 @@ public final class ActivitySaleChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               isClose_ = input.readBool();
               break;
             }
-            case 120: {
+            case 112: {
 
               saleId_ = input.readUInt32();
               break;
@@ -122,10 +121,10 @@ public final class ActivitySaleChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify.class, emu.grasscutter.net.proto.ActivitySaleChangeNotifyOuterClass.ActivitySaleChangeNotify.Builder.class);
     }
 
-    public static final int IS_CLOSE_FIELD_NUMBER = 1;
+    public static final int IS_CLOSE_FIELD_NUMBER = 3;
     private boolean isClose_;
     /**
-     * <code>bool is_close = 1;</code>
+     * <code>bool is_close = 3;</code>
      * @return The isClose.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class ActivitySaleChangeNotifyOuterClass {
       return isClose_;
     }
 
-    public static final int SALE_ID_FIELD_NUMBER = 15;
+    public static final int SALE_ID_FIELD_NUMBER = 14;
     private int saleId_;
     /**
-     * <code>uint32 sale_id = 15;</code>
+     * <code>uint32 sale_id = 14;</code>
      * @return The saleId.
      */
     @java.lang.Override
@@ -159,10 +158,10 @@ public final class ActivitySaleChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isClose_ != false) {
-        output.writeBool(1, isClose_);
+        output.writeBool(3, isClose_);
       }
       if (saleId_ != 0) {
-        output.writeUInt32(15, saleId_);
+        output.writeUInt32(14, saleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class ActivitySaleChangeNotifyOuterClass {
       size = 0;
       if (isClose_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isClose_);
+          .computeBoolSize(3, isClose_);
       }
       if (saleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, saleId_);
+          .computeUInt32Size(14, saleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +312,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7366
-     * Obf: PEBIAODKCLI
+     * CmdId: 8272
      * </pre>
      *
      * Protobuf type {@code ActivitySaleChangeNotify}
@@ -471,7 +469,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
 
       private boolean isClose_ ;
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 3;</code>
        * @return The isClose.
        */
       @java.lang.Override
@@ -479,7 +477,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return isClose_;
       }
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 3;</code>
        * @param value The isClose to set.
        * @return This builder for chaining.
        */
@@ -490,7 +488,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_close = 1;</code>
+       * <code>bool is_close = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsClose() {
@@ -502,7 +500,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
 
       private int saleId_ ;
       /**
-       * <code>uint32 sale_id = 15;</code>
+       * <code>uint32 sale_id = 14;</code>
        * @return The saleId.
        */
       @java.lang.Override
@@ -510,7 +508,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return saleId_;
       }
       /**
-       * <code>uint32 sale_id = 15;</code>
+       * <code>uint32 sale_id = 14;</code>
        * @param value The saleId to set.
        * @return This builder for chaining.
        */
@@ -521,7 +519,7 @@ public final class ActivitySaleChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sale_id = 15;</code>
+       * <code>uint32 sale_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSaleId() {
@@ -598,8 +596,8 @@ public final class ActivitySaleChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ActivitySaleChangeNotify.proto\"=\n\030Acti" +
-      "vitySaleChangeNotify\022\020\n\010is_close\030\001 \001(\010\022\017" +
-      "\n\007sale_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "vitySaleChangeNotify\022\020\n\010is_close\030\003 \001(\010\022\017" +
+      "\n\007sale_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

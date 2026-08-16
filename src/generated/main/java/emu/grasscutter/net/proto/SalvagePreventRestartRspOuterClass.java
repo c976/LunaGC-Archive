@@ -19,21 +19,20 @@ public final class SalvagePreventRestartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 26886
-   * Obf: MOKPKLLLEHK
+   * CmdId: 24577
    * </pre>
    *
    * Protobuf type {@code SalvagePreventRestartRsp}
@@ -80,14 +79,14 @@ public final class SalvagePreventRestartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 104: {
+            case 80: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +121,10 @@ public final class SalvagePreventRestartRspOuterClass {
               emu.grasscutter.net.proto.SalvagePreventRestartRspOuterClass.SalvagePreventRestartRsp.class, emu.grasscutter.net.proto.SalvagePreventRestartRspOuterClass.SalvagePreventRestartRsp.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 13;
+    public static final int GALLERY_ID_FIELD_NUMBER = 10;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 13;</code>
+     * <code>uint32 gallery_id = 10;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class SalvagePreventRestartRspOuterClass {
       return galleryId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class SalvagePreventRestartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(13, galleryId_);
+        output.writeUInt32(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class SalvagePreventRestartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, galleryId_);
+          .computeUInt32Size(10, galleryId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class SalvagePreventRestartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26886
-     * Obf: MOKPKLLLEHK
+     * CmdId: 24577
      * </pre>
      *
      * Protobuf type {@code SalvagePreventRestartRsp}
@@ -470,7 +468,7 @@ public final class SalvagePreventRestartRspOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class SalvagePreventRestartRspOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class SalvagePreventRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 13;</code>
+       * <code>uint32 gallery_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -501,7 +499,7 @@ public final class SalvagePreventRestartRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class SalvagePreventRestartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class SalvagePreventRestartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +595,8 @@ public final class SalvagePreventRestartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SalvagePreventRestartRsp.proto\"?\n\030Salv" +
-      "agePreventRestartRsp\022\022\n\ngallery_id\030\r \001(\r" +
-      "\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscutter.net" +
+      "agePreventRestartRsp\022\022\n\ngallery_id\030\n \001(\r" +
+      "\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

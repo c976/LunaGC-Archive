@@ -19,56 +19,56 @@ public final class TowerBriefDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_star_num = 10;</code>
-     * @return The totalStarNum.
+     * <code>uint32 LPLFPCKBJIC = 1;</code>
+     * @return The lPLFPCKBJIC.
      */
-    int getTotalStarNum();
+    int getLPLFPCKBJIC();
 
     /**
-     * <code>uint32 next_schedule_change_time = 9;</code>
-     * @return The nextScheduleChangeTime.
-     */
-    int getNextScheduleChangeTime();
-
-    /**
-     * <code>uint32 AHCPDFFJOAN = 13;</code>
-     * @return The aHCPDFFJOAN.
-     */
-    int getAHCPDFFJOAN();
-
-    /**
-     * <code>uint32 tower_schedule_id = 8;</code>
+     * <code>uint32 tower_schedule_id = 2;</code>
      * @return The towerScheduleId.
      */
     int getTowerScheduleId();
 
     /**
-     * <code>uint32 last_floor_index = 2;</code>
-     * @return The lastFloorIndex.
+     * <code>uint32 OLBEDACLILO = 3;</code>
+     * @return The oLBEDACLILO.
      */
-    int getLastFloorIndex();
+    int getOLBEDACLILO();
 
     /**
-     * <code>uint32 last_level_index = 6;</code>
-     * @return The lastLevelIndex.
-     */
-    int getLastLevelIndex();
-
-    /**
-     * <code>uint32 schedule_start_time = 7;</code>
-     * @return The scheduleStartTime.
-     */
-    int getScheduleStartTime();
-
-    /**
-     * <code>bool is_finished_entrance_floor = 1;</code>
+     * <code>bool is_finished_entrance_floor = 8;</code>
      * @return The isFinishedEntranceFloor.
      */
     boolean getIsFinishedEntranceFloor();
+
+    /**
+     * <code>uint32 JFDBHAOJPKE = 9;</code>
+     * @return The jFDBHAOJPKE.
+     */
+    int getJFDBHAOJPKE();
+
+    /**
+     * <code>uint32 MJHPFLLDHPI = 11;</code>
+     * @return The mJHPFLLDHPI.
+     */
+    int getMJHPFLLDHPI();
+
+    /**
+     * <code>uint32 FLEFDCHDJHC = 12;</code>
+     * @return The fLEFDCHDJHC.
+     */
+    int getFLEFDCHDJHC();
+
+    /**
+     * <code>uint32 KEAPMOMCPDJ = 13;</code>
+     * @return The kEAPMOMCPDJ.
+     */
+    int getKEAPMOMCPDJ();
   }
   /**
    * <pre>
-   * CmdId: 9152
+   * CmdId: 25352
    * </pre>
    *
    * Protobuf type {@code TowerBriefDataNotify}
@@ -117,42 +117,42 @@ public final class TowerBriefDataNotifyOuterClass {
               break;
             case 8: {
 
-              isFinishedEntranceFloor_ = input.readBool();
+              lPLFPCKBJIC_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              lastFloorIndex_ = input.readUInt32();
+              towerScheduleId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 24: {
 
-              lastLevelIndex_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              scheduleStartTime_ = input.readUInt32();
+              oLBEDACLILO_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              towerScheduleId_ = input.readUInt32();
+              isFinishedEntranceFloor_ = input.readBool();
               break;
             }
             case 72: {
 
-              nextScheduleChangeTime_ = input.readUInt32();
+              jFDBHAOJPKE_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 88: {
 
-              totalStarNum_ = input.readUInt32();
+              mJHPFLLDHPI_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              fLEFDCHDJHC_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              aHCPDFFJOAN_ = input.readUInt32();
+              kEAPMOMCPDJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -187,43 +187,21 @@ public final class TowerBriefDataNotifyOuterClass {
               emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.class, emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.Builder.class);
     }
 
-    public static final int TOTAL_STAR_NUM_FIELD_NUMBER = 10;
-    private int totalStarNum_;
+    public static final int LPLFPCKBJIC_FIELD_NUMBER = 1;
+    private int lPLFPCKBJIC_;
     /**
-     * <code>uint32 total_star_num = 10;</code>
-     * @return The totalStarNum.
+     * <code>uint32 LPLFPCKBJIC = 1;</code>
+     * @return The lPLFPCKBJIC.
      */
     @java.lang.Override
-    public int getTotalStarNum() {
-      return totalStarNum_;
+    public int getLPLFPCKBJIC() {
+      return lPLFPCKBJIC_;
     }
 
-    public static final int NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER = 9;
-    private int nextScheduleChangeTime_;
-    /**
-     * <code>uint32 next_schedule_change_time = 9;</code>
-     * @return The nextScheduleChangeTime.
-     */
-    @java.lang.Override
-    public int getNextScheduleChangeTime() {
-      return nextScheduleChangeTime_;
-    }
-
-    public static final int AHCPDFFJOAN_FIELD_NUMBER = 13;
-    private int aHCPDFFJOAN_;
-    /**
-     * <code>uint32 AHCPDFFJOAN = 13;</code>
-     * @return The aHCPDFFJOAN.
-     */
-    @java.lang.Override
-    public int getAHCPDFFJOAN() {
-      return aHCPDFFJOAN_;
-    }
-
-    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 8;
+    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 2;
     private int towerScheduleId_;
     /**
-     * <code>uint32 tower_schedule_id = 8;</code>
+     * <code>uint32 tower_schedule_id = 2;</code>
      * @return The towerScheduleId.
      */
     @java.lang.Override
@@ -231,48 +209,70 @@ public final class TowerBriefDataNotifyOuterClass {
       return towerScheduleId_;
     }
 
-    public static final int LAST_FLOOR_INDEX_FIELD_NUMBER = 2;
-    private int lastFloorIndex_;
+    public static final int OLBEDACLILO_FIELD_NUMBER = 3;
+    private int oLBEDACLILO_;
     /**
-     * <code>uint32 last_floor_index = 2;</code>
-     * @return The lastFloorIndex.
+     * <code>uint32 OLBEDACLILO = 3;</code>
+     * @return The oLBEDACLILO.
      */
     @java.lang.Override
-    public int getLastFloorIndex() {
-      return lastFloorIndex_;
+    public int getOLBEDACLILO() {
+      return oLBEDACLILO_;
     }
 
-    public static final int LAST_LEVEL_INDEX_FIELD_NUMBER = 6;
-    private int lastLevelIndex_;
-    /**
-     * <code>uint32 last_level_index = 6;</code>
-     * @return The lastLevelIndex.
-     */
-    @java.lang.Override
-    public int getLastLevelIndex() {
-      return lastLevelIndex_;
-    }
-
-    public static final int SCHEDULE_START_TIME_FIELD_NUMBER = 7;
-    private int scheduleStartTime_;
-    /**
-     * <code>uint32 schedule_start_time = 7;</code>
-     * @return The scheduleStartTime.
-     */
-    @java.lang.Override
-    public int getScheduleStartTime() {
-      return scheduleStartTime_;
-    }
-
-    public static final int IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER = 1;
+    public static final int IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER = 8;
     private boolean isFinishedEntranceFloor_;
     /**
-     * <code>bool is_finished_entrance_floor = 1;</code>
+     * <code>bool is_finished_entrance_floor = 8;</code>
      * @return The isFinishedEntranceFloor.
      */
     @java.lang.Override
     public boolean getIsFinishedEntranceFloor() {
       return isFinishedEntranceFloor_;
+    }
+
+    public static final int JFDBHAOJPKE_FIELD_NUMBER = 9;
+    private int jFDBHAOJPKE_;
+    /**
+     * <code>uint32 JFDBHAOJPKE = 9;</code>
+     * @return The jFDBHAOJPKE.
+     */
+    @java.lang.Override
+    public int getJFDBHAOJPKE() {
+      return jFDBHAOJPKE_;
+    }
+
+    public static final int MJHPFLLDHPI_FIELD_NUMBER = 11;
+    private int mJHPFLLDHPI_;
+    /**
+     * <code>uint32 MJHPFLLDHPI = 11;</code>
+     * @return The mJHPFLLDHPI.
+     */
+    @java.lang.Override
+    public int getMJHPFLLDHPI() {
+      return mJHPFLLDHPI_;
+    }
+
+    public static final int FLEFDCHDJHC_FIELD_NUMBER = 12;
+    private int fLEFDCHDJHC_;
+    /**
+     * <code>uint32 FLEFDCHDJHC = 12;</code>
+     * @return The fLEFDCHDJHC.
+     */
+    @java.lang.Override
+    public int getFLEFDCHDJHC() {
+      return fLEFDCHDJHC_;
+    }
+
+    public static final int KEAPMOMCPDJ_FIELD_NUMBER = 13;
+    private int kEAPMOMCPDJ_;
+    /**
+     * <code>uint32 KEAPMOMCPDJ = 13;</code>
+     * @return The kEAPMOMCPDJ.
+     */
+    @java.lang.Override
+    public int getKEAPMOMCPDJ() {
+      return kEAPMOMCPDJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -289,29 +289,29 @@ public final class TowerBriefDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinishedEntranceFloor_ != false) {
-        output.writeBool(1, isFinishedEntranceFloor_);
-      }
-      if (lastFloorIndex_ != 0) {
-        output.writeUInt32(2, lastFloorIndex_);
-      }
-      if (lastLevelIndex_ != 0) {
-        output.writeUInt32(6, lastLevelIndex_);
-      }
-      if (scheduleStartTime_ != 0) {
-        output.writeUInt32(7, scheduleStartTime_);
+      if (lPLFPCKBJIC_ != 0) {
+        output.writeUInt32(1, lPLFPCKBJIC_);
       }
       if (towerScheduleId_ != 0) {
-        output.writeUInt32(8, towerScheduleId_);
+        output.writeUInt32(2, towerScheduleId_);
       }
-      if (nextScheduleChangeTime_ != 0) {
-        output.writeUInt32(9, nextScheduleChangeTime_);
+      if (oLBEDACLILO_ != 0) {
+        output.writeUInt32(3, oLBEDACLILO_);
       }
-      if (totalStarNum_ != 0) {
-        output.writeUInt32(10, totalStarNum_);
+      if (isFinishedEntranceFloor_ != false) {
+        output.writeBool(8, isFinishedEntranceFloor_);
       }
-      if (aHCPDFFJOAN_ != 0) {
-        output.writeUInt32(13, aHCPDFFJOAN_);
+      if (jFDBHAOJPKE_ != 0) {
+        output.writeUInt32(9, jFDBHAOJPKE_);
+      }
+      if (mJHPFLLDHPI_ != 0) {
+        output.writeUInt32(11, mJHPFLLDHPI_);
+      }
+      if (fLEFDCHDJHC_ != 0) {
+        output.writeUInt32(12, fLEFDCHDJHC_);
+      }
+      if (kEAPMOMCPDJ_ != 0) {
+        output.writeUInt32(13, kEAPMOMCPDJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,37 +322,37 @@ public final class TowerBriefDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinishedEntranceFloor_ != false) {
+      if (lPLFPCKBJIC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isFinishedEntranceFloor_);
-      }
-      if (lastFloorIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, lastFloorIndex_);
-      }
-      if (lastLevelIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lastLevelIndex_);
-      }
-      if (scheduleStartTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleStartTime_);
+          .computeUInt32Size(1, lPLFPCKBJIC_);
       }
       if (towerScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, towerScheduleId_);
+          .computeUInt32Size(2, towerScheduleId_);
       }
-      if (nextScheduleChangeTime_ != 0) {
+      if (oLBEDACLILO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nextScheduleChangeTime_);
+          .computeUInt32Size(3, oLBEDACLILO_);
       }
-      if (totalStarNum_ != 0) {
+      if (isFinishedEntranceFloor_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, totalStarNum_);
+          .computeBoolSize(8, isFinishedEntranceFloor_);
       }
-      if (aHCPDFFJOAN_ != 0) {
+      if (jFDBHAOJPKE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, aHCPDFFJOAN_);
+          .computeUInt32Size(9, jFDBHAOJPKE_);
+      }
+      if (mJHPFLLDHPI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, mJHPFLLDHPI_);
+      }
+      if (fLEFDCHDJHC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, fLEFDCHDJHC_);
+      }
+      if (kEAPMOMCPDJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, kEAPMOMCPDJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,22 +369,22 @@ public final class TowerBriefDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify other = (emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify) obj;
 
-      if (getTotalStarNum()
-          != other.getTotalStarNum()) return false;
-      if (getNextScheduleChangeTime()
-          != other.getNextScheduleChangeTime()) return false;
-      if (getAHCPDFFJOAN()
-          != other.getAHCPDFFJOAN()) return false;
+      if (getLPLFPCKBJIC()
+          != other.getLPLFPCKBJIC()) return false;
       if (getTowerScheduleId()
           != other.getTowerScheduleId()) return false;
-      if (getLastFloorIndex()
-          != other.getLastFloorIndex()) return false;
-      if (getLastLevelIndex()
-          != other.getLastLevelIndex()) return false;
-      if (getScheduleStartTime()
-          != other.getScheduleStartTime()) return false;
+      if (getOLBEDACLILO()
+          != other.getOLBEDACLILO()) return false;
       if (getIsFinishedEntranceFloor()
           != other.getIsFinishedEntranceFloor()) return false;
+      if (getJFDBHAOJPKE()
+          != other.getJFDBHAOJPKE()) return false;
+      if (getMJHPFLLDHPI()
+          != other.getMJHPFLLDHPI()) return false;
+      if (getFLEFDCHDJHC()
+          != other.getFLEFDCHDJHC()) return false;
+      if (getKEAPMOMCPDJ()
+          != other.getKEAPMOMCPDJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -396,23 +396,23 @@ public final class TowerBriefDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOTAL_STAR_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalStarNum();
-      hash = (37 * hash) + NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextScheduleChangeTime();
-      hash = (37 * hash) + AHCPDFFJOAN_FIELD_NUMBER;
-      hash = (53 * hash) + getAHCPDFFJOAN();
+      hash = (37 * hash) + LPLFPCKBJIC_FIELD_NUMBER;
+      hash = (53 * hash) + getLPLFPCKBJIC();
       hash = (37 * hash) + TOWER_SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTowerScheduleId();
-      hash = (37 * hash) + LAST_FLOOR_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getLastFloorIndex();
-      hash = (37 * hash) + LAST_LEVEL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getLastLevelIndex();
-      hash = (37 * hash) + SCHEDULE_START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleStartTime();
+      hash = (37 * hash) + OLBEDACLILO_FIELD_NUMBER;
+      hash = (53 * hash) + getOLBEDACLILO();
       hash = (37 * hash) + IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinishedEntranceFloor());
+      hash = (37 * hash) + JFDBHAOJPKE_FIELD_NUMBER;
+      hash = (53 * hash) + getJFDBHAOJPKE();
+      hash = (37 * hash) + MJHPFLLDHPI_FIELD_NUMBER;
+      hash = (53 * hash) + getMJHPFLLDHPI();
+      hash = (37 * hash) + FLEFDCHDJHC_FIELD_NUMBER;
+      hash = (53 * hash) + getFLEFDCHDJHC();
+      hash = (37 * hash) + KEAPMOMCPDJ_FIELD_NUMBER;
+      hash = (53 * hash) + getKEAPMOMCPDJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,7 +510,7 @@ public final class TowerBriefDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9152
+     * CmdId: 25352
      * </pre>
      *
      * Protobuf type {@code TowerBriefDataNotify}
@@ -550,21 +550,21 @@ public final class TowerBriefDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        totalStarNum_ = 0;
-
-        nextScheduleChangeTime_ = 0;
-
-        aHCPDFFJOAN_ = 0;
+        lPLFPCKBJIC_ = 0;
 
         towerScheduleId_ = 0;
 
-        lastFloorIndex_ = 0;
-
-        lastLevelIndex_ = 0;
-
-        scheduleStartTime_ = 0;
+        oLBEDACLILO_ = 0;
 
         isFinishedEntranceFloor_ = false;
+
+        jFDBHAOJPKE_ = 0;
+
+        mJHPFLLDHPI_ = 0;
+
+        fLEFDCHDJHC_ = 0;
+
+        kEAPMOMCPDJ_ = 0;
 
         return this;
       }
@@ -592,14 +592,14 @@ public final class TowerBriefDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify buildPartial() {
         emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify result = new emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify(this);
-        result.totalStarNum_ = totalStarNum_;
-        result.nextScheduleChangeTime_ = nextScheduleChangeTime_;
-        result.aHCPDFFJOAN_ = aHCPDFFJOAN_;
+        result.lPLFPCKBJIC_ = lPLFPCKBJIC_;
         result.towerScheduleId_ = towerScheduleId_;
-        result.lastFloorIndex_ = lastFloorIndex_;
-        result.lastLevelIndex_ = lastLevelIndex_;
-        result.scheduleStartTime_ = scheduleStartTime_;
+        result.oLBEDACLILO_ = oLBEDACLILO_;
         result.isFinishedEntranceFloor_ = isFinishedEntranceFloor_;
+        result.jFDBHAOJPKE_ = jFDBHAOJPKE_;
+        result.mJHPFLLDHPI_ = mJHPFLLDHPI_;
+        result.fLEFDCHDJHC_ = fLEFDCHDJHC_;
+        result.kEAPMOMCPDJ_ = kEAPMOMCPDJ_;
         onBuilt();
         return result;
       }
@@ -648,29 +648,29 @@ public final class TowerBriefDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify other) {
         if (other == emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.getDefaultInstance()) return this;
-        if (other.getTotalStarNum() != 0) {
-          setTotalStarNum(other.getTotalStarNum());
-        }
-        if (other.getNextScheduleChangeTime() != 0) {
-          setNextScheduleChangeTime(other.getNextScheduleChangeTime());
-        }
-        if (other.getAHCPDFFJOAN() != 0) {
-          setAHCPDFFJOAN(other.getAHCPDFFJOAN());
+        if (other.getLPLFPCKBJIC() != 0) {
+          setLPLFPCKBJIC(other.getLPLFPCKBJIC());
         }
         if (other.getTowerScheduleId() != 0) {
           setTowerScheduleId(other.getTowerScheduleId());
         }
-        if (other.getLastFloorIndex() != 0) {
-          setLastFloorIndex(other.getLastFloorIndex());
-        }
-        if (other.getLastLevelIndex() != 0) {
-          setLastLevelIndex(other.getLastLevelIndex());
-        }
-        if (other.getScheduleStartTime() != 0) {
-          setScheduleStartTime(other.getScheduleStartTime());
+        if (other.getOLBEDACLILO() != 0) {
+          setOLBEDACLILO(other.getOLBEDACLILO());
         }
         if (other.getIsFinishedEntranceFloor() != false) {
           setIsFinishedEntranceFloor(other.getIsFinishedEntranceFloor());
+        }
+        if (other.getJFDBHAOJPKE() != 0) {
+          setJFDBHAOJPKE(other.getJFDBHAOJPKE());
+        }
+        if (other.getMJHPFLLDHPI() != 0) {
+          setMJHPFLLDHPI(other.getMJHPFLLDHPI());
+        }
+        if (other.getFLEFDCHDJHC() != 0) {
+          setFLEFDCHDJHC(other.getFLEFDCHDJHC());
+        }
+        if (other.getKEAPMOMCPDJ() != 0) {
+          setKEAPMOMCPDJ(other.getKEAPMOMCPDJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -701,102 +701,40 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
 
-      private int totalStarNum_ ;
+      private int lPLFPCKBJIC_ ;
       /**
-       * <code>uint32 total_star_num = 10;</code>
-       * @return The totalStarNum.
+       * <code>uint32 LPLFPCKBJIC = 1;</code>
+       * @return The lPLFPCKBJIC.
        */
       @java.lang.Override
-      public int getTotalStarNum() {
-        return totalStarNum_;
+      public int getLPLFPCKBJIC() {
+        return lPLFPCKBJIC_;
       }
       /**
-       * <code>uint32 total_star_num = 10;</code>
-       * @param value The totalStarNum to set.
+       * <code>uint32 LPLFPCKBJIC = 1;</code>
+       * @param value The lPLFPCKBJIC to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalStarNum(int value) {
+      public Builder setLPLFPCKBJIC(int value) {
         
-        totalStarNum_ = value;
+        lPLFPCKBJIC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_star_num = 10;</code>
+       * <code>uint32 LPLFPCKBJIC = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalStarNum() {
+      public Builder clearLPLFPCKBJIC() {
         
-        totalStarNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextScheduleChangeTime_ ;
-      /**
-       * <code>uint32 next_schedule_change_time = 9;</code>
-       * @return The nextScheduleChangeTime.
-       */
-      @java.lang.Override
-      public int getNextScheduleChangeTime() {
-        return nextScheduleChangeTime_;
-      }
-      /**
-       * <code>uint32 next_schedule_change_time = 9;</code>
-       * @param value The nextScheduleChangeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextScheduleChangeTime(int value) {
-        
-        nextScheduleChangeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_schedule_change_time = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextScheduleChangeTime() {
-        
-        nextScheduleChangeTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aHCPDFFJOAN_ ;
-      /**
-       * <code>uint32 AHCPDFFJOAN = 13;</code>
-       * @return The aHCPDFFJOAN.
-       */
-      @java.lang.Override
-      public int getAHCPDFFJOAN() {
-        return aHCPDFFJOAN_;
-      }
-      /**
-       * <code>uint32 AHCPDFFJOAN = 13;</code>
-       * @param value The aHCPDFFJOAN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAHCPDFFJOAN(int value) {
-        
-        aHCPDFFJOAN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 AHCPDFFJOAN = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAHCPDFFJOAN() {
-        
-        aHCPDFFJOAN_ = 0;
+        lPLFPCKBJIC_ = 0;
         onChanged();
         return this;
       }
 
       private int towerScheduleId_ ;
       /**
-       * <code>uint32 tower_schedule_id = 8;</code>
+       * <code>uint32 tower_schedule_id = 2;</code>
        * @return The towerScheduleId.
        */
       @java.lang.Override
@@ -804,7 +742,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return towerScheduleId_;
       }
       /**
-       * <code>uint32 tower_schedule_id = 8;</code>
+       * <code>uint32 tower_schedule_id = 2;</code>
        * @param value The towerScheduleId to set.
        * @return This builder for chaining.
        */
@@ -815,7 +753,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 tower_schedule_id = 8;</code>
+       * <code>uint32 tower_schedule_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerScheduleId() {
@@ -825,102 +763,40 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
 
-      private int lastFloorIndex_ ;
+      private int oLBEDACLILO_ ;
       /**
-       * <code>uint32 last_floor_index = 2;</code>
-       * @return The lastFloorIndex.
+       * <code>uint32 OLBEDACLILO = 3;</code>
+       * @return The oLBEDACLILO.
        */
       @java.lang.Override
-      public int getLastFloorIndex() {
-        return lastFloorIndex_;
+      public int getOLBEDACLILO() {
+        return oLBEDACLILO_;
       }
       /**
-       * <code>uint32 last_floor_index = 2;</code>
-       * @param value The lastFloorIndex to set.
+       * <code>uint32 OLBEDACLILO = 3;</code>
+       * @param value The oLBEDACLILO to set.
        * @return This builder for chaining.
        */
-      public Builder setLastFloorIndex(int value) {
+      public Builder setOLBEDACLILO(int value) {
         
-        lastFloorIndex_ = value;
+        oLBEDACLILO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_floor_index = 2;</code>
+       * <code>uint32 OLBEDACLILO = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastFloorIndex() {
+      public Builder clearOLBEDACLILO() {
         
-        lastFloorIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lastLevelIndex_ ;
-      /**
-       * <code>uint32 last_level_index = 6;</code>
-       * @return The lastLevelIndex.
-       */
-      @java.lang.Override
-      public int getLastLevelIndex() {
-        return lastLevelIndex_;
-      }
-      /**
-       * <code>uint32 last_level_index = 6;</code>
-       * @param value The lastLevelIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastLevelIndex(int value) {
-        
-        lastLevelIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_level_index = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastLevelIndex() {
-        
-        lastLevelIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scheduleStartTime_ ;
-      /**
-       * <code>uint32 schedule_start_time = 7;</code>
-       * @return The scheduleStartTime.
-       */
-      @java.lang.Override
-      public int getScheduleStartTime() {
-        return scheduleStartTime_;
-      }
-      /**
-       * <code>uint32 schedule_start_time = 7;</code>
-       * @param value The scheduleStartTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleStartTime(int value) {
-        
-        scheduleStartTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_start_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleStartTime() {
-        
-        scheduleStartTime_ = 0;
+        oLBEDACLILO_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isFinishedEntranceFloor_ ;
       /**
-       * <code>bool is_finished_entrance_floor = 1;</code>
+       * <code>bool is_finished_entrance_floor = 8;</code>
        * @return The isFinishedEntranceFloor.
        */
       @java.lang.Override
@@ -928,7 +804,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return isFinishedEntranceFloor_;
       }
       /**
-       * <code>bool is_finished_entrance_floor = 1;</code>
+       * <code>bool is_finished_entrance_floor = 8;</code>
        * @param value The isFinishedEntranceFloor to set.
        * @return This builder for chaining.
        */
@@ -939,12 +815,136 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished_entrance_floor = 1;</code>
+       * <code>bool is_finished_entrance_floor = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinishedEntranceFloor() {
         
         isFinishedEntranceFloor_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int jFDBHAOJPKE_ ;
+      /**
+       * <code>uint32 JFDBHAOJPKE = 9;</code>
+       * @return The jFDBHAOJPKE.
+       */
+      @java.lang.Override
+      public int getJFDBHAOJPKE() {
+        return jFDBHAOJPKE_;
+      }
+      /**
+       * <code>uint32 JFDBHAOJPKE = 9;</code>
+       * @param value The jFDBHAOJPKE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJFDBHAOJPKE(int value) {
+        
+        jFDBHAOJPKE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JFDBHAOJPKE = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJFDBHAOJPKE() {
+        
+        jFDBHAOJPKE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mJHPFLLDHPI_ ;
+      /**
+       * <code>uint32 MJHPFLLDHPI = 11;</code>
+       * @return The mJHPFLLDHPI.
+       */
+      @java.lang.Override
+      public int getMJHPFLLDHPI() {
+        return mJHPFLLDHPI_;
+      }
+      /**
+       * <code>uint32 MJHPFLLDHPI = 11;</code>
+       * @param value The mJHPFLLDHPI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMJHPFLLDHPI(int value) {
+        
+        mJHPFLLDHPI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MJHPFLLDHPI = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMJHPFLLDHPI() {
+        
+        mJHPFLLDHPI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fLEFDCHDJHC_ ;
+      /**
+       * <code>uint32 FLEFDCHDJHC = 12;</code>
+       * @return The fLEFDCHDJHC.
+       */
+      @java.lang.Override
+      public int getFLEFDCHDJHC() {
+        return fLEFDCHDJHC_;
+      }
+      /**
+       * <code>uint32 FLEFDCHDJHC = 12;</code>
+       * @param value The fLEFDCHDJHC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLEFDCHDJHC(int value) {
+        
+        fLEFDCHDJHC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FLEFDCHDJHC = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFLEFDCHDJHC() {
+        
+        fLEFDCHDJHC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kEAPMOMCPDJ_ ;
+      /**
+       * <code>uint32 KEAPMOMCPDJ = 13;</code>
+       * @return The kEAPMOMCPDJ.
+       */
+      @java.lang.Override
+      public int getKEAPMOMCPDJ() {
+        return kEAPMOMCPDJ_;
+      }
+      /**
+       * <code>uint32 KEAPMOMCPDJ = 13;</code>
+       * @param value The kEAPMOMCPDJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKEAPMOMCPDJ(int value) {
+        
+        kEAPMOMCPDJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KEAPMOMCPDJ = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKEAPMOMCPDJ() {
+        
+        kEAPMOMCPDJ_ = 0;
         onChanged();
         return this;
       }
@@ -1015,14 +1015,13 @@ public final class TowerBriefDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032TowerBriefDataNotify.proto\"\366\001\n\024TowerBr" +
-      "iefDataNotify\022\026\n\016total_star_num\030\n \001(\r\022!\n" +
-      "\031next_schedule_change_time\030\t \001(\r\022\023\n\013AHCP" +
-      "DFFJOAN\030\r \001(\r\022\031\n\021tower_schedule_id\030\010 \001(\r" +
-      "\022\030\n\020last_floor_index\030\002 \001(\r\022\030\n\020last_level" +
-      "_index\030\006 \001(\r\022\033\n\023schedule_start_time\030\007 \001(" +
-      "\r\022\"\n\032is_finished_entrance_floor\030\001 \001(\010B\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\032TowerBriefDataNotify.proto\"\323\001\n\024TowerBr" +
+      "iefDataNotify\022\023\n\013LPLFPCKBJIC\030\001 \001(\r\022\031\n\021to" +
+      "wer_schedule_id\030\002 \001(\r\022\023\n\013OLBEDACLILO\030\003 \001" +
+      "(\r\022\"\n\032is_finished_entrance_floor\030\010 \001(\010\022\023" +
+      "\n\013JFDBHAOJPKE\030\t \001(\r\022\023\n\013MJHPFLLDHPI\030\013 \001(\r" +
+      "\022\023\n\013FLEFDCHDJHC\030\014 \001(\r\022\023\n\013KEAPMOMCPDJ\030\r \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1033,7 +1032,7 @@ public final class TowerBriefDataNotifyOuterClass {
     internal_static_TowerBriefDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerBriefDataNotify_descriptor,
-        new java.lang.String[] { "TotalStarNum", "NextScheduleChangeTime", "AHCPDFFJOAN", "TowerScheduleId", "LastFloorIndex", "LastLevelIndex", "ScheduleStartTime", "IsFinishedEntranceFloor", });
+        new java.lang.String[] { "LPLFPCKBJIC", "TowerScheduleId", "OLBEDACLILO", "IsFinishedEntranceFloor", "JFDBHAOJPKE", "MJHPFLLDHPI", "FLEFDCHDJHC", "KEAPMOMCPDJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

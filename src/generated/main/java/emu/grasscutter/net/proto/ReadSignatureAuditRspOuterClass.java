@@ -19,15 +19,14 @@ public final class ReadSignatureAuditRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 27511
-   * Obf: FGKMCKFALJL
+   * CmdId: 26856
    * </pre>
    *
    * Protobuf type {@code ReadSignatureAuditRsp}
@@ -74,7 +73,7 @@ public final class ReadSignatureAuditRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +110,10 @@ public final class ReadSignatureAuditRspOuterClass {
               emu.grasscutter.net.proto.ReadSignatureAuditRspOuterClass.ReadSignatureAuditRsp.class, emu.grasscutter.net.proto.ReadSignatureAuditRspOuterClass.ReadSignatureAuditRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class ReadSignatureAuditRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class ReadSignatureAuditRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class ReadSignatureAuditRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27511
-     * Obf: FGKMCKFALJL
+     * CmdId: 26856
      * </pre>
      *
      * Protobuf type {@code ReadSignatureAuditRsp}
@@ -431,7 +429,7 @@ public final class ReadSignatureAuditRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class ReadSignatureAuditRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class ReadSignatureAuditRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +525,7 @@ public final class ReadSignatureAuditRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ReadSignatureAuditRsp.proto\"(\n\025ReadSig" +
-      "natureAuditRsp\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.g" +
+      "natureAuditRsp\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

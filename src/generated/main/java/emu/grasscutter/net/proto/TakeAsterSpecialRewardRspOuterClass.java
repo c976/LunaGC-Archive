@@ -25,15 +25,14 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 schedule_id = 1;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 25347
-   * Obf: EHCHIIMCMDP
+   * CmdId: 26514
    * </pre>
    *
    * Protobuf type {@code TakeAsterSpecialRewardRsp}
@@ -80,14 +79,14 @@ public final class TakeAsterSpecialRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class TakeAsterSpecialRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 1;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 4;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 1;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(1, scheduleId_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(2, retcode_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(4, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class TakeAsterSpecialRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, scheduleId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, retcode_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25347
-     * Obf: EHCHIIMCMDP
+     * CmdId: 26514
      * </pre>
      *
      * Protobuf type {@code TakeAsterSpecialRewardRsp}
@@ -501,7 +499,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -598,7 +596,7 @@ public final class TakeAsterSpecialRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037TakeAsterSpecialRewardRsp.proto\"A\n\031Tak" +
       "eAsterSpecialRewardRsp\022\017\n\007retcode\030\002 \001(\005\022" +
-      "\023\n\013schedule_id\030\001 \001(\rB\033\n\031emu.grasscutter." +
+      "\023\n\013schedule_id\030\004 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

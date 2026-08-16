@@ -15,33 +15,29 @@ public final class CustomDungeonBanTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: DHBHFOPCKCO
-   * </pre>
-   *
    * Protobuf enum {@code CustomDungeonBanType}
    */
   public enum CustomDungeonBanType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CUSTOM_DUNGEON_BAN_TYPE_NONE = 0;</code>
+     * <code>JHFBCKGBCFN_NONE = 0;</code>
      */
-    CUSTOM_DUNGEON_BAN_TYPE_NONE(0),
+    JHFBCKGBCFN_NONE(0),
     /**
-     * <code>CUSTOM_DUNGEON_BAN_TYPE_LAYOUT = 1;</code>
+     * <code>JHFBCKGBCFN_LAYOUT = 1;</code>
      */
-    CUSTOM_DUNGEON_BAN_TYPE_LAYOUT(1),
+    JHFBCKGBCFN_LAYOUT(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CUSTOM_DUNGEON_BAN_TYPE_NONE = 0;</code>
+     * <code>JHFBCKGBCFN_NONE = 0;</code>
      */
-    public static final int CUSTOM_DUNGEON_BAN_TYPE_NONE_VALUE = 0;
+    public static final int JHFBCKGBCFN_NONE_VALUE = 0;
     /**
-     * <code>CUSTOM_DUNGEON_BAN_TYPE_LAYOUT = 1;</code>
+     * <code>JHFBCKGBCFN_LAYOUT = 1;</code>
      */
-    public static final int CUSTOM_DUNGEON_BAN_TYPE_LAYOUT_VALUE = 1;
+    public static final int JHFBCKGBCFN_LAYOUT_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +64,8 @@ public final class CustomDungeonBanTypeOuterClass {
      */
     public static CustomDungeonBanType forNumber(int value) {
       switch (value) {
-        case 0: return CUSTOM_DUNGEON_BAN_TYPE_NONE;
-        case 1: return CUSTOM_DUNGEON_BAN_TYPE_LAYOUT;
+        case 0: return JHFBCKGBCFN_NONE;
+        case 1: return JHFBCKGBCFN_LAYOUT;
         default: return null;
       }
     }
@@ -135,10 +131,10 @@ public final class CustomDungeonBanTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032CustomDungeonBanType.proto*\\\n\024CustomDu" +
-      "ngeonBanType\022 \n\034CUSTOM_DUNGEON_BAN_TYPE_" +
-      "NONE\020\000\022\"\n\036CUSTOM_DUNGEON_BAN_TYPE_LAYOUT" +
-      "\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032CustomDungeonBanType.proto*D\n\024CustomDu" +
+      "ngeonBanType\022\024\n\020JHFBCKGBCFN_NONE\020\000\022\026\n\022JH" +
+      "FBCKGBCFN_LAYOUT\020\001B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

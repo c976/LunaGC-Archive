@@ -19,51 +19,47 @@ public final class GCGMsgDiceRollOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 controller_id = 10;</code>
-     * @return The controllerId.
-     */
-    int getControllerId();
-
-    /**
-     * <code>uint32 dice_num = 1;</code>
-     * @return The diceNum.
-     */
-    int getDiceNum();
-
-    /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return A list containing the diceSideList.
      */
     java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return The count of diceSideList.
      */
     int getDiceSideListCount();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index);
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     java.util.List<java.lang.Integer>
     getDiceSideListValueList();
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
     int getDiceSideListValue(int index);
+
+    /**
+     * <code>uint32 controller_id = 12;</code>
+     * @return The controllerId.
+     */
+    int getControllerId();
+
+    /**
+     * <code>uint32 dice_num = 7;</code>
+     * @return The diceNum.
+     */
+    int getDiceNum();
   }
   /**
-   * <pre>
-   * Obf: NOFCBPBCHDO
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgDiceRoll}
    */
   public static final class GCGMsgDiceRoll extends
@@ -110,17 +106,7 @@ public final class GCGMsgDiceRollOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              diceNum_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              controllerId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
               int rawValue = input.readEnum();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
@@ -129,7 +115,7 @@ public final class GCGMsgDiceRollOuterClass {
               diceSideList_.add(rawValue);
               break;
             }
-            case 90: {
+            case 50: {
               int length = input.readRawVarint32();
               int oldLimit = input.pushLimit(length);
               while(input.getBytesUntilLimit() > 0) {
@@ -141,6 +127,16 @@ public final class GCGMsgDiceRollOuterClass {
                 diceSideList_.add(rawValue);
               }
               input.popLimit(oldLimit);
+              break;
+            }
+            case 56: {
+
+              diceNum_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              controllerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -178,29 +174,7 @@ public final class GCGMsgDiceRollOuterClass {
               emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.class, emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder.class);
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 10;
-    private int controllerId_;
-    /**
-     * <code>uint32 controller_id = 10;</code>
-     * @return The controllerId.
-     */
-    @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
-    }
-
-    public static final int DICE_NUM_FIELD_NUMBER = 1;
-    private int diceNum_;
-    /**
-     * <code>uint32 dice_num = 1;</code>
-     * @return The diceNum.
-     */
-    @java.lang.Override
-    public int getDiceNum() {
-      return diceNum_;
-    }
-
-    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 11;
+    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 6;
     private java.util.List<java.lang.Integer> diceSideList_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
         java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> diceSideList_converter_ =
@@ -213,7 +187,7 @@ public final class GCGMsgDiceRollOuterClass {
               }
             };
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return A list containing the diceSideList.
      */
     @java.lang.Override
@@ -222,7 +196,7 @@ public final class GCGMsgDiceRollOuterClass {
           java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return The count of diceSideList.
      */
     @java.lang.Override
@@ -230,7 +204,7 @@ public final class GCGMsgDiceRollOuterClass {
       return diceSideList_.size();
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
@@ -239,7 +213,7 @@ public final class GCGMsgDiceRollOuterClass {
       return diceSideList_converter_.convert(diceSideList_.get(index));
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     @java.lang.Override
@@ -248,7 +222,7 @@ public final class GCGMsgDiceRollOuterClass {
       return diceSideList_;
     }
     /**
-     * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
@@ -257,6 +231,28 @@ public final class GCGMsgDiceRollOuterClass {
       return diceSideList_.get(index);
     }
     private int diceSideListMemoizedSerializedSize;
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 12;
+    private int controllerId_;
+    /**
+     * <code>uint32 controller_id = 12;</code>
+     * @return The controllerId.
+     */
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
+    }
+
+    public static final int DICE_NUM_FIELD_NUMBER = 7;
+    private int diceNum_;
+    /**
+     * <code>uint32 dice_num = 7;</code>
+     * @return The diceNum.
+     */
+    @java.lang.Override
+    public int getDiceNum() {
+      return diceNum_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -273,18 +269,18 @@ public final class GCGMsgDiceRollOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (diceNum_ != 0) {
-        output.writeUInt32(1, diceNum_);
-      }
-      if (controllerId_ != 0) {
-        output.writeUInt32(10, controllerId_);
-      }
       if (getDiceSideListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(diceSideListMemoizedSerializedSize);
       }
       for (int i = 0; i < diceSideList_.size(); i++) {
         output.writeEnumNoTag(diceSideList_.get(i));
+      }
+      if (diceNum_ != 0) {
+        output.writeUInt32(7, diceNum_);
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(12, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -295,14 +291,6 @@ public final class GCGMsgDiceRollOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (diceNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, diceNum_);
-      }
-      if (controllerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, controllerId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < diceSideList_.size(); i++) {
@@ -314,6 +302,14 @@ public final class GCGMsgDiceRollOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeUInt32SizeNoTag(dataSize);
         }diceSideListMemoizedSerializedSize = dataSize;
+      }
+      if (diceNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, diceNum_);
+      }
+      if (controllerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -330,11 +326,11 @@ public final class GCGMsgDiceRollOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll other = (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) obj;
 
+      if (!diceSideList_.equals(other.diceSideList_)) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
       if (getDiceNum()
           != other.getDiceNum()) return false;
-      if (!diceSideList_.equals(other.diceSideList_)) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -346,14 +342,14 @@ public final class GCGMsgDiceRollOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      hash = (37 * hash) + DICE_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getDiceNum();
       if (getDiceSideListCount() > 0) {
         hash = (37 * hash) + DICE_SIDE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + diceSideList_.hashCode();
       }
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + DICE_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getDiceNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -450,10 +446,6 @@ public final class GCGMsgDiceRollOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NOFCBPBCHDO
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgDiceRoll}
      */
     public static final class Builder extends
@@ -491,12 +483,12 @@ public final class GCGMsgDiceRollOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        diceSideList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         controllerId_ = 0;
 
         diceNum_ = 0;
 
-        diceSideList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -524,13 +516,13 @@ public final class GCGMsgDiceRollOuterClass {
       public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll buildPartial() {
         emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll result = new emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll(this);
         int from_bitField0_ = bitField0_;
-        result.controllerId_ = controllerId_;
-        result.diceNum_ = diceNum_;
         if (((bitField0_ & 0x00000001) != 0)) {
           diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.diceSideList_ = diceSideList_;
+        result.controllerId_ = controllerId_;
+        result.diceNum_ = diceNum_;
         onBuilt();
         return result;
       }
@@ -579,12 +571,6 @@ public final class GCGMsgDiceRollOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll other) {
         if (other == emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance()) return this;
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
-        }
-        if (other.getDiceNum() != 0) {
-          setDiceNum(other.getDiceNum());
-        }
         if (!other.diceSideList_.isEmpty()) {
           if (diceSideList_.isEmpty()) {
             diceSideList_ = other.diceSideList_;
@@ -594,6 +580,12 @@ public final class GCGMsgDiceRollOuterClass {
             diceSideList_.addAll(other.diceSideList_);
           }
           onChanged();
+        }
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
+        }
+        if (other.getDiceNum() != 0) {
+          setDiceNum(other.getDiceNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -625,68 +617,6 @@ public final class GCGMsgDiceRollOuterClass {
       }
       private int bitField0_;
 
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 10;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 10;</code>
-       * @param value The controllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setControllerId(int value) {
-        
-        controllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 controller_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearControllerId() {
-        
-        controllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int diceNum_ ;
-      /**
-       * <code>uint32 dice_num = 1;</code>
-       * @return The diceNum.
-       */
-      @java.lang.Override
-      public int getDiceNum() {
-        return diceNum_;
-      }
-      /**
-       * <code>uint32 dice_num = 1;</code>
-       * @param value The diceNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDiceNum(int value) {
-        
-        diceNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dice_num = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDiceNum() {
-        
-        diceNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<java.lang.Integer> diceSideList_ =
         java.util.Collections.emptyList();
       private void ensureDiceSideListIsMutable() {
@@ -696,7 +626,7 @@ public final class GCGMsgDiceRollOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @return A list containing the diceSideList.
        */
       public java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList() {
@@ -704,14 +634,14 @@ public final class GCGMsgDiceRollOuterClass {
             java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @return The count of diceSideList.
        */
       public int getDiceSideListCount() {
         return diceSideList_.size();
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param index The index of the element to return.
        * @return The diceSideList at the given index.
        */
@@ -719,7 +649,7 @@ public final class GCGMsgDiceRollOuterClass {
         return diceSideList_converter_.convert(diceSideList_.get(index));
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The diceSideList to set.
        * @return This builder for chaining.
@@ -735,7 +665,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param value The diceSideList to add.
        * @return This builder for chaining.
        */
@@ -749,7 +679,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param values The diceSideList to add.
        * @return This builder for chaining.
        */
@@ -763,7 +693,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearDiceSideList() {
@@ -773,7 +703,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @return A list containing the enum numeric values on the wire for diceSideList.
        */
       public java.util.List<java.lang.Integer>
@@ -781,7 +711,7 @@ public final class GCGMsgDiceRollOuterClass {
         return java.util.Collections.unmodifiableList(diceSideList_);
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
        */
@@ -789,7 +719,7 @@ public final class GCGMsgDiceRollOuterClass {
         return diceSideList_.get(index);
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
        * @return This builder for chaining.
@@ -802,7 +732,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param value The enum numeric value on the wire for diceSideList to add.
        * @return This builder for chaining.
        */
@@ -813,7 +743,7 @@ public final class GCGMsgDiceRollOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDiceSideType dice_side_list = 11;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 6;</code>
        * @param values The enum numeric values on the wire for diceSideList to add.
        * @return This builder for chaining.
        */
@@ -823,6 +753,68 @@ public final class GCGMsgDiceRollOuterClass {
         for (int value : values) {
           diceSideList_.add(value);
         }
+        onChanged();
+        return this;
+      }
+
+      private int controllerId_ ;
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @param value The controllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setControllerId(int value) {
+        
+        controllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 controller_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearControllerId() {
+        
+        controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int diceNum_ ;
+      /**
+       * <code>uint32 dice_num = 7;</code>
+       * @return The diceNum.
+       */
+      @java.lang.Override
+      public int getDiceNum() {
+        return diceNum_;
+      }
+      /**
+       * <code>uint32 dice_num = 7;</code>
+       * @param value The diceNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDiceNum(int value) {
+        
+        diceNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dice_num = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDiceNum() {
+        
+        diceNum_ = 0;
         onChanged();
         return this;
       }
@@ -894,9 +886,9 @@ public final class GCGMsgDiceRollOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GCGMsgDiceRoll.proto\032\025GCGDiceSideType." +
-      "proto\"c\n\016GCGMsgDiceRoll\022\025\n\rcontroller_id" +
-      "\030\n \001(\r\022\020\n\010dice_num\030\001 \001(\r\022(\n\016dice_side_li" +
-      "st\030\013 \003(\0162\020.GCGDiceSideTypeB\033\n\031emu.grassc" +
+      "proto\"c\n\016GCGMsgDiceRoll\022(\n\016dice_side_lis" +
+      "t\030\006 \003(\0162\020.GCGDiceSideType\022\025\n\rcontroller_" +
+      "id\030\014 \001(\r\022\020\n\010dice_num\030\007 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -909,7 +901,7 @@ public final class GCGMsgDiceRollOuterClass {
     internal_static_GCGMsgDiceRoll_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgDiceRoll_descriptor,
-        new java.lang.String[] { "ControllerId", "DiceNum", "DiceSideList", });
+        new java.lang.String[] { "DiceSideList", "ControllerId", "DiceNum", });
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor();
   }
 

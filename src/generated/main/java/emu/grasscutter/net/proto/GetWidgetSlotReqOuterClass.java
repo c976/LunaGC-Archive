@@ -20,7 +20,7 @@ public final class GetWidgetSlotReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5879
+   * CmdId: 20744
    * </pre>
    *
    * Protobuf type {@code GetWidgetSlotReq}
@@ -245,7 +245,7 @@ public final class GetWidgetSlotReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5879
+     * CmdId: 20744
      * </pre>
      *
      * Protobuf type {@code GetWidgetSlotReq}

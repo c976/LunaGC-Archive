@@ -26,8 +26,7 @@ public final class WindFieldRestartDungeonRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 816
-   * Obf: INFBHECNIEL
+   * CmdId: 25363
    * </pre>
    *
    * Protobuf type {@code WindFieldRestartDungeonRsp}
@@ -279,8 +278,7 @@ public final class WindFieldRestartDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 816
-     * Obf: INFBHECNIEL
+     * CmdId: 25363
      * </pre>
      *
      * Protobuf type {@code WindFieldRestartDungeonRsp}

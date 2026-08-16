@@ -19,22 +19,25 @@ public final class GCGSettleOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGSettleOption option = 5;</code>
+     * <pre>
+     * CMD_ID = 29331
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 15;</code>
      * @return The enum numeric value on the wire for option.
      */
     int getOptionValue();
     /**
-     * <code>.GCGSettleOption option = 5;</code>
+     * <pre>
+     * CMD_ID = 29331
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 15;</code>
      * @return The option.
      */
     emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption getOption();
   }
   /**
-   * <pre>
-   * CmdId: 9600
-   * Obf: GJDHABPAPHN
-   * </pre>
-   *
    * Protobuf type {@code GCGSettleOptionReq}
    */
   public static final class GCGSettleOptionReq extends
@@ -80,7 +83,7 @@ public final class GCGSettleOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 120: {
               int rawValue = input.readEnum();
 
               option_ = rawValue;
@@ -118,17 +121,25 @@ public final class GCGSettleOptionReqOuterClass {
               emu.grasscutter.net.proto.GCGSettleOptionReqOuterClass.GCGSettleOptionReq.class, emu.grasscutter.net.proto.GCGSettleOptionReqOuterClass.GCGSettleOptionReq.Builder.class);
     }
 
-    public static final int OPTION_FIELD_NUMBER = 5;
+    public static final int OPTION_FIELD_NUMBER = 15;
     private int option_;
     /**
-     * <code>.GCGSettleOption option = 5;</code>
+     * <pre>
+     * CMD_ID = 29331
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 15;</code>
      * @return The enum numeric value on the wire for option.
      */
     @java.lang.Override public int getOptionValue() {
       return option_;
     }
     /**
-     * <code>.GCGSettleOption option = 5;</code>
+     * <pre>
+     * CMD_ID = 29331
+     * </pre>
+     *
+     * <code>.GCGSettleOption option = 15;</code>
      * @return The option.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption getOption() {
@@ -151,8 +162,8 @@ public final class GCGSettleOptionReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
-        output.writeEnum(5, option_);
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
+        output.writeEnum(15, option_);
       }
       unknownFields.writeTo(output);
     }
@@ -163,9 +174,9 @@ public final class GCGSettleOptionReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, option_);
+          .computeEnumSize(15, option_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,11 +303,6 @@ public final class GCGSettleOptionReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 9600
-     * Obf: GJDHABPAPHN
-     * </pre>
-     *
      * Protobuf type {@code GCGSettleOptionReq}
      */
     public static final class Builder extends
@@ -445,14 +451,22 @@ public final class GCGSettleOptionReqOuterClass {
 
       private int option_ = 0;
       /**
-       * <code>.GCGSettleOption option = 5;</code>
+       * <pre>
+       * CMD_ID = 29331
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 15;</code>
        * @return The enum numeric value on the wire for option.
        */
       @java.lang.Override public int getOptionValue() {
         return option_;
       }
       /**
-       * <code>.GCGSettleOption option = 5;</code>
+       * <pre>
+       * CMD_ID = 29331
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 15;</code>
        * @param value The enum numeric value on the wire for option to set.
        * @return This builder for chaining.
        */
@@ -463,7 +477,11 @@ public final class GCGSettleOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSettleOption option = 5;</code>
+       * <pre>
+       * CMD_ID = 29331
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 15;</code>
        * @return The option.
        */
       @java.lang.Override
@@ -473,7 +491,11 @@ public final class GCGSettleOptionReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGSettleOption option = 5;</code>
+       * <pre>
+       * CMD_ID = 29331
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 15;</code>
        * @param value The option to set.
        * @return This builder for chaining.
        */
@@ -487,7 +509,11 @@ public final class GCGSettleOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>.GCGSettleOption option = 5;</code>
+       * <pre>
+       * CMD_ID = 29331
+       * </pre>
+       *
+       * <code>.GCGSettleOption option = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearOption() {
@@ -565,7 +591,7 @@ public final class GCGSettleOptionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GCGSettleOptionReq.proto\032\025GCGSettleOpt" +
       "ion.proto\"6\n\022GCGSettleOptionReq\022 \n\006optio" +
-      "n\030\005 \001(\0162\020.GCGSettleOptionB\033\n\031emu.grasscu" +
+      "n\030\017 \001(\0162\020.GCGSettleOptionB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

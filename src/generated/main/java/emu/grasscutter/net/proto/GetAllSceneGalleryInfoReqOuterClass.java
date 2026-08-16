@@ -20,8 +20,7 @@ public final class GetAllSceneGalleryInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 22232
-   * Obf: DOLAHKBMABC
+   * CmdId: 6036
    * </pre>
    *
    * Protobuf type {@code GetAllSceneGalleryInfoReq}
@@ -246,8 +245,7 @@ public final class GetAllSceneGalleryInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22232
-     * Obf: DOLAHKBMABC
+     * CmdId: 6036
      * </pre>
      *
      * Protobuf type {@code GetAllSceneGalleryInfoReq}

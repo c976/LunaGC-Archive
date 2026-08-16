@@ -19,16 +19,16 @@ public final class ArenaChallengeV5LevelOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 arena_challenge_id = 8;</code>
+     * <code>uint32 MPHCBEHAMOJ = 7;</code>
+     * @return The mPHCBEHAMOJ.
+     */
+    int getMPHCBEHAMOJ();
+
+    /**
+     * <code>uint32 arena_challenge_id = 15;</code>
      * @return The arenaChallengeId.
      */
     int getArenaChallengeId();
-
-    /**
-     * <code>uint32 arena_challenge_level = 15;</code>
-     * @return The arenaChallengeLevel.
-     */
-    int getArenaChallengeLevel();
   }
   /**
    * Protobuf type {@code ArenaChallengeV5Level}
@@ -75,14 +75,14 @@ public final class ArenaChallengeV5LevelOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 56: {
 
-              arenaChallengeId_ = input.readUInt32();
+              mPHCBEHAMOJ_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              arenaChallengeLevel_ = input.readUInt32();
+              arenaChallengeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class ArenaChallengeV5LevelOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level.class, emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level.Builder.class);
     }
 
-    public static final int ARENA_CHALLENGE_ID_FIELD_NUMBER = 8;
+    public static final int MPHCBEHAMOJ_FIELD_NUMBER = 7;
+    private int mPHCBEHAMOJ_;
+    /**
+     * <code>uint32 MPHCBEHAMOJ = 7;</code>
+     * @return The mPHCBEHAMOJ.
+     */
+    @java.lang.Override
+    public int getMPHCBEHAMOJ() {
+      return mPHCBEHAMOJ_;
+    }
+
+    public static final int ARENA_CHALLENGE_ID_FIELD_NUMBER = 15;
     private int arenaChallengeId_;
     /**
-     * <code>uint32 arena_challenge_id = 8;</code>
+     * <code>uint32 arena_challenge_id = 15;</code>
      * @return The arenaChallengeId.
      */
     @java.lang.Override
     public int getArenaChallengeId() {
       return arenaChallengeId_;
-    }
-
-    public static final int ARENA_CHALLENGE_LEVEL_FIELD_NUMBER = 15;
-    private int arenaChallengeLevel_;
-    /**
-     * <code>uint32 arena_challenge_level = 15;</code>
-     * @return The arenaChallengeLevel.
-     */
-    @java.lang.Override
-    public int getArenaChallengeLevel() {
-      return arenaChallengeLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class ArenaChallengeV5LevelOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (arenaChallengeId_ != 0) {
-        output.writeUInt32(8, arenaChallengeId_);
+      if (mPHCBEHAMOJ_ != 0) {
+        output.writeUInt32(7, mPHCBEHAMOJ_);
       }
-      if (arenaChallengeLevel_ != 0) {
-        output.writeUInt32(15, arenaChallengeLevel_);
+      if (arenaChallengeId_ != 0) {
+        output.writeUInt32(15, arenaChallengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class ArenaChallengeV5LevelOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (mPHCBEHAMOJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, mPHCBEHAMOJ_);
+      }
       if (arenaChallengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, arenaChallengeId_);
-      }
-      if (arenaChallengeLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, arenaChallengeLevel_);
+          .computeUInt32Size(15, arenaChallengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class ArenaChallengeV5LevelOuterClass {
       }
       emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level other = (emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level) obj;
 
+      if (getMPHCBEHAMOJ()
+          != other.getMPHCBEHAMOJ()) return false;
       if (getArenaChallengeId()
           != other.getArenaChallengeId()) return false;
-      if (getArenaChallengeLevel()
-          != other.getArenaChallengeLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class ArenaChallengeV5LevelOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MPHCBEHAMOJ_FIELD_NUMBER;
+      hash = (53 * hash) + getMPHCBEHAMOJ();
       hash = (37 * hash) + ARENA_CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getArenaChallengeId();
-      hash = (37 * hash) + ARENA_CHALLENGE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getArenaChallengeLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class ArenaChallengeV5LevelOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        arenaChallengeId_ = 0;
+        mPHCBEHAMOJ_ = 0;
 
-        arenaChallengeLevel_ = 0;
+        arenaChallengeId_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class ArenaChallengeV5LevelOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level result = new emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level(this);
+        result.mPHCBEHAMOJ_ = mPHCBEHAMOJ_;
         result.arenaChallengeId_ = arenaChallengeId_;
-        result.arenaChallengeLevel_ = arenaChallengeLevel_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class ArenaChallengeV5LevelOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level other) {
         if (other == emu.grasscutter.net.proto.ArenaChallengeV5LevelOuterClass.ArenaChallengeV5Level.getDefaultInstance()) return this;
+        if (other.getMPHCBEHAMOJ() != 0) {
+          setMPHCBEHAMOJ(other.getMPHCBEHAMOJ());
+        }
         if (other.getArenaChallengeId() != 0) {
           setArenaChallengeId(other.getArenaChallengeId());
-        }
-        if (other.getArenaChallengeLevel() != 0) {
-          setArenaChallengeLevel(other.getArenaChallengeLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,9 +458,40 @@ public final class ArenaChallengeV5LevelOuterClass {
         return this;
       }
 
+      private int mPHCBEHAMOJ_ ;
+      /**
+       * <code>uint32 MPHCBEHAMOJ = 7;</code>
+       * @return The mPHCBEHAMOJ.
+       */
+      @java.lang.Override
+      public int getMPHCBEHAMOJ() {
+        return mPHCBEHAMOJ_;
+      }
+      /**
+       * <code>uint32 MPHCBEHAMOJ = 7;</code>
+       * @param value The mPHCBEHAMOJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMPHCBEHAMOJ(int value) {
+        
+        mPHCBEHAMOJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MPHCBEHAMOJ = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMPHCBEHAMOJ() {
+        
+        mPHCBEHAMOJ_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int arenaChallengeId_ ;
       /**
-       * <code>uint32 arena_challenge_id = 8;</code>
+       * <code>uint32 arena_challenge_id = 15;</code>
        * @return The arenaChallengeId.
        */
       @java.lang.Override
@@ -468,7 +499,7 @@ public final class ArenaChallengeV5LevelOuterClass {
         return arenaChallengeId_;
       }
       /**
-       * <code>uint32 arena_challenge_id = 8;</code>
+       * <code>uint32 arena_challenge_id = 15;</code>
        * @param value The arenaChallengeId to set.
        * @return This builder for chaining.
        */
@@ -479,43 +510,12 @@ public final class ArenaChallengeV5LevelOuterClass {
         return this;
       }
       /**
-       * <code>uint32 arena_challenge_id = 8;</code>
+       * <code>uint32 arena_challenge_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearArenaChallengeId() {
         
         arenaChallengeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int arenaChallengeLevel_ ;
-      /**
-       * <code>uint32 arena_challenge_level = 15;</code>
-       * @return The arenaChallengeLevel.
-       */
-      @java.lang.Override
-      public int getArenaChallengeLevel() {
-        return arenaChallengeLevel_;
-      }
-      /**
-       * <code>uint32 arena_challenge_level = 15;</code>
-       * @param value The arenaChallengeLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setArenaChallengeLevel(int value) {
-        
-        arenaChallengeLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 arena_challenge_level = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearArenaChallengeLevel() {
-        
-        arenaChallengeLevel_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +586,10 @@ public final class ArenaChallengeV5LevelOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033ArenaChallengeV5Level.proto\"R\n\025ArenaCh" +
-      "allengeV5Level\022\032\n\022arena_challenge_id\030\010 \001" +
-      "(\r\022\035\n\025arena_challenge_level\030\017 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\033ArenaChallengeV5Level.proto\"H\n\025ArenaCh" +
+      "allengeV5Level\022\023\n\013MPHCBEHAMOJ\030\007 \001(\r\022\032\n\022a" +
+      "rena_challenge_id\030\017 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +600,7 @@ public final class ArenaChallengeV5LevelOuterClass {
     internal_static_ArenaChallengeV5Level_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeV5Level_descriptor,
-        new java.lang.String[] { "ArenaChallengeId", "ArenaChallengeLevel", });
+        new java.lang.String[] { "MPHCBEHAMOJ", "ArenaChallengeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,64 +19,60 @@ public final class HomeBlueprintSlotInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 1;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>uint32 module_id = 6;</code>
-     * @return The moduleId.
-     */
-    int getModuleId();
-
-    /**
-     * <code>uint32 slot_id = 2;</code>
-     * @return The slotId.
-     */
-    int getSlotId();
-
-    /**
-     * <code>uint32 block_id = 8;</code>
-     * @return The blockId.
-     */
-    int getBlockId();
-
-    /**
-     * <code>bool JGNOGOODOKE = 7;</code>
-     * @return The jGNOGOODOKE.
-     */
-    boolean getJGNOGOODOKE();
-
-    /**
-     * <code>bool is_allow_copy = 4;</code>
-     * @return The isAllowCopy.
-     */
-    boolean getIsAllowCopy();
-
-    /**
-     * <code>string share_code = 13;</code>
+     * <code>string share_code = 1;</code>
      * @return The shareCode.
      */
     java.lang.String getShareCode();
     /**
-     * <code>string share_code = 13;</code>
+     * <code>string share_code = 1;</code>
      * @return The bytes for shareCode.
      */
     com.google.protobuf.ByteString
         getShareCodeBytes();
 
     /**
-     * <code>uint32 create_time = 5;</code>
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>bool is_allow_copy = 3;</code>
+     * @return The isAllowCopy.
+     */
+    boolean getIsAllowCopy();
+
+    /**
+     * <code>uint32 slot_id = 6;</code>
+     * @return The slotId.
+     */
+    int getSlotId();
+
+    /**
+     * <code>uint32 module_id = 7;</code>
+     * @return The moduleId.
+     */
+    int getModuleId();
+
+    /**
+     * <code>uint32 create_time = 9;</code>
      * @return The createTime.
      */
     int getCreateTime();
+
+    /**
+     * <code>uint32 block_id = 10;</code>
+     * @return The blockId.
+     */
+    int getBlockId();
+
+    /**
+     * <code>bool is_save_from_other = 15;</code>
+     * @return The isSaveFromOther.
+     */
+    boolean getIsSaveFromOther();
   }
   /**
-   * <pre>
-   * Obf: AAAADHDHBLA
-   * </pre>
-   *
    * Protobuf type {@code HomeBlueprintSlotInfo}
    */
   public static final class HomeBlueprintSlotInfo extends
@@ -122,45 +118,45 @@ public final class HomeBlueprintSlotInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              sceneId_ = input.readUInt32();
+              shareCode_ = s;
               break;
             }
             case 16: {
 
-              slotId_ = input.readUInt32();
+              sceneId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 24: {
 
               isAllowCopy_ = input.readBool();
               break;
             }
-            case 40: {
-
-              createTime_ = input.readUInt32();
-              break;
-            }
             case 48: {
 
-              moduleId_ = input.readUInt32();
+              slotId_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              jGNOGOODOKE_ = input.readBool();
+              moduleId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
+
+              createTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               blockId_ = input.readUInt32();
               break;
             }
-            case 106: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 120: {
 
-              shareCode_ = s;
+              isSaveFromOther_ = input.readBool();
               break;
             }
             default: {
@@ -195,76 +191,10 @@ public final class HomeBlueprintSlotInfoOuterClass {
               emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.class, emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 1;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int MODULE_ID_FIELD_NUMBER = 6;
-    private int moduleId_;
-    /**
-     * <code>uint32 module_id = 6;</code>
-     * @return The moduleId.
-     */
-    @java.lang.Override
-    public int getModuleId() {
-      return moduleId_;
-    }
-
-    public static final int SLOT_ID_FIELD_NUMBER = 2;
-    private int slotId_;
-    /**
-     * <code>uint32 slot_id = 2;</code>
-     * @return The slotId.
-     */
-    @java.lang.Override
-    public int getSlotId() {
-      return slotId_;
-    }
-
-    public static final int BLOCK_ID_FIELD_NUMBER = 8;
-    private int blockId_;
-    /**
-     * <code>uint32 block_id = 8;</code>
-     * @return The blockId.
-     */
-    @java.lang.Override
-    public int getBlockId() {
-      return blockId_;
-    }
-
-    public static final int JGNOGOODOKE_FIELD_NUMBER = 7;
-    private boolean jGNOGOODOKE_;
-    /**
-     * <code>bool JGNOGOODOKE = 7;</code>
-     * @return The jGNOGOODOKE.
-     */
-    @java.lang.Override
-    public boolean getJGNOGOODOKE() {
-      return jGNOGOODOKE_;
-    }
-
-    public static final int IS_ALLOW_COPY_FIELD_NUMBER = 4;
-    private boolean isAllowCopy_;
-    /**
-     * <code>bool is_allow_copy = 4;</code>
-     * @return The isAllowCopy.
-     */
-    @java.lang.Override
-    public boolean getIsAllowCopy() {
-      return isAllowCopy_;
-    }
-
-    public static final int SHARE_CODE_FIELD_NUMBER = 13;
+    public static final int SHARE_CODE_FIELD_NUMBER = 1;
     private volatile java.lang.Object shareCode_;
     /**
-     * <code>string share_code = 13;</code>
+     * <code>string share_code = 1;</code>
      * @return The shareCode.
      */
     @java.lang.Override
@@ -281,7 +211,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
       }
     }
     /**
-     * <code>string share_code = 13;</code>
+     * <code>string share_code = 1;</code>
      * @return The bytes for shareCode.
      */
     @java.lang.Override
@@ -299,15 +229,81 @@ public final class HomeBlueprintSlotInfoOuterClass {
       }
     }
 
-    public static final int CREATE_TIME_FIELD_NUMBER = 5;
+    public static final int SCENE_ID_FIELD_NUMBER = 2;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 2;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int IS_ALLOW_COPY_FIELD_NUMBER = 3;
+    private boolean isAllowCopy_;
+    /**
+     * <code>bool is_allow_copy = 3;</code>
+     * @return The isAllowCopy.
+     */
+    @java.lang.Override
+    public boolean getIsAllowCopy() {
+      return isAllowCopy_;
+    }
+
+    public static final int SLOT_ID_FIELD_NUMBER = 6;
+    private int slotId_;
+    /**
+     * <code>uint32 slot_id = 6;</code>
+     * @return The slotId.
+     */
+    @java.lang.Override
+    public int getSlotId() {
+      return slotId_;
+    }
+
+    public static final int MODULE_ID_FIELD_NUMBER = 7;
+    private int moduleId_;
+    /**
+     * <code>uint32 module_id = 7;</code>
+     * @return The moduleId.
+     */
+    @java.lang.Override
+    public int getModuleId() {
+      return moduleId_;
+    }
+
+    public static final int CREATE_TIME_FIELD_NUMBER = 9;
     private int createTime_;
     /**
-     * <code>uint32 create_time = 5;</code>
+     * <code>uint32 create_time = 9;</code>
      * @return The createTime.
      */
     @java.lang.Override
     public int getCreateTime() {
       return createTime_;
+    }
+
+    public static final int BLOCK_ID_FIELD_NUMBER = 10;
+    private int blockId_;
+    /**
+     * <code>uint32 block_id = 10;</code>
+     * @return The blockId.
+     */
+    @java.lang.Override
+    public int getBlockId() {
+      return blockId_;
+    }
+
+    public static final int IS_SAVE_FROM_OTHER_FIELD_NUMBER = 15;
+    private boolean isSaveFromOther_;
+    /**
+     * <code>bool is_save_from_other = 15;</code>
+     * @return The isSaveFromOther.
+     */
+    @java.lang.Override
+    public boolean getIsSaveFromOther() {
+      return isSaveFromOther_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,29 +320,29 @@ public final class HomeBlueprintSlotInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, shareCode_);
       }
-      if (slotId_ != 0) {
-        output.writeUInt32(2, slotId_);
+      if (sceneId_ != 0) {
+        output.writeUInt32(2, sceneId_);
       }
       if (isAllowCopy_ != false) {
-        output.writeBool(4, isAllowCopy_);
+        output.writeBool(3, isAllowCopy_);
       }
-      if (createTime_ != 0) {
-        output.writeUInt32(5, createTime_);
+      if (slotId_ != 0) {
+        output.writeUInt32(6, slotId_);
       }
       if (moduleId_ != 0) {
-        output.writeUInt32(6, moduleId_);
+        output.writeUInt32(7, moduleId_);
       }
-      if (jGNOGOODOKE_ != false) {
-        output.writeBool(7, jGNOGOODOKE_);
+      if (createTime_ != 0) {
+        output.writeUInt32(9, createTime_);
       }
       if (blockId_ != 0) {
-        output.writeUInt32(8, blockId_);
+        output.writeUInt32(10, blockId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, shareCode_);
+      if (isSaveFromOther_ != false) {
+        output.writeBool(15, isSaveFromOther_);
       }
       unknownFields.writeTo(output);
     }
@@ -357,36 +353,36 @@ public final class HomeBlueprintSlotInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, shareCode_);
+      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
-      }
-      if (slotId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, slotId_);
+          .computeUInt32Size(2, sceneId_);
       }
       if (isAllowCopy_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isAllowCopy_);
+          .computeBoolSize(3, isAllowCopy_);
       }
-      if (createTime_ != 0) {
+      if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, createTime_);
+          .computeUInt32Size(6, slotId_);
       }
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, moduleId_);
+          .computeUInt32Size(7, moduleId_);
       }
-      if (jGNOGOODOKE_ != false) {
+      if (createTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, jGNOGOODOKE_);
+          .computeUInt32Size(9, createTime_);
       }
       if (blockId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, blockId_);
+          .computeUInt32Size(10, blockId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, shareCode_);
+      if (isSaveFromOther_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isSaveFromOther_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -403,22 +399,22 @@ public final class HomeBlueprintSlotInfoOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo other = (emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo) obj;
 
-      if (getSceneId()
-          != other.getSceneId()) return false;
-      if (getModuleId()
-          != other.getModuleId()) return false;
-      if (getSlotId()
-          != other.getSlotId()) return false;
-      if (getBlockId()
-          != other.getBlockId()) return false;
-      if (getJGNOGOODOKE()
-          != other.getJGNOGOODOKE()) return false;
-      if (getIsAllowCopy()
-          != other.getIsAllowCopy()) return false;
       if (!getShareCode()
           .equals(other.getShareCode())) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
+      if (getIsAllowCopy()
+          != other.getIsAllowCopy()) return false;
+      if (getSlotId()
+          != other.getSlotId()) return false;
+      if (getModuleId()
+          != other.getModuleId()) return false;
       if (getCreateTime()
           != other.getCreateTime()) return false;
+      if (getBlockId()
+          != other.getBlockId()) return false;
+      if (getIsSaveFromOther()
+          != other.getIsSaveFromOther()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -430,24 +426,24 @@ public final class HomeBlueprintSlotInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + getShareCode().hashCode();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModuleId();
-      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotId();
-      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBlockId();
-      hash = (37 * hash) + JGNOGOODOKE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJGNOGOODOKE());
       hash = (37 * hash) + IS_ALLOW_COPY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAllowCopy());
-      hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + getShareCode().hashCode();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
+      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModuleId();
       hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCreateTime();
+      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBlockId();
+      hash = (37 * hash) + IS_SAVE_FROM_OTHER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSaveFromOther());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -544,10 +540,6 @@ public final class HomeBlueprintSlotInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AAAADHDHBLA
-     * </pre>
-     *
      * Protobuf type {@code HomeBlueprintSlotInfo}
      */
     public static final class Builder extends
@@ -585,21 +577,21 @@ public final class HomeBlueprintSlotInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        shareCode_ = "";
+
         sceneId_ = 0;
-
-        moduleId_ = 0;
-
-        slotId_ = 0;
-
-        blockId_ = 0;
-
-        jGNOGOODOKE_ = false;
 
         isAllowCopy_ = false;
 
-        shareCode_ = "";
+        slotId_ = 0;
+
+        moduleId_ = 0;
 
         createTime_ = 0;
+
+        blockId_ = 0;
+
+        isSaveFromOther_ = false;
 
         return this;
       }
@@ -627,14 +619,14 @@ public final class HomeBlueprintSlotInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo buildPartial() {
         emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo result = new emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo(this);
-        result.sceneId_ = sceneId_;
-        result.moduleId_ = moduleId_;
-        result.slotId_ = slotId_;
-        result.blockId_ = blockId_;
-        result.jGNOGOODOKE_ = jGNOGOODOKE_;
-        result.isAllowCopy_ = isAllowCopy_;
         result.shareCode_ = shareCode_;
+        result.sceneId_ = sceneId_;
+        result.isAllowCopy_ = isAllowCopy_;
+        result.slotId_ = slotId_;
+        result.moduleId_ = moduleId_;
         result.createTime_ = createTime_;
+        result.blockId_ = blockId_;
+        result.isSaveFromOther_ = isSaveFromOther_;
         onBuilt();
         return result;
       }
@@ -683,30 +675,30 @@ public final class HomeBlueprintSlotInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo other) {
         if (other == emu.grasscutter.net.proto.HomeBlueprintSlotInfoOuterClass.HomeBlueprintSlotInfo.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.getModuleId() != 0) {
-          setModuleId(other.getModuleId());
-        }
-        if (other.getSlotId() != 0) {
-          setSlotId(other.getSlotId());
-        }
-        if (other.getBlockId() != 0) {
-          setBlockId(other.getBlockId());
-        }
-        if (other.getJGNOGOODOKE() != false) {
-          setJGNOGOODOKE(other.getJGNOGOODOKE());
-        }
-        if (other.getIsAllowCopy() != false) {
-          setIsAllowCopy(other.getIsAllowCopy());
-        }
         if (!other.getShareCode().isEmpty()) {
           shareCode_ = other.shareCode_;
           onChanged();
         }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
+        if (other.getIsAllowCopy() != false) {
+          setIsAllowCopy(other.getIsAllowCopy());
+        }
+        if (other.getSlotId() != 0) {
+          setSlotId(other.getSlotId());
+        }
+        if (other.getModuleId() != 0) {
+          setModuleId(other.getModuleId());
+        }
         if (other.getCreateTime() != 0) {
           setCreateTime(other.getCreateTime());
+        }
+        if (other.getBlockId() != 0) {
+          setBlockId(other.getBlockId());
+        }
+        if (other.getIsSaveFromOther() != false) {
+          setIsSaveFromOther(other.getIsSaveFromOther());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -737,195 +729,9 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return this;
       }
 
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 1;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 1;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int moduleId_ ;
-      /**
-       * <code>uint32 module_id = 6;</code>
-       * @return The moduleId.
-       */
-      @java.lang.Override
-      public int getModuleId() {
-        return moduleId_;
-      }
-      /**
-       * <code>uint32 module_id = 6;</code>
-       * @param value The moduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModuleId(int value) {
-        
-        moduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModuleId() {
-        
-        moduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int slotId_ ;
-      /**
-       * <code>uint32 slot_id = 2;</code>
-       * @return The slotId.
-       */
-      @java.lang.Override
-      public int getSlotId() {
-        return slotId_;
-      }
-      /**
-       * <code>uint32 slot_id = 2;</code>
-       * @param value The slotId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSlotId(int value) {
-        
-        slotId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 slot_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSlotId() {
-        
-        slotId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int blockId_ ;
-      /**
-       * <code>uint32 block_id = 8;</code>
-       * @return The blockId.
-       */
-      @java.lang.Override
-      public int getBlockId() {
-        return blockId_;
-      }
-      /**
-       * <code>uint32 block_id = 8;</code>
-       * @param value The blockId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBlockId(int value) {
-        
-        blockId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 block_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBlockId() {
-        
-        blockId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean jGNOGOODOKE_ ;
-      /**
-       * <code>bool JGNOGOODOKE = 7;</code>
-       * @return The jGNOGOODOKE.
-       */
-      @java.lang.Override
-      public boolean getJGNOGOODOKE() {
-        return jGNOGOODOKE_;
-      }
-      /**
-       * <code>bool JGNOGOODOKE = 7;</code>
-       * @param value The jGNOGOODOKE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJGNOGOODOKE(boolean value) {
-        
-        jGNOGOODOKE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool JGNOGOODOKE = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJGNOGOODOKE() {
-        
-        jGNOGOODOKE_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isAllowCopy_ ;
-      /**
-       * <code>bool is_allow_copy = 4;</code>
-       * @return The isAllowCopy.
-       */
-      @java.lang.Override
-      public boolean getIsAllowCopy() {
-        return isAllowCopy_;
-      }
-      /**
-       * <code>bool is_allow_copy = 4;</code>
-       * @param value The isAllowCopy to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAllowCopy(boolean value) {
-        
-        isAllowCopy_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_allow_copy = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAllowCopy() {
-        
-        isAllowCopy_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object shareCode_ = "";
       /**
-       * <code>string share_code = 13;</code>
+       * <code>string share_code = 1;</code>
        * @return The shareCode.
        */
       public java.lang.String getShareCode() {
@@ -941,7 +747,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
         }
       }
       /**
-       * <code>string share_code = 13;</code>
+       * <code>string share_code = 1;</code>
        * @return The bytes for shareCode.
        */
       public com.google.protobuf.ByteString
@@ -958,7 +764,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
         }
       }
       /**
-       * <code>string share_code = 13;</code>
+       * <code>string share_code = 1;</code>
        * @param value The shareCode to set.
        * @return This builder for chaining.
        */
@@ -973,7 +779,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 13;</code>
+       * <code>string share_code = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearShareCode() {
@@ -983,7 +789,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 13;</code>
+       * <code>string share_code = 1;</code>
        * @param value The bytes for shareCode to set.
        * @return This builder for chaining.
        */
@@ -999,9 +805,133 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return this;
       }
 
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAllowCopy_ ;
+      /**
+       * <code>bool is_allow_copy = 3;</code>
+       * @return The isAllowCopy.
+       */
+      @java.lang.Override
+      public boolean getIsAllowCopy() {
+        return isAllowCopy_;
+      }
+      /**
+       * <code>bool is_allow_copy = 3;</code>
+       * @param value The isAllowCopy to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAllowCopy(boolean value) {
+        
+        isAllowCopy_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_allow_copy = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAllowCopy() {
+        
+        isAllowCopy_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int slotId_ ;
+      /**
+       * <code>uint32 slot_id = 6;</code>
+       * @return The slotId.
+       */
+      @java.lang.Override
+      public int getSlotId() {
+        return slotId_;
+      }
+      /**
+       * <code>uint32 slot_id = 6;</code>
+       * @param value The slotId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSlotId(int value) {
+        
+        slotId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 slot_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSlotId() {
+        
+        slotId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int moduleId_ ;
+      /**
+       * <code>uint32 module_id = 7;</code>
+       * @return The moduleId.
+       */
+      @java.lang.Override
+      public int getModuleId() {
+        return moduleId_;
+      }
+      /**
+       * <code>uint32 module_id = 7;</code>
+       * @param value The moduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModuleId(int value) {
+        
+        moduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 module_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModuleId() {
+        
+        moduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int createTime_ ;
       /**
-       * <code>uint32 create_time = 5;</code>
+       * <code>uint32 create_time = 9;</code>
        * @return The createTime.
        */
       @java.lang.Override
@@ -1009,7 +939,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return createTime_;
       }
       /**
-       * <code>uint32 create_time = 5;</code>
+       * <code>uint32 create_time = 9;</code>
        * @param value The createTime to set.
        * @return This builder for chaining.
        */
@@ -1020,12 +950,74 @@ public final class HomeBlueprintSlotInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 create_time = 5;</code>
+       * <code>uint32 create_time = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCreateTime() {
         
         createTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int blockId_ ;
+      /**
+       * <code>uint32 block_id = 10;</code>
+       * @return The blockId.
+       */
+      @java.lang.Override
+      public int getBlockId() {
+        return blockId_;
+      }
+      /**
+       * <code>uint32 block_id = 10;</code>
+       * @param value The blockId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockId(int value) {
+        
+        blockId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 block_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockId() {
+        
+        blockId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSaveFromOther_ ;
+      /**
+       * <code>bool is_save_from_other = 15;</code>
+       * @return The isSaveFromOther.
+       */
+      @java.lang.Override
+      public boolean getIsSaveFromOther() {
+        return isSaveFromOther_;
+      }
+      /**
+       * <code>bool is_save_from_other = 15;</code>
+       * @param value The isSaveFromOther to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSaveFromOther(boolean value) {
+        
+        isSaveFromOther_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_save_from_other = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSaveFromOther() {
+        
+        isSaveFromOther_ = false;
         onChanged();
         return this;
       }
@@ -1096,13 +1088,13 @@ public final class HomeBlueprintSlotInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033HomeBlueprintSlotInfo.proto\"\264\001\n\025HomeBl" +
-      "ueprintSlotInfo\022\020\n\010scene_id\030\001 \001(\r\022\021\n\tmod" +
-      "ule_id\030\006 \001(\r\022\017\n\007slot_id\030\002 \001(\r\022\020\n\010block_i" +
-      "d\030\010 \001(\r\022\023\n\013JGNOGOODOKE\030\007 \001(\010\022\025\n\ris_allow" +
-      "_copy\030\004 \001(\010\022\022\n\nshare_code\030\r \001(\t\022\023\n\013creat" +
-      "e_time\030\005 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\033HomeBlueprintSlotInfo.proto\"\273\001\n\025HomeBl" +
+      "ueprintSlotInfo\022\022\n\nshare_code\030\001 \001(\t\022\020\n\010s" +
+      "cene_id\030\002 \001(\r\022\025\n\ris_allow_copy\030\003 \001(\010\022\017\n\007" +
+      "slot_id\030\006 \001(\r\022\021\n\tmodule_id\030\007 \001(\r\022\023\n\013crea" +
+      "te_time\030\t \001(\r\022\020\n\010block_id\030\n \001(\r\022\032\n\022is_sa" +
+      "ve_from_other\030\017 \001(\010B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1113,7 +1105,7 @@ public final class HomeBlueprintSlotInfoOuterClass {
     internal_static_HomeBlueprintSlotInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlueprintSlotInfo_descriptor,
-        new java.lang.String[] { "SceneId", "ModuleId", "SlotId", "BlockId", "JGNOGOODOKE", "IsAllowCopy", "ShareCode", "CreateTime", });
+        new java.lang.String[] { "ShareCode", "SceneId", "IsAllowCopy", "SlotId", "ModuleId", "CreateTime", "BlockId", "IsSaveFromOther", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

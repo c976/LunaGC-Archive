@@ -19,248 +19,19 @@ public final class RegionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string gateserver_ip = 1;</code>
-     * @return The gateserverIp.
-     */
-    java.lang.String getGateserverIp();
-    /**
-     * <code>string gateserver_ip = 1;</code>
-     * @return The bytes for gateserverIp.
-     */
-    com.google.protobuf.ByteString
-        getGateserverIpBytes();
-
-    /**
-     * <code>uint32 gateserver_port = 2;</code>
-     * @return The gateserverPort.
-     */
-    int getGateserverPort();
-
-    /**
-     * <code>string pay_callback_url = 3;</code>
-     * @return The payCallbackUrl.
-     */
-    java.lang.String getPayCallbackUrl();
-    /**
-     * <code>string pay_callback_url = 3;</code>
-     * @return The bytes for payCallbackUrl.
-     */
-    com.google.protobuf.ByteString
-        getPayCallbackUrlBytes();
-
-    /**
-     * <code>string area_type = 7;</code>
-     * @return The areaType.
-     */
-    java.lang.String getAreaType();
-    /**
-     * <code>string area_type = 7;</code>
-     * @return The bytes for areaType.
-     */
-    com.google.protobuf.ByteString
-        getAreaTypeBytes();
-
-    /**
-     * <code>string resource_url = 8;</code>
-     * @return The resourceUrl.
-     */
-    java.lang.String getResourceUrl();
-    /**
-     * <code>string resource_url = 8;</code>
-     * @return The bytes for resourceUrl.
-     */
-    com.google.protobuf.ByteString
-        getResourceUrlBytes();
-
-    /**
-     * <code>string data_url = 9;</code>
-     * @return The dataUrl.
-     */
-    java.lang.String getDataUrl();
-    /**
-     * <code>string data_url = 9;</code>
-     * @return The bytes for dataUrl.
-     */
-    com.google.protobuf.ByteString
-        getDataUrlBytes();
-
-    /**
-     * <code>string feedback_url = 10;</code>
-     * @return The feedbackUrl.
-     */
-    java.lang.String getFeedbackUrl();
-    /**
-     * <code>string feedback_url = 10;</code>
-     * @return The bytes for feedbackUrl.
-     */
-    com.google.protobuf.ByteString
-        getFeedbackUrlBytes();
-
-    /**
-     * <code>string bulletin_url = 11;</code>
-     * @return The bulletinUrl.
-     */
-    java.lang.String getBulletinUrl();
-    /**
-     * <code>string bulletin_url = 11;</code>
-     * @return The bytes for bulletinUrl.
-     */
-    com.google.protobuf.ByteString
-        getBulletinUrlBytes();
-
-    /**
-     * <code>string resource_url_bak = 12;</code>
-     * @return The resourceUrlBak.
-     */
-    java.lang.String getResourceUrlBak();
-    /**
-     * <code>string resource_url_bak = 12;</code>
-     * @return The bytes for resourceUrlBak.
-     */
-    com.google.protobuf.ByteString
-        getResourceUrlBakBytes();
-
-    /**
-     * <code>string data_url_bak = 13;</code>
-     * @return The dataUrlBak.
-     */
-    java.lang.String getDataUrlBak();
-    /**
-     * <code>string data_url_bak = 13;</code>
-     * @return The bytes for dataUrlBak.
-     */
-    com.google.protobuf.ByteString
-        getDataUrlBakBytes();
-
-    /**
-     * <code>uint32 client_data_version = 14;</code>
-     * @return The clientDataVersion.
-     */
-    int getClientDataVersion();
-
-    /**
-     * <code>string handbook_url = 16;</code>
-     * @return The handbookUrl.
-     */
-    java.lang.String getHandbookUrl();
-    /**
-     * <code>string handbook_url = 16;</code>
-     * @return The bytes for handbookUrl.
-     */
-    com.google.protobuf.ByteString
-        getHandbookUrlBytes();
-
-    /**
-     * <code>uint32 client_silence_data_version = 18;</code>
-     * @return The clientSilenceDataVersion.
-     */
-    int getClientSilenceDataVersion();
-
-    /**
-     * <code>string client_data_md5 = 19;</code>
-     * @return The clientDataMd5.
-     */
-    java.lang.String getClientDataMd5();
-    /**
-     * <code>string client_data_md5 = 19;</code>
-     * @return The bytes for clientDataMd5.
-     */
-    com.google.protobuf.ByteString
-        getClientDataMd5Bytes();
-
-    /**
-     * <code>string client_silence_data_md5 = 20;</code>
-     * @return The clientSilenceDataMd5.
-     */
-    java.lang.String getClientSilenceDataMd5();
-    /**
-     * <code>string client_silence_data_md5 = 20;</code>
-     * @return The bytes for clientSilenceDataMd5.
-     */
-    com.google.protobuf.ByteString
-        getClientSilenceDataMd5Bytes();
-
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     * @return Whether the resVersionConfig field is set.
-     */
-    boolean hasResVersionConfig();
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     * @return The resVersionConfig.
-     */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
-
-    /**
-     * <code>bytes secret_key = 23;</code>
-     * @return The secretKey.
-     */
-    com.google.protobuf.ByteString getSecretKey();
-
-    /**
-     * <code>string official_community_url = 24;</code>
-     * @return The officialCommunityUrl.
-     */
-    java.lang.String getOfficialCommunityUrl();
-    /**
-     * <code>string official_community_url = 24;</code>
-     * @return The bytes for officialCommunityUrl.
-     */
-    com.google.protobuf.ByteString
-        getOfficialCommunityUrlBytes();
-
-    /**
-     * <code>string client_version_suffix = 26;</code>
-     * @return The clientVersionSuffix.
-     */
-    java.lang.String getClientVersionSuffix();
-    /**
-     * <code>string client_version_suffix = 26;</code>
-     * @return The bytes for clientVersionSuffix.
-     */
-    com.google.protobuf.ByteString
-        getClientVersionSuffixBytes();
-
-    /**
-     * <code>string client_silence_version_suffix = 27;</code>
-     * @return The clientSilenceVersionSuffix.
-     */
-    java.lang.String getClientSilenceVersionSuffix();
-    /**
-     * <code>string client_silence_version_suffix = 27;</code>
-     * @return The bytes for clientSilenceVersionSuffix.
-     */
-    com.google.protobuf.ByteString
-        getClientSilenceVersionSuffixBytes();
-
-    /**
-     * <code>bool use_gateserver_domain_name = 28;</code>
-     * @return The useGateserverDomainName.
-     */
-    boolean getUseGateserverDomainName();
-
-    /**
-     * <code>string gateserver_domain_name = 29;</code>
-     * @return The gateserverDomainName.
-     */
-    java.lang.String getGateserverDomainName();
-    /**
-     * <code>string gateserver_domain_name = 29;</code>
-     * @return The bytes for gateserverDomainName.
-     */
-    com.google.protobuf.ByteString
-        getGateserverDomainNameBytes();
-
-    /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>string user_center_url = 30;</code>
      * @return The userCenterUrl.
      */
     java.lang.String getUserCenterUrl();
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>string user_center_url = 30;</code>
      * @return The bytes for userCenterUrl.
      */
@@ -268,23 +39,79 @@ public final class RegionInfoOuterClass {
         getUserCenterUrlBytes();
 
     /**
-     * <code>string account_bind_url = 31;</code>
-     * @return The accountBindUrl.
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>string data_url_bak = 13;</code>
+     * @return The dataUrlBak.
      */
-    java.lang.String getAccountBindUrl();
+    java.lang.String getDataUrlBak();
     /**
-     * <code>string account_bind_url = 31;</code>
-     * @return The bytes for accountBindUrl.
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>string data_url_bak = 13;</code>
+     * @return The bytes for dataUrlBak.
      */
     com.google.protobuf.ByteString
-        getAccountBindUrlBytes();
+        getDataUrlBakBytes();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>string client_silence_version_suffix = 27;</code>
+     * @return The clientSilenceVersionSuffix.
+     */
+    java.lang.String getClientSilenceVersionSuffix();
+    /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>string client_silence_version_suffix = 27;</code>
+     * @return The bytes for clientSilenceVersionSuffix.
+     */
+    com.google.protobuf.ByteString
+        getClientSilenceVersionSuffixBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>string official_community_url = 24;</code>
+     * @return The officialCommunityUrl.
+     */
+    java.lang.String getOfficialCommunityUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>string official_community_url = 24;</code>
+     * @return The bytes for officialCommunityUrl.
+     */
+    com.google.protobuf.ByteString
+        getOfficialCommunityUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
      * <code>string cdkey_url = 32;</code>
      * @return The cdkeyUrl.
      */
     java.lang.String getCdkeyUrl();
     /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
      * <code>string cdkey_url = 32;</code>
      * @return The bytes for cdkeyUrl.
      */
@@ -292,11 +119,126 @@ public final class RegionInfoOuterClass {
         getCdkeyUrlBytes();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>string data_url = 9;</code>
+     * @return The dataUrl.
+     */
+    java.lang.String getDataUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>string data_url = 9;</code>
+     * @return The bytes for dataUrl.
+     */
+    com.google.protobuf.ByteString
+        getDataUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 80
+     * </pre>
+     *
+     * <code>string client_silence_data_md5 = 20;</code>
+     * @return The clientSilenceDataMd5.
+     */
+    java.lang.String getClientSilenceDataMd5();
+    /**
+     * <pre>
+     *6.3.0 // offset: 80
+     * </pre>
+     *
+     * <code>string client_silence_data_md5 = 20;</code>
+     * @return The bytes for clientSilenceDataMd5.
+     */
+    com.google.protobuf.ByteString
+        getClientSilenceDataMd5Bytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>string client_data_md5 = 19;</code>
+     * @return The clientDataMd5.
+     */
+    java.lang.String getClientDataMd5();
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>string client_data_md5 = 19;</code>
+     * @return The bytes for clientDataMd5.
+     */
+    com.google.protobuf.ByteString
+        getClientDataMd5Bytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     * @return Whether the resVersionConfig field is set.
+     */
+    boolean hasResVersionConfig();
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     * @return The resVersionConfig.
+     */
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     */
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 104
+     * </pre>
+     *
+     * <code>string gateserver_domain_name = 29;</code>
+     * @return The gateserverDomainName.
+     */
+    java.lang.String getGateserverDomainName();
+    /**
+     * <pre>
+     *6.3.0 // offset: 104
+     * </pre>
+     *
+     * <code>string gateserver_domain_name = 29;</code>
+     * @return The bytes for gateserverDomainName.
+     */
+    com.google.protobuf.ByteString
+        getGateserverDomainNameBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 112
+     * </pre>
+     *
      * <code>string privacy_policy_url = 33;</code>
      * @return The privacyPolicyUrl.
      */
     java.lang.String getPrivacyPolicyUrl();
     /**
+     * <pre>
+     *6.3.0 // offset: 112
+     * </pre>
+     *
      * <code>string privacy_policy_url = 33;</code>
      * @return The bytes for privacyPolicyUrl.
      */
@@ -304,11 +246,156 @@ public final class RegionInfoOuterClass {
         getPrivacyPolicyUrlBytes();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 120
+     * </pre>
+     *
+     * <code>bytes secret_key = 23;</code>
+     * @return The secretKey.
+     */
+    com.google.protobuf.ByteString getSecretKey();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 128
+     * </pre>
+     *
+     * <code>string gateserver_ip = 1;</code>
+     * @return The gateserverIp.
+     */
+    java.lang.String getGateserverIp();
+    /**
+     * <pre>
+     *6.3.0 // offset: 128
+     * </pre>
+     *
+     * <code>string gateserver_ip = 1;</code>
+     * @return The bytes for gateserverIp.
+     */
+    com.google.protobuf.ByteString
+        getGateserverIpBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     * @return Whether the nextResVersionConfig field is set.
+     */
+    boolean hasNextResVersionConfig();
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     * @return The nextResVersionConfig.
+     */
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig();
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     */
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 144
+     * </pre>
+     *
+     * <code>string pay_callback_url = 3;</code>
+     * @return The payCallbackUrl.
+     */
+    java.lang.String getPayCallbackUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 144
+     * </pre>
+     *
+     * <code>string pay_callback_url = 3;</code>
+     * @return The bytes for payCallbackUrl.
+     */
+    com.google.protobuf.ByteString
+        getPayCallbackUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 152
+     * </pre>
+     *
+     * <code>string resource_url_bak = 12;</code>
+     * @return The resourceUrlBak.
+     */
+    java.lang.String getResourceUrlBak();
+    /**
+     * <pre>
+     *6.3.0 // offset: 152
+     * </pre>
+     *
+     * <code>string resource_url_bak = 12;</code>
+     * @return The bytes for resourceUrlBak.
+     */
+    com.google.protobuf.ByteString
+        getResourceUrlBakBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 160
+     * </pre>
+     *
+     * <code>string bulletin_url = 11;</code>
+     * @return The bulletinUrl.
+     */
+    java.lang.String getBulletinUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 160
+     * </pre>
+     *
+     * <code>string bulletin_url = 11;</code>
+     * @return The bytes for bulletinUrl.
+     */
+    com.google.protobuf.ByteString
+        getBulletinUrlBytes();
+
+    /**
+     * <pre>
+     * offset: 168
+     * </pre>
+     *
+     * <code>string LOOMGINGEON = 37;</code>
+     * @return The lOOMGINGEON.
+     */
+    java.lang.String getLOOMGINGEON();
+    /**
+     * <pre>
+     * offset: 168
+     * </pre>
+     *
+     * <code>string LOOMGINGEON = 37;</code>
+     * @return The bytes for lOOMGINGEON.
+     */
+    com.google.protobuf.ByteString
+        getLOOMGINGEONBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 176
+     * </pre>
+     *
      * <code>string next_resource_url = 34;</code>
      * @return The nextResourceUrl.
      */
     java.lang.String getNextResourceUrl();
     /**
+     * <pre>
+     *6.3.0 // offset: 176
+     * </pre>
+     *
      * <code>string next_resource_url = 34;</code>
      * @return The bytes for nextResourceUrl.
      */
@@ -316,26 +403,139 @@ public final class RegionInfoOuterClass {
         getNextResourceUrlBytes();
 
     /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
-     * @return Whether the nextResVersionConfig field is set.
+     * <pre>
+     *6.3.0 // offset: 184
+     * </pre>
+     *
+     * <code>string resource_url = 8;</code>
+     * @return The resourceUrl.
      */
-    boolean hasNextResVersionConfig();
+    java.lang.String getResourceUrl();
     /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
-     * @return The nextResVersionConfig.
+     * <pre>
+     *6.3.0 // offset: 184
+     * </pre>
+     *
+     * <code>string resource_url = 8;</code>
+     * @return The bytes for resourceUrl.
      */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig();
-    /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
-     */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder();
+    com.google.protobuf.ByteString
+        getResourceUrlBytes();
 
     /**
+     * <pre>
+     *6.3.0 // offset: 192
+     * </pre>
+     *
+     * <code>string account_bind_url = 31;</code>
+     * @return The accountBindUrl.
+     */
+    java.lang.String getAccountBindUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 192
+     * </pre>
+     *
+     * <code>string account_bind_url = 31;</code>
+     * @return The bytes for accountBindUrl.
+     */
+    com.google.protobuf.ByteString
+        getAccountBindUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 200
+     * </pre>
+     *
+     * <code>string client_version_suffix = 26;</code>
+     * @return The clientVersionSuffix.
+     */
+    java.lang.String getClientVersionSuffix();
+    /**
+     * <pre>
+     *6.3.0 // offset: 200
+     * </pre>
+     *
+     * <code>string client_version_suffix = 26;</code>
+     * @return The bytes for clientVersionSuffix.
+     */
+    com.google.protobuf.ByteString
+        getClientVersionSuffixBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 208
+     * </pre>
+     *
+     * <code>string area_type = 7;</code>
+     * @return The areaType.
+     */
+    java.lang.String getAreaType();
+    /**
+     * <pre>
+     *6.3.0 // offset: 208
+     * </pre>
+     *
+     * <code>string area_type = 7;</code>
+     * @return The bytes for areaType.
+     */
+    com.google.protobuf.ByteString
+        getAreaTypeBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 216
+     * </pre>
+     *
+     * <code>string feedback_url = 10;</code>
+     * @return The feedbackUrl.
+     */
+    java.lang.String getFeedbackUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 216
+     * </pre>
+     *
+     * <code>string feedback_url = 10;</code>
+     * @return The bytes for feedbackUrl.
+     */
+    com.google.protobuf.ByteString
+        getFeedbackUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 224
+     * </pre>
+     *
+     * <code>string handbook_url = 16;</code>
+     * @return The handbookUrl.
+     */
+    java.lang.String getHandbookUrl();
+    /**
+     * <pre>
+     *6.3.0 // offset: 224
+     * </pre>
+     *
+     * <code>string handbook_url = 16;</code>
+     * @return The bytes for handbookUrl.
+     */
+    com.google.protobuf.ByteString
+        getHandbookUrlBytes();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 232
+     * </pre>
+     *
      * <code>string game_biz = 36;</code>
      * @return The gameBiz.
      */
     java.lang.String getGameBiz();
     /**
+     * <pre>
+     *6.3.0 // offset: 232
+     * </pre>
+     *
      * <code>string game_biz = 36;</code>
      * @return The bytes for gameBiz.
      */
@@ -343,16 +543,44 @@ public final class RegionInfoOuterClass {
         getGameBizBytes();
 
     /**
-     * <code>string gateserver_ipv6_ip = 37;</code>
-     * @return The gateserverIpv6Ip.
+     * <pre>
+     *6.3.0 // offset: 240
+     * </pre>
+     *
+     * <code>uint32 client_data_version = 14;</code>
+     * @return The clientDataVersion.
      */
-    java.lang.String getGateserverIpv6Ip();
+    int getClientDataVersion();
+
     /**
-     * <code>string gateserver_ipv6_ip = 37;</code>
-     * @return The bytes for gateserverIpv6Ip.
+     * <pre>
+     *6.3.0 // offset: 244
+     * </pre>
+     *
+     * <code>uint32 client_silence_data_version = 18;</code>
+     * @return The clientSilenceDataVersion.
      */
-    com.google.protobuf.ByteString
-        getGateserverIpv6IpBytes();
+    int getClientSilenceDataVersion();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 248
+     * </pre>
+     *
+     * <code>uint32 gateserver_port = 2;</code>
+     * @return The gateserverPort.
+     */
+    int getGateserverPort();
+
+    /**
+     * <pre>
+     *6.3.0 // offset: 252
+     * </pre>
+     *
+     * <code>bool use_gateserver_domain_name = 28;</code>
+     * @return The useGateserverDomainName.
+     */
+    boolean getUseGateserverDomainName();
   }
   /**
    * Protobuf type {@code RegionInfo}
@@ -367,30 +595,30 @@ public final class RegionInfoOuterClass {
       super(builder);
     }
     private RegionInfo() {
+      userCenterUrl_ = "";
+      dataUrlBak_ = "";
+      clientSilenceVersionSuffix_ = "";
+      officialCommunityUrl_ = "";
+      cdkeyUrl_ = "";
+      dataUrl_ = "";
+      clientSilenceDataMd5_ = "";
+      clientDataMd5_ = "";
+      gateserverDomainName_ = "";
+      privacyPolicyUrl_ = "";
+      secretKey_ = com.google.protobuf.ByteString.EMPTY;
       gateserverIp_ = "";
       payCallbackUrl_ = "";
-      areaType_ = "";
-      resourceUrl_ = "";
-      dataUrl_ = "";
-      feedbackUrl_ = "";
-      bulletinUrl_ = "";
       resourceUrlBak_ = "";
-      dataUrlBak_ = "";
-      handbookUrl_ = "";
-      clientDataMd5_ = "";
-      clientSilenceDataMd5_ = "";
-      secretKey_ = com.google.protobuf.ByteString.EMPTY;
-      officialCommunityUrl_ = "";
-      clientVersionSuffix_ = "";
-      clientSilenceVersionSuffix_ = "";
-      gateserverDomainName_ = "";
-      userCenterUrl_ = "";
-      accountBindUrl_ = "";
-      cdkeyUrl_ = "";
-      privacyPolicyUrl_ = "";
+      bulletinUrl_ = "";
+      lOOMGINGEON_ = "";
       nextResourceUrl_ = "";
+      resourceUrl_ = "";
+      accountBindUrl_ = "";
+      clientVersionSuffix_ = "";
+      areaType_ = "";
+      feedbackUrl_ = "";
+      handbookUrl_ = "";
       gameBiz_ = "";
-      gateserverIpv6Ip_ = "";
     }
 
     @java.lang.Override
@@ -609,7 +837,7 @@ public final class RegionInfoOuterClass {
             case 298: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              gateserverIpv6Ip_ = s;
+              lOOMGINGEON_ = s;
               break;
             }
             default: {
@@ -644,698 +872,13 @@ public final class RegionInfoOuterClass {
               emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo.class, emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo.Builder.class);
     }
 
-    public static final int GATESERVER_IP_FIELD_NUMBER = 1;
-    private volatile java.lang.Object gateserverIp_;
-    /**
-     * <code>string gateserver_ip = 1;</code>
-     * @return The gateserverIp.
-     */
-    @java.lang.Override
-    public java.lang.String getGateserverIp() {
-      java.lang.Object ref = gateserverIp_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gateserverIp_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gateserver_ip = 1;</code>
-     * @return The bytes for gateserverIp.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGateserverIpBytes() {
-      java.lang.Object ref = gateserverIp_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gateserverIp_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int GATESERVER_PORT_FIELD_NUMBER = 2;
-    private int gateserverPort_;
-    /**
-     * <code>uint32 gateserver_port = 2;</code>
-     * @return The gateserverPort.
-     */
-    @java.lang.Override
-    public int getGateserverPort() {
-      return gateserverPort_;
-    }
-
-    public static final int PAY_CALLBACK_URL_FIELD_NUMBER = 3;
-    private volatile java.lang.Object payCallbackUrl_;
-    /**
-     * <code>string pay_callback_url = 3;</code>
-     * @return The payCallbackUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getPayCallbackUrl() {
-      java.lang.Object ref = payCallbackUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        payCallbackUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string pay_callback_url = 3;</code>
-     * @return The bytes for payCallbackUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPayCallbackUrlBytes() {
-      java.lang.Object ref = payCallbackUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        payCallbackUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int AREA_TYPE_FIELD_NUMBER = 7;
-    private volatile java.lang.Object areaType_;
-    /**
-     * <code>string area_type = 7;</code>
-     * @return The areaType.
-     */
-    @java.lang.Override
-    public java.lang.String getAreaType() {
-      java.lang.Object ref = areaType_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        areaType_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string area_type = 7;</code>
-     * @return The bytes for areaType.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getAreaTypeBytes() {
-      java.lang.Object ref = areaType_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        areaType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int RESOURCE_URL_FIELD_NUMBER = 8;
-    private volatile java.lang.Object resourceUrl_;
-    /**
-     * <code>string resource_url = 8;</code>
-     * @return The resourceUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getResourceUrl() {
-      java.lang.Object ref = resourceUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        resourceUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string resource_url = 8;</code>
-     * @return The bytes for resourceUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getResourceUrlBytes() {
-      java.lang.Object ref = resourceUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        resourceUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DATA_URL_FIELD_NUMBER = 9;
-    private volatile java.lang.Object dataUrl_;
-    /**
-     * <code>string data_url = 9;</code>
-     * @return The dataUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getDataUrl() {
-      java.lang.Object ref = dataUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        dataUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string data_url = 9;</code>
-     * @return The bytes for dataUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDataUrlBytes() {
-      java.lang.Object ref = dataUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        dataUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int FEEDBACK_URL_FIELD_NUMBER = 10;
-    private volatile java.lang.Object feedbackUrl_;
-    /**
-     * <code>string feedback_url = 10;</code>
-     * @return The feedbackUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getFeedbackUrl() {
-      java.lang.Object ref = feedbackUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        feedbackUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string feedback_url = 10;</code>
-     * @return The bytes for feedbackUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getFeedbackUrlBytes() {
-      java.lang.Object ref = feedbackUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        feedbackUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int BULLETIN_URL_FIELD_NUMBER = 11;
-    private volatile java.lang.Object bulletinUrl_;
-    /**
-     * <code>string bulletin_url = 11;</code>
-     * @return The bulletinUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getBulletinUrl() {
-      java.lang.Object ref = bulletinUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        bulletinUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string bulletin_url = 11;</code>
-     * @return The bytes for bulletinUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getBulletinUrlBytes() {
-      java.lang.Object ref = bulletinUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        bulletinUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int RESOURCE_URL_BAK_FIELD_NUMBER = 12;
-    private volatile java.lang.Object resourceUrlBak_;
-    /**
-     * <code>string resource_url_bak = 12;</code>
-     * @return The resourceUrlBak.
-     */
-    @java.lang.Override
-    public java.lang.String getResourceUrlBak() {
-      java.lang.Object ref = resourceUrlBak_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        resourceUrlBak_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string resource_url_bak = 12;</code>
-     * @return The bytes for resourceUrlBak.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getResourceUrlBakBytes() {
-      java.lang.Object ref = resourceUrlBak_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        resourceUrlBak_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DATA_URL_BAK_FIELD_NUMBER = 13;
-    private volatile java.lang.Object dataUrlBak_;
-    /**
-     * <code>string data_url_bak = 13;</code>
-     * @return The dataUrlBak.
-     */
-    @java.lang.Override
-    public java.lang.String getDataUrlBak() {
-      java.lang.Object ref = dataUrlBak_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        dataUrlBak_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string data_url_bak = 13;</code>
-     * @return The bytes for dataUrlBak.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDataUrlBakBytes() {
-      java.lang.Object ref = dataUrlBak_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        dataUrlBak_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 14;
-    private int clientDataVersion_;
-    /**
-     * <code>uint32 client_data_version = 14;</code>
-     * @return The clientDataVersion.
-     */
-    @java.lang.Override
-    public int getClientDataVersion() {
-      return clientDataVersion_;
-    }
-
-    public static final int HANDBOOK_URL_FIELD_NUMBER = 16;
-    private volatile java.lang.Object handbookUrl_;
-    /**
-     * <code>string handbook_url = 16;</code>
-     * @return The handbookUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getHandbookUrl() {
-      java.lang.Object ref = handbookUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        handbookUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string handbook_url = 16;</code>
-     * @return The bytes for handbookUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getHandbookUrlBytes() {
-      java.lang.Object ref = handbookUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        handbookUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER = 18;
-    private int clientSilenceDataVersion_;
-    /**
-     * <code>uint32 client_silence_data_version = 18;</code>
-     * @return The clientSilenceDataVersion.
-     */
-    @java.lang.Override
-    public int getClientSilenceDataVersion() {
-      return clientSilenceDataVersion_;
-    }
-
-    public static final int CLIENT_DATA_MD5_FIELD_NUMBER = 19;
-    private volatile java.lang.Object clientDataMd5_;
-    /**
-     * <code>string client_data_md5 = 19;</code>
-     * @return The clientDataMd5.
-     */
-    @java.lang.Override
-    public java.lang.String getClientDataMd5() {
-      java.lang.Object ref = clientDataMd5_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientDataMd5_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string client_data_md5 = 19;</code>
-     * @return The bytes for clientDataMd5.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientDataMd5Bytes() {
-      java.lang.Object ref = clientDataMd5_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientDataMd5_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_SILENCE_DATA_MD5_FIELD_NUMBER = 20;
-    private volatile java.lang.Object clientSilenceDataMd5_;
-    /**
-     * <code>string client_silence_data_md5 = 20;</code>
-     * @return The clientSilenceDataMd5.
-     */
-    @java.lang.Override
-    public java.lang.String getClientSilenceDataMd5() {
-      java.lang.Object ref = clientSilenceDataMd5_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientSilenceDataMd5_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string client_silence_data_md5 = 20;</code>
-     * @return The bytes for clientSilenceDataMd5.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientSilenceDataMd5Bytes() {
-      java.lang.Object ref = clientSilenceDataMd5_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientSilenceDataMd5_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 22;
-    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     * @return Whether the resVersionConfig field is set.
-     */
-    @java.lang.Override
-    public boolean hasResVersionConfig() {
-      return resVersionConfig_ != null;
-    }
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     * @return The resVersionConfig.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
-      return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
-    }
-    /**
-     * <code>.ResVersionConfig res_version_config = 22;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
-      return getResVersionConfig();
-    }
-
-    public static final int SECRET_KEY_FIELD_NUMBER = 23;
-    private com.google.protobuf.ByteString secretKey_;
-    /**
-     * <code>bytes secret_key = 23;</code>
-     * @return The secretKey.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSecretKey() {
-      return secretKey_;
-    }
-
-    public static final int OFFICIAL_COMMUNITY_URL_FIELD_NUMBER = 24;
-    private volatile java.lang.Object officialCommunityUrl_;
-    /**
-     * <code>string official_community_url = 24;</code>
-     * @return The officialCommunityUrl.
-     */
-    @java.lang.Override
-    public java.lang.String getOfficialCommunityUrl() {
-      java.lang.Object ref = officialCommunityUrl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        officialCommunityUrl_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string official_community_url = 24;</code>
-     * @return The bytes for officialCommunityUrl.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getOfficialCommunityUrlBytes() {
-      java.lang.Object ref = officialCommunityUrl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        officialCommunityUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_VERSION_SUFFIX_FIELD_NUMBER = 26;
-    private volatile java.lang.Object clientVersionSuffix_;
-    /**
-     * <code>string client_version_suffix = 26;</code>
-     * @return The clientVersionSuffix.
-     */
-    @java.lang.Override
-    public java.lang.String getClientVersionSuffix() {
-      java.lang.Object ref = clientVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientVersionSuffix_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string client_version_suffix = 26;</code>
-     * @return The bytes for clientVersionSuffix.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientVersionSuffixBytes() {
-      java.lang.Object ref = clientVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientVersionSuffix_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER = 27;
-    private volatile java.lang.Object clientSilenceVersionSuffix_;
-    /**
-     * <code>string client_silence_version_suffix = 27;</code>
-     * @return The clientSilenceVersionSuffix.
-     */
-    @java.lang.Override
-    public java.lang.String getClientSilenceVersionSuffix() {
-      java.lang.Object ref = clientSilenceVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientSilenceVersionSuffix_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string client_silence_version_suffix = 27;</code>
-     * @return The bytes for clientSilenceVersionSuffix.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientSilenceVersionSuffixBytes() {
-      java.lang.Object ref = clientSilenceVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientSilenceVersionSuffix_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int USE_GATESERVER_DOMAIN_NAME_FIELD_NUMBER = 28;
-    private boolean useGateserverDomainName_;
-    /**
-     * <code>bool use_gateserver_domain_name = 28;</code>
-     * @return The useGateserverDomainName.
-     */
-    @java.lang.Override
-    public boolean getUseGateserverDomainName() {
-      return useGateserverDomainName_;
-    }
-
-    public static final int GATESERVER_DOMAIN_NAME_FIELD_NUMBER = 29;
-    private volatile java.lang.Object gateserverDomainName_;
-    /**
-     * <code>string gateserver_domain_name = 29;</code>
-     * @return The gateserverDomainName.
-     */
-    @java.lang.Override
-    public java.lang.String getGateserverDomainName() {
-      java.lang.Object ref = gateserverDomainName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gateserverDomainName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string gateserver_domain_name = 29;</code>
-     * @return The bytes for gateserverDomainName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGateserverDomainNameBytes() {
-      java.lang.Object ref = gateserverDomainName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gateserverDomainName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int USER_CENTER_URL_FIELD_NUMBER = 30;
     private volatile java.lang.Object userCenterUrl_;
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>string user_center_url = 30;</code>
      * @return The userCenterUrl.
      */
@@ -1353,6 +896,10 @@ public final class RegionInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 32
+     * </pre>
+     *
      * <code>string user_center_url = 30;</code>
      * @return The bytes for userCenterUrl.
      */
@@ -1371,38 +918,138 @@ public final class RegionInfoOuterClass {
       }
     }
 
-    public static final int ACCOUNT_BIND_URL_FIELD_NUMBER = 31;
-    private volatile java.lang.Object accountBindUrl_;
+    public static final int DATA_URL_BAK_FIELD_NUMBER = 13;
+    private volatile java.lang.Object dataUrlBak_;
     /**
-     * <code>string account_bind_url = 31;</code>
-     * @return The accountBindUrl.
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>string data_url_bak = 13;</code>
+     * @return The dataUrlBak.
      */
     @java.lang.Override
-    public java.lang.String getAccountBindUrl() {
-      java.lang.Object ref = accountBindUrl_;
+    public java.lang.String getDataUrlBak() {
+      java.lang.Object ref = dataUrlBak_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        accountBindUrl_ = s;
+        dataUrlBak_ = s;
         return s;
       }
     }
     /**
-     * <code>string account_bind_url = 31;</code>
-     * @return The bytes for accountBindUrl.
+     * <pre>
+     *6.3.0 // offset: 40
+     * </pre>
+     *
+     * <code>string data_url_bak = 13;</code>
+     * @return The bytes for dataUrlBak.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getAccountBindUrlBytes() {
-      java.lang.Object ref = accountBindUrl_;
+        getDataUrlBakBytes() {
+      java.lang.Object ref = dataUrlBak_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        accountBindUrl_ = b;
+        dataUrlBak_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER = 27;
+    private volatile java.lang.Object clientSilenceVersionSuffix_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>string client_silence_version_suffix = 27;</code>
+     * @return The clientSilenceVersionSuffix.
+     */
+    @java.lang.Override
+    public java.lang.String getClientSilenceVersionSuffix() {
+      java.lang.Object ref = clientSilenceVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientSilenceVersionSuffix_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 48
+     * </pre>
+     *
+     * <code>string client_silence_version_suffix = 27;</code>
+     * @return The bytes for clientSilenceVersionSuffix.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientSilenceVersionSuffixBytes() {
+      java.lang.Object ref = clientSilenceVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientSilenceVersionSuffix_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int OFFICIAL_COMMUNITY_URL_FIELD_NUMBER = 24;
+    private volatile java.lang.Object officialCommunityUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>string official_community_url = 24;</code>
+     * @return The officialCommunityUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getOfficialCommunityUrl() {
+      java.lang.Object ref = officialCommunityUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        officialCommunityUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 56
+     * </pre>
+     *
+     * <code>string official_community_url = 24;</code>
+     * @return The bytes for officialCommunityUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getOfficialCommunityUrlBytes() {
+      java.lang.Object ref = officialCommunityUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        officialCommunityUrl_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1412,6 +1059,10 @@ public final class RegionInfoOuterClass {
     public static final int CDKEY_URL_FIELD_NUMBER = 32;
     private volatile java.lang.Object cdkeyUrl_;
     /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
      * <code>string cdkey_url = 32;</code>
      * @return The cdkeyUrl.
      */
@@ -1429,6 +1080,10 @@ public final class RegionInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 64
+     * </pre>
+     *
      * <code>string cdkey_url = 32;</code>
      * @return The bytes for cdkeyUrl.
      */
@@ -1447,9 +1102,235 @@ public final class RegionInfoOuterClass {
       }
     }
 
+    public static final int DATA_URL_FIELD_NUMBER = 9;
+    private volatile java.lang.Object dataUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>string data_url = 9;</code>
+     * @return The dataUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getDataUrl() {
+      java.lang.Object ref = dataUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        dataUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 72
+     * </pre>
+     *
+     * <code>string data_url = 9;</code>
+     * @return The bytes for dataUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDataUrlBytes() {
+      java.lang.Object ref = dataUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        dataUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_SILENCE_DATA_MD5_FIELD_NUMBER = 20;
+    private volatile java.lang.Object clientSilenceDataMd5_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 80
+     * </pre>
+     *
+     * <code>string client_silence_data_md5 = 20;</code>
+     * @return The clientSilenceDataMd5.
+     */
+    @java.lang.Override
+    public java.lang.String getClientSilenceDataMd5() {
+      java.lang.Object ref = clientSilenceDataMd5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientSilenceDataMd5_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 80
+     * </pre>
+     *
+     * <code>string client_silence_data_md5 = 20;</code>
+     * @return The bytes for clientSilenceDataMd5.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientSilenceDataMd5Bytes() {
+      java.lang.Object ref = clientSilenceDataMd5_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientSilenceDataMd5_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_DATA_MD5_FIELD_NUMBER = 19;
+    private volatile java.lang.Object clientDataMd5_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>string client_data_md5 = 19;</code>
+     * @return The clientDataMd5.
+     */
+    @java.lang.Override
+    public java.lang.String getClientDataMd5() {
+      java.lang.Object ref = clientDataMd5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientDataMd5_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 88
+     * </pre>
+     *
+     * <code>string client_data_md5 = 19;</code>
+     * @return The bytes for clientDataMd5.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientDataMd5Bytes() {
+      java.lang.Object ref = clientDataMd5_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientDataMd5_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 22;
+    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     * @return Whether the resVersionConfig field is set.
+     */
+    @java.lang.Override
+    public boolean hasResVersionConfig() {
+      return resVersionConfig_ != null;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     * @return The resVersionConfig.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
+      return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 96
+     * </pre>
+     *
+     * <code>.ResVersionConfig res_version_config = 22;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
+      return getResVersionConfig();
+    }
+
+    public static final int GATESERVER_DOMAIN_NAME_FIELD_NUMBER = 29;
+    private volatile java.lang.Object gateserverDomainName_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 104
+     * </pre>
+     *
+     * <code>string gateserver_domain_name = 29;</code>
+     * @return The gateserverDomainName.
+     */
+    @java.lang.Override
+    public java.lang.String getGateserverDomainName() {
+      java.lang.Object ref = gateserverDomainName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        gateserverDomainName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 104
+     * </pre>
+     *
+     * <code>string gateserver_domain_name = 29;</code>
+     * @return The bytes for gateserverDomainName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getGateserverDomainNameBytes() {
+      java.lang.Object ref = gateserverDomainName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        gateserverDomainName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     public static final int PRIVACY_POLICY_URL_FIELD_NUMBER = 33;
     private volatile java.lang.Object privacyPolicyUrl_;
     /**
+     * <pre>
+     *6.3.0 // offset: 112
+     * </pre>
+     *
      * <code>string privacy_policy_url = 33;</code>
      * @return The privacyPolicyUrl.
      */
@@ -1467,6 +1348,10 @@ public final class RegionInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 112
+     * </pre>
+     *
      * <code>string privacy_policy_url = 33;</code>
      * @return The bytes for privacyPolicyUrl.
      */
@@ -1485,9 +1370,296 @@ public final class RegionInfoOuterClass {
       }
     }
 
+    public static final int SECRET_KEY_FIELD_NUMBER = 23;
+    private com.google.protobuf.ByteString secretKey_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 120
+     * </pre>
+     *
+     * <code>bytes secret_key = 23;</code>
+     * @return The secretKey.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSecretKey() {
+      return secretKey_;
+    }
+
+    public static final int GATESERVER_IP_FIELD_NUMBER = 1;
+    private volatile java.lang.Object gateserverIp_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 128
+     * </pre>
+     *
+     * <code>string gateserver_ip = 1;</code>
+     * @return The gateserverIp.
+     */
+    @java.lang.Override
+    public java.lang.String getGateserverIp() {
+      java.lang.Object ref = gateserverIp_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        gateserverIp_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 128
+     * </pre>
+     *
+     * <code>string gateserver_ip = 1;</code>
+     * @return The bytes for gateserverIp.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getGateserverIpBytes() {
+      java.lang.Object ref = gateserverIp_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        gateserverIp_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int NEXT_RES_VERSION_CONFIG_FIELD_NUMBER = 35;
+    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     * @return Whether the nextResVersionConfig field is set.
+     */
+    @java.lang.Override
+    public boolean hasNextResVersionConfig() {
+      return nextResVersionConfig_ != null;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     * @return The nextResVersionConfig.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
+      return nextResVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 136
+     * </pre>
+     *
+     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
+      return getNextResVersionConfig();
+    }
+
+    public static final int PAY_CALLBACK_URL_FIELD_NUMBER = 3;
+    private volatile java.lang.Object payCallbackUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 144
+     * </pre>
+     *
+     * <code>string pay_callback_url = 3;</code>
+     * @return The payCallbackUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getPayCallbackUrl() {
+      java.lang.Object ref = payCallbackUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        payCallbackUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 144
+     * </pre>
+     *
+     * <code>string pay_callback_url = 3;</code>
+     * @return The bytes for payCallbackUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPayCallbackUrlBytes() {
+      java.lang.Object ref = payCallbackUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        payCallbackUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int RESOURCE_URL_BAK_FIELD_NUMBER = 12;
+    private volatile java.lang.Object resourceUrlBak_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 152
+     * </pre>
+     *
+     * <code>string resource_url_bak = 12;</code>
+     * @return The resourceUrlBak.
+     */
+    @java.lang.Override
+    public java.lang.String getResourceUrlBak() {
+      java.lang.Object ref = resourceUrlBak_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        resourceUrlBak_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 152
+     * </pre>
+     *
+     * <code>string resource_url_bak = 12;</code>
+     * @return The bytes for resourceUrlBak.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getResourceUrlBakBytes() {
+      java.lang.Object ref = resourceUrlBak_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        resourceUrlBak_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int BULLETIN_URL_FIELD_NUMBER = 11;
+    private volatile java.lang.Object bulletinUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 160
+     * </pre>
+     *
+     * <code>string bulletin_url = 11;</code>
+     * @return The bulletinUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getBulletinUrl() {
+      java.lang.Object ref = bulletinUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        bulletinUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 160
+     * </pre>
+     *
+     * <code>string bulletin_url = 11;</code>
+     * @return The bytes for bulletinUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getBulletinUrlBytes() {
+      java.lang.Object ref = bulletinUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        bulletinUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LOOMGINGEON_FIELD_NUMBER = 37;
+    private volatile java.lang.Object lOOMGINGEON_;
+    /**
+     * <pre>
+     * offset: 168
+     * </pre>
+     *
+     * <code>string LOOMGINGEON = 37;</code>
+     * @return The lOOMGINGEON.
+     */
+    @java.lang.Override
+    public java.lang.String getLOOMGINGEON() {
+      java.lang.Object ref = lOOMGINGEON_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        lOOMGINGEON_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * offset: 168
+     * </pre>
+     *
+     * <code>string LOOMGINGEON = 37;</code>
+     * @return The bytes for lOOMGINGEON.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getLOOMGINGEONBytes() {
+      java.lang.Object ref = lOOMGINGEON_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        lOOMGINGEON_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     public static final int NEXT_RESOURCE_URL_FIELD_NUMBER = 34;
     private volatile java.lang.Object nextResourceUrl_;
     /**
+     * <pre>
+     *6.3.0 // offset: 176
+     * </pre>
+     *
      * <code>string next_resource_url = 34;</code>
      * @return The nextResourceUrl.
      */
@@ -1505,6 +1677,10 @@ public final class RegionInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 176
+     * </pre>
+     *
      * <code>string next_resource_url = 34;</code>
      * @return The bytes for nextResourceUrl.
      */
@@ -1523,35 +1699,289 @@ public final class RegionInfoOuterClass {
       }
     }
 
-    public static final int NEXT_RES_VERSION_CONFIG_FIELD_NUMBER = 35;
-    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
+    public static final int RESOURCE_URL_FIELD_NUMBER = 8;
+    private volatile java.lang.Object resourceUrl_;
     /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
-     * @return Whether the nextResVersionConfig field is set.
+     * <pre>
+     *6.3.0 // offset: 184
+     * </pre>
+     *
+     * <code>string resource_url = 8;</code>
+     * @return The resourceUrl.
      */
     @java.lang.Override
-    public boolean hasNextResVersionConfig() {
-      return nextResVersionConfig_ != null;
+    public java.lang.String getResourceUrl() {
+      java.lang.Object ref = resourceUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        resourceUrl_ = s;
+        return s;
+      }
     }
     /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
-     * @return The nextResVersionConfig.
+     * <pre>
+     *6.3.0 // offset: 184
+     * </pre>
+     *
+     * <code>string resource_url = 8;</code>
+     * @return The bytes for resourceUrl.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
-      return nextResVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+    public com.google.protobuf.ByteString
+        getResourceUrlBytes() {
+      java.lang.Object ref = resourceUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        resourceUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ACCOUNT_BIND_URL_FIELD_NUMBER = 31;
+    private volatile java.lang.Object accountBindUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 192
+     * </pre>
+     *
+     * <code>string account_bind_url = 31;</code>
+     * @return The accountBindUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getAccountBindUrl() {
+      java.lang.Object ref = accountBindUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        accountBindUrl_ = s;
+        return s;
+      }
     }
     /**
-     * <code>.ResVersionConfig next_res_version_config = 35;</code>
+     * <pre>
+     *6.3.0 // offset: 192
+     * </pre>
+     *
+     * <code>string account_bind_url = 31;</code>
+     * @return The bytes for accountBindUrl.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
-      return getNextResVersionConfig();
+    public com.google.protobuf.ByteString
+        getAccountBindUrlBytes() {
+      java.lang.Object ref = accountBindUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        accountBindUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_VERSION_SUFFIX_FIELD_NUMBER = 26;
+    private volatile java.lang.Object clientVersionSuffix_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 200
+     * </pre>
+     *
+     * <code>string client_version_suffix = 26;</code>
+     * @return The clientVersionSuffix.
+     */
+    @java.lang.Override
+    public java.lang.String getClientVersionSuffix() {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientVersionSuffix_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 200
+     * </pre>
+     *
+     * <code>string client_version_suffix = 26;</code>
+     * @return The bytes for clientVersionSuffix.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientVersionSuffixBytes() {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientVersionSuffix_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int AREA_TYPE_FIELD_NUMBER = 7;
+    private volatile java.lang.Object areaType_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 208
+     * </pre>
+     *
+     * <code>string area_type = 7;</code>
+     * @return The areaType.
+     */
+    @java.lang.Override
+    public java.lang.String getAreaType() {
+      java.lang.Object ref = areaType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        areaType_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 208
+     * </pre>
+     *
+     * <code>string area_type = 7;</code>
+     * @return The bytes for areaType.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getAreaTypeBytes() {
+      java.lang.Object ref = areaType_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        areaType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FEEDBACK_URL_FIELD_NUMBER = 10;
+    private volatile java.lang.Object feedbackUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 216
+     * </pre>
+     *
+     * <code>string feedback_url = 10;</code>
+     * @return The feedbackUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getFeedbackUrl() {
+      java.lang.Object ref = feedbackUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        feedbackUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 216
+     * </pre>
+     *
+     * <code>string feedback_url = 10;</code>
+     * @return The bytes for feedbackUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getFeedbackUrlBytes() {
+      java.lang.Object ref = feedbackUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        feedbackUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int HANDBOOK_URL_FIELD_NUMBER = 16;
+    private volatile java.lang.Object handbookUrl_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 224
+     * </pre>
+     *
+     * <code>string handbook_url = 16;</code>
+     * @return The handbookUrl.
+     */
+    @java.lang.Override
+    public java.lang.String getHandbookUrl() {
+      java.lang.Object ref = handbookUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        handbookUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.3.0 // offset: 224
+     * </pre>
+     *
+     * <code>string handbook_url = 16;</code>
+     * @return The bytes for handbookUrl.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getHandbookUrlBytes() {
+      java.lang.Object ref = handbookUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        handbookUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int GAME_BIZ_FIELD_NUMBER = 36;
     private volatile java.lang.Object gameBiz_;
     /**
+     * <pre>
+     *6.3.0 // offset: 232
+     * </pre>
+     *
      * <code>string game_biz = 36;</code>
      * @return The gameBiz.
      */
@@ -1569,6 +1999,10 @@ public final class RegionInfoOuterClass {
       }
     }
     /**
+     * <pre>
+     *6.3.0 // offset: 232
+     * </pre>
+     *
      * <code>string game_biz = 36;</code>
      * @return The bytes for gameBiz.
      */
@@ -1587,42 +2021,64 @@ public final class RegionInfoOuterClass {
       }
     }
 
-    public static final int GATESERVER_IPV6_IP_FIELD_NUMBER = 37;
-    private volatile java.lang.Object gateserverIpv6Ip_;
+    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 14;
+    private int clientDataVersion_;
     /**
-     * <code>string gateserver_ipv6_ip = 37;</code>
-     * @return The gateserverIpv6Ip.
+     * <pre>
+     *6.3.0 // offset: 240
+     * </pre>
+     *
+     * <code>uint32 client_data_version = 14;</code>
+     * @return The clientDataVersion.
      */
     @java.lang.Override
-    public java.lang.String getGateserverIpv6Ip() {
-      java.lang.Object ref = gateserverIpv6Ip_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        gateserverIpv6Ip_ = s;
-        return s;
-      }
+    public int getClientDataVersion() {
+      return clientDataVersion_;
     }
+
+    public static final int CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER = 18;
+    private int clientSilenceDataVersion_;
     /**
-     * <code>string gateserver_ipv6_ip = 37;</code>
-     * @return The bytes for gateserverIpv6Ip.
+     * <pre>
+     *6.3.0 // offset: 244
+     * </pre>
+     *
+     * <code>uint32 client_silence_data_version = 18;</code>
+     * @return The clientSilenceDataVersion.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getGateserverIpv6IpBytes() {
-      java.lang.Object ref = gateserverIpv6Ip_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        gateserverIpv6Ip_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getClientSilenceDataVersion() {
+      return clientSilenceDataVersion_;
+    }
+
+    public static final int GATESERVER_PORT_FIELD_NUMBER = 2;
+    private int gateserverPort_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 248
+     * </pre>
+     *
+     * <code>uint32 gateserver_port = 2;</code>
+     * @return The gateserverPort.
+     */
+    @java.lang.Override
+    public int getGateserverPort() {
+      return gateserverPort_;
+    }
+
+    public static final int USE_GATESERVER_DOMAIN_NAME_FIELD_NUMBER = 28;
+    private boolean useGateserverDomainName_;
+    /**
+     * <pre>
+     *6.3.0 // offset: 252
+     * </pre>
+     *
+     * <code>bool use_gateserver_domain_name = 28;</code>
+     * @return The useGateserverDomainName.
+     */
+    @java.lang.Override
+    public boolean getUseGateserverDomainName() {
+      return useGateserverDomainName_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1726,8 +2182,8 @@ public final class RegionInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gameBiz_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 36, gameBiz_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gateserverIpv6Ip_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 37, gateserverIpv6Ip_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lOOMGINGEON_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 37, lOOMGINGEON_);
       }
       unknownFields.writeTo(output);
     }
@@ -1832,8 +2288,8 @@ public final class RegionInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gameBiz_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(36, gameBiz_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gateserverIpv6Ip_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(37, gateserverIpv6Ip_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lOOMGINGEON_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(37, lOOMGINGEON_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1850,72 +2306,72 @@ public final class RegionInfoOuterClass {
       }
       emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo other = (emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo) obj;
 
-      if (!getGateserverIp()
-          .equals(other.getGateserverIp())) return false;
-      if (getGateserverPort()
-          != other.getGateserverPort()) return false;
-      if (!getPayCallbackUrl()
-          .equals(other.getPayCallbackUrl())) return false;
-      if (!getAreaType()
-          .equals(other.getAreaType())) return false;
-      if (!getResourceUrl()
-          .equals(other.getResourceUrl())) return false;
-      if (!getDataUrl()
-          .equals(other.getDataUrl())) return false;
-      if (!getFeedbackUrl()
-          .equals(other.getFeedbackUrl())) return false;
-      if (!getBulletinUrl()
-          .equals(other.getBulletinUrl())) return false;
-      if (!getResourceUrlBak()
-          .equals(other.getResourceUrlBak())) return false;
+      if (!getUserCenterUrl()
+          .equals(other.getUserCenterUrl())) return false;
       if (!getDataUrlBak()
           .equals(other.getDataUrlBak())) return false;
-      if (getClientDataVersion()
-          != other.getClientDataVersion()) return false;
-      if (!getHandbookUrl()
-          .equals(other.getHandbookUrl())) return false;
-      if (getClientSilenceDataVersion()
-          != other.getClientSilenceDataVersion()) return false;
-      if (!getClientDataMd5()
-          .equals(other.getClientDataMd5())) return false;
+      if (!getClientSilenceVersionSuffix()
+          .equals(other.getClientSilenceVersionSuffix())) return false;
+      if (!getOfficialCommunityUrl()
+          .equals(other.getOfficialCommunityUrl())) return false;
+      if (!getCdkeyUrl()
+          .equals(other.getCdkeyUrl())) return false;
+      if (!getDataUrl()
+          .equals(other.getDataUrl())) return false;
       if (!getClientSilenceDataMd5()
           .equals(other.getClientSilenceDataMd5())) return false;
+      if (!getClientDataMd5()
+          .equals(other.getClientDataMd5())) return false;
       if (hasResVersionConfig() != other.hasResVersionConfig()) return false;
       if (hasResVersionConfig()) {
         if (!getResVersionConfig()
             .equals(other.getResVersionConfig())) return false;
       }
-      if (!getSecretKey()
-          .equals(other.getSecretKey())) return false;
-      if (!getOfficialCommunityUrl()
-          .equals(other.getOfficialCommunityUrl())) return false;
-      if (!getClientVersionSuffix()
-          .equals(other.getClientVersionSuffix())) return false;
-      if (!getClientSilenceVersionSuffix()
-          .equals(other.getClientSilenceVersionSuffix())) return false;
-      if (getUseGateserverDomainName()
-          != other.getUseGateserverDomainName()) return false;
       if (!getGateserverDomainName()
           .equals(other.getGateserverDomainName())) return false;
-      if (!getUserCenterUrl()
-          .equals(other.getUserCenterUrl())) return false;
-      if (!getAccountBindUrl()
-          .equals(other.getAccountBindUrl())) return false;
-      if (!getCdkeyUrl()
-          .equals(other.getCdkeyUrl())) return false;
       if (!getPrivacyPolicyUrl()
           .equals(other.getPrivacyPolicyUrl())) return false;
-      if (!getNextResourceUrl()
-          .equals(other.getNextResourceUrl())) return false;
+      if (!getSecretKey()
+          .equals(other.getSecretKey())) return false;
+      if (!getGateserverIp()
+          .equals(other.getGateserverIp())) return false;
       if (hasNextResVersionConfig() != other.hasNextResVersionConfig()) return false;
       if (hasNextResVersionConfig()) {
         if (!getNextResVersionConfig()
             .equals(other.getNextResVersionConfig())) return false;
       }
+      if (!getPayCallbackUrl()
+          .equals(other.getPayCallbackUrl())) return false;
+      if (!getResourceUrlBak()
+          .equals(other.getResourceUrlBak())) return false;
+      if (!getBulletinUrl()
+          .equals(other.getBulletinUrl())) return false;
+      if (!getLOOMGINGEON()
+          .equals(other.getLOOMGINGEON())) return false;
+      if (!getNextResourceUrl()
+          .equals(other.getNextResourceUrl())) return false;
+      if (!getResourceUrl()
+          .equals(other.getResourceUrl())) return false;
+      if (!getAccountBindUrl()
+          .equals(other.getAccountBindUrl())) return false;
+      if (!getClientVersionSuffix()
+          .equals(other.getClientVersionSuffix())) return false;
+      if (!getAreaType()
+          .equals(other.getAreaType())) return false;
+      if (!getFeedbackUrl()
+          .equals(other.getFeedbackUrl())) return false;
+      if (!getHandbookUrl()
+          .equals(other.getHandbookUrl())) return false;
       if (!getGameBiz()
           .equals(other.getGameBiz())) return false;
-      if (!getGateserverIpv6Ip()
-          .equals(other.getGateserverIpv6Ip())) return false;
+      if (getClientDataVersion()
+          != other.getClientDataVersion()) return false;
+      if (getClientSilenceDataVersion()
+          != other.getClientSilenceDataVersion()) return false;
+      if (getGateserverPort()
+          != other.getGateserverPort()) return false;
+      if (getUseGateserverDomainName()
+          != other.getUseGateserverDomainName()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1927,71 +2383,71 @@ public final class RegionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GATESERVER_IP_FIELD_NUMBER;
-      hash = (53 * hash) + getGateserverIp().hashCode();
-      hash = (37 * hash) + GATESERVER_PORT_FIELD_NUMBER;
-      hash = (53 * hash) + getGateserverPort();
-      hash = (37 * hash) + PAY_CALLBACK_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getPayCallbackUrl().hashCode();
-      hash = (37 * hash) + AREA_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getAreaType().hashCode();
-      hash = (37 * hash) + RESOURCE_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getResourceUrl().hashCode();
-      hash = (37 * hash) + DATA_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getDataUrl().hashCode();
-      hash = (37 * hash) + FEEDBACK_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getFeedbackUrl().hashCode();
-      hash = (37 * hash) + BULLETIN_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getBulletinUrl().hashCode();
-      hash = (37 * hash) + RESOURCE_URL_BAK_FIELD_NUMBER;
-      hash = (53 * hash) + getResourceUrlBak().hashCode();
+      hash = (37 * hash) + USER_CENTER_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getUserCenterUrl().hashCode();
       hash = (37 * hash) + DATA_URL_BAK_FIELD_NUMBER;
       hash = (53 * hash) + getDataUrlBak().hashCode();
-      hash = (37 * hash) + CLIENT_DATA_VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getClientDataVersion();
-      hash = (37 * hash) + HANDBOOK_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getHandbookUrl().hashCode();
-      hash = (37 * hash) + CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getClientSilenceDataVersion();
-      hash = (37 * hash) + CLIENT_DATA_MD5_FIELD_NUMBER;
-      hash = (53 * hash) + getClientDataMd5().hashCode();
+      hash = (37 * hash) + CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER;
+      hash = (53 * hash) + getClientSilenceVersionSuffix().hashCode();
+      hash = (37 * hash) + OFFICIAL_COMMUNITY_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getOfficialCommunityUrl().hashCode();
+      hash = (37 * hash) + CDKEY_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getCdkeyUrl().hashCode();
+      hash = (37 * hash) + DATA_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getDataUrl().hashCode();
       hash = (37 * hash) + CLIENT_SILENCE_DATA_MD5_FIELD_NUMBER;
       hash = (53 * hash) + getClientSilenceDataMd5().hashCode();
+      hash = (37 * hash) + CLIENT_DATA_MD5_FIELD_NUMBER;
+      hash = (53 * hash) + getClientDataMd5().hashCode();
       if (hasResVersionConfig()) {
         hash = (37 * hash) + RES_VERSION_CONFIG_FIELD_NUMBER;
         hash = (53 * hash) + getResVersionConfig().hashCode();
       }
-      hash = (37 * hash) + SECRET_KEY_FIELD_NUMBER;
-      hash = (53 * hash) + getSecretKey().hashCode();
-      hash = (37 * hash) + OFFICIAL_COMMUNITY_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getOfficialCommunityUrl().hashCode();
-      hash = (37 * hash) + CLIENT_VERSION_SUFFIX_FIELD_NUMBER;
-      hash = (53 * hash) + getClientVersionSuffix().hashCode();
-      hash = (37 * hash) + CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER;
-      hash = (53 * hash) + getClientSilenceVersionSuffix().hashCode();
-      hash = (37 * hash) + USE_GATESERVER_DOMAIN_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUseGateserverDomainName());
       hash = (37 * hash) + GATESERVER_DOMAIN_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getGateserverDomainName().hashCode();
-      hash = (37 * hash) + USER_CENTER_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getUserCenterUrl().hashCode();
-      hash = (37 * hash) + ACCOUNT_BIND_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getAccountBindUrl().hashCode();
-      hash = (37 * hash) + CDKEY_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getCdkeyUrl().hashCode();
       hash = (37 * hash) + PRIVACY_POLICY_URL_FIELD_NUMBER;
       hash = (53 * hash) + getPrivacyPolicyUrl().hashCode();
-      hash = (37 * hash) + NEXT_RESOURCE_URL_FIELD_NUMBER;
-      hash = (53 * hash) + getNextResourceUrl().hashCode();
+      hash = (37 * hash) + SECRET_KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getSecretKey().hashCode();
+      hash = (37 * hash) + GATESERVER_IP_FIELD_NUMBER;
+      hash = (53 * hash) + getGateserverIp().hashCode();
       if (hasNextResVersionConfig()) {
         hash = (37 * hash) + NEXT_RES_VERSION_CONFIG_FIELD_NUMBER;
         hash = (53 * hash) + getNextResVersionConfig().hashCode();
       }
+      hash = (37 * hash) + PAY_CALLBACK_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getPayCallbackUrl().hashCode();
+      hash = (37 * hash) + RESOURCE_URL_BAK_FIELD_NUMBER;
+      hash = (53 * hash) + getResourceUrlBak().hashCode();
+      hash = (37 * hash) + BULLETIN_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getBulletinUrl().hashCode();
+      hash = (37 * hash) + LOOMGINGEON_FIELD_NUMBER;
+      hash = (53 * hash) + getLOOMGINGEON().hashCode();
+      hash = (37 * hash) + NEXT_RESOURCE_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getNextResourceUrl().hashCode();
+      hash = (37 * hash) + RESOURCE_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getResourceUrl().hashCode();
+      hash = (37 * hash) + ACCOUNT_BIND_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getAccountBindUrl().hashCode();
+      hash = (37 * hash) + CLIENT_VERSION_SUFFIX_FIELD_NUMBER;
+      hash = (53 * hash) + getClientVersionSuffix().hashCode();
+      hash = (37 * hash) + AREA_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAreaType().hashCode();
+      hash = (37 * hash) + FEEDBACK_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getFeedbackUrl().hashCode();
+      hash = (37 * hash) + HANDBOOK_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getHandbookUrl().hashCode();
       hash = (37 * hash) + GAME_BIZ_FIELD_NUMBER;
       hash = (53 * hash) + getGameBiz().hashCode();
-      hash = (37 * hash) + GATESERVER_IPV6_IP_FIELD_NUMBER;
-      hash = (53 * hash) + getGateserverIpv6Ip().hashCode();
+      hash = (37 * hash) + CLIENT_DATA_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getClientDataVersion();
+      hash = (37 * hash) + CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getClientSilenceDataVersion();
+      hash = (37 * hash) + GATESERVER_PORT_FIELD_NUMBER;
+      hash = (53 * hash) + getGateserverPort();
+      hash = (37 * hash) + USE_GATESERVER_DOMAIN_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUseGateserverDomainName());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2125,35 +2581,21 @@ public final class RegionInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gateserverIp_ = "";
-
-        gateserverPort_ = 0;
-
-        payCallbackUrl_ = "";
-
-        areaType_ = "";
-
-        resourceUrl_ = "";
-
-        dataUrl_ = "";
-
-        feedbackUrl_ = "";
-
-        bulletinUrl_ = "";
-
-        resourceUrlBak_ = "";
+        userCenterUrl_ = "";
 
         dataUrlBak_ = "";
 
-        clientDataVersion_ = 0;
+        clientSilenceVersionSuffix_ = "";
 
-        handbookUrl_ = "";
+        officialCommunityUrl_ = "";
 
-        clientSilenceDataVersion_ = 0;
+        cdkeyUrl_ = "";
 
-        clientDataMd5_ = "";
+        dataUrl_ = "";
 
         clientSilenceDataMd5_ = "";
+
+        clientDataMd5_ = "";
 
         if (resVersionConfigBuilder_ == null) {
           resVersionConfig_ = null;
@@ -2161,27 +2603,13 @@ public final class RegionInfoOuterClass {
           resVersionConfig_ = null;
           resVersionConfigBuilder_ = null;
         }
-        secretKey_ = com.google.protobuf.ByteString.EMPTY;
-
-        officialCommunityUrl_ = "";
-
-        clientVersionSuffix_ = "";
-
-        clientSilenceVersionSuffix_ = "";
-
-        useGateserverDomainName_ = false;
-
         gateserverDomainName_ = "";
-
-        userCenterUrl_ = "";
-
-        accountBindUrl_ = "";
-
-        cdkeyUrl_ = "";
 
         privacyPolicyUrl_ = "";
 
-        nextResourceUrl_ = "";
+        secretKey_ = com.google.protobuf.ByteString.EMPTY;
+
+        gateserverIp_ = "";
 
         if (nextResVersionConfigBuilder_ == null) {
           nextResVersionConfig_ = null;
@@ -2189,9 +2617,37 @@ public final class RegionInfoOuterClass {
           nextResVersionConfig_ = null;
           nextResVersionConfigBuilder_ = null;
         }
+        payCallbackUrl_ = "";
+
+        resourceUrlBak_ = "";
+
+        bulletinUrl_ = "";
+
+        lOOMGINGEON_ = "";
+
+        nextResourceUrl_ = "";
+
+        resourceUrl_ = "";
+
+        accountBindUrl_ = "";
+
+        clientVersionSuffix_ = "";
+
+        areaType_ = "";
+
+        feedbackUrl_ = "";
+
+        handbookUrl_ = "";
+
         gameBiz_ = "";
 
-        gateserverIpv6Ip_ = "";
+        clientDataVersion_ = 0;
+
+        clientSilenceDataVersion_ = 0;
+
+        gateserverPort_ = 0;
+
+        useGateserverDomainName_ = false;
 
         return this;
       }
@@ -2219,44 +2675,44 @@ public final class RegionInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo buildPartial() {
         emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo result = new emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo(this);
-        result.gateserverIp_ = gateserverIp_;
-        result.gateserverPort_ = gateserverPort_;
-        result.payCallbackUrl_ = payCallbackUrl_;
-        result.areaType_ = areaType_;
-        result.resourceUrl_ = resourceUrl_;
-        result.dataUrl_ = dataUrl_;
-        result.feedbackUrl_ = feedbackUrl_;
-        result.bulletinUrl_ = bulletinUrl_;
-        result.resourceUrlBak_ = resourceUrlBak_;
+        result.userCenterUrl_ = userCenterUrl_;
         result.dataUrlBak_ = dataUrlBak_;
-        result.clientDataVersion_ = clientDataVersion_;
-        result.handbookUrl_ = handbookUrl_;
-        result.clientSilenceDataVersion_ = clientSilenceDataVersion_;
-        result.clientDataMd5_ = clientDataMd5_;
+        result.clientSilenceVersionSuffix_ = clientSilenceVersionSuffix_;
+        result.officialCommunityUrl_ = officialCommunityUrl_;
+        result.cdkeyUrl_ = cdkeyUrl_;
+        result.dataUrl_ = dataUrl_;
         result.clientSilenceDataMd5_ = clientSilenceDataMd5_;
+        result.clientDataMd5_ = clientDataMd5_;
         if (resVersionConfigBuilder_ == null) {
           result.resVersionConfig_ = resVersionConfig_;
         } else {
           result.resVersionConfig_ = resVersionConfigBuilder_.build();
         }
-        result.secretKey_ = secretKey_;
-        result.officialCommunityUrl_ = officialCommunityUrl_;
-        result.clientVersionSuffix_ = clientVersionSuffix_;
-        result.clientSilenceVersionSuffix_ = clientSilenceVersionSuffix_;
-        result.useGateserverDomainName_ = useGateserverDomainName_;
         result.gateserverDomainName_ = gateserverDomainName_;
-        result.userCenterUrl_ = userCenterUrl_;
-        result.accountBindUrl_ = accountBindUrl_;
-        result.cdkeyUrl_ = cdkeyUrl_;
         result.privacyPolicyUrl_ = privacyPolicyUrl_;
-        result.nextResourceUrl_ = nextResourceUrl_;
+        result.secretKey_ = secretKey_;
+        result.gateserverIp_ = gateserverIp_;
         if (nextResVersionConfigBuilder_ == null) {
           result.nextResVersionConfig_ = nextResVersionConfig_;
         } else {
           result.nextResVersionConfig_ = nextResVersionConfigBuilder_.build();
         }
+        result.payCallbackUrl_ = payCallbackUrl_;
+        result.resourceUrlBak_ = resourceUrlBak_;
+        result.bulletinUrl_ = bulletinUrl_;
+        result.lOOMGINGEON_ = lOOMGINGEON_;
+        result.nextResourceUrl_ = nextResourceUrl_;
+        result.resourceUrl_ = resourceUrl_;
+        result.accountBindUrl_ = accountBindUrl_;
+        result.clientVersionSuffix_ = clientVersionSuffix_;
+        result.areaType_ = areaType_;
+        result.feedbackUrl_ = feedbackUrl_;
+        result.handbookUrl_ = handbookUrl_;
         result.gameBiz_ = gameBiz_;
-        result.gateserverIpv6Ip_ = gateserverIpv6Ip_;
+        result.clientDataVersion_ = clientDataVersion_;
+        result.clientSilenceDataVersion_ = clientSilenceDataVersion_;
+        result.gateserverPort_ = gateserverPort_;
+        result.useGateserverDomainName_ = useGateserverDomainName_;
         onBuilt();
         return result;
       }
@@ -2305,118 +2761,118 @@ public final class RegionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo other) {
         if (other == emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance()) return this;
-        if (!other.getGateserverIp().isEmpty()) {
-          gateserverIp_ = other.gateserverIp_;
-          onChanged();
-        }
-        if (other.getGateserverPort() != 0) {
-          setGateserverPort(other.getGateserverPort());
-        }
-        if (!other.getPayCallbackUrl().isEmpty()) {
-          payCallbackUrl_ = other.payCallbackUrl_;
-          onChanged();
-        }
-        if (!other.getAreaType().isEmpty()) {
-          areaType_ = other.areaType_;
-          onChanged();
-        }
-        if (!other.getResourceUrl().isEmpty()) {
-          resourceUrl_ = other.resourceUrl_;
-          onChanged();
-        }
-        if (!other.getDataUrl().isEmpty()) {
-          dataUrl_ = other.dataUrl_;
-          onChanged();
-        }
-        if (!other.getFeedbackUrl().isEmpty()) {
-          feedbackUrl_ = other.feedbackUrl_;
-          onChanged();
-        }
-        if (!other.getBulletinUrl().isEmpty()) {
-          bulletinUrl_ = other.bulletinUrl_;
-          onChanged();
-        }
-        if (!other.getResourceUrlBak().isEmpty()) {
-          resourceUrlBak_ = other.resourceUrlBak_;
+        if (!other.getUserCenterUrl().isEmpty()) {
+          userCenterUrl_ = other.userCenterUrl_;
           onChanged();
         }
         if (!other.getDataUrlBak().isEmpty()) {
           dataUrlBak_ = other.dataUrlBak_;
           onChanged();
         }
-        if (other.getClientDataVersion() != 0) {
-          setClientDataVersion(other.getClientDataVersion());
-        }
-        if (!other.getHandbookUrl().isEmpty()) {
-          handbookUrl_ = other.handbookUrl_;
-          onChanged();
-        }
-        if (other.getClientSilenceDataVersion() != 0) {
-          setClientSilenceDataVersion(other.getClientSilenceDataVersion());
-        }
-        if (!other.getClientDataMd5().isEmpty()) {
-          clientDataMd5_ = other.clientDataMd5_;
-          onChanged();
-        }
-        if (!other.getClientSilenceDataMd5().isEmpty()) {
-          clientSilenceDataMd5_ = other.clientSilenceDataMd5_;
-          onChanged();
-        }
-        if (other.hasResVersionConfig()) {
-          mergeResVersionConfig(other.getResVersionConfig());
-        }
-        if (other.getSecretKey() != com.google.protobuf.ByteString.EMPTY) {
-          setSecretKey(other.getSecretKey());
-        }
-        if (!other.getOfficialCommunityUrl().isEmpty()) {
-          officialCommunityUrl_ = other.officialCommunityUrl_;
-          onChanged();
-        }
-        if (!other.getClientVersionSuffix().isEmpty()) {
-          clientVersionSuffix_ = other.clientVersionSuffix_;
-          onChanged();
-        }
         if (!other.getClientSilenceVersionSuffix().isEmpty()) {
           clientSilenceVersionSuffix_ = other.clientSilenceVersionSuffix_;
           onChanged();
         }
-        if (other.getUseGateserverDomainName() != false) {
-          setUseGateserverDomainName(other.getUseGateserverDomainName());
-        }
-        if (!other.getGateserverDomainName().isEmpty()) {
-          gateserverDomainName_ = other.gateserverDomainName_;
-          onChanged();
-        }
-        if (!other.getUserCenterUrl().isEmpty()) {
-          userCenterUrl_ = other.userCenterUrl_;
-          onChanged();
-        }
-        if (!other.getAccountBindUrl().isEmpty()) {
-          accountBindUrl_ = other.accountBindUrl_;
+        if (!other.getOfficialCommunityUrl().isEmpty()) {
+          officialCommunityUrl_ = other.officialCommunityUrl_;
           onChanged();
         }
         if (!other.getCdkeyUrl().isEmpty()) {
           cdkeyUrl_ = other.cdkeyUrl_;
           onChanged();
         }
+        if (!other.getDataUrl().isEmpty()) {
+          dataUrl_ = other.dataUrl_;
+          onChanged();
+        }
+        if (!other.getClientSilenceDataMd5().isEmpty()) {
+          clientSilenceDataMd5_ = other.clientSilenceDataMd5_;
+          onChanged();
+        }
+        if (!other.getClientDataMd5().isEmpty()) {
+          clientDataMd5_ = other.clientDataMd5_;
+          onChanged();
+        }
+        if (other.hasResVersionConfig()) {
+          mergeResVersionConfig(other.getResVersionConfig());
+        }
+        if (!other.getGateserverDomainName().isEmpty()) {
+          gateserverDomainName_ = other.gateserverDomainName_;
+          onChanged();
+        }
         if (!other.getPrivacyPolicyUrl().isEmpty()) {
           privacyPolicyUrl_ = other.privacyPolicyUrl_;
+          onChanged();
+        }
+        if (other.getSecretKey() != com.google.protobuf.ByteString.EMPTY) {
+          setSecretKey(other.getSecretKey());
+        }
+        if (!other.getGateserverIp().isEmpty()) {
+          gateserverIp_ = other.gateserverIp_;
+          onChanged();
+        }
+        if (other.hasNextResVersionConfig()) {
+          mergeNextResVersionConfig(other.getNextResVersionConfig());
+        }
+        if (!other.getPayCallbackUrl().isEmpty()) {
+          payCallbackUrl_ = other.payCallbackUrl_;
+          onChanged();
+        }
+        if (!other.getResourceUrlBak().isEmpty()) {
+          resourceUrlBak_ = other.resourceUrlBak_;
+          onChanged();
+        }
+        if (!other.getBulletinUrl().isEmpty()) {
+          bulletinUrl_ = other.bulletinUrl_;
+          onChanged();
+        }
+        if (!other.getLOOMGINGEON().isEmpty()) {
+          lOOMGINGEON_ = other.lOOMGINGEON_;
           onChanged();
         }
         if (!other.getNextResourceUrl().isEmpty()) {
           nextResourceUrl_ = other.nextResourceUrl_;
           onChanged();
         }
-        if (other.hasNextResVersionConfig()) {
-          mergeNextResVersionConfig(other.getNextResVersionConfig());
+        if (!other.getResourceUrl().isEmpty()) {
+          resourceUrl_ = other.resourceUrl_;
+          onChanged();
+        }
+        if (!other.getAccountBindUrl().isEmpty()) {
+          accountBindUrl_ = other.accountBindUrl_;
+          onChanged();
+        }
+        if (!other.getClientVersionSuffix().isEmpty()) {
+          clientVersionSuffix_ = other.clientVersionSuffix_;
+          onChanged();
+        }
+        if (!other.getAreaType().isEmpty()) {
+          areaType_ = other.areaType_;
+          onChanged();
+        }
+        if (!other.getFeedbackUrl().isEmpty()) {
+          feedbackUrl_ = other.feedbackUrl_;
+          onChanged();
+        }
+        if (!other.getHandbookUrl().isEmpty()) {
+          handbookUrl_ = other.handbookUrl_;
+          onChanged();
         }
         if (!other.getGameBiz().isEmpty()) {
           gameBiz_ = other.gameBiz_;
           onChanged();
         }
-        if (!other.getGateserverIpv6Ip().isEmpty()) {
-          gateserverIpv6Ip_ = other.gateserverIpv6Ip_;
-          onChanged();
+        if (other.getClientDataVersion() != 0) {
+          setClientDataVersion(other.getClientDataVersion());
+        }
+        if (other.getClientSilenceDataVersion() != 0) {
+          setClientSilenceDataVersion(other.getClientSilenceDataVersion());
+        }
+        if (other.getGateserverPort() != 0) {
+          setGateserverPort(other.getGateserverPort());
+        }
+        if (other.getUseGateserverDomainName() != false) {
+          setUseGateserverDomainName(other.getUseGateserverDomainName());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2447,647 +2903,108 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object gateserverIp_ = "";
+      private java.lang.Object userCenterUrl_ = "";
       /**
-       * <code>string gateserver_ip = 1;</code>
-       * @return The gateserverIp.
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string user_center_url = 30;</code>
+       * @return The userCenterUrl.
        */
-      public java.lang.String getGateserverIp() {
-        java.lang.Object ref = gateserverIp_;
+      public java.lang.String getUserCenterUrl() {
+        java.lang.Object ref = userCenterUrl_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          gateserverIp_ = s;
+          userCenterUrl_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string gateserver_ip = 1;</code>
-       * @return The bytes for gateserverIp.
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string user_center_url = 30;</code>
+       * @return The bytes for userCenterUrl.
        */
       public com.google.protobuf.ByteString
-          getGateserverIpBytes() {
-        java.lang.Object ref = gateserverIp_;
+          getUserCenterUrlBytes() {
+        java.lang.Object ref = userCenterUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          gateserverIp_ = b;
+          userCenterUrl_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string gateserver_ip = 1;</code>
-       * @param value The gateserverIp to set.
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string user_center_url = 30;</code>
+       * @param value The userCenterUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setGateserverIp(
+      public Builder setUserCenterUrl(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        gateserverIp_ = value;
+        userCenterUrl_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string gateserver_ip = 1;</code>
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string user_center_url = 30;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGateserverIp() {
+      public Builder clearUserCenterUrl() {
         
-        gateserverIp_ = getDefaultInstance().getGateserverIp();
+        userCenterUrl_ = getDefaultInstance().getUserCenterUrl();
         onChanged();
         return this;
       }
       /**
-       * <code>string gateserver_ip = 1;</code>
-       * @param value The bytes for gateserverIp to set.
+       * <pre>
+       *6.3.0 // offset: 32
+       * </pre>
+       *
+       * <code>string user_center_url = 30;</code>
+       * @param value The bytes for userCenterUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setGateserverIpBytes(
+      public Builder setUserCenterUrlBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        gateserverIp_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int gateserverPort_ ;
-      /**
-       * <code>uint32 gateserver_port = 2;</code>
-       * @return The gateserverPort.
-       */
-      @java.lang.Override
-      public int getGateserverPort() {
-        return gateserverPort_;
-      }
-      /**
-       * <code>uint32 gateserver_port = 2;</code>
-       * @param value The gateserverPort to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGateserverPort(int value) {
-        
-        gateserverPort_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gateserver_port = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGateserverPort() {
-        
-        gateserverPort_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object payCallbackUrl_ = "";
-      /**
-       * <code>string pay_callback_url = 3;</code>
-       * @return The payCallbackUrl.
-       */
-      public java.lang.String getPayCallbackUrl() {
-        java.lang.Object ref = payCallbackUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          payCallbackUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string pay_callback_url = 3;</code>
-       * @return The bytes for payCallbackUrl.
-       */
-      public com.google.protobuf.ByteString
-          getPayCallbackUrlBytes() {
-        java.lang.Object ref = payCallbackUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          payCallbackUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string pay_callback_url = 3;</code>
-       * @param value The payCallbackUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPayCallbackUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        payCallbackUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string pay_callback_url = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPayCallbackUrl() {
-        
-        payCallbackUrl_ = getDefaultInstance().getPayCallbackUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string pay_callback_url = 3;</code>
-       * @param value The bytes for payCallbackUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPayCallbackUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        payCallbackUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object areaType_ = "";
-      /**
-       * <code>string area_type = 7;</code>
-       * @return The areaType.
-       */
-      public java.lang.String getAreaType() {
-        java.lang.Object ref = areaType_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          areaType_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string area_type = 7;</code>
-       * @return The bytes for areaType.
-       */
-      public com.google.protobuf.ByteString
-          getAreaTypeBytes() {
-        java.lang.Object ref = areaType_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          areaType_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string area_type = 7;</code>
-       * @param value The areaType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAreaType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        areaType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string area_type = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAreaType() {
-        
-        areaType_ = getDefaultInstance().getAreaType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string area_type = 7;</code>
-       * @param value The bytes for areaType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAreaTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        areaType_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object resourceUrl_ = "";
-      /**
-       * <code>string resource_url = 8;</code>
-       * @return The resourceUrl.
-       */
-      public java.lang.String getResourceUrl() {
-        java.lang.Object ref = resourceUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          resourceUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string resource_url = 8;</code>
-       * @return The bytes for resourceUrl.
-       */
-      public com.google.protobuf.ByteString
-          getResourceUrlBytes() {
-        java.lang.Object ref = resourceUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          resourceUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string resource_url = 8;</code>
-       * @param value The resourceUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResourceUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        resourceUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string resource_url = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearResourceUrl() {
-        
-        resourceUrl_ = getDefaultInstance().getResourceUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string resource_url = 8;</code>
-       * @param value The bytes for resourceUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResourceUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        resourceUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object dataUrl_ = "";
-      /**
-       * <code>string data_url = 9;</code>
-       * @return The dataUrl.
-       */
-      public java.lang.String getDataUrl() {
-        java.lang.Object ref = dataUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          dataUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string data_url = 9;</code>
-       * @return The bytes for dataUrl.
-       */
-      public com.google.protobuf.ByteString
-          getDataUrlBytes() {
-        java.lang.Object ref = dataUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          dataUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string data_url = 9;</code>
-       * @param value The dataUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        dataUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string data_url = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDataUrl() {
-        
-        dataUrl_ = getDefaultInstance().getDataUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string data_url = 9;</code>
-       * @param value The bytes for dataUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        dataUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object feedbackUrl_ = "";
-      /**
-       * <code>string feedback_url = 10;</code>
-       * @return The feedbackUrl.
-       */
-      public java.lang.String getFeedbackUrl() {
-        java.lang.Object ref = feedbackUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          feedbackUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string feedback_url = 10;</code>
-       * @return The bytes for feedbackUrl.
-       */
-      public com.google.protobuf.ByteString
-          getFeedbackUrlBytes() {
-        java.lang.Object ref = feedbackUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          feedbackUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string feedback_url = 10;</code>
-       * @param value The feedbackUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFeedbackUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        feedbackUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string feedback_url = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFeedbackUrl() {
-        
-        feedbackUrl_ = getDefaultInstance().getFeedbackUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string feedback_url = 10;</code>
-       * @param value The bytes for feedbackUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFeedbackUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        feedbackUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object bulletinUrl_ = "";
-      /**
-       * <code>string bulletin_url = 11;</code>
-       * @return The bulletinUrl.
-       */
-      public java.lang.String getBulletinUrl() {
-        java.lang.Object ref = bulletinUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          bulletinUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string bulletin_url = 11;</code>
-       * @return The bytes for bulletinUrl.
-       */
-      public com.google.protobuf.ByteString
-          getBulletinUrlBytes() {
-        java.lang.Object ref = bulletinUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          bulletinUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string bulletin_url = 11;</code>
-       * @param value The bulletinUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBulletinUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        bulletinUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string bulletin_url = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBulletinUrl() {
-        
-        bulletinUrl_ = getDefaultInstance().getBulletinUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string bulletin_url = 11;</code>
-       * @param value The bytes for bulletinUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBulletinUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        bulletinUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object resourceUrlBak_ = "";
-      /**
-       * <code>string resource_url_bak = 12;</code>
-       * @return The resourceUrlBak.
-       */
-      public java.lang.String getResourceUrlBak() {
-        java.lang.Object ref = resourceUrlBak_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          resourceUrlBak_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string resource_url_bak = 12;</code>
-       * @return The bytes for resourceUrlBak.
-       */
-      public com.google.protobuf.ByteString
-          getResourceUrlBakBytes() {
-        java.lang.Object ref = resourceUrlBak_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          resourceUrlBak_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string resource_url_bak = 12;</code>
-       * @param value The resourceUrlBak to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResourceUrlBak(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        resourceUrlBak_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string resource_url_bak = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearResourceUrlBak() {
-        
-        resourceUrlBak_ = getDefaultInstance().getResourceUrlBak();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string resource_url_bak = 12;</code>
-       * @param value The bytes for resourceUrlBak to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResourceUrlBakBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        resourceUrlBak_ = value;
+        userCenterUrl_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object dataUrlBak_ = "";
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>string data_url_bak = 13;</code>
        * @return The dataUrlBak.
        */
@@ -3104,6 +3021,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>string data_url_bak = 13;</code>
        * @return The bytes for dataUrlBak.
        */
@@ -3121,6 +3042,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>string data_url_bak = 13;</code>
        * @param value The dataUrlBak to set.
        * @return This builder for chaining.
@@ -3136,6 +3061,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>string data_url_bak = 13;</code>
        * @return This builder for chaining.
        */
@@ -3146,6 +3075,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 40
+       * </pre>
+       *
        * <code>string data_url_bak = 13;</code>
        * @param value The bytes for dataUrlBak to set.
        * @return This builder for chaining.
@@ -3162,222 +3095,396 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private int clientDataVersion_ ;
+      private java.lang.Object clientSilenceVersionSuffix_ = "";
       /**
-       * <code>uint32 client_data_version = 14;</code>
-       * @return The clientDataVersion.
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>string client_silence_version_suffix = 27;</code>
+       * @return The clientSilenceVersionSuffix.
        */
-      @java.lang.Override
-      public int getClientDataVersion() {
-        return clientDataVersion_;
-      }
-      /**
-       * <code>uint32 client_data_version = 14;</code>
-       * @param value The clientDataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientDataVersion(int value) {
-        
-        clientDataVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 client_data_version = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientDataVersion() {
-        
-        clientDataVersion_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object handbookUrl_ = "";
-      /**
-       * <code>string handbook_url = 16;</code>
-       * @return The handbookUrl.
-       */
-      public java.lang.String getHandbookUrl() {
-        java.lang.Object ref = handbookUrl_;
+      public java.lang.String getClientSilenceVersionSuffix() {
+        java.lang.Object ref = clientSilenceVersionSuffix_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          handbookUrl_ = s;
+          clientSilenceVersionSuffix_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string handbook_url = 16;</code>
-       * @return The bytes for handbookUrl.
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>string client_silence_version_suffix = 27;</code>
+       * @return The bytes for clientSilenceVersionSuffix.
        */
       public com.google.protobuf.ByteString
-          getHandbookUrlBytes() {
-        java.lang.Object ref = handbookUrl_;
+          getClientSilenceVersionSuffixBytes() {
+        java.lang.Object ref = clientSilenceVersionSuffix_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          handbookUrl_ = b;
+          clientSilenceVersionSuffix_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string handbook_url = 16;</code>
-       * @param value The handbookUrl to set.
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>string client_silence_version_suffix = 27;</code>
+       * @param value The clientSilenceVersionSuffix to set.
        * @return This builder for chaining.
        */
-      public Builder setHandbookUrl(
+      public Builder setClientSilenceVersionSuffix(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        handbookUrl_ = value;
+        clientSilenceVersionSuffix_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string handbook_url = 16;</code>
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>string client_silence_version_suffix = 27;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHandbookUrl() {
+      public Builder clearClientSilenceVersionSuffix() {
         
-        handbookUrl_ = getDefaultInstance().getHandbookUrl();
+        clientSilenceVersionSuffix_ = getDefaultInstance().getClientSilenceVersionSuffix();
         onChanged();
         return this;
       }
       /**
-       * <code>string handbook_url = 16;</code>
-       * @param value The bytes for handbookUrl to set.
+       * <pre>
+       *6.3.0 // offset: 48
+       * </pre>
+       *
+       * <code>string client_silence_version_suffix = 27;</code>
+       * @param value The bytes for clientSilenceVersionSuffix to set.
        * @return This builder for chaining.
        */
-      public Builder setHandbookUrlBytes(
+      public Builder setClientSilenceVersionSuffixBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        handbookUrl_ = value;
+        clientSilenceVersionSuffix_ = value;
         onChanged();
         return this;
       }
 
-      private int clientSilenceDataVersion_ ;
+      private java.lang.Object officialCommunityUrl_ = "";
       /**
-       * <code>uint32 client_silence_data_version = 18;</code>
-       * @return The clientSilenceDataVersion.
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>string official_community_url = 24;</code>
+       * @return The officialCommunityUrl.
        */
-      @java.lang.Override
-      public int getClientSilenceDataVersion() {
-        return clientSilenceDataVersion_;
-      }
-      /**
-       * <code>uint32 client_silence_data_version = 18;</code>
-       * @param value The clientSilenceDataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientSilenceDataVersion(int value) {
-        
-        clientSilenceDataVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 client_silence_data_version = 18;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientSilenceDataVersion() {
-        
-        clientSilenceDataVersion_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientDataMd5_ = "";
-      /**
-       * <code>string client_data_md5 = 19;</code>
-       * @return The clientDataMd5.
-       */
-      public java.lang.String getClientDataMd5() {
-        java.lang.Object ref = clientDataMd5_;
+      public java.lang.String getOfficialCommunityUrl() {
+        java.lang.Object ref = officialCommunityUrl_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          clientDataMd5_ = s;
+          officialCommunityUrl_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string client_data_md5 = 19;</code>
-       * @return The bytes for clientDataMd5.
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>string official_community_url = 24;</code>
+       * @return The bytes for officialCommunityUrl.
        */
       public com.google.protobuf.ByteString
-          getClientDataMd5Bytes() {
-        java.lang.Object ref = clientDataMd5_;
+          getOfficialCommunityUrlBytes() {
+        java.lang.Object ref = officialCommunityUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          clientDataMd5_ = b;
+          officialCommunityUrl_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string client_data_md5 = 19;</code>
-       * @param value The clientDataMd5 to set.
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>string official_community_url = 24;</code>
+       * @param value The officialCommunityUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setClientDataMd5(
+      public Builder setOfficialCommunityUrl(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        clientDataMd5_ = value;
+        officialCommunityUrl_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_data_md5 = 19;</code>
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>string official_community_url = 24;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientDataMd5() {
+      public Builder clearOfficialCommunityUrl() {
         
-        clientDataMd5_ = getDefaultInstance().getClientDataMd5();
+        officialCommunityUrl_ = getDefaultInstance().getOfficialCommunityUrl();
         onChanged();
         return this;
       }
       /**
-       * <code>string client_data_md5 = 19;</code>
-       * @param value The bytes for clientDataMd5 to set.
+       * <pre>
+       *6.3.0 // offset: 56
+       * </pre>
+       *
+       * <code>string official_community_url = 24;</code>
+       * @param value The bytes for officialCommunityUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setClientDataMd5Bytes(
+      public Builder setOfficialCommunityUrlBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        clientDataMd5_ = value;
+        officialCommunityUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object cdkeyUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>string cdkey_url = 32;</code>
+       * @return The cdkeyUrl.
+       */
+      public java.lang.String getCdkeyUrl() {
+        java.lang.Object ref = cdkeyUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          cdkeyUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>string cdkey_url = 32;</code>
+       * @return The bytes for cdkeyUrl.
+       */
+      public com.google.protobuf.ByteString
+          getCdkeyUrlBytes() {
+        java.lang.Object ref = cdkeyUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          cdkeyUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>string cdkey_url = 32;</code>
+       * @param value The cdkeyUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCdkeyUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        cdkeyUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>string cdkey_url = 32;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCdkeyUrl() {
+        
+        cdkeyUrl_ = getDefaultInstance().getCdkeyUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 64
+       * </pre>
+       *
+       * <code>string cdkey_url = 32;</code>
+       * @param value The bytes for cdkeyUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCdkeyUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        cdkeyUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object dataUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>string data_url = 9;</code>
+       * @return The dataUrl.
+       */
+      public java.lang.String getDataUrl() {
+        java.lang.Object ref = dataUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          dataUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>string data_url = 9;</code>
+       * @return The bytes for dataUrl.
+       */
+      public com.google.protobuf.ByteString
+          getDataUrlBytes() {
+        java.lang.Object ref = dataUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dataUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>string data_url = 9;</code>
+       * @param value The dataUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDataUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        dataUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>string data_url = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDataUrl() {
+        
+        dataUrl_ = getDefaultInstance().getDataUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 72
+       * </pre>
+       *
+       * <code>string data_url = 9;</code>
+       * @param value The bytes for dataUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDataUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        dataUrl_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object clientSilenceDataMd5_ = "";
       /**
+       * <pre>
+       *6.3.0 // offset: 80
+       * </pre>
+       *
        * <code>string client_silence_data_md5 = 20;</code>
        * @return The clientSilenceDataMd5.
        */
@@ -3394,6 +3501,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 80
+       * </pre>
+       *
        * <code>string client_silence_data_md5 = 20;</code>
        * @return The bytes for clientSilenceDataMd5.
        */
@@ -3411,6 +3522,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 80
+       * </pre>
+       *
        * <code>string client_silence_data_md5 = 20;</code>
        * @param value The clientSilenceDataMd5 to set.
        * @return This builder for chaining.
@@ -3426,6 +3541,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 80
+       * </pre>
+       *
        * <code>string client_silence_data_md5 = 20;</code>
        * @return This builder for chaining.
        */
@@ -3436,6 +3555,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 80
+       * </pre>
+       *
        * <code>string client_silence_data_md5 = 20;</code>
        * @param value The bytes for clientSilenceDataMd5 to set.
        * @return This builder for chaining.
@@ -3452,10 +3575,110 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
+      private java.lang.Object clientDataMd5_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>string client_data_md5 = 19;</code>
+       * @return The clientDataMd5.
+       */
+      public java.lang.String getClientDataMd5() {
+        java.lang.Object ref = clientDataMd5_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientDataMd5_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>string client_data_md5 = 19;</code>
+       * @return The bytes for clientDataMd5.
+       */
+      public com.google.protobuf.ByteString
+          getClientDataMd5Bytes() {
+        java.lang.Object ref = clientDataMd5_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientDataMd5_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>string client_data_md5 = 19;</code>
+       * @param value The clientDataMd5 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientDataMd5(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientDataMd5_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>string client_data_md5 = 19;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientDataMd5() {
+        
+        clientDataMd5_ = getDefaultInstance().getClientDataMd5();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 88
+       * </pre>
+       *
+       * <code>string client_data_md5 = 19;</code>
+       * @param value The bytes for clientDataMd5 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientDataMd5Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientDataMd5_ = value;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> resVersionConfigBuilder_;
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        * @return Whether the resVersionConfig field is set.
        */
@@ -3463,6 +3686,10 @@ public final class RegionInfoOuterClass {
         return resVersionConfigBuilder_ != null || resVersionConfig_ != null;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        * @return The resVersionConfig.
        */
@@ -3474,6 +3701,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public Builder setResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
@@ -3490,6 +3721,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public Builder setResVersionConfig(
@@ -3504,6 +3739,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public Builder mergeResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
@@ -3522,6 +3761,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public Builder clearResVersionConfig() {
@@ -3536,6 +3779,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getResVersionConfigBuilder() {
@@ -3544,6 +3791,10 @@ public final class RegionInfoOuterClass {
         return getResVersionConfigFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
@@ -3555,6 +3806,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 96
+       * </pre>
+       *
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -3571,301 +3826,12 @@ public final class RegionInfoOuterClass {
         return resVersionConfigBuilder_;
       }
 
-      private com.google.protobuf.ByteString secretKey_ = com.google.protobuf.ByteString.EMPTY;
-      /**
-       * <code>bytes secret_key = 23;</code>
-       * @return The secretKey.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString getSecretKey() {
-        return secretKey_;
-      }
-      /**
-       * <code>bytes secret_key = 23;</code>
-       * @param value The secretKey to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSecretKey(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        secretKey_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bytes secret_key = 23;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSecretKey() {
-        
-        secretKey_ = getDefaultInstance().getSecretKey();
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object officialCommunityUrl_ = "";
-      /**
-       * <code>string official_community_url = 24;</code>
-       * @return The officialCommunityUrl.
-       */
-      public java.lang.String getOfficialCommunityUrl() {
-        java.lang.Object ref = officialCommunityUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          officialCommunityUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string official_community_url = 24;</code>
-       * @return The bytes for officialCommunityUrl.
-       */
-      public com.google.protobuf.ByteString
-          getOfficialCommunityUrlBytes() {
-        java.lang.Object ref = officialCommunityUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          officialCommunityUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string official_community_url = 24;</code>
-       * @param value The officialCommunityUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOfficialCommunityUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        officialCommunityUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string official_community_url = 24;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOfficialCommunityUrl() {
-        
-        officialCommunityUrl_ = getDefaultInstance().getOfficialCommunityUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string official_community_url = 24;</code>
-       * @param value The bytes for officialCommunityUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOfficialCommunityUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        officialCommunityUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientVersionSuffix_ = "";
-      /**
-       * <code>string client_version_suffix = 26;</code>
-       * @return The clientVersionSuffix.
-       */
-      public java.lang.String getClientVersionSuffix() {
-        java.lang.Object ref = clientVersionSuffix_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientVersionSuffix_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string client_version_suffix = 26;</code>
-       * @return The bytes for clientVersionSuffix.
-       */
-      public com.google.protobuf.ByteString
-          getClientVersionSuffixBytes() {
-        java.lang.Object ref = clientVersionSuffix_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientVersionSuffix_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string client_version_suffix = 26;</code>
-       * @param value The clientVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientVersionSuffix(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientVersionSuffix_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string client_version_suffix = 26;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientVersionSuffix() {
-        
-        clientVersionSuffix_ = getDefaultInstance().getClientVersionSuffix();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string client_version_suffix = 26;</code>
-       * @param value The bytes for clientVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientVersionSuffixBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientVersionSuffix_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientSilenceVersionSuffix_ = "";
-      /**
-       * <code>string client_silence_version_suffix = 27;</code>
-       * @return The clientSilenceVersionSuffix.
-       */
-      public java.lang.String getClientSilenceVersionSuffix() {
-        java.lang.Object ref = clientSilenceVersionSuffix_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientSilenceVersionSuffix_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string client_silence_version_suffix = 27;</code>
-       * @return The bytes for clientSilenceVersionSuffix.
-       */
-      public com.google.protobuf.ByteString
-          getClientSilenceVersionSuffixBytes() {
-        java.lang.Object ref = clientSilenceVersionSuffix_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientSilenceVersionSuffix_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string client_silence_version_suffix = 27;</code>
-       * @param value The clientSilenceVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientSilenceVersionSuffix(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientSilenceVersionSuffix_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string client_silence_version_suffix = 27;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientSilenceVersionSuffix() {
-        
-        clientSilenceVersionSuffix_ = getDefaultInstance().getClientSilenceVersionSuffix();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string client_silence_version_suffix = 27;</code>
-       * @param value The bytes for clientSilenceVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientSilenceVersionSuffixBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientSilenceVersionSuffix_ = value;
-        onChanged();
-        return this;
-      }
-
-      private boolean useGateserverDomainName_ ;
-      /**
-       * <code>bool use_gateserver_domain_name = 28;</code>
-       * @return The useGateserverDomainName.
-       */
-      @java.lang.Override
-      public boolean getUseGateserverDomainName() {
-        return useGateserverDomainName_;
-      }
-      /**
-       * <code>bool use_gateserver_domain_name = 28;</code>
-       * @param value The useGateserverDomainName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUseGateserverDomainName(boolean value) {
-        
-        useGateserverDomainName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool use_gateserver_domain_name = 28;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUseGateserverDomainName() {
-        
-        useGateserverDomainName_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object gateserverDomainName_ = "";
       /**
+       * <pre>
+       *6.3.0 // offset: 104
+       * </pre>
+       *
        * <code>string gateserver_domain_name = 29;</code>
        * @return The gateserverDomainName.
        */
@@ -3882,6 +3848,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 104
+       * </pre>
+       *
        * <code>string gateserver_domain_name = 29;</code>
        * @return The bytes for gateserverDomainName.
        */
@@ -3899,6 +3869,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 104
+       * </pre>
+       *
        * <code>string gateserver_domain_name = 29;</code>
        * @param value The gateserverDomainName to set.
        * @return This builder for chaining.
@@ -3914,6 +3888,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 104
+       * </pre>
+       *
        * <code>string gateserver_domain_name = 29;</code>
        * @return This builder for chaining.
        */
@@ -3924,6 +3902,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 104
+       * </pre>
+       *
        * <code>string gateserver_domain_name = 29;</code>
        * @param value The bytes for gateserverDomainName to set.
        * @return This builder for chaining.
@@ -3940,236 +3922,12 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object userCenterUrl_ = "";
-      /**
-       * <code>string user_center_url = 30;</code>
-       * @return The userCenterUrl.
-       */
-      public java.lang.String getUserCenterUrl() {
-        java.lang.Object ref = userCenterUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          userCenterUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string user_center_url = 30;</code>
-       * @return The bytes for userCenterUrl.
-       */
-      public com.google.protobuf.ByteString
-          getUserCenterUrlBytes() {
-        java.lang.Object ref = userCenterUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          userCenterUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string user_center_url = 30;</code>
-       * @param value The userCenterUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUserCenterUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        userCenterUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string user_center_url = 30;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUserCenterUrl() {
-        
-        userCenterUrl_ = getDefaultInstance().getUserCenterUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string user_center_url = 30;</code>
-       * @param value The bytes for userCenterUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUserCenterUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        userCenterUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object accountBindUrl_ = "";
-      /**
-       * <code>string account_bind_url = 31;</code>
-       * @return The accountBindUrl.
-       */
-      public java.lang.String getAccountBindUrl() {
-        java.lang.Object ref = accountBindUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          accountBindUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string account_bind_url = 31;</code>
-       * @return The bytes for accountBindUrl.
-       */
-      public com.google.protobuf.ByteString
-          getAccountBindUrlBytes() {
-        java.lang.Object ref = accountBindUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          accountBindUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string account_bind_url = 31;</code>
-       * @param value The accountBindUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAccountBindUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        accountBindUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string account_bind_url = 31;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAccountBindUrl() {
-        
-        accountBindUrl_ = getDefaultInstance().getAccountBindUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string account_bind_url = 31;</code>
-       * @param value The bytes for accountBindUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAccountBindUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        accountBindUrl_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object cdkeyUrl_ = "";
-      /**
-       * <code>string cdkey_url = 32;</code>
-       * @return The cdkeyUrl.
-       */
-      public java.lang.String getCdkeyUrl() {
-        java.lang.Object ref = cdkeyUrl_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          cdkeyUrl_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string cdkey_url = 32;</code>
-       * @return The bytes for cdkeyUrl.
-       */
-      public com.google.protobuf.ByteString
-          getCdkeyUrlBytes() {
-        java.lang.Object ref = cdkeyUrl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          cdkeyUrl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string cdkey_url = 32;</code>
-       * @param value The cdkeyUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCdkeyUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        cdkeyUrl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string cdkey_url = 32;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCdkeyUrl() {
-        
-        cdkeyUrl_ = getDefaultInstance().getCdkeyUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string cdkey_url = 32;</code>
-       * @param value The bytes for cdkeyUrl to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCdkeyUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        cdkeyUrl_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object privacyPolicyUrl_ = "";
       /**
+       * <pre>
+       *6.3.0 // offset: 112
+       * </pre>
+       *
        * <code>string privacy_policy_url = 33;</code>
        * @return The privacyPolicyUrl.
        */
@@ -4186,6 +3944,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 112
+       * </pre>
+       *
        * <code>string privacy_policy_url = 33;</code>
        * @return The bytes for privacyPolicyUrl.
        */
@@ -4203,6 +3965,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 112
+       * </pre>
+       *
        * <code>string privacy_policy_url = 33;</code>
        * @param value The privacyPolicyUrl to set.
        * @return This builder for chaining.
@@ -4218,6 +3984,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 112
+       * </pre>
+       *
        * <code>string privacy_policy_url = 33;</code>
        * @return This builder for chaining.
        */
@@ -4228,6 +3998,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 112
+       * </pre>
+       *
        * <code>string privacy_policy_url = 33;</code>
        * @param value The bytes for privacyPolicyUrl to set.
        * @return This builder for chaining.
@@ -4244,78 +4018,144 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object nextResourceUrl_ = "";
+      private com.google.protobuf.ByteString secretKey_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>string next_resource_url = 34;</code>
-       * @return The nextResourceUrl.
+       * <pre>
+       *6.3.0 // offset: 120
+       * </pre>
+       *
+       * <code>bytes secret_key = 23;</code>
+       * @return The secretKey.
        */
-      public java.lang.String getNextResourceUrl() {
-        java.lang.Object ref = nextResourceUrl_;
+      @java.lang.Override
+      public com.google.protobuf.ByteString getSecretKey() {
+        return secretKey_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 120
+       * </pre>
+       *
+       * <code>bytes secret_key = 23;</code>
+       * @param value The secretKey to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSecretKey(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        secretKey_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 120
+       * </pre>
+       *
+       * <code>bytes secret_key = 23;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSecretKey() {
+        
+        secretKey_ = getDefaultInstance().getSecretKey();
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object gateserverIp_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 128
+       * </pre>
+       *
+       * <code>string gateserver_ip = 1;</code>
+       * @return The gateserverIp.
+       */
+      public java.lang.String getGateserverIp() {
+        java.lang.Object ref = gateserverIp_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          nextResourceUrl_ = s;
+          gateserverIp_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string next_resource_url = 34;</code>
-       * @return The bytes for nextResourceUrl.
+       * <pre>
+       *6.3.0 // offset: 128
+       * </pre>
+       *
+       * <code>string gateserver_ip = 1;</code>
+       * @return The bytes for gateserverIp.
        */
       public com.google.protobuf.ByteString
-          getNextResourceUrlBytes() {
-        java.lang.Object ref = nextResourceUrl_;
+          getGateserverIpBytes() {
+        java.lang.Object ref = gateserverIp_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          nextResourceUrl_ = b;
+          gateserverIp_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string next_resource_url = 34;</code>
-       * @param value The nextResourceUrl to set.
+       * <pre>
+       *6.3.0 // offset: 128
+       * </pre>
+       *
+       * <code>string gateserver_ip = 1;</code>
+       * @param value The gateserverIp to set.
        * @return This builder for chaining.
        */
-      public Builder setNextResourceUrl(
+      public Builder setGateserverIp(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        nextResourceUrl_ = value;
+        gateserverIp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string next_resource_url = 34;</code>
+       * <pre>
+       *6.3.0 // offset: 128
+       * </pre>
+       *
+       * <code>string gateserver_ip = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNextResourceUrl() {
+      public Builder clearGateserverIp() {
         
-        nextResourceUrl_ = getDefaultInstance().getNextResourceUrl();
+        gateserverIp_ = getDefaultInstance().getGateserverIp();
         onChanged();
         return this;
       }
       /**
-       * <code>string next_resource_url = 34;</code>
-       * @param value The bytes for nextResourceUrl to set.
+       * <pre>
+       *6.3.0 // offset: 128
+       * </pre>
+       *
+       * <code>string gateserver_ip = 1;</code>
+       * @param value The bytes for gateserverIp to set.
        * @return This builder for chaining.
        */
-      public Builder setNextResourceUrlBytes(
+      public Builder setGateserverIpBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        nextResourceUrl_ = value;
+        gateserverIp_ = value;
         onChanged();
         return this;
       }
@@ -4324,6 +4164,10 @@ public final class RegionInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> nextResVersionConfigBuilder_;
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        * @return Whether the nextResVersionConfig field is set.
        */
@@ -4331,6 +4175,10 @@ public final class RegionInfoOuterClass {
         return nextResVersionConfigBuilder_ != null || nextResVersionConfig_ != null;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        * @return The nextResVersionConfig.
        */
@@ -4342,6 +4190,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public Builder setNextResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
@@ -4358,6 +4210,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public Builder setNextResVersionConfig(
@@ -4372,6 +4228,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public Builder mergeNextResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
@@ -4390,6 +4250,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public Builder clearNextResVersionConfig() {
@@ -4404,6 +4268,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getNextResVersionConfigBuilder() {
@@ -4412,6 +4280,10 @@ public final class RegionInfoOuterClass {
         return getNextResVersionConfigFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
@@ -4423,6 +4295,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 136
+       * </pre>
+       *
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -4439,8 +4315,1068 @@ public final class RegionInfoOuterClass {
         return nextResVersionConfigBuilder_;
       }
 
+      private java.lang.Object payCallbackUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 144
+       * </pre>
+       *
+       * <code>string pay_callback_url = 3;</code>
+       * @return The payCallbackUrl.
+       */
+      public java.lang.String getPayCallbackUrl() {
+        java.lang.Object ref = payCallbackUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          payCallbackUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 144
+       * </pre>
+       *
+       * <code>string pay_callback_url = 3;</code>
+       * @return The bytes for payCallbackUrl.
+       */
+      public com.google.protobuf.ByteString
+          getPayCallbackUrlBytes() {
+        java.lang.Object ref = payCallbackUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          payCallbackUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 144
+       * </pre>
+       *
+       * <code>string pay_callback_url = 3;</code>
+       * @param value The payCallbackUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPayCallbackUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        payCallbackUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 144
+       * </pre>
+       *
+       * <code>string pay_callback_url = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPayCallbackUrl() {
+        
+        payCallbackUrl_ = getDefaultInstance().getPayCallbackUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 144
+       * </pre>
+       *
+       * <code>string pay_callback_url = 3;</code>
+       * @param value The bytes for payCallbackUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPayCallbackUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        payCallbackUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object resourceUrlBak_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 152
+       * </pre>
+       *
+       * <code>string resource_url_bak = 12;</code>
+       * @return The resourceUrlBak.
+       */
+      public java.lang.String getResourceUrlBak() {
+        java.lang.Object ref = resourceUrlBak_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          resourceUrlBak_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 152
+       * </pre>
+       *
+       * <code>string resource_url_bak = 12;</code>
+       * @return The bytes for resourceUrlBak.
+       */
+      public com.google.protobuf.ByteString
+          getResourceUrlBakBytes() {
+        java.lang.Object ref = resourceUrlBak_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          resourceUrlBak_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 152
+       * </pre>
+       *
+       * <code>string resource_url_bak = 12;</code>
+       * @param value The resourceUrlBak to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResourceUrlBak(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        resourceUrlBak_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 152
+       * </pre>
+       *
+       * <code>string resource_url_bak = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearResourceUrlBak() {
+        
+        resourceUrlBak_ = getDefaultInstance().getResourceUrlBak();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 152
+       * </pre>
+       *
+       * <code>string resource_url_bak = 12;</code>
+       * @param value The bytes for resourceUrlBak to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResourceUrlBakBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        resourceUrlBak_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object bulletinUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 160
+       * </pre>
+       *
+       * <code>string bulletin_url = 11;</code>
+       * @return The bulletinUrl.
+       */
+      public java.lang.String getBulletinUrl() {
+        java.lang.Object ref = bulletinUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          bulletinUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 160
+       * </pre>
+       *
+       * <code>string bulletin_url = 11;</code>
+       * @return The bytes for bulletinUrl.
+       */
+      public com.google.protobuf.ByteString
+          getBulletinUrlBytes() {
+        java.lang.Object ref = bulletinUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          bulletinUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 160
+       * </pre>
+       *
+       * <code>string bulletin_url = 11;</code>
+       * @param value The bulletinUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBulletinUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        bulletinUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 160
+       * </pre>
+       *
+       * <code>string bulletin_url = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBulletinUrl() {
+        
+        bulletinUrl_ = getDefaultInstance().getBulletinUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 160
+       * </pre>
+       *
+       * <code>string bulletin_url = 11;</code>
+       * @param value The bytes for bulletinUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBulletinUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        bulletinUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object lOOMGINGEON_ = "";
+      /**
+       * <pre>
+       * offset: 168
+       * </pre>
+       *
+       * <code>string LOOMGINGEON = 37;</code>
+       * @return The lOOMGINGEON.
+       */
+      public java.lang.String getLOOMGINGEON() {
+        java.lang.Object ref = lOOMGINGEON_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          lOOMGINGEON_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 168
+       * </pre>
+       *
+       * <code>string LOOMGINGEON = 37;</code>
+       * @return The bytes for lOOMGINGEON.
+       */
+      public com.google.protobuf.ByteString
+          getLOOMGINGEONBytes() {
+        java.lang.Object ref = lOOMGINGEON_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          lOOMGINGEON_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 168
+       * </pre>
+       *
+       * <code>string LOOMGINGEON = 37;</code>
+       * @param value The lOOMGINGEON to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOOMGINGEON(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        lOOMGINGEON_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 168
+       * </pre>
+       *
+       * <code>string LOOMGINGEON = 37;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOOMGINGEON() {
+        
+        lOOMGINGEON_ = getDefaultInstance().getLOOMGINGEON();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 168
+       * </pre>
+       *
+       * <code>string LOOMGINGEON = 37;</code>
+       * @param value The bytes for lOOMGINGEON to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOOMGINGEONBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        lOOMGINGEON_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object nextResourceUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 176
+       * </pre>
+       *
+       * <code>string next_resource_url = 34;</code>
+       * @return The nextResourceUrl.
+       */
+      public java.lang.String getNextResourceUrl() {
+        java.lang.Object ref = nextResourceUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          nextResourceUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 176
+       * </pre>
+       *
+       * <code>string next_resource_url = 34;</code>
+       * @return The bytes for nextResourceUrl.
+       */
+      public com.google.protobuf.ByteString
+          getNextResourceUrlBytes() {
+        java.lang.Object ref = nextResourceUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          nextResourceUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 176
+       * </pre>
+       *
+       * <code>string next_resource_url = 34;</code>
+       * @param value The nextResourceUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextResourceUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        nextResourceUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 176
+       * </pre>
+       *
+       * <code>string next_resource_url = 34;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextResourceUrl() {
+        
+        nextResourceUrl_ = getDefaultInstance().getNextResourceUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 176
+       * </pre>
+       *
+       * <code>string next_resource_url = 34;</code>
+       * @param value The bytes for nextResourceUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextResourceUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        nextResourceUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object resourceUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 184
+       * </pre>
+       *
+       * <code>string resource_url = 8;</code>
+       * @return The resourceUrl.
+       */
+      public java.lang.String getResourceUrl() {
+        java.lang.Object ref = resourceUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          resourceUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 184
+       * </pre>
+       *
+       * <code>string resource_url = 8;</code>
+       * @return The bytes for resourceUrl.
+       */
+      public com.google.protobuf.ByteString
+          getResourceUrlBytes() {
+        java.lang.Object ref = resourceUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          resourceUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 184
+       * </pre>
+       *
+       * <code>string resource_url = 8;</code>
+       * @param value The resourceUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResourceUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        resourceUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 184
+       * </pre>
+       *
+       * <code>string resource_url = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearResourceUrl() {
+        
+        resourceUrl_ = getDefaultInstance().getResourceUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 184
+       * </pre>
+       *
+       * <code>string resource_url = 8;</code>
+       * @param value The bytes for resourceUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResourceUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        resourceUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object accountBindUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 192
+       * </pre>
+       *
+       * <code>string account_bind_url = 31;</code>
+       * @return The accountBindUrl.
+       */
+      public java.lang.String getAccountBindUrl() {
+        java.lang.Object ref = accountBindUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          accountBindUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 192
+       * </pre>
+       *
+       * <code>string account_bind_url = 31;</code>
+       * @return The bytes for accountBindUrl.
+       */
+      public com.google.protobuf.ByteString
+          getAccountBindUrlBytes() {
+        java.lang.Object ref = accountBindUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          accountBindUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 192
+       * </pre>
+       *
+       * <code>string account_bind_url = 31;</code>
+       * @param value The accountBindUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAccountBindUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        accountBindUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 192
+       * </pre>
+       *
+       * <code>string account_bind_url = 31;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAccountBindUrl() {
+        
+        accountBindUrl_ = getDefaultInstance().getAccountBindUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 192
+       * </pre>
+       *
+       * <code>string account_bind_url = 31;</code>
+       * @param value The bytes for accountBindUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAccountBindUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        accountBindUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientVersionSuffix_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 200
+       * </pre>
+       *
+       * <code>string client_version_suffix = 26;</code>
+       * @return The clientVersionSuffix.
+       */
+      public java.lang.String getClientVersionSuffix() {
+        java.lang.Object ref = clientVersionSuffix_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientVersionSuffix_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 200
+       * </pre>
+       *
+       * <code>string client_version_suffix = 26;</code>
+       * @return The bytes for clientVersionSuffix.
+       */
+      public com.google.protobuf.ByteString
+          getClientVersionSuffixBytes() {
+        java.lang.Object ref = clientVersionSuffix_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientVersionSuffix_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 200
+       * </pre>
+       *
+       * <code>string client_version_suffix = 26;</code>
+       * @param value The clientVersionSuffix to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientVersionSuffix(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientVersionSuffix_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 200
+       * </pre>
+       *
+       * <code>string client_version_suffix = 26;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientVersionSuffix() {
+        
+        clientVersionSuffix_ = getDefaultInstance().getClientVersionSuffix();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 200
+       * </pre>
+       *
+       * <code>string client_version_suffix = 26;</code>
+       * @param value The bytes for clientVersionSuffix to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientVersionSuffixBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientVersionSuffix_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object areaType_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 208
+       * </pre>
+       *
+       * <code>string area_type = 7;</code>
+       * @return The areaType.
+       */
+      public java.lang.String getAreaType() {
+        java.lang.Object ref = areaType_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          areaType_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 208
+       * </pre>
+       *
+       * <code>string area_type = 7;</code>
+       * @return The bytes for areaType.
+       */
+      public com.google.protobuf.ByteString
+          getAreaTypeBytes() {
+        java.lang.Object ref = areaType_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          areaType_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 208
+       * </pre>
+       *
+       * <code>string area_type = 7;</code>
+       * @param value The areaType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAreaType(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        areaType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 208
+       * </pre>
+       *
+       * <code>string area_type = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAreaType() {
+        
+        areaType_ = getDefaultInstance().getAreaType();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 208
+       * </pre>
+       *
+       * <code>string area_type = 7;</code>
+       * @param value The bytes for areaType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAreaTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        areaType_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object feedbackUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 216
+       * </pre>
+       *
+       * <code>string feedback_url = 10;</code>
+       * @return The feedbackUrl.
+       */
+      public java.lang.String getFeedbackUrl() {
+        java.lang.Object ref = feedbackUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          feedbackUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 216
+       * </pre>
+       *
+       * <code>string feedback_url = 10;</code>
+       * @return The bytes for feedbackUrl.
+       */
+      public com.google.protobuf.ByteString
+          getFeedbackUrlBytes() {
+        java.lang.Object ref = feedbackUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          feedbackUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 216
+       * </pre>
+       *
+       * <code>string feedback_url = 10;</code>
+       * @param value The feedbackUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFeedbackUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        feedbackUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 216
+       * </pre>
+       *
+       * <code>string feedback_url = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFeedbackUrl() {
+        
+        feedbackUrl_ = getDefaultInstance().getFeedbackUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 216
+       * </pre>
+       *
+       * <code>string feedback_url = 10;</code>
+       * @param value The bytes for feedbackUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFeedbackUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        feedbackUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object handbookUrl_ = "";
+      /**
+       * <pre>
+       *6.3.0 // offset: 224
+       * </pre>
+       *
+       * <code>string handbook_url = 16;</code>
+       * @return The handbookUrl.
+       */
+      public java.lang.String getHandbookUrl() {
+        java.lang.Object ref = handbookUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          handbookUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 224
+       * </pre>
+       *
+       * <code>string handbook_url = 16;</code>
+       * @return The bytes for handbookUrl.
+       */
+      public com.google.protobuf.ByteString
+          getHandbookUrlBytes() {
+        java.lang.Object ref = handbookUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          handbookUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 224
+       * </pre>
+       *
+       * <code>string handbook_url = 16;</code>
+       * @param value The handbookUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHandbookUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        handbookUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 224
+       * </pre>
+       *
+       * <code>string handbook_url = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHandbookUrl() {
+        
+        handbookUrl_ = getDefaultInstance().getHandbookUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 224
+       * </pre>
+       *
+       * <code>string handbook_url = 16;</code>
+       * @param value The bytes for handbookUrl to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHandbookUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        handbookUrl_ = value;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object gameBiz_ = "";
       /**
+       * <pre>
+       *6.3.0 // offset: 232
+       * </pre>
+       *
        * <code>string game_biz = 36;</code>
        * @return The gameBiz.
        */
@@ -4457,6 +5393,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 232
+       * </pre>
+       *
        * <code>string game_biz = 36;</code>
        * @return The bytes for gameBiz.
        */
@@ -4474,6 +5414,10 @@ public final class RegionInfoOuterClass {
         }
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 232
+       * </pre>
+       *
        * <code>string game_biz = 36;</code>
        * @param value The gameBiz to set.
        * @return This builder for chaining.
@@ -4489,6 +5433,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 232
+       * </pre>
+       *
        * <code>string game_biz = 36;</code>
        * @return This builder for chaining.
        */
@@ -4499,6 +5447,10 @@ public final class RegionInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *6.3.0 // offset: 232
+       * </pre>
+       *
        * <code>string game_biz = 36;</code>
        * @param value The bytes for gameBiz to set.
        * @return This builder for chaining.
@@ -4515,78 +5467,174 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object gateserverIpv6Ip_ = "";
+      private int clientDataVersion_ ;
       /**
-       * <code>string gateserver_ipv6_ip = 37;</code>
-       * @return The gateserverIpv6Ip.
+       * <pre>
+       *6.3.0 // offset: 240
+       * </pre>
+       *
+       * <code>uint32 client_data_version = 14;</code>
+       * @return The clientDataVersion.
        */
-      public java.lang.String getGateserverIpv6Ip() {
-        java.lang.Object ref = gateserverIpv6Ip_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gateserverIpv6Ip_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public int getClientDataVersion() {
+        return clientDataVersion_;
       }
       /**
-       * <code>string gateserver_ipv6_ip = 37;</code>
-       * @return The bytes for gateserverIpv6Ip.
-       */
-      public com.google.protobuf.ByteString
-          getGateserverIpv6IpBytes() {
-        java.lang.Object ref = gateserverIpv6Ip_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gateserverIpv6Ip_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gateserver_ipv6_ip = 37;</code>
-       * @param value The gateserverIpv6Ip to set.
+       * <pre>
+       *6.3.0 // offset: 240
+       * </pre>
+       *
+       * <code>uint32 client_data_version = 14;</code>
+       * @param value The clientDataVersion to set.
        * @return This builder for chaining.
        */
-      public Builder setGateserverIpv6Ip(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gateserverIpv6Ip_ = value;
+      public Builder setClientDataVersion(int value) {
+        
+        clientDataVersion_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string gateserver_ipv6_ip = 37;</code>
+       * <pre>
+       *6.3.0 // offset: 240
+       * </pre>
+       *
+       * <code>uint32 client_data_version = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGateserverIpv6Ip() {
+      public Builder clearClientDataVersion() {
         
-        gateserverIpv6Ip_ = getDefaultInstance().getGateserverIpv6Ip();
+        clientDataVersion_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int clientSilenceDataVersion_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 244
+       * </pre>
+       *
+       * <code>uint32 client_silence_data_version = 18;</code>
+       * @return The clientSilenceDataVersion.
+       */
+      @java.lang.Override
+      public int getClientSilenceDataVersion() {
+        return clientSilenceDataVersion_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 244
+       * </pre>
+       *
+       * <code>uint32 client_silence_data_version = 18;</code>
+       * @param value The clientSilenceDataVersion to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientSilenceDataVersion(int value) {
+        
+        clientSilenceDataVersion_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string gateserver_ipv6_ip = 37;</code>
-       * @param value The bytes for gateserverIpv6Ip to set.
+       * <pre>
+       *6.3.0 // offset: 244
+       * </pre>
+       *
+       * <code>uint32 client_silence_data_version = 18;</code>
        * @return This builder for chaining.
        */
-      public Builder setGateserverIpv6IpBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+      public Builder clearClientSilenceDataVersion() {
         
-        gateserverIpv6Ip_ = value;
+        clientSilenceDataVersion_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gateserverPort_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 248
+       * </pre>
+       *
+       * <code>uint32 gateserver_port = 2;</code>
+       * @return The gateserverPort.
+       */
+      @java.lang.Override
+      public int getGateserverPort() {
+        return gateserverPort_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 248
+       * </pre>
+       *
+       * <code>uint32 gateserver_port = 2;</code>
+       * @param value The gateserverPort to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGateserverPort(int value) {
+        
+        gateserverPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 248
+       * </pre>
+       *
+       * <code>uint32 gateserver_port = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGateserverPort() {
+        
+        gateserverPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean useGateserverDomainName_ ;
+      /**
+       * <pre>
+       *6.3.0 // offset: 252
+       * </pre>
+       *
+       * <code>bool use_gateserver_domain_name = 28;</code>
+       * @return The useGateserverDomainName.
+       */
+      @java.lang.Override
+      public boolean getUseGateserverDomainName() {
+        return useGateserverDomainName_;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 252
+       * </pre>
+       *
+       * <code>bool use_gateserver_domain_name = 28;</code>
+       * @param value The useGateserverDomainName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUseGateserverDomainName(boolean value) {
+        
+        useGateserverDomainName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.3.0 // offset: 252
+       * </pre>
+       *
+       * <code>bool use_gateserver_domain_name = 28;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUseGateserverDomainName() {
+        
+        useGateserverDomainName_ = false;
         onChanged();
         return this;
       }
@@ -4658,29 +5706,28 @@ public final class RegionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020RegionInfo.proto\032\026ResVersionConfig.pro" +
-      "to\"\313\006\n\nRegionInfo\022\025\n\rgateserver_ip\030\001 \001(\t" +
-      "\022\027\n\017gateserver_port\030\002 \001(\r\022\030\n\020pay_callbac" +
-      "k_url\030\003 \001(\t\022\021\n\tarea_type\030\007 \001(\t\022\024\n\014resour" +
-      "ce_url\030\010 \001(\t\022\020\n\010data_url\030\t \001(\t\022\024\n\014feedba" +
-      "ck_url\030\n \001(\t\022\024\n\014bulletin_url\030\013 \001(\t\022\030\n\020re" +
-      "source_url_bak\030\014 \001(\t\022\024\n\014data_url_bak\030\r \001" +
-      "(\t\022\033\n\023client_data_version\030\016 \001(\r\022\024\n\014handb" +
-      "ook_url\030\020 \001(\t\022#\n\033client_silence_data_ver" +
-      "sion\030\022 \001(\r\022\027\n\017client_data_md5\030\023 \001(\t\022\037\n\027c" +
-      "lient_silence_data_md5\030\024 \001(\t\022-\n\022res_vers" +
-      "ion_config\030\026 \001(\0132\021.ResVersionConfig\022\022\n\ns" +
-      "ecret_key\030\027 \001(\014\022\036\n\026official_community_ur" +
-      "l\030\030 \001(\t\022\035\n\025client_version_suffix\030\032 \001(\t\022%" +
-      "\n\035client_silence_version_suffix\030\033 \001(\t\022\"\n" +
-      "\032use_gateserver_domain_name\030\034 \001(\010\022\036\n\026gat" +
-      "eserver_domain_name\030\035 \001(\t\022\027\n\017user_center" +
-      "_url\030\036 \001(\t\022\030\n\020account_bind_url\030\037 \001(\t\022\021\n\t" +
-      "cdkey_url\030  \001(\t\022\032\n\022privacy_policy_url\030! " +
-      "\001(\t\022\031\n\021next_resource_url\030\" \001(\t\0222\n\027next_r" +
-      "es_version_config\030# \001(\0132\021.ResVersionConf" +
-      "ig\022\020\n\010game_biz\030$ \001(\t\022\032\n\022gateserver_ipv6_" +
-      "ip\030% \001(\tB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "to\"\304\006\n\nRegionInfo\022\027\n\017user_center_url\030\036 \001" +
+      "(\t\022\024\n\014data_url_bak\030\r \001(\t\022%\n\035client_silen" +
+      "ce_version_suffix\030\033 \001(\t\022\036\n\026official_comm" +
+      "unity_url\030\030 \001(\t\022\021\n\tcdkey_url\030  \001(\t\022\020\n\010da" +
+      "ta_url\030\t \001(\t\022\037\n\027client_silence_data_md5\030" +
+      "\024 \001(\t\022\027\n\017client_data_md5\030\023 \001(\t\022-\n\022res_ve" +
+      "rsion_config\030\026 \001(\0132\021.ResVersionConfig\022\036\n" +
+      "\026gateserver_domain_name\030\035 \001(\t\022\032\n\022privacy" +
+      "_policy_url\030! \001(\t\022\022\n\nsecret_key\030\027 \001(\014\022\025\n" +
+      "\rgateserver_ip\030\001 \001(\t\0222\n\027next_res_version" +
+      "_config\030# \001(\0132\021.ResVersionConfig\022\030\n\020pay_" +
+      "callback_url\030\003 \001(\t\022\030\n\020resource_url_bak\030\014" +
+      " \001(\t\022\024\n\014bulletin_url\030\013 \001(\t\022\023\n\013LOOMGINGEO" +
+      "N\030% \001(\t\022\031\n\021next_resource_url\030\" \001(\t\022\024\n\014re" +
+      "source_url\030\010 \001(\t\022\030\n\020account_bind_url\030\037 \001" +
+      "(\t\022\035\n\025client_version_suffix\030\032 \001(\t\022\021\n\tare" +
+      "a_type\030\007 \001(\t\022\024\n\014feedback_url\030\n \001(\t\022\024\n\014ha" +
+      "ndbook_url\030\020 \001(\t\022\020\n\010game_biz\030$ \001(\t\022\033\n\023cl" +
+      "ient_data_version\030\016 \001(\r\022#\n\033client_silenc" +
+      "e_data_version\030\022 \001(\r\022\027\n\017gateserver_port\030" +
+      "\002 \001(\r\022\"\n\032use_gateserver_domain_name\030\034 \001(" +
+      "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4692,7 +5739,7 @@ public final class RegionInfoOuterClass {
     internal_static_RegionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionInfo_descriptor,
-        new java.lang.String[] { "GateserverIp", "GateserverPort", "PayCallbackUrl", "AreaType", "ResourceUrl", "DataUrl", "FeedbackUrl", "BulletinUrl", "ResourceUrlBak", "DataUrlBak", "ClientDataVersion", "HandbookUrl", "ClientSilenceDataVersion", "ClientDataMd5", "ClientSilenceDataMd5", "ResVersionConfig", "SecretKey", "OfficialCommunityUrl", "ClientVersionSuffix", "ClientSilenceVersionSuffix", "UseGateserverDomainName", "GateserverDomainName", "UserCenterUrl", "AccountBindUrl", "CdkeyUrl", "PrivacyPolicyUrl", "NextResourceUrl", "NextResVersionConfig", "GameBiz", "GateserverIpv6Ip", });
+        new java.lang.String[] { "UserCenterUrl", "DataUrlBak", "ClientSilenceVersionSuffix", "OfficialCommunityUrl", "CdkeyUrl", "DataUrl", "ClientSilenceDataMd5", "ClientDataMd5", "ResVersionConfig", "GateserverDomainName", "PrivacyPolicyUrl", "SecretKey", "GateserverIp", "NextResVersionConfig", "PayCallbackUrl", "ResourceUrlBak", "BulletinUrl", "LOOMGINGEON", "NextResourceUrl", "ResourceUrl", "AccountBindUrl", "ClientVersionSuffix", "AreaType", "FeedbackUrl", "HandbookUrl", "GameBiz", "ClientDataVersion", "ClientSilenceDataVersion", "GateserverPort", "UseGateserverDomainName", });
     emu.grasscutter.net.proto.ResVersionConfigOuterClass.getDescriptor();
   }
 

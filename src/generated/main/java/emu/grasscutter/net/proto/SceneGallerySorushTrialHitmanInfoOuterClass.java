@@ -19,16 +19,12 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 BHJPNFEOPLM = 2;</code>
-     * @return The bHJPNFEOPLM.
+     * <code>uint64 trans_no = 4;</code>
+     * @return The transNo.
      */
-    long getBHJPNFEOPLM();
+    long getTransNo();
   }
   /**
-   * <pre>
-   * Obf: ICGDJBBKHIK
-   * </pre>
-   *
    * Protobuf type {@code SceneGallerySorushTrialHitmanInfo}
    */
   public static final class SceneGallerySorushTrialHitmanInfo extends
@@ -73,9 +69,9 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
-              bHJPNFEOPLM_ = input.readUInt64();
+              transNo_ = input.readUInt64();
               break;
             }
             default: {
@@ -110,15 +106,15 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
               emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo.class, emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo.Builder.class);
     }
 
-    public static final int BHJPNFEOPLM_FIELD_NUMBER = 2;
-    private long bHJPNFEOPLM_;
+    public static final int TRANS_NO_FIELD_NUMBER = 4;
+    private long transNo_;
     /**
-     * <code>uint64 BHJPNFEOPLM = 2;</code>
-     * @return The bHJPNFEOPLM.
+     * <code>uint64 trans_no = 4;</code>
+     * @return The transNo.
      */
     @java.lang.Override
-    public long getBHJPNFEOPLM() {
-      return bHJPNFEOPLM_;
+    public long getTransNo() {
+      return transNo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +131,8 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bHJPNFEOPLM_ != 0L) {
-        output.writeUInt64(2, bHJPNFEOPLM_);
+      if (transNo_ != 0L) {
+        output.writeUInt64(4, transNo_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +143,9 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bHJPNFEOPLM_ != 0L) {
+      if (transNo_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, bHJPNFEOPLM_);
+          .computeUInt64Size(4, transNo_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +162,8 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo other = (emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo) obj;
 
-      if (getBHJPNFEOPLM()
-          != other.getBHJPNFEOPLM()) return false;
+      if (getTransNo()
+          != other.getTransNo()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,9 +175,9 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BHJPNFEOPLM_FIELD_NUMBER;
+      hash = (37 * hash) + TRANS_NO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBHJPNFEOPLM());
+          getTransNo());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,10 +274,6 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: ICGDJBBKHIK
-     * </pre>
-     *
      * Protobuf type {@code SceneGallerySorushTrialHitmanInfo}
      */
     public static final class Builder extends
@@ -319,7 +311,7 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bHJPNFEOPLM_ = 0L;
+        transNo_ = 0L;
 
         return this;
       }
@@ -347,7 +339,7 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo result = new emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo(this);
-        result.bHJPNFEOPLM_ = bHJPNFEOPLM_;
+        result.transNo_ = transNo_;
         onBuilt();
         return result;
       }
@@ -396,8 +388,8 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGallerySorushTrialHitmanInfoOuterClass.SceneGallerySorushTrialHitmanInfo.getDefaultInstance()) return this;
-        if (other.getBHJPNFEOPLM() != 0L) {
-          setBHJPNFEOPLM(other.getBHJPNFEOPLM());
+        if (other.getTransNo() != 0L) {
+          setTransNo(other.getTransNo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -428,33 +420,33 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
         return this;
       }
 
-      private long bHJPNFEOPLM_ ;
+      private long transNo_ ;
       /**
-       * <code>uint64 BHJPNFEOPLM = 2;</code>
-       * @return The bHJPNFEOPLM.
+       * <code>uint64 trans_no = 4;</code>
+       * @return The transNo.
        */
       @java.lang.Override
-      public long getBHJPNFEOPLM() {
-        return bHJPNFEOPLM_;
+      public long getTransNo() {
+        return transNo_;
       }
       /**
-       * <code>uint64 BHJPNFEOPLM = 2;</code>
-       * @param value The bHJPNFEOPLM to set.
+       * <code>uint64 trans_no = 4;</code>
+       * @param value The transNo to set.
        * @return This builder for chaining.
        */
-      public Builder setBHJPNFEOPLM(long value) {
+      public Builder setTransNo(long value) {
         
-        bHJPNFEOPLM_ = value;
+        transNo_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 BHJPNFEOPLM = 2;</code>
+       * <code>uint64 trans_no = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBHJPNFEOPLM() {
+      public Builder clearTransNo() {
         
-        bHJPNFEOPLM_ = 0L;
+        transNo_ = 0L;
         onChanged();
         return this;
       }
@@ -526,9 +518,9 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGallerySorushTrialHitmanInfo.prot" +
-      "o\"8\n!SceneGallerySorushTrialHitmanInfo\022\023" +
-      "\n\013BHJPNFEOPLM\030\002 \001(\004B\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "o\"5\n!SceneGallerySorushTrialHitmanInfo\022\020" +
+      "\n\010trans_no\030\004 \001(\004B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -539,7 +531,7 @@ public final class SceneGallerySorushTrialHitmanInfoOuterClass {
     internal_static_SceneGallerySorushTrialHitmanInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGallerySorushTrialHitmanInfo_descriptor,
-        new java.lang.String[] { "BHJPNFEOPLM", });
+        new java.lang.String[] { "TransNo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

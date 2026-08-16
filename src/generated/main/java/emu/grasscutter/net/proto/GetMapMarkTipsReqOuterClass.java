@@ -20,7 +20,7 @@ public final class GetMapMarkTipsReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3911
+   * CmdId: 25922
    * </pre>
    *
    * Protobuf type {@code GetMapMarkTipsReq}
@@ -245,7 +245,7 @@ public final class GetMapMarkTipsReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3911
+     * CmdId: 25922
      * </pre>
      *
      * Protobuf type {@code GetMapMarkTipsReq}

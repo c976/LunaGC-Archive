@@ -19,59 +19,63 @@ public final class CoopDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @return A list containing the viewedChapterLists.
      */
     java.util.List<java.lang.Integer> getViewedChapterListsList();
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @return The count of viewedChapterLists.
      */
     int getViewedChapterListsCount();
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @param index The index of the element to return.
      * @return The viewedChapterLists at the given index.
      */
     int getViewedChapterLists(int index);
 
     /**
-     * <code>bool is_have_progress = 4;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> 
+        getChapterListList();
+    /**
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter getChapterList(int index);
+    /**
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
+     */
+    int getChapterListCount();
+    /**
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder> 
+        getChapterListOrBuilderList();
+    /**
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder getChapterListOrBuilder(
+        int index);
+
+    /**
+     * <code>bool is_have_progress = 11;</code>
      * @return The isHaveProgress.
      */
     boolean getIsHaveProgress();
 
     /**
-     * <code>uint32 cur_coop_point = 5;</code>
+     * <code>uint32 cur_coop_point = 6;</code>
      * @return The curCoopPoint.
      */
     int getCurCoopPoint();
-
-    /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> 
-        getChapterListList();
-    /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter getChapterList(int index);
-    /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
-     */
-    int getChapterListCount();
-    /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder> 
-        getChapterListOrBuilderList();
-    /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder getChapterListOrBuilder(
-        int index);
   }
   /**
+   * <pre>
+   * CmdId: 20362
+   * </pre>
+   *
    * Protobuf type {@code CoopDataNotify}
    */
   public static final class CoopDataNotify extends
@@ -119,7 +123,7 @@ public final class CoopDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 viewedChapterLists_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -127,7 +131,7 @@ public final class CoopDataNotifyOuterClass {
               viewedChapterLists_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -140,23 +144,23 @@ public final class CoopDataNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 32: {
-
-              isHaveProgress_ = input.readBool();
-              break;
-            }
-            case 40: {
+            case 48: {
 
               curCoopPoint_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 chapterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter>();
                 mutable_bitField0_ |= 0x00000002;
               }
               chapterList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.parser(), extensionRegistry));
+              break;
+            }
+            case 88: {
+
+              isHaveProgress_ = input.readBool();
               break;
             }
             default: {
@@ -197,10 +201,10 @@ public final class CoopDataNotifyOuterClass {
               emu.grasscutter.net.proto.CoopDataNotifyOuterClass.CoopDataNotify.class, emu.grasscutter.net.proto.CoopDataNotifyOuterClass.CoopDataNotify.Builder.class);
     }
 
-    public static final int VIEWED_CHAPTER_LISTS_FIELD_NUMBER = 2;
+    public static final int VIEWED_CHAPTER_LISTS_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList viewedChapterLists_;
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @return A list containing the viewedChapterLists.
      */
     @java.lang.Override
@@ -209,14 +213,14 @@ public final class CoopDataNotifyOuterClass {
       return viewedChapterLists_;
     }
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @return The count of viewedChapterLists.
      */
     public int getViewedChapterListsCount() {
       return viewedChapterLists_.size();
     }
     /**
-     * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+     * <code>repeated uint32 viewed_chapter_lists = 5;</code>
      * @param index The index of the element to return.
      * @return The viewedChapterLists at the given index.
      */
@@ -225,39 +229,17 @@ public final class CoopDataNotifyOuterClass {
     }
     private int viewedChapterListsMemoizedSerializedSize = -1;
 
-    public static final int IS_HAVE_PROGRESS_FIELD_NUMBER = 4;
-    private boolean isHaveProgress_;
-    /**
-     * <code>bool is_have_progress = 4;</code>
-     * @return The isHaveProgress.
-     */
-    @java.lang.Override
-    public boolean getIsHaveProgress() {
-      return isHaveProgress_;
-    }
-
-    public static final int CUR_COOP_POINT_FIELD_NUMBER = 5;
-    private int curCoopPoint_;
-    /**
-     * <code>uint32 cur_coop_point = 5;</code>
-     * @return The curCoopPoint.
-     */
-    @java.lang.Override
-    public int getCurCoopPoint() {
-      return curCoopPoint_;
-    }
-
-    public static final int CHAPTER_LIST_FIELD_NUMBER = 9;
+    public static final int CHAPTER_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> chapterList_;
     /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> getChapterListList() {
       return chapterList_;
     }
     /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder> 
@@ -265,26 +247,48 @@ public final class CoopDataNotifyOuterClass {
       return chapterList_;
     }
     /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
      */
     @java.lang.Override
     public int getChapterListCount() {
       return chapterList_.size();
     }
     /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter getChapterList(int index) {
       return chapterList_.get(index);
     }
     /**
-     * <code>repeated .CoopChapter chapter_list = 9;</code>
+     * <code>repeated .CoopChapter chapter_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder getChapterListOrBuilder(
         int index) {
       return chapterList_.get(index);
+    }
+
+    public static final int IS_HAVE_PROGRESS_FIELD_NUMBER = 11;
+    private boolean isHaveProgress_;
+    /**
+     * <code>bool is_have_progress = 11;</code>
+     * @return The isHaveProgress.
+     */
+    @java.lang.Override
+    public boolean getIsHaveProgress() {
+      return isHaveProgress_;
+    }
+
+    public static final int CUR_COOP_POINT_FIELD_NUMBER = 6;
+    private int curCoopPoint_;
+    /**
+     * <code>uint32 cur_coop_point = 6;</code>
+     * @return The curCoopPoint.
+     */
+    @java.lang.Override
+    public int getCurCoopPoint() {
+      return curCoopPoint_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -303,20 +307,20 @@ public final class CoopDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getViewedChapterListsList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(viewedChapterListsMemoizedSerializedSize);
       }
       for (int i = 0; i < viewedChapterLists_.size(); i++) {
         output.writeUInt32NoTag(viewedChapterLists_.getInt(i));
       }
-      if (isHaveProgress_ != false) {
-        output.writeBool(4, isHaveProgress_);
-      }
       if (curCoopPoint_ != 0) {
-        output.writeUInt32(5, curCoopPoint_);
+        output.writeUInt32(6, curCoopPoint_);
       }
       for (int i = 0; i < chapterList_.size(); i++) {
-        output.writeMessage(9, chapterList_.get(i));
+        output.writeMessage(7, chapterList_.get(i));
+      }
+      if (isHaveProgress_ != false) {
+        output.writeBool(11, isHaveProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -341,17 +345,17 @@ public final class CoopDataNotifyOuterClass {
         }
         viewedChapterListsMemoizedSerializedSize = dataSize;
       }
-      if (isHaveProgress_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isHaveProgress_);
-      }
       if (curCoopPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, curCoopPoint_);
+          .computeUInt32Size(6, curCoopPoint_);
       }
       for (int i = 0; i < chapterList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, chapterList_.get(i));
+          .computeMessageSize(7, chapterList_.get(i));
+      }
+      if (isHaveProgress_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isHaveProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,12 +374,12 @@ public final class CoopDataNotifyOuterClass {
 
       if (!getViewedChapterListsList()
           .equals(other.getViewedChapterListsList())) return false;
+      if (!getChapterListList()
+          .equals(other.getChapterListList())) return false;
       if (getIsHaveProgress()
           != other.getIsHaveProgress()) return false;
       if (getCurCoopPoint()
           != other.getCurCoopPoint()) return false;
-      if (!getChapterListList()
-          .equals(other.getChapterListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -391,15 +395,15 @@ public final class CoopDataNotifyOuterClass {
         hash = (37 * hash) + VIEWED_CHAPTER_LISTS_FIELD_NUMBER;
         hash = (53 * hash) + getViewedChapterListsList().hashCode();
       }
+      if (getChapterListCount() > 0) {
+        hash = (37 * hash) + CHAPTER_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChapterListList().hashCode();
+      }
       hash = (37 * hash) + IS_HAVE_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsHaveProgress());
       hash = (37 * hash) + CUR_COOP_POINT_FIELD_NUMBER;
       hash = (53 * hash) + getCurCoopPoint();
-      if (getChapterListCount() > 0) {
-        hash = (37 * hash) + CHAPTER_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChapterListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -496,6 +500,10 @@ public final class CoopDataNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20362
+     * </pre>
+     *
      * Protobuf type {@code CoopDataNotify}
      */
     public static final class Builder extends
@@ -536,16 +544,16 @@ public final class CoopDataNotifyOuterClass {
         super.clear();
         viewedChapterLists_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isHaveProgress_ = false;
-
-        curCoopPoint_ = 0;
-
         if (chapterListBuilder_ == null) {
           chapterList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           chapterListBuilder_.clear();
         }
+        isHaveProgress_ = false;
+
+        curCoopPoint_ = 0;
+
         return this;
       }
 
@@ -578,8 +586,6 @@ public final class CoopDataNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.viewedChapterLists_ = viewedChapterLists_;
-        result.isHaveProgress_ = isHaveProgress_;
-        result.curCoopPoint_ = curCoopPoint_;
         if (chapterListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             chapterList_ = java.util.Collections.unmodifiableList(chapterList_);
@@ -589,6 +595,8 @@ public final class CoopDataNotifyOuterClass {
         } else {
           result.chapterList_ = chapterListBuilder_.build();
         }
+        result.isHaveProgress_ = isHaveProgress_;
+        result.curCoopPoint_ = curCoopPoint_;
         onBuilt();
         return result;
       }
@@ -647,12 +655,6 @@ public final class CoopDataNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getIsHaveProgress() != false) {
-          setIsHaveProgress(other.getIsHaveProgress());
-        }
-        if (other.getCurCoopPoint() != 0) {
-          setCurCoopPoint(other.getCurCoopPoint());
-        }
         if (chapterListBuilder_ == null) {
           if (!other.chapterList_.isEmpty()) {
             if (chapterList_.isEmpty()) {
@@ -678,6 +680,12 @@ public final class CoopDataNotifyOuterClass {
               chapterListBuilder_.addAllMessages(other.chapterList_);
             }
           }
+        }
+        if (other.getIsHaveProgress() != false) {
+          setIsHaveProgress(other.getIsHaveProgress());
+        }
+        if (other.getCurCoopPoint() != 0) {
+          setCurCoopPoint(other.getCurCoopPoint());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -717,7 +725,7 @@ public final class CoopDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @return A list containing the viewedChapterLists.
        */
       public java.util.List<java.lang.Integer>
@@ -726,14 +734,14 @@ public final class CoopDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(viewedChapterLists_) : viewedChapterLists_;
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @return The count of viewedChapterLists.
        */
       public int getViewedChapterListsCount() {
         return viewedChapterLists_.size();
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @param index The index of the element to return.
        * @return The viewedChapterLists at the given index.
        */
@@ -741,7 +749,7 @@ public final class CoopDataNotifyOuterClass {
         return viewedChapterLists_.getInt(index);
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @param index The index to set the value at.
        * @param value The viewedChapterLists to set.
        * @return This builder for chaining.
@@ -754,7 +762,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @param value The viewedChapterLists to add.
        * @return This builder for chaining.
        */
@@ -765,7 +773,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @param values The viewedChapterLists to add.
        * @return This builder for chaining.
        */
@@ -778,74 +786,12 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 viewed_chapter_lists = 2;</code>
+       * <code>repeated uint32 viewed_chapter_lists = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearViewedChapterLists() {
         viewedChapterLists_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isHaveProgress_ ;
-      /**
-       * <code>bool is_have_progress = 4;</code>
-       * @return The isHaveProgress.
-       */
-      @java.lang.Override
-      public boolean getIsHaveProgress() {
-        return isHaveProgress_;
-      }
-      /**
-       * <code>bool is_have_progress = 4;</code>
-       * @param value The isHaveProgress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsHaveProgress(boolean value) {
-        
-        isHaveProgress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_have_progress = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsHaveProgress() {
-        
-        isHaveProgress_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int curCoopPoint_ ;
-      /**
-       * <code>uint32 cur_coop_point = 5;</code>
-       * @return The curCoopPoint.
-       */
-      @java.lang.Override
-      public int getCurCoopPoint() {
-        return curCoopPoint_;
-      }
-      /**
-       * <code>uint32 cur_coop_point = 5;</code>
-       * @param value The curCoopPoint to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurCoopPoint(int value) {
-        
-        curCoopPoint_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_coop_point = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurCoopPoint() {
-        
-        curCoopPoint_ = 0;
         onChanged();
         return this;
       }
@@ -863,7 +809,7 @@ public final class CoopDataNotifyOuterClass {
           emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder> chapterListBuilder_;
 
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> getChapterListList() {
         if (chapterListBuilder_ == null) {
@@ -873,7 +819,7 @@ public final class CoopDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public int getChapterListCount() {
         if (chapterListBuilder_ == null) {
@@ -883,7 +829,7 @@ public final class CoopDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter getChapterList(int index) {
         if (chapterListBuilder_ == null) {
@@ -893,7 +839,7 @@ public final class CoopDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder setChapterList(
           int index, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter value) {
@@ -910,7 +856,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder setChapterList(
           int index, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder builderForValue) {
@@ -924,7 +870,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder addChapterList(emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter value) {
         if (chapterListBuilder_ == null) {
@@ -940,7 +886,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder addChapterList(
           int index, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter value) {
@@ -957,7 +903,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder addChapterList(
           emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder builderForValue) {
@@ -971,7 +917,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder addChapterList(
           int index, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder builderForValue) {
@@ -985,7 +931,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder addAllChapterList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter> values) {
@@ -1000,7 +946,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder clearChapterList() {
         if (chapterListBuilder_ == null) {
@@ -1013,7 +959,7 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public Builder removeChapterList(int index) {
         if (chapterListBuilder_ == null) {
@@ -1026,14 +972,14 @@ public final class CoopDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder getChapterListBuilder(
           int index) {
         return getChapterListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder getChapterListOrBuilder(
           int index) {
@@ -1043,7 +989,7 @@ public final class CoopDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapterOrBuilder> 
            getChapterListOrBuilderList() {
@@ -1054,14 +1000,14 @@ public final class CoopDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder addChapterListBuilder() {
         return getChapterListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder addChapterListBuilder(
           int index) {
@@ -1069,7 +1015,7 @@ public final class CoopDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.getDefaultInstance());
       }
       /**
-       * <code>repeated .CoopChapter chapter_list = 9;</code>
+       * <code>repeated .CoopChapter chapter_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CoopChapterOuterClass.CoopChapter.Builder> 
            getChapterListBuilderList() {
@@ -1088,6 +1034,68 @@ public final class CoopDataNotifyOuterClass {
           chapterList_ = null;
         }
         return chapterListBuilder_;
+      }
+
+      private boolean isHaveProgress_ ;
+      /**
+       * <code>bool is_have_progress = 11;</code>
+       * @return The isHaveProgress.
+       */
+      @java.lang.Override
+      public boolean getIsHaveProgress() {
+        return isHaveProgress_;
+      }
+      /**
+       * <code>bool is_have_progress = 11;</code>
+       * @param value The isHaveProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsHaveProgress(boolean value) {
+        
+        isHaveProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_have_progress = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsHaveProgress() {
+        
+        isHaveProgress_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int curCoopPoint_ ;
+      /**
+       * <code>uint32 cur_coop_point = 6;</code>
+       * @return The curCoopPoint.
+       */
+      @java.lang.Override
+      public int getCurCoopPoint() {
+        return curCoopPoint_;
+      }
+      /**
+       * <code>uint32 cur_coop_point = 6;</code>
+       * @param value The curCoopPoint to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurCoopPoint(int value) {
+        
+        curCoopPoint_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_coop_point = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurCoopPoint() {
+        
+        curCoopPoint_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1158,9 +1166,9 @@ public final class CoopDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024CoopDataNotify.proto\032\021CoopChapter.prot" +
       "o\"\204\001\n\016CoopDataNotify\022\034\n\024viewed_chapter_l" +
-      "ists\030\002 \003(\r\022\030\n\020is_have_progress\030\004 \001(\010\022\026\n\016" +
-      "cur_coop_point\030\005 \001(\r\022\"\n\014chapter_list\030\t \003" +
-      "(\0132\014.CoopChapterB\033\n\031emu.grasscutter.net." +
+      "ists\030\005 \003(\r\022\"\n\014chapter_list\030\007 \003(\0132\014.CoopC" +
+      "hapter\022\030\n\020is_have_progress\030\013 \001(\010\022\026\n\016cur_" +
+      "coop_point\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1173,7 +1181,7 @@ public final class CoopDataNotifyOuterClass {
     internal_static_CoopDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoopDataNotify_descriptor,
-        new java.lang.String[] { "ViewedChapterLists", "IsHaveProgress", "CurCoopPoint", "ChapterList", });
+        new java.lang.String[] { "ViewedChapterLists", "ChapterList", "IsHaveProgress", "CurCoopPoint", });
     emu.grasscutter.net.proto.CoopChapterOuterClass.getDescriptor();
   }
 

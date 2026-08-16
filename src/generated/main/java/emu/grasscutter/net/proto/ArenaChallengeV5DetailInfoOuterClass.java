@@ -19,51 +19,91 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> 
+    java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> 
         getLevelListList();
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
-    emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI getLevelList(int index);
+    emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA getLevelList(int index);
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     int getLevelListCount();
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder> 
         getLevelListOrBuilderList();
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
-    emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder getLevelListOrBuilder(
+    emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder getLevelListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> 
+    java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> 
         getLevelInfoListList();
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo getLevelInfoList(int index);
+    emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE getLevelInfoList(int index);
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
@@ -114,22 +154,22 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI>();
+                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA>();
                 mutable_bitField0_ |= 0x00000001;
               }
               levelList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.parser(), extensionRegistry));
               break;
             }
-            case 114: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo>();
+                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE>();
                 mutable_bitField0_ |= 0x00000002;
               }
               levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -170,82 +210,122 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeV5DetailInfoOuterClass.ArenaChallengeV5DetailInfo.class, emu.grasscutter.net.proto.ArenaChallengeV5DetailInfoOuterClass.ArenaChallengeV5DetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 4;
-    private java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> levelList_;
+    public static final int LEVEL_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> levelList_;
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> getLevelListList() {
+    public java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> getLevelListList() {
       return levelList_;
     }
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder> 
         getLevelListOrBuilderList() {
       return levelList_;
     }
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     @java.lang.Override
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI getLevelList(int index) {
+    public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA getLevelList(int index) {
       return levelList_.get(index);
     }
     /**
-     * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder getLevelListOrBuilder(
+    public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder getLevelListOrBuilder(
         int index) {
       return levelList_.get(index);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> levelInfoList_;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> levelInfoList_;
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> getLevelInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder> 
         getLevelInfoListOrBuilderList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo getLevelInfoList(int index) {
+    public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder getLevelInfoListOrBuilder(
         int index) {
       return levelInfoList_.get(index);
     }
@@ -265,10 +345,10 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(4, levelList_.get(i));
+        output.writeMessage(5, levelList_.get(i));
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(14, levelInfoList_.get(i));
+        output.writeMessage(9, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -281,11 +361,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, levelList_.get(i));
+          .computeMessageSize(5, levelList_.get(i));
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, levelInfoList_.get(i));
+          .computeMessageSize(9, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -647,22 +727,26 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> levelList_ =
+      private java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> levelList_ =
         java.util.Collections.emptyList();
       private void ensureLevelListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI>(levelList_);
+          levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA>(levelList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder> levelListBuilder_;
+          emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder> levelListBuilder_;
 
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> getLevelListList() {
+      public java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> getLevelListList() {
         if (levelListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelList_);
         } else {
@@ -670,7 +754,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public int getLevelListCount() {
         if (levelListBuilder_ == null) {
@@ -680,9 +768,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI getLevelList(int index) {
+      public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA getLevelList(int index) {
         if (levelListBuilder_ == null) {
           return levelList_.get(index);
         } else {
@@ -690,10 +782,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI value) {
+          int index, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -707,10 +803,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.set(index, builderForValue.build());
@@ -721,9 +821,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public Builder addLevelList(emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI value) {
+      public Builder addLevelList(emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -737,10 +841,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI value) {
+          int index, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA value) {
         if (levelListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -754,10 +862,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder addLevelList(
-          emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder builderForValue) {
+          emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.add(builderForValue.build());
@@ -768,10 +880,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder builderForValue) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           levelList_.add(index, builderForValue.build());
@@ -782,10 +898,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder addAllLevelList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA> values) {
         if (levelListBuilder_ == null) {
           ensureLevelListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -797,7 +917,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder clearLevelList() {
         if (levelListBuilder_ == null) {
@@ -810,7 +934,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
       public Builder removeLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -823,16 +951,24 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder getLevelListBuilder(
+      public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder getLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder getLevelListOrBuilder(
+      public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder getLevelListOrBuilder(
           int index) {
         if (levelListBuilder_ == null) {
           return levelList_.get(index);  } else {
@@ -840,9 +976,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder> 
            getLevelListOrBuilderList() {
         if (levelListBuilder_ != null) {
           return levelListBuilder_.getMessageOrBuilderList();
@@ -851,33 +991,45 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder addLevelListBuilder() {
+      public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder addLevelListBuilder() {
         return getLevelListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.getDefaultInstance());
+            emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.getDefaultInstance());
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder addLevelListBuilder(
+      public emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder addLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.getDefaultInstance());
+            index, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.getDefaultInstance());
       }
       /**
-       * <code>repeated .EDBBDILPKDI level_list = 4;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated .AMAIFEPGBDA level_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder> 
            getLevelListBuilderList() {
         return getLevelListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder> 
+          emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder> 
           getLevelListFieldBuilder() {
         if (levelListBuilder_ == null) {
           levelListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDI.Builder, emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.EDBBDILPKDIOrBuilder>(
+              emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDA.Builder, emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.AMAIFEPGBDAOrBuilder>(
                   levelList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -887,22 +1039,26 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return levelListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo>(levelInfoList_);
+          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE>(levelInfoList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> getLevelInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(levelInfoList_);
         } else {
@@ -910,7 +1066,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -920,9 +1080,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo getLevelInfoList(int index) {
+      public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);
         } else {
@@ -930,10 +1094,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo value) {
+          int index, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -947,10 +1115,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.set(index, builderForValue.build());
@@ -961,9 +1133,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo value) {
+      public Builder addLevelInfoList(emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -977,10 +1153,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo value) {
+          int index, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE value) {
         if (levelInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -994,10 +1174,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(builderForValue.build());
@@ -1008,10 +1192,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder builderForValue) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           levelInfoList_.add(index, builderForValue.build());
@@ -1022,10 +1210,14 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE> values) {
         if (levelInfoListBuilder_ == null) {
           ensureLevelInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1037,7 +1229,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -1050,7 +1246,11 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -1063,16 +1263,24 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder getLevelInfoListOrBuilder(
           int index) {
         if (levelInfoListBuilder_ == null) {
           return levelInfoList_.get(index);  } else {
@@ -1080,9 +1288,13 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder> 
            getLevelInfoListOrBuilderList() {
         if (levelInfoListBuilder_ != null) {
           return levelInfoListBuilder_.getMessageOrBuilderList();
@@ -1091,33 +1303,45 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder addLevelInfoListBuilder() {
+      public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.getDefaultInstance());
+            emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder addLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.getDefaultInstance());
+            index, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeV5LevelInfo level_info_list = 14;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .NFFELLLCCKE level_info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder> 
            getLevelInfoListBuilderList() {
         return getLevelInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder> 
+          emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder> 
           getLevelInfoListFieldBuilder() {
         if (levelInfoListBuilder_ == null) {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfo.Builder, emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.ArenaChallengeV5LevelInfoOrBuilder>(
+              emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKE.Builder, emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.NFFELLLCCKEOrBuilder>(
                   levelInfoList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -1193,18 +1417,18 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n ArenaChallengeV5DetailInfo.proto\032\021EDBB" +
-      "DILPKDI.proto\032\037ArenaChallengeV5LevelInfo" +
-      ".proto\"s\n\032ArenaChallengeV5DetailInfo\022 \n\n" +
-      "level_list\030\004 \003(\0132\014.EDBBDILPKDI\0223\n\017level_" +
-      "info_list\030\016 \003(\0132\032.ArenaChallengeV5LevelI" +
-      "nfoB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n ArenaChallengeV5DetailInfo.proto\032\021AMAI" +
+      "FEPGBDA.proto\032\021NFFELLLCCKE.proto\"e\n\032Aren" +
+      "aChallengeV5DetailInfo\022 \n\nlevel_list\030\005 \003" +
+      "(\0132\014.AMAIFEPGBDA\022%\n\017level_info_list\030\t \003(" +
+      "\0132\014.NFFELLLCCKEB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.getDescriptor(),
         });
     internal_static_ArenaChallengeV5DetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1212,8 +1436,8 @@ public final class ArenaChallengeV5DetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeV5DetailInfo_descriptor,
         new java.lang.String[] { "LevelList", "LevelInfoList", });
-    emu.grasscutter.net.proto.EDBBDILPKDIOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ArenaChallengeV5LevelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AMAIFEPGBDAOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.NFFELLLCCKEOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

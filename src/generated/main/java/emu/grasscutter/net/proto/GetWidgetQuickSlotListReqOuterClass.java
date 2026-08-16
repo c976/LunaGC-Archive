@@ -20,7 +20,7 @@ public final class GetWidgetQuickSlotListReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3762
+   * CmdId: 8661
    * </pre>
    *
    * Protobuf type {@code GetWidgetQuickSlotListReq}
@@ -245,7 +245,7 @@ public final class GetWidgetQuickSlotListReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3762
+     * CmdId: 8661
      * </pre>
      *
      * Protobuf type {@code GetWidgetQuickSlotListReq}

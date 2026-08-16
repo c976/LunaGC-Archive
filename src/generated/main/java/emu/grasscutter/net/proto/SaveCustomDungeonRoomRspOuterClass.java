@@ -19,45 +19,44 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
-    java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> 
-        getErrorBlockListList();
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock getErrorBlockList(int index);
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    int getErrorBlockListCount();
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> 
-        getErrorBlockListOrBuilderList();
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder getErrorBlockListOrBuilder(
-        int index);
+    int getRetcode();
 
     /**
-     * <code>uint32 room_id = 11;</code>
+     * <code>uint32 room_id = 13;</code>
      * @return The roomId.
      */
     int getRoomId();
 
     /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
      */
-    int getRetcode();
+    java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> 
+        getErrorBlockListList();
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock getErrorBlockList(int index);
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    int getErrorBlockListCount();
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> 
+        getErrorBlockListOrBuilderList();
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder getErrorBlockListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 6751
-   * Obf: FCADMAFCJEF
+   * CmdId: 28921
    * </pre>
    *
    * Protobuf type {@code SaveCustomDungeonRoomRsp}
@@ -106,17 +105,17 @@ public final class SaveCustomDungeonRoomRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              roomId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 122: {
+            case 104: {
+
+              roomId_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 errorBlockList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock>();
                 mutable_bitField0_ |= 0x00000001;
@@ -160,50 +159,21 @@ public final class SaveCustomDungeonRoomRspOuterClass {
               emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp.class, emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp.Builder.class);
     }
 
-    public static final int ERROR_BLOCK_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> errorBlockList_;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
     /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> getErrorBlockListList() {
-      return errorBlockList_;
-    }
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> 
-        getErrorBlockListOrBuilderList() {
-      return errorBlockList_;
-    }
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getErrorBlockListCount() {
-      return errorBlockList_.size();
-    }
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock getErrorBlockList(int index) {
-      return errorBlockList_.get(index);
-    }
-    /**
-     * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder getErrorBlockListOrBuilder(
-        int index) {
-      return errorBlockList_.get(index);
+    public int getRetcode() {
+      return retcode_;
     }
 
-    public static final int ROOM_ID_FIELD_NUMBER = 11;
+    public static final int ROOM_ID_FIELD_NUMBER = 13;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 11;</code>
+     * <code>uint32 room_id = 13;</code>
      * @return The roomId.
      */
     @java.lang.Override
@@ -211,15 +181,44 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       return roomId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
+    public static final int ERROR_BLOCK_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> errorBlockList_;
     /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> getErrorBlockListList() {
+      return errorBlockList_;
+    }
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> 
+        getErrorBlockListOrBuilderList() {
+      return errorBlockList_;
+    }
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    @java.lang.Override
+    public int getErrorBlockListCount() {
+      return errorBlockList_.size();
+    }
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock getErrorBlockList(int index) {
+      return errorBlockList_.get(index);
+    }
+    /**
+     * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder getErrorBlockListOrBuilder(
+        int index) {
+      return errorBlockList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -236,14 +235,14 @@ public final class SaveCustomDungeonRoomRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (roomId_ != 0) {
-        output.writeUInt32(11, roomId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (roomId_ != 0) {
+        output.writeUInt32(13, roomId_);
       }
       for (int i = 0; i < errorBlockList_.size(); i++) {
-        output.writeMessage(15, errorBlockList_.get(i));
+        output.writeMessage(14, errorBlockList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +253,17 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (roomId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, roomId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (roomId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, roomId_);
       }
       for (int i = 0; i < errorBlockList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, errorBlockList_.get(i));
+          .computeMessageSize(14, errorBlockList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,12 +280,12 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       }
       emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp other = (emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp) obj;
 
-      if (!getErrorBlockListList()
-          .equals(other.getErrorBlockListList())) return false;
-      if (getRoomId()
-          != other.getRoomId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRoomId()
+          != other.getRoomId()) return false;
+      if (!getErrorBlockListList()
+          .equals(other.getErrorBlockListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -298,14 +297,14 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRoomId();
       if (getErrorBlockListCount() > 0) {
         hash = (37 * hash) + ERROR_BLOCK_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getErrorBlockListList().hashCode();
       }
-      hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRoomId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -403,8 +402,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6751
-     * Obf: FCADMAFCJEF
+     * CmdId: 28921
      * </pre>
      *
      * Protobuf type {@code SaveCustomDungeonRoomRsp}
@@ -445,16 +443,16 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
+        roomId_ = 0;
+
         if (errorBlockListBuilder_ == null) {
           errorBlockList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           errorBlockListBuilder_.clear();
         }
-        roomId_ = 0;
-
-        retcode_ = 0;
-
         return this;
       }
 
@@ -482,6 +480,8 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       public emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp buildPartial() {
         emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp result = new emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
+        result.roomId_ = roomId_;
         if (errorBlockListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             errorBlockList_ = java.util.Collections.unmodifiableList(errorBlockList_);
@@ -491,8 +491,6 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         } else {
           result.errorBlockList_ = errorBlockListBuilder_.build();
         }
-        result.roomId_ = roomId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -541,6 +539,12 @@ public final class SaveCustomDungeonRoomRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp other) {
         if (other == emu.grasscutter.net.proto.SaveCustomDungeonRoomRspOuterClass.SaveCustomDungeonRoomRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getRoomId() != 0) {
+          setRoomId(other.getRoomId());
+        }
         if (errorBlockListBuilder_ == null) {
           if (!other.errorBlockList_.isEmpty()) {
             if (errorBlockList_.isEmpty()) {
@@ -566,12 +570,6 @@ public final class SaveCustomDungeonRoomRspOuterClass {
               errorBlockListBuilder_.addAllMessages(other.errorBlockList_);
             }
           }
-        }
-        if (other.getRoomId() != 0) {
-          setRoomId(other.getRoomId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,6 +601,68 @@ public final class SaveCustomDungeonRoomRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int roomId_ ;
+      /**
+       * <code>uint32 room_id = 13;</code>
+       * @return The roomId.
+       */
+      @java.lang.Override
+      public int getRoomId() {
+        return roomId_;
+      }
+      /**
+       * <code>uint32 room_id = 13;</code>
+       * @param value The roomId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRoomId(int value) {
+        
+        roomId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 room_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRoomId() {
+        
+        roomId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> errorBlockList_ =
         java.util.Collections.emptyList();
       private void ensureErrorBlockListIsMutable() {
@@ -616,7 +676,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
           emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> errorBlockListBuilder_;
 
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> getErrorBlockListList() {
         if (errorBlockListBuilder_ == null) {
@@ -626,7 +686,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public int getErrorBlockListCount() {
         if (errorBlockListBuilder_ == null) {
@@ -636,7 +696,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock getErrorBlockList(int index) {
         if (errorBlockListBuilder_ == null) {
@@ -646,7 +706,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder setErrorBlockList(
           int index, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock value) {
@@ -663,7 +723,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder setErrorBlockList(
           int index, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder builderForValue) {
@@ -677,7 +737,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder addErrorBlockList(emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock value) {
         if (errorBlockListBuilder_ == null) {
@@ -693,7 +753,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder addErrorBlockList(
           int index, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock value) {
@@ -710,7 +770,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder addErrorBlockList(
           emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder builderForValue) {
@@ -724,7 +784,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder addErrorBlockList(
           int index, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder builderForValue) {
@@ -738,7 +798,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder addAllErrorBlockList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock> values) {
@@ -753,7 +813,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder clearErrorBlockList() {
         if (errorBlockListBuilder_ == null) {
@@ -766,7 +826,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public Builder removeErrorBlockList(int index) {
         if (errorBlockListBuilder_ == null) {
@@ -779,14 +839,14 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder getErrorBlockListBuilder(
           int index) {
         return getErrorBlockListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder getErrorBlockListOrBuilder(
           int index) {
@@ -796,7 +856,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlockOrBuilder> 
            getErrorBlockListOrBuilderList() {
@@ -807,14 +867,14 @@ public final class SaveCustomDungeonRoomRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder addErrorBlockListBuilder() {
         return getErrorBlockListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.getDefaultInstance());
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder addErrorBlockListBuilder(
           int index) {
@@ -822,7 +882,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
             index, emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.getDefaultInstance());
       }
       /**
-       * <code>repeated .CustomDungeonBlock error_block_list = 15;</code>
+       * <code>repeated .CustomDungeonBlock error_block_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.CustomDungeonBlock.Builder> 
            getErrorBlockListBuilderList() {
@@ -841,68 +901,6 @@ public final class SaveCustomDungeonRoomRspOuterClass {
           errorBlockList_ = null;
         }
         return errorBlockListBuilder_;
-      }
-
-      private int roomId_ ;
-      /**
-       * <code>uint32 room_id = 11;</code>
-       * @return The roomId.
-       */
-      @java.lang.Override
-      public int getRoomId() {
-        return roomId_;
-      }
-      /**
-       * <code>uint32 room_id = 11;</code>
-       * @param value The roomId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRoomId(int value) {
-        
-        roomId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 room_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRoomId() {
-        
-        roomId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -973,9 +971,9 @@ public final class SaveCustomDungeonRoomRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036SaveCustomDungeonRoomRsp.proto\032\030Custom" +
       "DungeonBlock.proto\"k\n\030SaveCustomDungeonR" +
-      "oomRsp\022-\n\020error_block_list\030\017 \003(\0132\023.Custo" +
-      "mDungeonBlock\022\017\n\007room_id\030\013 \001(\r\022\017\n\007retcod" +
-      "e\030\r \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oomRsp\022\017\n\007retcode\030\014 \001(\005\022\017\n\007room_id\030\r \001(\r" +
+      "\022-\n\020error_block_list\030\016 \003(\0132\023.CustomDunge" +
+      "onBlockB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -988,7 +986,7 @@ public final class SaveCustomDungeonRoomRspOuterClass {
     internal_static_SaveCustomDungeonRoomRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SaveCustomDungeonRoomRsp_descriptor,
-        new java.lang.String[] { "ErrorBlockList", "RoomId", "Retcode", });
+        new java.lang.String[] { "Retcode", "RoomId", "ErrorBlockList", });
     emu.grasscutter.net.proto.CustomDungeonBlockOuterClass.getDescriptor();
   }
 

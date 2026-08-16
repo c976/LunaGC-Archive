@@ -19,37 +19,61 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>uint32 furniture_id = 2;</code>
      * @return The furnitureId.
      */
     int getFurnitureId();
 
     /**
-     * <code>uint32 guid = 1;</code>
-     * @return The guid.
-     */
-    int getGuid();
-
-    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
      * <code>uint32 furniture_type = 3;</code>
      * @return The furnitureType.
      */
     int getFurnitureType();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 guid = 1;</code>
+     * @return The guid.
+     */
+    int getGuid();
 
     /**
      * <code>.HomeMarkPointNPCData npc_data = 6;</code>
@@ -260,6 +284,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
     public static final int POS_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      * @return Whether the pos field is set.
      */
@@ -268,6 +296,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       return pos_ != null;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      * @return The pos.
      */
@@ -276,6 +308,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
      * <code>.Vector pos = 4;</code>
      */
     @java.lang.Override
@@ -286,6 +322,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
     public static final int FURNITURE_ID_FIELD_NUMBER = 2;
     private int furnitureId_;
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>uint32 furniture_id = 2;</code>
      * @return The furnitureId.
      */
@@ -294,26 +334,34 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       return furnitureId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 1;
-    private int guid_;
-    /**
-     * <code>uint32 guid = 1;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public int getGuid() {
-      return guid_;
-    }
-
     public static final int FURNITURE_TYPE_FIELD_NUMBER = 3;
     private int furnitureType_;
     /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
      * <code>uint32 furniture_type = 3;</code>
      * @return The furnitureType.
      */
     @java.lang.Override
     public int getFurnitureType() {
       return furnitureType_;
+    }
+
+    public static final int GUID_FIELD_NUMBER = 1;
+    private int guid_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 guid = 1;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public int getGuid() {
+      return guid_;
     }
 
     public static final int NPC_DATA_FIELD_NUMBER = 6;
@@ -465,10 +513,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       }
       if (getFurnitureId()
           != other.getFurnitureId()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
       if (getFurnitureType()
           != other.getFurnitureType()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
       if (!getExtraCase().equals(other.getExtraCase())) return false;
       switch (extraCase_) {
         case 6:
@@ -499,10 +547,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       }
       hash = (37 * hash) + FURNITURE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFurnitureId();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
       hash = (37 * hash) + FURNITURE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getFurnitureType();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
       switch (extraCase_) {
         case 6:
           hash = (37 * hash) + NPC_DATA_FIELD_NUMBER;
@@ -656,9 +704,9 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         }
         furnitureId_ = 0;
 
-        guid_ = 0;
-
         furnitureType_ = 0;
+
+        guid_ = 0;
 
         extraCase_ = 0;
         extra_ = null;
@@ -694,8 +742,8 @@ public final class HomeMarkPointFurnitureDataOuterClass {
           result.pos_ = posBuilder_.build();
         }
         result.furnitureId_ = furnitureId_;
-        result.guid_ = guid_;
         result.furnitureType_ = furnitureType_;
+        result.guid_ = guid_;
         if (extraCase_ == 6) {
           if (npcDataBuilder_ == null) {
             result.extra_ = extra_;
@@ -765,11 +813,11 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         if (other.getFurnitureId() != 0) {
           setFurnitureId(other.getFurnitureId());
         }
-        if (other.getGuid() != 0) {
-          setGuid(other.getGuid());
-        }
         if (other.getFurnitureType() != 0) {
           setFurnitureType(other.getFurnitureType());
+        }
+        if (other.getGuid() != 0) {
+          setGuid(other.getGuid());
         }
         switch (other.getExtraCase()) {
           case NPC_DATA: {
@@ -832,6 +880,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        * @return Whether the pos field is set.
        */
@@ -839,6 +891,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        * @return The pos.
        */
@@ -850,6 +906,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -866,6 +926,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public Builder setPos(
@@ -880,6 +944,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -898,6 +966,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public Builder clearPos() {
@@ -912,6 +984,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -920,6 +996,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -931,6 +1011,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
        * <code>.Vector pos = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -949,6 +1033,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
 
       private int furnitureId_ ;
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>uint32 furniture_id = 2;</code>
        * @return The furnitureId.
        */
@@ -957,6 +1045,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return furnitureId_;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>uint32 furniture_id = 2;</code>
        * @param value The furnitureId to set.
        * @return This builder for chaining.
@@ -968,6 +1060,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>uint32 furniture_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -978,39 +1074,12 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
 
-      private int guid_ ;
-      /**
-       * <code>uint32 guid = 1;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public int getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint32 guid = 1;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(int value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 guid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int furnitureType_ ;
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>uint32 furniture_type = 3;</code>
        * @return The furnitureType.
        */
@@ -1019,6 +1088,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return furnitureType_;
       }
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>uint32 furniture_type = 3;</code>
        * @param value The furnitureType to set.
        * @return This builder for chaining.
@@ -1030,12 +1103,59 @@ public final class HomeMarkPointFurnitureDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
        * <code>uint32 furniture_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFurnitureType() {
         
         furnitureType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int guid_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 guid = 1;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public int getGuid() {
+        return guid_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 guid = 1;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(int value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 guid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0;
         onChanged();
         return this;
       }
@@ -1388,12 +1508,12 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n HomeMarkPointFurnitureData.proto\032\014Vect" +
-      "or.proto\032\032HomeMarkPointNPCData.proto\032\034Ho" +
-      "meMarkPointSuiteData.proto\"\321\001\n\032HomeMarkP" +
+      "\n HomeMarkPointFurnitureData.proto\032\032Home" +
+      "MarkPointNPCData.proto\032\034HomeMarkPointSui" +
+      "teData.proto\032\014Vector.proto\"\321\001\n\032HomeMarkP" +
       "ointFurnitureData\022\024\n\003pos\030\004 \001(\0132\007.Vector\022" +
-      "\024\n\014furniture_id\030\002 \001(\r\022\014\n\004guid\030\001 \001(\r\022\026\n\016f" +
-      "urniture_type\030\003 \001(\r\022)\n\010npc_data\030\006 \001(\0132\025." +
+      "\024\n\014furniture_id\030\002 \001(\r\022\026\n\016furniture_type\030" +
+      "\003 \001(\r\022\014\n\004guid\030\001 \001(\r\022)\n\010npc_data\030\006 \001(\0132\025." +
       "HomeMarkPointNPCDataH\000\022-\n\nsuite_data\030\007 \001" +
       "(\0132\027.HomeMarkPointSuiteDataH\000B\007\n\005extraB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
@@ -1401,19 +1521,19 @@ public final class HomeMarkPointFurnitureDataOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeMarkPointNPCDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeMarkPointSuiteDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_HomeMarkPointFurnitureData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HomeMarkPointFurnitureData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeMarkPointFurnitureData_descriptor,
-        new java.lang.String[] { "Pos", "FurnitureId", "Guid", "FurnitureType", "NpcData", "SuiteData", "Extra", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+        new java.lang.String[] { "Pos", "FurnitureId", "FurnitureType", "Guid", "NpcData", "SuiteData", "Extra", });
     emu.grasscutter.net.proto.HomeMarkPointNPCDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeMarkPointSuiteDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

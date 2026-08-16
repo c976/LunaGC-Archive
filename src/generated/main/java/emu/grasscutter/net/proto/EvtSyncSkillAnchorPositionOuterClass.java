@@ -19,31 +19,43 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      * @return Whether the skillAnchorPosition field is set.
      */
     boolean hasSkillAnchorPosition();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      * @return The skillAnchorPosition.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getSkillAnchorPosition();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSkillAnchorPositionOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
-   * <pre>
-   * Obf: AACHABJNBBP
-   * </pre>
-   *
    * Protobuf type {@code EvtSyncSkillAnchorPosition}
    */
   public static final class EvtSyncSkillAnchorPosition extends
@@ -101,7 +113,7 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
 
               break;
             }
-            case 72: {
+            case 64: {
 
               entityId_ = input.readUInt32();
               break;
@@ -141,6 +153,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
     public static final int SKILL_ANCHOR_POSITION_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector skillAnchorPosition_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      * @return Whether the skillAnchorPosition field is set.
      */
@@ -149,6 +165,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       return skillAnchorPosition_ != null;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      * @return The skillAnchorPosition.
      */
@@ -157,6 +177,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       return skillAnchorPosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : skillAnchorPosition_;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>.Vector skill_anchor_position = 1;</code>
      */
     @java.lang.Override
@@ -164,10 +188,14 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       return getSkillAnchorPosition();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 9;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -193,7 +221,7 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         output.writeMessage(1, getSkillAnchorPosition());
       }
       if (entityId_ != 0) {
-        output.writeUInt32(9, entityId_);
+        output.writeUInt32(8, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -210,7 +238,7 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, entityId_);
+          .computeUInt32Size(8, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,10 +375,6 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AACHABJNBBP
-     * </pre>
-     *
      * Protobuf type {@code EvtSyncSkillAnchorPosition}
      */
     public static final class Builder extends
@@ -515,6 +539,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> skillAnchorPositionBuilder_;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        * @return Whether the skillAnchorPosition field is set.
        */
@@ -522,6 +550,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return skillAnchorPositionBuilder_ != null || skillAnchorPosition_ != null;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        * @return The skillAnchorPosition.
        */
@@ -533,6 +565,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public Builder setSkillAnchorPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -549,6 +585,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public Builder setSkillAnchorPosition(
@@ -563,6 +603,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public Builder mergeSkillAnchorPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -581,6 +625,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public Builder clearSkillAnchorPosition() {
@@ -595,6 +643,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSkillAnchorPositionBuilder() {
@@ -603,6 +655,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return getSkillAnchorPositionFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSkillAnchorPositionOrBuilder() {
@@ -614,6 +670,10 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>.Vector skill_anchor_position = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -632,7 +692,11 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -640,7 +704,11 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +719,11 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -730,7 +802,7 @@ public final class EvtSyncSkillAnchorPositionOuterClass {
       "\n EvtSyncSkillAnchorPosition.proto\032\014Vect" +
       "or.proto\"W\n\032EvtSyncSkillAnchorPosition\022&" +
       "\n\025skill_anchor_position\030\001 \001(\0132\007.Vector\022\021" +
-      "\n\tentity_id\030\t \001(\rB\033\n\031emu.grasscutter.net" +
+      "\n\tentity_id\030\010 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,22 +19,26 @@ public final class GCGMsgCharDieOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_guid = 6;</code>
-     * @return The cardGuid.
-     */
-    int getCardGuid();
-
-    /**
-     * <code>uint32 controller_id = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 controller_id = 10;</code>
      * @return The controllerId.
      */
     int getControllerId();
+
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 card_guid = 1;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
   }
   /**
-   * <pre>
-   * Obf: EKNOEMBAOBD
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgCharDie}
    */
   public static final class GCGMsgCharDie extends
@@ -79,12 +83,12 @@ public final class GCGMsgCharDieOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               cardGuid_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               controllerId_ = input.readUInt32();
               break;
@@ -121,26 +125,34 @@ public final class GCGMsgCharDieOuterClass {
               emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.class, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder.class);
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 6;
-    private int cardGuid_;
-    /**
-     * <code>uint32 card_guid = 6;</code>
-     * @return The cardGuid.
-     */
-    @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
-    }
-
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 11;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 10;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 controller_id = 10;</code>
      * @return The controllerId.
      */
     @java.lang.Override
     public int getControllerId() {
       return controllerId_;
+    }
+
+    public static final int CARD_GUID_FIELD_NUMBER = 1;
+    private int cardGuid_;
+    /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 card_guid = 1;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,10 +170,10 @@ public final class GCGMsgCharDieOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardGuid_ != 0) {
-        output.writeUInt32(6, cardGuid_);
+        output.writeUInt32(1, cardGuid_);
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(11, controllerId_);
+        output.writeUInt32(10, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +186,11 @@ public final class GCGMsgCharDieOuterClass {
       size = 0;
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cardGuid_);
+          .computeUInt32Size(1, cardGuid_);
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, controllerId_);
+          .computeUInt32Size(10, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +207,10 @@ public final class GCGMsgCharDieOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie other = (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) obj;
 
-      if (getCardGuid()
-          != other.getCardGuid()) return false;
       if (getControllerId()
           != other.getControllerId()) return false;
+      if (getCardGuid()
+          != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +222,10 @@ public final class GCGMsgCharDieOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardGuid();
       hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +322,6 @@ public final class GCGMsgCharDieOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EKNOEMBAOBD
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgCharDie}
      */
     public static final class Builder extends
@@ -351,9 +359,9 @@ public final class GCGMsgCharDieOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardGuid_ = 0;
-
         controllerId_ = 0;
+
+        cardGuid_ = 0;
 
         return this;
       }
@@ -381,8 +389,8 @@ public final class GCGMsgCharDieOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie buildPartial() {
         emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie result = new emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie(this);
-        result.cardGuid_ = cardGuid_;
         result.controllerId_ = controllerId_;
+        result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
       }
@@ -431,11 +439,11 @@ public final class GCGMsgCharDieOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie other) {
         if (other == emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance()) return this;
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
-        }
         if (other.getControllerId() != 0) {
           setControllerId(other.getControllerId());
+        }
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +474,13 @@ public final class GCGMsgCharDieOuterClass {
         return this;
       }
 
-      private int cardGuid_ ;
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @return The cardGuid.
-       */
-      @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
-      }
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @param value The cardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardGuid(int value) {
-        
-        cardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_guid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardGuid() {
-        
-        cardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 10;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -507,7 +488,11 @@ public final class GCGMsgCharDieOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 10;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -518,12 +503,59 @@ public final class GCGMsgCharDieOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 controller_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
         
         controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardGuid_ ;
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_guid = 1;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_guid = 1;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 card_guid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -594,8 +626,8 @@ public final class GCGMsgCharDieOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGMsgCharDie.proto\"9\n\rGCGMsgCharDie\022\021" +
-      "\n\tcard_guid\030\006 \001(\r\022\025\n\rcontroller_id\030\013 \001(\r" +
+      "\n\023GCGMsgCharDie.proto\"9\n\rGCGMsgCharDie\022\025" +
+      "\n\rcontroller_id\030\n \001(\r\022\021\n\tcard_guid\030\001 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -607,7 +639,7 @@ public final class GCGMsgCharDieOuterClass {
     internal_static_GCGMsgCharDie_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgCharDie_descriptor,
-        new java.lang.String[] { "CardGuid", "ControllerId", });
+        new java.lang.String[] { "ControllerId", "CardGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

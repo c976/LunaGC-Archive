@@ -19,28 +19,36 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string transaction = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 3;</code>
      * @return The transaction.
      */
     java.lang.String getTransaction();
     /**
-     * <code>string transaction = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 3;</code>
      * @return The bytes for transaction.
      */
     com.google.protobuf.ByteString
         getTransactionBytes();
 
     /**
-     * <code>bool MJICPHCAODG = 13;</code>
-     * @return The mJICPHCAODG.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool DJNHPJJELCG = 8;</code>
+     * @return The dJNHPJJELCG.
      */
-    boolean getMJICPHCAODG();
+    boolean getDJNHPJJELCG();
   }
   /**
-   * <pre>
-   * Obf: HGLPJFFJHAD
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryAkaFesRhythmInfo}
    */
   public static final class SceneGalleryAkaFesRhythmInfo extends
@@ -86,15 +94,15 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               transaction_ = s;
               break;
             }
-            case 104: {
+            case 64: {
 
-              mJICPHCAODG_ = input.readBool();
+              dJNHPJJELCG_ = input.readBool();
               break;
             }
             default: {
@@ -129,10 +137,14 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryAkaFesRhythmInfoOuterClass.SceneGalleryAkaFesRhythmInfo.class, emu.grasscutter.net.proto.SceneGalleryAkaFesRhythmInfoOuterClass.SceneGalleryAkaFesRhythmInfo.Builder.class);
     }
 
-    public static final int TRANSACTION_FIELD_NUMBER = 10;
+    public static final int TRANSACTION_FIELD_NUMBER = 3;
     private volatile java.lang.Object transaction_;
     /**
-     * <code>string transaction = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 3;</code>
      * @return The transaction.
      */
     @java.lang.Override
@@ -149,7 +161,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       }
     }
     /**
-     * <code>string transaction = 10;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string transaction = 3;</code>
      * @return The bytes for transaction.
      */
     @java.lang.Override
@@ -167,15 +183,19 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       }
     }
 
-    public static final int MJICPHCAODG_FIELD_NUMBER = 13;
-    private boolean mJICPHCAODG_;
+    public static final int DJNHPJJELCG_FIELD_NUMBER = 8;
+    private boolean dJNHPJJELCG_;
     /**
-     * <code>bool MJICPHCAODG = 13;</code>
-     * @return The mJICPHCAODG.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>bool DJNHPJJELCG = 8;</code>
+     * @return The dJNHPJJELCG.
      */
     @java.lang.Override
-    public boolean getMJICPHCAODG() {
-      return mJICPHCAODG_;
+    public boolean getDJNHPJJELCG() {
+      return dJNHPJJELCG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -193,10 +213,10 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, transaction_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, transaction_);
       }
-      if (mJICPHCAODG_ != false) {
-        output.writeBool(13, mJICPHCAODG_);
+      if (dJNHPJJELCG_ != false) {
+        output.writeBool(8, dJNHPJJELCG_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,11 +228,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, transaction_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, transaction_);
       }
-      if (mJICPHCAODG_ != false) {
+      if (dJNHPJJELCG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, mJICPHCAODG_);
+          .computeBoolSize(8, dJNHPJJELCG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -231,8 +251,8 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
 
       if (!getTransaction()
           .equals(other.getTransaction())) return false;
-      if (getMJICPHCAODG()
-          != other.getMJICPHCAODG()) return false;
+      if (getDJNHPJJELCG()
+          != other.getDJNHPJJELCG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,9 +266,9 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TRANSACTION_FIELD_NUMBER;
       hash = (53 * hash) + getTransaction().hashCode();
-      hash = (37 * hash) + MJICPHCAODG_FIELD_NUMBER;
+      hash = (37 * hash) + DJNHPJJELCG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMJICPHCAODG());
+          getDJNHPJJELCG());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,10 +365,6 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HGLPJFFJHAD
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryAkaFesRhythmInfo}
      */
     public static final class Builder extends
@@ -388,7 +404,7 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         super.clear();
         transaction_ = "";
 
-        mJICPHCAODG_ = false;
+        dJNHPJJELCG_ = false;
 
         return this;
       }
@@ -417,7 +433,7 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryAkaFesRhythmInfoOuterClass.SceneGalleryAkaFesRhythmInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryAkaFesRhythmInfoOuterClass.SceneGalleryAkaFesRhythmInfo result = new emu.grasscutter.net.proto.SceneGalleryAkaFesRhythmInfoOuterClass.SceneGalleryAkaFesRhythmInfo(this);
         result.transaction_ = transaction_;
-        result.mJICPHCAODG_ = mJICPHCAODG_;
+        result.dJNHPJJELCG_ = dJNHPJJELCG_;
         onBuilt();
         return result;
       }
@@ -470,8 +486,8 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
           transaction_ = other.transaction_;
           onChanged();
         }
-        if (other.getMJICPHCAODG() != false) {
-          setMJICPHCAODG(other.getMJICPHCAODG());
+        if (other.getDJNHPJJELCG() != false) {
+          setDJNHPJJELCG(other.getDJNHPJJELCG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,7 +520,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
 
       private java.lang.Object transaction_ = "";
       /**
-       * <code>string transaction = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 3;</code>
        * @return The transaction.
        */
       public java.lang.String getTransaction() {
@@ -520,7 +540,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 3;</code>
        * @return The bytes for transaction.
        */
       public com.google.protobuf.ByteString
@@ -537,7 +561,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         }
       }
       /**
-       * <code>string transaction = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 3;</code>
        * @param value The transaction to set.
        * @return This builder for chaining.
        */
@@ -552,7 +580,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTransaction() {
@@ -562,7 +594,11 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         return this;
       }
       /**
-       * <code>string transaction = 10;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string transaction = 3;</code>
        * @param value The bytes for transaction to set.
        * @return This builder for chaining.
        */
@@ -578,33 +614,45 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
         return this;
       }
 
-      private boolean mJICPHCAODG_ ;
+      private boolean dJNHPJJELCG_ ;
       /**
-       * <code>bool MJICPHCAODG = 13;</code>
-       * @return The mJICPHCAODG.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool DJNHPJJELCG = 8;</code>
+       * @return The dJNHPJJELCG.
        */
       @java.lang.Override
-      public boolean getMJICPHCAODG() {
-        return mJICPHCAODG_;
+      public boolean getDJNHPJJELCG() {
+        return dJNHPJJELCG_;
       }
       /**
-       * <code>bool MJICPHCAODG = 13;</code>
-       * @param value The mJICPHCAODG to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool DJNHPJJELCG = 8;</code>
+       * @param value The dJNHPJJELCG to set.
        * @return This builder for chaining.
        */
-      public Builder setMJICPHCAODG(boolean value) {
+      public Builder setDJNHPJJELCG(boolean value) {
         
-        mJICPHCAODG_ = value;
+        dJNHPJJELCG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool MJICPHCAODG = 13;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>bool DJNHPJJELCG = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMJICPHCAODG() {
+      public Builder clearDJNHPJJELCG() {
         
-        mJICPHCAODG_ = false;
+        dJNHPJJELCG_ = false;
         onChanged();
         return this;
       }
@@ -677,7 +725,7 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"SceneGalleryAkaFesRhythmInfo.proto\"H\n\034" +
       "SceneGalleryAkaFesRhythmInfo\022\023\n\013transact" +
-      "ion\030\n \001(\t\022\023\n\013MJICPHCAODG\030\r \001(\010B\033\n\031emu.gr" +
+      "ion\030\003 \001(\t\022\023\n\013DJNHPJJELCG\030\010 \001(\010B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -689,7 +737,7 @@ public final class SceneGalleryAkaFesRhythmInfoOuterClass {
     internal_static_SceneGalleryAkaFesRhythmInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryAkaFesRhythmInfo_descriptor,
-        new java.lang.String[] { "Transaction", "MJICPHCAODG", });
+        new java.lang.String[] { "Transaction", "DJNHPJJELCG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

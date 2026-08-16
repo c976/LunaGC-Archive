@@ -19,17 +19,16 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_back_id = 7;</code>
+     * <pre>
+     * CMD_ID = 25136
+     * </pre>
+     *
+     * <code>uint32 card_back_id = 12;</code>
      * @return The cardBackId.
      */
     int getCardBackId();
   }
   /**
-   * <pre>
-   * CmdId: 27702
-   * Obf: NECNIDOCACF
-   * </pre>
-   *
    * Protobuf type {@code GCGDSCardBackUnlockNotify}
    */
   public static final class GCGDSCardBackUnlockNotify extends
@@ -74,7 +73,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 96: {
 
               cardBackId_ = input.readUInt32();
               break;
@@ -111,10 +110,14 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSCardBackUnlockNotifyOuterClass.GCGDSCardBackUnlockNotify.class, emu.grasscutter.net.proto.GCGDSCardBackUnlockNotifyOuterClass.GCGDSCardBackUnlockNotify.Builder.class);
     }
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 7;
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 12;
     private int cardBackId_;
     /**
-     * <code>uint32 card_back_id = 7;</code>
+     * <pre>
+     * CMD_ID = 25136
+     * </pre>
+     *
+     * <code>uint32 card_back_id = 12;</code>
      * @return The cardBackId.
      */
     @java.lang.Override
@@ -137,7 +140,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cardBackId_ != 0) {
-        output.writeUInt32(7, cardBackId_);
+        output.writeUInt32(12, cardBackId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +153,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
       size = 0;
       if (cardBackId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cardBackId_);
+          .computeUInt32Size(12, cardBackId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +281,6 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 27702
-     * Obf: NECNIDOCACF
-     * </pre>
-     *
      * Protobuf type {@code GCGDSCardBackUnlockNotify}
      */
     public static final class Builder extends
@@ -431,7 +429,11 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
 
       private int cardBackId_ ;
       /**
-       * <code>uint32 card_back_id = 7;</code>
+       * <pre>
+       * CMD_ID = 25136
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 12;</code>
        * @return The cardBackId.
        */
       @java.lang.Override
@@ -439,7 +441,11 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
         return cardBackId_;
       }
       /**
-       * <code>uint32 card_back_id = 7;</code>
+       * <pre>
+       * CMD_ID = 25136
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 12;</code>
        * @param value The cardBackId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +456,11 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_back_id = 7;</code>
+       * <pre>
+       * CMD_ID = 25136
+       * </pre>
+       *
+       * <code>uint32 card_back_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardBackId() {
@@ -527,7 +537,7 @@ public final class GCGDSCardBackUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037GCGDSCardBackUnlockNotify.proto\"1\n\031GCG" +
-      "DSCardBackUnlockNotify\022\024\n\014card_back_id\030\007" +
+      "DSCardBackUnlockNotify\022\024\n\014card_back_id\030\014" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

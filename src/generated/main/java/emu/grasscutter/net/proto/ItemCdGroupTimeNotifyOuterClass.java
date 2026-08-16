@@ -19,10 +19,18 @@ public final class ItemCdGroupTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     int getItemCdMapCount();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     boolean containsItemCdMap(
@@ -34,11 +42,19 @@ public final class ItemCdGroupTimeNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Long>
     getItemCdMap();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Long>
     getItemCdMapMap();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
 
@@ -46,6 +62,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         int key,
         long defaultValue);
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
 
@@ -54,8 +74,7 @@ public final class ItemCdGroupTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21839
-   * Obf: JBDLPKOJPNC
+   * CmdId: 21298
    * </pre>
    *
    * Protobuf type {@code ItemCdGroupTimeNotify}
@@ -187,6 +206,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
       return internalGetItemCdMap().getMap().size();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
 
@@ -205,6 +228,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
       return getItemCdMapMap();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     @java.lang.Override
@@ -213,6 +240,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
       return internalGetItemCdMap().getMap();
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     @java.lang.Override
@@ -226,6 +257,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
      */
     @java.lang.Override
@@ -409,8 +444,7 @@ public final class ItemCdGroupTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21839
-     * Obf: JBDLPKOJPNC
+     * CmdId: 21298
      * </pre>
      *
      * Protobuf type {@code ItemCdGroupTimeNotify}
@@ -609,6 +643,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return internalGetItemCdMap().getMap().size();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
 
@@ -627,6 +665,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return getItemCdMapMap();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
       @java.lang.Override
@@ -635,6 +677,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return internalGetItemCdMap().getMap();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
       @java.lang.Override
@@ -648,6 +694,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
       @java.lang.Override
@@ -669,6 +719,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
 
@@ -688,6 +742,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return internalGetMutableItemCdMap().getMutableMap();
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
       public Builder putItemCdMap(
@@ -700,6 +758,10 @@ public final class ItemCdGroupTimeNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>map&lt;uint32, uint64&gt; item_cd_map = 7;</code>
        */
 

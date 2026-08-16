@@ -19,41 +19,65 @@ public final class StartCoopPointRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      * @return Whether the startMainCoop field is set.
      */
     boolean hasStartMainCoop();
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      * @return The startMainCoop.
      */
     emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop getStartMainCoop();
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      */
     emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getStartMainCoopOrBuilder();
 
     /**
-     * <code>bool is_start = 13;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_start = 7;</code>
      * @return The isStart.
      */
     boolean getIsStart();
 
     /**
-     * <code>uint32 coop_point = 15;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 coop_point = 5;</code>
      * @return The coopPoint.
      */
     int getCoopPoint();
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 21212
+   * CmdId: 9931
    * </pre>
    *
    * Protobuf type {@code StartCoopPointRsp}
@@ -100,7 +124,22 @@ public final class StartCoopPointRspOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 40: {
+
+              coopPoint_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              isStart_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder subBuilder = null;
               if (startMainCoop_ != null) {
                 subBuilder = startMainCoop_.toBuilder();
@@ -111,21 +150,6 @@ public final class StartCoopPointRspOuterClass {
                 startMainCoop_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 104: {
-
-              isStart_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              coopPoint_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +184,14 @@ public final class StartCoopPointRspOuterClass {
               emu.grasscutter.net.proto.StartCoopPointRspOuterClass.StartCoopPointRsp.class, emu.grasscutter.net.proto.StartCoopPointRspOuterClass.StartCoopPointRsp.Builder.class);
     }
 
-    public static final int START_MAIN_COOP_FIELD_NUMBER = 5;
+    public static final int START_MAIN_COOP_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop startMainCoop_;
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      * @return Whether the startMainCoop field is set.
      */
     @java.lang.Override
@@ -171,7 +199,11 @@ public final class StartCoopPointRspOuterClass {
       return startMainCoop_ != null;
     }
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      * @return The startMainCoop.
      */
     @java.lang.Override
@@ -179,17 +211,40 @@ public final class StartCoopPointRspOuterClass {
       return startMainCoop_ == null ? emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.getDefaultInstance() : startMainCoop_;
     }
     /**
-     * <code>.MainCoop start_main_coop = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>.MainCoop start_main_coop = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getStartMainCoopOrBuilder() {
       return getStartMainCoop();
     }
 
-    public static final int IS_START_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 11;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int IS_START_FIELD_NUMBER = 7;
     private boolean isStart_;
     /**
-     * <code>bool is_start = 13;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool is_start = 7;</code>
      * @return The isStart.
      */
     @java.lang.Override
@@ -197,26 +252,19 @@ public final class StartCoopPointRspOuterClass {
       return isStart_;
     }
 
-    public static final int COOP_POINT_FIELD_NUMBER = 15;
+    public static final int COOP_POINT_FIELD_NUMBER = 5;
     private int coopPoint_;
     /**
-     * <code>uint32 coop_point = 15;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 coop_point = 5;</code>
      * @return The coopPoint.
      */
     @java.lang.Override
     public int getCoopPoint() {
       return coopPoint_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -233,17 +281,17 @@ public final class StartCoopPointRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (startMainCoop_ != null) {
-        output.writeMessage(5, getStartMainCoop());
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+      if (coopPoint_ != 0) {
+        output.writeUInt32(5, coopPoint_);
       }
       if (isStart_ != false) {
-        output.writeBool(13, isStart_);
+        output.writeBool(7, isStart_);
       }
-      if (coopPoint_ != 0) {
-        output.writeUInt32(15, coopPoint_);
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
+      }
+      if (startMainCoop_ != null) {
+        output.writeMessage(13, getStartMainCoop());
       }
       unknownFields.writeTo(output);
     }
@@ -254,21 +302,21 @@ public final class StartCoopPointRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (startMainCoop_ != null) {
+      if (coopPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getStartMainCoop());
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeUInt32Size(5, coopPoint_);
       }
       if (isStart_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isStart_);
+          .computeBoolSize(7, isStart_);
       }
-      if (coopPoint_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, coopPoint_);
+          .computeInt32Size(11, retcode_);
+      }
+      if (startMainCoop_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getStartMainCoop());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,12 +338,12 @@ public final class StartCoopPointRspOuterClass {
         if (!getStartMainCoop()
             .equals(other.getStartMainCoop())) return false;
       }
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getIsStart()
           != other.getIsStart()) return false;
       if (getCoopPoint()
           != other.getCoopPoint()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -311,13 +359,13 @@ public final class StartCoopPointRspOuterClass {
         hash = (37 * hash) + START_MAIN_COOP_FIELD_NUMBER;
         hash = (53 * hash) + getStartMainCoop().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_START_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsStart());
       hash = (37 * hash) + COOP_POINT_FIELD_NUMBER;
       hash = (53 * hash) + getCoopPoint();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -415,7 +463,7 @@ public final class StartCoopPointRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21212
+     * CmdId: 9931
      * </pre>
      *
      * Protobuf type {@code StartCoopPointRsp}
@@ -461,11 +509,11 @@ public final class StartCoopPointRspOuterClass {
           startMainCoop_ = null;
           startMainCoopBuilder_ = null;
         }
+        retcode_ = 0;
+
         isStart_ = false;
 
         coopPoint_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -498,9 +546,9 @@ public final class StartCoopPointRspOuterClass {
         } else {
           result.startMainCoop_ = startMainCoopBuilder_.build();
         }
+        result.retcode_ = retcode_;
         result.isStart_ = isStart_;
         result.coopPoint_ = coopPoint_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -552,14 +600,14 @@ public final class StartCoopPointRspOuterClass {
         if (other.hasStartMainCoop()) {
           mergeStartMainCoop(other.getStartMainCoop());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getIsStart() != false) {
           setIsStart(other.getIsStart());
         }
         if (other.getCoopPoint() != 0) {
           setCoopPoint(other.getCoopPoint());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -594,14 +642,22 @@ public final class StartCoopPointRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> startMainCoopBuilder_;
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        * @return Whether the startMainCoop field is set.
        */
       public boolean hasStartMainCoop() {
         return startMainCoopBuilder_ != null || startMainCoop_ != null;
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        * @return The startMainCoop.
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop getStartMainCoop() {
@@ -612,7 +668,11 @@ public final class StartCoopPointRspOuterClass {
         }
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public Builder setStartMainCoop(emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop value) {
         if (startMainCoopBuilder_ == null) {
@@ -628,7 +688,11 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public Builder setStartMainCoop(
           emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder builderForValue) {
@@ -642,7 +706,11 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public Builder mergeStartMainCoop(emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop value) {
         if (startMainCoopBuilder_ == null) {
@@ -660,7 +728,11 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public Builder clearStartMainCoop() {
         if (startMainCoopBuilder_ == null) {
@@ -674,7 +746,11 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder getStartMainCoopBuilder() {
         
@@ -682,7 +758,11 @@ public final class StartCoopPointRspOuterClass {
         return getStartMainCoopFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       public emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder getStartMainCoopOrBuilder() {
         if (startMainCoopBuilder_ != null) {
@@ -693,7 +773,11 @@ public final class StartCoopPointRspOuterClass {
         }
       }
       /**
-       * <code>.MainCoop start_main_coop = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>.MainCoop start_main_coop = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoop.Builder, emu.grasscutter.net.proto.MainCoopOuterClass.MainCoopOrBuilder> 
@@ -709,9 +793,56 @@ public final class StartCoopPointRspOuterClass {
         return startMainCoopBuilder_;
       }
 
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>int32 retcode = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isStart_ ;
       /**
-       * <code>bool is_start = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_start = 7;</code>
        * @return The isStart.
        */
       @java.lang.Override
@@ -719,7 +850,11 @@ public final class StartCoopPointRspOuterClass {
         return isStart_;
       }
       /**
-       * <code>bool is_start = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_start = 7;</code>
        * @param value The isStart to set.
        * @return This builder for chaining.
        */
@@ -730,7 +865,11 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_start = 13;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool is_start = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsStart() {
@@ -742,7 +881,11 @@ public final class StartCoopPointRspOuterClass {
 
       private int coopPoint_ ;
       /**
-       * <code>uint32 coop_point = 15;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 coop_point = 5;</code>
        * @return The coopPoint.
        */
       @java.lang.Override
@@ -750,7 +893,11 @@ public final class StartCoopPointRspOuterClass {
         return coopPoint_;
       }
       /**
-       * <code>uint32 coop_point = 15;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 coop_point = 5;</code>
        * @param value The coopPoint to set.
        * @return This builder for chaining.
        */
@@ -761,43 +908,16 @@ public final class StartCoopPointRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coop_point = 15;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 coop_point = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoopPoint() {
         
         coopPoint_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -870,8 +990,8 @@ public final class StartCoopPointRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027StartCoopPointRsp.proto\032\016MainCoop.prot" +
       "o\"n\n\021StartCoopPointRsp\022\"\n\017start_main_coo" +
-      "p\030\005 \001(\0132\t.MainCoop\022\020\n\010is_start\030\r \001(\010\022\022\n\n" +
-      "coop_point\030\017 \001(\r\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu" +
+      "p\030\r \001(\0132\t.MainCoop\022\017\n\007retcode\030\013 \001(\005\022\020\n\010i" +
+      "s_start\030\007 \001(\010\022\022\n\ncoop_point\030\005 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -884,7 +1004,7 @@ public final class StartCoopPointRspOuterClass {
     internal_static_StartCoopPointRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartCoopPointRsp_descriptor,
-        new java.lang.String[] { "StartMainCoop", "IsStart", "CoopPoint", "Retcode", });
+        new java.lang.String[] { "StartMainCoop", "Retcode", "IsStart", "CoopPoint", });
     emu.grasscutter.net.proto.MainCoopOuterClass.getDescriptor();
   }
 

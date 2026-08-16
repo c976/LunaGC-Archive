@@ -19,47 +19,79 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool HNDKICJJANM = 4;</code>
-     * @return The hNDKICJJANM.
-     */
-    boolean getHNDKICJJANM();
-
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @return A list containing the affectedTierIdList.
      */
     java.util.List<java.lang.Integer> getAffectedTierIdListList();
     /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @return The count of affectedTierIdList.
      */
     int getAffectedTierIdListCount();
     /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The affectedTierIdList at the given index.
      */
     int getAffectedTierIdList(int index);
 
     /**
-     * <code>uint32 default_reward_type = 9;</code>
-     * @return The defaultRewardType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 reward_type = 13;</code>
+     * @return The rewardType.
      */
-    int getDefaultRewardType();
+    int getRewardType();
 
     /**
-     * <code>bool FKKMIHOEGMG = 12;</code>
-     * @return The fKKMIHOEGMG.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool EDCADDOCMOI = 8;</code>
+     * @return The eDCADDOCMOI.
      */
-    boolean getFKKMIHOEGMG();
+    boolean getEDCADDOCMOI();
+
+    /**
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool NFCEGEFBDDI = 6;</code>
+     * @return The nFCEGEFBDDI.
+     */
+    boolean getNFCEGEFBDDI();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 2480
+   * </pre>
+   *
    * Protobuf type {@code BattlePassChangeRewardPlanRsp}
    */
   public static final class BattlePassChangeRewardPlanRsp extends
@@ -106,17 +138,7 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              hNDKICJJANM_ = input.readBool();
-              break;
-            }
             case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 affectedTierIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +146,7 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
               affectedTierIdList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -137,14 +159,24 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 48: {
 
-              defaultRewardType_ = input.readUInt32();
+              nFCEGEFBDDI_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              eDCADDOCMOI_ = input.readBool();
               break;
             }
             case 96: {
 
-              fKKMIHOEGMG_ = input.readBool();
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+
+              rewardType_ = input.readUInt32();
               break;
             }
             default: {
@@ -182,32 +214,14 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
               emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp.class, emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp.Builder.class);
     }
 
-    public static final int HNDKICJJANM_FIELD_NUMBER = 4;
-    private boolean hNDKICJJANM_;
-    /**
-     * <code>bool HNDKICJJANM = 4;</code>
-     * @return The hNDKICJJANM.
-     */
-    @java.lang.Override
-    public boolean getHNDKICJJANM() {
-      return hNDKICJJANM_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int AFFECTED_TIER_ID_LIST_FIELD_NUMBER = 6;
+    public static final int AFFECTED_TIER_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList affectedTierIdList_;
     /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @return A list containing the affectedTierIdList.
      */
     @java.lang.Override
@@ -216,14 +230,22 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       return affectedTierIdList_;
     }
     /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @return The count of affectedTierIdList.
      */
     public int getAffectedTierIdListCount() {
       return affectedTierIdList_.size();
     }
     /**
-     * <code>repeated uint32 affected_tier_id_list = 6;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 affected_tier_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The affectedTierIdList at the given index.
      */
@@ -232,26 +254,64 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
     }
     private int affectedTierIdListMemoizedSerializedSize = -1;
 
-    public static final int DEFAULT_REWARD_TYPE_FIELD_NUMBER = 9;
-    private int defaultRewardType_;
+    public static final int REWARD_TYPE_FIELD_NUMBER = 13;
+    private int rewardType_;
     /**
-     * <code>uint32 default_reward_type = 9;</code>
-     * @return The defaultRewardType.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 reward_type = 13;</code>
+     * @return The rewardType.
      */
     @java.lang.Override
-    public int getDefaultRewardType() {
-      return defaultRewardType_;
+    public int getRewardType() {
+      return rewardType_;
     }
 
-    public static final int FKKMIHOEGMG_FIELD_NUMBER = 12;
-    private boolean fKKMIHOEGMG_;
+    public static final int EDCADDOCMOI_FIELD_NUMBER = 8;
+    private boolean eDCADDOCMOI_;
     /**
-     * <code>bool FKKMIHOEGMG = 12;</code>
-     * @return The fKKMIHOEGMG.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>bool EDCADDOCMOI = 8;</code>
+     * @return The eDCADDOCMOI.
      */
     @java.lang.Override
-    public boolean getFKKMIHOEGMG() {
-      return fKKMIHOEGMG_;
+    public boolean getEDCADDOCMOI() {
+      return eDCADDOCMOI_;
+    }
+
+    public static final int NFCEGEFBDDI_FIELD_NUMBER = 6;
+    private boolean nFCEGEFBDDI_;
+    /**
+     * <pre>
+     * offset: 45
+     * </pre>
+     *
+     * <code>bool NFCEGEFBDDI = 6;</code>
+     * @return The nFCEGEFBDDI.
+     */
+    @java.lang.Override
+    public boolean getNFCEGEFBDDI() {
+      return nFCEGEFBDDI_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,24 +329,24 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (hNDKICJJANM_ != false) {
-        output.writeBool(4, hNDKICJJANM_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (getAffectedTierIdListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(affectedTierIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < affectedTierIdList_.size(); i++) {
         output.writeUInt32NoTag(affectedTierIdList_.getInt(i));
       }
-      if (defaultRewardType_ != 0) {
-        output.writeUInt32(9, defaultRewardType_);
+      if (nFCEGEFBDDI_ != false) {
+        output.writeBool(6, nFCEGEFBDDI_);
       }
-      if (fKKMIHOEGMG_ != false) {
-        output.writeBool(12, fKKMIHOEGMG_);
+      if (eDCADDOCMOI_ != false) {
+        output.writeBool(8, eDCADDOCMOI_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
+      }
+      if (rewardType_ != 0) {
+        output.writeUInt32(13, rewardType_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,14 +357,6 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hNDKICJJANM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, hNDKICJJANM_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < affectedTierIdList_.size(); i++) {
@@ -319,13 +371,21 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         }
         affectedTierIdListMemoizedSerializedSize = dataSize;
       }
-      if (defaultRewardType_ != 0) {
+      if (nFCEGEFBDDI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, defaultRewardType_);
+          .computeBoolSize(6, nFCEGEFBDDI_);
       }
-      if (fKKMIHOEGMG_ != false) {
+      if (eDCADDOCMOI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, fKKMIHOEGMG_);
+          .computeBoolSize(8, eDCADDOCMOI_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
+      }
+      if (rewardType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, rewardType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,16 +402,16 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp other = (emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp) obj;
 
-      if (getHNDKICJJANM()
-          != other.getHNDKICJJANM()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getAffectedTierIdListList()
           .equals(other.getAffectedTierIdListList())) return false;
-      if (getDefaultRewardType()
-          != other.getDefaultRewardType()) return false;
-      if (getFKKMIHOEGMG()
-          != other.getFKKMIHOEGMG()) return false;
+      if (getRewardType()
+          != other.getRewardType()) return false;
+      if (getEDCADDOCMOI()
+          != other.getEDCADDOCMOI()) return false;
+      if (getNFCEGEFBDDI()
+          != other.getNFCEGEFBDDI()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,20 +423,20 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HNDKICJJANM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHNDKICJJANM());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getAffectedTierIdListCount() > 0) {
         hash = (37 * hash) + AFFECTED_TIER_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAffectedTierIdListList().hashCode();
       }
-      hash = (37 * hash) + DEFAULT_REWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getDefaultRewardType();
-      hash = (37 * hash) + FKKMIHOEGMG_FIELD_NUMBER;
+      hash = (37 * hash) + REWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardType();
+      hash = (37 * hash) + EDCADDOCMOI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFKKMIHOEGMG());
+          getEDCADDOCMOI());
+      hash = (37 * hash) + NFCEGEFBDDI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getNFCEGEFBDDI());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -473,6 +533,10 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2480
+     * </pre>
+     *
      * Protobuf type {@code BattlePassChangeRewardPlanRsp}
      */
     public static final class Builder extends
@@ -510,15 +574,15 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hNDKICJJANM_ = false;
-
-        retcode_ = 0;
-
         affectedTierIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        defaultRewardType_ = 0;
+        rewardType_ = 0;
 
-        fKKMIHOEGMG_ = false;
+        eDCADDOCMOI_ = false;
+
+        nFCEGEFBDDI_ = false;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -547,15 +611,15 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       public emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp buildPartial() {
         emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp result = new emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp(this);
         int from_bitField0_ = bitField0_;
-        result.hNDKICJJANM_ = hNDKICJJANM_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           affectedTierIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.affectedTierIdList_ = affectedTierIdList_;
-        result.defaultRewardType_ = defaultRewardType_;
-        result.fKKMIHOEGMG_ = fKKMIHOEGMG_;
+        result.rewardType_ = rewardType_;
+        result.eDCADDOCMOI_ = eDCADDOCMOI_;
+        result.nFCEGEFBDDI_ = nFCEGEFBDDI_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -604,12 +668,6 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp other) {
         if (other == emu.grasscutter.net.proto.BattlePassChangeRewardPlanRspOuterClass.BattlePassChangeRewardPlanRsp.getDefaultInstance()) return this;
-        if (other.getHNDKICJJANM() != false) {
-          setHNDKICJJANM(other.getHNDKICJJANM());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.affectedTierIdList_.isEmpty()) {
           if (affectedTierIdList_.isEmpty()) {
             affectedTierIdList_ = other.affectedTierIdList_;
@@ -620,11 +678,17 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
           }
           onChanged();
         }
-        if (other.getDefaultRewardType() != 0) {
-          setDefaultRewardType(other.getDefaultRewardType());
+        if (other.getRewardType() != 0) {
+          setRewardType(other.getRewardType());
         }
-        if (other.getFKKMIHOEGMG() != false) {
-          setFKKMIHOEGMG(other.getFKKMIHOEGMG());
+        if (other.getEDCADDOCMOI() != false) {
+          setEDCADDOCMOI(other.getEDCADDOCMOI());
+        }
+        if (other.getNFCEGEFBDDI() != false) {
+          setNFCEGEFBDDI(other.getNFCEGEFBDDI());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -656,68 +720,6 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       }
       private int bitField0_;
 
-      private boolean hNDKICJJANM_ ;
-      /**
-       * <code>bool HNDKICJJANM = 4;</code>
-       * @return The hNDKICJJANM.
-       */
-      @java.lang.Override
-      public boolean getHNDKICJJANM() {
-        return hNDKICJJANM_;
-      }
-      /**
-       * <code>bool HNDKICJJANM = 4;</code>
-       * @param value The hNDKICJJANM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHNDKICJJANM(boolean value) {
-        
-        hNDKICJJANM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool HNDKICJJANM = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHNDKICJJANM() {
-        
-        hNDKICJJANM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList affectedTierIdList_ = emptyIntList();
       private void ensureAffectedTierIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -726,7 +728,11 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @return A list containing the affectedTierIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -735,14 +741,22 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
                  java.util.Collections.unmodifiableList(affectedTierIdList_) : affectedTierIdList_;
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @return The count of affectedTierIdList.
        */
       public int getAffectedTierIdListCount() {
         return affectedTierIdList_.size();
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The affectedTierIdList at the given index.
        */
@@ -750,7 +764,11 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         return affectedTierIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The affectedTierIdList to set.
        * @return This builder for chaining.
@@ -763,7 +781,11 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @param value The affectedTierIdList to add.
        * @return This builder for chaining.
        */
@@ -774,7 +796,11 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @param values The affectedTierIdList to add.
        * @return This builder for chaining.
        */
@@ -787,7 +813,11 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affected_tier_id_list = 6;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 affected_tier_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAffectedTierIdList() {
@@ -797,64 +827,174 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
         return this;
       }
 
-      private int defaultRewardType_ ;
+      private int rewardType_ ;
       /**
-       * <code>uint32 default_reward_type = 9;</code>
-       * @return The defaultRewardType.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 reward_type = 13;</code>
+       * @return The rewardType.
        */
       @java.lang.Override
-      public int getDefaultRewardType() {
-        return defaultRewardType_;
+      public int getRewardType() {
+        return rewardType_;
       }
       /**
-       * <code>uint32 default_reward_type = 9;</code>
-       * @param value The defaultRewardType to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 reward_type = 13;</code>
+       * @param value The rewardType to set.
        * @return This builder for chaining.
        */
-      public Builder setDefaultRewardType(int value) {
+      public Builder setRewardType(int value) {
         
-        defaultRewardType_ = value;
+        rewardType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 default_reward_type = 9;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 reward_type = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDefaultRewardType() {
+      public Builder clearRewardType() {
         
-        defaultRewardType_ = 0;
+        rewardType_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean fKKMIHOEGMG_ ;
+      private boolean eDCADDOCMOI_ ;
       /**
-       * <code>bool FKKMIHOEGMG = 12;</code>
-       * @return The fKKMIHOEGMG.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool EDCADDOCMOI = 8;</code>
+       * @return The eDCADDOCMOI.
        */
       @java.lang.Override
-      public boolean getFKKMIHOEGMG() {
-        return fKKMIHOEGMG_;
+      public boolean getEDCADDOCMOI() {
+        return eDCADDOCMOI_;
       }
       /**
-       * <code>bool FKKMIHOEGMG = 12;</code>
-       * @param value The fKKMIHOEGMG to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool EDCADDOCMOI = 8;</code>
+       * @param value The eDCADDOCMOI to set.
        * @return This builder for chaining.
        */
-      public Builder setFKKMIHOEGMG(boolean value) {
+      public Builder setEDCADDOCMOI(boolean value) {
         
-        fKKMIHOEGMG_ = value;
+        eDCADDOCMOI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool FKKMIHOEGMG = 12;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>bool EDCADDOCMOI = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFKKMIHOEGMG() {
+      public Builder clearEDCADDOCMOI() {
         
-        fKKMIHOEGMG_ = false;
+        eDCADDOCMOI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean nFCEGEFBDDI_ ;
+      /**
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool NFCEGEFBDDI = 6;</code>
+       * @return The nFCEGEFBDDI.
+       */
+      @java.lang.Override
+      public boolean getNFCEGEFBDDI() {
+        return nFCEGEFBDDI_;
+      }
+      /**
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool NFCEGEFBDDI = 6;</code>
+       * @param value The nFCEGEFBDDI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNFCEGEFBDDI(boolean value) {
+        
+        nFCEGEFBDDI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 45
+       * </pre>
+       *
+       * <code>bool NFCEGEFBDDI = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNFCEGEFBDDI() {
+        
+        nFCEGEFBDDI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -925,12 +1065,12 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#BattlePassChangeRewardPlanRsp.proto\"\226\001" +
-      "\n\035BattlePassChangeRewardPlanRsp\022\023\n\013HNDKI" +
-      "CJJANM\030\004 \001(\010\022\017\n\007retcode\030\005 \001(\005\022\035\n\025affecte" +
-      "d_tier_id_list\030\006 \003(\r\022\033\n\023default_reward_t" +
-      "ype\030\t \001(\r\022\023\n\013FKKMIHOEGMG\030\014 \001(\010B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n#BattlePassChangeRewardPlanRsp.proto\"\216\001" +
+      "\n\035BattlePassChangeRewardPlanRsp\022\035\n\025affec" +
+      "ted_tier_id_list\030\005 \003(\r\022\023\n\013reward_type\030\r " +
+      "\001(\r\022\023\n\013EDCADDOCMOI\030\010 \001(\010\022\023\n\013NFCEGEFBDDI\030" +
+      "\006 \001(\010\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -941,7 +1081,7 @@ public final class BattlePassChangeRewardPlanRspOuterClass {
     internal_static_BattlePassChangeRewardPlanRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassChangeRewardPlanRsp_descriptor,
-        new java.lang.String[] { "HNDKICJJANM", "Retcode", "AffectedTierIdList", "DefaultRewardType", "FKKMIHOEGMG", });
+        new java.lang.String[] { "AffectedTierIdList", "RewardType", "EDCADDOCMOI", "NFCEGEFBDDI", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

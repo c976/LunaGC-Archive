@@ -15,49 +15,45 @@ public final class RogueDiaryAvatarDisableStatusOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LPHEHBBIBOG
-   * </pre>
-   *
    * Protobuf enum {@code RogueDiaryAvatarDisableStatus}
    */
   public enum RogueDiaryAvatarDisableStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_NONE = 0;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE = 0;</code>
      */
-    ROGUE_DIARY_AVATAR_DISABLE_NONE(0),
+    NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE(0),
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_DEATH = 1;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DEATH = 1;</code>
      */
-    ROGUE_DIARY_AVATAR_DISABLE_DEATH(1),
+    NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DEATH(1),
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_TIRED = 2;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_TIRED = 2;</code>
      */
-    ROGUE_DIARY_AVATAR_DISABLE_TIRED(2),
+    NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_TIRED(2),
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;</code>
      */
-    ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED(3),
+    NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_NONE = 0;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE = 0;</code>
      */
-    public static final int ROGUE_DIARY_AVATAR_DISABLE_NONE_VALUE = 0;
+    public static final int NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE_VALUE = 0;
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_DEATH = 1;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DEATH = 1;</code>
      */
-    public static final int ROGUE_DIARY_AVATAR_DISABLE_DEATH_VALUE = 1;
+    public static final int NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DEATH_VALUE = 1;
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_TIRED = 2;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_TIRED = 2;</code>
      */
-    public static final int ROGUE_DIARY_AVATAR_DISABLE_TIRED_VALUE = 2;
+    public static final int NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_TIRED_VALUE = 2;
     /**
-     * <code>ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;</code>
+     * <code>NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;</code>
      */
-    public static final int ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED_VALUE = 3;
+    public static final int NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class RogueDiaryAvatarDisableStatusOuterClass {
      */
     public static RogueDiaryAvatarDisableStatus forNumber(int value) {
       switch (value) {
-        case 0: return ROGUE_DIARY_AVATAR_DISABLE_NONE;
-        case 1: return ROGUE_DIARY_AVATAR_DISABLE_DEATH;
-        case 2: return ROGUE_DIARY_AVATAR_DISABLE_TIRED;
-        case 3: return ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED;
+        case 0: return NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE;
+        case 1: return NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DEATH;
+        case 2: return NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_TIRED;
+        case 3: return NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED;
         default: return null;
       }
     }
@@ -153,13 +149,14 @@ public final class RogueDiaryAvatarDisableStatusOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#RogueDiaryAvatarDisableStatus.proto*\273\001" +
-      "\n\035RogueDiaryAvatarDisableStatus\022#\n\037ROGUE" +
-      "_DIARY_AVATAR_DISABLE_NONE\020\000\022$\n ROGUE_DI" +
-      "ARY_AVATAR_DISABLE_DEATH\020\001\022$\n ROGUE_DIAR" +
-      "Y_AVATAR_DISABLE_TIRED\020\002\022)\n%ROGUE_DIARY_" +
-      "AVATAR_DISABLE_DUPLICATED\020\003B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n#RogueDiaryAvatarDisableStatus.proto*\353\001" +
+      "\n\035RogueDiaryAvatarDisableStatus\022/\n+NAKAE" +
+      "OAFKFB_ROGUE_DIARY_AVATAR_DISABLE_NONE\020\000" +
+      "\0220\n,NAKAEOAFKFB_ROGUE_DIARY_AVATAR_DISAB" +
+      "LE_DEATH\020\001\0220\n,NAKAEOAFKFB_ROGUE_DIARY_AV" +
+      "ATAR_DISABLE_TIRED\020\002\0225\n1NAKAEOAFKFB_ROGU" +
+      "E_DIARY_AVATAR_DISABLE_DUPLICATED\020\003B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

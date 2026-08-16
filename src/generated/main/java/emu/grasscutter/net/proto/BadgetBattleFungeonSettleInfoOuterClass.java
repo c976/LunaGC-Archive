@@ -19,41 +19,69 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-     * @return A list containing the oAFBJHKEACL.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+     * @return A list containing the nAJDCIJNJLN.
      */
-    java.util.List<java.lang.Integer> getOAFBJHKEACLList();
+    java.util.List<java.lang.Integer> getNAJDCIJNJLNList();
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-     * @return The count of oAFBJHKEACL.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+     * @return The count of nAJDCIJNJLN.
      */
-    int getOAFBJHKEACLCount();
+    int getNAJDCIJNJLNCount();
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
      * @param index The index of the element to return.
-     * @return The oAFBJHKEACL at the given index.
+     * @return The nAJDCIJNJLN at the given index.
      */
-    int getOAFBJHKEACL(int index);
+    int getNAJDCIJNJLN(int index);
 
     /**
-     * <code>uint32 difficulty = 3;</code>
-     * @return The difficulty.
-     */
-    int getDifficulty();
-
-    /**
-     * <code>uint32 score = 7;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>uint32 level_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 10;</code>
+     * @return The difficulty.
+     */
+    int getDifficulty();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
@@ -72,7 +100,7 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       super(builder);
     }
     private BadgetBattleFungeonSettleInfo() {
-      oAFBJHKEACL_ = emptyIntList();
+      nAJDCIJNJLN_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -108,33 +136,23 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
               break;
             case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oAFBJHKEACL_ = newIntList();
+                nAJDCIJNJLN_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              oAFBJHKEACL_.addInt(input.readUInt32());
+              nAJDCIJNJLN_.addInt(input.readUInt32());
               break;
             }
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                oAFBJHKEACL_ = newIntList();
+                nAJDCIJNJLN_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oAFBJHKEACL_.addInt(input.readUInt32());
+                nAJDCIJNJLN_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              score_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -142,7 +160,17 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
               isNewRecord_ = input.readBool();
               break;
             }
+            case 72: {
+
+              score_ = input.readUInt32();
+              break;
+            }
             case 80: {
+
+              difficulty_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               levelId_ = input.readUInt32();
               break;
@@ -163,7 +191,7 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          oAFBJHKEACL_.makeImmutable(); // C
+          nAJDCIJNJLN_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -182,60 +210,54 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo.class, emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo.Builder.class);
     }
 
-    public static final int OAFBJHKEACL_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList oAFBJHKEACL_;
+    public static final int NAJDCIJNJLN_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList nAJDCIJNJLN_;
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-     * @return A list containing the oAFBJHKEACL.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+     * @return A list containing the nAJDCIJNJLN.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOAFBJHKEACLList() {
-      return oAFBJHKEACL_;
+        getNAJDCIJNJLNList() {
+      return nAJDCIJNJLN_;
     }
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-     * @return The count of oAFBJHKEACL.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+     * @return The count of nAJDCIJNJLN.
      */
-    public int getOAFBJHKEACLCount() {
-      return oAFBJHKEACL_.size();
+    public int getNAJDCIJNJLNCount() {
+      return nAJDCIJNJLN_.size();
     }
     /**
-     * <code>repeated uint32 OAFBJHKEACL = 1;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
      * @param index The index of the element to return.
-     * @return The oAFBJHKEACL at the given index.
+     * @return The nAJDCIJNJLN at the given index.
      */
-    public int getOAFBJHKEACL(int index) {
-      return oAFBJHKEACL_.getInt(index);
+    public int getNAJDCIJNJLN(int index) {
+      return nAJDCIJNJLN_.getInt(index);
     }
-    private int oAFBJHKEACLMemoizedSerializedSize = -1;
+    private int nAJDCIJNJLNMemoizedSerializedSize = -1;
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 3;
-    private int difficulty_;
-    /**
-     * <code>uint32 difficulty = 3;</code>
-     * @return The difficulty.
-     */
-    @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 7;
-    private int score_;
-    /**
-     * <code>uint32 score = 7;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -243,9 +265,43 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       return levelId_;
     }
 
+    public static final int DIFFICULTY_FIELD_NUMBER = 10;
+    private int difficulty_;
+    /**
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 difficulty = 10;</code>
+     * @return The difficulty.
+     */
+    @java.lang.Override
+    public int getDifficulty() {
+      return difficulty_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 9;
+    private int score_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 score = 9;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
     public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
     private boolean isNewRecord_;
     /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
      * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
@@ -269,24 +325,24 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getOAFBJHKEACLList().size() > 0) {
+      if (getNAJDCIJNJLNList().size() > 0) {
         output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(oAFBJHKEACLMemoizedSerializedSize);
+        output.writeUInt32NoTag(nAJDCIJNJLNMemoizedSerializedSize);
       }
-      for (int i = 0; i < oAFBJHKEACL_.size(); i++) {
-        output.writeUInt32NoTag(oAFBJHKEACL_.getInt(i));
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(3, difficulty_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(7, score_);
+      for (int i = 0; i < nAJDCIJNJLN_.size(); i++) {
+        output.writeUInt32NoTag(nAJDCIJNJLN_.getInt(i));
       }
       if (isNewRecord_ != false) {
         output.writeBool(8, isNewRecord_);
       }
+      if (score_ != 0) {
+        output.writeUInt32(9, score_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(10, difficulty_);
+      }
       if (levelId_ != 0) {
-        output.writeUInt32(10, levelId_);
+        output.writeUInt32(12, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,33 +355,33 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < oAFBJHKEACL_.size(); i++) {
+        for (int i = 0; i < nAJDCIJNJLN_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oAFBJHKEACL_.getInt(i));
+            .computeUInt32SizeNoTag(nAJDCIJNJLN_.getInt(i));
         }
         size += dataSize;
-        if (!getOAFBJHKEACLList().isEmpty()) {
+        if (!getNAJDCIJNJLNList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oAFBJHKEACLMemoizedSerializedSize = dataSize;
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, difficulty_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
+        nAJDCIJNJLNMemoizedSerializedSize = dataSize;
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isNewRecord_);
       }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, score_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, difficulty_);
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelId_);
+          .computeUInt32Size(12, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -342,14 +398,14 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo other = (emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo) obj;
 
-      if (!getOAFBJHKEACLList()
-          .equals(other.getOAFBJHKEACLList())) return false;
+      if (!getNAJDCIJNJLNList()
+          .equals(other.getNAJDCIJNJLNList())) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
       if (getScore()
           != other.getScore()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -363,16 +419,16 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOAFBJHKEACLCount() > 0) {
-        hash = (37 * hash) + OAFBJHKEACL_FIELD_NUMBER;
-        hash = (53 * hash) + getOAFBJHKEACLList().hashCode();
+      if (getNAJDCIJNJLNCount() > 0) {
+        hash = (37 * hash) + NAJDCIJNJLN_FIELD_NUMBER;
+        hash = (53 * hash) + getNAJDCIJNJLNList().hashCode();
       }
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
@@ -509,13 +565,13 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oAFBJHKEACL_ = emptyIntList();
+        nAJDCIJNJLN_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        levelId_ = 0;
+
         difficulty_ = 0;
 
         score_ = 0;
-
-        levelId_ = 0;
 
         isNewRecord_ = false;
 
@@ -547,13 +603,13 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo result = new emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          oAFBJHKEACL_.makeImmutable();
+          nAJDCIJNJLN_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.oAFBJHKEACL_ = oAFBJHKEACL_;
+        result.nAJDCIJNJLN_ = nAJDCIJNJLN_;
+        result.levelId_ = levelId_;
         result.difficulty_ = difficulty_;
         result.score_ = score_;
-        result.levelId_ = levelId_;
         result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
@@ -603,24 +659,24 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo other) {
         if (other == emu.grasscutter.net.proto.BadgetBattleFungeonSettleInfoOuterClass.BadgetBattleFungeonSettleInfo.getDefaultInstance()) return this;
-        if (!other.oAFBJHKEACL_.isEmpty()) {
-          if (oAFBJHKEACL_.isEmpty()) {
-            oAFBJHKEACL_ = other.oAFBJHKEACL_;
+        if (!other.nAJDCIJNJLN_.isEmpty()) {
+          if (nAJDCIJNJLN_.isEmpty()) {
+            nAJDCIJNJLN_ = other.nAJDCIJNJLN_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureOAFBJHKEACLIsMutable();
-            oAFBJHKEACL_.addAll(other.oAFBJHKEACL_);
+            ensureNAJDCIJNJLNIsMutable();
+            nAJDCIJNJLN_.addAll(other.nAJDCIJNJLN_);
           }
           onChanged();
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getDifficulty() != 0) {
           setDifficulty(other.getDifficulty());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
@@ -655,88 +711,163 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList oAFBJHKEACL_ = emptyIntList();
-      private void ensureOAFBJHKEACLIsMutable() {
+      private com.google.protobuf.Internal.IntList nAJDCIJNJLN_ = emptyIntList();
+      private void ensureNAJDCIJNJLNIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          oAFBJHKEACL_ = mutableCopy(oAFBJHKEACL_);
+          nAJDCIJNJLN_ = mutableCopy(nAJDCIJNJLN_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-       * @return A list containing the oAFBJHKEACL.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+       * @return A list containing the nAJDCIJNJLN.
        */
       public java.util.List<java.lang.Integer>
-          getOAFBJHKEACLList() {
+          getNAJDCIJNJLNList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(oAFBJHKEACL_) : oAFBJHKEACL_;
+                 java.util.Collections.unmodifiableList(nAJDCIJNJLN_) : nAJDCIJNJLN_;
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-       * @return The count of oAFBJHKEACL.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+       * @return The count of nAJDCIJNJLN.
        */
-      public int getOAFBJHKEACLCount() {
-        return oAFBJHKEACL_.size();
+      public int getNAJDCIJNJLNCount() {
+        return nAJDCIJNJLN_.size();
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
        * @param index The index of the element to return.
-       * @return The oAFBJHKEACL at the given index.
+       * @return The nAJDCIJNJLN at the given index.
        */
-      public int getOAFBJHKEACL(int index) {
-        return oAFBJHKEACL_.getInt(index);
+      public int getNAJDCIJNJLN(int index) {
+        return nAJDCIJNJLN_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
        * @param index The index to set the value at.
-       * @param value The oAFBJHKEACL to set.
+       * @param value The nAJDCIJNJLN to set.
        * @return This builder for chaining.
        */
-      public Builder setOAFBJHKEACL(
+      public Builder setNAJDCIJNJLN(
           int index, int value) {
-        ensureOAFBJHKEACLIsMutable();
-        oAFBJHKEACL_.setInt(index, value);
+        ensureNAJDCIJNJLNIsMutable();
+        nAJDCIJNJLN_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-       * @param value The oAFBJHKEACL to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+       * @param value The nAJDCIJNJLN to add.
        * @return This builder for chaining.
        */
-      public Builder addOAFBJHKEACL(int value) {
-        ensureOAFBJHKEACLIsMutable();
-        oAFBJHKEACL_.addInt(value);
+      public Builder addNAJDCIJNJLN(int value) {
+        ensureNAJDCIJNJLNIsMutable();
+        nAJDCIJNJLN_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
-       * @param values The oAFBJHKEACL to add.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
+       * @param values The nAJDCIJNJLN to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOAFBJHKEACL(
+      public Builder addAllNAJDCIJNJLN(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOAFBJHKEACLIsMutable();
+        ensureNAJDCIJNJLNIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oAFBJHKEACL_);
+            values, nAJDCIJNJLN_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OAFBJHKEACL = 1;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>repeated uint32 NAJDCIJNJLN = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOAFBJHKEACL() {
-        oAFBJHKEACL_ = emptyIntList();
+      public Builder clearNAJDCIJNJLN() {
+        nAJDCIJNJLN_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 level_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 10;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -744,7 +875,11 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 10;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -755,7 +890,11 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 3;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 difficulty = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -767,7 +906,11 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -775,7 +918,11 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -786,7 +933,11 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 score = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -796,39 +947,12 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 10;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 10;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>bool is_new_record = 8;</code>
        * @return The isNewRecord.
        */
@@ -837,6 +961,10 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>bool is_new_record = 8;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
@@ -848,6 +976,10 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
        * <code>bool is_new_record = 8;</code>
        * @return This builder for chaining.
        */
@@ -925,9 +1057,9 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#BadgetBattleFungeonSettleInfo.proto\"\200\001" +
-      "\n\035BadgetBattleFungeonSettleInfo\022\023\n\013OAFBJ" +
-      "HKEACL\030\001 \003(\r\022\022\n\ndifficulty\030\003 \001(\r\022\r\n\005scor" +
-      "e\030\007 \001(\r\022\020\n\010level_id\030\n \001(\r\022\025\n\ris_new_reco" +
+      "\n\035BadgetBattleFungeonSettleInfo\022\023\n\013NAJDC" +
+      "IJNJLN\030\001 \003(\r\022\020\n\010level_id\030\014 \001(\r\022\022\n\ndiffic" +
+      "ulty\030\n \001(\r\022\r\n\005score\030\t \001(\r\022\025\n\ris_new_reco" +
       "rd\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
@@ -940,7 +1072,7 @@ public final class BadgetBattleFungeonSettleInfoOuterClass {
     internal_static_BadgetBattleFungeonSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BadgetBattleFungeonSettleInfo_descriptor,
-        new java.lang.String[] { "OAFBJHKEACL", "Difficulty", "Score", "LevelId", "IsNewRecord", });
+        new java.lang.String[] { "NAJDCIJNJLN", "LevelId", "Difficulty", "Score", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

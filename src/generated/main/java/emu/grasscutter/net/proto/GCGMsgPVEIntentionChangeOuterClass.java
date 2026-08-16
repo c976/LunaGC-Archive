@@ -19,45 +19,41 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGIntentionChangeType change_type = 11;</code>
-     * @return The enum numeric value on the wire for changeType.
-     */
-    int getChangeTypeValue();
-    /**
-     * <code>.GCGIntentionChangeType change_type = 11;</code>
-     * @return The changeType.
-     */
-    emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType();
-
-    /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> 
         getChangeIntentionListList();
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention getChangeIntentionList(int index);
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     int getChangeIntentionListCount();
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder> 
         getChangeIntentionListOrBuilderList();
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder getChangeIntentionListOrBuilder(
         int index);
+
+    /**
+     * <code>.GCGIntentionChangeType change_type = 15;</code>
+     * @return The enum numeric value on the wire for changeType.
+     */
+    int getChangeTypeValue();
+    /**
+     * <code>.GCGIntentionChangeType change_type = 15;</code>
+     * @return The changeType.
+     */
+    emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType();
   }
   /**
-   * <pre>
-   * Obf: DGLAGCBAICF
-   * </pre>
-   *
    * Protobuf type {@code GCGMsgPVEIntentionChange}
    */
   public static final class GCGMsgPVEIntentionChange extends
@@ -70,8 +66,8 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       super(builder);
     }
     private GCGMsgPVEIntentionChange() {
-      changeType_ = 0;
       changeIntentionList_ = java.util.Collections.emptyList();
+      changeType_ = 0;
     }
 
     @java.lang.Override
@@ -105,7 +101,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 changeIntentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention>();
                 mutable_bitField0_ |= 0x00000001;
@@ -114,7 +110,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 120: {
               int rawValue = input.readEnum();
 
               changeType_ = rawValue;
@@ -155,36 +151,17 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.class, emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder.class);
     }
 
-    public static final int CHANGE_TYPE_FIELD_NUMBER = 11;
-    private int changeType_;
-    /**
-     * <code>.GCGIntentionChangeType change_type = 11;</code>
-     * @return The enum numeric value on the wire for changeType.
-     */
-    @java.lang.Override public int getChangeTypeValue() {
-      return changeType_;
-    }
-    /**
-     * <code>.GCGIntentionChangeType change_type = 11;</code>
-     * @return The changeType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType result = emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.valueOf(changeType_);
-      return result == null ? emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.UNRECOGNIZED : result;
-    }
-
-    public static final int CHANGE_INTENTION_LIST_FIELD_NUMBER = 3;
+    public static final int CHANGE_INTENTION_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> changeIntentionList_;
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> getChangeIntentionListList() {
       return changeIntentionList_;
     }
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder> 
@@ -192,26 +169,45 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       return changeIntentionList_;
     }
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     @java.lang.Override
     public int getChangeIntentionListCount() {
       return changeIntentionList_.size();
     }
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention getChangeIntentionList(int index) {
       return changeIntentionList_.get(index);
     }
     /**
-     * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+     * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder getChangeIntentionListOrBuilder(
         int index) {
       return changeIntentionList_.get(index);
+    }
+
+    public static final int CHANGE_TYPE_FIELD_NUMBER = 15;
+    private int changeType_;
+    /**
+     * <code>.GCGIntentionChangeType change_type = 15;</code>
+     * @return The enum numeric value on the wire for changeType.
+     */
+    @java.lang.Override public int getChangeTypeValue() {
+      return changeType_;
+    }
+    /**
+     * <code>.GCGIntentionChangeType change_type = 15;</code>
+     * @return The changeType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType result = emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.valueOf(changeType_);
+      return result == null ? emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,10 +225,10 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < changeIntentionList_.size(); i++) {
-        output.writeMessage(3, changeIntentionList_.get(i));
+        output.writeMessage(11, changeIntentionList_.get(i));
       }
-      if (changeType_ != emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.GCG_INTENTION_CHANGE_NONE.getNumber()) {
-        output.writeEnum(11, changeType_);
+      if (changeType_ != emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.GCG_INTENTION_CHANGE_TYPE_NONE.getNumber()) {
+        output.writeEnum(15, changeType_);
       }
       unknownFields.writeTo(output);
     }
@@ -245,11 +241,11 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       size = 0;
       for (int i = 0; i < changeIntentionList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, changeIntentionList_.get(i));
+          .computeMessageSize(11, changeIntentionList_.get(i));
       }
-      if (changeType_ != emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.GCG_INTENTION_CHANGE_NONE.getNumber()) {
+      if (changeType_ != emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.GCG_INTENTION_CHANGE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, changeType_);
+          .computeEnumSize(15, changeType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -266,9 +262,9 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange other = (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) obj;
 
-      if (changeType_ != other.changeType_) return false;
       if (!getChangeIntentionListList()
           .equals(other.getChangeIntentionListList())) return false;
+      if (changeType_ != other.changeType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -280,12 +276,12 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHANGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + changeType_;
       if (getChangeIntentionListCount() > 0) {
         hash = (37 * hash) + CHANGE_INTENTION_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChangeIntentionListList().hashCode();
       }
+      hash = (37 * hash) + CHANGE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + changeType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,10 +378,6 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DGLAGCBAICF
-     * </pre>
-     *
      * Protobuf type {@code GCGMsgPVEIntentionChange}
      */
     public static final class Builder extends
@@ -424,14 +416,14 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        changeType_ = 0;
-
         if (changeIntentionListBuilder_ == null) {
           changeIntentionList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           changeIntentionListBuilder_.clear();
         }
+        changeType_ = 0;
+
         return this;
       }
 
@@ -459,7 +451,6 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange result = new emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange(this);
         int from_bitField0_ = bitField0_;
-        result.changeType_ = changeType_;
         if (changeIntentionListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             changeIntentionList_ = java.util.Collections.unmodifiableList(changeIntentionList_);
@@ -469,6 +460,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         } else {
           result.changeIntentionList_ = changeIntentionListBuilder_.build();
         }
+        result.changeType_ = changeType_;
         onBuilt();
         return result;
       }
@@ -517,9 +509,6 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance()) return this;
-        if (other.changeType_ != 0) {
-          setChangeTypeValue(other.getChangeTypeValue());
-        }
         if (changeIntentionListBuilder_ == null) {
           if (!other.changeIntentionList_.isEmpty()) {
             if (changeIntentionList_.isEmpty()) {
@@ -545,6 +534,9 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
               changeIntentionListBuilder_.addAllMessages(other.changeIntentionList_);
             }
           }
+        }
+        if (other.changeType_ != 0) {
+          setChangeTypeValue(other.getChangeTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -576,60 +568,6 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       }
       private int bitField0_;
 
-      private int changeType_ = 0;
-      /**
-       * <code>.GCGIntentionChangeType change_type = 11;</code>
-       * @return The enum numeric value on the wire for changeType.
-       */
-      @java.lang.Override public int getChangeTypeValue() {
-        return changeType_;
-      }
-      /**
-       * <code>.GCGIntentionChangeType change_type = 11;</code>
-       * @param value The enum numeric value on the wire for changeType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeTypeValue(int value) {
-        
-        changeType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGIntentionChangeType change_type = 11;</code>
-       * @return The changeType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType result = emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.valueOf(changeType_);
-        return result == null ? emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGIntentionChangeType change_type = 11;</code>
-       * @param value The changeType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeType(emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        changeType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGIntentionChangeType change_type = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChangeType() {
-        
-        changeType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> changeIntentionList_ =
         java.util.Collections.emptyList();
       private void ensureChangeIntentionListIsMutable() {
@@ -643,7 +581,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
           emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder> changeIntentionListBuilder_;
 
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> getChangeIntentionListList() {
         if (changeIntentionListBuilder_ == null) {
@@ -653,7 +591,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public int getChangeIntentionListCount() {
         if (changeIntentionListBuilder_ == null) {
@@ -663,7 +601,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention getChangeIntentionList(int index) {
         if (changeIntentionListBuilder_ == null) {
@@ -673,7 +611,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder setChangeIntentionList(
           int index, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention value) {
@@ -690,7 +628,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder setChangeIntentionList(
           int index, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder builderForValue) {
@@ -704,7 +642,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder addChangeIntentionList(emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention value) {
         if (changeIntentionListBuilder_ == null) {
@@ -720,7 +658,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder addChangeIntentionList(
           int index, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention value) {
@@ -737,7 +675,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder addChangeIntentionList(
           emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder builderForValue) {
@@ -751,7 +689,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder addChangeIntentionList(
           int index, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder builderForValue) {
@@ -765,7 +703,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder addAllChangeIntentionList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> values) {
@@ -780,7 +718,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder clearChangeIntentionList() {
         if (changeIntentionListBuilder_ == null) {
@@ -793,7 +731,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public Builder removeChangeIntentionList(int index) {
         if (changeIntentionListBuilder_ == null) {
@@ -806,14 +744,14 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder getChangeIntentionListBuilder(
           int index) {
         return getChangeIntentionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder getChangeIntentionListOrBuilder(
           int index) {
@@ -823,7 +761,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntentionOrBuilder> 
            getChangeIntentionListOrBuilderList() {
@@ -834,14 +772,14 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder addChangeIntentionListBuilder() {
         return getChangeIntentionListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder addChangeIntentionListBuilder(
           int index) {
@@ -849,7 +787,7 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
             index, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGMsgPVEIntention change_intention_list = 3;</code>
+       * <code>repeated .GCGMsgPVEIntention change_intention_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention.Builder> 
            getChangeIntentionListBuilderList() {
@@ -868,6 +806,60 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
           changeIntentionList_ = null;
         }
         return changeIntentionListBuilder_;
+      }
+
+      private int changeType_ = 0;
+      /**
+       * <code>.GCGIntentionChangeType change_type = 15;</code>
+       * @return The enum numeric value on the wire for changeType.
+       */
+      @java.lang.Override public int getChangeTypeValue() {
+        return changeType_;
+      }
+      /**
+       * <code>.GCGIntentionChangeType change_type = 15;</code>
+       * @param value The enum numeric value on the wire for changeType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChangeTypeValue(int value) {
+        
+        changeType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGIntentionChangeType change_type = 15;</code>
+       * @return The changeType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType getChangeType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType result = emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.valueOf(changeType_);
+        return result == null ? emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GCGIntentionChangeType change_type = 15;</code>
+       * @param value The changeType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChangeType(emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.GCGIntentionChangeType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        changeType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GCGIntentionChangeType change_type = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChangeType() {
+        
+        changeType_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -936,28 +928,28 @@ public final class GCGMsgPVEIntentionChangeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036GCGMsgPVEIntentionChange.proto\032\034GCGInt" +
-      "entionChangeType.proto\032\030GCGMsgPVEIntenti" +
-      "on.proto\"|\n\030GCGMsgPVEIntentionChange\022,\n\013" +
-      "change_type\030\013 \001(\0162\027.GCGIntentionChangeTy" +
-      "pe\0222\n\025change_intention_list\030\003 \003(\0132\023.GCGM" +
-      "sgPVEIntentionB\033\n\031emu.grasscutter.net.pr" +
+      "\n\036GCGMsgPVEIntentionChange.proto\032\030GCGMsg" +
+      "PVEIntention.proto\032\034GCGIntentionChangeTy" +
+      "pe.proto\"|\n\030GCGMsgPVEIntentionChange\0222\n\025" +
+      "change_intention_list\030\013 \003(\0132\023.GCGMsgPVEI" +
+      "ntention\022,\n\013change_type\030\017 \001(\0162\027.GCGInten" +
+      "tionChangeTypeB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgPVEIntentionChange_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgPVEIntentionChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgPVEIntentionChange_descriptor,
-        new java.lang.String[] { "ChangeType", "ChangeIntentionList", });
-    emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "ChangeIntentionList", "ChangeType", });
     emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGIntentionChangeTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

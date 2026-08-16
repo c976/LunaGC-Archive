@@ -19,39 +19,38 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 1;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_new_record = 8;</code>
-     * @return The isNewRecord.
-     */
-    boolean getIsNewRecord();
-
-    /**
-     * <code>uint32 capture_weakness_count = 2;</code>
+     * <code>uint32 capture_weakness_count = 1;</code>
      * @return The captureWeaknessCount.
      */
     int getCaptureWeaknessCount();
 
     /**
-     * <code>uint32 final_score = 6;</code>
+     * <code>uint32 final_score = 2;</code>
      * @return The finalScore.
      */
     int getFinalScore();
+
+    /**
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    boolean getIsNewRecord();
   }
   /**
    * <pre>
-   * CmdId: 2813
-   * Obf: IMNBJACCFBI
+   * CmdId: 8891
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionDungeonSettleNotify}
@@ -100,25 +99,25 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
               break;
             case 8: {
 
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 16: {
-
               captureWeaknessCount_ = input.readUInt32();
               break;
             }
-            case 24: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               finalScore_ = input.readUInt32();
               break;
             }
             case 64: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              isSuccess_ = input.readBool();
+              break;
+            }
+            case 112: {
 
               isNewRecord_ = input.readBool();
               break;
@@ -155,43 +154,10 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify.class, emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 1;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 1;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
-    private boolean isNewRecord_;
-    /**
-     * <code>bool is_new_record = 8;</code>
-     * @return The isNewRecord.
-     */
-    @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
-    }
-
-    public static final int CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER = 2;
+    public static final int CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER = 1;
     private int captureWeaknessCount_;
     /**
-     * <code>uint32 capture_weakness_count = 2;</code>
+     * <code>uint32 capture_weakness_count = 1;</code>
      * @return The captureWeaknessCount.
      */
     @java.lang.Override
@@ -199,15 +165,48 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       return captureWeaknessCount_;
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 6;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 2;
     private int finalScore_;
     /**
-     * <code>uint32 final_score = 6;</code>
+     * <code>uint32 final_score = 2;</code>
      * @return The finalScore.
      */
     @java.lang.Override
     public int getFinalScore() {
       return finalScore_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    private boolean isNewRecord_;
+    /**
+     * <code>bool is_new_record = 14;</code>
+     * @return The isNewRecord.
+     */
+    @java.lang.Override
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,20 +223,20 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(1, isSuccess_);
-      }
       if (captureWeaknessCount_ != 0) {
-        output.writeUInt32(2, captureWeaknessCount_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+        output.writeUInt32(1, captureWeaknessCount_);
       }
       if (finalScore_ != 0) {
-        output.writeUInt32(6, finalScore_);
+        output.writeUInt32(2, finalScore_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(8, levelId_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(10, isSuccess_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(8, isNewRecord_);
+        output.writeBool(14, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -248,25 +247,25 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isSuccess_);
-      }
       if (captureWeaknessCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, captureWeaknessCount_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(1, captureWeaknessCount_);
       }
       if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, finalScore_);
+          .computeUInt32Size(2, finalScore_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, levelId_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isSuccess_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNewRecord_);
+          .computeBoolSize(14, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -283,16 +282,16 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify other = (emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify) obj;
 
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
       if (getCaptureWeaknessCount()
           != other.getCaptureWeaknessCount()) return false;
       if (getFinalScore()
           != other.getFinalScore()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -304,18 +303,18 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewRecord());
       hash = (37 * hash) + CAPTURE_WEAKNESS_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCaptureWeaknessCount();
       hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFinalScore();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
+      hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsNewRecord());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,8 +412,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2813
-     * Obf: IMNBJACCFBI
+     * CmdId: 8891
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionDungeonSettleNotify}
@@ -454,15 +452,15 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSuccess_ = false;
-
-        levelId_ = 0;
-
-        isNewRecord_ = false;
-
         captureWeaknessCount_ = 0;
 
         finalScore_ = 0;
+
+        levelId_ = 0;
+
+        isSuccess_ = false;
+
+        isNewRecord_ = false;
 
         return this;
       }
@@ -490,11 +488,11 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify buildPartial() {
         emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify result = new emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify(this);
-        result.isSuccess_ = isSuccess_;
-        result.levelId_ = levelId_;
-        result.isNewRecord_ = isNewRecord_;
         result.captureWeaknessCount_ = captureWeaknessCount_;
         result.finalScore_ = finalScore_;
+        result.levelId_ = levelId_;
+        result.isSuccess_ = isSuccess_;
+        result.isNewRecord_ = isNewRecord_;
         onBuilt();
         return result;
       }
@@ -543,20 +541,20 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify other) {
         if (other == emu.grasscutter.net.proto.MuqadasPotionDungeonSettleNotifyOuterClass.MuqadasPotionDungeonSettleNotify.getDefaultInstance()) return this;
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
-        }
         if (other.getCaptureWeaknessCount() != 0) {
           setCaptureWeaknessCount(other.getCaptureWeaknessCount());
         }
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
+        }
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,102 +585,9 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
         return this;
       }
 
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 1;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 1;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 8;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 8;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
-        onChanged();
-        return this;
-      }
-
       private int captureWeaknessCount_ ;
       /**
-       * <code>uint32 capture_weakness_count = 2;</code>
+       * <code>uint32 capture_weakness_count = 1;</code>
        * @return The captureWeaknessCount.
        */
       @java.lang.Override
@@ -690,7 +595,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
         return captureWeaknessCount_;
       }
       /**
-       * <code>uint32 capture_weakness_count = 2;</code>
+       * <code>uint32 capture_weakness_count = 1;</code>
        * @param value The captureWeaknessCount to set.
        * @return This builder for chaining.
        */
@@ -701,7 +606,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 capture_weakness_count = 2;</code>
+       * <code>uint32 capture_weakness_count = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCaptureWeaknessCount() {
@@ -713,7 +618,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
 
       private int finalScore_ ;
       /**
-       * <code>uint32 final_score = 6;</code>
+       * <code>uint32 final_score = 2;</code>
        * @return The finalScore.
        */
       @java.lang.Override
@@ -721,7 +626,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
         return finalScore_;
       }
       /**
-       * <code>uint32 final_score = 6;</code>
+       * <code>uint32 final_score = 2;</code>
        * @param value The finalScore to set.
        * @return This builder for chaining.
        */
@@ -732,12 +637,105 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 final_score = 6;</code>
+       * <code>uint32 final_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinalScore() {
         
         finalScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 10;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 10;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
         onChanged();
         return this;
       }
@@ -809,10 +807,10 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&MuqadasPotionDungeonSettleNotify.proto" +
-      "\"\224\001\n MuqadasPotionDungeonSettleNotify\022\022\n" +
-      "\nis_success\030\001 \001(\010\022\020\n\010level_id\030\003 \001(\r\022\025\n\ri" +
-      "s_new_record\030\010 \001(\010\022\036\n\026capture_weakness_c" +
-      "ount\030\002 \001(\r\022\023\n\013final_score\030\006 \001(\rB\033\n\031emu.g" +
+      "\"\224\001\n MuqadasPotionDungeonSettleNotify\022\036\n" +
+      "\026capture_weakness_count\030\001 \001(\r\022\023\n\013final_s" +
+      "core\030\002 \001(\r\022\020\n\010level_id\030\010 \001(\r\022\022\n\nis_succe" +
+      "ss\030\n \001(\010\022\025\n\ris_new_record\030\016 \001(\010B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -824,7 +822,7 @@ public final class MuqadasPotionDungeonSettleNotifyOuterClass {
     internal_static_MuqadasPotionDungeonSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MuqadasPotionDungeonSettleNotify_descriptor,
-        new java.lang.String[] { "IsSuccess", "LevelId", "IsNewRecord", "CaptureWeaknessCount", "FinalScore", });
+        new java.lang.String[] { "CaptureWeaknessCount", "FinalScore", "LevelId", "IsSuccess", "IsNewRecord", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

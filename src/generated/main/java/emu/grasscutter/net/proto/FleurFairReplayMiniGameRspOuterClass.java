@@ -19,21 +19,20 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 minigame_id = 10;</code>
+     * <code>uint32 minigame_id = 8;</code>
      * @return The minigameId.
      */
     int getMinigameId();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 29110
-   * Obf: EEGCAFOLNOG
+   * CmdId: 9854
    * </pre>
    *
    * Protobuf type {@code FleurFairReplayMiniGameRsp}
@@ -80,14 +79,14 @@ public final class FleurFairReplayMiniGameRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
+            case 64: {
 
               minigameId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class FleurFairReplayMiniGameRspOuterClass {
               emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp.class, emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MINIGAME_ID_FIELD_NUMBER = 10;
+    public static final int MINIGAME_ID_FIELD_NUMBER = 8;
     private int minigameId_;
     /**
-     * <code>uint32 minigame_id = 10;</code>
+     * <code>uint32 minigame_id = 8;</code>
      * @return The minigameId.
      */
     @java.lang.Override
     public int getMinigameId() {
       return minigameId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class FleurFairReplayMiniGameRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (minigameId_ != 0) {
-        output.writeUInt32(10, minigameId_);
+        output.writeUInt32(8, minigameId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       if (minigameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, minigameId_);
+          .computeUInt32Size(8, minigameId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp other = (emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getMinigameId()
           != other.getMinigameId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + MINIGAME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMinigameId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class FleurFairReplayMiniGameRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29110
-     * Obf: EEGCAFOLNOG
+     * CmdId: 9854
      * </pre>
      *
      * Protobuf type {@code FleurFairReplayMiniGameRsp}
@@ -353,9 +351,9 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         minigameId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class FleurFairReplayMiniGameRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp buildPartial() {
         emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp result = new emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp(this);
-        result.retcode_ = retcode_;
         result.minigameId_ = minigameId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class FleurFairReplayMiniGameRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp other) {
         if (other == emu.grasscutter.net.proto.FleurFairReplayMiniGameRspOuterClass.FleurFairReplayMiniGameRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getMinigameId() != 0) {
           setMinigameId(other.getMinigameId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,9 @@ public final class FleurFairReplayMiniGameRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int minigameId_ ;
       /**
-       * <code>uint32 minigame_id = 10;</code>
+       * <code>uint32 minigame_id = 8;</code>
        * @return The minigameId.
        */
       @java.lang.Override
@@ -509,7 +476,7 @@ public final class FleurFairReplayMiniGameRspOuterClass {
         return minigameId_;
       }
       /**
-       * <code>uint32 minigame_id = 10;</code>
+       * <code>uint32 minigame_id = 8;</code>
        * @param value The minigameId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +487,43 @@ public final class FleurFairReplayMiniGameRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 minigame_id = 10;</code>
+       * <code>uint32 minigame_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinigameId() {
         
         minigameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class FleurFairReplayMiniGameRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n FleurFairReplayMiniGameRsp.proto\"B\n\032Fl" +
-      "eurFairReplayMiniGameRsp\022\017\n\007retcode\030\004 \001(" +
-      "\005\022\023\n\013minigame_id\030\n \001(\rB\033\n\031emu.grasscutte" +
+      "eurFairReplayMiniGameRsp\022\023\n\013minigame_id\030" +
+      "\010 \001(\r\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +608,7 @@ public final class FleurFairReplayMiniGameRspOuterClass {
     internal_static_FleurFairReplayMiniGameRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairReplayMiniGameRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MinigameId", });
+        new java.lang.String[] { "MinigameId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

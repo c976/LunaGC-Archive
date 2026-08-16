@@ -19,39 +19,38 @@ public final class ChallengeRecordNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 14;</code>
-     * @return The groupId.
-     */
-    int getGroupId();
-
-    /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> 
         getChallengeRecordListList();
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord getChallengeRecordList(int index);
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     int getChallengeRecordListCount();
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder> 
         getChallengeRecordListOrBuilderList();
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder getChallengeRecordListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 group_id = 6;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
   }
   /**
    * <pre>
-   * CmdId: 27022
-   * Obf: KGDDHMLFDGO
+   * CmdId: 29016
    * </pre>
    *
    * Protobuf type {@code ChallengeRecordNotify}
@@ -100,7 +99,7 @@ public final class ChallengeRecordNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 challengeRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord>();
                 mutable_bitField0_ |= 0x00000001;
@@ -109,7 +108,7 @@ public final class ChallengeRecordNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.parser(), extensionRegistry));
               break;
             }
-            case 112: {
+            case 48: {
 
               groupId_ = input.readUInt32();
               break;
@@ -149,28 +148,17 @@ public final class ChallengeRecordNotifyOuterClass {
               emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify.class, emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 14;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 14;</code>
-     * @return The groupId.
-     */
-    @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
-    }
-
-    public static final int CHALLENGE_RECORD_LIST_FIELD_NUMBER = 13;
+    public static final int CHALLENGE_RECORD_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> challengeRecordList_;
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> getChallengeRecordListList() {
       return challengeRecordList_;
     }
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder> 
@@ -178,26 +166,37 @@ public final class ChallengeRecordNotifyOuterClass {
       return challengeRecordList_;
     }
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     @java.lang.Override
     public int getChallengeRecordListCount() {
       return challengeRecordList_.size();
     }
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord getChallengeRecordList(int index) {
       return challengeRecordList_.get(index);
     }
     /**
-     * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+     * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder getChallengeRecordListOrBuilder(
         int index) {
       return challengeRecordList_.get(index);
+    }
+
+    public static final int GROUP_ID_FIELD_NUMBER = 6;
+    private int groupId_;
+    /**
+     * <code>uint32 group_id = 6;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -215,10 +214,10 @@ public final class ChallengeRecordNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < challengeRecordList_.size(); i++) {
-        output.writeMessage(13, challengeRecordList_.get(i));
+        output.writeMessage(4, challengeRecordList_.get(i));
       }
       if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
+        output.writeUInt32(6, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -231,11 +230,11 @@ public final class ChallengeRecordNotifyOuterClass {
       size = 0;
       for (int i = 0; i < challengeRecordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, challengeRecordList_.get(i));
+          .computeMessageSize(4, challengeRecordList_.get(i));
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
+          .computeUInt32Size(6, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,10 +251,10 @@ public final class ChallengeRecordNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify other = (emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify) obj;
 
-      if (getGroupId()
-          != other.getGroupId()) return false;
       if (!getChallengeRecordListList()
           .equals(other.getChallengeRecordListList())) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -267,12 +266,12 @@ public final class ChallengeRecordNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
       if (getChallengeRecordListCount() > 0) {
         hash = (37 * hash) + CHALLENGE_RECORD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChallengeRecordListList().hashCode();
       }
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -370,8 +369,7 @@ public final class ChallengeRecordNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27022
-     * Obf: KGDDHMLFDGO
+     * CmdId: 29016
      * </pre>
      *
      * Protobuf type {@code ChallengeRecordNotify}
@@ -412,14 +410,14 @@ public final class ChallengeRecordNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        groupId_ = 0;
-
         if (challengeRecordListBuilder_ == null) {
           challengeRecordList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           challengeRecordListBuilder_.clear();
         }
+        groupId_ = 0;
+
         return this;
       }
 
@@ -447,7 +445,6 @@ public final class ChallengeRecordNotifyOuterClass {
       public emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify buildPartial() {
         emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify result = new emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify(this);
         int from_bitField0_ = bitField0_;
-        result.groupId_ = groupId_;
         if (challengeRecordListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             challengeRecordList_ = java.util.Collections.unmodifiableList(challengeRecordList_);
@@ -457,6 +454,7 @@ public final class ChallengeRecordNotifyOuterClass {
         } else {
           result.challengeRecordList_ = challengeRecordListBuilder_.build();
         }
+        result.groupId_ = groupId_;
         onBuilt();
         return result;
       }
@@ -505,9 +503,6 @@ public final class ChallengeRecordNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify other) {
         if (other == emu.grasscutter.net.proto.ChallengeRecordNotifyOuterClass.ChallengeRecordNotify.getDefaultInstance()) return this;
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
-        }
         if (challengeRecordListBuilder_ == null) {
           if (!other.challengeRecordList_.isEmpty()) {
             if (challengeRecordList_.isEmpty()) {
@@ -533,6 +528,9 @@ public final class ChallengeRecordNotifyOuterClass {
               challengeRecordListBuilder_.addAllMessages(other.challengeRecordList_);
             }
           }
+        }
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,37 +562,6 @@ public final class ChallengeRecordNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 14;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 14;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> challengeRecordList_ =
         java.util.Collections.emptyList();
       private void ensureChallengeRecordListIsMutable() {
@@ -608,7 +575,7 @@ public final class ChallengeRecordNotifyOuterClass {
           emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder> challengeRecordListBuilder_;
 
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> getChallengeRecordListList() {
         if (challengeRecordListBuilder_ == null) {
@@ -618,7 +585,7 @@ public final class ChallengeRecordNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public int getChallengeRecordListCount() {
         if (challengeRecordListBuilder_ == null) {
@@ -628,7 +595,7 @@ public final class ChallengeRecordNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord getChallengeRecordList(int index) {
         if (challengeRecordListBuilder_ == null) {
@@ -638,7 +605,7 @@ public final class ChallengeRecordNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder setChallengeRecordList(
           int index, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord value) {
@@ -655,7 +622,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder setChallengeRecordList(
           int index, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder builderForValue) {
@@ -669,7 +636,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder addChallengeRecordList(emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord value) {
         if (challengeRecordListBuilder_ == null) {
@@ -685,7 +652,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder addChallengeRecordList(
           int index, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord value) {
@@ -702,7 +669,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder addChallengeRecordList(
           emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder builderForValue) {
@@ -716,7 +683,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder addChallengeRecordList(
           int index, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder builderForValue) {
@@ -730,7 +697,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder addAllChallengeRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord> values) {
@@ -745,7 +712,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder clearChallengeRecordList() {
         if (challengeRecordListBuilder_ == null) {
@@ -758,7 +725,7 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public Builder removeChallengeRecordList(int index) {
         if (challengeRecordListBuilder_ == null) {
@@ -771,14 +738,14 @@ public final class ChallengeRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder getChallengeRecordListBuilder(
           int index) {
         return getChallengeRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder getChallengeRecordListOrBuilder(
           int index) {
@@ -788,7 +755,7 @@ public final class ChallengeRecordNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecordOrBuilder> 
            getChallengeRecordListOrBuilderList() {
@@ -799,14 +766,14 @@ public final class ChallengeRecordNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder addChallengeRecordListBuilder() {
         return getChallengeRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder addChallengeRecordListBuilder(
           int index) {
@@ -814,7 +781,7 @@ public final class ChallengeRecordNotifyOuterClass {
             index, emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChallengeRecord challenge_record_list = 13;</code>
+       * <code>repeated .ChallengeRecord challenge_record_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChallengeRecordOuterClass.ChallengeRecord.Builder> 
            getChallengeRecordListBuilderList() {
@@ -833,6 +800,37 @@ public final class ChallengeRecordNotifyOuterClass {
           challengeRecordList_ = null;
         }
         return challengeRecordListBuilder_;
+      }
+
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 6;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 6;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -902,9 +900,9 @@ public final class ChallengeRecordNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ChallengeRecordNotify.proto\032\025Challenge" +
-      "Record.proto\"Z\n\025ChallengeRecordNotify\022\020\n" +
-      "\010group_id\030\016 \001(\r\022/\n\025challenge_record_list" +
-      "\030\r \003(\0132\020.ChallengeRecordB\033\n\031emu.grasscut" +
+      "Record.proto\"Z\n\025ChallengeRecordNotify\022/\n" +
+      "\025challenge_record_list\030\004 \003(\0132\020.Challenge" +
+      "Record\022\020\n\010group_id\030\006 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -917,7 +915,7 @@ public final class ChallengeRecordNotifyOuterClass {
     internal_static_ChallengeRecordNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChallengeRecordNotify_descriptor,
-        new java.lang.String[] { "GroupId", "ChallengeRecordList", });
+        new java.lang.String[] { "ChallengeRecordList", "GroupId", });
     emu.grasscutter.net.proto.ChallengeRecordOuterClass.getDescriptor();
   }
 

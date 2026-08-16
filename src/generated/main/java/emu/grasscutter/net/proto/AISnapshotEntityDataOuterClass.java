@@ -19,65 +19,19 @@ public final class AISnapshotEntityDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 4;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>uint32 MONLECHIPDH = 10;</code>
-     * @return The mONLECHIPDH.
-     */
-    int getMONLECHIPDH();
-
-    /**
-     * <code>uint32 CFEJHIOCIDN = 8;</code>
-     * @return The cFEJHIOCIDN.
-     */
-    int getCFEJHIOCIDN();
-
-    /**
-     * <code>float CPOCCODHHND = 5;</code>
-     * @return The cPOCCODHHND.
-     */
-    float getCPOCCODHHND();
-
-    /**
-     * <code>float IGNJPGLNHPI = 12;</code>
-     * @return The iGNJPGLNHPI.
-     */
-    float getIGNJPGLNHPI();
-
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> 
-        getFinishedSkillCyclesList();
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index);
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    int getFinishedSkillCyclesCount();
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
-        getFinishedSkillCyclesOrBuilderList();
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
-        int index);
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     int getHittingAvatarsCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     boolean containsHittingAvatars(
         int key);
@@ -88,59 +42,181 @@ public final class AISnapshotEntityDataOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHittingAvatars();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHittingAvatarsMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
 
     int getHittingAvatarsOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
 
     int getHittingAvatarsOrThrow(
         int key);
 
     /**
-     * <code>float HFFKLJAFLNJ = 3;</code>
-     * @return The hFFKLJAFLNJ.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
      */
-    float getHFFKLJAFLNJ();
+    java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> 
+        getFinishedSkillCyclesList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+     */
+    emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index);
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+     */
+    int getFinishedSkillCyclesCount();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
+        getFinishedSkillCyclesOrBuilderList();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+     */
+    emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
+        int index);
 
     /**
-     * <code>float MPNEAAFEJIJ = 6;</code>
-     * @return The mPNEAAFEJIJ.
-     */
-    float getMPNEAAFEJIJ();
-
-    /**
-     * <code>uint32 LCFPBOOCMNP = 9;</code>
-     * @return The lCFPBOOCMNP.
-     */
-    int getLCFPBOOCMNP();
-
-    /**
-     * <code>uint32 LMKIMJLALNM = 15;</code>
-     * @return The lMKIMJLALNM.
-     */
-    int getLMKIMJLALNM();
-
-    /**
-     * <code>uint32 attack_target_id = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 attack_target_id = 12;</code>
      * @return The attackTargetId.
      */
     int getAttackTargetId();
+
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float CDPEGKJGHGE = 15;</code>
+     * @return The cDPEGKJGHGE.
+     */
+    float getCDPEGKJGHGE();
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ACADGEKLGHE = 9;</code>
+     * @return The aCADGEKLGHE.
+     */
+    int getACADGEKLGHE();
+
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 OOENCFDHBJM = 2;</code>
+     * @return The oOENCFDHBJM.
+     */
+    int getOOENCFDHBJM();
+
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>float OEIPIEPCBBF = 10;</code>
+     * @return The oEIPIEPCBBF.
+     */
+    float getOEIPIEPCBBF();
+
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>float KLBONMLLPFE = 14;</code>
+     * @return The kLBONMLLPFE.
+     */
+    float getKLBONMLLPFE();
+
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 GODPCLBFBLJ = 13;</code>
+     * @return The gODPCLBFBLJ.
+     */
+    int getGODPCLBFBLJ();
+
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>float JACIBGDBIHP = 1;</code>
+     * @return The jACIBGDBIHP.
+     */
+    float getJACIBGDBIHP();
+
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 LJFHMNGGKAJ = 7;</code>
+     * @return The lJFHMNGGKAJ.
+     */
+    int getLJFHMNGGKAJ();
   }
   /**
-   * <pre>
-   * Obf: NJBGLLKFBPP
-   * </pre>
-   *
    * Protobuf type {@code AISnapshotEntityData}
    */
   public static final class AISnapshotEntityData extends
@@ -187,51 +263,40 @@ public final class AISnapshotEntityDataOuterClass {
             case 0:
               done = true;
               break;
-            case 29: {
+            case 13: {
 
-              hFFKLJAFLNJ_ = input.readFloat();
+              jACIBGDBIHP_ = input.readFloat();
               break;
             }
-            case 32: {
+            case 16: {
+
+              oOENCFDHBJM_ = input.readUInt32();
+              break;
+            }
+            case 40: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 45: {
-
-              cPOCCODHHND_ = input.readFloat();
-              break;
-            }
-            case 53: {
-
-              mPNEAAFEJIJ_ = input.readFloat();
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                finishedSkillCycles_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              finishedSkillCycles_.add(
+                  input.readMessage(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.parser(), extensionRegistry));
               break;
             }
             case 56: {
 
-              attackTargetId_ = input.readUInt32();
+              lJFHMNGGKAJ_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              cFEJHIOCIDN_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              lCFPBOOCMNP_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              mONLECHIPDH_ = input.readUInt32();
-              break;
-            }
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hittingAvatars_ = com.google.protobuf.MapField.newMapField(
                     HittingAvatarsDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               hittingAvatars__ = input.readMessage(
@@ -240,23 +305,34 @@ public final class AISnapshotEntityDataOuterClass {
                   hittingAvatars__.getKey(), hittingAvatars__.getValue());
               break;
             }
-            case 101: {
+            case 72: {
 
-              iGNJPGLNHPI_ = input.readFloat();
+              aCADGEKLGHE_ = input.readUInt32();
               break;
             }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                finishedSkillCycles_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              finishedSkillCycles_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.parser(), extensionRegistry));
+            case 85: {
+
+              oEIPIEPCBBF_ = input.readFloat();
               break;
             }
-            case 120: {
+            case 96: {
 
-              lMKIMJLALNM_ = input.readUInt32();
+              attackTargetId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              gODPCLBFBLJ_ = input.readUInt32();
+              break;
+            }
+            case 117: {
+
+              kLBONMLLPFE_ = input.readFloat();
+              break;
+            }
+            case 125: {
+
+              cDPEGKJGHGE_ = input.readFloat();
               break;
             }
             default: {
@@ -274,7 +350,7 @@ public final class AISnapshotEntityDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           finishedSkillCycles_ = java.util.Collections.unmodifiableList(finishedSkillCycles_);
         }
         this.unknownFields = unknownFields.build();
@@ -291,7 +367,7 @@ public final class AISnapshotEntityDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 11:
+        case 8:
           return internalGetHittingAvatars();
         default:
           throw new RuntimeException(
@@ -306,102 +382,7 @@ public final class AISnapshotEntityDataOuterClass {
               emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.class, emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 4;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 4;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int MONLECHIPDH_FIELD_NUMBER = 10;
-    private int mONLECHIPDH_;
-    /**
-     * <code>uint32 MONLECHIPDH = 10;</code>
-     * @return The mONLECHIPDH.
-     */
-    @java.lang.Override
-    public int getMONLECHIPDH() {
-      return mONLECHIPDH_;
-    }
-
-    public static final int CFEJHIOCIDN_FIELD_NUMBER = 8;
-    private int cFEJHIOCIDN_;
-    /**
-     * <code>uint32 CFEJHIOCIDN = 8;</code>
-     * @return The cFEJHIOCIDN.
-     */
-    @java.lang.Override
-    public int getCFEJHIOCIDN() {
-      return cFEJHIOCIDN_;
-    }
-
-    public static final int CPOCCODHHND_FIELD_NUMBER = 5;
-    private float cPOCCODHHND_;
-    /**
-     * <code>float CPOCCODHHND = 5;</code>
-     * @return The cPOCCODHHND.
-     */
-    @java.lang.Override
-    public float getCPOCCODHHND() {
-      return cPOCCODHHND_;
-    }
-
-    public static final int IGNJPGLNHPI_FIELD_NUMBER = 12;
-    private float iGNJPGLNHPI_;
-    /**
-     * <code>float IGNJPGLNHPI = 12;</code>
-     * @return The iGNJPGLNHPI.
-     */
-    @java.lang.Override
-    public float getIGNJPGLNHPI() {
-      return iGNJPGLNHPI_;
-    }
-
-    public static final int FINISHED_SKILL_CYCLES_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_;
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
-      return finishedSkillCycles_;
-    }
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
-        getFinishedSkillCyclesOrBuilderList() {
-      return finishedSkillCycles_;
-    }
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    @java.lang.Override
-    public int getFinishedSkillCyclesCount() {
-      return finishedSkillCycles_.size();
-    }
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
-      return finishedSkillCycles_.get(index);
-    }
-    /**
-     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
-        int index) {
-      return finishedSkillCycles_.get(index);
-    }
-
-    public static final int HITTING_AVATARS_FIELD_NUMBER = 11;
+    public static final int HITTING_AVATARS_FIELD_NUMBER = 8;
     private static final class HittingAvatarsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -428,7 +409,11 @@ public final class AISnapshotEntityDataOuterClass {
       return internalGetHittingAvatars().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
 
     @java.lang.Override
@@ -446,7 +431,11 @@ public final class AISnapshotEntityDataOuterClass {
       return getHittingAvatarsMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     @java.lang.Override
 
@@ -454,7 +443,11 @@ public final class AISnapshotEntityDataOuterClass {
       return internalGetHittingAvatars().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     @java.lang.Override
 
@@ -467,7 +460,11 @@ public final class AISnapshotEntityDataOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
      */
     @java.lang.Override
 
@@ -482,59 +479,214 @@ public final class AISnapshotEntityDataOuterClass {
       return map.get(key);
     }
 
-    public static final int HFFKLJAFLNJ_FIELD_NUMBER = 3;
-    private float hFFKLJAFLNJ_;
+    public static final int FINISHED_SKILL_CYCLES_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_;
     /**
-     * <code>float HFFKLJAFLNJ = 3;</code>
-     * @return The hFFKLJAFLNJ.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
      */
     @java.lang.Override
-    public float getHFFKLJAFLNJ() {
-      return hFFKLJAFLNJ_;
+    public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
+      return finishedSkillCycles_;
     }
-
-    public static final int MPNEAAFEJIJ_FIELD_NUMBER = 6;
-    private float mPNEAAFEJIJ_;
     /**
-     * <code>float MPNEAAFEJIJ = 6;</code>
-     * @return The mPNEAAFEJIJ.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
      */
     @java.lang.Override
-    public float getMPNEAAFEJIJ() {
-      return mPNEAAFEJIJ_;
+    public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
+        getFinishedSkillCyclesOrBuilderList() {
+      return finishedSkillCycles_;
     }
-
-    public static final int LCFPBOOCMNP_FIELD_NUMBER = 9;
-    private int lCFPBOOCMNP_;
     /**
-     * <code>uint32 LCFPBOOCMNP = 9;</code>
-     * @return The lCFPBOOCMNP.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
      */
     @java.lang.Override
-    public int getLCFPBOOCMNP() {
-      return lCFPBOOCMNP_;
+    public int getFinishedSkillCyclesCount() {
+      return finishedSkillCycles_.size();
     }
-
-    public static final int LMKIMJLALNM_FIELD_NUMBER = 15;
-    private int lMKIMJLALNM_;
     /**
-     * <code>uint32 LMKIMJLALNM = 15;</code>
-     * @return The lMKIMJLALNM.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
      */
     @java.lang.Override
-    public int getLMKIMJLALNM() {
-      return lMKIMJLALNM_;
+    public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
+      return finishedSkillCycles_.get(index);
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
+        int index) {
+      return finishedSkillCycles_.get(index);
     }
 
-    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 7;
+    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 12;
     private int attackTargetId_;
     /**
-     * <code>uint32 attack_target_id = 7;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 attack_target_id = 12;</code>
      * @return The attackTargetId.
      */
     @java.lang.Override
     public int getAttackTargetId() {
       return attackTargetId_;
+    }
+
+    public static final int CDPEGKJGHGE_FIELD_NUMBER = 15;
+    private float cDPEGKJGHGE_;
+    /**
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>float CDPEGKJGHGE = 15;</code>
+     * @return The cDPEGKJGHGE.
+     */
+    @java.lang.Override
+    public float getCDPEGKJGHGE() {
+      return cDPEGKJGHGE_;
+    }
+
+    public static final int ACADGEKLGHE_FIELD_NUMBER = 9;
+    private int aCADGEKLGHE_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 ACADGEKLGHE = 9;</code>
+     * @return The aCADGEKLGHE.
+     */
+    @java.lang.Override
+    public int getACADGEKLGHE() {
+      return aCADGEKLGHE_;
+    }
+
+    public static final int OOENCFDHBJM_FIELD_NUMBER = 2;
+    private int oOENCFDHBJM_;
+    /**
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 OOENCFDHBJM = 2;</code>
+     * @return The oOENCFDHBJM.
+     */
+    @java.lang.Override
+    public int getOOENCFDHBJM() {
+      return oOENCFDHBJM_;
+    }
+
+    public static final int OEIPIEPCBBF_FIELD_NUMBER = 10;
+    private float oEIPIEPCBBF_;
+    /**
+     * <pre>
+     * offset: 64
+     * </pre>
+     *
+     * <code>float OEIPIEPCBBF = 10;</code>
+     * @return The oEIPIEPCBBF.
+     */
+    @java.lang.Override
+    public float getOEIPIEPCBBF() {
+      return oEIPIEPCBBF_;
+    }
+
+    public static final int KLBONMLLPFE_FIELD_NUMBER = 14;
+    private float kLBONMLLPFE_;
+    /**
+     * <pre>
+     * offset: 68
+     * </pre>
+     *
+     * <code>float KLBONMLLPFE = 14;</code>
+     * @return The kLBONMLLPFE.
+     */
+    @java.lang.Override
+    public float getKLBONMLLPFE() {
+      return kLBONMLLPFE_;
+    }
+
+    public static final int GODPCLBFBLJ_FIELD_NUMBER = 13;
+    private int gODPCLBFBLJ_;
+    /**
+     * <pre>
+     * offset: 72
+     * </pre>
+     *
+     * <code>uint32 GODPCLBFBLJ = 13;</code>
+     * @return The gODPCLBFBLJ.
+     */
+    @java.lang.Override
+    public int getGODPCLBFBLJ() {
+      return gODPCLBFBLJ_;
+    }
+
+    public static final int JACIBGDBIHP_FIELD_NUMBER = 1;
+    private float jACIBGDBIHP_;
+    /**
+     * <pre>
+     * offset: 76
+     * </pre>
+     *
+     * <code>float JACIBGDBIHP = 1;</code>
+     * @return The jACIBGDBIHP.
+     */
+    @java.lang.Override
+    public float getJACIBGDBIHP() {
+      return jACIBGDBIHP_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
+    private int entityId_;
+    /**
+     * <pre>
+     * offset: 80
+     * </pre>
+     *
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int LJFHMNGGKAJ_FIELD_NUMBER = 7;
+    private int lJFHMNGGKAJ_;
+    /**
+     * <pre>
+     * offset: 84
+     * </pre>
+     *
+     * <code>uint32 LJFHMNGGKAJ = 7;</code>
+     * @return The lJFHMNGGKAJ.
+     */
+    @java.lang.Override
+    public int getLJFHMNGGKAJ() {
+      return lJFHMNGGKAJ_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -551,44 +703,44 @@ public final class AISnapshotEntityDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hFFKLJAFLNJ_ != 0F) {
-        output.writeFloat(3, hFFKLJAFLNJ_);
+      if (jACIBGDBIHP_ != 0F) {
+        output.writeFloat(1, jACIBGDBIHP_);
+      }
+      if (oOENCFDHBJM_ != 0) {
+        output.writeUInt32(2, oOENCFDHBJM_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(4, entityId_);
+        output.writeUInt32(5, entityId_);
       }
-      if (cPOCCODHHND_ != 0F) {
-        output.writeFloat(5, cPOCCODHHND_);
+      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
+        output.writeMessage(6, finishedSkillCycles_.get(i));
       }
-      if (mPNEAAFEJIJ_ != 0F) {
-        output.writeFloat(6, mPNEAAFEJIJ_);
-      }
-      if (attackTargetId_ != 0) {
-        output.writeUInt32(7, attackTargetId_);
-      }
-      if (cFEJHIOCIDN_ != 0) {
-        output.writeUInt32(8, cFEJHIOCIDN_);
-      }
-      if (lCFPBOOCMNP_ != 0) {
-        output.writeUInt32(9, lCFPBOOCMNP_);
-      }
-      if (mONLECHIPDH_ != 0) {
-        output.writeUInt32(10, mONLECHIPDH_);
+      if (lJFHMNGGKAJ_ != 0) {
+        output.writeUInt32(7, lJFHMNGGKAJ_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetHittingAvatars(),
           HittingAvatarsDefaultEntryHolder.defaultEntry,
-          11);
-      if (iGNJPGLNHPI_ != 0F) {
-        output.writeFloat(12, iGNJPGLNHPI_);
+          8);
+      if (aCADGEKLGHE_ != 0) {
+        output.writeUInt32(9, aCADGEKLGHE_);
       }
-      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
-        output.writeMessage(13, finishedSkillCycles_.get(i));
+      if (oEIPIEPCBBF_ != 0F) {
+        output.writeFloat(10, oEIPIEPCBBF_);
       }
-      if (lMKIMJLALNM_ != 0) {
-        output.writeUInt32(15, lMKIMJLALNM_);
+      if (attackTargetId_ != 0) {
+        output.writeUInt32(12, attackTargetId_);
+      }
+      if (gODPCLBFBLJ_ != 0) {
+        output.writeUInt32(13, gODPCLBFBLJ_);
+      }
+      if (kLBONMLLPFE_ != 0F) {
+        output.writeFloat(14, kLBONMLLPFE_);
+      }
+      if (cDPEGKJGHGE_ != 0F) {
+        output.writeFloat(15, cDPEGKJGHGE_);
       }
       unknownFields.writeTo(output);
     }
@@ -599,37 +751,25 @@ public final class AISnapshotEntityDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hFFKLJAFLNJ_ != 0F) {
+      if (jACIBGDBIHP_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, hFFKLJAFLNJ_);
+          .computeFloatSize(1, jACIBGDBIHP_);
+      }
+      if (oOENCFDHBJM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, oOENCFDHBJM_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, entityId_);
+          .computeUInt32Size(5, entityId_);
       }
-      if (cPOCCODHHND_ != 0F) {
+      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, cPOCCODHHND_);
+          .computeMessageSize(6, finishedSkillCycles_.get(i));
       }
-      if (mPNEAAFEJIJ_ != 0F) {
+      if (lJFHMNGGKAJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, mPNEAAFEJIJ_);
-      }
-      if (attackTargetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, attackTargetId_);
-      }
-      if (cFEJHIOCIDN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cFEJHIOCIDN_);
-      }
-      if (lCFPBOOCMNP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, lCFPBOOCMNP_);
-      }
-      if (mONLECHIPDH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mONLECHIPDH_);
+          .computeUInt32Size(7, lJFHMNGGKAJ_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetHittingAvatars().getMap().entrySet()) {
@@ -639,19 +779,31 @@ public final class AISnapshotEntityDataOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, hittingAvatars__);
+            .computeMessageSize(8, hittingAvatars__);
       }
-      if (iGNJPGLNHPI_ != 0F) {
+      if (aCADGEKLGHE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(12, iGNJPGLNHPI_);
+          .computeUInt32Size(9, aCADGEKLGHE_);
       }
-      for (int i = 0; i < finishedSkillCycles_.size(); i++) {
+      if (oEIPIEPCBBF_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, finishedSkillCycles_.get(i));
+          .computeFloatSize(10, oEIPIEPCBBF_);
       }
-      if (lMKIMJLALNM_ != 0) {
+      if (attackTargetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, lMKIMJLALNM_);
+          .computeUInt32Size(12, attackTargetId_);
+      }
+      if (gODPCLBFBLJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gODPCLBFBLJ_);
+      }
+      if (kLBONMLLPFE_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(14, kLBONMLLPFE_);
+      }
+      if (cDPEGKJGHGE_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(15, cDPEGKJGHGE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -668,34 +820,34 @@ public final class AISnapshotEntityDataOuterClass {
       }
       emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData other = (emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData) obj;
 
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getMONLECHIPDH()
-          != other.getMONLECHIPDH()) return false;
-      if (getCFEJHIOCIDN()
-          != other.getCFEJHIOCIDN()) return false;
-      if (java.lang.Float.floatToIntBits(getCPOCCODHHND())
-          != java.lang.Float.floatToIntBits(
-              other.getCPOCCODHHND())) return false;
-      if (java.lang.Float.floatToIntBits(getIGNJPGLNHPI())
-          != java.lang.Float.floatToIntBits(
-              other.getIGNJPGLNHPI())) return false;
-      if (!getFinishedSkillCyclesList()
-          .equals(other.getFinishedSkillCyclesList())) return false;
       if (!internalGetHittingAvatars().equals(
           other.internalGetHittingAvatars())) return false;
-      if (java.lang.Float.floatToIntBits(getHFFKLJAFLNJ())
-          != java.lang.Float.floatToIntBits(
-              other.getHFFKLJAFLNJ())) return false;
-      if (java.lang.Float.floatToIntBits(getMPNEAAFEJIJ())
-          != java.lang.Float.floatToIntBits(
-              other.getMPNEAAFEJIJ())) return false;
-      if (getLCFPBOOCMNP()
-          != other.getLCFPBOOCMNP()) return false;
-      if (getLMKIMJLALNM()
-          != other.getLMKIMJLALNM()) return false;
+      if (!getFinishedSkillCyclesList()
+          .equals(other.getFinishedSkillCyclesList())) return false;
       if (getAttackTargetId()
           != other.getAttackTargetId()) return false;
+      if (java.lang.Float.floatToIntBits(getCDPEGKJGHGE())
+          != java.lang.Float.floatToIntBits(
+              other.getCDPEGKJGHGE())) return false;
+      if (getACADGEKLGHE()
+          != other.getACADGEKLGHE()) return false;
+      if (getOOENCFDHBJM()
+          != other.getOOENCFDHBJM()) return false;
+      if (java.lang.Float.floatToIntBits(getOEIPIEPCBBF())
+          != java.lang.Float.floatToIntBits(
+              other.getOEIPIEPCBBF())) return false;
+      if (java.lang.Float.floatToIntBits(getKLBONMLLPFE())
+          != java.lang.Float.floatToIntBits(
+              other.getKLBONMLLPFE())) return false;
+      if (getGODPCLBFBLJ()
+          != other.getGODPCLBFBLJ()) return false;
+      if (java.lang.Float.floatToIntBits(getJACIBGDBIHP())
+          != java.lang.Float.floatToIntBits(
+              other.getJACIBGDBIHP())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getLJFHMNGGKAJ()
+          != other.getLJFHMNGGKAJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -707,38 +859,38 @@ public final class AISnapshotEntityDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + MONLECHIPDH_FIELD_NUMBER;
-      hash = (53 * hash) + getMONLECHIPDH();
-      hash = (37 * hash) + CFEJHIOCIDN_FIELD_NUMBER;
-      hash = (53 * hash) + getCFEJHIOCIDN();
-      hash = (37 * hash) + CPOCCODHHND_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCPOCCODHHND());
-      hash = (37 * hash) + IGNJPGLNHPI_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getIGNJPGLNHPI());
-      if (getFinishedSkillCyclesCount() > 0) {
-        hash = (37 * hash) + FINISHED_SKILL_CYCLES_FIELD_NUMBER;
-        hash = (53 * hash) + getFinishedSkillCyclesList().hashCode();
-      }
       if (!internalGetHittingAvatars().getMap().isEmpty()) {
         hash = (37 * hash) + HITTING_AVATARS_FIELD_NUMBER;
         hash = (53 * hash) + internalGetHittingAvatars().hashCode();
       }
-      hash = (37 * hash) + HFFKLJAFLNJ_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getHFFKLJAFLNJ());
-      hash = (37 * hash) + MPNEAAFEJIJ_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getMPNEAAFEJIJ());
-      hash = (37 * hash) + LCFPBOOCMNP_FIELD_NUMBER;
-      hash = (53 * hash) + getLCFPBOOCMNP();
-      hash = (37 * hash) + LMKIMJLALNM_FIELD_NUMBER;
-      hash = (53 * hash) + getLMKIMJLALNM();
+      if (getFinishedSkillCyclesCount() > 0) {
+        hash = (37 * hash) + FINISHED_SKILL_CYCLES_FIELD_NUMBER;
+        hash = (53 * hash) + getFinishedSkillCyclesList().hashCode();
+      }
       hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAttackTargetId();
+      hash = (37 * hash) + CDPEGKJGHGE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCDPEGKJGHGE());
+      hash = (37 * hash) + ACADGEKLGHE_FIELD_NUMBER;
+      hash = (53 * hash) + getACADGEKLGHE();
+      hash = (37 * hash) + OOENCFDHBJM_FIELD_NUMBER;
+      hash = (53 * hash) + getOOENCFDHBJM();
+      hash = (37 * hash) + OEIPIEPCBBF_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getOEIPIEPCBBF());
+      hash = (37 * hash) + KLBONMLLPFE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getKLBONMLLPFE());
+      hash = (37 * hash) + GODPCLBFBLJ_FIELD_NUMBER;
+      hash = (53 * hash) + getGODPCLBFBLJ();
+      hash = (37 * hash) + JACIBGDBIHP_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getJACIBGDBIHP());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + LJFHMNGGKAJ_FIELD_NUMBER;
+      hash = (53 * hash) + getLJFHMNGGKAJ();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -835,10 +987,6 @@ public final class AISnapshotEntityDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NJBGLLKFBPP
-     * </pre>
-     *
      * Protobuf type {@code AISnapshotEntityData}
      */
     public static final class Builder extends
@@ -854,7 +1002,7 @@ public final class AISnapshotEntityDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 8:
             return internalGetHittingAvatars();
           default:
             throw new RuntimeException(
@@ -865,7 +1013,7 @@ public final class AISnapshotEntityDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 11:
+          case 8:
             return internalGetMutableHittingAvatars();
           default:
             throw new RuntimeException(
@@ -899,32 +1047,32 @@ public final class AISnapshotEntityDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entityId_ = 0;
-
-        mONLECHIPDH_ = 0;
-
-        cFEJHIOCIDN_ = 0;
-
-        cPOCCODHHND_ = 0F;
-
-        iGNJPGLNHPI_ = 0F;
-
+        internalGetMutableHittingAvatars().clear();
         if (finishedSkillCyclesBuilder_ == null) {
           finishedSkillCycles_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           finishedSkillCyclesBuilder_.clear();
         }
-        internalGetMutableHittingAvatars().clear();
-        hFFKLJAFLNJ_ = 0F;
-
-        mPNEAAFEJIJ_ = 0F;
-
-        lCFPBOOCMNP_ = 0;
-
-        lMKIMJLALNM_ = 0;
-
         attackTargetId_ = 0;
+
+        cDPEGKJGHGE_ = 0F;
+
+        aCADGEKLGHE_ = 0;
+
+        oOENCFDHBJM_ = 0;
+
+        oEIPIEPCBBF_ = 0F;
+
+        kLBONMLLPFE_ = 0F;
+
+        gODPCLBFBLJ_ = 0;
+
+        jACIBGDBIHP_ = 0F;
+
+        entityId_ = 0;
+
+        lJFHMNGGKAJ_ = 0;
 
         return this;
       }
@@ -953,27 +1101,27 @@ public final class AISnapshotEntityDataOuterClass {
       public emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData buildPartial() {
         emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData result = new emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData(this);
         int from_bitField0_ = bitField0_;
-        result.entityId_ = entityId_;
-        result.mONLECHIPDH_ = mONLECHIPDH_;
-        result.cFEJHIOCIDN_ = cFEJHIOCIDN_;
-        result.cPOCCODHHND_ = cPOCCODHHND_;
-        result.iGNJPGLNHPI_ = iGNJPGLNHPI_;
+        result.hittingAvatars_ = internalGetHittingAvatars();
+        result.hittingAvatars_.makeImmutable();
         if (finishedSkillCyclesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             finishedSkillCycles_ = java.util.Collections.unmodifiableList(finishedSkillCycles_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.finishedSkillCycles_ = finishedSkillCycles_;
         } else {
           result.finishedSkillCycles_ = finishedSkillCyclesBuilder_.build();
         }
-        result.hittingAvatars_ = internalGetHittingAvatars();
-        result.hittingAvatars_.makeImmutable();
-        result.hFFKLJAFLNJ_ = hFFKLJAFLNJ_;
-        result.mPNEAAFEJIJ_ = mPNEAAFEJIJ_;
-        result.lCFPBOOCMNP_ = lCFPBOOCMNP_;
-        result.lMKIMJLALNM_ = lMKIMJLALNM_;
         result.attackTargetId_ = attackTargetId_;
+        result.cDPEGKJGHGE_ = cDPEGKJGHGE_;
+        result.aCADGEKLGHE_ = aCADGEKLGHE_;
+        result.oOENCFDHBJM_ = oOENCFDHBJM_;
+        result.oEIPIEPCBBF_ = oEIPIEPCBBF_;
+        result.kLBONMLLPFE_ = kLBONMLLPFE_;
+        result.gODPCLBFBLJ_ = gODPCLBFBLJ_;
+        result.jACIBGDBIHP_ = jACIBGDBIHP_;
+        result.entityId_ = entityId_;
+        result.lJFHMNGGKAJ_ = lJFHMNGGKAJ_;
         onBuilt();
         return result;
       }
@@ -1022,26 +1170,13 @@ public final class AISnapshotEntityDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData other) {
         if (other == emu.grasscutter.net.proto.AISnapshotEntityDataOuterClass.AISnapshotEntityData.getDefaultInstance()) return this;
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
-        if (other.getMONLECHIPDH() != 0) {
-          setMONLECHIPDH(other.getMONLECHIPDH());
-        }
-        if (other.getCFEJHIOCIDN() != 0) {
-          setCFEJHIOCIDN(other.getCFEJHIOCIDN());
-        }
-        if (other.getCPOCCODHHND() != 0F) {
-          setCPOCCODHHND(other.getCPOCCODHHND());
-        }
-        if (other.getIGNJPGLNHPI() != 0F) {
-          setIGNJPGLNHPI(other.getIGNJPGLNHPI());
-        }
+        internalGetMutableHittingAvatars().mergeFrom(
+            other.internalGetHittingAvatars());
         if (finishedSkillCyclesBuilder_ == null) {
           if (!other.finishedSkillCycles_.isEmpty()) {
             if (finishedSkillCycles_.isEmpty()) {
               finishedSkillCycles_ = other.finishedSkillCycles_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureFinishedSkillCyclesIsMutable();
               finishedSkillCycles_.addAll(other.finishedSkillCycles_);
@@ -1054,7 +1189,7 @@ public final class AISnapshotEntityDataOuterClass {
               finishedSkillCyclesBuilder_.dispose();
               finishedSkillCyclesBuilder_ = null;
               finishedSkillCycles_ = other.finishedSkillCycles_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               finishedSkillCyclesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getFinishedSkillCyclesFieldBuilder() : null;
@@ -1063,22 +1198,35 @@ public final class AISnapshotEntityDataOuterClass {
             }
           }
         }
-        internalGetMutableHittingAvatars().mergeFrom(
-            other.internalGetHittingAvatars());
-        if (other.getHFFKLJAFLNJ() != 0F) {
-          setHFFKLJAFLNJ(other.getHFFKLJAFLNJ());
-        }
-        if (other.getMPNEAAFEJIJ() != 0F) {
-          setMPNEAAFEJIJ(other.getMPNEAAFEJIJ());
-        }
-        if (other.getLCFPBOOCMNP() != 0) {
-          setLCFPBOOCMNP(other.getLCFPBOOCMNP());
-        }
-        if (other.getLMKIMJLALNM() != 0) {
-          setLMKIMJLALNM(other.getLMKIMJLALNM());
-        }
         if (other.getAttackTargetId() != 0) {
           setAttackTargetId(other.getAttackTargetId());
+        }
+        if (other.getCDPEGKJGHGE() != 0F) {
+          setCDPEGKJGHGE(other.getCDPEGKJGHGE());
+        }
+        if (other.getACADGEKLGHE() != 0) {
+          setACADGEKLGHE(other.getACADGEKLGHE());
+        }
+        if (other.getOOENCFDHBJM() != 0) {
+          setOOENCFDHBJM(other.getOOENCFDHBJM());
+        }
+        if (other.getOEIPIEPCBBF() != 0F) {
+          setOEIPIEPCBBF(other.getOEIPIEPCBBF());
+        }
+        if (other.getKLBONMLLPFE() != 0F) {
+          setKLBONMLLPFE(other.getKLBONMLLPFE());
+        }
+        if (other.getGODPCLBFBLJ() != 0) {
+          setGODPCLBFBLJ(other.getGODPCLBFBLJ());
+        }
+        if (other.getJACIBGDBIHP() != 0F) {
+          setJACIBGDBIHP(other.getJACIBGDBIHP());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.getLJFHMNGGKAJ() != 0) {
+          setLJFHMNGGKAJ(other.getLJFHMNGGKAJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1110,401 +1258,6 @@ public final class AISnapshotEntityDataOuterClass {
       }
       private int bitField0_;
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mONLECHIPDH_ ;
-      /**
-       * <code>uint32 MONLECHIPDH = 10;</code>
-       * @return The mONLECHIPDH.
-       */
-      @java.lang.Override
-      public int getMONLECHIPDH() {
-        return mONLECHIPDH_;
-      }
-      /**
-       * <code>uint32 MONLECHIPDH = 10;</code>
-       * @param value The mONLECHIPDH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMONLECHIPDH(int value) {
-        
-        mONLECHIPDH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MONLECHIPDH = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMONLECHIPDH() {
-        
-        mONLECHIPDH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cFEJHIOCIDN_ ;
-      /**
-       * <code>uint32 CFEJHIOCIDN = 8;</code>
-       * @return The cFEJHIOCIDN.
-       */
-      @java.lang.Override
-      public int getCFEJHIOCIDN() {
-        return cFEJHIOCIDN_;
-      }
-      /**
-       * <code>uint32 CFEJHIOCIDN = 8;</code>
-       * @param value The cFEJHIOCIDN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCFEJHIOCIDN(int value) {
-        
-        cFEJHIOCIDN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CFEJHIOCIDN = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCFEJHIOCIDN() {
-        
-        cFEJHIOCIDN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float cPOCCODHHND_ ;
-      /**
-       * <code>float CPOCCODHHND = 5;</code>
-       * @return The cPOCCODHHND.
-       */
-      @java.lang.Override
-      public float getCPOCCODHHND() {
-        return cPOCCODHHND_;
-      }
-      /**
-       * <code>float CPOCCODHHND = 5;</code>
-       * @param value The cPOCCODHHND to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCPOCCODHHND(float value) {
-        
-        cPOCCODHHND_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float CPOCCODHHND = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCPOCCODHHND() {
-        
-        cPOCCODHHND_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float iGNJPGLNHPI_ ;
-      /**
-       * <code>float IGNJPGLNHPI = 12;</code>
-       * @return The iGNJPGLNHPI.
-       */
-      @java.lang.Override
-      public float getIGNJPGLNHPI() {
-        return iGNJPGLNHPI_;
-      }
-      /**
-       * <code>float IGNJPGLNHPI = 12;</code>
-       * @param value The iGNJPGLNHPI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIGNJPGLNHPI(float value) {
-        
-        iGNJPGLNHPI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float IGNJPGLNHPI = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIGNJPGLNHPI() {
-        
-        iGNJPGLNHPI_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_ =
-        java.util.Collections.emptyList();
-      private void ensureFinishedSkillCyclesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          finishedSkillCycles_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle>(finishedSkillCycles_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> finishedSkillCyclesBuilder_;
-
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
-        if (finishedSkillCyclesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(finishedSkillCycles_);
-        } else {
-          return finishedSkillCyclesBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public int getFinishedSkillCyclesCount() {
-        if (finishedSkillCyclesBuilder_ == null) {
-          return finishedSkillCycles_.size();
-        } else {
-          return finishedSkillCyclesBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          return finishedSkillCycles_.get(index);
-        } else {
-          return finishedSkillCyclesBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder setFinishedSkillCycles(
-          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.set(index, value);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder setFinishedSkillCycles(
-          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder addFinishedSkillCycles(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.add(value);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder addFinishedSkillCycles(
-          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.add(index, value);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder addFinishedSkillCycles(
-          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.add(builderForValue.build());
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder addFinishedSkillCycles(
-          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder addAllFinishedSkillCycles(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> values) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          ensureFinishedSkillCyclesIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, finishedSkillCycles_);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder clearFinishedSkillCycles() {
-        if (finishedSkillCyclesBuilder_ == null) {
-          finishedSkillCycles_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public Builder removeFinishedSkillCycles(int index) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          ensureFinishedSkillCyclesIsMutable();
-          finishedSkillCycles_.remove(index);
-          onChanged();
-        } else {
-          finishedSkillCyclesBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder getFinishedSkillCyclesBuilder(
-          int index) {
-        return getFinishedSkillCyclesFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
-          int index) {
-        if (finishedSkillCyclesBuilder_ == null) {
-          return finishedSkillCycles_.get(index);  } else {
-          return finishedSkillCyclesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
-           getFinishedSkillCyclesOrBuilderList() {
-        if (finishedSkillCyclesBuilder_ != null) {
-          return finishedSkillCyclesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(finishedSkillCycles_);
-        }
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder() {
-        return getFinishedSkillCyclesFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder(
-          int index) {
-        return getFinishedSkillCyclesFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder> 
-           getFinishedSkillCyclesBuilderList() {
-        return getFinishedSkillCyclesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
-          getFinishedSkillCyclesFieldBuilder() {
-        if (finishedSkillCyclesBuilder_ == null) {
-          finishedSkillCyclesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder>(
-                  finishedSkillCycles_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          finishedSkillCycles_ = null;
-        }
-        return finishedSkillCyclesBuilder_;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> hittingAvatars_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -1532,7 +1285,11 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetHittingAvatars().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
 
       @java.lang.Override
@@ -1550,7 +1307,11 @@ public final class AISnapshotEntityDataOuterClass {
         return getHittingAvatarsMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
       @java.lang.Override
 
@@ -1558,7 +1319,11 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetHittingAvatars().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
       @java.lang.Override
 
@@ -1571,7 +1336,11 @@ public final class AISnapshotEntityDataOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
       @java.lang.Override
 
@@ -1592,7 +1361,11 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
 
       public Builder removeHittingAvatars(
@@ -1611,7 +1384,11 @@ public final class AISnapshotEntityDataOuterClass {
         return internalGetMutableHittingAvatars().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
       public Builder putHittingAvatars(
           int key,
@@ -1623,7 +1400,11 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 11;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>map&lt;uint32, uint32&gt; hitting_avatars = 8;</code>
        */
 
       public Builder putAllHittingAvatars(
@@ -1633,133 +1414,325 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
 
-      private float hFFKLJAFLNJ_ ;
-      /**
-       * <code>float HFFKLJAFLNJ = 3;</code>
-       * @return The hFFKLJAFLNJ.
-       */
-      @java.lang.Override
-      public float getHFFKLJAFLNJ() {
-        return hFFKLJAFLNJ_;
-      }
-      /**
-       * <code>float HFFKLJAFLNJ = 3;</code>
-       * @param value The hFFKLJAFLNJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHFFKLJAFLNJ(float value) {
-        
-        hFFKLJAFLNJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float HFFKLJAFLNJ = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHFFKLJAFLNJ() {
-        
-        hFFKLJAFLNJ_ = 0F;
-        onChanged();
-        return this;
+      private java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> finishedSkillCycles_ =
+        java.util.Collections.emptyList();
+      private void ensureFinishedSkillCyclesIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          finishedSkillCycles_ = new java.util.ArrayList<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle>(finishedSkillCycles_);
+          bitField0_ |= 0x00000002;
+         }
       }
 
-      private float mPNEAAFEJIJ_ ;
-      /**
-       * <code>float MPNEAAFEJIJ = 6;</code>
-       * @return The mPNEAAFEJIJ.
-       */
-      @java.lang.Override
-      public float getMPNEAAFEJIJ() {
-        return mPNEAAFEJIJ_;
-      }
-      /**
-       * <code>float MPNEAAFEJIJ = 6;</code>
-       * @param value The mPNEAAFEJIJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMPNEAAFEJIJ(float value) {
-        
-        mPNEAAFEJIJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float MPNEAAFEJIJ = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMPNEAAFEJIJ() {
-        
-        mPNEAAFEJIJ_ = 0F;
-        onChanged();
-        return this;
-      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> finishedSkillCyclesBuilder_;
 
-      private int lCFPBOOCMNP_ ;
       /**
-       * <code>uint32 LCFPBOOCMNP = 9;</code>
-       * @return The lCFPBOOCMNP.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
        */
-      @java.lang.Override
-      public int getLCFPBOOCMNP() {
-        return lCFPBOOCMNP_;
+      public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> getFinishedSkillCyclesList() {
+        if (finishedSkillCyclesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(finishedSkillCycles_);
+        } else {
+          return finishedSkillCyclesBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>uint32 LCFPBOOCMNP = 9;</code>
-       * @param value The lCFPBOOCMNP to set.
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
        */
-      public Builder setLCFPBOOCMNP(int value) {
-        
-        lCFPBOOCMNP_ = value;
-        onChanged();
+      public int getFinishedSkillCyclesCount() {
+        if (finishedSkillCyclesBuilder_ == null) {
+          return finishedSkillCycles_.size();
+        } else {
+          return finishedSkillCyclesBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle getFinishedSkillCycles(int index) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          return finishedSkillCycles_.get(index);
+        } else {
+          return finishedSkillCyclesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder setFinishedSkillCycles(
+          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.set(index, value);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>uint32 LCFPBOOCMNP = 9;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
        */
-      public Builder clearLCFPBOOCMNP() {
-        
-        lCFPBOOCMNP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lMKIMJLALNM_ ;
-      /**
-       * <code>uint32 LMKIMJLALNM = 15;</code>
-       * @return The lMKIMJLALNM.
-       */
-      @java.lang.Override
-      public int getLMKIMJLALNM() {
-        return lMKIMJLALNM_;
-      }
-      /**
-       * <code>uint32 LMKIMJLALNM = 15;</code>
-       * @param value The lMKIMJLALNM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLMKIMJLALNM(int value) {
-        
-        lMKIMJLALNM_ = value;
-        onChanged();
+      public Builder setFinishedSkillCycles(
+          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * <code>uint32 LMKIMJLALNM = 15;</code>
-       * @return This builder for chaining.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
        */
-      public Builder clearLMKIMJLALNM() {
-        
-        lMKIMJLALNM_ = 0;
-        onChanged();
+      public Builder addFinishedSkillCycles(emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.add(value);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.addMessage(value);
+        }
         return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder addFinishedSkillCycles(
+          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle value) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.add(index, value);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder addFinishedSkillCycles(
+          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.add(builderForValue.build());
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder addFinishedSkillCycles(
+          int index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder builderForValue) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder addAllFinishedSkillCycles(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle> values) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          ensureFinishedSkillCyclesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, finishedSkillCycles_);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder clearFinishedSkillCycles() {
+        if (finishedSkillCyclesBuilder_ == null) {
+          finishedSkillCycles_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public Builder removeFinishedSkillCycles(int index) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          ensureFinishedSkillCyclesIsMutable();
+          finishedSkillCycles_.remove(index);
+          onChanged();
+        } else {
+          finishedSkillCyclesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder getFinishedSkillCyclesBuilder(
+          int index) {
+        return getFinishedSkillCyclesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder getFinishedSkillCyclesOrBuilder(
+          int index) {
+        if (finishedSkillCyclesBuilder_ == null) {
+          return finishedSkillCycles_.get(index);  } else {
+          return finishedSkillCyclesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
+           getFinishedSkillCyclesOrBuilderList() {
+        if (finishedSkillCyclesBuilder_ != null) {
+          return finishedSkillCyclesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(finishedSkillCycles_);
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder() {
+        return getFinishedSkillCyclesFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder addFinishedSkillCyclesBuilder(
+          int index) {
+        return getFinishedSkillCyclesFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>repeated .AISnapshotEntitySkillCycle finished_skill_cycles = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder> 
+           getFinishedSkillCyclesBuilderList() {
+        return getFinishedSkillCyclesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder> 
+          getFinishedSkillCyclesFieldBuilder() {
+        if (finishedSkillCyclesBuilder_ == null) {
+          finishedSkillCyclesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycle.Builder, emu.grasscutter.net.proto.AISnapshotEntitySkillCycleOuterClass.AISnapshotEntitySkillCycleOrBuilder>(
+                  finishedSkillCycles_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          finishedSkillCycles_ = null;
+        }
+        return finishedSkillCyclesBuilder_;
       }
 
       private int attackTargetId_ ;
       /**
-       * <code>uint32 attack_target_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 12;</code>
        * @return The attackTargetId.
        */
       @java.lang.Override
@@ -1767,7 +1740,11 @@ public final class AISnapshotEntityDataOuterClass {
         return attackTargetId_;
       }
       /**
-       * <code>uint32 attack_target_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 12;</code>
        * @param value The attackTargetId to set.
        * @return This builder for chaining.
        */
@@ -1778,12 +1755,403 @@ public final class AISnapshotEntityDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 attack_target_id = 7;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 attack_target_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAttackTargetId() {
         
         attackTargetId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float cDPEGKJGHGE_ ;
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float CDPEGKJGHGE = 15;</code>
+       * @return The cDPEGKJGHGE.
+       */
+      @java.lang.Override
+      public float getCDPEGKJGHGE() {
+        return cDPEGKJGHGE_;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float CDPEGKJGHGE = 15;</code>
+       * @param value The cDPEGKJGHGE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCDPEGKJGHGE(float value) {
+        
+        cDPEGKJGHGE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>float CDPEGKJGHGE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCDPEGKJGHGE() {
+        
+        cDPEGKJGHGE_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int aCADGEKLGHE_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ACADGEKLGHE = 9;</code>
+       * @return The aCADGEKLGHE.
+       */
+      @java.lang.Override
+      public int getACADGEKLGHE() {
+        return aCADGEKLGHE_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ACADGEKLGHE = 9;</code>
+       * @param value The aCADGEKLGHE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setACADGEKLGHE(int value) {
+        
+        aCADGEKLGHE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 ACADGEKLGHE = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearACADGEKLGHE() {
+        
+        aCADGEKLGHE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oOENCFDHBJM_ ;
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 OOENCFDHBJM = 2;</code>
+       * @return The oOENCFDHBJM.
+       */
+      @java.lang.Override
+      public int getOOENCFDHBJM() {
+        return oOENCFDHBJM_;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 OOENCFDHBJM = 2;</code>
+       * @param value The oOENCFDHBJM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOOENCFDHBJM(int value) {
+        
+        oOENCFDHBJM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 OOENCFDHBJM = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOOENCFDHBJM() {
+        
+        oOENCFDHBJM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float oEIPIEPCBBF_ ;
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float OEIPIEPCBBF = 10;</code>
+       * @return The oEIPIEPCBBF.
+       */
+      @java.lang.Override
+      public float getOEIPIEPCBBF() {
+        return oEIPIEPCBBF_;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float OEIPIEPCBBF = 10;</code>
+       * @param value The oEIPIEPCBBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOEIPIEPCBBF(float value) {
+        
+        oEIPIEPCBBF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 64
+       * </pre>
+       *
+       * <code>float OEIPIEPCBBF = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOEIPIEPCBBF() {
+        
+        oEIPIEPCBBF_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float kLBONMLLPFE_ ;
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float KLBONMLLPFE = 14;</code>
+       * @return The kLBONMLLPFE.
+       */
+      @java.lang.Override
+      public float getKLBONMLLPFE() {
+        return kLBONMLLPFE_;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float KLBONMLLPFE = 14;</code>
+       * @param value The kLBONMLLPFE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKLBONMLLPFE(float value) {
+        
+        kLBONMLLPFE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 68
+       * </pre>
+       *
+       * <code>float KLBONMLLPFE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKLBONMLLPFE() {
+        
+        kLBONMLLPFE_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int gODPCLBFBLJ_ ;
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 GODPCLBFBLJ = 13;</code>
+       * @return The gODPCLBFBLJ.
+       */
+      @java.lang.Override
+      public int getGODPCLBFBLJ() {
+        return gODPCLBFBLJ_;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 GODPCLBFBLJ = 13;</code>
+       * @param value The gODPCLBFBLJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGODPCLBFBLJ(int value) {
+        
+        gODPCLBFBLJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 72
+       * </pre>
+       *
+       * <code>uint32 GODPCLBFBLJ = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGODPCLBFBLJ() {
+        
+        gODPCLBFBLJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float jACIBGDBIHP_ ;
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float JACIBGDBIHP = 1;</code>
+       * @return The jACIBGDBIHP.
+       */
+      @java.lang.Override
+      public float getJACIBGDBIHP() {
+        return jACIBGDBIHP_;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float JACIBGDBIHP = 1;</code>
+       * @param value The jACIBGDBIHP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJACIBGDBIHP(float value) {
+        
+        jACIBGDBIHP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 76
+       * </pre>
+       *
+       * <code>float JACIBGDBIHP = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJACIBGDBIHP() {
+        
+        jACIBGDBIHP_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 80
+       * </pre>
+       *
+       * <code>uint32 entity_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lJFHMNGGKAJ_ ;
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 LJFHMNGGKAJ = 7;</code>
+       * @return The lJFHMNGGKAJ.
+       */
+      @java.lang.Override
+      public int getLJFHMNGGKAJ() {
+        return lJFHMNGGKAJ_;
+      }
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 LJFHMNGGKAJ = 7;</code>
+       * @param value The lJFHMNGGKAJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLJFHMNGGKAJ(int value) {
+        
+        lJFHMNGGKAJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 84
+       * </pre>
+       *
+       * <code>uint32 LJFHMNGGKAJ = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLJFHMNGGKAJ() {
+        
+        lJFHMNGGKAJ_ = 0;
         onChanged();
         return this;
       }
@@ -1861,15 +2229,15 @@ public final class AISnapshotEntityDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032AISnapshotEntityData.proto\032 AISnapshot" +
       "EntitySkillCycle.proto\"\242\003\n\024AISnapshotEnt" +
-      "ityData\022\021\n\tentity_id\030\004 \001(\r\022\023\n\013MONLECHIPD" +
-      "H\030\n \001(\r\022\023\n\013CFEJHIOCIDN\030\010 \001(\r\022\023\n\013CPOCCODH" +
-      "HND\030\005 \001(\002\022\023\n\013IGNJPGLNHPI\030\014 \001(\002\022:\n\025finish" +
-      "ed_skill_cycles\030\r \003(\0132\033.AISnapshotEntity" +
-      "SkillCycle\022B\n\017hitting_avatars\030\013 \003(\0132).AI" +
-      "SnapshotEntityData.HittingAvatarsEntry\022\023" +
-      "\n\013HFFKLJAFLNJ\030\003 \001(\002\022\023\n\013MPNEAAFEJIJ\030\006 \001(\002" +
-      "\022\023\n\013LCFPBOOCMNP\030\t \001(\r\022\023\n\013LMKIMJLALNM\030\017 \001" +
-      "(\r\022\030\n\020attack_target_id\030\007 \001(\r\0325\n\023HittingA" +
+      "ityData\022B\n\017hitting_avatars\030\010 \003(\0132).AISna" +
+      "pshotEntityData.HittingAvatarsEntry\022:\n\025f" +
+      "inished_skill_cycles\030\006 \003(\0132\033.AISnapshotE" +
+      "ntitySkillCycle\022\030\n\020attack_target_id\030\014 \001(" +
+      "\r\022\023\n\013CDPEGKJGHGE\030\017 \001(\002\022\023\n\013ACADGEKLGHE\030\t " +
+      "\001(\r\022\023\n\013OOENCFDHBJM\030\002 \001(\r\022\023\n\013OEIPIEPCBBF\030" +
+      "\n \001(\002\022\023\n\013KLBONMLLPFE\030\016 \001(\002\022\023\n\013GODPCLBFBL" +
+      "J\030\r \001(\r\022\023\n\013JACIBGDBIHP\030\001 \001(\002\022\021\n\tentity_i" +
+      "d\030\005 \001(\r\022\023\n\013LJFHMNGGKAJ\030\007 \001(\r\0325\n\023HittingA" +
       "vatarsEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
       "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
@@ -1883,7 +2251,7 @@ public final class AISnapshotEntityDataOuterClass {
     internal_static_AISnapshotEntityData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AISnapshotEntityData_descriptor,
-        new java.lang.String[] { "EntityId", "MONLECHIPDH", "CFEJHIOCIDN", "CPOCCODHHND", "IGNJPGLNHPI", "FinishedSkillCycles", "HittingAvatars", "HFFKLJAFLNJ", "MPNEAAFEJIJ", "LCFPBOOCMNP", "LMKIMJLALNM", "AttackTargetId", });
+        new java.lang.String[] { "HittingAvatars", "FinishedSkillCycles", "AttackTargetId", "CDPEGKJGHGE", "ACADGEKLGHE", "OOENCFDHBJM", "OEIPIEPCBBF", "KLBONMLLPFE", "GODPCLBFBLJ", "JACIBGDBIHP", "EntityId", "LJFHMNGGKAJ", });
     internal_static_AISnapshotEntityData_HittingAvatarsEntry_descriptor =
       internal_static_AISnapshotEntityData_descriptor.getNestedTypes().get(0);
     internal_static_AISnapshotEntityData_HittingAvatarsEntry_fieldAccessorTable = new

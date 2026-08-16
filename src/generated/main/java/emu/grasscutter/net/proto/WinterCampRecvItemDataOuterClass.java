@@ -19,32 +19,19 @@ public final class WinterCampRecvItemDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-    /**
-     * <code>uint32 uid = 10;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string nickname = 7;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string nickname = 7;</code>
      * @return The bytes for nickname.
      */
@@ -52,34 +39,87 @@ public final class WinterCampRecvItemDataOuterClass {
         getNicknameBytes();
 
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    boolean hasProfilePicture();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 uid = 13;</code>
+     * @return The uid.
+     */
+    int getUid();
   }
   /**
-   * <pre>
-   * Obf: NIGKCOAKACC
-   * </pre>
-   *
    * Protobuf type {@code WinterCampRecvItemData}
    */
   public static final class WinterCampRecvItemData extends
@@ -127,7 +167,22 @@ public final class WinterCampRecvItemDataOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              itemList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              nickname_ = s;
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -140,24 +195,9 @@ public final class WinterCampRecvItemDataOuterClass {
 
               break;
             }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nickname_ = s;
-              break;
-            }
-            case 80: {
+            case 104: {
 
               uid_ = input.readUInt32();
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              itemList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -195,46 +235,13 @@ public final class WinterCampRecvItemDataOuterClass {
               emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData.class, emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData.Builder.class);
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
-    public static final int UID_FIELD_NUMBER = 10;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 10;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
     public static final int NICKNAME_FIELD_NUMBER = 7;
     private volatile java.lang.Object nickname_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string nickname = 7;</code>
      * @return The nickname.
      */
@@ -252,6 +259,10 @@ public final class WinterCampRecvItemDataOuterClass {
       }
     }
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>string nickname = 7;</code>
      * @return The bytes for nickname.
      */
@@ -270,17 +281,63 @@ public final class WinterCampRecvItemDataOuterClass {
       }
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 14;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>.ProfilePicture profile_picture = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
+    }
+
+    public static final int ITEM_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -288,26 +345,53 @@ public final class WinterCampRecvItemDataOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_list = 14;</code>
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>repeated .ItemParam item_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index) {
       return itemList_.get(index);
+    }
+
+    public static final int UID_FIELD_NUMBER = 13;
+    private int uid_;
+    /**
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 uid = 13;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,17 +408,17 @@ public final class WinterCampRecvItemDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (profilePicture_ != null) {
-        output.writeMessage(3, getProfilePicture());
+      for (int i = 0; i < itemList_.size(); i++) {
+        output.writeMessage(5, itemList_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nickname_);
       }
-      if (uid_ != 0) {
-        output.writeUInt32(10, uid_);
+      if (profilePicture_ != null) {
+        output.writeMessage(12, getProfilePicture());
       }
-      for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(14, itemList_.get(i));
+      if (uid_ != 0) {
+        output.writeUInt32(13, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -345,20 +429,20 @@ public final class WinterCampRecvItemDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (profilePicture_ != null) {
+      for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getProfilePicture());
+          .computeMessageSize(5, itemList_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nickname_);
       }
+      if (profilePicture_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getProfilePicture());
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, uid_);
-      }
-      for (int i = 0; i < itemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, itemList_.get(i));
+          .computeUInt32Size(13, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -375,17 +459,17 @@ public final class WinterCampRecvItemDataOuterClass {
       }
       emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData other = (emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData) obj;
 
+      if (!getNickname()
+          .equals(other.getNickname())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (getUid()
-          != other.getUid()) return false;
-      if (!getNickname()
-          .equals(other.getNickname())) return false;
       if (!getItemListList()
           .equals(other.getItemListList())) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -397,18 +481,18 @@ public final class WinterCampRecvItemDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickname().hashCode();
       if (getItemListCount() > 0) {
         hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemListList().hashCode();
       }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -505,10 +589,6 @@ public final class WinterCampRecvItemDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NIGKCOAKACC
-     * </pre>
-     *
      * Protobuf type {@code WinterCampRecvItemData}
      */
     public static final class Builder extends
@@ -547,22 +627,22 @@ public final class WinterCampRecvItemDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        nickname_ = "";
+
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
         } else {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
-        uid_ = 0;
-
-        nickname_ = "";
-
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           itemListBuilder_.clear();
         }
+        uid_ = 0;
+
         return this;
       }
 
@@ -590,13 +670,12 @@ public final class WinterCampRecvItemDataOuterClass {
       public emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData buildPartial() {
         emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData result = new emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData(this);
         int from_bitField0_ = bitField0_;
+        result.nickname_ = nickname_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.uid_ = uid_;
-        result.nickname_ = nickname_;
         if (itemListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             itemList_ = java.util.Collections.unmodifiableList(itemList_);
@@ -606,6 +685,7 @@ public final class WinterCampRecvItemDataOuterClass {
         } else {
           result.itemList_ = itemListBuilder_.build();
         }
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -654,15 +734,12 @@ public final class WinterCampRecvItemDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData other) {
         if (other == emu.grasscutter.net.proto.WinterCampRecvItemDataOuterClass.WinterCampRecvItemData.getDefaultInstance()) return this;
-        if (other.hasProfilePicture()) {
-          mergeProfilePicture(other.getProfilePicture());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (!other.getNickname().isEmpty()) {
           nickname_ = other.nickname_;
           onChanged();
+        }
+        if (other.hasProfilePicture()) {
+          mergeProfilePicture(other.getProfilePicture());
         }
         if (itemListBuilder_ == null) {
           if (!other.itemList_.isEmpty()) {
@@ -689,6 +766,9 @@ public final class WinterCampRecvItemDataOuterClass {
               itemListBuilder_.addAllMessages(other.itemList_);
             }
           }
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -720,158 +800,12 @@ public final class WinterCampRecvItemDataOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      public boolean hasProfilePicture() {
-        return profilePictureBuilder_ != null || profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       * @return The profilePicture.
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        } else {
-          return profilePictureBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          profilePicture_ = value;
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public Builder setProfilePicture(
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = builderForValue.build();
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (profilePicture_ != null) {
-            profilePicture_ =
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
-          } else {
-            profilePicture_ = value;
-          }
-          onChanged();
-        } else {
-          profilePictureBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public Builder clearProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-          onChanged();
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
-        
-        onChanged();
-        return getProfilePictureFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        if (profilePictureBuilder_ != null) {
-          return profilePictureBuilder_.getMessageOrBuilder();
-        } else {
-          return profilePicture_ == null ?
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
-          getProfilePictureFieldBuilder() {
-        if (profilePictureBuilder_ == null) {
-          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
-                  getProfilePicture(),
-                  getParentForChildren(),
-                  isClean());
-          profilePicture_ = null;
-        }
-        return profilePictureBuilder_;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 10;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 10;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object nickname_ = "";
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string nickname = 7;</code>
        * @return The nickname.
        */
@@ -888,6 +822,10 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string nickname = 7;</code>
        * @return The bytes for nickname.
        */
@@ -905,6 +843,10 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string nickname = 7;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
@@ -920,6 +862,10 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string nickname = 7;</code>
        * @return This builder for chaining.
        */
@@ -930,6 +876,10 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>string nickname = 7;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
@@ -946,6 +896,161 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      public boolean hasProfilePicture() {
+        return profilePictureBuilder_ != null || profilePicture_ != null;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       * @return The profilePicture.
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        } else {
+          return profilePictureBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          profilePicture_ = value;
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public Builder setProfilePicture(
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = builderForValue.build();
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (profilePicture_ != null) {
+            profilePicture_ =
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
+          } else {
+            profilePicture_ = value;
+          }
+          onChanged();
+        } else {
+          profilePictureBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public Builder clearProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+          onChanged();
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
+        
+        onChanged();
+        return getProfilePictureFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        if (profilePictureBuilder_ != null) {
+          return profilePictureBuilder_.getMessageOrBuilder();
+        } else {
+          return profilePicture_ == null ?
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        }
+      }
+      /**
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>.ProfilePicture profile_picture = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
+          getProfilePictureFieldBuilder() {
+        if (profilePictureBuilder_ == null) {
+          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
+                  getProfilePicture(),
+                  getParentForChildren(),
+                  isClean());
+          profilePicture_ = null;
+        }
+        return profilePictureBuilder_;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_ =
         java.util.Collections.emptyList();
       private void ensureItemListIsMutable() {
@@ -959,7 +1064,11 @@ public final class WinterCampRecvItemDataOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -969,7 +1078,11 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -979,7 +1092,11 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -989,7 +1106,11 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1006,7 +1127,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1020,7 +1145,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -1036,7 +1165,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1053,7 +1186,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1067,7 +1204,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1081,7 +1222,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1096,7 +1241,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -1109,7 +1258,11 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -1122,14 +1275,22 @@ public final class WinterCampRecvItemDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -1139,7 +1300,11 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -1150,14 +1315,22 @@ public final class WinterCampRecvItemDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -1165,7 +1338,11 @@ public final class WinterCampRecvItemDataOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 14;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>repeated .ItemParam item_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -1184,6 +1361,49 @@ public final class WinterCampRecvItemDataOuterClass {
           itemList_ = null;
         }
         return itemListBuilder_;
+      }
+
+      private int uid_ ;
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 uid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1252,27 +1472,27 @@ public final class WinterCampRecvItemDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034WinterCampRecvItemData.proto\032\024ProfileP" +
-      "icture.proto\032\017ItemParam.proto\"\200\001\n\026Winter" +
-      "CampRecvItemData\022(\n\017profile_picture\030\003 \001(" +
-      "\0132\017.ProfilePicture\022\013\n\003uid\030\n \001(\r\022\020\n\010nickn" +
-      "ame\030\007 \001(\t\022\035\n\titem_list\030\016 \003(\0132\n.ItemParam" +
+      "\n\034WinterCampRecvItemData.proto\032\017ItemPara" +
+      "m.proto\032\024ProfilePicture.proto\"\200\001\n\026Winter" +
+      "CampRecvItemData\022\020\n\010nickname\030\007 \001(\t\022(\n\017pr" +
+      "ofile_picture\030\014 \001(\0132\017.ProfilePicture\022\035\n\t" +
+      "item_list\030\005 \003(\0132\n.ItemParam\022\013\n\003uid\030\r \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor(),
         });
     internal_static_WinterCampRecvItemData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_WinterCampRecvItemData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampRecvItemData_descriptor,
-        new java.lang.String[] { "ProfilePicture", "Uid", "Nickname", "ItemList", });
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
+        new java.lang.String[] { "Nickname", "ProfilePicture", "ItemList", "Uid", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

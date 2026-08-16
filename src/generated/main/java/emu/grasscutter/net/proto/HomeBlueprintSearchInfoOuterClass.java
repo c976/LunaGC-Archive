@@ -19,41 +19,56 @@ public final class HomeBlueprintSearchInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 module_id = 4;</code>
-     * @return The moduleId.
-     */
-    int getModuleId();
-
-    /**
-     * <code>string share_code = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string share_code = 6;</code>
      * @return The shareCode.
      */
     java.lang.String getShareCode();
     /**
-     * <code>string share_code = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string share_code = 6;</code>
      * @return The bytes for shareCode.
      */
     com.google.protobuf.ByteString
         getShareCodeBytes();
 
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 scene_id = 14;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 block_id = 11;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 block_id = 15;</code>
      * @return The blockId.
      */
     int getBlockId();
+
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MGFJDPJJEGB = 1;</code>
+     * @return The mGFJDPJJEGB.
+     */
+    int getMGFJDPJJEGB();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: MMGJJJFDIPK
-   * </pre>
-   *
    * Protobuf type {@code HomeBlueprintSearchInfo}
    */
   public static final class HomeBlueprintSearchInfo extends
@@ -99,23 +114,23 @@ public final class HomeBlueprintSearchInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              moduleId_ = input.readUInt32();
+              mGFJDPJJEGB_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
               shareCode_ = s;
               break;
             }
-            case 80: {
+            case 112: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
               blockId_ = input.readUInt32();
               break;
@@ -152,21 +167,14 @@ public final class HomeBlueprintSearchInfoOuterClass {
               emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo.class, emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo.Builder.class);
     }
 
-    public static final int MODULE_ID_FIELD_NUMBER = 4;
-    private int moduleId_;
-    /**
-     * <code>uint32 module_id = 4;</code>
-     * @return The moduleId.
-     */
-    @java.lang.Override
-    public int getModuleId() {
-      return moduleId_;
-    }
-
-    public static final int SHARE_CODE_FIELD_NUMBER = 5;
+    public static final int SHARE_CODE_FIELD_NUMBER = 6;
     private volatile java.lang.Object shareCode_;
     /**
-     * <code>string share_code = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string share_code = 6;</code>
      * @return The shareCode.
      */
     @java.lang.Override
@@ -183,7 +191,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
       }
     }
     /**
-     * <code>string share_code = 5;</code>
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>string share_code = 6;</code>
      * @return The bytes for shareCode.
      */
     @java.lang.Override
@@ -201,10 +213,14 @@ public final class HomeBlueprintSearchInfoOuterClass {
       }
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 10;
+    public static final int SCENE_ID_FIELD_NUMBER = 14;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 scene_id = 14;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -212,15 +228,34 @@ public final class HomeBlueprintSearchInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int BLOCK_ID_FIELD_NUMBER = 11;
+    public static final int BLOCK_ID_FIELD_NUMBER = 15;
     private int blockId_;
     /**
-     * <code>uint32 block_id = 11;</code>
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 block_id = 15;</code>
      * @return The blockId.
      */
     @java.lang.Override
     public int getBlockId() {
       return blockId_;
+    }
+
+    public static final int MGFJDPJJEGB_FIELD_NUMBER = 1;
+    private int mGFJDPJJEGB_;
+    /**
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MGFJDPJJEGB = 1;</code>
+     * @return The mGFJDPJJEGB.
+     */
+    @java.lang.Override
+    public int getMGFJDPJJEGB() {
+      return mGFJDPJJEGB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -237,17 +272,17 @@ public final class HomeBlueprintSearchInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (moduleId_ != 0) {
-        output.writeUInt32(4, moduleId_);
+      if (mGFJDPJJEGB_ != 0) {
+        output.writeUInt32(1, mGFJDPJJEGB_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, shareCode_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, shareCode_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(10, sceneId_);
+        output.writeUInt32(14, sceneId_);
       }
       if (blockId_ != 0) {
-        output.writeUInt32(11, blockId_);
+        output.writeUInt32(15, blockId_);
       }
       unknownFields.writeTo(output);
     }
@@ -258,20 +293,20 @@ public final class HomeBlueprintSearchInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (moduleId_ != 0) {
+      if (mGFJDPJJEGB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, moduleId_);
+          .computeUInt32Size(1, mGFJDPJJEGB_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, shareCode_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, shareCode_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sceneId_);
+          .computeUInt32Size(14, sceneId_);
       }
       if (blockId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, blockId_);
+          .computeUInt32Size(15, blockId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,14 +323,14 @@ public final class HomeBlueprintSearchInfoOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo other = (emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo) obj;
 
-      if (getModuleId()
-          != other.getModuleId()) return false;
       if (!getShareCode()
           .equals(other.getShareCode())) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (getBlockId()
           != other.getBlockId()) return false;
+      if (getMGFJDPJJEGB()
+          != other.getMGFJDPJJEGB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,14 +342,14 @@ public final class HomeBlueprintSearchInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModuleId();
       hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getShareCode().hashCode();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBlockId();
+      hash = (37 * hash) + MGFJDPJJEGB_FIELD_NUMBER;
+      hash = (53 * hash) + getMGFJDPJJEGB();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,11 +446,6 @@ public final class HomeBlueprintSearchInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: MMGJJJFDIPK
-     * </pre>
-     *
      * Protobuf type {@code HomeBlueprintSearchInfo}
      */
     public static final class Builder extends
@@ -453,13 +483,13 @@ public final class HomeBlueprintSearchInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        moduleId_ = 0;
-
         shareCode_ = "";
 
         sceneId_ = 0;
 
         blockId_ = 0;
+
+        mGFJDPJJEGB_ = 0;
 
         return this;
       }
@@ -487,10 +517,10 @@ public final class HomeBlueprintSearchInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo buildPartial() {
         emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo result = new emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo(this);
-        result.moduleId_ = moduleId_;
         result.shareCode_ = shareCode_;
         result.sceneId_ = sceneId_;
         result.blockId_ = blockId_;
+        result.mGFJDPJJEGB_ = mGFJDPJJEGB_;
         onBuilt();
         return result;
       }
@@ -539,9 +569,6 @@ public final class HomeBlueprintSearchInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo other) {
         if (other == emu.grasscutter.net.proto.HomeBlueprintSearchInfoOuterClass.HomeBlueprintSearchInfo.getDefaultInstance()) return this;
-        if (other.getModuleId() != 0) {
-          setModuleId(other.getModuleId());
-        }
         if (!other.getShareCode().isEmpty()) {
           shareCode_ = other.shareCode_;
           onChanged();
@@ -551,6 +578,9 @@ public final class HomeBlueprintSearchInfoOuterClass {
         }
         if (other.getBlockId() != 0) {
           setBlockId(other.getBlockId());
+        }
+        if (other.getMGFJDPJJEGB() != 0) {
+          setMGFJDPJJEGB(other.getMGFJDPJJEGB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -581,40 +611,13 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return this;
       }
 
-      private int moduleId_ ;
-      /**
-       * <code>uint32 module_id = 4;</code>
-       * @return The moduleId.
-       */
-      @java.lang.Override
-      public int getModuleId() {
-        return moduleId_;
-      }
-      /**
-       * <code>uint32 module_id = 4;</code>
-       * @param value The moduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModuleId(int value) {
-        
-        moduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModuleId() {
-        
-        moduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object shareCode_ = "";
       /**
-       * <code>string share_code = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string share_code = 6;</code>
        * @return The shareCode.
        */
       public java.lang.String getShareCode() {
@@ -630,7 +633,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         }
       }
       /**
-       * <code>string share_code = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string share_code = 6;</code>
        * @return The bytes for shareCode.
        */
       public com.google.protobuf.ByteString
@@ -647,7 +654,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         }
       }
       /**
-       * <code>string share_code = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string share_code = 6;</code>
        * @param value The shareCode to set.
        * @return This builder for chaining.
        */
@@ -662,7 +673,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string share_code = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearShareCode() {
@@ -672,7 +687,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return this;
       }
       /**
-       * <code>string share_code = 5;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>string share_code = 6;</code>
        * @param value The bytes for shareCode to set.
        * @return This builder for chaining.
        */
@@ -690,7 +709,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 scene_id = 14;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -698,7 +721,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 scene_id = 14;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -709,7 +736,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 scene_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -721,7 +752,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
 
       private int blockId_ ;
       /**
-       * <code>uint32 block_id = 11;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 block_id = 15;</code>
        * @return The blockId.
        */
       @java.lang.Override
@@ -729,7 +764,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return blockId_;
       }
       /**
-       * <code>uint32 block_id = 11;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 block_id = 15;</code>
        * @param value The blockId to set.
        * @return This builder for chaining.
        */
@@ -740,12 +779,59 @@ public final class HomeBlueprintSearchInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 block_id = 11;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 block_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearBlockId() {
         
         blockId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mGFJDPJJEGB_ ;
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGFJDPJJEGB = 1;</code>
+       * @return The mGFJDPJJEGB.
+       */
+      @java.lang.Override
+      public int getMGFJDPJJEGB() {
+        return mGFJDPJJEGB_;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGFJDPJJEGB = 1;</code>
+       * @param value The mGFJDPJJEGB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMGFJDPJJEGB(int value) {
+        
+        mGFJDPJJEGB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MGFJDPJJEGB = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMGFJDPJJEGB() {
+        
+        mGFJDPJJEGB_ = 0;
         onChanged();
         return this;
       }
@@ -816,11 +902,11 @@ public final class HomeBlueprintSearchInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035HomeBlueprintSearchInfo.proto\"d\n\027HomeB" +
-      "lueprintSearchInfo\022\021\n\tmodule_id\030\004 \001(\r\022\022\n" +
-      "\nshare_code\030\005 \001(\t\022\020\n\010scene_id\030\n \001(\r\022\020\n\010b" +
-      "lock_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\035HomeBlueprintSearchInfo.proto\"f\n\027HomeB" +
+      "lueprintSearchInfo\022\022\n\nshare_code\030\006 \001(\t\022\020" +
+      "\n\010scene_id\030\016 \001(\r\022\020\n\010block_id\030\017 \001(\r\022\023\n\013MG" +
+      "FJDPJJEGB\030\001 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -831,7 +917,7 @@ public final class HomeBlueprintSearchInfoOuterClass {
     internal_static_HomeBlueprintSearchInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlueprintSearchInfo_descriptor,
-        new java.lang.String[] { "ModuleId", "ShareCode", "SceneId", "BlockId", });
+        new java.lang.String[] { "ShareCode", "SceneId", "BlockId", "MGFJDPJJEGB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

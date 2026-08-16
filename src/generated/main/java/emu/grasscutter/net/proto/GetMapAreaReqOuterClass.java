@@ -20,7 +20,7 @@ public final class GetMapAreaReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4387
+   * CmdId: 23224
    * </pre>
    *
    * Protobuf type {@code GetMapAreaReq}
@@ -245,7 +245,7 @@ public final class GetMapAreaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4387
+     * CmdId: 23224
      * </pre>
      *
      * Protobuf type {@code GetMapAreaReq}

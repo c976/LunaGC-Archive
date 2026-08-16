@@ -19,58 +19,86 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OKJOJDABKGC = 15;</code>
-     * @return The oKJOJDABKGC.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 CLFKHBCKAAD = 11;</code>
+     * @return The cLFKHBCKAAD.
      */
-    int getOKJOJDABKGC();
+    int getCLFKHBCKAAD();
 
     /**
-     * <code>uint32 GPPOHEOBDGJ = 13;</code>
-     * @return The gPPOHEOBDGJ.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 IIBJDMNMFMJ = 2;</code>
+     * @return The iIBJDMNMFMJ.
      */
-    int getGPPOHEOBDGJ();
+    int getIIBJDMNMFMJ();
 
     /**
-     * <code>uint32 GCMNEADPFBH = 12;</code>
-     * @return The gCMNEADPFBH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MOEBFAAJMIE = 14;</code>
+     * @return The mOEBFAAJMIE.
      */
-    int getGCMNEADPFBH();
+    int getMOEBFAAJMIE();
 
     /**
-     * <code>uint32 DPOBEKFGJOP = 5;</code>
-     * @return The dPOBEKFGJOP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NINMAMJDNCF = 13;</code>
+     * @return The nINMAMJDNCF.
      */
-    int getDPOBEKFGJOP();
+    int getNINMAMJDNCF();
 
     /**
-     * <code>uint32 GIMCFEIADKI = 6;</code>
-     * @return The gIMCFEIADKI.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MDIDBDAPNIP = 3;</code>
+     * @return The mDIDBDAPNIP.
      */
-    int getGIMCFEIADKI();
+    int getMDIDBDAPNIP();
 
     /**
-     * <code>uint32 EHLLLIJFOJG = 2;</code>
-     * @return The eHLLLIJFOJG.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 CMCFNHELCNM = 7;</code>
+     * @return The cMCFNHELCNM.
      */
-    int getEHLLLIJFOJG();
+    int getCMCFNHELCNM();
 
     /**
-     * <code>uint32 KJCLNIGPNDF = 3;</code>
-     * @return The kJCLNIGPNDF.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 GMNGPCMGKPD = 4;</code>
+     * @return The gMNGPCMGKPD.
      */
-    int getKJCLNIGPNDF();
+    int getGMNGPCMGKPD();
 
     /**
-     * <code>uint32 NHFGIBDCPGC = 11;</code>
-     * @return The nHFGIBDCPGC.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 MEMJGJNILAO = 6;</code>
+     * @return The mEMJGJNILAO.
      */
-    int getNHFGIBDCPGC();
+    int getMEMJGJNILAO();
   }
   /**
-   * <pre>
-   * Obf: LJEIJCNLPPJ
-   * </pre>
-   *
    * Protobuf type {@code SceneGalleryWindFieldInfo}
    */
   public static final class SceneGalleryWindFieldInfo extends
@@ -117,42 +145,42 @@ public final class SceneGalleryWindFieldInfoOuterClass {
               break;
             case 16: {
 
-              eHLLLIJFOJG_ = input.readUInt32();
+              iIBJDMNMFMJ_ = input.readUInt32();
               break;
             }
             case 24: {
 
-              kJCLNIGPNDF_ = input.readUInt32();
+              mDIDBDAPNIP_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 32: {
 
-              dPOBEKFGJOP_ = input.readUInt32();
+              gMNGPCMGKPD_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              gIMCFEIADKI_ = input.readUInt32();
+              mEMJGJNILAO_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              cMCFNHELCNM_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              nHFGIBDCPGC_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              gCMNEADPFBH_ = input.readUInt32();
+              cLFKHBCKAAD_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              gPPOHEOBDGJ_ = input.readUInt32();
+              nINMAMJDNCF_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
-              oKJOJDABKGC_ = input.readUInt32();
+              mOEBFAAJMIE_ = input.readUInt32();
               break;
             }
             default: {
@@ -187,92 +215,124 @@ public final class SceneGalleryWindFieldInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo.class, emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo.Builder.class);
     }
 
-    public static final int OKJOJDABKGC_FIELD_NUMBER = 15;
-    private int oKJOJDABKGC_;
+    public static final int CLFKHBCKAAD_FIELD_NUMBER = 11;
+    private int cLFKHBCKAAD_;
     /**
-     * <code>uint32 OKJOJDABKGC = 15;</code>
-     * @return The oKJOJDABKGC.
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
+     * <code>uint32 CLFKHBCKAAD = 11;</code>
+     * @return The cLFKHBCKAAD.
      */
     @java.lang.Override
-    public int getOKJOJDABKGC() {
-      return oKJOJDABKGC_;
+    public int getCLFKHBCKAAD() {
+      return cLFKHBCKAAD_;
     }
 
-    public static final int GPPOHEOBDGJ_FIELD_NUMBER = 13;
-    private int gPPOHEOBDGJ_;
+    public static final int IIBJDMNMFMJ_FIELD_NUMBER = 2;
+    private int iIBJDMNMFMJ_;
     /**
-     * <code>uint32 GPPOHEOBDGJ = 13;</code>
-     * @return The gPPOHEOBDGJ.
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
+     * <code>uint32 IIBJDMNMFMJ = 2;</code>
+     * @return The iIBJDMNMFMJ.
      */
     @java.lang.Override
-    public int getGPPOHEOBDGJ() {
-      return gPPOHEOBDGJ_;
+    public int getIIBJDMNMFMJ() {
+      return iIBJDMNMFMJ_;
     }
 
-    public static final int GCMNEADPFBH_FIELD_NUMBER = 12;
-    private int gCMNEADPFBH_;
+    public static final int MOEBFAAJMIE_FIELD_NUMBER = 14;
+    private int mOEBFAAJMIE_;
     /**
-     * <code>uint32 GCMNEADPFBH = 12;</code>
-     * @return The gCMNEADPFBH.
+     * <pre>
+     * offset: 40
+     * </pre>
+     *
+     * <code>uint32 MOEBFAAJMIE = 14;</code>
+     * @return The mOEBFAAJMIE.
      */
     @java.lang.Override
-    public int getGCMNEADPFBH() {
-      return gCMNEADPFBH_;
+    public int getMOEBFAAJMIE() {
+      return mOEBFAAJMIE_;
     }
 
-    public static final int DPOBEKFGJOP_FIELD_NUMBER = 5;
-    private int dPOBEKFGJOP_;
+    public static final int NINMAMJDNCF_FIELD_NUMBER = 13;
+    private int nINMAMJDNCF_;
     /**
-     * <code>uint32 DPOBEKFGJOP = 5;</code>
-     * @return The dPOBEKFGJOP.
+     * <pre>
+     * offset: 44
+     * </pre>
+     *
+     * <code>uint32 NINMAMJDNCF = 13;</code>
+     * @return The nINMAMJDNCF.
      */
     @java.lang.Override
-    public int getDPOBEKFGJOP() {
-      return dPOBEKFGJOP_;
+    public int getNINMAMJDNCF() {
+      return nINMAMJDNCF_;
     }
 
-    public static final int GIMCFEIADKI_FIELD_NUMBER = 6;
-    private int gIMCFEIADKI_;
+    public static final int MDIDBDAPNIP_FIELD_NUMBER = 3;
+    private int mDIDBDAPNIP_;
     /**
-     * <code>uint32 GIMCFEIADKI = 6;</code>
-     * @return The gIMCFEIADKI.
+     * <pre>
+     * offset: 48
+     * </pre>
+     *
+     * <code>uint32 MDIDBDAPNIP = 3;</code>
+     * @return The mDIDBDAPNIP.
      */
     @java.lang.Override
-    public int getGIMCFEIADKI() {
-      return gIMCFEIADKI_;
+    public int getMDIDBDAPNIP() {
+      return mDIDBDAPNIP_;
     }
 
-    public static final int EHLLLIJFOJG_FIELD_NUMBER = 2;
-    private int eHLLLIJFOJG_;
+    public static final int CMCFNHELCNM_FIELD_NUMBER = 7;
+    private int cMCFNHELCNM_;
     /**
-     * <code>uint32 EHLLLIJFOJG = 2;</code>
-     * @return The eHLLLIJFOJG.
+     * <pre>
+     * offset: 52
+     * </pre>
+     *
+     * <code>uint32 CMCFNHELCNM = 7;</code>
+     * @return The cMCFNHELCNM.
      */
     @java.lang.Override
-    public int getEHLLLIJFOJG() {
-      return eHLLLIJFOJG_;
+    public int getCMCFNHELCNM() {
+      return cMCFNHELCNM_;
     }
 
-    public static final int KJCLNIGPNDF_FIELD_NUMBER = 3;
-    private int kJCLNIGPNDF_;
+    public static final int GMNGPCMGKPD_FIELD_NUMBER = 4;
+    private int gMNGPCMGKPD_;
     /**
-     * <code>uint32 KJCLNIGPNDF = 3;</code>
-     * @return The kJCLNIGPNDF.
+     * <pre>
+     * offset: 56
+     * </pre>
+     *
+     * <code>uint32 GMNGPCMGKPD = 4;</code>
+     * @return The gMNGPCMGKPD.
      */
     @java.lang.Override
-    public int getKJCLNIGPNDF() {
-      return kJCLNIGPNDF_;
+    public int getGMNGPCMGKPD() {
+      return gMNGPCMGKPD_;
     }
 
-    public static final int NHFGIBDCPGC_FIELD_NUMBER = 11;
-    private int nHFGIBDCPGC_;
+    public static final int MEMJGJNILAO_FIELD_NUMBER = 6;
+    private int mEMJGJNILAO_;
     /**
-     * <code>uint32 NHFGIBDCPGC = 11;</code>
-     * @return The nHFGIBDCPGC.
+     * <pre>
+     * offset: 60
+     * </pre>
+     *
+     * <code>uint32 MEMJGJNILAO = 6;</code>
+     * @return The mEMJGJNILAO.
      */
     @java.lang.Override
-    public int getNHFGIBDCPGC() {
-      return nHFGIBDCPGC_;
+    public int getMEMJGJNILAO() {
+      return mEMJGJNILAO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -289,29 +349,29 @@ public final class SceneGalleryWindFieldInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eHLLLIJFOJG_ != 0) {
-        output.writeUInt32(2, eHLLLIJFOJG_);
+      if (iIBJDMNMFMJ_ != 0) {
+        output.writeUInt32(2, iIBJDMNMFMJ_);
       }
-      if (kJCLNIGPNDF_ != 0) {
-        output.writeUInt32(3, kJCLNIGPNDF_);
+      if (mDIDBDAPNIP_ != 0) {
+        output.writeUInt32(3, mDIDBDAPNIP_);
       }
-      if (dPOBEKFGJOP_ != 0) {
-        output.writeUInt32(5, dPOBEKFGJOP_);
+      if (gMNGPCMGKPD_ != 0) {
+        output.writeUInt32(4, gMNGPCMGKPD_);
       }
-      if (gIMCFEIADKI_ != 0) {
-        output.writeUInt32(6, gIMCFEIADKI_);
+      if (mEMJGJNILAO_ != 0) {
+        output.writeUInt32(6, mEMJGJNILAO_);
       }
-      if (nHFGIBDCPGC_ != 0) {
-        output.writeUInt32(11, nHFGIBDCPGC_);
+      if (cMCFNHELCNM_ != 0) {
+        output.writeUInt32(7, cMCFNHELCNM_);
       }
-      if (gCMNEADPFBH_ != 0) {
-        output.writeUInt32(12, gCMNEADPFBH_);
+      if (cLFKHBCKAAD_ != 0) {
+        output.writeUInt32(11, cLFKHBCKAAD_);
       }
-      if (gPPOHEOBDGJ_ != 0) {
-        output.writeUInt32(13, gPPOHEOBDGJ_);
+      if (nINMAMJDNCF_ != 0) {
+        output.writeUInt32(13, nINMAMJDNCF_);
       }
-      if (oKJOJDABKGC_ != 0) {
-        output.writeUInt32(15, oKJOJDABKGC_);
+      if (mOEBFAAJMIE_ != 0) {
+        output.writeUInt32(14, mOEBFAAJMIE_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,37 +382,37 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eHLLLIJFOJG_ != 0) {
+      if (iIBJDMNMFMJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eHLLLIJFOJG_);
+          .computeUInt32Size(2, iIBJDMNMFMJ_);
       }
-      if (kJCLNIGPNDF_ != 0) {
+      if (mDIDBDAPNIP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, kJCLNIGPNDF_);
+          .computeUInt32Size(3, mDIDBDAPNIP_);
       }
-      if (dPOBEKFGJOP_ != 0) {
+      if (gMNGPCMGKPD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dPOBEKFGJOP_);
+          .computeUInt32Size(4, gMNGPCMGKPD_);
       }
-      if (gIMCFEIADKI_ != 0) {
+      if (mEMJGJNILAO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, gIMCFEIADKI_);
+          .computeUInt32Size(6, mEMJGJNILAO_);
       }
-      if (nHFGIBDCPGC_ != 0) {
+      if (cMCFNHELCNM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, nHFGIBDCPGC_);
+          .computeUInt32Size(7, cMCFNHELCNM_);
       }
-      if (gCMNEADPFBH_ != 0) {
+      if (cLFKHBCKAAD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gCMNEADPFBH_);
+          .computeUInt32Size(11, cLFKHBCKAAD_);
       }
-      if (gPPOHEOBDGJ_ != 0) {
+      if (nINMAMJDNCF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, gPPOHEOBDGJ_);
+          .computeUInt32Size(13, nINMAMJDNCF_);
       }
-      if (oKJOJDABKGC_ != 0) {
+      if (mOEBFAAJMIE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, oKJOJDABKGC_);
+          .computeUInt32Size(14, mOEBFAAJMIE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,22 +429,22 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo other = (emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo) obj;
 
-      if (getOKJOJDABKGC()
-          != other.getOKJOJDABKGC()) return false;
-      if (getGPPOHEOBDGJ()
-          != other.getGPPOHEOBDGJ()) return false;
-      if (getGCMNEADPFBH()
-          != other.getGCMNEADPFBH()) return false;
-      if (getDPOBEKFGJOP()
-          != other.getDPOBEKFGJOP()) return false;
-      if (getGIMCFEIADKI()
-          != other.getGIMCFEIADKI()) return false;
-      if (getEHLLLIJFOJG()
-          != other.getEHLLLIJFOJG()) return false;
-      if (getKJCLNIGPNDF()
-          != other.getKJCLNIGPNDF()) return false;
-      if (getNHFGIBDCPGC()
-          != other.getNHFGIBDCPGC()) return false;
+      if (getCLFKHBCKAAD()
+          != other.getCLFKHBCKAAD()) return false;
+      if (getIIBJDMNMFMJ()
+          != other.getIIBJDMNMFMJ()) return false;
+      if (getMOEBFAAJMIE()
+          != other.getMOEBFAAJMIE()) return false;
+      if (getNINMAMJDNCF()
+          != other.getNINMAMJDNCF()) return false;
+      if (getMDIDBDAPNIP()
+          != other.getMDIDBDAPNIP()) return false;
+      if (getCMCFNHELCNM()
+          != other.getCMCFNHELCNM()) return false;
+      if (getGMNGPCMGKPD()
+          != other.getGMNGPCMGKPD()) return false;
+      if (getMEMJGJNILAO()
+          != other.getMEMJGJNILAO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -396,22 +456,22 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OKJOJDABKGC_FIELD_NUMBER;
-      hash = (53 * hash) + getOKJOJDABKGC();
-      hash = (37 * hash) + GPPOHEOBDGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGPPOHEOBDGJ();
-      hash = (37 * hash) + GCMNEADPFBH_FIELD_NUMBER;
-      hash = (53 * hash) + getGCMNEADPFBH();
-      hash = (37 * hash) + DPOBEKFGJOP_FIELD_NUMBER;
-      hash = (53 * hash) + getDPOBEKFGJOP();
-      hash = (37 * hash) + GIMCFEIADKI_FIELD_NUMBER;
-      hash = (53 * hash) + getGIMCFEIADKI();
-      hash = (37 * hash) + EHLLLIJFOJG_FIELD_NUMBER;
-      hash = (53 * hash) + getEHLLLIJFOJG();
-      hash = (37 * hash) + KJCLNIGPNDF_FIELD_NUMBER;
-      hash = (53 * hash) + getKJCLNIGPNDF();
-      hash = (37 * hash) + NHFGIBDCPGC_FIELD_NUMBER;
-      hash = (53 * hash) + getNHFGIBDCPGC();
+      hash = (37 * hash) + CLFKHBCKAAD_FIELD_NUMBER;
+      hash = (53 * hash) + getCLFKHBCKAAD();
+      hash = (37 * hash) + IIBJDMNMFMJ_FIELD_NUMBER;
+      hash = (53 * hash) + getIIBJDMNMFMJ();
+      hash = (37 * hash) + MOEBFAAJMIE_FIELD_NUMBER;
+      hash = (53 * hash) + getMOEBFAAJMIE();
+      hash = (37 * hash) + NINMAMJDNCF_FIELD_NUMBER;
+      hash = (53 * hash) + getNINMAMJDNCF();
+      hash = (37 * hash) + MDIDBDAPNIP_FIELD_NUMBER;
+      hash = (53 * hash) + getMDIDBDAPNIP();
+      hash = (37 * hash) + CMCFNHELCNM_FIELD_NUMBER;
+      hash = (53 * hash) + getCMCFNHELCNM();
+      hash = (37 * hash) + GMNGPCMGKPD_FIELD_NUMBER;
+      hash = (53 * hash) + getGMNGPCMGKPD();
+      hash = (37 * hash) + MEMJGJNILAO_FIELD_NUMBER;
+      hash = (53 * hash) + getMEMJGJNILAO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -508,10 +568,6 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LJEIJCNLPPJ
-     * </pre>
-     *
      * Protobuf type {@code SceneGalleryWindFieldInfo}
      */
     public static final class Builder extends
@@ -549,21 +605,21 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oKJOJDABKGC_ = 0;
+        cLFKHBCKAAD_ = 0;
 
-        gPPOHEOBDGJ_ = 0;
+        iIBJDMNMFMJ_ = 0;
 
-        gCMNEADPFBH_ = 0;
+        mOEBFAAJMIE_ = 0;
 
-        dPOBEKFGJOP_ = 0;
+        nINMAMJDNCF_ = 0;
 
-        gIMCFEIADKI_ = 0;
+        mDIDBDAPNIP_ = 0;
 
-        eHLLLIJFOJG_ = 0;
+        cMCFNHELCNM_ = 0;
 
-        kJCLNIGPNDF_ = 0;
+        gMNGPCMGKPD_ = 0;
 
-        nHFGIBDCPGC_ = 0;
+        mEMJGJNILAO_ = 0;
 
         return this;
       }
@@ -591,14 +647,14 @@ public final class SceneGalleryWindFieldInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo result = new emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo(this);
-        result.oKJOJDABKGC_ = oKJOJDABKGC_;
-        result.gPPOHEOBDGJ_ = gPPOHEOBDGJ_;
-        result.gCMNEADPFBH_ = gCMNEADPFBH_;
-        result.dPOBEKFGJOP_ = dPOBEKFGJOP_;
-        result.gIMCFEIADKI_ = gIMCFEIADKI_;
-        result.eHLLLIJFOJG_ = eHLLLIJFOJG_;
-        result.kJCLNIGPNDF_ = kJCLNIGPNDF_;
-        result.nHFGIBDCPGC_ = nHFGIBDCPGC_;
+        result.cLFKHBCKAAD_ = cLFKHBCKAAD_;
+        result.iIBJDMNMFMJ_ = iIBJDMNMFMJ_;
+        result.mOEBFAAJMIE_ = mOEBFAAJMIE_;
+        result.nINMAMJDNCF_ = nINMAMJDNCF_;
+        result.mDIDBDAPNIP_ = mDIDBDAPNIP_;
+        result.cMCFNHELCNM_ = cMCFNHELCNM_;
+        result.gMNGPCMGKPD_ = gMNGPCMGKPD_;
+        result.mEMJGJNILAO_ = mEMJGJNILAO_;
         onBuilt();
         return result;
       }
@@ -647,29 +703,29 @@ public final class SceneGalleryWindFieldInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryWindFieldInfoOuterClass.SceneGalleryWindFieldInfo.getDefaultInstance()) return this;
-        if (other.getOKJOJDABKGC() != 0) {
-          setOKJOJDABKGC(other.getOKJOJDABKGC());
+        if (other.getCLFKHBCKAAD() != 0) {
+          setCLFKHBCKAAD(other.getCLFKHBCKAAD());
         }
-        if (other.getGPPOHEOBDGJ() != 0) {
-          setGPPOHEOBDGJ(other.getGPPOHEOBDGJ());
+        if (other.getIIBJDMNMFMJ() != 0) {
+          setIIBJDMNMFMJ(other.getIIBJDMNMFMJ());
         }
-        if (other.getGCMNEADPFBH() != 0) {
-          setGCMNEADPFBH(other.getGCMNEADPFBH());
+        if (other.getMOEBFAAJMIE() != 0) {
+          setMOEBFAAJMIE(other.getMOEBFAAJMIE());
         }
-        if (other.getDPOBEKFGJOP() != 0) {
-          setDPOBEKFGJOP(other.getDPOBEKFGJOP());
+        if (other.getNINMAMJDNCF() != 0) {
+          setNINMAMJDNCF(other.getNINMAMJDNCF());
         }
-        if (other.getGIMCFEIADKI() != 0) {
-          setGIMCFEIADKI(other.getGIMCFEIADKI());
+        if (other.getMDIDBDAPNIP() != 0) {
+          setMDIDBDAPNIP(other.getMDIDBDAPNIP());
         }
-        if (other.getEHLLLIJFOJG() != 0) {
-          setEHLLLIJFOJG(other.getEHLLLIJFOJG());
+        if (other.getCMCFNHELCNM() != 0) {
+          setCMCFNHELCNM(other.getCMCFNHELCNM());
         }
-        if (other.getKJCLNIGPNDF() != 0) {
-          setKJCLNIGPNDF(other.getKJCLNIGPNDF());
+        if (other.getGMNGPCMGKPD() != 0) {
+          setGMNGPCMGKPD(other.getGMNGPCMGKPD());
         }
-        if (other.getNHFGIBDCPGC() != 0) {
-          setNHFGIBDCPGC(other.getNHFGIBDCPGC());
+        if (other.getMEMJGJNILAO() != 0) {
+          setMEMJGJNILAO(other.getMEMJGJNILAO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -700,250 +756,346 @@ public final class SceneGalleryWindFieldInfoOuterClass {
         return this;
       }
 
-      private int oKJOJDABKGC_ ;
+      private int cLFKHBCKAAD_ ;
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
-       * @return The oKJOJDABKGC.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CLFKHBCKAAD = 11;</code>
+       * @return The cLFKHBCKAAD.
        */
       @java.lang.Override
-      public int getOKJOJDABKGC() {
-        return oKJOJDABKGC_;
+      public int getCLFKHBCKAAD() {
+        return cLFKHBCKAAD_;
       }
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
-       * @param value The oKJOJDABKGC to set.
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CLFKHBCKAAD = 11;</code>
+       * @param value The cLFKHBCKAAD to set.
        * @return This builder for chaining.
        */
-      public Builder setOKJOJDABKGC(int value) {
+      public Builder setCLFKHBCKAAD(int value) {
         
-        oKJOJDABKGC_ = value;
+        cLFKHBCKAAD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OKJOJDABKGC = 15;</code>
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
+       * <code>uint32 CLFKHBCKAAD = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKJOJDABKGC() {
+      public Builder clearCLFKHBCKAAD() {
         
-        oKJOJDABKGC_ = 0;
+        cLFKHBCKAAD_ = 0;
         onChanged();
         return this;
       }
 
-      private int gPPOHEOBDGJ_ ;
+      private int iIBJDMNMFMJ_ ;
       /**
-       * <code>uint32 GPPOHEOBDGJ = 13;</code>
-       * @return The gPPOHEOBDGJ.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 IIBJDMNMFMJ = 2;</code>
+       * @return The iIBJDMNMFMJ.
        */
       @java.lang.Override
-      public int getGPPOHEOBDGJ() {
-        return gPPOHEOBDGJ_;
+      public int getIIBJDMNMFMJ() {
+        return iIBJDMNMFMJ_;
       }
       /**
-       * <code>uint32 GPPOHEOBDGJ = 13;</code>
-       * @param value The gPPOHEOBDGJ to set.
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 IIBJDMNMFMJ = 2;</code>
+       * @param value The iIBJDMNMFMJ to set.
        * @return This builder for chaining.
        */
-      public Builder setGPPOHEOBDGJ(int value) {
+      public Builder setIIBJDMNMFMJ(int value) {
         
-        gPPOHEOBDGJ_ = value;
+        iIBJDMNMFMJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GPPOHEOBDGJ = 13;</code>
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
+       * <code>uint32 IIBJDMNMFMJ = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGPPOHEOBDGJ() {
+      public Builder clearIIBJDMNMFMJ() {
         
-        gPPOHEOBDGJ_ = 0;
+        iIBJDMNMFMJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int gCMNEADPFBH_ ;
+      private int mOEBFAAJMIE_ ;
       /**
-       * <code>uint32 GCMNEADPFBH = 12;</code>
-       * @return The gCMNEADPFBH.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MOEBFAAJMIE = 14;</code>
+       * @return The mOEBFAAJMIE.
        */
       @java.lang.Override
-      public int getGCMNEADPFBH() {
-        return gCMNEADPFBH_;
+      public int getMOEBFAAJMIE() {
+        return mOEBFAAJMIE_;
       }
       /**
-       * <code>uint32 GCMNEADPFBH = 12;</code>
-       * @param value The gCMNEADPFBH to set.
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MOEBFAAJMIE = 14;</code>
+       * @param value The mOEBFAAJMIE to set.
        * @return This builder for chaining.
        */
-      public Builder setGCMNEADPFBH(int value) {
+      public Builder setMOEBFAAJMIE(int value) {
         
-        gCMNEADPFBH_ = value;
+        mOEBFAAJMIE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCMNEADPFBH = 12;</code>
+       * <pre>
+       * offset: 40
+       * </pre>
+       *
+       * <code>uint32 MOEBFAAJMIE = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCMNEADPFBH() {
+      public Builder clearMOEBFAAJMIE() {
         
-        gCMNEADPFBH_ = 0;
+        mOEBFAAJMIE_ = 0;
         onChanged();
         return this;
       }
 
-      private int dPOBEKFGJOP_ ;
+      private int nINMAMJDNCF_ ;
       /**
-       * <code>uint32 DPOBEKFGJOP = 5;</code>
-       * @return The dPOBEKFGJOP.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NINMAMJDNCF = 13;</code>
+       * @return The nINMAMJDNCF.
        */
       @java.lang.Override
-      public int getDPOBEKFGJOP() {
-        return dPOBEKFGJOP_;
+      public int getNINMAMJDNCF() {
+        return nINMAMJDNCF_;
       }
       /**
-       * <code>uint32 DPOBEKFGJOP = 5;</code>
-       * @param value The dPOBEKFGJOP to set.
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NINMAMJDNCF = 13;</code>
+       * @param value The nINMAMJDNCF to set.
        * @return This builder for chaining.
        */
-      public Builder setDPOBEKFGJOP(int value) {
+      public Builder setNINMAMJDNCF(int value) {
         
-        dPOBEKFGJOP_ = value;
+        nINMAMJDNCF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DPOBEKFGJOP = 5;</code>
+       * <pre>
+       * offset: 44
+       * </pre>
+       *
+       * <code>uint32 NINMAMJDNCF = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDPOBEKFGJOP() {
+      public Builder clearNINMAMJDNCF() {
         
-        dPOBEKFGJOP_ = 0;
+        nINMAMJDNCF_ = 0;
         onChanged();
         return this;
       }
 
-      private int gIMCFEIADKI_ ;
+      private int mDIDBDAPNIP_ ;
       /**
-       * <code>uint32 GIMCFEIADKI = 6;</code>
-       * @return The gIMCFEIADKI.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MDIDBDAPNIP = 3;</code>
+       * @return The mDIDBDAPNIP.
        */
       @java.lang.Override
-      public int getGIMCFEIADKI() {
-        return gIMCFEIADKI_;
+      public int getMDIDBDAPNIP() {
+        return mDIDBDAPNIP_;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 6;</code>
-       * @param value The gIMCFEIADKI to set.
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MDIDBDAPNIP = 3;</code>
+       * @param value The mDIDBDAPNIP to set.
        * @return This builder for chaining.
        */
-      public Builder setGIMCFEIADKI(int value) {
+      public Builder setMDIDBDAPNIP(int value) {
         
-        gIMCFEIADKI_ = value;
+        mDIDBDAPNIP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GIMCFEIADKI = 6;</code>
+       * <pre>
+       * offset: 48
+       * </pre>
+       *
+       * <code>uint32 MDIDBDAPNIP = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGIMCFEIADKI() {
+      public Builder clearMDIDBDAPNIP() {
         
-        gIMCFEIADKI_ = 0;
+        mDIDBDAPNIP_ = 0;
         onChanged();
         return this;
       }
 
-      private int eHLLLIJFOJG_ ;
+      private int cMCFNHELCNM_ ;
       /**
-       * <code>uint32 EHLLLIJFOJG = 2;</code>
-       * @return The eHLLLIJFOJG.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CMCFNHELCNM = 7;</code>
+       * @return The cMCFNHELCNM.
        */
       @java.lang.Override
-      public int getEHLLLIJFOJG() {
-        return eHLLLIJFOJG_;
+      public int getCMCFNHELCNM() {
+        return cMCFNHELCNM_;
       }
       /**
-       * <code>uint32 EHLLLIJFOJG = 2;</code>
-       * @param value The eHLLLIJFOJG to set.
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CMCFNHELCNM = 7;</code>
+       * @param value The cMCFNHELCNM to set.
        * @return This builder for chaining.
        */
-      public Builder setEHLLLIJFOJG(int value) {
+      public Builder setCMCFNHELCNM(int value) {
         
-        eHLLLIJFOJG_ = value;
+        cMCFNHELCNM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EHLLLIJFOJG = 2;</code>
+       * <pre>
+       * offset: 52
+       * </pre>
+       *
+       * <code>uint32 CMCFNHELCNM = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEHLLLIJFOJG() {
+      public Builder clearCMCFNHELCNM() {
         
-        eHLLLIJFOJG_ = 0;
+        cMCFNHELCNM_ = 0;
         onChanged();
         return this;
       }
 
-      private int kJCLNIGPNDF_ ;
+      private int gMNGPCMGKPD_ ;
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
-       * @return The kJCLNIGPNDF.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 4;</code>
+       * @return The gMNGPCMGKPD.
        */
       @java.lang.Override
-      public int getKJCLNIGPNDF() {
-        return kJCLNIGPNDF_;
+      public int getGMNGPCMGKPD() {
+        return gMNGPCMGKPD_;
       }
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
-       * @param value The kJCLNIGPNDF to set.
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 4;</code>
+       * @param value The gMNGPCMGKPD to set.
        * @return This builder for chaining.
        */
-      public Builder setKJCLNIGPNDF(int value) {
+      public Builder setGMNGPCMGKPD(int value) {
         
-        kJCLNIGPNDF_ = value;
+        gMNGPCMGKPD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KJCLNIGPNDF = 3;</code>
+       * <pre>
+       * offset: 56
+       * </pre>
+       *
+       * <code>uint32 GMNGPCMGKPD = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKJCLNIGPNDF() {
+      public Builder clearGMNGPCMGKPD() {
         
-        kJCLNIGPNDF_ = 0;
+        gMNGPCMGKPD_ = 0;
         onChanged();
         return this;
       }
 
-      private int nHFGIBDCPGC_ ;
+      private int mEMJGJNILAO_ ;
       /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
-       * @return The nHFGIBDCPGC.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 MEMJGJNILAO = 6;</code>
+       * @return The mEMJGJNILAO.
        */
       @java.lang.Override
-      public int getNHFGIBDCPGC() {
-        return nHFGIBDCPGC_;
+      public int getMEMJGJNILAO() {
+        return mEMJGJNILAO_;
       }
       /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
-       * @param value The nHFGIBDCPGC to set.
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 MEMJGJNILAO = 6;</code>
+       * @param value The mEMJGJNILAO to set.
        * @return This builder for chaining.
        */
-      public Builder setNHFGIBDCPGC(int value) {
+      public Builder setMEMJGJNILAO(int value) {
         
-        nHFGIBDCPGC_ = value;
+        mEMJGJNILAO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NHFGIBDCPGC = 11;</code>
+       * <pre>
+       * offset: 60
+       * </pre>
+       *
+       * <code>uint32 MEMJGJNILAO = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNHFGIBDCPGC() {
+      public Builder clearMEMJGJNILAO() {
         
-        nHFGIBDCPGC_ = 0;
+        mEMJGJNILAO_ = 0;
         onChanged();
         return this;
       }
@@ -1015,11 +1167,11 @@ public final class SceneGalleryWindFieldInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SceneGalleryWindFieldInfo.proto\"\303\001\n\031Sc" +
-      "eneGalleryWindFieldInfo\022\023\n\013OKJOJDABKGC\030\017" +
-      " \001(\r\022\023\n\013GPPOHEOBDGJ\030\r \001(\r\022\023\n\013GCMNEADPFBH" +
-      "\030\014 \001(\r\022\023\n\013DPOBEKFGJOP\030\005 \001(\r\022\023\n\013GIMCFEIAD" +
-      "KI\030\006 \001(\r\022\023\n\013EHLLLIJFOJG\030\002 \001(\r\022\023\n\013KJCLNIG" +
-      "PNDF\030\003 \001(\r\022\023\n\013NHFGIBDCPGC\030\013 \001(\rB\033\n\031emu.g" +
+      "eneGalleryWindFieldInfo\022\023\n\013CLFKHBCKAAD\030\013" +
+      " \001(\r\022\023\n\013IIBJDMNMFMJ\030\002 \001(\r\022\023\n\013MOEBFAAJMIE" +
+      "\030\016 \001(\r\022\023\n\013NINMAMJDNCF\030\r \001(\r\022\023\n\013MDIDBDAPN" +
+      "IP\030\003 \001(\r\022\023\n\013CMCFNHELCNM\030\007 \001(\r\022\023\n\013GMNGPCM" +
+      "GKPD\030\004 \001(\r\022\023\n\013MEMJGJNILAO\030\006 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1031,7 +1183,7 @@ public final class SceneGalleryWindFieldInfoOuterClass {
     internal_static_SceneGalleryWindFieldInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryWindFieldInfo_descriptor,
-        new java.lang.String[] { "OKJOJDABKGC", "GPPOHEOBDGJ", "GCMNEADPFBH", "DPOBEKFGJOP", "GIMCFEIADKI", "EHLLLIJFOJG", "KJCLNIGPNDF", "NHFGIBDCPGC", });
+        new java.lang.String[] { "CLFKHBCKAAD", "IIBJDMNMFMJ", "MOEBFAAJMIE", "NINMAMJDNCF", "MDIDBDAPNIP", "CMCFNHELCNM", "GMNGPCMGKPD", "MEMJGJNILAO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

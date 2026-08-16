@@ -19,7 +19,13 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 2;</code>
+     * <code>uint32 gallery_id = 3;</code>
+     * @return The galleryId.
+     */
+    int getGalleryId();
+
+    /**
+     * <code>bool is_new_record = 4;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -29,12 +35,6 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
      * @return The stageId.
      */
     int getStageId();
-
-    /**
-     * <code>uint32 gallery_id = 6;</code>
-     * @return The galleryId.
-     */
-    int getGalleryId();
 
     /**
      * <code>.SummerTimeV2BoatGallerySettleInfo settle_info = 9;</code>
@@ -53,8 +53,7 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7571
-   * Obf: PHLOLMELHDI
+   * CmdId: 28068
    * </pre>
    *
    * Protobuf type {@code SummerTimeV2BoatSettleNotify}
@@ -101,14 +100,14 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 48: {
+            case 24: {
 
               galleryId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             case 64: {
@@ -161,10 +160,21 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
               emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify.class, emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
+    private int galleryId_;
+    /**
+     * <code>uint32 gallery_id = 3;</code>
+     * @return The galleryId.
+     */
+    @java.lang.Override
+    public int getGalleryId() {
+      return galleryId_;
+    }
+
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 4;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 2;</code>
+     * <code>bool is_new_record = 4;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -181,17 +191,6 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
     @java.lang.Override
     public int getStageId() {
       return stageId_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 6;
-    private int galleryId_;
-    /**
-     * <code>uint32 gallery_id = 6;</code>
-     * @return The galleryId.
-     */
-    @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
     }
 
     public static final int SETTLE_INFO_FIELD_NUMBER = 9;
@@ -234,11 +233,11 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(2, isNewRecord_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(6, galleryId_);
+        output.writeUInt32(3, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(4, isNewRecord_);
       }
       if (stageId_ != 0) {
         output.writeUInt32(8, stageId_);
@@ -255,13 +254,13 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isNewRecord_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryId_);
+          .computeUInt32Size(3, galleryId_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isNewRecord_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -286,12 +285,12 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify other = (emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify) obj;
 
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
       if (hasSettleInfo() != other.hasSettleInfo()) return false;
       if (hasSettleInfo()) {
         if (!getSettleInfo()
@@ -308,13 +307,13 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       if (hasSettleInfo()) {
         hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSettleInfo().hashCode();
@@ -416,8 +415,7 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7571
-     * Obf: PHLOLMELHDI
+     * CmdId: 28068
      * </pre>
      *
      * Protobuf type {@code SummerTimeV2BoatSettleNotify}
@@ -457,11 +455,11 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        galleryId_ = 0;
+
         isNewRecord_ = false;
 
         stageId_ = 0;
-
-        galleryId_ = 0;
 
         if (settleInfoBuilder_ == null) {
           settleInfo_ = null;
@@ -495,9 +493,9 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify buildPartial() {
         emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify result = new emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify(this);
+        result.galleryId_ = galleryId_;
         result.isNewRecord_ = isNewRecord_;
         result.stageId_ = stageId_;
-        result.galleryId_ = galleryId_;
         if (settleInfoBuilder_ == null) {
           result.settleInfo_ = settleInfo_;
         } else {
@@ -551,14 +549,14 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify other) {
         if (other == emu.grasscutter.net.proto.SummerTimeV2BoatSettleNotifyOuterClass.SummerTimeV2BoatSettleNotify.getDefaultInstance()) return this;
+        if (other.getGalleryId() != 0) {
+          setGalleryId(other.getGalleryId());
+        }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
-        }
-        if (other.getGalleryId() != 0) {
-          setGalleryId(other.getGalleryId());
         }
         if (other.hasSettleInfo()) {
           mergeSettleInfo(other.getSettleInfo());
@@ -592,9 +590,40 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
         return this;
       }
 
+      private int galleryId_ ;
+      /**
+       * <code>uint32 gallery_id = 3;</code>
+       * @return The galleryId.
+       */
+      @java.lang.Override
+      public int getGalleryId() {
+        return galleryId_;
+      }
+      /**
+       * <code>uint32 gallery_id = 3;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gallery_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 4;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -602,7 +631,7 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 4;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -613,7 +642,7 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 2;</code>
+       * <code>bool is_new_record = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -650,37 +679,6 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
       public Builder clearStageId() {
         
         stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int galleryId_ ;
-      /**
-       * <code>uint32 gallery_id = 6;</code>
-       * @return The galleryId.
-       */
-      @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
-      }
-      /**
-       * <code>uint32 gallery_id = 6;</code>
-       * @param value The galleryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGalleryId(int value) {
-        
-        galleryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gallery_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGalleryId() {
-        
-        galleryId_ = 0;
         onChanged();
         return this;
       }
@@ -872,9 +870,9 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"SummerTimeV2BoatSettleNotify.proto\032\'Su" +
       "mmerTimeV2BoatGallerySettleInfo.proto\"\224\001" +
-      "\n\034SummerTimeV2BoatSettleNotify\022\025\n\ris_new" +
-      "_record\030\002 \001(\010\022\020\n\010stage_id\030\010 \001(\r\022\022\n\ngalle" +
-      "ry_id\030\006 \001(\r\0227\n\013settle_info\030\t \001(\0132\".Summe" +
+      "\n\034SummerTimeV2BoatSettleNotify\022\022\n\ngaller" +
+      "y_id\030\003 \001(\r\022\025\n\ris_new_record\030\004 \001(\010\022\020\n\010sta" +
+      "ge_id\030\010 \001(\r\0227\n\013settle_info\030\t \001(\0132\".Summe" +
       "rTimeV2BoatGallerySettleInfoB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
@@ -888,7 +886,7 @@ public final class SummerTimeV2BoatSettleNotifyOuterClass {
     internal_static_SummerTimeV2BoatSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeV2BoatSettleNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "StageId", "GalleryId", "SettleInfo", });
+        new java.lang.String[] { "GalleryId", "IsNewRecord", "StageId", "SettleInfo", });
     emu.grasscutter.net.proto.SummerTimeV2BoatGallerySettleInfoOuterClass.getDescriptor();
   }
 

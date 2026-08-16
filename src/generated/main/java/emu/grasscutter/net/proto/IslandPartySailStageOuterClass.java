@@ -15,41 +15,37 @@ public final class IslandPartySailStageOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: IAJMOMGBODC
-   * </pre>
-   *
    * Protobuf enum {@code IslandPartySailStage}
    */
   public enum IslandPartySailStage
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_NONE = 0;</code>
+     * <code>MKOODIKLBLC_NONE = 0;</code>
      */
-    ISLAND_PARTY_SAIL_STAGE_NONE(0),
+    MKOODIKLBLC_NONE(0),
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_SAIL = 1;</code>
+     * <code>MKOODIKLBLC_SAIL = 1;</code>
      */
-    ISLAND_PARTY_SAIL_STAGE_SAIL(1),
+    MKOODIKLBLC_SAIL(1),
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_BATTLE = 2;</code>
+     * <code>MKOODIKLBLC_BATTLE = 2;</code>
      */
-    ISLAND_PARTY_SAIL_STAGE_BATTLE(2),
+    MKOODIKLBLC_BATTLE(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_NONE = 0;</code>
+     * <code>MKOODIKLBLC_NONE = 0;</code>
      */
-    public static final int ISLAND_PARTY_SAIL_STAGE_NONE_VALUE = 0;
+    public static final int MKOODIKLBLC_NONE_VALUE = 0;
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_SAIL = 1;</code>
+     * <code>MKOODIKLBLC_SAIL = 1;</code>
      */
-    public static final int ISLAND_PARTY_SAIL_STAGE_SAIL_VALUE = 1;
+    public static final int MKOODIKLBLC_SAIL_VALUE = 1;
     /**
-     * <code>ISLAND_PARTY_SAIL_STAGE_BATTLE = 2;</code>
+     * <code>MKOODIKLBLC_BATTLE = 2;</code>
      */
-    public static final int ISLAND_PARTY_SAIL_STAGE_BATTLE_VALUE = 2;
+    public static final int MKOODIKLBLC_BATTLE_VALUE = 2;
 
 
     public final int getNumber() {
@@ -76,9 +72,9 @@ public final class IslandPartySailStageOuterClass {
      */
     public static IslandPartySailStage forNumber(int value) {
       switch (value) {
-        case 0: return ISLAND_PARTY_SAIL_STAGE_NONE;
-        case 1: return ISLAND_PARTY_SAIL_STAGE_SAIL;
-        case 2: return ISLAND_PARTY_SAIL_STAGE_BATTLE;
+        case 0: return MKOODIKLBLC_NONE;
+        case 1: return MKOODIKLBLC_SAIL;
+        case 2: return MKOODIKLBLC_BATTLE;
         default: return null;
       }
     }
@@ -144,11 +140,10 @@ public final class IslandPartySailStageOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032IslandPartySailStage.proto*~\n\024IslandPa" +
-      "rtySailStage\022 \n\034ISLAND_PARTY_SAIL_STAGE_" +
-      "NONE\020\000\022 \n\034ISLAND_PARTY_SAIL_STAGE_SAIL\020\001" +
-      "\022\"\n\036ISLAND_PARTY_SAIL_STAGE_BATTLE\020\002B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\032IslandPartySailStage.proto*Z\n\024IslandPa" +
+      "rtySailStage\022\024\n\020MKOODIKLBLC_NONE\020\000\022\024\n\020MK" +
+      "OODIKLBLC_SAIL\020\001\022\026\n\022MKOODIKLBLC_BATTLE\020\002" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

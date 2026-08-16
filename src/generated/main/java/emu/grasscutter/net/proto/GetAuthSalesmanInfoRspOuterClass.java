@@ -19,27 +19,26 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_reward_id = 11;</code>
-     * @return The dayRewardId.
-     */
-    int getDayRewardId();
-
-    /**
-     * <code>uint32 schedule_id = 1;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 BECHOGCFLCL = 5;</code>
+     * @return The bECHOGCFLCL.
+     */
+    int getBECHOGCFLCL();
+
+    /**
+     * <code>uint32 schedule_id = 12;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
    * <pre>
-   * CmdId: 8294
-   * Obf: ADPBOOBBLBG
+   * CmdId: 7454
    * </pre>
    *
    * Protobuf type {@code GetAuthSalesmanInfoRsp}
@@ -86,19 +85,19 @@ public final class GetAuthSalesmanInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              scheduleId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 40: {
 
-              dayRewardId_ = input.readUInt32();
+              bECHOGCFLCL_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              retcode_ = input.readInt32();
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,37 +132,37 @@ public final class GetAuthSalesmanInfoRspOuterClass {
               emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp.class, emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp.Builder.class);
     }
 
-    public static final int DAY_REWARD_ID_FIELD_NUMBER = 11;
-    private int dayRewardId_;
-    /**
-     * <code>uint32 day_reward_id = 11;</code>
-     * @return The dayRewardId.
-     */
-    @java.lang.Override
-    public int getDayRewardId() {
-      return dayRewardId_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 1;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 1;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int BECHOGCFLCL_FIELD_NUMBER = 5;
+    private int bECHOGCFLCL_;
+    /**
+     * <code>uint32 BECHOGCFLCL = 5;</code>
+     * @return The bECHOGCFLCL.
+     */
+    @java.lang.Override
+    public int getBECHOGCFLCL() {
+      return bECHOGCFLCL_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 12;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +179,14 @@ public final class GetAuthSalesmanInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(1, scheduleId_);
-      }
-      if (dayRewardId_ != 0) {
-        output.writeUInt32(11, dayRewardId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(4, retcode_);
+      }
+      if (bECHOGCFLCL_ != 0) {
+        output.writeUInt32(5, bECHOGCFLCL_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(12, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, scheduleId_);
-      }
-      if (dayRewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dayRewardId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(4, retcode_);
+      }
+      if (bECHOGCFLCL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, bECHOGCFLCL_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +224,12 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp other = (emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp) obj;
 
-      if (getDayRewardId()
-          != other.getDayRewardId()) return false;
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getBECHOGCFLCL()
+          != other.getBECHOGCFLCL()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +241,12 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DAY_REWARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDayRewardId();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + BECHOGCFLCL_FIELD_NUMBER;
+      hash = (53 * hash) + getBECHOGCFLCL();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +344,7 @@ public final class GetAuthSalesmanInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8294
-     * Obf: ADPBOOBBLBG
+     * CmdId: 7454
      * </pre>
      *
      * Protobuf type {@code GetAuthSalesmanInfoRsp}
@@ -386,11 +384,11 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dayRewardId_ = 0;
+        retcode_ = 0;
+
+        bECHOGCFLCL_ = 0;
 
         scheduleId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -418,9 +416,9 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp result = new emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp(this);
-        result.dayRewardId_ = dayRewardId_;
-        result.scheduleId_ = scheduleId_;
         result.retcode_ = retcode_;
+        result.bECHOGCFLCL_ = bECHOGCFLCL_;
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -469,14 +467,14 @@ public final class GetAuthSalesmanInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetAuthSalesmanInfoRspOuterClass.GetAuthSalesmanInfoRsp.getDefaultInstance()) return this;
-        if (other.getDayRewardId() != 0) {
-          setDayRewardId(other.getDayRewardId());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getBECHOGCFLCL() != 0) {
+          setBECHOGCFLCL(other.getBECHOGCFLCL());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,71 +505,9 @@ public final class GetAuthSalesmanInfoRspOuterClass {
         return this;
       }
 
-      private int dayRewardId_ ;
-      /**
-       * <code>uint32 day_reward_id = 11;</code>
-       * @return The dayRewardId.
-       */
-      @java.lang.Override
-      public int getDayRewardId() {
-        return dayRewardId_;
-      }
-      /**
-       * <code>uint32 day_reward_id = 11;</code>
-       * @param value The dayRewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDayRewardId(int value) {
-        
-        dayRewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 day_reward_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDayRewardId() {
-        
-        dayRewardId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -579,7 +515,7 @@ public final class GetAuthSalesmanInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -590,12 +526,74 @@ public final class GetAuthSalesmanInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bECHOGCFLCL_ ;
+      /**
+       * <code>uint32 BECHOGCFLCL = 5;</code>
+       * @return The bECHOGCFLCL.
+       */
+      @java.lang.Override
+      public int getBECHOGCFLCL() {
+        return bECHOGCFLCL_;
+      }
+      /**
+       * <code>uint32 BECHOGCFLCL = 5;</code>
+       * @param value The bECHOGCFLCL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBECHOGCFLCL(int value) {
+        
+        bECHOGCFLCL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BECHOGCFLCL = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBECHOGCFLCL() {
+        
+        bECHOGCFLCL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 12;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 12;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -666,10 +664,10 @@ public final class GetAuthSalesmanInfoRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GetAuthSalesmanInfoRsp.proto\"U\n\026GetAut" +
-      "hSalesmanInfoRsp\022\025\n\rday_reward_id\030\013 \001(\r\022" +
-      "\023\n\013schedule_id\030\001 \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\034GetAuthSalesmanInfoRsp.proto\"S\n\026GetAut" +
+      "hSalesmanInfoRsp\022\017\n\007retcode\030\004 \001(\005\022\023\n\013BEC" +
+      "HOGCFLCL\030\005 \001(\r\022\023\n\013schedule_id\030\014 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +678,7 @@ public final class GetAuthSalesmanInfoRspOuterClass {
     internal_static_GetAuthSalesmanInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetAuthSalesmanInfoRsp_descriptor,
-        new java.lang.String[] { "DayRewardId", "ScheduleId", "Retcode", });
+        new java.lang.String[] { "Retcode", "BECHOGCFLCL", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

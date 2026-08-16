@@ -19,12 +19,20 @@ public final class HomeMarkPointNPCDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 costume_id = 2;</code>
      * @return The costumeId.
      */
     int getCostumeId();
 
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
@@ -120,6 +128,10 @@ public final class HomeMarkPointNPCDataOuterClass {
     public static final int COSTUME_ID_FIELD_NUMBER = 2;
     private int costumeId_;
     /**
+     * <pre>
+     * offset: 32
+     * </pre>
+     *
      * <code>uint32 costume_id = 2;</code>
      * @return The costumeId.
      */
@@ -131,6 +143,10 @@ public final class HomeMarkPointNPCDataOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private int avatarId_;
     /**
+     * <pre>
+     * offset: 36
+     * </pre>
+     *
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
@@ -460,6 +476,10 @@ public final class HomeMarkPointNPCDataOuterClass {
 
       private int costumeId_ ;
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 costume_id = 2;</code>
        * @return The costumeId.
        */
@@ -468,6 +488,10 @@ public final class HomeMarkPointNPCDataOuterClass {
         return costumeId_;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 costume_id = 2;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
@@ -479,6 +503,10 @@ public final class HomeMarkPointNPCDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 32
+       * </pre>
+       *
        * <code>uint32 costume_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -491,6 +519,10 @@ public final class HomeMarkPointNPCDataOuterClass {
 
       private int avatarId_ ;
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 avatar_id = 1;</code>
        * @return The avatarId.
        */
@@ -499,6 +531,10 @@ public final class HomeMarkPointNPCDataOuterClass {
         return avatarId_;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 avatar_id = 1;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -510,6 +546,10 @@ public final class HomeMarkPointNPCDataOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * offset: 36
+       * </pre>
+       *
        * <code>uint32 avatar_id = 1;</code>
        * @return This builder for chaining.
        */

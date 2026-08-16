@@ -19,17 +19,17 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @return A list containing the uidList.
      */
     java.util.List<java.lang.Integer> getUidListList();
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @return The count of uidList.
      */
     int getUidListCount();
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The uidList at the given index.
      */
@@ -37,8 +37,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 20706
-   * Obf: CNALGDHEIDC
+   * CmdId: 22489
    * </pre>
    *
    * Protobuf type {@code HideAndSeekPlayerReadyNotify}
@@ -87,7 +86,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 uidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +94,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
               uidList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +142,10 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
               emu.grasscutter.net.proto.HideAndSeekPlayerReadyNotifyOuterClass.HideAndSeekPlayerReadyNotify.class, emu.grasscutter.net.proto.HideAndSeekPlayerReadyNotifyOuterClass.HideAndSeekPlayerReadyNotify.Builder.class);
     }
 
-    public static final int UID_LIST_FIELD_NUMBER = 13;
+    public static final int UID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList uidList_;
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @return A list containing the uidList.
      */
     @java.lang.Override
@@ -155,14 +154,14 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
       return uidList_;
     }
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @return The count of uidList.
      */
     public int getUidListCount() {
       return uidList_.size();
     }
     /**
-     * <code>repeated uint32 uid_list = 13;</code>
+     * <code>repeated uint32 uid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The uidList at the given index.
      */
@@ -187,7 +186,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getUidListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(uidListMemoizedSerializedSize);
       }
       for (int i = 0; i < uidList_.size(); i++) {
@@ -345,8 +344,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20706
-     * Obf: CNALGDHEIDC
+     * CmdId: 22489
      * </pre>
      *
      * Protobuf type {@code HideAndSeekPlayerReadyNotify}
@@ -516,7 +514,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @return A list containing the uidList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +523,14 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
                  java.util.Collections.unmodifiableList(uidList_) : uidList_;
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @return The count of uidList.
        */
       public int getUidListCount() {
         return uidList_.size();
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The uidList at the given index.
        */
@@ -540,7 +538,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
         return uidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The uidList to set.
        * @return This builder for chaining.
@@ -553,7 +551,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @param value The uidList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +562,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @param values The uidList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +575,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 uid_list = 13;</code>
+       * <code>repeated uint32 uid_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUidList() {
@@ -655,7 +653,7 @@ public final class HideAndSeekPlayerReadyNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"HideAndSeekPlayerReadyNotify.proto\"0\n\034" +
       "HideAndSeekPlayerReadyNotify\022\020\n\010uid_list" +
-      "\030\r \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\002 \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
